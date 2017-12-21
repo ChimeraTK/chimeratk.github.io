@@ -2,7 +2,6 @@ var searchData=
 [
   ['c_5fstyle_5fconversion',['C_style_conversion',['../namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a6b6318f96cdc11c6a547dcb8753e0a15',1,'ChimeraTK']]],
   ['chimeratk',['ChimeraTK',['../namespace_chimera_t_k.html',1,'']]],
-  ['clearasynctransferactive',['clearAsyncTransferActive',['../class_chimera_t_k_1_1_bidirectional_process_array.html#ac3f53a089a9001c99ea034c32539427f',1,'ChimeraTK::BidirectionalProcessArray::clearAsyncTransferActive()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a1e94de83f652d1377ef3a82582352c6e',1,'ChimeraTK::UnidirectionalProcessArray::clearAsyncTransferActive()']]],
   ['controlsystemadapter_2eh',['ControlSystemAdapter.h',['../_control_system_adapter_8h.html',1,'']]],
   ['controlsystemadaptercontrolsystem_2eh',['ControlSystemAdapterControlSystem.h',['../_control_system_adapter_control_system_8h.html',1,'']]],
   ['controlsystemadapterdevice_2eh',['ControlSystemAdapterDevice.h',['../_control_system_adapter_device_8h.html',1,'']]],
@@ -12,8 +11,8 @@ var searchData=
   ['controlsystempvmanager_2eh',['ControlSystemPVManager.h',['../_control_system_p_v_manager_8h.html',1,'']]],
   ['controlsystemsendnotificationlistenerimpl',['ControlSystemSendNotificationListenerImpl',['../class_chimera_t_k_1_1_p_v_manager_1_1_control_system_send_notification_listener_impl.html',1,'ChimeraTK::PVManager']]],
   ['controlsystemsendnotificationlistenerimpl',['ControlSystemSendNotificationListenerImpl',['../class_chimera_t_k_1_1_p_v_manager_1_1_control_system_send_notification_listener_impl.html#a18b235dd2556828543045c1b371150cd',1,'ChimeraTK::PVManager::ControlSystemSendNotificationListenerImpl']]],
-  ['controlsystemsynchronizationutility',['ControlSystemSynchronizationUtility',['../class_chimera_t_k_1_1_control_system_synchronization_utility.html#a17974ef52cb1ba8d37d6bd84bebc14fd',1,'ChimeraTK::ControlSystemSynchronizationUtility::ControlSystemSynchronizationUtility(ControlSystemPVManager::SharedPtr)'],['../class_chimera_t_k_1_1_control_system_synchronization_utility.html#aefc6a226e932a3dd9d6b8257987dab76',1,'ChimeraTK::ControlSystemSynchronizationUtility::ControlSystemSynchronizationUtility(ControlSystemSynchronizationUtility const &amp;)']]],
   ['controlsystemsynchronizationutility',['ControlSystemSynchronizationUtility',['../class_chimera_t_k_1_1_control_system_synchronization_utility.html',1,'ChimeraTK']]],
+  ['controlsystemsynchronizationutility',['ControlSystemSynchronizationUtility',['../class_chimera_t_k_1_1_control_system_synchronization_utility.html#a17974ef52cb1ba8d37d6bd84bebc14fd',1,'ChimeraTK::ControlSystemSynchronizationUtility::ControlSystemSynchronizationUtility(ControlSystemPVManager::SharedPtr)'],['../class_chimera_t_k_1_1_control_system_synchronization_utility.html#aefc6a226e932a3dd9d6b8257987dab76',1,'ChimeraTK::ControlSystemSynchronizationUtility::ControlSystemSynchronizationUtility(ControlSystemSynchronizationUtility const &amp;)']]],
   ['controlsystemsynchronizationutility_2ecc',['ControlSystemSynchronizationUtility.cc',['../_control_system_synchronization_utility_8cc.html',1,'']]],
   ['controlsystemsynchronizationutility_2eh',['ControlSystemSynchronizationUtility.h',['../_control_system_synchronization_utility_8h.html',1,'']]],
   ['controlsystemtodevice',['controlSystemToDevice',['../namespace_chimera_t_k.html#aa7e41ad56888f34fba9598d89cc6bbccaf9e549c34240abf3968507bace5b56c0',1,'ChimeraTK']]],

@@ -6,8 +6,8 @@ var searchData=
   ['decoratortype',['DecoratorType',['../namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96',1,'ChimeraTK']]],
   ['decoratortypeholder',['DecoratorTypeHolder',['../class_chimera_t_k_1_1_decorator_type_holder.html',1,'ChimeraTK']]],
   ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
-  ['devicepvmanager',['DevicePVManager',['../class_chimera_t_k_1_1_device_p_v_manager.html',1,'ChimeraTK']]],
   ['devicepvmanager',['DevicePVManager',['../class_chimera_t_k_1_1_device_p_v_manager.html#a1d5ad77ecf2ecbabf7305657378a03e5',1,'ChimeraTK::DevicePVManager::DevicePVManager(boost::shared_ptr&lt; PVManager &gt; pvManager)'],['../class_chimera_t_k_1_1_device_p_v_manager.html#a30c430995a6f0977ec884d60d11d67ab',1,'ChimeraTK::DevicePVManager::DevicePVManager(const DevicePVManager &amp;)']]],
+  ['devicepvmanager',['DevicePVManager',['../class_chimera_t_k_1_1_device_p_v_manager.html',1,'ChimeraTK']]],
   ['devicepvmanager_2ecc',['DevicePVManager.cc',['../_device_p_v_manager_8cc.html',1,'']]],
   ['devicepvmanager_2eh',['DevicePVManager.h',['../_device_p_v_manager_8h.html',1,'']]],
   ['devicesendnotificationlistenerimpl',['DeviceSendNotificationListenerImpl',['../class_chimera_t_k_1_1_p_v_manager_1_1_device_send_notification_listener_impl.html',1,'ChimeraTK::PVManager']]],
@@ -22,6 +22,7 @@ var searchData=
   ['dopreread',['doPreRead',['../class_chimera_t_k_1_1_type_changing_decorator.html#aef90c6fb20aa84888b31e2f26c970186',1,'ChimeraTK::TypeChangingDecorator']]],
   ['doprewrite',['doPreWrite',['../class_chimera_t_k_1_1_type_changing_decorator.html#ae184e2b1533f14695309548fb6de7a8d',1,'ChimeraTK::TypeChangingDecorator']]],
   ['doreadtransfer',['doReadTransfer',['../class_chimera_t_k_1_1_bidirectional_process_array.html#a0216803a4c128acf61cf9aeb75a40c68',1,'ChimeraTK::BidirectionalProcessArray::doReadTransfer()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a4c10cec4751c5bb4370bdc61e13654cc',1,'ChimeraTK::UnidirectionalProcessArray::doReadTransfer()']]],
+  ['doreadtransferasync',['doReadTransferAsync',['../class_chimera_t_k_1_1_bidirectional_process_array.html#afc39c39bae3793b7df9511fbc49fc06f',1,'ChimeraTK::BidirectionalProcessArray::doReadTransferAsync()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a5de8931000efd1c3e8b85c678a48ee24',1,'ChimeraTK::UnidirectionalProcessArray::doReadTransferAsync()']]],
   ['doreadtransferlatest',['doReadTransferLatest',['../class_chimera_t_k_1_1_bidirectional_process_array.html#a690c3d4b6c8a4f8cf3f92cfd4f96c7fa',1,'ChimeraTK::BidirectionalProcessArray::doReadTransferLatest()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a5aa3d4f0b0f4da26737e89ef4e70caab',1,'ChimeraTK::UnidirectionalProcessArray::doReadTransferLatest()']]],
   ['doreadtransfernonblocking',['doReadTransferNonBlocking',['../class_chimera_t_k_1_1_bidirectional_process_array.html#a85b53c090b1ae56edac86e836f3a81fa',1,'ChimeraTK::BidirectionalProcessArray::doReadTransferNonBlocking()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a5903176cbd3aaf82e418c2321e358999',1,'ChimeraTK::UnidirectionalProcessArray::doReadTransferNonBlocking()']]],
   ['dowritetransfer',['doWriteTransfer',['../class_chimera_t_k_1_1_bidirectional_process_array.html#a35bdda03b16e44c4b63867444367d479',1,'ChimeraTK::BidirectionalProcessArray::doWriteTransfer()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a1b1b19d9c6e3290e62abc133e9e89831',1,'ChimeraTK::UnidirectionalProcessArray::doWriteTransfer()']]]
