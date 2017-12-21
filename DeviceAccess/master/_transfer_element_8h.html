@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>mtca4u-deviceaccess: /home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/device/include/TransferElement.h File Reference</title>
+<title>mtca4u-deviceaccess: /home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/device_backends/include/TransferElement.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_820b2b9dd608784780e51ab49715a98b.html">device</a></li><li class="navelem"><a class="el" href="dir_0128381db4b4f5acbef62e610c8688e8.html">include</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_f6c06f7a01da37196a5f6fe3a6212106.html">include</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -110,6 +110,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="_time_stamp_8h_source.html">TimeStamp.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_transfer_future_8h_source.html">TransferFuture.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_version_number_8h_source.html">VersionNumber.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_transfer_element_i_d_8h_source.html">TransferElementID.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_experimental_features_8h_source.html">ExperimentalFeatures.h</a>&quot;</code><br />
 </div>
 <p><a href="_transfer_element_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -118,19 +120,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html">mtca4u::TransferElement</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for register accessors which can be part of a <a class="el" href="classmtca4u_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a>.  <a href="classmtca4u_1_1_transfer_element.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element_1_1_i_d.html">mtca4u::TransferElement::ID</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple class holding a unique <a class="el" href="classmtca4u_1_1_transfer_element_1_1_i_d.html" title="Simple class holding a unique ID for a TransferElement. ">ID</a> for a <a class="el" href="classmtca4u_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="classmtca4u_1_1_transfer_element_1_1_i_d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01mtca4u_1_1_transfer_element_i_d_01_4.html">std::hash&lt; mtca4u::TransferElementID &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash function for putting TransferElementID e.g.  <a href="structstd_1_1hash_3_01mtca4u_1_1_transfer_element_i_d_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_future_iterator.html">mtca4u::TransferFutureIterator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal class needed for <a class="el" href="classmtca4u_1_1_transfer_element.html#ae22fdbe57951c132c5af6b8634de04fc" title="Read data asynchronously from all given TransferElements and wait until one of the TransferElements h...">TransferElement::readAny()</a>: Provide a wrapper around the list iterator to effectivly allow passing std::list&lt;TransferFuture&gt;::iterator to boost::wait_for_any() which otherwise expects e.g.  <a href="classmtca4u_1_1_transfer_future_iterator.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1iterator__traits_3_01mtca4u_1_1_transfer_future_iterator_01_4.html">std::iterator_traits&lt; mtca4u::TransferFutureIterator &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01mtca4u_1_1_transfer_element_1_1_i_d_01_4.html">std::hash&lt; mtca4u::TransferElement::ID &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash function for putting TransferElement::ID e.g.  <a href="structstd_1_1hash_3_01mtca4u_1_1_transfer_element_1_1_i_d_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1less_3_01mtca4u_1_1_transfer_element_1_1_i_d_01_4.html">std::less&lt; mtca4u::TransferElement::ID &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison for putting TransferElement::ID e.g.  <a href="structstd_1_1less_3_01mtca4u_1_1_transfer_element_1_1_i_d_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1less_3_01mtca4u_1_1_transfer_element_i_d_01_4.html">std::less&lt; mtca4u::TransferElementID &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison for putting TransferElementID e.g.  <a href="structstd_1_1less_3_01mtca4u_1_1_transfer_element_i_d_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -146,7 +140,7 @@ Namespaces</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 16 2017 06:17:15 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 21 2017 12:53:44 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

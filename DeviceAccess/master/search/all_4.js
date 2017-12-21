@@ -16,13 +16,12 @@ var searchData=
   ['checkregister',['checkRegister',['../classmtca4u_1_1_numeric_addressed_backend.html#ab823d2c18399ea809072d82dead2e5e6',1,'mtca4u::NumericAddressedBackend']]],
   ['checksizeismultipleofwordsize',['checkSizeIsMultipleOfWordSize',['../classmtca4u_1_1_dummy_backend.html#aee29b1fe7b214114cdd4b5ff3bdce90d',1,'mtca4u::DummyBackend']]],
   ['chimeratk',['ChimeraTK',['../namespace_chimera_t_k.html',1,'']]],
-  ['clearasynctransferactive',['clearAsyncTransferActive',['../classmtca4u_1_1_multiplexed_data_accessor.html#ae0ffd4d1bdfecae2d3f4c3cbedcb5d1f',1,'mtca4u::MultiplexedDataAccessor::clearAsyncTransferActive()'],['../classmtca4u_1_1_n_d_register_accessor_bridge.html#af991ce6288c2edc91b09e40f91bde74f',1,'mtca4u::NDRegisterAccessorBridge::clearAsyncTransferActive()'],['../classmtca4u_1_1_transfer_element.html#a334ff9a3d121ba2be690c37537730e57',1,'mtca4u::TransferElement::clearAsyncTransferActive()'],['../classmtca4u_1_1_n_d_register_accessor_decorator.html#a527dd0b90b66fa8aa696c13fc965f465',1,'mtca4u::NDRegisterAccessorDecorator::clearAsyncTransferActive()'],['../classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#aeb92af5a66b06fc4783e945e42738428',1,'mtca4u::NumericAddressedLowLevelTransferElement::clearAsyncTransferActive()'],['../classmtca4u_1_1_sync_n_d_register_accessor.html#afb6201c45f4bba9ad5635669219c607d',1,'mtca4u::SyncNDRegisterAccessor::clearAsyncTransferActive()']]],
   ['close',['close',['../classmtca4u_1_1_device.html#abfd211ed95a784662a9e1ad16dbfff37',1,'mtca4u::Device::close()'],['../class_chimera_t_k_1_1_device_backend.html#a655b8995589b3916ce9b71633f8fe33e',1,'ChimeraTK::DeviceBackend::close()'],['../classmtca4u_1_1_dummy_backend.html#a343225fcfa8a3db5c239ff85dd44fdff',1,'mtca4u::DummyBackend::close()'],['../classmtca4u_1_1_logical_name_mapping_backend.html#ad0da06983118b1c5da3627967aca47d6',1,'mtca4u::LogicalNameMappingBackend::close()'],['../classmtca4u_1_1_pcie_backend.html#a157037876f3116ec69024c86c589d20a',1,'mtca4u::PcieBackend::close()'],['../class_chimera_t_k_1_1_rebot_backend.html#a68f639d73c9193bb0a7984e8675bfe68',1,'ChimeraTK::RebotBackend::close()'],['../class_example_backend.html#a29cb604880ec30b64848139d934018ef',1,'ExampleBackend::close()']]],
   ['closeconnection',['closeConnection',['../class_chimera_t_k_1_1_tcp_ctrl.html#a45780aa2f2e3052b92225e49bff17e37',1,'ChimeraTK::TcpCtrl']]],
   ['closeevent',['closeEvent',['../namespacemtca4u__lmap__editor.html#ab1d93bef35eecc862647755b4690faef',1,'mtca4u_lmap_editor']]],
   ['cmd',['cmd',['../structdevice__ioctrl__data.html#abce7358be06d7ce7e756fe02c25c187e',1,'device_ioctrl_data']]],
-  ['comparemodulename_5fpred',['compareModuleName_pred',['../classmtca4u_1_1compare_module_name__pred.html',1,'mtca4u']]],
   ['comparemodulename_5fpred',['compareModuleName_pred',['../classmtca4u_1_1compare_module_name__pred.html#a9c0cb2e50bb212064a7e26d6b81b4e83',1,'mtca4u::compareModuleName_pred']]],
+  ['comparemodulename_5fpred',['compareModuleName_pred',['../classmtca4u_1_1compare_module_name__pred.html',1,'mtca4u']]],
   ['compareregisterinfosbyname_5ffunctor',['compareRegisterInfosByName_functor',['../classmtca4u_1_1compare_register_infos_by_name__functor.html',1,'mtca4u']]],
   ['concatenatepaths',['concatenatePaths',['../namespacemtca4u_1_1parser_utilities.html#aebdd5043dc9ccfc3538caa306e8f9e07',1,'mtca4u::parserUtilities']]],
   ['const_5fiterator',['const_iterator',['../classmtca4u_1_1_register_info_map_1_1const__iterator.html',1,'mtca4u::RegisterInfoMap']]],
@@ -56,6 +55,7 @@ var searchData=
   ['custom_5fbackends_2edox',['custom_backends.dox',['../custom__backends_8dox.html',1,'']]],
   ['custombackend',['CustomBackend',['../class_custom_backend.html',1,'']]],
   ['custombackend_2ecc',['CustomBackend.cc',['../_custom_backend_8cc.html',1,'']]],
+  ['detail',['detail',['../namespace_chimera_t_k_1_1detail.html',1,'ChimeraTK']]],
   ['rebot',['rebot',['../namespace_chimera_t_k_1_1rebot.html',1,'ChimeraTK']]],
   ['testable_5frebot_5fsleep',['testable_rebot_sleep',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html',1,'ChimeraTK']]]
 ];

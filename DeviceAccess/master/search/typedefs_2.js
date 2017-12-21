@@ -5,6 +5,6 @@ var searchData=
   ['device_5fioctrl_5ftime',['device_ioctrl_time',['../pciedev__io_8h.html#aba7e14009372d9742940885711d7890e',1,'pciedev_io.h']]],
   ['device_5frw',['device_rw',['../pciedev__io_8h.html#a198b5f4fef9dff99b6c27836f972bc19',1,'pciedev_io.h']]],
   ['deviceinfomappointer',['DeviceInfoMapPointer',['../namespacemtca4u.html#a7e71385eecb1fd32f2a493f491467c90',1,'mtca4u']]],
-  ['difference_5ftype',['difference_type',['../structstd_1_1iterator__traits_3_01mtca4u_1_1_transfer_future_iterator_01_4.html#af448652b8e48542a3abccd27c8ae9682',1,'std::iterator_traits&lt; mtca4u::TransferFutureIterator &gt;']]],
+  ['difference_5ftype',['difference_type',['../structstd_1_1iterator__traits_3_01_chimera_t_k_1_1detail_1_1_transfer_future_iterator_01_4.html#a971bf004f4857b54a99478fba74d4819',1,'std::iterator_traits&lt; ChimeraTK::detail::TransferFutureIterator &gt;']]],
   ['dregisterinfo',['DRegisterInfo',['../classmtca4u_1_1_d_map_file.html#a8ce3e35a876a6f2ae7f0af70782b6cca',1,'mtca4u::DMapFile']]]
 ];

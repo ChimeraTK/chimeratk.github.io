@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['hash_3c_20id_20_3e',['hash&lt; ID &gt;',['../classmtca4u_1_1_transfer_element_1_1_i_d.html#a1e0c7c5e2d980d246c4ab991b0cf19e5',1,'mtca4u::TransferElement::ID']]],
-  ['less_3c_20id_20_3e',['less&lt; ID &gt;',['../classmtca4u_1_1_transfer_element_1_1_i_d.html#ac553cc4ceaa7023e7f9cb4695c1aa949',1,'mtca4u::TransferElement::ID']]],
+  ['hash_3c_20transferelementid_20_3e',['hash&lt; TransferElementID &gt;',['../classmtca4u_1_1_transfer_element_i_d.html#a1786e4f964aeea0cdb1004ed61c3a8da',1,'mtca4u::TransferElementID']]],
+  ['less_3c_20transferelementid_20_3e',['less&lt; TransferElementID &gt;',['../classmtca4u_1_1_transfer_element_i_d.html#a7d334f85bce936e449c91f06f0bc123a',1,'mtca4u::TransferElementID']]],
   ['savefile',['saveFile',['../namespacemtca4u__lmap__editor.html#a1c081579836be240666fd9a18a294ac1',1,'mtca4u_lmap_editor']]],
   ['savefileagain',['saveFileAgain',['../namespacemtca4u__lmap__editor.html#aa8041d390b38cc5929faa73f5fb1d24d',1,'mtca4u_lmap_editor']]],
   ['savefiledialog',['saveFileDialog',['../namespacemtca4u__lmap__editor.html#a7825bef4e17cbaf4b1e874936ce027d4',1,'mtca4u_lmap_editor']]],
@@ -20,7 +20,7 @@ var searchData=
   ['sdm',['Sdm',['../structmtca4u_1_1_sdm.html',1,'mtca4u']]],
   ['sdmuriparseexception',['SdmUriParseException',['../classmtca4u_1_1_sdm_uri_parse_exception.html#a338f54aa1ef79acc3f9239c2bbdfe269',1,'mtca4u::SdmUriParseException']]],
   ['sdmuriparseexception',['SdmUriParseException',['../classmtca4u_1_1_sdm_uri_parse_exception.html',1,'mtca4u']]],
-  ['second_5fargument_5ftype',['second_argument_type',['../structstd_1_1less_3_01mtca4u_1_1_transfer_element_1_1_i_d_01_4.html#ab93ed35a9cd046c736f01903154aa280',1,'std::less&lt; mtca4u::TransferElement::ID &gt;']]],
+  ['second_5fargument_5ftype',['second_argument_type',['../structstd_1_1less_3_01mtca4u_1_1_transfer_element_i_d_01_4.html#a909865738042f66a5ef054c1a066eb8f',1,'std::less&lt; mtca4u::TransferElementID &gt;']]],
   ['seconds',['seconds',['../structmtca4u_1_1_time_stamp.html#a0f31be1f44eadcfb6d472847419e0714',1,'mtca4u::TimeStamp']]],
   ['selectlistitem',['selectListItem',['../namespacemtca4u__lmap__editor.html#a2a8a236713157954f215501dd929988d',1,'mtca4u_lmap_editor']]],
   ['senddata',['sendData',['../class_chimera_t_k_1_1_tcp_ctrl.html#a75b4e8096de952c03e5f4f8fd5432401',1,'ChimeraTK::TcpCtrl::sendData(const std::vector&lt; char &gt; &amp;data)'],['../class_chimera_t_k_1_1_tcp_ctrl.html#a92ea484778bbaceb740b826d2456d78f',1,'ChimeraTK::TcpCtrl::sendData(const std::vector&lt; uint32_t &gt; &amp;data)']]],
@@ -31,7 +31,7 @@ var searchData=
   ['setaddress',['setAddress',['../classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a4fb173eb535ac26d9f3c2976466f55fa',1,'mtca4u::NumericAddressedLowLevelTransferElement::setAddress()'],['../class_chimera_t_k_1_1_tcp_ctrl.html#a3a3a9b75954a7067f681939d0f4f21b0',1,'ChimeraTK::TcpCtrl::setAddress()']]],
   ['setaltseparator',['setAltSeparator',['../classmtca4u_1_1_register_path.html#a58e53412e246412f2ba537e2df0857d3',1,'mtca4u::RegisterPath']]],
   ['setdmapfilepath',['setDMapFilePath',['../class_chimera_t_k_1_1_backend_factory.html#a7348fb0d34d8737df3fa4f396fc5163d',1,'ChimeraTK::BackendFactory::setDMapFilePath()'],['../namespacemtca4u.html#a75fcf833801c0fc3981e478a15ab2b52',1,'mtca4u::setDMapFilePath()']]],
-  ['setpersistentdatastorage',['setPersistentDataStorage',['../classmtca4u_1_1_transfer_element.html#a8a0815a31412f1e862dff4bf6b5f90d4',1,'mtca4u::TransferElement::setPersistentDataStorage()'],['../classmtca4u_1_1_n_d_register_accessor_decorator.html#a58eef9b8576eaa6ca5319052503f77d7',1,'mtca4u::NDRegisterAccessorDecorator::setPersistentDataStorage()']]],
+  ['setpersistentdatastorage',['setPersistentDataStorage',['../classmtca4u_1_1_transfer_element_abstractor.html#a8dda030ec4fa72e45a1cbc65541735c6',1,'mtca4u::TransferElementAbstractor::setPersistentDataStorage()'],['../classmtca4u_1_1_n_d_register_accessor_decorator.html#a58eef9b8576eaa6ca5319052503f77d7',1,'mtca4u::NDRegisterAccessorDecorator::setPersistentDataStorage()'],['../classmtca4u_1_1_transfer_element.html#a8a0815a31412f1e862dff4bf6b5f90d4',1,'mtca4u::TransferElement::setPersistentDataStorage()']]],
   ['setport',['setPort',['../class_chimera_t_k_1_1_tcp_ctrl.html#a5c5ef0ee04774a47b21ce4fc0900df0d',1,'ChimeraTK::TcpCtrl']]],
   ['setreadonly',['setReadOnly',['../classmtca4u_1_1_dummy_backend.html#a6c8383a3325b57ffd56fe793ebed9a63',1,'mtca4u::DummyBackend::setReadOnly(uint8_t bar, uint32_t address, size_t sizeInWords)'],['../classmtca4u_1_1_dummy_backend.html#a7144211bfff646369d07ca56209dd84e',1,'mtca4u::DummyBackend::setReadOnly(AddressRange addressRange)']]],
   ['setregistermap',['setRegisterMap',['../classmtca4u_1_1_numeric_addressed_backend.html#a90c1a9b29181beb02237dc6d5f8f1655',1,'mtca4u::NumericAddressedBackend']]],

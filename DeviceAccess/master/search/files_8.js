@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ndregisteraccessor_2eh',['NDRegisterAccessor.h',['../_n_d_register_accessor_8h.html',1,'']]],
-  ['ndregisteraccessorbridge_2eh',['NDRegisterAccessorBridge.h',['../_n_d_register_accessor_bridge_8h.html',1,'']]],
+  ['ndregisteraccessorabstractor_2eh',['NDRegisterAccessorAbstractor.h',['../_n_d_register_accessor_abstractor_8h.html',1,'']]],
   ['ndregisteraccessordecorator_2ecc',['NDRegisterAccessorDecorator.cc',['../_n_d_register_accessor_decorator_8cc.html',1,'']]],
   ['ndregisteraccessordecorator_2eh',['NDRegisterAccessorDecorator.h',['../_n_d_register_accessor_decorator_8h.html',1,'']]],
   ['notimplementedexception_2eh',['NotImplementedException.h',['../_not_implemented_exception_8h.html',1,'']]],

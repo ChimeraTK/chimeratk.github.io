@@ -122,12 +122,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa490e9ef5a6dcfa0ccb996ea242d1fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa13f0cf59e9703819e6dea9c3ce60066"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#aa13f0cf59e9703819e6dea9c3ce60066">~NumericAddressedLowLevelTransferElement</a> ()</td></tr>
 <tr class="separator:aa13f0cf59e9703819e6dea9c3ce60066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a01173cb3a8eb388065716f877ae428"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a9a01173cb3a8eb388065716f877ae428">write</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber={}) final</td></tr>
-<tr class="memdesc:a9a01173cb3a8eb388065716f877ae428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data to device.  <a href="#a9a01173cb3a8eb388065716f877ae428">More...</a><br /></td></tr>
-<tr class="separator:a9a01173cb3a8eb388065716f877ae428"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a763e3b953f26516a642d9fb9566503"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a8a763e3b953f26516a642d9fb9566503">read</a> () final</td></tr>
-<tr class="memdesc:a8a763e3b953f26516a642d9fb9566503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data from the device.  <a href="#a8a763e3b953f26516a642d9fb9566503">More...</a><br /></td></tr>
-<tr class="separator:a8a763e3b953f26516a642d9fb9566503"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaa7f4a4203547250a6f801fa8bc2b07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#adaa7f4a4203547250a6f801fa8bc2b07">doReadTransfer</a> () override</td></tr>
 <tr class="memdesc:adaa7f4a4203547250a6f801fa8bc2b07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data from the device but do not fill it into the user buffer of this <a class="el" href="classmtca4u_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#adaa7f4a4203547250a6f801fa8bc2b07">More...</a><br /></td></tr>
 <tr class="separator:adaa7f4a4203547250a6f801fa8bc2b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,21 +134,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a40f2e6a88c0cddcd3e2fbed0b5266749"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a40f2e6a88c0cddcd3e2fbed0b5266749">doReadTransferLatest</a> () override</td></tr>
 <tr class="memdesc:a40f2e6a88c0cddcd3e2fbed0b5266749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the latest data from the device without blocking but do not fill it into the user buffer of this <a class="el" href="classmtca4u_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#a40f2e6a88c0cddcd3e2fbed0b5266749">More...</a><br /></td></tr>
 <tr class="separator:a40f2e6a88c0cddcd3e2fbed0b5266749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa00777510899853221a9bb768f8230ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#aa00777510899853221a9bb768f8230ad">readNonBlocking</a> () final</td></tr>
-<tr class="memdesc:aa00777510899853221a9bb768f8230ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the next value, if available in the input buffer.  <a href="#aa00777510899853221a9bb768f8230ad">More...</a><br /></td></tr>
-<tr class="separator:aa00777510899853221a9bb768f8230ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3369483aa8f42f8f68a4d2807b9a84b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a3369483aa8f42f8f68a4d2807b9a84b9">readLatest</a> () final</td></tr>
-<tr class="memdesc:a3369483aa8f42f8f68a4d2807b9a84b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the latest value, discarding any other update since the last read if present.  <a href="#a3369483aa8f42f8f68a4d2807b9a84b9">More...</a><br /></td></tr>
-<tr class="separator:a3369483aa8f42f8f68a4d2807b9a84b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff2b8b05831d3efd05e4d9323602530c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#aff2b8b05831d3efd05e4d9323602530c">readAsync</a> () override</td></tr>
-<tr class="memdesc:aff2b8b05831d3efd05e4d9323602530c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the device in the background and return a future which will be fulfilled when the data is ready.  <a href="#aff2b8b05831d3efd05e4d9323602530c">More...</a><br /></td></tr>
-<tr class="separator:aff2b8b05831d3efd05e4d9323602530c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ba10cb54b89531fbff657ff12dda1fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a0ba10cb54b89531fbff657ff12dda1fa">asyncTransferActive</a> () override</td></tr>
-<tr class="memdesc:a0ba10cb54b89531fbff657ff12dda1fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether there is an ongoing active asynchronous transfer.  <a href="#a0ba10cb54b89531fbff657ff12dda1fa">More...</a><br /></td></tr>
-<tr class="separator:a0ba10cb54b89531fbff657ff12dda1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb92af5a66b06fc4783e945e42738428"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#aeb92af5a66b06fc4783e945e42738428">clearAsyncTransferActive</a> () override</td></tr>
-<tr class="memdesc:aeb92af5a66b06fc4783e945e42738428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the flag that there is an ongoing asynchronous transfer.  <a href="#aeb92af5a66b06fc4783e945e42738428">More...</a><br /></td></tr>
-<tr class="separator:aeb92af5a66b06fc4783e945e42738428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e58c492fd6e5c725a7eceaba61a369b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a3e58c492fd6e5c725a7eceaba61a369b">doReadTransferAsync</a> () override</td></tr>
+<tr class="memdesc:a3e58c492fd6e5c725a7eceaba61a369b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the actual asynchronous read transfer.  <a href="#a3e58c492fd6e5c725a7eceaba61a369b">More...</a><br /></td></tr>
+<tr class="separator:a3e58c492fd6e5c725a7eceaba61a369b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cc43cc93650c28a93c8c9718089902c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a9cc43cc93650c28a93c8c9718089902c">isMergeable</a> (const boost::shared_ptr&lt; <a class="el" href="classmtca4u_1_1_transfer_element.html">TransferElement</a> const  &gt; &amp;other) const </td></tr>
 <tr class="memdesc:a9cc43cc93650c28a93c8c9718089902c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the address areas are adjacent and/or overlapping.  <a href="#a9cc43cc93650c28a93c8c9718089902c">More...</a><br /></td></tr>
 <tr class="separator:a9cc43cc93650c28a93c8c9718089902c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,9 +165,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9901e666ac60d41473a69bae04859871 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a9901e666ac60d41473a69bae04859871">TransferElement</a> (std::string const &amp;name=std::string(), std::string const &amp;unit=std::string(<a class="el" href="classmtca4u_1_1_transfer_element.html#a05577297da10eba9575c1606efb838b9">unitNotSet</a>), std::string const &amp;description=std::string())</td></tr>
 <tr class="memdesc:a9901e666ac60d41473a69bae04859871 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a transfer element with the specified name.  <a href="#a9901e666ac60d41473a69bae04859871">More...</a><br /></td></tr>
 <tr class="separator:a9901e666ac60d41473a69bae04859871 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ac07c9d4fab89208a93016a101898a inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a32ac07c9d4fab89208a93016a101898a">TransferElement</a> (const <a class="el" href="classmtca4u_1_1_transfer_element.html">TransferElement</a> &amp;other)</td></tr>
-<tr class="memdesc:a32ac07c9d4fab89208a93016a101898a inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor: do not allow copying when in <a class="el" href="classmtca4u_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a>, remove asynchronous read state.  <a href="#a32ac07c9d4fab89208a93016a101898a">More...</a><br /></td></tr>
-<tr class="separator:a32ac07c9d4fab89208a93016a101898a inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e134c8525ab0ce43fa51a6a633fa6b inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#ac6e134c8525ab0ce43fa51a6a633fa6b">TransferElement</a> (const <a class="el" href="classmtca4u_1_1_transfer_element.html">TransferElement</a> &amp;other)=delete</td></tr>
+<tr class="memdesc:ac6e134c8525ab0ce43fa51a6a633fa6b inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copying and moving is not allowed.  <a href="#ac6e134c8525ab0ce43fa51a6a633fa6b">More...</a><br /></td></tr>
+<tr class="separator:ac6e134c8525ab0ce43fa51a6a633fa6b inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada71a06f6a83fcf2503624a6e72ef178 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#ada71a06f6a83fcf2503624a6e72ef178">TransferElement</a> (<a class="el" href="classmtca4u_1_1_transfer_element.html">TransferElement</a> &amp;&amp;other)=delete</td></tr>
+<tr class="separator:ada71a06f6a83fcf2503624a6e72ef178 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754274381bd1fafa6ea2602da89a7679 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_transfer_element.html">TransferElement</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a754274381bd1fafa6ea2602da89a7679">operator=</a> (const <a class="el" href="classmtca4u_1_1_transfer_element.html">TransferElement</a> &amp;other)=delete</td></tr>
+<tr class="separator:a754274381bd1fafa6ea2602da89a7679 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b82feea0dbc3ceec0267f8688d7a987 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_transfer_element.html">TransferElement</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a2b82feea0dbc3ceec0267f8688d7a987">operator=</a> (<a class="el" href="classmtca4u_1_1_transfer_element.html">TransferElement</a> &amp;&amp;other)=delete</td></tr>
+<tr class="separator:a2b82feea0dbc3ceec0267f8688d7a987 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa578ad1991d6b9763b5cc8096220af0d inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#aa578ad1991d6b9763b5cc8096220af0d">~TransferElement</a> ()</td></tr>
 <tr class="memdesc:aa578ad1991d6b9763b5cc8096220af0d inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base classes need a virtual destructor.  <a href="#aa578ad1991d6b9763b5cc8096220af0d">More...</a><br /></td></tr>
 <tr class="separator:aa578ad1991d6b9763b5cc8096220af0d inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,6 +186,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adc66ca9c081ec77cf6d9cc64a4c267fb inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#adc66ca9c081ec77cf6d9cc64a4c267fb">getDescription</a> () const </td></tr>
 <tr class="memdesc:adc66ca9c081ec77cf6d9cc64a4c267fb inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the description of this variable/register.  <a href="#adc66ca9c081ec77cf6d9cc64a4c267fb">More...</a><br /></td></tr>
 <tr class="separator:adc66ca9c081ec77cf6d9cc64a4c267fb inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a6bfac3968093e94171e76123f382dd inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a9a6bfac3968093e94171e76123f382dd">read</a> ()</td></tr>
+<tr class="memdesc:a9a6bfac3968093e94171e76123f382dd inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data from the device.  <a href="#a9a6bfac3968093e94171e76123f382dd">More...</a><br /></td></tr>
+<tr class="separator:a9a6bfac3968093e94171e76123f382dd inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c2ea63a93acb6b93af71c1882a6154 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a39c2ea63a93acb6b93af71c1882a6154">readNonBlocking</a> ()</td></tr>
+<tr class="memdesc:a39c2ea63a93acb6b93af71c1882a6154 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the next value, if available in the input buffer.  <a href="#a39c2ea63a93acb6b93af71c1882a6154">More...</a><br /></td></tr>
+<tr class="separator:a39c2ea63a93acb6b93af71c1882a6154 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6114d163656e92a02b901c8d7ddc346 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#af6114d163656e92a02b901c8d7ddc346">readLatest</a> ()</td></tr>
+<tr class="memdesc:af6114d163656e92a02b901c8d7ddc346 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the latest value, discarding any other update since the last read if present.  <a href="#af6114d163656e92a02b901c8d7ddc346">More...</a><br /></td></tr>
+<tr class="separator:af6114d163656e92a02b901c8d7ddc346 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3092fb929ab18c7c3b0ba2376e8ae1 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#acc3092fb929ab18c7c3b0ba2376e8ae1">readAsync</a> ()</td></tr>
+<tr class="memdesc:acc3092fb929ab18c7c3b0ba2376e8ae1 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the device in the background and return a future which will be fulfilled when the data is ready.  <a href="#acc3092fb929ab18c7c3b0ba2376e8ae1">More...</a><br /></td></tr>
+<tr class="separator:acc3092fb929ab18c7c3b0ba2376e8ae1 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3a7be39c8b85fb96b3cb0a95c97d44 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a1d3a7be39c8b85fb96b3cb0a95c97d44">write</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber={})</td></tr>
+<tr class="memdesc:a1d3a7be39c8b85fb96b3cb0a95c97d44 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data to device.  <a href="#a1d3a7be39c8b85fb96b3cb0a95c97d44">More...</a><br /></td></tr>
+<tr class="separator:a1d3a7be39c8b85fb96b3cb0a95c97d44 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77e7690a5dbba2e34a0fc8f91f4af5ca inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a77e7690a5dbba2e34a0fc8f91f4af5ca">getVersionNumber</a> () const </td></tr>
 <tr class="memdesc:a77e7690a5dbba2e34a0fc8f91f4af5ca inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the version number that is associated with the last transfer (i.e.  <a href="#a77e7690a5dbba2e34a0fc8f91f4af5ca">More...</a><br /></td></tr>
 <tr class="separator:a77e7690a5dbba2e34a0fc8f91f4af5ca inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,9 +231,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8a0815a31412f1e862dff4bf6b5f90d4 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a8a0815a31412f1e862dff4bf6b5f90d4">setPersistentDataStorage</a> (boost::shared_ptr&lt; ChimeraTK::PersistentDataStorage &gt;)</td></tr>
 <tr class="memdesc:a8a0815a31412f1e862dff4bf6b5f90d4 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate a persistent data storage object to be updated on each write operation of this ProcessArray.  <a href="#a8a0815a31412f1e862dff4bf6b5f90d4">More...</a><br /></td></tr>
 <tr class="separator:a8a0815a31412f1e862dff4bf6b5f90d4 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7779fc0a610a11a1b9758a2584fa6ce inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_transfer_element_1_1_i_d.html">ID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#ab7779fc0a610a11a1b9758a2584fa6ce">getId</a> () const </td></tr>
-<tr class="memdesc:ab7779fc0a610a11a1b9758a2584fa6ce inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain unique <a class="el" href="classmtca4u_1_1_transfer_element_1_1_i_d.html" title="Simple class holding a unique ID for a TransferElement. ">ID</a> for this <a class="el" href="classmtca4u_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#ab7779fc0a610a11a1b9758a2584fa6ce">More...</a><br /></td></tr>
-<tr class="separator:ab7779fc0a610a11a1b9758a2584fa6ce inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a52d9562f1f1146f7f6676811cf6c4 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_transfer_element_i_d.html">TransferElementID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#ac6a52d9562f1f1146f7f6676811cf6c4">getId</a> () const </td></tr>
+<tr class="memdesc:ac6a52d9562f1f1146f7f6676811cf6c4 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain unique ID for this <a class="el" href="classmtca4u_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#ac6a52d9562f1f1146f7f6676811cf6c4">More...</a><br /></td></tr>
+<tr class="separator:ac6a52d9562f1f1146f7f6676811cf6c4 inherit pub_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -260,7 +263,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:ab57b6bd901fd269b79786dd659811b76 inherit pro_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="classmtca4u_1_1_transfer_element.html#aab68105cb64b7a456b7e61bf9bb5b23c" title="Perform any post-write cleanups if necessary. ">postWrite()</a>.  <a href="#ab57b6bd901fd269b79786dd659811b76">More...</a><br /></td></tr>
 <tr class="separator:ab57b6bd901fd269b79786dd659811b76 inherit pro_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af76e8a733a92e5a36ab6466e8fec43d7 inherit pro_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#af76e8a733a92e5a36ab6466e8fec43d7">makeUniqueId</a> ()</td></tr>
-<tr class="memdesc:af76e8a733a92e5a36ab6466e8fec43d7 inherit pro_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow generating a unique <a class="el" href="classmtca4u_1_1_transfer_element_1_1_i_d.html" title="Simple class holding a unique ID for a TransferElement. ">ID</a> from derived classes.  <a href="#af76e8a733a92e5a36ab6466e8fec43d7">More...</a><br /></td></tr>
+<tr class="memdesc:af76e8a733a92e5a36ab6466e8fec43d7 inherit pro_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow generating a unique ID from derived classes.  <a href="#af76e8a733a92e5a36ab6466e8fec43d7">More...</a><br /></td></tr>
 <tr class="separator:af76e8a733a92e5a36ab6466e8fec43d7 inherit pro_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -296,9 +299,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:adaebf84a4baead76fcca5b38bead596a inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#adaebf84a4baead76fcca5b38bead596a">_description</a></td></tr>
 <tr class="memdesc:adaebf84a4baead76fcca5b38bead596a inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of this variable/register.  <a href="#adaebf84a4baead76fcca5b38bead596a">More...</a><br /></td></tr>
 <tr class="separator:adaebf84a4baead76fcca5b38bead596a inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3472a62db198011226904af5d41aec7b inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_transfer_element_1_1_i_d.html">ID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a3472a62db198011226904af5d41aec7b">_id</a></td></tr>
-<tr class="memdesc:a3472a62db198011226904af5d41aec7b inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classmtca4u_1_1_transfer_element_1_1_i_d.html" title="Simple class holding a unique ID for a TransferElement. ">ID</a> of this <a class="el" href="classmtca4u_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#a3472a62db198011226904af5d41aec7b">More...</a><br /></td></tr>
-<tr class="separator:a3472a62db198011226904af5d41aec7b inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049c8fdd2dc0cfa75e8f9a6927fb2a73 inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_transfer_element_i_d.html">TransferElementID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a049c8fdd2dc0cfa75e8f9a6927fb2a73">_id</a></td></tr>
+<tr class="memdesc:a049c8fdd2dc0cfa75e8f9a6927fb2a73 inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID of this <a class="el" href="classmtca4u_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#a049c8fdd2dc0cfa75e8f9a6927fb2a73">More...</a><br /></td></tr>
+<tr class="separator:a049c8fdd2dc0cfa75e8f9a6927fb2a73 inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04f6bbbd0a7230f21c0900541efc5336 inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a04f6bbbd0a7230f21c0900541efc5336">isInTransferGroup</a></td></tr>
 <tr class="memdesc:a04f6bbbd0a7230f21c0900541efc5336 inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether this <a class="el" href="classmtca4u_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> has been added to a <a class="el" href="classmtca4u_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> or not.  <a href="#a04f6bbbd0a7230f21c0900541efc5336">More...</a><br /></td></tr>
 <tr class="separator:a04f6bbbd0a7230f21c0900541efc5336 inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,6 +311,12 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ae8af9f3df3e0241b4fb7fec94d5b8c24 inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#ae8af9f3df3e0241b4fb7fec94d5b8c24">writeTransactionInProgress</a> {false}</td></tr>
 <tr class="memdesc:ae8af9f3df3e0241b4fb7fec94d5b8c24 inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether a write transaction is in progress.  <a href="#ae8af9f3df3e0241b4fb7fec94d5b8c24">More...</a><br /></td></tr>
 <tr class="separator:ae8af9f3df3e0241b4fb7fec94d5b8c24 inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d5c05a8d573fc17c6fcc6c0a7874c7 inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a82d5c05a8d573fc17c6fcc6c0a7874c7">hasActiveFuture</a> {false}</td></tr>
+<tr class="memdesc:a82d5c05a8d573fc17c6fcc6c0a7874c7 inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether there is a valid activeFuture or not.  <a href="#a82d5c05a8d573fc17c6fcc6c0a7874c7">More...</a><br /></td></tr>
+<tr class="separator:a82d5c05a8d573fc17c6fcc6c0a7874c7 inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8194c23ca0a8b08293e6c3410c845bc1 inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a8194c23ca0a8b08293e6c3410c845bc1">activeFuture</a></td></tr>
+<tr class="memdesc:a8194c23ca0a8b08293e6c3410c845bc1 inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">last future returned by <a class="el" href="classmtca4u_1_1_transfer_element.html#a5ad4c18e3c2a918eb91ce82ee14d43cf" title="Start the actual asynchronous read transfer. ">doReadTransferAsync()</a> (valid if hasActiveFuture == true)  <a href="#a8194c23ca0a8b08293e6c3410c845bc1">More...</a><br /></td></tr>
+<tr class="separator:a8194c23ca0a8b08293e6c3410c845bc1 inherit pro_attribs_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -321,10 +330,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a0db950554a40340e7aeca3249ca2d46d inherit pub_types_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="classmtca4u_1_1_transfer_element.html">TransferElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a0db950554a40340e7aeca3249ca2d46d">SharedPtr</a></td></tr>
 <tr class="memdesc:a0db950554a40340e7aeca3249ca2d46d inherit pub_types_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">A typedef for more compact syntax.  <a href="#a0db950554a40340e7aeca3249ca2d46d">More...</a><br /></td></tr>
 <tr class="separator:a0db950554a40340e7aeca3249ca2d46d inherit pub_types_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_classmtca4u_1_1_transfer_element"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classmtca4u_1_1_transfer_element')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classmtca4u_1_1_transfer_element.html">mtca4u::TransferElement</a></td></tr>
-<tr class="memitem:ae22fdbe57951c132c5af6b8634de04fc inherit pub_static_methods_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmtca4u_1_1_transfer_element_1_1_i_d.html">TransferElement::ID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#ae22fdbe57951c132c5af6b8634de04fc">readAny</a> (std::list&lt; std::reference_wrapper&lt; <a class="el" href="classmtca4u_1_1_transfer_element.html">TransferElement</a> &gt;&gt; elementsToRead)</td></tr>
-<tr class="memdesc:ae22fdbe57951c132c5af6b8634de04fc inherit pub_static_methods_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data asynchronously from all given TransferElements and wait until one of the TransferElements has new data.  <a href="#ae22fdbe57951c132c5af6b8634de04fc">More...</a><br /></td></tr>
-<tr class="separator:ae22fdbe57951c132c5af6b8634de04fc inherit pub_static_methods_classmtca4u_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_classmtca4u_1_1_transfer_element"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classmtca4u_1_1_transfer_element')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classmtca4u_1_1_transfer_element.html">mtca4u::TransferElement</a></td></tr>
 <tr class="memitem:a05577297da10eba9575c1606efb838b9 inherit pub_static_attribs_classmtca4u_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">static constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_transfer_element.html#a05577297da10eba9575c1606efb838b9">unitNotSet</a> [] = &quot;n./a.&quot;</td></tr>
 <tr class="memdesc:a05577297da10eba9575c1606efb838b9 inherit pub_static_attribs_classmtca4u_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant string to be used as a unit when the unit is not provided or known.  <a href="#a05577297da10eba9575c1606efb838b9">More...</a><br /></td></tr>
@@ -410,36 +415,6 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0ba10cb54b89531fbff657ff12dda1fa"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mtca4u::NumericAddressedLowLevelTransferElement::asyncTransferActive </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Check whether there is an ongoing active asynchronous transfer. </p>
-<p>An asynchronous transfer is considered active from the call to <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#aff2b8b05831d3efd05e4d9323602530c" title="Read data from the device in the background and return a future which will be fulfilled when the data...">readAsync()</a> until wait() has been called on the future (directly or indirectly by successfully calling another read function on the <a class="el" href="classmtca4u_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>). </p>
-
-<p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#a298b4e231cb3f426d70d12685ecd40fa">mtca4u::TransferElement</a>.</p>
-
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00095">95</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a048e3a2a97263f9e1af55e7f45a7266f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -465,7 +440,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Return accessor to the begin of the raw buffer matching the given address. </p>
 <p>No <a class="el" href="_register_info_map_8cpp.html#a204a3f4fa39b9c007f9784d3e4af4667">end()</a> is provided, since the <a class="el" href="classmtca4u_1_1_numeric_addressed_backend_register_accessor.html" title="Implementation of the NDRegisterAccessor for NumericAddressedBackends for scalar and 1D registers...">NumericAddressedBackendRegisterAccessor</a> using this functionality uses the cooked buffer for this check. Only addresses within the range specified in the constructor or <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a51b0bf5e83fb8d21876f96e41dbe8ee1" title="Change the start address (inside the bar given in the constructor) and number of words of this access...">changeAddress()</a> may be passed. The address must also have an integer multiple of the word size as an offset w.r.t. the start address specified in the constructor. Otherwise an undefined behaviour will occur! </p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00152">152</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00109">109</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -503,37 +478,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Change the start address (inside the bar given in the constructor) and number of words of this accessor, and set the shared flag. </p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00157">157</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aeb92af5a66b06fc4783e945e42738428"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::NumericAddressedLowLevelTransferElement::clearAsyncTransferActive </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Clear the flag that there is an ongoing asynchronous transfer. </p>
-<p>This function will be called by <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#ac69099e41046c798d94c8289c335574d" title="Block the current thread until the new data has arrived. ">TransferFuture::wait()</a> and must be passed on in decorators. Do not otherwise use this function! </p>
-
-<p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#a334ff9a3d121ba2be690c37537730e57">mtca4u::TransferElement</a>.</p>
-
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00101">101</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00114">114</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -559,12 +504,44 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the data from the device but do not fill it into the user buffer of this <a class="el" href="classmtca4u_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
-<p>Calling this function after <a class="el" href="classmtca4u_1_1_transfer_element.html#a1fccb4f40373d618857e7ab6cf9b8912" title="Perform any pre-read tasks if necessary. ">preRead()</a> and followed by <a class="el" href="classmtca4u_1_1_transfer_element.html#a2defb63b7607f31ad773ce01bdc69f47" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> is exactly equivalent to a call to just <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a8a763e3b953f26516a642d9fb9566503" title="Read the data from the device. ">read()</a>.</p>
+<p>Calling this function after <a class="el" href="classmtca4u_1_1_transfer_element.html#a1fccb4f40373d618857e7ab6cf9b8912" title="Perform any pre-read tasks if necessary. ">preRead()</a> and followed by <a class="el" href="classmtca4u_1_1_transfer_element.html#a2defb63b7607f31ad773ce01bdc69f47" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> is exactly equivalent to a call to just <a class="el" href="classmtca4u_1_1_transfer_element.html#a9a6bfac3968093e94171e76123f382dd" title="Read the data from the device. ">read()</a>.</p>
 <p>Implementation note: This function must return within ~1 second after boost::thread::interrupt() has been called on the thread calling this function. </p>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#a3eb02e2fa3228e645f6ff88d10226381">mtca4u::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00053">53</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00039">39</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e58c492fd6e5c725a7eceaba61a369b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a> mtca4u::NumericAddressedLowLevelTransferElement::doReadTransferAsync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Start the actual asynchronous read transfer. </p>
+<p>This function must be implemented by the backends and will be called inside <a class="el" href="classmtca4u_1_1_transfer_element.html#acc3092fb929ab18c7c3b0ba2376e8ae1" title="Read data from the device in the background and return a future which will be fulfilled when the data...">readAsync()</a>. At that point, it is guaranteed that there is no unfinished transfer still ongoing (i.e. no still-valid TransferFuture is present) and <a class="el" href="classmtca4u_1_1_transfer_element.html#a1fccb4f40373d618857e7ab6cf9b8912" title="Perform any pre-read tasks if necessary. ">preRead()</a> has already been called.</p>
+<p>The backend must never touch the user buffer (i.e. <a class="el" href="classmtca4u_1_1_n_d_register_accessor.html#ad303b70009f4865e9257427e3fb19cd3" title="Buffer of converted data elements. ">NDRegisterAccessor::buffer_2D</a>) inside this function, as it may only be filled inside <a class="el" href="classmtca4u_1_1_transfer_element.html#a2defb63b7607f31ad773ce01bdc69f47" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. <a class="el" href="classmtca4u_1_1_transfer_element.html#a2defb63b7607f31ad773ce01bdc69f47" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> will get called by the TransferFuture when the user calls wait().</p>
+<p>Note: The TransferFuture returned by this function must have been constructed with this <a class="el" href="classmtca4u_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> as the transferElement in the constructor. Otherwise <a class="el" href="classmtca4u_1_1_transfer_element.html#a2defb63b7607f31ad773ce01bdc69f47" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> will not be properly called! </p>
+
+<p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#a5ad4c18e3c2a918eb91ce82ee14d43cf">mtca4u::TransferElement</a>.</p>
+
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00058">58</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -590,11 +567,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the latest data from the device without blocking but do not fill it into the user buffer of this <a class="el" href="classmtca4u_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
-<p>Calling this function after <a class="el" href="classmtca4u_1_1_transfer_element.html#a1fccb4f40373d618857e7ab6cf9b8912" title="Perform any pre-read tasks if necessary. ">preRead()</a> and followed by <a class="el" href="classmtca4u_1_1_transfer_element.html#a2defb63b7607f31ad773ce01bdc69f47" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> is exactly equivalent to a call to just <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a3369483aa8f42f8f68a4d2807b9a84b9" title="Read the latest value, discarding any other update since the last read if present. ">readLatest()</a>. For the return value, see <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#aa00777510899853221a9bb768f8230ad" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>. </p>
+<p>Calling this function after <a class="el" href="classmtca4u_1_1_transfer_element.html#a1fccb4f40373d618857e7ab6cf9b8912" title="Perform any pre-read tasks if necessary. ">preRead()</a> and followed by <a class="el" href="classmtca4u_1_1_transfer_element.html#a2defb63b7607f31ad773ce01bdc69f47" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> is exactly equivalent to a call to just <a class="el" href="classmtca4u_1_1_transfer_element.html#af6114d163656e92a02b901c8d7ddc346" title="Read the latest value, discarding any other update since the last read if present. ">readLatest()</a>. For the return value, see <a class="el" href="classmtca4u_1_1_transfer_element.html#a39c2ea63a93acb6b93af71c1882a6154" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>. </p>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#a095ac74aa9aa2fc21baa37d9e07e85e1">mtca4u::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00067">67</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00053">53</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -620,11 +597,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the data from the device without blocking but do not fill it into the user buffer of this <a class="el" href="classmtca4u_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
-<p>Calling this function after <a class="el" href="classmtca4u_1_1_transfer_element.html#a1fccb4f40373d618857e7ab6cf9b8912" title="Perform any pre-read tasks if necessary. ">preRead()</a> and followed by <a class="el" href="classmtca4u_1_1_transfer_element.html#a2defb63b7607f31ad773ce01bdc69f47" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> is exactly equivalent to a call to just <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#aa00777510899853221a9bb768f8230ad" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>. For the return value, see <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#aa00777510899853221a9bb768f8230ad" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>. </p>
+<p>Calling this function after <a class="el" href="classmtca4u_1_1_transfer_element.html#a1fccb4f40373d618857e7ab6cf9b8912" title="Perform any pre-read tasks if necessary. ">preRead()</a> and followed by <a class="el" href="classmtca4u_1_1_transfer_element.html#a2defb63b7607f31ad773ce01bdc69f47" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> is exactly equivalent to a call to just <a class="el" href="classmtca4u_1_1_transfer_element.html#a39c2ea63a93acb6b93af71c1882a6154" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>. For the return value, see <a class="el" href="classmtca4u_1_1_transfer_element.html#a39c2ea63a93acb6b93af71c1882a6154" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>. </p>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#ad313e332b8bf872eade35bd4cdec9462">mtca4u::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00062">62</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00048">48</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -652,11 +629,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Write the data to device. </p>
 <p>The return value is true, old data was lost on the write transfer (e.g. due to an buffer overflow). In case of an unbuffered write transfer, the return value will always be false.</p>
-<p>Calling this function after <a class="el" href="classmtca4u_1_1_transfer_element.html#a02dd483871e80ff7eb6c2c8094b00353" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> and followed by <a class="el" href="classmtca4u_1_1_transfer_element.html#aab68105cb64b7a456b7e61bf9bb5b23c" title="Perform any post-write cleanups if necessary. ">postWrite()</a> is exactly equivalent to a call to <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a9a01173cb3a8eb388065716f877ae428" title="Write the data to device. ">write()</a>. </p>
+<p>Calling this function after <a class="el" href="classmtca4u_1_1_transfer_element.html#a02dd483871e80ff7eb6c2c8094b00353" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> and followed by <a class="el" href="classmtca4u_1_1_transfer_element.html#aab68105cb64b7a456b7e61bf9bb5b23c" title="Perform any post-write cleanups if necessary. ">postWrite()</a> is exactly equivalent to a call to <a class="el" href="classmtca4u_1_1_transfer_element.html#a1d3a7be39c8b85fb96b3cb0a95c97d44" title="Write the data to device. ">write()</a>. </p>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#af1f7a496c406682b61a54316d10bb45e">mtca4u::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00057">57</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00043">43</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -687,7 +664,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#a4c43acb77928d2ccc12829d1b386195b">mtca4u::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00202">202</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00159">159</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -720,7 +697,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#aa456e62c843c9c5f7dc6c839c17e239e">mtca4u::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00206">206</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00163">163</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -750,7 +727,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#a475c56d5d123fd245ff352808c281ea2">mtca4u::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00129">129</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00086">86</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -779,7 +756,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Check if the address areas are adjacent and/or overlapping. </p>
 <p><a class="el" href="classmtca4u_1_1_numeric_addressed_backend_register_accessor.html#ad0ba0f16a3e676c2349d16a2c19dabbb" title="Search for all underlying TransferElements which are considered identicel (see sameRegister()) with t...">NumericAddressedBackendRegisterAccessor::replaceTransferElement()</a> takes care of replacing the NumericAddressedBackendRawAccessors with a single NumericAddressedBackendRawAccessor covering the address space of both accessors. </p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00112">112</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00069">69</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -809,7 +786,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#a55e803ec5758a3cd2d25a1e743e24d5c">mtca4u::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00139">139</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00096">96</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -839,7 +816,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#a2807cd6932846d6988b9fb645a420e9b">mtca4u::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00135">135</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00092">92</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -869,7 +846,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#aa0e9f2ec21138931f5f8c5cdc03c11a4">mtca4u::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00143">143</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00100">100</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -902,133 +879,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classmtca4u_1_1_transfer_element.html#ab99387f62e43b18cb4f5f00ed2bb7a97">mtca4u::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00125">125</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8a763e3b953f26516a642d9fb9566503"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mtca4u::NumericAddressedLowLevelTransferElement::read </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Read the data from the device. </p>
-<p>If <a class="el" href="namespacemtca4u.html#a46449a2e75616026f5c97696929c6cb5aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> was set, this function will block until new data has arrived. Otherwise it still might block for a short time until the data transfer was complete. </p>
-
-<p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#aff8dfb35106ffe971cb900a87c22a1a3">mtca4u::TransferElement</a>.</p>
-
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00046">46</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aff2b8b05831d3efd05e4d9323602530c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a> mtca4u::NumericAddressedLowLevelTransferElement::readAsync </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Read data from the device in the background and return a future which will be fulfilled when the data is ready. </p>
-<p>When the future is fulfilled, the transfer element will already contain the new data, there is no need to call <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a8a763e3b953f26516a642d9fb9566503" title="Read the data from the device. ">read()</a> or <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#aa00777510899853221a9bb768f8230ad" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a> (which would trigger another data transfer).</p>
-<p>It is allowed to call this function multiple times, which will return the same (shared) future until it is fulfilled. If other read functions (like <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a8a763e3b953f26516a642d9fb9566503" title="Read the data from the device. ">read()</a> or <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#aa00777510899853221a9bb768f8230ad" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>) are called before the future previously returned by this function was fulfilled, that call will be equivalent to the respective call on the future (i.e. <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#ac69099e41046c798d94c8289c335574d" title="Block the current thread until the new data has arrived. ">TransferFuture::wait()</a> resp. <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a710abb76e96232132a9ace5bf6135e37" title="Check if new data has arrived. ">TransferFuture::hasNewData()</a>) and thus the future will hae been used afterwards.</p>
-<p>The future will be fulfilled at the time when normally <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a8a763e3b953f26516a642d9fb9566503" title="Read the data from the device. ">read()</a> would return. A call to this function is roughly logically equivalent to: boost::async( boost::bind(&amp;TransferElement::read, this) ); (Although such implementation would disallow accessing the user data buffer until the future is fulfilled, which is not the case for this function.)</p>
-<p>Design note: A special type of future has to be returned to allow an abstraction from the implementation details of the backend. This allows - depending on the backend type - a more efficient implementation without launching a thread.</p>
-<p>Note for implementations: Inside this function and before launching the actual transfer, the flag readTransactionInProgress must be cleared, then <a class="el" href="classmtca4u_1_1_transfer_element.html#a1fccb4f40373d618857e7ab6cf9b8912" title="Perform any pre-read tasks if necessary. ">preRead()</a> has to be called. Otherwise <a class="el" href="classmtca4u_1_1_transfer_element.html#a2defb63b7607f31ad773ce01bdc69f47" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> will not get executed after the transfer. <a class="el" href="classmtca4u_1_1_transfer_element.html#a2defb63b7607f31ad773ce01bdc69f47" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> on the other hand must not be called inside this function, since this would update the user buffer, which should only happen when waiting on the TransferFuture. <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#ac69099e41046c798d94c8289c335574d" title="Block the current thread until the new data has arrived. ">TransferFuture::wait()</a> will automatically call <a class="el" href="classmtca4u_1_1_transfer_element.html#a2defb63b7607f31ad773ce01bdc69f47" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> before returning. Decorators must also call <a class="el" href="classmtca4u_1_1_transfer_element.html#a1fccb4f40373d618857e7ab6cf9b8912" title="Perform any pre-read tasks if necessary. ">preRead()</a> in their implementations of <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#aff2b8b05831d3efd05e4d9323602530c" title="Read data from the device in the background and return a future which will be fulfilled when the data...">readAsync()</a>!</p>
-<p>Note: This feature is still experimental. Expect API changes without notice! </p>
-
-<p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#a8d7b8e3adc6afdf6fd873c19f149067e">mtca4u::TransferElement</a>.</p>
-
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00088">88</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3369483aa8f42f8f68a4d2807b9a84b9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mtca4u::NumericAddressedLowLevelTransferElement::readLatest </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Read the latest value, discarding any other update since the last read if present. </p>
-<p>Otherwise this function is identical to <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#aa00777510899853221a9bb768f8230ad" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>, i.e. it will never wait for new values and it will return whether a new value was available if <a class="el" href="namespacemtca4u.html#a46449a2e75616026f5c97696929c6cb5aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> is set. </p>
-
-<p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#a3664a01fdc6f463ad0f0516742000c5c">mtca4u::TransferElement</a>.</p>
-
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00080">80</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa00777510899853221a9bb768f8230ad"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mtca4u::NumericAddressedLowLevelTransferElement::readNonBlocking </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Read the next value, if available in the input buffer. </p>
-<p>If <a class="el" href="namespacemtca4u.html#a46449a2e75616026f5c97696929c6cb5aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> was set, this function returns immediately and the return value indicated if a new value was available (<code>true</code>) or not (<code>false</code>).</p>
-<p>If <a class="el" href="namespacemtca4u.html#a46449a2e75616026f5c97696929c6cb5aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> was not set, this function is identical to <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a8a763e3b953f26516a642d9fb9566503" title="Read the data from the device. ">read()</a>, which will still return quickly. Depending on the actual transfer implementation, the backend might need to transfer data to obtain the current value before returning. Also this function is not guaranteed to be lock free. The return value will be always true in this mode. </p>
-
-<p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#a2165a21cef5394f18d1dcbd227801260">mtca4u::TransferElement</a>.</p>
-
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00072">72</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00082">82</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1059,7 +910,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classmtca4u_1_1_transfer_element.html#a2637a2b7ac207c0becd4ef0548d2126e">mtca4u::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00210">210</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00167">167</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1097,38 +948,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Set the start address (inside the bar given in the constructor) and number of words of this accessor. </p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00165">165</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9a01173cb3a8eb388065716f877ae428"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool mtca4u::NumericAddressedLowLevelTransferElement::write </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a>&#160;</td>
-          <td class="paramname"><em>versionNumber</em> = <code>{}</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Write the data to device. </p>
-<p>The return value is true, old data was lost on the write transfer (e.g. due to an buffer overflow). In case of an unbuffered write transfer, the return value will always be false. </p>
-
-<p>Implements <a class="el" href="classmtca4u_1_1_transfer_element.html#a06b2fdb9a6dea04fd343edf9511a0159">mtca4u::TransferElement</a>.</p>
-
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00039">39</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00122">122</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1153,7 +973,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00213">213</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00170">170</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1179,7 +999,7 @@ template&lt;typename UserType &gt; </div>
 <p>start address w.r.t. </p>
 <p>the PCIe bar </p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00184">184</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00141">141</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1203,7 +1023,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>the backend to use for the actual hardware access </p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00181">181</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00138">138</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1227,7 +1047,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>number of bytes to access </p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00193">193</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00150">150</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1251,7 +1071,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>number of 4-byte words to access </p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00190">190</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00147">147</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1276,7 +1096,7 @@ template&lt;typename UserType &gt; </div>
 <p>start address w.r.t. </p>
 <p>the PCIe bar </p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00187">187</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00144">144</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1300,7 +1120,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>flag if <a class="el" href="classmtca4u_1_1_numeric_addressed_low_level_transfer_element.html#a51b0bf5e83fb8d21876f96e41dbe8ee1" title="Change the start address (inside the bar given in the constructor) and number of words of this access...">changeAddress()</a> has been called, which is this low-level transfer element is shared between multiple accessors </p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00197">197</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00154">154</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1144,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>raw buffer </p>
 
-<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00200">200</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html#l00157">157</a> of file <a class="el" href="_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1334,7 +1154,7 @@ template&lt;typename UserType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 16 2017 06:17:15 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 21 2017 12:53:45 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -28,5 +28,6 @@ var searchData=
   ['_7esyncndregisteraccessor',['~SyncNDRegisterAccessor',['../classmtca4u_1_1_sync_n_d_register_accessor.html#aeea0609c00f761df26633d1806b82eba',1,'mtca4u::SyncNDRegisterAccessor']]],
   ['_7etcpctrl',['~TcpCtrl',['../class_chimera_t_k_1_1_tcp_ctrl.html#a74dbac59591e9e582fe6d2d664d62983',1,'ChimeraTK::TcpCtrl']]],
   ['_7etransferelement',['~TransferElement',['../classmtca4u_1_1_transfer_element.html#aa578ad1991d6b9763b5cc8096220af0d',1,'mtca4u::TransferElement']]],
+  ['_7etransferelementabstractor',['~TransferElementAbstractor',['../classmtca4u_1_1_transfer_element_abstractor.html#a76dd8dbd11a1d4e12992b2c00df6808e',1,'mtca4u::TransferElementAbstractor']]],
   ['_7etransfergroup',['~TransferGroup',['../classmtca4u_1_1_transfer_group.html#ab5b77b79c43847edfcf726969821119f',1,'mtca4u::TransferGroup']]]
 ];

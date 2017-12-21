@@ -2,7 +2,7 @@ var searchData=
 [
   ['ndregisteraccessor',['NDRegisterAccessor',['../classmtca4u_1_1_n_d_register_accessor.html',1,'mtca4u']]],
   ['ndregisteraccessor_3c_20t_20_3e',['NDRegisterAccessor&lt; T &gt;',['../classmtca4u_1_1_n_d_register_accessor.html',1,'mtca4u']]],
-  ['ndregisteraccessorbridge',['NDRegisterAccessorBridge',['../classmtca4u_1_1_n_d_register_accessor_bridge.html',1,'mtca4u']]],
+  ['ndregisteraccessorabstractor',['NDRegisterAccessorAbstractor',['../classmtca4u_1_1_n_d_register_accessor_abstractor.html',1,'mtca4u']]],
   ['ndregisteraccessordecorator',['NDRegisterAccessorDecorator',['../classmtca4u_1_1_n_d_register_accessor_decorator.html',1,'mtca4u']]],
   ['ndregisteraccessordecorator_3c_20t_20_3e',['NDRegisterAccessorDecorator&lt; T &gt;',['../classmtca4u_1_1_n_d_register_accessor_decorator.html',1,'mtca4u']]],
   ['ndregisteraccessordecorator_3c_20usertype_20_3e',['NDRegisterAccessorDecorator&lt; UserType &gt;',['../classmtca4u_1_1_n_d_register_accessor_decorator.html',1,'mtca4u']]],
