@@ -135,12 +135,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5cfd07ae879752a563072d4221bc547e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a080c74c1a23bcb56496fab0738f25183"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a080c74c1a23bcb56496fab0738f25183">doPostRead</a> () override</td></tr>
 <tr class="separator:a080c74c1a23bcb56496fab0738f25183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d13e8df989f48a5549ac4f40693d267"><td class="memItemLeft" align="right" valign="top">ChimeraTK::TransferFuture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a1d13e8df989f48a5549ac4f40693d267">readAsync</a> () override</td></tr>
-<tr class="separator:a1d13e8df989f48a5549ac4f40693d267"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a4f013e62f24b221b41943aad34843a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a2a4f013e62f24b221b41943aad34843a">asyncTransferActive</a> () override</td></tr>
-<tr class="separator:a2a4f013e62f24b221b41943aad34843a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99e053af23120ad16650f320e4879ce1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a99e053af23120ad16650f320e4879ce1">clearAsyncTransferActive</a> () override</td></tr>
-<tr class="separator:a99e053af23120ad16650f320e4879ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bcee8ced012c0ef9d01f2c8c9b4e18f"><td class="memItemLeft" align="right" valign="top">ChimeraTK::TransferFuture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a7bcee8ced012c0ef9d01f2c8c9b4e18f">doReadTransferAsync</a> () override</td></tr>
+<tr class="separator:a7bcee8ced012c0ef9d01f2c8c9b4e18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d326e24fbaa41483df4a04d80047eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a97d326e24fbaa41483df4a04d80047eb">doPreWrite</a> () override</td></tr>
 <tr class="separator:a97d326e24fbaa41483df4a04d80047eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2feec70ec6b64ce2df4c82dbb544ee0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#ac2feec70ec6b64ce2df4c82dbb544ee0">doWriteTransfer</a> (ChimeraTK::VersionNumber versionNumber={}) override</td></tr>
@@ -261,60 +257,6 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a2a4f013e62f24b221b41943aad34843a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UserType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">ChimeraTK::FeedingFanOut</a>&lt; UserType &gt;::asyncTransferActive </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00086">86</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a99e053af23120ad16650f320e4879ce1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UserType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">ChimeraTK::FeedingFanOut</a>&lt; UserType &gt;::clearAsyncTransferActive </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00090">90</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a080c74c1a23bcb56496fab0738f25183"></a>
 <div class="memitem">
 <div class="memproto">
@@ -365,7 +307,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00121">121</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00113">113</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -419,7 +361,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00094">94</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00086">86</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -447,6 +389,33 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00062">62</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7bcee8ced012c0ef9d01f2c8c9b4e18f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::TransferFuture <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">ChimeraTK::FeedingFanOut</a>&lt; UserType &gt;::doReadTransferAsync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00082">82</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -528,7 +497,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00112">112</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00104">104</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -556,7 +525,7 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>implement properly? </dd></dl>
 
-<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00136">136</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00128">128</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -584,7 +553,7 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>implement properly? </dd></dl>
 
-<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00132">132</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00124">124</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -694,34 +663,7 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>implement properly? </dd></dl>
 
-<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00128">128</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1d13e8df989f48a5549ac4f40693d267"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UserType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ChimeraTK::TransferFuture <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">ChimeraTK::FeedingFanOut</a>&lt; UserType &gt;::readAsync </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00082">82</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00120">120</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -750,7 +692,7 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>implement properly? </dd></dl>
 
-<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00140">140</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p>Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00132">132</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -760,7 +702,7 @@ template&lt;typename UserType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 16 2017 06:17:34 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 21 2017 12:54:30 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
