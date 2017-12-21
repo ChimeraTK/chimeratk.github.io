@@ -1,0 +1,1 @@
+Search.setIndex({envversion:46,filenames:["index","mtca4u"],objects:{},objnames:{},objtypes:{},terms:{content:0,index:0,modul:0,page:0,search:0},titles:["mtca4u Python Bindings Doucmentation","mtca4u module"],titleterms:{bind:0,doucment:0,indic:0,modul:1,mtca4u:[0,1],python:0,tabl:0}})

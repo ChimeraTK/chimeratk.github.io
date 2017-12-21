@@ -1,0 +1,78 @@
+Instructions how to configure Jenkis so it can run the update script
+and commit to github.
+
+We do not create special credentials inside Jenins, which also would be an
+option. This however requires access to the master jenkins host, while this
+procedure only requires access to the buildhost. It is the buildhost which
+has to write, not the Jenkins master.
+
+Concept:
+- The Jenins master checks out the public repo via https.
+- The build job adds the ssh key to the ssh-agent
+- The build jobs checks if there is a writeable remote and adds the repo
+  via ssh
+- It updates the remotes and check out the writeable remote master
+- It performs the docu creation and pushes to the writeable remote
+
+Initial setup:
+
+2. Set up the ssh key for automatic access to github:
+   - log into the build host with the same credentials as jenkins, for instance
+     msk_jenkins@mskbuildhost-u1604
+   - run ssh-keygen:
+     $ssh-keygen -t rsa -C "msk_jenkins@mskbuildhost-u1604.desy.de"
+     When asked for a file don't use the default name, but for instance
+     /home/msk_jenkins/.ssh/id_rsa_github
+     Do not enter a password.
+   - Add the public key to a github account which has write privileges to the
+     repository
+   - Add the following lines (without the +++ ---) to the ~/.ssh/config file:
+      (This step is needed if there is another identity like ~/.ssh/id_rsa
+       which could be loaded, otherwise it can be skipped.
+++++++++++++++++++++++++++++++++++++++
+Host github.com
+    HostName github.com
+    PreferredAuthentications publickey
+    User git
+    IdentityFile ~/.ssh/id_rsa_github
+--------------------------------------
+     When you freshly create the file set the permissions correctly,
+     otherwise ssh refused to use the information in it:
+     $chmod 600 ~/.ssh/config
+
+   - Activate the key in your session
+     $eval `ssh-agent -s`
+     $ssh-add ~/.ssh/id_rsa_github
+   - Contact github once manually so you can accept the ssh key
+     $ ssh -T git@github.com
+
+3. Prepare the Jenins job.
+   - Set the OTHER_CMAKE_ARGUMENTS variable correctly to contain the CMAKE_MODULE_PATH etc.
+   - Set up the job according to the concept. Here is the first working shell script:
++++
+#Activate the key in this session so we can write to github
+eval `ssh-agent -s`
+ssh-add ~/.ssh/id_rsa_github
+
+if ! git remote show | grep writeable-origin > /dev/null 2>&1; then
+  echo Creating new remote writeable-origin
+  git remote add writeable-origin git@github.com:ChimeraTK/chimeratk.github.io
+fi
+
+git remote update
+#Jenkis only checks out the last commit without creating a local master branch.
+#We have to create if in case the workspace has been cleared out, otherwise just check it out
+#About the regex: start of line, star or space, space, 'master' end of line
+if git branch | grep "^[\* ] master$"; then
+  git checkout master
+  git pull
+else
+  git checkout -b master writeable-origin/master
+fi
+
+#run the actual update script
+./update.sh || true
+
+#explicitly specify the refspecs because pushing the master is not configured in the checkout
+git push writeable-origin master:master
+---

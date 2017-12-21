@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['name',['name',['../classmtca4u_1_1_l_n_m_backend_register_info.html#a33818d838443e0b557caa857824bd7c5',1,'mtca4u::LNMBackendRegisterInfo::name()'],['../classmtca4u_1_1_register_info_map_1_1_meta_data.html#a68d73e91263f86406ff750a73d132258',1,'mtca4u::RegisterInfoMap::MetaData::name()'],['../classmtca4u_1_1_register_info_map_1_1_register_info.html#a7ee76c96238ac06544e0d510dae6c131',1,'mtca4u::RegisterInfoMap::RegisterInfo::name()']]],
+  ['nanoseconds',['nanoSeconds',['../structmtca4u_1_1_time_stamp.html#a4617c9d973425ab21ea9f166c8381295',1,'mtca4u::TimeStamp']]],
+  ['nbytes',['nbytes',['../classmtca4u_1_1proxies_1_1_dummy_register_element.html#a854a25bbbe9f7a6d3275d78adcda60eb',1,'mtca4u::proxies::DummyRegisterElement::nbytes()'],['../classmtca4u_1_1proxies_1_1_dummy_register_sequence.html#ac8d6523e46216123c24e2a7723b284ac',1,'mtca4u::proxies::DummyRegisterSequence::nbytes()'],['../classmtca4u_1_1_dummy_multiplexed_register_accessor.html#afe2c88f4cccec585937a7cc08dd1530b',1,'mtca4u::DummyMultiplexedRegisterAccessor::nbytes()'],['../classmtca4u_1_1_register_info_map_1_1_register_info.html#ad042258307f28ecfc5d117a59d36adcb',1,'mtca4u::RegisterInfoMap::RegisterInfo::nBytes()']]],
+  ['nchannels',['nChannels',['../classmtca4u_1_1_l_n_m_backend_register_info.html#a25cd5feda1917d1d65f0495144226aff',1,'mtca4u::LNMBackendRegisterInfo::nChannels()'],['../classmtca4u_1_1_register_info_map_1_1_register_info.html#a0fde92fdaa7906507ec796eedb76016c',1,'mtca4u::RegisterInfoMap::RegisterInfo::nChannels()']]],
+  ['ndimensions',['nDimensions',['../classmtca4u_1_1_l_n_m_backend_register_info.html#a67f1465e6f92d9f6d843aa4f49a9e542',1,'mtca4u::LNMBackendRegisterInfo']]],
+  ['nelements',['nElements',['../classmtca4u_1_1_dummy_multiplexed_register_accessor.html#af4c76f3ea52b03772339b0d80c6930ca',1,'mtca4u::DummyMultiplexedRegisterAccessor::nElements()'],['../classmtca4u_1_1_register_info_map_1_1_register_info.html#a562750af3328974d77cffbf4f3dbb54a',1,'mtca4u::RegisterInfoMap::RegisterInfo::nElements()']]],
+  ['nfractionalbits',['nFractionalBits',['../classmtca4u_1_1_register_info_map_1_1_register_info.html#a719934a77a358fc0c172a1cd7a06c10d',1,'mtca4u::RegisterInfoMap::RegisterInfo']]],
+  ['nowheelfilter',['noWheelFilter',['../namespacemtca4u__lmap__editor.html#a6b90d2a441b1342cba3882c0c3073654',1,'mtca4u_lmap_editor']]],
+  ['nwords',['nWords',['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#a72294d840d3d4c0a324f89edf5d437b9',1,'ChimeraTK::RebotProtocol0::RegisterInfo']]]
+];

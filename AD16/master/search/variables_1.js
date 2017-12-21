@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['regad16enable',['regAd16Enable',['../classmtca4u_1_1ad16.html#ad4b00129b3367ae2a636eea610604603',1,'mtca4u::ad16']]],
+  ['regclockfrequency',['regClockFrequency',['../classmtca4u_1_1ad16.html#a52657ae66d06c654c5e6bb3ca1336f5e',1,'mtca4u::ad16']]],
+  ['regcurrentbuffer',['regCurrentBuffer',['../classmtca4u_1_1ad16.html#ada4740873a32e1e762e2a5b72ef340df',1,'mtca4u::ad16']]],
+  ['regdaqenable',['regDaqEnable',['../classmtca4u_1_1ad16.html#affe5c03d64548b7433b150655e139677',1,'mtca4u::ad16']]],
+  ['regoversamplinga',['regOversamplingA',['../classmtca4u_1_1ad16.html#a296e19ab26250ed6f76685202e4e684b',1,'mtca4u::ad16']]],
+  ['regoversamplingb',['regOversamplingB',['../classmtca4u_1_1ad16.html#a87f1f333cf572963c992f4091968acc6',1,'mtca4u::ad16']]],
+  ['regreadmodea',['regReadModeA',['../classmtca4u_1_1ad16.html#a332b5489bd09c0e9336a0b52a9df4507',1,'mtca4u::ad16']]],
+  ['regreadmodeb',['regReadModeB',['../classmtca4u_1_1ad16.html#a33db744bb2b007dbc8c596f2bc6354e7',1,'mtca4u::ad16']]],
+  ['regreset',['regReset',['../classmtca4u_1_1ad16.html#afafd145e9018a47e150acdda619f505d',1,'mtca4u::ad16']]],
+  ['regstrobeselect',['regStrobeSelect',['../classmtca4u_1_1ad16.html#a96de3081ed1c3c4a764d5331b2c3bfe8',1,'mtca4u::ad16']]],
+  ['regtimingdiva',['regTimingDivA',['../classmtca4u_1_1ad16.html#ace8b73ad63042f573e38927cffe48174',1,'mtca4u::ad16']]],
+  ['regtimingdivb',['regTimingDivB',['../classmtca4u_1_1ad16.html#a5f4557f779b0dccb6c00808d89534e42',1,'mtca4u::ad16']]],
+  ['regtimingfrequency',['regTimingFrequency',['../classmtca4u_1_1ad16.html#a10d7100d12e51263d084b33df045accc',1,'mtca4u::ad16']]],
+  ['regtiminginternalenable',['regTimingInternalEnable',['../classmtca4u_1_1ad16.html#a2e3a8e8470f02f8a5c5b1ea36e8432c3',1,'mtca4u::ad16']]],
+  ['regtimingtriggerselect',['regTimingTriggerSelect',['../classmtca4u_1_1ad16.html#a2f275d740aa55757fdc2a6de8838bb37',1,'mtca4u::ad16']]],
+  ['regtimingusertrigger',['regTimingUserTrigger',['../classmtca4u_1_1ad16.html#aef0b37888062bc4d42ce19b7d8ba4456',1,'mtca4u::ad16']]],
+  ['regvoltagerangea',['regVoltageRangeA',['../classmtca4u_1_1ad16.html#ad341b7477b07f572390256c7c4b00d74',1,'mtca4u::ad16']]],
+  ['regvoltagerangeb',['regVoltageRangeB',['../classmtca4u_1_1ad16.html#a15023f2fa32c9019cbfdd3ae614c9860',1,'mtca4u::ad16']]]
+];
