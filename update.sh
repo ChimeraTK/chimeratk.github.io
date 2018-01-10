@@ -154,14 +154,7 @@ for repo in `cat repolist`; do
 done
 
 #update the index.html file
-cat <<EOF > ${BASE_DIR}/index.html
-<html>
-<body>
-<h1>ChimeraTK Documentation</h1>
-
-<h2>Automatically generated documentation for ChimeraTK projects</h2>
-
-EOF
+cat ${BASE_DIR}/header.inc > ${BASE_DIR}/index.html
 cd ${BASE_DIR}
 for repo in `cat repolist`; do
   if [ -e ${BASE_DIR}/${repo} ]; then
@@ -175,8 +168,8 @@ for file in Talks/*; do
   echo "<a href=\"${file}\">${title}</a><br>" >> ${BASE_DIR}/index.html
 done
 
-echo "</body>" >> ${BASE_DIR}/index.html
-echo "</html>" >> ${BASE_DIR}/index.html
+cat ${BASE_DIR}/footer.inc >> ${BASE_DIR}/index.html
+
 git commit index.html -m "updated the main index.html (automatic commit)" >/dev/null 2>&1
 
 if [[ $N_ERRORS == "0" ]]; then
