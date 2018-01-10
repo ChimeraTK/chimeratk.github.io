@@ -13,6 +13,8 @@ var searchData=
   ['controlsystemmodule',['ControlSystemModule',['../class_chimera_t_k_1_1_control_system_module.html#acc37ec2c01d25a47889189b2170b7d89',1,'ChimeraTK::ControlSystemModule::ControlSystemModule(const std::string &amp;variableNamePrefix=&quot;&quot;)'],['../class_chimera_t_k_1_1_control_system_module.html#a40fe0e15a957bd05d88ab4a29380b897',1,'ChimeraTK::ControlSystemModule::ControlSystemModule(ControlSystemModule &amp;&amp;other)']]],
   ['countconsumingnodes',['countConsumingNodes',['../class_chimera_t_k_1_1_variable_network.html#a9c48002e86e57476522a481ab45d418c',1,'ChimeraTK::VariableNetwork']]],
   ['createapplicationvariable',['createApplicationVariable',['../class_chimera_t_k_1_1_application.html#a1cf9a7fd7b2c73e21fa51dd235ad6619',1,'ChimeraTK::Application']]],
+  ['createarray',['createArray',['../struct_chimera_t_k_1_1_config_reader.html#afba6fa48bc3f8a00adae168e72e6f2e0',1,'ChimeraTK::ConfigReader']]],
+  ['createarray_3c_20std_3a_3astring_20_3e',['createArray&lt; std::string &gt;',['../namespace_chimera_t_k.html#a708ff6d4b362ef1285e62e2954ff804f',1,'ChimeraTK']]],
   ['createdevicevariable',['createDeviceVariable',['../class_chimera_t_k_1_1_application.html#a42831e39c14f187302522525fa179eef',1,'ChimeraTK::Application']]],
   ['createnetwork',['createNetwork',['../class_chimera_t_k_1_1_application.html#afbcfcd3b9b23aa5df19a661a9f8a80bb',1,'ChimeraTK::Application']]],
   ['createprocessvariable',['createProcessVariable',['../class_chimera_t_k_1_1_application.html#a56aa744909cdc42c3fabef0a0d149171',1,'ChimeraTK::Application']]],

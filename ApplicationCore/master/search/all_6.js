@@ -20,6 +20,8 @@ var searchData=
   ['flatten',['flatten',['../class_chimera_t_k_1_1_entity_owner.html#a952d3abbffa16054f744f3da7fc46c3f',1,'ChimeraTK::EntityOwner']]],
   ['functorfill',['FunctorFill',['../struct_chimera_t_k_1_1_functor_fill.html',1,'ChimeraTK']]],
   ['functorfill',['FunctorFill',['../struct_chimera_t_k_1_1_config_reader.html#a47db4f61e9581df45abc2910876fd1ed',1,'ChimeraTK::ConfigReader::FunctorFill()'],['../struct_chimera_t_k_1_1_functor_fill.html#ade02c32a80ff802889863bc8bfa22bd0',1,'ChimeraTK::FunctorFill::FunctorFill()']]],
+  ['functorsetvalues',['FunctorSetValues',['../struct_chimera_t_k_1_1_config_reader.html#a82bb9534a2ea481b888e995ac73b145e',1,'ChimeraTK::ConfigReader::FunctorSetValues()'],['../struct_chimera_t_k_1_1_functor_set_values.html#a899e5c8c88431c61764a021d905da196',1,'ChimeraTK::FunctorSetValues::FunctorSetValues()']]],
   ['functorsetvalues',['FunctorSetValues',['../struct_chimera_t_k_1_1_functor_set_values.html',1,'ChimeraTK']]],
-  ['functorsetvalues',['FunctorSetValues',['../struct_chimera_t_k_1_1_config_reader.html#a82bb9534a2ea481b888e995ac73b145e',1,'ChimeraTK::ConfigReader::FunctorSetValues()'],['../struct_chimera_t_k_1_1_functor_set_values.html#a899e5c8c88431c61764a021d905da196',1,'ChimeraTK::FunctorSetValues::FunctorSetValues()']]]
+  ['functorsetvaluesarray',['FunctorSetValuesArray',['../struct_chimera_t_k_1_1_config_reader.html#a5b64f1f2926e1bb3aa8b2d4698ec36db',1,'ChimeraTK::ConfigReader::FunctorSetValuesArray()'],['../struct_chimera_t_k_1_1_functor_set_values_array.html#a22b4b6eef5c8f1998bf628a10d99dc1e',1,'ChimeraTK::FunctorSetValuesArray::FunctorSetValuesArray()']]],
+  ['functorsetvaluesarray',['FunctorSetValuesArray',['../struct_chimera_t_k_1_1_functor_set_values_array.html',1,'ChimeraTK']]]
 ];
