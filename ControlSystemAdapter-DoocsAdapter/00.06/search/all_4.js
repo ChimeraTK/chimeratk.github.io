@@ -32,5 +32,6 @@ var searchData=
   ['doreadtransfer',['doReadTransfer',['../class_chimera_t_k_1_1_doocs_transfer_element.html#a3615a0f9e0b4ab246f3c7a2c99d375fc',1,'ChimeraTK::DoocsTransferElement']]],
   ['doreadtransferlatest',['doReadTransferLatest',['../class_chimera_t_k_1_1_doocs_transfer_element.html#affc6690b6573b1c255e54f2c66425397',1,'ChimeraTK::DoocsTransferElement']]],
   ['doreadtransfernonblocking',['doReadTransferNonBlocking',['../class_chimera_t_k_1_1_doocs_transfer_element.html#a46ca965c1593db50d3cba6a58896f32e',1,'ChimeraTK::DoocsTransferElement']]],
-  ['double',['Double',['../struct_chimera_t_k_1_1_array_description.html#a922ef68c70b0264e22bbcf3ba45befeaad909d38d705ce75386dd86e611a82f5b',1,'ChimeraTK::ArrayDescription']]]
+  ['double',['Double',['../struct_chimera_t_k_1_1_array_description.html#a922ef68c70b0264e22bbcf3ba45befeaad909d38d705ce75386dd86e611a82f5b',1,'ChimeraTK::ArrayDescription']]],
+  ['typedcreatedoocsarray_3c_20std_3a_3anullptr_5ft_2c_20std_3a_3anullptr_5ft_20_3e',['typedCreateDoocsArray&lt; std::nullptr_t, std::nullptr_t &gt;',['../namespace_chimera_t_k.html#ad65332358e014ebdf3b6243561fa6a00',1,'ChimeraTK']]]
 ];
