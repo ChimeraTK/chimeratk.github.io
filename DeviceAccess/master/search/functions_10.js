@@ -24,6 +24,7 @@ var searchData=
   ['sleep_5funtil',['sleep_until',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html#a35a618bb93efcf6f87f192a3dcc33439',1,'ChimeraTK::testable_rebot_sleep']]],
   ['splitstringatlastdot',['splitStringAtLastDot',['../classmtca4u_1_1_map_file_parser.html#ab36f3ce23956575394cd05ed29f5fe25',1,'mtca4u::MapFileParser']]],
   ['startswith',['startsWith',['../classmtca4u_1_1_register_path.html#aecd932c1f3f466618de1f297d7fad4f8',1,'mtca4u::RegisterPath']]],
+  ['subdevicebackend',['SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html#a3dc6a3fa2f19991c8f91af5ee38171a6',1,'ChimeraTK::SubdeviceBackend']]],
   ['swap',['swap',['../classmtca4u_1_1_buffering_register_accessor.html#a1b9d5dfa6e633ccc10be33f6a2643b08',1,'mtca4u::BufferingRegisterAccessor::swap()'],['../classmtca4u_1_1_one_d_register_accessor.html#a380b8061330d8d4935246a320fab7567',1,'mtca4u::OneDRegisterAccessor::swap()']]],
   ['syncndregisteraccessor',['SyncNDRegisterAccessor',['../classmtca4u_1_1_sync_n_d_register_accessor.html#a60adcc5709b881769893b0e1df4e7a15',1,'mtca4u::SyncNDRegisterAccessor']]]
 ];

@@ -25,6 +25,7 @@ var searchData=
   ['_7eregisteraccessor',['~RegisterAccessor',['../classmtca4u_1_1_register_accessor.html#a0735d875681db783ad33e94dbc30bb1c',1,'mtca4u::RegisterAccessor']]],
   ['_7eregisterinfo',['~RegisterInfo',['../classmtca4u_1_1_register_info.html#ae28cc99106ebf0339cda2d27122a3ddb',1,'mtca4u::RegisterInfo']]],
   ['_7eregisterinfoplugin',['~RegisterInfoPlugin',['../classmtca4u_1_1_register_info_plugin.html#a8a57941c3ca0210148101dab2ddbb2cb',1,'mtca4u::RegisterInfoPlugin']]],
+  ['_7esubdevicebackend',['~SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html#aef6a0de034b54d44cc888dce97b0bec2',1,'ChimeraTK::SubdeviceBackend']]],
   ['_7esyncndregisteraccessor',['~SyncNDRegisterAccessor',['../classmtca4u_1_1_sync_n_d_register_accessor.html#aeea0609c00f761df26633d1806b82eba',1,'mtca4u::SyncNDRegisterAccessor']]],
   ['_7etcpctrl',['~TcpCtrl',['../class_chimera_t_k_1_1_tcp_ctrl.html#a74dbac59591e9e582fe6d2d664d62983',1,'ChimeraTK::TcpCtrl']]],
   ['_7etransferelement',['~TransferElement',['../classmtca4u_1_1_transfer_element.html#aa578ad1991d6b9763b5cc8096220af0d',1,'mtca4u::TransferElement']]],

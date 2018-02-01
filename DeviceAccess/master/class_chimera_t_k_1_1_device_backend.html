@@ -109,14 +109,15 @@ Inheritance diagram for ChimeraTK::DeviceBackend:</div>
  <div class="center">
   <img src="class_chimera_t_k_1_1_device_backend.png" usemap="#ChimeraTK::DeviceBackend_map" alt=""/>
   <map id="ChimeraTK::DeviceBackend_map" name="ChimeraTK::DeviceBackend_map">
-<area href="classmtca4u_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends..." alt="mtca4u::DeviceBackendImpl" shape="rect" coords="313,112,616,136"/>
-<area href="class_example_backend.html" title="An Example to show how to write a backend device class and add it to the factory. ..." alt="ExampleBackend" shape="rect" coords="0,168,303,192"/>
-<area href="classmtca4u_1_1_logical_name_mapping_backend.html" title="Backend to map logical register names onto real hardware registers. " alt="mtca4u::LogicalNameMappingBackend" shape="rect" coords="313,168,616,192"/>
-<area href="classmtca4u_1_1_numeric_addressed_backend.html" title="Base class for address-based device backends (e.g. " alt="mtca4u::NumericAddressedBackend" shape="rect" coords="626,168,929,192"/>
-<area href="class_chimera_t_k_1_1_rebot_backend.html" alt="ChimeraTK::RebotBackend" shape="rect" coords="313,224,616,248"/>
-<area href="classmtca4u_1_1_dummy_backend.html" title="The dummy device opens a mapping file instead of a device, and implements all registers defined in th..." alt="mtca4u::DummyBackend" shape="rect" coords="626,224,929,248"/>
-<area href="classmtca4u_1_1_pcie_backend.html" title="A class to provide the Pcie device functionality. " alt="mtca4u::PcieBackend" shape="rect" coords="939,224,1242,248"/>
-<area href="class_custom_backend.html" alt="CustomBackend" shape="rect" coords="626,280,929,304"/>
+<area href="classmtca4u_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends..." alt="mtca4u::DeviceBackendImpl" shape="rect" coords="469,112,772,136"/>
+<area href="class_chimera_t_k_1_1_subdevice_backend.html" title="Backend for subdevices which are passed through some register or area of another device. " alt="ChimeraTK::SubdeviceBackend" shape="rect" coords="0,168,303,192"/>
+<area href="class_example_backend.html" title="An Example to show how to write a backend device class and add it to the factory. ..." alt="ExampleBackend" shape="rect" coords="313,168,616,192"/>
+<area href="classmtca4u_1_1_logical_name_mapping_backend.html" title="Backend to map logical register names onto real hardware registers. " alt="mtca4u::LogicalNameMappingBackend" shape="rect" coords="626,168,929,192"/>
+<area href="classmtca4u_1_1_numeric_addressed_backend.html" title="Base class for address-based device backends (e.g. " alt="mtca4u::NumericAddressedBackend" shape="rect" coords="939,168,1242,192"/>
+<area href="class_chimera_t_k_1_1_rebot_backend.html" alt="ChimeraTK::RebotBackend" shape="rect" coords="626,224,929,248"/>
+<area href="classmtca4u_1_1_dummy_backend.html" title="The dummy device opens a mapping file instead of a device, and implements all registers defined in th..." alt="mtca4u::DummyBackend" shape="rect" coords="939,224,1242,248"/>
+<area href="classmtca4u_1_1_pcie_backend.html" title="A class to provide the Pcie device functionality. " alt="mtca4u::PcieBackend" shape="rect" coords="1252,224,1555,248"/>
+<area href="class_custom_backend.html" alt="CustomBackend" shape="rect" coords="939,280,1242,304"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -232,7 +233,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Close the device. </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_dummy_backend.html#a343225fcfa8a3db5c239ff85dd44fdff">mtca4u::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a68f639d73c9193bb0a7984e8675bfe68">ChimeraTK::RebotBackend</a>, <a class="el" href="classmtca4u_1_1_pcie_backend.html#a157037876f3116ec69024c86c589d20a">mtca4u::PcieBackend</a>, <a class="el" href="classmtca4u_1_1_logical_name_mapping_backend.html#ad0da06983118b1c5da3627967aca47d6">mtca4u::LogicalNameMappingBackend</a>, and <a class="el" href="class_example_backend.html#a29cb604880ec30b64848139d934018ef">ExampleBackend</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_dummy_backend.html#a343225fcfa8a3db5c239ff85dd44fdff">mtca4u::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a68f639d73c9193bb0a7984e8675bfe68">ChimeraTK::RebotBackend</a>, <a class="el" href="classmtca4u_1_1_pcie_backend.html#a157037876f3116ec69024c86c589d20a">mtca4u::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a4f4c2c1947fa970b4197a321c36bf593">ChimeraTK::SubdeviceBackend</a>, <a class="el" href="classmtca4u_1_1_logical_name_mapping_backend.html#ad0da06983118b1c5da3627967aca47d6">mtca4u::LogicalNameMappingBackend</a>, and <a class="el" href="class_example_backend.html#a29cb604880ec30b64848139d934018ef">ExampleBackend</a>.</p>
 
 </div>
 </div>
@@ -486,7 +487,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Open the device. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a3288127514c4650a38177443ea021281">ChimeraTK::RebotBackend</a>, <a class="el" href="classmtca4u_1_1_pcie_backend.html#a70cd3b55bc347aa009d97a0166a89a8c">mtca4u::PcieBackend</a>, <a class="el" href="classmtca4u_1_1_dummy_backend.html#ae47a4ab704fa77778cb370abd0ce1bb3">mtca4u::DummyBackend</a>, <a class="el" href="classmtca4u_1_1_logical_name_mapping_backend.html#a2a5a774bd5b0fc47c554e7919948deae">mtca4u::LogicalNameMappingBackend</a>, and <a class="el" href="class_example_backend.html#ace9471bff30ac79382fae02a815d2625">ExampleBackend</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a3288127514c4650a38177443ea021281">ChimeraTK::RebotBackend</a>, <a class="el" href="classmtca4u_1_1_pcie_backend.html#a70cd3b55bc347aa009d97a0166a89a8c">mtca4u::PcieBackend</a>, <a class="el" href="classmtca4u_1_1_dummy_backend.html#ae47a4ab704fa77778cb370abd0ce1bb3">mtca4u::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a3aa244b79dfa6ddd8357b5854aa112d7">ChimeraTK::SubdeviceBackend</a>, <a class="el" href="classmtca4u_1_1_logical_name_mapping_backend.html#a2a5a774bd5b0fc47c554e7919948deae">mtca4u::LogicalNameMappingBackend</a>, and <a class="el" href="class_example_backend.html#ace9471bff30ac79382fae02a815d2625">ExampleBackend</a>.</p>
 
 </div>
 </div>
@@ -624,7 +625,7 @@ template&lt;typename UserType &gt; </div>
 <p>Return a device information string containing hardware details like the firmware version number or the slot number used by the board. </p>
 <p>The format and contained information of this string is completely backend implementation dependent, so the string may only be printed to the user as an informational output. Do not try to parse this string or extract information from it programmatically. </p>
 
-<p>Implemented in <a class="el" href="classmtca4u_1_1_dummy_backend.html#aafdd95667e908c56228863f297abd0f9">mtca4u::DummyBackend</a>, <a class="el" href="classmtca4u_1_1_pcie_backend.html#a5365b3bbb6367333aed0899535fa07ec">mtca4u::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#aa031066178cd12f936af25aefbd2a591">ChimeraTK::RebotBackend</a>, <a class="el" href="classmtca4u_1_1_numeric_addressed_backend.html#a4fc52cd8dfc8cf5d37acb6d8b58ff4e2">mtca4u::NumericAddressedBackend</a>, <a class="el" href="class_example_backend.html#ac2d7f01de8bbc5d71a0099918ffd62a7">ExampleBackend</a>, and <a class="el" href="classmtca4u_1_1_logical_name_mapping_backend.html#ad8b2ae6c396dc2539554f8f619f34507">mtca4u::LogicalNameMappingBackend</a>.</p>
+<p>Implemented in <a class="el" href="classmtca4u_1_1_dummy_backend.html#aafdd95667e908c56228863f297abd0f9">mtca4u::DummyBackend</a>, <a class="el" href="classmtca4u_1_1_pcie_backend.html#a5365b3bbb6367333aed0899535fa07ec">mtca4u::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#aa031066178cd12f936af25aefbd2a591">ChimeraTK::RebotBackend</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ab828431ccd2b4255ccc0ba469d1999f0">ChimeraTK::SubdeviceBackend</a>, <a class="el" href="classmtca4u_1_1_numeric_addressed_backend.html#a4fc52cd8dfc8cf5d37acb6d8b58ff4e2">mtca4u::NumericAddressedBackend</a>, <a class="el" href="class_example_backend.html#ac2d7f01de8bbc5d71a0099918ffd62a7">ExampleBackend</a>, and <a class="el" href="classmtca4u_1_1_logical_name_mapping_backend.html#ad8b2ae6c396dc2539554f8f619f34507">mtca4u::LogicalNameMappingBackend</a>.</p>
 
 </div>
 </div>
@@ -833,7 +834,7 @@ template&lt;typename UserType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 26 2018 06:06:29 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 1 2018 05:58:06 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

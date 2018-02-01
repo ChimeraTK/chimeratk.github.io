@@ -1,9 +1,12 @@
 var searchData=
 [
   ['table',['table',['../classmtca4u_1_1_template_user_type_map.html#a8e7cf0675584828965b9c75348b18d60',1,'mtca4u::TemplateUserTypeMap']]],
+  ['targetalias',['targetAlias',['../class_chimera_t_k_1_1_subdevice_backend.html#a62ecf0e01fab6565bad9dd9580f6c4be',1,'ChimeraTK::SubdeviceBackend']]],
+  ['targetarea',['targetArea',['../class_chimera_t_k_1_1_subdevice_backend.html#a955414ee7222c3a5898132c55f00a4ca',1,'ChimeraTK::SubdeviceBackend']]],
+  ['targetdevice',['targetDevice',['../class_chimera_t_k_1_1_subdevice_backend.html#a749c1b52631b711f29e09804ae252bbc',1,'ChimeraTK::SubdeviceBackend']]],
   ['targettype',['targetType',['../classmtca4u_1_1_l_n_m_backend_register_info.html#ab1b8bf853a78bfaa6cb78a11813d1a29',1,'mtca4u::LNMBackendRegisterInfo::targetType()'],['../classmtca4u_1_1_l_n_m_backend_register_info.html#a0f2b76ef99ea56259168b3ede0f931c6',1,'mtca4u::LNMBackendRegisterInfo::TargetType()']]],
-  ['tcpctrl',['TcpCtrl',['../class_chimera_t_k_1_1_tcp_ctrl.html',1,'ChimeraTK']]],
   ['tcpctrl',['TcpCtrl',['../class_chimera_t_k_1_1_tcp_ctrl.html#a9f643d6d6508b03b324d9a1e82175d99',1,'ChimeraTK::TcpCtrl']]],
+  ['tcpctrl',['TcpCtrl',['../class_chimera_t_k_1_1_tcp_ctrl.html',1,'ChimeraTK']]],
   ['tcpctrl_2ecc',['TcpCtrl.cc',['../_tcp_ctrl_8cc.html',1,'']]],
   ['tcpctrl_2eh',['TcpCtrl.h',['../_tcp_ctrl_8h.html',1,'']]],
   ['templateusertypemap',['TemplateUserTypeMap',['../classmtca4u_1_1_template_user_type_map.html',1,'mtca4u']]],
@@ -39,8 +42,8 @@ var searchData=
   ['transferfutureiterator',['TransferFutureIterator',['../class_chimera_t_k_1_1detail_1_1_transfer_future_iterator.html',1,'ChimeraTK::detail']]],
   ['transferfutureiterator',['TransferFutureIterator',['../class_chimera_t_k_1_1detail_1_1_transfer_future_iterator.html#a33affaba7e8d69bc2bf3ada8acc545bc',1,'ChimeraTK::detail::TransferFutureIterator']]],
   ['transferfuturewaitcallback',['transferFutureWaitCallback',['../classmtca4u_1_1_n_d_register_accessor_decorator.html#a722c59421083598a7833fd7d577c0ba6',1,'mtca4u::NDRegisterAccessorDecorator::transferFutureWaitCallback()'],['../classmtca4u_1_1_transfer_element.html#a60d747fecded78470b7c9e64703e8238',1,'mtca4u::TransferElement::transferFutureWaitCallback()']]],
-  ['transfergroup',['TransferGroup',['../classmtca4u_1_1_transfer_group.html',1,'mtca4u']]],
   ['transfergroup',['TransferGroup',['../classmtca4u_1_1_buffering_register_accessor.html#a5bdf5501b097a054a0be0bd5c8332ef3',1,'mtca4u::BufferingRegisterAccessor::TransferGroup()'],['../classmtca4u_1_1_one_d_register_accessor.html#a5bdf5501b097a054a0be0bd5c8332ef3',1,'mtca4u::OneDRegisterAccessor::TransferGroup()'],['../classmtca4u_1_1_scalar_register_accessor.html#a5bdf5501b097a054a0be0bd5c8332ef3',1,'mtca4u::ScalarRegisterAccessor::TransferGroup()'],['../classmtca4u_1_1_two_d_register_accessor.html#a5bdf5501b097a054a0be0bd5c8332ef3',1,'mtca4u::TwoDRegisterAccessor::TransferGroup()'],['../classmtca4u_1_1_transfer_element.html#a5bdf5501b097a054a0be0bd5c8332ef3',1,'mtca4u::TransferElement::TransferGroup()'],['../classmtca4u_1_1_transfer_group.html#a067b1335237ef8fd258e14eaacbf66d5',1,'mtca4u::TransferGroup::TransferGroup()']]],
+  ['transfergroup',['TransferGroup',['../classmtca4u_1_1_transfer_group.html',1,'mtca4u']]],
   ['transfergroup_2ecc',['TransferGroup.cc',['../_transfer_group_8cc.html',1,'']]],
   ['transfergroup_2eh',['TransferGroup.h',['../_transfer_group_8h.html',1,'']]],
   ['transfergrouptransferelementabstractor',['TransferGroupTransferElementAbstractor',['../structmtca4u_1_1detail_1_1_transfer_group_transfer_element_abstractor.html',1,'mtca4u::detail']]],
@@ -51,5 +54,5 @@ var searchData=
   ['twodregisteraccessor',['TwoDRegisterAccessor',['../classmtca4u_1_1_two_d_register_accessor.html',1,'mtca4u']]],
   ['twodregisteraccessor_2eh',['TwoDRegisterAccessor.h',['../_two_d_register_accessor_8h.html',1,'']]],
   ['twodregisteraccessorexception',['TwoDRegisterAccessorException',['../namespacemtca4u.html#adbfcd79e404c6772c14b9132b2af1175',1,'mtca4u']]],
-  ['type',['TYPE',['../classmtca4u_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#afbf6c4642932bb9063ad57dd63948f7c',1,'mtca4u::DeviceInfoMap::ErrorList::ErrorElem::TYPE()'],['../classmtca4u_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#a7a0c0d8b4b5ba7a54a75df443af8ad79',1,'mtca4u::RegisterInfoMap::ErrorList::ErrorElem::TYPE()']]]
+  ['type',['type',['../class_chimera_t_k_1_1_subdevice_backend.html#aabbf31c21d868a0a7b7135463c0c1c2b',1,'ChimeraTK::SubdeviceBackend::type()'],['../class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5c',1,'ChimeraTK::SubdeviceBackend::Type()'],['../classmtca4u_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#afbf6c4642932bb9063ad57dd63948f7c',1,'mtca4u::DeviceInfoMap::ErrorList::ErrorElem::TYPE()'],['../classmtca4u_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#a7a0c0d8b4b5ba7a54a75df443af8ad79',1,'mtca4u::RegisterInfoMap::ErrorList::ErrorElem::TYPE()']]]
 ];

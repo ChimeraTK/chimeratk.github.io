@@ -281,7 +281,7 @@ Protected Attributes</h2></td></tr>
 <p>The device can open and close a device for you. If you let the <a class="el" href="classmtca4u_1_1_device.html" title="Class allows to read/write registers from device. ">Device</a> open the device you will not be able to get a handle to this device directly, you can only close it with the <a class="el" href="classmtca4u_1_1_device.html" title="Class allows to read/write registers from device. ">Device</a>. Should you create <a class="el" href="classmtca4u_1_1_register_accessor.html" title="DEPRECATED! Use BufferingRegisterAccessor instead! ">RegisterAccessor</a> objects, which contain shared pointers to this device, the device will stay opened and functional even if the <a class="el" href="classmtca4u_1_1_device.html" title="Class allows to read/write registers from device. ">Device</a> object which created the <a class="el" href="classmtca4u_1_1_register_accessor.html" title="DEPRECATED! Use BufferingRegisterAccessor instead! ">RegisterAccessor</a> goes out of scope. In this case you cannot close the device. It will finally be closed when the the last <a class="el" href="classmtca4u_1_1_register_accessor.html" title="DEPRECATED! Use BufferingRegisterAccessor instead! ">RegisterAccessor</a> pointing to it goes out of scope. The same holds if you open another device with the same <a class="el" href="classmtca4u_1_1_device.html" title="Class allows to read/write registers from device. ">Device</a>: You lose direct access to the previous device, which stays open as long as there are RegisterAccessors pointing to it. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="accessor1_d_8cpp-example.html#_a2">accessor1D.cpp</a>, <a class="el" href="accessor2_d_8cpp-example.html#_a2">accessor2D.cpp</a>, <a class="el" href="accessor2_d_multiplexed_8cpp-example.html#_a2">accessor2D_multiplexed.cpp</a>, and <a class="el" href="basic_8cpp-example.html#_a2">basic.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00048">48</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00049">49</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="afb6bfafe9f008307fdf5fdb745dc0dd2"></a>
 <div class="memitem">
@@ -296,7 +296,7 @@ Protected Attributes</h2></td></tr>
 <p><b>DEPRECATED</b> </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>A typedef for backward compatibility. Don't use this in new code. It will be removed in a future release. Use <a class="el" href="classmtca4u_1_1_buffering_register_accessor.html" title="DEPRECATED! Use OneDRegisterAccessor or ScalarRegisterAccessor instead! ">mtca4u::BufferingRegisterAccessor</a> instead </dd></dl>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00466">466</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00467">467</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -426,7 +426,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="accessor2_d_multiplexed_8cpp-example.html#a4">accessor2D_multiplexed.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00624">624</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00625">625</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -460,7 +460,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="classmtca4u_1_1_device.html#a15e746fa02a7623120a923996a57b55b" title="DEPRECATED ">Device::getBufferingRegisterAccessor</a>(RegisterPath(module)/registerName) instead. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000040">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00635">635</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00636">636</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -494,7 +494,7 @@ template&lt;typename customClass &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="classmtca4u_1_1_device.html#ace1e9210804d3858b5e8e58abd0b4004" title="Get a TwoDRegisterAccessor object for the given register. ">getTwoDRegisterAccessor()</a> instead! </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000039">Todo:</a></b></dt><dd>Change warning into runtime error after release of version 0.9 </dd></dl>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00478">478</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00479">479</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -543,7 +543,7 @@ template&lt;typename UserType &gt; </div>
 <p>Hint: when passing the <a class="el" href="classmtca4u_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a>, just enclose the wanted flags in a brace initialiser list without "AccessModeFlags", e.g.: getOneDRegisterAccessor&lt;int32_t&gt;("reg",0,0,{<a class="el" href="namespacemtca4u.html#a46449a2e75616026f5c97696929c6cb5abdd166af3a63f7be696dd17a218a6ffb" title="Raw access: disable any possible conversion from the original hardware data type into the given UserT...">AccessMode::raw</a>}) </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="accessor1_d_8cpp-example.html#a5">accessor1D.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00513">513</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00514">514</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -589,7 +589,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>Get a <a class="el" href="classmtca4u_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o...">OneDRegisterAccessor</a> object for the given register. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="classmtca4u_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="classmtca4u_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00524">524</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00525">525</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -747,7 +747,7 @@ template&lt;typename UserType &gt; </div>
 <p>The last optional argument flags allows to control certain details how the register is accessed. It allows e.g. to enable raw access. See AccessMode documentation for more details. Passing an access mode flag which is not supported by the backend or the given register will raise a NOT_IMPLEMENTED <a class="el" href="classmtca4u_1_1_device_exception.html" title="A class to provide exceptions for Device. ">DeviceException</a>. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="basic_8cpp-example.html#a5">basic.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00490">490</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00491">491</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -787,7 +787,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>Get a ScalarRegisterObject object for the given register. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="classmtca4u_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="classmtca4u_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00500">500</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00501">501</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -829,7 +829,7 @@ template&lt;typename UserType &gt; </div>
 <p>TODO: Currently only the restriction to a smaller region of interest is only possible in one dimension. Support for the second dimension should be added as well, but it will involve an internal interface change. Since all current backends will not be able to optimise the performance when reducing the number of channels, this change is postponed. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="accessor2_d_8cpp-example.html#a5">accessor2D.cpp</a>, and <a class="el" href="accessor2_d_multiplexed_8cpp-example.html#a6">accessor2D_multiplexed.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00541">541</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00542">542</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -863,7 +863,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000041">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="classmtca4u_1_1_device.html#ace1e9210804d3858b5e8e58abd0b4004" title="Get a TwoDRegisterAccessor object for the given register. ">Device::getTwoDRegisterAccessor</a>(RegisterPath(module)/registerName) instead. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000041">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00643">643</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00644">644</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -1042,7 +1042,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="classmtca4u_1_1_device.html#a5223e36dcdefaf8e1b99dbca86b6ea87" title="Get a ScalarRegisterObject object for the given register. ">Device::getScalarRegisterAccessor</a>).</dd></dl>
 <p>If a multi-word register is read, only the first element is returned. This function only works for 1D registers. </p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00551">551</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00552">552</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -1088,7 +1088,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="classmtca4u_1_1_device.html#a6161f10774250a91ed6d638e29854abf" title="Get a OneDRegisterAccessor object for the given register. ">Device::getOneDRegisterAccessor</a>).</dd></dl>
 <p>The function only works for 1D registers. For 2D registers, see <a class="el" href="classmtca4u_1_1_device.html#ace1e9210804d3858b5e8e58abd0b4004" title="Get a TwoDRegisterAccessor object for the given register. ">Device::getTwoDRegisterAccessor</a>. The argument numberOfWords specifies how many elements are read. The returned vector will have a length of numberOfWords or shorter. numberOfWords must not exceed the size of the register. The optional argument wordOffsetInRegister allows to skip the first wordOffsetInRegister elements of the register. </p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00560">560</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00561">561</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -1122,7 +1122,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd><b>Inefficient convenience function</b> to read a single-word register without obtaining an accessor. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="classmtca4u_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="classmtca4u_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00592">592</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00593">593</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1168,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd><b>Inefficient convenience function</b> to read a multi-word register without obtaining an accessor. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="classmtca4u_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="classmtca4u_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00599">599</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00600">600</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -1606,7 +1606,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="classmtca4u_1_1_device.html#a5223e36dcdefaf8e1b99dbca86b6ea87" title="Get a ScalarRegisterObject object for the given register. ">Device::getScalarRegisterAccessor</a>).</dd></dl>
 <p>If a multi-word register is read, only the first element is written. This function only works for 1D registers. </p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00572">572</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00573">573</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -1652,7 +1652,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="classmtca4u_1_1_device.html#a6161f10774250a91ed6d638e29854abf" title="Get a OneDRegisterAccessor object for the given register. ">Device::getOneDRegisterAccessor</a>).</dd></dl>
 <p>The function only works for 1D registers. For 2D registers, see <a class="el" href="classmtca4u_1_1_device.html#ace1e9210804d3858b5e8e58abd0b4004" title="Get a TwoDRegisterAccessor object for the given register. ">Device::getTwoDRegisterAccessor</a>. The optional argument wordOffsetInRegister allows to skip the first wordOffsetInRegister elements of the register. </p>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00581">581</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00582">582</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -1692,7 +1692,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd><b>Inefficient convenience function</b> to write a single-word register without obtaining an accessor. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="classmtca4u_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="classmtca4u_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000020">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00608">608</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00609">609</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -1738,7 +1738,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd><b>Inefficient convenience function</b> to write a multi-word register without obtaining an accessor. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="classmtca4u_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="classmtca4u_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00615">615</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00616">616</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -2131,7 +2131,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_device_8h_source.html#l00470">470</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_8h_source.html#l00471">471</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -2142,7 +2142,7 @@ template&lt;typename UserType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 26 2018 06:06:29 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 1 2018 05:58:07 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
