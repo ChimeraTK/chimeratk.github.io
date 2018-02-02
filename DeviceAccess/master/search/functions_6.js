@@ -10,6 +10,7 @@ var searchData=
   ['findmetadatabyname_5fpred',['findMetaDataByName_pred',['../classmtca4u_1_1find_meta_data_by_name__pred.html#a14eedc738a6a4a0f7ca45924772028c9',1,'mtca4u::findMetaDataByName_pred']]],
   ['findregisterbyname_5fpred',['findRegisterByName_pred',['../classmtca4u_1_1find_register_by_name__pred.html#ac1238e8ffcc032b0d4124b7365047148',1,'mtca4u::findRegisterByName_pred']]],
   ['fixedpointconverter',['FixedPointConverter',['../classmtca4u_1_1_fixed_point_converter.html#a866ed26adeaeeb4ecb3683de213fbf2d',1,'mtca4u::FixedPointConverter']]],
+  ['fixedpointconvertingdecorator',['FixedPointConvertingDecorator',['../class_chimera_t_k_1_1_fixed_point_converting_decorator.html#ab66ac636d2e607c9e252d39a6af29e09',1,'ChimeraTK::FixedPointConvertingDecorator']]],
   ['frameclienthello',['frameClientHello',['../class_chimera_t_k_1_1_rebot_backend.html#afb7a3eb09d3da11ae1baa0046e3d36ad',1,'ChimeraTK::RebotBackend']]],
   ['fundamentaltype',['fundamentalType',['../classmtca4u_1_1_register_info_1_1_data_descriptor.html#a24f32e386d296f36aaaa5cfd0f828b4c',1,'mtca4u::RegisterInfo::DataDescriptor']]],
   ['tocooked_3c_20std_3a_3astring_20_3e',['toCooked&lt; std::string &gt;',['../namespacemtca4u.html#ad3bff44c1f46def96a14b6b848177934',1,'mtca4u']]],
