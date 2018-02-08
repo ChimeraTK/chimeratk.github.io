@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['usertype',['userType',['../classmtca4u_1_1_multiplexed_data_accessor.html#a588df4f60e8c4aeed50353c290480d1a',1,'mtca4u::MultiplexedDataAccessor']]],
-  ['usertypemap',['userTypeMap',['../namespacemtca4u.html#af39a72262bf3206cd6e8199a6b750f0b',1,'mtca4u']]]
+  ['usertype',['userType',['../class_chimera_t_k_1_1_multiplexed_data_accessor.html#ab6e4b755f91b1cd5193164b35b592a12',1,'ChimeraTK::MultiplexedDataAccessor']]],
+  ['usertypemap',['userTypeMap',['../namespace_chimera_t_k.html#a185ebe42bffba27324f73f5e3449f043',1,'ChimeraTK']]]
 ];

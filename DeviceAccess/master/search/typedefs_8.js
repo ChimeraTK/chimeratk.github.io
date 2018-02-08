@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['registeraccessor',['RegisterAccessor',['../classmtca4u_1_1_device.html#afb6bfafe9f008307fdf5fdb745dc0dd2',1,'mtca4u::Device']]],
-  ['registerinfomappointer',['RegisterInfoMapPointer',['../namespacemtca4u.html#a3035b21444f7adce6b2ddb19255dc1ea',1,'mtca4u']]],
+  ['registeraccessor',['RegisterAccessor',['../class_chimera_t_k_1_1_device.html#ad49ec7cc7fa3d57fad993363005b727a',1,'ChimeraTK::Device']]],
+  ['registerinfomappointer',['RegisterInfoMapPointer',['../namespace_chimera_t_k.html#adcf889b821f1f87705ca7c4383ecbf0c',1,'ChimeraTK']]],
   ['resolver_5ft',['resolver_t',['../namespace_chimera_t_k.html#ac99d87ad024fe8f7b4841f8dc3c4d40b',1,'ChimeraTK']]],
-  ['result_5ftype',['result_type',['../structstd_1_1less_3_01mtca4u_1_1_transfer_element_i_d_01_4.html#a118877632c4a7743a4ecac0757cfe84e',1,'std::less&lt; mtca4u::TransferElementID &gt;']]],
-  ['reverse_5fiterator',['reverse_iterator',['../classmtca4u_1_1_buffering_register_accessor.html#a5f701fc2c3d80c9cf45e2e1f5c2dcd75',1,'mtca4u::BufferingRegisterAccessor::reverse_iterator()'],['../classmtca4u_1_1_one_d_register_accessor.html#a7664c13993ee8037c5a2cc21d4eeff3b',1,'mtca4u::OneDRegisterAccessor::reverse_iterator()']]]
+  ['result_5ftype',['result_type',['../structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html#aeb6f43791b6e596dcdcdf8d809b591b6',1,'std::less&lt; ChimeraTK::TransferElementID &gt;']]],
+  ['reverse_5fiterator',['reverse_iterator',['../class_chimera_t_k_1_1_buffering_register_accessor.html#ad03f9b8b2a84e53b1cdfc61917f86ac8',1,'ChimeraTK::BufferingRegisterAccessor::reverse_iterator()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#a661719b02bd8eba561b6a632b68c7e47',1,'ChimeraTK::OneDRegisterAccessor::reverse_iterator()']]]
 ];

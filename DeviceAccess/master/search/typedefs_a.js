@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['twodregisteraccessorexception',['TwoDRegisterAccessorException',['../namespacemtca4u.html#adbfcd79e404c6772c14b9132b2af1175',1,'mtca4u']]]
+  ['twodregisteraccessorexception',['TwoDRegisterAccessorException',['../namespace_chimera_t_k.html#a51ecfb668fbe5e644cf2f3f6021bb98b',1,'ChimeraTK']]]
 ];

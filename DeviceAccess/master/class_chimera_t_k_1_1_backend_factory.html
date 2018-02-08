@@ -106,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p><a class="el" href="class_chimera_t_k_1_1_backend_factory.html" title="BackendFactory is a the factory class to create devices. ">BackendFactory</a> is a the factory class to create devices.  
  <a href="class_chimera_t_k_1_1_backend_factory.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_backend_factory_8h_source.html">BackendFactory.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="device__backends_2include_2_backend_factory_8h_source.html">BackendFactory.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -137,7 +137,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae166738b5e8ce2b948c542b91eb66237"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_factory.html#ae166738b5e8ce2b948c542b91eb66237">aliasLookUp</a> (std::string aliasName, std::string dmapFilePath)</td></tr>
 <tr class="memdesc:ae166738b5e8ce2b948c542b91eb66237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look for the alias and if found return a uri.  <a href="#ae166738b5e8ce2b948c542b91eb66237">More...</a><br /></td></tr>
 <tr class="separator:ae166738b5e8ce2b948c542b91eb66237"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a517b7eba664608f0cff9bf3b4dca8141"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_factory.html#a517b7eba664608f0cff9bf3b4dca8141">createBackendInternal</a> (const <a class="el" href="classmtca4u_1_1_device_info_map_1_1_device_info.html">DeviceInfoMap::DeviceInfo</a> &amp;deviceInfo)</td></tr>
+<tr class="memitem:a517b7eba664608f0cff9bf3b4dca8141"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_factory.html#a517b7eba664608f0cff9bf3b4dca8141">createBackendInternal</a> (const <a class="el" href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html">DeviceInfoMap::DeviceInfo</a> &amp;deviceInfo)</td></tr>
 <tr class="memdesc:a517b7eba664608f0cff9bf3b4dca8141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal function to return a <a class="el" href="class_chimera_t_k_1_1_device_backend.html" title="The base class for backends providing IO functionality for the Device class. ">DeviceBackend</a>.  <a href="#a517b7eba664608f0cff9bf3b4dca8141">More...</a><br /></td></tr>
 <tr class="separator:a517b7eba664608f0cff9bf3b4dca8141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb11ba2d5dbe02a49f8e99ff9e84ae54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_factory.html#afb11ba2d5dbe02a49f8e99ff9e84ae54">loadAllPluginsFromDMapFile</a> ()</td></tr>
@@ -168,7 +168,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p><a class="el" href="class_chimera_t_k_1_1_backend_factory.html" title="BackendFactory is a the factory class to create devices. ">BackendFactory</a> is a the factory class to create devices. </p>
 <p>It is implemented as a Meyers' singleton. </p>
 
-<p>Definition at line <a class="el" href="_backend_factory_8h_source.html#l00038">38</a> of file <a class="el" href="_backend_factory_8h_source.html">BackendFactory.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_backend_factory_8h_source.html#l00037">37</a> of file <a class="el" href="device__backends_2include_2_backend_factory_8h_source.html">BackendFactory.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae166738b5e8ce2b948c542b91eb66237"></a>
 <div class="memitem">
@@ -237,7 +237,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt; ChimeraTK::BackendFactory::createBackendInternal </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmtca4u_1_1_device_info_map_1_1_device_info.html">DeviceInfoMap::DeviceInfo</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html">DeviceInfoMap::DeviceInfo</a> &amp;&#160;</td>
           <td class="paramname"><em>deviceInfo</em></td><td>)</td>
           <td></td>
         </tr>
@@ -441,7 +441,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This functions add new device using uri as a key. </p>
-<p>If a key already exist it replaces it</p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000066">Todo:</a></b></dt><dd>FIXME don't replace. Check that if it is different (double registration of of the same creator function should be possibe) and throw if not the same. The version string has to match CHIMERATK_DEVICEACCESS_VERSION from DeviceAccessVersion.h, otherwise a DeviceException is thrown. This prevents incompatible plugins to be loaded. </dd></dl>
+<p>If a key already exist it replaces it</p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000066">Todo:</a></b></dt><dd>FIXME don't replace. Check that if it is different (double registration of of the same creator function should be possibe) and throw if not the same. The version string has to match CHIMERATK_DEVICEACCESS_VERSION from <a class="el" href="_device_access_version_8h.html">DeviceAccessVersion.h</a>, otherwise a <a class="el" href="class_chimera_t_k_1_1_device_exception.html" title="A class to provide exceptions for Device. ">DeviceException</a> is thrown. This prevents incompatible plugins to be loaded. </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="_custom_backend_8cc-example.html#a7">CustomBackend.cc</a>.</dd>
 </dl>
 <p>Definition at line <a class="el" href="_backend_factory_8cc_source.html#l00030">30</a> of file <a class="el" href="_backend_factory_8cc_source.html">BackendFactory.cc</a>.</p>
@@ -490,7 +490,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The dmap file set at run time. </p>
 
-<p>Definition at line <a class="el" href="_backend_factory_8h_source.html#l00073">73</a> of file <a class="el" href="_backend_factory_8h_source.html">BackendFactory.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_backend_factory_8h_source.html#l00072">72</a> of file <a class="el" href="device__backends_2include_2_backend_factory_8h_source.html">BackendFactory.h</a>.</p>
 
 </div>
 </div>
@@ -515,7 +515,7 @@ Protected Attributes</h2></td></tr>
 <p>A map of all created backends. </p>
 <p>If the same URI is located again, the existing backend is returned. </p>
 
-<p>Definition at line <a class="el" href="_backend_factory_8h_source.html#l00085">85</a> of file <a class="el" href="_backend_factory_8h_source.html">BackendFactory.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_backend_factory_8h_source.html#l00084">84</a> of file <a class="el" href="device__backends_2include_2_backend_factory_8h_source.html">BackendFactory.h</a>.</p>
 
 </div>
 </div>
@@ -539,7 +539,7 @@ Protected Attributes</h2></td></tr>
 
 <p>A mutex to protect backend creation and returning to keep the maps consistent. </p>
 
-<p>Definition at line <a class="el" href="_backend_factory_8h_source.html#l00088">88</a> of file <a class="el" href="_backend_factory_8h_source.html">BackendFactory.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_backend_factory_8h_source.html#l00087">87</a> of file <a class="el" href="device__backends_2include_2_backend_factory_8h_source.html">BackendFactory.h</a>.</p>
 
 </div>
 </div>
@@ -563,18 +563,18 @@ Protected Attributes</h2></td></tr>
 
 <p>Holds device type and function pointer to the createInstance function of plugin. </p>
 
-<p>Definition at line <a class="el" href="_backend_factory_8h_source.html#l00077">77</a> of file <a class="el" href="_backend_factory_8h_source.html">BackendFactory.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_backend_factory_8h_source.html#l00076">76</a> of file <a class="el" href="device__backends_2include_2_backend_factory_8h_source.html">BackendFactory.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/device_backends/include/<a class="el" href="_backend_factory_8h_source.html">BackendFactory.h</a></li>
+<li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/device_backends/include/<a class="el" href="device__backends_2include_2_backend_factory_8h_source.html">BackendFactory.h</a></li>
 <li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/device_backends/src/<a class="el" href="_backend_factory_8cc_source.html">BackendFactory.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 3 2018 05:55:19 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 8 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
