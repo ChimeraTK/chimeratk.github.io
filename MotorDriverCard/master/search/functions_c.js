@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['read',['read',['../classmtca4u_1_1_motor_driver_card_config_x_m_l.html#a3da93f428a48345d38b0c7e276e2096c',1,'mtca4u::MotorDriverCardConfigXML::read()'],['../classmtca4u_1_1_s_p_ivia_p_c_ie.html#a235f3bdd4b7931219c04526273f948a1',1,'mtca4u::SPIviaPCIe::read()'],['../classmtca4u_1_1_t_m_c429_s_p_i.html#a057ffae69cf95f5d1b96a12f01819632',1,'mtca4u::TMC429SPI::read()']]],
+  ['read',['read',['../classmtca4u_1_1_s_p_ivia_p_c_ie.html#a235f3bdd4b7931219c04526273f948a1',1,'mtca4u::SPIviaPCIe::read()'],['../classmtca4u_1_1_t_m_c429_s_p_i.html#a057ffae69cf95f5d1b96a12f01819632',1,'mtca4u::TMC429SPI::read()'],['../classmtca4u_1_1_motor_driver_card_config_x_m_l.html#a3da93f428a48345d38b0c7e276e2096c',1,'mtca4u::MotorDriverCardConfigXML::read()']]],
   ['readdriverspiregister',['readDriverSpiRegister',['../classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a6938d6de7d086d27918095c5cd3f589f',1,'mtca4u::DFMC_MD22Dummy']]],
   ['readtmc260register',['readTMC260Register',['../classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a964d11b8999fdafe1225fa4306d9b01d',1,'mtca4u::DFMC_MD22Dummy']]],
   ['readtmc429register',['readTMC429Register',['../classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#aed0820d445967a6cb3885d9d261dabf5',1,'mtca4u::DFMC_MD22Dummy']]],
