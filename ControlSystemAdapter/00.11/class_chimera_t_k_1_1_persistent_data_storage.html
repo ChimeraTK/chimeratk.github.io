@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK Control System Adapter
-   &#160;<span id="projectnumber">00.11.00</span>
+   &#160;<span id="projectnumber">00.11.01</span>
    </div>
    <div id="projectbrief">Tools to facilitate the interfacing to control systems</div>
   </td>
@@ -119,10 +119,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8b332711ff83e27f3f066ffd2d4634b"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#aa8b332711ff83e27f3f066ffd2d4634b">registerVariable</a> (mtca4u::RegisterPath const &amp;name, size_t nElements)</td></tr>
 <tr class="memdesc:aa8b332711ff83e27f3f066ffd2d4634b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a variable to be stored to and retrieved from the data storage.  <a href="#aa8b332711ff83e27f3f066ffd2d4634b">More...</a><br /></td></tr>
 <tr class="separator:aa8b332711ff83e27f3f066ffd2d4634b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03b3f0fce5022e39ed57721329d1ffff"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
-<tr class="memitem:a03b3f0fce5022e39ed57721329d1ffff"><td class="memTemplItemLeft" align="right" valign="top">const std::vector&lt; DataType &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a03b3f0fce5022e39ed57721329d1ffff">retrieveValue</a> (size_t id) const </td></tr>
-<tr class="memdesc:a03b3f0fce5022e39ed57721329d1ffff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the current value for the variable with the given ID.  <a href="#a03b3f0fce5022e39ed57721329d1ffff">More...</a><br /></td></tr>
-<tr class="separator:a03b3f0fce5022e39ed57721329d1ffff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af20e9b672b0203a6c9a75d9cbf14bc96"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
+<tr class="memitem:af20e9b672b0203a6c9a75d9cbf14bc96"><td class="memTemplItemLeft" align="right" valign="top">const std::vector&lt; DataType &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#af20e9b672b0203a6c9a75d9cbf14bc96">retrieveValue</a> (size_t id)</td></tr>
+<tr class="memdesc:af20e9b672b0203a6c9a75d9cbf14bc96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the current value for the variable with the given ID.  <a href="#af20e9b672b0203a6c9a75d9cbf14bc96">More...</a><br /></td></tr>
+<tr class="separator:af20e9b672b0203a6c9a75d9cbf14bc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a612dbafae9899fbead5ca29b867d4642"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
 <tr class="memitem:a612dbafae9899fbead5ca29b867d4642"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a612dbafae9899fbead5ca29b867d4642">updateValue</a> (int id, std::vector&lt; DataType &gt; const &amp;value)</td></tr>
 <tr class="memdesc:a612dbafae9899fbead5ca29b867d4642"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the storage system about a new value of the variable with the given ID (as returned by registerVariable)  <a href="#a612dbafae9899fbead5ca29b867d4642">More...</a><br /></td></tr>
@@ -394,7 +394,7 @@ template&lt;typename DataType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a03b3f0fce5022e39ed57721329d1ffff"></a>
+<a class="anchor" id="af20e9b672b0203a6c9a75d9cbf14bc96"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -405,14 +405,14 @@ template&lt;typename DataType &gt; </div>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Retrieve the current value for the variable with the given ID. </p>
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00134">134</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00136">136</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -444,7 +444,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Notify the storage system about a new value of the variable with the given ID (as returned by registerVariable) </p>
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00141">141</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00143">143</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -654,7 +654,7 @@ template&lt;typename DataType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 9 2018 06:17:59 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 14 2018 12:40:18 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
