@@ -102,6 +102,8 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespace_chimera_t_k_1_1csa__helpers"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1csa__helpers.html">csa_helpers</a></td></tr>
 <tr class="memdesc:namespace_chimera_t_k_1_1csa__helpers"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sub-namespace in order not to expose the classes to the <a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a> namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_chimera_t_k_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1detail.html">detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -196,6 +198,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0bb6d60301cf4fca703de3d80ddbf27f"><td class="memItemLeft" align="right" valign="top">std::map&lt; boost::shared_ptr&lt; mtca4u::TransferElement &gt;, boost::shared_ptr&lt; mtca4u::TransferElement &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a0bb6d60301cf4fca703de3d80ddbf27f">getGlobalDecoratorMap</a> ()</td></tr>
 <tr class="memdesc:a0bb6d60301cf4fca703de3d80ddbf27f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quasi singleton to have a unique, global map across UserType templated factories.  <a href="#a0bb6d60301cf4fca703de3d80ddbf27f">More...</a><br /></td></tr>
 <tr class="separator:a0bb6d60301cf4fca703de3d80ddbf27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b513f257155d9245ebed197db95a8fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a3b513f257155d9245ebed197db95a8fc">setEnableProcessArrayThreadSafetyCheck</a> (bool enable)</td></tr>
+<tr class="memdesc:a3b513f257155d9245ebed197db95a8fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Globally enable or disable the thread safety check on each read/write.  <a href="#a3b513f257155d9245ebed197db95a8fc">More...</a><br /></td></tr>
+<tr class="separator:a3b513f257155d9245ebed197db95a8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a032b9a9ae2e21102dd483ac2190f7e90"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a032b9a9ae2e21102dd483ac2190f7e90"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr, typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a032b9a9ae2e21102dd483ac2190f7e90">createBidirectionalSynchronizedProcessArray</a> (std::size_t size, const mtca4u::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, T initialValue=T(), std::size_t numberOfBuffers=2, <a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a> timeStampSource1=<a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a> timeStampSource2=<a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a> sendNotificationListener1=<a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a> sendNotificationListener2=<a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a>())</td></tr>
 <tr class="memdesc:a032b9a9ae2e21102dd483ac2190f7e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a bidirectional synchronized process array.  <a href="#a032b9a9ae2e21102dd483ac2190f7e90">More...</a><br /></td></tr>
@@ -576,7 +581,7 @@ template&lt;class T &gt; </div>
 <p>The optional send-notification listener is notified every time the sender's ProcessArray::write() method is called. It can be used to queue a request for the receiver's readNonBlocking() method to be called. The process variable passed to the listener is the receiver and not the sender.</p>
 <p>The specified initial value is used for all the elements of the array. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00837">837</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00896">896</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -652,7 +657,7 @@ template&lt;class T &gt; </div>
 <p>The optional send-notification listener is notified every time the sender's ProcessArray::write() method is called. It can be used to queue a request for the receiver's readNonBlocking() method to be called. The process variable passed to the listener is the receiver and not the sender.</p>
 <p>The array's size is set to the number of elements stored in the vector provided for initialization and all elements are initialized with the values provided by this vector. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00858">858</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00917">917</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -748,6 +753,27 @@ template&lt;class UserType &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a3b513f257155d9245ebed197db95a8fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::setEnableProcessArrayThreadSafetyCheck </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Globally enable or disable the thread safety check on each read/write. </p>
+<p>This will throw an assertion if the thread id has been changed since the last read/write operation which has been executed with the safety check enabled. This will only have an effect if debug compiler flags are enabled. </p>
+
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8cc_source.html#l00007">7</a> of file <a class="el" href="_unidirectional_process_array_8cc_source.html">UnidirectionalProcessArray.cc</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a62d5437df3e22dd00e8f18d44e71cc1b"></a>
 <div class="memitem">
@@ -766,7 +792,7 @@ template&lt;class UserType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 14 2018 12:40:09 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 22 2018 05:53:18 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

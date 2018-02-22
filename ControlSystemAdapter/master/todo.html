@@ -107,13 +107,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dd>FIXME: This was an unordered_map of strings, but it was changed to register path. The register path does not have a hash, thus we fall back to std::map. Write a std::hash&lt;RegisterPath&gt; if you cant to improve the performance.  </dd>
 <dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ade9ac76b64766c7ba742a5f2f041797c">ChimeraTK::PVManager::PVManager</a>  ()</dt>
 <dd>FIXME I keep this part of the code commented out, although it is not the best programming style. This performance optimisation has been turned off when changing the map key from string to RegisterPath, which does not have a hash function. We had to change to std::map, which does not have the load factor. To re-enable the performance optimisation write a std::hash for RegisterPath.  </dd>
-<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a448e81454c995a7e262cb1d83cd52bb7">ChimeraTK::UnidirectionalProcessArray&lt; T &gt;::writeDestructively</a>  (ChimeraTK::TimeStamp timeStamp, ChimeraTK::VersionNumber versionNumber)</dt>
+<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a4c10cec4751c5bb4370bdc61e13654cc">ChimeraTK::UnidirectionalProcessArray&lt; T &gt;::doReadTransfer</a>  () override</dt>
+<dd>probably redundant  </dd>
+<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a5aa3d4f0b0f4da26737e89ef4e70caab">ChimeraTK::UnidirectionalProcessArray&lt; T &gt;::doReadTransferLatest</a>  () override</dt>
+<dd>probably redundant check  </dd>
+<dt><a class="anchor" id="_todo000012"></a>Member <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a448e81454c995a7e262cb1d83cd52bb7">ChimeraTK::UnidirectionalProcessArray&lt; T &gt;::writeDestructively</a>  (ChimeraTK::TimeStamp timeStamp, ChimeraTK::VersionNumber versionNumber)</dt>
 <dd>FIXME this function must be present in TransferElement already! </dd>
 </dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 14 2018 12:40:09 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 22 2018 05:53:18 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

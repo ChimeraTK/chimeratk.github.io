@@ -154,7 +154,7 @@ struct ChimeraTK::UnidirectionalProcessArray&lt; T &gt;::Buffer</h3>
 <p>Type for the individual buffers. </p>
 <p>Each buffer stores a vector (wrapped in a Boost scoped pointer) and a time stamp. It extends the TransferFuture::Data type (which provides the version number) so it can be transported by a TransferFuture. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00162">162</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00175">175</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac3df520ec66c3ceddd4f3f3526bd7852"></a>
 <div class="memitem">
@@ -182,7 +182,7 @@ template&lt;class T&gt; </div>
 <p>Default constructor. </p>
 <p>Has to be defined explicitly because we delete our copy constructor. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00167">167</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00180">180</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -310,7 +310,7 @@ template&lt;class T&gt; </div>
 <p>Extra version number used to sort the values within the process variable (so this version is not globally valid). </p>
 <p>This number is needed in addition to the globally valid _versionNumber defined in TransferFuture::Data, because the globally valid version numebr can be controlled by the application and values with an older version number might be written to this process variable later. That later data with the older version number shall still be considered as last data e.g. in the context of readLatest(), i.e. whatever has been written to the process variable last should be read with readLatest(), even if it has the older version number. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00197">197</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00210">210</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -329,7 +329,7 @@ template&lt;class T&gt; </div>
 <p>Flag whether this buffer currently contains valid data. </p>
 <p>This flag is used only for the atomic triple buffer and not set for buffers on the queues (since the queue the buffer is in already tells whether it contains valid data or not). </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00186">186</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00199">199</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -347,7 +347,7 @@ template&lt;class T&gt; </div>
 
 <p>Time stamp associated with this buffer. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00200">200</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00213">213</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -365,7 +365,7 @@ template&lt;class T&gt; </div>
 
 <p>The actual data contained in this buffer. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00181">181</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00194">194</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -375,7 +375,7 @@ template&lt;class T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 14 2018 12:40:09 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 22 2018 05:53:18 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
