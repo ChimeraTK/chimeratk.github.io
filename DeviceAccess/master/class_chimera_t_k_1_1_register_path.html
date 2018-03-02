@@ -134,13 +134,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aed757a7c2895d22cb7d8244eb20e6011"><td class="mdescLeft">&#160;</td><td class="mdescRight">+= operator: just concatenate-assign like normal strings  <a href="#aed757a7c2895d22cb7d8244eb20e6011">More...</a><br /></td></tr>
 <tr class="separator:aed757a7c2895d22cb7d8244eb20e6011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a809a50eb7d6e26215bbf1083cfe868ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_path.html#a809a50eb7d6e26215bbf1083cfe868ca">operator&lt;</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;rightHandSide) const </td></tr>
-<tr class="memdesc:a809a50eb7d6e26215bbf1083cfe868ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; operator: comparison used for sorting e.g.  <a href="#a809a50eb7d6e26215bbf1083cfe868ca">More...</a><br /></td></tr>
+<tr class="memdesc:a809a50eb7d6e26215bbf1083cfe868ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; operator: comparison used for sorting e.g. in std::map  <a href="#a809a50eb7d6e26215bbf1083cfe868ca">More...</a><br /></td></tr>
 <tr class="separator:a809a50eb7d6e26215bbf1083cfe868ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7017153970fa74b94386cdf8a7b184d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_path.html#ad7017153970fa74b94386cdf8a7b184d">operator--</a> (int)</td></tr>
-<tr class="memdesc:ad7017153970fa74b94386cdf8a7b184d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post-decrement operator, e.g.  <a href="#ad7017153970fa74b94386cdf8a7b184d">More...</a><br /></td></tr>
+<tr class="memdesc:ad7017153970fa74b94386cdf8a7b184d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cut-right operator, e.g. <code>registerPath&ndash;</code>.  <a href="#ad7017153970fa74b94386cdf8a7b184d">More...</a><br /></td></tr>
 <tr class="separator:ad7017153970fa74b94386cdf8a7b184d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3977d353473cfe640a5d61e0885eff49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_path.html#a3977d353473cfe640a5d61e0885eff49">operator--</a> ()</td></tr>
-<tr class="memdesc:a3977d353473cfe640a5d61e0885eff49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-decrement operator, e.g.  <a href="#a3977d353473cfe640a5d61e0885eff49">More...</a><br /></td></tr>
+<tr class="memdesc:a3977d353473cfe640a5d61e0885eff49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cut-left operator, e.g. <code>&ndash;registerPath</code>.  <a href="#a3977d353473cfe640a5d61e0885eff49">More...</a><br /></td></tr>
 <tr class="separator:a3977d353473cfe640a5d61e0885eff49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea166ceacd5f5ba675943ff8f0dd6704"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_path.html#aea166ceacd5f5ba675943ff8f0dd6704">operator==</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;rightHandSide) const </td></tr>
 <tr class="memdesc:aea166ceacd5f5ba675943ff8f0dd6704"><td class="mdescLeft">&#160;</td><td class="mdescRight">comparison with other <a class="el" href="class_chimera_t_k_1_1_register_path.html" title="Class to store a register path name. ">RegisterPath</a>  <a href="#aea166ceacd5f5ba675943ff8f0dd6704">More...</a><br /></td></tr>
@@ -350,7 +350,7 @@ Friends</h2></td></tr>
 
 <p>return common alternative separator for this <a class="el" href="class_chimera_t_k_1_1_register_path.html" title="Class to store a register path name. ">RegisterPath</a> and the specified other <a class="el" href="class_chimera_t_k_1_1_register_path.html" title="Class to store a register path name. ">RegisterPath</a> objects. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00208">208</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00213">213</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -377,7 +377,7 @@ Friends</h2></td></tr>
 
 <p>split path into components </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00143">143</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00148">148</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -433,7 +433,7 @@ Friends</h2></td></tr>
 
 <p>Return the path after replacing the given otherSeparator with the standard separator "/". </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00194">194</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00199">199</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -460,7 +460,7 @@ Friends</h2></td></tr>
 
 <p>return the length of the path (including leading slash) </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00130">130</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00135">135</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -515,7 +515,7 @@ Friends</h2></td></tr>
 
 <p>comparison with other <a class="el" href="class_chimera_t_k_1_1_register_path.html" title="Class to store a register path name. ">RegisterPath</a> </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00115">115</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00120">120</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -543,7 +543,7 @@ Friends</h2></td></tr>
 
 <p>comparison with std::string </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00120">120</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00125">125</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +571,7 @@ Friends</h2></td></tr>
 
 <p>comparison with char* </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00125">125</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00130">130</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -625,10 +625,10 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Post-decrement operator, e.g. </p>
-<p>: registerPath&ndash; Remove the last element from the path </p>
+<p>Cut-right operator, e.g. <code>registerPath&ndash;</code>. </p>
+<p>Remove the last element from the path and return the modified path. </p><dl class="section attention"><dt>Attention</dt><dd>In contrast to the <code>xx&ndash;</code> operator on numeric types this is NOT a post operator! It returns the already modified register path. </dd></dl>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00074">74</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00078">78</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -653,10 +653,10 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pre-decrement operator, e.g. </p>
-<p>: &ndash;registerPath Remove the first element form the path </p>
+<p>Cut-left operator, e.g. <code>&ndash;registerPath</code>. </p>
+<p>Remove the first element form the path and return the modified path. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00087">87</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00092">92</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -710,8 +710,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>&lt; operator: comparison used for sorting e.g. </p>
-<p>in std::map </p>
+<p>&lt; operator: comparison used for sorting e.g. in std::map </p>
 
 <p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00067">67</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
@@ -741,7 +740,7 @@ Friends</h2></td></tr>
 
 <p>comparison with other <a class="el" href="class_chimera_t_k_1_1_register_path.html" title="Class to store a register path name. ">RegisterPath</a> </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00099">99</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00104">104</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -769,7 +768,7 @@ Friends</h2></td></tr>
 
 <p>comparison with std::string </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00105">105</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00110">110</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -797,7 +796,7 @@ Friends</h2></td></tr>
 
 <p>comparison with char* </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00110">110</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00115">115</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -825,7 +824,7 @@ Friends</h2></td></tr>
 <p>Search for duplicate separators (e.g. </p>
 <p>"//") and remove one of them. Also removes a trailing separator, if present. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00178">178</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00183">183</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -864,7 +863,7 @@ Friends</h2></td></tr>
 <p>Search for duplicate separators (e.g. </p>
 <p>"//") and remove one of them. Also removes a trailing separator, if present. The second optional argument allows to search for other separators instead of the default. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00184">184</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00189">189</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -920,7 +919,7 @@ Friends</h2></td></tr>
 
 <p>check if the register path starts with the given path </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00135">135</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00140">140</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -1133,7 +1132,7 @@ Friends</h2></td></tr>
 
 <p>path in standardised notation </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00168">168</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00173">173</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -1157,7 +1156,7 @@ Friends</h2></td></tr>
 
 <p>separator character to separate the elements in the path </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00171">171</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00176">176</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -1181,7 +1180,7 @@ Friends</h2></td></tr>
 
 <p>altenative separator character </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00174">174</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_path_8h_source.html#l00179">179</a> of file <a class="el" href="fileparsers_2include_2_register_path_8h_source.html">RegisterPath.h</a>.</p>
 
 </div>
 </div>
@@ -1192,7 +1191,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 23 2018 05:53:16 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 2 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
