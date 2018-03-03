@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['modulepropertieswidget',['ModulePropertiesWidget',['../class_module_properties_widget.html',1,'']]],
-  ['moduleqtreeitem',['ModuleQTreeItem',['../class_module_q_tree_item.html',1,'']]],
-  ['multiplexedareapropertieswidget',['MultiplexedAreaPropertiesWidget',['../class_multiplexed_area_properties_widget.html',1,'']]]
+  ['plotwindow',['PlotWindow',['../class_plot_window.html',1,'']]],
+  ['preferencesprovider',['PreferencesProvider',['../class_preferences_provider.html',1,'']]],
+  ['propertieswidget',['PropertiesWidget',['../class_properties_widget.html',1,'']]]
 ];

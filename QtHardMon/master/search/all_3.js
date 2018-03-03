@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['genericregisterpropertieswidget',['GenericRegisterPropertiesWidget',['../class_generic_register_properties_widget.html',1,'']]],
   ['getbadlines',['getBadLines',['../class_config_file_reader_writer.html#aae268b431067c17113253d85aebd18af',1,'ConfigFileReaderWriter']]],
   ['getdoublevalues',['getDoubleValues',['../class_config_file_reader_writer.html#a1a4ef68e1c938d334730306bbb7b542d',1,'ConfigFileReaderWriter']]],
   ['getintvalues',['getIntValues',['../class_config_file_reader_writer.html#a41e02c370c0590311bae17446307db02',1,'ConfigFileReaderWriter']]],

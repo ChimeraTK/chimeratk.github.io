@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['genericregisterpropertieswidget',['GenericRegisterPropertiesWidget',['../class_generic_register_properties_widget.html',1,'']]]
+  ['hexdata',['HexData',['../class_hex_data.html',1,'']]],
+  ['hexspinbox',['HexSpinBox',['../class_hex_spin_box.html',1,'']]]
 ];

@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['read',['read',['../class_config_file_reader_writer.html#a34d16fc0cf15579b0569f47aa6839c48',1,'ConfigFileReaderWriter::read()'],['../class_qt_hard_mon.html#a50b33bced6902db0d43af7a168cf79d6',1,'QtHardMon::read()']]],
-  ['registerproperties',['RegisterProperties',['../struct_register_properties_widget_1_1_register_properties.html',1,'RegisterPropertiesWidget']]],
-  ['registerproperties',['RegisterProperties',['../struct_sequence_properties_widget_1_1_register_properties.html',1,'SequencePropertiesWidget']]],
-  ['registerpropertieswidget',['RegisterPropertiesWidget',['../class_register_properties_widget.html',1,'']]],
-  ['registerqtreeitem',['RegisterQTreeItem',['../class_register_q_tree_item.html',1,'']]],
-  ['registertreeutilities',['RegisterTreeUtilities',['../class_register_tree_utilities.html',1,'']]]
+  ['setdoublespinboxprecision',['setDoubleSpinBoxPrecision',['../class_custom_delegates.html#adb80a81d2389034a2ac32b430b2949c4',1,'CustomDelegates']]],
+  ['seteditordata',['setEditorData',['../class_custom_delegates.html#a66b89d29ef8066daf57ef3cdafa4a750',1,'CustomDelegates']]],
+  ['setmodeldata',['setModelData',['../class_custom_delegates.html#a5507a43ad06051e6cc41c167f1fc8397',1,'CustomDelegates']]],
+  ['setplotafterread',['setPlotAfterRead',['../class_plot_window.html#adc851a77ffc1fd6f758c156ea1229224',1,'PlotWindow']]],
+  ['setvalue',['setValue',['../class_config_file_reader_writer.html#a8a16d95464e893a8faf501b13a9b8dc9',1,'ConfigFileReaderWriter']]],
+  ['singlethread',['SingleThread',['../class_single_thread.html',1,'']]],
+  ['singletonholder',['SingletonHolder',['../class_singleton_holder.html',1,'']]]
 ];

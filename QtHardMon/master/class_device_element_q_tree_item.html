@@ -48,6 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -111,7 +112,7 @@ $(document).ready(function(){initNavTree('class_device_element_q_tree_item.html'
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_device_element_q_tree_item-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">DeviceElementQTreeItem Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">DeviceElementQTreeItem Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
@@ -120,42 +121,23 @@ Inheritance diagram for DeviceElementQTreeItem:</div>
  <div class="center">
   <img src="class_device_element_q_tree_item.png" usemap="#DeviceElementQTreeItem_map" alt=""/>
   <map id="DeviceElementQTreeItem_map" name="DeviceElementQTreeItem_map">
-<area href="class_module_q_tree_item.html" alt="ModuleQTreeItem" shape="rect" coords="0,112,323,136"/>
-<area href="class_numeric_addressed_cooked_multiplexed_area_q_tree_item.html" alt="NumericAddressedCookedMultiplexedAreaQTreeItem" shape="rect" coords="333,112,656,136"/>
-<area href="class_numeric_addressed_cooked_sequence_register_q_tree_item.html" alt="NumericAddressedCookedSequenceRegisterQTreeItem" shape="rect" coords="666,112,989,136"/>
-<area href="class_numeric_addressed_multiplexed_area_q_tree_item.html" alt="NumericAddressedMultiplexedAreaQTreeItem" shape="rect" coords="999,112,1322,136"/>
-<area href="class_numeric_addressed_register_q_tree_item.html" alt="NumericAddressedRegisterQTreeItem" shape="rect" coords="1332,112,1655,136"/>
-<area href="class_numeric_addressed_sequence_register_q_tree_item.html" alt="NumericAddressedSequenceRegisterQTreeItem" shape="rect" coords="1665,112,1988,136"/>
-<area href="class_register_q_tree_item.html" alt="RegisterQTreeItem" shape="rect" coords="1998,112,2321,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af7b6ba540d418590b2ece16636df8ffd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7b6ba540d418590b2ece16636df8ffd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceElementQTreeItem</b> (const QString &amp;text, const int type, QTreeWidget *parent, <a class="el" href="class_properties_widget_provider.html">PropertiesWidgetProvider</a> &amp;propertiesWidgetProvider)</td></tr>
-<tr class="separator:af7b6ba540d418590b2ece16636df8ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40d4de7b41fd20a96f9a72f7fe32da69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40d4de7b41fd20a96f9a72f7fe32da69"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceElementQTreeItem</b> (const QString &amp;text, const int type, QTreeWidgetItem *parent, <a class="el" href="class_properties_widget_provider.html">PropertiesWidgetProvider</a> &amp;propertiesWidgetProvider)</td></tr>
-<tr class="separator:a40d4de7b41fd20a96f9a72f7fe32da69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeca7c3514b510e48f8b384ca24de1c03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeca7c3514b510e48f8b384ca24de1c03"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceElementQTreeItem</b> (const QString &amp;text, const int type, QTreeWidgetItem *parent, <a class="el" href="class_properties_widget_provider.html">PropertiesWidgetProvider</a> &amp;propertiesWidgetProvider, boost::shared_ptr&lt; mtca4u::RegisterInfo &gt; registerInfo)</td></tr>
-<tr class="separator:aeca7c3514b510e48f8b384ca24de1c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae84264b83be975ce157f35bd7c25c3d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae84264b83be975ce157f35bd7c25c3d9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceElementQTreeItem</b> (QTreeWidget *parent, QString const &amp;name, boost::shared_ptr&lt; mtca4u::RegisterInfo &gt; registerInfo=nullptr)</td></tr>
+<tr class="separator:ae84264b83be975ce157f35bd7c25c3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e97765f58aabd2634cfa38a588c4199"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e97765f58aabd2634cfa38a588c4199"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceElementQTreeItem</b> (QTreeWidgetItem *parent, QString const &amp;name, boost::shared_ptr&lt; mtca4u::RegisterInfo &gt; registerInfo=nullptr)</td></tr>
+<tr class="separator:a4e97765f58aabd2634cfa38a588c4199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ebe6f4285f5750716a09f9b38bf1a84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ebe6f4285f5750716a09f9b38bf1a84"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const QTreeWidgetItem &amp;rhs) const </td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const QTreeWidgetItem &amp;rhs) const </td></tr>
 <tr class="separator:a6ebe6f4285f5750716a09f9b38bf1a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a842571b392cea47d5f87465580adfb4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a842571b392cea47d5f87465580adfb4d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>readData</b> (mtca4u::Device &amp;device)=0</td></tr>
-<tr class="separator:a842571b392cea47d5f87465580adfb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4101c1f2dd124d1c726a43d95702e22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4101c1f2dd124d1c726a43d95702e22"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>writeData</b> (mtca4u::Device &amp;device)=0</td></tr>
-<tr class="separator:ad4101c1f2dd124d1c726a43d95702e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e1f72a2543f7881f5480b634187d325"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e1f72a2543f7881f5480b634187d325"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateRegisterProperties</b> (mtca4u::Device &amp;device)=0</td></tr>
-<tr class="separator:a2e1f72a2543f7881f5480b634187d325"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ae7f559c1915f344f54937c812704e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ae7f559c1915f344f54937c812704e9"></a>
-virtual <a class="el" href="class_properties_widget.html">PropertiesWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPropertiesWidget</b> ()</td></tr>
-<tr class="separator:a0ae7f559c1915f344f54937c812704e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c9216862d9b545a9321f0555138b4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7c9216862d9b545a9321f0555138b4f"></a>
+boost::shared_ptr&lt; mtca4u::RegisterInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getRegisterInfo</b> ()</td></tr>
+<tr class="separator:ad7c9216862d9b545a9321f0555138b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -176,7 +158,7 @@ boost::shared_ptr&lt; mtca4u::RegisterInfo &gt;&#160;</td><td class="memItemRigh
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_device_element_q_tree_item.html">DeviceElementQTreeItem</a></li>
-    <li class="footer">Generated on Fri Feb 23 2018 05:53:24 for QtHardMon by
+    <li class="footer">Generated on Sat Mar 3 2018 05:53:14 for QtHardMon by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['cleardatawidgetbackground',['clearDataWidgetBackground',['../class_properties_widget.html#ac0c319ea86060ad8933ee482e2725df8',1,'PropertiesWidget']]],
   ['closeevent',['closeEvent',['../class_plot_window.html#afd4910a232349529182475abf700f1eb',1,'PlotWindow']]],
   ['configfilereaderwriter',['ConfigFileReaderWriter',['../class_config_file_reader_writer.html',1,'ConfigFileReaderWriter'],['../class_config_file_reader_writer.html#a7fae593e20df60c321e4dca0355115f8',1,'ConfigFileReaderWriter::ConfigFileReaderWriter(std::string const &amp;fileName)'],['../class_config_file_reader_writer.html#a30b2fe53c3b3d31b8e5ddfb2b55d2140',1,'ConfigFileReaderWriter::ConfigFileReaderWriter()']]],
   ['createbynew',['CreateByNew',['../class_create_by_new.html',1,'']]],

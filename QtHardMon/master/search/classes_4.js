@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['lifetimestandard',['LifetimeStandard',['../class_lifetime_standard.html',1,'']]],
-  ['lock',['Lock',['../class_single_thread_1_1_lock.html',1,'SingleThread']]]
+  ['numericdatatablemixin',['NumericDataTableMixin',['../class_numeric_data_table_mixin.html',1,'']]]
 ];
