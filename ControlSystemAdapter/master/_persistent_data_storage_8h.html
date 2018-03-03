@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK Control System Adapter
-   &#160;<span id="projectnumber">00.12.00</span>
+   &#160;<span id="projectnumber">00.12.01</span>
    </div>
    <div id="projectbrief">Tools to facilitate the interfacing to control systems</div>
   </td>
@@ -102,6 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;boost/thread.hpp&gt;</code><br />
+<code>#include &lt;boost/fusion/include/for_each.hpp&gt;</code><br />
 <code>#include &lt;mtca4u/SupportedUserTypes.h&gt;</code><br />
 <code>#include &lt;mtca4u/RegisterPath.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -116,26 +117,26 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="_persistent_data_storage_8h__dep__incl.png" border="0" usemap="#_2home_2msk__jenkins_2workspace_2_chimera_t_k__documentation__update_2checkouts_2_control_system_adapter_2include_2_chimera_t_k_2_control_system_adapter_2_persistent_data_storage_8hdep" alt=""/></div>
 <map name="_2home_2msk__jenkins_2workspace_2_chimera_t_k__documentation__update_2checkouts_2_control_system_adapter_2include_2_chimera_t_k_2_control_system_adapter_2_persistent_data_storage_8hdep" id="_2home_2msk__jenkins_2workspace_2_chimera_t_k__documentation__update_2checkouts_2_control_system_adapter_2include_2_chimera_t_k_2_control_system_adapter_2_persistent_data_storage_8hdep">
-<area shape="rect" id="node2" href="_persistent_data_storage_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/PersistentDataStorage.cc" alt="" coords="94,679,387,750"/>
-<area shape="rect" id="node3" href="_process_array_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/ProcessArray.h" alt="" coords="1387,139,1681,224"/>
-<area shape="rect" id="node20" href="_unidirectional_process_array_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/UnidirectionalProcessArray.h" alt="" coords="1572,272,1867,357"/>
-<area shape="rect" id="node21" href="_bidirectional_process_array_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/BidirectionalProcessArray.h" alt="" coords="1891,272,2185,357"/>
-<area shape="rect" id="node4" href="_unidirectional_process_array_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/UnidirectionalProcessArray.cc" alt="" coords="1203,279,1497,350"/>
-<area shape="rect" id="node5" href="_p_v_manager_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/PVManager.h" alt="" coords="741,272,1036,357"/>
-<area shape="rect" id="node15" href="_control_system_adapter_control_system_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapterControl\lSystem.h" alt="" coords="652,939,992,1024"/>
-<area shape="rect" id="node19" href="_control_system_adapter_device_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapterDevice.h" alt="" coords="1417,679,1766,750"/>
-<area shape="rect" id="node6" href="_p_v_manager_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/PVManager.cc" alt="" coords="278,813,571,883"/>
-<area shape="rect" id="node7" href="_device_p_v_manager_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/DevicePVManager.h" alt="" coords="833,405,1128,491"/>
-<area shape="rect" id="node11" href="_control_system_p_v_manager_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/ControlSystemPVManager.h" alt="" coords="780,672,1075,757"/>
-<area shape="rect" id="node8" href="_device_p_v_manager_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/DevicePVManager.cc" alt="" coords="833,546,1126,617"/>
-<area shape="rect" id="node9" href="_application_base_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/ApplicationBase.h" alt="" coords="463,539,757,624"/>
-<area shape="rect" id="node17" href="_device_synchronization_utility_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/DeviceSynchronizationUtility.h" alt="" coords="1151,539,1445,624"/>
-<area shape="rect" id="node10" href="_application_base_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/ApplicationBase.cc" alt="" coords="462,679,755,750"/>
-<area shape="rect" id="node12" href="_control_system_p_v_manager_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/ControlSystemPVManager.cc" alt="" coords="781,813,1074,883"/>
-<area shape="rect" id="node13" href="_control_system_synchronization_utility_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/ControlSystemSynchronizationUtility.h" alt="" coords="1099,805,1393,891"/>
-<area shape="rect" id="node14" href="_control_system_synchronization_utility_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/ControlSystemSynchronizationUtility.cc" alt="" coords="1097,946,1395,1017"/>
-<area shape="rect" id="node16" href="_control_system_adapter_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter.h" alt="" coords="1053,1072,1359,1143"/>
-<area shape="rect" id="node18" href="_device_synchronization_utility_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/DeviceSynchronizationUtility.cc" alt="" coords="1099,679,1393,750"/>
+<area shape="rect" id="node2" href="_persistent_data_storage_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/PersistentDataStorage.cc" alt="" coords="94,679,362,750"/>
+<area shape="rect" id="node3" href="_process_array_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/ProcessArray.h" alt="" coords="1305,139,1578,224"/>
+<area shape="rect" id="node20" href="_unidirectional_process_array_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/UnidirectionalProcessArray.h" alt="" coords="1480,272,1753,357"/>
+<area shape="rect" id="node21" href="_bidirectional_process_array_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/BidirectionalProcessArray.h" alt="" coords="1777,272,2050,357"/>
+<area shape="rect" id="node4" href="_unidirectional_process_array_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/UnidirectionalProcessArray.cc" alt="" coords="1136,279,1404,350"/>
+<area shape="rect" id="node5" href="_p_v_manager_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/PVManager.h" alt="" coords="701,272,974,357"/>
+<area shape="rect" id="node15" href="_control_system_adapter_control_system_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapterControl\lSystem.h" alt="" coords="610,939,924,1024"/>
+<area shape="rect" id="node19" href="_control_system_adapter_device_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapterDevice.h" alt="" coords="1320,679,1646,750"/>
+<area shape="rect" id="node6" href="_p_v_manager_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/PVManager.cc" alt="" coords="266,813,534,883"/>
+<area shape="rect" id="node7" href="_device_p_v_manager_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/DevicePVManager.h" alt="" coords="788,405,1061,491"/>
+<area shape="rect" id="node11" href="_control_system_p_v_manager_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/ControlSystemPVManager.h" alt="" coords="730,672,1004,757"/>
+<area shape="rect" id="node8" href="_device_p_v_manager_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/DevicePVManager.cc" alt="" coords="788,546,1056,617"/>
+<area shape="rect" id="node9" href="_application_base_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/ApplicationBase.h" alt="" coords="438,539,712,624"/>
+<area shape="rect" id="node17" href="_device_synchronization_utility_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/DeviceSynchronizationUtility.h" alt="" coords="1080,539,1353,624"/>
+<area shape="rect" id="node10" href="_application_base_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/ApplicationBase.cc" alt="" coords="438,679,706,750"/>
+<area shape="rect" id="node12" href="_control_system_p_v_manager_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/ControlSystemPVManager.cc" alt="" coords="733,813,1001,883"/>
+<area shape="rect" id="node13" href="_control_system_synchronization_utility_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter\l/ControlSystemSynchronizationUtility.h" alt="" coords="1025,805,1298,891"/>
+<area shape="rect" id="node14" href="_control_system_synchronization_utility_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/ControlSystemSynchronizationUtility.cc" alt="" coords="1022,946,1302,1017"/>
+<area shape="rect" id="node16" href="_control_system_adapter_8h.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/include/ChimeraTK/ControlSystemAdapter.h" alt="" coords="982,1072,1266,1143"/>
+<area shape="rect" id="node18" href="_device_synchronization_utility_8cc.html" title="/home/msk_jenkins/workspace\l/ChimeraTK_documentation\l_update/checkouts/ControlSystemAdapter\l/src/DeviceSynchronizationUtility.cc" alt="" coords="1028,679,1296,750"/>
 </map>
 </div>
 </div>
@@ -145,6 +146,9 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html">ChimeraTK::PersistentDataStorage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persistent data storage for process variables.  <a href="class_chimera_t_k_1_1_persistent_data_storage.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html">ChimeraTK::PersistentDataStorage::registerVariable_oldTypeRemover</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A functor needed in <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a854a7e6414c7dd391fc1f59ec38bf3c9" title="Register a variable to be stored to and retrieved from the data storage. ">registerVariable()</a>  <a href="struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -157,7 +161,7 @@ Namespaces</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 23 2018 05:53:27 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 05:53:17 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

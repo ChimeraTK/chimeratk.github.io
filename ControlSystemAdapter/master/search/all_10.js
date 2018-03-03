@@ -11,6 +11,7 @@ var searchData=
   ['timestampsourceimpl',['TimeStampSourceImpl',['../class_chimera_t_k_1_1_p_v_manager_1_1_time_stamp_source_impl.html#a4856cc7313265a32c0b4f3c58d5bd073',1,'ChimeraTK::PVManager::TimeStampSourceImpl']]],
   ['timestampsourceimpl',['TimeStampSourceImpl',['../class_chimera_t_k_1_1_p_v_manager_1_1_time_stamp_source_impl.html',1,'ChimeraTK::PVManager']]],
   ['todo_20list',['Todo List',['../todo.html',1,'']]],
+  ['type',['type',['../struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html#a57bf262aaabe164e8bf5d35c72046cff',1,'ChimeraTK::PersistentDataStorage::registerVariable_oldTypeRemover']]],
   ['typechangingdecorator',['TypeChangingDecorator',['../class_chimera_t_k_1_1_type_changing_decorator.html#a7aca0169f16ef3acf55557de9a80058b',1,'ChimeraTK::TypeChangingDecorator']]],
   ['typechangingdecorator',['TypeChangingDecorator',['../class_chimera_t_k_1_1_type_changing_decorator.html',1,'ChimeraTK']]],
   ['typechangingdecorator_2ecc',['TypeChangingDecorator.cc',['../_type_changing_decorator_8cc.html',1,'']]],
