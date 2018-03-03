@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK Control System Adapter
-   &#160;<span id="projectnumber">00.12.00</span>
+   &#160;<span id="projectnumber">00.12.01</span>
    </div>
    <div id="projectbrief">Tools to facilitate the interfacing to control systems</div>
   </td>
@@ -92,6 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -107,6 +108,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html">registerVariable_oldTypeRemover</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A functor needed in <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a854a7e6414c7dd391fc1f59ec38bf3c9" title="Register a variable to be stored to and retrieved from the data storage. ">registerVariable()</a>  <a href="struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a574aaa0d282ce6c8285ad30d43d06b4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a574aaa0d282ce6c8285ad30d43d06b4a">PersistentDataStorage</a> (std::string const &amp;applicationName)</td></tr>
@@ -115,10 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acc1b9e7b25f2d209e1b15e889af01fb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#acc1b9e7b25f2d209e1b15e889af01fb8">~PersistentDataStorage</a> ()</td></tr>
 <tr class="memdesc:acc1b9e7b25f2d209e1b15e889af01fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor: Store variables to the file.  <a href="#acc1b9e7b25f2d209e1b15e889af01fb8">More...</a><br /></td></tr>
 <tr class="separator:acc1b9e7b25f2d209e1b15e889af01fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8b332711ff83e27f3f066ffd2d4634b"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
-<tr class="memitem:aa8b332711ff83e27f3f066ffd2d4634b"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#aa8b332711ff83e27f3f066ffd2d4634b">registerVariable</a> (mtca4u::RegisterPath const &amp;name, size_t nElements)</td></tr>
-<tr class="memdesc:aa8b332711ff83e27f3f066ffd2d4634b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a variable to be stored to and retrieved from the data storage.  <a href="#aa8b332711ff83e27f3f066ffd2d4634b">More...</a><br /></td></tr>
-<tr class="separator:aa8b332711ff83e27f3f066ffd2d4634b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a854a7e6414c7dd391fc1f59ec38bf3c9"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
+<tr class="memitem:a854a7e6414c7dd391fc1f59ec38bf3c9"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a854a7e6414c7dd391fc1f59ec38bf3c9">registerVariable</a> (mtca4u::RegisterPath const &amp;name, size_t nElements, bool fromFile=false)</td></tr>
+<tr class="memdesc:a854a7e6414c7dd391fc1f59ec38bf3c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a variable to be stored to and retrieved from the data storage.  <a href="#a854a7e6414c7dd391fc1f59ec38bf3c9">More...</a><br /></td></tr>
+<tr class="separator:a854a7e6414c7dd391fc1f59ec38bf3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af20e9b672b0203a6c9a75d9cbf14bc96"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
 <tr class="memitem:af20e9b672b0203a6c9a75d9cbf14bc96"><td class="memTemplItemLeft" align="right" valign="top">const std::vector&lt; DataType &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#af20e9b672b0203a6c9a75d9cbf14bc96">retrieveValue</a> (size_t id)</td></tr>
 <tr class="memdesc:af20e9b672b0203a6c9a75d9cbf14bc96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the current value for the variable with the given ID.  <a href="#af20e9b672b0203a6c9a75d9cbf14bc96">More...</a><br /></td></tr>
@@ -165,6 +172,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a23757ce4fbdefa1da8a6733f14a52f11"><td class="memItemLeft" align="right" valign="top">std::vector&lt; mtca4u::RegisterPath &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a23757ce4fbdefa1da8a6733f14a52f11">_variableNames</a></td></tr>
 <tr class="memdesc:a23757ce4fbdefa1da8a6733f14a52f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of variable names.  <a href="#a23757ce4fbdefa1da8a6733f14a52f11">More...</a><br /></td></tr>
 <tr class="separator:a23757ce4fbdefa1da8a6733f14a52f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e4b4dab19f7a74784b6786d59c8931b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a2e4b4dab19f7a74784b6786d59c8931b">_variableRegisteredFromApp</a></td></tr>
+<tr class="memdesc:a2e4b4dab19f7a74784b6786d59c8931b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of flags whether the variable was registers from the application.  <a href="#a2e4b4dab19f7a74784b6786d59c8931b">More...</a><br /></td></tr>
+<tr class="separator:a2e4b4dab19f7a74784b6786d59c8931b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af92d37a64d746d419620ea13580e0913"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::type_info const * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#af92d37a64d746d419620ea13580e0913">_variableTypes</a></td></tr>
 <tr class="memdesc:af92d37a64d746d419620ea13580e0913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of data types.  <a href="#af92d37a64d746d419620ea13580e0913">More...</a><br /></td></tr>
 <tr class="separator:af92d37a64d746d419620ea13580e0913"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,7 +194,7 @@ Protected Attributes</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00037">37</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00040">40</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a3b5668a6083f1e6e5d959607a92beb9b"></a>
 <div class="memitem">
@@ -208,7 +218,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Type definition for the map holding the values for one specific data type. </p>
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00091">91</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00101">101</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -289,7 +299,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Generate XML tags for the given value. </p>
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00118">118</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00119">119</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 
 </div>
 </div>
@@ -317,7 +327,7 @@ template&lt;typename DataType &gt; </div>
 <p>Read the file containing the persistent data. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>TODO check if the application name is correct? </dd></dl>
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00133">133</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00134">134</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 
 </div>
 </div>
@@ -357,11 +367,11 @@ template&lt;typename DataType &gt; </div>
 
 <p>Read value from XML tags. </p>
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00185">185</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00186">186</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa8b332711ff83e27f3f066ffd2d4634b"></a>
+<a class="anchor" id="a854a7e6414c7dd391fc1f59ec38bf3c9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -377,7 +387,13 @@ template&lt;typename DataType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>nElements</em>&#160;</td>
+          <td class="paramname"><em>nElements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fromFile</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -388,9 +404,9 @@ template&lt;typename DataType &gt; </div>
 </div><div class="memdoc">
 
 <p>Register a variable to be stored to and retrieved from the data storage. </p>
-<p>The returned value is the ID which must be passed to the other functions. </p>
+<p>The returned value is the ID which must be passed to the other functions. The last argument "fromFile" should be false when the function is called from within <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a70445d795d2a69b6214d0f5d5738c3e6">UnidirectionalProcessArray&lt;T&gt;::setPersistentDataStorage()</a> etc. and true when called from within <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ae29c614248cc8509083f157058e9fd19" title="Read the file containing the persistent data. ">readFromFile()</a>. </p>
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00106">106</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00136">136</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -412,7 +428,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Retrieve the current value for the variable with the given ID. </p>
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00136">136</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00205">205</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -444,7 +460,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Notify the storage system about a new value of the variable with the given ID (as returned by registerVariable) </p>
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00143">143</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00212">212</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -523,7 +539,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Application name. </p>
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00078">78</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00083">83</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -547,7 +563,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>boost::fusion::map of the data type to the DataMap holding the values for the type </p>
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00094">94</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00104">104</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +587,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>File name to store the data to. </p>
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00081">81</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00086">86</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -596,7 +612,32 @@ template&lt;typename DataType &gt; </div>
 <p>Vector of variable names. </p>
 <p>The index is the ID of the variable. </p>
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00084">84</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00089">89</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e4b4dab19f7a74784b6786d59c8931b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;bool&gt; ChimeraTK::PersistentDataStorage::_variableRegisteredFromApp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vector of flags whether the variable was registers from the application. </p>
+<p>The index is the ID of the variable. This flag is used to clean up variables only coming from the file and are no longer present in the application. </p>
+
+<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00094">94</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -621,7 +662,7 @@ template&lt;typename DataType &gt; </div>
 <p>Vector of data types. </p>
 <p>The index is the ID of the variable. </p>
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00087">87</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00097">97</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -643,7 +684,7 @@ template&lt;typename DataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00097">97</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p>Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00107">107</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -654,7 +695,7 @@ template&lt;typename DataType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 23 2018 05:53:33 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 3 2018 05:53:24 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

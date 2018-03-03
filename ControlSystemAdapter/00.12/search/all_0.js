@@ -37,6 +37,7 @@ var searchData=
   ['_5ftriplebufferindex',['_tripleBufferIndex',['../struct_chimera_t_k_1_1_unidirectional_process_array_1_1_shared_state.html#a5a486145f65125f765534b003b65be3a',1,'ChimeraTK::UnidirectionalProcessArray::SharedState::_tripleBufferIndex()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a557301da6e96a786d10cf6bc043ce960',1,'ChimeraTK::UnidirectionalProcessArray::_tripleBufferIndex()']]],
   ['_5funiqueid',['_uniqueId',['../class_chimera_t_k_1_1_bidirectional_process_array.html#a419b62460309b045bc8c7f201d32723a',1,'ChimeraTK::BidirectionalProcessArray']]],
   ['_5fvariablenames',['_variableNames',['../class_chimera_t_k_1_1_persistent_data_storage.html#a23757ce4fbdefa1da8a6733f14a52f11',1,'ChimeraTK::PersistentDataStorage']]],
+  ['_5fvariableregisteredfromapp',['_variableRegisteredFromApp',['../class_chimera_t_k_1_1_persistent_data_storage.html#a2e4b4dab19f7a74784b6786d59c8931b',1,'ChimeraTK::PersistentDataStorage']]],
   ['_5fvariabletypes',['_variableTypes',['../class_chimera_t_k_1_1_persistent_data_storage.html#af92d37a64d746d419620ea13580e0913',1,'ChimeraTK::PersistentDataStorage']]],
   ['_5fvectorsize',['_vectorSize',['../class_chimera_t_k_1_1_unidirectional_process_array.html#a114baafc3dd43253f4c4066fc11a9aef',1,'ChimeraTK::UnidirectionalProcessArray']]],
   ['_5fversionnumber',['_versionNumber',['../class_chimera_t_k_1_1_bidirectional_process_array.html#a5bd577085b4ef364039ea61667ec1b6f',1,'ChimeraTK::BidirectionalProcessArray']]]
