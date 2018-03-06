@@ -110,6 +110,7 @@ $(document).ready(function(){initNavTree('class_properties_widget.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_properties_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">PropertiesWidget Class Reference</div>  </div>
@@ -132,20 +133,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af4e895a0977460151bcc17021b325c8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4e895a0977460151bcc17021b325c8c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clearFields</b> ()</td></tr>
 <tr class="separator:af4e895a0977460151bcc17021b325c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab878ad7db10d8b7e7fc2a93ef16400be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab878ad7db10d8b7e7fc2a93ef16400be"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setSize</b> (int nOfElements, int size=1)</td></tr>
-<tr class="separator:ab878ad7db10d8b7e7fc2a93ef16400be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab56f956ae14ff853b4644ba6e234f5a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab56f956ae14ff853b4644ba6e234f5a8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setNames</b> (std::vector&lt; std::string &gt; components)</td></tr>
-<tr class="separator:ab56f956ae14ff853b4644ba6e234f5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ff810bcb8373fc5fda9190086df3a6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ff810bcb8373fc5fda9190086df3a6d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setFixedPointInfo</b> (int width, int fracBits, int signBit)</td></tr>
-<tr class="separator:a7ff810bcb8373fc5fda9190086df3a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac90a33f09b7345c4fe3e4a41ab5daa0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac90a33f09b7345c4fe3e4a41ab5daa0e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAddress</b> (int bar, int address)</td></tr>
-<tr class="separator:ac90a33f09b7345c4fe3e4a41ab5daa0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae52ee2c4f1171e00373f141ab419993a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae52ee2c4f1171e00373f141ab419993a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateRegisterInfo</b> (boost::shared_ptr&lt; mtca4u::RegisterInfo &gt; const &amp;registerInfo)</td></tr>
+<tr class="memitem:ae52ee2c4f1171e00373f141ab419993a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_properties_widget.html#ae52ee2c4f1171e00373f141ab419993a">updateRegisterInfo</a> (boost::shared_ptr&lt; mtca4u::RegisterInfo &gt; const &amp;registerInfo)</td></tr>
 <tr class="separator:ae52ee2c4f1171e00373f141ab419993a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0c319ea86060ad8933ee482e2725df8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0c319ea86060ad8933ee482e2725df8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_properties_widget.html#ac0c319ea86060ad8933ee482e2725df8">clearDataWidgetBackground</a> ()</td></tr>
@@ -157,11 +145,40 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:adba137f054fca3c8ecedbc1bdb3ad835"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adba137f054fca3c8ecedbc1bdb3ad835"></a>
 Ui::PropertiesWidgetForm&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b></td></tr>
 <tr class="separator:adba137f054fca3c8ecedbc1bdb3ad835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7ff810bcb8373fc5fda9190086df3a6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ff810bcb8373fc5fda9190086df3a6d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFixedPointInfo</b> (int width, int fracBits, int signBit)</td></tr>
+<tr class="separator:a7ff810bcb8373fc5fda9190086df3a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0b9495f184121c0dc3233946fd0648"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c0b9495f184121c0dc3233946fd0648"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAddress</b> (int bar, int address, int sizeInBytes)</td></tr>
+<tr class="separator:a0c0b9495f184121c0dc3233946fd0648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="_properties_widget_8h_source.html#l00008">8</a> of file <a class="el" href="_properties_widget_8h_source.html">PropertiesWidget.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae52ee2c4f1171e00373f141ab419993a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PropertiesWidget::updateRegisterInfo </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; mtca4u::RegisterInfo &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>registerInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>FIXME fill numerial and fixed point information </dd></dl>
+
+<p>Definition at line <a class="el" href="_properties_widget_8cpp_source.html#l00016">16</a> of file <a class="el" href="_properties_widget_8cpp_source.html">PropertiesWidget.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/QtHardMon/src/<a class="el" href="_properties_widget_8h_source.html">PropertiesWidget.h</a></li>
 <li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/QtHardMon/src/<a class="el" href="_properties_widget_8cpp_source.html">PropertiesWidget.cpp</a></li>
 </ul>
@@ -171,7 +188,7 @@ Ui::PropertiesWidgetForm&#160;</td><td class="memItemRight" valign="bottom"><b>u
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_properties_widget.html">PropertiesWidget</a></li>
-    <li class="footer">Generated on Sat Mar 3 2018 05:53:14 for QtHardMon by
+    <li class="footer">Generated on Tue Mar 6 2018 05:53:14 for QtHardMon by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

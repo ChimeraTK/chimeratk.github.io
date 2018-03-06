@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['validate',['validate',['../class_hex_spin_box.html#abeeaed7f70a9e60ee38362e3b26e8b80',1,'HexSpinBox']]],
-  ['valuefromtext',['valueFromText',['../class_hex_spin_box.html#a8949dfd56ef5b777e80bea0c61e5f242',1,'HexSpinBox']]]
+  ['updateregisterinfo',['updateRegisterInfo',['../class_properties_widget.html#ae52ee2c4f1171e00373f141ab419993a',1,'PropertiesWidget']]]
 ];
