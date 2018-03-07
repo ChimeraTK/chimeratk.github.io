@@ -5,6 +5,8 @@ var class_properties_widget =
     [ "clearFields", "class_properties_widget.html#af4e895a0977460151bcc17021b325c8c", null ],
     [ "setAddress", "class_properties_widget.html#a0c0b9495f184121c0dc3233946fd0648", null ],
     [ "setFixedPointInfo", "class_properties_widget.html#a7ff810bcb8373fc5fda9190086df3a6d", null ],
+    [ "setShape", "class_properties_widget.html#af499d1e850fdbe8d75773620c6bfc949", null ],
+    [ "setType", "class_properties_widget.html#a28916a51d808bb7597008098c8037526", null ],
     [ "updateRegisterInfo", "class_properties_widget.html#ae52ee2c4f1171e00373f141ab419993a", null ],
     [ "ui", "class_properties_widget.html#adba137f054fca3c8ecedbc1bdb3ad835", null ]
 ];
