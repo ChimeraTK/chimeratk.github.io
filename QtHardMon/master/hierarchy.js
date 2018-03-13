@@ -8,8 +8,10 @@ var hierarchy =
     [ "HexData", "class_hex_data.html", null ],
     [ "LifetimeStandard< T >", "class_lifetime_standard.html", null ],
     [ "SingleThread< T >::Lock", "class_single_thread_1_1_lock.html", null ],
-    [ "NumericDataTableMixin", "class_numeric_data_table_mixin.html", null ],
     [ "PreferencesProvider", "class_preferences_provider.html", null ],
+    [ "QAbstractTableModel", null, [
+      [ "RegisterAccessorModel", "class_register_accessor_model.html", null ]
+    ] ],
     [ "QMainWindow", null, [
       [ "QtHardMon", "class_qt_hard_mon.html", null ]
     ] ],
@@ -24,9 +26,13 @@ var hierarchy =
     ] ],
     [ "QWidget", null, [
       [ "PlotWindow", "class_plot_window.html", null ],
-      [ "PropertiesWidget", "class_properties_widget.html", null ]
+      [ "PropertiesWidget", "class_properties_widget.html", null ],
+      [ "TestModelView", "class_test_model_view.html", null ]
     ] ],
     [ "RegisterTreeUtilities", "class_register_tree_utilities.html", null ],
+    [ "RegisterTypeAbstractor", "class_register_type_abstractor.html", [
+      [ "RegisterTypeAbstractorImpl< USER_DATA_TYPE >", "class_register_type_abstractor_impl.html", null ]
+    ] ],
     [ "SingleThread< T >", "class_single_thread.html", null ],
     [ "SingletonHolder< T, CreationPolicy, LifetimePolicy, ThreadingModel, V >", "class_singleton_holder.html", null ]
 ];

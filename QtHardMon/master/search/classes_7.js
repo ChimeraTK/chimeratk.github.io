@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['registertreeutilities',['RegisterTreeUtilities',['../class_register_tree_utilities.html',1,'']]]
+  ['singlethread',['SingleThread',['../class_single_thread.html',1,'']]],
+  ['singletonholder',['SingletonHolder',['../class_singleton_holder.html',1,'']]]
 ];

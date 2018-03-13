@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['singlethread',['SingleThread',['../class_single_thread.html',1,'']]],
-  ['singletonholder',['SingletonHolder',['../class_singleton_holder.html',1,'']]]
+  ['testmodelview',['TestModelView',['../class_test_model_view.html',1,'']]]
 ];
