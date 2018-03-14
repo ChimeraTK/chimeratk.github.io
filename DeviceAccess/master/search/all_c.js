@@ -30,7 +30,7 @@ var searchData=
   ['metadata_5fend',['metadata_end',['../class_chimera_t_k_1_1_register_catalogue.html#a2f7770571ced6c490b0896bbf031f290',1,'ChimeraTK::RegisterCatalogue::metadata_end()'],['../class_chimera_t_k_1_1_register_catalogue.html#ad0f63297a8a6c3cdffabf5aa9fead587',1,'ChimeraTK::RegisterCatalogue::metadata_end() const ']]],
   ['metadata_5fiterator',['metadata_iterator',['../class_chimera_t_k_1_1_register_catalogue.html#a3160a8c424fa7e0aa6c99dbc450716c4',1,'ChimeraTK::RegisterCatalogue']]],
   ['mode_5frw',['mode_rw',['../structdevice__rw.html#afed29415714fb813dea1c933ef904a2c',1,'device_rw']]],
-  ['module',['module',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aa203d6ed4514692e915999e0c7eed203',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
+  ['module',['module',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ac78e044a2c2f7cafaa35d08fb2d59a24',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
   ['mtca4u',['mtca4u',['../namespacemtca4u.html',1,'']]],
   ['mtca4u_5flmap_5feditor',['mtca4u_lmap_editor',['../namespacemtca4u__lmap__editor.html',1,'']]],
   ['mtca4u_5flmap_5feditor_2epy',['mtca4u_lmap_editor.py',['../mtca4u__lmap__editor_8py.html',1,'']]],
