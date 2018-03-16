@@ -112,6 +112,8 @@ $(document).ready(function(){initNavTree('class_qt_hard_mon.html','');});
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_qt_hard_mon-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -132,13 +134,20 @@ Inheritance diagram for QtHardMon:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon_1_1_device_list_item.html">DeviceListItem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper class to store listWidgetItems which also contain the dRegisterInfo and ptrmapFile information.  <a href="class_qt_hard_mon_1_1_device_list_item.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
 <tr class="memitem:a50b33bced6902db0d43af7a168cf79d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#a50b33bced6902db0d43af7a168cf79d6">read</a> (bool autoRead=false)</td></tr>
 <tr class="memdesc:a50b33bced6902db0d43af7a168cf79d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read register from device.  <a href="#a50b33bced6902db0d43af7a168cf79d6">More...</a><br /></td></tr>
 <tr class="separator:a50b33bced6902db0d43af7a168cf79d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c604ea8f93615e8856e97e4ebe70e3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#a3c604ea8f93615e8856e97e4ebe70e3f">write</a> ()</td></tr>
-<tr class="memdesc:a3c604ea8f93615e8856e97e4ebe70e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read register to device.  <a href="#a3c604ea8f93615e8856e97e4ebe70e3f">More...</a><br /></td></tr>
+<tr class="memitem:a3c604ea8f93615e8856e97e4ebe70e3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c604ea8f93615e8856e97e4ebe70e3f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#a3c604ea8f93615e8856e97e4ebe70e3f">write</a> ()</td></tr>
+<tr class="memdesc:a3c604ea8f93615e8856e97e4ebe70e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read register to device. <br /></td></tr>
 <tr class="separator:a3c604ea8f93615e8856e97e4ebe70e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -164,6 +173,59 @@ Ui::QtHardMonForm&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 <tr class="memdesc:aca92d604830ae1fac015c79148f6367e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The GUI form which hold all the widgets. <br /></td></tr>
 <tr class="separator:aca92d604830ae1fac015c79148f6367e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a81efa5e61c35f932af1026528047e2e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81efa5e61c35f932af1026528047e2e3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#a81efa5e61c35f932af1026528047e2e3">writeConfig</a> (QString const &amp;fileName)</td></tr>
+<tr class="memdesc:a81efa5e61c35f932af1026528047e2e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the config to the given file name. <br /></td></tr>
+<tr class="separator:a81efa5e61c35f932af1026528047e2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da296206e6ab06385c7c2c58cb73e2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5da296206e6ab06385c7c2c58cb73e2b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#a5da296206e6ab06385c7c2c58cb73e2b">closeDevice</a> ()</td></tr>
+<tr class="memdesc:a5da296206e6ab06385c7c2c58cb73e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the device and disable the access buttons. <br /></td></tr>
+<tr class="separator:a5da296206e6ab06385c7c2c58cb73e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee6de884b40cc97609ad5241a3db225"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeee6de884b40cc97609ad5241a3db225"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#aeee6de884b40cc97609ad5241a3db225">openDevice</a> (std::string const &amp;deviceFileName)</td></tr>
+<tr class="memdesc:aeee6de884b40cc97609ad5241a3db225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the device and update the GUI accordingly. <br /></td></tr>
+<tr class="separator:aeee6de884b40cc97609ad5241a3db225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bebae0b642d5aab09fc9b20deddef15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bebae0b642d5aab09fc9b20deddef15"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>extractFileNameFromPath</b> (const std::string &amp;)</td></tr>
+<tr class="separator:a6bebae0b642d5aab09fc9b20deddef15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a103483a412e778315f21afefefacd272"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a103483a412e778315f21afefefacd272"></a>
+mtca4u::Device&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#a103483a412e778315f21afefefacd272">currentDevice_</a></td></tr>
+<tr class="memdesc:a103483a412e778315f21afefefacd272"><td class="mdescLeft">&#160;</td><td class="mdescRight">The instance of the device which is being accessed. <br /></td></tr>
+<tr class="separator:a103483a412e778315f21afefefacd272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c1a0c1c999e078ce93bbdcd3c20411"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35c1a0c1c999e078ce93bbdcd3c20411"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#a35c1a0c1c999e078ce93bbdcd3c20411">dmapFileName_</a></td></tr>
+<tr class="memdesc:a35c1a0c1c999e078ce93bbdcd3c20411"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file name of the last opened dmap file. <br /></td></tr>
+<tr class="separator:a35c1a0c1c999e078ce93bbdcd3c20411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290a03165229e164c8fb42ede8968c83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a290a03165229e164c8fb42ede8968c83"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#a290a03165229e164c8fb42ede8968c83">configFileName_</a></td></tr>
+<tr class="memdesc:a290a03165229e164c8fb42ede8968c83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the config file (last saved or read) <br /></td></tr>
+<tr class="separator:a290a03165229e164c8fb42ede8968c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69fa11debc8ac16f46a2fc126ee4fd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab69fa11debc8ac16f46a2fc126ee4fd1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#ab69fa11debc8ac16f46a2fc126ee4fd1">insideReadOrWrite_</a></td></tr>
+<tr class="memdesc:ab69fa11debc8ac16f46a2fc126ee4fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter flag to indicate if the read or write function is being executed. <br /></td></tr>
+<tr class="separator:ab69fa11debc8ac16f46a2fc126ee4fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab064bc2e14df9e49d4134aef6d3d09a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab064bc2e14df9e49d4134aef6d3d09a1"></a>
+<a class="el" href="class_register_accessor_model.html">RegisterAccessorModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#ab064bc2e14df9e49d4134aef6d3d09a1">currentAccessorModel_</a></td></tr>
+<tr class="memdesc:ab064bc2e14df9e49d4134aef6d3d09a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The accessor model for the current register. <br /></td></tr>
+<tr class="separator:ab064bc2e14df9e49d4134aef6d3d09a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee9c01471f3a88aa48be67145e1a40e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ee9c01471f3a88aa48be67145e1a40e"></a>
+<a class="el" href="class_custom_delegates.html">CustomDelegates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#a5ee9c01471f3a88aa48be67145e1a40e">customDelegate_</a></td></tr>
+<tr class="memdesc:a5ee9c01471f3a88aa48be67145e1a40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The delegate for the values table view. <br /></td></tr>
+<tr class="separator:a5ee9c01471f3a88aa48be67145e1a40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf98cabc4a7c57c5e45696bac4d9005e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf98cabc4a7c57c5e45696bac4d9005e"></a>
+<a class="el" href="class_qt_hard_mon_1_1_device_list_item.html">DeviceListItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#abf98cabc4a7c57c5e45696bac4d9005e">_currentDeviceListItem</a></td></tr>
+<tr class="memdesc:abf98cabc4a7c57c5e45696bac4d9005e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the currently selected deviceListItem. <br /></td></tr>
+<tr class="separator:abf98cabc4a7c57c5e45696bac4d9005e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ccc9ef5b6ceabb169646b1767c4c40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67ccc9ef5b6ceabb169646b1767c4c40"></a>
+<a class="el" href="class_plot_window.html">PlotWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#a67ccc9ef5b6ceabb169646b1767c4c40">_plotWindow</a></td></tr>
+<tr class="memdesc:a67ccc9ef5b6ceabb169646b1767c4c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">The plot window. <br /></td></tr>
+<tr class="separator:a67ccc9ef5b6ceabb169646b1767c4c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a9a209df8a0320461906b6dfe4643d187"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a209df8a0320461906b6dfe4643d187"></a>
@@ -173,7 +235,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PlotWindow</b></td><
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The QtHadMon class which implements all the GUI functionality. </p>
 
-<p>Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00020">20</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
+<p>Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00021">21</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac50e3f7f4332350413f94105d68a2d86"></a>
 <div class="memitem">
@@ -230,7 +292,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PlotWindow</b></td><
 <p>Load a dmap file and return whether loading was successful. </p>
 <p>The return value can safely be ignored if the information is not required in the programme flow. </p>
 
-<p>Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00164">164</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00168">168</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
 
 </div>
 </div>
@@ -251,7 +313,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PlotWindow</b></td><
 <p>This method checks if <a class="el" href="class_qt_hard_mon.html" title="The QtHadMon class which implements all the GUI functionality. ">QtHardMon</a> executable has been called with a valid configuration or dmap file as an argument. </p>
 <p>It checks the extension of the passed in argument to distinguish the two file types. Depending on the file type passed, the method invokes either loadConfig or loadBoards internally. A pop up window with a warning is displayed if the fileName argument provided does not end with extension ".dmap" or ".cfg" </p>
 
-<p>Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00884">884</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00907">907</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
 
 </div>
 </div>
@@ -278,37 +340,10 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PlotWindow</b></td><
 </div><div class="memdoc">
 
 <p>Read register from device. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>FIXME I disabled reading when opening a devide. This should not happen anyway. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>FIXME I disabled reading when opening a devide. This should not happen anyway. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>FIXME: what does the write button have to do with read??? This should not be here! </dd></dl>
 
-<p>Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00334">334</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3c604ea8f93615e8856e97e4ebe70e3f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QtHardMon::write </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Read register to device. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>FIXME Writing mechanism has to change. Not implemented </dd></dl>
-
-<p>Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00382">382</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00353">353</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
 
 </div>
 </div>
@@ -322,7 +357,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PlotWindow</b></td><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_qt_hard_mon.html">QtHardMon</a></li>
-    <li class="footer">Generated on Tue Mar 13 2018 05:53:14 for QtHardMon by
+    <li class="footer">Generated on Fri Mar 16 2018 05:53:13 for QtHardMon by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

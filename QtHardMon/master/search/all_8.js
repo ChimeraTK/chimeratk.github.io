@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['read',['read',['../class_config_file_reader_writer.html#a34d16fc0cf15579b0569f47aa6839c48',1,'ConfigFileReaderWriter::read()'],['../class_qt_hard_mon.html#a50b33bced6902db0d43af7a168cf79d6',1,'QtHardMon::read()']]],
-  ['registeraccessormodel',['RegisterAccessorModel',['../class_register_accessor_model.html',1,'']]],
-  ['registertreeutilities',['RegisterTreeUtilities',['../class_register_tree_utilities.html',1,'']]],
-  ['registertypeabstractor',['RegisterTypeAbstractor',['../class_register_type_abstractor.html',1,'']]],
-  ['registertypeabstractorimpl',['RegisterTypeAbstractorImpl',['../class_register_type_abstractor_impl.html',1,'']]]
+  ['parseargument',['parseArgument',['../class_qt_hard_mon.html#a57779de6afbaaab4306780c25aaa2073',1,'QtHardMon']]],
+  ['plot',['plot',['../class_plot_window.html#a49dc7f1337911faf93070c7884e5de6d',1,'PlotWindow']]],
+  ['plotafterreadischecked',['plotAfterReadIsChecked',['../class_plot_window.html#a4d204a79c2838421b8fcf77740d86a0f',1,'PlotWindow']]],
+  ['plotwindow',['PlotWindow',['../class_plot_window.html',1,'PlotWindow'],['../class_plot_window.html#a30a8de1065440ec35e570ee1442a41e4',1,'PlotWindow::PlotWindow()']]],
+  ['plotwindowclosed',['plotWindowClosed',['../class_plot_window.html#a7b262123ffbf083061b084989a8a9855',1,'PlotWindow']]],
+  ['preferencesprovider',['PreferencesProvider',['../class_preferences_provider.html',1,'']]],
+  ['propertieswidget',['PropertiesWidget',['../class_properties_widget.html',1,'']]]
 ];

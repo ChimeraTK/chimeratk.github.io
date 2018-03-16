@@ -12,6 +12,9 @@ var hierarchy =
     [ "QAbstractTableModel", null, [
       [ "RegisterAccessorModel", "class_register_accessor_model.html", null ]
     ] ],
+    [ "QListWidgetItem", null, [
+      [ "QtHardMon::DeviceListItem", "class_qt_hard_mon_1_1_device_list_item.html", null ]
+    ] ],
     [ "QMainWindow", null, [
       [ "QtHardMon", "class_qt_hard_mon.html", null ]
     ] ],
