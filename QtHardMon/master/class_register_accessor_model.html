@@ -128,6 +128,9 @@ Inheritance diagram for RegisterAccessorModel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
+<tr class="memitem:af5343774a8fd7b4291f225d89c72a050"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5343774a8fd7b4291f225d89c72a050"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setChannelNumber</b> (unsigned int channelNumber)</td></tr>
+<tr class="separator:af5343774a8fd7b4291f225d89c72a050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88d345d53cc46d5955577244df2cb321"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88d345d53cc46d5955577244df2cb321"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> ()</td></tr>
 <tr class="separator:a88d345d53cc46d5955577244df2cb321"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,9 +173,12 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aadc46f44e3065524562a86598ed4e09f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadc46f44e3065524562a86598ed4e09f"></a>
 std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_abstractAccessor</b></td></tr>
 <tr class="separator:aadc46f44e3065524562a86598ed4e09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94efa1c87189083bc1c5bcca0bd37e9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94efa1c87189083bc1c5bcca0bd37e9e"></a>
-std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_isModified</b></td></tr>
-<tr class="separator:a94efa1c87189083bc1c5bcca0bd37e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80e24d64223adfd4d1e16270118d44e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80e24d64223adfd4d1e16270118d44e4"></a>
+std::vector&lt; std::vector&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_isModified</b></td></tr>
+<tr class="separator:a80e24d64223adfd4d1e16270118d44e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ead1327e583ca921fe7233b33d420cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ead1327e583ca921fe7233b33d420cb"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_channelNumber</b></td></tr>
+<tr class="separator:a4ead1327e583ca921fe7233b33d420cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -187,7 +193,7 @@ std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_register_accessor_model.html">RegisterAccessorModel</a></li>
-    <li class="footer">Generated on Fri Mar 16 2018 05:53:13 for QtHardMon by
+    <li class="footer">Generated on Sat Mar 17 2018 05:53:19 for QtHardMon by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

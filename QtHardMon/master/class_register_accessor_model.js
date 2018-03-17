@@ -8,8 +8,10 @@ var class_register_accessor_model =
     [ "headerData", "class_register_accessor_model.html#a8224947e6c2a910104774ba006545215", null ],
     [ "read", "class_register_accessor_model.html#a88d345d53cc46d5955577244df2cb321", null ],
     [ "rowCount", "class_register_accessor_model.html#a2ce063127f54c5058fa5b53c689bfc9b", null ],
+    [ "setChannelNumber", "class_register_accessor_model.html#af5343774a8fd7b4291f225d89c72a050", null ],
     [ "setData", "class_register_accessor_model.html#ae933c8e8000caf814a1ba29c247af673", null ],
     [ "write", "class_register_accessor_model.html#a55f664c1735bc2a2daf5255a40ca0211", null ],
     [ "_abstractAccessor", "class_register_accessor_model.html#aadc46f44e3065524562a86598ed4e09f", null ],
-    [ "_isModified", "class_register_accessor_model.html#a94efa1c87189083bc1c5bcca0bd37e9e", null ]
+    [ "_channelNumber", "class_register_accessor_model.html#a4ead1327e583ca921fe7233b33d420cb", null ],
+    [ "_isModified", "class_register_accessor_model.html#a80e24d64223adfd4d1e16270118d44e4", null ]
 ];
