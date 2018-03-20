@@ -30,7 +30,7 @@ var searchData=
   ['getmapfile',['getMapFile',['../class_chimera_t_k_1_1_d_map_files_parser.html#a001f9f610ed2079b9fb5c17da388fb12',1,'ChimeraTK::DMapFilesParser']]],
   ['getmapfilename',['getMapFileName',['../class_chimera_t_k_1_1_register_info_map.html#abeefe64ff8948b880c8f58e34df1de07',1,'ChimeraTK::RegisterInfoMap']]],
   ['getmapfilesize',['getMapFileSize',['../class_chimera_t_k_1_1_register_info_map.html#a7c5a400bb61fb95225210138d3512517',1,'ChimeraTK::RegisterInfoMap']]],
-  ['getmetadata',['getMetadata',['../class_chimera_t_k_1_1_register_catalogue.html#a3a5f8bafd1f87c96a33452b3e27adf41',1,'ChimeraTK::RegisterCatalogue::getMetadata()'],['../class_chimera_t_k_1_1_register_info_map.html#a4694b72dce9f280090181c4fe2bf5fce',1,'ChimeraTK::RegisterInfoMap::getMetaData()']]],
+  ['getmetadata',['getMetaData',['../class_chimera_t_k_1_1_register_info_map.html#a4694b72dce9f280090181c4fe2bf5fce',1,'ChimeraTK::RegisterInfoMap::getMetaData()'],['../class_chimera_t_k_1_1_register_catalogue.html#a3a5f8bafd1f87c96a33452b3e27adf41',1,'ChimeraTK::RegisterCatalogue::getMetadata()']]],
   ['getname',['getName',['../class_chimera_t_k_1_1_transfer_element_abstractor.html#a246a12b204eb10d6b9e149afb2549766',1,'ChimeraTK::TransferElementAbstractor::getName()'],['../class_chimera_t_k_1_1_transfer_element.html#a982337d1951826bb7805f52eaf360793',1,'ChimeraTK::TransferElement::getName()']]],
   ['getnbits',['getNBits',['../class_chimera_t_k_1_1_fixed_point_converter.html#a89b8ea5d4ed1d331c71c35abc17c0e4c',1,'ChimeraTK::FixedPointConverter']]],
   ['getnchannels',['getNChannels',['../class_chimera_t_k_1_1_two_d_register_accessor.html#a0d85620b83c594e37c6502f3d043d32a',1,'ChimeraTK::TwoDRegisterAccessor']]],

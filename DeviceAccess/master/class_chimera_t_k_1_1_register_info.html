@@ -139,6 +139,16 @@ Public Types</h2></td></tr>
  }<tr class="memdesc:a860f659821e8bfab2804820bb42bb9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum for the fundamental data types.  <a href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a860f659821e8bfab2804820bb42bb9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a823719f380031a30004fa7da847ebda2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info.html#a823719f380031a30004fa7da847ebda2">RawDataType</a> { <a class="el" href="class_chimera_t_k_1_1_register_info.html#a823719f380031a30004fa7da847ebda2a334c4a4c42fdb79d7ebc3e73b517e6f8">RawDataType::none</a>, 
+<a class="el" href="class_chimera_t_k_1_1_register_info.html#a823719f380031a30004fa7da847ebda2a0241adbbd83925f051b694d40f02747f">RawDataType::int32</a>
+ }<tr class="memdesc:a823719f380031a30004fa7da847ebda2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum for the raw data type.  <a href="class_chimera_t_k_1_1_register_info.html#a823719f380031a30004fa7da847ebda2">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a823719f380031a30004fa7da847ebda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259511f442c9bafeebf1c6d202acd214"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info.html#a259511f442c9bafeebf1c6d202acd214">TransportLayerRawType</a> { <a class="el" href="class_chimera_t_k_1_1_register_info.html#a259511f442c9bafeebf1c6d202acd214a334c4a4c42fdb79d7ebc3e73b517e6f8">TransportLayerRawType::none</a>, 
+<a class="el" href="class_chimera_t_k_1_1_register_info.html#a259511f442c9bafeebf1c6d202acd214a0241adbbd83925f051b694d40f02747f">TransportLayerRawType::int32</a>
+ }<tr class="memdesc:a259511f442c9bafeebf1c6d202acd214"><td class="mdescLeft">&#160;</td><td class="mdescRight">The raw data type on the transport layer.  <a href="class_chimera_t_k_1_1_register_info.html#a259511f442c9bafeebf1c6d202acd214">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a259511f442c9bafeebf1c6d202acd214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -214,6 +224,81 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a823719f380031a30004fa7da847ebda2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_chimera_t_k_1_1_register_info.html#a823719f380031a30004fa7da847ebda2">ChimeraTK::RegisterInfo::RawDataType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enum for the raw data type. </p>
+<p>This is the data conversion from 'coocked' to the raw data type on the device. This conversion does not change the shape of the data but descibes the data type of a single data point.</p>
+<ul>
+<li>Example 1:<br />
+ If the raw data on the transport layer is multiplexed with fixed point conversion, this only describes what the raw type of the fixed point conversion is, but not the multiplexing. </li>
+<li>Example 2: (possible, currently not implemented scenario)<br />
+ If the raw data on the transport layer is text and the data words have to be interpreted from the received string, the raw data will only be the text snippet representing the one data point.</li>
+</ul>
+<p>Most backends will have type none, i.e. no raw data conversion available. At the moment only the NumericalAddressedBackend has int32_t raw transfer with raw/coocked conversion. Can be extended if needed, but this partily breaks abstraction because it exposes details of the (transport) layer below. It should be avoided if possible. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a823719f380031a30004fa7da847ebda2a334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a823719f380031a30004fa7da847ebda2a0241adbbd83925f051b694d40f02747f"></a>int32&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00046">46</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a259511f442c9bafeebf1c6d202acd214"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_chimera_t_k_1_1_register_info.html#a259511f442c9bafeebf1c6d202acd214">ChimeraTK::RegisterInfo::TransportLayerRawType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The raw data type on the transport layer. </p>
+<p>This is always a 1D array of the specific data type. This raw transfer might contain for more than one register.</p>
+<p>Examples: </p><ul>
+<li>The multiplexed data of a 2D array </li>
+<li>A text string containing data for multiple scalars which are mapped to different registers </li>
+<li>The byte sequence of a "struct" with data for multiple registers of different data types</li>
+</ul>
+<p>Notice: This enum is not used anywhere yet. Transport layer data cannot be accessed with the current implementation. This data type is put here for conceputal completeness. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a259511f442c9bafeebf1c6d202acd214a334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a259511f442c9bafeebf1c6d202acd214a0241adbbd83925f051b694d40f02747f"></a>int32&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00059">59</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a92a66342bceca280cef3846e74b051c6"></a>
 <div class="memitem">
@@ -238,7 +323,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Virtual destructor. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00092">92</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00132">132</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +487,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Return iterators for the list of plugins. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00143">143</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00183">183</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -427,7 +512,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00148">148</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00188">188</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -452,7 +537,7 @@ Protected Attributes</h2></td></tr>
 
 <p>list of plugins </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00157">157</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00197">197</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -462,7 +547,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 17 2018 05:53:14 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 20 2018 05:53:12 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
