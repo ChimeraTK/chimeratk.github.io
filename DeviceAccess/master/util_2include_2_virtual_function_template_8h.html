@@ -136,7 +136,7 @@ Macros</h2></td></tr>
 <tr class="memitem:ad55f079dbae8d46794e4a68782511746"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_virtual_function_template_8h.html#ad55f079dbae8d46794e4a68782511746">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER</a>(className,  functionName,  numberOfArguments)</td></tr>
 <tr class="memdesc:ad55f079dbae8d46794e4a68782511746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the filler class used inside the FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE macro to fill the vtable of a virtual function template defined with DEFINE_VIRTUAL_FUNCTION_TEMPLATE.  <a href="#ad55f079dbae8d46794e4a68782511746">More...</a><br /></td></tr>
 <tr class="separator:ad55f079dbae8d46794e4a68782511746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5e6eeda5f812bf87b6da853d103ee37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_virtual_function_template_8h.html#ab5e6eeda5f812bf87b6da853d103ee37">FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a>(functionName)&#160;&#160;&#160;boost::fusion::for_each(functionName ## _vtable.table, functionName ## _vtable_filler(this))</td></tr>
+<tr class="memitem:ab5e6eeda5f812bf87b6da853d103ee37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_virtual_function_template_8h.html#ab5e6eeda5f812bf87b6da853d103ee37">FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a>(functionName)&#160;&#160;&#160;boost::fusion::for_each(this-&gt;functionName ## _vtable.table, functionName ## _vtable_filler(this))</td></tr>
 <tr class="memdesc:ab5e6eeda5f812bf87b6da853d103ee37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the vtable of a virtual function template defined with DEFINE_VIRTUAL_FUNCTION_TEMPLATE.  <a href="#ab5e6eeda5f812bf87b6da853d103ee37">More...</a><br /></td></tr>
 <tr class="separator:ab5e6eeda5f812bf87b6da853d103ee37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -404,7 +404,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">functionName</td><td>)</td>
-          <td>&#160;&#160;&#160;boost::fusion::for_each(functionName ## _vtable.table, functionName ## _vtable_filler(this))</td>
+          <td>&#160;&#160;&#160;boost::fusion::for_each(this-&gt;functionName ## _vtable.table, functionName ## _vtable_filler(this))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -419,7 +419,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 21 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 22 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
