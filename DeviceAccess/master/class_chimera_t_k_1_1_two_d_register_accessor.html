@@ -135,6 +135,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abe1963a87e93eec7098a85f4513cd25a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html#abe1963a87e93eec7098a85f4513cd25a">getNElementsPerChannel</a> () const </td></tr>
 <tr class="memdesc:abe1963a87e93eec7098a85f4513cd25a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of elements/samples per channel.  <a href="#abe1963a87e93eec7098a85f4513cd25a">More...</a><br /></td></tr>
 <tr class="separator:abe1963a87e93eec7098a85f4513cd25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaef16c237d9f9c1c3ad981a10850446"><td class="memTemplParams" colspan="2">template&lt;typename COOCKED_TYPE &gt; </td></tr>
+<tr class="memitem:acaef16c237d9f9c1c3ad981a10850446"><td class="memTemplItemLeft" align="right" valign="top">COOCKED_TYPE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html#acaef16c237d9f9c1c3ad981a10850446">getAsCoocked</a> (unsigned int channel, unsigned int sample)</td></tr>
+<tr class="memdesc:acaef16c237d9f9c1c3ad981a10850446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the coocked values in case the accessor is a raw accessor (which does not do data conversion).  <a href="#acaef16c237d9f9c1c3ad981a10850446">More...</a><br /></td></tr>
+<tr class="separator:acaef16c237d9f9c1c3ad981a10850446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a859bcd14b1888d30f6d5c7d8888dd"><td class="memTemplParams" colspan="2">template&lt;typename COOCKED_TYPE &gt; </td></tr>
+<tr class="memitem:a99a859bcd14b1888d30f6d5c7d8888dd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html#a99a859bcd14b1888d30f6d5c7d8888dd">setAsCoocked</a> (unsigned int channel, unsigned int sample, COOCKED_TYPE value)</td></tr>
+<tr class="memdesc:a99a859bcd14b1888d30f6d5c7d8888dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the coocked values in case the accessor is a raw accessor (which does not do data conversion).  <a href="#a99a859bcd14b1888d30f6d5c7d8888dd">More...</a><br /></td></tr>
+<tr class="separator:a99a859bcd14b1888d30f6d5c7d8888dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a105888c2d1fd28f7b960c3d05a9a90f4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html#a105888c2d1fd28f7b960c3d05a9a90f4">getNumberOfDataSequences</a> () const </td></tr>
 <tr class="memdesc:a105888c2d1fd28f7b960c3d05a9a90f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">DEPRECATED DO NOT USE.  <a href="#a105888c2d1fd28f7b960c3d05a9a90f4">More...</a><br /></td></tr>
 <tr class="separator:a105888c2d1fd28f7b960c3d05a9a90f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -319,6 +327,49 @@ template&lt;class UserType&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="acaef16c237d9f9c1c3ad981a10850446"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UserType&gt; </div>
+<div class="memtemplate">
+template&lt;typename COOCKED_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">COOCKED_TYPE <a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html">ChimeraTK::TwoDRegisterAccessor</a>&lt; UserType &gt;::getAsCoocked </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>sample</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the coocked values in case the accessor is a raw accessor (which does not do data conversion). </p>
+<p>This returns the converted data from the use buffer. It does not do any read or write transfer. </p>
+
+<p>Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00059">59</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0d85620b83c594e37c6502f3d043d32a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -403,7 +454,7 @@ template&lt;class UserType&gt; </div>
 <p>DEPRECATED DO NOT USE. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000068">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html#a0d85620b83c594e37c6502f3d043d32a" title="Return the number of channels (formerly called sequences) ">getNChannels()</a> instead! </dd></dl>
 
-<p>Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00067">67</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00082">82</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -433,7 +484,7 @@ template&lt;class UserType&gt; </div>
 <p>DEPRECATED DO NOT USE. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000067">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html#a0d85620b83c594e37c6502f3d043d32a" title="Return the number of channels (formerly called sequences) ">getNChannels()</a> instead! </dd></dl>
 
-<p>Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00059">59</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00074">74</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -463,7 +514,7 @@ template&lt;class UserType&gt; </div>
 <p>DEPRECATED DO NOT USE. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000069">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html#abe1963a87e93eec7098a85f4513cd25a" title="Return number of elements/samples per channel. ">getNElementsPerChannel()</a> instead! </dd></dl>
 
-<p>Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00075">75</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00090">90</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -527,6 +578,55 @@ template&lt;class UserType&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a99a859bcd14b1888d30f6d5c7d8888dd"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UserType&gt; </div>
+<div class="memtemplate">
+template&lt;typename COOCKED_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html">ChimeraTK::TwoDRegisterAccessor</a>&lt; UserType &gt;::setAsCoocked </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>sample</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">COOCKED_TYPE&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the coocked values in case the accessor is a raw accessor (which does not do data conversion). </p>
+<p>This converts to raw and writes the data to the user buffer. It does not do any read or write transfer. </p>
+
+<p>Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00067">67</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
 <a class="anchor" id="a5bdf5501b097a054a0be0bd5c8332ef3"></a>
 <div class="memitem">
@@ -548,7 +648,7 @@ template&lt;class UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00079">79</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00094">94</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -559,7 +659,7 @@ template&lt;class UserType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 22 2018 05:53:14 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 23 2018 05:53:14 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

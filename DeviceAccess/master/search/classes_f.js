@@ -1,6 +1,7 @@
 var searchData=
 [
   ['scalarregisteraccessor',['ScalarRegisterAccessor',['../class_chimera_t_k_1_1_scalar_register_accessor.html',1,'ChimeraTK']]],
+  ['scalarregisteraccessor_3c_20std_3a_3astring_20_3e',['ScalarRegisterAccessor&lt; std::string &gt;',['../class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html',1,'ChimeraTK']]],
   ['scaleregisterplugin',['ScaleRegisterPlugin',['../class_chimera_t_k_1_1_scale_register_plugin.html',1,'ChimeraTK']]],
   ['scaleregisterpluginregisteraccessor',['ScaleRegisterPluginRegisterAccessor',['../class_chimera_t_k_1_1_scale_register_plugin_register_accessor.html',1,'ChimeraTK']]],
   ['scaleregisterpluginregisterer',['ScaleRegisterPluginRegisterer',['../class_chimera_t_k_1_1_scale_register_plugin_registerer.html',1,'ChimeraTK']]],

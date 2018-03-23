@@ -92,6 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">SupportedUserTypes.h File Reference</div>  </div>
@@ -113,6 +114,13 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespace_chimera_t_k"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides storage object for devices descriptions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a8256edfa28cb73e5de13c92e1920369d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_supported_user_types_8h.html#a8256edfa28cb73e5de13c92e1920369d">DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a>(TemplateClass)</td></tr>
+<tr class="separator:a8256edfa28cb73e5de13c92e1920369d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe698a21f62a02296a12b08433b980dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_supported_user_types_8h.html#abe698a21f62a02296a12b08433b980dc">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a>(TemplateClass)</td></tr>
+<tr class="separator:abe698a21f62a02296a12b08433b980dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a185ebe42bffba27324f73f5e3449f043"><td class="memItemLeft" align="right" valign="top">typedef boost::fusion::map&lt; boost::fusion::pair&lt; int8_t, int8_t &gt;, boost::fusion::pair&lt; uint8_t, uint8_t &gt;, boost::fusion::pair&lt; int16_t, int16_t &gt;, boost::fusion::pair&lt; uint16_t, uint16_t &gt;, boost::fusion::pair&lt; int32_t, int32_t &gt;, boost::fusion::pair&lt; uint32_t, uint32_t &gt;, boost::fusion::pair&lt; int64_t, int64_t &gt;, boost::fusion::pair&lt; uint64_t, uint64_t &gt;, boost::fusion::pair&lt; float, float &gt;, boost::fusion::pair&lt; double, double &gt;, boost::fusion::pair&lt; std::string, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a185ebe42bffba27324f73f5e3449f043">ChimeraTK::userTypeMap</a></td></tr>
@@ -123,10 +131,47 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:a959b08f95c0a142ed6df141111fbd187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of UserType to a single type.  <a href="namespace_chimera_t_k.html#a959b08f95c0a142ed6df141111fbd187">More...</a><br /></td></tr>
 <tr class="separator:a959b08f95c0a142ed6df141111fbd187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a8256edfa28cb73e5de13c92e1920369d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TemplateClass</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;int8_t&gt;;  \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;uint8_t&gt;;  \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;int16_t&gt;; \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;uint16_t&gt;; \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;int32_t&gt;; \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;uint32_t&gt;; \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;int64_t&gt;; \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;uint64_t&gt;; \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;float&gt;;   \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;double&gt;;  \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;std::string&gt;</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00067">67</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abe698a21f62a02296a12b08433b980dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TemplateClass</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;int8_t&gt;;  \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;uint8_t&gt;;  \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;int16_t&gt;; \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;uint16_t&gt;; \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;int32_t&gt;; \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;uint32_t&gt;; \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;int64_t&gt;; \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;uint64_t&gt;; \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;float&gt;;   \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;double&gt;;  \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;std::string&gt;</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00080">80</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 22 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 23 2018 05:53:14 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

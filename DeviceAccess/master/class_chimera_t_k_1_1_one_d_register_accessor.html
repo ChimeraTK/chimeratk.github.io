@@ -175,6 +175,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b00d744f58710d077ec0aecc9e76f6e"><td class="memItemLeft" align="right" valign="top">UserType *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html#a1b00d744f58710d077ec0aecc9e76f6e">data</a> ()</td></tr>
 <tr class="memdesc:a1b00d744f58710d077ec0aecc9e76f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a direct pointer to the memory buffer storng the elements.  <a href="#a1b00d744f58710d077ec0aecc9e76f6e">More...</a><br /></td></tr>
 <tr class="separator:a1b00d744f58710d077ec0aecc9e76f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a282523cd56f221eb1b2f33272bd223"><td class="memTemplParams" colspan="2">template&lt;typename COOCKED_TYPE &gt; </td></tr>
+<tr class="memitem:a0a282523cd56f221eb1b2f33272bd223"><td class="memTemplItemLeft" align="right" valign="top">COOCKED_TYPE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html#a0a282523cd56f221eb1b2f33272bd223">getAsCoocked</a> (unsigned int sample)</td></tr>
+<tr class="memdesc:a0a282523cd56f221eb1b2f33272bd223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the coocked values in case the accessor is a raw accessor (which does not do data conversion).  <a href="#a0a282523cd56f221eb1b2f33272bd223">More...</a><br /></td></tr>
+<tr class="separator:a0a282523cd56f221eb1b2f33272bd223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032f6a1a8a2cc58ca6b9cfb56a95b455"><td class="memTemplParams" colspan="2">template&lt;typename COOCKED_TYPE &gt; </td></tr>
+<tr class="memitem:a032f6a1a8a2cc58ca6b9cfb56a95b455"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html#a032f6a1a8a2cc58ca6b9cfb56a95b455">setAsCoocked</a> (unsigned int sample, COOCKED_TYPE value)</td></tr>
+<tr class="memdesc:a032f6a1a8a2cc58ca6b9cfb56a95b455"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the coocked values in case the accessor is a raw accessor (which does not do data conversion).  <a href="#a032f6a1a8a2cc58ca6b9cfb56a95b455">More...</a><br /></td></tr>
+<tr class="separator:a032f6a1a8a2cc58ca6b9cfb56a95b455"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_abstractor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_abstractor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html">ChimeraTK::NDRegisterAccessorAbstractor&lt; UserType &gt;</a></td></tr>
 <tr class="memitem:a211acfa274e880b5210cc762aec58d01 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_abstractor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html#a211acfa274e880b5210cc762aec58d01">NDRegisterAccessorAbstractor</a> ()</td></tr>
 <tr class="memdesc:a211acfa274e880b5210cc762aec58d01 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_abstractor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an uninitialised abstractor - just for late initialisation.  <a href="#a211acfa274e880b5210cc762aec58d01">More...</a><br /></td></tr>
@@ -665,6 +673,39 @@ template&lt;typename UserType&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a0a282523cd56f221eb1b2f33272bd223"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType&gt; </div>
+<div class="memtemplate">
+template&lt;typename COOCKED_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">COOCKED_TYPE <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">ChimeraTK::OneDRegisterAccessor</a>&lt; UserType &gt;::getAsCoocked </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>sample</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the coocked values in case the accessor is a raw accessor (which does not do data conversion). </p>
+<p>This returns the converted data from the use buffer. It does not do any read or write transfer. </p>
+
+<p>Definition at line <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html#l00112">112</a> of file <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html">OneDRegisterAccessor.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa1a214bbd3c6638a8b58146ff83cd88e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -888,6 +929,49 @@ template&lt;typename UserType&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a032f6a1a8a2cc58ca6b9cfb56a95b455"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType&gt; </div>
+<div class="memtemplate">
+template&lt;typename COOCKED_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">ChimeraTK::OneDRegisterAccessor</a>&lt; UserType &gt;::setAsCoocked </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>sample</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">COOCKED_TYPE&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the coocked values in case the accessor is a raw accessor (which does not do data conversion). </p>
+<p>This converts to raw and writes the data to the user buffer. It does not do any read or write transfer. </p>
+
+<p>Definition at line <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html#l00120">120</a> of file <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html">OneDRegisterAccessor.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac6aaa6f5f6f680a4df224c5b24adb478"></a>
 <div class="memitem">
 <div class="memproto">
@@ -937,7 +1021,7 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html#l00108">108</a> of file <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html">OneDRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html#l00124">124</a> of file <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html">OneDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -947,7 +1031,7 @@ template&lt;typename UserType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 22 2018 05:53:14 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 23 2018 05:53:14 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
