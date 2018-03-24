@@ -76,6 +76,7 @@ var searchData=
   ['_5ftransferelement',['_transferElement',['../class_chimera_t_k_1_1_transfer_future.html#a3f8f4bf910c6cfce8c63004a092d977e',1,'ChimeraTK::TransferFuture']]],
   ['_5ftype',['_type',['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#af7f948baaebac74fb6b19f5b6a9a24dc',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem::_type()'],['../class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#aed58815ba5fc666a233610afc33a5161',1,'ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem::_type()']]],
   ['_5funit',['_unit',['../class_chimera_t_k_1_1_transfer_element.html#a8fffb069722f43530cecbcaa40b7c670',1,'ChimeraTK::TransferElement']]],
+  ['_5fvalue',['_value',['../class_chimera_t_k_1_1_data_type.html#aa7ad04100934a45d506a1613f697ad3c',1,'ChimeraTK::DataType']]],
   ['_5fversionnumber',['_versionNumber',['../struct_chimera_t_k_1_1_transfer_future_1_1_data.html#a2fee8770c682f666a67e73de2fc96654',1,'ChimeraTK::TransferFuture::Data']]],
   ['_5fwritecallbackfunctions',['_writeCallbackFunctions',['../class_chimera_t_k_1_1_dummy_backend.html#aaf1bdfb96b6f591da68cf01bcd3d9c17',1,'ChimeraTK::DummyBackend']]]
 ];

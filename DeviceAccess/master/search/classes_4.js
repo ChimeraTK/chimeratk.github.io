@@ -3,6 +3,7 @@ var searchData=
   ['data',['Data',['../struct_chimera_t_k_1_1_transfer_future_1_1_data.html',1,'ChimeraTK::TransferFuture']]],
   ['datadescriptor',['DataDescriptor',['../class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html',1,'ChimeraTK::RegisterInfo']]],
   ['datamodifierplugin',['DataModifierPlugin',['../class_chimera_t_k_1_1_data_modifier_plugin.html',1,'ChimeraTK']]],
+  ['datatype',['DataType',['../class_chimera_t_k_1_1_data_type.html',1,'ChimeraTK']]],
   ['device',['Device',['../class_chimera_t_k_1_1_device.html',1,'ChimeraTK']]],
   ['device_5fioctrl_5fdata',['device_ioctrl_data',['../structdevice__ioctrl__data.html',1,'']]],
   ['device_5fioctrl_5fdma',['device_ioctrl_dma',['../structdevice__ioctrl__dma.html',1,'']]],
