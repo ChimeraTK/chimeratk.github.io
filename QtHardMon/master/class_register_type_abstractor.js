@@ -5,6 +5,7 @@ var class_register_type_abstractor =
     [ "isIntegral", "class_register_type_abstractor.html#a60cb6d79dac7d07c72182a97071dbea3", null ],
     [ "nChannels", "class_register_type_abstractor.html#ac7cec671b0756136f127f0fb66f055dd", null ],
     [ "nElements", "class_register_type_abstractor.html#a72d33cece14afed7d5ee356e02d26c0b", null ],
+    [ "rawDataType", "class_register_type_abstractor.html#a4c7f3d727786422b84e11f856420f165", null ],
     [ "read", "class_register_type_abstractor.html#a8b382ff726fdbb372383e107bb543936", null ],
     [ "setData", "class_register_type_abstractor.html#a8b68c0521e05262667d6a02f40871d9d", null ],
     [ "write", "class_register_type_abstractor.html#a8cfd3ba37f751b16192916318bb9519e", null ]

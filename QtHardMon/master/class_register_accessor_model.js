@@ -13,5 +13,9 @@ var class_register_accessor_model =
     [ "write", "class_register_accessor_model.html#a55f664c1735bc2a2daf5255a40ca0211", null ],
     [ "_abstractAccessor", "class_register_accessor_model.html#aadc46f44e3065524562a86598ed4e09f", null ],
     [ "_channelNumber", "class_register_accessor_model.html#a4ead1327e583ca921fe7233b33d420cb", null ],
-    [ "_isModified", "class_register_accessor_model.html#a80e24d64223adfd4d1e16270118d44e4", null ]
+    [ "_coockedHexColumnIndex", "class_register_accessor_model.html#a7b813457750017b5cf672ffbbd6b8a53", null ],
+    [ "_isModified", "class_register_accessor_model.html#a80e24d64223adfd4d1e16270118d44e4", null ],
+    [ "_nColumns", "class_register_accessor_model.html#a29de97d50c2ec003a2f48c0cbef5f207", null ],
+    [ "_rawColumnIndex", "class_register_accessor_model.html#a7ba70650d3993162a00e025c916e14bd", null ],
+    [ "_rawHexColumnIndex", "class_register_accessor_model.html#af3b94c40ec94c8e617dd0607357ed074", null ]
 ];
