@@ -27,6 +27,8 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "RegisterTypeAbstractor.h", "_register_type_abstractor_8h_source.html", null ],
     [ "RegisterTypeAbstractorImpl.cpp", "_register_type_abstractor_impl_8cpp_source.html", null ],
     [ "RegisterTypeAbstractorImpl.h", "_register_type_abstractor_impl_8h_source.html", null ],
+    [ "RegisterTypeAbstractorRawImpl.cpp", "_register_type_abstractor_raw_impl_8cpp_source.html", null ],
+    [ "RegisterTypeAbstractorRawImpl.h", "_register_type_abstractor_raw_impl_8h_source.html", null ],
     [ "SingletonHolder.h", "_singleton_holder_8h_source.html", null ],
     [ "TestModelView.cpp", "_test_model_view_8cpp_source.html", null ],
     [ "TestModelView.h", "_test_model_view_8h_source.html", null ]

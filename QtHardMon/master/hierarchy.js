@@ -34,7 +34,10 @@ var hierarchy =
     ] ],
     [ "RegisterTreeUtilities", "class_register_tree_utilities.html", null ],
     [ "RegisterTypeAbstractor", "class_register_type_abstractor.html", [
-      [ "RegisterTypeAbstractorImpl< USER_DATA_TYPE >", "class_register_type_abstractor_impl.html", null ]
+      [ "RegisterTypeAbstractorImpl< USER_DATA_TYPE >", "class_register_type_abstractor_impl.html", null ],
+      [ "RegisterTypeAbstractorImpl< RAW_DATA_TYPE >", "class_register_type_abstractor_impl.html", [
+        [ "RegisterTypeAbstractorRawImpl< RAW_DATA_TYPE, COOCKED_DATA_TYPE >", "class_register_type_abstractor_raw_impl.html", null ]
+      ] ]
     ] ],
     [ "SingleThread< T >", "class_single_thread.html", null ],
     [ "SingletonHolder< T, CreationPolicy, LifetimePolicy, ThreadingModel, V >", "class_singleton_holder.html", null ]
