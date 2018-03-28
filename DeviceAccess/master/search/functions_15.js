@@ -25,6 +25,7 @@ var searchData=
   ['_7eregisteraccessor',['~RegisterAccessor',['../class_chimera_t_k_1_1_register_accessor.html#aef4d5c2cf096504c2088bf4ddb56a1b0',1,'ChimeraTK::RegisterAccessor']]],
   ['_7eregisterinfo',['~RegisterInfo',['../class_chimera_t_k_1_1_register_info.html#a92a66342bceca280cef3846e74b051c6',1,'ChimeraTK::RegisterInfo']]],
   ['_7eregisterinfoplugin',['~RegisterInfoPlugin',['../class_chimera_t_k_1_1_register_info_plugin.html#afa4f742a3d504a49251d93d1661dde51',1,'ChimeraTK::RegisterInfoPlugin']]],
+  ['_7eshareddummybackend',['~SharedDummyBackend',['../class_chimera_t_k_1_1_shared_dummy_backend.html#a249ab56910ad17a547b8613e56516ebe',1,'ChimeraTK::SharedDummyBackend']]],
   ['_7esubdevicebackend',['~SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html#aef6a0de034b54d44cc888dce97b0bec2',1,'ChimeraTK::SubdeviceBackend']]],
   ['_7esyncndregisteraccessor',['~SyncNDRegisterAccessor',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html#aca97e16a2018f70d6781582bad5a025b',1,'ChimeraTK::SyncNDRegisterAccessor']]],
   ['_7etcpctrl',['~TcpCtrl',['../class_chimera_t_k_1_1_tcp_ctrl.html#a74dbac59591e9e582fe6d2d664d62983',1,'ChimeraTK::TcpCtrl']]],

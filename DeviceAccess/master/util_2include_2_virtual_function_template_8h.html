@@ -139,6 +139,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ab5e6eeda5f812bf87b6da853d103ee37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_virtual_function_template_8h.html#ab5e6eeda5f812bf87b6da853d103ee37">FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a>(functionName)&#160;&#160;&#160;boost::fusion::for_each(this-&gt;functionName ## _vtable.table, functionName ## _vtable_filler(this))</td></tr>
 <tr class="memdesc:ab5e6eeda5f812bf87b6da853d103ee37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the vtable of a virtual function template defined with DEFINE_VIRTUAL_FUNCTION_TEMPLATE.  <a href="#ab5e6eeda5f812bf87b6da853d103ee37">More...</a><br /></td></tr>
 <tr class="separator:ab5e6eeda5f812bf87b6da853d103ee37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cfaa4375c315e463c69a4f05bb90d94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_virtual_function_template_8h.html#a9cfaa4375c315e463c69a4f05bb90d94">FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_STANDALONE</a>(functionName,  numberOfArguments)</td></tr>
+<tr class="memdesc:a9cfaa4375c315e463c69a4f05bb90d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the vtable of a virtual function template defined with DEFINE_VIRTUAL_FUNCTION_TEMPLATE.  <a href="#a9cfaa4375c315e463c69a4f05bb90d94">More...</a><br /></td></tr>
+<tr class="separator:a9cfaa4375c315e463c69a4f05bb90d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a9ae25c66f893b5dffc9251887f2bb9a5"></a>
@@ -412,14 +415,46 @@ Macros</h2></td></tr>
 <p>Fill the vtable of a virtual function template defined with DEFINE_VIRTUAL_FUNCTION_TEMPLATE. </p>
 <p>Use this macro inside the constructor of the derived class. </p>
 
-<p>Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00115">115</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p>Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00114">114</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9cfaa4375c315e463c69a4f05bb90d94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_STANDALONE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">functionName, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">numberOfArguments&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typedef</span> std::remove_reference&lt;decltype(*this)&gt;::type ClassName;                                           <a class="code" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d">\</a></div><div class="line"><a class="code" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d">      for_each</a>(this-&gt;functionName ## _vtable.table, [<span class="keyword">this</span>] (<span class="keyword">auto</span> &amp;pair) {                                       \</div><div class="line">        typedef typename std::remove_reference&lt;decltype(pair)&gt;::type::first_type UserType;                      \</div><div class="line">        pair.second = boost::bind(&amp;ClassName::functionName&lt;UserType&gt;, this,                                     \</div><div class="line">                          DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_ ## numberOfArguments);                          \</div><div class="line">      });</div><div class="ttc" id="namespace_chimera_t_k_html_afee0348f3a67cc3dc7efec51279bde7d"><div class="ttname"><a href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d">ChimeraTK::for_each</a></div><div class="ttdeci">void for_each(MAPTYPE &amp;map, LAMBDATYPE &amp;lambda)</div><div class="ttdoc">Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...</div><div class="ttdef"><b>Definition:</b> <a href="util_2include_2_supported_user_types_8h_source.html#l00220">SupportedUserTypes.h:220</a></div></div>
+</div><!-- fragment -->
+<p>Fill the vtable of a virtual function template defined with DEFINE_VIRTUAL_FUNCTION_TEMPLATE. </p>
+<p>Use this macro inside the constructor of the derived class. This version does not require to use the DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER macro! </p>
+
+<p>Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00120">120</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 26 2018 05:53:31 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 28 2018 05:54:11 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

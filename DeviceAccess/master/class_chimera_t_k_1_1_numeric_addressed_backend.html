@@ -111,11 +111,12 @@ Inheritance diagram for ChimeraTK::NumericAddressedBackend:</div>
  <div class="center">
   <img src="class_chimera_t_k_1_1_numeric_addressed_backend.png" usemap="#ChimeraTK::NumericAddressedBackend_map" alt=""/>
   <map id="ChimeraTK::NumericAddressedBackend_map" name="ChimeraTK::NumericAddressedBackend_map">
-<area href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends..." alt="ChimeraTK::DeviceBackendImpl" shape="rect" coords="313,112,616,136"/>
-<area href="class_chimera_t_k_1_1_device_backend.html" title="The base class for backends providing IO functionality for the Device class. " alt="ChimeraTK::DeviceBackend" shape="rect" coords="313,56,616,80"/>
+<area href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends..." alt="ChimeraTK::DeviceBackendImpl" shape="rect" coords="469,112,772,136"/>
+<area href="class_chimera_t_k_1_1_device_backend.html" title="The base class for backends providing IO functionality for the Device class. " alt="ChimeraTK::DeviceBackend" shape="rect" coords="469,56,772,80"/>
 <area href="class_chimera_t_k_1_1_dummy_backend.html" title="The dummy device opens a mapping file instead of a device, and implements all registers defined in th..." alt="ChimeraTK::DummyBackend" shape="rect" coords="0,224,303,248"/>
 <area href="class_chimera_t_k_1_1_pcie_backend.html" title="A class to provide the Pcie device functionality. " alt="ChimeraTK::PcieBackend" shape="rect" coords="313,224,616,248"/>
 <area href="class_chimera_t_k_1_1_rebot_backend.html" alt="ChimeraTK::RebotBackend" shape="rect" coords="626,224,929,248"/>
+<area href="class_chimera_t_k_1_1_shared_dummy_backend.html" title="TODO DOCUMENTATION. " alt="ChimeraTK::SharedDummyBackend" shape="rect" coords="939,224,1242,248"/>
 <area href="class_custom_backend.html" alt="CustomBackend" shape="rect" coords="0,280,303,304"/>
 </map>
  </div></div>
@@ -199,8 +200,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5395e67e4d9c77c09826a0adb572ec01"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:a5395e67e4d9c77c09826a0adb572ec01"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a5395e67e4d9c77c09826a0adb572ec01">getRegisterAccessor_impl</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
 <tr class="separator:a5395e67e4d9c77c09826a0adb572ec01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e2a278e3f61f471321394cd5e8b991d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a2e2a278e3f61f471321394cd5e8b991d">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html">NumericAddressedBackend</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a5395e67e4d9c77c09826a0adb572ec01">getRegisterAccessor_impl</a>, 4)</td></tr>
-<tr class="separator:a2e2a278e3f61f471321394cd5e8b991d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_chimera_t_k_1_1_device_backend_impl"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_chimera_t_k_1_1_device_backend_impl')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html">ChimeraTK::DeviceBackendImpl</a></td></tr>
 <tr class="memitem:af9e2a20f30d77084bd56d6597c557d61 inherit pro_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:af9e2a20f30d77084bd56d6597c557d61 inherit pro_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#af9e2a20f30d77084bd56d6597c557d61">decorateRegisterAccessor</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt; accessor) const </td></tr>
@@ -338,46 +337,6 @@ Protected Attributes</h2></td></tr>
 <p>resolve register name to address with error checks </p>
 
 <p>Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00100">100</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2e2a278e3f61f471321394cd5e8b991d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ChimeraTK::NumericAddressedBackend::DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html">NumericAddressedBackend</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a5395e67e4d9c77c09826a0adb572ec01">getRegisterAccessor_impl</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">4&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -608,7 +567,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a88f571ef43273e4b7f24e1665938d93b">ChimeraTK::DeviceBackendImpl</a>.</p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a7a8b09a4c794b7f2db7f9d4d54188b9e">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#ac3757c4241880d514dfa9e554d547233">ChimeraTK::PcieBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a0be2add1a07a11fbde4d7394ea76d169">ChimeraTK::RebotBackend</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a7a8b09a4c794b7f2db7f9d4d54188b9e">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#ac3757c4241880d514dfa9e554d547233">ChimeraTK::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a0be2add1a07a11fbde4d7394ea76d169">ChimeraTK::RebotBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a831d1218a10de987f066d59921101b59">ChimeraTK::SharedDummyBackend</a>.</p>
 
 </div>
 </div>
@@ -638,7 +597,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#ae27b29c1570a6f749efdb0dfe4f2972d">ChimeraTK::DeviceBackend</a>.</p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#aae6967c6881e9ea4801b941284328d61">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#adf6ac1d362f894b203020500816d47c3">ChimeraTK::PcieBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#aa031066178cd12f936af25aefbd2a591">ChimeraTK::RebotBackend</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#aae6967c6881e9ea4801b941284328d61">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#adf6ac1d362f894b203020500816d47c3">ChimeraTK::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#aa031066178cd12f936af25aefbd2a591">ChimeraTK::RebotBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#acea43a9d7dda8dc7a1af314453eee8e9">ChimeraTK::SharedDummyBackend</a>.</p>
 
 </div>
 </div>
@@ -778,7 +737,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#abd6859714e4dbcfe90a83319a261ccad">ChimeraTK::DeviceBackendImpl</a>.</p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a890c5177538dbf92ec55ccb195d19db2">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#a267abe5fde0be68199b8bec08d9c403f">ChimeraTK::PcieBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a9c0030d5dd366ac1f91a64041d942f30">ChimeraTK::RebotBackend</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a890c5177538dbf92ec55ccb195d19db2">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#a267abe5fde0be68199b8bec08d9c403f">ChimeraTK::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a9c0030d5dd366ac1f91a64041d942f30">ChimeraTK::RebotBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a4f3ddb393537a07a0253015e014c7668">ChimeraTK::SharedDummyBackend</a>.</p>
 
 </div>
 </div>
@@ -814,7 +773,7 @@ template&lt;typename UserType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 26 2018 05:53:32 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 28 2018 05:54:11 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
