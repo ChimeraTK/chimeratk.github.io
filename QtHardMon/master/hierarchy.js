@@ -29,8 +29,7 @@ var hierarchy =
     ] ],
     [ "QWidget", null, [
       [ "PlotWindow", "class_plot_window.html", null ],
-      [ "PropertiesWidget", "class_properties_widget.html", null ],
-      [ "TestModelView", "class_test_model_view.html", null ]
+      [ "PropertiesWidget", "class_properties_widget.html", null ]
     ] ],
     [ "RegisterTreeUtilities", "class_register_tree_utilities.html", null ],
     [ "RegisterTypeAbstractor", "class_register_type_abstractor.html", [

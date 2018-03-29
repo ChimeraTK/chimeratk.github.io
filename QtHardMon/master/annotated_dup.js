@@ -20,6 +20,5 @@ var annotated_dup =
     [ "SingleThread", "class_single_thread.html", [
       [ "Lock", "class_single_thread_1_1_lock.html", null ]
     ] ],
-    [ "SingletonHolder", "class_singleton_holder.html", null ],
-    [ "TestModelView", "class_test_model_view.html", "class_test_model_view" ]
+    [ "SingletonHolder", "class_singleton_holder.html", null ]
 ];
