@@ -117,20 +117,20 @@ $(document).ready(function(){initNavTree('class_register_tree_utilities.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeb3b85a35c2df7da3f2af31a1f03558b"><td class="memItemLeft" align="right" valign="top">static QTreeWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_tree_utilities.html#aeb3b85a35c2df7da3f2af31a1f03558b">getDeepestBranchNode</a> (boost::shared_ptr&lt; mtca4u::RegisterInfo &gt; registerInfo, QTreeWidget *treeWidget)</td></tr>
-<tr class="separator:aeb3b85a35c2df7da3f2af31a1f03558b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4cc943171ca481f583a48a585131e7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4cc943171ca481f583a48a585131e7f"></a>
-static QTreeWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><b>getDeepestBranchNode</b> (boost::shared_ptr&lt; mtca4u::RegisterInfo &gt; registerInfo, QTreeWidgetItem *parentModuleItem, unsigned int depth=0)</td></tr>
-<tr class="separator:ab4cc943171ca481f583a48a585131e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add82eb572ec597dc132746ba30db8b43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add82eb572ec597dc132746ba30db8b43"></a>
-static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getRegisterName</b> (boost::shared_ptr&lt; mtca4u::RegisterInfo &gt; registerInfo)</td></tr>
-<tr class="separator:add82eb572ec597dc132746ba30db8b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e96dd6708cfe41ca985949b1099ef2"><td class="memItemLeft" align="right" valign="top">static QTreeWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_tree_utilities.html#ae2e96dd6708cfe41ca985949b1099ef2">getDeepestBranchNode</a> (boost::shared_ptr&lt; ChimeraTK::RegisterInfo &gt; registerInfo, QTreeWidget *treeWidget)</td></tr>
+<tr class="separator:ae2e96dd6708cfe41ca985949b1099ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36b1441cdd4fa7517ecb74737186c08d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36b1441cdd4fa7517ecb74737186c08d"></a>
+static QTreeWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><b>getDeepestBranchNode</b> (boost::shared_ptr&lt; ChimeraTK::RegisterInfo &gt; registerInfo, QTreeWidgetItem *parentModuleItem, unsigned int depth=0)</td></tr>
+<tr class="separator:a36b1441cdd4fa7517ecb74737186c08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83e8cd0ddcb2fcb967a38740868d001"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac83e8cd0ddcb2fcb967a38740868d001"></a>
+static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getRegisterName</b> (boost::shared_ptr&lt; ChimeraTK::RegisterInfo &gt; registerInfo)</td></tr>
+<tr class="separator:ac83e8cd0ddcb2fcb967a38740868d001"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="_register_tree_utilities_8h_source.html#l00013">13</a> of file <a class="el" href="_register_tree_utilities_8h_source.html">RegisterTreeUtilities.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aeb3b85a35c2df7da3f2af31a1f03558b"></a>
+<a class="anchor" id="ae2e96dd6708cfe41ca985949b1099ef2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -140,7 +140,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getRegi
         <tr>
           <td class="memname">QTreeWidgetItem * RegisterTreeUtilities::getDeepestBranchNode </td>
           <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; mtca4u::RegisterInfo &gt;&#160;</td>
+          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::RegisterInfo &gt;&#160;</td>
           <td class="paramname"><em>registerInfo</em>, </td>
         </tr>
         <tr>
@@ -163,7 +163,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getRegi
 </div><div class="memdoc">
 <dl class="section attention"><dt>Attention</dt><dd>Can return nullptr of the register path has no hierarchy. </dd></dl>
 
-<p>Definition at line <a class="el" href="_register_tree_utilities_8cpp_source.html#l00029">29</a> of file <a class="el" href="_register_tree_utilities_8cpp_source.html">RegisterTreeUtilities.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_register_tree_utilities_8cpp_source.html#l00027">27</a> of file <a class="el" href="_register_tree_utilities_8cpp_source.html">RegisterTreeUtilities.cpp</a>.</p>
 
 </div>
 </div>
@@ -177,7 +177,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getRegi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_register_tree_utilities.html">RegisterTreeUtilities</a></li>
-    <li class="footer">Generated on Fri Apr 6 2018 05:53:15 for QtHardMon by
+    <li class="footer">Generated on Sat Apr 7 2018 05:53:14 for QtHardMon by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

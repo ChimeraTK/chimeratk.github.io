@@ -17,7 +17,7 @@ var class_qt_hard_mon =
     [ "_plotWindow", "class_qt_hard_mon.html#a67ccc9ef5b6ceabb169646b1767c4c40", null ],
     [ "configFileName_", "class_qt_hard_mon.html#a290a03165229e164c8fb42ede8968c83", null ],
     [ "currentAccessorModel_", "class_qt_hard_mon.html#ab064bc2e14df9e49d4134aef6d3d09a1", null ],
-    [ "currentDevice_", "class_qt_hard_mon.html#a103483a412e778315f21afefefacd272", null ],
+    [ "currentDevice_", "class_qt_hard_mon.html#a701b45dcc304495f934b2167b6a1e380", null ],
     [ "customDelegate_", "class_qt_hard_mon.html#a5ee9c01471f3a88aa48be67145e1a40e", null ],
     [ "dmapFileName_", "class_qt_hard_mon.html#a35c1a0c1c999e078ce93bbdcd3c20411", null ],
     [ "insideReadOrWrite_", "class_qt_hard_mon.html#ab69fa11debc8ac16f46a2fc126ee4fd1", null ],

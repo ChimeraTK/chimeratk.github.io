@@ -8,7 +8,7 @@ var searchData=
   ['createbynew',['CreateByNew',['../class_create_by_new.html',1,'']]],
   ['createeditor',['createEditor',['../class_custom_delegates.html#a167e3b5396963014b4685beba051d235',1,'CustomDelegates']]],
   ['currentaccessormodel_5f',['currentAccessorModel_',['../class_qt_hard_mon.html#ab064bc2e14df9e49d4134aef6d3d09a1',1,'QtHardMon']]],
-  ['currentdevice_5f',['currentDevice_',['../class_qt_hard_mon.html#a103483a412e778315f21afefefacd272',1,'QtHardMon']]],
+  ['currentdevice_5f',['currentDevice_',['../class_qt_hard_mon.html#a701b45dcc304495f934b2167b6a1e380',1,'QtHardMon']]],
   ['customdelegate_5f',['customDelegate_',['../class_qt_hard_mon.html#a5ee9c01471f3a88aa48be67145e1a40e',1,'QtHardMon']]],
   ['customdelegates',['CustomDelegates',['../class_custom_delegates.html',1,'CustomDelegates'],['../class_custom_delegates.html#a5f1c110e59a7e31ea49f705c19a77755',1,'CustomDelegates::CustomDelegates()']]]
 ];

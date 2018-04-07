@@ -2,7 +2,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
 [
     [ "ConfigFileReaderWriter.cpp", "_config_file_reader_writer_8cpp_source.html", null ],
     [ "ConfigFileReaderWriter.h", "_config_file_reader_writer_8h_source.html", null ],
-    [ "Constants.h", "_constants_8h_source.html", null ],
     [ "CustomDelegates.cpp", "_custom_delegates_8cpp_source.html", null ],
     [ "CustomDelegates.h", "_custom_delegates_8h_source.html", null ],
     [ "DeviceElementQTreeItem.cpp", "_device_element_q_tree_item_8cpp_source.html", null ],
