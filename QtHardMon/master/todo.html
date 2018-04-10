@@ -106,15 +106,17 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <div class="textblock"><dl class="reflist">
 <dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="class_hex_spin_box.html#abeeaed7f70a9e60ee38362e3b26e8b80">HexSpinBox::validate</a>  (QString &amp;text_, int &amp;pos_) const </dt>
 <dd>Make the number of hex characters accepted in line with the range.  </dd>
-<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="class_qt_hard_mon.html#a50b33bced6902db0d43af7a168cf79d6">QtHardMon::read</a>  (bool autoRead=false)</dt>
-<dd>FIXME: what does the write button have to do with read??? This should not be here! </dd>
+<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="class_qt_hard_mon.html#aed608f4dce895ce59714cbf4b27609e3">QtHardMon::read</a>  ()</dt>
+<dd>The error message accesses the _currentDeviceListItem. Is this safe? It might be NULL. On the other hand <a class="el" href="class_qt_hard_mon.html#aed608f4dce895ce59714cbf4b27609e3" title="Read register from device. ">read()</a> should only be active if a device is opened.  </dd>
+<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="class_qt_hard_mon.html#a3c604ea8f93615e8856e97e4ebe70e3f">QtHardMon::write</a>  ()</dt>
+<dd>The error message accesses the _currentDeviceListItem. Is this safe? It might be NULL. On the other hand <a class="el" href="class_qt_hard_mon.html#a3c604ea8f93615e8856e97e4ebe70e3f" title="Read register to device. ">write()</a> should only be active if a device is opened. </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 7 2018 05:53:14 for QtHardMon by
+    <li class="footer">Generated on Tue Apr 10 2018 05:53:15 for QtHardMon by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
