@@ -42,6 +42,7 @@ var searchData=
   ['getsubmodulelistrecursive',['getSubmoduleListRecursive',['../class_chimera_t_k_1_1_entity_owner.html#a3f8825f36ec3d9db2a32f8707afe735c',1,'ChimeraTK::EntityOwner']]],
   ['gettags',['getTags',['../class_chimera_t_k_1_1_variable_network_node.html#a71e6948de50cdf8f1319489041a41baf',1,'ChimeraTK::VariableNetworkNode']]],
   ['gettestablemodelockobject',['getTestableModeLockObject',['../class_chimera_t_k_1_1_application.html#aca0e46e006bc223748a3c4056bddc176',1,'ChimeraTK::Application']]],
+  ['gettime',['getTime',['../namespacelogging.html#acec18988f1a73f188c6ef3de5c3578d4',1,'logging']]],
   ['gettriggertype',['getTriggerType',['../class_chimera_t_k_1_1_variable_network.html#a02856317165205d97a5749e23b6ca084',1,'ChimeraTK::VariableNetwork']]],
   ['gettype',['getType',['../class_chimera_t_k_1_1_variable_network_node.html#ac1915d0fd9d4f1282eb5a4ea00e2e084',1,'ChimeraTK::VariableNetworkNode']]],
   ['getuniqueid',['getUniqueId',['../class_chimera_t_k_1_1_variable_network_node.html#abc243dcb05421e091b650bd8dfd93390',1,'ChimeraTK::VariableNetworkNode']]],

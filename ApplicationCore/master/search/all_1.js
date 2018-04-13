@@ -11,7 +11,7 @@ var searchData=
   ['addnode',['addNode',['../class_chimera_t_k_1_1_variable_network.html#a5fb9112ee45366ddea3ad6c4fe81bdae',1,'ChimeraTK::VariableNetwork']]],
   ['addnodetotrigger',['addNodeToTrigger',['../class_chimera_t_k_1_1_variable_network.html#a6cc5740124d63d9926d9f77e406b1864',1,'ChimeraTK::VariableNetwork']]],
   ['addslave',['addSlave',['../class_chimera_t_k_1_1_fan_out.html#a4329fa960f988d18967ef137f3ff7188',1,'ChimeraTK::FanOut::addSlave()'],['../class_chimera_t_k_1_1_feeding_fan_out.html#acb9ab52a26871292bf8e77f628cdebe5',1,'ChimeraTK::FeedingFanOut::addSlave()']]],
-  ['addsource',['addSource',['../struct_chimera_t_k_1_1_micro_d_a_q.html#ad94ed29b8eeed494dae365b7b2934617',1,'ChimeraTK::MicroDAQ']]],
+  ['addsource',['addSource',['../classlogging_1_1_logging_module.html#af903e15c543d33d4f9f16a19951ea0b1',1,'logging::LoggingModule::addSource()'],['../struct_chimera_t_k_1_1_micro_d_a_q.html#ad94ed29b8eeed494dae365b7b2934617',1,'ChimeraTK::MicroDAQ::addSource()']]],
   ['addsubmodule',['addSubModule',['../class_chimera_t_k_1_1_virtual_module.html#a050961da9eb30eac1111fd75587f768e',1,'ChimeraTK::VirtualModule']]],
   ['addtag',['addTag',['../class_chimera_t_k_1_1_entity_owner.html#aba60e1945471166d25fec22172788b08',1,'ChimeraTK::EntityOwner::addTag()'],['../class_chimera_t_k_1_1_inversion_of_control_accessor.html#af890256ad4c3cd294be9f15493087b84',1,'ChimeraTK::InversionOfControlAccessor::addTag()'],['../class_chimera_t_k_1_1_variable_network_node.html#a4899ab9738a12b99bb1c61d0cf98d265',1,'ChimeraTK::VariableNetworkNode::addTag()']]],
   ['addtags',['addTags',['../class_chimera_t_k_1_1_inversion_of_control_accessor.html#a9d8573fc2807f8ea266580a8fe00c3a9',1,'ChimeraTK::InversionOfControlAccessor']]],

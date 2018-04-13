@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['qualifiedname',['qualifiedName',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a28c5b7adf9a220671351a338891a9c0b',1,'ChimeraTK::VariableNetworkNode_data']]]
+  ['pdata',['pdata',['../class_chimera_t_k_1_1_variable_network_node.html#a05d08d8278b1db30d5cb757fd40c5a0a',1,'ChimeraTK::VariableNetworkNode']]],
+  ['publicname',['publicName',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a9a509a8d919b656c9f7293fd181c42e6',1,'ChimeraTK::VariableNetworkNode_data']]],
+  ['pvidmap',['pvIdMap',['../class_chimera_t_k_1_1_application.html#a6ad49fdb5fbaea378e3836b4fcf9c60e',1,'ChimeraTK::Application']]],
+  ['pvmanager',['pvManager',['../class_chimera_t_k_1_1_test_facility.html#a293ed45681e3b8518df56ac0052a17b0',1,'ChimeraTK::TestFacility']]]
 ];

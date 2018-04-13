@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['todo_20list',['Todo List',['../todo.html',1,'']]]
+  ['logging_20module_20and_20logger',['Logging module and Logger',['../loggingdoc.html',1,'index']]]
 ];
