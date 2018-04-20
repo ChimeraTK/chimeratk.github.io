@@ -42,5 +42,5 @@ var searchData=
   ['multiplexeddataaccessorexception',['MultiplexedDataAccessorException',['../namespace_chimera_t_k.html#a60d0cf5bca967117c1ebe3ecc6a76200',1,'ChimeraTK']]],
   ['multiplexeddataaccessorexception_2eh',['MultiplexedDataAccessorException.h',['../mtca4u__compatibility__headers_2_multiplexed_data_accessor_exception_8h.html',1,'']]],
   ['multiplexeddataaccessorexception_2eh',['MultiplexedDataAccessorException.h',['../device_2include_2_multiplexed_data_accessor_exception_8h.html',1,'']]],
-  ['mutex',['mutex',['../struct_chimera_t_k_1_1_thread_informer_mutex.html#a8160152b415ddd8d3986b292616b7ff0',1,'ChimeraTK::ThreadInformerMutex']]]
+  ['mutex',['mutex',['../class_chimera_t_k_1_1_dummy_backend.html#a4747061060c35e1c02296dd2cbe94e6f',1,'ChimeraTK::DummyBackend::mutex()'],['../struct_chimera_t_k_1_1_thread_informer_mutex.html#a8160152b415ddd8d3986b292616b7ff0',1,'ChimeraTK::ThreadInformerMutex::mutex()']]]
 ];
