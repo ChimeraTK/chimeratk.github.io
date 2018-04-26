@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">QtHardMon
-   &#160;<span id="projectnumber">01.00.01</span>
+   &#160;<span id="projectnumber">01.00.02</span>
    </div>
   </td>
  </tr>
@@ -183,10 +183,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#a5da296206e6ab06385c7c2c58cb73e2b">closeDevice</a> ()</td></tr>
 <tr class="memdesc:a5da296206e6ab06385c7c2c58cb73e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the device and disable the access buttons. <br /></td></tr>
 <tr class="separator:a5da296206e6ab06385c7c2c58cb73e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeee6de884b40cc97609ad5241a3db225"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeee6de884b40cc97609ad5241a3db225"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#aeee6de884b40cc97609ad5241a3db225">openDevice</a> (std::string const &amp;deviceFileName)</td></tr>
-<tr class="memdesc:aeee6de884b40cc97609ad5241a3db225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the device and update the GUI accordingly. <br /></td></tr>
-<tr class="separator:aeee6de884b40cc97609ad5241a3db225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa136dd5bf3cdf3296490ee815f19ab77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa136dd5bf3cdf3296490ee815f19ab77"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#aa136dd5bf3cdf3296490ee815f19ab77">openDevice</a> (std::string const &amp;deviceIdentifier)</td></tr>
+<tr class="memdesc:aa136dd5bf3cdf3296490ee815f19ab77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the device and update the GUI accordingly. <br /></td></tr>
+<tr class="separator:aa136dd5bf3cdf3296490ee815f19ab77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bebae0b642d5aab09fc9b20deddef15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bebae0b642d5aab09fc9b20deddef15"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>extractFileNameFromPath</b> (const std::string &amp;)</td></tr>
 <tr class="separator:a6bebae0b642d5aab09fc9b20deddef15"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,7 +254,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PlotWindow</b></td><
 <p>Load a dmap file and return whether loading was successful. </p>
 <p>The return value can safely be ignored if the information is not required in the programme flow. </p>
 
-<p>Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00167">167</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00176">176</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
 
 </div>
 </div>
@@ -275,7 +275,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PlotWindow</b></td><
 <p>This method checks if <a class="el" href="class_qt_hard_mon.html" title="The QtHadMon class which implements all the GUI functionality. ">QtHardMon</a> executable has been called with a valid configuration or dmap file as an argument. </p>
 <p>It checks the extension of the passed in argument to distinguish the two file types. Depending on the file type passed, the method invokes either loadConfig or loadBoards internally. A pop up window with a warning is displayed if the fileName argument provided does not end with extension ".dmap" or ".cfg" </p>
 
-<p>Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00891">891</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00921">921</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
 
 </div>
 </div>
@@ -303,7 +303,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PlotWindow</b></td><
 <p>Read register from device. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>The error message accesses the _currentDeviceListItem. Is this safe? It might be NULL. On the other hand <a class="el" href="class_qt_hard_mon.html#aed608f4dce895ce59714cbf4b27609e3" title="Read register from device. ">read()</a> should only be active if a device is opened. </dd></dl>
 
-<p>Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00371">371</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00401">401</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
 
 </div>
 </div>
@@ -331,7 +331,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PlotWindow</b></td><
 <p>Read register to device. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>The error message accesses the _currentDeviceListItem. Is this safe? It might be NULL. On the other hand <a class="el" href="class_qt_hard_mon.html#a3c604ea8f93615e8856e97e4ebe70e3f" title="Read register to device. ">write()</a> should only be active if a device is opened. </dd></dl>
 
-<p>Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00404">404</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00434">434</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
 
 </div>
 </div>
@@ -345,7 +345,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PlotWindow</b></td><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_qt_hard_mon.html">QtHardMon</a></li>
-    <li class="footer">Generated on Fri Apr 20 2018 05:53:20 for QtHardMon by
+    <li class="footer">Generated on Thu Apr 26 2018 05:53:16 for QtHardMon by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
