@@ -7,7 +7,7 @@ var class_qt_hard_mon =
     [ "extractFileNameFromPath", "class_qt_hard_mon.html#a6bebae0b642d5aab09fc9b20deddef15", null ],
     [ "loadConfig", "class_qt_hard_mon.html#a418bf9611a809431037ed30409d9172a", null ],
     [ "loadDmapFile", "class_qt_hard_mon.html#a207299bc54f3520d125f9f1ab7c37f06", null ],
-    [ "openDevice", "class_qt_hard_mon.html#aeee6de884b40cc97609ad5241a3db225", null ],
+    [ "openDevice", "class_qt_hard_mon.html#aa136dd5bf3cdf3296490ee815f19ab77", null ],
     [ "parseArgument", "class_qt_hard_mon.html#a57779de6afbaaab4306780c25aaa2073", null ],
     [ "read", "class_qt_hard_mon.html#aed608f4dce895ce59714cbf4b27609e3", null ],
     [ "write", "class_qt_hard_mon.html#a3c604ea8f93615e8856e97e4ebe70e3f", null ],

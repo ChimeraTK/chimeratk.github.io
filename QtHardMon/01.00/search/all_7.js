@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['opendevice',['openDevice',['../class_qt_hard_mon.html#aeee6de884b40cc97609ad5241a3db225',1,'QtHardMon']]]
+  ['opendevice',['openDevice',['../class_qt_hard_mon.html#aa136dd5bf3cdf3296490ee815f19ab77',1,'QtHardMon']]]
 ];
