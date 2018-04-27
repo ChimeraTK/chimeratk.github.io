@@ -3,6 +3,7 @@ var searchData=
   ['calculatevirtualaddress',['calculateVirtualAddress',['../class_chimera_t_k_1_1_dummy_backend.html#ab9d14e393cb50167be33df831344d911',1,'ChimeraTK::DummyBackend']]],
   ['call_5fvirtual_5ffunction_5ftemplate',['CALL_VIRTUAL_FUNCTION_TEMPLATE',['../util_2include_2_virtual_function_template_8h.html#a9ae25c66f893b5dffc9251887f2bb9a5',1,'VirtualFunctionTemplate.h']]],
   ['callfortype',['callForType',['../namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d',1,'ChimeraTK::callForType(const std::type_info &amp;type, LAMBDATYPE lambda)'],['../namespace_chimera_t_k.html#a1d994c91e77f9c70310556ae90e136b9',1,'ChimeraTK::callForType(const DataType &amp;type, LAMBDATYPE lambda)']]],
+  ['canmergerequests',['canMergeRequests',['../class_chimera_t_k_1_1_numeric_addressed_backend.html#a1b4605c65eaef9554be58de18ee4356d',1,'ChimeraTK::NumericAddressedBackend']]],
   ['cannot_5fopen_5fdevicebackend',['CANNOT_OPEN_DEVICEBACKEND',['../class_chimera_t_k_1_1_device_exception.html#ad01e6c87413912b55cce72c89c7c2514a0887118b5078a2b766077a83ecfd8b69',1,'ChimeraTK::DeviceException']]],
   ['cannot_5fopen_5fmap_5ffile',['CANNOT_OPEN_MAP_FILE',['../class_chimera_t_k_1_1_device_exception.html#ad01e6c87413912b55cce72c89c7c2514ac9cca2578f25da16758382a38ecd0b80',1,'ChimeraTK::DeviceException']]],
   ['catalogue',['catalogue',['../class_chimera_t_k_1_1_register_catalogue.html#a219a8628421c794af45f8888f38a8c3c',1,'ChimeraTK::RegisterCatalogue']]],

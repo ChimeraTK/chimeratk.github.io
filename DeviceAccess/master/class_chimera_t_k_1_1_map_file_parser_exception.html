@@ -117,9 +117,9 @@ Inheritance diagram for ChimeraTK::MapFileParserException:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad6bb728420111442ff30e90ecfe3d8c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_map_file_parser_exception.html#ad6bb728420111442ff30e90ecfe3d8c6">MapFileParserException</a> (const std::string &amp;_exMessage, unsigned int _exID)</td></tr>
-<tr class="memdesc:ad6bb728420111442ff30e90ecfe3d8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#ad6bb728420111442ff30e90ecfe3d8c6">More...</a><br /></td></tr>
-<tr class="separator:ad6bb728420111442ff30e90ecfe3d8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79175f440ee572c3a82563178adef1ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_map_file_parser_exception.html#a79175f440ee572c3a82563178adef1ce">MapFileParserException</a> (const std::string &amp;_fileName, unsigned int _lineNumber, const std::string &amp;_line, const std::string &amp;_errorMessage={})</td></tr>
+<tr class="memdesc:a79175f440ee572c3a82563178adef1ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#a79175f440ee572c3a82563178adef1ce">More...</a><br /></td></tr>
+<tr class="separator:a79175f440ee572c3a82563178adef1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_map_file_exception"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_map_file_exception')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_map_file_exception.html">ChimeraTK::MapFileException</a></td></tr>
 <tr class="memitem:ad7106c260a80ce93d13aabecbd0ced02 inherit pub_methods_class_chimera_t_k_1_1_map_file_exception"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_map_file_exception.html#ad7106c260a80ce93d13aabecbd0ced02">MapFileException</a> (const std::string &amp;_exMessage, unsigned int _exID)</td></tr>
 <tr class="memdesc:ad7106c260a80ce93d13aabecbd0ced02 inherit pub_methods_class_chimera_t_k_1_1_map_file_exception"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#ad7106c260a80ce93d13aabecbd0ced02">More...</a><br /></td></tr>
@@ -175,7 +175,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fileparsers_2include_2_map_exception_8h_source.html#l00058">58</a> of file <a class="el" href="fileparsers_2include_2_map_exception_8h_source.html">MapException.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad6bb728420111442ff30e90ecfe3d8c6"></a>
+<a class="anchor" id="a79175f440ee572c3a82563178adef1ce"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -183,13 +183,25 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">ChimeraTK::MapFileParserException::MapFileParserException </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>_exMessage</em>, </td>
+          <td class="paramname"><em>_fileName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>_exID</em>&#160;</td>
+          <td class="paramname"><em>_lineNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>_line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>_errorMessage</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -202,13 +214,15 @@ Additional Inherited Members</h2></td></tr>
 <p>Class constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_exMessage</td><td>exception reason expressed as a string </td></tr>
-    <tr><td class="paramname">_exID</td><td>exception reason expressed as a identifier </td></tr>
+    <tr><td class="paramname">_fileName</td><td>Name of the current file </td></tr>
+    <tr><td class="paramname">_lineNumber</td><td>line number of the cause for the exception </td></tr>
+    <tr><td class="paramname">_line</td><td>the line containing the error </td></tr>
+    <tr><td class="paramname">_errorMessage</td><td>optional message with more details for the error </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_map_exception_8cpp_source.html#l00036">36</a> of file <a class="el" href="_map_exception_8cpp_source.html">MapException.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_map_exception_8cpp_source.html#l00051">51</a> of file <a class="el" href="_map_exception_8cpp_source.html">MapException.cpp</a>.</p>
 
 </div>
 </div>
@@ -219,7 +233,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 20 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 27 2018 05:53:18 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -92,6 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -116,6 +117,26 @@ Inheritance diagram for ChimeraTK::RegisterInfoMap::RegisterInfo:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae92b95a9c8d8fab1ee9b1dc40d0fe79f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79f">Access</a> { <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79fa856a86944e7e14ea6140fb19e584d406">READ</a> = 1 &lt;&lt; 0, 
+<a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79fad16044acc9efa248e4d7bc9b7c8a01bd">WRITE</a> = 1 &lt;&lt; 1, 
+<a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79faee0698ea9ceea2d7fff201cd0af5dbca">READWRITE</a> = READ | WRITE
+ }</td></tr>
+<tr class="separator:ae92b95a9c8d8fab1ee9b1dc40d0fe79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_chimera_t_k_1_1_register_info"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_chimera_t_k_1_1_register_info')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_chimera_t_k_1_1_register_info.html">ChimeraTK::RegisterInfo</a></td></tr>
+<tr class="memitem:a860f659821e8bfab2804820bb42bb9d8 inherit pub_types_class_chimera_t_k_1_1_register_info"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8">FundamentalType</a> { <br />
+&#160;&#160;<a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8a49057168d24dc9566533ec48326ced2c">FundamentalType::numeric</a>, 
+<a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8ab45cffe084dd3d20d928bee85e7b0f21">FundamentalType::string</a>, 
+<a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8a84e2c64f38f78ba3ea5c905ab5a2da27">FundamentalType::boolean</a>, 
+<a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8aba7879f8819d6b74aa4dd9e24b2fe90e">FundamentalType::nodata</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8a5e543256c480ac577d30f76f9120eb74">FundamentalType::undefined</a>
+<br />
+ }<tr class="memdesc:a860f659821e8bfab2804820bb42bb9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum for the fundamental data types.  <a href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a860f659821e8bfab2804820bb42bb9d8 inherit pub_types_class_chimera_t_k_1_1_register_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a09572e5a47b479b208a0a0225c43eb29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a09572e5a47b479b208a0a0225c43eb29">getRegisterName</a> () const override</td></tr>
@@ -133,9 +154,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa9557afbc83009c30022f9f7237b6f3e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html">DataDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aa9557afbc83009c30022f9f7237b6f3e">getDataDescriptor</a> () const override</td></tr>
 <tr class="memdesc:aa9557afbc83009c30022f9f7237b6f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return desciption of the actual payload data for this register.  <a href="#aa9557afbc83009c30022f9f7237b6f3e">More...</a><br /></td></tr>
 <tr class="separator:aa9557afbc83009c30022f9f7237b6f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1accdd46468553c56fe799a38d2ead3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ac1accdd46468553c56fe799a38d2ead3">RegisterInfo</a> (std::string const &amp;name_=std::string(), uint32_t nElements_=0, uint32_t address_=0, uint32_t nBytes_=0, uint32_t bar_=0, uint32_t width_=32, int32_t nFractionalBits_=0, bool signedFlag_=true, uint32_t lineNumber_=0, std::string const &amp;module_=std::string(), uint32_t nChannels_=1, bool is2DMultiplexed_=false)</td></tr>
-<tr class="memdesc:ac1accdd46468553c56fe799a38d2ead3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor to set all data members.  <a href="#ac1accdd46468553c56fe799a38d2ead3">More...</a><br /></td></tr>
-<tr class="separator:ac1accdd46468553c56fe799a38d2ead3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5985cd6e7a8ac3a5a25fc55788e2dc07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a5985cd6e7a8ac3a5a25fc55788e2dc07">RegisterInfo</a> (std::string const &amp;name_=std::string(), uint32_t nElements_=0, uint32_t address_=0, uint32_t nBytes_=0, uint32_t bar_=0, uint32_t width_=32, int32_t nFractionalBits_=0, bool signedFlag_=true, uint32_t lineNumber_=0, std::string const &amp;module_=std::string(), uint32_t nChannels_=1, bool is2DMultiplexed_=false, <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79f">Access</a> dataAccess_=Access::READWRITE)</td></tr>
+<tr class="memdesc:a5985cd6e7a8ac3a5a25fc55788e2dc07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor to set all data members.  <a href="#a5985cd6e7a8ac3a5a25fc55788e2dc07">More...</a><br /></td></tr>
+<tr class="separator:a5985cd6e7a8ac3a5a25fc55788e2dc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af18d723d90aa2326af0946ce9468b73f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html">RegisterInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#af18d723d90aa2326af0946ce9468b73f">operator=</a> (const <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html">RegisterInfo</a> &amp;other)</td></tr>
 <tr class="separator:af18d723d90aa2326af0946ce9468b73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_register_info"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_register_info')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_register_info.html">ChimeraTK::RegisterInfo</a></td></tr>
@@ -186,6 +207,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ac78e044a2c2f7cafaa35d08fb2d59a24"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ac78e044a2c2f7cafaa35d08fb2d59a24">module</a></td></tr>
 <tr class="memdesc:ac78e044a2c2f7cafaa35d08fb2d59a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the module this register is in.  <a href="#ac78e044a2c2f7cafaa35d08fb2d59a24">More...</a><br /></td></tr>
 <tr class="separator:ac78e044a2c2f7cafaa35d08fb2d59a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9646fc276b2a31cc2e4c2c81541e073b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79f">Access</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a9646fc276b2a31cc2e4c2c81541e073b">registerAccess</a></td></tr>
+<tr class="memdesc:a9646fc276b2a31cc2e4c2c81541e073b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data access direction: Read, write or read and write.  <a href="#a9646fc276b2a31cc2e4c2c81541e073b">More...</a><br /></td></tr>
+<tr class="separator:a9646fc276b2a31cc2e4c2c81541e073b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -200,29 +224,37 @@ Protected Attributes</h2></td></tr>
 Friends</h2></td></tr>
 <tr class="memitem:a6bfa76543d9f1b5b4bbeea1025396235"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6bfa76543d9f1b5b4bbeea1025396235">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html">RegisterInfo</a> &amp;registerInfo)</td></tr>
 <tr class="separator:a6bfa76543d9f1b5b4bbeea1025396235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class_chimera_t_k_1_1_register_info"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_chimera_t_k_1_1_register_info')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_chimera_t_k_1_1_register_info.html">ChimeraTK::RegisterInfo</a></td></tr>
-<tr class="memitem:a860f659821e8bfab2804820bb42bb9d8 inherit pub_types_class_chimera_t_k_1_1_register_info"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8">FundamentalType</a> { <br />
-&#160;&#160;<a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8a49057168d24dc9566533ec48326ced2c">FundamentalType::numeric</a>, 
-<a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8ab45cffe084dd3d20d928bee85e7b0f21">FundamentalType::string</a>, 
-<a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8a84e2c64f38f78ba3ea5c905ab5a2da27">FundamentalType::boolean</a>, 
-<a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8aba7879f8819d6b74aa4dd9e24b2fe90e">FundamentalType::nodata</a>, 
-<br />
-&#160;&#160;<a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8a5e543256c480ac577d30f76f9120eb74">FundamentalType::undefined</a>
-<br />
- }<tr class="memdesc:a860f659821e8bfab2804820bb42bb9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum for the fundamental data types.  <a href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8">More...</a><br /></td></tr>
-</td></tr>
-<tr class="separator:a860f659821e8bfab2804820bb42bb9d8 inherit pub_types_class_chimera_t_k_1_1_register_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stores information about one PCIe register. </p>
 <p>Stores detailed information about PCIe register and location of its description in MAP file. </p>
 
 <p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00053">53</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac1accdd46468553c56fe799a38d2ead3"></a>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="ae92b95a9c8d8fab1ee9b1dc40d0fe79f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79f">ChimeraTK::RegisterInfoMap::RegisterInfo::Access</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ae92b95a9c8d8fab1ee9b1dc40d0fe79fa856a86944e7e14ea6140fb19e584d406"></a>READ&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae92b95a9c8d8fab1ee9b1dc40d0fe79fad16044acc9efa248e4d7bc9b7c8a01bd"></a>WRITE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae92b95a9c8d8fab1ee9b1dc40d0fe79faee0698ea9ceea2d7fff201cd0af5dbca"></a>READWRITE&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00057">57</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a5985cd6e7a8ac3a5a25fc55788e2dc07"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -296,7 +328,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>is2DMultiplexed_</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>is2DMultiplexed_</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79f">Access</a>&#160;</td>
+          <td class="paramname"><em>dataAccess_</em> = <code>Access::READWRITE</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -340,7 +378,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_register_info.html#a341d7226406a1b1d91b4dbaecec80b5a">ChimeraTK::RegisterInfo</a>.</p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00078">78</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00080">80</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -369,7 +407,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_register_info.html#a2fdccd50df8d11ab3b524d936e62793e">ChimeraTK::RegisterInfo</a>.</p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00067">67</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00069">69</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -398,7 +436,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_register_info.html#a1642a8e5d3889f619c0e7958706aff30">ChimeraTK::RegisterInfo</a>.</p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00072">72</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00074">74</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -427,7 +465,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_register_info.html#acc18b368ac96ca55d2a280aef0c6de43">ChimeraTK::RegisterInfo</a>.</p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00063">63</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00065">65</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -456,7 +494,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_register_info.html#abb41176808c22e66a7708fb155f2fdbb">ChimeraTK::RegisterInfo</a>.</p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00057">57</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00059">59</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -482,7 +520,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00113">113</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00117">117</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -536,7 +574,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Relative address in bytes from beginning of the bar(Base Address Range) </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00086">86</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00088">88</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -552,7 +590,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Number of bar with register. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00088">88</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00090">90</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -574,7 +612,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00123">123</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00127">127</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -590,7 +628,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Flag if register is a 2D multiplexed register (otherwise it is 1D or scalar) </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00085">85</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00087">87</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -606,7 +644,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Number of line with description of register in MAP file. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00092">92</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00094">94</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -622,7 +660,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Name of the module this register is in. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00093">93</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00095">95</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -638,7 +676,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Name of register. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00082">82</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00084">84</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -654,7 +692,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Size of register expressed in bytes. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00087">87</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00089">89</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -670,7 +708,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Number of channels/sequences. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00084">84</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00086">86</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -686,7 +724,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Number of elements in register. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00083">83</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00085">85</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -702,7 +740,23 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Number of fractional bits. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00090">90</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00092">92</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9646fc276b2a31cc2e4c2c81541e073b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79f">Access</a> ChimeraTK::RegisterInfoMap::RegisterInfo::registerAccess</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data access direction: Read, write or read and write. </p>
+
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00096">96</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -718,7 +772,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Signed/Unsigned flag. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00091">91</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00093">93</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -734,7 +788,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Number of significant bits in the register. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00089">89</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00091">91</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -745,7 +799,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 20 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 27 2018 05:53:18 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

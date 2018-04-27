@@ -1,6 +1,7 @@
 var searchData=
 [
   ['abspathofdmapcontent',['absPathOfDMapContent',['../class_chimera_t_k_1_1_d_map_file_parser.html#acf85a1a19c1c9e4a3d06c17256e6e31c',1,'ChimeraTK::DMapFileParser']]],
+  ['access',['Access',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79f',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
   ['accesschannel',['accessChannel',['../class_chimera_t_k_1_1_n_d_register_accessor.html#ae7320f8139ee7b794743bd4e203fbb12',1,'ChimeraTK::NDRegisterAccessor']]],
   ['accessdata',['accessData',['../class_chimera_t_k_1_1_n_d_register_accessor.html#ae07a53bd251a3c65105f70a05ef3ffd0',1,'ChimeraTK::NDRegisterAccessor::accessData(unsigned int sample)'],['../class_chimera_t_k_1_1_n_d_register_accessor.html#a7199e39d27e7d3a32b92188526a11218',1,'ChimeraTK::NDRegisterAccessor::accessData(unsigned int channel, unsigned int sample)']]],
   ['accessmode',['AccessMode',['../namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11',1,'ChimeraTK']]],
@@ -25,8 +26,8 @@ var searchData=
   ['addregister',['addRegister',['../class_chimera_t_k_1_1_register_catalogue.html#ac868a12da4ce5d9c40b26192473ffbc1',1,'ChimeraTK::RegisterCatalogue::addRegister()'],['../namespacemtca4u__lmap__editor.html#a274b1e8451f3301630361fafa15bdb50',1,'mtca4u_lmap_editor.addRegister()']]],
   ['address',['address',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae127df17e9ddb46374e1450a42ef44a5',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
   ['addressinwords',['addressInWords',['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#ac3df6436518ace3a5d09ec50f48924af',1,'ChimeraTK::RebotProtocol0::RegisterInfo']]],
-  ['addressrange',['AddressRange',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html#ae18c40ccd64efd9484032a1f1bd137f8',1,'ChimeraTK::DummyBackend::AddressRange']]],
   ['addressrange',['AddressRange',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html',1,'ChimeraTK::DummyBackend']]],
+  ['addressrange',['AddressRange',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html#ae18c40ccd64efd9484032a1f1bd137f8',1,'ChimeraTK::DummyBackend::AddressRange']]],
   ['aliaslookup',['aliasLookUp',['../class_chimera_t_k_1_1_backend_factory.html#ae166738b5e8ce2b948c542b91eb66237',1,'ChimeraTK::BackendFactory::aliasLookUp()'],['../class_chimera_t_k_1_1_utilities.html#a0124cd7dc8ef468a7c292788414848ed',1,'ChimeraTK::Utilities::aliasLookUp()']]],
   ['already_5fclosed',['ALREADY_CLOSED',['../class_chimera_t_k_1_1_dummy_backend_exception.html#a78eb95242829ec8662bda2033fe08baaa981b03d9efe41ab7777f769a31fbf9fc',1,'ChimeraTK::DummyBackendException']]],
   ['already_5fopen',['ALREADY_OPEN',['../class_chimera_t_k_1_1_dummy_backend_exception.html#a78eb95242829ec8662bda2033fe08baaa4a41ac18276a99c723be8b0308d955cb',1,'ChimeraTK::DummyBackendException']]],

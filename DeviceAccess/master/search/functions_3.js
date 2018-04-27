@@ -2,6 +2,7 @@ var searchData=
 [
   ['calculatevirtualaddress',['calculateVirtualAddress',['../class_chimera_t_k_1_1_dummy_backend.html#ab9d14e393cb50167be33df831344d911',1,'ChimeraTK::DummyBackend']]],
   ['callfortype',['callForType',['../namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d',1,'ChimeraTK::callForType(const std::type_info &amp;type, LAMBDATYPE lambda)'],['../namespace_chimera_t_k.html#a1d994c91e77f9c70310556ae90e136b9',1,'ChimeraTK::callForType(const DataType &amp;type, LAMBDATYPE lambda)']]],
+  ['canmergerequests',['canMergeRequests',['../class_chimera_t_k_1_1_numeric_addressed_backend.html#a1b4605c65eaef9554be58de18ee4356d',1,'ChimeraTK::NumericAddressedBackend']]],
   ['cbegin',['cbegin',['../class_chimera_t_k_1_1_buffering_register_accessor.html#a2d76e3516f0348ee4673b97378298a36',1,'ChimeraTK::BufferingRegisterAccessor::cbegin()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#a78610230a44db162733eb40b95b59731',1,'ChimeraTK::OneDRegisterAccessor::cbegin()']]],
   ['cend',['cend',['../class_chimera_t_k_1_1_buffering_register_accessor.html#aad2bd0eff97f2355acdd08f7a01194e7',1,'ChimeraTK::BufferingRegisterAccessor::cend()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#a5d633f5e4b12451322aa402f6195dc6e',1,'ChimeraTK::OneDRegisterAccessor::cend()']]],
   ['changeaddress',['changeAddress',['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a81976cf0605fecd60cbc54aadb626692',1,'ChimeraTK::NumericAddressedLowLevelTransferElement']]],
