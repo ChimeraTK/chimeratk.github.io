@@ -109,6 +109,8 @@ $(document).ready(function(){initNavTree('class_register_type_abstractor_raw_imp
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_register_type_abstractor_raw_impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">RegisterTypeAbstractorRawImpl&lt; RAW_DATA_TYPE, COOCKED_DATA_TYPE &gt; Class Template Reference</div>  </div>
@@ -132,6 +134,9 @@ Inheritance diagram for RegisterTypeAbstractorRawImpl&lt; RAW_DATA_TYPE, COOCKED
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a6cf355dd53eb94e4b382da8e7722e7ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cf355dd53eb94e4b382da8e7722e7ef"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterTypeAbstractorRawImpl</b> (ChimeraTK::TwoDRegisterAccessor&lt; RAW_DATA_TYPE &gt; const &amp;accessor, ChimeraTK::DataType const &amp;rawDataType)</td></tr>
+<tr class="separator:a6cf355dd53eb94e4b382da8e7722e7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0a5890d48ae9def382c6619a964c077"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0a5890d48ae9def382c6619a964c077"></a>
 QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor_raw_impl.html#ac0a5890d48ae9def382c6619a964c077">data</a> (unsigned int channelIndex, unsigned int elementIndex) const override</td></tr>
 <tr class="memdesc:ac0a5890d48ae9def382c6619a964c077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override because it returns coocked data while the accessor under the hood is raw. <br /></td></tr>
@@ -156,6 +161,10 @@ QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor_raw_impl.html#a15b5289de38cea86708087d51076d7e1">setRawData</a> (unsigned int channelIndex, unsigned int elementIndex, const QVariant &amp;<a class="el" href="class_register_type_abstractor_raw_impl.html#ac0a5890d48ae9def382c6619a964c077">data</a>) override</td></tr>
 <tr class="memdesc:a15b5289de38cea86708087d51076d7e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override because not implemented in the single types base implementation without raw access. <br /></td></tr>
 <tr class="separator:a15b5289de38cea86708087d51076d7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b10656f83133ae8ec5ddcb3989f5c78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b10656f83133ae8ec5ddcb3989f5c78"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor_raw_impl.html#a9b10656f83133ae8ec5ddcb3989f5c78">read</a> ()</td></tr>
+<tr class="memdesc:a9b10656f83133ae8ec5ddcb3989f5c78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override to update the cached coocked data after reading. <br /></td></tr>
+<tr class="separator:a9b10656f83133ae8ec5ddcb3989f5c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6914585dba4b6a15419ce540a1fd6b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor_raw_impl.html#ad6914585dba4b6a15419ce540a1fd6b4">isIntegral</a> () const override</td></tr>
 <tr class="memdesc:ad6914585dba4b6a15419ce540a1fd6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override because this is for the coocked type while the base implementation would return for the raw type.  <a href="#ad6914585dba4b6a15419ce540a1fd6b4">More...</a><br /></td></tr>
 <tr class="separator:ad6914585dba4b6a15419ce540a1fd6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,8 +209,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> () override<
 void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> () override</td></tr>
 <tr class="separator:a913162bcefc000eed04403c0a0f92361 inherit pub_methods_class_register_type_abstractor_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a96cf6a952cec458d6da0fdef96ef5e5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96cf6a952cec458d6da0fdef96ef5e5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCachedCoockedData</b> ()</td></tr>
+<tr class="separator:a96cf6a952cec458d6da0fdef96ef5e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ab3cbe4cd3856ea5f15e4fcd05d78e378"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; COOCKED_DATA_TYPE &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor_raw_impl.html#ab3cbe4cd3856ea5f15e4fcd05d78e378">_cachedCoockedData</a></td></tr>
+<tr class="memdesc:ab3cbe4cd3856ea5f15e4fcd05d78e378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached data for painting.  <a href="#ab3cbe4cd3856ea5f15e4fcd05d78e378">More...</a><br /></td></tr>
+<tr class="separator:ab3cbe4cd3856ea5f15e4fcd05d78e378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b662c3bed94d1f27b32058f2aafa23"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12b662c3bed94d1f27b32058f2aafa23"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_cachedCoockedDataValid</b></td></tr>
+<tr class="separator:a12b662c3bed94d1f27b32058f2aafa23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_register_type_abstractor_impl"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_register_type_abstractor_impl')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_register_type_abstractor_impl.html">RegisterTypeAbstractorImpl&lt; RAW_DATA_TYPE &gt;</a></td></tr>
 <tr class="memitem:a19faeaed99bed2664c4062f198d76cf3 inherit pro_attribs_class_register_type_abstractor_impl"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19faeaed99bed2664c4062f198d76cf3"></a>
 ChimeraTK::TwoDRegisterAccessor&lt; RAW_DATA_TYPE &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_accessor</b></td></tr>
@@ -246,7 +267,35 @@ template&lt;class RAW_DATA_TYPE , class COOCKED_DATA_TYPE &gt; </div>
 
 <p>Implements <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a>.</p>
 
-<p>Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00088">88</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+<p>Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00121">121</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ab3cbe4cd3856ea5f15e4fcd05d78e378"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class RAW_DATA_TYPE , class COOCKED_DATA_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;COOCKED_DATA_TYPE&gt; &gt; <a class="el" href="class_register_type_abstractor_raw_impl.html">RegisterTypeAbstractorRawImpl</a>&lt; RAW_DATA_TYPE, COOCKED_DATA_TYPE &gt;::_cachedCoockedData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cached data for painting. </p>
+<p>If exceptions occur during data conversion this does not happen every time when painting. </p>
+
+<p>Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00040">40</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
 
 </div>
 </div>
@@ -259,7 +308,7 @@ template&lt;class RAW_DATA_TYPE , class COOCKED_DATA_TYPE &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_register_type_abstractor_raw_impl.html">RegisterTypeAbstractorRawImpl</a></li>
-    <li class="footer">Generated on Fri Apr 27 2018 05:53:24 for QtHardMon by
+    <li class="footer">Generated on Sat Apr 28 2018 05:53:20 for QtHardMon by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
