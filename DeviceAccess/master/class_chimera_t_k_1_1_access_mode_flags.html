@@ -93,6 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_chimera_t_k_1_1_access_mode_flags-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ChimeraTK::AccessModeFlags Class Reference</div>  </div>
@@ -121,14 +122,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a43008754837b58d384cdd9c26b0747ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html#a43008754837b58d384cdd9c26b0747ca">checkForUnknownFlags</a> (const std::set&lt; <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11">AccessMode</a> &gt; &amp;knownFlags) const </td></tr>
 <tr class="memdesc:a43008754837b58d384cdd9c26b0747ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check of any flag which is not in the given set "knownFlags" is set.  <a href="#a43008754837b58d384cdd9c26b0747ca">More...</a><br /></td></tr>
 <tr class="separator:a43008754837b58d384cdd9c26b0747ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f38f72c1b5d96c72cd35c5ee0c318a8"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html#a9f38f72c1b5d96c72cd35c5ee0c318a8">getString</a> (const <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11">AccessMode</a> flag) const </td></tr>
-<tr class="memdesc:a9f38f72c1b5d96c72cd35c5ee0c318a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string representation of the given flag.  <a href="#a9f38f72c1b5d96c72cd35c5ee0c318a8">More...</a><br /></td></tr>
-<tr class="separator:a9f38f72c1b5d96c72cd35c5ee0c318a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a661836ae1fba8fcb4a4ed41f676ffe7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html#a661836ae1fba8fcb4a4ed41f676ffe7e">remove</a> (const <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11">AccessMode</a> flag)</td></tr>
+<tr class="memdesc:a661836ae1fba8fcb4a4ed41f676ffe7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the given flag from the set.  <a href="#a661836ae1fba8fcb4a4ed41f676ffe7e">More...</a><br /></td></tr>
+<tr class="separator:a661836ae1fba8fcb4a4ed41f676ffe7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6f8198e1092b53bfc0be4a8a221db0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html#af6f8198e1092b53bfc0be4a8a221db0c">add</a> (const <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11">AccessMode</a> flag)</td></tr>
+<tr class="memdesc:af6f8198e1092b53bfc0be4a8a221db0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the given flag to the set.  <a href="#af6f8198e1092b53bfc0be4a8a221db0c">More...</a><br /></td></tr>
+<tr class="separator:af6f8198e1092b53bfc0be4a8a221db0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae565211159aa587255487729dac0cf5c"><td class="memItemLeft" align="right" valign="top">static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html#ae565211159aa587255487729dac0cf5c">getString</a> (const <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11">AccessMode</a> flag)</td></tr>
+<tr class="memdesc:ae565211159aa587255487729dac0cf5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string representation of the given flag.  <a href="#ae565211159aa587255487729dac0cf5c">More...</a><br /></td></tr>
+<tr class="separator:ae565211159aa587255487729dac0cf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Set of AccessMode flags with additional functionality for an easier handling. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00039">39</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00040">40</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9b8244b9cba5317c0d10106b651f1100"></a>
 <div class="memitem">
@@ -154,7 +164,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Constructor initialises from a std::set&lt;AccessMode&gt; </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00044">44</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00045">45</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 
 </div>
 </div>
@@ -183,11 +193,39 @@ Public Member Functions</h2></td></tr>
 <p>Constructor initialises from a brace initialiser list (e.g. </p>
 <p>"{AccessMode::raw}"). Hint: You can use the brace initialiser list also without explicitly using the class name, when calling a function which has an argument of the type <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a>. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00051">51</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00052">52</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af6f8198e1092b53bfc0be4a8a221db0c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::AccessModeFlags::add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11">AccessMode</a>&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add the given flag to the set. </p>
+
+<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00083">83</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a43008754837b58d384cdd9c26b0747ca"></a>
 <div class="memitem">
 <div class="memproto">
@@ -213,7 +251,7 @@ Public Member Functions</h2></td></tr>
 <p>Check of any flag which is not in the given set "knownFlags" is set. </p>
 <p>If an unknown flag has been found, a <a class="el" href="class_chimera_t_k_1_1_device_exception.html" title="A class to provide exceptions for Device. ">DeviceException</a> with the id NOT_IMPLEMENTED is raised. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00067">67</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00068">68</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 
 </div>
 </div>
@@ -241,11 +279,11 @@ Public Member Functions</h2></td></tr>
 <p>Check if the set is empty (i.e. </p>
 <p>no flag has been set) </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00061">61</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00062">62</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9f38f72c1b5d96c72cd35c5ee0c318a8"></a>
+<a class="anchor" id="ae565211159aa587255487729dac0cf5c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -253,23 +291,23 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string&amp; ChimeraTK::AccessModeFlags::getString </td>
+          <td class="memname">static const std::string&amp; ChimeraTK::AccessModeFlags::getString </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11">AccessMode</a>&#160;</td>
           <td class="paramname"><em>flag</em></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Get a string representation of the given flag. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00077">77</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00088">88</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 
 </div>
 </div>
@@ -297,7 +335,35 @@ Public Member Functions</h2></td></tr>
 
 <p>Check if a certain flag is in the set. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00056">56</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00057">57</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a661836ae1fba8fcb4a4ed41f676ffe7e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::AccessModeFlags::remove </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11">AccessMode</a>&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove the given flag from the set. </p>
+
+<p>Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00078">78</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 
 </div>
 </div>
@@ -307,7 +373,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 28 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 7 2018 14:16:36 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
