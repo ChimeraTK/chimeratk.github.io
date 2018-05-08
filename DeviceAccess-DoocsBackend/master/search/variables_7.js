@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['object_5fname',['object_name',['../_doocs_backend_8cc.html#a06c138c2b0b13b0e11be4e16bf242cb8',1,'DoocsBackend.cc']]]
+  ['nelements',['nElements',['../classmtca4u_1_1_doocs_backend_register_accessor.html#aca5b8fd1cf25416f22b8023232d3b03d',1,'mtca4u::DoocsBackendRegisterAccessor']]]
 ];

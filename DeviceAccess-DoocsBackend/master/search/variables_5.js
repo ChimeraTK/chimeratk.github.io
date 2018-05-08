@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['isarray',['isArray',['../classmtca4u_1_1_doocs_backend_register_accessor.html#a1abdd61690c32f8702913aa429e4088e',1,'mtca4u::DoocsBackendRegisterAccessor']]],
-  ['ispartial',['isPartial',['../classmtca4u_1_1_doocs_backend_register_accessor.html#a21f6ee806d41d32cb290e7e43d0eca47',1,'mtca4u::DoocsBackendRegisterAccessor']]]
+  ['fixedpointconverter',['fixedPointConverter',['../classmtca4u_1_1_doocs_backend_int_register_accessor.html#a39928676e30b82c702b4ec6523d5c94c',1,'mtca4u::DoocsBackendIntRegisterAccessor::fixedPointConverter()'],['../classmtca4u_1_1_doocs_backend_long_register_accessor.html#a9940d9b25045ed85a16c986f6793d7c6',1,'mtca4u::DoocsBackendLongRegisterAccessor::fixedPointConverter()']]]
 ];

@@ -132,8 +132,10 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a67efdf1f8037fa5a7dd263fe3c37d5bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_doocs_backend.html#a67efdf1f8037fa5a7dd263fe3c37d5bb">DoocsBackend</a> (const RegisterPath &amp;serverAddress)</td></tr>
 <tr class="separator:a67efdf1f8037fa5a7dd263fe3c37d5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90e860e4606968ecfee5badc07f9c514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_doocs_backend.html#a90e860e4606968ecfee5badc07f9c514">fillCatalogue</a> (std::string fixedComponents, int level)</td></tr>
-<tr class="separator:a90e860e4606968ecfee5badc07f9c514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893d64215cc6bd3f705f56d1e73fbf80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_doocs_backend.html#a893d64215cc6bd3f705f56d1e73fbf80">fillCatalogue</a> (std::string fixedComponents, long level) const </td></tr>
+<tr class="separator:a893d64215cc6bd3f705f56d1e73fbf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac73edf22d6831a6c949acbac4c7fa1ec"><td class="memItemLeft" align="right" valign="top">const RegisterCatalogue &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_doocs_backend.html#ac73edf22d6831a6c949acbac4c7fa1ec">getRegisterCatalogue</a> () const override</td></tr>
+<tr class="separator:ac73edf22d6831a6c949acbac4c7fa1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa61a9c741afb9dd6d31ceec19db90a79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_doocs_backend.html#aa61a9c741afb9dd6d31ceec19db90a79">open</a> () override</td></tr>
 <tr class="separator:aa61a9c741afb9dd6d31ceec19db90a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a572d5032ce421a851f74ae9a4180d492"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_doocs_backend.html#a572d5032ce421a851f74ae9a4180d492">close</a> () override</td></tr>
@@ -156,6 +158,12 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ac8676121e08c7e77745282a6eb6a6216"><td class="memItemLeft" align="right" valign="top">RegisterPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_doocs_backend.html#ac8676121e08c7e77745282a6eb6a6216">_serverAddress</a></td></tr>
 <tr class="memdesc:ac8676121e08c7e77745282a6eb6a6216"><td class="mdescLeft">&#160;</td><td class="mdescRight">DOOCS address component for the server (FACILITY/DEVICE)  <a href="#ac8676121e08c7e77745282a6eb6a6216">More...</a><br /></td></tr>
 <tr class="separator:ac8676121e08c7e77745282a6eb6a6216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2480e6514dbe314fdeede7193cbc5548"><td class="memItemLeft" align="right" valign="top">RegisterCatalogue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_doocs_backend.html#a2480e6514dbe314fdeede7193cbc5548">_catalogue_mutable</a></td></tr>
+<tr class="memdesc:a2480e6514dbe314fdeede7193cbc5548"><td class="mdescLeft">&#160;</td><td class="mdescRight">We need to make the catalogue mutable, since we fill it within <a class="el" href="classmtca4u_1_1_doocs_backend.html#ac73edf22d6831a6c949acbac4c7fa1ec">getRegisterCatalogue()</a>  <a href="#a2480e6514dbe314fdeede7193cbc5548">More...</a><br /></td></tr>
+<tr class="separator:a2480e6514dbe314fdeede7193cbc5548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab6fa365230db7c8e4502f746fd217f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_doocs_backend.html#a8ab6fa365230db7c8e4502f746fd217f">catalogueFilled</a> {false}</td></tr>
+<tr class="memdesc:a8ab6fa365230db7c8e4502f746fd217f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether the catalogue has already been filled.  <a href="#a8ab6fa365230db7c8e4502f746fd217f">More...</a><br /></td></tr>
+<tr class="separator:a8ab6fa365230db7c8e4502f746fd217f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -254,7 +262,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00203">203</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00209">209</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -346,7 +354,7 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a90e860e4606968ecfee5badc07f9c514"></a>
+<a class="anchor" id="a893d64215cc6bd3f705f56d1e73fbf80"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -362,13 +370,13 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">long&#160;</td>
           <td class="paramname"><em>level</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -429,7 +437,32 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00210">210</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00216">216</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac73edf22d6831a6c949acbac4c7fa1ec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const RegisterCatalogue &amp; mtca4u::DoocsBackend::getRegisterCatalogue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00193">193</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -479,7 +512,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00049">49</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00051">51</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
@@ -504,11 +537,35 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00076">76</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00084">84</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a2480e6514dbe314fdeede7193cbc5548"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RegisterCatalogue mtca4u::DoocsBackend::_catalogue_mutable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>We need to make the catalogue mutable, since we fill it within <a class="el" href="classmtca4u_1_1_doocs_backend.html#ac73edf22d6831a6c949acbac4c7fa1ec">getRegisterCatalogue()</a> </p>
+
+<p>Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00067">67</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac8676121e08c7e77745282a6eb6a6216"></a>
 <div class="memitem">
 <div class="memproto">
@@ -529,7 +586,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>DOOCS address component for the server (FACILITY/DEVICE) </p>
 
-<p>Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00062">62</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00064">64</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
@@ -551,7 +608,31 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00069">69</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00077">77</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ab6fa365230db7c8e4502f746fd217f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mtca4u::DoocsBackend::catalogueFilled {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flag whether the catalogue has already been filled. </p>
+
+<p>Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00070">70</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
@@ -575,7 +656,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>static flag if dmsg_start() has been called already, with mutex for thread safety </p>
 
-<p>Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00072">72</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00080">80</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
@@ -597,7 +678,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00073">73</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00081">81</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
@@ -608,7 +689,7 @@ template&lt;typename UserType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 1 2018 05:58:10 for ChimeraTK-DeviceAccess-DoocsBackend by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 8 2018 05:53:38 for ChimeraTK-DeviceAccess-DoocsBackend by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
