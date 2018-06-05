@@ -107,11 +107,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;boost/interprocess/containers/vector.hpp&gt;</code><br />
 <code>#include &lt;boost/interprocess/allocators/allocator.hpp&gt;</code><br />
 <code>#include &lt;boost/interprocess/sync/named_mutex.hpp&gt;</code><br />
+<code>#include &lt;boost/unordered_set.hpp&gt;</code><br />
 <code>#include &lt;boost/function.hpp&gt;</code><br />
 <code>#include &lt;boost/filesystem.hpp&gt;</code><br />
 <code>#include &quot;Exception.h&quot;</code><br />
 <code>#include &quot;RegisterInfoMap.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="device__backends_2include_2_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_shared_dummy_backend_exception_8h_source.html">SharedDummyBackendException.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_process_management_8h_source.html">ProcessManagement.h</a>&quot;</code><br />
 </div>
 <p><a href="_shared_dummy_backend_8h_source.html">Go to the source code of this file.</a></p>
@@ -119,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html">ChimeraTK::SharedDummyBackend</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO DOCUMENTATION.  <a href="class_chimera_t_k_1_1_shared_dummy_backend.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shared dummy device opens a mapping file defining the registers and implements them in shared memory instead of connecting to the real device.  <a href="class_chimera_t_k_1_1_shared_dummy_backend.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -134,8 +136,24 @@ Typedefs</h2></td></tr>
 <tr class="separator:a10e04a31366079cb5f6a395b68373295"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5c130c00eb99bd7fa9e98a5a552ff3d"><td class="memItemLeft" align="right" valign="top">typedef boost::interprocess::vector&lt; int32_t, <a class="el" href="_shared_dummy_backend_8h.html#a10e04a31366079cb5f6a395b68373295">ShmemAllocator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_shared_dummy_backend_8h.html#ae5c130c00eb99bd7fa9e98a5a552ff3d">SharedMemoryVector</a></td></tr>
 <tr class="separator:ae5c130c00eb99bd7fa9e98a5a552ff3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ad18a95d5f451480dbf4e0fcdf3b7c"><td class="memItemLeft" align="right" valign="top">typedef boost::interprocess::vector&lt; int32_t, <a class="el" href="_shared_dummy_backend_8h.html#a10e04a31366079cb5f6a395b68373295">ShmemAllocator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_shared_dummy_backend_8h.html#a60ad18a95d5f451480dbf4e0fcdf3b7c">PidSet</a></td></tr>
+<tr class="separator:a60ad18a95d5f451480dbf4e0fcdf3b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a60ad18a95d5f451480dbf4e0fcdf3b7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::interprocess::vector&lt;int32_t, <a class="el" href="_shared_dummy_backend_8h.html#a10e04a31366079cb5f6a395b68373295">ShmemAllocator</a>&gt; <a class="el" href="_shared_dummy_backend_8h.html#a60ad18a95d5f451480dbf4e0fcdf3b7c">PidSet</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00029">29</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ae5c130c00eb99bd7fa9e98a5a552ff3d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -146,7 +164,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00027">27</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
+<p>Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00028">28</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -160,14 +178,14 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00026">26</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
+<p>Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00027">27</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 18 2018 05:53:12 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 5 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -10,6 +10,6 @@ var searchData=
   ['invalid_5faddress',['INVALID_ADDRESS',['../class_chimera_t_k_1_1_dummy_backend_exception.html#a78eb95242829ec8662bda2033fe08baaacad338cf9316ccc97c6f27bdc8312915',1,'ChimeraTK::DummyBackendException']]],
   ['invalid_5fn_5felements',['INVALID_N_ELEMENTS',['../class_chimera_t_k_1_1_device_exception.html#ad01e6c87413912b55cce72c89c7c2514aeccbbc0b785827a87cbb00733f2126a5',1,'ChimeraTK::DeviceException']]],
   ['invalid_5fparameter',['INVALID_PARAMETER',['../class_chimera_t_k_1_1_dummy_backend_exception.html#a78eb95242829ec8662bda2033fe08baaafdb7a321a36dd3c425abcb3aa4b71b6e',1,'ChimeraTK::DummyBackendException']]],
-  ['invalid_5fsdm',['INVALID_SDM',['../class_chimera_t_k_1_1_sdm_uri_parse_exception.html#a5bee61d785fd56391a49c37b6a925c57a9f4bb401b2b9d27884911e23eba88184',1,'ChimeraTK::SdmUriParseException']]],
+  ['invalid_5fsdm',['INVALID_SDM',['../class_chimera_t_k_1_1_sdm_uri_parse_exception.html#aeca59ed32951e75602d3261dfd49004ca9f4bb401b2b9d27884911e23eba88184',1,'ChimeraTK::SdmUriParseException']]],
   ['invalid_5fword_5fsize',['INVALID_WORD_SIZE',['../class_chimera_t_k_1_1_device_exception.html#ad01e6c87413912b55cce72c89c7c2514ac8e8baaf9a694da2a0413ca4772b9ae5',1,'ChimeraTK::DeviceException']]]
 ];

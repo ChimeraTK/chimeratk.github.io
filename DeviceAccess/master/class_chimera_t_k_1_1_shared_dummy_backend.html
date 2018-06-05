@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>TODO DOCUMENTATION.  
+<p>The shared dummy device opens a mapping file defining the registers and implements them in shared memory instead of connecting to the real device.  
  <a href="class_chimera_t_k_1_1_shared_dummy_backend.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>&gt;</code></p>
@@ -233,9 +233,11 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a87b4855ffb37cc6edebe5085304ab354 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>TODO DOCUMENTATION. </p>
+<div class="textblock"><p>The shared dummy device opens a mapping file defining the registers and implements them in shared memory instead of connecting to the real device. </p>
+<p>Thus, it provides access to the registers from several applications. The registers an application accesses can be stimulated or monitored by another process, e.g. for development and testing.</p>
+<p>Accessing applications are required to the same mapping file (matching absolute path) and to be run by the same user. </p>
 
-<p>Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00033">33</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
+<p>Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00042">42</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1caea4b00d60bb10686e2391b9305381"></a>
 <div class="memitem">
@@ -286,7 +288,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00049">49</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p>Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00048">48</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -316,7 +318,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a655b8995589b3916ce9b71633f8fe33e">ChimeraTK::DeviceBackend</a>.</p>
 
-<p>Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00108">108</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p>Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00099">99</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -364,7 +366,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00161">161</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p>Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00157">157</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -419,7 +421,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a9da6866e3f0b481e1fcc13985382f5f9">ChimeraTK::DeviceBackend</a>.</p>
 
-<p>Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00100">100</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p>Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00091">91</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -473,7 +475,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ac9793fa0906c50fe472b871964f54f64">ChimeraTK::NumericAddressedBackend</a>.</p>
 
-<p>Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00115">115</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p>Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00106">106</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -503,7 +505,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a6c0c6390d697ba054d377d2f96082dbc">ChimeraTK::NumericAddressedBackend</a>.</p>
 
-<p>Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00137">137</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p>Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00134">134</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -557,7 +559,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ae787be574ee1a808ce4a7191aed72e9d">ChimeraTK::NumericAddressedBackend</a>.</p>
 
-<p>Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00126">126</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
+<p>Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00120">120</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -568,7 +570,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 18 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 5 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

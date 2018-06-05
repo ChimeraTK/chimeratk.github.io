@@ -105,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>The dummy device opens a mapping file instead of a device, and implements all registers defined in the mapping file im memory.  
+<p>The dummy device opens a mapping file instead of a device, and implements all registers defined in the mapping file in memory.  
  <a href="class_chimera_t_k_1_1_dummy_backend.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>&gt;</code></p>
@@ -137,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a733a54ce43fc6c1573c882216dea378a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the device.  <a href="#a733a54ce43fc6c1573c882216dea378a">More...</a><br /></td></tr>
 <tr class="separator:a733a54ce43fc6c1573c882216dea378a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e51a4afc0ca31fa50a3db740192ba2c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a2e51a4afc0ca31fa50a3db740192ba2c">close</a> ()</td></tr>
-<tr class="memdesc:a2e51a4afc0ca31fa50a3db740192ba2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This closes the device, clears all internal regsiters, read-only settings and callback functions.  <a href="#a2e51a4afc0ca31fa50a3db740192ba2c">More...</a><br /></td></tr>
+<tr class="memdesc:a2e51a4afc0ca31fa50a3db740192ba2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This closes the device, clears all internal registers, read-only settings and callback functions.  <a href="#a2e51a4afc0ca31fa50a3db740192ba2c">More...</a><br /></td></tr>
 <tr class="separator:a2e51a4afc0ca31fa50a3db740192ba2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a8b09a4c794b7f2db7f9d4d54188b9e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a7a8b09a4c794b7f2db7f9d4d54188b9e">read</a> (uint8_t bar, uint32_t address, int32_t *data, size_t sizeInBytes)</td></tr>
 <tr class="memdesc:a7a8b09a4c794b7f2db7f9d4d54188b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">DEPRECATED.  <a href="#a7a8b09a4c794b7f2db7f9d4d54188b9e">More...</a><br /></td></tr>
@@ -306,7 +306,7 @@ Friends</h2></td></tr>
 <tr class="separator:a86f6fa93be9f2f1cd6bd9f941279d0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The dummy device opens a mapping file instead of a device, and implements all registers defined in the mapping file im memory. </p>
+<div class="textblock"><p>The dummy device opens a mapping file instead of a device, and implements all registers defined in the mapping file in memory. </p>
 <p>Like this it mimiks the real PCIe device.</p>
 <p>Deriving from this class, you can write dedicated implementations with special functionality. For this purpose one can register write callback function which are executed if a certain register (or range of registers) is written. For instance: Writing to a START_DAQ register can fill a data buffer with dummy values which can be read back. For each call of writeReg or writeArea the callback function is called once. If you require the callback function to be executed after each register change, use writeReg multiple times instead of writeArea.</p>
 <p>Registers can be set to read-only mode. In this case a write operation will just be ignored and no callback function is executed. </p>
@@ -444,7 +444,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>This closes the device, clears all internal regsiters, read-only settings and callback functions. </p>
+<p>This closes the device, clears all internal registers, read-only settings and callback functions. </p>
 <p>As the device could be opened with another mapping file later, these will most probably be invalid in this case. This is why the read-only settings and callback functions have to be set again when reopening the file. </p>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a655b8995589b3916ce9b71633f8fe33e">ChimeraTK::DeviceBackend</a>.</p>
@@ -1288,7 +1288,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 18 2018 05:53:12 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 5 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
