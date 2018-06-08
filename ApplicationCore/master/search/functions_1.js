@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['check',['check',['../class_chimera_t_k_1_1_variable_network.html#ade58618cff8f9ab1d12bfe5c46cee279',1,'ChimeraTK::VariableNetwork']]],
+  ['check',['check',['../class_chimera_t_k_1_1_variable_network.html#ad7953d81a5bc3cdd0ca2c4e9c0f1c9b9',1,'ChimeraTK::VariableNetwork']]],
   ['checkconnections',['checkConnections',['../class_chimera_t_k_1_1_application.html#a9297edd9885aa6510aa44c2cdf49d19b',1,'ChimeraTK::Application']]],
-  ['cleandotnode',['cleanDotNode',['../class_chimera_t_k_1_1_entity_owner.html#ae139774587c533194d60c7433da4b4d3',1,'ChimeraTK::EntityOwner']]],
   ['clearowner',['clearOwner',['../class_chimera_t_k_1_1_variable_network_node.html#a151c28c8c8a95953419919aee3f180d2',1,'ChimeraTK::VariableNetworkNode']]],
   ['configreader',['ConfigReader',['../struct_chimera_t_k_1_1_config_reader.html#ad0dcca74fb73bfa5705878fa506bc365',1,'ChimeraTK::ConfigReader']]],
   ['connect',['connect',['../class_chimera_t_k_1_1_application.html#a17b9eed2f522249889c7138cffbba8c3',1,'ChimeraTK::Application']]],
@@ -19,6 +18,5 @@ var searchData=
   ['createnetwork',['createNetwork',['../class_chimera_t_k_1_1_application.html#afbcfcd3b9b23aa5df19a661a9f8a80bb',1,'ChimeraTK::Application']]],
   ['createprocessvariable',['createProcessVariable',['../class_chimera_t_k_1_1_application.html#a56aa744909cdc42c3fabef0a0d149171',1,'ChimeraTK::Application']]],
   ['createvar',['createVar',['../struct_chimera_t_k_1_1_config_reader.html#a4d05f33a9e1cec75914953c25c51e6ce',1,'ChimeraTK::ConfigReader']]],
-  ['createvar_3c_20std_3a_3astring_20_3e',['createVar&lt; std::string &gt;',['../namespace_chimera_t_k.html#a6e327a9236115c1fe8a03f2c31e61fbb',1,'ChimeraTK']]],
-  ['createxml',['createXML',['../class_chimera_t_k_1_1_variable_network_node.html#a8cfd4b3eec30592d2e06af587452c29b',1,'ChimeraTK::VariableNetworkNode']]]
+  ['createvar_3c_20std_3a_3astring_20_3e',['createVar&lt; std::string &gt;',['../namespace_chimera_t_k.html#a6e327a9236115c1fe8a03f2c31e61fbb',1,'ChimeraTK']]]
 ];

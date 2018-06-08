@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['save',['save',['../class_chimera_t_k_1_1_x_m_l_generator_visitor.html#a1f90321de26db73419b2af7276198731',1,'ChimeraTK::XMLGeneratorVisitor']]],
   ['scalaraccessor',['ScalarAccessor',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
   ['scalaraccessor',['ScalarAccessor',['../class_chimera_t_k_1_1_scalar_accessor.html#a70ce096ac2a1a7f4b8458a8b154a884b',1,'ChimeraTK::ScalarAccessor::ScalarAccessor(ScalarAccessor&lt; UserType &gt; &amp;&amp;other)'],['../class_chimera_t_k_1_1_scalar_accessor.html#afaa607b47634ffdc104506df939254cc',1,'ChimeraTK::ScalarAccessor::ScalarAccessor(Module *owner, const std::string &amp;name, VariableDirection direction, std::string unit, UpdateMode mode, const std::string &amp;description, const std::unordered_set&lt; std::string &gt; &amp;tags={})'],['../class_chimera_t_k_1_1_scalar_accessor.html#a4fa8cd9b26d33702d0364ddc052b2701',1,'ChimeraTK::ScalarAccessor::ScalarAccessor()']]],
   ['scalaraccessor_2eh',['ScalarAccessor.h',['../_scalar_accessor_8h.html',1,'']]],
@@ -22,8 +23,8 @@ var searchData=
   ['scalaroutput_3c_20uint32_5ft_20_3e',['ScalarOutput&lt; uint32_t &gt;',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK']]],
   ['scalarpipe',['ScalarPipe',['../struct_chimera_t_k_1_1_scalar_pipe.html',1,'ChimeraTK']]],
   ['scalarpipe',['ScalarPipe',['../struct_chimera_t_k_1_1_scalar_pipe.html#a19b975c2618af620d20d4d578a25b1f9',1,'ChimeraTK::ScalarPipe::ScalarPipe(EntityOwner *owner, const std::string &amp;name, const std::string &amp;unit, const std::string &amp;description, const std::unordered_set&lt; std::string &gt; &amp;tagsInput={}, const std::unordered_set&lt; std::string &gt; &amp;tagsOutput={})'],['../struct_chimera_t_k_1_1_scalar_pipe.html#a5196340b1bb1cd213858d6b0dae8f7da',1,'ChimeraTK::ScalarPipe::ScalarPipe(EntityOwner *owner, const std::string &amp;inputName, const std::string &amp;outputName, const std::string &amp;unit, const std::string &amp;description, const std::unordered_set&lt; std::string &gt; &amp;tagsInput={}, const std::unordered_set&lt; std::string &gt; &amp;tagsOutput={})'],['../struct_chimera_t_k_1_1_scalar_pipe.html#a54e555dffaea419830016b56cc8a951d',1,'ChimeraTK::ScalarPipe::ScalarPipe()']]],
-  ['scalarpollinput',['ScalarPollInput',['../struct_chimera_t_k_1_1_scalar_poll_input.html',1,'ChimeraTK']]],
   ['scalarpollinput',['ScalarPollInput',['../struct_chimera_t_k_1_1_scalar_poll_input.html#a2844c99acc771646735b7c04eef15871',1,'ChimeraTK::ScalarPollInput::ScalarPollInput(Module *owner, const std::string &amp;name, std::string unit, const std::string &amp;description, const std::unordered_set&lt; std::string &gt; &amp;tags={})'],['../struct_chimera_t_k_1_1_scalar_poll_input.html#afc185d07cc1ad465a77f78305d1ff27d',1,'ChimeraTK::ScalarPollInput::ScalarPollInput()']]],
+  ['scalarpollinput',['ScalarPollInput',['../struct_chimera_t_k_1_1_scalar_poll_input.html',1,'ChimeraTK']]],
   ['scalarpollinput_3c_20int_20_3e',['ScalarPollInput&lt; int &gt;',['../struct_chimera_t_k_1_1_scalar_poll_input.html',1,'ChimeraTK']]],
   ['scalarpollinput_3c_20std_3a_3astring_20_3e',['ScalarPollInput&lt; std::string &gt;',['../struct_chimera_t_k_1_1_scalar_poll_input.html',1,'ChimeraTK']]],
   ['scalarpollinput_3c_20uint_20_3e',['ScalarPollInput&lt; uint &gt;',['../struct_chimera_t_k_1_1_scalar_poll_input.html',1,'ChimeraTK']]],
@@ -51,7 +52,8 @@ var searchData=
   ['startmeasurement',['startMeasurement',['../class_chimera_t_k_1_1_profiler.html#a554c05bc62a8da847726645b94a62e5c',1,'ChimeraTK::Profiler']]],
   ['stepapplication',['stepApplication',['../class_chimera_t_k_1_1_application.html#abb8be141c45a20ad4e836ecf82ff9573',1,'ChimeraTK::Application::stepApplication()'],['../class_chimera_t_k_1_1_test_facility.html#a91e86d073491bdeb78354cb0f03adc31',1,'ChimeraTK::TestFacility::stepApplication()']]],
   ['stopmeasurement',['stopMeasurement',['../class_chimera_t_k_1_1_profiler.html#a35af786affb9aecdc2e36a792c9ff5a5',1,'ChimeraTK::Profiler']]],
+  ['stream',['stream',['../class_chimera_t_k_1_1_pushable_stream.html#a916dbc0fd3430135e4fbb2a73c22e52e',1,'ChimeraTK::PushableStream']]],
   ['stringpair',['StringPair',['../struct_chimera_t_k_1_1_functor_fill.html#a3263a9dfb5e19915b33c1cab357fa03a',1,'ChimeraTK::FunctorFill::StringPair()'],['../struct_chimera_t_k_1_1_array_functor_fill.html#a372870f827d7ba1ae4b78128c147e187',1,'ChimeraTK::ArrayFunctorFill::StringPair()']]],
-  ['submodules',['submodules',['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()'],['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()'],['../class_chimera_t_k_1_1_device_module.html#ad76777799c8dba6eaea5a78b2a0ac3e9',1,'ChimeraTK::DeviceModule::subModules()']]],
+  ['submodules',['subModules',['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()'],['../class_chimera_t_k_1_1_device_module.html#ad76777799c8dba6eaea5a78b2a0ac3e9',1,'ChimeraTK::DeviceModule::subModules()'],['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()']]],
   ['supportedusertypes_2eh',['SupportedUserTypes.h',['../_supported_user_types_8h.html',1,'']]]
 ];
