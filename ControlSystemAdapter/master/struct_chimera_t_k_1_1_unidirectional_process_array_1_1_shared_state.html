@@ -105,26 +105,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abd938fb72f2c2dddedb414eea473467e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_shared_state.html#abd938fb72f2c2dddedb414eea473467e">SharedState</a> (size_t numberOfBuffers)</td></tr>
-<tr class="separator:abd938fb72f2c2dddedb414eea473467e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023c15d6e1a561a0f89b681d2f2f8ff5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_shared_state.html#a023c15d6e1a561a0f89b681d2f2f8ff5">SharedState</a> (size_t numberOfBuffers, size_t bufferLength)</td></tr>
+<tr class="separator:a023c15d6e1a561a0f89b681d2f2f8ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee139f59b95e72859a6336be4bb7f39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_shared_state.html#afee139f59b95e72859a6336be4bb7f39">SharedState</a> (const <a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_shared_state.html">SharedState</a> &amp;other)</td></tr>
+<tr class="separator:afee139f59b95e72859a6336be4bb7f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab60a308f98deaec3a9e4137509594865"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_buffer.html">Buffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_shared_state.html#ab60a308f98deaec3a9e4137509594865">_buffers</a></td></tr>
-<tr class="memdesc:ab60a308f98deaec3a9e4137509594865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffers that hold the actual values.  <a href="#ab60a308f98deaec3a9e4137509594865">More...</a><br /></td></tr>
-<tr class="separator:ab60a308f98deaec3a9e4137509594865"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a486145f65125f765534b003b65be3a"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; <a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_buffer.html">Buffer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_shared_state.html#a5a486145f65125f765534b003b65be3a">_tripleBufferIndex</a></td></tr>
-<tr class="memdesc:a5a486145f65125f765534b003b65be3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special atomic triple buffer to be filled when the queue runs over (i.e.  <a href="#a5a486145f65125f765534b003b65be3a">More...</a><br /></td></tr>
-<tr class="separator:a5a486145f65125f765534b003b65be3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96f1887a10f7e4e3a49703b8c43ab2ad"><td class="memItemLeft" align="right" valign="top">boost::lockfree::spsc_queue&lt; TransferFuture::PlainFutureType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_shared_state.html#a96f1887a10f7e4e3a49703b8c43ab2ad">_fullBufferQueue</a></td></tr>
-<tr class="memdesc:a96f1887a10f7e4e3a49703b8c43ab2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue holding the indices of the full buffers.  <a href="#a96f1887a10f7e4e3a49703b8c43ab2ad">More...</a><br /></td></tr>
-<tr class="separator:a96f1887a10f7e4e3a49703b8c43ab2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54a2eda0be4a3342ac8c41e2a2aa13ef"><td class="memItemLeft" align="right" valign="top">boost::lockfree::spsc_queue&lt; <a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_buffer.html">Buffer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_shared_state.html#a54a2eda0be4a3342ac8c41e2a2aa13ef">_emptyBufferQueue</a></td></tr>
-<tr class="memdesc:a54a2eda0be4a3342ac8c41e2a2aa13ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue holding the empty buffers.  <a href="#a54a2eda0be4a3342ac8c41e2a2aa13ef">More...</a><br /></td></tr>
-<tr class="separator:a54a2eda0be4a3342ac8c41e2a2aa13ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08909cff51085fd3b09ce0a7fe9bdfa2"><td class="memItemLeft" align="right" valign="top">TransferFuture::PromiseType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_shared_state.html#a08909cff51085fd3b09ce0a7fe9bdfa2">_notificationPromise</a></td></tr>
-<tr class="memdesc:a08909cff51085fd3b09ce0a7fe9bdfa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The promise corresponding to the unfulfilled future in the _fullBufferQueue.  <a href="#a08909cff51085fd3b09ce0a7fe9bdfa2">More...</a><br /></td></tr>
-<tr class="separator:a08909cff51085fd3b09ce0a7fe9bdfa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c6f64d643e4b037e6ae18ed9b403f9b"><td class="memItemLeft" align="right" valign="top">cppext::future_queue&lt; <a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_buffer.html">Buffer</a>, cppext::SWAP_DATA &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_shared_state.html#a9c6f64d643e4b037e6ae18ed9b403f9b">_queue</a></td></tr>
+<tr class="memdesc:a9c6f64d643e4b037e6ae18ed9b403f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue of buffers transporting the actual values.  <a href="#a9c6f64d643e4b037e6ae18ed9b403f9b">More...</a><br /></td></tr>
+<tr class="separator:a9c6f64d643e4b037e6ae18ed9b403f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
@@ -134,7 +124,7 @@ struct ChimeraTK::UnidirectionalProcessArray&lt; T &gt;::SharedState</h3>
 
 <p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00236">236</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="abd938fb72f2c2dddedb414eea473467e"></a>
+<a class="anchor" id="a023c15d6e1a561a0f89b681d2f2f8ff5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -147,8 +137,18 @@ template&lt;class T&gt; </div>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">ChimeraTK::UnidirectionalProcessArray</a>&lt; T &gt;::SharedState::SharedState </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>numberOfBuffers</em></td><td>)</td>
+          <td class="paramname"><em>numberOfBuffers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bufferLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -162,98 +162,50 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="afee139f59b95e72859a6336be4bb7f39"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">ChimeraTK::UnidirectionalProcessArray</a>&lt; T &gt;::SharedState::SharedState </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_shared_state.html">SharedState</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00253">253</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ab60a308f98deaec3a9e4137509594865"></a>
+<a class="anchor" id="a9c6f64d643e4b037e6ae18ed9b403f9b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_buffer.html">Buffer</a>&gt; <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">ChimeraTK::UnidirectionalProcessArray</a>&lt; T &gt;::SharedState::_buffers</td>
+          <td class="memname">cppext::future_queue&lt;<a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_buffer.html">Buffer</a>, cppext::SWAP_DATA&gt; <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">ChimeraTK::UnidirectionalProcessArray</a>&lt; T &gt;::SharedState::_queue</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Buffers that hold the actual values. </p>
+<p>Queue of buffers transporting the actual values. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00249">249</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a54a2eda0be4a3342ac8c41e2a2aa13ef"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::lockfree::spsc_queue&lt;<a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_buffer.html">Buffer</a>*&gt; <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">ChimeraTK::UnidirectionalProcessArray</a>&lt; T &gt;::SharedState::_emptyBufferQueue</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Queue holding the empty buffers. </p>
-<p>Those are the buffers that have been returned to the sender by the receiver. </p>
-
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00274">274</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a96f1887a10f7e4e3a49703b8c43ab2ad"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::lockfree::spsc_queue&lt; TransferFuture::PlainFutureType &gt; <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">ChimeraTK::UnidirectionalProcessArray</a>&lt; T &gt;::SharedState::_fullBufferQueue</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Queue holding the indices of the full buffers. </p>
-<p>Those are the buffers that have been sent but not yet received. We can use an spsc_queue for this queue because it is only filled by the sending process array and only consumed by the receiving process array. In fact, we have to use an spsc_queue because the standard boost::lockfree::queue cannot hold futures (as they are not trivially assignable / destructable). </p>
-
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00268">268</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a08909cff51085fd3b09ce0a7fe9bdfa2"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">TransferFuture::PromiseType <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">ChimeraTK::UnidirectionalProcessArray</a>&lt; T &gt;::SharedState::_notificationPromise</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The promise corresponding to the unfulfilled future in the _fullBufferQueue. </p>
-<p>This promise is basically only used by the sender. </p>
-
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00280">280</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5a486145f65125f765534b003b65be3a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt;<a class="el" href="struct_chimera_t_k_1_1_unidirectional_process_array_1_1_buffer.html">Buffer</a>*&gt; <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">ChimeraTK::UnidirectionalProcessArray</a>&lt; T &gt;::SharedState::_tripleBufferIndex</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Special atomic triple buffer to be filled when the queue runs over (i.e. </p>
-<p>all normal buffers are full). After construction, buffer 2 is owned by the sender, 3 by the shared state and 4 by the receiver. A buffer is considered containing valid data if its _isValid flag is set. The buffer's default constructor sets _isValid to false. </p>
-
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00258">258</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00259">259</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -263,7 +215,7 @@ template&lt;class T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 20 2018 05:53:15 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 26 2018 05:53:23 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
