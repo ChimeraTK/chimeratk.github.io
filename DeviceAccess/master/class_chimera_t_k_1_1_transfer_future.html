@@ -92,10 +92,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_chimera_t_k_1_1_transfer_future-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ChimeraTK::TransferFuture Class Reference</div>  </div>
@@ -107,21 +106,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_transfer_future_1_1_data.html">Data</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_chimera_t_k_1_1_transfer_future_1_1_data.html" title="Data class for the information transported by the future itself. ">Data</a> class for the information transported by the future itself.  <a href="struct_chimera_t_k_1_1_transfer_future_1_1_data.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a74508a2ec1568448a9d31bbac7fce846"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_future&lt; <a class="el" href="struct_chimera_t_k_1_1_transfer_future_1_1_data.html">Data</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a74508a2ec1568448a9d31bbac7fce846">PlainFutureType</a></td></tr>
-<tr class="memdesc:a74508a2ec1568448a9d31bbac7fce846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for the plain boost::shared_future type.  <a href="#a74508a2ec1568448a9d31bbac7fce846">More...</a><br /></td></tr>
-<tr class="separator:a74508a2ec1568448a9d31bbac7fce846"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab39a705c71eac410d1eb1e17ec30494d"><td class="memItemLeft" align="right" valign="top">typedef boost::promise&lt; <a class="el" href="struct_chimera_t_k_1_1_transfer_future_1_1_data.html">Data</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#ab39a705c71eac410d1eb1e17ec30494d">PromiseType</a></td></tr>
-<tr class="memdesc:ab39a705c71eac410d1eb1e17ec30494d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for the corresponding boost::promise type.  <a href="#ab39a705c71eac410d1eb1e17ec30494d">More...</a><br /></td></tr>
-<tr class="separator:ab39a705c71eac410d1eb1e17ec30494d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac69099e41046c798d94c8289c335574d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#ac69099e41046c798d94c8289c335574d">wait</a> ()</td></tr>
@@ -133,9 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ba1c6d44b81df708d5dea56994c0a04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a5ba1c6d44b81df708d5dea56994c0a04">TransferFuture</a> ()</td></tr>
 <tr class="memdesc:a5ba1c6d44b81df708d5dea56994c0a04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor to generate a dysfunctional future.  <a href="#a5ba1c6d44b81df708d5dea56994c0a04">More...</a><br /></td></tr>
 <tr class="separator:a5ba1c6d44b81df708d5dea56994c0a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1334c9894541b80e98b8b319f819e7e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a1334c9894541b80e98b8b319f819e7e2">TransferFuture</a> (<a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a74508a2ec1568448a9d31bbac7fce846">PlainFutureType</a> plainFuture, <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">ChimeraTK::TransferElement</a> *transferElement)</td></tr>
-<tr class="memdesc:a1334c9894541b80e98b8b319f819e7e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from boost future.  <a href="#a1334c9894541b80e98b8b319f819e7e2">More...</a><br /></td></tr>
-<tr class="separator:a1334c9894541b80e98b8b319f819e7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62fa81afb03640f26eab8685555adc26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a62fa81afb03640f26eab8685555adc26">TransferFuture</a> (cppext::future_queue&lt; void &gt; notifications, <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">ChimeraTK::TransferElement</a> *transferElement)</td></tr>
+<tr class="memdesc:a62fa81afb03640f26eab8685555adc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a future_queue&lt;void&gt;.  <a href="#a62fa81afb03640f26eab8685555adc26">More...</a><br /></td></tr>
+<tr class="separator:a62fa81afb03640f26eab8685555adc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e88d30f3fcc8a654d2c90b640e99070"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a2e88d30f3fcc8a654d2c90b640e99070">TransferFuture</a> (const <a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a> &amp;other, <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">ChimeraTK::TransferElement</a> *transferElement)</td></tr>
 <tr class="memdesc:a2e88d30f3fcc8a654d2c90b640e99070"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Decorating copy constructor": copy from other <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> but override the transfer element.  <a href="#a2e88d30f3fcc8a654d2c90b640e99070">More...</a><br /></td></tr>
 <tr class="separator:a2e88d30f3fcc8a654d2c90b640e99070"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,59 +144,31 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aad77bad2e40861ab8c86f4e4c3553e65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">ChimeraTK::TransferElementID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#aad77bad2e40861ab8c86f4e4c3553e65">getTransferElementID</a> ()</td></tr>
 <tr class="memdesc:aad77bad2e40861ab8c86f4e4c3553e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html" title="Simple class holding a unique ID for a TransferElement. ">TransferElementID</a> of the associated <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#aad77bad2e40861ab8c86f4e4c3553e65">More...</a><br /></td></tr>
 <tr class="separator:aad77bad2e40861ab8c86f4e4c3553e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2abe56634755c295fba47fb27a07e024"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a74508a2ec1568448a9d31bbac7fce846">PlainFutureType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a2abe56634755c295fba47fb27a07e024">getBoostFuture</a> ()</td></tr>
-<tr class="memdesc:a2abe56634755c295fba47fb27a07e024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the underlying BOOST future.  <a href="#a2abe56634755c295fba47fb27a07e024">More...</a><br /></td></tr>
-<tr class="separator:a2abe56634755c295fba47fb27a07e024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc7ddf4675f6f9eda0a3ffbb4a801ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a6bc7ddf4675f6f9eda0a3ffbb4a801ef">valid</a> () const </td></tr>
+<tr class="memdesc:a6bc7ddf4675f6f9eda0a3ffbb4a801ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> is valid.  <a href="#a6bc7ddf4675f6f9eda0a3ffbb4a801ef">More...</a><br /></td></tr>
+<tr class="separator:a6bc7ddf4675f6f9eda0a3ffbb4a801ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a5cb9168c6f2873051ef56b203ba086cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a74508a2ec1568448a9d31bbac7fce846">PlainFutureType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a5cb9168c6f2873051ef56b203ba086cf">_theFuture</a></td></tr>
-<tr class="memdesc:a5cb9168c6f2873051ef56b203ba086cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The plain boost future.  <a href="#a5cb9168c6f2873051ef56b203ba086cf">More...</a><br /></td></tr>
-<tr class="separator:a5cb9168c6f2873051ef56b203ba086cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054a0375dc4d222ec9958cf59feaf442"><td class="memItemLeft" align="right" valign="top">cppext::future_queue&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a054a0375dc4d222ec9958cf59feaf442">_notifications</a></td></tr>
+<tr class="memdesc:a054a0375dc4d222ec9958cf59feaf442"><td class="mdescLeft">&#160;</td><td class="mdescRight">The plain future_queue used for the notifications.  <a href="#a054a0375dc4d222ec9958cf59feaf442">More...</a><br /></td></tr>
+<tr class="separator:a054a0375dc4d222ec9958cf59feaf442"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f8f4bf910c6cfce8c63004a092d977e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html">ChimeraTK::TransferElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a3f8f4bf910c6cfce8c63004a092d977e">_transferElement</a></td></tr>
 <tr class="memdesc:a3f8f4bf910c6cfce8c63004a092d977e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#a3f8f4bf910c6cfce8c63004a092d977e">More...</a><br /></td></tr>
 <tr class="separator:a3f8f4bf910c6cfce8c63004a092d977e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a2e114ae50c3d1b5fb66ce3e0506dda9a"><td class="memItemLeft" align="right" valign="top">cppext::future_queue&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a2e114ae50c3d1b5fb66ce3e0506dda9a">ChimeraTK::detail::getFutureQueueFromTransferFuture</a> (<a class="el" href="class_chimera_t_k_1_1_transfer_future.html">ChimeraTK::TransferFuture</a> &amp;future)</td></tr>
+<tr class="separator:a2e114ae50c3d1b5fb66ce3e0506dda9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Special future returned by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad00999178a215bc11d9c1377c6427c23" title="Read data from the device in the background and return a future which will be fulfilled when the data...">TransferElement::readAsync()</a>. </p>
 <p>See its function description for more details.</p>
 <p>Design note: Due due a bug in BOOST 1.58 (already fixed in later versions, but we need to support this version), it is not possible to achieve this behaviour with a continuation with a launch policy of boost::launch::deferred, so we have to live with this wrapper class. In addition, the wait callback function of boost::future would be an insufficient replacement for the callback mechanism in this <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a>, since we need to distinguish whether the wait will block or not. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00045">45</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a74508a2ec1568448a9d31bbac7fce846"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef boost::shared_future&lt;<a class="el" href="struct_chimera_t_k_1_1_transfer_future_1_1_data.html">Data</a>*&gt; <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a74508a2ec1568448a9d31bbac7fce846">ChimeraTK::TransferFuture::PlainFutureType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Shortcut for the plain boost::shared_future type. </p>
-
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00069">69</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab39a705c71eac410d1eb1e17ec30494d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef boost::promise&lt;<a class="el" href="struct_chimera_t_k_1_1_transfer_future_1_1_data.html">Data</a>*&gt; <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#ab39a705c71eac410d1eb1e17ec30494d">ChimeraTK::TransferFuture::PromiseType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Shortcut for the corresponding boost::promise type. </p>
-
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00072">72</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00061">61</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5ba1c6d44b81df708d5dea56994c0a04"></a>
 <div class="memitem">
 <div class="memproto">
@@ -237,11 +193,11 @@ Protected Attributes</h2></td></tr>
 <p>Default constructor to generate a dysfunctional future. </p>
 <p>To initialise the future properly, reset() must be called afterwards. This pattern is used since the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> is a member of the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> and only references are returned by readAsync(). </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00077">77</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00075">75</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1334c9894541b80e98b8b319f819e7e2"></a>
+<a class="anchor" id="a62fa81afb03640f26eab8685555adc26"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -251,8 +207,8 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">ChimeraTK::TransferFuture::TransferFuture </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a74508a2ec1568448a9d31bbac7fce846">PlainFutureType</a>&#160;</td>
-          <td class="paramname"><em>plainFuture</em>, </td>
+          <td class="paramtype">cppext::future_queue&lt; void &gt;&#160;</td>
+          <td class="paramname"><em>notifications</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -273,7 +229,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct from boost future. </p>
+<p>Construct from a future_queue&lt;void&gt;. </p>
+<p>The queue should contain notifications when a transfer is complete. It is the responsibility of this <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> to call the proper postRead() function, so the notification must only be about the completion of the equivalent of doReadTransfer(). </p>
 
 <p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00081">81</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
 
@@ -410,34 +367,6 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2abe56634755c295fba47fb27a07e024"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a74508a2ec1568448a9d31bbac7fce846">PlainFutureType</a>&amp; ChimeraTK::TransferFuture::getBoostFuture </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return the underlying BOOST future. </p>
-<p>Be careful when using it. Simply waiting on that future is not sufficient since the very purpose of this class is to add functionality. Always call <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#ac69099e41046c798d94c8289c335574d" title="Block the current thread until the new data has arrived. ">TransferFuture::wait()</a> before accessing the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> again! </p>
-
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00120">120</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="aad77bad2e40861ab8c86f4e4c3553e65"></a>
 <div class="memitem">
 <div class="memproto">
@@ -453,7 +382,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Return the <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html" title="Simple class holding a unique ID for a TransferElement. ">TransferElementID</a> of the associated <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
 
-<p>Definition at line <a class="el" href="_transfer_future_8cc_source.html#l00020">20</a> of file <a class="el" href="_transfer_future_8cc_source.html">TransferFuture.cc</a>.</p>
+<p>Definition at line <a class="el" href="_transfer_future_8cc_source.html#l00019">19</a> of file <a class="el" href="_transfer_future_8cc_source.html">TransferFuture.cc</a>.</p>
 
 </div>
 </div>
@@ -558,6 +487,33 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6bc7ddf4675f6f9eda0a3ffbb4a801ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::TransferFuture::valid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> is valid. </p>
+
+<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00116">116</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac69099e41046c798d94c8289c335574d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -578,8 +534,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a5cb9168c6f2873051ef56b203ba086cf"></a>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="a2e114ae50c3d1b5fb66ce3e0506dda9a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -587,7 +543,32 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a74508a2ec1568448a9d31bbac7fce846">PlainFutureType</a> ChimeraTK::TransferFuture::_theFuture</td>
+          <td class="memname">cppext::future_queue&lt;void&gt; <a class="el" href="namespace_chimera_t_k_1_1detail.html#a5f66716099251ed1094bc45bbc0386c7">ChimeraTK::detail::getFutureQueueFromTransferFuture</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">ChimeraTK::TransferFuture</a> &amp;&#160;</td>
+          <td class="paramname"><em>future</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a054a0375dc4d222ec9958cf59feaf442"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cppext::future_queue&lt;void&gt; ChimeraTK::TransferFuture::_notifications</td>
         </tr>
       </table>
   </td>
@@ -597,9 +578,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The plain boost future. </p>
+<p>The plain future_queue used for the notifications. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00125">125</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00121">121</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
 
 </div>
 </div>
@@ -623,7 +604,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Pointer to the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00128">128</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00124">124</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
 
 </div>
 </div>
@@ -634,7 +615,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 6 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 26 2018 05:53:14 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

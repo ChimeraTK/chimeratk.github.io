@@ -19,7 +19,7 @@ var searchData=
   ['accessorhandler',['AccessorHandler',['../class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html',1,'ChimeraTK::RegisterAccessor']]],
   ['accessorhandler_3c_20int32_5ft_20_3e',['AccessorHandler&lt; int32_t &gt;',['../class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html',1,'ChimeraTK::RegisterAccessor']]],
   ['activefuture',['activeFuture',['../class_chimera_t_k_1_1_transfer_element.html#af60ec6ab982e620f5bfdc3b5bbed9928',1,'ChimeraTK::TransferElement']]],
-  ['add',['add',['../class_chimera_t_k_1_1_access_mode_flags.html#af6f8198e1092b53bfc0be4a8a221db0c',1,'ChimeraTK::AccessModeFlags']]],
+  ['add',['add',['../class_chimera_t_k_1_1_access_mode_flags.html#af6f8198e1092b53bfc0be4a8a221db0c',1,'ChimeraTK::AccessModeFlags::add()'],['../class_chimera_t_k_1_1_read_any_group.html#a662fa4a8da3311e9fe1c1e1e86a4eb16',1,'ChimeraTK::ReadAnyGroup::add()']]],
   ['addaccessor',['addAccessor',['../class_chimera_t_k_1_1_transfer_group.html#a105197b54833784c119bc3f445ae8a91',1,'ChimeraTK::TransferGroup::addAccessor(TransferElementAbstractor &amp;accessor)'],['../class_chimera_t_k_1_1_transfer_group.html#a13f0ae7ce386f0f34b9ea9db867efbf4',1,'ChimeraTK::TransferGroup::addAccessor(const boost::shared_ptr&lt; TransferElement &gt; &amp;accessor)']]],
   ['addmetadata',['addMetadata',['../class_chimera_t_k_1_1_register_catalogue.html#a13c3984c1b059b91070b78ded2fa76ba',1,'ChimeraTK::RegisterCatalogue']]],
   ['addmodule',['addModule',['../namespacemtca4u__lmap__editor.html#afa3a2190b92328ea21ae4860c8ecc207',1,'mtca4u_lmap_editor']]],

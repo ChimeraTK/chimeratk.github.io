@@ -59,6 +59,7 @@ var searchData=
   ['custombackend',['CustomBackend',['../class_custom_backend.html',1,'']]],
   ['custombackend_2ecc',['CustomBackend.cc',['../_custom_backend_8cc.html',1,'']]],
   ['detail',['detail',['../namespace_chimera_t_k_1_1detail.html',1,'ChimeraTK']]],
+  ['getfuturequeuefromtransferfuture',['getFutureQueueFromTransferFuture',['../class_chimera_t_k_1_1_transfer_future.html#a2e114ae50c3d1b5fb66ce3e0506dda9a',1,'ChimeraTK::TransferFuture']]],
   ['numeric_5faddress',['numeric_address',['../namespace_chimera_t_k_1_1numeric__address.html',1,'ChimeraTK']]],
   ['parserutilities',['parserUtilities',['../namespace_chimera_t_k_1_1parser_utilities.html',1,'ChimeraTK']]],
   ['proxies',['proxies',['../namespace_chimera_t_k_1_1proxies.html',1,'ChimeraTK']]],

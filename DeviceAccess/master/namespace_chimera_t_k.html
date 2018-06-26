@@ -297,6 +297,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_pcie_backend_exception.html">PcieBackendException</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class to provide the exceptions for Pcie device.  <a href="class_chimera_t_k_1_1_pcie_backend_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_read_any_group.html">ReadAnyGroup</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Group several registers (= <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>) to allow waiting for an update of any of the registers.  <a href="class_chimera_t_k_1_1_read_any_group.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_rebot_backend.html">RebotBackend</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_rebot_backend_exception.html">RebotBackendException</a></td></tr>
@@ -438,11 +441,6 @@ Functions</h2></td></tr>
 <tr class="memitem:acce8f232d67a0050a45f35c59972b813"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:acce8f232d67a0050a45f35c59972b813"><td class="memTemplItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#acce8f232d67a0050a45f35c59972b813">FixedPointConverter::toRaw&lt; std::string &gt;</a> (std::string cookedValue) const </td></tr>
 <tr class="separator:acce8f232d67a0050a45f35c59972b813"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec981a83c4e8847525318baae230ea08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">ChimeraTK::TransferElementID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aec981a83c4e8847525318baae230ea08">readAny</a> (std::list&lt; std::reference_wrapper&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html">ChimeraTK::TransferElementAbstractor</a> &gt;&gt; elementsToRead)</td></tr>
-<tr class="memdesc:aec981a83c4e8847525318baae230ea08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data asynchronously from all given TransferElements and wait until one of the TransferElements has new data.  <a href="#aec981a83c4e8847525318baae230ea08">More...</a><br /></td></tr>
-<tr class="separator:aec981a83c4e8847525318baae230ea08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58026965a4278bbb39008a9b09b74b38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">ChimeraTK::TransferElementID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a58026965a4278bbb39008a9b09b74b38">readAny</a> (std::list&lt; std::reference_wrapper&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">ChimeraTK::TransferElement</a> &gt;&gt; elementsToRead)</td></tr>
-<tr class="separator:a58026965a4278bbb39008a9b09b74b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff96b5b96f07b7d89a63107cc11ce264"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aff96b5b96f07b7d89a63107cc11ce264">DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html">LNMBackendChannelAccessor</a>)</td></tr>
 <tr class="separator:aff96b5b96f07b7d89a63107cc11ce264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2564f0c3bd18b75a695da17cfdb2bde9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a2564f0c3bd18b75a695da17cfdb2bde9">DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">LNMBackendVariableAccessor</a>)</td></tr>
@@ -958,22 +956,6 @@ template&lt;typename MAPTYPE , typename LAMBDATYPE &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a40ba02c9fbdb3da52b45a277fb86c1a3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ChimeraTK::INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html">NumericAddressedBackendMuxedRegisterAccessor</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="ad1f171ec71d1838d79f718ed718bf8e2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -998,6 +980,22 @@ template&lt;typename MAPTYPE , typename LAMBDATYPE &gt; </div>
           <td class="memname">ChimeraTK::INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">LNMBackendVariableAccessor</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a40ba02c9fbdb3da52b45a277fb86c1a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html">NumericAddressedBackendMuxedRegisterAccessor</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1579,62 +1577,6 @@ template&lt;typename MAPTYPE , typename LAMBDATYPE &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aec981a83c4e8847525318baae230ea08"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">ChimeraTK::TransferElementID</a> ChimeraTK::readAny </td>
-          <td>(</td>
-          <td class="paramtype">std::list&lt; std::reference_wrapper&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html">ChimeraTK::TransferElementAbstractor</a> &gt;&gt;&#160;</td>
-          <td class="paramname"><em>elementsToRead</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Read data asynchronously from all given TransferElements and wait until one of the TransferElements has new data. </p>
-<p>The ID of the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> which received new data is returned as a reference. In case multiple TransferElements receive new data simultaneously (or already have new data available before the call to <a class="el" href="namespace_chimera_t_k.html#aec981a83c4e8847525318baae230ea08" title="Read data asynchronously from all given TransferElements and wait until one of the TransferElements h...">readAny()</a>), the ID of the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> with the oldest <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">VersionNumber</a> (see getVersionNumber()) will be returned by this function. This ensures that data is received in the order of sending (unless data is "dated back" and sent with an older version number, which might be the case e.g. when using the ControlSystemAdapter).</p>
-<p>Note that the behaviour is undefined when putting the same <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> into the list - a result might be e.g. that it blocks for ever. This is due to a limitation in the underlying boost::wait_for_any() function. </p>
-
-<p>Definition at line <a class="el" href="device_2include_2_read_any_8h_source.html#l00124">124</a> of file <a class="el" href="device_2include_2_read_any_8h_source.html">ReadAny.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a58026965a4278bbb39008a9b09b74b38"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">ChimeraTK::TransferElementID</a> ChimeraTK::readAny </td>
-          <td>(</td>
-          <td class="paramtype">std::list&lt; std::reference_wrapper&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">ChimeraTK::TransferElement</a> &gt;&gt;&#160;</td>
-          <td class="paramname"><em>elementsToRead</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="device_2include_2_read_any_8h_source.html#l00117">117</a> of file <a class="el" href="device_2include_2_read_any_8h_source.html">ReadAny.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ac081e51ebc9ef4fe64b469290d39b7a2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1708,7 +1650,7 @@ template&lt;typename MAPTYPE , typename LAMBDATYPE &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 6 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 26 2018 05:53:14 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['data',['Data',['../struct_chimera_t_k_1_1_transfer_future_1_1_data.html',1,'ChimeraTK::TransferFuture']]],
   ['datadescriptor',['DataDescriptor',['../class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html',1,'ChimeraTK::RegisterInfo']]],
   ['datamodifierplugin',['DataModifierPlugin',['../class_chimera_t_k_1_1_data_modifier_plugin.html',1,'ChimeraTK']]],
   ['datatype',['DataType',['../class_chimera_t_k_1_1_data_type.html',1,'ChimeraTK']]],

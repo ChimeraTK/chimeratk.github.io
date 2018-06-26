@@ -2,6 +2,7 @@ var searchData=
 [
   ['failedregistrationthrowerfunction',['failedRegistrationThrowerFunction',['../class_chimera_t_k_1_1_backend_factory.html#a84fc6c7b3131f0dd021626feb5dbfd43',1,'ChimeraTK::BackendFactory']]],
   ['fetchfromrebotserver',['fetchFromRebotServer',['../struct_chimera_t_k_1_1_rebot_protocol0.html#a215298fa419ff648eb21597ea55c133e',1,'ChimeraTK::RebotProtocol0']]],
+  ['finalise',['finalise',['../class_chimera_t_k_1_1_read_any_group.html#af53a97adcbde58b2ee8249536b30e36a',1,'ChimeraTK::ReadAnyGroup']]],
   ['findcallbackfunctionsforaddressrange',['findCallbackFunctionsForAddressRange',['../class_chimera_t_k_1_1_dummy_backend.html#a7c7afd621cbac3a7242db50e63089423',1,'ChimeraTK::DummyBackend']]],
   ['finddevbyname_5fpred',['findDevByName_pred',['../class_chimera_t_k_1_1find_dev_by_name__pred.html#a8e5780cdde2c6d1ec8ac12b8d875de95',1,'ChimeraTK::findDevByName_pred']]],
   ['finddevinpairbyname_5fpred',['findDevInPairByName_pred',['../class_chimera_t_k_1_1find_dev_in_pair_by_name__pred.html#aa91fd3a85d13aaa09fe785c080be9a12',1,'ChimeraTK::findDevInPairByName_pred']]],

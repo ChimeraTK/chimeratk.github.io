@@ -91,7 +91,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">TransferFuture.h File Reference</div>  </div>
 </div><!--header-->
@@ -106,6 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;boost/bind.hpp&gt;</code><br />
 <code>#include &lt;boost/thread.hpp&gt;</code><br />
 <code>#include &lt;boost/thread/future.hpp&gt;</code><br />
+<code>#include &lt;ChimeraTK/cppext/future_queue.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="device_2include_2_device_exception_8h_source.html">DeviceException.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="device_2include_2_time_stamp_8h_source.html">TimeStamp.h</a>&quot;</code><br />
@@ -118,20 +120,26 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">ChimeraTK::TransferFuture</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special future returned by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad00999178a215bc11d9c1377c6427c23" title="Read data from the device in the background and return a future which will be fulfilled when the data...">TransferElement::readAsync()</a>.  <a href="class_chimera_t_k_1_1_transfer_future.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_transfer_future_1_1_data.html">ChimeraTK::TransferFuture::Data</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_chimera_t_k_1_1_transfer_future_1_1_data.html" title="Data class for the information transported by the future itself. ">Data</a> class for the information transported by the future itself.  <a href="struct_chimera_t_k_1_1_transfer_future_1_1_data.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_chimera_t_k"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></td></tr>
 <tr class="memdesc:namespace_chimera_t_k"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides storage object for devices descriptions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_chimera_t_k_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1detail.html">ChimeraTK::detail</a></td></tr>
+<tr class="memdesc:namespace_chimera_t_k_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class for <a class="el" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d" title="Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...">for_each()</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5f66716099251ed1094bc45bbc0386c7"><td class="memItemLeft" align="right" valign="top">cppext::future_queue&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1detail.html#a5f66716099251ed1094bc45bbc0386c7">ChimeraTK::detail::getFutureQueueFromTransferFuture</a> (<a class="el" href="class_chimera_t_k_1_1_transfer_future.html">ChimeraTK::TransferFuture</a> &amp;future)</td></tr>
+<tr class="memdesc:a5f66716099251ed1094bc45bbc0386c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-member function to obtain the underlying future_queue from a <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a>.  <a href="namespace_chimera_t_k_1_1detail.html#a5f66716099251ed1094bc45bbc0386c7">More...</a><br /></td></tr>
+<tr class="separator:a5f66716099251ed1094bc45bbc0386c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 6 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 26 2018 05:53:14 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -5,6 +5,5 @@ var searchData=
   ['device_5fioctrl_5ftime',['device_ioctrl_time',['../device__backends_2pcie_2include_2pciedev__io_8h.html#aba7e14009372d9742940885711d7890e',1,'pciedev_io.h']]],
   ['device_5frw',['device_rw',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a198b5f4fef9dff99b6c27836f972bc19',1,'pciedev_io.h']]],
   ['deviceinfomappointer',['DeviceInfoMapPointer',['../namespace_chimera_t_k.html#aea7d8ca4864d539dbef83d13ab7af284',1,'ChimeraTK']]],
-  ['difference_5ftype',['difference_type',['../structstd_1_1iterator__traits_3_01_chimera_t_k_1_1detail_1_1_transfer_future_iterator_01_4.html#a971bf004f4857b54a99478fba74d4819',1,'std::iterator_traits&lt; ChimeraTK::detail::TransferFutureIterator &gt;']]],
   ['dregisterinfo',['DRegisterInfo',['../class_chimera_t_k_1_1_d_map_file.html#a3b5a13f1634a058ce32cb05c3e778f1c',1,'ChimeraTK::DMapFile']]]
 ];

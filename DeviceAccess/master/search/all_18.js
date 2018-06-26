@@ -14,7 +14,7 @@ var searchData=
   ['_7elogicalnamemappingbackend',['~LogicalNameMappingBackend',['../class_chimera_t_k_1_1_logical_name_mapping_backend.html#a4015170a652bd7f7318230a191f3877a',1,'ChimeraTK::LogicalNameMappingBackend']]],
   ['_7enotimplementedexception',['~NotImplementedException',['../class_chimera_t_k_1_1_not_implemented_exception.html#a68f8a1766f416602c91920ea2ad17987',1,'ChimeraTK::NotImplementedException']]],
   ['_7enumericaddressedbackend',['~NumericAddressedBackend',['../class_chimera_t_k_1_1_numeric_addressed_backend.html#ac310e495b2f2b94485bf799cd09163d1',1,'ChimeraTK::NumericAddressedBackend']]],
-  ['_7enumericaddressedbackendmuxedregisteraccessor',['~NumericAddressedBackendMuxedRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a56b9cf5b6f5dfc1a30479d4abb38ed07',1,'ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor']]],
+  ['_7enumericaddressedbackendmuxedregisteraccessor',['~NumericAddressedBackendMuxedRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#abe3cb01ebbef0fb9e87022f085a35a52',1,'ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor']]],
   ['_7enumericaddressedbackendregisteraccessor',['~NumericAddressedBackendRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ae69c3396971fc460bb22bc49ac677d5f',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor']]],
   ['_7enumericaddressedlowleveltransferelement',['~NumericAddressedLowLevelTransferElement',['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#aeb6a774c1f984547f6380cd9d944e2e6',1,'ChimeraTK::NumericAddressedLowLevelTransferElement']]],
   ['_7epciebackend',['~PcieBackend',['../class_chimera_t_k_1_1_pcie_backend.html#aa463a65abad83e66506e4ac0eaf3a440',1,'ChimeraTK::PcieBackend']]],
@@ -29,7 +29,6 @@ var searchData=
   ['_7esubdevicebackend',['~SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html#aef6a0de034b54d44cc888dce97b0bec2',1,'ChimeraTK::SubdeviceBackend']]],
   ['_7esyncndregisteraccessor',['~SyncNDRegisterAccessor',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html#aca97e16a2018f70d6781582bad5a025b',1,'ChimeraTK::SyncNDRegisterAccessor']]],
   ['_7etcpctrl',['~TcpCtrl',['../class_chimera_t_k_1_1_tcp_ctrl.html#a74dbac59591e9e582fe6d2d664d62983',1,'ChimeraTK::TcpCtrl']]],
-  ['_7etransferelement',['~TransferElement',['../class_chimera_t_k_1_1_transfer_element.html#afa93fc08900e790d39ac1a067cf97677',1,'ChimeraTK::TransferElement']]],
-  ['_7etransferelementabstractor',['~TransferElementAbstractor',['../class_chimera_t_k_1_1_transfer_element_abstractor.html#aefd604dcef66d749afb0cf61e2c04b74',1,'ChimeraTK::TransferElementAbstractor']]],
+  ['_7etransferelement',['~TransferElement',['../class_chimera_t_k_1_1_transfer_element.html#adbc9b96f43bbf9ca3dec8311fe3e6039',1,'ChimeraTK::TransferElement']]],
   ['_7etransfergroup',['~TransferGroup',['../class_chimera_t_k_1_1_transfer_group.html#aea5883f974de2d9b2cd5f45a162840a8',1,'ChimeraTK::TransferGroup']]]
 ];
