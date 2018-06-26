@@ -12,7 +12,7 @@ var searchData=
   ['scalaraccessor_3c_20type_20_3e',['ScalarAccessor&lt; Type &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
   ['scalaraccessor_3c_20uint_20_3e',['ScalarAccessor&lt; uint &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
   ['scalaraccessor_3c_20uint32_5ft_20_3e',['ScalarAccessor&lt; uint32_t &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
-  ['scalarmap',['ScalarMap',['../class_chimera_t_k_1_1_test_facility.html#a0b618e8e8f606b2298bbdb903c1c90ba',1,'ChimeraTK::TestFacility::ScalarMap()'],['../class_chimera_t_k_1_1_test_facility.html#a5460ef5a9aa90579608591b46ff0408f',1,'ChimeraTK::TestFacility::scalarMap()']]],
+  ['scalarmap',['scalarMap',['../class_chimera_t_k_1_1_test_facility.html#a5460ef5a9aa90579608591b46ff0408f',1,'ChimeraTK::TestFacility::scalarMap()'],['../class_chimera_t_k_1_1_test_facility.html#a0b618e8e8f606b2298bbdb903c1c90ba',1,'ChimeraTK::TestFacility::ScalarMap()']]],
   ['scalaroutput',['ScalarOutput',['../struct_chimera_t_k_1_1_scalar_output.html#ac6cdb23d6d443d8a688c661369ac5ad8',1,'ChimeraTK::ScalarOutput::ScalarOutput(Module *owner, const std::string &amp;name, std::string unit, const std::string &amp;description, const std::unordered_set&lt; std::string &gt; &amp;tags={})'],['../struct_chimera_t_k_1_1_scalar_output.html#af387202f9844aafa1480d99ccc656419',1,'ChimeraTK::ScalarOutput::ScalarOutput()']]],
   ['scalaroutput',['ScalarOutput',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK']]],
   ['scalaroutput_3c_20int_20_3e',['ScalarOutput&lt; int &gt;',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK']]],
