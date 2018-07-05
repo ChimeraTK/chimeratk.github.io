@@ -4,8 +4,8 @@ var indexSectionsWithContent =
   1: "bd",
   2: "m",
   3: "de",
-  4: "bcdefgimoprwz~",
-  5: "_bcdefinosuz",
+  4: "bcdefgimoprswz~",
+  5: "_bcdefinorsu",
   6: "d",
   7: "t"
 };

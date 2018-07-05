@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['zmqbuffer',['ZMQbuffer',['../classmtca4u_1_1_doocs_backend_register_accessor.html#af945d65154a8d2d18810fea6460a21f1',1,'mtca4u::DoocsBackendRegisterAccessor']]],
-  ['zmqmtx',['ZMQmtx',['../classmtca4u_1_1_doocs_backend_register_accessor.html#afcb3bfa84cd382a8e0464201f8179a6c',1,'mtca4u::DoocsBackendRegisterAccessor']]],
-  ['zmqnotifier',['ZMQnotifier',['../classmtca4u_1_1_doocs_backend_register_accessor.html#ae408eec77625e4350b2557dc8ce580bc',1,'mtca4u::DoocsBackendRegisterAccessor']]]
+  ['usezmq',['useZMQ',['../classmtca4u_1_1_doocs_backend_register_accessor.html#a081ceb45b6d770e4a0f3af1f3469558d',1,'mtca4u::DoocsBackendRegisterAccessor']]]
 ];
