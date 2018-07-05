@@ -124,13 +124,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aafe7082f09c25245074fed216d78c528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae95813ee7f671133d514189c3c033286"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286">stop</a> ()</td></tr>
 <tr class="separator:ae95813ee7f671133d514189c3c033286"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69f26469e2a5056b9319f2263b97b631"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#a69f26469e2a5056b9319f2263b97b631">addVariable</a> (mtca4u::TransferElement &amp;variable, std::function&lt; void()&gt; updaterFunction)</td></tr>
-<tr class="separator:a69f26469e2a5056b9319f2263b97b631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd6c9348bdfcbf5cef01fd338cc920e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#a3fd6c9348bdfcbf5cef01fd338cc920e">addVariable</a> (const ChimeraTK::TransferElementAbstractor &amp;variable, std::function&lt; void()&gt; updaterFunction)</td></tr>
+<tr class="separator:a3fd6c9348bdfcbf5cef01fd338cc920e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a85cecb7574b2a12122d54474cb4d5cfe"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::reference_wrapper&lt; mtca4u::TransferElement &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#a85cecb7574b2a12122d54474cb4d5cfe">_elementsToRead</a></td></tr>
-<tr class="separator:a85cecb7574b2a12122d54474cb4d5cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a937817dbe5da82f77f6eeb581f82d392"><td class="memItemLeft" align="right" valign="top">std::list&lt; ChimeraTK::TransferElementAbstractor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#a937817dbe5da82f77f6eeb581f82d392">_elementsToRead</a></td></tr>
+<tr class="separator:a937817dbe5da82f77f6eeb581f82d392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa702766800d6c1863c232758f723798e"><td class="memItemLeft" align="right" valign="top">boost::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#aa702766800d6c1863c232758f723798e">_syncThread</a></td></tr>
 <tr class="separator:aa702766800d6c1863c232758f723798e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace9adc62b2ee4ca19efe54c143938d4a"><td class="memItemLeft" align="right" valign="top">std::map&lt; mtca4u::TransferElementID, std::vector&lt; std::function&lt; void()&gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#ace9adc62b2ee4ca19efe54c143938d4a">_toDoocsUpdateMap</a></td></tr>
@@ -155,19 +155,19 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00052">52</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00048">48</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a69f26469e2a5056b9319f2263b97b631"></a>
+<a class="anchor" id="a3fd6c9348bdfcbf5cef01fd338cc920e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void ChimeraTK::DoocsUpdater::addVariable </td>
           <td>(</td>
-          <td class="paramtype">mtca4u::TransferElement &amp;&#160;</td>
+          <td class="paramtype">const ChimeraTK::TransferElementAbstractor &amp;&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
         </tr>
         <tr>
@@ -201,7 +201,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00043">43</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00039">39</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
 
 </div>
 </div>
@@ -218,7 +218,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00047">47</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00043">43</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
 
 </div>
 </div>
@@ -251,14 +251,13 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>FIXME this is a temporary (?) work-around for the slow readAny() </dd></dl>
 
 <p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00029">29</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a85cecb7574b2a12122d54474cb4d5cfe"></a>
+<a class="anchor" id="a937817dbe5da82f77f6eeb581f82d392"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -266,7 +265,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt; std::reference_wrapper&lt; mtca4u::TransferElement &gt; &gt; ChimeraTK::DoocsUpdater::_elementsToRead</td>
+          <td class="memname">std::list&lt; ChimeraTK::TransferElementAbstractor &gt; ChimeraTK::DoocsUpdater::_elementsToRead</td>
         </tr>
       </table>
   </td>
@@ -331,7 +330,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 4 2018 05:53:42 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 5 2018 09:08:50 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

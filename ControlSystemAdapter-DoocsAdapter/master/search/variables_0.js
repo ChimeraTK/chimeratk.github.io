@@ -3,7 +3,7 @@ var searchData=
   ['_5fcontrolsystempvmanager',['_controlSystemPVManager',['../class_chimera_t_k_1_1_doocs_adapter.html#abd9d02096a55995d55eaa0fa2fe176f4',1,'ChimeraTK::DoocsAdapter::_controlSystemPVManager()'],['../class_chimera_t_k_1_1_doocs_p_v_factory.html#a12e1be1675c941e6ad006cce8ab5e9d7',1,'ChimeraTK::DoocsPVFactory::_controlSystemPVManager()']]],
   ['_5fdescriptions',['_descriptions',['../class_chimera_t_k_1_1_variable_mapper.html#ab5c0953113c2c5822e244f4205c34e81',1,'ChimeraTK::VariableMapper']]],
   ['_5fdevicepvmanager',['_devicePVManager',['../class_chimera_t_k_1_1_doocs_adapter.html#aa68288d8deb8724e6c357b9ded29217c',1,'ChimeraTK::DoocsAdapter']]],
-  ['_5felementstoread',['_elementsToRead',['../class_chimera_t_k_1_1_doocs_updater.html#a85cecb7574b2a12122d54474cb4d5cfe',1,'ChimeraTK::DoocsUpdater']]],
+  ['_5felementstoread',['_elementsToRead',['../class_chimera_t_k_1_1_doocs_updater.html#a937817dbe5da82f77f6eeb581f82d392',1,'ChimeraTK::DoocsUpdater']]],
   ['_5feqfct',['_eqFct',['../class_chimera_t_k_1_1_doocs_p_v_factory.html#a54d8f4eb0902116c3411a9a0c8e401a4',1,'ChimeraTK::DoocsPVFactory']]],
   ['_5fglobaldefaults',['_globalDefaults',['../class_chimera_t_k_1_1_variable_mapper.html#a6e4a549e6d1d681035d17fd5b2af7441',1,'ChimeraTK::VariableMapper']]],
   ['_5fincrementaccessor',['_incrementAccessor',['../class_chimera_t_k_1_1_doocs_spectrum.html#a12dc6f39489a84e9c5536211110d2454',1,'ChimeraTK::DoocsSpectrum']]],
