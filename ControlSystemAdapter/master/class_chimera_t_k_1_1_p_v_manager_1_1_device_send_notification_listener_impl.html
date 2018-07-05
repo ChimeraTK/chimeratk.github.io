@@ -130,7 +130,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a234c68c1005a6ee987ff4043e548241e"><td class="memItemLeft" align="right" valign="top">ProcessVariable::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager_1_1_device_send_notification_listener_impl.html#a234c68c1005a6ee987ff4043e548241e">getControlSystemProcessVariable</a> ()</td></tr>
 <tr class="separator:a234c68c1005a6ee987ff4043e548241e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_process_variable_listener"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_process_variable_listener')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html">ChimeraTK::ProcessVariableListener</a></td></tr>
-<tr class="memitem:ae013b83811162bbac160b70f83aba3db inherit pub_methods_class_chimera_t_k_1_1_process_variable_listener"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#ae013b83811162bbac160b70f83aba3db">notify</a> (boost::shared_ptr&lt; <a class="el" href="namespace_chimera_t_k.html#a4db8e7d76616de82c74d65c7cb9b4680">ProcessVariable</a> &gt; processVariable)=0</td></tr>
+<tr class="memitem:ae013b83811162bbac160b70f83aba3db inherit pub_methods_class_chimera_t_k_1_1_process_variable_listener"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#ae013b83811162bbac160b70f83aba3db">notify</a> (boost::shared_ptr&lt; <a class="el" href="namespace_chimera_t_k.html#a192dc5dbf7ebc07b1c012381df066b4e">ProcessVariable</a> &gt; processVariable)=0</td></tr>
 <tr class="memdesc:ae013b83811162bbac160b70f83aba3db inherit pub_methods_class_chimera_t_k_1_1_process_variable_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the notification.  <a href="#ae013b83811162bbac160b70f83aba3db">More...</a><br /></td></tr>
 <tr class="separator:ae013b83811162bbac160b70f83aba3db inherit pub_methods_class_chimera_t_k_1_1_process_variable_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:acbf178e11806259f0a485c2f7075c45c"><td class="memItemLeft" align="right" valign="top">boost::weak_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html">PVManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager_1_1_device_send_notification_listener_impl.html#acbf178e11806259f0a485c2f7075c45c">_pvManager</a></td></tr>
 <tr class="separator:acbf178e11806259f0a485c2f7075c45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d770f1a8e57bba19328cc5984b19cf3"><td class="memItemLeft" align="right" valign="top">boost::weak_ptr&lt; <a class="el" href="namespace_chimera_t_k.html#a4db8e7d76616de82c74d65c7cb9b4680">ProcessVariable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager_1_1_device_send_notification_listener_impl.html#a1d770f1a8e57bba19328cc5984b19cf3">_controlSystemProcessVariable</a></td></tr>
+<tr class="memitem:a1d770f1a8e57bba19328cc5984b19cf3"><td class="memItemLeft" align="right" valign="top">boost::weak_ptr&lt; <a class="el" href="namespace_chimera_t_k.html#a192dc5dbf7ebc07b1c012381df066b4e">ProcessVariable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager_1_1_device_send_notification_listener_impl.html#a1d770f1a8e57bba19328cc5984b19cf3">_controlSystemProcessVariable</a></td></tr>
 <tr class="separator:a1d770f1a8e57bba19328cc5984b19cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc185ed18c9d389eab59b5a96f7a43ce"><td class="memItemLeft" align="right" valign="top">boost::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager_1_1_device_send_notification_listener_impl.html#abc185ed18c9d389eab59b5a96f7a43ce">_notificationPending</a></td></tr>
 <tr class="separator:abc185ed18c9d389eab59b5a96f7a43ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,7 +271,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::weak_ptr&lt;<a class="el" href="namespace_chimera_t_k.html#a4db8e7d76616de82c74d65c7cb9b4680">ProcessVariable</a>&gt; ChimeraTK::PVManager::DeviceSendNotificationListenerImpl::_controlSystemProcessVariable</td>
+          <td class="memname">boost::weak_ptr&lt;<a class="el" href="namespace_chimera_t_k.html#a192dc5dbf7ebc07b1c012381df066b4e">ProcessVariable</a>&gt; ChimeraTK::PVManager::DeviceSendNotificationListenerImpl::_controlSystemProcessVariable</td>
         </tr>
       </table>
   </td>
@@ -335,7 +335,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 4 2018 05:53:15 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 5 2018 09:08:20 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

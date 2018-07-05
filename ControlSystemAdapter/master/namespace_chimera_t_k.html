@@ -172,8 +172,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a4db8e7d76616de82c74d65c7cb9b4680"><td class="memItemLeft" align="right" valign="top">typedef mtca4u::TransferElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a4db8e7d76616de82c74d65c7cb9b4680">ProcessVariable</a></td></tr>
-<tr class="separator:a4db8e7d76616de82c74d65c7cb9b4680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192dc5dbf7ebc07b1c012381df066b4e"><td class="memItemLeft" align="right" valign="top">typedef ChimeraTK::TransferElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a192dc5dbf7ebc07b1c012381df066b4e">ProcessVariable</a></td></tr>
+<tr class="separator:a192dc5dbf7ebc07b1c012381df066b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -195,48 +195,48 @@ Functions</h2></td></tr>
 <tr class="memitem:a1b53f55bb55bb18e13425b8d79adef97"><td class="memItemLeft" align="right" valign="top">std::pair&lt; shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html">ControlSystemPVManager</a> &gt;, shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html">DevicePVManager</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a1b53f55bb55bb18e13425b8d79adef97">createPVManager</a> ()</td></tr>
 <tr class="memdesc:a1b53f55bb55bb18e13425b8d79adef97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a PV manager and returns a pair containing references to its <a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html">ControlSystemPVManager</a> and <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html">DevicePVManager</a> interfaces.  <a href="#a1b53f55bb55bb18e13425b8d79adef97">More...</a><br /></td></tr>
 <tr class="separator:a1b53f55bb55bb18e13425b8d79adef97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bb6d60301cf4fca703de3d80ddbf27f"><td class="memItemLeft" align="right" valign="top">std::map&lt; boost::shared_ptr&lt; mtca4u::TransferElement &gt;, boost::shared_ptr&lt; mtca4u::TransferElement &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a0bb6d60301cf4fca703de3d80ddbf27f">getGlobalDecoratorMap</a> ()</td></tr>
-<tr class="memdesc:a0bb6d60301cf4fca703de3d80ddbf27f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quasi singleton to have a unique, global map across UserType templated factories.  <a href="#a0bb6d60301cf4fca703de3d80ddbf27f">More...</a><br /></td></tr>
-<tr class="separator:a0bb6d60301cf4fca703de3d80ddbf27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad681512f03c43202cd2eb8e890dacfdc"><td class="memItemLeft" align="right" valign="top">std::map&lt; boost::shared_ptr&lt; ChimeraTK::TransferElement &gt;, boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ad681512f03c43202cd2eb8e890dacfdc">getGlobalDecoratorMap</a> ()</td></tr>
+<tr class="memdesc:ad681512f03c43202cd2eb8e890dacfdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quasi singleton to have a unique, global map across UserType templated factories.  <a href="#ad681512f03c43202cd2eb8e890dacfdc">More...</a><br /></td></tr>
+<tr class="separator:ad681512f03c43202cd2eb8e890dacfdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b513f257155d9245ebed197db95a8fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a3b513f257155d9245ebed197db95a8fc">setEnableProcessArrayThreadSafetyCheck</a> (bool enable)</td></tr>
 <tr class="memdesc:a3b513f257155d9245ebed197db95a8fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Globally enable or disable the thread safety check on each read/write.  <a href="#a3b513f257155d9245ebed197db95a8fc">More...</a><br /></td></tr>
 <tr class="separator:a3b513f257155d9245ebed197db95a8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4ca1609db9566bab6cfe209670fca1e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ad4ca1609db9566bab6cfe209670fca1e"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr, typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ad4ca1609db9566bab6cfe209670fca1e">createBidirectionalSynchronizedProcessArray</a> (std::size_t size, const mtca4u::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, T initialValue=T(), std::size_t numberOfBuffers=3, <a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a> timeStampSource1=<a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a> timeStampSource2=<a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a> sendNotificationListener1=<a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a> sendNotificationListener2=<a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a>(), const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
-<tr class="memdesc:ad4ca1609db9566bab6cfe209670fca1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a bidirectional synchronized process array.  <a href="#ad4ca1609db9566bab6cfe209670fca1e">More...</a><br /></td></tr>
-<tr class="separator:ad4ca1609db9566bab6cfe209670fca1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac293b6bd972853f00f16497d2c8bfc3"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aac293b6bd972853f00f16497d2c8bfc3"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr, typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aac293b6bd972853f00f16497d2c8bfc3">createBidirectionalSynchronizedProcessArray</a> (const std::vector&lt; T &gt; &amp;initialValue, const mtca4u::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, std::size_t numberOfBuffers=3, <a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a> timeStampSource1=<a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a> timeStampSource2=<a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a> sendNotificationListener1=<a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a> sendNotificationListener2=<a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a>(), const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
-<tr class="memdesc:aac293b6bd972853f00f16497d2c8bfc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a bidirectional synchronized process array.  <a href="#aac293b6bd972853f00f16497d2c8bfc3">More...</a><br /></td></tr>
-<tr class="separator:aac293b6bd972853f00f16497d2c8bfc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9941c17ad7e1e5b0d2aa3d5dddd5238"><td class="memTemplParams" colspan="2">template&lt;class UserType &gt; </td></tr>
-<tr class="memitem:aa9941c17ad7e1e5b0d2aa3d5dddd5238"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; mtca4u::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aa9941c17ad7e1e5b0d2aa3d5dddd5238">getDecorator</a> (const boost::shared_ptr&lt; mtca4u::TransferElement &gt; &amp;transferElement, <a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96">DecoratorType</a> decoratorType=<a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a4c3daeb243d26d7ecb2a563fdd1de8b6">DecoratorType::range_checking</a>)</td></tr>
-<tr class="memdesc:aa9941c17ad7e1e5b0d2aa3d5dddd5238"><td class="mdescLeft">&#160;</td><td class="mdescRight">The factory function for type changing decorators.  <a href="#aa9941c17ad7e1e5b0d2aa3d5dddd5238">More...</a><br /></td></tr>
-<tr class="separator:aa9941c17ad7e1e5b0d2aa3d5dddd5238"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac89b3519979cd6905423601a91f70c0f"><td class="memTemplParams" colspan="2">template&lt;class UserType &gt; </td></tr>
-<tr class="memitem:ac89b3519979cd6905423601a91f70c0f"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; mtca4u::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ac89b3519979cd6905423601a91f70c0f">getDecorator</a> (mtca4u::TransferElementAbstractor &amp;transferElement, <a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96">DecoratorType</a> decoratorType=<a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a4c3daeb243d26d7ecb2a563fdd1de8b6">DecoratorType::range_checking</a>)</td></tr>
-<tr class="separator:ac89b3519979cd6905423601a91f70c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a181bda8e2be41ee7a6f578572d693703"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a181bda8e2be41ee7a6f578572d693703"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr, typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a181bda8e2be41ee7a6f578572d693703">createSynchronizedProcessArray</a> (std::size_t size, const mtca4u::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, T initialValue=T(), std::size_t numberOfBuffers=3, bool maySendDestructively=false, <a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a> timeStampSource=<a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a> sendNotificationListener=<a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a>(), const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
-<tr class="memdesc:a181bda8e2be41ee7a6f578572d693703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a synchronized process array.  <a href="#a181bda8e2be41ee7a6f578572d693703">More...</a><br /></td></tr>
-<tr class="separator:a181bda8e2be41ee7a6f578572d693703"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae00ef25c6d6b897fadf8a484fa8e4037"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ae00ef25c6d6b897fadf8a484fa8e4037"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr, typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ae00ef25c6d6b897fadf8a484fa8e4037">createSynchronizedProcessArray</a> (const std::vector&lt; T &gt; &amp;initialValue, const mtca4u::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, std::size_t numberOfBuffers=3, bool maySendDestructively=false, <a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a> timeStampSource=<a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a> sendNotificationListener=<a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a>(), const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
-<tr class="memdesc:ae00ef25c6d6b897fadf8a484fa8e4037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a synchronized process array.  <a href="#ae00ef25c6d6b897fadf8a484fa8e4037">More...</a><br /></td></tr>
-<tr class="separator:ae00ef25c6d6b897fadf8a484fa8e4037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79330285ceca3349f255d8caddb50413"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a79330285ceca3349f255d8caddb50413"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr, typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a79330285ceca3349f255d8caddb50413">createBidirectionalSynchronizedProcessArray</a> (std::size_t size, const ChimeraTK::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, T initialValue=T(), std::size_t numberOfBuffers=3, <a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a> timeStampSource1=<a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a> timeStampSource2=<a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a> sendNotificationListener1=<a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a> sendNotificationListener2=<a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a>(), const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
+<tr class="memdesc:a79330285ceca3349f255d8caddb50413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a bidirectional synchronized process array.  <a href="#a79330285ceca3349f255d8caddb50413">More...</a><br /></td></tr>
+<tr class="separator:a79330285ceca3349f255d8caddb50413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e7874e8f78909e332d9529e18e41ed"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:af5e7874e8f78909e332d9529e18e41ed"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr, typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#af5e7874e8f78909e332d9529e18e41ed">createBidirectionalSynchronizedProcessArray</a> (const std::vector&lt; T &gt; &amp;initialValue, const ChimeraTK::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, std::size_t numberOfBuffers=3, <a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a> timeStampSource1=<a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a> timeStampSource2=<a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a> sendNotificationListener1=<a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a> sendNotificationListener2=<a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a>(), const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
+<tr class="memdesc:af5e7874e8f78909e332d9529e18e41ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a bidirectional synchronized process array.  <a href="#af5e7874e8f78909e332d9529e18e41ed">More...</a><br /></td></tr>
+<tr class="separator:af5e7874e8f78909e332d9529e18e41ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8690be421cfecbc1fe176cc019c12060"><td class="memTemplParams" colspan="2">template&lt;class UserType &gt; </td></tr>
+<tr class="memitem:a8690be421cfecbc1fe176cc019c12060"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a8690be421cfecbc1fe176cc019c12060">getDecorator</a> (const boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &amp;transferElement, <a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96">DecoratorType</a> decoratorType=<a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a4c3daeb243d26d7ecb2a563fdd1de8b6">DecoratorType::range_checking</a>)</td></tr>
+<tr class="memdesc:a8690be421cfecbc1fe176cc019c12060"><td class="mdescLeft">&#160;</td><td class="mdescRight">The factory function for type changing decorators.  <a href="#a8690be421cfecbc1fe176cc019c12060">More...</a><br /></td></tr>
+<tr class="separator:a8690be421cfecbc1fe176cc019c12060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d842c2ce81692303eb38cd42326c30c"><td class="memTemplParams" colspan="2">template&lt;class UserType &gt; </td></tr>
+<tr class="memitem:a4d842c2ce81692303eb38cd42326c30c"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a4d842c2ce81692303eb38cd42326c30c">getDecorator</a> (ChimeraTK::TransferElementAbstractor &amp;transferElement, <a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96">DecoratorType</a> decoratorType=<a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a4c3daeb243d26d7ecb2a563fdd1de8b6">DecoratorType::range_checking</a>)</td></tr>
+<tr class="separator:a4d842c2ce81692303eb38cd42326c30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71dc4c7ce7733c20c811dacfdfe11dcc"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a71dc4c7ce7733c20c811dacfdfe11dcc"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr, typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a71dc4c7ce7733c20c811dacfdfe11dcc">createSynchronizedProcessArray</a> (std::size_t size, const ChimeraTK::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, T initialValue=T(), std::size_t numberOfBuffers=3, bool maySendDestructively=false, <a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a> timeStampSource=<a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a> sendNotificationListener=<a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a>(), const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
+<tr class="memdesc:a71dc4c7ce7733c20c811dacfdfe11dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a synchronized process array.  <a href="#a71dc4c7ce7733c20c811dacfdfe11dcc">More...</a><br /></td></tr>
+<tr class="separator:a71dc4c7ce7733c20c811dacfdfe11dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5ff71d4042c00b9e724fd955a75345"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a4a5ff71d4042c00b9e724fd955a75345"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr, typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a4a5ff71d4042c00b9e724fd955a75345">createSynchronizedProcessArray</a> (const std::vector&lt; T &gt; &amp;initialValue, const ChimeraTK::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, std::size_t numberOfBuffers=3, bool maySendDestructively=false, <a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a> timeStampSource=<a class="el" href="class_chimera_t_k_1_1_time_stamp_source.html#aa9d59d7168013e4394a8fda3c7e20414">TimeStampSource::SharedPtr</a>(), <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a> sendNotificationListener=<a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a>(), const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
+<tr class="memdesc:a4a5ff71d4042c00b9e724fd955a75345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a synchronized process array.  <a href="#a4a5ff71d4042c00b9e724fd955a75345">More...</a><br /></td></tr>
+<tr class="separator:a4a5ff71d4042c00b9e724fd955a75345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a62d5437df3e22dd00e8f18d44e71cc1b"><td class="memItemLeft" align="right" valign="top">std::map&lt; boost::shared_ptr&lt; mtca4u::TransferElement &gt;, boost::shared_ptr&lt; mtca4u::TransferElement &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a62d5437df3e22dd00e8f18d44e71cc1b">globalDecoratorMap</a></td></tr>
-<tr class="separator:a62d5437df3e22dd00e8f18d44e71cc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e5d0ad0f55f729e288d6cdec860a60"><td class="memItemLeft" align="right" valign="top">std::map&lt; boost::shared_ptr&lt; ChimeraTK::TransferElement &gt;, boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#af8e5d0ad0f55f729e288d6cdec860a60">globalDecoratorMap</a></td></tr>
+<tr class="separator:af8e5d0ad0f55f729e288d6cdec860a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a4db8e7d76616de82c74d65c7cb9b4680"></a>
+<a class="anchor" id="a192dc5dbf7ebc07b1c012381df066b4e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef mtca4u::TransferElement <a class="el" href="namespace_chimera_t_k.html#a4db8e7d76616de82c74d65c7cb9b4680">ChimeraTK::ProcessVariable</a></td>
+          <td class="memname">typedef ChimeraTK::TransferElement <a class="el" href="namespace_chimera_t_k.html#a192dc5dbf7ebc07b1c012381df066b4e">ChimeraTK::ProcessVariable</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -312,7 +312,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ad4ca1609db9566bab6cfe209670fca1e"></a>
+<a class="anchor" id="a79330285ceca3349f255d8caddb50413"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -327,7 +327,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const mtca4u::RegisterPath &amp;&#160;</td>
+          <td class="paramtype">const ChimeraTK::RegisterPath &amp;&#160;</td>
           <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
@@ -406,7 +406,7 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aac293b6bd972853f00f16497d2c8bfc3"></a>
+<a class="anchor" id="af5e7874e8f78909e332d9529e18e41ed"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -421,7 +421,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const mtca4u::RegisterPath &amp;&#160;</td>
+          <td class="paramtype">const ChimeraTK::RegisterPath &amp;&#160;</td>
           <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
@@ -515,7 +515,7 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a181bda8e2be41ee7a6f578572d693703"></a>
+<a class="anchor" id="a71dc4c7ce7733c20c811dacfdfe11dcc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -530,7 +530,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const mtca4u::RegisterPath &amp;&#160;</td>
+          <td class="paramtype">const ChimeraTK::RegisterPath &amp;&#160;</td>
           <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
@@ -603,7 +603,7 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae00ef25c6d6b897fadf8a484fa8e4037"></a>
+<a class="anchor" id="a4a5ff71d4042c00b9e724fd955a75345"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -618,7 +618,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const mtca4u::RegisterPath &amp;&#160;</td>
+          <td class="paramtype">const ChimeraTK::RegisterPath &amp;&#160;</td>
           <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>, </td>
         </tr>
         <tr>
@@ -685,16 +685,16 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa9941c17ad7e1e5b0d2aa3d5dddd5238"></a>
+<a class="anchor" id="a8690be421cfecbc1fe176cc019c12060"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class UserType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt; mtca4u::NDRegisterAccessor&lt; UserType &gt; &gt; ChimeraTK::getDecorator </td>
+          <td class="memname">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt; ChimeraTK::getDecorator </td>
           <td>(</td>
-          <td class="paramtype">const boost::shared_ptr&lt; mtca4u::TransferElement &gt; &amp;&#160;</td>
+          <td class="paramtype">const boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &amp;&#160;</td>
           <td class="paramname"><em>transferElement</em>, </td>
         </tr>
         <tr>
@@ -727,16 +727,16 @@ template&lt;class UserType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac89b3519979cd6905423601a91f70c0f"></a>
+<a class="anchor" id="a4d842c2ce81692303eb38cd42326c30c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class UserType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt;mtca4u::NDRegisterAccessor&lt;UserType&gt; &gt; ChimeraTK::getDecorator </td>
+          <td class="memname">boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;UserType&gt; &gt; ChimeraTK::getDecorator </td>
           <td>(</td>
-          <td class="paramtype">mtca4u::TransferElementAbstractor &amp;&#160;</td>
+          <td class="paramtype">ChimeraTK::TransferElementAbstractor &amp;&#160;</td>
           <td class="paramname"><em>transferElement</em>, </td>
         </tr>
         <tr>
@@ -757,12 +757,12 @@ template&lt;class UserType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0bb6d60301cf4fca703de3d80ddbf27f"></a>
+<a class="anchor" id="ad681512f03c43202cd2eb8e890dacfdc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; boost::shared_ptr&lt; mtca4u::TransferElement &gt;, boost::shared_ptr&lt; mtca4u::TransferElement &gt; &gt; &amp; ChimeraTK::getGlobalDecoratorMap </td>
+          <td class="memname">std::map&lt; boost::shared_ptr&lt; ChimeraTK::TransferElement &gt;, boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &gt; &amp; ChimeraTK::getGlobalDecoratorMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -799,12 +799,12 @@ template&lt;class UserType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a62d5437df3e22dd00e8f18d44e71cc1b"></a>
+<a class="anchor" id="af8e5d0ad0f55f729e288d6cdec860a60"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt; boost::shared_ptr&lt;mtca4u::TransferElement&gt;, boost::shared_ptr&lt;mtca4u::TransferElement&gt; &gt; ChimeraTK::globalDecoratorMap</td>
+          <td class="memname">std::map&lt; boost::shared_ptr&lt;ChimeraTK::TransferElement&gt;, boost::shared_ptr&lt;ChimeraTK::TransferElement&gt; &gt; ChimeraTK::globalDecoratorMap</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -816,7 +816,7 @@ template&lt;class UserType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 4 2018 05:53:15 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 5 2018 09:08:20 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

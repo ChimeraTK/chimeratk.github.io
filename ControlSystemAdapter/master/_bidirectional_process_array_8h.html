@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;boost/lockfree/queue.hpp&gt;</code><br />
 <code>#include &lt;boost/lockfree/spsc_queue.hpp&gt;</code><br />
 <code>#include &lt;boost/thread/future.hpp&gt;</code><br />
-<code>#include &lt;mtca4u/ExperimentalFeatures.h&gt;</code><br />
+<code>#include &lt;ChimeraTK/ExperimentalFeatures.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_process_variable_listener_8h_source.html">ProcessVariableListener.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_time_stamp_source_8h_source.html">TimeStampSource.h</a>&quot;</code><br />
@@ -117,13 +117,13 @@ Include dependency graph for BidirectionalProcessArray.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="_bidirectional_process_array_8h__incl.png" border="0" usemap="#_2home_2msk__jenkins_2workspace_2_chimera_t_k__documentation__update_2checkouts_2_control_system_adapter_2include_2_chimera_t_k_2_control_system_adapter_2_bidirectional_process_array_8h" alt=""/></div>
 <map name="_2home_2msk__jenkins_2workspace_2_chimera_t_k__documentation__update_2checkouts_2_control_system_adapter_2include_2_chimera_t_k_2_control_system_adapter_2_bidirectional_process_array_8h" id="_2home_2msk__jenkins_2workspace_2_chimera_t_k__documentation__update_2checkouts_2_control_system_adapter_2include_2_chimera_t_k_2_control_system_adapter_2_bidirectional_process_array_8h">
-<area shape="rect" id="node14" href="_process_array_8h.html" title="ProcessArray.h" alt="" coords="1198,139,1310,165"/>
-<area shape="rect" id="node17" href="_process_variable_listener_8h.html" title="ProcessVariableListener.h" alt="" coords="1292,295,1467,322"/>
-<area shape="rect" id="node20" href="_time_stamp_source_8h.html" title="TimeStampSource.h" alt="" coords="1491,295,1633,322"/>
-<area shape="rect" id="node23" href="_persistent_data_storage_8h.html" title="PersistentDataStorage.h" alt="" coords="2198,295,2363,322"/>
-<area shape="rect" id="node32" href="_unidirectional_process_array_8h.html" title="UnidirectionalProcessArray.h" alt="" coords="1025,213,1216,240"/>
-<area shape="rect" id="node18" href="_process_variable_8h.html" title="ProcessVariable.h" alt="" coords="1315,385,1443,411"/>
-<area shape="rect" id="node21" href="_time_stamp_8h.html" title="TimeStamp.h" alt="" coords="1513,385,1613,411"/>
+<area shape="rect" id="node14" href="_process_array_8h.html" title="ProcessArray.h" alt="" coords="1218,139,1330,165"/>
+<area shape="rect" id="node17" href="_process_variable_listener_8h.html" title="ProcessVariableListener.h" alt="" coords="1315,295,1490,322"/>
+<area shape="rect" id="node20" href="_time_stamp_source_8h.html" title="TimeStampSource.h" alt="" coords="1514,295,1656,322"/>
+<area shape="rect" id="node23" href="_persistent_data_storage_8h.html" title="PersistentDataStorage.h" alt="" coords="2221,295,2386,322"/>
+<area shape="rect" id="node32" href="_unidirectional_process_array_8h.html" title="UnidirectionalProcessArray.h" alt="" coords="1046,213,1236,240"/>
+<area shape="rect" id="node18" href="_process_variable_8h.html" title="ProcessVariable.h" alt="" coords="1338,385,1466,411"/>
+<area shape="rect" id="node21" href="_time_stamp_8h.html" title="TimeStamp.h" alt="" coords="1548,385,1648,411"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -168,19 +168,19 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad4ca1609db9566bab6cfe209670fca1e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ad4ca1609db9566bab6cfe209670fca1e"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename ProcessArray&lt; T &gt;::SharedPtr, typename ProcessArray&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ad4ca1609db9566bab6cfe209670fca1e">ChimeraTK::createBidirectionalSynchronizedProcessArray</a> (std::size_t size, const mtca4u::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, T initialValue=T(), std::size_t numberOfBuffers=3, TimeStampSource::SharedPtr timeStampSource1=TimeStampSource::SharedPtr(), TimeStampSource::SharedPtr timeStampSource2=TimeStampSource::SharedPtr(), ProcessVariableListener::SharedPtr sendNotificationListener1=ProcessVariableListener::SharedPtr(), ProcessVariableListener::SharedPtr sendNotificationListener2=ProcessVariableListener::SharedPtr(), const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
-<tr class="memdesc:ad4ca1609db9566bab6cfe209670fca1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a bidirectional synchronized process array.  <a href="namespace_chimera_t_k.html#ad4ca1609db9566bab6cfe209670fca1e">More...</a><br /></td></tr>
-<tr class="separator:ad4ca1609db9566bab6cfe209670fca1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac293b6bd972853f00f16497d2c8bfc3"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aac293b6bd972853f00f16497d2c8bfc3"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename ProcessArray&lt; T &gt;::SharedPtr, typename ProcessArray&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aac293b6bd972853f00f16497d2c8bfc3">ChimeraTK::createBidirectionalSynchronizedProcessArray</a> (const std::vector&lt; T &gt; &amp;initialValue, const mtca4u::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, std::size_t numberOfBuffers=3, TimeStampSource::SharedPtr timeStampSource1=TimeStampSource::SharedPtr(), TimeStampSource::SharedPtr timeStampSource2=TimeStampSource::SharedPtr(), ProcessVariableListener::SharedPtr sendNotificationListener1=ProcessVariableListener::SharedPtr(), ProcessVariableListener::SharedPtr sendNotificationListener2=ProcessVariableListener::SharedPtr(), const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
-<tr class="memdesc:aac293b6bd972853f00f16497d2c8bfc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a bidirectional synchronized process array.  <a href="namespace_chimera_t_k.html#aac293b6bd972853f00f16497d2c8bfc3">More...</a><br /></td></tr>
-<tr class="separator:aac293b6bd972853f00f16497d2c8bfc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79330285ceca3349f255d8caddb50413"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a79330285ceca3349f255d8caddb50413"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename ProcessArray&lt; T &gt;::SharedPtr, typename ProcessArray&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a79330285ceca3349f255d8caddb50413">ChimeraTK::createBidirectionalSynchronizedProcessArray</a> (std::size_t size, const ChimeraTK::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, T initialValue=T(), std::size_t numberOfBuffers=3, TimeStampSource::SharedPtr timeStampSource1=TimeStampSource::SharedPtr(), TimeStampSource::SharedPtr timeStampSource2=TimeStampSource::SharedPtr(), ProcessVariableListener::SharedPtr sendNotificationListener1=ProcessVariableListener::SharedPtr(), ProcessVariableListener::SharedPtr sendNotificationListener2=ProcessVariableListener::SharedPtr(), const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
+<tr class="memdesc:a79330285ceca3349f255d8caddb50413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a bidirectional synchronized process array.  <a href="namespace_chimera_t_k.html#a79330285ceca3349f255d8caddb50413">More...</a><br /></td></tr>
+<tr class="separator:a79330285ceca3349f255d8caddb50413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e7874e8f78909e332d9529e18e41ed"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:af5e7874e8f78909e332d9529e18e41ed"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename ProcessArray&lt; T &gt;::SharedPtr, typename ProcessArray&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#af5e7874e8f78909e332d9529e18e41ed">ChimeraTK::createBidirectionalSynchronizedProcessArray</a> (const std::vector&lt; T &gt; &amp;initialValue, const ChimeraTK::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, std::size_t numberOfBuffers=3, TimeStampSource::SharedPtr timeStampSource1=TimeStampSource::SharedPtr(), TimeStampSource::SharedPtr timeStampSource2=TimeStampSource::SharedPtr(), ProcessVariableListener::SharedPtr sendNotificationListener1=ProcessVariableListener::SharedPtr(), ProcessVariableListener::SharedPtr sendNotificationListener2=ProcessVariableListener::SharedPtr(), const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
+<tr class="memdesc:af5e7874e8f78909e332d9529e18e41ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a bidirectional synchronized process array.  <a href="namespace_chimera_t_k.html#af5e7874e8f78909e332d9529e18e41ed">More...</a><br /></td></tr>
+<tr class="separator:af5e7874e8f78909e332d9529e18e41ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 4 2018 05:53:15 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 5 2018 09:08:20 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
