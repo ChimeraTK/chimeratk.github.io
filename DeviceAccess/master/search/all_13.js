@@ -4,7 +4,7 @@ var searchData=
   ['targetalias',['targetAlias',['../class_chimera_t_k_1_1_subdevice_backend.html#a62ecf0e01fab6565bad9dd9580f6c4be',1,'ChimeraTK::SubdeviceBackend']]],
   ['targetarea',['targetArea',['../class_chimera_t_k_1_1_subdevice_backend.html#a955414ee7222c3a5898132c55f00a4ca',1,'ChimeraTK::SubdeviceBackend']]],
   ['targetdevice',['targetDevice',['../class_chimera_t_k_1_1_subdevice_backend.html#ab463f31ed49f8490954116ccd58d60ce',1,'ChimeraTK::SubdeviceBackend']]],
-  ['targettype',['targetType',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ac207ec46daf9ba7cae5a125fd9093a17',1,'ChimeraTK::LNMBackendRegisterInfo::targetType()'],['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787b',1,'ChimeraTK::LNMBackendRegisterInfo::TargetType()']]],
+  ['targettype',['TargetType',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787b',1,'ChimeraTK::LNMBackendRegisterInfo::TargetType()'],['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ac207ec46daf9ba7cae5a125fd9093a17',1,'ChimeraTK::LNMBackendRegisterInfo::targetType()']]],
   ['tcpctrl',['TcpCtrl',['../class_chimera_t_k_1_1_tcp_ctrl.html',1,'ChimeraTK']]],
   ['tcpctrl',['TcpCtrl',['../class_chimera_t_k_1_1_tcp_ctrl.html#a9f643d6d6508b03b324d9a1e82175d99',1,'ChimeraTK::TcpCtrl']]],
   ['tcpctrl_2ecc',['TcpCtrl.cc',['../_tcp_ctrl_8cc.html',1,'']]],
@@ -61,5 +61,5 @@ var searchData=
   ['twodregisteraccessor_2eh',['TwoDRegisterAccessor.h',['../device_2include_2_two_d_register_accessor_8h.html',1,'']]],
   ['twodregisteraccessor_2eh',['TwoDRegisterAccessor.h',['../mtca4u__compatibility__headers_2_two_d_register_accessor_8h.html',1,'']]],
   ['twodregisteraccessorexception',['TwoDRegisterAccessorException',['../namespace_chimera_t_k.html#a51ecfb668fbe5e644cf2f3f6021bb98b',1,'ChimeraTK']]],
-  ['type',['type',['../class_chimera_t_k_1_1_subdevice_backend.html#aabbf31c21d868a0a7b7135463c0c1c2b',1,'ChimeraTK::SubdeviceBackend::type()'],['../class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5c',1,'ChimeraTK::SubdeviceBackend::Type()'],['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a080160a160085512f08190b4a10bcd1c',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem::TYPE()'],['../class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#a6941f15363da9fe7de57f85eddfdfd13',1,'ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem::TYPE()']]]
+  ['type',['Type',['../class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5c',1,'ChimeraTK::SubdeviceBackend::Type()'],['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a080160a160085512f08190b4a10bcd1c',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem::TYPE()'],['../class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#a6941f15363da9fe7de57f85eddfdfd13',1,'ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem::TYPE()'],['../class_chimera_t_k_1_1_subdevice_backend.html#aabbf31c21d868a0a7b7135463c0c1c2b',1,'ChimeraTK::SubdeviceBackend::type()']]]
 ];
