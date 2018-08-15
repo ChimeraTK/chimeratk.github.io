@@ -8,5 +8,6 @@ var searchData=
   ['doocsservertesthelper_2ecc',['doocsServerTestHelper.cc',['../doocs_server_test_helper_8cc.html',1,'']]],
   ['doocsservertesthelper_2eh',['doocsServerTestHelper.h',['../doocs_server_test_helper_8h.html',1,'']]],
   ['doocsset',['doocsSet',['../class_doocs_server_test_helper.html#afa37ac6810eddce6920a75c651e3efcb',1,'DoocsServerTestHelper::doocsSet(const std::string &amp;name, TYPE value)'],['../class_doocs_server_test_helper.html#a7e337f155470f2ee86317a6de3bbca4d',1,'DoocsServerTestHelper::doocsSet(const std::string &amp;name, const std::vector&lt; TYPE &gt; &amp;value)']]],
+  ['doocssetiiii',['doocsSetIIII',['../class_doocs_server_test_helper.html#a56de9a15e295dcf76779bbbc8ecf455d',1,'DoocsServerTestHelper']]],
   ['doocssetspectrum',['doocsSetSpectrum',['../class_doocs_server_test_helper.html#aa870e90fda78fb8c83d731a9d71fe58d',1,'DoocsServerTestHelper']]]
 ];
