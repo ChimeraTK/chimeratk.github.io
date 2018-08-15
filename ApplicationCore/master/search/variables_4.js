@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['datalosscounter',['dataLossCounter',['../class_chimera_t_k_1_1_application.html#a80e8990554832fe825057368d512a7a5',1,'ChimeraTK::Application']]],
   ['dataspacelistmap',['dataSpaceListMap',['../struct_chimera_t_k_1_1_h5storage.html#a5ebb6c1a6753fbe56ac757d787542e3c',1,'ChimeraTK::H5storage']]],
   ['debugmode_5fvariablelist',['debugMode_variableList',['../class_chimera_t_k_1_1_application.html#a20ee34f9da398c58ad9e4228449412fa',1,'ChimeraTK::Application']]],
   ['decimationfactorlistmap',['decimationFactorListMap',['../struct_chimera_t_k_1_1_h5storage.html#a099f658e374306a0fdd6ad2072d3f3c3',1,'ChimeraTK::H5storage']]],

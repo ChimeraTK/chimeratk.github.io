@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['datalosscounter',['DataLossCounter',['../struct_chimera_t_k_1_1_data_loss_counter.html',1,'ChimeraTK']]],
+  ['datalosscounter',['dataLossCounter',['../class_chimera_t_k_1_1_application.html#a80e8990554832fe825057368d512a7a5',1,'ChimeraTK::Application']]],
+  ['datalosscounter_2eh',['DataLossCounter.h',['../_data_loss_counter_8h.html',1,'']]],
   ['dataspacecreator',['DataSpaceCreator',['../struct_chimera_t_k_1_1_data_space_creator.html',1,'ChimeraTK']]],
   ['dataspacecreator',['DataSpaceCreator',['../struct_chimera_t_k_1_1_data_space_creator.html#a4ab72fba54f811ee559dd0fd9162f39e',1,'ChimeraTK::DataSpaceCreator']]],
   ['dataspacelist',['dataSpaceList',['../struct_chimera_t_k_1_1_h5storage.html#a8c34d6861980688f8c060290814bbeb6',1,'ChimeraTK::H5storage']]],
@@ -8,8 +11,8 @@ var searchData=
   ['datawriter',['DataWriter',['../struct_chimera_t_k_1_1_data_writer.html#a07ca68460a89ad05e8bd48f7a90c9c42',1,'ChimeraTK::DataWriter']]],
   ['deactivate',['deactivate',['../class_chimera_t_k_1_1_internal_module.html#a7c306d0c2969c4f4151d2f0d7f42937d',1,'ChimeraTK::InternalModule::deactivate()'],['../class_chimera_t_k_1_1_threaded_fan_out.html#a2e01fc1efd2e4f39b13c885d33978da8',1,'ChimeraTK::ThreadedFanOut::deactivate()'],['../class_chimera_t_k_1_1_trigger_fan_out.html#a3404af1ffc3a6df39808d28887714a90',1,'ChimeraTK::TriggerFanOut::deactivate()']]],
   ['debug',['DEBUG',['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416a682501b7fb187303796e3f533735b51f',1,'logging']]],
-  ['debugdecoratorregisteraccessor',['DebugDecoratorRegisterAccessor',['../class_chimera_t_k_1_1_debug_decorator_register_accessor.html',1,'ChimeraTK']]],
   ['debugdecoratorregisteraccessor',['DebugDecoratorRegisterAccessor',['../class_chimera_t_k_1_1_application.html#a414a3b8cbcb5d769ea95110172cd781c',1,'ChimeraTK::Application::DebugDecoratorRegisterAccessor()'],['../class_chimera_t_k_1_1_debug_decorator_register_accessor.html#adb39c7c8e06dca87c17b7f5ad9a90292',1,'ChimeraTK::DebugDecoratorRegisterAccessor::DebugDecoratorRegisterAccessor()']]],
+  ['debugdecoratorregisteraccessor',['DebugDecoratorRegisterAccessor',['../class_chimera_t_k_1_1_debug_decorator_register_accessor.html',1,'ChimeraTK']]],
   ['debugdecoratorregisteraccessor_2eh',['DebugDecoratorRegisterAccessor.h',['../_debug_decorator_register_accessor_8h.html',1,'']]],
   ['debugmode_5fvariablelist',['debugMode_variableList',['../class_chimera_t_k_1_1_application.html#a20ee34f9da398c58ad9e4228449412fa',1,'ChimeraTK::Application']]],
   ['debugtestablemode',['debugTestableMode',['../class_chimera_t_k_1_1_application.html#abb8b6abdb4e460d15a7291b5e8568f0c',1,'ChimeraTK::Application']]],
