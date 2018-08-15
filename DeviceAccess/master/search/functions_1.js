@@ -1,7 +1,7 @@
 var searchData=
 [
   ['abspathofdmapcontent',['absPathOfDMapContent',['../class_chimera_t_k_1_1_d_map_file_parser.html#acf85a1a19c1c9e4a3d06c17256e6e31c',1,'ChimeraTK::DMapFileParser']]],
-  ['accesschannel',['accessChannel',['../class_chimera_t_k_1_1_n_d_register_accessor.html#ae7320f8139ee7b794743bd4e203fbb12',1,'ChimeraTK::NDRegisterAccessor']]],
+  ['accesschannel',['accessChannel',['../class_chimera_t_k_1_1_n_d_register_accessor.html#ae7320f8139ee7b794743bd4e203fbb12',1,'ChimeraTK::NDRegisterAccessor::accessChannel(unsigned int channel)'],['../class_chimera_t_k_1_1_n_d_register_accessor.html#ae0d7e14f96091e5b95b1ccb2eb5e2063',1,'ChimeraTK::NDRegisterAccessor::accessChannel(unsigned int channel) const ']]],
   ['accessdata',['accessData',['../class_chimera_t_k_1_1_n_d_register_accessor.html#ae07a53bd251a3c65105f70a05ef3ffd0',1,'ChimeraTK::NDRegisterAccessor::accessData(unsigned int sample)'],['../class_chimera_t_k_1_1_n_d_register_accessor.html#a7199e39d27e7d3a32b92188526a11218',1,'ChimeraTK::NDRegisterAccessor::accessData(unsigned int channel, unsigned int sample)']]],
   ['accessmodeflags',['AccessModeFlags',['../class_chimera_t_k_1_1_access_mode_flags.html#a9b8244b9cba5317c0d10106b651f1100',1,'ChimeraTK::AccessModeFlags::AccessModeFlags(const std::set&lt; AccessMode &gt; &amp;flags)'],['../class_chimera_t_k_1_1_access_mode_flags.html#af6a2799029c3af844bfcf10e9a2daf05',1,'ChimeraTK::AccessModeFlags::AccessModeFlags(const std::initializer_list&lt; AccessMode &gt; &amp;flags)']]],
   ['accessorhandler',['AccessorHandler',['../class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html#a04068ecc434bc24ba1cea9fc01d5816c',1,'ChimeraTK::RegisterAccessor::AccessorHandler']]],

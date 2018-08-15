@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mtca4u-deviceaccess
-   &#160;<span id="projectnumber">00.32.00</span>
+   &#160;<span id="projectnumber">00.33.00</span>
    </div>
   </td>
  </tr>
@@ -194,7 +194,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a781f771e098890bc458ea65e24cea376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate a persistent data storage object to be updated on each write operation of this ProcessArray.  <a href="#a781f771e098890bc458ea65e24cea376">More...</a><br /></td></tr>
 <tr class="separator:a781f771e098890bc458ea65e24cea376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f1dc2df8bce02f4bd887a0a0a1af54a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a0f1dc2df8bce02f4bd887a0a0a1af54a">getId</a> () const </td></tr>
-<tr class="memdesc:a0f1dc2df8bce02f4bd887a0a0a1af54a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain unique ID for this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#a0f1dc2df8bce02f4bd887a0a0a1af54a">More...</a><br /></td></tr>
+<tr class="memdesc:a0f1dc2df8bce02f4bd887a0a0a1af54a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain unique ID for the actual implementation of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#a0f1dc2df8bce02f4bd887a0a0a1af54a">More...</a><br /></td></tr>
 <tr class="separator:a0f1dc2df8bce02f4bd887a0a0a1af54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90726f6d4ebc3d3d0145f43098bff8bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a90726f6d4ebc3d3d0145f43098bff8bc">transferFutureWaitCallback</a> ()</td></tr>
 <tr class="memdesc:a90726f6d4ebc3d3d0145f43098bff8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> before entering a potentially blocking wait().  <a href="#a90726f6d4ebc3d3d0145f43098bff8bc">More...</a><br /></td></tr>
@@ -268,7 +268,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Construct from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> implementation. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00251">251</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00250">250</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -406,10 +406,10 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Obtain unique ID for this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
-<p>If this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> is the abstractor side of the bridge, this function will return the unique ID of the actual implementation. This means that e.g. two instances of <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html" title="Accessor class to read and write scalar registers transparently by using the accessor object like a v...">ScalarRegisterAccessor</a> created by the same call to <a class="el" href="class_chimera_t_k_1_1_device.html#a37f85f4e0a786ee59f39d949d4cce562" title="Get a ScalarRegisterObject object for the given register. ">Device::getScalarRegisterAccessor()</a> (e.g. by copying the accessor to another using NDRegisterAccessorBridge::replace()) will have the same ID, while two instances obtained by to difference calls to <a class="el" href="class_chimera_t_k_1_1_device.html#a37f85f4e0a786ee59f39d949d4cce562" title="Get a ScalarRegisterObject object for the given register. ">Device::getScalarRegisterAccessor()</a> will have a different ID even when accessing the very same register. </p>
+<p>Obtain unique ID for the actual implementation of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
+<p>This means that e.g. two instances of <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html" title="Accessor class to read and write scalar registers transparently by using the accessor object like a v...">ScalarRegisterAccessor</a> created by the same call to <a class="el" href="class_chimera_t_k_1_1_device.html#a37f85f4e0a786ee59f39d949d4cce562" title="Get a ScalarRegisterObject object for the given register. ">Device::getScalarRegisterAccessor()</a> (e.g. by copying the accessor to another using NDRegisterAccessorBridge::replace()) will have the same ID, while two instances obtained by to difference calls to <a class="el" href="class_chimera_t_k_1_1_device.html#a37f85f4e0a786ee59f39d949d4cce562" title="Get a ScalarRegisterObject object for the given register. ">Device::getScalarRegisterAccessor()</a> will have a different ID even when accessing the very same register. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00235">235</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00234">234</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -925,7 +925,7 @@ Protected Attributes</h2></td></tr>
 <p>Function called by the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> before entering a potentially blocking wait(). </p>
 <p>In contrast to a wait callback of a boost::future/promise, this function is not called when just checking whether the result is ready or not. Usually it is not necessary to implement this function, but decorators should pass it on. One use case is the ApplicationCore TestDecoratorRegisterAccessor, which needs to be informed before blocking the thread execution. Note: The <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers...">ReadAnyGroup</a> will trigger a call to this function of the first <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> with <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> in the group before potentially blocking. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00244">244</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00243">243</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -979,7 +979,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Untyped pointer to implementation. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00256">256</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00255">255</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -989,7 +989,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 6 2018 05:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 15 2018 14:53:38 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
