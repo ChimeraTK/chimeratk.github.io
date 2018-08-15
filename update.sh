@@ -85,6 +85,10 @@ function update_tag(){
   cd $DOC_DIR
   git add $EPOCH >/dev/null 2>&1
   git commit -m "Created/updated docu for ${repo} $TAG (automatic commit)" >/dev/null 2>&1
+  if ! [ $? == "0" ] ; then
+      echo ERROR: Error committing to git for ${repo} $TAG. Did you set git user name and email address?
+      return -1
+  fi
 }
 
 #get a list of repositories from github
