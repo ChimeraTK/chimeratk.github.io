@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK Control System Adapter
-   &#160;<span id="projectnumber">00.13.00</span>
+   &#160;<span id="projectnumber">00.14.00</span>
    </div>
    <div id="projectbrief">Tools to facilitate the interfacing to control systems</div>
   </td>
@@ -283,7 +283,7 @@ class ChimeraTK::UnidirectionalProcessArray&lt; T &gt;</h3>
 <p>This implementation is used for both sides (sender and receiver).</p>
 <p>This class is not thread-safe and should only be used from a single thread. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00047">47</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00042">42</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ab0fb62fab7a4974cd6f9f096902f4449"></a>
 <div class="memitem">
@@ -299,7 +299,7 @@ template&lt;class T&gt; </div>
 
 <p>Type alias for a shared pointer to this type. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00054">54</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00049">49</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -364,7 +364,7 @@ template&lt;class T &gt; </div>
 <p>A receiver is intended to work as a tandem with a sender and receives values that have been set to the sender.</p>
 <p>This constructor creates the buffers and queues that are needed for the send/receive process and are shared with the sender. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00451">451</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00446">446</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -423,7 +423,7 @@ template&lt;class T &gt; </div>
 <p>If the <code>maySendDestructively</code> flag is <code>true</code>, the <a class="el" href="class_chimera_t_k_1_1_process_array.html#a9b2548beb21a137be9e8016e29cb4fb6">ProcessArray::writeDestructively()</a> method may be used to transfer values without copying but losing them on the sender side.</p>
 <p>The optional send-notification listener is notified every time the sender's ProcessArray::write() method is called. It can be used to queue a request for the receiver's readNonBlocking() method to be called. The process variable passed to the listener is the receiver and not the sender. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00486">486</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00480">480</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -454,7 +454,7 @@ template&lt;class T&gt; </div>
 <p>Check thread safety. </p>
 <p>This function is used in various places inside an assert(). </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00317">317</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00312">312</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -481,7 +481,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00572">572</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00565">565</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -509,7 +509,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>if wait_for_new_data is not set, make identical to <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a5aa3d4f0b0f4da26737e89ef4e70caab">doReadTransferLatest()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00520">520</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00513">513</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -537,7 +537,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>if wait_for_new_data is not set, make identical to <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a5aa3d4f0b0f4da26737e89ef4e70caab">doReadTransferLatest()</a> (but asynchronous) </dd></dl>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00555">555</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00548">548</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -564,7 +564,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00536">536</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00529">529</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -592,7 +592,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>if wait_for_new_data is not set, make identical to <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a5aa3d4f0b0f4da26737e89ef4e70caab">doReadTransferLatest()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00528">528</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00521">521</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -620,7 +620,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00590">590</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00583">583</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -647,7 +647,7 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00092">92</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00087">87</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -679,7 +679,7 @@ template&lt;class T&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_process_array.html#ac1be019e072c4306fa9d3516177215f5">ChimeraTK::ProcessArray&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00164">164</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00159">159</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -706,7 +706,7 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00096">96</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00091">91</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -733,7 +733,7 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00174">174</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00169">169</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -761,7 +761,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00622">622</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00615">615</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -798,7 +798,7 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_process_array.html#a9b2548beb21a137be9e8016e29cb4fb6">ChimeraTK::ProcessArray&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00598">598</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00591">591</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -836,7 +836,7 @@ template&lt;class T &gt; </div>
 <p>The time-stamp source of this process array is ignored and the passed time stamp is used instead.</p>
 <p>Throws an exception if this process variable is not a sender or if this process variable does not allow destructive sending. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00610">610</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00603">603</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -884,7 +884,7 @@ template&lt;class T &gt; </div>
 <div class="fragment"><div class="line">send </div></div><!-- fragment --><p> methods. All these methods basically do the same and only differ in whether the data in the sent array is copied to the buffer used as the new current buffer and which version number is used.</p>
 <p>The return value will be true, if older data was overwritten during the send operation, or otherwise false. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00641">641</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00634">634</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -911,7 +911,7 @@ template&lt;class T&gt; </div>
 
 <p>Local buffer of this end (receiving or sending) of the process variable. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00267">267</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00262">262</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -938,7 +938,7 @@ template&lt;class T&gt; </div>
 <p>Flag indicating whether the. </p>
 <div class="fragment"><div class="line">sendDestructively </div></div><!-- fragment --><p> methods may be used on this process array. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00231">231</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00226">226</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -964,7 +964,7 @@ template&lt;class T&gt; </div>
 
 <p>Persistent data storage which needs to be informed when the process variable is sent. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00298">298</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00293">293</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -990,7 +990,7 @@ template&lt;class T&gt; </div>
 
 <p>Variable ID for the persistent data storage. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00303">303</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00298">298</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -1017,7 +1017,7 @@ template&lt;class T&gt; </div>
 <p>Pointer to the receiver associated with this sender. </p>
 <p>This field is only used if this process variable represents a sender. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00283">283</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00278">278</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1043,7 @@ template&lt;class T&gt; </div>
 
 <p>Listener that is notified when the process variable is sent. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00293">293</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00288">288</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -1067,7 +1067,7 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00262">262</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00257">257</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -1093,7 +1093,7 @@ template&lt;class T&gt; </div>
 
 <p>Local copy of the version number belonging to the NDRegisterAccessor&lt;T&gt;::buffer_2D. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00277">277</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00272">272</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -1119,7 +1119,7 @@ template&lt;class T&gt; </div>
 
 <p>Time-stamp source used to update the time-stamp when sending a value. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00288">288</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00283">283</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -1145,7 +1145,7 @@ template&lt;class T&gt; </div>
 
 <p>Number of elements that each vector (and thus this array) has. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00225">225</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00220">220</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -1171,7 +1171,7 @@ template&lt;class T&gt; </div>
 
 <p>Local copy of the version number belonging to the NDRegisterAccessor&lt;T&gt;::buffer_2D. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00272">272</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00267">267</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -1197,7 +1197,7 @@ template&lt;class T&gt; </div>
 
 <p>Flag whether threadSafetyCheckLastId has been filled already. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00338">338</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00333">333</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -1223,7 +1223,7 @@ template&lt;class T&gt; </div>
 
 <p>Hash of the last known thread id for the thread safety check. </p>
 
-<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00335">335</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00330">330</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -1233,7 +1233,7 @@ template&lt;class T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 6 2018 05:53:20 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 15 2018 14:54:11 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
