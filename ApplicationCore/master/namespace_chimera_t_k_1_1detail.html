@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore
-   &#160;<span id="projectnumber">00.14.00</span>
+   &#160;<span id="projectnumber">00.15.00</span>
    </div>
   </td>
  </tr>
@@ -89,20 +89,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ChimeraTK::detail Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1detail_1_1_accessor_attacher.html">AccessorAttacher</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callable class for use with boost::fusion::for_each: Attach the given accessor to the <a class="el" href="struct_chimera_t_k_1_1_micro_d_a_q.html" title="MicroDAQ module for logging data to HDF5 files. ">MicroDAQ</a> with proper handling of the UserType.  <a href="struct_chimera_t_k_1_1detail_1_1_accessor_attacher.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1detail_1_1_data_space_creator.html">DataSpaceCreator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1detail_1_1_data_writer.html">DataWriter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1detail_1_1_h5storage.html">H5storage</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a1f97ed5866f965d58297cf102ef8abb1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1detail.html#a1f97ed5866f965d58297cf102ef8abb1">encodeDotNodeName</a> (std::string name)</td></tr>
 <tr class="separator:a1f97ed5866f965d58297cf102ef8abb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab134f2c5f74b1ec76d533855d9e5b4b6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1detail.html#ab134f2c5f74b1ec76d533855d9e5b4b6">nodeName</a> (const <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &amp;node)</td></tr>
 <tr class="separator:ab134f2c5f74b1ec76d533855d9e5b4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c01120417d8f11eda4d4e82f013ab5c"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a7c01120417d8f11eda4d4e82f013ab5c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1detail.html#a7c01120417d8f11eda4d4e82f013ab5c">DataWriter::write2hdf&lt; std::string &gt;</a> (<a class="el" href="struct_chimera_t_k_1_1_array_poll_input.html">ArrayPollInput</a>&lt; std::string &gt; &amp;accessor, std::string &amp;dataSetName, size_t, H5::DataSpace &amp;dataSpace) const </td></tr>
+<tr class="separator:a7c01120417d8f11eda4d4e82f013ab5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a7c01120417d8f11eda4d4e82f013ab5c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_chimera_t_k_1_1detail_1_1_data_writer.html#a6c1921622791fc56f4346ea7c87a2332">ChimeraTK::detail::DataWriter::write2hdf</a>&lt; std::string &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_chimera_t_k_1_1_array_poll_input.html">ArrayPollInput</a>&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>accessor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>dataSetName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">H5::DataSpace &amp;&#160;</td>
+          <td class="paramname"><em>dataSpace</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_micro_d_a_q_8cc_source.html#l00330">330</a> of file <a class="el" href="_micro_d_a_q_8cc_source.html">MicroDAQ.cc</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a1f97ed5866f965d58297cf102ef8abb1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -142,7 +200,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 15 2018 14:54:38 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 18 2018 07:53:29 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['dataspacecreator',['DataSpaceCreator',['../struct_chimera_t_k_1_1_data_space_creator.html#a4ab72fba54f811ee559dd0fd9162f39e',1,'ChimeraTK::DataSpaceCreator']]],
-  ['datawriter',['DataWriter',['../struct_chimera_t_k_1_1_data_writer.html#a07ca68460a89ad05e8bd48f7a90c9c42',1,'ChimeraTK::DataWriter']]],
+  ['dataspacecreator',['DataSpaceCreator',['../struct_chimera_t_k_1_1detail_1_1_data_space_creator.html#ac0c343e71971060bc23a06aa137bd1d4',1,'ChimeraTK::detail::DataSpaceCreator']]],
+  ['datawriter',['DataWriter',['../struct_chimera_t_k_1_1detail_1_1_data_writer.html#a2b023b5f0e8c90ad4b039fe8e862acd4',1,'ChimeraTK::detail::DataWriter']]],
   ['deactivate',['deactivate',['../class_chimera_t_k_1_1_internal_module.html#a7c306d0c2969c4f4151d2f0d7f42937d',1,'ChimeraTK::InternalModule::deactivate()'],['../class_chimera_t_k_1_1_threaded_fan_out.html#a2e01fc1efd2e4f39b13c885d33978da8',1,'ChimeraTK::ThreadedFanOut::deactivate()'],['../class_chimera_t_k_1_1_trigger_fan_out.html#a3404af1ffc3a6df39808d28887714a90',1,'ChimeraTK::TriggerFanOut::deactivate()']]],
   ['debugdecoratorregisteraccessor',['DebugDecoratorRegisterAccessor',['../class_chimera_t_k_1_1_debug_decorator_register_accessor.html#adb39c7c8e06dca87c17b7f5ad9a90292',1,'ChimeraTK::DebugDecoratorRegisterAccessor']]],
   ['debugtestablemode',['debugTestableMode',['../class_chimera_t_k_1_1_application.html#abb8b6abdb4e460d15a7291b5e8568f0c',1,'ChimeraTK::Application']]],
@@ -23,5 +23,5 @@ var searchData=
   ['dumpconnections',['dumpConnections',['../class_chimera_t_k_1_1_application.html#ad754fcb82f70921783070295991d73a1',1,'ChimeraTK::Application']]],
   ['dumpgraph',['dumpGraph',['../class_chimera_t_k_1_1_entity_owner.html#ab80a73f884f1223e42a92e9e66c858a7',1,'ChimeraTK::EntityOwner']]],
   ['dumpmodulegraph',['dumpModuleGraph',['../class_chimera_t_k_1_1_entity_owner.html#a65c82a268d7700ed2cd7b8bdc521b05c',1,'ChimeraTK::EntityOwner']]],
-  ['write2hdf_3c_20std_3a_3astring_20_3e',['write2hdf&lt; std::string &gt;',['../namespace_chimera_t_k.html#a1e6405b544b4f3d00923ded9b8bdfbf2',1,'ChimeraTK']]]
+  ['write2hdf_3c_20std_3a_3astring_20_3e',['write2hdf&lt; std::string &gt;',['../namespace_chimera_t_k_1_1detail.html#a7c01120417d8f11eda4d4e82f013ab5c',1,'ChimeraTK::detail']]]
 ];

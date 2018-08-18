@@ -14,7 +14,7 @@ var searchData=
   ['scalaraccessor_3c_20uint_20_3e',['ScalarAccessor&lt; uint &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
   ['scalaraccessor_3c_20uint32_5ft_20_3e',['ScalarAccessor&lt; uint32_t &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
   ['scalaraccessor_3c_20uint64_5ft_20_3e',['ScalarAccessor&lt; uint64_t &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
-  ['scalarmap',['ScalarMap',['../class_chimera_t_k_1_1_test_facility.html#a0b618e8e8f606b2298bbdb903c1c90ba',1,'ChimeraTK::TestFacility::ScalarMap()'],['../class_chimera_t_k_1_1_test_facility.html#a5460ef5a9aa90579608591b46ff0408f',1,'ChimeraTK::TestFacility::scalarMap()']]],
+  ['scalarmap',['scalarMap',['../class_chimera_t_k_1_1_test_facility.html#a5460ef5a9aa90579608591b46ff0408f',1,'ChimeraTK::TestFacility::scalarMap()'],['../class_chimera_t_k_1_1_test_facility.html#a0b618e8e8f606b2298bbdb903c1c90ba',1,'ChimeraTK::TestFacility::ScalarMap()']]],
   ['scalaroutput',['ScalarOutput',['../struct_chimera_t_k_1_1_scalar_output.html#ac6cdb23d6d443d8a688c661369ac5ad8',1,'ChimeraTK::ScalarOutput::ScalarOutput(Module *owner, const std::string &amp;name, std::string unit, const std::string &amp;description, const std::unordered_set&lt; std::string &gt; &amp;tags={})'],['../struct_chimera_t_k_1_1_scalar_output.html#af387202f9844aafa1480d99ccc656419',1,'ChimeraTK::ScalarOutput::ScalarOutput()']]],
   ['scalaroutput',['ScalarOutput',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK']]],
   ['scalaroutput_3c_20int_20_3e',['ScalarOutput&lt; int &gt;',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK']]],
@@ -61,6 +61,6 @@ var searchData=
   ['stopmeasurement',['stopMeasurement',['../class_chimera_t_k_1_1_profiler.html#a35af786affb9aecdc2e36a792c9ff5a5',1,'ChimeraTK::Profiler']]],
   ['stream',['stream',['../class_chimera_t_k_1_1_pushable_stream.html#a916dbc0fd3430135e4fbb2a73c22e52e',1,'ChimeraTK::PushableStream']]],
   ['stringpair',['StringPair',['../struct_chimera_t_k_1_1_functor_fill.html#a3263a9dfb5e19915b33c1cab357fa03a',1,'ChimeraTK::FunctorFill::StringPair()'],['../struct_chimera_t_k_1_1_array_functor_fill.html#a372870f827d7ba1ae4b78128c147e187',1,'ChimeraTK::ArrayFunctorFill::StringPair()']]],
-  ['submodules',['submodules',['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()'],['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()'],['../class_chimera_t_k_1_1_device_module.html#ad76777799c8dba6eaea5a78b2a0ac3e9',1,'ChimeraTK::DeviceModule::subModules()']]],
+  ['submodules',['subModules',['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()'],['../class_chimera_t_k_1_1_device_module.html#ad76777799c8dba6eaea5a78b2a0ac3e9',1,'ChimeraTK::DeviceModule::subModules()'],['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()']]],
   ['supportedusertypes_2eh',['SupportedUserTypes.h',['../_supported_user_types_8h.html',1,'']]]
 ];

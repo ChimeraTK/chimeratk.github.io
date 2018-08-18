@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore
-   &#160;<span id="projectnumber">00.14.00</span>
+   &#160;<span id="projectnumber">00.15.00</span>
    </div>
   </td>
  </tr>
@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dd>Check if this is true!  </dd>
 <dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="class_chimera_t_k_1_1_application.html#af71a6285010334471d4a77206d26212d">ChimeraTK::Application::optimiseConnections</a>  ()</dt>
 <dd>check if this assumtion is true! control-system nodes can be created with different types, too!  </dd>
-<dt><a class="anchor" id="_todo000025"></a>Class <a class="el" href="struct_chimera_t_k_1_1_array_pipe.html">ChimeraTK::ArrayPipe&lt; Type &gt;</a>  </dt>
+<dt><a class="anchor" id="_todo000023"></a>Class <a class="el" href="struct_chimera_t_k_1_1_array_pipe.html">ChimeraTK::ArrayPipe&lt; Type &gt;</a>  </dt>
 <dd>Make it more efficient by removing this module entirely in the ApplicationCore connection logic!  </dd>
 <dt><a class="anchor" id="_todo000019"></a>Member <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#ad0dcca74fb73bfa5705878fa506bc365">ChimeraTK::ConfigReader::ConfigReader</a>  (<a class="el" href="class_chimera_t_k_1_1_entity_owner.html" title="Base class for owners of other EntityOwners (e.g. ">EntityOwner</a> *owner, const std::string &amp;name, const std::string &amp;fileName, const std::unordered_set&lt; std::string &gt; &amp;tags={})</dt>
 <dd>change exception!  </dd>
@@ -99,8 +99,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dd>implement properly?  </dd>
 <dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="class_chimera_t_k_1_1_control_system_module.html#ae00bfe6379a470d410ebc354bf61d6c9">ChimeraTK::ControlSystemModule::connectTo</a>  (const <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a> &amp;, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a>={}) const override</dt>
 <dd>make proper exception  </dd>
-<dt><a class="anchor" id="_todo000022"></a>Member <a class="el" href="struct_chimera_t_k_1_1_data_space_creator.html#a2210b3ee9e6837096ace86568d7c77a3">ChimeraTK::DataSpaceCreator::operator()</a>  (PAIR &amp;pair) const </dt>
-<dd>make it configurable!  </dd>
 <dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="class_chimera_t_k_1_1_device_module.html#aa03d167b8b9d4d2c5f0c27c189e0df9d">ChimeraTK::DeviceModule::connectTo</a>  (const <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a> &amp;, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a>={}) const override</dt>
 <dd>make proper exception  </dd>
 <dt><a class="anchor" id="_todo000012"></a>Class <a class="el" href="class_chimera_t_k_1_1_entity_owner.html">ChimeraTK::EntityOwner</a>  </dt>
@@ -115,13 +113,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dd>implement properly?  </dd>
 <dt><a class="anchor" id="_todo000016"></a>Member <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#aad633adbaff643e203d87bdaca7e66dc">ChimeraTK::FeedingFanOut&lt; UserType &gt;::replaceTransferElement</a>  (boost::shared_ptr&lt; mtca4u::TransferElement &gt;) override</dt>
 <dd>implement properly?  </dd>
-<dt><a class="anchor" id="_todo000021"></a>Member <a class="el" href="struct_chimera_t_k_1_1_h5storage.html#aced63aa4c4f3e7031bee0040e8f75b51">ChimeraTK::H5storage::processTrigger</a>  ()</dt>
-<dd>make all this configurable!  </dd>
 <dt><a class="anchor" id="_todo000020"></a>Member <a class="el" href="struct_chimera_t_k_1_1_micro_d_a_q.html#ad94ed29b8eeed494dae365b7b2934617">ChimeraTK::MicroDAQ::addSource</a>  (const <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a> &amp;source, const std::string &amp;namePrefix="")</dt>
 <dd>use <a class="el" href="class_chimera_t_k_1_1_module_impl.html#a04d8be278c790e0479a847225d7e1c5f" title="Return the virtual version of this module and its sub-modules, i.e. ">virtualise()</a> instead  </dd>
-<dt><a class="anchor" id="_todo000023"></a>Member <a class="el" href="struct_chimera_t_k_1_1_read_bit_mask.html#a78c2de777dc3529459cad9b63ff2fcaf">ChimeraTK::ReadBitMask&lt; NBITS &gt;::mainLoop</a>  ()</dt>
+<dt><a class="anchor" id="_todo000021"></a>Member <a class="el" href="struct_chimera_t_k_1_1_read_bit_mask.html#a78c2de777dc3529459cad9b63ff2fcaf">ChimeraTK::ReadBitMask&lt; NBITS &gt;::mainLoop</a>  ()</dt>
 <dd>TODO better make a <a class="el" href="class_chimera_t_k_1_1_module.html#a7cabaa7c9d97adc5c3ed37430b27ee3e" title="Just call write() on all writable variables in the group. ">writeAll()</a> for VariableGroups  </dd>
-<dt><a class="anchor" id="_todo000024"></a>Class <a class="el" href="struct_chimera_t_k_1_1_scalar_pipe.html">ChimeraTK::ScalarPipe&lt; Type &gt;</a>  </dt>
+<dt><a class="anchor" id="_todo000022"></a>Class <a class="el" href="struct_chimera_t_k_1_1_scalar_pipe.html">ChimeraTK::ScalarPipe&lt; Type &gt;</a>  </dt>
 <dd>Make it more efficient by removing this module entirely in the ApplicationCore connection logic!  </dd>
 <dt><a class="anchor" id="_todo000017"></a>Member <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#a4899ab9738a12b99bb1c61d0cf98d265">ChimeraTK::VariableNetworkNode::addTag</a>  (const std::string &amp;tag)</dt>
 <dd>enforce this!  </dd>
@@ -135,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 15 2018 14:54:38 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 18 2018 07:53:28 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
