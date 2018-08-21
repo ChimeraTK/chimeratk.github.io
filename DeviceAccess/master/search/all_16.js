@@ -3,7 +3,7 @@ var searchData=
   ['wait',['wait',['../class_chimera_t_k_1_1_transfer_future.html#ac69099e41046c798d94c8289c335574d',1,'ChimeraTK::TransferFuture']]],
   ['wait_5ffor_5fnew_5fdata',['wait_for_new_data',['../namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031',1,'ChimeraTK']]],
   ['warning',['WARNING',['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a080160a160085512f08190b4a10bcd1ca5ad6b78774879a01d465f58dba1a9b54',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem::WARNING()'],['../class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#a6941f15363da9fe7de57f85eddfdfd13a836a1960540831cdfa40961450d1e9cc',1,'ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem::WARNING()']]],
-  ['what',['what',['../class_chimera_t_k_1_1_exception.html#a0b04d2ac51ad36d89e346776d699672b',1,'ChimeraTK::Exception']]],
+  ['what',['what',['../class_chimera_t_k_1_1runtime__error.html#aa5dcbcc3dac4eb66fdd6e9a7d0b06d8a',1,'ChimeraTK::runtime_error::what()'],['../class_chimera_t_k_1_1logic__error.html#a9a7858acd24726c8cf97be1615bdf41e',1,'ChimeraTK::logic_error::what()'],['../class_chimera_t_k_1_1_exception.html#a0b04d2ac51ad36d89e346776d699672b',1,'ChimeraTK::Exception::what()']]],
   ['widget',['widget',['../namespacemtca4u__lmap__editor.html#a0cc1e4b0f707b6af38b29ac5d4c2f3c3',1,'mtca4u_lmap_editor']]],
   ['width',['width',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#abc687c35e97b3e9ea7d223523db81b0b',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
   ['window',['window',['../namespacemtca4u__lmap__editor.html#a01632b48809cad3e97230f30fa4bcfa3',1,'mtca4u_lmap_editor']]],
