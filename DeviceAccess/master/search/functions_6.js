@@ -6,7 +6,6 @@ var searchData=
   ['findcallbackfunctionsforaddressrange',['findCallbackFunctionsForAddressRange',['../class_chimera_t_k_1_1_dummy_backend.html#a7c7afd621cbac3a7242db50e63089423',1,'ChimeraTK::DummyBackend']]],
   ['finddevbyname_5fpred',['findDevByName_pred',['../class_chimera_t_k_1_1find_dev_by_name__pred.html#a8e5780cdde2c6d1ec8ac12b8d875de95',1,'ChimeraTK::findDevByName_pred']]],
   ['finddevinpairbyname_5fpred',['findDevInPairByName_pred',['../class_chimera_t_k_1_1find_dev_in_pair_by_name__pred.html#aa91fd3a85d13aaa09fe785c080be9a12',1,'ChimeraTK::findDevInPairByName_pred']]],
-  ['findfirstofalias',['findFirstOfAlias',['../class_chimera_t_k_1_1_utilities.html#aa97dc4c2cd68bc343063fa3672335a5d',1,'ChimeraTK::Utilities']]],
   ['findmapfilebyname_5fpred',['findMapFileByName_pred',['../class_chimera_t_k_1_1find_map_file_by_name__pred.html#a15ce0054eb555e1f1f86c38a60011470',1,'ChimeraTK::findMapFileByName_pred']]],
   ['findmetadatabyname_5fpred',['findMetaDataByName_pred',['../class_chimera_t_k_1_1find_meta_data_by_name__pred.html#a47a0c7cbdba7a95598fb8a8a5dd441dc',1,'ChimeraTK::findMetaDataByName_pred']]],
   ['findregisterbyname_5fpred',['findRegisterByName_pred',['../class_chimera_t_k_1_1find_register_by_name__pred.html#a94b5f9baf72daf4fcd11ae5f88baac34',1,'ChimeraTK::findRegisterByName_pred']]],

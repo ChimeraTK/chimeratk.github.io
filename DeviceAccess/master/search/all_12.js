@@ -66,16 +66,16 @@ var searchData=
   ['std',['std',['../namespacestd.html',1,'']]],
   ['stop_5ftime',['stop_time',['../structdevice__ioctrl__time.html#a04786d897463142079bd0cc2b041efcd',1,'device_ioctrl_time']]],
   ['string',['string',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a4385209851f5523769bdd194d86b970d',1,'ChimeraTK::DataType::string()'],['../class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8ab45cffe084dd3d20d928bee85e7b0f21',1,'ChimeraTK::RegisterInfo::string()']]],
-  ['subdevicebackend',['SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html',1,'ChimeraTK']]],
   ['subdevicebackend',['SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html#a3dc6a3fa2f19991c8f91af5ee38171a6',1,'ChimeraTK::SubdeviceBackend']]],
+  ['subdevicebackend',['SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html',1,'ChimeraTK']]],
   ['subdevicebackend_2ecc',['SubdeviceBackend.cc',['../_subdevice_backend_8cc.html',1,'']]],
+  ['subdevicebackend_2eh',['SubdeviceBackend.h',['../device__backends_2_subdevice_2include_2_subdevice_backend_8h.html',1,'']]],
   ['subdevicebackend_2eh',['SubdeviceBackend.h',['../mtca4u__compatibility__headers_2_subdevice_backend_8h.html',1,'']]],
-  ['subdevicebackend_2eh',['SubdeviceBackend.h',['../device__backends_2include_2_subdevice_backend_8h.html',1,'']]],
   ['supportedusertypes_2eh',['SupportedUserTypes.h',['../util_2include_2_supported_user_types_8h.html',1,'']]],
   ['supportedusertypes_2eh',['SupportedUserTypes.h',['../mtca4u__compatibility__headers_2_supported_user_types_8h.html',1,'']]],
   ['swap',['swap',['../class_chimera_t_k_1_1_buffering_register_accessor.html#ace4033d0920147b6bc781ab8ce5b8553',1,'ChimeraTK::BufferingRegisterAccessor::swap()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#ac6aaa6f5f6f680a4df224c5b24adb478',1,'ChimeraTK::OneDRegisterAccessor::swap()']]],
   ['syncndregisteraccessor',['SyncNDRegisterAccessor',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html',1,'ChimeraTK']]],
   ['syncndregisteraccessor',['SyncNDRegisterAccessor',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html#ad0022a8176a6756d9ebdc98d98d2bc07',1,'ChimeraTK::SyncNDRegisterAccessor']]],
-  ['syncndregisteraccessor_2eh',['SyncNDRegisterAccessor.h',['../mtca4u__compatibility__headers_2_sync_n_d_register_accessor_8h.html',1,'']]],
-  ['syncndregisteraccessor_2eh',['SyncNDRegisterAccessor.h',['../device__backends_2include_2_sync_n_d_register_accessor_8h.html',1,'']]]
+  ['syncndregisteraccessor_2eh',['SyncNDRegisterAccessor.h',['../device__backends_2include_2_sync_n_d_register_accessor_8h.html',1,'']]],
+  ['syncndregisteraccessor_2eh',['SyncNDRegisterAccessor.h',['../mtca4u__compatibility__headers_2_sync_n_d_register_accessor_8h.html',1,'']]]
 ];
