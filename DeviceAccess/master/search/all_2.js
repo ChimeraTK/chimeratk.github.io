@@ -9,7 +9,7 @@ var searchData=
   ['accessmode_2eh',['AccessMode.h',['../mtca4u__compatibility__headers_2_access_mode_8h.html',1,'']]],
   ['accessmodeflags',['AccessModeFlags',['../class_chimera_t_k_1_1_access_mode_flags.html',1,'ChimeraTK']]],
   ['accessmodeflags',['AccessModeFlags',['../class_chimera_t_k_1_1_access_mode_flags.html#a9b8244b9cba5317c0d10106b651f1100',1,'ChimeraTK::AccessModeFlags::AccessModeFlags(const std::set&lt; AccessMode &gt; &amp;flags)'],['../class_chimera_t_k_1_1_access_mode_flags.html#af6a2799029c3af844bfcf10e9a2daf05',1,'ChimeraTK::AccessModeFlags::AccessModeFlags(const std::initializer_list&lt; AccessMode &gt; &amp;flags)']]],
-  ['accessor',['accessor',['../class_chimera_t_k_1_1_multiplexed_data_accessor.html#a062b29fa8391cbc42d3fb22eb73cb694',1,'ChimeraTK::MultiplexedDataAccessor::accessor()'],['../class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html#aeeaf05b000058d15f908baddb7ea8be8',1,'ChimeraTK::RegisterAccessor::AccessorHandler::accessor()'],['../class_chimera_t_k_1_1_dynamic_value.html#a4eeb0ed1ce180558c010f4c30ba7308c',1,'ChimeraTK::DynamicValue::accessor()']]],
+  ['accessor',['accessor',['../class_chimera_t_k_1_1_multiplexed_data_accessor.html#a062b29fa8391cbc42d3fb22eb73cb694',1,'ChimeraTK::MultiplexedDataAccessor::accessor()'],['../class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html#aeeaf05b000058d15f908baddb7ea8be8',1,'ChimeraTK::RegisterAccessor::AccessorHandler::accessor()']]],
   ['accessor1d_2ecpp',['accessor1D.cpp',['../accessor1_d_8cpp.html',1,'']]],
   ['accessor1d_2edox',['accessor1D.dox',['../accessor1_d_8dox.html',1,'']]],
   ['accessor2d_2ecpp',['accessor2D.cpp',['../accessor2_d_8cpp.html',1,'']]],
@@ -34,7 +34,6 @@ var searchData=
   ['already_5fopen',['ALREADY_OPEN',['../class_chimera_t_k_1_1_dummy_backend_exception.html#a78eb95242829ec8662bda2033fe08baaa4a41ac18276a99c723be8b0308d955cb',1,'ChimeraTK::DummyBackendException']]],
   ['ambiguous_5fmap_5ffile_5fentry',['AMBIGUOUS_MAP_FILE_ENTRY',['../class_chimera_t_k_1_1_backend_factory_exception.html#aa8b48782b9c46e494ded94da0b4da7b2a39a684363a39749509686a94e730cdf2',1,'ChimeraTK::BackendFactoryException']]],
   ['app',['app',['../namespacemtca4u__lmap__editor.html#a26054e18ad21f94d42284dd2aeb075f8',1,'mtca4u_lmap_editor']]],
-  ['applyscalingfactorunderlyingtothisbuffer',['applyScalingFactorUnderlyingToThisBuffer',['../class_chimera_t_k_1_1_scale_register_plugin.html#aca596b751056dc20c1f6d88adf875c10',1,'ChimeraTK::ScaleRegisterPlugin']]],
   ['area',['area',['../class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5ca4b82677b6c1408df4be21ada9a584fde',1,'ChimeraTK::SubdeviceBackend']]],
   ['argument_5ftype',['argument_type',['../class_chimera_t_k_1_1compare_module_name__pred.html#a49efb6c307aea11857be11d00383aeb0',1,'ChimeraTK::compareModuleName_pred']]],
   ['accessing_20numeric_2daddressed_20registers_20without_20a_20map_20file',['Accessing numeric-addressed registers without a map file',['../numeric_addresses.html',1,'']]]

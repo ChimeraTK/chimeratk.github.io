@@ -6,6 +6,5 @@ var searchData=
   ['isintransfergroup',['isInTransferGroup',['../class_chimera_t_k_1_1_transfer_element.html#aa5fafaaed44dd2c55bcd8a24a99e3e86',1,'ChimeraTK::TransferElement']]],
   ['israw',['isRaw',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a03e3fdf2ab70ae33108a1a96e8499a83',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor']]],
   ['isshared',['isShared',['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a911732a6c2db0537be22f1e76ad59caf',1,'ChimeraTK::NumericAddressedLowLevelTransferElement']]],
-  ['iter',['iter',['../_register_info_map_8cpp.html#a524e0e5aab7cac6c78784ede6a0928cb',1,'RegisterInfoMap.cpp']]],
-  ['iterator',['iterator',['../class_chimera_t_k_1_1_register_info_1_1plugin__iterator.html#ab78ee87a94760ff1569e1efe9675dfae',1,'ChimeraTK::RegisterInfo::plugin_iterator']]]
+  ['iter',['iter',['../_register_info_map_8cpp.html#a524e0e5aab7cac6c78784ede6a0928cb',1,'RegisterInfoMap.cpp']]]
 ];

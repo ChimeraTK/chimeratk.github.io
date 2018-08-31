@@ -12,6 +12,5 @@ var searchData=
   ['addpluginlibrary',['addPluginLibrary',['../class_chimera_t_k_1_1_device_info_map.html#a59d0a2a154d3bb8de24fc7d8931db91a',1,'ChimeraTK::DeviceInfoMap']]],
   ['addregister',['addRegister',['../class_chimera_t_k_1_1_register_catalogue.html#ac868a12da4ce5d9c40b26192473ffbc1',1,'ChimeraTK::RegisterCatalogue::addRegister()'],['../namespacemtca4u__lmap__editor.html#a274b1e8451f3301630361fafa15bdb50',1,'mtca4u_lmap_editor.addRegister()']]],
   ['addressrange',['AddressRange',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html#ae18c40ccd64efd9484032a1f1bd137f8',1,'ChimeraTK::DummyBackend::AddressRange']]],
-  ['aliaslookup',['aliasLookUp',['../class_chimera_t_k_1_1_backend_factory.html#ae166738b5e8ce2b948c542b91eb66237',1,'ChimeraTK::BackendFactory::aliasLookUp()'],['../class_chimera_t_k_1_1_utilities.html#a0124cd7dc8ef468a7c292788414848ed',1,'ChimeraTK::Utilities::aliasLookUp()']]],
-  ['applyscalingfactorunderlyingtothisbuffer',['applyScalingFactorUnderlyingToThisBuffer',['../class_chimera_t_k_1_1_scale_register_plugin.html#aca596b751056dc20c1f6d88adf875c10',1,'ChimeraTK::ScaleRegisterPlugin']]]
+  ['aliaslookup',['aliasLookUp',['../class_chimera_t_k_1_1_backend_factory.html#ae166738b5e8ce2b948c542b91eb66237',1,'ChimeraTK::BackendFactory::aliasLookUp()'],['../class_chimera_t_k_1_1_utilities.html#a0124cd7dc8ef468a7c292788414848ed',1,'ChimeraTK::Utilities::aliasLookUp()']]]
 ];

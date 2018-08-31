@@ -120,15 +120,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acd9254462b3b3ccb6a2931b6b72ffbc5"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#acd9254462b3b3ccb6a2931b6b72ffbc5">getTargetDevices</a> () const </td></tr>
 <tr class="memdesc:acd9254462b3b3ccb6a2931b6b72ffbc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain list of all target devices referenced in the map.  <a href="#acd9254462b3b3ccb6a2931b6b72ffbc5">More...</a><br /></td></tr>
 <tr class="separator:acd9254462b3b3ccb6a2931b6b72ffbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a29999be902cddf0aa5e39a468677fa"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:a5a29999be902cddf0aa5e39a468677fa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_dynamic_value.html">DynamicValue</a>&lt; std::string &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a5a29999be902cddf0aa5e39a468677fa">getValueFromXmlSubnode</a> (const xmlpp::Node *node, const std::string &amp;subnodeName, bool hasDefault, std::string defaultValue)</td></tr>
-<tr class="separator:a5a29999be902cddf0aa5e39a468677fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a120dc6b7ca7797b33eaa99f75727c843"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:a120dc6b7ca7797b33eaa99f75727c843"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_dynamic_value.html">DynamicValue</a>&lt; int &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a120dc6b7ca7797b33eaa99f75727c843">getValueFromXmlSubnode</a> (const xmlpp::Node *node, const std::string &amp;subnodeName, bool hasDefault, int defaultValue)</td></tr>
-<tr class="separator:a120dc6b7ca7797b33eaa99f75727c843"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8df3772fb81ec3a84dfbab27ece0e0d6"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:a8df3772fb81ec3a84dfbab27ece0e0d6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_dynamic_value.html">DynamicValue</a>&lt; unsigned int &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a8df3772fb81ec3a84dfbab27ece0e0d6">getValueFromXmlSubnode</a> (const xmlpp::Node *node, const std::string &amp;subnodeName, bool hasDefault, unsigned int defaultValue)</td></tr>
-<tr class="separator:a8df3772fb81ec3a84dfbab27ece0e0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e3cadf8ca975a0c01291db2d1d9ac0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a59e3cadf8ca975a0c01291db2d1d9ac0"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a59e3cadf8ca975a0c01291db2d1d9ac0">getValueFromXmlSubnode</a> (const xmlpp::Node *node, const std::string &amp;subnodeName, bool hasDefault, T defaultValue)</td></tr>
+<tr class="separator:a59e3cadf8ca975a0c01291db2d1d9ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3accc305e418a90e5de5d19cf1df6f07"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3accc305e418a90e5de5d19cf1df6f07"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a3accc305e418a90e5de5d19cf1df6f07">getValueVectorFromXmlSubnode</a> (const xmlpp::Node *node, const std::string &amp;subnodeName)</td></tr>
+<tr class="separator:a3accc305e418a90e5de5d19cf1df6f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -141,10 +138,13 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aab27e68926c8d7a7d8a1d2ee58742014"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#aab27e68926c8d7a7d8a1d2ee58742014">parsingError</a> (const std::string &amp;message)</td></tr>
 <tr class="memdesc:aab27e68926c8d7a7d8a1d2ee58742014"><td class="mdescLeft">&#160;</td><td class="mdescRight">throw a parsing error with more information  <a href="#aab27e68926c8d7a7d8a1d2ee58742014">More...</a><br /></td></tr>
 <tr class="separator:aab27e68926c8d7a7d8a1d2ee58742014"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11abdb9640aa722df4a7e6e7b3becb95"><td class="memTemplParams" colspan="2">template&lt;typename ValueType &gt; </td></tr>
-<tr class="memitem:a11abdb9640aa722df4a7e6e7b3becb95"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_dynamic_value.html">DynamicValue</a>&lt; ValueType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a11abdb9640aa722df4a7e6e7b3becb95">getValueFromXmlSubnode</a> (const xmlpp::Node *node, const std::string &amp;subnodeName, bool hasDefault=false, ValueType defaultValue=ValueType())</td></tr>
-<tr class="memdesc:a11abdb9640aa722df4a7e6e7b3becb95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a Value object for a given subnode.  <a href="#a11abdb9640aa722df4a7e6e7b3becb95">More...</a><br /></td></tr>
-<tr class="separator:a11abdb9640aa722df4a7e6e7b3becb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd38fcc7e2fa960acd93cebd16b8d917"><td class="memTemplParams" colspan="2">template&lt;typename ValueType &gt; </td></tr>
+<tr class="memitem:abd38fcc7e2fa960acd93cebd16b8d917"><td class="memTemplItemLeft" align="right" valign="top">ValueType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#abd38fcc7e2fa960acd93cebd16b8d917">getValueFromXmlSubnode</a> (const xmlpp::Node *node, const std::string &amp;subnodeName, bool hasDefault=false, ValueType defaultValue=ValueType())</td></tr>
+<tr class="memdesc:abd38fcc7e2fa960acd93cebd16b8d917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a Value object for a given subnode.  <a href="#abd38fcc7e2fa960acd93cebd16b8d917">More...</a><br /></td></tr>
+<tr class="separator:abd38fcc7e2fa960acd93cebd16b8d917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f13a61e1995b759840129c793168d7"><td class="memTemplParams" colspan="2">template&lt;typename ValueType &gt; </td></tr>
+<tr class="memitem:ae8f13a61e1995b759840129c793168d7"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; ValueType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#ae8f13a61e1995b759840129c793168d7">getValueVectorFromXmlSubnode</a> (const xmlpp::Node *node, const std::string &amp;subnodeName)</td></tr>
+<tr class="separator:ae8f13a61e1995b759840129c793168d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -161,7 +161,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logical name map: store information from xlmap file and provide it to the <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html" title="Backend to map logical register names onto real hardware registers. ">LogicalNameMappingBackend</a> and its register accessors. </p>
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00029">29</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00028">28</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad1a3188f2799ab0530be721185f0b50a"></a>
 <div class="memitem">
@@ -187,7 +187,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Constructor: parse map from XML file. </p>
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00034">34</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00033">33</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
 
 </div>
 </div>
@@ -214,7 +214,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Default constructor: Create empty map. </p>
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00039">39</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00038">38</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
 
 </div>
 </div>
@@ -242,7 +242,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Obtain the parsed register catalogue. </p>
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00043">43</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00042">42</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
 
 </div>
 </div>
@@ -261,18 +261,18 @@ Protected Attributes</h2></td></tr>
 
 <p>Obtain list of all target devices referenced in the map. </p>
 
-<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00258">258</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
+<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00278">278</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5a29999be902cddf0aa5e39a468677fa"></a>
+<a class="anchor" id="a59e3cadf8ca975a0c01291db2d1d9ac0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;&gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_dynamic_value.html">DynamicValue</a>&lt;std::string&gt; ChimeraTK::LogicalNameMapParser::getValueFromXmlSubnode </td>
+          <td class="memname">T ChimeraTK::LogicalNameMapParser::getValueFromXmlSubnode </td>
           <td>(</td>
           <td class="paramtype">const xmlpp::Node *&#160;</td>
           <td class="paramname"><em>node</em>, </td>
@@ -292,7 +292,7 @@ template&lt;&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>defaultValue</em>&#160;</td>
         </tr>
         <tr>
@@ -303,53 +303,11 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00020">20</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
+<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00019">19</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a120dc6b7ca7797b33eaa99f75727c843"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_dynamic_value.html">DynamicValue</a>&lt;int&gt; ChimeraTK::LogicalNameMapParser::getValueFromXmlSubnode </td>
-          <td>(</td>
-          <td class="paramtype">const xmlpp::Node *&#160;</td>
-          <td class="paramname"><em>node</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>subnodeName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>hasDefault</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>defaultValue</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00045">45</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a11abdb9640aa722df4a7e6e7b3becb95"></a>
+<a class="anchor" id="abd38fcc7e2fa960acd93cebd16b8d917"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -359,7 +317,7 @@ template&lt;typename ValueType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_dynamic_value.html">DynamicValue</a>&lt;ValueType&gt; ChimeraTK::LogicalNameMapParser::getValueFromXmlSubnode </td>
+          <td class="memname">ValueType ChimeraTK::LogicalNameMapParser::getValueFromXmlSubnode </td>
           <td>(</td>
           <td class="paramtype">const xmlpp::Node *&#160;</td>
           <td class="paramname"><em>node</em>, </td>
@@ -399,14 +357,17 @@ template&lt;typename ValueType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a8df3772fb81ec3a84dfbab27ece0e0d6"></a>
+<a class="anchor" id="ae8f13a61e1995b759840129c793168d7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;&gt; </div>
+template&lt;typename ValueType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_dynamic_value.html">DynamicValue</a>&lt;unsigned int&gt; ChimeraTK::LogicalNameMapParser::getValueFromXmlSubnode </td>
+          <td class="memname">std::vector&lt;ValueType&gt; ChimeraTK::LogicalNameMapParser::getValueVectorFromXmlSubnode </td>
           <td>(</td>
           <td class="paramtype">const xmlpp::Node *&#160;</td>
           <td class="paramname"><em>node</em>, </td>
@@ -415,19 +376,40 @@ template&lt;&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>subnodeName</em>, </td>
+          <td class="paramname"><em>subnodeName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3accc305e418a90e5de5d19cf1df6f07"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;T&gt; ChimeraTK::LogicalNameMapParser::getValueVectorFromXmlSubnode </td>
+          <td>(</td>
+          <td class="paramtype">const xmlpp::Node *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>hasDefault</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>defaultValue</em>&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>subnodeName</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -437,7 +419,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00074">74</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
+<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00080">80</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
 
 </div>
 </div>
@@ -475,7 +457,7 @@ template&lt;&gt; </div>
 
 <p>called inside <a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a9db9a3f936019b197cc735509adea429" title="parse the given XML file ">parseFile()</a> to parse an XML element and its sub-elements recursivly </p>
 
-<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00129">129</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
+<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00184">184</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
 
 </div>
 </div>
@@ -503,7 +485,7 @@ template&lt;&gt; </div>
 
 <p>parse the given XML file </p>
 
-<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00102">102</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
+<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00157">157</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
 
 </div>
 </div>
@@ -531,7 +513,7 @@ template&lt;&gt; </div>
 
 <p>throw a parsing error with more information </p>
 
-<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00272">272</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
+<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00290">290</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
 
 </div>
 </div>
@@ -556,7 +538,7 @@ template&lt;&gt; </div>
 
 <p>actual register info map (register name to target information) </p>
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00073">73</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00074">74</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
 
 </div>
 </div>
@@ -580,7 +562,7 @@ template&lt;&gt; </div>
 
 <p>file name of the logical map </p>
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00067">67</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00068">68</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
 
 </div>
 </div>
@@ -604,7 +586,7 @@ template&lt;&gt; </div>
 
 <p>current register path in the map </p>
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00070">70</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00071">71</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
 
 </div>
 </div>
@@ -615,7 +597,7 @@ template&lt;&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 30 2018 07:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 07:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

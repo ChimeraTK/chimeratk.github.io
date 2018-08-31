@@ -21,14 +21,11 @@ var searchData=
   ['registerinfo_2eh',['RegisterInfo.h',['../fileparsers_2include_2_register_info_8h.html',1,'']]],
   ['registerinfo_2eh',['RegisterInfo.h',['../mtca4u__compatibility__headers_2_register_info_8h.html',1,'']]],
   ['registerinfomap_2ecpp',['RegisterInfoMap.cpp',['../_register_info_map_8cpp.html',1,'']]],
-  ['registerinfomap_2eh',['RegisterInfoMap.h',['../fileparsers_2include_2_register_info_map_8h.html',1,'']]],
   ['registerinfomap_2eh',['RegisterInfoMap.h',['../mtca4u__compatibility__headers_2_register_info_map_8h.html',1,'']]],
-  ['registerinfoplugin_2eh',['RegisterInfoPlugin.h',['../mtca4u__compatibility__headers_2_register_info_plugin_8h.html',1,'']]],
-  ['registerinfoplugin_2eh',['RegisterInfoPlugin.h',['../fileparsers_2include_2_register_info_plugin_8h.html',1,'']]],
+  ['registerinfomap_2eh',['RegisterInfoMap.h',['../fileparsers_2include_2_register_info_map_8h.html',1,'']]],
+  ['registerinfoplugin_2eh',['RegisterInfoPlugin.h',['../_register_info_plugin_8h.html',1,'']]],
   ['registerpath_2ecc',['RegisterPath.cc',['../_register_path_8cc.html',1,'']]],
   ['registerpath_2eh',['RegisterPath.h',['../fileparsers_2include_2_register_path_8h.html',1,'']]],
   ['registerpath_2eh',['RegisterPath.h',['../mtca4u__compatibility__headers_2_register_path_8h.html',1,'']]],
-  ['registerpluginfactory_2ecc',['RegisterPluginFactory.cc',['../_register_plugin_factory_8cc.html',1,'']]],
-  ['registerpluginfactory_2eh',['RegisterPluginFactory.h',['../mtca4u__compatibility__headers_2_register_plugin_factory_8h.html',1,'']]],
-  ['registerpluginfactory_2eh',['RegisterPluginFactory.h',['../fileparsers_2include_2_register_plugin_factory_8h.html',1,'']]]
+  ['registerpluginfactory_2eh',['RegisterPluginFactory.h',['../_register_plugin_factory_8h.html',1,'']]]
 ];

@@ -1,7 +1,6 @@
 var searchData=
 [
   ['datadescriptor',['DataDescriptor',['../class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html',1,'ChimeraTK::RegisterInfo']]],
-  ['datamodifierplugin',['DataModifierPlugin',['../class_chimera_t_k_1_1_data_modifier_plugin.html',1,'ChimeraTK']]],
   ['datatype',['DataType',['../class_chimera_t_k_1_1_data_type.html',1,'ChimeraTK']]],
   ['device',['Device',['../class_chimera_t_k_1_1_device.html',1,'ChimeraTK']]],
   ['device_5fioctrl_5fdata',['device_ioctrl_data',['../structdevice__ioctrl__data.html',1,'']]],
@@ -26,10 +25,5 @@ var searchData=
   ['dummyregisteraddresschecker',['DummyRegisterAddressChecker',['../class_chimera_t_k_1_1_dummy_register_address_checker.html',1,'ChimeraTK']]],
   ['dummyregisterelement',['DummyRegisterElement',['../class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html',1,'ChimeraTK::proxies']]],
   ['dummyregisterexception',['DummyRegisterException',['../class_chimera_t_k_1_1_dummy_register_exception.html',1,'ChimeraTK']]],
-  ['dummyregistersequence',['DummyRegisterSequence',['../class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html',1,'ChimeraTK::proxies']]],
-  ['dynamicvalue',['DynamicValue',['../class_chimera_t_k_1_1_dynamic_value.html',1,'ChimeraTK']]],
-  ['dynamicvalue_3c_20double_20_3e',['DynamicValue&lt; double &gt;',['../class_chimera_t_k_1_1_dynamic_value.html',1,'ChimeraTK']]],
-  ['dynamicvalue_3c_20int_20_3e',['DynamicValue&lt; int &gt;',['../class_chimera_t_k_1_1_dynamic_value.html',1,'ChimeraTK']]],
-  ['dynamicvalue_3c_20std_3a_3astring_20_3e',['DynamicValue&lt; std::string &gt;',['../class_chimera_t_k_1_1_dynamic_value.html',1,'ChimeraTK']]],
-  ['dynamicvalue_3c_20unsigned_20int_20_3e',['DynamicValue&lt; unsigned int &gt;',['../class_chimera_t_k_1_1_dynamic_value.html',1,'ChimeraTK']]]
+  ['dummyregistersequence',['DummyRegisterSequence',['../class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html',1,'ChimeraTK::proxies']]]
 ];

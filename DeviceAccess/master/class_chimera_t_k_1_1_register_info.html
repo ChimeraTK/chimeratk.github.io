@@ -95,7 +95,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_chimera_t_k_1_1_register_info-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ChimeraTK::RegisterInfo Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -121,9 +120,6 @@ Inheritance diagram for ChimeraTK::RegisterInfo:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html">DataDescriptor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class describing the actual payload data format of a register in an abstract manner.  <a href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_1_1plugin__iterator.html">plugin_iterator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterators for the list of plugins.  <a href="class_chimera_t_k_1_1_register_info_1_1plugin__iterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -160,17 +156,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a341d7226406a1b1d91b4dbaecec80b5a"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html">DataDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info.html#a341d7226406a1b1d91b4dbaecec80b5a">getDataDescriptor</a> () const =0</td></tr>
 <tr class="memdesc:a341d7226406a1b1d91b4dbaecec80b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return desciption of the actual payload data for this register.  <a href="#a341d7226406a1b1d91b4dbaecec80b5a">More...</a><br /></td></tr>
 <tr class="separator:a341d7226406a1b1d91b4dbaecec80b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d84c8832d008729cd914c23d7664688"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_register_info_1_1plugin__iterator.html">plugin_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info.html#a3d84c8832d008729cd914c23d7664688">plugins_begin</a> () const </td></tr>
-<tr class="memdesc:a3d84c8832d008729cd914c23d7664688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return iterators for the list of plugins.  <a href="#a3d84c8832d008729cd914c23d7664688">More...</a><br /></td></tr>
-<tr class="separator:a3d84c8832d008729cd914c23d7664688"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adec5b5095c24baee26edb51490813fc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_register_info_1_1plugin__iterator.html">plugin_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info.html#adec5b5095c24baee26edb51490813fc6">plugins_end</a> () const </td></tr>
-<tr class="separator:adec5b5095c24baee26edb51490813fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a50a48f428a890ca80342c424c1d6e926"><td class="memItemLeft" align="right" valign="top">std::vector&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_register_info_plugin.html">RegisterInfoPlugin</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info.html#a50a48f428a890ca80342c424c1d6e926">pluginList</a></td></tr>
-<tr class="memdesc:a50a48f428a890ca80342c424c1d6e926"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of plugins  <a href="#a50a48f428a890ca80342c424c1d6e926">More...</a><br /></td></tr>
-<tr class="separator:a50a48f428a890ca80342c424c1d6e926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DeviceBackend-independent register description. </p>
@@ -379,90 +364,13 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3d84c8832d008729cd914c23d7664688"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_register_info_1_1plugin__iterator.html">plugin_iterator</a> ChimeraTK::RegisterInfo::plugins_begin </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return iterators for the list of plugins. </p>
-
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00184">184</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="adec5b5095c24baee26edb51490813fc6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_register_info_1_1plugin__iterator.html">plugin_iterator</a> ChimeraTK::RegisterInfo::plugins_end </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00189">189</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a50a48f428a890ca80342c424c1d6e926"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_register_info_plugin.html">RegisterInfoPlugin</a>&gt; &gt; ChimeraTK::RegisterInfo::pluginList</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>list of plugins </p>
-
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00198">198</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/fileparsers/include/<a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 30 2018 07:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 07:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

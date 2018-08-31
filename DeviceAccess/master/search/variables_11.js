@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['scaleregisterpluginregisterer',['scaleRegisterPluginRegisterer',['../namespace_chimera_t_k.html#a1fff9849a485d76357280fc8454fa834',1,'ChimeraTK']]],
-  ['scalingfactor',['scalingFactor',['../class_chimera_t_k_1_1_scale_register_plugin.html#aa7186b15fac36435db8fd541aabf604f',1,'ChimeraTK::ScaleRegisterPlugin']]],
   ['seconds',['seconds',['../struct_chimera_t_k_1_1_time_stamp.html#a75f4d34d1c367f5e644dcb3545a3cd08',1,'ChimeraTK::TimeStamp']]],
   ['separator',['separator',['../class_chimera_t_k_1_1_register_path.html#a81b8890283310318efc2250dc61f2bc2',1,'ChimeraTK::RegisterPath']]],
   ['separator_5falt',['separator_alt',['../class_chimera_t_k_1_1_register_path.html#af1888904376dc11f58b3881fadf5c9db',1,'ChimeraTK::RegisterPath']]],
