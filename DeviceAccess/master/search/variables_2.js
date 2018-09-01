@@ -7,6 +7,7 @@ var searchData=
   ['barsizes',['barSizes',['../struct__pcieuni__ioctl__bar__sizes.html#a1655f2c0a5992b5017c45c4bbd8d045d',1,'_pcieuni_ioctl_bar_sizes']]],
   ['barx_5frw',['barx_rw',['../structdevice__rw.html#ae382b34e69e05728f9a046ae0cf53c3a',1,'device_rw']]],
   ['beginindex',['beginIndex',['../class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html#ac24c3977c5933514ab1bced050a64470',1,'ChimeraTK::RegisterAccessor::AccessorHandler']]],
+  ['bit',['bit',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#af1027e2cac947b434f1d861bfa07a18c',1,'ChimeraTK::LNMBackendRegisterInfo']]],
   ['buffer',['buffer',['../class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html#ad3b99349e761ce22a6ccfea804370d9c',1,'ChimeraTK::proxies::DummyRegisterElement::buffer()'],['../class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html#af0607c2ba14dac93752ca720bd1097f5',1,'ChimeraTK::proxies::DummyRegisterSequence::buffer()']]],
   ['buffer_5f2d',['buffer_2D',['../class_chimera_t_k_1_1_n_d_register_accessor.html#a090e36fbf49720603758f0d8485c52ff',1,'ChimeraTK::NDRegisterAccessor']]],
   ['buttonaddmod',['buttonAddMod',['../namespacemtca4u__lmap__editor.html#aa2f38f07ad88e3fe8fa0d6c8f5fe4770',1,'mtca4u_lmap_editor']]],

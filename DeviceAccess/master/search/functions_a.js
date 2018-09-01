@@ -2,6 +2,7 @@ var searchData=
 [
   ['length',['length',['../class_chimera_t_k_1_1_register_path.html#a83e2606e21654e9bfd411af53a935792',1,'ChimeraTK::RegisterPath']]],
   ['libmapexception',['LibMapException',['../class_chimera_t_k_1_1_lib_map_exception.html#aac6e4f2f32b3301448f7e9aac087a313',1,'ChimeraTK::LibMapException']]],
+  ['lnmbackendbitaccessor',['LNMBackendBitAccessor',['../class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ad236c093d0be42c459d13ad62f91a325',1,'ChimeraTK::LNMBackendBitAccessor']]],
   ['lnmbackendchannelaccessor',['LNMBackendChannelAccessor',['../class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a54b235325e9e4cb1a081978e956f3072',1,'ChimeraTK::LNMBackendChannelAccessor']]],
   ['lnmbackendregisterinfo',['LNMBackendRegisterInfo',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#af7a8a9232ef67407ebc7081b25510cce',1,'ChimeraTK::LNMBackendRegisterInfo']]],
   ['lnmbackendvariableaccessor',['LNMBackendVariableAccessor',['../class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#ab1dbc7a69ac2852c9b4809b510ea27b6',1,'ChimeraTK::LNMBackendVariableAccessor']]],

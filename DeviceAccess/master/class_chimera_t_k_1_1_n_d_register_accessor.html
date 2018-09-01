@@ -118,10 +118,11 @@ Inheritance diagram for ChimeraTK::NDRegisterAccessor&lt; UserType &gt;:</div>
 <area href="class_chimera_t_k_1_1_multiplexed_data_accessor.html" alt="ChimeraTK::MultiplexedDataAccessor&lt; UserType &gt;" shape="rect" coords="1000,168,1490,192"/>
 <area href="class_chimera_t_k_1_1_sync_n_d_register_accessor.html" title="NDRegisterAccessor for backends with only synchronous transfers (so readAsync() must be implemented w..." alt="ChimeraTK::SyncNDRegisterAccessor&lt; UserType &gt;" shape="rect" coords="1500,168,1990,192"/>
 <area href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html" title="Base class for decorators of the NDRegisterAccessor. " alt="ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;" shape="rect" coords="0,224,490,248"/>
-<area href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html" alt="ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;" shape="rect" coords="750,224,1240,248"/>
-<area href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html" alt="ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;" shape="rect" coords="1250,224,1740,248"/>
-<area href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html" title="Implementation of the NDRegisterAccessor for NumericAddressedBackends for multiplexd 2D registers..." alt="ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;" shape="rect" coords="1750,224,2240,248"/>
-<area href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html" title="Implementation of the NDRegisterAccessor for NumericAddressedBackends for scalar and 1D registers..." alt="ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType &gt;" shape="rect" coords="2250,224,2740,248"/>
+<area href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html" alt="ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;" shape="rect" coords="500,224,990,248"/>
+<area href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html" alt="ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;" shape="rect" coords="1000,224,1490,248"/>
+<area href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html" alt="ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;" shape="rect" coords="1500,224,1990,248"/>
+<area href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html" title="Implementation of the NDRegisterAccessor for NumericAddressedBackends for multiplexd 2D registers..." alt="ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;" shape="rect" coords="2000,224,2490,248"/>
+<area href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html" title="Implementation of the NDRegisterAccessor for NumericAddressedBackends for scalar and 1D registers..." alt="ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType &gt;" shape="rect" coords="2500,224,2990,248"/>
 <area href="class_chimera_t_k_1_1_fixed_point_converting_decorator.html" alt="ChimeraTK::FixedPointConvertingDecorator&lt; UserType, TargetUserType &gt;" shape="rect" coords="0,280,490,304"/>
 </map>
  </div></div>
@@ -786,7 +787,7 @@ template&lt;typename UserType&gt; </div>
 <p>FOR BACKWARDS COMPATIBILITY ONLY.</p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000079">Deprecated:</a></b></dt><dd>This function is for backwards compatibility with the deprecated <a class="el" href="class_chimera_t_k_1_1_register_accessor.html" title="DEPRECATED! Use BufferingRegisterAccessor instead! ">RegisterAccessor</a> only. Return the fixed point converter used to convert the raw data from the device to the type T. If no conversion by the fixed point converter is required, this function will throw an exception. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aafca82a674c1d94389ab9bd827a7bca2">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a2039adc2e56e94568f29c224589622af">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a62c173eeb685207976eb9f9d14578a67">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_multiplexed_data_accessor.html#ad57c4eb0a1868df061e870417a389ccb">ChimeraTK::MultiplexedDataAccessor&lt; UserType &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aafca82a674c1d94389ab9bd827a7bca2">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a4260db7458b99c003ae4537c5b725ea7">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a2039adc2e56e94568f29c224589622af">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a62c173eeb685207976eb9f9d14578a67">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_multiplexed_data_accessor.html#ad57c4eb0a1868df061e870417a389ccb">ChimeraTK::MultiplexedDataAccessor&lt; UserType &gt;</a>.</p>
 
 <p>Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_8h_source.html#l00113">113</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_8h_source.html">NDRegisterAccessor.h</a>.</p>
 
@@ -1110,7 +1111,7 @@ template&lt;typename UserType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 07:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 1 2018 07:53:18 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

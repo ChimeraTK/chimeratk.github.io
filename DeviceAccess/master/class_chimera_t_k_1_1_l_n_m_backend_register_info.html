@@ -123,9 +123,10 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba464bac7271c91e146fddec802a1076e5">INVALID</a>, 
 <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787bacd0adc96aa9e60939e2a010d91510f60">REGISTER</a>, 
 <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba4fa75b6bb761d6e2f1e64b7eb1225cf8">CHANNEL</a>, 
-<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba51800eaf42f0c0711b9c978af844abfc">INT_CONSTANT</a>, 
+<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba31ddcac9356415b3567341d34a9adede">BIT</a>, 
 <br />
-&#160;&#160;<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787badf067dca68fff8d83da88284613abc1d">INT_VARIABLE</a>
+&#160;&#160;<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba51800eaf42f0c0711b9c978af844abfc">INT_CONSTANT</a>, 
+<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787badf067dca68fff8d83da88284613abc1d">INT_VARIABLE</a>
 <br />
  }<tr class="memdesc:ad28901d58a7faa46c9075a9f5f46787b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Potential target types.  <a href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787b">More...</a><br /></td></tr>
 </td></tr>
@@ -189,8 +190,11 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:aae879f16025dbb58c01bb1c406abf7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the range (i.e.  <a href="#aae879f16025dbb58c01bb1c406abf7f1">More...</a><br /></td></tr>
 <tr class="separator:aae879f16025dbb58c01bb1c406abf7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff42f74c45e0976b23e7842469af46da"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#aff42f74c45e0976b23e7842469af46da">channel</a></td></tr>
-<tr class="memdesc:aff42f74c45e0976b23e7842469af46da"><td class="mdescLeft">&#160;</td><td class="mdescRight">The channel of the target 2D register.  <a href="#aff42f74c45e0976b23e7842469af46da">More...</a><br /></td></tr>
+<tr class="memdesc:aff42f74c45e0976b23e7842469af46da"><td class="mdescLeft">&#160;</td><td class="mdescRight">The channel of the target 2D register (if TargetType::CHANNEL)  <a href="#aff42f74c45e0976b23e7842469af46da">More...</a><br /></td></tr>
 <tr class="separator:aff42f74c45e0976b23e7842469af46da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1027e2cac947b434f1d861bfa07a18c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#af1027e2cac947b434f1d861bfa07a18c">bit</a></td></tr>
+<tr class="memdesc:af1027e2cac947b434f1d861bfa07a18c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bit of the target register (if TargetType::BIT)  <a href="#af1027e2cac947b434f1d861bfa07a18c">More...</a><br /></td></tr>
+<tr class="separator:af1027e2cac947b434f1d861bfa07a18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a021b56340c14a39bd5fe8662525636cd"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a021b56340c14a39bd5fe8662525636cd">nDimensions</a></td></tr>
 <tr class="memdesc:a021b56340c14a39bd5fe8662525636cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of dimensions of the logical register.  <a href="#a021b56340c14a39bd5fe8662525636cd">More...</a><br /></td></tr>
 <tr class="separator:a021b56340c14a39bd5fe8662525636cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,6 +239,8 @@ Friends</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ad28901d58a7faa46c9075a9f5f46787bacd0adc96aa9e60939e2a010d91510f60"></a>REGISTER&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ad28901d58a7faa46c9075a9f5f46787ba4fa75b6bb761d6e2f1e64b7eb1225cf8"></a>CHANNEL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad28901d58a7faa46c9075a9f5f46787ba31ddcac9356415b3567341d34a9adede"></a>BIT&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ad28901d58a7faa46c9075a9f5f46787ba51800eaf42f0c0711b9c978af844abfc"></a>INT_CONSTANT&#160;</td><td class="fielddoc">
 </td></tr>
@@ -440,7 +446,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00080">80</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00083">83</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -462,7 +468,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00081">81</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00084">84</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -485,7 +491,23 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00083">83</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00086">86</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af1027e2cac947b434f1d861bfa07a18c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ChimeraTK::LNMBackendRegisterInfo::bit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The bit of the target register (if TargetType::BIT) </p>
+
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00070">70</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -499,7 +521,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The channel of the target 2D register. </p>
+<p>The channel of the target 2D register (if TargetType::CHANNEL) </p>
 
 <p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00067">67</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
@@ -582,7 +604,7 @@ Friends</h2></td></tr>
 
 <p>The number of channels of the logical register. </p>
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00073">73</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00076">76</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -598,7 +620,7 @@ Friends</h2></td></tr>
 
 <p>The number of dimensions of the logical register. </p>
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00070">70</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00073">73</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -646,7 +668,7 @@ Friends</h2></td></tr>
 
 <p>The integer value of a INT_CONSTANT or INT_VARIABLE. </p>
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00076">76</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00079">79</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -656,7 +678,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 07:53:13 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 1 2018 07:53:17 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
