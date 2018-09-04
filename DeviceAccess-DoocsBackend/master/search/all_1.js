@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['backendregisterer',['BackendRegisterer',['../classmtca4u_1_1_doocs_backend_1_1_backend_registerer.html',1,'mtca4u::DoocsBackend']]],
-  ['backendregisterer',['backendRegisterer',['../classmtca4u_1_1_doocs_backend.html#a5530202ba6541d3842b4e001deaf12d3',1,'mtca4u::DoocsBackend::backendRegisterer()'],['../classmtca4u_1_1_doocs_backend_1_1_backend_registerer.html#aff9f359083d17df1b84fd422adb0028c',1,'mtca4u::DoocsBackend::BackendRegisterer::BackendRegisterer()']]]
+  ['backendregisterer',['BackendRegisterer',['../class_chimera_t_k_1_1_doocs_backend_1_1_backend_registerer.html',1,'ChimeraTK::DoocsBackend']]],
+  ['backendregisterer',['backendRegisterer',['../class_chimera_t_k_1_1_doocs_backend.html#abfae4f279d8f9cfefd1d50773fa7bbfb',1,'ChimeraTK::DoocsBackend::backendRegisterer()'],['../class_chimera_t_k_1_1_doocs_backend_1_1_backend_registerer.html#abd0c348c619ab7fb7e800e522ff66f62',1,'ChimeraTK::DoocsBackend::BackendRegisterer::BackendRegisterer()']]]
 ];

@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['cataloguefilled',['catalogueFilled',['../classmtca4u_1_1_doocs_backend.html#a8ab6fa365230db7c8e4502f746fd217f',1,'mtca4u::DoocsBackend']]],
-  ['catalogueobtained',['catalogueObtained',['../classmtca4u_1_1_doocs_backend.html#a079c61ac1e521d96f3b9ad214defb066',1,'mtca4u::DoocsBackend']]],
-  ['close',['close',['../classmtca4u_1_1_doocs_backend.html#a572d5032ce421a851f74ae9a4180d492',1,'mtca4u::DoocsBackend']]],
-  ['createinstance',['createInstance',['../classmtca4u_1_1_doocs_backend.html#a9cb2adf9bc20952ff6e03d01459709f8',1,'mtca4u::DoocsBackend']]]
+  ['cataloguefilled',['catalogueFilled',['../class_chimera_t_k_1_1_doocs_backend.html#a6cf71be728aeb21888d20773126d19a5',1,'ChimeraTK::DoocsBackend']]],
+  ['catalogueobtained',['catalogueObtained',['../class_chimera_t_k_1_1_doocs_backend.html#acc99fe024803ee394205e02ce7d9d242',1,'ChimeraTK::DoocsBackend']]],
+  ['chimeratk',['ChimeraTK',['../namespace_chimera_t_k.html',1,'']]],
+  ['close',['close',['../class_chimera_t_k_1_1_doocs_backend.html#aa0b104650a279c02f853d7a7f6e07f48',1,'ChimeraTK::DoocsBackend']]],
+  ['createinstance',['createInstance',['../class_chimera_t_k_1_1_doocs_backend.html#af673fbf154067e6c78945470a3f816f4',1,'ChimeraTK::DoocsBackend']]]
 ];

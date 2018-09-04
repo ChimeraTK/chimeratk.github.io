@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['shutdowncalled',['shutdownCalled',['../classmtca4u_1_1_doocs_backend_register_accessor.html#a5fa58baf08310a608040b4f5cd386ebf',1,'mtca4u::DoocsBackendRegisterAccessor']]],
-  ['src',['src',['../classmtca4u_1_1_doocs_backend_register_accessor.html#aa5ef95e8a5784d87e2b1b66598269bd6',1,'mtca4u::DoocsBackendRegisterAccessor']]]
+  ['shutdowncalled',['shutdownCalled',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a6488d392f2da3b0837f8cf07772e6710',1,'ChimeraTK::DoocsBackendRegisterAccessor']]],
+  ['src',['src',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ac01cda44784275c0b9cd737711997816',1,'ChimeraTK::DoocsBackendRegisterAccessor']]]
 ];
