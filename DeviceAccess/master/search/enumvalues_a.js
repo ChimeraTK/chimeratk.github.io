@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['uint16',['uint16',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a80344c5d80e449495bd8290d2d33fdeb',1,'ChimeraTK::DataType']]],
-  ['uint32',['uint32',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a192599f4a9310165041b651dc2badf0b',1,'ChimeraTK::DataType']]],
-  ['uint64',['uint64',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a96029c8f8221a7daf59052e022975d72',1,'ChimeraTK::DataType']]],
-  ['uint8',['uint8',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899ace6a08c56e7e5db1ca00d700ddd7191f',1,'ChimeraTK::DataType']]],
-  ['undefined',['undefined',['../class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8a5e543256c480ac577d30f76f9120eb74',1,'ChimeraTK::RegisterInfo']]],
-  ['unknown_5falias',['UNKNOWN_ALIAS',['../class_chimera_t_k_1_1_backend_factory_exception.html#aa8b48782b9c46e494ded94da0b4da7b2aa8068a2df3da948d557e89c4e8ccad0a',1,'ChimeraTK::BackendFactoryException']]],
-  ['unregistered_5fdevice',['UNREGISTERED_DEVICE',['../class_chimera_t_k_1_1_backend_factory_exception.html#aa8b48782b9c46e494ded94da0b4da7b2a3711a1bc30a3b3c98e1e1e6a0d5df78a',1,'ChimeraTK::BackendFactoryException']]]
+  ['wait_5ffor_5fnew_5fdata',['wait_for_new_data',['../namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031',1,'ChimeraTK']]],
+  ['warning',['WARNING',['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a080160a160085512f08190b4a10bcd1ca5ad6b78774879a01d465f58dba1a9b54',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem::WARNING()'],['../class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#a6941f15363da9fe7de57f85eddfdfd13a836a1960540831cdfa40961450d1e9cc',1,'ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem::WARNING()']]],
+  ['write',['WRITE',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79fad16044acc9efa248e4d7bc9b7c8a01bd',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
+  ['wrong_5fregister_5faddresses',['WRONG_REGISTER_ADDRESSES',['../class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#abd68efcf13704999134c7b6735ab052fa492d9395c6e29f59312c16b9733eaffe',1,'ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem']]]
 ];

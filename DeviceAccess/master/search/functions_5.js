@@ -6,7 +6,6 @@ var searchData=
   ['errorelem',['ErrorElem',['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a8b6ade0fd0ee3f8208114afa27935ff0',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem::ErrorElem()'],['../class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#aa2ee0c87712ac0cb553d7c57fda8e056',1,'ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem::ErrorElem()']]],
   ['eventfilter',['eventFilter',['../classmtca4u__lmap__editor_1_1_no_wheel_filter.html#abfd10c9e039d0f70c4f81c864cbca56e',1,'mtca4u_lmap_editor::NoWheelFilter']]],
   ['examplebackend',['ExampleBackend',['../class_example_backend.html#a58db813470c7a500e30de9bdb91c92da',1,'ExampleBackend']]],
-  ['exception',['Exception',['../class_chimera_t_k_1_1_exception.html#a370250499536d3dd5abede02e97762c9',1,'ChimeraTK::Exception']]],
   ['exit',['exit',['../namespacemtca4u__lmap__editor.html#a67966b585278fd62a12706f8df52c3f9',1,'mtca4u_lmap_editor']]],
   ['extractdirectory',['extractDirectory',['../namespace_chimera_t_k_1_1parser_utilities.html#a91ebf0d4263ce92117ee4f260cdd5edf',1,'ChimeraTK::parserUtilities']]],
   ['extractfilename',['extractFileName',['../namespace_chimera_t_k_1_1parser_utilities.html#a4b7d71c43b5b99282686080779736272',1,'ChimeraTK::parserUtilities']]]

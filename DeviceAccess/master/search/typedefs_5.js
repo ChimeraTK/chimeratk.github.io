@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['metadata_5fconst_5fiterator',['metadata_const_iterator',['../class_chimera_t_k_1_1_register_catalogue.html#ad97db81987ac804c1157e6348a9b2482',1,'ChimeraTK::RegisterCatalogue']]],
-  ['metadata_5fiterator',['metadata_iterator',['../class_chimera_t_k_1_1_register_catalogue.html#a3160a8c424fa7e0aa6c99dbc450716c4',1,'ChimeraTK::RegisterCatalogue']]],
-  ['multiplexeddataaccessorexception',['MultiplexedDataAccessorException',['../namespace_chimera_t_k.html#a60d0cf5bca967117c1ebe3ecc6a76200',1,'ChimeraTK']]]
+  ['iterator',['iterator',['../class_chimera_t_k_1_1_buffering_register_accessor.html#a1f1d0e0f9636c6147a3c11fd1390134a',1,'ChimeraTK::BufferingRegisterAccessor::iterator()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#a238361a2d9805a74f21ac82ff680e23a',1,'ChimeraTK::OneDRegisterAccessor::iterator()'],['../class_chimera_t_k_1_1_device_info_map.html#ab3ce8a0593eaa19c33d8696ca03531b0',1,'ChimeraTK::DeviceInfoMap::iterator()'],['../class_chimera_t_k_1_1_d_map_files_parser.html#ae2358f1fc40e375f76c6fc2761175ab4',1,'ChimeraTK::DMapFilesParser::iterator()']]],
+  ['iterator_5ft',['iterator_t',['../namespace_chimera_t_k.html#ae9ea2fd102c7e14bb7d9e7fe5072942c',1,'ChimeraTK']]]
 ];

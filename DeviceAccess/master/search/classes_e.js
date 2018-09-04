@@ -2,7 +2,6 @@ var searchData=
 [
   ['readanygroup',['ReadAnyGroup',['../class_chimera_t_k_1_1_read_any_group.html',1,'ChimeraTK']]],
   ['rebotbackend',['RebotBackend',['../class_chimera_t_k_1_1_rebot_backend.html',1,'ChimeraTK']]],
-  ['rebotbackendexception',['RebotBackendException',['../class_chimera_t_k_1_1_rebot_backend_exception.html',1,'ChimeraTK']]],
   ['rebotprotocol0',['RebotProtocol0',['../struct_chimera_t_k_1_1_rebot_protocol0.html',1,'ChimeraTK']]],
   ['rebotprotocol1',['RebotProtocol1',['../struct_chimera_t_k_1_1_rebot_protocol1.html',1,'ChimeraTK']]],
   ['rebotprotocolimplementor',['RebotProtocolImplementor',['../struct_chimera_t_k_1_1_rebot_protocol_implementor.html',1,'ChimeraTK']]],

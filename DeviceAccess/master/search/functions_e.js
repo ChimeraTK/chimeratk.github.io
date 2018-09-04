@@ -13,7 +13,6 @@ var searchData=
   ['parsesdm',['parseSdm',['../class_chimera_t_k_1_1_utilities.html#ace367e0ec915d679ec541c10d19185b6',1,'ChimeraTK::Utilities']]],
   ['parsingerror',['parsingError',['../class_chimera_t_k_1_1_logical_name_map_parser.html#aab27e68926c8d7a7d8a1d2ee58742014',1,'ChimeraTK::LogicalNameMapParser']]],
   ['pciebackend',['PcieBackend',['../class_chimera_t_k_1_1_pcie_backend.html#a022a91507cffa2e451267d123f58361f',1,'ChimeraTK::PcieBackend']]],
-  ['pciebackendexception',['PcieBackendException',['../class_chimera_t_k_1_1_pcie_backend_exception.html#a5b80ee44a255b9ad57260ce084cd1213',1,'ChimeraTK::PcieBackendException']]],
   ['postread',['postRead',['../class_chimera_t_k_1_1_transfer_element.html#a19a9f486a967295eacca7f3f78d025bb',1,'ChimeraTK::TransferElement']]],
   ['postwrite',['postWrite',['../class_chimera_t_k_1_1_transfer_element.html#ae92f7bd2db9827c3db3c1ff0e29ab581',1,'ChimeraTK::TransferElement']]],
   ['preread',['preRead',['../class_chimera_t_k_1_1_transfer_element.html#a68fee71a4c9407193fa021c44aca9f5d',1,'ChimeraTK::TransferElement']]],

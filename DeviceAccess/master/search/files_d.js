@@ -5,7 +5,6 @@ var searchData=
   ['scaleregisterplugin_2eh',['ScaleRegisterPlugin.h',['../_scale_register_plugin_8h.html',1,'']]],
   ['shareddummybackend_2ecc',['SharedDummyBackend.cc',['../_shared_dummy_backend_8cc.html',1,'']]],
   ['shareddummybackend_2eh',['SharedDummyBackend.h',['../_shared_dummy_backend_8h.html',1,'']]],
-  ['shareddummybackendexception_2eh',['SharedDummyBackendException.h',['../_shared_dummy_backend_exception_8h.html',1,'']]],
   ['sharedmemorymanager_2ecc',['SharedMemoryManager.cc',['../_shared_memory_manager_8cc.html',1,'']]],
   ['subdevicebackend_2ecc',['SubdeviceBackend.cc',['../_subdevice_backend_8cc.html',1,'']]],
   ['subdevicebackend_2eh',['SubdeviceBackend.h',['../device__backends_2_subdevice_2include_2_subdevice_backend_8h.html',1,'']]],
