@@ -20,7 +20,6 @@ var searchData=
   ['pciebackend_2ecc',['PcieBackend.cc',['../_pcie_backend_8cc.html',1,'']]],
   ['pciebackend_2eh',['PcieBackend.h',['../device__backends_2pcie_2include_2_pcie_backend_8h.html',1,'']]],
   ['pciebackend_2eh',['PcieBackend.h',['../mtca4u__compatibility__headers_2_pcie_backend_8h.html',1,'']]],
-  ['pciebackendexception_2eh',['PcieBackendException.h',['../_pcie_backend_exception_8h.html',1,'']]],
   ['pciedev_5fdma_5fmin_5fsyze',['PCIEDEV_DMA_MIN_SYZE',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a6df179f336e65ab5b64801ca0f9818d2',1,'pciedev_io.h']]],
   ['pciedev_5fdma_5fsyze',['PCIEDEV_DMA_SYZE',['../device__backends_2pcie_2include_2pciedev__io_8h.html#acf195079e65702428087887dd5649ffc',1,'pciedev_io.h']]],
   ['pciedev_5fdriver_5fversion',['PCIEDEV_DRIVER_VERSION',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a2140cdb4612e1aeb483572affbeb9f20',1,'pciedev_io.h']]],

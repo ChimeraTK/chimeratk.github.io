@@ -29,7 +29,6 @@ var searchData=
   ['setpersistentdatastorage',['setPersistentDataStorage',['../class_chimera_t_k_1_1_transfer_element_abstractor.html#a781f771e098890bc458ea65e24cea376',1,'ChimeraTK::TransferElementAbstractor::setPersistentDataStorage()'],['../class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a4eee9c9221bf2ac861f1d734ae447a84',1,'ChimeraTK::NDRegisterAccessorDecorator::setPersistentDataStorage()'],['../class_chimera_t_k_1_1_transfer_element.html#a70d4c154c564848bfb6b08992cdf7059',1,'ChimeraTK::TransferElement::setPersistentDataStorage()']]],
   ['setport',['setPort',['../class_chimera_t_k_1_1_tcp_ctrl.html#a5c5ef0ee04774a47b21ce4fc0900df0d',1,'ChimeraTK::TcpCtrl']]],
   ['setreadonly',['setReadOnly',['../class_chimera_t_k_1_1_dummy_backend.html#a750f9e290fc8449faf094177942441f9',1,'ChimeraTK::DummyBackend::setReadOnly(uint8_t bar, uint32_t address, size_t sizeInWords)'],['../class_chimera_t_k_1_1_dummy_backend.html#a093b0616fcd7f468dd8a476876b14da9',1,'ChimeraTK::DummyBackend::setReadOnly(AddressRange addressRange)']]],
-  ['setregistermap',['setRegisterMap',['../class_chimera_t_k_1_1_numeric_addressed_backend.html#a1e5710af4c4ae02e8ae38e9b4353c399',1,'ChimeraTK::NumericAddressedBackend']]],
   ['setwritecallbackfunction',['setWriteCallbackFunction',['../class_chimera_t_k_1_1_dummy_backend.html#a1bef5821adab43ec90aeca88767632ae',1,'ChimeraTK::DummyBackend']]],
   ['shareddummybackend',['SharedDummyBackend',['../class_chimera_t_k_1_1_shared_dummy_backend.html',1,'ChimeraTK']]],
   ['shareddummybackend',['SharedDummyBackend',['../class_chimera_t_k_1_1_shared_dummy_backend.html#a1caea4b00d60bb10686e2391b9305381',1,'ChimeraTK::SharedDummyBackend']]],
@@ -56,13 +55,13 @@ var searchData=
   ['subdevicebackend',['SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html#a3dc6a3fa2f19991c8f91af5ee38171a6',1,'ChimeraTK::SubdeviceBackend']]],
   ['subdevicebackend',['SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html',1,'ChimeraTK']]],
   ['subdevicebackend_2ecc',['SubdeviceBackend.cc',['../_subdevice_backend_8cc.html',1,'']]],
-  ['subdevicebackend_2eh',['SubdeviceBackend.h',['../mtca4u__compatibility__headers_2_subdevice_backend_8h.html',1,'']]],
   ['subdevicebackend_2eh',['SubdeviceBackend.h',['../device__backends_2_subdevice_2include_2_subdevice_backend_8h.html',1,'']]],
+  ['subdevicebackend_2eh',['SubdeviceBackend.h',['../mtca4u__compatibility__headers_2_subdevice_backend_8h.html',1,'']]],
   ['supportedusertypes_2eh',['SupportedUserTypes.h',['../util_2include_2_supported_user_types_8h.html',1,'']]],
   ['supportedusertypes_2eh',['SupportedUserTypes.h',['../mtca4u__compatibility__headers_2_supported_user_types_8h.html',1,'']]],
   ['swap',['swap',['../class_chimera_t_k_1_1_buffering_register_accessor.html#ace4033d0920147b6bc781ab8ce5b8553',1,'ChimeraTK::BufferingRegisterAccessor::swap()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#ac6aaa6f5f6f680a4df224c5b24adb478',1,'ChimeraTK::OneDRegisterAccessor::swap()']]],
-  ['syncndregisteraccessor',['SyncNDRegisterAccessor',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html#ad0022a8176a6756d9ebdc98d98d2bc07',1,'ChimeraTK::SyncNDRegisterAccessor']]],
   ['syncndregisteraccessor',['SyncNDRegisterAccessor',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html',1,'ChimeraTK']]],
-  ['syncndregisteraccessor_2eh',['SyncNDRegisterAccessor.h',['../mtca4u__compatibility__headers_2_sync_n_d_register_accessor_8h.html',1,'']]],
-  ['syncndregisteraccessor_2eh',['SyncNDRegisterAccessor.h',['../device__backends_2include_2_sync_n_d_register_accessor_8h.html',1,'']]]
+  ['syncndregisteraccessor',['SyncNDRegisterAccessor',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html#ad0022a8176a6756d9ebdc98d98d2bc07',1,'ChimeraTK::SyncNDRegisterAccessor']]],
+  ['syncndregisteraccessor_2eh',['SyncNDRegisterAccessor.h',['../device__backends_2include_2_sync_n_d_register_accessor_8h.html',1,'']]],
+  ['syncndregisteraccessor_2eh',['SyncNDRegisterAccessor.h',['../mtca4u__compatibility__headers_2_sync_n_d_register_accessor_8h.html',1,'']]]
 ];
