@@ -155,8 +155,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac1be019e072c4306fa9d3516177215f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c1283cdafc6521ba25b5fa1e3dce80a"><td class="memItemLeft" align="right" valign="top">const std::type_info &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_process_array.html#a9c1283cdafc6521ba25b5fa1e3dce80a">getValueType</a> () const override</td></tr>
 <tr class="separator:a9c1283cdafc6521ba25b5fa1e3dce80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af552bb6b95e24dcf530288c04787d995"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_process_array.html#af552bb6b95e24dcf530288c04787d995">isArray</a> () const override</td></tr>
-<tr class="separator:af552bb6b95e24dcf530288c04787d995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3951d7b61b99c8711a29115cb258ac2a"><td class="memItemLeft" align="right" valign="top">virtual TimeStamp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_process_array.html#a3951d7b61b99c8711a29115cb258ac2a">getTimeStamp</a> () const =0</td></tr>
+<tr class="separator:a3951d7b61b99c8711a29115cb258ac2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebb45abf9ccc76d79097bcce60ed6deb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_process_array.html#aebb45abf9ccc76d79097bcce60ed6deb">mayReplaceOther</a> (const boost::shared_ptr&lt; const ChimeraTK::TransferElement &gt; &amp;) const override</td></tr>
 <tr class="separator:aebb45abf9ccc76d79097bcce60ed6deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2c207fc04eb6774d09666636cae6cb1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_process_array.html#ad2c207fc04eb6774d09666636cae6cb1">getHardwareAccessingElements</a> () override</td></tr>
@@ -284,7 +284,7 @@ template&lt;class T &gt; </div>
 
 <p>Creates a process array of the specified type. </p>
 
-<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00157">157</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00155">155</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +311,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00167">167</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00165">165</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +339,7 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00136">136</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00134">134</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -366,7 +366,7 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00124">124</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00122">122</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +393,34 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00128">128</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00126">126</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3951d7b61b99c8711a29115cb258ac2a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual TimeStamp <a class="el" href="class_chimera_t_k_1_1_process_array.html">ChimeraTK::ProcessArray</a>&lt; T &gt;::getTimeStamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#ac6a773d85005ef2010d1057529a9bbc9">ChimeraTK::BidirectionalProcessArray&lt; T &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#ae2e87ab1bca41b18945c6cd24fb999c0">ChimeraTK::UnidirectionalProcessArray&lt; T &gt;</a>.</p>
 
 </div>
 </div>
@@ -452,33 +479,6 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="_process_array_8h_source.html#l00112">112</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af552bb6b95e24dcf530288c04787d995"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_process_array.html">ChimeraTK::ProcessArray</a>&lt; T &gt;::isArray </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00116">116</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -587,7 +587,7 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00120">120</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00118">118</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -615,7 +615,7 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00132">132</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00130">130</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -676,7 +676,7 @@ template&lt;class T&gt; </div>
 
 <p>AccessModeFlags of this <a class="el" href="class_chimera_t_k_1_1_process_array.html" title="Array version of the ProcessVariable. ">ProcessArray</a>. </p>
 
-<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00148">148</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00146">146</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -702,7 +702,7 @@ template&lt;class T&gt; </div>
 
 <p>Type this instance is representing. </p>
 
-<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00145">145</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_process_array_8h_source.html#l00143">143</a> of file <a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -712,7 +712,7 @@ template&lt;class T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 4 2018 07:53:51 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 5 2018 07:53:26 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
