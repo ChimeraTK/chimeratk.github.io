@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dummydevicetype',['dummyDeviceType',['../classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend.html#a18f2747973c97d07dadebf7325490bf0',1,'mtca4u::VirtualLab::VirtualLabBackend']]]
+  ['dummydevicetype',['dummyDeviceType',['../class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#a95779fb624c6fa6e11f2346b1774cb72',1,'ChimeraTK::VirtualLab::VirtualLabBackend']]]
 ];

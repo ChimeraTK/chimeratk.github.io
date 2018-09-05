@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['maxgap',['maxGap',['../classmtca4u_1_1_virtual_lab_1_1_state_variable_set.html#aca71be3f9d040829249108120f7365c0',1,'mtca4u::VirtualLab::StateVariableSet']]]
+  ['maxgap',['maxGap',['../class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html#a3819344bbfe17288aff02cc427053ebe',1,'ChimeraTK::VirtualLab::StateVariableSet']]]
 ];

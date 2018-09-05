@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['enableinterpolation',['enableInterpolation',['../classmtca4u_1_1_virtual_lab_1_1_state_variable_set.html#a21f3e470581d03b4363f4482ac132896',1,'mtca4u::VirtualLab::StateVariableSet']]],
+  ['enableinterpolation',['enableInterpolation',['../class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html#a98fcb2b6e486887ff4e99cde8d00b693',1,'ChimeraTK::VirtualLab::StateVariableSet']]],
   ['end_5fconstructor',['END_CONSTRUCTOR',['../_virtual_lab_backend_8h.html#a2aeeec92fddba06ad6654c09bda37eca',1,'VirtualLabBackend.h']]],
   ['end_5fdeclare_5faction',['END_DECLARE_ACTION',['../_virtual_lab_backend_8h.html#aec88bfd210dea9be5a808af5aad737b2',1,'VirtualLabBackend.h']]],
   ['end_5fdeclare_5fguard',['END_DECLARE_GUARD',['../_virtual_lab_backend_8h.html#ae1de452e5c63096f3acec73e1cbafe88',1,'VirtualLabBackend.h']]],

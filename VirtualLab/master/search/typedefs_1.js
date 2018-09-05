@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['virtualtime',['VirtualTime',['../_virtual_time_8h.html#ad6badee4cd5a244151f4950e06efd020',1,'VirtualTime.h']]]
+  ['virtualtime',['VirtualTime',['../namespace_chimera_t_k_1_1_virtual_lab.html#a0fa9920f23ee6ecb6c02e4cba6b6ac2e',1,'ChimeraTK::VirtualLab::VirtualTime()'],['../namespacemtca4u_1_1_virtual_lab.html#ac953e43860ede00c30a01bf63c616928',1,'mtca4u::VirtualLab::VirtualTime()']]]
 ];

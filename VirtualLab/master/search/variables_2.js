@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['dev',['dev',['../classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#ab2024cb455a79959c40e2b3598050454',1,'mtca4u::VirtualLab::VirtualLabBackend::Timer']]],
-  ['devicelock',['deviceLock',['../classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend.html#a453082a52f55baf2fa169a1a37497d44',1,'mtca4u::VirtualLab::VirtualLabBackend']]]
+  ['dev',['dev',['../class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a33c7d836e580c0b08e67c8f56eed3d7a',1,'ChimeraTK::VirtualLab::VirtualLabBackend::Timer']]],
+  ['devicelock',['deviceLock',['../class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#a86e21d335fc084029096d548e78bb801',1,'ChimeraTK::VirtualLab::VirtualLabBackend']]]
 ];

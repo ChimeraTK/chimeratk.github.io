@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['read',['read',['../classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend.html#a30ccfe6ce3fa87644ed16ae57a814ee1',1,'mtca4u::VirtualLab::VirtualLabBackend']]],
-  ['regreadevents',['regReadEvents',['../classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend.html#a041670cdf6b8c7ed50d0d4778e297a2a',1,'mtca4u::VirtualLab::VirtualLabBackend']]],
-  ['regwriteevents',['regWriteEvents',['../classmtca4u_1_1_virtual_lab_1_1_virtual_lab_backend.html#a7f3468e4b66b7b325210910c9d0255fe',1,'mtca4u::VirtualLab::VirtualLabBackend']]]
+  ['read',['read',['../class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#aca2286d165312212c0ba816ceaa6a7b7',1,'ChimeraTK::VirtualLab::VirtualLabBackend']]],
+  ['regreadevents',['regReadEvents',['../class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#ae5a6968774ae0edf299379ef906190a5',1,'ChimeraTK::VirtualLab::VirtualLabBackend']]],
+  ['regwriteevents',['regWriteEvents',['../class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#ad5f9d77b2bd2fd26d4c82e4e813d28d0',1,'ChimeraTK::VirtualLab::VirtualLabBackend']]]
 ];
