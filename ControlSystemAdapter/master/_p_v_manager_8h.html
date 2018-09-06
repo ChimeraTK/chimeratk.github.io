@@ -103,23 +103,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
 <code>#include &lt;boost/thread.hpp&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
-<code>#include &quot;<a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>&quot;</code><br />
 <code>#include &lt;ChimeraTK/RegisterPath.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_p_v_manager_decl_8h_source.html">PVManagerDecl.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for PVManager.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="_p_v_manager_8h__incl.png" border="0" usemap="#_2home_2msk__jenkins_2workspace_2_chimera_t_k__documentation__update_2checkouts_2_control_system_adapter_2include_2_chimera_t_k_2_control_system_adapter_2_p_v_manager_8h" alt=""/></div>
 <map name="_2home_2msk__jenkins_2workspace_2_chimera_t_k__documentation__update_2checkouts_2_control_system_adapter_2include_2_chimera_t_k_2_control_system_adapter_2_p_v_manager_8h" id="_2home_2msk__jenkins_2workspace_2_chimera_t_k__documentation__update_2checkouts_2_control_system_adapter_2include_2_chimera_t_k_2_control_system_adapter_2_p_v_manager_8h">
-<area shape="rect" id="node9" href="_process_array_8h.html" title="ProcessArray.h" alt="" coords="959,139,1071,165"/>
-<area shape="rect" id="node33" href="_p_v_manager_decl_8h.html" title="PVManagerDecl.h" alt="" coords="2441,139,2569,165"/>
-<area shape="rect" id="node16" href="_process_variable_listener_8h.html" title="ProcessVariableListener.h" alt="" coords="1279,288,1453,315"/>
-<area shape="rect" id="node19" href="_time_stamp_source_8h.html" title="TimeStampSource.h" alt="" coords="1785,288,1926,315"/>
-<area shape="rect" id="node22" href="_persistent_data_storage_8h.html" title="PersistentDataStorage.h" alt="" coords="521,288,686,315"/>
-<area shape="rect" id="node29" href="_unidirectional_process_array_8h.html" title="UnidirectionalProcessArray.h" alt="" coords="761,213,952,240"/>
-<area shape="rect" id="node31" href="_bidirectional_process_array_8h.html" title="BidirectionalProcessArray.h" alt="" coords="1079,213,1261,240"/>
-<area shape="rect" id="node17" href="_process_variable_8h.html" title="ProcessVariable.h" alt="" coords="1302,370,1430,397"/>
-<area shape="rect" id="node20" href="_time_stamp_8h.html" title="TimeStamp.h" alt="" coords="1805,370,1905,397"/>
+<area shape="rect" id="node10" href="_unidirectional_process_array_8h.html" title="UnidirectionalProcessArray.h" alt="" coords="528,213,719,240"/>
+<area shape="rect" id="node28" href="_bidirectional_process_array_8h.html" title="BidirectionalProcessArray.h" alt="" coords="943,139,1125,165"/>
+<area shape="rect" id="node30" href="_p_v_manager_decl_8h.html" title="PVManagerDecl.h" alt="" coords="2033,139,2161,165"/>
+<area shape="rect" id="node17" href="_process_array_8h.html" title="ProcessArray.h" alt="" coords="609,288,721,315"/>
+<area shape="rect" id="node19" href="_process_variable_listener_8h.html" title="ProcessVariableListener.h" alt="" coords="53,363,228,389"/>
+<area shape="rect" id="node22" href="_persistent_data_storage_8h.html" title="PersistentDataStorage.h" alt="" coords="1353,363,1518,389"/>
+<area shape="rect" id="node20" href="_process_variable_8h.html" title="ProcessVariable.h" alt="" coords="77,445,205,471"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -151,9 +150,6 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html">ChimeraTK::PVManager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager_1_1_time_stamp_source_impl.html">ChimeraTK::PVManager::TimeStampSourceImpl</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal time-stamp source implementation.  <a href="class_chimera_t_k_1_1_p_v_manager_1_1_time_stamp_source_impl.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager_1_1_device_send_notification_listener_impl.html">ChimeraTK::PVManager::DeviceSendNotificationListenerImpl</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send notification listener implementation for device-library process variables.  <a href="class_chimera_t_k_1_1_p_v_manager_1_1_device_send_notification_listener_impl.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,7 +171,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 5 2018 07:53:26 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 6 2018 07:53:35 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

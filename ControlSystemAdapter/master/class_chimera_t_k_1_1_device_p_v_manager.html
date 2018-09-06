@@ -137,18 +137,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a052efde0018880c3b560c4ed36f44958"><td class="memItemLeft" align="right" valign="top">ProcessVariable::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a052efde0018880c3b560c4ed36f44958">nextNotification</a> ()</td></tr>
 <tr class="memdesc:a052efde0018880c3b560c4ed36f44958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next process variable with a pending notification or <code>null</code> if no notifications are pending.  <a href="#a052efde0018880c3b560c4ed36f44958">More...</a><br /></td></tr>
 <tr class="separator:a052efde0018880c3b560c4ed36f44958"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59b2d00681de587c18dd3b33eadcaf19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a59b2d00681de587c18dd3b33eadcaf19">isAutomaticReferenceTimeStampMode</a> () const </td></tr>
-<tr class="memdesc:a59b2d00681de587c18dd3b33eadcaf19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells whether the automatic reference time-stamp mode is enabled (the default is <code>true</code>).  <a href="#a59b2d00681de587c18dd3b33eadcaf19">More...</a><br /></td></tr>
-<tr class="separator:a59b2d00681de587c18dd3b33eadcaf19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3095314b155e105397d1a288c5b5bcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#ad3095314b155e105397d1a288c5b5bcb">setAutomaticReferenceTimeStampMode</a> (bool automaticReferenceTimeStampMode)</td></tr>
-<tr class="memdesc:ad3095314b155e105397d1a288c5b5bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the automatic reference time-stamp mode, if the parameter is <code>true</code> or <code>false</code>.  <a href="#ad3095314b155e105397d1a288c5b5bcb">More...</a><br /></td></tr>
-<tr class="separator:ad3095314b155e105397d1a288c5b5bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fa601206b2cedc454ce816d7a94a7e8"><td class="memItemLeft" align="right" valign="top">TimeStamp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a6fa601206b2cedc454ce816d7a94a7e8">getReferenceTimeStamp</a> () const </td></tr>
-<tr class="memdesc:a6fa601206b2cedc454ce816d7a94a7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current reference time-stamp.  <a href="#a6fa601206b2cedc454ce816d7a94a7e8">More...</a><br /></td></tr>
-<tr class="separator:a6fa601206b2cedc454ce816d7a94a7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3153e1b77f292bd4d236d207f5b2a135"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a3153e1b77f292bd4d236d207f5b2a135">setReferenceTimeStamp</a> (const TimeStamp &amp;referenceTimeStamp)</td></tr>
-<tr class="memdesc:a3153e1b77f292bd4d236d207f5b2a135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the reference time-stamp.  <a href="#a3153e1b77f292bd4d236d207f5b2a135">More...</a><br /></td></tr>
-<tr class="separator:a3153e1b77f292bd4d236d207f5b2a135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -324,12 +312,12 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Creates a new process array and registers it with the PV manager. </p>
-<p>Creating a process array with a name that is already used for a different process scalar or array is an error and causes an <code>std::invalid_argument</code> exception to be thrown.</p>
+<p>Creating a process array with a name that is already used for a different process scalar or array is an error and causes an <code>ChimeraTK::logic_error</code> exception to be thrown.</p>
 <p>If the <code>maySendDestructively</code> flag is <code>true</code> (it is <code>false</code> by default), the <code>sendDestructively()</code> method may be used to transfer values without copying but losing them on the sender side.</p>
 <p>The number of buffers (the minimum and default value is two) is the max. number of values that can be queued in the transfer queue. Specifying a larger number make loss of data less likely but increases the memory footprint.</p>
 <p>Two process variables are created: one for the control system and one for the device library. The one that is returned is the one that should be used by the device library. </p>
 
-<p>Definition at line <a class="el" href="_device_p_v_manager_8h_source.html#l00227">227</a> of file <a class="el" href="_device_p_v_manager_8h_source.html">DevicePVManager.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_p_v_manager_8h_source.html#l00190">190</a> of file <a class="el" href="_device_p_v_manager_8h_source.html">DevicePVManager.h</a>.</p>
 
 </div>
 </div>
@@ -396,13 +384,13 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Creates a new process array and registers it with the PV manager. </p>
-<p>Creating a process array with a name that is already used for a different process scalar or array is an error and causes an <code>std::invalid_argument</code> exception to be thrown.</p>
+<p>Creating a process array with a name that is already used for a different process scalar or array is an error and causes an <code>ChimeraTK::logic_error</code> exception to be thrown.</p>
 <p>The array's size is set to the number of elements stored in the vector provided for initialization and all elements are initialized with the values provided by this vector.</p>
 <p>If the <code>maySendDestructively</code> flag is <code>true</code> (it is <code>false</code> by default), the <code>sendDestructively()</code> method may be used to transfer values without copying but losing them on the sender side.</p>
 <p>The number of buffers (the minimum and default value is two) is the max. number of values that can be queued in the transfer queue. Specifying a larger number make loss of data less likely but increases the memory footprint.</p>
 <p>Two process variables are created: one for the control system and one for the device library. The one that is returned is the one that should be used by the device library. </p>
 
-<p>Definition at line <a class="el" href="_device_p_v_manager_8h_source.html#l00256">256</a> of file <a class="el" href="_device_p_v_manager_8h_source.html">DevicePVManager.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_p_v_manager_8h_source.html#l00219">219</a> of file <a class="el" href="_device_p_v_manager_8h_source.html">DevicePVManager.h</a>.</p>
 
 </div>
 </div>
@@ -444,7 +432,7 @@ template&lt;class T &gt; </div>
 <p>Returns a reference to a process array that has been created earlier using the <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a46bf1782d1f9e43918c5d07dc826de4b">createProcessArray(SynchronizationDirection, const ChimeraTK::RegisterPath&amp;, std::size_t, const std::string&amp;, const std::string&amp;, T, bool, std::size_t, const AccessModeFlags&amp;)</a> or <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#af59931ddf4a9f36a569e90432bf2cc2b">createProcessArray(SynchronizationDirection, const ChimeraTK::RegisterPath&amp;, const std::vector&lt;T&gt;&amp;, const std::string&amp;, const std::string&amp;, bool, std::size_t, const AccessModeFlags&amp;)</a> method. </p>
 <p>Returns a pointer to <code>null</code> if there is no process scalar or array with the specified name. Throws a bad_cast exception if there is a process scalar or array with the specified name but its type does not match. </p>
 
-<p>Definition at line <a class="el" href="_device_p_v_manager_8h_source.html#l00285">285</a> of file <a class="el" href="_device_p_v_manager_8h_source.html">DevicePVManager.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_p_v_manager_8h_source.html#l00248">248</a> of file <a class="el" href="_device_p_v_manager_8h_source.html">DevicePVManager.h</a>.</p>
 
 </div>
 </div>
@@ -466,46 +454,6 @@ template&lt;class T &gt; </div>
 <p>Returns a pointer to <code>null</code> if there is no process scalar or array with the specified name. The <code>getProcessScalar(const ChimeraTK::RegisterPath&amp;)</code> and <code>getProcessArray(const ChimeraTK::RegisterPath&amp;)</code> methods should be preferred if the type of the process variable is known at compile time. </p>
 
 <p>Definition at line <a class="el" href="_device_p_v_manager_8cc_source.html#l00011">11</a> of file <a class="el" href="_device_p_v_manager_8cc_source.html">DevicePVManager.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6fa601206b2cedc454ce816d7a94a7e8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TimeStamp ChimeraTK::DevicePVManager::getReferenceTimeStamp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the current reference time-stamp. </p>
-<p>This is the time-stamp that is associated with a process variable's value, when its value is changed. In automatic mode (<a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a59b2d00681de587c18dd3b33eadcaf19" title="Tells whether the automatic reference time-stamp mode is enabled (the default is true). ">isAutomaticReferenceTimeStampMode()</a> returns <code>true</code>), the current system time is returned. In manual mode (isAutomaticReferenceTimeStamp() returns <code>false</code>), the time stamp set through <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a3153e1b77f292bd4d236d207f5b2a135" title="Updates the reference time-stamp. ">setReferenceTimeStamp(const TimeStamp&amp;)</a> is returned. </p>
-
-<p>Definition at line <a class="el" href="_device_p_v_manager_8cc_source.html#l00044">44</a> of file <a class="el" href="_device_p_v_manager_8cc_source.html">DevicePVManager.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a59b2d00681de587c18dd3b33eadcaf19"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ChimeraTK::DevicePVManager::isAutomaticReferenceTimeStampMode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Tells whether the automatic reference time-stamp mode is enabled (the default is <code>true</code>). </p>
-<p>In this mode, the method <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a6fa601206b2cedc454ce816d7a94a7e8" title="Returns the current reference time-stamp. ">getReferenceTimeStamp()</a> simply returns the current system time. If the automatic mode is disabled (this method returns <code>false</code>), the <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a6fa601206b2cedc454ce816d7a94a7e8" title="Returns the current reference time-stamp. ">getReferenceTimeStamp()</a> method returns the value set through <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a3153e1b77f292bd4d236d207f5b2a135" title="Updates the reference time-stamp. ">setReferenceTimeStamp(const TimeStamp&amp;)</a>. </p>
-
-<p>Definition at line <a class="el" href="_device_p_v_manager_8cc_source.html#l00034">34</a> of file <a class="el" href="_device_p_v_manager_8cc_source.html">DevicePVManager.cc</a>.</p>
 
 </div>
 </div>
@@ -556,48 +504,6 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad3095314b155e105397d1a288c5b5bcb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChimeraTK::DevicePVManager::setAutomaticReferenceTimeStampMode </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>automaticReferenceTimeStampMode</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enables or disables the automatic reference time-stamp mode, if the parameter is <code>true</code> or <code>false</code>. </p>
-<p>In automatic mode, the method <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a6fa601206b2cedc454ce816d7a94a7e8" title="Returns the current reference time-stamp. ">getReferenceTimeStamp()</a> simply returns the current system time. In manual mode, <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a6fa601206b2cedc454ce816d7a94a7e8" title="Returns the current reference time-stamp. ">getReferenceTimeStamp()</a> returns the value set through <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a3153e1b77f292bd4d236d207f5b2a135" title="Updates the reference time-stamp. ">setReferenceTimeStamp(const TimeStamp&amp;)</a>. </p>
-
-<p>Definition at line <a class="el" href="_device_p_v_manager_8cc_source.html#l00038">38</a> of file <a class="el" href="_device_p_v_manager_8cc_source.html">DevicePVManager.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3153e1b77f292bd4d236d207f5b2a135"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChimeraTK::DevicePVManager::setReferenceTimeStamp </td>
-          <td>(</td>
-          <td class="paramtype">const TimeStamp &amp;&#160;</td>
-          <td class="paramname"><em>referenceTimeStamp</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Updates the reference time-stamp. </p>
-<p>This means that the next call to <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a6fa601206b2cedc454ce816d7a94a7e8" title="Returns the current reference time-stamp. ">getReferenceTimeStamp()</a> will return the passed time stamp. Calling this method implicitly disables the automatic reference time-stamp mode. </p>
-
-<p>Definition at line <a class="el" href="_device_p_v_manager_8cc_source.html#l00048">48</a> of file <a class="el" href="_device_p_v_manager_8cc_source.html">DevicePVManager.cc</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
 <a class="anchor" id="ab4cc40820493020ce035479360273eff"></a>
 <div class="memitem">
@@ -623,7 +529,7 @@ template&lt;class T &gt; </div>
 <p>Creates a PV manager and returns a pair containing references to its <a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html">ControlSystemPVManager</a> and <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html">DevicePVManager</a> interfaces. </p>
 <p>The <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html">DevicePVManager</a> is only intended for use by the device-library thread and the <a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html">ControlSystemPVManager</a> is only intended for use by the control-system thread. </p>
 
-<p>Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00042">42</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
+<p>Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00041">41</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
 
 </div>
 </div>
@@ -648,7 +554,7 @@ template&lt;class T &gt; </div>
 
 <p>Reference to the <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html">PVManager</a> backing this facade for the device library. </p>
 
-<p>Definition at line <a class="el" href="_device_p_v_manager_8h_source.html#l00222">222</a> of file <a class="el" href="_device_p_v_manager_8h_source.html">DevicePVManager.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_p_v_manager_8h_source.html#l00185">185</a> of file <a class="el" href="_device_p_v_manager_8h_source.html">DevicePVManager.h</a>.</p>
 
 </div>
 </div>
@@ -659,7 +565,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 5 2018 07:53:26 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 6 2018 07:53:35 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

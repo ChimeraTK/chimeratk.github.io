@@ -2,7 +2,6 @@ var searchData=
 [
   ['initialise',['initialise',['../class_chimera_t_k_1_1_application_base.html#a060c36044735bb3b479940fe9f644a5b',1,'ChimeraTK::ApplicationBase']]],
   ['interrupt',['interrupt',['../class_chimera_t_k_1_1_unidirectional_process_array.html#ac48b0c941a29ad8a1e0a04f24277b46e',1,'ChimeraTK::UnidirectionalProcessArray']]],
-  ['isautomaticreferencetimestampmode',['isAutomaticReferenceTimeStampMode',['../class_chimera_t_k_1_1_device_p_v_manager.html#a59b2d00681de587c18dd3b33eadcaf19',1,'ChimeraTK::DevicePVManager::isAutomaticReferenceTimeStampMode()'],['../class_chimera_t_k_1_1_p_v_manager.html#add5c77ebed55b857aad488f92b717ec5',1,'ChimeraTK::PVManager::isAutomaticReferenceTimeStampMode()']]],
   ['isreadable',['isReadable',['../class_chimera_t_k_1_1_process_array.html#a92d8e7e212d04e16e7aebb6b69bf1a1b',1,'ChimeraTK::ProcessArray']]],
   ['isreadonly',['isReadOnly',['../class_chimera_t_k_1_1_process_array.html#af12afdc8a9739d0291c91775a6f7b70d',1,'ChimeraTK::ProcessArray']]],
   ['iswriteable',['isWriteable',['../class_chimera_t_k_1_1_process_array.html#a66ede83bca155215a0e5d030c9403ab1',1,'ChimeraTK::ProcessArray']]]
