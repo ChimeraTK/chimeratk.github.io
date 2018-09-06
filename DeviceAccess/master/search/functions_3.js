@@ -30,6 +30,5 @@ var searchData=
   ['createtargettypecombobox',['createTargetTypeComboBox',['../namespacemtca4u__lmap__editor.html#aa75f4a76fff106c6ecf7c3bcf13c9b2a',1,'mtca4u_lmap_editor']]],
   ['createxmldata',['createXmlData',['../namespacemtca4u__lmap__editor.html#afd0dafac651eb949cb5a847fa4e938f2',1,'mtca4u_lmap_editor']]],
   ['createxmldatainternal',['createXmlDataInternal',['../namespacemtca4u__lmap__editor.html#a25aed4388c97436fb014bd1cb4a43851',1,'mtca4u_lmap_editor']]],
-  ['crend',['crend',['../class_chimera_t_k_1_1_buffering_register_accessor.html#a9d93b16e56b13d5ab1e6c0e482799d59',1,'ChimeraTK::BufferingRegisterAccessor::crend()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#a3200a5a2bede008cff33f566f681de93',1,'ChimeraTK::OneDRegisterAccessor::crend()']]],
-  ['currenttime',['currentTime',['../struct_chimera_t_k_1_1_time_stamp.html#ad6583bb81124cc2e937cbfe54130f70c',1,'ChimeraTK::TimeStamp']]]
+  ['crend',['crend',['../class_chimera_t_k_1_1_buffering_register_accessor.html#a9d93b16e56b13d5ab1e6c0e482799d59',1,'ChimeraTK::BufferingRegisterAccessor::crend()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#a3200a5a2bede008cff33f566f681de93',1,'ChimeraTK::OneDRegisterAccessor::crend()']]]
 ];

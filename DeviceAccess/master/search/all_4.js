@@ -50,7 +50,6 @@ var searchData=
   ['creatormap',['creatorMap',['../class_chimera_t_k_1_1_backend_factory.html#afc0428033845cf0f37ffef68387cffd6',1,'ChimeraTK::BackendFactory']]],
   ['crend',['crend',['../class_chimera_t_k_1_1_buffering_register_accessor.html#a9d93b16e56b13d5ab1e6c0e482799d59',1,'ChimeraTK::BufferingRegisterAccessor::crend()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#a3200a5a2bede008cff33f566f681de93',1,'ChimeraTK::OneDRegisterAccessor::crend()']]],
   ['currentmodule',['currentModule',['../class_chimera_t_k_1_1_logical_name_map_parser.html#a4a022ca1c826353be4053b35049fa510',1,'ChimeraTK::LogicalNameMapParser']]],
-  ['currenttime',['currentTime',['../struct_chimera_t_k_1_1_time_stamp.html#ad6583bb81124cc2e937cbfe54130f70c',1,'ChimeraTK::TimeStamp']]],
   ['custom_5fbackends_2edox',['custom_backends.dox',['../custom__backends_8dox.html',1,'']]],
   ['custombackend',['CustomBackend',['../class_custom_backend.html',1,'']]],
   ['custombackend_2ecc',['CustomBackend.cc',['../_custom_backend_8cc.html',1,'']]],

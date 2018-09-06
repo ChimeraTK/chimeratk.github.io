@@ -2,7 +2,6 @@ var searchData=
 [
   ['tcpctrl',['TcpCtrl',['../class_chimera_t_k_1_1_tcp_ctrl.html#a9f643d6d6508b03b324d9a1e82175d99',1,'ChimeraTK::TcpCtrl']]],
   ['threadinformermutex',['ThreadInformerMutex',['../struct_chimera_t_k_1_1_thread_informer_mutex.html#a577ee1e0f70212e916365c9475428c84',1,'ChimeraTK::ThreadInformerMutex']]],
-  ['timestamp',['TimeStamp',['../struct_chimera_t_k_1_1_time_stamp.html#a32216f35c809c859500f720eadcc44c0',1,'ChimeraTK::TimeStamp::TimeStamp()'],['../struct_chimera_t_k_1_1_time_stamp.html#a48b8c4feffe26fdfb177770318dbef42',1,'ChimeraTK::TimeStamp::TimeStamp(uint32_t seconds_, uint32_t nanoSeconds_=0, uint32_t index0_=0, uint32_t index1_=0)']]],
   ['tocooked',['toCooked',['../class_chimera_t_k_1_1_fixed_point_converter.html#a0cb4f76b5c471166877349959f18c94b',1,'ChimeraTK::FixedPointConverter::toCooked(uint32_t rawValue) const '],['../class_chimera_t_k_1_1_fixed_point_converter.html#a7201ca5b22bb5dae02fab85482619b5c',1,'ChimeraTK::FixedPointConverter::toCooked(uint32_t rawValue) const ']]],
   ['todouble',['toDouble',['../class_chimera_t_k_1_1_fixed_point_converter.html#aa6b2c077e7ce54f0b795514fd6ade813',1,'ChimeraTK::FixedPointConverter']]],
   ['tofixedpoint',['toFixedPoint',['../class_chimera_t_k_1_1_fixed_point_converter.html#a7f1e892c106d2f98beaa18c6b117a806',1,'ChimeraTK::FixedPointConverter']]],
