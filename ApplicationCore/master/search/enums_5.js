@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updatemode',['UpdateMode',['../namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3b',1,'ChimeraTK']]]
+  ['variabledirection',['VariableDirection',['../namespace_chimera_t_k.html#a056caaccf8ad3d18cfce3fec4887ad7a',1,'ChimeraTK']]]
 ];

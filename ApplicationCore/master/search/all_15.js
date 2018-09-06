@@ -2,7 +2,6 @@ var searchData=
 [
   ['warning',['WARNING',['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416ac9daebef33f6193b02ab9c3512023d13',1,'logging']]],
   ['warnunconnectedvariables',['warnUnconnectedVariables',['../class_chimera_t_k_1_1_application.html#af638d687f2d229ab733c48f62f1a8877',1,'ChimeraTK::Application']]],
-  ['what',['what',['../class_chimera_t_k_1_1_application_exception.html#a2c3d715de6ba0197d6af1cea789565c9',1,'ChimeraTK::ApplicationException']]],
   ['write',['write',['../class_chimera_t_k_1_1_array_accessor.html#afb9db605c63f6b668f4ed7431bb3b595',1,'ChimeraTK::ArrayAccessor::write()'],['../class_chimera_t_k_1_1_scalar_accessor.html#a64887abd07ecf71a06d1f98fe695f04f',1,'ChimeraTK::ScalarAccessor::write()']]],
   ['write2hdf',['write2hdf',['../struct_chimera_t_k_1_1detail_1_1_data_writer.html#a6c1921622791fc56f4346ea7c87a2332',1,'ChimeraTK::detail::DataWriter']]],
   ['writeall',['writeAll',['../class_chimera_t_k_1_1_module.html#a7cabaa7c9d97adc5c3ed37430b27ee3e',1,'ChimeraTK::Module']]],

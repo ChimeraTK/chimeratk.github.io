@@ -113,7 +113,7 @@ Inheritance diagram for ChimeraTK::ControlSystemModule:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acc37ec2c01d25a47889189b2170b7d89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_control_system_module.html#acc37ec2c01d25a47889189b2170b7d89">ControlSystemModule</a> (const std::string &amp;<a class="el" href="class_chimera_t_k_1_1_control_system_module.html#ab29a1bb9f29cfd6ba32b30edaa3e0884">variableNamePrefix</a>=&quot;&quot;)</td></tr>
+<tr class="memitem:acc37ec2c01d25a47889189b2170b7d89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_control_system_module.html#acc37ec2c01d25a47889189b2170b7d89">ControlSystemModule</a> (const std::string &amp;<a class="el" href="class_chimera_t_k_1_1_control_system_module.html#a732a7bbc6f90fefa517a5643d2031858">variableNamePrefix</a>=&quot;&quot;)</td></tr>
 <tr class="memdesc:acc37ec2c01d25a47889189b2170b7d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: the optional variableNamePrefix will be prepended to all control system variable names (separated by a slash).  <a href="#acc37ec2c01d25a47889189b2170b7d89">More...</a><br /></td></tr>
 <tr class="separator:acc37ec2c01d25a47889189b2170b7d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40fe0e15a957bd05d88ab4a29380b897"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_control_system_module.html#a40fe0e15a957bd05d88ab4a29380b897">ControlSystemModule</a> (<a class="el" href="class_chimera_t_k_1_1_control_system_module.html">ControlSystemModule</a> &amp;&amp;other)</td></tr>
@@ -284,8 +284,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ab29a1bb9f29cfd6ba32b30edaa3e0884"><td class="memItemLeft" align="right" valign="top">mtca4u::RegisterPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_control_system_module.html#ab29a1bb9f29cfd6ba32b30edaa3e0884">variableNamePrefix</a></td></tr>
-<tr class="separator:ab29a1bb9f29cfd6ba32b30edaa3e0884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a732a7bbc6f90fefa517a5643d2031858"><td class="memItemLeft" align="right" valign="top">ChimeraTK::RegisterPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_control_system_module.html#a732a7bbc6f90fefa517a5643d2031858">variableNamePrefix</a></td></tr>
+<tr class="separator:a732a7bbc6f90fefa517a5643d2031858"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3217bfe8a1d7bf7ec87516061cc6d1a0"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="class_chimera_t_k_1_1_control_system_module.html">ControlSystemModule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0">subModules</a></td></tr>
 <tr class="separator:a3217bfe8a1d7bf7ec87516061cc6d1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d62aca2baf414b4d94aa7a328f180ce"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_control_system_module.html#a9d62aca2baf414b4d94aa7a328f180ce">variables</a></td></tr>
@@ -421,7 +421,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Connect the entire module into another module. </p>
 <p>All variables inside this module and all submodules are connected to the target module. All variables and submodules must have an equally named and typed counterpart in the target module (or the target module allows creation of such entities, as in case of a <a class="el" href="class_chimera_t_k_1_1_control_system_module.html">ControlSystemModule</a>). The target module may contain additional variables or submodules, which are ignored.</p>
 <p>If an optional trigger node is specified, this trigger node is applied to all poll-type output variables of the target module, which are being connected during this operation, if the corresponding variable in this module is push-type. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>make proper exception </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>make proper exception </dd></dl>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_module.html#a71810be216fbbd436ba3d0d8180c9279">ChimeraTK::Module</a>.</p>
 
@@ -636,7 +636,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab29a1bb9f29cfd6ba32b30edaa3e0884"></a>
+<a class="anchor" id="a732a7bbc6f90fefa517a5643d2031858"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -644,7 +644,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mtca4u::RegisterPath ChimeraTK::ControlSystemModule::variableNamePrefix</td>
+          <td class="memname">ChimeraTK::RegisterPath ChimeraTK::ControlSystemModule::variableNamePrefix</td>
         </tr>
       </table>
   </td>
@@ -687,7 +687,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 5 2018 07:53:48 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 6 2018 07:53:58 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

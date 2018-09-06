@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['applicationexceptionid',['ApplicationExceptionID',['../namespace_chimera_t_k.html#a8c91dc119890515d484067cfa6dcf0f6',1,'ChimeraTK']]]
+  ['loglevel',['LogLevel',['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416',1,'logging']]]
 ];

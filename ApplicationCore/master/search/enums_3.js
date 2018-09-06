@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nodetype',['NodeType',['../namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1d',1,'ChimeraTK']]]
+  ['triggertype',['TriggerType',['../class_chimera_t_k_1_1_variable_network.html#aae82485cda15b256982eacbb4a103eca',1,'ChimeraTK::VariableNetwork']]]
 ];

@@ -113,7 +113,7 @@ Inheritance diagram for ChimeraTK::DeviceModule:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aedeeb2216a6da1decc64cc4f8c5ca6bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#aedeeb2216a6da1decc64cc4f8c5ca6bb">DeviceModule</a> (const std::string &amp;<a class="el" href="class_chimera_t_k_1_1_device_module.html#ac19f5b14011b1cb9830655783eb809fa">deviceAliasOrURI</a>, const std::string &amp;<a class="el" href="class_chimera_t_k_1_1_device_module.html#a0ba26464a7eedc15326b650121a62ee3">registerNamePrefix</a>=&quot;&quot;)</td></tr>
+<tr class="memitem:aedeeb2216a6da1decc64cc4f8c5ca6bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#aedeeb2216a6da1decc64cc4f8c5ca6bb">DeviceModule</a> (const std::string &amp;<a class="el" href="class_chimera_t_k_1_1_device_module.html#ac19f5b14011b1cb9830655783eb809fa">deviceAliasOrURI</a>, const std::string &amp;<a class="el" href="class_chimera_t_k_1_1_device_module.html#a3bd68002fced1ba4049ee2e798d7d26d">registerNamePrefix</a>=&quot;&quot;)</td></tr>
 <tr class="memdesc:aedeeb2216a6da1decc64cc4f8c5ca6bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: The device represented by this <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> is identified by either the device alias found in the DMAP file or directly an URI.  <a href="#aedeeb2216a6da1decc64cc4f8c5ca6bb">More...</a><br /></td></tr>
 <tr class="separator:aedeeb2216a6da1decc64cc4f8c5ca6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae258c04112edbd61b23b8898621b7dee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#ae258c04112edbd61b23b8898621b7dee">DeviceModule</a> ()</td></tr>
@@ -291,8 +291,8 @@ Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ac19f5b14011b1cb9830655783eb809fa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#ac19f5b14011b1cb9830655783eb809fa">deviceAliasOrURI</a></td></tr>
 <tr class="separator:ac19f5b14011b1cb9830655783eb809fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ba26464a7eedc15326b650121a62ee3"><td class="memItemLeft" align="right" valign="top">mtca4u::RegisterPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#a0ba26464a7eedc15326b650121a62ee3">registerNamePrefix</a></td></tr>
-<tr class="separator:a0ba26464a7eedc15326b650121a62ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bd68002fced1ba4049ee2e798d7d26d"><td class="memItemLeft" align="right" valign="top">ChimeraTK::RegisterPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#a3bd68002fced1ba4049ee2e798d7d26d">registerNamePrefix</a></td></tr>
+<tr class="separator:a3bd68002fced1ba4049ee2e798d7d26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad76777799c8dba6eaea5a78b2a0ac3e9"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#ad76777799c8dba6eaea5a78b2a0ac3e9">subModules</a></td></tr>
 <tr class="separator:ad76777799c8dba6eaea5a78b2a0ac3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_module"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_module')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_module.html">ChimeraTK::Module</a></td></tr>
@@ -464,7 +464,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Connect the entire module into another module. </p>
 <p>All variables inside this module and all submodules are connected to the target module. All variables and submodules must have an equally named and typed counterpart in the target module (or the target module allows creation of such entities, as in case of a <a class="el" href="class_chimera_t_k_1_1_control_system_module.html">ControlSystemModule</a>). The target module may contain additional variables or submodules, which are ignored.</p>
 <p>If an optional trigger node is specified, this trigger node is applied to all poll-type output variables of the target module, which are being connected during this operation, if the corresponding variable in this module is push-type. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>make proper exception </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>make proper exception </dd></dl>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_module.html#a71810be216fbbd436ba3d0d8180c9279">ChimeraTK::Module</a>.</p>
 
@@ -733,7 +733,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0ba26464a7eedc15326b650121a62ee3"></a>
+<a class="anchor" id="a3bd68002fced1ba4049ee2e798d7d26d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -741,7 +741,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mtca4u::RegisterPath ChimeraTK::DeviceModule::registerNamePrefix</td>
+          <td class="memname">ChimeraTK::RegisterPath ChimeraTK::DeviceModule::registerNamePrefix</td>
         </tr>
       </table>
   </td>
@@ -784,7 +784,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 5 2018 07:53:48 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 6 2018 07:53:58 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

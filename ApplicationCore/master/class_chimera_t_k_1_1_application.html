@@ -313,18 +313,18 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a17b9eed2f522249889c7138cffbba8c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_variable_network.html">VariableNetwork</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a17b9eed2f522249889c7138cffbba8c3">connect</a> (<a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> a, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> b)</td></tr>
 <tr class="memdesc:a17b9eed2f522249889c7138cffbba8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a connection between two <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a>.  <a href="#a17b9eed2f522249889c7138cffbba8c3">More...</a><br /></td></tr>
 <tr class="separator:a17b9eed2f522249889c7138cffbba8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42831e39c14f187302522525fa179eef"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:a42831e39c14f187302522525fa179eef"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; mtca4u::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a42831e39c14f187302522525fa179eef">createDeviceVariable</a> (const std::string &amp;deviceAlias, const std::string &amp;registerName, <a class="el" href="namespace_chimera_t_k.html#a056caaccf8ad3d18cfce3fec4887ad7a">VariableDirection</a> direction, <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3b">UpdateMode</a> mode, size_t nElements)</td></tr>
-<tr class="memdesc:a42831e39c14f187302522525fa179eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the actual connection of an accessor to a device register.  <a href="#a42831e39c14f187302522525fa179eef">More...</a><br /></td></tr>
-<tr class="separator:a42831e39c14f187302522525fa179eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56aa744909cdc42c3fabef0a0d149171"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:a56aa744909cdc42c3fabef0a0d149171"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; mtca4u::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a56aa744909cdc42c3fabef0a0d149171">createProcessVariable</a> (<a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> const &amp;node)</td></tr>
-<tr class="memdesc:a56aa744909cdc42c3fabef0a0d149171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a process variable with the PVManager, which is exported to the control system adapter.  <a href="#a56aa744909cdc42c3fabef0a0d149171">More...</a><br /></td></tr>
-<tr class="separator:a56aa744909cdc42c3fabef0a0d149171"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cf9a7fd7b2c73e21fa51dd235ad6619"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:a1cf9a7fd7b2c73e21fa51dd235ad6619"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; boost::shared_ptr&lt; mtca4u::NDRegisterAccessor&lt; UserType &gt; &gt;, boost::shared_ptr&lt; mtca4u::NDRegisterAccessor&lt; UserType &gt; &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a1cf9a7fd7b2c73e21fa51dd235ad6619">createApplicationVariable</a> (<a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> const &amp;node, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> const &amp;consumer={})</td></tr>
-<tr class="memdesc:a1cf9a7fd7b2c73e21fa51dd235ad6619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a local process variable which is not exported.  <a href="#a1cf9a7fd7b2c73e21fa51dd235ad6619">More...</a><br /></td></tr>
-<tr class="separator:a1cf9a7fd7b2c73e21fa51dd235ad6619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace062becb6e35520147524dfec914a10"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:ace062becb6e35520147524dfec914a10"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#ace062becb6e35520147524dfec914a10">createDeviceVariable</a> (const std::string &amp;deviceAlias, const std::string &amp;registerName, <a class="el" href="namespace_chimera_t_k.html#a056caaccf8ad3d18cfce3fec4887ad7a">VariableDirection</a> direction, <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3b">UpdateMode</a> mode, size_t nElements)</td></tr>
+<tr class="memdesc:ace062becb6e35520147524dfec914a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the actual connection of an accessor to a device register.  <a href="#ace062becb6e35520147524dfec914a10">More...</a><br /></td></tr>
+<tr class="separator:ace062becb6e35520147524dfec914a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ffa5299dd6e3692f34eb88d16fb4b15"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a7ffa5299dd6e3692f34eb88d16fb4b15"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a7ffa5299dd6e3692f34eb88d16fb4b15">createProcessVariable</a> (<a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> const &amp;node)</td></tr>
+<tr class="memdesc:a7ffa5299dd6e3692f34eb88d16fb4b15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a process variable with the PVManager, which is exported to the control system adapter.  <a href="#a7ffa5299dd6e3692f34eb88d16fb4b15">More...</a><br /></td></tr>
+<tr class="separator:a7ffa5299dd6e3692f34eb88d16fb4b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11ee00018ac000ba12d9e250f5803a28"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a11ee00018ac000ba12d9e250f5803a28"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a11ee00018ac000ba12d9e250f5803a28">createApplicationVariable</a> (<a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> const &amp;node, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> const &amp;consumer={})</td></tr>
+<tr class="memdesc:a11ee00018ac000ba12d9e250f5803a28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a local process variable which is not exported.  <a href="#a11ee00018ac000ba12d9e250f5803a28">More...</a><br /></td></tr>
+<tr class="separator:a11ee00018ac000ba12d9e250f5803a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbcfcd3b9b23aa5df19a661a9f8a80bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_variable_network.html">VariableNetwork</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#afbcfcd3b9b23aa5df19a661a9f8a80bb">createNetwork</a> ()</td></tr>
 <tr class="memdesc:afbcfcd3b9b23aa5df19a661a9f8a80bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new, empty network.  <a href="#afbcfcd3b9b23aa5df19a661a9f8a80bb">More...</a><br /></td></tr>
 <tr class="separator:afbcfcd3b9b23aa5df19a661a9f8a80bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -359,9 +359,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:afeaa79b9219a492c6d8345170b1d7f08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_variable_network.html">VariableNetwork</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#afeaa79b9219a492c6d8345170b1d7f08">invalidNetwork</a></td></tr>
 <tr class="memdesc:afeaa79b9219a492c6d8345170b1d7f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instance of <a class="el" href="class_chimera_t_k_1_1_variable_network.html" title="This class describes a network of variables all connected to each other. ">VariableNetwork</a> to indicate an invalid network.  <a href="#afeaa79b9219a492c6d8345170b1d7f08">More...</a><br /></td></tr>
 <tr class="separator:afeaa79b9219a492c6d8345170b1d7f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d5a91d97f31dd6b78f961bfce146c40"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, boost::shared_ptr&lt; mtca4u::DeviceBackend &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a9d5a91d97f31dd6b78f961bfce146c40">deviceMap</a></td></tr>
-<tr class="memdesc:a9d5a91d97f31dd6b78f961bfce146c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of DeviceBackends used by this application.  <a href="#a9d5a91d97f31dd6b78f961bfce146c40">More...</a><br /></td></tr>
-<tr class="separator:a9d5a91d97f31dd6b78f961bfce146c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b48d873e427c274811a351882a50555"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, boost::shared_ptr&lt; ChimeraTK::DeviceBackend &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a0b48d873e427c274811a351882a50555">deviceMap</a></td></tr>
+<tr class="memdesc:a0b48d873e427c274811a351882a50555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of DeviceBackends used by this application.  <a href="#a0b48d873e427c274811a351882a50555">More...</a><br /></td></tr>
+<tr class="separator:a0b48d873e427c274811a351882a50555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8107412016780c83a5b3f8460589b602"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a8107412016780c83a5b3f8460589b602">testableMode</a> {false}</td></tr>
 <tr class="memdesc:a8107412016780c83a5b3f8460589b602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag if connections should be made in testable mode (i.e.  <a href="#a8107412016780c83a5b3f8460589b602">More...</a><br /></td></tr>
 <tr class="separator:a8107412016780c83a5b3f8460589b602"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -374,9 +374,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a071fb9e762f3d957d8696809180b01e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a071fb9e762f3d957d8696809180b01e5">enableUnconnectedVariablesWarning</a> {false}</td></tr>
 <tr class="memdesc:a071fb9e762f3d957d8696809180b01e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether to warn about unconnected variables or not.  <a href="#a071fb9e762f3d957d8696809180b01e5">More...</a><br /></td></tr>
 <tr class="separator:a071fb9e762f3d957d8696809180b01e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcccd4a52850e6747c3ab6a05ac66941"><td class="memItemLeft" align="right" valign="top">std::map&lt; mtca4u::TransferElementID, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#afcccd4a52850e6747c3ab6a05ac66941">idMap</a></td></tr>
-<tr class="memdesc:afcccd4a52850e6747c3ab6a05ac66941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map from accessor ID to the variable ID used in the other maps here, e.g.  <a href="#afcccd4a52850e6747c3ab6a05ac66941">More...</a><br /></td></tr>
-<tr class="separator:afcccd4a52850e6747c3ab6a05ac66941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a554d8b7b28af8c9efa2797325c1464"><td class="memItemLeft" align="right" valign="top">std::map&lt; ChimeraTK::TransferElementID, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a1a554d8b7b28af8c9efa2797325c1464">idMap</a></td></tr>
+<tr class="memdesc:a1a554d8b7b28af8c9efa2797325c1464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map from accessor ID to the variable ID used in the other maps here, e.g.  <a href="#a1a554d8b7b28af8c9efa2797325c1464">More...</a><br /></td></tr>
+<tr class="separator:a1a554d8b7b28af8c9efa2797325c1464"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ad49fdb5fbaea378e3836b4fcf9c60e"><td class="memItemLeft" align="right" valign="top">std::map&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a6ad49fdb5fbaea378e3836b4fcf9c60e">pvIdMap</a></td></tr>
 <tr class="memdesc:a6ad49fdb5fbaea378e3836b4fcf9c60e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map from ProcessArray uniqueId to the variable ID for control system variables.  <a href="#a6ad49fdb5fbaea378e3836b4fcf9c60e">More...</a><br /></td></tr>
 <tr class="separator:a6ad49fdb5fbaea378e3836b4fcf9c60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -474,7 +474,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00038">38</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00037">37</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a65ea3c005eec5249f9f8b0d2ce340d52"></a>
 <div class="memitem">
@@ -493,7 +493,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The constructor takes the application name as an argument. </p>
 <p>The name must have a non-zero length and must not contain any spaces or special characters. Use only alphanumeric characters and underscores. </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00038">38</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00039">39</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -518,7 +518,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00046">46</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00045">45</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -547,7 +547,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Check if all connections are valid. </p>
 <p>Internally called in <a class="el" href="class_chimera_t_k_1_1_application.html#a697d4a47ece6750203eecbff97039773">initialise()</a>. </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00123">123</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00122">122</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -586,11 +586,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Register a connection between two <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a>. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>TODO merge networks? </dd></dl>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00217">217</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00216">216</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1cf9a7fd7b2c73e21fa51dd235ad6619"></a>
+<a class="anchor" id="a11ee00018ac000ba12d9e250f5803a28"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -600,7 +600,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt; boost::shared_ptr&lt; mtca4u::NDRegisterAccessor&lt; UserType &gt; &gt;, boost::shared_ptr&lt; mtca4u::NDRegisterAccessor&lt; UserType &gt; &gt; &gt; Application::createApplicationVariable </td>
+          <td class="memname">std::pair&lt; boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt; &gt; Application::createApplicationVariable </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> const &amp;&#160;</td>
           <td class="paramname"><em>node</em>, </td>
@@ -627,11 +627,11 @@ template&lt;typename UserType &gt; </div>
 <p>Create a local process variable which is not exported. </p>
 <p>The first element in the returned pair will be the sender, the second the receiver. If two nodes are passed, the first node should be the sender and the second the receiver. </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00365">365</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00363">363</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a42831e39c14f187302522525fa179eef"></a>
+<a class="anchor" id="ace062becb6e35520147524dfec914a10"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -641,7 +641,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt; mtca4u::NDRegisterAccessor&lt; UserType &gt; &gt; Application::createDeviceVariable </td>
+          <td class="memname">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt; Application::createDeviceVariable </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>deviceAlias</em>, </td>
@@ -685,7 +685,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Perform the actual connection of an accessor to a device register. </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00278">278</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00276">276</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -712,11 +712,11 @@ template&lt;typename UserType &gt; </div>
 
 <p>Create a new, empty network. </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00827">827</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00825">825</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a56aa744909cdc42c3fabef0a0d149171"></a>
+<a class="anchor" id="a7ffa5299dd6e3692f34eb88d16fb4b15"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -726,7 +726,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt; mtca4u::NDRegisterAccessor&lt; UserType &gt; &gt; Application::createProcessVariable </td>
+          <td class="memname">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt; Application::createProcessVariable </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> const &amp;&#160;</td>
           <td class="paramname"><em>node</em></td><td>)</td>
@@ -744,7 +744,7 @@ template&lt;typename UserType &gt; </div>
 <p>nElements will be the array size of the created variable. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Check if this is true! </dd></dl>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00304">304</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00302">302</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -772,7 +772,7 @@ template&lt;typename UserType &gt; </div>
 <p>Enable some additional (potentially noisy) debug output for the testable mode. </p>
 <p>Can be useful if tests of applications seem to hang for no reason in stepApplication. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00101">101</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00100">100</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -819,7 +819,7 @@ template&lt;typename UserType &gt; </div>
 <p>Create Graphviz dot graph and write to file. </p>
 <p>The graph will contain the connections made in the initilise() function. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_chimera_t_k_1_1_application.html#ad754fcb82f70921783070295991d73a1" title="Output the connections requested in the initialise() function to std::cout. ">dumpConnections</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00522">522</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00520">520</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -839,7 +839,7 @@ template&lt;typename UserType &gt; </div>
 <p>Output the connections requested in the <a class="el" href="class_chimera_t_k_1_1_application.html#a697d4a47ece6750203eecbff97039773">initialise()</a> function to std::cout. </p>
 <p>This may be done also before <a class="el" href="class_chimera_t_k_1_1_application.html#acbbcd560d74531326d4ce56c601132ca" title="Make the connections between accessors as requested in the initialise() function. ...">makeConnections()</a> has been called. </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00514">514</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00512">512</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -869,7 +869,7 @@ template&lt;typename UserType &gt; </div>
 <p>This function must be called before the application is initialised (i.e. before the call to <a class="el" href="class_chimera_t_k_1_1_application.html#a697d4a47ece6750203eecbff97039773">initialise()</a>).</p>
 <p>Note: Enabling the testable mode will have a singificant impact on the performance, since it will prevent any module threads to run at the same time! </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00089">89</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00088">88</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -897,7 +897,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Enable debug output for a given variable. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00156">156</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00155">155</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -916,7 +916,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Instead of running the application, just initialise it and output the published variables to an XML file. </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00201">201</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00200">200</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -941,7 +941,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00165">165</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00164">164</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -970,7 +970,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#ac9889d98c6076fa8ac966ae5b89ab687">ChimeraTK::EntityOwner</a>.</p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00143">143</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00142">142</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -998,7 +998,7 @@ template&lt;typename UserType &gt; </div>
 <p>Obtain instance of the application. </p>
 <p>Will throw an exception if called before the instance has been created by the control system adapter, or if the instance is not based on the <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> class. </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00834">834</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00832">832</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -1027,7 +1027,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a44d138bbe63552b5b8dd9a128c76fcbe">ChimeraTK::EntityOwner</a>.</p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00137">137</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00136">136</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1055,7 +1055,7 @@ template&lt;typename UserType &gt; </div>
 <p>Return a fresh variable ID which can be assigned to a sender/receiver pair. </p>
 <p>The ID will always be non-zero. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00294">294</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00293">293</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1085,7 +1085,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#aa3fc963233d251705cd197ced1aa0876">ChimeraTK::EntityOwner</a>.</p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00139">139</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00138">138</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1113,7 +1113,7 @@ template&lt;typename UserType &gt; </div>
 <p>Obtain the lock object for the testable mode lock for the current thread. </p>
 <p>The returned object has thread_local storage duration and must only be used inside the current thread. Initially (i.e. after the first call in one particular thread) the lock will not be owned by the returned object, so it is important to catch the corresponding exception when calling std::unique_lock::unlock(). </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00957">957</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00955">955</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -1140,7 +1140,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Incremenet counter for how many write() operations have overwritten unread data. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00161">161</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00160">160</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1165,7 +1165,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00060">60</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00059">59</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -1192,7 +1192,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Make the connections between accessors as requested in the <a class="el" href="class_chimera_t_k_1_1_application.html#a697d4a47ece6750203eecbff97039773">initialise()</a> function. </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00427">427</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00425">425</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -1220,7 +1220,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Make the connections for a single network. </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00546">546</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00544">544</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -1249,7 +1249,7 @@ template&lt;typename UserType &gt; </div>
 <p>by merging networks sharing the same feeder. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>check if this assumtion is true! control-system nodes can be created with different types, too! </dd></dl>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00445">445</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00443">443</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -1276,7 +1276,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Register the connections to constants for previously unconnected nodes. </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00098">98</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00097">97</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -1305,7 +1305,7 @@ template&lt;typename UserType &gt; </div>
 <p>Register the thread in the application system and give it a name. </p>
 <p>This should be done for all threads used by the application to help with debugging and to allow profiling. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00132">132</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00131">131</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1330,7 +1330,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00145">145</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00144">144</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -1358,7 +1358,7 @@ template&lt;typename UserType &gt; </div>
 <p>This will remove the global pointer to the instance and allows creating another instance afterwards. </p>
 <p>This is mostly useful for writing tests, as it allows to run several applications sequentially in the same executable. Note that any ApplicationModules etc. owned by this <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> are no longer valid after destroying the <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> and must be destroyed as well (or at least no longer used). </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00178">178</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00177">177</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -1378,7 +1378,7 @@ template&lt;typename UserType &gt; </div>
 <p>Resume the application until all application threads are stuck in a blocking read operation. </p>
 <p>Works only when the testable mode was enabled. </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00840">840</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00838">838</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -1408,7 +1408,7 @@ template&lt;typename UserType &gt; </div>
 <p>Internally, a thread-local std::unique_lock&lt;std::mutex&gt; will be created and re-used in subsequent calls within the same thread to this function and to <a class="el" href="class_chimera_t_k_1_1_application.html#a8975837b63d1a93cd91b4a87465995cd" title="Unlock the testable mode mutex for the current thread. ">testableModeUnlock()</a>.</p>
 <p>This function should generally not be used in user code. </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00861">861</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00859">859</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -1436,7 +1436,7 @@ template&lt;typename UserType &gt; </div>
 <p>Test if the testable mode mutex is locked by the current thread. </p>
 <p>This function should generally not be used in user code. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00121">121</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00120">120</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1467,7 +1467,7 @@ template&lt;typename UserType &gt; </div>
 <p>Initially the lock will not be owned by the current thread, so the first call to this function will throw an exception (see std::unique_lock::unlock()), unless <a class="el" href="class_chimera_t_k_1_1_application.html#a518f2c85c4d1ec189a5aa3a2d89860bd" title="Lock the testable mode mutex for the current thread. ">testableModeLock()</a> has been called first.</p>
 <p>This function should generally not be used in user code. </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00936">936</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00934">934</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -1495,7 +1495,7 @@ template&lt;typename UserType &gt; </div>
 <p>Get string holding the name of the current thread. </p>
 <p>This is used e.g. for debugging output of the testable mode and for the internal profiler. </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00947">947</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00945">945</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -1525,7 +1525,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>UserType-dependent part of <a class="el" href="class_chimera_t_k_1_1_application.html#a9b3bd0b5ad6a7cef5bbd015e654bc584" title="Make the connections for a single network. ">makeConnectionsForNetwork()</a> </p>
 
-<p>Definition at line <a class="el" href="_application_8cc_source.html#l00569">569</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p>Definition at line <a class="el" href="_application_8cc_source.html#l00567">567</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -1553,7 +1553,7 @@ template&lt;typename UserType &gt; </div>
 <p>Enable warning about unconnected variables. </p>
 <p>This can be helpful to identify missing connections but is disabled by default since it may often be very noisy. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00076">76</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00075">75</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1578,7 +1578,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00181">181</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00180">180</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1602,7 +1602,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00337">337</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00336">336</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1624,7 +1624,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00174">174</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00173">173</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1648,7 +1648,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00329">329</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00328">328</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1672,7 +1672,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00332">332</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00331">331</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1694,7 +1694,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00334">334</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00333">333</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1716,7 +1716,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00175">175</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00174">174</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1738,7 +1738,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00177">177</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00176">176</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1760,7 +1760,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00176">176</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00175">175</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1782,7 +1782,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00178">178</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00177">177</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1807,7 +1807,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>List of constant variable nodes. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00247">247</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00246">246</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1831,7 +1831,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Counter for how many write() operations have overwritten unread data. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00340">340</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00339">339</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1856,11 +1856,11 @@ template&lt;typename UserType &gt; </div>
 <p>List of variables for which debug output was requested via <a class="el" href="class_chimera_t_k_1_1_application.html#a87520a53f9a635b49aace46f76c0cf07" title="Enable debug output for a given variable. ">enableVariableDebugging()</a>. </p>
 <p>Stored is the unique id of the <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a>. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00326">326</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00325">325</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9d5a91d97f31dd6b78f961bfce146c40"></a>
+<a class="anchor" id="a0b48d873e427c274811a351882a50555"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1868,7 +1868,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;std::string, boost::shared_ptr&lt;mtca4u::DeviceBackend&gt; &gt; ChimeraTK::Application::deviceMap</td>
+          <td class="memname">std::map&lt;std::string, boost::shared_ptr&lt;ChimeraTK::DeviceBackend&gt; &gt; ChimeraTK::Application::deviceMap</td>
         </tr>
       </table>
   </td>
@@ -1881,7 +1881,7 @@ template&lt;typename UserType &gt; </div>
 <p>Map of DeviceBackends used by this application. </p>
 <p>The map key is the alias name from the DMAP file </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00260">260</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00259">259</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1905,7 +1905,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Flag if noisy debug output is enabled for the testable mode. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00280">280</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00279">279</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1929,11 +1929,11 @@ template&lt;typename UserType &gt; </div>
 
 <p>Flag whether to warn about unconnected variables or not. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00283">283</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00282">282</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afcccd4a52850e6747c3ab6a05ac66941"></a>
+<a class="anchor" id="a1a554d8b7b28af8c9efa2797325c1464"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1941,7 +1941,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;mtca4u::TransferElementID, size_t&gt; ChimeraTK::Application::idMap</td>
+          <td class="memname">std::map&lt;ChimeraTK::TransferElementID, size_t&gt; ChimeraTK::Application::idMap</td>
         </tr>
       </table>
   </td>
@@ -1954,7 +1954,7 @@ template&lt;typename UserType &gt; </div>
 <p>Map from accessor ID to the variable ID used in the other maps here, e.g. </p>
 <p>for the testable mode. This allows associating sender and receiver pairs of the same ProcessArray. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00287">287</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00286">286</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1978,7 +1978,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>List of InternalModules. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00241">241</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00240">240</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2002,7 +2002,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Instance of <a class="el" href="class_chimera_t_k_1_1_variable_network.html" title="This class describes a network of variables all connected to each other. ">VariableNetwork</a> to indicate an invalid network. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00257">257</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00256">256</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2026,7 +2026,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>List of variable networks. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00244">244</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00243">243</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2051,7 +2051,7 @@ template&lt;typename UserType &gt; </div>
 <p>Map from ProcessArray uniqueId to the variable ID for control system variables. </p>
 <p>This is required for the <a class="el" href="class_chimera_t_k_1_1_test_facility.html" title="Helper class to facilitate tests of applications based on ApplicationCore. ">TestFacility</a>. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00291">291</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00290">290</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2076,7 +2076,7 @@ template&lt;typename UserType &gt; </div>
 <p>Flag if connections should be made in testable mode (i.e. </p>
 <p>the <a class="el" href="class_chimera_t_k_1_1_test_decorator_register_accessor.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">TestDecoratorRegisterAccessor</a> is put around all push-type input accessors etc.). </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00264">264</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00263">263</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2101,7 +2101,7 @@ template&lt;typename UserType &gt; </div>
 <p>Semaphore counter used in testable mode to check if application code is finished executing. </p>
 <p>This value may only be accessed while holding the testableMode_mutex. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00277">277</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00276">276</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2125,7 +2125,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map of unique IDs to flags whether the update mode is <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3bab0f6dfb42fa80caee6825bfecd30f094">UpdateMode::poll</a> (so we do not use the decorator) </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00322">322</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00321">321</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2150,7 +2150,7 @@ template&lt;typename UserType &gt; </div>
 <p>Last thread which successfully obtained the lock for the testable mode. </p>
 <p>This is used to prevent spamming repeating messages if the same thread acquires and releases the lock in a loop without another thread activating in between. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00302">302</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00301">301</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2176,7 +2176,7 @@ template&lt;typename UserType &gt; </div>
 <p>Use only through the lock object obtained through getLockObjectForCurrentThread().</p>
 <p>This member is static, since it should survive destroying an application instance and creating a new one. Otherwise <a class="el" href="class_chimera_t_k_1_1_application.html#aca0e46e006bc223748a3c4056bddc176" title="Obtain the lock object for the testable mode lock for the current thread. ">getTestableModeLockObject()</a> would not work, since it relies on thread_local instances which have to be static. The static storage duration presents no problem in either case, since there can only be one single instance of <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> at a time (see ApplicationBase constructor). </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00273">273</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00272">272</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2200,7 +2200,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map of unique IDs to namess, used along with testableMode_perVarCounter to print sensible information. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00316">316</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00315">315</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2225,7 +2225,7 @@ template&lt;typename UserType &gt; </div>
 <p>Testable mode: like testableMode_counter but broken out for each variable. </p>
 <p>This is not actually used as a semaphore counter but only in case of a detected stall (see testableMode_repeatingMutexOwner) to print a list of variables which still contain unread values. The index of the map is the unique ID of the variable. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00313">313</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00312">312</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2249,7 +2249,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map of unique IDs to process variables which have been decorated with the <a class="el" href="class_chimera_t_k_1_1_test_decorator_register_accessor.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">TestDecoratorRegisterAccessor</a>. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00319">319</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00318">318</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2274,7 +2274,7 @@ template&lt;typename UserType &gt; </div>
 <p>Counter how often the same thread has acquired the testable mode mutex in a row without another thread owning it in between. </p>
 <p>This is an indicator for the test being stalled due to data send through a process variable but not read by the receiver. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00307">307</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00306">306</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2299,7 +2299,7 @@ template&lt;typename UserType &gt; </div>
 <p>Map of trigger sources to their corresponding TriggerFanOuts. </p>
 <p>Note: the key is the unique ID of the triggering node. </p>
 
-<p>Definition at line <a class="el" href="_application_8h_source.html#l00251">251</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p>Definition at line <a class="el" href="_application_8h_source.html#l00250">250</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2310,7 +2310,7 @@ template&lt;typename UserType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 5 2018 07:53:48 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 6 2018 07:53:58 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
