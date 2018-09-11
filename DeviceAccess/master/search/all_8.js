@@ -67,7 +67,7 @@ var searchData=
   ['getsize',['getSize',['../class_chimera_t_k_1_1_device_info_map.html#a9a45508078a5eff0018f0c75a547337a',1,'ChimeraTK::DeviceInfoMap']]],
   ['getstring',['getString',['../class_chimera_t_k_1_1_access_mode_flags.html#ae565211159aa587255487729dac0cf5c',1,'ChimeraTK::AccessModeFlags']]],
   ['gettargetdevices',['getTargetDevices',['../class_chimera_t_k_1_1_logical_name_map_parser.html#acd9254462b3b3ccb6a2931b6b72ffbc5',1,'ChimeraTK::LogicalNameMapParser']]],
-  ['gettime',['getTime',['../class_chimera_t_k_1_1_version_number.html#a76e33319e8e550e57898523b89e552ca',1,'ChimeraTK::VersionNumber']]],
+  ['gettime',['getTime',['../class_chimera_t_k_1_1_version_number.html#aed04fcbff361ce0496338e3f4f981a3d',1,'ChimeraTK::VersionNumber']]],
   ['gettransferelementid',['getTransferElementID',['../class_chimera_t_k_1_1_transfer_future.html#aad77bad2e40861ab8c86f4e4c3553e65',1,'ChimeraTK::TransferFuture']]],
   ['gettwodregisteraccessor',['getTwoDRegisterAccessor',['../class_chimera_t_k_1_1_device.html#a301727e5b00155c7656473553e5be8c7',1,'ChimeraTK::Device::getTwoDRegisterAccessor(const RegisterPath &amp;registerPathName, size_t numberOfElements=0, size_t elementsOffset=0, const AccessModeFlags &amp;flags=AccessModeFlags({})) const '],['../class_chimera_t_k_1_1_device.html#a3d93f0b3a3efba7b3c46363621c4ee84',1,'ChimeraTK::Device::getTwoDRegisterAccessor(const std::string &amp;module, const std::string &amp;registerName) const ']]],
   ['getunit',['getUnit',['../class_chimera_t_k_1_1_transfer_element_abstractor.html#a7e4ae50e49a3c2c1d57d01ccd1fb7646',1,'ChimeraTK::TransferElementAbstractor::getUnit()'],['../class_chimera_t_k_1_1_transfer_element.html#a2ff50f318e05a14f70b178e4435be4ef',1,'ChimeraTK::TransferElement::getUnit()']]],
