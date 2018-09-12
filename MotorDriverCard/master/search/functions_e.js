@@ -6,7 +6,7 @@ var searchData=
   ['thirtytwotocustom',['thirtyTwoToCustom',['../classmtca4u_1_1_signed_int_converter.html#afa08804e34313887586e50a7f106a986',1,'mtca4u::SignedIntConverter']]],
   ['tmc429inputword',['TMC429InputWord',['../classmtca4u_1_1_t_m_c429_input_word.html#a719b4673d8b014a5b8d2c5ee92127e0d',1,'mtca4u::TMC429InputWord']]],
   ['tmc429outputword',['TMC429OutputWord',['../classmtca4u_1_1_t_m_c429_output_word.html#aa884ce82f6841e20c79f9bcb7436f436',1,'mtca4u::TMC429OutputWord']]],
-  ['tmc429spi',['TMC429SPI',['../classmtca4u_1_1_t_m_c429_s_p_i.html#af8b0fbc1d6094b86661f5e69a3f9c840',1,'mtca4u::TMC429SPI']]],
+  ['tmc429spi',['TMC429SPI',['../classmtca4u_1_1_t_m_c429_s_p_i.html#ae6d0446d0072292cb2d999715387efb2',1,'mtca4u::TMC429SPI']]],
   ['tmc429statusword',['TMC429StatusWord',['../classmtca4u_1_1_t_m_c429_status_word.html#a06f8393729fab6974511cb1810861293',1,'mtca4u::TMC429StatusWord']]],
   ['tolerancecalcthreadfunction',['toleranceCalcThreadFunction',['../class_chimera_t_k_1_1_stepper_motor_with_reference_state_machine.html#a8c422ed88d0fd95e6743d213e211bfda',1,'ChimeraTK::StepperMotorWithReferenceStateMachine']]],
   ['translateaxis',['translateAxis',['../class_chimera_t_k_1_1_stepper_motor.html#a9a6e5bb8bbcd6d1a891f7f5fd1f8a38e',1,'ChimeraTK::StepperMotor::translateAxis()'],['../class_chimera_t_k_1_1_stepper_motor_with_reference.html#a37a038a00c0c009b087406ce3b9009d5',1,'ChimeraTK::StepperMotorWithReference::translateAxis()']]],
