@@ -25,7 +25,7 @@ var searchData=
   ['addmodule',['addModule',['../namespacemtca4u__lmap__editor.html#afa3a2190b92328ea21ae4860c8ecc207',1,'mtca4u_lmap_editor']]],
   ['addpluginlibrary',['addPluginLibrary',['../class_chimera_t_k_1_1_device_info_map.html#a59d0a2a154d3bb8de24fc7d8931db91a',1,'ChimeraTK::DeviceInfoMap']]],
   ['addregister',['addRegister',['../class_chimera_t_k_1_1_register_catalogue.html#ac868a12da4ce5d9c40b26192473ffbc1',1,'ChimeraTK::RegisterCatalogue::addRegister()'],['../namespacemtca4u__lmap__editor.html#a274b1e8451f3301630361fafa15bdb50',1,'mtca4u_lmap_editor.addRegister()']]],
-  ['address',['address',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae127df17e9ddb46374e1450a42ef44a5',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
+  ['address',['address',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae127df17e9ddb46374e1450a42ef44a5',1,'ChimeraTK::RegisterInfoMap::RegisterInfo::address()'],['../struct_chimera_t_k_1_1_device_descriptor.html#abb8149f71839abaad25c671b3ef70688',1,'ChimeraTK::DeviceDescriptor::address()']]],
   ['addressinwords',['addressInWords',['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#ac3df6436518ace3a5d09ec50f48924af',1,'ChimeraTK::RebotProtocol0::RegisterInfo']]],
   ['addressrange',['AddressRange',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html#ae18c40ccd64efd9484032a1f1bd137f8',1,'ChimeraTK::DummyBackend::AddressRange']]],
   ['addressrange',['AddressRange',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html',1,'ChimeraTK::DummyBackend']]],

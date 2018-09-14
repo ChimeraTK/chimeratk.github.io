@@ -1,9 +1,11 @@
 var searchData=
 [
+  ['parameters',['parameters',['../struct_chimera_t_k_1_1_device_descriptor.html#ae9e805cff2abb1fb3d51a87826b09a32',1,'ChimeraTK::DeviceDescriptor']]],
   ['parse',['parse',['../class_chimera_t_k_1_1_logical_name_mapping_backend.html#a3419eaca6814748e07fb86975537e9a6',1,'ChimeraTK::LogicalNameMappingBackend::parse()'],['../class_chimera_t_k_1_1_d_map_file_parser.html#af5bc5f64b8e53e070862ac5e9992a412',1,'ChimeraTK::DMapFileParser::parse()'],['../class_chimera_t_k_1_1_map_file_parser.html#a2df3215ca13237697b79d4a99a2996b6',1,'ChimeraTK::MapFileParser::parse()']]],
   ['parse_5fdir',['parse_dir',['../class_chimera_t_k_1_1_d_map_files_parser.html#a5bbcf684e2d08cf3a2e95a57e370a6f4',1,'ChimeraTK::DMapFilesParser']]],
   ['parse_5fdirs',['parse_dirs',['../class_chimera_t_k_1_1_d_map_files_parser.html#ab9d96706bbc05126bee7927cbc185b00',1,'ChimeraTK::DMapFilesParser']]],
   ['parse_5ffile',['parse_file',['../class_chimera_t_k_1_1_d_map_files_parser.html#a18fc12b72db653bed4dd9d9ce086bdf1',1,'ChimeraTK::DMapFilesParser']]],
+  ['parsedevicedesciptor',['parseDeviceDesciptor',['../class_chimera_t_k_1_1_utilities.html#a01df8292c600039a0d654b7591e33a45',1,'ChimeraTK::Utilities']]],
   ['parsedevicestring',['parseDeviceString',['../class_chimera_t_k_1_1_utilities.html#a8e7289e005ef6c6b28b685ece1abe8f1',1,'ChimeraTK::Utilities']]],
   ['parseelement',['parseElement',['../class_chimera_t_k_1_1_logical_name_map_parser.html#ab8662db4e59f62f412c0b906a7aa00a8',1,'ChimeraTK::LogicalNameMapParser']]],
   ['parsefile',['parseFile',['../class_chimera_t_k_1_1_logical_name_map_parser.html#a9db9a3f936019b197cc735509adea429',1,'ChimeraTK::LogicalNameMapParser']]],
@@ -55,8 +57,8 @@ var searchData=
   ['pitch',['pitch',['../class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html#a1ab05d3d094cad208ffe39767d3075ad',1,'ChimeraTK::proxies::DummyRegisterSequence::pitch()'],['../class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html#a34aca12eef21df4080234eccd618393b',1,'ChimeraTK::DummyMultiplexedRegisterAccessor::pitch()']]],
   ['postread',['postRead',['../class_chimera_t_k_1_1_transfer_element.html#a19a9f486a967295eacca7f3f78d025bb',1,'ChimeraTK::TransferElement']]],
   ['postwrite',['postWrite',['../class_chimera_t_k_1_1_transfer_element.html#ae92f7bd2db9827c3db3c1ff0e29ab581',1,'ChimeraTK::TransferElement']]],
-  ['predicates_2eh',['predicates.h',['../fileparsers_2include_2predicates_8h.html',1,'']]],
   ['predicates_2eh',['predicates.h',['../mtca4u__compatibility__headers_2predicates_8h.html',1,'']]],
+  ['predicates_2eh',['predicates.h',['../fileparsers_2include_2predicates_8h.html',1,'']]],
   ['preread',['preRead',['../class_chimera_t_k_1_1_transfer_element.html#a68fee71a4c9407193fa021c44aca9f5d',1,'ChimeraTK::TransferElement']]],
   ['prewrite',['preWrite',['../class_chimera_t_k_1_1_transfer_element.html#a2bbf89e74a5db146db0992dfa6c48554',1,'ChimeraTK::TransferElement']]],
   ['printstacktrace',['printStackTrace',['../class_chimera_t_k_1_1_utilities.html#a2ece51d51220974672726b2d1f30ed62',1,'ChimeraTK::Utilities']]],

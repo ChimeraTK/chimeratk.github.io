@@ -9,6 +9,7 @@ var searchData=
   ['device_5frw',['device_rw',['../structdevice__rw.html',1,'']]],
   ['devicebackend',['DeviceBackend',['../class_chimera_t_k_1_1_device_backend.html',1,'ChimeraTK']]],
   ['devicebackendimpl',['DeviceBackendImpl',['../class_chimera_t_k_1_1_device_backend_impl.html',1,'ChimeraTK']]],
+  ['devicedescriptor',['DeviceDescriptor',['../struct_chimera_t_k_1_1_device_descriptor.html',1,'ChimeraTK']]],
   ['deviceinfo',['DeviceInfo',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html',1,'ChimeraTK::DeviceInfoMap']]],
   ['deviceinfomap',['DeviceInfoMap',['../class_chimera_t_k_1_1_device_info_map.html',1,'ChimeraTK']]],
   ['dmapfile',['DMapFile',['../class_chimera_t_k_1_1_d_map_file.html',1,'ChimeraTK']]],

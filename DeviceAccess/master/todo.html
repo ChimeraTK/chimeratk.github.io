@@ -83,13 +83,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000065"></a>Member <a class="el" href="class_chimera_t_k_1_1_backend_factory.html#aad77bcb5c70408e9a5f63039d9472223">ChimeraTK::BackendFactory::registerBackendType</a>  (std::string interface, std::string protocol, boost::shared_ptr&lt; DeviceBackend &gt;(*creatorFunction)(std::string host, std::string instance, std::list&lt; std::string &gt;parameters, std::string), std::string version)</dt>
-<dd>FIXME don't replace. Check that if it is different (double registration of of the same creator function should be possibe) and throw if not the same. The version string has to match CHIMERATK_DEVICEACCESS_VERSION from <a class="el" href="_device_access_version_8h.html">DeviceAccessVersion.h</a>, otherwise a DeviceException is thrown. This prevents incompatible plugins to be loaded.  </dd>
 <dt><a class="anchor" id="_todo000001"></a>Class <a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html">ChimeraTK::BufferingRegisterAccessor&lt; UserType &gt;</a>  </dt>
 <dd>Add printed runtime warning after release of version 0.9  </dd>
-<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html#a104b163795df328c7beecfb39e9679dd">ChimeraTK::BufferingRegisterAccessor&lt; UserType &gt;::BufferingRegisterAccessor</a>  (boost::shared_ptr&lt; NDRegisterAccessor&lt; UserType &gt; &gt; impl)</dt>
-<dd>Add printed runtime warning after release of version 0.9  </dd>
 <dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html#a3a16876cc8c203d583a27e580fd9cb71">ChimeraTK::BufferingRegisterAccessor&lt; UserType &gt;::BufferingRegisterAccessor</a>  ()</dt>
+<dd>Add printed runtime warning after release of version 0.9  </dd>
+<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html#a104b163795df328c7beecfb39e9679dd">ChimeraTK::BufferingRegisterAccessor&lt; UserType &gt;::BufferingRegisterAccessor</a>  (boost::shared_ptr&lt; NDRegisterAccessor&lt; UserType &gt; &gt; impl)</dt>
 <dd>Add printed runtime warning after release of version 0.9  </dd>
 <dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html#a4273c036267bf9a56fb4164bbc5a4369">ChimeraTK::BufferingRegisterAccessor&lt; UserType &gt;::getNumberOfElements</a>  ()</dt>
 <dd>Add printed runtime warning after release of version 0.9  </dd>
@@ -165,21 +163,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dd>Add printed runtime warning. Deprecated since version 0.12  </dd>
 <dt><a class="anchor" id="_todo000027"></a>Member <a class="el" href="class_chimera_t_k_1_1_device.html#ac434ea5dce4b655a716067b7c06b4062">ChimeraTK::Device::writeArea</a>  (uint32_t regOffset, int32_t const *data, size_t size, uint8_t bar)</dt>
 <dd>Add printed runtime warning after release of version 0.9  </dd>
-<dt><a class="anchor" id="_todo000046"></a>Member <a class="el" href="class_chimera_t_k_1_1_device.html#a087acaa19ad7fcd3f117dbb19db73ef4">ChimeraTK::Device::writeDMA</a>  (const std::string &amp;regName, const std::string &amp;regModule, int32_t const *data, size_t dataSize=0, uint32_t addRegOffset=0)</dt>
-<dd>Add printed runtime warning after release of version 0.9  </dd>
 <dt><a class="anchor" id="_todo000042"></a>Member <a class="el" href="class_chimera_t_k_1_1_device.html#a01f6ae42475f38e762a9245bf0eb4055">ChimeraTK::Device::writeDMA</a>  (uint32_t regOffset, int32_t const *data, size_t size, uint8_t bar)</dt>
 <dd>Change warning into runtime error after release of version 0.9  </dd>
 <dt><a class="anchor" id="_todo000045"></a>Member <a class="el" href="class_chimera_t_k_1_1_device.html#a3519e11f95e23248bcca227ae2ca0c4d">ChimeraTK::Device::writeDMA</a>  (const std::string &amp;regName, int32_t const *data, size_t dataSize=0, uint32_t addRegOffset=0)</dt>
 <dd>Add printed runtime warning after release of version 0.9  </dd>
-<dt><a class="anchor" id="_todo000031"></a>Member <a class="el" href="class_chimera_t_k_1_1_device.html#a5ee55d2407e57525fb759fa820c72a24">ChimeraTK::Device::writeReg</a>  (const std::string &amp;regName, const std::string &amp;regModule, int32_t const *data, size_t dataSize=0, uint32_t addRegOffset=0)</dt>
+<dt><a class="anchor" id="_todo000046"></a>Member <a class="el" href="class_chimera_t_k_1_1_device.html#a087acaa19ad7fcd3f117dbb19db73ef4">ChimeraTK::Device::writeDMA</a>  (const std::string &amp;regName, const std::string &amp;regModule, int32_t const *data, size_t dataSize=0, uint32_t addRegOffset=0)</dt>
 <dd>Add printed runtime warning after release of version 0.9  </dd>
 <dt><a class="anchor" id="_todo000025"></a>Member <a class="el" href="class_chimera_t_k_1_1_device.html#aa6c9fa85aca91ab0dce1717db8b1863d">ChimeraTK::Device::writeReg</a>  (uint32_t regOffset, int32_t data, uint8_t bar)</dt>
 <dd>Add printed runtime warning after release of version 0.9  </dd>
 <dt><a class="anchor" id="_todo000030"></a>Member <a class="el" href="class_chimera_t_k_1_1_device.html#abc26e04363536fbd6da8b4b2686f8af5">ChimeraTK::Device::writeReg</a>  (const std::string &amp;regName, int32_t const *data, size_t dataSize=0, uint32_t addRegOffset=0)</dt>
 <dd>Add printed runtime warning after release of version 0.9  </dd>
-<dt><a class="anchor" id="_todo000066"></a>Member <a class="el" href="class_chimera_t_k_1_1_device_backend.html#ade6ceb13d1f554138f8d3180cca88ba6">ChimeraTK::DeviceBackend::getRegisterAccessor</a>  (const <a class="el" href="class_chimera_t_k_1_1_register_path.html" title="Class to store a register path name. ">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, bool enforceRawAccess)</dt>
+<dt><a class="anchor" id="_todo000031"></a>Member <a class="el" href="class_chimera_t_k_1_1_device.html#a5ee55d2407e57525fb759fa820c72a24">ChimeraTK::Device::writeReg</a>  (const std::string &amp;regName, const std::string &amp;regModule, int32_t const *data, size_t dataSize=0, uint32_t addRegOffset=0)</dt>
+<dd>Add printed runtime warning after release of version 0.9  </dd>
+<dt><a class="anchor" id="_todo000065"></a>Member <a class="el" href="class_chimera_t_k_1_1_device_backend.html#ade6ceb13d1f554138f8d3180cca88ba6">ChimeraTK::DeviceBackend::getRegisterAccessor</a>  (const <a class="el" href="class_chimera_t_k_1_1_register_path.html" title="Class to store a register path name. ">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, bool enforceRawAccess)</dt>
 <dd>Add runtine warning after release of version 0.12 }  </dd>
-<dt><a class="anchor" id="_todo000067"></a>Member <a class="el" href="class_chimera_t_k_1_1_device_backend.html#aa0f072cc0811a8d72c787849a47f4fcf">ChimeraTK::DeviceBackend::getRegisterMap</a>  () const =0</dt>
+<dt><a class="anchor" id="_todo000066"></a>Member <a class="el" href="class_chimera_t_k_1_1_device_backend.html#aa0f072cc0811a8d72c787849a47f4fcf">ChimeraTK::DeviceBackend::getRegisterMap</a>  () const =0</dt>
 <dd>Add runtime warning after release of version 0.9 }  </dd>
 <dt><a class="anchor" id="_todo000047"></a>Member <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html#aa6b2c077e7ce54f0b795514fd6ade813">ChimeraTK::FixedPointConverter::toDouble</a>  (uint32_t rawValue) const </dt>
 <dd>Add printed runtime warning after release of version 0.6  </dd>
@@ -213,25 +211,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dd>Add printed runtime warning after release of version 0.8  </dd>
 <dt><a class="anchor" id="_todo000051"></a>Member <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#aef4d5c2cf096504c2088bf4ddb56a1b0">ChimeraTK::RegisterAccessor::~RegisterAccessor</a>  ()</dt>
 <dd>Add printed runtime warning after release of version 0.8  </dd>
-<dt><a class="anchor" id="_todo000070"></a>Member <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ab828431ccd2b4255ccc0ba469d1999f0">ChimeraTK::SubdeviceBackend::readDeviceInfo</a>  () override</dt>
+<dt><a class="anchor" id="_todo000069"></a>Member <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ab828431ccd2b4255ccc0ba469d1999f0">ChimeraTK::SubdeviceBackend::readDeviceInfo</a>  () override</dt>
 <dd>extend information  </dd>
-<dt><a class="anchor" id="_todo000068"></a>Member <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa45ffbd50d1903b1ae425d68a2044b26">ChimeraTK::TransferElement::getVersionNumber</a>  () const </dt>
+<dt><a class="anchor" id="_todo000067"></a>Member <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa45ffbd50d1903b1ae425d68a2044b26">ChimeraTK::TransferElement::getVersionNumber</a>  () const </dt>
 <dd>FIXME Default implementation is wrong! There should be no default implementation, since the version number must be obtained in the last transfer!  </dd>
-<dt><a class="anchor" id="_todo000069"></a>Member <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a70d4c154c564848bfb6b08992cdf7059">ChimeraTK::TransferElement::setPersistentDataStorage</a>  (boost::shared_ptr&lt; ChimeraTK::PersistentDataStorage &gt;)</dt>
+<dt><a class="anchor" id="_todo000068"></a>Member <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a70d4c154c564848bfb6b08992cdf7059">ChimeraTK::TransferElement::setPersistentDataStorage</a>  (boost::shared_ptr&lt; ChimeraTK::PersistentDataStorage &gt;)</dt>
 <dd>TODO does this make sense?  </dd>
 <dt><a class="anchor" id="_todo000063"></a>Member <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a781f771e098890bc458ea65e24cea376">ChimeraTK::TransferElementAbstractor::setPersistentDataStorage</a>  (boost::shared_ptr&lt; ChimeraTK::PersistentDataStorage &gt; storage)</dt>
 <dd>TODO does this make sense?  </dd>
 <dt><a class="anchor" id="_todo000064"></a>Member <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a13f0ae7ce386f0f34b9ea9db867efbf4">ChimeraTK::TransferGroup::addAccessor</a>  (const boost::shared_ptr&lt; TransferElement &gt; &amp;accessor)</dt>
 <dd>implement smarter and more efficient!  </dd>
-<dt><a class="anchor" id="_todo000071"></a>Page <a class="el" href="dmap.html">Device Mapping</a>  </dt>
+<dt><a class="anchor" id="_todo000070"></a>Page <a class="el" href="dmap.html">Device Mapping</a>  </dt>
 <dd>FIXME: This information is outdated. </dd>
-<dt><a class="anchor" id="_todo000074"></a>Page <a class="el" href="mapping.html">Using the register name mapping</a>  </dt>
+<dt><a class="anchor" id="_todo000073"></a>Page <a class="el" href="mapping.html">Using the register name mapping</a>  </dt>
 <dd>FIXME: This page is deprecated.</dd>
 </dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 13 2018 13:08:25 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 14 2018 07:53:33 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
