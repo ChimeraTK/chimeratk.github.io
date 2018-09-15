@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>mtca4u-deviceaccess: ChimeraTK::testable_rebot_sleep Namespace Reference</title>
+<title>ChimeraTK-DeviceAccess: ChimeraTK::testable_rebot_sleep Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">mtca4u-deviceaccess
+   <div id="projectname">ChimeraTK-DeviceAccess
    </div>
   </td>
  </tr>
@@ -102,8 +102,33 @@ Functions</h2></td></tr>
 <tr class="memitem:a35a618bb93efcf6f87f192a3dcc33439"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a35a618bb93efcf6f87f192a3dcc33439">sleep_until</a> (boost::chrono::steady_clock::time_point t)</td></tr>
 <tr class="memdesc:a35a618bb93efcf6f87f192a3dcc33439"><td class="mdescLeft">&#160;</td><td class="mdescRight">There are two implementations with the same signature: One that calls boost::thread::this_thread::sleep_until, which is used in the application.  <a href="#a35a618bb93efcf6f87f192a3dcc33439">More...</a><br /></td></tr>
 <tr class="separator:a35a618bb93efcf6f87f192a3dcc33439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6901c950b4203167e804d151547676cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a6901c950b4203167e804d151547676cf">wake_up_application</a> ()</td></tr>
+<tr class="separator:a6901c950b4203167e804d151547676cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e89a8c5e60ca0f1571ed3e34c7af68"><td class="memTemplParams" colspan="2">template&lt;class Rep , class Period &gt; </td></tr>
+<tr class="memitem:a73e89a8c5e60ca0f1571ed3e34c7af68"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a73e89a8c5e60ca0f1571ed3e34c7af68">advance_until</a> (boost::chrono::duration&lt; Rep, Period &gt; targetTimeRelativeMyEpoch)</td></tr>
+<tr class="separator:a73e89a8c5e60ca0f1571ed3e34c7af68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a73e89a8c5e60ca0f1571ed3e34c7af68"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Rep , class Period &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::testable_rebot_sleep::advance_until </td>
+          <td>(</td>
+          <td class="paramtype">boost::chrono::duration&lt; Rep, Period &gt;&#160;</td>
+          <td class="paramname"><em>targetTimeRelativeMyEpoch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00108">108</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a1851c267e4dd419a948306ff85195a86"></a>
 <div class="memitem">
 <div class="memproto">
@@ -142,10 +167,27 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6901c950b4203167e804d151547676cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::testable_rebot_sleep::wake_up_application </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00084">84</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 14 2018 07:53:33 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 15 2018 07:53:21 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

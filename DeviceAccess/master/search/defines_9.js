@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['test_5fdmap_5ffile_5fpath',['TEST_DMAP_FILE_PATH',['../device__backends_2include_2_backend_factory_8h.html#a133539a4d76d2a1aaef2b0bfebbf18c4',1,'BackendFactory.h']]],
-  ['try_5fregister_5faccess',['TRY_REGISTER_ACCESS',['../_shared_dummy_backend_8cc.html#ae845db7f933611bff0617577388e4c4f',1,'TRY_REGISTER_ACCESS():&#160;SharedDummyBackend.cc'],['../_dummy_backend_8cc.html#ae845db7f933611bff0617577388e4c4f',1,'TRY_REGISTER_ACCESS():&#160;DummyBackend.cc']]]
+  ['n_5fwords_5fdma',['N_WORDS_DMA',['../test_pcie_backend_8cpp.html#acd8b2cfe09914c2a71093bc7a86b0426',1,'testPcieBackend.cpp']]],
+  ['non_5fexisting_5fdevice',['NON_EXISTING_DEVICE',['../test_dummy_backend_8cpp.html#a008ad625224f24a35a1f634d6f73a297',1,'NON_EXISTING_DEVICE():&#160;testDummyBackend.cpp'],['../test_pcie_backend_8cpp.html#a008ad625224f24a35a1f634d6f73a297',1,'NON_EXISTING_DEVICE():&#160;testPcieBackend.cpp']]]
 ];

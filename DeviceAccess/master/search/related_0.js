@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getfuturequeuefromtransferfuture',['getFutureQueueFromTransferFuture',['../class_chimera_t_k_1_1_transfer_future.html#a2e114ae50c3d1b5fb66ce3e0506dda9a',1,'ChimeraTK::TransferFuture']]]
+  ['bufferingregistertestsuite',['BufferingRegisterTestSuite',['../class_buffering_register_test.html#a54cb1daa3136dd7af6722e3ca9c57da6',1,'BufferingRegisterTest']]]
 ];

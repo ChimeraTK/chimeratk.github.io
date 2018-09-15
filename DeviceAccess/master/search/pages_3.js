@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
-  ['device_20mapping',['Device Mapping',['../dmap.html',1,'']]]
+  ['chimeratk_2ddeviceaccess',['ChimeraTK-DeviceAccess',['../index.html',1,'']]]
 ];

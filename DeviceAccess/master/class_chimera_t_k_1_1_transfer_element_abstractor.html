@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>mtca4u-deviceaccess: ChimeraTK::TransferElementAbstractor Class Reference</title>
+<title>ChimeraTK-DeviceAccess: ChimeraTK::TransferElementAbstractor Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">mtca4u-deviceaccess
+   <div id="projectname">ChimeraTK-DeviceAccess
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Base class for register accessors abstractors independent of the UserType.  
  <a href="class_chimera_t_k_1_1_transfer_element_abstractor.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ChimeraTK::TransferElementAbstractor:</div>
 <div class="dyncontent">
@@ -111,18 +111,110 @@ Inheritance diagram for ChimeraTK::TransferElementAbstractor:</div>
   <img src="class_chimera_t_k_1_1_transfer_element_abstractor.png" usemap="#ChimeraTK::TransferElementAbstractor_map" alt=""/>
   <map id="ChimeraTK::TransferElementAbstractor_map" name="ChimeraTK::TransferElementAbstractor_map">
 <area href="struct_chimera_t_k_1_1detail_1_1_transfer_group_transfer_element_abstractor.html" title="just used in TransferGroup::addAccessor(const boost::shared_ptr&lt;TransferElement&gt; &amp;accessor) ..." alt="ChimeraTK::detail::TransferGroupTransferElementAbstractor" shape="rect" coords="0,56,350,80"/>
-<area href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html" title="Base class for the reigster accessor abstractors (ScalarRegisterAccessor, OneDRegisterAccessor and Tw..." alt="ChimeraTK::NDRegisterAccessorAbstractor&lt; UserType &gt;" shape="rect" coords="540,56,890,80"/>
-<area href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html" alt="ChimeraTK::NDRegisterAccessorAbstractor&lt; std::string &gt;" shape="rect" coords="1440,56,1790,80"/>
-<area href="class_chimera_t_k_1_1_buffering_register_accessor.html" title="DEPRECATED! Use OneDRegisterAccessor or ScalarRegisterAccessor instead! " alt="ChimeraTK::BufferingRegisterAccessor&lt; UserType &gt;" shape="rect" coords="0,112,350,136"/>
-<area href="class_chimera_t_k_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o..." alt="ChimeraTK::OneDRegisterAccessor&lt; UserType &gt;" shape="rect" coords="360,112,710,136"/>
-<area href="class_chimera_t_k_1_1_scalar_register_accessor.html" title="Accessor class to read and write scalar registers transparently by using the accessor object like a v..." alt="ChimeraTK::ScalarRegisterAccessor&lt; UserType &gt;" shape="rect" coords="720,112,1070,136"/>
-<area href="class_chimera_t_k_1_1_two_d_register_accessor.html" title="TODO add documentation. " alt="ChimeraTK::TwoDRegisterAccessor&lt; UserType &gt;" shape="rect" coords="1080,112,1430,136"/>
-<area href="class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html" alt="ChimeraTK::ScalarRegisterAccessor&lt; std::string &gt;" shape="rect" coords="1440,112,1790,136"/>
+<area href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html" title="Base class for the reigster accessor abstractors (ScalarRegisterAccessor, OneDRegisterAccessor and Tw..." alt="ChimeraTK::NDRegisterAccessorAbstractor&lt; UserType &gt;" shape="rect" coords="360,56,710,80"/>
+<area href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html" title="Base class for the reigster accessor abstractors (ScalarRegisterAccessor, OneDRegisterAccessor and Tw..." alt="ChimeraTK::NDRegisterAccessorAbstractor&lt; UserType &gt;" shape="rect" coords="1080,56,1430,80"/>
+<area href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html" alt="ChimeraTK::NDRegisterAccessorAbstractor&lt; std::string &gt;" shape="rect" coords="1800,56,2150,80"/>
+<area href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html" alt="ChimeraTK::NDRegisterAccessorAbstractor&lt; std::string &gt;" shape="rect" coords="2520,56,2870,80"/>
+<area href="class_chimera_t_k_1_1_buffering_register_accessor.html" title="DEPRECATED! Use OneDRegisterAccessor or ScalarRegisterAccessor instead! " alt="ChimeraTK::BufferingRegisterAccessor&lt; UserType &gt;" shape="rect" coords="720,112,1070,136"/>
+<area href="class_chimera_t_k_1_1_buffering_register_accessor.html" title="DEPRECATED! Use OneDRegisterAccessor or ScalarRegisterAccessor instead! " alt="ChimeraTK::BufferingRegisterAccessor&lt; UserType &gt;" shape="rect" coords="720,168,1070,192"/>
+<area href="class_chimera_t_k_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o..." alt="ChimeraTK::OneDRegisterAccessor&lt; UserType &gt;" shape="rect" coords="720,224,1070,248"/>
+<area href="class_chimera_t_k_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o..." alt="ChimeraTK::OneDRegisterAccessor&lt; UserType &gt;" shape="rect" coords="720,280,1070,304"/>
+<area href="class_chimera_t_k_1_1_scalar_register_accessor.html" title="Accessor class to read and write scalar registers transparently by using the accessor object like a v..." alt="ChimeraTK::ScalarRegisterAccessor&lt; UserType &gt;" shape="rect" coords="720,336,1070,360"/>
+<area href="class_chimera_t_k_1_1_scalar_register_accessor.html" title="Accessor class to read and write scalar registers transparently by using the accessor object like a v..." alt="ChimeraTK::ScalarRegisterAccessor&lt; UserType &gt;" shape="rect" coords="720,392,1070,416"/>
+<area href="class_chimera_t_k_1_1_two_d_register_accessor.html" title="TODO add documentation. " alt="ChimeraTK::TwoDRegisterAccessor&lt; UserType &gt;" shape="rect" coords="720,448,1070,472"/>
+<area href="class_chimera_t_k_1_1_two_d_register_accessor.html" title="TODO add documentation. " alt="ChimeraTK::TwoDRegisterAccessor&lt; UserType &gt;" shape="rect" coords="720,504,1070,528"/>
+<area href="class_chimera_t_k_1_1_buffering_register_accessor.html" title="DEPRECATED! Use OneDRegisterAccessor or ScalarRegisterAccessor instead! " alt="ChimeraTK::BufferingRegisterAccessor&lt; UserType &gt;" shape="rect" coords="1440,112,1790,136"/>
+<area href="class_chimera_t_k_1_1_buffering_register_accessor.html" title="DEPRECATED! Use OneDRegisterAccessor or ScalarRegisterAccessor instead! " alt="ChimeraTK::BufferingRegisterAccessor&lt; UserType &gt;" shape="rect" coords="1440,168,1790,192"/>
+<area href="class_chimera_t_k_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o..." alt="ChimeraTK::OneDRegisterAccessor&lt; UserType &gt;" shape="rect" coords="1440,224,1790,248"/>
+<area href="class_chimera_t_k_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o..." alt="ChimeraTK::OneDRegisterAccessor&lt; UserType &gt;" shape="rect" coords="1440,280,1790,304"/>
+<area href="class_chimera_t_k_1_1_scalar_register_accessor.html" title="Accessor class to read and write scalar registers transparently by using the accessor object like a v..." alt="ChimeraTK::ScalarRegisterAccessor&lt; UserType &gt;" shape="rect" coords="1440,336,1790,360"/>
+<area href="class_chimera_t_k_1_1_scalar_register_accessor.html" title="Accessor class to read and write scalar registers transparently by using the accessor object like a v..." alt="ChimeraTK::ScalarRegisterAccessor&lt; UserType &gt;" shape="rect" coords="1440,392,1790,416"/>
+<area href="class_chimera_t_k_1_1_two_d_register_accessor.html" title="TODO add documentation. " alt="ChimeraTK::TwoDRegisterAccessor&lt; UserType &gt;" shape="rect" coords="1440,448,1790,472"/>
+<area href="class_chimera_t_k_1_1_two_d_register_accessor.html" title="TODO add documentation. " alt="ChimeraTK::TwoDRegisterAccessor&lt; UserType &gt;" shape="rect" coords="1440,504,1790,528"/>
+<area href="class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html" alt="ChimeraTK::ScalarRegisterAccessor&lt; std::string &gt;" shape="rect" coords="2160,112,2510,136"/>
+<area href="class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html" alt="ChimeraTK::ScalarRegisterAccessor&lt; std::string &gt;" shape="rect" coords="2160,168,2510,192"/>
+<area href="class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html" alt="ChimeraTK::ScalarRegisterAccessor&lt; std::string &gt;" shape="rect" coords="2880,112,3230,136"/>
+<area href="class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html" alt="ChimeraTK::ScalarRegisterAccessor&lt; std::string &gt;" shape="rect" coords="2880,168,3230,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a28eaff61621c50693b307e232072ab35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a28eaff61621c50693b307e232072ab35">TransferElementAbstractor</a> ()</td></tr>
+<tr class="memdesc:a28eaff61621c50693b307e232072ab35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an uninitialised abstractor - just for late initialisation.  <a href="#a28eaff61621c50693b307e232072ab35">More...</a><br /></td></tr>
+<tr class="separator:a28eaff61621c50693b307e232072ab35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a246a12b204eb10d6b9e149afb2549766"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a246a12b204eb10d6b9e149afb2549766">getName</a> () const </td></tr>
+<tr class="memdesc:a246a12b204eb10d6b9e149afb2549766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name that identifies the process variable.  <a href="#a246a12b204eb10d6b9e149afb2549766">More...</a><br /></td></tr>
+<tr class="separator:a246a12b204eb10d6b9e149afb2549766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e4ae50e49a3c2c1d57d01ccd1fb7646"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a7e4ae50e49a3c2c1d57d01ccd1fb7646">getUnit</a> () const </td></tr>
+<tr class="memdesc:a7e4ae50e49a3c2c1d57d01ccd1fb7646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the engineering unit.  <a href="#a7e4ae50e49a3c2c1d57d01ccd1fb7646">More...</a><br /></td></tr>
+<tr class="separator:a7e4ae50e49a3c2c1d57d01ccd1fb7646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4620980fec555558603b0ad075ca2f4"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aa4620980fec555558603b0ad075ca2f4">getDescription</a> () const </td></tr>
+<tr class="memdesc:aa4620980fec555558603b0ad075ca2f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the description of this variable/register.  <a href="#aa4620980fec555558603b0ad075ca2f4">More...</a><br /></td></tr>
+<tr class="separator:aa4620980fec555558603b0ad075ca2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed09bb5d3cd43863875648631578c76"><td class="memItemLeft" align="right" valign="top">const std::type_info &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a6ed09bb5d3cd43863875648631578c76">getValueType</a> () const </td></tr>
+<tr class="memdesc:a6ed09bb5d3cd43863875648631578c76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <code>std::type_info</code> for the value type of this transfer element.  <a href="#a6ed09bb5d3cd43863875648631578c76">More...</a><br /></td></tr>
+<tr class="separator:a6ed09bb5d3cd43863875648631578c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36cbe2eae5f6663736fecea2c2302645"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a36cbe2eae5f6663736fecea2c2302645">getAccessModeFlags</a> () const </td></tr>
+<tr class="memdesc:a36cbe2eae5f6663736fecea2c2302645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> for this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#a36cbe2eae5f6663736fecea2c2302645">More...</a><br /></td></tr>
+<tr class="separator:a36cbe2eae5f6663736fecea2c2302645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66980fe7b7c0dc937361e71b1750767f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a66980fe7b7c0dc937361e71b1750767f">read</a> ()</td></tr>
+<tr class="memdesc:a66980fe7b7c0dc937361e71b1750767f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data from the device.  <a href="#a66980fe7b7c0dc937361e71b1750767f">More...</a><br /></td></tr>
+<tr class="separator:a66980fe7b7c0dc937361e71b1750767f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa96628a4ab593aff6f21d06cac6661b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aa96628a4ab593aff6f21d06cac6661b8">readNonBlocking</a> ()</td></tr>
+<tr class="memdesc:aa96628a4ab593aff6f21d06cac6661b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the next value, if available in the input buffer.  <a href="#aa96628a4ab593aff6f21d06cac6661b8">More...</a><br /></td></tr>
+<tr class="separator:aa96628a4ab593aff6f21d06cac6661b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11934cb06f61290f398e22428b26a005"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a11934cb06f61290f398e22428b26a005">readLatest</a> ()</td></tr>
+<tr class="memdesc:a11934cb06f61290f398e22428b26a005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the latest value, discarding any other update since the last read if present.  <a href="#a11934cb06f61290f398e22428b26a005">More...</a><br /></td></tr>
+<tr class="separator:a11934cb06f61290f398e22428b26a005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3990e6181ae284f48b74b6429b8b88c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a3990e6181ae284f48b74b6429b8b88c4">readAsync</a> ()</td></tr>
+<tr class="memdesc:a3990e6181ae284f48b74b6429b8b88c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the device in the background and return a future which will be fulfilled when the data is ready.  <a href="#a3990e6181ae284f48b74b6429b8b88c4">More...</a><br /></td></tr>
+<tr class="separator:a3990e6181ae284f48b74b6429b8b88c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ed367432591bd0b9ba30d419f16bcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a20ed367432591bd0b9ba30d419f16bcd">getVersionNumber</a> () const </td></tr>
+<tr class="memdesc:a20ed367432591bd0b9ba30d419f16bcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the version number that is associated with the last transfer (i.e.  <a href="#a20ed367432591bd0b9ba30d419f16bcd">More...</a><br /></td></tr>
+<tr class="separator:a20ed367432591bd0b9ba30d419f16bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281b905219e719a1a0cdbd9d8d42d1dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a281b905219e719a1a0cdbd9d8d42d1dd">write</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber={})</td></tr>
+<tr class="memdesc:a281b905219e719a1a0cdbd9d8d42d1dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data to device.  <a href="#a281b905219e719a1a0cdbd9d8d42d1dd">More...</a><br /></td></tr>
+<tr class="separator:a281b905219e719a1a0cdbd9d8d42d1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeaa3b3a6ae81b2b08e65dd61290655c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aeeaa3b3a6ae81b2b08e65dd61290655c">isReadOnly</a> () const </td></tr>
+<tr class="memdesc:aeeaa3b3a6ae81b2b08e65dd61290655c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transfer element is read only, i.e.  <a href="#aeeaa3b3a6ae81b2b08e65dd61290655c">More...</a><br /></td></tr>
+<tr class="separator:aeeaa3b3a6ae81b2b08e65dd61290655c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae269d613050c9d6eee1c4fcf87a27941"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#ae269d613050c9d6eee1c4fcf87a27941">isReadable</a> () const </td></tr>
+<tr class="memdesc:ae269d613050c9d6eee1c4fcf87a27941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transfer element is readable.  <a href="#ae269d613050c9d6eee1c4fcf87a27941">More...</a><br /></td></tr>
+<tr class="separator:ae269d613050c9d6eee1c4fcf87a27941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae59aac230a9c5fa8e4c63de5f46989e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#ae59aac230a9c5fa8e4c63de5f46989e7">isWriteable</a> () const </td></tr>
+<tr class="memdesc:ae59aac230a9c5fa8e4c63de5f46989e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transfer element is writeable.  <a href="#ae59aac230a9c5fa8e4c63de5f46989e7">More...</a><br /></td></tr>
+<tr class="separator:ae59aac230a9c5fa8e4c63de5f46989e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5402281c7879574e52d4a4d8e35b5d9f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a5402281c7879574e52d4a4d8e35b5d9f">getHardwareAccessingElements</a> ()</td></tr>
+<tr class="memdesc:a5402281c7879574e52d4a4d8e35b5d9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the underlying TransferElements with actual hardware access.  <a href="#a5402281c7879574e52d4a4d8e35b5d9f">More...</a><br /></td></tr>
+<tr class="separator:a5402281c7879574e52d4a4d8e35b5d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08fb33daf7bacf254cb664d20aea2d2b"><td class="memItemLeft" align="right" valign="top">std::list&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a08fb33daf7bacf254cb664d20aea2d2b">getInternalElements</a> ()</td></tr>
+<tr class="memdesc:a08fb33daf7bacf254cb664d20aea2d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the full list of TransferElements internally used by this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#a08fb33daf7bacf254cb664d20aea2d2b">More...</a><br /></td></tr>
+<tr class="separator:a08fb33daf7bacf254cb664d20aea2d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa171eea3cb1539fa1370753f5004df8a"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aa171eea3cb1539fa1370753f5004df8a">getHighLevelImplElement</a> ()</td></tr>
+<tr class="memdesc:aa171eea3cb1539fa1370753f5004df8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the highest level implementation <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#aa171eea3cb1539fa1370753f5004df8a">More...</a><br /></td></tr>
+<tr class="separator:aa171eea3cb1539fa1370753f5004df8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a689e9b7e345c6c306f1c225b38f14b81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a689e9b7e345c6c306f1c225b38f14b81">isInitialised</a> () const </td></tr>
+<tr class="memdesc:a689e9b7e345c6c306f1c225b38f14b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if the accessor is properly initialised.  <a href="#a689e9b7e345c6c306f1c225b38f14b81">More...</a><br /></td></tr>
+<tr class="separator:a689e9b7e345c6c306f1c225b38f14b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67bef82a23eb01b2e9f20de95ca0a75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aa67bef82a23eb01b2e9f20de95ca0a75">replace</a> (const <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html">TransferElementAbstractor</a> &amp;newAccessor)</td></tr>
+<tr class="memdesc:aa67bef82a23eb01b2e9f20de95ca0a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a new accessor to this <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html" title="Base class for register accessors abstractors independent of the UserType. ">TransferElementAbstractor</a>.  <a href="#aa67bef82a23eb01b2e9f20de95ca0a75">More...</a><br /></td></tr>
+<tr class="separator:aa67bef82a23eb01b2e9f20de95ca0a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a21c83adc1ea35f76989a98ef1213a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#ae4a21c83adc1ea35f76989a98ef1213a">replace</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; newImpl)</td></tr>
+<tr class="memdesc:ae4a21c83adc1ea35f76989a98ef1213a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternative signature of relace() with the same functionality, used when a pointer to the implementation has been obtained directly (instead of a <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html" title="Base class for register accessors abstractors independent of the UserType. ">TransferElementAbstractor</a>).  <a href="#ae4a21c83adc1ea35f76989a98ef1213a">More...</a><br /></td></tr>
+<tr class="separator:ae4a21c83adc1ea35f76989a98ef1213a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19754dfcd367d6b178e782d3fc490a85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a19754dfcd367d6b178e782d3fc490a85">replaceTransferElement</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; newElement)</td></tr>
+<tr class="memdesc:a19754dfcd367d6b178e782d3fc490a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for all underlying TransferElements which are considered identicel (see mayReplaceOther()) with the given <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#a19754dfcd367d6b178e782d3fc490a85">More...</a><br /></td></tr>
+<tr class="separator:a19754dfcd367d6b178e782d3fc490a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781f771e098890bc458ea65e24cea376"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a781f771e098890bc458ea65e24cea376">setPersistentDataStorage</a> (boost::shared_ptr&lt; ChimeraTK::PersistentDataStorage &gt; storage)</td></tr>
+<tr class="memdesc:a781f771e098890bc458ea65e24cea376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate a persistent data storage object to be updated on each write operation of this ProcessArray.  <a href="#a781f771e098890bc458ea65e24cea376">More...</a><br /></td></tr>
+<tr class="separator:a781f771e098890bc458ea65e24cea376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1dc2df8bce02f4bd887a0a0a1af54a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a0f1dc2df8bce02f4bd887a0a0a1af54a">getId</a> () const </td></tr>
+<tr class="memdesc:a0f1dc2df8bce02f4bd887a0a0a1af54a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain unique ID for the actual implementation of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#a0f1dc2df8bce02f4bd887a0a0a1af54a">More...</a><br /></td></tr>
+<tr class="separator:a0f1dc2df8bce02f4bd887a0a0a1af54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90726f6d4ebc3d3d0145f43098bff8bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a90726f6d4ebc3d3d0145f43098bff8bc">transferFutureWaitCallback</a> ()</td></tr>
+<tr class="memdesc:a90726f6d4ebc3d3d0145f43098bff8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> before entering a potentially blocking wait().  <a href="#a90726f6d4ebc3d3d0145f43098bff8bc">More...</a><br /></td></tr>
+<tr class="separator:a90726f6d4ebc3d3d0145f43098bff8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28eaff61621c50693b307e232072ab35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a28eaff61621c50693b307e232072ab35">TransferElementAbstractor</a> ()</td></tr>
 <tr class="memdesc:a28eaff61621c50693b307e232072ab35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an uninitialised abstractor - just for late initialisation.  <a href="#a28eaff61621c50693b307e232072ab35">More...</a><br /></td></tr>
 <tr class="separator:a28eaff61621c50693b307e232072ab35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,6 +296,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5fc3bd8768619d4f4625842b82ecdf2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a5fc3bd8768619d4f4625842b82ecdf2f">TransferElementAbstractor</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; impl)</td></tr>
 <tr class="memdesc:a5fc3bd8768619d4f4625842b82ecdf2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> implementation.  <a href="#a5fc3bd8768619d4f4625842b82ecdf2f">More...</a><br /></td></tr>
 <tr class="separator:a5fc3bd8768619d4f4625842b82ecdf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fc3bd8768619d4f4625842b82ecdf2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a5fc3bd8768619d4f4625842b82ecdf2f">TransferElementAbstractor</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; impl)</td></tr>
+<tr class="memdesc:a5fc3bd8768619d4f4625842b82ecdf2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> implementation.  <a href="#a5fc3bd8768619d4f4625842b82ecdf2f">More...</a><br /></td></tr>
+<tr class="separator:a5fc3bd8768619d4f4625842b82ecdf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -214,8 +309,63 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for register accessors abstractors independent of the UserType. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00043">43</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00043">43</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a28eaff61621c50693b307e232072ab35"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::TransferElementAbstractor::TransferElementAbstractor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an uninitialised abstractor - just for late initialisation. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00048">48</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5fc3bd8768619d4f4625842b82ecdf2f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::TransferElementAbstractor::TransferElementAbstractor </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt;&#160;</td>
+          <td class="paramname"><em>impl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> implementation. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00249">249</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a28eaff61621c50693b307e232072ab35"></a>
 <div class="memitem">
 <div class="memproto">
@@ -295,7 +445,61 @@ Protected Attributes</h2></td></tr>
 
 <p>Return the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> for this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
 
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00064">64</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36cbe2eae5f6663736fecea2c2302645"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> ChimeraTK::TransferElementAbstractor::getAccessModeFlags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> for this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
+
 <p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00064">64</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4620980fec555558603b0ad075ca2f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; ChimeraTK::TransferElementAbstractor::getDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the description of this variable/register. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00057">57</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -355,6 +559,64 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5402281c7879574e52d4a4d8e35b5d9f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a>&gt; &gt; ChimeraTK::TransferElementAbstractor::getHardwareAccessingElements </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the underlying TransferElements with actual hardware access. </p>
+<p>If this transfer element is directly reading from / writing to the hardware, it will return a list just containing a shared pointer of itself.</p>
+<p>Note: Avoid using this in application code, since it will break the abstraction! </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00144">144</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa171eea3cb1539fa1370753f5004df8a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a>&gt; ChimeraTK::TransferElementAbstractor::getHighLevelImplElement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the highest level implementation <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
+<p>For TransferElements which are itself an implementation this will directly return a shared pointer to this. If this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> is a user frontend, the pointer to the internal implementation is returned.</p>
+<p>Note: Avoid using this in application code, since it will break the abstraction! </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00175">175</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa171eea3cb1539fa1370753f5004df8a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -408,7 +670,66 @@ Protected Attributes</h2></td></tr>
 <p>Obtain unique ID for the actual implementation of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
 <p>This means that e.g. two instances of <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html" title="Accessor class to read and write scalar registers transparently by using the accessor object like a v...">ScalarRegisterAccessor</a> created by the same call to <a class="el" href="class_chimera_t_k_1_1_device.html#a37f85f4e0a786ee59f39d949d4cce562" title="Get a ScalarRegisterObject object for the given register. ">Device::getScalarRegisterAccessor()</a> (e.g. by copying the accessor to another using NDRegisterAccessorBridge::replace()) will have the same ID, while two instances obtained by to difference calls to <a class="el" href="class_chimera_t_k_1_1_device.html#a37f85f4e0a786ee59f39d949d4cce562" title="Get a ScalarRegisterObject object for the given register. ">Device::getScalarRegisterAccessor()</a> will have a different ID even when accessing the very same register. </p>
 
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00233">233</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f1dc2df8bce02f4bd887a0a0a1af54a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a> ChimeraTK::TransferElementAbstractor::getId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain unique ID for the actual implementation of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
+<p>This means that e.g. two instances of <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html" title="Accessor class to read and write scalar registers transparently by using the accessor object like a v...">ScalarRegisterAccessor</a> created by the same call to <a class="el" href="class_chimera_t_k_1_1_device.html#a37f85f4e0a786ee59f39d949d4cce562" title="Get a ScalarRegisterObject object for the given register. ">Device::getScalarRegisterAccessor()</a> (e.g. by copying the accessor to another using NDRegisterAccessorBridge::replace()) will have the same ID, while two instances obtained by to difference calls to <a class="el" href="class_chimera_t_k_1_1_device.html#a37f85f4e0a786ee59f39d949d4cce562" title="Get a ScalarRegisterObject object for the given register. ">Device::getScalarRegisterAccessor()</a> will have a different ID even when accessing the very same register. </p>
+
 <p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00233">233</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a08fb33daf7bacf254cb664d20aea2d2b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt; boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a>&gt; &gt; ChimeraTK::TransferElementAbstractor::getInternalElements </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain the full list of TransferElements internally used by this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
+<p>The function is recursive, i.e. elements used by the elements returned by this function are also added to the list. It is guaranteed that the directly used elements are first in the list and the result from recursion is appended to the list.</p>
+<p>Example: A decorator would return a list with its target <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> followed by the result of <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a08fb33daf7bacf254cb664d20aea2d2b" title="Obtain the full list of TransferElements internally used by this TransferElement. ...">getInternalElements()</a> called on its target <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.</p>
+<p>If this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> is not using any other element, it should return an empty vector. Thus those elements which return a list just containing themselves in <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a5402281c7879574e52d4a4d8e35b5d9f" title="Obtain the underlying TransferElements with actual hardware access. ">getHardwareAccessingElements()</a> will return an empty list here in <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a08fb33daf7bacf254cb664d20aea2d2b" title="Obtain the full list of TransferElements internally used by this TransferElement. ...">getInternalElements()</a>.</p>
+<p>Note: Avoid using this in application code, since it will break the abstraction! </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00162">162</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -470,6 +791,61 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a246a12b204eb10d6b9e149afb2549766"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; ChimeraTK::TransferElementAbstractor::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the name that identifies the process variable. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00051">51</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e4ae50e49a3c2c1d57d01ccd1fb7646"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; ChimeraTK::TransferElementAbstractor::getUnit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the engineering unit. </p>
+<p>If none was specified, it will default to "n./a." </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00054">54</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a7e4ae50e49a3c2c1d57d01ccd1fb7646"></a>
 <div class="memitem">
 <div class="memproto">
@@ -495,6 +871,34 @@ Protected Attributes</h2></td></tr>
 <p>If none was specified, it will default to "n./a." </p>
 
 <p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00054">54</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ed09bb5d3cd43863875648631578c76"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::type_info&amp; ChimeraTK::TransferElementAbstractor::getValueType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the <code>std::type_info</code> for the value type of this transfer element. </p>
+<p>This can be used to determine the type at runtime. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00061">61</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -554,6 +958,62 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a20ed367432591bd0b9ba30d419f16bcd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> ChimeraTK::TransferElementAbstractor::getVersionNumber </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the version number that is associated with the last transfer (i.e. </p>
+<p>last read or write). See <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">ChimeraTK::VersionNumber</a> for details. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00120">120</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a689e9b7e345c6c306f1c225b38f14b81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::TransferElementAbstractor::isInitialised </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return if the accessor is properly initialised. </p>
+<p>It is initialised if it was constructed passing the pointer to an implementation (a <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor. ">NDRegisterAccessor</a>), it is not initialised if it was constructed only using the placeholder constructor without arguments. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00180">180</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a689e9b7e345c6c306f1c225b38f14b81"></a>
 <div class="memitem">
 <div class="memproto">
@@ -607,6 +1067,62 @@ Protected Attributes</h2></td></tr>
 <p>It throws an acception if you try to read and <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#ae269d613050c9d6eee1c4fcf87a27941" title="Check if transfer element is readable. ">isReadable()</a> is not true. </p>
 
 <p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00131">131</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae269d613050c9d6eee1c4fcf87a27941"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::TransferElementAbstractor::isReadable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if transfer element is readable. </p>
+<p>It throws an acception if you try to read and <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#ae269d613050c9d6eee1c4fcf87a27941" title="Check if transfer element is readable. ">isReadable()</a> is not true. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00131">131</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeeaa3b3a6ae81b2b08e65dd61290655c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::TransferElementAbstractor::isReadOnly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if transfer element is read only, i.e. </p>
+<p>it is readable but not writeable. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00127">127</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -666,6 +1182,34 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae59aac230a9c5fa8e4c63de5f46989e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::TransferElementAbstractor::isWriteable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if transfer element is writeable. </p>
+<p>It throws an acception if you try to write and <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#ae59aac230a9c5fa8e4c63de5f46989e7" title="Check if transfer element is writeable. ">isWriteable()</a> is not true. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00135">135</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a66980fe7b7c0dc937361e71b1750767f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -691,6 +1235,34 @@ Protected Attributes</h2></td></tr>
 <p>If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> was set, this function will block until new data has arrived. Otherwise it still might block for a short time until the data transfer was complete. </p>
 
 <p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00068">68</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a66980fe7b7c0dc937361e71b1750767f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::TransferElementAbstractor::read </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read the data from the device. </p>
+<p>If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> was set, this function will block until new data has arrived. Otherwise it still might block for a short time until the data transfer was complete. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00068">68</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -727,6 +1299,39 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3990e6181ae284f48b74b6429b8b88c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a> ChimeraTK::TransferElementAbstractor::readAsync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read data from the device in the background and return a future which will be fulfilled when the data is ready. </p>
+<p>When the future is fulfilled, the transfer element will already contain the new data, there is no need to call <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a66980fe7b7c0dc937361e71b1750767f" title="Read the data from the device. ">read()</a> or <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aa96628a4ab593aff6f21d06cac6661b8" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a> (which would trigger another data transfer).</p>
+<p>It is allowed to call this function multiple times, which will return the same (shared) future until it is fulfilled. If other read functions (like <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a66980fe7b7c0dc937361e71b1750767f" title="Read the data from the device. ">read()</a> or <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aa96628a4ab593aff6f21d06cac6661b8" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>) are called before the future previously returned by this function was fulfilled, that call will be equivalent to the respective call on the future (i.e. <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#ac69099e41046c798d94c8289c335574d" title="Block the current thread until the new data has arrived. ">TransferFuture::wait()</a> resp. <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a710abb76e96232132a9ace5bf6135e37" title="Check if new data has arrived. ">TransferFuture::hasNewData()</a>) and thus the future will hae been used afterwards.</p>
+<p>The future will be fulfilled at the time when normally <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a66980fe7b7c0dc937361e71b1750767f" title="Read the data from the device. ">read()</a> would return. A call to this function is roughly logically equivalent to: boost::async( boost::bind(&amp;TransferElement::read, this) ); (Although such implementation would disallow accessing the user data buffer until the future is fulfilled, which is not the case for this function.)</p>
+<p>Design note: A special type of future has to be returned to allow an abstraction from the implementation details of the backend. This allows - depending on the backend type - a more efficient implementation without launching a thread.</p>
+<p>Note for implementations: Inside this function and before launching the actual transfer, the flag readTransactionInProgress must be cleared, then preRead() has to be called. Otherwise postRead() will not get executed after the transfer. postRead() on the other hand must not be called inside this function, since this would update the user buffer, which should only happen when waiting on the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a>. <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#ac69099e41046c798d94c8289c335574d" title="Block the current thread until the new data has arrived. ">TransferFuture::wait()</a> will automatically call postRead() before returning. Decorators must also call preRead() in their implementations of <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a3990e6181ae284f48b74b6429b8b88c4" title="Read data from the device in the background and return a future which will be fulfilled when the data...">readAsync()</a>!</p>
+<p>Note: This feature is still experimental. Expect API changes without notice! </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00114">114</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a11934cb06f61290f398e22428b26a005"></a>
 <div class="memitem">
 <div class="memproto">
@@ -752,6 +1357,34 @@ Protected Attributes</h2></td></tr>
 <p>Otherwise this function is identical to <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aa96628a4ab593aff6f21d06cac6661b8" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>, i.e. it will never wait for new values and it will return whether a new value was available if <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> is set. </p>
 
 <p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00084">84</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a11934cb06f61290f398e22428b26a005"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::TransferElementAbstractor::readLatest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read the latest value, discarding any other update since the last read if present. </p>
+<p>Otherwise this function is identical to <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aa96628a4ab593aff6f21d06cac6661b8" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>, i.e. it will never wait for new values and it will return whether a new value was available if <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> is set. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00084">84</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -784,6 +1417,64 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa96628a4ab593aff6f21d06cac6661b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::TransferElementAbstractor::readNonBlocking </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read the next value, if available in the input buffer. </p>
+<p>If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> was set, this function returns immediately and the return value indicated if a new value was available (<code>true</code>) or not (<code>false</code>).</p>
+<p>If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> was not set, this function is identical to <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a66980fe7b7c0dc937361e71b1750767f" title="Read the data from the device. ">read()</a>, which will still return quickly. Depending on the actual transfer implementation, the backend might need to transfer data to obtain the current value before returning. Also this function is not guaranteed to be lock free. The return value will be always true in this mode. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00079">79</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa67bef82a23eb01b2e9f20de95ca0a75"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::TransferElementAbstractor::replace </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html">TransferElementAbstractor</a> &amp;&#160;</td>
+          <td class="paramname"><em>newAccessor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assign a new accessor to this <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html" title="Base class for register accessors abstractors independent of the UserType. ">TransferElementAbstractor</a>. </p>
+<p>Since another <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html" title="Base class for register accessors abstractors independent of the UserType. ">TransferElementAbstractor</a> is passed as argument, both <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html" title="Base class for register accessors abstractors independent of the UserType. ">TransferElementAbstractor</a> will then point to the same accessor and thus are sharing the same buffer. To obtain a new copy of the accessor with a distinct buffer, the corresponding getXXRegisterAccessor() function of <a class="el" href="class_chimera_t_k_1_1_device.html" title="Class allows to read/write registers from device. ">Device</a> must be called. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00188">188</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa67bef82a23eb01b2e9f20de95ca0a75"></a>
 <div class="memitem">
 <div class="memproto">
@@ -810,6 +1501,34 @@ Protected Attributes</h2></td></tr>
 <p>Since another <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html" title="Base class for register accessors abstractors independent of the UserType. ">TransferElementAbstractor</a> is passed as argument, both <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html" title="Base class for register accessors abstractors independent of the UserType. ">TransferElementAbstractor</a> will then point to the same accessor and thus are sharing the same buffer. To obtain a new copy of the accessor with a distinct buffer, the corresponding getXXRegisterAccessor() function of <a class="el" href="class_chimera_t_k_1_1_device.html" title="Class allows to read/write registers from device. ">Device</a> must be called. </p>
 
 <p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00188">188</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4a21c83adc1ea35f76989a98ef1213a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::TransferElementAbstractor::replace </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt;&#160;</td>
+          <td class="paramname"><em>newImpl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Alternative signature of relace() with the same functionality, used when a pointer to the implementation has been obtained directly (instead of a <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html" title="Base class for register accessors abstractors independent of the UserType. ">TransferElementAbstractor</a>). </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00194">194</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -870,6 +1589,35 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a19754dfcd367d6b178e782d3fc490a85"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::TransferElementAbstractor::replaceTransferElement </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt;&#160;</td>
+          <td class="paramname"><em>newElement</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Search for all underlying TransferElements which are considered identicel (see mayReplaceOther()) with the given <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
+<p>These TransferElements are then replaced with the new element. If no underlying element matches the new element, this function has no effect. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00203">203</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a781f771e098890bc458ea65e24cea376"></a>
 <div class="memitem">
 <div class="memproto">
@@ -894,7 +1642,37 @@ Protected Attributes</h2></td></tr>
 
 <p>Associate a persistent data storage object to be updated on each write operation of this ProcessArray. </p>
 <p>If no persistent data storage as associated previously, the value from the persistent storage is read and send to the receiver.</p>
-<p>Note: A call to this function will be ignored, if the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> does not support persistent data storage (e.g. read-only variables or device registers)</p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000063">Todo:</a></b></dt><dd>TODO does this make sense? </dd></dl>
+<p>Note: A call to this function will be ignored, if the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> does not support persistent data storage (e.g. read-only variables or device registers)</p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000067">Todo:</a></b></dt><dd>TODO does this make sense? </dd></dl>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00222">222</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a781f771e098890bc458ea65e24cea376"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::TransferElementAbstractor::setPersistentDataStorage </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::PersistentDataStorage &gt;&#160;</td>
+          <td class="paramname"><em>storage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Associate a persistent data storage object to be updated on each write operation of this ProcessArray. </p>
+<p>If no persistent data storage as associated previously, the value from the persistent storage is read and send to the receiver.</p>
+<p>Note: A call to this function will be ignored, if the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> does not support persistent data storage (e.g. read-only variables or device registers)</p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000130">Todo:</a></b></dt><dd>TODO does this make sense? </dd></dl>
 
 <p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00222">222</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
@@ -925,6 +1703,63 @@ Protected Attributes</h2></td></tr>
 <p>In contrast to a wait callback of a boost::future/promise, this function is not called when just checking whether the result is ready or not. Usually it is not necessary to implement this function, but decorators should pass it on. One use case is the ApplicationCore TestDecoratorRegisterAccessor, which needs to be informed before blocking the thread execution. Note: The <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers...">ReadAnyGroup</a> will trigger a call to this function of the first <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> with <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> in the group before potentially blocking. </p>
 
 <p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00242">242</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a90726f6d4ebc3d3d0145f43098bff8bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::TransferElementAbstractor::transferFutureWaitCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function called by the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> before entering a potentially blocking wait(). </p>
+<p>In contrast to a wait callback of a boost::future/promise, this function is not called when just checking whether the result is ready or not. Usually it is not necessary to implement this function, but decorators should pass it on. One use case is the ApplicationCore TestDecoratorRegisterAccessor, which needs to be informed before blocking the thread execution. Note: The <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers...">ReadAnyGroup</a> will trigger a call to this function of the first <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> with <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> in the group before potentially blocking. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00242">242</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a281b905219e719a1a0cdbd9d8d42d1dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::TransferElementAbstractor::write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a>&#160;</td>
+          <td class="paramname"><em>versionNumber</em> = <code>{}</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write the data to device. </p>
+<p>The return value is true, old data was lost on the write transfer (e.g. due to an buffer overflow). In case of an unbuffered write transfer, the return value will always be false. </p>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00124">124</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -978,17 +1813,17 @@ Protected Attributes</h2></td></tr>
 
 <p>Untyped pointer to implementation. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00254">254</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html#l00254">254</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/device/include/<a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a></li>
+<li>include/ChimeraTK/<a class="el" href="build_2include_2_chimera_t_k_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 14 2018 07:53:33 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 15 2018 07:53:21 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

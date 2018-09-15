@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['instantiate_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes',['INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES',['../util_2include_2_supported_user_types_8h.html#abe698a21f62a02296a12b08433b980dc',1,'SupportedUserTypes.h']]],
-  ['ioctrl_5fall',['IOCTRL_ALL',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a1dc1215c881918ae78af0f20713b05a5',1,'pciedev_io.h']]],
-  ['ioctrl_5fr',['IOCTRL_R',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a314ade3cefcb60fbf18f80c8eba4b54c',1,'pciedev_io.h']]],
-  ['ioctrl_5fw',['IOCTRL_W',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a35ef23c334a9de2bfddddf640577d972',1,'pciedev_io.h']]]
+  ['fill_5fvirtual_5ffunction_5ftemplate_5fvtable',['FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE',['../build_2include_2_chimera_t_k_2_virtual_function_template_8h.html#ab5e6eeda5f812bf87b6da853d103ee37',1,'FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE():&#160;VirtualFunctionTemplate.h'],['../util_2include_2_virtual_function_template_8h.html#ab5e6eeda5f812bf87b6da853d103ee37',1,'FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE():&#160;VirtualFunctionTemplate.h']]],
+  ['fill_5fvirtual_5ffunction_5ftemplate_5fvtable_5fstandalone',['FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_STANDALONE',['../build_2include_2_chimera_t_k_2_virtual_function_template_8h.html#a9cfaa4375c315e463c69a4f05bb90d94',1,'FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_STANDALONE():&#160;VirtualFunctionTemplate.h'],['../util_2include_2_virtual_function_template_8h.html#a9cfaa4375c315e463c69a4f05bb90d94',1,'FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_STANDALONE():&#160;VirtualFunctionTemplate.h']]],
+  ['firmware_5fregister_5fstring',['FIRMWARE_REGISTER_STRING',['../test_dummy_backend_8cpp.html#a06ef23872fb6ac510c609f042ba577f6',1,'testDummyBackend.cpp']]]
 ];

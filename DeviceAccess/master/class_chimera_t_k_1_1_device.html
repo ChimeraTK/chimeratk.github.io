@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>mtca4u-deviceaccess: ChimeraTK::Device Class Reference</title>
+<title>ChimeraTK-DeviceAccess: ChimeraTK::Device Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">mtca4u-deviceaccess
+   <div id="projectname">ChimeraTK-DeviceAccess
    </div>
   </td>
  </tr>
@@ -104,10 +104,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Class allows to read/write registers from device.  
  <a href="class_chimera_t_k_1_1_device.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for ChimeraTK::Device:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_chimera_t_k_1_1_device.png" usemap="#ChimeraTK::Device_map" alt=""/>
+  <map id="ChimeraTK::Device_map" name="ChimeraTK::Device_map">
+<area href="class_testable_device.html" alt="TestableDevice" shape="rect" coords="0,56,120,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:ad49ec7cc7fa3d57fad993363005b727a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_chimera_t_k_1_1_register_accessor.html">ChimeraTK::RegisterAccessor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#ad49ec7cc7fa3d57fad993363005b727a">RegisterAccessor</a></td></tr>
+<tr class="memdesc:ad49ec7cc7fa3d57fad993363005b727a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#ad49ec7cc7fa3d57fad993363005b727a">More...</a><br /></td></tr>
+<tr class="separator:ad49ec7cc7fa3d57fad993363005b727a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad49ec7cc7fa3d57fad993363005b727a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_chimera_t_k_1_1_register_accessor.html">ChimeraTK::RegisterAccessor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#ad49ec7cc7fa3d57fad993363005b727a">RegisterAccessor</a></td></tr>
 <tr class="memdesc:ad49ec7cc7fa3d57fad993363005b727a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#ad49ec7cc7fa3d57fad993363005b727a">More...</a><br /></td></tr>
 <tr class="separator:ad49ec7cc7fa3d57fad993363005b727a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,16 +271,163 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a087acaa19ad7fcd3f117dbb19db73ef4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a087acaa19ad7fcd3f117dbb19db73ef4">writeDMA</a> (const std::string &amp;regName, const std::string &amp;regModule, int32_t const *data, size_t dataSize=0, uint32_t addRegOffset=0)</td></tr>
 <tr class="memdesc:a087acaa19ad7fcd3f117dbb19db73ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a087acaa19ad7fcd3f117dbb19db73ef4">More...</a><br /></td></tr>
 <tr class="separator:a087acaa19ad7fcd3f117dbb19db73ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6afc217b5a643f4c5a00a217b918b5e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#ad6afc217b5a643f4c5a00a217b918b5e">~Device</a> ()</td></tr>
+<tr class="memdesc:ad6afc217b5a643f4c5a00a217b918b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ad6afc217b5a643f4c5a00a217b918b5e">More...</a><br /></td></tr>
+<tr class="separator:ad6afc217b5a643f4c5a00a217b918b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c8559ecd6a1adbc7054e0aefb4b853e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a7c8559ecd6a1adbc7054e0aefb4b853e">open</a> (std::string const &amp;aliasName)</td></tr>
+<tr class="memdesc:a7c8559ecd6a1adbc7054e0aefb4b853e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a device by the given alias name from the DMAP file.  <a href="#a7c8559ecd6a1adbc7054e0aefb4b853e">More...</a><br /></td></tr>
+<tr class="separator:a7c8559ecd6a1adbc7054e0aefb4b853e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb4f1a54a66a66fe793ec45b7728264"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a2eb4f1a54a66a66fe793ec45b7728264">open</a> ()</td></tr>
+<tr class="memdesc:a2eb4f1a54a66a66fe793ec45b7728264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-open the device after previously closeing it by calling <a class="el" href="class_chimera_t_k_1_1_device.html#a20ffe09ba19304ce65b85eacee93b01d" title="Close the device. ">close()</a>.  <a href="#a2eb4f1a54a66a66fe793ec45b7728264">More...</a><br /></td></tr>
+<tr class="separator:a2eb4f1a54a66a66fe793ec45b7728264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a883f25c31108556921717206de3dc270"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a883f25c31108556921717206de3dc270">close</a> ()</td></tr>
+<tr class="memdesc:a883f25c31108556921717206de3dc270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the device.  <a href="#a883f25c31108556921717206de3dc270">More...</a><br /></td></tr>
+<tr class="separator:a883f25c31108556921717206de3dc270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad54811a89e27e93be63471b25f42da10"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:ad54811a89e27e93be63471b25f42da10"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ScalarRegisterAccessor</a>&lt; UserType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#ad54811a89e27e93be63471b25f42da10">getScalarRegisterAccessor</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t wordOffsetInRegister=0, const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;flags=<a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({})) const </td></tr>
+<tr class="memdesc:ad54811a89e27e93be63471b25f42da10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a ScalarRegisterObject object for the given register.  <a href="#ad54811a89e27e93be63471b25f42da10">More...</a><br /></td></tr>
+<tr class="separator:ad54811a89e27e93be63471b25f42da10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd225e94a23d7c7e991b245d4212f0d"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:afbd225e94a23d7c7e991b245d4212f0d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">OneDRegisterAccessor</a>&lt; UserType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#afbd225e94a23d7c7e991b245d4212f0d">getOneDRegisterAccessor</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords=0, size_t wordOffsetInRegister=0, const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;flags=<a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({})) const </td></tr>
+<tr class="memdesc:afbd225e94a23d7c7e991b245d4212f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o...">OneDRegisterAccessor</a> object for the given register.  <a href="#afbd225e94a23d7c7e991b245d4212f0d">More...</a><br /></td></tr>
+<tr class="separator:afbd225e94a23d7c7e991b245d4212f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d1aae28a085c28d389057cbd074d36"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a02d1aae28a085c28d389057cbd074d36"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html">TwoDRegisterAccessor</a>&lt; UserType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a02d1aae28a085c28d389057cbd074d36">getTwoDRegisterAccessor</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfElements=0, size_t elementsOffset=0, const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;flags=<a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({})) const </td></tr>
+<tr class="memdesc:a02d1aae28a085c28d389057cbd074d36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html" title="TODO add documentation. ">TwoDRegisterAccessor</a> object for the given register.  <a href="#a02d1aae28a085c28d389057cbd074d36">More...</a><br /></td></tr>
+<tr class="separator:a02d1aae28a085c28d389057cbd074d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2de8103b82f681c210afb5da709e82ac"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_chimera_t_k_1_1_register_catalogue.html">RegisterCatalogue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a2de8103b82f681c210afb5da709e82ac">getRegisterCatalogue</a> () const </td></tr>
+<tr class="memdesc:a2de8103b82f681c210afb5da709e82ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the register catalogue with detailed information on all registers.  <a href="#a2de8103b82f681c210afb5da709e82ac">More...</a><br /></td></tr>
+<tr class="separator:a2de8103b82f681c210afb5da709e82ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8beccc379afd3e5e61bad00d942b5d4f"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a8beccc379afd3e5e61bad00d942b5d4f">readDeviceInfo</a> () const </td></tr>
+<tr class="memdesc:a8beccc379afd3e5e61bad00d942b5d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a device information string.  <a href="#a8beccc379afd3e5e61bad00d942b5d4f">More...</a><br /></td></tr>
+<tr class="separator:a8beccc379afd3e5e61bad00d942b5d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d82269c54988b73108da0c4463841eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a1d82269c54988b73108da0c4463841eb">isOpened</a> () const </td></tr>
+<tr class="memdesc:a1d82269c54988b73108da0c4463841eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the device is currently opened.  <a href="#a1d82269c54988b73108da0c4463841eb">More...</a><br /></td></tr>
+<tr class="separator:a1d82269c54988b73108da0c4463841eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa6d28ee5a90095b7c6e50b30e7dedb"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a9fa6d28ee5a90095b7c6e50b30e7dedb"><td class="memTemplItemLeft" align="right" valign="top">UserType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a9fa6d28ee5a90095b7c6e50b30e7dedb">read</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;flags=<a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({})) const </td></tr>
+<tr class="memdesc:a9fa6d28ee5a90095b7c6e50b30e7dedb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>Inefficient convenience function</b> to read a single-word register without obtaining an accessor.  <a href="#a9fa6d28ee5a90095b7c6e50b30e7dedb">More...</a><br /></td></tr>
+<tr class="separator:a9fa6d28ee5a90095b7c6e50b30e7dedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10d1325c1e4f4e6b2a793e7b847dd001"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a10d1325c1e4f4e6b2a793e7b847dd001"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; UserType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a10d1325c1e4f4e6b2a793e7b847dd001">read</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister=0, const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;flags=<a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({})) const </td></tr>
+<tr class="memdesc:a10d1325c1e4f4e6b2a793e7b847dd001"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>Inefficient convenience function</b> to read a multi-word register without obtaining an accessor.  <a href="#a10d1325c1e4f4e6b2a793e7b847dd001">More...</a><br /></td></tr>
+<tr class="separator:a10d1325c1e4f4e6b2a793e7b847dd001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff70dfe5a22e63aa63a42a06c9cec619"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:aff70dfe5a22e63aa63a42a06c9cec619"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#aff70dfe5a22e63aa63a42a06c9cec619">write</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, UserType value, const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;flags=<a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({}))</td></tr>
+<tr class="memdesc:aff70dfe5a22e63aa63a42a06c9cec619"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>Inefficient convenience function</b> to write a single-word register without obtaining an accessor.  <a href="#aff70dfe5a22e63aa63a42a06c9cec619">More...</a><br /></td></tr>
+<tr class="separator:aff70dfe5a22e63aa63a42a06c9cec619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad91fd3a782bf1f06dc0f2a92fa6ec2"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a2ad91fd3a782bf1f06dc0f2a92fa6ec2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a2ad91fd3a782bf1f06dc0f2a92fa6ec2">write</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, const std::vector&lt; UserType &gt; &amp;vector, size_t wordOffsetInRegister=0, const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;flags=<a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({}))</td></tr>
+<tr class="memdesc:a2ad91fd3a782bf1f06dc0f2a92fa6ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>Inefficient convenience function</b> to write a multi-word register without obtaining an accessor.  <a href="#a2ad91fd3a782bf1f06dc0f2a92fa6ec2">More...</a><br /></td></tr>
+<tr class="separator:a2ad91fd3a782bf1f06dc0f2a92fa6ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2e1fc0b4dcf19738840aeecfec3efb"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a7b2e1fc0b4dcf19738840aeecfec3efb"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; UserType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a7b2e1fc0b4dcf19738840aeecfec3efb">read</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, bool enforceRawAccess) const </td></tr>
+<tr class="memdesc:a7b2e1fc0b4dcf19738840aeecfec3efb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a7b2e1fc0b4dcf19738840aeecfec3efb">More...</a><br /></td></tr>
+<tr class="separator:a7b2e1fc0b4dcf19738840aeecfec3efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89118c55d88397a507e9cda2c5eaafe3"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a89118c55d88397a507e9cda2c5eaafe3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a89118c55d88397a507e9cda2c5eaafe3">write</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, UserType value, bool enforceRawAccess)</td></tr>
+<tr class="memdesc:a89118c55d88397a507e9cda2c5eaafe3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a89118c55d88397a507e9cda2c5eaafe3">More...</a><br /></td></tr>
+<tr class="separator:a89118c55d88397a507e9cda2c5eaafe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf15f424f0da1211264b5c1b7b49fb9a"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:adf15f424f0da1211264b5c1b7b49fb9a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#adf15f424f0da1211264b5c1b7b49fb9a">write</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, std::vector&lt; UserType &gt; &amp;vector, size_t wordOffsetInRegister, bool enforceRawAccess)</td></tr>
+<tr class="memdesc:adf15f424f0da1211264b5c1b7b49fb9a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#adf15f424f0da1211264b5c1b7b49fb9a">More...</a><br /></td></tr>
+<tr class="separator:adf15f424f0da1211264b5c1b7b49fb9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7014b05569a338286836fa8e1c9e625"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:ac7014b05569a338286836fa8e1c9e625"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ScalarRegisterAccessor</a>&lt; UserType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#ac7014b05569a338286836fa8e1c9e625">getScalarRegisterAccessor</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t wordOffsetInRegister, bool enforceRawAccess) const </td></tr>
+<tr class="memdesc:ac7014b05569a338286836fa8e1c9e625"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#ac7014b05569a338286836fa8e1c9e625">More...</a><br /></td></tr>
+<tr class="separator:ac7014b05569a338286836fa8e1c9e625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3159f31813a31671f94d0931999b8157"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a3159f31813a31671f94d0931999b8157"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">OneDRegisterAccessor</a>&lt; UserType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a3159f31813a31671f94d0931999b8157">getOneDRegisterAccessor</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, bool enforceRawAccess) const </td></tr>
+<tr class="memdesc:a3159f31813a31671f94d0931999b8157"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a3159f31813a31671f94d0931999b8157">More...</a><br /></td></tr>
+<tr class="separator:a3159f31813a31671f94d0931999b8157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a8856d75bde8d7549084278ba188da"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a05a8856d75bde8d7549084278ba188da"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html">BufferingRegisterAccessor</a>&lt; UserType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a05a8856d75bde8d7549084278ba188da">getBufferingRegisterAccessor</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords=0, size_t wordOffsetInRegister=0, bool enforceRawAccess=false) const </td></tr>
+<tr class="memdesc:a05a8856d75bde8d7549084278ba188da"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a05a8856d75bde8d7549084278ba188da">More...</a><br /></td></tr>
+<tr class="separator:a05a8856d75bde8d7549084278ba188da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa437d2fc8a65affd43cfb02c61a1df68"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#aa437d2fc8a65affd43cfb02c61a1df68">readReg</a> (uint32_t regOffset, int32_t *data, uint8_t bar) const </td></tr>
+<tr class="memdesc:aa437d2fc8a65affd43cfb02c61a1df68"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#aa437d2fc8a65affd43cfb02c61a1df68">More...</a><br /></td></tr>
+<tr class="separator:aa437d2fc8a65affd43cfb02c61a1df68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3415439f5afc4e4c8c3b1ae3ea30f664"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a3415439f5afc4e4c8c3b1ae3ea30f664">writeReg</a> (uint32_t regOffset, int32_t data, uint8_t bar)</td></tr>
+<tr class="memdesc:a3415439f5afc4e4c8c3b1ae3ea30f664"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a3415439f5afc4e4c8c3b1ae3ea30f664">More...</a><br /></td></tr>
+<tr class="separator:a3415439f5afc4e4c8c3b1ae3ea30f664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ae2a1b697f521d1c05f62a27ce9f1aa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a7ae2a1b697f521d1c05f62a27ce9f1aa">readArea</a> (uint32_t regOffset, int32_t *data, size_t size, uint8_t bar) const </td></tr>
+<tr class="memdesc:a7ae2a1b697f521d1c05f62a27ce9f1aa"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a7ae2a1b697f521d1c05f62a27ce9f1aa">More...</a><br /></td></tr>
+<tr class="separator:a7ae2a1b697f521d1c05f62a27ce9f1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c2828dece4dafe80b0e2cfeb496630"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a61c2828dece4dafe80b0e2cfeb496630">writeArea</a> (uint32_t regOffset, int32_t const *data, size_t size, uint8_t bar)</td></tr>
+<tr class="memdesc:a61c2828dece4dafe80b0e2cfeb496630"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a61c2828dece4dafe80b0e2cfeb496630">More...</a><br /></td></tr>
+<tr class="separator:a61c2828dece4dafe80b0e2cfeb496630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51edef9940aa5ec0ddf18b2fa1601619"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a51edef9940aa5ec0ddf18b2fa1601619">readReg</a> (const std::string &amp;regName, int32_t *data, size_t dataSize=0, uint32_t addRegOffset=0) const </td></tr>
+<tr class="memdesc:a51edef9940aa5ec0ddf18b2fa1601619"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a51edef9940aa5ec0ddf18b2fa1601619">More...</a><br /></td></tr>
+<tr class="separator:a51edef9940aa5ec0ddf18b2fa1601619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585d71bc07bb64de87368191a990a553"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a585d71bc07bb64de87368191a990a553">readReg</a> (const std::string &amp;regName, const std::string &amp;regModule, int32_t *data, size_t dataSize=0, uint32_t addRegOffset=0) const </td></tr>
+<tr class="memdesc:a585d71bc07bb64de87368191a990a553"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a585d71bc07bb64de87368191a990a553">More...</a><br /></td></tr>
+<tr class="separator:a585d71bc07bb64de87368191a990a553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e1cb709f0b64bed1bdebae3b62bbd5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#ac4e1cb709f0b64bed1bdebae3b62bbd5">writeReg</a> (const std::string &amp;regName, int32_t const *data, size_t dataSize=0, uint32_t addRegOffset=0)</td></tr>
+<tr class="memdesc:ac4e1cb709f0b64bed1bdebae3b62bbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#ac4e1cb709f0b64bed1bdebae3b62bbd5">More...</a><br /></td></tr>
+<tr class="separator:ac4e1cb709f0b64bed1bdebae3b62bbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a37ff42061357a56a2f670e98a881a6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a4a37ff42061357a56a2f670e98a881a6">writeReg</a> (const std::string &amp;regName, const std::string &amp;regModule, int32_t const *data, size_t dataSize=0, uint32_t addRegOffset=0)</td></tr>
+<tr class="memdesc:a4a37ff42061357a56a2f670e98a881a6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a4a37ff42061357a56a2f670e98a881a6">More...</a><br /></td></tr>
+<tr class="separator:a4a37ff42061357a56a2f670e98a881a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada0935c1dbcd1394830582d4b864d9ab"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_register_accessor.html">ChimeraTK::RegisterAccessor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#ada0935c1dbcd1394830582d4b864d9ab">getRegisterAccessor</a> (const std::string &amp;registerName, const std::string &amp;module=std::string()) const </td></tr>
+<tr class="memdesc:ada0935c1dbcd1394830582d4b864d9ab"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#ada0935c1dbcd1394830582d4b864d9ab">More...</a><br /></td></tr>
+<tr class="separator:ada0935c1dbcd1394830582d4b864d9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac29cd62a0f3eacfe6beeb4fe9045765e"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html">ChimeraTK::RegisterInfoMap::RegisterInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#ac29cd62a0f3eacfe6beeb4fe9045765e">getRegistersInModule</a> (const std::string &amp;moduleName) const </td></tr>
+<tr class="memdesc:ac29cd62a0f3eacfe6beeb4fe9045765e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#ac29cd62a0f3eacfe6beeb4fe9045765e">More...</a><br /></td></tr>
+<tr class="separator:ac29cd62a0f3eacfe6beeb4fe9045765e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5a191fbb0debc2b7d272ce6e97ec0f"><td class="memItemLeft" align="right" valign="top">std::list&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_register_accessor.html">ChimeraTK::RegisterAccessor</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a2d5a191fbb0debc2b7d272ce6e97ec0f">getRegisterAccessorsInModule</a> (const std::string &amp;moduleName) const </td></tr>
+<tr class="memdesc:a2d5a191fbb0debc2b7d272ce6e97ec0f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a2d5a191fbb0debc2b7d272ce6e97ec0f">More...</a><br /></td></tr>
+<tr class="separator:a2d5a191fbb0debc2b7d272ce6e97ec0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f362e2bdd56e5c5ef7fd823e202ec6e"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; const <a class="el" href="class_chimera_t_k_1_1_register_info_map.html">RegisterInfoMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a8f362e2bdd56e5c5ef7fd823e202ec6e">getRegisterMap</a> () const </td></tr>
+<tr class="memdesc:a8f362e2bdd56e5c5ef7fd823e202ec6e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a8f362e2bdd56e5c5ef7fd823e202ec6e">More...</a><br /></td></tr>
+<tr class="separator:a8f362e2bdd56e5c5ef7fd823e202ec6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9514a321cb6d8586912e9903ced7ada"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#ac9514a321cb6d8586912e9903ced7ada">open</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt; deviceBackend, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_register_info_map.html">ChimeraTK::RegisterInfoMap</a> &gt; &amp;registerMap)</td></tr>
+<tr class="memdesc:ac9514a321cb6d8586912e9903ced7ada"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#ac9514a321cb6d8586912e9903ced7ada">More...</a><br /></td></tr>
+<tr class="separator:ac9514a321cb6d8586912e9903ced7ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3106551ccec9659e9f278fb3f0a53876"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a3106551ccec9659e9f278fb3f0a53876">open</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt; deviceBackend)</td></tr>
+<tr class="memdesc:a3106551ccec9659e9f278fb3f0a53876"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a3106551ccec9659e9f278fb3f0a53876">More...</a><br /></td></tr>
+<tr class="separator:a3106551ccec9659e9f278fb3f0a53876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7005950e450112489ba206cf512f927c"><td class="memTemplParams" colspan="2">template&lt;typename customClass &gt; </td></tr>
+<tr class="memitem:a7005950e450112489ba206cf512f927c"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; customClass &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a7005950e450112489ba206cf512f927c">getCustomAccessor</a> (const std::string &amp;dataRegionName, const std::string &amp;module=std::string()) const </td></tr>
+<tr class="memdesc:a7005950e450112489ba206cf512f927c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a7005950e450112489ba206cf512f927c">More...</a><br /></td></tr>
+<tr class="separator:a7005950e450112489ba206cf512f927c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b327a36551038f282a75e50d47aa53a"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a5b327a36551038f282a75e50d47aa53a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html">BufferingRegisterAccessor</a>&lt; UserType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a5b327a36551038f282a75e50d47aa53a">getBufferingRegisterAccessor</a> (const std::string &amp;module, const std::string &amp;registerName) const </td></tr>
+<tr class="memdesc:a5b327a36551038f282a75e50d47aa53a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a5b327a36551038f282a75e50d47aa53a">More...</a><br /></td></tr>
+<tr class="separator:a5b327a36551038f282a75e50d47aa53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acadef5399b8fc9cfbb0c114ea6393669"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:acadef5399b8fc9cfbb0c114ea6393669"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html">TwoDRegisterAccessor</a>&lt; UserType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#acadef5399b8fc9cfbb0c114ea6393669">getTwoDRegisterAccessor</a> (const std::string &amp;module, const std::string &amp;registerName) const </td></tr>
+<tr class="memdesc:acadef5399b8fc9cfbb0c114ea6393669"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#acadef5399b8fc9cfbb0c114ea6393669">More...</a><br /></td></tr>
+<tr class="separator:acadef5399b8fc9cfbb0c114ea6393669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0190829b2dda02034e381faa566f7e60"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a0190829b2dda02034e381faa566f7e60">readDMA</a> (uint32_t regOffset, int32_t *data, size_t size, uint8_t bar) const </td></tr>
+<tr class="memdesc:a0190829b2dda02034e381faa566f7e60"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a0190829b2dda02034e381faa566f7e60">More...</a><br /></td></tr>
+<tr class="separator:a0190829b2dda02034e381faa566f7e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d7cc7a4a3ca1b07cd4f7ea4bfa4b0c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#ae5d7cc7a4a3ca1b07cd4f7ea4bfa4b0c">writeDMA</a> (uint32_t regOffset, int32_t const *data, size_t size, uint8_t bar)</td></tr>
+<tr class="memdesc:ae5d7cc7a4a3ca1b07cd4f7ea4bfa4b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#ae5d7cc7a4a3ca1b07cd4f7ea4bfa4b0c">More...</a><br /></td></tr>
+<tr class="separator:ae5d7cc7a4a3ca1b07cd4f7ea4bfa4b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a443f4f4047c1febf3071fa87264665"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a0a443f4f4047c1febf3071fa87264665">readDMA</a> (const std::string &amp;regName, int32_t *data, size_t dataSize=0, uint32_t addRegOffset=0) const </td></tr>
+<tr class="memdesc:a0a443f4f4047c1febf3071fa87264665"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a0a443f4f4047c1febf3071fa87264665">More...</a><br /></td></tr>
+<tr class="separator:a0a443f4f4047c1febf3071fa87264665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a274f9d6b54f10f65ebec31aadd2e1507"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a274f9d6b54f10f65ebec31aadd2e1507">readDMA</a> (const std::string &amp;regName, const std::string &amp;regModule, int32_t *data, size_t dataSize=0, uint32_t addRegOffset=0) const </td></tr>
+<tr class="memdesc:a274f9d6b54f10f65ebec31aadd2e1507"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a274f9d6b54f10f65ebec31aadd2e1507">More...</a><br /></td></tr>
+<tr class="separator:a274f9d6b54f10f65ebec31aadd2e1507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cab181f57414adb80d4345d925b7785"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a6cab181f57414adb80d4345d925b7785">writeDMA</a> (const std::string &amp;regName, int32_t const *data, size_t dataSize=0, uint32_t addRegOffset=0)</td></tr>
+<tr class="memdesc:a6cab181f57414adb80d4345d925b7785"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#a6cab181f57414adb80d4345d925b7785">More...</a><br /></td></tr>
+<tr class="separator:a6cab181f57414adb80d4345d925b7785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee5263151025a142c213bedc99879c34"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#aee5263151025a142c213bedc99879c34">writeDMA</a> (const std::string &amp;regName, const std::string &amp;regModule, int32_t const *data, size_t dataSize=0, uint32_t addRegOffset=0)</td></tr>
+<tr class="memdesc:aee5263151025a142c213bedc99879c34"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>DEPRECATED</b>  <a href="#aee5263151025a142c213bedc99879c34">More...</a><br /></td></tr>
+<tr class="separator:aee5263151025a142c213bedc99879c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad21b2a8e1884cea3448a4c5d1c35ef37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#ad21b2a8e1884cea3448a4c5d1c35ef37">checkPointersAreNotNull</a> () const </td></tr>
 <tr class="separator:ad21b2a8e1884cea3448a4c5d1c35ef37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21b2a8e1884cea3448a4c5d1c35ef37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#ad21b2a8e1884cea3448a4c5d1c35ef37">checkPointersAreNotNull</a> () const </td></tr>
+<tr class="separator:ad21b2a8e1884cea3448a4c5d1c35ef37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a129c5f11a5e1a0ada19cbcc293d1a429"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#a129c5f11a5e1a0ada19cbcc293d1a429">_deviceBackendPointer</a></td></tr>
-<tr class="separator:a129c5f11a5e1a0ada19cbcc293d1a429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e393403d13621a6992b34ad425725c"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device.html#af8e393403d13621a6992b34ad425725c">_deviceBackendPointer</a></td></tr>
+<tr class="separator:af8e393403d13621a6992b34ad425725c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class allows to read/write registers from device. </p>
@@ -276,7 +435,7 @@ Protected Attributes</h2></td></tr>
 <p>The device can open and close a device for you. If you let the <a class="el" href="class_chimera_t_k_1_1_device.html" title="Class allows to read/write registers from device. ">Device</a> open the device you will not be able to get a handle to this device directly, you can only close it with the <a class="el" href="class_chimera_t_k_1_1_device.html" title="Class allows to read/write registers from device. ">Device</a>. Should you create <a class="el" href="class_chimera_t_k_1_1_register_accessor.html" title="DEPRECATED! Use BufferingRegisterAccessor instead! ">RegisterAccessor</a> objects, which contain shared pointers to this device, the device will stay opened and functional even if the <a class="el" href="class_chimera_t_k_1_1_device.html" title="Class allows to read/write registers from device. ">Device</a> object which created the <a class="el" href="class_chimera_t_k_1_1_register_accessor.html" title="DEPRECATED! Use BufferingRegisterAccessor instead! ">RegisterAccessor</a> goes out of scope. In this case you cannot close the device. It will finally be closed when the the last <a class="el" href="class_chimera_t_k_1_1_register_accessor.html" title="DEPRECATED! Use BufferingRegisterAccessor instead! ">RegisterAccessor</a> pointing to it goes out of scope. The same holds if you open another device with the same <a class="el" href="class_chimera_t_k_1_1_device.html" title="Class allows to read/write registers from device. ">Device</a>: You lose direct access to the previous device, which stays open as long as there are RegisterAccessors pointing to it. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="accessor1_d_8cpp-example.html#_a2">accessor1D.cpp</a>, <a class="el" href="accessor2_d_8cpp-example.html#_a2">accessor2D.cpp</a>, <a class="el" href="accessor2_d_multiplexed_8cpp-example.html#_a2">accessor2D_multiplexed.cpp</a>, and <a class="el" href="basic_8cpp-example.html#_a2">basic.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00049">49</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00049">49</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ad49ec7cc7fa3d57fad993363005b727a"></a>
 <div class="memitem">
@@ -290,6 +449,23 @@ Protected Attributes</h2></td></tr>
 
 <p><b>DEPRECATED</b> </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000047">Deprecated:</a></b></dt><dd>A typedef for backward compatibility. Don't use this in new code. It will be removed in a future release. Use <a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html" title="DEPRECATED! Use OneDRegisterAccessor or ScalarRegisterAccessor instead! ">ChimeraTK::BufferingRegisterAccessor</a> instead </dd></dl>
+
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00485">485</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad49ec7cc7fa3d57fad993363005b727a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_chimera_t_k_1_1_register_accessor.html">ChimeraTK::RegisterAccessor</a> <a class="el" href="class_chimera_t_k_1_1_device.html#ad49ec7cc7fa3d57fad993363005b727a">ChimeraTK::Device::RegisterAccessor</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000123">Deprecated:</a></b></dt><dd>A typedef for backward compatibility. Don't use this in new code. It will be removed in a future release. Use <a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html" title="DEPRECATED! Use OneDRegisterAccessor or ScalarRegisterAccessor instead! ">ChimeraTK::BufferingRegisterAccessor</a> instead </dd></dl>
 
 <p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00485">485</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
 
@@ -323,6 +499,31 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad6afc217b5a643f4c5a00a217b918b5e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ChimeraTK::Device::~Device </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ad21b2a8e1884cea3448a4c5d1c35ef37"></a>
 <div class="memitem">
@@ -346,6 +547,29 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="_device_8cc_source.html#l00216">216</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad21b2a8e1884cea3448a4c5d1c35ef37"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::Device::checkPointersAreNotNull </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -375,6 +599,32 @@ Protected Attributes</h2></td></tr>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="accessor1_d_8cpp-example.html#a9">accessor1D.cpp</a>, <a class="el" href="accessor2_d_8cpp-example.html#a10">accessor2D.cpp</a>, <a class="el" href="accessor2_d_multiplexed_8cpp-example.html#a9">accessor2D_multiplexed.cpp</a>, and <a class="el" href="basic_8cpp-example.html#a8">basic.cpp</a>.</dd>
 </dl>
 <p>Definition at line <a class="el" href="_device_8cc_source.html#l00157">157</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a883f25c31108556921717206de3dc270"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Close the device. </p>
+<p>The connection with the alias name is kept so the device can be re-opened using the <a class="el" href="class_chimera_t_k_1_1_device.html#a0a86afbebd076b8bc1d7bc6fe87db89d" title="Re-open the device after previously closeing it by calling close(). ">open()</a> function without argument. </p>
 
 </div>
 </div>
@@ -420,7 +670,51 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#aff70dfe5a22e63aa63a42a06c9cec619" title="Inefficient convenience function to write a single-word register without obtaining an accessor...">Device::write()</a> instead. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00638">638</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00638">638</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a05a8856d75bde8d7549084278ba188da"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html">BufferingRegisterAccessor</a>&lt;UserType&gt; ChimeraTK::Device::getBufferingRegisterAccessor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numberOfWords</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>wordOffsetInRegister</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enforceRawAccess</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000099">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#aff70dfe5a22e63aa63a42a06c9cec619" title="Inefficient convenience function to write a single-word register without obtaining an accessor...">Device::write()</a> instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000090">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
 </div>
 </div>
@@ -454,7 +748,39 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#a5c58f456371027767c06b32c712a07c9" title="DEPRECATED ">Device::getBufferingRegisterAccessor</a>(RegisterPath(module)/registerName) instead. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000039">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00649">649</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00649">649</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b327a36551038f282a75e50d47aa53a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html">BufferingRegisterAccessor</a>&lt;UserType&gt; ChimeraTK::Device::getBufferingRegisterAccessor </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>registerName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000115">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#a5c58f456371027767c06b32c712a07c9" title="DEPRECATED ">Device::getBufferingRegisterAccessor</a>(RegisterPath(module)/registerName) instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000106">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
 </div>
 </div>
@@ -488,7 +814,39 @@ template&lt;typename customClass &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000038">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#a301727e5b00155c7656473553e5be8c7" title="Get a TwoDRegisterAccessor object for the given register. ">getTwoDRegisterAccessor()</a> instead! </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000038">Todo:</a></b></dt><dd>Change warning into runtime error after release of version 0.9 </dd></dl>
 
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00497">497</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00497">497</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7005950e450112489ba206cf512f927c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename customClass &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;customClass&gt; ChimeraTK::Device::getCustomAccessor </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>dataRegionName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>module</em> = <code>std::string()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000114">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#a301727e5b00155c7656473553e5be8c7" title="Get a TwoDRegisterAccessor object for the given register. ">getTwoDRegisterAccessor()</a> instead! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000105">Todo:</a></b></dt><dd>Change warning into runtime error after release of version 0.9 </dd></dl>
 
 </div>
 </div>
@@ -537,7 +895,53 @@ template&lt;typename UserType &gt; </div>
 <p>Hint: when passing the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a>, just enclose the wanted flags in a brace initialiser list without "AccessModeFlags", e.g.: getOneDRegisterAccessor&lt;int32_t&gt;("reg",0,0,{<a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11abdd166af3a63f7be696dd17a218a6ffb" title="Raw access: disable any possible conversion from the original hardware data type into the given UserT...">AccessMode::raw</a>}) </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="accessor1_d_8cpp-example.html#a5">accessor1D.cpp</a>, and <a class="el" href="accessor2_d_multiplexed_8cpp-example.html#a4">accessor2D_multiplexed.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00532">532</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00532">532</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afbd225e94a23d7c7e991b245d4212f0d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">OneDRegisterAccessor</a>&lt;UserType&gt; ChimeraTK::Device::getOneDRegisterAccessor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numberOfWords</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>wordOffsetInRegister</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({})</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o...">OneDRegisterAccessor</a> object for the given register. </p>
+<p>The <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o...">OneDRegisterAccessor</a> allows to read and write registers transparently by using the accessor object like a vector of the type UserType. If needed, the conversion to and from the UserType will be handled by the <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html" title="The fixed point converter provides conversion functions between a user type and up to 32 bit fixed po...">FixedPointConverter</a> matching the register description in the map.</p>
+<p>The optional arguments numberOfWords and wordOffsetInRegister allow to limit the accessor to a part of the register.</p>
+<p>The last optional argument flags allows to control certain details how the register is accessed. It allows e.g. to enable raw access. See AccessMode documentation for more details. Passing an access mode flag which is not supported by the backend or the given register will raise a NOT_IMPLEMENTED DeviceException.</p>
+<p>Hint: when passing the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a>, just enclose the wanted flags in a brace initialiser list without "AccessModeFlags", e.g.: getOneDRegisterAccessor&lt;int32_t&gt;("reg",0,0,{<a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11abdd166af3a63f7be696dd17a218a6ffb" title="Raw access: disable any possible conversion from the original hardware data type into the given UserT...">AccessMode::raw</a>}) </p>
 
 </div>
 </div>
@@ -583,7 +987,81 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>Get a <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o...">OneDRegisterAccessor</a> object for the given register. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
 
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00543">543</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00543">543</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3159f31813a31671f94d0931999b8157"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">OneDRegisterAccessor</a>&lt;UserType&gt; ChimeraTK::Device::getOneDRegisterAccessor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numberOfWords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>wordOffsetInRegister</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enforceRawAccess</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000098">Deprecated:</a></b></dt><dd>Get a <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o...">OneDRegisterAccessor</a> object for the given register. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000089">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ada0935c1dbcd1394830582d4b864d9ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_register_accessor.html">ChimeraTK::RegisterAccessor</a>&gt; ChimeraTK::Device::getRegisterAccessor </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>registerName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>module</em> = <code>std::string()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000108">Deprecated:</a></b></dt><dd>This function is deprecated. Use the getBufferingRegisterAccessor instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000099">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
 </div>
 </div>
@@ -619,6 +1097,26 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a2d5a191fbb0debc2b7d272ce6e97ec0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt; boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_register_accessor.html">ChimeraTK::RegisterAccessor</a>&gt; &gt; ChimeraTK::Device::getRegisterAccessorsInModule </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>moduleName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000110">Deprecated:</a></b></dt><dd>This function is deprecated. Use the <a class="el" href="class_chimera_t_k_1_1_register_catalogue.html" title="Catalogue of register information. ">RegisterCatalogue</a> (see <a class="el" href="class_chimera_t_k_1_1_device.html#afd147284e8a410186e083c6da391f0f1" title="Return the register catalogue with detailed information on all registers. ">getRegisterCatalogue()</a>) to obtain a list of registers and create accessors using getBufferingRegisterAccessor instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000101">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a6eeebfd7e770768b0d8665260a314601"></a>
 <div class="memitem">
 <div class="memproto">
@@ -641,6 +1139,23 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a2de8103b82f681c210afb5da709e82ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_chimera_t_k_1_1_register_catalogue.html">RegisterCatalogue</a>&amp; ChimeraTK::Device::getRegisterCatalogue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the register catalogue with detailed information on all registers. </p>
+
+</div>
+</div>
 <a class="anchor" id="afd147284e8a410186e083c6da391f0f1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -657,6 +1172,25 @@ template&lt;typename UserType &gt; </div>
 <p>Return the register catalogue with detailed information on all registers. </p>
 
 <p>Definition at line <a class="el" href="_device_8cc_source.html#l00023">23</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f362e2bdd56e5c5ef7fd823e202ec6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;const <a class="el" href="class_chimera_t_k_1_1_register_info_map.html">RegisterInfoMap</a>&gt; ChimeraTK::Device::getRegisterMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000111">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#afd147284e8a410186e083c6da391f0f1" title="Return the register catalogue with detailed information on all registers. ">getRegisterCatalogue()</a> instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000102">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
 </div>
 </div>
@@ -678,6 +1212,26 @@ template&lt;typename UserType &gt; </div>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000035">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
 <p>Definition at line <a class="el" href="_device_8cc_source.html#l00030">30</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac29cd62a0f3eacfe6beeb4fe9045765e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;<a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html">ChimeraTK::RegisterInfoMap::RegisterInfo</a>&gt; ChimeraTK::Device::getRegistersInModule </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>moduleName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000109">Deprecated:</a></b></dt><dd>This function is deprecated. Use the <a class="el" href="class_chimera_t_k_1_1_register_catalogue.html" title="Catalogue of register information. ">RegisterCatalogue</a> (see <a class="el" href="class_chimera_t_k_1_1_device.html#afd147284e8a410186e083c6da391f0f1" title="Return the register catalogue with detailed information on all registers. ">getRegisterCatalogue()</a>) instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000100">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
 </div>
 </div>
@@ -741,7 +1295,46 @@ template&lt;typename UserType &gt; </div>
 <p>The last optional argument flags allows to control certain details how the register is accessed. It allows e.g. to enable raw access. See AccessMode documentation for more details. Passing an access mode flag which is not supported by the backend or the given register will raise a NOT_IMPLEMENTED DeviceException. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="basic_8cpp-example.html#a5">basic.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00509">509</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00509">509</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad54811a89e27e93be63471b25f42da10"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ScalarRegisterAccessor</a>&lt;UserType&gt; ChimeraTK::Device::getScalarRegisterAccessor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>wordOffsetInRegister</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({})</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a ScalarRegisterObject object for the given register. </p>
+<p>The ScalarRegisterObject allows to read and write registers transparently by using the accessor object like a variable of the type UserType. If needed, the conversion to and from the UserType will be handled by the <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html" title="The fixed point converter provides conversion functions between a user type and up to 32 bit fixed po...">FixedPointConverter</a> matching the register description in the map.</p>
+<p>The optional argument wordOffsetInRegister allows to access another but the first word of a larger register.</p>
+<p>The last optional argument flags allows to control certain details how the register is accessed. It allows e.g. to enable raw access. See AccessMode documentation for more details. Passing an access mode flag which is not supported by the backend or the given register will raise a NOT_IMPLEMENTED DeviceException. </p>
 
 </div>
 </div>
@@ -781,7 +1374,90 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>Get a ScalarRegisterObject object for the given register. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
 
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00519">519</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00519">519</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac7014b05569a338286836fa8e1c9e625"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ScalarRegisterAccessor</a>&lt;UserType&gt; ChimeraTK::Device::getScalarRegisterAccessor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>wordOffsetInRegister</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enforceRawAccess</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000097">Deprecated:</a></b></dt><dd>Get a ScalarRegisterObject object for the given register. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000088">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a02d1aae28a085c28d389057cbd074d36"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html">TwoDRegisterAccessor</a>&lt;UserType&gt; ChimeraTK::Device::getTwoDRegisterAccessor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numberOfElements</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>elementsOffset</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({})</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a <a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html" title="TODO add documentation. ">TwoDRegisterAccessor</a> object for the given register. </p>
+<p>This allows to read and write transparently 2-dimensional registers. The register accessor is similar to the 1-dimensional <a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html" title="DEPRECATED! Use OneDRegisterAccessor or ScalarRegisterAccessor instead! ">BufferingRegisterAccessor</a>.</p>
+<p>The optional arguments allow to restrict the accessor to a region of interest in the 2D register: numberOfElements specifies the number of elements per channel to read from the register. elementsOffset is the first element index for each channel to read.</p>
+<p>TODO: Currently only the restriction to a smaller region of interest is only possible in one dimension. Support for the second dimension should be added as well, but it will involve an internal interface change. Since all current backends will not be able to optimise the performance when reducing the number of channels, this change is postponed. </p>
 
 </div>
 </div>
@@ -829,7 +1505,7 @@ template&lt;typename UserType &gt; </div>
 <p>TODO: Currently only the restriction to a smaller region of interest is only possible in one dimension. Support for the second dimension should be added as well, but it will involve an internal interface change. Since all current backends will not be able to optimise the performance when reducing the number of channels, this change is postponed. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="accessor2_d_8cpp-example.html#a5">accessor2D.cpp</a>, and <a class="el" href="accessor2_d_multiplexed_8cpp-example.html#a6">accessor2D_multiplexed.cpp</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00560">560</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00560">560</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -863,7 +1539,39 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#a301727e5b00155c7656473553e5be8c7" title="Get a TwoDRegisterAccessor object for the given register. ">Device::getTwoDRegisterAccessor</a>(RegisterPath(module)/registerName) instead. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000040">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00657">657</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00657">657</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acadef5399b8fc9cfbb0c114ea6393669"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html">TwoDRegisterAccessor</a>&lt;UserType&gt; ChimeraTK::Device::getTwoDRegisterAccessor </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>registerName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000116">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#a301727e5b00155c7656473553e5be8c7" title="Get a TwoDRegisterAccessor object for the given register. ">Device::getTwoDRegisterAccessor</a>(RegisterPath(module)/registerName) instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000107">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
 </div>
 </div>
@@ -883,6 +1591,49 @@ template&lt;typename UserType &gt; </div>
 <p>Check if the device is currently opened. </p>
 
 <p>Definition at line <a class="el" href="_device_8cc_source.html#l00273">273</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d82269c54988b73108da0c4463841eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::Device::isOpened </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the device is currently opened. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7c8559ecd6a1adbc7054e0aefb4b853e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::open </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>aliasName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Open a device by the given alias name from the DMAP file. </p>
 
 </div>
 </div>
@@ -942,6 +1693,31 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a2eb4f1a54a66a66fe793ec45b7728264"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::open </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Re-open the device after previously closeing it by calling <a class="el" href="class_chimera_t_k_1_1_device.html#a20ffe09ba19304ce65b85eacee93b01d" title="Close the device. ">close()</a>. </p>
+
+</div>
+</div>
 <a class="anchor" id="acc25d48f4248f7a0d2eed54819c63e24"></a>
 <div class="memitem">
 <div class="memproto">
@@ -982,6 +1758,44 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ac9514a321cb6d8586912e9903ced7ada"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::open </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td>
+          <td class="paramname"><em>deviceBackend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_register_info_map.html">ChimeraTK::RegisterInfoMap</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>registerMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000112">Deprecated:</a></b></dt><dd>This function is deprecated. Open by alias name instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000103">Todo:</a></b></dt><dd>Change warning into runtime error after release of version 0.9 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="abb005a350abad455aae95ec20eb45a4b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1009,6 +1823,34 @@ template&lt;typename UserType &gt; </div>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000037">Todo:</a></b></dt><dd>Change warning into runtime error after release of version 0.9 </dd></dl>
 
 <p>Definition at line <a class="el" href="_device_8cc_source.html#l00224">224</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3106551ccec9659e9f278fb3f0a53876"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::open </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td>
+          <td class="paramname"><em>deviceBackend</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000113">Deprecated:</a></b></dt><dd>This function is deprecated. Open by alias name instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000104">Todo:</a></b></dt><dd>Change warning into runtime error after release of version 0.9 </dd></dl>
 
 </div>
 </div>
@@ -1042,7 +1884,39 @@ template&lt;typename UserType &gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="class_chimera_t_k_1_1_device.html#a37f85f4e0a786ee59f39d949d4cce562" title="Get a ScalarRegisterObject object for the given register. ">Device::getScalarRegisterAccessor</a>).</dd></dl>
 <p>If a multi-word register is read, only the first element is returned. This function only works for 1D registers. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00570">570</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00570">570</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9fa6d28ee5a90095b7c6e50b30e7dedb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">UserType ChimeraTK::Device::read </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({})</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>Inefficient convenience function</b> to read a single-word register without obtaining an accessor. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="class_chimera_t_k_1_1_device.html#a37f85f4e0a786ee59f39d949d4cce562" title="Get a ScalarRegisterObject object for the given register. ">Device::getScalarRegisterAccessor</a>).</dd></dl>
+<p>If a multi-word register is read, only the first element is returned. This function only works for 1D registers. </p>
 
 </div>
 </div>
@@ -1088,7 +1962,51 @@ template&lt;typename UserType &gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="class_chimera_t_k_1_1_device.html#a3897883a8fca1935343593963ebffe52" title="Get a OneDRegisterAccessor object for the given register. ">Device::getOneDRegisterAccessor</a>).</dd></dl>
 <p>The function only works for 1D registers. For 2D registers, see <a class="el" href="class_chimera_t_k_1_1_device.html#a301727e5b00155c7656473553e5be8c7" title="Get a TwoDRegisterAccessor object for the given register. ">Device::getTwoDRegisterAccessor</a>. The argument numberOfWords specifies how many elements are read. The returned vector will have a length of numberOfWords or shorter. numberOfWords must not exceed the size of the register. The optional argument wordOffsetInRegister allows to skip the first wordOffsetInRegister elements of the register. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00579">579</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00579">579</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10d1325c1e4f4e6b2a793e7b847dd001"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;UserType&gt; ChimeraTK::Device::read </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numberOfWords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>wordOffsetInRegister</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({})</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>Inefficient convenience function</b> to read a multi-word register without obtaining an accessor. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="class_chimera_t_k_1_1_device.html#a3897883a8fca1935343593963ebffe52" title="Get a OneDRegisterAccessor object for the given register. ">Device::getOneDRegisterAccessor</a>).</dd></dl>
+<p>The function only works for 1D registers. For 2D registers, see <a class="el" href="class_chimera_t_k_1_1_device.html#a301727e5b00155c7656473553e5be8c7" title="Get a TwoDRegisterAccessor object for the given register. ">Device::getTwoDRegisterAccessor</a>. The argument numberOfWords specifies how many elements are read. The returned vector will have a length of numberOfWords or shorter. numberOfWords must not exceed the size of the register. The optional argument wordOffsetInRegister allows to skip the first wordOffsetInRegister elements of the register. </p>
 
 </div>
 </div>
@@ -1134,7 +2052,101 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd><b>Inefficient convenience function</b> to read a multi-word register without obtaining an accessor. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
 
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00613">613</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00613">613</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b2e1fc0b4dcf19738840aeecfec3efb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;UserType&gt; ChimeraTK::Device::read </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numberOfWords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>wordOffsetInRegister</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enforceRawAccess</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000094">Deprecated:</a></b></dt><dd><b>Inefficient convenience function</b> to read a multi-word register without obtaining an accessor. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000085">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7ae2a1b697f521d1c05f62a27ce9f1aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::readArea </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>regOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000102">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#aff70dfe5a22e63aa63a42a06c9cec619" title="Inefficient convenience function to write a single-word register without obtaining an accessor...">Device::write()</a> instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000093">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.8 </dd></dl>
 
 </div>
 </div>
@@ -1218,6 +2230,82 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a8beccc379afd3e5e61bad00d942b5d4f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string ChimeraTK::Device::readDeviceInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a device information string. </p>
+<p>Format depends on the backend, use for display only. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0190829b2dda02034e381faa566f7e60"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::readDMA </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>regOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000117">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#ae6936352025428ef21851b02c2a47db2" title="DEPRECATED ">readArea()</a> instead! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000108">Todo:</a></b></dt><dd>Change warning into runtime error after release of version 0.9 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a24c878610e28f3fccf151ac84835c4e5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1270,6 +2358,56 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a0a443f4f4047c1febf3071fa87264665"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::readDMA </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>regName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataSize</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>addRegOffset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000119">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#ae6936352025428ef21851b02c2a47db2" title="DEPRECATED ">readArea()</a> instead! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000110">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="acc8759c2535497bb8364b032a78e6357"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1319,6 +2457,62 @@ template&lt;typename UserType &gt; </div>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000043">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
 <p>Definition at line <a class="el" href="_device_8cc_source.html#l00123">123</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a274f9d6b54f10f65ebec31aadd2e1507"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::readDMA </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>regName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>regModule</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataSize</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>addRegOffset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000120">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#ae6936352025428ef21851b02c2a47db2" title="DEPRECATED ">readArea()</a> instead! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000111">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
 </div>
 </div>
@@ -1423,6 +2617,100 @@ template&lt;typename UserType &gt; </div>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
 <p>Definition at line <a class="el" href="_device_8cc_source.html#l00164">164</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa437d2fc8a65affd43cfb02c61a1df68"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::readReg </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>regOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000100">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#aff70dfe5a22e63aa63a42a06c9cec619" title="Inefficient convenience function to write a single-word register without obtaining an accessor...">Device::write()</a> instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000091">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a51edef9940aa5ec0ddf18b2fa1601619"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::readReg </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>regName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataSize</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>addRegOffset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000104">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#aff70dfe5a22e63aa63a42a06c9cec619" title="Inefficient convenience function to write a single-word register without obtaining an accessor...">Device::write()</a> instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000095">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
 </div>
 </div>
@@ -1536,6 +2824,62 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a585d71bc07bb64de87368191a990a553"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::readReg </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>regName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>regModule</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataSize</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>addRegOffset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000105">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#aff70dfe5a22e63aa63a42a06c9cec619" title="Inefficient convenience function to write a single-word register without obtaining an accessor...">Device::write()</a> instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000096">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="aff70dfe5a22e63aa63a42a06c9cec619"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1572,7 +2916,45 @@ template&lt;typename UserType &gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="class_chimera_t_k_1_1_device.html#a37f85f4e0a786ee59f39d949d4cce562" title="Get a ScalarRegisterObject object for the given register. ">Device::getScalarRegisterAccessor</a>).</dd></dl>
 <p>If a multi-word register is read, only the first element is written. This function only works for 1D registers. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00591">591</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00591">591</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aff70dfe5a22e63aa63a42a06c9cec619"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::Device::write </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UserType&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({})</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>Inefficient convenience function</b> to write a single-word register without obtaining an accessor. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="class_chimera_t_k_1_1_device.html#a37f85f4e0a786ee59f39d949d4cce562" title="Get a ScalarRegisterObject object for the given register. ">Device::getScalarRegisterAccessor</a>).</dd></dl>
+<p>If a multi-word register is read, only the first element is written. This function only works for 1D registers. </p>
 
 </div>
 </div>
@@ -1618,7 +3000,89 @@ template&lt;typename UserType &gt; </div>
 <dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="class_chimera_t_k_1_1_device.html#a3897883a8fca1935343593963ebffe52" title="Get a OneDRegisterAccessor object for the given register. ">Device::getOneDRegisterAccessor</a>).</dd></dl>
 <p>The function only works for 1D registers. For 2D registers, see <a class="el" href="class_chimera_t_k_1_1_device.html#a301727e5b00155c7656473553e5be8c7" title="Get a TwoDRegisterAccessor object for the given register. ">Device::getTwoDRegisterAccessor</a>. The optional argument wordOffsetInRegister allows to skip the first wordOffsetInRegister elements of the register. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00600">600</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00600">600</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ad91fd3a782bf1f06dc0f2a92fa6ec2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::Device::write </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; UserType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>wordOffsetInRegister</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>({})</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>Inefficient convenience function</b> to write a multi-word register without obtaining an accessor. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This function is inefficient as it creates and discards a register accessor in each call of the function. For a better performance, use register accessors instead (see <a class="el" href="class_chimera_t_k_1_1_device.html#a3897883a8fca1935343593963ebffe52" title="Get a OneDRegisterAccessor object for the given register. ">Device::getOneDRegisterAccessor</a>).</dd></dl>
+<p>The function only works for 1D registers. For 2D registers, see <a class="el" href="class_chimera_t_k_1_1_device.html#a301727e5b00155c7656473553e5be8c7" title="Get a TwoDRegisterAccessor object for the given register. ">Device::getTwoDRegisterAccessor</a>. The optional argument wordOffsetInRegister allows to skip the first wordOffsetInRegister elements of the register. </p>
+
+</div>
+</div>
+<a class="anchor" id="a89118c55d88397a507e9cda2c5eaafe3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::Device::write </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UserType&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enforceRawAccess</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000095">Deprecated:</a></b></dt><dd><b>Inefficient convenience function</b> to write a single-word register without obtaining an accessor. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000086">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
 
 </div>
 </div>
@@ -1658,7 +3122,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd><b>Inefficient convenience function</b> to write a single-word register without obtaining an accessor. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
 
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00622">622</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00622">622</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -1704,7 +3168,51 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd><b>Inefficient convenience function</b> to write a multi-word register without obtaining an accessor. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000020">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
 
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00629">629</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00629">629</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adf15f424f0da1211264b5c1b7b49fb9a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::Device::write </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; UserType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>wordOffsetInRegister</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enforceRawAccess</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000096">Deprecated:</a></b></dt><dd><b>Inefficient convenience function</b> to write a multi-word register without obtaining an accessor. This version accepts a boolean flag to enable raw access instead of the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> list. It is deprecated and should not be used in new code. Use the new version with the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a> instead.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000087">Todo:</a></b></dt><dd>Add printed runtime warning. Deprecated since version 0.12 </dd></dl>
 
 </div>
 </div>
@@ -1760,6 +3268,56 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a61c2828dece4dafe80b0e2cfeb496630"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::writeArea </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>regOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t const *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000103">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#aff70dfe5a22e63aa63a42a06c9cec619" title="Inefficient convenience function to write a single-word register without obtaining an accessor...">Device::write()</a> instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000094">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a01f6ae42475f38e762a9245bf0eb4055"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1812,6 +3370,56 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ae5d7cc7a4a3ca1b07cd4f7ea4bfa4b0c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::writeDMA </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>regOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t const *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000118">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#ac434ea5dce4b655a716067b7c06b4062" title="DEPRECATED ">writeArea()</a> instead! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000109">Todo:</a></b></dt><dd>Change warning into runtime error after release of version 0.9 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a3519e11f95e23248bcca227ae2ca0c4d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1861,6 +3469,112 @@ template&lt;typename UserType &gt; </div>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000045">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
 <p>Definition at line <a class="el" href="_device_8cc_source.html#l00140">140</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6cab181f57414adb80d4345d925b7785"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::writeDMA </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>regName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t const *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataSize</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>addRegOffset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000121">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#ac434ea5dce4b655a716067b7c06b4062" title="DEPRECATED ">writeArea()</a> instead! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000112">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aee5263151025a142c213bedc99879c34"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::writeDMA </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>regName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>regModule</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t const *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataSize</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>addRegOffset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000122">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#ac434ea5dce4b655a716067b7c06b4062" title="DEPRECATED ">writeArea()</a> instead! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000113">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
 </div>
 </div>
@@ -1968,6 +3682,50 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a3415439f5afc4e4c8c3b1ae3ea30f664"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::writeReg </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>regOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000101">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#aff70dfe5a22e63aa63a42a06c9cec619" title="Inefficient convenience function to write a single-word register without obtaining an accessor...">Device::write()</a> instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000092">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="abc26e04363536fbd6da8b4b2686f8af5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2017,6 +3775,56 @@ template&lt;typename UserType &gt; </div>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000030">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
 <p>Definition at line <a class="el" href="_device_8cc_source.html#l00100">100</a> of file <a class="el" href="_device_8cc_source.html">Device.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4e1cb709f0b64bed1bdebae3b62bbd5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::Device::writeReg </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>regName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t const *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataSize</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>addRegOffset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000106">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#aff70dfe5a22e63aa63a42a06c9cec619" title="Inefficient convenience function to write a single-word register without obtaining an accessor...">Device::write()</a> instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000097">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
 
 </div>
 </div>
@@ -2078,8 +3886,7 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a129c5f11a5e1a0ada19cbcc293d1a429"></a>
+<a class="anchor" id="a4a37ff42061357a56a2f670e98a881a6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -2087,7 +3894,64 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a>&gt; ChimeraTK::Device::_deviceBackendPointer</td>
+          <td class="memname">virtual void ChimeraTK::Device::writeReg </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>regName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>regModule</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t const *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataSize</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>addRegOffset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b>DEPRECATED</b> </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000107">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_device.html#aff70dfe5a22e63aa63a42a06c9cec619" title="Inefficient convenience function to write a single-word register without obtaining an accessor...">Device::write()</a> instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000098">Todo:</a></b></dt><dd>Add printed runtime warning after release of version 0.9 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="af8e393403d13621a6992b34ad425725c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt; ChimeraTK::Device::_deviceBackendPointer</td>
         </tr>
       </table>
   </td>
@@ -2097,18 +3961,18 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="device_2include_2_device_8h_source.html#l00489">489</a> of file <a class="el" href="device_2include_2_device_8h_source.html">Device.h</a>.</p>
+<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html#l00489">489</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/device/include/<a class="el" href="device_2include_2_device_8h_source.html">Device.h</a></li>
+<li>include/ChimeraTK/<a class="el" href="build_2include_2_chimera_t_k_2_device_8h_source.html">Device.h</a></li>
 <li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/device/src/<a class="el" href="_device_8cc_source.html">Device.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 14 2018 07:53:33 for mtca4u-deviceaccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 15 2018 07:53:20 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
