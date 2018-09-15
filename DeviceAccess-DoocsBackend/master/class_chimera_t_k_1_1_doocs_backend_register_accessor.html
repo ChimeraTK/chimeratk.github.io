@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-DeviceAccess-DoocsBackend
-   &#160;<span id="projectnumber">00.11.00</span>
+   &#160;<span id="projectnumber">00.12.00</span>
    </div>
   </td>
  </tr>
@@ -138,8 +138,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:abb54d0b4e09720f3c8bf64d066ef5775"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#abb54d0b4e09720f3c8bf64d066ef5775">DoocsBackendRegisterAccessor</a> (const RegisterPath &amp;path, size_t numberOfWords, size_t wordOffsetInRegister, AccessModeFlags flags, bool allocateBuffers=true)</td></tr>
-<tr class="separator:abb54d0b4e09720f3c8bf64d066ef5775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf800d7330b4a2b45977674f57070bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#afbf800d7330b4a2b45977674f57070bf">DoocsBackendRegisterAccessor</a> (const std::string &amp;path, size_t numberOfWords, size_t wordOffsetInRegister, AccessModeFlags flags, bool allocateBuffers=true)</td></tr>
+<tr class="separator:afbf800d7330b4a2b45977674f57070bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d3d7547984b0a7541e36d923c6e4286"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a9d3d7547984b0a7541e36d923c6e4286">mayReplaceOther</a> (const boost::shared_ptr&lt; TransferElement const  &gt; &amp;other) const override</td></tr>
 <tr class="separator:a9d3d7547984b0a7541e36d923c6e4286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1918bddc241da2d9e188d1e30265374f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a1918bddc241da2d9e188d1e30265374f">isReadOnly</a> () const override</td></tr>
@@ -166,9 +166,9 @@ Static Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ad30b1cba2fc659ed11a009975cc79ae5"><td class="memItemLeft" align="right" valign="top">RegisterPath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ad30b1cba2fc659ed11a009975cc79ae5">_path</a></td></tr>
-<tr class="memdesc:ad30b1cba2fc659ed11a009975cc79ae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">register path  <a href="#ad30b1cba2fc659ed11a009975cc79ae5">More...</a><br /></td></tr>
-<tr class="separator:ad30b1cba2fc659ed11a009975cc79ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab925f3214d4a4aa7a8c098aece757e69"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ab925f3214d4a4aa7a8c098aece757e69">_path</a></td></tr>
+<tr class="memdesc:ab925f3214d4a4aa7a8c098aece757e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">register path  <a href="#ab925f3214d4a4aa7a8c098aece757e69">More...</a><br /></td></tr>
+<tr class="separator:ab925f3214d4a4aa7a8c098aece757e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05152fe91ee6da0c32abeae32943cda3"><td class="memItemLeft" align="right" valign="top">EqAdr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a05152fe91ee6da0c32abeae32943cda3">ea</a></td></tr>
 <tr class="memdesc:a05152fe91ee6da0c32abeae32943cda3"><td class="mdescLeft">&#160;</td><td class="mdescRight">DOOCS address structure.  <a href="#a05152fe91ee6da0c32abeae32943cda3">More...</a><br /></td></tr>
 <tr class="separator:a05152fe91ee6da0c32abeae32943cda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,7 +242,7 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="abb54d0b4e09720f3c8bf64d066ef5775"></a>
+<a class="anchor" id="afbf800d7330b4a2b45977674f57070bf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -254,7 +254,7 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">ChimeraTK::DoocsBackendRegisterAccessor</a>&lt; UserType &gt;::<a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">DoocsBackendRegisterAccessor</a> </td>
           <td>(</td>
-          <td class="paramtype">const RegisterPath &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>path</em>, </td>
         </tr>
         <tr>
@@ -322,7 +322,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00296">296</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00293">293</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -341,7 +341,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00360">360</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00357">357</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -368,7 +368,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00279">279</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00278">278</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -700,7 +700,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>internal write from EqData src </p>
 
-<p>Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00335">335</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00332">332</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -747,12 +747,12 @@ template&lt;typename UserType &gt; </div>
 <p>callback function for ZeroMQ This is a static function so we can pass a plain pointer to the DOOCS client. </p>
 <p>The first argument will contain the pointer to the object (will be statically casted into DoocsBackendRegisterAccessor&lt;UserType&gt;*). </p>
 
-<p>Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00347">347</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00344">344</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ad30b1cba2fc659ed11a009975cc79ae5"></a>
+<a class="anchor" id="ab925f3214d4a4aa7a8c098aece757e69"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -762,7 +762,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">RegisterPath <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">ChimeraTK::DoocsBackendRegisterAccessor</a>&lt; UserType &gt;::_path</td>
+          <td class="memname">std::string <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">ChimeraTK::DoocsBackendRegisterAccessor</a>&lt; UserType &gt;::_path</td>
         </tr>
       </table>
   </td>
@@ -1120,7 +1120,7 @@ template&lt;typename UserType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2018 07:53:13 for ChimeraTK-DeviceAccess-DoocsBackend by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 15 2018 07:53:40 for ChimeraTK-DeviceAccess-DoocsBackend by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
