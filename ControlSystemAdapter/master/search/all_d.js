@@ -15,7 +15,6 @@ var searchData=
   ['processvariablelistener_2eh',['ProcessVariableListener.h',['../_process_variable_listener_8h.html',1,'']]],
   ['processvariablemap',['ProcessVariableMap',['../class_chimera_t_k_1_1_p_v_manager.html#a4e76fa5b5b3b9c5d0dabf009524d6809',1,'ChimeraTK::PVManager']]],
   ['processvariablesharedptrpair',['ProcessVariableSharedPtrPair',['../class_chimera_t_k_1_1_p_v_manager.html#ab464e065c5d5eaee3d727896256cc1d2',1,'ChimeraTK::PVManager']]],
-  ['pvmanager',['PVManager',['../class_chimera_t_k_1_1_p_v_manager.html#ade9ac76b64766c7ba742a5f2f041797c',1,'ChimeraTK::PVManager::PVManager()'],['../class_chimera_t_k_1_1_p_v_manager.html#a89a4d29ba7c5715d4ca092f2cf8511cc',1,'ChimeraTK::PVManager::PVManager(const PVManager &amp;)']]],
   ['pvmanager',['PVManager',['../class_chimera_t_k_1_1_p_v_manager.html',1,'ChimeraTK']]],
   ['pvmanager_2ecc',['PVManager.cc',['../_p_v_manager_8cc.html',1,'']]],
   ['pvmanager_2eh',['PVManager.h',['../_p_v_manager_8h.html',1,'']]],

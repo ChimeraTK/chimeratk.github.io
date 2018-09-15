@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>ChimeraTK Control System Adapter: ChimeraTK::PVManager Class Reference</title>
+<title>ChimeraTK-ControlSystemAdapter: ChimeraTK::PVManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,10 +24,9 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ChimeraTK Control System Adapter
-   &#160;<span id="projectnumber">00.14.00</span>
+   <div id="projectname">ChimeraTK-ControlSystemAdapter
+   &#160;<span id="projectnumber">01.00.00</span>
    </div>
-   <div id="projectbrief">Tools to facilitate the interfacing to control systems</div>
   </td>
  </tr>
  </tbody>
@@ -67,7 +66,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -95,8 +94,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_chimera_t_k_1_1_p_v_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -108,27 +105,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Inheritance diagram for ChimeraTK::PVManager:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_chimera_t_k_1_1_p_v_manager__inherit__graph.png" border="0" usemap="#_chimera_t_k_1_1_p_v_manager_inherit__map" alt="Inheritance graph"/></div>
-<map name="_chimera_t_k_1_1_p_v_manager_inherit__map" id="_chimera_t_k_1_1_p_v_manager_inherit__map">
+ <div class="center">
+  <img src="class_chimera_t_k_1_1_p_v_manager.png" usemap="#ChimeraTK::PVManager_map" alt=""/>
+  <map id="ChimeraTK::PVManager_map" name="ChimeraTK::PVManager_map">
 </map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for ChimeraTK::PVManager:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_chimera_t_k_1_1_p_v_manager__coll__graph.png" border="0" usemap="#_chimera_t_k_1_1_p_v_manager_coll__map" alt="Collaboration graph"/></div>
-<map name="_chimera_t_k_1_1_p_v_manager_coll__map" id="_chimera_t_k_1_1_p_v_manager_coll__map">
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager_1_1_control_system_send_notification_listener_impl.html">ControlSystemSendNotificationListenerImpl</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send notification listener implementation for control-system process variables.  <a href="class_chimera_t_k_1_1_p_v_manager_1_1_control_system_send_notification_listener_impl.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager_1_1_device_send_notification_listener_impl.html">DeviceSendNotificationListenerImpl</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send notification listener implementation for device-library process variables.  <a href="class_chimera_t_k_1_1_p_v_manager_1_1_device_send_notification_listener_impl.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ab464e065c5d5eaee3d727896256cc1d2"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; ProcessVariable::SharedPtr, ProcessVariable::SharedPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ab464e065c5d5eaee3d727896256cc1d2">ProcessVariableSharedPtrPair</a></td></tr>
@@ -168,30 +150,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ada3b4788574245571d3ec84fb8b23372"><td class="memItemLeft" align="right" valign="top">ProcessVariable::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ada3b4788574245571d3ec84fb8b23372">nextDeviceNotification</a> ()</td></tr>
 <tr class="memdesc:ada3b4788574245571d3ec84fb8b23372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next device-library process variable with a pending notification or <code>null</code> if no notification are pending.  <a href="#ada3b4788574245571d3ec84fb8b23372">More...</a><br /></td></tr>
 <tr class="separator:ada3b4788574245571d3ec84fb8b23372"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ade9ac76b64766c7ba742a5f2f041797c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ade9ac76b64766c7ba742a5f2f041797c">PVManager</a> ()</td></tr>
-<tr class="memdesc:ade9ac76b64766c7ba742a5f2f041797c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private constructor.  <a href="#ade9ac76b64766c7ba742a5f2f041797c">More...</a><br /></td></tr>
-<tr class="separator:ade9ac76b64766c7ba742a5f2f041797c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89a4d29ba7c5715d4ca092f2cf8511cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#a89a4d29ba7c5715d4ca092f2cf8511cc">PVManager</a> (const <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html">PVManager</a> &amp;)</td></tr>
-<tr class="memdesc:a89a4d29ba7c5715d4ca092f2cf8511cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable copy-construction.  <a href="#a89a4d29ba7c5715d4ca092f2cf8511cc">More...</a><br /></td></tr>
-<tr class="separator:a89a4d29ba7c5715d4ca092f2cf8511cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a720b19db0f2cc20c03b9763a41ec9b81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html">PVManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#a720b19db0f2cc20c03b9763a41ec9b81">operator=</a> (const <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html">PVManager</a> &amp;)</td></tr>
-<tr class="memdesc:a720b19db0f2cc20c03b9763a41ec9b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable copy-assignment.  <a href="#a720b19db0f2cc20c03b9763a41ec9b81">More...</a><br /></td></tr>
-<tr class="separator:a720b19db0f2cc20c03b9763a41ec9b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ab130c4ae7afa644877d88b7e44dbcd4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#a4e76fa5b5b3b9c5d0dabf009524d6809">ProcessVariableMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ab130c4ae7afa644877d88b7e44dbcd4f">_processVariables</a></td></tr>
-<tr class="memdesc:ab130c4ae7afa644877d88b7e44dbcd4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map storing the process variables.  <a href="#ab130c4ae7afa644877d88b7e44dbcd4f">More...</a><br /></td></tr>
-<tr class="separator:ab130c4ae7afa644877d88b7e44dbcd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5632c945e404ec813148a25b19a975b"><td class="memItemLeft" align="right" valign="top">boost::lockfree::queue&lt; <a class="el" href="class_chimera_t_k_1_1_p_v_manager_1_1_device_send_notification_listener_impl.html">DeviceSendNotificationListenerImpl</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ae5632c945e404ec813148a25b19a975b">_controlSystemNotificationQueue</a></td></tr>
-<tr class="memdesc:ae5632c945e404ec813148a25b19a975b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue for notifications from the device library to the control system.  <a href="#ae5632c945e404ec813148a25b19a975b">More...</a><br /></td></tr>
-<tr class="separator:ae5632c945e404ec813148a25b19a975b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb7057027c6b6ed432bc4ea77104298d"><td class="memItemLeft" align="right" valign="top">boost::lockfree::queue&lt; <a class="el" href="class_chimera_t_k_1_1_p_v_manager_1_1_control_system_send_notification_listener_impl.html">ControlSystemSendNotificationListenerImpl</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#acb7057027c6b6ed432bc4ea77104298d">_deviceNotificationQueue</a></td></tr>
-<tr class="memdesc:acb7057027c6b6ed432bc4ea77104298d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue for notifications from the control system to the device library.  <a href="#acb7057027c6b6ed432bc4ea77104298d">More...</a><br /></td></tr>
-<tr class="separator:acb7057027c6b6ed432bc4ea77104298d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -233,62 +191,6 @@ Friends</h2></td></tr>
 <p>Type alias for a pair of shared pointers to <a class="el" href="namespace_chimera_t_k.html#a192dc5dbf7ebc07b1c012381df066b4e">ProcessVariable</a>s. </p>
 
 <p>Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00056">56</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ade9ac76b64766c7ba742a5f2f041797c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ChimeraTK::PVManager::PVManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Private constructor. </p>
-<p>An instance of this class should only be created using the <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ab4cc40820493020ce035479360273eff">createPVManager()</a> function. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>FIXME I keep this part of the code commented out, although it is not the best programming style. This performance optimisation has been turned off when changing the map key from string to RegisterPath, which does not have a hash function. We had to change to std::map, which does not have the load factor. To re-enable the performance optimisation write a std::hash for RegisterPath. </dd></dl>
-
-<p>Definition at line <a class="el" href="_p_v_manager_8cc_source.html#l00013">13</a> of file <a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a89a4d29ba7c5715d4ca092f2cf8511cc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ChimeraTK::PVManager::PVManager </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html">PVManager</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Disable copy-construction. </p>
 
 </div>
 </div>
@@ -589,32 +491,6 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a720b19db0f2cc20c03b9763a41ec9b81"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html">PVManager</a>&amp; ChimeraTK::PVManager::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html">PVManager</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Disable copy-assignment. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
 <a class="anchor" id="ab4cc40820493020ce035479360273eff"></a>
 <div class="memitem">
@@ -644,83 +520,6 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ae5632c945e404ec813148a25b19a975b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::lockfree::queue&lt;<a class="el" href="class_chimera_t_k_1_1_p_v_manager_1_1_device_send_notification_listener_impl.html">DeviceSendNotificationListenerImpl</a>*&gt; ChimeraTK::PVManager::_controlSystemNotificationQueue</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Queue for notifications from the device library to the control system. </p>
-<p>This queue is filled by the device library and processed by the control system. The queue stores plain pointers to the notification listeners the lock-free queue can only store PODs. This is safe because a process variable (and thus the notification listener) exists as long as the PV manager exists and the pointer never leaves the PV manager.</p>
-<p>We cannot use an spsc_queue because the spsc_queue does not allow resizing once it has been created, however we need to increase the size of this queue if a process variable is added. </p>
-
-<p>Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00345">345</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acb7057027c6b6ed432bc4ea77104298d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::lockfree::queue&lt;<a class="el" href="class_chimera_t_k_1_1_p_v_manager_1_1_control_system_send_notification_listener_impl.html">ControlSystemSendNotificationListenerImpl</a>*&gt; ChimeraTK::PVManager::_deviceNotificationQueue</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Queue for notifications from the control system to the device library. </p>
-<p>This queue is filled by the control system and processed by the device library. The queue stores plain pointers to the notification listeners the lock-free queue can only store PODs. This is safe because a process variable (and thus the notification listener) exists as long as the PV manager exists and the pointer never leaves the PV manager.</p>
-<p>We cannot use an spsc_queue because the spsc_queue does not allow resizing once it has been created, however we need to increase the size of this queue if a process variable is added. </p>
-
-<p>Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00360">360</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab130c4ae7afa644877d88b7e44dbcd4f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#a4e76fa5b5b3b9c5d0dabf009524d6809">ProcessVariableMap</a> ChimeraTK::PVManager::_processVariables</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Map storing the process variables. </p>
-
-<p>Definition at line <a class="el" href="_p_v_manager_8h_source.html#l00330">330</a> of file <a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/ControlSystemAdapter/include/ChimeraTK/ControlSystemAdapter/<a class="el" href="_p_v_manager_8h_source.html">PVManager.h</a></li>
 <li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/ControlSystemAdapter/src/<a class="el" href="_p_v_manager_8cc_source.html">PVManager.cc</a></li>
@@ -728,7 +527,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 6 2018 07:53:35 for ChimeraTK Control System Adapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 15 2018 07:53:56 for ChimeraTK-ControlSystemAdapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
