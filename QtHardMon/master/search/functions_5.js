@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['loadconfig',['loadConfig',['../class_qt_hard_mon.html#a418bf9611a809431037ed30409d9172a',1,'QtHardMon']]],
-  ['loaddmapfile',['loadDmapFile',['../class_qt_hard_mon.html#a207299bc54f3520d125f9f1ab7c37f06',1,'QtHardMon']]]
+  ['headerdata',['headerData',['../class_register_accessor_model.html#ab40a89d74973315e9d9742c85c9bece9',1,'RegisterAccessorModel']]],
+  ['hexdata',['HexData',['../class_hex_data.html#aa07682a2f13b886b319c4957b3ab146c',1,'HexData::HexData(double v=0)'],['../class_hex_data.html#a8f242003b090567d62f666b7a19a96c0',1,'HexData::HexData(std::string v)']]],
+  ['hexspinbox',['HexSpinBox',['../class_hex_spin_box.html#a8e45f1219dfd1631677ee4f99b745b12',1,'HexSpinBox']]]
 ];

@@ -8,14 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,10 +22,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">QtHardMon
-   &#160;<span id="projectnumber">01.00.02</span>
    </div>
   </td>
  </tr>
@@ -77,21 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('class_register_accessor_model.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -106,6 +82,7 @@ $(document).ready(function(){initNavTree('class_register_accessor_model.html',''
 </iframe>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Public Slots</a> &#124;
@@ -117,6 +94,8 @@ $(document).ready(function(){initNavTree('class_register_accessor_model.html',''
 <div class="title">RegisterAccessorModel Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for RegisterAccessorModel:</div>
 <div class="dyncontent">
@@ -128,87 +107,549 @@ Inheritance diagram for RegisterAccessorModel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:af5343774a8fd7b4291f225d89c72a050"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5343774a8fd7b4291f225d89c72a050"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setChannelNumber</b> (unsigned int channelNumber)</td></tr>
+<tr class="memitem:af5343774a8fd7b4291f225d89c72a050"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#af5343774a8fd7b4291f225d89c72a050">setChannelNumber</a> (unsigned int channelNumber)</td></tr>
 <tr class="separator:af5343774a8fd7b4291f225d89c72a050"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88d345d53cc46d5955577244df2cb321"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88d345d53cc46d5955577244df2cb321"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> ()</td></tr>
+<tr class="memitem:a88d345d53cc46d5955577244df2cb321"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a88d345d53cc46d5955577244df2cb321">read</a> ()</td></tr>
 <tr class="separator:a88d345d53cc46d5955577244df2cb321"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55f664c1735bc2a2daf5255a40ca0211"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55f664c1735bc2a2daf5255a40ca0211"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> ()</td></tr>
+<tr class="memitem:a55f664c1735bc2a2daf5255a40ca0211"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a55f664c1735bc2a2daf5255a40ca0211">write</a> ()</td></tr>
 <tr class="separator:a55f664c1735bc2a2daf5255a40ca0211"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab40a89d74973315e9d9742c85c9bece9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab40a89d74973315e9d9742c85c9bece9"></a>
-QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>headerData</b> (int section, Qt::Orientation orientation, int role) const override</td></tr>
+<tr class="memitem:ab40a89d74973315e9d9742c85c9bece9"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#ab40a89d74973315e9d9742c85c9bece9">headerData</a> (int section, Qt::Orientation orientation, int role) const override</td></tr>
 <tr class="separator:ab40a89d74973315e9d9742c85c9bece9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2ce82e0c7c282215f00e48b49df77b42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ce82e0c7c282215f00e48b49df77b42"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterAccessorModel</b> (QObject *parent, std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt; const &amp;abstractAccessor)</td></tr>
+<tr class="memitem:a2ce82e0c7c282215f00e48b49df77b42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a2ce82e0c7c282215f00e48b49df77b42">RegisterAccessorModel</a> (QObject *parent, std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt; const &amp;abstractAccessor)</td></tr>
 <tr class="separator:a2ce82e0c7c282215f00e48b49df77b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ce063127f54c5058fa5b53c689bfc9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ce063127f54c5058fa5b53c689bfc9b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>rowCount</b> (const QModelIndex &amp;modelIndex=QModelIndex()) const override</td></tr>
+<tr class="memitem:a2ce063127f54c5058fa5b53c689bfc9b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a2ce063127f54c5058fa5b53c689bfc9b">rowCount</a> (const QModelIndex &amp;modelIndex=QModelIndex()) const override</td></tr>
 <tr class="separator:a2ce063127f54c5058fa5b53c689bfc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33829c2c915386f838c94fc2e57f9898"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33829c2c915386f838c94fc2e57f9898"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>columnCount</b> (const QModelIndex &amp;modelIndex=QModelIndex()) const override</td></tr>
+<tr class="memitem:a33829c2c915386f838c94fc2e57f9898"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a33829c2c915386f838c94fc2e57f9898">columnCount</a> (const QModelIndex &amp;modelIndex=QModelIndex()) const override</td></tr>
 <tr class="separator:a33829c2c915386f838c94fc2e57f9898"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b9dc31ab2b4e814d20a966f8b2424ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b9dc31ab2b4e814d20a966f8b2424ec"></a>
-QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> (const QModelIndex &amp;modelIndex, int role=Qt::DisplayRole) const override</td></tr>
+<tr class="memitem:a4b9dc31ab2b4e814d20a966f8b2424ec"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a4b9dc31ab2b4e814d20a966f8b2424ec">data</a> (const QModelIndex &amp;modelIndex, int role=Qt::DisplayRole) const override</td></tr>
 <tr class="separator:a4b9dc31ab2b4e814d20a966f8b2424ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae933c8e8000caf814a1ba29c247af673"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae933c8e8000caf814a1ba29c247af673"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>setData</b> (const QModelIndex &amp;modelIndex, const QVariant &amp;value, int role=Qt::EditRole) override</td></tr>
+<tr class="memitem:ae933c8e8000caf814a1ba29c247af673"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#ae933c8e8000caf814a1ba29c247af673">setData</a> (const QModelIndex &amp;modelIndex, const QVariant &amp;value, int role=Qt::EditRole) override</td></tr>
 <tr class="separator:ae933c8e8000caf814a1ba29c247af673"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e742d8cff0c5c7cfe5fb9f85400bcfd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e742d8cff0c5c7cfe5fb9f85400bcfd"></a>
-Qt::ItemFlags&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> (const QModelIndex &amp;modelIndex) const override</td></tr>
+<tr class="memitem:a5e742d8cff0c5c7cfe5fb9f85400bcfd"><td class="memItemLeft" align="right" valign="top">Qt::ItemFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a5e742d8cff0c5c7cfe5fb9f85400bcfd">flags</a> (const QModelIndex &amp;modelIndex) const override</td></tr>
 <tr class="separator:a5e742d8cff0c5c7cfe5fb9f85400bcfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aecf113c52514c5493d342679c63c2bd4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecf113c52514c5493d342679c63c2bd4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clearModifiedFlags</b> ()</td></tr>
+<tr class="memitem:aecf113c52514c5493d342679c63c2bd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#aecf113c52514c5493d342679c63c2bd4">clearModifiedFlags</a> ()</td></tr>
 <tr class="separator:aecf113c52514c5493d342679c63c2bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aadc46f44e3065524562a86598ed4e09f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadc46f44e3065524562a86598ed4e09f"></a>
-std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_abstractAccessor</b></td></tr>
+<tr class="memitem:aadc46f44e3065524562a86598ed4e09f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#aadc46f44e3065524562a86598ed4e09f">_abstractAccessor</a></td></tr>
 <tr class="separator:aadc46f44e3065524562a86598ed4e09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80e24d64223adfd4d1e16270118d44e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80e24d64223adfd4d1e16270118d44e4"></a>
-std::vector&lt; std::vector&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_isModified</b></td></tr>
+<tr class="memitem:a80e24d64223adfd4d1e16270118d44e4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a80e24d64223adfd4d1e16270118d44e4">_isModified</a></td></tr>
 <tr class="separator:a80e24d64223adfd4d1e16270118d44e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ead1327e583ca921fe7233b33d420cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ead1327e583ca921fe7233b33d420cb"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_channelNumber</b></td></tr>
+<tr class="memitem:a4ead1327e583ca921fe7233b33d420cb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a4ead1327e583ca921fe7233b33d420cb">_channelNumber</a></td></tr>
 <tr class="separator:a4ead1327e583ca921fe7233b33d420cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b813457750017b5cf672ffbbd6b8a53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b813457750017b5cf672ffbbd6b8a53"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>_coockedHexColumnIndex</b></td></tr>
+<tr class="memitem:a7b813457750017b5cf672ffbbd6b8a53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a7b813457750017b5cf672ffbbd6b8a53">_coockedHexColumnIndex</a></td></tr>
 <tr class="separator:a7b813457750017b5cf672ffbbd6b8a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ba70650d3993162a00e025c916e14bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ba70650d3993162a00e025c916e14bd"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>_rawColumnIndex</b></td></tr>
+<tr class="memitem:a7ba70650d3993162a00e025c916e14bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a7ba70650d3993162a00e025c916e14bd">_rawColumnIndex</a></td></tr>
 <tr class="separator:a7ba70650d3993162a00e025c916e14bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3b94c40ec94c8e617dd0607357ed074"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3b94c40ec94c8e617dd0607357ed074"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>_rawHexColumnIndex</b></td></tr>
+<tr class="memitem:af3b94c40ec94c8e617dd0607357ed074"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#af3b94c40ec94c8e617dd0607357ed074">_rawHexColumnIndex</a></td></tr>
 <tr class="separator:af3b94c40ec94c8e617dd0607357ed074"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29de97d50c2ec003a2f48c0cbef5f207"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29de97d50c2ec003a2f48c0cbef5f207"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>_nColumns</b></td></tr>
+<tr class="memitem:a29de97d50c2ec003a2f48c0cbef5f207"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_accessor_model.html#a29de97d50c2ec003a2f48c0cbef5f207">_nColumns</a></td></tr>
 <tr class="separator:a29de97d50c2ec003a2f48c0cbef5f207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00008">8</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a2ce82e0c7c282215f00e48b49df77b42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RegisterAccessorModel::RegisterAccessorModel </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a> &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>abstractAccessor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00008">8</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aecf113c52514c5493d342679c63c2bd4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RegisterAccessorModel::clearModifiedFlags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00115">115</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a33829c2c915386f838c94fc2e57f9898"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RegisterAccessorModel::columnCount </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>modelIndex</em> = <code>QModelIndex()</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00040">40</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b9dc31ab2b4e814d20a966f8b2424ec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariant RegisterAccessorModel::data </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>modelIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>role</em> = <code>Qt::DisplayRole</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00044">44</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e742d8cff0c5c7cfe5fb9f85400bcfd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Qt::ItemFlags RegisterAccessorModel::flags </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>modelIndex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00072">72</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab40a89d74973315e9d9742c85c9bece9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariant RegisterAccessorModel::headerData </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>section</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::Orientation&#160;</td>
+          <td class="paramname"><em>orientation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>role</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00125">125</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a88d345d53cc46d5955577244df2cb321"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RegisterAccessorModel::read </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00102">102</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ce063127f54c5058fa5b53c689bfc9b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RegisterAccessorModel::rowCount </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>modelIndex</em> = <code>QModelIndex()</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00032">32</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af5343774a8fd7b4291f225d89c72a050"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RegisterAccessorModel::setChannelNumber </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>channelNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00097">97</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae933c8e8000caf814a1ba29c247af673"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RegisterAccessorModel::setData </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>modelIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVariant &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>role</em> = <code>Qt::EditRole</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00077">77</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a55f664c1735bc2a2daf5255a40ca0211"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RegisterAccessorModel::write </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8cpp_source.html#l00108">108</a> of file <a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aadc46f44e3065524562a86598ed4e09f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a>&gt; RegisterAccessorModel::_abstractAccessor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00027">27</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ead1327e583ca921fe7233b33d420cb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int RegisterAccessorModel::_channelNumber</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00031">31</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b813457750017b5cf672ffbbd6b8a53"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RegisterAccessorModel::_coockedHexColumnIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00042">42</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a80e24d64223adfd4d1e16270118d44e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::vector&lt;bool&gt; &gt; RegisterAccessorModel::_isModified</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00028">28</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a29de97d50c2ec003a2f48c0cbef5f207"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RegisterAccessorModel::_nColumns</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00046">46</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ba70650d3993162a00e025c916e14bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RegisterAccessorModel::_rawColumnIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00043">43</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af3b94c40ec94c8e617dd0607357ed074"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RegisterAccessorModel::_rawHexColumnIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_register_accessor_model_8h_source.html#l00044">44</a> of file <a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/QtHardMon/src/<a class="el" href="_register_accessor_model_8h_source.html">RegisterAccessorModel.h</a></li>
 <li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/QtHardMon/src/<a class="el" href="_register_accessor_model_8cpp_source.html">RegisterAccessorModel.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="class_register_accessor_model.html">RegisterAccessorModel</a></li>
-    <li class="footer">Generated on Thu Sep 6 2018 07:53:29 for QtHardMon by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Sat Sep 15 2018 07:53:49 for QtHardMon by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
 </body>
 </html>

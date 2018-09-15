@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['qthardmon',['QtHardMon',['../class_qt_hard_mon.html',1,'QtHardMon'],['../class_qt_hard_mon.html#ac50e3f7f4332350413f94105d68a2d86',1,'QtHardMon::QtHardMon()']]],
-  ['qthardmonexception',['QtHardMonException',['../class_qt_hard_mon_exception.html',1,'QtHardMonException'],['../class_qt_hard_mon_exception.html#a4517e942c98357ba6b3123662efa5cad',1,'QtHardMonException::QtHardMonException()']]]
+  ['lastselectedregister',['lastSelectedRegister',['../class_qt_hard_mon_1_1_device_list_item.html#a57dc872f6b6fd8b2d5b8b03af83e9721',1,'QtHardMon::DeviceListItem']]],
+  ['lifetimestandard',['LifetimeStandard',['../class_lifetime_standard.html',1,'']]],
+  ['loadconfig',['loadConfig',['../class_qt_hard_mon.html#a418bf9611a809431037ed30409d9172a',1,'QtHardMon']]],
+  ['loaddmapfile',['loadDmapFile',['../class_qt_hard_mon.html#a207299bc54f3520d125f9f1ab7c37f06',1,'QtHardMon']]],
+  ['lock',['Lock',['../class_single_thread_1_1_lock.html',1,'SingleThread']]]
 ];

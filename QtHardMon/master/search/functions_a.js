@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['setdata',['setData',['../class_register_type_abstractor_raw_impl.html#a1bf0c08e783b82abce89e673d09c46b5',1,'RegisterTypeAbstractorRawImpl']]],
-  ['setdoublespinboxprecision',['setDoubleSpinBoxPrecision',['../class_custom_delegates.html#adb80a81d2389034a2ac32b430b2949c4',1,'CustomDelegates']]],
-  ['seteditordata',['setEditorData',['../class_custom_delegates.html#a66b89d29ef8066daf57ef3cdafa4a750',1,'CustomDelegates']]],
-  ['setmodeldata',['setModelData',['../class_custom_delegates.html#a5507a43ad06051e6cc41c167f1fc8397',1,'CustomDelegates']]],
-  ['setplotafterread',['setPlotAfterRead',['../class_plot_window.html#adc851a77ffc1fd6f758c156ea1229224',1,'PlotWindow']]],
-  ['setrawdata',['setRawData',['../class_register_type_abstractor_raw_impl.html#a15b5289de38cea86708087d51076d7e1',1,'RegisterTypeAbstractorRawImpl']]],
-  ['setvalue',['setValue',['../class_config_file_reader_writer.html#a8a16d95464e893a8faf501b13a9b8dc9',1,'ConfigFileReaderWriter']]]
+  ['ondeadreference',['OnDeadReference',['../class_lifetime_standard.html#a007e49525a1cc51f8eecf711976d77d6',1,'LifetimeStandard']]],
+  ['opendevice',['openDevice',['../class_qt_hard_mon.html#aa136dd5bf3cdf3296490ee815f19ab77',1,'QtHardMon']]],
+  ['operator_3c',['operator&lt;',['../class_device_element_q_tree_item.html#a6ebe6f4285f5750716a09f9b38bf1a84',1,'DeviceElementQTreeItem']]]
 ];

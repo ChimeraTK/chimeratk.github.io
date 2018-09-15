@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value',['value',['../class_hex_data.html#ae6a80e31e4da8d2e519a8a3a5425afe2',1,'HexData']]]
+  ['registerinfo_5f',['registerInfo_',['../class_device_element_q_tree_item.html#a9c1bdf86a71547c00a89dc04549b6cda',1,'DeviceElementQTreeItem']]]
 ];

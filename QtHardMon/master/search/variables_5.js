@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ui',['ui',['../class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e',1,'QtHardMon']]]
+  ['lastselectedregister',['lastSelectedRegister',['../class_qt_hard_mon_1_1_device_list_item.html#a57dc872f6b6fd8b2d5b8b03af83e9721',1,'QtHardMon::DeviceListItem']]]
 ];
