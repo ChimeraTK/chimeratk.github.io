@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['mainwindow',['MainWindow',['../classmtca4u__lmap__editor_1_1_main_window.html',1,'mtca4u_lmap_editor']]],
   ['mapfileparser',['MapFileParser',['../class_chimera_t_k_1_1_map_file_parser.html',1,'ChimeraTK']]],
   ['mapfileparsertest',['MapFileParserTest',['../class_map_file_parser_test.html',1,'']]],
   ['mapfileparsertestsuite',['MapFileParserTestSuite',['../class_map_file_parser_test_suite.html',1,'']]],

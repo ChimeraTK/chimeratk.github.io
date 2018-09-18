@@ -14,7 +14,6 @@ var searchData=
   ['ndregisteraccessordecoratorimpl_3c_20usertype_2c_20usertype_20_3e',['NDRegisterAccessorDecoratorImpl&lt; UserType, UserType &gt;',['../class_chimera_t_k_1_1detail_1_1_n_d_register_accessor_decorator_impl_3_01_user_type_00_01_user_type_01_4.html',1,'ChimeraTK::detail']]],
   ['newbackend',['NewBackend',['../struct_new_backend.html',1,'']]],
   ['notregisteringplugin',['NotRegisteringPlugin',['../struct_not_registering_plugin.html',1,'']]],
-  ['nowheelfilter',['NoWheelFilter',['../classmtca4u__lmap__editor_1_1_no_wheel_filter.html',1,'mtca4u_lmap_editor']]],
   ['numericaddressedbackend',['NumericAddressedBackend',['../class_chimera_t_k_1_1_numeric_addressed_backend.html',1,'ChimeraTK']]],
   ['numericaddressedbackendmuxedregisteraccessor',['NumericAddressedBackendMuxedRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html',1,'ChimeraTK']]],
   ['numericaddressedbackendregisteraccessor',['NumericAddressedBackendRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html',1,'ChimeraTK']]],
