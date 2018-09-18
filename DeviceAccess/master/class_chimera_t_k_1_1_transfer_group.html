@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Group multiple data accessors to efficiently trigger data transfers on the whole group.  
  <a href="class_chimera_t_k_1_1_transfer_group.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html">TransferGroup.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="device_2include_2_transfer_group_8h_source.html">TransferGroup.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -127,39 +127,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa2e834738d65ec80d6675db392e0c9db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#aa2e834738d65ec80d6675db392e0c9db">dump</a> ()</td></tr>
 <tr class="memdesc:aa2e834738d65ec80d6675db392e0c9db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print information about the accessors in this group to screen, which might help to understand which transfers were merged and which were not.  <a href="#aa2e834738d65ec80d6675db392e0c9db">More...</a><br /></td></tr>
 <tr class="separator:aa2e834738d65ec80d6675db392e0c9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a308301f800e1ff4cf8362083f748d267"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a308301f800e1ff4cf8362083f748d267">TransferGroup</a> ()</td></tr>
-<tr class="separator:a308301f800e1ff4cf8362083f748d267"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea5883f974de2d9b2cd5f45a162840a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#aea5883f974de2d9b2cd5f45a162840a8">~TransferGroup</a> ()</td></tr>
-<tr class="separator:aea5883f974de2d9b2cd5f45a162840a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105197b54833784c119bc3f445ae8a91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a105197b54833784c119bc3f445ae8a91">addAccessor</a> (<a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html">TransferElementAbstractor</a> &amp;accessor)</td></tr>
-<tr class="memdesc:a105197b54833784c119bc3f445ae8a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a register accessor to the group.  <a href="#a105197b54833784c119bc3f445ae8a91">More...</a><br /></td></tr>
-<tr class="separator:a105197b54833784c119bc3f445ae8a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13f0ae7ce386f0f34b9ea9db867efbf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a13f0ae7ce386f0f34b9ea9db867efbf4">addAccessor</a> (const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &amp;accessor)</td></tr>
-<tr class="separator:a13f0ae7ce386f0f34b9ea9db867efbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8df339d4a0700087e48d57223231d88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88">read</a> ()</td></tr>
-<tr class="memdesc:af8df339d4a0700087e48d57223231d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger read transfer for all accessors in the group.  <a href="#af8df339d4a0700087e48d57223231d88">More...</a><br /></td></tr>
-<tr class="separator:af8df339d4a0700087e48d57223231d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addc288b86f8349ee1c7c18ec82560a84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#addc288b86f8349ee1c7c18ec82560a84">write</a> ()</td></tr>
-<tr class="memdesc:addc288b86f8349ee1c7c18ec82560a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger write transfer for all accessors in the group.  <a href="#addc288b86f8349ee1c7c18ec82560a84">More...</a><br /></td></tr>
-<tr class="separator:addc288b86f8349ee1c7c18ec82560a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e2a181be4626c14587c6d302f0c90eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a3e2a181be4626c14587c6d302f0c90eb">isReadOnly</a> ()</td></tr>
-<tr class="memdesc:a3e2a181be4626c14587c6d302f0c90eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transfer group is read-only.  <a href="#a3e2a181be4626c14587c6d302f0c90eb">More...</a><br /></td></tr>
-<tr class="separator:a3e2a181be4626c14587c6d302f0c90eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2e834738d65ec80d6675db392e0c9db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#aa2e834738d65ec80d6675db392e0c9db">dump</a> ()</td></tr>
-<tr class="memdesc:aa2e834738d65ec80d6675db392e0c9db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print information about the accessors in this group to screen, which might help to understand which transfers were merged and which were not.  <a href="#aa2e834738d65ec80d6675db392e0c9db">More...</a><br /></td></tr>
-<tr class="separator:aa2e834738d65ec80d6675db392e0c9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a9b1574cc2443300eb639b68035b26ff7"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a9b1574cc2443300eb639b68035b26ff7">lowLevelElements</a></td></tr>
-<tr class="memdesc:a9b1574cc2443300eb639b68035b26ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of low-level TransferElements in this group, which are directly responsible for the hardware access.  <a href="#a9b1574cc2443300eb639b68035b26ff7">More...</a><br /></td></tr>
-<tr class="separator:a9b1574cc2443300eb639b68035b26ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f20fda2f95eb0277d34d45460903963"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a2f20fda2f95eb0277d34d45460903963">copyDecorators</a></td></tr>
-<tr class="memdesc:a2f20fda2f95eb0277d34d45460903963"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all CopyRegisterDecorators in the group.  <a href="#a2f20fda2f95eb0277d34d45460903963">More...</a><br /></td></tr>
-<tr class="separator:a2f20fda2f95eb0277d34d45460903963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ecacb5775ad8f035c964c2527c67186"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a4ecacb5775ad8f035c964c2527c67186">highLevelElements</a></td></tr>
-<tr class="memdesc:a4ecacb5775ad8f035c964c2527c67186"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of high-level TransferElements in this group which are directly used by the user.  <a href="#a4ecacb5775ad8f035c964c2527c67186">More...</a><br /></td></tr>
-<tr class="separator:a4ecacb5775ad8f035c964c2527c67186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42032fc351e50685665f6d45685c100"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#aa42032fc351e50685665f6d45685c100">lowLevelElements</a></td></tr>
+<tr class="memdesc:aa42032fc351e50685665f6d45685c100"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of low-level TransferElements in this group, which are directly responsible for the hardware access.  <a href="#aa42032fc351e50685665f6d45685c100">More...</a><br /></td></tr>
+<tr class="separator:aa42032fc351e50685665f6d45685c100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f35ead3c8f95c0415a9a8d83b48d463"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a8f35ead3c8f95c0415a9a8d83b48d463">copyDecorators</a></td></tr>
+<tr class="memdesc:a8f35ead3c8f95c0415a9a8d83b48d463"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all CopyRegisterDecorators in the group.  <a href="#a8f35ead3c8f95c0415a9a8d83b48d463">More...</a><br /></td></tr>
+<tr class="separator:a8f35ead3c8f95c0415a9a8d83b48d463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a481bb53c36a1c3be9ca06a6576f0d77e"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a481bb53c36a1c3be9ca06a6576f0d77e">highLevelElements</a></td></tr>
+<tr class="memdesc:a481bb53c36a1c3be9ca06a6576f0d77e"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of high-level TransferElements in this group which are directly used by the user.  <a href="#a481bb53c36a1c3be9ca06a6576f0d77e">More...</a><br /></td></tr>
+<tr class="separator:a481bb53c36a1c3be9ca06a6576f0d77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52bc98ae72e9cf28d281a71c2b9bbb4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a52bc98ae72e9cf28d281a71c2b9bbb4e">readOnly</a></td></tr>
 <tr class="memdesc:a52bc98ae72e9cf28d281a71c2b9bbb4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag if group is read-only.  <a href="#a52bc98ae72e9cf28d281a71c2b9bbb4e">More...</a><br /></td></tr>
 <tr class="separator:a52bc98ae72e9cf28d281a71c2b9bbb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,58 +150,8 @@ Protected Attributes</h2></td></tr>
 <p>Grouping accessors can only work with accessors that internally buffer the transferred data. Therefore the deprecated <a class="el" href="class_chimera_t_k_1_1_register_accessor.html" title="DEPRECATED! Use BufferingRegisterAccessor instead! ">RegisterAccessor</a> is not supported, as its <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88" title="Trigger read transfer for all accessors in the group. ">read()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#addc288b86f8349ee1c7c18ec82560a84" title="Trigger write transfer for all accessors in the group. ">write()</a> functions always directly read from/write to the hardware.</p>
 <p>Important note: If accessors pointing to the same values are added to the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a>, the behaviour will be when writing. Depending on the backend and on the exact scenario, the accessors might appear like a copy sharing the internal buffers, thus writing to one accessor may (or may not) change the content of the other. Also calling <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#addc288b86f8349ee1c7c18ec82560a84" title="Trigger write transfer for all accessors in the group. ">write()</a> has then undefined behaviour, since it is not defined from which accessor the values will be written to the device (maybe both in an undefined order). </p>
 
-<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html#l00035">35</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_group_8h_source.html#l00035">35</a> of file <a class="el" href="device_2include_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a308301f800e1ff4cf8362083f748d267"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ChimeraTK::TransferGroup::TransferGroup </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html#l00039">39</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aea5883f974de2d9b2cd5f45a162840a8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ChimeraTK::TransferGroup::~TransferGroup </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html#l00042">42</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a308301f800e1ff4cf8362083f748d267"></a>
 <div class="memitem">
 <div class="memproto">
@@ -295,25 +224,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a105197b54833784c119bc3f445ae8a91"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChimeraTK::TransferGroup::addAccessor </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html">TransferElementAbstractor</a> &amp;&#160;</td>
-          <td class="paramname"><em>accessor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Add a register accessor to the group. </p>
-<p>The register accessor might internally be altered so that accessors accessing the same hardware register will share their buffers. Register accessors must not be placed into multiple TransferGroups. </p>
-
-</div>
-</div>
 <a class="anchor" id="a13f0ae7ce386f0f34b9ea9db867efbf4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -327,42 +237,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000131">Todo:</a></b></dt><dd>implement smarter and more efficient! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000064">Todo:</a></b></dt><dd>implement smarter and more efficient! </dd></dl>
 
 <p>Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00132">132</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a13f0ae7ce386f0f34b9ea9db867efbf4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChimeraTK::TransferGroup::addAccessor </td>
-          <td>(</td>
-          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>accessor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa2e834738d65ec80d6675db392e0c9db"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChimeraTK::TransferGroup::dump </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Print information about the accessors in this group to screen, which might help to understand which transfers were merged and which were not. </p>
 
 </div>
 </div>
@@ -401,42 +278,7 @@ Protected Attributes</h2></td></tr>
 <p>Check if transfer group is read-only. </p>
 <p>A transfer group is read-only, if at least one of its transfer elements is read-only. </p>
 
-</div>
-</div>
-<a class="anchor" id="a3e2a181be4626c14587c6d302f0c90eb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ChimeraTK::TransferGroup::isReadOnly </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check if transfer group is read-only. </p>
-<p>A transfer group is read-only, if at least one of its transfer elements is read-only. </p>
-
 <p>Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00053">53</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af8df339d4a0700087e48d57223231d88"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChimeraTK::TransferGroup::read </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Trigger read transfer for all accessors in the group. </p>
 
 </div>
 </div>
@@ -478,25 +320,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="addc288b86f8349ee1c7c18ec82560a84"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChimeraTK::TransferGroup::write </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Trigger write transfer for all accessors in the group. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a2f20fda2f95eb0277d34d45460903963"></a>
+<a class="anchor" id="a8f35ead3c8f95c0415a9a8d83b48d463"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -504,7 +329,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt; ChimeraTK::TransferGroup::copyDecorators</td>
+          <td class="memname">std::set&lt; boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a>&gt; &gt; ChimeraTK::TransferGroup::copyDecorators</td>
         </tr>
       </table>
   </td>
@@ -517,11 +342,11 @@ Protected Attributes</h2></td></tr>
 <p>List of all CopyRegisterDecorators in the group. </p>
 <p>On these elements, postRead() has to be executed before all other elements. </p>
 
-<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html#l00071">71</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_group_8h_source.html#l00071">71</a> of file <a class="el" href="device_2include_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4ecacb5775ad8f035c964c2527c67186"></a>
+<a class="anchor" id="a481bb53c36a1c3be9ca06a6576f0d77e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -529,7 +354,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt; ChimeraTK::TransferGroup::highLevelElements</td>
+          <td class="memname">std::set&lt; boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a>&gt; &gt; ChimeraTK::TransferGroup::highLevelElements</td>
         </tr>
       </table>
   </td>
@@ -541,11 +366,11 @@ Protected Attributes</h2></td></tr>
 
 <p>List of high-level TransferElements in this group which are directly used by the user. </p>
 
-<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html#l00074">74</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_group_8h_source.html#l00074">74</a> of file <a class="el" href="device_2include_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9b1574cc2443300eb639b68035b26ff7"></a>
+<a class="anchor" id="aa42032fc351e50685665f6d45685c100"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -553,7 +378,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt; ChimeraTK::TransferGroup::lowLevelElements</td>
+          <td class="memname">std::set&lt; boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a>&gt; &gt; ChimeraTK::TransferGroup::lowLevelElements</td>
         </tr>
       </table>
   </td>
@@ -565,7 +390,7 @@ Protected Attributes</h2></td></tr>
 
 <p>List of low-level TransferElements in this group, which are directly responsible for the hardware access. </p>
 
-<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html#l00067">67</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_group_8h_source.html#l00067">67</a> of file <a class="el" href="device_2include_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
 
 </div>
 </div>
@@ -589,18 +414,18 @@ Protected Attributes</h2></td></tr>
 
 <p>Flag if group is read-only. </p>
 
-<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html#l00077">77</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_group_8h_source.html#l00077">77</a> of file <a class="el" href="device_2include_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/ChimeraTK/<a class="el" href="build_2include_2_chimera_t_k_2_transfer_group_8h_source.html">TransferGroup.h</a></li>
+<li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/device/include/<a class="el" href="device_2include_2_transfer_group_8h_source.html">TransferGroup.h</a></li>
 <li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/device/src/<a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 15 2018 07:53:21 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 18 2018 07:53:14 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

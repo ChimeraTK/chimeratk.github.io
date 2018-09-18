@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Exception thrown when a runtime error has occured.  
  <a href="class_chimera_t_k_1_1runtime__error.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="build_2include_2_chimera_t_k_2_exception_8h_source.html">Exception.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="exception_2include_2_exception_8h_source.html">Exception.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ChimeraTK::runtime_error:</div>
 <div class="dyncontent">
@@ -119,18 +119,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a07dac3421f81821cc34aff3c9eb99d20"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1runtime__error.html#a07dac3421f81821cc34aff3c9eb99d20">what</a> () const noexceptoverride</td></tr>
 <tr class="memdesc:a07dac3421f81821cc34aff3c9eb99d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the message describing what exactly went wrong.  <a href="#a07dac3421f81821cc34aff3c9eb99d20">More...</a><br /></td></tr>
 <tr class="separator:a07dac3421f81821cc34aff3c9eb99d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1787cc6ae81bd4112878463a5a477603"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1runtime__error.html#a1787cc6ae81bd4112878463a5a477603">runtime_error</a> (const std::string &amp;message) noexcept</td></tr>
-<tr class="memdesc:a1787cc6ae81bd4112878463a5a477603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a1787cc6ae81bd4112878463a5a477603">More...</a><br /></td></tr>
-<tr class="separator:a1787cc6ae81bd4112878463a5a477603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5dcbcc3dac4eb66fdd6e9a7d0b06d8a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1runtime__error.html#aa5dcbcc3dac4eb66fdd6e9a7d0b06d8a">what</a> () const noexceptoverride</td></tr>
-<tr class="memdesc:aa5dcbcc3dac4eb66fdd6e9a7d0b06d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the message describing what exactly went wrong.  <a href="#aa5dcbcc3dac4eb66fdd6e9a7d0b06d8a">More...</a><br /></td></tr>
-<tr class="separator:aa5dcbcc3dac4eb66fdd6e9a7d0b06d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Exception thrown when a runtime error has occured. </p>
 <p>Runtime errors are e.g. communication errors or hardware failures which can occur at any time. Those errors are therefore not detectable by other means. Typically it is possible to recover from a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> (after the root cause of the error has been resolved) e.g. simply by retrying the operation (potentially after reopening the device, if applicable). </p>
 
-<p>Definition at line <a class="el" href="build_2include_2_chimera_t_k_2_exception_8h_source.html#l00015">15</a> of file <a class="el" href="build_2include_2_chimera_t_k_2_exception_8h_source.html">Exception.h</a>.</p>
+<p>Definition at line <a class="el" href="exception_2include_2_exception_8h_source.html#l00015">15</a> of file <a class="el" href="exception_2include_2_exception_8h_source.html">Exception.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1787cc6ae81bd4112878463a5a477603"></a>
 <div class="memitem">
@@ -158,33 +152,6 @@ Public Member Functions</h2></td></tr>
 <p>The passed message is returned by a call to <a class="el" href="class_chimera_t_k_1_1runtime__error.html#a07dac3421f81821cc34aff3c9eb99d20" title="Return the message describing what exactly went wrong. ">what()</a> and should describe what exactly went wront. </p>
 
 <p>Definition at line <a class="el" href="_exception_8cpp_source.html#l00008">8</a> of file <a class="el" href="_exception_8cpp_source.html">Exception.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1787cc6ae81bd4112878463a5a477603"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ChimeraTK::runtime_error::runtime_error </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Constructor. </p>
-<p>The passed message is returned by a call to <a class="el" href="class_chimera_t_k_1_1runtime__error.html#a07dac3421f81821cc34aff3c9eb99d20" title="Return the message describing what exactly went wrong. ">what()</a> and should describe what exactly went wront. </p>
 
 </div>
 </div>
@@ -217,40 +184,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa5dcbcc3dac4eb66fdd6e9a7d0b06d8a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* ChimeraTK::runtime_error::what </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return the message describing what exactly went wrong. </p>
-<p>The returned message is only descriptive and only meant for display. Program logic must never be based on the content of this string. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/ChimeraTK/<a class="el" href="build_2include_2_chimera_t_k_2_exception_8h_source.html">Exception.h</a></li>
+<li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/exception/include/<a class="el" href="exception_2include_2_exception_8h_source.html">Exception.h</a></li>
 <li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/exception/src/<a class="el" href="_exception_8cpp_source.html">Exception.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 15 2018 07:53:21 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 18 2018 07:53:14 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
