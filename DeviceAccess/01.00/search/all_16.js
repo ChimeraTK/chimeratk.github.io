@@ -24,7 +24,8 @@ var searchData=
   ['writetransactioninprogress',['writeTransactionInProgress',['../class_chimera_t_k_1_1_transfer_element.html#aed11ca7a5de19b71ce48c00a13ad9a6f',1,'ChimeraTK::TransferElement']]],
   ['writewordtorequestedaddress',['writeWordToRequestedAddress',['../class_chimera_t_k_1_1_rebot_dummy_server.html#aa0d70b916bf0e1867c04571229406e19',1,'ChimeraTK::RebotDummyServer']]],
   ['wrong_5fregister_5faddresses',['WRONG_REGISTER_ADDRESSES',['../class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#abd68efcf13704999134c7b6735ab052fa492d9395c6e29f59312c16b9733eaffe',1,'ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem']]],
-  ['wrong_5fversion',['WRONG_VERSION',['../_wrong_version_backend_8cc.html#acf20195ef52a87fb1f4eaaa6e4ae2769',1,'WrongVersionBackend.cc']]],
+  ['wrong_5fversion',['WRONG_VERSION',['../_wrong_version_backend_8cc.html#acf20195ef52a87fb1f4eaaa6e4ae2769',1,'WRONG_VERSION():&#160;WrongVersionBackend.cc'],['../_wrong_version_backend_compat_8cc.html#acf20195ef52a87fb1f4eaaa6e4ae2769',1,'WRONG_VERSION():&#160;WrongVersionBackendCompat.cc']]],
   ['wrongversionbackend',['WrongVersionBackend',['../struct_wrong_version_backend.html',1,'']]],
-  ['wrongversionbackend_2ecc',['WrongVersionBackend.cc',['../_wrong_version_backend_8cc.html',1,'']]]
+  ['wrongversionbackend_2ecc',['WrongVersionBackend.cc',['../_wrong_version_backend_8cc.html',1,'']]],
+  ['wrongversionbackendcompat_2ecc',['WrongVersionBackendCompat.cc',['../_wrong_version_backend_compat_8cc.html',1,'']]]
 ];
