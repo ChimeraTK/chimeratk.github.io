@@ -4,7 +4,7 @@ var searchData=
   ['limitvalue_2eh',['LimitValue.h',['../_limit_value_8h.html',1,'']]],
   ['limitvaluemodulebase',['LimitValueModuleBase',['../struct_chimera_t_k_1_1_limit_value_module_base.html',1,'ChimeraTK']]],
   ['logfile',['logFile',['../classlogging_1_1_logging_module.html#ae90e453ff52bc721d16da109a5270f0f',1,'logging::LoggingModule']]],
-  ['logger',['logger',['../structhistory_1_1_server_history.html#a18852cc0150fe2b3ec131bafbee15129',1,'history::ServerHistory::logger()'],['../classlogging_1_1_logger.html#a87cd7a6981b805533c717053ae412cd0',1,'logging::Logger::Logger()'],['../classlogging_1_1_logger.html#a953a449517466c898df8c4258b564690',1,'logging::Logger::Logger(ctk::Module *module)']]],
+  ['logger',['Logger',['../classlogging_1_1_logger.html#a87cd7a6981b805533c717053ae412cd0',1,'logging::Logger::Logger()'],['../classlogging_1_1_logger.html#a953a449517466c898df8c4258b564690',1,'logging::Logger::Logger(ctk::Module *module)'],['../structhistory_1_1_server_history.html#a18852cc0150fe2b3ec131bafbee15129',1,'history::ServerHistory::logger()']]],
   ['logger',['Logger',['../classlogging_1_1_logger.html',1,'logging']]],
   ['logging',['logging',['../namespacelogging.html',1,'']]],
   ['logging_2ecc',['Logging.cc',['../_logging_8cc.html',1,'']]],

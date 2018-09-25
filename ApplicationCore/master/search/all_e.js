@@ -2,6 +2,8 @@ var searchData=
 [
   ['parsingerror',['parsingError',['../struct_chimera_t_k_1_1_config_reader.html#a3ed2c844cf00558caac8be694a6ed38b',1,'ChimeraTK::ConfigReader']]],
   ['pdata',['pdata',['../class_chimera_t_k_1_1_variable_network_node.html#a05d08d8278b1db30d5cb757fd40c5a0a',1,'ChimeraTK::VariableNetworkNode']]],
+  ['periodictrigger',['PeriodicTrigger',['../struct_chimera_t_k_1_1_periodic_trigger.html',1,'ChimeraTK']]],
+  ['periodictrigger_2eh',['PeriodicTrigger.h',['../_periodic_trigger_8h.html',1,'']]],
   ['pipe_2eh',['Pipe.h',['../_pipe_8h.html',1,'']]],
   ['poll',['poll',['../namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3bab0f6dfb42fa80caee6825bfecd30f094',1,'ChimeraTK']]],
   ['pollingconsumer',['pollingConsumer',['../class_chimera_t_k_1_1_variable_network.html#aae82485cda15b256982eacbb4a103ecaa05356001bec32b754b91dc194e9c90b6',1,'ChimeraTK::VariableNetwork']]],
