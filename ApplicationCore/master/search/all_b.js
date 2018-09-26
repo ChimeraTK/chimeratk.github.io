@@ -5,7 +5,7 @@ var searchData=
   ['mainloopwrapper',['mainLoopWrapper',['../class_chimera_t_k_1_1_application_module.html#ac2c8911aaa22fca678cfd5f79c0a1f0f',1,'ChimeraTK::ApplicationModule']]],
   ['makeconnections',['makeConnections',['../class_chimera_t_k_1_1_application.html#acbbcd560d74531326d4ce56c601132ca',1,'ChimeraTK::Application']]],
   ['makeconnectionsfornetwork',['makeConnectionsForNetwork',['../class_chimera_t_k_1_1_application.html#a9b3bd0b5ad6a7cef5bbd015e654bc584',1,'ChimeraTK::Application']]],
-  ['makeconstant',['makeConstant',['../class_chimera_t_k_1_1_variable_network_node.html#a8a974782ca971fd143aad7b1e87419fa',1,'ChimeraTK::VariableNetworkNode']]],
+  ['makeconstant',['makeConstant',['../class_chimera_t_k_1_1_application.html#ac218f88f11166c115b0facb6a2c981f5',1,'ChimeraTK::Application::makeConstant()'],['../class_chimera_t_k_1_1_variable_network_node.html#a8a974782ca971fd143aad7b1e87419fa',1,'ChimeraTK::VariableNetworkNode::makeConstant()']]],
   ['mapofarray',['MapOfArray',['../struct_chimera_t_k_1_1_config_reader.html#a7e04ce7ff8edbe966c0515af5f09f575',1,'ChimeraTK::ConfigReader']]],
   ['mapofvar',['MapOfVar',['../struct_chimera_t_k_1_1_config_reader.html#a54b4f5b45a0b13c64a92d389f17e8916',1,'ChimeraTK::ConfigReader']]],
   ['markcreated',['markCreated',['../class_chimera_t_k_1_1_variable_network.html#a9a762e216902521b42c86559abfc15d0',1,'ChimeraTK::VariableNetwork']]],
