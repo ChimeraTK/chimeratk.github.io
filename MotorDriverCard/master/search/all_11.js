@@ -216,7 +216,7 @@ var searchData=
   ['stall_5fguard_5fvalue_5fsuffix',['STALL_GUARD_VALUE_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#ae4fc1caecb9f843ce5ca3a02e5349906',1,'mtca4u::dfmc_md22']]],
   ['stallguard2_5fcontrol_5fregister',['STALLGUARD2_CONTROL_REGISTER',['../classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a0e91c67f01ac653ae21d9856112e7e41aae61858a772ac2f3e16552d27a3f5feb',1,'mtca4u::DFMC_MD22Dummy']]],
   ['stallguardcontroldata',['StallGuardControlData',['../classmtca4u_1_1_stall_guard_control_data.html',1,'mtca4u']]],
-  ['stallguardcontroldata',['StallGuardControlData',['../classmtca4u_1_1_stall_guard_control_data.html#aa96944dbc5bbbfb0b66c5c75afe23656',1,'mtca4u::StallGuardControlData::StallGuardControlData()'],['../structmtca4u_1_1_motor_controler_config.html#ae36a3360d9d6a79fb6495da2ed67babc',1,'mtca4u::MotorControlerConfig::stallGuardControlData()']]],
+  ['stallguardcontroldata',['stallGuardControlData',['../structmtca4u_1_1_motor_controler_config.html#ae36a3360d9d6a79fb6495da2ed67babc',1,'mtca4u::MotorControlerConfig::stallGuardControlData()'],['../classmtca4u_1_1_stall_guard_control_data.html#aa96944dbc5bbbfb0b66c5c75afe23656',1,'mtca4u::StallGuardControlData::StallGuardControlData()']]],
   ['start',['start',['../classmtca4u_1_1_stepper_motor.html#a2b467800598f61ffc06bf395f0ed51db',1,'mtca4u::StepperMotor']]],
   ['state',['State',['../class_chimera_t_k_1_1_state.html#a8990cf3f69c6d4ceb82a3c1479df9dd2',1,'ChimeraTK::State']]],
   ['state',['State',['../class_chimera_t_k_1_1_state.html',1,'ChimeraTK']]],

@@ -10,7 +10,7 @@ var indexSectionsWithContent =
   7: "est",
   8: "abcdmnopswx",
   9: "lmost",
-  10: "acdeimos",
+  10: "acdeimors",
   11: "dtw"
 };
 

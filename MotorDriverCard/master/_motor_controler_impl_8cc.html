@@ -112,8 +112,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aac1b406b16130e8ee340fd3fc10b5885"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_motor_controler_impl_8cc.html#aac1b406b16130e8ee340fd3fc10b5885">ACCESSOR_FROM_SUFFIX</a>(SUFFIX,  moduleName)&#160;&#160;&#160;device-&gt;getRegisterAccessor( createMotorRegisterName( _id, SUFFIX ), moduleName )</td></tr>
-<tr class="separator:aac1b406b16130e8ee340fd3fc10b5885"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae24b082899dec422a1b40c469035c60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_motor_controler_impl_8cc.html#aae24b082899dec422a1b40c469035c60">DEFINE_GET_SET_VALUE</a>(NAME,  IDX)</td></tr>
 <tr class="separator:aae24b082899dec422a1b40c469035c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaa41462f4fffd08fa120f941dd562d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_motor_controler_impl_8cc.html#aaaa41462f4fffd08fa120f941dd562d6">DEFINE_SET_GET_TYPED_CONTROLER_REGISTER</a>(NAME)</td></tr>
@@ -122,6 +120,8 @@ Macros</h2></td></tr>
 <tr class="separator:a70bbb209f862401059d09e2e56e4c6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8080d31aad41347cc6741a39bf73dca7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_motor_controler_impl_8cc.html#a8080d31aad41347cc6741a39bf73dca7">DEFINE_SIGNED_GET_SET_VALUE</a>(NAME,  IDX,  CONVERTER)</td></tr>
 <tr class="separator:a8080d31aad41347cc6741a39bf73dca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa203880a5ca5a354d7fccc240ebd918d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_motor_controler_impl_8cc.html#aa203880a5ca5a354d7fccc240ebd918d">RAW_ACCESSOR_FROM_SUFFIX</a>(MODULE_NAME,  SUFFIX)&#160;&#160;&#160;device-&gt;getScalarRegisterAccessor&lt;int32_t&gt;(MODULE_NAME + &quot;/&quot; + createMotorRegisterName(_id, SUFFIX), 0, {ChimeraTK::AccessMode::raw})</td></tr>
+<tr class="separator:aa203880a5ca5a354d7fccc240ebd918d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -131,34 +131,6 @@ Typedefs</h2></td></tr>
 <tr class="separator:aedb00abeee050671ad182a1e88de8914"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="aac1b406b16130e8ee340fd3fc10b5885"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ACCESSOR_FROM_SUFFIX</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">SUFFIX, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">moduleName&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;device-&gt;getRegisterAccessor( createMotorRegisterName( _id, SUFFIX ), moduleName )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00013">13</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="aae24b082899dec422a1b40c469035c60"></a>
 <div class="memitem">
 <div class="memproto">
@@ -271,6 +243,34 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa203880a5ca5a354d7fccc240ebd918d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAW_ACCESSOR_FROM_SUFFIX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">MODULE_NAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">SUFFIX&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;device-&gt;getScalarRegisterAccessor&lt;int32_t&gt;(MODULE_NAME + &quot;/&quot; + createMotorRegisterName(_id, SUFFIX), 0, {ChimeraTK::AccessMode::raw})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00013">13</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="a35ba3251eeb5d4705554f998d2d45f01"></a>
 <div class="memitem">
@@ -303,7 +303,7 @@ Typedefs</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 28 2018 07:55:23 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 2 2018 07:56:23 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
