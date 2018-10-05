@@ -6,6 +6,7 @@ var searchData=
   ['testabledevice',['TestableDevice',['../class_testable_device.html',1,'']]],
   ['testabledummybackend',['TestableDummyBackend',['../class_testable_dummy_backend.html',1,'']]],
   ['testfixture',['TestFixture',['../struct_test_fixture.html',1,'']]],
+  ['testlocker',['TestLocker',['../struct_test_locker.html',1,'']]],
   ['threadinformermutex',['ThreadInformerMutex',['../struct_chimera_t_k_1_1_thread_informer_mutex.html',1,'ChimeraTK']]],
   ['transferelement',['TransferElement',['../class_chimera_t_k_1_1_transfer_element.html',1,'ChimeraTK']]],
   ['transferelementabstractor',['TransferElementAbstractor',['../class_chimera_t_k_1_1_transfer_element_abstractor.html',1,'ChimeraTK']]],
