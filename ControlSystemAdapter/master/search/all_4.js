@@ -2,7 +2,7 @@ var searchData=
 [
   ['datamap',['DataMap',['../class_chimera_t_k_1_1_persistent_data_storage.html#a3b5668a6083f1e6e5d959607a92beb9b',1,'ChimeraTK::PersistentDataStorage']]],
   ['decoratorfactory',['DecoratorFactory',['../class_chimera_t_k_1_1_decorator_factory.html',1,'ChimeraTK']]],
-  ['decoratorfactory',['DecoratorFactory',['../class_chimera_t_k_1_1_decorator_factory.html#ac90b8c95b0270a2b8d6c501752d99b0d',1,'ChimeraTK::DecoratorFactory']]],
+  ['decoratorfactory',['DecoratorFactory',['../class_chimera_t_k_1_1_decorator_factory.html#ac90b8c95b0270a2b8d6c501752d99b0d',1,'ChimeraTK::DecoratorFactory::DecoratorFactory(boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; theImpl_, DecoratorType wantedDecoratorType_)'],['../class_chimera_t_k_1_1_decorator_factory.html#ad0d0f1685aa2940efb98c10a9ab0c486',1,'ChimeraTK::DecoratorFactory::DecoratorFactory(const DecoratorFactory &amp;)=delete']]],
   ['decoratortype',['DecoratorType',['../namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96',1,'ChimeraTK']]],
   ['decoratortypeholder',['DecoratorTypeHolder',['../class_chimera_t_k_1_1_decorator_type_holder.html',1,'ChimeraTK']]],
   ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
