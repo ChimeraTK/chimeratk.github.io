@@ -5,7 +5,7 @@ var indexSectionsWithContent =
   2: "c",
   3: "de",
   4: "bcdefgimoprswz~",
-  5: "_bcdefinorsu",
+  5: "_bcdefinorstu",
   6: "d",
   7: "t"
 };
