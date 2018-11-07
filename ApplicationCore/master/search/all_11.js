@@ -41,6 +41,7 @@ var searchData=
   ['scalarpushinput_3c_20type_20_3e',['ScalarPushInput&lt; Type &gt;',['../struct_chimera_t_k_1_1_scalar_push_input.html',1,'ChimeraTK']]],
   ['senddatatoconsumers',['SendDataToConsumers',['../struct_chimera_t_k_1_1_trigger_fan_out_1_1_send_data_to_consumers.html',1,'ChimeraTK::TriggerFanOut']]],
   ['sendmessage',['sendMessage',['../classlogging_1_1_logger.html#a11fa5c45def08167bd2101093c2b04da',1,'logging::Logger']]],
+  ['sendtrigger',['sendTrigger',['../struct_chimera_t_k_1_1_periodic_trigger.html#ab4057030a6c29c655f9ce659fc643a4d',1,'ChimeraTK::PeriodicTrigger']]],
   ['serverhistory',['ServerHistory',['../structhistory_1_1_server_history.html',1,'history']]],
   ['serverhistory_2ecc',['ServerHistory.cc',['../_server_history_8cc.html',1,'']]],
   ['serverhistory_2eh',['ServerHistory.h',['../_server_history_8h.html',1,'']]],
@@ -61,6 +62,6 @@ var searchData=
   ['stopmeasurement',['stopMeasurement',['../class_chimera_t_k_1_1_profiler.html#a35af786affb9aecdc2e36a792c9ff5a5',1,'ChimeraTK::Profiler']]],
   ['stream',['stream',['../class_chimera_t_k_1_1_pushable_stream.html#a916dbc0fd3430135e4fbb2a73c22e52e',1,'ChimeraTK::PushableStream']]],
   ['stringpair',['StringPair',['../struct_chimera_t_k_1_1_functor_fill.html#a3263a9dfb5e19915b33c1cab357fa03a',1,'ChimeraTK::FunctorFill::StringPair()'],['../struct_chimera_t_k_1_1_array_functor_fill.html#a372870f827d7ba1ae4b78128c147e187',1,'ChimeraTK::ArrayFunctorFill::StringPair()']]],
-  ['submodules',['submodules',['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()'],['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()'],['../class_chimera_t_k_1_1_device_module.html#ad76777799c8dba6eaea5a78b2a0ac3e9',1,'ChimeraTK::DeviceModule::subModules()']]],
+  ['submodules',['subModules',['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()'],['../class_chimera_t_k_1_1_device_module.html#ad76777799c8dba6eaea5a78b2a0ac3e9',1,'ChimeraTK::DeviceModule::subModules()'],['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()']]],
   ['supportedusertypes_2eh',['SupportedUserTypes.h',['../_supported_user_types_8h.html',1,'']]]
 ];

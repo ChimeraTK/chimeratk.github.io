@@ -8,5 +8,6 @@ var searchData=
   ['iscreated',['isCreated',['../class_chimera_t_k_1_1_variable_network.html#af3e81c4da52d6d91a8e9f5875611a709',1,'ChimeraTK::VariableNetwork']]],
   ['isreadable',['isReadable',['../class_chimera_t_k_1_1_constant_accessor.html#a3a30eaefeffd3338fd0cfb56a3c0b4ff',1,'ChimeraTK::ConstantAccessor::isReadable()'],['../class_chimera_t_k_1_1_feeding_fan_out.html#a77d35630b945bce470c62f71f0200e05',1,'ChimeraTK::FeedingFanOut::isReadable()']]],
   ['isreadonly',['isReadOnly',['../class_chimera_t_k_1_1_constant_accessor.html#a37e276bac7fafdf6f9a9fc59be9a6a60',1,'ChimeraTK::ConstantAccessor::isReadOnly()'],['../class_chimera_t_k_1_1_feeding_fan_out.html#ab25d68fb154f9f8407dcb415660da4a5',1,'ChimeraTK::FeedingFanOut::isReadOnly()']]],
+  ['istestablemodeenabled',['isTestableModeEnabled',['../class_chimera_t_k_1_1_application.html#a881553efec1eb3bab305b775eae5d3ea',1,'ChimeraTK::Application']]],
   ['iswriteable',['isWriteable',['../class_chimera_t_k_1_1_constant_accessor.html#a84de76710103c29a186a36ef0791575c',1,'ChimeraTK::ConstantAccessor::isWriteable()'],['../class_chimera_t_k_1_1_feeding_fan_out.html#a6a04459f4acf4cad164eb5f13cc53724',1,'ChimeraTK::FeedingFanOut::isWriteable()']]]
 ];
