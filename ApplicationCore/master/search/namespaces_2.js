@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logging',['logging',['../namespacelogging.html',1,'']]]
+  ['xmlpp',['xmlpp',['../namespacexmlpp.html',1,'']]]
 ];

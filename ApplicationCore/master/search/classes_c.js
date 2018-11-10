@@ -31,5 +31,5 @@ var searchData=
   ['scalarpushinput_3c_20int32_5ft_20_3e',['ScalarPushInput&lt; int32_t &gt;',['../struct_chimera_t_k_1_1_scalar_push_input.html',1,'ChimeraTK']]],
   ['scalarpushinput_3c_20type_20_3e',['ScalarPushInput&lt; Type &gt;',['../struct_chimera_t_k_1_1_scalar_push_input.html',1,'ChimeraTK']]],
   ['senddatatoconsumers',['SendDataToConsumers',['../struct_chimera_t_k_1_1_trigger_fan_out_1_1_send_data_to_consumers.html',1,'ChimeraTK::TriggerFanOut']]],
-  ['serverhistory',['ServerHistory',['../structhistory_1_1_server_history.html',1,'history']]]
+  ['serverhistory',['ServerHistory',['../struct_chimera_t_k_1_1history_1_1_server_history.html',1,'ChimeraTK::history']]]
 ];

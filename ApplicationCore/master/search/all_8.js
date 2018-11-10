@@ -7,7 +7,5 @@ var searchData=
   ['hasfeedingnode',['hasFeedingNode',['../class_chimera_t_k_1_1_variable_network.html#ac4b413e6128be0e7416a29a3636f59b4',1,'ChimeraTK::VariableNetwork']]],
   ['hasimplementation',['hasImplementation',['../class_chimera_t_k_1_1_variable_network_node.html#a24d2e345868ee9e1e4ce1ae3b2f53e0e',1,'ChimeraTK::VariableNetworkNode']]],
   ['hasowner',['hasOwner',['../class_chimera_t_k_1_1_variable_network_node.html#a3fdb3d05e109513f408d54d1b883fa88',1,'ChimeraTK::VariableNetworkNode']]],
-  ['hassubmodule',['hasSubmodule',['../class_chimera_t_k_1_1_entity_owner.html#a21ee39e796d52f1a32512e2dbfa73ed9',1,'ChimeraTK::EntityOwner']]],
-  ['histentry',['histEntry',['../structhistory_1_1_server_history.html#a57d9affd86eace17cb9793dac01039b1',1,'history::ServerHistory']]],
-  ['history',['history',['../namespacehistory.html',1,'']]]
+  ['hassubmodule',['hasSubmodule',['../class_chimera_t_k_1_1_entity_owner.html#a21ee39e796d52f1a32512e2dbfa73ed9',1,'ChimeraTK::EntityOwner']]]
 ];

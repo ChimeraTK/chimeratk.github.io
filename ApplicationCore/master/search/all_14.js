@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['v_5fhistory',['v_history',['../structhistory_1_1_server_history.html#ae917483c9c4127abe9b642ada5c98bb4',1,'history::ServerHistory']]],
   ['valuetype',['valueType',['../class_chimera_t_k_1_1_variable_network.html#ada5fd00357007bceaf88a20c81196c08',1,'ChimeraTK::VariableNetwork::valueType()'],['../struct_chimera_t_k_1_1_variable_network_node__data.html#a5f9b8539eb8e5c235a9f4be9a2771063',1,'ChimeraTK::VariableNetworkNode_data::valueType()']]],
   ['var',['Var',['../struct_chimera_t_k_1_1_config_reader_1_1_var.html',1,'ChimeraTK::ConfigReader']]],
   ['var',['Var',['../struct_chimera_t_k_1_1_config_reader_1_1_var.html#ab34979e34a44e1764cbd474cea98ae2a',1,'ChimeraTK::ConfigReader::Var']]],
@@ -28,8 +27,8 @@ var searchData=
   ['variablenetworknode',['VariableNetworkNode',['../class_chimera_t_k_1_1_variable_network_node.html',1,'ChimeraTK']]],
   ['variablenetworknode_2ecc',['VariableNetworkNode.cc',['../_variable_network_node_8cc.html',1,'']]],
   ['variablenetworknode_2eh',['VariableNetworkNode.h',['../_variable_network_node_8h.html',1,'']]],
-  ['variablenetworknode_5fdata',['VariableNetworkNode_data',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a491ae491d551c46ff4b2f674831429bf',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['variablenetworknode_5fdata',['VariableNetworkNode_data',['../struct_chimera_t_k_1_1_variable_network_node__data.html',1,'ChimeraTK']]],
+  ['variablenetworknode_5fdata',['VariableNetworkNode_data',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a491ae491d551c46ff4b2f674831429bf',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['variablenetworknodedumpingvisitor',['VariableNetworkNodeDumpingVisitor',['../class_chimera_t_k_1_1_variable_network_node_dumping_visitor.html',1,'ChimeraTK']]],
   ['variablenetworknodedumpingvisitor',['VariableNetworkNodeDumpingVisitor',['../class_chimera_t_k_1_1_variable_network_node_dumping_visitor.html#a1dad701fefd37015d8d7e8d2826cad2a',1,'ChimeraTK::VariableNetworkNodeDumpingVisitor']]],
   ['variablenetworknodedumpingvisitor_2ecc',['VariableNetworkNodeDumpingVisitor.cc',['../_variable_network_node_dumping_visitor_8cc.html',1,'']]],

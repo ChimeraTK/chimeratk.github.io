@@ -14,7 +14,7 @@ var searchData=
   ['scalaraccessor_3c_20uint_20_3e',['ScalarAccessor&lt; uint &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
   ['scalaraccessor_3c_20uint32_5ft_20_3e',['ScalarAccessor&lt; uint32_t &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
   ['scalaraccessor_3c_20uint64_5ft_20_3e',['ScalarAccessor&lt; uint64_t &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
-  ['scalarmap',['scalarMap',['../class_chimera_t_k_1_1_test_facility.html#a49151a45dd4adf2dfdfcb5109d5d879b',1,'ChimeraTK::TestFacility::scalarMap()'],['../class_chimera_t_k_1_1_test_facility.html#a5bb88b39b10a471d5ece15c270d6f472',1,'ChimeraTK::TestFacility::ScalarMap()']]],
+  ['scalarmap',['ScalarMap',['../class_chimera_t_k_1_1_test_facility.html#a5bb88b39b10a471d5ece15c270d6f472',1,'ChimeraTK::TestFacility::ScalarMap()'],['../class_chimera_t_k_1_1_test_facility.html#a49151a45dd4adf2dfdfcb5109d5d879b',1,'ChimeraTK::TestFacility::scalarMap()']]],
   ['scalaroutput',['ScalarOutput',['../struct_chimera_t_k_1_1_scalar_output.html#ac6cdb23d6d443d8a688c661369ac5ad8',1,'ChimeraTK::ScalarOutput::ScalarOutput(Module *owner, const std::string &amp;name, std::string unit, const std::string &amp;description, const std::unordered_set&lt; std::string &gt; &amp;tags={})'],['../struct_chimera_t_k_1_1_scalar_output.html#af387202f9844aafa1480d99ccc656419',1,'ChimeraTK::ScalarOutput::ScalarOutput()']]],
   ['scalaroutput',['ScalarOutput',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK']]],
   ['scalaroutput_3c_20int_20_3e',['ScalarOutput&lt; int &gt;',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK']]],
@@ -42,7 +42,8 @@ var searchData=
   ['senddatatoconsumers',['SendDataToConsumers',['../struct_chimera_t_k_1_1_trigger_fan_out_1_1_send_data_to_consumers.html',1,'ChimeraTK::TriggerFanOut']]],
   ['sendmessage',['sendMessage',['../classlogging_1_1_logger.html#a11fa5c45def08167bd2101093c2b04da',1,'logging::Logger']]],
   ['sendtrigger',['sendTrigger',['../struct_chimera_t_k_1_1_periodic_trigger.html#ab4057030a6c29c655f9ce659fc643a4d',1,'ChimeraTK::PeriodicTrigger']]],
-  ['serverhistory',['ServerHistory',['../structhistory_1_1_server_history.html',1,'history']]],
+  ['serverhistory',['ServerHistory',['../struct_chimera_t_k_1_1history_1_1_server_history.html',1,'ChimeraTK::history']]],
+  ['serverhistory',['ServerHistory',['../struct_chimera_t_k_1_1history_1_1_server_history.html#a39390f0fee9bc2b81c5c75a1cba7d4c8',1,'ChimeraTK::history::ServerHistory::ServerHistory(EntityOwner *owner, const std::string &amp;name, const std::string &amp;description, size_t historyLength=1200, bool eliminateHierarchy=false, const std::unordered_set&lt; std::string &gt; &amp;tags={})'],['../struct_chimera_t_k_1_1history_1_1_server_history.html#ad81cb718fab07979ae6dbed9336d67bc',1,'ChimeraTK::history::ServerHistory::ServerHistory()']]],
   ['serverhistory_2ecc',['ServerHistory.cc',['../_server_history_8cc.html',1,'']]],
   ['serverhistory_2eh',['ServerHistory.h',['../_server_history_8h.html',1,'']]],
   ['setappaccessorpointer',['setAppAccessorPointer',['../class_chimera_t_k_1_1_variable_network_node.html#af79f66ca716abb89a34d6811d030dd82',1,'ChimeraTK::VariableNetworkNode']]],
@@ -62,6 +63,6 @@ var searchData=
   ['stopmeasurement',['stopMeasurement',['../class_chimera_t_k_1_1_profiler.html#a35af786affb9aecdc2e36a792c9ff5a5',1,'ChimeraTK::Profiler']]],
   ['stream',['stream',['../class_chimera_t_k_1_1_pushable_stream.html#a916dbc0fd3430135e4fbb2a73c22e52e',1,'ChimeraTK::PushableStream']]],
   ['stringpair',['StringPair',['../struct_chimera_t_k_1_1_functor_fill.html#a3263a9dfb5e19915b33c1cab357fa03a',1,'ChimeraTK::FunctorFill::StringPair()'],['../struct_chimera_t_k_1_1_array_functor_fill.html#a372870f827d7ba1ae4b78128c147e187',1,'ChimeraTK::ArrayFunctorFill::StringPair()']]],
-  ['submodules',['subModules',['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()'],['../class_chimera_t_k_1_1_device_module.html#ad76777799c8dba6eaea5a78b2a0ac3e9',1,'ChimeraTK::DeviceModule::subModules()'],['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()']]],
+  ['submodules',['submodules',['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()'],['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()'],['../class_chimera_t_k_1_1_device_module.html#ad76777799c8dba6eaea5a78b2a0ac3e9',1,'ChimeraTK::DeviceModule::subModules()']]],
   ['supportedusertypes_2eh',['SupportedUserTypes.h',['../_supported_user_types_8h.html',1,'']]]
 ];

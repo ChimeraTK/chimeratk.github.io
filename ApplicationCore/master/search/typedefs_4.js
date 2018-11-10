@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['mapofarray',['MapOfArray',['../struct_chimera_t_k_1_1_config_reader.html#a7e04ce7ff8edbe966c0515af5f09f575',1,'ChimeraTK::ConfigReader']]],
-  ['mapofvar',['MapOfVar',['../struct_chimera_t_k_1_1_config_reader.html#a54b4f5b45a0b13c64a92d389f17e8916',1,'ChimeraTK::ConfigReader']]],
-  ['message',['Message',['../namespacelogging.html#a1d6cce5422bf8d8156e9d2c9d1f8d6c1',1,'logging']]]
+  ['namelist',['NameList',['../struct_chimera_t_k_1_1_micro_d_a_q.html#a4125c217f6bd3fa6ec7ab6ce5f7f8e0b',1,'ChimeraTK::MicroDAQ::NameList()'],['../struct_chimera_t_k_1_1history_1_1_server_history.html#ae982a39b3f0bf3dc291f4db9389e98c1',1,'ChimeraTK::history::ServerHistory::NameList()']]]
 ];
