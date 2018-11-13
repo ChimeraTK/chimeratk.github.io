@@ -72,7 +72,7 @@ var searchData=
   ['_5fnumberofwords',['_numberOfWords',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a7859af553869c3da639418e7bde423fc',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor::_numberOfWords()'],['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a3a1c0c692c688004a3ef9cc70f1e7e83',1,'ChimeraTK::NumericAddressedLowLevelTransferElement::_numberOfWords()']]],
   ['_5fnwordsleft',['_nWordsLeft',['../struct_chimera_t_k_1_1_dummy_protocol1.html#a639a250eb07d288a4fada019690e32f2',1,'ChimeraTK::DummyProtocol1']]],
   ['_5fopened',['_opened',['../class_chimera_t_k_1_1_device_backend_impl.html#aaeb91e281c752ba579ad9b30bd6e7181',1,'ChimeraTK::DeviceBackendImpl']]],
-  ['_5fparameters',['_Parameters',['../struct_chimera_t_k_1_1_sdm.html#a9430e98c8d7945f8d269e9d493ee5cd4',1,'ChimeraTK::Sdm']]],
+  ['_5fparameters',['_parameters',['../class_chimera_t_k_1_1_logical_name_map_parser.html#a78e7db8600ae9638968d5e9b3e06f647',1,'ChimeraTK::LogicalNameMapParser::_parameters()'],['../class_chimera_t_k_1_1_logical_name_mapping_backend.html#adf828cef2ec85f5d04b0926536d2a069',1,'ChimeraTK::LogicalNameMappingBackend::_parameters()'],['../struct_chimera_t_k_1_1_sdm.html#a9430e98c8d7945f8d269e9d493ee5cd4',1,'ChimeraTK::Sdm::_Parameters()']]],
   ['_5fparent',['_parent',['../struct_chimera_t_k_1_1_dummy_protocol0.html#ac34a9f3db38b5c5de063f4fb72de0af7',1,'ChimeraTK::DummyProtocol0']]],
   ['_5fpath',['_path',['../classmy_register_info.html#a1f263033ecf55189f63ee99259dc307f',1,'myRegisterInfo']]],
   ['_5fpcieuni_5fioctl_5fbar_5fsizes',['_pcieuni_ioctl_bar_sizes',['../struct__pcieuni__ioctl__bar__sizes.html',1,'']]],

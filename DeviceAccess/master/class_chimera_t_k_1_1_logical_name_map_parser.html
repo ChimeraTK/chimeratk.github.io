@@ -107,9 +107,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad1a3188f2799ab0530be721185f0b50a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#ad1a3188f2799ab0530be721185f0b50a">LogicalNameMapParser</a> (const std::string &amp;fileName)</td></tr>
-<tr class="memdesc:ad1a3188f2799ab0530be721185f0b50a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: parse map from XML file.  <a href="#ad1a3188f2799ab0530be721185f0b50a">More...</a><br /></td></tr>
-<tr class="separator:ad1a3188f2799ab0530be721185f0b50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a813dbed5f30ce2ae69ab8863a9284"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a71a813dbed5f30ce2ae69ab8863a9284">LogicalNameMapParser</a> (const std::string &amp;fileName, const std::map&lt; std::string, std::string &gt; &amp;parameters)</td></tr>
+<tr class="memdesc:a71a813dbed5f30ce2ae69ab8863a9284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: parse map from XML file.  <a href="#a71a813dbed5f30ce2ae69ab8863a9284">More...</a><br /></td></tr>
+<tr class="separator:a71a813dbed5f30ce2ae69ab8863a9284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a288f59851095c33853480053dc93e690"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a288f59851095c33853480053dc93e690">LogicalNameMapParser</a> ()</td></tr>
 <tr class="memdesc:a288f59851095c33853480053dc93e690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor: Create empty map.  <a href="#a288f59851095c33853480053dc93e690">More...</a><br /></td></tr>
 <tr class="separator:a288f59851095c33853480053dc93e690"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,13 +156,16 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a1aa41ed783b977a4db1d15e78a9bee1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_register_catalogue.html">RegisterCatalogue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a1aa41ed783b977a4db1d15e78a9bee1a">_catalogue</a></td></tr>
 <tr class="memdesc:a1aa41ed783b977a4db1d15e78a9bee1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">actual register info map (register name to target information)  <a href="#a1aa41ed783b977a4db1d15e78a9bee1a">More...</a><br /></td></tr>
 <tr class="separator:a1aa41ed783b977a4db1d15e78a9bee1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e7db8600ae9638968d5e9b3e06f647"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a78e7db8600ae9638968d5e9b3e06f647">_parameters</a></td></tr>
+<tr class="memdesc:a78e7db8600ae9638968d5e9b3e06f647"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameter map  <a href="#a78e7db8600ae9638968d5e9b3e06f647">More...</a><br /></td></tr>
+<tr class="separator:a78e7db8600ae9638968d5e9b3e06f647"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logical name map: store information from xlmap file and provide it to the <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html" title="Backend to map logical register names onto real hardware registers. ">LogicalNameMappingBackend</a> and its register accessors. </p>
 
 <p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00028">28</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad1a3188f2799ab0530be721185f0b50a"></a>
+<a class="anchor" id="a71a813dbed5f30ce2ae69ab8863a9284"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -173,8 +176,18 @@ Protected Attributes</h2></td></tr>
           <td class="memname">ChimeraTK::LogicalNameMapParser::LogicalNameMapParser </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::map&lt; std::string, std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>parameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -213,7 +226,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Default constructor: Create empty map. </p>
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00038">38</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00040">40</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
 
 </div>
 </div>
@@ -241,7 +254,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Obtain the parsed register catalogue. </p>
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00042">42</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00044">44</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
 
 </div>
 </div>
@@ -260,7 +273,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Obtain list of all target devices referenced in the map. </p>
 
-<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00288">288</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
+<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00309">309</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
 
 </div>
 </div>
@@ -418,7 +431,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00080">80</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
+<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00101">101</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
 
 </div>
 </div>
@@ -456,7 +469,7 @@ template&lt;typename T &gt; </div>
 
 <p>called inside <a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a9db9a3f936019b197cc735509adea429" title="parse the given XML file ">parseFile()</a> to parse an XML element and its sub-elements recursivly </p>
 
-<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00184">184</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
+<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00205">205</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
 
 </div>
 </div>
@@ -484,7 +497,7 @@ template&lt;typename T &gt; </div>
 
 <p>parse the given XML file </p>
 
-<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00157">157</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
+<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00178">178</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
 
 </div>
 </div>
@@ -512,7 +525,7 @@ template&lt;typename T &gt; </div>
 
 <p>throw a parsing error with more information </p>
 
-<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00300">300</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
+<p>Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00321">321</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
 
 </div>
 </div>
@@ -537,7 +550,7 @@ template&lt;typename T &gt; </div>
 
 <p>actual register info map (register name to target information) </p>
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00074">74</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00076">76</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
 
 </div>
 </div>
@@ -561,7 +574,31 @@ template&lt;typename T &gt; </div>
 
 <p>file name of the logical map </p>
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00068">68</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00070">70</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a78e7db8600ae9638968d5e9b3e06f647"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string,std::string&gt; ChimeraTK::LogicalNameMapParser::_parameters</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>parameter map </p>
+
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00079">79</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
 
 </div>
 </div>
@@ -585,7 +622,7 @@ template&lt;typename T &gt; </div>
 
 <p>current register path in the map </p>
 
-<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00071">71</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html#l00073">73</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html">LogicalNameMapParser.h</a>.</p>
 
 </div>
 </div>
@@ -596,7 +633,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 23 2018 07:53:14 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 13 2018 06:53:15 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
