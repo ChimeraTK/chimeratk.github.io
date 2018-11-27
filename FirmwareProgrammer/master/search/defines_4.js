@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['hex',['HEX',['../_c_make_c_compiler_id_8c.html#a46d5d95daa1bef867bd0179594310ed5',1,'HEX():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a46d5d95daa1bef867bd0179594310ed5',1,'HEX():&#160;CMakeCXXCompilerId.cpp']]]
+  ['pcie_5fv5',['PCIE_V5',['../registers_8h.html#aeed17deae8547d63aaf153e384c6210a',1,'registers.h']]],
+  ['prog_5fdefault_5faddress',['PROG_DEFAULT_ADDRESS',['../registers_8h.html#a2942131538b5745b6df108d96c87e6a3',1,'registers.h']]],
+  ['prog_5fdefault_5fbar',['PROG_DEFAULT_BAR',['../registers_8h.html#a5ffd374a04548fcc69d5a0802bb7d223',1,'registers.h']]],
+  ['prog_5fdefault_5fmodule_5fname',['PROG_DEFAULT_MODULE_NAME',['../registers_8h.html#a7955819d09961462b0965e63dc68b0ef',1,'registers.h']]],
+  ['prog_5fdefault_5fmodule_5fname2',['PROG_DEFAULT_MODULE_NAME2',['../registers_8h.html#a226dd2a776eac2a0bfbed67604bdf079',1,'registers.h']]],
+  ['prog_5freg_5farea_5fsize',['PROG_REG_AREA_SIZE',['../registers_8h.html#ab413cce04ef74d70097cec02312f888e',1,'registers.h']]]
 ];
