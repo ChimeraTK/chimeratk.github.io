@@ -154,9 +154,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a53cf56156545c493cc509af03337c9bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html#a53cf56156545c493cc509af03337c9bc">findRemainingByName_index</a></td></tr>
 <tr class="memdesc:a53cf56156545c493cc509af03337c9bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">functor to find the remaining time of a given timer  <a href="#a53cf56156545c493cc509af03337c9bc">More...</a><br /></td></tr>
 <tr class="separator:a53cf56156545c493cc509af03337c9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a455f38ecfb9ec8e0aae9b6cb40f12da0"><td class="memItemLeft" align="right" valign="top">timerTypes *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html#a455f38ecfb9ec8e0aae9b6cb40f12da0">timers</a></td></tr>
-<tr class="memdesc:a455f38ecfb9ec8e0aae9b6cb40f12da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">fusion::vector of timer instances  <a href="#a455f38ecfb9ec8e0aae9b6cb40f12da0">More...</a><br /></td></tr>
-<tr class="separator:a455f38ecfb9ec8e0aae9b6cb40f12da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf977ec1dabfa1731c2d5982de88869"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; timerTypes &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html#abdf977ec1dabfa1731c2d5982de88869">timers</a></td></tr>
+<tr class="memdesc:abdf977ec1dabfa1731c2d5982de88869"><td class="mdescLeft">&#160;</td><td class="mdescRight">fusion::vector of timer instances  <a href="#abdf977ec1dabfa1731c2d5982de88869">More...</a><br /></td></tr>
+<tr class="separator:abdf977ec1dabfa1731c2d5982de88869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af49e1aae5dc1cda8ef19882734979ca4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html#af49e1aae5dc1cda8ef19882734979ca4">names</a></td></tr>
 <tr class="memdesc:af49e1aae5dc1cda8ef19882734979ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::vector of timer names  <a href="#af49e1aae5dc1cda8ef19882734979ca4">More...</a><br /></td></tr>
 <tr class="separator:af49e1aae5dc1cda8ef19882734979ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,7 +172,7 @@ class ChimeraTK::VirtualLab::TimerGroup&lt; timerTypes &gt;</h3>
 <p>The template agument must be a boost::fusion::vector of the timer types. The implementation must initialise the timerTypes vector "timers" with all timers and the map names with the timer names and the corresponding index in the timerTypes vector.</p>
 <p>This implementation is done for VirtualDevices using the DECLARE_TIMER_GROUP macro. </p>
 
-<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00106">106</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00108">108</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="adf5f4d211c697f631015e93a9b258801"></a>
 <div class="memitem">
@@ -197,7 +197,7 @@ template&lt;class timerTypes&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00108">108</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00110">110</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -224,7 +224,7 @@ template&lt;class timerTypes&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00109">109</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00111">111</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -256,7 +256,7 @@ template&lt;class timerTypes&gt; </div>
 <p>Advance the timer's current time by tval. </p>
 <p>Returns true if any timer was fired. If tval &lt; 0, this function does nothing. If tval &gt; <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html#a516fa326ebb6fa0a97630ca507883655" title="Get remaining time until the next timer fires, or -1 if no timer has been set. ">getRemaining()</a>, the timer is advanced in multiple steps to make sure repetitive events are fired. </p>
 
-<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00131">131</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00133">133</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -286,7 +286,7 @@ template&lt;class timerTypes&gt; </div>
 <p>Advance the timer to the next requested time. </p>
 <p>Returns true if any timer was fired. Otherwise none of the timers was set and thus the current time remains unchanged </p>
 
-<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00145">145</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00147">147</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -317,7 +317,7 @@ template&lt;class timerTypes&gt; </div>
 <p>Advance the group to the next requested time of the given sub-timer. </p>
 <p>Returns true if any timer was fired. Note: this call will be relatively expensive due to the string argument. If possible (e.g. inside a VirtualDevice implementation), access the subtimer directly, obtain its remaining time and call <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html#a0e863e8e3a390ac56c51b60f848572ea" title="Advance the timer&#39;s current time by tval. ">advance(VirtualTime)</a>. </p>
 
-<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00152">152</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00154">154</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -346,7 +346,7 @@ template&lt;class timerTypes&gt; </div>
 
 <p>Get current time. </p>
 
-<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00157">157</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00159">159</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -375,7 +375,7 @@ template&lt;class timerTypes&gt; </div>
 
 <p>Get remaining time until the next timer fires, or -1 if no timer has been set. </p>
 
-<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00112">112</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00114">114</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -406,7 +406,7 @@ template&lt;class timerTypes&gt; </div>
 <p>Get remaining time until the specified timer fires, or -1 if the timer has not been set. </p>
 <p>Note: this call will be relatively expensive due to the string argument. If possible (e.g. inside a VirtualDevice implementation), access the subtimer directly. </p>
 
-<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00122">122</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00124">124</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -433,7 +433,7 @@ template&lt;class timerTypes&gt; </div>
 
 <p>current time </p>
 
-<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00218">218</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00220">220</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -459,7 +459,7 @@ template&lt;class timerTypes&gt; </div>
 
 <p>functor to find the remaining time of a given timer </p>
 
-<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00177">177</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00179">179</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -485,11 +485,11 @@ template&lt;class timerTypes&gt; </div>
 
 <p>std::vector of timer names </p>
 
-<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00215">215</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00217">217</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a455f38ecfb9ec8e0aae9b6cb40f12da0"></a>
+<a class="anchor" id="abdf977ec1dabfa1731c2d5982de88869"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -499,7 +499,7 @@ template&lt;class timerTypes&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">timerTypes* <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html">ChimeraTK::VirtualLab::TimerGroup</a>&lt; timerTypes &gt;::timers</td>
+          <td class="memname">std::unique_ptr&lt;timerTypes&gt; <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html">ChimeraTK::VirtualLab::TimerGroup</a>&lt; timerTypes &gt;::timers</td>
         </tr>
       </table>
   </td>
@@ -511,7 +511,7 @@ template&lt;class timerTypes&gt; </div>
 
 <p>fusion::vector of timer instances </p>
 
-<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00212">212</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
+<p>Definition at line <a class="el" href="_timer_group_8h_source.html#l00214">214</a> of file <a class="el" href="_timer_group_8h_source.html">TimerGroup.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +521,7 @@ template&lt;class timerTypes&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 5 2018 07:53:56 for mtca4u-VirtualLab by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 27 2018 06:53:43 for mtca4u-VirtualLab by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
