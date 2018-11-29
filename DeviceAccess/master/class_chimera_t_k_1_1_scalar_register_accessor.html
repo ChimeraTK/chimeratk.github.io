@@ -123,8 +123,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0720037bc29528d2eac9af7b5078da70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Placeholder constructor, to allow late initialisation of the accessor, e.g.  <a href="#a0720037bc29528d2eac9af7b5078da70">More...</a><br /></td></tr>
 <tr class="separator:a0720037bc29528d2eac9af7b5078da70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acad78236ac3ce3b5f238c3f09f926567"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#acad78236ac3ce3b5f238c3f09f926567">operator UserType &amp;</a> ()</td></tr>
-<tr class="memdesc:acad78236ac3ce3b5f238c3f09f926567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit type conversion to user type T to access the first element (often the only element).  <a href="#acad78236ac3ce3b5f238c3f09f926567">More...</a><br /></td></tr>
+<tr class="memdesc:acad78236ac3ce3b5f238c3f09f926567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit type conversion to user type T to access the value as a reference.  <a href="#acad78236ac3ce3b5f238c3f09f926567">More...</a><br /></td></tr>
 <tr class="separator:acad78236ac3ce3b5f238c3f09f926567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec18c9402df9dc3c4e3cf422577abb38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#aec18c9402df9dc3c4e3cf422577abb38">operator const UserType &amp;</a> () const </td></tr>
+<tr class="memdesc:aec18c9402df9dc3c4e3cf422577abb38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit type conversion to user type T to access the const value.  <a href="#aec18c9402df9dc3c4e3cf422577abb38">More...</a><br /></td></tr>
+<tr class="separator:aec18c9402df9dc3c4e3cf422577abb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47763b3295a8b0ac97ae45e3d08109de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ScalarRegisterAccessor</a>&lt; UserType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#a47763b3295a8b0ac97ae45e3d08109de">operator=</a> (UserType rightHandSide)</td></tr>
 <tr class="memdesc:a47763b3295a8b0ac97ae45e3d08109de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator, assigns the first element.  <a href="#a47763b3295a8b0ac97ae45e3d08109de">More...</a><br /></td></tr>
 <tr class="separator:a47763b3295a8b0ac97ae45e3d08109de"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -363,7 +366,36 @@ template&lt;typename COOCKED_TYPE &gt; </div>
 <p>Get the coocked values in case the accessor is a raw accessor (which does not do data conversion). </p>
 <p>This returns the converted data from the user buffer. It does not do any read or write transfer. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00080">80</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00084">84</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aec18c9402df9dc3c4e3cf422577abb38"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ChimeraTK::ScalarRegisterAccessor</a>&lt; UserType &gt;::operator const UserType &amp; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implicit type conversion to user type T to access the const value. </p>
+
+<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00045">45</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -390,10 +422,9 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implicit type conversion to user type T to access the first element (often the only element). </p>
-<p>This covers already a lot of operations like arithmetics and comparison </p>
+<p>Implicit type conversion to user type T to access the value as a reference. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00041">41</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00040">40</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -422,7 +453,7 @@ template&lt;typename UserType&gt; </div>
 
 <p>Pre-increment operator for the first element. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00053">53</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00057">57</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -452,7 +483,7 @@ template&lt;typename UserType&gt; </div>
 
 <p>Post-increment operator for the first element. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00063">63</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00067">67</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -481,7 +512,7 @@ template&lt;typename UserType&gt; </div>
 
 <p>Pre-decrement operator for the first element. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00058">58</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00062">62</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -511,7 +542,7 @@ template&lt;typename UserType&gt; </div>
 
 <p>Post-decrement operator for the first element. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00070">70</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00074">74</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -541,7 +572,7 @@ template&lt;typename UserType&gt; </div>
 
 <p>Assignment operator, assigns the first element. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00046">46</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00050">50</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -574,7 +605,7 @@ template&lt;typename COOCKED_TYPE &gt; </div>
 <p>Set the coocked values in case the accessor is a raw accessor (which does not do data conversion). </p>
 <p>This converts to raw and writes the data to the user buffer. It does not do any read or write transfer. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00088">88</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00092">92</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -599,7 +630,7 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00092">92</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00096">96</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -609,7 +640,7 @@ template&lt;typename UserType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 13 2018 06:53:15 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 29 2018 06:53:14 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
