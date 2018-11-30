@@ -83,6 +83,7 @@ var searchData=
   ['_5fprotocolversion',['_protocolVersion',['../class_chimera_t_k_1_1_rebot_dummy_server.html#a6e452541618b86c49bcb7b115d5bede9',1,'ChimeraTK::RebotDummyServer']]],
   ['_5frawaccessor',['_rawAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aa0b4eed8058e91c17e3789da2e238aa9',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor']]],
   ['_5frawaccessorhandler',['_rawAccessorHandler',['../class_chimera_t_k_1_1_register_accessor.html#a1e3b4f23ab4fa74e52f41be067547c8c',1,'ChimeraTK::RegisterAccessor']]],
+  ['_5freadable',['_readable',['../classmy_register_info.html#adf9eac2a7d7a057f286aba1e31de70d1',1,'myRegisterInfo']]],
   ['_5freadonlyaddresses',['_readOnlyAddresses',['../class_chimera_t_k_1_1_dummy_backend.html#a86dd11f6aff1032c33ef96b1e9219015',1,'ChimeraTK::DummyBackend']]],
   ['_5fregisterinfo',['_registerInfo',['../class_chimera_t_k_1_1_register_accessor.html#a42f309a72798d9490d865b757925007e',1,'ChimeraTK::RegisterAccessor::_registerInfo()'],['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#abffe9754211bf550cb65a0c0660cf85a',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor::_registerInfo()']]],
   ['_5fregistermap',['_registerMap',['../class_chimera_t_k_1_1_numeric_addressed_backend.html#a39251fbfc114b5c557ccbbb89ad88e74',1,'ChimeraTK::NumericAddressedBackend::_registerMap()'],['../class_chimera_t_k_1_1_subdevice_backend.html#a72b52eefeb319aa4a8e84a87faae0084',1,'ChimeraTK::SubdeviceBackend::_registerMap()']]],
@@ -97,6 +98,7 @@ var searchData=
   ['_5fshortname',['_shortName',['../struct_argument.html#a36da86ea8486edfce1577578acf192eb',1,'Argument']]],
   ['_5fstartaddress',['_startAddress',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a98eb107886cc6dde2b9efe713bf1f98c',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor::_startAddress()'],['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a6c7e832c7412c05fbbc7d5dd30638f9a',1,'ChimeraTK::NumericAddressedLowLevelTransferElement::_startAddress()']]],
   ['_5fstate',['_state',['../class_chimera_t_k_1_1_rebot_dummy_server.html#abf12ecc3eff64ee39cba575018799868',1,'ChimeraTK::RebotDummyServer']]],
+  ['_5fsupportedflags',['_supportedFlags',['../classmy_register_info.html#a7b8cf84a4b48ed095b8c25ba57c41fe3',1,'myRegisterInfo']]],
   ['_5ftarget',['_target',['../class_chimera_t_k_1_1detail_1_1_n_d_register_accessor_decorator_impl.html#a6175b5506c9873ea3cdaafaff540a87f',1,'ChimeraTK::detail::NDRegisterAccessorDecoratorImpl::_target()'],['../class_chimera_t_k_1_1detail_1_1_n_d_register_accessor_decorator_impl_3_01_user_type_00_01_user_type_01_4.html#a7095da1a38889410256f7d9884273cfd',1,'ChimeraTK::detail::NDRegisterAccessorDecoratorImpl&lt; UserType, UserType &gt;::_target()']]],
   ['_5ftcpcommunicator',['_tcpCommunicator',['../class_chimera_t_k_1_1_rebot_backend.html#a79e426b42755271b55f12010f1a7a289',1,'ChimeraTK::RebotBackend::_tcpCommunicator()'],['../struct_chimera_t_k_1_1_rebot_protocol0.html#a385ad3b2739a7607187d749dad567e6f',1,'ChimeraTK::RebotProtocol0::_tcpCommunicator()']]],
   ['_5fthreadinformermutex',['_threadInformerMutex',['../class_chimera_t_k_1_1_rebot_backend.html#a3f1e2280224ce723e2cf7925ea2b535b',1,'ChimeraTK::RebotBackend']]],
@@ -105,5 +107,6 @@ var searchData=
   ['_5funit',['_unit',['../class_chimera_t_k_1_1_transfer_element.html#a8fffb069722f43530cecbcaa40b7c670',1,'ChimeraTK::TransferElement']]],
   ['_5fvalue',['_value',['../class_chimera_t_k_1_1_data_type.html#aa7ad04100934a45d506a1613f697ad3c',1,'ChimeraTK::DataType']]],
   ['_5fwordoffsetinregister',['_wordOffsetInRegister',['../class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a34307ddff43c6c4bcbef9c341a670da7',1,'ChimeraTK::LNMBackendVariableAccessor']]],
+  ['_5fwriteable',['_writeable',['../classmy_register_info.html#a0f0e6ca6d97d5dd557cad5d5263b7639',1,'myRegisterInfo']]],
   ['_5fwritecallbackfunctions',['_writeCallbackFunctions',['../class_chimera_t_k_1_1_dummy_backend.html#aaf1bdfb96b6f591da68cf01bcd3d9c17',1,'ChimeraTK::DummyBackend']]]
 ];

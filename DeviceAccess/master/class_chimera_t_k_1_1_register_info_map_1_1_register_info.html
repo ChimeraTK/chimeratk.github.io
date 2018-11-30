@@ -153,6 +153,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa9557afbc83009c30022f9f7237b6f3e"><td class="memItemLeft" align="right" valign="top">const DataDescriptor &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aa9557afbc83009c30022f9f7237b6f3e">getDataDescriptor</a> () const override</td></tr>
 <tr class="memdesc:aa9557afbc83009c30022f9f7237b6f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return desciption of the actual payload data for this register.  <a href="#aa9557afbc83009c30022f9f7237b6f3e">More...</a><br /></td></tr>
 <tr class="separator:aa9557afbc83009c30022f9f7237b6f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03eb70a6ba306a5c3180c64a21c06b69"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a03eb70a6ba306a5c3180c64a21c06b69">isReadable</a> () const override</td></tr>
+<tr class="memdesc:a03eb70a6ba306a5c3180c64a21c06b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the register is readable.  <a href="#a03eb70a6ba306a5c3180c64a21c06b69">More...</a><br /></td></tr>
+<tr class="separator:a03eb70a6ba306a5c3180c64a21c06b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac548b0ce34daec49406f49165a39e29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aac548b0ce34daec49406f49165a39e29">isWriteable</a> () const override</td></tr>
+<tr class="memdesc:aac548b0ce34daec49406f49165a39e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the register is writeable.  <a href="#aac548b0ce34daec49406f49165a39e29">More...</a><br /></td></tr>
+<tr class="separator:aac548b0ce34daec49406f49165a39e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a336eeb3cbd25264fbe4338933467d1e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a336eeb3cbd25264fbe4338933467d1e6">getSupportedAccessModes</a> () const override</td></tr>
+<tr class="memdesc:a336eeb3cbd25264fbe4338933467d1e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all supported AccessModes for this register.  <a href="#a336eeb3cbd25264fbe4338933467d1e6">More...</a><br /></td></tr>
+<tr class="separator:a336eeb3cbd25264fbe4338933467d1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5985cd6e7a8ac3a5a25fc55788e2dc07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a5985cd6e7a8ac3a5a25fc55788e2dc07">RegisterInfo</a> (std::string const &amp;name_=std::string(), uint32_t nElements_=0, uint32_t address_=0, uint32_t nBytes_=0, uint32_t bar_=0, uint32_t width_=32, int32_t nFractionalBits_=0, bool signedFlag_=true, uint32_t lineNumber_=0, std::string const &amp;module_=std::string(), uint32_t nChannels_=1, bool is2DMultiplexed_=false, <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79f">Access</a> dataAccess_=Access::READWRITE)</td></tr>
 <tr class="memdesc:a5985cd6e7a8ac3a5a25fc55788e2dc07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor to set all data members.  <a href="#a5985cd6e7a8ac3a5a25fc55788e2dc07">More...</a><br /></td></tr>
 <tr class="separator:a5985cd6e7a8ac3a5a25fc55788e2dc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -488,6 +497,93 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a336eeb3cbd25264fbe4338933467d1e6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> ChimeraTK::RegisterInfoMap::RegisterInfo::getSupportedAccessModes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return all supported AccessModes for this register. </p>
+
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_register_info.html#a9b672a259a7daccda1165fe77102eb9c">ChimeraTK::RegisterInfo</a>.</p>
+
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00092">92</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a03eb70a6ba306a5c3180c64a21c06b69"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::RegisterInfoMap::RegisterInfo::isReadable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return whether the register is readable. </p>
+
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_register_info.html#a6e479c07f9e757d2191f943110ba8fdc">ChimeraTK::RegisterInfo</a>.</p>
+
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00084">84</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac548b0ce34daec49406f49165a39e29"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::RegisterInfoMap::RegisterInfo::isWriteable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return whether the register is writeable. </p>
+
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_register_info.html#a1c6958586d0b1a4ad3564b20a89a0111">ChimeraTK::RegisterInfo</a>.</p>
+
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00088">88</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af18d723d90aa2326af0946ce9468b73f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -510,7 +606,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00117">117</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00129">129</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -564,7 +660,7 @@ Friends</h2></td></tr>
 
 <p>Relative address in bytes from beginning of the bar(Base Address Range) </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00088">88</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00100">100</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -580,7 +676,7 @@ Friends</h2></td></tr>
 
 <p>Number of bar with register. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00090">90</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00102">102</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -602,7 +698,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00127">127</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00139">139</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -618,7 +714,7 @@ Friends</h2></td></tr>
 
 <p>Flag if register is a 2D multiplexed register (otherwise it is 1D or scalar) </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00087">87</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00099">99</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -634,7 +730,7 @@ Friends</h2></td></tr>
 
 <p>Number of line with description of register in MAP file. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00094">94</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00106">106</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -650,7 +746,7 @@ Friends</h2></td></tr>
 
 <p>Name of the module this register is in. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00095">95</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00107">107</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -666,7 +762,7 @@ Friends</h2></td></tr>
 
 <p>Name of register. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00084">84</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00096">96</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -682,7 +778,7 @@ Friends</h2></td></tr>
 
 <p>Size of register expressed in bytes. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00089">89</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00101">101</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -698,7 +794,7 @@ Friends</h2></td></tr>
 
 <p>Number of channels/sequences. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00086">86</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00098">98</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -714,7 +810,7 @@ Friends</h2></td></tr>
 
 <p>Number of elements in register. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00085">85</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00097">97</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -730,7 +826,7 @@ Friends</h2></td></tr>
 
 <p>Number of fractional bits. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00092">92</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00104">104</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -746,7 +842,7 @@ Friends</h2></td></tr>
 
 <p>Data access direction: Read, write or read and write. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00096">96</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00108">108</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -762,7 +858,7 @@ Friends</h2></td></tr>
 
 <p>Signed/Unsigned flag. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00093">93</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00105">105</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -778,7 +874,7 @@ Friends</h2></td></tr>
 
 <p>Number of significant bits in the register. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00091">91</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00103">103</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -789,7 +885,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 29 2018 06:53:14 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 30 2018 06:53:12 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -13,5 +13,5 @@ var searchData=
   ['multiplexeddataaccessor',['MultiplexedDataAccessor',['../class_chimera_t_k_1_1_multiplexed_data_accessor.html#a7d4205d399d7c8a2cef3563191c08063',1,'ChimeraTK::MultiplexedDataAccessor']]],
   ['multiwordread',['multiWordRead',['../struct_chimera_t_k_1_1_dummy_protocol0.html#a82af2a6ca8dacbf0b4323c9f0983250e',1,'ChimeraTK::DummyProtocol0::multiWordRead()'],['../struct_chimera_t_k_1_1_dummy_protocol1.html#ad532b2aac5d74b54d97c8bc169f3da37',1,'ChimeraTK::DummyProtocol1::multiWordRead()'],['../struct_dummy_protocol_implementor.html#aad8be12f8e35d469f72496df11c3a607',1,'DummyProtocolImplementor::multiWordRead()']]],
   ['multiwordwrite',['multiWordWrite',['../struct_chimera_t_k_1_1_dummy_protocol0.html#a34e6d1268c2884dc636da8612fcc73a4',1,'ChimeraTK::DummyProtocol0::multiWordWrite()'],['../struct_chimera_t_k_1_1_dummy_protocol1.html#a7e5ade8296549827c38f96589b4354a8',1,'ChimeraTK::DummyProtocol1::multiWordWrite()'],['../struct_dummy_protocol_implementor.html#a8811cfa644621849fb6d5db4864ea6f4',1,'DummyProtocolImplementor::multiWordWrite()']]],
-  ['myregisterinfo',['myRegisterInfo',['../classmy_register_info.html#ab73b0bb4a0ae6ca530dc871706623447',1,'myRegisterInfo']]]
+  ['myregisterinfo',['myRegisterInfo',['../classmy_register_info.html#abbc4e77521b384685031779fd35c871c',1,'myRegisterInfo']]]
 ];

@@ -156,11 +156,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a341d7226406a1b1d91b4dbaecec80b5a"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html">DataDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info.html#a341d7226406a1b1d91b4dbaecec80b5a">getDataDescriptor</a> () const =0</td></tr>
 <tr class="memdesc:a341d7226406a1b1d91b4dbaecec80b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return desciption of the actual payload data for this register.  <a href="#a341d7226406a1b1d91b4dbaecec80b5a">More...</a><br /></td></tr>
 <tr class="separator:a341d7226406a1b1d91b4dbaecec80b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e479c07f9e757d2191f943110ba8fdc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info.html#a6e479c07f9e757d2191f943110ba8fdc">isReadable</a> () const =0</td></tr>
+<tr class="memdesc:a6e479c07f9e757d2191f943110ba8fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the register is readable.  <a href="#a6e479c07f9e757d2191f943110ba8fdc">More...</a><br /></td></tr>
+<tr class="separator:a6e479c07f9e757d2191f943110ba8fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c6958586d0b1a4ad3564b20a89a0111"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info.html#a1c6958586d0b1a4ad3564b20a89a0111">isWriteable</a> () const =0</td></tr>
+<tr class="memdesc:a1c6958586d0b1a4ad3564b20a89a0111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the register is writeable.  <a href="#a1c6958586d0b1a4ad3564b20a89a0111">More...</a><br /></td></tr>
+<tr class="separator:a1c6958586d0b1a4ad3564b20a89a0111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b672a259a7daccda1165fe77102eb9c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info.html#a9b672a259a7daccda1165fe77102eb9c">getSupportedAccessModes</a> () const =0</td></tr>
+<tr class="memdesc:a9b672a259a7daccda1165fe77102eb9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all supported AccessModes for this register.  <a href="#a9b672a259a7daccda1165fe77102eb9c">More...</a><br /></td></tr>
+<tr class="separator:a9b672a259a7daccda1165fe77102eb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DeviceBackend-independent register description. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00021">21</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00022">22</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a860f659821e8bfab2804820bb42bb9d8"></a>
 <div class="memitem">
@@ -195,7 +204,7 @@ Public Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00027">27</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00028">28</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -223,7 +232,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Virtual destructor. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00133">133</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00134">134</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -252,7 +261,7 @@ Public Member Functions</h2></td></tr>
 <p>Return desciption of the actual payload data for this register. </p>
 <p>See the description of <a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html" title="Class describing the actual payload data format of a register in an abstract manner. ">DataDescriptor</a> for more information. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aa9557afbc83009c30022f9f7237b6f3e">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a65649048b65d5ea484e510d389eeae3a">ChimeraTK::LNMBackendRegisterInfo</a>, and <a class="el" href="classmy_register_info.html#ad3e8cab96ac744704ac11abf017fa851">myRegisterInfo</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aa9557afbc83009c30022f9f7237b6f3e">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, <a class="el" href="classmy_register_info.html#ad3e8cab96ac744704ac11abf017fa851">myRegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a65649048b65d5ea484e510d389eeae3a">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
 
 </div>
 </div>
@@ -364,13 +373,94 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9b672a259a7daccda1165fe77102eb9c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> ChimeraTK::RegisterInfo::getSupportedAccessModes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return all supported AccessModes for this register. </p>
+
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a336eeb3cbd25264fbe4338933467d1e6">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a8d915425d300ff6b398831727717509e">ChimeraTK::LNMBackendRegisterInfo</a>, and <a class="el" href="classmy_register_info.html#a91a84451c482c514214f1e2bf49d977e">myRegisterInfo</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e479c07f9e757d2191f943110ba8fdc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ChimeraTK::RegisterInfo::isReadable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return whether the register is readable. </p>
+
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a03eb70a6ba306a5c3180c64a21c06b69">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ab1dbd642172674091c39b188dbdd7942">ChimeraTK::LNMBackendRegisterInfo</a>, and <a class="el" href="classmy_register_info.html#a19975a112e6b0d3795fd423eee953ad5">myRegisterInfo</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c6958586d0b1a4ad3564b20a89a0111"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ChimeraTK::RegisterInfo::isWriteable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return whether the register is writeable. </p>
+
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aac548b0ce34daec49406f49165a39e29">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad059e76a50742d83b31e0997b61006fa">ChimeraTK::LNMBackendRegisterInfo</a>, and <a class="el" href="classmy_register_info.html#abd50ef365c6ea0646f2c385866d8254a">myRegisterInfo</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/fileparsers/include/<a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 29 2018 06:53:14 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 30 2018 06:53:12 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

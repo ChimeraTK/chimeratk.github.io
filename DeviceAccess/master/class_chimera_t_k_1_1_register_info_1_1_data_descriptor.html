@@ -137,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Class describing the actual payload data format of a register in an abstract manner. </p>
 <p>It gives information about the underlying data type without fully describing it, to prevent a loss of abstraction on the application level. The returned information always refers to the data type and thus is completely independent of the current value of the register. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00033">33</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00034">34</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a6ffb4b343c74f267602c8fea1b51d0b5"></a>
 <div class="memitem">
@@ -162,7 +162,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Default constructor sets fundamental type to "undefined". </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00202">202</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00212">212</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -230,7 +230,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Constructor setting all members. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00208">208</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00218">218</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -258,7 +258,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the fundamental data type. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00158">158</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00168">168</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -286,7 +286,7 @@ Public Member Functions</h2></td></tr>
 <p>Return whether the data is integral or not (e.g. </p>
 <p>int vs. float). May only be called for numeric data types. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00181">181</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00191">191</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +314,7 @@ Public Member Functions</h2></td></tr>
 <p>Return whether the data is signed or not. </p>
 <p>May only be called for numeric data types. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00174">174</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00184">184</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -343,7 +343,7 @@ Public Member Functions</h2></td></tr>
 <p>May only be called for numeric data types.</p>
 <p>This number shall only be used for displaying purposes, e.g. to decide how much space for displaying the register value should be reserved. Beware that for some data types this might become a really large number (e.g. 300), which indicates that you need to choose a different representation than just a plain decimal number. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00188">188</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00198">198</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +372,7 @@ Public Member Functions</h2></td></tr>
 <p>May only be called for non-integral numeric data types.</p>
 <p>Just like in case of <a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a7155d1413f7764b906a20e216128b4e5" title="Return the approximate maximum number of digits (of base 10) needed to represent the value (including...">nDigits()</a>, this number should only be used for displaying purposes. There is no guarantee that the full precision of the number can be displayed with the given number of digits. Again beware that this number might be rather large (e.g. 300). </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00195">195</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00205">205</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -406,7 +406,7 @@ Public Member Functions</h2></td></tr>
 </ul>
 <p>Most backends will have type none, i.e. no raw data conversion available. At the moment only the NumericalAddressedBackend has int32_t raw transfer with raw/coocked conversion. Can be extended if needed, but this partily breaks abstraction because it exposes details of the (transport) layer below. It should be avoided if possible. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00164">164</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00174">174</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -440,7 +440,7 @@ Public Member Functions</h2></td></tr>
 </ul>
 <p>Notice: Currently all implementations return 'none'. From the interface there is no way to access the transport layer data (yet). The function is put here for conceputal completeness. </p>
 
-<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00168">168</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00178">178</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +450,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 29 2018 06:53:14 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 30 2018 06:53:12 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

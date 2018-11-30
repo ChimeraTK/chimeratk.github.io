@@ -173,14 +173,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html#a99b895e64c20da55b9aac64338961481">ChimeraTK::BufferingRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ab8f8df261884fd06fce0a8f1e506b267">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a1382ed522ecbecd4510de9f0c440921a">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ab1dbd642172674091c39b188dbdd7942">ChimeraTK::LNMBackendRegisterInfo</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#ad14b919209b8e0fbf04f616e27dc4320">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_multiplexed_data_accessor.html#af009357d3fa34665a09b4ebbf10c0012">ChimeraTK::MultiplexedDataAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a988485c8c10714cb990c98c49d1b1dcd">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#af3065bc46ec087c9b1fe4684f0c77e99">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a45aea3acc98c9446cf5fea0a5eca5c71">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#aad320bc61778bee56737409eaebd1cb6">ChimeraTK::NumericAddressedLowLevelTransferElement</a>
+, <a class="el" href="class_chimera_t_k_1_1_register_info.html#a6e479c07f9e757d2191f943110ba8fdc">ChimeraTK::RegisterInfo</a>
+, <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a03eb70a6ba306a5c3180c64a21c06b69">ChimeraTK::RegisterInfoMap::RegisterInfo</a>
 , <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946">ChimeraTK::TransferElement</a>
 , <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#ae269d613050c9d6eee1c4fcf87a27941">ChimeraTK::TransferElementAbstractor</a>
+, <a class="el" href="classmy_register_info.html#a19975a112e6b0d3795fd423eee953ad5">myRegisterInfo</a>
 </li>
 <li>isReadOnly()
 : <a class="el" href="class_async_test_dummy_1_1_accessor.html#a10c46943f9feb3e9488dc1ae35999c3b">AsyncTestDummy::Accessor&lt; UserType &gt;</a>
@@ -213,27 +217,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#af5b3281ababd53a5567e284517bf6007">ChimeraTK::CopyRegisterDecorator&lt; T &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a984adf0f9474550e5daeb4502aea5c33">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a452913af7691013c7fb2294eb3fa71f5">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad059e76a50742d83b31e0997b61006fa">ChimeraTK::LNMBackendRegisterInfo</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#ae94d80239e06bac5719701ccabf61d61">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_multiplexed_data_accessor.html#a9274082f4cf4ad850b1331b990fb61df">ChimeraTK::MultiplexedDataAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aecf37cd79f233aade89f616d9f236ff8">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a759f2c8cb842adcc03178cfeb1122788">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a0e282427edb4ffcbb5ffbf582328d894">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a87b22761e0bba2539a4ddf3bdd85ea9d">ChimeraTK::NumericAddressedLowLevelTransferElement</a>
+, <a class="el" href="class_chimera_t_k_1_1_register_info.html#a1c6958586d0b1a4ad3564b20a89a0111">ChimeraTK::RegisterInfo</a>
+, <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aac548b0ce34daec49406f49165a39e29">ChimeraTK::RegisterInfoMap::RegisterInfo</a>
 , <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">ChimeraTK::TransferElement</a>
 , <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#ae59aac230a9c5fa8e4c63de5f46989e7">ChimeraTK::TransferElementAbstractor</a>
+, <a class="el" href="classmy_register_info.html#abd50ef365c6ea0646f2c385866d8254a">myRegisterInfo</a>
 </li>
 <li>isWriteRangeOverlap()
 : <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a9484547368d7da66d8d6795baf91b0a9">ChimeraTK::DummyBackend</a>
 </li>
 <li>iterator()
-: <a class="el" href="class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a9a11cc53b53a56a1f27bfe9a6e4c3297">ChimeraTK::RegisterCatalogue::iterator</a>
+: <a class="el" href="class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a4b11693300d0c4aada6ad0399b544a5c">ChimeraTK::RegisterCatalogue::iterator</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1iterator.html#ae7a4efabd89d83ca62858390471f786d">ChimeraTK::RegisterInfoMap::iterator</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 29 2018 06:53:14 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 30 2018 06:53:13 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

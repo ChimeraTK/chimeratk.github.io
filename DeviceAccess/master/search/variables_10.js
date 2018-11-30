@@ -11,5 +11,6 @@ var searchData=
   ['start',['start',['../_register_info_map_8cpp.html#a61eb63d26b2fa6c2971603ceccffb14b',1,'RegisterInfoMap.cpp']]],
   ['start_5ftime',['start_time',['../structdevice__ioctrl__time.html#a73717c26f9ec75f5b4ea114976a1ba2c',1,'device_ioctrl_time']]],
   ['stop_5frebot_5fserver',['stop_rebot_server',['../namespace_chimera_t_k.html#a3c70f674fe11c58ccf8d4dc4a3ff27bf',1,'ChimeraTK']]],
-  ['stop_5ftime',['stop_time',['../structdevice__ioctrl__time.html#a04786d897463142079bd0cc2b041efcd',1,'device_ioctrl_time']]]
+  ['stop_5ftime',['stop_time',['../structdevice__ioctrl__time.html#a04786d897463142079bd0cc2b041efcd',1,'device_ioctrl_time']]],
+  ['supportedflags',['supportedFlags',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6546006951dc0b02aaf98a42c3f6630c',1,'ChimeraTK::LNMBackendRegisterInfo']]]
 ];

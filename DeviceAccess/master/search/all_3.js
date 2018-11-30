@@ -11,7 +11,7 @@ var searchData=
   ['backendregisterer',['BackendRegisterer',['../struct_wrong_version_backend_1_1_backend_registerer.html',1,'WrongVersionBackend']]],
   ['backendregisterer',['BackendRegisterer',['../class_example_backend_1_1_backend_registerer.html',1,'ExampleBackend']]],
   ['backendtype',['backendType',['../struct_chimera_t_k_1_1_device_descriptor.html#a33f0fc287d2af09f44d659c14871cab0',1,'ChimeraTK::DeviceDescriptor']]],
-  ['bar',['BAR',['../struct_chimera_t_k_1_1_dummy_protocol1.html#a6d785c2c48a2684965d59998b5e45e4a',1,'ChimeraTK::DummyProtocol1::BAR()'],['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html#a77b83d47a6cdfa9555af6d15dc1d435c',1,'ChimeraTK::DummyBackend::AddressRange::bar()'],['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae25a692df086ce2078053ff7e7564d78',1,'ChimeraTK::RegisterInfoMap::RegisterInfo::bar()']]],
+  ['bar',['bar',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html#a77b83d47a6cdfa9555af6d15dc1d435c',1,'ChimeraTK::DummyBackend::AddressRange::bar()'],['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae25a692df086ce2078053ff7e7564d78',1,'ChimeraTK::RegisterInfoMap::RegisterInfo::bar()'],['../struct_chimera_t_k_1_1_dummy_protocol1.html#a6d785c2c48a2684965d59998b5e45e4a',1,'ChimeraTK::DummyProtocol1::BAR()']]],
   ['bar0',['BAR0',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a1fce441aaa962f572d643140658a6e4c',1,'pciedev_io.h']]],
   ['bar1',['BAR1',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a4ceeca7cc9bab8b697f8a49f79037010',1,'pciedev_io.h']]],
   ['bar2',['BAR2',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a44fa2ca32ff22e5eb7fa28ef39e50780',1,'pciedev_io.h']]],
