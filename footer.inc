@@ -1,3 +1,8 @@
+<h2>Binary packages</h2>
+<ul>
+<li>Ubuntu 16.04 packages are available in the <a href="https://ttfinfo.desy.de/DOOCSWiki/Wiki.jsp?page=DOOCSStandaloneInstallation#section-DOOCSStandaloneInstallation-AddThePublicDOOCSPackageRepositoryToYourSystem">DESY DOOCS repository</a>.</li>
+<ul>
+
 <h2>Support and release notes</h2>
 
 <ul>
