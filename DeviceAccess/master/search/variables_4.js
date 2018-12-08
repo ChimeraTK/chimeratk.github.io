@@ -3,6 +3,7 @@ var searchData=
   ['data',['data',['../structdevice__ioctrl__data.html#a99d6274576188aeea8225493378b04ec',1,'device_ioctrl_data']]],
   ['data_5frw',['data_rw',['../structdevice__rw.html#a4731025369481beeaa5c408775ad2a7e',1,'device_rw']]],
   ['datadescriptor',['dataDescriptor',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a35726baa004e88f0b928d7901708f7cd',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
+  ['datatype',['dataType',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aef355ed0d1e54727691466b104f77db0',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
   ['devicename',['deviceName',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ab574ea38cd9b4463f5f32aeac3d749de',1,'ChimeraTK::LNMBackendRegisterInfo::deviceName()'],['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#aececd6f51fac87a98c4d5f6a57ab1011',1,'ChimeraTK::DeviceInfoMap::DeviceInfo::deviceName()']]],
   ['dma_5fcmd',['dma_cmd',['../structdevice__ioctrl__dma.html#a5cce7fa7327b8572fba52bdf18d14b0f',1,'device_ioctrl_dma']]],
   ['dma_5foffset',['dma_offset',['../structdevice__ioctrl__dma.html#afcf57847c512e334f1a83bd89be950fd',1,'device_ioctrl_dma']]],

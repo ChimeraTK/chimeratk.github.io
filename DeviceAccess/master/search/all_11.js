@@ -72,7 +72,7 @@ var searchData=
   ['registerinfo',['RegisterInfo',['../class_chimera_t_k_1_1_register_info.html',1,'ChimeraTK']]],
   ['registerinfo',['RegisterInfo',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html',1,'ChimeraTK::RegisterInfoMap']]],
   ['registerinfo',['RegisterInfo',['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html',1,'ChimeraTK::RebotProtocol0']]],
-  ['registerinfo',['RegisterInfo',['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#a5d3a19c9744a93a9167a8f270cc93775',1,'ChimeraTK::RebotProtocol0::RegisterInfo::RegisterInfo()'],['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a5985cd6e7a8ac3a5a25fc55788e2dc07',1,'ChimeraTK::RegisterInfoMap::RegisterInfo::RegisterInfo()'],['../class_chimera_t_k_1_1_dummy_register_address_checker.html#a4dcd6965737aa704ea21e3d65c1926be',1,'ChimeraTK::DummyRegisterAddressChecker::registerInfo()']]],
+  ['registerinfo',['registerInfo',['../class_chimera_t_k_1_1_dummy_register_address_checker.html#a4dcd6965737aa704ea21e3d65c1926be',1,'ChimeraTK::DummyRegisterAddressChecker::registerInfo()'],['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#a5d3a19c9744a93a9167a8f270cc93775',1,'ChimeraTK::RebotProtocol0::RegisterInfo::RegisterInfo()'],['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ab38537addc15edc6ff9610f8ed755d26',1,'ChimeraTK::RegisterInfoMap::RegisterInfo::RegisterInfo()']]],
   ['registerinfo_2eh',['RegisterInfo.h',['../fileparsers_2include_2_register_info_8h.html',1,'']]],
   ['registerinfo_2eh',['RegisterInfo.h',['../mtca4u__compatibility__headers_2_register_info_8h.html',1,'']]],
   ['registerinfomap',['RegisterInfoMap',['../class_chimera_t_k_1_1_register_info_map.html',1,'ChimeraTK']]],
