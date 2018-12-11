@@ -1,6 +1,7 @@
 var searchData=
 [
   ['ndregisteraccessor',['NDRegisterAccessor',['../class_chimera_t_k_1_1_n_d_register_accessor.html',1,'ChimeraTK']]],
+  ['ndregisteraccessor_3c_20int32_5ft_20_3e',['NDRegisterAccessor&lt; int32_t &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor.html',1,'ChimeraTK']]],
   ['ndregisteraccessor_3c_20t_20_3e',['NDRegisterAccessor&lt; T &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor.html',1,'ChimeraTK']]],
   ['ndregisteraccessor_3c_20targetusertype_20_3e',['NDRegisterAccessor&lt; TargetUserType &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor.html',1,'ChimeraTK']]],
   ['ndregisteraccessorabstractor',['NDRegisterAccessorAbstractor',['../class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html',1,'ChimeraTK']]],

@@ -25,6 +25,7 @@ var searchData=
   ['_7eregisterinfo',['~RegisterInfo',['../class_chimera_t_k_1_1_register_info.html#a92a66342bceca280cef3846e74b051c6',1,'ChimeraTK::RegisterInfo']]],
   ['_7eshareddummybackend',['~SharedDummyBackend',['../class_chimera_t_k_1_1_shared_dummy_backend.html#a249ab56910ad17a547b8613e56516ebe',1,'ChimeraTK::SharedDummyBackend']]],
   ['_7esubdevicebackend',['~SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html#aef6a0de034b54d44cc888dce97b0bec2',1,'ChimeraTK::SubdeviceBackend']]],
+  ['_7esubdeviceregisteraccessor',['~SubdeviceRegisterAccessor',['../class_chimera_t_k_1_1_subdevice_register_accessor.html#ab53b8ff5fcca1e86e6a16cb54b1cf935',1,'ChimeraTK::SubdeviceRegisterAccessor']]],
   ['_7esyncndregisteraccessor',['~SyncNDRegisterAccessor',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html#aca97e16a2018f70d6781582bad5a025b',1,'ChimeraTK::SyncNDRegisterAccessor']]],
   ['_7etcpctrl',['~TcpCtrl',['../class_chimera_t_k_1_1_tcp_ctrl.html#a74dbac59591e9e582fe6d2d664d62983',1,'ChimeraTK::TcpCtrl']]],
   ['_7etestlocker',['~TestLocker',['../struct_test_locker.html#a2350e86f1e896171ba56a812e7f7653d',1,'TestLocker']]],

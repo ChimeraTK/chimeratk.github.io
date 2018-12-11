@@ -27,7 +27,8 @@ var searchData=
   ['startswith',['startsWith',['../class_chimera_t_k_1_1_register_path.html#ae629af1a0b1e229f1653a1bb600c56f1',1,'ChimeraTK::RegisterPath']]],
   ['stop',['stop',['../class_chimera_t_k_1_1_rebot_dummy_server.html#afd21652e5990e7687316ef743bb768a2',1,'ChimeraTK::RebotDummyServer']]],
   ['stow_5fprivate',['stow_private',['../structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5',1,'accessPrivateData::stow_private']]],
-  ['subdevicebackend',['SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html#a3dc6a3fa2f19991c8f91af5ee38171a6',1,'ChimeraTK::SubdeviceBackend']]],
+  ['subdevicebackend',['SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html#a767cac6cd44e993c13796c841a45c54b',1,'ChimeraTK::SubdeviceBackend']]],
+  ['subdeviceregisteraccessor',['SubdeviceRegisterAccessor',['../class_chimera_t_k_1_1_subdevice_register_accessor.html#a5a2da6c0ca341ae041c686801bce4e7c',1,'ChimeraTK::SubdeviceRegisterAccessor']]],
   ['swap',['swap',['../class_chimera_t_k_1_1_buffering_register_accessor.html#ace4033d0920147b6bc781ab8ce5b8553',1,'ChimeraTK::BufferingRegisterAccessor::swap()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#ac6aaa6f5f6f680a4df224c5b24adb478',1,'ChimeraTK::OneDRegisterAccessor::swap()']]],
   ['syncndregisteraccessor',['SyncNDRegisterAccessor',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html#ad0022a8176a6756d9ebdc98d98d2bc07',1,'ChimeraTK::SyncNDRegisterAccessor']]]
 ];
