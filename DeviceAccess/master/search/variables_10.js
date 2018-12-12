@@ -6,6 +6,7 @@ var searchData=
   ['single_5fword_5fwrite',['SINGLE_WORD_WRITE',['../class_chimera_t_k_1_1_rebot_dummy_server.html#a1c2f685f5f673cbafb7dfef6d62957e7',1,'ChimeraTK::RebotDummyServer']]],
   ['size_5frw',['size_rw',['../structdevice__rw.html#ad9348912dabb0b218d0c500c66dda20d',1,'device_rw']]],
   ['sizeinbytes',['sizeInBytes',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html#a1c631fad58cb1b7ac2bb0c0403fda029',1,'ChimeraTK::DummyBackend::AddressRange']]],
+  ['sleeptime',['sleepTime',['../class_chimera_t_k_1_1_subdevice_backend.html#ab01bbfe4c4c1d1d9b8d18ee5e97e7586',1,'ChimeraTK::SubdeviceBackend']]],
   ['somemuxedregister',['someMuxedRegister',['../class_testable_dummy_backend.html#aa9ee83d4709bd52b2f3d9510c2e6c7d3',1,'TestableDummyBackend']]],
   ['someregister',['someRegister',['../class_testable_dummy_backend.html#a225ea9c4f235aaa2938de2f75d4934a5',1,'TestableDummyBackend']]],
   ['start',['start',['../_register_info_map_8cpp.html#a61eb63d26b2fa6c2971603ceccffb14b',1,'RegisterInfoMap.cpp']]],
