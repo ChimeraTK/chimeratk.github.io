@@ -93,6 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_chimera_t_k_1_1_map_file_parser-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ChimeraTK::MapFileParser Class Reference</div>  </div>
@@ -115,12 +116,43 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af8b0334352da84a275101083c91c462a"><td class="memItemLeft" align="right" valign="top">static std::pair&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_map_file_parser.html#af8b0334352da84a275101083c91c462a">splitStringAtLastDot</a> (std::string moduleDotName)</td></tr>
 <tr class="memdesc:af8b0334352da84a275101083c91c462a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split the string at the last dot.  <a href="#af8b0334352da84a275101083c91c462a">More...</a><br /></td></tr>
 <tr class="separator:af8b0334352da84a275101083c91c462a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6b9a98ecf9092b5b485fca3611a9ca0f"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6b842be755b82e8e9f26f9104aac1600">RegisterInfoMap::RegisterInfo::Type</a>, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_map_file_parser.html#a6b9a98ecf9092b5b485fca3611a9ca0f">getTypeAndNFractionalBits</a> (std::string bitInterpretation)</td></tr>
+<tr class="separator:a6b9a98ecf9092b5b485fca3611a9ca0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides method to parse MAP file. </p>
 
 <p>Definition at line <a class="el" href="fileparsers_2include_2_map_file_parser_8h_source.html#l00019">19</a> of file <a class="el" href="fileparsers_2include_2_map_file_parser_8h_source.html">MapFileParser.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a6b9a98ecf9092b5b485fca3611a9ca0f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6b842be755b82e8e9f26f9104aac1600">RegisterInfoMap::RegisterInfo::Type</a>, int &gt; ChimeraTK::MapFileParser::getTypeAndNFractionalBits </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>bitInterpretation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_map_file_parser_8cpp_source.html#l00225">225</a> of file <a class="el" href="_map_file_parser_8cpp_source.html">MapFileParser.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a2df3215ca13237697b79d4a99a2996b6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -160,7 +192,7 @@ Static Public Member Functions</h2></td></tr>
 <p>&lt; Signed/Unsigned flag</p>
 <p>&lt; Name of the module this register is in </p>
 
-<p>Definition at line <a class="el" href="_map_file_parser_8cpp_source.html#l00011">11</a> of file <a class="el" href="_map_file_parser_8cpp_source.html">MapFileParser.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_map_file_parser_8cpp_source.html#l00012">12</a> of file <a class="el" href="_map_file_parser_8cpp_source.html">MapFileParser.cpp</a>.</p>
 
 </div>
 </div>
@@ -189,7 +221,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Split the string at the last dot. </p>
 <p>The part up to the last dot is the first returned argument, the part after the last dot is the second. Hence, the first part can contain dots itself, the second part cannot. If there is no dot, the first part is empty and the full string is returned as second (the part up to the first dot is considered as prefix). </p>
 
-<p>Definition at line <a class="el" href="_map_file_parser_8cpp_source.html#l00185">185</a> of file <a class="el" href="_map_file_parser_8cpp_source.html">MapFileParser.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_map_file_parser_8cpp_source.html#l00195">195</a> of file <a class="el" href="_map_file_parser_8cpp_source.html">MapFileParser.cpp</a>.</p>
 
 </div>
 </div>
@@ -200,7 +232,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 12 2018 06:53:13 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 18 2018 06:53:13 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
