@@ -540,7 +540,7 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p>Get a <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o...">OneDRegisterAccessor</a> object for the given register. </p>
-<p>The <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o...">OneDRegisterAccessor</a> allows to read and write registers transparently by using the accessor object like a vector of the type UserType. If needed, the conversion to and from the UserType will be handled by the <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html" title="The fixed point converter provides conversion functions between a user type and up to 32 bit fixed po...">FixedPointConverter</a> matching the register description in the map.</p>
+<p>The <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o...">OneDRegisterAccessor</a> allows to read and write registers transparently by using the accessor object like a vector of the type UserType. If needed, the conversion to and from the UserType will be handled by a data converter matching the register description in e.g. a map file.</p>
 <p>The optional arguments numberOfWords and wordOffsetInRegister allow to limit the accessor to a part of the register.</p>
 <p>The last optional argument flags allows to control certain details how the register is accessed. It allows e.g. to enable raw access. See AccessMode documentation for more details. Passing an access mode flag which is not supported by the backend or the given register will raise a NOT_IMPLEMENTED DeviceException.</p>
 <p>Hint: when passing the <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a>, just enclose the wanted flags in a brace initialiser list without "AccessModeFlags", e.g.: getOneDRegisterAccessor&lt;int32_t&gt;("reg",0,0,{<a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11abdd166af3a63f7be696dd17a218a6ffb" title="Raw access: disable any possible conversion from the original hardware data type into the given UserT...">AccessMode::raw</a>}) </p>
@@ -745,7 +745,7 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p>Get a ScalarRegisterObject object for the given register. </p>
-<p>The ScalarRegisterObject allows to read and write registers transparently by using the accessor object like a variable of the type UserType. If needed, the conversion to and from the UserType will be handled by the <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html" title="The fixed point converter provides conversion functions between a user type and up to 32 bit fixed po...">FixedPointConverter</a> matching the register description in the map.</p>
+<p>The ScalarRegisterObject allows to read and write registers transparently by using the accessor object like a variable of the type UserType. If needed, the conversion to and from the UserType will be handled by a data converter matching the register description in e.g. a map file.</p>
 <p>The optional argument wordOffsetInRegister allows to access another but the first word of a larger register.</p>
 <p>The last optional argument flags allows to control certain details how the register is accessed. It allows e.g. to enable raw access. See AccessMode documentation for more details. Passing an access mode flag which is not supported by the backend or the given register will raise a NOT_IMPLEMENTED DeviceException. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="basic_8cpp-example.html#a5">basic.cpp</a>.</dd>
@@ -2117,7 +2117,7 @@ template&lt;typename UserType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 18 2018 06:53:13 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 20 2018 06:53:13 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -322,9 +322,9 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a2da661d92f7e3cc19e8c9847b0a99afe"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:a2da661d92f7e3cc19e8c9847b0a99afe"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a2da661d92f7e3cc19e8c9847b0a99afe">NumericAddressedBackendRegisterAccessor</a></td></tr>
-<tr class="separator:a2da661d92f7e3cc19e8c9847b0a99afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3ef225e87d9ee5bec37139ec68e582"><td class="memTemplParams" colspan="2">template&lt;typename UserType , typename DataConverterType &gt; </td></tr>
+<tr class="memitem:a3d3ef225e87d9ee5bec37139ec68e582"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a3d3ef225e87d9ee5bec37139ec68e582">NumericAddressedBackendRegisterAccessor</a></td></tr>
+<tr class="separator:a3d3ef225e87d9ee5bec37139ec68e582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -341,7 +341,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Implementation of the <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor. ">NDRegisterAccessor</a> for NumericAddressedBackends, responsible for the underlying raw data access. </p>
 <p>This accessor is never directly returned to the user and thus is based only on the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> base class (unstead of the <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor. ">NDRegisterAccessor</a>). It is only internally used by other register accessors of the NumericAddressBackends. The reason for introducing this class is that it allows the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> to replace the raw accessor used by other accessors to merge data transfers of neighbouring registers. </p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00027">27</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00026">26</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a85c5f37136887c2381fdb3a2b8090192"></a>
 <div class="memitem">
@@ -387,7 +387,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00030">30</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00029">29</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -412,7 +412,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00037">37</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00036">36</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -442,7 +442,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Return accessor to the begin of the raw buffer matching the given address. </p>
 <p>No <a class="el" href="_register_info_map_8cpp.html#a204a3f4fa39b9c007f9784d3e4af4667">end()</a> is provided, since the <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html" title="Implementation of the NDRegisterAccessor for NumericAddressedBackends for scalar and 1D registers...">NumericAddressedBackendRegisterAccessor</a> using this functionality uses the cooked buffer for this check. Only addresses within the range specified in the constructor or <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a81976cf0605fecd60cbc54aadb626692" title="Change the start address (inside the bar given in the constructor) and number of words of this access...">changeAddress()</a> may be passed. The address must also have an integer multiple of the word size as an offset w.r.t. the start address specified in the constructor. Otherwise an undefined behaviour will occur! </p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00110">110</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00109">109</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -480,7 +480,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Change the start address (inside the bar given in the constructor) and number of words of this accessor, and set the shared flag. </p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00115">115</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00114">114</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -511,7 +511,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0ab70efc5651769deb2bb6c5d4cb5453">ChimeraTK::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00039">39</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00038">38</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -543,7 +543,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afe0ba112ccb6eb9e556710d1151c1602">ChimeraTK::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00058">58</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00057">57</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +573,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a630bcd4b15d5579c0a97f9beb9b63a22">ChimeraTK::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00053">53</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00052">52</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -603,7 +603,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae1dcdfeb3d4d849cb9d6232727031e51">ChimeraTK::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00048">48</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00047">47</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -635,7 +635,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4370c5db79886ac21390f2fa781f2f9c">ChimeraTK::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00043">43</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00042">42</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -664,7 +664,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a93d2e84da7325bb205fb4bc51e660aa4">ChimeraTK::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00124">124</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00123">123</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -695,7 +695,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a40240c8934daf47b9759c5dff3ced91b">ChimeraTK::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00168">168</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00167">167</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -728,7 +728,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a513e099c5ca8a011c59611a17d176719">ChimeraTK::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00172">172</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00171">171</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -758,7 +758,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3294a87f9047329f289dce49edb09db2">ChimeraTK::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00087">87</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00086">86</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -785,9 +785,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if the address areas are adjacent and/or overlapping. </p>
-<p><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a11c8f00fb0b45379c3bde8c48e153fd9" title="Search for all underlying TransferElements which are considered identicel (see sameRegister()) with t...">NumericAddressedBackendRegisterAccessor::replaceTransferElement()</a> takes care of replacing the NumericAddressedBackendRawAccessors with a single NumericAddressedBackendRawAccessor covering the address space of both accessors. </p>
+<p><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a1c324c045d9906c030c7054880613850" title="Search for all underlying TransferElements which are considered identicel (see sameRegister()) with t...">NumericAddressedBackendRegisterAccessor::replaceTransferElement()</a> takes care of replacing the NumericAddressedBackendRawAccessors with a single NumericAddressedBackendRawAccessor covering the address space of both accessors. </p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00068">68</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00067">67</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -817,7 +817,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946">ChimeraTK::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00097">97</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00096">96</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -847,7 +847,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134">ChimeraTK::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00093">93</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00092">92</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -877,7 +877,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">ChimeraTK::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00101">101</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00100">100</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -907,7 +907,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9848d53a7e57619f8322a8ba3dcf5614">ChimeraTK::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00120">120</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00119">119</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -940,7 +940,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9b2f94e5064726b3a93232b3e44207">ChimeraTK::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00083">83</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00082">82</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -971,7 +971,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a791a4902b649e859fbadea20cc90ede2">ChimeraTK::TransferElement</a>.</p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00176">176</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00175">175</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1009,16 +1009,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Set the start address (inside the bar given in the constructor) and number of words of this accessor. </p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00131">131</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00130">130</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a class="anchor" id="a2da661d92f7e3cc19e8c9847b0a99afe"></a>
+<a class="anchor" id="a3d3ef225e87d9ee5bec37139ec68e582"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;typename UserType , typename DataConverterType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1034,7 +1034,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00179">179</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00178">178</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1060,7 +1060,7 @@ template&lt;typename UserType &gt; </div>
 <p>start address w.r.t. </p>
 <p>the PCIe bar </p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00150">150</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00149">149</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1084,7 +1084,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>the backend to use for the actual hardware access </p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00147">147</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00146">146</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1108,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>number of bytes to access </p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00159">159</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00158">158</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1132,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>number of 4-byte words to access </p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00156">156</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00155">155</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1157,7 +1157,7 @@ template&lt;typename UserType &gt; </div>
 <p>start address w.r.t. </p>
 <p>the PCIe bar </p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00153">153</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00152">152</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1181,7 +1181,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>flag if <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a81976cf0605fecd60cbc54aadb626692" title="Change the start address (inside the bar given in the constructor) and number of words of this access...">changeAddress()</a> has been called, which is this low-level transfer element is shared between multiple accessors </p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00163">163</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00162">162</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1205,7 +1205,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>raw buffer </p>
 
-<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00166">166</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
+<p>Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html#l00165">165</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h_source.html">NumericAddressedLowLevelTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1215,7 +1215,7 @@ template&lt;typename UserType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 18 2018 06:53:13 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 20 2018 06:53:13 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

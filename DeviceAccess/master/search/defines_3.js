@@ -1,6 +1,7 @@
 var searchData=
 [
   ['dec',['DEC',['../_c_make_c_compiler_id_8c.html#ad1280362da42492bbc11aa78cbf776ad',1,'DEC():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#ad1280362da42492bbc11aa78cbf776ad',1,'DEC():&#160;CMakeCXXCompilerId.cpp']]],
+  ['declare_5fmulti_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes',['DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES',['../util_2include_2_supported_user_types_8h.html#a393c59a0bbe800ef9a1420bc5f8f8be7',1,'SupportedUserTypes.h']]],
   ['declare_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes',['DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES',['../util_2include_2_supported_user_types_8h.html#a8256edfa28cb73e5de13c92e1920369d',1,'SupportedUserTypes.h']]],
   ['def_5ftypename',['DEF_TYPENAME',['../test_fixed_point_converter_8cpp.html#a4b4edc265050c3971e52f9643040e649',1,'testFixedPointConverter.cpp']]],
   ['define_5ftemplate_5fvtable_5ffiller_5fhelper_5f1',['DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_1',['../util_2include_2_virtual_function_template_8h.html#a2752e639b0d71e7d2673f90f44403e97',1,'VirtualFunctionTemplate.h']]],
