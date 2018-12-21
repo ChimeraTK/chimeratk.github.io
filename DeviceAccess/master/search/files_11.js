@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['versionnumber_2ecc',['VersionNumber.cc',['../_version_number_8cc.html',1,'']]],
-  ['versionnumber_2eh',['VersionNumber.h',['../mtca4u__compatibility__headers_2_version_number_8h.html',1,'']]],
-  ['versionnumber_2eh',['VersionNumber.h',['../device_2include_2_version_number_8h.html',1,'']]],
-  ['virtualfunctiontemplate_2eh',['VirtualFunctionTemplate.h',['../mtca4u__compatibility__headers_2_virtual_function_template_8h.html',1,'']]],
-  ['virtualfunctiontemplate_2eh',['VirtualFunctionTemplate.h',['../util_2include_2_virtual_function_template_8h.html',1,'']]]
+  ['usecustombackend_2ecpp',['useCustomBackend.cpp',['../use_custom_backend_8cpp.html',1,'']]],
+  ['utilities_2ecpp',['Utilities.cpp',['../_utilities_8cpp.html',1,'']]],
+  ['utilities_2eh',['Utilities.h',['../util_2include_2_utilities_8h.html',1,'']]],
+  ['utilities_2eh',['Utilities.h',['../mtca4u__compatibility__headers_2_utilities_8h.html',1,'']]]
 ];

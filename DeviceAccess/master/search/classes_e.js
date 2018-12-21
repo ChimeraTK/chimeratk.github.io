@@ -15,12 +15,13 @@ var searchData=
   ['registercatalogue',['RegisterCatalogue',['../class_chimera_t_k_1_1_register_catalogue.html',1,'ChimeraTK']]],
   ['registercataloguetest',['RegisterCatalogueTest',['../class_register_catalogue_test.html',1,'']]],
   ['registercataloguetestsuite',['registerCatalogueTestSuite',['../classregister_catalogue_test_suite.html',1,'']]],
-  ['registerinfo',['RegisterInfo',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html',1,'ChimeraTK::RegisterInfoMap']]],
-  ['registerinfo',['RegisterInfo',['../class_chimera_t_k_1_1_register_info.html',1,'ChimeraTK']]],
   ['registerinfo',['RegisterInfo',['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html',1,'ChimeraTK::RebotProtocol0']]],
+  ['registerinfo',['RegisterInfo',['../class_chimera_t_k_1_1_register_info.html',1,'ChimeraTK']]],
+  ['registerinfo',['RegisterInfo',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html',1,'ChimeraTK::RegisterInfoMap']]],
   ['registerinfomap',['RegisterInfoMap',['../class_chimera_t_k_1_1_register_info_map.html',1,'ChimeraTK']]],
   ['registerpath',['RegisterPath',['../class_chimera_t_k_1_1_register_path.html',1,'ChimeraTK']]],
   ['registerpathtest',['RegisterPathTest',['../class_register_path_test.html',1,'']]],
   ['registerpathtestsuite',['RegisterPathTestSuite',['../class_register_path_test_suite.html',1,'']]],
+  ['round',['Round',['../struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1_round.html',1,'ChimeraTK::IEEE754_SingleConverter']]],
   ['runtime_5ferror',['runtime_error',['../class_chimera_t_k_1_1runtime__error.html',1,'ChimeraTK']]]
 ];
