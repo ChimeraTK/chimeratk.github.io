@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_chimera_t_k_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1detail.html">detail</a></td></tr>
-<tr class="memdesc:namespace_chimera_t_k_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class for <a class="el" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d" title="Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...">for_each()</a>. <br /></td></tr>
+<tr class="memdesc:namespace_chimera_t_k_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is external to allow template specialisation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_chimera_t_k_1_1numeric__address"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1numeric__address.html">numeric_address</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,6 +302,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to store a register path name.  <a href="class_chimera_t_k_1_1_register_path.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html">RoundingRangeCheckingDataConverter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1runtime__error.html">runtime_error</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception thrown when a runtime error has occured.  <a href="class_chimera_t_k_1_1runtime__error.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -420,6 +422,9 @@ Functions</h2></td></tr>
 <tr class="memitem:acce8f232d67a0050a45f35c59972b813"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:acce8f232d67a0050a45f35c59972b813"><td class="memTemplItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#acce8f232d67a0050a45f35c59972b813">FixedPointConverter::toRaw&lt; std::string &gt;</a> (std::string cookedValue) const </td></tr>
 <tr class="separator:acce8f232d67a0050a45f35c59972b813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb177671f195affcdc934bb3a5387c2"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a0fb177671f195affcdc934bb3a5387c2"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a0fb177671f195affcdc934bb3a5387c2">IEEE754_SingleConverter::toCooked&lt; std::string &gt;</a> (uint32_t rawValue) const </td></tr>
+<tr class="separator:a0fb177671f195affcdc934bb3a5387c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9c56ff8bff79118f4a3f899ba613971"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:aa9c56ff8bff79118f4a3f899ba613971"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aa9c56ff8bff79118f4a3f899ba613971">RegisterAccessor::read&lt; std::string &gt;</a> (std::string *, size_t, uint32_t) const </td></tr>
 <tr class="separator:aa9c56ff8bff79118f4a3f899ba613971"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1113,6 +1118,26 @@ template&lt;typename MAPTYPE , typename LAMBDATYPE &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a0fb177671f195affcdc934bb3a5387c2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#a33a079b5a3f6809a79c91125261668f9">ChimeraTK::IEEE754_SingleConverter::toCooked</a>&lt; std::string &gt; </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>rawValue</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_i_e_e_e754___single_converter_8cc_source.html#l00005">5</a> of file <a class="el" href="_i_e_e_e754___single_converter_8cc_source.html">IEEE754_SingleConverter.cc</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aaff61f1687b67ff734aba727c86f2259"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1133,6 +1158,22 @@ template&lt;typename MAPTYPE , typename LAMBDATYPE &gt; </div>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a40ba02c9fbdb3da52b45a277fb86c1a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html">NumericAddressedBackendMuxedRegisterAccessor</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1179,22 +1220,6 @@ template&lt;typename MAPTYPE , typename LAMBDATYPE &gt; </div>
           <td class="memname">ChimeraTK::INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">LNMBackendVariableAccessor</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a40ba02c9fbdb3da52b45a277fb86c1a3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ChimeraTK::INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html">NumericAddressedBackendMuxedRegisterAccessor</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1949,7 +1974,7 @@ template&lt;&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 21 2018 06:53:11 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 22 2018 06:53:12 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="_i_e_e_e754___single_converter_8h_source.html">IEEE754_SingleConverter.h</a>&quot;</code><br />
+<code>#include &lt;float.h&gt;</code><br />
 </div>
 <p><a href="test_i_e_e_e754___single_converter_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -109,12 +110,16 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afaf72263483f02980667f0d1ec71a3c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_i_e_e_e754___single_converter_8cpp.html#afaf72263483f02980667f0d1ec71a3c4">BOOST_AUTO_TEST_CASE</a> (test_3_25)</td></tr>
-<tr class="separator:afaf72263483f02980667f0d1ec71a3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a434a166686fc5ae6eec42d5bd5271739"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_i_e_e_e754___single_converter_8cpp.html#a434a166686fc5ae6eec42d5bd5271739">BOOST_AUTO_TEST_CASE</a> (test_60k)</td></tr>
-<tr class="separator:a434a166686fc5ae6eec42d5bd5271739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e3e0e6ae74d53eaad95406d4f5b01f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_i_e_e_e754___single_converter_8cpp.html#a0e3e0e6ae74d53eaad95406d4f5b01f3">BOOST_AUTO_TEST_CASE</a> (test_minus240)</td></tr>
-<tr class="separator:a0e3e0e6ae74d53eaad95406d4f5b01f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97640324adfeb6e9a0d97790c88e7b61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_i_e_e_e754___single_converter_8cpp.html#a97640324adfeb6e9a0d97790c88e7b61">BOOST_AUTO_TEST_CASE</a> (test_toCooked_3_25)</td></tr>
+<tr class="separator:a97640324adfeb6e9a0d97790c88e7b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a7ce03629217d9454bd8f5a93387d88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_i_e_e_e754___single_converter_8cpp.html#a3a7ce03629217d9454bd8f5a93387d88">BOOST_AUTO_TEST_CASE</a> (test_toCooked_60k)</td></tr>
+<tr class="separator:a3a7ce03629217d9454bd8f5a93387d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5566e60b10bd692e016bfa53e16c2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_i_e_e_e754___single_converter_8cpp.html#a8e5566e60b10bd692e016bfa53e16c2e">BOOST_AUTO_TEST_CASE</a> (test_toCooked_minus240)</td></tr>
+<tr class="separator:a8e5566e60b10bd692e016bfa53e16c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7220c58e3084fe9f9452a0cb6a062db8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_i_e_e_e754___single_converter_8cpp.html#a7220c58e3084fe9f9452a0cb6a062db8">checkAsRaw</a> (int32_t rawValue, float expectedValue)</td></tr>
+<tr class="separator:a7220c58e3084fe9f9452a0cb6a062db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3969073692c2c5547ec66375a48a5639"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_i_e_e_e754___single_converter_8cpp.html#a3969073692c2c5547ec66375a48a5639">BOOST_AUTO_TEST_CASE</a> (test_from_3_25)</td></tr>
+<tr class="separator:a3969073692c2c5547ec66375a48a5639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a139f00d2466d591f60b8d6a73c8273f1"></a>
@@ -146,64 +151,110 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="afaf72263483f02980667f0d1ec71a3c4"></a>
+<a class="anchor" id="a97640324adfeb6e9a0d97790c88e7b61"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">test_3_25&#160;</td>
+          <td class="paramtype">test_toCooked_3_25&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html#l00009">9</a> of file <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html">testIEEE754_SingleConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html#l00011">11</a> of file <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html">testIEEE754_SingleConverter.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a434a166686fc5ae6eec42d5bd5271739"></a>
+<a class="anchor" id="a3a7ce03629217d9454bd8f5a93387d88"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">test_60k&#160;</td>
+          <td class="paramtype">test_toCooked_60k&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html#l00029">29</a> of file <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html">testIEEE754_SingleConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html#l00031">31</a> of file <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html">testIEEE754_SingleConverter.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0e3e0e6ae74d53eaad95406d4f5b01f3"></a>
+<a class="anchor" id="a8e5566e60b10bd692e016bfa53e16c2e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">test_minus240&#160;</td>
+          <td class="paramtype">test_toCooked_minus240&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html#l00050">50</a> of file <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html">testIEEE754_SingleConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html#l00052">52</a> of file <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html">testIEEE754_SingleConverter.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3969073692c2c5547ec66375a48a5639"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">test_from_3_25&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html#l00079">79</a> of file <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html">testIEEE754_SingleConverter.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7220c58e3084fe9f9452a0cb6a062db8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void checkAsRaw </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>rawValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>expectedValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html#l00072">72</a> of file <a class="el" href="test_i_e_e_e754___single_converter_8cpp_source.html">testIEEE754_SingleConverter.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 21 2018 06:53:11 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 22 2018 06:53:11 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -91,7 +91,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -104,12 +103,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="_i_e_e_e754___single_converter_8h_source.html">IEEE754_SingleConverter.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1_round.html">Round</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">define round type for the boost::numeric::converter  <a href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1_round.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a33a079b5a3f6809a79c91125261668f9"><td class="memTemplParams" colspan="2">template&lt;typename CookedType &gt; </td></tr>
@@ -118,13 +111,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a378c0f5f1a25b42db30926e477f0f97a"><td class="memTemplParams" colspan="2">template&lt;typename CookedType &gt; </td></tr>
 <tr class="memitem:a378c0f5f1a25b42db30926e477f0f97a"><td class="memTemplItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#a378c0f5f1a25b42db30926e477f0f97a">toRaw</a> (CookedType cookedValue) const </td></tr>
 <tr class="separator:a378c0f5f1a25b42db30926e477f0f97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66db2e6418eab1202bdf83fc1d584a9"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:ab66db2e6418eab1202bdf83fc1d584a9"><td class="memTemplItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#ab66db2e6418eab1202bdf83fc1d584a9">toRaw</a> (std::string cookedValue) const </td></tr>
+<tr class="separator:ab66db2e6418eab1202bdf83fc1d584a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4d97a67cf9d96dc0c9bc7e0c36b933"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:afe4d97a67cf9d96dc0c9bc7e0c36b933"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#afe4d97a67cf9d96dc0c9bc7e0c36b933">toCooked</a> (uint32_t rawValue) const </td></tr>
+<tr class="separator:afe4d97a67cf9d96dc0c9bc7e0c36b933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Needs to have the same interface as <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html" title="The fixed point converter provides conversion functions between a user type and up to 32 bit fixed po...">FixedPointConverter</a>, except for the constructor. </p>
 <p>Converter for IEEE754 single precision (32bit) floating point. </p>
 
-<p>Definition at line <a class="el" href="_i_e_e_e754___single_converter_8h_source.html#l00012">12</a> of file <a class="el" href="_i_e_e_e754___single_converter_8h_source.html">IEEE754_SingleConverter.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_e_e_e754___single_converter_8h_source.html#l00032">32</a> of file <a class="el" href="_i_e_e_e754___single_converter_8h_source.html">IEEE754_SingleConverter.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="afe4d97a67cf9d96dc0c9bc7e0c36b933"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ChimeraTK::IEEE754_SingleConverter::toCooked </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>rawValue</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_i_e_e_e754___single_converter_8cc_source.html#l00005">5</a> of file <a class="el" href="_i_e_e_e754___single_converter_8cc_source.html">IEEE754_SingleConverter.cc</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a33a079b5a3f6809a79c91125261668f9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +160,7 @@ template&lt;typename CookedType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_i_e_e_e754___single_converter_8h_source.html#l00035">35</a> of file <a class="el" href="_i_e_e_e754___single_converter_8h_source.html">IEEE754_SingleConverter.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_e_e_e754___single_converter_8h_source.html#l00043">43</a> of file <a class="el" href="_i_e_e_e754___single_converter_8h_source.html">IEEE754_SingleConverter.h</a>.</p>
 
 </div>
 </div>
@@ -150,9 +169,6 @@ template&lt;typename CookedType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename CookedType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">uint32_t ChimeraTK::IEEE754_SingleConverter::toRaw </td>
@@ -162,24 +178,38 @@ template&lt;typename CookedType &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_i_e_e_e754___single_converter_8h_source.html#l00018">18</a> of file <a class="el" href="_i_e_e_e754___single_converter_8h_source.html">IEEE754_SingleConverter.h</a>.</p>
+<p>Definition at line <a class="el" href="_i_e_e_e754___single_converter_8h_source.html#l00063">63</a> of file <a class="el" href="_i_e_e_e754___single_converter_8h_source.html">IEEE754_SingleConverter.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a class="anchor" id="ab66db2e6418eab1202bdf83fc1d584a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ChimeraTK::IEEE754_SingleConverter::toRaw </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>cookedValue</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_i_e_e_e754___single_converter_8cc_source.html#l00015">15</a> of file <a class="el" href="_i_e_e_e754___single_converter_8cc_source.html">IEEE754_SingleConverter.cc</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/device/include/<a class="el" href="_i_e_e_e754___single_converter_8h_source.html">IEEE754_SingleConverter.h</a></li>
+<li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/device/src/<a class="el" href="_i_e_e_e754___single_converter_8cc_source.html">IEEE754_SingleConverter.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 21 2018 06:53:11 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 22 2018 06:53:12 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

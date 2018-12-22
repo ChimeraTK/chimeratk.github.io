@@ -22,6 +22,7 @@ var searchData=
   ['registerpath',['RegisterPath',['../class_chimera_t_k_1_1_register_path.html',1,'ChimeraTK']]],
   ['registerpathtest',['RegisterPathTest',['../class_register_path_test.html',1,'']]],
   ['registerpathtestsuite',['RegisterPathTestSuite',['../class_register_path_test_suite.html',1,'']]],
-  ['round',['Round',['../struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1_round.html',1,'ChimeraTK::IEEE754_SingleConverter']]],
+  ['round',['Round',['../struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html',1,'ChimeraTK::RoundingRangeCheckingDataConverter']]],
+  ['roundingrangecheckingdataconverter',['RoundingRangeCheckingDataConverter',['../struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html',1,'ChimeraTK']]],
   ['runtime_5ferror',['runtime_error',['../class_chimera_t_k_1_1runtime__error.html',1,'ChimeraTK']]]
 ];
