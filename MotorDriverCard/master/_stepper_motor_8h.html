@@ -90,16 +90,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">StepperMotor.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;atomic&gt;</code><br />
-<code>#include &lt;thread&gt;</code><br />
-<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;boost/thread.hpp&gt;</code><br />
+<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="_motor_driver_card_config_x_m_l_8h_source.html">MotorDriverCardConfigXML.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_motor_driver_card_8h_source.html">MotorDriverCard.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_motor_controler_8h_source.html">MotorControler.h</a>&quot;</code><br />
@@ -107,35 +108,61 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="_stepper_motor_error_8h_source.html">StepperMotorError.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_stepper_motor_status_8h_source.html">StepperMotorStatus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_stepper_motor_calibration_status_8h_source.html">StepperMotorCalibrationStatus.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_state_machine_8h_source.html">StateMachine.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_stepper_motor_state_machine_8h_source.html">StepperMotorStateMachine.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_logger_8h_source.html">Logger.h</a>&quot;</code><br />
 </div>
 <p><a href="_stepper_motor_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_utility_1_1_scaling_units_converter.html">ChimeraTK::StepperMotorUtility::ScalingUnitsConverter&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of scaling <a class="el" href="class_chimera_t_k_1_1_stepper_motor_utility_1_1_units_converter.html" title="A generic abstract units converter between an integer value (steps)  and a user-defined unit...">UnitsConverter</a>.  <a href="class_chimera_t_k_1_1_stepper_motor_utility_1_1_scaling_units_converter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor.html">ChimeraTK::StepperMotor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class provides the user interface for a basic stepper motor.  <a href="class_chimera_t_k_1_1_stepper_motor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_stepper_motor.html">mtca4u::StepperMotor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_stepper_motor_status_and_error.html">mtca4u::StepperMotorStatusAndError</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_units_converter.html">ChimeraTK::StepperMotorUnitsConverter</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_utility_1_1_units_converter.html">ChimeraTK::StepperMotorUtility::UnitsConverter&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A generic abstract units converter between an integer value (steps)<br />
+ and a user-defined unit.  <a href="class_chimera_t_k_1_1_stepper_motor_utility_1_1_units_converter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_units_converter_trivia.html">ChimeraTK::StepperMotorUnitsConverterTrivia</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_utility_1_1_units_converter_trivia.html">ChimeraTK::StepperMotorUtility::UnitsConverterTrivia&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 1:1 units converter between an integer value (steps) and a user-defined unit.  <a href="class_chimera_t_k_1_1_stepper_motor_utility_1_1_units_converter_trivia.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_chimera_t_k"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></td></tr>
+<tr class="memdesc:namespace_chimera_t_k"><td class="mdescLeft">&#160;</td><td class="mdescRight">File: <a class="el" href="_stepper_motor_8h.html">StepperMotor.h</a> Author: tkozak. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_chimera_t_k_1_1_stepper_motor_utility"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_stepper_motor_utility.html">ChimeraTK::StepperMotorUtility</a></td></tr>
+<tr class="memdesc:namespace_chimera_t_k_1_1_stepper_motor_utility"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace for utility classes related to the <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html" title="This class provides the user interface for a basic stepper motor. ">StepperMotor</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemtca4u"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemtca4u.html">mtca4u</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:abc333648b9fec24cec2d6f9fe87c41b7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_stepper_motor_utility.html#abc333648b9fec24cec2d6f9fe87c41b7">ChimeraTK::StepperMotorUtility::EncoderUnitsConverter</a> = UnitsConverter&lt; double &gt;</td></tr>
+<tr class="separator:abc333648b9fec24cec2d6f9fe87c41b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4233268281e4c859929bc059566c0d0e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_stepper_motor_utility.html#a4233268281e4c859929bc059566c0d0e">ChimeraTK::StepperMotorUtility::EncoderUnitsConverterTrivia</a> = UnitsConverterTrivia&lt; double &gt;</td></tr>
+<tr class="separator:a4233268281e4c859929bc059566c0d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d8c373d41e57e7aef14b65c5c35fd2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_stepper_motor_utility.html#ae8d8c373d41e57e7aef14b65c5c35fd2">ChimeraTK::StepperMotorUtility::EncoderUnitsScalingConverter</a> = ScalingUnitsConverter&lt; double &gt;</td></tr>
+<tr class="separator:ae8d8c373d41e57e7aef14b65c5c35fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae8726d0f2cf31ef8b4f5b808e5af3f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_stepper_motor_utility.html#a1ae8726d0f2cf31ef8b4f5b808e5af3f">ChimeraTK::StepperMotorUtility::StepperMotorUnitsConverter</a> = UnitsConverter&lt; float &gt;</td></tr>
+<tr class="separator:a1ae8726d0f2cf31ef8b4f5b808e5af3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92aaae7e040d17e33551c2ffc5eb869c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_stepper_motor_utility.html#a92aaae7e040d17e33551c2ffc5eb869c">ChimeraTK::StepperMotorUtility::StepperMotorUnitsConverterTrivia</a> = UnitsConverterTrivia&lt; float &gt;</td></tr>
+<tr class="separator:a92aaae7e040d17e33551c2ffc5eb869c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b1566711eeeac7053e584b2eae52aa5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_stepper_motor_utility.html#a4b1566711eeeac7053e584b2eae52aa5">ChimeraTK::StepperMotorUtility::StepperMotorUnitsScalingConverter</a> = ScalingUnitsConverter&lt; float &gt;</td></tr>
+<tr class="separator:a4b1566711eeeac7053e584b2eae52aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 6 2018 06:55:14 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 9 2019 06:55:09 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

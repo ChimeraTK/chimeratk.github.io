@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['why_20you_20need_20a_20motor_20driver_20card_20config_20and_20how_20create_20it',['Why you need a motor driver card config and how create it',['../motor_driver_card_config_docu.html',1,'']]],
-  ['waitforidle',['waitForIdle',['../class_chimera_t_k_1_1_stepper_motor.html#a7be2a92f84c5f2587cdcb1fc51e03388',1,'ChimeraTK::StepperMotor']]],
-  ['warning',['WARNING',['../class_chimera_t_k_1_1_logger.html#aabffb1c92679d28a6c292f50bb1dc168',1,'ChimeraTK::Logger']]],
-  ['what',['what',['../classmtca4u_1_1_motor_driver_exception.html#ae3b98533a812a1ef392de4b323db0cf4',1,'mtca4u::MotorDriverException::what()'],['../class_chimera_t_k_1_1_stepper_motor_exception.html#a04438341f6883f5e3ca51cafd805ba5a',1,'ChimeraTK::StepperMotorException::what()']]],
-  ['write',['write',['../classmtca4u_1_1_s_p_ivia_p_c_ie.html#a5b8c8b62747147e0540d26d312b86cce',1,'mtca4u::SPIviaPCIe::write()'],['../classmtca4u_1_1_t_m_c429_s_p_i.html#a16f51d64ae517322e885c65f1014deb7',1,'mtca4u::TMC429SPI::write(unsigned int smda, unsigned int idx_jdx, unsigned int data)'],['../classmtca4u_1_1_t_m_c429_s_p_i.html#ab299457bed9f219fed7860ad6b9c4562',1,'mtca4u::TMC429SPI::write(TMC429InputWord const &amp;writeWord)'],['../classmtca4u_1_1_motor_driver_card_config_x_m_l.html#a077abf1834ff7803553913aa1d30848a',1,'mtca4u::MotorDriverCardConfigXML::write()']]],
-  ['writesparse',['writeSparse',['../classmtca4u_1_1_motor_driver_card_config_x_m_l.html#abeabde56727fbb90f0eb8bc35573f22c',1,'mtca4u::MotorDriverCardConfigXML']]],
-  ['wrong_5ffirmware_5fversion',['WRONG_FIRMWARE_VERSION',['../classmtca4u_1_1_motor_driver_exception.html#aef53ec5642ed9ce0f5bdd2c846807efda7c91a8654e30d3a561c93cbf17675d98',1,'mtca4u::MotorDriverException']]],
-  ['wrong_5fmotor_5fid',['WRONG_MOTOR_ID',['../classmtca4u_1_1_motor_driver_exception.html#aef53ec5642ed9ce0f5bdd2c846807efda7234f101f7a37de4da2c287e0acf912f',1,'mtca4u::MotorDriverException']]]
+  ['undefinedevent',['undefinedEvent',['../class_chimera_t_k_1_1_state_machine.html#abde4889637c02ded761bf735236279ad',1,'ChimeraTK::StateMachine']]],
+  ['unique_5flock',['unique_lock',['../_motor_controler_dummy_8cc.html#aedb00abeee050671ad182a1e88de8914',1,'unique_lock():&#160;MotorControlerDummy.cc'],['../_motor_controler_impl_8cc.html#aedb00abeee050671ad182a1e88de8914',1,'unique_lock():&#160;MotorControlerImpl.cc']]],
+  ['unitsconverter',['UnitsConverter',['../class_chimera_t_k_1_1_stepper_motor_utility_1_1_units_converter.html',1,'ChimeraTK::StepperMotorUtility']]],
+  ['unitsconvertertrivia',['UnitsConverterTrivia',['../class_chimera_t_k_1_1_stepper_motor_utility_1_1_units_converter_trivia.html#a593116b6efcc97c161a1e285f3982d87',1,'ChimeraTK::StepperMotorUtility::UnitsConverterTrivia']]],
+  ['unitsconvertertrivia',['UnitsConverterTrivia',['../class_chimera_t_k_1_1_stepper_motor_utility_1_1_units_converter_trivia.html',1,'ChimeraTK::StepperMotorUtility']]],
+  ['unitstosteps',['unitsToSteps',['../class_chimera_t_k_1_1_stepper_motor_utility_1_1_units_converter.html#a400c1f4c43382e95752d39cb8163fef7',1,'ChimeraTK::StepperMotorUtility::UnitsConverter::unitsToSteps()'],['../class_chimera_t_k_1_1_stepper_motor_utility_1_1_units_converter_trivia.html#a7e7fc2d995260100a05d30a112589371',1,'ChimeraTK::StepperMotorUtility::UnitsConverterTrivia::unitsToSteps()'],['../class_chimera_t_k_1_1_stepper_motor_utility_1_1_scaling_units_converter.html#a8f4d84fd87ef6325dbda0d56242f6f84',1,'ChimeraTK::StepperMotorUtility::ScalingUnitsConverter::unitsToSteps()']]]
 ];

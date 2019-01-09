@@ -222,8 +222,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9b66cb5a7238edf3ef9200770efe2d37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_stepper_motor.html#a9b66cb5a7238edf3ef9200770efe2d37">setSoftwareLimitsEnabled</a> (bool enabled)</td></tr>
 <tr class="memdesc:a9b66cb5a7238edf3ef9200770efe2d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set soft limit enabled or disabled.  <a href="#a9b66cb5a7238edf3ef9200770efe2d37">More...</a><br /></td></tr>
 <tr class="separator:a9b66cb5a7238edf3ef9200770efe2d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6cc1058d466b0279370f1cd09158081"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_stepper_motor.html#ae6cc1058d466b0279370f1cd09158081">setStepperMotorUnitsConverter</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_stepper_motor_units_converter.html">StepperMotorUnitsConverter</a> &gt; stepperMotorUnitsConverter)</td></tr>
-<tr class="memdesc:ae6cc1058d466b0279370f1cd09158081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a pointer to StepperMotorUnitsConverter object.  <a href="#ae6cc1058d466b0279370f1cd09158081">More...</a><br /></td></tr>
+<tr class="memitem:ae6cc1058d466b0279370f1cd09158081"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_stepper_motor.html#ae6cc1058d466b0279370f1cd09158081">setStepperMotorUnitsConverter</a> (boost::shared_ptr&lt; <a class="el" href="class_stepper_motor_units_converter.html">StepperMotorUnitsConverter</a> &gt; stepperMotorUnitsConverter)</td></tr>
+<tr class="memdesc:ae6cc1058d466b0279370f1cd09158081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a pointer to <a class="el" href="class_stepper_motor_units_converter.html">StepperMotorUnitsConverter</a> object.  <a href="#ae6cc1058d466b0279370f1cd09158081">More...</a><br /></td></tr>
 <tr class="separator:ae6cc1058d466b0279370f1cd09158081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaee6786ebc24e6f8ad96eaa947c907d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_stepper_motor.html#aaaee6786ebc24e6f8ad96eaa947c907d">setStepperMotorUnitsConverterToDefault</a> ()</td></tr>
 <tr class="memdesc:aaaee6786ebc24e6f8ad96eaa947c907d"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the unit converter to default one, with a 1:1 conversion factor.  <a href="#aaaee6786ebc24e6f8ad96eaa947c907d">More...</a><br /></td></tr>
@@ -290,7 +290,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:aa55062a0b161fddff73414611baabc1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f56c2e4c36f128baf8eb7141ab1530d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_stepper_motor.html#a2f56c2e4c36f128baf8eb7141ab1530d">_softwareLimitsEnabled</a></td></tr>
 <tr class="separator:a2f56c2e4c36f128baf8eb7141ab1530d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a129e7565fd053e9caa4bea7b8453f8b7"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_stepper_motor_units_converter.html">StepperMotorUnitsConverter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_stepper_motor.html#a129e7565fd053e9caa4bea7b8453f8b7">_stepperMotorUnitsConverter</a></td></tr>
+<tr class="memitem:a129e7565fd053e9caa4bea7b8453f8b7"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_stepper_motor_units_converter.html">StepperMotorUnitsConverter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_stepper_motor.html#a129e7565fd053e9caa4bea7b8453f8b7">_stepperMotorUnitsConverter</a></td></tr>
 <tr class="separator:a129e7565fd053e9caa4bea7b8453f8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4b68e2bd0de2103757f4bdb0cc29821"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_stepper_motor.html#aa4b68e2bd0de2103757f4bdb0cc29821">_stopMotorForBlocking</a></td></tr>
 <tr class="separator:aa4b68e2bd0de2103757f4bdb0cc29821"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -299,7 +299,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00084">84</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00147">147</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1cc4b38229a1c5c79d52b4e8a0ef2540"></a>
 <div class="memitem">
@@ -1321,21 +1321,21 @@ Logger::LogLevel FULL_DETAIL;<br />
         <tr>
           <td class="memname">void mtca4u::StepperMotor::setStepperMotorUnitsConverter </td>
           <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_stepper_motor_units_converter.html">StepperMotorUnitsConverter</a> &gt;&#160;</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_stepper_motor_units_converter.html">StepperMotorUnitsConverter</a> &gt;&#160;</td>
           <td class="paramname"><em>stepperMotorUnitsConverter</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set a pointer to StepperMotorUnitsConverter object. </p>
+<p>Set a pointer to <a class="el" href="class_stepper_motor_units_converter.html">StepperMotorUnitsConverter</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">stepperMotorUnitsConverter</td><td>- shared pointer to the converter object.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Set a pointer to StepperMotorUnitsConverter object. The StepperMotorUnitsConverter is an interface (abstract class) which provides two methods which are converting steps to arbitrary units and vice-versa. The user need to create its own class which inherits from StepperMotorUnitsConverter and implements the: 'float stepsToUnits(int steps)' and 'int unitsToSteps(float units)' methods. </p>
+<p>Set a pointer to <a class="el" href="class_stepper_motor_units_converter.html">StepperMotorUnitsConverter</a> object. The <a class="el" href="class_stepper_motor_units_converter.html">StepperMotorUnitsConverter</a> is an interface (abstract class) which provides two methods which are converting steps to arbitrary units and vice-versa. The user need to create its own class which inherits from <a class="el" href="class_stepper_motor_units_converter.html">StepperMotorUnitsConverter</a> and implements the: 'float stepsToUnits(int steps)' and 'int unitsToSteps(float units)' methods. </p>
 
 <p>Definition at line <a class="el" href="_stepper_motor_8cc_source.html#l00206">206</a> of file <a class="el" href="_stepper_motor_8cc_source.html">StepperMotor.cc</a>.</p>
 
@@ -1386,8 +1386,8 @@ Logger::LogLevel FULL_DETAIL;<br />
 When Autostart flag is set to TRUE motor will automatically start moving to desired position by calling 'void <a class="el" href="classmtca4u_1_1_stepper_motor.html#a2b467800598f61ffc06bf395f0ed51db" title="Start the motor. ">start()</a>' method.<br />
 When Autostart flag is set to FALSE motor will NOT automatically start moving to desired position. Additionally, execution of <a class="el" href="classmtca4u_1_1_stepper_motor.html#a2b467800598f61ffc06bf395f0ed51db" title="Start the motor. ">start()</a> method is necessary to start motor.<br />
 This is NO blocking method so user needs to monitor motor status.<br />
-Position is expressed in arbitrary units ex. mm or fs or deg or steps. Recalculation from arbitrary unit to steps is done by object of StepperMotorUnitsConverter.<br />
-StepperMotorUnitsConverter can be set by setStepperMotorUnitsConverter method. When not set conversion coefficient is 1 (steps = 1 x units). <br />
+Position is expressed in arbitrary units ex. mm or fs or deg or steps. Recalculation from arbitrary unit to steps is done by object of <a class="el" href="class_stepper_motor_units_converter.html">StepperMotorUnitsConverter</a>.<br />
+<a class="el" href="class_stepper_motor_units_converter.html">StepperMotorUnitsConverter</a> can be set by setStepperMotorUnitsConverter method. When not set conversion coefficient is 1 (steps = 1 x units). <br />
 </p>
 
 <p>Definition at line <a class="el" href="_stepper_motor_8cc_source.html#l00176">176</a> of file <a class="el" href="_stepper_motor_8cc_source.html">StepperMotor.cc</a>.</p>
@@ -1577,7 +1577,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00548">548</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00611">611</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1599,7 +1599,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00558">558</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00621">621</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1621,7 +1621,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00559">559</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00622">622</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1643,7 +1643,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00543">543</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00606">606</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1665,7 +1665,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00545">545</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00608">608</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1687,7 +1687,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00555">555</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00618">618</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1709,7 +1709,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00532">532</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00595">595</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1731,7 +1731,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00531">531</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00594">594</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1753,7 +1753,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00527">527</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00590">590</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1775,7 +1775,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00528">528</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00591">591</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1797,7 +1797,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00554">554</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00617">617</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1819,7 +1819,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00556">556</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00619">619</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1841,7 +1841,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00560">560</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00623">623</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1863,7 +1863,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00552">552</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00615">615</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1875,7 +1875,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_stepper_motor_units_converter.html">StepperMotorUnitsConverter</a>&gt; mtca4u::StepperMotor::_stepperMotorUnitsConverter</td>
+          <td class="memname">boost::shared_ptr&lt;<a class="el" href="class_stepper_motor_units_converter.html">StepperMotorUnitsConverter</a>&gt; mtca4u::StepperMotor::_stepperMotorUnitsConverter</td>
         </tr>
       </table>
   </td>
@@ -1885,7 +1885,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00538">538</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00601">601</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1907,7 +1907,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00550">550</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00613">613</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1929,7 +1929,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00539">539</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_stepper_motor_8h_source.html#l00602">602</a> of file <a class="el" href="_stepper_motor_8h_source.html">StepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -1940,7 +1940,7 @@ Delays in communication can trigger effect that motor will move a few steps in c
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 6 2018 06:55:14 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 9 2019 06:55:09 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

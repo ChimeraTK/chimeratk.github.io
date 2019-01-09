@@ -6,6 +6,7 @@ var searchData=
   ['spiviapcie_2eh',['SPIviaPCIe.h',['../_s_p_ivia_p_c_ie_8h.html',1,'']]],
   ['statemachine_2ecc',['StateMachine.cc',['../_state_machine_8cc.html',1,'']]],
   ['statemachine_2eh',['StateMachine.h',['../_state_machine_8h.html',1,'']]],
+  ['stepper_5fmotor_2edox',['stepper_motor.dox',['../stepper__motor_8dox.html',1,'']]],
   ['steppermotor_2ecc',['StepperMotor.cc',['../_stepper_motor_8cc.html',1,'']]],
   ['steppermotor_2eh',['StepperMotor.h',['../_stepper_motor_8h.html',1,'']]],
   ['steppermotorcalibrationstatus_2ecc',['StepperMotorCalibrationStatus.cc',['../_stepper_motor_calibration_status_8cc.html',1,'']]],

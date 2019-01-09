@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['targetandaction',['TargetAndAction',['../struct_chimera_t_k_1_1_target_and_action.html',1,'ChimeraTK']]],
   ['tmc260word',['TMC260Word',['../classmtca4u_1_1_t_m_c260_word.html',1,'mtca4u']]],
   ['tmc429inputword',['TMC429InputWord',['../classmtca4u_1_1_t_m_c429_input_word.html',1,'mtca4u']]],
   ['tmc429outputword',['TMC429OutputWord',['../classmtca4u_1_1_t_m_c429_output_word.html',1,'mtca4u']]],

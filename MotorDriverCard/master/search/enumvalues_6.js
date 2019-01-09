@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['out_5fof_5frange',['OUT_OF_RANGE',['../classmtca4u_1_1_motor_driver_exception.html#aef53ec5642ed9ce0f5bdd2c846807efda7dcb9f1c8a0e0e18a1438d8ba88c16db',1,'mtca4u::MotorDriverException']]]
+  ['move_5finterrupted',['MOVE_INTERRUPTED',['../namespace_chimera_t_k.html#aedf4d898bac23f05c55719e339f18b15a2311252adb08b89320269433aadae163',1,'ChimeraTK']]]
 ];
