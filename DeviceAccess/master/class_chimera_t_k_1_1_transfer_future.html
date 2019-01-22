@@ -166,7 +166,7 @@ Friends</h2></td></tr>
 <p>See its function description for more details.</p>
 <p>Design note: Due due a bug in BOOST 1.58 (already fixed in later versions, but we need to support this version), it is not possible to achieve this behaviour with a continuation with a launch policy of boost::launch::deferred, so we have to live with this wrapper class. In addition, the wait callback function of boost::future would be an insufficient replacement for the callback mechanism in this <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a>, since we need to distinguish whether the wait will block or not. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00059">59</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00067">67</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5ba1c6d44b81df708d5dea56994c0a04"></a>
 <div class="memitem">
@@ -192,7 +192,7 @@ Friends</h2></td></tr>
 <p>Default constructor to generate a dysfunctional future. </p>
 <p>To initialise the future properly, reset() must be called afterwards. This pattern is used since the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> is a member of the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> and only references are returned by readAsync(). </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00073">73</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00081">81</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
 
 </div>
 </div>
@@ -231,7 +231,7 @@ Friends</h2></td></tr>
 <p>Construct from a future_queue&lt;void&gt;. </p>
 <p>The queue should contain notifications when a transfer is complete. It is the responsibility of this <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> to call the proper postRead() function, so the notification must only be about the completion of the equivalent of doReadTransfer(). </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00079">79</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00087">87</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
 
 </div>
 </div>
@@ -270,7 +270,7 @@ Friends</h2></td></tr>
 <p>"Decorating copy constructor": copy from other <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> but override the transfer element. </p>
 <p>The typical use case is a decorating <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00084">84</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00092">92</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
 
 </div>
 </div>
@@ -309,7 +309,7 @@ Friends</h2></td></tr>
 <p>"Decorating move constructor": move from other <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> but override the transfer element. </p>
 <p>The typical use case is a decorating <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00089">89</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00097">97</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +381,7 @@ Friends</h2></td></tr>
 
 <p>Return the <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html" title="Simple class holding a unique ID for a TransferElement. ">TransferElementID</a> of the associated <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
 
-<p>Definition at line <a class="el" href="_transfer_future_8cc_source.html#l00019">19</a> of file <a class="el" href="_transfer_future_8cc_source.html">TransferFuture.cc</a>.</p>
+<p>Definition at line <a class="el" href="_transfer_future_8cc_source.html#l00031">31</a> of file <a class="el" href="_transfer_future_8cc_source.html">TransferFuture.cc</a>.</p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ Friends</h2></td></tr>
 <p>Check if new data has arrived. </p>
 <p>If new data has arrived (and thus this function returned true), the user still has to call <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#ac69099e41046c798d94c8289c335574d" title="Block the current thread until the new data has arrived. ">wait()</a> to initiate the transfer to the user buffer in the accessor. </p>
 
-<p>Definition at line <a class="el" href="_transfer_future_8cc_source.html#l00015">15</a> of file <a class="el" href="_transfer_future_8cc_source.html">TransferFuture.cc</a>.</p>
+<p>Definition at line <a class="el" href="_transfer_future_8cc_source.html#l00021">21</a> of file <a class="el" href="_transfer_future_8cc_source.html">TransferFuture.cc</a>.</p>
 
 </div>
 </div>
@@ -482,7 +482,7 @@ Friends</h2></td></tr>
 <p>Comparison operator: Returns true if the two TransferFutures belong to the same <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
 <p>This is usually sufficient, since only one valid <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> can belong to a <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> at a time. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00106">106</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00114">114</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
 
 </div>
 </div>
@@ -509,7 +509,7 @@ Friends</h2></td></tr>
 
 <p>Check if the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> is valid. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00114">114</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00122">122</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
 
 </div>
 </div>
@@ -579,7 +579,7 @@ Friends</h2></td></tr>
 
 <p>The plain future_queue used for the notifications. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00119">119</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00127">127</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
 
 </div>
 </div>
@@ -603,7 +603,7 @@ Friends</h2></td></tr>
 
 <p>Pointer to the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
 
-<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00122">122</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
+<p>Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00130">130</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
 
 </div>
 </div>
@@ -614,7 +614,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 23 2018 06:53:12 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 22 2019 06:53:12 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

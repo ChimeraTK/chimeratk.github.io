@@ -16,6 +16,7 @@ var searchData=
   ['deviceinfomap',['DeviceInfoMap',['../class_chimera_t_k_1_1_device_info_map.html',1,'ChimeraTK']]],
   ['deviceinfomaptest',['DeviceInfoMapTest',['../class_device_info_map_test.html',1,'']]],
   ['deviceinfomaptestsuite',['DeviceInfoMapTestSuite',['../class_device_info_map_test_suite.html',1,'']]],
+  ['discardvalueexception',['DiscardValueException',['../class_chimera_t_k_1_1detail_1_1_discard_value_exception.html',1,'ChimeraTK::detail']]],
   ['dmapfile',['DMapFile',['../class_chimera_t_k_1_1_d_map_file.html',1,'ChimeraTK']]],
   ['dmapfileparser',['DMapFileParser',['../class_chimera_t_k_1_1_d_map_file_parser.html',1,'ChimeraTK']]],
   ['dmapfileparsertest',['DMapFileParserTest',['../class_d_map_file_parser_test.html',1,'']]],
