@@ -1,14 +1,17 @@
 var searchData=
 [
-  ['targetpositionreached',['targetPositionReached',['../classmtca4u_1_1_motor_controler_impl.html#ab4c37b67435001447829b6551bdc6062',1,'mtca4u::MotorControlerImpl::targetPositionReached()'],['../classmtca4u_1_1_motor_controler.html#aee36371b3b39fae124c37698082c4b65',1,'mtca4u::MotorControler::targetPositionReached()'],['../classmtca4u_1_1_motor_controler_dummy.html#a87d493263082d051a1e1361f033a0dc7',1,'mtca4u::MotorControlerDummy::targetPositionReached()']]],
-  ['testwordfromspiaddress',['testWordFromSpiAddress',['../namespacemtca4u_1_1tmc260.html#a7a4116242e18dc10aa973cc641182516',1,'mtca4u::tmc260']]],
-  ['thirtytwotocustom',['thirtyTwoToCustom',['../classmtca4u_1_1_signed_int_converter.html#afa08804e34313887586e50a7f106a986',1,'mtca4u::SignedIntConverter']]],
-  ['tmc429inputword',['TMC429InputWord',['../classmtca4u_1_1_t_m_c429_input_word.html#a719b4673d8b014a5b8d2c5ee92127e0d',1,'mtca4u::TMC429InputWord']]],
-  ['tmc429outputword',['TMC429OutputWord',['../classmtca4u_1_1_t_m_c429_output_word.html#aa884ce82f6841e20c79f9bcb7436f436',1,'mtca4u::TMC429OutputWord']]],
-  ['tmc429spi',['TMC429SPI',['../classmtca4u_1_1_t_m_c429_s_p_i.html#ae6d0446d0072292cb2d999715387efb2',1,'mtca4u::TMC429SPI']]],
-  ['tmc429statusword',['TMC429StatusWord',['../classmtca4u_1_1_t_m_c429_status_word.html#a06f8393729fab6974511cb1810861293',1,'mtca4u::TMC429StatusWord']]],
-  ['tolerancecalcthreadfunction',['toleranceCalcThreadFunction',['../class_chimera_t_k_1_1_stepper_motor_with_reference_state_machine.html#a8c422ed88d0fd95e6743d213e211bfda',1,'ChimeraTK::StepperMotorWithReferenceStateMachine']]],
-  ['translateaxis',['translateAxis',['../class_chimera_t_k_1_1_stepper_motor.html#a9a6e5bb8bbcd6d1a891f7f5fd1f8a38e',1,'ChimeraTK::StepperMotor::translateAxis()'],['../class_chimera_t_k_1_1_stepper_motor_with_reference.html#a37a038a00c0c009b087406ce3b9009d5',1,'ChimeraTK::StepperMotorWithReference::translateAxis()']]],
-  ['translateaxisinsteps',['translateAxisInSteps',['../class_chimera_t_k_1_1_stepper_motor.html#afd0a6f81b62da70380adafeeb596b16a',1,'ChimeraTK::StepperMotor::translateAxisInSteps()'],['../class_chimera_t_k_1_1_stepper_motor_with_reference.html#a8cbd662c134cd911edfabec875f07ac8',1,'ChimeraTK::StepperMotorWithReference::translateAxisInSteps()']]],
-  ['truncatemotorposition',['truncateMotorPosition',['../classmtca4u_1_1_stepper_motor.html#a726968f588da3961e62d22fc7b50418d',1,'mtca4u::StepperMotor']]]
+  ['read',['read',['../classmtca4u_1_1_s_p_ivia_p_c_ie.html#a235f3bdd4b7931219c04526273f948a1',1,'mtca4u::SPIviaPCIe::read()'],['../classmtca4u_1_1_t_m_c429_s_p_i.html#a057ffae69cf95f5d1b96a12f01819632',1,'mtca4u::TMC429SPI::read()'],['../classmtca4u_1_1_motor_driver_card_config_x_m_l.html#a3da93f428a48345d38b0c7e276e2096c',1,'mtca4u::MotorDriverCardConfigXML::read()']]],
+  ['readdriverspiregister',['readDriverSpiRegister',['../classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a6938d6de7d086d27918095c5cd3f589f',1,'mtca4u::DFMC_MD22Dummy']]],
+  ['readtmc260register',['readTMC260Register',['../classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a964d11b8999fdafe1225fa4306d9b01d',1,'mtca4u::DFMC_MD22Dummy']]],
+  ['readtmc429register',['readTMC429Register',['../classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#aed0820d445967a6cb3885d9d261dabf5',1,'mtca4u::DFMC_MD22Dummy']]],
+  ['recalculatestepsinunits',['recalculateStepsInUnits',['../class_chimera_t_k_1_1_basic_stepper_motor.html#a6d4f47a95052063ba4b3ac4f8d6550d4',1,'ChimeraTK::BasicStepperMotor::recalculateStepsInUnits()'],['../class_chimera_t_k_1_1_stepper_motor.html#ad14a7eae8f72d358cc4b1b94362960f8',1,'ChimeraTK::StepperMotor::recalculateStepsInUnits()']]],
+  ['recalculatestepstounits',['recalculateStepsToUnits',['../classmtca4u_1_1_stepper_motor.html#a4407fcc4a1beb1f38921cebd85e91b22',1,'mtca4u::StepperMotor']]],
+  ['recalculateunitsinsteps',['recalculateUnitsInSteps',['../class_chimera_t_k_1_1_basic_stepper_motor.html#a68794f517cdfdac9a30ef76500e1470e',1,'ChimeraTK::BasicStepperMotor::recalculateUnitsInSteps()'],['../class_chimera_t_k_1_1_stepper_motor.html#a73aed3cb41ffea1784835a2e47cbdf77',1,'ChimeraTK::StepperMotor::recalculateUnitsInSteps()']]],
+  ['recalculateunitstosteps',['recalculateUnitsToSteps',['../classmtca4u_1_1_stepper_motor.html#a22d6733af7e8483f9eb459164719a3a8',1,'mtca4u::StepperMotor']]],
+  ['referenceconfigandrampmodedata',['ReferenceConfigAndRampModeData',['../classmtca4u_1_1_reference_config_and_ramp_mode_data.html#a2f885fd581085df45005860f9a405251',1,'mtca4u::ReferenceConfigAndRampModeData']]],
+  ['referenceswitchdata',['ReferenceSwitchData',['../classmtca4u_1_1_reference_switch_data.html#a3c21a2c60759d5917ba1740a75666ffc',1,'mtca4u::ReferenceSwitchData']]],
+  ['reseterror',['resetError',['../class_chimera_t_k_1_1_basic_stepper_motor.html#aef091fcb283fb767e94a94457e0541b2',1,'ChimeraTK::BasicStepperMotor::resetError()'],['../class_chimera_t_k_1_1_stepper_motor.html#a818b57b3db121505ba4215fc513f1528',1,'ChimeraTK::StepperMotor::resetError()']]],
+  ['resetfirmwareversion',['resetFirmwareVersion',['../classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a5b32c4e2a16e5772b64328cf5c49a91b',1,'mtca4u::DFMC_MD22Dummy']]],
+  ['resetinternalstatetodefaults',['resetInternalStateToDefaults',['../classmtca4u_1_1_motor_controler_dummy.html#ad0fc56fbe2ea5d4689a30b39d69020d8',1,'mtca4u::MotorControlerDummy']]],
+  ['resetmotorcontrollerpositions',['resetMotorControllerPositions',['../class_chimera_t_k_1_1_basic_stepper_motor.html#a482295c3fa2b4569e067d6a89076e42a',1,'ChimeraTK::BasicStepperMotor']]]
 ];

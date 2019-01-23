@@ -14,8 +14,8 @@ var searchData=
   ['tmc429dummyconstants_2eh',['TMC429DummyConstants.h',['../_t_m_c429_dummy_constants_8h.html',1,'']]],
   ['tmc429inputword',['TMC429InputWord',['../classmtca4u_1_1_t_m_c429_input_word.html',1,'mtca4u']]],
   ['tmc429inputword',['TMC429InputWord',['../classmtca4u_1_1_t_m_c429_input_word.html#a719b4673d8b014a5b8d2c5ee92127e0d',1,'mtca4u::TMC429InputWord']]],
-  ['tmc429outputword',['TMC429OutputWord',['../classmtca4u_1_1_t_m_c429_output_word.html#aa884ce82f6841e20c79f9bcb7436f436',1,'mtca4u::TMC429OutputWord']]],
   ['tmc429outputword',['TMC429OutputWord',['../classmtca4u_1_1_t_m_c429_output_word.html',1,'mtca4u']]],
+  ['tmc429outputword',['TMC429OutputWord',['../classmtca4u_1_1_t_m_c429_output_word.html#aa884ce82f6841e20c79f9bcb7436f436',1,'mtca4u::TMC429OutputWord']]],
   ['tmc429spi',['TMC429SPI',['../classmtca4u_1_1_t_m_c429_s_p_i.html',1,'mtca4u']]],
   ['tmc429spi',['TMC429SPI',['../classmtca4u_1_1_t_m_c429_s_p_i.html#ae6d0446d0072292cb2d999715387efb2',1,'mtca4u::TMC429SPI']]],
   ['tmc429spi_2ecc',['TMC429SPI.cc',['../_t_m_c429_s_p_i_8cc.html',1,'']]],
@@ -26,7 +26,9 @@ var searchData=
   ['tmc429words_2eh',['TMC429Words.h',['../_t_m_c429_words_8h.html',1,'']]],
   ['todo_20list',['Todo List',['../todo.html',1,'']]],
   ['tolerancecalcthreadfunction',['toleranceCalcThreadFunction',['../class_chimera_t_k_1_1_stepper_motor_with_reference_state_machine.html#a8c422ed88d0fd95e6743d213e211bfda',1,'ChimeraTK::StepperMotorWithReferenceStateMachine']]],
-  ['translateaxis',['translateAxis',['../class_chimera_t_k_1_1_stepper_motor.html#a9a6e5bb8bbcd6d1a891f7f5fd1f8a38e',1,'ChimeraTK::StepperMotor::translateAxis()'],['../class_chimera_t_k_1_1_stepper_motor_with_reference.html#a37a038a00c0c009b087406ce3b9009d5',1,'ChimeraTK::StepperMotorWithReference::translateAxis()']]],
-  ['translateaxisinsteps',['translateAxisInSteps',['../class_chimera_t_k_1_1_stepper_motor.html#afd0a6f81b62da70380adafeeb596b16a',1,'ChimeraTK::StepperMotor::translateAxisInSteps()'],['../class_chimera_t_k_1_1_stepper_motor_with_reference.html#a8cbd662c134cd911edfabec875f07ac8',1,'ChimeraTK::StepperMotorWithReference::translateAxisInSteps()']]],
+  ['translateaxis',['translateAxis',['../class_chimera_t_k_1_1_basic_stepper_motor.html#abc0f8299eed9b3a5fbdedd5a6913de38',1,'ChimeraTK::BasicStepperMotor::translateAxis()'],['../class_chimera_t_k_1_1_stepper_motor.html#a039a2a906081e17de3b53ee4dfe576ac',1,'ChimeraTK::StepperMotor::translateAxis()']]],
+  ['translateaxisactions',['translateAxisActions',['../class_chimera_t_k_1_1_basic_stepper_motor.html#ae5458ab684ad99166772711c19087309',1,'ChimeraTK::BasicStepperMotor']]],
+  ['translateaxisinsteps',['translateAxisInSteps',['../class_chimera_t_k_1_1_basic_stepper_motor.html#adf8d68a3bf95436e8f64d3da2fa237ba',1,'ChimeraTK::BasicStepperMotor::translateAxisInSteps()'],['../class_chimera_t_k_1_1_stepper_motor.html#ae0c304deed6397eb19cc572345c65e44',1,'ChimeraTK::StepperMotor::translateAxisInSteps()'],['../class_chimera_t_k_1_1_stepper_motor_with_reference.html#a23e3ce4f1827d0cbe8eebacb25e97711',1,'ChimeraTK::StepperMotorWithReference::translateAxisInSteps()']]],
+  ['translatelimits',['translateLimits',['../class_chimera_t_k_1_1_basic_stepper_motor.html#a598b3dc2841942cfd6587835ba9a3456',1,'ChimeraTK::BasicStepperMotor']]],
   ['truncatemotorposition',['truncateMotorPosition',['../classmtca4u_1_1_stepper_motor.html#a726968f588da3961e62d22fc7b50418d',1,'mtca4u::StepperMotor']]]
 ];

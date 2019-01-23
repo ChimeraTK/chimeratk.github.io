@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>DFMC-MD22 Motor Controller: /home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/MotorDriverCard/include/StepperMotor.h File Reference</title>
+<title>DFMC-MD22 Motor Controller: /home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/MotorDriverCard/steppermotor/include/StepperMotor.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,14 +84,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_c80554c2587133db87f1fb9893ad232b.html">steppermotor</a></li><li class="navelem"><a class="el" href="dir_5ddc6a7ee020311af7534edb16953e99.html">include</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">StepperMotor.h File Reference</div>  </div>
 </div><!--header-->
@@ -106,6 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="_motor_controler_8h_source.html">MotorControler.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_motor_driver_exception_8h_source.html">MotorDriverException.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_stepper_motor_error_8h_source.html">StepperMotorError.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_stepper_motor_exception_8h_source.html">StepperMotorException.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_stepper_motor_status_8h_source.html">StepperMotorStatus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_stepper_motor_calibration_status_8h_source.html">StepperMotorCalibrationStatus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_stepper_motor_state_machine_8h_source.html">StepperMotorStateMachine.h</a>&quot;</code><br />
@@ -122,6 +124,12 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class provides the user interface for a basic stepper motor.  <a href="class_chimera_t_k_1_1_stepper_motor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_stepper_motor.html">mtca4u::StepperMotor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_factory.html">ChimeraTK::StepperMotorFactory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_chimera_t_k_1_1_stepper_motor_factory.html" title="The StepperMotorFactory is used to create StepperMotor instances. ">StepperMotorFactory</a> is used to create <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html" title="This class provides the user interface for a basic stepper motor. ">StepperMotor</a> instances.  <a href="class_chimera_t_k_1_1_stepper_motor_factory.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_stepper_motor_parameters.html">ChimeraTK::StepperMotorParameters</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains parameters for initialization of a <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html" title="This class provides the user interface for a basic stepper motor. ">StepperMotor</a> object.  <a href="struct_chimera_t_k_1_1_stepper_motor_parameters.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_stepper_motor_status_and_error.html">mtca4u::StepperMotorStatusAndError</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,11 +166,42 @@ Typedefs</h2></td></tr>
 <tr class="separator:a92aaae7e040d17e33551c2ffc5eb869c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b1566711eeeac7053e584b2eae52aa5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_stepper_motor_utility.html#a4b1566711eeeac7053e584b2eae52aa5">ChimeraTK::StepperMotorUtility::StepperMotorUnitsScalingConverter</a> = ScalingUnitsConverter&lt; float &gt;</td></tr>
 <tr class="separator:a4b1566711eeeac7053e584b2eae52aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a023c1d9d7720f8ee71eadd97a2676eef"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a023c1d9d7720f8ee71eadd97a2676eef">ChimeraTK::StepperMotorCalibrationMode</a> { <a class="el" href="namespace_chimera_t_k.html#a023c1d9d7720f8ee71eadd97a2676eefab50339a10e1de285ac99d4c3990b8693">ChimeraTK::StepperMotorCalibrationMode::NONE</a> = 0, 
+<a class="el" href="namespace_chimera_t_k.html#a023c1d9d7720f8ee71eadd97a2676eefae5564829e2f85f6a6873a9d5c4f26d09">ChimeraTK::StepperMotorCalibrationMode::SIMPLE</a> = 1 &lt;&lt; 0, 
+<a class="el" href="namespace_chimera_t_k.html#a023c1d9d7720f8ee71eadd97a2676eefaba7de5bc6888294e5884b024a4c894f1">ChimeraTK::StepperMotorCalibrationMode::FULL</a> = 1 &lt;&lt; 1
+ }<tr class="memdesc:a023c1d9d7720f8ee71eadd97a2676eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum type describing how the system is calibrated:  <a href="namespace_chimera_t_k.html#a023c1d9d7720f8ee71eadd97a2676eef">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a023c1d9d7720f8ee71eadd97a2676eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf4d898bac23f05c55719e339f18b15"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aedf4d898bac23f05c55719e339f18b15">ChimeraTK::StepperMotorError</a> { <br />
+&#160;&#160;<a class="el" href="namespace_chimera_t_k.html#aedf4d898bac23f05c55719e339f18b15ad306b6fdee05fe87455110ddf6501e6c">ChimeraTK::StepperMotorError::NO_ERROR</a> = 0, 
+<a class="el" href="namespace_chimera_t_k.html#aedf4d898bac23f05c55719e339f18b15a0555ee5459842ef8915fc3fe14c1b7c0">ChimeraTK::StepperMotorError::ACTION_ERROR</a> = 1 &lt;&lt; 0, 
+<a class="el" href="namespace_chimera_t_k.html#aedf4d898bac23f05c55719e339f18b15acc1cb0bbb2a9339edb309a8e2314485a">ChimeraTK::StepperMotorError::CALIBRATION_ERROR</a> = 1 &lt;&lt; 1, 
+<a class="el" href="namespace_chimera_t_k.html#aedf4d898bac23f05c55719e339f18b15a5b0b5cb7b389b72d7c6fbbb0af4f0136">ChimeraTK::StepperMotorError::BOTH_END_SWITCHES_ON</a> = 1 &lt;&lt; 2, 
+<br />
+&#160;&#160;<a class="el" href="namespace_chimera_t_k.html#aedf4d898bac23f05c55719e339f18b15a553fcf52ef7f6db961b3f3051c29343d">ChimeraTK::StepperMotorError::MOVE_INTERRUPTED</a> = 1 &lt;&lt; 3, 
+<a class="el" href="namespace_chimera_t_k.html#aedf4d898bac23f05c55719e339f18b15a94a07976a3cdac75d41a565aa5106484">ChimeraTK::StepperMotorError::EMERGENCY_STOP</a> = 1 &lt;&lt; 4
+<br />
+ }</td></tr>
+<tr class="separator:aedf4d898bac23f05c55719e339f18b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bdc5dfe02f835140b21b881a5d5fd6f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a6bdc5dfe02f835140b21b881a5d5fd6f">ChimeraTK::StepperMotorRet</a> { <a class="el" href="namespace_chimera_t_k.html#a6bdc5dfe02f835140b21b881a5d5fd6fad0749aaba8b833466dfcbb0428e4f89c">ChimeraTK::StepperMotorRet::SUCCESS</a>, 
+<a class="el" href="namespace_chimera_t_k.html#a6bdc5dfe02f835140b21b881a5d5fd6fa206a02a2cb6a7a91a2964d6b5793630c">ChimeraTK::StepperMotorRet::ERR_SYSTEM_IN_ACTION</a>, 
+<a class="el" href="namespace_chimera_t_k.html#a6bdc5dfe02f835140b21b881a5d5fd6fad7953e94560f28ed0d767da6922dbcad">ChimeraTK::StepperMotorRet::ERR_INVALID_PARAMETER</a>, 
+<a class="el" href="namespace_chimera_t_k.html#a6bdc5dfe02f835140b21b881a5d5fd6fac7d8fe9e7b58ac779cd58540c4aebbe6">ChimeraTK::StepperMotorRet::ERR_SYSTEM_NOT_CALIBRATED</a>
+ }</td></tr>
+<tr class="separator:a6bdc5dfe02f835140b21b881a5d5fd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52b8abdcaa58676dda38c0489c3ca7d3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a52b8abdcaa58676dda38c0489c3ca7d3">ChimeraTK::StepperMotorType</a> { <a class="el" href="namespace_chimera_t_k.html#a52b8abdcaa58676dda38c0489c3ca7d3ae4ac03f6c9f00665644e868dd1fb9f1e">ChimeraTK::StepperMotorType::BASIC</a>, 
+<a class="el" href="namespace_chimera_t_k.html#a52b8abdcaa58676dda38c0489c3ca7d3aaac544aacc3615aada24897a215f5046">ChimeraTK::StepperMotorType::LINEAR</a>
+ }<tr class="memdesc:a52b8abdcaa58676dda38c0489c3ca7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum type to select the StepperMotor variant when created by the StepperMotorFactory.  <a href="namespace_chimera_t_k.html#a52b8abdcaa58676dda38c0489c3ca7d3">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a52b8abdcaa58676dda38c0489c3ca7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 9 2019 06:55:09 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 23 2019 06:55:23 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -2,7 +2,7 @@ var searchData=
 [
   ['accelerationthresholddata',['AccelerationThresholdData',['../classmtca4u_1_1_acceleration_threshold_data.html',1,'mtca4u']]],
   ['accelerationthresholddata',['accelerationThresholdData',['../structmtca4u_1_1_motor_controler_config.html#add596e0996dd851b5623f613cb485f88',1,'mtca4u::MotorControlerConfig::accelerationThresholdData()'],['../classmtca4u_1_1_acceleration_threshold_data.html#a459551ef40e703f00fd6e50c7ea969d0',1,'mtca4u::AccelerationThresholdData::AccelerationThresholdData()']]],
-  ['action_5ferror',['ACTION_ERROR',['../namespace_chimera_t_k.html#aedf4d898bac23f05c55719e339f18b15a41118839c2841877597895f3c53d20ce',1,'ChimeraTK']]],
+  ['action_5ferror',['ACTION_ERROR',['../namespace_chimera_t_k.html#aedf4d898bac23f05c55719e339f18b15a0555ee5459842ef8915fc3fe14c1b7c0',1,'ChimeraTK']]],
   ['actioncompleteevent',['actionCompleteEvent',['../class_chimera_t_k_1_1_stepper_motor_state_machine.html#a8dc20ad46d09f61c2782984bede7ddb6',1,'ChimeraTK::StepperMotorStateMachine']]],
   ['actiondisable',['actionDisable',['../class_chimera_t_k_1_1_stepper_motor_state_machine.html#a2d5d504e98a3efe5578fc5be602e9649',1,'ChimeraTK::StepperMotorStateMachine']]],
   ['actionemergencystop',['actionEmergencyStop',['../class_chimera_t_k_1_1_stepper_motor_state_machine.html#a0ececf87a8508a94bb8e62ce570085d1',1,'ChimeraTK::StepperMotorStateMachine']]],
@@ -15,7 +15,6 @@ var searchData=
   ['actionstartcalctolercance',['actionStartCalcTolercance',['../class_chimera_t_k_1_1_stepper_motor_with_reference_state_machine.html#ae54e944c8d182a6c262f46d9ad2c3b8b',1,'ChimeraTK::StepperMotorWithReferenceStateMachine']]],
   ['actionstartcalib',['actionStartCalib',['../class_chimera_t_k_1_1_stepper_motor_with_reference_state_machine.html#abd184706961e84de1bf8316348615483',1,'ChimeraTK::StepperMotorWithReferenceStateMachine']]],
   ['actionstop',['actionStop',['../class_chimera_t_k_1_1_stepper_motor_with_reference_state_machine.html#a57a8601f8520e60f9b84c7d2c54e6987',1,'ChimeraTK::StepperMotorWithReferenceStateMachine']]],
-  ['actionwaitforstandstill',['actionWaitForStandstill',['../class_chimera_t_k_1_1_stepper_motor_state_machine.html#a832ab83b3252dc7bd14f5798559c6746',1,'ChimeraTK::StepperMotorStateMachine']]],
   ['actual_5facceletation_5fsuffix',['ACTUAL_ACCELETATION_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#a2efd7d9af242f9a7f930240101e310ae',1,'mtca4u::dfmc_md22']]],
   ['actual_5fposition_5fsuffix',['ACTUAL_POSITION_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#aaffc21df5cd393f65521200dbf32221f',1,'mtca4u::dfmc_md22']]],
   ['actual_5fvelocity_5fsuffix',['ACTUAL_VELOCITY_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#ab229770c6a268eb08a672d6fd1415b86',1,'mtca4u::dfmc_md22']]],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['positive',['POSITIVE',['../class_chimera_t_k_1_1_stepper_motor_with_reference_state_machine.html#a24c244cb2b007018ca221ec5132f8ccda9cb25bfb740cb546fe1f62942c2daf07',1,'ChimeraTK::StepperMotorWithReferenceStateMachine']]]
+  ['out_5fof_5frange',['OUT_OF_RANGE',['../classmtca4u_1_1_motor_driver_exception.html#aef53ec5642ed9ce0f5bdd2c846807efda7dcb9f1c8a0e0e18a1438d8ba88c16db',1,'mtca4u::MotorDriverException']]]
 ];

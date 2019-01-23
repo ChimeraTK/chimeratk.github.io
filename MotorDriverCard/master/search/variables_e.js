@@ -12,7 +12,7 @@ var searchData=
   ['stall_5fguard_5fcontrol_5fdefault',['STALL_GUARD_CONTROL_DEFAULT',['../namespacemtca4u.html#a35b84ebad0b6ba69023bc6fe0a34cd32',1,'mtca4u']]],
   ['stall_5fguard_5fvalue_5fsuffix',['STALL_GUARD_VALUE_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#ae4fc1caecb9f843ce5ca3a02e5349906',1,'mtca4u::dfmc_md22']]],
   ['stallguardcontroldata',['stallGuardControlData',['../structmtca4u_1_1_motor_controler_config.html#ae36a3360d9d6a79fb6495da2ed67babc',1,'mtca4u::MotorControlerConfig']]],
-  ['status',['status',['../classmtca4u_1_1_linear_stepper_motor_status_and_error.html#a28702952d7bfd6a02270281da85408be',1,'mtca4u::LinearStepperMotorStatusAndError::status()'],['../classmtca4u_1_1_stepper_motor_status_and_error.html#a0fc5e626108150c92cbe459371f659f4',1,'mtca4u::StepperMotorStatusAndError::status()']]],
+  ['status',['status',['../classmtca4u_1_1_stepper_motor_status_and_error.html#a0fc5e626108150c92cbe459371f659f4',1,'mtca4u::StepperMotorStatusAndError::status()'],['../classmtca4u_1_1_linear_stepper_motor_status_and_error.html#a28702952d7bfd6a02270281da85408be',1,'mtca4u::LinearStepperMotorStatusAndError::status()']]],
   ['status_5fsuffix',['STATUS_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#ab5e87f171c099d32cbaab14c12d61c08',1,'mtca4u::dfmc_md22']]],
   ['stepper_5fmotor_5fglobal_5fparameters_5fdefault',['STEPPER_MOTOR_GLOBAL_PARAMETERS_DEFAULT',['../namespacemtca4u.html#a79c25f27e80a4a75c32b46ae7357f510',1,'mtca4u']]],
   ['steppermotorglobalparameters',['stepperMotorGlobalParameters',['../structmtca4u_1_1_motor_driver_card_config.html#a90f5e3c50c3e7ec7394574427ee36cb0',1,'mtca4u::MotorDriverCardConfig']]],
