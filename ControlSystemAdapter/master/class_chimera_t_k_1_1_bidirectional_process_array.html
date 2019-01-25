@@ -165,6 +165,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a84b3d639a532053b86710d3ca2104192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe253acf5011ef0fe61a288c9050171f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#abe253acf5011ef0fe61a288c9050171f">interrupt</a> () override</td></tr>
 <tr class="separator:abe253acf5011ef0fe61a288c9050171f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad4005d5d301a2befaa2120e021590d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a9ad4005d5d301a2befaa2120e021590d">setValueRejectCallback</a> (std::function&lt; void()&gt; callback)</td></tr>
+<tr class="memdesc:a9ad4005d5d301a2befaa2120e021590d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a callback function which is called whenever a value is rejected because it is old.  <a href="#a9ad4005d5d301a2befaa2120e021590d">More...</a><br /></td></tr>
+<tr class="separator:a9ad4005d5d301a2befaa2120e021590d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_process_array"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_process_array')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_process_array.html">ChimeraTK::ProcessArray&lt; T &gt;</a></td></tr>
 <tr class="memitem:ac0451f6e5bb37a946731a10b9c4eade2 inherit pub_methods_class_chimera_t_k_1_1_process_array"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_process_array.html#ac0451f6e5bb37a946731a10b9c4eade2">ProcessArray</a> (<a class="el" href="class_chimera_t_k_1_1_process_array.html#ab3ed8ce4da736ec65ea938eb401f46dd">InstanceType</a> instanceType, const ChimeraTK::RegisterPath &amp;name, const std::string &amp;unit, const std::string &amp;description, const AccessModeFlags &amp;flags)</td></tr>
 <tr class="memdesc:ac0451f6e5bb37a946731a10b9c4eade2 inherit pub_methods_class_chimera_t_k_1_1_process_array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a process array of the specified type.  <a href="#ac0451f6e5bb37a946731a10b9c4eade2">More...</a><br /></td></tr>
@@ -315,7 +318,7 @@ template&lt;class T &gt; </div>
 <p>Creates a bidirectional process array that uses the passed process arrays for sending and receiving data. </p>
 <p>This constructor should not be used directly. Instead, one should use one of the createBidirectionalSynchronizedProcessArray functions. </p>
 
-<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00301">301</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00315">315</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -343,7 +346,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00410">410</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00433">433</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +373,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00460">460</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00483">483</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -397,7 +400,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00340">340</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00354">354</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -424,7 +427,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00427">427</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00450">450</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -451,7 +454,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00347">347</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00361">361</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -478,7 +481,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00395">395</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00417">417</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -505,7 +508,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00379">379</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00398">398</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -532,7 +535,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00363">363</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00379">379</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -560,7 +563,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00433">433</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00456">456</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -675,7 +678,38 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>FIXME this function must be present in TransferElement already! </dd></dl>
 
-<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00475">475</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00498">498</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ad4005d5d301a2befaa2120e021590d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html">ChimeraTK::BidirectionalProcessArray</a>&lt; T &gt;::setValueRejectCallback </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set a callback function which is called whenever a value is rejected because it is old. </p>
+<p>This is used by ApplicationCore testable mode to keep track of the number of values. </p>
+
+<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00236">236</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -711,7 +745,7 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_process_array.html#a9b2548beb21a137be9e8016e29cb4fb6">ChimeraTK::ProcessArray&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00466">466</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00489">489</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -796,7 +830,7 @@ template&lt;class T &gt; </div>
 <p>Of the two returned process arrays, only the first one can take an optional persistent data storage. Trying to set a persistent data storage on the first one results in an exception.</p>
 <p>Note: biderectional process arrays are still experimental, so experimental features must be enable when using this function (see ChimeraTK::ExperimentalFeatures in DeviceAccess). </p>
 
-<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00540">540</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00563">563</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -886,7 +920,7 @@ template&lt;class T &gt; </div>
 <p>Of the two returned process arrays, only the first one can take an optional persistent data storage. Trying to set a persistent data storage on the first one results in an exception.</p>
 <p>Note: biderectional process arrays are still experimental, so experimental features must be enable when using this function (see ChimeraTK::ExperimentalFeatures in DeviceAccess). </p>
 
-<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00502">502</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00525">525</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -896,7 +930,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 23 2019 06:53:17 for ChimeraTK-ControlSystemAdapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 25 2019 06:53:38 for ChimeraTK-ControlSystemAdapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

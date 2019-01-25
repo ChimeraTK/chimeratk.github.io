@@ -6,6 +6,7 @@ var searchData=
   ['setpersistentdatastorage',['setPersistentDataStorage',['../class_chimera_t_k_1_1_bidirectional_process_array.html#ae9d55a715a86e0c0ff4cb4380b90f569',1,'ChimeraTK::BidirectionalProcessArray::setPersistentDataStorage()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a70445d795d2a69b6214d0f5d5738c3e6',1,'ChimeraTK::UnidirectionalProcessArray::setPersistentDataStorage()']]],
   ['setpvmanager',['setPVManager',['../class_chimera_t_k_1_1_application_base.html#a408946c453e9c6928c265dac185a87bd',1,'ChimeraTK::ApplicationBase']]],
   ['settimestamp',['setTimeStamp',['../class_chimera_t_k_1_1_manual_time_stamp_source.html#a2afb28703ae339c70c3b80fe45bc3852',1,'ChimeraTK::ManualTimeStampSource']]],
+  ['setvaluerejectcallback',['setValueRejectCallback',['../class_chimera_t_k_1_1_bidirectional_process_array.html#a9ad4005d5d301a2befaa2120e021590d',1,'ChimeraTK::BidirectionalProcessArray']]],
   ['shutdown',['shutdown',['../class_chimera_t_k_1_1_application_base.html#a5ec279bbc23164f485c3d63b8c1dd012',1,'ChimeraTK::ApplicationBase']]],
   ['stringtot',['stringToT',['../namespace_chimera_t_k_1_1csa__helpers.html#a1fc9c6572c4fd56f1f9fb265bc89bc46',1,'ChimeraTK::csa_helpers']]]
 ];
