@@ -191,7 +191,7 @@ var searchData=
   ['transferelement_2ecc',['TransferElement.cc',['../_transfer_element_8cc.html',1,'']]],
   ['transferelement_2eh',['TransferElement.h',['../device__backends_2include_2_transfer_element_8h.html',1,'']]],
   ['transferelement_2eh',['TransferElement.h',['../mtca4u__compatibility__headers_2_transfer_element_8h.html',1,'']]],
-  ['transferelementabstractor',['TransferElementAbstractor',['../class_chimera_t_k_1_1_transfer_element_abstractor.html#a28eaff61621c50693b307e232072ab35',1,'ChimeraTK::TransferElementAbstractor::TransferElementAbstractor()'],['../class_chimera_t_k_1_1_transfer_element_abstractor.html#a5fc3bd8768619d4f4625842b82ecdf2f',1,'ChimeraTK::TransferElementAbstractor::TransferElementAbstractor(boost::shared_ptr&lt; TransferElement &gt; impl)']]],
+  ['transferelementabstractor',['TransferElementAbstractor',['../class_chimera_t_k_1_1_transfer_element_abstractor.html#a5fc3bd8768619d4f4625842b82ecdf2f',1,'ChimeraTK::TransferElementAbstractor::TransferElementAbstractor(boost::shared_ptr&lt; TransferElement &gt; impl)'],['../class_chimera_t_k_1_1_transfer_element_abstractor.html#a28eaff61621c50693b307e232072ab35',1,'ChimeraTK::TransferElementAbstractor::TransferElementAbstractor()']]],
   ['transferelementabstractor',['TransferElementAbstractor',['../class_chimera_t_k_1_1_transfer_element_abstractor.html',1,'ChimeraTK']]],
   ['transferelementabstractor_2eh',['TransferElementAbstractor.h',['../mtca4u__compatibility__headers_2_transfer_element_abstractor_8h.html',1,'']]],
   ['transferelementabstractor_2eh',['TransferElementAbstractor.h',['../device_2include_2_transfer_element_abstractor_8h.html',1,'']]],
