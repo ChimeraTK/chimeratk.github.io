@@ -7,7 +7,5 @@ var searchData=
   ['addressrange',['AddressRange',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html',1,'ChimeraTK::DummyBackend']]],
   ['anotherworkingbackend',['AnotherWorkingBackend',['../struct_another_working_backend.html',1,'']]],
   ['argument',['Argument',['../struct_argument.html',1,'']]],
-  ['asyncreadtest',['AsyncReadTest',['../class_async_read_test.html',1,'']]],
-  ['asyncreadtestsuite',['AsyncReadTestSuite',['../class_async_read_test_suite.html',1,'']]],
   ['asynctestdummy',['AsyncTestDummy',['../class_async_test_dummy.html',1,'']]]
 ];

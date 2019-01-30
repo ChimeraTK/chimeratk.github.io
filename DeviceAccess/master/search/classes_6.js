@@ -8,5 +8,6 @@ var searchData=
   ['fixedpointconverter',['FixedPointConverter',['../class_chimera_t_k_1_1_fixed_point_converter.html',1,'ChimeraTK']]],
   ['fixedpointconvertingdecorator',['FixedPointConvertingDecorator',['../class_chimera_t_k_1_1_fixed_point_converting_decorator.html',1,'ChimeraTK']]],
   ['fixedpointconvertingrawdecorator',['FixedPointConvertingRawDecorator',['../class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html',1,'ChimeraTK']]],
+  ['fixture',['Fixture',['../struct_fixture.html',1,'']]],
   ['for_5feach_5fcallable',['for_each_callable',['../class_chimera_t_k_1_1detail_1_1for__each__callable.html',1,'ChimeraTK::detail']]]
 ];
