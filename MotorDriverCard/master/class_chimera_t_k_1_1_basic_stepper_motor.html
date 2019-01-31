@@ -101,6 +101,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>This class implements the basic implementation stepper motor.  
+ <a href="class_chimera_t_k_1_1_basic_stepper_motor.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ChimeraTK::BasicStepperMotor:</div>
@@ -151,9 +154,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a37f227c17170c496968976a542e170a1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_chimera_t_k.html#aedf4d898bac23f05c55719e339f18b15">StepperMotorError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_basic_stepper_motor.html#a37f227c17170c496968976a542e170a1">getError</a> ()</td></tr>
 <tr class="memdesc:a37f227c17170c496968976a542e170a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return error code for the motor.  <a href="#a37f227c17170c496968976a542e170a1">More...</a><br /></td></tr>
 <tr class="separator:a37f227c17170c496968976a542e170a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc793861994ce953fc0e2ba5852bb361"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_chimera_t_k_1_1_logger_1_1_log_level.html">ChimeraTK::Logger::LogLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_basic_stepper_motor.html#adc793861994ce953fc0e2ba5852bb361">getLogLevel</a> ()</td></tr>
-<tr class="memdesc:adc793861994ce953fc0e2ba5852bb361"><td class="mdescLeft">&#160;</td><td class="mdescRight">get logger level  <a href="#adc793861994ce953fc0e2ba5852bb361">More...</a><br /></td></tr>
-<tr class="separator:adc793861994ce953fc0e2ba5852bb361"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7554af1cde39cad52350cb8aaac6a658"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_basic_stepper_motor.html#a7554af1cde39cad52350cb8aaac6a658">getMaxPositionLimit</a> ()</td></tr>
 <tr class="memdesc:a7554af1cde39cad52350cb8aaac6a658"><td class="mdescLeft">&#160;</td><td class="mdescRight">get maximal software position limit in units  <a href="#a7554af1cde39cad52350cb8aaac6a658">More...</a><br /></td></tr>
 <tr class="separator:a7554af1cde39cad52350cb8aaac6a658"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -255,9 +255,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5bb8837e3d9423cbeda2b0c3dffaf7b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_basic_stepper_motor.html#a5bb8837e3d9423cbeda2b0c3dffaf7b0">setEnabled</a> (bool enable)</td></tr>
 <tr class="memdesc:a5bb8837e3d9423cbeda2b0c3dffaf7b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable the motor.  <a href="#a5bb8837e3d9423cbeda2b0c3dffaf7b0">More...</a><br /></td></tr>
 <tr class="separator:a5bb8837e3d9423cbeda2b0c3dffaf7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e2ceba8e6006a6a795f9617bfd55ea7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_basic_stepper_motor.html#a5e2ceba8e6006a6a795f9617bfd55ea7">setLogLevel</a> (<a class="el" href="class_chimera_t_k_1_1_logger_1_1_log_level.html">ChimeraTK::Logger::LogLevel</a> newLevel)</td></tr>
-<tr class="memdesc:a5e2ceba8e6006a6a795f9617bfd55ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">set logger level  <a href="#a5e2ceba8e6006a6a795f9617bfd55ea7">More...</a><br /></td></tr>
-<tr class="separator:a5e2ceba8e6006a6a795f9617bfd55ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abac924fbc4702e210364b52ff742a86d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_chimera_t_k.html#a6bdc5dfe02f835140b21b881a5d5fd6f">StepperMotorRet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_basic_stepper_motor.html#abac924fbc4702e210364b52ff742a86d">setMaxPositionLimit</a> (float maxPos)</td></tr>
 <tr class="memdesc:abac924fbc4702e210364b52ff742a86d"><td class="mdescLeft">&#160;</td><td class="mdescRight">set maximum software limit in units  <a href="#abac924fbc4702e210364b52ff742a86d">More...</a><br /></td></tr>
 <tr class="separator:abac924fbc4702e210364b52ff742a86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -310,9 +307,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9601c97db7e496fd8c26d2eaaf4a5db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor of the class object.  <a href="#a9601c97db7e496fd8c26d2eaaf4a5db0">More...</a><br /></td></tr>
 <tr class="separator:a9601c97db7e496fd8c26d2eaaf4a5db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_stepper_motor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_stepper_motor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html">ChimeraTK::StepperMotor</a></td></tr>
-<tr class="memitem:a3cf41fcc27dc2a4be07697267a7df8c7 inherit pub_methods_class_chimera_t_k_1_1_stepper_motor"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a3cf41fcc27dc2a4be07697267a7df8c7">~StepperMotor</a> ()</td></tr>
-<tr class="memdesc:a3cf41fcc27dc2a4be07697267a7df8c7 inherit pub_methods_class_chimera_t_k_1_1_stepper_motor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor of the class object.  <a href="#a3cf41fcc27dc2a4be07697267a7df8c7">More...</a><br /></td></tr>
-<tr class="separator:a3cf41fcc27dc2a4be07697267a7df8c7 inherit pub_methods_class_chimera_t_k_1_1_stepper_motor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23080c86ee22a6416f742a83cc4043d3 inherit pub_methods_class_chimera_t_k_1_1_stepper_motor"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a23080c86ee22a6416f742a83cc4043d3">~StepperMotor</a> ()</td></tr>
+<tr class="memdesc:a23080c86ee22a6416f742a83cc4043d3 inherit pub_methods_class_chimera_t_k_1_1_stepper_motor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor of the class object.  <a href="#a23080c86ee22a6416f742a83cc4043d3">More...</a><br /></td></tr>
+<tr class="separator:a23080c86ee22a6416f742a83cc4043d3 inherit pub_methods_class_chimera_t_k_1_1_stepper_motor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -357,8 +354,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:aeed98a226da1bbea11675d9d527d34f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe849f560a9bdb6843933d98b294b78c"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; <a class="el" href="namespace_chimera_t_k.html#aedf4d898bac23f05c55719e339f18b15">StepperMotorError</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_basic_stepper_motor.html#afe849f560a9bdb6843933d98b294b78c">_errorMode</a></td></tr>
 <tr class="separator:afe849f560a9bdb6843933d98b294b78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf911ae2932a1a030de9f8a02c106d7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_logger.html">Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_basic_stepper_motor.html#acf911ae2932a1a030de9f8a02c106d7d">_logger</a></td></tr>
-<tr class="separator:acf911ae2932a1a030de9f8a02c106d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8abcfdd2a58f507dc455f76e80ac610f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_basic_stepper_motor.html#a8abcfdd2a58f507dc455f76e80ac610f">_maxPositionLimitInSteps</a></td></tr>
 <tr class="separator:a8abcfdd2a58f507dc455f76e80ac610f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1727720a4a5ea9a50f88fc539a56300e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_basic_stepper_motor.html#a1727720a4a5ea9a50f88fc539a56300e">_minPositionLimitInSteps</a></td></tr>
@@ -386,8 +381,9 @@ Friends</h2></td></tr>
 <tr class="separator:ae2a2887e8730e87e702ef0b35e75e9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00046">46</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<div class="textblock"><p>This class implements the basic implementation stepper motor. </p>
+
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00039">39</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a336459b515d910c2313abec1f1601a9f"></a>
 <div class="memitem">
@@ -411,7 +407,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00013">13</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00021">21</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -438,7 +434,7 @@ Friends</h2></td></tr>
 
 <p>Destructor of the class object. </p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00054">54</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00060">60</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -463,7 +459,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00037">37</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00044">44</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -493,7 +489,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#ab2f120044b4357c44a6b1c451783d11a">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00544">544</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00533">533</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -529,7 +525,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00290">290</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00296">296</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -557,7 +553,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#af9b7ac3539d66b9c3fd96842160c9e9d">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00056">56</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00062">62</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -586,7 +582,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#a0e628f29138980c9335fd7cc19af76c5">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00548">548</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00537">537</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -614,9 +610,9 @@ Friends</h2></td></tr>
 <p>Immediately interrupt the current action, return the motor to idle and disable it. </p>
 <p>Note: As an effect of stopping the motor as fast as possible, the real motor position and the controller's step counter will lose synchronization. Hence, calibration will be lost after calling this method. </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#ae9cdb43856e60652fd3d42f784b55964">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#aa229f07b61d34cd3dc42ed50d24d1d49">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00132">132</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00138">138</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -645,9 +641,9 @@ Friends</h2></td></tr>
 <p>enabling full stepping movement. </p>
 <p>The target position is rounded to the next full step value before it is written to the register of the controller chip. </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a33ecd41378d06b9bc305b3c7eb78f72f">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a3ed5caff03eedda6e70e1886d267b1f6">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00510">510</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00499">499</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -675,9 +671,9 @@ Friends</h2></td></tr>
 <p>Returns the value of the autostart flag. </p>
 <p>If true, movement is initiated automatically on change of the target position. </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a291e058bf23938862f66f2ea87aacbe5">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#adbd884751fef417bc0ad9a8c6e85a91e">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00439">439</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00437">437</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -706,7 +702,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#aeea8e1bce734e5d51121e0a456f4bcb9">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00592">592</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00581">581</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -735,7 +731,7 @@ Friends</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#af60b2866bd56f8f88bcd9fe776deafc9">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00412">412</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00410">410</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -762,9 +758,9 @@ Friends</h2></td></tr>
 
 <p>get current position of the motor in units </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a4695ad15bff1528eee2a7972414f449a">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a2eb5a81a7a702cbdfa1675d08d1d05cd">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00319">319</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00325">325</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -791,9 +787,9 @@ Friends</h2></td></tr>
 
 <p>get current position of the motor in steps </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a22fa8c388dabbf80e16fa57ce4fc1a0c">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a5f741b49bad76b07fe6262b8dddf4813">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00314">314</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00320">320</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -822,7 +818,7 @@ Friends</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a3243b5ad395cac7a7eecd4c68a4f5e19">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00426">426</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00424">424</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -851,7 +847,7 @@ Friends</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a112ac85e387e5ddc045532ca00aa7a58">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00324">324</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00330">330</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -888,36 +884,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#a5a753591ff699cc56b8414ca6bb64c92">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00396">396</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="adc793861994ce953fc0e2ba5852bb361"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_logger_1_1_log_level.html">Logger::LogLevel</a> ChimeraTK::BasicStepperMotor::getLogLevel </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>get logger level </p>
-
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#ad120e0f6054f0cedcb751da5abe45c7e">ChimeraTK::StepperMotor</a>.</p>
-
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00448">448</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00401">401</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -944,9 +911,9 @@ Friends</h2></td></tr>
 
 <p>get maximal software position limit in units </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#ac34c8de467e8935e3df57462c9f9da1f">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#add029574cf6d1d7dc3c5fd98a2ff9ea7">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00209">209</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00215">215</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -973,9 +940,9 @@ Friends</h2></td></tr>
 
 <p>get maximal software position limit in steps </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a27c00489719302fc699cad18bc5e84f9">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a9df0df08c0e5ab8125acec24b27c789d">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00204">204</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00210">210</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1002,9 +969,9 @@ Friends</h2></td></tr>
 
 <p>get maximal speed capability </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a5c2bef61d7c955b7a0520cf36024ff72">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#ac66a42f9fb566092c49cd60643db3d77">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00453">453</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00442">442</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1031,9 +998,9 @@ Friends</h2></td></tr>
 
 <p>get minimal software position limit in units </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a04fe337eeb33c3ae593b8a8c6c6ca56d">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a56677f3dbddea4d75e356c7e1df66c54">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00219">219</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00225">225</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1060,9 +1027,9 @@ Friends</h2></td></tr>
 
 <p>get minimal software position limit in steps </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a09f407a0d99552cf9c75d4071dcafa24">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a4b40bd6033938118a4b7bb36ff5fa051">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00214">214</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00220">220</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1091,7 +1058,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#a42fedf5262b592ccbd731ed3f689d4eb">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00560">560</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00549">549</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1120,7 +1087,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#a888e0f55eeec6409bde6bc923acbbe19">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00564">564</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00553">553</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1149,7 +1116,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#a31643d70ff07e5adcfdb77af9dca1fb7">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00552">552</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00541">541</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1178,7 +1145,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#ae33e0075c6b15cc42c8ef07030d6cb22">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00556">556</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00545">545</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1205,9 +1172,9 @@ Friends</h2></td></tr>
 
 <p>get safe current limit </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#aebbc9d8d1ba462fb3312ae91ad90a1d0">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#aa1f95ee6f030402b5fbe1fb9aee8e3b6">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00458">458</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00447">447</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1236,7 +1203,7 @@ Friends</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#ae8409a07d57093f24900923383c13c6c">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00169">169</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00175">175</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1265,7 +1232,7 @@ Friends</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a13a251d67437c55f2aedf5009dea624f">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00374">374</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00379">379</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1293,9 +1260,9 @@ Friends</h2></td></tr>
 <p>Return target motor position in the arbitrary units. </p>
 <dl class="section return"><dt>Returns</dt><dd>float - target position of motor in arbitrary units. </dd></dl>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a6c01262563ff3484974af8be9d22dee4">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a5546c36edcd9c7d703d4769d4c625bde">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00346">346</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00351">351</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1323,9 +1290,9 @@ Friends</h2></td></tr>
 <p>Return target motor position in steps. </p>
 <dl class="section return"><dt>Returns</dt><dd>int - target position of motor in steps </dd></dl>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#aa80bdbf773140e8a9cd412dc9164602b">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#ac99f6f167467976a4955ac22659db494">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00341">341</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00346">346</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1354,7 +1321,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#abd0e19ff3e234431fc34967b1ae3d190">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00572">572</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00561">561</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1383,7 +1350,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#a39bc79521b0ee0a3047650a1e9c969d6">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00568">568</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00557">557</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1410,9 +1377,9 @@ Friends</h2></td></tr>
 
 <p>returns the user current limit in ampere </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a26e46bd398ba27777874b3b181f3da21">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#ae084bf3ec44c8d4066657ca3474bab3a">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00484">484</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00473">473</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1439,9 +1406,9 @@ Friends</h2></td></tr>
 
 <p>return user speed limit in microsteps per secon. </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#acc7d23f0f70e7386d3579ae25c9049d1">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a8955752d025ad605dc338a96cbe8568e">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00500">500</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00489">489</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1473,7 +1440,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#a8d5f6e319238704bd14236123f55ee08">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00540">540</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00529">529</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1498,7 +1465,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00533">533</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00522">522</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1527,7 +1494,7 @@ Friends</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#ae1b64a34d4ae64155547307d8594eec0">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00401">401</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00406">406</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1554,9 +1521,9 @@ Friends</h2></td></tr>
 
 <p>returns true if motor is moving per full step, false otherwise </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a71f3d2837d45cc4f5a659105cc6cbead">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#abcc9a84a5f26622ab38005a107b7dfd6">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00515">515</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00504">504</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1584,9 +1551,9 @@ Friends</h2></td></tr>
 <p>Returns True if the motor is moving and false if at standstill. </p>
 <p>This command is reliable as long as the motor is not stalled. </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#aad290891d0eba8ba9f454fc73cd11d70">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a7ad948d9c5f0ced86db69da2a8a1d1fa">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00505">505</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00494">494</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1615,7 +1582,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#ad9520420708d6603e4fed7fdacd84bbf">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00588">588</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00577">577</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1644,7 +1611,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#a6b4f626d5e0a3ef1917f2cd4259fae09">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00580">580</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00569">569</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1673,7 +1640,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#a82546b1890c212f6dbe471ba9497ca1f">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00584">584</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00573">573</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1702,7 +1669,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#a0de1ffc7f61b5330f7edfc5a79f15d53">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00576">576</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00565">565</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1732,7 +1699,7 @@ Friends</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a5296397c3e783a2aa09e13fd1f65388c">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00379">379</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00384">384</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1760,7 +1727,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#a09fdbde710361860cc83c5b4ee14343e">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00067">67</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00073">73</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1790,7 +1757,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#a6d213b38b0c4ae3834f43279b28bb893">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00520">520</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00509">509</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1826,7 +1793,7 @@ Friends</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a3b5c64393dcbd240c1398056180436e1">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00077">77</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00083">83</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1862,7 +1829,7 @@ Friends</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a38874d297c406627a0a277270b4bf025">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00081">81</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00087">87</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1899,7 +1866,7 @@ Friends</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#ad14a7eae8f72d358cc4b1b94362960f8">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00155">155</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00161">161</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1936,7 +1903,7 @@ Friends</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a73aed3cb41ffea1784835a2e47cbdf77">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00150">150</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00156">156</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1968,7 +1935,7 @@ action failed, but power supply is enabled). </p>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a818b57b3db121505ba4215fc513f1528">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00137">137</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00143">143</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -1996,7 +1963,7 @@ action failed, but power supply is enabled). </p>
 
 <p>Resets target and actual postions of the MotorControler. </p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00224">224</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00230">230</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2029,7 +1996,7 @@ for the encoder output. </p>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a50f384e3b01994631d377a0f271d641f">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00330">330</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00335">335</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2067,7 +2034,7 @@ In addition to that, the conversion between steps and unit must provided through
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#adf01f8cc3793743a96545ddd73c3e811">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00250">250</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00256">256</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2095,7 +2062,7 @@ In addition to that, the conversion between steps and unit must provided through
 
 <p>Common actions for setActualPosition for this and derived classes. </p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00232">232</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00238">238</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2134,7 +2101,7 @@ In addition to that, the conversion between steps and unit must provided through
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#afe986286aa56b2af87d8150fd3978fc0">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00241">241</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00247">247</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2163,9 +2130,9 @@ In addition to that, the conversion between steps and unit must provided through
 <p>Sets the autostart flag. </p>
 <p>Allows automatic start of movement on change of target position if set to true. </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a2642820c956f4159ad995b423b9c63a6">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a865535b88998e936dbb098d56c325450">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00434">434</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00432">432</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2199,39 +2166,9 @@ In addition to that, the conversion between steps and unit must provided through
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#ac36ada12c9728100ce6123b74ec093a5">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a33ff6a04e2cb0cf287b6734c3f5afbab">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00417">417</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5e2ceba8e6006a6a795f9617bfd55ea7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChimeraTK::BasicStepperMotor::setLogLevel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_logger_1_1_log_level.html">ChimeraTK::Logger::LogLevel</a>&#160;</td>
-          <td class="paramname"><em>newLevel</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>set logger level </p>
-
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a83e0d9f2367ac9edb543d39906891cea">ChimeraTK::StepperMotor</a>.</p>
-
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00443">443</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00415">415</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2265,9 +2202,9 @@ In addition to that, the conversion between steps and unit must provided through
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a99a70a6a2ca2493062ffcd680f8e0306">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a3811761a03db855e8d42f080a1fcc5c0">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00185">185</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00191">191</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2301,9 +2238,9 @@ In addition to that, the conversion between steps and unit must provided through
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a36739829843a26cb9f0fb1f0c74857f8">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a2f4551ae3b90ec2a7dfad6a68c50adec">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00174">174</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00180">180</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2337,9 +2274,9 @@ In addition to that, the conversion between steps and unit must provided through
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a04002cc20f5426ee2631a42fd16b9546">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a22d35257cf2c9f0ad9c189183aef8064">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00200">200</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00206">206</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2373,9 +2310,9 @@ In addition to that, the conversion between steps and unit must provided through
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#afdd052bb609f9c5b0d1bf92355a5581f">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a9851aaa17a6c67b853d7441c875c5dfd">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00189">189</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00195">195</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2403,9 +2340,9 @@ In addition to that, the conversion between steps and unit must provided through
 
 <p>enable/disable software position limits </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a82671b3b0e06349a5edd0227c5000ff3">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#ae7bfd5907e614105c5227172a3920827">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00160">160</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00166">166</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2436,7 +2373,7 @@ In addition to that, the conversion between steps and unit must provided through
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a6da96513dc74ff5da8b8ac347352a6ea">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00351">351</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00356">356</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2463,9 +2400,9 @@ In addition to that, the conversion between steps and unit must provided through
 
 <p>set the steps-units converter to the default one </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#add723ae2687443ec2892182fd5c69e44">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a2ba1949a20697c4d195b7c612a444e31">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00365">365</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00370">370</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2494,9 +2431,9 @@ In addition to that, the conversion between steps and unit must provided through
 <p>Sets the target position in arbitrary units (according to the scaling). </p>
 <p>If the autostart flag is set to true, this will initiate movement, otherwise movement needs to be triggered by calling <a class="el" href="class_chimera_t_k_1_1_basic_stepper_motor.html#a1b045155aec1d8eede5393ebc4618cb3" title="Initiates movement of the motor. ">start()</a>. </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#ac8a8d1cb9373c9cbf84999e6c65070b2">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a7b53d8deaa5417c32d3acfcebeefd48c">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00100">100</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00106">106</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2525,9 +2462,9 @@ In addition to that, the conversion between steps and unit must provided through
 <p>Sets the target position in steps. </p>
 <p>If the motor is idle and the autostart flag is set to true, this will initiate movement, otherwise movement needs to be triggered by calling <a class="el" href="class_chimera_t_k_1_1_basic_stepper_motor.html#a1b045155aec1d8eede5393ebc4618cb3" title="Initiates movement of the motor. ">start()</a>. If the motor is moving, the target position will be updated. </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#ae5db12d38863c883ada8fab99e16820c">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a8e3b92a8e4618a385e5e6c4d099d419e">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00104">104</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00110">110</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2561,9 +2498,9 @@ In addition to that, the conversion between steps and unit must provided through
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a633bf7182050da0ad5d93b595343558d">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a4488c086779a5c633601b147c8de9294">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00475">475</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00464">464</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2591,9 +2528,9 @@ In addition to that, the conversion between steps and unit must provided through
 
 <p>set user speed limit in microsteps per second </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a5846da99681d620949c61e8d0f97b738">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#ab14bde79ee734201e46304fa5dec782a">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00489">489</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00478">478</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2621,9 +2558,9 @@ In addition to that, the conversion between steps and unit must provided through
 <p>Initiates movement of the motor. </p>
 <p>This command is called implicitly if autostart mode is enabled. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_chimera_t_k_1_1_basic_stepper_motor.html#ae416cb57547ff41a9b8fd8cfb652fc3b" title="Sets the autostart flag. ">setAutostart()</a> </dd></dl>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a74b7dee9c62533873dd506ba12c70e42">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#ab2207a2fc89eeb1ae2f18d0d7c23ab54">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00122">122</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00128">128</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2650,9 +2587,9 @@ In addition to that, the conversion between steps and unit must provided through
 
 <p>interrupt the current action and return the motor to idle </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#adc893f65392eb80a047edc1c0ac6efd7">ChimeraTK::StepperMotor</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a34407dd73d9b4a983eb4d545ba79e8ee">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00127">127</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00133">133</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2688,7 +2625,7 @@ In addition to that, the conversion between steps and unit must provided through
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#a039a2a906081e17de3b53ee4dfe576ac">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00286">286</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00292">292</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2716,7 +2653,7 @@ In addition to that, the conversion between steps and unit must provided through
 
 <p>Common actions for translateAxis for this and derived classes. </p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00254">254</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00260">260</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2754,7 +2691,7 @@ In addition to that, the conversion between steps and unit must provided through
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#a23e3ce4f1827d0cbe8eebacb25e97711">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00277">277</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00283">283</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2782,7 +2719,7 @@ In addition to that, the conversion between steps and unit must provided through
 
 <p>Translate positions limits, if in numerical range. </p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00261">261</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00267">267</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2811,7 +2748,7 @@ In addition to that, the conversion between steps and unit must provided through
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_stepper_motor_with_reference.html#aec1d5f0412dec8f45ac672b00f7fe94f">ChimeraTK::StepperMotorWithReference</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00529">529</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00518">518</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2840,7 +2777,7 @@ In addition to that, the conversion between steps and unit must provided through
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html#afe7ff4223aadc3db4a675da2038ba847">ChimeraTK::StepperMotor</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00387">387</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8cc_source.html#l00392">392</a> of file <a class="el" href="_basic_stepper_motor_8cc_source.html">BasicStepperMotor.cc</a>.</p>
 
 </div>
 </div>
@@ -2863,7 +2800,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00422">422</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00405">405</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -2885,7 +2822,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00421">421</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00404">404</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -2908,7 +2845,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00463">463</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00446">446</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -2930,7 +2867,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00469">469</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00452">452</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -2952,7 +2889,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00459">459</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00442">442</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -2974,7 +2911,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00457">457</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00440">440</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -2996,29 +2933,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00468">468</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acf911ae2932a1a030de9f8a02c106d7d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_logger.html">Logger</a> ChimeraTK::BasicStepperMotor::_logger</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00465">465</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00451">451</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -3040,7 +2955,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00461">461</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00444">444</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -3062,7 +2977,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00462">462</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00445">445</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -3084,7 +2999,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00454">454</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00437">437</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -3106,7 +3021,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00453">453</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00436">436</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -3128,7 +3043,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00466">466</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00449">449</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -3150,7 +3065,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00464">464</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00447">447</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -3172,7 +3087,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00467">467</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00450">450</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -3194,7 +3109,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00456">456</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00439">439</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -3216,7 +3131,7 @@ In addition to that, the conversion between steps and unit must provided through
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00460">460</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
+<p>Definition at line <a class="el" href="_basic_stepper_motor_8h_source.html#l00443">443</a> of file <a class="el" href="_basic_stepper_motor_8h_source.html">BasicStepperMotor.h</a>.</p>
 
 </div>
 </div>
@@ -3227,7 +3142,7 @@ In addition to that, the conversion between steps and unit must provided through
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 25 2019 06:55:52 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 31 2019 06:55:47 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

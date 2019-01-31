@@ -1,7 +1,7 @@
 var searchData=
 [
   ['calibrate',['calibrate',['../class_chimera_t_k_1_1_basic_stepper_motor.html#a1046da9fa61939409386d45d69a78554',1,'ChimeraTK::BasicStepperMotor::calibrate()'],['../class_chimera_t_k_1_1_stepper_motor.html#a1859c30dcb7db60a28c188d73bd2eab0',1,'ChimeraTK::StepperMotor::calibrate()'],['../class_chimera_t_k_1_1_stepper_motor_with_reference.html#ab2f120044b4357c44a6b1c451783d11a',1,'ChimeraTK::StepperMotorWithReference::calibrate()']]],
-  ['calibratemotor',['calibrateMotor',['../classmtca4u_1_1_stepper_motor.html#a15c91ba3b986f503db679e079b0cc64c',1,'mtca4u::StepperMotor::calibrateMotor()'],['../classmtca4u_1_1_linear_stepper_motor.html#a611a659fe86f56f6b2c2c1e9cea8bfb3',1,'mtca4u::LinearStepperMotor::calibrateMotor()']]],
+  ['calibratemotor',['calibrateMotor',['../classmtca4u_1_1_linear_stepper_motor.html#a611a659fe86f56f6b2c2c1e9cea8bfb3',1,'mtca4u::LinearStepperMotor::calibrateMotor()'],['../classmtca4u_1_1_stepper_motor.html#a15c91ba3b986f503db679e079b0cc64c',1,'mtca4u::StepperMotor::calibrateMotor()']]],
   ['calibrationthreadfunction',['calibrationThreadFunction',['../class_chimera_t_k_1_1_stepper_motor_with_reference_state_machine.html#ad39c90392538df69d8357280e4d22d59',1,'ChimeraTK::StepperMotorWithReferenceStateMachine']]],
   ['causespierrors',['causeSpiErrors',['../classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a7af9c112cd5e938249c84fbfe0b88587',1,'mtca4u::DFMC_MD22Dummy']]],
   ['causespitimeouts',['causeSpiTimeouts',['../classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#aa099dcd30cacb731c0143a45ab47b7b5',1,'mtca4u::DFMC_MD22Dummy']]],
