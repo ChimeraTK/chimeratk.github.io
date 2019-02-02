@@ -97,24 +97,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_stepper_motor_util_8h_source.html">StepperMotorUtil.h</a>&quot;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;atomic&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;mutex&gt;</code><br />
-<code>#include &lt;boost/thread.hpp&gt;</code><br />
-<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
 </div>
 <p><a href="steppermotor_2include_2_stepper_motor_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor.html">ChimeraTK::StepperMotor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class provides the user interface for a basic stepper motor.  <a href="class_chimera_t_k_1_1_stepper_motor.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1motordriver_1_1_stepper_motor.html">ChimeraTK::motordriver::StepperMotor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class provides the user interface for a basic stepper motor.  <a href="class_chimera_t_k_1_1motordriver_1_1_stepper_motor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_factory.html">ChimeraTK::StepperMotorFactory</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_chimera_t_k_1_1_stepper_motor_factory.html" title="The StepperMotorFactory is used to create StepperMotor instances. ">StepperMotorFactory</a> is used to create <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html" title="This class provides the user interface for a basic stepper motor. ">StepperMotor</a> instances.  <a href="class_chimera_t_k_1_1_stepper_motor_factory.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1motordriver_1_1_stepper_motor_factory.html">ChimeraTK::motordriver::StepperMotorFactory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_chimera_t_k_1_1motordriver_1_1_stepper_motor_factory.html" title="The StepperMotorFactory is used to create StepperMotor instances. ">StepperMotorFactory</a> is used to create <a class="el" href="class_chimera_t_k_1_1motordriver_1_1_stepper_motor.html" title="This class provides the user interface for a basic stepper motor. ">StepperMotor</a> instances.  <a href="class_chimera_t_k_1_1motordriver_1_1_stepper_motor_factory.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_stepper_motor_parameters.html">ChimeraTK::StepperMotorParameters</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains parameters for initialization of a <a class="el" href="class_chimera_t_k_1_1_stepper_motor.html" title="This class provides the user interface for a basic stepper motor. ">StepperMotor</a> object.  <a href="struct_chimera_t_k_1_1_stepper_motor_parameters.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1motordriver_1_1_stepper_motor_parameters.html">ChimeraTK::motordriver::StepperMotorParameters</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains parameters for initialization of a <a class="el" href="class_chimera_t_k_1_1motordriver_1_1_stepper_motor.html" title="This class provides the user interface for a basic stepper motor. ">StepperMotor</a> object.  <a href="struct_chimera_t_k_1_1motordriver_1_1_stepper_motor_parameters.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -122,11 +120,13 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespace_chimera_t_k"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></td></tr>
 <tr class="memdesc:namespace_chimera_t_k"><td class="mdescLeft">&#160;</td><td class="mdescRight">File: <a class="el" href="_stepper_motor_util_8h.html">StepperMotorUtil.h</a> Author: ckampm. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_chimera_t_k_1_1motordriver"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1motordriver.html">ChimeraTK::motordriver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 31 2019 06:55:47 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 2 2019 06:55:29 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

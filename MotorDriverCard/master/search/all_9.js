@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['hashwreferenceswitches',['hasHWReferenceSwitches',['../class_chimera_t_k_1_1_basic_stepper_motor.html#a782dfb2657977f009aea621ada12d9c0',1,'ChimeraTK::BasicStepperMotor::hasHWReferenceSwitches()'],['../class_chimera_t_k_1_1_stepper_motor.html#a6d6e493cb44d6cfff3978e71773b1bc7',1,'ChimeraTK::StepperMotor::hasHWReferenceSwitches()'],['../class_chimera_t_k_1_1_stepper_motor_with_reference.html#a8d5f6e319238704bd14236123f55ee08',1,'ChimeraTK::StepperMotorWithReference::hasHWReferenceSwitches()']]],
-  ['hasrequestedstate',['hasRequestedState',['../class_chimera_t_k_1_1_state_machine.html#a0269af893794f00f0f1150a58e255437',1,'ChimeraTK::StateMachine']]],
+  ['hashwreferenceswitches',['hasHWReferenceSwitches',['../class_chimera_t_k_1_1motordriver_1_1_basic_stepper_motor.html#ab4d8d3fc4135948589fa8e140e655f1d',1,'ChimeraTK::motordriver::BasicStepperMotor::hasHWReferenceSwitches()'],['../class_chimera_t_k_1_1motordriver_1_1_stepper_motor.html#a35162a7d4e7e1930042383c507d410fa',1,'ChimeraTK::motordriver::StepperMotor::hasHWReferenceSwitches()'],['../class_chimera_t_k_1_1motordriver_1_1_stepper_motor_with_reference.html#a7635383dc1f84513f1e34b82579ec049',1,'ChimeraTK::motordriver::StepperMotorWithReference::hasHWReferenceSwitches()']]],
+  ['hasrequestedstate',['hasRequestedState',['../class_chimera_t_k_1_1motordriver_1_1utility_1_1_state_machine.html#aab268f7e19dc9ec55bcc6deb59493130',1,'ChimeraTK::motordriver::utility::StateMachine']]],
   ['heidenhain',['HEIDENHAIN',['../structmtca4u_1_1_motor_controler_1_1_decoder_readout_mode.html#abc3f67d7c8fa9d2115d9711e40c36d24',1,'mtca4u::MotorControler::DecoderReadoutMode']]]
 ];

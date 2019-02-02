@@ -7,8 +7,8 @@ var searchData=
   ['decoderreadoutmode',['decoderReadoutMode',['../structmtca4u_1_1_motor_controler_config.html#ad7226ad12e88d5d7b4a84b04a498104e',1,'mtca4u::MotorControlerConfig']]],
   ['default_5fdummy_5fspi_5fdelay',['DEFAULT_DUMMY_SPI_DELAY',['../namespacemtca4u_1_1tmc260.html#a106ff94ba32fa98c4264bd835db77fef',1,'mtca4u::tmc260::DEFAULT_DUMMY_SPI_DELAY()'],['../namespacemtca4u_1_1tmc429.html#aecc20ad1248e936e315a62a9d889fb5b',1,'mtca4u::tmc429::DEFAULT_DUMMY_SPI_DELAY()']]],
   ['detail',['DETAIL',['../class_chimera_t_k_1_1_logger.html#a78bfb95c2900b960121ca7bca5ce3060',1,'ChimeraTK::Logger']]],
-  ['devicename',['deviceName',['../struct_chimera_t_k_1_1_stepper_motor_parameters.html#a9b18977e641b0657774d435bcb45c469',1,'ChimeraTK::StepperMotorParameters']]],
-  ['disableevent',['disableEvent',['../class_chimera_t_k_1_1_stepper_motor_state_machine.html#ad0e1b2b4c1aad410d7ad81d5e3656544',1,'ChimeraTK::StepperMotorStateMachine']]],
+  ['devicename',['deviceName',['../struct_chimera_t_k_1_1motordriver_1_1_stepper_motor_parameters.html#aa8c3a2a1d374502574c54936b61c9ac1',1,'ChimeraTK::motordriver::StepperMotorParameters']]],
+  ['disableevent',['disableEvent',['../class_chimera_t_k_1_1motordriver_1_1_basic_stepper_motor_1_1_state_machine.html#a0174fa291473556debb5e2553be4eb32',1,'ChimeraTK::motordriver::BasicStepperMotor::StateMachine']]],
   ['dividersandmicrostepresolutiondata',['dividersAndMicroStepResolutionData',['../structmtca4u_1_1_motor_controler_config.html#a8f587e1763159ad7642496fbedcdf123',1,'mtca4u::MotorControlerConfig']]],
   ['dividiers_5fand_5fmicro_5fstep_5fresolution_5fdefault',['DIVIDIERS_AND_MICRO_STEP_RESOLUTION_DEFAULT',['../namespacemtca4u.html#ad13a3994aad8f20e8d0cc14efa3e613e',1,'mtca4u']]],
   ['driver_5fconfig_5fdefault',['DRIVER_CONFIG_DEFAULT',['../namespacemtca4u.html#ab7a4dbca790890a5f9553876252a3f79',1,'mtca4u']]],
@@ -16,6 +16,6 @@ var searchData=
   ['driver_5fspi_5fwaiting_5ftime_5fdefault',['DRIVER_SPI_WAITING_TIME_DEFAULT',['../namespacemtca4u.html#ab3f80b25cae2062a347e83c716905db0',1,'mtca4u']]],
   ['driverconfigdata',['driverConfigData',['../structmtca4u_1_1_motor_controler_config.html#afe8341ff9fd3b4de33ce139c364d89cc',1,'mtca4u::MotorControlerConfig']]],
   ['drivercontroldata',['driverControlData',['../structmtca4u_1_1_motor_controler_config.html#a2dde6d50e72ba7cc1b8bdb8ed0241081',1,'mtca4u::MotorControlerConfig']]],
-  ['driverid',['driverId',['../struct_chimera_t_k_1_1_stepper_motor_parameters.html#afb3e472206335026da05c1ec8c157ed3',1,'ChimeraTK::StepperMotorParameters']]],
+  ['driverid',['driverId',['../struct_chimera_t_k_1_1motordriver_1_1_stepper_motor_parameters.html#af10b965b5223ad1b9c6406febadddfed',1,'ChimeraTK::motordriver::StepperMotorParameters']]],
   ['driverspiwaitingtime',['driverSpiWaitingTime',['../structmtca4u_1_1_motor_controler_config.html#aaaa88f93f33cf51ba777c10e1094ee14',1,'mtca4u::MotorControlerConfig']]]
 ];

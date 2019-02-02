@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logger',['Logger',['../class_chimera_t_k_1_1_logger_1_1_log_level.html#aff02b76416d2846736b7ecd798921a0a',1,'ChimeraTK::Logger::LogLevel']]]
+  ['basicsteppermotor',['BasicStepperMotor',['../class_chimera_t_k_1_1motordriver_1_1_basic_stepper_motor_1_1_state_machine.html#a8bc470be3ba2aee83d88db96d697523e',1,'ChimeraTK::motordriver::BasicStepperMotor::StateMachine']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['basicsteppermotor',['BasicStepperMotor',['../class_chimera_t_k_1_1_basic_stepper_motor.html#a336459b515d910c2313abec1f1601a9f',1,'ChimeraTK::BasicStepperMotor::BasicStepperMotor(const StepperMotorParameters &amp;parameters)'],['../class_chimera_t_k_1_1_basic_stepper_motor.html#ad65bfd79d21970f2cee7f549a0e3fb46',1,'ChimeraTK::BasicStepperMotor::BasicStepperMotor()']]]
+  ['basicsteppermotor',['BasicStepperMotor',['../class_chimera_t_k_1_1motordriver_1_1_basic_stepper_motor.html#a512b2291f8fd9f233520831f9ab7fe83',1,'ChimeraTK::motordriver::BasicStepperMotor::BasicStepperMotor(const StepperMotorParameters &amp;parameters)'],['../class_chimera_t_k_1_1motordriver_1_1_basic_stepper_motor.html#a553961d07475d7230fb37d87a3a966da',1,'ChimeraTK::motordriver::BasicStepperMotor::BasicStepperMotor()']]]
 ];

@@ -17,12 +17,10 @@ var searchData=
   ['steppermotorexception_2eh',['StepperMotorException.h',['../_stepper_motor_exception_8h.html',1,'']]],
   ['steppermotorfactory_2ecc',['StepperMotorFactory.cc',['../_stepper_motor_factory_8cc.html',1,'']]],
   ['steppermotorstatemachine_2ecc',['StepperMotorStateMachine.cc',['../_stepper_motor_state_machine_8cc.html',1,'']]],
-  ['steppermotorstatemachine_2eh',['StepperMotorStateMachine.h',['../_stepper_motor_state_machine_8h.html',1,'']]],
   ['steppermotorstatus_2ecc',['StepperMotorStatus.cc',['../_stepper_motor_status_8cc.html',1,'']]],
   ['steppermotorstatus_2eh',['StepperMotorStatus.h',['../_stepper_motor_status_8h.html',1,'']]],
   ['steppermotorutil_2eh',['StepperMotorUtil.h',['../_stepper_motor_util_8h.html',1,'']]],
   ['steppermotorwithreference_2ecc',['StepperMotorWithReference.cc',['../_stepper_motor_with_reference_8cc.html',1,'']]],
   ['steppermotorwithreference_2eh',['StepperMotorWithReference.h',['../_stepper_motor_with_reference_8h.html',1,'']]],
-  ['steppermotorwithreferencestatemachine_2ecc',['StepperMotorWithReferenceStateMachine.cc',['../_stepper_motor_with_reference_state_machine_8cc.html',1,'']]],
-  ['steppermotorwithreferencestatemachine_2eh',['StepperMotorWithReferenceStateMachine.h',['../_stepper_motor_with_reference_state_machine_8h.html',1,'']]]
+  ['steppermotorwithreferencestatemachine_2ecc',['StepperMotorWithReferenceStateMachine.cc',['../_stepper_motor_with_reference_state_machine_8cc.html',1,'']]]
 ];

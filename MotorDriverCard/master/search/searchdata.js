@@ -9,7 +9,7 @@ var indexSectionsWithContent =
   6: "elsu",
   7: "est",
   8: "abcdeflmnopswx",
-  9: ":lmos",
+  9: ":blmos",
   10: "acdeimors",
   11: "dmtw"
 };

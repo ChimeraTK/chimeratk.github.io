@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['limitsok',['limitsOK',['../class_chimera_t_k_1_1_basic_stepper_motor.html#a3e700b9bd8fdf0a3575c95abfd64d1b1',1,'ChimeraTK::BasicStepperMotor::limitsOK()'],['../class_chimera_t_k_1_1_stepper_motor_with_reference.html#a09fdbde710361860cc83c5b4ee14343e',1,'ChimeraTK::StepperMotorWithReference::limitsOK()']]],
-  ['linear',['LINEAR',['../namespace_chimera_t_k.html#a52b8abdcaa58676dda38c0489c3ca7d3aaac544aacc3615aada24897a215f5046',1,'ChimeraTK']]],
+  ['limitsok',['limitsOK',['../class_chimera_t_k_1_1motordriver_1_1_basic_stepper_motor.html#afb114b6fae7c71ceee2597c9522502b0',1,'ChimeraTK::motordriver::BasicStepperMotor::limitsOK()'],['../class_chimera_t_k_1_1motordriver_1_1_stepper_motor_with_reference.html#a2330654ebbe159687868658b74fa6f29',1,'ChimeraTK::motordriver::StepperMotorWithReference::limitsOK()']]],
+  ['linear',['LINEAR',['../namespace_chimera_t_k_1_1motordriver.html#a12f557aa22b0744020815b2395d5dd12aaac544aacc3615aada24897a215f5046',1,'ChimeraTK::motordriver']]],
   ['linear_5fstepper_5fmotor_2edox',['linear_stepper_motor.dox',['../linear__stepper__motor_8dox.html',1,'']]],
   ['linearsteppermotor',['LinearStepperMotor',['../classmtca4u_1_1_linear_stepper_motor.html#a5d70272c040059f4f7dd26516e8187af',1,'mtca4u::LinearStepperMotor']]],
   ['linearsteppermotor',['LinearStepperMotor',['../classmtca4u_1_1_linear_stepper_motor.html',1,'mtca4u']]],
@@ -15,7 +15,7 @@ var searchData=
   ['linearsteppermotorstatusanderror',['LinearStepperMotorStatusAndError',['../classmtca4u_1_1_linear_stepper_motor_status_and_error.html#a6c7cf7f040694ce135eb996130f0a291',1,'mtca4u::LinearStepperMotorStatusAndError']]],
   ['linearsteppermotorstatusanderror',['LinearStepperMotorStatusAndError',['../classmtca4u_1_1_linear_stepper_motor_status_and_error.html',1,'mtca4u']]],
   ['linearsteppermotorstatustypes',['LinearStepperMotorStatusTypes',['../classmtca4u_1_1_linear_stepper_motor_status_types.html',1,'mtca4u']]],
-  ['loadendswitchcalibration',['loadEndSwitchCalibration',['../class_chimera_t_k_1_1_stepper_motor_with_reference.html#a7a6f5ed94a9cdfaa174ae817015dfa27',1,'ChimeraTK::StepperMotorWithReference']]],
+  ['loadendswitchcalibration',['loadEndSwitchCalibration',['../class_chimera_t_k_1_1motordriver_1_1_stepper_motor_with_reference.html#acb9edb2420a9404dc340cc7447b654d3',1,'ChimeraTK::motordriver::StepperMotorWithReference']]],
   ['lock_5fguard',['lock_guard',['../_motor_controler_dummy_8cc.html#a35ba3251eeb5d4705554f998d2d45f01',1,'lock_guard():&#160;MotorControlerDummy.cc'],['../_motor_controler_impl_8cc.html#a35ba3251eeb5d4705554f998d2d45f01',1,'lock_guard():&#160;MotorControlerImpl.cc']]],
   ['lockguard',['LockGuard',['../_basic_stepper_motor_8cc.html#a10da7ddf39cf793ff4d0c0a8117ad2b6',1,'LockGuard():&#160;BasicStepperMotor.cc'],['../_stepper_motor_with_reference_8cc.html#a10da7ddf39cf793ff4d0c0a8117ad2b6',1,'LockGuard():&#160;StepperMotorWithReference.cc']]],
   ['logger',['Logger',['../class_chimera_t_k_1_1_logger.html',1,'ChimeraTK']]],

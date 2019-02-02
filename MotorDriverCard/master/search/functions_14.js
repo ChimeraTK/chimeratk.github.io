@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_7ebasicsteppermotor',['~BasicStepperMotor',['../class_chimera_t_k_1_1_basic_stepper_motor.html#a9601c97db7e496fd8c26d2eaaf4a5db0',1,'ChimeraTK::BasicStepperMotor']]],
+  ['_7ebasicsteppermotor',['~BasicStepperMotor',['../class_chimera_t_k_1_1motordriver_1_1_basic_stepper_motor.html#a5ef8db0288faa20ce338c40fb2991d33',1,'ChimeraTK::motordriver::BasicStepperMotor']]],
   ['_7egeneralstatus',['~GeneralStatus',['../class_chimera_t_k_1_1_general_status.html#ad19f6bbb51a214e62bedf08bde6e724b',1,'ChimeraTK::GeneralStatus']]],
   ['_7elinearsteppermotor',['~LinearStepperMotor',['../classmtca4u_1_1_linear_stepper_motor.html#abb198c324c08ef856038f9c195df0eb8',1,'mtca4u::LinearStepperMotor']]],
   ['_7elogger',['~Logger',['../class_chimera_t_k_1_1_logger.html#abfd2aa2b9c71bdd61c8d42edd8b2707e',1,'ChimeraTK::Logger']]],
@@ -10,16 +10,14 @@ var searchData=
   ['_7emotordrivercardexpert',['~MotorDriverCardExpert',['../classmtca4u_1_1_motor_driver_card_expert.html#adad630d3cafd556a3b7e8d522cde824d',1,'mtca4u::MotorDriverCardExpert']]],
   ['_7emotordriverexception',['~MotorDriverException',['../classmtca4u_1_1_motor_driver_exception.html#a0c7a262729f45f4481d60bb871498f25',1,'mtca4u::MotorDriverException']]],
   ['_7emultivariableword',['~MultiVariableWord',['../classmtca4u_1_1_multi_variable_word.html#a212f9223c8baa4ae0e1e1aea7d9fe202',1,'mtca4u::MultiVariableWord']]],
-  ['_7estate',['~State',['../class_chimera_t_k_1_1_state_machine_1_1_state.html#abac44c4f211443850615fd0d08f70417',1,'ChimeraTK::StateMachine::State']]],
-  ['_7estatemachine',['~StateMachine',['../class_chimera_t_k_1_1_state_machine.html#acc997e999ee3acad4abddd8d72df6e30',1,'ChimeraTK::StateMachine']]],
-  ['_7esteppermotor',['~StepperMotor',['../class_chimera_t_k_1_1_stepper_motor.html#a23080c86ee22a6416f742a83cc4043d3',1,'ChimeraTK::StepperMotor::~StepperMotor()'],['../classmtca4u_1_1_stepper_motor.html#a9949199d51bdbef3f31366f621542b91',1,'mtca4u::StepperMotor::~StepperMotor()']]],
+  ['_7estate',['~State',['../class_chimera_t_k_1_1motordriver_1_1utility_1_1_state_machine_1_1_state.html#af147f9e1581e00d16197ba9618fe9466',1,'ChimeraTK::motordriver::utility::StateMachine::State']]],
+  ['_7estatemachine',['~StateMachine',['../class_chimera_t_k_1_1motordriver_1_1utility_1_1_state_machine.html#a2f3508122605292d658cfe25a8c1692b',1,'ChimeraTK::motordriver::utility::StateMachine::~StateMachine()'],['../class_chimera_t_k_1_1motordriver_1_1_basic_stepper_motor_1_1_state_machine.html#adba50d6ce329f2578bfd147954547c51',1,'ChimeraTK::motordriver::BasicStepperMotor::StateMachine::~StateMachine()'],['../class_chimera_t_k_1_1motordriver_1_1_stepper_motor_with_reference_1_1_state_machine.html#a537efaec957322a05a0a32c507728cc2',1,'ChimeraTK::motordriver::StepperMotorWithReference::StateMachine::~StateMachine()']]],
+  ['_7esteppermotor',['~StepperMotor',['../class_chimera_t_k_1_1motordriver_1_1_stepper_motor.html#a2a448487edc41223f2dfb5dffcff77b3',1,'ChimeraTK::motordriver::StepperMotor::~StepperMotor()'],['../classmtca4u_1_1_stepper_motor.html#a23080c86ee22a6416f742a83cc4043d3',1,'mtca4u::StepperMotor::~StepperMotor()']]],
   ['_7esteppermotorerrortypes',['~StepperMotorErrorTypes',['../classmtca4u_1_1_stepper_motor_error_types.html#a7a8ac1e1fbb4a26b7cc43f8f496aad1d',1,'mtca4u::StepperMotorErrorTypes']]],
   ['_7esteppermotorexception',['~StepperMotorException',['../class_chimera_t_k_1_1_stepper_motor_exception.html#aaac731f6058d241a19cf5e7fad46abbc',1,'ChimeraTK::StepperMotorException']]],
-  ['_7esteppermotorstatemachine',['~StepperMotorStateMachine',['../class_chimera_t_k_1_1_stepper_motor_state_machine.html#ac5aaefbe7d0dc2678bc7e872d065e442',1,'ChimeraTK::StepperMotorStateMachine']]],
   ['_7esteppermotorstatustypes',['~StepperMotorStatusTypes',['../classmtca4u_1_1_stepper_motor_status_types.html#af89f4a014d7805b56e57e0334fe3001c',1,'mtca4u::StepperMotorStatusTypes']]],
-  ['_7esteppermotorwithreference',['~StepperMotorWithReference',['../class_chimera_t_k_1_1_stepper_motor_with_reference.html#a401fb7f58cc6c77ddba277b20edccbaf',1,'ChimeraTK::StepperMotorWithReference']]],
-  ['_7esteppermotorwithreferencestatemachine',['~StepperMotorWithReferenceStateMachine',['../class_chimera_t_k_1_1_stepper_motor_with_reference_state_machine.html#aa62269d492a50ed7961713dfd729af25',1,'ChimeraTK::StepperMotorWithReferenceStateMachine']]],
+  ['_7esteppermotorwithreference',['~StepperMotorWithReference',['../class_chimera_t_k_1_1motordriver_1_1_stepper_motor_with_reference.html#ad0a3504b32d96e1566bdb17985ce9aa9',1,'ChimeraTK::motordriver::StepperMotorWithReference']]],
   ['_7etmc429inputword',['~TMC429InputWord',['../classmtca4u_1_1_t_m_c429_input_word.html#a333ef8fd9cab7754a45589beae3baf53',1,'mtca4u::TMC429InputWord']]],
   ['_7etmc429outputword',['~TMC429OutputWord',['../classmtca4u_1_1_t_m_c429_output_word.html#a88c54b0862eee771f89d6d88b7f04af9',1,'mtca4u::TMC429OutputWord']]],
-  ['_7eunitsconverter',['~UnitsConverter',['../class_chimera_t_k_1_1_stepper_motor_utility_1_1_units_converter.html#acb9a2292cfdebdae49d74ea4448cd1ca',1,'ChimeraTK::StepperMotorUtility::UnitsConverter']]]
+  ['_7eunitsconverter',['~UnitsConverter',['../class_chimera_t_k_1_1motordriver_1_1utility_1_1_units_converter.html#af11991fab5d7cb8f027308a884b065bc',1,'ChimeraTK::motordriver::utility::UnitsConverter']]]
 ];
