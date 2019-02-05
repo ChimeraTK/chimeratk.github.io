@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['performtransition',['performTransition',['../class_chimera_t_k_1_1motordriver_1_1utility_1_1_state_machine.html#a77e3a49d6526f1d3d7b20e74f915c025',1,'ChimeraTK::motordriver::utility::StateMachine']]],
+  ['performtransition',['performTransition',['../class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html#a5e14555bb59e0adf340f0c8be02f894a',1,'ChimeraTK::MotorDriver::utility::StateMachine']]],
   ['positioncompareinterruptdata',['PositionCompareInterruptData',['../classmtca4u_1_1_position_compare_interrupt_data.html',1,'mtca4u']]],
   ['positioncompareinterruptdata',['PositionCompareInterruptData',['../classmtca4u_1_1_position_compare_interrupt_data.html#ac8dfedb615225bf21cdfd13c41fd2be8',1,'mtca4u::PositionCompareInterruptData::PositionCompareInterruptData()'],['../structmtca4u_1_1_motor_driver_card_config.html#a89b39831ac4fd4264e5afdb449957cab',1,'mtca4u::MotorDriverCardConfig::positionCompareInterruptData()']]],
   ['positioncompareword',['positionCompareWord',['../structmtca4u_1_1_motor_driver_card_config.html#ad20f0d895fe0be3d536778d9035cdaff',1,'mtca4u::MotorDriverCardConfig']]],
   ['positiontolerance',['positionTolerance',['../structmtca4u_1_1_motor_controler_config.html#a737a74b967256e82a5b85bb65a7d10d0',1,'mtca4u::MotorControlerConfig']]],
-  ['positive',['POSITIVE',['../namespace_chimera_t_k_1_1motordriver.html#ad15c1dccc30b170e356ea0496dabae2baab6c31432785221bae58327ef5f6ea58',1,'ChimeraTK::motordriver']]],
+  ['positive',['POSITIVE',['../namespace_chimera_t_k_1_1_motor_driver.html#a4444cffb8982eadc789694a97ad74713aab6c31432785221bae58327ef5f6ea58',1,'ChimeraTK::MotorDriver']]],
   ['powerdown',['powerDown',['../classmtca4u_1_1_motor_driver_card_impl.html#a5a62065922bd075d6293cf8b100cef89',1,'mtca4u::MotorDriverCardImpl::powerDown()'],['../classmtca4u_1_1_motor_driver_card_expert.html#a8c68fc5e7eed9ab75e6e791ed01b9ccc',1,'mtca4u::MotorDriverCardExpert::powerDown()']]],
   ['powermonitor',['PowerMonitor',['../classmtca4u_1_1_power_monitor.html',1,'mtca4u']]],
   ['powermonitor_2eh',['PowerMonitor.h',['../_power_monitor_8h.html',1,'']]],

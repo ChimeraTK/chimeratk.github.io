@@ -1,6 +1,7 @@
 var searchData=
 [
   ['linearsteppermotor',['LinearStepperMotor',['../classmtca4u_1_1_linear_stepper_motor.html',1,'mtca4u']]],
+  ['linearsteppermotor',['LinearStepperMotor',['../class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html',1,'ChimeraTK::MotorDriver']]],
   ['linearsteppermotorerror',['LinearStepperMotorError',['../classmtca4u_1_1_linear_stepper_motor_error.html',1,'mtca4u']]],
   ['linearsteppermotorerrortypes',['LinearStepperMotorErrorTypes',['../classmtca4u_1_1_linear_stepper_motor_error_types.html',1,'mtca4u']]],
   ['linearsteppermotorstatus',['LinearStepperMotorStatus',['../classmtca4u_1_1_linear_stepper_motor_status.html',1,'mtca4u']]],

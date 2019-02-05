@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['sign',['Sign',['../namespace_chimera_t_k_1_1motordriver.html#ad15c1dccc30b170e356ea0496dabae2b',1,'ChimeraTK::motordriver']]],
-  ['steppermotorcalibrationmode',['StepperMotorCalibrationMode',['../namespace_chimera_t_k_1_1motordriver.html#a253fe727dd340d37a3154bc81cafd345',1,'ChimeraTK::motordriver']]],
-  ['steppermotorerror',['StepperMotorError',['../namespace_chimera_t_k_1_1motordriver.html#a9cf8b7813eb3ce8d8ad1861c9a0586fb',1,'ChimeraTK::motordriver']]],
-  ['steppermotorret',['StepperMotorRet',['../namespace_chimera_t_k_1_1motordriver.html#a3e24c08567c9fa8508f6d6b3b0b30416',1,'ChimeraTK::motordriver']]],
-  ['steppermotortype',['StepperMotorType',['../namespace_chimera_t_k_1_1motordriver.html#a12f557aa22b0744020815b2395d5dd12',1,'ChimeraTK::motordriver']]]
+  ['error',['Error',['../namespace_chimera_t_k_1_1_motor_driver.html#a57df7065834493b42dfafee85b479722',1,'ChimeraTK::MotorDriver']]],
+  ['exceptionid',['ExceptionID',['../classmtca4u_1_1_motor_driver_exception.html#aef53ec5642ed9ce0f5bdd2c846807efd',1,'mtca4u::MotorDriverException::ExceptionID()'],['../class_chimera_t_k_1_1_stepper_motor_exception.html#a46d895f9b3ed4f550c577eb1e912eaab',1,'ChimeraTK::StepperMotorException::ExceptionID()']]],
+  ['exitstatus',['ExitStatus',['../namespace_chimera_t_k_1_1_motor_driver.html#ab3f3146256be19f8ebe7d4d98bca033e',1,'ChimeraTK::MotorDriver']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['steppermotorunitsconverter',['StepperMotorUnitsConverter',['../namespace_chimera_t_k_1_1motordriver_1_1utility.html#a36919c3591f8fcd24265be521f806925',1,'ChimeraTK::motordriver::utility']]],
-  ['steppermotorunitsconvertertrivia',['StepperMotorUnitsConverterTrivia',['../namespace_chimera_t_k_1_1motordriver_1_1utility.html#a6cf0b1aacc8156d958081743313c51b7',1,'ChimeraTK::motordriver::utility']]],
-  ['steppermotorunitsscalingconverter',['StepperMotorUnitsScalingConverter',['../namespace_chimera_t_k_1_1motordriver_1_1utility.html#a6d418a9e91532ec16eadb702c1b8ec1d',1,'ChimeraTK::motordriver::utility']]]
+  ['motorstepsconverter',['MotorStepsConverter',['../namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#a127e10207b409b6bcb30e9c2fb63dec7',1,'ChimeraTK::MotorDriver::utility']]],
+  ['motorstepsconvertertrivia',['MotorStepsConverterTrivia',['../namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#a4f75c087ee1c9a8b2f4c9c0ce306de29',1,'ChimeraTK::MotorDriver::utility']]]
 ];

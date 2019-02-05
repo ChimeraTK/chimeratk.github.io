@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['calctoleranceevent',['calcToleranceEvent',['../class_chimera_t_k_1_1motordriver_1_1_stepper_motor_with_reference_1_1_state_machine.html#a7a95136d79f6d0d9ba960b7e5f5494d6',1,'ChimeraTK::motordriver::StepperMotorWithReference::StateMachine']]],
-  ['calibevent',['calibEvent',['../class_chimera_t_k_1_1motordriver_1_1_stepper_motor_with_reference_1_1_state_machine.html#a804f66dc9625b8219b336169a102d7a4',1,'ChimeraTK::motordriver::StepperMotorWithReference::StateMachine']]],
+  ['calctoleranceevent',['calcToleranceEvent',['../class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor_1_1_state_machine.html#a03d9290a1ce1436aa2948e442a1fd0b3',1,'ChimeraTK::MotorDriver::LinearStepperMotor::StateMachine']]],
+  ['calibevent',['calibEvent',['../class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor_1_1_state_machine.html#ae9b7b70c98e895aecde0a0baec1aff8b',1,'ChimeraTK::MotorDriver::LinearStepperMotor::StateMachine']]],
   ['calibration_5ftime',['CALIBRATION_TIME',['../namespacemtca4u_1_1dfmc__md22.html#a4e525e5ab94a824c88da4bd997a12db0',1,'mtca4u::dfmc_md22']]],
   ['calibration_5ftime_5fsuffix',['CALIBRATION_TIME_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#a711fd90f82d37e3eadb28fd34c14aefe',1,'mtca4u::dfmc_md22']]],
   ['chopper_5fcontrol_5fdefault',['CHOPPER_CONTROL_DEFAULT',['../namespacemtca4u.html#a329fcfcbcd73103cddace462152bbfb4',1,'mtca4u']]],
   ['choppercontroldata',['chopperControlData',['../structmtca4u_1_1_motor_controler_config.html#a6f02abb49f4f074533b98c1d568288de',1,'mtca4u::MotorControlerConfig']]],
-  ['configfilename',['configFileName',['../struct_chimera_t_k_1_1motordriver_1_1_stepper_motor_parameters.html#a99a11c09f71cbf43e3e97643e96619b5',1,'ChimeraTK::motordriver::StepperMotorParameters']]],
+  ['configfilename',['configFileName',['../struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html#a103811a6afb5c2be5b70511f934fdb28',1,'ChimeraTK::MotorDriver::StepperMotorParameters']]],
   ['controler_5fchip_5fversion',['CONTROLER_CHIP_VERSION',['../namespacemtca4u_1_1tmc429.html#ab3536bc752838ee280b993f2c73e8c08',1,'mtca4u::tmc429']]],
   ['controler_5fspi_5freadback_5faddress_5fstring',['CONTROLER_SPI_READBACK_ADDRESS_STRING',['../namespacemtca4u_1_1dfmc__md22.html#a21fff3316efe5552f1cb7a6e409bd3aa',1,'mtca4u::dfmc_md22']]],
   ['controler_5fspi_5fsync_5faddress_5fstring',['CONTROLER_SPI_SYNC_ADDRESS_STRING',['../namespacemtca4u_1_1dfmc__md22.html#adb16cc33ababc9fa77b0b9784ce701b7',1,'mtca4u::dfmc_md22']]],

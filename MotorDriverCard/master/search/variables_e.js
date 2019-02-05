@@ -16,5 +16,5 @@ var searchData=
   ['status_5fsuffix',['STATUS_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#ab5e87f171c099d32cbaab14c12d61c08',1,'mtca4u::dfmc_md22']]],
   ['stepper_5fmotor_5fglobal_5fparameters_5fdefault',['STEPPER_MOTOR_GLOBAL_PARAMETERS_DEFAULT',['../namespacemtca4u.html#a79c25f27e80a4a75c32b46ae7357f510',1,'mtca4u']]],
   ['steppermotorglobalparameters',['stepperMotorGlobalParameters',['../structmtca4u_1_1_motor_driver_card_config.html#a90f5e3c50c3e7ec7394574427ee36cb0',1,'mtca4u::MotorDriverCardConfig']]],
-  ['stopevent',['stopEvent',['../class_chimera_t_k_1_1motordriver_1_1_basic_stepper_motor_1_1_state_machine.html#aa1876a2f0a032da2757fc952fc40adf1',1,'ChimeraTK::motordriver::BasicStepperMotor::StateMachine']]]
+  ['stopevent',['stopEvent',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html#aae91616f3880956567965248fb803ef2',1,'ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine']]]
 ];

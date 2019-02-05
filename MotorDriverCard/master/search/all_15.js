@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['verifymoveaction',['verifyMoveAction',['../class_chimera_t_k_1_1motordriver_1_1_basic_stepper_motor.html#a5463b4000329aa87e6145a907d3a635d',1,'ChimeraTK::motordriver::BasicStepperMotor::verifyMoveAction()'],['../class_chimera_t_k_1_1motordriver_1_1_stepper_motor_with_reference.html#a6b14fa510229e60f2ab82ed592baf6f5',1,'ChimeraTK::motordriver::StepperMotorWithReference::verifyMoveAction()']]]
+  ['verifymoveaction',['verifyMoveAction',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a3bd0625f027a77b1e594041dd59458f0',1,'ChimeraTK::MotorDriver::BasicStepperMotor::verifyMoveAction()'],['../class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a101aa9c83e53c498b008a42b969c4475',1,'ChimeraTK::MotorDriver::LinearStepperMotor::verifyMoveAction()']]]
 ];
