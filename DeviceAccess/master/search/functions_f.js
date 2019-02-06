@@ -25,6 +25,7 @@ var searchData=
   ['start',['start',['../class_chimera_t_k_1_1_rebot_dummy_server.html#abb38ed196f76e6d2863f6929bef7feda',1,'ChimeraTK::RebotDummyServer']]],
   ['startswith',['startsWith',['../class_chimera_t_k_1_1_register_path.html#ae629af1a0b1e229f1653a1bb600c56f1',1,'ChimeraTK::RegisterPath']]],
   ['stop',['stop',['../class_chimera_t_k_1_1_rebot_dummy_server.html#afd21652e5990e7687316ef743bb768a2',1,'ChimeraTK::RebotDummyServer']]],
+  ['stop_5frebot_5fserver',['stop_rebot_server',['../namespace_chimera_t_k.html#a6f60549a352728669f936f757ee6fea9',1,'ChimeraTK']]],
   ['stow_5fprivate',['stow_private',['../structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5',1,'accessPrivateData::stow_private']]],
   ['subdevicebackend',['SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html#a767cac6cd44e993c13796c841a45c54b',1,'ChimeraTK::SubdeviceBackend']]],
   ['subdeviceregisteraccessor',['SubdeviceRegisterAccessor',['../class_chimera_t_k_1_1_subdevice_register_accessor.html#a3ba0161652dec0adddc2141861e6c49a',1,'ChimeraTK::SubdeviceRegisterAccessor']]],

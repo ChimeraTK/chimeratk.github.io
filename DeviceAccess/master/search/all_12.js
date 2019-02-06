@@ -56,7 +56,7 @@ var searchData=
   ['status_5fregister_5fstring',['STATUS_REGISTER_STRING',['../test_dummy_backend_8cpp.html#ab771a5738d0a773e772ceb42fa26410c',1,'testDummyBackend.cpp']]],
   ['std',['std',['../namespacestd.html',1,'']]],
   ['stop',['stop',['../class_chimera_t_k_1_1_rebot_dummy_server.html#afd21652e5990e7687316ef743bb768a2',1,'ChimeraTK::RebotDummyServer']]],
-  ['stop_5frebot_5fserver',['stop_rebot_server',['../namespace_chimera_t_k.html#a3c70f674fe11c58ccf8d4dc4a3ff27bf',1,'ChimeraTK']]],
+  ['stop_5frebot_5fserver',['stop_rebot_server',['../namespace_chimera_t_k.html#ac86dd51067ed1b14abf11e60de2df484',1,'ChimeraTK::stop_rebot_server()'],['../namespace_chimera_t_k.html#a6f60549a352728669f936f757ee6fea9',1,'ChimeraTK::stop_rebot_server(false)']]],
   ['stop_5ftime',['stop_time',['../structdevice__ioctrl__time.html#a04786d897463142079bd0cc2b041efcd',1,'device_ioctrl_time']]],
   ['stow_5fprivate',['stow_private',['../structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5',1,'accessPrivateData::stow_private']]],
   ['stow_5fprivate',['stow_private',['../structaccess_private_data_1_1stow__private.html',1,'accessPrivateData']]],

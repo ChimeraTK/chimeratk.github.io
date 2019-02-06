@@ -503,6 +503,8 @@ Functions</h2></td></tr>
 <tr class="separator:aeb7e76f343145df2c243f9e2a52939a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affba8965cdfd899bf6e41eccfbaa8364"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#affba8965cdfd899bf6e41eccfbaa8364">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_error_list.html">RegisterInfoMap::ErrorList</a> &amp;me)</td></tr>
 <tr class="separator:affba8965cdfd899bf6e41eccfbaa8364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f60549a352728669f936f757ee6fea9"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a6f60549a352728669f936f757ee6fea9">stop_rebot_server</a> (false)</td></tr>
+<tr class="separator:a6f60549a352728669f936f757ee6fea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afee0348f3a67cc3dc7efec51279bde7d"><td class="memTemplParams" colspan="2">template&lt;typename MAPTYPE , typename LAMBDATYPE &gt; </td></tr>
 <tr class="memitem:afee0348f3a67cc3dc7efec51279bde7d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d">for_each</a> (MAPTYPE &amp;map, LAMBDATYPE &amp;lambda)</td></tr>
 <tr class="memdesc:afee0348f3a67cc3dc7efec51279bde7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variant of <a class="el" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d" title="Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...">boost::fusion::for_each()</a> to iterate a boost::fusion::map, which accepts a lambda instead of the callable class requred by the boost version.  <a href="#afee0348f3a67cc3dc7efec51279bde7d">More...</a><br /></td></tr>
@@ -528,8 +530,8 @@ Variables</h2></td></tr>
 <tr class="separator:a48e5529d117d16700b4f1487d510e94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83f8ba2a957f8ec51579c647ba6c51b3"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a83f8ba2a957f8ec51579c647ba6c51b3">BAR_POSITION_IN_VIRTUAL_REGISTER</a> = 60</td></tr>
 <tr class="separator:a83f8ba2a957f8ec51579c647ba6c51b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c70f674fe11c58ccf8d4dc4a3ff27bf"><td class="memItemLeft" align="right" valign="top">bool volatile&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a3c70f674fe11c58ccf8d4dc4a3ff27bf">stop_rebot_server</a> = false</td></tr>
-<tr class="separator:a3c70f674fe11c58ccf8d4dc4a3ff27bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86dd51067ed1b14abf11e60de2df484"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ac86dd51067ed1b14abf11e60de2df484">stop_rebot_server</a></td></tr>
+<tr class="separator:ac86dd51067ed1b14abf11e60de2df484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides storage object for devices descriptions. </p>
@@ -1983,6 +1985,22 @@ template&lt;&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a6f60549a352728669f936f757ee6fea9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;bool&gt; ChimeraTK::stop_rebot_server </td>
+          <td>(</td>
+          <td class="paramtype">false&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a48e5529d117d16700b4f1487d510e94c"></a>
 <div class="memitem">
@@ -2012,24 +2030,22 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3c70f674fe11c58ccf8d4dc4a3ff27bf"></a>
+<a class="anchor" id="ac86dd51067ed1b14abf11e60de2df484"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool volatile ChimeraTK::stop_rebot_server = false</td>
+          <td class="memname">std::atomic&lt;bool&gt; ChimeraTK::stop_rebot_server</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_rebot_dummy_server_8cc_source.html#l00011">11</a> of file <a class="el" href="_rebot_dummy_server_8cc_source.html">RebotDummyServer.cc</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 5 2019 06:53:12 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 6 2019 06:53:12 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
