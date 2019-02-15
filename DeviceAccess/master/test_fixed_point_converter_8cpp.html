@@ -115,15 +115,15 @@ Macros</h2></td></tr>
 <tr class="separator:a139f00d2466d591f60b8d6a73c8273f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b2a3852db8bb19ab6909bac01859985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_fixed_point_converter_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>&#160;&#160;&#160;FixedPointConverterTest</td></tr>
 <tr class="separator:a6b2a3852db8bb19ab6909bac01859985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a487bf380dfbd1da6dec444f9bc6ed701"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_fixed_point_converter_8cpp.html#a487bf380dfbd1da6dec444f9bc6ed701">HEX_TO_DOUBLE</a>(INPUT)&#160;&#160;&#160;static_cast&lt;double&gt;( INPUT )</td></tr>
+<tr class="memitem:a487bf380dfbd1da6dec444f9bc6ed701"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_fixed_point_converter_8cpp.html#a487bf380dfbd1da6dec444f9bc6ed701">HEX_TO_DOUBLE</a>(INPUT)&#160;&#160;&#160;static_cast&lt;double&gt;(INPUT)</td></tr>
 <tr class="separator:a487bf380dfbd1da6dec444f9bc6ed701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f73ef3bea860f19d8173bea35bc7695"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_fixed_point_converter_8cpp.html#a9f73ef3bea860f19d8173bea35bc7695">SIGNED_HEX_TO_DOUBLE</a>(INPUT)&#160;&#160;&#160;static_cast&lt;double&gt;( static_cast&lt;int32_t&gt;(INPUT) )</td></tr>
+<tr class="memitem:a9f73ef3bea860f19d8173bea35bc7695"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_fixed_point_converter_8cpp.html#a9f73ef3bea860f19d8173bea35bc7695">SIGNED_HEX_TO_DOUBLE</a>(INPUT)&#160;&#160;&#160;static_cast&lt;double&gt;(static_cast&lt;int32_t&gt;(INPUT))</td></tr>
 <tr class="separator:a9f73ef3bea860f19d8173bea35bc7695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa79a47a36fbc3954dc61b30a16b7e74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_fixed_point_converter_8cpp.html#afa79a47a36fbc3954dc61b30a16b7e74">SIGNED_HEX_TO_INT64</a>(INPUT)&#160;&#160;&#160;static_cast&lt;int64_t&gt;( static_cast&lt;int32_t&gt;(INPUT) )</td></tr>
+<tr class="memitem:afa79a47a36fbc3954dc61b30a16b7e74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_fixed_point_converter_8cpp.html#afa79a47a36fbc3954dc61b30a16b7e74">SIGNED_HEX_TO_INT64</a>(INPUT)&#160;&#160;&#160;static_cast&lt;int64_t&gt;(static_cast&lt;int32_t&gt;(INPUT))</td></tr>
 <tr class="separator:afa79a47a36fbc3954dc61b30a16b7e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81f43db6e3f488cde3cfae84a86db022"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_fixed_point_converter_8cpp.html#a81f43db6e3f488cde3cfae84a86db022">CHECK_SIGNED_FIXED_POINT_NO_FRACTIONAL</a></td></tr>
 <tr class="separator:a81f43db6e3f488cde3cfae84a86db022"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b4edc265050c3971e52f9643040e649"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_fixed_point_converter_8cpp.html#a4b4edc265050c3971e52f9643040e649">DEF_TYPENAME</a>(name)&#160;&#160;&#160;template &lt;&gt; inline const char* <a class="el" href="test_fixed_point_converter_8cpp.html#add8bf0f559895e97e941a375a8073422">typeName</a>&lt;name&gt;(void) { return #name; }</td></tr>
+<tr class="memitem:a4b4edc265050c3971e52f9643040e649"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_fixed_point_converter_8cpp.html#a4b4edc265050c3971e52f9643040e649">DEF_TYPENAME</a>(name)</td></tr>
 <tr class="separator:a4b4edc265050c3971e52f9643040e649"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -272,7 +272,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">checkToFixedPoint( converter, 0.25, 0 );\</div><div class="line">    checkToFixedPoint( converter, -0.25, 0 );\</div><div class="line">    checkToFixedPoint( converter, 0.75, 1 );\</div><div class="line">    checkToFixedPoint( converter, -0.75, -1 );\</div><div class="line">    checkToFixedPoint( converter, 3.25, 3 );\</div><div class="line">    checkToFixedPoint( converter, -3.25, -3 );\</div><div class="line">    checkToFixedPoint( converter, 5.75, 6 );\</div><div class="line">    checkToFixedPoint( converter, -5.75, -6 );</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">checkToFixedPoint(converter, 0.25, 0);                                                                               \</div><div class="line">  checkToFixedPoint(converter, -0.25, 0);                                                                              \</div><div class="line">  checkToFixedPoint(converter, 0.75, 1);                                                                               \</div><div class="line">  checkToFixedPoint(converter, -0.75, -1);                                                                             \</div><div class="line">  checkToFixedPoint(converter, 3.25, 3);                                                                               \</div><div class="line">  checkToFixedPoint(converter, -3.25, -3);                                                                             \</div><div class="line">  checkToFixedPoint(converter, 5.75, 6);                                                                               \</div><div class="line">  checkToFixedPoint(converter, -5.75, -6);</div></div><!-- fragment -->
 <p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00025">25</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
@@ -286,12 +286,12 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">name</td><td>)</td>
-          <td>&#160;&#160;&#160;template &lt;&gt; inline const char* <a class="el" href="test_fixed_point_converter_8cpp.html#add8bf0f559895e97e941a375a8073422">typeName</a>&lt;name&gt;(void) { return #name; }</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00047">47</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;                                                                                                           \</div><div class="line">  inline <span class="keyword">const</span> <span class="keywordtype">char</span>* typeName&lt;name&gt;(void) {                                                                            \</div><div class="line">    return #name;                                                                                                      \</div><div class="line">  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00049">49</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -304,7 +304,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">INPUT</td><td>)</td>
-          <td>&#160;&#160;&#160;static_cast&lt;double&gt;( INPUT )</td>
+          <td>&#160;&#160;&#160;static_cast&lt;double&gt;(INPUT)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -322,7 +322,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">INPUT</td><td>)</td>
-          <td>&#160;&#160;&#160;static_cast&lt;double&gt;( static_cast&lt;int32_t&gt;(INPUT) )</td>
+          <td>&#160;&#160;&#160;static_cast&lt;double&gt;(static_cast&lt;int32_t&gt;(INPUT))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -340,7 +340,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">INPUT</td><td>)</td>
-          <td>&#160;&#160;&#160;static_cast&lt;int64_t&gt;( static_cast&lt;int32_t&gt;(INPUT) )</td>
+          <td>&#160;&#160;&#160;static_cast&lt;int64_t&gt;(static_cast&lt;int32_t&gt;(INPUT))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -364,7 +364,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00136">136</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00134">134</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -382,7 +382,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00150">150</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00148">148</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -400,7 +400,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00194">194</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00191">191</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -418,7 +418,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00238">238</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00234">234</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -436,7 +436,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00284">284</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00279">279</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -454,7 +454,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00327">327</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00322">322</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -472,7 +472,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00373">373</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00366">366</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -490,7 +490,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00416">416</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00409">409</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -508,7 +508,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00457">457</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00451">451</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -526,7 +526,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00497">497</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00492">492</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -544,7 +544,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00537">537</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00532">532</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -562,7 +562,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00569">569</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00564">564</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -580,7 +580,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00613">613</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00608">608</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -598,7 +598,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00653">653</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00648">648</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -616,7 +616,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00700">700</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00695">695</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -634,7 +634,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00736">736</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00731">731</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -652,7 +652,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00779">779</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00774">774</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -670,7 +670,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00823">823</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00818">818</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -688,7 +688,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00863">863</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00858">858</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -706,7 +706,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00902">902</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00897">897</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -724,7 +724,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00942">942</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00937">937</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -742,7 +742,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00978">978</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00973">973</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -760,7 +760,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01010">1010</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01005">1005</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -778,7 +778,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01043">1043</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01039">1039</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -796,7 +796,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01084">1084</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01079">1079</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -814,7 +814,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01117">1117</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01112">1112</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -832,7 +832,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01148">1148</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01143">1143</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -850,7 +850,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01184">1184</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01179">1179</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -868,7 +868,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01205">1205</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01200">1200</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -886,7 +886,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01226">1226</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01221">1221</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -904,7 +904,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01251">1251</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01246">1246</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -922,7 +922,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01274">1274</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01269">1269</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -940,7 +940,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01295">1295</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01290">1290</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -958,7 +958,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01316">1316</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01311">1311</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -976,7 +976,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01329">1329</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01323">1323</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -994,7 +994,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01351">1351</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01345">1345</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1012,7 +1012,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01376">1376</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01370">1370</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1030,7 +1030,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01403">1403</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01397">1397</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1048,7 +1048,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01424">1424</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01418">1418</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1066,7 +1066,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01444">1444</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01438">1438</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1084,7 +1084,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01459">1459</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01453">1453</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1102,7 +1102,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01474">1474</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01468">1468</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1120,7 +1120,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01489">1489</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01483">1483</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1138,7 +1138,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01504">1504</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01498">1498</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1156,7 +1156,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01515">1515</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l01509">1509</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1192,7 +1192,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00101">101</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00103">103</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1222,7 +1222,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00063">63</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00067">67</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1252,7 +1252,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00083">83</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
+<p>Definition at line <a class="el" href="test_fixed_point_converter_8cpp_source.html#l00087">87</a> of file <a class="el" href="test_fixed_point_converter_8cpp_source.html">testFixedPointConverter.cpp</a>.</p>
 
 </div>
 </div>
@@ -1323,7 +1323,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 9 2019 06:53:11 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 15 2019 06:53:12 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

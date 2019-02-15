@@ -10,7 +10,7 @@ var searchData=
   ['beginindex',['beginIndex',['../class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html#ac24c3977c5933514ab1bced050a64470',1,'ChimeraTK::RegisterAccessor::AccessorHandler']]],
   ['bit',['bit',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#af1027e2cac947b434f1d861bfa07a18c',1,'ChimeraTK::LNMBackendRegisterInfo']]],
   ['buffer',['buffer',['../class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html#ad3b99349e761ce22a6ccfea804370d9c',1,'ChimeraTK::proxies::DummyRegisterElement::buffer()'],['../class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html#af0607c2ba14dac93752ca720bd1097f5',1,'ChimeraTK::proxies::DummyRegisterSequence::buffer()']]],
-  ['buffer_5f2d',['buffer_2D',['../class_chimera_t_k_1_1_n_d_register_accessor.html#a090e36fbf49720603758f0d8485c52ff',1,'ChimeraTK::NDRegisterAccessor']]],
+  ['buffer_5f2d',['buffer_2D',['../class_chimera_t_k_1_1_n_d_register_accessor.html#ab3e9f790076370e901fd8c6079ed6770',1,'ChimeraTK::NDRegisterAccessor']]],
   ['buffer_5fsize_5fin_5fwords',['BUFFER_SIZE_IN_WORDS',['../class_chimera_t_k_1_1_rebot_dummy_server.html#a018b8389fd27ec1a36ce9d6de1ccec6a',1,'ChimeraTK::RebotDummyServer']]],
   ['bytesperblock',['bytesPerBlock',['../class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a6a3258d76e109ea07c7859d7447b9250',1,'ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor']]]
 ];

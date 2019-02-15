@@ -12,7 +12,7 @@ var searchData=
   ['usecustombackend_2ecpp',['useCustomBackend.cpp',['../use_custom_backend_8cpp.html',1,'']]],
   ['usednodes',['usedNodes',['../struct_test_locker.html#abd27bfa14ea0cc45b8f2be1b741ca233',1,'TestLocker']]],
   ['user_5fregister_5fstring',['USER_REGISTER_STRING',['../test_dummy_backend_8cpp.html#a3666956980c94e99f82e036ef8b34395',1,'testDummyBackend.cpp']]],
-  ['usertypemap',['userTypeMap',['../namespace_chimera_t_k.html#a185ebe42bffba27324f73f5e3449f043',1,'ChimeraTK']]],
+  ['usertypemap',['userTypeMap',['../namespace_chimera_t_k.html#a238e0526cc4fc45ee733782c69cca349',1,'ChimeraTK']]],
   ['utilities',['Utilities',['../class_chimera_t_k_1_1_utilities.html',1,'ChimeraTK']]],
   ['utilities',['Utilities',['../class_chimera_t_k_1_1_utilities.html#a2bb15b10961946a6502a19cda3c4e958',1,'ChimeraTK::Utilities']]],
   ['utilities_2ecpp',['Utilities.cpp',['../_utilities_8cpp.html',1,'']]],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['table',['table',['../class_chimera_t_k_1_1_template_user_type_map.html#af6af9b0d694a5a8378e251000a56ce69',1,'ChimeraTK::TemplateUserTypeMap']]],
+  ['table',['table',['../class_chimera_t_k_1_1_template_user_type_map.html#aab6ccfd4504e01e697ede3b4817ef681',1,'ChimeraTK::TemplateUserTypeMap']]],
   ['targetaddress',['targetAddress',['../class_chimera_t_k_1_1_subdevice_backend.html#a0753ed5f431a13a99438183d5b9eb966',1,'ChimeraTK::SubdeviceBackend']]],
   ['targetalias',['targetAlias',['../class_chimera_t_k_1_1_subdevice_backend.html#a62ecf0e01fab6565bad9dd9580f6c4be',1,'ChimeraTK::SubdeviceBackend']]],
   ['targetarea',['targetArea',['../class_chimera_t_k_1_1_subdevice_backend.html#a955414ee7222c3a5898132c55f00a4ca',1,'ChimeraTK::SubdeviceBackend']]],
@@ -170,7 +170,7 @@ var searchData=
   ['testwritedma',['testWriteDMA',['../class_pcie_backend_test.html#a9ff9da4dc1a856a96b88b77bd08cca9d',1,'PcieBackendTest']]],
   ['testwriteregister',['testWriteRegister',['../class_pcie_backend_test.html#a2b469d1e64d7ec199b9e9b517e167d10',1,'PcieBackendTest']]],
   ['testwriteregisterwithoutcallback',['testWriteRegisterWithoutCallback',['../class_dummy_backend_test.html#a234d86a7562e4e73926f954e97c23566',1,'DummyBackendTest']]],
-  ['theiterator',['theIterator',['../class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html#a001f5d5955de66c5573608d70b10112d',1,'ChimeraTK::RegisterCatalogue::const_iterator::theIterator()'],['../class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#acdee6bf1f147e711ec0903937d53019f',1,'ChimeraTK::RegisterCatalogue::iterator::theIterator()'],['../class_chimera_t_k_1_1_register_info_map_1_1const__iterator.html#afa7fc78aa304857870be99b24ab38c11',1,'ChimeraTK::RegisterInfoMap::const_iterator::theIterator()'],['../class_chimera_t_k_1_1_register_info_map_1_1iterator.html#a9222043f506569569fd974a8c7f7981d',1,'ChimeraTK::RegisterInfoMap::iterator::theIterator()']]],
+  ['theiterator',['theIterator',['../class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html#a55f72565aeca94db80f3ffc3acb97032',1,'ChimeraTK::RegisterCatalogue::const_iterator::theIterator()'],['../class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#aa7105dd08e6f8bba608d984efc2b3202',1,'ChimeraTK::RegisterCatalogue::iterator::theIterator()'],['../class_chimera_t_k_1_1_register_info_map_1_1const__iterator.html#afa7fc78aa304857870be99b24ab38c11',1,'ChimeraTK::RegisterInfoMap::const_iterator::theIterator()'],['../class_chimera_t_k_1_1_register_info_map_1_1iterator.html#a9222043f506569569fd974a8c7f7981d',1,'ChimeraTK::RegisterInfoMap::iterator::theIterator()']]],
   ['thetype',['TheType',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899',1,'ChimeraTK::DataType']]],
   ['this_5ftype',['THIS_TYPE',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#afa3ed4cc0c2b141536a99736e1685e1d',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor']]],
   ['threadinformermutex',['ThreadInformerMutex',['../struct_chimera_t_k_1_1_thread_informer_mutex.html',1,'ChimeraTK']]],
@@ -215,7 +215,7 @@ var searchData=
   ['transfervectortodataptr',['transferVectorToDataPtr',['../struct_chimera_t_k_1_1_rebot_protocol0.html#ab9c523fccc1c5d4f6550ad4089e98e3e',1,'ChimeraTK::RebotProtocol0']]],
   ['transportlayerdatatype',['transportLayerDataType',['../class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#aaa09d68b842cd81a72bd0fe22132ec13',1,'ChimeraTK::RegisterInfo::DataDescriptor']]],
   ['try_5fregister_5faccess',['TRY_REGISTER_ACCESS',['../_shared_dummy_backend_8cc.html#ae845db7f933611bff0617577388e4c4f',1,'TRY_REGISTER_ACCESS():&#160;SharedDummyBackend.cc'],['../_dummy_backend_8cc.html#ae845db7f933611bff0617577388e4c4f',1,'TRY_REGISTER_ACCESS():&#160;DummyBackend.cc']]],
-  ['twodregisteraccessor',['TwoDRegisterAccessor',['../class_chimera_t_k_1_1_two_d_register_accessor.html#a661ec82f0a471589c0d9509754a3bf40',1,'ChimeraTK::TwoDRegisterAccessor::TwoDRegisterAccessor(boost::shared_ptr&lt; NDRegisterAccessor&lt; UserType &gt; &gt; _accessor)'],['../class_chimera_t_k_1_1_two_d_register_accessor.html#ad96b77340c5a6346c2999295c1f338bd',1,'ChimeraTK::TwoDRegisterAccessor::TwoDRegisterAccessor()']]],
+  ['twodregisteraccessor',['TwoDRegisterAccessor',['../class_chimera_t_k_1_1_two_d_register_accessor.html#a5700d4ce19e03b9678fbf9f6ea1f6071',1,'ChimeraTK::TwoDRegisterAccessor::TwoDRegisterAccessor(boost::shared_ptr&lt; NDRegisterAccessor&lt; UserType &gt;&gt; _accessor)'],['../class_chimera_t_k_1_1_two_d_register_accessor.html#ad96b77340c5a6346c2999295c1f338bd',1,'ChimeraTK::TwoDRegisterAccessor::TwoDRegisterAccessor()']]],
   ['twodregisteraccessor',['TwoDRegisterAccessor',['../class_chimera_t_k_1_1_two_d_register_accessor.html',1,'ChimeraTK']]],
   ['twodregisteraccessor_2eh',['TwoDRegisterAccessor.h',['../device_2include_2_two_d_register_accessor_8h.html',1,'']]],
   ['twodregisteraccessor_2eh',['TwoDRegisterAccessor.h',['../mtca4u__compatibility__headers_2_two_d_register_accessor_8h.html',1,'']]],

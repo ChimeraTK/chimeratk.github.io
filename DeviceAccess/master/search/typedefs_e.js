@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['usertypemap',['userTypeMap',['../namespace_chimera_t_k.html#a185ebe42bffba27324f73f5e3449f043',1,'ChimeraTK']]]
+  ['usertypemap',['userTypeMap',['../namespace_chimera_t_k.html#a238e0526cc4fc45ee733782c69cca349',1,'ChimeraTK']]]
 ];
