@@ -1,0 +1,94 @@
+\hypertarget{structTimerModule}{}\section{Timer\+Module Struct Reference}
+\label{structTimerModule}\index{Timer\+Module@{Timer\+Module}}
+
+
+This module is used to trigger the mainloops of the modules to go on.  
+
+
+
+
+{\ttfamily \#include $<$Watchdog\+Server.\+h$>$}
+
+
+
+Inheritance diagram for Timer\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{structTimerModule__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Timer\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{structTimerModule__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structTimerModule_a2b66ac09a2bc900732fa7729ccace545}{main\+Loop} () override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ctk\+::\+Scalar\+Output$<$ uint $>$ \hyperlink{structTimerModule_a9aafb8671c7962994cd5e7df1ef2e75b}{trigger}
+\item 
+ctk\+::\+Scalar\+Output$<$ int $>$ \hyperlink{structTimerModule_a4b493016d089de68093eba7c67a652d2}{itrigger}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ uint $>$ {\bfseries update}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This module is used to trigger the mainloops of the modules to go on. 
+
+\subsection{Member Function Documentation}
+\index{Timer\+Module@{Timer\+Module}!main\+Loop@{main\+Loop}}
+\index{main\+Loop@{main\+Loop}!Timer\+Module@{Timer\+Module}}
+\subsubsection[{\texorpdfstring{main\+Loop() override}{mainLoop() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Timer\+Module\+::main\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{structTimerModule_a2b66ac09a2bc900732fa7729ccace545}{}\label{structTimerModule_a2b66ac09a2bc900732fa7729ccace545}
+Application core main loop. 
+
+\subsection{Member Data Documentation}
+\index{Timer\+Module@{Timer\+Module}!itrigger@{itrigger}}
+\index{itrigger@{itrigger}!Timer\+Module@{Timer\+Module}}
+\subsubsection[{\texorpdfstring{itrigger}{itrigger}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$int$>$ Timer\+Module\+::itrigger}\hypertarget{structTimerModule_a4b493016d089de68093eba7c67a652d2}{}\label{structTimerModule_a4b493016d089de68093eba7c67a652d2}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"itrigger"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Trigger counter"},
+    \{ \textcolor{stringliteral}{"Timer"} \}\}
+\end{DoxyCode}
+Workaround for the micro\+D\+AQ module, which needs an int \index{Timer\+Module@{Timer\+Module}!trigger@{trigger}}
+\index{trigger@{trigger}!Timer\+Module@{Timer\+Module}}
+\subsubsection[{\texorpdfstring{trigger}{trigger}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$uint$>$ Timer\+Module\+::trigger}\hypertarget{structTimerModule_a9aafb8671c7962994cd5e7df1ef2e75b}{}\label{structTimerModule_a9aafb8671c7962994cd5e7df1ef2e75b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"trigger"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Trigger counter"},
+    \{ \textcolor{stringliteral}{"Timer"} \}\}
+\end{DoxyCode}
+\begin{DoxyRemark}{Remarks}
+Observe this variable by other modules to obtain a trigger 
+\end{DoxyRemark}
+\index{Timer\+Module@{Timer\+Module}!update@{update}}
+\index{update@{update}!Timer\+Module@{Timer\+Module}}
+\subsubsection[{\texorpdfstring{update}{update}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$uint$>$ Timer\+Module\+::update}\hypertarget{structTimerModule_a05fbea3ad4ab049aac717efeae948409}{}\label{structTimerModule_a05fbea3ad4ab049aac717efeae948409}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{this , \textcolor{stringliteral}{"update"}, \textcolor{stringliteral}{"s"}, \textcolor{stringliteral}{"Specify the amount of time given in seconds between update triggers."},
+    \{ \textcolor{stringliteral}{"Timer"} \}\}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Watchdog\+Server.\+h\item 
+src/Watchdog\+Server.\+cc\end{DoxyCompactItemize}

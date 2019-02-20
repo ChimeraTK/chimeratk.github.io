@@ -1,0 +1,95 @@
+\hypertarget{classSysInfo}{}\section{Sys\+Info Class Reference}
+\label{classSysInfo}\index{Sys\+Info@{Sys\+Info}}
+
+
+Class that reads static system information from the system by reading {\ttfamily /proc/cpuinfo} and {\ttfamily /sys/devices/system/cpu/present}.  
+
+
+
+
+{\ttfamily \#include $<$sys\+\_\+stat.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSysInfo_ad5810112be02a38d5d4aecc95724c656}{Sys\+Info} ()
+\item 
+std\+::string \hyperlink{classSysInfo_a429fb6d15d8790484be15eca47f7a1d5}{get\+Info} (const std\+::string \&pattern)
+\item 
+unsigned int \hyperlink{classSysInfo_a836d6f2b00e37dd02caa17c18cce8492}{get\+N\+Cpu} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::map$<$ std\+::string, std\+::string $>$\+::iterator \hyperlink{classSysInfo_a029299d61d0464b1cfd58fe36c453a9d}{ibegin}
+\item 
+const std\+::map$<$ std\+::string, std\+::string $>$\+::iterator \hyperlink{classSysInfo_a919f49790a9ab98a5690714c75ac261b}{iend}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that reads static system information from the system by reading {\ttfamily /proc/cpuinfo} and {\ttfamily /sys/devices/system/cpu/present}. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em runtime\+\_\+error} & Exception is thrown in case one of the /proc/ files could not be read. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Sys\+Info@{Sys\+Info}!Sys\+Info@{Sys\+Info}}
+\index{Sys\+Info@{Sys\+Info}!Sys\+Info@{Sys\+Info}}
+\subsubsection[{\texorpdfstring{Sys\+Info()}{SysInfo()}}]{\setlength{\rightskip}{0pt plus 5cm}Sys\+Info\+::\+Sys\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSysInfo_ad5810112be02a38d5d4aecc95724c656}{}\label{classSysInfo_ad5810112be02a38d5d4aecc95724c656}
+Read information about the system. 
+\begin{DoxyExceptions}{Exceptions}
+{\em runtime\+\_\+error} & Exception is thrown in case one of the /proc/ files could not be read. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\index{Sys\+Info@{Sys\+Info}!get\+Info@{get\+Info}}
+\index{get\+Info@{get\+Info}!Sys\+Info@{Sys\+Info}}
+\subsubsection[{\texorpdfstring{get\+Info(const std\+::string \&pattern)}{getInfo(const std::string &pattern)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Sys\+Info\+::get\+Info (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{pattern}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSysInfo_a429fb6d15d8790484be15eca47f7a1d5}{}\label{classSysInfo_a429fb6d15d8790484be15eca47f7a1d5}
+Get a system parameter stored in {\ttfamily }/proc/cpuinfo \begin{DoxyRemark}{Remarks}
+Not all parameter found in {\ttfamily }/proc/cpuinfo are available. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em pattern} & The key used in {\ttfamily /proc/cpuinfo} and the internal map sys\+Data. \\
+\hline
+\end{DoxyParams}
+\index{Sys\+Info@{Sys\+Info}!get\+N\+Cpu@{get\+N\+Cpu}}
+\index{get\+N\+Cpu@{get\+N\+Cpu}!Sys\+Info@{Sys\+Info}}
+\subsubsection[{\texorpdfstring{get\+N\+Cpu()}{getNCpu()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Sys\+Info\+::get\+N\+Cpu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSysInfo_a836d6f2b00e37dd02caa17c18cce8492}{}\label{classSysInfo_a836d6f2b00e37dd02caa17c18cce8492}
+\begin{DoxyReturn}{Returns}
+Number cpu cores of the system 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Sys\+Info@{Sys\+Info}!ibegin@{ibegin}}
+\index{ibegin@{ibegin}!Sys\+Info@{Sys\+Info}}
+\subsubsection[{\texorpdfstring{ibegin}{ibegin}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::map$<$std\+::string, std\+::string$>$\+::iterator Sys\+Info\+::ibegin}\hypertarget{classSysInfo_a029299d61d0464b1cfd58fe36c453a9d}{}\label{classSysInfo_a029299d61d0464b1cfd58fe36c453a9d}
+Iterator pointing to the beginning of the system data map \index{Sys\+Info@{Sys\+Info}!iend@{iend}}
+\index{iend@{iend}!Sys\+Info@{Sys\+Info}}
+\subsubsection[{\texorpdfstring{iend}{iend}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::map$<$std\+::string, std\+::string$>$\+::iterator Sys\+Info\+::iend}\hypertarget{classSysInfo_a919f49790a9ab98a5690714c75ac261b}{}\label{classSysInfo_a919f49790a9ab98a5690714c75ac261b}
+Iterator pointing to the end of the system data map 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/sys\+\_\+stat.\+h\item 
+src/sys\+\_\+stat.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\hypertarget{namespaceproc__util}{}\section{proc\+\_\+util Namespace Reference}
+\label{namespaceproc__util}\index{proc\+\_\+util@{proc\+\_\+util}}
+
+
+This namespace contains functions is used to read /proc information via libproc.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespaceproc__util_a3239beea007655f5b9ca18eeae0ba8d4}{is\+Process\+Running} (const int \&P\+ID)
+\item 
+std\+::shared\+\_\+ptr$<$ proc\+\_\+t $>$ \hyperlink{namespaceproc__util_a82bc404af2ea091b460762103e6621e6}{get\+Info} (const size\+\_\+t \&P\+ID)
+\item 
+size\+\_\+t \hyperlink{namespaceproc__util_a55cf35ee280c561e235c1dd1381be6af}{get\+N\+Childs} (const size\+\_\+t \&P\+G\+ID, std\+::ostream \&os=std\+::cout)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mutex {\bfseries proc\+\_\+mutex}\hypertarget{namespaceproc__util_acb27922218d29cffc4a4886bdf034916}{}\label{namespaceproc__util_acb27922218d29cffc4a4886bdf034916}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This namespace contains functions is used to read /proc information via libproc. 
+
+The libproc library is not thread safe. Therefore a mutex is used here. 
+
+\subsection{Function Documentation}
+\index{proc\+\_\+util@{proc\+\_\+util}!get\+Info@{get\+Info}}
+\index{get\+Info@{get\+Info}!proc\+\_\+util@{proc\+\_\+util}}
+\subsubsection[{\texorpdfstring{get\+Info(const size\+\_\+t \&\+P\+I\+D)}{getInfo(const size_t &PID)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ proc\+\_\+t $>$ proc\+\_\+util\+::get\+Info (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t \&}]{P\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceproc__util_a82bc404af2ea091b460762103e6621e6}{}\label{namespaceproc__util_a82bc404af2ea091b460762103e6621e6}
+Read procps information of a certain process. 
+\begin{DoxyParams}{Parameters}
+{\em P\+ID} & pid of the process to be considered.  std\+::runtime\+\_\+error In case no process with the given P\+ID exists. \\
+\hline
+\end{DoxyParams}
+\index{proc\+\_\+util@{proc\+\_\+util}!get\+N\+Childs@{get\+N\+Childs}}
+\index{get\+N\+Childs@{get\+N\+Childs}!proc\+\_\+util@{proc\+\_\+util}}
+\subsubsection[{\texorpdfstring{get\+N\+Childs(const size\+\_\+t \&\+P\+G\+I\+D, std\+::ostream \&os=std\+::cout)}{getNChilds(const size_t &PGID, std::ostream &os=std::cout)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t proc\+\_\+util\+::get\+N\+Childs (
+\begin{DoxyParamCaption}
+\item[{const size\+\_\+t \&}]{P\+G\+ID, }
+\item[{std\+::ostream \&}]{os = {\ttfamily std\+:\+:cout}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceproc__util_a55cf35ee280c561e235c1dd1381be6af}{}\label{namespaceproc__util_a55cf35ee280c561e235c1dd1381be6af}
+Read the number of processes that belong to the same process group id (P\+G\+ID). 
+\begin{DoxyParams}{Parameters}
+{\em P\+G\+ID} & The process group id used to look for processes \\
+\hline
+{\em os} & Stream used to print messages. \\
+\hline
+\end{DoxyParams}
+\index{proc\+\_\+util@{proc\+\_\+util}!is\+Process\+Running@{is\+Process\+Running}}
+\index{is\+Process\+Running@{is\+Process\+Running}!proc\+\_\+util@{proc\+\_\+util}}
+\subsubsection[{\texorpdfstring{is\+Process\+Running(const int \&\+P\+I\+D)}{isProcessRunning(const int &PID)}}]{\setlength{\rightskip}{0pt plus 5cm}bool proc\+\_\+util\+::is\+Process\+Running (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{P\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceproc__util_a3239beea007655f5b9ca18eeae0ba8d4}{}\label{namespaceproc__util_a3239beea007655f5b9ca18eeae0ba8d4}
+Use system folder {\ttfamily /proc} to search for a process with the given process ID. If a directory with the given P\+ID is found the process is running. 
+\begin{DoxyParams}{Parameters}
+{\em P\+ID} & Process ID to look for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the process is running and registered in the {\ttfamily /proc} folder 
+\end{DoxyReturn}
