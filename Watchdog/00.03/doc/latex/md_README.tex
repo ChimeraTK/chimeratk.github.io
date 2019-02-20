@@ -1,0 +1,56 @@
+The watchdog server is used to monitor the system, the watchdog itself and addition processes (started by the watchdog) with respect to their memory consumption, runtime and more.
+
+\subsection*{Details about the watchdog server and its operation}
+
+Before starting the watchdog server the number of processes to be controlled needs to be fixed. This is done by modifying the config file {\ttfamily Watchdog\+Server\+Config.\+xml} (installed in {\ttfamily /etc/chimeratk/watchdog-\/server/}). Here you only need to give a name to the process to be added. All process specific settings are done via the watchdog server when it is started.
+
+In the server settings you can set a path ({\ttfamily Set\+Path}), where to execute the program specified in the C\+MD variable. You can also append command line arguments to the commad set in {\ttfamily Set\+C\+MD}. In order to add environment settings use {\ttfamily Set\+Environment}, e.\+g. {\ttfamily \char`\"{}\+E\+N\+S\+H\+O\+S\+T=localhost\char`\"{}}. Separate multiple variables in the environment with a comma and multiple entries per variable with a colon, e.\+g. {\ttfamily \char`\"{}\+E\+N\+S\+H\+O\+S\+T=localhost,\+P\+Y\+T\+H\+O\+N\+P\+A\+T\+H=/location\+A\+:/location\+B\char`\"{}}. So far it is not possible to add processes dynamically.
+
+Further information are given in the doxygen documentation of the project.
+
+{\bfseries In order to add a process you need to stop (see below) the watchdog server and modify the file Watchdog\+Server\+Config.\+xml.}
+
+For integration tasks all server variables can be found in {\ttfamily /etc/chimeratk/watchdog-\/server/\+Watchdog\+Server.xml}. It is created during the install process. Once you edit {\ttfamily Watchdog\+Server\+Config.\+xml} the variable tree of the server changes. In that case use {\ttfamily watchdog-\/server-\/xml\+Generator} to recreate {\ttfamily /etc/chimeratk/watchdog-\/server/\+Watchdog\+Server.xml} with an updated variable tree. This is the reason why also {\ttfamily watchdog-\/server-\/xml\+Generator} is installed in addition to the {\ttfamily /etc/chimeratk/watchdog-\/server/\+Watchdog\+Server.xml} file.
+
+When upgrading the watchdag server package the persist file is temporaryly copied to {\ttfamily /etc/chimeratk/watchdog-\/server/} and treated as configuration file. In consequence the persist file is the same after upgrading the watchdog server packge. This is also true if the watchdog server package is removed and installed again later. Only purging the watchdog server package will remove the persist file and all the other configuration files.
+
+\subsubsection*{Micro\+D\+AQ}
+
+It also possible to aquire parameters of the watchdog in a file, produced by the {\ttfamily Micro\+D\+AQ} module from {\ttfamily Application\+Core}. In order to enable this feature the {\ttfamily Watchdog\+Server\+Config.\+xml} file needs to be cahnged accordingly. \begin{DoxyVerb}<variable name="enableMicroDAQ" type="int32" value="1" />
+\end{DoxyVerb}
+
+
+If Micro\+D\+AQ is enabled the collected data are stored in {\ttfamily /var/lib/chimeratk/watchdog-\/server/u\+D\+AQ}. In order to change this location put a symbilc link named {\ttfamily u\+D\+AQ} there. If you upgrade the watchdog server the u\+D\+AQ folder will be kept, whereas in case of removing the watchdog server package the folder or symlink {\ttfamily u\+D\+AQ} is removed too.
+
+\subsection*{Watchdog server service}
+
+The watchdog server will be started automatically after the package is installed if systemd is available on the host system. In order to check the watchdog service status use the command\+: \begin{DoxyVerb}sudo systemctl status chimeratk-watchdog.service
+\end{DoxyVerb}
+
+
+Other options are {\ttfamily stop} used to disable the watchdog service or {\ttfamily start} used to enable it again. If the watchdog server dies for some reason it is restarted 1 minute after it exited. Furthermore the watchdog server will be started automatically during booting the system. In some cases, certain processes require other processes to be running before being started. This can be achieved by using the watchdog server variable {\ttfamily Boot\+Delay}, which introduces a delayed process start with respect to the Watchdog server start. The delay time needs to be tuned by the user. One could also consider to test the status of certain processes started by the Watchdog server directly. But the indication ({\ttfamily is\+Running}) given by the Watchdog server does not guarantee that the started service is actuall set up completely. E.\+g. after starting the x2timer it takes some time until its Macropulse number is available to other servers.
+
+\subsubsection*{R\+PC bind}
+
+If some processes started by the watchdog server require {\ttfamily rpcbind} the service file has to adopted in order to start {\ttfamily rpcbind} before the watchdog server. \begin{DoxyVerb}#/etc/chimeratk/watchdog-server/chimeratk-watchdog.service
+[Unit]
+Description=ChimeraTK Watchdog Server
+Wants=rpcbind.service
+After=network.target local-fs.target rpcbind.target
+...
+\end{DoxyVerb}
+
+
+After editing the service file update systemd\+: \begin{DoxyVerb}systemctl daemon-reload
+\end{DoxyVerb}
+
+
+\subsection*{Logging}
+
+The watchdog server logging system uses different severity levels ({\itshape D\+E\+B\+UG}, {\itshape I\+N\+FO}, {\itshape W\+A\+R\+N\+I\+NG}, {\itshape E\+R\+R\+OR}, {\itshape S\+I\+L\+E\+NT}). The default severity level is {\itshape D\+E\+B\+UG}. The severity level can be set for all process and the watchdog itself individually. Furthermore, the output stream of the logging messages can be set for all preccesses and the watchdog itself individually. By default messages are send to stdout and stderr. If a logfile name for the watchdog is set ({\itshape watchdog/\+Set\+Log\+File}), messages are written to the corresponding logfile in addition. All processes and the watchdog write to the same logfile. The tail of this logfile can be inspected using {\itshape watchdog/\+Logfile\+Tail\+External}. The length of the tail is controlled using {\itshape watchdog/\+Set\+Tail\+Lenght}. In contrast to this tail, the variable {\itshape watchdog/\+Log\+Tail} only includes messages by the watchdog process. Similar each process provides his own messages\+: {\itshape process/\+Log\+Tail}. The {\itshape Log\+File\+Tail\+External} variable includes the outpout of the process stared by the watchdog. This requires setting a logfile name for the process to be started ({\itshape process/\+Set\+Logfile\+External}). Again, for each process you can choose the output stream of the output produced by the started process using ({\itshape process/\+Set\+Target\+Stream}) and the severity level ({\itshape process/\+Set\+Log\+Level}).
+
+If the watchdog server is started as a service (see above) the latest messages can be seen when checking its status as described above. More output can be inspected using \begin{DoxyVerb}journalctl -ex
+\end{DoxyVerb}
+
+
+Remember this output could be supressed by choosing the logfile as target output stream and setting a logfile name. In this case nothing will be seen using the {\ttfamily journalctl} command, but all output will end up in the logfile. 

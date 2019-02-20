@@ -1,0 +1,136 @@
+\hypertarget{structNetworkModule}{}\section{Network\+Module Struct Reference}
+\label{structNetworkModule}\index{Network\+Module@{Network\+Module}}
+
+
+Module reading information of a network adapter.  
+
+
+
+
+{\ttfamily \#include $<$System\+Info\+Module.\+h$>$}
+
+
+
+Inheritance diagram for Network\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{structNetworkModule__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Network\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{structNetworkModule__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structNetworkModule_1_1raw}{raw}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Network\+Module} (const std\+::string \&device, Entity\+Owner $\ast$owner, const std\+::string \&name, const std\+::string \&description, bool eliminate\+Hierarchy=false, const std\+::unordered\+\_\+set$<$ std\+::string $>$ \&tags=\{\})\hypertarget{structNetworkModule_a3d47f6f84c9f3a67b2583b2025df5be6}{}\label{structNetworkModule_a3d47f6f84c9f3a67b2583b2025df5be6}
+
+\item 
+void \hyperlink{structNetworkModule_af06fc227b558a13184bd0c3b168d7102}{main\+Loop} () override
+\item 
+void \hyperlink{structNetworkModule_a593e66b34e1f3bdc5180aee6ae5c90b8}{terminate} () override
+\item 
+bool \hyperlink{structNetworkModule_a16f323f8ccfa306d1e0213179b9e0aae}{read} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ctk\+::\+Scalar\+Output$<$ std\+::string $>$ \hyperlink{structNetworkModule_a905ba8feb33486a15d2b79bec4e55b17}{device\+Name}
+\item 
+std\+::vector$<$ ctk\+::\+Scalar\+Output$<$ double $>$ $>$ {\bfseries data}\hypertarget{structNetworkModule_a84df4697c4fcc51dded4e012907ad335}{}\label{structNetworkModule_a84df4697c4fcc51dded4e012907ad335}
+
+\item 
+ctk\+::\+Scalar\+Push\+Input$<$ uint64\+\_\+t $>$ {\bfseries trigger}
+\item 
+const double \hyperlink{structNetworkModule_aa5d927cfc7700ec4c6e50637feaf2635}{MiB} = 1./ 1024/1024\hypertarget{structNetworkModule_aa5d927cfc7700ec4c6e50637feaf2635}{}\label{structNetworkModule_aa5d927cfc7700ec4c6e50637feaf2635}
+
+\begin{DoxyCompactList}\small\item\em Conversion to MiB (not to be mixed up with M\+B!) \end{DoxyCompactList}\item 
+std\+::string \hyperlink{structNetworkModule_a30dba9243a399a5183f836414d012b3f}{tmp}\hypertarget{structNetworkModule_a30dba9243a399a5183f836414d012b3f}{}\label{structNetworkModule_a30dba9243a399a5183f836414d012b3f}
+
+\begin{DoxyCompactList}\small\item\em Temporary store device name. \end{DoxyCompactList}\item 
+\hyperlink{structNetworkModule_1_1raw}{raw} \hyperlink{structNetworkModule_a66af7484e4c3258162a689820f864280}{previous\+Data}\hypertarget{structNetworkModule_a66af7484e4c3258162a689820f864280}{}\label{structNetworkModule_a66af7484e4c3258162a689820f864280}
+
+\begin{DoxyCompactList}\small\item\em Last data collected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Logging}\par
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream $\ast$ {\bfseries logging}\hypertarget{structNetworkModule_a7109968c966a84f59eb93e0922e8f6dc}{}\label{structNetworkModule_a7109968c966a84f59eb93e0922e8f6dc}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Module reading information of a network adapter. 
+
+Parameters that are observed are\+:
+\begin{DoxyItemize}
+\item received data (byte, packates)
+\item transmitted data (byte, packates)
+\item dropped data (transmitted and received)
+\item collisions
+\end{DoxyItemize}
+
+Hard disk devices are mounted at a certain location. The statfs that is used internally to read information needs the mount point and not the device itself. E.\+g. /dev/sdb1 mounted at /media/data -\/$>$ statfs works on /media/data. Therefore the module might be used multiple times for different mount point to be monitored. 
+
+\subsection{Member Function Documentation}
+\index{Network\+Module@{Network\+Module}!main\+Loop@{main\+Loop}}
+\index{main\+Loop@{main\+Loop}!Network\+Module@{Network\+Module}}
+\subsubsection[{\texorpdfstring{main\+Loop() override}{mainLoop() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Network\+Module\+::main\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{structNetworkModule_af06fc227b558a13184bd0c3b168d7102}{}\label{structNetworkModule_af06fc227b558a13184bd0c3b168d7102}
+Main loop function. \index{Network\+Module@{Network\+Module}!read@{read}}
+\index{read@{read}!Network\+Module@{Network\+Module}}
+\subsubsection[{\texorpdfstring{read()}{read()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Network\+Module\+::read (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structNetworkModule_a16f323f8ccfa306d1e0213179b9e0aae}{}\label{structNetworkModule_a16f323f8ccfa306d1e0213179b9e0aae}
+Use statfs to read information about the device. Since this might not be thread safe a mutex is used here. \index{Network\+Module@{Network\+Module}!terminate@{terminate}}
+\index{terminate@{terminate}!Network\+Module@{Network\+Module}}
+\subsubsection[{\texorpdfstring{terminate() override}{terminate() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Network\+Module\+::terminate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{structNetworkModule_a593e66b34e1f3bdc5180aee6ae5c90b8}{}\label{structNetworkModule_a593e66b34e1f3bdc5180aee6ae5c90b8}
+Clean up ostream pointer and terminate the application module. 
+
+\subsection{Member Data Documentation}
+\index{Network\+Module@{Network\+Module}!device\+Name@{device\+Name}}
+\index{device\+Name@{device\+Name}!Network\+Module@{Network\+Module}}
+\subsubsection[{\texorpdfstring{device\+Name}{deviceName}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$std\+::string$>$ Network\+Module\+::device\+Name}\hypertarget{structNetworkModule_a905ba8feb33486a15d2b79bec4e55b17}{}\label{structNetworkModule_a905ba8feb33486a15d2b79bec4e55b17}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"device"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Name of the device"},
+        \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"SYS"}\} \}
+\end{DoxyCode}
+Publish the device name although it is also encoded in the path by the watchdog sever. \index{Network\+Module@{Network\+Module}!trigger@{trigger}}
+\index{trigger@{trigger}!Network\+Module@{Network\+Module}}
+\subsubsection[{\texorpdfstring{trigger}{trigger}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Push\+Input$<$uint64\+\_\+t$>$ Network\+Module\+::trigger}\hypertarget{structNetworkModule_a5c3c5089f7ac5af3af0011ad991ce754}{}\label{structNetworkModule_a5c3c5089f7ac5af3af0011ad991ce754}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"trigger"}, \textcolor{stringliteral}{""},
+      \textcolor{stringliteral}{"Trigger used to update the watchdog"} \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/System\+Info\+Module.\+h\item 
+src/System\+Info\+Module.\+cc\end{DoxyCompactItemize}

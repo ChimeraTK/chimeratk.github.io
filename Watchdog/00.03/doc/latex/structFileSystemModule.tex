@@ -1,0 +1,189 @@
+\hypertarget{structFileSystemModule}{}\section{File\+System\+Module Struct Reference}
+\label{structFileSystemModule}\index{File\+System\+Module@{File\+System\+Module}}
+
+
+Module reading file system information (size, available space)  
+
+
+
+
+{\ttfamily \#include $<$System\+Info\+Module.\+h$>$}
+
+
+
+Inheritance diagram for File\+System\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{structFileSystemModule__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for File\+System\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{structFileSystemModule__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structFileSystemModule_a84beb329e447f005f96332e366ce4658}{File\+System\+Module} (const std\+::string \&dev\+Name, const std\+::string \&mnt\+Point, Entity\+Owner $\ast$owner, const std\+::string \&name, const std\+::string \&description, bool eliminate\+Hierarchy=false, const std\+::unordered\+\_\+set$<$ std\+::string $>$ \&tags=\{\})
+\item 
+void \hyperlink{structFileSystemModule_a4199e1dd422368b3e3700d500f53666b}{main\+Loop} () override
+\item 
+void \hyperlink{structFileSystemModule_afb17665a1cecdec043f09e9ead389dd0}{terminate} () override
+\item 
+bool \hyperlink{structFileSystemModule_a67434494675af85aa26dee1671de0dd5}{read} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ctk\+::\+Scalar\+Output$<$ std\+::string $>$ \hyperlink{structFileSystemModule_a1f0d9c5b8ee4bf06a7ea0d5cb0205eeb}{device\+Name}
+\item 
+ctk\+::\+Scalar\+Output$<$ std\+::string $>$ {\bfseries mount\+Point}
+\item 
+ctk\+::\+Scalar\+Output$<$ double $>$ {\bfseries disk\+\_\+size}
+\item 
+ctk\+::\+Scalar\+Output$<$ double $>$ {\bfseries disk\+\_\+free}
+\item 
+ctk\+::\+Scalar\+Output$<$ double $>$ {\bfseries disk\+\_\+user}
+\item 
+ctk\+::\+Scalar\+Output$<$ double $>$ {\bfseries disk\+\_\+usage}
+\item 
+ctk\+::\+Scalar\+Push\+Input$<$ uint64\+\_\+t $>$ {\bfseries trigger}
+\item 
+const double \hyperlink{structFileSystemModule_ae1467aa618390c54862d14806571f6d7}{GiB} = 1./ 1024/1024/1024\hypertarget{structFileSystemModule_ae1467aa618390c54862d14806571f6d7}{}\label{structFileSystemModule_ae1467aa618390c54862d14806571f6d7}
+
+\begin{DoxyCompactList}\small\item\em Conversion to GiB (not to be mixed up with G\+B!) \end{DoxyCompactList}\item 
+std\+::string \hyperlink{structFileSystemModule_aa603ec6c7cf976b9fffcc632d6325f2e}{tmp} \mbox{[}2\mbox{]}\hypertarget{structFileSystemModule_aa603ec6c7cf976b9fffcc632d6325f2e}{}\label{structFileSystemModule_aa603ec6c7cf976b9fffcc632d6325f2e}
+
+\begin{DoxyCompactList}\small\item\em Temporary store device name and mount point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Logging}\par
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream $\ast$ {\bfseries logging}\hypertarget{structFileSystemModule_a7c65b6ac38ea9847ebc98e679b835cdb}{}\label{structFileSystemModule_a7c65b6ac38ea9847ebc98e679b835cdb}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Module reading file system information (size, available space) 
+
+Hard disk devices are mounted at a certain location. The statfs that is used internally to read information needs the mount point and not the device itself. E.\+g. /dev/sdb1 mounted at /media/data -\/$>$ statfs works on /media/data. Therefore the module might be used multiple times for different mount point to be monitored. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{File\+System\+Module@{File\+System\+Module}!File\+System\+Module@{File\+System\+Module}}
+\index{File\+System\+Module@{File\+System\+Module}!File\+System\+Module@{File\+System\+Module}}
+\subsubsection[{\texorpdfstring{File\+System\+Module(const std\+::string \&dev\+Name, const std\+::string \&mnt\+Point, Entity\+Owner $\ast$owner, const std\+::string \&name, const std\+::string \&description, bool eliminate\+Hierarchy=false, const std\+::unordered\+\_\+set$<$ std\+::string $>$ \&tags=\lcurly{}\rcurly{})}{FileSystemModule(const std::string &devName, const std::string &mntPoint, EntityOwner *owner, const std::string &name, const std::string &description, bool eliminateHierarchy=false, const std::unordered_set< std::string > &tags=\{\})}}]{\setlength{\rightskip}{0pt plus 5cm}File\+System\+Module\+::\+File\+System\+Module (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{dev\+Name, }
+\item[{const std\+::string \&}]{mnt\+Point, }
+\item[{Entity\+Owner $\ast$}]{owner, }
+\item[{const std\+::string \&}]{name, }
+\item[{const std\+::string \&}]{description, }
+\item[{bool}]{eliminate\+Hierarchy = {\ttfamily false}, }
+\item[{const std\+::unordered\+\_\+set$<$ std\+::string $>$ \&}]{tags = {\ttfamily \{~\}}}
+\end{DoxyParamCaption}
+)}\hypertarget{structFileSystemModule_a84beb329e447f005f96332e366ce4658}{}\label{structFileSystemModule_a84beb329e447f005f96332e366ce4658}
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Name} & The name of the device (e.\+g. /dev/sdb1 -\/$>$ sdb1) \\
+\hline
+{\em mnt\+Point} & The mount point of the device (e.\+g. / for the root directory) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{File\+System\+Module@{File\+System\+Module}!main\+Loop@{main\+Loop}}
+\index{main\+Loop@{main\+Loop}!File\+System\+Module@{File\+System\+Module}}
+\subsubsection[{\texorpdfstring{main\+Loop() override}{mainLoop() override}}]{\setlength{\rightskip}{0pt plus 5cm}void File\+System\+Module\+::main\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{structFileSystemModule_a4199e1dd422368b3e3700d500f53666b}{}\label{structFileSystemModule_a4199e1dd422368b3e3700d500f53666b}
+Main loop function. \index{File\+System\+Module@{File\+System\+Module}!read@{read}}
+\index{read@{read}!File\+System\+Module@{File\+System\+Module}}
+\subsubsection[{\texorpdfstring{read()}{read()}}]{\setlength{\rightskip}{0pt plus 5cm}bool File\+System\+Module\+::read (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structFileSystemModule_a67434494675af85aa26dee1671de0dd5}{}\label{structFileSystemModule_a67434494675af85aa26dee1671de0dd5}
+Use statfs to read information about the device. Since this might not be thread safe a mutex is used here. \index{File\+System\+Module@{File\+System\+Module}!terminate@{terminate}}
+\index{terminate@{terminate}!File\+System\+Module@{File\+System\+Module}}
+\subsubsection[{\texorpdfstring{terminate() override}{terminate() override}}]{\setlength{\rightskip}{0pt plus 5cm}void File\+System\+Module\+::terminate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{structFileSystemModule_afb17665a1cecdec043f09e9ead389dd0}{}\label{structFileSystemModule_afb17665a1cecdec043f09e9ead389dd0}
+Clean up ostream pointer and terminate the application module. 
+
+\subsection{Member Data Documentation}
+\index{File\+System\+Module@{File\+System\+Module}!device\+Name@{device\+Name}}
+\index{device\+Name@{device\+Name}!File\+System\+Module@{File\+System\+Module}}
+\subsubsection[{\texorpdfstring{device\+Name}{deviceName}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$std\+::string$>$ File\+System\+Module\+::device\+Name}\hypertarget{structFileSystemModule_a1f0d9c5b8ee4bf06a7ea0d5cb0205eeb}{}\label{structFileSystemModule_a1f0d9c5b8ee4bf06a7ea0d5cb0205eeb}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"deviceName"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Name of the device"},
+        \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"SYS"}\} \}
+\end{DoxyCode}
+Publish the device name although it is also encoded in the path by the watchdog sever. \index{File\+System\+Module@{File\+System\+Module}!disk\+\_\+free@{disk\+\_\+free}}
+\index{disk\+\_\+free@{disk\+\_\+free}!File\+System\+Module@{File\+System\+Module}}
+\subsubsection[{\texorpdfstring{disk\+\_\+free}{disk_free}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$double$>$ File\+System\+Module\+::disk\+\_\+free}\hypertarget{structFileSystemModule_a11fea9c13f63fd00198a5c5ed4ca5f14}{}\label{structFileSystemModule_a11fea9c13f63fd00198a5c5ed4ca5f14}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"free"}, \textcolor{stringliteral}{"GiB"}, \textcolor{stringliteral}{"Free disk space"},
+          \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"SYS"}, \textcolor{stringliteral}{"DAQ"}\} \}
+\end{DoxyCode}
+\index{File\+System\+Module@{File\+System\+Module}!disk\+\_\+size@{disk\+\_\+size}}
+\index{disk\+\_\+size@{disk\+\_\+size}!File\+System\+Module@{File\+System\+Module}}
+\subsubsection[{\texorpdfstring{disk\+\_\+size}{disk_size}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$double$>$ File\+System\+Module\+::disk\+\_\+size}\hypertarget{structFileSystemModule_a443509c7c9ba7a586811190747e5cf3a}{}\label{structFileSystemModule_a443509c7c9ba7a586811190747e5cf3a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"size"}, \textcolor{stringliteral}{"GiB"}, \textcolor{stringliteral}{"Mount point of the device"},
+          \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"SYS"}, \textcolor{stringliteral}{"DAQ"}\} \}
+\end{DoxyCode}
+\index{File\+System\+Module@{File\+System\+Module}!disk\+\_\+usage@{disk\+\_\+usage}}
+\index{disk\+\_\+usage@{disk\+\_\+usage}!File\+System\+Module@{File\+System\+Module}}
+\subsubsection[{\texorpdfstring{disk\+\_\+usage}{disk_usage}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$double$>$ File\+System\+Module\+::disk\+\_\+usage}\hypertarget{structFileSystemModule_a33c8df32520d20ea9668c58b91eda65e}{}\label{structFileSystemModule_a33c8df32520d20ea9668c58b91eda65e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"usage"}, \textcolor{stringliteral}{"%"}, \textcolor{stringliteral}{"Disk usage with respect to the space available to the user"},
+          \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"SYS"}, \textcolor{stringliteral}{"DAQ"}\} \}
+\end{DoxyCode}
+\index{File\+System\+Module@{File\+System\+Module}!disk\+\_\+user@{disk\+\_\+user}}
+\index{disk\+\_\+user@{disk\+\_\+user}!File\+System\+Module@{File\+System\+Module}}
+\subsubsection[{\texorpdfstring{disk\+\_\+user}{disk_user}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$double$>$ File\+System\+Module\+::disk\+\_\+user}\hypertarget{structFileSystemModule_a2edd60dda527de22832ccb49d210e6df}{}\label{structFileSystemModule_a2edd60dda527de22832ccb49d210e6df}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"freeUser"}, \textcolor{stringliteral}{"GiB"}, \textcolor{stringliteral}{"Free disk space available for the user"},
+          \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"SYS"}, \textcolor{stringliteral}{"DAQ"}\} \}
+\end{DoxyCode}
+\index{File\+System\+Module@{File\+System\+Module}!mount\+Point@{mount\+Point}}
+\index{mount\+Point@{mount\+Point}!File\+System\+Module@{File\+System\+Module}}
+\subsubsection[{\texorpdfstring{mount\+Point}{mountPoint}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$std\+::string$>$ File\+System\+Module\+::mount\+Point}\hypertarget{structFileSystemModule_a545e53dc460a9bc47d589769b76c452d}{}\label{structFileSystemModule_a545e53dc460a9bc47d589769b76c452d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"mountPoint"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Mount point of the device"},
+          \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"SYS"}\} \}
+\end{DoxyCode}
+\index{File\+System\+Module@{File\+System\+Module}!trigger@{trigger}}
+\index{trigger@{trigger}!File\+System\+Module@{File\+System\+Module}}
+\subsubsection[{\texorpdfstring{trigger}{trigger}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Push\+Input$<$uint64\+\_\+t$>$ File\+System\+Module\+::trigger}\hypertarget{structFileSystemModule_a9aa6745dca44753b6b41bdacfbad39b6}{}\label{structFileSystemModule_a9aa6745dca44753b6b41bdacfbad39b6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"trigger"}, \textcolor{stringliteral}{""},
+      \textcolor{stringliteral}{"Trigger used to update the watchdog"} \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/System\+Info\+Module.\+h\item 
+src/System\+Info\+Module.\+cc\end{DoxyCompactItemize}

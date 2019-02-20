@@ -1,0 +1,311 @@
+\hypertarget{structProcessControlModule}{}\section{Process\+Control\+Module Struct Reference}
+\label{structProcessControlModule}\index{Process\+Control\+Module@{Process\+Control\+Module}}
+
+
+This module is used to start and stop subprocess controlled by the watchdog.  
+
+
+
+
+{\ttfamily \#include $<$Process\+Module.\+h$>$}
+
+
+
+Inheritance diagram for Process\+Control\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{structProcessControlModule__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Process\+Control\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{structProcessControlModule__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries terminate} () override\hypertarget{structProcessControlModule_aa99b03cec10164e4206cc1fe16ac125f}{}\label{structProcessControlModule_aa99b03cec10164e4206cc1fe16ac125f}
+
+\item 
+void \hyperlink{structProcessControlModule_a024e9400a25c321f0adec1b56f1ec4b9}{Set\+Online} (const int \&pid)
+\item 
+void \hyperlink{structProcessControlModule_ac3e106db5a3547a55389ddc35e7df675}{Set\+Offline} ()
+\item 
+void \hyperlink{structProcessControlModule_a386c9f77a4da6cd95b5ffb0007f3c27d}{Failed} ()
+\item 
+void \hyperlink{structProcessControlModule_a4df7e3fdb51ab49df9867ac9b8a7d29b}{Check\+Is\+Online} (const int pid)
+\item 
+void \hyperlink{structProcessControlModule_ad6b88baf5da957ca448220eab1b29f5c}{reset\+Process\+Handler} (std\+::stringstream $\ast$handler\+Message)
+\item 
+void \hyperlink{structProcessControlModule_ac3024292ea7763b6bc2b15a710f0f5ed}{main\+Loop} () override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{structProcessHandler}{Process\+Handler} $>$ \hyperlink{structProcessControlModule_aba3b3b45eaab1c831c9359d0db4f585e}{process}\hypertarget{structProcessControlModule_aba3b3b45eaab1c831c9359d0db4f585e}{}\label{structProcessControlModule_aba3b3b45eaab1c831c9359d0db4f585e}
+
+\begin{DoxyCompactList}\small\item\em The process handler used to get information about the subprocess. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Process control parameter (static during process execution)}\par
+\begin{DoxyCompactItemize}
+\item 
+ctk\+::\+Scalar\+Output$<$ std\+::string $>$ \hyperlink{structProcessControlModule_a3910651f5e7ce2762a183b5917e0c1a2}{process\+Path}
+\item 
+ctk\+::\+Scalar\+Output$<$ std\+::string $>$ \hyperlink{structProcessControlModule_a6e686bbcec279a721b28814b645db76a}{process\+C\+MD}
+\item 
+ctk\+::\+Scalar\+Output$<$ std\+::string $>$ \hyperlink{structProcessControlModule_a6e9d90425d057f951f0b5c7a159bde30}{process\+E\+NV}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Process control parameter (dynamic process execution)}\par
+\begin{DoxyCompactItemize}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ std\+::string $>$ \hyperlink{structProcessControlModule_a2f3edf4b64217d9242034e876b74271e}{process\+Set\+Path}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ std\+::string $>$ \hyperlink{structProcessControlModule_a0f8c1a2b80ca32287fa60af12da681f7}{process\+Set\+C\+MD}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ std\+::string $>$ \hyperlink{structProcessControlModule_a95ed5208eb6265f71be5c96fa9b1bfd6}{process\+Set\+E\+NV}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ int $>$ {\bfseries process\+Overwrite\+E\+NV}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ uint $>$ {\bfseries process\+Max\+Fails}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ uint $>$ {\bfseries process\+Max\+Restarts}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ uint $>$ \hyperlink{structProcessControlModule_a0e5511753b568a4fde7d00caa1575299}{enable\+Process}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ uint $>$ \hyperlink{structProcessControlModule_a47ea8ec5bf7aa3914bb61f12c6aefe59}{kill\+Sig}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ uint $>$ \hyperlink{structProcessControlModule_a9a3ef4d12ac2b4794154ed091b655796}{pid\+Offset}
+\item 
+ctk\+::\+Scalar\+Output$<$ uint $>$ \hyperlink{structProcessControlModule_a63ba3083112290dc80113c7d0c29f6f9}{process\+Is\+Running}
+\item 
+ctk\+::\+Scalar\+Output$<$ uint $>$ \hyperlink{structProcessControlModule_a14a9aee3312baf85c8999c778b169039}{process\+N\+Failed}
+\item 
+ctk\+::\+Scalar\+Output$<$ uint $>$ \hyperlink{structProcessControlModule_ad5ec578c8e25d6117e9c45de024319bc}{process\+N\+Childs}
+\item 
+ctk\+::\+Scalar\+Output$<$ uint $>$ \hyperlink{structProcessControlModule_a52d785e727ec341c125e18c433f9fbe0}{process\+Restarts}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ uint $>$ {\bfseries boot\+Delay}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+This module is used to start and stop subprocess controlled by the watchdog. 
+
+\subsection{Member Function Documentation}
+\index{Process\+Control\+Module@{Process\+Control\+Module}!Check\+Is\+Online@{Check\+Is\+Online}}
+\index{Check\+Is\+Online@{Check\+Is\+Online}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{Check\+Is\+Online(const int pid)}{CheckIsOnline(const int pid)}}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Control\+Module\+::\+Check\+Is\+Online (
+\begin{DoxyParamCaption}
+\item[{const int}]{pid}
+\end{DoxyParamCaption}
+)}\hypertarget{structProcessControlModule_a4df7e3fdb51ab49df9867ac9b8a7d29b}{}\label{structProcessControlModule_a4df7e3fdb51ab49df9867ac9b8a7d29b}
+Check if the process with P\+ID is running. If not update status variables (process\+P\+ID, process\+Is\+Running, process\+Restarts) 
+\begin{DoxyParams}{Parameters}
+{\em pid} & P\+ID of the process that was started. \+: If using a const reference here, starting a process always results in a positive result here. Even if starting the process failed. See test\+\_\+process\+Module.\+cc/test\+Failed, which can not even reproduce this behavior, but shows what to test witch a real server. \\
+\hline
+\end{DoxyParams}
+\index{Process\+Control\+Module@{Process\+Control\+Module}!Failed@{Failed}}
+\index{Failed@{Failed}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{Failed()}{Failed()}}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Control\+Module\+::\+Failed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structProcessControlModule_a386c9f77a4da6cd95b5ffb0007f3c27d}{}\label{structProcessControlModule_a386c9f77a4da6cd95b5ffb0007f3c27d}
+Calls Set\+Offset and increases the failed counter. In addition a sleep of 1s is added to have some delay between different attempts to start a process. \index{Process\+Control\+Module@{Process\+Control\+Module}!main\+Loop@{main\+Loop}}
+\index{main\+Loop@{main\+Loop}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{main\+Loop() override}{mainLoop() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Control\+Module\+::main\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{structProcessControlModule_ac3024292ea7763b6bc2b15a710f0f5ed}{}\label{structProcessControlModule_ac3024292ea7763b6bc2b15a710f0f5ed}
+Application core main loop. Check if restart is required
+
+If starting a process fails and max restarts is 0 stop.
+
+Check number of restarts in case it is set\index{Process\+Control\+Module@{Process\+Control\+Module}!reset\+Process\+Handler@{reset\+Process\+Handler}}
+\index{reset\+Process\+Handler@{reset\+Process\+Handler}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{reset\+Process\+Handler(std\+::stringstream $\ast$handler\+Message)}{resetProcessHandler(std::stringstream *handlerMessage)}}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Control\+Module\+::reset\+Process\+Handler (
+\begin{DoxyParamCaption}
+\item[{std\+::stringstream $\ast$}]{handler\+Message}
+\end{DoxyParamCaption}
+)}\hypertarget{structProcessControlModule_ad6b88baf5da957ca448220eab1b29f5c}{}\label{structProcessControlModule_ad6b88baf5da957ca448220eab1b29f5c}
+Set kill signal according to user setting set in kill\+Sig. After reset the \hyperlink{structProcessHandler}{Process\+Handler}. \index{Process\+Control\+Module@{Process\+Control\+Module}!Set\+Offline@{Set\+Offline}}
+\index{Set\+Offline@{Set\+Offline}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{Set\+Offline()}{SetOffline()}}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Control\+Module\+::\+Set\+Offline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structProcessControlModule_ac3e106db5a3547a55389ddc35e7df675}{}\label{structProcessControlModule_ac3e106db5a3547a55389ddc35e7df675}
+Reset the P\+ID to -\/1 and the status to not running. \index{Process\+Control\+Module@{Process\+Control\+Module}!Set\+Online@{Set\+Online}}
+\index{Set\+Online@{Set\+Online}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{Set\+Online(const int \&pid)}{SetOnline(const int &pid)}}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Control\+Module\+::\+Set\+Online (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{pid}
+\end{DoxyParamCaption}
+)}\hypertarget{structProcessControlModule_a024e9400a25c321f0adec1b56f1ec4b9}{}\label{structProcessControlModule_a024e9400a25c321f0adec1b56f1ec4b9}
+Set the P\+ID and set status to running. 
+\begin{DoxyParams}{Parameters}
+{\em pid} & P\+ID of the process that was started. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Process\+Control\+Module@{Process\+Control\+Module}!boot\+Delay@{boot\+Delay}}
+\index{boot\+Delay@{boot\+Delay}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{boot\+Delay}{bootDelay}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$uint$>$ Process\+Control\+Module\+::boot\+Delay}\hypertarget{structProcessControlModule_adfb53be3e67f6b926470d998a073efed}{}\label{structProcessControlModule_adfb53be3e67f6b926470d998a073efed}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"BootDelay"}, \textcolor{stringliteral}{"s"}, \textcolor{stringliteral}{"This delay is used at server start. Use this to delay the process start with"}
+      \textcolor{stringliteral}{"respect to other processes."},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName(), \textcolor{stringliteral}{"DAQ"}\} \}
+\end{DoxyCode}
+\index{Process\+Control\+Module@{Process\+Control\+Module}!enable\+Process@{enable\+Process}}
+\index{enable\+Process@{enable\+Process}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{enable\+Process}{enableProcess}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$uint$>$ Process\+Control\+Module\+::enable\+Process}\hypertarget{structProcessControlModule_a0e5511753b568a4fde7d00caa1575299}{}\label{structProcessControlModule_a0e5511753b568a4fde7d00caa1575299}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"startProcess"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Start the process"},
+    \{ \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+Start the process \index{Process\+Control\+Module@{Process\+Control\+Module}!kill\+Sig@{kill\+Sig}}
+\index{kill\+Sig@{kill\+Sig}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{kill\+Sig}{killSig}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$uint$>$ Process\+Control\+Module\+::kill\+Sig}\hypertarget{structProcessControlModule_a47ea8ec5bf7aa3914bb61f12c6aefe59}{}\label{structProcessControlModule_a47ea8ec5bf7aa3914bb61f12c6aefe59}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"killSig"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Signal used to kill the process (2: SIGINT, 9: SIGKILL)"},
+    \{ \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+Signal used to kill the process (2\+: S\+I\+G\+I\+NT, 9\+: S\+I\+G\+K\+I\+LL) \index{Process\+Control\+Module@{Process\+Control\+Module}!pid\+Offset@{pid\+Offset}}
+\index{pid\+Offset@{pid\+Offset}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{pid\+Offset}{pidOffset}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$uint$>$ Process\+Control\+Module\+::pid\+Offset}\hypertarget{structProcessControlModule_a9a3ef4d12ac2b4794154ed091b655796}{}\label{structProcessControlModule_a9a3ef4d12ac2b4794154ed091b655796}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"pidOffset"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"PID offset used when monitoring the started process"},
+    \{ \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+P\+ID offset used when monitoring the started process \index{Process\+Control\+Module@{Process\+Control\+Module}!process\+C\+MD@{process\+C\+MD}}
+\index{process\+C\+MD@{process\+C\+MD}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{process\+C\+MD}{processCMD}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$std\+::string$>$ Process\+Control\+Module\+::process\+C\+MD}\hypertarget{structProcessControlModule_a6e686bbcec279a721b28814b645db76a}{}\label{structProcessControlModule_a6e686bbcec279a721b28814b645db76a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"CMD"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Command used to start the process"},
+    \{  \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+Command used to start the process \index{Process\+Control\+Module@{Process\+Control\+Module}!process\+E\+NV@{process\+E\+NV}}
+\index{process\+E\+NV@{process\+E\+NV}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{process\+E\+NV}{processENV}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$std\+::string$>$ Process\+Control\+Module\+::process\+E\+NV}\hypertarget{structProcessControlModule_a6e9d90425d057f951f0b5c7a159bde30}{}\label{structProcessControlModule_a6e9d90425d057f951f0b5c7a159bde30}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"ENV"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Environment variables of the process"},
+    \{  \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+Environment variable set for the process \index{Process\+Control\+Module@{Process\+Control\+Module}!process\+Is\+Running@{process\+Is\+Running}}
+\index{process\+Is\+Running@{process\+Is\+Running}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{process\+Is\+Running}{processIsRunning}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$uint$>$ Process\+Control\+Module\+::process\+Is\+Running}\hypertarget{structProcessControlModule_a63ba3083112290dc80113c7d0c29f6f9}{}\label{structProcessControlModule_a63ba3083112290dc80113c7d0c29f6f9}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"IsRunning"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Process status 0: not running, 1: running"},
+      \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName(), \textcolor{stringliteral}{"DAQ"} \} \}
+\end{DoxyCode}
+Process status 0\+: not running, 1\+: running \index{Process\+Control\+Module@{Process\+Control\+Module}!process\+Max\+Fails@{process\+Max\+Fails}}
+\index{process\+Max\+Fails@{process\+Max\+Fails}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{process\+Max\+Fails}{processMaxFails}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$uint$>$ Process\+Control\+Module\+::process\+Max\+Fails}\hypertarget{structProcessControlModule_ad43eac1310031b1680275eaee2630378}{}\label{structProcessControlModule_ad43eac1310031b1680275eaee2630378}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"MaxFails"}, \textcolor{stringliteral}{""},
+    \textcolor{stringliteral}{"Set the maximum number of allowed fails."},
+    \{ \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+\index{Process\+Control\+Module@{Process\+Control\+Module}!process\+Max\+Restarts@{process\+Max\+Restarts}}
+\index{process\+Max\+Restarts@{process\+Max\+Restarts}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{process\+Max\+Restarts}{processMaxRestarts}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$uint$>$ Process\+Control\+Module\+::process\+Max\+Restarts}\hypertarget{structProcessControlModule_adc91d2e850a68ec74402d962e4305c4b}{}\label{structProcessControlModule_adc91d2e850a68ec74402d962e4305c4b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"MaxRestarts"}, \textcolor{stringliteral}{""},
+    \textcolor{stringliteral}{"Set the maximum number of allowed restarts."},
+    \{ \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+\index{Process\+Control\+Module@{Process\+Control\+Module}!process\+N\+Childs@{process\+N\+Childs}}
+\index{process\+N\+Childs@{process\+N\+Childs}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{process\+N\+Childs}{processNChilds}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$uint$>$ Process\+Control\+Module\+::process\+N\+Childs}\hypertarget{structProcessControlModule_ad5ec578c8e25d6117e9c45de024319bc}{}\label{structProcessControlModule_ad5ec578c8e25d6117e9c45de024319bc}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"nChilds"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Number of started processes"},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName(), \textcolor{stringliteral}{"DAQ"} \} \}
+\end{DoxyCode}
+Number of started processes \index{Process\+Control\+Module@{Process\+Control\+Module}!process\+N\+Failed@{process\+N\+Failed}}
+\index{process\+N\+Failed@{process\+N\+Failed}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{process\+N\+Failed}{processNFailed}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$uint$>$ Process\+Control\+Module\+::process\+N\+Failed}\hypertarget{structProcessControlModule_a14a9aee3312baf85c8999c778b169039}{}\label{structProcessControlModule_a14a9aee3312baf85c8999c778b169039}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"Failed"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Number of failed starts/restarts"},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName(), \textcolor{stringliteral}{"DAQ"} \} \}
+\end{DoxyCode}
+Number of failed restarts \index{Process\+Control\+Module@{Process\+Control\+Module}!process\+Overwrite\+E\+NV@{process\+Overwrite\+E\+NV}}
+\index{process\+Overwrite\+E\+NV@{process\+Overwrite\+E\+NV}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{process\+Overwrite\+E\+NV}{processOverwriteENV}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$int$>$ Process\+Control\+Module\+::process\+Overwrite\+E\+NV}\hypertarget{structProcessControlModule_ac858a14ada8c35c55e01258122eb20b8}{}\label{structProcessControlModule_ac858a14ada8c35c55e01258122eb20b8}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"OverwriteEnvironment"}, \textcolor{stringliteral}{""},
+    \textcolor{stringliteral}{"If true the environmet variables are overwritten. Else they are extended."},
+    \{ \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+\index{Process\+Control\+Module@{Process\+Control\+Module}!process\+Path@{process\+Path}}
+\index{process\+Path@{process\+Path}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{process\+Path}{processPath}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$std\+::string$>$ Process\+Control\+Module\+::process\+Path}\hypertarget{structProcessControlModule_a3910651f5e7ce2762a183b5917e0c1a2}{}\label{structProcessControlModule_a3910651f5e7ce2762a183b5917e0c1a2}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"Path"}, \textcolor{stringliteral}{""},
+      \textcolor{stringliteral}{"Path where to execute the command used to start the process"},
+    \{  \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+Path where to execute the command used to start the process \index{Process\+Control\+Module@{Process\+Control\+Module}!process\+Restarts@{process\+Restarts}}
+\index{process\+Restarts@{process\+Restarts}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{process\+Restarts}{processRestarts}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$uint$>$ Process\+Control\+Module\+::process\+Restarts}\hypertarget{structProcessControlModule_a52d785e727ec341c125e18c433f9fbe0}{}\label{structProcessControlModule_a52d785e727ec341c125e18c433f9fbe0}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"Restarts"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Number of time the process was automatically "}
+          \textcolor{stringliteral}{"restarted by the watchdog since server start."},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName(), \textcolor{stringliteral}{"DAQ"} \} \}
+\end{DoxyCode}
+Number of time the process was automatically \index{Process\+Control\+Module@{Process\+Control\+Module}!process\+Set\+C\+MD@{process\+Set\+C\+MD}}
+\index{process\+Set\+C\+MD@{process\+Set\+C\+MD}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{process\+Set\+C\+MD}{processSetCMD}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$std\+::string$>$ Process\+Control\+Module\+::process\+Set\+C\+MD}\hypertarget{structProcessControlModule_a0f8c1a2b80ca32287fa60af12da681f7}{}\label{structProcessControlModule_a0f8c1a2b80ca32287fa60af12da681f7}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"SetCMD"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Set the command used to start the process"},
+    \{ \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+Command used to start the process \index{Process\+Control\+Module@{Process\+Control\+Module}!process\+Set\+E\+NV@{process\+Set\+E\+NV}}
+\index{process\+Set\+E\+NV@{process\+Set\+E\+NV}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{process\+Set\+E\+NV}{processSetENV}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$std\+::string$>$ Process\+Control\+Module\+::process\+Set\+E\+NV}\hypertarget{structProcessControlModule_a95ed5208eb6265f71be5c96fa9b1bfd6}{}\label{structProcessControlModule_a95ed5208eb6265f71be5c96fa9b1bfd6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"SetEnvironment"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Set environment variables needed by the process"},
+    \{ \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+Command used to start the process \index{Process\+Control\+Module@{Process\+Control\+Module}!process\+Set\+Path@{process\+Set\+Path}}
+\index{process\+Set\+Path@{process\+Set\+Path}!Process\+Control\+Module@{Process\+Control\+Module}}
+\subsubsection[{\texorpdfstring{process\+Set\+Path}{processSetPath}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$std\+::string$>$ Process\+Control\+Module\+::process\+Set\+Path}\hypertarget{structProcessControlModule_a2f3edf4b64217d9242034e876b74271e}{}\label{structProcessControlModule_a2f3edf4b64217d9242034e876b74271e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"SetPath"}, \textcolor{stringliteral}{""},
+      \textcolor{stringliteral}{"Set the path where to execute the command used to start the process"},
+    \{ \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+Path where to execute the command used to start the process 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Process\+Module.\+h\item 
+src/Process\+Module.\+cc\end{DoxyCompactItemize}

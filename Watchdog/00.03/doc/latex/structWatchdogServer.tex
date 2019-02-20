@@ -1,0 +1,103 @@
+\hypertarget{structWatchdogServer}{}\section{Watchdog\+Server Struct Reference}
+\label{structWatchdogServer}\index{Watchdog\+Server@{Watchdog\+Server}}
+
+
+The watchdog application.  
+
+
+
+
+{\ttfamily \#include $<$Watchdog\+Server.\+h$>$}
+
+
+
+Inheritance diagram for Watchdog\+Server\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{structWatchdogServer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Watchdog\+Server\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structWatchdogServer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries define\+Connections} () override\hypertarget{structWatchdogServer_a08c98672aee20a4640a56b3b5ac7cd47}{}\label{structWatchdogServer_a08c98672aee20a4640a56b3b5ac7cd47}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSystemInfoModule}{System\+Info\+Module} {\bfseries system\+Info}
+\item 
+std\+::vector$<$ \hyperlink{structProcessControlModule}{Process\+Control\+Module} $>$ \hyperlink{structWatchdogServer_af21c89fb581f3f8ff9d3cf02509634c1}{processes}
+\item 
+std\+::vector$<$ \hyperlink{structFileSystemModule}{File\+System\+Module} $>$ \hyperlink{structWatchdogServer_a6dea91943e4456bf4ca8f9f4995ec6d2}{fs\+Monitors}
+\item 
+std\+::vector$<$ \hyperlink{structNetworkModule}{Network\+Module} $>$ \hyperlink{structWatchdogServer_a9a96dd4fa6053b7b783e43c5d446d7f0}{network\+Monitors}
+\item 
+\hyperlink{structProcessInfoModule}{Process\+Info\+Module} {\bfseries watchdog} \{this, \char`\"{}watchdog\char`\"{}, \char`\"{}Module monitoring the watchdog process\char`\"{}\}\hypertarget{structWatchdogServer_a5284e735372ca5947a8105ad3167c54a}{}\label{structWatchdogServer_a5284e735372ca5947a8105ad3167c54a}
+
+\item 
+ctk\+::\+Config\+Reader {\bfseries config} \{this, \char`\"{}Configuration\char`\"{}, \char`\"{}Watchdog\+Server\+Config.\+xml\char`\"{}\}\hypertarget{structWatchdogServer_aff0de39ddfc412f63c5ea21dafc89ddd}{}\label{structWatchdogServer_aff0de39ddfc412f63c5ea21dafc89ddd}
+
+\item 
+\hyperlink{structConversionModule}{Conversion\+Module} {\bfseries conversion}\hypertarget{structWatchdogServer_afa7e520c6049b1574c429f776196de6c}{}\label{structWatchdogServer_afa7e520c6049b1574c429f776196de6c}
+
+\item 
+ctk\+::\+Micro\+D\+AQ {\bfseries micro\+D\+AQ}\hypertarget{structWatchdogServer_a886ae70481b26aa4a59915f3c0e28a56}{}\label{structWatchdogServer_a886ae70481b26aa4a59915f3c0e28a56}
+
+\item 
+ctk\+::\+Control\+System\+Module \hyperlink{structWatchdogServer_ac2a80d4a412c142f8d4753b51e12bfa3}{cs}
+\item 
+ctk\+::\+Periodic\+Trigger {\bfseries trigger} \{this, \char`\"{}Trigger\char`\"{}, \char`\"{}Trigger used for other modules\char`\"{}\}\hypertarget{structWatchdogServer_ad28386ab5c73d0f07dbafd7a6a738cfb}{}\label{structWatchdogServer_ad28386ab5c73d0f07dbafd7a6a738cfb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The watchdog application. 
+
+Watchdog\+Server\+Config.\+xml file is used to read process names and micro\+D\+AQ enable/disable is used. 
+
+\subsection{Member Data Documentation}
+\index{Watchdog\+Server@{Watchdog\+Server}!cs@{cs}}
+\index{cs@{cs}!Watchdog\+Server@{Watchdog\+Server}}
+\subsubsection[{\texorpdfstring{cs}{cs}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Control\+System\+Module Watchdog\+Server\+::cs}\hypertarget{structWatchdogServer_ac2a80d4a412c142f8d4753b51e12bfa3}{}\label{structWatchdogServer_ac2a80d4a412c142f8d4753b51e12bfa3}
+Use either
+\begin{DoxyItemize}
+\item ctk\+::\+Control\+System\+Module cs; in combinartion with cs\mbox{[}\char`\"{}\+S\+Y\+S\char`\"{}\mbox{]}(\char`\"{}val\char`\"{}) or
+\item ctk\+::\+Control\+System\+Module cs\{\char`\"{}\+S\+Y\+S\char`\"{}\}; in combination with cs(\char`\"{}val\char`\"{}) In any case S\+YS defines the location in D\+O\+O\+CS. S\+Y\+S/\+T\+E\+ST would create another hierarchy that would result in S\+Y\+S/\+T\+E\+S\+T.\+val in D\+O\+O\+CS. 
+\end{DoxyItemize}\index{Watchdog\+Server@{Watchdog\+Server}!fs\+Monitors@{fs\+Monitors}}
+\index{fs\+Monitors@{fs\+Monitors}!Watchdog\+Server@{Watchdog\+Server}}
+\subsubsection[{\texorpdfstring{fs\+Monitors}{fsMonitors}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf File\+System\+Module}$>$ Watchdog\+Server\+::fs\+Monitors}\hypertarget{structWatchdogServer_a6dea91943e4456bf4ca8f9f4995ec6d2}{}\label{structWatchdogServer_a6dea91943e4456bf4ca8f9f4995ec6d2}
+Modules monitoring disks usage of system drives. \index{Watchdog\+Server@{Watchdog\+Server}!network\+Monitors@{network\+Monitors}}
+\index{network\+Monitors@{network\+Monitors}!Watchdog\+Server@{Watchdog\+Server}}
+\subsubsection[{\texorpdfstring{network\+Monitors}{networkMonitors}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Network\+Module}$>$ Watchdog\+Server\+::network\+Monitors}\hypertarget{structWatchdogServer_a9a96dd4fa6053b7b783e43c5d446d7f0}{}\label{structWatchdogServer_a9a96dd4fa6053b7b783e43c5d446d7f0}
+Modules monitoring disks usage of system drives. \index{Watchdog\+Server@{Watchdog\+Server}!processes@{processes}}
+\index{processes@{processes}!Watchdog\+Server@{Watchdog\+Server}}
+\subsubsection[{\texorpdfstring{processes}{processes}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Process\+Control\+Module}$>$ Watchdog\+Server\+::processes}\hypertarget{structWatchdogServer_af21c89fb581f3f8ff9d3cf02509634c1}{}\label{structWatchdogServer_af21c89fb581f3f8ff9d3cf02509634c1}
+vector storing processes The vector is filled during construction using information from the input xml file called\+: watchdog\+\_\+server\+\_\+processes.\+xml If that file is not found only one process named P\+R\+O\+C\+E\+SS is added. \index{Watchdog\+Server@{Watchdog\+Server}!system\+Info@{system\+Info}}
+\index{system\+Info@{system\+Info}!Watchdog\+Server@{Watchdog\+Server}}
+\subsubsection[{\texorpdfstring{system\+Info}{systemInfo}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf System\+Info\+Module} Watchdog\+Server\+::system\+Info}\hypertarget{structWatchdogServer_a433d3ce980aa862c0cf72ccec69846da}{}\label{structWatchdogServer_a433d3ce980aa862c0cf72ccec69846da}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"SYS"},
+      \textcolor{stringliteral}{"Module reading system information"} \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Watchdog\+Server.\+h\item 
+src/Watchdog\+Server.\+cc\end{DoxyCompactItemize}
