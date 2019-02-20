@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter
-   &#160;<span id="projectnumber">00.09.00</span>
+   &#160;<span id="projectnumber">master</span>
    </div>
   </td>
  </tr>
@@ -115,8 +115,8 @@ Inheritance diagram for ChimeraTK::PropertyAttributes:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab49db9a941911db0a77ac5db09acac3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_property_attributes.html#ab49db9a941911db0a77ac5db09acac3a">PropertyAttributes</a> (bool hasHistory_=true, bool isWriteable_=true)</td></tr>
-<tr class="separator:ab49db9a941911db0a77ac5db09acac3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f3017c5f008b2422ec6b44f99f1fc8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_property_attributes.html#a66f3017c5f008b2422ec6b44f99f1fc8">PropertyAttributes</a> (bool hasHistory_=true, bool isWriteable_=true, bool publishZMQ_=false, std::string macroPulseNumberSource_=&quot;&quot;)</td></tr>
+<tr class="separator:a66f3017c5f008b2422ec6b44f99f1fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b84a7fed47ff628b50ab23695ef21be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_property_attributes.html#a8b84a7fed47ff628b50ab23695ef21be">operator==</a> (<a class="el" href="struct_chimera_t_k_1_1_property_attributes.html">PropertyAttributes</a> const &amp;other) const </td></tr>
 <tr class="separator:a8b84a7fed47ff628b50ab23695ef21be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -126,12 +126,16 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a927a4bb8520eba6fe1a0ea8fb34d899b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebe51d307d0289805ea80e3506e51f22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_property_attributes.html#aebe51d307d0289805ea80e3506e51f22">isWriteable</a></td></tr>
 <tr class="separator:aebe51d307d0289805ea80e3506e51f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e90872d5391a4c6e71efe3b2057f061"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_property_attributes.html#a2e90872d5391a4c6e71efe3b2057f061">publishZMQ</a></td></tr>
+<tr class="separator:a2e90872d5391a4c6e71efe3b2057f061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6430c0e2c3e469ae30fa4670d51792f7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_property_attributes.html#a6430c0e2c3e469ae30fa4670d51792f7">macroPulseNumberSource</a></td></tr>
+<tr class="separator:a6430c0e2c3e469ae30fa4670d51792f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="_property_description_8h_source.html#l00017">17</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab49db9a941911db0a77ac5db09acac3a"></a>
+<a class="anchor" id="a66f3017c5f008b2422ec6b44f99f1fc8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -148,7 +152,19 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isWriteable_</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>isWriteable_</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>publishZMQ_</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>macroPulseNumberSource_</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -163,7 +179,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_property_description_8h_source.html#l00020">20</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p>Definition at line <a class="el" href="_property_description_8h_source.html#l00022">22</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -190,7 +206,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_property_description_8h_source.html#l00022">22</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p>Definition at line <a class="el" href="_property_description_8h_source.html#l00026">26</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -223,13 +239,41 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6430c0e2c3e469ae30fa4670d51792f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ChimeraTK::PropertyAttributes::macroPulseNumberSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_property_description_8h_source.html#l00021">21</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e90872d5391a4c6e71efe3b2057f061"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::PropertyAttributes::publishZMQ</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_property_description_8h_source.html#l00020">20</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/ControlSystemAdapter-DoocsAdapter/include/<a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a></li>
+<li>include/<a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 17 2018 06:53:41 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 20 2019 13:47:07 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

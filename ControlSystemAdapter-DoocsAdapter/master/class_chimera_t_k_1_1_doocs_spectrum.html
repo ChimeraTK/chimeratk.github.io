@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter
-   &#160;<span id="projectnumber">00.09.00</span>
+   &#160;<span id="projectnumber">master</span>
    </div>
   </td>
  </tr>
@@ -112,9 +112,9 @@ Inheritance diagram for ChimeraTK::DoocsSpectrum:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c390ab6aaa3b1fbf1bdc7a850496a25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a8c390ab6aaa3b1fbf1bdc7a850496a25">DoocsSpectrum</a> (EqFct *eqFct, std::string const &amp;doocsPropertyName, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt; &gt; const &amp;processArray, <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;updater, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt; &gt; const &amp;startAccessor, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt; &gt; const &amp;incrementAccessor)</td></tr>
-<tr class="memdesc:a8c390ab6aaa3b1fbf1bdc7a850496a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor expects an NDRegisterAccessor of float, which usually will be a decorator to the implementation type.  <a href="#a8c390ab6aaa3b1fbf1bdc7a850496a25">More...</a><br /></td></tr>
-<tr class="separator:a8c390ab6aaa3b1fbf1bdc7a850496a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fba408e7a8f7eb4e701e2fecaebc957"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a1fba408e7a8f7eb4e701e2fecaebc957">DoocsSpectrum</a> (EqFct *eqFct, std::string const &amp;doocsPropertyName, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt;&gt; const &amp;processArray, <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;updater, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt;&gt; const &amp;startAccessor, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt;&gt; const &amp;incrementAccessor)</td></tr>
+<tr class="memdesc:a1fba408e7a8f7eb4e701e2fecaebc957"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor expects an NDRegisterAccessor of float, which usually will be a decorator to the implementation type.  <a href="#a1fba408e7a8f7eb4e701e2fecaebc957">More...</a><br /></td></tr>
+<tr class="separator:a1fba408e7a8f7eb4e701e2fecaebc957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ed6051d5722b690e217d39073ae24f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a06ed6051d5722b690e217d39073ae24f">set</a> (EqAdr *eqAdr, EqData *data1, EqData *data2, EqFct *eqFct) override</td></tr>
 <tr class="memdesc:a06ed6051d5722b690e217d39073ae24f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload the set function which is called by DOOCS to inject sending to the device.  <a href="#a06ed6051d5722b690e217d39073ae24f">More...</a><br /></td></tr>
 <tr class="separator:a06ed6051d5722b690e217d39073ae24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,6 +125,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae4a4414e0184f318119f6e71af472d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a585c8c2eadfa3fac5ac129ed95e1fe05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a585c8c2eadfa3fac5ac129ed95e1fe05">updateParameters</a> ()</td></tr>
 <tr class="separator:a585c8c2eadfa3fac5ac129ed95e1fe05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addacf7abb78920edcaf91d454da646d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#addacf7abb78920edcaf91d454da646d8">publishZeroMQ</a> ()</td></tr>
+<tr class="separator:addacf7abb78920edcaf91d454da646d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a142e85183fcdca035369a1cb1a91e364"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a142e85183fcdca035369a1cb1a91e364">setMacroPulseNumberSource</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt;&gt; macroPulseNumberSource)</td></tr>
+<tr class="separator:a142e85183fcdca035369a1cb1a91e364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -133,18 +137,22 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ac4d043adc87b6f69d5028543f1ae3726"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#ac4d043adc87b6f69d5028543f1ae3726">_processArray</a></td></tr>
-<tr class="separator:ac4d043adc87b6f69d5028543f1ae3726"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89ed796c218736aae848fe0da50bd4db"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a89ed796c218736aae848fe0da50bd4db">_startAccessor</a></td></tr>
-<tr class="separator:a89ed796c218736aae848fe0da50bd4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b98763ab61f7fd02a211dd40563c399"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a4b98763ab61f7fd02a211dd40563c399">_incrementAccessor</a></td></tr>
-<tr class="separator:a4b98763ab61f7fd02a211dd40563c399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534524b0be3fdafc240d8629371933b3"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a534524b0be3fdafc240d8629371933b3">_processArray</a></td></tr>
+<tr class="separator:a534524b0be3fdafc240d8629371933b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b0ff12ba9b213be7d02ab0964ac635d"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a1b0ff12ba9b213be7d02ab0964ac635d">_startAccessor</a></td></tr>
+<tr class="separator:a1b0ff12ba9b213be7d02ab0964ac635d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a522689bb63253a3315193eac89a6f950"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a522689bb63253a3315193eac89a6f950">_incrementAccessor</a></td></tr>
+<tr class="separator:a522689bb63253a3315193eac89a6f950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e583d4bd5f07dbec9385d70cb404b2"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#af3e583d4bd5f07dbec9385d70cb404b2">_macroPulseNumberSource</a></td></tr>
+<tr class="separator:af3e583d4bd5f07dbec9385d70cb404b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c0e9ccb9a13e93bc3078dcde4e74fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#ad9c0e9ccb9a13e93bc3078dcde4e74fd">publishZMQ</a> {false}</td></tr>
+<tr class="separator:ad9c0e9ccb9a13e93bc3078dcde4e74fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00016">16</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a8c390ab6aaa3b1fbf1bdc7a850496a25"></a>
+<a class="anchor" id="a1fba408e7a8f7eb4e701e2fecaebc957"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -163,7 +171,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt; &gt; const &amp;&#160;</td>
+          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt;&gt; const &amp;&#160;</td>
           <td class="paramname"><em>processArray</em>, </td>
         </tr>
         <tr>
@@ -175,13 +183,13 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt; &gt; const &amp;&#160;</td>
+          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt;&gt; const &amp;&#160;</td>
           <td class="paramname"><em>startAccessor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt; &gt; const &amp;&#160;</td>
+          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt;&gt; const &amp;&#160;</td>
           <td class="paramname"><em>incrementAccessor</em>&#160;</td>
         </tr>
         <tr>
@@ -224,7 +232,32 @@ Protected Attributes</h2></td></tr>
 
 <p>Override the Doocs <a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a838549fdb4e178c0b115b52f16fca2df" title="Override the Doocs auto_init() method, which is called after initialising the value of the property f...">auto_init()</a> method, which is called after initialising the value of the property from the config file. </p>
 
-<p>Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00035">35</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00036">36</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="addacf7abb78920edcaf91d454da646d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::DoocsSpectrum::publishZeroMQ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00046">46</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -249,7 +282,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00083">83</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00084">84</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
 
 </div>
 </div>
@@ -299,7 +332,33 @@ Protected Attributes</h2></td></tr>
 
 <p>Overload the set function which is called by DOOCS to inject sending to the device. </p>
 
-<p>Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00030">30</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00031">31</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a142e85183fcdca035369a1cb1a91e364"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::DoocsSpectrum::setMacroPulseNumberSource </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt;&gt;&#160;</td>
+          <td class="paramname"><em>macroPulseNumberSource</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00048">48</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -316,7 +375,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00043">43</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00044">44</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
 
 </div>
 </div>
@@ -333,12 +392,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00060">60</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00065">65</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a4b98763ab61f7fd02a211dd40563c399"></a>
+<a class="anchor" id="a522689bb63253a3315193eac89a6f950"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -346,7 +405,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt;float&gt; &gt; ChimeraTK::DoocsSpectrum::_incrementAccessor</td>
+          <td class="memname">boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;float&gt; &gt; ChimeraTK::DoocsSpectrum::_incrementAccessor</td>
         </tr>
       </table>
   </td>
@@ -356,11 +415,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00052">52</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00055">55</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac4d043adc87b6f69d5028543f1ae3726"></a>
+<a class="anchor" id="af3e583d4bd5f07dbec9385d70cb404b2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -368,7 +427,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt;float&gt; &gt; ChimeraTK::DoocsSpectrum::_processArray</td>
+          <td class="memname">boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;int64_t&gt; &gt; ChimeraTK::DoocsSpectrum::_macroPulseNumberSource</td>
         </tr>
       </table>
   </td>
@@ -378,11 +437,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00050">50</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00056">56</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a89ed796c218736aae848fe0da50bd4db"></a>
+<a class="anchor" id="a534524b0be3fdafc240d8629371933b3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -390,7 +449,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt;float&gt; &gt; ChimeraTK::DoocsSpectrum::_startAccessor</td>
+          <td class="memname">boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;float&gt; &gt; ChimeraTK::DoocsSpectrum::_processArray</td>
         </tr>
       </table>
   </td>
@@ -400,18 +459,62 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00051">51</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00053">53</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b0ff12ba9b213be7d02ab0964ac635d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;float&gt; &gt; ChimeraTK::DoocsSpectrum::_startAccessor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00054">54</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9c0e9ccb9a13e93bc3078dcde4e74fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::DoocsSpectrum::publishZMQ {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00057">57</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/ControlSystemAdapter-DoocsAdapter/include/<a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a></li>
-<li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/ControlSystemAdapter-DoocsAdapter/src/<a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a></li>
+<li>include/<a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a></li>
+<li>src/<a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 17 2018 06:53:41 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 20 2019 13:47:07 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

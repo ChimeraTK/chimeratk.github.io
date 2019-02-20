@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['update',['update',['../class_chimera_t_k_1_1_doocs_updater.html#a47e2fd420a881a64e0ab38d4b4bba5aa',1,'ChimeraTK::DoocsUpdater']]],
-  ['updatedoocsbuffer',['updateDoocsBuffer',['../class_chimera_t_k_1_1_doocs_process_array.html#a117cf7e3223eeeb7060ac0660ca26b5b',1,'ChimeraTK::DoocsProcessArray::updateDoocsBuffer()'],['../class_chimera_t_k_1_1_doocs_process_scalar.html#afc25bdb4c90a21d7b010667858d72eaa',1,'ChimeraTK::DoocsProcessScalar::updateDoocsBuffer()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#ae4a4414e0184f318119f6e71af472d6f',1,'ChimeraTK::DoocsSpectrum::updateDoocsBuffer()']]],
-  ['updateloop',['updateLoop',['../class_chimera_t_k_1_1_doocs_updater.html#a9fe9fd577b491a49f7205fd86ca754f7',1,'ChimeraTK::DoocsUpdater']]],
-  ['updateparameters',['updateParameters',['../class_chimera_t_k_1_1_doocs_spectrum.html#a585c8c2eadfa3fac5ac129ed95e1fe05',1,'ChimeraTK::DoocsSpectrum']]],
-  ['updater',['updater',['../class_chimera_t_k_1_1_doocs_adapter.html#a2ffe502b554af5713c1a1b0406f7b5a4',1,'ChimeraTK::DoocsAdapter']]],
-  ['updater_5f',['updater_',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#ae855cff8ead1562949db6afbf09a36e7',1,'ChimeraTK::CSAdapterEqFct']]],
-  ['usehashistorydefault',['useHasHistoryDefault',['../struct_chimera_t_k_1_1_location_info.html#a52c394014960328441a5bfa2ad5f9b89',1,'ChimeraTK::LocationInfo']]],
-  ['useiswriteabledefault',['useIsWriteableDefault',['../struct_chimera_t_k_1_1_location_info.html#ae260902bd43ab825af141712a4d48530',1,'ChimeraTK::LocationInfo']]]
+  ['todo_20list',['Todo List',['../todo.html',1,'']]],
+  ['type',['type',['../struct_chimera_t_k_1_1_property_description.html#a73186da35b20e9ab0b1395ba453b5370',1,'ChimeraTK::PropertyDescription::type()'],['../struct_chimera_t_k_1_1_auto_property_description.html#afa397fae2600d33f81ef2badce2d9ce6',1,'ChimeraTK::AutoPropertyDescription::type()'],['../struct_chimera_t_k_1_1_array_description.html#adf320901c23de95e030beec5d962e2d6',1,'ChimeraTK::ArrayDescription::type()'],['../struct_chimera_t_k_1_1_spectrum_description.html#ae09b17a595d48217d0ef0ed5d689b7b7',1,'ChimeraTK::SpectrumDescription::type()']]],
+  ['typedcreatedoocsarray',['typedCreateDoocsArray',['../class_chimera_t_k_1_1_doocs_p_v_factory.html#a6047ca5738128cf6b8dd4193ef689808',1,'ChimeraTK::DoocsPVFactory']]],
+  ['typedcreatescalarorarray',['typedCreateScalarOrArray',['../class_chimera_t_k_1_1_doocs_p_v_factory.html#afdf8a86259afa12e4ed32dbfe94783d8',1,'ChimeraTK::DoocsPVFactory']]]
 ];

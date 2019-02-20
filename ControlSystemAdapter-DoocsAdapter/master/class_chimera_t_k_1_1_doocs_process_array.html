@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter
-   &#160;<span id="projectnumber">00.09.00</span>
+   &#160;<span id="projectnumber">master</span>
    </div>
   </td>
  </tr>
@@ -112,8 +112,8 @@ Inheritance diagram for ChimeraTK::DoocsProcessArray&lt; DOOCS_T, DOOCS_PRIMITIV
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a66d77fd78678222938ca507def7ec3b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html#a66d77fd78678222938ca507def7ec3b0">DoocsProcessArray</a> (EqFct *eqFct, std::string const &amp;doocsPropertyName, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; DOOCS_PRIMITIVE_T &gt; &gt; const &amp;processArray, <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;updater)</td></tr>
-<tr class="separator:a66d77fd78678222938ca507def7ec3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af809e1c4d97ffb2a8301d84f7dbb1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html#a5af809e1c4d97ffb2a8301d84f7dbb1b">DoocsProcessArray</a> (EqFct *eqFct, std::string const &amp;doocsPropertyName, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; DOOCS_PRIMITIVE_T &gt;&gt; const &amp;processArray, <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;updater)</td></tr>
+<tr class="separator:a5af809e1c4d97ffb2a8301d84f7dbb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14b984d84addffe256f4bf4cfa29f8a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html#a14b984d84addffe256f4bf4cfa29f8a0">set</a> (EqAdr *eqAdr, EqData *data1, EqData *data2, EqFct *eqFct) override</td></tr>
 <tr class="memdesc:a14b984d84addffe256f4bf4cfa29f8a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload the set function which is called by DOOCS to inject sending to the device.  <a href="#a14b984d84addffe256f4bf4cfa29f8a0">More...</a><br /></td></tr>
 <tr class="separator:a14b984d84addffe256f4bf4cfa29f8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,6 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4c16a56eb7a73bb18e612844c403d51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a117cf7e3223eeeb7060ac0660ca26b5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html#a117cf7e3223eeeb7060ac0660ca26b5b">updateDoocsBuffer</a> ()</td></tr>
 <tr class="separator:a117cf7e3223eeeb7060ac0660ca26b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17728d409c23a3c974e2049eb1e1ed76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html#a17728d409c23a3c974e2049eb1e1ed76">publishZeroMQ</a> ()</td></tr>
+<tr class="separator:a17728d409c23a3c974e2049eb1e1ed76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c4c6f5b23e711ad8064f251fb38d11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html#a10c4c6f5b23e711ad8064f251fb38d11">setMacroPulseNumberSource</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt;&gt; macroPulseNumberSource)</td></tr>
+<tr class="separator:a10c4c6f5b23e711ad8064f251fb38d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -130,8 +134,12 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:af89853be6d4eee02871de68221c8a740"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; DOOCS_PRIMITIVE_T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html#af89853be6d4eee02871de68221c8a740">_processArray</a></td></tr>
-<tr class="separator:af89853be6d4eee02871de68221c8a740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4daae8544f6c321267a0d1cfb48ac0e3"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; DOOCS_PRIMITIVE_T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html#a4daae8544f6c321267a0d1cfb48ac0e3">_processArray</a></td></tr>
+<tr class="separator:a4daae8544f6c321267a0d1cfb48ac0e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9764bf16174cfc00bce3296f32ba51"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html#a6c9764bf16174cfc00bce3296f32ba51">_macroPulseNumberSource</a></td></tr>
+<tr class="separator:a6c9764bf16174cfc00bce3296f32ba51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a915bc263a2809baa52ccdf189987f8e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html#a915bc263a2809baa52ccdf189987f8e0">publishZMQ</a> {false}</td></tr>
+<tr class="separator:a915bc263a2809baa52ccdf189987f8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename DOOCS_T, typename DOOCS_PRIMITIVE_T&gt;<br />
@@ -140,7 +148,7 @@ class ChimeraTK::DoocsProcessArray&lt; DOOCS_T, DOOCS_PRIMITIVE_T &gt;</h3>
 
 <p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00018">18</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a66d77fd78678222938ca507def7ec3b0"></a>
+<a class="anchor" id="a5af809e1c4d97ffb2a8301d84f7dbb1b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -164,7 +172,7 @@ template&lt;typename DOOCS_T , typename DOOCS_PRIMITIVE_T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; DOOCS_PRIMITIVE_T &gt; &gt; const &amp;&#160;</td>
+          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; DOOCS_PRIMITIVE_T &gt;&gt; const &amp;&#160;</td>
           <td class="paramname"><em>processArray</em>, </td>
         </tr>
         <tr>
@@ -186,7 +194,7 @@ template&lt;typename DOOCS_T , typename DOOCS_PRIMITIVE_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00021">21</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00020">20</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -217,7 +225,34 @@ template&lt;typename DOOCS_T , typename DOOCS_PRIMITIVE_T &gt; </div>
 
 <p>Override the Doocs <a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html#a4c16a56eb7a73bb18e612844c403d51d" title="Override the Doocs auto_init() method, which is called after initialising the value of the property f...">auto_init()</a> method, which is called after initialising the value of the property from the config file. </p>
 
-<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00056">56</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00052">52</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a17728d409c23a3c974e2049eb1e1ed76"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DOOCS_T , typename DOOCS_PRIMITIVE_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html">ChimeraTK::DoocsProcessArray</a>&lt; DOOCS_T, DOOCS_PRIMITIVE_T &gt;::publishZeroMQ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00085">85</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -244,7 +279,7 @@ template&lt;typename DOOCS_T , typename DOOCS_PRIMITIVE_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00094">94</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00098">98</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -296,7 +331,35 @@ template&lt;typename DOOCS_T , typename DOOCS_PRIMITIVE_T &gt; </div>
 
 <p>Overload the set function which is called by DOOCS to inject sending to the device. </p>
 
-<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00047">47</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00043">43</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10c4c6f5b23e711ad8064f251fb38d11"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DOOCS_T , typename DOOCS_PRIMITIVE_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html">ChimeraTK::DoocsProcessArray</a>&lt; DOOCS_T, DOOCS_PRIMITIVE_T &gt;::setMacroPulseNumberSource </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt;&gt;&#160;</td>
+          <td class="paramname"><em>macroPulseNumberSource</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00087">87</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -323,12 +386,12 @@ template&lt;typename DOOCS_T , typename DOOCS_PRIMITIVE_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00064">64</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00060">60</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="af89853be6d4eee02871de68221c8a740"></a>
+<a class="anchor" id="a6c9764bf16174cfc00bce3296f32ba51"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -338,7 +401,7 @@ template&lt;typename DOOCS_T , typename DOOCS_PRIMITIVE_T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt;DOOCS_PRIMITIVE_T&gt; &gt; <a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html">ChimeraTK::DoocsProcessArray</a>&lt; DOOCS_T, DOOCS_PRIMITIVE_T &gt;::_processArray</td>
+          <td class="memname">boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;int64_t&gt; &gt; <a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html">ChimeraTK::DoocsProcessArray</a>&lt; DOOCS_T, DOOCS_PRIMITIVE_T &gt;::_macroPulseNumberSource</td>
         </tr>
       </table>
   </td>
@@ -348,17 +411,65 @@ template&lt;typename DOOCS_T , typename DOOCS_PRIMITIVE_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00090">90</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00093">93</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4daae8544f6c321267a0d1cfb48ac0e3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DOOCS_T , typename DOOCS_PRIMITIVE_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;DOOCS_PRIMITIVE_T&gt; &gt; <a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html">ChimeraTK::DoocsProcessArray</a>&lt; DOOCS_T, DOOCS_PRIMITIVE_T &gt;::_processArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00092">92</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a915bc263a2809baa52ccdf189987f8e0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DOOCS_T , typename DOOCS_PRIMITIVE_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html">ChimeraTK::DoocsProcessArray</a>&lt; DOOCS_T, DOOCS_PRIMITIVE_T &gt;::publishZMQ {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_doocs_process_array_8h_source.html#l00094">94</a> of file <a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/ControlSystemAdapter-DoocsAdapter/include/<a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a></li>
+<li>include/<a class="el" href="_doocs_process_array_8h_source.html">DoocsProcessArray.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 17 2018 06:53:41 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 20 2019 13:47:07 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

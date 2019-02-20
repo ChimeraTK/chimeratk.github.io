@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter
-   &#160;<span id="projectnumber">00.09.00</span>
+   &#160;<span id="projectnumber">master</span>
    </div>
   </td>
  </tr>
@@ -124,8 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aafe7082f09c25245074fed216d78c528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae95813ee7f671133d514189c3c033286"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286">stop</a> ()</td></tr>
 <tr class="separator:ae95813ee7f671133d514189c3c033286"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fd6c9348bdfcbf5cef01fd338cc920e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#a3fd6c9348bdfcbf5cef01fd338cc920e">addVariable</a> (const ChimeraTK::TransferElementAbstractor &amp;variable, std::function&lt; void()&gt; updaterFunction)</td></tr>
-<tr class="separator:a3fd6c9348bdfcbf5cef01fd338cc920e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147d3ac264817e058dd7e3f6a8fcb4dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#a147d3ac264817e058dd7e3f6a8fcb4dc">addVariable</a> (const ChimeraTK::TransferElementAbstractor &amp;variable, EqFct *eq_fct, std::function&lt; void()&gt; updaterFunction)</td></tr>
+<tr class="separator:a147d3ac264817e058dd7e3f6a8fcb4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -135,12 +135,14 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:aa702766800d6c1863c232758f723798e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f0e4a8d25dab707369dba1fc810643"><td class="memItemLeft" align="right" valign="top">std::map&lt; ChimeraTK::TransferElementID, std::vector&lt; std::function&lt; void()&gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#ac7f0e4a8d25dab707369dba1fc810643">_toDoocsUpdateMap</a></td></tr>
 <tr class="separator:ac7f0e4a8d25dab707369dba1fc810643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb17ab601cf755a858971748568c1de8"><td class="memItemLeft" align="right" valign="top">std::map&lt; ChimeraTK::TransferElementID, std::vector&lt; EqFct * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#abb17ab601cf755a858971748568c1de8">_toDoocsEqFctMap</a></td></tr>
+<tr class="separator:abb17ab601cf755a858971748568c1de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class to synchronise DeviceToControlSystem variable to Doocs. </p>
 <p>It contains a list of TransferElements and a thread which is monitoring them for updates. The thread has to be started with the <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#aafe7082f09c25245074fed216d78c528">run()</a> functions, which returns immediately when the thread is started, and (FIXME can be stopped by the <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286">stop()</a> function which returns after the thread has been joined). This happens latest in the destructor. </p>
 
-<p>Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00016">16</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00018">18</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a59282eb42563fb3483756170bda65329"></a>
 <div class="memitem">
@@ -155,12 +157,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00053">53</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00068">68</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a3fd6c9348bdfcbf5cef01fd338cc920e"></a>
+<a class="anchor" id="a147d3ac264817e058dd7e3f6a8fcb4dc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -169,6 +171,12 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const ChimeraTK::TransferElementAbstractor &amp;&#160;</td>
           <td class="paramname"><em>variable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EqFct *&#160;</td>
+          <td class="paramname"><em>eq_fct</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -184,7 +192,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00007">7</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00008">8</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
 
 </div>
 </div>
@@ -201,7 +209,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00044">44</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00056">56</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
 
 </div>
 </div>
@@ -218,7 +226,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00048">48</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00060">60</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
 
 </div>
 </div>
@@ -235,7 +243,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00019">19</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00021">21</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
 
 </div>
 </div>
@@ -252,7 +260,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00029">29</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_updater_8cc_source.html#l00031">31</a> of file <a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a>.</p>
 
 </div>
 </div>
@@ -275,7 +283,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00028">28</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00038">38</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
 
 </div>
 </div>
@@ -297,7 +305,29 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00029">29</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00039">39</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abb17ab601cf755a858971748568c1de8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; ChimeraTK::TransferElementID, std::vector&lt; EqFct* &gt; &gt; ChimeraTK::DoocsUpdater::_toDoocsEqFctMap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00042">42</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
 
 </div>
 </div>
@@ -319,18 +349,18 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00031">31</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
+<p>Definition at line <a class="el" href="_doocs_updater_8h_source.html#l00041">41</a> of file <a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/ControlSystemAdapter-DoocsAdapter/include/<a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a></li>
-<li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/ControlSystemAdapter-DoocsAdapter/src/<a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a></li>
+<li>include/<a class="el" href="_doocs_updater_8h_source.html">DoocsUpdater.h</a></li>
+<li>src/<a class="el" href="_doocs_updater_8cc_source.html">DoocsUpdater.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 17 2018 06:53:41 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 20 2019 13:47:07 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
