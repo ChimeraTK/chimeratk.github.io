@@ -14,7 +14,7 @@ function update_tag(){
   git checkout $TAG > /dev/null 2>&1
   local FIRST_GIT_STATUS=$?
   if [[ $TAG == "master" ]]; then
-      #tags are not a branch, so they cannot be merged. But they don't change, anyway.
+      # tags are not a branch, so they cannot be merged. But they don't change, anyway.
       git merge > /dev/null 2>&1
       local SECOND_GIT_STATUS=$?
   else
@@ -27,8 +27,9 @@ function update_tag(){
   fi
   
   # check if the repository is supposed to have a doxygen documentation in this version
-  if ! [ -e CMakeLists.txt ]; then
-      echo No CMakeLists.txt in ${repo} ${TAG}. Not creating documentation.
+  if ! [ -e cmake/Doxyfile.in ]; then
+      echo No cmake/Doxyfile.in in ${repo} ${TAG}. Not creating documentation.
+      rm -rf $DOC_DIR/$EPOCH
       return 0
   fi
   
@@ -99,6 +100,9 @@ cat repos.json | grep '^ *"name": ' | sed -e 's/^ *"name": "//' -e 's/",$//' | g
 BASE_DIR="${PWD}"
 N_ERRORS=0
 for repo in `cat repolist`; do
+  if [ "$repo" = "chimeratk.github.io" -o "$repo" = "project-template" ]; then
+    continue
+  fi
   echo  
   echo "***********************************************************************************"
   echo Processing repository \'$repo\'
