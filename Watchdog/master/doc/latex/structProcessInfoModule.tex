@@ -1,0 +1,293 @@
+\hypertarget{structProcessInfoModule}{}\section{Process\+Info\+Module Struct Reference}
+\label{structProcessInfoModule}\index{Process\+Info\+Module@{Process\+Info\+Module}}
+
+
+This module is used to collect process information.  
+
+
+
+
+{\ttfamily \#include $<$Process\+Module.\+h$>$}
+
+
+
+Inheritance diagram for Process\+Info\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{structProcessInfoModule__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Process\+Info\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{structProcessInfoModule__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structProcessInfoModule_a66f1ebb4d2179c7ceb5798fd1c81bc27}{main\+Loop} () override
+\item 
+void \hyperlink{structProcessInfoModule_a85e87f2c7a75ada7b23e8a672b06c75a}{Fill\+Proc\+Info} (const std\+::shared\+\_\+ptr$<$ proc\+\_\+t $>$ \&info)
+\item 
+std\+::string \hyperlink{structProcessInfoModule_ada9eaa0787b9c5b393450c321e8941a7}{get\+Time} ()
+\item 
+void {\bfseries terminate} () override\hypertarget{structProcessInfoModule_a4949333ed2abc7e07933dda2c1f8cf7e}{}\label{structProcessInfoModule_a4949333ed2abc7e07933dda2c1f8cf7e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ctk\+::\+Scalar\+Push\+Input$<$ uint64\+\_\+t $>$ {\bfseries trigger}
+\item 
+boost\+::posix\+\_\+time\+::ptime \hyperlink{structProcessInfoModule_af863af6e454aa703037963ad401cae92}{time\+\_\+stamp}
+\item 
+std\+::ostream $\ast$ {\bfseries logging}\hypertarget{structProcessInfoModule_a868c52f7b5aa78cd208215b381fc12eb}{}\label{structProcessInfoModule_a868c52f7b5aa78cd208215b381fc12eb}
+
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Process parameter and status}\par
+\begin{DoxyCompactItemize}
+\item 
+ctk\+::\+Scalar\+Output$<$ int $>$ \hyperlink{structProcessInfoModule_aae5355d8100a201888fd835a7515f456}{process\+P\+ID}
+\item 
+ctk\+::\+Scalar\+Output$<$ uint $>$ \hyperlink{structProcessInfoModule_a8c11129c477f0177e253f3ce414d0fc3}{runtime}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Information from the System\+Info\+Module}\par
+\begin{DoxyCompactItemize}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ uint $>$ \hyperlink{structProcessInfoModule_a5555ea48a4e228afb662f9523ab6c42d}{ticks\+Per\+Second}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ uint $>$ \hyperlink{structProcessInfoModule_adbe9f029d44d0ca7d0943e2c9e27614c}{sys\+Up\+Time} \{ this, \char`\"{}sys\+Up\+Time\char`\"{}, \char`\"{}s\char`\"{}, \char`\"{}Uptime of the system\char`\"{} \}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ uint $>$ {\bfseries sys\+Start\+Time} \{ this, \char`\"{}sys\+Start\+Time\char`\"{}, \char`\"{}s\char`\"{}, \char`\"{}System start time (seconds since E\+P\+O\+CH)\char`\"{} \}\hypertarget{structProcessInfoModule_abe02040aa7d07278c251ed1e1877002b}{}\label{structProcessInfoModule_abe02040aa7d07278c251ed1e1877002b}
+
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ uint $>$ {\bfseries max\+Mem} \{ this, \char`\"{}max\+Mem\char`\"{}, \char`\"{}kB\char`\"{}, \char`\"{}Maximum available memory\char`\"{} \}\hypertarget{structProcessInfoModule_adc8abddf6db9a457cd953729ee887339}{}\label{structProcessInfoModule_adc8abddf6db9a457cd953729ee887339}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Parameters read by proc}\par
+\begin{DoxyCompactItemize}
+\item 
+ctk\+::\+Scalar\+Output$<$ uint $>$ \hyperlink{structProcessInfoModule_a80e5447f89a1af566893b4a8ce32c75e}{utime}
+\item 
+ctk\+::\+Scalar\+Output$<$ uint $>$ \hyperlink{structProcessInfoModule_a568d95f9a110c5db3171d49acfedf9be}{stime}
+\item 
+ctk\+::\+Scalar\+Output$<$ uint $>$ \hyperlink{structProcessInfoModule_a6e6f822ed218e8e5a461f769ef415188}{cutime}
+\item 
+ctk\+::\+Scalar\+Output$<$ uint $>$ \hyperlink{structProcessInfoModule_a81577c12862b69dfeaf5986a088a9ce1}{cstime}
+\item 
+ctk\+::\+Scalar\+Output$<$ uint $>$ \hyperlink{structProcessInfoModule_a63fa6f3d052df587ee88136d260f85aa}{start\+Time}
+\item 
+ctk\+::\+Scalar\+Output$<$ std\+::string $>$ {\bfseries start\+Time\+Str}
+\item 
+ctk\+::\+Scalar\+Output$<$ uint $>$ {\bfseries mem}
+\item 
+ctk\+::\+Scalar\+Output$<$ double $>$ {\bfseries memory\+Usage}
+\item 
+ctk\+::\+Scalar\+Output$<$ uint $>$ \hyperlink{structProcessInfoModule_a8c1f9421332dba2c78910481c59c7631}{priority}
+\item 
+ctk\+::\+Scalar\+Output$<$ uint $>$ \hyperlink{structProcessInfoModule_aa2befa8a18c00d4e2465d6b9e55dfe2b}{nice}
+\item 
+ctk\+::\+Scalar\+Output$<$ uint $>$ \hyperlink{structProcessInfoModule_a3d74cbbee14a01fa4ac85d56180f593f}{rss}
+\item 
+ctk\+::\+Scalar\+Output$<$ double $>$ \hyperlink{structProcessInfoModule_a0523ecd5aaa8518050f2b23000ab6705}{pcpu}
+\item 
+ctk\+::\+Scalar\+Output$<$ double $>$ \hyperlink{structProcessInfoModule_a835b59215e858942a3e26cefd122d350}{avpcpu}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+This module is used to collect process information. 
+
+\hyperlink{ProcessModule_8h_source}{Process\+Module.\+h}
+
+Created on\+: Sep 6, 2017 Author\+: zenker It also collects information about the running job. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]Implement proper data types instead of using int for all of them! \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\index{Process\+Info\+Module@{Process\+Info\+Module}!Fill\+Proc\+Info@{Fill\+Proc\+Info}}
+\index{Fill\+Proc\+Info@{Fill\+Proc\+Info}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{Fill\+Proc\+Info(const std\+::shared\+\_\+ptr$<$ proc\+\_\+t $>$ \&info)}{FillProcInfo(const std::shared_ptr< proc_t > &info)}}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Info\+Module\+::\+Fill\+Proc\+Info (
+\begin{DoxyParamCaption}
+\item[{const std\+::shared\+\_\+ptr$<$ proc\+\_\+t $>$ \&}]{info}
+\end{DoxyParamCaption}
+)}\hypertarget{structProcessInfoModule_a85e87f2c7a75ada7b23e8a672b06c75a}{}\label{structProcessInfoModule_a85e87f2c7a75ada7b23e8a672b06c75a}
+Fill process information read via proc interface. \begin{DoxyRemark}{Remarks}
+When changing the pid\+Offset to get information of another child the cpu usage value will be wrong for the first reading! 
+\end{DoxyRemark}
+\index{Process\+Info\+Module@{Process\+Info\+Module}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{get\+Time()}{getTime()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Process\+Info\+Module\+::get\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structProcessInfoModule_ada9eaa0787b9c5b393450c321e8941a7}{}\label{structProcessInfoModule_ada9eaa0787b9c5b393450c321e8941a7}
+Print the watchdog server name, a time stamp and the module name\+: Result is\+: \textquotesingle{}W\+A\+T\+C\+H\+D\+O\+G\+\_\+\+S\+E\+R\+V\+ER\+: \char`\"{}day of week\char`\"{} \char`\"{}month\char`\"{} \char`\"{}day\char`\"{} hh\+:mm\+:ss yyyy \char`\"{}module\+\_\+name\char`\"{} -\/$>$ \textquotesingle{} \index{Process\+Info\+Module@{Process\+Info\+Module}!main\+Loop@{main\+Loop}}
+\index{main\+Loop@{main\+Loop}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{main\+Loop() override}{mainLoop() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Info\+Module\+::main\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{structProcessInfoModule_a66f1ebb4d2179c7ceb5798fd1c81bc27}{}\label{structProcessInfoModule_a66f1ebb4d2179c7ceb5798fd1c81bc27}
+Application core main loop. 
+
+\subsection{Member Data Documentation}
+\index{Process\+Info\+Module@{Process\+Info\+Module}!avpcpu@{avpcpu}}
+\index{avpcpu@{avpcpu}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{avpcpu}{avpcpu}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$double$>$ Process\+Info\+Module\+::avpcpu}\hypertarget{structProcessInfoModule_a835b59215e858942a3e26cefd122d350}{}\label{structProcessInfoModule_a835b59215e858942a3e26cefd122d350}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"avpcpu"}, \textcolor{stringliteral}{"%"}, \textcolor{stringliteral}{"Average CPU usage"},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName(), \textcolor{stringliteral}{"DAQ"}, \textcolor{stringliteral}{"History"} \} \}
+\end{DoxyCode}
+C\+PU usage averaged over the whole runtime of the process. The process time includes utime, stime, sutime, sctime. \index{Process\+Info\+Module@{Process\+Info\+Module}!cstime@{cstime}}
+\index{cstime@{cstime}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{cstime}{cstime}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$uint$>$ Process\+Info\+Module\+::cstime}\hypertarget{structProcessInfoModule_a81577c12862b69dfeaf5986a088a9ce1}{}\label{structProcessInfoModule_a81577c12862b69dfeaf5986a088a9ce1}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"cstime"}, \textcolor{stringliteral}{"clock ticks"}, \textcolor{stringliteral}{"cumulative stime of process and reaped children"},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+cumulative stime of process and reaped children \index{Process\+Info\+Module@{Process\+Info\+Module}!cutime@{cutime}}
+\index{cutime@{cutime}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{cutime}{cutime}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$uint$>$ Process\+Info\+Module\+::cutime}\hypertarget{structProcessInfoModule_a6e6f822ed218e8e5a461f769ef415188}{}\label{structProcessInfoModule_a6e6f822ed218e8e5a461f769ef415188}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"cutime"}, \textcolor{stringliteral}{"clock ticks"},
+      \textcolor{stringliteral}{"cumulative utime of process and reaped children"},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+cumulative utime of process and reaped children \index{Process\+Info\+Module@{Process\+Info\+Module}!mem@{mem}}
+\index{mem@{mem}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{mem}{mem}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$uint$>$ Process\+Info\+Module\+::mem}\hypertarget{structProcessInfoModule_afa197113f1175edd1bab0dc830c7ea73}{}\label{structProcessInfoModule_afa197113f1175edd1bab0dc830c7ea73}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"mem"}, \textcolor{stringliteral}{"kB"}, \textcolor{stringliteral}{"Memory used by the process"},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName(), \textcolor{stringliteral}{"DAQ"}, \textcolor{stringliteral}{"History"} \} \}
+\end{DoxyCode}
+\index{Process\+Info\+Module@{Process\+Info\+Module}!memory\+Usage@{memory\+Usage}}
+\index{memory\+Usage@{memory\+Usage}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{memory\+Usage}{memoryUsage}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$double$>$ Process\+Info\+Module\+::memory\+Usage}\hypertarget{structProcessInfoModule_ae9d808b02bac82d10648499e57770c2c}{}\label{structProcessInfoModule_ae9d808b02bac82d10648499e57770c2c}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"memoryUsage"}, \textcolor{stringliteral}{"%"}, \textcolor{stringliteral}{"Relative memory usage"},
+      \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"SYS"}, \textcolor{stringliteral}{"DAQ"}, \textcolor{stringliteral}{"History"} \} \}
+\end{DoxyCode}
+\index{Process\+Info\+Module@{Process\+Info\+Module}!nice@{nice}}
+\index{nice@{nice}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{nice}{nice}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$uint$>$ Process\+Info\+Module\+::nice}\hypertarget{structProcessInfoModule_aa2befa8a18c00d4e2465d6b9e55dfe2b}{}\label{structProcessInfoModule_aa2befa8a18c00d4e2465d6b9e55dfe2b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"nice"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"standard unix nice level of process"},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+standard unix nice level of process \index{Process\+Info\+Module@{Process\+Info\+Module}!pcpu@{pcpu}}
+\index{pcpu@{pcpu}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{pcpu}{pcpu}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$double$>$ Process\+Info\+Module\+::pcpu}\hypertarget{structProcessInfoModule_a0523ecd5aaa8518050f2b23000ab6705}{}\label{structProcessInfoModule_a0523ecd5aaa8518050f2b23000ab6705}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"pcpu"}, \textcolor{stringliteral}{"%"}, \textcolor{stringliteral}{"Actual CPU usage"},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName(), \textcolor{stringliteral}{"DAQ"}, \textcolor{stringliteral}{"History"} \} \}
+\end{DoxyCode}
+C\+PU usage for measured between two control system loops. The process time includes utime, stime, sutime, sctime. \index{Process\+Info\+Module@{Process\+Info\+Module}!priority@{priority}}
+\index{priority@{priority}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{priority}{priority}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$uint$>$ Process\+Info\+Module\+::priority}\hypertarget{structProcessInfoModule_a8c1f9421332dba2c78910481c59c7631}{}\label{structProcessInfoModule_a8c1f9421332dba2c78910481c59c7631}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"priority"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"kernel scheduling priority"},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+kernel scheduling priority \index{Process\+Info\+Module@{Process\+Info\+Module}!process\+P\+ID@{process\+P\+ID}}
+\index{process\+P\+ID@{process\+P\+ID}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{process\+P\+ID}{processPID}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$int$>$ Process\+Info\+Module\+::process\+P\+ID}\hypertarget{structProcessInfoModule_aae5355d8100a201888fd835a7515f456}{}\label{structProcessInfoModule_aae5355d8100a201888fd835a7515f456}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"PID"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"PID of the process"},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName() , \textcolor{stringliteral}{"DAQ"}\} \}
+\end{DoxyCode}
+P\+ID of the process \index{Process\+Info\+Module@{Process\+Info\+Module}!rss@{rss}}
+\index{rss@{rss}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{rss}{rss}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$uint$>$ Process\+Info\+Module\+::rss}\hypertarget{structProcessInfoModule_a3d74cbbee14a01fa4ac85d56180f593f}{}\label{structProcessInfoModule_a3d74cbbee14a01fa4ac85d56180f593f}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"rss"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"resident set size from /proc/#/stat (pages)"},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+resident set size from /proc/\#/stat (pages) \index{Process\+Info\+Module@{Process\+Info\+Module}!runtime@{runtime}}
+\index{runtime@{runtime}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{runtime}{runtime}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$uint$>$ Process\+Info\+Module\+::runtime}\hypertarget{structProcessInfoModule_a8c11129c477f0177e253f3ce414d0fc3}{}\label{structProcessInfoModule_a8c11129c477f0177e253f3ce414d0fc3}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"runtime"}, \textcolor{stringliteral}{"s"}, \textcolor{stringliteral}{"Time since process is running"},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName(), \textcolor{stringliteral}{"DAQ"} \} \}
+\end{DoxyCode}
+Time since process is running \index{Process\+Info\+Module@{Process\+Info\+Module}!start\+Time@{start\+Time}}
+\index{start\+Time@{start\+Time}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{start\+Time}{startTime}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$uint$>$ Process\+Info\+Module\+::start\+Time}\hypertarget{structProcessInfoModule_a63fa6f3d052df587ee88136d260f85aa}{}\label{structProcessInfoModule_a63fa6f3d052df587ee88136d260f85aa}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"startTime"}, \textcolor{stringliteral}{"s"}, \textcolor{stringliteral}{"start time of process with respect to EPOCH"},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+start time of process -- seconds since 1-\/1-\/70 \index{Process\+Info\+Module@{Process\+Info\+Module}!start\+Time\+Str@{start\+Time\+Str}}
+\index{start\+Time\+Str@{start\+Time\+Str}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{start\+Time\+Str}{startTimeStr}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$std\+::string$>$ Process\+Info\+Module\+::start\+Time\+Str}\hypertarget{structProcessInfoModule_a9e077650b12f3f7c7a0af1c304c1b8dd}{}\label{structProcessInfoModule_a9e077650b12f3f7c7a0af1c304c1b8dd}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"startTimeStr"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"start time string"},
+      \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+\index{Process\+Info\+Module@{Process\+Info\+Module}!stime@{stime}}
+\index{stime@{stime}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{stime}{stime}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$uint$>$ Process\+Info\+Module\+::stime}\hypertarget{structProcessInfoModule_a568d95f9a110c5db3171d49acfedf9be}{}\label{structProcessInfoModule_a568d95f9a110c5db3171d49acfedf9be}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"stime"}, \textcolor{stringliteral}{"clock ticks"}, \textcolor{stringliteral}{"kernel-mode CPU time accumulated by process"},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+kernel-\/mode C\+PU time accumulated by process \index{Process\+Info\+Module@{Process\+Info\+Module}!sys\+Up\+Time@{sys\+Up\+Time}}
+\index{sys\+Up\+Time@{sys\+Up\+Time}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{sys\+Up\+Time}{sysUpTime}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$uint$>$ Process\+Info\+Module\+::sys\+Up\+Time \{ this, \char`\"{}sys\+Up\+Time\char`\"{}, \char`\"{}s\char`\"{}, \char`\"{}Uptime of the system\char`\"{} \}}\hypertarget{structProcessInfoModule_adbe9f029d44d0ca7d0943e2c9e27614c}{}\label{structProcessInfoModule_adbe9f029d44d0ca7d0943e2c9e27614c}
+Uptime of the system \index{Process\+Info\+Module@{Process\+Info\+Module}!ticks\+Per\+Second@{ticks\+Per\+Second}}
+\index{ticks\+Per\+Second@{ticks\+Per\+Second}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{ticks\+Per\+Second}{ticksPerSecond}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$uint$>$ Process\+Info\+Module\+::ticks\+Per\+Second}\hypertarget{structProcessInfoModule_a5555ea48a4e228afb662f9523ab6c42d}{}\label{structProcessInfoModule_a5555ea48a4e228afb662f9523ab6c42d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"tickPerSecond"}, \textcolor{stringliteral}{"Hz"},
+      \textcolor{stringliteral}{"Number of clock ticks per second"} \}
+\end{DoxyCode}
+Number of clock ticks per second \index{Process\+Info\+Module@{Process\+Info\+Module}!time\+\_\+stamp@{time\+\_\+stamp}}
+\index{time\+\_\+stamp@{time\+\_\+stamp}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{time\+\_\+stamp}{time_stamp}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::posix\+\_\+time\+::ptime Process\+Info\+Module\+::time\+\_\+stamp}\hypertarget{structProcessInfoModule_af863af6e454aa703037963ad401cae92}{}\label{structProcessInfoModule_af863af6e454aa703037963ad401cae92}
+Store an internal time stamp that is used to calculate the cpu usage. \index{Process\+Info\+Module@{Process\+Info\+Module}!trigger@{trigger}}
+\index{trigger@{trigger}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{trigger}{trigger}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Push\+Input$<$uint64\+\_\+t$>$ Process\+Info\+Module\+::trigger}\hypertarget{structProcessInfoModule_a3f91718924955fc3bdbd2070c08eec2c}{}\label{structProcessInfoModule_a3f91718924955fc3bdbd2070c08eec2c}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"trigger"}, \textcolor{stringliteral}{""},
+      \textcolor{stringliteral}{"Trigger used to update the watchdog"} \}
+\end{DoxyCode}
+\index{Process\+Info\+Module@{Process\+Info\+Module}!utime@{utime}}
+\index{utime@{utime}!Process\+Info\+Module@{Process\+Info\+Module}}
+\subsubsection[{\texorpdfstring{utime}{utime}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$uint$>$ Process\+Info\+Module\+::utime}\hypertarget{structProcessInfoModule_a80e5447f89a1af566893b4a8ce32c75e}{}\label{structProcessInfoModule_a80e5447f89a1af566893b4a8ce32c75e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"utime"}, \textcolor{stringliteral}{"clock ticks"}, \textcolor{stringliteral}{"user-mode CPU time accumulated by process"},
+    \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+user-\/mode C\+PU time accumulated by process 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Process\+Module.\+h\item 
+src/Process\+Module.\+cc\end{DoxyCompactItemize}
