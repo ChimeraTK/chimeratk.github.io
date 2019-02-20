@@ -42,7 +42,8 @@
 <dl class="class">
 <dt id="mtca4u.Device">
 <em class="property">class </em><code class="descclassname">mtca4u.</code><code class="descname">Device</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.Device" title="Permalink to this definition">¶</a></dt>
-<dd><p>Construct Device from user provided device information</p>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Construct Device from user provided device information</p>
 <p>This constructor is used to open a device listed in the dmap file.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -571,7 +572,7 @@ its details</p>
 
 <dl class="function">
 <dt id="mtca4u.get_info">
-<code class="descclassname">mtca4u.</code><code class="descname">get_info</code><span class="sig-paren">(</span><em>outputStream=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#get_info"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.get_info" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">mtca4u.</code><code class="descname">get_info</code><span class="sig-paren">(</span><em>outputStream=&lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='UTF-8'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#get_info"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.get_info" title="Permalink to this definition">¶</a></dt>
 <dd><p>prints details about the module and the deviceaccess library
 against which it was linked</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -585,7 +586,7 @@ against which it was linked</p>
 <p class="rubric">Examples</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">get_info</span><span class="p">()</span>
-<span class="go">mtca4uPy v01.02.00, linked with mtca4u-deviceaccess v01.00.02</span>
+<span class="go">mtca4uPy v01.02.00, linked with mtca4u-deviceaccess v$ChimeraTK-DeviceAccess_VERSION}</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -674,7 +675,7 @@ set again using set_dmap_location</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2015, MSK.
+      &copy;2015, .
       
       |
       <a href="_sources/mtca4u.txt"
