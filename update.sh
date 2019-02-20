@@ -26,49 +26,48 @@ function update_tag(){
       return -1
   fi
   
-  #check if the repository is supposed to have a doxygen documentation in this version
+  # check if the repository is supposed to have a doxygen documentation in this version
   if ! [ -e CMakeLists.txt ]; then
       echo No CMakeLists.txt in ${repo} ${TAG}. Not creating documentation.
       return 0
   fi
   
-  #check if the current revision already has documentation
+  # check if the current revision already has documentation
   local GIT_ID=`git rev-parse HEAD`
   local LAST_BUILD=`cat $DOC_DIR/$EPOCH/git.ID 2>/dev/null || echo NONE`
   if [ $GIT_ID == $LAST_BUILD ] ; then
       echo "Documentation already build for version $TAG in revision $GIT_ID."
       return 0
   fi
+  
+  # create Doxyfile from template (without running cmake, since dependencies are not available)
+  # step 1: collect information from CMakeLists.txt etc.
+  PROJECT_NAME=`grep -i '^ *project([^()]*) *$' $CHECKOUT_DIR/CMakeLists.txt | sed -e 's/^.*( *//' -e 's/ *).*$//'`
+  DOXYGEN_PROJECT_NUMBER=$TAG
+  CMAKE_CURRENT_SOURCE_DIR=$CHECKOUT_DIR
+  CMAKE_CURRENT_BINARY_DIR=$DOC_DIR/$EPOCH
+  # create Doxyfile, step 2: apply variable replacement to template
+  cp $CHECKOUT_DIR/cmake/Doxyfile.in $CHECKOUT_DIR/Doxyfile
+  sed -i $CHECKOUT_DIR/Doxyfile -e "s!@PROJECT_NAME@!${PROJECT_NAME}!"
+  sed -i $CHECKOUT_DIR/Doxyfile -e "s!@DOXYGEN_PROJECT_NUMBER@!${DOXYGEN_PROJECT_NUMBER}!"
+  sed -i $CHECKOUT_DIR/Doxyfile -e "s!@CMAKE_CURRENT_SOURCE_DIR@!${CMAKE_CURRENT_SOURCE_DIR}!"
+  sed -i $CHECKOUT_DIR/Doxyfile -e "s!@CMAKE_CURRENT_BINARY_DIR@!${CMAKE_CURRENT_BINARY_DIR}!"
+  
+  # create/clean output directory
+  rm -rf $DOC_DIR/$EPOCH
+  mkdir -p $DOC_DIR/$EPOCH
 
-  # go to the build directory 
-  cd $CHECKOUT_DIR/build
-  rm -rf *
-  cmake .. ${OTHER_CMAKE_ARGUMENTS} > /dev/null
-  if ! [ $? == "0" ] ; then
-      echo ERROR: Error running cmake for ${repo} $TAG.
-      return -1
-  fi
-
-  #Check if there is a doc target.
-  #In cmake generated Makefiles there is a help target
-  #which prints all other targets
-  if ! make help | grep "^... doc$" >/dev/null; then
-      echo No 'doc' target in ${repo} $TAG. Not creating documentation.
-      return 0
-  fi
-
-  echo Creating docu for ${repo} $TAG.
   # create the docu
-  make doc > /dev/null
+  echo Creating docu for ${repo} $TAG.
+  cd $CHECKOUT_DIR
+  doxygen > /dev/null
   if ! [ $? == "0" ] ; then
       echo ERROR: Error creating documentation for ${repo} $TAG.
       return -1
   fi
 
-  # copy the docu to the EPOCH directory for this repo (or master)
-  mkdir -p $DOC_DIR/$EPOCH
-  rm -rf $DOC_DIR/$EPOCH/* #clean old files
-  cp -r doc/html/* $DOC_DIR/$EPOCH
+  # correct the directory structure
+  cp -r $DOC_DIR/$EPOCH/doc/html/* $DOC_DIR/$EPOCH
   if ! [ $? == "0" ] ; then
       echo ERROR: Error copying documentation for ${repo} $TAG.
       cd $DOC_DIR
@@ -77,11 +76,12 @@ function update_tag(){
       git checkout $EPOCH > /dev/null 2>&1
       return -1
   fi
+  rm -rf $DOC_DIR/$EPOCH/doc/html
   
-  #save the git ID in the outptu directory
+  # save the git ID in the outptut directory
   echo $GIT_ID > $DOC_DIR/$EPOCH/git.ID
 
-  #add all changes 
+  # add all changes to git
   cd $DOC_DIR
   git add $EPOCH >/dev/null 2>&1
   git commit -m "Created/updated docu for ${repo} $TAG (automatic commit)" >/dev/null 2>&1
@@ -91,13 +91,11 @@ function update_tag(){
   fi
 }
 
-#get a list of repositories from github
+# get a list of repositories from github
 wget https://api.github.com/orgs/ChimeraTK/repos -O repos.json
 cat repos.json | grep '^ *"name": ' | sed -e 's/^ *"name": "//' -e 's/",$//' | grep -v 'General Public License' > repolist
-#echo DeviceAccess DocTest > repolist
 
-#loop the repos
-cat repolist
+# loop the repos
 BASE_DIR="${PWD}"
 N_ERRORS=0
 for repo in `cat repolist`; do
@@ -120,24 +118,24 @@ for repo in `cat repolist`; do
   # create build repository if it does not exist
   mkdir -p build
 
-  #about the sed expression: get MM.mm out of MM.mm.pp
-  #at least one digit: [0-9]\+
-  #a group which 'something' is captured from the input: \(something\)
-  #the dot itself (just . means any character): \.
-  #take first captures group and place it in the result: \1
-  #Finally do a unique sort
+  # about the sed expression: get MM.mm out of MM.mm.pp
+  # at least one digit: [0-9]\+
+  # a group which 'something' is captured from the input: \(something\)
+  # the dot itself (just . means any character): \.
+  # take first captures group and place it in the result: \1
+  # Finally do a unique sort
   EPOCH_VERSIONS=`git tag | sed -e "{s/\([0-9]\+\)\.\([0-9]\+\)\.[0-9]\+/\1\.\2/}" | sort -u`
 
   # loop all tags and the master
   update_tag master master
   master_result=$?
-  #Even if the master failed: If there never was documentation successfully build
-  #don't try any tags in this repo.
+  # Even if the master failed: If there never was documentation successfully build
+  # don't try any tags in this repo.
   if ! [ -e $DOC_DIR ]; then
       echo $repo never had any documentation and master did not build any. Skipping this repo.
       continue
   fi
-  #If there is existing docu and the master fails report an error
+  # If there is existing docu and the master fails report an error
   if ! [ $master_result == "0" ] ; then
       echo Setting error flag for ${repo} master.
       (( N_ERRORS++ )) #increase the error count
@@ -157,7 +155,7 @@ for repo in `cat repolist`; do
 
 done
 
-#update the index.html file
+# update the index.html file
 cat ${BASE_DIR}/header.inc > ${BASE_DIR}/index.html
 cd ${BASE_DIR}
 for repo in `cat repolist`; do
