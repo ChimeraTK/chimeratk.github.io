@@ -95,6 +95,7 @@ function update_tag(){
 # get a list of repositories from github
 wget https://api.github.com/orgs/ChimeraTK/repos -O repos.json
 cat repos.json | grep '^ *"name": ' | sed -e 's/^ *"name": "//' -e 's/",$//' | grep -v 'General Public License' > repolist
+rm repos.json
 
 # loop the repos
 BASE_DIR="${PWD}"
