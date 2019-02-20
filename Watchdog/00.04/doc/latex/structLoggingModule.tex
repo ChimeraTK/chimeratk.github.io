@@ -1,0 +1,155 @@
+\hypertarget{structLoggingModule}{}\section{Logging\+Module Struct Reference}
+\label{structLoggingModule}\index{Logging\+Module@{Logging\+Module}}
+
+
+Module used to handle logging messages.  
+
+
+
+
+{\ttfamily \#include $<$Logging\+Module.\+h$>$}
+
+
+
+Inheritance diagram for Logging\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{structLoggingModule__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Logging\+Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{structLoggingModule__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{structLoggingModule_ae1447048dd90e2a7951d23c33987650f}{main\+Loop} ()
+\item 
+void {\bfseries terminate} ()\hypertarget{structLoggingModule_add19c1f65a576c57d327430e85dc0e91}{}\label{structLoggingModule_add19c1f65a576c57d327430e85dc0e91}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{structLoggingModule_a30626e4224e872a8b8ea94f4b3df810f}{message\+Counter}
+\item 
+ctk\+::\+Scalar\+Push\+Input$<$ std\+::string $>$ {\bfseries message}
+\item 
+ctk\+::\+Scalar\+Push\+Input$<$ uint $>$ {\bfseries message\+Level}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ uint $>$ {\bfseries target\+Stream}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ std\+::string $>$ {\bfseries log\+File}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ uint $>$ {\bfseries tail\+Length}
+\item 
+ctk\+::\+Scalar\+Poll\+Input$<$ uint $>$ {\bfseries log\+Level}
+\item 
+ctk\+::\+Scalar\+Output$<$ std\+::string $>$ {\bfseries log\+Tail}
+\item 
+std\+::unique\+\_\+ptr$<$ std\+::ofstream $>$ \hyperlink{structLoggingModule_a600659a6a9219f9123ae1fd7b2f43826}{file}\hypertarget{structLoggingModule_a600659a6a9219f9123ae1fd7b2f43826}{}\label{structLoggingModule_a600659a6a9219f9123ae1fd7b2f43826}
+
+\begin{DoxyCompactList}\small\item\em Log file where to write log messages. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{structLoggingModule_adcc76afe247ea00966077346c10258eb}{current\+File}\hypertarget{structLoggingModule_adcc76afe247ea00966077346c10258eb}{}\label{structLoggingModule_adcc76afe247ea00966077346c10258eb}
+
+\begin{DoxyCompactList}\small\item\em Name of the current log file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Module used to handle logging messages. 
+
+A Chimera\+TK module is producing messages, that are send to the \hyperlink{structLoggingModule}{Logging\+Module} via the {\ttfamily message} variable. The message is then put into the logfile ring buffer and published in the {\ttfamily Log\+File\+Tail}. In addidtion the message can be put to an ostream. Available streams are\+:
+\begin{DoxyItemize}
+\item file stream
+\item cout/cerr
+\end{DoxyItemize}
+
+You can control which stream is used by setting the target\+Stream varibale\+: 0\+: cout/cerr and logfile 1\+: logfile 2\+: cout/cerr 3\+: none
+
+The logfile is given by the client using the log\+File variable. 
+
+\subsection{Member Function Documentation}
+\index{Logging\+Module@{Logging\+Module}!main\+Loop@{main\+Loop}}
+\index{main\+Loop@{main\+Loop}!Logging\+Module@{Logging\+Module}}
+\subsubsection[{\texorpdfstring{main\+Loop()}{mainLoop()}}]{\setlength{\rightskip}{0pt plus 5cm}void Logging\+Module\+::main\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{structLoggingModule_ae1447048dd90e2a7951d23c33987650f}{}\label{structLoggingModule_ae1447048dd90e2a7951d23c33987650f}
+Application core main loop. 
+
+\subsection{Member Data Documentation}
+\index{Logging\+Module@{Logging\+Module}!log\+File@{log\+File}}
+\index{log\+File@{log\+File}!Logging\+Module@{Logging\+Module}}
+\subsubsection[{\texorpdfstring{log\+File}{logFile}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$std\+::string$>$ Logging\+Module\+::log\+File}\hypertarget{structLoggingModule_a28f86954c8525e7d7820e4c969502aa6}{}\label{structLoggingModule_a28f86954c8525e7d7820e4c969502aa6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"Logfile"}, \textcolor{stringliteral}{""},
+    \textcolor{stringliteral}{"Name of the external logfile. If empty messages are pushed to cout/cerr"} \}
+\end{DoxyCode}
+\index{Logging\+Module@{Logging\+Module}!log\+Level@{log\+Level}}
+\index{log\+Level@{log\+Level}!Logging\+Module@{Logging\+Module}}
+\subsubsection[{\texorpdfstring{log\+Level}{logLevel}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$uint$>$ Logging\+Module\+::log\+Level}\hypertarget{structLoggingModule_a73312a5a93ca0d7ef9e90c02c3dd33b4}{}\label{structLoggingModule_a73312a5a93ca0d7ef9e90c02c3dd33b4}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"logLevel"}, \textcolor{stringliteral}{""},
+      \textcolor{stringliteral}{"Current log level used for messages."} \}
+\end{DoxyCode}
+\index{Logging\+Module@{Logging\+Module}!log\+Tail@{log\+Tail}}
+\index{log\+Tail@{log\+Tail}!Logging\+Module@{Logging\+Module}}
+\subsubsection[{\texorpdfstring{log\+Tail}{logTail}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Output$<$std\+::string$>$ Logging\+Module\+::log\+Tail}\hypertarget{structLoggingModule_a454442d06a719179e5719978d5ca26d4}{}\label{structLoggingModule_a454442d06a719179e5719978d5ca26d4}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"LogTail"}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{"Tail of the logging stream."},
+      \{ \textcolor{stringliteral}{"CS"}, \textcolor{stringliteral}{"PROCESS"}, getName() \} \}
+\end{DoxyCode}
+\index{Logging\+Module@{Logging\+Module}!message@{message}}
+\index{message@{message}!Logging\+Module@{Logging\+Module}}
+\subsubsection[{\texorpdfstring{message}{message}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Push\+Input$<$std\+::string$>$ Logging\+Module\+::message}\hypertarget{structLoggingModule_a887b82c4a2fbe084b134c5a91da7cf89}{}\label{structLoggingModule_a887b82c4a2fbe084b134c5a91da7cf89}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"message"}, \textcolor{stringliteral}{""},
+      \textcolor{stringliteral}{"Message to be logged."} \}
+\end{DoxyCode}
+\index{Logging\+Module@{Logging\+Module}!message\+Counter@{message\+Counter}}
+\index{message\+Counter@{message\+Counter}!Logging\+Module@{Logging\+Module}}
+\subsubsection[{\texorpdfstring{message\+Counter}{messageCounter}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Logging\+Module\+::message\+Counter}\hypertarget{structLoggingModule_a30626e4224e872a8b8ea94f4b3df810f}{}\label{structLoggingModule_a30626e4224e872a8b8ea94f4b3df810f}
+Number of messages stored in the tail \index{Logging\+Module@{Logging\+Module}!message\+Level@{message\+Level}}
+\index{message\+Level@{message\+Level}!Logging\+Module@{Logging\+Module}}
+\subsubsection[{\texorpdfstring{message\+Level}{messageLevel}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Push\+Input$<$uint$>$ Logging\+Module\+::message\+Level}\hypertarget{structLoggingModule_aff12a4b08ef4ae4992880cdb953a3544}{}\label{structLoggingModule_aff12a4b08ef4ae4992880cdb953a3544}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"messageLevel"}, \textcolor{stringliteral}{""},
+        \textcolor{stringliteral}{"Message log level."} \}
+\end{DoxyCode}
+\index{Logging\+Module@{Logging\+Module}!tail\+Length@{tail\+Length}}
+\index{tail\+Length@{tail\+Length}!Logging\+Module@{Logging\+Module}}
+\subsubsection[{\texorpdfstring{tail\+Length}{tailLength}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$uint$>$ Logging\+Module\+::tail\+Length}\hypertarget{structLoggingModule_a04e42940e162a4b5788bfc837f5a0854}{}\label{structLoggingModule_a04e42940e162a4b5788bfc837f5a0854}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"maxLength"}, \textcolor{stringliteral}{""},
+      \textcolor{stringliteral}{"Maximum number of messages to be shown in the logging stream tail."} \}
+\end{DoxyCode}
+\index{Logging\+Module@{Logging\+Module}!target\+Stream@{target\+Stream}}
+\index{target\+Stream@{target\+Stream}!Logging\+Module@{Logging\+Module}}
+\subsubsection[{\texorpdfstring{target\+Stream}{targetStream}}]{\setlength{\rightskip}{0pt plus 5cm}ctk\+::\+Scalar\+Poll\+Input$<$uint$>$ Logging\+Module\+::target\+Stream}\hypertarget{structLoggingModule_a514d6e2c4e43b577c71e25c09be6b6d0}{}\label{structLoggingModule_a514d6e2c4e43b577c71e25c09be6b6d0}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{this}, \textcolor{stringliteral}{"targetStream"}, \textcolor{stringliteral}{""},
+          \textcolor{stringliteral}{"Set the tagret stream: 0 (cout/cerr+logfile), 1 (logfile), 2 (cout/cerr), 3 (none)"} \}
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Logging\+Module.\+h\item 
+src/Logging\+Module.\+cc\end{DoxyCompactItemize}
