@@ -1,10 +1,21 @@
 var searchData=
 [
-  ['call_5fvirtual_5ffunction_5ftemplate',['CALL_VIRTUAL_FUNCTION_TEMPLATE',['../util_2include_2_virtual_function_template_8h.html#a9ae25c66f893b5dffc9251887f2bb9a5',1,'VirtualFunctionTemplate.h']]],
-  ['check_5fsigned_5ffixed_5fpoint_5fno_5ffractional',['CHECK_SIGNED_FIXED_POINT_NO_FRACTIONAL',['../test_fixed_point_converter_8cpp.html#a81f43db6e3f488cde3cfae84a86db022',1,'testFixedPointConverter.cpp']]],
-  ['check_5ftimeout',['CHECK_TIMEOUT',['../test_subdevice_backend_8cpp.html#a4231b3c2fbf5750f62fc192c34b48a27',1,'testSubdeviceBackend.cpp']]],
-  ['chimeratk_5fdeviceaccess_5fversion',['CHIMERATK_DEVICEACCESS_VERSION',['../build_2generated__include_2_device_access_version_8h.html#a288161e891fcc6645b0e71829dc431e8',1,'DeviceAccessVersion.h']]],
-  ['clock_5fmux_5fregister_5fstring',['CLOCK_MUX_REGISTER_STRING',['../test_dummy_backend_8cpp.html#a476d0f9665b137cb4f5530afce2bdb35',1,'testDummyBackend.cpp']]],
-  ['clock_5freset_5fregister_5fstring',['CLOCK_RESET_REGISTER_STRING',['../test_dummy_backend_8cpp.html#afc582965be2b50c7458505aa0fc5f94b',1,'testDummyBackend.cpp']]],
-  ['compiler_5fid',['COMPILER_ID',['../_c_make_c_compiler_id_8c.html#a81dee0709ded976b2e0319239f72d174',1,'COMPILER_ID():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a81dee0709ded976b2e0319239f72d174',1,'COMPILER_ID():&#160;CMakeCXXCompilerId.cpp']]]
+  ['declare_5fmulti_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes',['DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES',['../util_2include_2_supported_user_types_8h.html#a393c59a0bbe800ef9a1420bc5f8f8be7',1,'SupportedUserTypes.h']]],
+  ['declare_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes',['DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES',['../util_2include_2_supported_user_types_8h.html#a8256edfa28cb73e5de13c92e1920369d',1,'SupportedUserTypes.h']]],
+  ['def_5ftypename',['DEF_TYPENAME',['../test_fixed_point_converter_8cpp.html#a4b4edc265050c3971e52f9643040e649',1,'testFixedPointConverter.cpp']]],
+  ['define_5ftemplate_5fvtable_5ffiller_5fhelper_5f1',['DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_1',['../util_2include_2_virtual_function_template_8h.html#a2752e639b0d71e7d2673f90f44403e97',1,'VirtualFunctionTemplate.h']]],
+  ['define_5ftemplate_5fvtable_5ffiller_5fhelper_5f10',['DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_10',['../util_2include_2_virtual_function_template_8h.html#a31e8622b33fa3c72be25c2b69c2cfc04',1,'VirtualFunctionTemplate.h']]],
+  ['define_5ftemplate_5fvtable_5ffiller_5fhelper_5f2',['DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_2',['../util_2include_2_virtual_function_template_8h.html#aa23d58654adc6274f87224cc2bb28da0',1,'VirtualFunctionTemplate.h']]],
+  ['define_5ftemplate_5fvtable_5ffiller_5fhelper_5f3',['DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_3',['../util_2include_2_virtual_function_template_8h.html#a916724c2cb41b77f9d7e0fc69846aa86',1,'VirtualFunctionTemplate.h']]],
+  ['define_5ftemplate_5fvtable_5ffiller_5fhelper_5f4',['DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_4',['../util_2include_2_virtual_function_template_8h.html#a73e46bbf5dd8e0c4e81d961652dc8d67',1,'VirtualFunctionTemplate.h']]],
+  ['define_5ftemplate_5fvtable_5ffiller_5fhelper_5f5',['DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_5',['../util_2include_2_virtual_function_template_8h.html#a99f949d1d128de8ea12d83e06346d41b',1,'VirtualFunctionTemplate.h']]],
+  ['define_5ftemplate_5fvtable_5ffiller_5fhelper_5f6',['DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_6',['../util_2include_2_virtual_function_template_8h.html#a048b3666b6ebb48dd224207879d969df',1,'VirtualFunctionTemplate.h']]],
+  ['define_5ftemplate_5fvtable_5ffiller_5fhelper_5f7',['DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_7',['../util_2include_2_virtual_function_template_8h.html#afe8ceb42a6a55ef1535505f240ab3af2',1,'VirtualFunctionTemplate.h']]],
+  ['define_5ftemplate_5fvtable_5ffiller_5fhelper_5f8',['DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_8',['../util_2include_2_virtual_function_template_8h.html#ab3c036ff2d0db2e114f50c901025732f',1,'VirtualFunctionTemplate.h']]],
+  ['define_5ftemplate_5fvtable_5ffiller_5fhelper_5f9',['DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_9',['../util_2include_2_virtual_function_template_8h.html#a1b53a27a67af1c6ee81c88bab850df44',1,'VirtualFunctionTemplate.h']]],
+  ['define_5fvirtual_5ffunction_5ftemplate_5fvtable',['DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE',['../util_2include_2_virtual_function_template_8h.html#af17cdfe4bdc6a97d29cda32a0253187f',1,'VirtualFunctionTemplate.h']]],
+  ['define_5fvirtual_5ffunction_5ftemplate_5fvtable_5ffiller',['DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER',['../util_2include_2_virtual_function_template_8h.html#ad55f079dbae8d46794e4a68782511746',1,'VirtualFunctionTemplate.h']]],
+  ['dma_5fdata_5foffset',['DMA_DATA_OFFSET',['../device__backends_2pcie_2include_2pciedev__io_8h.html#aa293c11b73c1e8a741c9060d8ef1c021',1,'pciedev_io.h']]],
+  ['dma_5fdata_5foffset_5fbyte',['DMA_DATA_OFFSET_BYTE',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a9fa9f95b2d69f5b07cb9cb30b1ba9afe',1,'pciedev_io.h']]],
+  ['dmmy_5fas_5fascii',['DMMY_AS_ASCII',['../test_pcie_backend_8cpp.html#a129f24ffa58f2c3dcb7d527e18cf0770',1,'testPcieBackend.cpp']]]
 ];

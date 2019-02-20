@@ -25,6 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-DeviceAccess
+   &#160;<span id="projectnumber">master</span>
    </div>
   </td>
  </tr>
@@ -115,7 +116,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad822950d59282d538922d5ac05edd94f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_factory.html#ad822950d59282d538922d5ac05edd94f">getDMapFilePath</a> ()</td></tr>
 <tr class="memdesc:ad822950d59282d538922d5ac05edd94f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the _DMapFilePath.  <a href="#ad822950d59282d538922d5ac05edd94f">More...</a><br /></td></tr>
 <tr class="separator:ad822950d59282d538922d5ac05edd94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eeda70f92759cf25e039bf585f1b6f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_factory.html#a6eeda70f92759cf25e039bf585f1b6f8">registerBackendType</a> (std::string backendType, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;(*creatorFunction)(std::string address, std::map&lt; std::string, std::string &gt; parameters), std::vector&lt; std::string &gt; sdmParameterNames={}, std::string deviceAccessVersion=<a class="el" href="build_2generated__include_2_device_access_version_8h.html#a288161e891fcc6645b0e71829dc431e8">CHIMERATK_DEVICEACCESS_VERSION</a>)</td></tr>
+<tr class="memitem:a6eeda70f92759cf25e039bf585f1b6f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_factory.html#a6eeda70f92759cf25e039bf585f1b6f8">registerBackendType</a> (std::string backendType, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;(*creatorFunction)(std::string address, std::map&lt; std::string, std::string &gt; parameters), std::vector&lt; std::string &gt; sdmParameterNames={}, std::string deviceAccessVersion=CHIMERATK_DEVICEACCESS_VERSION)</td></tr>
 <tr class="memdesc:a6eeda70f92759cf25e039bf585f1b6f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a backend by the name backendType with the given creatorFunction.  <a href="#a6eeda70f92759cf25e039bf585f1b6f8">More...</a><br /></td></tr>
 <tr class="separator:a6eeda70f92759cf25e039bf585f1b6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac296a980ae51626ba1cd267870f8abf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_backend_factory.html#ac296a980ae51626ba1cd267870f8abf3">registerBackendType</a> (std::string interface, std::string protocol, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;(*creatorFunction)(std::string host, std::string instance, std::list&lt; std::string &gt; parameters, std::string mapFileName), std::string version)</td></tr>
@@ -438,7 +439,7 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>deviceAccessVersion</em> = <code><a class="el" href="build_2generated__include_2_device_access_version_8h.html#a288161e891fcc6645b0e71829dc431e8">CHIMERATK_DEVICEACCESS_VERSION</a></code>&#160;</td>
+          <td class="paramname"><em>deviceAccessVersion</em> = <code>CHIMERATK_DEVICEACCESS_VERSION</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -451,7 +452,7 @@ Protected Attributes</h2></td></tr>
 <p>Register a backend by the name backendType with the given creatorFunction. </p>
 <p>If a backend by the given name is already registered, a <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> is thrown.</p>
 <p>The optional parameter sdmParameterNames specifies a list of key names, which is used when a device is created using a SDM URI. The parameters from the (unkeyed) parameter list of the SDM are put into in order the parameter map by the keys specified in sdmParameterNames. If sdmParameterNames is left empty, the device cannot be created through a SDM URI when parameters need to be specified.</p>
-<p>The last argument deviceAccessVersion must always be set to CHIMERATK_DEVICEACCESS_VERSION as defined in DeviceAccessVersion.h. This is automatically the case if the argument is omitted, so it should never be specified. </p>
+<p>The last argument deviceAccessVersion must always be set to CHIMERATK_DEVICEACCESS_VERSION as defined in <a class="el" href="_device_access_version_8h.html">DeviceAccessVersion.h</a>. This is automatically the case if the argument is omitted, so it should never be specified. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="_custom_backend_8cc-example.html#a7">CustomBackend.cc</a>.</dd>
 </dl>
 <p>Definition at line <a class="el" href="_backend_factory_8cc_source.html#l00032">32</a> of file <a class="el" href="_backend_factory_8cc_source.html">BackendFactory.cc</a>.</p>
@@ -670,13 +671,13 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/device_backends/include/<a class="el" href="device__backends_2include_2_backend_factory_8h_source.html">BackendFactory.h</a></li>
-<li>/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/DeviceAccess/device_backends/src/<a class="el" href="_backend_factory_8cc_source.html">BackendFactory.cc</a></li>
+<li>device_backends/include/<a class="el" href="device__backends_2include_2_backend_factory_8h_source.html">BackendFactory.h</a></li>
+<li>device_backends/src/<a class="el" href="_backend_factory_8cc_source.html">BackendFactory.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 19 2019 06:53:13 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 20 2019 14:09:53 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
