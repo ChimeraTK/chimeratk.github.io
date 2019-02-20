@@ -26,13 +26,6 @@ function update_tag(){
       return -1
   fi
   
-  # check if the repository is supposed to have a doxygen documentation in this version
-  if ! [ -e cmake/Doxyfile.in ]; then
-      echo No cmake/Doxyfile.in in ${repo} ${TAG}. Not creating documentation.
-      rm -rf $DOC_DIR/$EPOCH
-      return 0
-  fi
-  
   # check if the current revision already has documentation
   local GIT_ID=`git rev-parse HEAD`
   local LAST_BUILD=`cat $DOC_DIR/$EPOCH/git.ID 2>/dev/null || echo NONE`
@@ -41,43 +34,78 @@ function update_tag(){
       return 0
   fi
   
-  # create Doxyfile from template (without running cmake, since dependencies are not available)
-  # step 1: collect information from CMakeLists.txt etc.
-  PROJECT_NAME=`grep -i '^ *project([^()]*) *$' $CHECKOUT_DIR/CMakeLists.txt | sed -e 's/^.*( *//' -e 's/ *).*$//'`
-  DOXYGEN_PROJECT_NUMBER=$TAG
-  CMAKE_CURRENT_SOURCE_DIR=$CHECKOUT_DIR
-  CMAKE_CURRENT_BINARY_DIR=$DOC_DIR/$EPOCH
-  # create Doxyfile, step 2: apply variable replacement to template
-  cp $CHECKOUT_DIR/cmake/Doxyfile.in $CHECKOUT_DIR/Doxyfile
-  sed -i $CHECKOUT_DIR/Doxyfile -e "s!@PROJECT_NAME@!${PROJECT_NAME}!"
-  sed -i $CHECKOUT_DIR/Doxyfile -e "s!@DOXYGEN_PROJECT_NUMBER@!${DOXYGEN_PROJECT_NUMBER}!"
-  sed -i $CHECKOUT_DIR/Doxyfile -e "s!@CMAKE_CURRENT_SOURCE_DIR@!${CMAKE_CURRENT_SOURCE_DIR}!"
-  sed -i $CHECKOUT_DIR/Doxyfile -e "s!@CMAKE_CURRENT_BINARY_DIR@!${CMAKE_CURRENT_BINARY_DIR}!"
+  ###################################
+  # Documentation method 1: Doxygen
+  ###################################
+  if [ -e cmake/Doxyfile.in -a ! -e doc/index.rst ]; then
+    
+    # create Doxyfile from template (without running cmake, since dependencies are not available)
+    # step 1: collect information from CMakeLists.txt etc.
+    PROJECT_NAME=`grep -i '^ *project([^()]*) *$' $CHECKOUT_DIR/CMakeLists.txt | sed -e 's/^.*( *//' -e 's/ *).*$//'`
+    DOXYGEN_PROJECT_NUMBER=$TAG
+    CMAKE_CURRENT_SOURCE_DIR=$CHECKOUT_DIR
+    CMAKE_CURRENT_BINARY_DIR=$DOC_DIR/$EPOCH
+    # create Doxyfile, step 2: apply variable replacement to template
+    cp $CHECKOUT_DIR/cmake/Doxyfile.in $CHECKOUT_DIR/Doxyfile
+    sed -i $CHECKOUT_DIR/Doxyfile -e "s!@PROJECT_NAME@!${PROJECT_NAME}!"
+    sed -i $CHECKOUT_DIR/Doxyfile -e "s!@DOXYGEN_PROJECT_NUMBER@!${DOXYGEN_PROJECT_NUMBER}!"
+    sed -i $CHECKOUT_DIR/Doxyfile -e "s!@CMAKE_CURRENT_SOURCE_DIR@!${CMAKE_CURRENT_SOURCE_DIR}!"
+    sed -i $CHECKOUT_DIR/Doxyfile -e "s!@CMAKE_CURRENT_BINARY_DIR@!${CMAKE_CURRENT_BINARY_DIR}!"
+    
+    # create/clean output directory
+    rm -rf $DOC_DIR/$EPOCH
+    mkdir -p $DOC_DIR/$EPOCH
+
+    # create the docu
+    echo Creating docu for ${repo} $TAG.
+    cd $CHECKOUT_DIR
+    doxygen > /dev/null
+    if ! [ $? == "0" ] ; then
+        echo ERROR: Error creating documentation for ${repo} $TAG.
+        return -1
+    fi
+
+    # correct the directory structure
+    cp -r $DOC_DIR/$EPOCH/doc/html/* $DOC_DIR/$EPOCH
+    if ! [ $? == "0" ] ; then
+        echo ERROR: Error copying documentation for ${repo} $TAG.
+        cd $DOC_DIR
+        rm -rf $EPOCH
+        git reset -- $EPOCH > /dev/null 2>&1
+        git checkout $EPOCH > /dev/null 2>&1
+        return -1
+    fi
+    rm -rf $DOC_DIR/$EPOCH/doc
+    
+  ###################################
+  # Documentation method 2: Sphinx
+  ###################################
+  elif [ -e doc/index.rst  ]; then
   
-  # create/clean output directory
-  rm -rf $DOC_DIR/$EPOCH
-  mkdir -p $DOC_DIR/$EPOCH
+    # create conf.py from template
+    # step 1: collect information from CMakeLists.txt etc.
+    PROJECT_NAME=`grep -i '^ *project([^()]*) *$' $CHECKOUT_DIR/CMakeLists.txt | sed -e 's/^.*( *//' -e 's/ *).*$//'`
+    autor=`grep -i '^ *set(author "[^()]"*) *$' $CHECKOUT_DIR/CMakeLists.txt | sed -e 's/^.*"//' -e 's/".*$//'`
+    CMAKE_SOURCE_DIR=$CHECKOUT_DIR
+    CMAKE_BINARY_DIRECTORY=$DOC_DIR/$EPOCH
+    # create Doxyfile, step 2: apply variable replacement to template
+    cp $CHECKOUT_DIR/cmake/conf.py.in $CHECKOUT_DIR/conf.py
+    sed -i $CHECKOUT_DIR/conf.py -e "s!\\\${PROJECT_NAME}!${PROJECT_NAME}!"
+    sed -i $CHECKOUT_DIR/conf.py -e "s!\\\${author}!${author}!"
+    sed -i $CHECKOUT_DIR/conf.py -e "s!\\\${CMAKE_SOURCE_DIR}!${CMAKE_SOURCE_DIR}!"
+    sed -i $CHECKOUT_DIR/conf.py -e "s!\\\${CMAKE_SOURCE_DIR}!${CMAKE_SOURCE_DIR}!"
 
-  # create the docu
-  echo Creating docu for ${repo} $TAG.
-  cd $CHECKOUT_DIR
-  doxygen > /dev/null
-  if ! [ $? == "0" ] ; then
-      echo ERROR: Error creating documentation for ${repo} $TAG.
-      return -1
+    sphinx-build -c $CHECKOUT_DIR -b html $CHECKOUT_DIR/doc $DOC_DIR/$EPOCH > /dev/null
+
+  ###################################
+  # No documentation method detected!
+  ###################################
+  else
+    echo No cmake/Doxyfile.in and no doc/index.rst in ${repo} ${TAG}. Not creating documentation.
+    rm -rf $DOC_DIR/$EPOCH
+    return 0
   fi
 
-  # correct the directory structure
-  cp -r $DOC_DIR/$EPOCH/doc/html/* $DOC_DIR/$EPOCH
-  if ! [ $? == "0" ] ; then
-      echo ERROR: Error copying documentation for ${repo} $TAG.
-      cd $DOC_DIR
-      rm -rf $EPOCH
-      git reset -- $EPOCH > /dev/null 2>&1
-      git checkout $EPOCH > /dev/null 2>&1
-      return -1
-  fi
-  rm -rf $DOC_DIR/$EPOCH/doc/html
   
   # save the git ID in the outptut directory
   echo $GIT_ID > $DOC_DIR/$EPOCH/git.ID
