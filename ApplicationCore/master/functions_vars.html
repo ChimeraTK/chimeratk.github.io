@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore
-   &#160;<span id="projectnumber">01.02.00</span>
+   &#160;<span id="projectnumber">master</span>
    </div>
   </td>
  </tr>
@@ -77,6 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions_vars.html"><span>Variables</span></a></li>
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
       <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
@@ -101,7 +102,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
       <li><a href="#index_u"><span>u</span></a></li>
-      <li class="current"><a href="#index_v"><span>v</span></a></li>
+      <li><a href="#index_v"><span>v</span></a></li>
+      <li class="current"><a href="#index_w"><span>w</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -147,7 +149,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a681dffe6999625fd1087426de02a75b0">ChimeraTK::ConfigReader</a>
 </li>
 <li>_fullyQualifiedName
-: <a class="el" href="class_chimera_t_k_1_1_debug_decorator_register_accessor.html#a612571811c1dae19e9c2791f32764007">ChimeraTK::DebugDecoratorRegisterAccessor&lt; UserType &gt;</a>
+: <a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html#a15e94bb4bfe4978ee871848ca96b8c7c">ChimeraTK::DebugPrintAccessorDecorator&lt; UserType &gt;</a>
+</li>
+<li>_handleRead
+: <a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#af3c75f0bd6bd0712c76f5a5fee2a5e3f">ChimeraTK::TestableModeAccessorDecorator&lt; UserType &gt;</a>
+</li>
+<li>_handleWrite
+: <a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#af63159c4004f5123cf4aeebe49809c06">ChimeraTK::TestableModeAccessorDecorator&lt; UserType &gt;</a>
+</li>
+<li>_hasReturnSlave
+: <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a6cc8759cb30495d47af53116e1a136ba">ChimeraTK::FeedingFanOut&lt; UserType &gt;</a>
 </li>
 <li>_historyLength
 : <a class="el" href="struct_chimera_t_k_1_1history_1_1_server_history.html#a0ed269372d8bde802cdab0ebb3f19bc7">ChimeraTK::history::ServerHistory</a>
@@ -184,10 +195,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="struct_chimera_t_k_1_1_functor_set_values_array.html#a65bddd225e6556e83ea96b6233721870">ChimeraTK::FunctorSetValuesArray</a>
 , <a class="el" href="struct_chimera_t_k_1_1history_1_1_accessor_attacher.html#a8358d3456e687ba6b518fcac1a6f3a31">ChimeraTK::history::AccessorAttacher</a>
 , <a class="el" href="class_chimera_t_k_1_1_module.html#a44c918cb05abb710ee9f6e118fc2951e">ChimeraTK::Module</a>
+, <a class="el" href="struct_chimera_t_k_1_1_version_number_updating_register_decorator.html#a1e91edcb0508804de3ca8bfbbd81d738">ChimeraTK::VersionNumberUpdatingRegisterDecorator&lt; T &gt;</a>
 </li>
 <li>_processed
 : <a class="el" href="struct_chimera_t_k_1_1_array_functor_fill.html#a55094377c76ced52ce3e2469d3ac902b">ChimeraTK::ArrayFunctorFill</a>
 , <a class="el" href="struct_chimera_t_k_1_1_functor_fill.html#a1600638b23003723680ebdc19a590294">ChimeraTK::FunctorFill</a>
+</li>
+<li>_returnChannelSlave
+: <a class="el" href="class_chimera_t_k_1_1_threaded_fan_out_with_return.html#a6f12921767add9b501616acabbbea4e4">ChimeraTK::ThreadedFanOutWithReturn&lt; UserType &gt;</a>
+</li>
+<li>_returnSlave
+: <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a1ea17f80b08cd42ea1967ad095cef30d">ChimeraTK::FeedingFanOut&lt; UserType &gt;</a>
 </li>
 <li>_storage
 : <a class="el" href="struct_chimera_t_k_1_1detail_1_1_data_space_creator.html#a0e90e895cec74cf0eae902144313e43a">ChimeraTK::detail::DataSpaceCreator</a>
@@ -198,6 +216,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>_thread
 : <a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html#a2eb028092be2b991ab5ba2241ed392ce">ChimeraTK::ThreadedFanOut&lt; UserType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_threaded_fan_out_with_return.html#ae557a2ff653c55e7c1502f256861e8d8">ChimeraTK::ThreadedFanOutWithReturn&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html#a1490726c33eaa9aea2bbb38b90d29ada">ChimeraTK::TriggerFanOut</a>
 </li>
 <li>_type
@@ -212,6 +231,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>_values
 : <a class="el" href="struct_chimera_t_k_1_1_array_functor_fill.html#a784dfa69d2d55585bbf2d82bfaa2275b">ChimeraTK::ArrayFunctorFill</a>
+</li>
+<li>_variableIdRead
+: <a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#a5922f78f101e582a54658e546b7e5b64">ChimeraTK::TestableModeAccessorDecorator&lt; UserType &gt;</a>
+</li>
+<li>_variableIdWrite
+: <a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#ac6be7c67b5087ce36ea3556dd104c6da">ChimeraTK::TestableModeAccessorDecorator&lt; UserType &gt;</a>
+</li>
+<li>_version
+: <a class="el" href="struct_chimera_t_k_1_1_trigger_fan_out_1_1_send_data_to_consumers.html#af0e258f306ccfdcf277a6f91168181b4">ChimeraTK::TriggerFanOut::SendDataToConsumers</a>
+</li>
+<li>_withReturn
+: <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#aeb1f2f3e239b92d48edacd5962df4e1e">ChimeraTK::FeedingFanOut&lt; UserType &gt;</a>
 </li>
 </ul>
 
@@ -261,6 +292,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>currentGroupName
 : <a class="el" href="struct_chimera_t_k_1_1detail_1_1_h5storage.html#a6776edd915d7409a6037c244f9ff8bcc">ChimeraTK::detail::H5storage</a>
 </li>
+<li>currentVersionNumber
+: <a class="el" href="class_chimera_t_k_1_1_application_module.html#ad8476bb19cd8ded587db75a19b9ffa15">ChimeraTK::ApplicationModule</a>
+</li>
 </ul>
 
 
@@ -295,6 +329,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>deviceMap
 : <a class="el" href="class_chimera_t_k_1_1_application.html#a0b48d873e427c274811a351882a50555">ChimeraTK::Application</a>
+</li>
+<li>dir
+: <a class="el" href="struct_chimera_t_k_1_1_variable_direction.html#a731e6cd5f58f1f014d443434f9ff6219">ChimeraTK::VariableDirection</a>
 </li>
 <li>direction
 : <a class="el" href="struct_chimera_t_k_1_1_variable_network_node__data.html#aeb392b6238bd9ec1603d16868a8aec33">ChimeraTK::VariableNetworkNode_data</a>
@@ -357,13 +394,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>groupList
 : <a class="el" href="struct_chimera_t_k_1_1detail_1_1_h5storage.html#aff9a229d87ae0b604d460042a3ae68f4">ChimeraTK::detail::H5storage</a>
 </li>
+<li>groupMap
+: <a class="el" href="struct_chimera_t_k_1_1history_1_1_server_history.html#a2b1e85f6dd4a1c4dc48a716b45bf51b4">ChimeraTK::history::ServerHistory</a>
+, <a class="el" href="struct_chimera_t_k_1_1_micro_d_a_q.html#a32d5bdf7612f9cb5484322e57de672ab">ChimeraTK::MicroDAQ</a>
+</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
-<li>idMap
-: <a class="el" href="class_chimera_t_k_1_1_application.html#a1a554d8b7b28af8c9efa2797325c1464">ChimeraTK::Application</a>
-</li>
 <li>impl
 : <a class="el" href="class_chimera_t_k_1_1_fan_out.html#a59e3cf6295e42416cbdf35a026d664b0">ChimeraTK::FanOut&lt; UserType &gt;</a>
 </li>
@@ -634,9 +672,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_chimera_t_k_1_1_variable_network.html#ada5fd00357007bceaf88a20c81196c08">ChimeraTK::VariableNetwork</a>
 , <a class="el" href="struct_chimera_t_k_1_1_variable_network_node__data.html#a5f9b8539eb8e5c235a9f4be9a2771063">ChimeraTK::VariableNetworkNode_data</a>
 </li>
-<li>variableId
-: <a class="el" href="class_chimera_t_k_1_1_test_decorator_register_accessor.html#a35316848e60e724e3195e6355589abbc">ChimeraTK::TestDecoratorRegisterAccessor&lt; UserType &gt;</a>
-</li>
 <li>variableMap
 : <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a790086daccf009a91f4cd3fc675bc1f9">ChimeraTK::ConfigReader</a>
 </li>
@@ -645,6 +680,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>variables
 : <a class="el" href="class_chimera_t_k_1_1_control_system_module.html#a9d62aca2baf414b4d94aa7a328f180ce">ChimeraTK::ControlSystemModule</a>
+</li>
+<li>versionNumber
+: <a class="el" href="class_chimera_t_k_1_1_constant_accessor.html#ac6f8044ac83164bf1cf57f65e93a98e4">ChimeraTK::ConstantAccessor&lt; UserType &gt;</a>
 </li>
 <li>virtualisedModule
 : <a class="el" href="class_chimera_t_k_1_1_module_impl.html#a2a3b41576cb2e2ef11a3cdb70f0674ef">ChimeraTK::ModuleImpl</a>
@@ -659,10 +697,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_chimera_t_k_1_1_device_module.html#a8100399439fb611a1df16093c2aac7fa">ChimeraTK::DeviceModule</a>
 </li>
 </ul>
+
+
+<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
+<li>withReturn
+: <a class="el" href="struct_chimera_t_k_1_1_variable_direction.html#a7c93d9b94dea8bb79d01bbe612bfbb29">ChimeraTK::VariableDirection</a>
+</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 30 2018 06:53:36 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 20 2019 13:46:46 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

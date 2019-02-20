@@ -12,6 +12,8 @@ var searchData=
   ['consumingfanout',['ConsumingFanOut',['../class_chimera_t_k_1_1_consuming_fan_out.html#ab9f4077df3bf41714915063897d90b9b',1,'ChimeraTK::ConsumingFanOut']]],
   ['controlsystemmodule',['ControlSystemModule',['../class_chimera_t_k_1_1_control_system_module.html#acc37ec2c01d25a47889189b2170b7d89',1,'ChimeraTK::ControlSystemModule::ControlSystemModule(const std::string &amp;variableNamePrefix=&quot;&quot;)'],['../class_chimera_t_k_1_1_control_system_module.html#a40fe0e15a957bd05d88ab4a29380b897',1,'ChimeraTK::ControlSystemModule::ControlSystemModule(ControlSystemModule &amp;&amp;other)']]],
   ['countconsumingnodes',['countConsumingNodes',['../class_chimera_t_k_1_1_variable_network.html#a9c48002e86e57476522a481ab45d418c',1,'ChimeraTK::VariableNetwork']]],
+  ['createandgetsubmodule',['createAndGetSubmodule',['../class_chimera_t_k_1_1_virtual_module.html#a00cabd2cb202e7dc2a2daba1a5db58bd',1,'ChimeraTK::VirtualModule']]],
+  ['createandgetsubmodulerecursive',['createAndGetSubmoduleRecursive',['../class_chimera_t_k_1_1_virtual_module.html#a28338588d4dd3ad1deac932ae7b70a72',1,'ChimeraTK::VirtualModule']]],
   ['createapplicationvariable',['createApplicationVariable',['../class_chimera_t_k_1_1_application.html#a11ee00018ac000ba12d9e250f5803a28',1,'ChimeraTK::Application']]],
   ['createarray',['createArray',['../struct_chimera_t_k_1_1_config_reader.html#afba6fa48bc3f8a00adae168e72e6f2e0',1,'ChimeraTK::ConfigReader']]],
   ['createarray_3c_20std_3a_3astring_20_3e',['createArray&lt; std::string &gt;',['../namespace_chimera_t_k.html#a708ff6d4b362ef1285e62e2954ff804f',1,'ChimeraTK']]],

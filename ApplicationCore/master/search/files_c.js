@@ -12,6 +12,8 @@ var searchData=
   ['variablenetworknode_2eh',['VariableNetworkNode.h',['../_variable_network_node_8h.html',1,'']]],
   ['variablenetworknodedumpingvisitor_2ecc',['VariableNetworkNodeDumpingVisitor.cc',['../_variable_network_node_dumping_visitor_8cc.html',1,'']]],
   ['variablenetworknodedumpingvisitor_2eh',['VariableNetworkNodeDumpingVisitor.h',['../_variable_network_node_dumping_visitor_8h.html',1,'']]],
+  ['versionnumberupdatingregisterdecorator_2ecc',['VersionNumberUpdatingRegisterDecorator.cc',['../_version_number_updating_register_decorator_8cc.html',1,'']]],
+  ['versionnumberupdatingregisterdecorator_2eh',['VersionNumberUpdatingRegisterDecorator.h',['../_version_number_updating_register_decorator_8h.html',1,'']]],
   ['virtualmodule_2ecc',['VirtualModule.cc',['../_virtual_module_8cc.html',1,'']]],
   ['virtualmodule_2eh',['VirtualModule.h',['../_virtual_module_8h.html',1,'']]],
   ['visitor_2eh',['Visitor.h',['../_visitor_8h.html',1,'']]],

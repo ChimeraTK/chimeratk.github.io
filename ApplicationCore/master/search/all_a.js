@@ -9,7 +9,7 @@ var searchData=
   ['logging',['logging',['../namespacelogging.html',1,'']]],
   ['logging_2ecc',['Logging.cc',['../_logging_8cc.html',1,'']]],
   ['logging_2eh',['Logging.h',['../_logging_8h.html',1,'']]],
-  ['logging_20module_20and_20logger',['Logging module and Logger',['../loggingdoc.html',1,'index']]],
+  ['logging_20module_20and_20logger',['Logging module and Logger',['../loggingdoc.html',1,'']]],
   ['loggingmodule',['LoggingModule',['../classlogging_1_1_logging_module.html',1,'logging']]],
   ['loglevel',['logLevel',['../classlogging_1_1_logging_module.html#a56e605b3ab3beb718f4aa1a283f7164e',1,'logging::LoggingModule::logLevel()'],['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416',1,'logging::LogLevel()']]],
   ['logtail',['logTail',['../classlogging_1_1_logging_module.html#a58341fa99b5ee6c3921e4e1689b933cd',1,'logging::LoggingModule']]],

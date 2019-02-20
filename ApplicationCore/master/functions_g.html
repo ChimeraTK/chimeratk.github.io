@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore
-   &#160;<span id="projectnumber">01.02.00</span>
+   &#160;<span id="projectnumber">master</span>
    </div>
   </td>
  </tr>
@@ -77,6 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
       <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
@@ -145,7 +146,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="struct_chimera_t_k_1_1_micro_d_a_q.html#a42e627fa2435a09859842d5cdd6bc977">ChimeraTK::MicroDAQ</a>
 </li>
 <li>getAccessorList()
-: <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a0fea033e85cadf8cb98fccf96fb694c8">ChimeraTK::EntityOwner</a>
+: <a class="el" href="class_chimera_t_k_1_1_control_system_module.html#af8e4b2d13bdfc111cf2247f2a941edb4">ChimeraTK::ControlSystemModule</a>
+, <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a5b676b5b131827653f08a7acc8b88a66">ChimeraTK::EntityOwner</a>
 </li>
 <li>getAccessorListRecursive()
 : <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a40de1606ef235a05c84b8e24ef06527d">ChimeraTK::EntityOwner</a>
@@ -170,6 +172,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>getConsumingNodes()
 : <a class="el" href="class_chimera_t_k_1_1_variable_network.html#afe9436faf830ef5390a17fedf548f452">ChimeraTK::VariableNetwork</a>
+</li>
+<li>getCurrentVersionNumber()
+: <a class="el" href="class_chimera_t_k_1_1_application.html#a85591458b59766a934c520d3894ea40c">ChimeraTK::Application</a>
+, <a class="el" href="class_chimera_t_k_1_1_application_module.html#acf7f5e081d8dedd9ee61e6f3bc13aa37">ChimeraTK::ApplicationModule</a>
+, <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a83a34142cea47d7396de8a3657004ef7">ChimeraTK::EntityOwner</a>
+, <a class="el" href="class_chimera_t_k_1_1_module.html#a18f537b069bebcf366f78b989f244994">ChimeraTK::Module</a>
 </li>
 <li>getDataList()
 : <a class="el" href="class_chimera_t_k_1_1_profiler.html#ae2d7b43ad38a85884255ff8b21d1b127">ChimeraTK::Profiler</a>
@@ -263,6 +271,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getRegisterName()
 : <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ab1a0f5e7f044c61a8c181a9adf8dc67f">ChimeraTK::VariableNetworkNode</a>
 </li>
+<li>getReturnSlave()
+: <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#abab2b93a016a1c94156ded693be4ffd1">ChimeraTK::FeedingFanOut&lt; UserType &gt;</a>
+</li>
 <li>getScalar()
 : <a class="el" href="class_chimera_t_k_1_1_test_facility.html#aff916781cc38141ed61a28ce37a23397">ChimeraTK::TestFacility</a>
 </li>
@@ -270,7 +281,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a2076a086c363edaf333b6fbd48227c5a">ChimeraTK::EntityOwner</a>
 </li>
 <li>getSubmoduleList()
-: <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a2dd6af036a5e59e05651618dd9c44508">ChimeraTK::EntityOwner</a>
+: <a class="el" href="class_chimera_t_k_1_1_control_system_module.html#ab2b648eb105b3dc55969db1c1328d94c">ChimeraTK::ControlSystemModule</a>
+, <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a43c7cac34c537f203a43b5c924d88126">ChimeraTK::EntityOwner</a>
 </li>
 <li>getSubmoduleListRecursive()
 : <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a3f8825f36ec3d9db2a32f8707afe735c">ChimeraTK::EntityOwner</a>
@@ -298,14 +310,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_chimera_t_k_1_1_variable_network.html#a9c054628a080edfd6da7099e6acc3ee9">ChimeraTK::VariableNetwork</a>
 , <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#a51d34a6bec8e62763365567437f4d524">ChimeraTK::VariableNetworkNode</a>
 </li>
+<li>getVersionNumber()
+: <a class="el" href="class_chimera_t_k_1_1_constant_accessor.html#a56a1a2d3bcac359eca5aaeb776ebe698">ChimeraTK::ConstantAccessor&lt; UserType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a416b11ee48ee9e353c4289c562c385d1">ChimeraTK::FeedingFanOut&lt; UserType &gt;</a>
+</li>
 <li>groupList
 : <a class="el" href="struct_chimera_t_k_1_1detail_1_1_h5storage.html#aff9a229d87ae0b604d460042a3ae68f4">ChimeraTK::detail::H5storage</a>
+</li>
+<li>groupMap
+: <a class="el" href="struct_chimera_t_k_1_1history_1_1_server_history.html#a2b1e85f6dd4a1c4dc48a716b45bf51b4">ChimeraTK::history::ServerHistory</a>
+, <a class="el" href="struct_chimera_t_k_1_1_micro_d_a_q.html#a32d5bdf7612f9cb5484322e57de672ab">ChimeraTK::MicroDAQ</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 30 2018 06:53:36 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 20 2019 13:46:46 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -19,7 +19,7 @@ var searchData=
   ['constmultiplier',['ConstMultiplier',['../struct_chimera_t_k_1_1_const_multiplier.html',1,'ChimeraTK']]],
   ['constmultiplier',['ConstMultiplier',['../struct_chimera_t_k_1_1_const_multiplier.html#afeab5a29eb04a576a012a09f3ac2aaa7',1,'ChimeraTK::ConstMultiplier']]],
   ['constnode',['constNode',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a6472ffa489109f46e0412b3508140294',1,'ChimeraTK::VariableNetworkNode_data']]],
-  ['consuming',['consuming',['../namespace_chimera_t_k.html#a056caaccf8ad3d18cfce3fec4887ad7aa64226f0a9dc3f760929aa3750ad464f3',1,'ChimeraTK']]],
+  ['consuming',['consuming',['../struct_chimera_t_k_1_1_variable_direction.html#a0640f33372cd401d80c0a95c2d5dec35a1fb8e37e4d15a05e6479479785894a9f',1,'ChimeraTK::VariableDirection']]],
   ['consumingfanout',['ConsumingFanOut',['../class_chimera_t_k_1_1_consuming_fan_out.html',1,'ChimeraTK']]],
   ['consumingfanout',['ConsumingFanOut',['../class_chimera_t_k_1_1_consuming_fan_out.html#ab9f4077df3bf41714915063897d90b9b',1,'ChimeraTK::ConsumingFanOut']]],
   ['consumingfanout_2eh',['ConsumingFanOut.h',['../_consuming_fan_out_8h.html',1,'']]],
@@ -29,6 +29,8 @@ var searchData=
   ['controlsystemmodule_2ecc',['ControlSystemModule.cc',['../_control_system_module_8cc.html',1,'']]],
   ['controlsystemmodule_2eh',['ControlSystemModule.h',['../_control_system_module_8h.html',1,'']]],
   ['countconsumingnodes',['countConsumingNodes',['../class_chimera_t_k_1_1_variable_network.html#a9c48002e86e57476522a481ab45d418c',1,'ChimeraTK::VariableNetwork']]],
+  ['createandgetsubmodule',['createAndGetSubmodule',['../class_chimera_t_k_1_1_virtual_module.html#a00cabd2cb202e7dc2a2daba1a5db58bd',1,'ChimeraTK::VirtualModule']]],
+  ['createandgetsubmodulerecursive',['createAndGetSubmoduleRecursive',['../class_chimera_t_k_1_1_virtual_module.html#a28338588d4dd3ad1deac932ae7b70a72',1,'ChimeraTK::VirtualModule']]],
   ['createapplicationvariable',['createApplicationVariable',['../class_chimera_t_k_1_1_application.html#a11ee00018ac000ba12d9e250f5803a28',1,'ChimeraTK::Application']]],
   ['createarray',['createArray',['../struct_chimera_t_k_1_1_config_reader.html#afba6fa48bc3f8a00adae168e72e6f2e0',1,'ChimeraTK::ConfigReader']]],
   ['createarray_3c_20std_3a_3astring_20_3e',['createArray&lt; std::string &gt;',['../namespace_chimera_t_k.html#a708ff6d4b362ef1285e62e2954ff804f',1,'ChimeraTK']]],
@@ -40,6 +42,7 @@ var searchData=
   ['currentbuffer',['currentBuffer',['../struct_chimera_t_k_1_1detail_1_1_h5storage.html#a973129ccd42b8a6c5e9cd44326f4da52',1,'ChimeraTK::detail::H5storage']]],
   ['currentfile',['currentFile',['../struct_chimera_t_k_1_1_micro_d_a_q.html#a946f32d094c32becedbc433f9408e6f5',1,'ChimeraTK::MicroDAQ']]],
   ['currentgroupname',['currentGroupName',['../struct_chimera_t_k_1_1detail_1_1_h5storage.html#a6776edd915d7409a6037c244f9ff8bcc',1,'ChimeraTK::detail::H5storage']]],
+  ['currentversionnumber',['currentVersionNumber',['../class_chimera_t_k_1_1_application_module.html#ad8476bb19cd8ded587db75a19b9ffa15',1,'ChimeraTK::ApplicationModule']]],
   ['detail',['detail',['../namespace_chimera_t_k_1_1detail.html',1,'ChimeraTK']]],
   ['history',['history',['../namespace_chimera_t_k_1_1history.html',1,'ChimeraTK']]]
 ];
