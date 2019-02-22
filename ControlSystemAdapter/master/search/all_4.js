@@ -1,16 +1,14 @@
 var searchData=
 [
   ['datamap',['DataMap',['../class_chimera_t_k_1_1_persistent_data_storage.html#a3b5668a6083f1e6e5d959607a92beb9b',1,'ChimeraTK::PersistentDataStorage']]],
-  ['decoratorfactory',['DecoratorFactory',['../class_chimera_t_k_1_1_decorator_factory.html',1,'ChimeraTK']]],
-  ['decoratorfactory',['DecoratorFactory',['../class_chimera_t_k_1_1_decorator_factory.html#ac90b8c95b0270a2b8d6c501752d99b0d',1,'ChimeraTK::DecoratorFactory::DecoratorFactory(boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; theImpl_, DecoratorType wantedDecoratorType_)'],['../class_chimera_t_k_1_1_decorator_factory.html#ad0d0f1685aa2940efb98c10a9ab0c486',1,'ChimeraTK::DecoratorFactory::DecoratorFactory(const DecoratorFactory &amp;)=delete']]],
+  ['decoratorfactory',['DecoratorFactory',['../class_chimera_t_k_1_1_decorator_factory.html',1,'ChimeraTK::DecoratorFactory&lt; UserType &gt;'],['../class_chimera_t_k_1_1_decorator_factory.html#ac90b8c95b0270a2b8d6c501752d99b0d',1,'ChimeraTK::DecoratorFactory::DecoratorFactory(boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; theImpl_, DecoratorType wantedDecoratorType_)'],['../class_chimera_t_k_1_1_decorator_factory.html#ad0d0f1685aa2940efb98c10a9ab0c486',1,'ChimeraTK::DecoratorFactory::DecoratorFactory(const DecoratorFactory &amp;)=delete']]],
   ['decoratortype',['DecoratorType',['../namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96',1,'ChimeraTK']]],
   ['decoratortypeholder',['DecoratorTypeHolder',['../class_chimera_t_k_1_1_decorator_type_holder.html',1,'ChimeraTK']]],
   ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
   ['devicepvmanager',['DevicePVManager',['../class_chimera_t_k_1_1_device_p_v_manager.html',1,'ChimeraTK']]],
   ['devicepvmanager_2ecc',['DevicePVManager.cc',['../_device_p_v_manager_8cc.html',1,'']]],
   ['devicepvmanager_2eh',['DevicePVManager.h',['../_device_p_v_manager_8h.html',1,'']]],
-  ['devicesynchronizationutility',['DeviceSynchronizationUtility',['../class_chimera_t_k_1_1_device_synchronization_utility.html#a2f9e2ef87a979bec22666de7b0127d00',1,'ChimeraTK::DeviceSynchronizationUtility']]],
-  ['devicesynchronizationutility',['DeviceSynchronizationUtility',['../class_chimera_t_k_1_1_device_synchronization_utility.html',1,'ChimeraTK']]],
+  ['devicesynchronizationutility',['DeviceSynchronizationUtility',['../class_chimera_t_k_1_1_device_synchronization_utility.html',1,'ChimeraTK::DeviceSynchronizationUtility'],['../class_chimera_t_k_1_1_device_synchronization_utility.html#a2f9e2ef87a979bec22666de7b0127d00',1,'ChimeraTK::DeviceSynchronizationUtility::DeviceSynchronizationUtility()']]],
   ['devicesynchronizationutility_2ecc',['DeviceSynchronizationUtility.cc',['../_device_synchronization_utility_8cc.html',1,'']]],
   ['devicesynchronizationutility_2eh',['DeviceSynchronizationUtility.h',['../_device_synchronization_utility_8h.html',1,'']]],
   ['devicetocontrolsystem',['deviceToControlSystem',['../namespace_chimera_t_k.html#aa7e41ad56888f34fba9598d89cc6bbcca00c4c082a5e21df9647ed09777d2b179',1,'ChimeraTK']]],
