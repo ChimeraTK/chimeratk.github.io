@@ -23,7 +23,7 @@ var searchData=
   ['sleep_5funtil',['sleep_until',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html#a35a618bb93efcf6f87f192a3dcc33439',1,'ChimeraTK::testable_rebot_sleep']]],
   ['splitstringatlastdot',['splitStringAtLastDot',['../class_chimera_t_k_1_1_map_file_parser.html#af8b0334352da84a275101083c91c462a',1,'ChimeraTK::MapFileParser']]],
   ['start',['start',['../class_chimera_t_k_1_1_rebot_dummy_server.html#abb38ed196f76e6d2863f6929bef7feda',1,'ChimeraTK::RebotDummyServer']]],
-  ['startswith',['startsWith',['../class_chimera_t_k_1_1_register_path.html#ae629af1a0b1e229f1653a1bb600c56f1',1,'ChimeraTK::RegisterPath']]],
+  ['startswith',['startsWith',['../class_chimera_t_k_1_1_register_path.html#a6ccb225c24d44fc469dc190a1fba80af',1,'ChimeraTK::RegisterPath']]],
   ['stop',['stop',['../class_chimera_t_k_1_1_rebot_dummy_server.html#afd21652e5990e7687316ef743bb768a2',1,'ChimeraTK::RebotDummyServer']]],
   ['stop_5frebot_5fserver',['stop_rebot_server',['../namespace_chimera_t_k.html#a6f60549a352728669f936f757ee6fea9',1,'ChimeraTK']]],
   ['stow_5fprivate',['stow_private',['../structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5',1,'accessPrivateData::stow_private']]],
