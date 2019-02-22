@@ -12,6 +12,6 @@ var searchData=
   ['isinitialised',['isInitialised',['../class_chimera_t_k_1_1_doocs_adapter.html#aefa97e9f933246fe87418ed282900f54',1,'ChimeraTK::DoocsAdapter']]],
   ['isreadable',['isReadable',['../class_chimera_t_k_1_1_doocs_transfer_element.html#a1a1fd453b63c079b67fc2a568a468340',1,'ChimeraTK::DoocsTransferElement']]],
   ['isreadonly',['isReadOnly',['../class_chimera_t_k_1_1_doocs_transfer_element.html#a50898c5c1dae6ca3df6a8b84019f6222',1,'ChimeraTK::DoocsTransferElement']]],
-  ['issameregister',['isSameRegister',['../class_chimera_t_k_1_1_doocs_transfer_element.html#a290a3a1e49a0004bf14a68e6d81cf311',1,'ChimeraTK::DoocsTransferElement']]],
+  ['issameregister',['isSameRegister',['../class_chimera_t_k_1_1_doocs_transfer_element.html#a67b8a2cbace7ef8f5e8f81ea847039eb',1,'ChimeraTK::DoocsTransferElement']]],
   ['iswriteable',['isWriteable',['../struct_chimera_t_k_1_1_property_attributes.html#aebe51d307d0289805ea80e3506e51f22',1,'ChimeraTK::PropertyAttributes::isWriteable()'],['../class_chimera_t_k_1_1_doocs_transfer_element.html#abf9791a94be94970e1ba7d0445fbde92',1,'ChimeraTK::DoocsTransferElement::isWriteable()']]]
 ];
