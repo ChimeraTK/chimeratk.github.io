@@ -245,7 +245,7 @@ class ChimeraTK::TwoDRegisterAccessor&lt; UserType &gt;</h3>
 <p>TODO add documentation. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="accessor2_d_8cpp-example.html#_a4">accessor2D.cpp</a>, and <a class="el" href="accessor2_d_multiplexed_8cpp-example.html#_a5">accessor2D_multiplexed.cpp</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="device_2include_2_forward_declarations_8h_source.html#l00024">24</a> of file <a class="el" href="device_2include_2_forward_declarations_8h_source.html">ForwardDeclarations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_forward_declarations_8h_source.html#l00027">27</a> of file <a class="el" href="device_2include_2_forward_declarations_8h_source.html">ForwardDeclarations.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5700d4ce19e03b9678fbf9f6ea1f6071"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5700d4ce19e03b9678fbf9f6ea1f6071">&#9670;&nbsp;</a></span>TwoDRegisterAccessor() <span class="overload">[1/2]</span></h2>
@@ -308,7 +308,7 @@ template&lt;class UserType&gt; </div>
 <p>Placeholder constructer, to allow late initialisation of the accessor, e.g. </p>
 <p>in the open function. </p><dl class="section attention"><dt>Attention</dt><dd>Accessors created with this constructors will be dysfunctional, calling any member function will throw an exception (by the boost::shared_ptr)! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00033">33</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00032">32</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -354,7 +354,7 @@ template&lt;typename COOKED_TYPE &gt; </div>
 <p>Get the cooked values in case the accessor is a raw accessor (which does not do data conversion). </p>
 <p>This returns the converted data from the use buffer. It does not do any read or write transfer. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00056">56</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00051">51</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -385,7 +385,7 @@ template&lt;class UserType&gt; </div>
 
 <p>Return the number of channels (formerly called sequences) </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00046">46</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00041">41</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -416,7 +416,7 @@ template&lt;class UserType&gt; </div>
 
 <p>Return number of elements/samples per channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00049">49</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00044">44</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -448,7 +448,7 @@ template&lt;class UserType&gt; </div>
 <p>DEPRECATED DO NOT USE. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000064">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html#a5e8f42c9edf686b506dd8dcbd145de2b" title="Return the number of channels (formerly called sequences) ">getNChannels()</a> instead! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00081">81</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00075">75</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -480,7 +480,7 @@ template&lt;class UserType&gt; </div>
 <p>DEPRECATED DO NOT USE. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000063">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html#a5e8f42c9edf686b506dd8dcbd145de2b" title="Return the number of channels (formerly called sequences) ">getNChannels()</a> instead! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00074">74</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00067">67</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -512,7 +512,7 @@ template&lt;class UserType&gt; </div>
 <p>DEPRECATED DO NOT USE. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000065">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html#a260355da3297d6de2aa27ae70d3d2f97" title="Return number of elements/samples per channel. ">getNElementsPerChannel()</a> instead! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00090">90</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00083">83</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -544,7 +544,7 @@ template&lt;class UserType&gt; </div>
 
 <p>Operator to access individual sequences/channels. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00036">36</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00035">35</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -576,7 +576,7 @@ template&lt;class UserType&gt; </div>
 
 <p>Const operator to access individual sequences/channels. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00041">41</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00038">38</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -627,7 +627,7 @@ template&lt;typename COOKED_TYPE &gt; </div>
 <p>Set the cooked values in case the accessor is a raw accessor (which does not do data conversion). </p>
 <p>This converts to raw and writes the data to the user buffer. It does not do any read or write transfer. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00065">65</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00060">60</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -654,7 +654,7 @@ template&lt;class UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00092">92</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html#l00087">87</a> of file <a class="el" href="device_2include_2_two_d_register_accessor_8h_source.html">TwoDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -665,7 +665,7 @@ template&lt;class UserType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 22 2019 05:53:14 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 23 2019 05:53:09 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -84,7 +84,7 @@ Macros</h2></td></tr>
 <tr class="memitem:af17cdfe4bdc6a97d29cda32a0253187f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_virtual_function_template_8h.html#af17cdfe4bdc6a97d29cda32a0253187f">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a>(functionName, ...)</td></tr>
 <tr class="memdesc:af17cdfe4bdc6a97d29cda32a0253187f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a virtual function template with the given function name and signature in the base class.  <a href="#af17cdfe4bdc6a97d29cda32a0253187f">More...</a><br /></td></tr>
 <tr class="separator:af17cdfe4bdc6a97d29cda32a0253187f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ae25c66f893b5dffc9251887f2bb9a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_virtual_function_template_8h.html#a9ae25c66f893b5dffc9251887f2bb9a5">CALL_VIRTUAL_FUNCTION_TEMPLATE</a>(functionName,  templateArgument, ...)</td></tr>
+<tr class="memitem:a9ae25c66f893b5dffc9251887f2bb9a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_virtual_function_template_8h.html#a9ae25c66f893b5dffc9251887f2bb9a5">CALL_VIRTUAL_FUNCTION_TEMPLATE</a>(functionName,  templateArgument, ...)&#160;&#160;&#160;boost::fusion::at_key&lt;templateArgument&gt;(functionName##_vtable.table)(__VA_ARGS__)</td></tr>
 <tr class="memdesc:a9ae25c66f893b5dffc9251887f2bb9a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the virtual function template call using the vtable defined with the DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE macro.  <a href="#a9ae25c66f893b5dffc9251887f2bb9a5">More...</a><br /></td></tr>
 <tr class="separator:a9ae25c66f893b5dffc9251887f2bb9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2752e639b0d71e7d2673f90f44403e97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_virtual_function_template_8h.html#a2752e639b0d71e7d2673f90f44403e97">DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_1</a>&#160;&#160;&#160;_1</td></tr>
@@ -108,10 +108,10 @@ Macros</h2></td></tr>
 <tr class="separator:a1b53a27a67af1c6ee81c88bab850df44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31e8622b33fa3c72be25c2b69c2cfc04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_virtual_function_template_8h.html#a31e8622b33fa3c72be25c2b69c2cfc04">DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_10</a>&#160;&#160;&#160;<a class="el" href="util_2include_2_virtual_function_template_8h.html#a1b53a27a67af1c6ee81c88bab850df44">DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_9</a>, _10</td></tr>
 <tr class="separator:a31e8622b33fa3c72be25c2b69c2cfc04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaeac18b6c53ac1c2b4bf27f6c4ebb5dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_virtual_function_template_8h.html#aaeac18b6c53ac1c2b4bf27f6c4ebb5dd">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER</a>( className,  functionName,  numberOfArguments)</td></tr>
-<tr class="memdesc:aaeac18b6c53ac1c2b4bf27f6c4ebb5dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the filler class used inside the FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE macro to fill the vtable of a virtual function template defined with DEFINE_VIRTUAL_FUNCTION_TEMPLATE.  <a href="#aaeac18b6c53ac1c2b4bf27f6c4ebb5dd">More...</a><br /></td></tr>
-<tr class="separator:aaeac18b6c53ac1c2b4bf27f6c4ebb5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5e6eeda5f812bf87b6da853d103ee37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_virtual_function_template_8h.html#ab5e6eeda5f812bf87b6da853d103ee37">FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a>(functionName)</td></tr>
+<tr class="memitem:ad55f079dbae8d46794e4a68782511746"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_virtual_function_template_8h.html#ad55f079dbae8d46794e4a68782511746">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER</a>(className,  functionName,  numberOfArguments)</td></tr>
+<tr class="memdesc:ad55f079dbae8d46794e4a68782511746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the filler class used inside the FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE macro to fill the vtable of a virtual function template defined with DEFINE_VIRTUAL_FUNCTION_TEMPLATE.  <a href="#ad55f079dbae8d46794e4a68782511746">More...</a><br /></td></tr>
+<tr class="separator:ad55f079dbae8d46794e4a68782511746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e6eeda5f812bf87b6da853d103ee37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_virtual_function_template_8h.html#ab5e6eeda5f812bf87b6da853d103ee37">FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a>(functionName)&#160;&#160;&#160;boost::fusion::for_each(this-&gt;functionName##_vtable.table, functionName##_vtable_filler(this))</td></tr>
 <tr class="memdesc:ab5e6eeda5f812bf87b6da853d103ee37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the vtable of a virtual function template defined with DEFINE_VIRTUAL_FUNCTION_TEMPLATE.  <a href="#ab5e6eeda5f812bf87b6da853d103ee37">More...</a><br /></td></tr>
 <tr class="separator:ab5e6eeda5f812bf87b6da853d103ee37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cfaa4375c315e463c69a4f05bb90d94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_2include_2_virtual_function_template_8h.html#a9cfaa4375c315e463c69a4f05bb90d94">FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_STANDALONE</a>(functionName,  numberOfArguments)</td></tr>
@@ -146,16 +146,16 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;boost::fusion::at_key&lt;templateArgument&gt;(functionName##_vtable.table)(__VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">boost::fusion::at_key&lt;templateArgument&gt;(functionName##_vtable.table)(        \</div><div class="line">      __VA_ARGS__)</div></div><!-- fragment -->
+
 <p>Execute the virtual function template call using the vtable defined with the DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE macro. </p>
 <p>It is recommended to put this macro into a function template with the same name and signature, so the user of the class can call the virtual function template conveniently.</p>
 <p>Implementation note: This function template could automatically be provided via the DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE macro. This is not done, because it wouldn't allow to specify default values for the parameters, and the proper signature would not be visible in Doxygen. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00081">81</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00079">79</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -173,7 +173,7 @@ Macros</h2></td></tr>
 
 <p>Helper macros, do not use! </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00086">86</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00083">83</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -189,7 +189,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00103">103</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00092">92</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -205,7 +205,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00087">87</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00084">84</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +221,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00089">89</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00085">85</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -237,7 +237,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00091">91</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00086">86</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +253,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00093">93</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00087">87</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -269,7 +269,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00095">95</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00088">88</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -285,7 +285,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00097">97</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00089">89</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -301,7 +301,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00099">99</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00090">90</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -317,7 +317,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00101">101</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00091">91</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -346,7 +346,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;                                                        \</div><div class="line">  class functionName##_functionSignature                                       \</div><div class="line">      : <span class="keyword">public</span> boost::function&lt;__VA_ARGS__&gt; {                                  \</div><div class="line">  public:                                                                      \</div><div class="line">    boost::function&lt;__VA_ARGS__&gt; &amp;                                             \</div><div class="line">    operator=(<span class="keyword">const</span> boost::function&lt;__VA_ARGS__&gt; &amp;rhs) {                       \</div><div class="line">      return boost::function&lt;__VA_ARGS__&gt;::operator=(rhs);                     \</div><div class="line">    }                                                                          \</div><div class="line">  };                                                                           \</div><div class="line">  TemplateUserTypeMap&lt;functionName##_functionSignature&gt; functionName##_vtable</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;                                                                                                 \</div><div class="line">  class functionName##_functionSignature : <span class="keyword">public</span> boost::function&lt;__VA_ARGS__&gt; {                                       \</div><div class="line">   public:                                                                                                             \</div><div class="line">    boost::function&lt;__VA_ARGS__&gt;&amp; operator=(<span class="keyword">const</span> boost::function&lt;__VA_ARGS__&gt;&amp; rhs) {                                 \</div><div class="line">      return boost::function&lt;__VA_ARGS__&gt;::operator=(rhs);                                                             \</div><div class="line">    }                                                                                                                  \</div><div class="line">  };                                                                                                                   \</div><div class="line">  TemplateUserTypeMap&lt;functionName##_functionSignature&gt; functionName##_vtable</div></div><!-- fragment -->
 <p>Define a virtual function template with the given function name and signature in the base class. </p>
 <p>The signature must contain the typename template argument called "T". So if you e.g. would want to define a function like this:</p>
 <p>template&lt;typename UserType&gt; virtual BufferingRegisterAccessor&lt;UserType&gt; getRegisterAccessor(std::string name);</p>
@@ -360,8 +360,8 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="aaeac18b6c53ac1c2b4bf27f6c4ebb5dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaeac18b6c53ac1c2b4bf27f6c4ebb5dd">&#9670;&nbsp;</a></span>DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER</h2>
+<a id="ad55f079dbae8d46794e4a68782511746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad55f079dbae8d46794e4a68782511746">&#9670;&nbsp;</a></span>DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -391,11 +391,11 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">class </span>functionName##_vtable_filler {                                         \</div><div class="line">  public:                                                                      \</div><div class="line">    functionName##_vtable_filler(className *_object) : object(_object) {}      \</div><div class="line">    template &lt;typename PAIR&gt; <span class="keywordtype">void</span> operator()(PAIR &amp;pair)<span class="keyword"> const </span>{               \</div><div class="line">      pair.second = boost::bind(                                               \</div><div class="line">          &amp;className::functionName&lt;typename PAIR::first_type&gt;, <span class="keywordtype">object</span>,         \</div><div class="line">          DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_##numberOfArguments);           \</div><div class="line">    }                                                                          \</div><div class="line">                                                                               \</div><div class="line">  private:                                                                     \</div><div class="line">    className *object;                                                         \</div><div class="line">  }</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">class </span>functionName##_vtable_filler {                                                                                 \</div><div class="line">   public:                                                                                                             \</div><div class="line">    functionName##_vtable_filler(className* _object) : object(_object) {}                                              \</div><div class="line">    template&lt;typename PAIR&gt;                                                                                            \</div><div class="line">    void operator()(PAIR&amp; pair)<span class="keyword"> const </span>{                                                                                \</div><div class="line">      pair.second = boost::bind(&amp;className::functionName&lt;typename PAIR::first_type&gt;, <span class="keywordtype">object</span>,                           \</div><div class="line">          DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_##numberOfArguments);                                                   \</div><div class="line">    }                                                                                                                  \</div><div class="line">                                                                                                                       \</div><div class="line">   private:                                                                                                            \</div><div class="line">    className* object;                                                                                                 \</div><div class="line">  }</div></div><!-- fragment -->
 <p>Define the filler class used inside the FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE macro to fill the vtable of a virtual function template defined with DEFINE_VIRTUAL_FUNCTION_TEMPLATE. </p>
 <p>Use this macro inside the derived class. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00110">110</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00098">98</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -410,16 +410,15 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">functionName</td><td>)</td>
-          <td></td>
+          <td>&#160;&#160;&#160;boost::fusion::for_each(this-&gt;functionName##_vtable.table, functionName##_vtable_filler(this))</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d">boost::fusion::for_each</a>(this-&gt;functionName##_vtable.table,                   \</div><div class="line">                          functionName##_vtable_filler(<span class="keyword">this</span>))</div><div class="ttc" id="namespace_chimera_t_k_html_afee0348f3a67cc3dc7efec51279bde7d"><div class="ttname"><a href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d">ChimeraTK::for_each</a></div><div class="ttdeci">void for_each(MAPTYPE &amp;map, LAMBDATYPE &amp;lambda)</div><div class="ttdoc">Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...</div><div class="ttdef"><b>Definition:</b> <a href="util_2include_2_supported_user_types_8h_source.html#l00249">SupportedUserTypes.h:249</a></div></div>
-</div><!-- fragment -->
+
 <p>Fill the vtable of a virtual function template defined with DEFINE_VIRTUAL_FUNCTION_TEMPLATE. </p>
 <p>Use this macro inside the constructor of the derived class. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00128">128</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00115">115</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
@@ -448,18 +447,18 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typedef</span> std::remove_reference&lt;decltype(*this)&gt;::type ClassName;              \</div><div class="line">  for_each(this-&gt;functionName##_vtable.table, [<span class="keyword">this</span>](<span class="keyword">auto</span> &amp;pair) {             \</div><div class="line">    typedef typename std::remove_reference&lt;decltype(pair)&gt;::type::first_type   \</div><div class="line">        UserType;                                                              \</div><div class="line">    pair.second =                                                              \</div><div class="line">        boost::bind(&amp;ClassName::functionName&lt;UserType&gt;, this,                  \</div><div class="line">                    DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_##numberOfArguments); \</div><div class="line">  });</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">typedef</span> std::remove_reference&lt;decltype(*this)&gt;::type ClassName;                                                      \</div><div class="line">  for_each(this-&gt;functionName##_vtable.table, [<span class="keyword">this</span>](<span class="keyword">auto</span>&amp; pair) {                                                     \</div><div class="line">    typedef typename std::remove_reference&lt;decltype(pair)&gt;::type::first_type UserType;                                 \</div><div class="line">    pair.second = boost::bind(                                                                                         \</div><div class="line">        &amp;ClassName::functionName&lt;UserType&gt;, this, DEFINE_TEMPLATE_VTABLE_FILLER_HELPER_##numberOfArguments);           \</div><div class="line">  });</div></div><!-- fragment -->
 <p>Fill the vtable of a virtual function template defined with DEFINE_VIRTUAL_FUNCTION_TEMPLATE. </p>
 <p>Use this macro inside the constructor of the derived class. This version does not require to use the DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER macro! </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00136">136</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_virtual_function_template_8h_source.html#l00122">122</a> of file <a class="el" href="util_2include_2_virtual_function_template_8h_source.html">VirtualFunctionTemplate.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 22 2019 05:53:13 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 23 2019 05:53:08 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -402,7 +402,7 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_sync_n_d_register_accessor_8h_source.html#l00031">31</a> of file <a class="el" href="device__backends_2include_2_sync_n_d_register_accessor_8h_source.html">SyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_sync_n_d_register_accessor_8h_source.html#l00030">30</a> of file <a class="el" href="device__backends_2include_2_sync_n_d_register_accessor_8h_source.html">SyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -439,7 +439,7 @@ template&lt;typename UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afe0ba112ccb6eb9e556710d1151c1602">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_sync_n_d_register_accessor_8h_source.html#l00061">61</a> of file <a class="el" href="device__backends_2include_2_sync_n_d_register_accessor_8h_source.html">SyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_sync_n_d_register_accessor_8h_source.html#l00060">60</a> of file <a class="el" href="device__backends_2include_2_sync_n_d_register_accessor_8h_source.html">SyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -472,7 +472,7 @@ template&lt;typename UserType&gt; </div>
 <p>Also, implementations must call it in their constructors before throwing an exception (hint: put catch-all block around the entired constructor, call <a class="el" href="class_chimera_t_k_1_1_sync_n_d_register_accessor.html#a4fe7dcd426667f3f5283fabad34f6576" title="All implementations must call this function in their destructor. ">shutdown()</a> there and then rethrow the exception).</p>
 <p>Implementation note: This function call is necessary to ensure that a potentially still-running thread launched in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad00999178a215bc11d9c1377c6427c23" title="Read data from the device in the background and return a future which will be fulfilled when the data...">readAsync()</a> is properly terminated before destroying the accessor object. Since this thread accesses virtual functions like <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0ab70efc5651769deb2bb6c5d4cb5453" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">doReadTransfer()</a>, the full accessor object must still be alive, thus shutting down the thread in the base class destructor is too late. Technically, implementations overriding <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad00999178a215bc11d9c1377c6427c23" title="Read data from the device in the background and return a future which will be fulfilled when the data...">readAsync()</a> would not need to call this function, but to make sure all implementations which do not override <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad00999178a215bc11d9c1377c6427c23" title="Read data from the device in the background and return a future which will be fulfilled when the data...">readAsync()</a> actually call it, the function call is enforced for all implementations in the destructor with an assert. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_sync_n_d_register_accessor_8h_source.html#l00053">53</a> of file <a class="el" href="device__backends_2include_2_sync_n_d_register_accessor_8h_source.html">SyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_sync_n_d_register_accessor_8h_source.html#l00052">52</a> of file <a class="el" href="device__backends_2include_2_sync_n_d_register_accessor_8h_source.html">SyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -482,7 +482,7 @@ template&lt;typename UserType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 22 2019 05:53:14 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 23 2019 05:53:09 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

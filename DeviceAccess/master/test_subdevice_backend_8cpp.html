@@ -185,7 +185,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                            \</div><div class="line">    std::chrono::steady_clock::time_point t0 =                                 <a class="code" href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a1851c267e4dd419a948306ff85195a86">\</a></div><div class="line"><a class="code" href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a1851c267e4dd419a948306ff85195a86">        std::chrono::steady_clock::now</a>();                                      \</div><div class="line">    execPreCheck <span class="keywordflow">while</span> (!(condition)) {                                        \</div><div class="line">      bool timeout_reached = (<a class="code" href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a1851c267e4dd419a948306ff85195a86">std::chrono::steady_clock::now</a>() - t0) &gt;         \</div><div class="line">                             std::chrono::milliseconds(maxMilliseconds);       \</div><div class="line">      BOOST_CHECK(!timeout_reached);                                           \</div><div class="line">      if (timeout_reached)                                                     \</div><div class="line">        break;                                                                 \</div><div class="line">      usleep(1000);                                                            \</div><div class="line">      execPreCheck                                                             \</div><div class="line">    }                                                                          \</div><div class="line">  }</div><div class="ttc" id="namespace_chimera_t_k_1_1testable__rebot__sleep_html_a1851c267e4dd419a948306ff85195a86"><div class="ttname"><a href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a1851c267e4dd419a948306ff85195a86">ChimeraTK::testable_rebot_sleep::now</a></div><div class="ttdeci">boost::chrono::steady_clock::time_point now()</div><div class="ttdef"><b>Definition:</b> <a href="testable_rebot_sleep_8cc_source.html#l00005">testableRebotSleep.cc:5</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                                                    \</div><div class="line">    std::chrono::steady_clock::time_point t0 = <a class="code" href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a1851c267e4dd419a948306ff85195a86">std::chrono::steady_clock::now</a>();                                       \</div><div class="line">    execPreCheck <span class="keywordflow">while</span>(!(condition)) {                                                                                 \</div><div class="line">      bool timeout_reached = (<a class="code" href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a1851c267e4dd419a948306ff85195a86">std::chrono::steady_clock::now</a>() - t0) &gt; std::chrono::milliseconds(maxMilliseconds);     \</div><div class="line">      BOOST_CHECK(!timeout_reached);                                                                                   \</div><div class="line">      if(timeout_reached) <span class="keywordflow">break</span>;                                                                                       \</div><div class="line">      usleep(1000);                                                                                                    \</div><div class="line">      execPreCheck                                                                                                     \</div><div class="line">    }                                                                                                                  \</div><div class="line">  }</div><div class="ttc" id="namespace_chimera_t_k_1_1testable__rebot__sleep_html_a1851c267e4dd419a948306ff85195a86"><div class="ttname"><a href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a1851c267e4dd419a948306ff85195a86">ChimeraTK::testable_rebot_sleep::now</a></div><div class="ttdeci">boost::chrono::steady_clock::time_point now()</div><div class="ttdef"><b>Definition:</b> <a href="testable_rebot_sleep_8cc_source.html#l00004">testableRebotSleep.cc:4</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00011">11</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
@@ -208,7 +208,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00030">30</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00027">27</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -229,7 +229,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000081">Todo:</a></b></dt><dd>Test exception handling! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00049">49</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00046">46</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -249,7 +249,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00108">108</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00092">92</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -269,7 +269,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00156">156</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00136">136</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -289,7 +289,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00199">199</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00175">175</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -309,7 +309,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00229">229</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00201">201</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -329,7 +329,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00280">280</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00247">247</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -349,7 +349,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00312">312</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00276">276</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -369,7 +369,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00355">355</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00315">315</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -389,7 +389,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00398">398</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00354">354</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -409,7 +409,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00428">428</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00380">380</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -429,7 +429,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00478">478</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00425">425</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -449,7 +449,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00509">509</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00451">451</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -470,7 +470,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000082">Todo:</a></b></dt><dd>Make a proper test with a custom backend, to make sure all elements of the array are properly written </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00557">557</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00499">499</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -490,7 +490,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00598">598</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00540">540</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -510,14 +510,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00639">639</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00580">580</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 22 2019 05:53:13 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 23 2019 05:53:08 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

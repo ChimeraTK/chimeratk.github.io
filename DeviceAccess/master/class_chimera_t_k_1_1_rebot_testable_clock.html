@@ -85,9 +85,9 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a50a5f4a524f1e15c833ce110f0e1e5f1"><td class="memItemLeft" align="right" valign="top">static boost::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_rebot_testable_clock.html#a50a5f4a524f1e15c833ce110f0e1e5f1">_now</a></td></tr>
+<tr class="memitem:a50a5f4a524f1e15c833ce110f0e1e5f1"><td class="memItemLeft" align="right" valign="top">static boost::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_rebot_testable_clock.html#a50a5f4a524f1e15c833ce110f0e1e5f1">_now</a> = <a class="el" href="class_chimera_t_k_1_1_rebot_testable_clock.html#afc84ef5320a83473531edc3a7f59954c">RebotTestableClock::_epoch</a></td></tr>
 <tr class="separator:a50a5f4a524f1e15c833ce110f0e1e5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc84ef5320a83473531edc3a7f59954c"><td class="memItemLeft" align="right" valign="top">static boost::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_rebot_testable_clock.html#afc84ef5320a83473531edc3a7f59954c">_epoch</a></td></tr>
+<tr class="memitem:afc84ef5320a83473531edc3a7f59954c"><td class="memItemLeft" align="right" valign="top">static boost::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_rebot_testable_clock.html#afc84ef5320a83473531edc3a7f59954c">_epoch</a> = boost::chrono::steady_clock::now()</td></tr>
 <tr class="separator:afc84ef5320a83473531edc3a7f59954c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -147,7 +147,7 @@ template&lt;class Rep , class Period &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00021">21</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00020">20</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
 
 </div>
 </div>
@@ -162,7 +162,7 @@ template&lt;class Rep , class Period &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::chrono::steady_clock::time_point ChimeraTK::RebotTestableClock::_epoch</td>
+          <td class="memname">boost::chrono::steady_clock::time_point ChimeraTK::RebotTestableClock::_epoch = boost::chrono::steady_clock::now()</td>
         </tr>
       </table>
   </td>
@@ -171,8 +171,8 @@ template&lt;class Rep , class Period &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">    <a class="code" href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a1851c267e4dd419a948306ff85195a86">boost::chrono::steady_clock::now</a>()</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00018">18</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00017">17</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
 
 </div>
 </div>
@@ -186,7 +186,7 @@ template&lt;class Rep , class Period &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::chrono::steady_clock::time_point ChimeraTK::RebotTestableClock::_now</td>
+          <td class="memname">boost::chrono::steady_clock::time_point ChimeraTK::RebotTestableClock::_now = <a class="el" href="class_chimera_t_k_1_1_rebot_testable_clock.html#afc84ef5320a83473531edc3a7f59954c">RebotTestableClock::_epoch</a></td>
         </tr>
       </table>
   </td>
@@ -195,8 +195,8 @@ template&lt;class Rep , class Period &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">    <a class="code" href="class_chimera_t_k_1_1_rebot_testable_clock.html#afc84ef5320a83473531edc3a7f59954c">RebotTestableClock::_epoch</a></div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00017">17</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00016">16</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
 
 </div>
 </div>
@@ -206,7 +206,7 @@ template&lt;class Rep , class Period &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 22 2019 05:53:14 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 23 2019 05:53:09 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
