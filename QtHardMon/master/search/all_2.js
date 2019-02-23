@@ -13,7 +13,7 @@ var searchData=
   ['create',['Create',['../class_create_by_new.html#aae04302a3845de3bbf10f492ed310f6d',1,'CreateByNew']]],
   ['createabstractaccessor',['createAbstractAccessor',['../_register_type_abstractor_8cpp.html#ae1b2826f88843662d03c2e92df25c9a6',1,'createAbstractAccessor(ChimeraTK::RegisterInfo const &amp;registerInfo, ChimeraTK::Device &amp;device):&#160;RegisterTypeAbstractor.cpp'],['../_register_type_abstractor_8h.html#ae1b2826f88843662d03c2e92df25c9a6',1,'createAbstractAccessor(ChimeraTK::RegisterInfo const &amp;registerInfo, ChimeraTK::Device &amp;device):&#160;RegisterTypeAbstractor.cpp']]],
   ['createbynew',['CreateByNew',['../class_create_by_new.html',1,'']]],
-  ['createeditor',['createEditor',['../class_custom_delegates.html#a167e3b5396963014b4685beba051d235',1,'CustomDelegates']]],
+  ['createeditor',['createEditor',['../class_custom_delegates.html#aba1031f808f008149898d9a521dfff88',1,'CustomDelegates']]],
   ['createtypedaccessor',['createTypedAccessor',['../_register_type_abstractor_8cpp.html#af4f8de145075de5ff8dfd66747b756f9',1,'RegisterTypeAbstractor.cpp']]],
   ['current_5fdevice_5fstring',['CURRENT_DEVICE_STRING',['../_qt_hard_mon_8cpp.html#ada28cbfb34f76906ae46254021031488',1,'QtHardMon.cpp']]],
   ['current_5fmodule_5fstring',['CURRENT_MODULE_STRING',['../_qt_hard_mon_8cpp.html#a38198bdf157ec2cc7aae3b450d94ee22',1,'QtHardMon.cpp']]],

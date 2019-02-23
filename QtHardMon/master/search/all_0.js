@@ -7,7 +7,7 @@ var searchData=
   ['_5fchannelnumber',['_channelNumber',['../class_register_accessor_model.html#a4ead1327e583ca921fe7233b33d420cb',1,'RegisterAccessorModel']]],
   ['_5fcookedhexcolumnindex',['_cookedHexColumnIndex',['../class_register_accessor_model.html#a0b9801cd86c87de0aac5cc5220f5ca9f',1,'RegisterAccessorModel']]],
   ['_5fcurrentdevicelistitem',['_currentDeviceListItem',['../class_qt_hard_mon.html#abf98cabc4a7c57c5e45696bac4d9005e',1,'QtHardMon']]],
-  ['_5fismodified',['_isModified',['../class_register_accessor_model.html#a80e24d64223adfd4d1e16270118d44e4',1,'RegisterAccessorModel']]],
+  ['_5fismodified',['_isModified',['../class_register_accessor_model.html#ad19ae270038ed31ce74047aa8f9b629b',1,'RegisterAccessorModel']]],
   ['_5fmessage',['_message',['../class_qt_hard_mon_exception.html#ada4e0c83514c95b8ec1a566520b48fd8',1,'QtHardMonException']]],
   ['_5fncolumns',['_nColumns',['../class_register_accessor_model.html#a29de97d50c2ec003a2f48c0cbef5f207',1,'RegisterAccessorModel']]],
   ['_5fplotwindow',['_plotWindow',['../class_qt_hard_mon.html#a67ccc9ef5b6ceabb169646b1767c4c40',1,'QtHardMon']]],
