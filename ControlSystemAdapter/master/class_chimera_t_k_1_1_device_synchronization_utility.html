@@ -178,7 +178,7 @@ Public Member Functions</h2></td></tr>
 <p>This listener is triggered every time after calling <code>receive</code> on the process variable if the receive operation returned <code>true</code>.</p>
 <p>If another listener has previously been registered for the named process variable, that listener is replaced with the new listener. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8cc_source.html#l00028">28</a> of file <a class="el" href="_device_synchronization_utility_8cc_source.html">DeviceSynchronizationUtility.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8cc_source.html#l00026">26</a> of file <a class="el" href="_device_synchronization_utility_8cc_source.html">DeviceSynchronizationUtility.cc</a>.</p>
 
 </div>
 </div>
@@ -209,7 +209,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Use addReceiveNotificationListener(ProcessVariable::SharedPtr const &amp; processVariable, <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06" title="Shared pointer to this type. ">ProcessVariableListener::SharedPtr</a> receiveNotificationListener) instead.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8cc_source.html#l00014">14</a> of file <a class="el" href="_device_synchronization_utility_8cc_source.html">DeviceSynchronizationUtility.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8cc_source.html#l00013">13</a> of file <a class="el" href="_device_synchronization_utility_8cc_source.html">DeviceSynchronizationUtility.cc</a>.</p>
 
 </div>
 </div>
@@ -234,7 +234,7 @@ template&lt;class T &gt; </div>
 <p>Run the receive operation on a list of process variables. </p>
 <p>This can be any type of container that has <code>begin()</code> and <code>end()</code> methods that return an appropriate iterator. The elements must be of type ProcessVariable::SharedPtr. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8h_source.html#l00151">151</a> of file <a class="el" href="_device_synchronization_utility_8h_source.html">DeviceSynchronizationUtility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8h_source.html#l00147">147</a> of file <a class="el" href="_device_synchronization_utility_8h_source.html">DeviceSynchronizationUtility.h</a>.</p>
 
 </div>
 </div>
@@ -269,7 +269,7 @@ template&lt;class T &gt; </div>
 <p>Run the receive operation on a list of process variables. </p>
 <p>The list is specified in the form of a begin and end iterator. For example, this can be an STL iterator or a raw pointer. The elements must be of type ProcessVariable::SharedPtr. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8h_source.html#l00156">156</a> of file <a class="el" href="_device_synchronization_utility_8h_source.html">DeviceSynchronizationUtility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8h_source.html#l00152">152</a> of file <a class="el" href="_device_synchronization_utility_8h_source.html">DeviceSynchronizationUtility.h</a>.</p>
 
 </div>
 </div>
@@ -291,7 +291,7 @@ template&lt;class T &gt; </div>
 <p>Runs receive on all process variables that have data pending. </p>
 <p>This method retrieves the process variables with pending data from the PV manager's queue and runs receive on them until no new data is available. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8cc_source.html#l00055">55</a> of file <a class="el" href="_device_synchronization_utility_8cc_source.html">DeviceSynchronizationUtility.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8cc_source.html#l00049">49</a> of file <a class="el" href="_device_synchronization_utility_8cc_source.html">DeviceSynchronizationUtility.cc</a>.</p>
 
 </div>
 </div>
@@ -314,7 +314,7 @@ template&lt;class T &gt; </div>
 <p>Removes a receive notification listener that has previously been registered with <a class="el" href="">&amp;, ProcessVariableListener::SharedPtr)</a>. </p>
 <p>If no listener is registered for the specified process variable name, this method does nothing. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8cc_source.html#l00049">49</a> of file <a class="el" href="_device_synchronization_utility_8cc_source.html">DeviceSynchronizationUtility.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8cc_source.html#l00044">44</a> of file <a class="el" href="_device_synchronization_utility_8cc_source.html">DeviceSynchronizationUtility.cc</a>.</p>
 
 </div>
 </div>
@@ -335,7 +335,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Use removeReceiveNotificationListener(ProcessVariable::SharedPtr const &amp; processVariable) instead.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8cc_source.html#l00036">36</a> of file <a class="el" href="_device_synchronization_utility_8cc_source.html">DeviceSynchronizationUtility.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8cc_source.html#l00032">32</a> of file <a class="el" href="_device_synchronization_utility_8cc_source.html">DeviceSynchronizationUtility.cc</a>.</p>
 
 </div>
 </div>
@@ -360,7 +360,7 @@ template&lt;class T &gt; </div>
 <p>Run the send operation on a list of process variables. </p>
 <p>This can be any type of container that has <code>begin()</code> and <code>end()</code> methods that return an appropriate iterator. The elements must be of type ProcessVariable::SharedPtr. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8h_source.html#l00178">178</a> of file <a class="el" href="_device_synchronization_utility_8h_source.html">DeviceSynchronizationUtility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8h_source.html#l00173">173</a> of file <a class="el" href="_device_synchronization_utility_8h_source.html">DeviceSynchronizationUtility.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +395,7 @@ template&lt;class T &gt; </div>
 <p>Run the send operation on a list of process variables. </p>
 <p>The list is specified in the form of a begin and end iterator. For example, this can be an STL iterator or a raw pointer. The elements must be of type ProcessVariable::SharedPtr. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8h_source.html#l00183">183</a> of file <a class="el" href="_device_synchronization_utility_8h_source.html">DeviceSynchronizationUtility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8h_source.html#l00178">178</a> of file <a class="el" href="_device_synchronization_utility_8h_source.html">DeviceSynchronizationUtility.h</a>.</p>
 
 </div>
 </div>
@@ -417,7 +417,7 @@ template&lt;class T &gt; </div>
 <p>Sends all process variables that are senders. </p>
 <p>This method cannot know which process variables have actually changed, therefore one of the <code>send(...)</code> methods that take a list of process variables should be preferred. However, this method can be used if the the device library always updates all process variables that transfer data to the control system. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8cc_source.html#l00076">76</a> of file <a class="el" href="_device_synchronization_utility_8cc_source.html">DeviceSynchronizationUtility.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8cc_source.html#l00070">70</a> of file <a class="el" href="_device_synchronization_utility_8cc_source.html">DeviceSynchronizationUtility.cc</a>.</p>
 
 </div>
 </div>
@@ -451,7 +451,7 @@ template&lt;class T &gt; </div>
 <p>This method calls <a class="el" href="class_chimera_t_k_1_1_device_synchronization_utility.html#a17ef8e81e3afc52f78cd143292ba7776">receiveAll()</a> every <code>checkIntervalInMicroseconds</code> microseconds, until <code>timeoutInMicroseconds</code> microseconds have passed in total, sleeping in between. If either of the parameters is less than or equal to zero, this method returns immediately after calling <a class="el" href="class_chimera_t_k_1_1_device_synchronization_utility.html#a17ef8e81e3afc52f78cd143292ba7776">receiveAll()</a> once.</p>
 <p>This is useful if you want to spend time sleeping while still periodically checking for new values. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8cc_source.html#l00088">88</a> of file <a class="el" href="_device_synchronization_utility_8cc_source.html">DeviceSynchronizationUtility.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_synchronization_utility_8cc_source.html#l00080">80</a> of file <a class="el" href="_device_synchronization_utility_8cc_source.html">DeviceSynchronizationUtility.cc</a>.</p>
 
 </div>
 </div>
@@ -462,7 +462,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 22 2019 05:53:25 for ChimeraTK-ControlSystemAdapter by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 23 2019 05:53:21 for ChimeraTK-ControlSystemAdapter by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
