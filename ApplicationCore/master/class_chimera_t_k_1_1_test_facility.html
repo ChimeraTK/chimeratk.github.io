@@ -160,7 +160,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00188">188</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00172">172</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -186,7 +186,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00183">183</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00168">168</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -217,7 +217,7 @@ template&lt;typename UserType &gt; </div>
 <p>The constructor will internally obtain the instance of the application, so the instance of the <a class="el" href="class_chimera_t_k_1_1_test_facility.html" title="Helper class to facilitate tests of applications based on ApplicationCore. ">TestFacility</a> must not be created before the application (i.e. </p>
 <p>usually not before the main() routine). The application will automatically be put into the testable mode and initialised. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00030">30</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00029">29</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -250,7 +250,7 @@ template&lt;typename T &gt; </div>
 
 <p>Obtain an array-type process variable from the application, which is published to the control system. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00100">100</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00091">91</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -282,7 +282,7 @@ template&lt;typename T &gt; </div>
 
 <p>Obtain a scalar process variable from the application, which is published to the control system. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00059">59</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00057">57</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +314,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>Convenience function to read the latest value of an array process variable in a single call. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00166">166</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00152">152</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -346,7 +346,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>Convenience function to read the latest value of a scalar process variable in a single call. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00157">157</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00143">143</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -376,7 +376,7 @@ template&lt;typename TYPE &gt; </div>
 <p>Start the application. </p>
 <p>This simply calls <a class="el" href="class_chimera_t_k_1_1_application.html#a6815195c956c091a6558a316f8fd9976">Application::run()</a>. Since the application is in testable mode, it will be ??? TODO define precisely what happens on start up </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00041">41</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00040">40</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -406,7 +406,7 @@ template&lt;typename TYPE &gt; </div>
 <p>Perform a "step" of the application. </p>
 <p>This runs the application until all input provided to it has been processed and all application modules wait for new data in blocking read calls. This function returns only after the application has reached that stated and was paused again. After returning from this function, the result can be checked and new data can be provided to the application. The new data will not be processed until the next call to step(). </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00053">53</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00052">52</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -448,7 +448,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>Convenience function to write an array process variable in a single call. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00149">149</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00134">134</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -490,7 +490,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>Convenience function to write a scalar process variable in a single call. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00140">140</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00125">125</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -515,7 +515,7 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00189">189</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00173">173</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -539,7 +539,7 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00173">173</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00159">159</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -563,7 +563,7 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00184">184</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00169">169</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +573,7 @@ template&lt;typename TYPE &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 22 2019 05:53:34 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Feb 23 2019 05:53:30 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -4,7 +4,7 @@ var searchData=
   ['tags',['tags',['../struct_chimera_t_k_1_1_variable_network_node__data.html#aa69696eea47f2507c7ff2278e809f285',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['taillength',['tailLength',['../classlogging_1_1_logging_module.html#a00a5432ac851dadb47f5947a319bb083',1,'logging::LoggingModule']]],
   ['targetstream',['targetStream',['../classlogging_1_1_logging_module.html#a3e3fdf144eeafe58073ab4e2eeae5b4d',1,'logging::LoggingModule']]],
-  ['terminate',['terminate',['../class_chimera_t_k_1_1_application_module.html#a7063da466e760cc5c9838834be08a267',1,'ChimeraTK::ApplicationModule::terminate()'],['../class_chimera_t_k_1_1_module.html#ae3497a487a36f2e1a51bc01592aabf5b',1,'ChimeraTK::Module::terminate()'],['../classlogging_1_1_logging_module.html#a65e49a11677dde2c6ea428d05dd044c1',1,'logging::LoggingModule::terminate()']]],
+  ['terminate',['terminate',['../class_chimera_t_k_1_1_application_module.html#a7063da466e760cc5c9838834be08a267',1,'ChimeraTK::ApplicationModule::terminate()'],['../class_chimera_t_k_1_1_device_module.html#a579aa9c73405b593553805db4def3a18',1,'ChimeraTK::DeviceModule::terminate()'],['../class_chimera_t_k_1_1_module.html#ae3497a487a36f2e1a51bc01592aabf5b',1,'ChimeraTK::Module::terminate()'],['../classlogging_1_1_logging_module.html#a65e49a11677dde2c6ea428d05dd044c1',1,'logging::LoggingModule::terminate()']]],
   ['testablemode',['testableMode',['../class_chimera_t_k_1_1_application.html#a8107412016780c83a5b3f8460589b602',1,'ChimeraTK::Application']]],
   ['testablemode_5fcounter',['testableMode_counter',['../class_chimera_t_k_1_1_application.html#ad198c0bb189aa53c1a4f5e3c0cf4a54e',1,'ChimeraTK::Application']]],
   ['testablemode_5fispollmode',['testableMode_isPollMode',['../class_chimera_t_k_1_1_application.html#a29e6ea03c178fe30ce76a9e7b13c4dce',1,'ChimeraTK::Application']]],
@@ -34,7 +34,7 @@ var searchData=
   ['trigger',['trigger',['../struct_chimera_t_k_1_1_data_loss_counter.html#ab5598020a4fad20fbea3c8ef444e1d00',1,'ChimeraTK::DataLossCounter::trigger()'],['../struct_chimera_t_k_1_1_micro_d_a_q.html#aed25119aaa04b177b387255555661279',1,'ChimeraTK::MicroDAQ::trigger()']]],
   ['triggerfanout',['TriggerFanOut',['../class_chimera_t_k_1_1_trigger_fan_out.html',1,'ChimeraTK::TriggerFanOut'],['../class_chimera_t_k_1_1_trigger_fan_out.html#ae5ab24a5c133f93e45cefb66c7fe57ff',1,'ChimeraTK::TriggerFanOut::TriggerFanOut()']]],
   ['triggerfanout_2eh',['TriggerFanOut.h',['../_trigger_fan_out_8h.html',1,'']]],
-  ['triggermap',['triggerMap',['../class_chimera_t_k_1_1_application.html#ae3021f1f02a218e89643b6e426eee702',1,'ChimeraTK::Application']]],
+  ['triggermap',['triggerMap',['../class_chimera_t_k_1_1_application.html#a5a3ff9e91313b472c8780f8bee67204f',1,'ChimeraTK::Application']]],
   ['triggerprovider',['TriggerProvider',['../namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1da8b1546fe8fb0d89d148d1a35c690a26b',1,'ChimeraTK']]],
   ['triggerreceiver',['TriggerReceiver',['../namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1da2d7240d713d5e6467385a9ab4475eda0',1,'ChimeraTK']]],
   ['triggerswithdataloss',['triggersWithDataLoss',['../struct_chimera_t_k_1_1_data_loss_counter.html#ae2076198c34031a4b957a603c1c274a6',1,'ChimeraTK::DataLossCounter']]],
@@ -42,5 +42,5 @@ var searchData=
   ['type',['type',['../struct_chimera_t_k_1_1_variable_network_node__data.html#ad304c654982f85fae53af69c9fd8f396',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['typedmakeconnection',['typedMakeConnection',['../class_chimera_t_k_1_1_application.html#ad431c8d3f6f19a593a37b13c5f7cefe8',1,'ChimeraTK::Application']]],
   ['typedmakeconnectioncaller',['TypedMakeConnectionCaller',['../struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html',1,'ChimeraTK::Application::TypedMakeConnectionCaller'],['../struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html#a5d331033c7f3b8d86194911d1833436f',1,'ChimeraTK::Application::TypedMakeConnectionCaller::TypedMakeConnectionCaller()']]],
-  ['typemap',['typeMap',['../struct_chimera_t_k_1_1_config_reader.html#a75af1b3029de53fe766df042398a9f7d',1,'ChimeraTK::ConfigReader']]]
+  ['typemap',['typeMap',['../struct_chimera_t_k_1_1_config_reader.html#a9095274a4220b1fbdcdbd54b0f86449f',1,'ChimeraTK::ConfigReader']]]
 ];
