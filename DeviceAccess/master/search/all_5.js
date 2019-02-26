@@ -47,7 +47,7 @@ var searchData=
   ['deviceinfomap',['DeviceInfoMap',['../class_chimera_t_k_1_1_device_info_map.html',1,'ChimeraTK::DeviceInfoMap'],['../class_chimera_t_k_1_1_device_info_map_1_1_error_list.html#a98817c478320f0f4f22c25e9b5fb72a5',1,'ChimeraTK::DeviceInfoMap::ErrorList::DeviceInfoMap()'],['../class_chimera_t_k_1_1_device_info_map.html#aa3f5d757987b28713906a7f88be306a0',1,'ChimeraTK::DeviceInfoMap::DeviceInfoMap()']]],
   ['deviceinfomap_2ecc',['DeviceInfoMap.cc',['../_device_info_map_8cc.html',1,'']]],
   ['deviceinfomap_2eh',['DeviceInfoMap.h',['../fileparsers_2include_2_device_info_map_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_device_info_map_8h.html',1,'(Global Namespace)']]],
-  ['deviceinfomappointer',['DeviceInfoMapPointer',['../namespace_chimera_t_k.html#ab1dfe70951b607d8766ba923028d02c8',1,'ChimeraTK']]],
+  ['deviceinfomappointer',['DeviceInfoMapPointer',['../namespace_chimera_t_k.html#af6310a045e1d4eb8181410f278fe7913',1,'ChimeraTK']]],
   ['deviceinfomaptest',['DeviceInfoMapTest',['../class_device_info_map_test.html',1,'']]],
   ['deviceinfomaptestsuite',['DeviceInfoMapTestSuite',['../class_device_info_map_test_suite.html',1,'DeviceInfoMapTestSuite'],['../class_device_info_map_test_suite.html#a89be45b690a81f2b3fa1dfd5ec54c4ca',1,'DeviceInfoMapTestSuite::DeviceInfoMapTestSuite()']]],
   ['devicemapping_2edox',['deviceMapping.dox',['../device_mapping_8dox.html',1,'']]],
