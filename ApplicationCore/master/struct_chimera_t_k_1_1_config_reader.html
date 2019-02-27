@@ -77,8 +77,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><pre class="fragment">Generic module to read an XML config file and provide the defined values as
-</pre><p> constant variables.  
+<p>Generic module to read an XML config file and provide the defined values as constant variables.  
  <a href="struct_chimera_t_k_1_1_config_reader.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>&gt;</code></p>
@@ -429,12 +428,11 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:aa856db8bf289b50c32116089e3d95e8f inherit pub_types_class_chimera_t_k_1_1_entity_owner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">Generic module to read an XML config file and provide the defined values as
-</pre><p> constant variables. </p>
-<p>The config file should look like this: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">configuration</span>&gt;</div><div class="line">&lt;<span class="keywordtype">variable</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;variableName&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;int32&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;42&quot;</span>/&gt;</div><div class="line">&lt;<span class="keywordtype">variable</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;anotherVariable&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;Hello world!&quot;</span>/&gt;</div><div class="line">&lt;/<span class="keywordtype">configuration</span>&gt;</div></div><!-- fragment --><p>Outputs are created for each variable, so they can be connected to other modules. All values will be provided to the receivers already in the preparation phase, so no read() must be called. Updates will never be sent, so any blocking read operation on the receivers will block forever.</p>
-<p>Configuration values can already be accessed during the Application::defineConnection() function by using the <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793" title="Get value for given configuration variable. ">ConfigReader::get()</a> function. </p>
+<div class="textblock"><p>Generic module to read an XML config file and provide the defined values as constant variables. </p>
+<p>The config file should look like this: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">configuration</span>&gt;</div><div class="line">&lt;<span class="keywordtype">variable</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;variableName&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;int32&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;42&quot;</span>/&gt;</div><div class="line">&lt;<span class="keywordtype">variable</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;anotherVariable&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;Hello world!&quot;</span>/&gt;</div><div class="line">&lt;<span class="keywordtype">variable</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;someArray&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">value</span> <span class="keyword">i</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">v</span>=<span class="stringliteral">&quot;StringEntry1&quot;</span> /&gt;</div><div class="line">  &lt;<span class="keywordtype">value</span> <span class="keyword">i</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">v</span>=<span class="stringliteral">&quot;StringEntry2&quot;</span> /&gt;</div><div class="line">  &lt;<span class="keywordtype">value</span> <span class="keyword">i</span>=<span class="stringliteral">&quot;2&quot;</span> <span class="keyword">v</span>=<span class="stringliteral">&quot;StringEntry3&quot;</span> /&gt;</div><div class="line">  &lt;<span class="keywordtype">value</span> <span class="keyword">i</span>=<span class="stringliteral">&quot;3&quot;</span> <span class="keyword">v</span>=<span class="stringliteral">&quot;StringEntry4&quot;</span> /&gt;</div><div class="line">  &lt;<span class="keywordtype">value</span> <span class="keyword">i</span>=<span class="stringliteral">&quot;4&quot;</span> <span class="keyword">v</span>=<span class="stringliteral">&quot;StringEntry5&quot;</span> /&gt;</div><div class="line">  &lt;<span class="keywordtype">value</span> <span class="keyword">i</span>=<span class="stringliteral">&quot;5&quot;</span> <span class="keyword">v</span>=<span class="stringliteral">&quot;StringEntry6&quot;</span> /&gt;</div><div class="line">&lt;/<span class="keywordtype">variable</span>&gt;</div><div class="line">&lt;/<span class="keywordtype">configuration</span>&gt;</div></div><!-- fragment --><p>Outputs are created for each variable, so they can be connected to other modules. All values will be provided to the receivers already in the preparation phase, so no read() must be called. Updates will never be sent, so any blocking read operation on the receivers will block forever.</p>
+<p>Configuration values can already be accessed during the <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7" title="Define the connections between process variables. ">Application::defineConnections()</a> function by using the <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793" title="Get value for given configuration variable. ">ConfigReader::get()</a> function. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00038">38</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00044">44</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a86f0d3d0b5181cf7181eb789c582c8a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86f0d3d0b5181cf7181eb789c582c8a1">&#9670;&nbsp;</a></span>MapOfArray</h2>
@@ -460,7 +458,7 @@ template&lt;typename T &gt; </div>
 
 <p>Define type for map of std::string to <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_array.html" title="Class holding the values and the accessor for one configuration array. ">Array</a>, so we can put it into the TemplateUserTypeMap. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00098">98</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00104">104</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -488,7 +486,7 @@ template&lt;typename T &gt; </div>
 
 <p>Define type for map of std::string to <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html" title="Class holding the value and the accessor for one configuration variable. ">Var</a>, so we can put it into the TemplateUserTypeMap. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00090">90</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00096">96</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -643,7 +641,7 @@ template&lt;typename T &gt; </div>
 <p>Get value for given configuration variable. </p>
 <p>This is already accessible right after construction of this object. Throws std::out_of_range if variable doesn't exist. To obtain the value of an array, use an std::vector&lt;T&gt; as template argument. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00125">125</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00131">131</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -686,7 +684,7 @@ template&lt;typename T &gt; </div>
 <p>Implementation of <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793" title="Get value for given configuration variable. ">get()</a> which can be overloaded for scalars and vectors. </p>
 <p>The second argument is a dummy only to distinguish the two overloaded functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00133">133</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00139">139</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -726,7 +724,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00148">148</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00154">154</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -757,7 +755,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8">ChimeraTK::ApplicationModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00042">42</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00048">48</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -844,7 +842,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00116">116</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00122">122</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -868,7 +866,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00115">115</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00121">121</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -892,7 +890,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00117">117</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00123">123</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -916,7 +914,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00118">118</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00124">124</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -943,7 +941,7 @@ template&lt;typename T &gt; </div>
 
 <p>File name. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00054">54</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00060">60</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -969,7 +967,7 @@ template&lt;typename T &gt; </div>
 
 <p>Type-depending map of vectors of arrays. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00101">101</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00107">107</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -995,7 +993,7 @@ template&lt;typename T &gt; </div>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">        <span class="stringliteral">&quot;int8&quot;</span>, <span class="stringliteral">&quot;uint8&quot;</span>, <span class="stringliteral">&quot;int16&quot;</span>, <span class="stringliteral">&quot;uint16&quot;</span>, <span class="stringliteral">&quot;int32&quot;</span>, <span class="stringliteral">&quot;uint32&quot;</span>, <span class="stringliteral">&quot;int64&quot;</span>, <span class="stringliteral">&quot;uint64&quot;</span>, <span class="stringliteral">&quot;float&quot;</span>, <span class="stringliteral">&quot;double&quot;</span>, <span class="stringliteral">&quot;string&quot;</span>}</div></div><!-- fragment -->
 <p>Map assigning string type identifyers to C++ types. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00104">104</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00110">110</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -1021,7 +1019,7 @@ template&lt;typename T &gt; </div>
 
 <p>Type-depending map of vectors of variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00093">93</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00099">99</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -1032,7 +1030,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 23 2019 05:53:30 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 27 2019 05:53:18 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
