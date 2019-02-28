@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loglevel',['LogLevel',['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416',1,'logging']]]
+  ['hierarchymodifier',['HierarchyModifier',['../namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0',1,'ChimeraTK']]]
 ];

@@ -14,6 +14,6 @@ var searchData=
   ['nodetotrigger',['nodeToTrigger',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a55196ea2ebb93e081d552de34bd65777',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['nodetype',['NodeType',['../namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1d',1,'ChimeraTK']]],
   ['nodewithtrigger',['nodeWithTrigger',['../struct_chimera_t_k_1_1_variable_network_node__data.html#ae6adf71dcffcc8793977290195fa597f',1,'ChimeraTK::VariableNetworkNode_data']]],
-  ['none',['none',['../class_chimera_t_k_1_1_variable_network.html#aae82485cda15b256982eacbb4a103ecaa334c4a4c42fdb79d7ebc3e73b517e6f8',1,'ChimeraTK::VariableNetwork']]],
+  ['none',['none',['../class_chimera_t_k_1_1_variable_network.html#aae82485cda15b256982eacbb4a103ecaa334c4a4c42fdb79d7ebc3e73b517e6f8',1,'ChimeraTK::VariableNetwork::none()'],['../namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0a334c4a4c42fdb79d7ebc3e73b517e6f8',1,'ChimeraTK::none()']]],
   ['ntriggersperfile',['nTriggersPerFile',['../struct_chimera_t_k_1_1_micro_d_a_q.html#a1ba0f9ef3b0655352ce486126afe81aa',1,'ChimeraTK::MicroDAQ']]]
 ];
