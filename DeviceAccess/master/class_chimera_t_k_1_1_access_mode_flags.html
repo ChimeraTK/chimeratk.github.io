@@ -95,6 +95,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a785c39a24b2731c30a05d04798242883"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html#a785c39a24b2731c30a05d04798242883">checkForUnknownFlags</a> (const std::set&lt; <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11">AccessMode</a> &gt; &amp;knownFlags) const</td></tr>
 <tr class="memdesc:a785c39a24b2731c30a05d04798242883"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check of any flag which is not in the given set "knownFlags" is set.  <a href="#a785c39a24b2731c30a05d04798242883">More...</a><br /></td></tr>
 <tr class="separator:a785c39a24b2731c30a05d04798242883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d08e4ec0d64c91d6bfddc19b84bdba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html#a96d08e4ec0d64c91d6bfddc19b84bdba">operator==</a> (const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;other) const</td></tr>
+<tr class="memdesc:a96d08e4ec0d64c91d6bfddc19b84bdba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether two sets of acces mode flags are the same.  <a href="#a96d08e4ec0d64c91d6bfddc19b84bdba">More...</a><br /></td></tr>
+<tr class="separator:a96d08e4ec0d64c91d6bfddc19b84bdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a661836ae1fba8fcb4a4ed41f676ffe7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html#a661836ae1fba8fcb4a4ed41f676ffe7e">remove</a> (const <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11">AccessMode</a> flag)</td></tr>
 <tr class="memdesc:a661836ae1fba8fcb4a4ed41f676ffe7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the given flag from the set.  <a href="#a661836ae1fba8fcb4a4ed41f676ffe7e">More...</a><br /></td></tr>
 <tr class="separator:a661836ae1fba8fcb4a4ed41f676ffe7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,7 +114,7 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Set of AccessMode flags with additional functionality for an easier handling. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00044">44</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00043">43</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9b8244b9cba5317c0d10106b651f1100"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b8244b9cba5317c0d10106b651f1100">&#9670;&nbsp;</a></span>AccessModeFlags() <span class="overload">[1/2]</span></h2>
@@ -139,7 +142,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Constructor initialises from a std::set&lt;AccessMode&gt; </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00047">47</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00046">46</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 
 </div>
 </div>
@@ -170,7 +173,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Constructor initialises from a brace initialiser list (e.g. </p>
 <p>"{AccessMode::raw}"). Hint: You can use the brace initialiser list also without explicitly using the class name, when calling a function which has an argument of the type <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">AccessModeFlags</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00053">53</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00052">52</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 
 </div>
 </div>
@@ -201,7 +204,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Add the given flag to the set. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00076">76</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00081">81</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 
 </div>
 </div>
@@ -230,9 +233,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check of any flag which is not in the given set "knownFlags" is set. </p>
-<p>If an unknown flag has been found, a DeviceException with the id NOT_IMPLEMENTED is raised. </p>
+<p>If an unknown flag has been found, a <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> is raised. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00064">64</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00062">62</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 
 </div>
 </div>
@@ -262,7 +265,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Check if the set is empty (i.e. </p>
 <p>no flag has been set) </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00059">59</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00058">58</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +295,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Get a string representation of the given flag. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00079">79</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00084">84</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 
 </div>
 </div>
@@ -322,7 +325,37 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Check if a certain flag is in the set. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00056">56</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00055">55</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+
+</div>
+</div>
+<a id="a96d08e4ec0d64c91d6bfddc19b84bdba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d08e4ec0d64c91d6bfddc19b84bdba">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::AccessModeFlags::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check whether two sets of acces mode flags are the same. </p>
+
+<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00072">72</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 
 </div>
 </div>
@@ -352,7 +385,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Remove the given flag from the set. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00073">73</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_access_mode_8h_source.html#l00078">78</a> of file <a class="el" href="device_2include_2_access_mode_8h_source.html">AccessMode.h</a>.</p>
 
 </div>
 </div>
@@ -362,7 +395,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 26 2019 05:53:08 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 1 2019 05:53:09 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

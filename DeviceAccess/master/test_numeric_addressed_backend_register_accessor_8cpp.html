@@ -75,6 +75,9 @@ $(function() {
 <div class="textblock"><code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
 <code>#include &quot;Device.h&quot;</code><br />
 <code>#include &quot;TransferGroup.h&quot;</code><br />
+<code>#include &quot;BackendFactory.h&quot;</code><br />
+<code>#include &quot;DummyBackend.h&quot;</code><br />
+<code>#include &quot;DummyRegisterAccessor.h&quot;</code><br />
 </div>
 <p><a href="test_numeric_addressed_backend_register_accessor_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -101,6 +104,8 @@ Functions</h2></td></tr>
 <tr class="separator:a43c76573b6ba32e45f9e7a528957a3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82888bf7cb9ba0842ff858e6f0ef0ea4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp.html#a82888bf7cb9ba0842ff858e6f0ef0ea4">BOOST_AUTO_TEST_CASE</a> (testRawWithTransferGroup)</td></tr>
 <tr class="separator:a82888bf7cb9ba0842ff858e6f0ef0ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e9dde611495245404e5753d92eafd69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp.html#a4e9dde611495245404e5753d92eafd69">BOOST_AUTO_TEST_CASE</a> (testConverterTypes)</td></tr>
+<tr class="separator:a4e9dde611495245404e5753d92eafd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a139f00d2466d591f60b8d6a73c8273f1"></a>
@@ -137,7 +142,7 @@ Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="af8c05f1099b6e39241d27c05cac65fe4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8c05f1099b6e39241d27c05cac65fe4">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af8c05f1099b6e39241d27c05cac65fe4">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,12 +157,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html#l00019">19</a> of file <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html">testNumericAddressedBackendRegisterAccessor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html#l00023">23</a> of file <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html">testNumericAddressedBackendRegisterAccessor.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a6fd0b4421369afef3cfcdd3d296dfc78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fd0b4421369afef3cfcdd3d296dfc78">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fd0b4421369afef3cfcdd3d296dfc78">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,12 +177,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html#l00061">61</a> of file <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html">testNumericAddressedBackendRegisterAccessor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html#l00065">65</a> of file <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html">testNumericAddressedBackendRegisterAccessor.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a43c76573b6ba32e45f9e7a528957a3d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43c76573b6ba32e45f9e7a528957a3d0">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a43c76573b6ba32e45f9e7a528957a3d0">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,12 +197,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html#l00071">71</a> of file <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html">testNumericAddressedBackendRegisterAccessor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html#l00075">75</a> of file <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html">testNumericAddressedBackendRegisterAccessor.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a82888bf7cb9ba0842ff858e6f0ef0ea4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82888bf7cb9ba0842ff858e6f0ef0ea4">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a82888bf7cb9ba0842ff858e6f0ef0ea4">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,14 +217,34 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html#l00109">109</a> of file <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html">testNumericAddressedBackendRegisterAccessor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html#l00113">113</a> of file <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html">testNumericAddressedBackendRegisterAccessor.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4e9dde611495245404e5753d92eafd69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9dde611495245404e5753d92eafd69">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testConverterTypes&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html#l00234">234</a> of file <a class="el" href="test_numeric_addressed_backend_register_accessor_8cpp_source.html">testNumericAddressedBackendRegisterAccessor.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 26 2019 05:53:08 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 1 2019 05:53:09 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

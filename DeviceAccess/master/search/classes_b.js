@@ -21,5 +21,7 @@ var searchData=
   ['numericaddressedbackendregisteraccessor',['NumericAddressedBackendRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html',1,'ChimeraTK']]],
   ['numericaddressedlowleveltransferelement',['NumericAddressedLowLevelTransferElement',['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html',1,'ChimeraTK']]],
   ['numericaddressedlowleveltransferelement_5fnumberofbytes',['NumericAddressedLowLevelTransferElement_numberOfBytes',['../struct_numeric_addressed_low_level_transfer_element__number_of_bytes.html',1,'']]],
-  ['numericaddressedlowleveltransferelement_5fstartaddress',['NumericAddressedLowLevelTransferElement_startAddress',['../struct_numeric_addressed_low_level_transfer_element__start_address.html',1,'']]]
+  ['numericaddressedlowleveltransferelement_5fstartaddress',['NumericAddressedLowLevelTransferElement_startAddress',['../struct_numeric_addressed_low_level_transfer_element__start_address.html',1,'']]],
+  ['numericaddressedprepostactionsimplementor',['NumericAddressedPrePostActionsImplementor',['../struct_chimera_t_k_1_1detail_1_1_numeric_addressed_pre_post_actions_implementor.html',1,'ChimeraTK::detail']]],
+  ['numericaddressedprepostactionsimplementor_3c_20int32_5ft_2c_20dataconvertertype_2c_20true_20_3e',['NumericAddressedPrePostActionsImplementor&lt; int32_t, DataConverterType, true &gt;',['../struct_chimera_t_k_1_1detail_1_1_numeric_addressed_pre_post_actions_implementor_3_01int32__t_00_91dd5d5613f0c19f6eb310f85cede6b8.html',1,'ChimeraTK::detail']]]
 ];

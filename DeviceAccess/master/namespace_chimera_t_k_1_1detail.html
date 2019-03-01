@@ -73,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This function is external to allow template specialisation.  
+<p>Helper class for <a class="el" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d" title="Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...">for_each()</a>.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -91,6 +91,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1detail_1_1_n_d_register_accessor_decorator_impl_3_01_user_type_00_01_user_type_01_4.html">NDRegisterAccessorDecoratorImpl&lt; UserType, UserType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1detail_1_1_numeric_addressed_pre_post_actions_implementor.html">NumericAddressedPrePostActionsImplementor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">We need partial template specialisations of some functions.  <a href="struct_chimera_t_k_1_1detail_1_1_numeric_addressed_pre_post_actions_implementor.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1detail_1_1_numeric_addressed_pre_post_actions_implementor_3_01int32__t_00_91dd5d5613f0c19f6eb310f85cede6b8.html">NumericAddressedPrePostActionsImplementor&lt; int32_t, DataConverterType, true &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1detail_1_1_transfer_group_transfer_element_abstractor.html">TransferGroupTransferElementAbstractor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">just used in <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a105197b54833784c119bc3f445ae8a91" title="Add a register accessor to the group. ">TransferGroup::addAccessor</a>(const boost::shared_ptr&lt;TransferElement&gt; &amp;accessor)  <a href="struct_chimera_t_k_1_1detail_1_1_transfer_group_transfer_element_abstractor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,6 +111,7 @@ Functions</h2></td></tr>
 <tr class="separator:ac46ed2af4fd7506bd4e0992f8087630b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a140b90b5aaba30e3f01a101bb4da8794"><td class="memTemplParams" colspan="2">template&lt;typename ConverterT &gt; </td></tr>
 <tr class="memitem:a140b90b5aaba30e3f01a101bb4da8794"><td class="memTemplItemLeft" align="right" valign="top">ConverterT&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1detail.html#a140b90b5aaba30e3f01a101bb4da8794">createDataConverter</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html">RegisterInfoMap::RegisterInfo</a> &gt; registerInfo)</td></tr>
+<tr class="memdesc:a140b90b5aaba30e3f01a101bb4da8794"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is external to allow template specialisation.  <a href="#a140b90b5aaba30e3f01a101bb4da8794">More...</a><br /></td></tr>
 <tr class="separator:a140b90b5aaba30e3f01a101bb4da8794"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3557ba4f7b806b78be9ed1474ed6f4b8"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a3557ba4f7b806b78be9ed1474ed6f4b8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1detail.html#a3557ba4f7b806b78be9ed1474ed6f4b8">createDataConverter&lt; FixedPointConverter &gt;</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html">RegisterInfoMap::RegisterInfo</a> &gt; registerInfo)</td></tr>
@@ -121,8 +127,7 @@ Variables</h2></td></tr>
 <tr class="separator:a3043a9633f9257450574c8882af34621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This function is external to allow template specialisation. </p>
-<p>Helper class for <a class="el" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d" title="Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...">for_each()</a>.</p>
+<div class="textblock"><p>Helper class for <a class="el" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d" title="Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...">for_each()</a>. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ac46ed2af4fd7506bd4e0992f8087630b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac46ed2af4fd7506bd4e0992f8087630b">&#9670;&nbsp;</a></span>createCopyDecorator()</h2>
@@ -167,6 +172,8 @@ template&lt;typename ConverterT &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>This function is external to allow template specialisation. </p>
+
 </div>
 </div>
 <a id="a3557ba4f7b806b78be9ed1474ed6f4b8"></a>
@@ -187,7 +194,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00070">70</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00014">14</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -250,14 +257,14 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00077">77</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html#l00021">21</a> of file <a class="el" href="_numeric_addressed_backend_register_accessor_8cc_source.html">NumericAddressedBackendRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 26 2019 05:53:09 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 1 2019 05:53:10 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

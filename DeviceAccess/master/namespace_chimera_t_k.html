@@ -78,7 +78,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_chimera_t_k_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1detail.html">detail</a></td></tr>
-<tr class="memdesc:namespace_chimera_t_k_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is external to allow template specialisation. <br /></td></tr>
+<tr class="memdesc:namespace_chimera_t_k_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class for <a class="el" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d" title="Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...">for_each()</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_chimera_t_k_1_1numeric__address"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1numeric__address.html">numeric_address</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +166,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_register_address_checker.html">DummyRegisterAddressChecker</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class providing a function to check whether a given address is inside the address range of a register or not.  <a href="class_chimera_t_k_1_1_dummy_register_address_checker.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_register_raw_accessor.html">DummyRegisterRawAccessor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessor for raw 32 bit integer access to the underlying memory space.  <a href="class_chimera_t_k_1_1_dummy_register_raw_accessor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_experimental_features.html">ExperimentalFeatures</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for handling the experimental feature enable flag.  <a href="class_chimera_t_k_1_1_experimental_features.html#details">More...</a><br /></td></tr>
@@ -413,10 +416,14 @@ Functions</h2></td></tr>
 <tr class="separator:a7436572505b7cbb9c68d42fc881db771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a278538b785d2dba8e3a03b924e125c11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a278538b785d2dba8e3a03b924e125c11">DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html">NumericAddressedBackendMuxedRegisterAccessor</a>)</td></tr>
 <tr class="separator:a278538b785d2dba8e3a03b924e125c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02fb6e77472cd5e04974b49bc14dfea1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a02fb6e77472cd5e04974b49bc14dfea1">DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>, <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a>)</td></tr>
-<tr class="separator:a02fb6e77472cd5e04974b49bc14dfea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac925cae0350d9f2c5ed61cdece061527"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ac925cae0350d9f2c5ed61cdece061527">DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>, <a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html">IEEE754_SingleConverter</a>)</td></tr>
-<tr class="separator:ac925cae0350d9f2c5ed61cdece061527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33389204e881032753f65b9e16273a9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a33389204e881032753f65b9e16273a9e">DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>, <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a>, true)</td></tr>
+<tr class="separator:a33389204e881032753f65b9e16273a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1923ddb648568f20de9dd268fd5ff8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ac1923ddb648568f20de9dd268fd5ff8d">DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>, <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a>, false)</td></tr>
+<tr class="separator:ac1923ddb648568f20de9dd268fd5ff8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52ee1e5af79ce2638fc5841f2b8f2a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ae52ee1e5af79ce2638fc5841f2b8f2a5">DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>, <a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html">IEEE754_SingleConverter</a>, true)</td></tr>
+<tr class="separator:ae52ee1e5af79ce2638fc5841f2b8f2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a331e219ebc74268d0ed33fd394f24696"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a331e219ebc74268d0ed33fd394f24696">DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>, <a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html">IEEE754_SingleConverter</a>, false)</td></tr>
+<tr class="separator:a331e219ebc74268d0ed33fd394f24696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3a3068556abc98cc29ae738b3fcec0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aa3a3068556abc98cc29ae738b3fcec0b">DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html">LNMBackendBitAccessor</a>)</td></tr>
 <tr class="separator:aa3a3068556abc98cc29ae738b3fcec0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff96b5b96f07b7d89a63107cc11ce264"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aff96b5b96f07b7d89a63107cc11ce264">DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html">LNMBackendChannelAccessor</a>)</td></tr>
@@ -433,10 +440,14 @@ Functions</h2></td></tr>
 <tr class="separator:ae149b13bf5b9080c5865d9bf70567eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40ba02c9fbdb3da52b45a277fb86c1a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a40ba02c9fbdb3da52b45a277fb86c1a3">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html">NumericAddressedBackendMuxedRegisterAccessor</a>)</td></tr>
 <tr class="separator:a40ba02c9fbdb3da52b45a277fb86c1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaff61f1687b67ff734aba727c86f2259"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aaff61f1687b67ff734aba727c86f2259">INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>, <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a>)</td></tr>
-<tr class="separator:aaff61f1687b67ff734aba727c86f2259"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50abb4361eb336627970969f3c5b0831"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a50abb4361eb336627970969f3c5b0831">INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>, <a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html">IEEE754_SingleConverter</a>)</td></tr>
-<tr class="separator:a50abb4361eb336627970969f3c5b0831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accdf6e82b0e0f877afe1b7aa82869238"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#accdf6e82b0e0f877afe1b7aa82869238">INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>, <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a>, true)</td></tr>
+<tr class="separator:accdf6e82b0e0f877afe1b7aa82869238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ceca03b7d4fb33ff39d1bbf46c58d28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a8ceca03b7d4fb33ff39d1bbf46c58d28">INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>, <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a>, false)</td></tr>
+<tr class="separator:a8ceca03b7d4fb33ff39d1bbf46c58d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23af3a60e30fdf528b19ebb8029d91d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a23af3a60e30fdf528b19ebb8029d91d3">INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>, <a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html">IEEE754_SingleConverter</a>, true)</td></tr>
+<tr class="separator:a23af3a60e30fdf528b19ebb8029d91d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af38895646396ebc2165faa02474d6658"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#af38895646396ebc2165faa02474d6658">INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>, <a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html">IEEE754_SingleConverter</a>, false)</td></tr>
+<tr class="separator:af38895646396ebc2165faa02474d6658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3866f314ddf52c6edb0f62cef066f796"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a3866f314ddf52c6edb0f62cef066f796">operator/</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;leftHandSide, const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;rightHandSide)</td></tr>
 <tr class="memdesc:a3866f314ddf52c6edb0f62cef066f796"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-member / operator: add a new element to the path.  <a href="#a3866f314ddf52c6edb0f62cef066f796">More...</a><br /></td></tr>
 <tr class="separator:a3866f314ddf52c6edb0f62cef066f796"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -950,8 +961,8 @@ template&lt;typename LAMBDATYPE &gt; </div>
 
 </div>
 </div>
-<a id="a02fb6e77472cd5e04974b49bc14dfea1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02fb6e77472cd5e04974b49bc14dfea1">&#9670;&nbsp;</a></span>DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[1/2]</span></h2>
+<a id="a33389204e881032753f65b9e16273a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33389204e881032753f65b9e16273a9e">&#9670;&nbsp;</a></span>DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -966,6 +977,12 @@ template&lt;typename LAMBDATYPE &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">true&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -978,8 +995,42 @@ template&lt;typename LAMBDATYPE &gt; </div>
 
 </div>
 </div>
-<a id="ac925cae0350d9f2c5ed61cdece061527"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac925cae0350d9f2c5ed61cdece061527">&#9670;&nbsp;</a></span>DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[2/2]</span></h2>
+<a id="ac1923ddb648568f20de9dd268fd5ff8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1923ddb648568f20de9dd268fd5ff8d">&#9670;&nbsp;</a></span>DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">false&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae52ee1e5af79ce2638fc5841f2b8f2a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae52ee1e5af79ce2638fc5841f2b8f2a5">&#9670;&nbsp;</a></span>DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -994,6 +1045,46 @@ template&lt;typename LAMBDATYPE &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html">IEEE754_SingleConverter</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">true&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a331e219ebc74268d0ed33fd394f24696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a331e219ebc74268d0ed33fd394f24696">&#9670;&nbsp;</a></span>DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html">IEEE754_SingleConverter</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">false&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -1218,8 +1309,8 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a id="aaff61f1687b67ff734aba727c86f2259"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaff61f1687b67ff734aba727c86f2259">&#9670;&nbsp;</a></span>INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[1/2]</span></h2>
+<a id="accdf6e82b0e0f877afe1b7aa82869238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accdf6e82b0e0f877afe1b7aa82869238">&#9670;&nbsp;</a></span>INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1234,6 +1325,12 @@ template&lt;&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">true&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -1246,8 +1343,42 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a id="a50abb4361eb336627970969f3c5b0831"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50abb4361eb336627970969f3c5b0831">&#9670;&nbsp;</a></span>INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[2/2]</span></h2>
+<a id="a8ceca03b7d4fb33ff39d1bbf46c58d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ceca03b7d4fb33ff39d1bbf46c58d28">&#9670;&nbsp;</a></span>INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">false&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23af3a60e30fdf528b19ebb8029d91d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23af3a60e30fdf528b19ebb8029d91d3">&#9670;&nbsp;</a></span>INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1262,6 +1393,12 @@ template&lt;&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html">IEEE754_SingleConverter</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">true&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -1274,36 +1411,34 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a id="a40ba02c9fbdb3da52b45a277fb86c1a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40ba02c9fbdb3da52b45a277fb86c1a3">&#9670;&nbsp;</a></span>INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[1/5]</span></h2>
+<a id="af38895646396ebc2165faa02474d6658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af38895646396ebc2165faa02474d6658">&#9670;&nbsp;</a></span>INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ChimeraTK::INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
+          <td class="memname">ChimeraTK::INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html">NumericAddressedBackendMuxedRegisterAccessor</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a>&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8c9f67bf29e708e827da1dcb0376dcf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c9f67bf29e708e827da1dcb0376dcf0">&#9670;&nbsp;</a></span>INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">ChimeraTK::INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html">LNMBackendBitAccessor</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html">IEEE754_SingleConverter</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">false&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1311,7 +1446,7 @@ template&lt;&gt; </div>
 </div>
 </div>
 <a id="ad1f171ec71d1838d79f718ed718bf8e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1f171ec71d1838d79f718ed718bf8e2">&#9670;&nbsp;</a></span>INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1f171ec71d1838d79f718ed718bf8e2">&#9670;&nbsp;</a></span>INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1329,7 +1464,7 @@ template&lt;&gt; </div>
 </div>
 </div>
 <a id="a3fb4962cc50199a6b5fd67f082106b82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fb4962cc50199a6b5fd67f082106b82">&#9670;&nbsp;</a></span>INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fb4962cc50199a6b5fd67f082106b82">&#9670;&nbsp;</a></span>INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1338,6 +1473,42 @@ template&lt;&gt; </div>
           <td class="memname">ChimeraTK::INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">LNMBackendVariableAccessor</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40ba02c9fbdb3da52b45a277fb86c1a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40ba02c9fbdb3da52b45a277fb86c1a3">&#9670;&nbsp;</a></span>INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html">NumericAddressedBackendMuxedRegisterAccessor</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c9f67bf29e708e827da1dcb0376dcf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c9f67bf29e708e827da1dcb0376dcf0">&#9670;&nbsp;</a></span>INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html">LNMBackendBitAccessor</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1727,7 +1898,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_info_map_8cpp_source.html#l00132">132</a> of file <a class="el" href="_register_info_map_8cpp_source.html">RegisterInfoMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_info_map_8cpp_source.html#l00131">131</a> of file <a class="el" href="_register_info_map_8cpp_source.html">RegisterInfoMap.cpp</a>.</p>
 
 </div>
 </div>
@@ -1757,7 +1928,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_info_map_8cpp_source.html#l00137">137</a> of file <a class="el" href="_register_info_map_8cpp_source.html">RegisterInfoMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_info_map_8cpp_source.html#l00136">136</a> of file <a class="el" href="_register_info_map_8cpp_source.html">RegisterInfoMap.cpp</a>.</p>
 
 </div>
 </div>
@@ -1787,7 +1958,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_info_map_8cpp_source.html#l00154">154</a> of file <a class="el" href="_register_info_map_8cpp_source.html">RegisterInfoMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_info_map_8cpp_source.html#l00153">153</a> of file <a class="el" href="_register_info_map_8cpp_source.html">RegisterInfoMap.cpp</a>.</p>
 
 </div>
 </div>
@@ -1817,7 +1988,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_info_map_8cpp_source.html#l00171">171</a> of file <a class="el" href="_register_info_map_8cpp_source.html">RegisterInfoMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_info_map_8cpp_source.html#l00170">170</a> of file <a class="el" href="_register_info_map_8cpp_source.html">RegisterInfoMap.cpp</a>.</p>
 
 </div>
 </div>
@@ -1847,7 +2018,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_info_map_8cpp_source.html#l00180">180</a> of file <a class="el" href="_register_info_map_8cpp_source.html">RegisterInfoMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_info_map_8cpp_source.html#l00179">179</a> of file <a class="el" href="_register_info_map_8cpp_source.html">RegisterInfoMap.cpp</a>.</p>
 
 </div>
 </div>
@@ -1877,7 +2048,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_info_map_8cpp_source.html#l00205">205</a> of file <a class="el" href="_register_info_map_8cpp_source.html">RegisterInfoMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_info_map_8cpp_source.html#l00204">204</a> of file <a class="el" href="_register_info_map_8cpp_source.html">RegisterInfoMap.cpp</a>.</p>
 
 </div>
 </div>
@@ -1907,7 +2078,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_info_map_8cpp_source.html#l00223">223</a> of file <a class="el" href="_register_info_map_8cpp_source.html">RegisterInfoMap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_info_map_8cpp_source.html#l00222">222</a> of file <a class="el" href="_register_info_map_8cpp_source.html">RegisterInfoMap.cpp</a>.</p>
 
 </div>
 </div>
@@ -2162,7 +2333,7 @@ template&lt;&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 26 2019 05:53:08 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 1 2019 05:53:09 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

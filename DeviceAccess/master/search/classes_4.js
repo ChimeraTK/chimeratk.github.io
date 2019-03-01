@@ -37,6 +37,7 @@ var searchData=
   ['dummyregisteraddresschecker',['DummyRegisterAddressChecker',['../class_chimera_t_k_1_1_dummy_register_address_checker.html',1,'ChimeraTK']]],
   ['dummyregisterelement',['DummyRegisterElement',['../class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html',1,'ChimeraTK::proxies']]],
   ['dummyregisterelement_3c_20int_20_3e',['DummyRegisterElement&lt; int &gt;',['../class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html',1,'ChimeraTK::proxies']]],
+  ['dummyregisterrawaccessor',['DummyRegisterRawAccessor',['../class_chimera_t_k_1_1_dummy_register_raw_accessor.html',1,'ChimeraTK']]],
   ['dummyregistersequence',['DummyRegisterSequence',['../class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html',1,'ChimeraTK::proxies']]],
   ['dummyregistertest',['DummyRegisterTest',['../class_dummy_register_test.html',1,'']]],
   ['dummyregistertestsuite',['DummyRegisterTestSuite',['../class_dummy_register_test_suite.html',1,'']]]

@@ -75,7 +75,7 @@ $(function() {
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a6fcefb23ff468baa1bd92cad6800ce89">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a96b365f767af7bd6bb3199fc5e1d7902">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#ac27cea94fc839e8f3d08b7af7ee80009">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a911e8e10d1b950032fc1e1eab6ee057b">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a63740acdce7bc3f109f94076bc92ae42">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#aeb580bda2db02aed5ac1b6fbf01c6fbb">ChimeraTK::NumericAddressedLowLevelTransferElement</a>
 , <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a084e4fca0ac18fb5fa57a9924e118a20">ChimeraTK::SubdeviceRegisterAccessor</a>
 , <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a93d2e84da7325bb205fb4bc51e660aa4">ChimeraTK::TransferElement</a>
@@ -96,7 +96,7 @@ $(function() {
 <li>getAsCooked_impl()
 : <a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html#aefdb950566dc8a486bbc7835f2653d94">ChimeraTK::FixedPointConvertingRawDecorator&lt; TargetUserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#a0d4c94f0fd0e6fb1b5049017c1d62135">ChimeraTK::NDRegisterAccessor&lt; UserType &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a4eb173e53eb28959b127032a640e460e">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a1e2bb744510b398dfdc5ed93288b4a14">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>
 </li>
 <li>getBackend()
 : <a class="el" href="class_testable_device.html#ab64822db7a061ac84a413f24b72e9e00">TestableDevice</a>
@@ -157,7 +157,7 @@ $(function() {
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a24670e32d638cc9bc4763ad3f9a3d358">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a22f66016cf08d8c47e3f98e7d4b52566">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a64df1fb2f5a4dbe56b1ddd75d9813a02">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#abb5e94019b444be844637596e8425e67">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a995b90ee7869ae3f8f799bc1490f6de1">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#abbb7cc32f336337c28d4deb534e31f1c">ChimeraTK::NumericAddressedLowLevelTransferElement</a>
 , <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#aa1c186bcc6d833ac92611b7e2b87fc8a">ChimeraTK::SubdeviceRegisterAccessor</a>
 , <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a36b8f2cad449056d909560e371c78229">ChimeraTK::TransferElement</a>
@@ -189,7 +189,7 @@ $(function() {
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a851f86840ce959223801b84da9a74c86">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aafceeb01919b01dfc3ae1f643f9af0af">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a61efbb917df7cdbab4e5d32e03afad28">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a7614e818acb47cefffdb7f0c6c3fbc9c">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#abd9060748c79d3e98eb67b2a1c8e7130">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#aebfab8b86f43d733acd441397a5c626b">ChimeraTK::NumericAddressedLowLevelTransferElement</a>
 , <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a632ff866203bf56bf56e87daccd2da07">ChimeraTK::SubdeviceRegisterAccessor</a>
 , <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a561932e1a87dcc57cb3525a9980bdf49">ChimeraTK::TransferElement</a>
@@ -248,6 +248,7 @@ $(function() {
 : <a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html#a4273c036267bf9a56fb4164bbc5a4369">ChimeraTK::BufferingRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html#aeb8f03e7ef2945dfc62819271665d1ea">ChimeraTK::DummyMultiplexedRegisterAccessor&lt; T &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_dummy_register_accessor.html#a8005241e65e65bd075ef0c2360894b15">ChimeraTK::DummyRegisterAccessor&lt; T &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_dummy_register_raw_accessor.html#aa921c2aa9f2b752126c45a5b13235b0e">ChimeraTK::DummyRegisterRawAccessor</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a77065ed1981822f356f143dcb136bd47">ChimeraTK::LNMBackendRegisterInfo</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#ab62f03790661613d95c26ee13362b1ba">ChimeraTK::RegisterAccessor</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_info.html#acc18b368ac96ca55d2a280aef0c6de43">ChimeraTK::RegisterInfo</a>
@@ -279,18 +280,21 @@ $(function() {
 <li>getProxy()
 : <a class="el" href="class_chimera_t_k_1_1_dummy_register_accessor.html#a84e72577002961f0400c133b905234b5">ChimeraTK::DummyRegisterAccessor&lt; T &gt;</a>
 </li>
+<li>getRawAccessor()
+: <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a27fa3031e73c504d0e9964df66288b79">ChimeraTK::DummyBackend</a>
+</li>
 <li>getRegister()
 : <a class="el" href="class_chimera_t_k_1_1_register_catalogue.html#a9603b6eb18d6ff721901977e619c565a">ChimeraTK::RegisterCatalogue</a>
 </li>
 <li>getRegisterAccessor()
 : <a class="el" href="class_chimera_t_k_1_1_device.html#a27ba7d76905671dbd39495186532617a">ChimeraTK::Device</a>
-, <a class="el" href="class_chimera_t_k_1_1_device_backend.html#ade6ceb13d1f554138f8d3180cca88ba6">ChimeraTK::DeviceBackend</a>
+, <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a85a134106068b02a89cbfa9a4559ccfc">ChimeraTK::DeviceBackend</a>
 </li>
 <li>getRegisterAccessor_3regs()
-: <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ac2a15d20bba67a7a0e5690a4a62cf8f2">ChimeraTK::SubdeviceBackend</a>
+: <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a9a81ab17340070dc7b1175023e2857b4">ChimeraTK::SubdeviceBackend</a>
 </li>
 <li>getRegisterAccessor_area()
-: <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a729af3d2e645796f1b12604efafb588c">ChimeraTK::SubdeviceBackend</a>
+: <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ad584015f09db6583a6f21a67c3e83710">ChimeraTK::SubdeviceBackend</a>
 </li>
 <li>getRegisterAccessor_impl()
 : <a class="el" href="class_async_test_dummy.html#a0478a401f99a1ded2b976fed0adfdd9b">AsyncTestDummy</a>
@@ -313,7 +317,7 @@ $(function() {
 : <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#aaa42fc4a9f4c06c3ce8c311952edcb22">ChimeraTK::SharedDummyBackend</a>
 </li>
 <li>getRegisterInfo()
-: <a class="el" href="class_chimera_t_k_1_1_d_map_files_parser.html#a2fad97dfa7dfaadf9f07c7a04aef78f8">ChimeraTK::DMapFilesParser</a>
+: <a class="el" href="class_chimera_t_k_1_1_d_map_files_parser.html#a7ce84442a6eb2374221c91fc402a0f67">ChimeraTK::DMapFilesParser</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a7333d238a0a4552529935881ad0f8c5e">ChimeraTK::NumericAddressedBackend</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#aee45b12542a086c11ecfbba78148cfde">ChimeraTK::RegisterAccessor</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_info_map.html#ab002a1a7304dcd6f8409d87c630a637b">ChimeraTK::RegisterInfoMap</a>
@@ -336,7 +340,7 @@ $(function() {
 , <a class="el" href="class_chimera_t_k_1_1_register_info_map.html#a2ff406edca6c194c590ec2c4ede0640a">ChimeraTK::RegisterInfoMap</a>
 </li>
 <li>getScalarRegisterAccessor()
-: <a class="el" href="class_chimera_t_k_1_1_device.html#a4a5651ff6d3e8418ea8e787765346b5d">ChimeraTK::Device</a>
+: <a class="el" href="class_chimera_t_k_1_1_device.html#a953db6616908b17380fb1ace248c5a77">ChimeraTK::Device</a>
 </li>
 <li>getServerProtocolVersion()
 : <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#ab57f761f8e81443540d24d912160d227">ChimeraTK::RebotBackend</a>
@@ -376,7 +380,7 @@ $(function() {
 , <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aaec6a18f44e33212f7b306d16e7bfb93">ChimeraTK::TransferElementAbstractor</a>
 </li>
 <li>getValueFromXmlSubnode()
-: <a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a59e3cadf8ca975a0c01291db2d1d9ac0">ChimeraTK::LogicalNameMapParser</a>
+: <a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#abd38fcc7e2fa960acd93cebd16b8d917">ChimeraTK::LogicalNameMapParser</a>
 </li>
 <li>getValueType()
 : <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#a5a84f98918e4b1d9ffd3a4db3fbb2365">ChimeraTK::NDRegisterAccessor&lt; UserType &gt;</a>
@@ -385,7 +389,7 @@ $(function() {
 , <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aceda7d828e20665cf3d25195565e4ebe">ChimeraTK::TransferElementAbstractor</a>
 </li>
 <li>getValueVectorFromXmlSubnode()
-: <a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#ae8f13a61e1995b759840129c793168d7">ChimeraTK::LogicalNameMapParser</a>
+: <a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a3accc305e418a90e5de5d19cf1df6f07">ChimeraTK::LogicalNameMapParser</a>
 </li>
 <li>getVersionNumber()
 : <a class="el" href="class_async_test_dummy_1_1_accessor.html#aa02287b6d392d741df29de73dbacfe69">AsyncTestDummy::Accessor&lt; UserType &gt;</a>
@@ -395,7 +399,7 @@ $(function() {
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#abd0138de04c9f7d35b6e35d16a125e27">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#abfb7fe505c7ff26d9ee5d440ba135f6e">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a7908c382da048b1ada7739471c02aaae">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a025521ac003df058bbdea33eca8eae5a">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#af4301f21b2d15a15fdf20a62b4f1db16">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a2e412b0b0d7a1eca693fa2aa49286694">ChimeraTK::NumericAddressedLowLevelTransferElement</a>
 , <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a192046422d8a0789831407d5e870fcda">ChimeraTK::SubdeviceRegisterAccessor</a>
 , <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a97ff27579d6a52ef1c5c629c316bf53e">ChimeraTK::TransferElement</a>
@@ -411,7 +415,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 26 2019 05:53:09 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 1 2019 05:53:10 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
