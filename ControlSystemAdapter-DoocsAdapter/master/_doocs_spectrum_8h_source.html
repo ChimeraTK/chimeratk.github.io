@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter
    &#160;<span id="projectnumber">master</span>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_doocs_spectrum_8h_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">DoocsSpectrum.h</div>  </div>
@@ -82,15 +99,19 @@ $(function() {
 <div class="ttc" id="class_chimera_t_k_1_1_doocs_spectrum_html"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_spectrum.html">ChimeraTK::DoocsSpectrum</a></div><div class="ttdef"><b>Definition:</b> <a href="_doocs_spectrum_8h_source.html#l00016">DoocsSpectrum.h:16</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_doocs_spectrum_html_a585c8c2eadfa3fac5ac129ed95e1fe05"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_spectrum.html#a585c8c2eadfa3fac5ac129ed95e1fe05">ChimeraTK::DoocsSpectrum::updateParameters</a></div><div class="ttdeci">void updateParameters()</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_spectrum_8cc_source.html#l00067">DoocsSpectrum.cc:67</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_doocs_spectrum_html_a522689bb63253a3315193eac89a6f950"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_spectrum.html#a522689bb63253a3315193eac89a6f950">ChimeraTK::DoocsSpectrum::_incrementAccessor</a></div><div class="ttdeci">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt; &gt; _incrementAccessor</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_spectrum_8h_source.html#l00057">DoocsSpectrum.h:57</a></div></div>
-<div class="ttc" id="namespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_s_adapter_eq_fct_8cc_source.html#l00006">CSAdapterEqFct.cc:6</a></div></div>
+<div class="ttc" id="namespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="basename_from_address_8h_source.html#l00004">basenameFromAddress.h:4</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_doocs_spectrum_html_af3e583d4bd5f07dbec9385d70cb404b2"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_spectrum.html#af3e583d4bd5f07dbec9385d70cb404b2">ChimeraTK::DoocsSpectrum::_macroPulseNumberSource</a></div><div class="ttdeci">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt; &gt; _macroPulseNumberSource</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_spectrum_8h_source.html#l00058">DoocsSpectrum.h:58</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_doocs_spectrum_html_a838549fdb4e178c0b115b52f16fca2df"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_spectrum.html#a838549fdb4e178c0b115b52f16fca2df">ChimeraTK::DoocsSpectrum::auto_init</a></div><div class="ttdeci">void auto_init(void) override</div><div class="ttdoc">Override the Doocs auto_init() method, which is called after initialising the value of the property f...</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_spectrum_8cc_source.html#l00038">DoocsSpectrum.cc:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 23 2019 05:53:53 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_doocs_spectrum_8h.html">DoocsSpectrum.h</a></li>
+    <li class="footer">Generated on Mon Mar 4 2019 13:48:06 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

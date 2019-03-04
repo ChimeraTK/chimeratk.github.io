@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-DoocsAdapter
    &#160;<span id="projectnumber">master</span>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_doocs_process_scalar_8h_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">DoocsProcessScalar.h</div>  </div>
@@ -77,17 +94,21 @@ $(function() {
 <div class="ttc" id="class_chimera_t_k_1_1_doocs_process_scalar_html_aa0b4bf938939916d3220b13a024032ff"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_process_scalar.html#aa0b4bf938939916d3220b13a024032ff">ChimeraTK::DoocsProcessScalar::DoocsProcessScalar</a></div><div class="ttdeci">DoocsProcessScalar(std::string doocsPropertyName, EqFct *eqFct, boost::shared_ptr&lt; typename ChimeraTK::NDRegisterAccessor&lt; T &gt;&gt; const &amp;processScalar, DoocsUpdater &amp;updater)</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_process_scalar_8h_source.html#l00055">DoocsProcessScalar.h:55</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_doocs_updater_html"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_updater.html">ChimeraTK::DoocsUpdater</a></div><div class="ttdoc">A class to synchronise DeviceToControlSystem variable to Doocs. </div><div class="ttdef"><b>Definition:</b> <a href="_doocs_updater_8h_source.html#l00019">DoocsUpdater.h:19</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_doocs_process_scalar_html_a8094bd569539554353d269b416f9e7ac"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_process_scalar.html#a8094bd569539554353d269b416f9e7ac">ChimeraTK::DoocsProcessScalar::_processScalar</a></div><div class="ttdeci">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; T &gt; &gt; _processScalar</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_process_scalar_8h_source.html#l00100">DoocsProcessScalar.h:100</a></div></div>
-<div class="ttc" id="namespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_s_adapter_eq_fct_8cc_source.html#l00006">CSAdapterEqFct.cc:6</a></div></div>
+<div class="ttc" id="namespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="basename_from_address_8h_source.html#l00004">basenameFromAddress.h:4</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_doocs_process_scalar_html_a5f55136185466eaf6f8c5791bf1b380f"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_process_scalar.html#a5f55136185466eaf6f8c5791bf1b380f">ChimeraTK::DoocsProcessScalar::publishZeroMQ</a></div><div class="ttdeci">void publishZeroMQ()</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_process_scalar_8h_source.html#l00093">DoocsProcessScalar.h:93</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_doocs_process_scalar_html_a1bcb13399910169128c46eb9e49adccf"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_process_scalar.html#a1bcb13399910169128c46eb9e49adccf">ChimeraTK::DoocsProcessScalar::publishZMQ</a></div><div class="ttdeci">bool publishZMQ</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_process_scalar_8h_source.html#l00102">DoocsProcessScalar.h:102</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_doocs_process_scalar_html_ad13b40f2d12f57129e0427307573b96b"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_process_scalar.html#ad13b40f2d12f57129e0427307573b96b">ChimeraTK::DoocsProcessScalar::setMacroPulseNumberSource</a></div><div class="ttdeci">void setMacroPulseNumberSource(boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt;&gt; macroPulseNumberSource)</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_process_scalar_8h_source.html#l00095">DoocsProcessScalar.h:95</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_doocs_process_scalar_html_a9083eafab25e669b9ad746773dbc4123"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_process_scalar.html#a9083eafab25e669b9ad746773dbc4123">ChimeraTK::DoocsProcessScalar::auto_init</a></div><div class="ttdeci">void auto_init(void) override</div><div class="ttdoc">Override the Doocs auto_init() method, which is called after initialising the value of the property f...</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_process_scalar_8h_source.html#l00084">DoocsProcessScalar.h:84</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 23 2019 05:53:53 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_doocs_process_scalar_8h.html">DoocsProcessScalar.h</a></li>
+    <li class="footer">Generated on Mon Mar 4 2019 13:48:06 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>
