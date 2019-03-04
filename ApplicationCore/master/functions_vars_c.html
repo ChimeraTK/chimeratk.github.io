@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore
    &#160;<span id="projectnumber">master</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_vars_c.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -63,32 +84,92 @@ $(function() {
 &#160;
 
 <h3><a id="index_c"></a>- c -</h3><ul>
+<li>config
+: <a class="el" href="struct_example_app.html#ac27615ec57647b865dc7e34864e68076">ExampleApp</a>
+, <a class="el" href="struct_test_application.html#ad9bb8d863d3af22510b99f528863e103">TestApplication&lt; T &gt;</a>
+, <a class="el" href="struct_test_application_two_configs.html#a935b5f4fd8abe9d4768cc863d2a5c91e">TestApplicationTwoConfigs</a>
+</li>
+<li>config2
+: <a class="el" href="struct_test_application_two_configs.html#a8ca63b645b4d61db5191b5f29eb0b702">TestApplicationTwoConfigs</a>
+</li>
 <li>constantList
 : <a class="el" href="class_chimera_t_k_1_1_application.html#a3a4eb7108167ede1b8d3702180f115c4">ChimeraTK::Application</a>
 </li>
 <li>constNode
 : <a class="el" href="struct_chimera_t_k_1_1_variable_network_node__data.html#a6472ffa489109f46e0412b3508140294">ChimeraTK::VariableNetworkNode_data</a>
 </li>
-<li>currentBuffer
-: <a class="el" href="struct_chimera_t_k_1_1detail_1_1_h5storage.html#a973129ccd42b8a6c5e9cd44326f4da52">ChimeraTK::detail::H5storage</a>
+<li>consumer
+: <a class="el" href="struct_test_module.html#a5114b19bc7c624f7476d435e6ecc8ebd">TestModule&lt; T &gt;</a>
+</li>
+<li>consumingPoll
+: <a class="el" href="struct_test_module.html#a134bb486dcfb014cdb37b1edf7379f08">TestModule&lt; T &gt;</a>
+, <a class="el" href="struct_test_module_1_1_mixed_group.html#a2b4c18044cb32c04ebfee6616fca3f39">TestModule&lt; T &gt;::MixedGroup</a>
+</li>
+<li>consumingPoll2
+: <a class="el" href="struct_test_module.html#ac5dda4999f5a708e4a91ae4da8a26746">TestModule&lt; T &gt;</a>
+, <a class="el" href="struct_test_module_1_1_mixed_group.html#a8851d287396aa5924cdd86689623d940">TestModule&lt; T &gt;::MixedGroup</a>
+</li>
+<li>consumingPoll3
+: <a class="el" href="struct_test_module.html#ad4f7161f82f34a4abfa60ff69b57dec6">TestModule&lt; T &gt;</a>
+, <a class="el" href="struct_test_module_1_1_mixed_group.html#a2502ddc0404271beb30cb957f45b897a">TestModule&lt; T &gt;::MixedGroup</a>
+</li>
+<li>consumingPollArray
+: <a class="el" href="struct_test_module.html#af4a049e186609ecd8b736114e264293c">TestModule&lt; T &gt;</a>
+</li>
+<li>consumingPush
+: <a class="el" href="struct_test_module.html#a2be3b805aecdcd87501aa878896cd01c">TestModule&lt; T &gt;</a>
+, <a class="el" href="struct_test_module_1_1_mixed_group.html#af9d64260b21612a0509cca178c5335e4">TestModule&lt; T &gt;::MixedGroup</a>
+</li>
+<li>consumingPush2
+: <a class="el" href="struct_test_module.html#aaf79f0003aa91f4422c5e7cd2c3662b9">TestModule&lt; T &gt;</a>
+, <a class="el" href="struct_test_module_1_1_mixed_group.html#a60923ef995285d4ace959853937a437b">TestModule&lt; T &gt;::MixedGroup</a>
+</li>
+<li>consumingPush3
+: <a class="el" href="struct_test_module.html#a059eec22d57ba92822347298f830c20c">TestModule&lt; T &gt;</a>
+, <a class="el" href="struct_test_module_1_1_mixed_group.html#a7b2b7da5ca835b95fd2f08e51820e4ad">TestModule&lt; T &gt;::MixedGroup</a>
+</li>
+<li>consumingPushArray
+: <a class="el" href="struct_test_module.html#aaa3f6951acea15ad4df46691c11009f0">TestModule&lt; T &gt;</a>
+</li>
+<li>controller
+: <a class="el" href="struct_example_app.html#a18114dde44283acd78a5e2da28a32711">ExampleApp</a>
+</li>
+<li>cs
+: <a class="el" href="struct_example_app.html#a73e5413e7963cf5a6211c2f77784a79e">ExampleApp</a>
+, <a class="el" href="struct_polling_test_application.html#a94fb8410d66cd609e986a389f98b9ce2">PollingTestApplication&lt; T &gt;</a>
+, <a class="el" href="structtest_app.html#a98ea28ac8f30b11953ce34e0556b7c99">testApp</a>
+, <a class="el" href="struct_test_application.html#a15104579f663400e9828b176491df259">TestApplication&lt; T &gt;</a>
+, <a class="el" href="struct_test_application_connect_to.html#a5c46da9a40ff8c0721d7d90a1bdd93d1">TestApplicationConnectTo</a>
+</li>
+<li>csmod
+: <a class="el" href="struct_test_app.html#a8a959ab8f5ab64b044145df4202ed4f1">TestApp</a>
+</li>
+<li>cur
+: <a class="el" href="struct_controller.html#a54f77011079233e80bf09ac9867773ce">Controller</a>
 </li>
 <li>currentFile
 : <a class="el" href="struct_chimera_t_k_1_1_micro_d_a_q.html#a946f32d094c32becedbc433f9408e6f5">ChimeraTK::MicroDAQ</a>
 </li>
-<li>currentGroupName
-: <a class="el" href="struct_chimera_t_k_1_1detail_1_1_h5storage.html#a6776edd915d7409a6037c244f9ff8bcc">ChimeraTK::detail::H5storage</a>
+<li>currentVersion
+: <a class="el" href="class_timer_dummy_register_accessor.html#af4537a9ea343b49422dbf29dec0c8341">TimerDummyRegisterAccessor&lt; UserType &gt;</a>
 </li>
 <li>currentVersionNumber
 : <a class="el" href="class_chimera_t_k_1_1_application_module.html#ad8476bb19cd8ded587db75a19b9ffa15">ChimeraTK::ApplicationModule</a>
 , <a class="el" href="class_chimera_t_k_1_1_device_module.html#a4a3bfad5ba8749f4e37a5165bbbdb321">ChimeraTK::DeviceModule</a>
 </li>
+<li>curSP
+: <a class="el" href="struct_automation.html#a1a86176292eb457cf69d9a764a38a468">Automation</a>
+</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:29 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Mon Mar 4 2019 13:47:31 for ChimeraTK-ApplicationCore by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

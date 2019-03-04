@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore
    &#160;<span id="projectnumber">master</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('globals_func.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,17 +81,89 @@ $(function() {
 </div>
 
 <div class="contents">
-&#160;<ul>
+&#160;
+
+<h3><a id="index_b"></a>- b -</h3><ul>
+<li>BOOST_AUTO_TEST_CASE()
+: <a class="el" href="test_application_8cc.html#a532515c0039c717e9effdbfae56a5f30">testApplication.cc</a>
+, <a class="el" href="test_modules_8cc.html#a8e515083ea4e6cd682e20c6d57ba35cb">testModules.cc</a>
+, <a class="el" href="test_bidirectional_variables_8cc.html#a770cbc1044b9190bbc8583fa9858a27f">testBidirectionalVariables.cc</a>
+, <a class="el" href="test_modules_8cc.html#a8d1a8553ac6153918e23845a529418ee">testModules.cc</a>
+, <a class="el" href="test_find_tag_8cc.html#a7bbb5ce58734f7a1c6c9429d7c4eefd5">testFindTag.cc</a>
+, <a class="el" href="test_device_accessors_8cc.html#a98431e6bb1f83fad73fc6f3c89aceb1e">testDeviceAccessors.cc</a>
+, <a class="el" href="test_modules_8cc.html#a695e09374252f192a0cc230d730fef2c">testModules.cc</a>
+, <a class="el" href="test_connect_to_8cc.html#af46e258b1e2d5cbd3eec9ca19958e9e7">testConnectTo.cc</a>
+, <a class="el" href="test_modules_8cc.html#a9d24eea5924bbd61af30546a5cdeafc0">testModules.cc</a>
+, <a class="el" href="test_logging_8cc.html#a3fc7767c1a2a89f2a8e1c73b712c1b27">testLogging.cc</a>
+, <a class="el" href="test_bidirectional_variables_8cc.html#ab92f83b705533f950d1ad7405f189ba0">testBidirectionalVariables.cc</a>
+, <a class="el" href="test_direct_device_to_c_s_8cc.html#a08399741d25e3a09169c4d2aa997dc57">testDirectDeviceToCS.cc</a>
+, <a class="el" href="test_modules_8cc.html#a48ec797b160ba091bb194a0882fa1623">testModules.cc</a>
+, <a class="el" href="test_logging_8cc.html#abf30e390d6511a194534818524c07519">testLogging.cc</a>
+, <a class="el" href="test_modules_8cc.html#ac061868745661f1d128b1393bb804a50">testModules.cc</a>
+, <a class="el" href="test_exception_test_8cc.html#a2c6f8899b0935d130ea1c2cbd2f3ae0a">testExceptionTest.cc</a>
+, <a class="el" href="test_logging_8cc.html#a9bebd2e7e644c76d80b27f1c4ca105e3">testLogging.cc</a>
+, <a class="el" href="test_connect_to_8cc.html#a08399741d25e3a09169c4d2aa997dc57">testConnectTo.cc</a>
+, <a class="el" href="test_modules_8cc.html#a8614ce6fd4c8da54eea6afe89cfbed35">testModules.cc</a>
+, <a class="el" href="test_variable_group_8cc.html#ac0bab11760e2aafd6e5e761b618fe67a">testVariableGroup.cc</a>
+, <a class="el" href="test_modules_8cc.html#a20127d0a48bcd471b900539c4533cb78">testModules.cc</a>
+, <a class="el" href="test_logging_8cc.html#af2ea12666b6426b545ba47b8ddc7363f">testLogging.cc</a>
+, <a class="el" href="test_variable_group_8cc.html#a215264cad69d05b010a7c3b7aec2bbfa">testVariableGroup.cc</a>
+, <a class="el" href="test_config_reader_8cc.html#abac8006c8d9bd2da40a7d7c48238f48b">testConfigReader.cc</a>
+, <a class="el" href="test_modules_8cc.html#a03c3eb22e71f78fd452793221a0c7d14">testModules.cc</a>
+, <a class="el" href="test_config_reader_8cc.html#a1ccf0660b8a3b63bada3a4be8e40f839">testConfigReader.cc</a>
+, <a class="el" href="test_find_tag_8cc.html#ada376d0489090af9b0936677bf732ee1">testFindTag.cc</a>
+</li>
+<li>BOOST_AUTO_TEST_CASE_TEMPLATE()
+: <a class="el" href="test_app_module_connections_8cc.html#a5ce7368e009c920d69740c3053f16a88">testAppModuleConnections.cc</a>
+, <a class="el" href="test_control_system_accessors_8cc.html#a497768cd7df6fb647f3363ce52b90095">testControlSystemAccessors.cc</a>
+, <a class="el" href="test_device_accessors_8cc.html#a1a7b8eece6ce585530eb559865470054">testDeviceAccessors.cc</a>
+, <a class="el" href="test_illegal_networks_8cc.html#ada5bc554fe4926a57e22e7ab4a73b784">testIllegalNetworks.cc</a>
+, <a class="el" href="test_test_facilities_8cc.html#af0d38dd05635ccbfcfc16e3280cb906f">testTestFacilities.cc</a>
+, <a class="el" href="test_device_accessors_8cc.html#a45238dcfa2c45d68b1b9b22bf00d2c60">testDeviceAccessors.cc</a>
+, <a class="el" href="test_trigger_8cc.html#ab13748297669bba5ab67ca75515cefc6">testTrigger.cc</a>
+, <a class="el" href="test_direct_device_to_c_s_8cc.html#a4f522d7e13f3fa2bd5348e953f724fdd">testDirectDeviceToCS.cc</a>
+, <a class="el" href="test_device_accessors_8cc.html#a5c8fa409dca33f66b1406bf9e2787794">testDeviceAccessors.cc</a>
+, <a class="el" href="test_illegal_networks_8cc.html#a4d681787d13ca828f2b2a080c875920d">testIllegalNetworks.cc</a>
+, <a class="el" href="test_test_facilities_8cc.html#a6a2aed5b96fc0c10e2db59ea436fd9bd">testTestFacilities.cc</a>
+, <a class="el" href="test_illegal_networks_8cc.html#aab8a2d4682181ab44159a9526098cbf7">testIllegalNetworks.cc</a>
+, <a class="el" href="test_direct_device_to_c_s_8cc.html#a5a3bd3a4412a4d73205b4d795b1ca046">testDirectDeviceToCS.cc</a>
+, <a class="el" href="test_device_accessors_8cc.html#ab64cce8536140e53248bb2569d4c39b0">testDeviceAccessors.cc</a>
+, <a class="el" href="test_test_facilities_8cc.html#adf941e5d9db89bdad6c7396ac30a64dc">testTestFacilities.cc</a>
+, <a class="el" href="test_trigger_8cc.html#af15a1403f8615df2e03b761a97698938">testTrigger.cc</a>
+, <a class="el" href="test_illegal_networks_8cc.html#a8ed6fe2612b48ae464a55359fddbed5f">testIllegalNetworks.cc</a>
+, <a class="el" href="test_trigger_8cc.html#ad7a190695f65fe20d6cc1f41799cf84b">testTrigger.cc</a>
+</li>
+</ul>
+
+
+<h3><a id="index_g"></a>- g -</h3><ul>
+<li>getValueFromNode()
+: <a class="el" href="test_application_8cc.html#a747b9f7c811141b1509f7c267a82d2b6">testApplication.cc</a>
+</li>
+</ul>
+
+
+<h3><a id="index_i"></a>- i -</h3><ul>
 <li>INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES()
 : <a class="el" href="_version_number_updating_register_decorator_8cc.html#a73852e82108633cfebe768fa10ae101a">VersionNumberUpdatingRegisterDecorator.cc</a>
 </li>
 </ul>
+
+
+<h3><a id="index_t"></a>- t -</h3><ul>
+<li>testDirectRegister()
+: <a class="el" href="test_direct_device_to_c_s_8cc.html#aebb3a89b39318bc4172268e535c6534b">testDirectDeviceToCS.cc</a>
+</li>
+</ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:29 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Mon Mar 4 2019 13:47:31 for ChimeraTK-ApplicationCore by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

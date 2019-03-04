@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore
    &#160;<span id="projectnumber">master</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_t.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,6 +86,12 @@ $(function() {
 <h3><a id="index_t"></a>- t -</h3><ul>
 <li>table
 : <a class="el" href="class_chimera_t_k_1_1_application_core_template_user_type_map.html#a497607c48d40ddf90b56a7e3d9129f8d">ChimeraTK::ApplicationCoreTemplateUserTypeMap&lt; TemplateClass &gt;</a>
+</li>
+<li>tableGeneration
+: <a class="el" href="struct_example_app.html#a1ee7980cd0cbed783956d1ddac0a4f4d">ExampleApp</a>
+</li>
+<li>tableParameters
+: <a class="el" href="struct_table_generation.html#a4b5d02b6cdb079de93909f9282eb2ade">TableGeneration</a>
 </li>
 <li>tags
 : <a class="el" href="struct_chimera_t_k_1_1_variable_network_node__data.html#aa69696eea47f2507c7ff2278e809f285">ChimeraTK::VariableNetworkNode_data</a>
@@ -121,9 +148,63 @@ $(function() {
 <li>testableModeUnlock()
 : <a class="el" href="class_chimera_t_k_1_1_application.html#a8975837b63d1a93cd91b4a87465995cd">ChimeraTK::Application</a>
 </li>
+<li>TestApp()
+: <a class="el" href="struct_test_app.html#aca930a3f233f26d24386b623647dd236">TestApp</a>
+</li>
+<li>testApp()
+: <a class="el" href="structtest_app.html#a684be102bbc56d50f0ed81c237608870">testApp</a>
+</li>
+<li>TestApplication()
+: <a class="el" href="struct_test_application.html#a4702932ffea66d2abc6e24d388961cf7">TestApplication&lt; T &gt;</a>
+</li>
+<li>TestApplicationConnectTo()
+: <a class="el" href="struct_test_application_connect_to.html#a4d09c83919f2c3b789c4e0f0b31858a6">TestApplicationConnectTo</a>
+</li>
+<li>TestApplicationNoConfigs()
+: <a class="el" href="struct_test_application_no_configs.html#a0100b54c5b46c3744b817681ecfada0f">TestApplicationNoConfigs</a>
+</li>
+<li>TestApplicationTwoConfigs()
+: <a class="el" href="struct_test_application_two_configs.html#a1d3db921c6d69f7f4d835014b53a8b8e">TestApplicationTwoConfigs</a>
+</li>
 <li>TestFacility
 : <a class="el" href="class_chimera_t_k_1_1_application.html#ac79f4a9d4117d899517047de93a44610">ChimeraTK::Application</a>
 , <a class="el" href="class_chimera_t_k_1_1_test_facility.html#aea3b47030010665442730dbb793761a5">ChimeraTK::TestFacility</a>
+</li>
+<li>TestModule
+: <a class="el" href="struct_first_hierarchy.html#a7e2a9cde15418b9a397df6e5ac5d54de">FirstHierarchy</a>
+</li>
+<li>testModule
+: <a class="el" href="struct_one_module_app.html#a11041033f2d8652a50f2484fc673c271">OneModuleApp</a>
+</li>
+<li>TestModule
+: <a class="el" href="struct_second_hierarchy.html#ad545c071e412ed0742ba36dced8182e9">SecondHierarchy</a>
+</li>
+<li>testModule
+: <a class="el" href="struct_test_application.html#a935b3d8ba9f052955a4c7caeeb4bd0e3">TestApplication&lt; T &gt;</a>
+, <a class="el" href="struct_test_application_no_configs.html#a4b153706310c1e0163653518fcca4275">TestApplicationNoConfigs</a>
+, <a class="el" href="struct_test_application_two_configs.html#a3d090227eb046c286cc370193c3d4a7f">TestApplicationTwoConfigs</a>
+</li>
+<li>TestModule()
+: <a class="el" href="struct_test_module.html#a818d2a7f8a533e18a3e405d71fdc0f94">TestModule&lt; T &gt;</a>
+</li>
+<li>TestTransferGroupDummy()
+: <a class="el" href="class_test_transfer_group_dummy.html#a8f9f3038f7f9dc3822a7669f98a374f3">TestTransferGroupDummy</a>
+</li>
+<li>theConfigReader
+: <a class="el" href="struct_test_module.html#afb4a90d0af3b2dbb0de3a01d1a24a383">TestModule&lt; T &gt;</a>
+</li>
+<li>theTrigger
+: <a class="el" href="struct_test_module.html#a906d3f6a9a18cedfdd84e182a5f5d9cf">TestModule&lt; T &gt;</a>
+</li>
+<li>this
+: <a class="el" href="struct_first_hierarchy_1_1_test_module.html#a728f0fd633d809f2f6a6bd979476fb0b">FirstHierarchy::TestModule</a>
+, <a class="el" href="struct_first_hierarchy.html#a48cbc55afbcf79717629bd999b970f12">FirstHierarchy</a>
+, <a class="el" href="struct_second_hierarchy_1_1_second_module.html#abfc931868462d80f5509e282310d8427">SecondHierarchy::SecondModule</a>
+, <a class="el" href="struct_second_hierarchy_1_1_test_module_1_1_eliminated_group.html#a441c6b5c63c4088c35a56ac29ae315c1">SecondHierarchy::TestModule::EliminatedGroup</a>
+, <a class="el" href="struct_second_hierarchy_1_1_test_module.html#af1515a38e536c6d70929f38f92c1e7a1">SecondHierarchy::TestModule</a>
+, <a class="el" href="struct_second_hierarchy.html#ab8dd96f49e5b1899df601427a400d69f">SecondHierarchy</a>
+, <a class="el" href="struct_test_module.html#afd7da82c062b77958ba31edcaee97b05">TestModule&lt; T &gt;</a>
+, <a class="el" href="struct_vector_module.html#a706209cbacc50c3ac6656fc1db9fe7ea">VectorModule</a>
 </li>
 <li>ThreadedFanOut()
 : <a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html#ae5078a24767e2b484177aa8e20d6e096">ChimeraTK::ThreadedFanOut&lt; UserType &gt;</a>
@@ -131,8 +212,23 @@ $(function() {
 <li>threadName()
 : <a class="el" href="class_chimera_t_k_1_1_application.html#aa11ef4e6eb1a40a4cdd1c5941bc90639">ChimeraTK::Application</a>
 </li>
+<li>throwException
+: <a class="el" href="class_exception_dummy.html#a51b9eac1cbebed51b151ce6ed890fdc5">ExceptionDummy</a>
+</li>
 <li>tick
 : <a class="el" href="struct_chimera_t_k_1_1_periodic_trigger.html#aec9052ada4b008f2583a5f61472aac23">ChimeraTK::PeriodicTrigger</a>
+</li>
+<li>timer
+: <a class="el" href="struct_example_app.html#a872f39c39ae79bb08c44b62766910874">ExampleApp</a>
+</li>
+<li>TimerDummy()
+: <a class="el" href="class_timer_dummy.html#a74ded7d966806590e337c69085db63a2">TimerDummy</a>
+</li>
+<li>TimerDummyRegisterAccessor()
+: <a class="el" href="class_timer_dummy_register_accessor.html#a5f4cc6d59d4216ee26864394223c46e6">TimerDummyRegisterAccessor&lt; UserType &gt;</a>
+</li>
+<li>to
+: <a class="el" href="struct_first_hierarchy_1_1_test_module.html#ab198a25b05bc0513f6e7e0bae700661f">FirstHierarchy::TestModule</a>
 </li>
 <li>transferFutureWaitCallback()
 : <a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#adbf22acfdff094a4dc193b2cc5ae897e">ChimeraTK::TestableModeAccessorDecorator&lt; UserType &gt;</a>
@@ -141,8 +237,10 @@ $(function() {
 : <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html#a8fd27fe8155aa8aceef11582611ce37b">ChimeraTK::TriggerFanOut</a>
 </li>
 <li>trigger
-: <a class="el" href="struct_chimera_t_k_1_1_data_loss_counter.html#ab5598020a4fad20fbea3c8ef444e1d00">ChimeraTK::DataLossCounter</a>
+: <a class="el" href="struct_automation.html#acff6fa50c6a95870a79b4b1df4a14ea1">Automation</a>
+, <a class="el" href="struct_chimera_t_k_1_1_data_loss_counter.html#ab5598020a4fad20fbea3c8ef444e1d00">ChimeraTK::DataLossCounter</a>
 , <a class="el" href="struct_chimera_t_k_1_1_micro_d_a_q.html#aed25119aaa04b177b387255555661279">ChimeraTK::MicroDAQ</a>
+, <a class="el" href="struct_test_application_connect_to.html#aa906bbac09fb81760b5bc32d8228fc06">TestApplicationConnectTo</a>
 </li>
 <li>TriggerFanOut()
 : <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html#ae5ab24a5c133f93e45cefb66c7fe57ff">ChimeraTK::TriggerFanOut</a>
@@ -170,11 +268,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:29 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Mon Mar 4 2019 13:47:30 for ChimeraTK-ApplicationCore by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

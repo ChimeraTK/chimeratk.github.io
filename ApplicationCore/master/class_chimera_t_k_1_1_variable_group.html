@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore
    &#160;<span id="projectnumber">master</span>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_chimera_t_k_1_1_variable_group.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -73,20 +90,22 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_variable_group_8h_source.html">VariableGroup.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for ChimeraTK::VariableGroup:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_chimera_t_k_1_1_variable_group.png" usemap="#ChimeraTK::VariableGroup_map" alt=""/>
-  <map id="ChimeraTK::VariableGroup_map" name="ChimeraTK::VariableGroup_map">
-<area href="class_chimera_t_k_1_1_module_impl.html" title="Some common implementations of a few functions in Module used by most modules (but the VirtualModule)..." alt="ChimeraTK::ModuleImpl" shape="rect" coords="265,112,520,136"/>
-<area href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo..." alt="ChimeraTK::Module" shape="rect" coords="265,56,520,80"/>
-<area href="class_chimera_t_k_1_1_entity_owner.html" title="Base class for owners of other EntityOwners (e.g. " alt="ChimeraTK::EntityOwner" shape="rect" coords="265,0,520,24"/>
-<area href="struct_chimera_t_k_1_1_device_module_1_1_device_error.html" title="A VariableGroup for exception status and message. " alt="ChimeraTK::DeviceModule::DeviceError" shape="rect" coords="0,224,255,248"/>
-<area href="struct_chimera_t_k_1_1_read_bit_mask_1_1_output.html" title="individual outputs for each bit " alt="ChimeraTK::ReadBitMask&lt; NBITS &gt;::Output" shape="rect" coords="265,224,520,248"/>
-<area href="struct_chimera_t_k_1_1_write_bit_mask_1_1_input.html" title="individual inputs for each bit " alt="ChimeraTK::WriteBitMask&lt; NBITS &gt;::Input" shape="rect" coords="530,224,785,248"/>
-</map>
- </div></div>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ChimeraTK::VariableGroup:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_group__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for ChimeraTK::VariableGroup:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_group__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -535,6 +554,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Move constructor. </p>
 
 <p class="definition">Definition at line <a class="el" href="_variable_group_8h_source.html#l00051">51</a> of file <a class="el" href="_variable_group_8h_source.html">VariableGroup.h</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_group_a84e9cbfc08fb6bdd8407324840a38928_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -558,6 +585,22 @@ Additional Inherited Members</h2></td></tr>
 <p>If no or multiple <a class="el" href="struct_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables...">ConfigReader</a> instances are found, a ChimeraTK::logic_error is thrown. Note: This function is expensive. It should be called only during the constructor of the <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> and the obtained configuration values should be stored for later use in member variables. Beware that the <a class="el" href="struct_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables...">ConfigReader</a> instance can obly be found if it has been constructed before calling this function. Hence, the <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> should have the <a class="el" href="struct_chimera_t_k_1_1_config_reader.html" title="Generic module to read an XML config file and provide the defined values as constant variables...">ConfigReader</a> as its first member. </p>
 
 <p class="definition">Definition at line <a class="el" href="_variable_group_8cc_source.html#l00032">32</a> of file <a class="el" href="_variable_group_8cc_source.html">VariableGroup.cc</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_group_af44556dbf675ae65c6113fb798422796_cgraph.svg" width="411" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_group_af44556dbf675ae65c6113fb798422796_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -589,6 +632,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a44d138bbe63552b5b8dd9a128c76fcbe">ChimeraTK::EntityOwner</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_variable_group_8h_source.html#l00059">59</a> of file <a class="el" href="_variable_group_8h_source.html">VariableGroup.h</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_group_a30a13e26ae428ffac1a4d3272ba3beaf_cgraph.svg" width="654" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -619,6 +670,22 @@ Additional Inherited Members</h2></td></tr>
 <p>Move assignment. </p>
 
 <p class="definition">Definition at line <a class="el" href="_variable_group_8h_source.html#l00054">54</a> of file <a class="el" href="_variable_group_8h_source.html">VariableGroup.h</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_group_a7c20c8063f265659b745783e8a818d0c_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_group_a7c20c8063f265659b745783e8a818d0c_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -627,11 +694,15 @@ Additional Inherited Members</h2></td></tr>
 <li>src/<a class="el" href="_variable_group_8cc_source.html">VariableGroup.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:29 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a></li>
+    <li class="footer">Generated on Mon Mar 4 2019 13:47:30 for ChimeraTK-ApplicationCore by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

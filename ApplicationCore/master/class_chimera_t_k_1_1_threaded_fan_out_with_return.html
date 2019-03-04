@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore
    &#160;<span id="projectnumber">master</span>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_chimera_t_k_1_1_threaded_fan_out_with_return.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_threaded_fan_out_with_return.html">ThreadedFanOutWithReturn</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -77,17 +94,22 @@ $(function() {
  <a href="class_chimera_t_k_1_1_threaded_fan_out_with_return.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_threaded_fan_out_8h_source.html">ThreadedFanOut.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for ChimeraTK::ThreadedFanOutWithReturn&lt; UserType &gt;:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_chimera_t_k_1_1_threaded_fan_out_with_return.png" usemap="#ChimeraTK::ThreadedFanOutWithReturn_3C_20UserType_20_3E_map" alt=""/>
-  <map id="ChimeraTK::ThreadedFanOutWithReturn_3C_20UserType_20_3E_map" name="ChimeraTK::ThreadedFanOutWithReturn_3C_20UserType_20_3E_map">
-<area href="class_chimera_t_k_1_1_threaded_fan_out.html" title="FanOut implementation with an internal thread which waits for new data which is read from the given f..." alt="ChimeraTK::ThreadedFanOut&lt; UserType &gt;" shape="rect" coords="162,56,477,80"/>
-<area href="class_chimera_t_k_1_1_fan_out.html" title="Base class for several implementations which distribute values from one feeder to multiple consumers..." alt="ChimeraTK::FanOut&lt; UserType &gt;" shape="rect" coords="0,0,315,24"/>
-<area href="class_chimera_t_k_1_1_internal_module.html" title="Base class for internal modules which are created by the variable connection code (e..." alt="ChimeraTK::InternalModule" shape="rect" coords="325,0,640,24"/>
-</map>
- </div></div>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ChimeraTK::ThreadedFanOutWithReturn&lt; UserType &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_threaded_fan_out_with_return__inherit__graph.svg" width="392" height="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for ChimeraTK::ThreadedFanOutWithReturn&lt; UserType &gt;:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_threaded_fan_out_with_return__coll__graph.svg" width="450" height="560"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -186,6 +208,14 @@ template&lt;typename UserType &gt; </div>
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_fan_out.html#a8b539e3c2bc584859b3f096b5f7ba164">ChimeraTK::FanOut&lt; UserType &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_threaded_fan_out_8h_source.html#l00088">88</a> of file <a class="el" href="_threaded_fan_out_8h_source.html">ThreadedFanOut.h</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_threaded_fan_out_with_return_a904e889933a4f134f0535ca21a47be29_cgraph.svg" width="478" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -220,6 +250,14 @@ template&lt;typename UserType &gt; </div>
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html#aec8d6bcf52e7887791968acf8ac2a3e1">ChimeraTK::ThreadedFanOut&lt; UserType &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_threaded_fan_out_8h_source.html#l00097">97</a> of file <a class="el" href="_threaded_fan_out_8h_source.html">ThreadedFanOut.h</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_threaded_fan_out_with_return_ab52d9c326faab0071553435bc9ae3496_cgraph.svg" width="100%" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -312,11 +350,15 @@ template&lt;typename UserType &gt; </div>
 <li>include/<a class="el" href="_threaded_fan_out_8h_source.html">ThreadedFanOut.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:29 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_threaded_fan_out_with_return.html">ThreadedFanOutWithReturn</a></li>
+    <li class="footer">Generated on Mon Mar 4 2019 13:47:30 for ChimeraTK-ApplicationCore by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

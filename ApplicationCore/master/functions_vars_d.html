@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore
    &#160;<span id="projectnumber">master</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_vars_d.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -66,17 +87,11 @@ $(function() {
 <li>dataLossCounter
 : <a class="el" href="class_chimera_t_k_1_1_application.html#a80e8990554832fe825057368d512a7a5">ChimeraTK::Application</a>
 </li>
-<li>dataSpaceListMap
-: <a class="el" href="struct_chimera_t_k_1_1detail_1_1_h5storage.html#a3b7c5f3d95ee7af8ee33569c2e7b24c6">ChimeraTK::detail::H5storage</a>
-</li>
 <li>debugMode_variableList
 : <a class="el" href="class_chimera_t_k_1_1_application.html#a20ee34f9da398c58ad9e4228449412fa">ChimeraTK::Application</a>
 </li>
 <li>decimationFactor_
 : <a class="el" href="struct_chimera_t_k_1_1_micro_d_a_q.html#adf71617723ef6d8ef1e8ba804535d813">ChimeraTK::MicroDAQ</a>
-</li>
-<li>decimationFactorListMap
-: <a class="el" href="struct_chimera_t_k_1_1detail_1_1_h5storage.html#a9f4fefb5137bcbbca9f91a0fe980d833">ChimeraTK::detail::H5storage</a>
 </li>
 <li>decimationThreshold_
 : <a class="el" href="struct_chimera_t_k_1_1_micro_d_a_q.html#aded7ddd6b073de27abe40836cb865239">ChimeraTK::MicroDAQ</a>
@@ -84,6 +99,14 @@ $(function() {
 <li>description
 : <a class="el" href="class_chimera_t_k_1_1_variable_network.html#a9c9b4e28e28b61f844a0e74c0ed16261">ChimeraTK::VariableNetwork</a>
 , <a class="el" href="struct_chimera_t_k_1_1_variable_network_node__data.html#ae415593a9b9a048543f38466e49c540f">ChimeraTK::VariableNetworkNode_data</a>
+</li>
+<li>dev
+: <a class="el" href="struct_example_app.html#a1fd25298a31ef406cccbfb9bc1a63d10">ExampleApp</a>
+, <a class="el" href="struct_test_application.html#a44b2d8473b2ae49c6d0493089a02f2a8">TestApplication&lt; T &gt;</a>
+, <a class="el" href="struct_test_application_connect_to.html#a853865fe094333f31a5129dd5dde64a8">TestApplicationConnectTo</a>
+</li>
+<li>dev2
+: <a class="el" href="struct_test_application.html#a92cd702111fbe3aea458cbb8960e6717">TestApplication&lt; T &gt;</a>
 </li>
 <li>deviceAlias
 : <a class="el" href="struct_chimera_t_k_1_1_variable_network_node__data.html#a3dfa2000cbe4999ad42b12b7af905e34">ChimeraTK::VariableNetworkNode_data</a>
@@ -100,6 +123,9 @@ $(function() {
 <li>deviceModuleList
 : <a class="el" href="class_chimera_t_k_1_1_application.html#a7e35f287b845c7c810656afd0ecf902a">ChimeraTK::Application</a>
 </li>
+<li>devMymodule
+: <a class="el" href="struct_test_application.html#afa0c8368645be4f78fa36fa8f929dea8">TestApplication&lt; T &gt;</a>
+</li>
 <li>dir
 : <a class="el" href="struct_chimera_t_k_1_1_variable_direction.html#a731e6cd5f58f1f014d443434f9ff6219">ChimeraTK::VariableDirection</a>
 </li>
@@ -111,14 +137,18 @@ $(function() {
 </li>
 <li>done
 : <a class="el" href="struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html#a5ca367f5f723695e5ae77fcc48e90501">ChimeraTK::Application::TypedMakeConnectionCaller</a>
+, <a class="el" href="struct_test_module.html#a8ca8d7f0e72a002b770056251cdf154f">TestModule&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:29 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Mon Mar 4 2019 13:47:31 for ChimeraTK-ApplicationCore by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

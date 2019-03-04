@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['fanout',['FanOut',['../class_chimera_t_k_1_1_fan_out.html#a594ddb995549aa3b52d3387d43f37084',1,'ChimeraTK::FanOut']]],
-  ['feedingfanout',['FeedingFanOut',['../class_chimera_t_k_1_1_feeding_fan_out.html#a845b6a375f6a710b0cfa70b93d73bd0c',1,'ChimeraTK::FeedingFanOut']]],
-  ['finalisenetworks',['finaliseNetworks',['../class_chimera_t_k_1_1_application.html#a4100a652864974ac1ab64d1bd1327d81',1,'ChimeraTK::Application']]],
-  ['findtag',['findTag',['../class_chimera_t_k_1_1_entity_owner.html#a10abe5f666483380a4dee7fb8caacd86',1,'ChimeraTK::EntityOwner']]],
-  ['findtagandappendtomodule',['findTagAndAppendToModule',['../class_chimera_t_k_1_1_entity_owner.html#af0583ea0d31901957f26d01af550eda2',1,'ChimeraTK::EntityOwner']]],
-  ['flatten',['flatten',['../class_chimera_t_k_1_1_entity_owner.html#a952d3abbffa16054f744f3da7fc46c3f',1,'ChimeraTK::EntityOwner']]],
-  ['functorfill',['FunctorFill',['../struct_chimera_t_k_1_1_functor_fill.html#ade02c32a80ff802889863bc8bfa22bd0',1,'ChimeraTK::FunctorFill']]],
-  ['functorsetvalues',['FunctorSetValues',['../struct_chimera_t_k_1_1_functor_set_values.html#a899e5c8c88431c61764a021d905da196',1,'ChimeraTK::FunctorSetValues']]],
-  ['functorsetvaluesarray',['FunctorSetValuesArray',['../struct_chimera_t_k_1_1_functor_set_values_array.html#a22b4b6eef5c8f1998bf628a10d99dc1e',1,'ChimeraTK::FunctorSetValuesArray']]]
+  ['enabletestablemode',['enableTestableMode',['../class_chimera_t_k_1_1_application.html#aab5d12e4073ae6bb0dd7fde8b435aa38',1,'ChimeraTK::Application']]],
+  ['enablevariabledebugging',['enableVariableDebugging',['../class_chimera_t_k_1_1_application.html#a87520a53f9a635b49aace46f76c0cf07',1,'ChimeraTK::Application']]],
+  ['entityowner',['EntityOwner',['../class_chimera_t_k_1_1_entity_owner.html#a09942e9c8257992cdd05027c437f8a4c',1,'ChimeraTK::EntityOwner::EntityOwner(const std::string &amp;name, const std::string &amp;description, HierarchyModifier hierarchyModifier=HierarchyModifier::none, const std::unordered_set&lt; std::string &gt; &amp;tags={})'],['../class_chimera_t_k_1_1_entity_owner.html#acef33adfcd91868e153def7f4c4eb220',1,'ChimeraTK::EntityOwner::EntityOwner(const std::string &amp;name, const std::string &amp;description, bool eliminateHierarchy, const std::unordered_set&lt; std::string &gt; &amp;tags={})'],['../class_chimera_t_k_1_1_entity_owner.html#a3276d5cd7192144f47d677150871dde7',1,'ChimeraTK::EntityOwner::EntityOwner()'],['../class_chimera_t_k_1_1_entity_owner.html#ad24ced0e968033d3a5f9ab70617ffe55',1,'ChimeraTK::EntityOwner::EntityOwner(EntityOwner &amp;&amp;other)'],['../class_chimera_t_k_1_1_entity_owner.html#a680a0b9df557639de0daf8ba4bc87108',1,'ChimeraTK::EntityOwner::EntityOwner(const EntityOwner &amp;other)=delete']]],
+  ['exampleapp',['ExampleApp',['../struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb',1,'ExampleApp::ExampleApp()'],['../struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb',1,'ExampleApp::ExampleApp()'],['../struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb',1,'ExampleApp::ExampleApp()'],['../struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb',1,'ExampleApp::ExampleApp()']]],
+  ['exceptiondummy',['ExceptionDummy',['../class_exception_dummy.html#a53c4fa1254e0a2bbf08e43b36f3b3d5e',1,'ExceptionDummy']]],
+  ['excludetag',['excludeTag',['../class_chimera_t_k_1_1_entity_owner.html#af3793d15629cb8b73413a1444008d709',1,'ChimeraTK::EntityOwner']]]
 ];

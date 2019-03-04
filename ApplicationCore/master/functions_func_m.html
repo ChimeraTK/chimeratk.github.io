@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore
    &#160;<span id="projectnumber">master</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_func_m.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -64,7 +85,10 @@ $(function() {
 
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>mainLoop()
-: <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8">ChimeraTK::ApplicationModule</a>
+: <a class="el" href="struct_async_read_test_module.html#ae44008f3a7eaec29dafc09dec98d8ffd">AsyncReadTestModule&lt; T &gt;</a>
+, <a class="el" href="struct_automation.html#a98e7f8e8132e573677b8862924bb403a">Automation</a>
+, <a class="el" href="struct_blocking_read_test_module.html#aacca2bfa3f157a882e3f68304cb5d4ee">BlockingReadTestModule&lt; T &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8">ChimeraTK::ApplicationModule</a>
 , <a class="el" href="struct_chimera_t_k_1_1_array_pipe.html#addf0cf6a3915f747b53cef7800d710c2">ChimeraTK::ArrayPipe&lt; Type &gt;</a>
 , <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a0f1e483debabad5572efe57e0b1f13b9">ChimeraTK::ConfigReader</a>
 , <a class="el" href="struct_chimera_t_k_1_1_const_multiplier.html#afbbfc242679a44a274b8e43b3fcbe135">ChimeraTK::ConstMultiplier&lt; InputType, OutputType, NELEMS &gt;</a>
@@ -81,7 +105,19 @@ $(function() {
 , <a class="el" href="struct_chimera_t_k_1_1_scalar_pipe.html#a4fdb59a64f039f10dc7ec17c399f9040">ChimeraTK::ScalarPipe&lt; Type &gt;</a>
 , <a class="el" href="struct_chimera_t_k_1_1_write_bit_mask.html#a0bfaa8288a5d3249f0f7997a125350ad">ChimeraTK::WriteBitMask&lt; NBITS &gt;</a>
 , <a class="el" href="struct_chimera_t_k_1_1_write_split_array_module.html#a3266bfd01e7d286958de592dfae803f0">ChimeraTK::WriteSplitArrayModule&lt; TYPE &gt;</a>
+, <a class="el" href="struct_controller.html#ab39304e11bf3c606f96d08287af4bdc7">Controller</a>
+, <a class="el" href="struct_first_hierarchy_1_1_second_module.html#a3ad0c41f45738b9ec8720f3d96a36640">FirstHierarchy::SecondModule</a>
+, <a class="el" href="struct_first_hierarchy_1_1_test_module.html#a700ff0d2ac64ceb57aff137d5ff67c63">FirstHierarchy::TestModule</a>
 , <a class="el" href="classlogging_1_1_logging_module.html#a4357b2e9b1d391541a2936ad39bbb0ed">logging::LoggingModule</a>
+, <a class="el" href="struct_module_a.html#a1346cefdb808cb055f9c2fd4c4ff5407">ModuleA</a>
+, <a class="el" href="struct_module_b.html#ad77a1d7c6c4a315fd774fd6e37d35070">ModuleB</a>
+, <a class="el" href="struct_polling_read_module.html#a69522be48c605f06800a921795fd0cf7">PollingReadModule&lt; T &gt;</a>
+, <a class="el" href="struct_read_any_test_module.html#a136e468ce29212d06616dba2823f44e1">ReadAnyTestModule&lt; T &gt;</a>
+, <a class="el" href="struct_second_hierarchy_1_1_second_module.html#a8a128a2f653ced29ad9ff9913dc3b070">SecondHierarchy::SecondModule</a>
+, <a class="el" href="struct_second_hierarchy_1_1_test_module.html#a3c2e657016c0098df9c9a537cd20de93">SecondHierarchy::TestModule</a>
+, <a class="el" href="struct_table_generation.html#a89dd9fb6c38397a2cd61bff77892ba3c">TableGeneration</a>
+, <a class="el" href="struct_test_module.html#af46cec5b1db1f4fe98e768c226afc688">TestModule&lt; T &gt;</a>
+, <a class="el" href="struct_vector_module.html#a2f2bebfc90d4cebe5e90caa82649e381">VectorModule</a>
 </li>
 <li>mainLoopWrapper()
 : <a class="el" href="class_chimera_t_k_1_1_application_module.html#ac2c8911aaa22fca678cfd5f79c0a1f0f">ChimeraTK::ApplicationModule</a>
@@ -102,6 +138,7 @@ $(function() {
 <li>mayReplaceOther()
 : <a class="el" href="class_chimera_t_k_1_1_constant_accessor.html#a0f6af4de06e4c1d7ff227260e18fa30b">ChimeraTK::ConstantAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a176dddfedbea6dbf15b9e3a76d111a11">ChimeraTK::FeedingFanOut&lt; UserType &gt;</a>
+, <a class="el" href="class_timer_dummy_register_accessor.html#a40f81012077f9b0340d301beef191058">TimerDummyRegisterAccessor&lt; UserType &gt;</a>
 </li>
 <li>merge()
 : <a class="el" href="class_chimera_t_k_1_1_variable_network.html#a1803c6822db1636d43376c4812d59401">ChimeraTK::VariableNetwork</a>
@@ -110,27 +147,30 @@ $(function() {
 : <a class="el" href="struct_chimera_t_k_1_1_micro_d_a_q.html#a3606183c0430d0c89b2762941b92be2b">ChimeraTK::MicroDAQ</a>
 </li>
 <li>Module()
-: <a class="el" href="class_chimera_t_k_1_1_module.html#a708e4ce93cf2ee684f9ca459cf64b9a1">ChimeraTK::Module</a>
+: <a class="el" href="class_chimera_t_k_1_1_module.html#ad45684a75a461aa889cef3a41711348e">ChimeraTK::Module</a>
 </li>
 <li>ModuleGraphVisitor()
 : <a class="el" href="class_chimera_t_k_1_1_module_graph_visitor.html#a28306e023e1920c3511355e3579c2907">ChimeraTK::ModuleGraphVisitor</a>
 </li>
 <li>ModuleGroup()
-: <a class="el" href="class_chimera_t_k_1_1_module_group.html#abb7a64f322c83669229b8cf17416e871">ChimeraTK::ModuleGroup</a>
+: <a class="el" href="class_chimera_t_k_1_1_module_group.html#ad93637587b0b293c4d86f962f024161e">ChimeraTK::ModuleGroup</a>
 </li>
 <li>ModuleImpl()
 : <a class="el" href="class_chimera_t_k_1_1_module_impl.html#a255bbeb05f16fa5ffaf2e852131d33aa">ChimeraTK::ModuleImpl</a>
 </li>
 <li>Multiplier()
-: <a class="el" href="struct_chimera_t_k_1_1_multiplier.html#a89eccf442fa61c4931532a9b6e4a1d15">ChimeraTK::Multiplier&lt; InputType, OutputType, NELEMS &gt;</a>
+: <a class="el" href="struct_chimera_t_k_1_1_multiplier.html#a1c5b79f1e8266473c3f5513d076ffcd0">ChimeraTK::Multiplier&lt; InputType, OutputType, NELEMS &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:29 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Mon Mar 4 2019 13:47:31 for ChimeraTK-ApplicationCore by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

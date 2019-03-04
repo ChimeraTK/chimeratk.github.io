@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore
    &#160;<span id="projectnumber">master</span>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_feeding_fan_out_8h_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">FeedingFanOut.h</div>  </div>
@@ -93,16 +110,20 @@ $(function() {
 <div class="ttc" id="class_chimera_t_k_1_1_feeding_fan_out_html_ae0ee2498b762dd4e27aaea970c9d7414"><div class="ttname"><a href="class_chimera_t_k_1_1_feeding_fan_out.html#ae0ee2498b762dd4e27aaea970c9d7414">ChimeraTK::FeedingFanOut::getAccessModeFlags</a></div><div class="ttdeci">AccessModeFlags getAccessModeFlags() const override</div><div class="ttdef"><b>Definition:</b> <a href="_feeding_fan_out_8h_source.html#l00164">FeedingFanOut.h:164</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_feeding_fan_out_html_a176dddfedbea6dbf15b9e3a76d111a11"><div class="ttname"><a href="class_chimera_t_k_1_1_feeding_fan_out.html#a176dddfedbea6dbf15b9e3a76d111a11">ChimeraTK::FeedingFanOut::mayReplaceOther</a></div><div class="ttdeci">bool mayReplaceOther(const boost::shared_ptr&lt; const ChimeraTK::TransferElement &gt; &amp;) const override</div><div class="ttdef"><b>Definition:</b> <a href="_feeding_fan_out_8h_source.html#l00146">FeedingFanOut.h:146</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_fan_out_html"><div class="ttname"><a href="class_chimera_t_k_1_1_fan_out.html">ChimeraTK::FanOut</a></div><div class="ttdoc">Base class for several implementations which distribute values from one feeder to multiple consumers...</div><div class="ttdef"><b>Definition:</b> <a href="_fan_out_8h_source.html#l00019">FanOut.h:19</a></div></div>
-<div class="ttc" id="namespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_application_module_8cc_source.html#l00011">ApplicationModule.cc:11</a></div></div>
+<div class="ttc" id="namespace_chimera_t_k_html"><div class="ttname"><a href="namespace_chimera_t_k.html">ChimeraTK</a></div><div class="ttdef"><b>Definition:</b> <a href="_application_8h_source.html#l00024">Application.h:24</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_feeding_fan_out_html_a56dd77acc89ee889c04ea8dc3c0ebd1e"><div class="ttname"><a href="class_chimera_t_k_1_1_feeding_fan_out.html#a56dd77acc89ee889c04ea8dc3c0ebd1e">ChimeraTK::FeedingFanOut::doPostWrite</a></div><div class="ttdeci">void doPostWrite() override</div><div class="ttdef"><b>Definition:</b> <a href="_feeding_fan_out_8h_source.html#l00139">FeedingFanOut.h:139</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_feeding_fan_out_html_ab25d68fb154f9f8407dcb415660da4a5"><div class="ttname"><a href="class_chimera_t_k_1_1_feeding_fan_out.html#ab25d68fb154f9f8407dcb415660da4a5">ChimeraTK::FeedingFanOut::isReadOnly</a></div><div class="ttdeci">bool isReadOnly() const override</div><div class="ttdef"><b>Definition:</b> <a href="_feeding_fan_out_8h_source.html#l00067">FeedingFanOut.h:67</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_feeding_fan_out_html_abab2b93a016a1c94156ded693be4ffd1"><div class="ttname"><a href="class_chimera_t_k_1_1_feeding_fan_out.html#abab2b93a016a1c94156ded693be4ffd1">ChimeraTK::FeedingFanOut::getReturnSlave</a></div><div class="ttdeci">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt; getReturnSlave()</div><div class="ttdef"><b>Definition:</b> <a href="_feeding_fan_out_8h_source.html#l00168">FeedingFanOut.h:168</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:28 for ChimeraTK-ApplicationCore by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_feeding_fan_out_8h.html">FeedingFanOut.h</a></li>
+    <li class="footer">Generated on Mon Mar 4 2019 13:47:29 for ChimeraTK-ApplicationCore by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>
