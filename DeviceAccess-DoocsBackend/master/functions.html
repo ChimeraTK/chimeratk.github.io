@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-DeviceAccess-DoocsBackend
    &#160;<span id="projectnumber">master</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -95,6 +116,9 @@ $(function() {
 <li>close()
 : <a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#aa0b104650a279c02f853d7a7f6e07f48">ChimeraTK::DoocsBackend</a>
 </li>
+<li>counter
+: <a class="el" href="classeq__dummy.html#a2d1cc1d49a8c5b47120606630e44ae1c">eq_dummy</a>
+</li>
 <li>createInstance()
 : <a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#a6858ec1a1833cc69444017506e68fb62">ChimeraTK::DoocsBackend</a>
 </li>
@@ -138,19 +162,28 @@ $(function() {
 <li>DoocsBackendStringRegisterAccessor()
 : <a class="el" href="class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html#afd363fd20cbc0f162a63623e671fbcbc">ChimeraTK::DoocsBackendStringRegisterAccessor&lt; UserType &gt;</a>
 </li>
+<li>DoocsLauncher()
+: <a class="el" href="struct_doocs_launcher.html#aaa101e97c38453759440975ebfb7eda1">DoocsLauncher</a>
+</li>
+<li>DoocsServer1
+: <a class="el" href="struct_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca">DoocsLauncher</a>
+</li>
+<li>DoocsServer2
+: <a class="el" href="struct_doocs_launcher.html#af1c287e6c089a5f389c821f615b96b4c">DoocsLauncher</a>
+</li>
 <li>doPostRead()
-: <a class="el" href="class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html#a4f89ea7f53df26f933afc39b02e0bb3e">ChimeraTK::DoocsBackendFloatRegisterAccessor&lt; UserType &gt;</a>
+: <a class="el" href="class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html#a30e4ca3d7579ca58bcfa17a88a682f87">ChimeraTK::DoocsBackendFloatRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_doocs_backend_int_register_accessor.html#a98e7d388af7866b1841da084371df5a6">ChimeraTK::DoocsBackendIntRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_doocs_backend_long_register_accessor.html#a29bb9e163a1c1db742de0f4a1a3e675d">ChimeraTK::DoocsBackendLongRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a4e7eb84209bd67533003349a4cd439cb">ChimeraTK::DoocsBackendRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html#a4c9459cd30dcb30e2def399fb7f1cc08">ChimeraTK::DoocsBackendStringRegisterAccessor&lt; UserType &gt;</a>
 </li>
 <li>doPreWrite()
-: <a class="el" href="class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html#aeea7b94cf3233800ec1ba380dfda4209">ChimeraTK::DoocsBackendFloatRegisterAccessor&lt; UserType &gt;</a>
+: <a class="el" href="class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html#a51b1c70513baff9d9b7bc4b426088dd2">ChimeraTK::DoocsBackendFloatRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_doocs_backend_i_i_i_i_register_accessor.html#a689895661ce88d247f6631a8484c971f">ChimeraTK::DoocsBackendIIIIRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_doocs_backend_int_register_accessor.html#a15b13ffa2c40d0c7c96ef1dd00c132d3">ChimeraTK::DoocsBackendIntRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_doocs_backend_long_register_accessor.html#abbb037b241017083bb4310ab2a24e077">ChimeraTK::DoocsBackendLongRegisterAccessor&lt; UserType &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html#ad3086b7abb736b5950790bcf82259fc5">ChimeraTK::DoocsBackendStringRegisterAccessor&lt; UserType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html#aaf7e9ef72708b9573417854847151766">ChimeraTK::DoocsBackendStringRegisterAccessor&lt; UserType &gt;</a>
 </li>
 <li>doReadTransfer()
 : <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a15c9a6f709065cac28d2b01ad546036b">ChimeraTK::DoocsBackendRegisterAccessor&lt; UserType &gt;</a>
@@ -183,10 +216,19 @@ $(function() {
 <li>eq
 : <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a907c34e25945da53e5f10314c97ba403">ChimeraTK::DoocsBackendRegisterAccessor&lt; UserType &gt;</a>
 </li>
+<li>eq_dummy()
+: <a class="el" href="classeq__dummy.html#a8ca503d587f3b6f6daea181c954f1fb9">eq_dummy</a>
+</li>
 </ul>
 
 
 <h3><a id="index_f"></a>- f -</h3><ul>
+<li>fct_code()
+: <a class="el" href="classeq__dummy.html#a1cdbb44fff705d4472166ebafeb3bc3d">eq_dummy</a>
+</li>
+<li>fctCode
+: <a class="el" href="classeq__dummy.html#a94c09a780e83afb366405b868563adb7">eq_dummy</a>
+</li>
 <li>fillCatalogue()
 : <a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#a9869254be88c014f4a593a092d41fa73">ChimeraTK::DoocsBackend</a>
 </li>
@@ -223,6 +265,9 @@ $(function() {
 
 
 <h3><a id="index_i"></a>- i -</h3><ul>
+<li>init()
+: <a class="el" href="classeq__dummy.html#ac6c4f2c999dd56c3e3778d7eba0163bc">eq_dummy</a>
+</li>
 <li>interrupt()
 : <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a5cf33826f9f16817c0c5d962f4508911">ChimeraTK::DoocsBackendRegisterAccessor&lt; UserType &gt;</a>
 </li>
@@ -240,6 +285,13 @@ $(function() {
 </li>
 <li>isWriteable()
 : <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#af70113a1e2014bb5aec0d8e14864c26f">ChimeraTK::DoocsBackendRegisterAccessor&lt; UserType &gt;</a>
+</li>
+</ul>
+
+
+<h3><a id="index_l"></a>- l -</h3><ul>
+<li>launchIfNotYetLaunched()
+: <a class="el" href="struct_doocs_launcher.html#ae3ac32fc0b9c613a6fa61fccbd42ff13">DoocsLauncher</a>
 </li>
 </ul>
 
@@ -268,6 +320,58 @@ $(function() {
 </ul>
 
 
+<h3><a id="index_p"></a>- p -</h3><ul>
+<li>post_init()
+: <a class="el" href="classeq__dummy.html#a5e5b75127cd24ff36d1cfac2a9860b3f">eq_dummy</a>
+</li>
+<li>prop_someBit
+: <a class="el" href="classeq__dummy.html#a80670e55f4cef543d4ed397a9db99dba">eq_dummy</a>
+</li>
+<li>prop_someDouble
+: <a class="el" href="classeq__dummy.html#a0c1e37adbb92a03e2a818695b9b7d88b">eq_dummy</a>
+</li>
+<li>prop_someDoubleArray
+: <a class="el" href="classeq__dummy.html#a4a55f7e2f1af7dc771be488e031aa422">eq_dummy</a>
+</li>
+<li>prop_someFloat
+: <a class="el" href="classeq__dummy.html#ad41810b00a46f2e4553f9b9d6a4e3295">eq_dummy</a>
+</li>
+<li>prop_someFloatArray
+: <a class="el" href="classeq__dummy.html#a1ce21b236a5eb61816d9c7d148fcc189">eq_dummy</a>
+</li>
+<li>prop_someIIII
+: <a class="el" href="classeq__dummy.html#a895eeb3b98829a930b5edfb6d40467a5">eq_dummy</a>
+</li>
+<li>prop_someInt
+: <a class="el" href="classeq__dummy.html#a7715a0d45ab900e497d1de1869181aba">eq_dummy</a>
+</li>
+<li>prop_someIntArray
+: <a class="el" href="classeq__dummy.html#a8fd47579ae4ae9c9b460df96866f5abe">eq_dummy</a>
+</li>
+<li>prop_someLongArray
+: <a class="el" href="classeq__dummy.html#a40d659cf2280a8b213fa87ae55e83fb7">eq_dummy</a>
+</li>
+<li>prop_someShortArray
+: <a class="el" href="classeq__dummy.html#a844fed502fc371eec227eaf3ffc5aa5f">eq_dummy</a>
+</li>
+<li>prop_someSpectrum
+: <a class="el" href="classeq__dummy.html#a7fa1f7b9956062b81ecd3b058c2b8041">eq_dummy</a>
+</li>
+<li>prop_someStatus
+: <a class="el" href="classeq__dummy.html#affd168c8b455616dd6cd9f0b51c5cfa9">eq_dummy</a>
+</li>
+<li>prop_someString
+: <a class="el" href="classeq__dummy.html#a3c84c3b63f369933595ec6b898c7fd3e">eq_dummy</a>
+</li>
+<li>prop_someZMQInt
+: <a class="el" href="classeq__dummy.html#ab57f2197e67e442ed93f69343fd8d80a">eq_dummy</a>
+</li>
+<li>prop_unsupportedDataType
+: <a class="el" href="classeq__dummy.html#a3dd54de13c4d44b5fa8e6206385000b3">eq_dummy</a>
+</li>
+</ul>
+
+
 <h3><a id="index_r"></a>- r -</h3><ul>
 <li>readAsyncThread
 : <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a50e1c30173d3f94ddc9bc30bb6957249">ChimeraTK::DoocsBackendRegisterAccessor&lt; UserType &gt;</a>
@@ -277,6 +381,9 @@ $(function() {
 </li>
 <li>replaceTransferElement()
 : <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a21af88c286d123e95742b2f87e85aac9">ChimeraTK::DoocsBackendRegisterAccessor&lt; UserType &gt;</a>
+</li>
+<li>rpc_no
+: <a class="el" href="struct_doocs_launcher.html#a630db5a8b76a821f5824dae8e1d6dc78">DoocsLauncher</a>
 </li>
 </ul>
 
@@ -302,6 +409,9 @@ $(function() {
 
 
 <h3><a id="index_u"></a>- u -</h3><ul>
+<li>update()
+: <a class="el" href="classeq__dummy.html#ade42fc83f3b97c3bcc52ecb31b8a82e6">eq_dummy</a>
+</li>
 <li>useZMQ
 : <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a32bea610d828fdd80578662df642d2b9">ChimeraTK::DoocsBackendRegisterAccessor&lt; UserType &gt;</a>
 </li>
@@ -341,13 +451,19 @@ $(function() {
 <li>~DoocsBackendStringRegisterAccessor()
 : <a class="el" href="class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html#a3504885499f8753b6365f83bc3ab6cdd">ChimeraTK::DoocsBackendStringRegisterAccessor&lt; UserType &gt;</a>
 </li>
+<li>~eq_dummy()
+: <a class="el" href="classeq__dummy.html#af965f5c5875a786f3e062f1a5a6553ee">eq_dummy</a>
+</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 2 2019 05:53:09 for ChimeraTK-DeviceAccess-DoocsBackend by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Mon Mar 4 2019 13:47:15 for ChimeraTK-DeviceAccess-DoocsBackend by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

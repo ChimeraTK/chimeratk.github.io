@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mayreplaceother',['mayReplaceOther',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a3366a7bceef0c049fb2646e8f2a4f6d1',1,'ChimeraTK::DoocsBackendRegisterAccessor']]]
+  ['launchifnotyetlaunched',['launchIfNotYetLaunched',['../struct_doocs_launcher.html#ae3ac32fc0b9c613a6fa61fccbd42ff13',1,'DoocsLauncher::launchIfNotYetLaunched()'],['../struct_doocs_launcher.html#ae3ac32fc0b9c613a6fa61fccbd42ff13',1,'DoocsLauncher::launchIfNotYetLaunched()']]]
 ];

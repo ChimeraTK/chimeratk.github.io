@@ -7,5 +7,6 @@ var searchData=
   ['doocsbackendintregisteraccessor_2eh',['DoocsBackendIntRegisterAccessor.h',['../_doocs_backend_int_register_accessor_8h.html',1,'']]],
   ['doocsbackendlongregisteraccessor_2eh',['DoocsBackendLongRegisterAccessor.h',['../_doocs_backend_long_register_accessor_8h.html',1,'']]],
   ['doocsbackendregisteraccessor_2eh',['DoocsBackendRegisterAccessor.h',['../_doocs_backend_register_accessor_8h.html',1,'']]],
-  ['doocsbackendstringregisteraccessor_2eh',['DoocsBackendStringRegisterAccessor.h',['../_doocs_backend_string_register_accessor_8h.html',1,'']]]
+  ['doocsbackendstringregisteraccessor_2eh',['DoocsBackendStringRegisterAccessor.h',['../_doocs_backend_string_register_accessor_8h.html',1,'']]],
+  ['doocsdummy_5frpc_5fserver_2ecc',['doocsDummy_rpc_server.cc',['../doocs_dummy__rpc__server_8cc.html',1,'']]]
 ];
