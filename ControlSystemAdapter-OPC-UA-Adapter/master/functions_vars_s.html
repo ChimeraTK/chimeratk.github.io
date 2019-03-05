@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
    &#160;<span id="projectnumber">master</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_vars_s.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -63,6 +84,9 @@ $(function() {
 &#160;
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>s
+: <a class="el" href="classua__node__types_1_1opcua__node__id__t.html#a4428b91ddac3d80679c4a9654d1aca92">ua_node_types.opcua_node_id_t</a>
+</li>
 <li>samplingInterval
 : <a class="el" href="struct_u_a___monitoring_parameters.html#a3dea24f597b5347a3ec0e5ed90927b94">UA_MonitoringParameters</a>
 </li>
@@ -281,6 +305,32 @@ $(function() {
 <li>string
 : <a class="el" href="struct_u_a___node_id.html#ad8656745fcaf75f1482e2644a7ea0eb1">UA_NodeId</a>
 </li>
+<li>stringRepresentation
+: <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__boolean__t.html#aef8268fd3cd261a89ae78b901fe6c535">ua_builtin_types.opcua_BuiltinType_boolean_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__byte__t.html#ae803b8bc4f590a9f41cbb8e237619220">ua_builtin_types.opcua_BuiltinType_byte_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__bytestring__t.html#a88d79b58c6cca7d9a6135db285bd44f8">ua_builtin_types.opcua_BuiltinType_bytestring_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__datetime__t.html#a6fab5e0fc3af39b856ea2ad1c9ffb66a">ua_builtin_types.opcua_BuiltinType_datetime_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__diagnosticinfo__t.html#a1c89dbece46810ab5a2a00242afa64fc">ua_builtin_types.opcua_BuiltinType_diagnosticinfo_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__double__t.html#aee4647bc9ea00d1253251f80a2555914">ua_builtin_types.opcua_BuiltinType_double_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__expandednodeid__t.html#aa6fb131fab13d2c6ded6093508b6b687">ua_builtin_types.opcua_BuiltinType_expandednodeid_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#a80e565decd103bd9d910fadf824c8f30">ua_builtin_types.opcua_BuiltinType_extensionObject_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__float__t.html#a64952b80a92ced559ca3dffebeaf6ac5">ua_builtin_types.opcua_BuiltinType_float_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__guid__t.html#a7b8b45ed47b8a3dafd5e2dc65ffab996">ua_builtin_types.opcua_BuiltinType_guid_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__int16__t.html#acb8f210026eab60db3b022ad6fd2e3b6">ua_builtin_types.opcua_BuiltinType_int16_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__int32__t.html#af97b305f24a032b606becc228016eb73">ua_builtin_types.opcua_BuiltinType_int32_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__int64__t.html#a47185da7c04119b7876b204091a44be9">ua_builtin_types.opcua_BuiltinType_int64_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__localizedtext__t.html#aeef60963e0a45eae92076fbd9710d935">ua_builtin_types.opcua_BuiltinType_localizedtext_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__nodeid__t.html#a45655614ea5a1f7312308d8672f22f72">ua_builtin_types.opcua_BuiltinType_nodeid_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__qualifiedname__t.html#aa0db6449ff977725ba1c5593c1daa5e1">ua_builtin_types.opcua_BuiltinType_qualifiedname_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__sbyte__t.html#a7a6c3f31d908a0f36c4e903c3088846e">ua_builtin_types.opcua_BuiltinType_sbyte_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__statuscode__t.html#a27142dea7828c9832d8e230e9022fba1">ua_builtin_types.opcua_BuiltinType_statuscode_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__string__t.html#a1ce7ad2e52a34e521c93b64a9fde528a">ua_builtin_types.opcua_BuiltinType_string_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__uint16__t.html#ac9e04851161d12ab480111b77d742c50">ua_builtin_types.opcua_BuiltinType_uint16_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__uint32__t.html#a8c21b3f032fd781f5766cd6f58c1eb75">ua_builtin_types.opcua_BuiltinType_uint32_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__uint64__t.html#a606b28d26aa94748d51ae2ea769019ef">ua_builtin_types.opcua_BuiltinType_uint64_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua___builtin_type__xmlelement__t.html#aded5d3ceaffc360817c7d6f02bd0df83">ua_builtin_types.opcua_BuiltinType_xmlelement_t</a>
+, <a class="el" href="classua__builtin__types_1_1opcua__value__t.html#af5bcd9e029c61119a3c6a106c10c73a7">ua_builtin_types.opcua_value_t</a>
+</li>
 <li>stringTable
 : <a class="el" href="struct_u_a___response_header.html#af737fff14e42b174faaf00086f637dae">UA_ResponseHeader</a>
 </li>
@@ -312,6 +362,9 @@ $(function() {
 : <a class="el" href="struct_u_a___delete_subscriptions_request.html#a39668230d41e66da384f4ce17673d100">UA_DeleteSubscriptionsRequest</a>
 , <a class="el" href="struct_u_a___set_publishing_mode_request.html#a69845e25ddf38c60a9441051a556ae54">UA_SetPublishingModeRequest</a>
 </li>
+<li>supressGenerationOfAttribute
+: <a class="el" href="classopen62541___macro_helper_1_1open62541___macro_helper.html#ade05aa7c5591887e7abdba348cb1d8b6">open62541_MacroHelper.open62541_MacroHelper</a>
+</li>
 <li>symbolicId
 : <a class="el" href="struct_u_a___diagnostic_info.html#aa7bba7f8e9135a2c2c0f82f8a74187fe">UA_DiagnosticInfo</a>
 </li>
@@ -321,11 +374,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 21 2019 09:26:27 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Mar 5 2019 05:54:34 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

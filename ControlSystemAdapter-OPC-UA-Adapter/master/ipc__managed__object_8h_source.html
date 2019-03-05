@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
    &#160;<span id="projectnumber">master</span>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('ipc__managed__object_8h_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">ipc_managed_object.h</div>  </div>
@@ -70,7 +87,7 @@ $(function() {
 <div class="contents">
 <a href="ipc__managed__object_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * This file is part of ChimeraTKs ControlSystem-OPC-UA-Adapter.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * ChimeraTKs ControlSystem-OPC-UA-Adapter is free software: you can </span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * redistribute it and/or modify it under the terms of the Lesser GNU </span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * General Public License as published by the Free Software Foundation, </span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * either version 3 of the License, or (at your option) any later version.</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * ChimeraTKs ControlSystem-OPC-UA-Adapter is distributed in the hope </span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * that it will be useful, but WITHOUT ANY WARRANTY; without even the </span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * implied warranty ofMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  </span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * See the Lesser GNU General Public License for more details.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with Foobar.  If not, see https://www.gnu.org/licenses/lgpl.html</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * </span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * Copyright (c) 2016 Chris Iatrou &lt;Chris_Paul.Iatrou@tu-dresden.de&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * Copyright (c) 2016 Julian Rahm  &lt;Julian.Rahm@tu-dresden.de&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef IPC_MANAGED_OBJECT_H</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define IPC_MANAGED_OBJECT_H</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;stdint.h&quot;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// Early definition of manager class</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">class </span><a class="code" href="classipc__manager.html">ipc_manager</a>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classipc__managed__object.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="classipc__managed__object.html">ipc_managed_object</a> {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classipc__managed__object.html#aa9ffe1c73c4b578465972f24cdf58c5c">   44</a></span>&#160;        uint32_t     <a class="code" href="classipc__managed__object.html#aa9ffe1c73c4b578465972f24cdf58c5c">ipc_id</a>;</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classipc__managed__object.html#ab3a8f5f27befc6032130cf561ac5cf1a">   45</a></span>&#160;        <span class="keywordtype">bool</span>         <a class="code" href="classipc__managed__object.html#ab3a8f5f27befc6032130cf561ac5cf1a">thread_run</a>;</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classipc__managed__object.html#afe33781664fbd8ff1acb859d4c7e1896">   46</a></span>&#160;        <a class="code" href="classipc__manager.html">ipc_manager</a> *<a class="code" href="classipc__managed__object.html#afe33781664fbd8ff1acb859d4c7e1896">manager</a>;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classipc__managed__object.html#aa70b5d6ff7585ebbe6b6728150b7611d">   47</a></span>&#160;        std::thread *<a class="code" href="classipc__managed__object.html#aa70b5d6ff7585ebbe6b6728150b7611d">threadTask</a>;</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classipc__managed__object.html#a6593c080a1c45772c7ca0f05d7cf12a3">   48</a></span>&#160;        std::mutex   <a class="code" href="classipc__managed__object.html#a6593c080a1c45772c7ca0f05d7cf12a3">mtx_threadOperations</a>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classipc__managed__object.html">ipc_managed_object</a>();</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classipc__managed__object.html">ipc_managed_object</a>(uint32_t ipc_id);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        ~<a class="code" href="classipc__managed__object.html">ipc_managed_object</a>();</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="classipc__manager.html">ipc_manager</a> *getIpcManager();</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        uint32_t getIpcId();</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">void</span> setIpcId(uint32_t ipc_id);</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">bool</span> isManaged();</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordtype">bool</span> assignManager(<a class="code" href="classipc__manager.html">ipc_manager</a> *manager);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordtype">bool</span> taskRunningAttached();</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">bool</span> isRunning();</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        uint32_t doStop();</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        uint32_t doStart();</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> workerThread() = 0;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;};</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ipc__managed__object_8h.html#a924cbe28add554674470b81029da6985">ipc_managed_object_callWorker</a>(<a class="code" href="classipc__managed__object.html">ipc_managed_object</a> *theClass);</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#endif // IPC_MANAGED_OBJECT_H</span></div><div class="ttc" id="classipc__managed__object_html_ab3a8f5f27befc6032130cf561ac5cf1a"><div class="ttname"><a href="classipc__managed__object.html#ab3a8f5f27befc6032130cf561ac5cf1a">ipc_managed_object::thread_run</a></div><div class="ttdeci">bool thread_run</div><div class="ttdef"><b>Definition:</b> <a href="ipc__managed__object_8h_source.html#l00045">ipc_managed_object.h:45</a></div></div>
 <div class="ttc" id="classipc__manager_html"><div class="ttname"><a href="classipc__manager.html">ipc_manager</a></div><div class="ttdoc">This class managed object who are assigned to this class. </div><div class="ttdef"><b>Definition:</b> <a href="ipc__manager_8h_source.html#l00040">ipc_manager.h:40</a></div></div>
-<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
 <div class="ttc" id="classipc__managed__object_html_aa70b5d6ff7585ebbe6b6728150b7611d"><div class="ttname"><a href="classipc__managed__object.html#aa70b5d6ff7585ebbe6b6728150b7611d">ipc_managed_object::threadTask</a></div><div class="ttdeci">std::thread * threadTask</div><div class="ttdef"><b>Definition:</b> <a href="ipc__managed__object_8h_source.html#l00047">ipc_managed_object.h:47</a></div></div>
 <div class="ttc" id="ipc__managed__object_8h_html_a924cbe28add554674470b81029da6985"><div class="ttname"><a href="ipc__managed__object_8h.html#a924cbe28add554674470b81029da6985">ipc_managed_object_callWorker</a></div><div class="ttdeci">void ipc_managed_object_callWorker(ipc_managed_object *theClass)</div><div class="ttdef"><b>Definition:</b> <a href="ipc__managed__object_8cpp_source.html#l00025">ipc_managed_object.cpp:25</a></div></div>
 <div class="ttc" id="classipc__managed__object_html_aa9ffe1c73c4b578465972f24cdf58c5c"><div class="ttname"><a href="classipc__managed__object.html#aa9ffe1c73c4b578465972f24cdf58c5c">ipc_managed_object::ipc_id</a></div><div class="ttdeci">uint32_t ipc_id</div><div class="ttdef"><b>Definition:</b> <a href="ipc__managed__object_8h_source.html#l00044">ipc_managed_object.h:44</a></div></div>
@@ -78,11 +95,15 @@ $(function() {
 <div class="ttc" id="classipc__managed__object_html_a6593c080a1c45772c7ca0f05d7cf12a3"><div class="ttname"><a href="classipc__managed__object.html#a6593c080a1c45772c7ca0f05d7cf12a3">ipc_managed_object::mtx_threadOperations</a></div><div class="ttdeci">std::mutex mtx_threadOperations</div><div class="ttdef"><b>Definition:</b> <a href="ipc__managed__object_8h_source.html#l00048">ipc_managed_object.h:48</a></div></div>
 <div class="ttc" id="classipc__managed__object_html_afe33781664fbd8ff1acb859d4c7e1896"><div class="ttname"><a href="classipc__managed__object.html#afe33781664fbd8ff1acb859d4c7e1896">ipc_managed_object::manager</a></div><div class="ttdeci">ipc_manager * manager</div><div class="ttdef"><b>Definition:</b> <a href="ipc__managed__object_8h_source.html#l00046">ipc_managed_object.h:46</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 21 2019 09:26:25 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="ipc__managed__object_8h.html">ipc_managed_object.h</a></li>
+    <li class="footer">Generated on Tue Mar 5 2019 05:54:31 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

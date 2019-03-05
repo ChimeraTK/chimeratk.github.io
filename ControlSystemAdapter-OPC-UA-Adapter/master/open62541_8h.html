@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
    &#160;<span id="projectnumber">master</span>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('open62541_8h.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -82,6 +99,22 @@ $(function() {
 <code>#include &lt;alloca.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;stdarg.h&gt;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for open62541.h:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="open62541_8h__incl.svg" width="100%" height="384"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="open62541_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 </div>
 <p><a href="open62541_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -1146,7 +1179,7 @@ The write mask and user write mask is given by the following constants that are 
 <tr class="separator:a96fb8bea1846ee7cca6d60396270e09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5ba5d30b237ef175a2ff5a0c2197810"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="open62541_8h.html#ac5ba5d30b237ef175a2ff5a0c2197810">UA_UINT64_MAX</a>&#160;&#160;&#160;(int64_t)18446744073709551615</td></tr>
 <tr class="separator:ac5ba5d30b237ef175a2ff5a0c2197810"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6f19951777419d520d469d5130acae4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="open62541_8h.html#ac6f19951777419d520d469d5130acae4">UA_STRING_ALLOC</a>(CHARS)&#160;&#160;&#160;<a class="el" href="open62541_8h.html#a109892530ab3b7692b4111e345ae2b98">UA_String_fromChars</a>(CHARS)</td></tr>
+<tr class="memitem:ac6f19951777419d520d469d5130acae4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="open62541_8h.html#ac6f19951777419d520d469d5130acae4">UA_STRING_ALLOC</a>(CHARS)&#160;&#160;&#160;<a class="el" href="open62541_8c.html#a1115e9ae48fa78d37e2fd9b081c24059">UA_String_fromChars</a>(CHARS)</td></tr>
 <tr class="separator:ac6f19951777419d520d469d5130acae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a037293a78ffb9ed6881206b580374fc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="open62541_8h.html#a037293a78ffb9ed6881206b580374fc0">UA_USEC_TO_DATETIME</a>&#160;&#160;&#160;10LL</td></tr>
 <tr class="separator:a037293a78ffb9ed6881206b580374fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -29586,7 +29619,7 @@ The default malloc implementation from <code>stdlib.h</code> is used internally.
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">CHARS</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="open62541_8h.html#a109892530ab3b7692b4111e345ae2b98">UA_String_fromChars</a>(CHARS)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="open62541_8c.html#a1115e9ae48fa78d37e2fd9b081c24059">UA_String_fromChars</a>(CHARS)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -33947,6 +33980,22 @@ This section contains numerical and string constants that are defined in the OPC
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l05770">5770</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a113cafc13758926b8b8df55a02d45286_cgraph.svg" width="508" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a113cafc13758926b8b8df55a02d45286_icgraph.svg" width="419" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -33983,6 +34032,22 @@ This section contains numerical and string constants that are defined in the OPC
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l05809">5809</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a86be407695287c3ba6603da176b3712a_cgraph.svg" width="339" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a86be407695287c3ba6603da176b3712a_icgraph.svg" width="647" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -34019,6 +34084,14 @@ This section contains numerical and string constants that are defined in the OPC
 <p>In open62541 however, we use <code>size_t</code> for array lengths. An undefined array has length 0 and the data pointer is <code>NULL</code>. An array of length 0 also has length 0 but a data pointer <code>UA_EMPTY_ARRAY_SENTINEL</code>. </p>
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l05763">5763</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_acdc2a1e23e19ecdf24b5a642ad4d8263_icgraph.svg" width="568" height="459"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -34105,6 +34178,14 @@ This section contains numerical and string constants that are defined in the OPC
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l05681">5681</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_aa2902fbc211543d7635bd99e5696dad0_icgraph.svg" width="619" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -34125,6 +34206,14 @@ This section contains numerical and string constants that are defined in the OPC
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l27469">27469</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="open62541_8h_ac3621608c00f0b270463227893cbac67_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -34145,6 +34234,14 @@ This section contains numerical and string constants that are defined in the OPC
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l27487">27487</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="open62541_8h_a4729b2c4355acebccaa4c9ee9c3ab813_icgraph.svg" width="100%" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -34165,6 +34262,22 @@ This section contains numerical and string constants that are defined in the OPC
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l04885">4885</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_ab10fa7233a2f61b50af66923b98af3bc_cgraph.svg" width="559" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="open62541_8h_ab10fa7233a2f61b50af66923b98af3bc_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -34185,6 +34298,22 @@ This section contains numerical and string constants that are defined in the OPC
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l04854">4854</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a4da4e2e05328a3faab29f055aed4f726_cgraph.svg" width="340" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="open62541_8h_a4da4e2e05328a3faab29f055aed4f726_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -34245,6 +34374,14 @@ This section contains numerical and string constants that are defined in the OPC
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l05747">5747</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="open62541_8h_a5d59e9e2e57bc0135c587a6d0fc9324d_icgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -34289,6 +34426,14 @@ This section contains numerical and string constants that are defined in the OPC
 <p>EndpointURL Helper ^^^^^^^^^^^^^^^^^^. </p>
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l15087">15087</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a558cf1218578158c3dc7f0596aa37b9b_cgraph.svg" width="402" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -34342,6 +34487,14 @@ This section contains numerical and string constants that are defined in the OPC
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l04914">4914</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="open62541_8h_ac3ae077251d644af4be97e13d6d41a4a_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -34362,6 +34515,22 @@ This section contains numerical and string constants that are defined in the OPC
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l04921">4921</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a60a7c639fb94776e13acf0f28f013c6b_cgraph.svg" width="324" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a60a7c639fb94776e13acf0f28f013c6b_icgraph.svg" width="396" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -34414,6 +34583,22 @@ This section contains numerical and string constants that are defined in the OPC
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l05016">5016</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a711402f9064cc08c4ca232ac7a6143d7_cgraph.svg" width="326" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="open62541_8h_a711402f9064cc08c4ca232ac7a6143d7_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -34454,6 +34639,14 @@ This section contains numerical and string constants that are defined in the OPC
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l04991">4991</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="open62541_8h_a1a6d82c6228c07e7c9051a0796f482b2_icgraph.svg" width="100%" height="549"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -34478,6 +34671,22 @@ If UA_ENABLE_MULTITHREADING is defined, then the seed is stored in thread local 
 <p>The seed is initialized for every thread in the server/client. </p>
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l04806">4806</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a19155a0b01bd2653fea203fbb5d136d6_cgraph.svg" width="520" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a19155a0b01bd2653fea203fbb5d136d6_icgraph.svg" width="319" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -34514,6 +34723,14 @@ If UA_ENABLE_MULTITHREADING is defined, then the seed is stored in thread local 
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l15138">15138</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a6781f5765e26cff6307d4439750e9492_icgraph.svg" width="347" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -34544,6 +34761,22 @@ If UA_ENABLE_MULTITHREADING is defined, then the seed is stored in thread local 
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l15783">15783</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a50a1d300041cd25e3dff7647bca97bf4_cgraph.svg" width="558" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a50a1d300041cd25e3dff7647bca97bf4_icgraph.svg" width="478" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -34589,6 +34822,14 @@ If UA_ENABLE_MULTITHREADING is defined, then the seed is stored in thread local 
 </p>
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l18114">18114</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a019ffd6c02ad6c513ed14c55deaa755b_cgraph.svg" width="575" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -34715,6 +34956,14 @@ If UA_ENABLE_MULTITHREADING is defined, then the seed is stored in thread local 
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l15882">15882</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="open62541_8h_a90155532bd0cb98fc0d297208ee7a4e5_cgraph.svg" width="100%" height="503"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -34757,6 +35006,14 @@ If UA_ENABLE_MULTITHREADING is defined, then the seed is stored in thread local 
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l15792">15792</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="open62541_8h_a14a3a4bebc3c5140554eb237d1be2268_cgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -34782,6 +35039,14 @@ If UA_ENABLE_MULTITHREADING is defined, then the seed is stored in thread local 
 <p>ServerProfileArray </p>
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l16138">16138</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="open62541_8h_a3c9d17c06108b677f0bef7faff6cdcff_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -34887,6 +35152,14 @@ The functions for reading and writing node attributes call the regular read and 
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l18618">18618</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-31-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_ad5d61a7c770cf1a13fea19a1949b6ea1_cgraph.svg" width="627" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -34917,6 +35190,22 @@ The functions for reading and writing node attributes call the regular read and 
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l18513">18513</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-32-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a15467aaf9dde1156abf1ce8fd4339e9b_cgraph.svg" width="440" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-33-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a15467aaf9dde1156abf1ce8fd4339e9b_icgraph.svg" width="436" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -34937,6 +35226,14 @@ The functions for reading and writing node attributes call the regular read and 
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l18582">18582</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-34-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-34-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a46b13beed9591c1d2cdb6ce751cb9f3b_icgraph.svg" width="456" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -34957,6 +35254,14 @@ The functions for reading and writing node attributes call the regular read and 
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l18452">18452</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-35" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-35-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-35-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-35-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a5ee7d65cb1dc1a4f87b49f5e53ce405d_icgraph.svg" width="439" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -35032,6 +35337,14 @@ The functions for reading and writing node attributes call the regular read and 
 <p>Historizing is currently unsupported </p>
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l21172">21172</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-36-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-36-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a473c1cfd61c441df35adb5d2565d9d1d_cgraph.svg" width="592" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -35502,6 +35815,14 @@ The functions for reading and writing node attributes call the regular read and 
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l04839">4839</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-37-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-37-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="open62541_8h_ac445c3078e45afd2780ddc287dc77597_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -35542,6 +35863,14 @@ The functions for reading and writing node attributes call the regular read and 
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l04811">4811</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-38" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-38-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-38-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-38-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a48452e8be4dba0fa524d74cf38bda3e6_cgraph.svg" width="338" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -35782,6 +36111,14 @@ The functions for reading and writing node attributes call the regular read and 
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l05165">5165</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-39-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-39-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-39-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_a075bd6c1d01aeb7460a588c68700661a_icgraph.svg" width="415" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -35818,6 +36155,14 @@ The functions for reading and writing node attributes call the regular read and 
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="open62541_8c_source.html#l05174">5174</a> of file <a class="el" href="open62541_8c_source.html">open62541.c</a>.</p>
+<div id="dynsection-40" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-40-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-40-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-40-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="open62541_8h_ac960630d37fc7ee91d3ad57623976d1a_cgraph.svg" width="415" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -35919,11 +36264,15 @@ The functions for reading and writing node attributes call the regular read and 
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 21 2019 09:26:26 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="open62541_8h.html">open62541.h</a></li>
+    <li class="footer">Generated on Tue Mar 5 2019 05:54:33 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

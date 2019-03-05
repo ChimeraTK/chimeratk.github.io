@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
    &#160;<span id="projectnumber">master</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_r.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -76,6 +97,12 @@ $(function() {
 : <a class="el" href="struct_u_a___secure_conversation_message_abort_body.html#a7aa34d2fa77b1f82e7737081516e15dc">UA_SecureConversationMessageAbortBody</a>
 , <a class="el" href="struct_u_a___tcp_error_message.html#abbc7bbc3b709e5e407cac35e90b970db">UA_TcpErrorMessage</a>
 </li>
+<li>reassignNamespaceId()
+: <a class="el" href="classopen62541___x_m_l_preprocessor_1_1pre_process_document.html#a08d09be8a55dc85155cf449f7b6c53dd">open62541_XMLPreprocessor.preProcessDocument</a>
+</li>
+<li>reassignReferencedNamespaceId()
+: <a class="el" href="classopen62541___x_m_l_preprocessor_1_1pre_process_document.html#aa5ce0cb4959cbfdf2b294ee589c9a6ad">open62541_XMLPreprocessor.preProcessDocument</a>
+</li>
 <li>receiveBufferSize
 : <a class="el" href="struct_u_a___tcp_acknowledge_message.html#ac8cd371b9716a990fc049d40d4c0f897">UA_TcpAcknowledgeMessage</a>
 , <a class="el" href="struct_u_a___tcp_hello_message.html#a7bcd40d8ea675a903162cb2c4cad97fa">UA_TcpHelloMessage</a>
@@ -91,6 +118,12 @@ $(function() {
 </li>
 <li>recvBufferSize
 : <a class="el" href="struct_u_a___connection_config.html#ab70c6c71dd05052b87cb23cf50c70ff9">UA_ConnectionConfig</a>
+</li>
+<li>referencedNamesSpaceUris
+: <a class="el" href="classopen62541___x_m_l_preprocessor_1_1pre_process_document.html#a3838dc7dd78792673e45a542a4be03b7">open62541_XMLPreprocessor.preProcessDocument</a>
+</li>
+<li>referencedNodes
+: <a class="el" href="classopen62541___x_m_l_preprocessor_1_1pre_process_document.html#a95320434d324d78fccaba2c2327c5e11">open62541_XMLPreprocessor.preProcessDocument</a>
 </li>
 <li>references
 : <a class="el" href="struct_u_a___browse_result.html#a968219bb3b9803b74be29232d8181c48">UA_BrowseResult</a>
@@ -110,6 +143,10 @@ $(function() {
 <li>referencesToDeleteSize
 : <a class="el" href="struct_u_a___delete_references_request.html#a3b203e3124bd2effa9f41408ff532fd2">UA_DeleteReferencesRequest</a>
 </li>
+<li>referenceType()
+: <a class="el" href="classua__node__types_1_1opcua__node__reference_type__t.html#a2ce1be0dc6c41ad7fdf1310280de0bd1">ua_node_types.opcua_node_referenceType_t</a>
+, <a class="el" href="classua__node__types_1_1opcua__reference_pointer__t.html#a688d54d79bf086afca6c88bb2ec7e87d">ua_node_types.opcua_referencePointer_t</a>
+</li>
 <li>referenceTypeId
 : <a class="el" href="struct_u_a___add_nodes_item.html#a2def2334ded4f3e9fd4585f4a14473b6">UA_AddNodesItem</a>
 , <a class="el" href="struct_u_a___add_references_item.html#a8a3415cc9ed9c67610b3d3e52068575f">UA_AddReferencesItem</a>
@@ -118,6 +155,9 @@ $(function() {
 , <a class="el" href="struct_u_a___reference_description.html#a3ad0dd5b6e6565bd0d4d0376c78352e6">UA_ReferenceDescription</a>
 , <a class="el" href="struct_u_a___reference_node.html#a843b3408f0144f1060be9c08a0738b13">UA_ReferenceNode</a>
 , <a class="el" href="struct_u_a___relative_path_element.html#a0dcd15ae6ed014edd66d33f945ef7724">UA_RelativePathElement</a>
+</li>
+<li>registerBinaryIndirectPointer()
+: <a class="el" href="classua__namespace_1_1opcua__namespace.html#a1eeb858a583763621547ad4cab625dfc">ua_namespace.opcua_namespace</a>
 </li>
 <li>registeredNodeIds
 : <a class="el" href="struct_u_a___register_nodes_response.html#a6a6e273163c012a5c7a3ed5a5f141b84">UA_RegisterNodesResponse</a>
@@ -146,6 +186,21 @@ $(function() {
 </li>
 <li>remoteConf
 : <a class="el" href="struct_u_a___connection.html#a0f1ed258d0a0b956d823e5e52fcf2bc4">UA_Connection</a>
+</li>
+<li>removeNodeById()
+: <a class="el" href="classua__namespace_1_1opcua__namespace.html#a590d0df79e4aa45e3969243691e6872f">ua_namespace.opcua_namespace</a>
+</li>
+<li>removePreprocessedFiles()
+: <a class="el" href="classopen62541___x_m_l_preprocessor_1_1open62541___x_m_l_preprocessor.html#a56efabbf692728b14211ed97649da692">open62541_XMLPreprocessor.open62541_XMLPreprocessor</a>
+</li>
+<li>removeReference()
+: <a class="el" href="classua__node__types_1_1opcua__node__t.html#aa9e13a77138f4083e6e36968ccf7a82e">ua_node_types.opcua_node_t</a>
+</li>
+<li>removeReferenceToNode()
+: <a class="el" href="classua__node__types_1_1opcua__node__t.html#a65002c4368b77bfd074b8b7ab018252c">ua_node_types.opcua_node_t</a>
+</li>
+<li>reorderNodesMinDependencies()
+: <a class="el" href="classua__namespace_1_1opcua__namespace.html#aaf1972cc1ec0c93f833761f25a13edd4">ua_namespace.opcua_namespace</a>
 </li>
 <li>requestedLifetime
 : <a class="el" href="struct_u_a___open_secure_channel_request.html#a4c32f76f04587063108a3ee16e31a591">UA_OpenSecureChannelRequest</a>
@@ -343,13 +398,22 @@ $(function() {
 <li>rootFolder
 : <a class="el" href="struct_server_config.html#ab022f19cfa3f310e7488519b91924f7f">ServerConfig</a>
 </li>
+<li>run()
+: <a class="el" href="struct_my_app.html#ae144e1c26a9ad607564b00036fcbac06">MyApp</a>
+</li>
+<li>runtime_value_generator()
+: <a class="el" href="classruntime__value__generator.html#acf314791bff536d40b39a1f4d3364d21">runtime_value_generator</a>
+</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 21 2019 09:26:27 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Mar 5 2019 05:54:34 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

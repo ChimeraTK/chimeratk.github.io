@@ -14,6 +14,7 @@ var searchData=
   ['hasstatus',['hasStatus',['../struct_u_a___data_value.html#ab9103bff620cafc90337c7d98b119b2e',1,'UA_DataValue']]],
   ['hassymbolicid',['hasSymbolicId',['../struct_u_a___diagnostic_info.html#a23b01f98b07c4b56f0f6bce2cb412fca',1,'UA_DiagnosticInfo']]],
   ['hasvalue',['hasValue',['../struct_u_a___data_value.html#af7a6da643af31005029ad3759deae136',1,'UA_DataValue']]],
-  ['historizing',['historizing',['../struct_u_a___variable_node.html#ae99e10f61147ea0b82a0e2a15c76317c',1,'UA_VariableNode::historizing()'],['../struct_u_a___variable_attributes.html#a6b20dce841c378d5cfddf0239728507e',1,'UA_VariableAttributes::historizing()']]],
+  ['help',['help',['../namespacegenerate__open62541_c_code.html#aaa859cd09873b9d0f5cd4a23c11c7c6d',1,'generate_open62541CCode']]],
+  ['historizing',['historizing',['../struct_u_a___variable_attributes.html#a6b20dce841c378d5cfddf0239728507e',1,'UA_VariableAttributes::historizing()'],['../struct_u_a___variable_node.html#ae99e10f61147ea0b82a0e2a15c76317c',1,'UA_VariableNode::historizing()']]],
   ['hour',['hour',['../struct_u_a___date_time_struct.html#a7c5113ba97db7d2635d83c5c54bc74a9',1,'UA_DateTimeStruct']]]
 ];

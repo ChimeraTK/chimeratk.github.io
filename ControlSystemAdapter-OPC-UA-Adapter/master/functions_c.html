@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
    &#160;<span id="projectnumber">master</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_c.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -84,6 +105,9 @@ $(function() {
 </li>
 <li>classObjectId
 : <a class="el" href="struct_u_a___function_call___instance_lookup_table___element__t.html#aac62c8d301223f5518d9f5100d57accd">UA_FunctionCall_InstanceLookupTable_Element_t</a>
+</li>
+<li>clean()
+: <a class="el" href="classopen62541___x_m_l_preprocessor_1_1pre_process_document.html#af7c137792f3a2a52a7e358b45d6db6e2">open62541_XMLPreprocessor.preProcessDocument</a>
 </li>
 <li>client
 : <a class="el" href="struct_response_description.html#a2724171c568e432d7331034dd6f6195a">ResponseDescription</a>
@@ -140,8 +164,12 @@ $(function() {
 , <a class="el" href="struct_u_a___job.html#aa74e9f346e5316373cedf0e60f006de8">UA_Job</a>
 , <a class="el" href="struct_u_a___secure_channel.html#a73e1a3fff87100e8749b988e985c1a1d">UA_SecureChannel</a>
 </li>
-<li>containsNoLoops
-: <a class="el" href="struct_u_a___view_attributes.html#a5daaaa4a8397211a819d1e0a6a703b01">UA_ViewAttributes</a>
+<li>containedNodes
+: <a class="el" href="classopen62541___x_m_l_preprocessor_1_1pre_process_document.html#a8d360c86efa0383a4c1fcc5403701cfa">open62541_XMLPreprocessor.preProcessDocument</a>
+</li>
+<li>containsNoLoops()
+: <a class="el" href="classua__node__types_1_1opcua__node__view__t.html#a68c476e799052bdc5afbe0883eb74e7d">ua_node_types.opcua_node_view_t</a>
+, <a class="el" href="struct_u_a___view_attributes.html#a5daaaa4a8397211a819d1e0a6a703b01">UA_ViewAttributes</a>
 , <a class="el" href="struct_u_a___view_node.html#a7becce099fd9b94846f95098df435e6f">UA_ViewNode</a>
 </li>
 <li>content
@@ -173,6 +201,9 @@ $(function() {
 <li>createFolderPath()
 : <a class="el" href="classua__uaadapter.html#a473150da4d61c689d185e88d4cd98b63">ua_uaadapter</a>
 </li>
+<li>createNode()
+: <a class="el" href="classua__namespace_1_1opcua__namespace.html#a0481d8bd275de5d37801f28687518d04">ua_namespace.opcua_namespace</a>
+</li>
 <li>csa_opcua_adapter()
 : <a class="el" href="classcsa__opcua__adapter.html#a8a0a7ec49c048811c7f388a5053456f6">csa_opcua_adapter</a>
 </li>
@@ -181,11 +212,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 21 2019 09:26:27 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Mar 5 2019 05:54:34 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
    &#160;<span id="projectnumber">master</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_h.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -76,6 +97,9 @@ $(function() {
 <li>hasInnerStatusCode
 : <a class="el" href="struct_u_a___diagnostic_info.html#acb1b8dd7767baee39f4a8726f236046d">UA_DiagnosticInfo</a>
 </li>
+<li>hasInverseReferenceTarget()
+: <a class="el" href="classua__node__types_1_1opcua__node__t.html#a21e4585e9f070aeaa0bd8fb61577ce2a">ua_node_types.opcua_node_t</a>
+</li>
 <li>hasLocale
 : <a class="el" href="struct_u_a___diagnostic_info.html#a3b22d43bb7b08938abff2454f7066b30">UA_DiagnosticInfo</a>
 </li>
@@ -84,6 +108,9 @@ $(function() {
 </li>
 <li>hasNamespaceUri
 : <a class="el" href="struct_u_a___diagnostic_info.html#a029311f425dfb1b179e91f950d61fcd4">UA_DiagnosticInfo</a>
+</li>
+<li>hasReferenceTarget()
+: <a class="el" href="classua__node__types_1_1opcua__node__t.html#a0cf3caaaac648608484cb74d68d817bd">ua_node_types.opcua_node_t</a>
 </li>
 <li>hasServerPicoseconds
 : <a class="el" href="struct_u_a___data_value.html#ae05b644e0d350d7e38c8eb1583a68b55">UA_DataValue</a>
@@ -106,8 +133,9 @@ $(function() {
 <li>hasValue
 : <a class="el" href="struct_u_a___data_value.html#af7a6da643af31005029ad3759deae136">UA_DataValue</a>
 </li>
-<li>historizing
-: <a class="el" href="struct_u_a___variable_attributes.html#a6b20dce841c378d5cfddf0239728507e">UA_VariableAttributes</a>
+<li>historizing()
+: <a class="el" href="classua__node__types_1_1opcua__node__variable__t.html#a7df5c6e846666e77d773d56ba31abd11">ua_node_types.opcua_node_variable_t</a>
+, <a class="el" href="struct_u_a___variable_attributes.html#a6b20dce841c378d5cfddf0239728507e">UA_VariableAttributes</a>
 , <a class="el" href="struct_u_a___variable_node.html#ae99e10f61147ea0b82a0e2a15c76317c">UA_VariableNode</a>
 </li>
 <li>hour
@@ -115,11 +143,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 21 2019 09:26:27 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Mar 5 2019 05:54:34 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

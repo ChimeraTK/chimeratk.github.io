@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter-OPCUAAdapter
    &#160;<span id="projectnumber">master</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('globals_u.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -109,16 +130,16 @@ $(function() {
 : <a class="el" href="open62541_8h.html#a9b845f1909364f15201d99f19cf580fcaeedef21e0c8e1ff593d4995765f56e11">open62541.h</a>
 </li>
 <li>UA_Array_copy()
-: <a class="el" href="open62541_8c.html#af27a32f7f16ce2676dfadc56f15282a5">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a113cafc13758926b8b8df55a02d45286">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a113cafc13758926b8b8df55a02d45286">open62541.h</a>
+, <a class="el" href="open62541_8c.html#af27a32f7f16ce2676dfadc56f15282a5">open62541.c</a>
 </li>
 <li>UA_Array_delete()
-: <a class="el" href="open62541_8c.html#a05af722df9c9a11fd6b497a7a35b8cdb">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a86be407695287c3ba6603da176b3712a">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a86be407695287c3ba6603da176b3712a">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a05af722df9c9a11fd6b497a7a35b8cdb">open62541.c</a>
 </li>
 <li>UA_Array_new()
-: <a class="el" href="open62541_8c.html#af8c0f89bd7b5eed5c2cfe17b75665aba">open62541.c</a>
-, <a class="el" href="open62541_8h.html#acdc2a1e23e19ecdf24b5a642ad4d8263">open62541.h</a>
+: <a class="el" href="open62541_8h.html#acdc2a1e23e19ecdf24b5a642ad4d8263">open62541.h</a>
+, <a class="el" href="open62541_8c.html#af8c0f89bd7b5eed5c2cfe17b75665aba">open62541.c</a>
 </li>
 <li>UA_assert
 : <a class="el" href="open62541_8c.html#a134e6f8e1aa5c8625e22719513e10f1a">open62541.c</a>
@@ -271,12 +292,12 @@ $(function() {
 : <a class="el" href="open62541_8h.html#a05a19615d5da9f034fabefd3d02225ee">open62541.h</a>
 </li>
 <li>UA_ByteString_allocBuffer()
-: <a class="el" href="open62541_8c.html#a61fa991809fbabf35b8f17e7d7438e5f">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a06710424a08f39d2967306f1da40589c">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a06710424a08f39d2967306f1da40589c">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a61fa991809fbabf35b8f17e7d7438e5f">open62541.c</a>
 </li>
 <li>UA_BYTESTRING_NULL
-: <a class="el" href="open62541_8c.html#a2f7eac4147bc85b47fbf8f798709543c">open62541.c</a>
-, <a class="el" href="open62541_8h.html#afa6e863144bb3d0e7cd92cb5ce6c1ea7">open62541.h</a>
+: <a class="el" href="open62541_8h.html#afa6e863144bb3d0e7cd92cb5ce6c1ea7">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a2f7eac4147bc85b47fbf8f798709543c">open62541.c</a>
 </li>
 <li>UA_calcSizeBinary()
 : <a class="el" href="open62541_8c.html#a239fed33e44a9d2309cd256b1153d54a">open62541.c</a>
@@ -291,8 +312,8 @@ $(function() {
 : <a class="el" href="ua__proxies__callback_8h.html#a455878f3826655495e8364a740760896">ua_proxies_callback.h</a>
 </li>
 <li>ua_callProxy_mapDataSources()
-: <a class="el" href="ua__proxies_8cpp.html#acb9d403b9e38857c069199a9ddd815f2">ua_proxies.cpp</a>
-, <a class="el" href="ua__proxies_8h.html#acb9d403b9e38857c069199a9ddd815f2">ua_proxies.h</a>
+: <a class="el" href="ua__proxies_8h.html#acb9d403b9e38857c069199a9ddd815f2">ua_proxies.h</a>
+, <a class="el" href="ua__proxies_8cpp.html#acb9d403b9e38857c069199a9ddd815f2">ua_proxies.cpp</a>
 </li>
 <li>UA_CALLPROXY_NAME
 : <a class="el" href="ua__proxies__callback_8h.html#a9a62c079b304cf151ba7030f6c4567b5">ua_proxies_callback.h</a>
@@ -388,8 +409,8 @@ $(function() {
 : <a class="el" href="open62541_8c.html#a0eb6143fb894e5c7462ea3c7f36f053a">open62541.c</a>
 </li>
 <li>UA_Connection_deleteMembers()
-: <a class="el" href="open62541_8c.html#a5d0c2f1558adf1b8c774aa38e82dc32d">open62541.c</a>
-, <a class="el" href="open62541_8h.html#aefc61054519d8391f4c80f542101dfc6">open62541.h</a>
+: <a class="el" href="open62541_8h.html#aefc61054519d8391f4c80f542101dfc6">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a5d0c2f1558adf1b8c774aa38e82dc32d">open62541.c</a>
 </li>
 <li>UA_Connection_detachSecureChannel()
 : <a class="el" href="open62541_8c.html#afca93a6369176013b778d5eed067e163">open62541.c</a>
@@ -404,15 +425,15 @@ $(function() {
 : <a class="el" href="open62541_8c.html#aa09abaffa069f596511162f852ec0b5c">open62541.c</a>
 </li>
 <li>UA_ConnectionConfig_standard
-: <a class="el" href="open62541_8c.html#aaba0da589a00e0e404230bbae1ddab18">open62541.c</a>
-, <a class="el" href="open62541_8h.html#aaba0da589a00e0e404230bbae1ddab18">open62541.h</a>
+: <a class="el" href="open62541_8h.html#aaba0da589a00e0e404230bbae1ddab18">open62541.h</a>
+, <a class="el" href="open62541_8c.html#aaba0da589a00e0e404230bbae1ddab18">open62541.c</a>
 </li>
 <li>UA_ConnectionState
 : <a class="el" href="open62541_8h.html#a581d16bf4bb2cef817c374c81680fc8d">open62541.h</a>
 </li>
 <li>UA_copy()
-: <a class="el" href="open62541_8c.html#a06dc3ec388f93ee9aab177e3b50ca7e4">open62541.c</a>
-, <a class="el" href="open62541_8h.html#aa2902fbc211543d7635bd99e5696dad0">open62541.h</a>
+: <a class="el" href="open62541_8h.html#aa2902fbc211543d7635bd99e5696dad0">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a06dc3ec388f93ee9aab177e3b50ca7e4">open62541.c</a>
 </li>
 <li>UA_copySignature
 : <a class="el" href="open62541_8c.html#a462675dda1c7951a924fb2941091aa1f">open62541.c</a>
@@ -442,20 +463,20 @@ $(function() {
 : <a class="el" href="open62541_8h.html#a6cfbce46cf586a305e4c9b9455c37eea">open62541.h</a>
 </li>
 <li>UA_DateTime_now()
-: <a class="el" href="open62541_8c.html#ae56238574ba35e88e91f4c264c452284">open62541.c</a>
-, <a class="el" href="open62541_8h.html#ac3621608c00f0b270463227893cbac67">open62541.h</a>
+: <a class="el" href="open62541_8h.html#ac3621608c00f0b270463227893cbac67">open62541.h</a>
+, <a class="el" href="open62541_8c.html#ae56238574ba35e88e91f4c264c452284">open62541.c</a>
 </li>
 <li>UA_DateTime_nowMonotonic()
-: <a class="el" href="open62541_8c.html#add827094c515e557adfe2a50fd7ddafc">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a4729b2c4355acebccaa4c9ee9c3ab813">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a4729b2c4355acebccaa4c9ee9c3ab813">open62541.h</a>
+, <a class="el" href="open62541_8c.html#add827094c515e557adfe2a50fd7ddafc">open62541.c</a>
 </li>
 <li>UA_DateTime_toString()
-: <a class="el" href="open62541_8c.html#a6301ff06553c583514df98397f21de0f">open62541.c</a>
-, <a class="el" href="open62541_8h.html#ab10fa7233a2f61b50af66923b98af3bc">open62541.h</a>
+: <a class="el" href="open62541_8h.html#ab10fa7233a2f61b50af66923b98af3bc">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a6301ff06553c583514df98397f21de0f">open62541.c</a>
 </li>
 <li>UA_DateTime_toStruct()
-: <a class="el" href="open62541_8c.html#a4d3d3375ba6c8deb2ba04449cfc6c61a">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a4da4e2e05328a3faab29f055aed4f726">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a4da4e2e05328a3faab29f055aed4f726">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a4d3d3375ba6c8deb2ba04449cfc6c61a">open62541.c</a>
 </li>
 <li>UA_DATETIME_UNIX_EPOCH
 : <a class="el" href="open62541_8h.html#a489381cc84a7d552fc23c907c7c5c9cb">open62541.h</a>
@@ -485,12 +506,12 @@ $(function() {
 : <a class="el" href="open62541_8c.html#ad1789b59cccce0d8a2d0ec439cab62b4">open62541.c</a>
 </li>
 <li>UA_delete()
-: <a class="el" href="open62541_8c.html#ac1fe49fb8120e59038e6f4d276ffa1ec">open62541.c</a>
-, <a class="el" href="open62541_8h.html#ac3aa154b0de1b388a3a9dfb1befa5b0c">open62541.h</a>
+: <a class="el" href="open62541_8h.html#ac3aa154b0de1b388a3a9dfb1befa5b0c">open62541.h</a>
+, <a class="el" href="open62541_8c.html#ac1fe49fb8120e59038e6f4d276ffa1ec">open62541.c</a>
 </li>
 <li>UA_deleteMembers()
-: <a class="el" href="open62541_8c.html#a5f9975a503bca512048ba14c3973cf38">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a5d59e9e2e57bc0135c587a6d0fc9324d">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a5d59e9e2e57bc0135c587a6d0fc9324d">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a5f9975a503bca512048ba14c3973cf38">open62541.c</a>
 </li>
 <li>UA_deleteMembersSignature
 : <a class="el" href="open62541_8c.html#a1179218576b28a0861cb3761b15b78dd">open62541.c</a>
@@ -535,8 +556,8 @@ $(function() {
 : <a class="el" href="csa__namespaceinit__generated_8h.html#afdfb672de6c451cd7f12028c312aeb7b">csa_namespaceinit_generated.h</a>
 </li>
 <li>UA_EndpointUrl_split()
-: <a class="el" href="open62541_8c.html#a187f979a3d6c4850419818896834e386">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a558cf1218578158c3dc7f0596aa37b9b">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a558cf1218578158c3dc7f0596aa37b9b">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a187f979a3d6c4850419818896834e386">open62541.c</a>
 </li>
 <li>UA_EndpointUrl_split_ptr()
 : <a class="el" href="open62541_8c.html#ad19da09f17552e020105b23689ff5fff">open62541.c</a>
@@ -641,8 +662,8 @@ $(function() {
 : <a class="el" href="open62541_8h.html#abc45afd2aa8fcb6a001c8b1b6f6f1b31a886720919a9e3da0b6a85ac9df7f7825">open62541.h</a>
 </li>
 <li>UA_findDataType()
-: <a class="el" href="open62541_8c.html#a1ee9c5525aa3ba01174e71245ea29aac">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a7273584e6003efd92e92ce9c2e726281">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a7273584e6003efd92e92ce9c2e726281">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a1ee9c5525aa3ba01174e71245ea29aac">open62541.c</a>
 </li>
 <li>UA_Float
 : <a class="el" href="open62541_8h.html#a899228311700e99d006f1ba5bcfcbd02">open62541.h</a>
@@ -670,16 +691,16 @@ $(function() {
 : <a class="el" href="ua__proxies_8h.html#a29ab70672c9744f57d846933e4adc713">ua_proxies.h</a>
 </li>
 <li>UA_Guid_equal()
-: <a class="el" href="open62541_8c.html#aeadb12f99531c38134d0ad28a8dd3186">open62541.c</a>
-, <a class="el" href="open62541_8h.html#ac3ae077251d644af4be97e13d6d41a4a">open62541.h</a>
+: <a class="el" href="open62541_8h.html#ac3ae077251d644af4be97e13d6d41a4a">open62541.h</a>
+, <a class="el" href="open62541_8c.html#aeadb12f99531c38134d0ad28a8dd3186">open62541.c</a>
 </li>
 <li>UA_GUID_NULL
-: <a class="el" href="open62541_8c.html#a44ff13c2800c20e12b2cdc3a1c576850">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a23dc33d0b9ce0976581bb9227cce0fa7">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a23dc33d0b9ce0976581bb9227cce0fa7">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a44ff13c2800c20e12b2cdc3a1c576850">open62541.c</a>
 </li>
 <li>UA_Guid_random()
-: <a class="el" href="open62541_8c.html#a312ed9d2d196f380d439ab7dadb4005c">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a60a7c639fb94776e13acf0f28f013c6b">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a60a7c639fb94776e13acf0f28f013c6b">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a312ed9d2d196f380d439ab7dadb4005c">open62541.c</a>
 </li>
 <li>UA_IdType
 : <a class="el" href="open62541_8h.html#aed2f38cfd6f06aac9ab07d5b639e7fd5">open62541.h</a>
@@ -827,8 +848,8 @@ $(function() {
 , <a class="el" href="open62541_8h.html#ac8ca089b8700aa5231bb86a99662d9ff">open62541.h</a>
 </li>
 <li>ua_mapInstantiatedNodes()
-: <a class="el" href="ua__proxies_8cpp.html#a084af8c68bf7bec66cd41535ea275a3e">ua_proxies.cpp</a>
-, <a class="el" href="ua__proxies_8h.html#a084af8c68bf7bec66cd41535ea275a3e">ua_proxies.h</a>
+: <a class="el" href="ua__proxies_8h.html#a084af8c68bf7bec66cd41535ea275a3e">ua_proxies.h</a>
+, <a class="el" href="ua__proxies_8cpp.html#a084af8c68bf7bec66cd41535ea275a3e">ua_proxies.cpp</a>
 </li>
 <li>UA_MAXCONTINUATIONPOINTS
 : <a class="el" href="open62541_8c.html#aa229f96e61fb63f231532c3d858b77cd">open62541.c</a>
@@ -909,8 +930,8 @@ $(function() {
 : <a class="el" href="open62541_8h.html#a94f1b898042d7bbbccab4ebd4e2ed6df">open62541.h</a>
 </li>
 <li>UA_new()
-: <a class="el" href="open62541_8c.html#af586a3b89f735da18f9e4ff57067d04a">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a40bf20c146fc1f9eca242aee40d768ef">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a40bf20c146fc1f9eca242aee40d768ef">open62541.h</a>
+, <a class="el" href="open62541_8c.html#af586a3b89f735da18f9e4ff57067d04a">open62541.c</a>
 </li>
 <li>UA_NODE_BASEATTRIBUTES
 : <a class="el" href="open62541_8c.html#a9b0c38e726175dd70ad5719140450496">open62541.c</a>
@@ -1057,20 +1078,20 @@ $(function() {
 : <a class="el" href="open62541_8h.html#adf98bb5a5ac8e50eece68338a046a904aa9c6a6dd8412b19bd8fc542df5c71e1c">open62541.h</a>
 </li>
 <li>UA_NodeId_equal()
-: <a class="el" href="open62541_8c.html#a8542e9240038621026c3ddce368cd317">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a711402f9064cc08c4ca232ac7a6143d7">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a711402f9064cc08c4ca232ac7a6143d7">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a8542e9240038621026c3ddce368cd317">open62541.c</a>
 </li>
 <li>UA_NodeId_hash()
-: <a class="el" href="open62541_8c.html#a0ffe513ad3f755b8de55d06e22666cb6">open62541.c</a>
-, <a class="el" href="open62541_8h.html#ab626a1ca5145087d5f06bcd2caafb604">open62541.h</a>
+: <a class="el" href="open62541_8h.html#ab626a1ca5145087d5f06bcd2caafb604">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a0ffe513ad3f755b8de55d06e22666cb6">open62541.c</a>
 </li>
 <li>UA_NodeId_isNull()
-: <a class="el" href="open62541_8c.html#a5d5eb7e9d541654965cdd0e43efadb73">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a1a6d82c6228c07e7c9051a0796f482b2">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a1a6d82c6228c07e7c9051a0796f482b2">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a5d5eb7e9d541654965cdd0e43efadb73">open62541.c</a>
 </li>
 <li>UA_NODEID_NULL
-: <a class="el" href="open62541_8c.html#a49dd04499cc938765661e76ffba50a72">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a3c44491bc9a6be7fd37f27caffdfab6a">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a3c44491bc9a6be7fd37f27caffdfab6a">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a49dd04499cc938765661e76ffba50a72">open62541.c</a>
 </li>
 <li>UA_NodeId_pair
 : <a class="el" href="ua__proxies_8h.html#ac5a289d5cb9227915bba5e3483e6a463">ua_proxies.h</a>
@@ -5024,8 +5045,8 @@ $(function() {
 : <a class="el" href="open62541_8c.html#a491286e792001c46edbc34b3a6e842d6">open62541.c</a>
 </li>
 <li>UA_random_seed()
-: <a class="el" href="open62541_8h.html#a19155a0b01bd2653fea203fbb5d136d6">open62541.h</a>
-, <a class="el" href="open62541_8c.html#a6d625256bae8fe323e15ed49f3797b81">open62541.c</a>
+: <a class="el" href="open62541_8c.html#a6d625256bae8fe323e15ed49f3797b81">open62541.c</a>
+, <a class="el" href="open62541_8h.html#a19155a0b01bd2653fea203fbb5d136d6">open62541.h</a>
 </li>
 <li>UA_RCU_LOCK
 : <a class="el" href="open62541_8c.html#a0b7036725c004fd2d966c57722a63855">open62541.c</a>
@@ -5136,8 +5157,8 @@ $(function() {
 , <a class="el" href="ua__processvariable_8cpp.html#aa8e2622a5ee4bd13a59cb0a2c0e9058a">ua_processvariable.cpp</a>
 </li>
 <li>UA_readNumber()
-: <a class="el" href="open62541_8c.html#a859b8fa1fc282b78dd909f6d3078f223">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a6781f5765e26cff6307d4439750e9492">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a6781f5765e26cff6307d4439750e9492">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a859b8fa1fc282b78dd909f6d3078f223">open62541.c</a>
 </li>
 <li>UA_realloc
 : <a class="el" href="open62541_8h.html#a8c7b0367867cb3f13305dd5913176fd2">open62541.h</a>
@@ -5230,23 +5251,23 @@ $(function() {
 : <a class="el" href="open62541_8c.html#aed94f2e673707091b06570f4727a2cac">open62541.c</a>
 </li>
 <li>UA_Server_addNamespace()
-: <a class="el" href="open62541_8c.html#a3d0a4a3481595f9fe01112e913cae98e">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a50a1d300041cd25e3dff7647bca97bf4">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a50a1d300041cd25e3dff7647bca97bf4">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a3d0a4a3481595f9fe01112e913cae98e">open62541.c</a>
 </li>
 <li>UA_Server_addReference()
 : <a class="el" href="open62541_8c.html#a633497de4b9b94f5f17e9fc087e97ac1">open62541.c</a>
 </li>
 <li>UA_Server_addRepeatedJob()
-: <a class="el" href="open62541_8c.html#a97795e4da4dedc15ebbf1779a1c5f0ff">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a019ffd6c02ad6c513ed14c55deaa755b">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a019ffd6c02ad6c513ed14c55deaa755b">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a97795e4da4dedc15ebbf1779a1c5f0ff">open62541.c</a>
 </li>
 <li>UA_Server_browse()
-: <a class="el" href="open62541_8c.html#a3d54876ea388350f2494b927146722e2">open62541.c</a>
-, <a class="el" href="open62541_8h.html#ac296fba4f572aceff82a13ded21b0fa0">open62541.h</a>
+: <a class="el" href="open62541_8h.html#ac296fba4f572aceff82a13ded21b0fa0">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a3d54876ea388350f2494b927146722e2">open62541.c</a>
 </li>
 <li>UA_Server_browseNext()
-: <a class="el" href="open62541_8h.html#a6a92547d3a02097702ad6743b14e035d">open62541.h</a>
-, <a class="el" href="open62541_8c.html#a1f2e9ff27c90526f52bb70be1ec5fe89">open62541.c</a>
+: <a class="el" href="open62541_8c.html#a1f2e9ff27c90526f52bb70be1ec5fe89">open62541.c</a>
+, <a class="el" href="open62541_8h.html#a6a92547d3a02097702ad6743b14e035d">open62541.h</a>
 </li>
 <li>UA_Server_call()
 : <a class="el" href="open62541_8h.html#a6eb0b98033e8ace6a4ef158040119490">open62541.h</a>
@@ -5258,8 +5279,8 @@ $(function() {
 : <a class="el" href="open62541_8c.html#a20ebfb71982046a99e2b1038fb4058c5">open62541.c</a>
 </li>
 <li>UA_Server_delete()
-: <a class="el" href="open62541_8c.html#af9f93708ee6222bd30942de5219f55fb">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a90155532bd0cb98fc0d297208ee7a4e5">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a90155532bd0cb98fc0d297208ee7a4e5">open62541.h</a>
+, <a class="el" href="open62541_8c.html#af9f93708ee6222bd30942de5219f55fb">open62541.c</a>
 </li>
 <li>UA_Server_deleteAllRepeatedJobs()
 : <a class="el" href="open62541_8c.html#af5d67b0b2c6f65b2bac164f3baa0b724">open62541.c</a>
@@ -5274,39 +5295,39 @@ $(function() {
 : <a class="el" href="open62541_8c.html#adcb69cba1313c965024356a3bac0540d">open62541.c</a>
 </li>
 <li>UA_Server_forEachChildNodeCall()
-: <a class="el" href="open62541_8c.html#a8dc22bb7d0be4c1478c3f558af12d55e">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a14a3a4bebc3c5140554eb237d1be2268">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a14a3a4bebc3c5140554eb237d1be2268">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a8dc22bb7d0be4c1478c3f558af12d55e">open62541.c</a>
 </li>
 <li>UA_Server_new()
-: <a class="el" href="open62541_8c.html#a9e99fcc4bdf99620ce7f89a996b46979">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a3c9d17c06108b677f0bef7faff6cdcff">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a3c9d17c06108b677f0bef7faff6cdcff">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a9e99fcc4bdf99620ce7f89a996b46979">open62541.c</a>
 </li>
 <li>UA_Server_processBinaryMessage()
 : <a class="el" href="open62541_8c.html#a067e55e8e4e07403fcb225667dcf1119">open62541.c</a>
 </li>
 <li>UA_Server_read()
-: <a class="el" href="open62541_8h.html#a9bca15ed6c029fade7350904dcedd127">open62541.h</a>
-, <a class="el" href="open62541_8c.html#a233372236df1faad8a2eb29cb5d2fbfe">open62541.c</a>
+: <a class="el" href="open62541_8c.html#a233372236df1faad8a2eb29cb5d2fbfe">open62541.c</a>
+, <a class="el" href="open62541_8h.html#a9bca15ed6c029fade7350904dcedd127">open62541.h</a>
 </li>
 <li>UA_Server_removeRepeatedJob()
-: <a class="el" href="open62541_8h.html#a88dd6b215e6ad6441385e29151600b17">open62541.h</a>
-, <a class="el" href="open62541_8c.html#addf321adb869b351d0edf5603d818f29">open62541.c</a>
+: <a class="el" href="open62541_8c.html#addf321adb869b351d0edf5603d818f29">open62541.c</a>
+, <a class="el" href="open62541_8h.html#a88dd6b215e6ad6441385e29151600b17">open62541.h</a>
 </li>
 <li>UA_Server_run()
-: <a class="el" href="open62541_8c.html#a4e5956d3f464f2d3319143c01b281504">open62541.c</a>
-, <a class="el" href="open62541_8h.html#ad5d61a7c770cf1a13fea19a1949b6ea1">open62541.h</a>
+: <a class="el" href="open62541_8h.html#ad5d61a7c770cf1a13fea19a1949b6ea1">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a4e5956d3f464f2d3319143c01b281504">open62541.c</a>
 </li>
 <li>UA_Server_run_iterate()
-: <a class="el" href="open62541_8h.html#a15467aaf9dde1156abf1ce8fd4339e9b">open62541.h</a>
-, <a class="el" href="open62541_8c.html#a62fd8109b0c25ba3554cdef16a2bc252">open62541.c</a>
+: <a class="el" href="open62541_8c.html#a62fd8109b0c25ba3554cdef16a2bc252">open62541.c</a>
+, <a class="el" href="open62541_8h.html#a15467aaf9dde1156abf1ce8fd4339e9b">open62541.h</a>
 </li>
 <li>UA_Server_run_shutdown()
-: <a class="el" href="open62541_8h.html#a46b13beed9591c1d2cdb6ce751cb9f3b">open62541.h</a>
-, <a class="el" href="open62541_8c.html#a7a30d86f92ca61213a24d9c43dbae826">open62541.c</a>
+: <a class="el" href="open62541_8c.html#a7a30d86f92ca61213a24d9c43dbae826">open62541.c</a>
+, <a class="el" href="open62541_8h.html#a46b13beed9591c1d2cdb6ce751cb9f3b">open62541.h</a>
 </li>
 <li>UA_Server_run_startup()
-: <a class="el" href="open62541_8h.html#a5ee7d65cb1dc1a4f87b49f5e53ce405d">open62541.h</a>
-, <a class="el" href="open62541_8c.html#a767faf174cf7aa918272dc6f38f4e25f">open62541.c</a>
+: <a class="el" href="open62541_8c.html#a767faf174cf7aa918272dc6f38f4e25f">open62541.c</a>
+, <a class="el" href="open62541_8h.html#a5ee7d65cb1dc1a4f87b49f5e53ce405d">open62541.h</a>
 </li>
 <li>UA_Server_setObjectTypeNode_lifecycleManagement()
 : <a class="el" href="open62541_8c.html#affc61e50dc7ab83230a89a627662ba1d">open62541.c</a>
@@ -5318,12 +5339,12 @@ $(function() {
 : <a class="el" href="open62541_8c.html#a75845c3c0b78b24f4af6d712881c9e6a">open62541.c</a>
 </li>
 <li>UA_Server_translateBrowsePathToNodeIds()
-: <a class="el" href="open62541_8c.html#af6e3bf03ffecc1ff60b17b5a34b1ccd6">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a7ec9567e999357a43348c77feb111821">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a7ec9567e999357a43348c77feb111821">open62541.h</a>
+, <a class="el" href="open62541_8c.html#af6e3bf03ffecc1ff60b17b5a34b1ccd6">open62541.c</a>
 </li>
 <li>UA_Server_write()
-: <a class="el" href="open62541_8c.html#ade8f8308ffe0c613dbcd258c6fee768f">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a473c1cfd61c441df35adb5d2565d9d1d">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a473c1cfd61c441df35adb5d2565d9d1d">open62541.h</a>
+, <a class="el" href="open62541_8c.html#ade8f8308ffe0c613dbcd258c6fee768f">open62541.c</a>
 </li>
 <li>UA_ServerCallback
 : <a class="el" href="open62541_8h.html#a68b1f0efce215c6832edde8745bb5215">open62541.h</a>
@@ -5401,10 +5422,11 @@ $(function() {
 : <a class="el" href="open62541_8c.html#ac708f58e2aa9ccb2e8ada3fcc796acfe">open62541.c</a>
 </li>
 <li>UA_STATIC_ASSERT()
-: <a class="el" href="open62541_8c.html#afb9295af3794a57302a37ec04092eabc">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a639b24ec0833afa9ce11cff30f6a03e6">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a7559830ddd00dac160e38e502d93879c">open62541.h</a>
 , <a class="el" href="open62541_8c.html#a79c31f619e073d716a181defc120a038">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a7559830ddd00dac160e38e502d93879c">open62541.h</a>
+, <a class="el" href="open62541_8h.html#a5d1a0a45f41b300caaf16596ee7d65d4">open62541.h</a>
+, <a class="el" href="open62541_8c.html#afb9295af3794a57302a37ec04092eabc">open62541.c</a>
+, <a class="el" href="open62541_8h.html#a639b24ec0833afa9ce11cff30f6a03e6">open62541.h</a>
 </li>
 <li>UA_StatusCode
 : <a class="el" href="open62541_8h.html#a8beaefc7873465d6baa54a21634b6ea7">open62541.h</a>
@@ -5998,8 +6020,8 @@ $(function() {
 : <a class="el" href="open62541_8h.html#afe1b898ca9223309aeb27d1adc392551">open62541.h</a>
 </li>
 <li>UA_StatusCode_description()
-: <a class="el" href="open62541_8h.html#ab19fea778b80338749086b8024c8d1c5">open62541.h</a>
-, <a class="el" href="open62541_8c.html#a2addb608fb2ba69c16a97fac8c9958b4">open62541.c</a>
+: <a class="el" href="open62541_8c.html#a2addb608fb2ba69c16a97fac8c9958b4">open62541.c</a>
+, <a class="el" href="open62541_8h.html#ab19fea778b80338749086b8024c8d1c5">open62541.h</a>
 </li>
 <li>UA_STATUSCODE_GOOD
 : <a class="el" href="open62541_8h.html#a3c68d30bc6f32228aa43be75fdc9d5aa">open62541.h</a>
@@ -6101,16 +6123,16 @@ $(function() {
 : <a class="el" href="open62541_8h.html#ac6f19951777419d520d469d5130acae4">open62541.h</a>
 </li>
 <li>UA_String_equal()
-: <a class="el" href="open62541_8c.html#a1eae0133787497837706d72ad647b39d">open62541.c</a>
-, <a class="el" href="open62541_8h.html#ac445c3078e45afd2780ddc287dc77597">open62541.h</a>
+: <a class="el" href="open62541_8h.html#ac445c3078e45afd2780ddc287dc77597">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a1eae0133787497837706d72ad647b39d">open62541.c</a>
 </li>
 <li>UA_String_fromChars()
-: <a class="el" href="open62541_8h.html#a109892530ab3b7692b4111e345ae2b98">open62541.h</a>
-, <a class="el" href="open62541_8c.html#a1115e9ae48fa78d37e2fd9b081c24059">open62541.c</a>
+: <a class="el" href="open62541_8c.html#a1115e9ae48fa78d37e2fd9b081c24059">open62541.c</a>
+, <a class="el" href="open62541_8h.html#a109892530ab3b7692b4111e345ae2b98">open62541.h</a>
 </li>
 <li>UA_STRING_NULL
-: <a class="el" href="open62541_8c.html#ae3a55c18b56e8eec5d806a63e0c27d2b">open62541.c</a>
-, <a class="el" href="open62541_8h.html#add6877cdf12368c808b31e46e2c01df7">open62541.h</a>
+: <a class="el" href="open62541_8h.html#add6877cdf12368c808b31e46e2c01df7">open62541.h</a>
+, <a class="el" href="open62541_8c.html#ae3a55c18b56e8eec5d806a63e0c27d2b">open62541.c</a>
 </li>
 <li>UA_STRING_STATIC
 : <a class="el" href="open62541_8c.html#a73f75500dece931c19d80bc014f0c529">open62541.c</a>
@@ -6221,8 +6243,8 @@ $(function() {
 : <a class="el" href="open62541_8h.html#a7e76336d5d660d0224183d32b0ca559a">open62541.h</a>
 </li>
 <li>UA_TYPES
-: <a class="el" href="open62541_8h.html#ab65eb3ebfab7ad47e488a614a6749e5e">open62541.h</a>
-, <a class="el" href="open62541_8c.html#aeb33a1ce9edba651f4aabdec2ed271ce">open62541.c</a>
+: <a class="el" href="open62541_8c.html#aeb33a1ce9edba651f4aabdec2ed271ce">open62541.c</a>
+, <a class="el" href="open62541_8h.html#ab65eb3ebfab7ad47e488a614a6749e5e">open62541.h</a>
 </li>
 <li>UA_TYPES_ACTIVATESESSIONREQUEST
 : <a class="el" href="open62541_8h.html#a59d28b47d7e9d23744047c1f4b5e9615">open62541.h</a>
@@ -6735,8 +6757,8 @@ $(function() {
 : <a class="el" href="open62541_8h.html#a5162643183222d2614935d0d45b54d14">open62541.h</a>
 </li>
 <li>UA_UInt32_random()
-: <a class="el" href="open62541_8c.html#a38c9e844e489221eab179bef05c1b18d">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a48452e8be4dba0fa524d74cf38bda3e6">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a48452e8be4dba0fa524d74cf38bda3e6">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a38c9e844e489221eab179bef05c1b18d">open62541.c</a>
 </li>
 <li>UA_UInt64
 : <a class="el" href="open62541_8h.html#ad0d8e52a357b7fbe50a0b93a2b688b51">open62541.h</a>
@@ -6778,8 +6800,8 @@ $(function() {
 : <a class="el" href="open62541_8c.html#afbc37051f9c25a0b6264f9cab402d60aa741dd1a2a9094b0282cc9b4b53f36ed7">open62541.c</a>
 </li>
 <li>UA_Variant_copyRange()
-: <a class="el" href="open62541_8h.html#a0c95114e6226945712fc4d535ff8a0e3">open62541.h</a>
-, <a class="el" href="open62541_8c.html#afab08742473e57ff7b61f07b4fec099d">open62541.c</a>
+: <a class="el" href="open62541_8c.html#afab08742473e57ff7b61f07b4fec099d">open62541.c</a>
+, <a class="el" href="open62541_8h.html#a0c95114e6226945712fc4d535ff8a0e3">open62541.h</a>
 </li>
 <li>UA_VARIANT_DATA
 : <a class="el" href="open62541_8h.html#aa1478e00bedf1421f5f5462e8263c522a2b3eb8fafea49ba7e9b24ee4eaced395">open62541.h</a>
@@ -6800,28 +6822,28 @@ $(function() {
 : <a class="el" href="open62541_8c.html#af7e44ad86cdfa3d8caf72db5bcd9d981aafea49b265baa992416a83852c7de053">open62541.c</a>
 </li>
 <li>UA_Variant_setArray()
-: <a class="el" href="open62541_8c.html#ac1876c750c8ebc0f9e9736e5289b190a">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a7c29c839833f61b4f6ae9b2dfb0a1cb6">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a7c29c839833f61b4f6ae9b2dfb0a1cb6">open62541.h</a>
+, <a class="el" href="open62541_8c.html#ac1876c750c8ebc0f9e9736e5289b190a">open62541.c</a>
 </li>
 <li>UA_Variant_setArrayCopy()
-: <a class="el" href="open62541_8c.html#aedcb0807aecd86b4aaed8bb993123b0f">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a485898a480129fd6e1c562e18afc84ca">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a485898a480129fd6e1c562e18afc84ca">open62541.h</a>
+, <a class="el" href="open62541_8c.html#aedcb0807aecd86b4aaed8bb993123b0f">open62541.c</a>
 </li>
 <li>UA_Variant_setRange()
-: <a class="el" href="open62541_8h.html#a65edede9a3f41cdb0ab94ce341c8f561">open62541.h</a>
-, <a class="el" href="open62541_8c.html#a10f8ca74e59e64d88d3382c10fb1db09">open62541.c</a>
+: <a class="el" href="open62541_8c.html#a10f8ca74e59e64d88d3382c10fb1db09">open62541.c</a>
+, <a class="el" href="open62541_8h.html#a65edede9a3f41cdb0ab94ce341c8f561">open62541.h</a>
 </li>
 <li>UA_Variant_setRangeCopy()
-: <a class="el" href="open62541_8h.html#afd4811df358e2f7a47996fe85f6cc0e0">open62541.h</a>
-, <a class="el" href="open62541_8c.html#a3a106e737062fd5af7ffd34d0fadcdd8">open62541.c</a>
+: <a class="el" href="open62541_8c.html#a3a106e737062fd5af7ffd34d0fadcdd8">open62541.c</a>
+, <a class="el" href="open62541_8h.html#afd4811df358e2f7a47996fe85f6cc0e0">open62541.h</a>
 </li>
 <li>UA_Variant_setScalar()
-: <a class="el" href="open62541_8c.html#a4489366e22d1500c4b0e4c460eaf434a">open62541.c</a>
-, <a class="el" href="open62541_8h.html#a075bd6c1d01aeb7460a588c68700661a">open62541.h</a>
+: <a class="el" href="open62541_8h.html#a075bd6c1d01aeb7460a588c68700661a">open62541.h</a>
+, <a class="el" href="open62541_8c.html#a4489366e22d1500c4b0e4c460eaf434a">open62541.c</a>
 </li>
 <li>UA_Variant_setScalarCopy()
-: <a class="el" href="open62541_8c.html#ab40084675fc8efaa4af30a5c6a1399e4">open62541.c</a>
-, <a class="el" href="open62541_8h.html#ac960630d37fc7ee91d3ad57623976d1a">open62541.h</a>
+: <a class="el" href="open62541_8h.html#ac960630d37fc7ee91d3ad57623976d1a">open62541.h</a>
+, <a class="el" href="open62541_8c.html#ab40084675fc8efaa4af30a5c6a1399e4">open62541.c</a>
 </li>
 <li>UA_VariantStorageType
 : <a class="el" href="open62541_8h.html#aa1478e00bedf1421f5f5462e8263c522">open62541.h</a>
@@ -7011,11 +7033,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 21 2019 09:26:27 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Mar 5 2019 05:54:34 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>
