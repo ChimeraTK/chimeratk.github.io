@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DeviceAccess_Matlab
    &#160;<span id="projectnumber">master</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('globals_vars.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,23 +81,163 @@ $(function() {
 </div>
 
 <div class="contents">
-&#160;<ul>
+&#160;
+
+<h3><a id="index__"></a>- _ -</h3><ul>
+<li>__pad0__
+: <a class="el" href="passcode_8m.html#ab6f3c269fc46c9c1c0f81b3431240138">passcode.m</a>
+</li>
+</ul>
+
+
+<h3><a id="index_a"></a>- a -</h3><ul>
+<li>Author
+: <a class="el" href="cd2si_8m.html#a10dfda689024d61bb5d6630ba2204461">cd2si.m</a>
+, <a class="el" href="cd2ui_8m.html#a10dfda689024d61bb5d6630ba2204461">cd2ui.m</a>
+, <a class="el" href="csi2d_8m.html#a2436564f08097006a77ce9c15a47623f">csi2d.m</a>
+, <a class="el" href="cui2d_8m.html#a2436564f08097006a77ce9c15a47623f">cui2d.m</a>
+</li>
+</ul>
+
+
+<h3><a id="index_c"></a>- c -</h3><ul>
+<li>charset
+: <a class="el" href="passcode_8m.html#a9dbc91b695dd96ed7408d8a36a613614">passcode.m</a>
+</li>
+</ul>
+
+
+<h3><a id="index_d"></a>- d -</h3><ul>
+<li>d
+: <a class="el" href="cd2si_8m.html#a1aabac6d068eef6a7bad3fdf50a05cc8">cd2si.m</a>
+, <a class="el" href="cd2ui_8m.html#a1aabac6d068eef6a7bad3fdf50a05cc8">cd2ui.m</a>
+, <a class="el" href="csi2d_8m.html#a1aabac6d068eef6a7bad3fdf50a05cc8">csi2d.m</a>
+, <a class="el" href="cui2d_8m.html#a1aabac6d068eef6a7bad3fdf50a05cc8">cui2d.m</a>
+</li>
+<li>data
+: <a class="el" href="passcode_8m.html#a511ae0b1c13f95e5f08f1a0dd3da3d93">passcode.m</a>
+</li>
+</ul>
+
+
+<h3><a id="index_f"></a>- f -</h3><ul>
+<li>function
+: <a class="el" href="cd2si_8m.html#a5e5a8a8edaa9b583a5aafd8abb11cb9f">cd2si.m</a>
+, <a class="el" href="cd2ui_8m.html#a716644160646fbec7b51a1009580ce41">cd2ui.m</a>
+, <a class="el" href="csi2d_8m.html#a5e96b308bf908da4daf944807b909cb1">csi2d.m</a>
+, <a class="el" href="cui2d_8m.html#a5e96b308bf908da4daf944807b909cb1">cui2d.m</a>
+</li>
+</ul>
+
+
+<h3><a id="index_h"></a>- h -</h3><ul>
+<li>half
+: <a class="el" href="cui2d_8m.html#ae04954bf174dbb783b950eca2db7c15b">cui2d.m</a>
+</li>
+<li>hedit
+: <a class="el" href="passcode_8m.html#a8cf867eeb44aa9489327cc6e11761b26">passcode.m</a>
+</li>
+<li>hfig
+: <a class="el" href="passcode_8m.html#ac3ba245373340d52a2c58c357d77b6aa">passcode.m</a>
+</li>
+<li>hpass
+: <a class="el" href="passcode_8m.html#ad4bd50fe17d6e6c908fc012484559f3f">passcode.m</a>
+</li>
+<li>hwarn
+: <a class="el" href="passcode_8m.html#abdff2c835cd6b398474c7a4a538478b0">passcode.m</a>
+</li>
+</ul>
+
+
+<h3><a id="index_i"></a>- i -</h3><ul>
+<li>i
+: <a class="el" href="csi2d_8m.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">csi2d.m</a>
+, <a class="el" href="cui2d_8m.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">cui2d.m</a>
+, <a class="el" href="setup_8m.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">setup.m</a>
+</li>
 <li>isInit
 : <a class="el" href="mtca4u__mex_8cpp.html#a7a07acedc029e72784867cbe9ac10543">mtca4u_mex.cpp</a>
 </li>
+</ul>
+
+
+<h3><a id="index_m"></a>- m -</h3><ul>
+<li>Methods
+: <a class="el" href="mtca4u__interface_8m.html#a7bce76afc148b34015bee0728f262494">mtca4u_interface.m</a>
+</li>
+<li>min
+: <a class="el" href="cd2si_8m.html#a4735a0c4d1b11f62ea44115d54a93087">cd2si.m</a>
+, <a class="el" href="cd2ui_8m.html#a4735a0c4d1b11f62ea44115d54a93087">cd2ui.m</a>
+, <a class="el" href="csi2d_8m.html#a4735a0c4d1b11f62ea44115d54a93087">csi2d.m</a>
+</li>
+</ul>
+
+
+<h3><a id="index_o"></a>- o -</h3><ul>
 <li>openDevicesVector
 : <a class="el" href="mtca4u__mex_8cpp.html#a698d4812c9a9b68d65d6713faf21dcb7">mtca4u_mex.cpp</a>
+</li>
+</ul>
+
+
+<h3><a id="index_p"></a>- p -</h3><ul>
+<li>pass
+: <a class="el" href="passcode_8m.html#a61dedc2b7d10d329ee3de8df9d5c6827">passcode.m</a>
+</li>
+</ul>
+
+
+<h3><a id="index_r"></a>- r -</h3><ul>
+<li>revision
+: <a class="el" href="cd2si_8m.html#a3d20454dd9e73d94058a0e78faf1ab0d">cd2si.m</a>
+, <a class="el" href="cd2ui_8m.html#a3d20454dd9e73d94058a0e78faf1ab0d">cd2ui.m</a>
+, <a class="el" href="csi2d_8m.html#a3d20454dd9e73d94058a0e78faf1ab0d">csi2d.m</a>
+, <a class="el" href="cui2d_8m.html#a3d20454dd9e73d94058a0e78faf1ab0d">cui2d.m</a>
+</li>
+</ul>
+
+
+<h3><a id="index_s"></a>- s -</h3><ul>
+<li>s
+: <a class="el" href="mtca4u__interface_8m.html#a3691308f2a4c2f6983f2880d32e29c84">mtca4u_interface.m</a>
+</li>
+<li>si
+: <a class="el" href="cd2si_8m.html#a8054da645a387dbfb06654d69f0d0201">cd2si.m</a>
+</li>
+<li>String
+: <a class="el" href="passcode_8m.html#af9b362fcd2206b2731dfd11f6e02e3e0">passcode.m</a>
+</li>
+</ul>
+
+
+<h3><a id="index_u"></a>- u -</h3><ul>
+<li>ui
+: <a class="el" href="cd2ui_8m.html#ac492f8de2d00b6c4282e766bfadaf2e7">cd2ui.m</a>
+, <a class="el" href="cui2d_8m.html#ac492f8de2d00b6c4282e766bfadaf2e7">cui2d.m</a>
+</li>
+</ul>
+
+
+<h3><a id="index_v"></a>- v -</h3><ul>
+<li>varargout
+: <a class="el" href="mtca4u__interface_8m.html#a64af3e25200c59fba64c6e2a38fb4456">mtca4u_interface.m</a>
 </li>
 <li>vectorOfCommands
 : <a class="el" href="mtca4u__mex_8cpp.html#a0e1d37cba4c6a42e3c7efad5ac2dcd44">mtca4u_mex.cpp</a>
 </li>
+<li>Visible
+: <a class="el" href="passcode_8m.html#a68e6c0e5086f053f527c8b234312362e">passcode.m</a>
+</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 23 2019 05:53:48 for DeviceAccess_Matlab by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Mar 5 2019 05:54:19 for DeviceAccess_Matlab by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

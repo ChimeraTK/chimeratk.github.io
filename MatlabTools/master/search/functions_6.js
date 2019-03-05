@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['setdmapfilepath',['setDMapFilePath',['../mtca4u__mex_8cpp.html#aebad898199b0ec443d755c6f79d9aa79',1,'setDMapFilePath(unsigned int, mxArray **, unsigned int, const mxArray **):&#160;mtca4u_mex.cpp'],['../mtca4u__mex_8cpp.html#af5fb116ed78345c19d761386c0105479',1,'setDMapFilePath(unsigned int, mxArray **, unsigned int nrhs, const mxArray *prhs[]):&#160;mtca4u_mex.cpp']]]
+  ['print_5fdevice_5finfo',['print_device_info',['../mtca4u__interface_8m.html#ae97cd90fb38566b93136eb14033ce6f3',1,'mtca4u_interface.m']]],
+  ['print_5finfo',['print_info',['../mtca4u__interface_8m.html#a7b82949cb87b031ec848514e02a8016c',1,'mtca4u_interface.m']]],
+  ['print_5fregister_5finfo',['print_register_info',['../mtca4u__interface_8m.html#ab810d180741d0124f94c79325939d85f',1,'mtca4u_interface.m']]],
+  ['printhelp',['PrintHelp',['../mtca4u__mex_8cpp.html#a858603378b15dfaf06dccba5dc032238',1,'mtca4u_mex.cpp']]]
 ];

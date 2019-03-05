@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['writeregister',['writeRegister',['../mtca4u__mex_8cpp.html#afbd8a7da818a93b059e7f91fa479cf88',1,'writeRegister(unsigned int, mxArray **, unsigned int, const mxArray **):&#160;mtca4u_mex.cpp'],['../mtca4u__mex_8cpp.html#a002911292a5bc8266320158abd26f1a2',1,'writeRegister(unsigned int, mxArray **, unsigned int nrhs, const mxArray *prhs[]):&#160;mtca4u_mex.cpp']]],
-  ['writetodevice',['writeToDevice',['../mtca4u__mex_8cpp.html#a5f404a52d5d0895220c01790573bd4fe',1,'mtca4u_mex.cpp']]]
+  ['read_5fdma',['read_dma',['../mtca4u__interface_8m.html#a8306622caaea75faf19c5614541834ae',1,'mtca4u_interface.m']]],
+  ['read_5fseq',['read_seq',['../mtca4u__interface_8m.html#a3738d3f9e6e194a13b6d670300708760',1,'mtca4u_interface.m']]],
+  ['readdmaraw',['readDmaRaw',['../mtca4u__mex_8cpp.html#a31bbb0c88a6f2c38473fb2b592e731b9',1,'readDmaRaw(unsigned int, mxArray **, unsigned int, const mxArray **):&#160;mtca4u_mex.cpp'],['../mtca4u__mex_8cpp.html#ac8d773c9713cd369d071b34f7147be9b',1,'readDmaRaw(unsigned int nlhs, mxArray *plhs[], unsigned int nrhs, const mxArray *prhs[]):&#160;mtca4u_mex.cpp']]],
+  ['readregister',['readRegister',['../mtca4u__mex_8cpp.html#a891ecc5c0842dbd1dbfa7bf8359f8abf',1,'readRegister(unsigned int, mxArray **, unsigned int, const mxArray **):&#160;mtca4u_mex.cpp'],['../mtca4u__mex_8cpp.html#a1c72997a69996c4e8f173a6d2b805134',1,'readRegister(unsigned int nlhs, mxArray *plhs[], unsigned int nrhs, const mxArray *prhs[]):&#160;mtca4u_mex.cpp']]],
+  ['readsequence',['readSequence',['../mtca4u__mex_8cpp.html#a75e4008b17a035c01b28287af689542a',1,'readSequence(unsigned int, mxArray **, unsigned int, const mxArray **):&#160;mtca4u_mex.cpp'],['../mtca4u__mex_8cpp.html#a20910177ac8ff023725ce3d6c6c9a742',1,'readSequence(unsigned int nlhs, mxArray *plhs[], unsigned int nrhs, const mxArray *prhs[]):&#160;mtca4u_mex.cpp']]]
 ];

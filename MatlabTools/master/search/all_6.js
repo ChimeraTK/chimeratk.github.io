@@ -1,4 +1,13 @@
 var searchData=
 [
-  ['name',['Name',['../struct_command.html#ae9354075c4c3ff1367d9f0892ff213c9',1,'Command']]]
+  ['get',['get',['../passcode_8m.html#a7d6327edaf58c07ee002e515a488c1e0',1,'passcode.m']]],
+  ['getdevice',['getDevice',['../mtca4u__mex_8cpp.html#a624d73e3c80deea1cfa033c2043cedc7',1,'mtca4u_mex.cpp']]],
+  ['getdeviceinfo',['getDeviceInfo',['../mtca4u__mex_8cpp.html#aa10d9fcb73e27dff8a7791a799ef70bf',1,'getDeviceInfo(unsigned int, mxArray **, unsigned int, const mxArray **):&#160;mtca4u_mex.cpp'],['../mtca4u__mex_8cpp.html#a25b3b5d6ad5e70991edc9528cc1a3ef7',1,'getDeviceInfo(unsigned int nlhs, mxArray **plhs, unsigned int nrhs, const mxArray *prhs[]):&#160;mtca4u_mex.cpp']]],
+  ['getdmapfilepath',['getDMapFilePath',['../mtca4u__mex_8cpp.html#a1c3c8a674059a8ddff8a5cdc772a4d11',1,'getDMapFilePath(unsigned int, mxArray **, unsigned int, const mxArray **):&#160;mtca4u_mex.cpp'],['../mtca4u__mex_8cpp.html#a0a977bfba16f240e18eb6d7eb4b8d3cc',1,'getDMapFilePath(unsigned int, mxArray *plhs[], unsigned int, const mxArray **):&#160;mtca4u_mex.cpp']]],
+  ['getfundamentaltypestring',['getFundamentalTypeString',['../mtca4u__mex_8cpp.html#a2edda3f5a975d9e3d1a00b7409aaf3f8',1,'mtca4u_mex.cpp']]],
+  ['getinfo',['getInfo',['../mtca4u__mex_8cpp.html#a51a0463e8e78842851c784617745a24a',1,'getInfo(unsigned int, mxArray **, unsigned int, const mxArray **):&#160;mtca4u_mex.cpp'],['../mtca4u__mex_8cpp.html#a75ae46bfaae7b69ccd96963249d2711c',1,'getInfo(unsigned int nlhs, mxArray *plhs[], unsigned int nrhs, const mxArray **):&#160;mtca4u_mex.cpp']]],
+  ['getordinalnumerstring',['getOrdinalNumerString',['../mtca4u__mex_8cpp.html#aabea6eed6861530fce3e482de7408267',1,'mtca4u_mex.cpp']]],
+  ['getregisterinfo',['getRegisterInfo',['../mtca4u__mex_8cpp.html#a7f386cde593b4abc5da77f73e1b5a0c5',1,'getRegisterInfo(unsigned int, mxArray **, unsigned int, const mxArray **):&#160;mtca4u_mex.cpp'],['../mtca4u__mex_8cpp.html#a7a7649a83b98c617aa9f71af712b3523',1,'getRegisterInfo(unsigned int nlhs, mxArray *plhs[], unsigned int nrhs, const mxArray *prhs[]):&#160;mtca4u_mex.cpp']]],
+  ['getregistersize',['getRegisterSize',['../mtca4u__mex_8cpp.html#a65814bb1b392bbf433793d15c7a7362e',1,'getRegisterSize(unsigned int, mxArray **, unsigned int, const mxArray **):&#160;mtca4u_mex.cpp'],['../mtca4u__mex_8cpp.html#a7c582dae8caef6d88a7cb92903adf9c9',1,'getRegisterSize(unsigned int nlhs, mxArray *plhs[], unsigned int nrhs, const mxArray *prhs[]):&#160;mtca4u_mex.cpp']]],
+  ['getversion',['getVersion',['../mtca4u__mex_8cpp.html#a9c3a9ae9c67ed4a448f595942fd51956',1,'getVersion(unsigned int, mxArray **, unsigned int, const mxArray **):&#160;mtca4u_mex.cpp'],['../mtca4u__mex_8cpp.html#a16fa35bed04104722e59d909b577c872',1,'getVersion(unsigned int, mxArray *plhs[], unsigned int, const mxArray **):&#160;mtca4u_mex.cpp']]]
 ];
