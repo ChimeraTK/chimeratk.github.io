@@ -4,10 +4,6 @@ var hierarchy =
     [ "DeviceBackendImpl", null, [
       [ "ChimeraTK::DoocsBackend", "class_chimera_t_k_1_1_doocs_backend.html", null ]
     ] ],
-    [ "DoocsLauncher", "struct_doocs_launcher.html", null ],
-    [ "EqFct", null, [
-      [ "eq_dummy", "classeq__dummy.html", null ]
-    ] ],
     [ "NDRegisterAccessor", null, [
       [ "ChimeraTK::DoocsBackendRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html", [
         [ "ChimeraTK::DoocsBackendFloatRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html", null ],
