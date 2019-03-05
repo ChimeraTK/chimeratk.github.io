@@ -1,6 +1,8 @@
 var searchData=
 [
   ['id',['id',['../struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html#a0e79158225468e0e1f8f795fc887df9e',1,'ChimeraTK::PersistentDataStorage::registerVariable_oldTypeRemover']]],
+  ['independentcontrolcore',['IndependentControlCore',['../class_independent_control_core.html',1,'IndependentControlCore'],['../class_independent_control_core.html#a102bf236252ce7b58d18cd188e72db8d',1,'IndependentControlCore::IndependentControlCore()']]],
+  ['independentcontrolcore_2eh',['IndependentControlCore.h',['../_independent_control_core_8h.html',1,'']]],
   ['initialise',['initialise',['../class_chimera_t_k_1_1_application_base.html#a060c36044735bb3b479940fe9f644a5b',1,'ChimeraTK::ApplicationBase']]],
   ['instance',['instance',['../class_chimera_t_k_1_1_application_base.html#a687c18c37f236fcb1bf73def3f009cea',1,'ChimeraTK::ApplicationBase']]],
   ['instance_5fmutex',['instance_mutex',['../class_chimera_t_k_1_1_application_base.html#aad484a1722c03b9b270c95a649276177',1,'ChimeraTK::ApplicationBase']]],

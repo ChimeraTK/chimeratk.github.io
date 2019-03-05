@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter
    &#160;<span id="projectnumber">master</span>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_chimera_t_k_1_1_persistent_data_storage.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html">PersistentDataStorage</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -80,6 +97,14 @@ $(function() {
  <a href="class_chimera_t_k_1_1_persistent_data_storage.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for ChimeraTK::PersistentDataStorage:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_persistent_data_storage__coll__graph.svg" width="100%" height="470"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -160,7 +185,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Persistent data storage for process variables. </p>
 <p>The <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html" title="Persistent data storage for process variables. ">PersistentDataStorage</a> will create a file in the current working directory based on the provided application name ("&lt;applicationName&gt;.persist"). This file will be an XML file containing all values of the registered variables. The file is written when the <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html" title="Persistent data storage for process variables. ">PersistentDataStorage</a> is destroyed and read when it is constructed. After reading the file, all variables will be updated with the current values taken from the file. This will be seen as a value received by the application just like any other update.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>TODO list:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>TODO list:<ul>
 <li>thread safety (only an issue when having multiple ControlSystemPVManagers)</li>
 <li>automatic periodic commits</li>
 <li>manual commits triggered by the application (with support for other implementations, e.g. if the persistency is already provided by the control system middleware) </li>
@@ -217,6 +242,14 @@ template&lt;typename DataType &gt; </div>
 <p>Constructor: Open and parse the storage file. </p>
 
 <p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00019">19</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_persistent_data_storage_a574aaa0d282ce6c8285ad30d43d06b4a_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -238,6 +271,14 @@ template&lt;typename DataType &gt; </div>
 <p>Destructor: Store variables to the file. </p>
 
 <p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00029">29</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_persistent_data_storage_acc1b9e7b25f2d209e1b15e889af01fb8_cgraph.svg" width="495" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -308,9 +349,17 @@ template&lt;typename DataType &gt; </div>
 </div><div class="memdoc">
 
 <p>Read the file containing the persistent data. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>TODO check if the application name is correct? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>TODO check if the application name is correct? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00133">133</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_persistent_data_storage_ae29c614248cc8509083f157058e9fd19_icgraph.svg" width="484" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -477,9 +526,25 @@ template&lt;typename DataType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>FIXME make the variable access proper for a multi-threaded environment!!! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>FIXME make the variable access proper for a multi-threaded environment!!! </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00037">37</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_persistent_data_storage_a102ac2b8bc54568ef24da361e3426c22_cgraph.svg" width="475" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_persistent_data_storage_a102ac2b8bc54568ef24da361e3426c22_icgraph.svg" width="503" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -507,9 +572,17 @@ template&lt;typename DataType &gt; </div>
 </div><div class="memdoc">
 
 <p>Write out the file containing the persistent data. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>TODO what todo here? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>TODO what todo here? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00051">51</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_persistent_data_storage_ac5ff86636442f6f856bf41813ecf680d_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -702,11 +775,15 @@ template&lt;typename DataType &gt; </div>
 <li>src/<a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 2 2019 05:53:16 for ChimeraTK-ControlSystemAdapter by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html">PersistentDataStorage</a></li>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:39 for ChimeraTK-ControlSystemAdapter by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>
