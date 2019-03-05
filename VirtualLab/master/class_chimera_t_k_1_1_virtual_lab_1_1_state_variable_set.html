@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mtca4u-VirtualLab
    &#160;<span id="projectnumber">master</span>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_virtual_lab.html">VirtualLab</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html">StateVariableSet</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -78,15 +95,22 @@ $(function() {
  <a href="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for ChimeraTK::VirtualLab::StateVariableSet&lt; STATE &gt;:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.png" usemap="#ChimeraTK::VirtualLab::StateVariableSet_3C_20STATE_20_3E_map" alt=""/>
-  <map id="ChimeraTK::VirtualLab::StateVariableSet_3C_20STATE_20_3E_map" name="ChimeraTK::VirtualLab::StateVariableSet_3C_20STATE_20_3E_map">
-<area href="classmtca4u_1_1_virtual_lab_1_1_state_variable_set.html" alt="mtca4u::VirtualLab::StateVariableSet&lt; STATE &gt;" shape="rect" coords="0,56,301,80"/>
-</map>
- </div></div>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ChimeraTK::VirtualLab::StateVariableSet&lt; STATE &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set__inherit__graph.svg" width="556" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for ChimeraTK::VirtualLab::StateVariableSet&lt; STATE &gt;:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set__coll__graph.svg" width="272" height="335"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -279,6 +303,14 @@ template&lt;class STATE&gt; </div>
 <p>default interpolate function to throw an exception </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00351">351</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_a397167e55bd8aad36a31ee350e69dabf_icgraph.svg" width="448" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -324,6 +356,14 @@ template&lt;class STATE&gt; </div>
 <p>Note: No check is performed if the gap to the previous state is larger than the maximum gap! </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00220">220</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_ad024fb82ac1301ec785771321c8a3297_icgraph.svg" width="466" height="199"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -386,6 +426,14 @@ template&lt;class STATE&gt; </div>
 <p>Obtain the callback function previously set with <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html#a395b76c9db60370ffad6fc91493c83e5" title="Set callback function which will compute a new state for a given time. ">setComputeFunction()</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00063">63</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_a9b7d2e63eabc2dfc943367bca41a5d74_icgraph.svg" width="464" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -419,6 +467,14 @@ template&lt;class STATE&gt; </div>
 <p>Guarantee: When this function is called inside the compute function, the returned state will be in the past and not older than the gap configured with <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html#aa9335dda95a59a09069f979aac9cf576" title="Set maximum time gap. ">setMaximumGap()</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00199">199</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_ad922888b986418d45205273e13c1fe99_icgraph.svg" width="484" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -451,6 +507,14 @@ template&lt;class STATE&gt; </div>
 <p>See <a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html#ad922888b986418d45205273e13c1fe99" title="Obtain the latest computed state. ">getLatestState()</a> for further comments. </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00204">204</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_af51c224ae6ae104891156ae36e6c5c6e_icgraph.svg" width="515" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -494,6 +558,14 @@ template&lt;class STATE&gt; </div>
 <p>time must be &gt;= 0. The optional second argument forceNoInterpolation allows to disable a potentially enabled interpolation and thus force a full recomputation of the state. This is mainly used inside the interpolation code to make sure there are no recursion problems, but it could be helpful in other contexts as well. </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00141">141</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_a802d2f5adc315bde0ceea27119933298_icgraph.svg" width="458" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -527,6 +599,14 @@ template&lt;class STATE&gt; </div>
 <p>Helper for getValue() </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00274">274</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_a513d8a2f3a754d82bb614219b926c356_icgraph.svg" width="459" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -569,6 +649,14 @@ template&lt;class STATE&gt; </div>
 <p>obtain a new state via interpolation, if enabled, or via callback otherwise </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00254">254</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_a186a85e345c50ad6c3c6d894a591605d_icgraph.svg" width="459" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -603,6 +691,14 @@ template&lt;class STATE&gt; </div>
 <p>It is mandatory to set this function. </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00059">59</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_a395b76c9db60370ffad6fc91493c83e5_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -636,6 +732,14 @@ template&lt;class STATE&gt; </div>
 <p>No states will be fully computed by the model closer together than the maximum gap time. Instead requests for these times will be interpolated. Note that this usually will lead to requests to other model components being generated into the "future" (from the current request), since values are needed on both sides for an interpolation (in contrast to an extrapolation, which might be invalid). </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00093">93</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_a94941fc42b915e247f1d98e380108c36_icgraph.svg" width="539" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -670,6 +774,14 @@ template&lt;class STATE&gt; </div>
 <p>The hugeGap must be larger than maxGap. If not set, the feature is disabled and only maxGap is used to fill large steps. </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00084">84</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_a425248af2ea8485cc054a8144073bada_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -742,6 +854,14 @@ template&lt;class STATE&gt; </div>
 </ul>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00108">108</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_a4dbb0d27cfea28d851a8af24b0505393_icgraph.svg" width="510" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -775,6 +895,14 @@ template&lt;class STATE&gt; </div>
 <p>If the history length is not set, no history is kept and only the latest state is retained. The history length must be larger then the validity period to have an effect and should normally be larger then the maximum gap. </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00124">124</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_ac924429bf4fe313037f22272fdfda00f_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -809,6 +937,14 @@ template&lt;class STATE&gt; </div>
 <p>If the gap is not set, intermediate states are never computed. The maximum gap must be larger than the validity period to have an effect. </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00072">72</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_aa9335dda95a59a09069f979aac9cf576_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -843,6 +979,14 @@ template&lt;class STATE&gt; </div>
 <p>Setting the validity period is optional, it will default to 1 (i.e. no effect). The period must be &gt; 0. </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00133">133</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_abb48f357ea74c1826a09e49fb7c021c7_icgraph.svg" width="100%" height="400"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -876,6 +1020,14 @@ template&lt;class STATE&gt; </div>
 <p>Has no effect, if time &gt;= currentTime/ </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00231">231</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_ab2baed435f9ec3dd43909e2ae2229120_icgraph.svg" width="456" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -907,6 +1059,14 @@ template&lt;class STATE&gt; </div>
 <p>Truncate old history of the buffer: remove all entries older than currentTime - historyLength. </p>
 
 <p class="definition">Definition at line <a class="el" href="_state_variable_set_8h_source.html#l00244">244</a> of file <a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set_a2f543d56e9e296e815b0ede8bedec7d8_icgraph.svg" width="483" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -1165,11 +1325,15 @@ template&lt;class STATE&gt; </div>
 <li>include/<a class="el" href="_state_variable_set_8h_source.html">StateVariableSet.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 23 2019 05:53:25 for mtca4u-VirtualLab by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_virtual_lab.html">VirtualLab</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html">StateVariableSet</a></li>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:46 for mtca4u-VirtualLab by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>
