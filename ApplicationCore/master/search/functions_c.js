@@ -2,7 +2,6 @@ var searchData=
 [
   ['parsingerror',['parsingError',['../struct_chimera_t_k_1_1_config_reader.html#a3ed2c844cf00558caac8be694a6ed38b',1,'ChimeraTK::ConfigReader']]],
   ['periodictrigger',['PeriodicTrigger',['../struct_chimera_t_k_1_1_periodic_trigger.html#a9b68c32ebbe186c3e8eb6efba697e605',1,'ChimeraTK::PeriodicTrigger']]],
-  ['pollingtestapplication',['PollingTestApplication',['../struct_polling_test_application.html#a18aa44b3ec4c590d599cdf554f33e31f',1,'PollingTestApplication']]],
   ['popstream',['popStream',['../class_chimera_t_k_1_1_pushable_stream.html#ac8206c505d8efd46cbac348a74415d30',1,'ChimeraTK::PushableStream']]],
   ['prepare',['prepare',['../class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568',1,'ChimeraTK::Module::prepare()'],['../struct_chimera_t_k_1_1_config_reader.html#a889a4d8521fd8b37705f84d95f79ff20',1,'ChimeraTK::ConfigReader::prepare()']]],
   ['processunconnectednodes',['processUnconnectedNodes',['../class_chimera_t_k_1_1_application.html#af595df5c85fe5acd93a1deaa54b69b0c',1,'ChimeraTK::Application']]],

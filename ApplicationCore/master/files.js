@@ -6,6 +6,5 @@ var files =
     [ "example3", "dir_cdd8c93e282240b1f3324076ccf35757.html", "dir_cdd8c93e282240b1f3324076ccf35757" ],
     [ "include", "dir_d44c64559bbebec7f509842c48db8b23.html", "dir_d44c64559bbebec7f509842c48db8b23" ],
     [ "Modules", "dir_f2541a3b18981391fa76fac5599e978a.html", "dir_f2541a3b18981391fa76fac5599e978a" ],
-    [ "src", "dir_68267d1309a1af8e8297ef4c3efbcdba.html", "dir_68267d1309a1af8e8297ef4c3efbcdba" ],
-    [ "tests", "dir_59425e443f801f1f2fd8bbe4959a3ccf.html", "dir_59425e443f801f1f2fd8bbe4959a3ccf" ]
+    [ "src", "dir_68267d1309a1af8e8297ef4c3efbcdba.html", "dir_68267d1309a1af8e8297ef4c3efbcdba" ]
 ];

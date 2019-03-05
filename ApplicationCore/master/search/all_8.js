@@ -8,6 +8,6 @@ var searchData=
   ['hasowner',['hasOwner',['../class_chimera_t_k_1_1_variable_network_node.html#a46df1c402de419661ed13b5eb8498e27',1,'ChimeraTK::VariableNetworkNode']]],
   ['hassubmodule',['hasSubmodule',['../class_chimera_t_k_1_1_entity_owner.html#a0bcb02caefb83338f3ad8def4c5f0af7',1,'ChimeraTK::EntityOwner']]],
   ['heater',['heater',['../struct_example_app.html#a42d90c503993665333809454b561d4d6',1,'ExampleApp']]],
-  ['hidethis',['hideThis',['../struct_second_hierarchy_1_1_test_module.html#a6032480aa225cb262761b00ffff206c1',1,'SecondHierarchy::TestModule::hideThis()'],['../namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0a42fd45b7dde2262d94504c986ff06e36',1,'ChimeraTK::hideThis()']]],
+  ['hidethis',['hideThis',['../namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0a42fd45b7dde2262d94504c986ff06e36',1,'ChimeraTK']]],
   ['hierarchymodifier',['HierarchyModifier',['../namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0',1,'ChimeraTK']]]
 ];

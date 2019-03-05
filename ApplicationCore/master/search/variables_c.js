@@ -10,7 +10,5 @@ var searchData=
   ['nodelist',['nodeList',['../class_chimera_t_k_1_1_variable_network.html#ad2b83cf22f568dc7d0645b89961b4591',1,'ChimeraTK::VariableNetwork']]],
   ['nodetotrigger',['nodeToTrigger',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a55196ea2ebb93e081d552de34bd65777',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['nodewithtrigger',['nodeWithTrigger',['../struct_chimera_t_k_1_1_variable_network_node__data.html#ae6adf71dcffcc8793977290195fa597f',1,'ChimeraTK::VariableNetworkNode_data']]],
-  ['none',['none',['../struct_first_hierarchy_1_1_test_module.html#a2109b0a5ad84cab3b2477c42d188e093',1,'FirstHierarchy::TestModule']]],
-  ['ntriggersperfile',['nTriggersPerFile',['../struct_chimera_t_k_1_1_micro_d_a_q.html#a1ba0f9ef3b0655352ce486126afe81aa',1,'ChimeraTK::MicroDAQ']]],
-  ['numberoftransfers',['numberOfTransfers',['../class_test_transfer_group_dummy.html#a4d4ab59e77dfd650c5975e3a75e9dea0',1,'TestTransferGroupDummy']]]
+  ['ntriggersperfile',['nTriggersPerFile',['../struct_chimera_t_k_1_1_micro_d_a_q.html#a1ba0f9ef3b0655352ce486126afe81aa',1,'ChimeraTK::MicroDAQ']]]
 ];

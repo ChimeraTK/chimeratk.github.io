@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['read',['read',['../class_demo_dummy.html#a6b29e4b004b9379148fa723c7cf8f89d',1,'DemoDummy::read()'],['../struct_chimera_t_k_1_1_array_poll_input.html#a823dd8f8c343fb16abd91108f9402c40',1,'ChimeraTK::ArrayPollInput::read()'],['../struct_chimera_t_k_1_1_scalar_poll_input.html#a760a463494f5a8b7cf8f0e30a9702bda',1,'ChimeraTK::ScalarPollInput::read()'],['../class_test_transfer_group_dummy.html#ad15cdac5932a7d2f30c82c4a39e1c070',1,'TestTransferGroupDummy::read()']]],
+  ['read',['read',['../class_demo_dummy.html#a6b29e4b004b9379148fa723c7cf8f89d',1,'DemoDummy::read()'],['../struct_chimera_t_k_1_1_array_poll_input.html#a823dd8f8c343fb16abd91108f9402c40',1,'ChimeraTK::ArrayPollInput::read()'],['../struct_chimera_t_k_1_1_scalar_poll_input.html#a760a463494f5a8b7cf8f0e30a9702bda',1,'ChimeraTK::ScalarPollInput::read()']]],
   ['readall',['readAll',['../class_chimera_t_k_1_1_module.html#a9d689bf397cffb14a510fcc561f6c691',1,'ChimeraTK::Module']]],
   ['readalllatest',['readAllLatest',['../class_chimera_t_k_1_1_module.html#ad8f942624768c86a75ce23609c2f8a58',1,'ChimeraTK::Module']]],
   ['readallnonblocking',['readAllNonBlocking',['../class_chimera_t_k_1_1_module.html#a5e84fe3208d5f3d1a7c54ed63ee2a61f',1,'ChimeraTK::Module']]],

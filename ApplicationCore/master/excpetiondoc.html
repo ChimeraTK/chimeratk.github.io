@@ -98,13 +98,13 @@ Introduction</h1>
 <li>/Devices/{AliasName}/status</li>
 </ul>
 <p>In this implementation a user/application can report an exception by calling reportException of DeviceModule with an exception string. The reportException packs the exception in a queue and the blocks the thread. This queue is processed by an internal function handleException which updates the DeviceError variables (status=1 and message= YourExceptionString) and tries to open the device. Once device can be opened the DeviceError variables are updated (status=0 and message="") and blocking threads are notified to continue. It must be noted that whatever operation which lead to exception e.g., read or write, should be repeated after the exception is handled.</p>
-<p>Checkout <a class="el" href="test_exception_test_8cc.html">testExceptionTest.cc</a> under tests/executables_src to see how it works. </p>
+<p>Checkout testExceptionTest.cc under tests/executables_src to see how it works. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 4 2019 13:47:29 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:52 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

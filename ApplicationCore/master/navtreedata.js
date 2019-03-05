@@ -40,9 +40,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
-        [ "Typedefs", "globals_type.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Variables", "globals_vars.html", null ]
       ] ]
     ] ]
   ] ]
@@ -51,12 +49,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_8cc.html",
-"class_chimera_t_k_1_1_application_module.html",
-"class_chimera_t_k_1_1_module_group.html#a1cec973c671fb06a4d91810b3f617994",
-"class_test_transfer_group_dummy.html#a8f9f3038f7f9dc3822a7669f98a374f3",
-"struct_chimera_t_k_1_1_config_reader.html#ac920876035406f5266007c95398ef782",
-"struct_first_hierarchy_1_1_second_module.html#a243f1da812320c7ac651dbc0055c6b47",
-"struct_test_module.html#af46cec5b1db1f4fe98e768c226afc688"
+"class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8",
+"class_chimera_t_k_1_1_module_group.html#a65b28310b394f273b6e8786af92bf9e7",
+"class_timer_dummy_register_accessor.html#a40f81012077f9b0340d301beef191058",
+"struct_chimera_t_k_1_1_fixed_limit_value.html#a85d95ab1ec5c0f5f61a3c6a901f7d1f1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

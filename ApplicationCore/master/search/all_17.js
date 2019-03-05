@@ -2,7 +2,6 @@ var searchData=
 [
   ['_7eapplication',['~Application',['../class_chimera_t_k_1_1_application.html#abf4df7485b5fb61cb1f22710c1b2f0f7',1,'ChimeraTK::Application']]],
   ['_7eapplicationmodule',['~ApplicationModule',['../class_chimera_t_k_1_1_application_module.html#a1c48b96181743fbfc2f5763c22265182',1,'ChimeraTK::ApplicationModule']]],
-  ['_7eassignmodulelaterapp',['~AssignModuleLaterApp',['../struct_assign_module_later_app.html#ade47c42ed0f1877873ece4964b329584',1,'AssignModuleLaterApp']]],
   ['_7econstantaccessor',['~ConstantAccessor',['../class_chimera_t_k_1_1_constant_accessor.html#abd9755417448566714011104fc83668b',1,'ChimeraTK::ConstantAccessor']]],
   ['_7edevicemodule',['~DeviceModule',['../class_chimera_t_k_1_1_device_module.html#a3b3c82b4e2bb69de77e4793764835922',1,'ChimeraTK::DeviceModule']]],
   ['_7eentityowner',['~EntityOwner',['../class_chimera_t_k_1_1_entity_owner.html#a407bfc13bf309ff4c27fd68a1eeb3a25',1,'ChimeraTK::EntityOwner']]],
@@ -13,14 +12,7 @@ var searchData=
   ['_7emodule',['~Module',['../class_chimera_t_k_1_1_module.html#a73dc438d7af52c3223cb617c93e2617c',1,'ChimeraTK::Module']]],
   ['_7emodulegraphvisitor',['~ModuleGraphVisitor',['../class_chimera_t_k_1_1_module_graph_visitor.html#a5491cbda6537935c921c1cd4769e4157',1,'ChimeraTK::ModuleGraphVisitor']]],
   ['_7emodulegroup',['~ModuleGroup',['../class_chimera_t_k_1_1_module_group.html#ae08e3fc7c5b7080e28b587d0770bab24',1,'ChimeraTK::ModuleGroup']]],
-  ['_7eonemoduleapp',['~OneModuleApp',['../struct_one_module_app.html#a655db148d26ee5bd69280a31b6602369',1,'OneModuleApp']]],
-  ['_7epollingtestapplication',['~PollingTestApplication',['../struct_polling_test_application.html#a65714910a770475b7d835a33087c5829',1,'PollingTestApplication']]],
   ['_7epushablestream',['~PushableStream',['../class_chimera_t_k_1_1_pushable_stream.html#a06af103deaa8a5645e956bc9d8ae748d',1,'ChimeraTK::PushableStream']]],
-  ['_7etestapp',['~testApp',['../structtest_app.html#a310b20e5ccd03cc4ba083e0ac26b27ad',1,'testApp::~testApp()'],['../struct_test_app.html#aa24bf3c042eea09023c93438c8939a8a',1,'TestApp::~TestApp()']]],
-  ['_7etestapplication',['~TestApplication',['../struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4',1,'TestApplication::~TestApplication()'],['../struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4',1,'TestApplication::~TestApplication()'],['../struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4',1,'TestApplication::~TestApplication()'],['../struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4',1,'TestApplication::~TestApplication()'],['../struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4',1,'TestApplication::~TestApplication()'],['../struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4',1,'TestApplication::~TestApplication()'],['../struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4',1,'TestApplication::~TestApplication()'],['../struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4',1,'TestApplication::~TestApplication()'],['../struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4',1,'TestApplication::~TestApplication()'],['../struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4',1,'TestApplication::~TestApplication()'],['../struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4',1,'TestApplication::~TestApplication()'],['../struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4',1,'TestApplication::~TestApplication()'],['../struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4',1,'TestApplication::~TestApplication()']]],
-  ['_7etestapplicationconnectto',['~TestApplicationConnectTo',['../struct_test_application_connect_to.html#ad36be1952e83e006d88f2a52c10d6524',1,'TestApplicationConnectTo']]],
-  ['_7etestapplicationnoconfigs',['~TestApplicationNoConfigs',['../struct_test_application_no_configs.html#a6c5548ccb7dcee2f8c181a226f7b201e',1,'TestApplicationNoConfigs']]],
-  ['_7etestapplicationtwoconfigs',['~TestApplicationTwoConfigs',['../struct_test_application_two_configs.html#ac0fd57746bf7eade2ca3d72222aca887',1,'TestApplicationTwoConfigs']]],
   ['_7ethreadedfanout',['~ThreadedFanOut',['../class_chimera_t_k_1_1_threaded_fan_out.html#a74e762aadaacc9fab87360cab167c882',1,'ChimeraTK::ThreadedFanOut']]],
   ['_7etimerdummyregisteraccessor',['~TimerDummyRegisterAccessor',['../class_timer_dummy_register_accessor.html#a99b23597a145ee255c55eb2117ab0fb8',1,'TimerDummyRegisterAccessor']]],
   ['_7etriggerfanout',['~TriggerFanOut',['../class_chimera_t_k_1_1_trigger_fan_out.html#a8a654a293098909f923f554ee1008882',1,'ChimeraTK::TriggerFanOut']]],
@@ -28,8 +20,6 @@ var searchData=
   ['_7evariablenetworkdumpingvisitor',['~VariableNetworkDumpingVisitor',['../class_chimera_t_k_1_1_variable_network_dumping_visitor.html#a466ed35bca4d3b1a97428ec7b3f06ef9',1,'ChimeraTK::VariableNetworkDumpingVisitor']]],
   ['_7evariablenetworkgraphdumpingvisitor',['~VariableNetworkGraphDumpingVisitor',['../class_chimera_t_k_1_1_variable_network_graph_dumping_visitor.html#a786d29766f383771bd2a4202db971d73',1,'ChimeraTK::VariableNetworkGraphDumpingVisitor']]],
   ['_7evariablenetworknodedumpingvisitor',['~VariableNetworkNodeDumpingVisitor',['../class_chimera_t_k_1_1_variable_network_node_dumping_visitor.html#a48f06b5f0d045d07498889f208d55b58',1,'ChimeraTK::VariableNetworkNodeDumpingVisitor']]],
-  ['_7evectorofeverythingapp',['~VectorOfEverythingApp',['../struct_vector_of_everything_app.html#a0961dd24a505effa151fc64cf064e06a',1,'VectorOfEverythingApp']]],
-  ['_7evectorofmodulesapp',['~VectorOfModulesApp',['../struct_vector_of_modules_app.html#abbcb8d44a3464b2d804ab496b66b1cdf',1,'VectorOfModulesApp']]],
   ['_7evirtualmodule',['~VirtualModule',['../class_chimera_t_k_1_1_virtual_module.html#a783182881d5b16c0c08db344d090f3eb',1,'ChimeraTK::VirtualModule']]],
   ['_7exmlgeneratorvisitor',['~XMLGeneratorVisitor',['../class_chimera_t_k_1_1_x_m_l_generator_visitor.html#a0301829d34f8835b38bbea4cd1ef291f',1,'ChimeraTK::XMLGeneratorVisitor']]]
 ];
