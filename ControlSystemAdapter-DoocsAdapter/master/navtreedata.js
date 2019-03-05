@@ -36,9 +36,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
-        [ "Typedefs", "globals_type.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Variables", "globals_vars.html", null ]
       ] ]
     ] ]
   ] ]
@@ -47,8 +45,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_c_s_adapter_eq_fct_8cc.html",
-"eq__create_8cc.html#a3a3f8e07c342ac478286b3b343bbad29",
-"test_variable_mapper_8cpp.html#ae40e338148a7657ff1b59518cc5959cc"
+"struct_chimera_t_k_1_1_property_description.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

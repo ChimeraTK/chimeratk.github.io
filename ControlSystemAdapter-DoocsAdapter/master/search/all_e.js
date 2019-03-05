@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['plainvariablecreationtestsuite',['PlainVariableCreationTestSuite',['../class_plain_variable_creation_test_suite.html',1,'PlainVariableCreationTestSuite'],['../class_plain_variable_creation_test_suite.html#a0be53e4e3d52706dfdf5c7b98bf7eedf',1,'PlainVariableCreationTestSuite::PlainVariableCreationTestSuite()']]],
   ['post_5finit',['post_init',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#a7df72b8ab51561ff038a696b45069019',1,'ChimeraTK::CSAdapterEqFct']]],
-  ['post_5finit_5fepilog',['post_init_epilog',['../eq__create_8cc.html#a38623e21fbb34913ef41a02871cf1ce5',1,'post_init_epilog():&#160;eq_create.cc'],['../empty_server_functions_8h.html#a38623e21fbb34913ef41a02871cf1ce5',1,'post_init_epilog():&#160;emptyServerFunctions.h']]],
-  ['post_5finit_5fprolog',['post_init_prolog',['../empty__doocs__functions_8cc.html#ae60e62832bff3e8fd4688f871bd66ec7',1,'post_init_prolog():&#160;empty_doocs_functions.cc'],['../empty_server_functions_8h.html#ae60e62832bff3e8fd4688f871bd66ec7',1,'post_init_prolog():&#160;emptyServerFunctions.h']]],
+  ['post_5finit_5fepilog',['post_init_epilog',['../eq__create_8cc.html#a38623e21fbb34913ef41a02871cf1ce5',1,'eq_create.cc']]],
+  ['post_5finit_5fprolog',['post_init_prolog',['../empty__doocs__functions_8cc.html#ae60e62832bff3e8fd4688f871bd66ec7',1,'empty_doocs_functions.cc']]],
   ['prepareoutput',['prepareOutput',['../class_chimera_t_k_1_1_variable_mapper.html#a93880cfd989d343216b5869bb59f5450',1,'ChimeraTK::VariableMapper']]],
   ['print',['print',['../struct_chimera_t_k_1_1_property_description.html#ae5425264f864fe2532c2a9241e4d6126',1,'ChimeraTK::PropertyDescription::print()'],['../struct_chimera_t_k_1_1_auto_property_description.html#aee834c191f011655d7c03fdd2ba8ca39',1,'ChimeraTK::AutoPropertyDescription::print()'],['../struct_chimera_t_k_1_1_spectrum_description.html#a7f3eb5bf24ef0b97454682b077575b5f',1,'ChimeraTK::SpectrumDescription::print()'],['../class_chimera_t_k_1_1_variable_mapper.html#a545ca3a6e2680f64139ed53da83c58e0',1,'ChimeraTK::VariableMapper::print()']]],
   ['processarraynode',['processArrayNode',['../class_chimera_t_k_1_1_variable_mapper.html#a5a15042e8c3547c6d74bb2b3ad287780',1,'ChimeraTK::VariableMapper']]],

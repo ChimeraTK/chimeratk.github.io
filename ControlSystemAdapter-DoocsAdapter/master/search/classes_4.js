@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['globalturnonoffhistoryservertestsuite',['GlobalTurnOnOffHistoryServerTestSuite',['../class_global_turn_on_off_history_server_test_suite.html',1,'']]],
-  ['globalturnonoffwriteableservertestsuite',['GlobalTurnOnOffWriteableServerTestSuite',['../class_global_turn_on_off_writeable_server_test_suite.html',1,'']]]
+  ['propertyattributes',['PropertyAttributes',['../struct_chimera_t_k_1_1_property_attributes.html',1,'ChimeraTK']]],
+  ['propertydescription',['PropertyDescription',['../struct_chimera_t_k_1_1_property_description.html',1,'ChimeraTK']]]
 ];
