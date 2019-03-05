@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['main',['main',['../main_8cpp.html#a76d7886ff34652714e4a2d447ae4c5b6',1,'main.cpp']]],
-  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['max_5fwords_5fstring',['MAX_WORDS_STRING',['../_qt_hard_mon_8cpp.html#a0d436e024a980a4a1981cd5d2bb3df58',1,'QtHardMon.cpp']]],
-  ['module_5fextension_5fstring',['MODULE_EXTENSION_STRING',['../_qt_hard_mon_8cpp.html#a685ab1dafdb3d0599b2cae4e550cbcd9',1,'QtHardMon.cpp']]]
+  ['lastselectedregister',['lastSelectedRegister',['../class_qt_hard_mon_1_1_device_list_item.html#a57dc872f6b6fd8b2d5b8b03af83e9721',1,'QtHardMon::DeviceListItem']]],
+  ['lifetimestandard',['LifetimeStandard',['../class_lifetime_standard.html',1,'']]],
+  ['loadconfig',['loadConfig',['../class_qt_hard_mon.html#a418bf9611a809431037ed30409d9172a',1,'QtHardMon']]],
+  ['loaddmapfile',['loadDmapFile',['../class_qt_hard_mon.html#a207299bc54f3520d125f9f1ab7c37f06',1,'QtHardMon']]],
+  ['lock',['Lock',['../class_single_thread_1_1_lock.html',1,'SingleThread']]]
 ];

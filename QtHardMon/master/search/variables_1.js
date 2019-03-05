@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['configfilename_5f',['configFileName_',['../class_qt_hard_mon.html#a290a03165229e164c8fb42ede8968c83',1,'QtHardMon']]],
-  ['currentaccessormodel_5f',['currentAccessorModel_',['../class_qt_hard_mon.html#ab064bc2e14df9e49d4134aef6d3d09a1',1,'QtHardMon']]],
-  ['currentdevice_5f',['currentDevice_',['../class_qt_hard_mon.html#a701b45dcc304495f934b2167b6a1e380',1,'QtHardMon']]],
-  ['customdelegate_5f',['customDelegate_',['../class_qt_hard_mon.html#a5ee9c01471f3a88aa48be67145e1a40e',1,'QtHardMon']]]
+  ['app',['app',['../struct_example_device_element_q_tree_item__fixture_base.html#ae689715a84b29c8d807311e4b55e34f9',1,'ExampleDeviceElementQTreeItem_fixtureBase::app()'],['../struct_example_properties_widget__fixture_base.html#aed9bdcc48dd9ba6cb9b2f033c1769c0a',1,'ExamplePropertiesWidget_fixtureBase::app()']]]
 ];

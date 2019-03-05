@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['define_5fqthardmon_5fexception',['DEFINE_QTHARDMON_EXCEPTION',['../_exceptions_8h.html#ac45b37e0698beebe7d2ff3eaadf00cfe',1,'Exceptions.h']]],
-  ['dmap_5ffile_5fstring',['DMAP_FILE_STRING',['../_qt_hard_mon_8cpp.html#a22e46791207de951890c53e392d3973f',1,'QtHardMon.cpp']]]
+  ['current_5fdevice_5fstring',['CURRENT_DEVICE_STRING',['../_qt_hard_mon_8cpp.html#ada28cbfb34f76906ae46254021031488',1,'QtHardMon.cpp']]],
+  ['current_5fmodule_5fstring',['CURRENT_MODULE_STRING',['../_qt_hard_mon_8cpp.html#a38198bdf157ec2cc7aae3b450d94ee22',1,'QtHardMon.cpp']]],
+  ['current_5fregister_5fstring',['CURRENT_REGISTER_STRING',['../_qt_hard_mon_8cpp.html#a31ea67b03e41b965330de61d2f76708a',1,'QtHardMon.cpp']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['current_5fdevice_5fstring',['CURRENT_DEVICE_STRING',['../_qt_hard_mon_8cpp.html#ada28cbfb34f76906ae46254021031488',1,'QtHardMon.cpp']]],
-  ['current_5fmodule_5fstring',['CURRENT_MODULE_STRING',['../_qt_hard_mon_8cpp.html#a38198bdf157ec2cc7aae3b450d94ee22',1,'QtHardMon.cpp']]],
-  ['current_5fregister_5fstring',['CURRENT_REGISTER_STRING',['../_qt_hard_mon_8cpp.html#a31ea67b03e41b965330de61d2f76708a',1,'QtHardMon.cpp']]]
+  ['boost_5ftest_5fdyn_5flink',['BOOST_TEST_DYN_LINK',['../test___example_device_element_q_tree_item_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1',1,'BOOST_TEST_DYN_LINK():&#160;test_ExampleDeviceElementQTreeItem.cpp'],['../test___example_properties_widget_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1',1,'BOOST_TEST_DYN_LINK():&#160;test_ExamplePropertiesWidget.cpp']]],
+  ['boost_5ftest_5fmodule',['BOOST_TEST_MODULE',['../test___example_device_element_q_tree_item_8cpp.html#a6b2a3852db8bb19ab6909bac01859985',1,'BOOST_TEST_MODULE():&#160;test_ExampleDeviceElementQTreeItem.cpp'],['../test___example_properties_widget_8cpp.html#a6b2a3852db8bb19ab6909bac01859985',1,'BOOST_TEST_MODULE():&#160;test_ExamplePropertiesWidget.cpp']]]
 ];

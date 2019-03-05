@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['main',['main',['../main_8cpp.html#a76d7886ff34652714e4a2d447ae4c5b6',1,'main.cpp']]]
+  ['loadconfig',['loadConfig',['../class_qt_hard_mon.html#a418bf9611a809431037ed30409d9172a',1,'QtHardMon']]],
+  ['loaddmapfile',['loadDmapFile',['../class_qt_hard_mon.html#a207299bc54f3520d125f9f1ab7c37f06',1,'QtHardMon']]]
 ];

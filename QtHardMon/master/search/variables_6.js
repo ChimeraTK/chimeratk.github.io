@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['registerinfo_5f',['registerInfo_',['../class_device_element_q_tree_item.html#a9c1bdf86a71547c00a89dc04549b6cda',1,'DeviceElementQTreeItem']]]
+  ['lastselectedregister',['lastSelectedRegister',['../class_qt_hard_mon_1_1_device_list_item.html#a57dc872f6b6fd8b2d5b8b03af83e9721',1,'QtHardMon::DeviceListItem']]]
 ];

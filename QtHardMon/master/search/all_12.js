@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['ui',['ui',['../class_properties_widget.html#adba137f054fca3c8ecedbc1bdb3ad835',1,'PropertiesWidget::ui()'],['../class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e',1,'QtHardMon::ui()']]],
-  ['updatecachedcookeddata',['updateCachedCookedData',['../class_register_type_abstractor_raw_impl.html#adaa8f84b101cfc6420147e7d76fc154e',1,'RegisterTypeAbstractorRawImpl']]],
-  ['updateregisterinfo',['updateRegisterInfo',['../class_properties_widget.html#af24e33cca6c7971bba19a5e7e4dcada9',1,'PropertiesWidget']]]
+  ['test_5fexampledeviceelementqtreeitem_2ecpp',['test_ExampleDeviceElementQTreeItem.cpp',['../test___example_device_element_q_tree_item_8cpp.html',1,'']]],
+  ['test_5fexamplepropertieswidget_2ecpp',['test_ExamplePropertiesWidget.cpp',['../test___example_properties_widget_8cpp.html',1,'']]],
+  ['textfromvalue',['textFromValue',['../class_hex_spin_box.html#a8d481d514fe493daf467abfcc9cac2ae',1,'HexSpinBox']]],
+  ['todo_20list',['Todo List',['../todo.html',1,'']]],
+  ['treewidget',['treeWidget',['../struct_example_device_element_q_tree_item__fixture.html#a1613abee162fd11b90c59ca58353cc65',1,'ExampleDeviceElementQTreeItem_fixture']]]
 ];
