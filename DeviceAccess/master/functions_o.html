@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_o.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -76,16 +97,8 @@ $(function() {
 <li>OneDRegisterAccessor()
 : <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html#a75c84f930b3237c5bab22ec1111fbec6">ChimeraTK::OneDRegisterAccessor&lt; UserType &gt;</a>
 </li>
-<li>OneDRegisterTest()
-: <a class="el" href="class_one_d_register_test.html#a160ede514f7752021e202d2368939d82">OneDRegisterTest</a>
-</li>
-<li>OneDRegisterTestSuite
-: <a class="el" href="class_one_d_register_test.html#a85ed3d707634ef9547663b288422906e">OneDRegisterTest</a>
-, <a class="el" href="class_one_d_register_test_suite.html#a4d88d897e9a37a3871d48bd60b5e8985">OneDRegisterTestSuite</a>
-</li>
 <li>open()
-: <a class="el" href="class_async_test_dummy.html#a4b8f0b0fc0ecd3808369403b687fca5f">AsyncTestDummy</a>
-, <a class="el" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">ChimeraTK::Device</a>
+: <a class="el" href="class_chimera_t_k_1_1_device.html#a0a86afbebd076b8bc1d7bc6fe87db89d">ChimeraTK::Device</a>
 , <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a9da6866e3f0b481e1fcc13985382f5f9">ChimeraTK::DeviceBackend</a>
 , <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a733a54ce43fc6c1573c882216dea378a">ChimeraTK::DummyBackend</a>
 , <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#aa62cb97e2a5de85ae6151410b78f0ec6">ChimeraTK::LogicalNameMappingBackend</a>
@@ -147,7 +160,6 @@ $(function() {
 , <a class="el" href="class_chimera_t_k_1_1compare_register_infos_by_name__functor.html#a164175db5020b46b7f04b4efc13c4a6d">ChimeraTK::compareRegisterInfosByName_functor</a>
 , <a class="el" href="class_chimera_t_k_1_1copmared_register_infos_by_name2__functor.html#a2350db54cdc3811f7e7e632fb21ef2ad">ChimeraTK::copmaredRegisterInfosByName2_functor</a>
 , <a class="el" href="class_chimera_t_k_1_1copmared_register_infos_by_name__functor.html#a0eda2529dc44b969b9f5e428cc78bda0">ChimeraTK::copmaredRegisterInfosByName_functor</a>
-, <a class="el" href="class_chimera_t_k_1_1detail_1_1for__each__callable.html#a2d8cab458a3dfa92862717303cf71d3a">ChimeraTK::detail::for_each_callable&lt; X &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1find_dev_by_name__pred.html#a115cb7315924d70e8a113e522230724b">ChimeraTK::findDevByName_pred</a>
 , <a class="el" href="class_chimera_t_k_1_1find_dev_in_pair_by_name__pred.html#ad36e2c9a47b4c121a4cc69785c4237a5">ChimeraTK::findDevInPairByName_pred</a>
 , <a class="el" href="class_chimera_t_k_1_1find_map_file_by_name__pred.html#a7c3a73650712a40da007e0d0d131ecca">ChimeraTK::findMapFileByName_pred</a>
@@ -169,7 +181,7 @@ $(function() {
 <li>operator++()
 : <a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html#a562bad9f94c9a101bd36b6247c10c9e0">ChimeraTK::BufferingRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html#ae613a0028d166dfb87d7a256050aee61">ChimeraTK::proxies::DummyRegisterElement&lt; T &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html#a0740ba36772db4944041b34bab2bc7f9">ChimeraTK::RegisterCatalogue::const_iterator</a>
+, <a class="el" href="class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html#af914cf3281a5e9d018f95d2d92af1212">ChimeraTK::RegisterCatalogue::const_iterator</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a11ae150c12adf767d5035ae842e88e3d">ChimeraTK::RegisterCatalogue::iterator</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1const__iterator.html#a8f7bbc195b0c4fd46986a27dde83e302">ChimeraTK::RegisterInfoMap::const_iterator</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1iterator.html#a1f1b845033bb72c3cde60027c7390ada">ChimeraTK::RegisterInfoMap::iterator</a>
@@ -185,8 +197,8 @@ $(function() {
 , <a class="el" href="class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a36d5babbe37d8e4e37f5abefc0a8af61">ChimeraTK::RegisterCatalogue::iterator</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1const__iterator.html#a58da4bc2716c187cabad660f22bfa381">ChimeraTK::RegisterInfoMap::const_iterator</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1iterator.html#adfe78bde2a9f6d13aa604ce518268121">ChimeraTK::RegisterInfoMap::iterator</a>
-, <a class="el" href="class_chimera_t_k_1_1_register_path.html#ad7017153970fa74b94386cdf8a7b184d">ChimeraTK::RegisterPath</a>
-, <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#a2749394211fe379feeeaa300d6806c92">ChimeraTK::ScalarRegisterAccessor&lt; UserType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_register_path.html#a3977d353473cfe640a5d61e0885eff49">ChimeraTK::RegisterPath</a>
+, <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#a057d326077173abf52292ade42d2c8ad">ChimeraTK::ScalarRegisterAccessor&lt; UserType &gt;</a>
 </li>
 <li>operator-&gt;()
 : <a class="el" href="class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html#a0e3cdf879ad8b5b177c04889b13d9151">ChimeraTK::RegisterCatalogue::const_iterator</a>
@@ -207,11 +219,11 @@ $(function() {
 </li>
 <li>operator&lt;&lt;
 : <a class="el" href="class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a2b1e18061c1f65a072480690946b54b9">ChimeraTK::DeviceInfoMap::DeviceInfo</a>
-, <a class="el" href="class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a62da59a5d9c97f32bd4489c7125956af">ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem</a>
+, <a class="el" href="class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#ac521cd2b08beea39f2e88636d95fbce0">ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem</a>
 , <a class="el" href="class_chimera_t_k_1_1_device_info_map_1_1_error_list.html#a84dc2085efacce559b4fbe0e2576576c">ChimeraTK::DeviceInfoMap::ErrorList</a>
 , <a class="el" href="class_chimera_t_k_1_1_device_info_map.html#a59df710d7aa621c159cb3a25dd5bc0e1">ChimeraTK::DeviceInfoMap</a>
 , <a class="el" href="class_chimera_t_k_1_1_d_map_files_parser.html#a20cc664d6f5cbbe04a56cee4286d2043">ChimeraTK::DMapFilesParser</a>
-, <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#a62da59a5d9c97f32bd4489c7125956af">ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem</a>
+, <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#ac521cd2b08beea39f2e88636d95fbce0">ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_error_list.html#a84dc2085efacce559b4fbe0e2576576c">ChimeraTK::RegisterInfoMap::ErrorList</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_meta_data.html#aaa1d62177a733cfc706ccd9d06ae68ae">ChimeraTK::RegisterInfoMap::MetaData</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_info_map.html#ae83bda72384d0a2c9cc947f240926694">ChimeraTK::RegisterInfoMap</a>
@@ -232,9 +244,9 @@ $(function() {
 , <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#af18d723d90aa2326af0946ce9468b73f">ChimeraTK::RegisterInfoMap::RegisterInfo</a>
 , <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#a47763b3295a8b0ac97ae45e3d08109de">ChimeraTK::ScalarRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html#a520e5e37dcd9673da837872998278b00">ChimeraTK::ScalarRegisterAccessor&lt; std::string &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a03fec2fb2b11be04d6ecad5bdd97d116">ChimeraTK::TransferElement</a>
+, <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a40a803da60e750f4f734fb7dee3d18a8">ChimeraTK::TransferElement</a>
 , <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html#a6fcfb263e8a747a9127089f5703b8f05">ChimeraTK::TransferElementID</a>
-, <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a5ce2ef9332a763e1727b9f9670a5f805">ChimeraTK::TransferFuture</a>
+, <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#ae0633235c7e449805e550f477d03b177">ChimeraTK::TransferFuture</a>
 , <a class="el" href="class_chimera_t_k_1_1_version_number.html#a3423d20dac862b970febc6ab5254d7af">ChimeraTK::VersionNumber</a>
 </li>
 <li>operator==()
@@ -244,7 +256,7 @@ $(function() {
 , <a class="el" href="class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a92b9f9999f51e4d626af6f4bc12a5609">ChimeraTK::RegisterCatalogue::iterator</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1const__iterator.html#a7713649a155eab6c67b90c0ed8d89a75">ChimeraTK::RegisterInfoMap::const_iterator</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1iterator.html#aaa410f033ef37c7db217a24ec1823460">ChimeraTK::RegisterInfoMap::iterator</a>
-, <a class="el" href="class_chimera_t_k_1_1_register_path.html#a1d5ac815337901eddc118e3fb41a4104">ChimeraTK::RegisterPath</a>
+, <a class="el" href="class_chimera_t_k_1_1_register_path.html#a58ded576ca777b42c14e8bae53e70e5e">ChimeraTK::RegisterPath</a>
 , <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html#ac8a72559e4e61799fee4f9b97af8c145">ChimeraTK::TransferElementID</a>
 , <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a2e1fdfcb52e21f76d305428435eca2c1">ChimeraTK::TransferFuture</a>
 , <a class="el" href="class_chimera_t_k_1_1_version_number.html#a62d862b9bfbeeb17641dddedf9aac579">ChimeraTK::VersionNumber</a>
@@ -266,11 +278,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:10 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:09 for ChimeraTK-DeviceAccess by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

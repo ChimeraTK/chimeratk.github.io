@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('fileparsers_2include_2_register_path_8h_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_dea78313235eb47f342de8e8297f8ee6.html">fileparsers</a></li><li class="navelem"><a class="el" href="dir_c872042f09b1bc5ee39723da1e7cec52.html">include</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">RegisterPath.h</div>  </div>
@@ -79,7 +96,7 @@ $(function() {
 <div class="ttc" id="class_chimera_t_k_1_1_register_path_html_ac4b813fafa64ea898bc9b114291621a5"><div class="ttname"><a href="class_chimera_t_k_1_1_register_path.html#ac4b813fafa64ea898bc9b114291621a5">ChimeraTK::RegisterPath::length</a></div><div class="ttdeci">size_t length() const</div><div class="ttdoc">return the length of the path (including leading slash) </div><div class="ttdef"><b>Definition:</b> <a href="fileparsers_2include_2_register_path_8h_source.html#l00129">RegisterPath.h:129</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1logic__error_html"><div class="ttname"><a href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a></div><div class="ttdoc">Exception thrown when a logic error has occured. </div><div class="ttdef"><b>Definition:</b> <a href="exception_2include_2_exception_8h_source.html#l00050">Exception.h:50</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_register_path_html_aed757a7c2895d22cb7d8244eb20e6011"><div class="ttname"><a href="class_chimera_t_k_1_1_register_path.html#aed757a7c2895d22cb7d8244eb20e6011">ChimeraTK::RegisterPath::operator+=</a></div><div class="ttdeci">RegisterPath &amp; operator+=(const std::string &amp;rightHandSide)</div><div class="ttdoc">+= operator: just concatenate-assign like normal strings </div><div class="ttdef"><b>Definition:</b> <a href="fileparsers_2include_2_register_path_8h_source.html#l00064">RegisterPath.h:64</a></div></div>
-<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> <a href="device__backends_2include_2_transfer_element_8h_source.html#l00542">TransferElement.h:542</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_register_path_html_abf7479dd3ac4be1bc0da4d232741cc48"><div class="ttname"><a href="class_chimera_t_k_1_1_register_path.html#abf7479dd3ac4be1bc0da4d232741cc48">ChimeraTK::RegisterPath::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const RegisterPath &amp;rightHandSide) const</div><div class="ttdoc">&lt; operator: comparison used for sorting e.g. in std::map </div><div class="ttdef"><b>Definition:</b> <a href="fileparsers_2include_2_register_path_8h_source.html#l00071">RegisterPath.h:71</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_register_path_html_a14f9e8c60e62edc664cc0ffa8fea7100"><div class="ttname"><a href="class_chimera_t_k_1_1_register_path.html#a14f9e8c60e62edc664cc0ffa8fea7100">ChimeraTK::RegisterPath::operator!=</a></div><div class="ttdeci">bool operator!=(const char *rightHandSide) const</div><div class="ttdoc">comparison with char* </div><div class="ttdef"><b>Definition:</b> <a href="fileparsers_2include_2_register_path_8h_source.html#l00126">RegisterPath.h:126</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_register_path_html_a452b407a1f883434654e9f03e6293d00"><div class="ttname"><a href="class_chimera_t_k_1_1_register_path.html#a452b407a1f883434654e9f03e6293d00">ChimeraTK::RegisterPath::RegisterPath</a></div><div class="ttdeci">RegisterPath()</div><div class="ttdef"><b>Definition:</b> <a href="fileparsers_2include_2_register_path_8h_source.html#l00024">RegisterPath.h:24</a></div></div>
@@ -104,11 +121,15 @@ $(function() {
 <div class="ttc" id="class_chimera_t_k_1_1_register_path_html_ac4e173e3e279992f779ae2d39873a2bd"><div class="ttname"><a href="class_chimera_t_k_1_1_register_path.html#ac4e173e3e279992f779ae2d39873a2bd">ChimeraTK::RegisterPath::removeExtraSeparators</a></div><div class="ttdeci">void removeExtraSeparators()</div><div class="ttdoc">Search for duplicate separators (e.g. </div><div class="ttdef"><b>Definition:</b> <a href="fileparsers_2include_2_register_path_8h_source.html#l00174">RegisterPath.h:174</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_register_path_html"><div class="ttname"><a href="class_chimera_t_k_1_1_register_path.html">ChimeraTK::RegisterPath</a></div><div class="ttdoc">Class to store a register path name. </div><div class="ttdef"><b>Definition:</b> <a href="fileparsers_2include_2_register_path_8h_source.html#l00022">RegisterPath.h:22</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:08 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_dea78313235eb47f342de8e8297f8ee6.html">fileparsers</a></li><li class="navelem"><a class="el" href="dir_c872042f09b1bc5ee39723da1e7cec52.html">include</a></li><li class="navelem"><a class="el" href="fileparsers_2include_2_register_path_8h.html">RegisterPath.h</a></li>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:08 for ChimeraTK-DeviceAccess by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

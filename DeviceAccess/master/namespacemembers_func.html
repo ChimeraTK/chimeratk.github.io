@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('namespacemembers_func.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -62,13 +83,6 @@ $(function() {
 <div class="contents">
 &#160;
 
-<h3><a id="index_a"></a>- a -</h3><ul>
-<li>advance_until()
-: <a class="el" href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a73e89a8c5e60ca0f1571ed3e34c7af68">ChimeraTK::testable_rebot_sleep</a>
-</li>
-</ul>
-
-
 <h3><a id="index_c"></a>- c -</h3><ul>
 <li>callForType()
 : <a class="el" href="namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d">ChimeraTK</a>
@@ -78,18 +92,6 @@ $(function() {
 </li>
 <li>convertToAbsolutePath()
 : <a class="el" href="namespace_chimera_t_k_1_1parser_utilities.html#ae2b9a4195d7e35aeb3bf43b51d160fe6">ChimeraTK::parserUtilities</a>
-</li>
-<li>createCopyDecorator()
-: <a class="el" href="namespace_chimera_t_k_1_1detail.html#ac46ed2af4fd7506bd4e0992f8087630b">ChimeraTK::detail</a>
-</li>
-<li>createDataConverter()
-: <a class="el" href="namespace_chimera_t_k_1_1detail.html#a140b90b5aaba30e3f01a101bb4da8794">ChimeraTK::detail</a>
-</li>
-<li>createDataConverter&lt; FixedPointConverter &gt;()
-: <a class="el" href="namespace_chimera_t_k_1_1detail.html#a3557ba4f7b806b78be9ed1474ed6f4b8">ChimeraTK::detail</a>
-</li>
-<li>createDataConverter&lt; IEEE754_SingleConverter &gt;()
-: <a class="el" href="namespace_chimera_t_k_1_1detail.html#a33a37b9b4ea888217040329a180476e9">ChimeraTK::detail</a>
 </li>
 </ul>
 
@@ -133,9 +135,6 @@ $(function() {
 </li>
 <li>getDMapFilePath()
 : <a class="el" href="namespace_chimera_t_k.html#a8c117b1197fc52428981490a838ccf0c">ChimeraTK</a>
-</li>
-<li>getFutureQueueFromTransferFuture()
-: <a class="el" href="namespace_chimera_t_k_1_1detail.html#a5f66716099251ed1094bc45bbc0386c7">ChimeraTK::detail</a>
 </li>
 </ul>
 
@@ -193,23 +192,16 @@ $(function() {
 <li>sleep_until()
 : <a class="el" href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a35a618bb93efcf6f87f192a3dcc33439">ChimeraTK::testable_rebot_sleep</a>
 </li>
-<li>stop_rebot_server()
-: <a class="el" href="namespace_chimera_t_k.html#a6f60549a352728669f936f757ee6fea9">ChimeraTK</a>
-</li>
-</ul>
-
-
-<h3><a id="index_w"></a>- w -</h3><ul>
-<li>wake_up_application()
-: <a class="el" href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a6901c950b4203167e804d151547676cf">ChimeraTK::testable_rebot_sleep</a>
-</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:10 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:09 for ChimeraTK-DeviceAccess by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

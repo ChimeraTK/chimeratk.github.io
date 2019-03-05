@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_ee326fa6789bb6bdc0887158d2381386.html">LogicalNameMapping</a></li><li class="navelem"><a class="el" href="dir_67c55bddc74dc3d666aacb5608bef154.html">include</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">LNMBackendVariableAccessor.h</div>  </div>
@@ -110,11 +127,15 @@ $(function() {
 <div class="ttc" id="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor_html_ae94d80239e06bac5719701ccabf61d61"><div class="ttname"><a href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#ae94d80239e06bac5719701ccabf61d61">ChimeraTK::LNMBackendVariableAccessor::isWriteable</a></div><div class="ttdeci">bool isWriteable() const override</div><div class="ttdoc">Check if transfer element is writeable. </div><div class="ttdef"><b>Definition:</b> <a href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00106">LNMBackendVariableAccessor.h:106</a></div></div>
 <div class="ttc" id="class_chimera_t_k_1_1_register_path_html"><div class="ttname"><a href="class_chimera_t_k_1_1_register_path.html">ChimeraTK::RegisterPath</a></div><div class="ttdoc">Class to store a register path name. </div><div class="ttdef"><b>Definition:</b> <a href="fileparsers_2include_2_register_path_8h_source.html#l00022">RegisterPath.h:22</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:08 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_ee326fa6789bb6bdc0887158d2381386.html">LogicalNameMapping</a></li><li class="navelem"><a class="el" href="dir_67c55bddc74dc3d666aacb5608bef154.html">include</a></li><li class="navelem"><a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h.html">LNMBackendVariableAccessor.h</a></li>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:08 for ChimeraTK-DeviceAccess by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

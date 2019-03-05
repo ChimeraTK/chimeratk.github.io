@@ -1,0 +1,5 @@
+var device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h =
+[
+    [ "NumericAddressedBackendMuxedRegisterAccessor", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor" ],
+    [ "DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h.html#a278538b785d2dba8e3a03b924e125c11", null ]
+];

@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_a.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -69,9 +90,6 @@ $(function() {
 <li>accept()
 : <a class="el" href="class_chimera_t_k_1_1_read_any_group_1_1_notification.html#a458a68f871ec3ab996a14195751a1dc4">ChimeraTK::ReadAnyGroup::Notification</a>
 </li>
-<li>ACCEPT_NEW_COMMAND
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#a88c3b7f424191bf1e1825cc11d511269">ChimeraTK::RebotDummyServer</a>
-</li>
 <li>Access
 : <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79f">ChimeraTK::RegisterInfoMap::RegisterInfo</a>
 </li>
@@ -79,13 +97,10 @@ $(function() {
 : <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#ae7320f8139ee7b794743bd4e203fbb12">ChimeraTK::NDRegisterAccessor&lt; UserType &gt;</a>
 </li>
 <li>accessData()
-: <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#a3552a259cae510a3f25b9d942bb1034f">ChimeraTK::NDRegisterAccessor&lt; UserType &gt;</a>
+: <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#a7199e39d27e7d3a32b92188526a11218">ChimeraTK::NDRegisterAccessor&lt; UserType &gt;</a>
 </li>
 <li>AccessModeFlags()
 : <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html#a9b8244b9cba5317c0d10106b651f1100">ChimeraTK::AccessModeFlags</a>
-</li>
-<li>Accessor()
-: <a class="el" href="class_async_test_dummy_1_1_accessor.html#af28450e85f3ac239b21e8e9a39f5be5b">AsyncTestDummy::Accessor&lt; UserType &gt;</a>
 </li>
 <li>accessor
 : <a class="el" href="class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html#aeeaf05b000058d15f908baddb7ea8be8">ChimeraTK::RegisterAccessor::AccessorHandler&lt; UserType &gt;</a>
@@ -126,25 +141,22 @@ $(function() {
 : <a class="el" href="class_chimera_t_k_1_1_backend_factory.html#ae166738b5e8ce2b948c542b91eb66237">ChimeraTK::BackendFactory</a>
 , <a class="el" href="class_chimera_t_k_1_1_utilities.html#a0124cd7dc8ef468a7c292788414848ed">ChimeraTK::Utilities</a>
 </li>
-<li>Argument()
-: <a class="el" href="struct_argument.html#aa5251ed60ee59544dfddc78043e7d1da">Argument</a>
-</li>
 <li>argument_type
 : <a class="el" href="class_chimera_t_k_1_1compare_module_name__pred.html#a49efb6c307aea11857be11d00383aeb0">ChimeraTK::compareModuleName_pred</a>
 </li>
 <li>ASCII
 : <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6b842be755b82e8e9f26f9104aac1600a2fbf8a3df38e98a5d5a95a70e74ad2b5">ChimeraTK::RegisterInfoMap::RegisterInfo</a>
 </li>
-<li>AsyncTestDummy()
-: <a class="el" href="class_async_test_dummy.html#a63702eaa288d6f09ca8eb470064f8e15">AsyncTestDummy</a>
-</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:10 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:09 for ChimeraTK-DeviceAccess by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

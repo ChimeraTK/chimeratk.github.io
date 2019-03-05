@@ -6,7 +6,6 @@ var searchData=
   ['device_5frw',['device_rw',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a198b5f4fef9dff99b6c27836f972bc19',1,'pciedev_io.h']]],
   ['devicebackendexception',['DeviceBackendException',['../namespace_chimera_t_k.html#a1dfea2352bc429cbaa5f91f3789ea597',1,'ChimeraTK']]],
   ['deviceexception',['DeviceException',['../namespace_chimera_t_k.html#a770dc1d694068dcd4f03531306f2a501',1,'ChimeraTK']]],
-  ['deviceinfo',['DeviceInfo',['../test_rebot_backend_8cpp.html#af3c9d498ece932803a45097eb49e600c',1,'testRebotBackend.cpp']]],
   ['deviceinfomappointer',['DeviceInfoMapPointer',['../namespace_chimera_t_k.html#af6310a045e1d4eb8181410f278fe7913',1,'ChimeraTK']]],
   ['dmapfileexception',['DMapFileException',['../namespace_chimera_t_k.html#a555c16a1ad898d4e9194189529406583',1,'ChimeraTK']]],
   ['dmapfileparserexception',['DMapFileParserException',['../namespace_chimera_t_k.html#aba04eaea022b5d8b1e0bb4a8060f8870',1,'ChimeraTK']]],

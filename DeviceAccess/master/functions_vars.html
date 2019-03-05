@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_vars.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -80,8 +101,7 @@ $(function() {
 : <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#aec9c8c6ab38ab64a67a88fe51c61c536">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>
 </li>
 <li>_backend
-: <a class="el" href="class_async_test_dummy_1_1_accessor.html#a6502e60adb782e6bd0e0edf152db917b">AsyncTestDummy::Accessor&lt; UserType &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_dummy_register_raw_accessor.html#a742952527782a0bc99687ec6515e89bd">ChimeraTK::DummyRegisterRawAccessor</a>
+: <a class="el" href="class_chimera_t_k_1_1_dummy_register_raw_accessor.html#a742952527782a0bc99687ec6515e89bd">ChimeraTK::DummyRegisterRawAccessor</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#acf37f862c7bfce45c8d2eaf569b48cd3">ChimeraTK::RegisterAccessor</a>
 , <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a818b2cd99b81c755458198933a8c7058">ChimeraTK::SubdeviceRegisterAccessor</a>
 </li>
@@ -102,10 +122,6 @@ $(function() {
 <li>_buffer
 : <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a01471d063f50467c648e053e573e6eaa">ChimeraTK::SubdeviceRegisterAccessor</a>
 </li>
-<li>_buffer_2D
-: <a class="el" href="struct_chimera_t_k_1_1detail_1_1_numeric_addressed_pre_post_actions_implementor.html#a84d9715417a50d3477087b39f1bb67f7">ChimeraTK::detail::NumericAddressedPrePostActionsImplementor&lt; UserType, DataConverterType, isRaw &gt;</a>
-, <a class="el" href="struct_chimera_t_k_1_1detail_1_1_numeric_addressed_pre_post_actions_implementor_3_01int32__t_00_91dd5d5613f0c19f6eb310f85cede6b8.html#a30d1118256dfed8145cd3864ae14e9f7">ChimeraTK::detail::NumericAddressedPrePostActionsImplementor&lt; int32_t, DataConverterType, true &gt;</a>
-</li>
 <li>_byteOffset
 : <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#aaf0b173c0183c6aa5bd763911ee69ff7">ChimeraTK::SubdeviceRegisterAccessor</a>
 </li>
@@ -116,14 +132,8 @@ $(function() {
 <li>_catalogue_mutable
 : <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#ad2eb01c9a9cacf4adcc1d6b8a1508afe">ChimeraTK::LogicalNameMappingBackend</a>
 </li>
-<li>_clientMayGetLock
-: <a class="el" href="struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html#ad0572acc2a726f94cb03c5943e7a4710">ChimeraTK::RebotSleepSynchroniser</a>
-</li>
 <li>_connected
 : <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a87b4855ffb37cc6edebe5085304ab354">ChimeraTK::DeviceBackendImpl</a>
-</li>
-<li>_connectionAcceptor
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#a1763b3d1b928a9004a60749039258f64">ChimeraTK::RebotDummyServer</a>
 </li>
 <li>_connectionTimeout
 : <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a5b131273731812b8b3496ecfc8d78562">ChimeraTK::RebotBackend</a>
@@ -134,16 +144,11 @@ $(function() {
 <li>_convertingAccessorHandlers
 : <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#a4e0d09081d664c6d6fc15b8374dfb04f">ChimeraTK::RegisterAccessor</a>
 </li>
-<li>_currentClientConnection
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#a9f2fef4c087de20f2ed1394b74e0f0d2">ChimeraTK::RebotDummyServer</a>
-</li>
 <li>_dataConverter
-: <a class="el" href="struct_chimera_t_k_1_1detail_1_1_numeric_addressed_pre_post_actions_implementor.html#a82cda5fc07b500d2b97805a7ce232ac4">ChimeraTK::detail::NumericAddressedPrePostActionsImplementor&lt; UserType, DataConverterType, isRaw &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a6868da1cb7ea83e8b67ee2d3cf052f3f">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>
+: <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a6868da1cb7ea83e8b67ee2d3cf052f3f">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>
 </li>
 <li>_dataDescriptor
 : <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a5db9fdbb7870c4c352c7abdc87f1e33d">ChimeraTK::LNMBackendRegisterInfo</a>
-, <a class="el" href="classmy_register_info.html#a77e60ff151bfaaa4ccd9c39f8b8a4d45">myRegisterInfo</a>
 </li>
 <li>_description
 : <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a66f52cb447c14f6e01f716c3d040238e">ChimeraTK::TransferElement</a>
@@ -172,14 +177,8 @@ $(function() {
 <li>_dmapFileName
 : <a class="el" href="class_chimera_t_k_1_1_device_info_map.html#ad68768f2b37c0735b8666d98dbe9c433">ChimeraTK::DeviceInfoMap</a>
 </li>
-<li>_dont_answer
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#aa28da67389d1b45dddff62e751578037">ChimeraTK::RebotDummyServer</a>
-</li>
 <li>_elementsOffset
 : <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#acc4d4d473d5a886b4528771877ffb0b8">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>
-</li>
-<li>_epoch
-: <a class="el" href="class_chimera_t_k_1_1_rebot_testable_clock.html#afc84ef5320a83473531edc3a7f59954c">ChimeraTK::RebotTestableClock</a>
 </li>
 <li>_errorDevice1
 : <a class="el" href="class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a5da881310ec227c71fffcbec36e1e6a7">ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem</a>
@@ -215,17 +214,8 @@ $(function() {
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a6b49da001999978dd11a4e91e904df84">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a93163f19acdf7505ad4a4e269c17ee74">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>
 </li>
-<li>_flags
-: <a class="el" href="class_async_test_dummy_1_1_accessor.html#a66df030939bd1399b09cd7ce947cdba4">AsyncTestDummy::Accessor&lt; UserType &gt;</a>
-</li>
-<li>_heartbeatCount
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#a442c884f1c72fc922700e5cb8731abdc">ChimeraTK::RebotDummyServer</a>
-</li>
 <li>_heartbeatThread
 : <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a38cbb37d6a5764b629ebed3916eaf084">ChimeraTK::RebotBackend</a>
-</li>
-<li>_helloCount
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#a46aa646bccb9bd9536fc120a680ec826">ChimeraTK::RebotDummyServer</a>
 </li>
 <li>_Host
 : <a class="el" href="struct_chimera_t_k_1_1_sdm.html#aec473660a07053d91c0d99ff3cdab21e">ChimeraTK::Sdm</a>
@@ -248,9 +238,6 @@ $(function() {
 <li>_Interface
 : <a class="el" href="struct_chimera_t_k_1_1_sdm.html#abbf96eb1d4445e947d4ace88aa43085d">ChimeraTK::Sdm</a>
 </li>
-<li>_io
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#aef2090657d426e1f06d411e7f5eb8df3">ChimeraTK::RebotDummyServer</a>
-</li>
 <li>_ioBuffer
 : <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#adf0efa60b77d7bdbcb97e9a46fe102e4">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>
 </li>
@@ -263,12 +250,6 @@ $(function() {
 </li>
 <li>_lmapFileName
 : <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#af84946cdb9dce95e0ee669127161a975">ChimeraTK::LogicalNameMappingBackend</a>
-</li>
-<li>_lock
-: <a class="el" href="struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html#a4eaa30a44af166fc0e674aae01110b94">ChimeraTK::RebotSleepSynchroniser</a>
-</li>
-<li>_longName
-: <a class="el" href="struct_argument.html#a38d7336f4f6d7a336a2392f2dc981e6d">Argument</a>
 </li>
 <li>_mapFile
 : <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a8ff43143f271f34f948afa5861ddb06b">ChimeraTK::DummyBackend</a>
@@ -285,29 +266,11 @@ $(function() {
 <li>_nBlocks
 : <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#acd2f9de66ee21dd155d1da09f569d2ff">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>
 </li>
-<li>_nbOfChannels
-: <a class="el" href="classmy_register_info.html#a180ff4161e9a676db08a1e5310956ce3">myRegisterInfo</a>
-</li>
-<li>_nbOfDimensions
-: <a class="el" href="classmy_register_info.html#a89e8c289ee957a4d741c519af5558398">myRegisterInfo</a>
-</li>
-<li>_nbOfElements
-: <a class="el" href="classmy_register_info.html#a5255a0d3f3507f7c23f5e618236526da">myRegisterInfo</a>
-</li>
 <li>_nBytes
 : <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a0b8b4a737197153fc7f624d361118736">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>
 </li>
-<li>_nextAddressInWords
-: <a class="el" href="struct_chimera_t_k_1_1_dummy_protocol1.html#a4b069fe0d9e019addd3fd1668bb31632">ChimeraTK::DummyProtocol1</a>
-</li>
-<li>_nextRequestedWakeup
-: <a class="el" href="struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html#a3a7b9e5fe7a1a5818a7d334f18244692">ChimeraTK::RebotSleepSynchroniser</a>
-</li>
 <li>_notifications
 : <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#a054a0375dc4d222ec9958cf59feaf442">ChimeraTK::TransferFuture</a>
-</li>
-<li>_now
-: <a class="el" href="class_chimera_t_k_1_1_rebot_testable_clock.html#a50a5f4a524f1e15c833ce110f0e1e5f1">ChimeraTK::RebotTestableClock</a>
 </li>
 <li>_numberOfBytes
 : <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a148d1bd3945c4898480f4c5a942489c2">ChimeraTK::NumericAddressedLowLevelTransferElement</a>
@@ -320,9 +283,6 @@ $(function() {
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a3a1c0c692c688004a3ef9cc70f1e7e83">ChimeraTK::NumericAddressedLowLevelTransferElement</a>
 , <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a6af895f9fc7fe4178918cadfbe53ca13">ChimeraTK::SubdeviceRegisterAccessor</a>
 </li>
-<li>_nWordsLeft
-: <a class="el" href="struct_chimera_t_k_1_1_dummy_protocol1.html#a639a250eb07d288a4fada019690e32f2">ChimeraTK::DummyProtocol1</a>
-</li>
 <li>_opened
 : <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#aaeb91e281c752ba579ad9b30bd6e7181">ChimeraTK::DeviceBackendImpl</a>
 </li>
@@ -332,12 +292,6 @@ $(function() {
 </li>
 <li>_Parameters
 : <a class="el" href="struct_chimera_t_k_1_1_sdm.html#a9430e98c8d7945f8d269e9d493ee5cd4">ChimeraTK::Sdm</a>
-</li>
-<li>_parent
-: <a class="el" href="struct_chimera_t_k_1_1_dummy_protocol0.html#ac34a9f3db38b5c5de063f4fb72de0af7">ChimeraTK::DummyProtocol0</a>
-</li>
-<li>_path
-: <a class="el" href="classmy_register_info.html#a1f263033ecf55189f63ee99259dc307f">myRegisterInfo</a>
 </li>
 <li>_pluginLibraries
 : <a class="el" href="class_chimera_t_k_1_1_device_info_map.html#a28a668fba42cd3f956889e064429f63b">ChimeraTK::DeviceInfoMap</a>
@@ -353,21 +307,12 @@ $(function() {
 </li>
 <li>_protocolImplementor
 : <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a7835c507785e12ce3d1bb75845f11069">ChimeraTK::RebotBackend</a>
-, <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#acfeec29cd0ed92b78b341cb47f47a858">ChimeraTK::RebotDummyServer</a>
-</li>
-<li>_protocolVersion
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#a6e452541618b86c49bcb7b115d5bede9">ChimeraTK::RebotDummyServer</a>
 </li>
 <li>_rawAccessor
-: <a class="el" href="struct_chimera_t_k_1_1detail_1_1_numeric_addressed_pre_post_actions_implementor.html#ac4e11079c67887c134efa474d873f4b1">ChimeraTK::detail::NumericAddressedPrePostActionsImplementor&lt; UserType, DataConverterType, isRaw &gt;</a>
-, <a class="el" href="struct_chimera_t_k_1_1detail_1_1_numeric_addressed_pre_post_actions_implementor_3_01int32__t_00_91dd5d5613f0c19f6eb310f85cede6b8.html#aaf364649478098f8afa642180166a9fa">ChimeraTK::detail::NumericAddressedPrePostActionsImplementor&lt; int32_t, DataConverterType, true &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ac0f6ebe0f51b2c0a856ac8e168030b37">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>
+: <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ac0f6ebe0f51b2c0a856ac8e168030b37">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>
 </li>
 <li>_rawAccessorHandler
 : <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#a1e3b4f23ab4fa74e52f41be067547c8c">ChimeraTK::RegisterAccessor</a>
-</li>
-<li>_readable
-: <a class="el" href="classmy_register_info.html#adf9eac2a7d7a057f286aba1e31de70d1">myRegisterInfo</a>
 </li>
 <li>_readOnlyAddresses
 : <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#aa4c11d084317145b92971a31046ea940">ChimeraTK::DummyBackend</a>
@@ -394,39 +339,15 @@ $(function() {
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a34ad56756270ef37ed7fd0ccd9674b1e">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#a73c7b3d24626251f85280c14d42c3acd">ChimeraTK::RegisterAccessor</a>
 </li>
-<li>_registerSpace
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#aee27b2a1d934ebd72f5690488eb29b9b">ChimeraTK::RebotDummyServer</a>
-</li>
 <li>_SdmVersion
 : <a class="el" href="struct_chimera_t_k_1_1_sdm.html#af45f7ca4c5663a3adeff975c4cbfc2fa">ChimeraTK::Sdm</a>
 </li>
 <li>_sequenceInfos
 : <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a9bd76854aba8cdacb62ca4881e8f73d7">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>
 </li>
-<li>_serverEndpoint
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#a1f8269dba4bdb9d06759d4a35f33b5ff">ChimeraTK::RebotDummyServer</a>
-</li>
-<li>_serverPort
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#adc71503591d188e5a724febfd69841fd">ChimeraTK::RebotDummyServer</a>
-</li>
-<li>_shortName
-: <a class="el" href="struct_argument.html#a36da86ea8486edfce1577578acf192eb">Argument</a>
-</li>
 <li>_startAddress
-: <a class="el" href="struct_chimera_t_k_1_1detail_1_1_numeric_addressed_pre_post_actions_implementor.html#a9c2ae6c57392125345636dc952cadb61">ChimeraTK::detail::NumericAddressedPrePostActionsImplementor&lt; UserType, DataConverterType, isRaw &gt;</a>
-, <a class="el" href="struct_chimera_t_k_1_1detail_1_1_numeric_addressed_pre_post_actions_implementor_3_01int32__t_00_91dd5d5613f0c19f6eb310f85cede6b8.html#a8664ae05cdef55a91b434d4c5a82bd94">ChimeraTK::detail::NumericAddressedPrePostActionsImplementor&lt; int32_t, DataConverterType, true &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aac8a1e7b32dd4cfde6b307df21907219">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>
+: <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aac8a1e7b32dd4cfde6b307df21907219">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a6c7e832c7412c05fbbc7d5dd30638f9a">ChimeraTK::NumericAddressedLowLevelTransferElement</a>
-</li>
-<li>_state
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#abf12ecc3eff64ee39cba575018799868">ChimeraTK::RebotDummyServer</a>
-</li>
-<li>_supportedFlags
-: <a class="el" href="classmy_register_info.html#a7b8cf84a4b48ed095b8c25ba57c41fe3">myRegisterInfo</a>
-</li>
-<li>_target
-: <a class="el" href="class_chimera_t_k_1_1detail_1_1_n_d_register_accessor_decorator_impl.html#a6175b5506c9873ea3cdaafaff540a87f">ChimeraTK::detail::NDRegisterAccessorDecoratorImpl&lt; UserType, TargetUserType &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1detail_1_1_n_d_register_accessor_decorator_impl_3_01_user_type_00_01_user_type_01_4.html#a7095da1a38889410256f7d9884273cfd">ChimeraTK::detail::NDRegisterAccessorDecoratorImpl&lt; UserType, UserType &gt;</a>
 </li>
 <li>_tcpCommunicator
 : <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a79e426b42755271b55f12010f1a7a289">ChimeraTK::RebotBackend</a>
@@ -451,19 +372,19 @@ $(function() {
 <li>_wordOffsetInRegister
 : <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a34307ddff43c6c4bcbef9c341a670da7">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>
 </li>
-<li>_writeable
-: <a class="el" href="classmy_register_info.html#a0f0e6ca6d97d5dd557cad5d5263b7639">myRegisterInfo</a>
-</li>
 <li>_writeCallbackFunctions
 : <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a285d504ac33efcead9ba2da059a70cdf">ChimeraTK::DummyBackend</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:10 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:09 for ChimeraTK-DeviceAccess by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

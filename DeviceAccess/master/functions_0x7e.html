@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_0x7e.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -63,12 +84,6 @@ $(function() {
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_0x7e"></a>- ~ -</h3><ul>
-<li>~Accessor()
-: <a class="el" href="class_async_test_dummy_1_1_accessor.html#a72607329bf1158ab82d2121a10d5fefa">AsyncTestDummy::Accessor&lt; UserType &gt;</a>
-</li>
-<li>~AsyncTestDummy()
-: <a class="el" href="class_async_test_dummy.html#acf4bb8e5e6f12d7898ac2e643f1c103e">AsyncTestDummy</a>
-</li>
 <li>~Device()
 : <a class="el" href="class_chimera_t_k_1_1_device.html#aac982d8d84a51a436c4f64dc3d024f2f">ChimeraTK::Device</a>
 </li>
@@ -120,9 +135,6 @@ $(function() {
 <li>~RebotBackend()
 : <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a544e6db41ef0f51fa2885da718511391">ChimeraTK::RebotBackend</a>
 </li>
-<li>~RebotDummyServer()
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#a56cc6f66ec7a506022378ab7046b33d8">ChimeraTK::RebotDummyServer</a>
-</li>
 <li>~RebotProtocol0()
 : <a class="el" href="struct_chimera_t_k_1_1_rebot_protocol0.html#a3c02abf4570372e1b54108bb841c97e3">ChimeraTK::RebotProtocol0</a>
 </li>
@@ -153,9 +165,6 @@ $(function() {
 <li>~TcpCtrl()
 : <a class="el" href="class_chimera_t_k_1_1_tcp_ctrl.html#a74dbac59591e9e582fe6d2d664d62983">ChimeraTK::TcpCtrl</a>
 </li>
-<li>~TestLocker()
-: <a class="el" href="struct_test_locker.html#a2350e86f1e896171ba56a812e7f7653d">TestLocker</a>
-</li>
 <li>~TransferElement()
 : <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adbc9b96f43bbf9ca3dec8311fe3e6039">ChimeraTK::TransferElement</a>
 </li>
@@ -164,11 +173,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:10 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:09 for ChimeraTK-DeviceAccess by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('todo.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,24 +80,12 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Todo List </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000077"></a>Member <a class="el" href="test_raw_data_type_info_8cpp.html#a6da2a469bc1f8589d2b0c1b0db117862">BOOST_AUTO_TEST_CASE</a>  (testRawAccessor)</dt>
-<dd>FIXME Test something that does not have raw data transfer  </dd>
-<dt><a class="anchor" id="_todo000081"></a>Member <a class="el" href="test_subdevice_backend_8cpp.html#aaa9eadcce1d343b4de95227d72be381f">BOOST_AUTO_TEST_CASE</a>  (testMayReplaceOther)</dt>
-<dd>Test exception handling!  </dd>
-<dt><a class="anchor" id="_todo000082"></a>Member <a class="el" href="test_subdevice_backend_8cpp.html#aabae0302783712ff4107c3ee06c98b5f">BOOST_AUTO_TEST_CASE</a>  (test3regsArray)</dt>
-<dd>Make a proper test with a custom backend, to make sure all elements of the array are properly written  </dd>
-<dt><a class="anchor" id="_todo000068"></a>Namespace <a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a>  </dt>
-<dd><p class="startdd">FIXME My dynamic init header is a hack.</p>
-<p>FIXME My dynamic init header is a hack.</p>
-<p class="enddd">FIXME My dynamic init header is a hack. </p>
-</dd>
 <dt><a class="anchor" id="_todo000001"></a>Class <a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html">ChimeraTK::BufferingRegisterAccessor&lt; UserType &gt;</a>  </dt>
 <dd>Add printed runtime warning after release of version 0.9  </dd>
 <dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="class_chimera_t_k_1_1_buffering_register_accessor.html#a3a16876cc8c203d583a27e580fd9cb71">ChimeraTK::BufferingRegisterAccessor&lt; UserType &gt;::BufferingRegisterAccessor</a>  ()</dt>
@@ -182,9 +192,9 @@ $(function() {
 <dd>Add printed runtime warning after release of version 0.8  </dd>
 <dt><a class="anchor" id="_todo000057"></a>Member <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#aee45b12542a086c11ecfbba78148cfde">ChimeraTK::RegisterAccessor::getRegisterInfo</a>  () const</dt>
 <dd>Add printed runtime warning after release of version 0.8  </dd>
-<dt><a class="anchor" id="_todo000053"></a>Member <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#af13049905708439a8c7a0213f1781ba9">ChimeraTK::RegisterAccessor::read</a>  () const</dt>
-<dd>Add printed runtime warning after release of version 0.8  </dd>
 <dt><a class="anchor" id="_todo000052"></a>Member <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#a9b85341127ea94712eee5fa54c1c81bd">ChimeraTK::RegisterAccessor::read</a>  (ConvertedDataType *convertedData, size_t nWords=1, uint32_t wordOffsetInRegister=0) const</dt>
+<dd>Add printed runtime warning after release of version 0.8  </dd>
+<dt><a class="anchor" id="_todo000053"></a>Member <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#af13049905708439a8c7a0213f1781ba9">ChimeraTK::RegisterAccessor::read</a>  () const</dt>
 <dd>Add printed runtime warning after release of version 0.8  </dd>
 <dt><a class="anchor" id="_todo000060"></a>Member <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#ae3b6ac3ac00103bc044664fe85849718">ChimeraTK::RegisterAccessor::readDMA</a>  (int32_t *data, size_t dataSize=0, uint32_t addRegOffset=0) const</dt>
 <dd>Add printed runtime warning after release of version 0.8  </dd>
@@ -192,9 +202,9 @@ $(function() {
 <dd>Add printed runtime warning after release of version 0.8  </dd>
 <dt><a class="anchor" id="_todo000050"></a>Member <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#aba251da7d81a431932ac1c8efaec8df0">ChimeraTK::RegisterAccessor::RegisterAccessor</a>  (boost::shared_ptr&lt; DeviceBackend &gt; deviceBackendPointer, const <a class="el" href="class_chimera_t_k_1_1_register_path.html" title="Class to store a register path name. ">RegisterPath</a> &amp;registerPathName)</dt>
 <dd>Add printed runtime warning after release of version 0.8  </dd>
-<dt><a class="anchor" id="_todo000054"></a>Member <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#af90621d044f5010bff9511c9074e0067">ChimeraTK::RegisterAccessor::write</a>  (ConvertedDataType const *convertedData, size_t nWords, uint32_t wordOffsetInRegister=0)</dt>
-<dd>Add printed runtime warning after release of version 0.8  </dd>
 <dt><a class="anchor" id="_todo000055"></a>Member <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#a98bd7370141dccfcaa0481bdde7d56fa">ChimeraTK::RegisterAccessor::write</a>  (ConvertedDataType const &amp;convertedData)</dt>
+<dd>Add printed runtime warning after release of version 0.8  </dd>
+<dt><a class="anchor" id="_todo000054"></a>Member <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#af90621d044f5010bff9511c9074e0067">ChimeraTK::RegisterAccessor::write</a>  (ConvertedDataType const *convertedData, size_t nWords, uint32_t wordOffsetInRegister=0)</dt>
 <dd>Add printed runtime warning after release of version 0.8  </dd>
 <dt><a class="anchor" id="_todo000061"></a>Member <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#a90c2eed17f0fd8ddf8fcf7f5a9c1d2dc">ChimeraTK::RegisterAccessor::writeDMA</a>  (int32_t const *data, size_t dataSize=0, uint32_t addRegOffset=0)</dt>
 <dd>Add printed runtime warning after release of version 0.8  </dd>
@@ -209,16 +219,17 @@ $(function() {
 <dt><a class="anchor" id="_todo000062"></a>Member <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a781f771e098890bc458ea65e24cea376">ChimeraTK::TransferElementAbstractor::setPersistentDataStorage</a>  (boost::shared_ptr&lt; ChimeraTK::PersistentDataStorage &gt; storage)</dt>
 <dd>TODO does this make sense?  </dd>
 <dt><a class="anchor" id="_todo000063"></a>Member <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a13f0ae7ce386f0f34b9ea9db867efbf4">ChimeraTK::TransferGroup::addAccessor</a>  (const boost::shared_ptr&lt; TransferElement &gt; &amp;accessor)</dt>
-<dd>implement smarter and more efficient!  </dd>
-<dt><a class="anchor" id="_todo000084"></a>Member <a class="el" href="class_transfer_group_test.html#af3a7ab7317da1881aacbc8c4469f5582">TransferGroupTest::testCallsToPrePostFunctionsInLowLevel</a>  ()</dt>
-<dd>FIXME transfer group should become read-only in this scenario!!! </dd>
+<dd>implement smarter and more efficient! </dd>
 </dl>
 </div></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:09 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:08 for ChimeraTK-DeviceAccess by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

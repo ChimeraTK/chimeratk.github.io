@@ -1,14 +1,17 @@
 var searchData=
 [
-  ['scalarregisteraccessor_2eh',['ScalarRegisterAccessor.h',['../device_2include_2_scalar_register_accessor_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_scalar_register_accessor_8h.html',1,'(Global Namespace)']]],
-  ['scaleregisterplugin_2eh',['ScaleRegisterPlugin.h',['../_scale_register_plugin_8h.html',1,'']]],
-  ['shareddummybackend_2ecc',['SharedDummyBackend.cc',['../_shared_dummy_backend_8cc.html',1,'']]],
-  ['shareddummybackend_2eh',['SharedDummyBackend.h',['../_shared_dummy_backend_8h.html',1,'']]],
-  ['sharedmemorymanager_2ecc',['SharedMemoryManager.cc',['../_shared_memory_manager_8cc.html',1,'']]],
-  ['subdevicebackend_2ecc',['SubdeviceBackend.cc',['../_subdevice_backend_8cc.html',1,'']]],
-  ['subdevicebackend_2eh',['SubdeviceBackend.h',['../device__backends_2_subdevice_2include_2_subdevice_backend_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_subdevice_backend_8h.html',1,'(Global Namespace)']]],
-  ['subdeviceregisteraccessor_2ecc',['SubdeviceRegisterAccessor.cc',['../_subdevice_register_accessor_8cc.html',1,'']]],
-  ['subdeviceregisteraccessor_2eh',['SubdeviceRegisterAccessor.h',['../_subdevice_register_accessor_8h.html',1,'']]],
-  ['supportedusertypes_2eh',['SupportedUserTypes.h',['../mtca4u__compatibility__headers_2_supported_user_types_8h.html',1,'(Global Namespace)'],['../util_2include_2_supported_user_types_8h.html',1,'(Global Namespace)']]],
-  ['syncndregisteraccessor_2eh',['SyncNDRegisterAccessor.h',['../device__backends_2include_2_sync_n_d_register_accessor_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_sync_n_d_register_accessor_8h.html',1,'(Global Namespace)']]]
+  ['tcpctrl_2ecc',['TcpCtrl.cc',['../_tcp_ctrl_8cc.html',1,'']]],
+  ['tcpctrl_2eh',['TcpCtrl.h',['../_tcp_ctrl_8h.html',1,'']]],
+  ['testablerebotsleep_2ecc',['testableRebotSleep.cc',['../testable_rebot_sleep_8cc.html',1,'']]],
+  ['testablerebotsleep_2eh',['testableRebotSleep.h',['../testable_rebot_sleep_8h.html',1,'']]],
+  ['timestamp_2eh',['TimeStamp.h',['../device_2include_2_time_stamp_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_time_stamp_8h.html',1,'(Global Namespace)']]],
+  ['transferelement_2ecc',['TransferElement.cc',['../_transfer_element_8cc.html',1,'']]],
+  ['transferelement_2eh',['TransferElement.h',['../device__backends_2include_2_transfer_element_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_transfer_element_8h.html',1,'(Global Namespace)']]],
+  ['transferelementabstractor_2eh',['TransferElementAbstractor.h',['../device_2include_2_transfer_element_abstractor_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_transfer_element_abstractor_8h.html',1,'(Global Namespace)']]],
+  ['transferelementid_2eh',['TransferElementID.h',['../device_2include_2_transfer_element_i_d_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_transfer_element_i_d_8h.html',1,'(Global Namespace)']]],
+  ['transferfuture_2ecc',['TransferFuture.cc',['../_transfer_future_8cc.html',1,'']]],
+  ['transferfuture_2eh',['TransferFuture.h',['../device_2include_2_transfer_future_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_transfer_future_8h.html',1,'(Global Namespace)']]],
+  ['transfergroup_2ecc',['TransferGroup.cc',['../_transfer_group_8cc.html',1,'']]],
+  ['transfergroup_2eh',['TransferGroup.h',['../device_2include_2_transfer_group_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_transfer_group_8h.html',1,'(Global Namespace)']]],
+  ['twodregisteraccessor_2eh',['TwoDRegisterAccessor.h',['../device_2include_2_two_d_register_accessor_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_two_d_register_accessor_8h.html',1,'(Global Namespace)']]]
 ];

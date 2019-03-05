@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_f.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,9 +86,6 @@ $(function() {
 <h3><a id="index_f"></a>- f -</h3><ul>
 <li>failedRegistrationThrowerFunction()
 : <a class="el" href="class_chimera_t_k_1_1_backend_factory.html#ae1b2a669337e5120c05973d79f783482">ChimeraTK::BackendFactory</a>
-</li>
-<li>fakeLowLevel
-: <a class="el" href="struct_counting_decorator.html#a5a2933829250c27cf1c595adfe223875">CountingDecorator&lt; T &gt;</a>
 </li>
 <li>fetchFromRebotServer()
 : <a class="el" href="struct_chimera_t_k_1_1_rebot_protocol0.html#a215298fa419ff648eb21597ea55c133e">ChimeraTK::RebotProtocol0</a>
@@ -111,17 +129,11 @@ $(function() {
 <li>FixedPointConvertingRawDecorator()
 : <a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html#a8908fceed581649fee341fb598114fea">ChimeraTK::FixedPointConvertingRawDecorator&lt; TargetUserType &gt;</a>
 </li>
-<li>Fixture()
-: <a class="el" href="struct_fixture.html#a7bd87f852602d02a205b4a811530dfe4">Fixture</a>
-</li>
 <li>float32
 : <a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a77409000048075a168901376095a70b8">ChimeraTK::DataType</a>
 </li>
 <li>float64
 : <a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899acf9a113559e682b39aab0754540f31cc">ChimeraTK::DataType</a>
-</li>
-<li>for_each_callable()
-: <a class="el" href="class_chimera_t_k_1_1detail_1_1for__each__callable.html#aacd6efc5bcac1d97a273aa48576e5eb5">ChimeraTK::detail::for_each_callable&lt; X &gt;</a>
 </li>
 <li>fpc
 : <a class="el" href="class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html#a365c5bda021a4822b8019ec828e7fba2">ChimeraTK::DummyMultiplexedRegisterAccessor&lt; T &gt;</a>
@@ -140,16 +152,16 @@ $(function() {
 <li>FundamentalType
 : <a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8">ChimeraTK::RegisterInfo</a>
 </li>
-<li>futureCreated
-: <a class="el" href="class_async_test_dummy_1_1_accessor.html#a3948d6810818f46bbbf902f338aabe01">AsyncTestDummy::Accessor&lt; UserType &gt;</a>
-</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:10 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:09 for ChimeraTK-DeviceAccess by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

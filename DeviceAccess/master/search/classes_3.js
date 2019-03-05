@@ -7,6 +7,5 @@ var searchData=
   ['copmaredregisterinfosbyname_5ffunctor',['copmaredRegisterInfosByName_functor',['../class_chimera_t_k_1_1copmared_register_infos_by_name__functor.html',1,'ChimeraTK']]],
   ['copyregisterdecorator',['CopyRegisterDecorator',['../struct_chimera_t_k_1_1_copy_register_decorator.html',1,'ChimeraTK']]],
   ['copyregisterdecoratortrait',['CopyRegisterDecoratorTrait',['../struct_chimera_t_k_1_1_copy_register_decorator_trait.html',1,'ChimeraTK']]],
-  ['countingdecorator',['CountingDecorator',['../struct_counting_decorator.html',1,'']]],
   ['custombackend',['CustomBackend',['../class_custom_backend.html',1,'']]]
 ];

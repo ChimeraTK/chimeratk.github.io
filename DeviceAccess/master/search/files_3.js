@@ -20,10 +20,5 @@ var searchData=
   ['dmapfilesparser_2eh',['DMapFilesParser.h',['../fileparsers_2include_2_d_map_files_parser_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_d_map_files_parser_8h.html',1,'(Global Namespace)']]],
   ['dummybackend_2ecc',['DummyBackend.cc',['../_dummy_backend_8cc.html',1,'']]],
   ['dummybackend_2eh',['DummyBackend.h',['../device__backends_2include_2_dummy_backend_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_dummy_backend_8h.html',1,'(Global Namespace)']]],
-  ['dummyprotocol0_2ecc',['DummyProtocol0.cc',['../_dummy_protocol0_8cc.html',1,'']]],
-  ['dummyprotocol0_2eh',['DummyProtocol0.h',['../_dummy_protocol0_8h.html',1,'']]],
-  ['dummyprotocol1_2ecc',['DummyProtocol1.cc',['../_dummy_protocol1_8cc.html',1,'']]],
-  ['dummyprotocol1_2eh',['DummyProtocol1.h',['../_dummy_protocol1_8h.html',1,'']]],
-  ['dummyprotocolimplementor_2eh',['DummyProtocolImplementor.h',['../_dummy_protocol_implementor_8h.html',1,'']]],
   ['dummyregisteraccessor_2eh',['DummyRegisterAccessor.h',['../device__backends_2include_2_dummy_register_accessor_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_dummy_register_accessor_8h.html',1,'(Global Namespace)']]]
 ];

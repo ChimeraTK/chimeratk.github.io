@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_func_s.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,9 +102,6 @@ $(function() {
 <li>sendRebotReadRequest()
 : <a class="el" href="struct_chimera_t_k_1_1_rebot_protocol0.html#ad108401627f9945f9b77f3de724b1c36">ChimeraTK::RebotProtocol0</a>
 </li>
-<li>sendSingleWord()
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#af5b3f4f9abc781ac46e09a79c031f0c5">ChimeraTK::RebotDummyServer</a>
-</li>
 <li>setAddress()
 : <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae6d65498775b33644ee0d6757e8ff06e">ChimeraTK::NumericAddressedLowLevelTransferElement</a>
 , <a class="el" href="class_chimera_t_k_1_1_tcp_ctrl.html#a3a3a9b75954a7067f681939d0f4f21b0">ChimeraTK::TcpCtrl</a>
@@ -116,9 +134,6 @@ $(function() {
 <li>setReadOnly()
 : <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a750f9e290fc8449faf094177942441f9">ChimeraTK::DummyBackend</a>
 </li>
-<li>setTime()
-: <a class="el" href="class_chimera_t_k_1_1_rebot_testable_clock.html#ab34d7588e28833be776c9912e57f79e2">ChimeraTK::RebotTestableClock</a>
-</li>
 <li>setWriteCallbackFunction()
 : <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a1bef5821adab43ec90aeca88767632ae">ChimeraTK::DummyBackend</a>
 </li>
@@ -128,24 +143,11 @@ $(function() {
 <li>shutdown()
 : <a class="el" href="class_chimera_t_k_1_1_sync_n_d_register_accessor.html#a4fe7dcd426667f3f5283fabad34f6576">ChimeraTK::SyncNDRegisterAccessor&lt; UserType &gt;</a>
 </li>
-<li>singleWordWrite()
-: <a class="el" href="struct_chimera_t_k_1_1_dummy_protocol0.html#a5b1420d7783d3ff12b2e4dbaff6f283c">ChimeraTK::DummyProtocol0</a>
-, <a class="el" href="struct_dummy_protocol_implementor.html#a7a8c27b5c69cb07f92d304515249e7f3">DummyProtocolImplementor</a>
-</li>
 <li>splitStringAtLastDot()
 : <a class="el" href="class_chimera_t_k_1_1_map_file_parser.html#af8b0334352da84a275101083c91c462a">ChimeraTK::MapFileParser</a>
 </li>
-<li>start()
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#abb38ed196f76e6d2863f6929bef7feda">ChimeraTK::RebotDummyServer</a>
-</li>
 <li>startsWith()
 : <a class="el" href="class_chimera_t_k_1_1_register_path.html#a6ccb225c24d44fc469dc190a1fba80af">ChimeraTK::RegisterPath</a>
-</li>
-<li>stop()
-: <a class="el" href="class_chimera_t_k_1_1_rebot_dummy_server.html#afd21652e5990e7687316ef743bb768a2">ChimeraTK::RebotDummyServer</a>
-</li>
-<li>stow_private()
-: <a class="el" href="structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5">accessPrivateData::stow_private&lt; Tag, x &gt;</a>
 </li>
 <li>SubdeviceBackend()
 : <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a767cac6cd44e993c13796c841a45c54b">ChimeraTK::SubdeviceBackend</a>
@@ -162,11 +164,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:10 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:09 for ChimeraTK-DeviceAccess by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

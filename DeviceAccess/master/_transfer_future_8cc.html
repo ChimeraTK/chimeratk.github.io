@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_transfer_future_8cc.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,15 +80,9 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_820b2b9dd608784780e51ab49715a98b.html">device</a></li><li class="navelem"><a class="el" href="dir_a5d8e4da9cc80025df522d391d7137df.html">src</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">TransferFuture.cc File Reference</div>  </div>
 </div><!--header-->
@@ -75,6 +91,14 @@ $(function() {
 <code>#include &quot;TransferElement.h&quot;</code><br />
 <code>#include &lt;boost/chrono.hpp&gt;</code><br />
 <code>#include &lt;boost/ratio.hpp&gt;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for TransferFuture.cc:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_transfer_future_8cc__incl.svg" width="606" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 </div>
 <p><a href="_transfer_future_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -83,22 +107,17 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespace_chimera_t_k"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></td></tr>
 <tr class="memdesc:namespace_chimera_t_k"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides storage object for devices descriptions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_chimera_t_k_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1detail.html">ChimeraTK::detail</a></td></tr>
-<tr class="memdesc:namespace_chimera_t_k_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class for <a class="el" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d" title="Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...">for_each()</a>. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a5f66716099251ed1094bc45bbc0386c7"><td class="memItemLeft" align="right" valign="top">cppext::future_queue&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1detail.html#a5f66716099251ed1094bc45bbc0386c7">ChimeraTK::detail::getFutureQueueFromTransferFuture</a> (<a class="el" href="class_chimera_t_k_1_1_transfer_future.html">ChimeraTK::TransferFuture</a> &amp;future)</td></tr>
-<tr class="memdesc:a5f66716099251ed1094bc45bbc0386c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-member function to obtain the underlying future_queue from a <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a>.  <a href="namespace_chimera_t_k_1_1detail.html#a5f66716099251ed1094bc45bbc0386c7">More...</a><br /></td></tr>
-<tr class="separator:a5f66716099251ed1094bc45bbc0386c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:09 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_820b2b9dd608784780e51ab49715a98b.html">device</a></li><li class="navelem"><a class="el" href="dir_a5d8e4da9cc80025df522d391d7137df.html">src</a></li><li class="navelem"><a class="el" href="_transfer_future_8cc.html">TransferFuture.cc</a></li>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:08 for ChimeraTK-DeviceAccess by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

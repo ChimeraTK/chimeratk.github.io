@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_chimera_t_k_1_1_register_info.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_register_info.html">RegisterInfo</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -78,17 +95,14 @@ $(function() {
  <a href="class_chimera_t_k_1_1_register_info.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for ChimeraTK::RegisterInfo:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_chimera_t_k_1_1_register_info.png" usemap="#ChimeraTK::RegisterInfo_map" alt=""/>
-  <map id="ChimeraTK::RegisterInfo_map" name="ChimeraTK::RegisterInfo_map">
-<area href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html" title="RegisterInfo structure for the LogicalNameMappingBackend. " alt="ChimeraTK::LNMBackendRegisterInfo" shape="rect" coords="0,56,245,80"/>
-<area href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html" title="Stores information about one PCIe register. " alt="ChimeraTK::RegisterInfoMap::RegisterInfo" shape="rect" coords="255,56,500,80"/>
-<area href="classmy_register_info.html" alt="myRegisterInfo" shape="rect" coords="510,56,755,80"/>
-</map>
- </div></div>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ChimeraTK::RegisterInfo:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_register_info__inherit__graph.svg" width="507" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -206,6 +220,14 @@ Public Member Functions</h2></td></tr>
 <p>Virtual destructor. </p>
 
 <p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00148">148</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_register_info_a92a66342bceca280cef3846e74b051c6_cgraph.svg" width="443" height="510"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -236,7 +258,15 @@ Public Member Functions</h2></td></tr>
 <p>Return desciption of the actual payload data for this register. </p>
 <p>See the description of <a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html" title="Class describing the actual payload data format of a register in an abstract manner. ">DataDescriptor</a> for more information. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aa9557afbc83009c30022f9f7237b6f3e">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, <a class="el" href="classmy_register_info.html#ad3e8cab96ac744704ac11abf017fa851">myRegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a65649048b65d5ea484e510d389eeae3a">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aa9557afbc83009c30022f9f7237b6f3e">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a65649048b65d5ea484e510d389eeae3a">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_register_info_a341d7226406a1b1d91b4dbaecec80b5a_icgraph.svg" width="419" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -265,7 +295,15 @@ Public Member Functions</h2></td></tr>
 
 <p>Return number of channels in register. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a86d5bd5caa1c9db167e3e76fba76714a">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, <a class="el" href="classmy_register_info.html#a8afebaf3baa27beba0435f92dcf6c550">myRegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a9419885cc47cd49e71660f079047ea2b">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a86d5bd5caa1c9db167e3e76fba76714a">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a9419885cc47cd49e71660f079047ea2b">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_register_info_a2fdccd50df8d11ab3b524d936e62793e_icgraph.svg" width="419" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -294,7 +332,15 @@ Public Member Functions</h2></td></tr>
 
 <p>Return number of dimensions of this register. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#af5ef814abc5cc61fe3f8fc3197247bd4">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, <a class="el" href="classmy_register_info.html#adc3fed9349a571cf3226fd145e62a496">myRegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a31d811ed9e170e794f5c65cf9bd5d33d">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#af5ef814abc5cc61fe3f8fc3197247bd4">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a31d811ed9e170e794f5c65cf9bd5d33d">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_register_info_a1642a8e5d3889f619c0e7958706aff30_icgraph.svg" width="434" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -323,7 +369,15 @@ Public Member Functions</h2></td></tr>
 
 <p>Return number of elements per channel. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a2e43900456165f8b11575398d2d3752e">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, <a class="el" href="classmy_register_info.html#ae8145c77ae96df6cd5384ef67f48912b">myRegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a77065ed1981822f356f143dcb136bd47">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a2e43900456165f8b11575398d2d3752e">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a77065ed1981822f356f143dcb136bd47">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_register_info_acc18b368ac96ca55d2a280aef0c6de43_icgraph.svg" width="419" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -352,7 +406,15 @@ Public Member Functions</h2></td></tr>
 
 <p>Return full path name of the register (including modules) </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a09572e5a47b479b208a0a0225c43eb29">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, <a class="el" href="classmy_register_info.html#ade061abb459aac00556b421dedd23a13">myRegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a15124f8b7e8aedbc4a1cbdbb5b78225f">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a09572e5a47b479b208a0a0225c43eb29">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a15124f8b7e8aedbc4a1cbdbb5b78225f">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_register_info_abb41176808c22e66a7708fb155f2fdbb_icgraph.svg" width="419" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -381,7 +443,15 @@ Public Member Functions</h2></td></tr>
 
 <p>Return all supported AccessModes for this register. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a336eeb3cbd25264fbe4338933467d1e6">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, <a class="el" href="classmy_register_info.html#a91a84451c482c514214f1e2bf49d977e">myRegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a8d915425d300ff6b398831727717509e">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a336eeb3cbd25264fbe4338933467d1e6">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a8d915425d300ff6b398831727717509e">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_register_info_a9b672a259a7daccda1165fe77102eb9c_icgraph.svg" width="443" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -410,7 +480,15 @@ Public Member Functions</h2></td></tr>
 
 <p>Return whether the register is readable. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a03eb70a6ba306a5c3180c64a21c06b69">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, <a class="el" href="classmy_register_info.html#a19975a112e6b0d3795fd423eee953ad5">myRegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ab1dbd642172674091c39b188dbdd7942">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a03eb70a6ba306a5c3180c64a21c06b69">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ab1dbd642172674091c39b188dbdd7942">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_register_info_a6e479c07f9e757d2191f943110ba8fdc_icgraph.svg" width="419" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -439,7 +517,15 @@ Public Member Functions</h2></td></tr>
 
 <p>Return whether the register is writeable. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aac548b0ce34daec49406f49165a39e29">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, <a class="el" href="classmy_register_info.html#abd50ef365c6ea0646f2c385866d8254a">myRegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad059e76a50742d83b31e0997b61006fa">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aac548b0ce34daec49406f49165a39e29">ChimeraTK::RegisterInfoMap::RegisterInfo</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad059e76a50742d83b31e0997b61006fa">ChimeraTK::LNMBackendRegisterInfo</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_register_info_a1c6958586d0b1a4ad3564b20a89a0111_icgraph.svg" width="419" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -447,11 +533,15 @@ Public Member Functions</h2></td></tr>
 <li>fileparsers/include/<a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:09 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_register_info.html">RegisterInfo</a></li>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:09 for ChimeraTK-DeviceAccess by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

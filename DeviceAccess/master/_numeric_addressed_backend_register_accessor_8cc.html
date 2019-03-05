@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_numeric_addressed_backend_register_accessor_8cc.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,21 +80,23 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_3fa1c5292c3942cc834181309cb54b60.html">src</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">NumericAddressedBackendRegisterAccessor.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;NumericAddressedBackendRegisterAccessor.h&quot;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for NumericAddressedBackendRegisterAccessor.cc:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_numeric_addressed_backend_register_accessor_8cc__incl.svg" width="270" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 </div>
 <p><a href="_numeric_addressed_backend_register_accessor_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -81,15 +105,9 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespace_chimera_t_k"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></td></tr>
 <tr class="memdesc:namespace_chimera_t_k"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides storage object for devices descriptions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_chimera_t_k_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1detail.html">ChimeraTK::detail</a></td></tr>
-<tr class="memdesc:namespace_chimera_t_k_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class for <a class="el" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d" title="Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...">for_each()</a>. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3557ba4f7b806b78be9ed1474ed6f4b8"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:a3557ba4f7b806b78be9ed1474ed6f4b8"><td class="memTemplItemLeft" align="right" valign="top">FixedPointConverter&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1detail.html#a3557ba4f7b806b78be9ed1474ed6f4b8">ChimeraTK::detail::createDataConverter&lt; FixedPointConverter &gt;</a> (boost::shared_ptr&lt; RegisterInfoMap::RegisterInfo &gt; registerInfo)</td></tr>
-<tr class="separator:a3557ba4f7b806b78be9ed1474ed6f4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accdf6e82b0e0f877afe1b7aa82869238"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#accdf6e82b0e0f877afe1b7aa82869238">ChimeraTK::INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (NumericAddressedBackendRegisterAccessor, FixedPointConverter, true)</td></tr>
 <tr class="separator:accdf6e82b0e0f877afe1b7aa82869238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ceca03b7d4fb33ff39d1bbf46c58d28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a8ceca03b7d4fb33ff39d1bbf46c58d28">ChimeraTK::INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (NumericAddressedBackendRegisterAccessor, FixedPointConverter, false)</td></tr>
@@ -98,19 +116,17 @@ Functions</h2></td></tr>
 <tr class="separator:a23af3a60e30fdf528b19ebb8029d91d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af38895646396ebc2165faa02474d6658"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#af38895646396ebc2165faa02474d6658">ChimeraTK::INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (NumericAddressedBackendRegisterAccessor, IEEE754_SingleConverter, false)</td></tr>
 <tr class="separator:af38895646396ebc2165faa02474d6658"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a3043a9633f9257450574c8882af34621"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:a3043a9633f9257450574c8882af34621"><td class="memTemplItemLeft" align="right" valign="top">IEEE754_SingleConverter&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1detail.html#a3043a9633f9257450574c8882af34621">ChimeraTK::detail::createDataConverter&lt; IEEE754_SingleConverter &gt;</a> (boost::shared_ptr&lt; RegisterInfoMap::RegisterInfo &gt;)</td></tr>
-<tr class="separator:a3043a9633f9257450574c8882af34621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:09 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_3fa1c5292c3942cc834181309cb54b60.html">src</a></li><li class="navelem"><a class="el" href="_numeric_addressed_backend_register_accessor_8cc.html">NumericAddressedBackendRegisterAccessor.cc</a></li>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:08 for ChimeraTK-DeviceAccess by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

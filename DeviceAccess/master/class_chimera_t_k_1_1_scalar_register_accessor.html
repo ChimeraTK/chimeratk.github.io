@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_chimera_t_k_1_1_scalar_register_accessor.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ScalarRegisterAccessor</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -77,16 +94,22 @@ $(function() {
  <a href="class_chimera_t_k_1_1_scalar_register_accessor.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for ChimeraTK::ScalarRegisterAccessor&lt; UserType &gt;:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_chimera_t_k_1_1_scalar_register_accessor.png" usemap="#ChimeraTK::ScalarRegisterAccessor_3C_20UserType_20_3E_map" alt=""/>
-  <map id="ChimeraTK::ScalarRegisterAccessor_3C_20UserType_20_3E_map" name="ChimeraTK::ScalarRegisterAccessor_3C_20UserType_20_3E_map">
-<area href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html" title="Base class for the reigster accessor abstractors (ScalarRegisterAccessor, OneDRegisterAccessor and Tw..." alt="ChimeraTK::NDRegisterAccessorAbstractor&lt; UserType &gt;" shape="rect" coords="0,56,335,80"/>
-<area href="class_chimera_t_k_1_1_transfer_element_abstractor.html" title="Base class for register accessors abstractors independent of the UserType. " alt="ChimeraTK::TransferElementAbstractor" shape="rect" coords="0,0,335,24"/>
-</map>
- </div></div>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ChimeraTK::ScalarRegisterAccessor&lt; UserType &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_scalar_register_accessor__inherit__graph.svg" width="244" height="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for ChimeraTK::ScalarRegisterAccessor&lt; UserType &gt;:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_scalar_register_accessor__coll__graph.svg" width="244" height="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -439,6 +462,14 @@ template&lt;typename UserType&gt; </div>
 <p>Pre-increment operator for the first element. </p>
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00056">56</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_scalar_register_accessor_a9a26027c7e3539b8aab569787b3466f1_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -471,6 +502,14 @@ template&lt;typename UserType&gt; </div>
 <p>Post-increment operator for the first element. </p>
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00062">62</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_scalar_register_accessor_ac91a668d687c25e64f20c3ee9e4ac7c2_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -502,6 +541,14 @@ template&lt;typename UserType&gt; </div>
 <p>Pre-decrement operator for the first element. </p>
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00059">59</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_scalar_register_accessor_a2749394211fe379feeeaa300d6806c92_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -534,6 +581,14 @@ template&lt;typename UserType&gt; </div>
 <p>Post-decrement operator for the first element. </p>
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00069">69</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_scalar_register_accessor_a057d326077173abf52292ade42d2c8ad_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -566,6 +621,14 @@ template&lt;typename UserType&gt; </div>
 <p>Assignment operator, assigns the first element. </p>
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00050">50</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_scalar_register_accessor_a47763b3295a8b0ac97ae45e3d08109de_icgraph.svg" width="448" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -635,11 +698,15 @@ template&lt;typename UserType&gt; </div>
 <li>device/include/<a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 1 2019 05:53:10 for ChimeraTK-DeviceAccess by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ScalarRegisterAccessor</a></li>
+    <li class="footer">Generated on Tue Mar 5 2019 05:53:09 for ChimeraTK-DeviceAccess by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>
