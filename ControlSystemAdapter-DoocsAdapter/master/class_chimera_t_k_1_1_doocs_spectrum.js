@@ -1,7 +1,9 @@
 var class_chimera_t_k_1_1_doocs_spectrum =
 [
     [ "DoocsSpectrum", "class_chimera_t_k_1_1_doocs_spectrum.html#a1fba408e7a8f7eb4e701e2fecaebc957", null ],
+    [ "DoocsSpectrum", "class_chimera_t_k_1_1_doocs_spectrum.html#a4820d2f13726bf837754622774fc0648", null ],
     [ "auto_init", "class_chimera_t_k_1_1_doocs_spectrum.html#a838549fdb4e178c0b115b52f16fca2df", null ],
+    [ "get", "class_chimera_t_k_1_1_doocs_spectrum.html#abd733e2ebb9c551e6eb192f4542c1492", null ],
     [ "publishZeroMQ", "class_chimera_t_k_1_1_doocs_spectrum.html#addacf7abb78920edcaf91d454da646d8", null ],
     [ "sendToDevice", "class_chimera_t_k_1_1_doocs_spectrum.html#a82a1c3ef4e19443909353485811dff6a", null ],
     [ "set", "class_chimera_t_k_1_1_doocs_spectrum.html#a06ed6051d5722b690e217d39073ae24f", null ],
@@ -12,5 +14,6 @@ var class_chimera_t_k_1_1_doocs_spectrum =
     [ "_macroPulseNumberSource", "class_chimera_t_k_1_1_doocs_spectrum.html#af3e583d4bd5f07dbec9385d70cb404b2", null ],
     [ "_processArray", "class_chimera_t_k_1_1_doocs_spectrum.html#a534524b0be3fdafc240d8629371933b3", null ],
     [ "_startAccessor", "class_chimera_t_k_1_1_doocs_spectrum.html#a1b0ff12ba9b213be7d02ab0964ac635d", null ],
+    [ "nBuffers", "class_chimera_t_k_1_1_doocs_spectrum.html#a64a3ec02061e0ee6938b980bbc80bd78", null ],
     [ "publishZMQ", "class_chimera_t_k_1_1_doocs_spectrum.html#ad9c0e9ccb9a13e93bc3078dcde4e74fd", null ]
 ];

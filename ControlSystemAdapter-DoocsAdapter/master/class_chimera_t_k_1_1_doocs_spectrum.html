@@ -114,9 +114,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1fba408e7a8f7eb4e701e2fecaebc957"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a1fba408e7a8f7eb4e701e2fecaebc957">DoocsSpectrum</a> (EqFct *eqFct, std::string const &amp;doocsPropertyName, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt;&gt; const &amp;processArray, <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;updater, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt;&gt; const &amp;startAccessor, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt;&gt; const &amp;incrementAccessor)</td></tr>
 <tr class="memdesc:a1fba408e7a8f7eb4e701e2fecaebc957"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor expects an NDRegisterAccessor of float, which usually will be a decorator to the implementation type.  <a href="#a1fba408e7a8f7eb4e701e2fecaebc957">More...</a><br /></td></tr>
 <tr class="separator:a1fba408e7a8f7eb4e701e2fecaebc957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4820d2f13726bf837754622774fc0648"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a4820d2f13726bf837754622774fc0648">DoocsSpectrum</a> (EqFct *eqFct, std::string const &amp;doocsPropertyName, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt;&gt; const &amp;processArray, <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;updater, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt;&gt; const &amp;startAccessor, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt;&gt; const &amp;incrementAccessor, size_t numberOfBuffers)</td></tr>
+<tr class="memdesc:a4820d2f13726bf837754622774fc0648"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor expects an NDRegisterAccessor of float, which usually will be a decorator to the implementation type.  <a href="#a4820d2f13726bf837754622774fc0648">More...</a><br /></td></tr>
+<tr class="separator:a4820d2f13726bf837754622774fc0648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ed6051d5722b690e217d39073ae24f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a06ed6051d5722b690e217d39073ae24f">set</a> (EqAdr *eqAdr, EqData *data1, EqData *data2, EqFct *eqFct) override</td></tr>
 <tr class="memdesc:a06ed6051d5722b690e217d39073ae24f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload the set function which is called by DOOCS to inject sending to the device.  <a href="#a06ed6051d5722b690e217d39073ae24f">More...</a><br /></td></tr>
 <tr class="separator:a06ed6051d5722b690e217d39073ae24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd733e2ebb9c551e6eb192f4542c1492"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#abd733e2ebb9c551e6eb192f4542c1492">get</a> (EqAdr *eqAdr, EqData *data1, EqData *data2, EqFct *eqFct) override</td></tr>
+<tr class="separator:abd733e2ebb9c551e6eb192f4542c1492"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a838549fdb4e178c0b115b52f16fca2df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a838549fdb4e178c0b115b52f16fca2df">auto_init</a> (void) override</td></tr>
 <tr class="memdesc:a838549fdb4e178c0b115b52f16fca2df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the Doocs <a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a838549fdb4e178c0b115b52f16fca2df" title="Override the Doocs auto_init() method, which is called after initialising the value of the property f...">auto_init()</a> method, which is called after initialising the value of the property from the config file.  <a href="#a838549fdb4e178c0b115b52f16fca2df">More...</a><br /></td></tr>
 <tr class="separator:a838549fdb4e178c0b115b52f16fca2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,13 +151,15 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:af3e583d4bd5f07dbec9385d70cb404b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9c0e9ccb9a13e93bc3078dcde4e74fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#ad9c0e9ccb9a13e93bc3078dcde4e74fd">publishZMQ</a> {false}</td></tr>
 <tr class="separator:ad9c0e9ccb9a13e93bc3078dcde4e74fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a3ec02061e0ee6938b980bbc80bd78"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a64a3ec02061e0ee6938b980bbc80bd78">nBuffers</a></td></tr>
+<tr class="separator:a64a3ec02061e0ee6938b980bbc80bd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00016">16</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1fba408e7a8f7eb4e701e2fecaebc957"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fba408e7a8f7eb4e701e2fecaebc957">&#9670;&nbsp;</a></span>DoocsSpectrum()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fba408e7a8f7eb4e701e2fecaebc957">&#9670;&nbsp;</a></span>DoocsSpectrum() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,7 +209,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The constructor expects an NDRegisterAccessor of float, which usually will be a decorator to the implementation type. </p>
-<p>The decorator cannot be generated in the constructor because the ProcessVariable aka TransferElement does not know about it's size, which is needed by the D_spectrum constructor. This is not a big drawback because the properties are greated by a factory function anyway. </p>
+<p>The decorator cannot be generated in the constructor because the ProcessVariable aka TransferElement does not know about it's size, which is needed by the D_spectrum constructor. This is not a big drawback because the properties are greated by a factory function anyway.</p>
+<p>This version of the constructor shall be used for writeable spectra, as they do not require mulitple buffers but should be saved to and restored from a file for persistency. </p>
 
 <p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00010">10</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -211,6 +219,78 @@ Protected Attributes</h2></td></tr>
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_spectrum_a1fba408e7a8f7eb4e701e2fecaebc957_cgraph.svg" width="467" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a4820d2f13726bf837754622774fc0648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4820d2f13726bf837754622774fc0648">&#9670;&nbsp;</a></span>DoocsSpectrum() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::DoocsSpectrum::DoocsSpectrum </td>
+          <td>(</td>
+          <td class="paramtype">EqFct *&#160;</td>
+          <td class="paramname"><em>eqFct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>doocsPropertyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt;&gt; const &amp;&#160;</td>
+          <td class="paramname"><em>processArray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;&#160;</td>
+          <td class="paramname"><em>updater</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt;&gt; const &amp;&#160;</td>
+          <td class="paramname"><em>startAccessor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt;&gt; const &amp;&#160;</td>
+          <td class="paramname"><em>incrementAccessor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numberOfBuffers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The constructor expects an NDRegisterAccessor of float, which usually will be a decorator to the implementation type. </p>
+<p>The decorator cannot be generated in the constructor because the ProcessVariable aka TransferElement does not know about it's size, which is needed by the D_spectrum constructor. This is not a big drawback because the properties are greated by a factory function anyway.</p>
+<p>This version of the constructor shall be used for read-only spectra, as they do not need to be persisted but might require multiple buffers for short-term history. </p>
+
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00030">30</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_spectrum_a4820d2f13726bf837754622774fc0648_cgraph.svg" width="467" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -243,15 +323,65 @@ Protected Attributes</h2></td></tr>
 
 <p>Override the Doocs <a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a838549fdb4e178c0b115b52f16fca2df" title="Override the Doocs auto_init() method, which is called after initialising the value of the property f...">auto_init()</a> method, which is called after initialising the value of the property from the config file. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00038">38</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00060">60</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_spectrum_a838549fdb4e178c0b115b52f16fca2df_cgraph.svg" width="467" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+
+</div>
+</div>
+<a id="abd733e2ebb9c551e6eb192f4542c1492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd733e2ebb9c551e6eb192f4542c1492">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::DoocsSpectrum::get </td>
+          <td>(</td>
+          <td class="paramtype">EqAdr *&#160;</td>
+          <td class="paramname"><em>eqAdr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EqData *&#160;</td>
+          <td class="paramname"><em>data1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EqData *&#160;</td>
+          <td class="paramname"><em>data2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EqFct *&#160;</td>
+          <td class="paramname"><em>eqFct</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00056">56</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
 
 </div>
 </div>
@@ -278,7 +408,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00048">48</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00070">70</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -305,12 +435,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00086">86</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00138">138</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_spectrum_a82a1c3ef4e19443909353485811dff6a_icgraph.svg" width="495" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -365,12 +495,12 @@ Protected Attributes</h2></td></tr>
 
 <p>Overload the set function which is called by DOOCS to inject sending to the device. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00033">33</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00051">51</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_spectrum_a06ed6051d5722b690e217d39073ae24f_cgraph.svg" width="495" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -401,7 +531,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00050">50</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00072">72</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -420,12 +550,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00046">46</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00076">76</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_spectrum_ae4a4414e0184f318119f6e71af472d6f_icgraph.svg" width="467" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -447,12 +577,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00067">67</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00119">119</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_spectrum_a585c8c2eadfa3fac5ac129ed95e1fe05_icgraph.svg" width="467" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -480,7 +610,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00057">57</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00079">79</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -504,7 +634,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00058">58</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00080">80</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -528,7 +658,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00055">55</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00077">77</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -552,7 +682,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00056">56</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00078">78</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+
+</div>
+</div>
+<a id="a64a3ec02061e0ee6938b980bbc80bd78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a3ec02061e0ee6938b980bbc80bd78">&#9670;&nbsp;</a></span>nBuffers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ChimeraTK::DoocsSpectrum::nBuffers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00082">82</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -576,7 +730,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00059">59</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00081">81</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -590,7 +744,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html">DoocsSpectrum</a></li>
-    <li class="footer">Generated on Tue Mar 5 2019 05:54:25 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Thu Mar 7 2019 05:53:35 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
