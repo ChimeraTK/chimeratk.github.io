@@ -1,5 +1,6 @@
 var dir_67c55bddc74dc3d666aacb5608bef154 =
 [
+    [ "LNMAccessorPlugin.h", "_l_n_m_accessor_plugin_8h.html", null ],
     [ "LNMBackendBitAccessor.h", "_l_n_m_backend_bit_accessor_8h.html", "_l_n_m_backend_bit_accessor_8h" ],
     [ "LNMBackendChannelAccessor.h", "device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h.html", "device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h" ],
     [ "LNMBackendRegisterInfo.h", "device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h.html", [

@@ -1,6 +1,8 @@
 var searchData=
 [
   ['llrfdrv_5fio_5fcompat_2eh',['llrfdrv_io_compat.h',['../device__backends_2pcie_2include_2llrfdrv__io__compat_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2llrfdrv__io__compat_8h.html',1,'(Global Namespace)']]],
+  ['lnmaccessorplugin_2ecc',['LNMAccessorPlugin.cc',['../_l_n_m_accessor_plugin_8cc.html',1,'']]],
+  ['lnmaccessorplugin_2eh',['LNMAccessorPlugin.h',['../_l_n_m_accessor_plugin_8h.html',1,'']]],
   ['lnmbackendbitaccessor_2ecc',['LNMBackendBitAccessor.cc',['../_l_n_m_backend_bit_accessor_8cc.html',1,'']]],
   ['lnmbackendbitaccessor_2eh',['LNMBackendBitAccessor.h',['../_l_n_m_backend_bit_accessor_8h.html',1,'']]],
   ['lnmbackendchannelaccessor_2ecc',['LNMBackendChannelAccessor.cc',['../_l_n_m_backend_channel_accessor_8cc.html',1,'']]],
