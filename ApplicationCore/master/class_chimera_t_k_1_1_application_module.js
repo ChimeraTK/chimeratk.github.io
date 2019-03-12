@@ -5,7 +5,6 @@ var class_chimera_t_k_1_1_application_module =
     [ "ApplicationModule", "class_chimera_t_k_1_1_application_module.html#a3e014e87f0887f47cddb017401e9abb3", null ],
     [ "ApplicationModule", "class_chimera_t_k_1_1_application_module.html#aa5d5e870c6960faa2215d762f1385397", null ],
     [ "~ApplicationModule", "class_chimera_t_k_1_1_application_module.html#a1c48b96181743fbfc2f5763c22265182", null ],
-    [ "appConfig", "class_chimera_t_k_1_1_application_module.html#ade9fce4496659ac890f8f9442d3bbc7e", null ],
     [ "getCurrentVersionNumber", "class_chimera_t_k_1_1_application_module.html#acf7f5e081d8dedd9ee61e6f3bc13aa37", null ],
     [ "getModuleType", "class_chimera_t_k_1_1_application_module.html#a78cc04235745bc0dca70a65d46217fc5", null ],
     [ "mainLoop", "class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8", null ],
