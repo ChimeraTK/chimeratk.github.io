@@ -137,6 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4824db416a83fb98cc802c8bf0424a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_type.html#ae4824db416a83fb98cc802c8bf0424a8">DataType</a> (<a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899">TheType</a> const &amp;value=<a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a43e32937488a25bceb7b75994793a087">none</a>)</td></tr>
 <tr class="memdesc:ae4824db416a83fb98cc802c8bf0424a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor can get the type as an argument.  <a href="#ae4824db416a83fb98cc802c8bf0424a8">More...</a><br /></td></tr>
 <tr class="separator:ae4824db416a83fb98cc802c8bf0424a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b59072a3ac3f6b49a88d1b63d4983a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_data_type.html#a40b59072a3ac3f6b49a88d1b63d4983a">DataType</a> (const std::type_info &amp;info)</td></tr>
+<tr class="memdesc:a40b59072a3ac3f6b49a88d1b63d4983a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> from std::type_info.  <a href="#a40b59072a3ac3f6b49a88d1b63d4983a">More...</a><br /></td></tr>
+<tr class="separator:a40b59072a3ac3f6b49a88d1b63d4983a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -148,7 +151,7 @@ Protected Attributes</h2></td></tr>
 <p>There is the additional type 'none' to indicate that the data type is not available in the current context. For instance if <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> is used to identify the raw data type of an accessor, the value is none if the accessor does not have a raw transfer mechanism.</p>
 <p>The <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> behaves almost like a class enum due to the plain enum inside it (see description of the <code>operator TheType &amp; ()</code> ). </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00117">117</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00115">115</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a4e8b0e61b39b533564f1e3866165f899"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e8b0e61b39b533564f1e3866165f899">&#9670;&nbsp;</a></span>TheType</h2>
@@ -192,13 +195,13 @@ Protected Attributes</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00123">123</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00121">121</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae4824db416a83fb98cc802c8bf0424a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4824db416a83fb98cc802c8bf0424a8">&#9670;&nbsp;</a></span>DataType()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4824db416a83fb98cc802c8bf0424a8">&#9670;&nbsp;</a></span>DataType() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,7 +227,38 @@ Protected Attributes</h2></td></tr>
 <p>The constructor can get the type as an argument. </p>
 <p>It defaults to 'none'. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00208">208</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00206">206</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+
+</div>
+</div>
+<a id="a40b59072a3ac3f6b49a88d1b63d4983a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b59072a3ac3f6b49a88d1b63d4983a">&#9670;&nbsp;</a></span>DataType() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::DataType::DataType </td>
+          <td>(</td>
+          <td class="paramtype">const std::type_info &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> from std::type_info. </p>
+<p>If the type is not known, 'none' is returned. </p>
+
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00209">209</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -255,7 +289,7 @@ Protected Attributes</h2></td></tr>
 <p>Return whether the raw data type is an integer. </p>
 <p>False is also returned for non-numerical types and 'none'. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00157">157</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00155">155</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -285,7 +319,7 @@ Protected Attributes</h2></td></tr>
 <p>Returns whether the data type is numeric. </p>
 <p>Type 'none' returns false. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00194">194</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00192">192</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -315,7 +349,7 @@ Protected Attributes</h2></td></tr>
 <p>Return whether the raw data type is signed. </p>
 <p>True for signed integers and floating point types (currently only signed implementations). False otherwise (also for non-numerical types and 'none'). </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00177">177</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00175">175</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -344,7 +378,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implicit conversion operator to make <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> behave like a class enum. </p>
 <p>Allows for instance comparison or assigment with members of the TheType enum. </p><div class="fragment"><div class="line"><a class="code" href="class_chimera_t_k_1_1_data_type.html#ae4824db416a83fb98cc802c8bf0424a8">DataType</a> myDataType; <span class="comment">// default constructor. The type now is &#39;none&#39;.</span></div><div class="line"></div><div class="line"><span class="comment">// DataType::int32 is of type DataType::TheType. The implicit conversion of</span></div><div class="line">\c myDataType</div><div class="line"><span class="comment">// allows the assignment.</span></div><div class="line">myDataType = <a class="code" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a3c8acc4ab071e644c3590db8c20b2e96">DataType::int32</a>;</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00151">151</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00149">149</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -371,7 +405,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00152">152</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00150">150</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -396,7 +430,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00211">211</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00249">249</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -409,7 +443,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_data_type.html">DataType</a></li>
-    <li class="footer">Generated on Tue Mar 12 2019 05:53:09 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Mar 13 2019 05:53:33 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

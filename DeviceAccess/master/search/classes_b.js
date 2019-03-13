@@ -9,6 +9,7 @@ var searchData=
   ['ndregisteraccessordecorator',['NDRegisterAccessorDecorator',['../class_chimera_t_k_1_1_n_d_register_accessor_decorator.html',1,'ChimeraTK']]],
   ['ndregisteraccessordecorator_3c_20t_20_3e',['NDRegisterAccessorDecorator&lt; T &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor_decorator.html',1,'ChimeraTK']]],
   ['ndregisteraccessordecorator_3c_20targetusertype_20_3e',['NDRegisterAccessorDecorator&lt; TargetUserType &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor_decorator.html',1,'ChimeraTK']]],
+  ['ndregisteraccessordecorator_3c_20usertype_2c_20double_20_3e',['NDRegisterAccessorDecorator&lt; UserType, double &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor_decorator.html',1,'ChimeraTK']]],
   ['notification',['Notification',['../class_chimera_t_k_1_1_read_any_group_1_1_notification.html',1,'ChimeraTK::ReadAnyGroup']]],
   ['numericaddressedbackend',['NumericAddressedBackend',['../class_chimera_t_k_1_1_numeric_addressed_backend.html',1,'ChimeraTK']]],
   ['numericaddressedbackendmuxedregisteraccessor',['NumericAddressedBackendMuxedRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html',1,'ChimeraTK']]],

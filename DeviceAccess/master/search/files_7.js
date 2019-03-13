@@ -12,6 +12,7 @@ var searchData=
   ['lnmbackendvariableaccessor_2eh',['LNMBackendVariableAccessor.h',['../device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_l_n_m_backend_variable_accessor_8h.html',1,'(Global Namespace)']]],
   ['logicalnamemapparser_2ecc',['LogicalNameMapParser.cc',['../_logical_name_map_parser_8cc.html',1,'']]],
   ['logicalnamemapparser_2eh',['LogicalNameMapParser.h',['../device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_logical_name_map_parser_8h.html',1,'(Global Namespace)']]],
+  ['logicalnamemapper_2edox',['logicalNameMapper.dox',['../logical_name_mapper_8dox.html',1,'']]],
   ['logicalnamemappingbackend_2ecc',['LogicalNameMappingBackend.cc',['../_logical_name_mapping_backend_8cc.html',1,'']]],
   ['logicalnamemappingbackend_2eh',['LogicalNameMappingBackend.h',['../device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_logical_name_mapping_backend_8h.html',1,'(Global Namespace)']]]
 ];

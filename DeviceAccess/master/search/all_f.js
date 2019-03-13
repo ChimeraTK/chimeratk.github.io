@@ -51,6 +51,7 @@ var searchData=
   ['pcieuni_5fwrite_5fdma',['PCIEUNI_WRITE_DMA',['../device__backends_2pcie_2include_2pcieuni__io__compat_8h.html#a1500cb79fd250fdd018729ac3d3438a4',1,'pcieuni_io_compat.h']]],
   ['pidset',['PidSet',['../_shared_dummy_backend_8h.html#a60ad18a95d5f451480dbf4e0fcdf3b7c',1,'SharedDummyBackend.h']]],
   ['pitch',['pitch',['../class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html#a1ab05d3d094cad208ffe39767d3075ad',1,'ChimeraTK::proxies::DummyRegisterSequence::pitch()'],['../class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html#a34aca12eef21df4080234eccd618393b',1,'ChimeraTK::DummyMultiplexedRegisterAccessor::pitch()']]],
+  ['plugins',['plugins',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#af7bab2b23212722a12ac7dbec26d6978',1,'ChimeraTK::LNMBackendRegisterInfo']]],
   ['postread',['postRead',['../class_chimera_t_k_1_1_transfer_element.html#a19a9f486a967295eacca7f3f78d025bb',1,'ChimeraTK::TransferElement']]],
   ['postwrite',['postWrite',['../class_chimera_t_k_1_1_transfer_element.html#ae92f7bd2db9827c3db3c1ff0e29ab581',1,'ChimeraTK::TransferElement']]],
   ['predicates_2eh',['predicates.h',['../fileparsers_2include_2predicates_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2predicates_8h.html',1,'(Global Namespace)']]],

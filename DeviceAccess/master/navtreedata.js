@@ -14,6 +14,13 @@ var NAVTREE =
     [ "Device Mapping", "dmap.html", [
       [ "CimeraTK device descriptor", "dmap.html#The", null ]
     ] ],
+    [ "Logical Name Mapping Backend", "lmap.html", [
+      [ "Accessor plugins", "lmap.html#plugins", [
+        [ "List of plugins", "lmap.html#plugins_reference", [
+          [ "multiply", "lmap.html#plugins_reference_multiply", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "Basic Example", "basic_example.html", null ],
     [ "Accessing numeric-addressed registers without a map file", "numeric_addresses.html", null ],
     [ "Questions and Answers", "q_and_a.html", [
@@ -63,14 +70,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"class_chimera_t_k_1_1_buffering_register_accessor.html#a88211a53cecc5f7e2fb33fd543fbd083",
-"class_chimera_t_k_1_1_fixed_point_converter.html#a8aa4674a21e253d83532d8165f23fa76",
-"class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#aa67ef3fd7e75b0a4cafd13f56ad18515",
-"class_chimera_t_k_1_1_register_info.html#acc18b368ac96ca55d2a280aef0c6de43",
-"class_chimera_t_k_1_1_transfer_element.html#a0ab70efc5651769deb2bb6c5d4cb5453",
-"device_2include_2_register_accessor_8h.html#aa7199f55dc8b6d8c32ad7d93e37991dc",
-"functions_g.html",
-"struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#a72294d840d3d4c0a324f89edf5d437b9"
+"class_chimera_t_k_1_1_buffering_register_accessor.html#a55d71f76325f9ac33a940c64198f4236",
+"class_chimera_t_k_1_1_experimental_features.html",
+"class_chimera_t_k_1_1_numeric_addressed_backend.html#ac310e495b2f2b94485bf799cd09163d1",
+"class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#aa7105dd08e6f8bba608d984efc2b3202",
+"class_chimera_t_k_1_1_sync_n_d_register_accessor.html",
+"device_2include_2_device_8h_source.html",
+"functions_func.html",
+"struct_chimera_t_k_1_1_device_descriptor.html#ad5b3d511524f18cd96ad990f94733e1b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

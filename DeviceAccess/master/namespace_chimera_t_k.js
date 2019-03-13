@@ -1,5 +1,6 @@
 var namespace_chimera_t_k =
 [
+    [ "LNMBackend", "namespace_chimera_t_k_1_1_l_n_m_backend.html", "namespace_chimera_t_k_1_1_l_n_m_backend" ],
     [ "proxies", "namespace_chimera_t_k_1_1proxies.html", "namespace_chimera_t_k_1_1proxies" ],
     [ "AccessModeFlags", "class_chimera_t_k_1_1_access_mode_flags.html", "class_chimera_t_k_1_1_access_mode_flags" ],
     [ "BackendFactory", "class_chimera_t_k_1_1_backend_factory.html", "class_chimera_t_k_1_1_backend_factory" ],

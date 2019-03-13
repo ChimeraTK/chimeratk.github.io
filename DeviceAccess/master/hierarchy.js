@@ -4,14 +4,20 @@ var hierarchy =
     [ "ChimeraTK::AccessModeFlags", "class_chimera_t_k_1_1_access_mode_flags.html", null ],
     [ "ChimeraTK::RegisterAccessor::AccessorHandler< UserType >", "class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html", null ],
     [ "ChimeraTK::RegisterAccessor::AccessorHandler< int32_t >", "class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html", null ],
+    [ "ChimeraTK::LNMBackend::AccessorPluginBase", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html", [
+      [ "ChimeraTK::LNMBackend::AccessorPlugin< MultiplierPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
+        [ "ChimeraTK::LNMBackend::MultiplierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html", null ]
+      ] ],
+      [ "ChimeraTK::LNMBackend::AccessorPlugin< Derived >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", null ]
+    ] ],
     [ "ChimeraTK::DummyBackend::AddressRange", "struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html", null ],
     [ "ChimeraTK::BackendFactory", "class_chimera_t_k_1_1_backend_factory.html", null ],
     [ "ExampleBackend::BackendRegisterer", "class_example_backend_1_1_backend_registerer.html", null ],
     [ "CustomBackend::BackendRegisterer", "struct_custom_backend_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::compareModuleName_pred", "class_chimera_t_k_1_1compare_module_name__pred.html", null ],
     [ "ChimeraTK::compareRegisterInfosByName_functor", "class_chimera_t_k_1_1compare_register_infos_by_name__functor.html", null ],
-    [ "ChimeraTK::RegisterCatalogue::const_iterator", "class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html", null ],
     [ "ChimeraTK::RegisterInfoMap::const_iterator", "class_chimera_t_k_1_1_register_info_map_1_1const__iterator.html", null ],
+    [ "ChimeraTK::RegisterCatalogue::const_iterator", "class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html", null ],
     [ "ChimeraTK::copmaredRegisterInfosByName2_functor", "class_chimera_t_k_1_1copmared_register_infos_by_name2__functor.html", null ],
     [ "ChimeraTK::copmaredRegisterInfosByName_functor", "class_chimera_t_k_1_1copmared_register_infos_by_name__functor.html", null ],
     [ "ChimeraTK::CopyRegisterDecoratorTrait", "struct_chimera_t_k_1_1_copy_register_decorator_trait.html", [
@@ -71,6 +77,11 @@ var hierarchy =
             [ "ChimeraTK::LNMBackendVariableAccessor< UserType >", "class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html", null ],
             [ "ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor< UserType >", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html", null ],
             [ "ChimeraTK::NumericAddressedBackendRegisterAccessor< UserType, DataConverterType, isRaw >", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html", null ]
+          ] ],
+          [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< UserType, double >", null, [
+            [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, double >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
+              [ "ChimeraTK::LNMBackend::MultiplierPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html", null ]
+            ] ]
           ] ]
         ] ],
         [ "ChimeraTK::NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html", null ],
@@ -95,10 +106,10 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html", null ],
     [ "ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html", null ],
-    [ "ChimeraTK::DeviceInfoMap::ErrorList", "class_chimera_t_k_1_1_device_info_map_1_1_error_list.html", null ],
+    [ "ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html", null ],
     [ "ChimeraTK::RegisterInfoMap::ErrorList", "class_chimera_t_k_1_1_register_info_map_1_1_error_list.html", null ],
+    [ "ChimeraTK::DeviceInfoMap::ErrorList", "class_chimera_t_k_1_1_device_info_map_1_1_error_list.html", null ],
     [ "std::exception", null, [
       [ "ChimeraTK::logic_error", "class_chimera_t_k_1_1logic__error.html", null ],
       [ "ChimeraTK::runtime_error", "class_chimera_t_k_1_1runtime__error.html", null ]
@@ -119,6 +130,8 @@ var hierarchy =
     [ "ChimeraTK::MapFileParser", "class_chimera_t_k_1_1_map_file_parser.html", null ],
     [ "ChimeraTK::RegisterInfoMap::MetaData", "class_chimera_t_k_1_1_register_info_map_1_1_meta_data.html", null ],
     [ "ChimeraTK::MultiplexedDataAccessor< UserType >", "class_chimera_t_k_1_1_multiplexed_data_accessor.html", null ],
+    [ "ChimeraTK::LNMBackend::MultiplierPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin___helper.html", null ],
+    [ "ChimeraTK::LNMBackend::MultiplierPlugin_Helper< UserType, double >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin___helper_3_01_user_type_00_01double_01_4.html", null ],
     [ "ChimeraTK::ReadAnyGroup::Notification", "class_chimera_t_k_1_1_read_any_group_1_1_notification.html", null ],
     [ "ChimeraTK::ReadAnyGroup", "class_chimera_t_k_1_1_read_any_group.html", null ],
     [ "ChimeraTK::RebotProtocolImplementor", "struct_chimera_t_k_1_1_rebot_protocol_implementor.html", [
