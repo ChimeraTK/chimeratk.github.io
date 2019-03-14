@@ -70,14 +70,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"class_chimera_t_k_1_1_buffering_register_accessor.html#a55d71f76325f9ac33a940c64198f4236",
-"class_chimera_t_k_1_1_experimental_features.html",
-"class_chimera_t_k_1_1_numeric_addressed_backend.html#ac310e495b2f2b94485bf799cd09163d1",
-"class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#aa7105dd08e6f8bba608d984efc2b3202",
-"class_chimera_t_k_1_1_sync_n_d_register_accessor.html",
-"device_2include_2_device_8h_source.html",
-"functions_func.html",
-"struct_chimera_t_k_1_1_device_descriptor.html#ad5b3d511524f18cd96ad990f94733e1b"
+"class_chimera_t_k_1_1_buffering_register_accessor.html#a525b7087b7378f0c794df6b560201421",
+"class_chimera_t_k_1_1_dummy_register_raw_accessor.html#affa45bc880a024d9c74444edbc34da04",
+"class_chimera_t_k_1_1_numeric_addressed_backend.html#a9c628ba2417dd01ef43508a87324e15f",
+"class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a9a11cc53b53a56a1f27bfe9a6e4c3297",
+"class_chimera_t_k_1_1_subdevice_register_accessor.html#ada88d6d75e7f6201791589d1dedc9bfe",
+"device_2include_2_device_8h.html",
+"functions_f.html",
+"struct_chimera_t_k_1_1_device_descriptor.html#abb8149f71839abaad25c671b3ef70688"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

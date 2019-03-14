@@ -3,7 +3,6 @@ var class_chimera_t_k_1_1_logical_name_mapping_backend =
     [ "LogicalNameMappingBackend", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a7d3c15281246ec70a9977004d4fb02c3", null ],
     [ "~LogicalNameMappingBackend", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#aca8a90331ac46ea8e8afdfcd467fca01", null ],
     [ "close", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a86961274d5614231b472f7dd26aa6960", null ],
-    [ "DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#ae0747b2e8d3cee414952c798c74673f4", null ],
     [ "getRegisterAccessor_impl", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a98f6b271e1d6f1ec80f325e7b59af804", null ],
     [ "getRegisterAccessor_internal", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a863d826eb0fc7dbabbd8f9815d872549", null ],
     [ "getRegisterCatalogue", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a87887044c83149abdccd69c3767cc811", null ],

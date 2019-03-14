@@ -1,7 +1,8 @@
 var NAVTREEINDEX7 =
 {
-"functions_func.html":[12,3,1],
+"functions_f.html":[12,3,0,6],
 "functions_func.html":[12,3,1,0],
+"functions_func.html":[12,3,1],
 "functions_func_0x7e.html":[12,3,1,20],
 "functions_func_b.html":[12,3,1,1],
 "functions_func_c.html":[12,3,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "struct_chimera_t_k_1_1_copy_register_decorator.html#af5b3281ababd53a5567e284517bf6007":[12,0,0,9,4],
 "struct_chimera_t_k_1_1_copy_register_decorator_trait.html":[12,0,0,10],
 "struct_chimera_t_k_1_1_device_descriptor.html":[12,0,0,15],
-"struct_chimera_t_k_1_1_device_descriptor.html#a33f0fc287d2af09f44d659c14871cab0":[12,0,0,15,1],
-"struct_chimera_t_k_1_1_device_descriptor.html#abb8149f71839abaad25c671b3ef70688":[12,0,0,15,0]
+"struct_chimera_t_k_1_1_device_descriptor.html#a33f0fc287d2af09f44d659c14871cab0":[12,0,0,15,1]
 };

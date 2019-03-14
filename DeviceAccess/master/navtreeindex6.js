@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"device_2include_2_device_8h.html":[13,0,0,0,2],
 "device_2include_2_device_8h_source.html":[13,0,0,0,2],
 "device_2include_2_device_exception_8h.html":[13,0,0,0,3],
 "device_2include_2_device_exception_8h.html#a51ecfb668fbe5e644cf2f3f6021bb98b":[13,0,0,0,3,2],
@@ -239,8 +240,8 @@ var NAVTREEINDEX6 =
 "fileparsers_2include_2predicates_8h.html":[13,0,4,0,7],
 "fileparsers_2include_2predicates_8h_source.html":[13,0,4,0,7],
 "files.html":[13,0],
-"functions.html":[12,3,0],
 "functions.html":[12,3,0,0],
+"functions.html":[12,3,0],
 "functions_0x7e.html":[12,3,0,22],
 "functions_a.html":[12,3,0,1],
 "functions_b.html":[12,3,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "functions_d.html":[12,3,0,4],
 "functions_e.html":[12,3,0,5],
 "functions_enum.html":[12,3,4],
-"functions_eval.html":[12,3,5],
-"functions_f.html":[12,3,0,6]
+"functions_eval.html":[12,3,5]
 };

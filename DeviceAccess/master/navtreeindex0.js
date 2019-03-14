@@ -74,6 +74,7 @@ var NAVTREEINDEX0 =
 "_logical_name_map_parser_8cc.html":[13,0,1,1,1,4],
 "_logical_name_map_parser_8cc_source.html":[13,0,1,1,1,4],
 "_logical_name_mapping_backend_8cc.html":[13,0,1,1,1,5],
+"_logical_name_mapping_backend_8cc.html#a090c0a89bbb0f29837f125d21dd89fe4":[13,0,1,1,1,5,1],
 "_logical_name_mapping_backend_8cc_source.html":[13,0,1,1,1,5],
 "_map_file_parser_8cpp.html":[13,0,4,1,3],
 "_map_file_parser_8cpp_source.html":[13,0,4,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "class_chimera_t_k_1_1_buffering_register_accessor.html#a4aa71106ddafdba4ec5b376ce913588d":[12,0,0,4,0],
 "class_chimera_t_k_1_1_buffering_register_accessor.html#a4fd3f8bed42bcb07e97604e85d479485":[12,0,0,4,29],
 "class_chimera_t_k_1_1_buffering_register_accessor.html#a51db0f9b0130e0187f0d9ec983e0b5d8":[12,0,0,4,23],
-"class_chimera_t_k_1_1_buffering_register_accessor.html#a5250d45d86ce718777302f78abd772e3":[12,0,0,4,15],
-"class_chimera_t_k_1_1_buffering_register_accessor.html#a525b7087b7378f0c794df6b560201421":[12,0,0,4,18]
+"class_chimera_t_k_1_1_buffering_register_accessor.html#a5250d45d86ce718777302f78abd772e3":[12,0,0,4,15]
 };
