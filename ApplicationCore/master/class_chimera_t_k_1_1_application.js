@@ -30,7 +30,7 @@ var class_chimera_t_k_1_1_application =
     [ "processUnconnectedNodes", "class_chimera_t_k_1_1_application.html#af595df5c85fe5acd93a1deaa54b69b0c", null ],
     [ "registerDeviceModule", "class_chimera_t_k_1_1_application.html#a8004bc7d4305468a5497e278f2af7203", null ],
     [ "run", "class_chimera_t_k_1_1_application.html#a6815195c956c091a6558a316f8fd9976", null ],
-    [ "setCurrentVersionNumber", "class_chimera_t_k_1_1_application.html#a9b436bbdcdfd1096cebda89065bc75cf", null ],
+    [ "setCurrentVersionNumber", "class_chimera_t_k_1_1_application.html#adea9d78e90e883d43758339a3c37c647", null ],
     [ "shutdown", "class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a", null ],
     [ "stepApplication", "class_chimera_t_k_1_1_application.html#abb8be141c45a20ad4e836ecf82ff9573", null ],
     [ "typedMakeConnection", "class_chimera_t_k_1_1_application.html#ad431c8d3f6f19a593a37b13c5f7cefe8", null ],
