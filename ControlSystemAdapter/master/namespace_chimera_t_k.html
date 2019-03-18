@@ -583,7 +583,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Creates a synchronized process array. </p>
-<p>A synchronized process array works as a pair of two process arrays, where one process array acts as a sender and the other one acts as a receiver.</p>
+<p>A synchronized process array works as a pair of two process arrays, where the pair's first acts as a sender and the second one acts as a receiver.</p>
 <p>The sender allows full read-write access. Changes that have been made to the sender can be sent to the receiver through the ProcessArray::write() method. The receiver can be updated with these changes by calling its readNonBlocking() method.</p>
 <p>The synchronization is implemented in a thread-safe manner, so that the sender and the receiver can safely be used by different threads without a mutex. However, both the sender and receiver each only support a single thread. This means that the sender or the receiver have to be protected with a mutex if more than one thread wants to access either of them.</p>
 <p>The number of buffers specifies how many buffers are allocated for the send / receive mechanism. The minimum number (and default) is two. This number specifies, how many times ProcessArray::write() can be called in a row without losing data when readNonBlocking() is not called in between.</p>
@@ -592,7 +592,7 @@ template&lt;class T &gt; </div>
 <p>The optional send-notification listener is notified every time the sender's ProcessArray::write() method is called. It can be used to queue a request for the receiver's readNonBlocking() method to be called. The process variable passed to the listener is the receiver and not the sender.</p>
 <p>The specified initial value is used for all the elements of the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00624">624</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00620">620</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -669,7 +669,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Creates a synchronized process array. </p>
-<p>A synchronized process array works as a pair of two process arrays, where one process array acts as a sender and the other one acts as a receiver.</p>
+<p>A synchronized process array works as a pair of two process arrays, where pair's first acts as a sender and the second one acts as a receiver.</p>
 <p>The sender allows full read-write access. Changes that have been made to the sender can be sent to the receiver through the ProcessArray::write() method. The receiver can be updated with these changes by calling its readNonBlocking() method.</p>
 <p>The synchronization is implemented in a thread-safe manner, so that the sender and the receiver can safely be used by different threads without a mutex. However, both the sender and receiver each only support a single thread. This means that the sender or the receiver have to be protected with a mutex if more than one thread wants to access either of them.</p>
 <p>The number of buffers specifies how many buffers are allocated for the send / receive mechanism. The minimum number (and default) is two. This number specifies, how many times ProcessArray::write() can be called in a row without losing data when readNonBlocking() is not called in between.</p>
@@ -678,7 +678,7 @@ template&lt;class T &gt; </div>
 <p>The optional send-notification listener is notified every time the sender's ProcessArray::write() method is called. It can be used to queue a request for the receiver's readNonBlocking() method to be called. The process variable passed to the listener is the receiver and not the sender.</p>
 <p>The array's size is set to the number of elements stored in the vector provided for initialization and all elements are initialized with the values provided by this vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00638">638</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00634">634</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -842,7 +842,7 @@ template&lt;class UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li>
-    <li class="footer">Generated on Sat Mar 16 2019 05:53:26 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Mon Mar 18 2019 18:30:40 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
