@@ -24,6 +24,7 @@ var namespace_chimera_t_k =
     [ "DeviceModule", "class_chimera_t_k_1_1_device_module.html", "class_chimera_t_k_1_1_device_module" ],
     [ "Divider", "struct_chimera_t_k_1_1_divider.html", "struct_chimera_t_k_1_1_divider" ],
     [ "EntityOwner", "class_chimera_t_k_1_1_entity_owner.html", "class_chimera_t_k_1_1_entity_owner" ],
+    [ "ExceptionHandlingDecorator", "class_chimera_t_k_1_1_exception_handling_decorator.html", "class_chimera_t_k_1_1_exception_handling_decorator" ],
     [ "FanOut", "class_chimera_t_k_1_1_fan_out.html", "class_chimera_t_k_1_1_fan_out" ],
     [ "FeedingFanOut", "class_chimera_t_k_1_1_feeding_fan_out.html", "class_chimera_t_k_1_1_feeding_fan_out" ],
     [ "FixedLimitValue", "struct_chimera_t_k_1_1_fixed_limit_value.html", "struct_chimera_t_k_1_1_fixed_limit_value" ],

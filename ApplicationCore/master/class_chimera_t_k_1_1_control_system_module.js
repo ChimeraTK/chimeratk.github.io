@@ -1,7 +1,8 @@
 var class_chimera_t_k_1_1_control_system_module =
 [
-    [ "ControlSystemModule", "class_chimera_t_k_1_1_control_system_module.html#acc37ec2c01d25a47889189b2170b7d89", null ],
+    [ "ControlSystemModule", "class_chimera_t_k_1_1_control_system_module.html#aa9abf96a9dbb04bf5607ce435b1e165c", null ],
     [ "ControlSystemModule", "class_chimera_t_k_1_1_control_system_module.html#a40fe0e15a957bd05d88ab4a29380b897", null ],
+    [ "ControlSystemModule", "class_chimera_t_k_1_1_control_system_module.html#aabb1207d266af506033122166032098d", null ],
     [ "connectTo", "class_chimera_t_k_1_1_control_system_module.html#ae00bfe6379a470d410ebc354bf61d6c9", null ],
     [ "getAccessorList", "class_chimera_t_k_1_1_control_system_module.html#af8e4b2d13bdfc111cf2247f2a941edb4", null ],
     [ "getModuleType", "class_chimera_t_k_1_1_control_system_module.html#a5e011248216c848749021f0c572944fe", null ],

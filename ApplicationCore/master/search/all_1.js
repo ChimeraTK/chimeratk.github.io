@@ -18,7 +18,7 @@ var searchData=
   ['addtags',['addTags',['../class_chimera_t_k_1_1_inversion_of_control_accessor.html#a9d8573fc2807f8ea266580a8fe00c3a9',1,'ChimeraTK::InversionOfControlAccessor']]],
   ['anytype',['AnyType',['../class_chimera_t_k_1_1_any_type.html',1,'ChimeraTK']]],
   ['appconfig',['appConfig',['../class_chimera_t_k_1_1_module_impl.html#a1ddd172c1a2f9d50bfb37f5207edaf54',1,'ChimeraTK::ModuleImpl']]],
-  ['application',['Application',['../class_chimera_t_k_1_1_application.html',1,'ChimeraTK::Application'],['../class_chimera_t_k_1_1_application.html#a65ea3c005eec5249f9f8b0d2ce340d52',1,'ChimeraTK::Application::Application()'],['../namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1dae498749f3c42246d50b15c81c101d988',1,'ChimeraTK::Application()']]],
+  ['application',['Application',['../class_chimera_t_k_1_1_application.html',1,'ChimeraTK::Application'],['../class_chimera_t_k_1_1_device_module.html#a23f25bcc02a0e94c2f5a4188496b04d0',1,'ChimeraTK::DeviceModule::Application()'],['../class_chimera_t_k_1_1_application.html#a65ea3c005eec5249f9f8b0d2ce340d52',1,'ChimeraTK::Application::Application()'],['../namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1dae498749f3c42246d50b15c81c101d988',1,'ChimeraTK::Application()']]],
   ['application_2ecc',['Application.cc',['../_application_8cc.html',1,'']]],
   ['application_2eh',['Application.h',['../_application_8h.html',1,'']]],
   ['applicationcore_2eh',['ApplicationCore.h',['../_application_core_8h.html',1,'']]],

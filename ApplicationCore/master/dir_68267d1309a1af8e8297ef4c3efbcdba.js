@@ -5,6 +5,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "ControlSystemModule.cc", "_control_system_module_8cc.html", null ],
     [ "DeviceModule.cc", "_device_module_8cc.html", null ],
     [ "EntityOwner.cc", "_entity_owner_8cc.html", null ],
+    [ "ExceptionHandlingDecorator.cc", "_exception_handling_decorator_8cc.html", "_exception_handling_decorator_8cc" ],
     [ "Module.cc", "_module_8cc.html", null ],
     [ "ModuleGraphVisitor.cc", "_module_graph_visitor_8cc.html", null ],
     [ "ModuleGroup.cc", "_module_group_8cc.html", null ],

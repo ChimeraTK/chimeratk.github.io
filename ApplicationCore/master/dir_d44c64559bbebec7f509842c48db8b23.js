@@ -38,6 +38,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "EntityOwner.h", "_entity_owner_8h.html", [
       [ "EntityOwner", "class_chimera_t_k_1_1_entity_owner.html", "class_chimera_t_k_1_1_entity_owner" ]
     ] ],
+    [ "ExceptionHandlingDecorator.h", "_exception_handling_decorator_8h.html", "_exception_handling_decorator_8h" ],
     [ "FanOut.h", "_fan_out_8h.html", [
       [ "FanOut", "class_chimera_t_k_1_1_fan_out.html", "class_chimera_t_k_1_1_fan_out" ]
     ] ],

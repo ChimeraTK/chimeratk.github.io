@@ -72,6 +72,6 @@ var searchData=
   ['stopmeasurement',['stopMeasurement',['../class_chimera_t_k_1_1_profiler.html#a35af786affb9aecdc2e36a792c9ff5a5',1,'ChimeraTK::Profiler']]],
   ['stream',['stream',['../class_chimera_t_k_1_1_pushable_stream.html#a916dbc0fd3430135e4fbb2a73c22e52e',1,'ChimeraTK::PushableStream']]],
   ['stringpair',['StringPair',['../struct_chimera_t_k_1_1_functor_fill.html#a95b79d4194b792242966fef174a9cf0d',1,'ChimeraTK::FunctorFill::StringPair()'],['../struct_chimera_t_k_1_1_array_functor_fill.html#a95e43d0badd5b635041e99349bad231b',1,'ChimeraTK::ArrayFunctorFill::StringPair()']]],
-  ['submodules',['subModules',['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()'],['../class_chimera_t_k_1_1_device_module.html#ad76777799c8dba6eaea5a78b2a0ac3e9',1,'ChimeraTK::DeviceModule::subModules()'],['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()']]],
+  ['submodules',['subModules',['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()'],['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()']]],
   ['supportedusertypes_2eh',['SupportedUserTypes.h',['../_supported_user_types_8h.html',1,'']]]
 ];

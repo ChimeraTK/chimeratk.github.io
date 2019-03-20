@@ -15,6 +15,7 @@ var searchData=
   ['profiler_2ecc',['Profiler.cc',['../_profiler_8cc.html',1,'']]],
   ['profiler_2eh',['Profiler.h',['../_profiler_8h.html',1,'']]],
   ['promise',['promise',['../class_chimera_t_k_1_1_constant_accessor.html#aaa2b5ba0b161ff4e5689f9916744090b',1,'ChimeraTK::ConstantAccessor']]],
+  ['proxies',['proxies',['../class_chimera_t_k_1_1_device_module.html#a7428186cbfbb92002fc80b863de786f6',1,'ChimeraTK::DeviceModule']]],
   ['publicname',['publicName',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a9a509a8d919b656c9f7293fd181c42e6',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['pulselength',['pulseLength',['../struct_table_generation_1_1_table_parameters.html#a912e531762773e63b2ffac4a7ba96790',1,'TableGeneration::TableParameters']]],
   ['push',['push',['../namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3ba21a361d96e3e13f5f109748c2a9d2434',1,'ChimeraTK']]],
