@@ -42,7 +42,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_base_8cc.html",
-"class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01_t_00_01std_1_1string_01_4.html#a4a4165ef8cf7c0c977c91667417fbe70"
+"class_chimera_t_k_1_1_type_changing_decorator.html#aef90c6fb20aa84888b31e2f26c970186"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

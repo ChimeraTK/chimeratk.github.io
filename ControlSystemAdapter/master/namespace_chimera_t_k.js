@@ -16,10 +16,13 @@ var namespace_chimera_t_k =
     [ "PVManager", "class_chimera_t_k_1_1_p_v_manager.html", "class_chimera_t_k_1_1_p_v_manager" ],
     [ "TypeChangingDecorator", "class_chimera_t_k_1_1_type_changing_decorator.html", "class_chimera_t_k_1_1_type_changing_decorator" ],
     [ "TypeChangingDirectCastDecorator", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator.html", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator" ],
+    [ "TypeChangingDirectCastDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01std_1_1string_00_01_i_m_p_l___t_01_4" ],
     [ "TypeChangingDirectCastDecorator< T, std::string >", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01_t_00_01std_1_1string_01_4.html", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01_t_00_01std_1_1string_01_4" ],
     [ "TypeChangingRangeCheckingDecorator", "class_chimera_t_k_1_1_type_changing_range_checking_decorator.html", "class_chimera_t_k_1_1_type_changing_range_checking_decorator" ],
+    [ "TypeChangingRangeCheckingDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html", "class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01std_1_1string_00_01_i_m_p_l___t_01_4" ],
     [ "TypeChangingRangeCheckingDecorator< T, std::string >", "class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01_t_00_01std_1_1string_01_4.html", "class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01_t_00_01std_1_1string_01_4" ],
     [ "TypeChangingStringImplDecorator", "class_chimera_t_k_1_1_type_changing_string_impl_decorator.html", null ],
+    [ "TypeChangingStringImplDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_type_changing_string_impl_decorator_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html", "class_chimera_t_k_1_1_type_changing_string_impl_decorator_3_01std_1_1string_00_01_i_m_p_l___t_01_4" ],
     [ "TypeChangingStringImplDecorator< T, std::string >", "class_chimera_t_k_1_1_type_changing_string_impl_decorator_3_01_t_00_01std_1_1string_01_4.html", "class_chimera_t_k_1_1_type_changing_string_impl_decorator_3_01_t_00_01std_1_1string_01_4" ],
     [ "UnidirectionalProcessArray", "class_chimera_t_k_1_1_unidirectional_process_array.html", "class_chimera_t_k_1_1_unidirectional_process_array" ]
 ];

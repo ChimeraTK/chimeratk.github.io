@@ -11,6 +11,12 @@ var hierarchy =
           [ "ChimeraTK::TypeChangingRangeCheckingDecorator< T, IMPL_T >", "class_chimera_t_k_1_1_type_changing_range_checking_decorator.html", null ]
         ] ]
       ] ],
+      [ "ChimeraTK::TypeChangingDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_type_changing_decorator.html", [
+        [ "ChimeraTK::TypeChangingStringImplDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_type_changing_string_impl_decorator_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html", [
+          [ "ChimeraTK::TypeChangingDirectCastDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html", null ],
+          [ "ChimeraTK::TypeChangingRangeCheckingDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html", null ]
+        ] ]
+      ] ],
       [ "ChimeraTK::TypeChangingDecorator< T, std::string >", "class_chimera_t_k_1_1_type_changing_decorator.html", [
         [ "ChimeraTK::TypeChangingStringImplDecorator< T, std::string >", "class_chimera_t_k_1_1_type_changing_string_impl_decorator_3_01_t_00_01std_1_1string_01_4.html", [
           [ "ChimeraTK::TypeChangingDirectCastDecorator< T, std::string >", "class_chimera_t_k_1_1_type_changing_direct_cast_decorator_3_01_t_00_01std_1_1string_01_4.html", null ],
@@ -33,6 +39,7 @@ var hierarchy =
     ] ],
     [ "NDRegisterAccessorDecorator", null, [
       [ "ChimeraTK::TypeChangingDecorator< T, IMPL_T >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ],
+      [ "ChimeraTK::TypeChangingDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ],
       [ "ChimeraTK::TypeChangingDecorator< T, std::string >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ]
     ] ],
     [ "ChimeraTK::PersistentDataStorage", "class_chimera_t_k_1_1_persistent_data_storage.html", null ],
