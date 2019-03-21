@@ -23,6 +23,7 @@ var class_chimera_t_k_1_1_module =
     [ "run", "class_chimera_t_k_1_1_module.html#a998f98d99bde4ca7baebb4eaf595a983", null ],
     [ "setCurrentVersionNumber", "class_chimera_t_k_1_1_module.html#a19a036a23479885e7dbd39e395c544c4", null ],
     [ "setOwner", "class_chimera_t_k_1_1_module.html#ab413a049e1564217a0792563da255fcc", null ],
+    [ "submodule", "class_chimera_t_k_1_1_module.html#a5b69b847a580b0c4aa20309a81246b0c", null ],
     [ "terminate", "class_chimera_t_k_1_1_module.html#ae3497a487a36f2e1a51bc01592aabf5b", null ],
     [ "virtualise", "class_chimera_t_k_1_1_module.html#a9efbb4df2454977ec359f4687fe39f28", null ],
     [ "writeAll", "class_chimera_t_k_1_1_module.html#a7cabaa7c9d97adc5c3ed37430b27ee3e", null ],

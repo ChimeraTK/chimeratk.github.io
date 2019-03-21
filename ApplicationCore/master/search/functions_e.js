@@ -29,5 +29,6 @@ var searchData=
   ['startmeasurement',['startMeasurement',['../class_chimera_t_k_1_1_profiler.html#a554c05bc62a8da847726645b94a62e5c',1,'ChimeraTK::Profiler']]],
   ['stepapplication',['stepApplication',['../class_chimera_t_k_1_1_application.html#abb8be141c45a20ad4e836ecf82ff9573',1,'ChimeraTK::Application::stepApplication()'],['../class_chimera_t_k_1_1_test_facility.html#afb42f847c5014f174aa43ba422f561f3',1,'ChimeraTK::TestFacility::stepApplication()']]],
   ['stopmeasurement',['stopMeasurement',['../class_chimera_t_k_1_1_profiler.html#a35af786affb9aecdc2e36a792c9ff5a5',1,'ChimeraTK::Profiler']]],
-  ['stream',['stream',['../class_chimera_t_k_1_1_pushable_stream.html#a916dbc0fd3430135e4fbb2a73c22e52e',1,'ChimeraTK::PushableStream']]]
+  ['stream',['stream',['../class_chimera_t_k_1_1_pushable_stream.html#a916dbc0fd3430135e4fbb2a73c22e52e',1,'ChimeraTK::PushableStream']]],
+  ['submodule',['submodule',['../class_chimera_t_k_1_1_module.html#a5b69b847a580b0c4aa20309a81246b0c',1,'ChimeraTK::Module']]]
 ];
