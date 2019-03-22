@@ -11,6 +11,7 @@ var NAVTREE =
         [ "Writing your own backed", "custom_backends.html#writing_backends", null ]
       ] ]
     ] ],
+    [ "Data Consistency Group", "data_consistency_group.html", null ],
     [ "Device Mapping", "dmap.html", [
       [ "CimeraTK device descriptor", "dmap.html#The", null ]
     ] ],
@@ -70,14 +71,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"class_chimera_t_k_1_1_buffering_register_accessor.html#a525b7087b7378f0c794df6b560201421",
-"class_chimera_t_k_1_1_dummy_register_raw_accessor.html#affa45bc880a024d9c74444edbc34da04",
-"class_chimera_t_k_1_1_numeric_addressed_backend.html#a9c628ba2417dd01ef43508a87324e15f",
-"class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a9a11cc53b53a56a1f27bfe9a6e4c3297",
-"class_chimera_t_k_1_1_subdevice_register_accessor.html#ada88d6d75e7f6201791589d1dedc9bfe",
-"device_2include_2_device_8h.html",
-"functions_f.html",
-"struct_chimera_t_k_1_1_device_descriptor.html#abb8149f71839abaad25c671b3ef70688"
+"class_chimera_t_k_1_1_buffering_register_accessor.html#a51db0f9b0130e0187f0d9ec983e0b5d8",
+"class_chimera_t_k_1_1_dummy_register_address_checker.html#a4dcd6965737aa704ea21e3d65c1926be",
+"class_chimera_t_k_1_1_numeric_addressed_backend.html",
+"class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html#a86167bb7d109c12718a42e61857824dd",
+"class_chimera_t_k_1_1_subdevice_register_accessor.html#a874482c50dee391ac09698c07f25631d",
+"custom_backends.html#writing_backends",
+"fileparsers_2include_2_register_path_8h.html#aff4ac0544a7ecac72fb62a82278824cb",
+"q_and_a.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

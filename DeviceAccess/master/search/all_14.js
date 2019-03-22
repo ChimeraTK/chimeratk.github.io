@@ -7,6 +7,7 @@ var searchData=
   ['uint8',['uint8',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899ace6a08c56e7e5db1ca00d700ddd7191f',1,'ChimeraTK::DataType']]],
   ['undefined',['undefined',['../class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8a5e543256c480ac577d30f76f9120eb74',1,'ChimeraTK::RegisterInfo']]],
   ['unitnotset',['unitNotSet',['../class_chimera_t_k_1_1_transfer_element.html#af4c7678155e4598ca95a4f900b9dfced',1,'ChimeraTK::TransferElement']]],
+  ['update',['update',['../class_chimera_t_k_1_1_data_consistency_group.html#ae101511fc45ab3bc172e5a4eaa2187d1',1,'ChimeraTK::DataConsistencyGroup']]],
   ['uri',['uri',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a0c7bb5ea1149d7220da8bc22f8ba171e',1,'ChimeraTK::DeviceInfoMap::DeviceInfo']]],
   ['usecustombackend_2ecpp',['useCustomBackend.cpp',['../use_custom_backend_8cpp.html',1,'']]],
   ['usertypemap',['userTypeMap',['../namespace_chimera_t_k.html#a238e0526cc4fc45ee733782c69cca349',1,'ChimeraTK']]],

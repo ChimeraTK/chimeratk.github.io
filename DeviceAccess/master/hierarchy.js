@@ -23,6 +23,7 @@ var hierarchy =
     [ "ChimeraTK::CopyRegisterDecoratorTrait", "struct_chimera_t_k_1_1_copy_register_decorator_trait.html", [
       [ "ChimeraTK::CopyRegisterDecorator< T >", "struct_chimera_t_k_1_1_copy_register_decorator.html", null ]
     ] ],
+    [ "ChimeraTK::DataConsistencyGroup", "class_chimera_t_k_1_1_data_consistency_group.html", null ],
     [ "ChimeraTK::NumericAddressedBackendRegisterAccessor< UserType, DataConverterType, isRaw >::dataConverterTemplateSpecialisationHelper< RawT, CookedT >", "struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_specialisation_helper.html", null ],
     [ "ChimeraTK::NumericAddressedBackendRegisterAccessor< UserType, DataConverterType, isRaw >::dataConverterTemplateSpecialisationHelper< int32_t, CookedT >", "struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_spe9033bbf1deb4f2449f5a993bab102f6.html", null ],
     [ "ChimeraTK::RegisterInfo::DataDescriptor", "class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html", null ],

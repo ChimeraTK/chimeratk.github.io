@@ -11,6 +11,7 @@ var namespace_chimera_t_k =
     [ "copmaredRegisterInfosByName_functor", "class_chimera_t_k_1_1copmared_register_infos_by_name__functor.html", "class_chimera_t_k_1_1copmared_register_infos_by_name__functor" ],
     [ "CopyRegisterDecorator", "struct_chimera_t_k_1_1_copy_register_decorator.html", "struct_chimera_t_k_1_1_copy_register_decorator" ],
     [ "CopyRegisterDecoratorTrait", "struct_chimera_t_k_1_1_copy_register_decorator_trait.html", null ],
+    [ "DataConsistencyGroup", "class_chimera_t_k_1_1_data_consistency_group.html", "class_chimera_t_k_1_1_data_consistency_group" ],
     [ "DataType", "class_chimera_t_k_1_1_data_type.html", "class_chimera_t_k_1_1_data_type" ],
     [ "Device", "class_chimera_t_k_1_1_device.html", "class_chimera_t_k_1_1_device" ],
     [ "DeviceBackend", "class_chimera_t_k_1_1_device_backend.html", "class_chimera_t_k_1_1_device_backend" ],

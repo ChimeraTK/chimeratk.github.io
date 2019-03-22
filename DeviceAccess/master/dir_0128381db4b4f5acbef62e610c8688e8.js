@@ -4,6 +4,9 @@ var dir_0128381db4b4f5acbef62e610c8688e8 =
     [ "BufferingRegisterAccessor.h", "device_2include_2_buffering_register_accessor_8h.html", [
       [ "BufferingRegisterAccessor", "class_chimera_t_k_1_1_buffering_register_accessor.html", "class_chimera_t_k_1_1_buffering_register_accessor" ]
     ] ],
+    [ "DataConsistencyGroup.h", "_data_consistency_group_8h.html", [
+      [ "DataConsistencyGroup", "class_chimera_t_k_1_1_data_consistency_group.html", "class_chimera_t_k_1_1_data_consistency_group" ]
+    ] ],
     [ "Device.h", "device_2include_2_device_8h.html", [
       [ "Device", "class_chimera_t_k_1_1_device.html", "class_chimera_t_k_1_1_device" ]
     ] ],
