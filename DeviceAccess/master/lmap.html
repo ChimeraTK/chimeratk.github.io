@@ -97,14 +97,29 @@ List of plugins</h2>
 multiply</h3>
 <p>The <code>multiply</code> plugin multiplies the value of the register with the given factor. Note that the multiplication is done for both reading and writing. Hence if this plugin is used e.g. to convert a raw value into a physical value, the register should be used in one direction only. The plugin will internally always read the value as a 64 bit floating point, so the result may not be bit exact. The target register must be numeric.</p>
 <p>Parameters:</p><ul>
-<li><code>factor</code>: Factor to multiply the value with. Will be interpreted as a (floating-point) number. </li>
+<li><code>factor</code>: Factor to multiply the value with. Will be interpreted as a (floating-point) number.</li>
+</ul>
+<h3><a class="anchor" id="plugins_reference_math"></a>
+math</h3>
+<p>The <code>math</code> plugin allows to apply an arbitrary mathematical formula to the data. The exprtk library is used to parse the library. For an exact documentation of the possible syntax, please refer to its documentation: <a href="http://www.partow.net/programming/exprtk/index.html">http://www.partow.net/programming/exprtk/index.html</a></p>
+<p>Similar to the <code>multiply</code> plugin, the same formula is applied for both reading and writing, which usually makes only sense if the register is used in a single direction. The shape of the register cannot be changed, i.e. the number of elements returned by the formula must be equal to the number of elements of the target register.</p>
+<p>Parameters:</p><ul>
+<li><code>formula</code>: The formula to apply to the data.</li>
+</ul>
+<p>Examples:</p><ul>
+<li><p class="startli"><code>x/7 + 13</code></p>
+<p class="startli">This will only work for scalar registers</p>
+</li>
+<li><p class="startli"><code>return [ x/7 + 13 ];</code></p>
+<p class="startli">Can be used for both scalars and arrays. In case of an array, the formula will be applied to each element of the array, since exprtk supports processing of arrays (or vectors as they call it in their documentation). </p>
+</li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 25 2019 05:53:38 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Mar 27 2019 04:53:08 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

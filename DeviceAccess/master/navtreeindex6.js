@@ -1,5 +1,12 @@
 var NAVTREEINDEX6 =
 {
+"class_example_backend.html#ace9471bff30ac79382fae02a815d2625":[13,0,8,7],
+"class_example_backend_1_1_backend_registerer.html":[13,0,8,0],
+"class_example_backend_1_1_backend_registerer.html#a5ac41c606b7f546cf96089536636a047":[13,0,8,0,0],
+"classes.html":[13,1],
+"custom_backends.html":[3],
+"custom_backends.html#loading_backends":[3,1,0],
+"custom_backends.html#plugin_mechanism":[3,1],
 "custom_backends.html#writing_backends":[3,1,1],
 "custom_backends.html#writing_dummies":[3,0],
 "data_consistency_group.html":[4],
@@ -67,6 +74,7 @@ var NAVTREEINDEX6 =
 "device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h.html#a2564f0c3bd18b75a695da17cfdb2bde9":[14,0,1,1,0,4,1],
 "device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html":[14,0,1,1,0,4],
 "device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h.html":[14,0,1,1,0,5],
+"device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h.html#a43d1a9d1e8a5aae49dd309e5859ee99c":[14,0,1,1,0,5,1],
 "device__backends_2_logical_name_mapping_2include_2_logical_name_map_parser_8h_source.html":[14,0,1,1,0,5],
 "device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h.html":[14,0,1,1,0,6],
 "device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html":[14,0,1,1,0,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX6 =
 "fileparsers_2include_2_map_file_parser_8h_source.html":[14,0,4,0,5],
 "fileparsers_2include_2_register_info_8h.html":[14,0,4,0,8],
 "fileparsers_2include_2_register_info_8h_source.html":[14,0,4,0,8],
-"fileparsers_2include_2_register_info_map_8h.html":[14,0,4,0,9],
-"fileparsers_2include_2_register_info_map_8h.html#a7b983744ce153647b8fa3c6552de8b0d":[14,0,4,0,9,7],
-"fileparsers_2include_2_register_info_map_8h_source.html":[14,0,4,0,9],
-"fileparsers_2include_2_register_path_8h.html":[14,0,4,0,10],
-"fileparsers_2include_2_register_path_8h.html#a07553b57fe8fa42f54929244fc99be26":[14,0,4,0,10,2],
-"fileparsers_2include_2_register_path_8h.html#a3866f314ddf52c6edb0f62cef066f796":[14,0,4,0,10,4],
-"fileparsers_2include_2_register_path_8h.html#a5e854b4410176a3de00a75be5c250d14":[14,0,4,0,10,3],
-"fileparsers_2include_2_register_path_8h.html#a8131149d6d551e64aad220a635e28e73":[14,0,4,0,10,6],
-"fileparsers_2include_2_register_path_8h.html#abca4ba8eb69cfaf7f5a77b023ea7a97e":[14,0,4,0,10,5]
+"fileparsers_2include_2_register_info_map_8h.html":[14,0,4,0,9]
 };

@@ -18,7 +18,8 @@ var NAVTREE =
     [ "Logical Name Mapping Backend", "lmap.html", [
       [ "Accessor plugins", "lmap.html#plugins", [
         [ "List of plugins", "lmap.html#plugins_reference", [
-          [ "multiply", "lmap.html#plugins_reference_multiply", null ]
+          [ "multiply", "lmap.html#plugins_reference_multiply", null ],
+          [ "math", "lmap.html#plugins_reference_math", null ]
         ] ]
       ] ]
     ] ],
@@ -71,14 +72,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"class_chimera_t_k_1_1_buffering_register_accessor.html#a51db0f9b0130e0187f0d9ec983e0b5d8",
-"class_chimera_t_k_1_1_dummy_register_address_checker.html#a4dcd6965737aa704ea21e3d65c1926be",
-"class_chimera_t_k_1_1_numeric_addressed_backend.html",
-"class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html#a86167bb7d109c12718a42e61857824dd",
-"class_chimera_t_k_1_1_subdevice_register_accessor.html#a874482c50dee391ac09698c07f25631d",
-"custom_backends.html#writing_backends",
-"fileparsers_2include_2_register_path_8h.html#aff4ac0544a7ecac72fb62a82278824cb",
-"q_and_a.html"
+"class_chimera_t_k_1_1_buffering_register_accessor.html#a4fd3f8bed42bcb07e97604e85d479485",
+"class_chimera_t_k_1_1_dummy_register_address_checker.html#a32177c857d3e155552f9357a07d6108c",
+"class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a96b365f767af7bd6bb3199fc5e1d7902",
+"class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html#a0e3cdf879ad8b5b177c04889b13d9151",
+"class_chimera_t_k_1_1_subdevice_register_accessor.html#a40cd601842afe60e6ce49e74780ca978",
+"class_example_backend.html#ace9471bff30ac79382fae02a815d2625",
+"fileparsers_2include_2_register_info_map_8h.html#a7b983744ce153647b8fa3c6552de8b0d",
+"parser_utilities_8cc.html#ae2b9a4195d7e35aeb3bf43b51d160fe6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

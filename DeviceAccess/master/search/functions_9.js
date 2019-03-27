@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['getvaluefromxmlsubnode_3c_20std_3a_3astring_20_3e',['getValueFromXmlSubnode&lt; std::string &gt;',['../namespace_chimera_t_k.html#a43d1a9d1e8a5aae49dd309e5859ee99c',1,'ChimeraTK']]],
   ['length',['length',['../class_chimera_t_k_1_1_register_path.html#ac4b813fafa64ea898bc9b114291621a5',1,'ChimeraTK::RegisterPath']]],
   ['lnmbackendbitaccessor',['LNMBackendBitAccessor',['../class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ad236c093d0be42c459d13ad62f91a325',1,'ChimeraTK::LNMBackendBitAccessor']]],
   ['lnmbackendchannelaccessor',['LNMBackendChannelAccessor',['../class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a54b235325e9e4cb1a081978e956f3072',1,'ChimeraTK::LNMBackendChannelAccessor']]],

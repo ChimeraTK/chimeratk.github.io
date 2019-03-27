@@ -18,6 +18,7 @@ var searchData=
   ['experimentalfeatures',['ExperimentalFeatures',['../class_chimera_t_k_1_1_experimental_features.html',1,'ChimeraTK']]],
   ['experimentalfeatures_2ecc',['ExperimentalFeatures.cc',['../_experimental_features_8cc.html',1,'']]],
   ['experimentalfeatures_2eh',['ExperimentalFeatures.h',['../device_2include_2_experimental_features_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_experimental_features_8h.html',1,'(Global Namespace)']]],
+  ['expression',['expression',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#a9b7742ce19e2dbf573b05117d50d067e',1,'ChimeraTK::LNMBackend::MathPluginDecorator']]],
   ['extractdirectory',['extractDirectory',['../namespace_chimera_t_k_1_1parser_utilities.html#a91ebf0d4263ce92117ee4f260cdd5edf',1,'ChimeraTK::parserUtilities']]],
   ['extractfilename',['extractFileName',['../namespace_chimera_t_k_1_1parser_utilities.html#a4b7d71c43b5b99282686080779736272',1,'ChimeraTK::parserUtilities']]]
 ];

@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"class_chimera_t_k_1_1_buffering_register_accessor.html#a4fd3f8bed42bcb07e97604e85d479485":[13,0,0,4,29],
 "class_chimera_t_k_1_1_buffering_register_accessor.html#a51db0f9b0130e0187f0d9ec983e0b5d8":[13,0,0,4,23],
 "class_chimera_t_k_1_1_buffering_register_accessor.html#a5250d45d86ce718777302f78abd772e3":[13,0,0,4,15],
 "class_chimera_t_k_1_1_buffering_register_accessor.html#a525b7087b7378f0c794df6b560201421":[13,0,0,4,18],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "class_chimera_t_k_1_1_dummy_register_accessor.html#a8005241e65e65bd075ef0c2360894b15":[13,0,0,23,2],
 "class_chimera_t_k_1_1_dummy_register_accessor.html#a84e72577002961f0400c133b905234b5":[13,0,0,23,3],
 "class_chimera_t_k_1_1_dummy_register_accessor.html#aa306e8d93a3bb20f2680c601c54ebca0":[13,0,0,23,0],
-"class_chimera_t_k_1_1_dummy_register_address_checker.html":[13,0,0,24],
-"class_chimera_t_k_1_1_dummy_register_address_checker.html#a32177c857d3e155552f9357a07d6108c":[13,0,0,24,1]
+"class_chimera_t_k_1_1_dummy_register_address_checker.html":[13,0,0,24]
 };
