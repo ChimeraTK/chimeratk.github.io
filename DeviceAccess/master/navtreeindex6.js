@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"class_example_backend.html#a58db813470c7a500e30de9bdb91c92da":[13,0,8,1],
+"class_example_backend.html#a69a167f471b871edf156bc37052e1948":[13,0,8,6],
+"class_example_backend.html#ab28efb9790bba3ba0d7f5878c53f14e2":[13,0,8,5],
+"class_example_backend.html#ac2d7f01de8bbc5d71a0099918ffd62a7":[13,0,8,8],
 "class_example_backend.html#ace9471bff30ac79382fae02a815d2625":[13,0,8,7],
 "class_example_backend_1_1_backend_registerer.html":[13,0,8,0],
 "class_example_backend_1_1_backend_registerer.html#a5ac41c606b7f546cf96089536636a047":[13,0,8,0,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX6 =
 "fileparsers_2include_2_map_exception_8h.html#a68b4c35383782b40f1c4aaaf74189737":[14,0,4,0,4,2],
 "fileparsers_2include_2_map_exception_8h.html#aba04eaea022b5d8b1e0bb4a8060f8870":[14,0,4,0,4,1],
 "fileparsers_2include_2_map_exception_8h_source.html":[14,0,4,0,4],
-"fileparsers_2include_2_map_file_parser_8h.html":[14,0,4,0,5],
-"fileparsers_2include_2_map_file_parser_8h_source.html":[14,0,4,0,5],
-"fileparsers_2include_2_register_info_8h.html":[14,0,4,0,8],
-"fileparsers_2include_2_register_info_8h_source.html":[14,0,4,0,8],
-"fileparsers_2include_2_register_info_map_8h.html":[14,0,4,0,9]
+"fileparsers_2include_2_map_file_parser_8h.html":[14,0,4,0,5]
 };

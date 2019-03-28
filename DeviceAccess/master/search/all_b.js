@@ -26,6 +26,8 @@ var searchData=
   ['lnmbackendvariableaccessor',['LNMBackendVariableAccessor',['../class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html',1,'ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;'],['../class_chimera_t_k_1_1_logical_name_mapping_backend.html#acd3e54bb07d8008c355b3c584050d5a6',1,'ChimeraTK::LogicalNameMappingBackend::LNMBackendVariableAccessor()'],['../class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#ab1dbc7a69ac2852c9b4809b510ea27b6',1,'ChimeraTK::LNMBackendVariableAccessor::LNMBackendVariableAccessor()']]],
   ['lnmbackendvariableaccessor_2ecc',['LNMBackendVariableAccessor.cc',['../_l_n_m_backend_variable_accessor_8cc.html',1,'']]],
   ['lnmbackendvariableaccessor_2eh',['LNMBackendVariableAccessor.h',['../device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_l_n_m_backend_variable_accessor_8h.html',1,'(Global Namespace)']]],
+  ['lnmmathplugin_2ecc',['LNMMathPlugin.cc',['../_l_n_m_math_plugin_8cc.html',1,'']]],
+  ['lnmmultiplierplugin_2ecc',['LNMMultiplierPlugin.cc',['../_l_n_m_multiplier_plugin_8cc.html',1,'']]],
   ['loadallpluginsfromdmapfile',['loadAllPluginsFromDMapFile',['../class_chimera_t_k_1_1_backend_factory.html#afb11ba2d5dbe02a49f8e99ff9e84ae54',1,'ChimeraTK::BackendFactory']]],
   ['loadpluginlibrary',['loadPluginLibrary',['../class_chimera_t_k_1_1_backend_factory.html#a5269ea223738146c67a03e80af6fd88a',1,'ChimeraTK::BackendFactory']]],
   ['logic_5ferror',['logic_error',['../class_chimera_t_k_1_1logic__error.html',1,'ChimeraTK::logic_error'],['../class_chimera_t_k_1_1logic__error.html#af8bfa95624b9ebe9db9c15e46b957ed2',1,'ChimeraTK::logic_error::logic_error()']]],
