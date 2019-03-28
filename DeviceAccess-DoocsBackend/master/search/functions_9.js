@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['post_5finit_5fepilog',['post_init_epilog',['../_empty_doocs_functions_8cc.html#a13bb82460f4a94d785f99da53b3566a8',1,'EmptyDoocsFunctions.cc']]],
-  ['post_5finit_5fprolog',['post_init_prolog',['../_empty_doocs_functions_8cc.html#af312c745af7ea52e38c6fbe6c6c2b126',1,'EmptyDoocsFunctions.cc']]]
+  ['readdeviceinfo',['readDeviceInfo',['../class_chimera_t_k_1_1_doocs_backend.html#a64beee5b734545cd830b337f1891fb3d',1,'ChimeraTK::DoocsBackend']]],
+  ['replacetransferelement',['replaceTransferElement',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a21af88c286d123e95742b2f87e85aac9',1,'ChimeraTK::DoocsBackendRegisterAccessor']]]
 ];
