@@ -7,5 +7,9 @@ var searchData=
   ['findregisterbyname_5fpred',['findRegisterByName_pred',['../class_chimera_t_k_1_1find_register_by_name__pred.html',1,'ChimeraTK']]],
   ['fixedpointconverter',['FixedPointConverter',['../class_chimera_t_k_1_1_fixed_point_converter.html',1,'ChimeraTK']]],
   ['fixedpointconvertingdecorator',['FixedPointConvertingDecorator',['../class_chimera_t_k_1_1_fixed_point_converting_decorator.html',1,'ChimeraTK']]],
-  ['fixedpointconvertingrawdecorator',['FixedPointConvertingRawDecorator',['../class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html',1,'ChimeraTK']]]
+  ['fixedpointconvertingrawdecorator',['FixedPointConvertingRawDecorator',['../class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html',1,'ChimeraTK']]],
+  ['forcereadonlyplugin',['ForceReadOnlyPlugin',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html',1,'ChimeraTK::LNMBackend']]],
+  ['forcereadonlyplugin_5fhelper',['ForceReadOnlyPlugin_Helper',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper.html',1,'ChimeraTK::LNMBackend']]],
+  ['forcereadonlyplugin_5fhelper_3c_20usertype_2c_20usertype_20_3e',['ForceReadOnlyPlugin_Helper&lt; UserType, UserType &gt;',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper_3_01_user_type_00_01_user_type_01_4.html',1,'ChimeraTK::LNMBackend']]],
+  ['forcereadonlyplugindecorator',['ForceReadOnlyPluginDecorator',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html',1,'ChimeraTK::LNMBackend']]]
 ];

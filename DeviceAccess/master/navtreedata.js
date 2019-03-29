@@ -16,10 +16,14 @@ var NAVTREE =
       [ "CimeraTK device descriptor", "dmap.html#The", null ]
     ] ],
     [ "Logical Name Mapping Backend", "lmap.html", [
+      [ "CDD syntax", "lmap.html#cdd", null ],
+      [ "Map file syntax", "lmap.html#map", null ],
       [ "Accessor plugins", "lmap.html#plugins", [
         [ "List of plugins", "lmap.html#plugins_reference", [
           [ "multiply", "lmap.html#plugins_reference_multiply", null ],
-          [ "math", "lmap.html#plugins_reference_math", null ]
+          [ "math", "lmap.html#plugins_reference_math", null ],
+          [ "forceReadOnly", "lmap.html#plugins_reference_force_read_only", null ],
+          [ "monostableTrigger", "lmap.html#plugins_reference_monostable_trigger", null ]
         ] ]
       ] ]
     ] ],
@@ -72,14 +76,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"class_chimera_t_k_1_1_buffering_register_accessor.html#a360e9976d8579dbf1f9ad23727a31e1c",
-"class_chimera_t_k_1_1_dummy_register_accessor.html#a8005241e65e65bd075ef0c2360894b15",
-"class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a520f730055973aed089f1934e21b6a74",
-"class_chimera_t_k_1_1_register_catalogue.html#ae325cb9f9ff37acb75a90f16f675dfc1",
-"class_chimera_t_k_1_1_subdevice_register_accessor.html#a1222691fc0f95f42432f1838d7008a1b",
-"class_example_backend.html#a58db813470c7a500e30de9bdb91c92da",
-"fileparsers_2include_2_map_file_parser_8h_source.html",
-"parser_utilities_8cc.html#a4b7d71c43b5b99282686080779736272"
+"class_chimera_t_k_1_1_buffering_register_accessor.html#a0588bea08e3d8b661159a64430244b9f",
+"class_chimera_t_k_1_1_dummy_register_accessor.html#a118cb1d0db038c732ba6c763d2e50663",
+"class_chimera_t_k_1_1_n_d_register_accessor.html#ade4923b0dda3dfba2fbfd3bf6c9bad66",
+"class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html#aeeaf05b000058d15f908baddb7ea8be8",
+"class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5caa79cab19160fbdafa655ba29a5716758",
+"class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html#adea2b03e16dee1d0d0e34c5727cae7bc",
+"exception_2include_2_not_implemented_exception_8h.html#af48f115cd1b887fe38d52112fbca3af5",
+"namespace_chimera_t_k.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

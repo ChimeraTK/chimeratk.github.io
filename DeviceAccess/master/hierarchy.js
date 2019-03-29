@@ -5,8 +5,14 @@ var hierarchy =
     [ "ChimeraTK::RegisterAccessor::AccessorHandler< UserType >", "class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html", null ],
     [ "ChimeraTK::RegisterAccessor::AccessorHandler< int32_t >", "class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html", null ],
     [ "ChimeraTK::LNMBackend::AccessorPluginBase", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html", [
+      [ "ChimeraTK::LNMBackend::AccessorPlugin< ForceReadOnlyPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
+        [ "ChimeraTK::LNMBackend::ForceReadOnlyPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html", null ]
+      ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< MathPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::MathPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html", null ]
+      ] ],
+      [ "ChimeraTK::LNMBackend::AccessorPlugin< MonostableTriggerPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
+        [ "ChimeraTK::LNMBackend::MonostableTriggerPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html", null ]
       ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< MultiplierPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::MultiplierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html", null ]
@@ -75,6 +81,11 @@ var hierarchy =
               [ "ChimeraTK::FixedPointConvertingDecorator< UserType, TargetUserType >", "class_chimera_t_k_1_1_fixed_point_converting_decorator.html", null ]
             ] ]
           ] ],
+          [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< UserType, UserType >", null, [
+            [ "ChimeraTK::NDRegisterAccessorDecorator< UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
+              [ "ChimeraTK::LNMBackend::ForceReadOnlyPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html", null ]
+            ] ]
+          ] ],
           [ "ChimeraTK::SyncNDRegisterAccessor< UserType >", "class_chimera_t_k_1_1_sync_n_d_register_accessor.html", [
             [ "ChimeraTK::LNMBackendBitAccessor< UserType >", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html", null ],
             [ "ChimeraTK::LNMBackendChannelAccessor< UserType >", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html", null ],
@@ -86,6 +97,11 @@ var hierarchy =
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, double >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::LNMBackend::MathPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html", null ],
               [ "ChimeraTK::LNMBackend::MultiplierPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html", null ]
+            ] ]
+          ] ],
+          [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< UserType, uint32_t >", null, [
+            [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, uint32_t >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
+              [ "ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html", null ]
             ] ]
           ] ]
         ] ],
@@ -126,6 +142,8 @@ var hierarchy =
     [ "ChimeraTK::findMetaDataByName_pred", "class_chimera_t_k_1_1find_meta_data_by_name__pred.html", null ],
     [ "ChimeraTK::findRegisterByName_pred", "class_chimera_t_k_1_1find_register_by_name__pred.html", null ],
     [ "ChimeraTK::FixedPointConverter", "class_chimera_t_k_1_1_fixed_point_converter.html", null ],
+    [ "ChimeraTK::LNMBackend::ForceReadOnlyPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper.html", null ],
+    [ "ChimeraTK::LNMBackend::ForceReadOnlyPlugin_Helper< UserType, UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper_3_01_user_type_00_01_user_type_01_4.html", null ],
     [ "std::hash< ChimeraTK::TransferElementID >", "structstd_1_1hash_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html", null ],
     [ "ChimeraTK::InstantiateLogicalNameMappingBackendFunctions< UserType >", "class_chimera_t_k_1_1_instantiate_logical_name_mapping_backend_functions.html", null ],
@@ -137,6 +155,8 @@ var hierarchy =
     [ "ChimeraTK::LNMBackend::MathPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin___helper.html", null ],
     [ "ChimeraTK::LNMBackend::MathPlugin_Helper< UserType, double >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin___helper_3_01_user_type_00_01double_01_4.html", null ],
     [ "ChimeraTK::RegisterInfoMap::MetaData", "class_chimera_t_k_1_1_register_info_map_1_1_meta_data.html", null ],
+    [ "ChimeraTK::LNMBackend::MonostableTriggerPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin___helper.html", null ],
+    [ "ChimeraTK::LNMBackend::MonostableTriggerPlugin_Helper< UserType, uint32_t >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin___helper_3_01_user_type_00_01uint32__t_01_4.html", null ],
     [ "ChimeraTK::MultiplexedDataAccessor< UserType >", "class_chimera_t_k_1_1_multiplexed_data_accessor.html", null ],
     [ "ChimeraTK::LNMBackend::MultiplierPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin___helper.html", null ],
     [ "ChimeraTK::LNMBackend::MultiplierPlugin_Helper< UserType, double >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin___helper_3_01_user_type_00_01double_01_4.html", null ],
@@ -149,11 +169,11 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::RegisterAccessor", "class_chimera_t_k_1_1_register_accessor.html", null ],
     [ "ChimeraTK::RegisterCatalogue", "class_chimera_t_k_1_1_register_catalogue.html", null ],
-    [ "ChimeraTK::RebotProtocol0::RegisterInfo", "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html", null ],
     [ "ChimeraTK::RegisterInfo", "class_chimera_t_k_1_1_register_info.html", [
       [ "ChimeraTK::LNMBackendRegisterInfo", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html", null ],
       [ "ChimeraTK::RegisterInfoMap::RegisterInfo", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html", null ]
     ] ],
+    [ "ChimeraTK::RebotProtocol0::RegisterInfo", "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html", null ],
     [ "ChimeraTK::RegisterInfoMap", "class_chimera_t_k_1_1_register_info_map.html", null ],
     [ "ChimeraTK::RegisterPath", "class_chimera_t_k_1_1_register_path.html", null ],
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, DestType >::Round< S >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html", null ],
