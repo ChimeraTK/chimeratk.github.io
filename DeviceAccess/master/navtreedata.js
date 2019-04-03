@@ -17,7 +17,9 @@ var NAVTREE =
     ] ],
     [ "Logical Name Mapping Backend", "lmap.html", [
       [ "CDD syntax", "lmap.html#cdd", null ],
-      [ "Map file syntax", "lmap.html#map", null ],
+      [ "Map file syntax", "lmap.html#map", [
+        [ "Self-referencing redirects", "lmap.html#internal_redirect", null ]
+      ] ],
       [ "Accessor plugins", "lmap.html#plugins", [
         [ "List of plugins", "lmap.html#plugins_reference", [
           [ "multiply", "lmap.html#plugins_reference_multiply", null ],
