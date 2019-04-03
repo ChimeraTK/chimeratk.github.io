@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"struct_chimera_t_k_1_1_property_attributes.html#a66f3017c5f008b2422ec6b44f99f1fc8":[3,0,0,11,0],
 "struct_chimera_t_k_1_1_property_attributes.html#a927a4bb8520eba6fe1a0ea8fb34d899b":[3,0,0,11,2],
 "struct_chimera_t_k_1_1_property_attributes.html#aebe51d307d0289805ea80e3506e51f22":[3,0,0,11,3],
 "struct_chimera_t_k_1_1_property_attributes.html#aec12ae3311c34e463addecab0ccafff3":[3,0,0,11,1],
