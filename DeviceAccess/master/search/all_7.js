@@ -19,6 +19,8 @@ var searchData=
   ['fixedpointconverter_2eh',['FixedPointConverter.h',['../device_2include_2_fixed_point_converter_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_fixed_point_converter_8h.html',1,'(Global Namespace)']]],
   ['fixedpointconvertingdecorator',['FixedPointConvertingDecorator',['../class_chimera_t_k_1_1_fixed_point_converting_decorator.html',1,'ChimeraTK::FixedPointConvertingDecorator&lt; UserType, TargetUserType &gt;'],['../class_chimera_t_k_1_1_fixed_point_converting_decorator.html#ad4f0b696da0a163b90fe7fd78c33e784',1,'ChimeraTK::FixedPointConvertingDecorator::FixedPointConvertingDecorator()']]],
   ['fixedpointconvertingrawdecorator',['FixedPointConvertingRawDecorator',['../class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html',1,'ChimeraTK::FixedPointConvertingRawDecorator&lt; TargetUserType &gt;'],['../class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html#a8908fceed581649fee341fb598114fea',1,'ChimeraTK::FixedPointConvertingRawDecorator::FixedPointConvertingRawDecorator()']]],
+  ['fixedusertypemap',['FixedUserTypeMap',['../class_chimera_t_k_1_1_fixed_user_type_map.html',1,'ChimeraTK']]],
+  ['fixedusertypemap_3c_20int_20_3e',['FixedUserTypeMap&lt; int &gt;',['../class_chimera_t_k_1_1_fixed_user_type_map.html',1,'ChimeraTK']]],
   ['float32',['float32',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a77409000048075a168901376095a70b8',1,'ChimeraTK::DataType']]],
   ['float64',['float64',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899acf9a113559e682b39aab0754540f31cc',1,'ChimeraTK::DataType']]],
   ['for_5feach',['for_each',['../namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d',1,'ChimeraTK']]],

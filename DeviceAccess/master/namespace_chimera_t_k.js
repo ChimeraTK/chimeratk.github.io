@@ -35,6 +35,7 @@ var namespace_chimera_t_k =
     [ "FixedPointConverter", "class_chimera_t_k_1_1_fixed_point_converter.html", "class_chimera_t_k_1_1_fixed_point_converter" ],
     [ "FixedPointConvertingDecorator", "class_chimera_t_k_1_1_fixed_point_converting_decorator.html", "class_chimera_t_k_1_1_fixed_point_converting_decorator" ],
     [ "FixedPointConvertingRawDecorator", "class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html", "class_chimera_t_k_1_1_fixed_point_converting_raw_decorator" ],
+    [ "FixedUserTypeMap", "class_chimera_t_k_1_1_fixed_user_type_map.html", "class_chimera_t_k_1_1_fixed_user_type_map" ],
     [ "IEEE754_SingleConverter", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter" ],
     [ "InstantiateLogicalNameMappingBackendFunctions", "class_chimera_t_k_1_1_instantiate_logical_name_mapping_backend_functions.html", null ],
     [ "LNMBackendBitAccessor", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor" ],

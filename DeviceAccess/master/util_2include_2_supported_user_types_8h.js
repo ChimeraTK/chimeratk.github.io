@@ -1,5 +1,6 @@
 var util_2include_2_supported_user_types_8h =
 [
+    [ "FixedUserTypeMap", "class_chimera_t_k_1_1_fixed_user_type_map.html", "class_chimera_t_k_1_1_fixed_user_type_map" ],
     [ "TemplateUserTypeMap", "class_chimera_t_k_1_1_template_user_type_map.html", "class_chimera_t_k_1_1_template_user_type_map" ],
     [ "DataType", "class_chimera_t_k_1_1_data_type.html", "class_chimera_t_k_1_1_data_type" ],
     [ "DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "util_2include_2_supported_user_types_8h.html#a393c59a0bbe800ef9a1420bc5f8f8be7", null ],

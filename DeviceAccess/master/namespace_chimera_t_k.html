@@ -212,6 +212,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html">FixedPointConvertingRawDecorator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fixed_user_type_map.html">FixedUserTypeMap</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of UserType to a value of a single type (same for evey user type)  <a href="class_chimera_t_k_1_1_fixed_user_type_map.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html">IEEE754_SingleConverter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Needs to have the same interface as <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html" title="The fixed point converter provides conversion functions between a user type and up to 32 bit fixed po...">FixedPointConverter</a>, except for the constructor.  <a href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -815,7 +818,7 @@ template&lt;typename T &gt; </div>
 
 <p>Map of UserType to a single type. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00047">47</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00059">59</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -850,7 +853,7 @@ template&lt;typename T &gt; </div>
 <p>Map of UserType to value of the UserType. </p>
 <p>Used e.g. by the <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html" title="The fixed point converter provides conversion functions between a user type and up to 32 bit fixed po...">FixedPointConverter</a> to store coefficients etc. in dependence of the UserType. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00025">25</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00024">24</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -930,7 +933,7 @@ template&lt;typename LAMBDATYPE &gt; </div>
 <p>std::cout &lt;&lt; typeid(int).name() &lt;&lt; std::endl;</p>
 <p>Please note that this call is not as efficient as a direct call to a template. For each call all allowed user types have to be tested against the given type_info. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00305">305</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00317">317</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -981,7 +984,7 @@ template&lt;typename LAMBDATYPE &gt; </div>
 <p>Alternate form of <a class="el" href="namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d" title="Helper function for running code which uses some compile-time type that is specified at runtime as a ...">callForType()</a> which takes a <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> as a runtime type description. </p>
 <p>If <a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a43e32937488a25bceb7b75994793a087" title="The data type/concept does not exist. ">DataType::none</a> is passed, std::bad_cast is thrown. For more details have a look at the other form. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00336">336</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00348">348</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1245,7 +1248,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fixed_point_converter_8cc_source.html#l00075">75</a> of file <a class="el" href="_fixed_point_converter_8cc_source.html">FixedPointConverter.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fixed_point_converter_8cc_source.html#l00073">73</a> of file <a class="el" href="_fixed_point_converter_8cc_source.html">FixedPointConverter.cc</a>.</p>
 
 </div>
 </div>
@@ -1267,7 +1270,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fixed_point_converter_8cc_source.html#l00092">92</a> of file <a class="el" href="_fixed_point_converter_8cc_source.html">FixedPointConverter.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fixed_point_converter_8cc_source.html#l00090">90</a> of file <a class="el" href="_fixed_point_converter_8cc_source.html">FixedPointConverter.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -1310,7 +1313,7 @@ template&lt;typename MAPTYPE , typename LAMBDATYPE &gt; </div>
 <p>Variant of <a class="el" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d" title="Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...">boost::fusion::for_each()</a> to iterate a boost::fusion::map, which accepts a lambda instead of the callable class requred by the boost version. </p>
 <p>The lambda must have one single argument of the type auto, which will be a boost::fusion::pair&lt;&gt;. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00274">274</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00286">286</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -2494,7 +2497,7 @@ template&lt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li>
-    <li class="footer">Generated on Wed Apr 3 2019 03:53:07 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Apr 6 2019 03:53:07 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

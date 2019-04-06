@@ -142,6 +142,8 @@ var hierarchy =
     [ "ChimeraTK::findMetaDataByName_pred", "class_chimera_t_k_1_1find_meta_data_by_name__pred.html", null ],
     [ "ChimeraTK::findRegisterByName_pred", "class_chimera_t_k_1_1find_register_by_name__pred.html", null ],
     [ "ChimeraTK::FixedPointConverter", "class_chimera_t_k_1_1_fixed_point_converter.html", null ],
+    [ "ChimeraTK::FixedUserTypeMap< TargetType >", "class_chimera_t_k_1_1_fixed_user_type_map.html", null ],
+    [ "ChimeraTK::FixedUserTypeMap< int >", "class_chimera_t_k_1_1_fixed_user_type_map.html", null ],
     [ "ChimeraTK::LNMBackend::ForceReadOnlyPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper.html", null ],
     [ "ChimeraTK::LNMBackend::ForceReadOnlyPlugin_Helper< UserType, UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper_3_01_user_type_00_01_user_type_01_4.html", null ],
     [ "std::hash< ChimeraTK::TransferElementID >", "structstd_1_1hash_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", null ],
