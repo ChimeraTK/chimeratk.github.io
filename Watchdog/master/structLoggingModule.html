@@ -61,6 +61,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structLoggingModule-members.html">List of all members</a>  </div>
@@ -85,9 +86,21 @@ Collaboration diagram for LoggingModule:</div>
 <div class="dyncontent">
 <div class="center"><img src="structLoggingModule__coll__graph.png" border="0" usemap="#LoggingModule_coll__map" alt="Collaboration graph"/></div>
 <map name="LoggingModule_coll__map" id="LoggingModule_coll__map">
+<area shape="rect" id="node3" href="structLoggingModule_1_1Input.html" title="LoggingModule::Input" alt="" coords="172,81,333,108"/>
+<area shape="rect" id="node5" href="structLoggingModule_1_1Status.html" title="LoggingModule::Status" alt="" coords="357,81,527,108"/>
+<area shape="rect" id="node6" href="structLoggingModule_1_1Config.html" title="LoggingModule::Config" alt="" coords="551,81,720,108"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggingModule_1_1Config.html">Config</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggingModule_1_1Input.html">Input</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggingModule_1_1Status.html">Status</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae1447048dd90e2a7951d23c33987650f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggingModule.html#ae1447048dd90e2a7951d23c33987650f">mainLoop</a> ()</td></tr>
@@ -100,20 +113,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>terminate</b> ()</td>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a30626e4224e872a8b8ea94f4b3df810f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggingModule.html#a30626e4224e872a8b8ea94f4b3df810f">messageCounter</a></td></tr>
 <tr class="separator:a30626e4224e872a8b8ea94f4b3df810f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a887b82c4a2fbe084b134c5a91da7cf89"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPushInput&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>message</b></td></tr>
-<tr class="separator:a887b82c4a2fbe084b134c5a91da7cf89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff12a4b08ef4ae4992880cdb953a3544"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPushInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>messageLevel</b></td></tr>
-<tr class="separator:aff12a4b08ef4ae4992880cdb953a3544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a514d6e2c4e43b577c71e25c09be6b6d0"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>targetStream</b></td></tr>
-<tr class="separator:a514d6e2c4e43b577c71e25c09be6b6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28f86954c8525e7d7820e4c969502aa6"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>logFile</b></td></tr>
-<tr class="separator:a28f86954c8525e7d7820e4c969502aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04e42940e162a4b5788bfc837f5a0854"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>tailLength</b></td></tr>
-<tr class="separator:a04e42940e162a4b5788bfc837f5a0854"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73312a5a93ca0d7ef9e90c02c3dd33b4"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>logLevel</b></td></tr>
-<tr class="separator:a73312a5a93ca0d7ef9e90c02c3dd33b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a454442d06a719179e5719978d5ca26d4"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>logTail</b></td></tr>
-<tr class="separator:a454442d06a719179e5719978d5ca26d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5b12afd7805c5d1d52a73e09c43e17"><td class="memItemLeft" align="right" valign="top"><a id="a2d5b12afd7805c5d1d52a73e09c43e17"></a>
+<a class="el" href="structLoggingModule_1_1Input.html">LoggingModule::Input</a>&#160;</td><td class="memItemRight" valign="bottom"><b>this</b></td></tr>
+<tr class="separator:a2d5b12afd7805c5d1d52a73e09c43e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff16c79364ecb9a8edc336b412580697"><td class="memItemLeft" align="right" valign="top"><a id="aff16c79364ecb9a8edc336b412580697"></a>
+<a class="el" href="structLoggingModule_1_1Input.html">LoggingModule::Input</a>&#160;</td><td class="memItemRight" valign="bottom"><b>input</b></td></tr>
+<tr class="separator:aff16c79364ecb9a8edc336b412580697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f4e5855dc357ce1198d4bfb49ca71e"><td class="memItemLeft" align="right" valign="top"><a id="a40f4e5855dc357ce1198d4bfb49ca71e"></a>
+<a class="el" href="structLoggingModule_1_1Input.html">LoggingModule::Input</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LoggingModule</b></td></tr>
+<tr class="separator:a40f4e5855dc357ce1198d4bfb49ca71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d336361a4d60a9dbb661c8d39f6dca0"><td class="memItemLeft" align="right" valign="top"><a id="a5d336361a4d60a9dbb661c8d39f6dca0"></a>
+<a class="el" href="structLoggingModule_1_1Config.html">LoggingModule::Config</a>&#160;</td><td class="memItemRight" valign="bottom"><b>this</b></td></tr>
+<tr class="separator:a5d336361a4d60a9dbb661c8d39f6dca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9467e41aed3798e2fa0cbf6adaac8149"><td class="memItemLeft" align="right" valign="top"><a id="a9467e41aed3798e2fa0cbf6adaac8149"></a>
+<a class="el" href="structLoggingModule_1_1Config.html">LoggingModule::Config</a>&#160;</td><td class="memItemRight" valign="bottom"><b>config</b></td></tr>
+<tr class="separator:a9467e41aed3798e2fa0cbf6adaac8149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a79a8f32cbd8432fa74bcc78c825b6c"><td class="memItemLeft" align="right" valign="top"><a id="a2a79a8f32cbd8432fa74bcc78c825b6c"></a>
+<a class="el" href="structLoggingModule_1_1Config.html">LoggingModule::Config</a>&#160;</td><td class="memItemRight" valign="bottom"><b>process</b></td></tr>
+<tr class="separator:a2a79a8f32cbd8432fa74bcc78c825b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab84138ed63f1adb7cd84d839e3d9b541"><td class="memItemLeft" align="right" valign="top"><a id="ab84138ed63f1adb7cd84d839e3d9b541"></a>
+<a class="el" href="structLoggingModule_1_1Status.html">LoggingModule::Status</a>&#160;</td><td class="memItemRight" valign="bottom"><b>this</b></td></tr>
+<tr class="separator:ab84138ed63f1adb7cd84d839e3d9b541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8845981975aac22280b1d99ad5a43e55"><td class="memItemLeft" align="right" valign="top"><a id="a8845981975aac22280b1d99ad5a43e55"></a>
+<a class="el" href="structLoggingModule_1_1Status.html">LoggingModule::Status</a>&#160;</td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
+<tr class="separator:a8845981975aac22280b1d99ad5a43e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66157e7c5c8f75e1448b8dda6f6aa7f"><td class="memItemLeft" align="right" valign="top"><a id="ad66157e7c5c8f75e1448b8dda6f6aa7f"></a>
+<a class="el" href="structLoggingModule_1_1Status.html">LoggingModule::Status</a>&#160;</td><td class="memItemRight" valign="bottom"><b>process</b></td></tr>
+<tr class="separator:ad66157e7c5c8f75e1448b8dda6f6aa7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a600659a6a9219f9123ae1fd7b2f43826"><td class="memItemLeft" align="right" valign="top"><a id="a600659a6a9219f9123ae1fd7b2f43826"></a>
 std::unique_ptr&lt; std::ofstream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggingModule.html#a600659a6a9219f9123ae1fd7b2f43826">file</a></td></tr>
 <tr class="memdesc:a600659a6a9219f9123ae1fd7b2f43826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log file where to write log messages. <br /></td></tr>
@@ -159,62 +185,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a28f86954c8525e7d7820e4c969502aa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28f86954c8525e7d7820e4c969502aa6">&#9670;&nbsp;</a></span>logFile</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPollInput&lt;std::string&gt; LoggingModule::logFile</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;SetLogFile&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;Name of the external logfile. If empty messages are pushed to cout/cerr&quot;</span>}</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a73312a5a93ca0d7ef9e90c02c3dd33b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73312a5a93ca0d7ef9e90c02c3dd33b4">&#9670;&nbsp;</a></span>logLevel</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPollInput&lt;uint&gt; LoggingModule::logLevel</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;SetLogLevel&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Current log level used for messages.&quot;</span>, {<span class="stringliteral">&quot;CS&quot;</span>} }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a454442d06a719179e5719978d5ca26d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a454442d06a719179e5719978d5ca26d4">&#9670;&nbsp;</a></span>logTail</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarOutput&lt;std::string&gt; LoggingModule::logTail</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;LogTail&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Tail of the logging stream.&quot;</span>,</div><div class="line">      { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName() } }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a887b82c4a2fbe084b134c5a91da7cf89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a887b82c4a2fbe084b134c5a91da7cf89">&#9670;&nbsp;</a></span>message</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPushInput&lt;std::string&gt; LoggingModule::message</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;message&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Message to be logged.&quot;</span> }</div></div><!-- fragment -->
-</div>
-</div>
 <a id="a30626e4224e872a8b8ea94f4b3df810f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30626e4224e872a8b8ea94f4b3df810f">&#9670;&nbsp;</a></span>messageCounter</h2>
 
@@ -228,48 +198,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><div class="memdoc">
 <p>Number of messages stored in the tail </p>
 
-</div>
-</div>
-<a id="aff12a4b08ef4ae4992880cdb953a3544"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff12a4b08ef4ae4992880cdb953a3544">&#9670;&nbsp;</a></span>messageLevel</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPushInput&lt;uint&gt; LoggingModule::messageLevel</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;messageLevel&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;Message log level.&quot;</span> }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a04e42940e162a4b5788bfc837f5a0854"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04e42940e162a4b5788bfc837f5a0854">&#9670;&nbsp;</a></span>tailLength</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPollInput&lt;uint&gt; LoggingModule::tailLength</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;SetLogTailLength&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Maximum number of messages to be shown in the logging stream tail.&quot;</span>,</div><div class="line">  {<span class="stringliteral">&quot;CS&quot;</span>}}</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a514d6e2c4e43b577c71e25c09be6b6d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a514d6e2c4e43b577c71e25c09be6b6d0">&#9670;&nbsp;</a></span>targetStream</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPollInput&lt;uint&gt; LoggingModule::targetStream</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;SetTargetStream&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">          <span class="stringliteral">&quot;Set the tagret stream: 0 (cout/cerr+logfile), 1 (logfile), 2 (cout/cerr), 3 (none)&quot;</span>,</div><div class="line">  {<span class="stringliteral">&quot;CS&quot;</span>}}</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>

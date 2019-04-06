@@ -85,9 +85,17 @@ Collaboration diagram for WatchdogServer:</div>
 <div class="dyncontent">
 <div class="center"><img src="structWatchdogServer__coll__graph.png" border="0" usemap="#WatchdogServer_coll__map" alt="Collaboration graph"/></div>
 <map name="WatchdogServer_coll__map" id="WatchdogServer_coll__map">
-<area shape="rect" id="node3" href="structConversionModule.html" title="ConversionModule" alt="" coords="153,81,295,108"/>
-<area shape="rect" id="node5" href="structProcessInfoModule.html" title="This module is used to collect process information. " alt="" coords="320,81,464,108"/>
-<area shape="rect" id="node6" href="classSystemInfoModule.html" title="This module is used to read system parameter. " alt="" coords="489,81,631,108"/>
+<area shape="rect" id="node3" href="structFileSystemGroup.html" title="This group includes one FileSystemModule per hard drive. " alt="" coords="537,56,669,83"/>
+<area shape="rect" id="node5" href="structProcessGroup.html" title="ProcessGroup" alt="" coords="547,157,658,184"/>
+<area shape="rect" id="node17" href="structNetworkGroup.html" title="This group includes one NetworkModule per network device. " alt="" coords="545,107,661,133"/>
+<area shape="rect" id="node7" href="structConversionModule.html" title="Module used to convert trigger signal from PeriodicTrigger for MicroDAQ. " alt="" coords="531,367,674,393"/>
+<area shape="rect" id="node9" href="structProcessInfoModule.html" title="This module is used to collect process information. " alt="" coords="531,235,675,261"/>
+<area shape="rect" id="node14" href="classSystemInfoModule.html" title="This module is used to read system parameter. " alt="" coords="531,440,674,467"/>
+<area shape="rect" id="node10" href="structProcessInfoModule_1_1Statistics.html" title="ProcessInfoModule::\lStatistics" alt="" coords="189,159,341,201"/>
+<area shape="rect" id="node12" href="structProcessInfoModule_1_1Status.html" title="ProcessInfoModule::\lStatus" alt="" coords="189,231,341,273"/>
+<area shape="rect" id="node13" href="structProcessInfoModule_1_1Input.html" title="ProcessInfoModule::\lInput" alt="" coords="189,302,341,343"/>
+<area shape="rect" id="node15" href="structSystemInfoModule_1_1Info.html" title="SystemInfoModule::Info" alt="" coords="177,540,353,567"/>
+<area shape="rect" id="node16" href="structSystemInfoModule_1_1Status.html" title="SystemInfoModule::Status" alt="" coords="169,455,361,481"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -101,12 +109,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>defineConnections</b>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a433d3ce980aa862c0cf72ccec69846da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSystemInfoModule.html">SystemInfoModule</a>&#160;</td><td class="memItemRight" valign="bottom"><b>systemInfo</b></td></tr>
 <tr class="separator:a433d3ce980aa862c0cf72ccec69846da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af21c89fb581f3f8ff9d3cf02509634c1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structProcessControlModule.html">ProcessControlModule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWatchdogServer.html#af21c89fb581f3f8ff9d3cf02509634c1">processes</a></td></tr>
-<tr class="separator:af21c89fb581f3f8ff9d3cf02509634c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dea91943e4456bf4ca8f9f4995ec6d2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structFileSystemModule.html">FileSystemModule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWatchdogServer.html#a6dea91943e4456bf4ca8f9f4995ec6d2">fsMonitors</a></td></tr>
-<tr class="separator:a6dea91943e4456bf4ca8f9f4995ec6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a96dd4fa6053b7b783e43c5d446d7f0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structNetworkModule.html">NetworkModule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWatchdogServer.html#a9a96dd4fa6053b7b783e43c5d446d7f0">networkMonitors</a></td></tr>
-<tr class="separator:a9a96dd4fa6053b7b783e43c5d446d7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c928a382ab3dd2b7f7649e9bed006b5"><td class="memItemLeft" align="right" valign="top"><a id="a0c928a382ab3dd2b7f7649e9bed006b5"></a>
+<a class="el" href="structProcessGroup.html">ProcessGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><b>processGroup</b> {this, &quot;process&quot;, &quot;Process module group&quot;}</td></tr>
+<tr class="separator:a0c928a382ab3dd2b7f7649e9bed006b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1dc6e550f4ec8557f6052c62bea1d2"><td class="memItemLeft" align="right" valign="top"><a id="a3a1dc6e550f4ec8557f6052c62bea1d2"></a>
+<a class="el" href="structFileSystemGroup.html">FileSystemGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><b>filesystemGroup</b> {this, &quot;filesystem&quot;, &quot;File system module group&quot;}</td></tr>
+<tr class="separator:a3a1dc6e550f4ec8557f6052c62bea1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e411b2434cb02987a530b230617bf15"><td class="memItemLeft" align="right" valign="top"><a id="a3e411b2434cb02987a530b230617bf15"></a>
+<a class="el" href="structNetworkGroup.html">NetworkGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><b>networkGroup</b> {this, &quot;network&quot;, &quot;Network module group&quot;}</td></tr>
+<tr class="separator:a3e411b2434cb02987a530b230617bf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5284e735372ca5947a8105ad3167c54a"><td class="memItemLeft" align="right" valign="top"><a id="a5284e735372ca5947a8105ad3167c54a"></a>
 <a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a>&#160;</td><td class="memItemRight" valign="bottom"><b>watchdog</b> {this, &quot;watchdog&quot;, &quot;Module monitoring the watchdog process&quot;}</td></tr>
 <tr class="separator:a5284e735372ca5947a8105ad3167c54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,7 +133,8 @@ ctk::MicroDAQ&#160;</td><td class="memItemRight" valign="bottom"><b>microDAQ</b>
 <tr class="memitem:a5250e08f8ba03bab3d1ac56f64134723"><td class="memItemLeft" align="right" valign="top"><a id="a5250e08f8ba03bab3d1ac56f64134723"></a>
 ctk::history::ServerHistory&#160;</td><td class="memItemRight" valign="bottom"><b>history</b></td></tr>
 <tr class="separator:a5250e08f8ba03bab3d1ac56f64134723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2a80d4a412c142f8d4753b51e12bfa3"><td class="memItemLeft" align="right" valign="top">ctk::ControlSystemModule&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWatchdogServer.html#ac2a80d4a412c142f8d4753b51e12bfa3">cs</a></td></tr>
+<tr class="memitem:ac2a80d4a412c142f8d4753b51e12bfa3"><td class="memItemLeft" align="right" valign="top"><a id="ac2a80d4a412c142f8d4753b51e12bfa3"></a>
+ctk::ControlSystemModule&#160;</td><td class="memItemRight" valign="bottom"><b>cs</b></td></tr>
 <tr class="separator:ac2a80d4a412c142f8d4753b51e12bfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad28386ab5c73d0f07dbafd7a6a738cfb"><td class="memItemLeft" align="right" valign="top"><a id="ad28386ab5c73d0f07dbafd7a6a738cfb"></a>
 ctk::PeriodicTrigger&#160;</td><td class="memItemRight" valign="bottom"><b>trigger</b> {this, &quot;Trigger&quot;, &quot;Trigger used for other modules&quot;}</td></tr>
@@ -130,71 +142,11 @@ ctk::PeriodicTrigger&#160;</td><td class="memItemRight" valign="bottom"><b>trigg
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The watchdog application. </p>
-<p>WatchdogServerConfig.xml file is used to read process names and microDAQ enable/disable is used. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac2a80d4a412c142f8d4753b51e12bfa3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2a80d4a412c142f8d4753b51e12bfa3">&#9670;&nbsp;</a></span>cs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ControlSystemModule WatchdogServer::cs</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Use either</p><ul>
-<li>ctk::ControlSystemModule cs; in combinartion with cs["SYS"]("val") or</li>
-<li>ctk::ControlSystemModule cs{"SYS"}; in combination with cs("val") In any case SYS defines the location in DOOCS. SYS/TEST would create another hierarchy that would result in SYS/TEST.val in DOOCS. </li>
+<p>WatchdogServerConfig.xml file is used to read the number of processes and to enable/disable</p><ul>
+<li>microDAQ</li>
+<li>history </li>
 </ul>
-
-</div>
-</div>
-<a id="a6dea91943e4456bf4ca8f9f4995ec6d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dea91943e4456bf4ca8f9f4995ec6d2">&#9670;&nbsp;</a></span>fsMonitors</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="structFileSystemModule.html">FileSystemModule</a>&gt; WatchdogServer::fsMonitors</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Modules monitoring disks usage of system drives. </p>
-
-</div>
-</div>
-<a id="a9a96dd4fa6053b7b783e43c5d446d7f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a96dd4fa6053b7b783e43c5d446d7f0">&#9670;&nbsp;</a></span>networkMonitors</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="structNetworkModule.html">NetworkModule</a>&gt; WatchdogServer::networkMonitors</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Modules monitoring disks usage of system drives. </p>
-
-</div>
-</div>
-<a id="af21c89fb581f3f8ff9d3cf02509634c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af21c89fb581f3f8ff9d3cf02509634c1">&#9670;&nbsp;</a></span>processes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="structProcessControlModule.html">ProcessControlModule</a>&gt; WatchdogServer::processes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>vector storing processes The vector is filled during construction using information from the input xml file called: watchdog_server_processes.xml If that file is not found only one process named PROCESS is added. </p>
-
-</div>
-</div>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a433d3ce980aa862c0cf72ccec69846da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a433d3ce980aa862c0cf72ccec69846da">&#9670;&nbsp;</a></span>systemInfo</h2>
 
@@ -206,7 +158,7 @@ ctk::PeriodicTrigger&#160;</td><td class="memItemRight" valign="bottom"><b>trigg
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;SYS&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Module reading system information&quot;</span> }</div></div><!-- fragment -->
+<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;system&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Module reading system information&quot;</span> }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>

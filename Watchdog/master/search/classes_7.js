@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['sysinfo',['SysInfo',['../classSysInfo.html',1,'']]],
-  ['systeminfomodule',['SystemInfoModule',['../classSystemInfoModule.html',1,'']]]
+  ['raw',['raw',['../structNetworkModule_1_1raw.html',1,'NetworkModule']]]
 ];

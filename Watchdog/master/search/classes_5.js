@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['processcontrolmodule',['ProcessControlModule',['../structProcessControlModule.html',1,'']]],
-  ['processhandler',['ProcessHandler',['../structProcessHandler.html',1,'']]],
-  ['processinfomodule',['ProcessInfoModule',['../structProcessInfoModule.html',1,'']]]
+  ['networkgroup',['NetworkGroup',['../structNetworkGroup.html',1,'']]],
+  ['networkmodule',['NetworkModule',['../structNetworkModule.html',1,'']]]
 ];

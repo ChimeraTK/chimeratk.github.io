@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['message',['Message',['../structlogging_1_1Message.html',1,'logging']]]
+  ['logfilemodule',['LogFileModule',['../structLogFileModule.html',1,'']]],
+  ['loggingmodule',['LoggingModule',['../structLoggingModule.html',1,'']]]
 ];

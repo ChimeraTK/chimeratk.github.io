@@ -8,9 +8,11 @@ var searchData=
   ['setsignum',['setSigNum',['../structProcessHandler.html#a19a0020ef87b7e09c84c112a944016f6',1,'ProcessHandler']]],
   ['setuphandler',['setupHandler',['../structProcessHandler.html#a4eb6afb25ee59bf5e015c465b71c40c2',1,'ProcessHandler']]],
   ['startprocess',['startProcess',['../structProcessHandler.html#a9102d9895d68907414a97d4cd4ed79cc',1,'ProcessHandler']]],
-  ['starttime',['startTime',['../structProcessInfoModule.html#a63fa6f3d052df587ee88136d260f85aa',1,'ProcessInfoModule']]],
-  ['stime',['stime',['../structProcessInfoModule.html#a568d95f9a110c5db3171d49acfedf9be',1,'ProcessInfoModule']]],
+  ['starttime',['startTime',['../structProcessInfoModule_1_1Statistics.html#ab5a27aacb5ac78046949975da63def54',1,'ProcessInfoModule::Statistics']]],
+  ['statistics',['Statistics',['../structProcessInfoModule_1_1Statistics.html',1,'ProcessInfoModule']]],
+  ['status',['Status',['../structProcessInfoModule_1_1Status.html',1,'ProcessInfoModule::Status'],['../structLoggingModule_1_1Status.html',1,'LoggingModule::Status'],['../structLogFileModule_1_1Status.html',1,'LogFileModule::Status'],['../structSystemInfoModule_1_1Status.html',1,'SystemInfoModule::Status'],['../structFileSystemModule_1_1Status.html',1,'FileSystemModule::Status'],['../structNetworkModule_1_1Status.html',1,'NetworkModule::Status']]],
+  ['stime',['stime',['../structProcessInfoModule_1_1Statistics.html#a96830e5fe66a17d0272efe068344bc06',1,'ProcessInfoModule::Statistics']]],
   ['sysinfo',['SysInfo',['../classSysInfo.html',1,'SysInfo'],['../classSysInfo.html#ad5810112be02a38d5d4aecc95724c656',1,'SysInfo::SysInfo()']]],
   ['systeminfomodule',['SystemInfoModule',['../classSystemInfoModule.html',1,'']]],
-  ['sysuptime',['sysUpTime',['../structProcessInfoModule.html#adbe9f029d44d0ca7d0943e2c9e27614c',1,'ProcessInfoModule']]]
+  ['sysuptime',['sysUpTime',['../structProcessInfoModule_1_1Input.html#a13e06b501dddaf00951a6ccc3cc4c4eb',1,'ProcessInfoModule::Input']]]
 ];

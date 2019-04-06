@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['rss',['rss',['../structProcessInfoModule.html#a3d74cbbee14a01fa4ac85d56180f593f',1,'ProcessInfoModule']]],
-  ['runtime',['runtime',['../structProcessInfoModule.html#a8c11129c477f0177e253f3ce414d0fc3',1,'ProcessInfoModule']]]
+  ['rss',['rss',['../structProcessInfoModule_1_1Statistics.html#af4ed52d9a2805fb69338ab8aab9b1f7a',1,'ProcessInfoModule::Statistics']]],
+  ['runtime',['runtime',['../structProcessInfoModule_1_1Statistics.html#a8a08dbf77998e8e5fe0f025eacb5de43',1,'ProcessInfoModule::Statistics']]]
 ];

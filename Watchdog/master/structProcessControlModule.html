@@ -61,6 +61,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structProcessControlModule-members.html">List of all members</a>  </div>
@@ -86,10 +87,22 @@ Collaboration diagram for ProcessControlModule:</div>
 <div class="dyncontent">
 <div class="center"><img src="structProcessControlModule__coll__graph.png" border="0" usemap="#ProcessControlModule_coll__map" alt="Collaboration graph"/></div>
 <map name="ProcessControlModule_coll__map" id="ProcessControlModule_coll__map">
-<area shape="rect" id="node2" href="structProcessInfoModule.html" title="This module is used to collect process information. " alt="" coords="17,80,161,107"/>
+<area shape="rect" id="node2" href="structProcessInfoModule.html" title="This module is used to collect process information. " alt="" coords="536,144,680,171"/>
+<area shape="rect" id="node4" href="structProcessInfoModule_1_1Statistics.html" title="ProcessInfoModule::\lStatistics" alt="" coords="169,66,321,107"/>
+<area shape="rect" id="node6" href="structProcessInfoModule_1_1Status.html" title="ProcessInfoModule::\lStatus" alt="" coords="169,137,321,178"/>
+<area shape="rect" id="node7" href="structProcessInfoModule_1_1Input.html" title="ProcessInfoModule::\lInput" alt="" coords="169,203,321,245"/>
+<area shape="rect" id="node8" href="structProcessControlModule_1_1ProcessStatus.html" title="ProcessControlModule\l::ProcessStatus" alt="" coords="345,263,512,305"/>
+<area shape="rect" id="node9" href="structProcessControlModule_1_1Config.html" title="ProcessControlModule\l::Config" alt="" coords="345,313,512,354"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule_1_1Config.html">Config</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule_1_1ProcessStatus.html">ProcessStatus</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa0df00c3427df88c0f2b8f436263e5ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule.html#aa0df00c3427df88c0f2b8f436263e5ce">ProcessControlModule</a> (EntityOwner *owner, const std::string &amp;name, const std::string &amp;description, bool historyOn=false, bool eliminateHierarchy=false, const std::unordered_set&lt; std::string &gt; &amp;tags={ })</td></tr>
@@ -126,92 +139,61 @@ Public Attributes</h2></td></tr>
 std::unique_ptr&lt; <a class="el" href="structProcessHandler.html">ProcessHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule.html#aba3b3b45eaab1c831c9359d0db4f585e">process</a></td></tr>
 <tr class="memdesc:aba3b3b45eaab1c831c9359d0db4f585e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The process handler used to get information about the subprocess. <br /></td></tr>
 <tr class="separator:aba3b3b45eaab1c831c9359d0db4f585e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Process control parameter (static during process execution)</div></td></tr>
-<tr class="memitem:a3910651f5e7ce2762a183b5917e0c1a2"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule.html#a3910651f5e7ce2762a183b5917e0c1a2">processPath</a></td></tr>
-<tr class="separator:a3910651f5e7ce2762a183b5917e0c1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e686bbcec279a721b28814b645db76a"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule.html#a6e686bbcec279a721b28814b645db76a">processCMD</a></td></tr>
-<tr class="separator:a6e686bbcec279a721b28814b645db76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e9d90425d057f951f0b5c7a159bde30"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule.html#a6e9d90425d057f951f0b5c7a159bde30">processENV</a></td></tr>
-<tr class="separator:a6e9d90425d057f951f0b5c7a159bde30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Process control parameter (dynamic process execution)</div></td></tr>
-<tr class="memitem:a2f3edf4b64217d9242034e876b74271e"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule.html#a2f3edf4b64217d9242034e876b74271e">processSetPath</a></td></tr>
-<tr class="separator:a2f3edf4b64217d9242034e876b74271e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f8c1a2b80ca32287fa60af12da681f7"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule.html#a0f8c1a2b80ca32287fa60af12da681f7">processSetCMD</a></td></tr>
-<tr class="separator:a0f8c1a2b80ca32287fa60af12da681f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95ed5208eb6265f71be5c96fa9b1bfd6"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule.html#a95ed5208eb6265f71be5c96fa9b1bfd6">processSetENV</a></td></tr>
-<tr class="separator:a95ed5208eb6265f71be5c96fa9b1bfd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac858a14ada8c35c55e01258122eb20b8"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>processOverwriteENV</b></td></tr>
-<tr class="separator:ac858a14ada8c35c55e01258122eb20b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad43eac1310031b1680275eaee2630378"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>processMaxFails</b></td></tr>
-<tr class="separator:ad43eac1310031b1680275eaee2630378"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc91d2e850a68ec74402d962e4305c4b"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>processMaxRestarts</b></td></tr>
-<tr class="separator:adc91d2e850a68ec74402d962e4305c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77419c3c366a7406c0576848fa964ea"><td class="memItemLeft" align="right" valign="top"><a id="ad77419c3c366a7406c0576848fa964ea"></a>
+<a class="el" href="structProcessControlModule_1_1ProcessStatus.html">ProcessControlModule::ProcessStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>this</b></td></tr>
+<tr class="separator:ad77419c3c366a7406c0576848fa964ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38eff22fc51a595c02ef9159ef7ffb96"><td class="memItemLeft" align="right" valign="top"><a id="a38eff22fc51a595c02ef9159ef7ffb96"></a>
+<a class="el" href="structProcessControlModule_1_1ProcessStatus.html">ProcessControlModule::ProcessStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
+<tr class="separator:a38eff22fc51a595c02ef9159ef7ffb96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b9aa10648958d9bcc52d8b62b73804"><td class="memItemLeft" align="right" valign="top"><a id="a23b9aa10648958d9bcc52d8b62b73804"></a>
+<a class="el" href="structProcessControlModule_1_1ProcessStatus.html">ProcessControlModule::ProcessStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>process</b></td></tr>
+<tr class="separator:a23b9aa10648958d9bcc52d8b62b73804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144bb912bfa6e3334e4c5e46f5988f9e"><td class="memItemLeft" align="right" valign="top"><a id="a144bb912bfa6e3334e4c5e46f5988f9e"></a>
+<a class="el" href="structProcessControlModule_1_1Config.html">ProcessControlModule::Config</a>&#160;</td><td class="memItemRight" valign="bottom"><b>this</b></td></tr>
+<tr class="separator:a144bb912bfa6e3334e4c5e46f5988f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5001f30250108722ae00231644aa8e2d"><td class="memItemLeft" align="right" valign="top"><a id="a5001f30250108722ae00231644aa8e2d"></a>
+<a class="el" href="structProcessControlModule_1_1Config.html">ProcessControlModule::Config</a>&#160;</td><td class="memItemRight" valign="bottom"><b>config</b></td></tr>
+<tr class="separator:a5001f30250108722ae00231644aa8e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f5ac698bccc48d11ae1fd46ac70717"><td class="memItemLeft" align="right" valign="top"><a id="a64f5ac698bccc48d11ae1fd46ac70717"></a>
+<a class="el" href="structProcessControlModule_1_1Config.html">ProcessControlModule::Config</a>&#160;</td><td class="memItemRight" valign="bottom"><b>process</b></td></tr>
+<tr class="separator:a64f5ac698bccc48d11ae1fd46ac70717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e5511753b568a4fde7d00caa1575299"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule.html#a0e5511753b568a4fde7d00caa1575299">enableProcess</a></td></tr>
 <tr class="separator:a0e5511753b568a4fde7d00caa1575299"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47ea8ec5bf7aa3914bb61f12c6aefe59"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule.html#a47ea8ec5bf7aa3914bb61f12c6aefe59">killSig</a></td></tr>
-<tr class="separator:a47ea8ec5bf7aa3914bb61f12c6aefe59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a3ef4d12ac2b4794154ed091b655796"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule.html#a9a3ef4d12ac2b4794154ed091b655796">pidOffset</a></td></tr>
-<tr class="separator:a9a3ef4d12ac2b4794154ed091b655796"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63ba3083112290dc80113c7d0c29f6f9"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule.html#a63ba3083112290dc80113c7d0c29f6f9">processIsRunning</a></td></tr>
-<tr class="separator:a63ba3083112290dc80113c7d0c29f6f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14a9aee3312baf85c8999c778b169039"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule.html#a14a9aee3312baf85c8999c778b169039">processNFailed</a></td></tr>
-<tr class="separator:a14a9aee3312baf85c8999c778b169039"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5ec578c8e25d6117e9c45de024319bc"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule.html#ad5ec578c8e25d6117e9c45de024319bc">processNChilds</a></td></tr>
-<tr class="separator:ad5ec578c8e25d6117e9c45de024319bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52d785e727ec341c125e18c433f9fbe0"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessControlModule.html#a52d785e727ec341c125e18c433f9fbe0">processRestarts</a></td></tr>
-<tr class="separator:a52d785e727ec341c125e18c433f9fbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfb53be3e67f6b926470d998a073efed"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bootDelay</b></td></tr>
-<tr class="separator:adfb53be3e67f6b926470d998a073efed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e5d8104b93bbd907f61c2e945affb91"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>killTimeout</b></td></tr>
-<tr class="separator:a2e5d8104b93bbd907f61c2e945affb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structProcessInfoModule"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structProcessInfoModule')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td></tr>
 <tr class="memitem:a3f91718924955fc3bdbd2070c08eec2c inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPushInput&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>trigger</b></td></tr>
 <tr class="separator:a3f91718924955fc3bdbd2070c08eec2c inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c65ca6cbbe0349513c9c497000fb55 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top"><a id="aa2c65ca6cbbe0349513c9c497000fb55"></a>
+<a class="el" href="structProcessInfoModule_1_1Status.html">ProcessInfoModule::Status</a>&#160;</td><td class="memItemRight" valign="bottom"><b>this</b></td></tr>
+<tr class="separator:aa2c65ca6cbbe0349513c9c497000fb55 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a3ce4607e7affc7cb1c5619642168e inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top"><a id="a41a3ce4607e7affc7cb1c5619642168e"></a>
+<a class="el" href="structProcessInfoModule_1_1Status.html">ProcessInfoModule::Status</a>&#160;</td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
+<tr class="separator:a41a3ce4607e7affc7cb1c5619642168e inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b49f9d04f62893a00d98e80c010e8a8 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top"><a id="a9b49f9d04f62893a00d98e80c010e8a8"></a>
+<a class="el" href="structProcessInfoModule_1_1Status.html">ProcessInfoModule::Status</a>&#160;</td><td class="memItemRight" valign="bottom"><b>process</b></td></tr>
+<tr class="separator:a9b49f9d04f62893a00d98e80c010e8a8 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af863af6e454aa703037963ad401cae92 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">boost::posix_time::ptime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#af863af6e454aa703037963ad401cae92">time_stamp</a></td></tr>
 <tr class="separator:af863af6e454aa703037963ad401cae92 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a868c52f7b5aa78cd208215b381fc12eb inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top"><a id="a868c52f7b5aa78cd208215b381fc12eb"></a>
-std::ostream *&#160;</td><td class="memItemRight" valign="bottom"><b>logging</b></td></tr>
-<tr class="separator:a868c52f7b5aa78cd208215b381fc12eb inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae5355d8100a201888fd835a7515f456 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#aae5355d8100a201888fd835a7515f456">processPID</a></td></tr>
-<tr class="separator:aae5355d8100a201888fd835a7515f456 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c11129c477f0177e253f3ce414d0fc3 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a8c11129c477f0177e253f3ce414d0fc3">runtime</a></td></tr>
-<tr class="separator:a8c11129c477f0177e253f3ce414d0fc3 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5555ea48a4e228afb662f9523ab6c42d inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a5555ea48a4e228afb662f9523ab6c42d">ticksPerSecond</a></td></tr>
-<tr class="separator:a5555ea48a4e228afb662f9523ab6c42d inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbe9f029d44d0ca7d0943e2c9e27614c inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#adbe9f029d44d0ca7d0943e2c9e27614c">sysUpTime</a> { this, &quot;sysUpTime&quot;, &quot;s&quot;, &quot;Uptime of the system&quot; }</td></tr>
-<tr class="separator:adbe9f029d44d0ca7d0943e2c9e27614c inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe02040aa7d07278c251ed1e1877002b inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top"><a id="abe02040aa7d07278c251ed1e1877002b"></a>
-ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sysStartTime</b> { this, &quot;sysStartTime&quot;, &quot;s&quot;, &quot;System start time (seconds since EPOCH)&quot; }</td></tr>
-<tr class="separator:abe02040aa7d07278c251ed1e1877002b inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc8abddf6db9a457cd953729ee887339 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top"><a id="adc8abddf6db9a457cd953729ee887339"></a>
-ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>maxMem</b> { this, &quot;maxMem&quot;, &quot;kB&quot;, &quot;Maximum available memory&quot; }</td></tr>
-<tr class="separator:adc8abddf6db9a457cd953729ee887339 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80e5447f89a1af566893b4a8ce32c75e inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a80e5447f89a1af566893b4a8ce32c75e">utime</a></td></tr>
-<tr class="separator:a80e5447f89a1af566893b4a8ce32c75e inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a568d95f9a110c5db3171d49acfedf9be inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a568d95f9a110c5db3171d49acfedf9be">stime</a></td></tr>
-<tr class="separator:a568d95f9a110c5db3171d49acfedf9be inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e6f822ed218e8e5a461f769ef415188 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a6e6f822ed218e8e5a461f769ef415188">cutime</a></td></tr>
-<tr class="separator:a6e6f822ed218e8e5a461f769ef415188 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81577c12862b69dfeaf5986a088a9ce1 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a81577c12862b69dfeaf5986a088a9ce1">cstime</a></td></tr>
-<tr class="separator:a81577c12862b69dfeaf5986a088a9ce1 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63fa6f3d052df587ee88136d260f85aa inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a63fa6f3d052df587ee88136d260f85aa">startTime</a></td></tr>
-<tr class="separator:a63fa6f3d052df587ee88136d260f85aa inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e077650b12f3f7c7a0af1c304c1b8dd inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>startTimeStr</b></td></tr>
-<tr class="separator:a9e077650b12f3f7c7a0af1c304c1b8dd inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa197113f1175edd1bab0dc830c7ea73 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mem</b></td></tr>
-<tr class="separator:afa197113f1175edd1bab0dc830c7ea73 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9d808b02bac82d10648499e57770c2c inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>memoryUsage</b></td></tr>
-<tr class="separator:ae9d808b02bac82d10648499e57770c2c inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c1f9421332dba2c78910481c59c7631 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a8c1f9421332dba2c78910481c59c7631">priority</a></td></tr>
-<tr class="separator:a8c1f9421332dba2c78910481c59c7631 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2befa8a18c00d4e2465d6b9e55dfe2b inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#aa2befa8a18c00d4e2465d6b9e55dfe2b">nice</a></td></tr>
-<tr class="separator:aa2befa8a18c00d4e2465d6b9e55dfe2b inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d74cbbee14a01fa4ac85d56180f593f inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a3d74cbbee14a01fa4ac85d56180f593f">rss</a></td></tr>
-<tr class="separator:a3d74cbbee14a01fa4ac85d56180f593f inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0523ecd5aaa8518050f2b23000ab6705 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a0523ecd5aaa8518050f2b23000ab6705">pcpu</a></td></tr>
-<tr class="separator:a0523ecd5aaa8518050f2b23000ab6705 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a835b59215e858942a3e26cefd122d350 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a835b59215e858942a3e26cefd122d350">avpcpu</a></td></tr>
-<tr class="separator:a835b59215e858942a3e26cefd122d350 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50cbcb3a733dbb4d71fd87e8e75ce594 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top"><a id="a50cbcb3a733dbb4d71fd87e8e75ce594"></a>
+<a class="el" href="structProcessInfoModule_1_1Input.html">ProcessInfoModule::Input</a>&#160;</td><td class="memItemRight" valign="bottom"><b>this</b></td></tr>
+<tr class="separator:a50cbcb3a733dbb4d71fd87e8e75ce594 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8faa41e062d6ecc0617ff87841bbc5a inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top"><a id="ae8faa41e062d6ecc0617ff87841bbc5a"></a>
+<a class="el" href="structProcessInfoModule_1_1Input.html">ProcessInfoModule::Input</a>&#160;</td><td class="memItemRight" valign="bottom"><b>input</b></td></tr>
+<tr class="separator:ae8faa41e062d6ecc0617ff87841bbc5a inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4539b1693640ee143d77423345862602 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top"><a id="a4539b1693640ee143d77423345862602"></a>
+<a class="el" href="structProcessInfoModule_1_1Input.html">ProcessInfoModule::Input</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SystemInfoModule</b></td></tr>
+<tr class="separator:a4539b1693640ee143d77423345862602 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe44b39d90effd900c77fa4f3d2ef571 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top"><a id="afe44b39d90effd900c77fa4f3d2ef571"></a>
+<a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a>&#160;</td><td class="memItemRight" valign="bottom"><b>this</b></td></tr>
+<tr class="separator:afe44b39d90effd900c77fa4f3d2ef571 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a43a6301039bfcf5043ce368bc7ad4 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top"><a id="a28a43a6301039bfcf5043ce368bc7ad4"></a>
+<a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a>&#160;</td><td class="memItemRight" valign="bottom"><b>statistics</b></td></tr>
+<tr class="separator:a28a43a6301039bfcf5043ce368bc7ad4 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ea2d9a58f3d7e720225cf087c67b21f inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top"><a id="a7ea2d9a58f3d7e720225cf087c67b21f"></a>
+<a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a>&#160;</td><td class="memItemRight" valign="bottom"><b>system</b></td></tr>
+<tr class="separator:a7ea2d9a58f3d7e720225cf087c67b21f inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf10b47ab8fe49ed0bdb94c4d074b960 inherit pub_attribs_structProcessInfoModule"><td class="memItemLeft" align="right" valign="top"><a id="abf10b47ab8fe49ed0bdb94c4d074b960"></a>
+std::ostream *&#160;</td><td class="memItemRight" valign="bottom"><b>logStream</b></td></tr>
+<tr class="separator:abf10b47ab8fe49ed0bdb94c4d074b960 inherit pub_attribs_structProcessInfoModule"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This module is used to start and stop subprocess controlled by the watchdog. </p>
@@ -416,20 +398,6 @@ ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bo
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="adfb53be3e67f6b926470d998a073efed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfb53be3e67f6b926470d998a073efed">&#9670;&nbsp;</a></span>bootDelay</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPollInput&lt;uint&gt; ProcessControlModule::bootDelay</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;BootDelay&quot;</span>, <span class="stringliteral">&quot;s&quot;</span>, <span class="stringliteral">&quot;This delay is used at server start. Use this to delay the process start with&quot;</span></div><div class="line">      <span class="stringliteral">&quot;respect to other processes.&quot;</span>,</div><div class="line">    { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName(), <span class="stringliteral">&quot;DAQ&quot;</span>} }</div></div><!-- fragment -->
-</div>
-</div>
 <a id="a0e5511753b568a4fde7d00caa1575299"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e5511753b568a4fde7d00caa1575299">&#9670;&nbsp;</a></span>enableProcess</h2>
 
@@ -442,242 +410,6 @@ ctk::ScalarPollInput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bo
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;enableProcess&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Start the process&quot;</span>,</div><div class="line">    { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName() } }</div></div><!-- fragment --><p>Start the process </p>
-
-</div>
-</div>
-<a id="a47ea8ec5bf7aa3914bb61f12c6aefe59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47ea8ec5bf7aa3914bb61f12c6aefe59">&#9670;&nbsp;</a></span>killSig</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPollInput&lt;uint&gt; ProcessControlModule::killSig</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;killSig&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Signal used to kill the process (2: SIGINT, 9: SIGKILL)&quot;</span>,</div><div class="line">    { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName() } }</div></div><!-- fragment --><p>Signal used to kill the process (2: SIGINT, 9: SIGKILL) </p>
-
-</div>
-</div>
-<a id="a2e5d8104b93bbd907f61c2e945affb91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e5d8104b93bbd907f61c2e945affb91">&#9670;&nbsp;</a></span>killTimeout</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPollInput&lt;uint&gt; ProcessControlModule::killTimeout</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;killTimeout&quot;</span>, <span class="stringliteral">&quot;s&quot;</span>, <span class="stringliteral">&quot;This is the maximum time waited for the process to exit after stopping. After, it is&quot;</span></div><div class="line">        <span class="stringliteral">&quot; stopped using SIGKILL.&quot;</span>,</div><div class="line">    { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName(), <span class="stringliteral">&quot;DAQ&quot;</span>} }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a9a3ef4d12ac2b4794154ed091b655796"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a3ef4d12ac2b4794154ed091b655796">&#9670;&nbsp;</a></span>pidOffset</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPollInput&lt;uint&gt; ProcessControlModule::pidOffset</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;pidOffset&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;PID offset used when monitoring the started process&quot;</span>,</div><div class="line">    { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName() } }</div></div><!-- fragment --><p>PID offset used when monitoring the started process </p>
-
-</div>
-</div>
-<a id="a6e686bbcec279a721b28814b645db76a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e686bbcec279a721b28814b645db76a">&#9670;&nbsp;</a></span>processCMD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarOutput&lt;std::string&gt; ProcessControlModule::processCMD</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;CMD&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Command used to start the process&quot;</span>,</div><div class="line">    {  <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName() } }</div></div><!-- fragment --><p>Command used to start the process </p>
-
-</div>
-</div>
-<a id="a6e9d90425d057f951f0b5c7a159bde30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e9d90425d057f951f0b5c7a159bde30">&#9670;&nbsp;</a></span>processENV</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarOutput&lt;std::string&gt; ProcessControlModule::processENV</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;ENV&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Environment variables of the process&quot;</span>,</div><div class="line">    {  <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName() } }</div></div><!-- fragment --><p>Environment variable set for the process </p>
-
-</div>
-</div>
-<a id="a63ba3083112290dc80113c7d0c29f6f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63ba3083112290dc80113c7d0c29f6f9">&#9670;&nbsp;</a></span>processIsRunning</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarOutput&lt;uint&gt; ProcessControlModule::processIsRunning</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;IsRunning&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Process status 0: not running, 1: running&quot;</span>,</div><div class="line">      { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName(), <span class="stringliteral">&quot;DAQ&quot;</span> } }</div></div><!-- fragment --><p>Process status 0: not running, 1: running </p>
-
-</div>
-</div>
-<a id="ad43eac1310031b1680275eaee2630378"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad43eac1310031b1680275eaee2630378">&#9670;&nbsp;</a></span>processMaxFails</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPollInput&lt;uint&gt; ProcessControlModule::processMaxFails</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;SetMaxFails&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;Set the maximum number of allowed fails.&quot;</span>,</div><div class="line">    { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName() } }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="adc91d2e850a68ec74402d962e4305c4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc91d2e850a68ec74402d962e4305c4b">&#9670;&nbsp;</a></span>processMaxRestarts</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPollInput&lt;uint&gt; ProcessControlModule::processMaxRestarts</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;SetMaxRestarts&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;Set the maximum number of allowed restarts.&quot;</span>,</div><div class="line">    { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName() } }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="ad5ec578c8e25d6117e9c45de024319bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5ec578c8e25d6117e9c45de024319bc">&#9670;&nbsp;</a></span>processNChilds</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarOutput&lt;uint&gt; ProcessControlModule::processNChilds</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;nChilds&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Number of started processes&quot;</span>,</div><div class="line">    { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName(), <span class="stringliteral">&quot;DAQ&quot;</span> } }</div></div><!-- fragment --><p>Number of started processes </p>
-
-</div>
-</div>
-<a id="a14a9aee3312baf85c8999c778b169039"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14a9aee3312baf85c8999c778b169039">&#9670;&nbsp;</a></span>processNFailed</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarOutput&lt;uint&gt; ProcessControlModule::processNFailed</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;Failed&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Number of failed starts/restarts&quot;</span>,</div><div class="line">    { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName(), <span class="stringliteral">&quot;DAQ&quot;</span> } }</div></div><!-- fragment --><p>Number of failed restarts </p>
-
-</div>
-</div>
-<a id="ac858a14ada8c35c55e01258122eb20b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac858a14ada8c35c55e01258122eb20b8">&#9670;&nbsp;</a></span>processOverwriteENV</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPollInput&lt;int&gt; ProcessControlModule::processOverwriteENV</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;OverwriteEnvironment&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;If true the environmet variables are overwritten. Else they are extended.&quot;</span>,</div><div class="line">    { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName() } }</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a3910651f5e7ce2762a183b5917e0c1a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3910651f5e7ce2762a183b5917e0c1a2">&#9670;&nbsp;</a></span>processPath</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarOutput&lt;std::string&gt; ProcessControlModule::processPath</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;Path&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Path where to execute the command used to start the process&quot;</span>,</div><div class="line">    {  <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName() } }</div></div><!-- fragment --><p>Path where to execute the command used to start the process </p>
-
-</div>
-</div>
-<a id="a52d785e727ec341c125e18c433f9fbe0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52d785e727ec341c125e18c433f9fbe0">&#9670;&nbsp;</a></span>processRestarts</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarOutput&lt;uint&gt; ProcessControlModule::processRestarts</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;Restarts&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Number of time the process was automatically &quot;</span></div><div class="line">          <span class="stringliteral">&quot;restarted by the watchdog since server start.&quot;</span>,</div><div class="line">    { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName(), <span class="stringliteral">&quot;DAQ&quot;</span> } }</div></div><!-- fragment --><p>Number of time the process was automatically </p>
-
-</div>
-</div>
-<a id="a0f8c1a2b80ca32287fa60af12da681f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f8c1a2b80ca32287fa60af12da681f7">&#9670;&nbsp;</a></span>processSetCMD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPollInput&lt;std::string&gt; ProcessControlModule::processSetCMD</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;SetCMD&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Set the command used to start the process&quot;</span>,</div><div class="line">    { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName() } }</div></div><!-- fragment --><p>Command used to start the process </p>
-
-</div>
-</div>
-<a id="a95ed5208eb6265f71be5c96fa9b1bfd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95ed5208eb6265f71be5c96fa9b1bfd6">&#9670;&nbsp;</a></span>processSetENV</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPollInput&lt;std::string&gt; ProcessControlModule::processSetENV</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;SetEnvironment&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Set environment variables needed by the process&quot;</span>,</div><div class="line">    { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName() } }</div></div><!-- fragment --><p>Command used to start the process </p>
-
-</div>
-</div>
-<a id="a2f3edf4b64217d9242034e876b74271e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f3edf4b64217d9242034e876b74271e">&#9670;&nbsp;</a></span>processSetPath</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ScalarPollInput&lt;std::string&gt; ProcessControlModule::processSetPath</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;SetPath&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Set the path where to execute the command used to start the process&quot;</span>,</div><div class="line">    { <span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, getName() } }</div></div><!-- fragment --><p>Path where to execute the command used to start the process </p>
 
 </div>
 </div>

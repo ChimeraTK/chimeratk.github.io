@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['utime',['utime',['../structProcessInfoModule.html#a80e5447f89a1af566893b4a8ce32c75e',1,'ProcessInfoModule']]]
+  ['utime',['utime',['../structProcessInfoModule_1_1Statistics.html#aa7442474a344e5863688030359276161',1,'ProcessInfoModule::Statistics']]]
 ];
