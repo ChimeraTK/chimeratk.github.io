@@ -143,76 +143,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a4085753725de92b57b31b2f8e199c96b"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html">AccessorPluginBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html#a4085753725de92b57b31b2f8e199c96b">makePlugin</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a> &gt; info, const std::string &amp;name, const std::map&lt; std::string, std::string &gt; &amp;parameters)</td></tr>
 <tr class="memdesc:a4085753725de92b57b31b2f8e199c96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for accessor plugins.  <a href="#a4085753725de92b57b31b2f8e199c96b">More...</a><br /></td></tr>
 <tr class="separator:a4085753725de92b57b31b2f8e199c96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdbf12bfa6edd53cf19fe2616e690bd7"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:acdbf12bfa6edd53cf19fe2616e690bd7"><td class="memTemplItemLeft" align="right" valign="top">UserType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html#acdbf12bfa6edd53cf19fe2616e690bd7">doubleToUserType</a> (double value)</td></tr>
-<tr class="memdesc:acdbf12bfa6edd53cf19fe2616e690bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for implementations based on double data type: Convert a double value into the UserType, even if it is a string.  <a href="#acdbf12bfa6edd53cf19fe2616e690bd7">More...</a><br /></td></tr>
-<tr class="separator:acdbf12bfa6edd53cf19fe2616e690bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27b07ad8c6defb7124ccf1ad5991ab5a"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:a27b07ad8c6defb7124ccf1ad5991ab5a"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html#a27b07ad8c6defb7124ccf1ad5991ab5a">doubleToUserType&lt; std::string &gt;</a> (double value)</td></tr>
-<tr class="separator:a27b07ad8c6defb7124ccf1ad5991ab5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a3d95169a165ae53f8920d31adc6fbe"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:a8a3d95169a165ae53f8920d31adc6fbe"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html#a8a3d95169a165ae53f8920d31adc6fbe">userTypeToDouble</a> (const UserType &amp;value)</td></tr>
-<tr class="memdesc:a8a3d95169a165ae53f8920d31adc6fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for implementations based on double data type: Convert a UserType value into double, even if it is a string.  <a href="#a8a3d95169a165ae53f8920d31adc6fbe">More...</a><br /></td></tr>
-<tr class="separator:a8a3d95169a165ae53f8920d31adc6fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70412dab17c73557fdc1d61914bae2f1"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:a70412dab17c73557fdc1d61914bae2f1"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html#a70412dab17c73557fdc1d61914bae2f1">userTypeToDouble&lt; std::string &gt;</a> (const std::string &amp;value)</td></tr>
-<tr class="separator:a70412dab17c73557fdc1d61914bae2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="acdbf12bfa6edd53cf19fe2616e690bd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdbf12bfa6edd53cf19fe2616e690bd7">&#9670;&nbsp;</a></span>doubleToUserType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UserType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">UserType ChimeraTK::LNMBackend::doubleToUserType </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Helper function for implementations based on double data type: Convert a double value into the UserType, even if it is a string. </p>
-
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00101">101</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
-
-</div>
-</div>
-<a id="a27b07ad8c6defb7124ccf1ad5991ab5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27b07ad8c6defb7124ccf1ad5991ab5a">&#9670;&nbsp;</a></span>doubleToUserType< std::string >()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string <a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html#acdbf12bfa6edd53cf19fe2616e690bd7">ChimeraTK::LNMBackend::doubleToUserType</a>&lt; std::string &gt; </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00106">106</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
-
-</div>
-</div>
 <a id="a4085753725de92b57b31b2f8e199c96b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4085753725de92b57b31b2f8e199c96b">&#9670;&nbsp;</a></span>makePlugin()</h2>
 
@@ -259,75 +191,13 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a id="a8a3d95169a165ae53f8920d31adc6fbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a3d95169a165ae53f8920d31adc6fbe">&#9670;&nbsp;</a></span>userTypeToDouble()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UserType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">double ChimeraTK::LNMBackend::userTypeToDouble </td>
-          <td>(</td>
-          <td class="paramtype">const UserType &amp;&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Helper function for implementations based on double data type: Convert a UserType value into double, even if it is a string. </p>
-
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00115">115</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_1_1_l_n_m_backend_a8a3d95169a165ae53f8920d31adc6fbe_icgraph.svg" width="440" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a70412dab17c73557fdc1d61914bae2f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70412dab17c73557fdc1d61914bae2f1">&#9670;&nbsp;</a></span>userTypeToDouble< std::string >()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html#a8a3d95169a165ae53f8920d31adc6fbe">ChimeraTK::LNMBackend::userTypeToDouble</a>&lt; std::string &gt; </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00120">120</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html">LNMBackend</a></li>
-    <li class="footer">Generated on Wed Apr 10 2019 03:53:08 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Apr 11 2019 03:53:08 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -12,8 +12,11 @@ var searchData=
   ['uri',['uri',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a0c7bb5ea1149d7220da8bc22f8ba171e',1,'ChimeraTK::DeviceInfoMap::DeviceInfo']]],
   ['usecustombackend_2ecpp',['useCustomBackend.cpp',['../use_custom_backend_8cpp.html',1,'']]],
   ['usertypemap',['userTypeMap',['../namespace_chimera_t_k.html#a238e0526cc4fc45ee733782c69cca349',1,'ChimeraTK']]],
-  ['usertypetodouble',['userTypeToDouble',['../namespace_chimera_t_k_1_1_l_n_m_backend.html#a8a3d95169a165ae53f8920d31adc6fbe',1,'ChimeraTK::LNMBackend']]],
-  ['usertypetodouble_3c_20std_3a_3astring_20_3e',['userTypeToDouble&lt; std::string &gt;',['../namespace_chimera_t_k_1_1_l_n_m_backend.html#a70412dab17c73557fdc1d61914bae2f1',1,'ChimeraTK::LNMBackend']]],
+  ['usertypetodouble',['userTypeToDouble',['../namespace_chimera_t_k.html#a02baab9c1e111056cf768369a22e9ed4',1,'ChimeraTK']]],
+  ['usertypetodouble_3c_20std_3a_3astring_20_3e',['userTypeToDouble&lt; std::string &gt;',['../namespace_chimera_t_k.html#a1fb02b733d2176e9b4990c4ec5ea72e0',1,'ChimeraTK']]],
+  ['usertypetoint',['userTypeToInt',['../namespace_chimera_t_k.html#a89e71843b00e6b52b32ab2a915760c20',1,'ChimeraTK']]],
+  ['usertypetoint_3c_20std_3a_3astring_20_3e',['userTypeToInt&lt; std::string &gt;',['../namespace_chimera_t_k.html#a15bbea62e384b0da6cb7fafd4cde2367',1,'ChimeraTK']]],
+  ['usertypetonumeric',['userTypeToNumeric',['../namespace_chimera_t_k.html#a7fbd27ae4a9682ebb5b14b6c967f488b',1,'ChimeraTK']]],
   ['utilities',['Utilities',['../class_chimera_t_k_1_1_utilities.html',1,'ChimeraTK::Utilities'],['../class_chimera_t_k_1_1_utilities.html#a2bb15b10961946a6502a19cda3c4e958',1,'ChimeraTK::Utilities::Utilities()']]],
   ['utilities_2ecpp',['Utilities.cpp',['../_utilities_8cpp.html',1,'']]],
   ['utilities_2eh',['Utilities.h',['../mtca4u__compatibility__headers_2_utilities_8h.html',1,'(Global Namespace)'],['../util_2include_2_utilities_8h.html',1,'(Global Namespace)']]]

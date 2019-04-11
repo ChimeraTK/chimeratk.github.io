@@ -91,14 +91,16 @@ $(document).ready(function(){initNavTree('util_2include_2_supported_user_types_8
 <div class="title">SupportedUserTypes.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/fusion/algorithm.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;boost/fusion/algorithm.hpp&gt;</code><br />
 <code>#include &lt;boost/fusion/container/map.hpp&gt;</code><br />
+<code>#include &lt;boost/numeric/conversion/cast.hpp&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for SupportedUserTypes.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="util_2include_2_supported_user_types_8h__incl.svg" width="400" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="util_2include_2_supported_user_types_8h__incl.svg" width="100%" height="406"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -114,6 +116,9 @@ $(document).ready(function(){initNavTree('util_2include_2_supported_user_types_8
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1raw__iterator.html">ChimeraTK::raw_iterator&lt; DATA_TYPE &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A random-access iterator which can be created from raw C pointers.  <a href="struct_chimera_t_k_1_1raw__iterator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fixed_user_type_map.html">ChimeraTK::FixedUserTypeMap&lt; TargetType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of UserType to a value of a single type (same for evey user type)  <a href="class_chimera_t_k_1_1_fixed_user_type_map.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,6 +159,42 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aa159464ac26217627bc921cc3e9f3c62"><td class="memTemplParams" colspan="2">template&lt;typename UserType , typename NUMERIC &gt; </td></tr>
+<tr class="memitem:aa159464ac26217627bc921cc3e9f3c62"><td class="memTemplItemLeft" align="right" valign="top">UserType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aa159464ac26217627bc921cc3e9f3c62">ChimeraTK::numericToUserType</a> (NUMERIC value)</td></tr>
+<tr class="memdesc:aa159464ac26217627bc921cc3e9f3c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to convert numeric data into any UserType (even if it is a string etc.).  <a href="namespace_chimera_t_k.html#aa159464ac26217627bc921cc3e9f3c62">More...</a><br /></td></tr>
+<tr class="separator:aa159464ac26217627bc921cc3e9f3c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fbd27ae4a9682ebb5b14b6c967f488b"><td class="memTemplParams" colspan="2">template&lt;typename UserType , typename NUMERIC &gt; </td></tr>
+<tr class="memitem:a7fbd27ae4a9682ebb5b14b6c967f488b"><td class="memTemplItemLeft" align="right" valign="top">NUMERIC&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a7fbd27ae4a9682ebb5b14b6c967f488b">ChimeraTK::userTypeToNumeric</a> (UserType value)</td></tr>
+<tr class="memdesc:a7fbd27ae4a9682ebb5b14b6c967f488b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to convert numeric data into any UserType (even if it is a string etc.).  <a href="namespace_chimera_t_k.html#a7fbd27ae4a9682ebb5b14b6c967f488b">More...</a><br /></td></tr>
+<tr class="separator:a7fbd27ae4a9682ebb5b14b6c967f488b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52fd30b95314b82e0dd20848b8f87c7"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:ae52fd30b95314b82e0dd20848b8f87c7"><td class="memTemplItemLeft" align="right" valign="top">UserType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ae52fd30b95314b82e0dd20848b8f87c7">ChimeraTK::doubleToUserType</a> (double value)</td></tr>
+<tr class="memdesc:ae52fd30b95314b82e0dd20848b8f87c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for implementations based on double data type: Convert a double value into the UserType, even if it is a string.  <a href="namespace_chimera_t_k.html#ae52fd30b95314b82e0dd20848b8f87c7">More...</a><br /></td></tr>
+<tr class="separator:ae52fd30b95314b82e0dd20848b8f87c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d0aafc9cf2917e6724b3ccc07b4371d"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a1d0aafc9cf2917e6724b3ccc07b4371d"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a1d0aafc9cf2917e6724b3ccc07b4371d">ChimeraTK::doubleToUserType&lt; std::string &gt;</a> (double value)</td></tr>
+<tr class="separator:a1d0aafc9cf2917e6724b3ccc07b4371d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02baab9c1e111056cf768369a22e9ed4"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a02baab9c1e111056cf768369a22e9ed4"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a02baab9c1e111056cf768369a22e9ed4">ChimeraTK::userTypeToDouble</a> (const UserType &amp;value)</td></tr>
+<tr class="memdesc:a02baab9c1e111056cf768369a22e9ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for implementations based on double data type: Convert a UserType value into double, even if it is a string.  <a href="namespace_chimera_t_k.html#a02baab9c1e111056cf768369a22e9ed4">More...</a><br /></td></tr>
+<tr class="separator:a02baab9c1e111056cf768369a22e9ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb02b733d2176e9b4990c4ec5ea72e0"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a1fb02b733d2176e9b4990c4ec5ea72e0"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a1fb02b733d2176e9b4990c4ec5ea72e0">ChimeraTK::userTypeToDouble&lt; std::string &gt;</a> (const std::string &amp;value)</td></tr>
+<tr class="separator:a1fb02b733d2176e9b4990c4ec5ea72e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1671a8085615c938e5a707d0a3796e1"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:aa1671a8085615c938e5a707d0a3796e1"><td class="memTemplItemLeft" align="right" valign="top">UserType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aa1671a8085615c938e5a707d0a3796e1">ChimeraTK::intToUserType</a> (int value)</td></tr>
+<tr class="memdesc:aa1671a8085615c938e5a707d0a3796e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for implementations based on int data type: Convert an int value into the UserType, even if it is a string.  <a href="namespace_chimera_t_k.html#aa1671a8085615c938e5a707d0a3796e1">More...</a><br /></td></tr>
+<tr class="separator:aa1671a8085615c938e5a707d0a3796e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c227d235a6a5211ae6055639ebbd0ff"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a7c227d235a6a5211ae6055639ebbd0ff"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a7c227d235a6a5211ae6055639ebbd0ff">ChimeraTK::intToUserType&lt; std::string &gt;</a> (int value)</td></tr>
+<tr class="separator:a7c227d235a6a5211ae6055639ebbd0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e71843b00e6b52b32ab2a915760c20"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a89e71843b00e6b52b32ab2a915760c20"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a89e71843b00e6b52b32ab2a915760c20">ChimeraTK::userTypeToInt</a> (const UserType &amp;value)</td></tr>
+<tr class="memdesc:a89e71843b00e6b52b32ab2a915760c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for implementations based on double data type: Convert a UserType value into int, even if it is a string.  <a href="namespace_chimera_t_k.html#a89e71843b00e6b52b32ab2a915760c20">More...</a><br /></td></tr>
+<tr class="separator:a89e71843b00e6b52b32ab2a915760c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15bbea62e384b0da6cb7fafd4cde2367"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a15bbea62e384b0da6cb7fafd4cde2367"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a15bbea62e384b0da6cb7fafd4cde2367">ChimeraTK::userTypeToInt&lt; std::string &gt;</a> (const std::string &amp;value)</td></tr>
+<tr class="separator:a15bbea62e384b0da6cb7fafd4cde2367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afee0348f3a67cc3dc7efec51279bde7d"><td class="memTemplParams" colspan="2">template&lt;typename MAPTYPE , typename LAMBDATYPE &gt; </td></tr>
 <tr class="memitem:afee0348f3a67cc3dc7efec51279bde7d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d">ChimeraTK::for_each</a> (MAPTYPE &amp;map, LAMBDATYPE &amp;lambda)</td></tr>
 <tr class="memdesc:afee0348f3a67cc3dc7efec51279bde7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variant of <a class="el" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d" title="Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...">boost::fusion::for_each()</a> to iterate a boost::fusion::map, which accepts a lambda instead of the callable class requred by the boost version.  <a href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d">More...</a><br /></td></tr>
@@ -197,7 +238,7 @@ Functions</h2></td></tr>
 <p>Macro to declare a template class with multiple template parameters for all supported user types. </p>
 <p>The variadic arguments are the additional template parameters. Only works for classes where the user type is the first template parameter. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00092">92</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00247">247</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -217,7 +258,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;int8_t&gt;;                                                                         \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;uint8_t&gt;;                                                                        \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;int16_t&gt;;                                                                        \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;uint16_t&gt;;                                                                       \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;int32_t&gt;;                                                                        \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;uint32_t&gt;;                                                                       \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;int64_t&gt;;                                                                        \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;uint64_t&gt;;                                                                       \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;float&gt;;                                                                          \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;double&gt;;                                                                         \</div><div class="line">  extern <span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;std::string&gt;</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00061">61</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00216">216</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -247,7 +288,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;int8_t, __VA_ARGS__&gt;;                                                                   \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;uint8_t, __VA_ARGS__&gt;;                                                                  \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;int16_t, __VA_ARGS__&gt;;                                                                  \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;uint16_t, __VA_ARGS__&gt;;                                                                 \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;int32_t, __VA_ARGS__&gt;;                                                                  \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;uint32_t, __VA_ARGS__&gt;;                                                                 \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;int64_t, __VA_ARGS__&gt;;                                                                  \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;uint64_t, __VA_ARGS__&gt;;                                                                 \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;float, __VA_ARGS__&gt;;                                                                    \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;double, __VA_ARGS__&gt;;                                                                   \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;std::string, __VA_ARGS__&gt;</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00105">105</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00260">260</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -267,7 +308,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span> <span class="keyword">class </span>TemplateClass&lt;int8_t&gt;;                                                                                \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;uint8_t&gt;;                                                                               \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;int16_t&gt;;                                                                               \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;uint16_t&gt;;                                                                              \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;int32_t&gt;;                                                                               \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;uint32_t&gt;;                                                                              \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;int64_t&gt;;                                                                               \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;uint64_t&gt;;                                                                              \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;float&gt;;                                                                                 \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;double&gt;;                                                                                \</div><div class="line">  template <span class="keyword">class </span>TemplateClass&lt;std::string&gt;</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00074">74</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00229">229</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -277,7 +318,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23ec12649285f9fabf3a6b7380226c28.html">util</a></li><li class="navelem"><a class="el" href="dir_03a6cfce30b88f6a84e388fa6a89390f.html">include</a></li><li class="navelem"><a class="el" href="util_2include_2_supported_user_types_8h.html">SupportedUserTypes.h</a></li>
-    <li class="footer">Generated on Wed Apr 10 2019 03:53:07 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Apr 11 2019 03:53:07 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -56,6 +56,7 @@ var namespace_chimera_t_k =
     [ "NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element" ],
     [ "OneDRegisterAccessor", "class_chimera_t_k_1_1_one_d_register_accessor.html", "class_chimera_t_k_1_1_one_d_register_accessor" ],
     [ "PcieBackend", "class_chimera_t_k_1_1_pcie_backend.html", "class_chimera_t_k_1_1_pcie_backend" ],
+    [ "raw_iterator", "struct_chimera_t_k_1_1raw__iterator.html", "struct_chimera_t_k_1_1raw__iterator" ],
     [ "ReadAnyGroup", "class_chimera_t_k_1_1_read_any_group.html", "class_chimera_t_k_1_1_read_any_group" ],
     [ "RebotBackend", "class_chimera_t_k_1_1_rebot_backend.html", "class_chimera_t_k_1_1_rebot_backend" ],
     [ "RebotProtocol0", "struct_chimera_t_k_1_1_rebot_protocol0.html", "struct_chimera_t_k_1_1_rebot_protocol0" ],

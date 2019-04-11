@@ -96,8 +96,8 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_numeric_address
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5e9e7c2e0f5a954fdeade60343003549"><td class="memItemLeft" align="right" valign="top">static CookedT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_specialisation_helper.html#a5e9e7c2e0f5a954fdeade60343003549">toCooked</a> (DataConverterType &amp;, RawT &amp;)</td></tr>
-<tr class="separator:a5e9e7c2e0f5a954fdeade60343003549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6de18a0a3ab413c137c210385759338"><td class="memItemLeft" align="right" valign="top">static CookedT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_specialisation_helper.html#ad6de18a0a3ab413c137c210385759338">vectorToCooked</a> (DataConverterType &amp;, const typename std::vector&lt; RawT &gt;::const_iterator &amp;, const typename std::vector&lt; RawT &gt;::const_iterator &amp;, const typename std::vector&lt; CookedT &gt;::iterator &amp;)</td></tr>
+<tr class="separator:ad6de18a0a3ab413c137c210385759338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a066ec7afd3fc95c98396655a4d19887c"><td class="memItemLeft" align="right" valign="top">static RawT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_specialisation_helper.html#a066ec7afd3fc95c98396655a4d19887c">toRaw</a> (DataConverterType &amp;, CookedT &amp;)</td></tr>
 <tr class="separator:a066ec7afd3fc95c98396655a4d19887c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -109,50 +109,8 @@ struct ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConv
 <p>A helper class to implement template specialisation on certain functions. </p>
 <p>We can do a partial specialisation on this class which we cannot/don't want to do for the whole accessor. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_register_accessor_8h_source.html#l00330">330</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_register_accessor_8h_source.html#l00327">327</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5e9e7c2e0f5a954fdeade60343003549"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e9e7c2e0f5a954fdeade60343003549">&#9670;&nbsp;</a></span>toCooked()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UserType , typename DataConverterType , bool isRaw&gt; </div>
-<div class="memtemplate">
-template&lt;typename RawT , typename CookedT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static CookedT <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">ChimeraTK::NumericAddressedBackendRegisterAccessor</a>&lt; UserType, DataConverterType, isRaw &gt;::<a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_specialisation_helper.html">dataConverterTemplateSpecialisationHelper</a>&lt; RawT, CookedT &gt;::toCooked </td>
-          <td>(</td>
-          <td class="paramtype">DataConverterType &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RawT &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_register_accessor_8h_source.html#l00331">331</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
-
-</div>
-</div>
 <a id="a066ec7afd3fc95c98396655a4d19887c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a066ec7afd3fc95c98396655a4d19887c">&#9670;&nbsp;</a></span>toRaw()</h2>
 
@@ -161,7 +119,7 @@ template&lt;typename RawT , typename CookedT &gt; </div>
 <div class="memtemplate">
 template&lt;typename UserType , typename DataConverterType , bool isRaw&gt; </div>
 <div class="memtemplate">
-template&lt;typename RawT , typename CookedT &gt; </div>
+template&lt;typename RawT, typename CookedT&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -191,7 +149,61 @@ template&lt;typename RawT , typename CookedT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_register_accessor_8h_source.html#l00334">334</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_register_accessor_8h_source.html#l00332">332</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
+
+</div>
+</div>
+<a id="ad6de18a0a3ab413c137c210385759338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6de18a0a3ab413c137c210385759338">&#9670;&nbsp;</a></span>vectorToCooked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType , typename DataConverterType , bool isRaw&gt; </div>
+<div class="memtemplate">
+template&lt;typename RawT, typename CookedT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static CookedT <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">ChimeraTK::NumericAddressedBackendRegisterAccessor</a>&lt; UserType, DataConverterType, isRaw &gt;::<a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_specialisation_helper.html">dataConverterTemplateSpecialisationHelper</a>&lt; RawT, CookedT &gt;::vectorToCooked </td>
+          <td>(</td>
+          <td class="paramtype">DataConverterType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename std::vector&lt; RawT &gt;::const_iterator &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename std::vector&lt; RawT &gt;::const_iterator &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename std::vector&lt; CookedT &gt;::iterator &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_register_accessor_8h_source.html#l00328">328</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_register_accessor_8h_source.html">NumericAddressedBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -204,7 +216,7 @@ template&lt;typename RawT , typename CookedT &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html">NumericAddressedBackendRegisterAccessor</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_specialisation_helper.html">dataConverterTemplateSpecialisationHelper</a></li>
-    <li class="footer">Generated on Wed Apr 10 2019 03:53:08 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Apr 11 2019 03:53:08 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

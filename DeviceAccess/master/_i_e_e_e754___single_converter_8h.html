@@ -83,21 +83,21 @@ $(document).ready(function(){initNavTree('_i_e_e_e754___single_converter_8h.html
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">IEEE754_SingleConverter.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;Exception.h&quot;</code><br />
+<div class="textblock"><code>#include &lt;float.h&gt;</code><br />
 <code>#include &lt;boost/numeric/conversion/cast.hpp&gt;</code><br />
-<code>#include &lt;float.h&gt;</code><br />
+<code>#include &quot;Exception.h&quot;</code><br />
+<code>#include &quot;SupportedUserTypes.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for IEEE754_SingleConverter.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_i_e_e_e754___single_converter_8h__incl.svg" width="412" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_i_e_e_e754___single_converter_8h__incl.svg" width="603" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -121,18 +121,16 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html">ChimeraTK::IEEE754_SingleConverter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Needs to have the same interface as <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html" title="The fixed point converter provides conversion functions between a user type and up to 32 bit fixed po...">FixedPointConverter</a>, except for the constructor.  <a href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html">ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl&lt; CookedType, RAW_ITERATOR, COOKED_ITERATOR &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html">ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl&lt; std::string, RAW_ITERATOR, COOKED_ITERATOR &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_chimera_t_k"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></td></tr>
 <tr class="memdesc:namespace_chimera_t_k"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides storage object for devices descriptions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a41cc7eb21311986197b41ec0ea3f80be"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:a41cc7eb21311986197b41ec0ea3f80be"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a41cc7eb21311986197b41ec0ea3f80be">ChimeraTK::IEEE754_SingleConverter::toCooked&lt; std::string &gt;</a> (uint32_t rawValue) const</td></tr>
-<tr class="separator:a41cc7eb21311986197b41ec0ea3f80be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -140,7 +138,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_820b2b9dd608784780e51ab49715a98b.html">device</a></li><li class="navelem"><a class="el" href="dir_0128381db4b4f5acbef62e610c8688e8.html">include</a></li><li class="navelem"><a class="el" href="_i_e_e_e754___single_converter_8h.html">IEEE754_SingleConverter.h</a></li>
-    <li class="footer">Generated on Wed Apr 10 2019 03:53:07 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Apr 11 2019 03:53:07 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

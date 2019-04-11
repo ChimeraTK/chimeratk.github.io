@@ -21,6 +21,7 @@ var class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor =
     [ "_bar", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a21f53e89bff34425c0a090a1f7c8cf9e", null ],
     [ "_converters", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a82cfcb35eebc319ac9c6abc96137803b", null ],
     [ "_elementsOffset", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#acc4d4d473d5a886b4528771877ffb0b8", null ],
+    [ "_endIterators", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#acd73494f73d504e5a3bef1d215e00753", null ],
     [ "_ioBuffer", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#adf0efa60b77d7bdbcb97e9a46fe102e4", null ],
     [ "_ioDevice", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#afa8dc77fdb489d7d46a49be62cd4987b", null ],
     [ "_moduleName", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a107b92d9a79e75dd35dbc1cecaf43774", null ],
@@ -30,6 +31,7 @@ var class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor =
     [ "_registerName", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a4ccd27378ff58547bb29a67b7d18293e", null ],
     [ "_registerPathName", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#af925e7fbb95678063036e1097808d50d", null ],
     [ "_sequenceInfos", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a9bd76854aba8cdacb62ca4881e8f73d7", null ],
+    [ "_startIterators", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a0665694f49feda3ce82eda6db07fe67e", null ],
     [ "bytesPerBlock", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a6a3258d76e109ea07c7859d7447b9250", null ],
     [ "currentVersion", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a430671e7e0c8d94eb128841aad6c8adf", null ]
 ];

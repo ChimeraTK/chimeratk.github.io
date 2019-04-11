@@ -33,6 +33,5 @@ var searchData=
   ['fpcptr',['fpcptr',['../class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html#af046e72ae62006636555f454a489bbd1',1,'ChimeraTK::proxies::DummyRegisterElement::fpcptr()'],['../class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html#af2c087eadca74ddd43ba36724a76cd66',1,'ChimeraTK::proxies::DummyRegisterSequence::fpcptr()']]],
   ['frameclienthello',['frameClientHello',['../class_chimera_t_k_1_1_rebot_backend.html#afb7a3eb09d3da11ae1baa0046e3d36ad',1,'ChimeraTK::RebotBackend']]],
   ['fundamentaltype',['FundamentalType',['../class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8',1,'ChimeraTK::RegisterInfo::FundamentalType()'],['../class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a0ffbe083c4eec2daeac9a537e1c91e07',1,'ChimeraTK::RegisterInfo::DataDescriptor::fundamentalType()']]],
-  ['tocooked_3c_20std_3a_3astring_20_3e',['toCooked&lt; std::string &gt;',['../namespace_chimera_t_k.html#ad28a802282b5dcfbc3b47b73c021ff60',1,'ChimeraTK']]],
   ['toraw_3c_20std_3a_3astring_20_3e',['toRaw&lt; std::string &gt;',['../namespace_chimera_t_k.html#afff8173557eb5f22e54120e7cd2e4697',1,'ChimeraTK']]]
 ];

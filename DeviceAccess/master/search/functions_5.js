@@ -17,6 +17,5 @@ var searchData=
   ['forcereadonlyplugindecorator',['ForceReadOnlyPluginDecorator',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#af6a0d17a679da14f6350ae0c38929edd',1,'ChimeraTK::LNMBackend::ForceReadOnlyPluginDecorator']]],
   ['frameclienthello',['frameClientHello',['../class_chimera_t_k_1_1_rebot_backend.html#afb7a3eb09d3da11ae1baa0046e3d36ad',1,'ChimeraTK::RebotBackend']]],
   ['fundamentaltype',['fundamentalType',['../class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a0ffbe083c4eec2daeac9a537e1c91e07',1,'ChimeraTK::RegisterInfo::DataDescriptor']]],
-  ['tocooked_3c_20std_3a_3astring_20_3e',['toCooked&lt; std::string &gt;',['../namespace_chimera_t_k.html#ad28a802282b5dcfbc3b47b73c021ff60',1,'ChimeraTK']]],
   ['toraw_3c_20std_3a_3astring_20_3e',['toRaw&lt; std::string &gt;',['../namespace_chimera_t_k.html#afff8173557eb5f22e54120e7cd2e4697',1,'ChimeraTK']]]
 ];
