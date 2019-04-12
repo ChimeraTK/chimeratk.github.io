@@ -28,7 +28,6 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "PropertyAttributes", "struct_chimera_t_k_1_1_property_attributes.html", "struct_chimera_t_k_1_1_property_attributes" ],
       [ "PropertyDescription", "struct_chimera_t_k_1_1_property_description.html", "struct_chimera_t_k_1_1_property_description" ],
       [ "AutoPropertyDescription", "struct_chimera_t_k_1_1_auto_property_description.html", "struct_chimera_t_k_1_1_auto_property_description" ],
-      [ "ArrayDescription", "struct_chimera_t_k_1_1_array_description.html", "struct_chimera_t_k_1_1_array_description" ],
       [ "SpectrumDescription", "struct_chimera_t_k_1_1_spectrum_description.html", "struct_chimera_t_k_1_1_spectrum_description" ],
       [ "LocationInfo", "struct_chimera_t_k_1_1_location_info.html", "struct_chimera_t_k_1_1_location_info" ]
     ] ],

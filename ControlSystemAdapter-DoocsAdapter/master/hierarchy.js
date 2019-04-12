@@ -20,9 +20,7 @@ var hierarchy =
       [ "ChimeraTK::DoocsUpdater", "class_chimera_t_k_1_1_doocs_updater.html", null ]
     ] ],
     [ "ChimeraTK::PropertyAttributes", "struct_chimera_t_k_1_1_property_attributes.html", [
-      [ "ChimeraTK::AutoPropertyDescription", "struct_chimera_t_k_1_1_auto_property_description.html", [
-        [ "ChimeraTK::ArrayDescription", "struct_chimera_t_k_1_1_array_description.html", null ]
-      ] ],
+      [ "ChimeraTK::AutoPropertyDescription", "struct_chimera_t_k_1_1_auto_property_description.html", null ],
       [ "ChimeraTK::LocationInfo", "struct_chimera_t_k_1_1_location_info.html", null ],
       [ "ChimeraTK::SpectrumDescription", "struct_chimera_t_k_1_1_spectrum_description.html", null ]
     ] ],

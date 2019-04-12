@@ -1,6 +1,5 @@
 var namespace_chimera_t_k =
 [
-    [ "ArrayDescription", "struct_chimera_t_k_1_1_array_description.html", "struct_chimera_t_k_1_1_array_description" ],
     [ "AutoPropertyDescription", "struct_chimera_t_k_1_1_auto_property_description.html", "struct_chimera_t_k_1_1_auto_property_description" ],
     [ "CSAdapterEqFct", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html", "class_chimera_t_k_1_1_c_s_adapter_eq_fct" ],
     [ "DoocsAdapter", "class_chimera_t_k_1_1_doocs_adapter.html", "class_chimera_t_k_1_1_doocs_adapter" ],
