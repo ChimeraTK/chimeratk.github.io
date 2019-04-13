@@ -14,19 +14,11 @@ var dir_0128381db4b4f5acbef62e610c8688e8 =
     [ "ExperimentalFeatures.h", "device_2include_2_experimental_features_8h.html", [
       [ "ExperimentalFeatures", "class_chimera_t_k_1_1_experimental_features.html", null ]
     ] ],
-    [ "FixedPointConverter.h", "device_2include_2_fixed_point_converter_8h.html", "device_2include_2_fixed_point_converter_8h" ],
     [ "ForwardDeclarations.h", "device_2include_2_forward_declarations_8h.html", [
       [ "BufferingRegisterAccessor", "class_chimera_t_k_1_1_buffering_register_accessor.html", "class_chimera_t_k_1_1_buffering_register_accessor" ],
       [ "NDRegisterAccessor", "class_chimera_t_k_1_1_n_d_register_accessor.html", "class_chimera_t_k_1_1_n_d_register_accessor" ],
       [ "TwoDRegisterAccessor", "class_chimera_t_k_1_1_two_d_register_accessor.html", "class_chimera_t_k_1_1_two_d_register_accessor" ],
       [ "MultiplexedDataAccessor", "class_chimera_t_k_1_1_multiplexed_data_accessor.html", null ]
-    ] ],
-    [ "IEEE754_SingleConverter.h", "_i_e_e_e754___single_converter_8h.html", [
-      [ "RoundingRangeCheckingDataConverter", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter" ],
-      [ "Round", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round" ],
-      [ "IEEE754_SingleConverter", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter" ],
-      [ "vectorToCooked_impl", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
-      [ "vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ]
     ] ],
     [ "MultiplexedDataAccessorException.h", "device_2include_2_multiplexed_data_accessor_exception_8h.html", null ],
     [ "NDRegisterAccessorAbstractor.h", "device_2include_2_n_d_register_accessor_abstractor_8h.html", [

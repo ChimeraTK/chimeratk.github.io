@@ -12,15 +12,7 @@ var util_2include_2_supported_user_types_8h =
     [ "userTypeMap", "util_2include_2_supported_user_types_8h.html#a238e0526cc4fc45ee733782c69cca349", null ],
     [ "callForType", "util_2include_2_supported_user_types_8h.html#a7f5acdbb978c1916af3a896bea089a7d", null ],
     [ "callForType", "util_2include_2_supported_user_types_8h.html#a1d994c91e77f9c70310556ae90e136b9", null ],
-    [ "doubleToUserType", "util_2include_2_supported_user_types_8h.html#ae52fd30b95314b82e0dd20848b8f87c7", null ],
-    [ "doubleToUserType< std::string >", "util_2include_2_supported_user_types_8h.html#a1d0aafc9cf2917e6724b3ccc07b4371d", null ],
     [ "for_each", "util_2include_2_supported_user_types_8h.html#afee0348f3a67cc3dc7efec51279bde7d", null ],
-    [ "intToUserType", "util_2include_2_supported_user_types_8h.html#aa1671a8085615c938e5a707d0a3796e1", null ],
-    [ "intToUserType< std::string >", "util_2include_2_supported_user_types_8h.html#a7c227d235a6a5211ae6055639ebbd0ff", null ],
     [ "numericToUserType", "util_2include_2_supported_user_types_8h.html#aa159464ac26217627bc921cc3e9f3c62", null ],
-    [ "userTypeToDouble", "util_2include_2_supported_user_types_8h.html#a02baab9c1e111056cf768369a22e9ed4", null ],
-    [ "userTypeToDouble< std::string >", "util_2include_2_supported_user_types_8h.html#a1fb02b733d2176e9b4990c4ec5ea72e0", null ],
-    [ "userTypeToInt", "util_2include_2_supported_user_types_8h.html#a89e71843b00e6b52b32ab2a915760c20", null ],
-    [ "userTypeToInt< std::string >", "util_2include_2_supported_user_types_8h.html#a15bbea62e384b0da6cb7fafd4cde2367", null ],
     [ "userTypeToNumeric", "util_2include_2_supported_user_types_8h.html#a7fbd27ae4a9682ebb5b14b6c967f488b", null ]
 ];

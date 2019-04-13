@@ -78,14 +78,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"class_chimera_t_k_1_1_buffering_register_accessor.html#a3a16876cc8c203d583a27e580fd9cb71",
-"class_chimera_t_k_1_1_dummy_register_accessor.html#a84e72577002961f0400c133b905234b5",
-"class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html",
-"class_chimera_t_k_1_1_register_catalogue.html#a1637d96aa5a2c7dcd0e2f345205d149b",
-"class_chimera_t_k_1_1_subdevice_backend.html#a955414ee7222c3a5898132c55f00a4ca",
-"class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html#afdf25a16f9f19943cd02d40ef7d5562d",
-"fileparsers_2include_2_d_map_file_parser_8h.html",
-"namespace_chimera_t_k_1_1numeric__address.html"
+"class_chimera_t_k_1_1_buffering_register_accessor.html#a4aa71106ddafdba4ec5b376ce913588d",
+"class_chimera_t_k_1_1_dummy_register_address_checker.html",
+"class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html#a5c7967aa5dd5c4383b28d4b45d45dbad",
+"class_chimera_t_k_1_1_register_catalogue.html#a2dde26df43b72637cfabf8edeb1d2a93",
+"class_chimera_t_k_1_1_subdevice_backend.html#aabbf31c21d868a0a7b7135463c0c1c2b",
+"class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html#a0d8fba7a59fbe1fe796135e41d0228db",
+"fileparsers_2include_2_d_map_files_parser_8h.html",
+"namespace_chimera_t_k_1_1proxies.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
