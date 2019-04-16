@@ -2,6 +2,7 @@ var searchData=
 [
   ['_7eapplication',['~Application',['../class_chimera_t_k_1_1_application.html#abf4df7485b5fb61cb1f22710c1b2f0f7',1,'ChimeraTK::Application']]],
   ['_7eapplicationmodule',['~ApplicationModule',['../class_chimera_t_k_1_1_application_module.html#a1c48b96181743fbfc2f5763c22265182',1,'ChimeraTK::ApplicationModule']]],
+  ['_7econfigreader',['~ConfigReader',['../struct_chimera_t_k_1_1_config_reader.html#adf2ba9d43d41a12a4d18bc3e0a7bc471',1,'ChimeraTK::ConfigReader']]],
   ['_7econstantaccessor',['~ConstantAccessor',['../class_chimera_t_k_1_1_constant_accessor.html#abd9755417448566714011104fc83668b',1,'ChimeraTK::ConstantAccessor']]],
   ['_7edevicemodule',['~DeviceModule',['../class_chimera_t_k_1_1_device_module.html#a3b3c82b4e2bb69de77e4793764835922',1,'ChimeraTK::DeviceModule']]],
   ['_7eentityowner',['~EntityOwner',['../class_chimera_t_k_1_1_entity_owner.html#a407bfc13bf309ff4c27fd68a1eeb3a25',1,'ChimeraTK::EntityOwner']]],

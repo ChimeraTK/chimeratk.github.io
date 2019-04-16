@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['server_20based_20history_20module',['Server based history module',['../historydoc.html',1,'index']]]
+  ['logging_20module_20and_20logger',['Logging module and Logger',['../loggingdoc.html',1,'index']]]
 ];

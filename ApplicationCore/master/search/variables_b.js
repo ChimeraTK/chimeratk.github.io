@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name',['name',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a58197c786a08cdcd9d22585818e49db1',1,'ChimeraTK::VariableNetworkNode_data']]],
+  ['name',['name',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a58197c786a08cdcd9d22585818e49db1',1,'ChimeraTK::VariableNetworkNode_data::name()'],['../struct_chimera_t_k_1_1_variable.html#a904232c96d47ce6de4095753aa5f3c54',1,'ChimeraTK::Variable::name()'],['../struct_chimera_t_k_1_1_array.html#a3fd321284846576870e78a57bd741457',1,'ChimeraTK::Array::name()']]],
   ['namelistmap',['nameListMap',['../struct_chimera_t_k_1_1_micro_d_a_q.html#a590ee83ce29ef95c71f25ade52efc09c',1,'ChimeraTK::MicroDAQ']]],
   ['nelements',['nElements',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a45c063050975eec1d6914bc52d210c45',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['network',['network',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a926c70762b8e69b85a666f15d757ab7e',1,'ChimeraTK::VariableNetworkNode_data']]],

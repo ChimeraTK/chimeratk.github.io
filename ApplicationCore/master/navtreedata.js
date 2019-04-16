@@ -7,6 +7,10 @@ var NAVTREE =
     [ "Server based history module", "historydoc.html", [
       [ "Server based history", "historydoc.html#historyintro", null ]
     ] ],
+    [ "ConfigReader Module", "configreader.html", [
+      [ "Example usage", "configreader.html#usage", null ],
+      [ "XML file structure", "configreader.html#xmlstructure", null ]
+    ] ],
     [ "Exception Handling", "excpetiondoc.html", [
       [ "Introduction", "excpetiondoc.html#Introduction", null ]
     ] ],
@@ -49,10 +53,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_8cc.html",
-"class_chimera_t_k_1_1_application.html#afbcfcd3b9b23aa5df19a661a9f8a80bb",
-"class_chimera_t_k_1_1_module.html#a9efbb4df2454977ec359f4687fe39f28",
-"class_chimera_t_k_1_1_x_m_l_generator_visitor.html",
-"struct_chimera_t_k_1_1_config_reader_1_1_var.html#ab34979e34a44e1764cbd474cea98ae2a"
+"class_chimera_t_k_1_1_application.html#af71a6285010334471d4a77206d26212d",
+"class_chimera_t_k_1_1_module.html#a71810be216fbbd436ba3d0d8180c9279",
+"class_chimera_t_k_1_1_virtual_module.html#a783182881d5b16c0c08db344d090f3eb",
+"struct_chimera_t_k_1_1_config_reader.html#a889a4d8521fd8b37705f84d95f79ff20",
+"struct_example_app.html#aecb5f2041899e8eea99688077e998a2b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

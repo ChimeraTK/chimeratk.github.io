@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exception_20handling',['Exception Handling',['../excpetiondoc.html',1,'']]]
+  ['configreader_20module',['ConfigReader Module',['../configreader.html',1,'index']]]
 ];

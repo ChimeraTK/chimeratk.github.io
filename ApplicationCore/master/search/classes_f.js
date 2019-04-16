@@ -1,6 +1,7 @@
 var searchData=
 [
   ['var',['Var',['../struct_chimera_t_k_1_1_config_reader_1_1_var.html',1,'ChimeraTK::ConfigReader']]],
+  ['variable',['Variable',['../struct_chimera_t_k_1_1_variable.html',1,'ChimeraTK']]],
   ['variabledirection',['VariableDirection',['../struct_chimera_t_k_1_1_variable_direction.html',1,'ChimeraTK']]],
   ['variablegroup',['VariableGroup',['../class_chimera_t_k_1_1_variable_group.html',1,'ChimeraTK']]],
   ['variablenetwork',['VariableNetwork',['../class_chimera_t_k_1_1_variable_network.html',1,'ChimeraTK']]],

@@ -2,9 +2,10 @@ var struct_chimera_t_k_1_1_config_reader =
 [
     [ "Array", "struct_chimera_t_k_1_1_config_reader_1_1_array.html", "struct_chimera_t_k_1_1_config_reader_1_1_array" ],
     [ "Var", "struct_chimera_t_k_1_1_config_reader_1_1_var.html", "struct_chimera_t_k_1_1_config_reader_1_1_var" ],
-    [ "MapOfArray", "struct_chimera_t_k_1_1_config_reader.html#a86f0d3d0b5181cf7181eb789c582c8a1", null ],
-    [ "MapOfVar", "struct_chimera_t_k_1_1_config_reader.html#a8acc61c563b677c61e07bc2c418b96a0", null ],
+    [ "MapOfArray", "struct_chimera_t_k_1_1_config_reader.html#a8a692faaaddd5419b5754fca31854b63", null ],
+    [ "MapOfVar", "struct_chimera_t_k_1_1_config_reader.html#ad514bd3865b91a2609de8c787dadaec9", null ],
     [ "ConfigReader", "struct_chimera_t_k_1_1_config_reader.html#ad0dcca74fb73bfa5705878fa506bc365", null ],
+    [ "~ConfigReader", "struct_chimera_t_k_1_1_config_reader.html#adf2ba9d43d41a12a4d18bc3e0a7bc471", null ],
     [ "createArray", "struct_chimera_t_k_1_1_config_reader.html#afba6fa48bc3f8a00adae168e72e6f2e0", null ],
     [ "createVar", "struct_chimera_t_k_1_1_config_reader.html#a4d05f33a9e1cec75914953c25c51e6ce", null ],
     [ "get", "struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793", null ],
@@ -18,6 +19,7 @@ var struct_chimera_t_k_1_1_config_reader =
     [ "FunctorSetValues", "struct_chimera_t_k_1_1_config_reader.html#a82bb9534a2ea481b888e995ac73b145e", null ],
     [ "FunctorSetValuesArray", "struct_chimera_t_k_1_1_config_reader.html#a5b64f1f2926e1bb3aa8b2d4698ec36db", null ],
     [ "_fileName", "struct_chimera_t_k_1_1_config_reader.html#a681dffe6999625fd1087426de02a75b0", null ],
+    [ "_moduleList", "struct_chimera_t_k_1_1_config_reader.html#a0a8337c260f18a86c8a43daacc050100", null ],
     [ "arrayMap", "struct_chimera_t_k_1_1_config_reader.html#a8a279e5c1d7cacdad362f7456a2ec09f", null ],
     [ "typeMap", "struct_chimera_t_k_1_1_config_reader.html#a9095274a4220b1fbdcdbd54b0f86449f", null ],
     [ "variableMap", "struct_chimera_t_k_1_1_config_reader.html#a790086daccf009a91f4cd3fc675bc1f9", null ]

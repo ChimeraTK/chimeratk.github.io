@@ -128,6 +128,8 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad0dcca74fb73bfa5705878fa506bc365"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html#ad0dcca74fb73bfa5705878fa506bc365">ConfigReader</a> (<a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> *owner, const std::string &amp;name, const std::string &amp;fileName, const std::unordered_set&lt; std::string &gt; &amp;tags={})</td></tr>
 <tr class="separator:ad0dcca74fb73bfa5705878fa506bc365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2ba9d43d41a12a4d18bc3e0a7bc471"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html#adf2ba9d43d41a12a4d18bc3e0a7bc471">~ConfigReader</a> () override</td></tr>
+<tr class="separator:adf2ba9d43d41a12a4d18bc3e0a7bc471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f1e483debabad5572efe57e0b1f13b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a0f1e483debabad5572efe57e0b1f13b9">mainLoop</a> () override</td></tr>
 <tr class="memdesc:a0f1e483debabad5572efe57e0b1f13b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be implemented by the user: function called in a separate thread executing the main loop of the module.  <a href="#a0f1e483debabad5572efe57e0b1f13b9">More...</a><br /></td></tr>
 <tr class="separator:a0f1e483debabad5572efe57e0b1f13b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -347,14 +349,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:a8acc61c563b677c61e07bc2c418b96a0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a8acc61c563b677c61e07bc2c418b96a0"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a8acc61c563b677c61e07bc2c418b96a0">MapOfVar</a> = std::map&lt; std::string, <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html">Var</a>&lt; T &gt; &gt;</td></tr>
-<tr class="memdesc:a8acc61c563b677c61e07bc2c418b96a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define type for map of std::string to <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html" title="Class holding the value and the accessor for one configuration variable. ">Var</a>, so we can put it into the TemplateUserTypeMap.  <a href="#a8acc61c563b677c61e07bc2c418b96a0">More...</a><br /></td></tr>
-<tr class="separator:a8acc61c563b677c61e07bc2c418b96a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86f0d3d0b5181cf7181eb789c582c8a1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a86f0d3d0b5181cf7181eb789c582c8a1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a86f0d3d0b5181cf7181eb789c582c8a1">MapOfArray</a> = std::map&lt; std::string, <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_array.html">Array</a>&lt; T &gt; &gt;</td></tr>
-<tr class="memdesc:a86f0d3d0b5181cf7181eb789c582c8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define type for map of std::string to <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_array.html" title="Class holding the values and the accessor for one configuration array. ">Array</a>, so we can put it into the TemplateUserTypeMap.  <a href="#a86f0d3d0b5181cf7181eb789c582c8a1">More...</a><br /></td></tr>
-<tr class="separator:a86f0d3d0b5181cf7181eb789c582c8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad514bd3865b91a2609de8c787dadaec9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad514bd3865b91a2609de8c787dadaec9"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html#ad514bd3865b91a2609de8c787dadaec9">MapOfVar</a> = std::unordered_map&lt; std::string, <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html">Var</a>&lt; T &gt; &gt;</td></tr>
+<tr class="memdesc:ad514bd3865b91a2609de8c787dadaec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define type for map of std::string to <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html" title="Class holding the value and the accessor for one configuration variable. ">Var</a>, so we can put it into the TemplateUserTypeMap.  <a href="#ad514bd3865b91a2609de8c787dadaec9">More...</a><br /></td></tr>
+<tr class="separator:ad514bd3865b91a2609de8c787dadaec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a692faaaddd5419b5754fca31854b63"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8a692faaaddd5419b5754fca31854b63"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a8a692faaaddd5419b5754fca31854b63">MapOfArray</a> = std::unordered_map&lt; std::string, <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_array.html">Array</a>&lt; T &gt; &gt;</td></tr>
+<tr class="memdesc:a8a692faaaddd5419b5754fca31854b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define type for map of std::string to <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_array.html" title="Class holding the values and the accessor for one configuration array. ">Array</a>, so we can put it into the TemplateUserTypeMap.  <a href="#a8a692faaaddd5419b5754fca31854b63">More...</a><br /></td></tr>
+<tr class="separator:a8a692faaaddd5419b5754fca31854b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -393,10 +395,13 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a681dffe6999625fd1087426de02a75b0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a681dffe6999625fd1087426de02a75b0">_fileName</a></td></tr>
 <tr class="memdesc:a681dffe6999625fd1087426de02a75b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">File name.  <a href="#a681dffe6999625fd1087426de02a75b0">More...</a><br /></td></tr>
 <tr class="separator:a681dffe6999625fd1087426de02a75b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a790086daccf009a91f4cd3fc675bc1f9"><td class="memItemLeft" align="right" valign="top">ChimeraTK::TemplateUserTypeMap&lt; <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a8acc61c563b677c61e07bc2c418b96a0">MapOfVar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a790086daccf009a91f4cd3fc675bc1f9">variableMap</a></td></tr>
+<tr class="memitem:a0a8337c260f18a86c8a43daacc050100"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_module_list.html">ModuleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a0a8337c260f18a86c8a43daacc050100">_moduleList</a></td></tr>
+<tr class="memdesc:a0a8337c260f18a86c8a43daacc050100"><td class="mdescLeft">&#160;</td><td class="mdescRight">List to hold VariableNodes corresponding to xml modules.  <a href="#a0a8337c260f18a86c8a43daacc050100">More...</a><br /></td></tr>
+<tr class="separator:a0a8337c260f18a86c8a43daacc050100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a790086daccf009a91f4cd3fc675bc1f9"><td class="memItemLeft" align="right" valign="top">ChimeraTK::TemplateUserTypeMap&lt; <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#ad514bd3865b91a2609de8c787dadaec9">MapOfVar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a790086daccf009a91f4cd3fc675bc1f9">variableMap</a></td></tr>
 <tr class="memdesc:a790086daccf009a91f4cd3fc675bc1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type-depending map of vectors of variables.  <a href="#a790086daccf009a91f4cd3fc675bc1f9">More...</a><br /></td></tr>
 <tr class="separator:a790086daccf009a91f4cd3fc675bc1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a279e5c1d7cacdad362f7456a2ec09f"><td class="memItemLeft" align="right" valign="top">ChimeraTK::TemplateUserTypeMap&lt; <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a86f0d3d0b5181cf7181eb789c582c8a1">MapOfArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a8a279e5c1d7cacdad362f7456a2ec09f">arrayMap</a></td></tr>
+<tr class="memitem:a8a279e5c1d7cacdad362f7456a2ec09f"><td class="memItemLeft" align="right" valign="top">ChimeraTK::TemplateUserTypeMap&lt; <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a8a692faaaddd5419b5754fca31854b63">MapOfArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a8a279e5c1d7cacdad362f7456a2ec09f">arrayMap</a></td></tr>
 <tr class="memdesc:a8a279e5c1d7cacdad362f7456a2ec09f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type-depending map of vectors of arrays.  <a href="#a8a279e5c1d7cacdad362f7456a2ec09f">More...</a><br /></td></tr>
 <tr class="separator:a8a279e5c1d7cacdad362f7456a2ec09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9095274a4220b1fbdcdbd54b0f86449f"><td class="memItemLeft" align="right" valign="top">ChimeraTK::SingleTypeUserTypeMap&lt; const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a9095274a4220b1fbdcdbd54b0f86449f">typeMap</a></td></tr>
@@ -470,10 +475,10 @@ Additional Inherited Members</h2></td></tr>
 <p>The config file should look like this: </p><div class="fragment"><div class="line">&lt;<span class="keywordtype">configuration</span>&gt;</div><div class="line">&lt;<span class="keywordtype">variable</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;variableName&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;int32&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;42&quot;</span>/&gt;</div><div class="line">&lt;<span class="keywordtype">variable</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;anotherVariable&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;Hello world!&quot;</span>/&gt;</div><div class="line">&lt;<span class="keywordtype">variable</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;someArray&quot;</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;string&quot;</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">value</span> <span class="keyword">i</span>=<span class="stringliteral">&quot;0&quot;</span> <span class="keyword">v</span>=<span class="stringliteral">&quot;StringEntry1&quot;</span> /&gt;</div><div class="line">  &lt;<span class="keywordtype">value</span> <span class="keyword">i</span>=<span class="stringliteral">&quot;1&quot;</span> <span class="keyword">v</span>=<span class="stringliteral">&quot;StringEntry2&quot;</span> /&gt;</div><div class="line">  &lt;<span class="keywordtype">value</span> <span class="keyword">i</span>=<span class="stringliteral">&quot;2&quot;</span> <span class="keyword">v</span>=<span class="stringliteral">&quot;StringEntry3&quot;</span> /&gt;</div><div class="line">  &lt;<span class="keywordtype">value</span> <span class="keyword">i</span>=<span class="stringliteral">&quot;3&quot;</span> <span class="keyword">v</span>=<span class="stringliteral">&quot;StringEntry4&quot;</span> /&gt;</div><div class="line">  &lt;<span class="keywordtype">value</span> <span class="keyword">i</span>=<span class="stringliteral">&quot;4&quot;</span> <span class="keyword">v</span>=<span class="stringliteral">&quot;StringEntry5&quot;</span> /&gt;</div><div class="line">  &lt;<span class="keywordtype">value</span> <span class="keyword">i</span>=<span class="stringliteral">&quot;5&quot;</span> <span class="keyword">v</span>=<span class="stringliteral">&quot;StringEntry6&quot;</span> /&gt;</div><div class="line">&lt;/<span class="keywordtype">variable</span>&gt;</div><div class="line">&lt;/<span class="keywordtype">configuration</span>&gt;</div></div><!-- fragment --><p>Outputs are created for each variable, so they can be connected to other modules. All values will be provided to the receivers already in the preparation phase, so no read() must be called. Updates will never be sent, so any blocking read operation on the receivers will block forever.</p>
 <p>Configuration values can already be accessed during the <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7" title="Define the connections between process variables. ">Application::defineConnections()</a> function by using the <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793" title="Get value for given configuration variable. ">ConfigReader::get()</a> function. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00044">44</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00113">113</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a86f0d3d0b5181cf7181eb789c582c8a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86f0d3d0b5181cf7181eb789c582c8a1">&#9670;&nbsp;</a></span>MapOfArray</h2>
+<a id="a8a692faaaddd5419b5754fca31854b63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a692faaaddd5419b5754fca31854b63">&#9670;&nbsp;</a></span>MapOfArray</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -484,7 +489,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a86f0d3d0b5181cf7181eb789c582c8a1">ChimeraTK::ConfigReader::MapOfArray</a> =  std::map&lt;std::string, <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_array.html">Array</a>&lt;T&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a8a692faaaddd5419b5754fca31854b63">ChimeraTK::ConfigReader::MapOfArray</a> =  std::unordered_map&lt;std::string, <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_array.html">Array</a>&lt;T&gt; &gt;</td>
         </tr>
       </table>
   </td>
@@ -496,12 +501,12 @@ template&lt;typename T &gt; </div>
 
 <p>Define type for map of std::string to <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_array.html" title="Class holding the values and the accessor for one configuration array. ">Array</a>, so we can put it into the TemplateUserTypeMap. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00104">104</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00177">177</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
-<a id="a8acc61c563b677c61e07bc2c418b96a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8acc61c563b677c61e07bc2c418b96a0">&#9670;&nbsp;</a></span>MapOfVar</h2>
+<a id="ad514bd3865b91a2609de8c787dadaec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad514bd3865b91a2609de8c787dadaec9">&#9670;&nbsp;</a></span>MapOfVar</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -512,7 +517,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a8acc61c563b677c61e07bc2c418b96a0">ChimeraTK::ConfigReader::MapOfVar</a> =  std::map&lt;std::string, <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html">Var</a>&lt;T&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#ad514bd3865b91a2609de8c787dadaec9">ChimeraTK::ConfigReader::MapOfVar</a> =  std::unordered_map&lt;std::string, <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html">Var</a>&lt;T&gt; &gt;</td>
         </tr>
       </table>
   </td>
@@ -524,7 +529,7 @@ template&lt;typename T &gt; </div>
 
 <p>Define type for map of std::string to <a class="el" href="struct_chimera_t_k_1_1_config_reader_1_1_var.html" title="Class holding the value and the accessor for one configuration variable. ">Var</a>, so we can put it into the TemplateUserTypeMap. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00096">96</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00169">169</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -566,15 +571,47 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>change exception! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8cc_source.html#l00163">163</a> of file <a class="el" href="_config_reader_8cc_source.html">ConfigReader.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8cc_source.html#l00247">247</a> of file <a class="el" href="_config_reader_8cc_source.html">ConfigReader.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_config_reader_ad0dcca74fb73bfa5705878fa506bc365_cgraph.svg" width="435" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_config_reader_ad0dcca74fb73bfa5705878fa506bc365_cgraph.svg" width="435" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="adf2ba9d43d41a12a4d18bc3e0a7bc471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf2ba9d43d41a12a4d18bc3e0a7bc471">&#9670;&nbsp;</a></span>~ConfigReader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::ConfigReader::~ConfigReader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_config_reader_adf2ba9d43d41a12a4d18bc3e0a7bc471_icgraph.svg" width="435" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -619,15 +656,7 @@ template&lt;typename T &gt; </div>
 
 <p>Create an instance of Array&lt;T&gt; and place it on the arrayMap. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8cc_source.html#l00101">101</a> of file <a class="el" href="_config_reader_8cc_source.html">ConfigReader.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_config_reader_afba6fa48bc3f8a00adae168e72e6f2e0_icgraph.svg" width="450" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8cc_source.html#l00176">176</a> of file <a class="el" href="_config_reader_8cc_source.html">ConfigReader.cc</a>.</p>
 
 </div>
 </div>
@@ -670,15 +699,7 @@ template&lt;typename T &gt; </div>
 <p>Create an instance of Var&lt;T&gt; and place it on the variableMap. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>error handling! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8cc_source.html#l00067">67</a> of file <a class="el" href="_config_reader_8cc_source.html">ConfigReader.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_config_reader_a4d05f33a9e1cec75914953c25c51e6ce_icgraph.svg" width="414" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8cc_source.html#l00133">133</a> of file <a class="el" href="_config_reader_8cc_source.html">ConfigReader.cc</a>.</p>
 
 </div>
 </div>
@@ -703,12 +724,12 @@ template&lt;typename T &gt; </div>
 <p>Get value for given configuration variable. </p>
 <p>This is already accessible right after construction of this object. Throws std::out_of_range if variable doesn't exist. To obtain the value of an array, use an std::vector&lt;T&gt; as template argument. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00131">131</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00204">204</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_config_reader_ad2b1bb3c5c4a974bce539fc4cd194793_cgraph.svg" width="464" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -754,12 +775,12 @@ template&lt;typename T &gt; </div>
 <p>Implementation of <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793" title="Get value for given configuration variable. ">get()</a> which can be overloaded for scalars and vectors. </p>
 <p>The second argument is a dummy only to distinguish the two overloaded functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00139">139</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00212">212</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_config_reader_ae0d987890819fc887d81cfc296da4de0_icgraph.svg" width="464" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -802,7 +823,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00154">154</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00227">227</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -833,12 +854,12 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8">ChimeraTK::ApplicationModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00048">48</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00118">118</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_config_reader_a0f1e483debabad5572efe57e0b1f13b9_cgraph.svg" width="435" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -871,12 +892,12 @@ template&lt;typename T &gt; </div>
 
 <p>throw a parsing error with more information </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8cc_source.html#l00255">255</a> of file <a class="el" href="_config_reader_8cc_source.html">ConfigReader.cc</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_config_reader_8cc_source.html#l00290">290</a> of file <a class="el" href="_config_reader_8cc_source.html">ConfigReader.cc</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_config_reader_a3ed2c844cf00558caac8be694a6ed38b_icgraph.svg" width="435" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -911,12 +932,12 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8cc_source.html#l00307">307</a> of file <a class="el" href="_config_reader_8cc_source.html">ConfigReader.cc</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_config_reader_8cc_source.html#l00342">342</a> of file <a class="el" href="_config_reader_8cc_source.html">ConfigReader.cc</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_config_reader_a889a4d8521fd8b37705f84d95f79ff20_icgraph.svg" width="435" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -944,7 +965,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00122">122</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00195">195</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -968,7 +989,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00121">121</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00194">194</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -992,7 +1013,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00123">123</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00196">196</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -1016,7 +1037,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00124">124</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00197">197</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1064,33 @@ template&lt;typename T &gt; </div>
 
 <p>File name. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00060">60</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00130">130</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+
+</div>
+</div>
+<a id="a0a8337c260f18a86c8a43daacc050100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a8337c260f18a86c8a43daacc050100">&#9670;&nbsp;</a></span>_moduleList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_module_list.html">ModuleList</a>&gt; ChimeraTK::ConfigReader::_moduleList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List to hold VariableNodes corresponding to xml modules. </p>
+
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00133">133</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -1057,7 +1104,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ChimeraTK::TemplateUserTypeMap&lt;<a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a86f0d3d0b5181cf7181eb789c582c8a1">MapOfArray</a>&gt; ChimeraTK::ConfigReader::arrayMap</td>
+          <td class="memname">ChimeraTK::TemplateUserTypeMap&lt;<a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a8a692faaaddd5419b5754fca31854b63">MapOfArray</a>&gt; ChimeraTK::ConfigReader::arrayMap</td>
         </tr>
       </table>
   </td>
@@ -1069,7 +1116,7 @@ template&lt;typename T &gt; </div>
 
 <p>Type-depending map of vectors of arrays. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00107">107</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00180">180</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1142,7 @@ template&lt;typename T &gt; </div>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">        <span class="stringliteral">&quot;int8&quot;</span>, <span class="stringliteral">&quot;uint8&quot;</span>, <span class="stringliteral">&quot;int16&quot;</span>, <span class="stringliteral">&quot;uint16&quot;</span>, <span class="stringliteral">&quot;int32&quot;</span>, <span class="stringliteral">&quot;uint32&quot;</span>, <span class="stringliteral">&quot;int64&quot;</span>, <span class="stringliteral">&quot;uint64&quot;</span>, <span class="stringliteral">&quot;float&quot;</span>, <span class="stringliteral">&quot;double&quot;</span>, <span class="stringliteral">&quot;string&quot;</span>}</div></div><!-- fragment -->
 <p>Map assigning string type identifyers to C++ types. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00110">110</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00183">183</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -1109,7 +1156,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ChimeraTK::TemplateUserTypeMap&lt;<a class="el" href="struct_chimera_t_k_1_1_config_reader.html#a8acc61c563b677c61e07bc2c418b96a0">MapOfVar</a>&gt; ChimeraTK::ConfigReader::variableMap</td>
+          <td class="memname">ChimeraTK::TemplateUserTypeMap&lt;<a class="el" href="struct_chimera_t_k_1_1_config_reader.html#ad514bd3865b91a2609de8c787dadaec9">MapOfVar</a>&gt; ChimeraTK::ConfigReader::variableMap</td>
         </tr>
       </table>
   </td>
@@ -1121,7 +1168,7 @@ template&lt;typename T &gt; </div>
 
 <p>Type-depending map of vectors of variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00099">99</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_config_reader_8h_source.html#l00172">172</a> of file <a class="el" href="_config_reader_8h_source.html">ConfigReader.h</a>.</p>
 
 </div>
 </div>
@@ -1135,7 +1182,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_config_reader.html">ConfigReader</a></li>
-    <li class="footer">Generated on Sat Apr 13 2019 03:53:41 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Apr 16 2019 03:53:37 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
