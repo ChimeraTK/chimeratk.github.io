@@ -7,6 +7,7 @@ var NAVTREE =
       [ "Automatic mapping of many variables", "index.html#import", null ],
       [ "Special configuration", "index.html#special_config", null ],
       [ "ZeroMQ publication", "index.html#zeromq", null ],
+      [ "Overriding auto-detected types", "index.html#type_override", null ],
       [ "Special DOOCS properties", "index.html#special_properties", [
         [ "D_spectrum", "index.html#D_spectrum", null ],
         [ "D_array", "index.html#D_array", null ]
@@ -45,7 +46,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_c_s_adapter_eq_fct_8cc.html",
-"struct_chimera_t_k_1_1_property_description.html#a05584bd5be86b762557872b69f468f47"
+"struct_chimera_t_k_1_1_property_description.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

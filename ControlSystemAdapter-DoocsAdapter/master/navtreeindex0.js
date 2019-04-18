@@ -203,13 +203,14 @@ var NAVTREEINDEX0 =
 "hierarchy.html":[3,2],
 "index.html":[],
 "index.html#DOOCS_config":[0,0],
-"index.html#D_array":[0,5,1],
-"index.html#D_spectrum":[0,5,0],
+"index.html#D_array":[0,6,1],
+"index.html#D_spectrum":[0,6,0],
 "index.html#Integration":[0],
 "index.html#import":[0,2],
 "index.html#mapping_file":[0,1],
 "index.html#special_config":[0,3],
-"index.html#special_properties":[0,5],
+"index.html#special_properties":[0,6],
+"index.html#type_override":[0,5],
 "index.html#zeromq":[0,4],
 "namespace_chimera_t_k.html":[3,0,0],
 "namespace_chimera_t_k.html":[2,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "struct_chimera_t_k_1_1_property_attributes.html#a66f3017c5f008b2422ec6b44f99f1fc8":[3,0,0,10,0],
 "struct_chimera_t_k_1_1_property_attributes.html#a927a4bb8520eba6fe1a0ea8fb34d899b":[3,0,0,10,2],
 "struct_chimera_t_k_1_1_property_attributes.html#aebe51d307d0289805ea80e3506e51f22":[3,0,0,10,3],
-"struct_chimera_t_k_1_1_property_attributes.html#aec12ae3311c34e463addecab0ccafff3":[3,0,0,10,1],
-"struct_chimera_t_k_1_1_property_description.html":[3,0,0,11]
+"struct_chimera_t_k_1_1_property_attributes.html#aec12ae3311c34e463addecab0ccafff3":[3,0,0,10,1]
 };
