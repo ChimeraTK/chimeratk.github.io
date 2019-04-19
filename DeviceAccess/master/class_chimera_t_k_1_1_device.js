@@ -1,6 +1,8 @@
 var class_chimera_t_k_1_1_device =
 [
     [ "RegisterAccessor", "class_chimera_t_k_1_1_device.html#ad49ec7cc7fa3d57fad993363005b727a", null ],
+    [ "Device", "class_chimera_t_k_1_1_device.html#ae5e0c416ca16eb2fd45fe5cc4a610469", null ],
+    [ "Device", "class_chimera_t_k_1_1_device.html#aa92aa6a52e36ec4224a730c32c8606ae", null ],
     [ "~Device", "class_chimera_t_k_1_1_device.html#aac982d8d84a51a436c4f64dc3d024f2f", null ],
     [ "checkPointersAreNotNull", "class_chimera_t_k_1_1_device.html#a9e472f646192fb1b56a5fe83cc02507b", null ],
     [ "close", "class_chimera_t_k_1_1_device.html#a20ffe09ba19304ce65b85eacee93b01d", null ],
