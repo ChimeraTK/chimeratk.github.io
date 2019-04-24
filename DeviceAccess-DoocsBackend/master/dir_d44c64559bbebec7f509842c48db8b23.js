@@ -7,6 +7,9 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "DoocsBackendFloatRegisterAccessor.h", "_doocs_backend_float_register_accessor_8h.html", [
       [ "DoocsBackendFloatRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor" ]
     ] ],
+    [ "DoocsBackendIFFFRegisterAccessor.h", "_doocs_backend_i_f_f_f_register_accessor_8h.html", [
+      [ "DoocsBackendIFFFRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor" ]
+    ] ],
     [ "DoocsBackendIIIIRegisterAccessor.h", "_doocs_backend_i_i_i_i_register_accessor_8h.html", [
       [ "DoocsBackendIIIIRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_i_i_i_i_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_i_i_i_i_register_accessor" ]
     ] ],

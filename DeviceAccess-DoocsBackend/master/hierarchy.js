@@ -7,6 +7,7 @@ var hierarchy =
     [ "NDRegisterAccessor", null, [
       [ "ChimeraTK::DoocsBackendRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html", [
         [ "ChimeraTK::DoocsBackendFloatRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html", null ],
+        [ "ChimeraTK::DoocsBackendIFFFRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html", null ],
         [ "ChimeraTK::DoocsBackendIntRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_int_register_accessor.html", [
           [ "ChimeraTK::DoocsBackendIIIIRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_i_i_i_i_register_accessor.html", null ]
         ] ],
