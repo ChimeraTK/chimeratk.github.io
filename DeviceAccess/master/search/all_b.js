@@ -26,6 +26,7 @@ var searchData=
   ['lnmbackendvariableaccessor',['LNMBackendVariableAccessor',['../class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html',1,'ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;'],['../class_chimera_t_k_1_1_logical_name_mapping_backend.html#acd3e54bb07d8008c355b3c584050d5a6',1,'ChimeraTK::LogicalNameMappingBackend::LNMBackendVariableAccessor()'],['../class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#ab1dbc7a69ac2852c9b4809b510ea27b6',1,'ChimeraTK::LNMBackendVariableAccessor::LNMBackendVariableAccessor()']]],
   ['lnmbackendvariableaccessor_2ecc',['LNMBackendVariableAccessor.cc',['../_l_n_m_backend_variable_accessor_8cc.html',1,'']]],
   ['lnmbackendvariableaccessor_2eh',['LNMBackendVariableAccessor.h',['../device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_l_n_m_backend_variable_accessor_8h.html',1,'(Global Namespace)']]],
+  ['lnmforcepollingreadplugin_2ecc',['LNMForcePollingReadPlugin.cc',['../_l_n_m_force_polling_read_plugin_8cc.html',1,'']]],
   ['lnmforcereadonlyplugin_2ecc',['LNMForceReadOnlyPlugin.cc',['../_l_n_m_force_read_only_plugin_8cc.html',1,'']]],
   ['lnmmathplugin_2ecc',['LNMMathPlugin.cc',['../_l_n_m_math_plugin_8cc.html',1,'']]],
   ['lnmmonostabletriggerplugin_2ecc',['LNMMonostableTriggerPlugin.cc',['../_l_n_m_monostable_trigger_plugin_8cc.html',1,'']]],

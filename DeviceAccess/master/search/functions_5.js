@@ -13,6 +13,7 @@ var searchData=
   ['fixedpointconvertingdecorator',['FixedPointConvertingDecorator',['../class_chimera_t_k_1_1_fixed_point_converting_decorator.html#ad4f0b696da0a163b90fe7fd78c33e784',1,'ChimeraTK::FixedPointConvertingDecorator']]],
   ['fixedpointconvertingrawdecorator',['FixedPointConvertingRawDecorator',['../class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html#a8908fceed581649fee341fb598114fea',1,'ChimeraTK::FixedPointConvertingRawDecorator']]],
   ['for_5feach',['for_each',['../namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d',1,'ChimeraTK']]],
+  ['forcepollingreadplugin',['ForcePollingReadPlugin',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html#a19edd04ad54717bf3fcf7172c18f8dfa',1,'ChimeraTK::LNMBackend::ForcePollingReadPlugin']]],
   ['forcereadonlyplugin',['ForceReadOnlyPlugin',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html#aa9b2cfd4b09a98ce4dd315b33a30f495',1,'ChimeraTK::LNMBackend::ForceReadOnlyPlugin']]],
   ['forcereadonlyplugindecorator',['ForceReadOnlyPluginDecorator',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#af6a0d17a679da14f6350ae0c38929edd',1,'ChimeraTK::LNMBackend::ForceReadOnlyPluginDecorator']]],
   ['frameclienthello',['frameClientHello',['../class_chimera_t_k_1_1_rebot_backend.html#afb7a3eb09d3da11ae1baa0046e3d36ad',1,'ChimeraTK::RebotBackend']]],
