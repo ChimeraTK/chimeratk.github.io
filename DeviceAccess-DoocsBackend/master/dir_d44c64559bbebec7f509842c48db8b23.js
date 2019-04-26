@@ -17,9 +17,13 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "DoocsBackendLongRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_long_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_long_register_accessor" ]
     ] ],
     [ "DoocsBackendRegisterAccessor.h", "_doocs_backend_register_accessor_8h.html", [
+      [ "DoocsBackendRegisterAccessorBase", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base" ],
       [ "DoocsBackendRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_register_accessor" ]
     ] ],
     [ "DoocsBackendStringRegisterAccessor.h", "_doocs_backend_string_register_accessor_8h.html", [
       [ "DoocsBackendStringRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_string_register_accessor" ]
+    ] ],
+    [ "ZMQSubscriptionManager.h", "_z_m_q_subscription_manager_8h.html", [
+      [ "ZMQSubscriptionManager", "class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html", "class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager" ]
     ] ]
 ];

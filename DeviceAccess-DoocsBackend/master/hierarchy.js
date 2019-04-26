@@ -4,7 +4,7 @@ var hierarchy =
     [ "DeviceBackendImpl", null, [
       [ "ChimeraTK::DoocsBackend", "class_chimera_t_k_1_1_doocs_backend.html", null ]
     ] ],
-    [ "NDRegisterAccessor", null, [
+    [ "ChimeraTK::DoocsBackendRegisterAccessorBase", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html", [
       [ "ChimeraTK::DoocsBackendRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html", [
         [ "ChimeraTK::DoocsBackendFloatRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html", null ],
         [ "ChimeraTK::DoocsBackendIFFFRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html", null ],
@@ -14,5 +14,9 @@ var hierarchy =
         [ "ChimeraTK::DoocsBackendLongRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_long_register_accessor.html", null ],
         [ "ChimeraTK::DoocsBackendStringRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html", null ]
       ] ]
-    ] ]
+    ] ],
+    [ "NDRegisterAccessor", null, [
+      [ "ChimeraTK::DoocsBackendRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html", null ]
+    ] ],
+    [ "ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager", "class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html", null ]
 ];

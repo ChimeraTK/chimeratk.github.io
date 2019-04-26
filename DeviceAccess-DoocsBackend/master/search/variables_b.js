@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tag',['tag',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a24f8c3046f91b2f73bac16838facc30f',1,'ChimeraTK::DoocsBackendRegisterAccessor']]]
+  ['usezmq',['useZMQ',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aa44a0b61c7f7a3da259bd6c559ec46a5',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]]
 ];

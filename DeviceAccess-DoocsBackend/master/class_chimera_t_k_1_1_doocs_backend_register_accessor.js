@@ -1,10 +1,10 @@
 var class_chimera_t_k_1_1_doocs_backend_register_accessor =
 [
-    [ "~DoocsBackendRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a8f748e33abe280f33de2b96184ba4e25", null ],
+    [ "~DoocsBackendRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ab883217e9320e37adbb48d172b119758", null ],
     [ "DoocsBackendRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#afbf800d7330b4a2b45977674f57070bf", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a4e7eb84209bd67533003349a4cd439cb", null ],
     [ "doReadTransfer", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a15c9a6f709065cac28d2b01ad546036b", null ],
-    [ "doReadTransferAsync", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#af088358a1856d688d858ef318c33354e", null ],
+    [ "doReadTransferAsync", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a39d6b083cfd4872303afef6d6e8f471b", null ],
     [ "doReadTransferLatest", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#aaacff7be3f56763c779f1bae5a86f0e2", null ],
     [ "doReadTransferNonBlocking", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ae70906d55ee881fb22698ec68811f481", null ],
     [ "doWriteTransfer", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a68a741f803cfe2dd361b9601b3893e4d", null ],
@@ -19,21 +19,5 @@ var class_chimera_t_k_1_1_doocs_backend_register_accessor =
     [ "mayReplaceOther", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a3366a7bceef0c049fb2646e8f2a4f6d1", null ],
     [ "replaceTransferElement", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a21af88c286d123e95742b2f87e85aac9", null ],
     [ "shutdown", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a14e6481ebb423ffab7c49078e87fe6cf", null ],
-    [ "write_internal", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b", null ],
-    [ "_path", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ab925f3214d4a4aa7a8c098aece757e69", null ],
-    [ "currentVersion", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#afe004acca6cce6dc85567d7f135f2b8a", null ],
-    [ "dst", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a123902b5c2fa1f676e3ca14110a804e6", null ],
-    [ "ea", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a05152fe91ee6da0c32abeae32943cda3", null ],
-    [ "elementOffset", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#aad74d37ade54ab8facbf9c5823acc5eb", null ],
-    [ "eq", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a907c34e25945da53e5f10314c97ba403", null ],
-    [ "futureCreated", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a046f8ebe73640d6647ed765b6b8054fe", null ],
-    [ "isArray", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ac699d558f0530badaa60b52042fd1176", null ],
-    [ "isPartial", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ac199c3e05cc46d6888098f2663dfb801", null ],
-    [ "nElements", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a996607a70c24215573fc93ea02155d57", null ],
-    [ "notifications", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a02d379fb8ccde604652ffab25277af0c", null ],
-    [ "readAsyncThread", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a50e1c30173d3f94ddc9bc30bb6957249", null ],
-    [ "shutdownCalled", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a6488d392f2da3b0837f8cf07772e6710", null ],
-    [ "src", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ac01cda44784275c0b9cd737711997816", null ],
-    [ "tag", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a24f8c3046f91b2f73bac16838facc30f", null ],
-    [ "useZMQ", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a32bea610d828fdd80578662df642d2b9", null ]
+    [ "write_internal", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b", null ]
 ];
