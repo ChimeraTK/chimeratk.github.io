@@ -1,6 +1,7 @@
 var NAVTREEINDEX5 =
 {
-"struct_example_app.html#aecb5f2041899e8eea99688077e998a2b":[6,0,5,1],
+"struct_example_app.html#aecb5f2041899e8eea99688077e998a2b":[6,0,5,3],
+"struct_example_app.html#aecb5f2041899e8eea99688077e998a2b":[6,0,5,5],
 "struct_example_app.html#aecb5f2041899e8eea99688077e998a2b":[6,0,5,7],
 "struct_table_generation.html":[6,0,6],
 "struct_table_generation.html#a1739d05ab27b0b3b17b49bb9bbdc667a":[6,0,6,2],

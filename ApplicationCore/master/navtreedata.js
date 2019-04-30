@@ -55,8 +55,8 @@ var NAVTREEINDEX =
 "_application_8cc.html",
 "class_chimera_t_k_1_1_application.html#af71a6285010334471d4a77206d26212d",
 "class_chimera_t_k_1_1_module.html#a71810be216fbbd436ba3d0d8180c9279",
-"class_chimera_t_k_1_1_virtual_module.html#a783182881d5b16c0c08db344d090f3eb",
-"struct_chimera_t_k_1_1_config_reader.html#a889a4d8521fd8b37705f84d95f79ff20",
+"class_chimera_t_k_1_1_virtual_module.html#a4a157143167e2c27e32401e4fe197991",
+"struct_chimera_t_k_1_1_config_reader.html#a82bb9534a2ea481b888e995ac73b145e",
 "struct_example_app.html#aecb5f2041899e8eea99688077e998a2b"
 ];
 
