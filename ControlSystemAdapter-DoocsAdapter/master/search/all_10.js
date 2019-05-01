@@ -8,7 +8,7 @@ var searchData=
   ['spectrumdescription',['SpectrumDescription',['../struct_chimera_t_k_1_1_spectrum_description.html',1,'ChimeraTK::SpectrumDescription'],['../struct_chimera_t_k_1_1_spectrum_description.html#a41af855afa3487885c9f1e51d4d0af98',1,'ChimeraTK::SpectrumDescription::SpectrumDescription()']]],
   ['splitstringatfirstslash',['splitStringAtFirstSlash',['../namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98',1,'ChimeraTK']]],
   ['splitstringatfirstslash_2eh',['splitStringAtFirstSlash.h',['../split_string_at_first_slash_8h.html',1,'']]],
-  ['start',['start',['../struct_chimera_t_k_1_1_spectrum_description.html#a2fcb663668440fc471bccd1ded6e4071',1,'ChimeraTK::SpectrumDescription']]],
+  ['start',['start',['../struct_chimera_t_k_1_1_spectrum_description.html#a2fcb663668440fc471bccd1ded6e4071',1,'ChimeraTK::SpectrumDescription::start()'],['../struct_chimera_t_k_1_1_xy_description_1_1_axis.html#a4e6fb2f7b8b430bad1a3def92aca1f9c',1,'ChimeraTK::XyDescription::Axis::start()']]],
   ['startsource',['startSource',['../struct_chimera_t_k_1_1_spectrum_description.html#a5b5ab5708e1d64d5d59535e6188be034',1,'ChimeraTK::SpectrumDescription']]],
-  ['stop',['stop',['../class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286',1,'ChimeraTK::DoocsUpdater']]]
+  ['stop',['stop',['../struct_chimera_t_k_1_1_xy_description_1_1_axis.html#afa2613cd7ef88dd7c4d8c83797d31000',1,'ChimeraTK::XyDescription::Axis::stop()'],['../class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286',1,'ChimeraTK::DoocsUpdater::stop()']]]
 ];

@@ -22,6 +22,7 @@ var class_chimera_t_k_1_1_variable_mapper =
     [ "processLocationNode", "class_chimera_t_k_1_1_variable_mapper.html#a6938122cddbec29e7714a2fc72ac50df", null ],
     [ "processNode", "class_chimera_t_k_1_1_variable_mapper.html#a9bab31d01cd9a9af0a685ed45f19c6a5", null ],
     [ "processSpectrumNode", "class_chimera_t_k_1_1_variable_mapper.html#a2c592a3540b9326d1c46131a686d768a", null ],
+    [ "processXyNode", "class_chimera_t_k_1_1_variable_mapper.html#a0ae04625dba7e9b611a0368b55ec7b28", null ],
     [ "_descriptions", "class_chimera_t_k_1_1_variable_mapper.html#a089c89fe8ee48441a68df5771220d13e", null ],
     [ "_globalDefaults", "class_chimera_t_k_1_1_variable_mapper.html#a6e4a549e6d1d681035d17fd5b2af7441", null ],
     [ "_inputVariables", "class_chimera_t_k_1_1_variable_mapper.html#a2a275442e601dc3702ef306841c92c48", null ],

@@ -168,13 +168,22 @@ D_array</h3>
 </ul>
 </li>
 </ul>
-<p>For an example, see above in Section <a class="el" href="index.html#mapping_file">DOOCS adapter mapping file</a>. </p>
-</div></div><!-- contents -->
+<p>For an example, see above in Section <a class="el" href="index.html#mapping_file">DOOCS adapter mapping file</a>.</p>
+<h2><a class="anchor" id="D_xy"></a>
+D_xy</h2>
+<p>The <code>D_xy</code> tag takes the following arguments through properties:</p><ul>
+<li><code>x_source</code> : Name of process variable which should be used for x-axis values</li>
+<li><code>y_source</code> : Name of process variable which should be used for y-axis values</li>
+<li><code>name</code> : Name of the mapped property The <code>D_xy</code> tag takes the following arguments through sub-tags:</li>
+<li><code>description</code> : A description for the XY plot</li>
+<li><code>unit</code> : A description of the respective axis. The axis is chosen with the <code>axis</code> property which can either be <code>x</code> or <code>y</code></li>
+</ul>
+<div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span>?&gt;</div><div class="line">&lt;<span class="keywordtype">device_server</span> <span class="keyword">xmlns</span>=<span class="stringliteral">&quot;https://github.com/ChimeraTK/ControlSystemAdapter-DoocsAdapter&quot;</span>&gt;</div><div class="line"></div><div class="line">  &lt;<span class="keywordtype">location</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FLOAT&quot;</span>&gt;</div><div class="line">      &lt;<span class="keywordtype">D_xy</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TEST_XY&quot;</span></div><div class="line">          <span class="keyword">x_source</span>=<span class="stringliteral">&quot;/FLOAT/FROM_DEVICE_ARRAY&quot;</span></div><div class="line">          <span class="keyword">y_source</span>=<span class="stringliteral">&quot;/DOUBLE/FROM_DEVICE_ARRAY&quot;</span>&gt;</div><div class="line">          &lt;<span class="keywordtype">description</span>&gt;<span class="keyword">Some</span> <span class="keyword">XY</span> <span class="keyword">test</span>&lt;/<span class="keywordtype">description</span>&gt;</div><div class="line">          &lt;<span class="keywordtype">unit</span> <span class="keyword">axis</span>=<span class="stringliteral">&quot;x&quot;</span>&gt;<span class="keyword">X_DESCRIPTION</span>&lt;/<span class="keywordtype">unit</span>&gt;</div><div class="line">          &lt;<span class="keywordtype">unit</span> <span class="keyword">axis</span>=<span class="stringliteral">&quot;y&quot;</span>&gt;<span class="keyword">Y_DESCRIPTION</span>&lt;/<span class="keywordtype">unit</span>&gt;</div><div class="line">      &lt;/<span class="keywordtype">D_xy</span>&gt;</div><div class="line">      &lt;<span class="keywordtype">import</span>&gt;/<span class="keyword">FLOAT</span>&lt;/<span class="keywordtype">import</span>&gt;</div><div class="line">  &lt;/<span class="keywordtype">location</span>&gt;</div><div class="line"></div><div class="line">  &lt;<span class="keywordtype">location</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DOUBLE&quot;</span>&gt;</div><div class="line">      &lt;<span class="keywordtype">import</span>&gt;/<span class="keyword">DOUBLE</span>&lt;/<span class="keywordtype">import</span>&gt;</div><div class="line">  &lt;/<span class="keywordtype">location</span>&gt;</div><div class="line"></div><div class="line">  &lt;<span class="keywordtype">location</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;INT&quot;</span>&gt;</div><div class="line">    &lt;<span class="keywordtype">property</span> <span class="keyword">source</span>=<span class="stringliteral">&quot;/INT/TO_DEVICE_SCALAR&quot;</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;TO_DEVICE_SCALAR&quot;</span>/&gt;</div><div class="line">  &lt;/<span class="keywordtype">location</span>&gt;</div><div class="line"></div><div class="line">&lt;/<span class="keywordtype">device_server</span>&gt;</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Apr 30 2019 03:54:20 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Wed May 1 2019 03:53:36 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

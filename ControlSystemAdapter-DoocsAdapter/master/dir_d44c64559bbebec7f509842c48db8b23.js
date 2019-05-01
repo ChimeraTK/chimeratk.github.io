@@ -23,12 +23,17 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "DoocsUpdater.h", "_doocs_updater_8h.html", [
       [ "DoocsUpdater", "class_chimera_t_k_1_1_doocs_updater.html", "class_chimera_t_k_1_1_doocs_updater" ]
     ] ],
+    [ "DoocsXY.h", "_doocs_x_y_8h.html", [
+      [ "DoocsXy", "class_chimera_t_k_1_1_doocs_xy.html", "class_chimera_t_k_1_1_doocs_xy" ]
+    ] ],
     [ "getAllVariableNames.h", "get_all_variable_names_8h.html", "get_all_variable_names_8h" ],
     [ "PropertyDescription.h", "_property_description_8h.html", [
       [ "PropertyAttributes", "struct_chimera_t_k_1_1_property_attributes.html", "struct_chimera_t_k_1_1_property_attributes" ],
       [ "PropertyDescription", "struct_chimera_t_k_1_1_property_description.html", "struct_chimera_t_k_1_1_property_description" ],
       [ "AutoPropertyDescription", "struct_chimera_t_k_1_1_auto_property_description.html", "struct_chimera_t_k_1_1_auto_property_description" ],
       [ "SpectrumDescription", "struct_chimera_t_k_1_1_spectrum_description.html", "struct_chimera_t_k_1_1_spectrum_description" ],
+      [ "XyDescription", "struct_chimera_t_k_1_1_xy_description.html", "struct_chimera_t_k_1_1_xy_description" ],
+      [ "Axis", "struct_chimera_t_k_1_1_xy_description_1_1_axis.html", "struct_chimera_t_k_1_1_xy_description_1_1_axis" ],
       [ "LocationInfo", "struct_chimera_t_k_1_1_location_info.html", "struct_chimera_t_k_1_1_location_info" ]
     ] ],
     [ "splitStringAtFirstSlash.h", "split_string_at_first_slash_8h.html", "split_string_at_first_slash_8h" ],

@@ -7,6 +7,7 @@ var class_chimera_t_k_1_1_doocs_p_v_factory =
     [ "createDoocsScalar", "class_chimera_t_k_1_1_doocs_p_v_factory.html#a72070e8f99890a6d7f81d74642a15ae1", null ],
     [ "createDoocsScalar", "class_chimera_t_k_1_1_doocs_p_v_factory.html#a4864aa67d8900988a961c03472945065", null ],
     [ "createDoocsSpectrum", "class_chimera_t_k_1_1_doocs_p_v_factory.html#a997e90ada658e3610569632c756ef818", null ],
+    [ "createXy", "class_chimera_t_k_1_1_doocs_p_v_factory.html#a47bef0438429bcf9a8bb493506c9ddf4", null ],
     [ "typedCreateDoocsArray", "class_chimera_t_k_1_1_doocs_p_v_factory.html#ae4bb3efe24cb3f5261874ee921245dd0", null ],
     [ "typedCreateScalarOrArray", "class_chimera_t_k_1_1_doocs_p_v_factory.html#a1414a1aadd28932c48d7ebfbcc0740ff", null ],
     [ "_controlSystemPVManager", "class_chimera_t_k_1_1_doocs_p_v_factory.html#a12e1be1675c941e6ad006cce8ab5e9d7", null ],
