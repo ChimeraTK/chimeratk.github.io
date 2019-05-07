@@ -16,6 +16,7 @@ var class_chimera_t_k_1_1_device_module =
     [ "operator()", "class_chimera_t_k_1_1_device_module.html#a0cb6412b38f9bd4920f077d6eb8800f8", null ],
     [ "operator=", "class_chimera_t_k_1_1_device_module.html#a55c147ea372edb617417d8910eee7c0d", null ],
     [ "operator[]", "class_chimera_t_k_1_1_device_module.html#a4f8ea24bddfe0abab974b0172e1c2075", null ],
+    [ "prepare", "class_chimera_t_k_1_1_device_module.html#a2d094fb10f12c3d89b2088023c169b7e", null ],
     [ "reportException", "class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db", null ],
     [ "run", "class_chimera_t_k_1_1_device_module.html#a71dea3b0240cf2eccbae77ab7f2c4a73", null ],
     [ "setCurrentVersionNumber", "class_chimera_t_k_1_1_device_module.html#acd714ad2e5ddb2758efb5928816511ce", null ],
@@ -25,8 +26,10 @@ var class_chimera_t_k_1_1_device_module =
     [ "Application", "class_chimera_t_k_1_1_device_module.html#a23f25bcc02a0e94c2f5a4188496b04d0", null ],
     [ "detail::DeviceModuleProxy", "class_chimera_t_k_1_1_device_module.html#a70461c19bbacfd6cb682f69f0464f406", null ],
     [ "currentVersionNumber", "class_chimera_t_k_1_1_device_module.html#a4a3bfad5ba8749f4e37a5165bbbdb321", null ],
+    [ "device", "class_chimera_t_k_1_1_device_module.html#a5c5d31cbd8669519f0a974a202c3caa0", null ],
     [ "deviceAliasOrURI", "class_chimera_t_k_1_1_device_module.html#ac19f5b14011b1cb9830655783eb809fa", null ],
     [ "deviceError", "class_chimera_t_k_1_1_device_module.html#ab54f2a7bdf571deccf3a0c463d367ae9", null ],
+    [ "deviceIsInitialized", "class_chimera_t_k_1_1_device_module.html#afd70af961ca8d5cfd35f7f02996880b1", null ],
     [ "errorCondVar", "class_chimera_t_k_1_1_device_module.html#a66d980d10d0ed111ad99ca23fdc8b539", null ],
     [ "errorMutex", "class_chimera_t_k_1_1_device_module.html#a4e61eb7f0c5215a0579f83ee65d0c889", null ],
     [ "errorQueue", "class_chimera_t_k_1_1_device_module.html#a81936a1ddd5c7bf141124aa599181a03", null ],
@@ -35,5 +38,6 @@ var class_chimera_t_k_1_1_device_module =
     [ "proxies", "class_chimera_t_k_1_1_device_module.html#a7428186cbfbb92002fc80b863de786f6", null ],
     [ "registerNamePrefix", "class_chimera_t_k_1_1_device_module.html#a3bd68002fced1ba4049ee2e798d7d26d", null ],
     [ "virtualisedModuleFromCatalog", "class_chimera_t_k_1_1_device_module.html#a6278854315239292e1143979799af854", null ],
-    [ "virtualisedModuleFromCatalog_isValid", "class_chimera_t_k_1_1_device_module.html#a8100399439fb611a1df16093c2aac7fa", null ]
+    [ "virtualisedModuleFromCatalog_isValid", "class_chimera_t_k_1_1_device_module.html#a8100399439fb611a1df16093c2aac7fa", null ],
+    [ "writeAfterOpen", "class_chimera_t_k_1_1_device_module.html#a919584a80ca4081484c889e0eb53e32a", null ]
 ];

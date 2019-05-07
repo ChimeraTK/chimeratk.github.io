@@ -9,7 +9,7 @@ var searchData=
   ['poll',['poll',['../namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3bab0f6dfb42fa80caee6825bfecd30f094',1,'ChimeraTK']]],
   ['pollingconsumer',['pollingConsumer',['../class_chimera_t_k_1_1_variable_network.html#aae82485cda15b256982eacbb4a103ecaa05356001bec32b754b91dc194e9c90b6',1,'ChimeraTK::VariableNetwork']]],
   ['popstream',['popStream',['../class_chimera_t_k_1_1_pushable_stream.html#ac8206c505d8efd46cbac348a74415d30',1,'ChimeraTK::PushableStream']]],
-  ['prepare',['prepare',['../class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568',1,'ChimeraTK::Module::prepare()'],['../struct_chimera_t_k_1_1_config_reader.html#a889a4d8521fd8b37705f84d95f79ff20',1,'ChimeraTK::ConfigReader::prepare()']]],
+  ['prepare',['prepare',['../class_chimera_t_k_1_1_device_module.html#a2d094fb10f12c3d89b2088023c169b7e',1,'ChimeraTK::DeviceModule::prepare()'],['../class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568',1,'ChimeraTK::Module::prepare()'],['../struct_chimera_t_k_1_1_config_reader.html#a889a4d8521fd8b37705f84d95f79ff20',1,'ChimeraTK::ConfigReader::prepare()']]],
   ['processunconnectednodes',['processUnconnectedNodes',['../class_chimera_t_k_1_1_application.html#af595df5c85fe5acd93a1deaa54b69b0c',1,'ChimeraTK::Application']]],
   ['profiler',['Profiler',['../class_chimera_t_k_1_1_profiler.html',1,'ChimeraTK::Profiler'],['../class_chimera_t_k_1_1_profiler_1_1_thread_data.html#ad73e5645d5b7b84a00d4a5d07b8d8078',1,'ChimeraTK::Profiler::ThreadData::Profiler()']]],
   ['profiler_2ecc',['Profiler.cc',['../_profiler_8cc.html',1,'']]],
