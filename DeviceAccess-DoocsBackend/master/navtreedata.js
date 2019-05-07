@@ -4,7 +4,6 @@ var NAVTREE =
     [ "Supported Data Types", "supported_types.html", [
       [ "IFFF", "supported_types.html#ifff", null ]
     ] ],
-    [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [

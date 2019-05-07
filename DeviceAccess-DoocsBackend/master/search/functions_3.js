@@ -1,7 +1,7 @@
 var searchData=
 [
   ['define_5fvirtual_5ffunction_5ftemplate_5fvtable_5ffiller',['DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER',['../class_chimera_t_k_1_1_doocs_backend.html#af722dad9f7247dbcc506f4fb2b6bc359',1,'ChimeraTK::DoocsBackend']]],
-  ['doocsbackend',['DoocsBackend',['../class_chimera_t_k_1_1_doocs_backend.html#acad01427c95c199b9f43616dc0b76186',1,'ChimeraTK::DoocsBackend']]],
+  ['doocsbackend',['DoocsBackend',['../class_chimera_t_k_1_1_doocs_backend.html#ac946fd5bfddbadd42ffe693b4d6a7765',1,'ChimeraTK::DoocsBackend']]],
   ['doocsbackendfloatregisteraccessor',['DoocsBackendFloatRegisterAccessor',['../class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html#ad68d16a57e5de6022e75c6a68a470d6b',1,'ChimeraTK::DoocsBackendFloatRegisterAccessor']]],
   ['doocsbackendifffregisteraccessor',['DoocsBackendIFFFRegisterAccessor',['../class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#a2674b6ff25dda4f4e9c197b7bc6a5468',1,'ChimeraTK::DoocsBackendIFFFRegisterAccessor']]],
   ['doocsbackendintregisteraccessor',['DoocsBackendIntRegisterAccessor',['../class_chimera_t_k_1_1_doocs_backend_int_register_accessor.html#ae2cb8c52040219ab4b4c536c97aceac6',1,'ChimeraTK::DoocsBackendIntRegisterAccessor']]],

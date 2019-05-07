@@ -1,6 +1,7 @@
 var hierarchy =
 [
     [ "ChimeraTK::DoocsBackend::BackendRegisterer", "class_chimera_t_k_1_1_doocs_backend_1_1_backend_registerer.html", null ],
+    [ "CatalogueFetcher", "class_catalogue_fetcher.html", null ],
     [ "DeviceBackendImpl", null, [
       [ "ChimeraTK::DoocsBackend", "class_chimera_t_k_1_1_doocs_backend.html", null ]
     ] ],
