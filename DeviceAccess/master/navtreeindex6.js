@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html#a4371bf2421b4253a847be3e7839e41dd":[13,0,0,1,0,5],
 "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html#a5f3b13ce172b70407e8321483e102856":[13,0,0,1,0,1],
 "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html#a6715cd42802dc09e5097b977765ed258":[13,0,0,1,0,6],
 "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html#a967104c7a1404d10ad369a178d3e0b0f":[13,0,0,1,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "dir_f7d8e8f898b7b1e9b0579569ae94cf59.html":[14,0,1,6],
 "dmap.html":[5],
 "dmap.html#The":[5,0],
-"examples.html":[15],
-"exception_2include_2_exception_8h.html":[14,0,3,0,0]
+"examples.html":[15]
 };
