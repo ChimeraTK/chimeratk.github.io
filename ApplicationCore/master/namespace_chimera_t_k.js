@@ -37,7 +37,7 @@ var namespace_chimera_t_k =
     [ "InversionOfControlAccessor", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", "class_chimera_t_k_1_1_inversion_of_control_accessor" ],
     [ "LimitValue", "struct_chimera_t_k_1_1_limit_value.html", "struct_chimera_t_k_1_1_limit_value" ],
     [ "LimitValueModuleBase", "struct_chimera_t_k_1_1_limit_value_module_base.html", "struct_chimera_t_k_1_1_limit_value_module_base" ],
-    [ "MicroDAQ", "struct_chimera_t_k_1_1_micro_d_a_q.html", "struct_chimera_t_k_1_1_micro_d_a_q" ],
+    [ "MicroDAQ", "class_chimera_t_k_1_1_micro_d_a_q.html", "class_chimera_t_k_1_1_micro_d_a_q" ],
     [ "Module", "class_chimera_t_k_1_1_module.html", "class_chimera_t_k_1_1_module" ],
     [ "ModuleGraphVisitor", "class_chimera_t_k_1_1_module_graph_visitor.html", "class_chimera_t_k_1_1_module_graph_visitor" ],
     [ "ModuleGroup", "class_chimera_t_k_1_1_module_group.html", "class_chimera_t_k_1_1_module_group" ],

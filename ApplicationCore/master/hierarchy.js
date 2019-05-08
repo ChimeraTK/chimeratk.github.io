@@ -36,14 +36,14 @@ var hierarchy =
             [ "ChimeraTK::ArrayPipe< Type >", "struct_chimera_t_k_1_1_array_pipe.html", null ],
             [ "ChimeraTK::ConfigReader", "struct_chimera_t_k_1_1_config_reader.html", null ],
             [ "ChimeraTK::ConstMultiplier< InputType, OutputType, NELEMS >", "struct_chimera_t_k_1_1_const_multiplier.html", null ],
-            [ "ChimeraTK::DataLossCounter", "struct_chimera_t_k_1_1_data_loss_counter.html", null ],
+            [ "ChimeraTK::DataLossCounter< TRIGGERTYPE >", "struct_chimera_t_k_1_1_data_loss_counter.html", null ],
             [ "ChimeraTK::Divider< InputType, OutputType, NELEMS >", "struct_chimera_t_k_1_1_divider.html", null ],
             [ "ChimeraTK::history::ServerHistory", "struct_chimera_t_k_1_1history_1_1_server_history.html", null ],
             [ "ChimeraTK::LimitValueModuleBase< UserType >", "struct_chimera_t_k_1_1_limit_value_module_base.html", [
               [ "ChimeraTK::FixedLimitValue< UserType, min, max >", "struct_chimera_t_k_1_1_fixed_limit_value.html", null ],
               [ "ChimeraTK::LimitValue< UserType >", "struct_chimera_t_k_1_1_limit_value.html", null ]
             ] ],
-            [ "ChimeraTK::MicroDAQ", "struct_chimera_t_k_1_1_micro_d_a_q.html", null ],
+            [ "ChimeraTK::MicroDAQ< TRIGGERTYPE >", "class_chimera_t_k_1_1_micro_d_a_q.html", null ],
             [ "ChimeraTK::Multiplier< InputType, OutputType, NELEMS >", "struct_chimera_t_k_1_1_multiplier.html", null ],
             [ "ChimeraTK::PeriodicTrigger", "struct_chimera_t_k_1_1_periodic_trigger.html", null ],
             [ "ChimeraTK::ReadBitMask< NBITS >", "struct_chimera_t_k_1_1_read_bit_mask.html", null ],
@@ -154,6 +154,11 @@ var hierarchy =
         [ "ChimeraTK::ScalarOutput< T >", "struct_chimera_t_k_1_1_scalar_output.html", null ]
       ] ]
     ] ],
+    [ "ChimeraTK::InversionOfControlAccessor< ScalarAccessor< TRIGGERTYPE > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
+      [ "ChimeraTK::ScalarAccessor< TRIGGERTYPE >", "class_chimera_t_k_1_1_scalar_accessor.html", [
+        [ "ChimeraTK::ScalarPushInput< TRIGGERTYPE >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ]
+      ] ]
+    ] ],
     [ "ChimeraTK::InversionOfControlAccessor< ScalarAccessor< Type > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
       [ "ChimeraTK::ScalarAccessor< Type >", "class_chimera_t_k_1_1_scalar_accessor.html", [
         [ "ChimeraTK::ScalarOutput< Type >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
@@ -222,6 +227,7 @@ var hierarchy =
       [ "ChimeraTK::ScalarAccessor< int32_t >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
       [ "ChimeraTK::ScalarAccessor< std::string >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
       [ "ChimeraTK::ScalarAccessor< T >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
+      [ "ChimeraTK::ScalarAccessor< TRIGGERTYPE >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
       [ "ChimeraTK::ScalarAccessor< Type >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
       [ "ChimeraTK::ScalarAccessor< uint >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
       [ "ChimeraTK::ScalarAccessor< uint32_t >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],

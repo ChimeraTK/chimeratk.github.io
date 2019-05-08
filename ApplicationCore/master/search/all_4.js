@@ -1,19 +1,19 @@
 var searchData=
 [
-  ['accessorattacher',['AccessorAttacher',['../struct_chimera_t_k_1_1_micro_d_a_q.html#afbbb4a22dc8da62e51b196a04d7b05ea',1,'ChimeraTK::MicroDAQ']]],
-  ['datalosscounter',['DataLossCounter',['../struct_chimera_t_k_1_1_data_loss_counter.html',1,'ChimeraTK::DataLossCounter'],['../class_chimera_t_k_1_1_application.html#a80e8990554832fe825057368d512a7a5',1,'ChimeraTK::Application::dataLossCounter()']]],
+  ['accessorattacher_3c_20triggertype_20_3e',['AccessorAttacher&lt; TRIGGERTYPE &gt;',['../class_chimera_t_k_1_1_micro_d_a_q.html#a0ec41483fa5cb8aeb62ad0b392d3d51a',1,'ChimeraTK::MicroDAQ']]],
+  ['datalosscounter',['DataLossCounter',['../struct_chimera_t_k_1_1_data_loss_counter.html',1,'ChimeraTK::DataLossCounter&lt; TRIGGERTYPE &gt;'],['../class_chimera_t_k_1_1_application.html#a80e8990554832fe825057368d512a7a5',1,'ChimeraTK::Application::dataLossCounter()']]],
   ['datalosscounter_2eh',['DataLossCounter.h',['../_data_loss_counter_8h.html',1,'']]],
-  ['dataspacecreator',['DataSpaceCreator',['../struct_chimera_t_k_1_1_micro_d_a_q.html#adb3f13ba981e38e7a2fbccd255f6c5c4',1,'ChimeraTK::MicroDAQ']]],
-  ['datawriter',['DataWriter',['../struct_chimera_t_k_1_1_micro_d_a_q.html#a809c71f8539cffa02d592cf524e02ff1',1,'ChimeraTK::MicroDAQ']]],
+  ['dataspacecreator_3c_20triggertype_20_3e',['DataSpaceCreator&lt; TRIGGERTYPE &gt;',['../class_chimera_t_k_1_1_micro_d_a_q.html#a1afb5529649c7c5c3197dd0b9e6207bd',1,'ChimeraTK::MicroDAQ']]],
+  ['datawriter_3c_20triggertype_20_3e',['DataWriter&lt; TRIGGERTYPE &gt;',['../class_chimera_t_k_1_1_micro_d_a_q.html#a80517b7f14fc02e02222c6ad6c31ecae',1,'ChimeraTK::MicroDAQ']]],
   ['deactivate',['deactivate',['../class_chimera_t_k_1_1_internal_module.html#a7c306d0c2969c4f4151d2f0d7f42937d',1,'ChimeraTK::InternalModule::deactivate()'],['../class_chimera_t_k_1_1_threaded_fan_out.html#a2e01fc1efd2e4f39b13c885d33978da8',1,'ChimeraTK::ThreadedFanOut::deactivate()'],['../class_chimera_t_k_1_1_trigger_fan_out.html#a3404af1ffc3a6df39808d28887714a90',1,'ChimeraTK::TriggerFanOut::deactivate()']]],
   ['debug',['DEBUG',['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416a682501b7fb187303796e3f533735b51f',1,'logging']]],
   ['debugmode_5fvariablelist',['debugMode_variableList',['../class_chimera_t_k_1_1_application.html#a20ee34f9da398c58ad9e4228449412fa',1,'ChimeraTK::Application']]],
   ['debugprintaccessordecorator',['DebugPrintAccessorDecorator',['../class_chimera_t_k_1_1_debug_print_accessor_decorator.html',1,'ChimeraTK::DebugPrintAccessorDecorator&lt; UserType &gt;'],['../class_chimera_t_k_1_1_application.html#ae695c6843b4a8363af68d12eb640997e',1,'ChimeraTK::Application::DebugPrintAccessorDecorator()'],['../class_chimera_t_k_1_1_debug_print_accessor_decorator.html#a648525adf5c9f43126b03635649ad71c',1,'ChimeraTK::DebugPrintAccessorDecorator::DebugPrintAccessorDecorator()']]],
   ['debugprintaccessordecorator_2eh',['DebugPrintAccessorDecorator.h',['../_debug_print_accessor_decorator_8h.html',1,'']]],
   ['debugtestablemode',['debugTestableMode',['../class_chimera_t_k_1_1_application.html#abb8b6abdb4e460d15a7291b5e8568f0c',1,'ChimeraTK::Application']]],
-  ['decimationfactor_5f',['decimationFactor_',['../struct_chimera_t_k_1_1_micro_d_a_q.html#adf71617723ef6d8ef1e8ba804535d813',1,'ChimeraTK::MicroDAQ']]],
-  ['decimationthreshold_5f',['decimationThreshold_',['../struct_chimera_t_k_1_1_micro_d_a_q.html#aded7ddd6b073de27abe40836cb865239',1,'ChimeraTK::MicroDAQ']]],
-  ['declare_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes',['DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES',['../namespace_chimera_t_k.html#aa6996acf48cdfb7d1b64b4d21089564c',1,'ChimeraTK']]],
+  ['decimationfactor_5f',['decimationFactor_',['../class_chimera_t_k_1_1_micro_d_a_q.html#a3547ddcde372e192daf54c1415d1b85c',1,'ChimeraTK::MicroDAQ']]],
+  ['decimationthreshold_5f',['decimationThreshold_',['../class_chimera_t_k_1_1_micro_d_a_q.html#a9ba8c6767c7f9c7f2f342f871fc36e8d',1,'ChimeraTK::MicroDAQ']]],
+  ['declare_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes',['DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES',['../namespace_chimera_t_k.html#aa6996acf48cdfb7d1b64b4d21089564c',1,'ChimeraTK::DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES(ExceptionHandlingDecorator)'],['../namespace_chimera_t_k.html#a6d9785a4c2c32ae6774909325697379f',1,'ChimeraTK::DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES(MicroDAQ)']]],
   ['decrementcounter',['decrementCounter',['../class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#a1253e11765c46d5e332550e39896ec4c',1,'ChimeraTK::TestableModeAccessorDecorator']]],
   ['define_5fvirtual_5ffunction_5ftemplate_5fvtable_5ffiller',['DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER',['../class_timer_dummy.html#a16cde43777b8d19921cf554b17c36851',1,'TimerDummy']]],
   ['defineconnections',['defineConnections',['../struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a',1,'ExampleApp::defineConnections()'],['../struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a',1,'ExampleApp::defineConnections()'],['../struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a',1,'ExampleApp::defineConnections()'],['../struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a',1,'ExampleApp::defineConnections()'],['../class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7',1,'ChimeraTK::Application::defineConnections()'],['../class_chimera_t_k_1_1_device_module.html#a54e3bc866064cb19cbc2c6cab5ee9e51',1,'ChimeraTK::DeviceModule::defineConnections()'],['../class_chimera_t_k_1_1_module.html#a9b3536e232d1163debcdca29279191e2',1,'ChimeraTK::Module::defineConnections()']]],
@@ -56,5 +56,5 @@ var searchData=
   ['dumpconnections',['dumpConnections',['../class_chimera_t_k_1_1_application.html#ad754fcb82f70921783070295991d73a1',1,'ChimeraTK::Application']]],
   ['dumpgraph',['dumpGraph',['../class_chimera_t_k_1_1_entity_owner.html#aff6ef862b79e78c68bce72c418119da3',1,'ChimeraTK::EntityOwner']]],
   ['dumpmodulegraph',['dumpModuleGraph',['../class_chimera_t_k_1_1_entity_owner.html#a86d92396b91b85efe432105e81eb400e',1,'ChimeraTK::EntityOwner']]],
-  ['h5storage',['H5storage',['../struct_chimera_t_k_1_1_micro_d_a_q.html#a4e5ce5ce7e0ac03f87f3aadd23d2ebca',1,'ChimeraTK::MicroDAQ']]]
+  ['h5storage_3c_20triggertype_20_3e',['H5storage&lt; TRIGGERTYPE &gt;',['../class_chimera_t_k_1_1_micro_d_a_q.html#aba6a4ce6640771ea455e645070457051',1,'ChimeraTK::MicroDAQ']]]
 ];

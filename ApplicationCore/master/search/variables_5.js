@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['enable',['enable',['../struct_chimera_t_k_1_1_micro_d_a_q.html#ab71c0888c68dc5474ce929cdc2a4312c',1,'ChimeraTK::MicroDAQ']]],
+  ['enable',['enable',['../class_chimera_t_k_1_1_micro_d_a_q.html#ab599522f70cffff454a7cef825c2eda7',1,'ChimeraTK::MicroDAQ']]],
   ['enabledebugtestablemode',['enableDebugTestableMode',['../class_chimera_t_k_1_1_application.html#a2e7a4a1dc5d457fe7f7b929794ec4261',1,'ChimeraTK::Application']]],
   ['enableunconnectedvariableswarning',['enableUnconnectedVariablesWarning',['../class_chimera_t_k_1_1_application.html#a071fb9e762f3d957d8696809180b01e5',1,'ChimeraTK::Application']]],
   ['engineeringunit',['engineeringUnit',['../class_chimera_t_k_1_1_variable_network.html#afba1007fc58929b1ac647dfa4bfe383a',1,'ChimeraTK::VariableNetwork']]],
