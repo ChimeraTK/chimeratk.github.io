@@ -84,9 +84,10 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_doocs_backend_re
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_chimera_t_k_1_1_doocs_backend_register_accessor-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ChimeraTK::DoocsBackendRegisterAccessor&lt; UserType &gt; Class Template Reference</div>  </div>
+<div class="title">ChimeraTK::DoocsBackendRegisterAccessor&lt; UserType &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -150,12 +151,24 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:afbf800d7330b4a2b45977674f57070bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#afbf800d7330b4a2b45977674f57070bf">DoocsBackendRegisterAccessor</a> (const std::string &amp;path, size_t numberOfWords, size_t wordOffsetInRegister, AccessModeFlags flags, bool allocateBuffers=true)</td></tr>
-<tr class="memdesc:afbf800d7330b4a2b45977674f57070bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementations below this point.  <a href="#afbf800d7330b4a2b45977674f57070bf">More...</a><br /></td></tr>
-<tr class="separator:afbf800d7330b4a2b45977674f57070bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047984718662741c82607256054845c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a047984718662741c82607256054845c6">DoocsBackendRegisterAccessor</a> (<a class="el" href="class_chimera_t_k_1_1_doocs_backend.html">DoocsBackend</a> *backend, const std::string &amp;path, const std::string &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, AccessModeFlags flags, bool allocateBuffers=true)</td></tr>
+<tr class="separator:a047984718662741c82607256054845c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a858e3fa3941ee0adcff3866da1e3544b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b">write_internal</a> ()</td></tr>
 <tr class="memdesc:a858e3fa3941ee0adcff3866da1e3544b"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal write from EqData src  <a href="#a858e3fa3941ee0adcff3866da1e3544b">More...</a><br /></td></tr>
 <tr class="separator:a858e3fa3941ee0adcff3866da1e3544b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb2bd214a2a08a31e732cbd0de34a6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a1eb2bd214a2a08a31e732cbd0de34a6c">initialise</a> ()</td></tr>
+<tr class="memdesc:a1eb2bd214a2a08a31e732cbd0de34a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform initialisation (i.e.  <a href="#a1eb2bd214a2a08a31e732cbd0de34a6c">More...</a><br /></td></tr>
+<tr class="separator:a1eb2bd214a2a08a31e732cbd0de34a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf5f8dc529e8170bc3a73bdcdaea4a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#afcf5f8dc529e8170bc3a73bdcdaea4a5">initialiseImplementation</a> ()=0</td></tr>
+<tr class="separator:afcf5f8dc529e8170bc3a73bdcdaea4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a66bac06a72bf2af7fc769df3d7d237de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a66bac06a72bf2af7fc769df3d7d237de">isInitialised</a> {false}</td></tr>
+<tr class="memdesc:a66bac06a72bf2af7fc769df3d7d237de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether the initialisation has been performed already.  <a href="#a66bac06a72bf2af7fc769df3d7d237de">More...</a><br /></td></tr>
+<tr class="separator:a66bac06a72bf2af7fc769df3d7d237de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb64896ce3e1da2c293b3992e7028fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a4eb64896ce3e1da2c293b3992e7028fa">_allocateBuffers</a></td></tr>
+<tr class="separator:a4eb64896ce3e1da2c293b3992e7028fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -236,12 +249,12 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00243">243</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00275">275</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
-<a id="afbf800d7330b4a2b45977674f57070bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbf800d7330b4a2b45977674f57070bf">&#9670;&nbsp;</a></span>DoocsBackendRegisterAccessor()</h2>
+<a id="a047984718662741c82607256054845c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a047984718662741c82607256054845c6">&#9670;&nbsp;</a></span>DoocsBackendRegisterAccessor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,8 +267,20 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">ChimeraTK::DoocsBackendRegisterAccessor</a>&lt; UserType &gt;::<a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">DoocsBackendRegisterAccessor</a> </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html">DoocsBackend</a> *&#160;</td>
+          <td class="paramname"><em>backend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -294,15 +319,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implementations below this point. </p>
-
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00164">164</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00237">237</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_afbf800d7330b4a2b45977674f57070bf_cgraph.svg" width="100%" height="465"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_a047984718662741c82607256054845c6_cgraph.svg" width="100%" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -371,13 +394,21 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00298">298</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00332">332</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_a15c9a6f709065cac28d2b01ad546036b_icgraph.svg" width="604" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_a15c9a6f709065cac28d2b01ad546036b_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_a15c9a6f709065cac28d2b01ad546036b_icgraph.svg" width="586" height="510"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -408,13 +439,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00351">351</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00387">387</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_a39d6b083cfd4872303afef6d6e8f471b_cgraph.svg" width="560" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_a39d6b083cfd4872303afef6d6e8f471b_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -445,13 +476,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00282">282</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00315">315</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_aaacff7be3f56763c779f1bae5a86f0e2_cgraph.svg" width="560" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_aaacff7be3f56763c779f1bae5a86f0e2_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -482,13 +513,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00250">250</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00282">282</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_ae70906d55ee881fb22698ec68811f481_cgraph.svg" width="580" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_ae70906d55ee881fb22698ec68811f481_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -637,6 +668,84 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00122">122</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+
+</div>
+</div>
+<a id="a1eb2bd214a2a08a31e732cbd0de34a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eb2bd214a2a08a31e732cbd0de34a6c">&#9670;&nbsp;</a></span>initialise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">ChimeraTK::DoocsBackendRegisterAccessor</a>&lt; UserType &gt;::initialise </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Perform initialisation (i.e. </p>
+<p>Implementations below this point.</p>
+<p>connect to server etc.) </p>
+
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00173">173</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_a1eb2bd214a2a08a31e732cbd0de34a6c_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_a1eb2bd214a2a08a31e732cbd0de34a6c_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="afcf5f8dc529e8170bc3a73bdcdaea4a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcf5f8dc529e8170bc3a73bdcdaea4a5">&#9670;&nbsp;</a></span>initialiseImplementation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">ChimeraTK::DoocsBackendRegisterAccessor</a>&lt; UserType &gt;::initialiseImplementation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#aeb7de5fdcb0cb6186346ded1698a0923">ChimeraTK::DoocsBackendIFFFRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_doocs_backend_int_register_accessor.html#a3490a939a1739407f59969c6d27cc42b">ChimeraTK::DoocsBackendIntRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_doocs_backend_long_register_accessor.html#a6b1b3fdf37575490d581fe13aae35ccf">ChimeraTK::DoocsBackendLongRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html#a30a1c2dcc9df93ede1e50c166ddd2a42">ChimeraTK::DoocsBackendFloatRegisterAccessor&lt; UserType &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html#ab819525534d348cd4c647d967f376b90">ChimeraTK::DoocsBackendStringRegisterAccessor&lt; UserType &gt;</a>.</p>
 
 </div>
 </div>
@@ -845,19 +954,19 @@ template&lt;typename UserType &gt; </div>
 <p>Also, implementations must call it in their constructors before throwing an exception. </p>
 
 <p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00081">81</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_a14e6481ebb423ffab7c49078e87fe6cf_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_a14e6481ebb423ffab7c49078e87fe6cf_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -891,7 +1000,70 @@ template&lt;typename UserType &gt; </div>
 
 <p>internal write from EqData src </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00339">339</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00374">374</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_register_accessor_a858e3fa3941ee0adcff3866da1e3544b_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4eb64896ce3e1da2c293b3992e7028fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eb64896ce3e1da2c293b3992e7028fa">&#9670;&nbsp;</a></span>_allocateBuffers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">ChimeraTK::DoocsBackendRegisterAccessor</a>&lt; UserType &gt;::_allocateBuffers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00163">163</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+
+</div>
+</div>
+<a id="a66bac06a72bf2af7fc769df3d7d237de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66bac06a72bf2af7fc769df3d7d237de">&#9670;&nbsp;</a></span>isInitialised</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">ChimeraTK::DoocsBackendRegisterAccessor</a>&lt; UserType &gt;::isInitialised {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flag whether the initialisation has been performed already. </p>
+
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00157">157</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -904,7 +1076,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">DoocsBackendRegisterAccessor</a></li>
-    <li class="footer">Generated on Tue May 7 2019 03:53:26 for ChimeraTK-DeviceAccess-DoocsBackend by
+    <li class="footer">Generated on Thu May 9 2019 03:53:09 for ChimeraTK-DeviceAccess-DoocsBackend by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

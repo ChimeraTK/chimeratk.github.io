@@ -7,9 +7,10 @@ var class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor =
       [ "F3", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#adc6a7a9dc47af0a68fb8f91b615ec881a4b6bf4b531770872d4328ce69bef5627", null ]
     ] ],
     [ "~DoocsBackendIFFFRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#ad892c083c1bc80fae1b744df6c2b3869", null ],
-    [ "DoocsBackendIFFFRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#a2674b6ff25dda4f4e9c197b7bc6a5468", null ],
+    [ "DoocsBackendIFFFRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#a50ca185761a4e4dcc1d23a881b9aac75", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#a48c959ca9e6c5d8a496ff022716c3ac9", null ],
     [ "doPreWrite", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#a7c3ab24046d6145533ff8b7cb496b834", null ],
+    [ "initialiseImplementation", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#aeb7de5fdcb0cb6186346ded1698a0923", null ],
     [ "mayReplaceOther", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#a3a05e5dc2742f152f1c9d6c234f22caf", null ],
     [ "DoocsBackend", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#a6e853e82624128177b710eb80e45303f", null ],
     [ "field", "class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#a817adafe5ba2cb05d147e38951f16cf0", null ]
