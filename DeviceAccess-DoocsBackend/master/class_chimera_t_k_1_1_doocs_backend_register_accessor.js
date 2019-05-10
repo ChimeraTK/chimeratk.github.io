@@ -1,7 +1,7 @@
 var class_chimera_t_k_1_1_doocs_backend_register_accessor =
 [
     [ "~DoocsBackendRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ab883217e9320e37adbb48d172b119758", null ],
-    [ "DoocsBackendRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a047984718662741c82607256054845c6", null ],
+    [ "DoocsBackendRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#acf65ec18eec0acb64621424310f5bdf4", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a4e7eb84209bd67533003349a4cd439cb", null ],
     [ "doReadTransfer", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a15c9a6f709065cac28d2b01ad546036b", null ],
     [ "doReadTransferAsync", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a39d6b083cfd4872303afef6d6e8f471b", null ],
@@ -23,5 +23,6 @@ var class_chimera_t_k_1_1_doocs_backend_register_accessor =
     [ "shutdown", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a14e6481ebb423ffab7c49078e87fe6cf", null ],
     [ "write_internal", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b", null ],
     [ "_allocateBuffers", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a4eb64896ce3e1da2c293b3992e7028fa", null ],
+    [ "_backend", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a0fbc3756df0cda75791f5d3b5b57f0c0", null ],
     [ "isInitialised", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a66bac06a72bf2af7fc769df3d7d237de", null ]
 ];
