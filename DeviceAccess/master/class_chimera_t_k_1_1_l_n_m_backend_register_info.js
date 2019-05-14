@@ -1,12 +1,13 @@
 var class_chimera_t_k_1_1_l_n_m_backend_register_info =
 [
+    [ "myVector", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ac752b0b68770e1714aec770368490b5d", null ],
     [ "TargetType", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787b", [
       [ "INVALID", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba464bac7271c91e146fddec802a1076e5", null ],
       [ "REGISTER", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787bacd0adc96aa9e60939e2a010d91510f60", null ],
       [ "CHANNEL", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba4fa75b6bb761d6e2f1e64b7eb1225cf8", null ],
       [ "BIT", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba31ddcac9356415b3567341d34a9adede", null ],
-      [ "INT_CONSTANT", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba51800eaf42f0c0711b9c978af844abfc", null ],
-      [ "INT_VARIABLE", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787badf067dca68fff8d83da88284613abc1d", null ]
+      [ "CONSTANT", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba8ce29512674d44455434a1034ea3de7d", null ],
+      [ "VARIABLE", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba4ec9fd489be4c3384dbafebd980148e7", null ]
     ] ],
     [ "LNMBackendRegisterInfo", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#af7a8a9232ef67407ebc7081b25510cce", null ],
     [ "getDataDescriptor", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a65649048b65d5ea484e510d389eeae3a", null ],
@@ -31,6 +32,7 @@ var class_chimera_t_k_1_1_l_n_m_backend_register_info =
     [ "registerName", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a63d9bdc5b457a66aafb74564870813d5", null ],
     [ "supportedFlags", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6546006951dc0b02aaf98a42c3f6630c", null ],
     [ "targetType", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ac207ec46daf9ba7cae5a125fd9093a17", null ],
-    [ "value_int", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a015d3d894f7e4463c04db69ccd3e0d9a", null ],
+    [ "valueTable", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a302a6a7826cd92e8513ef69d4b763e12", null ],
+    [ "valueType", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a0232afb5cb9aabded20da080b24ecc47", null ],
     [ "writeable", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a78eaed0aaebd9163a7006d65b2a095eb", null ]
 ];

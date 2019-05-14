@@ -123,6 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c3966d310b40c9f11086045c74665bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a7c3966d310b40c9f11086045c74665bb">DataDescriptor</a> (<a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8">FundamentalType</a> <a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a0ffbe083c4eec2daeac9a537e1c91e07">fundamentalType</a>, bool <a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a42831685752d528e4625dd7ee4c0698f">isIntegral</a>=false, bool <a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#ac93a5f8dba3457e4b0db7b9640d61ea7">isSigned</a>=false, size_t <a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a697c417308554b83d2c6f757f022492f">nDigits</a>=0, size_t <a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a9977974b23665943e8df6629adeee380">nFractionalDigits</a>=0, <a class="el" href="class_chimera_t_k_1_1_data_type.html">DataType</a> <a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#ac5d99bf38421a968dc3de5c6ccde406f">rawDataType</a>=<a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a43e32937488a25bceb7b75994793a087">DataType::none</a>, <a class="el" href="class_chimera_t_k_1_1_data_type.html">DataType</a> transportLayerDataType_=<a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a43e32937488a25bceb7b75994793a087">DataType::none</a>)</td></tr>
 <tr class="memdesc:a7c3966d310b40c9f11086045c74665bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor setting all members.  <a href="#a7c3966d310b40c9f11086045c74665bb">More...</a><br /></td></tr>
 <tr class="separator:a7c3966d310b40c9f11086045c74665bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d5de1aaddc6097ed3b09b3ab4dfba06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a6d5de1aaddc6097ed3b09b3ab4dfba06">DataDescriptor</a> (<a class="el" href="class_chimera_t_k_1_1_data_type.html">DataType</a> type)</td></tr>
+<tr class="memdesc:a6d5de1aaddc6097ed3b09b3ab4dfba06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> object - the <a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html" title="Class describing the actual payload data format of a register in an abstract manner. ">DataDescriptor</a> will then describe the passed <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> (with no raw type).  <a href="#a6d5de1aaddc6097ed3b09b3ab4dfba06">More...</a><br /></td></tr>
+<tr class="separator:a6d5de1aaddc6097ed3b09b3ab4dfba06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class describing the actual payload data format of a register in an abstract manner. </p>
@@ -131,7 +134,7 @@ Public Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00034">34</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6ffb4b343c74f267602c8fea1b51d0b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ffb4b343c74f267602c8fea1b51d0b5">&#9670;&nbsp;</a></span>DataDescriptor() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ffb4b343c74f267602c8fea1b51d0b5">&#9670;&nbsp;</a></span>DataDescriptor() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,12 +158,12 @@ Public Member Functions</h2></td></tr>
 
 <p>Default constructor sets fundamental type to "undefined". </p>
 
-<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00220">220</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00224">224</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
 <a id="a7c3966d310b40c9f11086045c74665bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c3966d310b40c9f11086045c74665bb">&#9670;&nbsp;</a></span>DataDescriptor() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c3966d310b40c9f11086045c74665bb">&#9670;&nbsp;</a></span>DataDescriptor() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +228,46 @@ Public Member Functions</h2></td></tr>
 
 <p>Constructor setting all members. </p>
 
-<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00224">224</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00228">228</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a6d5de1aaddc6097ed3b09b3ab4dfba06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d5de1aaddc6097ed3b09b3ab4dfba06">&#9670;&nbsp;</a></span>DataDescriptor() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::RegisterInfo::DataDescriptor::DataDescriptor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_data_type.html">DataType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct from <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> object - the <a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html" title="Class describing the actual payload data format of a register in an abstract manner. ">DataDescriptor</a> will then describe the passed <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> (with no raw type). </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000066">Todo:</a></b></dt><dd>FIXME fill properly! </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00236">236</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_register_info_1_1_data_descriptor_a6d5de1aaddc6097ed3b09b3ab4dfba06_cgraph.svg" width="456" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -255,7 +297,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the fundamental data type. </p>
 
-<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00180">180</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00184">184</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -285,7 +327,7 @@ Public Member Functions</h2></td></tr>
 <p>Return whether the data is integral or not (e.g. </p>
 <p>int vs. float). May only be called for numeric data types. </p>
 
-<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00199">199</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00203">203</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -315,7 +357,7 @@ Public Member Functions</h2></td></tr>
 <p>Return whether the data is signed or not. </p>
 <p>May only be called for numeric data types. </p>
 
-<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00192">192</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00196">196</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -346,7 +388,7 @@ Public Member Functions</h2></td></tr>
 <p>May only be called for numeric data types.</p>
 <p>This number shall only be used for displaying purposes, e.g. to decide how much space for displaying the register value should be reserved. Beware that for some data types this might become a really large number (e.g. 300), which indicates that you need to choose a different representation than just a plain decimal number. </p>
 
-<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00206">206</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00210">210</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -377,7 +419,7 @@ Public Member Functions</h2></td></tr>
 <p>May only be called for non-integral numeric data types.</p>
 <p>Just like in case of <a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a697c417308554b83d2c6f757f022492f" title="Return the approximate maximum number of digits (of base 10) needed to represent the value (including...">nDigits()</a>, this number should only be used for displaying purposes. There is no guarantee that the full precision of the number can be displayed with the given number of digits. Again beware that this number might be rather large (e.g. 300). </p>
 
-<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00213">213</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00217">217</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +455,7 @@ Public Member Functions</h2></td></tr>
 </ul>
 <p>Most backends will have type none, i.e. no raw data conversion available. At the moment only the NumericalAddressedBackend has int32_t raw transfer with raw/cooked conversion. Can be extended if needed, but this partily breaks abstraction because it exposes details of the (transport) layer below. It should be avoided if possible. </p>
 
-<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00186">186</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00190">190</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -449,7 +491,7 @@ Public Member Functions</h2></td></tr>
 </ul>
 <p>Notice: Currently all implementations return 'none'. From the interface there is no way to access the transport layer data (yet). The function is put here for conceputal completeness. </p>
 
-<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00188">188</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_8h_source.html#l00192">192</a> of file <a class="el" href="fileparsers_2include_2_register_info_8h_source.html">RegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -462,7 +504,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_register_info.html">RegisterInfo</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html">DataDescriptor</a></li>
-    <li class="footer">Generated on Fri May 10 2019 03:53:07 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue May 14 2019 03:53:08 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

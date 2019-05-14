@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_l_n_m_backend_re
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_register_info__coll__graph.svg" width="100%" height="560"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_register_info__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -120,12 +120,16 @@ Public Types</h2></td></tr>
 <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba4fa75b6bb761d6e2f1e64b7eb1225cf8">CHANNEL</a>, 
 <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba31ddcac9356415b3567341d34a9adede">BIT</a>, 
 <br />
-&#160;&#160;<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba51800eaf42f0c0711b9c978af844abfc">INT_CONSTANT</a>, 
-<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787badf067dca68fff8d83da88284613abc1d">INT_VARIABLE</a>
+&#160;&#160;<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba8ce29512674d44455434a1034ea3de7d">CONSTANT</a>, 
+<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba4ec9fd489be4c3384dbafebd980148e7">VARIABLE</a>
 <br />
  }<tr class="memdesc:ad28901d58a7faa46c9075a9f5f46787b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Potential target types.  <a href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787b">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:ad28901d58a7faa46c9075a9f5f46787b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac752b0b68770e1714aec770368490b5d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac752b0b68770e1714aec770368490b5d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ac752b0b68770e1714aec770368490b5d">myVector</a> = std::vector&lt; T &gt;</td></tr>
+<tr class="memdesc:ac752b0b68770e1714aec770368490b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hold values of CONSTANT or VARIABLE types in a type-dependent table.  <a href="#ac752b0b68770e1714aec770368490b5d">More...</a><br /></td></tr>
+<tr class="separator:ac752b0b68770e1714aec770368490b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_chimera_t_k_1_1_register_info"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_chimera_t_k_1_1_register_info')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_chimera_t_k_1_1_register_info.html">ChimeraTK::RegisterInfo</a></td></tr>
 <tr class="memitem:a860f659821e8bfab2804820bb42bb9d8 inherit pub_types_class_chimera_t_k_1_1_register_info"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8">FundamentalType</a> { <br />
 &#160;&#160;<a class="el" href="class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8a49057168d24dc9566533ec48326ced2c">FundamentalType::numeric</a>, 
@@ -205,9 +209,11 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a6f97729a8d0508afaa17539481e4a6f8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6f97729a8d0508afaa17539481e4a6f8">nChannels</a></td></tr>
 <tr class="memdesc:a6f97729a8d0508afaa17539481e4a6f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of channels of the logical register.  <a href="#a6f97729a8d0508afaa17539481e4a6f8">More...</a><br /></td></tr>
 <tr class="separator:a6f97729a8d0508afaa17539481e4a6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a015d3d894f7e4463c04db69ccd3e0d9a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a015d3d894f7e4463c04db69ccd3e0d9a">value_int</a></td></tr>
-<tr class="memdesc:a015d3d894f7e4463c04db69ccd3e0d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The integer value of a INT_CONSTANT or INT_VARIABLE.  <a href="#a015d3d894f7e4463c04db69ccd3e0d9a">More...</a><br /></td></tr>
-<tr class="separator:a015d3d894f7e4463c04db69ccd3e0d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0232afb5cb9aabded20da080b24ecc47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_data_type.html">DataType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a0232afb5cb9aabded20da080b24ecc47">valueType</a></td></tr>
+<tr class="memdesc:a0232afb5cb9aabded20da080b24ecc47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data type of CONSTANT or VARIABLE type.  <a href="#a0232afb5cb9aabded20da080b24ecc47">More...</a><br /></td></tr>
+<tr class="separator:a0232afb5cb9aabded20da080b24ecc47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302a6a7826cd92e8513ef69d4b763e12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_template_user_type_map.html">TemplateUserTypeMap</a>&lt; <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ac752b0b68770e1714aec770368490b5d">myVector</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a302a6a7826cd92e8513ef69d4b763e12">valueTable</a></td></tr>
+<tr class="separator:a302a6a7826cd92e8513ef69d4b763e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c445623ee9b3977e4e73c1965ab7cb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6c445623ee9b3977e4e73c1965ab7cb2">readable</a></td></tr>
 <tr class="memdesc:a6c445623ee9b3977e4e73c1965ab7cb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag if the register is readable.  <a href="#a6c445623ee9b3977e4e73c1965ab7cb2">More...</a><br /></td></tr>
 <tr class="separator:a6c445623ee9b3977e4e73c1965ab7cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,7 +233,29 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p><a class="el" href="class_chimera_t_k_1_1_register_info.html" title="DeviceBackend-independent register description. ">RegisterInfo</a> structure for the <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html" title="Backend to map logical register names onto real hardware registers. ">LogicalNameMappingBackend</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00023">23</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ac752b0b68770e1714aec770368490b5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac752b0b68770e1714aec770368490b5d">&#9670;&nbsp;</a></span>myVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ac752b0b68770e1714aec770368490b5d">ChimeraTK::LNMBackendRegisterInfo::myVector</a> =  std::vector&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Hold values of CONSTANT or VARIABLE types in a type-dependent table. </p>
+<p>Only the entry matching the valueType is actually valid. Note: We cannot directly put the std::vector in a <a class="el" href="class_chimera_t_k_1_1_template_user_type_map.html" title="Map of UserType to a class template with the UserType as template argument. ">TemplateUserTypeMap</a>, since it has more than one template arguments (with defaults). </p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00085">85</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ad28901d58a7faa46c9075a9f5f46787b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad28901d58a7faa46c9075a9f5f46787b">&#9670;&nbsp;</a></span>TargetType</h2>
 
@@ -246,8 +274,8 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="ad28901d58a7faa46c9075a9f5f46787bacd0adc96aa9e60939e2a010d91510f60"></a>REGISTER&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad28901d58a7faa46c9075a9f5f46787ba4fa75b6bb761d6e2f1e64b7eb1225cf8"></a>CHANNEL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad28901d58a7faa46c9075a9f5f46787ba31ddcac9356415b3567341d34a9adede"></a>BIT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad28901d58a7faa46c9075a9f5f46787ba51800eaf42f0c0711b9c978af844abfc"></a>INT_CONSTANT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad28901d58a7faa46c9075a9f5f46787badf067dca68fff8d83da88284613abc1d"></a>INT_VARIABLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad28901d58a7faa46c9075a9f5f46787ba8ce29512674d44455434a1034ea3de7d"></a>CONSTANT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad28901d58a7faa46c9075a9f5f46787ba4ec9fd489be4c3384dbafebd980148e7"></a>VARIABLE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00026">26</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
@@ -547,7 +575,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00094">94</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00102">102</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -710,7 +738,7 @@ Public Attributes</h2></td></tr>
 
 <p>List of accessor plugins enabled for this register. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00092">92</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00100">100</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -729,7 +757,7 @@ Public Attributes</h2></td></tr>
 <p>Flag if the register is readable. </p>
 <p>Might be derived from the target register </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00082">82</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00090">90</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -766,7 +794,7 @@ Public Attributes</h2></td></tr>
 <p>Supported AccessMode flags. </p>
 <p>Might be derived from the target register </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00089">89</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00097">97</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -788,19 +816,35 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a015d3d894f7e4463c04db69ccd3e0d9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a015d3d894f7e4463c04db69ccd3e0d9a">&#9670;&nbsp;</a></span>value_int</h2>
+<a id="a302a6a7826cd92e8513ef69d4b763e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a302a6a7826cd92e8513ef69d4b763e12">&#9670;&nbsp;</a></span>valueTable</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int&gt; ChimeraTK::LNMBackendRegisterInfo::value_int</td>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_template_user_type_map.html">TemplateUserTypeMap</a>&lt;<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ac752b0b68770e1714aec770368490b5d">myVector</a>&gt; ChimeraTK::LNMBackendRegisterInfo::valueTable</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The integer value of a INT_CONSTANT or INT_VARIABLE. </p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00086">86</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a0232afb5cb9aabded20da080b24ecc47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0232afb5cb9aabded20da080b24ecc47">&#9670;&nbsp;</a></span>valueType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_data_type.html">DataType</a> ChimeraTK::LNMBackendRegisterInfo::valueType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data type of CONSTANT or VARIABLE type. </p>
 
 <p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00078">78</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
@@ -821,7 +865,7 @@ Public Attributes</h2></td></tr>
 <p>Flag if the register is writeable. </p>
 <p>Might be derived from the target register </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00086">86</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html#l00094">94</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_register_info_8h_source.html">LNMBackendRegisterInfo.h</a>.</p>
 
 </div>
 </div>
@@ -834,7 +878,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a></li>
-    <li class="footer">Generated on Fri May 10 2019 03:53:07 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue May 14 2019 03:53:08 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
