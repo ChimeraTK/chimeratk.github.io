@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('class_catalogue_fetcher.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_catalogue_fetcher-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CatalogueFetcher Class Reference</div>  </div>
@@ -95,6 +96,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afb5786c28daa677ac1b96fad5cc070a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc80e464130c9459ab10356335733fcd"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; ctk::RegisterCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue_fetcher.html#adc80e464130c9459ab10356335733fcd">fetch</a> ()</td></tr>
 <tr class="separator:adc80e464130c9459ab10356335733fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8fe5f32713631b119f34d93c9c3e2d4a"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; boost::shared_ptr&lt; DoocsBackendRegisterInfo &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue_fetcher.html#a8fe5f32713631b119f34d93c9c3e2d4a">getRegInfo</a> (const std::string &amp;name, unsigned int length, int doocsType)</td></tr>
+<tr class="separator:a8fe5f32713631b119f34d93c9c3e2d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c688a97f8d9fd75edb2d703b14d7683"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_catalogue_fetcher.html#a2c688a97f8d9fd75edb2d703b14d7683">endsWith</a> (std::string const &amp;s, const std::vector&lt; std::string &gt; &amp;patterns)</td></tr>
+<tr class="separator:a2c688a97f8d9fd75edb2d703b14d7683"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -139,6 +147,52 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2c688a97f8d9fd75edb2d703b14d7683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c688a97f8d9fd75edb2d703b14d7683">&#9670;&nbsp;</a></span>endsWith()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CatalogueFetcher::endsWith </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>patterns</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00343">343</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_catalogue_fetcher_a2c688a97f8d9fd75edb2d703b14d7683_cgraph.svg" width="462" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="adc80e464130c9459ab10356335733fcd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc80e464130c9459ab10356335733fcd">&#9670;&nbsp;</a></span>fetch()</h2>
 
@@ -154,15 +208,51 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00318">318</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_catalogue_fetcher_adc80e464130c9459ab10356335733fcd_cgraph.svg" width="434" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00319">319</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+
 </div>
 </div>
+<a id="a8fe5f32713631b119f34d93c9c3e2d4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe5f32713631b119f34d93c9c3e2d4a">&#9670;&nbsp;</a></span>getRegInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; boost::shared_ptr&lt; DoocsBackendRegisterInfo &gt; &gt; CatalogueFetcher::getRegInfo </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>doocsType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00416">416</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -175,7 +265,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_catalogue_fetcher.html">CatalogueFetcher</a></li>
-    <li class="footer">Generated on Tue May 14 2019 03:53:44 for ChimeraTK-DeviceAccess-DoocsBackend by
+    <li class="footer">Generated on Thu May 16 2019 03:53:09 for ChimeraTK-DeviceAccess-DoocsBackend by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

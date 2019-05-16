@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fetch',['fetch',['../class_catalogue_fetcher.html#adc80e464130c9459ab10356335733fcd',1,'CatalogueFetcher']]]
+  ['endswith',['endsWith',['../class_catalogue_fetcher.html#a2c688a97f8d9fd75edb2d703b14d7683',1,'CatalogueFetcher']]]
 ];
