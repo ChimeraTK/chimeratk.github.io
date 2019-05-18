@@ -18,7 +18,7 @@ var searchData=
   ['ioctrl_5fall',['IOCTRL_ALL',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a1dc1215c881918ae78af0f20713b05a5',1,'pciedev_io.h']]],
   ['ioctrl_5fr',['IOCTRL_R',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a314ade3cefcb60fbf18f80c8eba4b54c',1,'pciedev_io.h']]],
   ['ioctrl_5fw',['IOCTRL_W',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a35ef23c334a9de2bfddddf640577d972',1,'pciedev_io.h']]],
-  ['is2dmultiplexed',['is2DMultiplexed',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ada887b5485053831af77642c2015e719',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
+  ['is2dmultiplexed',['is2DMultiplexed',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a863192de94bed8ca4b09a3e70fa58820',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
   ['isaddressinrange',['isAddressInRange',['../class_chimera_t_k_1_1_dummy_register_address_checker.html#ae90f766b6ddbcce41a1da702a068218b',1,'ChimeraTK::DummyRegisterAddressChecker']]],
   ['isconnected',['isConnected',['../class_chimera_t_k_1_1_device_backend.html#a055b0e25c6a296fa9f60db4cf7880e83',1,'ChimeraTK::DeviceBackend::isConnected()'],['../class_chimera_t_k_1_1_device_backend_impl.html#adda9402b29b72150ce6d7682e93797d2',1,'ChimeraTK::DeviceBackendImpl::isConnected()']]],
   ['isdevicedescriptor',['isDeviceDescriptor',['../class_chimera_t_k_1_1_utilities.html#ac9962632f9db42e2b2e7be4b3875a7bc',1,'ChimeraTK::Utilities']]],

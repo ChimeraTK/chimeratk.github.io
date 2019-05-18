@@ -2,7 +2,7 @@ var searchData=
 [
   ['separator',['separator',['../class_chimera_t_k_1_1_register_path.html#a81b8890283310318efc2250dc61f2bc2',1,'ChimeraTK::RegisterPath']]],
   ['separator_5falt',['separator_alt',['../class_chimera_t_k_1_1_register_path.html#af1888904376dc11f58b3881fadf5c9db',1,'ChimeraTK::RegisterPath']]],
-  ['signedflag',['signedFlag',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a4c7489209d151a5b3a66c78d82058db8',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
+  ['signedflag',['signedFlag',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#abfed0bd506a5c85c2776c27a2a305efb',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
   ['size_5frw',['size_rw',['../structdevice__rw.html#ad9348912dabb0b218d0c500c66dda20d',1,'device_rw']]],
   ['sizeinbytes',['sizeInBytes',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html#a1c631fad58cb1b7ac2bb0c0403fda029',1,'ChimeraTK::DummyBackend::AddressRange']]],
   ['sleeptime',['sleepTime',['../class_chimera_t_k_1_1_subdevice_backend.html#ab01bbfe4c4c1d1d9b8d18ee5e97e7586',1,'ChimeraTK::SubdeviceBackend']]],
