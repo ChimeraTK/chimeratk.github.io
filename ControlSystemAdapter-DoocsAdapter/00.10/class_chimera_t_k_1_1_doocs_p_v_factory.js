@@ -4,6 +4,7 @@ var class_chimera_t_k_1_1_doocs_p_v_factory =
     [ "autoCreate", "class_chimera_t_k_1_1_doocs_p_v_factory.html#a0a47ffb00021e2d6e6e2e3573caa73ec", null ],
     [ "create", "class_chimera_t_k_1_1_doocs_p_v_factory.html#aa39ca83409ab6a864386a0dbf504e7a8", null ],
     [ "createDoocsArray", "class_chimera_t_k_1_1_doocs_p_v_factory.html#a4410f04a76298cca7e9764d0a8f57de7", null ],
+    [ "createDoocsScalar", "class_chimera_t_k_1_1_doocs_p_v_factory.html#a72070e8f99890a6d7f81d74642a15ae1", null ],
     [ "createDoocsScalar", "class_chimera_t_k_1_1_doocs_p_v_factory.html#a4864aa67d8900988a961c03472945065", null ],
     [ "createDoocsSpectrum", "class_chimera_t_k_1_1_doocs_p_v_factory.html#a997e90ada658e3610569632c756ef818", null ],
     [ "createXy", "class_chimera_t_k_1_1_doocs_p_v_factory.html#a47bef0438429bcf9a8bb493506c9ddf4", null ],
