@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['nanosleep',['nanosleep',['../doocs_server_test_helper_8cc.html#af4a12c0f643353df9d8874294132e77f',1,'doocsServerTestHelper.cc']]]
+  ['nanosleep',['nanosleep',['../class_doocs_server_test_helper.html#a77883b7e4e4cb49564042fc0207afbd6',1,'DoocsServerTestHelper']]],
+  ['sigwait',['sigwait',['../class_doocs_server_test_helper.html#a86fbc6e282e4fc0e45156facfaf532ed',1,'DoocsServerTestHelper']]]
 ];
