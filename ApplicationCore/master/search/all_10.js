@@ -1,5 +1,12 @@
 var searchData=
 [
+  ['range_5fstatus',['range_status',['../struct_simulation.html#ae2f6d0fa7e66cd688c478692d7aaf8b9',1,'Simulation']]],
+  ['rangeerrorlowerlimit',['rangeErrorLowerLimit',['../struct_simulation.html#a4fb0baa14839e9169b64ad0a34bd5416',1,'Simulation']]],
+  ['rangeerrorupperlimit',['rangeErrorUpperLimit',['../struct_simulation.html#af5fc944fc35334464d76d0bb38bb6100',1,'Simulation']]],
+  ['rangemonitor',['RangeMonitor',['../struct_chimera_t_k_1_1_range_monitor.html',1,'ChimeraTK::RangeMonitor&lt; T &gt;'],['../struct_example_app.html#ad1fc5ebe93c3425e676ee9353c01fa84',1,'ExampleApp::rangeMonitor()']]],
+  ['rangemonitor_3c_20double_5ft_20_3e',['RangeMonitor&lt; double_t &gt;',['../struct_chimera_t_k_1_1_range_monitor.html',1,'ChimeraTK']]],
+  ['rangewarninglowerlimit',['rangeWarningLowerLimit',['../struct_simulation.html#ab3d719204df95599227fb2aed432f6dd',1,'Simulation']]],
+  ['rangewarningupperlimit',['rangeWarningUpperLimit',['../struct_simulation.html#a6ca6256295628a984d14f4f690ce788c',1,'Simulation']]],
   ['rb',['rb',['../struct_controller.html#a97ab7bd3852cc42fddd13b1bae1f4c7b',1,'Controller']]],
   ['read',['read',['../class_demo_dummy.html#a6b29e4b004b9379148fa723c7cf8f89d',1,'DemoDummy::read()'],['../struct_chimera_t_k_1_1_array_poll_input.html#a823dd8f8c343fb16abd91108f9402c40',1,'ChimeraTK::ArrayPollInput::read()'],['../struct_chimera_t_k_1_1_scalar_poll_input.html#a760a463494f5a8b7cf8f0e30a9702bda',1,'ChimeraTK::ScalarPollInput::read()']]],
   ['readall',['readAll',['../class_chimera_t_k_1_1_module.html#a9d689bf397cffb14a510fcc561f6c691',1,'ChimeraTK::Module']]],
@@ -24,6 +31,7 @@ var searchData=
   ['replace',['replace',['../class_chimera_t_k_1_1_array_accessor.html#a3d767ec5a09c05a6b23fcc7736d2493a',1,'ChimeraTK::ArrayAccessor::replace()'],['../class_chimera_t_k_1_1_inversion_of_control_accessor.html#a71f97419e6d9f15de998dd31ddf7bc9f',1,'ChimeraTK::InversionOfControlAccessor::replace()'],['../class_chimera_t_k_1_1_scalar_accessor.html#afd93f7499f2e63442b11acd51edff63b',1,'ChimeraTK::ScalarAccessor::replace()']]],
   ['replacetransferelement',['replaceTransferElement',['../class_timer_dummy_register_accessor.html#ae46d2b46e92def301f0d09e983012e75',1,'TimerDummyRegisterAccessor::replaceTransferElement()'],['../class_chimera_t_k_1_1_constant_accessor.html#aec9f095ca654cc21cbe3d18ffce6c5b5',1,'ChimeraTK::ConstantAccessor::replaceTransferElement()'],['../class_chimera_t_k_1_1_feeding_fan_out.html#a0eb92857a2f6b3d501abc8c441618896',1,'ChimeraTK::FeedingFanOut::replaceTransferElement()']]],
   ['reportexception',['reportException',['../class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db',1,'ChimeraTK::DeviceModule']]],
+  ['requiredvalue',['requiredValue',['../struct_chimera_t_k_1_1_exact_monitor.html#a0ab48c854753d50e927aa056698acb9a',1,'ChimeraTK::ExactMonitor']]],
   ['run',['run',['../class_chimera_t_k_1_1_application.html#a6815195c956c091a6558a316f8fd9976',1,'ChimeraTK::Application::run()'],['../class_chimera_t_k_1_1_application_module.html#a4657828fa7b0ad3a50e10a8745c063e1',1,'ChimeraTK::ApplicationModule::run()'],['../class_chimera_t_k_1_1_device_module.html#a71dea3b0240cf2eccbae77ab7f2c4a73',1,'ChimeraTK::DeviceModule::run()'],['../class_chimera_t_k_1_1_module.html#a998f98d99bde4ca7baebb4eaf595a983',1,'ChimeraTK::Module::run()'],['../class_chimera_t_k_1_1_threaded_fan_out.html#aec8d6bcf52e7887791968acf8ac2a3e1',1,'ChimeraTK::ThreadedFanOut::run()'],['../class_chimera_t_k_1_1_threaded_fan_out_with_return.html#ab52d9c326faab0071553435bc9ae3496',1,'ChimeraTK::ThreadedFanOutWithReturn::run()'],['../class_chimera_t_k_1_1_trigger_fan_out.html#ac46817d485e17425b7200cfe5c3c7bff',1,'ChimeraTK::TriggerFanOut::run()']]],
   ['runapplication',['runApplication',['../class_chimera_t_k_1_1_test_facility.html#aa89dcd98d96bef731b8dbd75964bb18c',1,'ChimeraTK::TestFacility']]]
 ];

@@ -7,6 +7,7 @@ var class_chimera_t_k_1_1_testable_mode_accessor_decorator =
     [ "doReadTransferLatest", "class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#ac2676ff72476e1673b3fbeb7fb26bd5d", null ],
     [ "doReadTransferNonBlocking", "class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#a596113bdf4eb7a57b5a11456213bd2bf", null ],
     [ "doWriteTransfer", "class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#a358fff2c7ae82359be2b84ba8a6e064f", null ],
+    [ "doWriteTransferDestructively", "class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#ac6f45f3b0ba8a1b951c7f97fb2fb4f5c", null ],
     [ "obtainLockAndDecrementCounter", "class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#aa14b3f18cce92194f860242d6b5e6d88", null ],
     [ "releaseLock", "class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#a61884bb031aa5f516aded1645c2355da", null ],
     [ "transferFutureWaitCallback", "class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#adbf22acfdff094a4dc193b2cc5ae897e", null ],

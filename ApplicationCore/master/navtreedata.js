@@ -14,6 +14,7 @@ var NAVTREE =
     [ "Exception Handling", "excpetiondoc.html", [
       [ "Introduction", "excpetiondoc.html#Introduction", null ]
     ] ],
+    [ "Status Monitor", "statusmonitordoc.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
@@ -53,11 +54,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_8cc.html",
-"class_chimera_t_k_1_1_application.html#af638d687f2d229ab733c48f62f1a8877",
-"class_chimera_t_k_1_1_micro_d_a_q.html#a0ec41483fa5cb8aeb62ad0b392d3d51a",
-"class_chimera_t_k_1_1_variable_network_node.html#aae3eef593d7a0c3131813a15c6e10ff8",
-"struct_chimera_t_k_1_1_array_output_r_b.html#a444a3b6bb8efa58f9d03b7f04d5358a9",
-"struct_example_app.html#a872f39c39ae79bb08c44b62766910874"
+"class_chimera_t_k_1_1_application.html#ad754fcb82f70921783070295991d73a1",
+"class_chimera_t_k_1_1_inversion_of_control_accessor.html#ac964c23d7543e1b60cc43a7fb8152c2e",
+"class_chimera_t_k_1_1_variable_network_node.html#a7b33d42170f8a56b2c534844bede1100",
+"struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html#afaceca3f5fa2e39b8ccc3fe43a87d4e9",
+"struct_chimera_t_k_1_1_write_split_array_module.html#a3266bfd01e7d286958de592dfae803f0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

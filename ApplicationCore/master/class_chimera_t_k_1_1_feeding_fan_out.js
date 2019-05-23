@@ -11,6 +11,7 @@ var class_chimera_t_k_1_1_feeding_fan_out =
     [ "doReadTransferLatest", "class_chimera_t_k_1_1_feeding_fan_out.html#ae5ca9a1e8641dbacd884531d5c87e66b", null ],
     [ "doReadTransferNonBlocking", "class_chimera_t_k_1_1_feeding_fan_out.html#a24cf15348de0aaa5f2cccdb196866f82", null ],
     [ "doWriteTransfer", "class_chimera_t_k_1_1_feeding_fan_out.html#ac2feec70ec6b64ce2df4c82dbb544ee0", null ],
+    [ "doWriteTransferDestructively", "class_chimera_t_k_1_1_feeding_fan_out.html#a74929741ef1dce5f736e238eab2623c3", null ],
     [ "getAccessModeFlags", "class_chimera_t_k_1_1_feeding_fan_out.html#ae0ee2498b762dd4e27aaea970c9d7414", null ],
     [ "getHardwareAccessingElements", "class_chimera_t_k_1_1_feeding_fan_out.html#a76e0e18a12836701efff7b91c6fda640", null ],
     [ "getInternalElements", "class_chimera_t_k_1_1_feeding_fan_out.html#a8091060981212781e3a7fab5e350ac69", null ],

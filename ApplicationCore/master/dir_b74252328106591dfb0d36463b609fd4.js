@@ -39,5 +39,6 @@ var dir_b74252328106591dfb0d36463b609fd4 =
     [ "SplitArray.h", "_split_array_8h.html", [
       [ "WriteSplitArrayModule", "struct_chimera_t_k_1_1_write_split_array_module.html", "struct_chimera_t_k_1_1_write_split_array_module" ],
       [ "ReadSplitArrayModule", "struct_chimera_t_k_1_1_read_split_array_module.html", "struct_chimera_t_k_1_1_read_split_array_module" ]
-    ] ]
+    ] ],
+    [ "StatusMonitor.h", "_status_monitor_8h.html", "_status_monitor_8h" ]
 ];

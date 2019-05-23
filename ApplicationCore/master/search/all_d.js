@@ -1,6 +1,8 @@
 var searchData=
 [
   ['obtainlockanddecrementcounter',['obtainLockAndDecrementCounter',['../class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#aa14b3f18cce92194f860242d6b5e6d88',1,'ChimeraTK::TestableModeAccessorDecorator']]],
+  ['off',['OFF',['../namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781a010c61379bf7863db40cee3b9836248b',1,'ChimeraTK']]],
+  ['ok',['OK',['../namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781a1ff4d91265345b7ab22a94125ccf11db',1,'ChimeraTK']]],
   ['open',['open',['../class_timer_dummy.html#a37f733778e2db53b3c9d2570934c223b',1,'TimerDummy']]],
   ['operator_20const_20variablenetworknode',['operator const VariableNetworkNode',['../class_chimera_t_k_1_1_inversion_of_control_accessor.html#ae979605eab3ba61464e4e97ad217f779',1,'ChimeraTK::InversionOfControlAccessor']]],
   ['operator_20variablenetworknode',['operator VariableNetworkNode',['../class_chimera_t_k_1_1_inversion_of_control_accessor.html#aa48152bbbc8b5b533df63556d3e62304',1,'ChimeraTK::InversionOfControlAccessor']]],
