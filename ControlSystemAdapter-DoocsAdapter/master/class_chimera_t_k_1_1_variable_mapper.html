@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_variable_mapper.
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper__coll__graph.svg" width="100%" height="556"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper__coll__graph.svg" width="100%" height="568"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -112,6 +112,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acb69f1b86e2b4ecd28427267ae682aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c085942b9e550dc5ed7cfd438ed5a60"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#a3c085942b9e550dc5ed7cfd438ed5a60">getAllLocations</a> () const</td></tr>
 <tr class="separator:a3c085942b9e550dc5ed7cfd438ed5a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd94469f3c6eab5f750539d31300ea9f"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#abd94469f3c6eab5f750539d31300ea9f">getLocationAndCode</a> () const</td></tr>
+<tr class="separator:abd94469f3c6eab5f750539d31300ea9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad042399bc493b6ce1631bbd95fbd381b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#ad042399bc493b6ce1631bbd95fbd381b">VariableMapper</a> (<a class="el" href="class_chimera_t_k_1_1_variable_mapper.html">VariableMapper</a> &amp;)=delete</td></tr>
 <tr class="separator:ad042399bc493b6ce1631bbd95fbd381b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addb8b19f9c9e8515a53d7486f4f25b7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#addb8b19f9c9e8515a53d7486f4f25b7c">operator=</a> (<a class="el" href="class_chimera_t_k_1_1_variable_mapper.html">VariableMapper</a> const &amp;)=delete</td></tr>
@@ -149,6 +151,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a0ae04625dba7e9b611a0368b55ec7b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8251f48b9f4a3bddf535ff40bb60eb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#ac8251f48b9f4a3bddf535ff40bb60eb1">processImportNode</a> (xmlpp::Node const *importNode, std::string importLocationName=std::string())</td></tr>
 <tr class="separator:ac8251f48b9f4a3bddf535ff40bb60eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b09024be81e0bc17cb95f3df3ac9c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#af8b09024be81e0bc17cb95f3df3ac9c8">processCode</a> (xmlpp::Element const *location, std::string locationName)</td></tr>
+<tr class="separator:af8b09024be81e0bc17cb95f3df3ac9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9f8eeb70a5daf40e5f5621895165044"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#ab9f8eeb70a5daf40e5f5621895165044">import</a> (std::string importSource, std::string importLocationName, std::string directory=&quot;&quot;)</td></tr>
 <tr class="separator:ab9f8eeb70a5daf40e5f5621895165044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf790079aada402c1db0ad4e42c16752"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#adf790079aada402c1db0ad4e42c16752">getHasHistoryDefault</a> (std::string const &amp;locationName)</td></tr>
@@ -170,6 +174,8 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:aa8491093ba2856d4e321d39b08dc0c00"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#aa8491093ba2856d4e321d39b08dc0c00">_inputLocationAndCode</a></td></tr>
+<tr class="separator:aa8491093ba2856d4e321d39b08dc0c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a275442e601dc3702ef306841c92c48"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#a2a275442e601dc3702ef306841c92c48">_inputVariables</a></td></tr>
 <tr class="separator:a2a275442e601dc3702ef306841c92c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a398d4909b87ea3819103d582741e91e0"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#a398d4909b87ea3819103d582741e91e0">_usedInputVariables</a></td></tr>
@@ -183,7 +189,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00023">23</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00024">24</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad042399bc493b6ce1631bbd95fbd381b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad042399bc493b6ce1631bbd95fbd381b">&#9670;&nbsp;</a></span>VariableMapper() <span class="overload">[1/2]</span></h2>
@@ -271,7 +277,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00153">153</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00155">155</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -298,7 +304,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00474">474</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00510">510</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -326,7 +332,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00465">465</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00501">501</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -365,7 +371,7 @@ Protected Attributes</h2></td></tr>
 <p>Function to get a bool out of the texts true/True/TRUE/false/False/FALSE/1/0. </p>
 <p>Note on the input: we intentionally make a copy because we modify it inside. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00495">495</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00531">531</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -392,7 +398,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00455">455</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00491">491</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -411,7 +417,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00436">436</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00472">472</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 
 </div>
 </div>
@@ -449,7 +455,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00571">571</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00607">607</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -487,7 +493,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Loop through the sub nodes and take the string from the first non-empty which can be casted to a string-node. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00510">510</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00546">546</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -523,7 +529,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00526">526</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00562">562</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -594,13 +600,48 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00541">541</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00577">577</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_aed5f14a453c9d868c26dcedd490b84cf_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="abd94469f3c6eab5f750539d31300ea9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd94469f3c6eab5f750539d31300ea9f">&#9670;&nbsp;</a></span>getLocationAndCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, int&gt; ChimeraTK::VariableMapper::getLocationAndCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00032">32</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_abd94469f3c6eab5f750539d31300ea9f_icgraph.svg" width="387" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -630,12 +671,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00556">556</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00592">592</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_a28bf057320a328a6fdfdf0524b9e81fb_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -658,12 +699,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00442">442</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00478">478</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_aafbeae678eaa4d6c47fb57444337f47e_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -710,12 +751,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00326">326</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00328">328</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_ab9f8eeb70a5daf40e5f5621895165044_cgraph.svg" width="531" height="314"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -749,11 +790,11 @@ Protected Attributes</h2></td></tr>
 <p>An internal helper function to abbreviate the syntax. </p>
 
 <p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00022">22</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_a63889dd4e7107d5e43b9a417f8b2b4a7_icgraph.svg" width="100%" height="361"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -812,12 +853,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00390">390</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00426">426</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_a93880cfd989d343216b5869bb59f5450_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -842,7 +883,53 @@ Protected Attributes</h2></td></tr>
 
 <p>printing the map is useful for debugging </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00485">485</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00521">521</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+
+</div>
+</div>
+<a id="af8b09024be81e0bc17cb95f3df3ac9c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8b09024be81e0bc17cb95f3df3ac9c8">&#9670;&nbsp;</a></span>processCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::VariableMapper::processCode </td>
+          <td>(</td>
+          <td class="paramtype">xmlpp::Element const *&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>locationName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00392">392</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_af8b09024be81e0bc17cb95f3df3ac9c8_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -888,20 +975,20 @@ template&lt;class PROPERTY_DESCRIPTION_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00116">116</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00118">118</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_ab77974d5f702f8a1cbd99bc801cc3c02_cgraph.svg" width="599" height="314"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_ab77974d5f702f8a1cbd99bc801cc3c02_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -942,12 +1029,12 @@ template&lt;class PROPERTY_DESCRIPTION_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00306">306</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00308">308</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_ac8251f48b9f4a3bddf535ff40bb60eb1_icgraph.svg" width="100%" height="361"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -979,19 +1066,19 @@ template&lt;class PROPERTY_DESCRIPTION_TYPE &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00032">32</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_a6938122cddbec29e7714a2fc72ac50df_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_a6938122cddbec29e7714a2fc72ac50df_icgraph.svg" width="464" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1032,20 +1119,20 @@ template&lt;class PROPERTY_DESCRIPTION_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00173">173</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00175">175</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_a9bab31d01cd9a9af0a685ed45f19c6a5_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_a9bab31d01cd9a9af0a685ed45f19c6a5_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1086,20 +1173,20 @@ template&lt;class PROPERTY_DESCRIPTION_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00210">210</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
-<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00212">212</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_a2c592a3540b9326d1c46131a686d768a_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_a2c592a3540b9326d1c46131a686d768a_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1140,20 +1227,20 @@ template&lt;class PROPERTY_DESCRIPTION_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00256">256</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
-<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8cc_source.html#l00258">258</a> of file <a class="el" href="_variable_mapper_8cc_source.html">VariableMapper.cc</a>.</p>
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_a0ae04625dba7e9b611a0368b55ec7b28_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_variable_mapper_a0ae04625dba7e9b611a0368b55ec7b28_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1181,7 +1268,7 @@ template&lt;class PROPERTY_DESCRIPTION_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00074">74</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00079">79</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
 
 </div>
 </div>
@@ -1205,7 +1292,31 @@ template&lt;class PROPERTY_DESCRIPTION_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00071">71</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00076">76</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+
+</div>
+</div>
+<a id="aa8491093ba2856d4e321d39b08dc0c00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8491093ba2856d4e321d39b08dc0c00">&#9670;&nbsp;</a></span>_inputLocationAndCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, int&gt; ChimeraTK::VariableMapper::_inputLocationAndCode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00057">57</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
 
 </div>
 </div>
@@ -1229,7 +1340,7 @@ template&lt;class PROPERTY_DESCRIPTION_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00055">55</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00059">59</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
 
 </div>
 </div>
@@ -1253,7 +1364,7 @@ template&lt;class PROPERTY_DESCRIPTION_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00070">70</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00075">75</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
 
 </div>
 </div>
@@ -1277,7 +1388,7 @@ template&lt;class PROPERTY_DESCRIPTION_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00056">56</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_mapper_8h_source.html#l00060">60</a> of file <a class="el" href="_variable_mapper_8h_source.html">VariableMapper.h</a>.</p>
 
 </div>
 </div>
@@ -1291,7 +1402,7 @@ template&lt;class PROPERTY_DESCRIPTION_TYPE &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_variable_mapper.html">VariableMapper</a></li>
-    <li class="footer">Generated on Tue May 21 2019 03:53:58 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Thu May 23 2019 03:54:27 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

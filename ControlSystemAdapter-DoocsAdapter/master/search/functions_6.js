@@ -13,6 +13,7 @@ var searchData=
   ['gethashistorydefault',['getHasHistoryDefault',['../class_chimera_t_k_1_1_variable_mapper.html#adf790079aada402c1db0ad4e42c16752',1,'ChimeraTK::VariableMapper']]],
   ['getinstance',['getInstance',['../class_chimera_t_k_1_1_variable_mapper.html#ab7359ad69bc42594947748c51ceb8e73',1,'ChimeraTK::VariableMapper']]],
   ['getiswriteabledefault',['getIsWriteableDefault',['../class_chimera_t_k_1_1_variable_mapper.html#aed5f14a453c9d868c26dcedd490b84cf',1,'ChimeraTK::VariableMapper']]],
+  ['getlocationandcode',['getLocationAndCode',['../class_chimera_t_k_1_1_variable_mapper.html#abd94469f3c6eab5f750539d31300ea9f',1,'ChimeraTK::VariableMapper']]],
   ['getmacropuslenumbersourcedefault',['getMacroPusleNumberSourceDefault',['../class_chimera_t_k_1_1_variable_mapper.html#a28bf057320a328a6fdfdf0524b9e81fb',1,'ChimeraTK::VariableMapper']]],
   ['getprocessvariablesinthislocation',['getProcessVariablesInThisLocation',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#aa9b14a8983622d4d7757709d8d91e1d3',1,'ChimeraTK::CSAdapterEqFct']]],
   ['getpropertiesinlocation',['getPropertiesInLocation',['../class_chimera_t_k_1_1_variable_mapper.html#aafbeae678eaa4d6c47fb57444337f47e',1,'ChimeraTK::VariableMapper']]],

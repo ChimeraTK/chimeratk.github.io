@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"struct_chimera_t_k_1_1_auto_property_description.html#a3cfc7fc63c81386a2eb16f652b1e7c63":[3,0,0,0,2],
+"struct_chimera_t_k_1_1_auto_property_description.html#a4f026c74151bae8a88936e7f56b5ec32":[3,0,0,0,1],
+"struct_chimera_t_k_1_1_auto_property_description.html#a6441aea765210b8c43a8fe2a35ed169d":[3,0,0,0,3],
+"struct_chimera_t_k_1_1_auto_property_description.html#ab5146c69e798b20a26bf8a05ee9c539d":[3,0,0,0,7],
 "struct_chimera_t_k_1_1_auto_property_description.html#ac137241890437840be9f80a0502fe246":[3,0,0,0,6],
 "struct_chimera_t_k_1_1_auto_property_description.html#ae47b83262db33cd0267c9470e1d78661":[3,0,0,0,0],
 "struct_chimera_t_k_1_1_auto_property_description.html#ae47b83262db33cd0267c9470e1d78661a06b9281e396db002010bde1de57262eb":[3,0,0,0,0,6],

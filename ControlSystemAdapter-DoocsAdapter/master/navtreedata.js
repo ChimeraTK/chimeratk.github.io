@@ -12,7 +12,8 @@ var NAVTREE =
         [ "D_spectrum", "index.html#D_spectrum", null ],
         [ "D_array", "index.html#D_array", null ]
       ] ],
-      [ "D_xy", "index.html#D_xy", null ]
+      [ "D_xy", "index.html#D_xy", null ],
+      [ "Specifie `eq_fct_code` in the mapping file", "index.html#specifie_code", null ]
     ] ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
@@ -47,7 +48,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_c_s_adapter_eq_fct_8cc.html",
-"struct_chimera_t_k_1_1_auto_property_description.html#ac137241890437840be9f80a0502fe246"
+"struct_chimera_t_k_1_1_auto_property_description.html#a3cfc7fc63c81386a2eb16f652b1e7c63"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
