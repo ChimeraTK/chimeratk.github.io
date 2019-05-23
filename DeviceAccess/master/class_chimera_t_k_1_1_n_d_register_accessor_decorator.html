@@ -117,6 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3cd3bbd513f091f02f5ea4523dc93171"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">doWriteTransfer</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber={}) override</td></tr>
 <tr class="memdesc:a3cd3bbd513f091f02f5ea4523dc93171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data to device.  <a href="#a3cd3bbd513f091f02f5ea4523dc93171">More...</a><br /></td></tr>
 <tr class="separator:a3cd3bbd513f091f02f5ea4523dc93171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a7164cd15a1756e37bcde0601228a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a10a7164cd15a1756e37bcde0601228a2">doWriteTransferDestructively</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber={}) override</td></tr>
+<tr class="memdesc:a10a7164cd15a1756e37bcde0601228a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Just like <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171" title="Write the data to device. ">doWriteTransfer()</a>, but allows the implementation to destroy the content of the user buffer in the process.  <a href="#a10a7164cd15a1756e37bcde0601228a2">More...</a><br /></td></tr>
+<tr class="separator:a10a7164cd15a1756e37bcde0601228a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee64822ef89030905473c3877bdf1cff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aee64822ef89030905473c3877bdf1cff">doReadTransfer</a> () override</td></tr>
 <tr class="memdesc:aee64822ef89030905473c3877bdf1cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data from the device but do not fill it into the user buffer of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#aee64822ef89030905473c3877bdf1cff">More...</a><br /></td></tr>
 <tr class="separator:aee64822ef89030905473c3877bdf1cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,7 +234,7 @@ template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_decorator.html#ada633abd1697fa1bcbf42d7d8d4e59ba">ChimeraTK::FixedPointConvertingDecorator&lt; UserType, TargetUserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00118">118</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00121">121</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -266,7 +269,7 @@ template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0ab70efc5651769deb2bb6c5d4cb5453">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00110">110</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00113">113</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -302,7 +305,7 @@ template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afe0ba112ccb6eb9e556710d1151c1602">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00116">116</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00119">119</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -336,7 +339,7 @@ template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a630bcd4b15d5579c0a97f9beb9b63a22">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00114">114</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00117">117</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +373,7 @@ template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae1dcdfeb3d4d849cb9d6232727031e51">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00112">112</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00115">115</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -406,7 +409,42 @@ template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4370c5db79886ac21390f2fa781f2f9c">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00106">106</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00105">105</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+
+</div>
+</div>
+<a id="a10a7164cd15a1756e37bcde0601228a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a7164cd15a1756e37bcde0601228a2">&#9670;&nbsp;</a></span>doWriteTransferDestructively()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html">ChimeraTK::NDRegisterAccessorDecorator</a>&lt; UserType, TargetUserType &gt;::doWriteTransferDestructively </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a>&#160;</td>
+          <td class="paramname"><em>versionNumber</em> = <code>{}</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Just like <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171" title="Write the data to device. ">doWriteTransfer()</a>, but allows the implementation to destroy the content of the user buffer in the process. </p>
+<p>This is an optional optimisation, hence there is a default implementation which just calls the normal <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171" title="Write the data to device. ">doWriteTransfer()</a>. </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a147daf52a3fa87de1debbb9826b786d0">ChimeraTK::TransferElement</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00109">109</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -439,7 +477,7 @@ template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a93d2e84da7325bb205fb4bc51e660aa4">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00144">144</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00147">147</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -474,7 +512,7 @@ template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a36b8f2cad449056d909560e371c78229">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00128">128</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00131">131</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -511,7 +549,7 @@ template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a561932e1a87dcc57cb3525a9980bdf49">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00132">132</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00135">135</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -545,7 +583,7 @@ template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00124">124</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00127">127</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -579,7 +617,7 @@ template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00122">122</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00125">125</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -613,7 +651,7 @@ template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00126">126</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00129">129</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -643,7 +681,7 @@ template&lt;typename UserType , typename TargetUserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00169">169</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00170">170</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -679,7 +717,7 @@ template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a70d4c154c564848bfb6b08992cdf7059">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00138">138</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00141">141</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -713,7 +751,7 @@ template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa51a59d6d5eee3de298f1b3449bb29e5">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00120">120</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html#l00123">123</a> of file <a class="el" href="device__backends_2include_2_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -726,7 +764,7 @@ template&lt;typename UserType, typename TargetUserType = UserType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html">NDRegisterAccessorDecorator</a></li>
-    <li class="footer">Generated on Wed May 22 2019 03:53:10 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu May 23 2019 03:53:09 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -124,6 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3cd3bbd513f091f02f5ea4523dc93171 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">doWriteTransfer</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber={}) override</td></tr>
 <tr class="memdesc:a3cd3bbd513f091f02f5ea4523dc93171 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data to device.  <a href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">More...</a><br /></td></tr>
 <tr class="separator:a3cd3bbd513f091f02f5ea4523dc93171 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a7164cd15a1756e37bcde0601228a2 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a10a7164cd15a1756e37bcde0601228a2">doWriteTransferDestructively</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber={}) override</td></tr>
+<tr class="memdesc:a10a7164cd15a1756e37bcde0601228a2 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Just like <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">doWriteTransfer()</a>, but allows the implementation to destroy the content of the user buffer in the process.  <a href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a10a7164cd15a1756e37bcde0601228a2">More...</a><br /></td></tr>
+<tr class="separator:a10a7164cd15a1756e37bcde0601228a2 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee64822ef89030905473c3877bdf1cff inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aee64822ef89030905473c3877bdf1cff">doReadTransfer</a> () override</td></tr>
 <tr class="memdesc:aee64822ef89030905473c3877bdf1cff inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data from the device but do not fill it into the user buffer of this TransferElement.  <a href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aee64822ef89030905473c3877bdf1cff">More...</a><br /></td></tr>
 <tr class="separator:aee64822ef89030905473c3877bdf1cff inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,7 +174,7 @@ Public Member Functions</h2></td></tr>
 struct ChimeraTK::LNMBackend::ForceReadOnlyPluginDecorator&lt; UserType &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html#l00027">27</a> of file <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html">LNMForceReadOnlyPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html#l00025">25</a> of file <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html">LNMForceReadOnlyPlugin.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af6a0d17a679da14f6350ae0c38929edd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6a0d17a679da14f6350ae0c38929edd">&#9670;&nbsp;</a></span>ForceReadOnlyPluginDecorator()</h2>
@@ -199,7 +202,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html#l00030">30</a> of file <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html">LNMForceReadOnlyPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html#l00028">28</a> of file <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html">LNMForceReadOnlyPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -234,7 +237,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a6b8c0cb33f798ad604ce6f2cdf6f7ff9">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html#l00045">45</a> of file <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html">LNMForceReadOnlyPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html#l00043">43</a> of file <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html">LNMForceReadOnlyPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -268,7 +271,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7c69edaa7d618bab49ebf38b7a87b348">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html#l00041">41</a> of file <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html">LNMForceReadOnlyPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html#l00039">39</a> of file <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html">LNMForceReadOnlyPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -302,7 +305,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html#l00039">39</a> of file <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html">LNMForceReadOnlyPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html#l00037">37</a> of file <a class="el" href="_l_n_m_force_read_only_plugin_8cc_source.html">LNMForceReadOnlyPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -315,7 +318,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html">LNMBackend</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html">ForceReadOnlyPluginDecorator</a></li>
-    <li class="footer">Generated on Wed May 22 2019 03:53:11 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu May 23 2019 03:53:09 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

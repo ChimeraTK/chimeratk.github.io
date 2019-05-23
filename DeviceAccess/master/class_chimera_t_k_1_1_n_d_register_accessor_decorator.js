@@ -7,6 +7,7 @@ var class_chimera_t_k_1_1_n_d_register_accessor_decorator =
     [ "doReadTransferLatest", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ad7cdf782dd954f673b9099cbd288deec", null ],
     [ "doReadTransferNonBlocking", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a520f730055973aed089f1934e21b6a74", null ],
     [ "doWriteTransfer", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171", null ],
+    [ "doWriteTransferDestructively", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a10a7164cd15a1756e37bcde0601228a2", null ],
     [ "getAccessModeFlags", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a96b365f767af7bd6bb3199fc5e1d7902", null ],
     [ "getHardwareAccessingElements", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a22f66016cf08d8c47e3f98e7d4b52566", null ],
     [ "getInternalElements", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aafceeb01919b01dfc3ae1f643f9af0af", null ],

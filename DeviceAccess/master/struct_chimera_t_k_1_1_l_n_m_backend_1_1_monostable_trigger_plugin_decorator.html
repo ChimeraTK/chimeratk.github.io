@@ -140,6 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3cd3bbd513f091f02f5ea4523dc93171 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">doWriteTransfer</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber={}) override</td></tr>
 <tr class="memdesc:a3cd3bbd513f091f02f5ea4523dc93171 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data to device.  <a href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">More...</a><br /></td></tr>
 <tr class="separator:a3cd3bbd513f091f02f5ea4523dc93171 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a7164cd15a1756e37bcde0601228a2 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a10a7164cd15a1756e37bcde0601228a2">doWriteTransferDestructively</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber={}) override</td></tr>
+<tr class="memdesc:a10a7164cd15a1756e37bcde0601228a2 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Just like <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">doWriteTransfer()</a>, but allows the implementation to destroy the content of the user buffer in the process.  <a href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a10a7164cd15a1756e37bcde0601228a2">More...</a><br /></td></tr>
+<tr class="separator:a10a7164cd15a1756e37bcde0601228a2 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee64822ef89030905473c3877bdf1cff inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aee64822ef89030905473c3877bdf1cff">doReadTransfer</a> () override</td></tr>
 <tr class="memdesc:aee64822ef89030905473c3877bdf1cff inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data from the device but do not fill it into the user buffer of this TransferElement.  <a href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aee64822ef89030905473c3877bdf1cff">More...</a><br /></td></tr>
 <tr class="separator:aee64822ef89030905473c3877bdf1cff inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,7 +199,7 @@ Public Attributes</h2></td></tr>
 struct ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00045">45</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00043">43</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aad3b5c8cacb63c28f73ee5744669b3cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad3b5c8cacb63c28f73ee5744669b3cc">&#9670;&nbsp;</a></span>MonostableTriggerPluginDecorator()</h2>
@@ -246,7 +249,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00048">48</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00046">46</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -281,7 +284,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7e8c2303d9bb75b9a13a776f730c3dd6">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00069">69</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00067">67</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -315,7 +318,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a6b8c0cb33f798ad604ce6f2cdf6f7ff9">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00077">77</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00075">75</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -349,7 +352,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa20629db6a741e29320765b5da3220ba">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00065">65</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00063">63</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -383,7 +386,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7c69edaa7d618bab49ebf38b7a87b348">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00073">73</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00071">71</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -419,7 +422,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4370c5db79886ac21390f2fa781f2f9c">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00090">90</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00088">88</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -456,7 +459,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a97ff27579d6a52ef1c5c629c316bf53e">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00081">81</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00079">79</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -491,7 +494,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00079">79</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00077">77</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -525,7 +528,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00063">63</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00061">61</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -544,7 +547,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00084">84</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00082">82</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -562,7 +565,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00083">83</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00081">81</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -580,7 +583,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00084">84</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00082">82</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -593,7 +596,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html">LNMBackend</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html">MonostableTriggerPluginDecorator</a></li>
-    <li class="footer">Generated on Wed May 22 2019 03:53:11 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu May 23 2019 03:53:09 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

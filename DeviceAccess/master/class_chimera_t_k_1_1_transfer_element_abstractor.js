@@ -26,5 +26,6 @@ var class_chimera_t_k_1_1_transfer_element_abstractor =
     [ "setPersistentDataStorage", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a781f771e098890bc458ea65e24cea376", null ],
     [ "transferFutureWaitCallback", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a90726f6d4ebc3d3d0145f43098bff8bc", null ],
     [ "write", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a281b905219e719a1a0cdbd9d8d42d1dd", null ],
+    [ "writeDestructively", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a53668fb61c4310fa8f1a11d8e414cbc8", null ],
     [ "_impl", "class_chimera_t_k_1_1_transfer_element_abstractor.html#aea884943cf09b1544983a16d9438ae18", null ]
 ];

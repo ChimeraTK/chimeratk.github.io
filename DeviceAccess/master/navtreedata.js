@@ -81,11 +81,12 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_buffering_register_accessor.html#a360e9976d8579dbf1f9ad23727a31e1c",
 "class_chimera_t_k_1_1_dummy_register_accessor.html#a118cb1d0db038c732ba6c763d2e50663",
 "class_chimera_t_k_1_1_n_d_register_accessor.html#ab3e9f790076370e901fd8c6079ed6770",
-"class_chimera_t_k_1_1_register_accessor.html#aef4d5c2cf096504c2088bf4ddb56a1b0",
-"class_chimera_t_k_1_1_subdevice_backend.html#a4cb9be498366d571fd497aa3b50f8f04",
-"class_chimera_t_k_1_1logic__error.html#a6877982911ce13563bf6ff47a3851400",
-"dir_f6c06f7a01da37196a5f6fe3a6212106.html",
-"mtca4u__compatibility__headers_2_virtual_function_template_8h_source.html"
+"class_chimera_t_k_1_1_register_accessor.html#aee45b12542a086c11ecfbba78148cfde",
+"class_chimera_t_k_1_1_subdevice_backend.html#a3aa244b79dfa6ddd8357b5854aa112d7",
+"class_chimera_t_k_1_1find_register_by_name__pred.html",
+"dir_e6193fc7d1798dfe665ede4b215edd00.html",
+"mtca4u__compatibility__headers_2_utilities_8h_source.html",
+"util_2include_2_virtual_function_template_8h.html#ad55f079dbae8d46794e4a68782511746"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
