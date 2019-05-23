@@ -185,7 +185,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Persistent data storage for process variables. </p>
 <p>The <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html" title="Persistent data storage for process variables. ">PersistentDataStorage</a> will create a file in the current working directory based on the provided application name ("&lt;applicationName&gt;.persist"). This file will be an XML file containing all values of the registered variables. The file is written when the <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html" title="Persistent data storage for process variables. ">PersistentDataStorage</a> is destroyed and read when it is constructed. After reading the file, all variables will be updated with the current values taken from the file. This will be seen as a value received by the application just like any other update.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>TODO list:<ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>TODO list:<ul>
 <li>thread safety (only an issue when having multiple ControlSystemPVManagers)</li>
 <li>automatic periodic commits</li>
 <li>manual commits triggered by the application (with support for other implementations, e.g. if the persistency is already provided by the control system middleware) </li>
@@ -349,7 +349,7 @@ template&lt;typename DataType &gt; </div>
 </div><div class="memdoc">
 
 <p>Read the file containing the persistent data. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>TODO check if the application name is correct? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>TODO check if the application name is correct? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00133">133</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -526,7 +526,7 @@ template&lt;typename DataType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>FIXME make the variable access proper for a multi-threaded environment!!! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>FIXME make the variable access proper for a multi-threaded environment!!! </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00037">37</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -572,7 +572,7 @@ template&lt;typename DataType &gt; </div>
 </div><div class="memdoc">
 
 <p>Write out the file containing the persistent data. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>TODO what todo here? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>TODO what todo here? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00051">51</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -780,7 +780,7 @@ template&lt;typename DataType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html">PersistentDataStorage</a></li>
-    <li class="footer">Generated on Sat May 18 2019 03:53:41 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Thu May 23 2019 03:53:38 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
