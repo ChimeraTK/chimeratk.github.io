@@ -1,6 +1,7 @@
 var searchData=
 [
   ['failedregistrationthrowerfunction',['failedRegistrationThrowerFunction',['../class_chimera_t_k_1_1_backend_factory.html#ae1b2a669337e5120c05973d79f783482',1,'ChimeraTK::BackendFactory']]],
+  ['faulty',['faulty',['../namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfac4ef1e7ec5c765839c8acdd9968542b2',1,'ChimeraTK']]],
   ['fetchfromrebotserver',['fetchFromRebotServer',['../struct_chimera_t_k_1_1_rebot_protocol0.html#a215298fa419ff648eb21597ea55c133e',1,'ChimeraTK::RebotProtocol0']]],
   ['fill_5fvirtual_5ffunction_5ftemplate_5fvtable',['FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE',['../util_2include_2_virtual_function_template_8h.html#ab5e6eeda5f812bf87b6da853d103ee37',1,'VirtualFunctionTemplate.h']]],
   ['fill_5fvirtual_5ffunction_5ftemplate_5fvtable_5fstandalone',['FILL_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_STANDALONE',['../util_2include_2_virtual_function_template_8h.html#a9cfaa4375c315e463c69a4f05bb90d94',1,'VirtualFunctionTemplate.h']]],
@@ -35,6 +36,6 @@ var searchData=
   ['fpc',['fpc',['../class_chimera_t_k_1_1_dummy_register_accessor.html#a49d25bd0076f9f8adec9456fe0656ac5',1,'ChimeraTK::DummyRegisterAccessor::fpc()'],['../class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html#a365c5bda021a4822b8019ec828e7fba2',1,'ChimeraTK::DummyMultiplexedRegisterAccessor::fpc()']]],
   ['fpcptr',['fpcptr',['../class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html#af046e72ae62006636555f454a489bbd1',1,'ChimeraTK::proxies::DummyRegisterElement::fpcptr()'],['../class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html#af2c087eadca74ddd43ba36724a76cd66',1,'ChimeraTK::proxies::DummyRegisterSequence::fpcptr()']]],
   ['frameclienthello',['frameClientHello',['../class_chimera_t_k_1_1_rebot_backend.html#afb7a3eb09d3da11ae1baa0046e3d36ad',1,'ChimeraTK::RebotBackend']]],
-  ['fundamentaltype',['fundamentalType',['../class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a0ffbe083c4eec2daeac9a537e1c91e07',1,'ChimeraTK::RegisterInfo::DataDescriptor::fundamentalType()'],['../class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8',1,'ChimeraTK::RegisterInfo::FundamentalType()']]],
+  ['fundamentaltype',['FundamentalType',['../class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8',1,'ChimeraTK::RegisterInfo::FundamentalType()'],['../class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a0ffbe083c4eec2daeac9a537e1c91e07',1,'ChimeraTK::RegisterInfo::DataDescriptor::fundamentalType()']]],
   ['toraw_3c_20std_3a_3astring_20_3e',['toRaw&lt; std::string &gt;',['../namespace_chimera_t_k.html#afff8173557eb5f22e54120e7cd2e4697',1,'ChimeraTK']]]
 ];

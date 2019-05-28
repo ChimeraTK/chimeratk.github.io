@@ -57,7 +57,7 @@ var searchData=
   ['_5fmapfile',['_mapFile',['../class_chimera_t_k_1_1_dummy_backend.html#a8ff43143f271f34f948afa5861ddb06b',1,'ChimeraTK::DummyBackend']]],
   ['_5fmilliseconds',['_milliseconds',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html#a4126849af04acb41fe3642a29177d844',1,'ChimeraTK::LNMBackend::MonostableTriggerPlugin']]],
   ['_5fmodulename',['_moduleName',['../class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a107b92d9a79e75dd35dbc1cecaf43774',1,'ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor']]],
-  ['_5fmutex',['_mutex',['../class_chimera_t_k_1_1_backend_factory.html#a29d40e9befe5fb2c33df2d7c0558fee5',1,'ChimeraTK::BackendFactory']]],
+  ['_5fmutex',['_mutex',['../class_chimera_t_k_1_1_backend_factory.html#a29d40e9befe5fb2c33df2d7c0558fee5',1,'ChimeraTK::BackendFactory::_mutex()'],['../class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ae1c80499cf604c1107615ae286998014',1,'ChimeraTK::LNMBackendBitAccessor::_mutex()']]],
   ['_5fname',['_name',['../class_chimera_t_k_1_1_transfer_element.html#a13235d15a13bfc43764e464f1b6fe50d',1,'ChimeraTK::TransferElement']]],
   ['_5fnblocks',['_nBlocks',['../class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#acd2f9de66ee21dd155d1da09f569d2ff',1,'ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor']]],
   ['_5fnbytes',['_nBytes',['../class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a0b8b4a737197153fc7f624d361118736',1,'ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor']]],

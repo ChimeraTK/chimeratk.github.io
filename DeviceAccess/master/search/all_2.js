@@ -8,7 +8,7 @@ var searchData=
   ['accessmode',['AccessMode',['../namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11',1,'ChimeraTK']]],
   ['accessmode_2eh',['AccessMode.h',['../device_2include_2_access_mode_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_access_mode_8h.html',1,'(Global Namespace)']]],
   ['accessmodeflags',['AccessModeFlags',['../class_chimera_t_k_1_1_access_mode_flags.html',1,'ChimeraTK::AccessModeFlags'],['../class_chimera_t_k_1_1_access_mode_flags.html#a9b8244b9cba5317c0d10106b651f1100',1,'ChimeraTK::AccessModeFlags::AccessModeFlags(const std::set&lt; AccessMode &gt; &amp;flags)'],['../class_chimera_t_k_1_1_access_mode_flags.html#af6a2799029c3af844bfcf10e9a2daf05',1,'ChimeraTK::AccessModeFlags::AccessModeFlags(const std::initializer_list&lt; AccessMode &gt; &amp;flags)']]],
-  ['accessor',['accessor',['../class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html#aeeaf05b000058d15f908baddb7ea8be8',1,'ChimeraTK::RegisterAccessor::AccessorHandler']]],
+  ['accessor',['accessor',['../class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html#aeeaf05b000058d15f908baddb7ea8be8',1,'ChimeraTK::RegisterAccessor::AccessorHandler::accessor()'],['../struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html#ab02d3197104c985b854b26ddafbfadc7',1,'ChimeraTK::LogicalNameMappingBackend::SharedAccessor::accessor()']]],
   ['accessor1d_2ecpp',['accessor1D.cpp',['../accessor1_d_8cpp.html',1,'']]],
   ['accessor1d_2edox',['accessor1D.dox',['../accessor1_d_8dox.html',1,'']]],
   ['accessor2d_2ecpp',['accessor2D.cpp',['../accessor2_d_8cpp.html',1,'']]],

@@ -51,9 +51,5 @@ var dir_f6c06f7a01da37196a5f6fe3a6212106 =
     [ "SyncNDRegisterAccessor.h", "device__backends_2include_2_sync_n_d_register_accessor_8h.html", [
       [ "SyncNDRegisterAccessor", "class_chimera_t_k_1_1_sync_n_d_register_accessor.html", "class_chimera_t_k_1_1_sync_n_d_register_accessor" ]
     ] ],
-    [ "TransferElement.h", "device__backends_2include_2_transfer_element_8h.html", [
-      [ "TransferElement", "class_chimera_t_k_1_1_transfer_element.html", "class_chimera_t_k_1_1_transfer_element" ],
-      [ "hash< ChimeraTK::TransferElementID >", "structstd_1_1hash_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", "structstd_1_1hash_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4" ],
-      [ "less< ChimeraTK::TransferElementID >", "structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", "structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4" ]
-    ] ]
+    [ "TransferElement.h", "device__backends_2include_2_transfer_element_8h.html", "device__backends_2include_2_transfer_element_8h" ]
 ];

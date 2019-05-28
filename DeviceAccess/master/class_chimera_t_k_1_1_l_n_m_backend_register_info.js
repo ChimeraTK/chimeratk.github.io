@@ -33,6 +33,7 @@ var class_chimera_t_k_1_1_l_n_m_backend_register_info =
     [ "supportedFlags", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6546006951dc0b02aaf98a42c3f6630c", null ],
     [ "targetType", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ac207ec46daf9ba7cae5a125fd9093a17", null ],
     [ "valueTable", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a302a6a7826cd92e8513ef69d4b763e12", null ],
+    [ "valueTable_mutex", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#aa3ca59f81e4a0ca2dcffa1ea698a166e", null ],
     [ "valueType", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a0232afb5cb9aabded20da080b24ecc47", null ],
     [ "writeable", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a78eaed0aaebd9163a7006d65b2a095eb", null ]
 ];

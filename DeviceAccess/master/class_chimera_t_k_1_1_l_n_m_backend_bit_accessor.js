@@ -1,7 +1,7 @@
 var class_chimera_t_k_1_1_l_n_m_backend_bit_accessor =
 [
     [ "LNMBackendBitAccessor", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ad236c093d0be42c459d13ad62f91a325", null ],
-    [ "~LNMBackendBitAccessor", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ae1c65af3e5b0cde03c5d31465a648a23", null ],
+    [ "~LNMBackendBitAccessor", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#aa4eed8d1127b7a233e23ba36264e9130", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a1e29174e15c277fc01b87b95d5402837", null ],
     [ "doPostWrite", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a0271abadd9baf96701ce0ad833eb0695", null ],
     [ "doPreRead", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#acd485fb4bfec8051a8f0bc758bfb4207", null ],
@@ -24,5 +24,6 @@ var class_chimera_t_k_1_1_l_n_m_backend_bit_accessor =
     [ "_dev", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ae0053e8b9dccc0a2ba7d32a38d841681", null ],
     [ "_fixedPointConverter", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a6b49da001999978dd11a4e91e904df84", null ],
     [ "_info", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a9abf4a5dd09aa24ac63aaa2085997218", null ],
+    [ "_mutex", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ae1c80499cf604c1107615ae286998014", null ],
     [ "_registerPathName", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ae66734714f8896a5c566fd19d5a7333f", null ]
 ];

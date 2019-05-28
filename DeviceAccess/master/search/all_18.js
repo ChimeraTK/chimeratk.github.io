@@ -7,7 +7,7 @@ var searchData=
   ['_7edmapfilesparser',['~DMapFilesParser',['../class_chimera_t_k_1_1_d_map_files_parser.html#ab1f4f81945c523d1afd328fdf88d87a7',1,'ChimeraTK::DMapFilesParser']]],
   ['_7edummybackend',['~DummyBackend',['../class_chimera_t_k_1_1_dummy_backend.html#a212f26735d4b2f69dec5bf54cd17b469',1,'ChimeraTK::DummyBackend']]],
   ['_7eexamplebackend',['~ExampleBackend',['../class_example_backend.html#a548c46b38a7a6617ac602a1b34e5720f',1,'ExampleBackend']]],
-  ['_7elnmbackendbitaccessor',['~LNMBackendBitAccessor',['../class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ae1c65af3e5b0cde03c5d31465a648a23',1,'ChimeraTK::LNMBackendBitAccessor']]],
+  ['_7elnmbackendbitaccessor',['~LNMBackendBitAccessor',['../class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#aa4eed8d1127b7a233e23ba36264e9130',1,'ChimeraTK::LNMBackendBitAccessor']]],
   ['_7elnmbackendchannelaccessor',['~LNMBackendChannelAccessor',['../class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a3a7a5023f6f561dec3a95c35deb5c688',1,'ChimeraTK::LNMBackendChannelAccessor']]],
   ['_7elnmbackendvariableaccessor',['~LNMBackendVariableAccessor',['../class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a68491663d0deef34cdd6fe2e98149bd6',1,'ChimeraTK::LNMBackendVariableAccessor']]],
   ['_7elogicalnamemappingbackend',['~LogicalNameMappingBackend',['../class_chimera_t_k_1_1_logical_name_mapping_backend.html#aca8a90331ac46ea8e8afdfcd467fca01',1,'ChimeraTK::LogicalNameMappingBackend']]],

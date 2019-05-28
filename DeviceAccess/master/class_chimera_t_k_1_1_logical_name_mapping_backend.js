@@ -1,5 +1,7 @@
 var class_chimera_t_k_1_1_logical_name_mapping_backend =
 [
+    [ "SharedAccessor", "struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html", "struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor" ],
+    [ "SharedAccessorMap", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a6111c465c9c4130bf75c88f00c74b431", null ],
     [ "LogicalNameMappingBackend", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a7d3c15281246ec70a9977004d4fb02c3", null ],
     [ "~LogicalNameMappingBackend", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#aca8a90331ac46ea8e8afdfcd467fca01", null ],
     [ "close", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a86961274d5614231b472f7dd26aa6960", null ],
@@ -18,5 +20,6 @@ var class_chimera_t_k_1_1_logical_name_mapping_backend =
     [ "_lmapFileName", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#af84946cdb9dce95e0ee669127161a975", null ],
     [ "_parameters", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#ae578db87a49db2f3c2effc6403ddcd9c", null ],
     [ "catalogueCompleted", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#ac3778f93fd48c9073c1f8c2e1106e980", null ],
-    [ "hasParsed", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a61288f923cb78a49373c69387b1c139d", null ]
+    [ "hasParsed", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a61288f923cb78a49373c69387b1c139d", null ],
+    [ "sharedAccessorMap", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#ad7a5edbc226acdcd5c8a73aeaeb14e8e", null ]
 ];
