@@ -23,7 +23,6 @@ var class_chimera_t_k_1_1_l_n_m_backend_bit_accessor =
     [ "_bitMask", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#abcb9b845999e0b58a2472279d21f0fac", null ],
     [ "_dev", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ae0053e8b9dccc0a2ba7d32a38d841681", null ],
     [ "_fixedPointConverter", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a6b49da001999978dd11a4e91e904df84", null ],
-    [ "_info", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a9abf4a5dd09aa24ac63aaa2085997218", null ],
     [ "_mutex", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ae1c80499cf604c1107615ae286998014", null ],
     [ "_registerPathName", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ae66734714f8896a5c566fd19d5a7333f", null ]
 ];
