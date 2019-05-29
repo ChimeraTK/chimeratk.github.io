@@ -2,7 +2,7 @@ var searchData=
 [
   ['createdoocsscalar_3c_20std_3a_3astring_2c_20d_5fstring_20_3e',['createDoocsScalar&lt; std::string, D_string &gt;',['../namespace_chimera_t_k.html#adbbbb15994bdc83f36aa4cefd5e124d7',1,'ChimeraTK']]],
   ['createdoocsscalar_3c_20std_3a_3astring_2c_20d_5ftext_20_3e',['createDoocsScalar&lt; std::string, D_text &gt;',['../namespace_chimera_t_k.html#a79cb56aed1eab42a7908f4a5119bbe03',1,'ChimeraTK']]],
-  ['datatype',['dataType',['../struct_chimera_t_k_1_1_auto_property_description.html#ac137241890437840be9f80a0502fe246',1,'ChimeraTK::AutoPropertyDescription::dataType()'],['../struct_chimera_t_k_1_1_auto_property_description.html#ae47b83262db33cd0267c9470e1d78661',1,'ChimeraTK::AutoPropertyDescription::DataType()']]],
+  ['datatype',['DataType',['../struct_chimera_t_k_1_1_auto_property_description.html#ae47b83262db33cd0267c9470e1d78661',1,'ChimeraTK::AutoPropertyDescription::DataType()'],['../struct_chimera_t_k_1_1_auto_property_description.html#ac137241890437840be9f80a0502fe246',1,'ChimeraTK::AutoPropertyDescription::dataType()']]],
   ['derivetype',['deriveType',['../struct_chimera_t_k_1_1_auto_property_description.html#a3cfc7fc63c81386a2eb16f652b1e7c63',1,'ChimeraTK::AutoPropertyDescription']]],
   ['description',['description',['../struct_chimera_t_k_1_1_xy_description.html#a8dbd08e1db49b6b78216a523c79f6b7d',1,'ChimeraTK::XyDescription']]],
   ['determinename',['determineName',['../namespace_chimera_t_k.html#a76ae8c499735588a556f99205b693955',1,'ChimeraTK']]],

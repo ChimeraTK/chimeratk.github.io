@@ -85,7 +85,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 <h3><a id="index__"></a>- _ -</h3><ul>
 <li>_consistencyGroup
-: <a class="el" href="class_chimera_t_k_1_1_doocs_xy.html#a3ede0a4d241126f00bf3470508d35f1d">ChimeraTK::DoocsXy</a>
+: <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a56eedfb09dd5ad6cfbef359f9f99c386">ChimeraTK::DoocsProcessScalar&lt; T, DOOCS_T &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4.html#a6716ec2b2f6a9e264364eca9dbc7979a">ChimeraTK::DoocsProcessScalar&lt; T, D_text &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_doocs_xy.html#a3ede0a4d241126f00bf3470508d35f1d">ChimeraTK::DoocsXy</a>
 </li>
 <li>_controlSystemPVManager
 : <a class="el" href="class_chimera_t_k_1_1_doocs_adapter.html#abd9d02096a55995d55eaa0fa2fe176f4">ChimeraTK::DoocsAdapter</a>
@@ -97,11 +99,15 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>_devicePVManager
 : <a class="el" href="class_chimera_t_k_1_1_doocs_adapter.html#aa68288d8deb8724e6c357b9ded29217c">ChimeraTK::DoocsAdapter</a>
 </li>
+<li>_doocsUpdater
+: <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a9b03fc98070acab7614ad93e9b56e346">ChimeraTK::DoocsProcessScalar&lt; T, DOOCS_T &gt;</a>
+</li>
 <li>_elementsToRead
 : <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html#abe9102d68e37adc3bf7d2d484ccbcfea">ChimeraTK::DoocsUpdater</a>
 </li>
 <li>_eqFct
-: <a class="el" href="class_chimera_t_k_1_1_doocs_p_v_factory.html#a54d8f4eb0902116c3411a9a0c8e401a4">ChimeraTK::DoocsPVFactory</a>
+: <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#ad816f9429b682af6e9c1aaa794d4d0fa">ChimeraTK::DoocsProcessScalar&lt; T, DOOCS_T &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_doocs_p_v_factory.html#a54d8f4eb0902116c3411a9a0c8e401a4">ChimeraTK::DoocsPVFactory</a>
 </li>
 <li>_globalDefaults
 : <a class="el" href="class_chimera_t_k_1_1_variable_mapper.html#a6e4a549e6d1d681035d17fd5b2af7441">ChimeraTK::VariableMapper</a>
@@ -132,6 +138,10 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>_processScalar
 : <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a8094bd569539554353d269b416f9e7ac">ChimeraTK::DoocsProcessScalar&lt; T, DOOCS_T &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4.html#a7fcf5e8b4ec82f0145e498eccff08e69">ChimeraTK::DoocsProcessScalar&lt; T, D_text &gt;</a>
+</li>
+<li>_publishZMQ
+: <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#ad5b5b33efbc7881741f076a36f1da35c">ChimeraTK::DoocsProcessScalar&lt; T, DOOCS_T &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4.html#a1a7563d2ee0e7f0c01dab7fdb24323f7">ChimeraTK::DoocsProcessScalar&lt; T, D_text &gt;</a>
 </li>
 <li>_startAccessor
 : <a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a1b0ff12ba9b213be7d02ab0964ac635d">ChimeraTK::DoocsSpectrum</a>
@@ -214,11 +224,11 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 
 <h3><a id="index_d"></a>- d -</h3><ul>
-<li>dataType
-: <a class="el" href="struct_chimera_t_k_1_1_auto_property_description.html#ac137241890437840be9f80a0502fe246">ChimeraTK::AutoPropertyDescription</a>
-</li>
 <li>DataType
 : <a class="el" href="struct_chimera_t_k_1_1_auto_property_description.html#ae47b83262db33cd0267c9470e1d78661">ChimeraTK::AutoPropertyDescription</a>
+</li>
+<li>dataType
+: <a class="el" href="struct_chimera_t_k_1_1_auto_property_description.html#ac137241890437840be9f80a0502fe246">ChimeraTK::AutoPropertyDescription</a>
 </li>
 <li>deriveType()
 : <a class="el" href="struct_chimera_t_k_1_1_auto_property_description.html#a3cfc7fc63c81386a2eb16f652b1e7c63">ChimeraTK::AutoPropertyDescription</a>
@@ -477,8 +487,6 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>publishZMQ
 : <a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html#a915bc263a2809baa52ccdf189987f8e0">ChimeraTK::DoocsProcessArray&lt; DOOCS_T, DOOCS_PRIMITIVE_T &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a1bcb13399910169128c46eb9e49adccf">ChimeraTK::DoocsProcessScalar&lt; T, DOOCS_T &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4.html#ac8354766a27238759ef976a8f9e7a13c">ChimeraTK::DoocsProcessScalar&lt; T, D_text &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#ad9c0e9ccb9a13e93bc3078dcde4e74fd">ChimeraTK::DoocsSpectrum</a>
 , <a class="el" href="struct_chimera_t_k_1_1_property_attributes.html#a2e90872d5391a4c6e71efe3b2057f061">ChimeraTK::PropertyAttributes</a>
 </li>
@@ -561,7 +569,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>updateDoocsBuffer()
 : <a class="el" href="class_chimera_t_k_1_1_doocs_process_array.html#a117cf7e3223eeeb7060ac0660ca26b5b">ChimeraTK::DoocsProcessArray&lt; DOOCS_T, DOOCS_PRIMITIVE_T &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#afc25bdb4c90a21d7b010667858d72eaa">ChimeraTK::DoocsProcessScalar&lt; T, DOOCS_T &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#adc271a7639d07cd7f8ecf96066bd18cc">ChimeraTK::DoocsProcessScalar&lt; T, DOOCS_T &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4.html#ad392b37e52ffc9fcef2babc29628b2a8">ChimeraTK::DoocsProcessScalar&lt; T, D_text &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#ae4a4414e0184f318119f6e71af472d6f">ChimeraTK::DoocsSpectrum</a>
 </li>
@@ -636,7 +644,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat May 25 2019 03:53:39 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Wed May 29 2019 03:54:00 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

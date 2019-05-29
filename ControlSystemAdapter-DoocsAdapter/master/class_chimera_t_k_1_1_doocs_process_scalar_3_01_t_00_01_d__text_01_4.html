@@ -136,8 +136,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a7fcf5e8b4ec82f0145e498eccff08e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa515f2d0d39315bc2220c7b60410e102"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4.html#aa515f2d0d39315bc2220c7b60410e102">_macroPulseNumberSource</a></td></tr>
 <tr class="separator:aa515f2d0d39315bc2220c7b60410e102"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8354766a27238759ef976a8f9e7a13c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4.html#ac8354766a27238759ef976a8f9e7a13c">publishZMQ</a> {false}</td></tr>
-<tr class="separator:ac8354766a27238759ef976a8f9e7a13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6716ec2b2f6a9e264364eca9dbc7979a"><td class="memItemLeft" align="right" valign="top">DataConsistencyGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4.html#a6716ec2b2f6a9e264364eca9dbc7979a">_consistencyGroup</a></td></tr>
+<tr class="separator:a6716ec2b2f6a9e264364eca9dbc7979a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7563d2ee0e7f0c01dab7fdb24323f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4.html#a1a7563d2ee0e7f0c01dab7fdb24323f7">_publishZMQ</a> {false}</td></tr>
+<tr class="separator:a1a7563d2ee0e7f0c01dab7fdb24323f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -145,7 +147,7 @@ class ChimeraTK::DoocsProcessScalar&lt; T, D_text &gt;</h3>
 
 <p>Template specialisation for D_text, which has a different interface. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00107">107</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00135">135</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9050745c969bb93553ab70bdbd8a2244"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9050745c969bb93553ab70bdbd8a2244">&#9670;&nbsp;</a></span>DoocsProcessScalar() <span class="overload">[1/2]</span></h2>
@@ -195,7 +197,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00126">126</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00154">154</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -255,7 +257,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00135">135</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00163">163</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -296,7 +298,7 @@ template&lt;typename T &gt; </div>
 
 <p>Override the Doocs <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4.html#a893e6b194ea27f5f83f725e056059de4" title="Override the Doocs auto_init() method, which is called after initialising the value of the property f...">auto_init()</a> method, which is called after initialising the value of the property from the config file. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00164">164</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00192">192</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
@@ -325,7 +327,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00173">173</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00201">201</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +381,7 @@ template&lt;typename T &gt; </div>
 
 <p>Override the Doocs set method which is triggered by the RPC calls. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00147">147</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00175">175</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
@@ -409,7 +411,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00175">175</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00203">203</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
@@ -438,11 +440,37 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00109">109</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00137">137</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6716ec2b2f6a9e264364eca9dbc7979a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6716ec2b2f6a9e264364eca9dbc7979a">&#9670;&nbsp;</a></span>_consistencyGroup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataConsistencyGroup <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, D_text &gt;::_consistencyGroup</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00210">210</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+
+</div>
+</div>
 <a id="aa515f2d0d39315bc2220c7b60410e102"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa515f2d0d39315bc2220c7b60410e102">&#9670;&nbsp;</a></span>_macroPulseNumberSource</h2>
 
@@ -465,7 +493,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00181">181</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00209">209</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
@@ -491,12 +519,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00180">180</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00208">208</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
-<a id="ac8354766a27238759ef976a8f9e7a13c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8354766a27238759ef976a8f9e7a13c">&#9670;&nbsp;</a></span>publishZMQ</h2>
+<a id="a1a7563d2ee0e7f0c01dab7fdb24323f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a7563d2ee0e7f0c01dab7fdb24323f7">&#9670;&nbsp;</a></span>_publishZMQ</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -507,7 +535,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, D_text &gt;::publishZMQ {false}</td>
+          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, D_text &gt;::_publishZMQ {false}</td>
         </tr>
       </table>
   </td>
@@ -517,7 +545,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00182">182</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00211">211</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
@@ -530,7 +558,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4.html">DoocsProcessScalar&lt; T, D_text &gt;</a></li>
-    <li class="footer">Generated on Sat May 25 2019 03:53:39 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Wed May 29 2019 03:54:00 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

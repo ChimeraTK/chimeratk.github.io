@@ -107,14 +107,14 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_doocs_process_sc
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_process_scalar__coll__graph.svg" width="243" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_process_scalar__coll__graph.svg" width="100%" height="542"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afc25bdb4c90a21d7b010667858d72eaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#afc25bdb4c90a21d7b010667858d72eaa">updateDoocsBuffer</a> ()</td></tr>
-<tr class="separator:afc25bdb4c90a21d7b010667858d72eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc271a7639d07cd7f8ecf96066bd18cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#adc271a7639d07cd7f8ecf96066bd18cc">updateDoocsBuffer</a> (TransferElementID transferElementId)</td></tr>
+<tr class="separator:adc271a7639d07cd7f8ecf96066bd18cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab07e3addb7c8642cf0ebe6f064f7e49f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#ab07e3addb7c8642cf0ebe6f064f7e49f">DoocsProcessScalar</a> (EqFct *eqFct, std::string doocsPropertyName, boost::shared_ptr&lt; typename ChimeraTK::NDRegisterAccessor&lt; T &gt;&gt; const &amp;processScalar, <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;updater)</td></tr>
 <tr class="separator:ab07e3addb7c8642cf0ebe6f064f7e49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0b4bf938939916d3220b13a024032ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#aa0b4bf938939916d3220b13a024032ff">DoocsProcessScalar</a> (std::string doocsPropertyName, EqFct *eqFct, boost::shared_ptr&lt; typename ChimeraTK::NDRegisterAccessor&lt; T &gt;&gt; const &amp;processScalar, <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;updater)</td></tr>
@@ -136,8 +136,14 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a8094bd569539554353d269b416f9e7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacc08be2190a969b6ebe7f70390dcb6a"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#aacc08be2190a969b6ebe7f70390dcb6a">_macroPulseNumberSource</a></td></tr>
 <tr class="separator:aacc08be2190a969b6ebe7f70390dcb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bcb13399910169128c46eb9e49adccf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a1bcb13399910169128c46eb9e49adccf">publishZMQ</a> {false}</td></tr>
-<tr class="separator:a1bcb13399910169128c46eb9e49adccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56eedfb09dd5ad6cfbef359f9f99c386"><td class="memItemLeft" align="right" valign="top">DataConsistencyGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a56eedfb09dd5ad6cfbef359f9f99c386">_consistencyGroup</a></td></tr>
+<tr class="separator:a56eedfb09dd5ad6cfbef359f9f99c386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b03fc98070acab7614ad93e9b56e346"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a9b03fc98070acab7614ad93e9b56e346">_doocsUpdater</a></td></tr>
+<tr class="separator:a9b03fc98070acab7614ad93e9b56e346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad816f9429b682af6e9c1aaa794d4d0fa"><td class="memItemLeft" align="right" valign="top">EqFct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#ad816f9429b682af6e9c1aaa794d4d0fa">_eqFct</a></td></tr>
+<tr class="separator:ad816f9429b682af6e9c1aaa794d4d0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5b5b33efbc7881741f076a36f1da35c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#ad5b5b33efbc7881741f076a36f1da35c">_publishZMQ</a> {false}</td></tr>
+<tr class="separator:ad5b5b33efbc7881741f076a36f1da35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T, typename DOOCS_T&gt;<br />
@@ -149,7 +155,7 @@ class ChimeraTK::DoocsProcessScalar&lt; T, DOOCS_T &gt;</h3>
 <li><code>DOOCS_T</code>, The Doocs type which is used </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00019">19</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00020">20</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab07e3addb7c8642cf0ebe6f064f7e49f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab07e3addb7c8642cf0ebe6f064f7e49f">&#9670;&nbsp;</a></span>DoocsProcessScalar() <span class="overload">[1/2]</span></h2>
@@ -199,7 +205,7 @@ template&lt;typename T , typename DOOCS_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00046">46</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00064">64</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -259,7 +265,7 @@ template&lt;typename T , typename DOOCS_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00055">55</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00074">74</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -300,7 +306,7 @@ template&lt;typename T , typename DOOCS_T &gt; </div>
 
 <p>Override the Doocs <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a9083eafab25e669b9ad746773dbc4123" title="Override the Doocs auto_init() method, which is called after initialising the value of the property f...">auto_init()</a> method, which is called after initialising the value of the property from the config file. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00084">84</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00104">104</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
@@ -329,7 +335,7 @@ template&lt;typename T , typename DOOCS_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00093">93</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00113">113</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
@@ -383,7 +389,7 @@ template&lt;typename T , typename DOOCS_T &gt; </div>
 
 <p>Override the Doocs set method which is triggered by the RPC calls. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00067">67</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00087">87</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
@@ -413,12 +419,20 @@ template&lt;typename T , typename DOOCS_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00095">95</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00115">115</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_process_scalar_ad13b40f2d12f57129e0427307573b96b_cgraph.svg" width="486" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
-<a id="afc25bdb4c90a21d7b010667858d72eaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc25bdb4c90a21d7b010667858d72eaa">&#9670;&nbsp;</a></span>updateDoocsBuffer()</h2>
+<a id="adc271a7639d07cd7f8ecf96066bd18cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc271a7639d07cd7f8ecf96066bd18cc">&#9670;&nbsp;</a></span>updateDoocsBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -431,7 +445,8 @@ template&lt;typename T , typename DOOCS_T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::updateDoocsBuffer </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">TransferElementID&#160;</td>
+          <td class="paramname"><em>transferElementId</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -442,11 +457,89 @@ template&lt;typename T , typename DOOCS_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00021">21</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00022">22</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a56eedfb09dd5ad6cfbef359f9f99c386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56eedfb09dd5ad6cfbef359f9f99c386">&#9670;&nbsp;</a></span>_consistencyGroup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename DOOCS_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataConsistencyGroup <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::_consistencyGroup</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00127">127</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+
+</div>
+</div>
+<a id="a9b03fc98070acab7614ad93e9b56e346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b03fc98070acab7614ad93e9b56e346">&#9670;&nbsp;</a></span>_doocsUpdater</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename DOOCS_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a>&amp; <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::_doocsUpdater</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00128">128</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+
+</div>
+</div>
+<a id="ad816f9429b682af6e9c1aaa794d4d0fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad816f9429b682af6e9c1aaa794d4d0fa">&#9670;&nbsp;</a></span>_eqFct</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename DOOCS_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EqFct* <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::_eqFct</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00129">129</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+
+</div>
+</div>
 <a id="aacc08be2190a969b6ebe7f70390dcb6a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aacc08be2190a969b6ebe7f70390dcb6a">&#9670;&nbsp;</a></span>_macroPulseNumberSource</h2>
 
@@ -469,7 +562,7 @@ template&lt;typename T , typename DOOCS_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00101">101</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00126">126</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
@@ -495,12 +588,12 @@ template&lt;typename T , typename DOOCS_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00100">100</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00125">125</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
-<a id="a1bcb13399910169128c46eb9e49adccf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bcb13399910169128c46eb9e49adccf">&#9670;&nbsp;</a></span>publishZMQ</h2>
+<a id="ad5b5b33efbc7881741f076a36f1da35c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5b5b33efbc7881741f076a36f1da35c">&#9670;&nbsp;</a></span>_publishZMQ</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -511,7 +604,7 @@ template&lt;typename T , typename DOOCS_T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::publishZMQ {false}</td>
+          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::_publishZMQ {false}</td>
         </tr>
       </table>
   </td>
@@ -521,7 +614,7 @@ template&lt;typename T , typename DOOCS_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00102">102</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00130">130</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
@@ -534,7 +627,7 @@ template&lt;typename T , typename DOOCS_T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">DoocsProcessScalar</a></li>
-    <li class="footer">Generated on Sat May 25 2019 03:53:39 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Wed May 29 2019 03:54:00 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
