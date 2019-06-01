@@ -1,6 +1,7 @@
 var dir_68267d1309a1af8e8297ef4c3efbcdba =
 [
     [ "CSAdapterEqFct.cc", "_c_s_adapter_eq_fct_8cc.html", null ],
+    [ "D_textUnifier.cpp", "_d__text_unifier_8cpp.html", null ],
     [ "DoocsAdapter.cc", "_doocs_adapter_8cc.html", null ],
     [ "DoocsPVFactory.cc", "_doocs_p_v_factory_8cc.html", "_doocs_p_v_factory_8cc" ],
     [ "DoocsSpectrum.cc", "_doocs_spectrum_8cc.html", null ],

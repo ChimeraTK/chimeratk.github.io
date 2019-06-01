@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['d_5ftextunifier_2ecpp',['D_textUnifier.cpp',['../_d__text_unifier_8cpp.html',1,'']]],
+  ['d_5ftextunifier_2eh',['D_textUnifier.h',['../_d__text_unifier_8h.html',1,'']]],
   ['doocsadapter_2ecc',['DoocsAdapter.cc',['../_doocs_adapter_8cc.html',1,'']]],
   ['doocsadapter_2eh',['DoocsAdapter.h',['../_doocs_adapter_8h.html',1,'']]],
   ['doocsprocessarray_2eh',['DoocsProcessArray.h',['../_doocs_process_array_8h.html',1,'']]],

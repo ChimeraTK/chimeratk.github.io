@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['get',['get',['../class_chimera_t_k_1_1_doocs_spectrum.html#abd733e2ebb9c551e6eb192f4542c1492',1,'ChimeraTK::DoocsSpectrum']]],
+  ['get_5fhistpointer',['get_histPointer',['../struct_d__text_unifier.html#a448a1633eb29a9158c5c26d23123e5f1',1,'D_textUnifier']]],
   ['getabsolutesource',['getAbsoluteSource',['../namespace_chimera_t_k.html#afcd443a4562fd9b849a12ea0f09587b1',1,'ChimeraTK']]],
   ['getalllocations',['getAllLocations',['../class_chimera_t_k_1_1_variable_mapper.html#a3c085942b9e550dc5ed7cfd438ed5a60',1,'ChimeraTK::VariableMapper']]],
   ['getallproperties',['getAllProperties',['../class_chimera_t_k_1_1_variable_mapper.html#acb69f1b86e2b4ecd28427267ae682aa8',1,'ChimeraTK::VariableMapper']]],

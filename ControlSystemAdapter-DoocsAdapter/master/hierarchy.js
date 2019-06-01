@@ -5,7 +5,7 @@ var hierarchy =
       [ "ChimeraTK::DoocsSpectrum", "class_chimera_t_k_1_1_doocs_spectrum.html", null ]
     ] ],
     [ "D_text", null, [
-      [ "ChimeraTK::DoocsProcessScalar< T, D_text >", "class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4.html", null ]
+      [ "D_textUnifier", "struct_d__text_unifier.html", null ]
     ] ],
     [ "D_xy", null, [
       [ "ChimeraTK::DoocsXy", "class_chimera_t_k_1_1_doocs_xy.html", null ]
@@ -22,7 +22,6 @@ var hierarchy =
       [ "ChimeraTK::CSAdapterEqFct", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html", null ],
       [ "ChimeraTK::DoocsProcessArray< DOOCS_T, DOOCS_PRIMITIVE_T >", "class_chimera_t_k_1_1_doocs_process_array.html", null ],
       [ "ChimeraTK::DoocsProcessScalar< T, DOOCS_T >", "class_chimera_t_k_1_1_doocs_process_scalar.html", null ],
-      [ "ChimeraTK::DoocsProcessScalar< T, D_text >", "class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4.html", null ],
       [ "ChimeraTK::DoocsPVFactory", "class_chimera_t_k_1_1_doocs_p_v_factory.html", null ],
       [ "ChimeraTK::DoocsSpectrum", "class_chimera_t_k_1_1_doocs_spectrum.html", null ],
       [ "ChimeraTK::DoocsUpdater", "class_chimera_t_k_1_1_doocs_updater.html", null ],

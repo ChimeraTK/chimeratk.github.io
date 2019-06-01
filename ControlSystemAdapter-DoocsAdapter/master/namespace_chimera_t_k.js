@@ -5,7 +5,6 @@ var namespace_chimera_t_k =
     [ "DoocsAdapter", "class_chimera_t_k_1_1_doocs_adapter.html", "class_chimera_t_k_1_1_doocs_adapter" ],
     [ "DoocsProcessArray", "class_chimera_t_k_1_1_doocs_process_array.html", "class_chimera_t_k_1_1_doocs_process_array" ],
     [ "DoocsProcessScalar", "class_chimera_t_k_1_1_doocs_process_scalar.html", "class_chimera_t_k_1_1_doocs_process_scalar" ],
-    [ "DoocsProcessScalar< T, D_text >", "class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4.html", "class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4" ],
     [ "DoocsPVFactory", "class_chimera_t_k_1_1_doocs_p_v_factory.html", "class_chimera_t_k_1_1_doocs_p_v_factory" ],
     [ "DoocsSpectrum", "class_chimera_t_k_1_1_doocs_spectrum.html", "class_chimera_t_k_1_1_doocs_spectrum" ],
     [ "DoocsTransferElement", "class_chimera_t_k_1_1_doocs_transfer_element.html", "class_chimera_t_k_1_1_doocs_transfer_element" ],

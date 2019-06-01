@@ -4,6 +4,9 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "CSAdapterEqFct.h", "_c_s_adapter_eq_fct_8h.html", [
       [ "CSAdapterEqFct", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html", "class_chimera_t_k_1_1_c_s_adapter_eq_fct" ]
     ] ],
+    [ "D_textUnifier.h", "_d__text_unifier_8h.html", [
+      [ "D_textUnifier", "struct_d__text_unifier.html", "struct_d__text_unifier" ]
+    ] ],
     [ "DoocsAdapter.h", "_doocs_adapter_8h.html", [
       [ "DoocsAdapter", "class_chimera_t_k_1_1_doocs_adapter.html", "class_chimera_t_k_1_1_doocs_adapter" ]
     ] ],
@@ -11,8 +14,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "DoocsProcessArray", "class_chimera_t_k_1_1_doocs_process_array.html", "class_chimera_t_k_1_1_doocs_process_array" ]
     ] ],
     [ "DoocsProcessScalar.h", "_doocs_process_scalar_8h.html", [
-      [ "DoocsProcessScalar", "class_chimera_t_k_1_1_doocs_process_scalar.html", "class_chimera_t_k_1_1_doocs_process_scalar" ],
-      [ "DoocsProcessScalar< T, D_text >", "class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4.html", "class_chimera_t_k_1_1_doocs_process_scalar_3_01_t_00_01_d__text_01_4" ]
+      [ "DoocsProcessScalar", "class_chimera_t_k_1_1_doocs_process_scalar.html", "class_chimera_t_k_1_1_doocs_process_scalar" ]
     ] ],
     [ "DoocsPVFactory.h", "_doocs_p_v_factory_8h.html", "_doocs_p_v_factory_8h" ],
     [ "DoocsSpectrum.h", "_doocs_spectrum_8h.html", [
