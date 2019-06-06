@@ -1,6 +1,5 @@
 var util_2include_2_supported_user_types_8h =
 [
-    [ "raw_iterator", "struct_chimera_t_k_1_1raw__iterator.html", "struct_chimera_t_k_1_1raw__iterator" ],
     [ "FixedUserTypeMap", "class_chimera_t_k_1_1_fixed_user_type_map.html", "class_chimera_t_k_1_1_fixed_user_type_map" ],
     [ "TemplateUserTypeMap", "class_chimera_t_k_1_1_template_user_type_map.html", "class_chimera_t_k_1_1_template_user_type_map" ],
     [ "DataType", "class_chimera_t_k_1_1_data_type.html", "class_chimera_t_k_1_1_data_type" ],

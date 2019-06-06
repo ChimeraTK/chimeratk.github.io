@@ -2,6 +2,7 @@ var class_chimera_t_k_1_1_transfer_element_abstractor =
 [
     [ "TransferElementAbstractor", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a5fc3bd8768619d4f4625842b82ecdf2f", null ],
     [ "TransferElementAbstractor", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a28eaff61621c50693b307e232072ab35", null ],
+    [ "dataValidity", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a90132a50a99c2bff143b4937ff242789", null ],
     [ "getAccessModeFlags", "class_chimera_t_k_1_1_transfer_element_abstractor.html#acc639d986bbab7f30b86c6f8f8596e57", null ],
     [ "getDescription", "class_chimera_t_k_1_1_transfer_element_abstractor.html#ad13db8be528e984ee93035b5e584b7af", null ],
     [ "getHardwareAccessingElements", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a1a2e43388030a0136b71430ca8b920b7", null ],
@@ -23,6 +24,7 @@ var class_chimera_t_k_1_1_transfer_element_abstractor =
     [ "replace", "class_chimera_t_k_1_1_transfer_element_abstractor.html#aa67bef82a23eb01b2e9f20de95ca0a75", null ],
     [ "replace", "class_chimera_t_k_1_1_transfer_element_abstractor.html#ae4a21c83adc1ea35f76989a98ef1213a", null ],
     [ "replaceTransferElement", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a19754dfcd367d6b178e782d3fc490a85", null ],
+    [ "setDataValidity", "class_chimera_t_k_1_1_transfer_element_abstractor.html#ad1faf0fed03eb94768e3127b0eb067fb", null ],
     [ "setPersistentDataStorage", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a781f771e098890bc458ea65e24cea376", null ],
     [ "transferFutureWaitCallback", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a90726f6d4ebc3d3d0145f43098bff8bc", null ],
     [ "write", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a281b905219e719a1a0cdbd9d8d42d1dd", null ],

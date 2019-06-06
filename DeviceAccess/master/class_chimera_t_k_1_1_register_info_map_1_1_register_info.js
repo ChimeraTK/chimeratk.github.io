@@ -11,6 +11,7 @@ var class_chimera_t_k_1_1_register_info_map_1_1_register_info =
       [ "ASCII", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6b842be755b82e8e9f26f9104aac1600a2fbf8a3df38e98a5d5a95a70e74ad2b5", null ]
     ] ],
     [ "RegisterInfo", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ab38537addc15edc6ff9610f8ed755d26", null ],
+    [ "RegisterInfo", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a16dd0f55e88e2d104f7a9ab3e14fb335", null ],
     [ "getDataDescriptor", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aa9557afbc83009c30022f9f7237b6f3e", null ],
     [ "getNumberOfChannels", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a86d5bd5caa1c9db167e3e76fba76714a", null ],
     [ "getNumberOfDimensions", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#af5ef814abc5cc61fe3f8fc3197247bd4", null ],

@@ -186,6 +186,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a90726f6d4ebc3d3d0145f43098bff8bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a90726f6d4ebc3d3d0145f43098bff8bc">transferFutureWaitCallback</a> ()</td></tr>
 <tr class="memdesc:a90726f6d4ebc3d3d0145f43098bff8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> before entering a potentially blocking wait().  <a href="#a90726f6d4ebc3d3d0145f43098bff8bc">More...</a><br /></td></tr>
 <tr class="separator:a90726f6d4ebc3d3d0145f43098bff8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1faf0fed03eb94768e3127b0eb067fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#ad1faf0fed03eb94768e3127b0eb067fb">setDataValidity</a> (<a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298df">DataValidity</a> valid=<a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfa444bcb3a3fcf8389296c49467f27e1d6">DataValidity::ok</a>)</td></tr>
+<tr class="memdesc:ad1faf0fed03eb94768e3127b0eb067fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current DataValidity for this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#ad1faf0fed03eb94768e3127b0eb067fb">More...</a><br /></td></tr>
+<tr class="separator:ad1faf0fed03eb94768e3127b0eb067fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90132a50a99c2bff143b4937ff242789"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298df">DataValidity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a90132a50a99c2bff143b4937ff242789">dataValidity</a> () const</td></tr>
+<tr class="memdesc:a90132a50a99c2bff143b4937ff242789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current validity of the data.  <a href="#a90132a50a99c2bff143b4937ff242789">More...</a><br /></td></tr>
+<tr class="separator:a90132a50a99c2bff143b4937ff242789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -258,6 +264,36 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a90132a50a99c2bff143b4937ff242789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90132a50a99c2bff143b4937ff242789">&#9670;&nbsp;</a></span>dataValidity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298df">DataValidity</a> ChimeraTK::TransferElementAbstractor::dataValidity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return current validity of the data. </p>
+<p>Will always return <a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfa444bcb3a3fcf8389296c49467f27e1d6">DataValidity::ok</a> if the backend does not support it </p>
+
+<p class="definition">Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00289">289</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
 <a id="acc639d986bbab7f30b86c6f8f8596e57"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc639d986bbab7f30b86c6f8f8596e57">&#9670;&nbsp;</a></span>getAccessModeFlags()</h2>
 
@@ -970,6 +1006,37 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad1faf0fed03eb94768e3127b0eb067fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1faf0fed03eb94768e3127b0eb067fb">&#9670;&nbsp;</a></span>setDataValidity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::TransferElementAbstractor::setDataValidity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298df">DataValidity</a>&#160;</td>
+          <td class="paramname"><em>valid</em> = <code><a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfa444bcb3a3fcf8389296c49467f27e1d6">DataValidity::ok</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the current DataValidity for this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
+<p>Will do nothing if the backend does not support it </p>
+
+<p class="definition">Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00285">285</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+
+</div>
+</div>
 <a id="a781f771e098890bc458ea65e24cea376"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a781f771e098890bc458ea65e24cea376">&#9670;&nbsp;</a></span>setPersistentDataStorage()</h2>
 
@@ -1125,7 +1192,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Untyped pointer to implementation. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00285">285</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html#l00293">293</a> of file <a class="el" href="device_2include_2_transfer_element_abstractor_8h_source.html">TransferElementAbstractor.h</a>.</p>
 
 </div>
 </div>
@@ -1138,7 +1205,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html">TransferElementAbstractor</a></li>
-    <li class="footer">Generated on Wed May 29 2019 03:53:09 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Jun 6 2019 03:53:08 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

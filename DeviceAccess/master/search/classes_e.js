@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['raw_5fiterator',['raw_iterator',['../struct_chimera_t_k_1_1raw__iterator.html',1,'ChimeraTK']]],
   ['readanygroup',['ReadAnyGroup',['../class_chimera_t_k_1_1_read_any_group.html',1,'ChimeraTK']]],
   ['rebotbackend',['RebotBackend',['../class_chimera_t_k_1_1_rebot_backend.html',1,'ChimeraTK']]],
   ['rebotprotocol0',['RebotProtocol0',['../struct_chimera_t_k_1_1_rebot_protocol0.html',1,'ChimeraTK']]],

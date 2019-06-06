@@ -270,9 +270,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_pcie_backend.html">PcieBackend</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class to provide the Pcie device functionality.  <a href="class_chimera_t_k_1_1_pcie_backend.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1raw__iterator.html">raw_iterator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A random-access iterator which can be created from raw C pointers.  <a href="struct_chimera_t_k_1_1raw__iterator.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_read_any_group.html">ReadAnyGroup</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Group several registers (= <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>) to allow waiting for an update of any of the registers.  <a href="class_chimera_t_k_1_1_read_any_group.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -796,7 +793,7 @@ Variables</h2></td></tr>
 
 <p>Introduce specialisation of shared_ptr template for pointers to <a class="el" href="class_chimera_t_k_1_1_register_info_map.html" title="Provides container to store information about registers described in MAP file. ">RegisterInfoMap</a> object as a RegisterInfoMapPointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00420">420</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00423">423</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
 
 </div>
 </div>
@@ -832,7 +829,7 @@ template&lt;typename T &gt; </div>
 
 <p>Map of UserType to a single type. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00240">240</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00216">216</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -867,7 +864,7 @@ template&lt;typename T &gt; </div>
 <p>Map of UserType to value of the UserType. </p>
 <p>Used e.g. by the <a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html" title="The fixed point converter provides conversion functions between a user type and up to 32 bit fixed po...">FixedPointConverter</a> to store coefficients etc. in dependence of the UserType. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00205">205</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00181">181</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -980,7 +977,7 @@ template&lt;typename LAMBDATYPE &gt; </div>
 <p>std::cout &lt;&lt; typeid(int).name() &lt;&lt; std::endl;</p>
 <p>Please note that this call is not as efficient as a direct call to a template. For each call all allowed user types have to be tested against the given type_info. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00568">568</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00544">544</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -1031,7 +1028,7 @@ template&lt;typename LAMBDATYPE &gt; </div>
 <p>Alternate form of <a class="el" href="namespace_chimera_t_k.html#a7f5acdbb978c1916af3a896bea089a7d" title="Helper function for running code which uses some compile-time type that is specified at runtime as a ...">callForType()</a> which takes a <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> as a runtime type description. </p>
 <p>If <a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a43e32937488a25bceb7b75994793a087" title="The data type/concept does not exist. ">DataType::none</a> is passed, std::bad_cast is thrown. For more details have a look at the other form. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00599">599</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00575">575</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1338,7 +1335,7 @@ template&lt;typename MAPTYPE , typename LAMBDATYPE &gt; </div>
 <p>Variant of <a class="el" href="namespace_chimera_t_k.html#afee0348f3a67cc3dc7efec51279bde7d" title="Variant of boost::fusion::for_each() to iterate a boost::fusion::map, which accepts a lambda instead ...">boost::fusion::for_each()</a> to iterate a boost::fusion::map, which accepts a lambda instead of the callable class requred by the boost version. </p>
 <p>The lambda must have one single argument of the type auto, which will be a boost::fusion::pair&lt;&gt;. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00537">537</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00513">513</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -2583,7 +2580,7 @@ template&lt;typename UserTypeReturn , typename UserTypeParameter &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li>
-    <li class="footer">Generated on Wed May 29 2019 03:53:09 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Jun 6 2019 03:53:08 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
