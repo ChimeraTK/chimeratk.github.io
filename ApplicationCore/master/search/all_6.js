@@ -4,6 +4,7 @@ var searchData=
   ['fanout',['FanOut',['../class_chimera_t_k_1_1_fan_out.html',1,'ChimeraTK::FanOut&lt; UserType &gt;'],['../class_chimera_t_k_1_1_fan_out.html#a594ddb995549aa3b52d3387d43f37084',1,'ChimeraTK::FanOut::FanOut()']]],
   ['fanout_2eh',['FanOut.h',['../_fan_out_8h.html',1,'']]],
   ['fanoutmap',['fanOutMap',['../class_chimera_t_k_1_1_trigger_fan_out.html#a8b58cc08dff1dbb09d4e100ff760243c',1,'ChimeraTK::TriggerFanOut::fanOutMap()'],['../class_chimera_t_k_1_1_trigger_fan_out.html#aa64393622082b4d01c75ad824d046425',1,'ChimeraTK::TriggerFanOut::FanOutMap()']]],
+  ['faultcounter',['faultCounter',['../class_chimera_t_k_1_1_application_module.html#a4b1c6521de3a3343595ac00915ee0870',1,'ChimeraTK::ApplicationModule']]],
   ['feeder',['feeder',['../class_chimera_t_k_1_1_variable_network.html#aae82485cda15b256982eacbb4a103ecaa06957223ae7b69dfd00fc8da2c6e0bd2',1,'ChimeraTK::VariableNetwork']]],
   ['feedforwardtable',['feedforwardTable',['../struct_table_generation.html#a1739d05ab27b0b3b17b49bb9bbdc667a',1,'TableGeneration']]],
   ['feeding',['feeding',['../struct_chimera_t_k_1_1_variable_direction.html#a0640f33372cd401d80c0a95c2d5dec35add0fabb0f15a1db73adfe3f6d107b71e',1,'ChimeraTK::VariableDirection']]],

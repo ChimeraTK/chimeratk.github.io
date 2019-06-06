@@ -18,11 +18,12 @@ var searchData=
   ['errorupperlimit',['errorUpperLimit',['../struct_chimera_t_k_1_1_range_monitor.html#a8051970b89521d27d4d0b5c8bf2e4327',1,'ChimeraTK::RangeMonitor']]],
   ['exactmonitor',['ExactMonitor',['../struct_chimera_t_k_1_1_exact_monitor.html',1,'ChimeraTK']]],
   ['exampleapp',['ExampleApp',['../struct_example_app.html',1,'ExampleApp'],['../struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb',1,'ExampleApp::ExampleApp()'],['../struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb',1,'ExampleApp::ExampleApp()'],['../struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb',1,'ExampleApp::ExampleApp()'],['../struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb',1,'ExampleApp::ExampleApp()'],['../struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb',1,'ExampleApp::ExampleApp()']]],
+  ['exception_20handling',['Exception Handling',['../exception_handling.html',1,'index']]],
+  ['exceptionhandling_2edox',['exceptionHandling.dox',['../exception_handling_8dox.html',1,'']]],
   ['exceptionhandlingdecorator',['ExceptionHandlingDecorator',['../class_chimera_t_k_1_1_exception_handling_decorator.html',1,'ChimeraTK::ExceptionHandlingDecorator&lt; UserType &gt;'],['../class_chimera_t_k_1_1_exception_handling_decorator.html#a041470aaee722d1617e172ca0ed25371',1,'ChimeraTK::ExceptionHandlingDecorator::ExceptionHandlingDecorator()']]],
   ['exceptionhandlingdecorator_2ecc',['ExceptionHandlingDecorator.cc',['../_exception_handling_decorator_8cc.html',1,'']]],
   ['exceptionhandlingdecorator_2eh',['ExceptionHandlingDecorator.h',['../_exception_handling_decorator_8h.html',1,'']]],
   ['excludetag',['excludeTag',['../class_chimera_t_k_1_1_entity_owner.html#af3793d15629cb8b73413a1444008d709',1,'ChimeraTK::EntityOwner']]],
-  ['exception_20handling',['Exception Handling',['../excpetiondoc.html',1,'']]],
   ['external',['external',['../class_chimera_t_k_1_1_variable_network.html#aae82485cda15b256982eacbb4a103ecaa6a21b6995a068148bbb65c8f949b3fb2',1,'ChimeraTK::VariableNetwork']]],
   ['externaltrigger',['externalTrigger',['../class_chimera_t_k_1_1_trigger_fan_out.html#ab417d72c6be30895d4e19fe5411a2b58',1,'ChimeraTK::TriggerFanOut::externalTrigger()'],['../struct_chimera_t_k_1_1_variable_network_node__data.html#aea2ed7a5d1fe7756e73ed112a3560ca2',1,'ChimeraTK::VariableNetworkNode_data::externalTrigger()']]],
   ['externaltriggerimpl',['externalTriggerImpl',['../class_chimera_t_k_1_1_variable_network.html#aac7e61dc56b86e82ba535c4a68bcbc15',1,'ChimeraTK::VariableNetwork']]]

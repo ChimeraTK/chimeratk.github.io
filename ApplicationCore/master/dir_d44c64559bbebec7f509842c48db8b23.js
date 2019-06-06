@@ -112,9 +112,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "PushableStream", "class_chimera_t_k_1_1_pushable_stream.html", "class_chimera_t_k_1_1_pushable_stream" ],
       [ "VariableNetworkNodeDumpingVisitor", "class_chimera_t_k_1_1_variable_network_node_dumping_visitor.html", "class_chimera_t_k_1_1_variable_network_node_dumping_visitor" ]
     ] ],
-    [ "VersionNumberUpdatingRegisterDecorator.h", "_version_number_updating_register_decorator_8h.html", [
-      [ "VersionNumberUpdatingRegisterDecorator", "struct_chimera_t_k_1_1_version_number_updating_register_decorator.html", "struct_chimera_t_k_1_1_version_number_updating_register_decorator" ]
-    ] ],
+    [ "VersionNumberUpdatingRegisterDecorator.h", "_version_number_updating_register_decorator_8h.html", "_version_number_updating_register_decorator_8h" ],
     [ "VirtualModule.h", "_virtual_module_8h.html", [
       [ "VirtualModule", "class_chimera_t_k_1_1_virtual_module.html", "class_chimera_t_k_1_1_virtual_module" ]
     ] ],

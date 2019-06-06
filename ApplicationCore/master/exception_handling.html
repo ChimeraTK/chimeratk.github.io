@@ -63,7 +63,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('excpetiondoc.html','');});
+$(document).ready(function(){initNavTree('exception_handling.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -85,9 +85,7 @@ $(document).ready(function(){initNavTree('excpetiondoc.html','');});
 <div class="title">Exception Handling </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Nadeem Shehzad (DESY) </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>21.02.2019</dd></dl>
-<h1><a class="anchor" id="Introduction"></a>
+<div class="textblock"><h1><a class="anchor" id="Introduction"></a>
 Introduction</h1>
 <p>To handle expection, the current simple implementation includes two error state variables:</p><ul>
 <li>"state" (boolean flag if error occurred)</li>
@@ -97,14 +95,18 @@ Introduction</h1>
 <li>/Devices/{AliasName}/message</li>
 <li>/Devices/{AliasName}/status</li>
 </ul>
-<p>In this implementation a user/application can report an exception by calling reportException of DeviceModule with an exception string. The reportException packs the exception in a queue and the blocks the thread. This queue is processed by an internal function handleException which updates the DeviceError variables (status=1 and message= YourExceptionString) and tries to open the device. Once device can be opened the DeviceError variables are updated (status=0 and message="") and blocking threads are notified to continue. It must be noted that whatever operation which lead to exception e.g., read or write, should be repeated after the exception is handled.</p>
-<p>Checkout testExceptionTest.cc under tests/executables_src to see how it works. </p>
+<p>In this implementation a user/application can report an exception by calling reportException of DeviceModule with an exception string. The reportException packs the exception in a queue and the blocks the thread. This queue is processed by an internal function handleException which updates the DeviceError variables (status=1 and message="YourExceptionString") and tries to open the device. Once device can be opened the DeviceError variables are updated (status=0 and message="") and blocking threads are notified to continue. It must be noted that whatever operation which lead to exception e.g., read or write, should be repeated after the exception is handled.</p>
+<p>Checkout testExceptionTest.cc under tests/executables_src to see how it works.</p>
+<h1><a class="anchor" id="DataValidity"></a>
+DataValidity</h1>
+<p><a class="el" href="namespace_chimera_t_k.html" title="Generic modules for status monitoring. ">ChimeraTK</a> supports a DataValidity flag, which is attached to all TransferElements. It can have the two states ok and faulty. This flag is propagated through ApplicationModules automatically. If a faulty flag has been received in an read operation of any input, all subsequent write operations will set the faulty flag as well, until the flag is back to the ok state for all inputs. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jun 4 2019 03:53:22 for ChimeraTK-ApplicationCore by
+    <li class="navelem"><a class="el" href="index.html">index</a></li>
+    <li class="footer">Generated on Thu Jun 6 2019 03:54:21 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

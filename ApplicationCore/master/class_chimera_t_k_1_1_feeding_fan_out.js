@@ -2,6 +2,7 @@ var class_chimera_t_k_1_1_feeding_fan_out =
 [
     [ "FeedingFanOut", "class_chimera_t_k_1_1_feeding_fan_out.html#a845b6a375f6a710b0cfa70b93d73bd0c", null ],
     [ "addSlave", "class_chimera_t_k_1_1_feeding_fan_out.html#ab543f8100799a049314e8989d50eafc6", null ],
+    [ "dataValidity", "class_chimera_t_k_1_1_feeding_fan_out.html#a0fdcf9290b8ed44ab7f8b76e76b802d3", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_feeding_fan_out.html#a080c74c1a23bcb56496fab0738f25183", null ],
     [ "doPostWrite", "class_chimera_t_k_1_1_feeding_fan_out.html#a56dd77acc89ee889c04ea8dc3c0ebd1e", null ],
     [ "doPreRead", "class_chimera_t_k_1_1_feeding_fan_out.html#a5cfd07ae879752a563072d4221bc547e", null ],
@@ -22,7 +23,9 @@ var class_chimera_t_k_1_1_feeding_fan_out =
     [ "isWriteable", "class_chimera_t_k_1_1_feeding_fan_out.html#a6a04459f4acf4cad164eb5f13cc53724", null ],
     [ "mayReplaceOther", "class_chimera_t_k_1_1_feeding_fan_out.html#a176dddfedbea6dbf15b9e3a76d111a11", null ],
     [ "replaceTransferElement", "class_chimera_t_k_1_1_feeding_fan_out.html#a0eb92857a2f6b3d501abc8c441618896", null ],
+    [ "setDataValidity", "class_chimera_t_k_1_1_feeding_fan_out.html#ab8b2eb423be962af8b1f2fd0a937d711", null ],
     [ "_hasReturnSlave", "class_chimera_t_k_1_1_feeding_fan_out.html#a6cc8759cb30495d47af53116e1a136ba", null ],
     [ "_returnSlave", "class_chimera_t_k_1_1_feeding_fan_out.html#a1ea17f80b08cd42ea1967ad095cef30d", null ],
-    [ "_withReturn", "class_chimera_t_k_1_1_feeding_fan_out.html#aeb1f2f3e239b92d48edacd5962df4e1e", null ]
+    [ "_withReturn", "class_chimera_t_k_1_1_feeding_fan_out.html#aeb1f2f3e239b92d48edacd5962df4e1e", null ],
+    [ "validity", "class_chimera_t_k_1_1_feeding_fan_out.html#a35fe7684278269d20c9126c38dd94d4b", null ]
 ];

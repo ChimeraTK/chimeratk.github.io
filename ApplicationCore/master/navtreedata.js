@@ -1,6 +1,10 @@
 var NAVTREE =
 [
   [ "ChimeraTK-ApplicationCore", "index.html", [
+    [ "Exception Handling", "exception_handling.html", [
+      [ "Introduction", "exception_handling.html#Introduction", null ],
+      [ "DataValidity", "exception_handling.html#DataValidity", null ]
+    ] ],
     [ "Logging module and Logger", "loggingdoc.html", [
       [ "Introduction to the logging mechanism", "loggingdoc.html#logginintro", null ]
     ] ],
@@ -10,9 +14,6 @@ var NAVTREE =
     [ "ConfigReader Module", "configreader.html", [
       [ "Example usage", "configreader.html#usage", null ],
       [ "XML file structure", "configreader.html#xmlstructure", null ]
-    ] ],
-    [ "Exception Handling", "excpetiondoc.html", [
-      [ "Introduction", "excpetiondoc.html#Introduction", null ]
     ] ],
     [ "Status Monitor", "statusmonitordoc.html", null ],
     [ "Todo List", "todo.html", null ],
@@ -54,11 +55,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_8cc.html",
-"class_chimera_t_k_1_1_application.html#ad754fcb82f70921783070295991d73a1",
-"class_chimera_t_k_1_1_inversion_of_control_accessor.html#ac964c23d7543e1b60cc43a7fb8152c2e",
-"class_chimera_t_k_1_1_variable_network_node.html#a7b33d42170f8a56b2c534844bede1100",
-"struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html#afaceca3f5fa2e39b8ccc3fe43a87d4e9",
-"struct_chimera_t_k_1_1_write_split_array_module.html#a3266bfd01e7d286958de592dfae803f0"
+"class_chimera_t_k_1_1_application.html#ad198c0bb189aa53c1a4f5e3c0cf4a54e",
+"class_chimera_t_k_1_1_feeding_fan_out.html#ae5ca9a1e8641dbacd884531d5c87e66b",
+"class_chimera_t_k_1_1_variable_network_node.html#a29a00f70857dd272654e755dff7abc65",
+"namespacelogging.html",
+"struct_chimera_t_k_1_1_variable_network_node__data.html#a813a974414573c296ffe2f34d81cf0d1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

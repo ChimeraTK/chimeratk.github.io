@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['lastvalidity',['lastValidity',['../class_chimera_t_k_1_1_version_number_updating_register_decorator.html#affd959f9994ee75953259aafa4a28316',1,'ChimeraTK::VersionNumberUpdatingRegisterDecorator']]],
   ['limitvalue',['LimitValue',['../struct_chimera_t_k_1_1_limit_value.html',1,'ChimeraTK']]],
   ['limitvalue_2eh',['LimitValue.h',['../_limit_value_8h.html',1,'']]],
   ['limitvaluemodulebase',['LimitValueModuleBase',['../struct_chimera_t_k_1_1_limit_value_module_base.html',1,'ChimeraTK']]],

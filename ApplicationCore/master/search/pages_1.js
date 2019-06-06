@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exception_20handling',['Exception Handling',['../excpetiondoc.html',1,'']]]
+  ['exception_20handling',['Exception Handling',['../exception_handling.html',1,'index']]]
 ];

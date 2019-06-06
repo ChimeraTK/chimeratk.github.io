@@ -76,7 +76,7 @@ var namespace_chimera_t_k =
     [ "VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html", "class_chimera_t_k_1_1_variable_network_node" ],
     [ "VariableNetworkNode_data", "struct_chimera_t_k_1_1_variable_network_node__data.html", "struct_chimera_t_k_1_1_variable_network_node__data" ],
     [ "VariableNetworkNodeDumpingVisitor", "class_chimera_t_k_1_1_variable_network_node_dumping_visitor.html", "class_chimera_t_k_1_1_variable_network_node_dumping_visitor" ],
-    [ "VersionNumberUpdatingRegisterDecorator", "struct_chimera_t_k_1_1_version_number_updating_register_decorator.html", "struct_chimera_t_k_1_1_version_number_updating_register_decorator" ],
+    [ "VersionNumberUpdatingRegisterDecorator", "class_chimera_t_k_1_1_version_number_updating_register_decorator.html", "class_chimera_t_k_1_1_version_number_updating_register_decorator" ],
     [ "VirtualModule", "class_chimera_t_k_1_1_virtual_module.html", "class_chimera_t_k_1_1_virtual_module" ],
     [ "Visitor", "class_chimera_t_k_1_1_visitor.html", null ],
     [ "Visitor< T >", "class_chimera_t_k_1_1_visitor_3_01_t_01_4.html", "class_chimera_t_k_1_1_visitor_3_01_t_01_4" ],

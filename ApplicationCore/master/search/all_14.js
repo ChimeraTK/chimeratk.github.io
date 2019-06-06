@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['validity',['validity',['../class_chimera_t_k_1_1_feeding_fan_out.html#a35fe7684278269d20c9126c38dd94d4b',1,'ChimeraTK::FeedingFanOut']]],
   ['value',['value',['../struct_chimera_t_k_1_1_variable.html#a0de0cd623bfe2cbc1569d7dc5574aee2',1,'ChimeraTK::Variable']]],
   ['values',['values',['../struct_chimera_t_k_1_1_array.html#a1b8c05d2433a2926a401f61a9c2b21fd',1,'ChimeraTK::Array']]],
   ['valuetype',['valueType',['../class_chimera_t_k_1_1_variable_network.html#ada5fd00357007bceaf88a20c81196c08',1,'ChimeraTK::VariableNetwork::valueType()'],['../struct_chimera_t_k_1_1_variable_network_node__data.html#a5f9b8539eb8e5c235a9f4be9a2771063',1,'ChimeraTK::VariableNetworkNode_data::valueType()']]],
@@ -30,7 +31,7 @@ var searchData=
   ['variablenetworknodedumpingvisitor_2eh',['VariableNetworkNodeDumpingVisitor.h',['../_variable_network_node_dumping_visitor_8h.html',1,'']]],
   ['variables',['variables',['../class_chimera_t_k_1_1_control_system_module.html#a9d62aca2baf414b4d94aa7a328f180ce',1,'ChimeraTK::ControlSystemModule']]],
   ['versionnumber',['versionNumber',['../class_chimera_t_k_1_1_constant_accessor.html#ac6f8044ac83164bf1cf57f65e93a98e4',1,'ChimeraTK::ConstantAccessor']]],
-  ['versionnumberupdatingregisterdecorator',['VersionNumberUpdatingRegisterDecorator',['../struct_chimera_t_k_1_1_version_number_updating_register_decorator.html',1,'ChimeraTK::VersionNumberUpdatingRegisterDecorator&lt; T &gt;'],['../struct_chimera_t_k_1_1_version_number_updating_register_decorator.html#acaf2717d3b8503ab517833736de3fccb',1,'ChimeraTK::VersionNumberUpdatingRegisterDecorator::VersionNumberUpdatingRegisterDecorator()']]],
+  ['versionnumberupdatingregisterdecorator',['VersionNumberUpdatingRegisterDecorator',['../class_chimera_t_k_1_1_version_number_updating_register_decorator.html',1,'ChimeraTK::VersionNumberUpdatingRegisterDecorator&lt; T &gt;'],['../class_chimera_t_k_1_1_version_number_updating_register_decorator.html#acaf2717d3b8503ab517833736de3fccb',1,'ChimeraTK::VersionNumberUpdatingRegisterDecorator::VersionNumberUpdatingRegisterDecorator()']]],
   ['versionnumberupdatingregisterdecorator_2ecc',['VersionNumberUpdatingRegisterDecorator.cc',['../_version_number_updating_register_decorator_8cc.html',1,'']]],
   ['versionnumberupdatingregisterdecorator_2eh',['VersionNumberUpdatingRegisterDecorator.h',['../_version_number_updating_register_decorator_8h.html',1,'']]],
   ['virtualise',['virtualise',['../class_chimera_t_k_1_1_control_system_module.html#a61be8696270f26ed4e7a8d9fc7d66a03',1,'ChimeraTK::ControlSystemModule::virtualise()'],['../class_chimera_t_k_1_1_device_module.html#afab701aa44d472d8f7bba14c8c94b046',1,'ChimeraTK::DeviceModule::virtualise()'],['../class_chimera_t_k_1_1_module.html#a9efbb4df2454977ec359f4687fe39f28',1,'ChimeraTK::Module::virtualise()'],['../class_chimera_t_k_1_1_module_impl.html#a04d8be278c790e0479a847225d7e1c5f',1,'ChimeraTK::ModuleImpl::virtualise()'],['../class_chimera_t_k_1_1_virtual_module.html#abc61ba0a45c257edef5f9a29d5667003',1,'ChimeraTK::VirtualModule::virtualise()']]],

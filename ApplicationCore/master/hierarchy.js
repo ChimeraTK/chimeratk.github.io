@@ -229,7 +229,7 @@ var hierarchy =
       [ "ChimeraTK::DebugPrintAccessorDecorator< UserType >", "class_chimera_t_k_1_1_debug_print_accessor_decorator.html", null ],
       [ "ChimeraTK::ExceptionHandlingDecorator< UserType >", "class_chimera_t_k_1_1_exception_handling_decorator.html", null ],
       [ "ChimeraTK::TestableModeAccessorDecorator< UserType >", "class_chimera_t_k_1_1_testable_mode_accessor_decorator.html", null ],
-      [ "ChimeraTK::VersionNumberUpdatingRegisterDecorator< T >", "struct_chimera_t_k_1_1_version_number_updating_register_decorator.html", null ]
+      [ "ChimeraTK::VersionNumberUpdatingRegisterDecorator< T >", "class_chimera_t_k_1_1_version_number_updating_register_decorator.html", null ]
     ] ],
     [ "OneDRegisterAccessor", null, [
       [ "ChimeraTK::ArrayAccessor< InputType >", "class_chimera_t_k_1_1_array_accessor.html", null ],
