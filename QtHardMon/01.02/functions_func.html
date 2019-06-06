@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,10 +27,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">QtHardMon
-   &#160;<span id="projectnumber">01.02.00</span>
+   &#160;<span id="projectnumber">01.02.01</span>
    </div>
   </td>
  </tr>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_func.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,7 +88,8 @@ $(function() {
 : <a class="el" href="class_properties_widget.html#ac0c319ea86060ad8933ee482e2725df8">PropertiesWidget</a>
 </li>
 <li>clearFields()
-: <a class="el" href="class_properties_widget.html#af4e895a0977460151bcc17021b325c8c">PropertiesWidget</a>
+: <a class="el" href="class_example_properties_widget.html#a989176224b419d1a3cbc3f15ab3c0287">ExamplePropertiesWidget</a>
+, <a class="el" href="class_properties_widget.html#af4e895a0977460151bcc17021b325c8c">PropertiesWidget</a>
 </li>
 <li>clearModifiedFlags()
 : <a class="el" href="class_register_accessor_model.html#aecf113c52514c5493d342679c63c2bd4">RegisterAccessorModel</a>
@@ -111,11 +133,17 @@ $(function() {
 <li>Destroy()
 : <a class="el" href="class_create_by_new.html#adebee46bbd3427526e4f3df5afd79fff">CreateByNew&lt; T &gt;</a>
 </li>
+<li>DeviceAccessSetup_fixture()
+: <a class="el" href="struct_device_access_setup__fixture.html#aeb602b7516acfa642cdd2a2556e00d52">DeviceAccessSetup_fixture</a>
+</li>
 <li>DeviceElementQTreeItem()
 : <a class="el" href="class_device_element_q_tree_item.html#a029aa48e7f32693f7af53e7e6bc03f21">DeviceElementQTreeItem</a>
 </li>
+<li>DeviceElementQTreeItem_fixtureBase()
+: <a class="el" href="struct_example_device_element_q_tree_item__fixture_base.html#a4c6e044316056a192be15ee091a83fe8">ExampleDeviceElementQTreeItem_fixtureBase</a>
+</li>
 <li>DeviceListItem()
-: <a class="el" href="class_qt_hard_mon_1_1_device_list_item.html#a8dbf6f654728cef1400d7ef5ed37bce9">QtHardMon::DeviceListItem</a>
+: <a class="el" href="class_qt_hard_mon_1_1_device_list_item.html#a794a95972094e231d41f4c96555ee7d6">QtHardMon::DeviceListItem</a>
 </li>
 <li>displayText()
 : <a class="el" href="class_custom_delegates.html#a369748af11f908d74aed1dd8a9651fa9">CustomDelegates</a>
@@ -124,6 +152,15 @@ $(function() {
 
 
 <h3><a id="index_e"></a>- e -</h3><ul>
+<li>ExampleDeviceElementQTreeItem_fixture()
+: <a class="el" href="struct_example_device_element_q_tree_item__fixture.html#ae02c9d369758a67e1fb632d9fd52c8d7">ExampleDeviceElementQTreeItem_fixture</a>
+</li>
+<li>ExamplePropertiesWidget()
+: <a class="el" href="class_example_properties_widget.html#a31f5f6d2448dcde24acba8d67b4a2929">ExamplePropertiesWidget</a>
+</li>
+<li>ExamplePropertiesWidget_fixtureBase()
+: <a class="el" href="struct_example_properties_widget__fixture_base.html#a16eee69fab8d0f4b6412e47d40da6005">ExamplePropertiesWidget_fixtureBase</a>
+</li>
 <li>extractFileNameFromPath()
 : <a class="el" href="class_qt_hard_mon.html#a6bebae0b642d5aab09fc9b20deddef15">QtHardMon</a>
 </li>
@@ -290,8 +327,14 @@ $(function() {
 , <a class="el" href="class_register_type_abstractor_impl.html#a6bb279a54616c5fbd74fcba88c8e588f">RegisterTypeAbstractorImpl&lt; USER_DATA_TYPE &gt;</a>
 , <a class="el" href="class_register_type_abstractor_raw_impl.html#ab136c181bdafc0427c6ca897a832452a">RegisterTypeAbstractorRawImpl&lt; RAW_DATA_TYPE, COOKED_DATA_TYPE &gt;</a>
 </li>
+<li>readData()
+: <a class="el" href="class_register_q_tree_item.html#ad154f275e0c298872d98d7aa2c488f0a">RegisterQTreeItem</a>
+</li>
 <li>RegisterAccessorModel()
 : <a class="el" href="class_register_accessor_model.html#a2ce82e0c7c282215f00e48b49df77b42">RegisterAccessorModel</a>
+</li>
+<li>RegisterQTreeItem()
+: <a class="el" href="class_register_q_tree_item.html#ae0ef4107afb4d6fcda36db872aad3520">RegisterQTreeItem</a>
 </li>
 <li>RegisterTypeAbstractorImpl()
 : <a class="el" href="class_register_type_abstractor_impl.html#a27d53e92d988da53cbcfa217c115a625">RegisterTypeAbstractorImpl&lt; USER_DATA_TYPE &gt;</a>
@@ -310,7 +353,8 @@ $(function() {
 : <a class="el" href="class_lifetime_standard.html#a78a0cce4b3793c886049e332263f1f11">LifetimeStandard&lt; T &gt;</a>
 </li>
 <li>setAddress()
-: <a class="el" href="class_properties_widget.html#a0c0b9495f184121c0dc3233946fd0648">PropertiesWidget</a>
+: <a class="el" href="class_example_properties_widget.html#ade17b09f9075d7da29f26bd70c308f1d">ExamplePropertiesWidget</a>
+, <a class="el" href="class_properties_widget.html#a0c0b9495f184121c0dc3233946fd0648">PropertiesWidget</a>
 </li>
 <li>setChannelNumber()
 : <a class="el" href="class_register_accessor_model.html#af5343774a8fd7b4291f225d89c72a050">RegisterAccessorModel</a>
@@ -328,10 +372,14 @@ $(function() {
 : <a class="el" href="class_custom_delegates.html#a1f08627d59a82074fb8797fc9e80b2cc">CustomDelegates</a>
 </li>
 <li>setFixedPointInfo()
-: <a class="el" href="class_properties_widget.html#a472db309f62f83d399123378f810cbd8">PropertiesWidget</a>
+: <a class="el" href="class_example_properties_widget.html#ab10ed14fcd32d350fd2a568f0a6d6680">ExamplePropertiesWidget</a>
+, <a class="el" href="class_properties_widget.html#a472db309f62f83d399123378f810cbd8">PropertiesWidget</a>
 </li>
 <li>setModelData()
 : <a class="el" href="class_custom_delegates.html#a731a17f11e706085c0433f12d49c17f1">CustomDelegates</a>
+</li>
+<li>setNames()
+: <a class="el" href="class_example_properties_widget.html#a9af0c018ab942c03b83026afaed03b86">ExamplePropertiesWidget</a>
 </li>
 <li>setOneDWidgetsVisible()
 : <a class="el" href="class_properties_widget.html#a76743665a4fd1fda4420abf9f1c1e05f">PropertiesWidget</a>
@@ -346,6 +394,9 @@ $(function() {
 </li>
 <li>setShape()
 : <a class="el" href="class_properties_widget.html#af499d1e850fdbe8d75773620c6bfc949">PropertiesWidget</a>
+</li>
+<li>setSize()
+: <a class="el" href="class_example_properties_widget.html#ae4f5535431a7cd2b7b0ff8ce47ba64b1">ExamplePropertiesWidget</a>
 </li>
 <li>setTwoDWidgetsVisible()
 : <a class="el" href="class_properties_widget.html#a6e11727cf0e96427d8f36bf2ffb2f7b1">PropertiesWidget</a>
@@ -374,6 +425,9 @@ $(function() {
 <li>updateRegisterInfo()
 : <a class="el" href="class_properties_widget.html#af24e33cca6c7971bba19a5e7e4dcada9">PropertiesWidget</a>
 </li>
+<li>updateRegisterProperties()
+: <a class="el" href="class_register_q_tree_item.html#a08cbb7e4d1db322e8da01055c2676b0a">RegisterQTreeItem</a>
+</li>
 </ul>
 
 
@@ -401,12 +455,18 @@ $(function() {
 <li>writeConfig()
 : <a class="el" href="class_qt_hard_mon.html#a81efa5e61c35f932af1026528047e2e3">QtHardMon</a>
 </li>
+<li>writeData()
+: <a class="el" href="class_register_q_tree_item.html#afccc60857dff20a4c1d1e4bb781a1767">RegisterQTreeItem</a>
+</li>
 </ul>
 
 
 <h3><a id="index_0x7e"></a>- ~ -</h3><ul>
 <li>~DeviceListItem()
 : <a class="el" href="class_qt_hard_mon_1_1_device_list_item.html#a6e04808a02e87f98e4270223eec9f8ba">QtHardMon::DeviceListItem</a>
+</li>
+<li>~ExamplePropertiesWidget()
+: <a class="el" href="class_example_properties_widget.html#aa78f66e77161737a3fb3f9b647218b84">ExamplePropertiesWidget</a>
 </li>
 <li>~PlotWindow()
 : <a class="el" href="class_plot_window.html#a684ea087a646cbe658940098a25ce150">PlotWindow</a>
@@ -419,11 +479,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 2 2019 05:53:13 for QtHardMon by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Thu Jun 6 2019 03:53:53 for QtHardMon by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

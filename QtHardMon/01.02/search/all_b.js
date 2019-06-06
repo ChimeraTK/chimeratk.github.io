@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['nchannels',['nChannels',['../class_register_type_abstractor.html#ac7cec671b0756136f127f0fb66f055dd',1,'RegisterTypeAbstractor::nChannels()'],['../class_register_type_abstractor_impl.html#a33e4aa2cac8787663e0b618fcc70f1ff',1,'RegisterTypeAbstractorImpl::nChannels()']]],
-  ['nelements',['nElements',['../class_register_type_abstractor.html#a72d33cece14afed7d5ee356e02d26c0b',1,'RegisterTypeAbstractor::nElements()'],['../class_register_type_abstractor_impl.html#a00c5106f3b7747a64430ce1ebf24e517',1,'RegisterTypeAbstractorImpl::nElements()']]],
-  ['no_5fmodule_5fname_5fstring',['NO_MODULE_NAME_STRING',['../_qt_hard_mon_8cpp.html#acb06af8f2ecf53374d358686268b3def',1,'QtHardMon.cpp']]]
+  ['main',['main',['../main_8cpp.html#a76d7886ff34652714e4a2d447ae4c5b6',1,'main.cpp']]],
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['max_5fwords_5fstring',['MAX_WORDS_STRING',['../_qt_hard_mon_8cpp.html#a0d436e024a980a4a1981cd5d2bb3df58',1,'QtHardMon.cpp']]],
+  ['module_5fextension_5fstring',['MODULE_EXTENSION_STRING',['../_qt_hard_mon_8cpp.html#a685ab1dafdb3d0599b2cae4e550cbcd9',1,'QtHardMon.cpp']]]
 ];

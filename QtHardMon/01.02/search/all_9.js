@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['lastselectedregister',['lastSelectedRegister',['../class_qt_hard_mon_1_1_device_list_item.html#a57dc872f6b6fd8b2d5b8b03af83e9721',1,'QtHardMon::DeviceListItem']]],
-  ['lifetimestandard',['LifetimeStandard',['../class_lifetime_standard.html',1,'']]],
-  ['loadconfig',['loadConfig',['../class_qt_hard_mon.html#a418bf9611a809431037ed30409d9172a',1,'QtHardMon']]],
-  ['loaddmapfile',['loadDmapFile',['../class_qt_hard_mon.html#a207299bc54f3520d125f9f1ab7c37f06',1,'QtHardMon']]],
-  ['lock',['Lock',['../class_single_thread_1_1_lock.html',1,'SingleThread']]]
+  ['insidereadorwrite_5f',['insideReadOrWrite_',['../class_qt_hard_mon.html#ab69fa11debc8ac16f46a2fc126ee4fd1',1,'QtHardMon']]],
+  ['instance',['Instance',['../class_singleton_holder.html#aacd163609b54b71682edb1e8f1bcb45c',1,'SingletonHolder']]],
+  ['isintegral',['isIntegral',['../class_register_type_abstractor.html#a60cb6d79dac7d07c72182a97071dbea3',1,'RegisterTypeAbstractor::isIntegral()'],['../class_register_type_abstractor_impl.html#a3b4c561468a8481b733090d5fb2c8de4',1,'RegisterTypeAbstractorImpl::isIntegral()'],['../class_register_type_abstractor_raw_impl.html#a09abfa376aa7a6d5227b62eb9677a4b3',1,'RegisterTypeAbstractorRawImpl::isIntegral()']]],
+  ['item',['item',['../struct_example_device_element_q_tree_item__fixture.html#a8f1eafcba5fd4b1d3680cb8e3056ecc5',1,'ExampleDeviceElementQTreeItem_fixture']]]
 ];

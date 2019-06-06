@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ui',['ui',['../class_properties_widget.html#adba137f054fca3c8ecedbc1bdb3ad835',1,'PropertiesWidget::ui()'],['../class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e',1,'QtHardMon::ui()']]]
+  ['propertieswidget',['propertiesWidget',['../struct_example_device_element_q_tree_item__fixture_base.html#a98142c8f138375a69d4c6f7c7ba701a9',1,'ExampleDeviceElementQTreeItem_fixtureBase']]],
+  ['propertieswidgetprovider',['propertiesWidgetProvider',['../struct_example_device_element_q_tree_item__fixture_base.html#a28bd3bda9cba6bfb39d655354261bb4f',1,'ExampleDeviceElementQTreeItem_fixtureBase']]]
 ];

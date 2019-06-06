@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['insidereadorwrite_5f',['insideReadOrWrite_',['../class_qt_hard_mon.html#ab69fa11debc8ac16f46a2fc126ee4fd1',1,'QtHardMon']]],
-  ['instance',['Instance',['../class_singleton_holder.html#aacd163609b54b71682edb1e8f1bcb45c',1,'SingletonHolder']]],
-  ['isintegral',['isIntegral',['../class_register_type_abstractor.html#a60cb6d79dac7d07c72182a97071dbea3',1,'RegisterTypeAbstractor::isIntegral()'],['../class_register_type_abstractor_impl.html#a3b4c561468a8481b733090d5fb2c8de4',1,'RegisterTypeAbstractorImpl::isIntegral()'],['../class_register_type_abstractor_raw_impl.html#a09abfa376aa7a6d5227b62eb9677a4b3',1,'RegisterTypeAbstractorRawImpl::isIntegral()']]]
+  ['headerdata',['headerData',['../class_register_accessor_model.html#ab40a89d74973315e9d9742c85c9bece9',1,'RegisterAccessorModel']]],
+  ['hexdata',['HexData',['../class_hex_data.html',1,'HexData'],['../class_hex_data.html#aa07682a2f13b886b319c4957b3ab146c',1,'HexData::HexData(double v=0)'],['../class_hex_data.html#a8f242003b090567d62f666b7a19a96c0',1,'HexData::HexData(std::string v)']]],
+  ['hexdatatype',['HexDataType',['../_variant_user_types_8h.html#abfc6e5b4da32e2d4bc3e99ed6840306a',1,'VariantUserTypes.h']]],
+  ['hexspinbox',['HexSpinBox',['../class_hex_spin_box.html',1,'HexSpinBox'],['../class_hex_spin_box.html#a8e45f1219dfd1631677ee4f99b745b12',1,'HexSpinBox::HexSpinBox()']]],
+  ['hexspinbox_2ecpp',['HexSpinBox.cpp',['../_hex_spin_box_8cpp.html',1,'']]],
+  ['hexspinbox_2eh',['HexSpinBox.h',['../_hex_spin_box_8h.html',1,'']]]
 ];
