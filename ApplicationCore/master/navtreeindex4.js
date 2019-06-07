@@ -1,6 +1,9 @@
 var NAVTREEINDEX4 =
 {
+"namespace_chimera_t_k_1_1history.html":[7,0,0,0],
+"namespace_chimera_t_k_1_1history.html":[6,0,0,0],
 "namespacelogging.html":[6,0,1],
+"namespacelogging.html":[7,0,1],
 "namespacemembers.html":[6,1,0],
 "namespacemembers_enum.html":[6,1,3],
 "namespacemembers_eval.html":[6,1,4],
@@ -14,8 +17,8 @@ var NAVTREEINDEX4 =
 "struct_automation.html#a1a86176292eb457cf69d9a764a38a468":[7,0,2,3],
 "struct_automation.html#a4a08a0e51d5adb3d163709212eff7ecb":[7,0,2,4],
 "struct_automation.html#a6d28e80b6662b738458f8753adc2f837":[7,0,2,5],
-"struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[7,0,2,0],
 "struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[7,0,2,1],
+"struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[7,0,2,0],
 "struct_automation.html#aa738677550010b51b08df005e0e1d7f3":[7,0,2,2],
 "struct_automation.html#acff6fa50c6a95870a79b4b1df4a14ea1":[7,0,2,7],
 "struct_automation.html#adc175eb9561ef659f570a65ae1ac97cc":[7,0,2,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "struct_chimera_t_k_1_1_variable_network_node__data.html#a45c063050975eec1d6914bc52d210c45":[7,0,0,74,9],
 "struct_chimera_t_k_1_1_variable_network_node__data.html#a491ae491d551c46ff4b2f674831429bf":[7,0,0,74,0],
 "struct_chimera_t_k_1_1_variable_network_node__data.html#a55196ea2ebb93e081d552de34bd65777":[7,0,0,74,11],
-"struct_chimera_t_k_1_1_variable_network_node__data.html#a58197c786a08cdcd9d22585818e49db1":[7,0,0,74,8],
-"struct_chimera_t_k_1_1_variable_network_node__data.html#a5da8f84d69e239401006d7af009acc15":[7,0,0,74,19],
-"struct_chimera_t_k_1_1_variable_network_node__data.html#a5f9b8539eb8e5c235a9f4be9a2771063":[7,0,0,74,20],
-"struct_chimera_t_k_1_1_variable_network_node__data.html#a6472ffa489109f46e0412b3508140294":[7,0,0,74,2]
+"struct_chimera_t_k_1_1_variable_network_node__data.html#a58197c786a08cdcd9d22585818e49db1":[7,0,0,74,8]
 };

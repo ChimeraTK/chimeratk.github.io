@@ -645,7 +645,7 @@ Protected Attributes</h2></td></tr>
 <p>Decrement the fault counter and set the data validity flag to ok if the counter has reached 0. </p>
 <p>This function will be called by all input accessors when receiving the an ok update if the previous update was faulty. The caller of this function must ensure that calles to this function are paired to a previous call to <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a59d02ecae8bc99e76c7561c3ccea946c" title="Set the data validity flag to fault and increment the fault counter. ">incrementDataFaultCounter()</a>. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#af1332b0343aab7ec81f4e0936d16a48b">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#a449d69fbb2f2fa6835c3db45e148aace">ChimeraTK::Module</a>, and <a class="el" href="class_chimera_t_k_1_1_application_module.html#a91ee550d32401fa635fbad8a8b301d1d">ChimeraTK::ApplicationModule</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#af1332b0343aab7ec81f4e0936d16a48b">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#a449d69fbb2f2fa6835c3db45e148aace">ChimeraTK::Module</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#a674ce21caf7c5fad16ecfa054d66e9a2">ChimeraTK::DeviceModule</a>, and <a class="el" href="class_chimera_t_k_1_1_application_module.html#a91ee550d32401fa635fbad8a8b301d1d">ChimeraTK::ApplicationModule</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -1109,7 +1109,7 @@ Protected Attributes</h2></td></tr>
 <p>Return the data validity flag. </p>
 <p>If any This function will be called by all output accessors in their write functions. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#afc90a088a6dd23059f539bc80b486c7a">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#a5a5f8bbd296d64d5fb804c2c6a9de643">ChimeraTK::Module</a>, and <a class="el" href="class_chimera_t_k_1_1_application_module.html#a16d396795d2e8116cc75cd3a10d160f2">ChimeraTK::ApplicationModule</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#afc90a088a6dd23059f539bc80b486c7a">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#a5a5f8bbd296d64d5fb804c2c6a9de643">ChimeraTK::Module</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#ae096be5d7013ce6bc18e5fb39d7674cc">ChimeraTK::DeviceModule</a>, and <a class="el" href="class_chimera_t_k_1_1_application_module.html#a16d396795d2e8116cc75cd3a10d160f2">ChimeraTK::ApplicationModule</a>.</p>
 <div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-28-summary" class="dynsummary" style="display:block;">
@@ -1556,7 +1556,7 @@ Protected Attributes</h2></td></tr>
 <p>Set the data validity flag to fault and increment the fault counter. </p>
 <p>This function will be called by all input accessors when receiving the a faulty update if the previous update was ok. The caller of this function must ensure that calls to this function are paired to a subsequent call to <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a2e6036e82c5f3b01bc062ceb431f94bb" title="Decrement the fault counter and set the data validity flag to ok if the counter has reached 0...">decrementDataFaultCounter()</a>. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#a0043e5e1a2c7a89bd114113596281475">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#aeab986f027cd1b5f683b468abf7f07fc">ChimeraTK::Module</a>, and <a class="el" href="class_chimera_t_k_1_1_application_module.html#af4290a346d2b866d4c8fd11e459a0196">ChimeraTK::ApplicationModule</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#a0043e5e1a2c7a89bd114113596281475">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#aeab986f027cd1b5f683b468abf7f07fc">ChimeraTK::Module</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#a72f0208f35c664dbedf03ba267172d65">ChimeraTK::DeviceModule</a>, and <a class="el" href="class_chimera_t_k_1_1_application_module.html#af4290a346d2b866d4c8fd11e459a0196">ChimeraTK::ApplicationModule</a>.</p>
 <div id="dynsection-46" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-46-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-46-summary" class="dynsummary" style="display:block;">
@@ -2041,7 +2041,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a></li>
-    <li class="footer">Generated on Thu Jun 6 2019 03:54:22 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Jun 7 2019 03:53:35 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
