@@ -3,6 +3,7 @@ var searchData=
   ['createdoocsscalar_3c_20std_3a_3astring_2c_20d_5fstring_20_3e',['createDoocsScalar&lt; std::string, D_string &gt;',['../namespace_chimera_t_k.html#adbbbb15994bdc83f36aa4cefd5e124d7',1,'ChimeraTK']]],
   ['createdoocsscalar_3c_20std_3a_3astring_2c_20d_5ftextunifier_20_3e',['createDoocsScalar&lt; std::string, D_textUnifier &gt;',['../namespace_chimera_t_k.html#af13bfcddfb8bea512c23089abef783b0',1,'ChimeraTK']]],
   ['d_5ftextunifier',['D_textUnifier',['../struct_d__text_unifier.html#af1e3236f29a3ae88db7603f8bd8b9f0e',1,'D_textUnifier']]],
+  ['datavalidity',['dataValidity',['../class_chimera_t_k_1_1_doocs_transfer_element.html#a72ced4b69579f2a90d82959d30c8fa54',1,'ChimeraTK::DoocsTransferElement']]],
   ['derivetype',['deriveType',['../struct_chimera_t_k_1_1_auto_property_description.html#a3cfc7fc63c81386a2eb16f652b1e7c63',1,'ChimeraTK::AutoPropertyDescription']]],
   ['determinename',['determineName',['../namespace_chimera_t_k.html#a76ae8c499735588a556f99205b693955',1,'ChimeraTK']]],
   ['directimport',['directImport',['../class_chimera_t_k_1_1_variable_mapper.html#aa82afb60d4171aae9cdf9f89f8a892e8',1,'ChimeraTK::VariableMapper']]],

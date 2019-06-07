@@ -135,6 +135,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af1bfbda045e18401939a15880c755d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac51735a2dbc909ef1d21b9fc23e1ad41"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_transfer_element.html#ac51735a2dbc909ef1d21b9fc23e1ad41">replaceTransferElement</a> (boost::shared_ptr&lt; TransferElement &gt; newElement) override</td></tr>
 <tr class="separator:ac51735a2dbc909ef1d21b9fc23e1ad41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f4876119afe59271e998ac326edaae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_transfer_element.html#a13f4876119afe59271e998ac326edaae">setDataValidity</a> (DataValidity validity=DataValidity::ok) override</td></tr>
+<tr class="separator:a13f4876119afe59271e998ac326edaae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ced4b69579f2a90d82959d30c8fa54"><td class="memItemLeft" align="right" valign="top">DataValidity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_transfer_element.html#a72ced4b69579f2a90d82959d30c8fa54">dataValidity</a> ()</td></tr>
+<tr class="separator:a72ced4b69579f2a90d82959d30c8fa54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -182,6 +186,35 @@ template&lt;class UserType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a72ced4b69579f2a90d82959d30c8fa54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72ced4b69579f2a90d82959d30c8fa54">&#9670;&nbsp;</a></span>dataValidity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataValidity <a class="el" href="class_chimera_t_k_1_1_doocs_transfer_element.html">ChimeraTK::DoocsTransferElement</a>&lt; UserType &gt;::dataValidity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_transfer_element_8h_source.html#l00050">50</a> of file <a class="el" href="_doocs_transfer_element_8h_source.html">DoocsTransferElement.h</a>.</p>
+
+</div>
+</div>
 <a id="a3615a0f9e0b4ab246f3c7a2c99d375fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3615a0f9e0b4ab246f3c7a2c99d375fc">&#9670;&nbsp;</a></span>doReadTransfer()</h2>
 
@@ -503,6 +536,36 @@ template&lt;class UserType &gt; </div>
 
 </div>
 </div>
+<a id="a13f4876119afe59271e998ac326edaae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13f4876119afe59271e998ac326edaae">&#9670;&nbsp;</a></span>setDataValidity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_doocs_transfer_element.html">ChimeraTK::DoocsTransferElement</a>&lt; UserType &gt;::setDataValidity </td>
+          <td>(</td>
+          <td class="paramtype">DataValidity&#160;</td>
+          <td class="paramname"><em>validity</em> = <code>DataValidity::ok</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_transfer_element_8h_source.html#l00048">48</a> of file <a class="el" href="_doocs_transfer_element_8h_source.html">DoocsTransferElement.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="aae302910b2cdec35daa94048eb298db3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae302910b2cdec35daa94048eb298db3">&#9670;&nbsp;</a></span>_processArray</h2>
@@ -526,7 +589,7 @@ template&lt;class UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_transfer_element_8h_source.html#l00049">49</a> of file <a class="el" href="_doocs_transfer_element_8h_source.html">DoocsTransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_transfer_element_8h_source.html#l00053">53</a> of file <a class="el" href="_doocs_transfer_element_8h_source.html">DoocsTransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -539,7 +602,7 @@ template&lt;class UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_transfer_element.html">DoocsTransferElement</a></li>
-    <li class="footer">Generated on Thu Jun 6 2019 03:55:11 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Fri Jun 7 2019 03:54:10 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
