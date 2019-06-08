@@ -44,6 +44,7 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::PersistentDataStorage", "class_chimera_t_k_1_1_persistent_data_storage.html", null ],
     [ "ChimeraTK::ProcessVariableListener", "class_chimera_t_k_1_1_process_variable_listener.html", null ],
+    [ "ChimeraTK::PersistentDataStorage::Queue< DataType >", "class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html", null ],
     [ "ChimeraTK::PersistentDataStorage::registerVariable_oldTypeRemover", "struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html", null ],
     [ "ChimeraTK::csa_helpers::Round< S >", "struct_chimera_t_k_1_1csa__helpers_1_1_round.html", null ],
     [ "TimeStampSource", null, [

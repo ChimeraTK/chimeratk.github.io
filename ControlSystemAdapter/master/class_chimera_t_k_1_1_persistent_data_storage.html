@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_persistent_data_
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -108,15 +109,18 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_persistent_data_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html">Queue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread safe queue for write to file thread.  <a href="class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html">registerVariable_oldTypeRemover</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A functor needed in <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#af965b63c9258181f5ff535495b8f316c" title="Register a variable to be stored to and retrieved from the data storage. ">registerVariable()</a>  <a href="struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a574aaa0d282ce6c8285ad30d43d06b4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a574aaa0d282ce6c8285ad30d43d06b4a">PersistentDataStorage</a> (std::string const &amp;applicationName)</td></tr>
-<tr class="memdesc:a574aaa0d282ce6c8285ad30d43d06b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: Open and parse the storage file.  <a href="#a574aaa0d282ce6c8285ad30d43d06b4a">More...</a><br /></td></tr>
-<tr class="separator:a574aaa0d282ce6c8285ad30d43d06b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a8c302285f2906924277fc5486bb84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a03a8c302285f2906924277fc5486bb84">PersistentDataStorage</a> (std::string const &amp;applicationName, unsigned int fileWriteInterval=<a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ada80e6d680be0364eb0c44ea15dc6240">DEFAULT_WRITE_INTERVAL</a>)</td></tr>
+<tr class="memdesc:a03a8c302285f2906924277fc5486bb84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: Open and parse the storage file.  <a href="#a03a8c302285f2906924277fc5486bb84">More...</a><br /></td></tr>
+<tr class="separator:a03a8c302285f2906924277fc5486bb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc1b9e7b25f2d209e1b15e889af01fb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#acc1b9e7b25f2d209e1b15e889af01fb8">~PersistentDataStorage</a> ()</td></tr>
 <tr class="memdesc:acc1b9e7b25f2d209e1b15e889af01fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor: Store variables to the file.  <a href="#acc1b9e7b25f2d209e1b15e889af01fb8">More...</a><br /></td></tr>
 <tr class="separator:acc1b9e7b25f2d209e1b15e889af01fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,21 +128,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af965b63c9258181f5ff535495b8f316c"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#af965b63c9258181f5ff535495b8f316c">registerVariable</a> (ChimeraTK::RegisterPath const &amp;name, size_t nElements, bool fromFile=false)</td></tr>
 <tr class="memdesc:af965b63c9258181f5ff535495b8f316c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a variable to be stored to and retrieved from the data storage.  <a href="#af965b63c9258181f5ff535495b8f316c">More...</a><br /></td></tr>
 <tr class="separator:af965b63c9258181f5ff535495b8f316c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af20e9b672b0203a6c9a75d9cbf14bc96"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
-<tr class="memitem:af20e9b672b0203a6c9a75d9cbf14bc96"><td class="memTemplItemLeft" align="right" valign="top">const std::vector&lt; DataType &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#af20e9b672b0203a6c9a75d9cbf14bc96">retrieveValue</a> (size_t id)</td></tr>
-<tr class="memdesc:af20e9b672b0203a6c9a75d9cbf14bc96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the current value for the variable with the given ID.  <a href="#af20e9b672b0203a6c9a75d9cbf14bc96">More...</a><br /></td></tr>
-<tr class="separator:af20e9b672b0203a6c9a75d9cbf14bc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a3e048d31966415906a1bd81fb94929"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
+<tr class="memitem:a7a3e048d31966415906a1bd81fb94929"><td class="memTemplItemLeft" align="right" valign="top">const std::vector&lt; DataType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a7a3e048d31966415906a1bd81fb94929">retrieveValue</a> (size_t id)</td></tr>
+<tr class="memdesc:a7a3e048d31966415906a1bd81fb94929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the current value for the variable with the given ID.  <a href="#a7a3e048d31966415906a1bd81fb94929">More...</a><br /></td></tr>
+<tr class="separator:a7a3e048d31966415906a1bd81fb94929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a612dbafae9899fbead5ca29b867d4642"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
 <tr class="memitem:a612dbafae9899fbead5ca29b867d4642"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a612dbafae9899fbead5ca29b867d4642">updateValue</a> (int id, std::vector&lt; DataType &gt; const &amp;value)</td></tr>
 <tr class="memdesc:a612dbafae9899fbead5ca29b867d4642"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the storage system about a new value of the variable with the given ID (as returned by registerVariable)  <a href="#a612dbafae9899fbead5ca29b867d4642">More...</a><br /></td></tr>
 <tr class="separator:a612dbafae9899fbead5ca29b867d4642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ada80e6d680be0364eb0c44ea15dc6240"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ada80e6d680be0364eb0c44ea15dc6240">DEFAULT_WRITE_INTERVAL</a> {30}</td></tr>
+<tr class="memdesc:ada80e6d680be0364eb0c44ea15dc6240"><td class="mdescLeft">&#160;</td><td class="mdescRight">unit in seconds  <a href="#ada80e6d680be0364eb0c44ea15dc6240">More...</a><br /></td></tr>
+<tr class="separator:ada80e6d680be0364eb0c44ea15dc6240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:a3b5668a6083f1e6e5d959607a92beb9b"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
-<tr class="memitem:a3b5668a6083f1e6e5d959607a92beb9b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a3b5668a6083f1e6e5d959607a92beb9b">DataMap</a> = std::map&lt; size_t, std::vector&lt; DataType &gt; &gt;</td></tr>
-<tr class="memdesc:a3b5668a6083f1e6e5d959607a92beb9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type definition for the map holding the values for one specific data type.  <a href="#a3b5668a6083f1e6e5d959607a92beb9b">More...</a><br /></td></tr>
-<tr class="separator:a3b5668a6083f1e6e5d959607a92beb9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a3059107896eb852ddc821d628334b"><td class="memTemplParams" colspan="2">template&lt;typename DataType &gt; </td></tr>
+<tr class="memitem:a07a3059107896eb852ddc821d628334b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a07a3059107896eb852ddc821d628334b">DataMap</a> = std::map&lt; size_t, <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html">Queue</a>&lt; DataType &gt; &gt;</td></tr>
+<tr class="memdesc:a07a3059107896eb852ddc821d628334b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type definition for the map holding the values for one specific data type.  <a href="#a07a3059107896eb852ddc821d628334b">More...</a><br /></td></tr>
+<tr class="separator:a07a3059107896eb852ddc821d628334b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -176,11 +186,15 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a018e5b883e85037004b18cd68272facf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::type_info const  * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a018e5b883e85037004b18cd68272facf">_variableTypes</a></td></tr>
 <tr class="memdesc:a018e5b883e85037004b18cd68272facf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of data types.  <a href="#a018e5b883e85037004b18cd68272facf">More...</a><br /></td></tr>
 <tr class="separator:a018e5b883e85037004b18cd68272facf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8115e418d0a4cd6841d8816eb8f0bf89"><td class="memItemLeft" align="right" valign="top">ChimeraTK::TemplateUserTypeMap&lt; <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a3b5668a6083f1e6e5d959607a92beb9b">DataMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a8115e418d0a4cd6841d8816eb8f0bf89">_dataMap</a></td></tr>
+<tr class="memitem:a8115e418d0a4cd6841d8816eb8f0bf89"><td class="memItemLeft" align="right" valign="top">ChimeraTK::TemplateUserTypeMap&lt; <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a07a3059107896eb852ddc821d628334b">DataMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a8115e418d0a4cd6841d8816eb8f0bf89">_dataMap</a></td></tr>
 <tr class="memdesc:a8115e418d0a4cd6841d8816eb8f0bf89"><td class="mdescLeft">&#160;</td><td class="mdescRight">boost::fusion::map of the data type to the DataMap holding the values for the type  <a href="#a8115e418d0a4cd6841d8816eb8f0bf89">More...</a><br /></td></tr>
 <tr class="separator:a8115e418d0a4cd6841d8816eb8f0bf89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e5dc20f15543b6fa3f3a4a228ac970c"><td class="memItemLeft" align="right" valign="top">boost::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a8e5dc20f15543b6fa3f3a4a228ac970c">writerThread</a></td></tr>
 <tr class="separator:a8e5dc20f15543b6fa3f3a4a228ac970c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca2e0b60436f43fc07e196b13a89f98"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#acca2e0b60436f43fc07e196b13a89f98">_queueReadMutex</a></td></tr>
+<tr class="separator:acca2e0b60436f43fc07e196b13a89f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc600aafdd39a481d76be861d317a2e2"><td class="memItemLeft" align="right" valign="top">unsigned int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#adc600aafdd39a481d76be861d317a2e2">_fileWriteInterval</a> {}</td></tr>
+<tr class="separator:adc600aafdd39a481d76be861d317a2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Persistent data storage for process variables. </p>
@@ -192,10 +206,10 @@ Protected Attributes</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00045">45</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00046">46</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a3b5668a6083f1e6e5d959607a92beb9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b5668a6083f1e6e5d959607a92beb9b">&#9670;&nbsp;</a></span>DataMap</h2>
+<a id="a07a3059107896eb852ddc821d628334b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07a3059107896eb852ddc821d628334b">&#9670;&nbsp;</a></span>DataMap</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,7 +220,7 @@ template&lt;typename DataType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a3b5668a6083f1e6e5d959607a92beb9b">ChimeraTK::PersistentDataStorage::DataMap</a> =  std::map&lt;size_t, std::vector&lt;DataType&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a07a3059107896eb852ddc821d628334b">ChimeraTK::PersistentDataStorage::DataMap</a> =  std::map&lt;size_t, <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html">Queue</a>&lt;DataType&gt; &gt;</td>
         </tr>
       </table>
   </td>
@@ -218,13 +232,13 @@ template&lt;typename DataType &gt; </div>
 
 <p>Type definition for the map holding the values for one specific data type. </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00106">106</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00128">128</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a574aaa0d282ce6c8285ad30d43d06b4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a574aaa0d282ce6c8285ad30d43d06b4a">&#9670;&nbsp;</a></span>PersistentDataStorage()</h2>
+<a id="a03a8c302285f2906924277fc5486bb84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a8c302285f2906924277fc5486bb84">&#9670;&nbsp;</a></span>PersistentDataStorage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,8 +247,18 @@ template&lt;typename DataType &gt; </div>
           <td class="memname">ChimeraTK::PersistentDataStorage::PersistentDataStorage </td>
           <td>(</td>
           <td class="paramtype">std::string const &amp;&#160;</td>
-          <td class="paramname"><em>applicationName</em></td><td>)</td>
+          <td class="paramname"><em>applicationName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>fileWriteInterval</em> = <code><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ada80e6d680be0364eb0c44ea15dc6240">DEFAULT_WRITE_INTERVAL</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -247,7 +271,7 @@ template&lt;typename DataType &gt; </div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_persistent_data_storage_a574aaa0d282ce6c8285ad30d43d06b4a_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_persistent_data_storage_a03a8c302285f2906924277fc5486bb84_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -270,7 +294,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Destructor: Store variables to the file. </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00029">29</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00030">30</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -321,7 +345,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Generate XML tags for the given value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00119">119</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00121">121</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 
 </div>
 </div>
@@ -351,7 +375,7 @@ template&lt;typename DataType &gt; </div>
 <p>Read the file containing the persistent data. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>TODO check if the application name is correct? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00133">133</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00135">135</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -401,7 +425,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Read value from XML tags. </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00205">205</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00207">207</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 
 </div>
 </div>
@@ -442,12 +466,12 @@ template&lt;typename DataType &gt; </div>
 <p>Register a variable to be stored to and retrieved from the data storage. </p>
 <p>The returned value is the ID which must be passed to the other functions. The last argument "fromFile" should be false when the function is called from within <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a70445d795d2a69b6214d0f5d5738c3e6">UnidirectionalProcessArray&lt;T&gt;::setPersistentDataStorage()</a> etc. and true when called from within <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ae29c614248cc8509083f157058e9fd19" title="Read the file containing the persistent data. ">readFromFile()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00140">140</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00168">168</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
-<a id="af20e9b672b0203a6c9a75d9cbf14bc96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af20e9b672b0203a6c9a75d9cbf14bc96">&#9670;&nbsp;</a></span>retrieveValue()</h2>
+<a id="a7a3e048d31966415906a1bd81fb94929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a3e048d31966415906a1bd81fb94929">&#9670;&nbsp;</a></span>retrieveValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,7 +479,7 @@ template&lt;typename DataType &gt; </div>
 template&lt;typename DataType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; DataType &gt; &amp; ChimeraTK::PersistentDataStorage::retrieveValue </td>
+          <td class="memname">const std::vector&lt; DataType &gt; ChimeraTK::PersistentDataStorage::retrieveValue </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -466,7 +490,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Retrieve the current value for the variable with the given ID. </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00209">209</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00238">238</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -500,7 +524,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Notify the storage system about a new value of the variable with the given ID (as returned by registerVariable) </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00216">216</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00246">246</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -528,7 +552,7 @@ template&lt;typename DataType &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>FIXME make the variable access proper for a multi-threaded environment!!! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00037">37</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00038">38</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -574,7 +598,7 @@ template&lt;typename DataType &gt; </div>
 <p>Write out the file containing the persistent data. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>TODO what todo here? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00051">51</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00053">53</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -609,7 +633,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Application name. </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00086">86</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00091">91</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -623,7 +647,7 @@ template&lt;typename DataType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ChimeraTK::TemplateUserTypeMap&lt;<a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a3b5668a6083f1e6e5d959607a92beb9b">DataMap</a>&gt; ChimeraTK::PersistentDataStorage::_dataMap</td>
+          <td class="memname">ChimeraTK::TemplateUserTypeMap&lt;<a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a07a3059107896eb852ddc821d628334b">DataMap</a>&gt; ChimeraTK::PersistentDataStorage::_dataMap</td>
         </tr>
       </table>
   </td>
@@ -635,7 +659,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>boost::fusion::map of the data type to the DataMap holding the values for the type </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00110">110</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00132">132</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -661,7 +685,55 @@ template&lt;typename DataType &gt; </div>
 
 <p>File name to store the data to. </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00089">89</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00094">94</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+
+</div>
+</div>
+<a id="adc600aafdd39a481d76be861d317a2e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc600aafdd39a481d76be861d317a2e2">&#9670;&nbsp;</a></span>_fileWriteInterval</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int const ChimeraTK::PersistentDataStorage::_fileWriteInterval {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00142">142</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+
+</div>
+</div>
+<a id="acca2e0b60436f43fc07e196b13a89f98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acca2e0b60436f43fc07e196b13a89f98">&#9670;&nbsp;</a></span>_queueReadMutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex ChimeraTK::PersistentDataStorage::_queueReadMutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00139">139</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -688,7 +760,7 @@ template&lt;typename DataType &gt; </div>
 <p>Vector of variable names. </p>
 <p>The index is the ID of the variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00092">92</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00097">97</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -715,7 +787,7 @@ template&lt;typename DataType &gt; </div>
 <p>Vector of flags whether the variable was registers from the application. </p>
 <p>The index is the ID of the variable. This flag is used to clean up variables only coming from the file and are no longer present in the application. </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00098">98</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00103">103</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -742,7 +814,33 @@ template&lt;typename DataType &gt; </div>
 <p>Vector of data types. </p>
 <p>The index is the ID of the variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00101">101</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00106">106</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+
+</div>
+</div>
+<a id="ada80e6d680be0364eb0c44ea15dc6240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada80e6d680be0364eb0c44ea15dc6240">&#9670;&nbsp;</a></span>DEFAULT_WRITE_INTERVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int ChimeraTK::PersistentDataStorage::DEFAULT_WRITE_INTERVAL {30}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>unit in seconds </p>
+
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00050">50</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -766,7 +864,7 @@ template&lt;typename DataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00113">113</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00135">135</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -780,7 +878,7 @@ template&lt;typename DataType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html">PersistentDataStorage</a></li>
-    <li class="footer">Generated on Fri Jun 7 2019 03:53:20 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Sat Jun 8 2019 03:55:10 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

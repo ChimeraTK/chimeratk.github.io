@@ -21,6 +21,7 @@ var dir_edc72502990ad2b12fcd3ee6c424d5ed =
     ] ],
     [ "PersistentDataStorage.h", "_persistent_data_storage_8h.html", [
       [ "PersistentDataStorage", "class_chimera_t_k_1_1_persistent_data_storage.html", "class_chimera_t_k_1_1_persistent_data_storage" ],
+      [ "Queue", "class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html", "class_chimera_t_k_1_1_persistent_data_storage_1_1_queue" ],
       [ "registerVariable_oldTypeRemover", "struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html", "struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover" ]
     ] ],
     [ "ProcessArray.h", "_process_array_8h.html", [

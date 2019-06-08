@@ -131,9 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca7083d2e7ba79435fcb337c205dfc43"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#aca7083d2e7ba79435fcb337c205dfc43">getName</a> () const</td></tr>
 <tr class="memdesc:aca7083d2e7ba79435fcb337c205dfc43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of the application.  <a href="#aca7083d2e7ba79435fcb337c205dfc43">More...</a><br /></td></tr>
 <tr class="separator:aca7083d2e7ba79435fcb337c205dfc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0791c60386542d9858147e99ecd6e62"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html">PersistentDataStorage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#ac0791c60386542d9858147e99ecd6e62">getPersistentDataStorage</a> ()</td></tr>
-<tr class="memdesc:ac0791c60386542d9858147e99ecd6e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html" title="Persistent data storage for process variables. ">PersistentDataStorage</a> object.  <a href="#ac0791c60386542d9858147e99ecd6e62">More...</a><br /></td></tr>
-<tr class="separator:ac0791c60386542d9858147e99ecd6e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25aebdb26a0fe2520bbb9989194ea69b"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html">PersistentDataStorage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#a25aebdb26a0fe2520bbb9989194ea69b">getPersistentDataStorage</a> (unsigned int writeInterval=<a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ada80e6d680be0364eb0c44ea15dc6240">PersistentDataStorage::DEFAULT_WRITE_INTERVAL</a>)</td></tr>
+<tr class="memdesc:a25aebdb26a0fe2520bbb9989194ea69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html" title="Persistent data storage for process variables. ">PersistentDataStorage</a> object.  <a href="#a25aebdb26a0fe2520bbb9989194ea69b">More...</a><br /></td></tr>
+<tr class="separator:a25aebdb26a0fe2520bbb9989194ea69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -292,8 +292,8 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ac0791c60386542d9858147e99ecd6e62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0791c60386542d9858147e99ecd6e62">&#9670;&nbsp;</a></span>getPersistentDataStorage()</h2>
+<a id="a25aebdb26a0fe2520bbb9989194ea69b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25aebdb26a0fe2520bbb9989194ea69b">&#9670;&nbsp;</a></span>getPersistentDataStorage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,7 +304,8 @@ Static Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html">PersistentDataStorage</a>&gt; ChimeraTK::ApplicationBase::getPersistentDataStorage </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>writeInterval</em> = <code><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ada80e6d680be0364eb0c44ea15dc6240">PersistentDataStorage::DEFAULT_WRITE_INTERVAL</a></code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -316,6 +317,7 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Obtain the <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html" title="Persistent data storage for process variables. ">PersistentDataStorage</a> object. </p>
+<p>You can specify the write interval in seconds. </p>
 
 <p class="definition">Definition at line <a class="el" href="_application_base_8h_source.html#l00075">75</a> of file <a class="el" href="_application_base_8h_source.html">ApplicationBase.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -323,7 +325,7 @@ Static Protected Attributes</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_base_ac0791c60386542d9858147e99ecd6e62_icgraph.svg" width="508" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_base_a25aebdb26a0fe2520bbb9989194ea69b_icgraph.svg" width="508" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -642,7 +644,7 @@ Static Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_application_base.html">ApplicationBase</a></li>
-    <li class="footer">Generated on Fri Jun 7 2019 03:53:20 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Sat Jun 8 2019 03:55:10 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
