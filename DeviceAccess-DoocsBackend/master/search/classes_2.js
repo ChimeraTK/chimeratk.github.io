@@ -8,5 +8,6 @@ var searchData=
   ['doocsbackendlongregisteraccessor',['DoocsBackendLongRegisterAccessor',['../class_chimera_t_k_1_1_doocs_backend_long_register_accessor.html',1,'ChimeraTK']]],
   ['doocsbackendregisteraccessor',['DoocsBackendRegisterAccessor',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html',1,'ChimeraTK']]],
   ['doocsbackendregisteraccessorbase',['DoocsBackendRegisterAccessorBase',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html',1,'ChimeraTK']]],
+  ['doocsbackendregisterinfo',['DoocsBackendRegisterInfo',['../class_doocs_backend_register_info.html',1,'']]],
   ['doocsbackendstringregisteraccessor',['DoocsBackendStringRegisterAccessor',['../class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html',1,'ChimeraTK']]]
 ];
