@@ -110,8 +110,8 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_property_attrib
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a66f3017c5f008b2422ec6b44f99f1fc8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_property_attributes.html#a66f3017c5f008b2422ec6b44f99f1fc8">PropertyAttributes</a> (bool hasHistory_=true, bool isWriteable_=true, bool publishZMQ_=false, std::string macroPulseNumberSource_=&quot;&quot;)</td></tr>
-<tr class="separator:a66f3017c5f008b2422ec6b44f99f1fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a879ee6a4d1909a6ee98b1ff71774ea3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_property_attributes.html#a879ee6a4d1909a6ee98b1ff71774ea3e">PropertyAttributes</a> (bool hasHistory_=true, bool isWriteable_=true, bool publishZMQ_=false, std::string macroPulseNumberSource_=&quot;&quot;, DataConsistencyGroup::MatchingMode dataMatching_=DataConsistencyGroup::MatchingMode::exact)</td></tr>
+<tr class="separator:a879ee6a4d1909a6ee98b1ff71774ea3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec12ae3311c34e463addecab0ccafff3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_property_attributes.html#aec12ae3311c34e463addecab0ccafff3">operator==</a> (<a class="el" href="struct_chimera_t_k_1_1_property_attributes.html">PropertyAttributes</a> const &amp;other) const</td></tr>
 <tr class="separator:aec12ae3311c34e463addecab0ccafff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -125,13 +125,15 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a2e90872d5391a4c6e71efe3b2057f061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6430c0e2c3e469ae30fa4670d51792f7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_property_attributes.html#a6430c0e2c3e469ae30fa4670d51792f7">macroPulseNumberSource</a></td></tr>
 <tr class="separator:a6430c0e2c3e469ae30fa4670d51792f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae036c433a7fcfeff798e5be06b877e26"><td class="memItemLeft" align="right" valign="top">DataConsistencyGroup::MatchingMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_property_attributes.html#ae036c433a7fcfeff798e5be06b877e26">dataMatching</a></td></tr>
+<tr class="separator:ae036c433a7fcfeff798e5be06b877e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00017">17</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00018">18</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a66f3017c5f008b2422ec6b44f99f1fc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66f3017c5f008b2422ec6b44f99f1fc8">&#9670;&nbsp;</a></span>PropertyAttributes()</h2>
+<a id="a879ee6a4d1909a6ee98b1ff71774ea3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a879ee6a4d1909a6ee98b1ff71774ea3e">&#9670;&nbsp;</a></span>PropertyAttributes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,7 +163,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>macroPulseNumberSource_</em> = <code>&quot;&quot;</code>&#160;</td>
+          <td class="paramname"><em>macroPulseNumberSource_</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataConsistencyGroup::MatchingMode&#160;</td>
+          <td class="paramname"><em>dataMatching_</em> = <code>DataConsistencyGroup::MatchingMode::exact</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -176,7 +184,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00022">22</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00024">24</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -205,11 +213,27 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00026">26</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00029">29</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae036c433a7fcfeff798e5be06b877e26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae036c433a7fcfeff798e5be06b877e26">&#9670;&nbsp;</a></span>dataMatching</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataConsistencyGroup::MatchingMode ChimeraTK::PropertyAttributes::dataMatching</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00023">23</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+
+</div>
+</div>
 <a id="a927a4bb8520eba6fe1a0ea8fb34d899b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a927a4bb8520eba6fe1a0ea8fb34d899b">&#9670;&nbsp;</a></span>hasHistory</h2>
 
@@ -222,7 +246,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00018">18</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00019">19</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -238,7 +262,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00019">19</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00020">20</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -254,7 +278,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00021">21</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00022">22</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -270,7 +294,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00020">20</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00021">21</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -283,7 +307,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_property_attributes.html">PropertyAttributes</a></li>
-    <li class="footer">Generated on Fri Jun 7 2019 03:54:10 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Wed Jun 12 2019 03:54:13 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

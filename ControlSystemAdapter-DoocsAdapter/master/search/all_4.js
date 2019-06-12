@@ -5,6 +5,7 @@ var searchData=
   ['d_5ftextunifier',['D_textUnifier',['../struct_d__text_unifier.html',1,'D_textUnifier'],['../struct_d__text_unifier.html#af1e3236f29a3ae88db7603f8bd8b9f0e',1,'D_textUnifier::D_textUnifier()']]],
   ['d_5ftextunifier_2ecpp',['D_textUnifier.cpp',['../_d__text_unifier_8cpp.html',1,'']]],
   ['d_5ftextunifier_2eh',['D_textUnifier.h',['../_d__text_unifier_8h.html',1,'']]],
+  ['datamatching',['dataMatching',['../struct_chimera_t_k_1_1_property_attributes.html#ae036c433a7fcfeff798e5be06b877e26',1,'ChimeraTK::PropertyAttributes']]],
   ['datatype',['DataType',['../struct_chimera_t_k_1_1_auto_property_description.html#ae47b83262db33cd0267c9470e1d78661',1,'ChimeraTK::AutoPropertyDescription::DataType()'],['../struct_chimera_t_k_1_1_auto_property_description.html#ac137241890437840be9f80a0502fe246',1,'ChimeraTK::AutoPropertyDescription::dataType()']]],
   ['datavalidity',['dataValidity',['../class_chimera_t_k_1_1_doocs_transfer_element.html#a72ced4b69579f2a90d82959d30c8fa54',1,'ChimeraTK::DoocsTransferElement']]],
   ['derivetype',['deriveType',['../struct_chimera_t_k_1_1_auto_property_description.html#a3cfc7fc63c81386a2eb16f652b1e7c63',1,'ChimeraTK::AutoPropertyDescription']]],
