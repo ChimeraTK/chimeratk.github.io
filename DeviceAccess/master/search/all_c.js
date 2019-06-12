@@ -15,6 +15,7 @@ var searchData=
   ['mapfileparser_2ecpp',['MapFileParser.cpp',['../_map_file_parser_8cpp.html',1,'']]],
   ['mapfileparser_2eh',['MapFileParser.h',['../fileparsers_2include_2_map_file_parser_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_map_file_parser_8h.html',1,'(Global Namespace)']]],
   ['mapfileparserexception',['MapFileParserException',['../namespace_chimera_t_k.html#a18299bd2dbf3b1229587e80f9e45a1c1',1,'ChimeraTK']]],
+  ['matchingmode',['MatchingMode',['../class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397b',1,'ChimeraTK::DataConsistencyGroup']]],
   ['mathplugin',['MathPlugin',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html',1,'ChimeraTK::LNMBackend::MathPlugin'],['../class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#abc7b6a76332ff53f736286ce0580e30f',1,'ChimeraTK::LNMBackend::MathPlugin::MathPlugin()']]],
   ['mathplugin_5fhelper',['MathPlugin_Helper',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin___helper.html',1,'ChimeraTK::LNMBackend']]],
   ['mathplugin_5fhelper_3c_20usertype_2c_20double_20_3e',['MathPlugin_Helper&lt; UserType, double &gt;',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin___helper_3_01_user_type_00_01double_01_4.html',1,'ChimeraTK::LNMBackend']]],
