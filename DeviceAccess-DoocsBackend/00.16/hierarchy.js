@@ -19,5 +19,8 @@ var hierarchy =
     [ "NDRegisterAccessor", null, [
       [ "ChimeraTK::DoocsBackendRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html", null ]
     ] ],
+    [ "RegisterInfo", null, [
+      [ "DoocsBackendRegisterInfo", "class_doocs_backend_register_info.html", null ]
+    ] ],
     [ "ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager", "class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html", null ]
 ];

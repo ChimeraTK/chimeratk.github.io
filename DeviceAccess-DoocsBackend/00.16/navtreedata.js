@@ -4,11 +4,12 @@ var NAVTREE =
     [ "Supported Data Types", "supported_types.html", [
       [ "IFFF", "supported_types.html#ifff", null ]
     ] ],
+    [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ]
+        [ "Functions", "namespacemembers_func.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -28,7 +29,8 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ]
+        [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", null ]
       ] ]
     ] ]
   ] ]
@@ -36,7 +38,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_doocs_backend_8cc.html"
+"_catalogue_cache_8cc.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

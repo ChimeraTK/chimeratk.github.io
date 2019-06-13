@@ -1,6 +1,13 @@
 var dir_d44c64559bbebec7f509842c48db8b23 =
 [
-    [ "DoocsBackend.h", "_doocs_backend_8h.html", "_doocs_backend_8h" ],
+    [ "CatalogueCache.h", "_catalogue_cache_8h.html", "_catalogue_cache_8h" ],
+    [ "CatalogueFetcher.h", "_catalogue_fetcher_8h.html", [
+      [ "CatalogueFetcher", "class_catalogue_fetcher.html", "class_catalogue_fetcher" ]
+    ] ],
+    [ "DoocsBackend.h", "_doocs_backend_8h.html", [
+      [ "DoocsBackend", "class_chimera_t_k_1_1_doocs_backend.html", "class_chimera_t_k_1_1_doocs_backend" ],
+      [ "BackendRegisterer", "class_chimera_t_k_1_1_doocs_backend_1_1_backend_registerer.html", "class_chimera_t_k_1_1_doocs_backend_1_1_backend_registerer" ]
+    ] ],
     [ "DoocsBackendFloatRegisterAccessor.h", "_doocs_backend_float_register_accessor_8h.html", [
       [ "DoocsBackendFloatRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor" ]
     ] ],
@@ -23,6 +30,8 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "DoocsBackendStringRegisterAccessor.h", "_doocs_backend_string_register_accessor_8h.html", [
       [ "DoocsBackendStringRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_string_register_accessor" ]
     ] ],
+    [ "RegisterInfo.h", "_register_info_8h.html", "_register_info_8h" ],
+    [ "StringUtility.h", "_string_utility_8h.html", "_string_utility_8h" ],
     [ "ZMQSubscriptionManager.h", "_z_m_q_subscription_manager_8h.html", [
       [ "ZMQSubscriptionManager", "class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html", "class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager" ]
     ] ]

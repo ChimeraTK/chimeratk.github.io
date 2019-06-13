@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['ignore_5fpatterns',['IGNORE_PATTERNS',['../namespace_chimera_t_k.html#a09159f1051995e2f7e2c2acb42b67d7c',1,'ChimeraTK']]],
-  ['isarray',['isArray',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a0bcce3cfd0a55a8f0362ef3362ae3aa0',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]],
-  ['isinitialised',['isInitialised',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a66bac06a72bf2af7fc769df3d7d237de',1,'ChimeraTK::DoocsBackendRegisterAccessor']]],
-  ['ispartial',['isPartial',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#afebb23c2ffc20b9744cd382ec06d34a9',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]]
+  ['field',['field',['../class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#a817adafe5ba2cb05d147e38951f16cf0',1,'ChimeraTK::DoocsBackendIFFFRegisterAccessor']]],
+  ['futurecreated',['futureCreated',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a8dbb869119e1a211ba50fb34ad251296',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]]
 ];
