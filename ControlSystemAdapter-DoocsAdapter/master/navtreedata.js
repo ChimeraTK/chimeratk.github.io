@@ -48,7 +48,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_c_s_adapter_eq_fct_8cc.html",
-"split_string_at_first_slash_8h.html"
+"namespacexmlpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

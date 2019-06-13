@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"namespacexmlpp.html":[2,0,1],
+"pages.html":[],
 "split_string_at_first_slash_8h.html":[4,0,0,13],
 "split_string_at_first_slash_8h.html#afbd78a37f72dd506f7e136f7ac06cf98":[4,0,0,13,0],
 "split_string_at_first_slash_8h_source.html":[4,0,0,13],
