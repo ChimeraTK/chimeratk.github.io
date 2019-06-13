@@ -83,8 +83,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_doocs_spectrum.h
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_chimera_t_k_1_1_doocs_spectrum-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ChimeraTK::DoocsSpectrum Class Reference</div>  </div>
@@ -131,14 +130,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:addacf7abb78920edcaf91d454da646d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a142e85183fcdca035369a1cb1a91e364"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a142e85183fcdca035369a1cb1a91e364">setMacroPulseNumberSource</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt;&gt; macroPulseNumberSource)</td></tr>
 <tr class="separator:a142e85183fcdca035369a1cb1a91e364"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
+<tr class="memitem:a8502c5b322027341eb59804eb5bbcfde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a8502c5b322027341eb59804eb5bbcfde">write</a> (fstream &amp;fptr) override</td></tr>
+<tr class="separator:a8502c5b322027341eb59804eb5bbcfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82a1c3ef4e19443909353485811dff6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a82a1c3ef4e19443909353485811dff6a">sendToDevice</a> ()</td></tr>
 <tr class="separator:a82a1c3ef4e19443909353485811dff6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
 <tr class="memitem:a534524b0be3fdafc240d8629371933b3"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a534524b0be3fdafc240d8629371933b3">_processArray</a></td></tr>
 <tr class="separator:a534524b0be3fdafc240d8629371933b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b0ff12ba9b213be7d02ab0964ac635d"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a1b0ff12ba9b213be7d02ab0964ac635d">_startAccessor</a></td></tr>
@@ -157,6 +155,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ad9c0e9ccb9a13e93bc3078dcde4e74fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64a3ec02061e0ee6938b980bbc80bd78"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a64a3ec02061e0ee6938b980bbc80bd78">nBuffers</a></td></tr>
 <tr class="separator:a64a3ec02061e0ee6938b980bbc80bd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d59a574c2a78d8ec5338f1febe67e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#aa5d59a574c2a78d8ec5338f1febe67e0">modified</a> {false}</td></tr>
+<tr class="separator:aa5d59a574c2a78d8ec5338f1febe67e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -288,7 +288,7 @@ Protected Attributes</h2></td></tr>
 <p>The decorator cannot be generated in the constructor because the ProcessVariable aka TransferElement does not know about it's size, which is needed by the D_spectrum constructor. This is not a big drawback because the properties are greated by a factory function anyway.</p>
 <p>This version of the constructor shall be used for read-only spectra, as they do not need to be persisted but might require multiple buffers for short-term history. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00031">31</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00032">32</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -327,7 +327,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Override the Doocs <a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html#a838549fdb4e178c0b115b52f16fca2df" title="Override the Doocs auto_init() method, which is called after initialising the value of the property f...">auto_init()</a> method, which is called after initialising the value of the property from the config file. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00062">62</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00064">64</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -368,7 +368,7 @@ Protected Attributes</h2></td></tr>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_spectrum_addacf7abb78920edcaf91d454da646d8_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_spectrum_addacf7abb78920edcaf91d454da646d8_cgraph.svg" width="100%" height="412"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -379,9 +379,6 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ChimeraTK::DoocsSpectrum::sendToDevice </td>
@@ -390,14 +387,9 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00167">167</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00183">183</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -457,7 +449,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Overload the set function which is called by DOOCS to inject sending to the device. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00057">57</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00058">58</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -485,7 +477,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00158">158</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00173">173</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -521,7 +513,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00078">78</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00093">93</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -548,7 +540,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00139">139</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00154">154</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -560,9 +552,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5249fb5cb44323a1cffd5d6b025f79c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5249fb5cb44323a1cffd5d6b025f79c6">&#9670;&nbsp;</a></span>_consistencyGroup</h2>
+<a id="a8502c5b322027341eb59804eb5bbcfde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8502c5b322027341eb59804eb5bbcfde">&#9670;&nbsp;</a></span>write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -571,17 +562,46 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">DataConsistencyGroup ChimeraTK::DoocsSpectrum::_consistencyGroup</td>
+          <td class="memname">void ChimeraTK::DoocsSpectrum::write </td>
+          <td>(</td>
+          <td class="paramtype">fstream &amp;&#160;</td>
+          <td class="paramname"><em>fptr</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00079">79</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8cc_source.html#l00081">81</a> of file <a class="el" href="_doocs_spectrum_8cc_source.html">DoocsSpectrum.cc</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_spectrum_a8502c5b322027341eb59804eb5bbcfde_icgraph.svg" width="467" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5249fb5cb44323a1cffd5d6b025f79c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5249fb5cb44323a1cffd5d6b025f79c6">&#9670;&nbsp;</a></span>_consistencyGroup</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataConsistencyGroup ChimeraTK::DoocsSpectrum::_consistencyGroup</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00080">80</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -590,22 +610,14 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a>&amp; ChimeraTK::DoocsSpectrum::_doocsUpdater</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00080">80</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00081">81</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -614,22 +626,14 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">EqFct* ChimeraTK::DoocsSpectrum::_eqFct</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00081">81</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00082">82</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -638,22 +642,14 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;float&gt; &gt; ChimeraTK::DoocsSpectrum::_incrementAccessor</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00077">77</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00078">78</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -662,22 +658,14 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;int64_t&gt; &gt; ChimeraTK::DoocsSpectrum::_macroPulseNumberSource</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00078">78</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00079">79</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -686,22 +674,14 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;float&gt; &gt; ChimeraTK::DoocsSpectrum::_processArray</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00075">75</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00076">76</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -710,22 +690,30 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;float&gt; &gt; ChimeraTK::DoocsSpectrum::_startAccessor</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00076">76</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00077">77</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+
+</div>
+</div>
+<a id="aa5d59a574c2a78d8ec5338f1febe67e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5d59a574c2a78d8ec5338f1febe67e0">&#9670;&nbsp;</a></span>modified</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::DoocsSpectrum::modified {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00092">92</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -734,22 +722,14 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">size_t ChimeraTK::DoocsSpectrum::nBuffers</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00083">83</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00084">84</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -758,22 +738,14 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool ChimeraTK::DoocsSpectrum::publishZMQ {false}</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00082">82</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_spectrum_8h_source.html#l00083">83</a> of file <a class="el" href="_doocs_spectrum_8h_source.html">DoocsSpectrum.h</a>.</p>
 
 </div>
 </div>
@@ -787,7 +759,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_spectrum.html">DoocsSpectrum</a></li>
-    <li class="footer">Generated on Fri Jun 7 2019 03:54:13 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Thu Jun 13 2019 03:55:01 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

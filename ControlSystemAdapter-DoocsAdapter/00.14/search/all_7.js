@@ -10,6 +10,7 @@ var searchData=
   ['getattributevalue',['getAttributeValue',['../class_chimera_t_k_1_1_variable_mapper.html#a3bc14cf437e5ec63b37a2d6dd5934f09',1,'ChimeraTK::VariableMapper']]],
   ['getcontentstring',['getContentString',['../class_chimera_t_k_1_1_variable_mapper.html#a9b5aefde6b361970ddff3b9089b83c4b',1,'ChimeraTK::VariableMapper']]],
   ['getcontrolsystempvmanager',['getControlSystemPVManager',['../class_chimera_t_k_1_1_doocs_adapter.html#a63f08e25bb5fe5f7752d6b77b72f9041',1,'ChimeraTK::DoocsAdapter']]],
+  ['getdatamatchingdefault',['getDataMatchingDefault',['../class_chimera_t_k_1_1_variable_mapper.html#adea1bd6bc590e7cd8d58650010c29958',1,'ChimeraTK::VariableMapper']]],
   ['getdevicepvmanager',['getDevicePVManager',['../class_chimera_t_k_1_1_doocs_adapter.html#a396057c5005d59f33b94733e86b2948c',1,'ChimeraTK::DoocsAdapter']]],
   ['gethardwareaccessingelements',['getHardwareAccessingElements',['../class_chimera_t_k_1_1_doocs_transfer_element.html#af1bfbda045e18401939a15880c755d82',1,'ChimeraTK::DoocsTransferElement']]],
   ['gethashistorydefault',['getHasHistoryDefault',['../class_chimera_t_k_1_1_variable_mapper.html#adf790079aada402c1db0ad4e42c16752',1,'ChimeraTK::VariableMapper']]],

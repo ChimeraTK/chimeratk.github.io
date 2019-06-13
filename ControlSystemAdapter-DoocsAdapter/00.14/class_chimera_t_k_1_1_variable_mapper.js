@@ -8,6 +8,7 @@ var class_chimera_t_k_1_1_variable_mapper =
     [ "getAllLocations", "class_chimera_t_k_1_1_variable_mapper.html#a3c085942b9e550dc5ed7cfd438ed5a60", null ],
     [ "getAllProperties", "class_chimera_t_k_1_1_variable_mapper.html#acb69f1b86e2b4ecd28427267ae682aa8", null ],
     [ "getAttributeValue", "class_chimera_t_k_1_1_variable_mapper.html#a3bc14cf437e5ec63b37a2d6dd5934f09", null ],
+    [ "getDataMatchingDefault", "class_chimera_t_k_1_1_variable_mapper.html#adea1bd6bc590e7cd8d58650010c29958", null ],
     [ "getHasHistoryDefault", "class_chimera_t_k_1_1_variable_mapper.html#adf790079aada402c1db0ad4e42c16752", null ],
     [ "getIsWriteableDefault", "class_chimera_t_k_1_1_variable_mapper.html#aed5f14a453c9d868c26dcedd490b84cf", null ],
     [ "getLocationAndCode", "class_chimera_t_k_1_1_variable_mapper.html#abd94469f3c6eab5f750539d31300ea9f", null ],
