@@ -9,8 +9,6 @@ var searchData=
   ['checkzmqavailability',['checkZmqAvailability',['../class_chimera_t_k_1_1_doocs_backend.html#ad41fafea3a42b3cb84bcbaf13fcb9e5e',1,'ChimeraTK::DoocsBackend']]],
   ['chimeratk',['ChimeraTK',['../namespace_chimera_t_k.html',1,'']]],
   ['chimeratk_5fdeviceaccess_5fcreatebackend',['ChimeraTK_DeviceAccess_createBackend',['../_doocs_backend_8cc.html#a1e5283f539ef6b54a7bd9201b0473d3f',1,'DoocsBackend.cc']]],
-  ['chimeratk_5fdeviceaccess_5fsdmparameternames',['ChimeraTK_DeviceAccess_sdmParameterNames',['../_doocs_backend_8cc.html#a71d98ac86fad2f5ded1bb8c12fbdc57e',1,'DoocsBackend.cc']]],
-  ['chimeratk_5fdeviceaccess_5fversion',['ChimeraTK_DeviceAccess_version',['../_doocs_backend_8cc.html#a924a3aa60f4fca0de60f53410d8ed87a',1,'DoocsBackend.cc']]],
   ['close',['close',['../class_chimera_t_k_1_1_doocs_backend.html#aa0b104650a279c02f853d7a7f6e07f48',1,'ChimeraTK::DoocsBackend']]],
   ['create',['create',['../class_doocs_backend_register_info.html#ac8dcaa8c11fd755dbe73c7d7e349a3c1',1,'DoocsBackendRegisterInfo']]],
   ['createinstance',['createInstance',['../class_chimera_t_k_1_1_doocs_backend.html#a6858ec1a1833cc69444017506e68fb62',1,'ChimeraTK::DoocsBackend']]],
