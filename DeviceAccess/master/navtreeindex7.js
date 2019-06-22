@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"dir_5834c169ac818fb4b61d1b6f37638e83.html":[14,0,3],
 "dir_5e7c60a04e98453414a9c829e48a7cd6.html":[14,0,5],
 "dir_67c55bddc74dc3d666aacb5608bef154.html":[14,0,1,1,0],
 "dir_739492cb44cdcd51c1ba959ab2ee3118.html":[14,0,1,2,0],
@@ -78,8 +79,8 @@ var NAVTREEINDEX7 =
 "functions_enum.html":[13,3,4],
 "functions_eval.html":[13,3,5],
 "functions_f.html":[13,3,0,6],
-"functions_func.html":[13,3,1,0],
 "functions_func.html":[13,3,1],
+"functions_func.html":[13,3,1,0],
 "functions_func_0x7e.html":[13,3,1,20],
 "functions_func_b.html":[13,3,1,1],
 "functions_func_c.html":[13,3,1,2],
@@ -116,8 +117,8 @@ var NAVTREEINDEX7 =
 "functions_type.html":[13,3,3],
 "functions_u.html":[13,3,0,19],
 "functions_v.html":[13,3,0,20],
-"functions_vars.html":[13,3,2],
 "functions_vars.html":[13,3,2,0],
+"functions_vars.html":[13,3,2],
 "functions_vars_a.html":[13,3,2,1],
 "functions_vars_b.html":[13,3,2,2],
 "functions_vars_c.html":[13,3,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "mtca4u__compatibility__headers_2_scalar_register_accessor_8h.html":[14,0,5,53],
 "mtca4u__compatibility__headers_2_scalar_register_accessor_8h_source.html":[14,0,5,53],
 "mtca4u__compatibility__headers_2_subdevice_backend_8h.html":[14,0,5,55],
-"mtca4u__compatibility__headers_2_subdevice_backend_8h_source.html":[14,0,5,55],
-"mtca4u__compatibility__headers_2_supported_user_types_8h.html":[14,0,5,56]
+"mtca4u__compatibility__headers_2_subdevice_backend_8h_source.html":[14,0,5,55]
 };

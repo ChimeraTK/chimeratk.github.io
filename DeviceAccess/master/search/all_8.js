@@ -35,6 +35,7 @@ var searchData=
   ['getmapfile',['getMapFile',['../class_chimera_t_k_1_1_d_map_files_parser.html#a001f9f610ed2079b9fb5c17da388fb12',1,'ChimeraTK::DMapFilesParser']]],
   ['getmapfilename',['getMapFileName',['../class_chimera_t_k_1_1_register_info_map.html#a0eca2bbc7ea37f5daf983a6a489a285e',1,'ChimeraTK::RegisterInfoMap']]],
   ['getmapfilesize',['getMapFileSize',['../class_chimera_t_k_1_1_register_info_map.html#a866f1f5384e079eb85f347f682d9314e',1,'ChimeraTK::RegisterInfoMap']]],
+  ['getmatchingmode',['getMatchingMode',['../class_chimera_t_k_1_1_data_consistency_group.html#a64fb14661d9c92776f0b0d1f8d3087e7',1,'ChimeraTK::DataConsistencyGroup']]],
   ['getmetadata',['getMetaData',['../class_chimera_t_k_1_1_register_info_map.html#a74bd971e761068faf55a036d2150b0a2',1,'ChimeraTK::RegisterInfoMap::getMetaData()'],['../class_chimera_t_k_1_1_register_catalogue.html#a92467397031477af1acc4fd02a0c50d1',1,'ChimeraTK::RegisterCatalogue::getMetadata()']]],
   ['getname',['getName',['../class_chimera_t_k_1_1_transfer_element_abstractor.html#aa2ce6abbffcd87c4168594749068dd9d',1,'ChimeraTK::TransferElementAbstractor::getName()'],['../class_chimera_t_k_1_1_transfer_element.html#a30e7318a3a2d37ea06139d7c960a98bb',1,'ChimeraTK::TransferElement::getName()']]],
   ['getnbits',['getNBits',['../class_chimera_t_k_1_1_fixed_point_converter.html#a89b8ea5d4ed1d331c71c35abc17c0e4c',1,'ChimeraTK::FixedPointConverter']]],
