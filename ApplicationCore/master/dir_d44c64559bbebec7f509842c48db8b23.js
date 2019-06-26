@@ -52,6 +52,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "InversionOfControlAccessor.h", "_inversion_of_control_accessor_8h.html", [
       [ "InversionOfControlAccessor", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", "class_chimera_t_k_1_1_inversion_of_control_accessor" ]
     ] ],
+    [ "MetaDataPropagatingRegisterDecorator.h", "_meta_data_propagating_register_decorator_8h.html", "_meta_data_propagating_register_decorator_8h" ],
     [ "Module.h", "_module_8h.html", [
       [ "Module", "class_chimera_t_k_1_1_module.html", "class_chimera_t_k_1_1_module" ]
     ] ],
@@ -112,7 +113,6 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "PushableStream", "class_chimera_t_k_1_1_pushable_stream.html", "class_chimera_t_k_1_1_pushable_stream" ],
       [ "VariableNetworkNodeDumpingVisitor", "class_chimera_t_k_1_1_variable_network_node_dumping_visitor.html", "class_chimera_t_k_1_1_variable_network_node_dumping_visitor" ]
     ] ],
-    [ "VersionNumberUpdatingRegisterDecorator.h", "_version_number_updating_register_decorator_8h.html", "_version_number_updating_register_decorator_8h" ],
     [ "VirtualModule.h", "_virtual_module_8h.html", [
       [ "VirtualModule", "class_chimera_t_k_1_1_virtual_module.html", "class_chimera_t_k_1_1_virtual_module" ]
     ] ],

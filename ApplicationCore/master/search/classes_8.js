@@ -2,6 +2,7 @@ var searchData=
 [
   ['maxmonitor',['MaxMonitor',['../struct_chimera_t_k_1_1_max_monitor.html',1,'ChimeraTK']]],
   ['maxmonitor_3c_20double_5ft_20_3e',['MaxMonitor&lt; double_t &gt;',['../struct_chimera_t_k_1_1_max_monitor.html',1,'ChimeraTK']]],
+  ['metadatapropagatingregisterdecorator',['MetaDataPropagatingRegisterDecorator',['../class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html',1,'ChimeraTK']]],
   ['microdaq',['MicroDAQ',['../class_chimera_t_k_1_1_micro_d_a_q.html',1,'ChimeraTK']]],
   ['minmonitor',['MinMonitor',['../struct_chimera_t_k_1_1_min_monitor.html',1,'ChimeraTK']]],
   ['minmonitor_3c_20double_5ft_20_3e',['MinMonitor&lt; double_t &gt;',['../struct_chimera_t_k_1_1_min_monitor.html',1,'ChimeraTK']]],

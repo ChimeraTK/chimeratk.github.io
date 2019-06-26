@@ -10,7 +10,6 @@ var searchData=
   ['variablenetworknode',['VariableNetworkNode',['../class_chimera_t_k_1_1_variable_network_node.html',1,'ChimeraTK']]],
   ['variablenetworknode_5fdata',['VariableNetworkNode_data',['../struct_chimera_t_k_1_1_variable_network_node__data.html',1,'ChimeraTK']]],
   ['variablenetworknodedumpingvisitor',['VariableNetworkNodeDumpingVisitor',['../class_chimera_t_k_1_1_variable_network_node_dumping_visitor.html',1,'ChimeraTK']]],
-  ['versionnumberupdatingregisterdecorator',['VersionNumberUpdatingRegisterDecorator',['../class_chimera_t_k_1_1_version_number_updating_register_decorator.html',1,'ChimeraTK']]],
   ['virtualmodule',['VirtualModule',['../class_chimera_t_k_1_1_virtual_module.html',1,'ChimeraTK']]],
   ['visitor',['Visitor',['../class_chimera_t_k_1_1_visitor.html',1,'ChimeraTK']]],
   ['visitor_3c_20application_2c_20variablenetwork_20_3e',['Visitor&lt; Application, VariableNetwork &gt;',['../class_chimera_t_k_1_1_visitor.html',1,'ChimeraTK']]],
