@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "ChimeraTK-DeviceAccess-DoocsBackend", "index.html", [
+    [ "Features", "index.html#Features", null ],
     [ "Supported Data Types", "supported_types.html", [
       [ "IFFF", "supported_types.html#ifff", null ]
     ] ],
