@@ -126,8 +126,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae3d6dd9b8abd71e12ebe8fabd513cec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5606d0b5bc14407f0be9d47dca7612d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_array_accessor.html#a5606d0b5bc14407f0be9d47dca7612d6">write</a> (ChimeraTK::VersionNumber versionNumber)=delete</td></tr>
 <tr class="separator:a5606d0b5bc14407f0be9d47dca7612d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5cdc2783ce70ed7af56607024035735"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_array_accessor.html#aa5cdc2783ce70ed7af56607024035735">writeDestructively</a> (ChimeraTK::VersionNumber versionNumber)=delete</td></tr>
+<tr class="separator:aa5cdc2783ce70ed7af56607024035735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f39e90967b5befde4227ab273ef97c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_array_accessor.html#a9f39e90967b5befde4227ab273ef97c8">write</a> ()</td></tr>
 <tr class="separator:a9f39e90967b5befde4227ab273ef97c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d91a3032ca365975d39453c139a94ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_array_accessor.html#a5d91a3032ca365975d39453c139a94ec">writeDestructively</a> ()</td></tr>
+<tr class="separator:a5d91a3032ca365975d39453c139a94ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61d1e2f1cab8394f1b3e1f514a924fd4"><td class="memItemLeft" align="right" valign="top">TransferFuture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_array_accessor.html#a61d1e2f1cab8394f1b3e1f514a924fd4">readAsync</a> ()</td></tr>
 <tr class="separator:a61d1e2f1cab8394f1b3e1f514a924fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_inversion_of_control_accessor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_inversion_of_control_accessor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_inversion_of_control_accessor.html">ChimeraTK::InversionOfControlAccessor&lt; ArrayAccessor&lt; UserType &gt; &gt;</a></td></tr>
@@ -301,7 +305,7 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_array_accessor_8h_source.html#l00070">70</a> of file <a class="el" href="_array_accessor_8h_source.html">ArrayAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_array_accessor_8h_source.html#l00078">78</a> of file <a class="el" href="_array_accessor_8h_source.html">ArrayAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -332,7 +336,7 @@ template&lt;typename UserType&gt; </div>
 
 <p>Default constructor creates a dysfunctional accessor (to be assigned with a real accessor later) </p>
 
-<p class="definition">Definition at line <a class="el" href="_array_accessor_8h_source.html#l00078">78</a> of file <a class="el" href="_array_accessor_8h_source.html">ArrayAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_array_accessor_8h_source.html#l00086">86</a> of file <a class="el" href="_array_accessor_8h_source.html">ArrayAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -422,7 +426,7 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_array_accessor_8h_source.html#l00062">62</a> of file <a class="el" href="_array_accessor_8h_source.html">ArrayAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_array_accessor_8h_source.html#l00070">70</a> of file <a class="el" href="_array_accessor_8h_source.html">ArrayAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -523,13 +527,78 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_array_accessor_8h_source.html#l00055">55</a> of file <a class="el" href="_array_accessor_8h_source.html">ArrayAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_array_accessor_8h_source.html#l00056">56</a> of file <a class="el" href="_array_accessor_8h_source.html">ArrayAccessor.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_array_accessor_a9f39e90967b5befde4227ab273ef97c8_icgraph.svg" width="454" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aa5cdc2783ce70ed7af56607024035735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5cdc2783ce70ed7af56607024035735">&#9670;&nbsp;</a></span>writeDestructively() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_array_accessor.html">ChimeraTK::ArrayAccessor</a>&lt; UserType &gt;::writeDestructively </td>
+          <td>(</td>
+          <td class="paramtype">ChimeraTK::VersionNumber&#160;</td>
+          <td class="paramname"><em>versionNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d91a3032ca365975d39453c139a94ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d91a3032ca365975d39453c139a94ec">&#9670;&nbsp;</a></span>writeDestructively() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_array_accessor.html">ChimeraTK::ArrayAccessor</a>&lt; UserType &gt;::writeDestructively </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_array_accessor_8h_source.html#l00063">63</a> of file <a class="el" href="_array_accessor_8h_source.html">ArrayAccessor.h</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_array_accessor_a5d91a3032ca365975d39453c139a94ec_icgraph.svg" width="454" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -558,7 +627,7 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_array_accessor_8h_source.html#l00068">68</a> of file <a class="el" href="_array_accessor_8h_source.html">ArrayAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_array_accessor_8h_source.html#l00076">76</a> of file <a class="el" href="_array_accessor_8h_source.html">ArrayAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +640,7 @@ template&lt;typename UserType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_array_accessor.html">ArrayAccessor</a></li>
-    <li class="footer">Generated on Wed Jun 26 2019 03:53:59 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Jun 27 2019 03:53:33 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

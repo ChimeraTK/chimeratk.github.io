@@ -1,13 +1,17 @@
 var NAVTREEINDEX4 =
 {
+"hierarchy.html":[7,2],
+"historydoc.html":[2],
+"historydoc.html#historyintro":[2,0],
+"index.html":[],
 "loggingdoc.html":[1],
 "loggingdoc.html#logginintro":[1,0],
 "namespace_chimera_t_k.html":[6,0,0],
 "namespace_chimera_t_k.html":[7,0,0],
-"namespace_chimera_t_k_1_1history.html":[7,0,0,0],
 "namespace_chimera_t_k_1_1history.html":[6,0,0,0],
-"namespacelogging.html":[6,0,1],
+"namespace_chimera_t_k_1_1history.html":[7,0,0,0],
 "namespacelogging.html":[7,0,1],
+"namespacelogging.html":[6,0,1],
 "namespacemembers.html":[6,1,0],
 "namespacemembers_enum.html":[6,1,3],
 "namespacemembers_eval.html":[6,1,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX4 =
 "struct_chimera_t_k_1_1_variable_direction.html#a731e6cd5f58f1f014d443434f9ff6219":[7,0,0,69,5],
 "struct_chimera_t_k_1_1_variable_direction.html#a7c93d9b94dea8bb79d01bbe612bfbb29":[7,0,0,69,6],
 "struct_chimera_t_k_1_1_variable_direction.html#af26c11fdda8c407b533916af35c8b254":[7,0,0,69,4],
-"struct_chimera_t_k_1_1_variable_network_node__data.html":[7,0,0,75],
-"struct_chimera_t_k_1_1_variable_network_node__data.html#a28c5b7adf9a220671351a338891a9c0b":[7,0,0,75,15],
-"struct_chimera_t_k_1_1_variable_network_node__data.html#a29c4580a91e4e43cbe1efa82b2de3f6d":[7,0,0,75,16],
-"struct_chimera_t_k_1_1_variable_network_node__data.html#a3dfa2000cbe4999ad42b12b7af905e34":[7,0,0,75,4],
-"struct_chimera_t_k_1_1_variable_network_node__data.html#a4481ab32cdb405da3507936b37511c27":[7,0,0,75,7]
+"struct_chimera_t_k_1_1_variable_network_node__data.html":[7,0,0,75]
 };

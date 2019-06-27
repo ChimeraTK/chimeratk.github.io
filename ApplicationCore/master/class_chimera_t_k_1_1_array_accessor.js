@@ -9,5 +9,7 @@ var class_chimera_t_k_1_1_array_accessor =
     [ "replace", "class_chimera_t_k_1_1_array_accessor.html#a3d767ec5a09c05a6b23fcc7736d2493a", null ],
     [ "write", "class_chimera_t_k_1_1_array_accessor.html#a5606d0b5bc14407f0be9d47dca7612d6", null ],
     [ "write", "class_chimera_t_k_1_1_array_accessor.html#a9f39e90967b5befde4227ab273ef97c8", null ],
+    [ "writeDestructively", "class_chimera_t_k_1_1_array_accessor.html#aa5cdc2783ce70ed7af56607024035735", null ],
+    [ "writeDestructively", "class_chimera_t_k_1_1_array_accessor.html#a5d91a3032ca365975d39453c139a94ec", null ],
     [ "InversionOfControlAccessor< ArrayAccessor< UserType > >", "class_chimera_t_k_1_1_array_accessor.html#a84e17c9b4cd49ecbbc1ee1fab29ab421", null ]
 ];
