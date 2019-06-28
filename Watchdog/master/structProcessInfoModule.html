@@ -108,7 +108,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a66f1ebb4d2179c7ceb5798fd1c81bc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85e87f2c7a75ada7b23e8a672b06c75a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a85e87f2c7a75ada7b23e8a672b06c75a">FillProcInfo</a> (const std::shared_ptr&lt; proc_t &gt; &amp;info)</td></tr>
 <tr class="separator:a85e87f2c7a75ada7b23e8a672b06c75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada9eaa0787b9c5b393450c321e8941a7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#ada9eaa0787b9c5b393450c321e8941a7">getTime</a> ()</td></tr>
+<tr class="memitem:ada9eaa0787b9c5b393450c321e8941a7"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#ada9eaa0787b9c5b393450c321e8941a7">getTime</a> ()</td></tr>
 <tr class="separator:ada9eaa0787b9c5b393450c321e8941a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4949333ed2abc7e07933dda2c1f8cf7e"><td class="memItemLeft" align="right" valign="top"><a id="a4949333ed2abc7e07933dda2c1f8cf7e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>terminate</b> () override</td></tr>
@@ -180,6 +180,9 @@ std::ostream *&#160;</td><td class="memItemRight" valign="bottom"><b>logStream</
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string ProcessInfoModule::getTime </td>
@@ -188,6 +191,11 @@ std::ostream *&#160;</td><td class="memItemRight" valign="bottom"><b>logStream</
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Print the watchdog server name, a time stamp and the module name: Result is: 'WATCHDOG_SERVER: "day of week" "month" "day" hh:mm:ss yyyy "module_name" -&gt; ' </p>
 
