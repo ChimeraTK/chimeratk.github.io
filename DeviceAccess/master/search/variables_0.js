@@ -52,6 +52,7 @@ var searchData=
   ['_5finterface',['_Interface',['../struct_chimera_t_k_1_1_sdm.html#abbf96eb1d4445e947d4ace88aa43085d',1,'ChimeraTK::Sdm']]],
   ['_5fiobuffer',['_ioBuffer',['../class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#adf0efa60b77d7bdbcb97e9a46fe102e4',1,'ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor']]],
   ['_5fiodevice',['_ioDevice',['../class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#afa8dc77fdb489d7d46a49be62cd4987b',1,'ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor']]],
+  ['_5fisnotwriteable',['_isNotWriteable',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a77497d46ab05bbd7d1110644b790ea3a',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor']]],
   ['_5flastsendtime',['_lastSendTime',['../class_chimera_t_k_1_1_rebot_backend.html#a1c1ae7f083194cefe211bdb77e28b159',1,'ChimeraTK::RebotBackend::_lastSendTime()'],['../struct_chimera_t_k_1_1_rebot_protocol1.html#a34590eb23b1957906ca01f34cb68a7da',1,'ChimeraTK::RebotProtocol1::_lastSendTime()']]],
   ['_5flmapfilename',['_lmapFileName',['../class_chimera_t_k_1_1_logical_name_mapping_backend.html#af84946cdb9dce95e0ee669127161a975',1,'ChimeraTK::LogicalNameMappingBackend']]],
   ['_5fmapfile',['_mapFile',['../class_chimera_t_k_1_1_dummy_backend.html#a8ff43143f271f34f948afa5861ddb06b',1,'ChimeraTK::DummyBackend']]],
