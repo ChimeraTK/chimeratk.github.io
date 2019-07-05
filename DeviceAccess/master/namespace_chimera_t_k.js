@@ -22,6 +22,7 @@ var namespace_chimera_t_k =
     [ "DMapFileParser", "class_chimera_t_k_1_1_d_map_file_parser.html", "class_chimera_t_k_1_1_d_map_file_parser" ],
     [ "DMapFilesParser", "class_chimera_t_k_1_1_d_map_files_parser.html", "class_chimera_t_k_1_1_d_map_files_parser" ],
     [ "DummyBackend", "class_chimera_t_k_1_1_dummy_backend.html", "class_chimera_t_k_1_1_dummy_backend" ],
+    [ "DummyBackendBase", "class_chimera_t_k_1_1_dummy_backend_base.html", "class_chimera_t_k_1_1_dummy_backend_base" ],
     [ "DummyMultiplexedRegisterAccessor", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor" ],
     [ "DummyRegisterAccessor", "class_chimera_t_k_1_1_dummy_register_accessor.html", "class_chimera_t_k_1_1_dummy_register_accessor" ],
     [ "DummyRegisterAddressChecker", "class_chimera_t_k_1_1_dummy_register_address_checker.html", "class_chimera_t_k_1_1_dummy_register_address_checker" ],

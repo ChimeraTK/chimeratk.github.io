@@ -18,6 +18,7 @@ var dir_f6c06f7a01da37196a5f6fe3a6212106 =
       [ "DummyBackend", "class_chimera_t_k_1_1_dummy_backend.html", "class_chimera_t_k_1_1_dummy_backend" ],
       [ "AddressRange", "struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html", "struct_chimera_t_k_1_1_dummy_backend_1_1_address_range" ]
     ] ],
+    [ "DummyBackendBase.h", "_dummy_backend_base_8h.html", "_dummy_backend_base_8h" ],
     [ "DummyRegisterAccessor.h", "device__backends_2include_2_dummy_register_accessor_8h.html", [
       [ "DummyRegisterElement", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element" ],
       [ "DummyRegisterSequence", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence" ],

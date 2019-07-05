@@ -23,5 +23,6 @@ var searchData=
   ['dmapfilesparser_2eh',['DMapFilesParser.h',['../fileparsers_2include_2_d_map_files_parser_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_d_map_files_parser_8h.html',1,'(Global Namespace)']]],
   ['dummybackend_2ecc',['DummyBackend.cc',['../_dummy_backend_8cc.html',1,'']]],
   ['dummybackend_2eh',['DummyBackend.h',['../device__backends_2include_2_dummy_backend_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_dummy_backend_8h.html',1,'(Global Namespace)']]],
+  ['dummybackendbase_2eh',['DummyBackendBase.h',['../_dummy_backend_base_8h.html',1,'']]],
   ['dummyregisteraccessor_2eh',['DummyRegisterAccessor.h',['../device__backends_2include_2_dummy_register_accessor_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_dummy_register_accessor_8h.html',1,'(Global Namespace)']]]
 ];

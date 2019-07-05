@@ -25,7 +25,7 @@ var class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor =
     [ "mayReplaceOther", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a0613e9f5fab2be0b76adfab600f54d99", null ],
     [ "replaceTransferElement", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#acb965b35365a29b27d42c41db0578033", null ],
     [ "setAsCooked_impl", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a91abddd9b7029d9d5b6cefb94e6fc05d", null ],
-    [ "DummyBackend", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a4ae5d0e3470fb668079e35d6c7750695", null ],
+    [ "DummyBackendBase", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ac196e00898eb06cf2b8ec22c8ee4582b", null ],
     [ "_bar", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aa53680194b261a6170adcacfa850bab3", null ],
     [ "_dataConverter", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a6868da1cb7ea83e8b67ee2d3cf052f3f", null ],
     [ "_dev", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aa7fbb9a9a6209f7c60142befa9361ef1", null ],
