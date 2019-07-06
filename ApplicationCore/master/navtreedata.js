@@ -15,6 +15,10 @@ var NAVTREE =
       [ "Example usage", "configreader.html#usage", null ],
       [ "XML file structure", "configreader.html#xmlstructure", null ]
     ] ],
+    [ "Example 1: Application with two modules and two hardware devices", "example1.html", null ],
+    [ "Example 2: Small but complete application with a proportional controller", "example2.html", null ],
+    [ "Example 2a: Application with automation module", "example2a.html", null ],
+    [ "Example 3: Minimal device server", "example3.html", null ],
     [ "Status Monitor", "statusmonitordoc.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
@@ -48,7 +52,8 @@ var NAVTREE =
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ]
       ] ]
-    ] ]
+    ] ],
+    [ "Examples", "examples.html", "examples" ]
   ] ]
 ];
 
@@ -58,8 +63,8 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_application.html#ad198c0bb189aa53c1a4f5e3c0cf4a54e",
 "class_chimera_t_k_1_1_feeding_fan_out.html#ab8b2eb423be962af8b1f2fd0a937d711",
 "class_chimera_t_k_1_1_variable_network_dumping_visitor.html#a466ed35bca4d3b1a97428ec7b3f06ef9",
-"hierarchy.html",
-"struct_chimera_t_k_1_1_variable_network_node__data.html#a28c5b7adf9a220671351a338891a9c0b"
+"functions_vars_s.html",
+"struct_chimera_t_k_1_1_variable.html#a904232c96d47ce6de4095753aa5f3c54"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
