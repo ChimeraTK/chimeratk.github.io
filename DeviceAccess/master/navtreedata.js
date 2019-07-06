@@ -35,6 +35,10 @@ var NAVTREE =
       [ "Why do RegisterAccessors not have an assignment operator for other RegisterAccessors?", "q_and_a.html#why_no_accessor_assignment", null ],
       [ "Why can I not read SEQUENCE registers?", "q_and_a.html#use_sequences", null ]
     ] ],
+    [ "Testing applications using the DummyBackends", "testing_with_dummy_backends.html", [
+      [ "Specifying the dummies in the device map file", "testing_with_dummy_backends.html#dmap_specify_dummies", null ],
+      [ "Writeing to read-only registers", "testing_with_dummy_backends.html#dummy_backends_write_readonly", null ]
+    ] ],
     [ "Todo List", "todo.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", null, [
@@ -78,15 +82,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"class_chimera_t_k_1_1_buffering_register_accessor.html#a1574b7c051bb0e39b0c3328d58dd0f4d",
-"class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html",
-"class_chimera_t_k_1_1_logical_name_mapping_backend.html#af84946cdb9dce95e0ee669127161a975",
-"class_chimera_t_k_1_1_rebot_backend.html#a9c0030d5dd366ac1f91a64041d942f30",
-"class_chimera_t_k_1_1_scalar_register_accessor.html#ac91a668d687c25e64f20c3ee9e4ac7c2",
-"class_chimera_t_k_1_1_version_number.html#a8edf5d8a17c1066cc99d9aa5b260070b",
-"dir_0128381db4b4f5acbef62e610c8688e8.html",
-"mtca4u__compatibility__headers_2_register_catalogue_8h_source.html",
-"use_custom_backend_8cpp.html"
+"class_chimera_t_k_1_1_buffering_register_accessor.html#a1f1d0e0f9636c6147a3c11fd1390134a",
+"class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html#a34aca12eef21df4080234eccd618393b",
+"class_chimera_t_k_1_1_map_file_parser.html#a2df3215ca13237697b79d4a99a2996b6",
+"class_chimera_t_k_1_1_rebot_backend.html#ab57f761f8e81443540d24d912160d227",
+"class_chimera_t_k_1_1_scalar_register_accessor.html#af19bbac3338b95f0e9e0f28c5489060a",
+"class_chimera_t_k_1_1_version_number.html#a994f595256fe422eb71f034091a557a5",
+"dir_04e7a3a48585d4391a17b116de84faa7.html",
+"mtca4u__compatibility__headers_2_register_info_8h_source.html",
+"todo.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

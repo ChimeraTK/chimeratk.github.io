@@ -82,8 +82,7 @@ $(document).ready(function(){initNavTree('_shared_dummy_backend_8cc.html','');})
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">SharedDummyBackend.cc File Reference</div>  </div>
 </div><!--header-->
@@ -115,41 +114,14 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespace_chimera_t_k"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></td></tr>
 <tr class="memdesc:namespace_chimera_t_k"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides storage object for devices descriptions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ae845db7f933611bff0617577388e4c4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_shared_dummy_backend_8cc.html#ae845db7f933611bff0617577388e4c4f">TRY_REGISTER_ACCESS</a>(COMMAND)</td></tr>
-<tr class="separator:ae845db7f933611bff0617577388e4c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ae845db7f933611bff0617577388e4c4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae845db7f933611bff0617577388e4c4f">&#9670;&nbsp;</a></span>TRY_REGISTER_ACCESS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TRY_REGISTER_ACCESS</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">COMMAND</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">try</span> {                                                                                                                \</div><div class="line">    COMMAND                                                                                                            \</div><div class="line">  }                                                                                                                    \</div><div class="line">  catch(std::out_of_range &amp; outOfRangeException) {                                                                     \</div><div class="line">    std::stringstream errorMessage;                                                                                    \</div><div class="line">    errorMessage &lt;&lt; <span class="stringliteral">&quot;Invalid address offset &quot;</span> &lt;&lt; address &lt;&lt; <span class="stringliteral">&quot; in bar &quot;</span> &lt;&lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(bar) &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>                 \</div><div class="line">                 &lt;&lt; <span class="stringliteral">&quot;Caught out_of_range exception: &quot;</span> &lt;&lt; outOfRangeException.what();                                   \</div><div class="line">    throw <a class="code" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(errorMessage.str());                                                                  \</div><div class="line">  }</div><div class="ttc" id="class_chimera_t_k_1_1logic__error_html"><div class="ttname"><a href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a></div><div class="ttdoc">Exception thrown when a logic error has occured. </div><div class="ttdef"><b>Definition:</b> <a href="exception_2include_2_exception_8h_source.html#l00050">Exception.h:50</a></div></div>
-</div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8cc_source.html#l00016">16</a> of file <a class="el" href="_shared_dummy_backend_8cc_source.html">SharedDummyBackend.cc</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_2c90e15a7117effef4353a6eb562e96d.html">SharedDummy</a></li><li class="navelem"><a class="el" href="dir_c02021404aa43b7226fc426addd80f61.html">src</a></li><li class="navelem"><a class="el" href="_shared_dummy_backend_8cc.html">SharedDummyBackend.cc</a></li>
-    <li class="footer">Generated on Fri Jul 5 2019 03:53:09 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Jul 6 2019 03:53:08 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
