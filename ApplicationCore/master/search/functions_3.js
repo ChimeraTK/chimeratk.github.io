@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['datavalidity',['dataValidity',['../class_chimera_t_k_1_1_feeding_fan_out.html#a0fdcf9290b8ed44ab7f8b76e76b802d3',1,'ChimeraTK::FeedingFanOut']]],
+  ['datavalidity',['dataValidity',['../class_chimera_t_k_1_1_exception_handling_decorator.html#a28c3c3d51c5e97712bdece9bf9657a73',1,'ChimeraTK::ExceptionHandlingDecorator::dataValidity()'],['../class_chimera_t_k_1_1_feeding_fan_out.html#a0fdcf9290b8ed44ab7f8b76e76b802d3',1,'ChimeraTK::FeedingFanOut::dataValidity()']]],
   ['deactivate',['deactivate',['../class_chimera_t_k_1_1_internal_module.html#a7c306d0c2969c4f4151d2f0d7f42937d',1,'ChimeraTK::InternalModule::deactivate()'],['../class_chimera_t_k_1_1_threaded_fan_out.html#a2e01fc1efd2e4f39b13c885d33978da8',1,'ChimeraTK::ThreadedFanOut::deactivate()'],['../class_chimera_t_k_1_1_trigger_fan_out.html#a3404af1ffc3a6df39808d28887714a90',1,'ChimeraTK::TriggerFanOut::deactivate()']]],
   ['debugprintaccessordecorator',['DebugPrintAccessorDecorator',['../class_chimera_t_k_1_1_debug_print_accessor_decorator.html#a648525adf5c9f43126b03635649ad71c',1,'ChimeraTK::DebugPrintAccessorDecorator']]],
   ['debugtestablemode',['debugTestableMode',['../class_chimera_t_k_1_1_application.html#abb8b6abdb4e460d15a7291b5e8568f0c',1,'ChimeraTK::Application']]],
