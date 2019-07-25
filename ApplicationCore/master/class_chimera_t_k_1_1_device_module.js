@@ -1,7 +1,7 @@
 var class_chimera_t_k_1_1_device_module =
 [
     [ "DeviceError", "struct_chimera_t_k_1_1_device_module_1_1_device_error.html", "struct_chimera_t_k_1_1_device_module_1_1_device_error" ],
-    [ "DeviceModule", "class_chimera_t_k_1_1_device_module.html#a929d59424e245a1e6fba6ea4ea8f184f", null ],
+    [ "DeviceModule", "class_chimera_t_k_1_1_device_module.html#a1b4aab628f9b7cfcf631275bc7adf1b6", null ],
     [ "DeviceModule", "class_chimera_t_k_1_1_device_module.html#ae258c04112edbd61b23b8898621b7dee", null ],
     [ "~DeviceModule", "class_chimera_t_k_1_1_device_module.html#a3b3c82b4e2bb69de77e4793764835922", null ],
     [ "DeviceModule", "class_chimera_t_k_1_1_device_module.html#ac981bac0d95b66bfe1f933fc21ace28c", null ],
@@ -36,6 +36,7 @@ var class_chimera_t_k_1_1_device_module =
     [ "errorCondVar", "class_chimera_t_k_1_1_device_module.html#a66d980d10d0ed111ad99ca23fdc8b539", null ],
     [ "errorMutex", "class_chimera_t_k_1_1_device_module.html#a4e61eb7f0c5215a0579f83ee65d0c889", null ],
     [ "errorQueue", "class_chimera_t_k_1_1_device_module.html#a81936a1ddd5c7bf141124aa599181a03", null ],
+    [ "initialisationHandlers", "class_chimera_t_k_1_1_device_module.html#a9f4a1432cad871f0aecce85c2e814c20", null ],
     [ "moduleThread", "class_chimera_t_k_1_1_device_module.html#ad60c1bb16b26f8cbfc441d755bffc0fe", null ],
     [ "owner", "class_chimera_t_k_1_1_device_module.html#acc495fb95e532c24d54422955df7be78", null ],
     [ "proxies", "class_chimera_t_k_1_1_device_module.html#a7428186cbfbb92002fc80b863de786f6", null ],
