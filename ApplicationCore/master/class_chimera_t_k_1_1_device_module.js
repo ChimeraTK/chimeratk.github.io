@@ -5,6 +5,7 @@ var class_chimera_t_k_1_1_device_module =
     [ "DeviceModule", "class_chimera_t_k_1_1_device_module.html#ae258c04112edbd61b23b8898621b7dee", null ],
     [ "~DeviceModule", "class_chimera_t_k_1_1_device_module.html#a3b3c82b4e2bb69de77e4793764835922", null ],
     [ "DeviceModule", "class_chimera_t_k_1_1_device_module.html#ac981bac0d95b66bfe1f933fc21ace28c", null ],
+    [ "addInitialisationHandler", "class_chimera_t_k_1_1_device_module.html#ab30bf1b235913143d45bb5da7d84052c", null ],
     [ "connectTo", "class_chimera_t_k_1_1_device_module.html#a9f8221a93d4b964e0daf9b00e81b450b", null ],
     [ "decrementDataFaultCounter", "class_chimera_t_k_1_1_device_module.html#a674ce21caf7c5fad16ecfa054d66e9a2", null ],
     [ "defineConnections", "class_chimera_t_k_1_1_device_module.html#a54e3bc866064cb19cbc2c6cab5ee9e51", null ],
