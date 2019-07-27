@@ -1,6 +1,8 @@
 var searchData=
 [
   ['cache',['Cache',['../namespace_cache.html',1,'']]],
+  ['cache_5ffile_2emd',['cache_file.md',['../cache__file_8md.html',1,'']]],
+  ['cachefile_20mechanism',['CacheFile Mechanism',['../cache_file.html',1,'']]],
   ['cataloguecache_2ecc',['CatalogueCache.cc',['../_catalogue_cache_8cc.html',1,'']]],
   ['cataloguecache_2eh',['CatalogueCache.h',['../_catalogue_cache_8h.html',1,'']]],
   ['cataloguefetcher',['CatalogueFetcher',['../class_catalogue_fetcher.html',1,'CatalogueFetcher'],['../class_catalogue_fetcher.html#afb5786c28daa677ac1b96fad5cc070a3',1,'CatalogueFetcher::CatalogueFetcher()']]],
