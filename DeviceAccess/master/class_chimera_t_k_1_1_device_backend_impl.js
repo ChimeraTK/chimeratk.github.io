@@ -5,6 +5,7 @@ var class_chimera_t_k_1_1_device_backend_impl =
     [ "getRegisterCatalogue", "class_chimera_t_k_1_1_device_backend_impl.html#ad085e63f6f91280d7a1e5a9bb2ebc800", null ],
     [ "getRegisterMap", "class_chimera_t_k_1_1_device_backend_impl.html#aa1e029731af6f317c7ba134e169d9e16", null ],
     [ "isConnected", "class_chimera_t_k_1_1_device_backend_impl.html#adda9402b29b72150ce6d7682e93797d2", null ],
+    [ "isFunctional", "class_chimera_t_k_1_1_device_backend_impl.html#a130b83ebd599df4f6d6c8bcc3f613843", null ],
     [ "isOpen", "class_chimera_t_k_1_1_device_backend_impl.html#a9eb07db4e5b1b1dba6fb6d5bf5c0136b", null ],
     [ "read", "class_chimera_t_k_1_1_device_backend_impl.html#a88f571ef43273e4b7f24e1665938d93b", null ],
     [ "read", "class_chimera_t_k_1_1_device_backend_impl.html#a620c9c8f74a6eaec4fc08b60afeef6c3", null ],

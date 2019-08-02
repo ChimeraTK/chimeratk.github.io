@@ -83,14 +83,14 @@ var NAVTREEINDEX =
 [
 ".html",
 "class_chimera_t_k_1_1_buffering_register_accessor.html#a1f1d0e0f9636c6147a3c11fd1390134a",
-"class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html#a34aca12eef21df4080234eccd618393b",
-"class_chimera_t_k_1_1_map_file_parser.html#a2df3215ca13237697b79d4a99a2996b6",
-"class_chimera_t_k_1_1_rebot_backend.html#ab57f761f8e81443540d24d912160d227",
-"class_chimera_t_k_1_1_scalar_register_accessor.html#af19bbac3338b95f0e9e0f28c5489060a",
-"class_chimera_t_k_1_1_version_number.html#a994f595256fe422eb71f034091a557a5",
-"dir_04e7a3a48585d4391a17b116de84faa7.html",
-"mtca4u__compatibility__headers_2_register_info_8h_source.html",
-"todo.html"
+"class_chimera_t_k_1_1_dummy_backend_base.html#a9ff81c5e9d05a5b404730c034e80489b",
+"class_chimera_t_k_1_1_logical_name_mapping_backend.html#ae578db87a49db2f3c2effc6403ddcd9c",
+"class_chimera_t_k_1_1_rebot_backend.html#a9196198b1d46c54118e197714b396e62",
+"class_chimera_t_k_1_1_scalar_register_accessor.html#ab6b9f082cde29b0faf7fd09a0199060d",
+"class_chimera_t_k_1_1_version_number.html#a76cc5b990fa24cbc89ce9daf8eee3043",
+"device__backends_2pcie_2include_2pcieuni__io__compat_8h_source.html",
+"mtca4u__compatibility__headers_2_register_catalogue_8h.html",
+"testing_with_dummy_backends.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

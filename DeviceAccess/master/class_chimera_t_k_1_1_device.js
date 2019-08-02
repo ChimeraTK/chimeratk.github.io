@@ -20,6 +20,7 @@ var class_chimera_t_k_1_1_device =
     [ "getScalarRegisterAccessor", "class_chimera_t_k_1_1_device.html#a4a5651ff6d3e8418ea8e787765346b5d", null ],
     [ "getTwoDRegisterAccessor", "class_chimera_t_k_1_1_device.html#a053fa37d233cc991fbfdb3c470d308dd", null ],
     [ "getTwoDRegisterAccessor", "class_chimera_t_k_1_1_device.html#a6bfefeb1612e0dd0cd25d463c1a0d6b5", null ],
+    [ "isFunctional", "class_chimera_t_k_1_1_device.html#ab4e16a54db85cd0d908484dd68f10780", null ],
     [ "isOpened", "class_chimera_t_k_1_1_device.html#a0595273d58b7ae326ca7f8def4f8a6d3", null ],
     [ "open", "class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf", null ],
     [ "open", "class_chimera_t_k_1_1_device.html#a0a86afbebd076b8bc1d7bc6fe87db89d", null ],
