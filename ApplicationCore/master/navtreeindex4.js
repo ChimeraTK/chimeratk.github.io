@@ -1,5 +1,13 @@
 var NAVTREEINDEX4 =
 {
+"functions_vars_a.html":[11,3,2,1],
+"functions_vars_b.html":[11,3,2,2],
+"functions_vars_c.html":[11,3,2,3],
+"functions_vars_d.html":[11,3,2,4],
+"functions_vars_e.html":[11,3,2,5],
+"functions_vars_f.html":[11,3,2,6],
+"functions_vars_g.html":[11,3,2,7],
+"functions_vars_i.html":[11,3,2,8],
 "functions_vars_l.html":[11,3,2,9],
 "functions_vars_m.html":[11,3,2,10],
 "functions_vars_n.html":[11,3,2,11],
@@ -25,8 +33,8 @@ var NAVTREEINDEX4 =
 "loggingdoc.html#logginintro":[1,0],
 "namespace_chimera_t_k.html":[10,0,0],
 "namespace_chimera_t_k.html":[11,0,0],
-"namespace_chimera_t_k_1_1history.html":[10,0,0,0],
 "namespace_chimera_t_k_1_1history.html":[11,0,0,0],
+"namespace_chimera_t_k_1_1history.html":[10,0,0,0],
 "namespacelogging.html":[10,0,1],
 "namespacelogging.html":[11,0,1],
 "namespacemembers.html":[10,1,0],
@@ -42,8 +50,8 @@ var NAVTREEINDEX4 =
 "struct_automation.html#a1a86176292eb457cf69d9a764a38a468":[11,0,2,3],
 "struct_automation.html#a4a08a0e51d5adb3d163709212eff7ecb":[11,0,2,4],
 "struct_automation.html#a6d28e80b6662b738458f8753adc2f837":[11,0,2,5],
-"struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[11,0,2,0],
 "struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[11,0,2,1],
+"struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[11,0,2,0],
 "struct_automation.html#aa738677550010b51b08df005e0e1d7f3":[11,0,2,2],
 "struct_automation.html#acff6fa50c6a95870a79b4b1df4a14ea1":[11,0,2,7],
 "struct_automation.html#adc175eb9561ef659f570a65ae1ac97cc":[11,0,2,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX4 =
 "struct_chimera_t_k_1_1_state_monitor.html#a4845df79bfda0f5da1a0a1e2b28c4386":[11,0,0,61,1],
 "struct_chimera_t_k_1_1_state_monitor.html#ae1f3d3228cfb2b2b9c55b09ff21bd3b1":[11,0,0,61,0],
 "struct_chimera_t_k_1_1_status_monitor.html":[11,0,0,62],
-"struct_chimera_t_k_1_1_status_monitor.html#a0bb841fb4181d6957a108236d1062dff":[11,0,0,62,3],
-"struct_chimera_t_k_1_1_status_monitor.html#a1d9519e6eb2ba8a489891190db7be2a5":[11,0,0,62,6],
-"struct_chimera_t_k_1_1_status_monitor.html#a2fd9e1c2956fba5d378f15f44075fc56":[11,0,0,62,8],
-"struct_chimera_t_k_1_1_status_monitor.html#a4257be58d26fcf0620b6bffdf7830204":[11,0,0,62,2],
-"struct_chimera_t_k_1_1_status_monitor.html#a6632040c7d94632c204a6c723fd89a26":[11,0,0,62,0],
-"struct_chimera_t_k_1_1_status_monitor.html#a7241a28fabc3bcf9a4aedf8cdc90d8ef":[11,0,0,62,5],
-"struct_chimera_t_k_1_1_status_monitor.html#a7e034bb54af489ef8d13b2dd185c2938":[11,0,0,62,4],
-"struct_chimera_t_k_1_1_status_monitor.html#abffda3d1f947baebc1dcda83aaf90a21":[11,0,0,62,7],
-"struct_chimera_t_k_1_1_status_monitor.html#ae10bf9e6ace08fca8de331accdb25e9c":[11,0,0,62,1]
+"struct_chimera_t_k_1_1_status_monitor.html#a0bb841fb4181d6957a108236d1062dff":[11,0,0,62,3]
 };

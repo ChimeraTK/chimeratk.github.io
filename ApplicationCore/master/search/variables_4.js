@@ -10,6 +10,7 @@ var searchData=
   ['devicealias',['deviceAlias',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a3dfa2000cbe4999ad42b12b7af905e34',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['devicealiasoruri',['deviceAliasOrURI',['../class_chimera_t_k_1_1_device_module.html#ac19f5b14011b1cb9830655783eb809fa',1,'ChimeraTK::DeviceModule']]],
   ['deviceerror',['deviceError',['../class_chimera_t_k_1_1_device_module.html#ab54f2a7bdf571deccf3a0c463d367ae9',1,'ChimeraTK::DeviceModule']]],
+  ['devicehaserror',['deviceHasError',['../class_chimera_t_k_1_1_device_module.html#ad329aeca005a9b591168360ec1b068a6',1,'ChimeraTK::DeviceModule']]],
   ['deviceisinitialized',['deviceIsInitialized',['../class_chimera_t_k_1_1_device_module.html#afd70af961ca8d5cfd35f7f02996880b1',1,'ChimeraTK::DeviceModule']]],
   ['devicemap',['deviceMap',['../class_chimera_t_k_1_1_application.html#a0b48d873e427c274811a351882a50555',1,'ChimeraTK::Application']]],
   ['devicemodulelist',['deviceModuleList',['../class_chimera_t_k_1_1_application.html#a7e35f287b845c7c810656afd0ecf902a',1,'ChimeraTK::Application']]],

@@ -94,6 +94,9 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_device_module.ht
 </div><!--header-->
 <div class="contents">
 
+<p>Implementes access to a <a class="el" href="namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1dae0ac20adce6ffee48c7151b070aa5737">ChimeraTK::Device</a>.  
+ <a href="class_chimera_t_k_1_1_device_module.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ChimeraTK::DeviceModule:</div>
@@ -121,7 +124,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b4aab628f9b7cfcf631275bc7adf1b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#a1b4aab628f9b7cfcf631275bc7adf1b6">DeviceModule</a> (<a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> *application, const std::string &amp;<a class="el" href="class_chimera_t_k_1_1_device_module.html#ac19f5b14011b1cb9830655783eb809fa">deviceAliasOrURI</a>, std::function&lt; void(<a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> *)&gt; initialisationHandler=nullptr)</td></tr>
-<tr class="memdesc:a1b4aab628f9b7cfcf631275bc7adf1b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: The device represented by this <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> is identified by either the device alias found in the DMAP file or directly an URI.  <a href="#a1b4aab628f9b7cfcf631275bc7adf1b6">More...</a><br /></td></tr>
+<tr class="memdesc:a1b4aab628f9b7cfcf631275bc7adf1b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: The device represented by this <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> is identified by either the device alias found in the DMAP file or directly an URI.  <a href="#a1b4aab628f9b7cfcf631275bc7adf1b6">More...</a><br /></td></tr>
 <tr class="separator:a1b4aab628f9b7cfcf631275bc7adf1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae258c04112edbd61b23b8898621b7dee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#ae258c04112edbd61b23b8898621b7dee">DeviceModule</a> ()</td></tr>
 <tr class="memdesc:ae258c04112edbd61b23b8898621b7dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor: create dysfunctional device module.  <a href="#ae258c04112edbd61b23b8898621b7dee">More...</a><br /></td></tr>
@@ -167,6 +170,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a579aa9c73405b593553805db4def3a18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#a579aa9c73405b593553805db4def3a18">terminate</a> () override</td></tr>
 <tr class="memdesc:a579aa9c73405b593553805db4def3a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate the module.  <a href="#a579aa9c73405b593553805db4def3a18">More...</a><br /></td></tr>
 <tr class="separator:a579aa9c73405b593553805db4def3a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89bd7b4a2ab5f278853f9d59d1bf177c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#a89bd7b4a2ab5f278853f9d59d1bf177c">notify</a> ()</td></tr>
+<tr class="memdesc:a89bd7b4a2ab5f278853f9d59d1bf177c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify all condition variables that are waiting inside reportExeption().  <a href="#a89bd7b4a2ab5f278853f9d59d1bf177c">More...</a><br /></td></tr>
+<tr class="separator:a89bd7b4a2ab5f278853f9d59d1bf177c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b1397c1859b806f25953d8e5823ae9e"><td class="memItemLeft" align="right" valign="top">VersionNumber&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#a0b1397c1859b806f25953d8e5823ae9e">getCurrentVersionNumber</a> () const override</td></tr>
 <tr class="memdesc:a0b1397c1859b806f25953d8e5823ae9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current version number which has been received with the last push-type read operation.  <a href="#a0b1397c1859b806f25953d8e5823ae9e">More...</a><br /></td></tr>
 <tr class="separator:a0b1397c1859b806f25953d8e5823ae9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +192,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a674ce21caf7c5fad16ecfa054d66e9a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement the fault counter and set the data validity flag to ok if the counter has reached 0.  <a href="#a674ce21caf7c5fad16ecfa054d66e9a2">More...</a><br /></td></tr>
 <tr class="separator:a674ce21caf7c5fad16ecfa054d66e9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab30bf1b235913143d45bb5da7d84052c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#ab30bf1b235913143d45bb5da7d84052c">addInitialisationHandler</a> (std::function&lt; void(<a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> *)&gt; initialisationHandler)</td></tr>
+<tr class="memdesc:ab30bf1b235913143d45bb5da7d84052c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add initialisation handlers to the device.  <a href="#ab30bf1b235913143d45bb5da7d84052c">More...</a><br /></td></tr>
 <tr class="separator:ab30bf1b235913143d45bb5da7d84052c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_module.html">ChimeraTK::Module</a></td></tr>
 <tr class="memitem:ad45684a75a461aa889cef3a41711348e inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#ad45684a75a461aa889cef3a41711348e">Module</a> (<a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> *owner, const std::string &amp;name, const std::string &amp;description, <a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0">HierarchyModifier</a> hierarchyModifier=<a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0a334c4a4c42fdb79d7ebc3e73b517e6f8">HierarchyModifier::none</a>, const std::unordered_set&lt; std::string &gt; &amp;tags={})</td></tr>
@@ -389,9 +396,15 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a4e61eb7f0c5215a0579f83ee65d0c889"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#a4e61eb7f0c5215a0579f83ee65d0c889">errorMutex</a></td></tr>
 <tr class="memdesc:a4e61eb7f0c5215a0579f83ee65d0c889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex for errorCondVar.  <a href="#a4e61eb7f0c5215a0579f83ee65d0c889">More...</a><br /></td></tr>
 <tr class="separator:a4e61eb7f0c5215a0579f83ee65d0c889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66d980d10d0ed111ad99ca23fdc8b539"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#a66d980d10d0ed111ad99ca23fdc8b539">errorCondVar</a></td></tr>
-<tr class="memdesc:a66d980d10d0ed111ad99ca23fdc8b539"><td class="mdescLeft">&#160;</td><td class="mdescRight">This condition variable is used to block <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception. ">reportException()</a> until the error state has been resolved by the moduleThread.  <a href="#a66d980d10d0ed111ad99ca23fdc8b539">More...</a><br /></td></tr>
-<tr class="separator:a66d980d10d0ed111ad99ca23fdc8b539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af32d735a4004798d75121112501a9f70"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#af32d735a4004798d75121112501a9f70">errorIsResolvedCondVar</a></td></tr>
+<tr class="memdesc:af32d735a4004798d75121112501a9f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">This condition variable is used to block <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception. ">reportException()</a> until the error state has been resolved by the moduleThread.  <a href="#af32d735a4004798d75121112501a9f70">More...</a><br /></td></tr>
+<tr class="separator:af32d735a4004798d75121112501a9f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab406c157fb68051691c4b70c25696ef1"><td class="memItemLeft" align="right" valign="top">std::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#ab406c157fb68051691c4b70c25696ef1">errorIsReportedCondVar</a></td></tr>
+<tr class="memdesc:ab406c157fb68051691c4b70c25696ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This condition variable is used to block the error handling thread until an exception is reported.  <a href="#ab406c157fb68051691c4b70c25696ef1">More...</a><br /></td></tr>
+<tr class="separator:ab406c157fb68051691c4b70c25696ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad329aeca005a9b591168360ec1b068a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#ad329aeca005a9b591168360ec1b068a6">deviceHasError</a></td></tr>
+<tr class="memdesc:ad329aeca005a9b591168360ec1b068a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The error flag (predicate) for the conditionVariable.  <a href="#ad329aeca005a9b591168360ec1b068a6">More...</a><br /></td></tr>
+<tr class="separator:ad329aeca005a9b591168360ec1b068a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a919584a80ca4081484c889e0eb53e32a"><td class="memItemLeft" align="right" valign="top">std::list&lt; boost::shared_ptr&lt; TransferElement &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#a919584a80ca4081484c889e0eb53e32a">writeAfterOpen</a></td></tr>
 <tr class="memdesc:a919584a80ca4081484c889e0eb53e32a"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of TransferElements to be written after the device has been opened.  <a href="#a919584a80ca4081484c889e0eb53e32a">More...</a><br /></td></tr>
 <tr class="separator:a919584a80ca4081484c889e0eb53e32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -399,8 +412,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:acc495fb95e532c24d54422955df7be78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd70af961ca8d5cfd35f7f02996880b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#afd70af961ca8d5cfd35f7f02996880b1">deviceIsInitialized</a> = false</td></tr>
 <tr class="separator:afd70af961ca8d5cfd35f7f02996880b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f4a1432cad871f0aecce85c2e814c20"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::function&lt; void(<a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> *) &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#a9f4a1432cad871f0aecce85c2e814c20">initialisationHandlers</a></td></tr>
-<tr class="separator:a9f4a1432cad871f0aecce85c2e814c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a605306e90d268b7091e6bad6c334f5"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::function&lt; void(<a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> *)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#a9a605306e90d268b7091e6bad6c334f5">initialisationHandlers</a></td></tr>
+<tr class="separator:a9a605306e90d268b7091e6bad6c334f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_module"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_module')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_module.html">ChimeraTK::Module</a></td></tr>
 <tr class="memitem:a44c918cb05abb710ee9f6e118fc2951e inherit pro_attribs_class_chimera_t_k_1_1_module"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#a44c918cb05abb710ee9f6e118fc2951e">_owner</a> {nullptr}</td></tr>
 <tr class="memdesc:a44c918cb05abb710ee9f6e118fc2951e inherit pro_attribs_class_chimera_t_k_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Owner of this instance.  <a href="class_chimera_t_k_1_1_module.html#a44c918cb05abb710ee9f6e118fc2951e">More...</a><br /></td></tr>
@@ -448,9 +461,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:aa856db8bf289b50c32116089e3d95e8f inherit pub_types_class_chimera_t_k_1_1_entity_owner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl><dt><b>Examples: </b></dt><dd><a class="el" href="example_2demo_app_8cc-example.html#_a21">example/demoApp.cc</a>, <a class="el" href="example2_2demo_app2_8cc-example.html#_a15">example2/demoApp2.cc</a>, <a class="el" href="example2a_2demo_app2a_8cc-example.html#_a18">example2a/demoApp2a.cc</a>, and <a class="el" href="example3_2demo_app3_8cc-example.html#_a8">example3/demoApp3.cc</a>.</dd>
+<div class="textblock"><p>Implementes access to a <a class="el" href="namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1dae0ac20adce6ffee48c7151b070aa5737">ChimeraTK::Device</a>. </p>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example_2demo_app_8cc-example.html#_a21">example/demoApp.cc</a>, <a class="el" href="example2_2demo_app2_8cc-example.html#_a15">example2/demoApp2.cc</a>, <a class="el" href="example2a_2demo_app2a_8cc-example.html#_a18">example2a/demoApp2a.cc</a>, and <a class="el" href="example3_2demo_app3_8cc-example.html#_a8">example3/demoApp3.cc</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00055">55</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00057">57</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1b4aab628f9b7cfcf631275bc7adf1b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b4aab628f9b7cfcf631275bc7adf1b6">&#9670;&nbsp;</a></span>DeviceModule() <span class="overload">[1/3]</span></h2>
@@ -484,8 +498,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructor: The device represented by this <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> is identified by either the device alias found in the DMAP file or directly an URI. </p>
-<p>A callback function to initialise the device can be registered as an optional argument (see <a class="el" href="class_chimera_t_k_1_1_device_module.html#ab30bf1b235913143d45bb5da7d84052c">addInitialisationHandler()</a> for more information. </p>
+<p>Constructor: The device represented by this <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> is identified by either the device alias found in the DMAP file or directly an URI. </p>
+<p>A callback function to initialise the device can be registered as an optional argument (see <a class="el" href="class_chimera_t_k_1_1_device_module.html#ab30bf1b235913143d45bb5da7d84052c" title="Add initialisation handlers to the device. ">addInitialisationHandler()</a> for more information). </p>
 
 <p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00064">64</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -524,7 +538,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Default constructor: create dysfunctional device module. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00063">63</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00066">66</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -553,7 +567,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00075">75</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00076">76</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -591,7 +605,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Move operation with the move constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00069">69</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00072">72</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -612,7 +626,13 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00380">380</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p>Add initialisation handlers to the device. </p>
+<p>Initialisation handlers are called after the device has been opended, or after the device is recovering from an error (i.e. an accessor has thrown an exception and Device::isFunctional() returns true afterwards).</p>
+<p>You can add mupltiple handlers. They are executed in the sequence in which they are registered. If a handler has been registered in the constructor, it is called first.</p>
+<p>The handler function is called from the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> thread (not from the thread with the accessor that threw the exception). It is handed a pointer to the instance of the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> where the handler was registered. The handler function may throw a ChimeraTK::runtime_error, so you don't have to catch errors thrown when accessing the Device inside the handler. After a handler has thrown an exception, the following handlers are not called. The <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> will wait until the Device reports isFunctional() again and retry. The exception is reported to other modules and the control system.</p>
+<p>Notice: Especially in network based devices which do not hold a permanent connection, it is not always possible to predict whether the next read()/write() will succeed. In this case the Device will always report isFunctional() and one just has to retry. In this case the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> will start the initialisation sequence every 500 ms. </p>
+
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00459">459</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 
 </div>
 </div>
@@ -657,7 +677,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_module.html#a71810be216fbbd436ba3d0d8180c9279">ChimeraTK::Module</a>.</p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="example3_2demo_app3_8cc-example.html#a14">example3/demoApp3.cc</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00110">110</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00111">111</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -697,7 +717,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a2e6036e82c5f3b01bc062ceb431f94bb">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00135">135</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00145">145</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -728,7 +748,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_module.html#a9b3536e232d1163debcdca29279191e2">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00366">366</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00445">445</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -767,7 +787,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a83a34142cea47d7396de8a3657004ef7">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00118">118</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00128">128</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -799,7 +819,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a9a32600fa633b1cd991ba8f2bd3ac6b3">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00130">130</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00140">140</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -830,7 +850,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a44d138bbe63552b5b8dd9a128c76fcbe">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00104">104</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00107">107</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -858,7 +878,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00097">97</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00098">98</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -896,7 +916,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This functions tries to open the device and set the deviceError. </p>
 <p>Once done it notifies the waiting thread(s). The function is running an endless loop inside its own thread (moduleThread). </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00242">242</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00264">264</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -944,7 +964,37 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a59d02ecae8bc99e76c7561c3ccea946c">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00131">131</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00141">141</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+
+</div>
+</div>
+<a id="a89bd7b4a2ab5f278853f9d59d1bf177c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89bd7b4a2ab5f278853f9d59d1bf177c">&#9670;&nbsp;</a></span>notify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::DeviceModule::notify </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Notify all condition variables that are waiting inside reportExeption(). </p>
+<p>This is called from other threads hosting accessors. You must call a boost::thread::terminate() on the thread running the accessor, then call <a class="el" href="class_chimera_t_k_1_1_device_module.html#a89bd7b4a2ab5f278853f9d59d1bf177c" title="Notify all condition variables that are waiting inside reportExeption(). ">DeviceModule::notify()</a> to wake up reportException, which will detect the interruption and return. </p>
+
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00463">463</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_module_a89bd7b4a2ab5f278853f9d59d1bf177c_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -988,7 +1038,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The subscript operator returns a <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a> which can be used in the <a class="el" href="class_chimera_t_k_1_1_application.html#a697d4a47ece6750203eecbff97039773">Application::initialise()</a> function to connect the register with another variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00082">82</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00083">83</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 
 </div>
 </div>
@@ -1038,7 +1088,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00090">90</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00093">93</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1070,7 +1120,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_module.html#af09b1d4243e447c3c40e08f7137aaa55">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00094">94</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00097">97</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1100,12 +1150,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Move assignment. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00072">72</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00075">75</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_module_a55c147ea372edb617417d8910eee7c0d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1141,12 +1191,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_module.html#ae95b667831d2fd73d1a1ccf680653da2">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00090">90</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00091">91</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_module_a4f8ea24bddfe0abab974b0172e1c2075_cgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1181,7 +1231,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00336">336</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00414">414</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 
 </div>
 </div>
@@ -1202,23 +1252,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Use this function to report an exception. </p>
-<p>It should be called whenever a ChimeraTK::runtime_error has been caught when trying to interact with this device. This function shall not be called by the user, all exception handling is done internally by ApplicationCore. </p>
+<p>It should be called whenever a ChimeraTK::runtime_error has been caught when trying to interact with this device. This function shall not be called by the user, all exception handling is done internally by ApplicationCore. This functions is blocking until the Device reports isFunctional() again. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00217">217</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_module_a866cf974d4a178d389753536be5a88db_cgraph.svg" width="100%" height="444"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00218">218</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_module_a866cf974d4a178d389753536be5a88db_icgraph.svg" width="100%" height="383"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_module_a866cf974d4a178d389753536be5a88db_cgraph.svg" width="100%" height="444"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_module_a866cf974d4a178d389753536be5a88db_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -1251,12 +1301,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_module.html#a998f98d99bde4ca7baebb4eaf595a983">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00347">347</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00425">425</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_module_a71dea3b0240cf2eccbae77ab7f2c4a73_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1292,7 +1342,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a5e2a53bcd523efe6546098aec632a60b">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00120">120</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00130">130</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1374,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_module.html#ae3497a487a36f2e1a51bc01592aabf5b">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00355">355</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00433">433</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 
 </div>
 </div>
@@ -1356,7 +1406,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_module.html#a9efbb4df2454977ec359f4687fe39f28">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00106">106</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00107">107</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 
 </div>
 </div>
@@ -1383,20 +1433,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00117">117</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_module_a984e0e97ec34d3f8f05f1eebb28e3acc_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00118">118</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_module_a984e0e97ec34d3f8f05f1eebb28e3acc_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_module_a984e0e97ec34d3f8f05f1eebb28e3acc_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1424,7 +1474,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00199">199</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00235">235</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1448,7 +1498,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00200">200</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00236">236</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1465,7 +1515,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00124">124</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00134">134</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1489,7 +1539,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00128">128</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00138">138</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1513,7 +1563,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00149">149</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00178">178</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1537,7 +1587,33 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00168">168</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00197">197</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+
+</div>
+</div>
+<a id="ad329aeca005a9b591168360ec1b068a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad329aeca005a9b591168360ec1b068a6">&#9670;&nbsp;</a></span>deviceHasError</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::DeviceModule::deviceHasError</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The error flag (predicate) for the conditionVariable. </p>
+
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00218">218</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1561,12 +1637,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00194">194</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00230">230</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
-<a id="a66d980d10d0ed111ad99ca23fdc8b539"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66d980d10d0ed111ad99ca23fdc8b539">&#9670;&nbsp;</a></span>errorCondVar</h2>
+<a id="ab406c157fb68051691c4b70c25696ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab406c157fb68051691c4b70c25696ef1">&#9670;&nbsp;</a></span>errorIsReportedCondVar</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1575,7 +1651,33 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::condition_variable ChimeraTK::DeviceModule::errorCondVar</td>
+          <td class="memname">std::condition_variable ChimeraTK::DeviceModule::errorIsReportedCondVar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This condition variable is used to block the error handling thread until an exception is reported. </p>
+
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00215">215</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+
+</div>
+</div>
+<a id="af32d735a4004798d75121112501a9f70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af32d735a4004798d75121112501a9f70">&#9670;&nbsp;</a></span>errorIsResolvedCondVar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::condition_variable ChimeraTK::DeviceModule::errorIsResolvedCondVar</td>
         </tr>
       </table>
   </td>
@@ -1587,7 +1689,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>This condition variable is used to block <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception. ">reportException()</a> until the error state has been resolved by the moduleThread. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00182">182</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00212">212</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1612,8 +1714,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Mutex for errorCondVar. </p>
+<p>Attention: In testable mode this mutex must only be locked when holding the testable mode mutex! </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00178">178</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00208">208</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1639,12 +1742,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Queue used for communication between <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception. ">reportException()</a> and the moduleThread. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00175">175</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00204">204</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
-<a id="a9f4a1432cad871f0aecce85c2e814c20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f4a1432cad871f0aecce85c2e814c20">&#9670;&nbsp;</a></span>initialisationHandlers</h2>
+<a id="a9a605306e90d268b7091e6bad6c334f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a605306e90d268b7091e6bad6c334f5">&#9670;&nbsp;</a></span>initialisationHandlers</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1653,7 +1756,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt; std::function&lt; void(<a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> *) &gt; &gt; ChimeraTK::DeviceModule::initialisationHandlers</td>
+          <td class="memname">std::list&lt;std::function&lt;void(<a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a>*)&gt; &gt; ChimeraTK::DeviceModule::initialisationHandlers</td>
         </tr>
       </table>
   </td>
@@ -1663,7 +1766,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00197">197</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00233">233</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1690,7 +1793,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The thread waiting for <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception. ">reportException()</a>. </p>
 <p>It runs <a class="el" href="class_chimera_t_k_1_1_device_module.html#ab388c8a6e152379643f96c8fb945d3a3" title="This functions tries to open the device and set the deviceError. ">handleException()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00171">171</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00200">200</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1714,7 +1817,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00192">192</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00228">228</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1738,7 +1841,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00155">155</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00184">184</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1762,7 +1865,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00150">150</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00179">179</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1786,7 +1889,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00146">146</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00175">175</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1810,7 +1913,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00147">147</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00176">176</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1837,7 +1940,7 @@ Additional Inherited Members</h2></td></tr>
 <p>List of TransferElements to be written after the device has been opened. </p>
 <p>This is used to write constant feeders to the device. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00190">190</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00226">226</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1851,7 +1954,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a></li>
-    <li class="footer">Generated on Sat Jul 27 2019 03:53:31 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Aug 6 2019 03:53:26 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

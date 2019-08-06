@@ -13,6 +13,7 @@ var class_chimera_t_k_1_1_exception_handling_decorator =
     [ "doWriteTransfer", "class_chimera_t_k_1_1_exception_handling_decorator.html#a666085917708684718539d6e0d693565", null ],
     [ "doWriteTransferDestructively", "class_chimera_t_k_1_1_exception_handling_decorator.html#aa4580d9d3037766e4c56c69bdef1c830", null ],
     [ "genericTransfer", "class_chimera_t_k_1_1_exception_handling_decorator.html#aad89b520697c4f14d5e58d7361315692", null ],
+    [ "interrupt", "class_chimera_t_k_1_1_exception_handling_decorator.html#a76870f06ec721733fcf735d035804137", null ],
     [ "setDataValidity", "class_chimera_t_k_1_1_exception_handling_decorator.html#a0c978519979b6f347e591d8a03fadf5e", null ],
     [ "dm", "class_chimera_t_k_1_1_exception_handling_decorator.html#ac34320e62e3adf80d80e3b43abd79015", null ],
     [ "validity", "class_chimera_t_k_1_1_exception_handling_decorator.html#a1b0955d10bdab47ac47662a41f901a0d", null ]

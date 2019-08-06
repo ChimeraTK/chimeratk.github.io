@@ -120,6 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8b539e3c2bc584859b3f096b5f7ba164"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fan_out.html#a8b539e3c2bc584859b3f096b5f7ba164">addSlave</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; slave, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &amp;)</td></tr>
 <tr class="memdesc:a8b539e3c2bc584859b3f096b5f7ba164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a slave to the <a class="el" href="class_chimera_t_k_1_1_fan_out.html" title="Base class for several implementations which distribute values from one feeder to multiple consumers...">FanOut</a>.  <a href="#a8b539e3c2bc584859b3f096b5f7ba164">More...</a><br /></td></tr>
 <tr class="separator:a8b539e3c2bc584859b3f096b5f7ba164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac081b30f6ee324347bfae872d918ea6b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fan_out.html#ac081b30f6ee324347bfae872d918ea6b">interrupt</a> ()</td></tr>
+<tr class="separator:ac081b30f6ee324347bfae872d918ea6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -249,6 +251,45 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a id="ac081b30f6ee324347bfae872d918ea6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac081b30f6ee324347bfae872d918ea6b">&#9670;&nbsp;</a></span>interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="class_chimera_t_k_1_1_fan_out.html">ChimeraTK::FanOut</a>&lt; UserType &gt;::interrupt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#ad72378ffc301674a52f6d07a2a40f130">ChimeraTK::FeedingFanOut&lt; UserType &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_consuming_fan_out.html#a17df2a36e786db38c7194d9546b93610">ChimeraTK::ConsumingFanOut&lt; UserType &gt;</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00052">52</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_fan_out_ac081b30f6ee324347bfae872d918ea6b_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a59e3cf6295e42416cbdf35a026d664b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a59e3cf6295e42416cbdf35a026d664b0">&#9670;&nbsp;</a></span>impl</h2>
@@ -272,7 +313,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00052">52</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00062">62</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
 
 </div>
 </div>
@@ -298,7 +339,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00054">54</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00064">64</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +352,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_fan_out.html">FanOut</a></li>
-    <li class="footer">Generated on Sat Jul 27 2019 03:53:31 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Aug 6 2019 03:53:26 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
