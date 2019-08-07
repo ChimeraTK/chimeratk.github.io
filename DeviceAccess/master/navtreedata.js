@@ -15,6 +15,15 @@ var NAVTREE =
     [ "Device Mapping", "dmap.html", [
       [ "CimeraTK device descriptor", "dmap.html#The", null ]
     ] ],
+    [ "Exceptions and recovery", "exceptions.html", [
+      [ "Exceptions", "exceptions.html#Exceptions", null ],
+      [ "isFunctional()", "exceptions.html#isFunctional", null ],
+      [ "Recovery", "exceptions.html#recovery", [
+        [ "Recovery on re-open", "exceptions.html#recover_open", null ],
+        [ "Automatic recovery", "exceptions.html#auto_recover", null ],
+        [ "No recovery necessary", "exceptions.html#no_recovery", null ]
+      ] ]
+    ] ],
     [ "Logical Name Mapping Backend", "lmap.html", [
       [ "CDD syntax", "lmap.html#cdd", null ],
       [ "Map file syntax", "lmap.html#map", [
@@ -89,8 +98,8 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_scalar_register_accessor.html#ab6b9f082cde29b0faf7fd09a0199060d",
 "class_chimera_t_k_1_1_version_number.html#a76cc5b990fa24cbc89ce9daf8eee3043",
 "device__backends_2pcie_2include_2pcieuni__io__compat_8h_source.html",
-"mtca4u__compatibility__headers_2_register_catalogue_8h.html",
-"testing_with_dummy_backends.html"
+"mtca4u__compatibility__headers_2_one_d_register_accessor_8h_source.html",
+"testable_rebot_sleep_8cc.html#a1851c267e4dd419a948306ff85195a86"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

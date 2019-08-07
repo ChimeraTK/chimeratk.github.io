@@ -16,6 +16,8 @@ var searchData=
   ['exception',['Exception',['../namespace_chimera_t_k.html#a05b44f2d7e3528fff2972cfc3fe89db0',1,'ChimeraTK']]],
   ['exception_2ecpp',['Exception.cpp',['../_exception_8cpp.html',1,'']]],
   ['exception_2eh',['Exception.h',['../exception_2include_2_exception_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_exception_8h.html',1,'(Global Namespace)']]],
+  ['exceptions_20and_20recovery',['Exceptions and recovery',['../exceptions.html',1,'']]],
+  ['exceptions_2edox',['exceptions.dox',['../exceptions_8dox.html',1,'']]],
   ['experimentalfeatures',['ExperimentalFeatures',['../class_chimera_t_k_1_1_experimental_features.html',1,'ChimeraTK']]],
   ['experimentalfeatures_2ecc',['ExperimentalFeatures.cc',['../_experimental_features_8cc.html',1,'']]],
   ['experimentalfeatures_2eh',['ExperimentalFeatures.h',['../device_2include_2_experimental_features_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_experimental_features_8h.html',1,'(Global Namespace)']]],
