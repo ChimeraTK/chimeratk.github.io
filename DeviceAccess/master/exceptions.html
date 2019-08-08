@@ -91,15 +91,16 @@ $(document).ready(function(){initNavTree('exceptions.html','');});
 Exceptions</h1>
 <p>There are only two types of exceptions in <a class="el" href="namespace_chimera_t_k.html" title="Provides storage object for devices descriptions. ">ChimeraTK</a>:</p>
 <ul>
-<li><code>runtime_error</code> This exception is thrown for (temporary) errors which can occur at run time, for instance network errors or I/O errors when reading/writing. These errors usually occur when a device that worked before becomes unavailable or is malfunctioning. This is a <b>recoverable error</b>. Usually retrying or re-opening the device will eventually make the device work again, once the source of the error has been removed. Program code can catch this exception to do error handling.</li>
+<li><code>runtime_error</code> This is a <b>recoverable error</b>. The exception is thrown for (temporary) errors which can occur at run time, for instance network errors or I/O errors when reading/writing. These errors usually occur when a device that worked before becomes unavailable or is malfunctioning. Usually retrying or re-opening the device will eventually make the device work again, once the source of the error has been removed. Program code can catch this exception to do error handling.</li>
 </ul>
 <ul>
-<li><code>logic_error</code> This exception is thrown when parts of the program logic or configuration is wrong. An example would be requesting an accessor with a name that does not exist, or a missing map file. This is a <b>non-recoverable error</b>. <b>Do not catch</b> it in your code. The only way to fix this is to repair the program logic or the configuration.</li>
+<li><code>logic_error</code> This is a <b>non-recoverable error</b>. The exception is thrown when parts of the program logic or configuration is wrong. An example would be requesting an accessor with a name that does not exist, or a missing map file. <b>Do not catch</b> it in your code. The only way to fix this error is to repair the program logic or the configuration.</li>
 </ul>
 <h1><a class="anchor" id="isFunctional"></a>
 isFunctional()</h1>
-<p>When a device has successfully been opened, it usually reports <code>isFunctional()</code> as <code>true</code>. If a recoverable error (temporary failure) occurs, the backend will throw a <code>runtime_error</code>. In addition, <code>isFunctional()</code> shall return false if possible. To be precise: If it is <b>known</b> that the device is <b>not working</b>, <code>isFunctional()</code> shall return **<code>false**</code>. It shall return <b>true</b> in <b>all other cases</b>.</p>
-<p><code>isFunctional()</code> is the indicator for the client code that it can try reading/writing. A backend with network communication for instance, that does not hold a permanent connection but always re-connects with each access, might throw <code>runtime_errors</code> in case of an unstable network. Nevertheless it will always report <code>isFunctional()</code> as true because it cannot know whether the next access will succeed. Another backend which is permanently opening a socket, will report <code>isFunctional()</code> as false if the socket does not work any more because it knows that read/write operations will fail.</p>
+<p><code>isFunctional()</code> is used to indicate whether a device is expected to be working as intended, or if it is known to be dysfunctional (has seen errors, or perhaps has not been opened yet).</p>
+<p>When a device has successfully been opened, it usually reports <code>isFunctional()</code> as <code>true</code>. If a recoverable error (temporary failure) occurs, the backend will throw a <code>runtime_error</code>. In addition, <code>isFunctional()</code> shall return false if possible. To be precise: If it is <b>known</b> that the device is <b>not working</b>, <code>isFunctional()</code> shall return <b>false</b>. It shall return <b>true</b> in <b>all other cases</b>.</p>
+<p><code>isFunctional()</code> is the indicator for the client code that it can try reading/writing. A backend with network communication for instance, that does not hold a permanent connection but always re-connects with each access, might throw <code>runtime_errors</code> in case of an unstable network. Nevertheless it will always report <code>isFunctional()</code> as <code>true</code> because it cannot know whether the next access will succeed. Another backend which is permanently opening a socket will report <code>isFunctional()</code> as <code>false</code> if the socket does not work any more because it knows that read/write operations will fail.</p>
 <h1><a class="anchor" id="recovery"></a>
 Recovery</h1>
 <p>Only a backend can know how to recover from communication errors. However, the using code can tell the device when to try a recovery. In principle there are three scenarios:</p>
@@ -118,7 +119,7 @@ No recovery necessary</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Aug 7 2019 03:53:09 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Aug 8 2019 03:53:09 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

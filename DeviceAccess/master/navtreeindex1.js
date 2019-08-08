@@ -165,13 +165,14 @@ var NAVTREEINDEX1 =
 "class_chimera_t_k_1_1_device_backend_impl.html#a6456dd85892ef6afd5dd44691696b61d":[15,0,0,15,0],
 "class_chimera_t_k_1_1_device_backend_impl.html#a87b4855ffb37cc6edebe5085304ab354":[15,0,0,15,12],
 "class_chimera_t_k_1_1_device_backend_impl.html#a88f571ef43273e4b7f24e1665938d93b":[15,0,0,15,7],
+"class_chimera_t_k_1_1_device_backend_impl.html#a94a2161b75d3248507e40a8c40a27937":[15,0,0,15,13],
 "class_chimera_t_k_1_1_device_backend_impl.html#a9d207f6fee952fb9e06ede65cade587e":[15,0,0,15,10],
 "class_chimera_t_k_1_1_device_backend_impl.html#a9eb07db4e5b1b1dba6fb6d5bf5c0136b":[15,0,0,15,6],
 "class_chimera_t_k_1_1_device_backend_impl.html#aa1e029731af6f317c7ba134e169d9e16":[15,0,0,15,3],
 "class_chimera_t_k_1_1_device_backend_impl.html#abd6859714e4dbcfe90a83319a261ccad":[15,0,0,15,9],
 "class_chimera_t_k_1_1_device_backend_impl.html#ad085e63f6f91280d7a1e5a9bb2ebc800":[15,0,0,15,2],
 "class_chimera_t_k_1_1_device_backend_impl.html#adda9402b29b72150ce6d7682e93797d2":[15,0,0,15,4],
-"class_chimera_t_k_1_1_device_backend_impl.html#ae9bee80fb557412c35519caa586b3149":[15,0,0,15,13],
+"class_chimera_t_k_1_1_device_backend_impl.html#ae9bee80fb557412c35519caa586b3149":[15,0,0,15,14],
 "class_chimera_t_k_1_1_device_backend_impl.html#af3df4a06a3e59206a0b37f40a86407dc":[15,0,0,15,1],
 "class_chimera_t_k_1_1_device_info_map.html":[15,0,0,17],
 "class_chimera_t_k_1_1_device_info_map.html#a106b9b5ed8787e36a94934d6849ce5d5":[15,0,0,17,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "class_chimera_t_k_1_1_dummy_backend.html#ac242edd316563f73a2801591962a4721":[15,0,0,21,11],
 "class_chimera_t_k_1_1_dummy_backend.html#ad604f70e94234f037cd01853b0765ce4":[15,0,0,21,12],
 "class_chimera_t_k_1_1_dummy_backend_base.html":[15,0,0,22],
-"class_chimera_t_k_1_1_dummy_backend_base.html#a0ee47a5bf8e65b0ad71dee3e2905cecb":[15,0,0,22,1],
-"class_chimera_t_k_1_1_dummy_backend_base.html#a3c3508ff1a9b9ffdabe6546a851ec2ea":[15,0,0,22,2]
+"class_chimera_t_k_1_1_dummy_backend_base.html#a0ee47a5bf8e65b0ad71dee3e2905cecb":[15,0,0,22,1]
 };

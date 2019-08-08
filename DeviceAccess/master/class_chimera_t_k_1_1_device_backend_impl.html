@@ -169,12 +169,15 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a58c0f4de37b9123029b248a08b7505d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_register_catalogue.html">RegisterCatalogue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a58c0f4de37b9123029b248a08b7505d4">_catalogue</a></td></tr>
 <tr class="memdesc:a58c0f4de37b9123029b248a08b7505d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">the register catalogue containing describing the registers known by this backend  <a href="#a58c0f4de37b9123029b248a08b7505d4">More...</a><br /></td></tr>
 <tr class="separator:a58c0f4de37b9123029b248a08b7505d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9bee80fb557412c35519caa586b3149"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#ae9bee80fb557412c35519caa586b3149">_opened</a></td></tr>
+<tr class="memitem:ae9bee80fb557412c35519caa586b3149"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#ae9bee80fb557412c35519caa586b3149">_opened</a> = {true}</td></tr>
 <tr class="memdesc:ae9bee80fb557412c35519caa586b3149"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag if device is opened  <a href="#ae9bee80fb557412c35519caa586b3149">More...</a><br /></td></tr>
 <tr class="separator:ae9bee80fb557412c35519caa586b3149"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87b4855ffb37cc6edebe5085304ab354"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a87b4855ffb37cc6edebe5085304ab354">_connected</a></td></tr>
 <tr class="memdesc:a87b4855ffb37cc6edebe5085304ab354"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag if device is connected.  <a href="#a87b4855ffb37cc6edebe5085304ab354">More...</a><br /></td></tr>
 <tr class="separator:a87b4855ffb37cc6edebe5085304ab354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a2161b75d3248507e40a8c40a27937"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a94a2161b75d3248507e40a8c40a27937">_hasErrors</a> = {false}</td></tr>
+<tr class="memdesc:a94a2161b75d3248507e40a8c40a27937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag if the device has (known) errors.  <a href="#a94a2161b75d3248507e40a8c40a27937">More...</a><br /></td></tr>
+<tr class="separator:a94a2161b75d3248507e40a8c40a27937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends...">DeviceBackendImpl</a> implements some basic functionality which should be available for all backends. </p>
@@ -353,7 +356,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return wether a device is working as intended, usually this means it is opened and does not have any errors. </p>
-<p>The default implementeation in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends...">DeviceBackendImpl</a> just reports isOpened(). Backends have to overload it to implement reporting errors. </p>
+<p>The default implementeation in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends...">DeviceBackendImpl</a> reports (_opened &amp;&amp; !_hasErrors). Backends can overload it to implement a more sophisticated error reporting.</p>
+<p>Notice: <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a130b83ebd599df4f6d6c8bcc3f613843" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a> shall only return false if there are known errors (or the device is closed). If the working state is unknown, the response should be <code>true</code>. Client code will then try to read/write and might get an exception, while <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a130b83ebd599df4f6d6c8bcc3f613843" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a>==false means you surely will get an exception. </p>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7">ChimeraTK::DeviceBackend</a>.</p>
 
@@ -673,6 +677,33 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a94a2161b75d3248507e40a8c40a27937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a2161b75d3248507e40a8c40a27937">&#9670;&nbsp;</a></span>_hasErrors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;bool&gt; ChimeraTK::DeviceBackendImpl::_hasErrors = {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flag if the device has (known) errors. </p>
+<p>Can be set to make <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a130b83ebd599df4f6d6c8bcc3f613843" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a> report false. </p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_device_backend_impl_8h_source.html#l00074">74</a> of file <a class="el" href="device__backends_2include_2_device_backend_impl_8h_source.html">DeviceBackendImpl.h</a>.</p>
+
+</div>
+</div>
 <a id="ae9bee80fb557412c35519caa586b3149"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae9bee80fb557412c35519caa586b3149">&#9670;&nbsp;</a></span>_opened</h2>
 
@@ -683,7 +714,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::atomic&lt;bool&gt; ChimeraTK::DeviceBackendImpl::_opened</td>
+          <td class="memname">std::atomic&lt;bool&gt; ChimeraTK::DeviceBackendImpl::_opened = {true}</td>
         </tr>
       </table>
   </td>
@@ -709,7 +740,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html">DeviceBackendImpl</a></li>
-    <li class="footer">Generated on Wed Aug 7 2019 03:53:09 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Aug 8 2019 03:53:09 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

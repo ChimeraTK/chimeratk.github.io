@@ -285,7 +285,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Get a <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor. ">NDRegisterAccessor</a> object from the register name. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_device_backend_8h_source.html#l00095">95</a> of file <a class="el" href="device__backends_2include_2_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_device_backend_8h_source.html#l00099">99</a> of file <a class="el" href="device__backends_2include_2_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -341,7 +341,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000064">Deprecated:</a></b></dt><dd>{ This function is deprecated. Do not use the backend directly, always use a <a class="el" href="class_chimera_t_k_1_1_device.html" title="Class allows to read/write registers from device. ">Device</a>. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000062">Todo:</a></b></dt><dd>Add runtine warning after release of version 0.12 } </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_device_backend_8h_source.html#l00104">104</a> of file <a class="el" href="device__backends_2include_2_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_device_backend_8h_source.html#l00108">108</a> of file <a class="el" href="device__backends_2include_2_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -459,7 +459,8 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p>Return wether a device is working as intended, usually this means it is opened and does not have any errors. </p>
-<p>The default implementeation in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends...">DeviceBackendImpl</a> just reports isOpened(). Backends have to overload it to implement reporting errors. </p>
+<p>The default implementeation in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends...">DeviceBackendImpl</a> reports (_opened &amp;&amp; !_hasErrors). Backends can overload it to implement a more sophisticated error reporting.</p>
+<p>Notice: <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a> shall only return false if there are known errors (or the device is closed). If the working state is unknown, the response should be <code>true</code>. Client code will then try to read/write and might get an exception, while <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a>==false means you surely will get an exception. </p>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a130b83ebd599df4f6d6c8bcc3f613843">ChimeraTK::DeviceBackendImpl</a>.</p>
 
@@ -563,7 +564,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a></li>
-    <li class="footer">Generated on Wed Aug 7 2019 03:53:09 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Aug 8 2019 03:53:09 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
