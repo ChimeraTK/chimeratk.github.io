@@ -9,7 +9,7 @@ var class_chimera_t_k_1_1_doocs_spectrum =
     [ "setMacroPulseNumberSource", "class_chimera_t_k_1_1_doocs_spectrum.html#a142e85183fcdca035369a1cb1a91e364", null ],
     [ "updateDoocsBuffer", "class_chimera_t_k_1_1_doocs_spectrum.html#acac6b564d1ff8deb6b2935eb261b21dc", null ],
     [ "updateParameters", "class_chimera_t_k_1_1_doocs_spectrum.html#a585c8c2eadfa3fac5ac129ed95e1fe05", null ],
-    [ "write", "class_chimera_t_k_1_1_doocs_spectrum.html#a8502c5b322027341eb59804eb5bbcfde", null ],
+    [ "write", "class_chimera_t_k_1_1_doocs_spectrum.html#a020063a88d0a966d33ae8a0b1a2ecb47", null ],
     [ "_consistencyGroup", "class_chimera_t_k_1_1_doocs_spectrum.html#a5249fb5cb44323a1cffd5d6b025f79c6", null ],
     [ "_doocsSuccessfullyUpdated", "class_chimera_t_k_1_1_doocs_spectrum.html#a80d77cd93ce1f4ae3f83b7d826151ec6", null ],
     [ "_doocsUpdater", "class_chimera_t_k_1_1_doocs_spectrum.html#a5450ba974553ba75e8551c7cee25517c", null ],
