@@ -11,5 +11,6 @@ var class_register_type_abstractor =
     [ "read", "class_register_type_abstractor.html#a8b382ff726fdbb372383e107bb543936", null ],
     [ "setData", "class_register_type_abstractor.html#a8b68c0521e05262667d6a02f40871d9d", null ],
     [ "setRawData", "class_register_type_abstractor.html#a478cd5890a491bafdb1d500dafdeda0f", null ],
+    [ "writable", "class_register_type_abstractor.html#a3c3745d988155acf95819b60f23f401a", null ],
     [ "write", "class_register_type_abstractor.html#a8cfd3ba37f751b16192916318bb9519e", null ]
 ];

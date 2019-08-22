@@ -20,6 +20,7 @@ var class_register_type_abstractor_impl =
     [ "read", "class_register_type_abstractor_impl.html#a6bb279a54616c5fbd74fcba88c8e588f", null ],
     [ "setData", "class_register_type_abstractor_impl.html#a3d5cb7e9720f3b90f8000b17bba5272c", null ],
     [ "setRawData", "class_register_type_abstractor_impl.html#af5046d3fc2fb04f26b548e13f52fd740", null ],
+    [ "writable", "class_register_type_abstractor_impl.html#ac2b6425f1367d47bfa26abd081a82a2a", null ],
     [ "write", "class_register_type_abstractor_impl.html#a913162bcefc000eed04403c0a0f92361", null ],
     [ "_accessor", "class_register_type_abstractor_impl.html#a19faeaed99bed2664c4062f198d76cf3", null ],
     [ "_rawDataType", "class_register_type_abstractor_impl.html#ab65f368c601ce67e6674aa4cc33ae31f", null ]
