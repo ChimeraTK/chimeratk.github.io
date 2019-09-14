@@ -177,6 +177,7 @@ var NAVTREEINDEX3 =
 "demo_status_monitor_8cc_source.html":[12,0,4,0],
 "dir_31ae9a254d457f9c5d2ad6adbd9552a5.html":[12,0,4],
 "dir_37b2a66541e5aeb3116f92bb16c476cf.html":[12,0,6,1],
+"dir_4eeb864c4eec08c7d6b9d3b0352cfdde.html":[12,0,8],
 "dir_52713a7cd53474fec784a13806f62d5c.html":[12,0,1],
 "dir_68267d1309a1af8e8297ef4c3efbcdba.html":[12,0,7],
 "dir_b74252328106591dfb0d36463b609fd4.html":[12,0,6,0],
@@ -198,8 +199,8 @@ var NAVTREEINDEX3 =
 "exception_handling.html#DataValidity":[0,1],
 "exception_handling.html#Introduction":[0,0],
 "files.html":[12,0],
-"functions.html":[11,3,0,0],
 "functions.html":[11,3,0],
+"functions.html":[11,3,0,0],
 "functions_0x7e.html":[11,3,0,23],
 "functions_a.html":[11,3,0,1],
 "functions_b.html":[11,3,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "functions_type.html":[11,3,3],
 "functions_u.html":[11,3,0,19],
 "functions_v.html":[11,3,0,20],
-"functions_vars.html":[11,3,2,0],
-"functions_vars.html":[11,3,2]
+"functions_vars.html":[11,3,2,0]
 };
