@@ -249,5 +249,5 @@ var NAVTREEINDEX3 =
 "functions_type.html":[11,3,3],
 "functions_u.html":[11,3,0,19],
 "functions_v.html":[11,3,0,20],
-"functions_vars.html":[11,3,2,0]
+"functions_vars.html":[11,3,2]
 };
