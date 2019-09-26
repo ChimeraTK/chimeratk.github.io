@@ -6,6 +6,7 @@ var annotated_dup =
     [ "Controller", "struct_controller.html", "struct_controller" ],
     [ "DemoDummy", "class_demo_dummy.html", "class_demo_dummy" ],
     [ "ExampleApp", "struct_example_app.html", "struct_example_app" ],
+    [ "Server", "struct_server.html", "struct_server" ],
     [ "Simulation", "struct_simulation.html", "struct_simulation" ],
     [ "TableGeneration", "struct_table_generation.html", "struct_table_generation" ],
     [ "TimerDummy", "class_timer_dummy.html", "class_timer_dummy" ],

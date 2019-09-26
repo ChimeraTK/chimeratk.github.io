@@ -1,6 +1,13 @@
 var NAVTREEINDEX4 =
 {
+"functions_rela.html":[11,3,6],
+"functions_s.html":[11,3,0,17],
+"functions_t.html":[11,3,0,18],
+"functions_type.html":[11,3,3],
+"functions_u.html":[11,3,0,19],
+"functions_v.html":[11,3,0,20],
 "functions_vars.html":[11,3,2,0],
+"functions_vars.html":[11,3,2],
 "functions_vars_a.html":[11,3,2,1],
 "functions_vars_b.html":[11,3,2,2],
 "functions_vars_c.html":[11,3,2,3],
@@ -34,8 +41,8 @@ var NAVTREEINDEX4 =
 "loggingdoc.html#logginintro":[1,0],
 "namespace_chimera_t_k.html":[11,0,0],
 "namespace_chimera_t_k.html":[10,0,0],
-"namespace_chimera_t_k_1_1history.html":[10,0,0,0],
 "namespace_chimera_t_k_1_1history.html":[11,0,0,0],
+"namespace_chimera_t_k_1_1history.html":[10,0,0,0],
 "namespacelogging.html":[10,0,1],
 "namespacelogging.html":[11,0,1],
 "namespacemembers.html":[10,1,0],
@@ -53,8 +60,8 @@ var NAVTREEINDEX4 =
 "struct_automation.html#a1a86176292eb457cf69d9a764a38a468":[11,0,2,3],
 "struct_automation.html#a4a08a0e51d5adb3d163709212eff7ecb":[11,0,2,4],
 "struct_automation.html#a6d28e80b6662b738458f8753adc2f837":[11,0,2,5],
-"struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[11,0,2,1],
 "struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[11,0,2,0],
+"struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[11,0,2,1],
 "struct_automation.html#aa738677550010b51b08df005e0e1d7f3":[11,0,2,2],
 "struct_automation.html#acff6fa50c6a95870a79b4b1df4a14ea1":[11,0,2,7],
 "struct_automation.html#adc175eb9561ef659f570a65ae1ac97cc":[11,0,2,6],
@@ -242,12 +249,5 @@ var NAVTREEINDEX4 =
 "struct_chimera_t_k_1_1_scalar_poll_input.html#a2844c99acc771646735b7c04eef15871":[11,0,0,58,0],
 "struct_chimera_t_k_1_1_scalar_poll_input.html#a760a463494f5a8b7cf8f0e30a9702bda":[11,0,0,58,3],
 "struct_chimera_t_k_1_1_scalar_poll_input.html#afc185d07cc1ad465a77f78305d1ff27d":[11,0,0,58,1],
-"struct_chimera_t_k_1_1_scalar_push_input.html":[11,0,0,59],
-"struct_chimera_t_k_1_1_scalar_push_input.html#a5da1dc9cd076df7344f82413ded1bbb2":[11,0,0,59,1],
-"struct_chimera_t_k_1_1_scalar_push_input.html#a696aa4c5302038e362911d13ba91d9e6":[11,0,0,59,0],
-"struct_chimera_t_k_1_1_scalar_push_input_w_b.html":[11,0,0,60],
-"struct_chimera_t_k_1_1_scalar_push_input_w_b.html#a4872518b0cc3778cd7244fdcb5b31569":[11,0,0,60,0],
-"struct_chimera_t_k_1_1_scalar_push_input_w_b.html#adf2b16a8e7c1a0d3810068501fda9247":[11,0,0,60,1],
-"struct_chimera_t_k_1_1_state_monitor.html":[11,0,0,61],
-"struct_chimera_t_k_1_1_state_monitor.html#a4845df79bfda0f5da1a0a1e2b28c4386":[11,0,0,61,1]
+"struct_chimera_t_k_1_1_scalar_push_input.html":[11,0,0,59]
 };

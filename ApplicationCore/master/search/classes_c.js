@@ -45,6 +45,7 @@ var searchData=
   ['scalarpushinput_3c_20uint64_5ft_20_3e',['ScalarPushInput&lt; uint64_t &gt;',['../struct_chimera_t_k_1_1_scalar_push_input.html',1,'ChimeraTK']]],
   ['scalarpushinputwb',['ScalarPushInputWB',['../struct_chimera_t_k_1_1_scalar_push_input_w_b.html',1,'ChimeraTK']]],
   ['senddatatoconsumers',['SendDataToConsumers',['../struct_chimera_t_k_1_1_trigger_fan_out_1_1_send_data_to_consumers.html',1,'ChimeraTK::TriggerFanOut']]],
+  ['server',['Server',['../struct_server.html',1,'']]],
   ['serverhistory',['ServerHistory',['../struct_chimera_t_k_1_1history_1_1_server_history.html',1,'ChimeraTK::history']]],
   ['simulation',['Simulation',['../struct_simulation.html',1,'']]],
   ['statemonitor',['StateMonitor',['../struct_chimera_t_k_1_1_state_monitor.html',1,'ChimeraTK']]],

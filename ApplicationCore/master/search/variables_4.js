@@ -5,7 +5,7 @@ var searchData=
   ['decimationfactor_5f',['decimationFactor_',['../class_chimera_t_k_1_1_micro_d_a_q.html#a3547ddcde372e192daf54c1415d1b85c',1,'ChimeraTK::MicroDAQ']]],
   ['decimationthreshold_5f',['decimationThreshold_',['../class_chimera_t_k_1_1_micro_d_a_q.html#a9ba8c6767c7f9c7f2f342f871fc36e8d',1,'ChimeraTK::MicroDAQ']]],
   ['description',['description',['../class_chimera_t_k_1_1_variable_network.html#a9c9b4e28e28b61f844a0e74c0ed16261',1,'ChimeraTK::VariableNetwork::description()'],['../struct_chimera_t_k_1_1_variable_network_node__data.html#ae415593a9b9a048543f38466e49c540f',1,'ChimeraTK::VariableNetworkNode_data::description()']]],
-  ['dev',['dev',['../struct_example_app.html#a1fd25298a31ef406cccbfb9bc1a63d10',1,'ExampleApp']]],
+  ['dev',['dev',['../struct_example_app.html#a1fd25298a31ef406cccbfb9bc1a63d10',1,'ExampleApp::dev()'],['../struct_server.html#a12b2479158514168f3628b2af08bdbd2',1,'Server::dev()']]],
   ['device',['device',['../class_chimera_t_k_1_1_device_module.html#a5c5d31cbd8669519f0a974a202c3caa0',1,'ChimeraTK::DeviceModule']]],
   ['devicealias',['deviceAlias',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a3dfa2000cbe4999ad42b12b7af905e34',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['devicealiasoruri',['deviceAliasOrURI',['../class_chimera_t_k_1_1_device_module.html#ac19f5b14011b1cb9830655783eb809fa',1,'ChimeraTK::DeviceModule']]],

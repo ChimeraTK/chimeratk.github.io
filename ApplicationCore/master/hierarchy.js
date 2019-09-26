@@ -9,7 +9,8 @@ var hierarchy =
         [ "ExampleApp", "struct_example_app.html", null ],
         [ "ExampleApp", "struct_example_app.html", null ],
         [ "ExampleApp", "struct_example_app.html", null ],
-        [ "ExampleApp", "struct_example_app.html", null ]
+        [ "ExampleApp", "struct_example_app.html", null ],
+        [ "Server", "struct_server.html", null ]
       ] ]
     ] ],
     [ "ChimeraTK::ApplicationCoreTemplateUserTypeMap< TemplateClass >", "class_chimera_t_k_1_1_application_core_template_user_type_map.html", null ],

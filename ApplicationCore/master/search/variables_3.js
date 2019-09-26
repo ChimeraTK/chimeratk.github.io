@@ -4,7 +4,7 @@ var searchData=
   ['constantlist',['constantList',['../class_chimera_t_k_1_1_application.html#a3a4eb7108167ede1b8d3702180f115c4',1,'ChimeraTK::Application']]],
   ['constnode',['constNode',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a6472ffa489109f46e0412b3508140294',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['controller',['controller',['../struct_example_app.html#a18114dde44283acd78a5e2da28a32711',1,'ExampleApp']]],
-  ['cs',['cs',['../struct_example_app.html#a73e5413e7963cf5a6211c2f77784a79e',1,'ExampleApp']]],
+  ['cs',['cs',['../struct_example_app.html#a73e5413e7963cf5a6211c2f77784a79e',1,'ExampleApp::cs()'],['../struct_server.html#aa8d6d60589c305a8ffa687ced02e5e16',1,'Server::cs()']]],
   ['cur',['cur',['../struct_controller.html#a54f77011079233e80bf09ac9867773ce',1,'Controller']]],
   ['currentfile',['currentFile',['../class_chimera_t_k_1_1_micro_d_a_q.html#a0337ce76e6626730ee15ff864db4f980',1,'ChimeraTK::MicroDAQ']]],
   ['currentversion',['currentVersion',['../class_timer_dummy_register_accessor.html#af4537a9ea343b49422dbf29dec0c8341',1,'TimerDummyRegisterAccessor']]],
