@@ -69,7 +69,8 @@ var hierarchy =
               [ "ChimeraTK::MinMonitor< double_t >", "struct_chimera_t_k_1_1_min_monitor.html", null ],
               [ "ChimeraTK::RangeMonitor< double_t >", "struct_chimera_t_k_1_1_range_monitor.html", null ]
             ] ],
-            [ "TableGeneration", "struct_table_generation.html", null ]
+            [ "TableGeneration", "struct_table_generation.html", null ],
+            [ "TemplateModule", "struct_template_module.html", null ]
           ] ],
           [ "ChimeraTK::ModuleGroup", "class_chimera_t_k_1_1_module_group.html", null ],
           [ "ChimeraTK::VariableGroup", "class_chimera_t_k_1_1_variable_group.html", [

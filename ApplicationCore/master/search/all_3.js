@@ -6,7 +6,7 @@ var searchData=
   ['clearowner',['clearOwner',['../class_chimera_t_k_1_1_variable_network_node.html#a151c28c8c8a95953419919aee3f180d2',1,'ChimeraTK::VariableNetworkNode']]],
   ['close',['close',['../class_timer_dummy.html#aa27cc0e7f13b6e099b1ba5250cec8539',1,'TimerDummy']]],
   ['completedescription',['completeDescription',['../class_chimera_t_k_1_1_inversion_of_control_accessor.html#aa20de44a7450523383b1ff08715f8d8a',1,'ChimeraTK::InversionOfControlAccessor']]],
-  ['config',['config',['../struct_example_app.html#ac27615ec57647b865dc7e34864e68076',1,'ExampleApp']]],
+  ['config',['config',['../struct_example_app.html#ac27615ec57647b865dc7e34864e68076',1,'ExampleApp::config()'],['../struct_server.html#a11edddb6a72e6e1c5541413fdf733d57',1,'Server::config()']]],
   ['configparser',['ConfigParser',['../class_chimera_t_k_1_1_config_parser.html',1,'ChimeraTK::ConfigParser'],['../class_chimera_t_k_1_1_config_parser.html#a84aab1b30addb608393e70acde7902ed',1,'ChimeraTK::ConfigParser::ConfigParser()']]],
   ['configreader',['ConfigReader',['../struct_chimera_t_k_1_1_config_reader.html',1,'ChimeraTK::ConfigReader'],['../struct_chimera_t_k_1_1_config_reader.html#ad0dcca74fb73bfa5705878fa506bc365',1,'ChimeraTK::ConfigReader::ConfigReader()'],['../configreader.html',1,'index']]],
   ['configreader_2ecc',['ConfigReader.cc',['../_config_reader_8cc.html',1,'']]],

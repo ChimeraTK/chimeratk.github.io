@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['config',['config',['../struct_example_app.html#ac27615ec57647b865dc7e34864e68076',1,'ExampleApp']]],
+  ['config',['config',['../struct_example_app.html#ac27615ec57647b865dc7e34864e68076',1,'ExampleApp::config()'],['../struct_server.html#a11edddb6a72e6e1c5541413fdf733d57',1,'Server::config()']]],
   ['constantlist',['constantList',['../class_chimera_t_k_1_1_application.html#a3a4eb7108167ede1b8d3702180f115c4',1,'ChimeraTK::Application']]],
   ['constnode',['constNode',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a6472ffa489109f46e0412b3508140294',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['controller',['controller',['../struct_example_app.html#a18114dde44283acd78a5e2da28a32711',1,'ExampleApp']]],

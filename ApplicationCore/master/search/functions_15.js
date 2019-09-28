@@ -16,6 +16,7 @@ var searchData=
   ['_7epushablestream',['~PushableStream',['../class_chimera_t_k_1_1_pushable_stream.html#a06af103deaa8a5645e956bc9d8ae748d',1,'ChimeraTK::PushableStream']]],
   ['_7eserver',['~Server',['../struct_server.html#af575d2e7efe3b7130dcbffc2c163f5e6',1,'Server']]],
   ['_7estatusmonitor',['~StatusMonitor',['../struct_chimera_t_k_1_1_status_monitor.html#a7e034bb54af489ef8d13b2dd185c2938',1,'ChimeraTK::StatusMonitor']]],
+  ['_7etemplatemodule',['~TemplateModule',['../struct_template_module.html#a6b8f84dae76a1cf6e5704a60908f3996',1,'TemplateModule']]],
   ['_7ethreadedfanout',['~ThreadedFanOut',['../class_chimera_t_k_1_1_threaded_fan_out.html#a74e762aadaacc9fab87360cab167c882',1,'ChimeraTK::ThreadedFanOut']]],
   ['_7etimerdummyregisteraccessor',['~TimerDummyRegisterAccessor',['../class_timer_dummy_register_accessor.html#a99b23597a145ee255c55eb2117ab0fb8',1,'TimerDummyRegisterAccessor']]],
   ['_7etriggerfanout',['~TriggerFanOut',['../class_chimera_t_k_1_1_trigger_fan_out.html#a8a654a293098909f923f554ee1008882',1,'ChimeraTK::TriggerFanOut']]],
