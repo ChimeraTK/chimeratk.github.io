@@ -89,8 +89,8 @@ $(document).ready(function(){initNavTree('testing_with_dummy_backends.html','');
 <p>When testing application code, it is often beneficial not to rely on real hardware. ChimeraTK-DeviceAccess provides two backends for this purpose, the <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html" title="The dummy device opens a mapping file instead of a device, and implements all registers defined in th...">ChimeraTK::DummyBackend</a> and the <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html" title="The shared dummy device opens a mapping file defining the registers and implements them in shared mem...">ChimeraTK::SharedDummyBackend</a>. The DummyBackend emulates a devices' register space in application memory. The SharedDummyBackend allocates the registers in shared memory, so it can be access from multiple processes. E.g., QtHardMon can be used to stimulate and monitor a running application. Hence, these backends provide a generic way to test input-/output- operations on the application. Note that it is also possible to write DummyBackends for a specific device, as described in <a class="el" href="custom_backends.html">Using and creating custom backends</a>.</p>
 <h1><a class="anchor" id="dmap_specify_dummies"></a>
 Specifying the dummies in the device map file</h1>
-<p>The DummyBackends get registered by the names, "dummy" and "sharedMemoryDummy", so dummy devices have to be defined in the device map file as </p><pre class="fragment">DUMMYDEVICE       (sdm://./dummy=mymapfile.map)
-SHAREDDUMMYDEVICE (sdm://./sharedMemoryDummy=mymapfile.map)
+<p>The DummyBackends get registered by the names, "dummy" and "sharedMemoryDummy", so dummy devices have to be defined in the device map file as </p><pre class="fragment">DUMMYDEVICE       (dummy?map=mymapfile.map)
+SHAREDDUMMYDEVICE (sharedMemoryDummy?map=mymapfile.map)
 </pre><p> for the DummyBackend and the SharedDummyBackend, respectively.</p>
 <h1><a class="anchor" id="dummy_backends_write_readonly"></a>
 Writeing to read-only registers</h1>
@@ -102,7 +102,7 @@ Writeing to read-only registers</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 25 2019 03:53:08 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Sep 28 2019 03:53:08 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

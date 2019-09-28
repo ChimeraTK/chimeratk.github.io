@@ -7,6 +7,7 @@ var searchData=
   ['makeplugin',['makePlugin',['../namespace_chimera_t_k_1_1_l_n_m_backend.html#a4085753725de92b57b31b2f8e199c96b',1,'ChimeraTK::LNMBackend']]],
   ['makeunique',['makeUnique',['../class_chimera_t_k_1_1_transfer_element_i_d.html#a4e05a5e6399b1ceb383085b185cb3a5b',1,'ChimeraTK::TransferElementID']]],
   ['makeuniqueid',['makeUniqueId',['../class_chimera_t_k_1_1_transfer_element.html#a833c655eca8c53f5ff0d97c3d81c1376',1,'ChimeraTK::TransferElement']]],
+  ['makewriteable',['makeWriteable',['../class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a4c63af0b3fb084787f846d9471f4a627',1,'ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor']]],
   ['map_5ffile_5ferr',['MAP_FILE_ERR',['../class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#abd68efcf13704999134c7b6735ab052f',1,'ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem']]],
   ['mapexception_2eh',['MapException.h',['../fileparsers_2include_2_map_exception_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_map_exception_8h.html',1,'(Global Namespace)']]],
   ['mapfileexception',['MapFileException',['../namespace_chimera_t_k.html#a5433536b162eee0c557a81fe59fc73d9',1,'ChimeraTK']]],
