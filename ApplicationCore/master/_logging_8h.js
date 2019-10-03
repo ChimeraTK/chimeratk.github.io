@@ -2,7 +2,7 @@ var _logging_8h =
 [
     [ "Logger", "classlogging_1_1_logger.html", "classlogging_1_1_logger" ],
     [ "LoggingModule", "classlogging_1_1_logging_module.html", "classlogging_1_1_logging_module" ],
-    [ "Message", "_logging_8h.html#afcaf634e64278cacad529fc84eae1528", null ],
+    [ "Message", "_logging_8h.html#a13f0d7dba589cdb5dae99d3dda00b82e", null ],
     [ "LogLevel", "_logging_8h.html#a12e05573477c76b8d6db5081863f4416", [
       [ "DEBUG", "_logging_8h.html#a12e05573477c76b8d6db5081863f4416a682501b7fb187303796e3f533735b51f", null ],
       [ "INFO", "_logging_8h.html#a12e05573477c76b8d6db5081863f4416a599d39352a6b7a4d371ea9e27bd22562", null ],
