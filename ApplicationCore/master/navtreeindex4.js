@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"functions_func_x.html":[11,3,1,20],
 "functions_g.html":[11,3,0,7],
 "functions_h.html":[11,3,0,8],
 "functions_i.html":[11,3,0,9],
@@ -53,8 +54,8 @@ var NAVTREEINDEX4 =
 "namespace_chimera_t_k.html":[10,0,0],
 "namespace_chimera_t_k_1_1history.html":[11,0,0,0],
 "namespace_chimera_t_k_1_1history.html":[10,0,0,0],
-"namespacelogging.html":[11,0,1],
 "namespacelogging.html":[10,0,1],
+"namespacelogging.html":[11,0,1],
 "namespacemembers.html":[10,1,0],
 "namespacemembers_enum.html":[10,1,4],
 "namespacemembers_eval.html":[10,1,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "struct_chimera_t_k_1_1_scalar_output_push_r_b.html#a2d619c2b362317b7a183684dd7bceaff":[11,0,0,56,1],
 "struct_chimera_t_k_1_1_scalar_output_push_r_b.html#adb6a5ea9cd5d01b9882f7189487e7562":[11,0,0,56,0],
 "struct_chimera_t_k_1_1_scalar_pipe.html":[11,0,0,57],
-"struct_chimera_t_k_1_1_scalar_pipe.html#a19b975c2618af620d20d4d578a25b1f9":[11,0,0,57,0],
-"struct_chimera_t_k_1_1_scalar_pipe.html#a4fdb59a64f039f10dc7ec17c399f9040":[11,0,0,57,3]
+"struct_chimera_t_k_1_1_scalar_pipe.html#a19b975c2618af620d20d4d578a25b1f9":[11,0,0,57,0]
 };

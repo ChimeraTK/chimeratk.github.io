@@ -33,6 +33,7 @@ var class_chimera_t_k_1_1_device_module =
     [ "currentVersionNumber", "class_chimera_t_k_1_1_device_module.html#a4a3bfad5ba8749f4e37a5165bbbdb321", null ],
     [ "device", "class_chimera_t_k_1_1_device_module.html#a5c5d31cbd8669519f0a974a202c3caa0", null ],
     [ "deviceAliasOrURI", "class_chimera_t_k_1_1_device_module.html#ac19f5b14011b1cb9830655783eb809fa", null ],
+    [ "deviceBecameFunctional", "class_chimera_t_k_1_1_device_module.html#a10b38c267d12f5e3b06539f54757857c", null ],
     [ "deviceError", "class_chimera_t_k_1_1_device_module.html#ab54f2a7bdf571deccf3a0c463d367ae9", null ],
     [ "deviceHasError", "class_chimera_t_k_1_1_device_module.html#ad329aeca005a9b591168360ec1b068a6", null ],
     [ "deviceIsInitialized", "class_chimera_t_k_1_1_device_module.html#afd70af961ca8d5cfd35f7f02996880b1", null ],
