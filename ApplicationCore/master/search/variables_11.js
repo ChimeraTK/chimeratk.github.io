@@ -18,6 +18,7 @@ var searchData=
   ['testablemode_5fpervarcounter',['testableMode_perVarCounter',['../class_chimera_t_k_1_1_application.html#a4d4fa4d7d6d798a3f8ed590b1ea02cf8',1,'ChimeraTK::Application']]],
   ['testablemode_5fprocessvars',['testableMode_processVars',['../class_chimera_t_k_1_1_application.html#a39a60ca21c66bc2fd4a9df4fe9a71111',1,'ChimeraTK::Application']]],
   ['testablemode_5frepeatingmutexowner',['testableMode_repeatingMutexOwner',['../class_chimera_t_k_1_1_application.html#aa464ee60e4117c4d3e630d173cdb6aae',1,'ChimeraTK::Application']]],
+  ['testablemodereached',['testableModeReached',['../class_chimera_t_k_1_1_module_impl.html#a8fe4707afa5b19165ea291eef130d43d',1,'ChimeraTK::ModuleImpl']]],
   ['theexampleapp',['theExampleApp',['../demo_app_8cc.html#a7e2de60c48b2000be30339c6c9f1c8ed',1,'theExampleApp():&#160;demoApp.cc'],['../demo_status_monitor_8cc.html#a7e2de60c48b2000be30339c6c9f1c8ed',1,'theExampleApp():&#160;demoStatusMonitor.cc']]],
   ['tick',['tick',['../struct_chimera_t_k_1_1_periodic_trigger.html#aec9052ada4b008f2583a5f61472aac23',1,'ChimeraTK::PeriodicTrigger']]],
   ['timer',['timer',['../struct_example_app.html#a872f39c39ae79bb08c44b62766910874',1,'ExampleApp::timer()'],['../struct_example_app.html#a872f39c39ae79bb08c44b62766910874',1,'ExampleApp::timer()']]],

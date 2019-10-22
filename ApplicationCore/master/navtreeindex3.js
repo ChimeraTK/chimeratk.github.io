@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"class_chimera_t_k_1_1_variable_network.html#a5fb9112ee45366ddea3ad6c4fe81bdae":[11,0,0,71,3],
 "class_chimera_t_k_1_1_variable_network.html#a6cc5740124d63d9926d9f77e406b1864":[11,0,0,71,4],
 "class_chimera_t_k_1_1_variable_network.html#a77be09c550820ad29b71a4d9bd5e61dd":[11,0,0,71,11],
 "class_chimera_t_k_1_1_variable_network.html#a80ad7bef69bba2e627adf938cf1adb28":[11,0,0,71,17],
@@ -217,8 +218,8 @@ var NAVTREEINDEX3 =
 "exception_handling.html#DataValidity":[0,1],
 "exception_handling.html#Introduction":[0,0],
 "files.html":[12,0],
-"functions.html":[11,3,0,0],
 "functions.html":[11,3,0],
+"functions.html":[11,3,0,0],
 "functions_0x7e.html":[11,3,0,23],
 "functions_a.html":[11,3,0,1],
 "functions_b.html":[11,3,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "functions_func_s.html":[11,3,1,15],
 "functions_func_t.html":[11,3,1,16],
 "functions_func_u.html":[11,3,1,17],
-"functions_func_v.html":[11,3,1,18],
-"functions_func_w.html":[11,3,1,19]
+"functions_func_v.html":[11,3,1,18]
 };
