@@ -81,7 +81,6 @@ var searchData=
   ['sp',['sp',['../struct_controller.html#abc1bd02bfdaf29b368c4d558e087250a',1,'Controller']]],
   ['splitarray_2eh',['SplitArray.h',['../_split_array_8h.html',1,'']]],
   ['startmeasurement',['startMeasurement',['../class_chimera_t_k_1_1_profiler.html#a554c05bc62a8da847726645b94a62e5c',1,'ChimeraTK::Profiler']]],
-  ['state',['state',['../struct_chimera_t_k_1_1_state_monitor.html#a4845df79bfda0f5da1a0a1e2b28c4386',1,'ChimeraTK::StateMonitor']]],
   ['statemonitor',['StateMonitor',['../struct_chimera_t_k_1_1_state_monitor.html',1,'ChimeraTK']]],
   ['states',['States',['../namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781',1,'ChimeraTK']]],
   ['status',['status',['../struct_chimera_t_k_1_1_device_module_1_1_device_error.html#adc906e2de974b7f48e7cba812f6a979a',1,'ChimeraTK::DeviceModule::DeviceError::status()'],['../struct_chimera_t_k_1_1_status_monitor.html#abffda3d1f947baebc1dcda83aaf90a21',1,'ChimeraTK::StatusMonitor::status()']]],

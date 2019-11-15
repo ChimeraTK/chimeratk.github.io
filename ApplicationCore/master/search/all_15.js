@@ -1,8 +1,8 @@
 var searchData=
 [
   ['warning',['warning',['../struct_chimera_t_k_1_1_max_monitor.html#a37188065e696bb05d113aa186a572b80',1,'ChimeraTK::MaxMonitor::warning()'],['../struct_chimera_t_k_1_1_min_monitor.html#ad7734e8183790395b2c42d46c39d1f87',1,'ChimeraTK::MinMonitor::warning()'],['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416ac9daebef33f6193b02ab9c3512023d13',1,'logging::WARNING()'],['../namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781a1258a3c774701420cfd704cebc54587b',1,'ChimeraTK::WARNING()']]],
-  ['warninglowerlimit',['warningLowerLimit',['../struct_chimera_t_k_1_1_range_monitor.html#a163b67dec0f75367e5df2906e60dd41f',1,'ChimeraTK::RangeMonitor']]],
-  ['warningupperlimit',['warningUpperLimit',['../struct_chimera_t_k_1_1_range_monitor.html#aebe4a984403d17efac2a1d3ac4af4e47',1,'ChimeraTK::RangeMonitor']]],
+  ['warninglowerthreshold',['warningLowerThreshold',['../struct_chimera_t_k_1_1_range_monitor.html#af9024a4da784b70404db4647ddae6d41',1,'ChimeraTK::RangeMonitor']]],
+  ['warningupperthreshold',['warningUpperThreshold',['../struct_chimera_t_k_1_1_range_monitor.html#abbe332c7fc02516620d56dde6f08186c',1,'ChimeraTK::RangeMonitor']]],
   ['warnunconnectedvariables',['warnUnconnectedVariables',['../class_chimera_t_k_1_1_application.html#af638d687f2d229ab733c48f62f1a8877',1,'ChimeraTK::Application']]],
   ['watch',['watch',['../struct_chimera_t_k_1_1_status_monitor.html#a2fd9e1c2956fba5d378f15f44075fc56',1,'ChimeraTK::StatusMonitor']]],
   ['withreturn',['withReturn',['../struct_chimera_t_k_1_1_variable_direction.html#a7c93d9b94dea8bb79d01bbe612bfbb29',1,'ChimeraTK::VariableDirection']]],

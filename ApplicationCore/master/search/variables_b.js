@@ -10,5 +10,6 @@ var searchData=
   ['nodelist',['nodeList',['../class_chimera_t_k_1_1_variable_network.html#ad2b83cf22f568dc7d0645b89961b4591',1,'ChimeraTK::VariableNetwork']]],
   ['nodetotrigger',['nodeToTrigger',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a55196ea2ebb93e081d552de34bd65777',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['nodewithtrigger',['nodeWithTrigger',['../struct_chimera_t_k_1_1_variable_network_node__data.html#ae6adf71dcffcc8793977290195fa597f',1,'ChimeraTK::VariableNetworkNode_data']]],
+  ['nominalstate',['nominalState',['../struct_chimera_t_k_1_1_state_monitor.html#a916ede0a528e68628530314e55ce8f0f',1,'ChimeraTK::StateMonitor']]],
   ['ntriggersperfile',['nTriggersPerFile',['../class_chimera_t_k_1_1_micro_d_a_q.html#a4982d8bd692f8b33140a97a519976f16',1,'ChimeraTK::MicroDAQ']]]
 ];
