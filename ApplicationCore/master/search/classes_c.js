@@ -2,7 +2,6 @@ var searchData=
 [
   ['scalaraccessor',['ScalarAccessor',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
   ['scalaraccessor_3c_20double_20_3e',['ScalarAccessor&lt; double &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
-  ['scalaraccessor_3c_20double_5ft_20_3e',['ScalarAccessor&lt; double_t &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
   ['scalaraccessor_3c_20int_20_3e',['ScalarAccessor&lt; int &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
   ['scalaraccessor_3c_20int32_5ft_20_3e',['ScalarAccessor&lt; int32_t &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
   ['scalaraccessor_3c_20std_3a_3astring_20_3e',['ScalarAccessor&lt; std::string &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
@@ -15,7 +14,6 @@ var searchData=
   ['scalaraccessor_3c_20uint64_5ft_20_3e',['ScalarAccessor&lt; uint64_t &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
   ['scalaroutput',['ScalarOutput',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK']]],
   ['scalaroutput_3c_20double_20_3e',['ScalarOutput&lt; double &gt;',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK']]],
-  ['scalaroutput_3c_20double_5ft_20_3e',['ScalarOutput&lt; double_t &gt;',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK']]],
   ['scalaroutput_3c_20int_20_3e',['ScalarOutput&lt; int &gt;',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK']]],
   ['scalaroutput_3c_20int32_5ft_20_3e',['ScalarOutput&lt; int32_t &gt;',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK']]],
   ['scalaroutput_3c_20std_3a_3astring_20_3e',['ScalarOutput&lt; std::string &gt;',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK']]],
@@ -35,20 +33,18 @@ var searchData=
   ['scalarpollinput_3c_20uint32_5ft_20_3e',['ScalarPollInput&lt; uint32_t &gt;',['../struct_chimera_t_k_1_1_scalar_poll_input.html',1,'ChimeraTK']]],
   ['scalarpushinput',['ScalarPushInput',['../struct_chimera_t_k_1_1_scalar_push_input.html',1,'ChimeraTK']]],
   ['scalarpushinput_3c_20double_20_3e',['ScalarPushInput&lt; double &gt;',['../struct_chimera_t_k_1_1_scalar_push_input.html',1,'ChimeraTK']]],
-  ['scalarpushinput_3c_20double_5ft_20_3e',['ScalarPushInput&lt; double_t &gt;',['../struct_chimera_t_k_1_1_scalar_push_input.html',1,'ChimeraTK']]],
   ['scalarpushinput_3c_20int_20_3e',['ScalarPushInput&lt; int &gt;',['../struct_chimera_t_k_1_1_scalar_push_input.html',1,'ChimeraTK']]],
   ['scalarpushinput_3c_20int32_5ft_20_3e',['ScalarPushInput&lt; int32_t &gt;',['../struct_chimera_t_k_1_1_scalar_push_input.html',1,'ChimeraTK']]],
   ['scalarpushinput_3c_20t_20_3e',['ScalarPushInput&lt; T &gt;',['../struct_chimera_t_k_1_1_scalar_push_input.html',1,'ChimeraTK']]],
   ['scalarpushinput_3c_20triggertype_20_3e',['ScalarPushInput&lt; TRIGGERTYPE &gt;',['../struct_chimera_t_k_1_1_scalar_push_input.html',1,'ChimeraTK']]],
   ['scalarpushinput_3c_20type_20_3e',['ScalarPushInput&lt; Type &gt;',['../struct_chimera_t_k_1_1_scalar_push_input.html',1,'ChimeraTK']]],
-  ['scalarpushinput_3c_20uint16_5ft_20_3e',['ScalarPushInput&lt; uint16_t &gt;',['../struct_chimera_t_k_1_1_scalar_push_input.html',1,'ChimeraTK']]],
   ['scalarpushinput_3c_20uint64_5ft_20_3e',['ScalarPushInput&lt; uint64_t &gt;',['../struct_chimera_t_k_1_1_scalar_push_input.html',1,'ChimeraTK']]],
   ['scalarpushinputwb',['ScalarPushInputWB',['../struct_chimera_t_k_1_1_scalar_push_input_w_b.html',1,'ChimeraTK']]],
   ['senddatatoconsumers',['SendDataToConsumers',['../struct_chimera_t_k_1_1_trigger_fan_out_1_1_send_data_to_consumers.html',1,'ChimeraTK::TriggerFanOut']]],
   ['server',['Server',['../struct_server.html',1,'']]],
   ['serverhistory',['ServerHistory',['../struct_chimera_t_k_1_1history_1_1_server_history.html',1,'ChimeraTK::history']]],
-  ['simulation',['Simulation',['../struct_simulation.html',1,'']]],
+  ['simulationmodule',['SimulationModule',['../struct_simulation_module.html',1,'']]],
   ['statemonitor',['StateMonitor',['../struct_chimera_t_k_1_1_state_monitor.html',1,'ChimeraTK']]],
   ['statusmonitor',['StatusMonitor',['../struct_chimera_t_k_1_1_status_monitor.html',1,'ChimeraTK']]],
-  ['statusmonitor_3c_20double_5ft_20_3e',['StatusMonitor&lt; double_t &gt;',['../struct_chimera_t_k_1_1_status_monitor.html',1,'ChimeraTK']]]
+  ['statusmonitor_3c_20double_20_3e',['StatusMonitor&lt; double &gt;',['../struct_chimera_t_k_1_1_status_monitor.html',1,'ChimeraTK']]]
 ];

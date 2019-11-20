@@ -362,9 +362,14 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a8ef88da2631968bb315b54f3bf2e9f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum to define types of VariableNetworkNode.  <a href="namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1d">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a8ef88da2631968bb315b54f3bf2e9f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a335687084d53741a8764f40a3e6d35c0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0">HierarchyModifier</a> { <a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0a334c4a4c42fdb79d7ebc3e73b517e6f8">HierarchyModifier::none</a>, 
+<tr class="memitem:a335687084d53741a8764f40a3e6d35c0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0">HierarchyModifier</a> { <br />
+&#160;&#160;<a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0a334c4a4c42fdb79d7ebc3e73b517e6f8">HierarchyModifier::none</a>, 
 <a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0a42fd45b7dde2262d94504c986ff06e36">HierarchyModifier::hideThis</a>, 
-<a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0a5cf8fc165257722f4ff962f06359ee11">HierarchyModifier::moveToRoot</a>
+<a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0a5cf8fc165257722f4ff962f06359ee11">HierarchyModifier::moveToRoot</a>, 
+<a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0ae47527f81def99820295151c908e9c4c">HierarchyModifier::oneLevelUp</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0aaf52e9bd48f3a48fa47a05d2b3b90338">HierarchyModifier::oneUpAndHide</a>
+<br />
  }<tr class="memdesc:a335687084d53741a8764f40a3e6d35c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hierarchy modifier: specify if and how the module hierarchy should be modified in EntityOwner::findTag() etc.  <a href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a335687084d53741a8764f40a3e6d35c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -479,6 +484,12 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a335687084d53741a8764f40a3e6d35c0a5cf8fc165257722f4ff962f06359ee11"></a>moveToRoot&#160;</td><td class="fielddoc"><p>The module at which this flag is specified is moved to the root level, together with the entire structure below the module. </p>
 <p>Note: Unless you run findTag() or so on the entire application, the moved hierarchy structures might not be visible in the control system etc. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a335687084d53741a8764f40a3e6d35c0ae47527f81def99820295151c908e9c4c"></a>oneLevelUp&#160;</td><td class="fielddoc"><p>Move the module up to the level where the owner lives. </p>
+<p>Instead of creating a "daughter" of the owning module, it creates a "sister" (module that lives on the same level). This modifyer can only be used in sub-modules, not on the first level </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a335687084d53741a8764f40a3e6d35c0aaf52e9bd48f3a48fa47a05d2b3b90338"></a>oneUpAndHide&#160;</td><td class="fielddoc"><p>Move the structure inside the module up to the level where the owner lives. </p>
+<p>Instead of adding a hierrarchy level, one level is removed. This modifyer can only be used in sub-modules, not on the first level inside an application. </p>
 </td></tr>
 </table>
 
@@ -745,7 +756,7 @@ template&lt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li>
-    <li class="footer">Generated on Tue Nov 19 2019 04:53:31 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Nov 20 2019 04:53:27 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

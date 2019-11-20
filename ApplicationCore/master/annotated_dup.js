@@ -7,7 +7,7 @@ var annotated_dup =
     [ "DemoDummy", "class_demo_dummy.html", "class_demo_dummy" ],
     [ "ExampleApp", "struct_example_app.html", "struct_example_app" ],
     [ "Server", "struct_server.html", "struct_server" ],
-    [ "Simulation", "struct_simulation.html", "struct_simulation" ],
+    [ "SimulationModule", "struct_simulation_module.html", "struct_simulation_module" ],
     [ "TableGeneration", "struct_table_generation.html", "struct_table_generation" ],
     [ "TemplateModule", "struct_template_module.html", "struct_template_module" ],
     [ "TimerDummy", "class_timer_dummy.html", "class_timer_dummy" ],
