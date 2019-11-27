@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['registerinfolist',['RegisterInfoList',['../_register_info_8h.html#a4009a4e5ef8e183e09276de2798c0c91',1,'RegisterInfo.h']]]
+  ['catalogue',['Catalogue',['../_catalogue_fetcher_8cc.html#a243e2db36fd52f1ccecd860798072cd1',1,'CatalogueFetcher.cc']]]
 ];
