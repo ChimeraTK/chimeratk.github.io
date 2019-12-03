@@ -10,6 +10,7 @@ var hierarchy =
         [ "ExampleApp", "struct_example_app.html", null ],
         [ "ExampleApp", "struct_example_app.html", null ],
         [ "ExampleApp", "struct_example_app.html", null ],
+        [ "ExampleApp", "struct_example_app.html", null ],
         [ "Server", "struct_server.html", null ]
       ] ]
     ] ],
@@ -60,6 +61,7 @@ var hierarchy =
             ] ],
             [ "ChimeraTK::WriteBitMask< NBITS >", "struct_chimera_t_k_1_1_write_bit_mask.html", null ],
             [ "ChimeraTK::WriteSplitArrayModule< TYPE >", "struct_chimera_t_k_1_1_write_split_array_module.html", null ],
+            [ "Controller", "struct_controller.html", null ],
             [ "Controller", "struct_controller.html", null ],
             [ "Controller", "struct_controller.html", null ],
             [ "logging::LoggingModule", "classlogging_1_1_logging_module.html", null ],
