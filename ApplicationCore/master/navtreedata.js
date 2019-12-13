@@ -6,7 +6,7 @@ var NAVTREE =
       [ "DataValidity", "exception_handling.html#DataValidity", null ]
     ] ],
     [ "Logging module and Logger", "loggingdoc.html", [
-      [ "Introduction to the logging mechanism", "loggingdoc.html#logginintro", null ]
+      [ "Introduction to the logging mechanism", "loggingdoc.html#loggingintro", null ]
     ] ],
     [ "Server based history module", "historydoc.html", [
       [ "Server based history", "historydoc.html#historyintro", null ]

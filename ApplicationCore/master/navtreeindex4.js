@@ -57,7 +57,7 @@ var NAVTREEINDEX4 =
 "historydoc.html#historyintro":[2,0],
 "index.html":[],
 "loggingdoc.html":[1],
-"loggingdoc.html#logginintro":[1,0],
+"loggingdoc.html#loggingintro":[1,0],
 "namespace_chimera_t_k.html":[11,0,0],
 "namespace_chimera_t_k.html":[10,0,0],
 "namespace_chimera_t_k_1_1history.html":[10,0,0,0],
