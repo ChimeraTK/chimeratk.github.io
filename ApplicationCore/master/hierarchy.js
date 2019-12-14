@@ -163,7 +163,8 @@ var hierarchy =
     [ "ChimeraTK::InversionOfControlAccessor< ScalarAccessor< std::string > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
       [ "ChimeraTK::ScalarAccessor< std::string >", "class_chimera_t_k_1_1_scalar_accessor.html", [
         [ "ChimeraTK::ScalarOutput< std::string >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
-        [ "ChimeraTK::ScalarPollInput< std::string >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ]
+        [ "ChimeraTK::ScalarPollInput< std::string >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< std::string >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ]
       ] ]
     ] ],
     [ "ChimeraTK::InversionOfControlAccessor< ScalarAccessor< T > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
@@ -185,7 +186,6 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::InversionOfControlAccessor< ScalarAccessor< uint > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
       [ "ChimeraTK::ScalarAccessor< uint >", "class_chimera_t_k_1_1_scalar_accessor.html", [
-        [ "ChimeraTK::ScalarOutput< uint >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
         [ "ChimeraTK::ScalarPollInput< uint >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ]
       ] ]
     ] ],

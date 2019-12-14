@@ -113,9 +113,9 @@ $(document).ready(function(){initNavTree('classlogging_1_1_logging_module.html',
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af903e15c543d33d4f9f16a19951ea0b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlogging_1_1_logging_module.html#af903e15c543d33d4f9f16a19951ea0b1">addSource</a> (<a class="el" href="classlogging_1_1_logger.html">Logger</a> *logger)</td></tr>
-<tr class="memdesc:af903e15c543d33d4f9f16a19951ea0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a Module as a source to this DAQ.  <a href="#af903e15c543d33d4f9f16a19951ea0b1">More...</a><br /></td></tr>
-<tr class="separator:af903e15c543d33d4f9f16a19951ea0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad85821c384b32b66cc8057df4a3b98ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlogging_1_1_logging_module.html#ad85821c384b32b66cc8057df4a3b98ca">addSource</a> (boost::shared_ptr&lt; <a class="el" href="classlogging_1_1_logger.html">Logger</a> &gt; logger)</td></tr>
+<tr class="memdesc:ad85821c384b32b66cc8057df4a3b98ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a Module as a source to this DAQ.  <a href="#ad85821c384b32b66cc8057df4a3b98ca">More...</a><br /></td></tr>
+<tr class="separator:ad85821c384b32b66cc8057df4a3b98ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4357b2e9b1d391541a2936ad39bbb0ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlogging_1_1_logging_module.html#a4357b2e9b1d391541a2936ad39bbb0ed">mainLoop</a> () override</td></tr>
 <tr class="memdesc:a4357b2e9b1d391541a2936ad39bbb0ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application core main loop.  <a href="#a4357b2e9b1d391541a2936ad39bbb0ed">More...</a><br /></td></tr>
 <tr class="separator:a4357b2e9b1d391541a2936ad39bbb0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -445,10 +445,10 @@ Additional Inherited Members</h2></td></tr>
 <p>You can control which stream is used by setting the targetStream varibale: 0: cout/cerr and logfile 1: logfile 2: cout/cerr 3: none</p>
 <p>The logfile is given by the client using the logFile variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00194">194</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00188">188</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="af903e15c543d33d4f9f16a19951ea0b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af903e15c543d33d4f9f16a19951ea0b1">&#9670;&nbsp;</a></span>addSource()</h2>
+<a id="ad85821c384b32b66cc8057df4a3b98ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad85821c384b32b66cc8057df4a3b98ca">&#9670;&nbsp;</a></span>addSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -456,7 +456,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void LoggingModule::addSource </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlogging_1_1_logger.html">Logger</a> *&#160;</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="classlogging_1_1_logger.html">Logger</a> &gt;&#160;</td>
           <td class="paramname"><em>logger</em></td><td>)</td>
           <td></td>
         </tr>
@@ -465,15 +465,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Add a Module as a source to this DAQ. </p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00149">149</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classlogging_1_1_logging_module_af903e15c543d33d4f9f16a19951ea0b1_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00147">147</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
 
 </div>
 </div>
@@ -504,12 +496,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8">ChimeraTK::ApplicationModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00105">105</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00099">99</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classlogging_1_1_logging_module_a4357b2e9b1d391541a2936ad39bbb0ed_cgraph.svg" width="367" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -544,7 +536,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application_module.html#a7063da466e760cc5c9838834be08a267">ChimeraTK::ApplicationModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00179">179</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00174">174</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
 
 </div>
 </div>
@@ -563,7 +555,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Log file where to write log messages. </p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00239">239</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00233">233</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -578,8 +570,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{<span class="keyword">this</span>, <span class="stringliteral">&quot;Logfile&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Name of the external logfile. If empty messages are pushed to &quot;</span></div><div class="line">      <span class="stringliteral">&quot;cout/cerr&quot;</span>,</div><div class="line">      {<span class="stringliteral">&quot;CS&quot;</span>, <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#a9ac0f0454393196b8abb3b2393ca69c5">getName</a>()}}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00222">222</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<b>Initial value:</b><div class="fragment"><div class="line">{<span class="keyword">this</span>, <span class="stringliteral">&quot;logFile&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Name of the external logfile. If empty messages are pushed to &quot;</span></div><div class="line">      <span class="stringliteral">&quot;cout/cerr&quot;</span>,</div><div class="line">      {<span class="stringliteral">&quot;CS&quot;</span>, <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#a9ac0f0454393196b8abb3b2393ca69c5">getName</a>()}}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00216">216</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -595,7 +587,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{<span class="keyword">this</span>, <span class="stringliteral">&quot;logLevel&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Current log level used for messages.&quot;</span>,</div><div class="line">      {<span class="stringliteral">&quot;CS&quot;</span>, <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#a9ac0f0454393196b8abb3b2393ca69c5">getName</a>()}}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00231">231</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00225">225</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -610,8 +602,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{<span class="keyword">this</span>, <span class="stringliteral">&quot;LogTail&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Tail of the logging stream.&quot;</span>,</div><div class="line">      {<span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#a9ac0f0454393196b8abb3b2393ca69c5">getName</a>()}}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00235">235</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<b>Initial value:</b><div class="fragment"><div class="line">{<span class="keyword">this</span>, <span class="stringliteral">&quot;logTail&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Tail of the logging stream.&quot;</span>,</div><div class="line">      {<span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#a9ac0f0454393196b8abb3b2393ca69c5">getName</a>()}}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00229">229</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -626,8 +618,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{<span class="keyword">this</span>, <span class="stringliteral">&quot;maxLength&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Maximum number of messages to be shown in the logging stream tail.&quot;</span>,</div><div class="line">      {<span class="stringliteral">&quot;CS&quot;</span>, <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#a9ac0f0454393196b8abb3b2393ca69c5">getName</a>()}}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00227">227</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<b>Initial value:</b><div class="fragment"><div class="line">{<span class="keyword">this</span>, <span class="stringliteral">&quot;maxTailLength&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Maximum number of messages to be shown in the logging stream tail.&quot;</span>,</div><div class="line">      {<span class="stringliteral">&quot;CS&quot;</span>, <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#a9ac0f0454393196b8abb3b2393ca69c5">getName</a>()}}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00221">221</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -643,7 +635,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{<span class="keyword">this</span>, <span class="stringliteral">&quot;targetStream&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Set the tagret stream: 0 (cout/cerr+logfile), 1 (logfile), 2 &quot;</span></div><div class="line">      <span class="stringliteral">&quot;(cout/cerr), 3 (none)&quot;</span>,</div><div class="line">      {<span class="stringliteral">&quot;CS&quot;</span>, <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#a9ac0f0454393196b8abb3b2393ca69c5">getName</a>()}}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00217">217</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00211">211</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -657,7 +649,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelogging.html">logging</a></li><li class="navelem"><a class="el" href="classlogging_1_1_logging_module.html">LoggingModule</a></li>
-    <li class="footer">Generated on Fri Dec 13 2019 04:54:25 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Dec 14 2019 04:53:28 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -159,7 +159,6 @@ var NAVTREEINDEX3 =
 "classlogging_1_1_logger.html#a11fa5c45def08167bd2101093c2b04da":[11,0,1,0,2],
 "classlogging_1_1_logger.html#a87cd7a6981b805533c717053ae412cd0":[11,0,1,0,0],
 "classlogging_1_1_logger.html#a953a449517466c898df8c4258b564690":[11,0,1,0,1],
-"classlogging_1_1_logger.html#abb9ed47cb73e096fd134af4af29ed5b0":[11,0,1,0,4],
 "classlogging_1_1_logger.html#ae53dadb4bf80fcfd041f4ed94b68f443":[11,0,1,0,3],
 "classlogging_1_1_logging_module.html":[11,0,1,1],
 "classlogging_1_1_logging_module.html#a00a5432ac851dadb47f5947a319bb083":[11,0,1,1,7],
@@ -169,8 +168,8 @@ var NAVTREEINDEX3 =
 "classlogging_1_1_logging_module.html#a58341fa99b5ee6c3921e4e1689b933cd":[11,0,1,1,6],
 "classlogging_1_1_logging_module.html#a65e49a11677dde2c6ea428d05dd044c1":[11,0,1,1,2],
 "classlogging_1_1_logging_module.html#abe604ede36ca0e213a049a2d2d0aa095":[11,0,1,1,3],
+"classlogging_1_1_logging_module.html#ad85821c384b32b66cc8057df4a3b98ca":[11,0,1,1,0],
 "classlogging_1_1_logging_module.html#ae90e453ff52bc721d16da109a5270f0f":[11,0,1,1,4],
-"classlogging_1_1_logging_module.html#af903e15c543d33d4f9f16a19951ea0b1":[11,0,1,1,0],
 "configreader.html":[3],
 "configreader.html#usage":[3,0],
 "configreader.html#xmlstructure":[3,1],
@@ -236,8 +235,8 @@ var NAVTREEINDEX3 =
 "functions_enum.html":[11,3,4],
 "functions_eval.html":[11,3,5],
 "functions_f.html":[11,3,0,6],
-"functions_func.html":[11,3,1,0],
 "functions_func.html":[11,3,1],
+"functions_func.html":[11,3,1,0],
 "functions_func_0x7e.html":[11,3,1,21],
 "functions_func_b.html":[11,3,1,1],
 "functions_func_c.html":[11,3,1,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "functions_func_i.html":[11,3,1,8],
 "functions_func_l.html":[11,3,1,9],
 "functions_func_m.html":[11,3,1,10],
-"functions_func_n.html":[11,3,1,11]
+"functions_func_n.html":[11,3,1,11],
+"functions_func_o.html":[11,3,1,12]
 };

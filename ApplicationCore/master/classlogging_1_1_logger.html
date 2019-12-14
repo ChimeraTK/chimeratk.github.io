@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('classlogging_1_1_logger.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classlogging_1_1_logger__coll__graph.svg" width="100%" height="545"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classlogging_1_1_logger__coll__graph.svg" width="100%" height="497"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -120,15 +120,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae53dadb4bf80fcfd041f4ed94b68f443"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_scalar_output.html">ctk::ScalarOutput</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlogging_1_1_logger.html#ae53dadb4bf80fcfd041f4ed94b68f443">message</a></td></tr>
 <tr class="memdesc:ae53dadb4bf80fcfd041f4ed94b68f443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message to be send to the logging module.  <a href="#ae53dadb4bf80fcfd041f4ed94b68f443">More...</a><br /></td></tr>
 <tr class="separator:ae53dadb4bf80fcfd041f4ed94b68f443"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb9ed47cb73e096fd134af4af29ed5b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_scalar_output.html">ctk::ScalarOutput</a>&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlogging_1_1_logger.html#abb9ed47cb73e096fd134af4af29ed5b0">messageLevel</a></td></tr>
-<tr class="memdesc:abb9ed47cb73e096fd134af4af29ed5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message to be send to the logging module.  <a href="#abb9ed47cb73e096fd134af4af29ed5b0">More...</a><br /></td></tr>
-<tr class="separator:abb9ed47cb73e096fd134af4af29ed5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class used to send messages in a convenient way to the <a class="el" href="classlogging_1_1_logging_module.html" title="Module used to handle logging messages. ">LoggingModule</a>. </p>
-<p>In principle this class only adds two output variables and provides a simple method to fill these variables. They are supposed to be connected to the <a class="el" href="classlogging_1_1_logging_module.html" title="Module used to handle logging messages. ">LoggingModule</a> via <a class="el" href="classlogging_1_1_logging_module.html#af903e15c543d33d4f9f16a19951ea0b1" title="Add a Module as a source to this DAQ. ">LoggingModule::addSource</a>. If sendMessage is used before chimeraTK process variables are initialized an internal buffer is used to store those messages. Once the process variables are initialized the messages from the buffer are send. </p><dl class="section attention"><dt>Attention</dt><dd>This only happens once a message is send after chimeraTK process variables are initialized! In other words if no message is send in the mainLoop messages from defineConnections will never be shown. </dd></dl>
+<p>In principle this class only adds two output variables and provides a simple method to fill these variables. They are supposed to be connected to the <a class="el" href="classlogging_1_1_logging_module.html" title="Module used to handle logging messages. ">LoggingModule</a> via <a class="el" href="classlogging_1_1_logging_module.html#ad85821c384b32b66cc8057df4a3b98ca" title="Add a Module as a source to this DAQ. ">LoggingModule::addSource</a>. If sendMessage is used before chimeraTK process variables are initialized an internal buffer is used to store those messages. Once the process variables are initialized the messages from the buffer are send. </p><dl class="section attention"><dt>Attention</dt><dd>This only happens once a message is send after chimeraTK process variables are initialized! In other words if no message is send in the mainLoop messages from defineConnections will never be shown. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00140">140</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00137">137</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a87cd7a6981b805533c717053ae412cd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87cd7a6981b805533c717053ae412cd0">&#9670;&nbsp;</a></span>Logger() <span class="overload">[1/2]</span></h2>
@@ -157,7 +154,7 @@ Public Attributes</h2></td></tr>
 <p>when creating arrays of modules).</p>
 <p>This constructor also has to be here to mitigate a bug in gcc. It is needed to allow constructor inheritance of modules owning other modules. This constructor will not actually be called then. See this bug report: <a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=67054">https://gcc.gnu.org/bugzilla/show_bug.cgi?id=67054</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00153">153</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00150">150</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -226,7 +223,7 @@ Public Attributes</h2></td></tr>
 
 <p>Send a message, which means to update the message and messageLevel member variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00051">51</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00049">49</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -253,25 +250,7 @@ Public Attributes</h2></td></tr>
 
 <p>Message to be send to the logging module. </p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00163">163</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
-
-</div>
-</div>
-<a id="abb9ed47cb73e096fd134af4af29ed5b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb9ed47cb73e096fd134af4af29ed5b0">&#9670;&nbsp;</a></span>messageLevel</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_scalar_output.html">ctk::ScalarOutput</a>&lt;uint&gt; logging::Logger::messageLevel</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Message to be send to the logging module. </p>
-
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00166">166</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00160">160</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -285,7 +264,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelogging.html">logging</a></li><li class="navelem"><a class="el" href="classlogging_1_1_logger.html">Logger</a></li>
-    <li class="footer">Generated on Fri Dec 13 2019 04:54:25 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Dec 14 2019 04:53:28 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
