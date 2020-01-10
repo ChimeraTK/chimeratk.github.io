@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-DeviceAccess
-   &#160;<span id="projectnumber">01.09.01</span>
+   &#160;<span id="projectnumber">01.09.02</span>
    </div>
   </td>
  </tr>
@@ -125,6 +125,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a462a3a6d3dff3acb324ebcfdfc22e0d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a462a3a6d3dff3acb324ebcfdfc22e0d1">doWriteTransfer</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber={}) override</td></tr>
 <tr class="memdesc:a462a3a6d3dff3acb324ebcfdfc22e0d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data to device.  <a href="#a462a3a6d3dff3acb324ebcfdfc22e0d1">More...</a><br /></td></tr>
 <tr class="separator:a462a3a6d3dff3acb324ebcfdfc22e0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a548efce1991a5bb5d304e79572b976fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a548efce1991a5bb5d304e79572b976fc">doWriteTransferDestructively</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber={}) override</td></tr>
+<tr class="memdesc:a548efce1991a5bb5d304e79572b976fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Just like <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a462a3a6d3dff3acb324ebcfdfc22e0d1" title="Write the data to device. ">doWriteTransfer()</a>, but allows the implementation to destroy the content of the user buffer in the process.  <a href="#a548efce1991a5bb5d304e79572b976fc">More...</a><br /></td></tr>
+<tr class="separator:a548efce1991a5bb5d304e79572b976fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ee8089574a833474380262cb5d3e763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a4ee8089574a833474380262cb5d3e763">doPostWrite</a> () override</td></tr>
 <tr class="memdesc:a4ee8089574a833474380262cb5d3e763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae92f7bd2db9827c3db3c1ff0e29ab581" title="Perform any post-write cleanups if necessary. ">postWrite()</a>.  <a href="#a4ee8089574a833474380262cb5d3e763">More...</a><br /></td></tr>
 <tr class="separator:a4ee8089574a833474380262cb5d3e763"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,7 +321,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a6b8c0cb33f798ad604ce6f2cdf6f7ff9">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00075">75</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00076">76</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -422,7 +425,42 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4370c5db79886ac21390f2fa781f2f9c">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00088">88</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00089">89</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+
+</div>
+</div>
+<a id="a548efce1991a5bb5d304e79572b976fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a548efce1991a5bb5d304e79572b976fc">&#9670;&nbsp;</a></span>doWriteTransferDestructively()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator</a>&lt; UserType &gt;::doWriteTransferDestructively </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a>&#160;</td>
+          <td class="paramname"><em>versionNumber</em> = <code>{}</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Just like <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a462a3a6d3dff3acb324ebcfdfc22e0d1" title="Write the data to device. ">doWriteTransfer()</a>, but allows the implementation to destroy the content of the user buffer in the process. </p>
+<p>This is an optional optimisation, hence there is a default implementation which just calls the normal <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a462a3a6d3dff3acb324ebcfdfc22e0d1" title="Write the data to device. ">doWriteTransfer()</a>. </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a147daf52a3fa87de1debbb9826b786d0">ChimeraTK::TransferElement</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00099">99</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -459,7 +497,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a97ff27579d6a52ef1c5c629c316bf53e">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00079">79</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00080">80</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -494,7 +532,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00077">77</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00078">78</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -547,7 +585,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00082">82</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00083">83</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -565,7 +603,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00081">81</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00082">82</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -583,7 +621,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00082">82</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html#l00083">83</a> of file <a class="el" href="_l_n_m_monostable_trigger_plugin_8cc_source.html">LNMMonostableTriggerPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -596,7 +634,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html">LNMBackend</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html">MonostableTriggerPluginDecorator</a></li>
-    <li class="footer">Generated on Wed Dec 18 2019 04:53:30 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Fri Jan 10 2020 04:53:32 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
