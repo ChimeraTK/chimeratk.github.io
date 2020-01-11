@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['profiler',['Profiler',['../class_chimera_t_k_1_1_profiler_1_1_thread_data.html#ad73e5645d5b7b84a00d4a5d07b8d8078',1,'ChimeraTK::Profiler::ThreadData']]]
+  ['module',['Module',['../class_chimera_t_k_1_1_application.html#a21f639900c480510650969df9c74d17d',1,'ChimeraTK::Application']]]
 ];

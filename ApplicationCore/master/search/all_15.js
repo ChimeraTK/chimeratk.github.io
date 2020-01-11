@@ -6,6 +6,7 @@ var searchData=
   ['warnunconnectedvariables',['warnUnconnectedVariables',['../class_chimera_t_k_1_1_application.html#af638d687f2d229ab733c48f62f1a8877',1,'ChimeraTK::Application']]],
   ['watch',['watch',['../struct_chimera_t_k_1_1_status_monitor_1_1_one_up.html#a2b2e160776b83aca11517ce727a7cdbc',1,'ChimeraTK::StatusMonitor::OneUp']]],
   ['withreturn',['withReturn',['../struct_chimera_t_k_1_1_variable_direction.html#a7c93d9b94dea8bb79d01bbe612bfbb29',1,'ChimeraTK::VariableDirection']]],
+  ['withtimestamps',['withTimeStamps',['../struct_chimera_t_k_1_1history_1_1_history_entry.html#a2586c936907273a4197efd97513adb9a',1,'ChimeraTK::history::HistoryEntry']]],
   ['write',['write',['../class_chimera_t_k_1_1_array_accessor.html#a5606d0b5bc14407f0be9d47dca7612d6',1,'ChimeraTK::ArrayAccessor::write(ChimeraTK::VersionNumber versionNumber)=delete'],['../class_chimera_t_k_1_1_array_accessor.html#a9f39e90967b5befde4227ab273ef97c8',1,'ChimeraTK::ArrayAccessor::write()'],['../class_chimera_t_k_1_1_scalar_accessor.html#a02f5ea46e0582dfceb8e9cc06b25c302',1,'ChimeraTK::ScalarAccessor::write(ChimeraTK::VersionNumber versionNumber)=delete'],['../class_chimera_t_k_1_1_scalar_accessor.html#aa95b652b95fb7b51327486ce37d77ab8',1,'ChimeraTK::ScalarAccessor::write()']]],
   ['writeafteropen',['writeAfterOpen',['../class_chimera_t_k_1_1_device_module.html#a919584a80ca4081484c889e0eb53e32a',1,'ChimeraTK::DeviceModule']]],
   ['writeall',['writeAll',['../class_chimera_t_k_1_1_module.html#a7cabaa7c9d97adc5c3ed37430b27ee3e',1,'ChimeraTK::Module']]],

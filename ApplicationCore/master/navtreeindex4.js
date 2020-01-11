@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"functions_func_o.html":[11,3,1,12],
 "functions_func_p.html":[11,3,1,13],
 "functions_func_r.html":[11,3,1,14],
 "functions_func_s.html":[11,3,1,15],
@@ -24,8 +25,8 @@ var NAVTREEINDEX4 =
 "functions_type.html":[11,3,3],
 "functions_u.html":[11,3,0,19],
 "functions_v.html":[11,3,0,20],
-"functions_vars.html":[11,3,2],
 "functions_vars.html":[11,3,2,0],
+"functions_vars.html":[11,3,2],
 "functions_vars_a.html":[11,3,2,1],
 "functions_vars_b.html":[11,3,2,2],
 "functions_vars_c.html":[11,3,2,3],
@@ -59,10 +60,10 @@ var NAVTREEINDEX4 =
 "loggingdoc.html#loggingintro":[1,0],
 "namespace_chimera_t_k.html":[11,0,0],
 "namespace_chimera_t_k.html":[10,0,0],
-"namespace_chimera_t_k_1_1history.html":[10,0,0,0],
 "namespace_chimera_t_k_1_1history.html":[11,0,0,0],
-"namespacelogging.html":[10,0,1],
+"namespace_chimera_t_k_1_1history.html":[10,0,0,0],
 "namespacelogging.html":[11,0,1],
+"namespacelogging.html":[10,0,1],
 "namespacemembers.html":[10,1,0],
 "namespacemembers_enum.html":[10,1,4],
 "namespacemembers_eval.html":[10,1,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "struct_chimera_t_k_1_1_read_bit_mask.html#a7d5ec54e7dd50ea8da1b1a154e890af9":[11,0,0,52,6],
 "struct_chimera_t_k_1_1_read_bit_mask.html#a9d9ef391978a2de37738c709ef53cf06":[11,0,0,52,1],
 "struct_chimera_t_k_1_1_read_bit_mask.html#ac75e93b19b58fdcf8ebcc11448836355":[11,0,0,52,2],
-"struct_chimera_t_k_1_1_read_bit_mask.html#accb186e1c427e9d6aa3253a07efbb67c":[11,0,0,52,5],
-"struct_chimera_t_k_1_1_read_bit_mask_1_1_output.html":[11,0,0,52,0]
+"struct_chimera_t_k_1_1_read_bit_mask.html#accb186e1c427e9d6aa3253a07efbb67c":[11,0,0,52,5]
 };

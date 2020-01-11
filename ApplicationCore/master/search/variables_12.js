@@ -25,6 +25,7 @@ var searchData=
   ['this',['this',['../struct_example_app.html#a76a1ccbf7814eae00f2c5466764e6ee7',1,'ExampleApp']]],
   ['tick',['tick',['../struct_chimera_t_k_1_1_periodic_trigger.html#aec9052ada4b008f2583a5f61472aac23',1,'ChimeraTK::PeriodicTrigger']]],
   ['timer',['timer',['../struct_example_app.html#a872f39c39ae79bb08c44b62766910874',1,'ExampleApp::timer()'],['../struct_example_app.html#a872f39c39ae79bb08c44b62766910874',1,'ExampleApp::timer()']]],
+  ['timestamp',['timeStamp',['../struct_chimera_t_k_1_1history_1_1_history_entry.html#ad46bdb2e96e023936d9f08b0d50de31d',1,'ChimeraTK::history::HistoryEntry']]],
   ['transfergroup',['transferGroup',['../class_chimera_t_k_1_1_trigger_fan_out.html#a8fd27fe8155aa8aceef11582611ce37b',1,'ChimeraTK::TriggerFanOut']]],
   ['tree',['tree',['../namespacevariable_houseold_to_wiki_table.html#acd8669582d3feb47a80bc1d08c383992',1,'variableHouseoldToWikiTable']]],
   ['trigger',['trigger',['../struct_automation.html#adc175eb9561ef659f570a65ae1ac97cc',1,'Automation::trigger()'],['../struct_automation.html#acff6fa50c6a95870a79b4b1df4a14ea1',1,'Automation::trigger()'],['../struct_chimera_t_k_1_1_data_loss_counter.html#acc87a013c2673d9f0d39b026fc43f73c',1,'ChimeraTK::DataLossCounter::trigger()'],['../class_chimera_t_k_1_1_micro_d_a_q.html#a007ff64c59c355aa9641553696b37ea5',1,'ChimeraTK::MicroDAQ::trigger()']]],

@@ -34,6 +34,7 @@ var dir_b74252328106591dfb0d36463b609fd4 =
       [ "ArrayPipe", "struct_chimera_t_k_1_1_array_pipe.html", "struct_chimera_t_k_1_1_array_pipe" ]
     ] ],
     [ "ServerHistory.h", "_server_history_8h.html", [
+      [ "HistoryEntry", "struct_chimera_t_k_1_1history_1_1_history_entry.html", "struct_chimera_t_k_1_1history_1_1_history_entry" ],
       [ "ServerHistory", "struct_chimera_t_k_1_1history_1_1_server_history.html", "struct_chimera_t_k_1_1history_1_1_server_history" ]
     ] ],
     [ "SplitArray.h", "_split_array_8h.html", [

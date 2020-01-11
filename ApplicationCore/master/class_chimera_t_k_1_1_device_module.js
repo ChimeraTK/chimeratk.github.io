@@ -30,6 +30,7 @@ var class_chimera_t_k_1_1_device_module =
     [ "virtualiseFromCatalog", "class_chimera_t_k_1_1_device_module.html#a984e0e97ec34d3f8f05f1eebb28e3acc", null ],
     [ "Application", "class_chimera_t_k_1_1_device_module.html#a23f25bcc02a0e94c2f5a4188496b04d0", null ],
     [ "detail::DeviceModuleProxy", "class_chimera_t_k_1_1_device_module.html#a70461c19bbacfd6cb682f69f0464f406", null ],
+    [ "history::ServerHistory", "class_chimera_t_k_1_1_device_module.html#ab9171bb39053b85717ad350f03cf0f02", null ],
     [ "currentVersionNumber", "class_chimera_t_k_1_1_device_module.html#a4a3bfad5ba8749f4e37a5165bbbdb321", null ],
     [ "device", "class_chimera_t_k_1_1_device_module.html#a5c5d31cbd8669519f0a974a202c3caa0", null ],
     [ "deviceAliasOrURI", "class_chimera_t_k_1_1_device_module.html#ac19f5b14011b1cb9830655783eb809fa", null ],

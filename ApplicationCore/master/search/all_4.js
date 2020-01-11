@@ -2,6 +2,7 @@ var searchData=
 [
   ['accessorattacher_3c_20triggertype_20_3e',['AccessorAttacher&lt; TRIGGERTYPE &gt;',['../class_chimera_t_k_1_1_micro_d_a_q.html#a0ec41483fa5cb8aeb62ad0b392d3d51a',1,'ChimeraTK::MicroDAQ']]],
   ['d',['d',['../namespaceoven__sim.html#a2d2b40f36a63aba88f95c5b5c474057d',1,'oven_sim']]],
+  ['data',['data',['../struct_chimera_t_k_1_1history_1_1_history_entry.html#a5063dd835e2cdc27336b7305a8ed76c8',1,'ChimeraTK::history::HistoryEntry']]],
   ['datalosscounter',['DataLossCounter',['../struct_chimera_t_k_1_1_data_loss_counter.html',1,'ChimeraTK::DataLossCounter&lt; TRIGGERTYPE &gt;'],['../class_chimera_t_k_1_1_application.html#a80e8990554832fe825057368d512a7a5',1,'ChimeraTK::Application::dataLossCounter()']]],
   ['datalosscounter_2eh',['DataLossCounter.h',['../_data_loss_counter_8h.html',1,'']]],
   ['dataspacecreator_3c_20triggertype_20_3e',['DataSpaceCreator&lt; TRIGGERTYPE &gt;',['../class_chimera_t_k_1_1_micro_d_a_q.html#a1afb5529649c7c5c3197dd0b9e6207bd',1,'ChimeraTK::MicroDAQ']]],

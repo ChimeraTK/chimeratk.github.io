@@ -94,6 +94,7 @@ var hierarchy =
     [ "ChimeraTK::FunctorFill", "struct_chimera_t_k_1_1_functor_fill.html", null ],
     [ "ChimeraTK::FunctorSetValues", "struct_chimera_t_k_1_1_functor_set_values.html", null ],
     [ "ChimeraTK::FunctorSetValuesArray", "struct_chimera_t_k_1_1_functor_set_values_array.html", null ],
+    [ "ChimeraTK::history::HistoryEntry< UserType >", "struct_chimera_t_k_1_1history_1_1_history_entry.html", null ],
     [ "ChimeraTK::InternalModule", "class_chimera_t_k_1_1_internal_module.html", [
       [ "ChimeraTK::ThreadedFanOut< UserType >", "class_chimera_t_k_1_1_threaded_fan_out.html", null ],
       [ "ChimeraTK::TriggerFanOut", "class_chimera_t_k_1_1_trigger_fan_out.html", null ]
@@ -129,6 +130,11 @@ var hierarchy =
       [ "ChimeraTK::ArrayAccessor< TYPE >", "class_chimera_t_k_1_1_array_accessor.html", [
         [ "ChimeraTK::ArrayOutput< TYPE >", "struct_chimera_t_k_1_1_array_output.html", null ],
         [ "ChimeraTK::ArrayPushInput< TYPE >", "struct_chimera_t_k_1_1_array_push_input.html", null ]
+      ] ]
+    ] ],
+    [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< uint64_t > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
+      [ "ChimeraTK::ArrayAccessor< uint64_t >", "class_chimera_t_k_1_1_array_accessor.html", [
+        [ "ChimeraTK::ArrayOutput< uint64_t >", "struct_chimera_t_k_1_1_array_output.html", null ]
       ] ]
     ] ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< UserType > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
@@ -234,6 +240,7 @@ var hierarchy =
       [ "ChimeraTK::ArrayAccessor< T >", "class_chimera_t_k_1_1_array_accessor.html", null ],
       [ "ChimeraTK::ArrayAccessor< TYPE >", "class_chimera_t_k_1_1_array_accessor.html", null ],
       [ "ChimeraTK::ArrayAccessor< Type >", "class_chimera_t_k_1_1_array_accessor.html", null ],
+      [ "ChimeraTK::ArrayAccessor< uint64_t >", "class_chimera_t_k_1_1_array_accessor.html", null ],
       [ "ChimeraTK::ArrayAccessor< UserType >", "class_chimera_t_k_1_1_array_accessor.html", null ]
     ] ],
     [ "ChimeraTK::Profiler", "class_chimera_t_k_1_1_profiler.html", null ],
