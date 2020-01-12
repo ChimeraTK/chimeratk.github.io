@@ -9,11 +9,6 @@ var hierarchy =
     [ "ContinuationPointEntry", "struct_continuation_point_entry.html", null ],
     [ "csa_opcua_adapter", "classcsa__opcua__adapter.html", null ],
     [ "FolderInfo", "struct_folder_info.html", null ],
-    [ "ipc_managed_object", "classipc__managed__object.html", [
-      [ "ipc_manager", "classipc__manager.html", null ],
-      [ "runtime_value_generator", "classruntime__value__generator.html", null ],
-      [ "ua_uaadapter", "classua__uaadapter.html", null ]
-    ] ],
     [ "MonitoredItem_queuedValue", "struct_monitored_item__queued_value.html", null ],
     [ "ua_namespace.opcua_namespace", "classua__namespace_1_1opcua__namespace.html", null ],
     [ "ua_node_types.opcua_node_id_t", "classua__node__types_1_1opcua__node__id__t.html", null ],
@@ -60,6 +55,7 @@ var hierarchy =
     [ "open62541_XMLPreprocessor.preProcessDocument", "classopen62541___x_m_l_preprocessor_1_1pre_process_document.html", null ],
     [ "RepeatedJob", "struct_repeated_job.html", null ],
     [ "ResponseDescription", "struct_response_description.html", null ],
+    [ "runtime_value_generator", "classruntime__value__generator.html", null ],
     [ "ServerConfig", "struct_server_config.html", null ],
     [ "ServerNetworkLayerTCP", "struct_server_network_layer_t_c_p.html", null ],
     [ "session_list_entry", "structsession__list__entry.html", null ],
@@ -139,7 +135,6 @@ var hierarchy =
     [ "UA_ExtensionObject", "struct_u_a___extension_object.html", null ],
     [ "UA_FindServersRequest", "struct_u_a___find_servers_request.html", null ],
     [ "UA_FindServersResponse", "struct_u_a___find_servers_response.html", null ],
-    [ "UA_FunctionCall_InstanceLookupTable_Element_t", "struct_u_a___function_call___instance_lookup_table___element__t.html", null ],
     [ "UA_GetEndpointsRequest", "struct_u_a___get_endpoints_request.html", null ],
     [ "UA_GetEndpointsResponse", "struct_u_a___get_endpoints_response.html", null ],
     [ "UA_Guid", "struct_u_a___guid.html", null ],

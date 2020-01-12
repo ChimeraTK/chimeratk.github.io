@@ -24,8 +24,6 @@ var searchData=
   ['ua_5fencodebinarysignature',['UA_encodeBinarySignature',['../open62541_8c.html#ac66f58c1b45980ceac11e1016536104b',1,'open62541.c']]],
   ['ua_5fexchangeencodebuffer',['UA_exchangeEncodeBuffer',['../open62541_8c.html#a9f3997a7b432070a636c63d2f87afccb',1,'open62541.c']]],
   ['ua_5ffloat',['UA_Float',['../open62541_8h.html#a899228311700e99d006f1ba5bcfcbd02',1,'open62541.h']]],
-  ['ua_5ffunctioncall_5finstancelookuptable',['UA_FunctionCall_InstanceLookUpTable',['../ua__proxies_8h.html#a3fbbf1df40f1b66f4603e98fd1b307c3',1,'ua_proxies.h']]],
-  ['ua_5ffunctioncall_5finstancelookuptable_5felement',['UA_FunctionCall_InstanceLookupTable_Element',['../ua__proxies_8h.html#a29ab70672c9744f57d846933e4adc713',1,'ua_proxies.h']]],
   ['ua_5fint16',['UA_Int16',['../open62541_8h.html#a2dfa954c25e6984956ab6fa8e8fd73db',1,'open62541.h']]],
   ['ua_5fint32',['UA_Int32',['../open62541_8h.html#a01ce3c3b2fb34ef81c97c313f516004e',1,'open62541.h']]],
   ['ua_5fint64',['UA_Int64',['../open62541_8h.html#ae5c13df54009d7a3e374bfc594af8059',1,'open62541.h']]],

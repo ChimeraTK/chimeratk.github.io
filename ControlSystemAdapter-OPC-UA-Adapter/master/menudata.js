@@ -174,7 +174,9 @@ var menudata={children:[
 {text:"p",url:"globals_type.html#index_p"},
 {text:"s",url:"globals_type.html#index_s"},
 {text:"u",url:"globals_type.html#index_u"}]},
-{text:"Enumerations",url:"globals_enum.html"},
+{text:"Enumerations",url:"globals_enum.html",children:[
+{text:"t",url:"globals_enum.html#index_t"},
+{text:"u",url:"globals_enum.html#index_u"}]},
 {text:"Enumerator",url:"globals_eval.html",children:[
 {text:"_",url:"globals_eval.html#index__"},
 {text:"t",url:"globals_eval_t.html#index_t"},

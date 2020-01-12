@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['ipc_5fmanaged_5fobject',['ipc_managed_object',['../classipc__managed__object.html',1,'']]],
-  ['ipc_5fmanager',['ipc_manager',['../classipc__manager.html',1,'']]]
+  ['monitoreditem_5fqueuedvalue',['MonitoredItem_queuedValue',['../struct_monitored_item__queued_value.html',1,'']]],
+  ['myapp',['MyApp',['../struct_my_app.html',1,'']]]
 ];

@@ -18,7 +18,6 @@ var searchData=
   ['pcg32_5frandom_5ft',['pcg32_random_t',['../open62541_8c.html#a884980a5a2c9fa48d7c0865e3b973ec7',1,'open62541.c']]],
   ['pcg32_5fsrandom_5fr',['pcg32_srandom_r',['../open62541_8c.html#ac912668bab2c8b68dc203eae3766b63d',1,'open62541.c']]],
   ['pcg_5fstate_5fsetseq_5f64',['pcg_state_setseq_64',['../structpcg__state__setseq__64.html',1,'']]],
-  ['periodiclykickworkerthread',['periodiclyKickWorkerThread',['../classipc__manager.html#a1a7bee86c42b8c6fbe607c87098c6a8e',1,'ipc_manager']]],
   ['policyid',['policyId',['../struct_u_a___anonymous_identity_token.html#ae1baa8a2ae665d82f366828d0669839a',1,'UA_AnonymousIdentityToken::policyId()'],['../struct_u_a___user_identity_token.html#a751c3a375854f73d8a0e498d87c500b2',1,'UA_UserIdentityToken::policyId()'],['../struct_u_a___user_name_identity_token.html#abfd26f3b7fe5f25329ac38e248e61140',1,'UA_UserNameIdentityToken::policyId()'],['../struct_u_a___user_token_policy.html#a8d46bbba904da3b1a7ba789580479c5f',1,'UA_UserTokenPolicy::policyId()']]],
   ['port',['port',['../struct_server_network_layer_t_c_p.html#a7d181c27ce07e8c8c29e3168f7ecbf0b',1,'ServerNetworkLayerTCP']]],
   ['prasevariablepath',['praseVariablePath',['../classxml__file__handler.html#a50e4f019be78284e9e6ab1259685dd61',1,'xml_file_handler']]],
@@ -48,8 +47,5 @@ var searchData=
   ['protocolversion',['protocolVersion',['../struct_u_a___connection_config.html#a87ba3a7575aeb17cdbe9395b562babf5',1,'UA_ConnectionConfig::protocolVersion()'],['../struct_u_a___tcp_hello_message.html#a01562c42b1b28c2549b237d63cfe3769',1,'UA_TcpHelloMessage::protocolVersion()'],['../struct_u_a___tcp_acknowledge_message.html#a3a886d3ba01b389ec9c18342c58afc8f',1,'UA_TcpAcknowledgeMessage::protocolVersion()']]],
   ['publishingenabled',['publishingEnabled',['../struct_u_a___set_publishing_mode_request.html#a0ae26ed669894c3cbde5bd8155036379',1,'UA_SetPublishingModeRequest::publishingEnabled()'],['../struct_u_a___create_subscription_request.html#a7f69cd917905c2d7991a1dd8bb1839ee',1,'UA_CreateSubscriptionRequest::publishingEnabled()']]],
   ['publishingintervallimits',['publishingIntervalLimits',['../struct_u_a___server_config.html#a762bf5494e21a1c3e816a8043def9a2a',1,'UA_ServerConfig']]],
-  ['publishtime',['publishTime',['../struct_u_a___notification_message.html#a425bb6262e0e927fbc1d1925ec2e04ff',1,'UA_NotificationMessage']]],
-  ['push_5fowned_5fnodeid',['PUSH_OWNED_NODEID',['../ua__proxies_8h.html#ab901f7a8eaf9738f24508acc209fb576',1,'ua_proxies.h']]],
-  ['push_5frdvalue_5farray_5ftype',['PUSH_RDVALUE_ARRAY_TYPE',['../ua__processvariable_8cpp.html#aa3ce746fe76c083880b5b296c298b1e1',1,'ua_processvariable.cpp']]],
-  ['push_5frdvalue_5ftype',['PUSH_RDVALUE_TYPE',['../ua__processvariable_8cpp.html#abcf680a21d9027710cb7d97490f3769a',1,'ua_processvariable.cpp']]]
+  ['publishtime',['publishTime',['../struct_u_a___notification_message.html#a425bb6262e0e927fbc1d1925ec2e04ff',1,'UA_NotificationMessage']]]
 ];

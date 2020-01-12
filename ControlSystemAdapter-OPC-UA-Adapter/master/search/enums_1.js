@@ -21,6 +21,7 @@ var searchData=
   ['ua_5fnodeattributesmask',['UA_NodeAttributesMask',['../open62541_8h.html#ae7e79f0c940af0c5e70241f3fcecdce7',1,'open62541.h']]],
   ['ua_5fnodeclass',['UA_NodeClass',['../open62541_8h.html#adf98bb5a5ac8e50eece68338a046a904',1,'open62541.h']]],
   ['ua_5fnodeidtype',['UA_NodeIdType',['../open62541_8h.html#a026f31872abc03d18b81763d94f18904',1,'open62541.h']]],
+  ['ua_5fprocessvariable_5ftype',['UA_Processvariable_Type',['../ua__processvariable_8h.html#ada28260ae499b50e637c15a2c8cde587',1,'ua_processvariable.h']]],
   ['ua_5fsecuritytokenrequesttype',['UA_SecurityTokenRequestType',['../open62541_8h.html#af833fc08fca6f97fd5d576a063ea8761',1,'open62541.h']]],
   ['ua_5fserverstate',['UA_ServerState',['../open62541_8h.html#abd79356ff2defb3fa97cf854fb38742c',1,'open62541.h']]],
   ['ua_5fsubscriptionstate',['UA_SubscriptionState',['../open62541_8c.html#a1904e9a8c1c28339708adfe2d5d66757',1,'open62541.c']]],

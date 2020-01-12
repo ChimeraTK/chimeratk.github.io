@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('classua__uaadapter.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classua__uaadapter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ua_uaadapter Class Reference</div>  </div>
@@ -98,7 +99,7 @@ $(document).ready(function(){initNavTree('classua__uaadapter.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter__inherit__graph.svg" width="331" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter__inherit__graph.svg" width="150" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -121,6 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af0901be64485243fabd977b1dfa76719"><td class="memItemLeft" align="right" valign="top"><a class="el" href="open62541_8h.html#a6cfbce46cf586a305e4c9b9455c37eea">UA_DateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#af0901be64485243fabd977b1dfa76719">getSourceTimeStamp</a> ()</td></tr>
 <tr class="memdesc:af0901be64485243fabd977b1dfa76719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the timestamp of the node.  <a href="#af0901be64485243fabd977b1dfa76719">More...</a><br /></td></tr>
 <tr class="separator:af0901be64485243fabd977b1dfa76719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a861aa2538707a4fd004530e2c0c9384c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_u_a___server.html">UA_Server</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#a861aa2538707a4fd004530e2c0c9384c">getMappedServer</a> ()</td></tr>
+<tr class="memdesc:a861aa2538707a4fd004530e2c0c9384c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the OPC UA Server instance.  <a href="#a861aa2538707a4fd004530e2c0c9384c">More...</a><br /></td></tr>
+<tr class="separator:a861aa2538707a4fd004530e2c0c9384c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a473150da4d61c689d185e88d4cd98b63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_u_a___node_id.html">UA_NodeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#a473150da4d61c689d185e88d4cd98b63">createFolderPath</a> (<a class="el" href="struct_u_a___node_id.html">UA_NodeId</a> basenodeid, vector&lt; string &gt; folderPathVector)</td></tr>
 <tr class="memdesc:a473150da4d61c689d185e88d4cd98b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a path of folders in the given parent node.  <a href="#a473150da4d61c689d185e88d4cd98b63">More...</a><br /></td></tr>
 <tr class="separator:a473150da4d61c689d185e88d4cd98b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,9 +137,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c1e27a2d1fa4f3515d55af3f952cd58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_u_a___node_id.html">UA_NodeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#a7c1e27a2d1fa4f3515d55af3f952cd58">existFolder</a> (<a class="el" href="struct_u_a___node_id.html">UA_NodeId</a> basenodeid, string folderName)</td></tr>
 <tr class="memdesc:a7c1e27a2d1fa4f3515d55af3f952cd58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a folder exist in opcua server.  <a href="#a7c1e27a2d1fa4f3515d55af3f952cd58">More...</a><br /></td></tr>
 <tr class="separator:a7c1e27a2d1fa4f3515d55af3f952cd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f8d4f0b7962231ba87ec3b00832203"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#ad9f8d4f0b7962231ba87ec3b00832203">findMappingIndex</a> (std::string varName)</td></tr>
+<tr class="memdesc:ad9f8d4f0b7962231ba87ec3b00832203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search PV by name in PV-List.  <a href="#ad9f8d4f0b7962231ba87ec3b00832203">More...</a><br /></td></tr>
+<tr class="separator:ad9f8d4f0b7962231ba87ec3b00832203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad11a51b86dccf75cf46551e1ed5a3854"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_u_a___node_id.html">UA_NodeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#ad11a51b86dccf75cf46551e1ed5a3854">enrollFolderPathFromString</a> (string path, string seperator)</td></tr>
+<tr class="memdesc:ad11a51b86dccf75cf46551e1ed5a3854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create folder structure based on the given path.  <a href="#ad11a51b86dccf75cf46551e1ed5a3854">More...</a><br /></td></tr>
+<tr class="separator:ad11a51b86dccf75cf46551e1ed5a3854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab545ab2829045d6f140dd1a6165200ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#ab545ab2829045d6f140dd1a6165200ab">addVariable</a> (string name, boost::shared_ptr&lt; ControlSystemPVManager &gt; <a class="el" href="csa__opcua__application_8cpp.html#add976e3e567316f346a38deea3691cb1">csManager</a>)</td></tr>
 <tr class="memdesc:ab545ab2829045d6f140dd1a6165200ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a folder ath exist in opcua server.  <a href="#ab545ab2829045d6f140dd1a6165200ab">More...</a><br /></td></tr>
 <tr class="separator:ab545ab2829045d6f140dd1a6165200ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd2d3846c18debb7da8526d0b89e3b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#a1cd2d3846c18debb7da8526d0b89e3b0">implicitVarMapping</a> (std::string varName, boost::shared_ptr&lt; ControlSystemPVManager &gt; <a class="el" href="csa__opcua__application_8cpp.html#add976e3e567316f346a38deea3691cb1">csManager</a>)</td></tr>
+<tr class="memdesc:a1cd2d3846c18debb7da8526d0b89e3b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start implicit mapping process.  <a href="#a1cd2d3846c18debb7da8526d0b89e3b0">More...</a><br /></td></tr>
+<tr class="separator:a1cd2d3846c18debb7da8526d0b89e3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65bd1ee16f65bb277257c6f69de0beb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#a65bd1ee16f65bb277257c6f69de0beb3">applyMapping</a> (boost::shared_ptr&lt; ControlSystemPVManager &gt; <a class="el" href="csa__opcua__application_8cpp.html#add976e3e567316f346a38deea3691cb1">csManager</a>)</td></tr>
+<tr class="memdesc:a65bd1ee16f65bb277257c6f69de0beb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read mapping file and apply the contained folders, additional variables and pv mappings.  <a href="#a65bd1ee16f65bb277257c6f69de0beb3">More...</a><br /></td></tr>
+<tr class="separator:a65bd1ee16f65bb277257c6f69de0beb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2457f02d1d25e9306f1d00eadb8a9328"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#a2457f02d1d25e9306f1d00eadb8a9328">explicitVarMapping</a> (boost::shared_ptr&lt; ControlSystemPVManager &gt; <a class="el" href="csa__opcua__application_8cpp.html#add976e3e567316f346a38deea3691cb1">csManager</a>)</td></tr>
+<tr class="memdesc:a2457f02d1d25e9306f1d00eadb8a9328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read mapping file and apply contained PV mappings.  <a href="#a2457f02d1d25e9306f1d00eadb8a9328">More...</a><br /></td></tr>
+<tr class="separator:a2457f02d1d25e9306f1d00eadb8a9328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210c622e5ee07cf1ab11be7c8ef08c62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#a210c622e5ee07cf1ab11be7c8ef08c62">addAdditionalVariables</a> ()</td></tr>
+<tr class="memdesc:a210c622e5ee07cf1ab11be7c8ef08c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read mapping file and add contained additional variables to the server.  <a href="#a210c622e5ee07cf1ab11be7c8ef08c62">More...</a><br /></td></tr>
+<tr class="separator:a210c622e5ee07cf1ab11be7c8ef08c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd11f1e8f644a3a78fc6019ffcff414"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#a6fd11f1e8f644a3a78fc6019ffcff414">buildFolderStructure</a> (boost::shared_ptr&lt; ControlSystemPVManager &gt; <a class="el" href="csa__opcua__application_8cpp.html#add976e3e567316f346a38deea3691cb1">csManager</a>)</td></tr>
+<tr class="memdesc:a6fd11f1e8f644a3a78fc6019ffcff414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read mapping file and and add contained folders to the server.  <a href="#a6fd11f1e8f644a3a78fc6019ffcff414">More...</a><br /></td></tr>
+<tr class="separator:a6fd11f1e8f644a3a78fc6019ffcff414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508930e4f286fb9b888da875707888f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#a508930e4f286fb9b888da875707888f7">deepCopyHierarchicalLayer</a> (boost::shared_ptr&lt; ControlSystemPVManager &gt; <a class="el" href="csa__opcua__application_8cpp.html#add976e3e567316f346a38deea3691cb1">csManager</a>, <a class="el" href="struct_u_a___node_id.html">UA_NodeId</a> layer, <a class="el" href="struct_u_a___node_id.html">UA_NodeId</a> target)</td></tr>
+<tr class="memdesc:a508930e4f286fb9b888da875707888f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy (recursively) the content of a folder to a new location.  <a href="#a508930e4f286fb9b888da875707888f7">More...</a><br /></td></tr>
+<tr class="separator:a508930e4f286fb9b888da875707888f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5983c3a8b425e50cf1e2acbc354b2580"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_u_a___node_id.html">UA_NodeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#a5983c3a8b425e50cf1e2acbc354b2580">getOwnNodeId</a> ()</td></tr>
 <tr class="memdesc:a5983c3a8b425e50cf1e2acbc354b2580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode that returns the node id of the instanced class.  <a href="#a5983c3a8b425e50cf1e2acbc354b2580">More...</a><br /></td></tr>
 <tr class="separator:a5983c3a8b425e50cf1e2acbc354b2580"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,57 +182,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a221f466bc35e7a18779d02748dc8ae"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#a7a221f466bc35e7a18779d02748dc8ae">getAllNotMappableVariablesNames</a> ()</td></tr>
 <tr class="memdesc:a7a221f466bc35e7a18779d02748dc8ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode to get all names from all potential VarableNodes from XML-Mappingfile which could not allocated.  <a href="#a7a221f466bc35e7a18779d02748dc8ae">More...</a><br /></td></tr>
 <tr class="separator:a7a221f466bc35e7a18779d02748dc8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classipc__managed__object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classipc__managed__object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classipc__managed__object.html">ipc_managed_object</a></td></tr>
-<tr class="memitem:af9a18064b24467802c94d35ecac2d59d inherit pub_methods_classipc__managed__object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#af9a18064b24467802c94d35ecac2d59d">ipc_managed_object</a> ()</td></tr>
-<tr class="memdesc:af9a18064b24467802c94d35ecac2d59d inherit pub_methods_classipc__managed__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classipc__managed__object.html" title="This abstract class manages the given object in a seperate threat and controlls them. ">ipc_managed_object</a>.  <a href="classipc__managed__object.html#af9a18064b24467802c94d35ecac2d59d">More...</a><br /></td></tr>
-<tr class="separator:af9a18064b24467802c94d35ecac2d59d inherit pub_methods_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedb2d563f6041bba464f22f80229ba85 inherit pub_methods_classipc__managed__object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#aedb2d563f6041bba464f22f80229ba85">ipc_managed_object</a> (uint32_t <a class="el" href="classipc__managed__object.html#aa9ffe1c73c4b578465972f24cdf58c5c">ipc_id</a>)</td></tr>
-<tr class="memdesc:aedb2d563f6041bba464f22f80229ba85 inherit pub_methods_classipc__managed__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classipc__managed__object.html" title="This abstract class manages the given object in a seperate threat and controlls them. ">ipc_managed_object</a>.  <a href="classipc__managed__object.html#aedb2d563f6041bba464f22f80229ba85">More...</a><br /></td></tr>
-<tr class="separator:aedb2d563f6041bba464f22f80229ba85 inherit pub_methods_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad97a5e203a7bc1fa7f56b9e608098f5a inherit pub_methods_classipc__managed__object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#ad97a5e203a7bc1fa7f56b9e608098f5a">~ipc_managed_object</a> ()</td></tr>
-<tr class="memdesc:ad97a5e203a7bc1fa7f56b9e608098f5a inherit pub_methods_classipc__managed__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor to stop the running thread.  <a href="classipc__managed__object.html#ad97a5e203a7bc1fa7f56b9e608098f5a">More...</a><br /></td></tr>
-<tr class="separator:ad97a5e203a7bc1fa7f56b9e608098f5a inherit pub_methods_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0b4b4e15980a41cc100ea3c3fe32043 inherit pub_methods_classipc__managed__object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classipc__manager.html">ipc_manager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#aa0b4b4e15980a41cc100ea3c3fe32043">getIpcManager</a> ()</td></tr>
-<tr class="memdesc:aa0b4b4e15980a41cc100ea3c3fe32043 inherit pub_methods_classipc__managed__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter methode which rurn the setted pointer to the assigned manager.  <a href="classipc__managed__object.html#aa0b4b4e15980a41cc100ea3c3fe32043">More...</a><br /></td></tr>
-<tr class="separator:aa0b4b4e15980a41cc100ea3c3fe32043 inherit pub_methods_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97d6ecf0cf7fc83a94dfce3775f17d22 inherit pub_methods_classipc__managed__object"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#a97d6ecf0cf7fc83a94dfce3775f17d22">getIpcId</a> ()</td></tr>
-<tr class="memdesc:a97d6ecf0cf7fc83a94dfce3775f17d22 inherit pub_methods_classipc__managed__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter mehtode which returns the setted ipc id.  <a href="classipc__managed__object.html#a97d6ecf0cf7fc83a94dfce3775f17d22">More...</a><br /></td></tr>
-<tr class="separator:a97d6ecf0cf7fc83a94dfce3775f17d22 inherit pub_methods_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a813c350e3f3f0044a048826d37dfe2d1 inherit pub_methods_classipc__managed__object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#a813c350e3f3f0044a048826d37dfe2d1">setIpcId</a> (uint32_t <a class="el" href="classipc__managed__object.html#aa9ffe1c73c4b578465972f24cdf58c5c">ipc_id</a>)</td></tr>
-<tr class="memdesc:a813c350e3f3f0044a048826d37dfe2d1 inherit pub_methods_classipc__managed__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new unique ipc id.  <a href="classipc__managed__object.html#a813c350e3f3f0044a048826d37dfe2d1">More...</a><br /></td></tr>
-<tr class="separator:a813c350e3f3f0044a048826d37dfe2d1 inherit pub_methods_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac082c3b30a5ca06f05dc554b7781e439 inherit pub_methods_classipc__managed__object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#ac082c3b30a5ca06f05dc554b7781e439">isManaged</a> ()</td></tr>
-<tr class="memdesc:ac082c3b30a5ca06f05dc554b7781e439 inherit pub_methods_classipc__managed__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">This methode checks if any manager is related to this object.  <a href="classipc__managed__object.html#ac082c3b30a5ca06f05dc554b7781e439">More...</a><br /></td></tr>
-<tr class="separator:ac082c3b30a5ca06f05dc554b7781e439 inherit pub_methods_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad92565a70f23411483c483cd33e783e2 inherit pub_methods_classipc__managed__object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#ad92565a70f23411483c483cd33e783e2">assignManager</a> (<a class="el" href="classipc__manager.html">ipc_manager</a> *<a class="el" href="classipc__managed__object.html#afe33781664fbd8ff1acb859d4c7e1896">manager</a>)</td></tr>
-<tr class="memdesc:ad92565a70f23411483c483cd33e783e2 inherit pub_methods_classipc__managed__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigne a specific <a class="el" href="classipc__manager.html" title="This class managed object who are assigned to this class. ">ipc_manager</a> to this ipc object.  <a href="classipc__managed__object.html#ad92565a70f23411483c483cd33e783e2">More...</a><br /></td></tr>
-<tr class="separator:ad92565a70f23411483c483cd33e783e2 inherit pub_methods_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdce3666cab13f45e13cfab5af863b0b inherit pub_methods_classipc__managed__object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#acdce3666cab13f45e13cfab5af863b0b">taskRunningAttached</a> ()</td></tr>
-<tr class="memdesc:acdce3666cab13f45e13cfab5af863b0b inherit pub_methods_classipc__managed__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join the thread.  <a href="classipc__managed__object.html#acdce3666cab13f45e13cfab5af863b0b">More...</a><br /></td></tr>
-<tr class="separator:acdce3666cab13f45e13cfab5af863b0b inherit pub_methods_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a5394ffc1ad2d1032eed0ce5ea877ed inherit pub_methods_classipc__managed__object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#a6a5394ffc1ad2d1032eed0ce5ea877ed">isRunning</a> ()</td></tr>
-<tr class="memdesc:a6a5394ffc1ad2d1032eed0ce5ea877ed inherit pub_methods_classipc__managed__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the thread is running.  <a href="classipc__managed__object.html#a6a5394ffc1ad2d1032eed0ce5ea877ed">More...</a><br /></td></tr>
-<tr class="separator:a6a5394ffc1ad2d1032eed0ce5ea877ed inherit pub_methods_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ac7a6b14a8b031dd618a656378f756e inherit pub_methods_classipc__managed__object"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#a0ac7a6b14a8b031dd618a656378f756e">doStop</a> ()</td></tr>
-<tr class="memdesc:a0ac7a6b14a8b031dd618a656378f756e inherit pub_methods_classipc__managed__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the thread.  <a href="classipc__managed__object.html#a0ac7a6b14a8b031dd618a656378f756e">More...</a><br /></td></tr>
-<tr class="separator:a0ac7a6b14a8b031dd618a656378f756e inherit pub_methods_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc30b2e02ca3efc44dd2925160146f2d inherit pub_methods_classipc__managed__object"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#afc30b2e02ca3efc44dd2925160146f2d">doStart</a> ()</td></tr>
-<tr class="memdesc:afc30b2e02ca3efc44dd2925160146f2d inherit pub_methods_classipc__managed__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the thread.  <a href="classipc__managed__object.html#afc30b2e02ca3efc44dd2925160146f2d">More...</a><br /></td></tr>
-<tr class="separator:afc30b2e02ca3efc44dd2925160146f2d inherit pub_methods_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_classipc__managed__object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classipc__managed__object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classipc__managed__object.html">ipc_managed_object</a></td></tr>
-<tr class="memitem:aa9ffe1c73c4b578465972f24cdf58c5c inherit pro_attribs_classipc__managed__object"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#aa9ffe1c73c4b578465972f24cdf58c5c">ipc_id</a></td></tr>
-<tr class="separator:aa9ffe1c73c4b578465972f24cdf58c5c inherit pro_attribs_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a8f5f27befc6032130cf561ac5cf1a inherit pro_attribs_classipc__managed__object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#ab3a8f5f27befc6032130cf561ac5cf1a">thread_run</a></td></tr>
-<tr class="separator:ab3a8f5f27befc6032130cf561ac5cf1a inherit pro_attribs_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe33781664fbd8ff1acb859d4c7e1896 inherit pro_attribs_classipc__managed__object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classipc__manager.html">ipc_manager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#afe33781664fbd8ff1acb859d4c7e1896">manager</a></td></tr>
-<tr class="separator:afe33781664fbd8ff1acb859d4c7e1896 inherit pro_attribs_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa70b5d6ff7585ebbe6b6728150b7611d inherit pro_attribs_classipc__managed__object"><td class="memItemLeft" align="right" valign="top">std::thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#aa70b5d6ff7585ebbe6b6728150b7611d">threadTask</a></td></tr>
-<tr class="separator:aa70b5d6ff7585ebbe6b6728150b7611d inherit pro_attribs_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6593c080a1c45772c7ca0f05d7cf12a3 inherit pro_attribs_classipc__managed__object"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipc__managed__object.html#a6593c080a1c45772c7ca0f05d7cf12a3">mtx_threadOperations</a></td></tr>
-<tr class="separator:a6593c080a1c45772c7ca0f05d7cf12a3 inherit pro_attribs_classipc__managed__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad9e41e2c6176bf24563bb1fa88c29393"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__uaadapter.html#ad9e41e2c6176bf24563bb1fa88c29393">running</a></td></tr>
+<tr class="separator:ad9e41e2c6176bf24563bb1fa88c29393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class provide the opcua server and manage the variable mapping. </p>
@@ -241,13 +223,13 @@ Julian Rahm</dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00048">48</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00049">49</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_ac5eed027bfcbb81d06740f8b6aa62f97_cgraph.svg" width="100%" height="466"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_ac5eed027bfcbb81d06740f8b6aa62f97_cgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -271,13 +253,13 @@ Julian Rahm</dd></dl>
 <p>Destrructor of the class. </p>
 <p>It stop the server and delete the managed object. </p>
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00061">61</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00060">60</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a850d40c9b65e5140e5f72678f0b18e28_cgraph.svg" width="100%" height="533"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a850d40c9b65e5140e5f72678f0b18e28_cgraph.svg" width="100%" height="582"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -292,6 +274,43 @@ Julian Rahm</dd></dl>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a210c622e5ee07cf1ab11be7c8ef08c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a210c622e5ee07cf1ab11be7c8ef08c62">&#9670;&nbsp;</a></span>addAdditionalVariables()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ua_uaadapter::addAdditionalVariables </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read mapping file and add contained additional variables to the server. </p>
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00849">849</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a210c622e5ee07cf1ab11be7c8ef08c62_cgraph.svg" width="483" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a210c622e5ee07cf1ab11be7c8ef08c62_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
 <a id="ab545ab2829045d6f140dd1a6165200ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab545ab2829045d6f140dd1a6165200ab">&#9670;&nbsp;</a></span>addVariable()</h2>
 
@@ -301,8 +320,8 @@ Julian Rahm</dd></dl>
         <tr>
           <td class="memname">void ua_uaadapter::addVariable </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>varName</em>, </td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -327,21 +346,92 @@ Julian Rahm</dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00215">215</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_ab545ab2829045d6f140dd1a6165200ab_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<a id="a65bd1ee16f65bb277257c6f69de0beb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65bd1ee16f65bb277257c6f69de0beb3">&#9670;&nbsp;</a></span>applyMapping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ua_uaadapter::applyMapping </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; ControlSystemPVManager &gt;&#160;</td>
+          <td class="paramname"><em>csManager</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read mapping file and apply the contained folders, additional variables and pv mappings. </p>
+<p>Order -&gt; Folder (without source) -&gt; Folder (with source) -&gt; additional variables -&gt; PV mappings</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">csManager</td><td>control system manager </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00222">222</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_ab545ab2829045d6f140dd1a6165200ab_icgraph.svg" width="410" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a65bd1ee16f65bb277257c6f69de0beb3_cgraph.svg" width="100%" height="481"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a65bd1ee16f65bb277257c6f69de0beb3_icgraph.svg" width="424" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a6fd11f1e8f644a3a78fc6019ffcff414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fd11f1e8f644a3a78fc6019ffcff414">&#9670;&nbsp;</a></span>buildFolderStructure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ua_uaadapter::buildFolderStructure </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; ControlSystemPVManager &gt;&#160;</td>
+          <td class="paramname"><em>csManager</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read mapping file and and add contained folders to the server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">csManager</td><td>control system manager </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00395">395</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a6fd11f1e8f644a3a78fc6019ffcff414_cgraph.svg" width="466" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a6fd11f1e8f644a3a78fc6019ffcff414_icgraph.svg" width="663" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -389,21 +479,21 @@ Julian Rahm</dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00531">531</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l01259">1259</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_ac10b2e896cacbee6c9f75727520be620_cgraph.svg" width="100%" height="385"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_ac10b2e896cacbee6c9f75727520be620_icgraph.svg" width="100%" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_ac10b2e896cacbee6c9f75727520be620_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -444,21 +534,123 @@ Julian Rahm</dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00487">487</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l01212">1212</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a473150da4d61c689d185e88d4cd98b63_cgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a473150da4d61c689d185e88d4cd98b63_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a508930e4f286fb9b888da875707888f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a508930e4f286fb9b888da875707888f7">&#9670;&nbsp;</a></span>deepCopyHierarchicalLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ua_uaadapter::deepCopyHierarchicalLayer </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; ControlSystemPVManager &gt;&#160;</td>
+          <td class="paramname"><em>csManager</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_u_a___node_id.html">UA_NodeId</a>&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_u_a___node_id.html">UA_NodeId</a>&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy (recursively) the content of a folder to a new location. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">csManager</td><td>control system manager </td></tr>
+    <tr><td class="paramname">layer</td><td>source folder </td></tr>
+    <tr><td class="paramname">target</td><td>destination folder </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00334">334</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad11a51b86dccf75cf46551e1ed5a3854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad11a51b86dccf75cf46551e1ed5a3854">&#9670;&nbsp;</a></span>enrollFolderPathFromString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_u_a___node_id.html">UA_NodeId</a> ua_uaadapter::enrollFolderPathFromString </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>seperator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create folder structure based on the given path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The complete path </td></tr>
+    <tr><td class="paramname">seperator</td><td>Delimiters with are used to split the path</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nodeId of the last created folder (last part of path) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00300">300</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_ad11a51b86dccf75cf46551e1ed5a3854_cgraph.svg" width="100%" height="423"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_ad11a51b86dccf75cf46551e1ed5a3854_icgraph.svg" width="647" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -499,21 +691,21 @@ Julian Rahm</dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00477">477</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l01201">1201</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a7c1e27a2d1fa4f3515d55af3f952cd58_cgraph.svg" width="564" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a7c1e27a2d1fa4f3515d55af3f952cd58_icgraph.svg" width="100%" height="435"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a7c1e27a2d1fa4f3515d55af3f952cd58_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -554,23 +746,94 @@ Julian Rahm</dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00466">466</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l01190">1190</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a9fc23375179ed6c20b8455b3f846eab0_cgraph.svg" width="100%" height="385"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a9fc23375179ed6c20b8455b3f846eab0_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
+
+</div>
+</div>
+<a id="a2457f02d1d25e9306f1d00eadb8a9328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2457f02d1d25e9306f1d00eadb8a9328">&#9670;&nbsp;</a></span>explicitVarMapping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ua_uaadapter::explicitVarMapping </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; ControlSystemPVManager &gt;&#160;</td>
+          <td class="paramname"><em>csManager</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read mapping file and apply contained PV mappings. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">csManager</td><td>control system manager </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00600">600</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a2457f02d1d25e9306f1d00eadb8a9328_cgraph.svg" width="463" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a2457f02d1d25e9306f1d00eadb8a9328_icgraph.svg" width="660" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ad9f8d4f0b7962231ba87ec3b00832203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9f8d4f0b7962231ba87ec3b00832203">&#9670;&nbsp;</a></span>findMappingIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int32_t&gt; ua_uaadapter::findMappingIndex </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>varName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Search PV by name in PV-List. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">varName</td><td>The name of the seached pv</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>index of the matching pv's or empty if the pv not exists </dd></dl>
 
 </div>
 </div>
@@ -592,23 +855,45 @@ Julian Rahm</dd></dl>
 <p>Methode to get all names from all potential VarableNodes from XML-Mappingfile which could not allocated. </p>
 <dl class="section return"><dt>Returns</dt><dd>vector&lt;string&gt; notMappableVariablesNames List with all VariableNodes which could not allocated a Varaible in PV-Manager. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00550">550</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l01275">1275</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a7a221f466bc35e7a18779d02748dc8ae_cgraph.svg" width="100%" height="435"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a7a221f466bc35e7a18779d02748dc8ae_icgraph.svg" width="456" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+
+</div>
+</div>
+<a id="a861aa2538707a4fd004530e2c0c9384c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a861aa2538707a4fd004530e2c0c9384c">&#9670;&nbsp;</a></span>getMappedServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_u_a___server.html">UA_Server</a> * ua_uaadapter::getMappedServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the OPC UA Server instance. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_u_a___server.html">UA_Server</a> * </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l01305">1305</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -630,7 +915,7 @@ Julian Rahm</dd></dl>
 <p>Methode that returns the node id of the instanced class. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_u_a___node_id.html">UA_NodeId</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00462">462</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l01186">1186</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
 
 </div>
 </div>
@@ -662,12 +947,12 @@ Julian Rahm</dd></dl>
 
 <p>Implements <a class="el" href="classua__mapped__class.html#a72e312c7bae0bdedd012da15bf2a0ac5">ua_mapped_class</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00575">575</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l01301">1301</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_af0901be64485243fabd977b1dfa76719_cgraph.svg" width="423" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -692,21 +977,76 @@ Julian Rahm</dd></dl>
 <p>Methode that returns all &lt;ua_processvariable&gt; of the class. </p>
 <dl class="section return"><dt>Returns</dt><dd>A vector of all &lt;ua_processvariable&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00407">407</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l01121">1121</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a29d02f6eaea49e043ed8fc95fb893b62_cgraph.svg" width="574" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a29d02f6eaea49e043ed8fc95fb893b62_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a1cd2d3846c18debb7da8526d0b89e3b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cd2d3846c18debb7da8526d0b89e3b0">&#9670;&nbsp;</a></span>implicitVarMapping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ua_uaadapter::implicitVarMapping </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>varName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::shared_ptr&lt; ControlSystemPVManager &gt;&#160;</td>
+          <td class="paramname"><em>csManager</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start implicit mapping process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">basenodeId</td><td>Node id of the parent node </td></tr>
+    <tr><td class="paramname">folderPathVector</td><td>Every single string is a folder name, the path ist checked in the given order </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00313">313</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a1cd2d3846c18debb7da8526d0b89e3b0_cgraph.svg" width="100%" height="540"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a1cd2d3846c18debb7da8526d0b89e3b0_icgraph.svg" width="403" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -729,24 +1069,6 @@ Julian Rahm</dd></dl>
 
 <p>This Methode reads the additionaNode-tag from the given &lt;variableMap.xml&gt; </p>
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00170">170</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a69c513fe9fcae8c7327e7ad3a1256150_cgraph.svg" width="100%" height="466"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a69c513fe9fcae8c7327e7ad3a1256150_icgraph.svg" width="482" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
 </div>
 </div>
 <a id="a12912b44b243616817f23748788514eb"></a>
@@ -767,19 +1089,19 @@ Julian Rahm</dd></dl>
 <p>This Methode reads the config-tag form the given &lt;variableMap.xml&gt;. </p>
 
 <p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00104">104</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
-<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a12912b44b243616817f23748788514eb_cgraph.svg" width="464" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a12912b44b243616817f23748788514eb_cgraph.svg" width="464" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-31-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_a12912b44b243616817f23748788514eb_icgraph.svg" width="456" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -791,9 +1113,6 @@ Julian Rahm</dd></dl>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ua_uaadapter::workerThread </td>
@@ -802,26 +1121,44 @@ Julian Rahm</dd></dl>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Create and start a thread for the opcua server instance. </p>
 
-<p>Implements <a class="el" href="classipc__managed__object.html#ae7e2e7d218f5e8b08e9af61baa695132">ipc_managed_object</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00260">260</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+<div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-32-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_aa47b63552c9e6f53aede19be8c69d819_cgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-33-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_aa47b63552c9e6f53aede19be8c69d819_icgraph.svg" width="423" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00197">197</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
-<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__uaadapter_aa47b63552c9e6f53aede19be8c69d819_cgraph.svg" width="100%" height="454"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad9e41e2c6176bf24563bb1fa88c29393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9e41e2c6176bf24563bb1fa88c29393">&#9670;&nbsp;</a></span>running</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ua_uaadapter::running</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00134">134</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
 
 </div>
 </div>
@@ -835,7 +1172,7 @@ Julian Rahm</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classua__uaadapter.html">ua_uaadapter</a></li>
-    <li class="footer">Generated on Tue Nov 5 2019 04:53:53 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <li class="footer">Generated on Sun Jan 12 2020 04:53:56 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

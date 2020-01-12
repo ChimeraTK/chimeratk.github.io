@@ -1,8 +1,6 @@
 var searchData=
 [
   ['_7ecsa_5fopcua_5fadapter',['~csa_opcua_adapter',['../classcsa__opcua__adapter.html#ae134ec0a29d6ea00bc0119954769e8ab',1,'csa_opcua_adapter']]],
-  ['_7eipc_5fmanaged_5fobject',['~ipc_managed_object',['../classipc__managed__object.html#ad97a5e203a7bc1fa7f56b9e608098f5a',1,'ipc_managed_object']]],
-  ['_7eipc_5fmanager',['~ipc_manager',['../classipc__manager.html#a8888d178d0feedc8b60e7ac2ffbc0e7a',1,'ipc_manager']]],
   ['_7emyapp',['~MyApp',['../struct_my_app.html#ac3f9f12e37dee82e7c84c37816e9d1da',1,'MyApp']]],
   ['_7eruntime_5fvalue_5fgenerator',['~runtime_value_generator',['../classruntime__value__generator.html#a192a29d42abc642591c62b35de3bfd3b',1,'runtime_value_generator']]],
   ['_7eua_5fadditionalvariable',['~ua_additionalvariable',['../classua__additionalvariable.html#a462d4ca531b557c34817e92d5c52acf5',1,'ua_additionalvariable']]],

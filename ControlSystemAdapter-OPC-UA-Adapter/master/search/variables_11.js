@@ -53,5 +53,6 @@ var searchData=
   ['revisedqueuesize',['revisedQueueSize',['../struct_u_a___monitored_item_modify_result.html#a8f655652f5ef09f5356bf0f45afe6ac5',1,'UA_MonitoredItemModifyResult::revisedQueueSize()'],['../struct_u_a___monitored_item_create_result.html#a3fb01b6fae3f70b54093c5af22dad4e2',1,'UA_MonitoredItemCreateResult::revisedQueueSize()']]],
   ['revisedsamplinginterval',['revisedSamplingInterval',['../struct_u_a___monitored_item_modify_result.html#aef12c4e08c82287bdbe18cf3e719dbcc',1,'UA_MonitoredItemModifyResult::revisedSamplingInterval()'],['../struct_u_a___monitored_item_create_result.html#ace4f6884bd368b9a956d2c88fb916035',1,'UA_MonitoredItemCreateResult::revisedSamplingInterval()']]],
   ['revisedsessiontimeout',['revisedSessionTimeout',['../struct_u_a___create_session_response.html#a409e82281a55432c783332a176165789',1,'UA_CreateSessionResponse']]],
-  ['rootfolder',['rootFolder',['../struct_server_config.html#ab022f19cfa3f310e7488519b91924f7f',1,'ServerConfig']]]
+  ['rootfolder',['rootFolder',['../struct_server_config.html#ab022f19cfa3f310e7488519b91924f7f',1,'ServerConfig']]],
+  ['running',['running',['../classua__uaadapter.html#ad9e41e2c6176bf24563bb1fa88c29393',1,'ua_uaadapter']]]
 ];

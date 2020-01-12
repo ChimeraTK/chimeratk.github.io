@@ -148,17 +148,11 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getInverseReferences()
 : <a class="el" href="classua__node__types_1_1opcua__node__t.html#a06713ebc3bff11a5c4be281ecf9af96f">ua_node_types.opcua_node_t</a>
 </li>
-<li>getIpcId()
-: <a class="el" href="classipc__managed__object.html#a97d6ecf0cf7fc83a94dfce3775f17d22">ipc_managed_object</a>
-</li>
-<li>getIPCManager()
-: <a class="el" href="classcsa__opcua__adapter.html#a7aa5d56dd9d60552abd38208ec6e8b81">csa_opcua_adapter</a>
-</li>
-<li>getIpcManager()
-: <a class="el" href="classipc__managed__object.html#aa0b4b4e15980a41cc100ea3c3fe32043">ipc_managed_object</a>
-</li>
 <li>getJobs
 : <a class="el" href="struct_u_a___server_network_layer.html#abc83c9d9cf623ce0452bf37452444953">UA_ServerNetworkLayer</a>
+</li>
+<li>getMappedServer()
+: <a class="el" href="classua__uaadapter.html#a861aa2538707a4fd004530e2c0c9384c">ua_uaadapter</a>
 </li>
 <li>getName()
 : <a class="el" href="classua__processvariable.html#ac6473898e6fc83dddd15d088a9a37dd9">ua_processvariable</a>
@@ -189,9 +183,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getNumericRepresentation()
 : <a class="el" href="classua__builtin__types_1_1opcua__value__t.html#af0917a7b13d606d122f502995cc48a29">ua_builtin_types.opcua_value_t</a>
-</li>
-<li>getObjectById()
-: <a class="el" href="classipc__manager.html#afc8fa142a6ef2c0565d14053a1553061">ipc_manager</a>
 </li>
 <li>getOwnNodeId()
 : <a class="el" href="classua__processvariable.html#a3fa602a9d9036b423ea54f9b9b8544bd">ua_processvariable</a>
@@ -233,9 +224,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getUAAdapter()
 : <a class="el" href="classcsa__opcua__adapter.html#a5aa0336125f84e40a40e4e3a975c5890">csa_opcua_adapter</a>
 </li>
-<li>getUniqueIpcId()
-: <a class="el" href="classipc__manager.html#aa8d3633a919834bbf04f00bcf0ef44f4">ipc_manager</a>
-</li>
 <li>getUnlinkedPointers()
 : <a class="el" href="classua__namespace_1_1opcua__namespace.html#a00e2fac780b3d5f62b6d24d15f1f0562">ua_namespace.opcua_namespace</a>
 </li>
@@ -244,6 +232,42 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getValue()
 : <a class="el" href="classua__additionalvariable.html#a40952d0b0dc30d95e39fdf07d243d446">ua_additionalvariable</a>
+</li>
+<li>getValue_bool()
+: <a class="el" href="classua__processvariable.html#aee0bad30c33c585d2c13011189b377b5">ua_processvariable</a>
+</li>
+<li>getValue_double()
+: <a class="el" href="classua__processvariable.html#aad550158cdb614e545d5ea0ecc26d498">ua_processvariable</a>
+</li>
+<li>getValue_float()
+: <a class="el" href="classua__processvariable.html#af2e2259ab7a15c0aa200cde0c886a9f5">ua_processvariable</a>
+</li>
+<li>getValue_int16()
+: <a class="el" href="classua__processvariable.html#a9338d47cfcf7cba47ab9200e87d27229">ua_processvariable</a>
+</li>
+<li>getValue_int32()
+: <a class="el" href="classua__processvariable.html#a81912eb3d59f045032d2d212df72332e">ua_processvariable</a>
+</li>
+<li>getValue_int64()
+: <a class="el" href="classua__processvariable.html#ad09703415f27c38293236596e905a0ad">ua_processvariable</a>
+</li>
+<li>getValue_int8()
+: <a class="el" href="classua__processvariable.html#a29af5e947821cadf9926b99645ee8e02">ua_processvariable</a>
+</li>
+<li>getValue_string()
+: <a class="el" href="classua__processvariable.html#a70fab62f72828e2a63811f464d2ffb80">ua_processvariable</a>
+</li>
+<li>getValue_uint16()
+: <a class="el" href="classua__processvariable.html#a95ca52cf8c45217fbf67bebfe3538d1a">ua_processvariable</a>
+</li>
+<li>getValue_uint32()
+: <a class="el" href="classua__processvariable.html#ad6321cb2ee3404e5e01b7fae89132aeb">ua_processvariable</a>
+</li>
+<li>getValue_uint64()
+: <a class="el" href="classua__processvariable.html#abc3f902ba0f6425b9b7bab9c0c525581">ua_processvariable</a>
+</li>
+<li>getValue_uint8()
+: <a class="el" href="classua__processvariable.html#a00cc982a09434d6f53f8a7ef138801e3">ua_processvariable</a>
 </li>
 <li>getValueFieldByAlias()
 : <a class="el" href="classua__builtin__types_1_1opcua__value__t.html#a252a955d45624a65e3e7d20b78795109">ua_builtin_types.opcua_value_t</a>
@@ -260,7 +284,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 5 2019 04:53:53 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <li class="footer">Generated on Sun Jan 12 2020 04:53:56 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

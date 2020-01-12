@@ -40,24 +40,23 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classua__builtin__types_1_1opcua__value__t.html#a209b06349410e91357754020e6fccfc9",
-"csa__config_8h_source.html",
-"open62541_8c.html#a06dc3ec388f93ee9aab177e3b50ca7e4",
-"open62541_8c.html#a8e6cf200d9f2a303da8c0164cb482511",
-"open62541_8h.html#a026f31872abc03d18b81763d94f18904aa842614726f18dd53d866e4ade15b3df",
-"open62541_8h.html#a205a5a29ad58e0c08b74bbc0ccc77396",
-"open62541_8h.html#a3ffb8ec6239252a2d221b8ac08b5918b",
-"open62541_8h.html#a5c1511a7cf9801c3c1be6091f5167801",
-"open62541_8h.html#a7c968193e7eae3897e7206a458abc8ca",
-"open62541_8h.html#a9d83446ea6eebd00b51e3228c2a42257",
-"open62541_8h.html#abf73bb55f05a5b2c2dd5587fa26973e3",
-"open62541_8h.html#adf98bb5a5ac8e50eece68338a046a904ae82d2d07175a2fdb72878b3bcbebb3e9",
-"open62541_8h.html#afd4811df358e2f7a47996fe85f6cc0e0",
-"struct_u_a___close_session_request.html",
-"struct_u_a___find_servers_request.html#a75f9b48ddffe7f22498912921fec7458",
-"struct_u_a___read_request.html#a358afac8c854f024268b0107f9123535",
-"struct_u_a___user_name_identity_token.html#ad0c783bc17673f18f1166fc7b7ab3ad2",
-"ua__proxies__callback_8h.html#a88cf5093ff6d09bbaf1c905f27109254"
+"classua__mapped__class.html#aa2f828267fc1b8a983f2afdb1e4fd687",
+"csa__config_8h.html#aa49aa7af0120bc7e4a01bf3d44f09cf4",
+"open62541_8c.html#a090ecfd3014f097d00c3e8b7670717a2",
+"open62541_8c.html#a8edf8400d58e84e116bb274c09f3668b",
+"open62541_8h.html#a02cd44fd1ca29b5356b7d9b7caa0bd26",
+"open62541_8h.html#a20893be028379dbd6ba037dbad90b5aa",
+"open62541_8h.html#a40233cdc81579e48dd05549d79e39224",
+"open62541_8h.html#a5c51bb9a81b8b234a2878097c5ed8f2e",
+"open62541_8h.html#a7d89d1cc478b5e13c6ddf239a375ab49",
+"open62541_8h.html#a9ea0deb372a0bffe80959493f29a3019",
+"open62541_8h.html#abfa6841034c1a1aeaae1c21c450be2c5",
+"open62541_8h.html#ae01b534b857b5c6e201a3aee41b481d0",
+"open62541_8h.html#afe0c2c6bbf0171810805bce0525f6350",
+"struct_u_a___close_session_response.html",
+"struct_u_a___find_servers_request.html#adb911f9f408ef4fe497b79b6fd39e4c9",
+"struct_u_a___read_response.html#a78da5d61eb220bb11bf77ad592e95014",
+"struct_u_a___user_token_policy.html#aef196a548f7401a7dd5cbf15d3eef22c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

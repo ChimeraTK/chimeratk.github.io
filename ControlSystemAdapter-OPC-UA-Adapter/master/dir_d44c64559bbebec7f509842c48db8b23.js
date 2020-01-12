@@ -4,10 +4,8 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "csa_opcua_adapter.h", "csa__opcua__adapter_8h.html", [
       [ "csa_opcua_adapter", "classcsa__opcua__adapter.html", "classcsa__opcua__adapter" ]
     ] ],
-    [ "ipc_managed_object.h", "ipc__managed__object_8h.html", "ipc__managed__object_8h" ],
-    [ "ipc_manager.h", "ipc__manager_8h.html", [
-      [ "ipc_manager", "classipc__manager.html", "classipc__manager" ]
-    ] ],
+    [ "ipc_managed_object.h", "ipc__managed__object_8h.html", null ],
+    [ "ipc_manager.h", "ipc__manager_8h.html", null ],
     [ "open62541.h", "open62541_8h.html", "open62541_8h" ],
     [ "ua_adapter.h", "ua__adapter_8h.html", [
       [ "FolderInfo", "struct_folder_info.html", "struct_folder_info" ],
@@ -22,7 +20,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     ] ],
     [ "ua_processvariable.h", "ua__processvariable_8h.html", "ua__processvariable_8h" ],
     [ "ua_proxies.h", "ua__proxies_8h.html", "ua__proxies_8h" ],
-    [ "ua_proxies_callback.h", "ua__proxies__callback_8h.html", "ua__proxies__callback_8h" ],
+    [ "ua_proxies_callback.h", "ua__proxies__callback_8h.html", null ],
     [ "ua_proxies_typeconversion.h", "ua__proxies__typeconversion_8h.html", "ua__proxies__typeconversion_8h" ],
     [ "xml_file_handler.h", "xml__file__handler_8h.html", [
       [ "xml_file_handler", "classxml__file__handler.html", "classxml__file__handler" ]

@@ -19,6 +19,7 @@ var searchData=
   ['endpoints',['endpoints',['../struct_u_a___get_endpoints_response.html#a5111b6240dd041f579a98db1097ab10d',1,'UA_GetEndpointsResponse']]],
   ['endpointssize',['endpointsSize',['../struct_u_a___get_endpoints_response.html#a4b901b8d0a330c4b38d6e7b6834552c8',1,'UA_GetEndpointsResponse']]],
   ['endpointurl',['endpointUrl',['../struct_u_a___get_endpoints_request.html#ad3e17d8d39060d584ae8dc255533b613',1,'UA_GetEndpointsRequest::endpointUrl()'],['../struct_u_a___find_servers_request.html#adb911f9f408ef4fe497b79b6fd39e4c9',1,'UA_FindServersRequest::endpointUrl()'],['../struct_u_a___create_session_request.html#a1d8ac00723d6d8b92df9382efd6bbccd',1,'UA_CreateSessionRequest::endpointUrl()'],['../struct_u_a___endpoint_description.html#ac62e80827dce1de3d59ad3ad5e8b1159',1,'UA_EndpointDescription::endpointUrl()'],['../struct_u_a___tcp_hello_message.html#a8fead84c7af9ada3082a12ad10bb168e',1,'UA_TcpHelloMessage::endpointUrl()'],['../struct_u_a___client.html#a0e043658b44e6f3fb405a316d42208b2',1,'UA_Client::endpointUrl()']]],
+  ['enrollfolderpathfromstring',['enrollFolderPathFromString',['../classua__uaadapter.html#ad11a51b86dccf75cf46551e1ed5a3854',1,'ua_uaadapter']]],
   ['entries',['entries',['../struct_u_a___node_store.html#a642c66ae5bfafcfcddedee3e2b631cf7',1,'UA_NodeStore']]],
   ['errno_5f_5f',['errno__',['../open62541_8c.html#ac9785a85961a89c1e6e806b2798b07c9',1,'open62541.c']]],
   ['error',['error',['../struct_u_a___secure_conversation_message_abort_body.html#a99447edc740f172e878961cb49abf7d8',1,'UA_SecureConversationMessageAbortBody::error()'],['../struct_u_a___tcp_error_message.html#a427d7d1711ce2491a7a595ccb9c6726e',1,'UA_TcpErrorMessage::error()']]],
@@ -28,5 +29,6 @@ var searchData=
   ['existfolder',['existFolder',['../classua__uaadapter.html#a7c1e27a2d1fa4f3515d55af3f952cd58',1,'ua_uaadapter']]],
   ['existfolderpath',['existFolderPath',['../classua__uaadapter.html#a9fc23375179ed6c20b8455b3f846eab0',1,'ua_uaadapter']]],
   ['explanation',['explanation',['../struct_u_a___status_code_description.html#a52c0eb7b5b7f839ab605cf7dd5bb6d96',1,'UA_StatusCodeDescription']]],
+  ['explicitvarmapping',['explicitVarMapping',['../classua__uaadapter.html#a2457f02d1d25e9306f1d00eadb8a9328',1,'ua_uaadapter']]],
   ['extractnamespaceuris',['extractNamespaceURIs',['../classopen62541___x_m_l_preprocessor_1_1pre_process_document.html#a1fc0e9a1c2faae24489569115f23faaa',1,'open62541_XMLPreprocessor::preProcessDocument']]]
 ];

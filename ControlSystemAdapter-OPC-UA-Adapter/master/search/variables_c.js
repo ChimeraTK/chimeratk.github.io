@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['manager',['manager',['../classipc__managed__object.html#afe33781664fbd8ff1acb859d4c7e1896',1,'ipc_managed_object']]],
   ['manufacturername',['manufacturerName',['../struct_u_a___build_info.html#af76c60d0732b4d69bd2cccc1014ae2ac',1,'UA_BuildInfo']]],
   ['mappedclient',['mappedClient',['../classua__mapped__class.html#a0d65eb3318c9be3b8ab595c817e154b1',1,'ua_mapped_class']]],
   ['mappedserver',['mappedServer',['../classua__mapped__class.html#a82d9361e44178646a8a377390be41060',1,'ua_mapped_class']]],
@@ -38,7 +37,6 @@ var searchData=
   ['methodid',['methodId',['../struct_u_a___call_method_request.html#a49128e630525a7b35f1c6f1c18ab68de',1,'UA_CallMethodRequest']]],
   ['methodstocall',['methodsToCall',['../struct_u_a___call_request.html#a742170d15267de96ba74745bda1218d1',1,'UA_CallRequest']]],
   ['methodstocallsize',['methodsToCallSize',['../struct_u_a___call_request.html#a827de1bcf1b6aba1249481621a03cc99',1,'UA_CallRequest']]],
-  ['mgr',['mgr',['../csa__opcua__adapter__example_8cpp.html#aef203c4597b73de46a042d4bdb6dca61',1,'csa_opcua_adapter_example.cpp']]],
   ['microsec',['microSec',['../struct_u_a___date_time_struct.html#afb39870aa4d539fb90509c9eae8135dd',1,'UA_DateTimeStruct']]],
   ['millisec',['milliSec',['../struct_u_a___date_time_struct.html#a2b9bc315b550e8c18e302ab509d1fbb6',1,'UA_DateTimeStruct']]],
   ['min',['min',['../struct_u_a___date_time_struct.html#a37178e566b792d203f89e6900ba4ddaf',1,'UA_DateTimeStruct::min()'],['../struct_u_a___numeric_range_dimension.html#a63294e9311c618eaf60fcfb4bed262bf',1,'UA_NumericRangeDimension::min()'],['../struct_u_a___u_int32_range.html#ad504030f4cab2a91e53f35c6ed17a775',1,'UA_UInt32Range::min()'],['../struct_u_a___double_range.html#af42989243d51b2f821d89b7dc1085548',1,'UA_DoubleRange::min()']]],
@@ -51,6 +49,5 @@ var searchData=
   ['monitoringmode',['monitoringMode',['../struct_u_a___set_monitoring_mode_request.html#ad3c2794b57af7e3980d205a8f060d0c7',1,'UA_SetMonitoringModeRequest::monitoringMode()'],['../struct_u_a___monitored_item_create_request.html#a088c527e717f221554d2bc2cc2d3c93d',1,'UA_MonitoredItemCreateRequest::monitoringMode()']]],
   ['month',['month',['../struct_u_a___date_time_struct.html#a0071e919885386bca4d271c955f19dec',1,'UA_DateTimeStruct']]],
   ['morenotifications',['moreNotifications',['../struct_u_a___publish_response.html#a66fcd2311b4b97b150eab4f7740d6622',1,'UA_PublishResponse']]],
-  ['mtx_5fthreadoperations',['mtx_threadOperations',['../classipc__managed__object.html#a6593c080a1c45772c7ca0f05d7cf12a3',1,'ipc_managed_object']]],
   ['myapp',['myApp',['../csa__opcua__adapter__example2_8cpp.html#a013989356154e75472bc982fd20f0a0a',1,'csa_opcua_adapter_example2.cpp']]]
 ];

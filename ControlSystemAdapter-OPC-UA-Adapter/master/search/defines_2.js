@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['c_5fmacro_5fconcat',['C_MACRO_CONCAT',['../ua__proxies__callback_8h.html#abdd4e3360f50bd6fc2b26700371fcd3d',1,'ua_proxies_callback.h']]],
-  ['c_5fmacro_5fconcat_5fnoexp',['C_MACRO_CONCAT_NOEXP',['../ua__proxies__callback_8h.html#ae816631b1f27d2d3490840da7f556c43',1,'ua_proxies_callback.h']]],
   ['check_5fattributes',['CHECK_ATTRIBUTES',['../open62541_8c.html#abf3a08ceed672226b0f73a570dc8d3e7',1,'open62541.c']]],
   ['check_5fdatatype_5farray',['CHECK_DATATYPE_ARRAY',['../open62541_8c.html#a7a677db5820bcc7aa16b218c4872700e',1,'open62541.c']]],
   ['check_5fdatatype_5fscalar',['CHECK_DATATYPE_SCALAR',['../open62541_8c.html#af87d6d1bd0e6046699eac15a75144e62',1,'open62541.c']]],
@@ -30,21 +28,13 @@ var searchData=
   ['closesocket',['CLOSESOCKET',['../open62541_8c.html#a50b4bd848cf1126ea6b83371fdf136bc',1,'open62541.c']]],
   ['container_5fof',['container_of',['../open62541_8c.html#af8c317a42292b61c93aae91e59118a46',1,'open62541.c']]],
   ['cppstring_5fto_5fuastring_5fnew',['CPPSTRING_TO_UASTRING_NEW',['../ua__proxies__typeconversion_8h.html#af97f8968ee8a5e673f284a5cbe8a8b7f',1,'ua_proxies_typeconversion.h']]],
-  ['create_5fread_5ffunction',['CREATE_READ_FUNCTION',['../ua__processvariable_8cpp.html#a018268b1193ae65c3153c7b547015a90',1,'ua_processvariable.cpp']]],
-  ['create_5fread_5ffunction_5farray',['CREATE_READ_FUNCTION_ARRAY',['../ua__processvariable_8cpp.html#a20f0e5aaf061145414dac860ef63b8f8',1,'ua_processvariable.cpp']]],
-  ['create_5fread_5ffunction_5farray_5fdef',['CREATE_READ_FUNCTION_ARRAY_DEF',['../ua__processvariable_8h.html#af44ee79d45c02e27368758a3dd14fbb1',1,'ua_processvariable.h']]],
-  ['create_5fread_5ffunction_5fdef',['CREATE_READ_FUNCTION_DEF',['../ua__processvariable_8h.html#a37dac136deba101b36daa0729dfff9c1',1,'ua_processvariable.h']]],
-  ['create_5fwrite_5ffunction',['CREATE_WRITE_FUNCTION',['../ua__processvariable_8cpp.html#a256f677bbba1b6bbf54cadf71d83bb14',1,'ua_processvariable.cpp']]],
-  ['create_5fwrite_5ffunction_5farray',['CREATE_WRITE_FUNCTION_ARRAY',['../ua__processvariable_8cpp.html#a8047ec63890edc16a787a4506774fc4b',1,'ua_processvariable.cpp']]],
-  ['create_5fwrite_5ffunction_5farray_5fdef',['CREATE_WRITE_FUNCTION_ARRAY_DEF',['../ua__processvariable_8h.html#a9e249a71c941aad2bbec75127fbeac63',1,'ua_processvariable.h']]],
-  ['create_5fwrite_5ffunction_5fdef',['CREATE_WRITE_FUNCTION_DEF',['../ua__processvariable_8h.html#acc0d9f062088da424a5e44fdc2629138',1,'ua_processvariable.h']]],
   ['csa_5fnsid',['CSA_NSID',['../csa__config_8h.html#a0bb5e34750df078b90199864edee6681',1,'csa_config.h']]],
   ['csa_5fnsid_5fadditional_5fvariable_5fvalue',['CSA_NSID_ADDITIONAL_VARIABLE_VALUE',['../csa__config_8h.html#a4831aa97c7e035e2001b3a32d51e5169',1,'csa_config.h']]],
   ['csa_5fnsid_5fconstants',['CSA_NSID_CONSTANTS',['../csa__config_8h.html#a8abeca8e290694c458b9e58a19e0e854',1,'csa_config.h']]],
+  ['csa_5fnsid_5fvariable',['CSA_NSID_VARIABLE',['../csa__config_8h.html#a5f7da8bb57b8b102152de1e155783b8e',1,'csa_config.h']]],
   ['csa_5fnsid_5fvariable_5fdesc',['CSA_NSID_VARIABLE_DESC',['../csa__config_8h.html#ad908d8fef50dcd658a7e54a98270f141',1,'csa_config.h']]],
   ['csa_5fnsid_5fvariable_5fname',['CSA_NSID_VARIABLE_NAME',['../csa__config_8h.html#ab19881f593b205fdce1318695ba3b1d7',1,'csa_config.h']]],
   ['csa_5fnsid_5fvariable_5ftype',['CSA_NSID_VARIABLE_TYPE',['../csa__config_8h.html#aafe15b8aeb3834fb33138127692c9b39',1,'csa_config.h']]],
   ['csa_5fnsid_5fvariable_5funit',['CSA_NSID_VARIABLE_UNIT',['../csa__config_8h.html#a296e393b233c56c21ef261fad74dd613',1,'csa_config.h']]],
-  ['csa_5fnsid_5fvariable_5fvalue',['CSA_NSID_VARIABLE_VALUE',['../csa__config_8h.html#a7bb00001b2228c08fb97fc221cfb926f',1,'csa_config.h']]],
   ['csa_5fnsid_5fvariables',['CSA_NSID_VARIABLES',['../csa__config_8h.html#aa49aa7af0120bc7e4a01bf3d44f09cf4',1,'csa_config.h']]]
 ];

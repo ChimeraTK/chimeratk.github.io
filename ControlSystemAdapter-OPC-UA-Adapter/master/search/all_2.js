@@ -13,6 +13,7 @@ var searchData=
   ['builddate',['buildDate',['../struct_u_a___build_info.html#a8e138d9912df2ef6bdc2b5fcd0350e74',1,'UA_BuildInfo']]],
   ['buildencoding',['buildEncoding',['../classua__node__types_1_1opcua__node__data_type__t.html#afa91a325319bf5887e2a120e76adbe1f',1,'ua_node_types::opcua_node_dataType_t']]],
   ['buildencodingrules',['buildEncodingRules',['../classua__namespace_1_1opcua__namespace.html#a5cd49e6e209970e39e54aabead28e796',1,'ua_namespace::opcua_namespace']]],
+  ['buildfolderstructure',['buildFolderStructure',['../classua__uaadapter.html#a6fd11f1e8f644a3a78fc6019ffcff414',1,'ua_uaadapter']]],
   ['buildinfo',['buildInfo',['../struct_u_a___server_status_data_type.html#ad4afb932c15ff97eef2a4a3ed8f4609d',1,'UA_ServerStatusDataType::buildInfo()'],['../struct_u_a___server_config.html#a82f5b5aae08a9048c3151db5a40ecea9',1,'UA_ServerConfig::buildInfo()']]],
   ['buildnumber',['buildNumber',['../struct_u_a___build_info.html#a0988e74957d82bce3e026eb6fc435739',1,'UA_BuildInfo']]],
   ['builtin',['builtin',['../struct_u_a___data_type.html#ae92f7f596472f9104614f81c7e03d93b',1,'UA_DataType']]],
