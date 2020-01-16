@@ -108,7 +108,7 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespace_chimera_t_k_1_1proxies"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1proxies.html">proxies</a></td></tr>
 <tr class="memdesc:namespace_chimera_t_k_1_1proxies"><td class="mdescLeft">&#160;</td><td class="mdescRight">We are using temporary proxy classes to realise element access with fixed point conversion. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace_chimera_t_k_1_1rebot"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1rebot.html">rebot</a></td></tr>
+<tr class="memitem:namespace_chimera_t_k_1_1_rebot"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1_rebot.html">Rebot</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_chimera_t_k_1_1testable__rebot__sleep"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k_1_1testable__rebot__sleep.html">testable_rebot_sleep</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -324,9 +324,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_sync_n_d_register_accessor.html">SyncNDRegisterAccessor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor. ">NDRegisterAccessor</a> for backends with only synchronous transfers (so <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad00999178a215bc11d9c1377c6427c23" title="Read data from the device in the background and return a future which will be fulfilled when the data...">readAsync()</a> must be implemented with a thread).  <a href="class_chimera_t_k_1_1_sync_n_d_register_accessor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_tcp_ctrl.html">TcpCtrl</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the communication over TCP protocol with RebotDevice-based devices.  <a href="class_chimera_t_k_1_1_tcp_ctrl.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_template_user_type_map.html">TemplateUserTypeMap</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of UserType to a class template with the UserType as template argument.  <a href="class_chimera_t_k_1_1_template_user_type_map.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -369,12 +366,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a1dfea2352bc429cbaa5f91f3789ea597"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_chimera_t_k_1_1runtime__error.html">ChimeraTK::runtime_error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a1dfea2352bc429cbaa5f91f3789ea597">DeviceBackendException</a></td></tr>
 <tr class="memdesc:a1dfea2352bc429cbaa5f91f3789ea597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compatibility typedefs for the old exception classes.  <a href="#a1dfea2352bc429cbaa5f91f3789ea597">More...</a><br /></td></tr>
 <tr class="separator:a1dfea2352bc429cbaa5f91f3789ea597"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac99d87ad024fe8f7b4841f8dc3c4d40b"><td class="memItemLeft" align="right" valign="top">typedef boost::asio::ip::tcp::resolver&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ac99d87ad024fe8f7b4841f8dc3c4d40b">resolver_t</a></td></tr>
-<tr class="separator:ac99d87ad024fe8f7b4841f8dc3c4d40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a800f6d6c14b04dcba80a9aa2f1f30f9e"><td class="memItemLeft" align="right" valign="top">typedef boost::asio::ip::tcp::resolver::query&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a800f6d6c14b04dcba80a9aa2f1f30f9e">query_t</a></td></tr>
-<tr class="separator:a800f6d6c14b04dcba80a9aa2f1f30f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9ea2fd102c7e14bb7d9e7fe5072942c"><td class="memItemLeft" align="right" valign="top">typedef boost_ip::tcp::resolver::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ae9ea2fd102c7e14bb7d9e7fe5072942c">iterator_t</a></td></tr>
-<tr class="separator:ae9ea2fd102c7e14bb7d9e7fe5072942c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05b44f2d7e3528fff2972cfc3fe89db0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_chimera_t_k_1_1runtime__error.html">ChimeraTK::runtime_error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a05b44f2d7e3528fff2972cfc3fe89db0">Exception</a></td></tr>
 <tr class="memdesc:a05b44f2d7e3528fff2972cfc3fe89db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compatibility typedefs for the old Exception classe.  <a href="#a05b44f2d7e3528fff2972cfc3fe89db0">More...</a><br /></td></tr>
 <tr class="separator:a05b44f2d7e3528fff2972cfc3fe89db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -459,6 +450,12 @@ Functions</h2></td></tr>
 <tr class="separator:a3fb4962cc50199a6b5fd67f082106b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a090c0a89bbb0f29837f125d21dd89fe4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a090c0a89bbb0f29837f125d21dd89fe4">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_instantiate_logical_name_mapping_backend_functions.html">InstantiateLogicalNameMappingBackendFunctions</a>)</td></tr>
 <tr class="separator:a090c0a89bbb0f29837f125d21dd89fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ffc6c49fd5847b519c8227f5721e332"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="struct_chimera_t_k_1_1_rebot_protocol_implementor.html">RebotProtocolImplementor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a5ffc6c49fd5847b519c8227f5721e332">getProtocolImplementor</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_rebot_1_1_connection.html">Rebot::Connection</a> &gt; &amp;c)</td></tr>
+<tr class="separator:a5ffc6c49fd5847b519c8227f5721e332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf67cf29867872341e439e109428bac7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aaf67cf29867872341e439e109428bac7">getProtocolVersion</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_rebot_1_1_connection.html">Rebot::Connection</a> &gt; &amp;c)</td></tr>
+<tr class="separator:aaf67cf29867872341e439e109428bac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6488bea8863c6fe508989798b7721604"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a6488bea8863c6fe508989798b7721604">parseRxServerHello</a> (const std::vector&lt; uint32_t &gt; &amp;serverHello)</td></tr>
+<tr class="separator:a6488bea8863c6fe508989798b7721604"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae149b13bf5b9080c5865d9bf70567eba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ae149b13bf5b9080c5865d9bf70567eba">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>)</td></tr>
 <tr class="separator:ae149b13bf5b9080c5865d9bf70567eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40ba02c9fbdb3da52b45a277fb86c1a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a40ba02c9fbdb3da52b45a277fb86c1a3">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html">NumericAddressedBackendMuxedRegisterAccessor</a>)</td></tr>
@@ -666,22 +663,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae9ea2fd102c7e14bb7d9e7fe5072942c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9ea2fd102c7e14bb7d9e7fe5072942c">&#9670;&nbsp;</a></span>iterator_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef boost_ip::tcp::resolver::iterator <a class="el" href="namespace_chimera_t_k.html#ae9ea2fd102c7e14bb7d9e7fe5072942c">ChimeraTK::iterator_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_tcp_ctrl_8cc_source.html#l00009">9</a> of file <a class="el" href="_tcp_ctrl_8cc_source.html">TcpCtrl.cc</a>.</p>
-
-</div>
-</div>
 <a id="a68b4c35383782b40f1c4aaaf74189737"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a68b4c35383782b40f1c4aaaf74189737">&#9670;&nbsp;</a></span>LibMapException</h2>
 
@@ -766,22 +747,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a800f6d6c14b04dcba80a9aa2f1f30f9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a800f6d6c14b04dcba80a9aa2f1f30f9e">&#9670;&nbsp;</a></span>query_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef boost::asio::ip::tcp::resolver::query <a class="el" href="namespace_chimera_t_k.html#a800f6d6c14b04dcba80a9aa2f1f30f9e">ChimeraTK::query_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_tcp_ctrl_8cc_source.html#l00008">8</a> of file <a class="el" href="_tcp_ctrl_8cc_source.html">TcpCtrl.cc</a>.</p>
-
-</div>
-</div>
 <a id="a7b983744ce153647b8fa3c6552de8b0d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b983744ce153647b8fa3c6552de8b0d">&#9670;&nbsp;</a></span>RegisterInfoMapPointer</h2>
 
@@ -797,22 +762,6 @@ Variables</h2></td></tr>
 <p>Introduce specialisation of shared_ptr template for pointers to <a class="el" href="class_chimera_t_k_1_1_register_info_map.html" title="Provides container to store information about registers described in MAP file. ">RegisterInfoMap</a> object as a RegisterInfoMapPointer. </p>
 
 <p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html#l00423">423</a> of file <a class="el" href="fileparsers_2include_2_register_info_map_8h_source.html">RegisterInfoMap.h</a>.</p>
-
-</div>
-</div>
-<a id="ac99d87ad024fe8f7b4841f8dc3c4d40b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac99d87ad024fe8f7b4841f8dc3c4d40b">&#9670;&nbsp;</a></span>resolver_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef boost::asio::ip::tcp::resolver <a class="el" href="namespace_chimera_t_k.html#ac99d87ad024fe8f7b4841f8dc3c4d40b">ChimeraTK::resolver_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_tcp_ctrl_8cc_source.html#l00007">7</a> of file <a class="el" href="_tcp_ctrl_8cc_source.html">TcpCtrl.cc</a>.</p>
 
 </div>
 </div>
@@ -1387,6 +1336,78 @@ template&lt;typename MAPTYPE , typename LAMBDATYPE &gt; </div>
 
 </div>
 </div>
+<a id="a5ffc6c49fd5847b519c8227f5721e332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ffc6c49fd5847b519c8227f5721e332">&#9670;&nbsp;</a></span>getProtocolImplementor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="struct_chimera_t_k_1_1_rebot_protocol_implementor.html">RebotProtocolImplementor</a> &gt; ChimeraTK::getProtocolImplementor </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_rebot_1_1_connection.html">Rebot::Connection</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rebot_backend_8cc_source.html#l00015">15</a> of file <a class="el" href="_rebot_backend_8cc_source.html">RebotBackend.cc</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_a5ffc6c49fd5847b519c8227f5721e332_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_a5ffc6c49fd5847b519c8227f5721e332_icgraph.svg" width="514" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aaf67cf29867872341e439e109428bac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf67cf29867872341e439e109428bac7">&#9670;&nbsp;</a></span>getProtocolVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ChimeraTK::getProtocolVersion </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_rebot_1_1_connection.html">Rebot::Connection</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rebot_backend_8cc_source.html#l00030">30</a> of file <a class="el" href="_rebot_backend_8cc_source.html">RebotBackend.cc</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_aaf67cf29867872341e439e109428bac7_cgraph.svg" width="480" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_aaf67cf29867872341e439e109428bac7_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
 <a id="accdf6e82b0e0f877afe1b7aa82869238"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#accdf6e82b0e0f877afe1b7aa82869238">&#9670;&nbsp;</a></span>INSTANTIATE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[1/4]</span></h2>
 
@@ -1574,11 +1595,11 @@ template&lt;typename MAPTYPE , typename LAMBDATYPE &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_a8c9f67bf29e708e827da1dcb0376dcf0_icgraph.svg" width="562" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1680,11 +1701,11 @@ template&lt;&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_logical_name_map_parser_8cc_source.html#l00019">19</a> of file <a class="el" href="_logical_name_map_parser_8cc_source.html">LogicalNameMapParser.cc</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_a43d1a9d1e8a5aae49dd309e5859ee99c_cgraph.svg" width="658" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1743,11 +1764,11 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_register_path_8cc_source.html#l00049">49</a> of file <a class="el" href="_register_path_8cc_source.html">RegisterPath.cc</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_aff4ac0544a7ecac72fb62a82278824cb_cgraph.svg" width="407" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1813,11 +1834,11 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_register_path_8cc_source.html#l00034">34</a> of file <a class="el" href="_register_path_8cc_source.html">RegisterPath.cc</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_a5e854b4410176a3de00a75be5c250d14_cgraph.svg" width="411" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1854,11 +1875,11 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 <p>Must be a non-member operator to allow implicit type conversions also on the leftHandSide. </p>
 
 <p class="definition">Definition at line <a class="el" href="_register_path_8cc_source.html#l00018">18</a> of file <a class="el" href="_register_path_8cc_source.html">RegisterPath.cc</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_a3866f314ddf52c6edb0f62cef066f796_cgraph.svg" width="411" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1924,11 +1945,11 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_register_info_map_8cpp_source.html#l00012">12</a> of file <a class="el" href="_register_info_map_8cpp_source.html">RegisterInfoMap.cpp</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_a89780abc04b62c924272de4052c84c63_cgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -2357,6 +2378,34 @@ template&lt;typename UserType , typename NUMERIC &gt; </div>
 
 </div>
 </div>
+<a id="a6488bea8863c6fe508989798b7721604"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6488bea8863c6fe508989798b7721604">&#9670;&nbsp;</a></span>parseRxServerHello()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ChimeraTK::parseRxServerHello </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; uint32_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>serverHello</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rebot_backend_8cc_source.html#l00058">58</a> of file <a class="el" href="_rebot_backend_8cc_source.html">RebotBackend.cc</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_a6488bea8863c6fe508989798b7721604_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a877b8841005f92d00f5cb9e50951ff7f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a877b8841005f92d00f5cb9e50951ff7f">&#9670;&nbsp;</a></span>RegisterAccessor::read< std::string >()</h2>
 
@@ -2475,19 +2524,19 @@ template&lt;&gt; </div>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="accessor1_d_8cpp-example.html#a1">accessor1D.cpp</a>, <a class="el" href="accessor2_d_8cpp-example.html#a1">accessor2D.cpp</a>, <a class="el" href="accessor2_d_multiplexed_8cpp-example.html#a1">accessor2D_multiplexed.cpp</a>, and <a class="el" href="basic_8cpp-example.html#a1">basic.cpp</a>.</dd>
 </dl>
 <p class="definition">Definition at line <a class="el" href="_utilities_8cpp_source.html#l00327">327</a> of file <a class="el" href="_utilities_8cpp_source.html">Utilities.cpp</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_ac081e51ebc9ef4fe64b469290d39b7a2_cgraph.svg" width="100%" height="462"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_ac081e51ebc9ef4fe64b469290d39b7a2_icgraph.svg" width="323" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -2583,7 +2632,7 @@ template&lt;typename UserTypeReturn , typename UserTypeParameter &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li>
-    <li class="footer">Generated on Fri Jan 10 2020 04:53:11 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Jan 16 2020 04:53:09 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

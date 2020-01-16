@@ -2,6 +2,7 @@ var namespace_chimera_t_k =
 [
     [ "LNMBackend", "namespace_chimera_t_k_1_1_l_n_m_backend.html", "namespace_chimera_t_k_1_1_l_n_m_backend" ],
     [ "proxies", "namespace_chimera_t_k_1_1proxies.html", "namespace_chimera_t_k_1_1proxies" ],
+    [ "Rebot", "namespace_chimera_t_k_1_1_rebot.html", "namespace_chimera_t_k_1_1_rebot" ],
     [ "AccessModeFlags", "class_chimera_t_k_1_1_access_mode_flags.html", "class_chimera_t_k_1_1_access_mode_flags" ],
     [ "BackendFactory", "class_chimera_t_k_1_1_backend_factory.html", "class_chimera_t_k_1_1_backend_factory" ],
     [ "BufferingRegisterAccessor", "class_chimera_t_k_1_1_buffering_register_accessor.html", "class_chimera_t_k_1_1_buffering_register_accessor" ],
@@ -76,7 +77,6 @@ var namespace_chimera_t_k =
     [ "SubdeviceBackend", "class_chimera_t_k_1_1_subdevice_backend.html", "class_chimera_t_k_1_1_subdevice_backend" ],
     [ "SubdeviceRegisterAccessor", "class_chimera_t_k_1_1_subdevice_register_accessor.html", "class_chimera_t_k_1_1_subdevice_register_accessor" ],
     [ "SyncNDRegisterAccessor", "class_chimera_t_k_1_1_sync_n_d_register_accessor.html", "class_chimera_t_k_1_1_sync_n_d_register_accessor" ],
-    [ "TcpCtrl", "class_chimera_t_k_1_1_tcp_ctrl.html", "class_chimera_t_k_1_1_tcp_ctrl" ],
     [ "TemplateUserTypeMap", "class_chimera_t_k_1_1_template_user_type_map.html", "class_chimera_t_k_1_1_template_user_type_map" ],
     [ "ThreadInformerMutex", "struct_chimera_t_k_1_1_thread_informer_mutex.html", "struct_chimera_t_k_1_1_thread_informer_mutex" ],
     [ "TransferElement", "class_chimera_t_k_1_1_transfer_element.html", "class_chimera_t_k_1_1_transfer_element" ],

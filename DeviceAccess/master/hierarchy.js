@@ -28,6 +28,7 @@ var hierarchy =
     [ "CustomBackend::BackendRegisterer", "struct_custom_backend_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::compareModuleName_pred", "class_chimera_t_k_1_1compare_module_name__pred.html", null ],
     [ "ChimeraTK::compareRegisterInfosByName_functor", "class_chimera_t_k_1_1compare_register_infos_by_name__functor.html", null ],
+    [ "ChimeraTK::Rebot::Connection", "class_chimera_t_k_1_1_rebot_1_1_connection.html", null ],
     [ "ChimeraTK::RegisterInfoMap::const_iterator", "class_chimera_t_k_1_1_register_info_map_1_1const__iterator.html", null ],
     [ "ChimeraTK::RegisterCatalogue::const_iterator", "class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html", null ],
     [ "ChimeraTK::copmaredRegisterInfosByName2_functor", "class_chimera_t_k_1_1copmared_register_infos_by_name2__functor.html", null ],
@@ -192,7 +193,6 @@ var hierarchy =
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, DestType >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html", null ],
     [ "ChimeraTK::Sdm", "struct_chimera_t_k_1_1_sdm.html", null ],
     [ "ChimeraTK::LogicalNameMappingBackend::SharedAccessor< UserType >", "struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html", null ],
-    [ "ChimeraTK::TcpCtrl", "class_chimera_t_k_1_1_tcp_ctrl.html", null ],
     [ "ChimeraTK::TemplateUserTypeMap< TemplateClass >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],
     [ "ChimeraTK::TemplateUserTypeMap< ChimeraTK::RegisterAccessor::AccessorHandler >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],
     [ "ChimeraTK::TemplateUserTypeMap< myVector >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],
@@ -215,7 +215,7 @@ var hierarchy =
     [ "ChimeraTK::Utilities", "class_chimera_t_k_1_1_utilities.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
-    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
+    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
     [ "ChimeraTK::VersionNumber", "class_chimera_t_k_1_1_version_number.html", null ]
 ];

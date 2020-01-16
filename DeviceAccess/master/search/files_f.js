@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['tcpctrl_2ecc',['TcpCtrl.cc',['../_tcp_ctrl_8cc.html',1,'']]],
-  ['tcpctrl_2eh',['TcpCtrl.h',['../_tcp_ctrl_8h.html',1,'']]],
   ['testablerebotsleep_2ecc',['testableRebotSleep.cc',['../testable_rebot_sleep_8cc.html',1,'']]],
   ['testablerebotsleep_2eh',['testableRebotSleep.h',['../testable_rebot_sleep_8h.html',1,'']]],
   ['testing_5fwith_5fdummy_5fbackends_2edox',['testing_with_dummy_backends.dox',['../testing__with__dummy__backends_8dox.html',1,'']]],
