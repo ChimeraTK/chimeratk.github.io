@@ -14,7 +14,9 @@ var class_chimera_t_k_1_1_exception_handling_decorator =
     [ "doWriteTransferDestructively", "class_chimera_t_k_1_1_exception_handling_decorator.html#aa4580d9d3037766e4c56c69bdef1c830", null ],
     [ "genericTransfer", "class_chimera_t_k_1_1_exception_handling_decorator.html#ae6461b11547ea59ec242e1a8c4fc4d0c", null ],
     [ "interrupt", "class_chimera_t_k_1_1_exception_handling_decorator.html#a76870f06ec721733fcf735d035804137", null ],
-    [ "setDataValidity", "class_chimera_t_k_1_1_exception_handling_decorator.html#a0c978519979b6f347e591d8a03fadf5e", null ],
-    [ "dm", "class_chimera_t_k_1_1_exception_handling_decorator.html#ac34320e62e3adf80d80e3b43abd79015", null ],
+    [ "setOwner", "class_chimera_t_k_1_1_exception_handling_decorator.html#a9f727076598326eb295919670a919d4d", null ],
+    [ "setOwnerValidity", "class_chimera_t_k_1_1_exception_handling_decorator.html#abbede3c317d7f855830b0b2ca04c5180", null ],
+    [ "_owner", "class_chimera_t_k_1_1_exception_handling_decorator.html#a8c42e79150ac529a54898457794d5c85", null ],
+    [ "deviceModule", "class_chimera_t_k_1_1_exception_handling_decorator.html#a94e84d6cfbda358e6b03e7820384463e", null ],
     [ "validity", "class_chimera_t_k_1_1_exception_handling_decorator.html#a1b0955d10bdab47ac47662a41f901a0d", null ]
 ];

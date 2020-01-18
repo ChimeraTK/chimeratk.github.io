@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"functions_func_m.html":[11,3,1,10],
+"functions_func_n.html":[11,3,1,11],
 "functions_func_o.html":[11,3,1,12],
 "functions_func_p.html":[11,3,1,13],
 "functions_func_r.html":[11,3,1,14],
@@ -25,8 +27,8 @@ var NAVTREEINDEX4 =
 "functions_type.html":[11,3,3],
 "functions_u.html":[11,3,0,19],
 "functions_v.html":[11,3,0,20],
-"functions_vars.html":[11,3,2,0],
 "functions_vars.html":[11,3,2],
+"functions_vars.html":[11,3,2,0],
 "functions_vars_a.html":[11,3,2,1],
 "functions_vars_b.html":[11,3,2,2],
 "functions_vars_c.html":[11,3,2,3],
@@ -62,8 +64,8 @@ var NAVTREEINDEX4 =
 "namespace_chimera_t_k.html":[10,0,0],
 "namespace_chimera_t_k_1_1history.html":[11,0,0,0],
 "namespace_chimera_t_k_1_1history.html":[10,0,0,0],
-"namespacelogging.html":[11,0,1],
 "namespacelogging.html":[10,0,1],
+"namespacelogging.html":[11,0,1],
 "namespacemembers.html":[10,1,0],
 "namespacemembers_enum.html":[10,1,4],
 "namespacemembers_eval.html":[10,1,5],
@@ -89,8 +91,8 @@ var NAVTREEINDEX4 =
 "struct_automation.html#a1a86176292eb457cf69d9a764a38a468":[11,0,2,3],
 "struct_automation.html#a4a08a0e51d5adb3d163709212eff7ecb":[11,0,2,4],
 "struct_automation.html#a6d28e80b6662b738458f8753adc2f837":[11,0,2,5],
-"struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[11,0,2,1],
 "struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[11,0,2,0],
+"struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[11,0,2,1],
 "struct_automation.html#aa738677550010b51b08df005e0e1d7f3":[11,0,2,2],
 "struct_automation.html#acff6fa50c6a95870a79b4b1df4a14ea1":[11,0,2,7],
 "struct_automation.html#adc175eb9561ef659f570a65ae1ac97cc":[11,0,2,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "struct_chimera_t_k_1_1_read_bit_mask.html#a3c5eb103cebed81404382b5455898b82":[11,0,0,52,3],
 "struct_chimera_t_k_1_1_read_bit_mask.html#a78c2de777dc3529459cad9b63ff2fcaf":[11,0,0,52,4],
 "struct_chimera_t_k_1_1_read_bit_mask.html#a7d5ec54e7dd50ea8da1b1a154e890af9":[11,0,0,52,6],
-"struct_chimera_t_k_1_1_read_bit_mask.html#a9d9ef391978a2de37738c709ef53cf06":[11,0,0,52,1],
-"struct_chimera_t_k_1_1_read_bit_mask.html#ac75e93b19b58fdcf8ebcc11448836355":[11,0,0,52,2],
-"struct_chimera_t_k_1_1_read_bit_mask.html#accb186e1c427e9d6aa3253a07efbb67c":[11,0,0,52,5]
+"struct_chimera_t_k_1_1_read_bit_mask.html#a9d9ef391978a2de37738c709ef53cf06":[11,0,0,52,1]
 };

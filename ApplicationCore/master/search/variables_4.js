@@ -16,12 +16,13 @@ var searchData=
   ['devicehaserror',['deviceHasError',['../class_chimera_t_k_1_1_device_module.html#ad329aeca005a9b591168360ec1b068a6',1,'ChimeraTK::DeviceModule']]],
   ['deviceisinitialized',['deviceIsInitialized',['../class_chimera_t_k_1_1_device_module.html#afd70af961ca8d5cfd35f7f02996880b1',1,'ChimeraTK::DeviceModule']]],
   ['devicemap',['deviceMap',['../class_chimera_t_k_1_1_application.html#a0b48d873e427c274811a351882a50555',1,'ChimeraTK::Application']]],
+  ['devicemodule',['deviceModule',['../class_chimera_t_k_1_1_exception_handling_decorator.html#a94e84d6cfbda358e6b03e7820384463e',1,'ChimeraTK::ExceptionHandlingDecorator']]],
   ['devicemodulelist',['deviceModuleList',['../class_chimera_t_k_1_1_application.html#a7e35f287b845c7c810656afd0ecf902a',1,'ChimeraTK::Application']]],
   ['deviceopentimeout',['DeviceOpenTimeout',['../_exception_handling_decorator_8cc.html#a79e25afc8d49734b01e480603207a6a3',1,'ExceptionHandlingDecorator.cc']]],
   ['dir',['dir',['../struct_chimera_t_k_1_1_variable_direction.html#a731e6cd5f58f1f014d443434f9ff6219',1,'ChimeraTK::VariableDirection']]],
   ['direction',['direction',['../struct_chimera_t_k_1_1_variable_network_node__data.html#aeb392b6238bd9ec1603d16868a8aec33',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['disable',['disable',['../struct_chimera_t_k_1_1_status_monitor.html#adf7c844bff2d1c503f5de927eaacfe22',1,'ChimeraTK::StatusMonitor']]],
   ['divider',['divider',['../struct_chimera_t_k_1_1_divider.html#ad9cc0000920baac3739dc54f55aea293',1,'ChimeraTK::Divider']]],
-  ['dm',['dm',['../class_chimera_t_k_1_1_exception_handling_decorator.html#ac34320e62e3adf80d80e3b43abd79015',1,'ChimeraTK::ExceptionHandlingDecorator::dm()'],['../class_chimera_t_k_1_1_trigger_fan_out.html#a7fbc99bd7b2c5ff0c592799f62a0d080',1,'ChimeraTK::TriggerFanOut::dm()']]],
+  ['dm',['dm',['../class_chimera_t_k_1_1_trigger_fan_out.html#a7fbc99bd7b2c5ff0c592799f62a0d080',1,'ChimeraTK::TriggerFanOut']]],
   ['done',['done',['../struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html#a5ca367f5f723695e5ae77fcc48e90501',1,'ChimeraTK::Application::TypedMakeConnectionCaller']]]
 ];
