@@ -4,6 +4,7 @@ var searchData=
   ['limitvalue',['LimitValue',['../struct_chimera_t_k_1_1_limit_value.html',1,'ChimeraTK']]],
   ['limitvalue_2eh',['LimitValue.h',['../_limit_value_8h.html',1,'']]],
   ['limitvaluemodulebase',['LimitValueModuleBase',['../struct_chimera_t_k_1_1_limit_value_module_base.html',1,'ChimeraTK']]],
+  ['localvalidity',['localValidity',['../class_chimera_t_k_1_1_exception_handling_decorator.html#a62ce2140be0f20cd5bda022ad88322dc',1,'ChimeraTK::ExceptionHandlingDecorator']]],
   ['logfile',['logFile',['../classlogging_1_1_logging_module.html#ae90e453ff52bc721d16da109a5270f0f',1,'logging::LoggingModule']]],
   ['logger',['Logger',['../classlogging_1_1_logger.html',1,'logging::Logger'],['../classlogging_1_1_logger.html#a87cd7a6981b805533c717053ae412cd0',1,'logging::Logger::Logger()'],['../classlogging_1_1_logger.html#a953a449517466c898df8c4258b564690',1,'logging::Logger::Logger(ctk::Module *module)']]],
   ['logging',['logging',['../namespacelogging.html',1,'']]],
