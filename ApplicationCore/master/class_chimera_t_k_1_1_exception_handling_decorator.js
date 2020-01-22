@@ -1,6 +1,6 @@
 var class_chimera_t_k_1_1_exception_handling_decorator =
 [
-    [ "ExceptionHandlingDecorator", "class_chimera_t_k_1_1_exception_handling_decorator.html#a041470aaee722d1617e172ca0ed25371", null ],
+    [ "ExceptionHandlingDecorator", "class_chimera_t_k_1_1_exception_handling_decorator.html#acd0987be0ef44f7848bdfbd241c4e509", null ],
     [ "dataValidity", "class_chimera_t_k_1_1_exception_handling_decorator.html#a28c3c3d51c5e97712bdece9bf9657a73", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_exception_handling_decorator.html#a8a7a0237138ab57f0e0d0c1165fbabfc", null ],
     [ "doPostWrite", "class_chimera_t_k_1_1_exception_handling_decorator.html#a6689621da41e47e1d3e911452e505568", null ],
@@ -17,6 +17,7 @@ var class_chimera_t_k_1_1_exception_handling_decorator =
     [ "setOwner", "class_chimera_t_k_1_1_exception_handling_decorator.html#a9f727076598326eb295919670a919d4d", null ],
     [ "setOwnerValidity", "class_chimera_t_k_1_1_exception_handling_decorator.html#abbede3c317d7f855830b0b2ca04c5180", null ],
     [ "_owner", "class_chimera_t_k_1_1_exception_handling_decorator.html#a8c42e79150ac529a54898457794d5c85", null ],
+    [ "_recoveryAccessor", "class_chimera_t_k_1_1_exception_handling_decorator.html#adb8931d7eca76758f0de9835af4f0148", null ],
     [ "deviceModule", "class_chimera_t_k_1_1_exception_handling_decorator.html#a94e84d6cfbda358e6b03e7820384463e", null ],
     [ "localValidity", "class_chimera_t_k_1_1_exception_handling_decorator.html#a62ce2140be0f20cd5bda022ad88322dc", null ]
 ];

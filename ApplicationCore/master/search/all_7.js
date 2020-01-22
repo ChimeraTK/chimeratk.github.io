@@ -43,6 +43,7 @@ var searchData=
   ['getproxy',['getProxy',['../class_chimera_t_k_1_1_device_module.html#a8afdd6992d399ae7fafa6e3d29cc28d3',1,'ChimeraTK::DeviceModule']]],
   ['getpublicname',['getPublicName',['../class_chimera_t_k_1_1_variable_network_node.html#a4417fb9748d02e246a58dd7be0ae50ef',1,'ChimeraTK::VariableNetworkNode']]],
   ['getqualifiedname',['getQualifiedName',['../class_chimera_t_k_1_1_application.html#a614e97c009f31afe1844f2ce99f2de1c',1,'ChimeraTK::Application::getQualifiedName()'],['../class_chimera_t_k_1_1_entity_owner.html#aa3fc963233d251705cd197ced1aa0876',1,'ChimeraTK::EntityOwner::getQualifiedName()'],['../class_chimera_t_k_1_1_module.html#a09462e535a0c30344012fc821d148f8e',1,'ChimeraTK::Module::getQualifiedName()'],['../class_chimera_t_k_1_1_variable_network_node.html#a36dcf5a792616f56e5c1d4abc144bb99',1,'ChimeraTK::VariableNetworkNode::getQualifiedName()']]],
+  ['getrecoverysharedlock',['getRecoverySharedLock',['../class_chimera_t_k_1_1_device_module.html#a2e4743eb941b949db66d5a309172a62d',1,'ChimeraTK::DeviceModule']]],
   ['getregisteraccessor_5fimpl',['getRegisterAccessor_impl',['../class_timer_dummy.html#a67937376d5b0e610d42333a62ca42c1d',1,'TimerDummy']]],
   ['getregistername',['getRegisterName',['../class_chimera_t_k_1_1_variable_network_node.html#a29a00f70857dd272654e755dff7abc65',1,'ChimeraTK::VariableNetworkNode']]],
   ['getreturnslave',['getReturnSlave',['../class_chimera_t_k_1_1_feeding_fan_out.html#abab2b93a016a1c94156ded693be4ffd1',1,'ChimeraTK::FeedingFanOut']]],

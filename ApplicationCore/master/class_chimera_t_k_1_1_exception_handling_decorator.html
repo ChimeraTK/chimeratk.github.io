@@ -114,8 +114,9 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_exception_handli
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a041470aaee722d1617e172ca0ed25371"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a041470aaee722d1617e172ca0ed25371">ExceptionHandlingDecorator</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; accessor, <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> &amp;devMod)</td></tr>
-<tr class="separator:a041470aaee722d1617e172ca0ed25371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0987be0ef44f7848bdfbd241c4e509"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#acd0987be0ef44f7848bdfbd241c4e509">ExceptionHandlingDecorator</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; accessor, <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> &amp;devMod, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; recoveryAccessor={nullptr})</td></tr>
+<tr class="memdesc:acd0987be0ef44f7848bdfbd241c4e509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorate the accessors which is handed in the constuctor.  <a href="#acd0987be0ef44f7848bdfbd241c4e509">More...</a><br /></td></tr>
+<tr class="separator:acd0987be0ef44f7848bdfbd241c4e509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a666085917708684718539d6e0d693565"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a666085917708684718539d6e0d693565">doWriteTransfer</a> (ChimeraTK::VersionNumber versionNumber={}) override</td></tr>
 <tr class="separator:a666085917708684718539d6e0d693565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4580d9d3037766e4c56c69bdef1c830"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#aa4580d9d3037766e4c56c69bdef1c830">doWriteTransferDestructively</a> (ChimeraTK::VersionNumber versionNumber={}) override</td></tr>
@@ -156,6 +157,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a94e84d6cfbda358e6b03e7820384463e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62ce2140be0f20cd5bda022ad88322dc"><td class="memItemLeft" align="right" valign="top">DataValidity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a62ce2140be0f20cd5bda022ad88322dc">localValidity</a> {DataValidity::ok}</td></tr>
 <tr class="separator:a62ce2140be0f20cd5bda022ad88322dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8931d7eca76758f0de9835af4f0148"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#adb8931d7eca76758f0de9835af4f0148">_recoveryAccessor</a> {nullptr}</td></tr>
+<tr class="separator:adb8931d7eca76758f0de9835af4f0148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c42e79150ac529a54898457794d5c85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a8c42e79150ac529a54898457794d5c85">_owner</a> = {nullptr}</td></tr>
 <tr class="separator:a8c42e79150ac529a54898457794d5c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -167,16 +170,13 @@ class ChimeraTK::ExceptionHandlingDecorator&lt; UserType &gt;</h3>
 
 <p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00019">19</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a041470aaee722d1617e172ca0ed25371"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a041470aaee722d1617e172ca0ed25371">&#9670;&nbsp;</a></span>ExceptionHandlingDecorator()</h2>
+<a id="acd0987be0ef44f7848bdfbd241c4e509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd0987be0ef44f7848bdfbd241c4e509">&#9670;&nbsp;</a></span>ExceptionHandlingDecorator()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename UserType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html">ChimeraTK::ExceptionHandlingDecorator</a>&lt; UserType &gt;::<a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html">ExceptionHandlingDecorator</a> </td>
@@ -188,7 +188,13 @@ template&lt;typename UserType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> &amp;&#160;</td>
-          <td class="paramname"><em>devMod</em>&#160;</td>
+          <td class="paramname"><em>devMod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt;&#160;</td>
+          <td class="paramname"><em>recoveryAccessor</em> = <code>{nullptr}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -196,20 +202,18 @@ template&lt;typename UserType &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00021">21</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
+<p>Decorate the accessors which is handed in the constuctor. </p>
+<p>It needs the device module to implement the exception handling. Accessors which write to the device in addition need a recovery accessor so the variables can be written again after a device has recovered from an error. Accessors which only read don't specify the third parameter. </p>
+
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00011">11</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a041470aaee722d1617e172ca0ed25371_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_acd0987be0ef44f7848bdfbd241c4e509_cgraph.svg" width="534" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -241,15 +245,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00122">122</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a28c3c3d51c5e97712bdece9bf9657a73_icgraph.svg" width="563" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00160">160</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 
 </div>
 </div>
@@ -278,13 +274,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00107">107</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00122">122</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a8a7a0237138ab57f0e0d0c1165fbabfc_icgraph.svg" width="563" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a8a7a0237138ab57f0e0d0c1165fbabfc_cgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -315,13 +311,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00117">117</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00155">155</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a6689621da41e47e1d3e911452e505568_icgraph.svg" width="563" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a6689621da41e47e1d3e911452e505568_cgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -352,13 +348,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00102">102</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00117">117</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_ad59cb7d6ca167a65af3314439601046e_icgraph.svg" width="563" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_ad59cb7d6ca167a65af3314439601046e_cgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -389,13 +385,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00112">112</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00127">127</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a6d821cc61809f2812faf0e8551d2394a_icgraph.svg" width="563" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a6d821cc61809f2812faf0e8551d2394a_cgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -426,13 +422,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00075">75</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00089">89</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a8a76ef246f4ff5eba0ba9aa3ddbe6c8f_icgraph.svg" width="563" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a8a76ef246f4ff5eba0ba9aa3ddbe6c8f_cgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -463,13 +459,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00091">91</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00106">106</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a85862e6c515291dc28d9d85a4666a9ea_icgraph.svg" width="572" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a85862e6c515291dc28d9d85a4666a9ea_cgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -500,13 +496,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00085">85</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00100">100</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_afd84fdd105e01e4333213916f51c5e72_icgraph.svg" width="574" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_afd84fdd105e01e4333213916f51c5e72_cgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -537,13 +533,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00080">80</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00094">94</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a868656cf5b69644e6fb618d124b3460a_icgraph.svg" width="615" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a868656cf5b69644e6fb618d124b3460a_cgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -575,13 +571,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00057">57</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00071">71</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a666085917708684718539d6e0d693565_icgraph.svg" width="563" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a666085917708684718539d6e0d693565_cgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -613,13 +609,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00066">66</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00080">80</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_aa4580d9d3037766e4c56c69bdef1c830_icgraph.svg" width="622" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_aa4580d9d3037766e4c56c69bdef1c830_cgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -661,13 +657,21 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00024">24</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00037">37</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_aa70a58a3119983a5912b54c7bff03767_cgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_aa70a58a3119983a5912b54c7bff03767_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_aa70a58a3119983a5912b54c7bff03767_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -698,13 +702,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00133">133</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00171">171</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a76870f06ec721733fcf735d035804137_icgraph.svg" width="563" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a76870f06ec721733fcf735d035804137_cgraph.svg" width="478" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -728,21 +732,13 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00140">140</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00178">178</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 <div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a9f727076598326eb295919670a919d4d_cgraph.svg" width="494" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a9f727076598326eb295919670a919d4d_icgraph.svg" width="563" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -774,7 +770,15 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00011">11</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00023">23</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_abbede3c317d7f855830b0b2ca04c5180_cgraph.svg" width="496" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -801,7 +805,33 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00055">55</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00062">62</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
+
+</div>
+</div>
+<a id="adb8931d7eca76758f0de9835af4f0148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb8931d7eca76758f0de9835af4f0148">&#9670;&nbsp;</a></span>_recoveryAccessor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;NDRegisterAccessor&lt;UserType&gt; &gt; <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html">ChimeraTK::ExceptionHandlingDecorator</a>&lt; UserType &gt;::_recoveryAccessor {nullptr}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00061">61</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -827,7 +857,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00051">51</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00057">57</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -853,7 +883,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00052">52</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00058">58</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -867,7 +897,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html">ExceptionHandlingDecorator</a></li>
-    <li class="footer">Generated on Tue Jan 21 2020 04:53:33 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Jan 22 2020 04:53:50 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

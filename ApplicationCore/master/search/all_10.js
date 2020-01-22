@@ -14,6 +14,7 @@ var searchData=
   ['readdeviceinfo',['readDeviceInfo',['../class_timer_dummy.html#afc3c0a535cedb19a2e52637ec5f2f318',1,'TimerDummy']]],
   ['readscalar',['readScalar',['../class_chimera_t_k_1_1_test_facility.html#a3dbd50a75109e977ed45a13ae29234cc',1,'ChimeraTK::TestFacility']]],
   ['readsplitarraymodule',['ReadSplitArrayModule',['../struct_chimera_t_k_1_1_read_split_array_module.html',1,'ChimeraTK::ReadSplitArrayModule&lt; TYPE &gt;'],['../struct_chimera_t_k_1_1_read_split_array_module.html#a3e1da6334ba26771151430c24436de11',1,'ChimeraTK::ReadSplitArrayModule::ReadSplitArrayModule(EntityOwner *owner, const std::string &amp;name, const std::string &amp;description, size_t nGroups, size_t nElemsPerGroup=1)'],['../struct_chimera_t_k_1_1_read_split_array_module.html#abe971b081574222720afa6ddd1167103',1,'ChimeraTK::ReadSplitArrayModule::ReadSplitArrayModule()']]],
+  ['recoverysharedmutex',['recoverySharedMutex',['../class_chimera_t_k_1_1_device_module.html#a73fd93754d70b2a35a37e94bca3242a3',1,'ChimeraTK::DeviceModule']]],
   ['registeraccessor',['registerAccessor',['../class_chimera_t_k_1_1_entity_owner.html#a260d2a06bf851b4b685ae498cf5a2237',1,'ChimeraTK::EntityOwner']]],
   ['registerdevicemodule',['registerDeviceModule',['../class_chimera_t_k_1_1_application.html#a8004bc7d4305468a5497e278f2af7203',1,'ChimeraTK::Application']]],
   ['registermodule',['registerModule',['../class_chimera_t_k_1_1_entity_owner.html#a9690d4ae29d8a9e05d34feed82533e94',1,'ChimeraTK::EntityOwner']]],
