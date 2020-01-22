@@ -210,12 +210,13 @@ var NAVTREEINDEX3 =
 "class_chimera_t_k_1_1_one_d_register_accessor.html#afe95aa6e072a7565655d69afa67a41ff":[15,0,0,56,23],
 "class_chimera_t_k_1_1_pcie_backend.html":[15,0,0,57],
 "class_chimera_t_k_1_1_pcie_backend.html#a022a91507cffa2e451267d123f58361f":[15,0,0,57,0],
-"class_chimera_t_k_1_1_pcie_backend.html#a1fb8f7c572f845e32e5fc7f9f6ba9022":[15,0,0,57,3],
-"class_chimera_t_k_1_1_pcie_backend.html#a267abe5fde0be68199b8bec08d9c403f":[15,0,0,57,6],
-"class_chimera_t_k_1_1_pcie_backend.html#a4b2db487394898b813af14c694ab5bb7":[15,0,0,57,2],
-"class_chimera_t_k_1_1_pcie_backend.html#aa463a65abad83e66506e4ac0eaf3a440":[15,0,0,57,1],
-"class_chimera_t_k_1_1_pcie_backend.html#ac3757c4241880d514dfa9e554d547233":[15,0,0,57,4],
-"class_chimera_t_k_1_1_pcie_backend.html#adf6ac1d362f894b203020500816d47c3":[15,0,0,57,5],
+"class_chimera_t_k_1_1_pcie_backend.html#a1d6602b3bec2ea6d7a7fbf374869c8fd":[15,0,0,57,2],
+"class_chimera_t_k_1_1_pcie_backend.html#a23b98aec1088e239fd58d1fcea559699":[15,0,0,57,5],
+"class_chimera_t_k_1_1_pcie_backend.html#a39516fe0396948c81cc04a20a2ecfa83":[15,0,0,57,7],
+"class_chimera_t_k_1_1_pcie_backend.html#a5c8b5b7825369150b6cdbc79c62a7f94":[15,0,0,57,3],
+"class_chimera_t_k_1_1_pcie_backend.html#a6c3004620460dd3657f3f583886af017":[15,0,0,57,4],
+"class_chimera_t_k_1_1_pcie_backend.html#a6d56cd361c4aa9af0befcc9efd4adbe4":[15,0,0,57,6],
+"class_chimera_t_k_1_1_pcie_backend.html#acfe449ed96301bf49f88d3fc63870881":[15,0,0,57,1],
 "class_chimera_t_k_1_1_read_any_group.html":[15,0,0,58],
 "class_chimera_t_k_1_1_read_any_group.html#a0616097393d6007d2b865c2fb3362bb6":[15,0,0,58,14],
 "class_chimera_t_k_1_1_read_any_group.html#a52e203fd66aed19b829db1150fb90fc1":[15,0,0,58,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "class_chimera_t_k_1_1_rebot_1_1_connection.html#a4d4b4b1562453d575e528c514b702cde":[15,0,0,2,0,5],
 "class_chimera_t_k_1_1_rebot_1_1_connection.html#a6e6643bd8d5aeb7af6b1e721fef328c6":[15,0,0,2,0,2],
 "class_chimera_t_k_1_1_rebot_1_1_connection.html#a9492b8de4bcab42ec94419e150768ee9":[15,0,0,2,0,3],
-"class_chimera_t_k_1_1_rebot_1_1_connection.html#ad2ab710e8c98c9c4f2ae0afa5d10b59d":[15,0,0,2,0,4],
-"class_chimera_t_k_1_1_rebot_backend.html":[15,0,0,59]
+"class_chimera_t_k_1_1_rebot_1_1_connection.html#ad2ab710e8c98c9c4f2ae0afa5d10b59d":[15,0,0,2,0,4]
 };

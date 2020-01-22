@@ -1,10 +1,11 @@
 var class_chimera_t_k_1_1_pcie_backend =
 [
     [ "PcieBackend", "class_chimera_t_k_1_1_pcie_backend.html#a022a91507cffa2e451267d123f58361f", null ],
-    [ "~PcieBackend", "class_chimera_t_k_1_1_pcie_backend.html#aa463a65abad83e66506e4ac0eaf3a440", null ],
-    [ "close", "class_chimera_t_k_1_1_pcie_backend.html#a4b2db487394898b813af14c694ab5bb7", null ],
-    [ "open", "class_chimera_t_k_1_1_pcie_backend.html#a1fb8f7c572f845e32e5fc7f9f6ba9022", null ],
-    [ "read", "class_chimera_t_k_1_1_pcie_backend.html#ac3757c4241880d514dfa9e554d547233", null ],
-    [ "readDeviceInfo", "class_chimera_t_k_1_1_pcie_backend.html#adf6ac1d362f894b203020500816d47c3", null ],
-    [ "write", "class_chimera_t_k_1_1_pcie_backend.html#a267abe5fde0be68199b8bec08d9c403f", null ]
+    [ "~PcieBackend", "class_chimera_t_k_1_1_pcie_backend.html#acfe449ed96301bf49f88d3fc63870881", null ],
+    [ "close", "class_chimera_t_k_1_1_pcie_backend.html#a1d6602b3bec2ea6d7a7fbf374869c8fd", null ],
+    [ "isFunctional", "class_chimera_t_k_1_1_pcie_backend.html#a5c8b5b7825369150b6cdbc79c62a7f94", null ],
+    [ "open", "class_chimera_t_k_1_1_pcie_backend.html#a6c3004620460dd3657f3f583886af017", null ],
+    [ "read", "class_chimera_t_k_1_1_pcie_backend.html#a23b98aec1088e239fd58d1fcea559699", null ],
+    [ "readDeviceInfo", "class_chimera_t_k_1_1_pcie_backend.html#a6d56cd361c4aa9af0befcc9efd4adbe4", null ],
+    [ "write", "class_chimera_t_k_1_1_pcie_backend.html#a39516fe0396948c81cc04a20a2ecfa83", null ]
 ];
