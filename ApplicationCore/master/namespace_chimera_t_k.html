@@ -373,6 +373,12 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a335687084d53741a8764f40a3e6d35c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hierarchy modifier: specify if and how the module hierarchy should be modified in EntityOwner::findTag() etc.  <a href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a335687084d53741a8764f40a3e6d35c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c04b7fb1519cd2b454be33d88bb72d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72d">LifeCycleState</a> { <a class="el" href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72da3e52131e6b272be51242ee00310b7252">LifeCycleState::initialisation</a>, 
+<a class="el" href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72daa53108f7543b75adbb34afc035d4cdf6">LifeCycleState::run</a>, 
+<a class="el" href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72da5924f03a95ee6f7277e5bdd1e81b8fdc">LifeCycleState::shutdown</a>
+ }<tr class="memdesc:a69c04b7fb1519cd2b454be33d88bb72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum to define the life-cycle states of an Application.  <a href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72d">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a69c04b7fb1519cd2b454be33d88bb72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6921a3fa4a30c73fc33e3a7f84326781"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781">States</a> { <a class="el" href="namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781a010c61379bf7863db40cee3b9836248b">OFF</a>, 
 <a class="el" href="namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781a1ff4d91265345b7ab22a94125ccf11db">OK</a>, 
 <a class="el" href="namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781a1258a3c774701420cfd704cebc54587b">WARNING</a>, 
@@ -482,8 +488,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a335687084d53741a8764f40a3e6d35c0a42fd45b7dde2262d94504c986ff06e36"></a>hideThis&#160;</td><td class="fielddoc"><p>The hierarchy level at which this flag is specified is hidden. </p>
 <p>Everything below this level is moved exactly one level up. The structure below this level is kept. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a335687084d53741a8764f40a3e6d35c0a5cf8fc165257722f4ff962f06359ee11"></a>moveToRoot&#160;</td><td class="fielddoc"><p>The module at which this flag is specified is moved to the root level, together with the entire structure below the module. </p>
-<p>Note: Unless you run findTag() or so on the entire application, the moved hierarchy structures might not be visible in the control system etc. </p>
+<tr><td class="fieldname"><a id="a335687084d53741a8764f40a3e6d35c0a5cf8fc165257722f4ff962f06359ee11"></a>moveToRoot&#160;</td><td class="fielddoc"><p>The module at which this flag is specified is moved to the root level, together with the entire. </p>
+<p>structure below the module. Note: Unless you run findTag() or so on the entire application, the moved hierarchy structures might not be visible in the control system etc. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a335687084d53741a8764f40a3e6d35c0ae47527f81def99820295151c908e9c4c"></a>oneLevelUp&#160;</td><td class="fielddoc"><p>Move the module up to the level where the owner lives. </p>
 <p>Instead of creating a "daughter" of the owning module, it creates a "sister" (module that lives on the same level). This modifyer can only be used in sub-modules, not on the first level </p>
@@ -494,6 +500,42 @@ Functions</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="_flags_8h_source.html#l00037">37</a> of file <a class="el" href="_flags_8h_source.html">Flags.h</a>.</p>
+
+</div>
+</div>
+<a id="a69c04b7fb1519cd2b454be33d88bb72d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69c04b7fb1519cd2b454be33d88bb72d">&#9670;&nbsp;</a></span>LifeCycleState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72d">ChimeraTK::LifeCycleState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enum to define the life-cycle states of an <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a69c04b7fb1519cd2b454be33d88bb72da3e52131e6b272be51242ee00310b7252"></a>initialisation&#160;</td><td class="fielddoc"><p>Initialisation phase including <a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ApplicationModule::prepare()</a>. </p>
+<p>Single threaded operation. All devices are closed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69c04b7fb1519cd2b454be33d88bb72daa53108f7543b75adbb34afc035d4cdf6"></a>run&#160;</td><td class="fielddoc"><p>Actual run phase with full multi threading. </p>
+<p>The state is entered right before the threads are launched, so there is no guarantee that the application threads have already reached a certain point. Devices will be opened after this point. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69c04b7fb1519cd2b454be33d88bb72da5924f03a95ee6f7277e5bdd1e81b8fdc"></a>shutdown&#160;</td><td class="fielddoc"><p>The application is in the process of shutting down. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="_flags_8h_source.html#l00053">53</a> of file <a class="el" href="_flags_8h_source.html">Flags.h</a>.</p>
 
 </div>
 </div>
@@ -756,7 +798,7 @@ template&lt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li>
-    <li class="footer">Generated on Wed Jan 22 2020 04:53:50 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Jan 23 2020 04:53:31 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -8,6 +8,11 @@ var _flags_8h =
       [ "oneLevelUp", "_flags_8h.html#a335687084d53741a8764f40a3e6d35c0ae47527f81def99820295151c908e9c4c", null ],
       [ "oneUpAndHide", "_flags_8h.html#a335687084d53741a8764f40a3e6d35c0aaf52e9bd48f3a48fa47a05d2b3b90338", null ]
     ] ],
+    [ "LifeCycleState", "_flags_8h.html#a69c04b7fb1519cd2b454be33d88bb72d", [
+      [ "initialisation", "_flags_8h.html#a69c04b7fb1519cd2b454be33d88bb72da3e52131e6b272be51242ee00310b7252", null ],
+      [ "run", "_flags_8h.html#a69c04b7fb1519cd2b454be33d88bb72daa53108f7543b75adbb34afc035d4cdf6", null ],
+      [ "shutdown", "_flags_8h.html#a69c04b7fb1519cd2b454be33d88bb72da5924f03a95ee6f7277e5bdd1e81b8fdc", null ]
+    ] ],
     [ "NodeType", "_flags_8h.html#a8ef88da2631968bb315b54f3bf2e9f1d", [
       [ "Device", "_flags_8h.html#a8ef88da2631968bb315b54f3bf2e9f1dae0ac20adce6ffee48c7151b070aa5737", null ],
       [ "ControlSystem", "_flags_8h.html#a8ef88da2631968bb315b54f3bf2e9f1da8963bd99a5d8bd9b55688118bfd966c0", null ],

@@ -88,10 +88,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "ThreadedFanOut", "class_chimera_t_k_1_1_threaded_fan_out.html", "class_chimera_t_k_1_1_threaded_fan_out" ],
       [ "ThreadedFanOutWithReturn", "class_chimera_t_k_1_1_threaded_fan_out_with_return.html", "class_chimera_t_k_1_1_threaded_fan_out_with_return" ]
     ] ],
-    [ "TriggerFanOut.h", "_trigger_fan_out_8h.html", [
-      [ "TriggerFanOut", "class_chimera_t_k_1_1_trigger_fan_out.html", "class_chimera_t_k_1_1_trigger_fan_out" ],
-      [ "SendDataToConsumers", "struct_chimera_t_k_1_1_trigger_fan_out_1_1_send_data_to_consumers.html", "struct_chimera_t_k_1_1_trigger_fan_out_1_1_send_data_to_consumers" ]
-    ] ],
+    [ "TriggerFanOut.h", "_trigger_fan_out_8h.html", "_trigger_fan_out_8h" ],
     [ "VariableGroup.h", "_variable_group_8h.html", [
       [ "VariableGroup", "class_chimera_t_k_1_1_variable_group.html", "class_chimera_t_k_1_1_variable_group" ]
     ] ],
