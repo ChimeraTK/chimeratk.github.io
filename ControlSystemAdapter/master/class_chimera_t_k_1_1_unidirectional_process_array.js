@@ -15,5 +15,7 @@ var class_chimera_t_k_1_1_unidirectional_process_array =
     [ "getVersionNumber", "class_chimera_t_k_1_1_unidirectional_process_array.html#a57a5a9bacf608a411500dccf43c39e55", null ],
     [ "interrupt", "class_chimera_t_k_1_1_unidirectional_process_array.html#ac48b0c941a29ad8a1e0a04f24277b46e", null ],
     [ "setDataValidity", "class_chimera_t_k_1_1_unidirectional_process_array.html#a73129880919f49b432f339b1c3c3f816", null ],
-    [ "setPersistentDataStorage", "class_chimera_t_k_1_1_unidirectional_process_array.html#a70445d795d2a69b6214d0f5d5738c3e6", null ]
+    [ "setPersistentDataStorage", "class_chimera_t_k_1_1_unidirectional_process_array.html#a70445d795d2a69b6214d0f5d5738c3e6", null ],
+    [ "createSynchronizedProcessArray", "class_chimera_t_k_1_1_unidirectional_process_array.html#ae375549accb12aa3d9c3fef87e122eba", null ],
+    [ "createSynchronizedProcessArray", "class_chimera_t_k_1_1_unidirectional_process_array.html#a68ad426f404d174aa747336bba32126a", null ]
 ];
