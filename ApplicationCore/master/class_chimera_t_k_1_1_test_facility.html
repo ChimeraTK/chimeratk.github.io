@@ -102,7 +102,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afc1238aaadcddda96d35a6c64b88326a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor will internally obtain the instance of the application, so the instance of the <a class="el" href="class_chimera_t_k_1_1_test_facility.html" title="Helper class to facilitate tests of applications based on ApplicationCore. ">TestFacility</a> must not be created before the application (i.e.  <a href="#afc1238aaadcddda96d35a6c64b88326a">More...</a><br /></td></tr>
 <tr class="separator:afc1238aaadcddda96d35a6c64b88326a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa89dcd98d96bef731b8dbd75964bb18c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#aa89dcd98d96bef731b8dbd75964bb18c">runApplication</a> () const</td></tr>
-<tr class="memdesc:aa89dcd98d96bef731b8dbd75964bb18c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the application.  <a href="#aa89dcd98d96bef731b8dbd75964bb18c">More...</a><br /></td></tr>
+<tr class="memdesc:aa89dcd98d96bef731b8dbd75964bb18c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the application in testable mode.  <a href="#aa89dcd98d96bef731b8dbd75964bb18c">More...</a><br /></td></tr>
 <tr class="separator:aa89dcd98d96bef731b8dbd75964bb18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb42f847c5014f174aa43ba422f561f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#afb42f847c5014f174aa43ba422f561f3">stepApplication</a> () const</td></tr>
 <tr class="memdesc:afb42f847c5014f174aa43ba422f561f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a "step" of the application.  <a href="#afb42f847c5014f174aa43ba422f561f3">More...</a><br /></td></tr>
@@ -131,6 +131,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa27fd819018ba8a7e6d9f8727c0ab92c"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; TYPE &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#aa27fd819018ba8a7e6d9f8727c0ab92c">readArray</a> (const std::string &amp;name)</td></tr>
 <tr class="memdesc:aa27fd819018ba8a7e6d9f8727c0ab92c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to read the latest value of an array process variable in a single call.  <a href="#aa27fd819018ba8a7e6d9f8727c0ab92c">More...</a><br /></td></tr>
 <tr class="separator:aa27fd819018ba8a7e6d9f8727c0ab92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec541448a82eaf896cf4acbeb16cf24"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aaec541448a82eaf896cf4acbeb16cf24"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#aaec541448a82eaf896cf4acbeb16cf24">setScalarDefault</a> (const ChimeraTK::RegisterPath &amp;name, const T &amp;value)</td></tr>
+<tr class="memdesc:aaec541448a82eaf896cf4acbeb16cf24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default value for scalar process variable.  <a href="#aaec541448a82eaf896cf4acbeb16cf24">More...</a><br /></td></tr>
+<tr class="separator:aaec541448a82eaf896cf4acbeb16cf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabbb782698a274088f5ee5cb1a823a0f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aabbb782698a274088f5ee5cb1a823a0f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#aabbb782698a274088f5ee5cb1a823a0f">setArrayDefault</a> (const ChimeraTK::RegisterPath &amp;name, const std::vector&lt; T &gt; &amp;value)</td></tr>
+<tr class="memdesc:aabbb782698a274088f5ee5cb1a823a0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default value for array process variable.  <a href="#aabbb782698a274088f5ee5cb1a823a0f">More...</a><br /></td></tr>
+<tr class="separator:aabbb782698a274088f5ee5cb1a823a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -140,6 +148,9 @@ Protected Types</h2></td></tr>
 <tr class="memitem:ac070dc64f09a1fffdd1967c345d1cb84"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:ac070dc64f09a1fffdd1967c345d1cb84"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#ac070dc64f09a1fffdd1967c345d1cb84">ArrayMap</a> = std::map&lt; std::string, ChimeraTK::OneDRegisterAccessor&lt; UserType &gt; &gt;</td></tr>
 <tr class="separator:ac070dc64f09a1fffdd1967c345d1cb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35bb27a7b17bd09da4b3d9649e074006"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a35bb27a7b17bd09da4b3d9649e074006"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#a35bb27a7b17bd09da4b3d9649e074006">Defaults</a> = std::map&lt; std::string, std::vector&lt; UserType &gt; &gt;</td></tr>
+<tr class="separator:a35bb27a7b17bd09da4b3d9649e074006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -149,6 +160,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a49151a45dd4adf2dfdfcb5109d5d879b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d81404c64f50c9f314eb460bce6d2b6"><td class="memItemLeft" align="right" valign="top">ChimeraTK::TemplateUserTypeMap&lt; <a class="el" href="class_chimera_t_k_1_1_test_facility.html#ac070dc64f09a1fffdd1967c345d1cb84">ArrayMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#a6d81404c64f50c9f314eb460bce6d2b6">arrayMap</a></td></tr>
 <tr class="separator:a6d81404c64f50c9f314eb460bce6d2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa04745a7c6c50bff0806aa747574a6"><td class="memItemLeft" align="right" valign="top">ChimeraTK::TemplateUserTypeMap&lt; <a class="el" href="class_chimera_t_k_1_1_test_facility.html#a35bb27a7b17bd09da4b3d9649e074006">Defaults</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#abaa04745a7c6c50bff0806aa747574a6">defaults</a></td></tr>
+<tr class="separator:abaa04745a7c6c50bff0806aa747574a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper class to facilitate tests of applications based on ApplicationCore. </p>
@@ -177,7 +190,33 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00183">183</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00224">224</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+
+</div>
+</div>
+<a id="a35bb27a7b17bd09da4b3d9649e074006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35bb27a7b17bd09da4b3d9649e074006">&#9670;&nbsp;</a></span>Defaults</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_chimera_t_k_1_1_test_facility.html#a35bb27a7b17bd09da4b3d9649e074006">ChimeraTK::TestFacility::Defaults</a> =  std::map&lt;std::string, std::vector&lt;UserType&gt; &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00229">229</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -203,7 +242,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00179">179</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00220">220</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -276,7 +315,7 @@ template&lt;typename T &gt; </div>
 
 <p>Obtain an array-type process variable from the application, which is published to the control system. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00102">102</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00123">123</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -316,7 +355,7 @@ template&lt;typename T &gt; </div>
 
 <p>Obtain a scalar process variable from the application, which is published to the control system. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00068">68</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00089">89</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -356,7 +395,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>Convenience function to read the latest value of an array process variable in a single call. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00163">163</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00184">184</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -388,7 +427,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>Convenience function to read the latest value of a scalar process variable in a single call. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00154">154</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00175">175</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -415,16 +454,115 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Start the application. </p>
-<p>This simply calls <a class="el" href="class_chimera_t_k_1_1_application.html#a6815195c956c091a6558a316f8fd9976">Application::run()</a>. Since the application is in testable mode, it will be ??? TODO define precisely what happens on start up </p>
+<p>Start the application in testable mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00041">41</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00039">39</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_aa89dcd98d96bef731b8dbd75964bb18c_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aabbb782698a274088f5ee5cb1a823a0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabbb782698a274088f5ee5cb1a823a0f">&#9670;&nbsp;</a></span>setArrayDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::TestFacility::setArrayDefault </td>
+          <td>(</td>
+          <td class="paramtype">const ChimeraTK::RegisterPath &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set default value for array process variable. </p>
+
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00200">200</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_aabbb782698a274088f5ee5cb1a823a0f_icgraph.svg" width="408" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aaec541448a82eaf896cf4acbeb16cf24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaec541448a82eaf896cf4acbeb16cf24">&#9670;&nbsp;</a></span>setScalarDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::TestFacility::setScalarDefault </td>
+          <td>(</td>
+          <td class="paramtype">const ChimeraTK::RegisterPath &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set default value for scalar process variable. </p>
+
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00192">192</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_aaec541448a82eaf896cf4acbeb16cf24_cgraph.svg" width="408" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -456,12 +594,12 @@ template&lt;typename TYPE &gt; </div>
 <p>Perform a "step" of the application. </p>
 <p>This runs the application until all input provided to it has been processed and all application modules wait for new data in blocking read calls. This function returns only after the application has reached that stated and was paused again. After returning from this function, the result can be checked and new data can be provided to the application. The new data will not be processed until the next call to step(). </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00063">63</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00084">84</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_afb42f847c5014f174aa43ba422f561f3_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -506,7 +644,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>Convenience function to write an array process variable in a single call. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00145">145</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00166">166</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -548,7 +686,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>Convenience function to write a scalar process variable in a single call. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00136">136</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00157">157</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +711,31 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00184">184</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00225">225</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+
+</div>
+</div>
+<a id="abaa04745a7c6c50bff0806aa747574a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa04745a7c6c50bff0806aa747574a6">&#9670;&nbsp;</a></span>defaults</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::TemplateUserTypeMap&lt;<a class="el" href="class_chimera_t_k_1_1_test_facility.html#a35bb27a7b17bd09da4b3d9649e074006">Defaults</a>&gt; ChimeraTK::TestFacility::defaults</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00230">230</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -597,7 +759,7 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00170">170</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00211">211</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -621,7 +783,7 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00180">180</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00221">221</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -634,7 +796,7 @@ template&lt;typename TYPE &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_test_facility.html">TestFacility</a></li>
-    <li class="footer">Generated on Thu Jan 23 2020 04:53:31 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Jan 24 2020 04:53:53 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

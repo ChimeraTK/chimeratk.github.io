@@ -270,6 +270,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ad571a938acbc6e0f65b257cbff8e92ea"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#ad571a938acbc6e0f65b257cbff8e92ea">_tags</a></td></tr>
 <tr class="memdesc:ad571a938acbc6e0f65b257cbff8e92ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of tags to be added to all accessors and modules inside this module.  <a href="#ad571a938acbc6e0f65b257cbff8e92ea">More...</a><br /></td></tr>
 <tr class="separator:ad571a938acbc6e0f65b257cbff8e92ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e3839277722f30e1fb32c6e7d8d291"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#aa3e3839277722f30e1fb32c6e7d8d291">testableModeReached</a> {false}</td></tr>
+<tr class="memdesc:aa3e3839277722f30e1fb32c6e7d8d291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag used by the testable mode to identify whether a thread within the <a class="el" href="class_chimera_t_k_1_1_entity_owner.html" title="Base class for owners of other EntityOwners (e.g. ">EntityOwner</a> has reached the point where the testable mode lock is acquired.  <a href="#aa3e3839277722f30e1fb32c6e7d8d291">More...</a><br /></td></tr>
+<tr class="separator:aa3e3839277722f30e1fb32c6e7d8d291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for owners of other EntityOwners (e.g. </p>
@@ -649,7 +652,7 @@ Protected Attributes</h2></td></tr>
 <p>Decrement the fault counter and set the data validity flag to ok if the counter has reached 0. </p>
 <p>This function will be called by all input accessors when receiving the an ok update if the previous update was faulty. The caller of this function must ensure that calles to this function are paired to a previous call to <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a4bf395eff5f004bc8396cb18495915f8" title="Set the data validity flag to fault and increment the fault counter. ">incrementDataFaultCounter()</a>. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#a0e2803ab77214f94b9bca2c6ac4e0c8b">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#ae91e52dadf0e6305384df877f7007cc3">ChimeraTK::Module</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#aad40af62f7e7f02bc0de2cdebb8a2920">ChimeraTK::DeviceModule</a>, and <a class="el" href="class_chimera_t_k_1_1_application_module.html#a14834970b6ed0486d53679e43c56a6c2">ChimeraTK::ApplicationModule</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#a0e2803ab77214f94b9bca2c6ac4e0c8b">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#ae91e52dadf0e6305384df877f7007cc3">ChimeraTK::Module</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#aad40af62f7e7f02bc0de2cdebb8a2920">ChimeraTK::DeviceModule</a>, <a class="el" href="class_chimera_t_k_1_1_application_module.html#a14834970b6ed0486d53679e43c56a6c2">ChimeraTK::ApplicationModule</a>, and <a class="el" href="class_chimera_t_k_1_1_internal_module.html#a25acf0e867e130f5a4e4a110467e3432">ChimeraTK::InternalModule</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -1087,7 +1090,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Return the current version number which has been received with the last push-type read operation. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#a85591458b59766a934c520d3894ea40c">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#a18f537b069bebcf366f78b989f244994">ChimeraTK::Module</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#a0b1397c1859b806f25953d8e5823ae9e">ChimeraTK::DeviceModule</a>, and <a class="el" href="class_chimera_t_k_1_1_application_module.html#acf7f5e081d8dedd9ee61e6f3bc13aa37">ChimeraTK::ApplicationModule</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#a85591458b59766a934c520d3894ea40c">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#a18f537b069bebcf366f78b989f244994">ChimeraTK::Module</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#a0b1397c1859b806f25953d8e5823ae9e">ChimeraTK::DeviceModule</a>, <a class="el" href="class_chimera_t_k_1_1_application_module.html#acf7f5e081d8dedd9ee61e6f3bc13aa37">ChimeraTK::ApplicationModule</a>, and <a class="el" href="class_chimera_t_k_1_1_internal_module.html#a0037b0e284cb90f312dadd30cf63e34d">ChimeraTK::InternalModule</a>.</p>
 <div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-27-summary" class="dynsummary" style="display:block;">
@@ -1125,7 +1128,7 @@ Protected Attributes</h2></td></tr>
 <p>Return the data validity flag. </p>
 <p>If any This function will be called by all output accessors in their write functions. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#afc90a088a6dd23059f539bc80b486c7a">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#a5a5f8bbd296d64d5fb804c2c6a9de643">ChimeraTK::Module</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#ae096be5d7013ce6bc18e5fb39d7674cc">ChimeraTK::DeviceModule</a>, and <a class="el" href="class_chimera_t_k_1_1_application_module.html#a16d396795d2e8116cc75cd3a10d160f2">ChimeraTK::ApplicationModule</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#afc90a088a6dd23059f539bc80b486c7a">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#a5a5f8bbd296d64d5fb804c2c6a9de643">ChimeraTK::Module</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#ae096be5d7013ce6bc18e5fb39d7674cc">ChimeraTK::DeviceModule</a>, <a class="el" href="class_chimera_t_k_1_1_application_module.html#a16d396795d2e8116cc75cd3a10d160f2">ChimeraTK::ApplicationModule</a>, and <a class="el" href="class_chimera_t_k_1_1_internal_module.html#a77ff6f36d1452c3bb0ed9d24924fdd07">ChimeraTK::InternalModule</a>.</p>
 <div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-28-summary" class="dynsummary" style="display:block;">
@@ -1237,7 +1240,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Obtain the full description including the full description of the owner. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#afcf25c1bf30d7c001d5ae0a593a1abbc">ChimeraTK::Application</a>, and <a class="el" href="class_chimera_t_k_1_1_module.html#ac9d145451d59e7bacc80766364a8d73e">ChimeraTK::Module</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#afcf25c1bf30d7c001d5ae0a593a1abbc">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#ac9d145451d59e7bacc80766364a8d73e">ChimeraTK::Module</a>, and <a class="el" href="class_chimera_t_k_1_1_internal_module.html#a19e9602c2416d623e5f6e3337b3ad2dc">ChimeraTK::InternalModule</a>.</p>
 <div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-32-summary" class="dynsummary" style="display:block;">
@@ -1312,7 +1315,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Return the module type of this module, or in case of a <a class="el" href="class_chimera_t_k_1_1_virtual_module.html" title="A virtual module generated by EntityOwner::findTag(). ">VirtualModule</a> the module type this <a class="el" href="class_chimera_t_k_1_1_virtual_module.html" title="A virtual module generated by EntityOwner::findTag(). ">VirtualModule</a> was derived from. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#ae35d425b2945e8c00ec70ecd71000378">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#aad3660d26fc3cb6cda85d2e4e7945eb0">ChimeraTK::DeviceModule</a>, <a class="el" href="class_chimera_t_k_1_1_application_module.html#a78cc04235745bc0dca70a65d46217fc5">ChimeraTK::ApplicationModule</a>, <a class="el" href="class_chimera_t_k_1_1_virtual_module.html#a32325205379c2b52646789b074c71921">ChimeraTK::VirtualModule</a>, <a class="el" href="class_chimera_t_k_1_1_variable_group.html#a30a13e26ae428ffac1a4d3272ba3beaf">ChimeraTK::VariableGroup</a>, <a class="el" href="class_chimera_t_k_1_1_module_group.html#a189ec8c45486857aa0afad98cb58eb0a">ChimeraTK::ModuleGroup</a>, and <a class="el" href="class_chimera_t_k_1_1_control_system_module.html#a5e011248216c848749021f0c572944fe">ChimeraTK::ControlSystemModule</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#ae35d425b2945e8c00ec70ecd71000378">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#aad3660d26fc3cb6cda85d2e4e7945eb0">ChimeraTK::DeviceModule</a>, <a class="el" href="class_chimera_t_k_1_1_application_module.html#a78cc04235745bc0dca70a65d46217fc5">ChimeraTK::ApplicationModule</a>, <a class="el" href="class_chimera_t_k_1_1_virtual_module.html#a32325205379c2b52646789b074c71921">ChimeraTK::VirtualModule</a>, <a class="el" href="class_chimera_t_k_1_1_variable_group.html#a30a13e26ae428ffac1a4d3272ba3beaf">ChimeraTK::VariableGroup</a>, <a class="el" href="class_chimera_t_k_1_1_module_group.html#a189ec8c45486857aa0afad98cb58eb0a">ChimeraTK::ModuleGroup</a>, <a class="el" href="class_chimera_t_k_1_1_control_system_module.html#a5e011248216c848749021f0c572944fe">ChimeraTK::ControlSystemModule</a>, and <a class="el" href="class_chimera_t_k_1_1_internal_module.html#a4e09b2bdb550edf9ce76d89a02aeea09">ChimeraTK::InternalModule</a>.</p>
 <div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-34-summary" class="dynsummary" style="display:block;">
@@ -1395,7 +1398,7 @@ Protected Attributes</h2></td></tr>
 <p>Get the fully qualified name of the module instance, i.e. </p>
 <p>the name containing all module names further up in the hierarchy. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#a614e97c009f31afe1844f2ce99f2de1c">ChimeraTK::Application</a>, and <a class="el" href="class_chimera_t_k_1_1_module.html#a09462e535a0c30344012fc821d148f8e">ChimeraTK::Module</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#a614e97c009f31afe1844f2ce99f2de1c">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#a09462e535a0c30344012fc821d148f8e">ChimeraTK::Module</a>, and <a class="el" href="class_chimera_t_k_1_1_internal_module.html#a9d24d6f7e57786cc5775c36a0a0d9ae7">ChimeraTK::InternalModule</a>.</p>
 <div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-37-summary" class="dynsummary" style="display:block;">
@@ -1594,7 +1597,7 @@ Protected Attributes</h2></td></tr>
 <p>Set the data validity flag to fault and increment the fault counter. </p>
 <p>This function will be called by all input accessors when receiving the a faulty update if the previous update was ok. The caller of this function must ensure that calls to this function are paired to a subsequent call to <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a786ec032ab56d05d0e67c8173c2f7a6d" title="Decrement the fault counter and set the data validity flag to ok if the counter has reached 0...">decrementDataFaultCounter()</a>. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#af42778365abdd43b87256e728ef4f109">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#ac06c76f5f6999b5644ddd6975fe6c019">ChimeraTK::Module</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#a2149a50d17ff938ab7b12cd89536cb7d">ChimeraTK::DeviceModule</a>, and <a class="el" href="class_chimera_t_k_1_1_application_module.html#adba57529d35393c817cfbed387b3d2b7">ChimeraTK::ApplicationModule</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#af42778365abdd43b87256e728ef4f109">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#ac06c76f5f6999b5644ddd6975fe6c019">ChimeraTK::Module</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#a2149a50d17ff938ab7b12cd89536cb7d">ChimeraTK::DeviceModule</a>, <a class="el" href="class_chimera_t_k_1_1_application_module.html#adba57529d35393c817cfbed387b3d2b7">ChimeraTK::ApplicationModule</a>, and <a class="el" href="class_chimera_t_k_1_1_internal_module.html#a3ef3241a1ce9648c40a864cda4f9b38d">ChimeraTK::InternalModule</a>.</p>
 <div id="dynsection-46" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-46-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-46-summary" class="dynsummary" style="display:block;">
@@ -1784,7 +1787,7 @@ Protected Attributes</h2></td></tr>
 <p>Set the current version number. </p>
 <p>This function is called by the push-type input accessors in their read functions. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#adea9d78e90e883d43758339a3c37c647">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#a19a036a23479885e7dbd39e395c544c4">ChimeraTK::Module</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#acd714ad2e5ddb2758efb5928816511ce">ChimeraTK::DeviceModule</a>, and <a class="el" href="class_chimera_t_k_1_1_application_module.html#aa36ac737e999a242eaf8c49f92524b15">ChimeraTK::ApplicationModule</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_application.html#adea9d78e90e883d43758339a3c37c647">ChimeraTK::Application</a>, <a class="el" href="class_chimera_t_k_1_1_module.html#a19a036a23479885e7dbd39e395c544c4">ChimeraTK::Module</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#acd714ad2e5ddb2758efb5928816511ce">ChimeraTK::DeviceModule</a>, <a class="el" href="class_chimera_t_k_1_1_application_module.html#aa36ac737e999a242eaf8c49f92524b15">ChimeraTK::ApplicationModule</a>, and <a class="el" href="class_chimera_t_k_1_1_internal_module.html#ac0800aa56f26f411587c70adc6bbcf4a">ChimeraTK::InternalModule</a>.</p>
 <div id="dynsection-52" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-52-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-52-summary" class="dynsummary" style="display:block;">
@@ -2077,6 +2080,33 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aa3e3839277722f30e1fb32c6e7d8d291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e3839277722f30e1fb32c6e7d8d291">&#9670;&nbsp;</a></span>testableModeReached</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;bool&gt; ChimeraTK::EntityOwner::testableModeReached {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flag used by the testable mode to identify whether a thread within the <a class="el" href="class_chimera_t_k_1_1_entity_owner.html" title="Base class for owners of other EntityOwners (e.g. ">EntityOwner</a> has reached the point where the testable mode lock is acquired. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>This should be moved to a more proper place in the hierarchy (e.g. <a class="el" href="class_chimera_t_k_1_1_module_impl.html" title="Some common implementations of a few functions in Module used by most modules (but the VirtualModule)...">ModuleImpl</a>) after <a class="el" href="class_chimera_t_k_1_1_internal_module.html" title="Base class for internal modules which are created by the variable connection code (e...">InternalModule</a> class has been properly unified with the normal <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a> class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00241">241</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/<a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a></li>
 <li>src/<a class="el" href="_entity_owner_8cc_source.html">EntityOwner.cc</a></li>
@@ -2087,7 +2117,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a></li>
-    <li class="footer">Generated on Thu Jan 23 2020 04:53:31 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Jan 24 2020 04:53:52 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

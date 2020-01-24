@@ -53,5 +53,6 @@ var class_chimera_t_k_1_1_entity_owner =
     [ "_name", "class_chimera_t_k_1_1_entity_owner.html#a3b3c71e5ae35ad4bdbd491ac43676971", null ],
     [ "_tags", "class_chimera_t_k_1_1_entity_owner.html#ad571a938acbc6e0f65b257cbff8e92ea", null ],
     [ "accessorList", "class_chimera_t_k_1_1_entity_owner.html#a615f42d1e4b1d0d160e4f6ff9f89d99f", null ],
-    [ "moduleList", "class_chimera_t_k_1_1_entity_owner.html#ac709dfcbaa6f9cfc090f617fc60e21c7", null ]
+    [ "moduleList", "class_chimera_t_k_1_1_entity_owner.html#ac709dfcbaa6f9cfc090f617fc60e21c7", null ],
+    [ "testableModeReached", "class_chimera_t_k_1_1_entity_owner.html#aa3e3839277722f30e1fb32c6e7d8d291", null ]
 ];

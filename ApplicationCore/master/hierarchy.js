@@ -29,6 +29,12 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::EntityOwner", "class_chimera_t_k_1_1_entity_owner.html", [
       [ "ChimeraTK::Application", "class_chimera_t_k_1_1_application.html", null ],
+      [ "ChimeraTK::InternalModule", "class_chimera_t_k_1_1_internal_module.html", [
+        [ "ChimeraTK::ThreadedFanOut< UserType >", "class_chimera_t_k_1_1_threaded_fan_out.html", [
+          [ "ChimeraTK::ThreadedFanOutWithReturn< UserType >", "class_chimera_t_k_1_1_threaded_fan_out_with_return.html", null ]
+        ] ],
+        [ "ChimeraTK::TriggerFanOut", "class_chimera_t_k_1_1_trigger_fan_out.html", null ]
+      ] ],
       [ "ChimeraTK::Module", "class_chimera_t_k_1_1_module.html", [
         [ "ChimeraTK::ControlSystemModule", "class_chimera_t_k_1_1_control_system_module.html", null ],
         [ "ChimeraTK::DeviceModule", "class_chimera_t_k_1_1_device_module.html", null ],
@@ -87,18 +93,12 @@ var hierarchy =
     [ "ChimeraTK::FanOut< UserType >", "class_chimera_t_k_1_1_fan_out.html", [
       [ "ChimeraTK::ConsumingFanOut< UserType >", "class_chimera_t_k_1_1_consuming_fan_out.html", null ],
       [ "ChimeraTK::FeedingFanOut< UserType >", "class_chimera_t_k_1_1_feeding_fan_out.html", null ],
-      [ "ChimeraTK::ThreadedFanOut< UserType >", "class_chimera_t_k_1_1_threaded_fan_out.html", [
-        [ "ChimeraTK::ThreadedFanOutWithReturn< UserType >", "class_chimera_t_k_1_1_threaded_fan_out_with_return.html", null ]
-      ] ]
+      [ "ChimeraTK::ThreadedFanOut< UserType >", "class_chimera_t_k_1_1_threaded_fan_out.html", null ]
     ] ],
     [ "ChimeraTK::FunctorFill", "struct_chimera_t_k_1_1_functor_fill.html", null ],
     [ "ChimeraTK::FunctorSetValues", "struct_chimera_t_k_1_1_functor_set_values.html", null ],
     [ "ChimeraTK::FunctorSetValuesArray", "struct_chimera_t_k_1_1_functor_set_values_array.html", null ],
     [ "ChimeraTK::history::HistoryEntry< UserType >", "struct_chimera_t_k_1_1history_1_1_history_entry.html", null ],
-    [ "ChimeraTK::InternalModule", "class_chimera_t_k_1_1_internal_module.html", [
-      [ "ChimeraTK::ThreadedFanOut< UserType >", "class_chimera_t_k_1_1_threaded_fan_out.html", null ],
-      [ "ChimeraTK::TriggerFanOut", "class_chimera_t_k_1_1_trigger_fan_out.html", null ]
-    ] ],
     [ "ChimeraTK::InversionOfControlAccessor< Derived >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< InputType > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
       [ "ChimeraTK::ArrayAccessor< InputType >", "class_chimera_t_k_1_1_array_accessor.html", [

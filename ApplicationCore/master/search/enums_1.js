@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['lifecyclestate',['LifeCycleState',['../namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72d',1,'ChimeraTK']]],
-  ['loglevel',['LogLevel',['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416',1,'logging']]]
+  ['initialvaluemode',['InitialValueMode',['../class_chimera_t_k_1_1_variable_network_node.html#a4b75169aa1e7bedd394e7020519f2c94',1,'ChimeraTK::VariableNetworkNode']]]
 ];
