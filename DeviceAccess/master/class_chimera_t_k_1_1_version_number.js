@@ -3,6 +3,7 @@ var class_chimera_t_k_1_1_version_number =
     [ "VersionNumber", "class_chimera_t_k_1_1_version_number.html#a9182ffd8795b397438d1fb58aec79886", null ],
     [ "VersionNumber", "class_chimera_t_k_1_1_version_number.html#ae616becd3977713152152b294230f247", null ],
     [ "VersionNumber", "class_chimera_t_k_1_1_version_number.html#a994f595256fe422eb71f034091a557a5", null ],
+    [ "VersionNumber", "class_chimera_t_k_1_1_version_number.html#a4459b850d2e60c413886bb6b8e444f33", null ],
     [ "getTime", "class_chimera_t_k_1_1_version_number.html#a1df1dc5ea2df340957f7b6b6fa8cdcb5", null ],
     [ "operator std::string", "class_chimera_t_k_1_1_version_number.html#a31e2c1cd52b4fcb022cb32b97775c0b8", null ],
     [ "operator!=", "class_chimera_t_k_1_1_version_number.html#a220bf7a03aadf4ab473bc65dde30987d", null ],
