@@ -210,9 +210,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a87b4855ffb37cc6edebe5085304ab354 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a87b4855ffb37cc6edebe5085304ab354">_connected</a></td></tr>
 <tr class="memdesc:a87b4855ffb37cc6edebe5085304ab354 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag if device is connected.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a87b4855ffb37cc6edebe5085304ab354">More...</a><br /></td></tr>
 <tr class="separator:a87b4855ffb37cc6edebe5085304ab354 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94a2161b75d3248507e40a8c40a27937 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a94a2161b75d3248507e40a8c40a27937">_hasErrors</a> = {false}</td></tr>
-<tr class="memdesc:a94a2161b75d3248507e40a8c40a27937 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag if the device has (known) errors.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a94a2161b75d3248507e40a8c40a27937">More...</a><br /></td></tr>
-<tr class="separator:a94a2161b75d3248507e40a8c40a27937 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class to provide the Pcie device functionality. </p>
@@ -416,7 +413,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The default implementeation in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends...">DeviceBackendImpl</a> reports (_opened &amp;&amp; !_hasErrors). Backends can overload it to implement a more sophisticated error reporting. The implementation might involve a communication attempt with the device.</p>
 <p>Notice: <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#a5c8b5b7825369150b6cdbc79c62a7f94" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a> shall only return false if there are known errors (or the device is closed). If the working state is unknown, the response should be <code>true</code>. Client code will then try to read/write and might get an exception, while <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#a5c8b5b7825369150b6cdbc79c62a7f94" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a>==false means you surely will get an exception. </p>
 
-<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a130b83ebd599df4f6d6c8bcc3f613843">ChimeraTK::DeviceBackendImpl</a>.</p>
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7">ChimeraTK::DeviceBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_pcie_backend_8cc_source.html#l00096">96</a> of file <a class="el" href="_pcie_backend_8cc_source.html">PcieBackend.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -639,7 +636,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_pcie_backend.html">PcieBackend</a></li>
-    <li class="footer">Generated on Fri Jan 24 2020 04:53:08 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Jan 25 2020 04:53:09 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -6,6 +6,7 @@ var class_chimera_t_k_1_1_dummy_backend =
     [ "close", "class_chimera_t_k_1_1_dummy_backend.html#a2e51a4afc0ca31fa50a3db740192ba2c", null ],
     [ "findCallbackFunctionsForAddressRange", "class_chimera_t_k_1_1_dummy_backend.html#a7c7afd621cbac3a7242db50e63089423", null ],
     [ "getRawAccessor", "class_chimera_t_k_1_1_dummy_backend.html#a27fa3031e73c504d0e9964df66288b79", null ],
+    [ "isFunctional", "class_chimera_t_k_1_1_dummy_backend.html#adb9edefcb11c683496afd130f6fa796a", null ],
     [ "isReadOnly", "class_chimera_t_k_1_1_dummy_backend.html#aa5618b4fdf0f3d29808dd5e993ca44b3", null ],
     [ "isWriteRangeOverlap", "class_chimera_t_k_1_1_dummy_backend.html#a9484547368d7da66d8d6795baf91b0a9", null ],
     [ "open", "class_chimera_t_k_1_1_dummy_backend.html#a733a54ce43fc6c1573c882216dea378a", null ],

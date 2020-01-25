@@ -5,7 +5,6 @@ var NAVTREEINDEX0 =
 "_backend_factory_8cc_source.html":[16,0,1,5,0],
 "_connection_8cc.html":[16,0,1,3,1,0],
 "_connection_8cc.html#ae5e78dbec782e292260cb6f0a83e9792":[16,0,1,3,1,0,0],
-"_connection_8cc.html#aedddbb27f1b159ef2a6235a8fc0a3232":[16,0,1,3,1,0,1],
 "_connection_8cc_source.html":[16,0,1,3,1,0],
 "_connection_8h.html":[16,0,1,3,1,1],
 "_connection_8h_source.html":[16,0,1,3,1,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "class_chimera_t_k_1_1_backend_factory.html#afb11ba2d5dbe02a49f8e99ff9e84ae54":[15,0,0,4,4],
 "class_chimera_t_k_1_1_buffering_register_accessor.html":[15,0,0,5],
 "class_chimera_t_k_1_1_buffering_register_accessor.html#a03d9d875fc0b1e884d261624746eea0f":[15,0,0,5,12],
-"class_chimera_t_k_1_1_buffering_register_accessor.html#a0588bea08e3d8b661159a64430244b9f":[15,0,0,5,8]
+"class_chimera_t_k_1_1_buffering_register_accessor.html#a0588bea08e3d8b661159a64430244b9f":[15,0,0,5,8],
+"class_chimera_t_k_1_1_buffering_register_accessor.html#a1574b7c051bb0e39b0c3328d58dd0f4d":[15,0,0,5,4]
 };

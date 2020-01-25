@@ -14,6 +14,7 @@ var class_chimera_t_k_1_1_subdevice_backend =
     [ "getRegisterAccessor_area", "class_chimera_t_k_1_1_subdevice_backend.html#ad584015f09db6583a6f21a67c3e83710", null ],
     [ "getRegisterAccessor_area", "class_chimera_t_k_1_1_subdevice_backend.html#a729af3d2e645796f1b12604efafb588c", null ],
     [ "getRegisterAccessor_impl", "class_chimera_t_k_1_1_subdevice_backend.html#a83996f092b4370d18fcac2ab205481cc", null ],
+    [ "isFunctional", "class_chimera_t_k_1_1_subdevice_backend.html#a44636d261cd8ce509c2d5ab93664ab55", null ],
     [ "obtainTargetBackend", "class_chimera_t_k_1_1_subdevice_backend.html#a7f4e065c2951bee366d15aa23a50adf3", null ],
     [ "open", "class_chimera_t_k_1_1_subdevice_backend.html#a3aa244b79dfa6ddd8357b5854aa112d7", null ],
     [ "readDeviceInfo", "class_chimera_t_k_1_1_subdevice_backend.html#ab828431ccd2b4255ccc0ba469d1999f0", null ],

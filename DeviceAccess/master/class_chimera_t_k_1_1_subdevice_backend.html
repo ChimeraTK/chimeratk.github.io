@@ -141,9 +141,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adda9402b29b72150ce6d7682e93797d2 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#adda9402b29b72150ce6d7682e93797d2">isConnected</a> ()</td></tr>
 <tr class="memdesc:adda9402b29b72150ce6d7682e93797d2 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a device has been connected or not.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#adda9402b29b72150ce6d7682e93797d2">More...</a><br /></td></tr>
 <tr class="separator:adda9402b29b72150ce6d7682e93797d2 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a130b83ebd599df4f6d6c8bcc3f613843 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a130b83ebd599df4f6d6c8bcc3f613843">isFunctional</a> () const override</td></tr>
-<tr class="memdesc:a130b83ebd599df4f6d6c8bcc3f613843 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return wether a device is working as intended, usually this means it is opened and does not have any errors.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a130b83ebd599df4f6d6c8bcc3f613843">More...</a><br /></td></tr>
-<tr class="separator:a130b83ebd599df4f6d6c8bcc3f613843 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad085e63f6f91280d7a1e5a9bb2ebc800 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_chimera_t_k_1_1_register_catalogue.html">RegisterCatalogue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#ad085e63f6f91280d7a1e5a9bb2ebc800">getRegisterCatalogue</a> () const</td></tr>
 <tr class="memdesc:ad085e63f6f91280d7a1e5a9bb2ebc800 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the register catalogue with detailed information on all registers.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#ad085e63f6f91280d7a1e5a9bb2ebc800">More...</a><br /></td></tr>
 <tr class="separator:ad085e63f6f91280d7a1e5a9bb2ebc800 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,6 +201,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7f4e065c2951bee366d15aa23a50adf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a7f4e065c2951bee366d15aa23a50adf3">obtainTargetBackend</a> ()</td></tr>
 <tr class="memdesc:a7f4e065c2951bee366d15aa23a50adf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">obtain the target backend if not yet done  <a href="#a7f4e065c2951bee366d15aa23a50adf3">More...</a><br /></td></tr>
 <tr class="separator:a7f4e065c2951bee366d15aa23a50adf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44636d261cd8ce509c2d5ab93664ab55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a44636d261cd8ce509c2d5ab93664ab55">isFunctional</a> () const override</td></tr>
+<tr class="memdesc:a44636d261cd8ce509c2d5ab93664ab55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return wether a device is working as intended, usually this means it is opened and does not have any errors.  <a href="#a44636d261cd8ce509c2d5ab93664ab55">More...</a><br /></td></tr>
+<tr class="separator:a44636d261cd8ce509c2d5ab93664ab55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a729af3d2e645796f1b12604efafb588c"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a729af3d2e645796f1b12604efafb588c"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; int32_t &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a729af3d2e645796f1b12604efafb588c">getRegisterAccessor_area</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
 <tr class="separator:a729af3d2e645796f1b12604efafb588c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,9 +251,6 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a87b4855ffb37cc6edebe5085304ab354 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a87b4855ffb37cc6edebe5085304ab354">_connected</a></td></tr>
 <tr class="memdesc:a87b4855ffb37cc6edebe5085304ab354 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag if device is connected.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a87b4855ffb37cc6edebe5085304ab354">More...</a><br /></td></tr>
 <tr class="separator:a87b4855ffb37cc6edebe5085304ab354 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94a2161b75d3248507e40a8c40a27937 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a94a2161b75d3248507e40a8c40a27937">_hasErrors</a> = {false}</td></tr>
-<tr class="memdesc:a94a2161b75d3248507e40a8c40a27937 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag if the device has (known) errors.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a94a2161b75d3248507e40a8c40a27937">More...</a><br /></td></tr>
-<tr class="separator:a94a2161b75d3248507e40a8c40a27937 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -834,6 +831,39 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a id="a44636d261cd8ce509c2d5ab93664ab55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44636d261cd8ce509c2d5ab93664ab55">&#9670;&nbsp;</a></span>isFunctional()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::SubdeviceBackend::isFunctional </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return wether a device is working as intended, usually this means it is opened and does not have any errors. </p>
+<p>The default implementeation in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends...">DeviceBackendImpl</a> reports (_opened &amp;&amp; !_hasErrors). Backends can overload it to implement a more sophisticated error reporting. The implementation might involve a communication attempt with the device.</p>
+<p>Notice: <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a44636d261cd8ce509c2d5ab93664ab55" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a> shall only return false if there are known errors (or the device is closed). If the working state is unknown, the response should be <code>true</code>. Client code will then try to read/write and might get an exception, while <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a44636d261cd8ce509c2d5ab93664ab55" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a>==false means you surely will get an exception. </p>
+
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7">ChimeraTK::DeviceBackend</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00124">124</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+
+</div>
+</div>
 <a id="a7f4e065c2951bee366d15aa23a50adf3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f4e065c2951bee366d15aa23a50adf3">&#9670;&nbsp;</a></span>obtainTargetBackend()</h2>
 
@@ -1261,7 +1291,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html">SubdeviceBackend</a></li>
-    <li class="footer">Generated on Fri Jan 24 2020 04:53:09 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Jan 25 2020 04:53:09 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
