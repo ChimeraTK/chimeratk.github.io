@@ -41,5 +41,8 @@ var dir_b74252328106591dfb0d36463b609fd4 =
       [ "WriteSplitArrayModule", "struct_chimera_t_k_1_1_write_split_array_module.html", "struct_chimera_t_k_1_1_write_split_array_module" ],
       [ "ReadSplitArrayModule", "struct_chimera_t_k_1_1_read_split_array_module.html", "struct_chimera_t_k_1_1_read_split_array_module" ]
     ] ],
+    [ "StatusAggregator.h", "_status_aggregator_8h.html", [
+      [ "StatusAggregator", "class_chimera_t_k_1_1_status_aggregator.html", "class_chimera_t_k_1_1_status_aggregator" ]
+    ] ],
     [ "StatusMonitor.h", "_status_monitor_8h.html", "_status_monitor_8h" ]
 ];

@@ -1,7 +1,8 @@
 var _status_monitor_8h =
 [
     [ "StatusMonitor", "struct_chimera_t_k_1_1_status_monitor.html", "struct_chimera_t_k_1_1_status_monitor" ],
-    [ "OneUp", "struct_chimera_t_k_1_1_status_monitor_1_1_one_up.html", "struct_chimera_t_k_1_1_status_monitor_1_1_one_up" ],
+    [ "StatusMonitorImpl", "struct_chimera_t_k_1_1_status_monitor_impl.html", "struct_chimera_t_k_1_1_status_monitor_impl" ],
+    [ "OneUp", "struct_chimera_t_k_1_1_status_monitor_impl_1_1_one_up.html", "struct_chimera_t_k_1_1_status_monitor_impl_1_1_one_up" ],
     [ "MaxMonitor", "struct_chimera_t_k_1_1_max_monitor.html", "struct_chimera_t_k_1_1_max_monitor" ],
     [ "MinMonitor", "struct_chimera_t_k_1_1_min_monitor.html", "struct_chimera_t_k_1_1_min_monitor" ],
     [ "RangeMonitor", "struct_chimera_t_k_1_1_range_monitor.html", "struct_chimera_t_k_1_1_range_monitor" ],
