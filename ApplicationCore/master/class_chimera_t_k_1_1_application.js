@@ -44,6 +44,7 @@ var class_chimera_t_k_1_1_application =
     [ "Accessor", "class_chimera_t_k_1_1_application.html#af6ffd104cd1bfe13fd84f63bcd1c2c44", null ],
     [ "DebugPrintAccessorDecorator", "class_chimera_t_k_1_1_application.html#ae695c6843b4a8363af68d12eb640997e", null ],
     [ "DeviceModule", "class_chimera_t_k_1_1_application.html#a4e118063020247afcc64aa45d4ec3f12", null ],
+    [ "ExceptionHandlingDecorator", "class_chimera_t_k_1_1_application.html#aa4d68f9b9ae5e4d36e5dc94efc89dcce", null ],
     [ "Module", "class_chimera_t_k_1_1_application.html#a21f639900c480510650969df9c74d17d", null ],
     [ "TestableModeAccessorDecorator", "class_chimera_t_k_1_1_application.html#a7e87574adc19a814f9af8decb92a5d03", null ],
     [ "TestFacility", "class_chimera_t_k_1_1_application.html#ac79f4a9d4117d899517047de93a44610", null ],
