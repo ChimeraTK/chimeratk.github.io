@@ -143,9 +143,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1c9c06d9a92bfb9f42875faf48771e2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a1c9c06d9a92bfb9f42875faf48771e2d">generateXML</a> ()</td></tr>
 <tr class="memdesc:a1c9c06d9a92bfb9f42875faf48771e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instead of running the application, just initialise it and output the published variables to an XML file.  <a href="#a1c9c06d9a92bfb9f42875faf48771e2d">More...</a><br /></td></tr>
 <tr class="separator:a1c9c06d9a92bfb9f42875faf48771e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad754fcb82f70921783070295991d73a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#ad754fcb82f70921783070295991d73a1">dumpConnections</a> ()</td></tr>
-<tr class="memdesc:ad754fcb82f70921783070295991d73a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output the connections requested in the <a class="el" href="class_chimera_t_k_1_1_application.html#a697d4a47ece6750203eecbff97039773">initialise()</a> function to std::cout.  <a href="#ad754fcb82f70921783070295991d73a1">More...</a><br /></td></tr>
-<tr class="separator:ad754fcb82f70921783070295991d73a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bda80942954b4d7d9f8b4644ef5f2dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a3bda80942954b4d7d9f8b4644ef5f2dd">dumpConnections</a> (std::ostream &amp;stream=std::cout)</td></tr>
+<tr class="memdesc:a3bda80942954b4d7d9f8b4644ef5f2dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output the connections requested in the <a class="el" href="class_chimera_t_k_1_1_application.html#a697d4a47ece6750203eecbff97039773">initialise()</a> function to std::cout.  <a href="#a3bda80942954b4d7d9f8b4644ef5f2dd">More...</a><br /></td></tr>
+<tr class="separator:a3bda80942954b4d7d9f8b4644ef5f2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a590cbe05130a2b625f1f3bb6a81312fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a590cbe05130a2b625f1f3bb6a81312fe">dumpConnectionGraph</a> (const std::string &amp;filename={&quot;connections-graph.dot&quot;})</td></tr>
 <tr class="memdesc:a590cbe05130a2b625f1f3bb6a81312fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create Graphviz dot graph and write to file.  <a href="#a590cbe05130a2b625f1f3bb6a81312fe">More...</a><br /></td></tr>
 <tr class="separator:a590cbe05130a2b625f1f3bb6a81312fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1009,7 +1009,7 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p>Create Graphviz dot graph and write to file. </p>
-<p>The graph will contain the connections made in the initilise() function. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_chimera_t_k_1_1_application.html#ad754fcb82f70921783070295991d73a1" title="Output the connections requested in the initialise() function to std::cout. ">dumpConnections</a> </dd></dl>
+<p>The graph will contain the connections made in the initilise() function. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_chimera_t_k_1_1_application.html#a3bda80942954b4d7d9f8b4644ef5f2dd" title="Output the connections requested in the initialise() function to std::cout. ">dumpConnections</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l00644">644</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1031,8 +1031,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="ad754fcb82f70921783070295991d73a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad754fcb82f70921783070295991d73a1">&#9670;&nbsp;</a></span>dumpConnections()</h2>
+<a id="a3bda80942954b4d7d9f8b4644ef5f2dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bda80942954b4d7d9f8b4644ef5f2dd">&#9670;&nbsp;</a></span>dumpConnections()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1040,7 +1040,8 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="memname">void Application::dumpConnections </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em> = <code>std::cout</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1055,7 +1056,7 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_ad754fcb82f70921783070295991d73a1_icgraph.svg" width="408" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_a3bda80942954b4d7d9f8b4644ef5f2dd_icgraph.svg" width="408" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -3431,7 +3432,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_application.html">Application</a></li>
-    <li class="footer">Generated on Thu Jan 30 2020 04:53:37 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Feb 1 2020 04:53:33 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

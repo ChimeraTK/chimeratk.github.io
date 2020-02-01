@@ -14,7 +14,7 @@ var class_chimera_t_k_1_1_application =
     [ "decrementDataFaultCounter", "class_chimera_t_k_1_1_application.html#a0e2803ab77214f94b9bca2c6ac4e0c8b", null ],
     [ "defineConnections", "class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7", null ],
     [ "dumpConnectionGraph", "class_chimera_t_k_1_1_application.html#a590cbe05130a2b625f1f3bb6a81312fe", null ],
-    [ "dumpConnections", "class_chimera_t_k_1_1_application.html#ad754fcb82f70921783070295991d73a1", null ],
+    [ "dumpConnections", "class_chimera_t_k_1_1_application.html#a3bda80942954b4d7d9f8b4644ef5f2dd", null ],
     [ "enableTestableMode", "class_chimera_t_k_1_1_application.html#aab5d12e4073ae6bb0dd7fde8b435aa38", null ],
     [ "enableVariableDebugging", "class_chimera_t_k_1_1_application.html#a87520a53f9a635b49aace46f76c0cf07", null ],
     [ "finaliseNetworks", "class_chimera_t_k_1_1_application.html#a4100a652864974ac1ab64d1bd1327d81", null ],
