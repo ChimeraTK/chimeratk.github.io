@@ -60,11 +60,13 @@ var class_chimera_t_k_1_1_application =
     [ "deviceModuleList", "class_chimera_t_k_1_1_application.html#a7e35f287b845c7c810656afd0ecf902a", null ],
     [ "enableDebugTestableMode", "class_chimera_t_k_1_1_application.html#a2e7a4a1dc5d457fe7f7b929794ec4261", null ],
     [ "enableUnconnectedVariablesWarning", "class_chimera_t_k_1_1_application.html#a071fb9e762f3d957d8696809180b01e5", null ],
+    [ "initialiseCalled", "class_chimera_t_k_1_1_application.html#a07485c3b44b7ba199a4a52de04639308", null ],
     [ "internalModuleList", "class_chimera_t_k_1_1_application.html#ae1832cf40aad192bd303982b2c75e13a", null ],
     [ "invalidNetwork", "class_chimera_t_k_1_1_application.html#afeaa79b9219a492c6d8345170b1d7f08", null ],
     [ "lifeCycleState", "class_chimera_t_k_1_1_application.html#a0ef8bd0ad224ddca42bff1d1ca4aac00", null ],
     [ "networkList", "class_chimera_t_k_1_1_application.html#ade501a4252a23f1639a5ea8b46cf738b", null ],
     [ "pvIdMap", "class_chimera_t_k_1_1_application.html#a6ad49fdb5fbaea378e3836b4fcf9c60e", null ],
+    [ "runCalled", "class_chimera_t_k_1_1_application.html#a5cd9227555b95483251de62a82367660", null ],
     [ "testableMode", "class_chimera_t_k_1_1_application.html#a8107412016780c83a5b3f8460589b602", null ],
     [ "testableMode_counter", "class_chimera_t_k_1_1_application.html#ad198c0bb189aa53c1a4f5e3c0cf4a54e", null ],
     [ "testableMode_isPollMode", "class_chimera_t_k_1_1_application.html#a29e6ea03c178fe30ce76a9e7b13c4dce", null ],
@@ -73,5 +75,6 @@ var class_chimera_t_k_1_1_application =
     [ "testableMode_perVarCounter", "class_chimera_t_k_1_1_application.html#a4d4fa4d7d6d798a3f8ed590b1ea02cf8", null ],
     [ "testableMode_processVars", "class_chimera_t_k_1_1_application.html#a39a60ca21c66bc2fd4a9df4fe9a71111", null ],
     [ "testableMode_repeatingMutexOwner", "class_chimera_t_k_1_1_application.html#aa464ee60e4117c4d3e630d173cdb6aae", null ],
+    [ "testFacilityRunApplicationCalled", "class_chimera_t_k_1_1_application.html#a360ac8ff8b89d821aa143ab416186f39", null ],
     [ "triggerMap", "class_chimera_t_k_1_1_application.html#a5a3ff9e91313b472c8780f8bee67204f", null ]
 ];

@@ -9,5 +9,5 @@ var searchData=
   ['sp',['sp',['../struct_controller.html#abc1bd02bfdaf29b368c4d558e087250a',1,'Controller']]],
   ['status',['status',['../struct_chimera_t_k_1_1_device_module_1_1_device_error.html#adc906e2de974b7f48e7cba812f6a979a',1,'ChimeraTK::DeviceModule::DeviceError::status()'],['../class_chimera_t_k_1_1_status_aggregator.html#a7c330bd9b4f80b2d6b6b42bbb9e0d003',1,'ChimeraTK::StatusAggregator::status()'],['../struct_chimera_t_k_1_1_status_monitor.html#abe4fa4c42d0ec3bb5c6ccbe1825f9eb7',1,'ChimeraTK::StatusMonitor::status()']]],
   ['statusinput',['statusInput',['../class_chimera_t_k_1_1_status_aggregator.html#a33e9e8d7dbcbfa1dd96e1b0d3fc0051e',1,'ChimeraTK::StatusAggregator']]],
-  ['submodules',['submodules',['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()'],['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()']]]
+  ['submodules',['subModules',['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()'],['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()']]]
 ];

@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"dir_68267d1309a1af8e8297ef4c3efbcdba.html":[12,0,9],
+"dir_7563e6d9f1c11f74f5c45f175354fcd5.html":[12,0,6,0,1],
+"dir_7bf3b492df7ad680c491f3b2c5266372.html":[12,0,6,1,0],
 "dir_8814761eb3a53a66201f8cfb9e091422.html":[12,0,6,1,1],
 "dir_91a2c2c801e57bb118f6cefc30b49b7a.html":[12,0,6,0],
 "dir_b52242b8b9500d24aed65848e0879059.html":[12,0,6,0,0],
@@ -34,8 +37,8 @@ var NAVTREEINDEX4 =
 "functions_enum.html":[11,3,4],
 "functions_eval.html":[11,3,5],
 "functions_f.html":[11,3,0,6],
-"functions_func.html":[11,3,1,0],
 "functions_func.html":[11,3,1],
+"functions_func.html":[11,3,1,0],
 "functions_func_0x7e.html":[11,3,1,21],
 "functions_func_b.html":[11,3,1,1],
 "functions_func_c.html":[11,3,1,2],
@@ -73,8 +76,8 @@ var NAVTREEINDEX4 =
 "functions_type.html":[11,3,3],
 "functions_u.html":[11,3,0,19],
 "functions_v.html":[11,3,0,20],
-"functions_vars.html":[11,3,2],
 "functions_vars.html":[11,3,2,0],
+"functions_vars.html":[11,3,2],
 "functions_vars_a.html":[11,3,2,1],
 "functions_vars_b.html":[11,3,2,2],
 "functions_vars_c.html":[11,3,2,3],
@@ -107,12 +110,12 @@ var NAVTREEINDEX4 =
 "index.html":[],
 "loggingdoc.html":[1],
 "loggingdoc.html#loggingintro":[1,0],
-"namespace_chimera_t_k.html":[11,0,0],
 "namespace_chimera_t_k.html":[10,0,0],
+"namespace_chimera_t_k.html":[11,0,0],
 "namespace_chimera_t_k_1_1history.html":[11,0,0,0],
 "namespace_chimera_t_k_1_1history.html":[10,0,0,0],
-"namespacelogging.html":[10,0,1],
 "namespacelogging.html":[11,0,1],
+"namespacelogging.html":[10,0,1],
 "namespacemembers.html":[10,1,0],
 "namespacemembers_enum.html":[10,1,4],
 "namespacemembers_eval.html":[10,1,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "struct_chimera_t_k_1_1_functor_fill.html#a239a450d539119b22eaf57654fb23d1d":[11,0,0,31,6],
 "struct_chimera_t_k_1_1_functor_fill.html#a8dc7b8ddf6d1c97952475ab11457b251":[11,0,0,31,3],
 "struct_chimera_t_k_1_1_functor_fill.html#ade02c32a80ff802889863bc8bfa22bd0":[11,0,0,31,0],
-"struct_chimera_t_k_1_1_functor_fill.html#aeaf57df99343cde854391b0ce26be7be":[11,0,0,31,1],
-"struct_chimera_t_k_1_1_functor_fill.html#af0bd49e5be8335960aa095cd4cf204ca":[11,0,0,31,2],
-"struct_chimera_t_k_1_1_functor_set_values.html":[11,0,0,32],
-"struct_chimera_t_k_1_1_functor_set_values.html#a1775f855609a87ad323376db28269afa":[11,0,0,32,1]
+"struct_chimera_t_k_1_1_functor_fill.html#aeaf57df99343cde854391b0ce26be7be":[11,0,0,31,1]
 };
