@@ -8,5 +8,5 @@ var searchData=
   ['setsignum',['setSigNum',['../structProcessHandler.html#a19a0020ef87b7e09c84c112a944016f6',1,'ProcessHandler']]],
   ['setuphandler',['setupHandler',['../structProcessHandler.html#a4eb6afb25ee59bf5e015c465b71c40c2',1,'ProcessHandler']]],
   ['startprocess',['startProcess',['../structProcessHandler.html#a9102d9895d68907414a97d4cd4ed79cc',1,'ProcessHandler']]],
-  ['sysinfo',['SysInfo',['../classSysInfo.html#ad5810112be02a38d5d4aecc95724c656',1,'SysInfo']]]
+  ['sysinfo',['SysInfo',['../classSysInfo.html#aa7d27a2d73754c6b47d33946e5135a7f',1,'SysInfo']]]
 ];
