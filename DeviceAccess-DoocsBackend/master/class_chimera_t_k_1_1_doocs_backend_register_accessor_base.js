@@ -9,6 +9,7 @@ var class_chimera_t_k_1_1_doocs_backend_register_accessor_base =
     [ "futureCreated", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a8dbb869119e1a211ba50fb34ad251296", null ],
     [ "isArray", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a0bcce3cfd0a55a8f0362ef3362ae3aa0", null ],
     [ "isPartial", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#afebb23c2ffc20b9744cd382ec06d34a9", null ],
+    [ "last_stamp", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a54033833d3e44133835287509538a5dc", null ],
     [ "nElements", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a0fde7fd874fc30900874ba0f701c07b6", null ],
     [ "notifications", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#abd18febd65ffa0a2776fd393ebc859e7", null ],
     [ "readAsyncThread", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a2d7708781bc98de9844473ae60ff8bf7", null ],

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['zmqsubscriptionmanager',['ZMQSubscriptionManager',['../class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html',1,'ChimeraTK::DoocsBackendNamespace']]],
-  ['zmqsubscriptionmanager_2ecc',['ZMQSubscriptionManager.cc',['../_z_m_q_subscription_manager_8cc.html',1,'']]],
-  ['zmqsubscriptionmanager_2eh',['ZMQSubscriptionManager.h',['../_z_m_q_subscription_manager_8h.html',1,'']]]
+  ['write_5finternal',['write_internal',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b',1,'ChimeraTK::DoocsBackendRegisterAccessor']]]
 ];
