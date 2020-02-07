@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['mainpage_2edox',['mainpage.dox',['../mainpage_8dox.html',1,'']]],
-  ['mayreplaceother',['mayReplaceOther',['../class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#a3a05e5dc2742f152f1c9d6c234f22caf',1,'ChimeraTK::DoocsBackendIFFFRegisterAccessor::mayReplaceOther()'],['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a3366a7bceef0c049fb2646e8f2a4f6d1',1,'ChimeraTK::DoocsBackendRegisterAccessor::mayReplaceOther()']]]
+  ['nelements',['nElements',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a0fde7fd874fc30900874ba0f701c07b6',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]],
+  ['notifications',['notifications',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#abd18febd65ffa0a2776fd393ebc859e7',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]],
+  ['nullptr',['nullptr',['../_empty_doocs_functions_8cc.html#af0e56fff84bd1453dd83f743e5e653d9',1,'EmptyDoocsFunctions.cc']]]
 ];
