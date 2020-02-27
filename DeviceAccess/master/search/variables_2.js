@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['backendregisterer',['backendRegisterer',['../class_example_backend.html#aa91fae7e940e16e7ffc40aa0d7c2acbc',1,'ExampleBackend']]],
+  ['backendregisterer',['backendRegisterer',['../class_exception_dummy.html#a148bc3bd8552f0db2c2506ba26e53b4b',1,'ExceptionDummy::backendRegisterer()'],['../class_example_backend.html#aa91fae7e940e16e7ffc40aa0d7c2acbc',1,'ExampleBackend::backendRegisterer()']]],
   ['backendtype',['backendType',['../struct_chimera_t_k_1_1_device_descriptor.html#a33f0fc287d2af09f44d659c14871cab0',1,'ChimeraTK::DeviceDescriptor']]],
   ['bar',['bar',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html#a77b83d47a6cdfa9555af6d15dc1d435c',1,'ChimeraTK::DummyBackend::AddressRange::bar()'],['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a31b7738595b55de271d998c5a05f564b',1,'ChimeraTK::RegisterInfoMap::RegisterInfo::bar()']]],
   ['bar_5fmask',['BAR_MASK',['../namespace_chimera_t_k.html#a48e5529d117d16700b4f1487d510e94c',1,'ChimeraTK']]],

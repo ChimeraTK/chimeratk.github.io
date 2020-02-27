@@ -27,6 +27,10 @@ var dir_f6c06f7a01da37196a5f6fe3a6212106 =
       [ "DummyMultiplexedRegisterAccessor", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor" ],
       [ "DummyRegisterRawAccessor", "class_chimera_t_k_1_1_dummy_register_raw_accessor.html", "class_chimera_t_k_1_1_dummy_register_raw_accessor" ]
     ] ],
+    [ "ExceptionDevice.h", "_exception_device_8h.html", [
+      [ "ExceptionDummy", "class_exception_dummy.html", "class_exception_dummy" ],
+      [ "BackendRegisterer", "class_exception_dummy_1_1_backend_registerer.html", "class_exception_dummy_1_1_backend_registerer" ]
+    ] ],
     [ "FixedPointConverter.h", "device__backends_2include_2_fixed_point_converter_8h.html", "device__backends_2include_2_fixed_point_converter_8h" ],
     [ "IEEE754_SingleConverter.h", "_i_e_e_e754___single_converter_8h.html", [
       [ "RoundingRangeCheckingDataConverter", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter" ],

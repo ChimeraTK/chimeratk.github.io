@@ -48,6 +48,8 @@ var NAVTREEINDEX0 =
 "_example_backend_8h_source.html":[16,0,6,0,0],
 "_exception_8cpp.html":[16,0,3,1,0],
 "_exception_8cpp_source.html":[16,0,3,1,0],
+"_exception_device_8h.html":[16,0,1,0,8],
+"_exception_device_8h_source.html":[16,0,1,0,8],
 "_experimental_features_8cc.html":[16,0,0,1,1],
 "_experimental_features_8cc_source.html":[16,0,0,1,1],
 "_fixed_point_converter_8cc.html":[16,0,1,5,4],
@@ -55,8 +57,8 @@ var NAVTREEINDEX0 =
 "_fixed_point_converter_8cc_source.html":[16,0,1,5,4],
 "_i_e_e_e754___single_converter_8cc.html":[16,0,1,5,5],
 "_i_e_e_e754___single_converter_8cc_source.html":[16,0,1,5,5],
-"_i_e_e_e754___single_converter_8h.html":[16,0,1,0,9],
-"_i_e_e_e754___single_converter_8h_source.html":[16,0,1,0,9],
+"_i_e_e_e754___single_converter_8h.html":[16,0,1,0,10],
+"_i_e_e_e754___single_converter_8h_source.html":[16,0,1,0,10],
 "_l_n_m_accessor_plugin_8cc.html":[16,0,1,1,1,0],
 "_l_n_m_accessor_plugin_8cc.html#a4085753725de92b57b31b2f8e199c96b":[16,0,1,1,1,0,0],
 "_l_n_m_accessor_plugin_8cc_source.html":[16,0,1,1,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "class_chimera_t_k_1_1_backend_factory.html#ae7c0aa5eb4d913b0d21c68571d1eae02":[15,0,0,4,9],
 "class_chimera_t_k_1_1_backend_factory.html#afb11ba2d5dbe02a49f8e99ff9e84ae54":[15,0,0,4,4],
 "class_chimera_t_k_1_1_buffering_register_accessor.html":[15,0,0,5],
-"class_chimera_t_k_1_1_buffering_register_accessor.html#a03d9d875fc0b1e884d261624746eea0f":[15,0,0,5,12],
-"class_chimera_t_k_1_1_buffering_register_accessor.html#a0588bea08e3d8b661159a64430244b9f":[15,0,0,5,8],
-"class_chimera_t_k_1_1_buffering_register_accessor.html#a1574b7c051bb0e39b0c3328d58dd0f4d":[15,0,0,5,4]
+"class_chimera_t_k_1_1_buffering_register_accessor.html#a03d9d875fc0b1e884d261624746eea0f":[15,0,0,5,12]
 };

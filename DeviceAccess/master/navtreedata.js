@@ -91,15 +91,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"class_chimera_t_k_1_1_buffering_register_accessor.html#a164ee671a57aa89040c517cb4c118fdb",
-"class_chimera_t_k_1_1_dummy_backend_base.html#a3c3508ff1a9b9ffdabe6546a851ec2ea",
-"class_chimera_t_k_1_1_logical_name_mapping_backend.html#ad2eb01c9a9cacf4adcc1d6b8a1508afe",
-"class_chimera_t_k_1_1_rebot_backend.html#a0be2add1a07a11fbde4d7394ea76d169",
-"class_chimera_t_k_1_1_register_path.html#aeeec333c0a78a1890d232cdf0cf982cf",
-"class_chimera_t_k_1_1_version_number.html#a62d862b9bfbeeb17641dddedf9aac579",
-"device__backends_2pcie_2include_2pcieuni__io__compat_8h.html#af9fc265a9a8fe0cbf62650557e41965f",
-"mtca4u__compatibility__headers_2_one_d_register_accessor_8h.html",
-"structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html#aeb6f43791b6e596dcdcdf8d809b591b6"
+"class_chimera_t_k_1_1_buffering_register_accessor.html#a0588bea08e3d8b661159a64430244b9f",
+"class_chimera_t_k_1_1_dummy_backend_base.html",
+"class_chimera_t_k_1_1_logical_name_mapping_backend.html#acd3e54bb07d8008c355b3c584050d5a6",
+"class_chimera_t_k_1_1_rebot_1_1_connection.html#ad2ab710e8c98c9c4f2ae0afa5d10b59d",
+"class_chimera_t_k_1_1_register_path.html#adf705adc2ca36350fc53913f0f398d0d",
+"class_chimera_t_k_1_1_version_number.html#a3423d20dac862b970febc6ab5254d7af",
+"device__backends_2pcie_2include_2pciedev__io_8h_source.html",
+"mtca4u__compatibility__headers_2_n_d_register_accessor_decorator_8h.html",
+"structdevice__ioctrl__time.html#a04786d897463142079bd0cc2b041efcd"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -130,9 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa031066178cd12f936af25aefbd2a591"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#aa031066178cd12f936af25aefbd2a591">readDeviceInfo</a> () override</td></tr>
 <tr class="memdesc:aa031066178cd12f936af25aefbd2a591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a device information string containing hardware details like the firmware version number or the slot number used by the board.  <a href="#aa031066178cd12f936af25aefbd2a591">More...</a><br /></td></tr>
 <tr class="separator:aa031066178cd12f936af25aefbd2a591"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae411d2bd38e2a74ce3486b0a98d993f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#ae411d2bd38e2a74ce3486b0a98d993f2">isFunctional</a> () const</td></tr>
-<tr class="memdesc:ae411d2bd38e2a74ce3486b0a98d993f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return wether a device is working as intended, usually this means it is opened and does not have any errors.  <a href="#ae411d2bd38e2a74ce3486b0a98d993f2">More...</a><br /></td></tr>
-<tr class="separator:ae411d2bd38e2a74ce3486b0a98d993f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81734d8d47993c5da3d7732025611a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#ae81734d8d47993c5da3d7732025611a0">isFunctional</a> () const override</td></tr>
+<tr class="memdesc:ae81734d8d47993c5da3d7732025611a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return wether a device is working as intended, usually this means it is opened and does not have any errors.  <a href="#ae81734d8d47993c5da3d7732025611a0">More...</a><br /></td></tr>
+<tr class="separator:ae81734d8d47993c5da3d7732025611a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html">ChimeraTK::NumericAddressedBackend</a></td></tr>
 <tr class="memitem:a6d8802ff0005f775c7728bdb064d3d18 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a6d8802ff0005f775c7728bdb064d3d18">NumericAddressedBackend</a> (std::string mapFileName=&quot;&quot;)</td></tr>
 <tr class="separator:a6d8802ff0005f775c7728bdb064d3d18 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -440,8 +440,8 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae411d2bd38e2a74ce3486b0a98d993f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae411d2bd38e2a74ce3486b0a98d993f2">&#9670;&nbsp;</a></span>isFunctional()</h2>
+<a id="ae81734d8d47993c5da3d7732025611a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae81734d8d47993c5da3d7732025611a0">&#9670;&nbsp;</a></span>isFunctional()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -458,14 +458,14 @@ Static Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Return wether a device is working as intended, usually this means it is opened and does not have any errors. </p>
 <p>The default implementeation in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends...">DeviceBackendImpl</a> reports (_opened &amp;&amp; !_hasErrors). Backends can overload it to implement a more sophisticated error reporting. The implementation might involve a communication attempt with the device.</p>
-<p>Notice: <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#ae411d2bd38e2a74ce3486b0a98d993f2" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a> shall only return false if there are known errors (or the device is closed). If the working state is unknown, the response should be <code>true</code>. Client code will then try to read/write and might get an exception, while <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#ae411d2bd38e2a74ce3486b0a98d993f2" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a>==false means you surely will get an exception. </p>
+<p>Notice: <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#ae81734d8d47993c5da3d7732025611a0" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a> shall only return false if there are known errors (or the device is closed). If the working state is unknown, the response should be <code>true</code>. Client code will then try to read/write and might get an exception, while <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#ae81734d8d47993c5da3d7732025611a0" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a>==false means you surely will get an exception. </p>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7">ChimeraTK::DeviceBackend</a>.</p>
 
@@ -893,7 +893,7 @@ Static Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_rebot_backend.html">RebotBackend</a></li>
-    <li class="footer">Generated on Tue Feb 11 2020 04:53:11 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Feb 27 2020 04:53:21 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
