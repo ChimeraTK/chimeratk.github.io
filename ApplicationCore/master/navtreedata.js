@@ -5,6 +5,9 @@ var NAVTREE =
       [ "Introduction", "exception_handling.html#Introduction", null ],
       [ "DataValidity", "exception_handling.html#DataValidity", null ]
     ] ],
+    [ "Exception Handling Design", "exception_handling_design.html", [
+      [ "General Idea", "exception_handling_design.html#gen_idea", null ]
+    ] ],
     [ "Logging module and Logger", "loggingdoc.html", [
       [ "Introduction to the logging mechanism", "loggingdoc.html#loggingintro", null ]
     ] ],
@@ -15,6 +18,7 @@ var NAVTREE =
       [ "Example usage", "configreader.html#usage", null ],
       [ "XML file structure", "configreader.html#xmlstructure", null ]
     ] ],
+    [ "Technical specification: propagation of initial values", "spec_initial_value_propagation.html", null ],
     [ "Example 1: Application with two modules and two hardware devices", "example1.html", null ],
     [ "Example 2: Small but complete application with a proportional controller", "example2.html", null ],
     [ "Example 2a: Application with automation module", "example2a.html", null ],
@@ -65,8 +69,8 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#ad571a938acbc6e0f65b257cbff8e92ea",
 "class_chimera_t_k_1_1_threaded_fan_out.html#a07947da6a7c3d65e8ead245b478b33c8",
 "dir_68267d1309a1af8e8297ef4c3efbcdba.html",
-"struct_chimera_t_k_1_1_functor_fill.html#af0bd49e5be8335960aa095cd4cf204ca",
-"struct_template_module.html"
+"struct_chimera_t_k_1_1_functor_fill.html#a8dc7b8ddf6d1c97952475ab11457b251",
+"struct_table_generation_1_1_table_parameters.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
