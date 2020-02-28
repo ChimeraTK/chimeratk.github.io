@@ -28,6 +28,7 @@ var namespace_chimera_t_k =
     [ "DummyRegisterAccessor", "class_chimera_t_k_1_1_dummy_register_accessor.html", "class_chimera_t_k_1_1_dummy_register_accessor" ],
     [ "DummyRegisterAddressChecker", "class_chimera_t_k_1_1_dummy_register_address_checker.html", "class_chimera_t_k_1_1_dummy_register_address_checker" ],
     [ "DummyRegisterRawAccessor", "class_chimera_t_k_1_1_dummy_register_raw_accessor.html", "class_chimera_t_k_1_1_dummy_register_raw_accessor" ],
+    [ "ExceptionDummy", "class_chimera_t_k_1_1_exception_dummy.html", "class_chimera_t_k_1_1_exception_dummy" ],
     [ "ExperimentalFeatures", "class_chimera_t_k_1_1_experimental_features.html", null ],
     [ "findDevByName_pred", "class_chimera_t_k_1_1find_dev_by_name__pred.html", "class_chimera_t_k_1_1find_dev_by_name__pred" ],
     [ "findDevInPairByName_pred", "class_chimera_t_k_1_1find_dev_in_pair_by_name__pred.html", "class_chimera_t_k_1_1find_dev_in_pair_by_name__pred" ],

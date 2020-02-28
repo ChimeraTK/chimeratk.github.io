@@ -26,7 +26,7 @@ var hierarchy =
     [ "ChimeraTK::BackendFactory", "class_chimera_t_k_1_1_backend_factory.html", null ],
     [ "CustomBackend::BackendRegisterer", "struct_custom_backend_1_1_backend_registerer.html", null ],
     [ "ExampleBackend::BackendRegisterer", "class_example_backend_1_1_backend_registerer.html", null ],
-    [ "ExceptionDummy::BackendRegisterer", "class_exception_dummy_1_1_backend_registerer.html", null ],
+    [ "ChimeraTK::ExceptionDummy::BackendRegisterer", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::compareModuleName_pred", "class_chimera_t_k_1_1compare_module_name__pred.html", null ],
     [ "ChimeraTK::compareRegisterInfosByName_functor", "class_chimera_t_k_1_1compare_register_infos_by_name__functor.html", null ],
     [ "ChimeraTK::Rebot::Connection", "class_chimera_t_k_1_1_rebot_1_1_connection.html", null ],
@@ -73,8 +73,8 @@ var hierarchy =
             [ "ChimeraTK::RebotBackend", "class_chimera_t_k_1_1_rebot_backend.html", null ],
             [ "ChimeraTK::DummyBackendBase< DummyBackend >", "class_chimera_t_k_1_1_dummy_backend_base.html", [
               [ "ChimeraTK::DummyBackend", "class_chimera_t_k_1_1_dummy_backend.html", [
-                [ "CustomBackend", "class_custom_backend.html", null ],
-                [ "ExceptionDummy", "class_exception_dummy.html", null ]
+                [ "ChimeraTK::ExceptionDummy", "class_chimera_t_k_1_1_exception_dummy.html", null ],
+                [ "CustomBackend", "class_custom_backend.html", null ]
               ] ]
             ] ],
             [ "ChimeraTK::DummyBackendBase< SharedDummyBackend >", "class_chimera_t_k_1_1_dummy_backend_base.html", [
