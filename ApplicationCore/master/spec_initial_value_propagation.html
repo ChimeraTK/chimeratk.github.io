@@ -97,20 +97,20 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 </ul>
 <h2>High-level requirements</h2>
 <ul>
-<li>Initial values must be available to all <code>ApplicationModule</code>s at the start of the <code>mainLoop()</code>. No call to <code>read()</code> etc. is required. This implies that the <code>mainLoop()</code> is not started until all initial are available, including those coming from devices which might potentially be offline.</li>
+<li>Initial values must be available to all <code>ApplicationModule</code>s at the start of the <code>mainLoop()</code>. No call to <code>read()</code> etc. is required. This implies that the <code>mainLoop()</code> is not started until all initial values are available, including those coming from devices which might potentially be offline.</li>
 <li>Devices must receive the initial values as soon as possible after the device is opened and after the initialisation sequence is executed, but before anything else gets written to the device.</li>
 <li>The control system must receivce the initial values as soon as they are available. The initial value is merely the first value the control system receives for a particular process variable - other variables might have received an update already multiple times before the initial value is recieved.</li>
 <li>Control system variables show the <code>DataValidity::faulty</code> flag until they have received the initial value.</li>
 </ul>
 <h2>Detailed requirements</h2>
 <ol type="1">
-<li>All <code>ChimeraTK::NDRegisterAccessor</code> implementations (including but not limited to the <code>ChimeraTK::ProcessArray</code>) must have the <code>DataValidity::faulty</code> flag set after construction. This ensures, all data is marked as <code>faulty</code> as long as no sensible initial values have been propagated.</li>
+<li>All <code>ChimeraTK::NDRegisterAccessor</code> implementations (including but not limited to the <code>ChimeraTK::ProcessArray</code>) must have the <code>DataValidity::faulty</code> flag set after construction for the receiving end. This ensures, all data is marked as <code>faulty</code> as long as no sensible initial values have been propagated. The sending end must have <code>DataValidity::ok</code>, so that the first written data automatically propagates the ok state. [TBD: What about bidirectional variables?]</li>
 <li>All <code>ChimeraTK::NDRegisterAccessor</code> implementations must have initially a <code>ChimeraTK::VersionNumber</code> constructed with a <code>nullptr</code>, which allows to check whether this variable is still at its "first value" or the initial value propagation already took place.</li>
-<li>All <code>ApplicationModules</code> and similar entities (like <code>ThreadedFanOut</code> and <code>TriggerFanOut</code>), that store a <code>DataValidity</code> directly or indirectly e.g. in form af a counter, must have their internal <code>DataValidity</code> flag set to <code>faulty</code> after construction. [TBD: What does that mean in case of a counter?]</li>
+<li>All <code>ApplicationModules</code> and similar entities (like <code>ThreadedFanOut</code> and <code>TriggerFanOut</code>), that store a <code>DataValidity</code> directly or indirectly e.g. in form af a counter, must have their internal <code>DataValidity</code> flag set to <code>ok</code> after construction.</li>
 <li>The initial <code>DataValidity::faulty</code> flags must not be propagated actively. The first propagated data must be always <code>ok</code> and must have a valid value.</li>
 <li>Control system variables:<ol type="a">
 <li>Variables with the control-system-to-application direction must be written exactly once at application start by the control system adapter with their initial values from the persistency layer and the <code>DataValidity::ok</code>. This must be done before <code>ApplicationBase::run()</code> is called. [TBD: Is this last sentence a necessary restiction?]</li>
-<li>Initial values of variables with the application-to-control-system direction are written at an undefined time after the <code>ApplicationBase::run()</code> has been called. The control system adapter must not expect any specific behaviour.</li>
+<li>Initial values of variables with the application-to-control-system direction are written at an undefined time after the <code>ApplicationBase::run()</code> has been called. The control system adapter must not expect any specific behaviour. Entities writing to these variables do not need to take any special precautions, they do not even need to obey the second sentence in 4. In other words: application-to-control-system variables do not have an "initial value" in this particular meaning.</li>
 </ol>
 </li>
 <li>Device variables:<ol type="a">
@@ -120,12 +120,13 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 </li>
 <li>Outputs of <code>ApplicationModule</code>s:<ol type="a">
 <li>By default, no initial values are propagated.</li>
-<li>Initial values can be written in <code>ApplicationModule::prepare()</code>.</li>
+<li>Initial values can be written in <code>ApplicationModule::prepare()</code>. This fact is recorded in the variable model (<code>VariableNetworkNode</code>), see 8.b.v</li>
+<li>Since in <code>ApplicationModule::prepare()</code> all devices are still closed, any writes to device variables at this point need to be delayed until the device is open. The actual write is hence performed by the DeviceModule.</li>
 </ol>
 </li>
 <li>Inputs of <code>ApplicationModule</code>s:<ol type="a">
 <li>Initial values are read before start of <code>mainLoop()</code>.</li>
-<li>Since not all variables have initial values (see 7.a), the variable model (<code>VariableNetworkNode</code>) needs to be checked whether an initial value is present and how it needs to be read. This dependes on the data source type:<ol type="i">
+<li>Since not all variables have initial values (see 7.a), the variable model (<code>VariableNetworkNode</code>) needs to be checked whether an initial value is present and how it needs to be read. This dependes on the data source type (i.e. the type of the feeder of the VariableNetwork):<ol type="i">
 <li>control system variable: blocking read</li>
 <li>device register without trigger: non-blocking read (even if register is push-type)</li>
 <li>device register with trigger (incl. TriggerType::pollingConsumer): blocking read</li>
@@ -135,17 +136,61 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 </li>
 </ol>
 </li>
+<li><code>ThreadedFanOut</code> and <code>TriggerFanOut</code> etc.<ol type="a">
+<li>Inputs need to behave like described in 8.b</li>
+<li>Outputs connected to devices need to obey 6.a</li>
+<li>Outputs connected to <code>ApplicationModule</code>s will pass on the initial value, as the <code>ApplicationModule</code> will obey 8.b just like the FanOut input.</li>
+</ol>
+</li>
 <li>Constants:<ol type="a">
 <li>Values are propagated before the <code>ApplicationModule</code> threads are starting.</li>
 <li>Special treatment for constants written to devices: They need to be written after the device is opened, see 6.a</li>
 </ol>
 </li>
 </ol>
+<h3>Comments</h3>
+<ul>
+<li>To 3.: It looks like a conflict with 1., but it is not. Due to 1., all variables will already present itself to the outside as <code>faulty</code>. 3. has an impact on the DataValidity of variables written within the module. If a module decides to write a variable even before any inputs are checked, it should be assumed that the written values are valid. Hence the internal validity must start at <code>ok</code>.</li>
+<li>To 4.: It is very important that no wrong data is transported initially. Since the "first value" of all process variables is always 0, this value is basically always wrong. If it gets propagated within the application, modules will process this value (usually even if <code>DataValidity::faulty</code> is set), despite the value might present an inconsistent state with other process variables. If it gets propagated to the control system, other applications might act on an again inconsistent state.</li>
+<li>To 5.: This is the responsibility of each control system adpater implementation.</li>
+<li>To 5.a: It is important that the initial values are written before <code>ApplicationBase::run()</code> to avoid race conditions if <code>readLatest()</code> might be used for the initial values (e.g. in ThreadedFanOuts). This can also be solved differently, if in all these places the same logic as in 8. is applied.</li>
+</ul>
 <h2>Implementation</h2>
+<h3>NDRegisterAccessor implementations</h3>
+<ul>
+<li>1. must currently be implemented by each NDRegisterAccessor separately. [TBD: Instead of requiring all implementations to be changed, we could also fix this in <code>Application::createDeviceVariable()</code>, but this creates an asymetry to the <code>ProcessArray</code>...]</li>
+<li>2. must currently be implemented by each NDRegisterAccessor separately. All accessors should already have a VersionNumber data member called <code>currentVersion</code> or similar, it simply needs to be constructed with a <code>nullptr</code> as an argument.</li>
+<li>The <code>UnidirectionalProcessArray</code> uses always a default start value of <code>DataValidity::ok</code>, but overwrites this with <code>DataValidity::faulty</code> for the receivers in the factory function <code>createSynchronizedProcessArray()</code> (both implementations, see UnidirectionalProcessArray.h).</li>
+</ul>
+<h3>ApplicationModule</h3>
+<ul>
+<li>Needs to implement 3.</li>
+<li><code>getDataValidity()</code> returns <code>ok</code> if the <code>faultCounter</code> is 0, <code>faulty</code> otherwise</li>
+<li>Hence fault counter starts with 0.</li>
+</ul>
+<h3>ThreadedFanOut</h3>
+<ul>
+<li>Needs to implement 3.</li>
+<li>Currently just passing on the validity from the input.</li>
+<li>This is probably going to change when the correct propagation of the validity flag is implemented.</li>
+</ul>
+<h3>ThreadedFanOut</h3>
+<ul>
+<li>Needs to implement 3.</li>
+</ul>
 <h2>Known bugs</h2>
+<h3>NDRegisterAccessor implementations</h3>
+<ul>
+<li>1. is not implemented for Device implementations (only the <code>UnidirectionalProcessArray</code> is correct at the moment).</li>
+<li>2. is not implemented for Device implementations (only the <code>UnidirectionalProcessArray</code> is correct at the moment).</li>
+</ul>
 <h3>ExceptionHandlingDecorator</h3>
 <ul>
-<li>It waits until the device is opened, but not until after the initialisation is done. </li>
+<li>It waits until the device is opened, but not until after the initialisation is done.</li>
+</ul>
+<h3>Documentation</h3>
+<ul>
+<li>Documentation of ControlSystemAdapter should mention that implementations must take care about 5. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -153,7 +198,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Thu Feb 27 2020 04:54:14 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Feb 28 2020 04:53:59 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
