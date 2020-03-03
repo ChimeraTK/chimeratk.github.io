@@ -44,7 +44,7 @@ var searchData=
   ['devicemodule_2ecc',['DeviceModule.cc',['../_device_module_8cc.html',1,'']]],
   ['devicemodule_2eh',['DeviceModule.h',['../_device_module_8h.html',1,'']]],
   ['devicemodulelist',['deviceModuleList',['../class_chimera_t_k_1_1_application.html#a7e35f287b845c7c810656afd0ecf902a',1,'ChimeraTK::Application']]],
-  ['devicemoduleproxy',['DeviceModuleProxy',['../class_chimera_t_k_1_1_device_module.html#a70461c19bbacfd6cb682f69f0464f406',1,'ChimeraTK::DeviceModule']]],
+  ['devicemoduleproxy',['DeviceModuleProxy',['../class_chimera_t_k_1_1_device_module.html#a97967a6daa70f9b4246914953a73b0dd',1,'ChimeraTK::DeviceModule']]],
   ['deviceopentimeout',['DeviceOpenTimeout',['../_trigger_fan_out_8h.html#a79e25afc8d49734b01e480603207a6a3',1,'DeviceOpenTimeout():&#160;TriggerFanOut.h'],['../_exception_handling_decorator_8cc.html#a79e25afc8d49734b01e480603207a6a3',1,'DeviceOpenTimeout():&#160;ExceptionHandlingDecorator.cc']]],
   ['dir',['dir',['../struct_chimera_t_k_1_1_variable_direction.html#a731e6cd5f58f1f014d443434f9ff6219',1,'ChimeraTK::VariableDirection']]],
   ['direction',['direction',['../struct_chimera_t_k_1_1_variable_network_node__data.html#aeb392b6238bd9ec1603d16868a8aec33',1,'ChimeraTK::VariableNetworkNode_data']]],
