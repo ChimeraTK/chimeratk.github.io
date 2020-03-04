@@ -5,9 +5,6 @@ var NAVTREE =
       [ "Introduction", "exception_handling.html#Introduction", null ],
       [ "DataValidity", "exception_handling.html#DataValidity", null ]
     ] ],
-    [ "Exception Handling Design", "exception_handling_design.html", [
-      [ "General Idea", "exception_handling_design.html#gen_idea", null ]
-    ] ],
     [ "Logging module and Logger", "loggingdoc.html", [
       [ "Introduction to the logging mechanism", "loggingdoc.html#loggingintro", null ]
     ] ],
@@ -19,6 +16,9 @@ var NAVTREE =
       [ "XML file structure", "configreader.html#xmlstructure", null ]
     ] ],
     [ "Technical specification: propagation of initial values", "spec_initial_value_propagation.html", null ],
+    [ "Exception Handling Design", "exception_handling_design.html", [
+      [ "General Idea", "exception_handling_design.html#gen_idea", null ]
+    ] ],
     [ "Example 1: Application with two modules and two hardware devices", "example1.html", null ],
     [ "Example 2: Small but complete application with a proportional controller", "example2.html", null ],
     [ "Example 2a: Application with automation module", "example2a.html", null ],
