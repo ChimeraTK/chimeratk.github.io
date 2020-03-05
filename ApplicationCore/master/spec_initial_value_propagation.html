@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <ul>
 <li>Initial values must be available to all <code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code>s at the start of the <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ChimeraTK::ApplicationModule::mainLoop()</a></code>. No call to <code>ChimeraTK::TransferElement::read()</code> etc. is required. This implies that the <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ChimeraTK::ApplicationModule::mainLoop()</a></code> is not started until all initial values are available, including those coming from devices which might potentially be offline, or from other <code>ApplicationModule</code>s.</li>
 <li><code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code> implementations can either provide initial values for their outputs in <code><a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ChimeraTK::ApplicationModule::prepare()</a></code> (if the initial value doesn't depend on any inputs) or right after the start of the <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ChimeraTK::ApplicationModule::mainLoop()</a></code> (if the initial value needs to be computed from the incoming initial values of the inputs).</li>
+<li>The "value after construction" must not be propagated automatically during initial value propagation, not even with the <code>ChimeraTK::DataValidity::faulty</code> flag set. It must not be visible to user code in the <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ChimeraTK::ApplicationModule::mainLoop()</a></code>.</li>
 <li>Since <code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code>s might wait for initial values from other <code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code>s, the modules might end up in a dead lock due to a circular connection. The circular connection is legal, but the dead lock situation needs to be broken by one <code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code> writing its initial value during <code><a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ChimeraTK::ApplicationModule::prepare()</a></code>.</li>
 <li>Devices must receive the initial values as soon as possible after the device is opened and after the initialisation sequence is executed. There is no guarantee that other registers of the same device are written or read only after the initial values are written. Hence, any critical registers that need to be written before accessing other registers must be written in the initialisation sequence.</li>
 <li>The control system doesn't receive "initial values" as such. The first value of a process variable is sent to the control system when available. This may depend even on external conditions like the availability of devices, e.g. the control system interface has to run even if devices are not available and hence cannot send an inital value.</li>
@@ -110,22 +111,21 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>All <code>ChimeraTK::NDRegisterAccessor</code> implementations (including but not limited to the <code>ChimeraTK::ProcessArray</code>) must have the <code>ChimeraTK::DataValidity::faulty</code> flag set after construction for the receiving end. This ensures, all data is marked as <code>faulty</code> as long as no sensible initial values have been propagated. The sending end must have <code>ChimeraTK::DataValidity::ok</code> after construction, so that the first written data automatically propagates the ok state by default. For bidirectional variables, this must be the case for both directions separately.</li>
 <li>All <code>ChimeraTK::NDRegisterAccessor</code> implementations must have initially a <code>ChimeraTK::VersionNumber</code> constructed with a <code>nullptr</code>, which allows to check whether this variable is still at its "value after construction", or the initial value propagation already took place.</li>
 <li><code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code> (and <code><a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html" title="FanOut implementation with an internal thread which waits for new data which is read from the given f...">ChimeraTK::ThreadedFanOut</a></code>/<code><a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html" title="InternalModule which waits for a trigger, then reads a number of variables and distributes each of th...">ChimeraTK::TriggerFanOut</a></code>) propagate the <code>ChimeraTK::DataValidity</code> of its outputs according to the state of all inputs. This behaviour is identical to later during normal data processing.</li>
-<li>The "value after construction" must not be propagated automatically during initial value propagation, not even with the <code>ChimeraTK::DataValidity::faulty</code> flag set. It must not be visible to user code in the <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ChimeraTK::ApplicationModule::mainLoop()</a></code>.</li>
+<li>(removed)</li>
 <li>Control system variables:<ol type="a">
-<li>Variables with the control-system-to-application direction must be written exactly once at application start by the control system adapter with their initial values from the persistency layer. This must be done before <code><a class="el" href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72daa53108f7543b75adbb34afc035d4cdf6" title="Actual run phase with full multi threading. ">ChimeraTK::ApplicationBase::run()</a></code> is called. If the persistency layer can persist the <code>ChimeraTK::DataValidity</code>, the initial value should have the correct validity. Otherwise, initial values will always have the <code>ChimeraTK::DataValidity::ok</code>.</li>
+<li>Variables with the control-system-to-application direction must be written exactly once at application start by the control system adapter with their initial values from the persistency layer. This must be done before <code><a class="el" href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72daa53108f7543b75adbb34afc035d4cdf6" title="Actual run phase with full multi threading. ">ChimeraTK::ApplicationBase::run()</a></code> is called, or soon after (major parts of the application will be blocked until it's done). If the persistency layer can persist the <code>ChimeraTK::DataValidity</code>, the initial value should have the correct validity. Otherwise, initial values will always have the <code>ChimeraTK::DataValidity::ok</code>.</li>
 <li>Variables with the application-to-control-system direction do not have an "initial value". The first value of these variables are written at an undefined time after the <code><a class="el" href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72daa53108f7543b75adbb34afc035d4cdf6" title="Actual run phase with full multi threading. ">ChimeraTK::ApplicationBase::run()</a></code> has been called. The control system adapter must not expect any specific behaviour. Entities writing to these variables do not need to take any special precautions.</li>
 </ol>
 </li>
 <li>Device variables:<ol type="a">
-<li>Write accessors need to be written right after the device is opened and the initialisation is done, as soon as the initial value is available for that variable. Initial values can be present through 5.a, 6.b or 7.</li>
+<li>Write accessors need to be written after the device is opened and the initialisation is done, as soon as the initial value is available for that variable. Initial values can be present through 5.a, 6.b or 7.</li>
 <li>Initial values for read accessors must be read after the device is openend and the initialsation is done. The read is performed with <code>ChimeraTK::TransferElement::readLatest()</code>.</li>
 </ol>
 </li>
 <li>Outputs of <code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code>s:<ol type="a">
 <li>Initial values can be written in <code><a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ChimeraTK::ApplicationModule::prepare()</a></code>, if the value does not depend on any input values (since input values are not available during <code>prepare()</code>).</li>
-<li>Alternatively, initial values can be written in <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ChimeraTK::ApplicationModule::mainLoop()</a></code> before calling any <code>read</code> function. Typically, to propagate the initial values of its inputs, an <code>ApplicationModule</code> will run its computations and write its outputs first before waiting for new data with a blocking <code>read()</code> and the end of the processing loop.</li>
-<li>Since in <code><a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ChimeraTK::ApplicationModule::prepare()</a></code> all devices are still closed, any writes to device variables at this point need to be delayed until the device is open. The actual write is hence performed by the DeviceModule.</li>
-<li>An output of a <code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code> with an initial value written in <code><a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ChimeraTK::ApplicationModule::prepare()</a></code> and later never written again behaves in the same way as a constant (see 10.).</li>
+<li>Alternatively, initial values can be written in <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ChimeraTK::ApplicationModule::mainLoop()</a></code> before calling any <code>read</code> function. Typically, to propagate the initial values of its inputs, an <code>ApplicationModule</code> will run its computations and write its outputs first before waiting for new data with a blocking <code>read()</code> and the end of the processing loop. The application author needs to take into account that in this case <code>write</code> functions might block until the target device becomes available and hence block the further propagation of the initial values.</li>
+<li>Since in <code><a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ChimeraTK::ApplicationModule::prepare()</a></code> all devices are still closed, any writes to device variables at this point need to be delayed until the device is open. The actual write is hence performed asynchronously in a different thread.</li>
 </ol>
 </li>
 <li>Inputs of <code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code>s:<ol type="a">
@@ -140,15 +140,15 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 </li>
 </ol>
 </li>
-<li><code><a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html" title="FanOut implementation with an internal thread which waits for new data which is read from the given f...">ChimeraTK::ThreadedFanOut</a></code> and <code><a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html" title="InternalModule which waits for a trigger, then reads a number of variables and distributes each of th...">ChimeraTK::TriggerFanOut</a></code> etc. (does not apply to decorator-like fan outs <code><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html" title="NDRegisterAccessor implementation which distributes values written to this accessor out to any number...">ChimeraTK::FeedingFanOut</a></code> and <code><a class="el" href="class_chimera_t_k_1_1_consuming_fan_out.html" title="FanOut implementation which acts as a read-only (i.e. ">ChimeraTK::ConsumingFanOut</a></code> etc.)<ol type="a">
-<li>The FanOuts should have a transparent behaviour, i.e. an entity that receives an initial value through a FanOut should see the same behaviour as if a direct connection would have been realised.</li>
+<li>The module-like fan outs <code><a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html" title="FanOut implementation with an internal thread which waits for new data which is read from the given f...">ChimeraTK::ThreadedFanOut</a></code> and <code><a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html" title="InternalModule which waits for a trigger, then reads a number of variables and distributes each of th...">ChimeraTK::TriggerFanOut</a></code> (does not apply to the accessor-like fan outs <code><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html" title="NDRegisterAccessor implementation which distributes values written to this accessor out to any number...">ChimeraTK::FeedingFanOut</a></code> and <code><a class="el" href="class_chimera_t_k_1_1_consuming_fan_out.html" title="FanOut implementation which acts as a read-only (i.e. ">ChimeraTK::ConsumingFanOut</a></code>)<ol type="a">
+<li>The fan outs should have a transparent behaviour, i.e. an entity that receives an initial value through a fan out should see the same behaviour as if a direct connection would have been realised.</li>
 <li>This implies that the inputs need to treated like described in 8.b.</li>
 <li>The initial value is propagated immediately to the outputs.</li>
 <li>If an output cannot be written at that point (because it writes to a device currently being unavailable), the value propagation to other targets must not be blocked. See recovery mechanism described in <a class="el" href="exception_handling_design.html">Exception Handling Design</a>.</li>
 </ol>
 </li>
 <li>Constants (<code><a class="el" href="class_chimera_t_k_1_1_application.html#ac218f88f11166c115b0facb6a2c981f5" title="Convenience function for creating constants. ">ChimeraTK::Application::makeConstant()</a></code>):<ol type="a">
-<li>Values are propagated before the <code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code> threads are starting (just like initial values written in <code><a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ChimeraTK::ApplicationModule::prepare()</a></code>, see 7.d).</li>
+<li>Values are propagated before the <code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code> threads are starting (just like initial values written in <code><a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ChimeraTK::ApplicationModule::prepare()</a></code>).</li>
 <li>Special treatment for constants written to devices: They need to be written after the device is opened (see 6.a), with the same mechanism as in 7.c.</li>
 </ol>
 </li>
@@ -158,7 +158,9 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <ul>
 <li>To 4.: It is very important that no wrong data is transported initially. Since the "value after construction" of all process variables is always 0 or so, this value is basically always wrong. If it gets propagated within the application, modules will process this value (usually even if <code>ChimeraTK::DataValidity::faulty</code> is set), despite the value might present an inconsistent state with other process variables. If it gets propagated to the control system, other applications might act on an again inconsistent state.</li>
 <li>To 5.: This is the responsibility of each control system adpater implementation.</li>
-<li>To 8.b: The decision whether to use blocking or non-blocking read for the initial transfer has the following reasons:<ul>
+<li>To 7. and 10.: An output of a <code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code> with an initial value written in <code><a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ChimeraTK::ApplicationModule::prepare()</a></code> and later never written again behaves in the same way as a constant.</li>
+<li>To 7.b.: In future, the specification could be changed to mitigate the issue of blocking <code>write</code>s: It could be specified that all <code>write</code>s in the <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ChimeraTK::ApplicationModule::mainLoop()</a></code> are not blocking due to unavailable devices, until the first <code>read</code> function has been called.</li>
+<li>To 8.b.: The decision whether to use blocking or non-blocking read for the initial transfer has the following reasons:<ul>
 <li>8.b.i.: Blocking reads prevent race condtion especially in cases where a ThreadedFanOut is involved.</li>
 <li>8.b.ii.: <code>ChimeraTK::TransferElement::readLatest()</code> fetches current value instead of waiting for a new value - see high-level requirements.</li>
 <li>8.b.iii.: Blocking reads prevent race condtion.</li>
@@ -170,91 +172,128 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <h2>Implementation</h2>
 <h3>NDRegisterAccessor implementations</h3>
 <ul>
-<li>1. must currently be implemented by each <code>ChimeraTK::NDRegisterAccessor</code> separately. [TBD: Instead of requiring all implementations to be changed, we could also fix this in <code><a class="el" href="class_chimera_t_k_1_1_application.html#ace062becb6e35520147524dfec914a10" title="Perform the actual connection of an accessor to a device register. ">ChimeraTK::Application::createDeviceVariable()</a></code>, but this creates an asymetry to the <code>ProcessArray</code>...]</li>
-<li>2. must currently be implemented by each <code>ChimeraTK::NDRegisterAccessor</code> separately. All accessors should already have a <code>ChimeraTK::VersionNumber</code> data member called <code>currentVersion</code> or similar, it simply needs to be constructed with a <code>nullptr</code> as an argument.</li>
-<li>The <code>ChimeraTK::UnidirectionalProcessArray</code> uses always a default start value of <code>DataValidity::ok</code>, but overwrites this with <code>DataValidity::faulty</code> for the receivers in the factory function <code>ChimeraTK::UnidirectionalProcessArray::createSynchronizedProcessArray()</code> (both implementations, see UnidirectionalProcessArray.h).</li>
+<li>Each <code>ChimeraTK::NDRegisterAccessor</code> must implement 1. separately.</li>
+<li>Each <code>ChimeraTK::NDRegisterAccessor</code> must implement 2. separately. All accessors should already have a <code>ChimeraTK::VersionNumber</code> data member called <code>currentVersion</code> or similar, it simply needs to be constructed with a <code>nullptr</code> as an argument.</li>
 </ul>
 <h3>ApplicationModule</h3>
 <ul>
-<li>Needs to implement 3:<ul>
-<li><code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a16d396795d2e8116cc75cd3a10d160f2" title="Return the data validity flag. ">ChimeraTK::ApplicationModule::getDataValidity()</a></code> returns <code>ok</code> if the <code>faultCounter</code> is 0, <code>faulty</code> otherwise</li>
-<li>Hence fault counter starts with 0.</li>
+<li>Implement 3.:<ul>
+<li><code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a16d396795d2e8116cc75cd3a10d160f2" title="Return the data validity flag. ">ChimeraTK::ApplicationModule::getDataValidity()</a></code> returns <code>ok</code> if the <code>faultCounter</code> is 0, otherwise <code>faulty</code>.</li>
+<li>All input variables are <code>faulty</code> at start.</li>
+<li>Hence fault counter should start at the number of inputs.</li>
+<li>The <code>ChimeraTK::MetaDataPropagatingDecorator</code> will count down the fault counter when an <code>ok</code> value is received</li>
+<li>Hence <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a16d396795d2e8116cc75cd3a10d160f2" title="Return the data validity flag. ">ChimeraTK::ApplicationModule::getDataValidity()</a></code> will return <code>ok</code> when all inputs have received an <code>ok</code> value.</li>
 </ul>
 </li>
-<li>API documentation must contain 7</li>
-<li>Needs to implement 8 via <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code></li>
+<li>API documentation must contain 7.</li>
+<li>Implements 8. (hence takes part in 5.a, 6.b, 7 and 10 implicitly):<ul>
+<li>All inputs of the module must be read in the <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#ac2c8911aaa22fca678cfd5f79c0a1f0f" title="Wrapper around mainLoop(), to execute additional tasks in the thread before entering the main loop...">ChimeraTK::ApplicationModule::mainLoopWrapper()</a></code> before the call to <code>mainLoop()</code>.</li>
+<li>The type of the read decided via <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code>, which implements 8.b. [tbd: new name]</li>
+</ul>
+</li>
 </ul>
 <h3>ThreadedFanOut</h3>
 <ul>
-<li>Needs to implement 3.<ul>
-<li>Currently just passing on the validity from the input.</li>
-<li>This is probably going to change when the correct propagation of the validity flag is implemented.</li>
+<li>Implement 3, implementation will be already covered by normal flag propagation</li>
+<li>Needs to implement 9. (hence takes part in 5.a, 6, 7 and 10 implicitly):<ul>
+<li>structure the fan out's "mainLoop" like this:<ul>
+<li>read initial values (9.a via <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code> [tbd: new name])</li>
+<li>begin loop</li>
+<li>write outputs</li>
+<li>read input</li>
+<li>cycle loop</li>
 </ul>
 </li>
-<li>Needs to implement 6.a abd 6.b, realised via <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code></li>
-<li>Needs to implement 9:<ul>
-<li>9.a via <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code> -&gt; already covered with the previous point</li>
-<li>9.b covered by the <code><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ChimeraTK::ExceptionHandlingDecorator</a></code></li>
-<li>9.c requires no special precautions</li>
+<li>9.d is covered by the <code><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ChimeraTK::ExceptionHandlingDecorator</a></code>.</li>
 </ul>
 </li>
 </ul>
 <h3>TriggerFanOut</h3>
 <ul>
-<li>Needs to implement 3.</li>
-<li>Needs to implement 6.a and 6.b, realised via <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code></li>
-<li>Needs to implement 9:<ul>
-<li>9.a via <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code> -&gt; already covered with the previous point</li>
-<li>9.b <b>not</b> covered by the <code><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ChimeraTK::ExceptionHandlingDecorator</a></code> here (as the decorator is not effective with <code>ChimeraTK::TransferGroup</code>s), needs to be properly implemented</li>
-<li>9.c requires no special precautions</li>
+<li>Needs to implement 3, implementation will be already covered by normal flag propagation</li>
+<li>Needs to implement 9. (hence takes part in 5.a, 6, 7 and 10 implicitly):<ul>
+<li>structure the fan out's "mainLoop" like this:<ul>
+<li>read initial values (9.a via <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code> [tbd: new name])</li>
+<li>begin loop</li>
+<li>write outputs</li>
+<li>read input</li>
+<li>cycle loop</li>
+</ul>
+</li>
+<li>9.d <b>not</b> covered by the <code><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ChimeraTK::ExceptionHandlingDecorator</a></code> here (as the decorator is not effective with <code>ChimeraTK::TransferGroup</code>s), needs to be properly implemented [tbd: if all DeviceAccess backends are obliged to throw exceptions <em>only</em> in <code>postRead()</code>, the decorator could be effective also for <code>TransferGroup</code>s and we would also solve some issues with exceptions during asynchronous transfers and <code>readAny()</code>]</li>
 </ul>
 </li>
 </ul>
 <h3>DeviceModule</h3>
 <ul>
-<li>Needs to implement parts of 6.a:<ul>
-<li><code><a class="el" href="class_chimera_t_k_1_1_device_module.html#a919584a80ca4081484c889e0eb53e32a" title="List of TransferElements to be written after the device has been opened. ">ChimeraTK::DeviceModule::writeAfterOpen</a></code> is a list of accessors to be written after the device is opened for the first time</li>
-<li>The <code><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ChimeraTK::ExceptionHandlingDecorator</a></code> will fill the list when necessary, see 7.c</li>
+<li>All points are also covered by <a class="el" href="exception_handling_design.html">Exception Handling Design</a>.</li>
+<li>Takes part in 6.a:<ul>
+<li><code><a class="el" href="class_chimera_t_k_1_1_device_module.html#a919584a80ca4081484c889e0eb53e32a" title="List of TransferElements to be written after the device has been opened. ">ChimeraTK::DeviceModule::writeAfterOpen</a>/writeRecoveryOpen</code> [tbd: new name for unified list] is a list of accessors to be written after the device is opened/recovered.</li>
 </ul>
 </li>
-<li>Needs to take care of 6.b partially:<ul>
-<li>Initial values are being read from the device by other entities, but these must be blocked until the DeviceModule wakes them up.</li>
-<li>This wake up must take place after initialisation and 6.a is complete</li>
+<li>Takes part in 6.b:<ul>
+<li>Initial values are being read from the device by other entities, but these must be blocked until the DeviceModule wakes them up after the device has been opened and initialised. This uses the same mechanism as for blocking read operations during recovery.</li>
 </ul>
 </li>
-<li>Needs to implement 10.b, done through <code><a class="el" href="class_chimera_t_k_1_1_device_module.html#a919584a80ca4081484c889e0eb53e32a" title="List of TransferElements to be written after the device has been opened. ">ChimeraTK::DeviceModule::writeAfterOpen</a></code> -&gt; already covered by previous point.</li>
+<li>Needs to implement 10.b, done through <code><a class="el" href="class_chimera_t_k_1_1_device_module.html#a919584a80ca4081484c889e0eb53e32a" title="List of TransferElements to be written after the device has been opened. ">ChimeraTK::DeviceModule::writeAfterOpen</a>/writeRecoveryOpen</code> -&gt; already covered by first point.</li>
 </ul>
 <h3>ExceptionHandlingDecorator</h3>
 <ul>
-<li>Needs to implement parts of 6.a:<ul>
-<li>When a write happens while the application's <code>LifeCycleState</code> is not yet <code>run</code>, it must not block, because the device will not be openend, see 7.c</li>
-<li>Instead the recoveryAccessor is added to the <code><a class="el" href="class_chimera_t_k_1_1_device_module.html#a919584a80ca4081484c889e0eb53e32a" title="List of TransferElements to be written after the device has been opened. ">ChimeraTK::DeviceModule::writeAfterOpen</a></code> list</li>
+<li>Must implement part of 6.a/7.c/9.d/10.b: Provide function which allows to write without blocking in case of an unavailable device:<ul>
+<li>The list <code><a class="el" href="class_chimera_t_k_1_1_device_module.html#a919584a80ca4081484c889e0eb53e32a" title="List of TransferElements to be written after the device has been opened. ">ChimeraTK::DeviceModule::writeAfterOpen</a>/writeRecoveryOpen</code> [tbd: new name for unified list] is filled with the "recovery accessor" (a "copy" of the original accessor, created by <code><a class="el" href="class_chimera_t_k_1_1_application.html#ace062becb6e35520147524dfec914a10" title="Perform the actual connection of an accessor to a device register. ">ChimeraTK::Application::createDeviceVariable()</a></code>). This accessor allows the restoration of the last known value of a register after recovery from an exception by the DeviceModule. See also <a class="el" href="exception_handling_design.html">Exception Handling Design</a>.</li>
+<li>When a write happens while the device is still unavailable (not opened or initialisation still in progress), the write should not block (in contrast to normal writes in a <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ChimeraTK::ApplicationModule::mainLoop()</a></code>).</li>
+<li>The "recovery accessor" is also used in this case to defer the write operation until the device becomes available.</li>
+<li>The actual write is then performed asynchronously by the <code><a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">ChimeraTK::DeviceModule</a></code>.</li>
+<li>This implementation is the same as the implementation for the non-blocking write function [tbd: correct name] which available to <code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code> user implementations.</li>
+</ul>
+</li>
+<li>Needs to implement 6.b.:<ul>
+<li>The <code>ChimeraTK::TransferElement::readLatest()</code> must be delayed until the device is available and initialised.</li>
+<li><a class="el" href="exception_handling_design.html">Exception Handling Design</a> states that non-blocking read operations like <code>ChimeraTK::TransferElement::readLatest()</code> should never block due to an exception.</li>
+<li>Hence a special treatment is required in this case:</li>
+<li><code>ChimeraTK::ExceptionHandlingDecorator::readLatest()</code> should block until the device is opened and initialised if (and only if) the accessor still has the <code>ChimeraTK::VersionNumber(nullptr)</code> - which means it has not yet been read.</li>
+<li>Since <code>readLatest()</code> is always the first <code>read</code>-type function called, it is acceptable if all <code>read</code>-type functions implement this behaviour.</li>
 </ul>
 </li>
 </ul>
 <h3>VariableNetworkNode</h3>
 <ul>
-<li>Implements the decision tree mentioned in 8.b in <code>VChimeraTK::ariableNetworkNode::hasInitialValue()</code></li>
+<li>Implements the decision tree mentioned in 8.b. in <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code> [tbd: new name]</li>
 </ul>
 <h3>Application</h3>
 <p>(This section refers to the class <code><a class="el" href="class_chimera_t_k_1_1_application.html">ChimeraTK::Application</a></code>, not to the user-defined application.)</p>
 <ul>
-<li>Need to implement 7.b:<ul>
-<li>In <code><a class="el" href="class_chimera_t_k_1_1_application.html#a6815195c956c091a6558a316f8fd9976">ChimeraTK::Application::run()</a></code>, after the calls to <code><a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ChimeraTK::ApplicationModule::prepare()</a></code> all module outputs are checked</li>
-<li>If a variable has been written during <code><a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ChimeraTK::ApplicationModule::prepare()</a></code>, the hasInitialValue flag is set in the corresponding <code>VariableNetworkNode</code>.</li>
-<li>The VersionNumber is used to determine if a variable has been written or not (cf. 2.)</li>
+<li>Implements 10.a. 10.b covered by <code><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ChimeraTK::ExceptionHandlingDecorator</a></code>.</li>
+</ul>
+<h3>ControlSystemAdapter</h3>
+<ul>
+<li>Must implement 5.a<ul>
+<li>Needs to be done in all adapters separately</li>
 </ul>
 </li>
 </ul>
 <h2>Known bugs</h2>
+<h3>DeviceAccess interface</h3>
+<ul>
+<li>1. is currently not implementable for (potentially) bidirectional accessors (like most backend accessors). An interface change is required to allow separete <code>ChimeraTK::DataValidity</code> flags for each direction.</li>
+</ul>
 <h3>NDRegisterAccessor implementations</h3>
 <ul>
 <li>1. is not implemented for Device implementations (only the <code>UnidirectionalProcessArray</code> is correct at the moment).</li>
 <li>2. is not implemented for Device implementations (only the <code>UnidirectionalProcessArray</code> is correct at the moment).</li>
 </ul>
+<h3>TriggerFanOut</h3>
+<ul>
+<li>3. is not correctly implemented, it needs to be done on a per-variable level.</li>
+</ul>
 <h3>ExceptionHandlingDecorator</h3>
 <ul>
 <li>It waits until the device is opened, but not until after the initialisation is done.</li>
+</ul>
+<h3>ControlSystemAdapter</h3>
+<ul>
+<li>EPICS-Adapter might not properly implement 5.a, needs to be checked. Especially it might not be guaranteed that all variables are written (and not only those registered in the autosave plugin).</li>
+<li>The <code>ChimeraTK::UnidirectionalProcessArray</code> uses always a default start value of <code>DataValidity::ok</code>, but overwrites this with <code>DataValidity::faulty</code> for the receivers in the factory function <code>ChimeraTK::UnidirectionalProcessArray::createSynchronizedProcessArray()</code> (both implementations, see UnidirectionalProcessArray.h). This can be solved more elegant after the DeviceAccess interface change described above.</li>
 </ul>
 <h3>Documentation</h3>
 <ul>
@@ -267,7 +306,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Wed Mar 4 2020 04:53:42 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Mar 5 2020 04:53:44 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
