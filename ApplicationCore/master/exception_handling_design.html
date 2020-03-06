@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-ApplicationCore: Exception Handling Design</title>
+<title>ChimeraTK-ApplicationCore: Technical specification: Exception Handling Design</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,10 +82,11 @@ $(document).ready(function(){initNavTree('exception_handling_design.html','');})
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Exception Handling Design </div>  </div>
+<div class="title">Technical specification: Exception Handling Design </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="gen_idea"></a>
+<div class="textblock"><p><b>DRAFT VERSION, WRITE-UP IN PROGRESS!</b></p>
+<h1><a class="anchor" id="gen_idea"></a>
 General Idea</h1>
 <p>Exceptions must be handled by ApplicationCore in a way that the application developer does not have to care much about it.</p>
 <p>In case of a ChimeraTK::runtime_error exception the framework must catch the expection and report it to the DeviceModule. The DeviceModule handles this exception and preiodically tries to open the device. In case of several devices only the faulty device is blocked. Even if a device is faulty it should not block the server from starting.</p>
@@ -261,7 +262,7 @@ General Idea</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Fri Mar 6 2020 12:19:14 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Mar 6 2020 14:45:31 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

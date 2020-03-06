@@ -16,7 +16,7 @@ var searchData=
   ['scalaraccessor_3c_20uint16_5ft_20_3e',['ScalarAccessor&lt; uint16_t &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
   ['scalaraccessor_3c_20uint32_5ft_20_3e',['ScalarAccessor&lt; uint32_t &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
   ['scalaraccessor_3c_20uint64_5ft_20_3e',['ScalarAccessor&lt; uint64_t &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK']]],
-  ['scalarmap',['scalarMap',['../class_chimera_t_k_1_1_test_facility.html#a49151a45dd4adf2dfdfcb5109d5d879b',1,'ChimeraTK::TestFacility::scalarMap()'],['../class_chimera_t_k_1_1_test_facility.html#a814e38a5c9698f27652d6d326f21a30a',1,'ChimeraTK::TestFacility::ScalarMap()']]],
+  ['scalarmap',['ScalarMap',['../class_chimera_t_k_1_1_test_facility.html#a814e38a5c9698f27652d6d326f21a30a',1,'ChimeraTK::TestFacility::ScalarMap()'],['../class_chimera_t_k_1_1_test_facility.html#a49151a45dd4adf2dfdfcb5109d5d879b',1,'ChimeraTK::TestFacility::scalarMap()']]],
   ['scalaroutput',['ScalarOutput',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK::ScalarOutput&lt; UserType &gt;'],['../struct_chimera_t_k_1_1_scalar_output.html#ac6cdb23d6d443d8a688c661369ac5ad8',1,'ChimeraTK::ScalarOutput::ScalarOutput(Module *owner, const std::string &amp;name, std::string unit, const std::string &amp;description, const std::unordered_set&lt; std::string &gt; &amp;tags={})'],['../struct_chimera_t_k_1_1_scalar_output.html#af387202f9844aafa1480d99ccc656419',1,'ChimeraTK::ScalarOutput::ScalarOutput()']]],
   ['scalaroutput_3c_20double_20_3e',['ScalarOutput&lt; double &gt;',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK']]],
   ['scalaroutput_3c_20int_20_3e',['ScalarOutput&lt; int &gt;',['../struct_chimera_t_k_1_1_scalar_output.html',1,'ChimeraTK']]],
@@ -77,7 +77,7 @@ var searchData=
   ['setvaluetype',['setValueType',['../class_chimera_t_k_1_1_variable_network_node.html#a05948328d255d895d91e07b285bf20e0',1,'ChimeraTK::VariableNetworkNode']]],
   ['shutdown',['shutdown',['../class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a',1,'ChimeraTK::Application::shutdown()'],['../namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72da5924f03a95ee6f7277e5bdd1e81b8fdc',1,'ChimeraTK::shutdown()']]],
   ['silent',['SILENT',['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416a1b65f50cc55a099d0c120b18314d384b',1,'logging']]],
-  ['simulation',['Simulation',['../struct_example_app.html#abd16c59e21124f075eed347568b30464',1,'ExampleApp::Simulation()'],['../struct_example_app.html#abd542c1e6b5653650c7d297da9f0abc7',1,'ExampleApp::simulation()']]],
+  ['simulation',['simulation',['../struct_example_app.html#abd542c1e6b5653650c7d297da9f0abc7',1,'ExampleApp::simulation()'],['../struct_example_app.html#abd16c59e21124f075eed347568b30464',1,'ExampleApp::Simulation()']]],
   ['simulationmodule',['SimulationModule',['../struct_simulation_module.html',1,'']]],
   ['slaves',['slaves',['../class_chimera_t_k_1_1_fan_out.html#a5056124514dfea29a94e722e9903d1cd',1,'ChimeraTK::FanOut']]],
   ['sp',['sp',['../struct_controller.html#abc1bd02bfdaf29b368c4d558e087250a',1,'Controller']]],
@@ -101,6 +101,6 @@ var searchData=
   ['stopmeasurement',['stopMeasurement',['../class_chimera_t_k_1_1_profiler.html#a35af786affb9aecdc2e36a792c9ff5a5',1,'ChimeraTK::Profiler']]],
   ['stream',['stream',['../class_chimera_t_k_1_1_pushable_stream.html#a916dbc0fd3430135e4fbb2a73c22e52e',1,'ChimeraTK::PushableStream']]],
   ['submodule',['submodule',['../class_chimera_t_k_1_1_module.html#a5b69b847a580b0c4aa20309a81246b0c',1,'ChimeraTK::Module']]],
-  ['submodules',['subModules',['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()'],['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()']]],
+  ['submodules',['submodules',['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()'],['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()']]],
   ['supportedusertypes_2eh',['SupportedUserTypes.h',['../_supported_user_types_8h.html',1,'']]]
 ];
