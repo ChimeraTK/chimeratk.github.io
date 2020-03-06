@@ -174,6 +174,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <ul>
 <li>Each <code>ChimeraTK::NDRegisterAccessor</code> must implement 1. separately.</li>
 <li>Each <code>ChimeraTK::NDRegisterAccessor</code> must implement 2. separately. All accessors should already have a <code>ChimeraTK::VersionNumber</code> data member called <code>currentVersion</code> or similar, it simply needs to be constructed with a <code>nullptr</code> as an argument.</li>
+<li><code>ChimeraTK::NDRegisterAccessor</code> must throw exceptions <em>only</em> in <code>TransferElement::postRead()</code> and <code>TransferElement::postWrite()</code>. No exceptions may be thrown in <code>TransferElement::doReadTransfer()</code> etc. (all transfer implementations). See also <a class="el" href="exception_handling_design.html">Exception Handling Design</a>.</li>
 </ul>
 <h3>ApplicationModule</h3>
 <ul>
@@ -188,7 +189,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>API documentation must contain 7.</li>
 <li>Implements 8. (hence takes part in 5.a, 6.b, 7 and 10 implicitly):<ul>
 <li>All inputs of the module must be read in the <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#ac2c8911aaa22fca678cfd5f79c0a1f0f" title="Wrapper around mainLoop(), to execute additional tasks in the thread before entering the main loop...">ChimeraTK::ApplicationModule::mainLoopWrapper()</a></code> before the call to <code>mainLoop()</code>.</li>
-<li>The type of the read decided via <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code>, which implements 8.b. [tbd: new name]</li>
+<li>The type of the read decided via <code>ChimeraTK::VariableNetworkNode::initialValueType()</code>, which implements 8.b.</li>
 </ul>
 </li>
 </ul>
@@ -196,37 +197,37 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <ul>
 <li>Implement 3, implementation will be already covered by normal flag propagation</li>
 <li>Needs to implement 9. (hence takes part in 5.a, 6, 7 and 10 implicitly):<ul>
-<li>structure the fan out's "mainLoop" like this:<ul>
-<li>read initial values (9.a via <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code> [tbd: new name])</li>
+<li>structure the fan out's "mainLoop"-equivalent (<code>ThreadedFanOut::run()</code>) like this:<ul>
+<li>read initial values (9.a via <code>ChimeraTK::VariableNetworkNode::initialValueType()</code>)</li>
 <li>begin loop</li>
 <li>write outputs</li>
 <li>read input</li>
 <li>cycle loop</li>
 </ul>
 </li>
-<li>9.d is covered by the <code><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ChimeraTK::ExceptionHandlingDecorator</a></code>.</li>
 </ul>
 </li>
 </ul>
 <h3>TriggerFanOut</h3>
 <ul>
-<li>Needs to implement 3, implementation will be already covered by normal flag propagation</li>
+<li>Implement 3, implementation will be already covered by normal flag propagation</li>
 <li>Needs to implement 9. (hence takes part in 5.a, 6, 7 and 10 implicitly):<ul>
-<li>structure the fan out's "mainLoop" like this:<ul>
-<li>read initial values (9.a via <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code> [tbd: new name])</li>
+<li>In contrast to the <code>ThreadedFanOut</code>, the <code>TriggerFanOut</code> has only poll-type data inputs which are all coming from the same device. Data inputs cannot come from non-devices.</li>
+<li>Structure the fan out's "mainLoop"-equivalent (<code>TriggerFanOut::run()</code>) like this:<ul>
+<li>read initial values of trigger input (9.a via <code>ChimeraTK::VariableNetworkNode::initialValueType()</code>)</li>
 <li>begin loop</li>
+<li>read inputs via <code>ChimeraTK::TransferGroup</code></li>
 <li>write outputs</li>
-<li>read input</li>
 <li>cycle loop</li>
 </ul>
 </li>
-<li>9.d <b>not</b> covered by the <code><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ChimeraTK::ExceptionHandlingDecorator</a></code> here (as the decorator is not effective with <code>ChimeraTK::TransferGroup</code>s), needs to be properly implemented [tbd: if all DeviceAccess backends are obliged to throw exceptions <em>only</em> in <code>postRead()</code>, the decorator could be effective also for <code>TransferGroup</code>s and we would also solve some issues with exceptions during asynchronous transfers and <code>readAny()</code>]</li>
+<li>9.d is covered by the <code><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ChimeraTK::ExceptionHandlingDecorator</a></code>. It is important that <code>ChimeraTK::NDRegisterAccessor</code> throws only in <code>TransferElement::postRead()</code> (see implementation section for the <code>NDRegisterAccessor</code>), since otherwise the decorator cannot catch the exceptions due to the <code>TransferGroup</code>.</li>
 </ul>
 </li>
 </ul>
 <h3>DeviceModule</h3>
+<p>All points are also covered by <a class="el" href="exception_handling_design.html">Exception Handling Design</a>.</p>
 <ul>
-<li>All points are also covered by <a class="el" href="exception_handling_design.html">Exception Handling Design</a>.</li>
 <li>Takes part in 6.a:<ul>
 <li><code><a class="el" href="class_chimera_t_k_1_1_device_module.html#a919584a80ca4081484c889e0eb53e32a" title="List of TransferElements to be written after the device has been opened. ">ChimeraTK::DeviceModule::writeAfterOpen</a>/writeRecoveryOpen</code> [tbd: new name for unified list] is a list of accessors to be written after the device is opened/recovered.</li>
 </ul>
@@ -252,13 +253,12 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li><a class="el" href="exception_handling_design.html">Exception Handling Design</a> states that non-blocking read operations like <code>ChimeraTK::TransferElement::readLatest()</code> should never block due to an exception.</li>
 <li>Hence a special treatment is required in this case:</li>
 <li><code>ChimeraTK::ExceptionHandlingDecorator::readLatest()</code> should block until the device is opened and initialised if (and only if) the accessor still has the <code>ChimeraTK::VersionNumber(nullptr)</code> - which means it has not yet been read.</li>
-<li>Since <code>readLatest()</code> is always the first <code>read</code>-type function called, it is acceptable if all <code>read</code>-type functions implement this behaviour.</li>
 </ul>
 </li>
 </ul>
 <h3>VariableNetworkNode</h3>
 <ul>
-<li>Implements the decision tree mentioned in 8.b. in <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code> [tbd: new name]</li>
+<li>Implements the decision tree mentioned in 8.b. in <code>ChimeraTK::VariableNetworkNode::initialValueType()</code></li>
 </ul>
 <h3>Application</h3>
 <p>(This section refers to the class <code><a class="el" href="class_chimera_t_k_1_1_application.html">ChimeraTK::Application</a></code>, not to the user-defined application.)</p>
@@ -272,6 +272,10 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 </ul>
 </li>
 </ul>
+<h3>Non-memeber functions in ApplicationCore</h3>
+<ul>
+<li>Convenience function to call the non-blocking write function of the <code><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ChimeraTK::ExceptionHandlingDecorator</a></code>, if the accessor is such a decorator. Otherwise the normal write function is called, since might never block due to exception handling anyways.</li>
+</ul>
 <h2>Known bugs</h2>
 <h3>DeviceAccess interface</h3>
 <ul>
@@ -281,19 +285,54 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <ul>
 <li>1. is not implemented for Device implementations (only the <code>UnidirectionalProcessArray</code> is correct at the moment).</li>
 <li>2. is not implemented for Device implementations (only the <code>UnidirectionalProcessArray</code> is correct at the moment).</li>
+<li>Exceptions are currently thrown in the wrong place (see implementation section for the NDRegisterAccessor). A possible implementation to help backends complying with this rule would be:<ul>
+<li>Introduce non-virtual <code>TransferElement::readTransfer()</code> etc, i.e. all functions like <code>do[...]Transfer[...]()</code> should have non-virtual pendants without <code>do</code>.</li>
+<li>These new functions will call the actual <code>do[...]Transfer[...]()</code> function, but place a try-catch-block around to catch all <a class="el" href="namespace_chimera_t_k.html" title="Generic modules for status monitoring. ">ChimeraTK</a> exceptions</li>
+<li>The exceptions are stored and operation is continued. In case of boolean return values (<code>doReadTransferNonBlocking()</code>, doReadTransferLatest()<code>and</code>doWriteTransfer()<code>), the value for success must be returned (</code>true<code>for read and</code>false<code>for write), to make sure the corresponding post-action is executed.</code></li>
+<li><code>With</code>TransferElement::postRead()<code>resp.</code>TransferElement::postWrite()<code>non-virtual wrappers for the post-actions already exist. In these functions, the stored exception should be thrown.</code></li>
+<li><code>All decorators and decorator-like accessors must be changed to call always the (new or existing) non-virtual functions in their virtual</code>do[...]` functions. This applies to both the transfer functions and the pre/post actions (for the latter it should be already the case).</li>
+<li>It is advisable to add an assert that no unthrown exception is present before storing a new exception, to prevent that exceptions might get lost due to errors in the business logic.</li>
+</ul>
+</li>
+</ul>
+<h3>ApplicationModule / EntityOwner</h3>
+<ul>
+<li>3. is not properly implemented, <code>faultCounter</code> starts at 0. The correct implementation should increase the counter in <code>EntityOwner::registerAccessor()</code> and decrease it in <code>EntityOwner::unregisterAccessor()</code> (sorry for the confusing function names...).</li>
 </ul>
 <h3>TriggerFanOut</h3>
 <ul>
 <li>3. is not correctly implemented, it needs to be done on a per-variable level.</li>
+<li>It currently implements its own exception handling (including the <code>Device::isOpened()</code> check), but in a wrong way. After the <code>NDRegisterAccessor</code> has been fixed, this needs to be removed.</li>
+</ul>
+<h3>DeviceModule</h3>
+<p>Probably all points are duplicates with <a class="el" href="exception_handling_design.html">Exception Handling Design</a>.</p>
+<ul>
+<li>Merge <code><a class="el" href="class_chimera_t_k_1_1_device_module.html#a919584a80ca4081484c889e0eb53e32a" title="List of TransferElements to be written after the device has been opened. ">ChimeraTK::DeviceModule::writeAfterOpen</a>/writeRecoveryOpen</code> lists.</li>
+<li>Implement mechanism to block read/write operations in other threads until after the initialsation is done.</li>
 </ul>
 <h3>ExceptionHandlingDecorator</h3>
+<p>Some points are duplicates with <a class="el" href="exception_handling_design.html">Exception Handling Design</a>.</p>
 <ul>
 <li>It waits until the device is opened, but not until after the initialisation is done.</li>
+<li>Provide non-blocking function.</li>
+<li>Implement special treatment for first <code>readLatest()</code> operation to always block in the very first call until the device is available.<ul>
+<li>Since <code>readLatest()</code> is always the first <code>read</code>-type function called, it is acceptable if all <code>read</code>-type functions implement this behaviour. Choose whatever is easier to implement, update the implementation section of this specification to match the chosen implementation.</li>
+</ul>
+</li>
+</ul>
+<h3>VariableNetworkNode</h3>
+<ul>
+<li>Rename <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code> into <code>ChimeraTK::VariableNetworkNode::initialValueType()</code></li>
+<li>Remove data member storing the presence of an initial value, this is now always the case. Also change <code>ChimeraTK::VariableNetworkNode::initialValueType()</code> accordingly.</li>
 </ul>
 <h3>ControlSystemAdapter</h3>
 <ul>
 <li>EPICS-Adapter might not properly implement 5.a, needs to be checked. Especially it might not be guaranteed that all variables are written (and not only those registered in the autosave plugin).</li>
 <li>The <code>ChimeraTK::UnidirectionalProcessArray</code> uses always a default start value of <code>DataValidity::ok</code>, but overwrites this with <code>DataValidity::faulty</code> for the receivers in the factory function <code>ChimeraTK::UnidirectionalProcessArray::createSynchronizedProcessArray()</code> (both implementations, see UnidirectionalProcessArray.h). This can be solved more elegant after the DeviceAccess interface change described above.</li>
+</ul>
+<h3>Non-memeber functions</h3>
+<ul>
+<li>Implement the missing convenience function</li>
 </ul>
 <h3>Documentation</h3>
 <ul>
@@ -306,7 +345,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Thu Mar 5 2020 04:53:44 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Mar 6 2020 04:54:13 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

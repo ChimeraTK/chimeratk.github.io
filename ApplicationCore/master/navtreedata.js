@@ -23,6 +23,7 @@ var NAVTREE =
     [ "Example 2: Small but complete application with a proportional controller", "example2.html", null ],
     [ "Example 2a: Application with automation module", "example2a.html", null ],
     [ "Example 3: Minimal device server", "example3.html", null ],
+    [ "Technical specification: data validity propagation", "spec_data_validity_propagation.html", null ],
     [ "Status Monitor", "statusmonitordoc.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
@@ -69,8 +70,8 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#ad571a938acbc6e0f65b257cbff8e92ea",
 "class_chimera_t_k_1_1_threaded_fan_out.html#a07947da6a7c3d65e8ead245b478b33c8",
 "dir_68267d1309a1af8e8297ef4c3efbcdba.html",
-"struct_chimera_t_k_1_1_functor_fill.html#a8dc7b8ddf6d1c97952475ab11457b251",
-"struct_table_generation_1_1_table_parameters.html"
+"struct_chimera_t_k_1_1_functor_fill.html#a239a450d539119b22eaf57654fb23d1d",
+"struct_table_generation.html#ae8c931884174f7c224200ffb1314e5ff"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
