@@ -10,5 +10,6 @@ var searchData=
   ['transferelementid',['TransferElementID',['../class_chimera_t_k_1_1_transfer_element_i_d.html',1,'ChimeraTK']]],
   ['transferfuture',['TransferFuture',['../class_chimera_t_k_1_1_transfer_future.html',1,'ChimeraTK']]],
   ['transfergroup',['TransferGroup',['../class_chimera_t_k_1_1_transfer_group.html',1,'ChimeraTK']]],
-  ['twodregisteraccessor',['TwoDRegisterAccessor',['../class_chimera_t_k_1_1_two_d_register_accessor.html',1,'ChimeraTK']]]
+  ['twodregisteraccessor',['TwoDRegisterAccessor',['../class_chimera_t_k_1_1_two_d_register_accessor.html',1,'ChimeraTK']]],
+  ['typehintmodifierplugin',['TypeHintModifierPlugin',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_type_hint_modifier_plugin.html',1,'ChimeraTK::LNMBackend']]]
 ];

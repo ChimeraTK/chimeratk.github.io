@@ -28,6 +28,7 @@ var dir_04e7a3a48585d4391a17b116de84faa7 =
       [ "MultiplierPlugin_Helper", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin___helper.html", null ],
       [ "MultiplierPlugin_Helper< UserType, double >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin___helper_3_01_user_type_00_01double_01_4.html", null ]
     ] ],
+    [ "LNMTypeHintModifierPlugin.cc", "_l_n_m_type_hint_modifier_plugin_8cc.html", null ],
     [ "LogicalNameMapParser.cc", "_logical_name_map_parser_8cc.html", "_logical_name_map_parser_8cc" ],
     [ "LogicalNameMappingBackend.cc", "_logical_name_mapping_backend_8cc.html", "_logical_name_mapping_backend_8cc" ]
 ];

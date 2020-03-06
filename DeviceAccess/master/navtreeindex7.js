@@ -1,5 +1,10 @@
 var NAVTREEINDEX7 =
 {
+"device__backends_2pcie_2include_2pciedev__io_8h.html#ace7f77e5691514de1c5a1f8c16d3025c":[16,0,1,2,0,2,8],
+"device__backends_2pcie_2include_2pciedev__io_8h.html#acf195079e65702428087887dd5649ffc":[16,0,1,2,0,2,16],
+"device__backends_2pcie_2include_2pciedev__io_8h.html#ae4a61739d33de556c654b0b2d3458549":[16,0,1,2,0,2,24],
+"device__backends_2pcie_2include_2pciedev__io_8h.html#aeda3a2a8e04dea1db5bcf4d4cec12688":[16,0,1,2,0,2,28],
+"device__backends_2pcie_2include_2pciedev__io_8h.html#affbc21ad44dcfae23526e8fb7b77b16c":[16,0,1,2,0,2,22],
 "device__backends_2pcie_2include_2pciedev__io_8h_source.html":[16,0,1,2,0,2],
 "device__backends_2pcie_2include_2pcieuni__io__compat_8h.html":[16,0,1,2,0,3],
 "device__backends_2pcie_2include_2pcieuni__io__compat_8h.html#a1500cb79fd250fdd018729ac3d3438a4":[16,0,1,2,0,3,12],
@@ -113,8 +118,8 @@ var NAVTREEINDEX7 =
 "functions_enum.html":[15,3,4],
 "functions_eval.html":[15,3,5],
 "functions_f.html":[15,3,0,6],
-"functions_func.html":[15,3,1],
 "functions_func.html":[15,3,1,0],
+"functions_func.html":[15,3,1],
 "functions_func_0x7e.html":[15,3,1,20],
 "functions_func_b.html":[15,3,1,1],
 "functions_func_c.html":[15,3,1,2],
@@ -192,6 +197,7 @@ var NAVTREEINDEX7 =
 "lmap.html#plugins_reference_math":[7,2,0,1],
 "lmap.html#plugins_reference_monostable_trigger":[7,2,0,3],
 "lmap.html#plugins_reference_multiply":[7,2,0,0],
+"lmap.html#plugins_reference_type_hint_modifier":[7,2,0,4],
 "mtca4u__compatibility__headers_2_access_mode_8h.html":[16,0,5,0],
 "mtca4u__compatibility__headers_2_access_mode_8h_source.html":[16,0,5,0],
 "mtca4u__compatibility__headers_2_backend_factory_8h.html":[16,0,5,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX7 =
 "mtca4u__compatibility__headers_2_map_exception_8h.html":[16,0,5,27],
 "mtca4u__compatibility__headers_2_map_exception_8h_source.html":[16,0,5,27],
 "mtca4u__compatibility__headers_2_map_file_parser_8h.html":[16,0,5,28],
-"mtca4u__compatibility__headers_2_map_file_parser_8h_source.html":[16,0,5,28],
-"mtca4u__compatibility__headers_2_multiplexed_data_accessor_exception_8h.html":[16,0,5,30],
-"mtca4u__compatibility__headers_2_multiplexed_data_accessor_exception_8h_source.html":[16,0,5,30],
-"mtca4u__compatibility__headers_2_n_d_register_accessor_8h.html":[16,0,5,31],
-"mtca4u__compatibility__headers_2_n_d_register_accessor_8h_source.html":[16,0,5,31],
-"mtca4u__compatibility__headers_2_n_d_register_accessor_abstractor_8h.html":[16,0,5,32],
-"mtca4u__compatibility__headers_2_n_d_register_accessor_abstractor_8h_source.html":[16,0,5,32]
+"mtca4u__compatibility__headers_2_map_file_parser_8h_source.html":[16,0,5,28]
 };

@@ -6,8 +6,8 @@ var class_chimera_t_k_1_1_exception_dummy =
     [ "open", "class_chimera_t_k_1_1_exception_dummy.html#a7be932c74d4162f56bdd4f81db19b7eb", null ],
     [ "read", "class_chimera_t_k_1_1_exception_dummy.html#a570eec6450d7229dfaa927f6cf816c99", null ],
     [ "write", "class_chimera_t_k_1_1_exception_dummy.html#aa0937e8b84ce3377907a720b50b476df", null ],
-    [ "thereHaveBeenExceptions", "class_chimera_t_k_1_1_exception_dummy.html#ab1d7249809ed3ac2380e6e7678bc77b1", null ],
-    [ "throwExceptionOpen", "class_chimera_t_k_1_1_exception_dummy.html#a54d8693a7667665cd74daaa15b8aac37", null ],
-    [ "throwExceptionRead", "class_chimera_t_k_1_1_exception_dummy.html#a043d6288c9bacc9abc19e4d8a29be014", null ],
-    [ "throwExceptionWrite", "class_chimera_t_k_1_1_exception_dummy.html#add47dafbc6e4cddfbec71c9cb1f9c026", null ]
+    [ "thereHaveBeenExceptions", "class_chimera_t_k_1_1_exception_dummy.html#ad7527540f560181e14d1715067f844a8", null ],
+    [ "throwExceptionOpen", "class_chimera_t_k_1_1_exception_dummy.html#a9c7c34627bb1dc67ca27c0cf2c484774", null ],
+    [ "throwExceptionRead", "class_chimera_t_k_1_1_exception_dummy.html#a0c701089cee0c06f1f34802fb7b9ec14", null ],
+    [ "throwExceptionWrite", "class_chimera_t_k_1_1_exception_dummy.html#af64ee2d7f3128cc71e2f2388e3e5bc2e", null ]
 ];

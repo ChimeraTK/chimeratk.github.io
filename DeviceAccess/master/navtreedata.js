@@ -34,7 +34,8 @@ var NAVTREE =
           [ "multiply", "lmap.html#plugins_reference_multiply", null ],
           [ "math", "lmap.html#plugins_reference_math", null ],
           [ "forceReadOnly", "lmap.html#plugins_reference_force_read_only", null ],
-          [ "monostableTrigger", "lmap.html#plugins_reference_monostable_trigger", null ]
+          [ "monostableTrigger", "lmap.html#plugins_reference_monostable_trigger", null ],
+          [ "typeHintModifier", "lmap.html#plugins_reference_type_hint_modifier", null ]
         ] ]
       ] ]
     ] ],
@@ -91,15 +92,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"class_chimera_t_k_1_1_buffering_register_accessor.html#a0588bea08e3d8b661159a64430244b9f",
-"class_chimera_t_k_1_1_dummy_backend_base.html",
-"class_chimera_t_k_1_1_logical_name_mapping_backend.html#a6b020ac5ae848f98a0220c858d7808e7",
-"class_chimera_t_k_1_1_read_any_group_1_1_notification.html#a70751da9ee2606ab8c464c3ced8ff99f",
-"class_chimera_t_k_1_1_register_path.html#a8d01ee78aec96ee09b66d81e409e177e",
-"class_chimera_t_k_1_1_two_d_register_accessor.html#a826aad52e066709ce89a8775995b8f7e",
-"device__backends_2pcie_2include_2pciedev__io_8h_source.html",
-"mtca4u__compatibility__headers_2_n_d_register_accessor_decorator_8h.html",
-"structdevice__ioctrl__time.html#a04786d897463142079bd0cc2b041efcd"
+"class_chimera_t_k_1_1_buffering_register_accessor.html",
+"class_chimera_t_k_1_1_dummy_backend.html#ad604f70e94234f037cd01853b0765ce4",
+"class_chimera_t_k_1_1_logical_name_mapping_backend.html",
+"class_chimera_t_k_1_1_read_any_group_1_1_notification.html",
+"class_chimera_t_k_1_1_register_path.html#a6ccb225c24d44fc469dc190a1fba80af",
+"class_chimera_t_k_1_1_two_d_register_accessor.html#a260355da3297d6de2aa27ae70d3d2f97",
+"device__backends_2pcie_2include_2pciedev__io_8h.html#ace7f77e5691514de1c5a1f8c16d3025c",
+"mtca4u__compatibility__headers_2_multiplexed_data_accessor_exception_8h.html",
+"structdevice__ioctrl__dma.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

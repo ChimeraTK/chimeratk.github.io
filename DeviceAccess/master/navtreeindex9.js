@@ -1,5 +1,13 @@
 var NAVTREEINDEX9 =
 {
+"structdevice__ioctrl__dma.html":[15,0,5],
+"structdevice__ioctrl__dma.html#a0796ba7e60f5ed15719a885a871101c5":[15,0,5,4],
+"structdevice__ioctrl__dma.html#a0b2c5967b28765ba545b56dcb88c2762":[15,0,5,3],
+"structdevice__ioctrl__dma.html#a1e19c195c09b5115ca42ca5bf7392bd8":[15,0,5,2],
+"structdevice__ioctrl__dma.html#a32b3b16303be485dc116787dc4564bdd":[15,0,5,5],
+"structdevice__ioctrl__dma.html#a5cce7fa7327b8572fba52bdf18d14b0f":[15,0,5,0],
+"structdevice__ioctrl__dma.html#afcf57847c512e334f1a83bd89be950fd":[15,0,5,1],
+"structdevice__ioctrl__time.html":[15,0,6],
 "structdevice__ioctrl__time.html#a04786d897463142079bd0cc2b041efcd":[15,0,6,1],
 "structdevice__ioctrl__time.html#a73717c26f9ec75f5b4ea114976a1ba2c":[15,0,6,0],
 "structdevice__rw.html":[15,0,7],

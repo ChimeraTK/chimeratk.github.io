@@ -9,6 +9,9 @@ var searchData=
   ['accessorplugin_3c_20mathplugin_20_3e',['AccessorPlugin&lt; MathPlugin &gt;',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html',1,'ChimeraTK::LNMBackend']]],
   ['accessorplugin_3c_20monostabletriggerplugin_20_3e',['AccessorPlugin&lt; MonostableTriggerPlugin &gt;',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html',1,'ChimeraTK::LNMBackend']]],
   ['accessorplugin_3c_20multiplierplugin_20_3e',['AccessorPlugin&lt; MultiplierPlugin &gt;',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html',1,'ChimeraTK::LNMBackend']]],
+  ['accessorplugin_3c_20typehintmodifierplugin_20_3e',['AccessorPlugin&lt; TypeHintModifierPlugin &gt;',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html',1,'ChimeraTK::LNMBackend']]],
+  ['accessorplugin_5fhelper',['AccessorPlugin_Helper',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin___helper.html',1,'ChimeraTK::LNMBackend']]],
+  ['accessorplugin_5fhelper_3c_20usertype_2c_20usertype_20_3e',['AccessorPlugin_Helper&lt; UserType, UserType &gt;',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin___helper_3_01_user_type_00_01_user_type_01_4.html',1,'ChimeraTK::LNMBackend']]],
   ['accessorpluginbase',['AccessorPluginBase',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html',1,'ChimeraTK::LNMBackend']]],
   ['addressrange',['AddressRange',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html',1,'ChimeraTK::DummyBackend']]]
 ];
