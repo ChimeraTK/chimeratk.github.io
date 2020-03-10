@@ -17,7 +17,10 @@ var NAVTREE =
     ] ],
     [ "Technical specification: propagation of initial values", "spec_initial_value_propagation.html", null ],
     [ "Technical specification: Exception Handling Design", "exception_handling_design.html", [
-      [ "General Idea", "exception_handling_design.html#gen_idea", null ]
+      [ "General Idea", "exception_handling_design.html#gen_idea", null ],
+      [ "Implementation", "exception_handling_design.html#exception_handling_implmentation", [
+        [ "Implementation details", "exception_handling_design.html#exception_handling_impl_details", null ]
+      ] ]
     ] ],
     [ "Example 1: Application with two modules and two hardware devices", "example1.html", null ],
     [ "Example 2: Small but complete application with a proportional controller", "example2.html", null ],
@@ -67,11 +70,11 @@ var NAVTREEINDEX =
 [
 "_application_8cc.html",
 "class_chimera_t_k_1_1_application.html#a6834042482a4ce821c0bd9ba7eaa6d80",
-"class_chimera_t_k_1_1_entity_owner.html#ad571a938acbc6e0f65b257cbff8e92ea",
-"class_chimera_t_k_1_1_threaded_fan_out.html#a07947da6a7c3d65e8ead245b478b33c8",
-"dir_68267d1309a1af8e8297ef4c3efbcdba.html",
-"struct_chimera_t_k_1_1_functor_fill.html#a239a450d539119b22eaf57654fb23d1d",
-"struct_table_generation.html#ae8c931884174f7c224200ffb1314e5ff"
+"class_chimera_t_k_1_1_entity_owner.html#ad4bec78a33e48e81c9600d9f883b2b35",
+"class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#af63159c4004f5123cf4aeebe49809c06",
+"dir_4eeb864c4eec08c7d6b9d3b0352cfdde.html",
+"struct_chimera_t_k_1_1_fixed_limit_value.html#a85d95ab1ec5c0f5f61a3c6a901f7d1f1",
+"struct_table_generation.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

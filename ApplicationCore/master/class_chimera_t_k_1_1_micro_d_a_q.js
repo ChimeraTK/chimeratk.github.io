@@ -5,6 +5,7 @@ var class_chimera_t_k_1_1_micro_d_a_q =
     [ "MicroDAQ", "class_chimera_t_k_1_1_micro_d_a_q.html#aaaebad3f79ca19918081fbaa1632b229", null ],
     [ "MicroDAQ", "class_chimera_t_k_1_1_micro_d_a_q.html#ab97c3f6b66dc90d485fe1847ee6c4dfb", null ],
     [ "addSource", "class_chimera_t_k_1_1_micro_d_a_q.html#a28107771e09fbd64c97f7e95a5ca5118", null ],
+    [ "addSource", "class_chimera_t_k_1_1_micro_d_a_q.html#a1aecb7863d8b114c12fd1b1f5bfebc89", null ],
     [ "getAccessor", "class_chimera_t_k_1_1_micro_d_a_q.html#a1a10a2f7bd4a45dd3a21f760126ab04a", null ],
     [ "mainLoop", "class_chimera_t_k_1_1_micro_d_a_q.html#aa72651bb4ea1760cbc77961b5e24705e", null ],
     [ "detail::AccessorAttacher< TRIGGERTYPE >", "class_chimera_t_k_1_1_micro_d_a_q.html#a0ec41483fa5cb8aeb62ad0b392d3d51a", null ],
