@@ -114,9 +114,9 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_exception_handli
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acd0987be0ef44f7848bdfbd241c4e509"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#acd0987be0ef44f7848bdfbd241c4e509">ExceptionHandlingDecorator</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; accessor, <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> &amp;devMod, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; recoveryAccessor={nullptr})</td></tr>
-<tr class="memdesc:acd0987be0ef44f7848bdfbd241c4e509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorate the accessors which is handed in the constuctor.  <a href="#acd0987be0ef44f7848bdfbd241c4e509">More...</a><br /></td></tr>
-<tr class="separator:acd0987be0ef44f7848bdfbd241c4e509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3843c4a17c6a2ff7e36a8d2e3c8c60c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#ad3843c4a17c6a2ff7e36a8d2e3c8c60c">ExceptionHandlingDecorator</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; accessor, <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> &amp;devMod, <a class="el" href="struct_chimera_t_k_1_1_variable_direction.html">VariableDirection</a> direction, boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; recoveryAccessor={nullptr})</td></tr>
+<tr class="memdesc:ad3843c4a17c6a2ff7e36a8d2e3c8c60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorate the accessors which is handed in the constuctor.  <a href="#ad3843c4a17c6a2ff7e36a8d2e3c8c60c">More...</a><br /></td></tr>
+<tr class="separator:ad3843c4a17c6a2ff7e36a8d2e3c8c60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a666085917708684718539d6e0d693565"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a666085917708684718539d6e0d693565">doWriteTransfer</a> (ChimeraTK::VersionNumber versionNumber={}) override</td></tr>
 <tr class="separator:a666085917708684718539d6e0d693565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4580d9d3037766e4c56c69bdef1c830"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#aa4580d9d3037766e4c56c69bdef1c830">doWriteTransferDestructively</a> (ChimeraTK::VersionNumber versionNumber={}) override</td></tr>
@@ -142,19 +142,21 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa70a58a3119983a5912b54c7bff03767"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#aa70a58a3119983a5912b54c7bff03767">genericTransfer</a> (std::function&lt; bool(void)&gt; callable, bool updateOwnerValidityFlag=true)</td></tr>
 <tr class="separator:aa70a58a3119983a5912b54c7bff03767"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbede3c317d7f855830b0b2ca04c5180"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#abbede3c317d7f855830b0b2ca04c5180">setOwnerValidity</a> (DataValidity newValidity)</td></tr>
-<tr class="separator:abbede3c317d7f855830b0b2ca04c5180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc200dc1658439741a5174f71ee1d5f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#afc200dc1658439741a5174f71ee1d5f5">setOwnerValidity</a> (bool hasExceptionNow)</td></tr>
+<tr class="separator:afc200dc1658439741a5174f71ee1d5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a94e84d6cfbda358e6b03e7820384463e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a94e84d6cfbda358e6b03e7820384463e">deviceModule</a></td></tr>
 <tr class="separator:a94e84d6cfbda358e6b03e7820384463e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62ce2140be0f20cd5bda022ad88322dc"><td class="memItemLeft" align="right" valign="top">DataValidity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a62ce2140be0f20cd5bda022ad88322dc">localValidity</a> {this-&gt;isWriteable() ? DataValidity::ok : DataValidity::faulty}</td></tr>
-<tr class="separator:a62ce2140be0f20cd5bda022ad88322dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6349dc779a3e1e303fa99b66f64a9a01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a6349dc779a3e1e303fa99b66f64a9a01">hasSeenException</a> {true}</td></tr>
+<tr class="separator:a6349dc779a3e1e303fa99b66f64a9a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb8931d7eca76758f0de9835af4f0148"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#adb8931d7eca76758f0de9835af4f0148">_recoveryAccessor</a> {nullptr}</td></tr>
 <tr class="separator:adb8931d7eca76758f0de9835af4f0148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c42e79150ac529a54898457794d5c85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a8c42e79150ac529a54898457794d5c85">_owner</a> = {nullptr}</td></tr>
 <tr class="separator:a8c42e79150ac529a54898457794d5c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60e6ee62f7c35ebe2bf13e2ce27b7465"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_variable_direction.html">VariableDirection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a60e6ee62f7c35ebe2bf13e2ce27b7465">_direction</a></td></tr>
+<tr class="separator:a60e6ee62f7c35ebe2bf13e2ce27b7465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename UserType&gt;<br />
@@ -164,8 +166,8 @@ class ChimeraTK::ExceptionHandlingDecorator&lt; UserType &gt;</h3>
 
 <p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00019">19</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="acd0987be0ef44f7848bdfbd241c4e509"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd0987be0ef44f7848bdfbd241c4e509">&#9670;&nbsp;</a></span>ExceptionHandlingDecorator()</h2>
+<a id="ad3843c4a17c6a2ff7e36a8d2e3c8c60c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3843c4a17c6a2ff7e36a8d2e3c8c60c">&#9670;&nbsp;</a></span>ExceptionHandlingDecorator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,6 +185,12 @@ template&lt;typename UserType &gt; </div>
           <td></td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> &amp;&#160;</td>
           <td class="paramname"><em>devMod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_chimera_t_k_1_1_variable_direction.html">VariableDirection</a>&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -207,7 +215,7 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_acd0987be0ef44f7848bdfbd241c4e509_cgraph.svg" width="534" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_ad3843c4a17c6a2ff7e36a8d2e3c8c60c_cgraph.svg" width="534" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -585,7 +593,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00173">173</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00174">174</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -615,13 +623,13 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00180">180</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00181">181</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a9f727076598326eb295919670a919d4d_cgraph.svg" width="494" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a9f727076598326eb295919670a919d4d_cgraph.svg" width="494" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -635,8 +643,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="abbede3c317d7f855830b0b2ca04c5180"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbede3c317d7f855830b0b2ca04c5180">&#9670;&nbsp;</a></span>setOwnerValidity()</h2>
+<a id="afc200dc1658439741a5174f71ee1d5f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc200dc1658439741a5174f71ee1d5f5">&#9670;&nbsp;</a></span>setOwnerValidity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -649,8 +657,8 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html">ChimeraTK::ExceptionHandlingDecorator</a>&lt; UserType &gt;::setOwnerValidity </td>
           <td>(</td>
-          <td class="paramtype">DataValidity&#160;</td>
-          <td class="paramname"><em>newValidity</em></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasExceptionNow</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -667,13 +675,39 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_abbede3c317d7f855830b0b2ca04c5180_cgraph.svg" width="496" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_afc200dc1658439741a5174f71ee1d5f5_cgraph.svg" width="498" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a60e6ee62f7c35ebe2bf13e2ce27b7465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60e6ee62f7c35ebe2bf13e2ce27b7465">&#9670;&nbsp;</a></span>_direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_variable_direction.html">VariableDirection</a> <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html">ChimeraTK::ExceptionHandlingDecorator</a>&lt; UserType &gt;::_direction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00061">61</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
+
+</div>
+</div>
 <a id="a8c42e79150ac529a54898457794d5c85"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c42e79150ac529a54898457794d5c85">&#9670;&nbsp;</a></span>_owner</h2>
 
@@ -696,7 +730,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00061">61</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00060">60</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -722,7 +756,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00060">60</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00059">59</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -748,12 +782,12 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00052">52</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00053">53</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
 
 </div>
 </div>
-<a id="a62ce2140be0f20cd5bda022ad88322dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62ce2140be0f20cd5bda022ad88322dc">&#9670;&nbsp;</a></span>localValidity</h2>
+<a id="a6349dc779a3e1e303fa99b66f64a9a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6349dc779a3e1e303fa99b66f64a9a01">&#9670;&nbsp;</a></span>hasSeenException</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -764,7 +798,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">DataValidity <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html">ChimeraTK::ExceptionHandlingDecorator</a>&lt; UserType &gt;::localValidity {this-&gt;isWriteable() ? DataValidity::ok : DataValidity::faulty}</td>
+          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html">ChimeraTK::ExceptionHandlingDecorator</a>&lt; UserType &gt;::hasSeenException {true}</td>
         </tr>
       </table>
   </td>
@@ -774,7 +808,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00056">56</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8h_source.html#l00055">55</a> of file <a class="el" href="_exception_handling_decorator_8h_source.html">ExceptionHandlingDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -788,7 +822,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html">ExceptionHandlingDecorator</a></li>
-    <li class="footer">Generated on Wed Mar 11 2020 04:53:35 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Mar 13 2020 04:53:53 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
