@@ -6,5 +6,7 @@ var searchData=
   ['_5flength',['_length',['../class_doocs_backend_register_info.html#a5b4433a9c8c6322cfe4650e4d32cbb5e',1,'DoocsBackendRegisterInfo']]],
   ['_5fname',['_name',['../class_doocs_backend_register_info.html#ad95cea32fa64c49160dffc5e3b1f1d07',1,'DoocsBackendRegisterInfo']]],
   ['_5fpath',['_path',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aea8709ce14798675c01147e14dc968a2',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]],
-  ['_5fserveraddress',['_serverAddress',['../class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0',1,'ChimeraTK::DoocsBackend']]]
+  ['_5freadable',['_readable',['../class_doocs_backend_register_info.html#abaa16f77e7da1339c88550f46d191e85',1,'DoocsBackendRegisterInfo']]],
+  ['_5fserveraddress',['_serverAddress',['../class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0',1,'ChimeraTK::DoocsBackend']]],
+  ['_5fwritable',['_writable',['../class_doocs_backend_register_info.html#a3ead7621876d0375e7dc694c2433cd1e',1,'DoocsBackendRegisterInfo']]]
 ];

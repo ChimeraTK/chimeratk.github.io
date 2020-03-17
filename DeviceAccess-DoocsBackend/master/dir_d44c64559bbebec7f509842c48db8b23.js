@@ -8,6 +8,9 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "DoocsBackend", "class_chimera_t_k_1_1_doocs_backend.html", "class_chimera_t_k_1_1_doocs_backend" ],
       [ "BackendRegisterer", "class_chimera_t_k_1_1_doocs_backend_1_1_backend_registerer.html", "class_chimera_t_k_1_1_doocs_backend_1_1_backend_registerer" ]
     ] ],
+    [ "DoocsBackendEventIdAccessor.h", "_doocs_backend_event_id_accessor_8h.html", [
+      [ "DoocsBackendEventIdRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_event_id_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_event_id_register_accessor" ]
+    ] ],
     [ "DoocsBackendFloatRegisterAccessor.h", "_doocs_backend_float_register_accessor_8h.html", [
       [ "DoocsBackendFloatRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor" ]
     ] ],
@@ -29,6 +32,9 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     ] ],
     [ "DoocsBackendStringRegisterAccessor.h", "_doocs_backend_string_register_accessor_8h.html", [
       [ "DoocsBackendStringRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_string_register_accessor" ]
+    ] ],
+    [ "DoocsBackendTimeStampAccessor.h", "_doocs_backend_time_stamp_accessor_8h.html", [
+      [ "DoocsBackendTimeStampRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_time_stamp_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_time_stamp_register_accessor" ]
     ] ],
     [ "RegisterInfo.h", "_register_info_8h.html", "_register_info_8h" ],
     [ "StringUtility.h", "_string_utility_8h.html", "_string_utility_8h" ],

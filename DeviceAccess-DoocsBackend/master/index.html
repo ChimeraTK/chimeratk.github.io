@@ -91,14 +91,23 @@ Features</h1>
 <ul>
 <li>Read-write access to payload data of many DOOCS data types (see <a class="el" href="supported_types.html">Supported Data Types</a>)</li>
 <li>Attached time stamp will be preserved and can be accessed through the VersionNumber</li>
-<li>Applications are doocs property aware at startup (by using the optional <a class="el" href="cache_file.html">cache file mechanism</a>). </li>
+<li>Applications are DOOCS property aware at startup (by using the optional <a class="el" href="cache_file.html">cache file mechanism</a>).</li>
+<li>Access to DOOCS property meta-information such as the attached event id (macropulse number) or data timestamps</li>
 </ul>
+<h2><a class="anchor" id="meta_information"></a>
+Data meta information</h2>
+<p>Accces to meta meta can be done using "virtual" variables. To access the meta-data, the property name is extended with the requested meta infomation. Supported extensions are:</p>
+<ul>
+<li>/eventId can be used to access the macropulse number</li>
+<li>/timeStamp can be used to access the time stamp of the data (in seconds since 1970)</li>
+</ul>
+<p>For example to access the macropulse number of the RAW BAM arrival data, could be done with: <code>XFEL.SDIAG/BAM/47.I1/LOW_CHARGE_ARRIVAL_TIME/eventId</code> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 5 2020 04:53:18 for ChimeraTK-DeviceAccess-DoocsBackend by
+    <li class="footer">Generated on Tue Mar 17 2020 04:53:13 for ChimeraTK-DeviceAccess-DoocsBackend by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

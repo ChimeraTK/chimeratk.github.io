@@ -12,6 +12,8 @@ var class_doocs_backend_register_info =
     [ "isWriteable", "class_doocs_backend_register_info.html#a40ca051d64cd14a8a3a226dbc905b1c5", null ],
     [ "_length", "class_doocs_backend_register_info.html#a5b4433a9c8c6322cfe4650e4d32cbb5e", null ],
     [ "_name", "class_doocs_backend_register_info.html#ad95cea32fa64c49160dffc5e3b1f1d07", null ],
+    [ "_readable", "class_doocs_backend_register_info.html#abaa16f77e7da1339c88550f46d191e85", null ],
+    [ "_writable", "class_doocs_backend_register_info.html#a3ead7621876d0375e7dc694c2433cd1e", null ],
     [ "accessModeFlags", "class_doocs_backend_register_info.html#a89fda9983145f0534b40f0932681aa17", null ],
     [ "dataDescriptor", "class_doocs_backend_register_info.html#a988dda12b927435f6c912509b65fcf13", null ],
     [ "doocsTypeId", "class_doocs_backend_register_info.html#a96d907af25636665d23dbef9e40550db", null ]

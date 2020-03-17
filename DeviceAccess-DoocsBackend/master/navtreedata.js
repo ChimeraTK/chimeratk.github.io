@@ -1,12 +1,13 @@
 var NAVTREE =
 [
   [ "ChimeraTK-DeviceAccess-DoocsBackend", "index.html", [
-    [ "Features", "index.html#Features", null ],
+    [ "Features", "index.html#Features", [
+      [ "Data meta information", "index.html#meta_information", null ]
+    ] ],
     [ "CacheFile Mechanism", "cache_file.html", null ],
     [ "Supported Data Types", "supported_types.html", [
       [ "IFFF", "supported_types.html#ifff", null ]
     ] ],
-    [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
