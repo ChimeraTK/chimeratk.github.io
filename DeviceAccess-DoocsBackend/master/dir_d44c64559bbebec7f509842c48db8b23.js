@@ -36,6 +36,9 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "DoocsBackendTimeStampAccessor.h", "_doocs_backend_time_stamp_accessor_8h.html", [
       [ "DoocsBackendTimeStampRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend_time_stamp_register_accessor.html", "class_chimera_t_k_1_1_doocs_backend_time_stamp_register_accessor" ]
     ] ],
+    [ "EventIdMapper.h", "_event_id_mapper_8h.html", [
+      [ "EventIdMapper", "class_event_id_mapper.html", "class_event_id_mapper" ]
+    ] ],
     [ "RegisterInfo.h", "_register_info_8h.html", "_register_info_8h" ],
     [ "StringUtility.h", "_string_utility_8h.html", "_string_utility_8h" ],
     [ "ZMQSubscriptionManager.h", "_z_m_q_subscription_manager_8h.html", [
