@@ -72,8 +72,8 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_application.html#a6815195c956c091a6558a316f8fd9976",
 "class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8fae0ac20adce6ffee48c7151b070aa5737",
 "class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#a1253e11765c46d5e332550e39896ec4c",
-"demo_app_8cc.html#a1dad450a66409eb5903a9b625fff1b2e",
-"struct_chimera_t_k_1_1_data_loss_counter.html#a5a4b553a489f7f97591b583424f233cb",
+"demo_app_8cc.html",
+"struct_chimera_t_k_1_1_data_loss_counter.html#a42b52a6a2b9349604cf5be6ce65824da",
 "struct_example_app.html#aecb5f2041899e8eea99688077e998a2b"
 ];
 

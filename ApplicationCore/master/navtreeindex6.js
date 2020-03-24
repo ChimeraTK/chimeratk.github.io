@@ -1,10 +1,11 @@
 var NAVTREEINDEX6 =
 {
-"struct_example_app.html#aecb5f2041899e8eea99688077e998a2b":[14,0,5,5],
+"struct_example_app.html#aecb5f2041899e8eea99688077e998a2b":[14,0,5,9],
+"struct_example_app.html#aecb5f2041899e8eea99688077e998a2b":[14,0,5,1],
 "struct_example_app.html#aecb5f2041899e8eea99688077e998a2b":[14,0,5,7],
 "struct_example_app.html#aecb5f2041899e8eea99688077e998a2b":[14,0,5,3],
+"struct_example_app.html#aecb5f2041899e8eea99688077e998a2b":[14,0,5,5],
 "struct_example_app.html#aecb5f2041899e8eea99688077e998a2b":[14,0,5,11],
-"struct_example_app.html#aecb5f2041899e8eea99688077e998a2b":[14,0,5,9],
 "struct_server.html":[14,0,6],
 "struct_server.html#a11edddb6a72e6e1c5541413fdf733d57":[14,0,6,3],
 "struct_server.html#a12b2479158514168f3628b2af08bdbd2":[14,0,6,5],
