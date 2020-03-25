@@ -47,6 +47,7 @@ var class_chimera_t_k_1_1_variable_network_node =
     [ "operator==", "class_chimera_t_k_1_1_variable_network_node.html#a883b483f469ee9948513d7f6f006b059", null ],
     [ "operator>>", "class_chimera_t_k_1_1_variable_network_node.html#affc1e48e5ee2e533b94201e89a8cc912", null ],
     [ "operator[]", "class_chimera_t_k_1_1_variable_network_node.html#affaee6f8c527589de0ccbe7d94922cc8", null ],
+    [ "removeExternalTrigger", "class_chimera_t_k_1_1_variable_network_node.html#a7680b3c87a0c4f1cfb994ee362b3be90", null ],
     [ "setAppAccessorImplementation", "class_chimera_t_k_1_1_variable_network_node.html#a031cd64facf59b5e6142470c4b4bbfda", null ],
     [ "setAppAccessorImplementation", "class_chimera_t_k_1_1_variable_network_node.html#af851ec9380c31c0c06c612d03889ab0f", null ],
     [ "setAppAccessorPointer", "class_chimera_t_k_1_1_variable_network_node.html#af79f66ca716abb89a34d6811d030dd82", null ],
