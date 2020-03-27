@@ -12,6 +12,6 @@ var _status_monitor_8h =
       [ "OFF", "_status_monitor_8h.html#a6921a3fa4a30c73fc33e3a7f84326781a010c61379bf7863db40cee3b9836248b", null ],
       [ "OK", "_status_monitor_8h.html#a6921a3fa4a30c73fc33e3a7f84326781a1ff4d91265345b7ab22a94125ccf11db", null ],
       [ "WARNING", "_status_monitor_8h.html#a6921a3fa4a30c73fc33e3a7f84326781a1258a3c774701420cfd704cebc54587b", null ],
-      [ "ERROR", "_status_monitor_8h.html#a6921a3fa4a30c73fc33e3a7f84326781ad10ebf71c505fa02d31ba49f69eeb851", null ]
+      [ "FAULT", "_status_monitor_8h.html#a6921a3fa4a30c73fc33e3a7f84326781a63e717b34d7aa6b114610042a2e76a46", null ]
     ] ]
 ];
