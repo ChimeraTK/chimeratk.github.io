@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <div class="textblock"><blockquote class="doxtable">
 <p><b>DRAFT VERSION, WRITE-UP IN PROGRESS!</b> </p>
 </blockquote>
-<p>Specification version v1.0 and extension v1.1</p>
+<p>Specification version v1.0</p>
 <h2>1. General idea </h2>
 <h3>1.1 Version v1.0</h3>
 <ul>
@@ -97,11 +97,8 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <li>1.1.3 If a device is in error state, all variables which are read from it shall be marked as 'faulty'. This flag is then propagated through all the modules (via 1.1.2) so it shows up in the control system.</li>
 <li>1.1.4 The user has the possibility to query the data validity of the module</li>
 <li>1.1.5 The user has the possibility to set the data validity of the module to 'faulty'. However, the user cannot actively set the module to 'ok' if one of the inputs is 'faulty'.</li>
-</ul>
-<h3>1.2 Extension v1.1</h3>
-<ul>
-<li>1.2.1 The user can decide to flag individual outputs as bad. However, the user cannot actively set an output to 'ok' if the data validity of the module is 'faulty' (to be more precise: if the validity of the corresponding DataFaultCounter is faulty).</li>
-<li>1.2.2 The user can get the data validity flag of its inputs and take special actions in case no invalid data shall be processed.</li>
+<li>1.1.6 The user can decide to flag individual outputs as bad. However, the user cannot actively set an output to 'ok' if the data validity of the module is 'faulty' (to be more precise: if the validity of the corresponding DataFaultCounter is faulty).</li>
+<li>1.1.7 The user can get the data validity flag of individual inputs and take special actions.</li>
 </ul>
 <h2>2. Technical implementation </h2>
 <h3>2.1 MetaDataPropagatingRegisterDecorator (*)</h3>
@@ -109,8 +106,7 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <li>2.1.1 Each input and each output of a module (or fan out) is decorated with a <a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html" title="NDRegisterAccessorDecorator which propagates meta data attached to input process variables through th...">ChimeraTK::MetaDataPropagatingRegisterDecorator</a>.</li>
 <li>2.1.2 The decorator knows about the DataFaultCounter to which it is associated.</li>
 <li>2.1.3 <b>read:</b> For each read operation it checks the incoming data validity and informs the associated ChimeraTK::DataFaultCounter about the status.</li>
-<li>2.1.4 <b>write: (Version 1.0)</b> When writing, the decorator is getting the validity flag from the DataFaultCounter and attaches it to the outgoing data.</li>
-<li>2.1.5 <b>write: (Extension 1.1)</b> When writing, the decorator is checking the validity flags of the DataFaultCounter and the individual flag of the output. Only if both are 'ok' the output validity is 'ok', otherwise the outgoing data is send as 'faulty'.</li>
+<li>2.1.5 <b>write:</b> When writing, the decorator is checking the validity flags of the DataFaultCounter and the individual flag of the output. Only if both are 'ok' the output validity is 'ok', otherwise the outgoing data is send as 'faulty'.</li>
 </ul>
 <h3>2.2 DataFaultCounter</h3>
 <ul>
@@ -147,10 +143,10 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <ul>
 <li>3.1 The DataFaultCounter is a helper class around the counter variable. It facilitates instantiation and evaluation of the counter.</li>
 <li>3.2 The decorators which manipulate the data fault counter are responsible for counting up and down in pairs, such that the counter goes back to 0 if all data is ok, and never becomes negative.</li>
-<li>3.3 To 2.1.2 and 2.2.1: Associated means that the MetaDataPropagatingRegisterDecorator or ExceptionHandlingDecorator gets a pointer or reference to the DataFaultCounter. It does not own it. As the calling code of the decorator is executed in the main loop of the module or fan-out which owns the DataFaultCounter, it should be safe to shut down the application.</li>
+<li>3.3 To 2.1.2 and 2.2.1: Associated means that the MetaDataPropagatingRegisterDecorator or ExceptionHandlingDecorator gets a pointer to the DataFaultCounter. It does not own it. As the calling code of the decorator is executed in the main loop of the module or fan-out which owns the DataFaultCounter, it should be safe to shut down the application.</li>
 <li>3.4 Interface of the DataFaultCounter (implements 2.2)<ul>
 <li>3.4.1 The counter variable itself is protected. I is increased and decreased through increment() and decrement() functions.</li>
-<li>3.4.2 The counter is a signed integer. The decrement function has an assertions that the counter does not become negative. This simplifies debugging in case the calling code does not execute the increment and decrement in pairs.</li>
+<li>3.4.2 The decrement function has an assertions that the counter does not become negative (or "underflow" because it probably is unsigned). This simplifies debugging in case the calling code does not execute the increment and decrement in pairs.</li>
 <li>3.4.3 A conveninece function getDataValidity() checks whether the counter is 0 and returns 'ok' or 'faulty' accordingly. This is just to avoid the if-statement and picking the right return value in all using code.</li>
 <li>3.4.4 When instantiated, the counter starts at 0. If associated objects (like the ExceptionHandlingDecorators) are faulty at start it is their responsibility to increment the counter.</li>
 </ul>
@@ -158,11 +154,10 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 </ul>
 <h2>4. Known issues </h2>
 <ul>
-<li>4.1 The extension v1.1 needs an extension of the accessor interface.<ul>
-<li>4.1.1 Inputs need a function to query its data validity (implements 1.2.2).</li>
-<li>4.1.2 The outputs need a 'setDataValidity()' function. When set to 'faulty', the output stays 'faulty' until it is set back to 'ok' (implements 1.2.1).(*)</li>
-</ul>
-</li>
+<li>4.1 There is no DataFaultCounter object (2.2) at the moment. The ApplicationModule itself holds the counter variable and implements the increase, decrease and getDataValidity functions. This prevents 2.4 from being implemented properly.</li>
+<li>4.2 The ThreadedFanOut does not propagate the data validity</li>
+<li>4.3 The ConsumingFanOut does not propagate the data validity</li>
+<li>4.4 The TriggerFanOut does not propagate data validity (not even the way an ApplicationModule does)</li>
 </ul>
 <h3>Comments</h3>
 <ul>
@@ -173,7 +168,7 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 31 2020 10:11:38 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Apr 1 2020 03:53:40 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
