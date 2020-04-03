@@ -102,7 +102,8 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>The "value after construction" must not be propagated automatically during initial value propagation, not even with the <code>ChimeraTK::DataValidity::faulty</code> flag set. It must not be visible to user code in the <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ChimeraTK::ApplicationModule::mainLoop()</a></code>.</li>
 <li>Since <code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code>s might wait for initial values from other <code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code>s, the modules might end up in a dead lock due to a circular connection. The circular connection is legal, but the dead lock situation needs to be broken by one <code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></code> writing its initial value during <code><a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ChimeraTK::ApplicationModule::prepare()</a></code>.</li>
 <li>Devices must receive the initial values as soon as possible after the device is opened and after the initialisation sequence is executed. There is no guarantee that other registers of the same device are written or read only after the initial values are written. Hence, any critical registers that need to be written before accessing other registers must be written in the initialisation sequence.</li>
-<li>The control system doesn't receive "initial values" as such. The first value of a process variable is sent to the control system when available. This may depend even on external conditions like the availability of devices, e.g. the control system interface has to run even if devices are not available and hence cannot send an inital value.</li>
+<li>The control system does not wait for "initial values" as such. The first value of a process variable is sent to the control system when available. This may depend even on external conditions like the availability of devices, e.g. the control system interface has to run even if devices are not available and hence cannot send an inital value.</li>
+<li>The first value received by the control system can be an initial value. This is different to ApplicationModules, where an initial value is never seen as a new value that can be read because they are always already there and received when the main loop starts.</li>
 <li>Control system variables show the <code>ChimeraTK::DataValidity::faulty</code> flag until they have received the first valid value.</li>
 <li>For push-type variables from devices, the initial value is the current value polled at the application start. Since the variable might not get pushed regularly, the application must not wait for a value to get pushed.</li>
 </ul>
@@ -114,7 +115,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>(removed)</li>
 <li>Control system variables:<ol type="a">
 <li>Variables with the control-system-to-application direction must be written exactly once at application start by the control system adapter with their initial values from the persistency layer. This must be done before <code><a class="el" href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72daa53108f7543b75adbb34afc035d4cdf6" title="Actual run phase with full multi threading. ">ChimeraTK::ApplicationBase::run()</a></code> is called, or soon after (major parts of the application will be blocked until it's done). If the persistency layer can persist the <code>ChimeraTK::DataValidity</code>, the initial value should have the correct validity. Otherwise, initial values will always have the <code>ChimeraTK::DataValidity::ok</code>.</li>
-<li>Variables with the application-to-control-system direction do not have an "initial value". The first value of these variables are written at an undefined time after the <code><a class="el" href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72daa53108f7543b75adbb34afc035d4cdf6" title="Actual run phase with full multi threading. ">ChimeraTK::ApplicationBase::run()</a></code> has been called. The control system adapter must not expect any specific behaviour. Entities writing to these variables do not need to take any special precautions.</li>
+<li>Variables with the application-to-control-system direction conceptually do not have an "initial value". The control system adapter implementation does not wait for an initial value to show up. The first value of these variables are written at an undefined time after the <code><a class="el" href="namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72daa53108f7543b75adbb34afc035d4cdf6" title="Actual run phase with full multi threading. ">ChimeraTK::ApplicationBase::run()</a></code> has been called. They might or might not be initial values of other modues. The control system adapter must not expect any specific behaviour. Entities writing to these variables do not need to take any special precautions.</li>
 </ol>
 </li>
 <li>Device variables:<ol type="a">
@@ -189,7 +190,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>API documentation must contain 7.</li>
 <li>Implements 8. (hence takes part in 5.a, 6.b, 7 and 10 implicitly):<ul>
 <li>All inputs of the module must be read in the <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#ac2c8911aaa22fca678cfd5f79c0a1f0f" title="Wrapper around mainLoop(), to execute additional tasks in the thread before entering the main loop...">ChimeraTK::ApplicationModule::mainLoopWrapper()</a></code> before the call to <code>mainLoop()</code>.</li>
-<li>The type of the read decided via <code>ChimeraTK::VariableNetworkNode::initialValueType()</code>, which implements 8.b.</li>
+<li>The type of the read is decided via <code>ChimeraTK::VariableNetworkNode::initialValueUpdateMode()</code>, which implements 8.b.</li>
 </ul>
 </li>
 </ul>
@@ -198,7 +199,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>Implement 3, implementation will be already covered by normal flag propagation</li>
 <li>Needs to implement 9. (hence takes part in 5.a, 6, 7 and 10 implicitly):<ul>
 <li>structure the fan out's "mainLoop"-equivalent (<code>ThreadedFanOut::run()</code>) like this:<ul>
-<li>read initial values (9.a via <code>ChimeraTK::VariableNetworkNode::initialValueType()</code>)</li>
+<li>read initial values (9.a via <code>ChimeraTK::VariableNetworkNode::initialValueUpdateMode()</code>)</li>
 <li>begin loop</li>
 <li>write outputs</li>
 <li>read input</li>
@@ -214,10 +215,11 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>Needs to implement 9. (hence takes part in 5.a, 6, 7 and 10 implicitly):<ul>
 <li>In contrast to the <code>ThreadedFanOut</code>, the <code>TriggerFanOut</code> has only poll-type data inputs which are all coming from the same device. Data inputs cannot come from non-devices.</li>
 <li>Structure the fan out's "mainLoop"-equivalent (<code>TriggerFanOut::run()</code>) like this:<ul>
-<li>read initial values of trigger input (9.a via <code>ChimeraTK::VariableNetworkNode::initialValueType()</code>)</li>
+<li>read initial values of trigger input (9.a via <code>ChimeraTK::VariableNetworkNode::initialValueUpdateMode()</code>)</li>
 <li>begin loop</li>
-<li>read inputs via <code>ChimeraTK::TransferGroup</code></li>
+<li>read data inputs via <code>ChimeraTK::TransferGroup</code></li>
 <li>write outputs</li>
+<li>read trigger</li>
 <li>cycle loop</li>
 </ul>
 </li>
@@ -297,7 +299,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 </ul>
 <h3>ApplicationModule / EntityOwner</h3>
 <ul>
-<li>3. is not properly implemented, <code>faultCounter</code> starts at 0. The correct implementation should increase the counter in <code>EntityOwner::registerAccessor()</code> and decrease it in <code>EntityOwner::unregisterAccessor()</code> (sorry for the confusing function names...).</li>
+<li>3. is not properly implemented, the <code>faultCounter</code> variable itself is currently part of the EntitiyOwner. It will be moved to a helper class, so multiple instances can be used (needed for the TriggerFanOut). It is the responsibility of the decorators which manipulate the DataFaultCounter to increase the counter when they come up with faulty data in the inital state (see <a class="el" href="spec_data_validity_propagation.html">Technical specification: data validity propagation</a>).</li>
 </ul>
 <h3>TriggerFanOut</h3>
 <ul>
@@ -322,8 +324,9 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 </ul>
 <h3>VariableNetworkNode</h3>
 <ul>
-<li>Rename <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code> into <code>ChimeraTK::VariableNetworkNode::initialValueType()</code></li>
-<li>Remove data member storing the presence of an initial value, this is now always the case. Also change <code>ChimeraTK::VariableNetworkNode::initialValueType()</code> accordingly.</li>
+<li>Rename <code><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc" title="Check whether an initial value is present. ">ChimeraTK::VariableNetworkNode::hasInitialValue()</a></code> into <code>ChimeraTK::VariableNetworkNode::initialValueUpdateMode()</code>, and change the return type to <code><a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3b" title="Enum to define the update mode of variables. ">ChimeraTK::UpdateMode</a></code>. Remove the InitialValueMode enum.</li>
+<li>Remove data member storing the presence of an initial value, this is now always the case. Change <code>ChimeraTK::VariableNetworkNode::initialValueType()</code> accordingly.</li>
+<li>Document cleanly that the initialValueUpdateMode is different from the normal update mode as described in 8b.</li>
 </ul>
 <h3>ControlSystemAdapter</h3>
 <ul>
@@ -337,7 +340,8 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <h3>Documentation</h3>
 <ul>
 <li>Documentation of ControlSystemAdapter should mention that implementations must take care about 5.</li>
-<li>Documentation for ApplicationModule should mention 7. </li>
+<li>Documentation for ApplicationModule should mention 7.</li>
+<li>Documentation of VariableNetworkNode::initialValueUpdateMode() </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -345,7 +349,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Thu Apr 2 2020 03:53:41 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Apr 3 2020 03:53:42 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
