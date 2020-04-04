@@ -45,6 +45,7 @@ var NAVTREE =
       [ "Why do RegisterAccessors not have an assignment operator for other RegisterAccessors?", "q_and_a.html#why_no_accessor_assignment", null ],
       [ "Why can I not read SEQUENCE registers?", "q_and_a.html#use_sequences", null ]
     ] ],
+    [ "Technical specification: TransferElement", "spec__transfer_element.html", null ],
     [ "Testing applications using the DummyBackends", "testing_with_dummy_backends.html", [
       [ "Specifying the dummies in the device map file", "testing_with_dummy_backends.html#dmap_specify_dummies", null ],
       [ "Writeing to read-only registers", "testing_with_dummy_backends.html#dummy_backends_write_readonly", null ]
@@ -100,7 +101,7 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_two_d_register_accessor.html#a260355da3297d6de2aa27ae70d3d2f97",
 "device__backends_2pcie_2include_2pciedev__io_8h.html#ace7f77e5691514de1c5a1f8c16d3025c",
 "mtca4u__compatibility__headers_2_multiplexed_data_accessor_exception_8h.html",
-"structdevice__ioctrl__dma.html"
+"structdevice__ioctrl__data.html#ad8ffd816b771df6ef50f7c40166a37a6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
