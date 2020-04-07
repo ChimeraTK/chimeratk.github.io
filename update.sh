@@ -93,7 +93,7 @@ function update_tag(){
     sed -i $CHECKOUT_DIR/conf.py -e "s!\\\${PROJECT_NAME}!${PROJECT_NAME}!"
     sed -i $CHECKOUT_DIR/conf.py -e "s!\\\${author}!${author}!"
     sed -i $CHECKOUT_DIR/conf.py -e "s!\\\${CMAKE_SOURCE_DIR}!${CMAKE_SOURCE_DIR}!"
-    sed -i $CHECKOUT_DIR/conf.py -e "s!\\\${CMAKE_SOURCE_DIR}!${CMAKE_SOURCE_DIR}!"
+    sed -i $CHECKOUT_DIR/conf.py -e "s!\\\${CMAKE_BINARY_DIR}!${CMAKE_SOURCE_DIR}!"
 
     sphinx-build -c $CHECKOUT_DIR -b html $CHECKOUT_DIR/doc $DOC_DIR/$EPOCH > /dev/null
 
