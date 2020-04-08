@@ -290,9 +290,14 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>Exceptions are currently thrown in the wrong place (see implementation section for the NDRegisterAccessor). A possible implementation to help backends complying with this rule would be:<ul>
 <li>Introduce non-virtual <code>TransferElement::readTransfer()</code> etc, i.e. all functions like <code>do[...]Transfer[...]()</code> should have non-virtual pendants without <code>do</code>.</li>
 <li>These new functions will call the actual <code>do[...]Transfer[...]()</code> function, but place a try-catch-block around to catch all <a class="el" href="namespace_chimera_t_k.html" title="Generic modules for status monitoring. ">ChimeraTK</a> exceptions</li>
-<li>The exceptions are stored and operation is continued. In case of boolean return values (<code>doReadTransferNonBlocking()</code>, doReadTransferLatest()<code>and</code>doWriteTransfer()<code>), the value for success must be returned (</code>true<code>for read and</code>false<code>for write), to make sure the corresponding post-action is executed.</code></li>
-<li><code>With</code>TransferElement::postRead()<code>resp.</code>TransferElement::postWrite()<code>non-virtual wrappers for the post-actions already exist. In these functions, the stored exception should be thrown.</code></li>
-<li><code>All decorators and decorator-like accessors must be changed to call always the (new or existing) non-virtual functions in their virtual</code>do[...]` functions. This applies to both the transfer functions and the pre/post actions (for the latter it should be already the case).</li>
+<li>The exceptions are stored and operation is continued. In case of boolean return values correct values must be implemented:<ul>
+<li><code>doReadTransferNonBlocking()</code>and <code>doReadTransferLatest()</code> must return false (there was no new data)</li>
+<li><code>doWriteTransfer()</code> shall return true (dataLost), except for the ExceptionHandlingDecorator. It should return true only if the data of the recovery accessor is replaced and the previous value has not been written to the hardware.</li>
+</ul>
+</li>
+<li><code>postRead()</code> and <code>postWrite()</code> must always be called. It currently depends on the boolean return value if there is one. Instead this value has to be handed to <code>postRead()</code> and <code>postWrite()</code> as an argument. Only the implementation can decide what it has to do and what can be skipped.</li>
+<li>With <code>TransferElement::postRead()</code> resp. <code>TransferElement::postWrite()</code> non-virtual wrappers for the post-actions already exist. In these functions, the stored exception should be thrown.</li>
+<li>All decorators and decorator-like accessors must be changed to call always the (new or existing) non-virtual functions in their virtual <code>do[...]</code> functions. This applies to both the transfer functions and the pre/post actions (for the latter it should be already the case).</li>
 <li>It is advisable to add an assert that no unthrown exception is present before storing a new exception, to prevent that exceptions might get lost due to errors in the business logic.</li>
 </ul>
 </li>
@@ -349,7 +354,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Sat Apr 4 2020 03:54:02 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Apr 8 2020 06:53:31 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
