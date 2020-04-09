@@ -108,10 +108,8 @@ General Idea</h1>
 <p><b>2. The Flow</b></p>
 <ul>
 <li>2.1. The application always starts with all devices as closed and initial value for deviceError.status is set to 1. The <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> takes care that ExceptionHandlingDecorators do not perform any read or write operations, but block. This must happen before running any prepare() of an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a>, where the first write calls to ExceptionHandlingDecorators are done.</li>
-<li>2.2 In <a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ApplicationModule::prepare()</a> some initial values (and constants) are written. As the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> must not perform the actual write at this point, it will put the value into the dataRecoveryAccesssor and report an exception to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>.<ul>
-<li>2.2.3 Although <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> and fanout threads start after the device module threads, the application is now asynchronous and read or write operations can already take place in the main loops, even if the device is not ready yet (it might actually be broken). All read and write operations are blocked buy the ExceptionHandlingDecorators at this point.</li>
-</ul>
-</li>
+<li>2.2 In <a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ApplicationModule::prepare()</a> some initial values (and constants) are written. As the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> must not perform the actual write at this point, it will put the value into the dataRecoveryAccesssor and report an exception to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>.</li>
+<li>Between 2.2 and 2.3 the application goes into multi-threaded mode. Although <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> and fanout threads start after the device module threads, the application is now asynchronous and read or write operations can already take place in the main loops, even if the device is not ready yet (it might actually be broken). All read and write operations are blocked buy the ExceptionHandlingDecorators at this point.</li>
 <li>2.3 The device module thread starts.<ul>
 <li>2.3.1 The <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> tries to open the device until it succeeds.(*)</li>
 <li>2.3.2 Device is initialised by iterating initialisationHandlers list. If there is an exception go back to 2.3.1. (*)</li>
@@ -337,7 +335,7 @@ Implementation details</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Wed Apr 8 2020 06:53:31 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Apr 9 2020 03:53:36 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
