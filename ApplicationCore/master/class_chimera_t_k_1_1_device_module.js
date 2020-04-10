@@ -32,6 +32,7 @@ var class_chimera_t_k_1_1_device_module =
     [ "terminate", "class_chimera_t_k_1_1_device_module.html#a579aa9c73405b593553805db4def3a18", null ],
     [ "virtualise", "class_chimera_t_k_1_1_device_module.html#afab701aa44d472d8f7bba14c8c94b046", null ],
     [ "virtualiseFromCatalog", "class_chimera_t_k_1_1_device_module.html#a984e0e97ec34d3f8f05f1eebb28e3acc", null ],
+    [ "waitForRecovery", "class_chimera_t_k_1_1_device_module.html#af1f90d82cac718e665a2e074d2e0c0c2", null ],
     [ "Application", "class_chimera_t_k_1_1_device_module.html#a23f25bcc02a0e94c2f5a4188496b04d0", null ],
     [ "detail::DeviceModuleProxy", "class_chimera_t_k_1_1_device_module.html#a97967a6daa70f9b4246914953a73b0dd", null ],
     [ "ExceptionHandlingDecorator", "class_chimera_t_k_1_1_device_module.html#aa4d68f9b9ae5e4d36e5dc94efc89dcce", null ],
@@ -56,6 +57,5 @@ var class_chimera_t_k_1_1_device_module =
     [ "registerNamePrefix", "class_chimera_t_k_1_1_device_module.html#a3bd68002fced1ba4049ee2e798d7d26d", null ],
     [ "virtualisedModuleFromCatalog", "class_chimera_t_k_1_1_device_module.html#a6278854315239292e1143979799af854", null ],
     [ "virtualisedModuleFromCatalog_isValid", "class_chimera_t_k_1_1_device_module.html#a8100399439fb611a1df16093c2aac7fa", null ],
-    [ "writeAfterOpen", "class_chimera_t_k_1_1_device_module.html#a919584a80ca4081484c889e0eb53e32a", null ],
     [ "writeRecoveryOpen", "class_chimera_t_k_1_1_device_module.html#accf9d83766a0503e4118aeeae0aec36e", null ]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['waitforrecovery',['waitForRecovery',['../class_chimera_t_k_1_1_device_module.html#af1f90d82cac718e665a2e074d2e0c0c2',1,'ChimeraTK::DeviceModule']]],
   ['warning',['warning',['../struct_chimera_t_k_1_1_max_monitor.html#a37188065e696bb05d113aa186a572b80',1,'ChimeraTK::MaxMonitor::warning()'],['../struct_chimera_t_k_1_1_min_monitor.html#ad7734e8183790395b2c42d46c39d1f87',1,'ChimeraTK::MinMonitor::warning()'],['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416ac9daebef33f6193b02ab9c3512023d13',1,'logging::WARNING()'],['../namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781a1258a3c774701420cfd704cebc54587b',1,'ChimeraTK::WARNING()']]],
   ['warninglowerthreshold',['warningLowerThreshold',['../struct_chimera_t_k_1_1_range_monitor.html#af9024a4da784b70404db4647ddae6d41',1,'ChimeraTK::RangeMonitor']]],
   ['warningupperthreshold',['warningUpperThreshold',['../struct_chimera_t_k_1_1_range_monitor.html#abbe332c7fc02516620d56dde6f08186c',1,'ChimeraTK::RangeMonitor']]],
@@ -8,7 +9,6 @@ var searchData=
   ['withreturn',['withReturn',['../struct_chimera_t_k_1_1_variable_direction.html#a7c93d9b94dea8bb79d01bbe612bfbb29',1,'ChimeraTK::VariableDirection']]],
   ['withtimestamps',['withTimeStamps',['../struct_chimera_t_k_1_1history_1_1_history_entry.html#a2586c936907273a4197efd97513adb9a',1,'ChimeraTK::history::HistoryEntry']]],
   ['write',['write',['../class_chimera_t_k_1_1_array_accessor.html#a5606d0b5bc14407f0be9d47dca7612d6',1,'ChimeraTK::ArrayAccessor::write(ChimeraTK::VersionNumber versionNumber)=delete'],['../class_chimera_t_k_1_1_array_accessor.html#a9f39e90967b5befde4227ab273ef97c8',1,'ChimeraTK::ArrayAccessor::write()'],['../class_chimera_t_k_1_1_scalar_accessor.html#a02f5ea46e0582dfceb8e9cc06b25c302',1,'ChimeraTK::ScalarAccessor::write(ChimeraTK::VersionNumber versionNumber)=delete'],['../class_chimera_t_k_1_1_scalar_accessor.html#aa95b652b95fb7b51327486ce37d77ab8',1,'ChimeraTK::ScalarAccessor::write()']]],
-  ['writeafteropen',['writeAfterOpen',['../class_chimera_t_k_1_1_device_module.html#a919584a80ca4081484c889e0eb53e32a',1,'ChimeraTK::DeviceModule']]],
   ['writeall',['writeAll',['../class_chimera_t_k_1_1_module.html#ac91e2a2ce01c0616d57050b229cde5bb',1,'ChimeraTK::Module']]],
   ['writealldestructively',['writeAllDestructively',['../class_chimera_t_k_1_1_module.html#a52547cc6ff2510b82c8c8e281c01b02a',1,'ChimeraTK::Module']]],
   ['writearray',['writeArray',['../class_chimera_t_k_1_1_test_facility.html#a55f38cb91d70939e53456f4735991c72',1,'ChimeraTK::TestFacility']]],

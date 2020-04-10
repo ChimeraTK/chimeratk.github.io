@@ -6,6 +6,5 @@ var searchData=
   ['watch',['watch',['../struct_chimera_t_k_1_1_status_monitor_impl_1_1_one_up.html#a1eb2d6568e929c582184c18dd446be53',1,'ChimeraTK::StatusMonitorImpl::OneUp']]],
   ['withreturn',['withReturn',['../struct_chimera_t_k_1_1_variable_direction.html#a7c93d9b94dea8bb79d01bbe612bfbb29',1,'ChimeraTK::VariableDirection']]],
   ['withtimestamps',['withTimeStamps',['../struct_chimera_t_k_1_1history_1_1_history_entry.html#a2586c936907273a4197efd97513adb9a',1,'ChimeraTK::history::HistoryEntry']]],
-  ['writeafteropen',['writeAfterOpen',['../class_chimera_t_k_1_1_device_module.html#a919584a80ca4081484c889e0eb53e32a',1,'ChimeraTK::DeviceModule']]],
   ['writerecoveryopen',['writeRecoveryOpen',['../class_chimera_t_k_1_1_device_module.html#accf9d83766a0503e4118aeeae0aec36e',1,'ChimeraTK::DeviceModule']]]
 ];
