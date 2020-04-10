@@ -189,39 +189,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:accfe1aea9752501fd25381d3e3bdbee8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">isWriteable</a> () const =0</td></tr>
 <tr class="memdesc:accfe1aea9752501fd25381d3e3bdbee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transfer element is writeable.  <a href="#accfe1aea9752501fd25381d3e3bdbee8">More...</a><br /></td></tr>
 <tr class="separator:accfe1aea9752501fd25381d3e3bdbee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ab70efc5651769deb2bb6c5d4cb5453"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0ab70efc5651769deb2bb6c5d4cb5453">doReadTransfer</a> ()=0</td></tr>
-<tr class="memdesc:a0ab70efc5651769deb2bb6c5d4cb5453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data from the device but do not fill it into the user buffer of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#a0ab70efc5651769deb2bb6c5d4cb5453">More...</a><br /></td></tr>
-<tr class="separator:a0ab70efc5651769deb2bb6c5d4cb5453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1dcdfeb3d4d849cb9d6232727031e51"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae1dcdfeb3d4d849cb9d6232727031e51">doReadTransferNonBlocking</a> ()=0</td></tr>
-<tr class="memdesc:ae1dcdfeb3d4d849cb9d6232727031e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data from the device without blocking but do not fill it into the user buffer of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#ae1dcdfeb3d4d849cb9d6232727031e51">More...</a><br /></td></tr>
-<tr class="separator:ae1dcdfeb3d4d849cb9d6232727031e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a630bcd4b15d5579c0a97f9beb9b63a22"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a630bcd4b15d5579c0a97f9beb9b63a22">doReadTransferLatest</a> ()=0</td></tr>
-<tr class="memdesc:a630bcd4b15d5579c0a97f9beb9b63a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the latest data from the device without blocking but do not fill it into the user buffer of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#a630bcd4b15d5579c0a97f9beb9b63a22">More...</a><br /></td></tr>
-<tr class="separator:a630bcd4b15d5579c0a97f9beb9b63a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe0ba112ccb6eb9e556710d1151c1602"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afe0ba112ccb6eb9e556710d1151c1602">doReadTransferAsync</a> ()=0</td></tr>
-<tr class="memdesc:afe0ba112ccb6eb9e556710d1151c1602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the actual asynchronous read transfer.  <a href="#afe0ba112ccb6eb9e556710d1151c1602">More...</a><br /></td></tr>
-<tr class="separator:afe0ba112ccb6eb9e556710d1151c1602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68fee71a4c9407193fa021c44aca9f5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a68fee71a4c9407193fa021c44aca9f5d">preRead</a> ()</td></tr>
-<tr class="memdesc:a68fee71a4c9407193fa021c44aca9f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform any pre-read tasks if necessary.  <a href="#a68fee71a4c9407193fa021c44aca9f5d">More...</a><br /></td></tr>
-<tr class="separator:a68fee71a4c9407193fa021c44aca9f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19a9f486a967295eacca7f3f78d025bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a19a9f486a967295eacca7f3f78d025bb">postRead</a> ()</td></tr>
-<tr class="memdesc:a19a9f486a967295eacca7f3f78d025bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer the data from the device receive buffer into the user buffer, while converting the data into the user data format if needed.  <a href="#a19a9f486a967295eacca7f3f78d025bb">More...</a><br /></td></tr>
-<tr class="separator:a19a9f486a967295eacca7f3f78d025bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf41bf7340270e223afc8ed96f46b77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77">readTransfer</a> ()</td></tr>
+<tr class="memdesc:adaf41bf7340270e223afc8ed96f46b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data from the device but do not fill it into the user buffer of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#adaf41bf7340270e223afc8ed96f46b77">More...</a><br /></td></tr>
+<tr class="separator:adaf41bf7340270e223afc8ed96f46b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53f4e5fb0474ea69ab4ae2f6348cef0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ac53f4e5fb0474ea69ab4ae2f6348cef0">readTransferNonBlocking</a> ()</td></tr>
+<tr class="memdesc:ac53f4e5fb0474ea69ab4ae2f6348cef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data from the device but do not fill it into the user buffer of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#ac53f4e5fb0474ea69ab4ae2f6348cef0">More...</a><br /></td></tr>
+<tr class="separator:ac53f4e5fb0474ea69ab4ae2f6348cef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4310d78af7dd230efc621fe5d9400005"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4310d78af7dd230efc621fe5d9400005">readTransferLatest</a> ()</td></tr>
+<tr class="memdesc:a4310d78af7dd230efc621fe5d9400005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data from the device but do not fill it into the user buffer of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="#a4310d78af7dd230efc621fe5d9400005">More...</a><br /></td></tr>
+<tr class="separator:a4310d78af7dd230efc621fe5d9400005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2292f8adfff1871709c416d6901e643"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad2292f8adfff1871709c416d6901e643">readTransferAsync</a> ()</td></tr>
+<tr class="memdesc:ad2292f8adfff1871709c416d6901e643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiate asynchronous read transfer.  <a href="#ad2292f8adfff1871709c416d6901e643">More...</a><br /></td></tr>
+<tr class="separator:ad2292f8adfff1871709c416d6901e643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9d8f76450952744a6a046de7b4eb16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16">preRead</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type)</td></tr>
+<tr class="memdesc:a3b9d8f76450952744a6a046de7b4eb16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform any pre-read tasks if necessary.  <a href="#a3b9d8f76450952744a6a046de7b4eb16">More...</a><br /></td></tr>
+<tr class="separator:a3b9d8f76450952744a6a046de7b4eb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50d57b77be150189e86e224e76b76688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688">postRead</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type)</td></tr>
+<tr class="memdesc:a50d57b77be150189e86e224e76b76688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer the data from the device receive buffer into the user buffer, while converting the data into the user data format if needed.  <a href="#a50d57b77be150189e86e224e76b76688">More...</a><br /></td></tr>
+<tr class="separator:a50d57b77be150189e86e224e76b76688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa51a59d6d5eee3de298f1b3449bb29e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa51a59d6d5eee3de298f1b3449bb29e5">transferFutureWaitCallback</a> ()</td></tr>
 <tr class="memdesc:aa51a59d6d5eee3de298f1b3449bb29e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> before entering a potentially blocking wait().  <a href="#aa51a59d6d5eee3de298f1b3449bb29e5">More...</a><br /></td></tr>
 <tr class="separator:aa51a59d6d5eee3de298f1b3449bb29e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bbf89e74a5db146db0992dfa6c48554"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a2bbf89e74a5db146db0992dfa6c48554">preWrite</a> ()</td></tr>
-<tr class="memdesc:a2bbf89e74a5db146db0992dfa6c48554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer the data from the user buffer into the device send buffer, while converting the data from then user data format if needed.  <a href="#a2bbf89e74a5db146db0992dfa6c48554">More...</a><br /></td></tr>
-<tr class="separator:a2bbf89e74a5db146db0992dfa6c48554"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae92f7bd2db9827c3db3c1ff0e29ab581"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae92f7bd2db9827c3db3c1ff0e29ab581">postWrite</a> ()</td></tr>
-<tr class="memdesc:ae92f7bd2db9827c3db3c1ff0e29ab581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform any post-write cleanups if necessary.  <a href="#ae92f7bd2db9827c3db3c1ff0e29ab581">More...</a><br /></td></tr>
-<tr class="separator:ae92f7bd2db9827c3db3c1ff0e29ab581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4370c5db79886ac21390f2fa781f2f9c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4370c5db79886ac21390f2fa781f2f9c">doWriteTransfer</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber={})=0</td></tr>
-<tr class="memdesc:a4370c5db79886ac21390f2fa781f2f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data to device.  <a href="#a4370c5db79886ac21390f2fa781f2f9c">More...</a><br /></td></tr>
-<tr class="separator:a4370c5db79886ac21390f2fa781f2f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a147daf52a3fa87de1debbb9826b786d0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a147daf52a3fa87de1debbb9826b786d0">doWriteTransferDestructively</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber={})</td></tr>
-<tr class="memdesc:a147daf52a3fa87de1debbb9826b786d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Just like <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4370c5db79886ac21390f2fa781f2f9c" title="Write the data to device. ">doWriteTransfer()</a>, but allows the implementation to destroy the content of the user buffer in the process.  <a href="#a147daf52a3fa87de1debbb9826b786d0">More...</a><br /></td></tr>
-<tr class="separator:a147daf52a3fa87de1debbb9826b786d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac190f347f48d9687ea533baa9f1a10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7ac190f347f48d9687ea533baa9f1a10">preWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type)</td></tr>
+<tr class="memdesc:a7ac190f347f48d9687ea533baa9f1a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer the data from the user buffer into the device send buffer, while converting the data from then user data format if needed.  <a href="#a7ac190f347f48d9687ea533baa9f1a10">More...</a><br /></td></tr>
+<tr class="separator:a7ac190f347f48d9687ea533baa9f1a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f5cded2571872f0fc14c8c10a51331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab1f5cded2571872f0fc14c8c10a51331">postWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type)</td></tr>
+<tr class="memdesc:ab1f5cded2571872f0fc14c8c10a51331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform any post-write cleanups if necessary.  <a href="#ab1f5cded2571872f0fc14c8c10a51331">More...</a><br /></td></tr>
+<tr class="separator:ab1f5cded2571872f0fc14c8c10a51331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d6fdffb6935dd8c9cdaf6eff49389d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a5d6fdffb6935dd8c9cdaf6eff49389d9">writeTransfer</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber={})</td></tr>
+<tr class="memdesc:a5d6fdffb6935dd8c9cdaf6eff49389d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data to the device.  <a href="#a5d6fdffb6935dd8c9cdaf6eff49389d9">More...</a><br /></td></tr>
+<tr class="separator:a5d6fdffb6935dd8c9cdaf6eff49389d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb6185ac4c076eadf11d5e6596737e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a6cb6185ac4c076eadf11d5e6596737e9">writeTransferDestructively</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber={})</td></tr>
+<tr class="memdesc:a6cb6185ac4c076eadf11d5e6596737e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the data to the device.  <a href="#a6cb6185ac4c076eadf11d5e6596737e9">More...</a><br /></td></tr>
+<tr class="separator:a6cb6185ac4c076eadf11d5e6596737e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfe89e1cf7c5d45797fd062b9faaea6a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#acfe89e1cf7c5d45797fd062b9faaea6a">mayReplaceOther</a> (const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> const &gt; &amp;other) const</td></tr>
 <tr class="memdesc:acfe89e1cf7c5d45797fd062b9faaea6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> can be used in places where the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> "other" is currently used, e.g.  <a href="#acfe89e1cf7c5d45797fd062b9faaea6a">More...</a><br /></td></tr>
 <tr class="separator:acfe89e1cf7c5d45797fd062b9faaea6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,18 +258,36 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aa20629db6a741e29320765b5da3220ba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa20629db6a741e29320765b5da3220ba">doPreRead</a> ()</td></tr>
-<tr class="memdesc:aa20629db6a741e29320765b5da3220ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a68fee71a4c9407193fa021c44aca9f5d" title="Perform any pre-read tasks if necessary. ">preRead()</a>.  <a href="#aa20629db6a741e29320765b5da3220ba">More...</a><br /></td></tr>
-<tr class="separator:aa20629db6a741e29320765b5da3220ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e8c2303d9bb75b9a13a776f730c3dd6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7e8c2303d9bb75b9a13a776f730c3dd6">doPostRead</a> ()</td></tr>
-<tr class="memdesc:a7e8c2303d9bb75b9a13a776f730c3dd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a19a9f486a967295eacca7f3f78d025bb" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>.  <a href="#a7e8c2303d9bb75b9a13a776f730c3dd6">More...</a><br /></td></tr>
-<tr class="separator:a7e8c2303d9bb75b9a13a776f730c3dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c69edaa7d618bab49ebf38b7a87b348"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7c69edaa7d618bab49ebf38b7a87b348">doPreWrite</a> ()</td></tr>
-<tr class="memdesc:a7c69edaa7d618bab49ebf38b7a87b348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a2bbf89e74a5db146db0992dfa6c48554" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>.  <a href="#a7c69edaa7d618bab49ebf38b7a87b348">More...</a><br /></td></tr>
-<tr class="separator:a7c69edaa7d618bab49ebf38b7a87b348"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b8c0cb33f798ad604ce6f2cdf6f7ff9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a6b8c0cb33f798ad604ce6f2cdf6f7ff9">doPostWrite</a> ()</td></tr>
-<tr class="memdesc:a6b8c0cb33f798ad604ce6f2cdf6f7ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae92f7bd2db9827c3db3c1ff0e29ab581" title="Perform any post-write cleanups if necessary. ">postWrite()</a>.  <a href="#a6b8c0cb33f798ad604ce6f2cdf6f7ff9">More...</a><br /></td></tr>
-<tr class="separator:a6b8c0cb33f798ad604ce6f2cdf6f7ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ab70efc5651769deb2bb6c5d4cb5453"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0ab70efc5651769deb2bb6c5d4cb5453">doReadTransfer</a> ()=0</td></tr>
+<tr class="memdesc:a0ab70efc5651769deb2bb6c5d4cb5453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a>.  <a href="#a0ab70efc5651769deb2bb6c5d4cb5453">More...</a><br /></td></tr>
+<tr class="separator:a0ab70efc5651769deb2bb6c5d4cb5453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1dcdfeb3d4d849cb9d6232727031e51"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae1dcdfeb3d4d849cb9d6232727031e51">doReadTransferNonBlocking</a> ()=0</td></tr>
+<tr class="memdesc:ae1dcdfeb3d4d849cb9d6232727031e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ac53f4e5fb0474ea69ab4ae2f6348cef0" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransferNonBlocking()</a>.  <a href="#ae1dcdfeb3d4d849cb9d6232727031e51">More...</a><br /></td></tr>
+<tr class="separator:ae1dcdfeb3d4d849cb9d6232727031e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630bcd4b15d5579c0a97f9beb9b63a22"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a630bcd4b15d5579c0a97f9beb9b63a22">doReadTransferLatest</a> ()=0</td></tr>
+<tr class="memdesc:a630bcd4b15d5579c0a97f9beb9b63a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4310d78af7dd230efc621fe5d9400005" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransferLatest()</a>.  <a href="#a630bcd4b15d5579c0a97f9beb9b63a22">More...</a><br /></td></tr>
+<tr class="separator:a630bcd4b15d5579c0a97f9beb9b63a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe0ba112ccb6eb9e556710d1151c1602"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afe0ba112ccb6eb9e556710d1151c1602">doReadTransferAsync</a> ()=0</td></tr>
+<tr class="memdesc:afe0ba112ccb6eb9e556710d1151c1602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad2292f8adfff1871709c416d6901e643" title="Initiate asynchronous read transfer. ">readTransferAsync()</a>.  <a href="#afe0ba112ccb6eb9e556710d1151c1602">More...</a><br /></td></tr>
+<tr class="separator:afe0ba112ccb6eb9e556710d1151c1602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d3b43f03bed1cf27c57fd7e0c76127"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a60d3b43f03bed1cf27c57fd7e0c76127">doPreRead</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>)</td></tr>
+<tr class="memdesc:a60d3b43f03bed1cf27c57fd7e0c76127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary. ">preRead()</a>.  <a href="#a60d3b43f03bed1cf27c57fd7e0c76127">More...</a><br /></td></tr>
+<tr class="separator:a60d3b43f03bed1cf27c57fd7e0c76127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a464ed5ab42d0692556b3ce7d6f5b2653"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a464ed5ab42d0692556b3ce7d6f5b2653">doPostRead</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>)</td></tr>
+<tr class="memdesc:a464ed5ab42d0692556b3ce7d6f5b2653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>.  <a href="#a464ed5ab42d0692556b3ce7d6f5b2653">More...</a><br /></td></tr>
+<tr class="separator:a464ed5ab42d0692556b3ce7d6f5b2653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8352fb4e25dc5dc64f7044ee5d34fc59"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a8352fb4e25dc5dc64f7044ee5d34fc59">doPreWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>)</td></tr>
+<tr class="memdesc:a8352fb4e25dc5dc64f7044ee5d34fc59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7ac190f347f48d9687ea533baa9f1a10" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>.  <a href="#a8352fb4e25dc5dc64f7044ee5d34fc59">More...</a><br /></td></tr>
+<tr class="separator:a8352fb4e25dc5dc64f7044ee5d34fc59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0570c22ade5949f4b95f96ffb4e76304"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0570c22ade5949f4b95f96ffb4e76304">doPostWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>)</td></tr>
+<tr class="memdesc:a0570c22ade5949f4b95f96ffb4e76304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab1f5cded2571872f0fc14c8c10a51331" title="Perform any post-write cleanups if necessary. ">postWrite()</a>.  <a href="#a0570c22ade5949f4b95f96ffb4e76304">More...</a><br /></td></tr>
+<tr class="separator:a0570c22ade5949f4b95f96ffb4e76304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3498d969f1eff074cb2a431a3ad687"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687">doWriteTransfer</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber)=0</td></tr>
+<tr class="memdesc:aae3498d969f1eff074cb2a431a3ad687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a5d6fdffb6935dd8c9cdaf6eff49389d9" title="Write the data to the device. ">writeTransfer()</a>.  <a href="#aae3498d969f1eff074cb2a431a3ad687">More...</a><br /></td></tr>
+<tr class="separator:aae3498d969f1eff074cb2a431a3ad687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f467545b6682f18cec6b113c5898cc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a98f467545b6682f18cec6b113c5898cc">doWriteTransferDestructively</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber)</td></tr>
+<tr class="memdesc:a98f467545b6682f18cec6b113c5898cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a6cb6185ac4c076eadf11d5e6596737e9" title="Write the data to the device. ">writeTransferDestructively()</a>.  <a href="#a98f467545b6682f18cec6b113c5898cc">More...</a><br /></td></tr>
+<tr class="separator:a98f467545b6682f18cec6b113c5898cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a833c655eca8c53f5ff0d97c3d81c1376"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a833c655eca8c53f5ff0d97c3d81c1376">makeUniqueId</a> ()</td></tr>
 <tr class="memdesc:a833c655eca8c53f5ff0d97c3d81c1376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow generating a unique ID from derived classes.  <a href="#a833c655eca8c53f5ff0d97c3d81c1376">More...</a><br /></td></tr>
 <tr class="separator:a833c655eca8c53f5ff0d97c3d81c1376"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,17 +309,8 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aa5fafaaed44dd2c55bcd8a24a99e3e86"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa5fafaaed44dd2c55bcd8a24a99e3e86">isInTransferGroup</a></td></tr>
 <tr class="memdesc:aa5fafaaed44dd2c55bcd8a24a99e3e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> has been added to a <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> or not.  <a href="#aa5fafaaed44dd2c55bcd8a24a99e3e86">More...</a><br /></td></tr>
 <tr class="separator:aa5fafaaed44dd2c55bcd8a24a99e3e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5e0da1696dcfda8b285a818e6555f2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa5e0da1696dcfda8b285a818e6555f2d">readTransactionInProgress</a> {false}</td></tr>
-<tr class="memdesc:aa5e0da1696dcfda8b285a818e6555f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether a read transaction is in progress.  <a href="#aa5e0da1696dcfda8b285a818e6555f2d">More...</a><br /></td></tr>
-<tr class="separator:aa5e0da1696dcfda8b285a818e6555f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed11ca7a5de19b71ce48c00a13ad9a6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aed11ca7a5de19b71ce48c00a13ad9a6f">writeTransactionInProgress</a> {false}</td></tr>
-<tr class="memdesc:aed11ca7a5de19b71ce48c00a13ad9a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether a write transaction is in progress.  <a href="#aed11ca7a5de19b71ce48c00a13ad9a6f">More...</a><br /></td></tr>
-<tr class="separator:aed11ca7a5de19b71ce48c00a13ad9a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae38d4de78e82adea96f87d98ef828ad9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae38d4de78e82adea96f87d98ef828ad9">hasActiveFuture</a> {false}</td></tr>
-<tr class="memdesc:ae38d4de78e82adea96f87d98ef828ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether there is a valid activeFuture or not.  <a href="#ae38d4de78e82adea96f87d98ef828ad9">More...</a><br /></td></tr>
-<tr class="separator:ae38d4de78e82adea96f87d98ef828ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af60ec6ab982e620f5bfdc3b5bbed9928"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af60ec6ab982e620f5bfdc3b5bbed9928">activeFuture</a></td></tr>
-<tr class="memdesc:af60ec6ab982e620f5bfdc3b5bbed9928"><td class="mdescLeft">&#160;</td><td class="mdescRight">last future returned by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afe0ba112ccb6eb9e556710d1151c1602" title="Start the actual asynchronous read transfer. ">doReadTransferAsync()</a> (valid if hasActiveFuture == true)  <a href="#af60ec6ab982e620f5bfdc3b5bbed9928">More...</a><br /></td></tr>
+<tr class="memdesc:af60ec6ab982e620f5bfdc3b5bbed9928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last future returned by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afe0ba112ccb6eb9e556710d1151c1602" title="Implementation version of readTransferAsync(). ">doReadTransferAsync()</a> (valid if hasActiveFuture == true).  <a href="#af60ec6ab982e620f5bfdc3b5bbed9928">More...</a><br /></td></tr>
 <tr class="separator:af60ec6ab982e620f5bfdc3b5bbed9928"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -314,7 +323,7 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for register accessors which can be part of a <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00057">57</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00062">62</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a5a3283a433fa427031456d9a68878a51"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a3283a433fa427031456d9a68878a51">&#9670;&nbsp;</a></span>SharedPtr</h2>
@@ -330,7 +339,7 @@ Friends</h2></td></tr>
 
 <p>A typedef for more compact syntax. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00074">74</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00079">79</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -377,7 +386,7 @@ Friends</h2></td></tr>
 
 <p>Creates a transfer element with the specified name. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00060">60</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00065">65</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -491,12 +500,12 @@ Friends</h2></td></tr>
 <p>Return current validity of the data. </p>
 <p>Will always return <a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfa444bcb3a3fcf8389296c49467f27e1d6">DataValidity::ok</a> if the backend does not support it </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00100">100</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00105">105</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
-<a id="a7e8c2303d9bb75b9a13a776f730c3dd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e8c2303d9bb75b9a13a776f730c3dd6">&#9670;&nbsp;</a></span>doPostRead()</h2>
+<a id="a464ed5ab42d0692556b3ce7d6f5b2653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a464ed5ab42d0692556b3ce7d6f5b2653">&#9670;&nbsp;</a></span>doPostRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -507,6 +516,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">virtual void ChimeraTK::TransferElement::doPostRead </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -518,26 +528,26 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a19a9f486a967295eacca7f3f78d025bb" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. </p>
-<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a19a9f486a967295eacca7f3f78d025bb" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
+<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. </p>
+<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
 <p>No actual communication may be done. Hence, no <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown. </p>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a09a489395a63e5443973ae5ffe2a52b8">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_decorator.html#a1ae97538123e1ae2cf968d1053612566">ChimeraTK::FixedPointConvertingDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a9d04d68bf54ee0904aac8c80f5a600e1">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a1e29174e15c277fc01b87b95d5402837">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#ae26fa6a9d2ccc331bd6789d4ab5d759b">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#afe4e74b6ad65f5f44295f03b9fb38be4">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a6d3577cf10f3a82253c0bceb821e0820">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#aa374df2cafee6b05c6ca1638a7aab43b">ChimeraTK::NumericAddressedLowLevelTransferElement</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#a2d8f459fb171024e521ec76db2e92f45">ChimeraTK::LNMBackend::MathPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#ac10ed48e6c7cc6272ea055111bcc1d90">ChimeraTK::LNMBackend::MultiplierPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#a5f2ec18ce09d8eecf92f5cdef6aacab0">ChimeraTK::CopyRegisterDecorator&lt; T &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a0d03f2f3bef3213f6517eca1f266dd9b">ChimeraTK::SubdeviceRegisterAccessor</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ac02370a4e9ecfa34b2883b45755565bb">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_decorator.html#afbe8c11a9b5b90bc2a9f63d9b3ca75fa">ChimeraTK::FixedPointConvertingDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a452993b744abe69775d36c2c4bb72547">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a2f9d5a8f54e5f21b19189a59e0cf5ed5">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a9d910bc700d67d1b387c3e20bc95b74b">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a21eecac83dc6a442bf8f6dee1b05de38">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a086b06e7898037802e21e2f07b2d2d00">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ad0eefa1db318ea8e41c96e8c2744b315">ChimeraTK::NumericAddressedLowLevelTransferElement</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#a97a7a7cbfb00e5c26c5ede7e3292ec0d">ChimeraTK::LNMBackend::MathPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#a257821827c8fdf9cf747e4ff4dc8d323">ChimeraTK::LNMBackend::MultiplierPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#af4a9c7f2e4b6d65c28fea9741f6ad35c">ChimeraTK::CopyRegisterDecorator&lt; T &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a47a40267d347b40d62afd479ae2e5c96">ChimeraTK::SubdeviceRegisterAccessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00353">353</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00456">456</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_element_a7e8c2303d9bb75b9a13a776f730c3dd6_icgraph.svg" width="499" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_element_a464ed5ab42d0692556b3ce7d6f5b2653_icgraph.svg" width="499" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a6b8c0cb33f798ad604ce6f2cdf6f7ff9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b8c0cb33f798ad604ce6f2cdf6f7ff9">&#9670;&nbsp;</a></span>doPostWrite()</h2>
+<a id="a0570c22ade5949f4b95f96ffb4e76304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0570c22ade5949f4b95f96ffb4e76304">&#9670;&nbsp;</a></span>doPostWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -548,6 +558,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">virtual void ChimeraTK::TransferElement::doPostWrite </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -559,18 +570,18 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae92f7bd2db9827c3db3c1ff0e29ab581" title="Perform any post-write cleanups if necessary. ">postWrite()</a>. </p>
-<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae92f7bd2db9827c3db3c1ff0e29ab581" title="Perform any post-write cleanups if necessary. ">postWrite()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
+<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab1f5cded2571872f0fc14c8c10a51331" title="Perform any post-write cleanups if necessary. ">postWrite()</a>. </p>
+<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab1f5cded2571872f0fc14c8c10a51331" title="Perform any post-write cleanups if necessary. ">postWrite()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
 <p>No actual communication may be done. Hence, no <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown. </p>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ab573e0310eabe1f70ee04451c3da663c">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_decorator.html#a61178421f9b40c1a7eab9b7b1424b93c">ChimeraTK::FixedPointConvertingDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a0271abadd9baf96701ce0ad833eb0695">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a4ee8089574a833474380262cb5d3e763">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#a2271d9232ce2857a43fd74a1a42acaaf">ChimeraTK::LNMBackend::MathPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#af488e1bdac56b75162ebdfd8f5d59fee">ChimeraTK::LNMBackend::MultiplierPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#ab49aa48e2d5fb53f03698f9714443a30">ChimeraTK::SubdeviceRegisterAccessor</a>, and <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#a5f3efe36c7afde4e98f0772c4d9d7e44">ChimeraTK::LNMBackend::ForceReadOnlyPluginDecorator&lt; UserType &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a65602b1e44e1b18da3a0f0e449078657">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_decorator.html#ae0bc1f876a06fa654e539dd1a730d1ad">ChimeraTK::FixedPointConvertingDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a2a6882b2c5ad03000e7feee665264c42">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a7a18fc3b631b21062057cbc9005f00d9">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#ab0f7d264574afdddbffe1333b226d1a9">ChimeraTK::LNMBackend::MathPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#aec9091ed72a3fa9dbdb007a74c95e290">ChimeraTK::LNMBackend::MultiplierPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#a003a94a3f96a9da0eabc38dbdbaea64c">ChimeraTK::LNMBackend::ForceReadOnlyPluginDecorator&lt; UserType &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#aa5d3045d24773dcf8fa27748ecef1f99">ChimeraTK::SubdeviceRegisterAccessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00410">410</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00521">521</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
-<a id="aa20629db6a741e29320765b5da3220ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa20629db6a741e29320765b5da3220ba">&#9670;&nbsp;</a></span>doPreRead()</h2>
+<a id="a60d3b43f03bed1cf27c57fd7e0c76127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60d3b43f03bed1cf27c57fd7e0c76127">&#9670;&nbsp;</a></span>doPreRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -581,6 +592,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">virtual void ChimeraTK::TransferElement::doPreRead </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -592,18 +604,18 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a68fee71a4c9407193fa021c44aca9f5d" title="Perform any pre-read tasks if necessary. ">preRead()</a>. </p>
-<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a68fee71a4c9407193fa021c44aca9f5d" title="Perform any pre-read tasks if necessary. ">preRead()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
+<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary. ">preRead()</a>. </p>
+<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary. ">preRead()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
 <p>No actual communication may be done. Hence, no <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown. </p>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_decorator.html#ada633abd1697fa1bcbf42d7d8d4e59ba">ChimeraTK::FixedPointConvertingDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a036928797b3dddf595212ac5f47defaf">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a036928797b3dddf595212ac5f47defaf">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a036928797b3dddf595212ac5f47defaf">ChimeraTK::NDRegisterAccessorDecorator&lt; T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a036928797b3dddf595212ac5f47defaf">ChimeraTK::NDRegisterAccessorDecorator&lt; TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a036928797b3dddf595212ac5f47defaf">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, uint32_t &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a036928797b3dddf595212ac5f47defaf">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, double &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#acd485fb4bfec8051a8f0bc758bfb4207">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a13dfec9e5ab10343550dec9032a51782">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a2d969ddc72bd8ddc3b764b8b88cc18eb">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#a9471c186a11e33f5df298cf439102fa0">ChimeraTK::LNMBackend::MathPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#af9df82709432a01ce4f507b07d782420">ChimeraTK::LNMBackend::MultiplierPluginDecorator&lt; UserType &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a7ce7587d1cd86ba98c5086685fa47916">ChimeraTK::SubdeviceRegisterAccessor</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_decorator.html#a3b37a8543aecc7f37069b466835c8a53">ChimeraTK::FixedPointConvertingDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a9559d505d8c8826a5acc8e03a0fb6f7f">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a9559d505d8c8826a5acc8e03a0fb6f7f">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a9559d505d8c8826a5acc8e03a0fb6f7f">ChimeraTK::NDRegisterAccessorDecorator&lt; T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a9559d505d8c8826a5acc8e03a0fb6f7f">ChimeraTK::NDRegisterAccessorDecorator&lt; TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a9559d505d8c8826a5acc8e03a0fb6f7f">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, uint32_t &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a9559d505d8c8826a5acc8e03a0fb6f7f">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, double &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#aee31ad502ab26ca8e6d13af6ece3cd16">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a54fd775faf4831519018500342b0a133">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a61a8483bd2643d7d4ced6c84ae3fbe84">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#ae80d6528cc95d3f99ad07ec2d34444cd">ChimeraTK::LNMBackend::MathPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#a35b3b8aacb9bfd42a3cf2a5a06771b06">ChimeraTK::LNMBackend::MultiplierPluginDecorator&lt; UserType &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a990ab9554975fe0c33ebac5793c2ee19">ChimeraTK::SubdeviceRegisterAccessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00329">329</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00425">425</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
-<a id="a7c69edaa7d618bab49ebf38b7a87b348"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c69edaa7d618bab49ebf38b7a87b348">&#9670;&nbsp;</a></span>doPreWrite()</h2>
+<a id="a8352fb4e25dc5dc64f7044ee5d34fc59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8352fb4e25dc5dc64f7044ee5d34fc59">&#9670;&nbsp;</a></span>doPreWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -614,6 +626,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">virtual void ChimeraTK::TransferElement::doPreWrite </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -625,13 +638,13 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a2bbf89e74a5db146db0992dfa6c48554" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>. </p>
-<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a2bbf89e74a5db146db0992dfa6c48554" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
+<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7ac190f347f48d9687ea533baa9f1a10" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>. </p>
+<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7ac190f347f48d9687ea533baa9f1a10" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
 <p>No actual communication may be done. Hence, no <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown. </p>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ad01bfb4b6e68405b7423c095d797bf8c">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_decorator.html#a6c3662426ecf07adf7118f0d41085068">ChimeraTK::FixedPointConvertingDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a6f06a6825cf0df140f9dab67b8a2a87a">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#aa67ef3fd7e75b0a4cafd13f56ad18515">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#aea68975d4ddd612bfa4697038dd4b252">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#ac6cc37bac3f5319018d1e600125eb943">ChimeraTK::LNMBackend::MathPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#a7420479726d8c83cba975712eed5d998">ChimeraTK::LNMBackend::MultiplierPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#ac9482ca257adc7dc8f563764e4fca704">ChimeraTK::SubdeviceRegisterAccessor</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#a4e588fc741839429f23088331ec3763c">ChimeraTK::LNMBackend::ForceReadOnlyPluginDecorator&lt; UserType &gt;</a>, and <a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#a2a75fe8588316be29f3db5b466dfdd9d">ChimeraTK::CopyRegisterDecorator&lt; T &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ad885cedd94d0478c0c23f7684f2e0727">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_decorator.html#abcb7bea399d08b699013246b4e464883">ChimeraTK::FixedPointConvertingDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#adb70bb2af5645025fe4afead158fe8bd">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a4c81f9568f298420396aaf44be758d5b">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a40940881ca3b0a3d9305dc6592e591ab">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#a4e832c7cebcb91a8e67420dbeacbddc0">ChimeraTK::LNMBackend::MathPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#a0c720371c16787609793596576af4b85">ChimeraTK::LNMBackend::MultiplierPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#ab4d32d667c30708b50bd97b6e1e8375f">ChimeraTK::SubdeviceRegisterAccessor</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#a4c2c9aedcc6964ae0300f4969357d838">ChimeraTK::LNMBackend::ForceReadOnlyPluginDecorator&lt; UserType &gt;</a>, and <a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#a8e6088be221105dc0c35d75bb6f3ef94">ChimeraTK::CopyRegisterDecorator&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00388">388</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00492">492</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -653,14 +666,18 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Read the data from the device but do not fill it into the user buffer of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
-<p>Calling this function after <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a68fee71a4c9407193fa021c44aca9f5d" title="Perform any pre-read tasks if necessary. ">preRead()</a> and followed by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a19a9f486a967295eacca7f3f78d025bb" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> is exactly equivalent to a call to just <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa21ae3855a6df0e877865702df066f5e" title="Read the data from the device. ">read()</a>.</p>
-<p>Implementation note: This function must return within ~1 second after boost::thread::interrupt() has been called on the thread calling this function. </p>
+<p>Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a>. </p>
+<p>This function must be implemented by the backend. For the functional description read the documentation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a>.</p>
+<p>Implementation notes:</p><ul>
+<li>This function must return within ~1 second after boost::thread::interrupt() has been called on the thread calling this function.</li>
+<li>Decorators must delegate the call to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a> of the decorated target.</li>
+<li>Delegations within the same object should go to the "do" version, e.g. to this-&gt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a630bcd4b15d5579c0a97f9beb9b63a22" title="Implementation version of readTransferLatest(). ">doReadTransferLatest()</a> </li>
+</ul>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ab7c58a4186825b6f17e84402f71584f3">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aee64822ef89030905473c3877bdf1cff">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aee64822ef89030905473c3877bdf1cff">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aee64822ef89030905473c3877bdf1cff">ChimeraTK::NDRegisterAccessorDecorator&lt; T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aee64822ef89030905473c3877bdf1cff">ChimeraTK::NDRegisterAccessorDecorator&lt; TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aee64822ef89030905473c3877bdf1cff">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, uint32_t &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aee64822ef89030905473c3877bdf1cff">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, double &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#aaa801140d135a892da24c50f76ba86e5">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a98b69b7d25ee1d7ecf2954b6a2474876">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#aba9aa3aa1c4c6f979cfab81aaecda544">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#ae32ece34dc312d0bdfd3ef0754394ae1">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a6dc38b2e515f220041b149d5fd6425c2">ChimeraTK::NumericAddressedLowLevelTransferElement</a>, and <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a7897a27818d52a0d7242ea4af679ec11">ChimeraTK::SubdeviceRegisterAccessor</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -692,15 +709,19 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Start the actual asynchronous read transfer. </p>
-<p>This function must be implemented by the backends and will be called inside <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad00999178a215bc11d9c1377c6427c23" title="Read data from the device in the background and return a future which will be fulfilled when the data...">readAsync()</a>. At that point, it is guaranteed that there is no unfinished transfer still ongoing (i.e. no still-valid <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> is present) and <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a68fee71a4c9407193fa021c44aca9f5d" title="Perform any pre-read tasks if necessary. ">preRead()</a> has already been called.</p>
-<p>The backend must never touch the user buffer (i.e. <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#ab3e9f790076370e901fd8c6079ed6770" title="Buffer of converted data elements. ">NDRegisterAccessor::buffer_2D</a>) inside this function, as it may only be filled inside <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a19a9f486a967295eacca7f3f78d025bb" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a19a9f486a967295eacca7f3f78d025bb" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> will get called by the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> when the user calls wait().</p>
-<p>Note: The <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> returned by this function must have been constructed with this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> as the transferElement in the constructor. Otherwise <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a19a9f486a967295eacca7f3f78d025bb" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> will not be properly called! </p>
+<p>Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad2292f8adfff1871709c416d6901e643" title="Initiate asynchronous read transfer. ">readTransferAsync()</a>. </p>
+<p>This function must be implemented by the backend. For the functional description read the documentation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad2292f8adfff1871709c416d6901e643" title="Initiate asynchronous read transfer. ">readTransferAsync()</a>.</p>
+<p>Implementation notes:</p><ul>
+<li>Decorators must delegate the call to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4310d78af7dd230efc621fe5d9400005" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransferLatest()</a> of the decorated target.</li>
+<li>Delegations within the same object should go to the "do" version, e.g. to this-&gt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0ab70efc5651769deb2bb6c5d4cb5453" title="Implementation version of readTransfer(). ">doReadTransfer()</a></li>
+<li>The backend must never touch the user buffer (i.e. <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#ab3e9f790076370e901fd8c6079ed6770" title="Buffer of converted data elements. ">NDRegisterAccessor::buffer_2D</a>) inside this function, as it may only be filled inside <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> will get called by the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> when the user calls wait().</li>
+<li>The <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> returned by this function must have been constructed with this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> as the transferElement in the constructor. Otherwise <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> will not be properly called! </li>
+</ul>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a2943e87c50c5c50ca445606d3ecf956a">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a2943e87c50c5c50ca445606d3ecf956a">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a2943e87c50c5c50ca445606d3ecf956a">ChimeraTK::NDRegisterAccessorDecorator&lt; T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a2943e87c50c5c50ca445606d3ecf956a">ChimeraTK::NDRegisterAccessorDecorator&lt; TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a2943e87c50c5c50ca445606d3ecf956a">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, uint32_t &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a2943e87c50c5c50ca445606d3ecf956a">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, double &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a651e8e50fb57977e6632481b97d4d587">ChimeraTK::NumericAddressedLowLevelTransferElement</a>, <a class="el" href="class_chimera_t_k_1_1_sync_n_d_register_accessor.html#a963ae41a4d58ce06c24a7bf6fbbd8f3a">ChimeraTK::SyncNDRegisterAccessor&lt; UserType &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_sync_n_d_register_accessor.html#a963ae41a4d58ce06c24a7bf6fbbd8f3a">ChimeraTK::SyncNDRegisterAccessor&lt; int32_t &gt;</a>.</p>
 
@@ -724,13 +745,17 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Read the latest data from the device without blocking but do not fill it into the user buffer of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
-<p>Calling this function after <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a68fee71a4c9407193fa021c44aca9f5d" title="Perform any pre-read tasks if necessary. ">preRead()</a> and followed by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a19a9f486a967295eacca7f3f78d025bb" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> is exactly equivalent to a call to just <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9488e50bea018025dd4b061afdf2f52b" title="Read the latest value, discarding any other update since the last read if present. ">readLatest()</a>. For the return value, see <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0e5dce57ab971b6fc68bc13fbd00401c" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>. </p>
+<p>Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4310d78af7dd230efc621fe5d9400005" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransferLatest()</a>. </p>
+<p>This function must be implemented by the backend. For the functional description read the documentation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4310d78af7dd230efc621fe5d9400005" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransferLatest()</a>.</p>
+<p>Implementation notes:</p><ul>
+<li>Decorators must delegate the call to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4310d78af7dd230efc621fe5d9400005" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransferLatest()</a> of the decorated target.</li>
+<li>Delegations within the same object should go to the "do" version, e.g. to this-&gt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0ab70efc5651769deb2bb6c5d4cb5453" title="Implementation version of readTransfer(). ">doReadTransfer()</a> </li>
+</ul>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a98af654c2352a7b5e9450ef158076fdd">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ad7cdf782dd954f673b9099cbd288deec">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ad7cdf782dd954f673b9099cbd288deec">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ad7cdf782dd954f673b9099cbd288deec">ChimeraTK::NDRegisterAccessorDecorator&lt; T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ad7cdf782dd954f673b9099cbd288deec">ChimeraTK::NDRegisterAccessorDecorator&lt; TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ad7cdf782dd954f673b9099cbd288deec">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, uint32_t &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ad7cdf782dd954f673b9099cbd288deec">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, double &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ab7f6f5b56e5080715f54138c8828e6a5">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#aee7aeba1f2963654fc802e4e64899974">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a1fd97ea57cd4e3421131f274b48014ab">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a1de3baca25098ad2eff628d8d6779213">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a155e171e75872b4c042830581f003d13">ChimeraTK::NumericAddressedLowLevelTransferElement</a>, and <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#abe5d98fd64221f325d3e41b134f7766e">ChimeraTK::SubdeviceRegisterAccessor</a>.</p>
 
@@ -754,20 +779,24 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Read the data from the device without blocking but do not fill it into the user buffer of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
-<p>Calling this function after <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a68fee71a4c9407193fa021c44aca9f5d" title="Perform any pre-read tasks if necessary. ">preRead()</a> and followed by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a19a9f486a967295eacca7f3f78d025bb" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> is exactly equivalent to a call to just <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0e5dce57ab971b6fc68bc13fbd00401c" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>. For the return value, see <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0e5dce57ab971b6fc68bc13fbd00401c" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>. </p>
+<p>Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ac53f4e5fb0474ea69ab4ae2f6348cef0" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransferNonBlocking()</a>. </p>
+<p>This function must be implemented by the backend. For the functional description read the documentation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ac53f4e5fb0474ea69ab4ae2f6348cef0" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransferNonBlocking()</a>.</p>
+<p>Implementation notes:</p><ul>
+<li>Decorators must delegate the call to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ac53f4e5fb0474ea69ab4ae2f6348cef0" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransferNonBlocking()</a> of the decorated target.</li>
+<li>Delegations within the same object should go to the "do" version, e.g. to this-&gt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0ab70efc5651769deb2bb6c5d4cb5453" title="Implementation version of readTransfer(). ">doReadTransfer()</a> </li>
+</ul>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ae449d5ccb8a3b3c1d18c5196b52401da">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a520f730055973aed089f1934e21b6a74">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a520f730055973aed089f1934e21b6a74">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a520f730055973aed089f1934e21b6a74">ChimeraTK::NDRegisterAccessorDecorator&lt; T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a520f730055973aed089f1934e21b6a74">ChimeraTK::NDRegisterAccessorDecorator&lt; TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a520f730055973aed089f1934e21b6a74">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, uint32_t &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a520f730055973aed089f1934e21b6a74">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, double &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#aa07aa47f7178dc62c5cbefecea4e2cf3">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#af622b11dc5f9123a599472eee3737aeb">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a2e56ec89fb07d674c29d0b24aa973011">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#ae87b15813ed949737b915c7cb6247fc6">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a288f9f8fee00bf3dd59b66260d71fb20">ChimeraTK::NumericAddressedLowLevelTransferElement</a>, and <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a8d491ec129de35cf24001442fad378a3">ChimeraTK::SubdeviceRegisterAccessor</a>.</p>
 
 </div>
 </div>
-<a id="a4370c5db79886ac21390f2fa781f2f9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4370c5db79886ac21390f2fa781f2f9c">&#9670;&nbsp;</a></span>doWriteTransfer()</h2>
+<a id="aae3498d969f1eff074cb2a431a3ad687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae3498d969f1eff074cb2a431a3ad687">&#9670;&nbsp;</a></span>doWriteTransfer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -779,27 +808,29 @@ Friends</h2></td></tr>
           <td class="memname">virtual bool ChimeraTK::TransferElement::doWriteTransfer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a>&#160;</td>
-          <td class="paramname"><em>versionNumber</em> = <code>{}</code></td><td>)</td>
+          <td class="paramname"><em>versionNumber</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Write the data to device. </p>
-<p>The return value is true, old data was lost on the write transfer (e.g. due to an buffer overflow). In case of an unbuffered write transfer, the return value will always be false.</p>
-<p>Calling this function after <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a2bbf89e74a5db146db0992dfa6c48554" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> and followed by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae92f7bd2db9827c3db3c1ff0e29ab581" title="Perform any post-write cleanups if necessary. ">postWrite()</a> is exactly equivalent to a call to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae9a9be48fa8f5cab72e62ce20d99004b" title="Write the data to device. ">write()</a>. </p>
+<p>Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a5d6fdffb6935dd8c9cdaf6eff49389d9" title="Write the data to the device. ">writeTransfer()</a>. </p>
+<p>This function must be implemented by the backend. For the functional description read the documentation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a5d6fdffb6935dd8c9cdaf6eff49389d9" title="Write the data to the device. ">writeTransfer()</a>.</p>
+<p>Implementation notes:</p><ul>
+<li>Decorators must delegate the call to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a5d6fdffb6935dd8c9cdaf6eff49389d9" title="Write the data to the device. ">writeTransfer()</a> of the decorated target. </li>
+</ul>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ac5afcf340a4a0f67829143e0b447cb14">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">ChimeraTK::NDRegisterAccessorDecorator&lt; T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">ChimeraTK::NDRegisterAccessorDecorator&lt; TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, uint32_t &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, double &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a365ef5a2e7f4bdf9f28fcbc89c455737">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a7180ab0d5de6ac654eb7e8c540477b71">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a94393d5a4740d99038307c484539094e">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#ad023bff6de9981020b4ee2da05454437">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a462a3a6d3dff3acb324ebcfdfc22e0d1">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a55da5df427736cdeb81efef84761aa43">ChimeraTK::NumericAddressedLowLevelTransferElement</a>, and <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a0cd5fa836bcca7162cf26e238e83cd8f">ChimeraTK::SubdeviceRegisterAccessor</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ac5afcf340a4a0f67829143e0b447cb14">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">ChimeraTK::NDRegisterAccessorDecorator&lt; T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">ChimeraTK::NDRegisterAccessorDecorator&lt; TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, uint32_t &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a3cd3bbd513f091f02f5ea4523dc93171">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, double &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a7180ab0d5de6ac654eb7e8c540477b71">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a365ef5a2e7f4bdf9f28fcbc89c455737">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a94393d5a4740d99038307c484539094e">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#ad023bff6de9981020b4ee2da05454437">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a462a3a6d3dff3acb324ebcfdfc22e0d1">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a55da5df427736cdeb81efef84761aa43">ChimeraTK::NumericAddressedLowLevelTransferElement</a>, and <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a0cd5fa836bcca7162cf26e238e83cd8f">ChimeraTK::SubdeviceRegisterAccessor</a>.</p>
 
 </div>
 </div>
-<a id="a147daf52a3fa87de1debbb9826b786d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a147daf52a3fa87de1debbb9826b786d0">&#9670;&nbsp;</a></span>doWriteTransferDestructively()</h2>
+<a id="a98f467545b6682f18cec6b113c5898cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f467545b6682f18cec6b113c5898cc">&#9670;&nbsp;</a></span>doWriteTransferDestructively()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -811,23 +842,28 @@ Friends</h2></td></tr>
           <td class="memname">virtual bool ChimeraTK::TransferElement::doWriteTransferDestructively </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a>&#160;</td>
-          <td class="paramname"><em>versionNumber</em> = <code>{}</code></td><td>)</td>
+          <td class="paramname"><em>versionNumber</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Just like <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4370c5db79886ac21390f2fa781f2f9c" title="Write the data to device. ">doWriteTransfer()</a>, but allows the implementation to destroy the content of the user buffer in the process. </p>
-<p>This is an optional optimisation, hence there is a default implementation which just calls the normal <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4370c5db79886ac21390f2fa781f2f9c" title="Write the data to device. ">doWriteTransfer()</a>. </p>
+<p>Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a6cb6185ac4c076eadf11d5e6596737e9" title="Write the data to the device. ">writeTransferDestructively()</a>. </p>
+<p>This function must be implemented by the backend. For the functional description read the documentation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a5d6fdffb6935dd8c9cdaf6eff49389d9" title="Write the data to the device. ">writeTransfer()</a>.</p>
+<p>Implementation notes:</p><ul>
+<li>Decorators must delegate the call to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a5d6fdffb6935dd8c9cdaf6eff49389d9" title="Write the data to the device. ">writeTransfer()</a> of the decorated target.</li>
+<li>Delegations within the same object should go to the "do" version, e.g. to this-&gt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer(). ">doWriteTransfer()</a></li>
+<li>The implementation may destroy the content of the user buffer in the process. This is an optional optimisation, hence there is a default implementation which just calls the normal <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer(). ">doWriteTransfer()</a>. </li>
+</ul>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a10a7164cd15a1756e37bcde0601228a2">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a10a7164cd15a1756e37bcde0601228a2">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a10a7164cd15a1756e37bcde0601228a2">ChimeraTK::NDRegisterAccessorDecorator&lt; T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a10a7164cd15a1756e37bcde0601228a2">ChimeraTK::NDRegisterAccessorDecorator&lt; TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a10a7164cd15a1756e37bcde0601228a2">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, uint32_t &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a10a7164cd15a1756e37bcde0601228a2">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, double &gt;</a>, and <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a548efce1991a5bb5d304e79572b976fc">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00426">426</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00573">573</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -885,7 +921,7 @@ Friends</h2></td></tr>
 
 <p>Returns the description of this variable/register. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00084">84</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00089">89</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -947,7 +983,7 @@ Friends</h2></td></tr>
 <p>For TransferElements which are itself an implementation this will directly return a shared pointer to this. If this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> is a user frontend, the pointer to the internal implementation is returned.</p>
 <p>Note: Avoid using this in application code, since it will break the abstraction! </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00498">498</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00646">646</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -976,7 +1012,7 @@ Friends</h2></td></tr>
 
 <p>Obtain unique ID for this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>, see <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html" title="Simple class holding a unique ID for a TransferElement. ">TransferElementID</a> for details. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00536">536</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00684">684</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -1046,7 +1082,7 @@ Friends</h2></td></tr>
 
 <p>Returns the name that identifies the process variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00077">77</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00082">82</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -1084,7 +1120,7 @@ Friends</h2></td></tr>
 <p>Returns the engineering unit. </p>
 <p>If none was specified, it will default to "n./a." </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00081">81</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00086">86</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1144,7 +1180,7 @@ Friends</h2></td></tr>
 <p>Returns the version number that is associated with the last transfer (i.e. </p>
 <p>last read or write). See <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">ChimeraTK::VersionNumber</a> for details. The <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">VersionNumber</a> object also allows to determine the time stamp.</p>
 <p>Implementation notes:</p>
-<p>Accessors with direct hardware access need to implement this function by returning the value of a member. The member needs to be set to a new version number in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7e8c2303d9bb75b9a13a776f730c3dd6" title="Backend specific implementation of postRead(). ">doPostRead()</a> by assigning a default-constructed <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">ChimeraTK::VersionNumber</a>. Also the argument of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4370c5db79886ac21390f2fa781f2f9c" title="Write the data to device. ">doWriteTransfer()</a> needs to be assigned to this member if the transfer was successful. This ensures correct tracking of the version number.</p>
+<p>Accessors with direct hardware access need to implement this function by returning the value of a member. The member needs to be set to a new version number in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a464ed5ab42d0692556b3ce7d6f5b2653" title="Backend specific implementation of postRead(). ">doPostRead()</a> by assigning a default-constructed <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">ChimeraTK::VersionNumber</a>. Also the argument of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer(). ">doWriteTransfer()</a> needs to be assigned to this member if the transfer was successful. This ensures correct tracking of the version number.</p>
 <p>Accessors which rely on other accessors to obtain their data should pass through the function call to the target accessor. </p>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#af4301f21b2d15a15fdf20a62b4f1db16">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a9d751cc8f214233c311437792e232e8b">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a2e412b0b0d7a1eca693fa2aa49286694">ChimeraTK::NumericAddressedLowLevelTransferElement</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#abfb7fe505c7ff26d9ee5d440ba135f6e">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#abd0138de04c9f7d35b6e35d16a125e27">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a7908c382da048b1ada7739471c02aaae">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#ad39f2df0d597d25c61dd3dcbb6c601eb">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a192046422d8a0789831407d5e870fcda">ChimeraTK::SubdeviceRegisterAccessor</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#a4c7257bfb7cfa58a7051ff3479a8452a">ChimeraTK::LNMBackend::MathPluginDecorator&lt; UserType &gt;</a>, and <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#a4bb818bc16f6bb8798b44b0d58c6a7d6">ChimeraTK::LNMBackend::MultiplierPluginDecorator&lt; UserType &gt;</a>.</p>
@@ -1180,7 +1216,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#af94c428ee60c82b5534f38f13c0f3840">ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#acf4b58df56c36adbfaa793d9505368db">ChimeraTK::LNMBackend::MathPluginDecorator&lt; UserType &gt;</a>, and <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#aa298a1393fcfe24a794efeb118b8e475">ChimeraTK::LNMBackend::MultiplierPluginDecorator&lt; UserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00552">552</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00700">700</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1240,7 +1276,7 @@ Friends</h2></td></tr>
 <p>Check if transfer element is read only, i.e. </p>
 <p>it is readable but not writeable. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a6bf1ab83dce6e0973629665fce51b590">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#aa03e019422f7a082f7614e672830c590">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ab33f87c48179e5c134991d8874471b24">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ab33f87c48179e5c134991d8874471b24">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ab33f87c48179e5c134991d8874471b24">ChimeraTK::NDRegisterAccessorDecorator&lt; T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ab33f87c48179e5c134991d8874471b24">ChimeraTK::NDRegisterAccessorDecorator&lt; TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ab33f87c48179e5c134991d8874471b24">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, uint32_t &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ab33f87c48179e5c134991d8874471b24">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, double &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#aa2ace4fb9d36a159599516eb177f0592">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a2e0e586818f45ffabeb8cfd9e0c83dd5">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a10e01c9b8758029501ba16fe2ad00609">ChimeraTK::NumericAddressedLowLevelTransferElement</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a987eec34956cfd09184be38b19b52923">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a1536d835fd3fe88ba35c9793acf56ae3">ChimeraTK::SubdeviceRegisterAccessor</a>, and <a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#a762babb29356600d740f549482d50c68">ChimeraTK::CopyRegisterDecorator&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a6bf1ab83dce6e0973629665fce51b590">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#aa03e019422f7a082f7614e672830c590">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ab33f87c48179e5c134991d8874471b24">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ab33f87c48179e5c134991d8874471b24">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ab33f87c48179e5c134991d8874471b24">ChimeraTK::NDRegisterAccessorDecorator&lt; T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ab33f87c48179e5c134991d8874471b24">ChimeraTK::NDRegisterAccessorDecorator&lt; TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ab33f87c48179e5c134991d8874471b24">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, uint32_t &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ab33f87c48179e5c134991d8874471b24">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, double &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#aa2ace4fb9d36a159599516eb177f0592">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a2e0e586818f45ffabeb8cfd9e0c83dd5">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a10e01c9b8758029501ba16fe2ad00609">ChimeraTK::NumericAddressedLowLevelTransferElement</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a987eec34956cfd09184be38b19b52923">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#a762babb29356600d740f549482d50c68">ChimeraTK::CopyRegisterDecorator&lt; T &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a1536d835fd3fe88ba35c9793acf56ae3">ChimeraTK::SubdeviceRegisterAccessor</a>.</p>
 
 </div>
 </div>
@@ -1329,7 +1365,7 @@ Friends</h2></td></tr>
 
 <p>Allow generating a unique ID from derived classes. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00568">568</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00716">716</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -1380,7 +1416,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a0613e9f5fab2be0b76adfab600f54d99">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a21432897852ea89ab69913c59baabff0">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#aa7814a2bda8db44cd3969a11d3b93ee1">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#acac4708d0a9a00b3d233f3bde1ccec3a">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#af0db033b7d19e3709ce29639b8b5a5ea">ChimeraTK::NumericAddressedLowLevelTransferElement</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a3f602a21064c360c60e6632f8fd18e8b">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#aad40d008323c9fe879ff0b00a1853a8f">ChimeraTK::SubdeviceRegisterAccessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00453">453</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00601">601</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1436,8 +1472,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a19a9f486a967295eacca7f3f78d025bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19a9f486a967295eacca7f3f78d025bb">&#9670;&nbsp;</a></span>postRead()</h2>
+<a id="a50d57b77be150189e86e224e76b76688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50d57b77be150189e86e224e76b76688">&#9670;&nbsp;</a></span>postRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1448,7 +1484,8 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void ChimeraTK::TransferElement::postRead </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1462,20 +1499,20 @@ Friends</h2></td></tr>
 <p>Transfer the data from the device receive buffer into the user buffer, while converting the data into the user data format if needed. </p>
 <p>Called by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa21ae3855a6df0e877865702df066f5e" title="Read the data from the device. ">read()</a> etc. Also the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> will call this function after a read was executed directly on the underlying accessor. This function must be implemented to extract the read data from the underlying accessor and expose it to the user. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00339">339</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00435">435</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_element_a19a9f486a967295eacca7f3f78d025bb_icgraph.svg" width="462" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_element_a50d57b77be150189e86e224e76b76688_icgraph.svg" width="462" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ae92f7bd2db9827c3db3c1ff0e29ab581"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae92f7bd2db9827c3db3c1ff0e29ab581">&#9670;&nbsp;</a></span>postWrite()</h2>
+<a id="ab1f5cded2571872f0fc14c8c10a51331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1f5cded2571872f0fc14c8c10a51331">&#9670;&nbsp;</a></span>postWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1486,7 +1523,8 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void ChimeraTK::TransferElement::postWrite </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1498,15 +1536,15 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform any post-write cleanups if necessary. </p>
-<p>If during <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a2bbf89e74a5db146db0992dfa6c48554" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> e.g. the user data buffer was swapped away, it must be swapped back in this function so the just sent data is available again to the calling program.</p>
+<p>If during <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7ac190f347f48d9687ea533baa9f1a10" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> e.g. the user data buffer was swapped away, it must be swapped back in this function so the just sent data is available again to the calling program.</p>
 <p>Called by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae9a9be48fa8f5cab72e62ce20d99004b" title="Write the data to device. ">write()</a>. Also the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> will call this function after a write was executed directly on the underlying accessor. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00397">397</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00501">501</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
-<a id="a68fee71a4c9407193fa021c44aca9f5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68fee71a4c9407193fa021c44aca9f5d">&#9670;&nbsp;</a></span>preRead()</h2>
+<a id="a3b9d8f76450952744a6a046de7b4eb16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b9d8f76450952744a6a046de7b4eb16">&#9670;&nbsp;</a></span>preRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1517,7 +1555,8 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void ChimeraTK::TransferElement::preRead </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1531,12 +1570,12 @@ Friends</h2></td></tr>
 <p>Perform any pre-read tasks if necessary. </p>
 <p>Called by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa21ae3855a6df0e877865702df066f5e" title="Read the data from the device. ">read()</a> etc. Also the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> will call this function before a read is executed directly on the underlying accessor. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00316">316</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00411">411</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
-<a id="a2bbf89e74a5db146db0992dfa6c48554"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bbf89e74a5db146db0992dfa6c48554">&#9670;&nbsp;</a></span>preWrite()</h2>
+<a id="a7ac190f347f48d9687ea533baa9f1a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac190f347f48d9687ea533baa9f1a10">&#9670;&nbsp;</a></span>preWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1547,7 +1586,8 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void ChimeraTK::TransferElement::preWrite </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1561,7 +1601,7 @@ Friends</h2></td></tr>
 <p>Transfer the data from the user buffer into the device send buffer, while converting the data from then user data format if needed. </p>
 <p>Called by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae9a9be48fa8f5cab72e62ce20d99004b" title="Write the data to device. ">write()</a>. Also the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> will call this function before a write will be executed directly on the underlying accessor. This function implemented be used to transfer the data to be written into the underlying accessor. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00375">375</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00478">478</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1591,7 +1631,7 @@ Friends</h2></td></tr>
 <p>Read the data from the device. </p>
 <p>If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> was set, this function will block until new data has arrived. Otherwise it still might block for a short time until the data transfer was complete. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00105">105</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00110">110</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1624,7 +1664,7 @@ Friends</h2></td></tr>
 <p>The future will be fulfilled at the time when normally <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa21ae3855a6df0e877865702df066f5e" title="Read the data from the device. ">read()</a> would return. A call to this function is roughly logically equivalent to: boost::async( boost::bind(&amp;TransferElement::read, this) ); (Although such implementation would disallow accessing the user data buffer until the future is fulfilled, which is not the case for this function.)</p>
 <p>Design note: A special type of future has to be returned to allow an abstraction from the implementation details of the backend. This allows - depending on the backend type - a more efficient implementation without launching a thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00196">196</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00201">201</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1654,7 +1694,7 @@ Friends</h2></td></tr>
 <p>Read the latest value, discarding any other update since the last read if present. </p>
 <p>Otherwise this function is identical to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0e5dce57ab971b6fc68bc13fbd00401c" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>, i.e. it will never wait for new values and it will return whether a new value was available if <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00153">153</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00158">158</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1685,7 +1725,132 @@ Friends</h2></td></tr>
 <p>If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> was set, this function returns immediately and the return value indicated if a new value was available (<code>true</code>) or not (<code>false</code>).</p>
 <p>If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> was not set, this function is identical to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa21ae3855a6df0e877865702df066f5e" title="Read the data from the device. ">read()</a>, which will still return quickly. Depending on the actual transfer implementation, the backend might need to transfer data to obtain the current value before returning. Also this function is not guaranteed to be lock free. The return value will be always true in this mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00132">132</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00137">137</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+
+</div>
+</div>
+<a id="adaf41bf7340270e223afc8ed96f46b77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf41bf7340270e223afc8ed96f46b77">&#9670;&nbsp;</a></span>readTransfer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::TransferElement::readTransfer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read the data from the device but do not fill it into the user buffer of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
+<p>This function must be called after <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary. ">preRead()</a> and before <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. If the accessor has the <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> flag, the function will block until new data has been pushed by the sender.</p>
+<p>This function internally calles <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0ab70efc5651769deb2bb6c5d4cb5453" title="Implementation version of readTransfer(). ">doReadTransfer()</a>, which is implemented by the backend. <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exceptions thrown in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0ab70efc5651769deb2bb6c5d4cb5453" title="Implementation version of readTransfer(). ">doReadTransfer()</a> are caught and rethrown in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00303">303</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+
+</div>
+</div>
+<a id="ad2292f8adfff1871709c416d6901e643"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2292f8adfff1871709c416d6901e643">&#9670;&nbsp;</a></span>readTransferAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a> ChimeraTK::TransferElement::readTransferAsync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initiate asynchronous read transfer. </p>
+<p>This function must be called after <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary. ">preRead()</a> and before <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. It is being called by readAsync.</p>
+<p>It is guaranteed that there is no unfinished transfer still ongoing (i.e. no still-valid <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> is present) when this function is called.</p>
+<p>This function internally calles <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afe0ba112ccb6eb9e556710d1151c1602" title="Implementation version of readTransferAsync(). ">doReadTransferAsync()</a>, which is implemented by the backend. <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exceptions thrown in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a630bcd4b15d5579c0a97f9beb9b63a22" title="Implementation version of readTransferLatest(). ">doReadTransferLatest()</a> are caught and rethrown in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00386">386</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+
+</div>
+</div>
+<a id="a4310d78af7dd230efc621fe5d9400005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4310d78af7dd230efc621fe5d9400005">&#9670;&nbsp;</a></span>readTransferLatest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::TransferElement::readTransferLatest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read the data from the device but do not fill it into the user buffer of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
+<p>This function must be called after <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary. ">preRead()</a> and before <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. Even if the accessor has the <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> flag, this function will not block if no new data is available. If data is available, it will read the latest value and discard any intermediate values. For the meaning of the return value, see <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9488e50bea018025dd4b061afdf2f52b" title="Read the latest value, discarding any other update since the last read if present. ">readLatest()</a>.</p>
+<p>This function internally calles <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a630bcd4b15d5579c0a97f9beb9b63a22" title="Implementation version of readTransferLatest(). ">doReadTransferLatest()</a>, which is implemented by the backend. <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exceptions thrown in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a630bcd4b15d5579c0a97f9beb9b63a22" title="Implementation version of readTransferLatest(). ">doReadTransferLatest()</a> are caught and rethrown in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00360">360</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+
+</div>
+</div>
+<a id="ac53f4e5fb0474ea69ab4ae2f6348cef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac53f4e5fb0474ea69ab4ae2f6348cef0">&#9670;&nbsp;</a></span>readTransferNonBlocking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::TransferElement::readTransferNonBlocking </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read the data from the device but do not fill it into the user buffer of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
+<p>This function must be called after <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary. ">preRead()</a> and before <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. Even if the accessor has the <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> flag, this function will not block if no new data is available. For the meaning of the return value, see <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0e5dce57ab971b6fc68bc13fbd00401c" title="Read the next value, if available in the input buffer. ">readNonBlocking()</a>.</p>
+<p>This function internally calles <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae1dcdfeb3d4d849cb9d6232727031e51" title="Implementation version of readTransferNonBlocking(). ">doReadTransferNonBlocking()</a>, which is implemented by the backend. <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exceptions thrown in doRedoReadTransferNonBlockingadTransfer() are caught and rethrown in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00335">335</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1718,7 +1883,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#acb965b35365a29b27d42c41db0578033">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a4439853c000269dd3e862e8713263be0">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a37713b9281070f2fb1a1ea72868c2aff">ChimeraTK::NumericAddressedLowLevelTransferElement</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a6539b6ca4b91c3a1aab9b31547b84b87">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#afb35bdda934d74b34aa2a50e92f4f829">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a1a5dbcabd62608869c651225d3e94e4a">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html#a40cd601842afe60e6ce49e74780ca978">ChimeraTK::SubdeviceRegisterAccessor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00506">506</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00654">654</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -1757,7 +1922,7 @@ Friends</h2></td></tr>
 <p>Set the current DataValidity for this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
 <p>Will do nothing if the backend does not support it </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00096">96</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00101">101</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1791,7 +1956,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a4eee9c9221bf2ac861f1d734ae447a84">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a4eee9c9221bf2ac861f1d734ae447a84">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a4eee9c9221bf2ac861f1d734ae447a84">ChimeraTK::NDRegisterAccessorDecorator&lt; T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a4eee9c9221bf2ac861f1d734ae447a84">ChimeraTK::NDRegisterAccessorDecorator&lt; TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a4eee9c9221bf2ac861f1d734ae447a84">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, uint32_t &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a4eee9c9221bf2ac861f1d734ae447a84">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, double &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00530">530</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00678">678</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1823,7 +1988,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a69f550bb9961ccf7f643ba963e3c6f28">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a69f550bb9961ccf7f643ba963e3c6f28">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a69f550bb9961ccf7f643ba963e3c6f28">ChimeraTK::NDRegisterAccessorDecorator&lt; T &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a69f550bb9961ccf7f643ba963e3c6f28">ChimeraTK::NDRegisterAccessorDecorator&lt; TargetUserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a69f550bb9961ccf7f643ba963e3c6f28">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, uint32_t &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a69f550bb9961ccf7f643ba963e3c6f28">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, double &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00366">366</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00469">469</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -1862,7 +2027,7 @@ Friends</h2></td></tr>
 <p>Write the data to device. </p>
 <p>The return value is true, old data was lost on the write transfer (e.g. due to an buffer overflow). In case of an unbuffered write transfer, the return value will always be false. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00212">212</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00217">217</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1891,9 +2056,74 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Just like <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae9a9be48fa8f5cab72e62ce20d99004b" title="Write the data to device. ">write()</a>, but allows the implementation to destroy the content of the user buffer in the process. </p>
-<p>This is an optional optimisation, hence there is a default implementation which just calls the normal <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4370c5db79886ac21390f2fa781f2f9c" title="Write the data to device. ">doWriteTransfer()</a>. In any case, the application must expect the user buffer of the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> to contain undefined data after calling this function. </p>
+<p>This is an optional optimisation, hence there is a default implementation which just calls the normal <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer(). ">doWriteTransfer()</a>. In any case, the application must expect the user buffer of the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> to contain undefined data after calling this function. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00229">229</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00234">234</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+
+</div>
+</div>
+<a id="a5d6fdffb6935dd8c9cdaf6eff49389d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d6fdffb6935dd8c9cdaf6eff49389d9">&#9670;&nbsp;</a></span>writeTransfer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::TransferElement::writeTransfer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a>&#160;</td>
+          <td class="paramname"><em>versionNumber</em> = <code>{}</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write the data to the device. </p>
+<p>This function must be called after <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7ac190f347f48d9687ea533baa9f1a10" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> and before <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab1f5cded2571872f0fc14c8c10a51331" title="Perform any post-write cleanups if necessary. ">postWrite()</a>. If the return value is true, old data was lost on the write transfer (e.g. due to an buffer overflow). In case of an unbuffered write transfer, the return value will always be false.</p>
+<p>This function internally calles <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer(). ">doWriteTransfer()</a>, which is implemented by the backend. <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exceptions thrown in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer(). ">doWriteTransfer()</a> are caught and rethrown in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab1f5cded2571872f0fc14c8c10a51331" title="Perform any post-write cleanups if necessary. ">postWrite()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00532">532</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+
+</div>
+</div>
+<a id="a6cb6185ac4c076eadf11d5e6596737e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cb6185ac4c076eadf11d5e6596737e9">&#9670;&nbsp;</a></span>writeTransferDestructively()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::TransferElement::writeTransferDestructively </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a>&#160;</td>
+          <td class="paramname"><em>versionNumber</em> = <code>{}</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write the data to the device. </p>
+<p>The implementation is allowed to destroy the content of the user buffer in the process. This is an optional optimisation, hence the behaviour might be identical to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a5d6fdffb6935dd8c9cdaf6eff49389d9" title="Write the data to the device. ">writeTransfer()</a>.</p>
+<p>This function must be called after <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7ac190f347f48d9687ea533baa9f1a10" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> and before <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab1f5cded2571872f0fc14c8c10a51331" title="Perform any post-write cleanups if necessary. ">postWrite()</a>. If the return value is true, old data was lost on the write transfer (e.g. due to an buffer overflow). In case of an unbuffered write transfer, the return value will always be false.</p>
+<p>This function internally calles <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer(). ">doWriteTransfer()</a>, which is implemented by the backend. <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exceptions thrown in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer(). ">doWriteTransfer()</a> are caught and rethrown in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab1f5cded2571872f0fc14c8c10a51331" title="Perform any post-write cleanups if necessary. ">postWrite()</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00558">558</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1918,7 +2148,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00575">575</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00723">723</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1942,7 +2172,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00574">574</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00722">722</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1969,7 +2199,7 @@ Friends</h2></td></tr>
 
 <p>Description of this variable/register. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00562">562</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00710">710</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -1995,7 +2225,7 @@ Friends</h2></td></tr>
 
 <p>The ID of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00565">565</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00713">713</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2021,7 +2251,7 @@ Friends</h2></td></tr>
 
 <p>Identifier uniquely identifying the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00556">556</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00704">704</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2048,7 +2278,7 @@ Friends</h2></td></tr>
 <p>Engineering unit. </p>
 <p>Defaults to "n./a.", if none was specified </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00559">559</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00707">707</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2072,35 +2302,10 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>last future returned by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afe0ba112ccb6eb9e556710d1151c1602" title="Start the actual asynchronous read transfer. ">doReadTransferAsync()</a> (valid if hasActiveFuture == true) </p>
+<p>Last future returned by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afe0ba112ccb6eb9e556710d1151c1602" title="Implementation version of readTransferAsync(). ">doReadTransferAsync()</a> (valid if hasActiveFuture == true). </p>
+<p>This is currently used by some implementations to store the reused future once created. This logic should be changed, see issue #124. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00593">593</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
-
-</div>
-</div>
-<a id="ae38d4de78e82adea96f87d98ef828ad9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae38d4de78e82adea96f87d98ef828ad9">&#9670;&nbsp;</a></span>hasActiveFuture</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ChimeraTK::TransferElement::hasActiveFuture {false}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Flag whether there is a valid activeFuture or not. </p>
-
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00589">589</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00743">743</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2126,34 +2331,7 @@ Friends</h2></td></tr>
 
 <p>Flag whether this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> has been added to a <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00572">572</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
-
-</div>
-</div>
-<a id="aa5e0da1696dcfda8b285a818e6555f2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5e0da1696dcfda8b285a818e6555f2d">&#9670;&nbsp;</a></span>readTransactionInProgress</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ChimeraTK::TransferElement::readTransactionInProgress {false}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Flag whether a read transaction is in progress. </p>
-<p>This flag will be set in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a68fee71a4c9407193fa021c44aca9f5d" title="Perform any pre-read tasks if necessary. ">preRead()</a> and cleared in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a19a9f486a967295eacca7f3f78d025bb" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> and is used to prevent multiple calls to these functions during a single transfer. It should also be reset before starting a new read transaction - this happens only inside the implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa21ae3855a6df0e877865702df066f5e" title="Read the data from the device. ">read()</a> etc. and in the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00582">582</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00720">720</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2179,34 +2357,7 @@ Friends</h2></td></tr>
 
 <p>Constant string to be used as a unit when the unit is not provided or known. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00518">518</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
-
-</div>
-</div>
-<a id="aed11ca7a5de19b71ce48c00a13ad9a6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed11ca7a5de19b71ce48c00a13ad9a6f">&#9670;&nbsp;</a></span>writeTransactionInProgress</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ChimeraTK::TransferElement::writeTransactionInProgress {false}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Flag whether a write transaction is in progress. </p>
-<p>This flag is similar to readTransactionInProgress but affects <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a2bbf89e74a5db146db0992dfa6c48554" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae92f7bd2db9827c3db3c1ff0e29ab581" title="Perform any post-write cleanups if necessary. ">postWrite()</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00586">586</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html#l00666">666</a> of file <a class="el" href="device__backends_2include_2_transfer_element_8h_source.html">TransferElement.h</a>.</p>
 
 </div>
 </div>
@@ -2220,7 +2371,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a></li>
-    <li class="footer">Generated on Sat Apr 4 2020 03:53:18 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Fri Apr 10 2020 03:53:10 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

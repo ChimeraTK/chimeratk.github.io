@@ -185,7 +185,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Default constructor to generate a dysfunctional future. </p>
-<p>To initialise the future properly, reset() must be called afterwards. This pattern is used since the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> is a member of the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> and only references are returned by readAsync(). </p>
+<p>To initialise the future properly, reset() must be called afterwards. This pattern is used since the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> is a member of the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> and only references are returned by <a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7a4088c1d5fa658df3c8aff96bc3311ec9">readAsync()</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_transfer_future_8h_source.html#l00090">90</a> of file <a class="el" href="device_2include_2_transfer_future_8h_source.html">TransferFuture.h</a>.</p>
 
@@ -554,7 +554,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Block the current thread until the new data has arrived. </p>
-<p>The <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a19a9f486a967295eacca7f3f78d025bb" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">TransferElement::postRead()</a> action is automatically executed before returning, so the new data is directly available in the buffer. </p>
+<p>The <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a50d57b77be150189e86e224e76b76688" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">TransferElement::postRead()</a> action is automatically executed before returning, so the new data is directly available in the buffer. </p>
 
 <p class="definition">Definition at line <a class="el" href="_transfer_future_8cc_source.html#l00009">9</a> of file <a class="el" href="_transfer_future_8cc_source.html">TransferFuture.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -631,7 +631,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a></li>
-    <li class="footer">Generated on Sat Apr 4 2020 03:53:18 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Fri Apr 10 2020 03:53:10 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
