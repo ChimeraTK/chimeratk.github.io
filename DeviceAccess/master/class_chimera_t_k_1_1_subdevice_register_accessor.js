@@ -2,8 +2,8 @@ var class_chimera_t_k_1_1_subdevice_register_accessor =
 [
     [ "SubdeviceRegisterAccessor", "class_chimera_t_k_1_1_subdevice_register_accessor.html#a3ba0161652dec0adddc2141861e6c49a", null ],
     [ "~SubdeviceRegisterAccessor", "class_chimera_t_k_1_1_subdevice_register_accessor.html#ab53b8ff5fcca1e86e6a16cb54b1cf935", null ],
-    [ "doPostRead", "class_chimera_t_k_1_1_subdevice_register_accessor.html#a47a40267d347b40d62afd479ae2e5c96", null ],
-    [ "doPostWrite", "class_chimera_t_k_1_1_subdevice_register_accessor.html#aa5d3045d24773dcf8fa27748ecef1f99", null ],
+    [ "doPostRead", "class_chimera_t_k_1_1_subdevice_register_accessor.html#a4c02e1f18c9d1ad94672aa58f196d988", null ],
+    [ "doPostWrite", "class_chimera_t_k_1_1_subdevice_register_accessor.html#a93ab2b0a8745f191610b2373efc8ad41", null ],
     [ "doPreRead", "class_chimera_t_k_1_1_subdevice_register_accessor.html#a990ab9554975fe0c33ebac5793c2ee19", null ],
     [ "doPreWrite", "class_chimera_t_k_1_1_subdevice_register_accessor.html#ab4d32d667c30708b50bd97b6e1e8375f", null ],
     [ "doReadTransfer", "class_chimera_t_k_1_1_subdevice_register_accessor.html#a7897a27818d52a0d7242ea4af679ec11", null ],

@@ -2,8 +2,8 @@ var class_chimera_t_k_1_1_l_n_m_backend_bit_accessor =
 [
     [ "LNMBackendBitAccessor", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ad236c093d0be42c459d13ad62f91a325", null ],
     [ "~LNMBackendBitAccessor", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#aa4eed8d1127b7a233e23ba36264e9130", null ],
-    [ "doPostRead", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a2f9d5a8f54e5f21b19189a59e0cf5ed5", null ],
-    [ "doPostWrite", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a2a6882b2c5ad03000e7feee665264c42", null ],
+    [ "doPostRead", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a1a2e912ef220ceb5908297eeecfaaaa2", null ],
+    [ "doPostWrite", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#afd8377b9daf08be3095d2857c22cf486", null ],
     [ "doPreRead", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#aee31ad502ab26ca8e6d13af6ece3cd16", null ],
     [ "doPreWrite", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#adb70bb2af5645025fe4afead158fe8bd", null ],
     [ "doReadTransfer", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#aaa801140d135a892da24c50f76ba86e5", null ],
