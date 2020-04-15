@@ -151,8 +151,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5aa3d4f0b0f4da26737e89ef4e70caab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64cfeee87162fa14fe7474c3dadf96d4"><td class="memItemLeft" align="right" valign="top">ChimeraTK::TransferFuture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a64cfeee87162fa14fe7474c3dadf96d4">doReadTransferAsync</a> () override</td></tr>
 <tr class="separator:a64cfeee87162fa14fe7474c3dadf96d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e99252c8fe0bbdab1a0db5b5033f158"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a4e99252c8fe0bbdab1a0db5b5033f158">doPostRead</a> () override</td></tr>
-<tr class="separator:a4e99252c8fe0bbdab1a0db5b5033f158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b944ae55f8ce674508e2d672df046c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a13b944ae55f8ce674508e2d672df046c">doPostRead</a> (ChimeraTK::TransferType type) override</td></tr>
+<tr class="separator:a13b944ae55f8ce674508e2d672df046c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b1b19d9c6e3290e62abc133e9e89831"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a1b1b19d9c6e3290e62abc133e9e89831">doWriteTransfer</a> (ChimeraTK::VersionNumber versionNumber={}) override</td></tr>
 <tr class="separator:a1b1b19d9c6e3290e62abc133e9e89831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d1de8c9f797a9964ccaa8eaf4aa45a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a3d1de8c9f797a9964ccaa8eaf4aa45a3">doWriteTransferDestructively</a> (ChimeraTK::VersionNumber versionNumber={}) override</td></tr>
@@ -408,8 +408,8 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a id="a4e99252c8fe0bbdab1a0db5b5033f158"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e99252c8fe0bbdab1a0db5b5033f158">&#9670;&nbsp;</a></span>doPostRead()</h2>
+<a id="a13b944ae55f8ce674508e2d672df046c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b944ae55f8ce674508e2d672df046c">&#9670;&nbsp;</a></span>doPostRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,7 +422,8 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">ChimeraTK::UnidirectionalProcessArray</a>&lt; T &gt;::doPostRead </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">ChimeraTK::TransferType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -955,7 +956,7 @@ template&lt;typename U &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">UnidirectionalProcessArray</a></li>
-    <li class="footer">Generated on Fri Apr 10 2020 03:53:40 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Wed Apr 15 2020 03:53:39 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
