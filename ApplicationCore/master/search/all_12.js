@@ -19,6 +19,7 @@ var searchData=
   ['terminate',['terminate',['../class_chimera_t_k_1_1_application_module.html#a7063da466e760cc5c9838834be08a267',1,'ChimeraTK::ApplicationModule::terminate()'],['../class_chimera_t_k_1_1_device_module.html#a579aa9c73405b593553805db4def3a18',1,'ChimeraTK::DeviceModule::terminate()'],['../class_chimera_t_k_1_1_module.html#ae3497a487a36f2e1a51bc01592aabf5b',1,'ChimeraTK::Module::terminate()'],['../classlogging_1_1_logging_module.html#a65e49a11677dde2c6ea428d05dd044c1',1,'logging::LoggingModule::terminate()']]],
   ['testablemode',['testableMode',['../class_chimera_t_k_1_1_application.html#a8107412016780c83a5b3f8460589b602',1,'ChimeraTK::Application']]],
   ['testablemode_5fcounter',['testableMode_counter',['../class_chimera_t_k_1_1_application.html#ad198c0bb189aa53c1a4f5e3c0cf4a54e',1,'ChimeraTK::Application']]],
+  ['testablemode_5fdeviceinitialisationcounter',['testableMode_deviceInitialisationCounter',['../class_chimera_t_k_1_1_application.html#a93f7eaf12768171b9eb216bfd5c1969a',1,'ChimeraTK::Application']]],
   ['testablemode_5fispollmode',['testableMode_isPollMode',['../class_chimera_t_k_1_1_application.html#a29e6ea03c178fe30ce76a9e7b13c4dce',1,'ChimeraTK::Application']]],
   ['testablemode_5flastmutexowner',['testableMode_lastMutexOwner',['../class_chimera_t_k_1_1_application.html#a6fc1a59b4563ebfdb2bad5e58ae7c5ba',1,'ChimeraTK::Application']]],
   ['testablemode_5fmutex',['testableMode_mutex',['../class_chimera_t_k_1_1_application.html#ad18eaf2516fec639de10485195f242e7',1,'ChimeraTK::Application']]],

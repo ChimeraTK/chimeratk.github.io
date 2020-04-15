@@ -13,6 +13,7 @@ var searchData=
   ['templatemodule',['templateModule',['../struct_server.html#aae7e071acc1c337a5d6c478a76446778',1,'Server']]],
   ['testablemode',['testableMode',['../class_chimera_t_k_1_1_application.html#a8107412016780c83a5b3f8460589b602',1,'ChimeraTK::Application']]],
   ['testablemode_5fcounter',['testableMode_counter',['../class_chimera_t_k_1_1_application.html#ad198c0bb189aa53c1a4f5e3c0cf4a54e',1,'ChimeraTK::Application']]],
+  ['testablemode_5fdeviceinitialisationcounter',['testableMode_deviceInitialisationCounter',['../class_chimera_t_k_1_1_application.html#a93f7eaf12768171b9eb216bfd5c1969a',1,'ChimeraTK::Application']]],
   ['testablemode_5fispollmode',['testableMode_isPollMode',['../class_chimera_t_k_1_1_application.html#a29e6ea03c178fe30ce76a9e7b13c4dce',1,'ChimeraTK::Application']]],
   ['testablemode_5flastmutexowner',['testableMode_lastMutexOwner',['../class_chimera_t_k_1_1_application.html#a6fc1a59b4563ebfdb2bad5e58ae7c5ba',1,'ChimeraTK::Application']]],
   ['testablemode_5fmutex',['testableMode_mutex',['../class_chimera_t_k_1_1_application.html#ad18eaf2516fec639de10485195f242e7',1,'ChimeraTK::Application']]],

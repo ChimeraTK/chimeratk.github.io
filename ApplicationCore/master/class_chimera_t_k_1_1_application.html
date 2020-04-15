@@ -158,9 +158,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a881553efec1eb3bab305b775eae5d3ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a881553efec1eb3bab305b775eae5d3ea">isTestableModeEnabled</a> ()</td></tr>
 <tr class="memdesc:a881553efec1eb3bab305b775eae5d3ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if application is in testable mode else returns false.  <a href="#a881553efec1eb3bab305b775eae5d3ea">More...</a><br /></td></tr>
 <tr class="separator:a881553efec1eb3bab305b775eae5d3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb8be141c45a20ad4e836ecf82ff9573"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#abb8be141c45a20ad4e836ecf82ff9573">stepApplication</a> ()</td></tr>
-<tr class="memdesc:abb8be141c45a20ad4e836ecf82ff9573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume the application until all application threads are stuck in a blocking read operation.  <a href="#abb8be141c45a20ad4e836ecf82ff9573">More...</a><br /></td></tr>
-<tr class="separator:abb8be141c45a20ad4e836ecf82ff9573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af73af6e9bfd23e6e970ed5bf976068d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#af73af6e9bfd23e6e970ed5bf976068d4">stepApplication</a> (bool waitForDeviceInitialisation=true)</td></tr>
+<tr class="memdesc:af73af6e9bfd23e6e970ed5bf976068d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume the application until all application threads are stuck in a blocking read operation.  <a href="#af73af6e9bfd23e6e970ed5bf976068d4">More...</a><br /></td></tr>
+<tr class="separator:af73af6e9bfd23e6e970ed5bf976068d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb8b6abdb4e460d15a7291b5e8568f0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#abb8b6abdb4e460d15a7291b5e8568f0c">debugTestableMode</a> ()</td></tr>
 <tr class="memdesc:abb8b6abdb4e460d15a7291b5e8568f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable some additional (potentially noisy) debug output for the testable mode.  <a href="#abb8b6abdb4e460d15a7291b5e8568f0c">More...</a><br /></td></tr>
 <tr class="separator:abb8b6abdb4e460d15a7291b5e8568f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -420,6 +420,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ad198c0bb189aa53c1a4f5e3c0cf4a54e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#ad198c0bb189aa53c1a4f5e3c0cf4a54e">testableMode_counter</a> {0}</td></tr>
 <tr class="memdesc:ad198c0bb189aa53c1a4f5e3c0cf4a54e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Semaphore counter used in testable mode to check if application code is finished executing.  <a href="#ad198c0bb189aa53c1a4f5e3c0cf4a54e">More...</a><br /></td></tr>
 <tr class="separator:ad198c0bb189aa53c1a4f5e3c0cf4a54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93f7eaf12768171b9eb216bfd5c1969a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a93f7eaf12768171b9eb216bfd5c1969a">testableMode_deviceInitialisationCounter</a> {0}</td></tr>
+<tr class="memdesc:a93f7eaf12768171b9eb216bfd5c1969a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Semaphore counter used in testable mode to check if device initialisation is finished executing.  <a href="#a93f7eaf12768171b9eb216bfd5c1969a">More...</a><br /></td></tr>
+<tr class="separator:a93f7eaf12768171b9eb216bfd5c1969a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e7a4a1dc5d457fe7f7b929794ec4261"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a2e7a4a1dc5d457fe7f7b929794ec4261">enableDebugTestableMode</a> {false}</td></tr>
 <tr class="memdesc:a2e7a4a1dc5d457fe7f7b929794ec4261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag if noisy debug output is enabled for the testable mode.  <a href="#a2e7a4a1dc5d457fe7f7b929794ec4261">More...</a><br /></td></tr>
 <tr class="separator:a2e7a4a1dc5d457fe7f7b929794ec4261"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -923,7 +926,7 @@ template&lt;typename UserType &gt; </div>
 <p>Enable some additional (potentially noisy) debug output for the testable mode. </p>
 <p>Can be useful if tests of applications seem to hang for no reason in stepApplication. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00116">116</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00118">118</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -963,7 +966,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a2e6036e82c5f3b01bc062ceb431f94bb">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00433">433</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00440">440</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -992,7 +995,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a9293f7d03ad5a93cf79459eb6d377abc">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00442">442</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00449">449</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1178,7 +1181,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Enable debug output for a given variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00176">176</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00178">178</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-18-summary" class="dynsummary" style="display:block;">
@@ -1288,7 +1291,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00182">182</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00184">184</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 <div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-22-summary" class="dynsummary" style="display:block;">
@@ -1335,7 +1338,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a83a34142cea47d7396de8a3657004ef7">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00417">417</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00424">424</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1367,7 +1370,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a9a32600fa633b1cd991ba8f2bd3ac6b3">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00425">425</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00432">432</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1398,7 +1401,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#ac9889d98c6076fa8ac966ae5b89ab687">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00162">162</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00164">164</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1463,7 +1466,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00200">200</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00202">202</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 <div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-25-summary" class="dynsummary" style="display:block;">
@@ -1502,7 +1505,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a44d138bbe63552b5b8dd9a128c76fcbe">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00158">158</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00160">160</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1532,7 +1535,7 @@ template&lt;typename UserType &gt; </div>
 <p>Return a fresh variable ID which can be assigned to a sender/receiver pair. </p>
 <p>The ID will always be non-zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00356">356</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00363">363</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 <div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-26-summary" class="dynsummary" style="display:block;">
@@ -1572,7 +1575,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#aa3fc963233d251705cd197ced1aa0876">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00160">160</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00162">162</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1599,7 +1602,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00202">202</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00204">204</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 <div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-27-summary" class="dynsummary" style="display:block;">
@@ -1637,7 +1640,7 @@ template&lt;typename UserType &gt; </div>
 <p>Obtain the lock object for the testable mode lock for the current thread. </p>
 <p>The returned object has thread_local storage duration and must only be used inside the current thread. Initially (i.e. after the first call in one particular thread) the lock will not be owned by the returned object, so it is important to catch the corresponding exception when calling std::unique_lock::unlock(). </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01208">1208</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01209">1209</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-28-summary" class="dynsummary" style="display:block;">
@@ -1677,7 +1680,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a59d02ecae8bc99e76c7561c3ccea946c">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00429">429</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00436">436</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1706,7 +1709,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Incremenet counter for how many write() operations have overwritten unread data. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00180">180</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00182">182</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 <div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-29-summary" class="dynsummary" style="display:block;">
@@ -1754,7 +1757,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a50be9d7101acc689217d19bb0fd0ae9f">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00438">438</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00445">445</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1982,7 +1985,7 @@ template&lt;typename UserType &gt; </div>
 <p>Convenience function for creating constants. </p>
 <p>See <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#a8a974782ca971fd143aad7b1e87419fa" title="Factory function for a constant (a constructor cannot be templated) ">VariableNetworkNode::makeConstant()</a> for details. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00193">193</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00195">195</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 <div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-39-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-39-summary" class="dynsummary" style="display:block;">
@@ -2094,7 +2097,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01219">1219</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01220">1220</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-43" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-43-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-43-summary" class="dynsummary" style="display:block;">
@@ -2133,7 +2136,7 @@ template&lt;typename UserType &gt; </div>
 <p>Register the thread in the application system and give it a name. </p>
 <p>This should be done for all threads used by the application to help with debugging and to allow profiling. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00152">152</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00154">154</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 <div id="dynsection-44" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-44-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-44-summary" class="dynsummary" style="display:block;">
@@ -2225,7 +2228,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a5e2a53bcd523efe6546098aec632a60b">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00421">421</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00428">428</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2276,8 +2279,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="abb8be141c45a20ad4e836ecf82ff9573"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb8be141c45a20ad4e836ecf82ff9573">&#9670;&nbsp;</a></span>stepApplication()</h2>
+<a id="af73af6e9bfd23e6e970ed5bf976068d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af73af6e9bfd23e6e970ed5bf976068d4">&#9670;&nbsp;</a></span>stepApplication()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2285,14 +2288,15 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="memname">void Application::stepApplication </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>waitForDeviceInitialisation</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Resume the application until all application threads are stuck in a blocking read operation. </p>
-<p>Works only when the testable mode was enabled. </p>
+<p>Works only when the testable mode was enabled. The optional argument controls whether to wait as well for devices to be completely (re-)initialised. Disabling this behavior allows to test proper response to runtime exceptions. </p>
 
 <p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01068">1068</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-50" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2300,7 +2304,7 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-50-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-50-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_abb8be141c45a20ad4e836ecf82ff9573_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_af73af6e9bfd23e6e970ed5bf976068d4_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <div id="dynsection-51" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2308,7 +2312,7 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-51-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-51-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_abb8be141c45a20ad4e836ecf82ff9573_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_application_af73af6e9bfd23e6e970ed5bf976068d4_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -2342,7 +2346,7 @@ template&lt;typename UserType &gt; </div>
 <p>Internally, a thread-local std::unique_lock&lt;std::mutex&gt; will be created and re-used in subsequent calls within the same thread to this function and to <a class="el" href="class_chimera_t_k_1_1_application.html#a8975837b63d1a93cd91b4a87465995cd" title="Unlock the testable mode mutex for the current thread. ">testableModeUnlock()</a>.</p>
 <p>This function should generally not be used in user code. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01092">1092</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01093">1093</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-52" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-52-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-52-summary" class="dynsummary" style="display:block;">
@@ -2388,7 +2392,7 @@ template&lt;typename UserType &gt; </div>
 <p>Test if the testable mode mutex is locked by the current thread. </p>
 <p>This function should generally not be used in user code. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00140">140</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00142">142</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 <div id="dynsection-54" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-54-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-54-summary" class="dynsummary" style="display:block;">
@@ -2437,7 +2441,7 @@ template&lt;typename UserType &gt; </div>
 <p>Initially the lock will not be owned by the current thread, so the first call to this function will throw an exception (see std::unique_lock::unlock()), unless <a class="el" href="class_chimera_t_k_1_1_application.html#a518f2c85c4d1ec189a5aa3a2d89860bd" title="Lock the testable mode mutex for the current thread. ">testableModeLock()</a> has been called first.</p>
 <p>This function should generally not be used in user code. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01184">1184</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01185">1185</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-56" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-56-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-56-summary" class="dynsummary" style="display:block;">
@@ -2483,7 +2487,7 @@ template&lt;typename UserType &gt; </div>
 <p>Get string holding the name of the current thread. </p>
 <p>This is used e.g. for debugging output of the testable mode and for the internal profiler. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01196">1196</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01197">1197</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-58" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-58-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-58-summary" class="dynsummary" style="display:block;">
@@ -2561,7 +2565,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01224">1224</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01225">1225</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-61" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-61-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-61-summary" class="dynsummary" style="display:block;">
@@ -2634,7 +2638,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00212">212</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00214">214</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2660,7 +2664,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00416">416</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00423">423</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2684,7 +2688,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00413">413</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00420">420</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2710,7 +2714,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00215">215</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00217">217</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2734,7 +2738,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00205">205</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00207">207</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2760,7 +2764,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00407">407</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00414">414</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2784,7 +2788,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00412">412</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00419">419</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2808,7 +2812,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00206">206</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00208">208</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2832,7 +2836,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00208">208</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00210">210</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2856,7 +2860,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00207">207</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00209">209</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2880,7 +2884,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00209">209</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00211">211</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2908,7 +2912,7 @@ template&lt;typename UserType &gt; </div>
 <p>Version number used at application start, e.g. </p>
 <p>to propagate initial values </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00404">404</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00411">411</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2934,7 +2938,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>List of constant variable nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00293">293</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00295">295</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2960,7 +2964,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Counter for how many write() operations have overwritten unread data. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00398">398</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00405">405</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2987,7 +2991,7 @@ template&lt;typename UserType &gt; </div>
 <p>List of variables for which debug output was requested via <a class="el" href="class_chimera_t_k_1_1_application.html#a87520a53f9a635b49aace46f76c0cf07" title="Enable debug output for a given variable. ">enableVariableDebugging()</a>. </p>
 <p>Stored is the unique id of the <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00395">395</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00402">402</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3014,7 +3018,7 @@ template&lt;typename UserType &gt; </div>
 <p>Map of DeviceBackends used by this application. </p>
 <p>The map key is the alias name from the DMAP file </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00307">307</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00309">309</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3040,7 +3044,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>List of DeviceModules. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00310">310</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00312">312</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3066,7 +3070,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Flag if noisy debug output is enabled for the testable mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00345">345</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00352">352</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3092,7 +3096,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Flag whether to warn about unconnected variables or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00348">348</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00355">355</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3118,7 +3122,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Flag whether <a class="el" href="class_chimera_t_k_1_1_application.html#a697d4a47ece6750203eecbff97039773">initialise()</a> has been called already, to make sure it doesn't get called twice. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00322">322</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00324">324</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3144,7 +3148,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>List of InternalModules. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00287">287</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00289">289</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3170,7 +3174,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Instance of <a class="el" href="class_chimera_t_k_1_1_variable_network.html" title="This class describes a network of variables all connected to each other. ">VariableNetwork</a> to indicate an invalid network. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00303">303</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00305">305</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3196,7 +3200,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Life-cycle state of the application. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00401">401</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00408">408</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3222,7 +3226,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>List of variable networks. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00290">290</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00292">292</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3249,7 +3253,7 @@ template&lt;typename UserType &gt; </div>
 <p>Map from ProcessArray uniqueId to the variable ID for control system variables. </p>
 <p>This is required for the <a class="el" href="class_chimera_t_k_1_1_test_facility.html" title="Helper class to facilitate tests of applications based on ApplicationCore. ">TestFacility</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00352">352</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00359">359</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3275,7 +3279,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Flag whether <a class="el" href="class_chimera_t_k_1_1_application.html#a6815195c956c091a6558a316f8fd9976">run()</a> has been called already, to make sure it doesn't get called twice. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00325">325</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00327">327</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3302,7 +3306,7 @@ template&lt;typename UserType &gt; </div>
 <p>Flag if connections should be made in testable mode (i.e. </p>
 <p>the <a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">TestableModeAccessorDecorator</a> is put around all push-type input accessors etc.). </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00315">315</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00317">317</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3329,7 +3333,34 @@ template&lt;typename UserType &gt; </div>
 <p>Semaphore counter used in testable mode to check if application code is finished executing. </p>
 <p>This value may only be accessed while holding the testableMode_mutex. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00342">342</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00344">344</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+
+</div>
+</div>
+<a id="a93f7eaf12768171b9eb216bfd5c1969a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93f7eaf12768171b9eb216bfd5c1969a">&#9670;&nbsp;</a></span>testableMode_deviceInitialisationCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ChimeraTK::Application::testableMode_deviceInitialisationCounter {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Semaphore counter used in testable mode to check if device initialisation is finished executing. </p>
+<p>This value may only be accessed while holding the testableMode_mutex. This counter is a separate counter from testableMode_counter so <a class="el" href="class_chimera_t_k_1_1_application.html#af73af6e9bfd23e6e970ed5bf976068d4" title="Resume the application until all application threads are stuck in a blocking read operation...">stepApplication()</a> can be controlled whether to obey this counter. </p>
+
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00349">349</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3355,7 +3386,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map of unique IDs to flags whether the update mode is <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3bab0f6dfb42fa80caee6825bfecd30f094">UpdateMode::poll</a> (so we do not use the decorator) </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00390">390</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00397">397</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3382,7 +3413,7 @@ template&lt;typename UserType &gt; </div>
 <p>Last thread which successfully obtained the lock for the testable mode. </p>
 <p>This is used to prevent spamming repeating messages if the same thread acquires and releases the lock in a loop without another thread activating in between. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00365">365</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00372">372</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3410,7 +3441,7 @@ template&lt;typename UserType &gt; </div>
 <p>Use only through the lock object obtained through getLockObjectForCurrentThread().</p>
 <p>This member is static, since it should survive destroying an application instance and creating a new one. Otherwise <a class="el" href="class_chimera_t_k_1_1_application.html#aca0e46e006bc223748a3c4056bddc176" title="Obtain the lock object for the testable mode lock for the current thread. ">getTestableModeLockObject()</a> would not work, since it relies on thread_local instances which have to be static. The static storage duration presents no problem in either case, since there can only be one single instance of <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> at a time (see ApplicationBase constructor). </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00337">337</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00339">339</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3436,7 +3467,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map of unique IDs to namess, used along with testableMode_perVarCounter to print sensible information. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00382">382</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00389">389</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3463,7 +3494,7 @@ template&lt;typename UserType &gt; </div>
 <p>Testable mode: like testableMode_counter but broken out for each variable. </p>
 <p>This is not actually used as a semaphore counter but only in case of a detected stall (see testableMode_repeatingMutexOwner) to print a list of variables which still contain unread values. The index of the map is the unique ID of the variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00378">378</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00385">385</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3489,7 +3520,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map of unique IDs to process variables which have been decorated with the <a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">TestableModeAccessorDecorator</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00386">386</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00393">393</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3516,7 +3547,7 @@ template&lt;typename UserType &gt; </div>
 <p>Counter how often the same thread has acquired the testable mode mutex in a row without another thread owning it in between. </p>
 <p>This is an indicator for the test being stalled due to data send through a process variable but not read by the receiver. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00371">371</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00378">378</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3543,7 +3574,7 @@ template&lt;typename UserType &gt; </div>
 <p>Flag which is set by the <a class="el" href="class_chimera_t_k_1_1_test_facility.html" title="Helper class to facilitate tests of applications based on ApplicationCore. ">TestFacility</a> in runApplication() at the beginning. </p>
 <p>This is used to make sure runApplication() is called by the <a class="el" href="class_chimera_t_k_1_1_test_facility.html" title="Helper class to facilitate tests of applications based on ApplicationCore. ">TestFacility</a> and not manually. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00319">319</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00321">321</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3570,7 +3601,7 @@ template&lt;typename UserType &gt; </div>
 <p>Map of trigger consumers to their corresponding TriggerFanOuts. </p>
 <p>Note: the key is the ID (address) of the externalTiggerImpl. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00297">297</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00299">299</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3584,7 +3615,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_application.html">Application</a></li>
-    <li class="footer">Generated on Fri Apr 10 2020 03:53:58 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Apr 15 2020 03:53:56 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

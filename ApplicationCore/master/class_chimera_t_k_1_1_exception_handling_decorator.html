@@ -129,8 +129,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afd84fdd105e01e4333213916f51c5e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85862e6c515291dc28d9d85a4666a9ea"><td class="memItemLeft" align="right" valign="top">TransferFuture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a85862e6c515291dc28d9d85a4666a9ea">doReadTransferAsync</a> () override</td></tr>
 <tr class="separator:a85862e6c515291dc28d9d85a4666a9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d821cc61809f2812faf0e8551d2394a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a6d821cc61809f2812faf0e8551d2394a">doPreWrite</a> () override</td></tr>
-<tr class="separator:a6d821cc61809f2812faf0e8551d2394a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb774d85119f7bbe1985fb645533095"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a0eb774d85119f7bbe1985fb645533095">doPreWrite</a> (TransferType type) override</td></tr>
+<tr class="separator:a0eb774d85119f7bbe1985fb645533095"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28c3c3d51c5e97712bdece9bf9657a73"><td class="memItemLeft" align="right" valign="top">DataValidity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a28c3c3d51c5e97712bdece9bf9657a73">dataValidity</a> () const override</td></tr>
 <tr class="separator:a28c3c3d51c5e97712bdece9bf9657a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76870f06ec721733fcf735d035804137"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a76870f06ec721733fcf735d035804137">interrupt</a> () override</td></tr>
@@ -247,12 +247,12 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00161">161</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00160">160</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 
 </div>
 </div>
-<a id="a6d821cc61809f2812faf0e8551d2394a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d821cc61809f2812faf0e8551d2394a">&#9670;&nbsp;</a></span>doPreWrite()</h2>
+<a id="a0eb774d85119f7bbe1985fb645533095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eb774d85119f7bbe1985fb645533095">&#9670;&nbsp;</a></span>doPreWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +265,8 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html">ChimeraTK::ExceptionHandlingDecorator</a>&lt; UserType &gt;::doPreWrite </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">TransferType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -276,13 +277,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00133">133</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00132">132</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a6d821cc61809f2812faf0e8551d2394a_cgraph.svg" width="478" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a0eb774d85119f7bbe1985fb645533095_cgraph.svg" width="478" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -313,13 +314,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00105">105</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00104">104</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a8a76ef246f4ff5eba0ba9aa3ddbe6c8f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a8a76ef246f4ff5eba0ba9aa3ddbe6c8f_cgraph.svg" width="100%" height="543"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -350,13 +351,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00122">122</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00121">121</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a85862e6c515291dc28d9d85a4666a9ea_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a85862e6c515291dc28d9d85a4666a9ea_cgraph.svg" width="100%" height="543"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -387,13 +388,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00116">116</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00115">115</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_afd84fdd105e01e4333213916f51c5e72_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_afd84fdd105e01e4333213916f51c5e72_cgraph.svg" width="100%" height="543"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -424,13 +425,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00110">110</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00109">109</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a868656cf5b69644e6fb618d124b3460a_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a868656cf5b69644e6fb618d124b3460a_cgraph.svg" width="100%" height="543"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -462,13 +463,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00087">87</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00086">86</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a666085917708684718539d6e0d693565_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_a666085917708684718539d6e0d693565_cgraph.svg" width="100%" height="543"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -500,13 +501,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00096">96</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00095">95</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_aa4580d9d3037766e4c56c69bdef1c830_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_aa4580d9d3037766e4c56c69bdef1c830_cgraph.svg" width="100%" height="543"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -554,7 +555,7 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_aa70a58a3119983a5912b54c7bff03767_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_handling_decorator_aa70a58a3119983a5912b54c7bff03767_cgraph.svg" width="100%" height="543"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -593,7 +594,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00173">173</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00172">172</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -623,7 +624,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00180">180</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_handling_decorator_8cc_source.html#l00179">179</a> of file <a class="el" href="_exception_handling_decorator_8cc_source.html">ExceptionHandlingDecorator.cc</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -822,7 +823,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html">ExceptionHandlingDecorator</a></li>
-    <li class="footer">Generated on Fri Apr 10 2020 03:53:58 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Apr 15 2020 03:53:57 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

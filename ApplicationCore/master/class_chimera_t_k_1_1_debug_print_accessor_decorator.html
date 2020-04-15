@@ -127,14 +127,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a32273f6993538a30c56ab8b41cdb6985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ece95db2c9c386270560e269d988195"><td class="memItemLeft" align="right" valign="top">TransferFuture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html#a3ece95db2c9c386270560e269d988195">doReadTransferAsync</a> () override</td></tr>
 <tr class="separator:a3ece95db2c9c386270560e269d988195"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf9ce3618ebd3a5e27b9d650d0caf64a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html#abf9ce3618ebd3a5e27b9d650d0caf64a">doPreRead</a> () override</td></tr>
-<tr class="separator:abf9ce3618ebd3a5e27b9d650d0caf64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1982d08a355e2618ef61fbae99f20a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html#aa1982d08a355e2618ef61fbae99f20a7">doPostRead</a> () override</td></tr>
-<tr class="separator:aa1982d08a355e2618ef61fbae99f20a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a463a5cb5019acbe74686bd3cc89097"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html#a7a463a5cb5019acbe74686bd3cc89097">doPreWrite</a> () override</td></tr>
-<tr class="separator:a7a463a5cb5019acbe74686bd3cc89097"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4e60e75b2bbe3d28e1fb7db13dc88db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html#ac4e60e75b2bbe3d28e1fb7db13dc88db">doPostWrite</a> () override</td></tr>
-<tr class="separator:ac4e60e75b2bbe3d28e1fb7db13dc88db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c21875f74c2f1618b06e849bf83338b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html#a2c21875f74c2f1618b06e849bf83338b">doPreRead</a> (TransferType type) override</td></tr>
+<tr class="separator:a2c21875f74c2f1618b06e849bf83338b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac917559a3427f49e6d31108df404b2ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html#ac917559a3427f49e6d31108df404b2ab">doPostRead</a> (TransferType type) override</td></tr>
+<tr class="separator:ac917559a3427f49e6d31108df404b2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c23f3012c60a4f42e588a93417fec08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html#a3c23f3012c60a4f42e588a93417fec08">doPreWrite</a> (TransferType type) override</td></tr>
+<tr class="separator:a3c23f3012c60a4f42e588a93417fec08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08729087e7d491c170e8bb21147a44db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html#a08729087e7d491c170e8bb21147a44db">doPostWrite</a> (TransferType type) override</td></tr>
+<tr class="separator:a08729087e7d491c170e8bb21147a44db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -190,8 +190,8 @@ template&lt;typename UserType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa1982d08a355e2618ef61fbae99f20a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1982d08a355e2618ef61fbae99f20a7">&#9670;&nbsp;</a></span>doPostRead()</h2>
+<a id="ac917559a3427f49e6d31108df404b2ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac917559a3427f49e6d31108df404b2ab">&#9670;&nbsp;</a></span>doPostRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +204,8 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html">ChimeraTK::DebugPrintAccessorDecorator</a>&lt; UserType &gt;::doPostRead </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">TransferType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -219,8 +220,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="ac4e60e75b2bbe3d28e1fb7db13dc88db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4e60e75b2bbe3d28e1fb7db13dc88db">&#9670;&nbsp;</a></span>doPostWrite()</h2>
+<a id="a08729087e7d491c170e8bb21147a44db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08729087e7d491c170e8bb21147a44db">&#9670;&nbsp;</a></span>doPostWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,7 +234,8 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html">ChimeraTK::DebugPrintAccessorDecorator</a>&lt; UserType &gt;::doPostWrite </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">TransferType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -248,8 +250,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="abf9ce3618ebd3a5e27b9d650d0caf64a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf9ce3618ebd3a5e27b9d650d0caf64a">&#9670;&nbsp;</a></span>doPreRead()</h2>
+<a id="a2c21875f74c2f1618b06e849bf83338b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c21875f74c2f1618b06e849bf83338b">&#9670;&nbsp;</a></span>doPreRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +264,8 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html">ChimeraTK::DebugPrintAccessorDecorator</a>&lt; UserType &gt;::doPreRead </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">TransferType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -277,8 +280,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="a7a463a5cb5019acbe74686bd3cc89097"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a463a5cb5019acbe74686bd3cc89097">&#9670;&nbsp;</a></span>doPreWrite()</h2>
+<a id="a3c23f3012c60a4f42e588a93417fec08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c23f3012c60a4f42e588a93417fec08">&#9670;&nbsp;</a></span>doPreWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,7 +294,8 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html">ChimeraTK::DebugPrintAccessorDecorator</a>&lt; UserType &gt;::doPreWrite </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">TransferType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -518,7 +522,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html">DebugPrintAccessorDecorator</a></li>
-    <li class="footer">Generated on Fri Apr 10 2020 03:53:58 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Apr 15 2020 03:53:57 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
