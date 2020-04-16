@@ -114,8 +114,8 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_consuming_fan_ou
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9f4077df3bf41714915063897d90b9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_consuming_fan_out.html#ab9f4077df3bf41714915063897d90b9b">ConsumingFanOut</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; feedingImpl)</td></tr>
 <tr class="separator:ab9f4077df3bf41714915063897d90b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31bf06d66e72e452b7d184c52e4eb936"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_consuming_fan_out.html#a31bf06d66e72e452b7d184c52e4eb936">doPostRead</a> (TransferType type) override</td></tr>
-<tr class="separator:a31bf06d66e72e452b7d184c52e4eb936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f9ed3f749e1bfae684435631f007ad7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_consuming_fan_out.html#a8f9ed3f749e1bfae684435631f007ad7">doPostRead</a> (TransferType type, bool hasNewData) override</td></tr>
+<tr class="separator:a8f9ed3f749e1bfae684435631f007ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17df2a36e786db38c7194d9546b93610"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_consuming_fan_out.html#a17df2a36e786db38c7194d9546b93610">interrupt</a> () override</td></tr>
 <tr class="separator:a17df2a36e786db38c7194d9546b93610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_fan_out"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_fan_out')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_fan_out.html">ChimeraTK::FanOut&lt; UserType &gt;</a></td></tr>
@@ -175,8 +175,8 @@ template&lt;typename UserType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a31bf06d66e72e452b7d184c52e4eb936"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31bf06d66e72e452b7d184c52e4eb936">&#9670;&nbsp;</a></span>doPostRead()</h2>
+<a id="a8f9ed3f749e1bfae684435631f007ad7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f9ed3f749e1bfae684435631f007ad7">&#9670;&nbsp;</a></span>doPostRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,8 +190,18 @@ template&lt;typename UserType &gt; </div>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_consuming_fan_out.html">ChimeraTK::ConsumingFanOut</a>&lt; UserType &gt;::doPostRead </td>
           <td>(</td>
           <td class="paramtype">TransferType&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasNewData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -253,7 +263,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_consuming_fan_out.html">ConsumingFanOut</a></li>
-    <li class="footer">Generated on Wed Apr 15 2020 03:53:57 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Apr 16 2020 03:53:57 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -132,8 +132,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae5ca9a1e8641dbacd884531d5c87e66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4c75b615bcf033caccd8f0477c70523"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#aa4c75b615bcf033caccd8f0477c70523">doPreRead</a> (TransferType type) override</td></tr>
 <tr class="separator:aa4c75b615bcf033caccd8f0477c70523"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e347129ec6e7f4d8acfe97c6cce7e26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a7e347129ec6e7f4d8acfe97c6cce7e26">doPostRead</a> (TransferType type) override</td></tr>
-<tr class="separator:a7e347129ec6e7f4d8acfe97c6cce7e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a42be668ace99890fe291b167b7c65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a88a42be668ace99890fe291b167b7c65">doPostRead</a> (TransferType type, bool hasNewData) override</td></tr>
+<tr class="separator:a88a42be668ace99890fe291b167b7c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bcee8ced012c0ef9d01f2c8c9b4e18f"><td class="memItemLeft" align="right" valign="top">ChimeraTK::TransferFuture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a7bcee8ced012c0ef9d01f2c8c9b4e18f">doReadTransferAsync</a> () override</td></tr>
 <tr class="separator:a7bcee8ced012c0ef9d01f2c8c9b4e18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eff4f01c99667b83186a9f84ca3f3f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a7eff4f01c99667b83186a9f84ca3f3f9">doPreWrite</a> (TransferType type) override</td></tr>
@@ -142,8 +142,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac2feec70ec6b64ce2df4c82dbb544ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74929741ef1dce5f736e238eab2623c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a74929741ef1dce5f736e238eab2623c3">doWriteTransferDestructively</a> (ChimeraTK::VersionNumber versionNumber={}) override</td></tr>
 <tr class="separator:a74929741ef1dce5f736e238eab2623c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8890cd0f5210e8439a14e01ad0a12f7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a8890cd0f5210e8439a14e01ad0a12f7e">doPostWrite</a> (TransferType type) override</td></tr>
-<tr class="separator:a8890cd0f5210e8439a14e01ad0a12f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d8a61a17a03ecac85f6086797a0b31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a87d8a61a17a03ecac85f6086797a0b31">doPostWrite</a> (TransferType type, bool dataLost) override</td></tr>
+<tr class="separator:a87d8a61a17a03ecac85f6086797a0b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a176dddfedbea6dbf15b9e3a76d111a11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a176dddfedbea6dbf15b9e3a76d111a11">mayReplaceOther</a> (const boost::shared_ptr&lt; const ChimeraTK::TransferElement &gt; &amp;) const override</td></tr>
 <tr class="separator:a176dddfedbea6dbf15b9e3a76d111a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8091060981212781e3a7fab5e350ac69"><td class="memItemLeft" align="right" valign="top">std::list&lt; boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a8091060981212781e3a7fab5e350ac69">getInternalElements</a> () override</td></tr>
@@ -339,8 +339,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="a7e347129ec6e7f4d8acfe97c6cce7e26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e347129ec6e7f4d8acfe97c6cce7e26">&#9670;&nbsp;</a></span>doPostRead()</h2>
+<a id="a88a42be668ace99890fe291b167b7c65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88a42be668ace99890fe291b167b7c65">&#9670;&nbsp;</a></span>doPostRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -354,8 +354,18 @@ template&lt;typename UserType &gt; </div>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">ChimeraTK::FeedingFanOut</a>&lt; UserType &gt;::doPostRead </td>
           <td>(</td>
           <td class="paramtype">TransferType&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasNewData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -369,8 +379,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="a8890cd0f5210e8439a14e01ad0a12f7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8890cd0f5210e8439a14e01ad0a12f7e">&#9670;&nbsp;</a></span>doPostWrite()</h2>
+<a id="a87d8a61a17a03ecac85f6086797a0b31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d8a61a17a03ecac85f6086797a0b31">&#9670;&nbsp;</a></span>doPostWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -384,8 +394,18 @@ template&lt;typename UserType &gt; </div>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">ChimeraTK::FeedingFanOut</a>&lt; UserType &gt;::doPostWrite </td>
           <td>(</td>
           <td class="paramtype">TransferType&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dataLost</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1131,7 +1151,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">FeedingFanOut</a></li>
-    <li class="footer">Generated on Wed Apr 15 2020 03:53:57 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Apr 16 2020 03:53:57 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
