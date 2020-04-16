@@ -3,8 +3,8 @@ var class_chimera_t_k_1_1_type_changing_decorator =
     [ "TypeChangingDecorator", "class_chimera_t_k_1_1_type_changing_decorator.html#a4dfb50bdaaff8de6b8e372d267fbdc89", null ],
     [ "convertAndCopyFromImpl", "class_chimera_t_k_1_1_type_changing_decorator.html#a02c7f929b0b14e05cccf17b4c9163dc5", null ],
     [ "convertAndCopyToImpl", "class_chimera_t_k_1_1_type_changing_decorator.html#afdf82ffdf3967df7739c475784ba6a07", null ],
-    [ "doPostRead", "class_chimera_t_k_1_1_type_changing_decorator.html#a640ba6e39793631f1822f03583e8fc0d", null ],
-    [ "doPostWrite", "class_chimera_t_k_1_1_type_changing_decorator.html#aba6c9813c0be35a27f01a7d3e5a01369", null ],
+    [ "doPostRead", "class_chimera_t_k_1_1_type_changing_decorator.html#ad3f6ed0a3b4870e1a32a03da550ac96b", null ],
+    [ "doPostWrite", "class_chimera_t_k_1_1_type_changing_decorator.html#a555befac32ea42c1e90130ac8a50e3cc", null ],
     [ "doPreRead", "class_chimera_t_k_1_1_type_changing_decorator.html#a6bcabca59d9f63a8075f012a32feeb08", null ],
     [ "doPreWrite", "class_chimera_t_k_1_1_type_changing_decorator.html#a3a94eae1f8d6af9efaf3f271814fa283", null ],
     [ "mayReplaceOther", "class_chimera_t_k_1_1_type_changing_decorator.html#a7f1776390cf8f0023dc0a7205c19d573", null ]
