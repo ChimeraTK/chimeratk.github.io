@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_subdevice_regist
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_register_accessor__coll__graph.svg" width="100%" height="545"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_register_accessor__coll__graph.svg" width="100%" height="578"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -373,6 +373,12 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:af60ec6ab982e620f5bfdc3b5bbed9928 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af60ec6ab982e620f5bfdc3b5bbed9928">activeFuture</a></td></tr>
 <tr class="memdesc:af60ec6ab982e620f5bfdc3b5bbed9928 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last future returned by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afe0ba112ccb6eb9e556710d1151c1602" title="Implementation version of readTransferAsync(). ">doReadTransferAsync()</a> (valid if hasActiveFuture == true).  <a href="class_chimera_t_k_1_1_transfer_element.html#af60ec6ab982e620f5bfdc3b5bbed9928">More...</a><br /></td></tr>
 <tr class="separator:af60ec6ab982e620f5bfdc3b5bbed9928 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad956a780db8d9b7f303c40cfffab54e6 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad956a780db8d9b7f303c40cfffab54e6">hasSeenException</a> {false}</td></tr>
+<tr class="memdesc:ad956a780db8d9b7f303c40cfffab54e6 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether doXXXTransferYYY() has thrown an exception (which should be rethrown in postXXX()).  <a href="class_chimera_t_k_1_1_transfer_element.html#ad956a780db8d9b7f303c40cfffab54e6">More...</a><br /></td></tr>
+<tr class="separator:ad956a780db8d9b7f303c40cfffab54e6 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f73da83da6fb99a27c3b9d5afe7d5c5 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1runtime__error.html">ChimeraTK::runtime_error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0f73da83da6fb99a27c3b9d5afe7d5c5">activeException</a> {&quot;No exception&quot;}</td></tr>
+<tr class="memdesc:a0f73da83da6fb99a27c3b9d5afe7d5c5 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception to be rethrown in postXXX() in case hasSeenException == true.  <a href="class_chimera_t_k_1_1_transfer_element.html#a0f73da83da6fb99a27c3b9d5afe7d5c5">More...</a><br /></td></tr>
+<tr class="separator:a0f73da83da6fb99a27c3b9d5afe7d5c5 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -521,7 +527,10 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a71aa608f151dbe46289a6214dd5ece4b" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. </p>
 <p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a71aa608f151dbe46289a6214dd5ece4b" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
-<p>No actual communication may be done. Hence, no <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown. </p>
+<p>No actual communication may be done. Hence, no <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown.</p>
+<p>Notes for backend implementations:</p><ul>
+<li>If the flag hasNewData is false, the user buffer must stay unaltered. This is true also if the backend did not throw any exception and did not return false in the doReadTransfer...() call. The flag is also controlled by the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> and will be set to false, if an exception has been seen on any other transfer. </li>
+</ul>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7">ChimeraTK::TransferElement</a>.</p>
 
@@ -569,7 +578,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a1ce7447bb8e50c3da38bc2ae3aa185b3">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00087">87</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00088">88</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -637,7 +646,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a8352fb4e25dc5dc64f7044ee5d34fc59">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00080">80</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00081">81</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -837,7 +846,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a93d2e84da7325bb205fb4bc51e660aa4">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00109">109</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00110">110</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -870,7 +879,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a36b8f2cad449056d909560e371c78229">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00113">113</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00114">114</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -905,7 +914,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a561932e1a87dcc57cb3525a9980bdf49">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00119">119</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00120">120</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -972,7 +981,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00101">101</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00102">102</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -1004,7 +1013,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00097">97</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00098">98</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -1036,7 +1045,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00105">105</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00106">106</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -1071,7 +1080,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#acfe89e1cf7c5d45797fd062b9faaea6a">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00091">91</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00092">92</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1113,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a791a4902b649e859fbadea20cc90ede2">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00125">125</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_register_accessor_8cc_source.html#l00126">126</a> of file <a class="el" href="_subdevice_register_accessor_8cc_source.html">SubdeviceRegisterAccessor.cc</a>.</p>
 
 </div>
 </div>
@@ -1295,7 +1304,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html">SubdeviceRegisterAccessor</a></li>
-    <li class="footer">Generated on Wed Apr 15 2020 03:53:10 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Apr 16 2020 03:53:09 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

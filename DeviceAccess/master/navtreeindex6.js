@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"class_chimera_t_k_1_1_transfer_group.html#aea5883f974de2d9b2cd5f45a162840a8":[16,0,0,84,1],
+"class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88":[16,0,0,84,6],
 "class_chimera_t_k_1_1_two_d_register_accessor.html":[16,0,0,85],
 "class_chimera_t_k_1_1_two_d_register_accessor.html#a08c3f97d462098d199f42eb9f9c98fb7":[16,0,0,85,2],
 "class_chimera_t_k_1_1_two_d_register_accessor.html#a15621e6c92fdd4d6078a4b87323fbef4":[16,0,0,85,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a4209c10c61a2ea367ce7ae1ebaf03ed0":[17,0,1,2,0,2,18],
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a44fa2ca32ff22e5eb7fa28ef39e50780":[17,0,1,2,0,2,6],
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a4ceeca7cc9bab8b697f8a49f79037010":[17,0,1,2,0,2,5],
-"device__backends_2pcie_2include_2pciedev__io_8h.html#a6892d9a42c85abdf25bf5998359ba61b":[17,0,1,2,0,2,23],
-"device__backends_2pcie_2include_2pciedev__io_8h.html#a6df179f336e65ab5b64801ca0f9818d2":[17,0,1,2,0,2,15],
-"device__backends_2pcie_2include_2pciedev__io_8h.html#a7473bbc92af15efd739f5c06409d8bc4":[17,0,1,2,0,2,9]
+"device__backends_2pcie_2include_2pciedev__io_8h.html#a6892d9a42c85abdf25bf5998359ba61b":[17,0,1,2,0,2,23]
 };

@@ -61,6 +61,8 @@ var class_chimera_t_k_1_1_transfer_element =
     [ "_id", "class_chimera_t_k_1_1_transfer_element.html#a1a42fc668a7d9243dd024729737f35a7", null ],
     [ "_name", "class_chimera_t_k_1_1_transfer_element.html#a13235d15a13bfc43764e464f1b6fe50d", null ],
     [ "_unit", "class_chimera_t_k_1_1_transfer_element.html#a8fffb069722f43530cecbcaa40b7c670", null ],
+    [ "activeException", "class_chimera_t_k_1_1_transfer_element.html#a0f73da83da6fb99a27c3b9d5afe7d5c5", null ],
     [ "activeFuture", "class_chimera_t_k_1_1_transfer_element.html#af60ec6ab982e620f5bfdc3b5bbed9928", null ],
+    [ "hasSeenException", "class_chimera_t_k_1_1_transfer_element.html#ad956a780db8d9b7f303c40cfffab54e6", null ],
     [ "isInTransferGroup", "class_chimera_t_k_1_1_transfer_element.html#aa5fafaaed44dd2c55bcd8a24a99e3e86", null ]
 ];

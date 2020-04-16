@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"struct_chimera_t_k_1_1_sdm.html#aec473660a07053d91c0d99ff3cdab21e":[16,0,0,73,1],
+"struct_chimera_t_k_1_1_sdm.html#af45f7ca4c5663a3adeff975c4cbfc2fa":[16,0,0,73,6],
 "struct_chimera_t_k_1_1_thread_informer_mutex.html":[16,0,0,79],
 "struct_chimera_t_k_1_1_thread_informer_mutex.html#a577ee1e0f70212e916365c9475428c84":[16,0,0,79,0],
 "struct_chimera_t_k_1_1_thread_informer_mutex.html#a8160152b415ddd8d3986b292616b7ff0":[16,0,0,79,1],

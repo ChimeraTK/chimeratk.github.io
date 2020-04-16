@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"device__backends_2pcie_2include_2pciedev__io_8h.html#a6df179f336e65ab5b64801ca0f9818d2":[17,0,1,2,0,2,15],
+"device__backends_2pcie_2include_2pciedev__io_8h.html#a7473bbc92af15efd739f5c06409d8bc4":[17,0,1,2,0,2,9],
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a795326190b88aa344d83d5493642a274":[17,0,1,2,0,2,35],
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a7f201c103377c8f3c84f10576e63e7af":[17,0,1,2,0,2,7],
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a80b72af01345fd80ba7df7085fe5271b":[17,0,1,2,0,2,25],
@@ -117,8 +119,8 @@ var NAVTREEINDEX7 =
 "fileparsers_2include_2predicates_8h.html":[17,0,4,0,7],
 "fileparsers_2include_2predicates_8h_source.html":[17,0,4,0,7],
 "files.html":[17,0],
-"functions.html":[16,3,0,0],
 "functions.html":[16,3,0],
+"functions.html":[16,3,0,0],
 "functions_0x7e.html":[16,3,0,22],
 "functions_a.html":[16,3,0,1],
 "functions_b.html":[16,3,0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "mtca4u__compatibility__headers_2_forward_declarations_8h.html":[17,0,5,20],
 "mtca4u__compatibility__headers_2_forward_declarations_8h_source.html":[17,0,5,20],
 "mtca4u__compatibility__headers_2_l_n_m_backend_channel_accessor_8h.html":[17,0,5,22],
-"mtca4u__compatibility__headers_2_l_n_m_backend_channel_accessor_8h_source.html":[17,0,5,22],
-"mtca4u__compatibility__headers_2_l_n_m_backend_register_info_8h.html":[17,0,5,23],
-"mtca4u__compatibility__headers_2_l_n_m_backend_register_info_8h_source.html":[17,0,5,23]
+"mtca4u__compatibility__headers_2_l_n_m_backend_channel_accessor_8h_source.html":[17,0,5,22]
 };

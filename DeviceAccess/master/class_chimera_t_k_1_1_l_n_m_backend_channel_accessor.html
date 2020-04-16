@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_l_n_m_backend_ch
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor__coll__graph.svg" width="100%" height="515"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor__coll__graph.svg" width="100%" height="562"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -371,6 +371,12 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:af60ec6ab982e620f5bfdc3b5bbed9928 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_future.html">TransferFuture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af60ec6ab982e620f5bfdc3b5bbed9928">activeFuture</a></td></tr>
 <tr class="memdesc:af60ec6ab982e620f5bfdc3b5bbed9928 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last future returned by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afe0ba112ccb6eb9e556710d1151c1602" title="Implementation version of readTransferAsync(). ">doReadTransferAsync()</a> (valid if hasActiveFuture == true).  <a href="class_chimera_t_k_1_1_transfer_element.html#af60ec6ab982e620f5bfdc3b5bbed9928">More...</a><br /></td></tr>
 <tr class="separator:af60ec6ab982e620f5bfdc3b5bbed9928 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad956a780db8d9b7f303c40cfffab54e6 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad956a780db8d9b7f303c40cfffab54e6">hasSeenException</a> {false}</td></tr>
+<tr class="memdesc:ad956a780db8d9b7f303c40cfffab54e6 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether doXXXTransferYYY() has thrown an exception (which should be rethrown in postXXX()).  <a href="class_chimera_t_k_1_1_transfer_element.html#ad956a780db8d9b7f303c40cfffab54e6">More...</a><br /></td></tr>
+<tr class="separator:ad956a780db8d9b7f303c40cfffab54e6 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f73da83da6fb99a27c3b9d5afe7d5c5 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1runtime__error.html">ChimeraTK::runtime_error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0f73da83da6fb99a27c3b9d5afe7d5c5">activeException</a> {&quot;No exception&quot;}</td></tr>
+<tr class="memdesc:a0f73da83da6fb99a27c3b9d5afe7d5c5 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception to be rethrown in postXXX() in case hasSeenException == true.  <a href="class_chimera_t_k_1_1_transfer_element.html#a0f73da83da6fb99a27c3b9d5afe7d5c5">More...</a><br /></td></tr>
+<tr class="separator:a0f73da83da6fb99a27c3b9d5afe7d5c5 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -532,7 +538,10 @@ template&lt;typename UserType &gt; </div>
 
 <p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a71aa608f151dbe46289a6214dd5ece4b" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. </p>
 <p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a71aa608f151dbe46289a6214dd5ece4b" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
-<p>No actual communication may be done. Hence, no <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown. </p>
+<p>No actual communication may be done. Hence, no <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown.</p>
+<p>Notes for backend implementations:</p><ul>
+<li>If the flag hasNewData is false, the user buffer must stay unaltered. This is true also if the backend did not throw any exception and did not return false in the doReadTransfer...() call. The flag is also controlled by the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> and will be set to false, if an exception has been seen on any other transfer. </li>
+</ul>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7">ChimeraTK::TransferElement</a>.</p>
 
@@ -782,7 +791,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a93d2e84da7325bb205fb4bc51e660aa4">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00117">117</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00118">118</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -817,7 +826,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a36b8f2cad449056d909560e371c78229">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00134">134</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00135">135</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -854,7 +863,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a561932e1a87dcc57cb3525a9980bdf49">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00138">138</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00139">139</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -891,7 +900,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a97ff27579d6a52ef1c5c629c316bf53e">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00119">119</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00120">120</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -925,7 +934,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00113">113</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00114">114</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -959,7 +968,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00111">111</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00112">112</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -993,7 +1002,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00115">115</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00116">116</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1030,7 +1039,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#acfe89e1cf7c5d45797fd062b9faaea6a">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00103">103</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00104">104</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1065,7 +1074,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a791a4902b649e859fbadea20cc90ede2">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00144">144</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00145">145</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -1102,7 +1111,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>pointer to underlying accessor </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00123">123</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00124">124</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1130,7 +1139,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>backend device </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00129">129</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00130">130</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1167,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>register information </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00132">132</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00133">133</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1186,7 +1195,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>register and module name </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00126">126</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html#l00127">127</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h_source.html">LNMBackendChannelAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1199,7 +1208,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html">LNMBackendChannelAccessor</a></li>
-    <li class="footer">Generated on Wed Apr 15 2020 03:53:09 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Apr 16 2020 03:53:09 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
