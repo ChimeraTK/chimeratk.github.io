@@ -11,5 +11,6 @@ var annotated_dup =
     [ "device_ioctrl_dma", "structdevice__ioctrl__dma.html", "structdevice__ioctrl__dma" ],
     [ "device_ioctrl_time", "structdevice__ioctrl__time.html", "structdevice__ioctrl__time" ],
     [ "device_rw", "structdevice__rw.html", "structdevice__rw" ],
-    [ "ExampleBackend", "class_example_backend.html", "class_example_backend" ]
+    [ "ExampleBackend", "class_example_backend.html", "class_example_backend" ],
+    [ "UnifiedBackendTest", "class_unified_backend_test.html", "class_unified_backend_test" ]
 ];

@@ -75,6 +75,7 @@ var searchData=
   ['round_5fstyle',['round_style',['../struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html#af893a0a797fa5604c3e3b2b3690a217a',1,'ChimeraTK::RoundingRangeCheckingDataConverter::Round']]],
   ['roundingrangecheckingdataconverter',['RoundingRangeCheckingDataConverter',['../struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html',1,'ChimeraTK']]],
   ['rsrvd_5frw',['rsrvd_rw',['../structdevice__rw.html#ad00399557d63fd24a5301204a7631c52',1,'device_rw']]],
+  ['runtests',['runTests',['../class_unified_backend_test.html#a09a69d6aaa80ba20695b010bb91de958',1,'UnifiedBackendTest']]],
   ['runtime_5ferror',['runtime_error',['../class_chimera_t_k_1_1runtime__error.html',1,'ChimeraTK::runtime_error'],['../class_chimera_t_k_1_1runtime__error.html#a1787cc6ae81bd4112878463a5a477603',1,'ChimeraTK::runtime_error::runtime_error()']]],
   ['runwritecallbackfunctionsforaddressrange',['runWriteCallbackFunctionsForAddressRange',['../class_chimera_t_k_1_1_dummy_backend.html#ad604f70e94234f037cd01853b0765ce4',1,'ChimeraTK::DummyBackend']]],
   ['rw_5fd16',['RW_D16',['../device__backends_2pcie_2include_2pciedev__io_8h.html#abc50dc315c651c129149ea8f543e23ea',1,'pciedev_io.h']]],
