@@ -254,6 +254,7 @@ var hierarchy =
         [ "ChimeraTK::VariableNetworkGraphDumpingVisitor", "class_chimera_t_k_1_1_variable_network_graph_dumping_visitor.html", null ]
       ] ]
     ] ],
+    [ "ChimeraTK::RecoveryHelper", "struct_chimera_t_k_1_1_recovery_helper.html", null ],
     [ "ScalarRegisterAccessor", null, [
       [ "ChimeraTK::ScalarAccessor< UserType >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
       [ "ChimeraTK::ScalarAccessor< double >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],

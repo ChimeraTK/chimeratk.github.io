@@ -6,7 +6,7 @@ var class_chimera_t_k_1_1_device_module =
     [ "~DeviceModule", "class_chimera_t_k_1_1_device_module.html#a3b3c82b4e2bb69de77e4793764835922", null ],
     [ "DeviceModule", "class_chimera_t_k_1_1_device_module.html#ac981bac0d95b66bfe1f933fc21ace28c", null ],
     [ "addInitialisationHandler", "class_chimera_t_k_1_1_device_module.html#ab30bf1b235913143d45bb5da7d84052c", null ],
-    [ "addRecoveryAccessor", "class_chimera_t_k_1_1_device_module.html#a20002fcf65d413b83e16fb2d578680d6", null ],
+    [ "addRecoveryAccessor", "class_chimera_t_k_1_1_device_module.html#adc36415aff0aeb27621ade30f73d07b8", null ],
     [ "connectTo", "class_chimera_t_k_1_1_device_module.html#a9f8221a93d4b964e0daf9b00e81b450b", null ],
     [ "decrementDataFaultCounter", "class_chimera_t_k_1_1_device_module.html#a674ce21caf7c5fad16ecfa054d66e9a2", null ],
     [ "decrementExceptionCounter", "class_chimera_t_k_1_1_device_module.html#ab39dca139d903e079b3e0c00b92a7f4d", null ],
@@ -53,9 +53,9 @@ var class_chimera_t_k_1_1_device_module =
     [ "moduleThread", "class_chimera_t_k_1_1_device_module.html#ad60c1bb16b26f8cbfc441d755bffc0fe", null ],
     [ "owner", "class_chimera_t_k_1_1_device_module.html#acc495fb95e532c24d54422955df7be78", null ],
     [ "proxies", "class_chimera_t_k_1_1_device_module.html#a7428186cbfbb92002fc80b863de786f6", null ],
+    [ "recoveryHelpers", "class_chimera_t_k_1_1_device_module.html#aa5e37e4eeac6bf7ee83c5043e9fd9545", null ],
     [ "recoverySharedMutex", "class_chimera_t_k_1_1_device_module.html#a73fd93754d70b2a35a37e94bca3242a3", null ],
     [ "registerNamePrefix", "class_chimera_t_k_1_1_device_module.html#a3bd68002fced1ba4049ee2e798d7d26d", null ],
     [ "virtualisedModuleFromCatalog", "class_chimera_t_k_1_1_device_module.html#a6278854315239292e1143979799af854", null ],
-    [ "virtualisedModuleFromCatalog_isValid", "class_chimera_t_k_1_1_device_module.html#a8100399439fb611a1df16093c2aac7fa", null ],
-    [ "writeRecoveryOpen", "class_chimera_t_k_1_1_device_module.html#accf9d83766a0503e4118aeeae0aec36e", null ]
+    [ "virtualisedModuleFromCatalog_isValid", "class_chimera_t_k_1_1_device_module.html#a8100399439fb611a1df16093c2aac7fa", null ]
 ];

@@ -231,19 +231,19 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <p>All points are also covered by <a class="el" href="exception_handling_design.html">Technical specification: Exception Handling Design</a>.</p>
 <ul>
 <li>Takes part in 6.a:<ul>
-<li><code><a class="el" href="class_chimera_t_k_1_1_device_module.html#accf9d83766a0503e4118aeeae0aec36e" title="List of TransferElements to be written after the device has been recovered. ">ChimeraTK::DeviceModule::writeRecoveryOpen</a></code> [tbd: new name for the list] is a list of accessors to be written after the device is opened/recovered.</li>
+<li><code>ChimeraTK::DeviceModule::writeRecoveryOpen</code> [tbd: new name for the list] is a list of accessors to be written after the device is opened/recovered.</li>
 </ul>
 </li>
 <li>Takes part in 6.b:<ul>
 <li>Initial values are being read from the device by other entities, but these must be blocked until the DeviceModule wakes them up after the device has been opened and initialised. This uses the same mechanism as for blocking read operations during recovery.</li>
 </ul>
 </li>
-<li>Needs to implement 10.b, done through <code><a class="el" href="class_chimera_t_k_1_1_device_module.html#accf9d83766a0503e4118aeeae0aec36e" title="List of TransferElements to be written after the device has been recovered. ">ChimeraTK::DeviceModule::writeRecoveryOpen</a></code> -&gt; already covered by first point.</li>
+<li>Needs to implement 10.b, done through <code>ChimeraTK::DeviceModule::writeRecoveryOpen</code> -&gt; already covered by first point.</li>
 </ul>
 <h3>ExceptionHandlingDecorator</h3>
 <ul>
 <li>Must implement part of 6.a/7.c/9.d/10.b: Provide function which allows to write without blocking in case of an unavailable device:<ul>
-<li>The list <code><a class="el" href="class_chimera_t_k_1_1_device_module.html#accf9d83766a0503e4118aeeae0aec36e" title="List of TransferElements to be written after the device has been recovered. ">ChimeraTK::DeviceModule::writeRecoveryOpen</a></code> [tbd: new name for the list] is filled with the "recovery accessor" (a "copy" of the original accessor, created by <code><a class="el" href="class_chimera_t_k_1_1_application.html#ace062becb6e35520147524dfec914a10" title="Perform the actual connection of an accessor to a device register. ">ChimeraTK::Application::createDeviceVariable()</a></code>). This accessor allows the restoration of the last known value of a register after recovery from an exception by the DeviceModule. See also <a class="el" href="exception_handling_design.html">Technical specification: Exception Handling Design</a>.</li>
+<li>The list <code>ChimeraTK::DeviceModule::writeRecoveryOpen</code> [tbd: new name for the list] is filled with the "recovery accessor" (a "copy" of the original accessor, created by <code><a class="el" href="class_chimera_t_k_1_1_application.html#ace062becb6e35520147524dfec914a10" title="Perform the actual connection of an accessor to a device register. ">ChimeraTK::Application::createDeviceVariable()</a></code>). This accessor allows the restoration of the last known value of a register after recovery from an exception by the DeviceModule. See also <a class="el" href="exception_handling_design.html">Technical specification: Exception Handling Design</a>.</li>
 <li>When a write happens while the device is still unavailable (not opened or initialisation still in progress), the write should not block (in contrast to normal writes in a <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ChimeraTK::ApplicationModule::mainLoop()</a></code>).</li>
 <li>The "recovery accessor" is also used in this case to defer the write operation until the device becomes available.</li>
 <li>The actual write is then performed asynchronously by the <code><a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">ChimeraTK::DeviceModule</a></code>.</li>
@@ -354,7 +354,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Thu Apr 16 2020 03:53:57 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Apr 18 2020 03:53:33 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

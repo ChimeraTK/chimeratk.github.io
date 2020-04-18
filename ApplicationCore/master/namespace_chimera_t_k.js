@@ -54,6 +54,7 @@ var namespace_chimera_t_k =
     [ "RangeMonitor", "struct_chimera_t_k_1_1_range_monitor.html", "struct_chimera_t_k_1_1_range_monitor" ],
     [ "ReadBitMask", "struct_chimera_t_k_1_1_read_bit_mask.html", "struct_chimera_t_k_1_1_read_bit_mask" ],
     [ "ReadSplitArrayModule", "struct_chimera_t_k_1_1_read_split_array_module.html", "struct_chimera_t_k_1_1_read_split_array_module" ],
+    [ "RecoveryHelper", "struct_chimera_t_k_1_1_recovery_helper.html", "struct_chimera_t_k_1_1_recovery_helper" ],
     [ "ScalarAccessor", "class_chimera_t_k_1_1_scalar_accessor.html", "class_chimera_t_k_1_1_scalar_accessor" ],
     [ "ScalarOutput", "struct_chimera_t_k_1_1_scalar_output.html", "struct_chimera_t_k_1_1_scalar_output" ],
     [ "ScalarOutputPushRB", "struct_chimera_t_k_1_1_scalar_output_push_r_b.html", "struct_chimera_t_k_1_1_scalar_output_push_r_b" ],

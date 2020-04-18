@@ -51,6 +51,7 @@ var searchData=
   ['timerdummyregisteraccessor',['TimerDummyRegisterAccessor',['../class_timer_dummy_register_accessor.html',1,'TimerDummyRegisterAccessor&lt; UserType &gt;'],['../class_timer_dummy_register_accessor.html#a5f4cc6d59d4216ee26864394223c46e6',1,'TimerDummyRegisterAccessor::TimerDummyRegisterAccessor()']]],
   ['timestamp',['timeStamp',['../struct_chimera_t_k_1_1history_1_1_history_entry.html#ad46bdb2e96e023936d9f08b0d50de31d',1,'ChimeraTK::history::HistoryEntry']]],
   ['todo_20list',['Todo List',['../todo.html',1,'']]],
+  ['transferallowed',['transferAllowed',['../class_chimera_t_k_1_1_exception_handling_decorator.html#ae74fc6e07504eac79a793789cb948ab9',1,'ChimeraTK::ExceptionHandlingDecorator']]],
   ['transferfuturewaitcallback',['transferFutureWaitCallback',['../class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#adbf22acfdff094a4dc193b2cc5ae897e',1,'ChimeraTK::TestableModeAccessorDecorator']]],
   ['transfergroup',['transferGroup',['../class_chimera_t_k_1_1_trigger_fan_out.html#a8fd27fe8155aa8aceef11582611ce37b',1,'ChimeraTK::TriggerFanOut']]],
   ['tree',['tree',['../namespacevariable_houseold_to_wiki_table.html#acd8669582d3feb47a80bc1d08c383992',1,'variableHouseoldToWikiTable']]],

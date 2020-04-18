@@ -27,6 +27,7 @@ var searchData=
   ['_5fparametertags',['_parameterTags',['../struct_chimera_t_k_1_1_status_monitor.html#a73e6bb107b857c48d7bb5e516dcdc197',1,'ChimeraTK::StatusMonitor']]],
   ['_5fprocessed',['_processed',['../struct_chimera_t_k_1_1_functor_fill.html#a1600638b23003723680ebdc19a590294',1,'ChimeraTK::FunctorFill::_processed()'],['../struct_chimera_t_k_1_1_array_functor_fill.html#a55094377c76ced52ce3e2469d3ac902b',1,'ChimeraTK::ArrayFunctorFill::_processed()']]],
   ['_5frecoveryaccessor',['_recoveryAccessor',['../class_chimera_t_k_1_1_exception_handling_decorator.html#adb8931d7eca76758f0de9835af4f0148',1,'ChimeraTK::ExceptionHandlingDecorator']]],
+  ['_5frecoveryhelper',['_recoveryHelper',['../class_chimera_t_k_1_1_exception_handling_decorator.html#a1ad91648a84895edeb2b344ca13f479f',1,'ChimeraTK::ExceptionHandlingDecorator']]],
   ['_5freturnchannelslave',['_returnChannelSlave',['../class_chimera_t_k_1_1_threaded_fan_out_with_return.html#a6f12921767add9b501616acabbbea4e4',1,'ChimeraTK::ThreadedFanOutWithReturn']]],
   ['_5freturnslave',['_returnSlave',['../class_chimera_t_k_1_1_feeding_fan_out.html#a1ea17f80b08cd42ea1967ad095cef30d',1,'ChimeraTK::FeedingFanOut']]],
   ['_5fstartversion',['_startVersion',['../class_chimera_t_k_1_1_application.html#a811e44b86e02723eb7716944f241db56',1,'ChimeraTK::Application']]],

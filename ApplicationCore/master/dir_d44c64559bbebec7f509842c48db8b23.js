@@ -69,6 +69,9 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "Profiler", "class_chimera_t_k_1_1_profiler.html", "class_chimera_t_k_1_1_profiler" ],
       [ "ThreadData", "class_chimera_t_k_1_1_profiler_1_1_thread_data.html", "class_chimera_t_k_1_1_profiler_1_1_thread_data" ]
     ] ],
+    [ "RecoveryHelper.h", "_recovery_helper_8h.html", [
+      [ "RecoveryHelper", "struct_chimera_t_k_1_1_recovery_helper.html", "struct_chimera_t_k_1_1_recovery_helper" ]
+    ] ],
     [ "ScalarAccessor.h", "_scalar_accessor_8h.html", [
       [ "ScalarAccessor", "class_chimera_t_k_1_1_scalar_accessor.html", "class_chimera_t_k_1_1_scalar_accessor" ],
       [ "ScalarPushInput", "struct_chimera_t_k_1_1_scalar_push_input.html", "struct_chimera_t_k_1_1_scalar_push_input" ],

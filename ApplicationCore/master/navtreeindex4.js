@@ -1,5 +1,9 @@
 var NAVTREEINDEX4 =
 {
+"demo_app2a_8cc_source.html":[15,0,2,0],
+"demo_app2c_8cc.html":[15,0,3,0],
+"demo_app2c_8cc_source.html":[15,0,3,0],
+"demo_app3_8cc.html":[15,0,4,0],
 "demo_app3_8cc_source.html":[15,0,4,0],
 "demo_app_8cc.html":[15,0,0,0],
 "demo_app_8cc.html#a1dad450a66409eb5903a9b625fff1b2e":[15,0,0,0,4],
@@ -59,8 +63,8 @@ var NAVTREEINDEX4 =
 "functions_enum.html":[14,3,4],
 "functions_eval.html":[14,3,5],
 "functions_f.html":[14,3,0,6],
-"functions_func.html":[14,3,1],
 "functions_func.html":[14,3,1,0],
+"functions_func.html":[14,3,1],
 "functions_func_0x7e.html":[14,3,1,21],
 "functions_func_b.html":[14,3,1,1],
 "functions_func_c.html":[14,3,1,2],
@@ -98,8 +102,8 @@ var NAVTREEINDEX4 =
 "functions_type.html":[14,3,3],
 "functions_u.html":[14,3,0,19],
 "functions_v.html":[14,3,0,20],
-"functions_vars.html":[14,3,2],
 "functions_vars.html":[14,3,2,0],
+"functions_vars.html":[14,3,2],
 "functions_vars_a.html":[14,3,2,1],
 "functions_vars_b.html":[14,3,2,2],
 "functions_vars_c.html":[14,3,2,3],
@@ -132,8 +136,8 @@ var NAVTREEINDEX4 =
 "index.html":[],
 "loggingdoc.html":[1],
 "loggingdoc.html#loggingintro":[1,0],
-"namespace_chimera_t_k.html":[14,0,0],
 "namespace_chimera_t_k.html":[13,0,0],
+"namespace_chimera_t_k.html":[14,0,0],
 "namespace_chimera_t_k_1_1history.html":[14,0,0,0],
 "namespace_chimera_t_k_1_1history.html":[13,0,0,0],
 "namespacelogging.html":[13,0,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX4 =
 "struct_chimera_t_k_1_1_config_reader_1_1_var.html#abed95dec950c3af9ff90c26d903dc304":[14,0,0,16,1,2],
 "struct_chimera_t_k_1_1_const_multiplier.html":[14,0,0,18],
 "struct_chimera_t_k_1_1_const_multiplier.html#a3e5859fe08a0242f167a692d2388a882":[14,0,0,18,2],
-"struct_chimera_t_k_1_1_const_multiplier.html#a81805cb4d79cfab1ee53692727e5bc65":[14,0,0,18,3],
-"struct_chimera_t_k_1_1_const_multiplier.html#a8eecbb269915d10f40dfb12b16ffafcc":[14,0,0,18,4],
-"struct_chimera_t_k_1_1_const_multiplier.html#afbbfc242679a44a274b8e43b3fcbe135":[14,0,0,18,1],
-"struct_chimera_t_k_1_1_const_multiplier.html#afeab5a29eb04a576a012a09f3ac2aaa7":[14,0,0,18,0],
-"struct_chimera_t_k_1_1_data_loss_counter.html":[14,0,0,21]
+"struct_chimera_t_k_1_1_const_multiplier.html#a81805cb4d79cfab1ee53692727e5bc65":[14,0,0,18,3]
 };
