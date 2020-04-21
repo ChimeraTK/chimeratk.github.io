@@ -3,6 +3,7 @@ var searchData=
   ['h',['h',['../namespaceoven__sim.html#af9ddf2cf12f64d5b20c57a334ed45db7',1,'oven_sim']]],
   ['handleexception',['handleException',['../class_chimera_t_k_1_1_device_module.html#ab388c8a6e152379643f96c8fb945d3a3',1,'ChimeraTK::DeviceModule']]],
   ['hasapplicationconsumer',['hasApplicationConsumer',['../class_chimera_t_k_1_1_variable_network.html#a4e5cf4b79f5fd515b8486e48b53a1b04',1,'ChimeraTK::VariableNetwork']]],
+  ['hasexception',['hasException',['../struct_chimera_t_k_1_1_runtime_error_collector.html#af8d32ef6ea41ce2ffd3f52529e0a460f',1,'ChimeraTK::RuntimeErrorCollector']]],
   ['hasexternaltrigger',['hasExternalTrigger',['../class_chimera_t_k_1_1_variable_network_node.html#afae6ca8ae50cc893982b51b9accd45b6',1,'ChimeraTK::VariableNetworkNode']]],
   ['hasfeedingnode',['hasFeedingNode',['../class_chimera_t_k_1_1_variable_network.html#a3ff7de44b891648f6379e357090ef9e2',1,'ChimeraTK::VariableNetwork']]],
   ['hasimplementation',['hasImplementation',['../class_chimera_t_k_1_1_variable_network_node.html#a9133f59abf1a4c9553d11695cbbca079',1,'ChimeraTK::VariableNetworkNode']]],

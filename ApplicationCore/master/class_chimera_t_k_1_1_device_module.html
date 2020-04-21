@@ -671,7 +671,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The handler function is called from the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> thread (not from the thread with the accessor that threw the exception). It is handed a pointer to the instance of the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> where the handler was registered. The handler function may throw a ChimeraTK::runtime_error, so you don't have to catch errors thrown when accessing the Device inside the handler. After a handler has thrown an exception, the following handlers are not called. The <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> will wait until the Device reports isFunctional() again and retry. The exception is reported to other modules and the control system.</p>
 <p>Notice: Especially in network based devices which do not hold a permanent connection, it is not always possible to predict whether the next read()/write() will succeed. In this case the Device will always report isFunctional() and one just has to retry. In this case the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> will start the initialisation sequence every 500 ms. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00475">475</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00485">485</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 
 </div>
 </div>
@@ -694,7 +694,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Add a TransferElement to the list DeviceModule::writeRecoveryOpen. </p>
 <p>This list will be written during a recovery, after the constant accessors DeviceModule::writeAfterOpen are written. This is locked by a unique_lock. You can get a shared_lock with <a class="el" href="class_chimera_t_k_1_1_device_module.html#a2e4743eb941b949db66d5a309172a62d" title="Returns a shared lock for the DeviceModule::recoverySharedMutex. ">getRecoverySharedLock()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00481">481</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00491">491</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -855,7 +855,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_module.html#a9b3536e232d1163debcdca29279191e2">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00460">460</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00470">470</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -1015,7 +1015,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns a shared lock for the <a class="el" href="class_chimera_t_k_1_1_device_module.html#a73fd93754d70b2a35a37e94bca3242a3" title="Mutex for writing the DeviceModule::writeRecoveryOpen. ">DeviceModule::recoverySharedMutex</a>. </p>
 <p>This locks writing the list DeviceModule::writeRecoveryOpen, during a recovery. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00485">485</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00495">495</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -1053,7 +1053,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This functions tries to open the device and set the deviceError. </p>
 <p>Once done it notifies the waiting thread(s). The function is running an endless loop inside its own thread (moduleThread). </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00276">276</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00282">282</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -1155,7 +1155,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Notify all condition variables that are waiting inside reportExeption(). </p>
 <p>This is called from other threads hosting accessors. You must call a boost::thread::terminate() on the thread running the accessor, then call <a class="el" href="class_chimera_t_k_1_1_device_module.html#a89bd7b4a2ab5f278853f9d59d1bf177c" title="Notify all condition variables that are waiting inside reportExeption(). ">DeviceModule::notify()</a> to wake up reportException, which will detect the interruption and return. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00479">479</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00489">489</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -1400,7 +1400,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00423">423</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00428">428</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -1478,7 +1478,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_module.html#a998f98d99bde4ca7baebb4eaf595a983">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00440">440</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00450">450</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-18-summary" class="dynsummary" style="display:block;">
@@ -1551,7 +1551,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_module.html#ae3497a487a36f2e1a51bc01592aabf5b">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00448">448</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00458">458</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 
 </div>
 </div>
@@ -2290,7 +2290,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a></li>
-    <li class="footer">Generated on Sat Apr 18 2020 03:53:34 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Apr 21 2020 03:54:04 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

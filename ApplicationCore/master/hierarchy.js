@@ -255,6 +255,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "ChimeraTK::RecoveryHelper", "struct_chimera_t_k_1_1_recovery_helper.html", null ],
+    [ "ChimeraTK::RuntimeErrorCollector", "struct_chimera_t_k_1_1_runtime_error_collector.html", null ],
     [ "ScalarRegisterAccessor", null, [
       [ "ChimeraTK::ScalarAccessor< UserType >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
       [ "ChimeraTK::ScalarAccessor< double >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],

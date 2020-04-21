@@ -3,7 +3,7 @@ var searchData=
   ['rangemonitor',['RangeMonitor',['../struct_chimera_t_k_1_1_range_monitor.html',1,'ChimeraTK']]],
   ['rangemonitor_3c_20double_20_3e',['RangeMonitor&lt; double &gt;',['../struct_chimera_t_k_1_1_range_monitor.html',1,'ChimeraTK']]],
   ['rb',['rb',['../struct_controller.html#a97ab7bd3852cc42fddd13b1bae1f4c7b',1,'Controller']]],
-  ['read',['read',['../class_demo_dummy.html#a6b29e4b004b9379148fa723c7cf8f89d',1,'DemoDummy::read()'],['../struct_chimera_t_k_1_1_array_poll_input.html#a823dd8f8c343fb16abd91108f9402c40',1,'ChimeraTK::ArrayPollInput::read()']]],
+  ['read',['read',['../class_demo_dummy.html#a6b29e4b004b9379148fa723c7cf8f89d',1,'DemoDummy::read()'],['../struct_chimera_t_k_1_1_array_poll_input.html#a823dd8f8c343fb16abd91108f9402c40',1,'ChimeraTK::ArrayPollInput::read()'],['../struct_chimera_t_k_1_1_scalar_poll_input.html#a760a463494f5a8b7cf8f0e30a9702bda',1,'ChimeraTK::ScalarPollInput::read()']]],
   ['readall',['readAll',['../class_chimera_t_k_1_1_module.html#a20b7d1b8fdd6fb84dcfea23e36a27b1a',1,'ChimeraTK::Module']]],
   ['readalllatest',['readAllLatest',['../class_chimera_t_k_1_1_module.html#a077ccaefcae045d216f546318b2c3a49',1,'ChimeraTK::Module']]],
   ['readallnonblocking',['readAllNonBlocking',['../class_chimera_t_k_1_1_module.html#a3a15c3de08251f5622d12a83adb5cb24',1,'ChimeraTK::Module']]],
@@ -36,5 +36,6 @@ var searchData=
   ['root',['root',['../namespacevariable_houseold_to_wiki_table.html#a193dd605ddbb0c227b8955204a1a8e7d',1,'variableHouseoldToWikiTable']]],
   ['run',['run',['../class_chimera_t_k_1_1_application.html#a6815195c956c091a6558a316f8fd9976',1,'ChimeraTK::Application::run()'],['../class_chimera_t_k_1_1_application_module.html#a4657828fa7b0ad3a50e10a8745c063e1',1,'ChimeraTK::ApplicationModule::run()'],['../class_chimera_t_k_1_1_device_module.html#a71dea3b0240cf2eccbae77ab7f2c4a73',1,'ChimeraTK::DeviceModule::run()'],['../class_chimera_t_k_1_1_module.html#a998f98d99bde4ca7baebb4eaf595a983',1,'ChimeraTK::Module::run()'],['../class_chimera_t_k_1_1_threaded_fan_out.html#aec8d6bcf52e7887791968acf8ac2a3e1',1,'ChimeraTK::ThreadedFanOut::run()'],['../class_chimera_t_k_1_1_threaded_fan_out_with_return.html#ab52d9c326faab0071553435bc9ae3496',1,'ChimeraTK::ThreadedFanOutWithReturn::run()'],['../class_chimera_t_k_1_1_trigger_fan_out.html#ac46817d485e17425b7200cfe5c3c7bff',1,'ChimeraTK::TriggerFanOut::run()'],['../namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72daa53108f7543b75adbb34afc035d4cdf6',1,'ChimeraTK::run()']]],
   ['runapplication',['runApplication',['../class_chimera_t_k_1_1_test_facility.html#aa89dcd98d96bef731b8dbd75964bb18c',1,'ChimeraTK::TestFacility']]],
-  ['runcalled',['runCalled',['../class_chimera_t_k_1_1_application.html#a5cd9227555b95483251de62a82367660',1,'ChimeraTK::Application']]]
+  ['runcalled',['runCalled',['../class_chimera_t_k_1_1_application.html#a5cd9227555b95483251de62a82367660',1,'ChimeraTK::Application']]],
+  ['runtimeerrorcollector',['RuntimeErrorCollector',['../struct_chimera_t_k_1_1_runtime_error_collector.html',1,'ChimeraTK']]]
 ];

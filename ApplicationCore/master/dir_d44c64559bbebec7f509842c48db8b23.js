@@ -43,6 +43,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "FanOut", "class_chimera_t_k_1_1_fan_out.html", "class_chimera_t_k_1_1_fan_out" ]
     ] ],
     [ "FeedingFanOut.h", "_feeding_fan_out_8h.html", [
+      [ "RuntimeErrorCollector", "struct_chimera_t_k_1_1_runtime_error_collector.html", "struct_chimera_t_k_1_1_runtime_error_collector" ],
       [ "FeedingFanOut", "class_chimera_t_k_1_1_feeding_fan_out.html", "class_chimera_t_k_1_1_feeding_fan_out" ]
     ] ],
     [ "Flags.h", "_flags_8h.html", "_flags_8h" ],
