@@ -165,6 +165,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a1299aaf84434148c7b76b63d751a183f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_long_register_accessor.html#a1299aaf84434148c7b76b63d751a183f">doPreWrite</a> (TransferType type) override</td></tr>
 <tr class="separator:a1299aaf84434148c7b76b63d751a183f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b1b3fdf37575490d581fe13aae35ccf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_long_register_accessor.html#a6b1b3fdf37575490d581fe13aae35ccf">initialiseImplementation</a> () override</td></tr>
+<tr class="memdesc:a6b1b3fdf37575490d581fe13aae35ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform accessor-type specific part of the initialisation.  <a href="#a6b1b3fdf37575490d581fe13aae35ccf">More...</a><br /></td></tr>
 <tr class="separator:a6b1b3fdf37575490d581fe13aae35ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_chimera_t_k_1_1_doocs_backend_register_accessor"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_chimera_t_k_1_1_doocs_backend_register_accessor')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">ChimeraTK::DoocsBackendRegisterAccessor&lt; UserType &gt;</a></td></tr>
 <tr class="memitem:acf65ec18eec0acb64621424310f5bdf4 inherit pro_methods_class_chimera_t_k_1_1_doocs_backend_register_accessor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#acf65ec18eec0acb64621424310f5bdf4">DoocsBackendRegisterAccessor</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_doocs_backend.html">DoocsBackend</a> &gt; backend, const std::string &amp;path, const std::string &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, AccessModeFlags flags, bool allocateBuffers=true)</td></tr>
@@ -433,7 +434,7 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_long_register_accessor_a1299aaf84434148c7b76b63d751a183f_cgraph.svg" width="100%" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_long_register_accessor_a1299aaf84434148c7b76b63d751a183f_cgraph.svg" width="539" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -463,6 +464,10 @@ template&lt;typename UserType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Perform accessor-type specific part of the initialisation. </p>
+<p>Called at the end of <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a1eb2bd214a2a08a31e732cbd0de34a6c" title="Perform initialisation (i.e. ">initialise()</a>.</p>
+<p>Note: must <em>only</em> throw ChimeraTK::logic_error. Just do not proceed with the initialisation if a runtime_error is to be thrown - this will then be done in the transfer. </p>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#afcf5f8dc529e8170bc3a73bdcdaea4a5">ChimeraTK::DoocsBackendRegisterAccessor&lt; UserType &gt;</a>.</p>
 
@@ -506,7 +511,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_long_register_accessor.html">DoocsBackendLongRegisterAccessor</a></li>
-    <li class="footer">Generated on Fri Apr 17 2020 03:53:34 for ChimeraTK-DeviceAccess-DoocsBackend by
+    <li class="footer">Generated on Tue Apr 21 2020 03:53:36 for ChimeraTK-DeviceAccess-DoocsBackend by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -165,6 +165,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a4da7e97bcf69fa2688c1de95100aae8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html#a4da7e97bcf69fa2688c1de95100aae8f">doPreWrite</a> (TransferType type) override</td></tr>
 <tr class="separator:a4da7e97bcf69fa2688c1de95100aae8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30a1c2dcc9df93ede1e50c166ddd2a42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html#a30a1c2dcc9df93ede1e50c166ddd2a42">initialiseImplementation</a> () override</td></tr>
+<tr class="memdesc:a30a1c2dcc9df93ede1e50c166ddd2a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform accessor-type specific part of the initialisation.  <a href="#a30a1c2dcc9df93ede1e50c166ddd2a42">More...</a><br /></td></tr>
 <tr class="separator:a30a1c2dcc9df93ede1e50c166ddd2a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac958371eee482d3588a0cbfb55fcc13f"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:ac958371eee482d3588a0cbfb55fcc13f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html#ac958371eee482d3588a0cbfb55fcc13f">doPostRead</a> (TransferType type, bool hasNewData)</td></tr>
@@ -589,7 +590,7 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_float_register_accessor_a4da7e97bcf69fa2688c1de95100aae8f_cgraph.svg" width="100%" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_float_register_accessor_a4da7e97bcf69fa2688c1de95100aae8f_cgraph.svg" width="540" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -627,7 +628,7 @@ template&lt;&gt; </div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_float_register_accessor_a1e68e8c4b68bb53827215089bc3975a8_cgraph.svg" width="100%" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_float_register_accessor_a1e68e8c4b68bb53827215089bc3975a8_cgraph.svg" width="540" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -657,6 +658,10 @@ template&lt;typename UserType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Perform accessor-type specific part of the initialisation. </p>
+<p>Called at the end of <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a1eb2bd214a2a08a31e732cbd0de34a6c" title="Perform initialisation (i.e. ">initialise()</a>.</p>
+<p>Note: must <em>only</em> throw ChimeraTK::logic_error. Just do not proceed with the initialisation if a runtime_error is to be thrown - this will then be done in the transfer. </p>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#afcf5f8dc529e8170bc3a73bdcdaea4a5">ChimeraTK::DoocsBackendRegisterAccessor&lt; UserType &gt;</a>.</p>
 
@@ -700,7 +705,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html">DoocsBackendFloatRegisterAccessor</a></li>
-    <li class="footer">Generated on Fri Apr 17 2020 03:53:34 for ChimeraTK-DeviceAccess-DoocsBackend by
+    <li class="footer">Generated on Tue Apr 21 2020 03:53:36 for ChimeraTK-DeviceAccess-DoocsBackend by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -169,6 +169,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a2996f9df1d99c214e9dba3afb66cdfab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_event_id_register_accessor.html#a2996f9df1d99c214e9dba3afb66cdfab">isWriteable</a> () const override</td></tr>
 <tr class="separator:a2996f9df1d99c214e9dba3afb66cdfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c833504734cd59e01c0c35ace035ba2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_event_id_register_accessor.html#a7c833504734cd59e01c0c35ace035ba2">initialiseImplementation</a> () override</td></tr>
+<tr class="memdesc:a7c833504734cd59e01c0c35ace035ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform accessor-type specific part of the initialisation.  <a href="#a7c833504734cd59e01c0c35ace035ba2">More...</a><br /></td></tr>
 <tr class="separator:a7c833504734cd59e01c0c35ace035ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af403fad2b7b10ae011e5b166249046d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_event_id_register_accessor.html#af403fad2b7b10ae011e5b166249046d9">doWriteTransfer</a> (VersionNumber) override</td></tr>
 <tr class="separator:af403fad2b7b10ae011e5b166249046d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,7 +275,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html#l00064">64</a> of file <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html">DoocsBackendEventIdAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html#l00062">62</a> of file <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html">DoocsBackendEventIdAccessor.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -334,7 +335,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html#l00045">45</a> of file <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html">DoocsBackendEventIdAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html#l00043">43</a> of file <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html">DoocsBackendEventIdAccessor.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -383,7 +384,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html#l00071">71</a> of file <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html">DoocsBackendEventIdAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html#l00069">69</a> of file <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html">DoocsBackendEventIdAccessor.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -449,6 +450,10 @@ template&lt;typename UserType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Perform accessor-type specific part of the initialisation. </p>
+<p>Called at the end of <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a1eb2bd214a2a08a31e732cbd0de34a6c" title="Perform initialisation (i.e. ">initialise()</a>.</p>
+<p>Note: must <em>only</em> throw ChimeraTK::logic_error. Just do not proceed with the initialisation if a runtime_error is to be thrown - this will then be done in the transfer. </p>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#afcf5f8dc529e8170bc3a73bdcdaea4a5">ChimeraTK::DoocsBackendRegisterAccessor&lt; UserType &gt;</a>.</p>
 
@@ -566,7 +571,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html#l00039">39</a> of file <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html">DoocsBackendEventIdAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html#l00037">37</a> of file <a class="el" href="_doocs_backend_event_id_accessor_8h_source.html">DoocsBackendEventIdAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -579,7 +584,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_event_id_register_accessor.html">DoocsBackendEventIdRegisterAccessor</a></li>
-    <li class="footer">Generated on Fri Apr 17 2020 03:53:34 for ChimeraTK-DeviceAccess-DoocsBackend by
+    <li class="footer">Generated on Tue Apr 21 2020 03:53:36 for ChimeraTK-DeviceAccess-DoocsBackend by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
