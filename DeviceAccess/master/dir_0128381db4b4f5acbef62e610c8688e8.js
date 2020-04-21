@@ -10,7 +10,6 @@ var dir_0128381db4b4f5acbef62e610c8688e8 =
     [ "Device.h", "device_2include_2_device_8h.html", [
       [ "Device", "class_chimera_t_k_1_1_device.html", "class_chimera_t_k_1_1_device" ]
     ] ],
-    [ "DeviceException.h", "device_2include_2_device_exception_8h.html", "device_2include_2_device_exception_8h" ],
     [ "ExperimentalFeatures.h", "device_2include_2_experimental_features_8h.html", [
       [ "ExperimentalFeatures", "class_chimera_t_k_1_1_experimental_features.html", null ]
     ] ],

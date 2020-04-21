@@ -1,5 +1,7 @@
 var dir_3ebf71076cf1796a58162e38a76b0135 =
 [
-    [ "Exception.h", "exception_2include_2_exception_8h.html", "exception_2include_2_exception_8h" ],
-    [ "NotImplementedException.h", "exception_2include_2_not_implemented_exception_8h.html", "exception_2include_2_not_implemented_exception_8h" ]
+    [ "Exception.h", "exception_2include_2_exception_8h.html", [
+      [ "runtime_error", "class_chimera_t_k_1_1runtime__error.html", "class_chimera_t_k_1_1runtime__error" ],
+      [ "logic_error", "class_chimera_t_k_1_1logic__error.html", "class_chimera_t_k_1_1logic__error" ]
+    ] ]
 ];

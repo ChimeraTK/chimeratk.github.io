@@ -1,18 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html":[16,0,0,69,0],
-"struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html#af893a0a797fa5604c3e3b2b3690a217a":[16,0,0,69,0,0],
-"struct_chimera_t_k_1_1_sdm.html":[16,0,0,73],
-"struct_chimera_t_k_1_1_sdm.html#a1b884fc07e0becf8494f6e48525e3c08":[16,0,0,73,5],
-"struct_chimera_t_k_1_1_sdm.html#a6d3d852ef3c7e789530af53c6f9252af":[16,0,0,73,2],
-"struct_chimera_t_k_1_1_sdm.html#a9430e98c8d7945f8d269e9d493ee5cd4":[16,0,0,73,4],
-"struct_chimera_t_k_1_1_sdm.html#abbf96eb1d4445e947d4ace88aa43085d":[16,0,0,73,3],
-"struct_chimera_t_k_1_1_sdm.html#ad30ac0490fe8f446be6b7fd5f4f7db1a":[16,0,0,73,0],
-"struct_chimera_t_k_1_1_sdm.html#aec473660a07053d91c0d99ff3cdab21e":[16,0,0,73,1],
-"struct_chimera_t_k_1_1_sdm.html#af45f7ca4c5663a3adeff975c4cbfc2fa":[16,0,0,73,6],
-"struct_chimera_t_k_1_1_thread_informer_mutex.html":[16,0,0,79],
-"struct_chimera_t_k_1_1_thread_informer_mutex.html#a577ee1e0f70212e916365c9475428c84":[16,0,0,79,0],
-"struct_chimera_t_k_1_1_thread_informer_mutex.html#a8160152b415ddd8d3986b292616b7ff0":[16,0,0,79,1],
 "struct_chimera_t_k_1_1_thread_informer_mutex.html#ac4c4cab0aba0c7abc480d4ed94c2b78e":[16,0,0,79,2],
 "struct_custom_backend_1_1_backend_registerer.html":[16,0,3,0],
 "struct_custom_backend_1_1_backend_registerer.html#a31bb7bc390448fa5fdfc3e589c078b22":[16,0,3,0,0],

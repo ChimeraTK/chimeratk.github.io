@@ -4,6 +4,7 @@ var class_chimera_t_k_1_1_l_n_m_backend_channel_accessor =
     [ "~LNMBackendChannelAccessor", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#af31769eaff782eaff28ba89357eea73f", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a1558c8090e3ebd2f0013e3b1409366d3", null ],
     [ "doPreRead", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a54fd775faf4831519018500342b0a133", null ],
+    [ "doPreWrite", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a1e02efb0e70ce9d008b3788959df8d64", null ],
     [ "doReadTransfer", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#aba9aa3aa1c4c6f979cfab81aaecda544", null ],
     [ "doReadTransferLatest", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#aee7aeba1f2963654fc802e4e64899974", null ],
     [ "doReadTransferNonBlocking", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#af622b11dc5f9123a599472eee3737aeb", null ],

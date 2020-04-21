@@ -12,7 +12,7 @@ var searchData=
   ['devicebackendexception_2eh',['DeviceBackendException.h',['../device__backends_2include_2_device_backend_exception_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_device_backend_exception_8h.html',1,'(Global Namespace)']]],
   ['devicebackendimpl_2ecc',['DeviceBackendImpl.cc',['../_device_backend_impl_8cc.html',1,'']]],
   ['devicebackendimpl_2eh',['DeviceBackendImpl.h',['../device__backends_2include_2_device_backend_impl_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_device_backend_impl_8h.html',1,'(Global Namespace)']]],
-  ['deviceexception_2eh',['DeviceException.h',['../device_2include_2_device_exception_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_device_exception_8h.html',1,'(Global Namespace)']]],
+  ['deviceexception_2eh',['DeviceException.h',['../_device_exception_8h.html',1,'']]],
   ['deviceinfomap_2ecc',['DeviceInfoMap.cc',['../_device_info_map_8cc.html',1,'']]],
   ['deviceinfomap_2eh',['DeviceInfoMap.h',['../fileparsers_2include_2_device_info_map_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_device_info_map_8h.html',1,'(Global Namespace)']]],
   ['devicemapping_2edox',['deviceMapping.dox',['../device_mapping_8dox.html',1,'']]],

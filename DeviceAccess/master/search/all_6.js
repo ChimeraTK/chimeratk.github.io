@@ -13,7 +13,6 @@ var searchData=
   ['examplebackend',['ExampleBackend',['../class_example_backend.html',1,'ExampleBackend'],['../class_example_backend.html#a58db813470c7a500e30de9bdb91c92da',1,'ExampleBackend::ExampleBackend()']]],
   ['examplebackend_2ecc',['ExampleBackend.cc',['../_example_backend_8cc.html',1,'']]],
   ['examplebackend_2eh',['ExampleBackend.h',['../_example_backend_8h.html',1,'']]],
-  ['exception',['Exception',['../namespace_chimera_t_k.html#a05b44f2d7e3528fff2972cfc3fe89db0',1,'ChimeraTK']]],
   ['exception_2ecpp',['Exception.cpp',['../_exception_8cpp.html',1,'']]],
   ['exception_2eh',['Exception.h',['../exception_2include_2_exception_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_exception_8h.html',1,'(Global Namespace)']]],
   ['exceptiondummy',['ExceptionDummy',['../class_chimera_t_k_1_1_exception_dummy.html',1,'ChimeraTK::ExceptionDummy'],['../class_chimera_t_k_1_1_exception_dummy.html#af9d7b6889e101ce97fd4321a2e380e3e',1,'ChimeraTK::ExceptionDummy::ExceptionDummy()']]],

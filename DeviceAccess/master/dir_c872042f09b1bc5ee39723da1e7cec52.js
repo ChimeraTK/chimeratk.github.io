@@ -10,7 +10,6 @@ var dir_c872042f09b1bc5ee39723da1e7cec52 =
     [ "DMapFilesParser.h", "fileparsers_2include_2_d_map_files_parser_8h.html", [
       [ "DMapFilesParser", "class_chimera_t_k_1_1_d_map_files_parser.html", "class_chimera_t_k_1_1_d_map_files_parser" ]
     ] ],
-    [ "MapException.h", "fileparsers_2include_2_map_exception_8h.html", "fileparsers_2include_2_map_exception_8h" ],
     [ "MapFileParser.h", "fileparsers_2include_2_map_file_parser_8h.html", [
       [ "MapFileParser", "class_chimera_t_k_1_1_map_file_parser.html", "class_chimera_t_k_1_1_map_file_parser" ]
     ] ],

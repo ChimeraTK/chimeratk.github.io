@@ -4,6 +4,7 @@ var class_chimera_t_k_1_1_transfer_future =
     [ "TransferFuture", "class_chimera_t_k_1_1_transfer_future.html#a62fa81afb03640f26eab8685555adc26", null ],
     [ "TransferFuture", "class_chimera_t_k_1_1_transfer_future.html#a2e88d30f3fcc8a654d2c90b640e99070", null ],
     [ "TransferFuture", "class_chimera_t_k_1_1_transfer_future.html#ae6f7fa51490ed66a8b88fa5fa34bf9d8", null ],
+    [ "TransferFuture", "class_chimera_t_k_1_1_transfer_future.html#aa944e7b9322a3e77c2498717d5a5da39", null ],
     [ "TransferFuture", "class_chimera_t_k_1_1_transfer_future.html#a3403b98ec9bc9f9521b9b235d7e8ec41", null ],
     [ "TransferFuture", "class_chimera_t_k_1_1_transfer_future.html#adcd3f692c349f024acae819193f5dbff", null ],
     [ "getTransferElementID", "class_chimera_t_k_1_1_transfer_future.html#aad77bad2e40861ab8c86f4e4c3553e65", null ],

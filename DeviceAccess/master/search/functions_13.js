@@ -10,6 +10,6 @@ var searchData=
   ['writeraw',['writeRaw',['../class_chimera_t_k_1_1_register_accessor.html#ae286f9b3c624d257534854c69311cac6',1,'ChimeraTK::RegisterAccessor']]],
   ['writereg',['writeReg',['../class_chimera_t_k_1_1_device.html#aa6c9fa85aca91ab0dce1717db8b1863d',1,'ChimeraTK::Device::writeReg(uint32_t regOffset, int32_t data, uint8_t bar)'],['../class_chimera_t_k_1_1_device.html#abc26e04363536fbd6da8b4b2686f8af5',1,'ChimeraTK::Device::writeReg(const std::string &amp;regName, int32_t const *data, size_t dataSize=0, uint32_t addRegOffset=0)'],['../class_chimera_t_k_1_1_device.html#a5ee55d2407e57525fb759fa820c72a24',1,'ChimeraTK::Device::writeReg(const std::string &amp;regName, const std::string &amp;regModule, int32_t const *data, size_t dataSize=0, uint32_t addRegOffset=0)']]],
   ['writeregisterwithoutcallback',['writeRegisterWithoutCallback',['../class_chimera_t_k_1_1_dummy_backend.html#a56f3c411431666b803a072e856d6c713',1,'ChimeraTK::DummyBackend']]],
-  ['writetransfer',['writeTransfer',['../class_chimera_t_k_1_1_transfer_element.html#a5d6fdffb6935dd8c9cdaf6eff49389d9',1,'ChimeraTK::TransferElement']]],
-  ['writetransferdestructively',['writeTransferDestructively',['../class_chimera_t_k_1_1_transfer_element.html#a6cb6185ac4c076eadf11d5e6596737e9',1,'ChimeraTK::TransferElement']]]
+  ['writetransfer',['writeTransfer',['../class_chimera_t_k_1_1_transfer_element.html#a48ffd4cb47836492373355f9fabbb113',1,'ChimeraTK::TransferElement']]],
+  ['writetransferdestructively',['writeTransferDestructively',['../class_chimera_t_k_1_1_transfer_element.html#a5d2faa50a2fb063ffde80f4f3bf0febf',1,'ChimeraTK::TransferElement']]]
 ];
