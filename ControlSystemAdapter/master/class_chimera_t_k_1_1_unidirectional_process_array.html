@@ -153,6 +153,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a64cfeee87162fa14fe7474c3dadf96d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5793b57ee2a16dbfafcb8f0b28519561"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a5793b57ee2a16dbfafcb8f0b28519561">doPostRead</a> (ChimeraTK::TransferType type, bool hasNewData) override</td></tr>
 <tr class="separator:a5793b57ee2a16dbfafcb8f0b28519561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7cf9a9aa9dc1df849c03ff3b08528d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#ad7cf9a9aa9dc1df849c03ff3b08528d9">doPreRead</a> (ChimeraTK::TransferType type) override</td></tr>
+<tr class="separator:ad7cf9a9aa9dc1df849c03ff3b08528d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8843d79c4aa6ad63d9eae463dafb80c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#ad8843d79c4aa6ad63d9eae463dafb80c">doPreWrite</a> (ChimeraTK::TransferType type) override</td></tr>
+<tr class="separator:ad8843d79c4aa6ad63d9eae463dafb80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b1b19d9c6e3290e62abc133e9e89831"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a1b1b19d9c6e3290e62abc133e9e89831">doWriteTransfer</a> (ChimeraTK::VersionNumber versionNumber={}) override</td></tr>
 <tr class="separator:a1b1b19d9c6e3290e62abc133e9e89831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d1de8c9f797a9964ccaa8eaf4aa45a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a3d1de8c9f797a9964ccaa8eaf4aa45a3">doWriteTransferDestructively</a> (ChimeraTK::VersionNumber versionNumber={}) override</td></tr>
@@ -302,7 +306,7 @@ template&lt;class T &gt; </div>
 <p>A receiver is intended to work as a tandem with a sender and receives values that have been set to the sender.</p>
 <p>This constructor creates the buffers and queues that are needed for the send/receive process and are shared with the sender. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00396">396</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00400">400</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -358,7 +362,7 @@ template&lt;class T &gt; </div>
 <p>A sender is intended intended to work as a tandem with a receiver and send set values to it. It uses the buffers and queues that have been created by the receiver.</p>
 <p>The optional send-notification listener is notified every time the sender's ProcessArray::write() method is called. It can be used to queue a request for the receiver's readNonBlocking() method to be called. The process variable passed to the listener is the receiver and not the sender. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00426">426</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00430">430</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -444,7 +448,83 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00505">505</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00534">534</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+
+</div>
+</div>
+<a id="ad7cf9a9aa9dc1df849c03ff3b08528d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7cf9a9aa9dc1df849c03ff3b08528d9">&#9670;&nbsp;</a></span>doPreRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">ChimeraTK::UnidirectionalProcessArray</a>&lt; T &gt;::doPreRead </td>
+          <td>(</td>
+          <td class="paramtype">ChimeraTK::TransferType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00457">457</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_unidirectional_process_array_ad7cf9a9aa9dc1df849c03ff3b08528d9_cgraph.svg" width="439" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ad8843d79c4aa6ad63d9eae463dafb80c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8843d79c4aa6ad63d9eae463dafb80c">&#9670;&nbsp;</a></span>doPreWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">ChimeraTK::UnidirectionalProcessArray</a>&lt; T &gt;::doPreWrite </td>
+          <td>(</td>
+          <td class="paramtype">ChimeraTK::TransferType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00466">466</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_unidirectional_process_array_ad8843d79c4aa6ad63d9eae463dafb80c_cgraph.svg" width="439" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -474,7 +554,15 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>if wait_for_new_data is not set, make identical to <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a5aa3d4f0b0f4da26737e89ef4e70caab">doReadTransferLatest()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00453">453</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00484">484</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_unidirectional_process_array_a4c10cec4751c5bb4370bdc61e13654cc_cgraph.svg" width="460" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -504,12 +592,12 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>if wait_for_new_data is not set, make identical to <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a5aa3d4f0b0f4da26737e89ef4e70caab">doReadTransferLatest()</a> (but asynchronous) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00489">489</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00520">520</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_unidirectional_process_array_a64cfeee87162fa14fe7474c3dadf96d4_cgraph.svg" width="499" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -541,12 +629,12 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00471">471</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00504">504</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_unidirectional_process_array_a5aa3d4f0b0f4da26737e89ef4e70caab_cgraph.svg" width="500" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -579,7 +667,15 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>if wait_for_new_data is not set, make identical to <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a5aa3d4f0b0f4da26737e89ef4e70caab">doReadTransferLatest()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00462">462</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00494">494</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_unidirectional_process_array_a5903176cbd3aaf82e418c2321e358999_cgraph.svg" width="486" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -609,7 +705,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00524">524</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00553">553</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -646,7 +742,7 @@ template&lt;class T &gt; </div>
 <p>The time-stamp of the sent value is retrieved from the time-stamp source.</p>
 <p>Throws an exception if this process variable is not a sender or if this process variable does not allow destructive sending. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00531">531</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00560">560</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -680,7 +776,7 @@ template&lt;class T&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_process_array.html#ac1be019e072c4306fa9d3516177215f5">ChimeraTK::ProcessArray&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00129">129</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00133">133</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -738,7 +834,7 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00139">139</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00143">143</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -798,12 +894,12 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00538">538</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00567">567</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_unidirectional_process_array_a70445d795d2a69b6214d0f5d5738c3e6_cgraph.svg" width="483" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -966,7 +1062,7 @@ template&lt;typename U &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">UnidirectionalProcessArray</a></li>
-    <li class="footer">Generated on Tue Apr 21 2020 03:53:47 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Wed Apr 22 2020 03:53:45 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

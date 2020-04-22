@@ -5,6 +5,8 @@ var class_chimera_t_k_1_1_unidirectional_process_array =
     [ "UnidirectionalProcessArray", "class_chimera_t_k_1_1_unidirectional_process_array.html#abdd6892ad2f837b34b680b0e0a2dc8a7", null ],
     [ "dataValidity", "class_chimera_t_k_1_1_unidirectional_process_array.html#a5f74e11410915dc04e1eb3fba114d247", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_unidirectional_process_array.html#a5793b57ee2a16dbfafcb8f0b28519561", null ],
+    [ "doPreRead", "class_chimera_t_k_1_1_unidirectional_process_array.html#ad7cf9a9aa9dc1df849c03ff3b08528d9", null ],
+    [ "doPreWrite", "class_chimera_t_k_1_1_unidirectional_process_array.html#ad8843d79c4aa6ad63d9eae463dafb80c", null ],
     [ "doReadTransfer", "class_chimera_t_k_1_1_unidirectional_process_array.html#a4c10cec4751c5bb4370bdc61e13654cc", null ],
     [ "doReadTransferAsync", "class_chimera_t_k_1_1_unidirectional_process_array.html#a64cfeee87162fa14fe7474c3dadf96d4", null ],
     [ "doReadTransferLatest", "class_chimera_t_k_1_1_unidirectional_process_array.html#a5aa3d4f0b0f4da26737e89ef4e70caab", null ],
