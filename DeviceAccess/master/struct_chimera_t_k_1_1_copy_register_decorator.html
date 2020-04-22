@@ -115,7 +115,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7eed48aa29f299f930ec3cc28bab6923"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#a7eed48aa29f299f930ec3cc28bab6923">CopyRegisterDecorator</a> (const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">ChimeraTK::NDRegisterAccessor</a>&lt; T &gt;&gt; &amp;target)</td></tr>
 <tr class="separator:a7eed48aa29f299f930ec3cc28bab6923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e6088be221105dc0c35d75bb6f3ef94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#a8e6088be221105dc0c35d75bb6f3ef94">doPreWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>) override</td></tr>
-<tr class="memdesc:a8e6088be221105dc0c35d75bb6f3ef94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab2e490b93efc41fb2e9575181e363f53" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>.  <a href="#a8e6088be221105dc0c35d75bb6f3ef94">More...</a><br /></td></tr>
+<tr class="memdesc:a8e6088be221105dc0c35d75bb6f3ef94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0890b3e4b77118b35ea6d2b8b4938c8c" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>.  <a href="#a8e6088be221105dc0c35d75bb6f3ef94">More...</a><br /></td></tr>
 <tr class="separator:a8e6088be221105dc0c35d75bb6f3ef94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3862add181c233c1f80365008e87a57d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html#a3862add181c233c1f80365008e87a57d">doPostRead</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type, bool hasNewData) override</td></tr>
 <tr class="memdesc:a3862add181c233c1f80365008e87a57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a71aa608f151dbe46289a6214dd5ece4b" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>.  <a href="#a3862add181c233c1f80365008e87a57d">More...</a><br /></td></tr>
@@ -292,8 +292,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab2e490b93efc41fb2e9575181e363f53" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>. </p>
-<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab2e490b93efc41fb2e9575181e363f53" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
+<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0890b3e4b77118b35ea6d2b8b4938c8c" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>. </p>
+<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0890b3e4b77118b35ea6d2b8b4938c8c" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
 <p>No actual communication may be done. Hence, no <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown. </p>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a8352fb4e25dc5dc64f7044ee5d34fc59">ChimeraTK::TransferElement</a>.</p>
@@ -379,7 +379,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html">CopyRegisterDecorator</a></li>
-    <li class="footer">Generated on Tue Apr 21 2020 03:53:12 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Apr 22 2020 03:53:09 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

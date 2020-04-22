@@ -9,6 +9,7 @@ var class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor =
     [ "DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aca55ef76503a1f1d39ac6c543672c7c1", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#af9f6aaa862f96c685fbe8d7f90de8880", null ],
     [ "doPostWrite", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a0a2ab55d0ca230c1fadd4a942c655104", null ],
+    [ "doPreRead", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a683c2f3bc42d4545480efd8509606cc5", null ],
     [ "doPreWrite", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ad885cedd94d0478c0c23f7684f2e0727", null ],
     [ "doReadTransfer", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ab7c58a4186825b6f17e84402f71584f3", null ],
     [ "doReadTransferLatest", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a98af654c2352a7b5e9450ef158076fdd", null ],

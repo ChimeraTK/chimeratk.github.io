@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"device__backends_2pcie_2include_2pciedev__io_8h.html#a1fce441aaa962f572d643140658a6e4c":[17,0,1,2,0,2,4],
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a2140cdb4612e1aeb483572affbeb9f20":[17,0,1,2,0,2,17],
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a2aa7940c0614fa9c0c1031e028db6fc0":[17,0,1,2,0,2,19],
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a2adc22a34dd80aeb9090741dad0bf049":[17,0,1,2,0,2,27],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "mtca4u__compatibility__headers_2_forward_declarations_8h.html":[17,0,5,20],
 "mtca4u__compatibility__headers_2_forward_declarations_8h_source.html":[17,0,5,20],
 "mtca4u__compatibility__headers_2_l_n_m_backend_channel_accessor_8h.html":[17,0,5,22],
-"mtca4u__compatibility__headers_2_l_n_m_backend_channel_accessor_8h_source.html":[17,0,5,22],
-"mtca4u__compatibility__headers_2_l_n_m_backend_register_info_8h.html":[17,0,5,23]
+"mtca4u__compatibility__headers_2_l_n_m_backend_channel_accessor_8h_source.html":[17,0,5,22]
 };
