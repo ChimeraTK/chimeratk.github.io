@@ -151,10 +151,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aabe63014733fa70e1e354a6b56301601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac32a7a74262a70bd0dfe88401e2f6209"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#ac32a7a74262a70bd0dfe88401e2f6209">doPostRead</a> (ChimeraTK::TransferType type, bool hasNewData) override</td></tr>
 <tr class="separator:ac32a7a74262a70bd0dfe88401e2f6209"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3de8c310403a95f37532d3f1388206d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#ae3de8c310403a95f37532d3f1388206d">doPreWrite</a> (ChimeraTK::TransferType type) override</td></tr>
-<tr class="separator:ae3de8c310403a95f37532d3f1388206d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35bdda03b16e44c4b63867444367d479"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a35bdda03b16e44c4b63867444367d479">doWriteTransfer</a> (ChimeraTK::VersionNumber versionNumber={}) override</td></tr>
-<tr class="separator:a35bdda03b16e44c4b63867444367d479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade028c210513a748ef73f9cad3d27575"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#ade028c210513a748ef73f9cad3d27575">doPreWrite</a> (ChimeraTK::TransferType type, VersionNumber versionNumber) override</td></tr>
+<tr class="separator:ade028c210513a748ef73f9cad3d27575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ddf2fb5a9b7827ca5346923ac347e38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a9ddf2fb5a9b7827ca5346923ac347e38">doWriteTransfer</a> (ChimeraTK::VersionNumber versionNumber) override</td></tr>
+<tr class="separator:a9ddf2fb5a9b7827ca5346923ac347e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab148110214143163be35496904a267f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#ab148110214143163be35496904a267f3">doPostWrite</a> (ChimeraTK::TransferType type, bool hasNewData) override</td></tr>
 <tr class="separator:ab148110214143163be35496904a267f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9d55a715a86e0c0ff4cb4380b90f569"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#ae9d55a715a86e0c0ff4cb4380b90f569">setPersistentDataStorage</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html">PersistentDataStorage</a> &gt; storage) override</td></tr>
@@ -504,8 +504,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="ae3de8c310403a95f37532d3f1388206d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3de8c310403a95f37532d3f1388206d">&#9670;&nbsp;</a></span>doPreWrite()</h2>
+<a id="ade028c210513a748ef73f9cad3d27575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade028c210513a748ef73f9cad3d27575">&#9670;&nbsp;</a></span>doPreWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -519,8 +519,18 @@ template&lt;class T &gt; </div>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html">ChimeraTK::BidirectionalProcessArray</a>&lt; T &gt;::doPreWrite </td>
           <td>(</td>
           <td class="paramtype">ChimeraTK::TransferType&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">VersionNumber&#160;</td>
+          <td class="paramname"><em>versionNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -536,7 +546,7 @@ template&lt;class T &gt; </div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_ae3de8c310403a95f37532d3f1388206d_icgraph.svg" width="436" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_ade028c210513a748ef73f9cad3d27575_icgraph.svg" width="436" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -690,8 +700,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a35bdda03b16e44c4b63867444367d479"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35bdda03b16e44c4b63867444367d479">&#9670;&nbsp;</a></span>doWriteTransfer()</h2>
+<a id="a9ddf2fb5a9b7827ca5346923ac347e38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ddf2fb5a9b7827ca5346923ac347e38">&#9670;&nbsp;</a></span>doWriteTransfer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -705,7 +715,7 @@ template&lt;class T &gt; </div>
           <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html">ChimeraTK::BidirectionalProcessArray</a>&lt; T &gt;::doWriteTransfer </td>
           <td>(</td>
           <td class="paramtype">ChimeraTK::VersionNumber&#160;</td>
-          <td class="paramname"><em>versionNumber</em> = <code>{}</code></td><td>)</td>
+          <td class="paramname"><em>versionNumber</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -722,7 +732,7 @@ template&lt;class T &gt; </div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_a35bdda03b16e44c4b63867444367d479_icgraph.svg" width="100%" height="369"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_a9ddf2fb5a9b7827ca5346923ac347e38_icgraph.svg" width="100%" height="369"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -1115,7 +1125,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html">BidirectionalProcessArray</a></li>
-    <li class="footer">Generated on Wed Apr 22 2020 03:53:45 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Thu Apr 23 2020 07:38:35 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

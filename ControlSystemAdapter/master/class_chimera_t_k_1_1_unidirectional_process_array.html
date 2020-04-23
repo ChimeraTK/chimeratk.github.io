@@ -155,13 +155,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5793b57ee2a16dbfafcb8f0b28519561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7cf9a9aa9dc1df849c03ff3b08528d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#ad7cf9a9aa9dc1df849c03ff3b08528d9">doPreRead</a> (ChimeraTK::TransferType type) override</td></tr>
 <tr class="separator:ad7cf9a9aa9dc1df849c03ff3b08528d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8843d79c4aa6ad63d9eae463dafb80c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#ad8843d79c4aa6ad63d9eae463dafb80c">doPreWrite</a> (ChimeraTK::TransferType type) override</td></tr>
-<tr class="separator:ad8843d79c4aa6ad63d9eae463dafb80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b1b19d9c6e3290e62abc133e9e89831"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a1b1b19d9c6e3290e62abc133e9e89831">doWriteTransfer</a> (ChimeraTK::VersionNumber versionNumber={}) override</td></tr>
-<tr class="separator:a1b1b19d9c6e3290e62abc133e9e89831"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d1de8c9f797a9964ccaa8eaf4aa45a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a3d1de8c9f797a9964ccaa8eaf4aa45a3">doWriteTransferDestructively</a> (ChimeraTK::VersionNumber versionNumber={}) override</td></tr>
-<tr class="memdesc:a3d1de8c9f797a9964ccaa8eaf4aa45a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the current value to the receiver.  <a href="#a3d1de8c9f797a9964ccaa8eaf4aa45a3">More...</a><br /></td></tr>
-<tr class="separator:a3d1de8c9f797a9964ccaa8eaf4aa45a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceff040bc6e2b181fd5e48ac57d66470"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#aceff040bc6e2b181fd5e48ac57d66470">doPreWrite</a> (ChimeraTK::TransferType type, VersionNumber versionNumber) override</td></tr>
+<tr class="separator:aceff040bc6e2b181fd5e48ac57d66470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0be752f6d508a652e7ee29429d6fbb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#ad0be752f6d508a652e7ee29429d6fbb3">doWriteTransfer</a> (ChimeraTK::VersionNumber versionNumber) override</td></tr>
+<tr class="separator:ad0be752f6d508a652e7ee29429d6fbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac84a21060c27414031aed5d3b71384fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#ac84a21060c27414031aed5d3b71384fe">doWriteTransferDestructively</a> (ChimeraTK::VersionNumber versionNumber) override</td></tr>
+<tr class="memdesc:ac84a21060c27414031aed5d3b71384fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the current value to the receiver.  <a href="#ac84a21060c27414031aed5d3b71384fe">More...</a><br /></td></tr>
+<tr class="separator:ac84a21060c27414031aed5d3b71384fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70445d795d2a69b6214d0f5d5738c3e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a70445d795d2a69b6214d0f5d5738c3e6">setPersistentDataStorage</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html">PersistentDataStorage</a> &gt; storage) override</td></tr>
 <tr class="separator:a70445d795d2a69b6214d0f5d5738c3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cfa68f1632196e2e1c093c1e7e3c5f8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a3cfa68f1632196e2e1c093c1e7e3c5f8">getUniqueId</a> () const override</td></tr>
@@ -490,8 +490,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="ad8843d79c4aa6ad63d9eae463dafb80c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8843d79c4aa6ad63d9eae463dafb80c">&#9670;&nbsp;</a></span>doPreWrite()</h2>
+<a id="aceff040bc6e2b181fd5e48ac57d66470"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceff040bc6e2b181fd5e48ac57d66470">&#9670;&nbsp;</a></span>doPreWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -505,8 +505,18 @@ template&lt;class T &gt; </div>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">ChimeraTK::UnidirectionalProcessArray</a>&lt; T &gt;::doPreWrite </td>
           <td>(</td>
           <td class="paramtype">ChimeraTK::TransferType&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">VersionNumber&#160;</td>
+          <td class="paramname"><em>versionNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -522,7 +532,7 @@ template&lt;class T &gt; </div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_unidirectional_process_array_ad8843d79c4aa6ad63d9eae463dafb80c_cgraph.svg" width="439" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_unidirectional_process_array_aceff040bc6e2b181fd5e48ac57d66470_cgraph.svg" width="439" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -679,8 +689,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a1b1b19d9c6e3290e62abc133e9e89831"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b1b19d9c6e3290e62abc133e9e89831">&#9670;&nbsp;</a></span>doWriteTransfer()</h2>
+<a id="ad0be752f6d508a652e7ee29429d6fbb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0be752f6d508a652e7ee29429d6fbb3">&#9670;&nbsp;</a></span>doWriteTransfer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -694,7 +704,7 @@ template&lt;class T &gt; </div>
           <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">ChimeraTK::UnidirectionalProcessArray</a>&lt; T &gt;::doWriteTransfer </td>
           <td>(</td>
           <td class="paramtype">ChimeraTK::VersionNumber&#160;</td>
-          <td class="paramname"><em>versionNumber</em> = <code>{}</code></td><td>)</td>
+          <td class="paramname"><em>versionNumber</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -705,12 +715,12 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00553">553</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00552">552</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
-<a id="a3d1de8c9f797a9964ccaa8eaf4aa45a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d1de8c9f797a9964ccaa8eaf4aa45a3">&#9670;&nbsp;</a></span>doWriteTransferDestructively()</h2>
+<a id="ac84a21060c27414031aed5d3b71384fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac84a21060c27414031aed5d3b71384fe">&#9670;&nbsp;</a></span>doWriteTransferDestructively()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -724,7 +734,7 @@ template&lt;class T &gt; </div>
           <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">ChimeraTK::UnidirectionalProcessArray</a>&lt; T &gt;::doWriteTransferDestructively </td>
           <td>(</td>
           <td class="paramtype">ChimeraTK::VersionNumber&#160;</td>
-          <td class="paramname"><em>versionNumber</em> = <code>{}</code></td><td>)</td>
+          <td class="paramname"><em>versionNumber</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -742,7 +752,7 @@ template&lt;class T &gt; </div>
 <p>The time-stamp of the sent value is retrieved from the time-stamp source.</p>
 <p>Throws an exception if this process variable is not a sender or if this process variable does not allow destructive sending. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00560">560</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00559">559</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -894,7 +904,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00567">567</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00566">566</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -1062,7 +1072,7 @@ template&lt;typename U &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">UnidirectionalProcessArray</a></li>
-    <li class="footer">Generated on Wed Apr 22 2020 03:53:45 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Thu Apr 23 2020 07:38:35 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
