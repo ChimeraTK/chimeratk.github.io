@@ -114,8 +114,8 @@ $(document).ready(function(){initNavTree('struct_d__text_unifier.html','');});
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af1e3236f29a3ae88db7603f8bd8b9f0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d__text_unifier.html#af1e3236f29a3ae88db7603f8bd8b9f0e">D_textUnifier</a> (EqFct *eqFct, std::string doocsPropertyName)</td></tr>
 <tr class="separator:af1e3236f29a3ae88db7603f8bd8b9f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8763e1a831ab52a6ebd82a01a6a19113"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d__text_unifier.html#a8763e1a831ab52a6ebd82a01a6a19113">set_and_archive</a> (const std::string &amp;str, eq_sts_codes status=sts_ok, u_int seconds=0, u_int microseconds=0)</td></tr>
-<tr class="separator:a8763e1a831ab52a6ebd82a01a6a19113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4bbc994bdedcd86a92a27e856d2a39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d__text_unifier.html#acc4bbc994bdedcd86a92a27e856d2a39">set_and_archive</a> (const std::string &amp;str, ArchiveStatus status, doocs::Timestamp timestamp, doocs::EventId eventId)</td></tr>
+<tr class="separator:acc4bbc994bdedcd86a92a27e856d2a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a448a1633eb29a9158c5c26d23123e5f1"><td class="memItemLeft" align="right" valign="top">D_hist *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d__text_unifier.html#a448a1633eb29a9158c5c26d23123e5f1">get_histPointer</a> ()</td></tr>
 <tr class="separator:a448a1633eb29a9158c5c26d23123e5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -123,7 +123,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A compatibility class that adds the constructor which would create a history, and the set_and_archive function to the D_text interface. </p>
 <p>As this does not have history it just calls the non-history equivalent. This class was introduces to avoid template specialisations in DoocsProcessScalar. (Local specialisations of functions don't work because one would have to </p>
 
-<p class="definition">Definition at line <a class="el" href="_d__text_unifier_8h_source.html#l00013">13</a> of file <a class="el" href="_d__text_unifier_8h_source.html">D_textUnifier.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_d__text_unifier_8h_source.html#l00012">12</a> of file <a class="el" href="_d__text_unifier_8h_source.html">D_textUnifier.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af1e3236f29a3ae88db7603f8bd8b9f0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af1e3236f29a3ae88db7603f8bd8b9f0e">&#9670;&nbsp;</a></span>D_textUnifier()</h2>
@@ -171,12 +171,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_d__text_unifier_8cpp_source.html#l00011">11</a> of file <a class="el" href="_d__text_unifier_8cpp_source.html">D_textUnifier.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_d__text_unifier_8cpp_source.html#l00010">10</a> of file <a class="el" href="_d__text_unifier_8cpp_source.html">D_textUnifier.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a8763e1a831ab52a6ebd82a01a6a19113"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8763e1a831ab52a6ebd82a01a6a19113">&#9670;&nbsp;</a></span>set_and_archive()</h2>
+<a id="acc4bbc994bdedcd86a92a27e856d2a39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc4bbc994bdedcd86a92a27e856d2a39">&#9670;&nbsp;</a></span>set_and_archive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,20 +190,20 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">eq_sts_codes&#160;</td>
-          <td class="paramname"><em>status</em> = <code>sts_ok</code>, </td>
+          <td class="paramtype">ArchiveStatus&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u_int&#160;</td>
-          <td class="paramname"><em>seconds</em> = <code>0</code>, </td>
+          <td class="paramtype">doocs::Timestamp&#160;</td>
+          <td class="paramname"><em>timestamp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u_int&#160;</td>
-          <td class="paramname"><em>microseconds</em> = <code>0</code>&#160;</td>
+          <td class="paramtype">doocs::EventId&#160;</td>
+          <td class="paramname"><em>eventId</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -212,7 +212,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>FIXE: eq_sts_codes will be deprecated, but currently is require to compile with the latest pubilshed doocs release It will be changed to ArchiveStatus.</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_d__text_unifier_8cpp_source.html#l00006">6</a> of file <a class="el" href="_d__text_unifier_8cpp_source.html">D_textUnifier.cpp</a>.</p>
 
@@ -228,7 +227,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_d__text_unifier.html">D_textUnifier</a></li>
-    <li class="footer">Generated on Fri Apr 10 2020 03:54:40 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Thu Apr 23 2020 07:39:37 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
