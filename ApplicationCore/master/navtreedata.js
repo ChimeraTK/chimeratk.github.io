@@ -22,6 +22,7 @@ var NAVTREE =
         [ "Implementation details", "exception_handling_design.html#exception_handling_impl_details", null ]
       ] ]
     ] ],
+    [ "Technical specification: StatusAggregator", "spec__status_aggregator.html", null ],
     [ "Example 1: Application with two modules and two hardware devices", "example1.html", null ],
     [ "Example 2: Small but complete application with a proportional controller", "example2.html", null ],
     [ "Example 2a: Application with automation module", "example2a.html", null ],
@@ -73,7 +74,7 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8fae0ac20adce6ffee48c7151b070aa5737",
 "class_chimera_t_k_1_1_test_facility.html#ac070dc64f09a1fffdd1967c345d1cb84",
 "demo_app2c_8cc.html",
-"struct_chimera_t_k_1_1_const_multiplier.html#afbbfc242679a44a274b8e43b3fcbe135",
+"struct_chimera_t_k_1_1_const_multiplier.html#a8eecbb269915d10f40dfb12b16ffafcc",
 "struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb"
 ];
 

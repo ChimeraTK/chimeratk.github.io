@@ -83,6 +83,7 @@ var searchData=
   ['sp',['sp',['../struct_controller.html#abc1bd02bfdaf29b368c4d558e087250a',1,'Controller']]],
   ['spec_5fdatavaliditypropagation_2emd',['spec_dataValidityPropagation.md',['../spec__data_validity_propagation_8md.html',1,'']]],
   ['spec_5finitialvaluepropagation_2emd',['spec_initialValuePropagation.md',['../spec__initial_value_propagation_8md.html',1,'']]],
+  ['spec_5fstatusaggregator_2emd',['spec_StatusAggregator.md',['../spec___status_aggregator_8md.html',1,'']]],
   ['splitarray_2eh',['SplitArray.h',['../_split_array_8h.html',1,'']]],
   ['ss',['ss',['../struct_chimera_t_k_1_1_runtime_error_collector.html#ad272246e2c2062472fc4260e4e993e76',1,'ChimeraTK::RuntimeErrorCollector']]],
   ['startmeasurement',['startMeasurement',['../class_chimera_t_k_1_1_profiler.html#a554c05bc62a8da847726645b94a62e5c',1,'ChimeraTK::Profiler']]],
