@@ -117,9 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af8df339d4a0700087e48d57223231d88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88">read</a> ()</td></tr>
 <tr class="memdesc:af8df339d4a0700087e48d57223231d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger read transfer for all accessors in the group.  <a href="#af8df339d4a0700087e48d57223231d88">More...</a><br /></td></tr>
 <tr class="separator:af8df339d4a0700087e48d57223231d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addc288b86f8349ee1c7c18ec82560a84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#addc288b86f8349ee1c7c18ec82560a84">write</a> ()</td></tr>
-<tr class="memdesc:addc288b86f8349ee1c7c18ec82560a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger write transfer for all accessors in the group.  <a href="#addc288b86f8349ee1c7c18ec82560a84">More...</a><br /></td></tr>
-<tr class="separator:addc288b86f8349ee1c7c18ec82560a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86287fe11f64206207e0d868ed83c3db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a86287fe11f64206207e0d868ed83c3db">write</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber={})</td></tr>
+<tr class="memdesc:a86287fe11f64206207e0d868ed83c3db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger write transfer for all accessors in the group.  <a href="#a86287fe11f64206207e0d868ed83c3db">More...</a><br /></td></tr>
+<tr class="separator:a86287fe11f64206207e0d868ed83c3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e2a181be4626c14587c6d302f0c90eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a3e2a181be4626c14587c6d302f0c90eb">isReadOnly</a> ()</td></tr>
 <tr class="memdesc:a3e2a181be4626c14587c6d302f0c90eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transfer group is read-only.  <a href="#a3e2a181be4626c14587c6d302f0c90eb">More...</a><br /></td></tr>
 <tr class="separator:a3e2a181be4626c14587c6d302f0c90eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,9 +145,9 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Group multiple data accessors to efficiently trigger data transfers on the whole group. </p>
 <p>In case of some backends like the <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html" title="Backend to map logical register names onto real hardware registers. ">LogicalNameMappingBackend</a>, grouping data accessors can avoid unnecessary transfers of the same data. This happens in particular, if accessing the data of one accessor requires transfer of a bigger block of data containing also data of another accessor (e.g. channel accessors for multiplexed 2D registers).</p>
-<p>Note that <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88" title="Trigger read transfer for all accessors in the group. ">read()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#addc288b86f8349ee1c7c18ec82560a84" title="Trigger write transfer for all accessors in the group. ">write()</a> of the accessors put into the group can no longer be used. Instead, <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88" title="Trigger read transfer for all accessors in the group. ">read()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#addc288b86f8349ee1c7c18ec82560a84" title="Trigger write transfer for all accessors in the group. ">write()</a> of the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> should be called.</p>
-<p>Grouping accessors can only work with accessors that internally buffer the transferred data. Therefore the deprecated <a class="el" href="class_chimera_t_k_1_1_register_accessor.html" title="DEPRECATED! Use BufferingRegisterAccessor instead! ">RegisterAccessor</a> is not supported, as its <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88" title="Trigger read transfer for all accessors in the group. ">read()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#addc288b86f8349ee1c7c18ec82560a84" title="Trigger write transfer for all accessors in the group. ">write()</a> functions always directly read from/write to the hardware.</p>
-<p>Important note: If accessors pointing to the same values are added to the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a>, the behaviour will be when writing. Depending on the backend and on the exact scenario, the accessors might appear like a copy sharing the internal buffers, thus writing to one accessor may (or may not) change the content of the other. Also calling <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#addc288b86f8349ee1c7c18ec82560a84" title="Trigger write transfer for all accessors in the group. ">write()</a> has then undefined behaviour, since it is not defined from which accessor the values will be written to the device (maybe both in an undefined order). </p>
+<p>Note that <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88" title="Trigger read transfer for all accessors in the group. ">read()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a86287fe11f64206207e0d868ed83c3db" title="Trigger write transfer for all accessors in the group. ">write()</a> of the accessors put into the group can no longer be used. Instead, <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88" title="Trigger read transfer for all accessors in the group. ">read()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a86287fe11f64206207e0d868ed83c3db" title="Trigger write transfer for all accessors in the group. ">write()</a> of the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> should be called.</p>
+<p>Grouping accessors can only work with accessors that internally buffer the transferred data. Therefore the deprecated <a class="el" href="class_chimera_t_k_1_1_register_accessor.html" title="DEPRECATED! Use BufferingRegisterAccessor instead! ">RegisterAccessor</a> is not supported, as its <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88" title="Trigger read transfer for all accessors in the group. ">read()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a86287fe11f64206207e0d868ed83c3db" title="Trigger write transfer for all accessors in the group. ">write()</a> functions always directly read from/write to the hardware.</p>
+<p>Important note: If accessors pointing to the same values are added to the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a>, the behaviour will be when writing. Depending on the backend and on the exact scenario, the accessors might appear like a copy sharing the internal buffers, thus writing to one accessor may (or may not) change the content of the other. Also calling <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a86287fe11f64206207e0d868ed83c3db" title="Trigger write transfer for all accessors in the group. ">write()</a> has then undefined behaviour, since it is not defined from which accessor the values will be written to the device (maybe both in an undefined order). </p>
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_transfer_group_8h_source.html#l00041">41</a> of file <a class="el" href="device_2include_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -378,8 +378,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="addc288b86f8349ee1c7c18ec82560a84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addc288b86f8349ee1c7c18ec82560a84">&#9670;&nbsp;</a></span>write()</h2>
+<a id="a86287fe11f64206207e0d868ed83c3db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86287fe11f64206207e0d868ed83c3db">&#9670;&nbsp;</a></span>write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,7 +387,8 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void ChimeraTK::TransferGroup::write </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&#160;</td>
+          <td class="paramname"><em>versionNumber</em> = <code>{}</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -401,7 +402,7 @@ Protected Attributes</h2></td></tr>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_addc288b86f8349ee1c7c18ec82560a84_cgraph.svg" width="446" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a86287fe11f64206207e0d868ed83c3db_cgraph.svg" width="446" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -409,7 +410,7 @@ Protected Attributes</h2></td></tr>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_addc288b86f8349ee1c7c18ec82560a84_icgraph.svg" width="446" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a86287fe11f64206207e0d868ed83c3db_icgraph.svg" width="446" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -531,7 +532,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html">TransferGroup</a></li>
-    <li class="footer">Generated on Wed Apr 22 2020 03:53:10 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Apr 23 2020 07:37:51 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
