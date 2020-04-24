@@ -291,7 +291,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>Introduce non-virtual <code>TransferElement::readTransfer()</code> etc, i.e. all functions like <code>do[...]Transfer[...]()</code> should have non-virtual pendants without <code>do</code>.</li>
 <li>These new functions will call the actual <code>do[...]Transfer[...]()</code> function, but place a try-catch-block around to catch all <a class="el" href="namespace_chimera_t_k.html" title="Generic modules for status monitoring. ">ChimeraTK</a> exceptions</li>
 <li>The exceptions are stored and operation is continued. In case of boolean return values correct values must be implemented:<ul>
-<li><code>doReadTransferNonBlocking()</code>and <code>doReadTransferLatest()</code> must return false (there was no new data)</li>
+<li><code>doReadTransferNonBlocking()</code>and <code>doReadTransferLatest()</code> must return false (there was no new data), except for the ExceptionHandlingDecorator which has to return true if it will do a recovery in postRead() and there will be new data.</li>
 <li><code>doWriteTransfer()</code> shall return true (dataLost), except for the ExceptionHandlingDecorator. It should return true only if the data of the recovery accessor is replaced and the previous value has not been written to the hardware.</li>
 </ul>
 </li>
@@ -354,7 +354,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Thu Apr 23 2020 08:49:26 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Apr 24 2020 03:54:02 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
