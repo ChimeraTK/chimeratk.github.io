@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DFMC-MD22 Motor Controller
    &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmtca4u_1_1_motor_controler_impl.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemtca4u.html">mtca4u</a></li><li class="navelem"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html">MotorControlerImpl</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -73,19 +90,31 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_motor_controler_impl_8h_source.html">MotorControlerImpl.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for mtca4u::MotorControlerImpl:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classmtca4u_1_1_motor_controler_impl.png" usemap="#mtca4u::MotorControlerImpl_map" alt=""/>
-  <map id="mtca4u::MotorControlerImpl_map" name="mtca4u::MotorControlerImpl_map">
-<area href="classmtca4u_1_1_motor_controler_expert.html" title="A class to controll stepper motors using the DFMC-MD22 card. " alt="mtca4u::MotorControlerExpert" shape="rect" coords="0,56,180,80"/>
-<area href="classmtca4u_1_1_motor_controler.html" title="A class to controll stepper motors using the DFMC-MD22 card. " alt="mtca4u::MotorControler" shape="rect" coords="0,0,180,24"/>
-</map>
- </div></div>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mtca4u::MotorControlerImpl:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl__inherit__graph.svg" width="230" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mtca4u::MotorControlerImpl:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl__coll__graph.svg" width="230" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:af9ff28a665092e8c601cd5d0c2df69c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af9ff28a665092e8c601cd5d0c2df69c3">MotorControlerImpl</a> (unsigned int ID, boost::shared_ptr&lt; ChimeraTK::Device &gt; const &amp;device, <a class="el" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> const &amp;moduleName, boost::shared_ptr&lt; <a class="el" href="classmtca4u_1_1_t_m_c429_s_p_i.html">TMC429SPI</a> &gt; const &amp;controlerSPI, <a class="el" href="structmtca4u_1_1_motor_controler_config.html">MotorControlerConfig</a> const &amp;motorControlerConfig)</td></tr>
+<tr class="memdesc:af9ff28a665092e8c601cd5d0c2df69c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor gets references shared pointers which it copies internally, so the object stays valid even if the original shared pointer goes out of scope.  <a href="#af9ff28a665092e8c601cd5d0c2df69c3">More...</a><br /></td></tr>
+<tr class="separator:af9ff28a665092e8c601cd5d0c2df69c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d538f11433877964a039ee15d2d58ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a2d538f11433877964a039ee15d2d58ec">MotorControlerImpl</a> (<a class="el" href="classmtca4u_1_1_motor_controler_impl.html">MotorControlerImpl</a> const &amp;)=delete</td></tr>
+<tr class="memdesc:a2d538f11433877964a039ee15d2d58ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class is non-copyable.  <a href="#a2d538f11433877964a039ee15d2d58ec">More...</a><br /></td></tr>
+<tr class="separator:a2d538f11433877964a039ee15d2d58ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1654b5295f6b57d0f0dc959e717b1fe6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1654b5295f6b57d0f0dc959e717b1fe6">enableFullStepping</a> (bool enable=true)</td></tr>
 <tr class="separator:a1654b5295f6b57d0f0dc959e717b1fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43b2024f352bd05fb923493b2edc4520"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_acceleration_threshold_data.html">AccelerationThresholdData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a43b2024f352bd05fb923493b2edc4520">getAccelerationThresholdData</a> ()</td></tr>
@@ -192,12 +221,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af54e43e269debc45741787fa63c13828"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af54e43e269debc45741787fa63c13828">isMotorMoving</a> ()</td></tr>
 <tr class="memdesc:af54e43e269debc45741787fa63c13828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns True if the motor is in motion or False if at standstill.  <a href="#af54e43e269debc45741787fa63c13828">More...</a><br /></td></tr>
 <tr class="separator:af54e43e269debc45741787fa63c13828"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9ff28a665092e8c601cd5d0c2df69c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#af9ff28a665092e8c601cd5d0c2df69c3">MotorControlerImpl</a> (unsigned int ID, boost::shared_ptr&lt; ChimeraTK::Device &gt; const &amp;device, std::string const &amp;moduleName, boost::shared_ptr&lt; <a class="el" href="classmtca4u_1_1_t_m_c429_s_p_i.html">TMC429SPI</a> &gt; const &amp;controlerSPI, <a class="el" href="structmtca4u_1_1_motor_controler_config.html">MotorControlerConfig</a> const &amp;motorControlerConfig)</td></tr>
-<tr class="memdesc:af9ff28a665092e8c601cd5d0c2df69c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor gets references shared pointers which it copies internally, so the object stays valid even if the original shared pointer goes out of scope.  <a href="#af9ff28a665092e8c601cd5d0c2df69c3">More...</a><br /></td></tr>
-<tr class="separator:af9ff28a665092e8c601cd5d0c2df69c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d538f11433877964a039ee15d2d58ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a2d538f11433877964a039ee15d2d58ec">MotorControlerImpl</a> (<a class="el" href="classmtca4u_1_1_motor_controler_impl.html">MotorControlerImpl</a> const &amp;)=delete</td></tr>
-<tr class="memdesc:a2d538f11433877964a039ee15d2d58ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class is non-copyable.  <a href="#a2d538f11433877964a039ee15d2d58ec">More...</a><br /></td></tr>
-<tr class="separator:a2d538f11433877964a039ee15d2d58ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51f30275325d1f2e14b12af8a792220a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html">MotorControlerImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a51f30275325d1f2e14b12af8a792220a">operator=</a> (<a class="el" href="classmtca4u_1_1_motor_controler_impl.html">MotorControlerImpl</a> const &amp;)=delete</td></tr>
 <tr class="memdesc:a51f30275325d1f2e14b12af8a792220a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class is non-assignable.  <a href="#a51f30275325d1f2e14b12af8a792220a">More...</a><br /></td></tr>
 <tr class="separator:a51f30275325d1f2e14b12af8a792220a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,7 +325,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> const &amp;&#160;</td>
           <td class="paramname"><em>moduleName</em>, </td>
         </tr>
         <tr>
@@ -479,6 +502,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#aa1b0066fab356a076c351ad3cc40c498">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00146">146</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_adacb4e7617913538c4a53a01b868bca7_cgraph.svg" width="468" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -510,6 +541,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a222334b1cefcd43bdd1ee4318df3e416">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00167">167</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_ad8e18aa5cec73c4b8fc52e61d153dbf7_cgraph.svg" width="468" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -866,6 +905,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a469672dcb48a0831a6f6d4b40b8c1894">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00476">476</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_a567368a21acc304efdc6d8ede5fb1928_cgraph.svg" width="459" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -1233,6 +1280,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#af574bb5e420cfbc34346409f474045eb">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00434">434</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_aa0e873a430de3709779ca6275e1230cb_cgraph.svg" width="100%" height="400"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -1264,6 +1319,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a82f8f1a56fcd4721c134b6a493b41502">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00359">359</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_a4ade42f52bddecb8aba9784ea41722e4_cgraph.svg" width="499" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -1386,6 +1449,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#ae5a257e798f80cf1fa3367098992bef0">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00246">246</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_a6e1bc73450be0f1a907183dc31e21f25_cgraph.svg" width="468" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -1475,6 +1546,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a9ca814a902b39c019f4604e7e63448c9">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00329">329</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_a2a1c1ac60f2f73114a892cfb0b091ca8_cgraph.svg" width="462" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -1505,6 +1584,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#aeb0cf026e210adea3416b4ab50d718c1">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00235">235</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_a9fb1442acb6d2a977eae1502917975aa_cgraph.svg" width="470" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -1534,6 +1621,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#ab6d20c28552da11cc2e10fd357f86950">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00581">581</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_ab9454aa7fad953a4c83e796522760062_cgraph.svg" width="470" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -1592,6 +1687,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a2b5efcd4742f2161c2c15a4393fec6f5">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00566">566</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_a286b61cd86f9588350dc49f4349ef164_icgraph.svg" width="470" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -1626,6 +1729,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a7f4ad39ba04599f7093fd849b70db66f">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00520">520</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_af54e43e269debc45741787fa63c13828_cgraph.svg" width="500" height="444"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -1746,6 +1857,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a1ea016a20846eef85f97c6e5e8c9aa6d">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00161">161</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_a2702a2299e9c577806d68853c11a046e_cgraph.svg" width="468" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -1766,6 +1885,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00173">173</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_adcf0048d074761988c41ec2c237f9c1a_cgraph.svg" width="468" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -1946,6 +2073,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#a64590bc61eb16ea15fa55dc42b120fa5">mtca4u::MotorControlerExpert</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00350">350</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_a9f217f058ff015dcffe5ed0b95da9530_cgraph.svg" width="412" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -2007,6 +2142,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a9de29d5902d0b47d9da1dd9576b27860">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00230">230</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_a7c8abe212e61d8a8e07ea245b1eca3a5_cgraph.svg" width="470" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -2127,6 +2270,22 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#accbe80afa9d23c6a2028f795351e81c8">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00300">300</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_af887f478bd2a0159d236c940918723d9_cgraph.svg" width="472" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_af887f478bd2a0159d236c940918723d9_icgraph.svg" width="470" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -2217,6 +2376,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#aca1e312359ce775889823a61231e16b9">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00560">560</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_a1212f671047657455a20d7663f1a5848_icgraph.svg" width="470" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -2497,6 +2664,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler_expert.html#ab8b6566b1583d26531c401139d84efb9">mtca4u::MotorControlerExpert</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00349">349</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_ae55722f5c6effd190b0f4f50bf5b5293_icgraph.svg" width="470" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -2527,6 +2702,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a7f891de90c1630fce8c3b35742188fe7">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00256">256</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_a79d7ae8f048ea642b8f07f10ee34053c_cgraph.svg" width="468" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -2617,6 +2800,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a214907d82e6b618af41c4d8680448876">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00322">322</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_a33b189e7c6989dc592967e5b1b360267_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -2648,6 +2839,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#aee36371b3b39fae124c37698082c4b65">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_impl_8cc_source.html#l00426">426</a> of file <a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a>.</p>
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_impl_ab4c37b67435001447829b6551bdc6062_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -2656,11 +2855,15 @@ Public Member Functions</h2></td></tr>
 <li>backend/src/<a class="el" href="_motor_controler_impl_8cc_source.html">MotorControlerImpl.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 13 2019 04:55:05 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemtca4u.html">mtca4u</a></li><li class="navelem"><a class="el" href="classmtca4u_1_1_motor_controler_impl.html">MotorControlerImpl</a></li>
+    <li class="footer">Generated on Tue Apr 28 2020 03:55:38 for DFMC-MD22 Motor Controller by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

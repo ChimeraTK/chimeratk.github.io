@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DFMC-MD22 Motor Controller
    &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_s.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -63,8 +84,33 @@ $(function() {
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>save()
+: <a class="el" href="classpugi_1_1xml__document.html#a749b8293a96d00b8c152cc1523f131a1">pugi::xml_document</a>
+</li>
+<li>save_file()
+: <a class="el" href="classpugi_1_1xml__document.html#a1eb041501ba9c78706080a6bfe661389">pugi::xml_document</a>
+</li>
 <li>ScalingUnitsConverter()
 : <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_scaling_units_converter.html#a1475868f745a637acda0957a6a10dcf3">ChimeraTK::MotorDriver::utility::ScalingUnitsConverter&lt; T &gt;</a>
+</li>
+<li>select_nodes()
+: <a class="el" href="classpugi_1_1xml__node.html#adbe78a62d770a3a1b44e2297973a9a8e">pugi::xml_node</a>
+</li>
+<li>select_single_node()
+: <a class="el" href="classpugi_1_1xml__node.html#a056b21c47cf6f04dc370399d63b6ab42">pugi::xml_node</a>
+</li>
+<li>set()
+: <a class="el" href="classpugi_1_1xml__text.html#a7d7433fbbe94f4a4cbb536be7c91b663">pugi::xml_text</a>
+, <a class="el" href="classpugi_1_1xpath__variable.html#a98a3c1f836dfd0c89108a811252be28f">pugi::xpath_variable</a>
+, <a class="el" href="classpugi_1_1xpath__variable__set.html#a4aa2947aa449a1ebb3a9b9aba3e9b71f">pugi::xpath_variable_set</a>
+</li>
+<li>set_name()
+: <a class="el" href="classpugi_1_1xml__attribute.html#adf87dd144917b592835ca4b7ea5b0bd7">pugi::xml_attribute</a>
+, <a class="el" href="classpugi_1_1xml__node.html#a76043b1d6318d2e26f05d1725df73761">pugi::xml_node</a>
+</li>
+<li>set_value()
+: <a class="el" href="classpugi_1_1xml__attribute.html#a8d7a896e0d868cce8e52de578dc05eb0">pugi::xml_attribute</a>
+, <a class="el" href="classpugi_1_1xml__node.html#affa26e7cc8d95259ea426c1be348e37c">pugi::xml_node</a>
 </li>
 <li>setAccelerationThreshold()
 : <a class="el" href="classmtca4u_1_1_acceleration_threshold_data.html#a39aee0062ab9e65348aca52f048d4772">mtca4u::AccelerationThresholdData</a>
@@ -444,6 +490,12 @@ $(function() {
 , <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a453e9800d8db162d3756fd68876fe2bc">mtca4u::MotorControlerDummy</a>
 , <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a1212f671047657455a20d7663f1a5848">mtca4u::MotorControlerImpl</a>
 </li>
+<li>setMotorEnabled()
+: <a class="el" href="class_motor_config_widget.html#a10b198363f057c286623a92fc2f3dd69">MotorConfigWidget</a>
+</li>
+<li>setMotorExpertPanel()
+: <a class="el" href="class_motor_config_widget.html#aa55948cedca832ab1cdeaa1295ca3b48">MotorConfigWidget</a>
+</li>
 <li>setMultiplicationParameter()
 : <a class="el" href="classmtca4u_1_1_proportionality_factor_data.html#a4573a673b54de447110855364d72c728">mtca4u::ProportionalityFactorData</a>
 </li>
@@ -483,6 +535,9 @@ $(function() {
 </li>
 <li>setOvertemperatureWarning()
 : <a class="el" href="classmtca4u_1_1_driver_status_data.html#ae83ee8f6d4867efa39034bbf287b4059">mtca4u::DriverStatusData</a>
+</li>
+<li>setParameter()
+: <a class="el" href="class_parameters_panel.html#aa584e5ab6d32d19b0ee076c3cc2b9f73">ParametersPanel</a>
 </li>
 <li>setPayloadData()
 : <a class="el" href="classmtca4u_1_1_chopper_control_data.html#a45d589b026c540ff5f05d69b5b7d77b0">mtca4u::ChopperControlData</a>
@@ -748,6 +803,9 @@ $(function() {
 , <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a33b189e7c6989dc592967e5b1b360267">mtca4u::MotorControlerImpl</a>
 , <a class="el" href="classmtca4u_1_1_stepper_motor.html#aa83d50ae7c6415a24ac4bb2fd51b0c30">mtca4u::StepperMotor</a>
 </li>
+<li>setValue()
+: <a class="el" href="class_parameter_widget.html#ab1344dfc3de7dc964ca4eeb8bc231445">ParameterWidget</a>
+</li>
 <li>setxEQt1()
 : <a class="el" href="classmtca4u_1_1_t_m_c429_output_word.html#a45a34668483dc8a632b9da016cfef3c8">mtca4u::TMC429OutputWord</a>
 </li>
@@ -763,6 +821,12 @@ $(function() {
 <li>simulateBlockedMotor()
 : <a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#adc3b2e0fa9c30ea8a01103b2ca8539df">mtca4u::MotorControlerDummy</a>
 </li>
+<li>size()
+: <a class="el" href="classpugi_1_1xpath__node__set.html#ac4092c3ab60b9a6e43e2f44e6d50b934">pugi::xpath_node_set</a>
+</li>
+<li>sort()
+: <a class="el" href="classpugi_1_1xpath__node__set.html#a53b4915362d3c73100d3b73ac40ab8f2">pugi::xpath_node_set</a>
+</li>
 <li>SPI_DEFAULT_WAITING_TIME
 : <a class="el" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#a0b12fea46722b0d69f116e90265b9273">mtca4u::SPIviaPCIe</a>
 </li>
@@ -773,7 +837,7 @@ $(function() {
 : <a class="el" href="classmtca4u_1_1_motor_driver_exception.html#aef53ec5642ed9ce0f5bdd2c846807efda7c93d4aec12f163ee3c572148f522c14">mtca4u::MotorDriverException</a>
 </li>
 <li>SPIviaPCIe()
-: <a class="el" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#ac3650dc91c467c7c5d954951cbe95c23">mtca4u::SPIviaPCIe</a>
+: <a class="el" href="classmtca4u_1_1_s_p_ivia_p_c_ie.html#af56cd949070a75797995219eb81b0515">mtca4u::SPIviaPCIe</a>
 </li>
 <li>stallGuardControlData
 : <a class="el" href="structmtca4u_1_1_motor_controler_config.html#ae36a3360d9d6a79fb6495da2ed67babc">mtca4u::MotorControlerConfig</a>
@@ -798,12 +862,13 @@ $(function() {
 <li>status
 : <a class="el" href="classmtca4u_1_1_linear_stepper_motor_status_and_error.html#a28702952d7bfd6a02270281da85408be">mtca4u::LinearStepperMotorStatusAndError</a>
 , <a class="el" href="classmtca4u_1_1_stepper_motor_status_and_error.html#a0fc5e626108150c92cbe459371f659f4">mtca4u::StepperMotorStatusAndError</a>
+, <a class="el" href="structpugi_1_1xml__parse__result.html#af8b3e6badea671931017695c8a9dd1af">pugi::xml_parse_result</a>
 </li>
 <li>StepperMotor()
 : <a class="el" href="classmtca4u_1_1_stepper_motor.html#a1cc4b38229a1c5c79d52b4e8a0ef2540">mtca4u::StepperMotor</a>
 </li>
 <li>StepperMotorCalibrationStatus()
-: <a class="el" href="classmtca4u_1_1_stepper_motor_calibration_status.html#a6126e945ead1a32b2b351591a9389bfe">mtca4u::StepperMotorCalibrationStatus</a>
+: <a class="el" href="classmtca4u_1_1_stepper_motor_calibration_status.html#a2bf26b083d2a92eea326d3b1769866ab">mtca4u::StepperMotorCalibrationStatus</a>
 </li>
 <li>StepperMotorError()
 : <a class="el" href="classmtca4u_1_1_stepper_motor_error.html#a68926a13188d4750e309ec6d9262be7f">mtca4u::StepperMotorError</a>
@@ -821,7 +886,7 @@ $(function() {
 : <a class="el" href="classmtca4u_1_1_stepper_motor_global_parameters.html#af27447ea65182441c87e8bee8a3dc9a1">mtca4u::StepperMotorGlobalParameters</a>
 </li>
 <li>StepperMotorStatus()
-: <a class="el" href="classmtca4u_1_1_stepper_motor_status.html#aa7679f407308928db06c73e2b822715b">mtca4u::StepperMotorStatus</a>
+: <a class="el" href="classmtca4u_1_1_stepper_motor_status.html#a99e047f30746c04224cb55da4927a075">mtca4u::StepperMotorStatus</a>
 </li>
 <li>StepperMotorStatusAndError()
 : <a class="el" href="classmtca4u_1_1_stepper_motor_status_and_error.html#a2b0d1fd58d1f0989b738c1a628e2ce1f">mtca4u::StepperMotorStatusAndError</a>
@@ -840,13 +905,19 @@ $(function() {
 <li>stopEvent
 : <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html#aae91616f3880956567965248fb803ef2">ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine</a>
 </li>
+<li>systemClock
+: <a class="el" href="class_parameters_calculator_1_1_physical_parameters.html#a852114822c66fc5bb0007781f4bd22e2">ParametersCalculator::PhysicalParameters</a>
+</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 13 2019 04:55:05 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Apr 28 2020 03:55:38 for DFMC-MD22 Motor Controller by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

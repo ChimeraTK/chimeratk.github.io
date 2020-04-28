@@ -1,12 +1,19 @@
 var searchData=
 [
+  ['calculateconfig',['calculateConfig',['../class_config_calculator.html#a6adeb915f674ec82d1ff906996c2ccaa',1,'ConfigCalculator']]],
+  ['calculateparameters',['calculateParameters',['../class_parameters_calculator.html#a9c86d4cbd13fa20d66d83edeabb4b1c3',1,'ParametersCalculator']]],
   ['calibrate',['calibrate',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a24b93de3579d3b15afc4d25d712ac1ee',1,'ChimeraTK::MotorDriver::BasicStepperMotor::calibrate()'],['../class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#ae7f0c1d3c90c5646f9b662a0cd6b51ff',1,'ChimeraTK::MotorDriver::LinearStepperMotor::calibrate()'],['../class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a9c2b6f7dece25b39f6b5ff62b28344de',1,'ChimeraTK::MotorDriver::StepperMotor::calibrate()']]],
   ['calibratemotor',['calibrateMotor',['../classmtca4u_1_1_linear_stepper_motor.html#a611a659fe86f56f6b2c2c1e9cea8bfb3',1,'mtca4u::LinearStepperMotor::calibrateMotor()'],['../classmtca4u_1_1_stepper_motor.html#a15c91ba3b986f503db679e079b0cc64c',1,'mtca4u::StepperMotor::calibrateMotor()']]],
   ['calibrationthreadfunction',['calibrationThreadFunction',['../class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor_1_1_state_machine.html#a495dbe7f73fff043fe67fcaf88f657db',1,'ChimeraTK::MotorDriver::LinearStepperMotor::StateMachine']]],
   ['causespierrors',['causeSpiErrors',['../classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#a7af9c112cd5e938249c84fbfe0b88587',1,'mtca4u::DFMC_MD22Dummy']]],
   ['causespitimeouts',['causeSpiTimeouts',['../classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#aa099dcd30cacb731c0143a45ab47b7b5',1,'mtca4u::DFMC_MD22Dummy']]],
+  ['check_5fxml',['check_xml',['../load__error__handling_8cpp.html#ad21e7a54328496b4001bab1a2f621817',1,'load_error_handling.cpp']]],
   ['checkifoverflow',['checkIfOverflow',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a868f247a7fc2e7ba533d7e778dc52bb3',1,'ChimeraTK::MotorDriver::BasicStepperMotor']]],
   ['checknewposition',['checkNewPosition',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a52f87982a6c31537e43c2cd91e2c0a52',1,'ChimeraTK::MotorDriver::BasicStepperMotor::checkNewPosition()'],['../class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#af643f5b4849f342121b2bf7a24635d4e',1,'ChimeraTK::MotorDriver::LinearStepperMotor::checkNewPosition()']]],
+  ['child',['child',['../classpugi_1_1xml__node.html#af3994814d80cdf2aef455bf3948c3385',1,'pugi::xml_node']]],
+  ['child_5fvalue',['child_value',['../classpugi_1_1xml__node.html#ab0fca49d6bfdf83c21e81b3ac96bfea4',1,'pugi::xml_node::child_value() const'],['../classpugi_1_1xml__node.html#ad31835b1a5317ab53d2965f3c0bc3a6d',1,'pugi::xml_node::child_value(const char_t *name) const']]],
+  ['children',['children',['../classpugi_1_1xml__node.html#a5a71c1067b728a67b5757aeef311f2de',1,'pugi::xml_node::children() const'],['../classpugi_1_1xml__node.html#a83f2e0d78500b63cc365679de9c1695f',1,'pugi::xml_node::children(const char_t *name) const'],['../namespacepugi.html#adb155026e75702141a0f0211fef15914',1,'pugi::children()']]],
+  ['chipparameters',['ChipParameters',['../struct_parameters_calculator_1_1_chip_parameters.html#a9833409b897f6ef576d934f1779b5826',1,'ParametersCalculator::ChipParameters']]],
   ['choppercontroldata',['ChopperControlData',['../classmtca4u_1_1_chopper_control_data.html#a9ebb4426034d7d7bbd0814522d72f694',1,'mtca4u::ChopperControlData']]],
   ['coolstepcontroldata',['CoolStepControlData',['../classmtca4u_1_1_cool_step_control_data.html#a7b0faf55d09ba13d6ade52e3d4925d2f',1,'mtca4u::CoolStepControlData']]],
   ['coverpositionandlength',['CoverPositionAndLength',['../classmtca4u_1_1_cover_position_and_length.html#a49854936a56aca5a022a5dc4d733a15f',1,'mtca4u::CoverPositionAndLength']]],
@@ -15,5 +22,7 @@ var searchData=
   ['createmotordrivercard',['createMotorDriverCard',['../classmtca4u_1_1_motor_driver_card_factory.html#a3f682c513d5cc33212a22ab0485182bb',1,'mtca4u::MotorDriverCardFactory']]],
   ['createmotorregistername',['createMotorRegisterName',['../namespacemtca4u_1_1dfmc__md22.html#a69286972619a5da45a6e755bbb376d35',1,'mtca4u::dfmc_md22']]],
   ['createoutputmaskusingsettergetter',['createOutputMaskUsingSetterGetter',['../namespacemtca4u.html#a17d54b943ef2096c72ee576a5618a480',1,'mtca4u']]],
+  ['custom_5fallocate',['custom_allocate',['../custom__memory__management_8cpp.html#a9ff5b6320bf1ac15f63808f16ccc6770',1,'custom_memory_management.cpp']]],
+  ['custom_5fdeallocate',['custom_deallocate',['../custom__memory__management_8cpp.html#a4180a355b8cd5f3c7377d8405f7786d9',1,'custom_memory_management.cpp']]],
   ['customtothirtytwo',['customToThirtyTwo',['../classmtca4u_1_1_signed_int_converter.html#a3a2f635e5fd26ec2591e18376e402d1a',1,'mtca4u::SignedIntConverter']]]
 ];

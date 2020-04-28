@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DFMC-MD22 Motor Controller
    &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmtca4u_1_1_motor_controler_dummy.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemtca4u.html">mtca4u</a></li><li class="navelem"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html">MotorControlerDummy</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -76,18 +93,27 @@ $(function() {
  <a href="classmtca4u_1_1_motor_controler_dummy.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_motor_controler_dummy_8h_source.html">MotorControlerDummy.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for mtca4u::MotorControlerDummy:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classmtca4u_1_1_motor_controler_dummy.png" usemap="#mtca4u::MotorControlerDummy_map" alt=""/>
-  <map id="mtca4u::MotorControlerDummy_map" name="mtca4u::MotorControlerDummy_map">
-<area href="classmtca4u_1_1_motor_controler.html" title="A class to controll stepper motors using the DFMC-MD22 card. " alt="mtca4u::MotorControler" shape="rect" coords="0,0,185,24"/>
-</map>
- </div></div>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mtca4u::MotorControlerDummy:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_dummy__inherit__graph.svg" width="239" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mtca4u::MotorControlerDummy:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_dummy__coll__graph.svg" width="239" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a829a90a7415f904a666b96f4b55ec272"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a829a90a7415f904a666b96f4b55ec272">MotorControlerDummy</a> (unsigned int id)</td></tr>
+<tr class="separator:a829a90a7415f904a666b96f4b55ec272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a203cda9ca983062c77715d10b66c857e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a203cda9ca983062c77715d10b66c857e">enableFullStepping</a> (bool enable=true)</td></tr>
 <tr class="separator:a203cda9ca983062c77715d10b66c857e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cbd4e82eb3ab46b972bd42ff7878513"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a2cbd4e82eb3ab46b972bd42ff7878513">getActualAcceleration</a> ()</td></tr>
@@ -170,8 +196,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab89245462dd25d47a7244bcb6e40253c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ab89245462dd25d47a7244bcb6e40253c">isMotorMoving</a> ()</td></tr>
 <tr class="memdesc:ab89245462dd25d47a7244bcb6e40253c"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the motor is moving.  <a href="#ab89245462dd25d47a7244bcb6e40253c">More...</a><br /></td></tr>
 <tr class="separator:ab89245462dd25d47a7244bcb6e40253c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a829a90a7415f904a666b96f4b55ec272"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#a829a90a7415f904a666b96f4b55ec272">MotorControlerDummy</a> (unsigned int id)</td></tr>
-<tr class="separator:a829a90a7415f904a666b96f4b55ec272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab67b23508454c78efb8816799d78a908"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html#ab67b23508454c78efb8816799d78a908">moveTowardsTarget</a> (float fraction, bool blockMotor=false, bool bothEndSwitchesAlwaysOn=false, bool zeroPositions=false)</td></tr>
 <tr class="memdesc:ab67b23508454c78efb8816799d78a908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the actual position towards the target position, as long as no end switch is reached.  <a href="#ab67b23508454c78efb8816799d78a908">More...</a><br /></td></tr>
 <tr class="separator:ab67b23508454c78efb8816799d78a908"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -911,6 +935,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a82f8f1a56fcd4721c134b6a493b41502">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00191">191</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_dummy_ae148cdaa0d680731d0f654ea79962ba5_cgraph.svg" width="522" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -942,6 +974,14 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmtca4u_1_1_motor_controler.html#a85f8dd665ee9c12b94352572b339a816">mtca4u::MotorControler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_motor_controler_dummy_8cc_source.html#l00112">112</a> of file <a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmtca4u_1_1_motor_controler_dummy_a6a5b34927a96e0ef25e1d8b9f8777157_cgraph.svg" width="478" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -2053,11 +2093,15 @@ Public Member Functions</h2></td></tr>
 <li>backend/src/<a class="el" href="_motor_controler_dummy_8cc_source.html">MotorControlerDummy.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 13 2019 04:55:05 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemtca4u.html">mtca4u</a></li><li class="navelem"><a class="el" href="classmtca4u_1_1_motor_controler_dummy.html">MotorControlerDummy</a></li>
+    <li class="footer">Generated on Tue Apr 28 2020 03:55:38 for DFMC-MD22 Motor Controller by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

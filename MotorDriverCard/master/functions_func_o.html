@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DFMC-MD22 Motor Controller
    &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_func_o.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -63,11 +84,16 @@ $(function() {
 &#160;
 
 <h3><a id="index_o"></a>- o -</h3><ul>
+<li>offset_debug()
+: <a class="el" href="classpugi_1_1xml__node.html#a7a100242db3c432629993c9d3310dd01">pugi::xml_node</a>
+</li>
 <li>open()
 : <a class="el" href="classmtca4u_1_1_d_f_m_c___m_d22_dummy.html#ac05bfddc03a4a896140f20713dad808e">mtca4u::DFMC_MD22Dummy</a>
 </li>
 <li>operator bool()
 : <a class="el" href="classmtca4u_1_1_motor_reference_switch_data.html#acf2d8f3ba877fd3c2e69d0d2e1c7729a">mtca4u::MotorReferenceSwitchData</a>
+, <a class="el" href="structpugi_1_1xml__parse__result.html#aedfccb259c0fdfd32e38988ad87c0536">pugi::xml_parse_result</a>
+, <a class="el" href="structpugi_1_1xpath__parse__result.html#a866a4534a2fd0465fcc76083d0eef9ba">pugi::xpath_parse_result</a>
 </li>
 <li>operator int()
 : <a class="el" href="class_chimera_t_k_1_1_general_status.html#a401707867e7fc3874fab9803827e9a70">ChimeraTK::GeneralStatus</a>
@@ -78,20 +104,77 @@ $(function() {
 <li>operator unsigned int()
 : <a class="el" href="class_chimera_t_k_1_1_logger_1_1_log_level.html#a5d2accca684b7f42c8515df4dd23249b">ChimeraTK::Logger::LogLevel</a>
 </li>
+<li>operator unspecified_bool_type()
+: <a class="el" href="classpugi_1_1xml__attribute.html#a4d9f0ce2e64a57861d96f995c4dcc595">pugi::xml_attribute</a>
+, <a class="el" href="classpugi_1_1xml__node.html#a05a7878cf71ede93a4dfd1a31529275e">pugi::xml_node</a>
+, <a class="el" href="classpugi_1_1xml__text.html#ad4b8add4007568e8b74c985f2f40dbf5">pugi::xml_text</a>
+, <a class="el" href="classpugi_1_1xpath__node.html#a6965eb658300e30e2a6724f275f9bf1d">pugi::xpath_node</a>
+, <a class="el" href="classpugi_1_1xpath__query.html#a1799f5625059382ad36679726adedb36">pugi::xpath_query</a>
+</li>
+<li>operator!()
+: <a class="el" href="classpugi_1_1xml__attribute.html#a6abd03b23d99015812fd7f9c2bbf37a7">pugi::xml_attribute</a>
+, <a class="el" href="classpugi_1_1xml__node.html#aab507574954191a49fa02c4f21e91960">pugi::xml_node</a>
+, <a class="el" href="classpugi_1_1xml__text.html#acb7021bd2e6421b8ab17d71865909c7e">pugi::xml_text</a>
+, <a class="el" href="classpugi_1_1xpath__node.html#a9ebb4fd1ff416179156c5330e62f67c5">pugi::xpath_node</a>
+, <a class="el" href="classpugi_1_1xpath__query.html#ae901fdf1256b475bdbf279165f9f39a3">pugi::xpath_query</a>
+</li>
 <li>operator!=()
 : <a class="el" href="class_chimera_t_k_1_1_general_status.html#ad02fb1cdaab8d1a05a150780b1905f49">ChimeraTK::GeneralStatus</a>
 , <a class="el" href="class_chimera_t_k_1_1_logger_1_1_log_level.html#a5dc28b76dc9cff20e762d94aa7f0bac0">ChimeraTK::Logger::LogLevel</a>
 , <a class="el" href="structmtca4u_1_1_motor_controler_config.html#a3c751f18ad2cb55a913b6399174ae7e4">mtca4u::MotorControlerConfig</a>
 , <a class="el" href="classmtca4u_1_1_multi_variable_word.html#a6a9ebc56c1dd05af74b6fbb3cfc53cf2">mtca4u::MultiVariableWord</a>
+, <a class="el" href="classpugi_1_1xml__attribute.html#ac4fc510f4b8f054440eda299f8c31a19">pugi::xml_attribute</a>
+, <a class="el" href="classpugi_1_1xml__attribute__iterator.html#ae22b5394d6111e04891903debc2e635b">pugi::xml_attribute_iterator</a>
+, <a class="el" href="classpugi_1_1xml__named__node__iterator.html#a39b805cfc1e180526aee9a197e6ca04a">pugi::xml_named_node_iterator</a>
+, <a class="el" href="classpugi_1_1xml__node.html#a40824364b7bfc39806c315d6a1efc5f4">pugi::xml_node</a>
+, <a class="el" href="classpugi_1_1xml__node__iterator.html#a95b842576761243db4f250371a1f4356">pugi::xml_node_iterator</a>
+, <a class="el" href="classpugi_1_1xpath__node.html#a1cea299a993bd084946bada982b9d0a9">pugi::xpath_node</a>
 </li>
 <li>operator()()
-: <a class="el" href="class_chimera_t_k_1_1_logger.html#aa837e34e03a7363f91f7ad3fb951910a">ChimeraTK::Logger</a>
+: <a class="el" href="structallow__remote__predicate.html#a28be7c5e687c2da31c20cfa493c3760c">allow_remote_predicate</a>
+, <a class="el" href="class_chimera_t_k_1_1_logger.html#a3f3dadef8f759fde6e8aa446e48c0f2a">ChimeraTK::Logger</a>
+</li>
+<li>operator*()
+: <a class="el" href="classpugi_1_1xml__attribute__iterator.html#af97ccf73f402e9bbbe5f869a9f6c8510">pugi::xml_attribute_iterator</a>
+, <a class="el" href="classpugi_1_1xml__named__node__iterator.html#aad7692a5d8dc8ec8e5bd452542bb369d">pugi::xml_named_node_iterator</a>
+, <a class="el" href="classpugi_1_1xml__node__iterator.html#affb04c050ece8665e252d5db833b1f31">pugi::xml_node_iterator</a>
+</li>
+<li>operator++()
+: <a class="el" href="classpugi_1_1xml__attribute__iterator.html#ab1fd42bac51e5daa63d282d650b68f8f">pugi::xml_attribute_iterator</a>
+, <a class="el" href="classpugi_1_1xml__named__node__iterator.html#a3aabc3fc333241b4a89d58efd464272e">pugi::xml_named_node_iterator</a>
+, <a class="el" href="classpugi_1_1xml__node__iterator.html#ac0da42807d4fb97dc44e2d09e519d998">pugi::xml_node_iterator</a>
+</li>
+<li>operator--()
+: <a class="el" href="classpugi_1_1xml__attribute__iterator.html#a47f97fffa7c6d7948172bd52dc0e506a">pugi::xml_attribute_iterator</a>
+, <a class="el" href="classpugi_1_1xml__named__node__iterator.html#afcf6a00c13f2e6be58d839a86d99a41b">pugi::xml_named_node_iterator</a>
+, <a class="el" href="classpugi_1_1xml__node__iterator.html#a651879cef7fbea2d3bf88e9478754650">pugi::xml_node_iterator</a>
+</li>
+<li>operator-&gt;()
+: <a class="el" href="classpugi_1_1xml__attribute__iterator.html#a2f0f8a2d1ac7475101834a9691100e27">pugi::xml_attribute_iterator</a>
+, <a class="el" href="classpugi_1_1xml__named__node__iterator.html#ac5a1dbbed5d8c014df5e501b4c6d3059">pugi::xml_named_node_iterator</a>
+, <a class="el" href="classpugi_1_1xml__node__iterator.html#af75dcedd76bd922a7aa4b6b567027810">pugi::xml_node_iterator</a>
+</li>
+<li>operator&lt;()
+: <a class="el" href="classpugi_1_1xml__attribute.html#aab2f2daa7acf0329948ba8fb5615733b">pugi::xml_attribute</a>
+, <a class="el" href="classpugi_1_1xml__node.html#a8f72f466e4e44ef77a49fc1f3b51b783">pugi::xml_node</a>
+</li>
+<li>operator&lt;=()
+: <a class="el" href="classpugi_1_1xml__attribute.html#a22b4a74a226f3d52b86db46340ac8940">pugi::xml_attribute</a>
+, <a class="el" href="classpugi_1_1xml__node.html#a322be74394b3726d74ce588f98f46559">pugi::xml_node</a>
 </li>
 <li>operator=()
 : <a class="el" href="class_chimera_t_k_1_1_general_status.html#afda0472aaa118592263f049c917a7b0b">ChimeraTK::GeneralStatus</a>
-, <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory.html#a37449bcf157cc6253d165c7aad188565">ChimeraTK::MotorDriver::StepperMotorFactory</a>
+, <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory.html#a8202da3c9ef7c41af854ed6218d8f74b">ChimeraTK::MotorDriver::StepperMotorFactory</a>
 , <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html#a0672e40a90107f18e5d8634a7246b853">ChimeraTK::MotorDriver::utility::StateMachine</a>
+, <a class="el" href="class_motor_config_widget.html#a774b9278697e6cbcdde5a4dee006c7dc">MotorConfigWidget</a>
 , <a class="el" href="classmtca4u_1_1_motor_controler_impl.html#a51f30275325d1f2e14b12af8a792220a">mtca4u::MotorControlerImpl</a>
+, <a class="el" href="class_parameters_panel.html#a19b5e37d6410f2dd4b046e6dea4d95d8">ParametersPanel</a>
+, <a class="el" href="class_parameter_widget.html#afcb2c5799d47f00fd309d0b5cf56fd12">ParameterWidget</a>
+, <a class="el" href="classpugi_1_1xml__attribute.html#ade0c74c5e6451b0633dcf265a01cd5a4">pugi::xml_attribute</a>
+, <a class="el" href="classpugi_1_1xml__text.html#a3bc4578645cd60eb9b543e40aef9885d">pugi::xml_text</a>
+, <a class="el" href="classpugi_1_1xpath__node__set.html#acdfbc80834c5c89b796c67b9f6939e61">pugi::xpath_node_set</a>
+, <a class="el" href="classpugi_1_1xpath__variable.html#a0cd0e1223e99c0baf46488cfd2079961">pugi::xpath_variable</a>
+, <a class="el" href="class_qt_motor_config_calculator.html#abbefdbd93338d924dc79d0351e1f879b">QtMotorConfigCalculator</a>
 </li>
 <li>operator==()
 : <a class="el" href="class_chimera_t_k_1_1_general_status.html#a121a9fc433540ebe6f0d5cf582114b9e">ChimeraTK::GeneralStatus</a>
@@ -99,14 +182,35 @@ $(function() {
 , <a class="el" href="structmtca4u_1_1_motor_controler_config.html#a7b0d9ac325cf4f5dc5838f1299aac030">mtca4u::MotorControlerConfig</a>
 , <a class="el" href="structmtca4u_1_1_motor_driver_card_config.html#a4d87e4eedab0811ba5bec07469272034">mtca4u::MotorDriverCardConfig</a>
 , <a class="el" href="classmtca4u_1_1_multi_variable_word.html#a7080d1518936b757fc00e543b2897427">mtca4u::MultiVariableWord</a>
+, <a class="el" href="classpugi_1_1xml__attribute.html#a9d1e2be4f3b2f7e12b02a13fddf32714">pugi::xml_attribute</a>
+, <a class="el" href="classpugi_1_1xml__attribute__iterator.html#ada16a86994b768fa5b8d39ffe799186a">pugi::xml_attribute_iterator</a>
+, <a class="el" href="classpugi_1_1xml__named__node__iterator.html#ad8256baeb29b4e45d88eabdfbd7e17ec">pugi::xml_named_node_iterator</a>
+, <a class="el" href="classpugi_1_1xml__node.html#a93ec2237e647a58d3b02b5a3034ee38d">pugi::xml_node</a>
+, <a class="el" href="classpugi_1_1xml__node__iterator.html#a35d7ef14ec7ad7b0cabe84dd836edcb0">pugi::xml_node_iterator</a>
+, <a class="el" href="classpugi_1_1xpath__node.html#a9c5713008c34d25ee3cc8abde78c8d09">pugi::xpath_node</a>
+</li>
+<li>operator&gt;()
+: <a class="el" href="classpugi_1_1xml__attribute.html#a120af5c821558a6a500678e5f1844e1a">pugi::xml_attribute</a>
+, <a class="el" href="classpugi_1_1xml__node.html#ade33edf2c1dd7341f802f141fac87398">pugi::xml_node</a>
+</li>
+<li>operator&gt;=()
+: <a class="el" href="classpugi_1_1xml__attribute.html#a9b60e69fe167c2f58c09c9cf4453a2c6">pugi::xml_attribute</a>
+, <a class="el" href="classpugi_1_1xml__node.html#a307aea478b6a80611571650ef6c75c4a">pugi::xml_node</a>
+</li>
+<li>operator[]()
+: <a class="el" href="class_parameters_panel.html#ad98c5ded3152e09caa1fdb542cc4a87b">ParametersPanel</a>
+, <a class="el" href="classpugi_1_1xpath__node__set.html#a75c0991030c90828e2db45e0c7c0ca03">pugi::xpath_node_set</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 13 2019 04:55:05 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Apr 28 2020 03:55:38 for DFMC-MD22 Motor Controller by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

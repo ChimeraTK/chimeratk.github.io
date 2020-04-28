@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['reference_5fconfig_5fand_5framp_5fmode_5fdefault',['REFERENCE_CONFIG_AND_RAMP_MODE_DEFAULT',['../namespacemtca4u.html#a032b7d8e6973c8018d9b60d4518ec4a1',1,'mtca4u']]],
-  ['referenceconfigandrampmodedata',['referenceConfigAndRampModeData',['../structmtca4u_1_1_motor_controler_config.html#a357a02ee6da2099d4379ebd9c11b6f03',1,'mtca4u::MotorControlerConfig']]],
-  ['resettodisableevent',['resetToDisableEvent',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html#a91772fdaeb3516db638b94f4449388e7',1,'ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine']]],
-  ['resettoidleevent',['resetToIdleEvent',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html#a6d9beeba7cfea532465a559e145d9beb',1,'ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine']]],
-  ['rw_5fread',['RW_READ',['../namespacemtca4u_1_1tmc429.html#a3f5acff8ef84ca33e8cc1bafd0615de4',1,'mtca4u::tmc429']]],
-  ['rw_5fwrite',['RW_WRITE',['../namespacemtca4u_1_1tmc429.html#ab1c8ba7d281f82643fa952172b91116e',1,'mtca4u::tmc429']]]
+  ['n',['n',['../pugixml_8cpp.html#acd4e9ba474c2838c8bc6846a344e3af7',1,'pugixml.cpp']]],
+  ['n_5fmotors_5fmax',['N_MOTORS_MAX',['../namespacemtca4u_1_1dfmc__md22.html#a733d397149386097fe3f5b4c7e3fcb59',1,'mtca4u::dfmc_md22']]],
+  ['name',['name',['../structpugi_1_1xml__attribute__struct.html#aa886c4aae23a132e1704717721ee2c19',1,'pugi::xml_attribute_struct::name()'],['../structpugi_1_1xml__node__struct.html#ae2324fdbd1e307fb12007d1d0f957a0b',1,'pugi::xml_node_struct::name()'],['../pugixml_8cpp.html#a580907f8f1f703d75bf9da75b94803ae',1,'name():&#160;pugixml.cpp']]],
+  ['next',['next',['../pugixml_8cpp.html#a7a0cd1681f247d15933163ebd5134da0',1,'pugixml.cpp']]],
+  ['next_5fattribute',['next_attribute',['../structpugi_1_1xml__attribute__struct.html#a9860c0eb7fa72dc9b69ee9b0575f9efc',1,'pugi::xml_attribute_struct']]],
+  ['next_5fsibling',['next_sibling',['../structpugi_1_1xml__node__struct.html#acf0867e3a77871e37132046d97398a6d',1,'pugi::xml_node_struct']]],
+  ['no_5flogging',['NO_LOGGING',['../class_chimera_t_k_1_1_logger.html#a56785292075ebc05f324324578d4e573',1,'ChimeraTK::Logger']]],
+  ['node_5ftypes',['node_types',['../traverse__walker_8cpp.html#a2cb01d5d842f4dfc94484103c8638d9e',1,'traverse_walker.cpp']]],
+  ['nodetest',['nodetest',['../pugixml_8cpp.html#ae48f6c2ba41b9b2664679f333f822501',1,'pugixml.cpp']]],
+  ['nstepsperturn',['nStepsPerTurn',['../class_parameters_calculator_1_1_physical_parameters.html#af006ce6c4a81b1fe719b0883cb5ea203',1,'ParametersCalculator::PhysicalParameters']]],
+  ['number',['number',['../pugixml_8cpp.html#a01b4671c6b7cc8f831c951c000a37735',1,'pugixml.cpp']]]
 ];

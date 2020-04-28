@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['positive',['POSITIVE',['../namespace_chimera_t_k_1_1_motor_driver.html#a4444cffb8982eadc789694a97ad74713aab6c31432785221bae58327ef5f6ea58',1,'ChimeraTK::MotorDriver']]]
+  ['out_5fof_5frange',['OUT_OF_RANGE',['../classmtca4u_1_1_motor_driver_exception.html#aef53ec5642ed9ce0f5bdd2c846807efda7dcb9f1c8a0e0e18a1438d8ba88c16db',1,'mtca4u::MotorDriverException']]]
 ];

@@ -9,5 +9,9 @@ var searchData=
   ['address_5fcool_5fstep_5fconfig',['ADDRESS_COOL_STEP_CONFIG',['../namespacemtca4u_1_1tmc260.html#af7e003386863c33f332f91f04604db72',1,'mtca4u::tmc260']]],
   ['address_5fdriver_5fconfig',['ADDRESS_DRIVER_CONFIG',['../namespacemtca4u_1_1tmc260.html#a7854347cac9b7b882ff5c5a63d41048f',1,'mtca4u::tmc260']]],
   ['address_5fdriver_5fcontrol',['ADDRESS_DRIVER_CONTROL',['../namespacemtca4u_1_1tmc260.html#a20c7981da23f87952b7cd6d7c0be1401',1,'mtca4u::tmc260']]],
-  ['address_5fstall_5fguard_5fconfig',['ADDRESS_STALL_GUARD_CONFIG',['../namespacemtca4u_1_1tmc260.html#aba13b0add487a1da3a08d273a591f845',1,'mtca4u::tmc260']]]
+  ['address_5fstall_5fguard_5fconfig',['ADDRESS_STALL_GUARD_CONFIG',['../namespacemtca4u_1_1tmc260.html#aba13b0add487a1da3a08d273a591f845',1,'mtca4u::tmc260']]],
+  ['alloc',['alloc',['../pugixml_8cpp.html#a9fcf418b8c32c512e6516e790d780527',1,'pugixml.cpp']]],
+  ['allocator',['allocator',['../pugixml_8cpp.html#ab5b3d537ff0f7aa39b361e3ee74cf2f6',1,'pugixml.cpp']]],
+  ['amax',['aMax',['../struct_parameters_calculator_1_1_chip_parameters.html#ab2b210db6a33048a5159cfb0ac6f614f',1,'ParametersCalculator::ChipParameters']]],
+  ['asttype',['asttype',['../pugixml_8cpp.html#a505382eb78b2c24450ce3af833ee42db',1,'pugixml.cpp']]]
 ];

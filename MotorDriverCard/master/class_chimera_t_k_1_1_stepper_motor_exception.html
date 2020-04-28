@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DFMC-MD22 Motor Controller
    &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_chimera_t_k_1_1_stepper_motor_exception.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_exception.html">StepperMotorException</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -78,14 +95,22 @@ $(function() {
  <a href="class_chimera_t_k_1_1_stepper_motor_exception.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_stepper_motor_exception_8h_source.html">StepperMotorException.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for ChimeraTK::StepperMotorException:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_chimera_t_k_1_1_stepper_motor_exception.png" usemap="#ChimeraTK::StepperMotorException_map" alt=""/>
-  <map id="ChimeraTK::StepperMotorException_map" name="ChimeraTK::StepperMotorException_map">
-</map>
- </div></div>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ChimeraTK::StepperMotorException:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_stepper_motor_exception__inherit__graph.svg" width="264" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for ChimeraTK::StepperMotorException:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_stepper_motor_exception__coll__graph.svg" width="311" height="218"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -97,24 +122,24 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac97a5d4a0f862725439cd1c76a0d683a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_exception.html#ac97a5d4a0f862725439cd1c76a0d683a">StepperMotorException</a> (const <a class="el" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> &amp;message, <a class="el" href="class_chimera_t_k_1_1_stepper_motor_exception.html#a46d895f9b3ed4f550c577eb1e912eaab">ExceptionID</a> id)</td></tr>
+<tr class="memdesc:ac97a5d4a0f862725439cd1c76a0d683a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constuctor gets a message and an ID as arguments.  <a href="#ac97a5d4a0f862725439cd1c76a0d683a">More...</a><br /></td></tr>
+<tr class="separator:ac97a5d4a0f862725439cd1c76a0d683a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaac731f6058d241a19cf5e7fad46abbc"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_exception.html#aaac731f6058d241a19cf5e7fad46abbc">~StepperMotorException</a> ()  throw ()</td></tr>
+<tr class="separator:aaac731f6058d241a19cf5e7fad46abbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac507cd0edb58ff56d2de47c6de7987e7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_chimera_t_k_1_1_stepper_motor_exception.html#a46d895f9b3ed4f550c577eb1e912eaab">ExceptionID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_exception.html#ac507cd0edb58ff56d2de47c6de7987e7">getID</a> () const</td></tr>
 <tr class="memdesc:ac507cd0edb58ff56d2de47c6de7987e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ID to progammatically distinguish the exceptions.  <a href="#ac507cd0edb58ff56d2de47c6de7987e7">More...</a><br /></td></tr>
 <tr class="separator:ac507cd0edb58ff56d2de47c6de7987e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac97a5d4a0f862725439cd1c76a0d683a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_exception.html#ac97a5d4a0f862725439cd1c76a0d683a">StepperMotorException</a> (const std::string &amp;message, <a class="el" href="class_chimera_t_k_1_1_stepper_motor_exception.html#a46d895f9b3ed4f550c577eb1e912eaab">ExceptionID</a> id)</td></tr>
-<tr class="memdesc:ac97a5d4a0f862725439cd1c76a0d683a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constuctor gets a message and an ID as arguments.  <a href="#ac97a5d4a0f862725439cd1c76a0d683a">More...</a><br /></td></tr>
-<tr class="separator:ac97a5d4a0f862725439cd1c76a0d683a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1b84caf2d1305c300ce9e10b6882885"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_exception.html#ad1b84caf2d1305c300ce9e10b6882885">what</a> () const  throw ()</td></tr>
 <tr class="memdesc:ad1b84caf2d1305c300ce9e10b6882885"><td class="mdescLeft">&#160;</td><td class="mdescRight">What returns the expection message.  <a href="#ad1b84caf2d1305c300ce9e10b6882885">More...</a><br /></td></tr>
 <tr class="separator:ad1b84caf2d1305c300ce9e10b6882885"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaac731f6058d241a19cf5e7fad46abbc"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_exception.html#aaac731f6058d241a19cf5e7fad46abbc">~StepperMotorException</a> ()  throw ()</td></tr>
-<tr class="separator:aaac731f6058d241a19cf5e7fad46abbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a527dc6ff60b4c8d851638b47cbc4ed4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_exception.html#a46d895f9b3ed4f550c577eb1e912eaab">ExceptionID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_exception.html#a527dc6ff60b4c8d851638b47cbc4ed4d">_id</a></td></tr>
 <tr class="memdesc:a527dc6ff60b4c8d851638b47cbc4ed4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">exception ID  <a href="#a527dc6ff60b4c8d851638b47cbc4ed4d">More...</a><br /></td></tr>
 <tr class="separator:a527dc6ff60b4c8d851638b47cbc4ed4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade254a39ff790920ed993376c6f035e4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_exception.html#ade254a39ff790920ed993376c6f035e4">_message</a></td></tr>
+<tr class="memitem:ade254a39ff790920ed993376c6f035e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_exception.html#ade254a39ff790920ed993376c6f035e4">_message</a></td></tr>
 <tr class="memdesc:ade254a39ff790920ed993376c6f035e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">exception description  <a href="#ade254a39ff790920ed993376c6f035e4">More...</a><br /></td></tr>
 <tr class="separator:ade254a39ff790920ed993376c6f035e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -158,7 +183,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">ChimeraTK::StepperMotorException::StepperMotorException </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> &amp;&#160;</td>
           <td class="paramname"><em>message</em>, </td>
         </tr>
         <tr>
@@ -321,7 +346,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string ChimeraTK::StepperMotorException::_message</td>
+          <td class="memname"><a class="el" href="pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb">std::string</a> ChimeraTK::StepperMotorException::_message</td>
         </tr>
       </table>
   </td>
@@ -341,11 +366,15 @@ Protected Attributes</h2></td></tr>
 <li>util/include/<a class="el" href="_stepper_motor_exception_8h_source.html">StepperMotorException.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 13 2019 04:55:05 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_stepper_motor_exception.html">StepperMotorException</a></li>
+    <li class="footer">Generated on Tue Apr 28 2020 03:55:38 for DFMC-MD22 Motor Controller by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['endswith',['ENDSWITH',['../pugixml_8cpp.html#a3a72d0b2c0e7f99940ce8fbcc69e532f',1,'pugixml.cpp']]],
   ['err_5flogger',['ERR_LOGGER',['../_logger_macros_8h.html#a3ab66a54aac0319f9a673a8380ee0e3b',1,'LoggerMacros.h']]],
   ['err_5flogger_5fd',['ERR_LOGGER_D',['../_logger_macros_8h.html#ab9e93d15c7fe09bd2a3833e55eb1a1a6',1,'LoggerMacros.h']]],
   ['err_5flogger_5ffl',['ERR_LOGGER_FL',['../_logger_macros_8h.html#a74011f4a250df1023b3365f00e251f2f',1,'LoggerMacros.h']]],

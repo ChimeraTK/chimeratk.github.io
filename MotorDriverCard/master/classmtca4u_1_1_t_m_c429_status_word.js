@@ -1,0 +1,28 @@
+var classmtca4u_1_1_t_m_c429_status_word =
+[
+    [ "TMC429StatusWord", "classmtca4u_1_1_t_m_c429_status_word.html#a06f8393729fab6974511cb1810861293", null ],
+    [ "getCoverDatagramWaiting", "classmtca4u_1_1_t_m_c429_status_word.html#a8dea244b80ed4e619005c38188c3ccaa", null ],
+    [ "getInterrupt", "classmtca4u_1_1_t_m_c429_status_word.html#ad77e9c7d120b3f36b63ee7ec2813eda4", null ],
+    [ "getReferenceSwitchBit", "classmtca4u_1_1_t_m_c429_status_word.html#a2fffe7098156bb5513fad655d3646b1b", null ],
+    [ "getReferenceSwitchBit1", "classmtca4u_1_1_t_m_c429_status_word.html#ada970fbbfc1ec108bc73749655afa0a0", null ],
+    [ "getReferenceSwitchBit2", "classmtca4u_1_1_t_m_c429_status_word.html#aff28d270d17c74e559a9a0d98010d400", null ],
+    [ "getReferenceSwitchBit3", "classmtca4u_1_1_t_m_c429_status_word.html#a705fa046cb94b41ba98b4cc7931f7770", null ],
+    [ "getStepperMotorBits1", "classmtca4u_1_1_t_m_c429_status_word.html#aff646eaa9d3f917067956c559cd90415", null ],
+    [ "getStepperMotorBits2", "classmtca4u_1_1_t_m_c429_status_word.html#a191abb4eb5eea4ea2960cd4ecaad8e85", null ],
+    [ "getStepperMotorBits3", "classmtca4u_1_1_t_m_c429_status_word.html#af88bc863413aa3353ca096003d646c6e", null ],
+    [ "getTargetPositionReached", "classmtca4u_1_1_t_m_c429_status_word.html#ab7f6047a0ed4e76a307a1c3dc12cb1c4", null ],
+    [ "getTargetPositionReached1", "classmtca4u_1_1_t_m_c429_status_word.html#a8d4932ffccc4f2ac1c102e1e09977e6a", null ],
+    [ "getTargetPositionReached2", "classmtca4u_1_1_t_m_c429_status_word.html#a1031773265ffc468eaf811410bd61507", null ],
+    [ "getTargetPositionReached3", "classmtca4u_1_1_t_m_c429_status_word.html#aaea68aa3e6346b54de8b629c5e42141c", null ],
+    [ "setCoverDatagramWaiting", "classmtca4u_1_1_t_m_c429_status_word.html#aa72ae6f50f54d96c48969ff72e74ca5f", null ],
+    [ "setInterrupt", "classmtca4u_1_1_t_m_c429_status_word.html#a46824b8843b631d70dec5cb727c2e56c", null ],
+    [ "setReferenceSwitchBit1", "classmtca4u_1_1_t_m_c429_status_word.html#a564109f788a418e7cfc530f01a5e4527", null ],
+    [ "setReferenceSwitchBit2", "classmtca4u_1_1_t_m_c429_status_word.html#ad8439fceedfc03a422cf07d9e497c42e", null ],
+    [ "setReferenceSwitchBit3", "classmtca4u_1_1_t_m_c429_status_word.html#af59aad86847b124d468e920c307ef80e", null ],
+    [ "setStepperMotorBits1", "classmtca4u_1_1_t_m_c429_status_word.html#a44d63d59f4cbdbeae29801f7b97fff24", null ],
+    [ "setStepperMotorBits2", "classmtca4u_1_1_t_m_c429_status_word.html#a784a7408c72718d67ec47c6da2237f86", null ],
+    [ "setStepperMotorBits3", "classmtca4u_1_1_t_m_c429_status_word.html#af13866137123b9191ad019905b2d8704", null ],
+    [ "setTargetPositionReached1", "classmtca4u_1_1_t_m_c429_status_word.html#ac8fea68e4501d5bda80e786b5bbacc58", null ],
+    [ "setTargetPositionReached2", "classmtca4u_1_1_t_m_c429_status_word.html#ad2fcb8ad6137fecdd08772a14cd6410f", null ],
+    [ "setTargetPositionReached3", "classmtca4u_1_1_t_m_c429_status_word.html#a7e78ae11f93137a94ba28c32ed04f88f", null ]
+];

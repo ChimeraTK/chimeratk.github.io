@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DFMC-MD22 Motor Controller
    &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_h.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -63,6 +84,10 @@ $(function() {
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_h"></a>- h -</h3><ul>
+<li>hash_value()
+: <a class="el" href="classpugi_1_1xml__attribute.html#a5d87af421bd3212b177731a843b23370">pugi::xml_attribute</a>
+, <a class="el" href="classpugi_1_1xml__node.html#ab9a95d30e6f0f38565fc6faa7effae92">pugi::xml_node</a>
+</li>
 <li>hasHWReferenceSwitches()
 : <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#aa1847ce243268debf4f3e77ad97e97c8">ChimeraTK::MotorDriver::BasicStepperMotor</a>
 , <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html#a1cbf73650f50f7d8873aa7fb7e7cc363">ChimeraTK::MotorDriver::LinearStepperMotor</a>
@@ -71,16 +96,32 @@ $(function() {
 <li>hasRequestedState()
 : <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html#a8ea909ddd934569bf8cf548dac80bdd4">ChimeraTK::MotorDriver::utility::StateMachine</a>
 </li>
+<li>header
+: <a class="el" href="structpugi_1_1xml__attribute__struct.html#a0dca6ca6c129bbf87a7ebaf87f3e12de">pugi::xml_attribute_struct</a>
+, <a class="el" href="structpugi_1_1xml__node__struct.html#aea2e405a368dc5a278a2d23465f1975c">pugi::xml_node_struct</a>
+</li>
 <li>HEIDENHAIN
 : <a class="el" href="structmtca4u_1_1_motor_controler_1_1_decoder_readout_mode.html#abc3f67d7c8fa9d2115d9711e40c36d24">mtca4u::MotorControler::DecoderReadoutMode</a>
 </li>
+<li>HexData()
+: <a class="el" href="class_hex_data.html#ac06260416d5e86f388cc8bde690f68ec">HexData</a>
+</li>
+<li>HexSpinBox()
+: <a class="el" href="class_hex_spin_box.html#a8e45f1219dfd1631677ee4f99b745b12">HexSpinBox</a>
+</li>
+<li>horizontalLayout
+: <a class="el" href="class_parameter_widget.html#ae306f25720eaf500753c8889e52fe17a">ParameterWidget</a>
+</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 13 2019 04:55:05 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Apr 28 2020 03:55:38 for DFMC-MD22 Motor Controller by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

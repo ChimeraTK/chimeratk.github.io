@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['motorstepsconverter',['MotorStepsConverter',['../namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#a127e10207b409b6bcb30e9c2fb63dec7',1,'ChimeraTK::MotorDriver::utility']]],
-  ['motorstepsconvertertrivia',['MotorStepsConverterTrivia',['../namespace_chimera_t_k_1_1_motor_driver_1_1utility.html#a4f75c087ee1c9a8b2f4c9c0ce306de29',1,'ChimeraTK::MotorDriver::utility']]]
+  ['deallocation_5ffunction',['deallocation_function',['../namespacepugi.html#a3587161b9f8d7ac4ac2d6a45b82462be',1,'pugi']]],
+  ['difference_5ftype',['difference_type',['../classpugi_1_1xml__node__iterator.html#af493930602ec2f56d27c84d148d692ef',1,'pugi::xml_node_iterator::difference_type()'],['../classpugi_1_1xml__attribute__iterator.html#a00b3eecf2aba886a673ad2319be88618',1,'pugi::xml_attribute_iterator::difference_type()'],['../classpugi_1_1xml__named__node__iterator.html#a18fa0d610fea4d64271729abc0e28849',1,'pugi::xml_named_node_iterator::difference_type()']]]
 ];

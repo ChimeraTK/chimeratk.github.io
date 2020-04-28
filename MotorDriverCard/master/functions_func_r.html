@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +27,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DESY_logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DFMC-MD22 Motor Controller
    &#160;<span id="projectnumber">@MotorDriverCard_VERSION@</span>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_func_r.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -97,6 +118,15 @@ $(function() {
 <li>ReferenceSwitchData()
 : <a class="el" href="classmtca4u_1_1_reference_switch_data.html#a3c21a2c60759d5917ba1740a75666ffc">mtca4u::ReferenceSwitchData</a>
 </li>
+<li>remove_attribute()
+: <a class="el" href="classpugi_1_1xml__node.html#a9b93a949a0c8d23c6457eb18bedf6fe8">pugi::xml_node</a>
+</li>
+<li>remove_child()
+: <a class="el" href="classpugi_1_1xml__node.html#a0adf80ff295b5ebfc38d9164b99c1ee3">pugi::xml_node</a>
+</li>
+<li>reset()
+: <a class="el" href="classpugi_1_1xml__document.html#ac35e9409706a0cd8caa7cbf5b80abcca">pugi::xml_document</a>
+</li>
 <li>resetError()
 : <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#ae266ccb401afb81e3dcdcfdd610d0095">ChimeraTK::MotorDriver::BasicStepperMotor</a>
 , <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html#a37d769033739d017c0e3fc80e87f7566">ChimeraTK::MotorDriver::StepperMotor</a>
@@ -110,13 +140,26 @@ $(function() {
 <li>resetMotorControllerPositions()
 : <a class="el" href="class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#aaa0689df9c3ec7257b749563a49e93c9">ChimeraTK::MotorDriver::BasicStepperMotor</a>
 </li>
+<li>result()
+: <a class="el" href="classpugi_1_1xpath__exception.html#afb1bf9bd7408a02dd9f4b55974ab61f8">pugi::xpath_exception</a>
+, <a class="el" href="classpugi_1_1xpath__query.html#aaf2f69bff7cccfbc73520dab5505458a">pugi::xpath_query</a>
+</li>
+<li>return_type()
+: <a class="el" href="classpugi_1_1xpath__query.html#acf2b188f7a4b4c5105cc52238f490c2a">pugi::xpath_query</a>
+</li>
+<li>root()
+: <a class="el" href="classpugi_1_1xml__node.html#a775f091ea1847d0c5d841b81718ed9e7">pugi::xml_node</a>
+</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 13 2019 04:55:05 for DFMC-MD22 Motor Controller by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Tue Apr 28 2020 03:55:38 for DFMC-MD22 Motor Controller by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

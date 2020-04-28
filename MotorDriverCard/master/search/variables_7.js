@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['heidenhain',['HEIDENHAIN',['../structmtca4u_1_1_motor_controler_1_1_decoder_readout_mode.html#abc3f67d7c8fa9d2115d9711e40c36d24',1,'mtca4u::MotorControler::DecoderReadoutMode']]]
+  ['globaldfmc_5fmd22dummyregisterer',['globalDFMC_MD22DummyRegisterer',['../namespacemtca4u.html#a7a75d7fd1a515faff70b27157b6d72c8',1,'mtca4u']]]
 ];
