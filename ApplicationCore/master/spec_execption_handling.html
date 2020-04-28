@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-ApplicationCore: Technical specification: Exception Handling Design</title>
+<title>ChimeraTK-ApplicationCore: Technical specification: Exception handling for device runtime errors</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('exception_handling_design.html','');});
+$(document).ready(function(){initNavTree('spec_execption_handling.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -82,88 +82,111 @@ $(document).ready(function(){initNavTree('exception_handling_design.html','');})
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Technical specification: Exception Handling Design </div>  </div>
+<div class="title">Technical specification: Exception handling for device runtime errors </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><b>DRAFT VERSION, WRITE-UP IN PROGRESS!</b></p>
-<h1><a class="anchor" id="gen_idea"></a>
-General Idea</h1>
-<p>Exceptions must be handled by ApplicationCore in a way that the application developer does not have to care much about it.</p>
-<p>In case of a runtime_error exception the framework must catch the exception and report it to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>. The <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> handles this exception and periodically tries to open the device. In case of several devices only the faulty device is blocked. Even if a device is faulty it should not block the server from starting.</p>
-<p>If an input variable is in the error state, it sets the DataValidity flag for its DataFaultCounter (see <a class="el" href="spec_data_validity_propagation.html">spec_dataValidityPropagation</a>) to faulty and the flag is propagated appropriately. After the exception is cleared and operation returns without a data fault flag, set DataValidity flag to ok. Furthermore, the device must be reinitialised automatically and also recover the values of process variables as the device might have rebooted and the variables have been re-set.</p>
-<p><b>1. Genesis</b></p><ul>
-<li>a (removed)</li>
-<li>b. An initialisation handler can be added to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> in the user code. Initialisation handlers are callback function which will be executed when a device is opened for the first time and after a device recovers from an exception, before any process variables are written.</li>
-<li>c. Initial values must be correctly propagated after a device is opened. See <a class="el" href="spec_initial_value_propagation.html">spec_initialValuePropagation</a>. Especially, no read function (even readNonBlocking/readLatest) must return before an initial value has been received.</li>
-<li>d. (removed)</li>
-<li>e. An <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> is placed around all NDRegisterAccessors which connect a device to a <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> or fanout. (*)</li>
-<li>f. (removed)</li>
-<li>g. By default a recovery accessor is added for each device register when it is obtained. These recovery accessors are used to correctly set the values of variables when the device is opened for the first time and after a device is recovered from an exception. (*)</li>
-<li>h. An <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> for an input knows its DataFaultCounter, which lives in the <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> or fanout that reads the input. Like this it can propagate the DataValidity flag. Outputs do not send DataValidity faulty in case of exceptions (see <a class="el" href="spec_data_validity_propagation.html">spec_dataValidityPropagation</a>).</li>
-<li>i. Write should not block in case of an exception for the outputs of <a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html" title="FanOut implementation with an internal thread which waits for new data which is read from the given f...">ThreadedFanOut</a> / <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html" title="InternalModule which waits for a trigger, then reads a number of variables and distributes each of th...">TriggerFanOut</a>. (*)</li>
-<li>j. Exception handling and invalid flag propagation has to be implemented such that it is transparent to a module whether it is directly connected to a device, or whether a fanout or another application module is in between.</li>
-<li>k. The server must start even if some devices are in error state. The devices which are working and all modules that do not talk to the broken device must work.</li>
-<li>l. After a device has been re-opened, all values that had once been written must be re-written.</li>
-</ul>
-<p><b>2. The Flow</b></p>
+<h1><a class="anchor" id="spec_execptionHandling_intro"></a>
+Introduction</h1>
+<p>Exceptions are handled by ApplicationCore in a way that the application developer does not need to care much about it.</p>
+<p>ChimeraTK::runtime_error exceptions are caught by the framework and are reported to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>. The <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> handles this exception and periodically tries to open the device. Communication with the faulty device is blocked or delayed until the device is functional again. In case of several devices only the faulty device is blocked. Faulty devices do not prevent the application from starting, only the parts of the application that depend on the fault device are waiting for the device to come up.</p>
+<p>Input variables of ApplicationModules which cannot be read due to a faulty device will set and propagate the DataValidity::faulty flag (see also <a class="el" href="spec_data_validity_propagation.html">spec_dataValidityPropagation</a>).</p>
+<p>When the device is functional, it be (re)initialised by using application-defined initialisation handlers and also recover the last known values of its process variables.</p>
+<h1><a class="anchor" id="spec_execptionHandling_behaviour"></a>
+1. Behavioural description</h1>
 <ul>
-<li>2.1. The application always starts with all devices as closed. The initial value for deviceError.status is set to 1 and the initial value for deviceError.message is set to an error that the device has not been opened yet (the message will be overwritten with the real error message if the first attempt to open fails, see 2.3.1). The <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> takes care that ExceptionHandlingDecorators do not perform any read or write operations, but block. This must happen before running any prepare() of an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a>, where the first write calls to ExceptionHandlingDecorators are done.</li>
-<li>2.2 In <a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ApplicationModule::prepare()</a> some initial values (and constants) are written. As the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> must not perform the actual write at this point, it will put the value into the dataRecoveryAccesssor and report an exception to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>.</li>
-<li>Between 2.2 and 2.3 the application goes into multi-threaded mode. Although <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> and fanout threads start after the device module threads, the application is now asynchronous and read or write operations can already take place in the main loops, even if the device is not ready yet (it might actually be broken). All read and write operations are blocked buy the ExceptionHandlingDecorators at this point.</li>
-<li>2.3 The device module thread starts.<ul>
-<li>2.3.1 The <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> tries to open the device until it succeeds. (*)<ul>
-<li>2.3.1.1 If the very first attempt to open the device since the application start fails, the error message of the exception is used to overwrite the content of deviceError.message. Otherwise error messages of exceptions thrown by Device::open() are not visible.</li>
+<li>1.1 All ChimeraTK::runtime_error exceptions thrown by device register accessors are handled by the framework and are never exposed to user code in ApplicationModules.</li>
+<li>1.2 After an exception has been received, read operations will propagate the DataValidity::faulty. Blocking read operations will block after the flag has been read (i.e. on the second read of the same accessor), while non-blocking read operations will never block. Write operations will block always. [TBD: is this really a good idea? <b>COMMENT</b>: The order of write operations is still not guaranteed through the recovery accessors (which maybe should be changed), and blocking writes has some severe drawbacks. Not only in fan outs but also in normal ApplicationModules blocking writes will prevent propagation of DataValidity flags! Blocking writes might help if a sequence of values is written to the same register - this is not handled by the recovery accessor. But if a handshake register is read back in between the writes, the situation can already be handled properly (check DataValidity flag, restart sequence after recovery). Maybe blocking writes create more probelms then they solve!? On the other hand, how does the application then know that a write() has no effect yet? E.g. a PI controller might wind-up if actuator and sensor are on different devices and the actuator fails. Then again, how is this different a failing actuator hardware without breaking the communication? Some form of a status readback of the actuator again cures the situation. I think I am in favour of "fire-and-forget" writes.].<ul>
+<li>1.2.1 Write should not block in case of an exception for the outputs of <a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html" title="FanOut implementation with an internal thread which waits for new data which is read from the given f...">ThreadedFanOut</a> / <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html" title="InternalModule which waits for a trigger, then reads a number of variables and distributes each of th...">TriggerFanOut</a>.</li>
+<li>1.2.2 According to <a class="el" href="spec_initial_value_propagation.html">spec_initialValuePropagation</a>, writes in ApplicationModules do not block before the first successful read in the main loop.</li>
 </ul>
 </li>
-<li>2.3.2 Device is initialised by iterating initialisationHandlers list. If there is an exception, update deviceError.message with the error message and go back to 2.3.1. (*)</li>
-<li>2.3.3 The list of reported exceptions is cleared. (*)</li>
-<li>2.3.4 All valid (*) recovery accessors are written. If there is an exception, update deviceError.message with the error message and go back to 2.3.1. (*)</li>
-<li>2.3.5 deviceError.status is set to 0 and deviceError.message is set to an empty string.</li>
-<li>2.3.6 <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> allows that ExceptionHandlingDecorators execute reads and writes.</li>
-<li>2.3.7 All blocked read and write operations (from 2.5.3) are notified.(*)</li>
-<li>2.3.8 The DeviceModuleThread waits for the next reported exception.</li>
+<li>1.3 The framework will try to resolve the exception state by periodically re-opening the faulty device.</li>
+<li>1.4 After successfully re-opening the device, a recovery procedure is executed before allowing any read/write operations from the AppliactionModules and FanOuts again. This recovery procedure involves:<ul>
+<li>1.4.1 the execution of initialisation handlers, and</li>
+<li>1.4.2 restoring all registers that have been written since the start of the application with their latest values. The register values are restored in the same order they were written. [<b>NEW REQUIREMENT!</b>] (*)</li>
 </ul>
 </li>
-<li>2.4 Device and <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> are running normally<ul>
-<li>2.4.1 All blocked ExceptionHandlingDecorators continue (*)<ul>
-<li>2.4.1.1 write just continues (recovery accessor has done the write)</li>
-<li>2.4.1.2 read/readNonBlocking/readLatest<ul>
-<li>2.4.1.2.1 tells the DataFaultCounter that the device error has gone</li>
-<li>2.4.1.2.2 (re-)tries to get the value. In case of an exception go to 2.5</li>
+<li>1.5 An initialisation handler can be added to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> in the user code. Initialisation handlers are callback function which will be executed when a device is opened for the first time and after a device recovers from an exception, before any process variables are written. See <a class="el" href="class_chimera_t_k_1_1_device_module.html#ab30bf1b235913143d45bb5da7d84052c" title="Add initialisation handlers to the device. ">DeviceModule::addInitialisationHandler()</a>.</li>
+<li>1.6 The behaviour at application start (when all devices are still closed at first) is similar to the case of a later received exception. The only differences are mentioned in 1.2.2 and 1.8.</li>
+<li>1.7 Even if some devices are initially in a persisting error state, the part of the application which does not interact with the faulty devices will start and work normally.</li>
+<li>1.8 Initial values are correctly propagated after a device is opened. See <a class="el" href="spec_initial_value_propagation.html">spec_initialValuePropagation</a>. Especially, no read function (even readNonBlocking/readLatest) will return before an initial value has been received.</li>
+<li>1.9 Exception handling and DataValidity flag propagation is implemented such that it is transparent to a module whether it is directly connected to a device, or whether a fanout or another application module is in between.</li>
+<li>1.10 ChimeraTK::logic_error exceptions are left unhandled and will terminate the application. These errors may only occur in the initialisation phase (up to the point where all devices are opened and initialised) and point to a severe configuration error which is not recoverable. (*)</li>
+</ul>
+<h2><a class="anchor" id="spec_execptionHandling_behaviour_comments"></a>
+(*) Comments</h2>
+<ul>
+<li>1.2.1 If writes in ThreadedFanOut/TriggerFanOut would block, the other receivers would no longer receive updates. The exact behaviour would not even be well-defined, since the order of writes in the fanouts is random.</li>
+<li>1.4.2 It may be important to guarantee the order of writes. Please note that the VersionNumber is insufficient as a sorting criteria, since many writes may have been done with the same VersionNumber (in an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a>, the VersionNumber used for the writes is determined by the largest VersionNumber of the inputs).</li>
+<li>1.8 DataValidity::faulty is set at first by default, so there is no need to propagate this flag initially. To prevent race conditions and undefined behaviour, it even needs to be made sure that the flag is not propagated unnecessarily. See also <a class="el" href="spec_initial_value_propagation.html">spec_initialValuePropagation</a>.</li>
+<li>1.10 In future, maybe logic_errors are also handled, so configuration errors can nicely be presented in the control system. This may be important especially since logic_errors may depend on the configuration of external components (devices). If e.g. a device is changed (e.g. device is another control system application which has been modified), logic_errors may be thrown in the recovery phase, despite the device had been successfully initialsed previously.</li>
+</ul>
+<h1><a class="anchor" id="spec_execptionHandling_high_level_implmentation"></a>
+2. High-level description of the implementation</h1>
+<ul>
+<li>2.1. A so-called <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> is placed around all device register accessors.<ul>
+<li>2.1.1 A second, undecorated copy of each device register accessor is used as a so-called recoveryAccessor by the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> and the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>. These recoveryAccessor are used to correctly set the values of registers when the device is opened for the first time and after a device is recovered from an exception. (*)</li>
+<li>2.1.2 An <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> for an input knows its DataFaultCounter, which lives in the <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> or fanout that reads the input. Like this it can propagate the DataValidity flag. Outputs do not send DataValidity faulty in case of exceptions (see <a class="el" href="spec_data_validity_propagation.html">spec_dataValidityPropagation</a>). [<b>COMMENT</b>: I think this is not necessary. The <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> simply has to return the right data validity flag, which will be propagated in the same way as in <a class="el" href="spec_data_validity_propagation.html">spec_dataValidityPropagation</a>. No special treatment required for exceptions!]</li>
+</ul>
+</li>
+<li>2.2. <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>:<ul>
+<li>2.2.1 The application always starts with all devices as closed. For each device, the initial value for Devices/&lt;alias&gt;/status is set to 1 and the initial value for Devices/&lt;alias&gt;/message is set to an error that the device has not been opened yet (the message will be overwritten with the real error message if the first attempt to open fails, see 2.2.3.1).</li>
+<li>2.2.2 The <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> takes care that ExceptionHandlingDecorators initally do not perform any read or write operations, but block. This happens before running any prepare() of an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a>, where the first write calls to ExceptionHandlingDecorators are done.</li>
+<li>2.2.3 In the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> thread, the following procedure is executed (in a loop until termination):<ul>
+<li>2.2.3.1 The <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> tries to open the device until it succeeds. (*)<ul>
+<li>2.2.3.1.1 If the very first attempt to open the device since the application start fails, the error message of the exception is used to overwrite the content of Devices/&lt;alias&gt;/message. Otherwise error messages of exceptions thrown by Device::open() are not visible.</li>
+</ul>
+</li>
+<li>2.2.3.2 Device is initialised by iterating initialisationHandlers list. If there is an exception, update Devices/&lt;alias&gt;/message with the error message and go back to 2.2.3.1. (*)</li>
+<li>2.2.3.3 The list of reported exceptions is cleared. (*)</li>
+<li>2.2.3.4 All valid (*) recovery accessors are written in the same order they were originally written [<b>NEW REQUIREMENT! see 1.4.2</b>]. If there is an exception, update Devices/&lt;alias&gt;/message with the error message and go back to 2.2.3.1. (*)</li>
+<li>2.2.3.5 Devices/&lt;alias&gt;/status is set to 0 and Devices/&lt;alias&gt;/message is set to an empty string.</li>
+<li>2.2.3.6 <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> allows that ExceptionHandlingDecorators execute reads and writes.</li>
+<li>2.2.3.7 All blocked read and write operations (from 2.5.3) are notified.(*)</li>
+<li>2.2.3.8 The DeviceModuleThread waits for the next reported exception.</li>
+<li>2.2.3.9 An exception is received.</li>
+<li>2.2.3.10 Devices/&lt;alias&gt;/status is set to 1 and Devices/&lt;alias&gt;/message is set to the first received exception message.</li>
+<li>2.2.3.11 From this point on, all ExceptionHandlingDecorators for this device must block new read and write operations from starting (see also 2.2.2 and 2.2.3.6).</li>
+<li>2.2.3.11 The device module waits until all running read and write operations of ExceptionHandlingDecorators have ended. (*)</li>
+<li>2.2.3.12 The thread goes back to 2.2.3.1 and tries to re-open the device.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>2.4.2 In the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a>, all write calls always fill the value into the recovery accessors before trying to execute the real write. Like this, the recovery accessor always has the last value that should have been written to the device. All recovery accessors become valid over time (see comment for 2.3.4).<ul>
-<li>2.4.2.1 If a write is not executed because the device is already faulty (from 2.2 or 2.6.1), the recovery accessor has to take care of this. In this case we always have to send another exception notification to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> to make sure that the new recovery value is not missed (avoid race condition). (*)</li>
+<li>2.3. ApplicationModule/FanOuts with ExceptionHandlingDecorators:<ul>
+<li>2.3.3 As per 1.6, ExceptionHandlingDecorators will initially block all read operations until 2.2.3.6. Write operations are not blocking, but the written values are recorded in the recoveryAccessor and report an exception to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> (*).</li>
+<li>2.3.4 When notified by the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> (cf. 2.2.3.7), all blocked ExceptionHandlingDecorators will unblock:<ul>
+<li>2.3.4.1 write just continues (recovery accessor has done the write)</li>
+<li>2.3.4.2 read/readNonBlocking/readLatest<ul>
+<li>2.3.4.2.1 tells the DataFaultCounter that the device error has gone [<b>COMMENT</b> May not be necessary, see COMMENT in 2.1.2]</li>
+<li>2.3.4.2.2 (re-)tries to get the value. Exceptions are handled in the same way as in normal read operations (see 2.3.6)</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>2.5. When a read / write operation on the device (1.e) causes a runtime_error exception, the exception is caught in the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a><ul>
-<li>2.5.1. If it is a read operation the DataFaultCounter is informed that there was a device error. (*)</li>
-<li>2.5.2. The error is reported to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a></li>
-<li>2.5.3. Action depending on the calling operation :<ul>
-<li>write : blocks until the device is recovered.</li>
-<li>read : If the accessor has already seen its initial value, the first "blocking" read call returns immediately (remember DataValidity is set to faulty). The <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> remembers that it is in an exception state. The calling module thread will continue and propagate the data invalid flag. The second call will finally block. If there has not been an initial value yet, even the first call will block until it is available.</li>
+<li>2.3.5 In the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a>, all write calls always fill the value into the recoveryAccessors before trying to execute the real write. Like this, the recoveryAccessor always has the last value that should have been written to the device. All recoveryAccessors become valid over time (see comment for 2.2.3.4).<ul>
+<li>2.3.5.1 If a write is not executed because the device is already faulty (from 2.2.2 or 2.2.3.11), the recoveryAccessor has to take care of this. In this case we always have to send another exception notification to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> to make sure that the new recovery value is not missed (avoid race condition). (*)</li>
+</ul>
+</li>
+<li>2.3.6 The <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> will catch any runtime_error exception thrown in a read/write operation.</li>
+<li>2.3.6.1. If it is a read operation the DataFaultCounter is informed that there was a device error. (*) [<b>COMMENT</b> May not be necessary, see COMMENT in 2.1.2]</li>
+<li>2.3.6.2. The error is reported to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a></li>
+<li>2.3.6.3. Action depending on the calling operation:<ul>
+<li>write: blocks until the device is recovered. [<b>See discussion in 1.2</b>]</li>
+<li>read: If the accessor has already seen its initial value, the first "blocking" read call returns immediately (remember DataValidity is set to faulty). The <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> remembers that it is in an exception state. The calling module thread will continue and propagate the data invalid flag. The second call will finally block. If there has not been an initial value yet, even the first call will block until it is available.</li>
 <li>readNonBlocking / readLatest: will always return with data invalid flag (unless there has not been an initial value yet).</li>
 <li>writeWithoutErrorBlocking: just returns (*)</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>2.6 The exception is received in the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> thread<ul>
-<li>2.6.1 deviceError.status is set to 1 and deviceError.message is set to the first received exception message. From this point on, all ExceptionHandlingDecorators for this device must block new read and write operations from starting (see also 2.2 and 2.3.6).</li>
-<li>2.6.2 The device module waits until all running read and write operations have ended (*)</li>
-<li>2.6.3 The thread goes back to 2.3.1 and tries to re-open the device.</li>
 </ul>
-</li>
-</ul>
-<p><b>3. (*) Comments</b></p>
+<h2><a class="anchor" id="spec_execptionHandling_high_level_implmentation_comments"></a>
+(*) Comments</h2>
 <ul>
-<li>1.e. In addition there can be recovery accessors for the same variables, which are not decorated. They are not directly seen by the <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> and the fanouts.</li>
-<li>1.g. Output accessors can have the option not to have a recovery accessor. This is needed for instance for "trigger registers" which start an operation on the hardware. Also void registers don't have recovery accessors.</li>
-<li>1.i. The specification for initial value propagation (<a class="el" href="spec_initial_value_propagation.html">spec_initialValuePropagation</a>) also says that writes ApplicationModules don't block before the first successful read in the main loop.</li>
+<li>1.1 Possible future change: Output accessors can have the option not to have a recovery accessor. This is needed for instance for "trigger registers" which start an operation on the hardware. Also void registers don't have recovery accessors (once the void data type is supported).</li>
+<li>2.3.3 This works in the same way in <a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ApplicationModule::prepare()</a> (where the devices will never be opened) and <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ApplicationModule::mainLoop()</a> until the first device read operation of the <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a>. In theory, reporting the exception to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> would not be necessary in <a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568" title="Prepare the execution of the module. ">ApplicationModule::prepare()</a>, but when the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> thread is running in parallel it is necessarg to avoid a race condition. See 2.3.5.1.</li>
 <li>2.3.1 Successful opening includes that the device reports isFunctional() as true.</li>
 <li>2.3.2 and 2.3.4 Exceptions for re-initialisation and recovery will be reported once, but not if it occurs again before the device has completely recovered.</li>
 <li>2.3.3 ExceptionHandlingDecorators must always first write the recovery accessor, then report an exception. As the device module clears the exceptions first, then processes the accessors, it is guaranteed that no value is missed. As a side effect it can be that a pending exception triggers an unnecessary recovery loop in the device module.</li>
@@ -173,11 +196,11 @@ General Idea</h1>
 <li>2. The first blocking read if the data has not seen the initial value yet, and retrieving it caused the exception.</li>
 </ul>
 </li>
-<li>2.4.1 writeWithoutErrorBlocking is not mentioned because it never blocks. Although blocked by different mechanisms read/readNonBlocking/readLatest behave the same:<ul>
+<li>2.3.5 writeWithoutErrorBlocking is not mentioned because it never blocks. Although blocked by different mechanisms read/readNonBlocking/readLatest behave the same:<ul>
 <li>read is either the second read call which is expected to deliver the next value, or any of the three are still waiting for the initial value. In any case they have to (re-)try reading.</li>
 </ul>
 </li>
-<li>2.4.2.1 Basically after each update of the recovery accessor there has to be a valid write, or an exception has to be reported to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>, to make sure the value is seen by the device (unless the recovery accessor is updated before this happens).</li>
+<li>2.3.5.1 Basically after each update of the recovery accessor there has to be a valid write, or an exception has to be reported to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>, to make sure the value is seen by the device (unless the recovery accessor is updated before this happens).</li>
 <li>2.5.1 increment the DataFaultCounter. See <a class="el" href="spec_data_validity_propagation.html">spec_dataValidityPropagation</a>.</li>
 <li>2.5.3 The RecoveryAccessor has been updated before the failed write attempt and will write the value once the device has recovered.</li>
 <li>2.6.2 The backend has to take care that all operations, also the reads with "waitForNewData", terminate when an exception is thrown, so recovery can take place (see 3.6).</li>
@@ -189,8 +212,8 @@ General Idea</h1>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="exception_handling_implmentation"></a>
-Implementation</h1>
+<h1><a class="anchor" id="spec_execptionHandling_implmentation_details"></a>
+Implementation details</h1>
 <p><b>3. DeviceAccess</b></p>
 <p>Requirements to the DeviceAccess interface:</p>
 <ul>
@@ -258,7 +281,8 @@ Implementation</h1>
 <li>5.3.1.1 Writes to the recovery accessor before initiating the transfer (implements 2.4.2) in doPreWrite()</li>
 <li>5.3.1.2 Decorates doPreWrite to acquire the shared lock described in 4.2.3, then increase the transfer counter and release the lock.</li>
 <li>5.3.1.3 Decorates doPostWrite to decrease the transfer counter 4.2.6</li>
-<li>5.3.1.2 Blocking writes wait in doPostWrite() until informed by the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> that the device has recovered (via 4.2.2, implements 2.5.3 for writing)</li>
+<li>5.3.1.4 Blocking writes wait in doPostWrite() until informed by the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> that the device has recovered (via 4.2.2, implements 2.5.3 for writing)</li>
+<li>5.3.1.5 If doReadTransferNonBlocking()/doReadTransferLatest() must return true even in case of an exception, because eventually</li>
 </ul>
 </li>
 <li>5.3.2 Reading<ul>
@@ -267,11 +291,14 @@ Implementation</h1>
 <li>5.3.2.2 Blocking reads, or reads which have not seen a valid initial value yet, wait in doPostRead() until informed by the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> that the device has recovered (via 4.2.2, implements 2.5.3 for writing), the try a complete read cycle (incl. preRead) until they can successfully read a value (they might receive data with the faulty flag turned on by the sender, which is ok. It is a valid transfer).</li>
 </ul>
 </li>
+<li>5.3.3 Sequences of calles to the delegated preXxx(), xxxTransferYyy() and postXxx() must always follow the DeviceAccess TransferElement specification.<ul>
+<li>5.3.3.1 preXxx() and postXxx() must alwas be called in matching pairs. If a recovery is started in doPostXxx(), the failed transfer must be finished first by calling postXxx() and DeviceModule::stopTransfer(), then a completely new cycle (including DeviceModule::startTransfer() and DeviceModule::stopTransfer()) must be initiated.</li>
+<li>5.3.3.2 If the transfer is not taking place at all (because in preXxx() the device is already known to be broken and no recovery shall be attempted), the delegated preXxx() and postXxx() functions must not be called as well.</li>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="exception_handling_impl_details"></a>
-Implementation details</h2>
+</li>
+</ul>
 <p><b>6. TriggerFanout and <a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html" title="FanOut implementation with an internal thread which waits for new data which is read from the given f...">ThreadedFanOut</a> </b></p>
 <ul>
 <li>6.1 TriggerFanout Each <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html" title="InternalModule which waits for a trigger, then reads a number of variables and distributes each of th...">TriggerFanOut</a> reads several poll-type variables when a trigger (push type) is received. If one of the poll-type inputs is in error state, it shall not block the other variables. To implement this, the TriggerFanout uses the write function which does not block on device exceptions (5.1.2), (implements 1.i)</li>
@@ -306,7 +333,8 @@ Implementation details</h2>
 <li>10.3 As the user buffer recovery accessor is written in an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> or fanout thread, but read in the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> thread when recovering, it has to be protected by a mutex. For efficiency one single shared mutex is used. All ExceptionHandlingDecorators will acquire a shared lock, as each decorator only touches his own buffer. The <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>, which writes all recovery accessors, uses the unique lock to prevent any <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> to modify the user buffer while doing so.</li>
 <li>10.4 All valid recovery accessors are written each time the device has been (re)-opened, after the initialisation handlers have been executed. If a recovery accessor has not seen an initial value yet, the version number is still nullptr, and the accessor is invalid. These accessors are not written. (implements 1.l)</li>
 </ul>
-<p><b>11. Known Issues</b></p>
+<h1><a class="anchor" id="spec_execptionHandling_known_issues"></a>
+Known issues</h1>
 <ul>
 <li>11.1 In step 2.1: The initial value of deviceError is not set to 1.</li>
 <li>11.2 In step 2.2.3: is not correctly fulfilled as we are only waiting for device to be opened and don't wait for it to be correctly initialised. The lock 4.2.3 is not implemented at all.</li>
@@ -339,7 +367,7 @@ Implementation details</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Fri Apr 24 2020 03:54:02 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Apr 28 2020 03:55:08 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -16,11 +16,16 @@ var NAVTREE =
       [ "XML file structure", "configreader.html#xmlstructure", null ]
     ] ],
     [ "Technical specification: propagation of initial values", "spec_initial_value_propagation.html", null ],
-    [ "Technical specification: Exception Handling Design", "exception_handling_design.html", [
-      [ "General Idea", "exception_handling_design.html#gen_idea", null ],
-      [ "Implementation", "exception_handling_design.html#exception_handling_implmentation", [
-        [ "Implementation details", "exception_handling_design.html#exception_handling_impl_details", null ]
-      ] ]
+    [ "Technical specification: Exception handling for device runtime errors", "spec_execption_handling.html", [
+      [ "Introduction", "spec_execption_handling.html#spec_execptionHandling_intro", null ],
+      [ "1. Behavioural description", "spec_execption_handling.html#spec_execptionHandling_behaviour", [
+        [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_behaviour_comments", null ]
+      ] ],
+      [ "2. High-level description of the implementation", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation", [
+        [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_comments", null ]
+      ] ],
+      [ "Implementation details", "spec_execption_handling.html#spec_execptionHandling_implmentation_details", null ],
+      [ "Known issues", "spec_execption_handling.html#spec_execptionHandling_known_issues", null ]
     ] ],
     [ "Technical specification: StatusAggregator", "spec__status_aggregator.html", null ],
     [ "Example 1: Application with two modules and two hardware devices", "example1.html", null ],
@@ -74,8 +79,8 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8fae0ac20adce6ffee48c7151b070aa5737",
 "class_chimera_t_k_1_1_test_facility.html#ac070dc64f09a1fffdd1967c345d1cb84",
 "demo_app2c_8cc.html",
-"struct_chimera_t_k_1_1_const_multiplier.html#a8eecbb269915d10f40dfb12b16ffafcc",
-"struct_example_app.html#a217e6910d1acf4aab3ccb2e5b050f1bb"
+"struct_chimera_t_k_1_1_config_reader_1_1_var.html#abed95dec950c3af9ff90c26d903dc304",
+"struct_example_app.html#a1ee7980cd0cbed783956d1ddac0a4f4d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
