@@ -62,5 +62,6 @@ var searchData=
   ['getvaluetype',['getValueType',['../class_chimera_t_k_1_1_variable_network.html#a1d60d20aacced268c9fc82352d788a37',1,'ChimeraTK::VariableNetwork::getValueType()'],['../class_chimera_t_k_1_1_variable_network_node.html#a4d1ef6ae206a43dd3a046abc34ef9eb0',1,'ChimeraTK::VariableNetworkNode::getValueType()']]],
   ['getvariablelist',['getVariableList',['../class_chimera_t_k_1_1_config_parser.html#ab29dfb53965851039c2214fb9581c995',1,'ChimeraTK::ConfigParser']]],
   ['getversionnumber',['getVersionNumber',['../class_timer_dummy_register_accessor.html#a1486173803cd42723f3d076235ee6236',1,'TimerDummyRegisterAccessor::getVersionNumber()'],['../class_chimera_t_k_1_1_constant_accessor.html#a56a1a2d3bcac359eca5aaeb776ebe698',1,'ChimeraTK::ConstantAccessor::getVersionNumber()'],['../class_chimera_t_k_1_1_feeding_fan_out.html#a416b11ee48ee9e353c4289c562c385d1',1,'ChimeraTK::FeedingFanOut::getVersionNumber()']]],
+  ['getvirtualqualifiedname',['getVirtualQualifiedName',['../class_chimera_t_k_1_1_module.html#a210eb585677baa3fc7865c52ac7abb51',1,'ChimeraTK::Module']]],
   ['groupmap',['groupMap',['../class_chimera_t_k_1_1_micro_d_a_q.html#a8303420bbcc4eda60717bd5f19364a06',1,'ChimeraTK::MicroDAQ::groupMap()'],['../struct_chimera_t_k_1_1history_1_1_server_history.html#a2b1e85f6dd4a1c4dc48a716b45bf51b4',1,'ChimeraTK::history::ServerHistory::groupMap()']]]
 ];

@@ -15,6 +15,7 @@ var class_chimera_t_k_1_1_module =
     [ "getFullDescription", "class_chimera_t_k_1_1_module.html#ac9d145451d59e7bacc80766364a8d73e", null ],
     [ "getOwner", "class_chimera_t_k_1_1_module.html#acf4cf5c7d86e570d7d92d257666e2fad", null ],
     [ "getQualifiedName", "class_chimera_t_k_1_1_module.html#a09462e535a0c30344012fc821d148f8e", null ],
+    [ "getVirtualQualifiedName", "class_chimera_t_k_1_1_module.html#a210eb585677baa3fc7865c52ac7abb51", null ],
     [ "incrementDataFaultCounter", "class_chimera_t_k_1_1_module.html#aeab986f027cd1b5f683b468abf7f07fc", null ],
     [ "incrementExceptionCounter", "class_chimera_t_k_1_1_module.html#ac2f385b5b25da719546a3ae2541a12a4", null ],
     [ "operator()", "class_chimera_t_k_1_1_module.html#af09b1d4243e447c3c40e08f7137aaa55", null ],
