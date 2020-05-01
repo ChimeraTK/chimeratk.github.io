@@ -1,6 +1,7 @@
 var searchData=
 [
   ['server_20based_20history_20module',['Server based history module',['../historydoc.html',1,'index']]],
+  ['spec_5fexceptionhandling',['spec_exceptionHandling',['../md_doc_spec_exception_handling.html',1,'']]],
   ['samplingfrequency',['samplingFrequency',['../demo_app_8cc.html#a8aff6cd57074d5d12c0a90e6c1115358',1,'demoApp.cc']]],
   ['save',['save',['../class_chimera_t_k_1_1_x_m_l_generator_visitor.html#a1f90321de26db73419b2af7276198731',1,'ChimeraTK::XMLGeneratorVisitor']]],
   ['scalaraccessor',['ScalarAccessor',['../class_chimera_t_k_1_1_scalar_accessor.html',1,'ChimeraTK::ScalarAccessor&lt; UserType &gt;'],['../class_chimera_t_k_1_1_scalar_accessor.html#a70ce096ac2a1a7f4b8458a8b154a884b',1,'ChimeraTK::ScalarAccessor::ScalarAccessor(ScalarAccessor&lt; UserType &gt; &amp;&amp;other)'],['../class_chimera_t_k_1_1_scalar_accessor.html#afaa607b47634ffdc104506df939254cc',1,'ChimeraTK::ScalarAccessor::ScalarAccessor(Module *owner, const std::string &amp;name, VariableDirection direction, std::string unit, UpdateMode mode, const std::string &amp;description, const std::unordered_set&lt; std::string &gt; &amp;tags={})'],['../class_chimera_t_k_1_1_scalar_accessor.html#a4fa8cd9b26d33702d0364ddc052b2701',1,'ChimeraTK::ScalarAccessor::ScalarAccessor()']]],
@@ -83,6 +84,7 @@ var searchData=
   ['slaves',['slaves',['../class_chimera_t_k_1_1_fan_out.html#a5056124514dfea29a94e722e9903d1cd',1,'ChimeraTK::FanOut']]],
   ['sp',['sp',['../struct_controller.html#abc1bd02bfdaf29b368c4d558e087250a',1,'Controller']]],
   ['spec_5fdatavaliditypropagation_2emd',['spec_dataValidityPropagation.md',['../spec__data_validity_propagation_8md.html',1,'']]],
+  ['spec_5fexceptionhandling_2emd',['spec_exceptionHandling.md',['../spec__exception_handling_8md.html',1,'']]],
   ['spec_5finitialvaluepropagation_2emd',['spec_initialValuePropagation.md',['../spec__initial_value_propagation_8md.html',1,'']]],
   ['spec_5fstatusaggregator_2emd',['spec_StatusAggregator.md',['../spec___status_aggregator_8md.html',1,'']]],
   ['splitarray_2eh',['SplitArray.h',['../_split_array_8h.html',1,'']]],

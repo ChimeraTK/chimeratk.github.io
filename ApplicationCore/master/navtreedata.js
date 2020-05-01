@@ -17,15 +17,19 @@ var NAVTREE =
     ] ],
     [ "Technical specification: propagation of initial values", "spec_initial_value_propagation.html", null ],
     [ "Technical specification: Exception handling for device runtime errors", "spec_execption_handling.html", [
-      [ "Introduction", "spec_execption_handling.html#spec_execptionHandling_intro", null ],
-      [ "1. Behavioural description", "spec_execption_handling.html#spec_execptionHandling_behaviour", [
-        [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_behaviour_comments", null ]
+      [ "Recent changes", "spec_execption_handling.html#spec_execptionHandling_changes", null ],
+      [ "Introduction", "spec_execption_handling.html#spec_execptionHandling_intro", [
+        [ "Special terminology used in this document", "spec_execption_handling.html#spec_exceptionHandling_intro_terminology", null ]
       ] ],
-      [ "2. High-level description of the implementation", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation", [
+      [ "A. Behavioural description", "spec_execption_handling.html#spec_execptionHandling_behavior", [
+        [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_behavior_comments", null ]
+      ] ],
+      [ "B. Implementation", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation", [
+        [ "B.1 ExceptionHandlingDecorator", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator", null ],
+        [ "B.2 DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule", null ],
         [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_comments", null ]
       ] ],
-      [ "Implementation details", "spec_execption_handling.html#spec_execptionHandling_implmentation_details", null ],
-      [ "Known issues", "spec_execption_handling.html#spec_execptionHandling_known_issues", null ]
+      [ "Known issues - OUTDATED (numbers don't even match)", "spec_execption_handling.html#spec_execptionHandling_known_issues", null ]
     ] ],
     [ "Technical specification: StatusAggregator", "spec__status_aggregator.html", null ],
     [ "Example 1: Application with two modules and two hardware devices", "example1.html", null ],
@@ -33,6 +37,7 @@ var NAVTREE =
     [ "Example 2a: Application with automation module", "example2a.html", null ],
     [ "Example 3: Minimal device server", "example3.html", null ],
     [ "Technical specification: data validity propagation", "spec_data_validity_propagation.html", null ],
+    [ "spec_exceptionHandling", "md_doc_spec_exception_handling.html", null ],
     [ "Status Monitor", "statusmonitordoc.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
@@ -79,8 +84,8 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8fae0ac20adce6ffee48c7151b070aa5737",
 "class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780",
 "configreader.html#usage",
-"struct_chimera_t_k_1_1_config_reader_1_1_array.html#a75ead23e4edb8c76ed19471289ba6264",
-"struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a"
+"struct_chimera_t_k_1_1_config_reader.html#adf2ba9d43d41a12a4d18bc3e0a7bc471",
+"struct_controller.html#ab39304e11bf3c606f96d08287af4bdc7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
