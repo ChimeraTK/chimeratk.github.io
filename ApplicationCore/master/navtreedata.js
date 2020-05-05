@@ -25,6 +25,7 @@ var NAVTREE =
         [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_behavior_comments", null ]
       ] ],
       [ "B. Implementation", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation", [
+        [ "B.0 Requirements to the DeviceAccess TransferElement", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_TransferElement", null ],
         [ "B.1 ExceptionHandlingDecorator", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator", null ],
         [ "B.2 DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule", null ],
         [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_comments", null ]
@@ -84,7 +85,7 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8fae0ac20adce6ffee48c7151b070aa5737",
 "class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780",
 "configreader.html#usage",
-"struct_chimera_t_k_1_1_config_reader.html#adf2ba9d43d41a12a4d18bc3e0a7bc471",
+"struct_chimera_t_k_1_1_config_reader.html#ad514bd3865b91a2609de8c787dadaec9",
 "struct_controller.html#ab39304e11bf3c606f96d08287af4bdc7"
 ];
 

@@ -123,31 +123,27 @@ A. Behavioural description</h1>
 <li>1.2 Exception handling and DataValidity flag propagation is implemented such that it is transparent to a module whether it is directly connected to a device, or whether a fanout or another application module is in between.</li>
 </ul>
 </li>
-<li>2. When an exception has been received (thrown by a device register accessor in an ApplicationModule, FanOut etc.):<ul>
+<li>2. When an exception has been received by the framework (thrown by a device register accessor):<ul>
 <li>2.1 The exception status is published as a process variable together with an error message.<ul>
 <li>2.1.1 The variable Devices/&lt;alias&gt;/status contains a boolean flag whether the device is in an error state</li>
 <li>2.1.2 The variable Devices/&lt;alias&gt;/message contains an error message, if the device is in an error state, or an empty string otherwise.</li>
 </ul>
 </li>
-<li>2.1 Read operations will propagate the DataValidity::faulty to the owning module / fan out (without changing the actual value).<ul>
-<li>2.1.1 The normal module algorithm code will be continued, to allow this flag to propagate to the outputs in the same way as if it had been received through the process variable itself (c.f. 1.2).</li>
-<li>2.1.2 Blocking read operations will be skipped, if the fault flag has not yet been read once by the same accessor. If the fault flag had already been read previously by the same accessor, the operation is frozen (regardless of the type of the first read). When the frozen operation is finally executed, another exception might be thrown, in which case the previously frozen operation is finally skipped.</li>
-<li>2.1.3 Non-blocking read operations (incl. readLatest) will be skipped. The return value will be false (no new data), if the fault flag has been read once already by the same accessor and hence is already propagated (regardless of the type of the first read), true otherwise.</li>
-<li>2.1.4 Asynchronous read operations behave analogous to 2.1.2:<ul>
-<li>A TransferFuture, which was valid while the exception was received, is fulfilled immediately when the exception is received, the DataValidity::faulty is propaated to the owning module and the value is left unchanged (i.e. the underlying operation is effectively skipped).</li>
-<li>The TransferFuture of an asynchronous read operation that is started only after the exception was received will be fulfilled immediately (i.e. the underlying operation is effectively skipped), if no other read operation of (regardless of the type) of the same accessor has read the fault flag once already. Otherwise it will be fulfilled only after the device is recovered (i.e. the underlying operation is effectively frozen).</li>
+<li>2.2 Read operations will propagate the DataValidity::faulty flag to the owning module / fan out (without changing the actual value):<ul>
+<li>2.2.1 The normal module algorithm code will be continued, to allow this flag to propagate to the outputs in the same way as if it had been received through the process variable itself (c.f. 1.2).</li>
+<li>2.2.2 The DataValidity::faulty flag resulting from the fault state is propagated once, even if the variable had the a DataValidity::faulty flag already set previously for another reason.</li>
+<li>2.2.3 readLatest() (including any read operation without AccessMode::wait_for_new_data) will be skipped. The return value will be false (no new data), if the fault flag has been read once already by the same accessor and hence is already propagated (regardless of the type of the first read), true otherwise.</li>
+<li>2.2.4 Read operations with AccessMode::wait_for_new_data (read(), readNonBlocking() and readAsync()) will be skipped, if the DataValidity::faulty flag has not yet been propagated by the same accessor (which counts as new data, i.e. readNonBlocking() will return true). Otherwise, it will behave like there is no new data: Blocking operations will be frozen, non-blocking operations will be skipped. When the frozen operation is finally executed, another exception might be thrown, in which case the previously frozen operation is finally skipped.</li>
+<li>2.2.5 If the fault state had been resolved in between two read operations (regardless of the type) and the device had become faulty again before the second read is executed, it is not defined whether the second operation will frozen/skipped (depending on the type) or not. The second operation might behave either like it is a new exception or like the same fault state would still prevail. (*)</li>
 </ul>
 </li>
-<li>2.1.5 If the fault state had been resolved in between two read operations (regardless of the type) and the device had become faulty again before the second read is executed, it is not defined whether the second operation will frozen/delayed/skipped (depending on the type) or not. The second operation might behave either like it is a new exception or like the same fault state would still prevail. (*)</li>
+<li>2.3 Write operations will be delayed. In case of a fault state (new or persisting), the actual write operation will take place asynchronously when the device is recovering. The same mechanism as used for 3.1.2 is used here, hence the order of write operations is guaranteed across accessors, but only the latest written value of each accessor prevails. (*)<ul>
+<li>2.3.1 The return value of write() indicates whether data was lost in the transfer. If the write has to be delayed due to an exception, the return value will be true, if a previously delayed and not-yet written value is discarded in the process, false otherwise.</li>
+<li>2.3.2 When the delayed value is finally written to the device during the recovery procedure, it is guaranteed that no data loss happens (writes with data loss will be retried).</li>
+<li>2.3.3 It is guaranteed that the write takes place before the device is considered fully recovered again and other transfers are allowed (cf. 3.1).</li>
 </ul>
 </li>
-<li>2.2 Write operations will be delayed. In case of a fault state (new or persisting), the actual write operation will take place asynchronously when the device is recovering. The same mechanism as used for 3.1.2 is used here, hence the order of write operations is guaranteed across accessors, but only the latest written value of each accessor prevails. (*)<ul>
-<li>2.2.1 The return value of write() indicates whether data was lost in the transfer. If the write has to be delayed due to an exception, the return value will be true, if a previously delayed and not-yet writen value is discarded in the process, false otherwise.</li>
-<li>2.2.2 When the delayed value is finally written to the device during the recovery procedure, it is guaranteed that no data loss happens (writes with data loss will be retried).</li>
-<li>2.2.3 It is guaranteed that the write takes place before the device is considered fully recovered again and other transfers are allowed (cf. 3.1).</li>
-</ul>
-</li>
-<li>2.3 In case of exceptions, there is no guaranteed realtime behavior, not even for "non-blocking" transfers. (*)</li>
+<li>2.4 In case of exceptions, there is no guaranteed realtime behavior, not even for "non-blocking" transfers. (*)</li>
 </ul>
 </li>
 <li>3. The framework tries to resolve an exception state by periodically re-opening the faulty device.<ul>
@@ -170,14 +166,27 @@ A. Behavioural description</h1>
 (*) Comments</h2>
 <ul>
 <li>1.1 In future, maybe logic_errors are also handled, so configuration errors can nicely be presented to the control system. This may be important especially since logic_errors may depend also on the configuration of external components (devices). If e.g. a device is changed (e.g. device is another control system application which has been modified), logic_errors may be thrown in the recovery phase, despite the device had been successfully initialsed previously.</li>
-<li>2.1.5 Not defining the behavior here avoids a conflict with 1.2 without requiring a complicated implementation which does not block in this case. Implementing this would not present any gain for the application. If there are many exceptions on the same device in a short period of time, the number of faulty data updates seen by the application modules will always depend on the speed the module is attempting to read data (unless we require every exception to be visible to every module, but this will have complex effects, too). It might break consistency of the number of updates sent through different paths in an application, but applications should anyway not rely on that and use a DataConsistencyGroup to synchronise instead. Hence, the implementation will block always if a blocking read sees a known exception</li>
-<li>2.2 / 3.1.3 If timing is important for write operations (e.g. must not write a sequence of registers too fast), or if multiple values need to be written to the same register in sequence, the application cannot fully rely on the framework's recovery procedure. The framework hence provides the process variable Devices/&lt;alias&gt;/deviceBecameFunctional for each device, which will be written each time the recovery procedure is completed (cf. 3.1.3). ApplicationModules which implement such timed sequence need to receive this variable and restart the entire sequence after the recovery.</li>
-<li>2.3 Even non-blocking read and write operations are not truely non-blocking, since they are still synchronous. The "non-blocking" guarantee only means that the operation does not block until new data has arrived, and that it is not frozen until the device is recovered. For the duration of the recovery procedure and of course for timeout periods these operations may still block.</li>
+<li>2.2.5 Not defining the behavior here avoids a conflict with 1.2 without requiring a complicated implementation which does not block in this case. Implementing this would not present any gain for the application. If there are many exceptions on the same device in a short period of time, the number of faulty data updates seen by the application modules will always depend on the speed the module is attempting to read data (unless we require every exception to be visible to every module, but this will have complex effects, too). It might break consistency of the number of updates sent through different paths in an application, but applications should anyway not rely on that and use a DataConsistencyGroup to synchronise instead. Hence, the implementation will block always if a blocking read sees a known exception</li>
+<li>2.3 / 3.1.3 If timing is important for write operations (e.g. must not write a sequence of registers too fast), or if multiple values need to be written to the same register in sequence, the application cannot fully rely on the framework's recovery procedure. The framework hence provides the process variable Devices/&lt;alias&gt;/deviceBecameFunctional for each device, which will be written each time the recovery procedure is completed (cf. 3.1.3). ApplicationModules which implement such timed sequence need to receive this variable and restart the entire sequence after the recovery.</li>
+<li>2.4 Even non-blocking read and write operations are not truely non-blocking, since they are still synchronous. The "non-blocking" guarantee only means that the operation does not block until new data has arrived, and that it is not frozen until the device is recovered. For the duration of the recovery procedure and of course for timeout periods these operations may still block.</li>
 <li>3.1.2 For some applications, the order of writes may be important, e.g. if firmware expects this. Please note that the VersionNumber is insufficient as a sorting criteria, since many writes may have been done with the same VersionNumber (in an ApplicationModule, the VersionNumber used for the writes is determined by the largest VersionNumber of the inputs).</li>
 <li>4.2 DataValidity::faulty is initially set by default, so there is no need to propagate this flag initially. To prevent race conditions and undefined behavior, it even needs to be made sure that the flag is not propagated unnecessarily. The behavior of non-blocking reads presents a slight asymmetry between the initial device opening and a later recovery. This will in particular be visible when restarting a server while a device is offline. If a module only uses readLatest()/readNonBlocking() (= read() for poll-type inputs) for the offline device, the module was still running before the server restart using the last known values for the dysfunctional registers (and flagging all outputs as faulty). After the restart, the module has to wait for the initial value and hence will not run until the device becomes functional again. To make this behavior symmetric, one would need to persist the values of device inputs. Since this only affects a corner case in which anyway no usable output is produced, this slight inconsistency is considered acceptable.</li>
 </ul>
 <h1><a class="anchor" id="spec_execptionHandling_high_level_implmentation"></a>
 B. Implementation</h1>
+<h2><a class="anchor" id="spec_execptionHandling_high_level_implmentation_TransferElement"></a>
+B.0 Requirements to the DeviceAccess TransferElement</h2>
+<p>Note: This section should be integrated into the TransferElement specification and then removed here. Requirements which are already met by the TransferElement specifciation are not mentioned here.</p>
+<ul>
+<li>0.1 readAsync() may only be called if AccessMode::wait_for_new_data is set. It will throw a ChimeraTK::logic_error otherwise.</li>
+<li>0.2 If AccessMode::wait_for_new_data is set, the TransferFuture is initialised in the constructor. All read implementations except readLatest() are then using always the TransferFuture.</li>
+<li>0.3 readLatest() never uses the TransferFuture. Its implementation is identical to the one read implementation when AccessMode::wait_for_new_data is not set. The return value of readLatest() is changed to void.</li>
+<li>0.4 readTransferAsync() and doReadTransferAsync() are obsolete and hence removed from the interface.</li>
+<li>0.5 readAsync() always returns the same TransferFuture in subsequent calls.</li>
+<li>0.6 TransferFuture::wait() and TransferFuture::hasNewData(), as well as ReadAnyGroup::waitAny(), call TransferElement::preRead() at the beginning (keep in mind that extra calls to preRead() are ignored) before the transferFutureWaitCallback is called. This makes sure that preRead() and postRead() are always called in pairs.</li>
+<li>0.7 Due to the nature of asynchronous transfers, backends must not expect preRead() to be called before new data arrives and is filled into the cppext::future_queue. Hence, doPreRead() of asynchronous accessor implementations will usually be empty. The call to preRead() is still necessary also for asynchronous transfers, since decorators might have important tasks to be done there.</li>
+<li>0.8 There is no need to call readAsync() for each read transfer again. If the TransferFuture has been obtained once it can simply be used over and over again. Hence, readAsync() will just return the TransferFuture (which had been created in the constructor already) only. It does not call preRead() - this is done by the TransferFuture (see 0.6), and it doesn't have any side effects. (Maybe it should be renamed into getTransferFuture()).</li>
+</ul>
 <h2><a class="anchor" id="spec_execptionHandling_high_level_implmentation_decorator"></a>
 B.1 ExceptionHandlingDecorator</h2>
 <p>A so-called ExceptionHandlingDecorator is placed around all device register accessors (used in ApplicationModules and FanOuts). It is responsible for catching the exceptions and implementing most of the behavior described in A.2.</p>
@@ -195,25 +204,32 @@ B.1 ExceptionHandlingDecorator</h2>
 </ul>
 </li>
 <li>1.2 In doPreRead()/doPreWrite(), it is checked whether the fault state already prevails (check DeviceModule::deviceHasError while holding the recovery shared lock).<ul>
-<li>1.2.1 If yes, the actual transfer will be skipped. (cf. 2.2 or 2.3.13)</li>
+<li>1.2.1 If yes, the actual transfer will be skipped. (cf. 2.2 or 2.3.14)</li>
 <li>1.2.2 If the transfer will not be skipped, atomically increment DeviceModule::activeTransfers while still (!) holding the recovery shared lock.</li>
 <li>1.2.3 write: The check for a prevailing fault state has to be done without releasing the lock between the write to the recoveryAccessor and the check. (*)</li>
 <li>1.2.4 For skipped transfers, none of the pre/transfer/post functions must be delegated to the target accessor.</li>
+<li>1.2.5 If an asynchronous read transfer is skipped, a pseudo value needs to be written to the cppext::future_queue of the TransferFuture. This will cause the TransferFuture to be ready immediatly, so postRead() is called (*).</li>
 </ul>
 </li>
 <li>1.3 In doPreWrite() the recoveryAccessor with the version number and ordering parameter is updated, and the written flag is cleared.<ul>
 <li>1.3.1 If the written flag was previously not set, the return value of doWriteTransfer() must be forced to true (data lost).</li>
 </ul>
 </li>
-<li>1.4 In doPreRead() certain read operations are frozen in case of a fault state (see A.2.1):<ul>
+<li>1.4 In doPreRead() certain read operations are frozen in case of a fault state (see A.2.2):<ul>
 <li>1.4.1 Obtain the recovery lock through DeviceModule::getRecoverySharedLock(), to prevent interference with an ongoing recovery procedure.</li>
 <li>1.4.2 Decide, whether freezing is done (don't freeze yet). Freezing is done if one of the following conditions is met:<ul>
-<li>read type is blocking and AccessMode::wait_for_new_data is set, previousReadFailed == true, and DeviceModule::deviceHasError == true (cf. A.2.1.2), or</li>
+<li>read type is blocking and AccessMode::wait_for_new_data is set, previousReadFailed == true, and DeviceModule::deviceHasError == true (cf. A.2.2.4), or</li>
 <li>no initial value has been read yet (getCurretVersion() == {nullptr}) and DeviceModule::deviceHasError == true (cf. A.4.2).</li>
 </ul>
 </li>
 <li>1.4.3 Obtain the DeviceModule::errorLock. Only then release the recovery lock. (*)</li>
 <li>1.4.4 Wait on DeviceModule::errorIsReportedCondVar.</li>
+<li>1.4.5 When the DeviceModule reports the recovery through the condition variable, delegate preRead() and continue with the transfer normally.</li>
+<li>1.4.6 If an asynchronous read transfer is frozen, instead of 1.4.3 thorugh 1.4.5 the following actions are executed:<ul>
+<li>1.4.6.1 Register the asynchronous read transfer with the DeviceModule::asynchronousReadQueue by placing a shared_pointer to this on it.</li>
+<li>1.4.6.2 Do not delegate to preRead() and readTransferAsync() - both functions are called by the DeviceModule instead.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>1.5 In doPostRead()/doPostWrite():<ul>
@@ -238,6 +254,7 @@ B.1 ExceptionHandlingDecorator</h2>
 </li>
 </ul>
 </li>
+<li>1.6 In the constructor of the decorator, put the name of the register to DeviceModule::listOfReadRegisters resp. DeviceModule::listOfWriteRegisters depending on the direction the accessor is used.</li>
 </ul>
 <h2><a class="anchor" id="spec_execptionHandling_high_level_implmentation_deviceModule"></a>
 B.2 DeviceModule</h2>
@@ -250,26 +267,32 @@ B.2 DeviceModule</h2>
 </ul>
 </li>
 <li>2.3.2 Obtain lock for accessing recoveryAccessors.</li>
-<li>2.3.3 Device is initialised by iterating initialisationHandlers list.<ul>
-<li>2.3.3.1 If there is an exception, update Devices/&lt;alias&gt;/message with the error message, release the lock and go back to 2.3.1.</li>
+<li>2.3.3 Check that all registers on DeviceModule::listOfReadRegisters are isReadable() and all registers on DeviceModule::listOfWriteRegisters are isWriteable().<ul>
+<li>2.3.3.1 This involves obtaining an accessor for the register first, which is discarded after the check.</li>
+<li>2.3.3.2 If there is an exception, update Devices/&lt;alias&gt;/message with the error message, release the lock and go back to 2.3.1.</li>
+<li>2.3.3.3 If one of the accessors does not meet this condition, throw a ChimeraTK::logic_error.</li>
 </ul>
 </li>
-<li>2.3.4 All valid recoveryAccessors are written in the same order they were originally written.<ul>
-<li>2.3.4.1 A recoveryAccessor is considered "valid", if it has already received a value, i.e. its current version number is not {nullptr} any more.</li>
-<li>2.3.4.2 If there is an exception, update Devices/&lt;alias&gt;/message with the error message, release the lock and go back to 2.3.1.</li>
+<li>2.3.4 Device is initialised by iterating initialisationHandlers list.<ul>
+<li>2.3.4.1 If there is an exception, update Devices/&lt;alias&gt;/message with the error message, release the lock and go back to 2.3.1.</li>
 </ul>
 </li>
-<li>2.3.5 The queue of reported exceptions is cleared. (*)</li>
-<li>2.3.6 Devices/&lt;alias&gt;/status is set to 0 and Devices/&lt;alias&gt;/message is set to an empty string.</li>
-<li>2.3.7 DeviceModule allows ExceptionHandlingDecorators to execute reads and writes again (cf. 2.3.13)</li>
-<li>2.3.8 All frozen read operations (cf. 1.4.4) are notified via DeviceModule::errorIsReportedCondVar.</li>
-<li>2.3.9 Release lock for recoveryAccessors.</li>
-<li>2.3.10 The DeviceModuleThread waits for the next reported exception.</li>
-<li>2.3.11 An exception is received.</li>
-<li>2.3.12 Devices/&lt;alias&gt;/status is set to 1 and Devices/&lt;alias&gt;/message is set to the first received exception message.</li>
-<li>2.3.13 Set DeviceModule::deviceHasError = true under exclusive recovery lock (cf. 1.2). From this point on, no new transfers will be started.</li>
-<li>2.3.14 The device module waits until all running read and write operations of ExceptionHandlingDecorators have ended (wait until DeviceModule::activeTransfers == 0). (*)</li>
-<li>2.3.15 The thread goes back to 2.3.1 and tries to re-open the device.</li>
+<li>2.3.5 All valid recoveryAccessors are written in the same order they were originally written.<ul>
+<li>2.3.5.1 A recoveryAccessor is considered "valid", if it has already received a value, i.e. its current version number is not {nullptr} any more.</li>
+<li>2.3.5.2 If there is an exception, update Devices/&lt;alias&gt;/message with the error message, release the lock and go back to 2.3.1.</li>
+</ul>
+</li>
+<li>2.3.6 The queue of reported exceptions is cleared. (*)</li>
+<li>2.3.7 Devices/&lt;alias&gt;/status is set to 0 and Devices/&lt;alias&gt;/message is set to an empty string.</li>
+<li>2.3.8 DeviceModule allows ExceptionHandlingDecorators to execute reads and writes again (cf. 2.3.14)</li>
+<li>2.3.9 All frozen read operations (cf. 1.4.4) are notified via DeviceModule::errorIsReportedCondVar.</li>
+<li>2.3.10 Release lock for recoveryAccessors.</li>
+<li>2.3.11 The DeviceModuleThread waits for the next reported exception.</li>
+<li>2.3.12 An exception is received.</li>
+<li>2.3.13 Devices/&lt;alias&gt;/status is set to 1 and Devices/&lt;alias&gt;/message is set to the first received exception message.</li>
+<li>2.3.14 Set DeviceModule::deviceHasError = true under exclusive recovery lock (cf. 1.2). From this point on, no new transfers will be started.</li>
+<li>2.3.15 The device module waits until all running read and write operations of ExceptionHandlingDecorators have ended (wait until DeviceModule::activeTransfers == 0). (*)</li>
+<li>2.3.16 The thread goes back to 2.3.1 and tries to re-open the device.</li>
 </ul>
 </li>
 </ul>
@@ -281,11 +304,12 @@ B.2 DeviceModule</h2>
 <li>1.1 Possible future change: Output accessors can have the option not to have a recovery accessor. This is needed for instance for "trigger registers" which start an operation on the hardware. Also void registers don't have recovery accessors (once the void data type is supported).</li>
 <li>1.1.1 The written flag cannot be replaced by comparing the version number of the recoveryAccessor and the version number stored in the RecoveryHelper, because normal writes (without exceptions) would not update the version number of the recoveryAccessor.</li>
 <li>1.1.2 The ordering guarantee cannot work across DeviceModules anyway. Different devices may go offline and recover at different times. Even in case of two DeviceModules which actually refer to the same hardware device there is no synchronisation mechanism which ensures the recovering procedure is done in a defined order.</li>
+<li>1.2.5 The cppext::future_queue in the TransferFuture is a notification queue and hence of the type void. So we don't have to "invent" any value. Also this injection of values is legal, since the queue is multi-producer but single-consumer. This means, potentially concurrent injection of values while the actual accessor might also write to the queue is allowed. Also, the application is the only receiver of values of this queue, so injecting values cannot disturb the backend in any way.</li>
 <li>1.5.3 The written flag for the recoveryAccessor is used to report loss of data. If the loss of data is already reported directly, it should not later be reported again. Hence the written flag is set even if there was a loss of data in this context.</li>
-<li>1.4.3 The order of locks is important here. The recovery lock prevents the DeviceModule from entering the section 2.3.2 to 2.3.9, which includes the notification through the DeviceModule::errorIsReportedCondVar at 2.3.8. The mutex DeviceModule::errorLock is the mutex used for the condition variable. Since the ExceptionHandlingDecorator obtains it before the DeviceModule can start the notification, it is guaranteed that the decorator does not miss the notification. Note that the DeviceModule::errorLock is not a shared lock, so concurrent ExceptionHandlingDecorator::preRead() will mutually exclude, but the mutex is held only for a short time until errorIsReportedCondVar.wait() is called.</li>
-<li>1.6.3 The lock excludes that the DeviceModule is between 2.3.2 and 2.3.9. If it is right before, the device is still in fault state and the value written to the recoveryAccessor is guaranteed to be written in 2.3.4. If it is right after, the exception state has already been resolved and the real write transfer will be attempted by the ExceptionHandlingDecorator.</li>
-<li>2.3.5 The exact place when this is done does not matter, as long as it is done under the lock for the recoveryAccessors.</li>
-<li>2.3.14 The backend has to take care that all operations, also the blocking/asynchronous reads with "waitForNewData", terminate when an exception is thrown, so recovery can take place (see DeviceAccess TransferElement specification).</li>
+<li>1.4.3 The order of locks is important here. The recovery lock prevents the DeviceModule from entering the section 2.3.2 to 2.3.10, which includes the notification through the DeviceModule::errorIsReportedCondVar at 2.3.9. The mutex DeviceModule::errorLock is the mutex used for the condition variable. Since the ExceptionHandlingDecorator obtains it before the DeviceModule can start the notification, it is guaranteed that the decorator does not miss the notification. Note that the DeviceModule::errorLock is not a shared lock, so concurrent ExceptionHandlingDecorator::preRead() will mutually exclude, but the mutex is held only for a short time until errorIsReportedCondVar.wait() is called.</li>
+<li>1.6.3 The lock excludes that the DeviceModule is between 2.3.2 and 2.3.10. If it is right before, the device is still in fault state and the value written to the recoveryAccessor is guaranteed to be written in 2.3.5. If it is right after, the exception state has already been resolved and the real write transfer will be attempted by the ExceptionHandlingDecorator.</li>
+<li>2.3.6 The exact place when this is done does not matter, as long as it is done under the lock for the recoveryAccessors.</li>
+<li>2.3.15 The backend has to take care that all operations, also the blocking/asynchronous reads with "waitForNewData", terminate when an exception is thrown, so recovery can take place (see DeviceAccess TransferElement specification).</li>
 </ul>
 <h1><a class="anchor" id="spec_execptionHandling_known_issues"></a>
 Known issues - OUTDATED (numbers don't even match)</h1>
@@ -323,7 +347,7 @@ Known issues - OUTDATED (numbers don't even match)</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Fri May 1 2020 03:53:42 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue May 5 2020 03:53:34 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

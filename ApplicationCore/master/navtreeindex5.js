@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"struct_chimera_t_k_1_1_config_reader.html#ad514bd3865b91a2609de8c787dadaec9":[16,0,0,16,3],
 "struct_chimera_t_k_1_1_config_reader.html#adf2ba9d43d41a12a4d18bc3e0a7bc471":[16,0,0,16,6],
 "struct_chimera_t_k_1_1_config_reader.html#ae0d987890819fc887d81cfc296da4de0":[16,0,0,16,11],
 "struct_chimera_t_k_1_1_config_reader.html#afba6fa48bc3f8a00adae168e72e6f2e0":[16,0,0,16,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "struct_controller.html":[16,0,3],
 "struct_controller.html#a54f77011079233e80bf09ac9867773ce":[16,0,3,3],
 "struct_controller.html#a97ab7bd3852cc42fddd13b1bae1f4c7b":[16,0,3,4],
-"struct_controller.html#ab39304e11bf3c606f96d08287af4bdc7":[16,0,3,2],
 "struct_controller.html#ab39304e11bf3c606f96d08287af4bdc7":[16,0,3,0]
 };

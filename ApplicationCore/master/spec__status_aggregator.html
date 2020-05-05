@@ -117,9 +117,9 @@ $(document).ready(function(){initNavTree('spec__status_aggregator.html','');});
 <h3>Constraints and issues</h3>
 <ul>
 <li>As detection of underlying instances can only be performed in the constructor, the StatusAggregator has to be declared in user code after all instances of <code><a class="el" href="struct_chimera_t_k_1_1_status_monitor.html" title="Common base for StatusMonitors. ">ChimeraTK::StatusMonitor</a></code> in a Module.</li>
-<li>Usage of <code>HierarchyModifier::moveToRoot</code> on a StatusAggregator is controversial:<ul>
+<li>Usage of <code>HierarchyModifier::moveToRoot</code> on a StatusAggregator is controversial (currently not allowed, see R2.2):<ul>
 <li>Either: Detection of aggregated instances may take place from the virtual hierarchy level of the original (C++) parent module downwards. The Aggregator and its status output would then appear on the root level.</li>
-<li>Or: <code>HierarchyModifier::moveToRoot</code> is not allowd on StatusAggregators</li>
+<li>Or: <code>HierarchyModifier::moveToRoot</code> is not allowed on StatusAggregators</li>
 </ul>
 </li>
 </ul>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('spec__status_aggregator.html','');});
 <h3>Requirements</h3>
 <ul>
 <li><b>R2.1</b>: The detection of instances needs to be performed recursively from the StatusAggregator's virtual parent module on</li>
-<li><b>R2.2</b>: The detection has to work on instances the are modified by any of the <code><a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0" title="Hierarchy modifier: specify if and how the module hierarchy should be modified in EntityOwner::findTa...">ChimeraTK::HierarchyModifier</a></code>s</li>
+<li><b>R2.2</b>: The detection has to work on instances the are modified by <code><a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0" title="Hierarchy modifier: specify if and how the module hierarchy should be modified in EntityOwner::findTa...">ChimeraTK::HierarchyModifier</a></code>s <code>none</code> and <code>hideThis</code>. Other modifiers should give a <code>ChimeraTK::logic_error</code></li>
 </ul>
 <h3>Constraints and issues</h3>
 <ul>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('spec__status_aggregator.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Fri May 1 2020 03:53:42 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue May 5 2020 03:53:34 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
