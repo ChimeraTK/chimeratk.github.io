@@ -223,7 +223,7 @@ B.1 ExceptionHandlingDecorator</h2>
 </ul>
 </li>
 <li>1.4.3 Obtain the DeviceModule::errorLock. Only then release the recovery lock. (*)</li>
-<li>1.4.4 Wait on DeviceModule::errorIsReportedCondVar.</li>
+<li>1.4.4 Wait on DeviceModule::errorIsResolvedCondVar.</li>
 <li>1.4.5 When the DeviceModule reports the recovery through the condition variable, delegate preRead() and continue with the transfer normally.</li>
 <li>1.4.6 If an asynchronous read transfer is frozen, instead of 1.4.3 thorugh 1.4.5 the following actions are executed:<ul>
 <li>1.4.6.1 Register the asynchronous read transfer with the DeviceModule::asynchronousReadQueue by placing a shared_pointer to this on it.</li>
@@ -285,7 +285,7 @@ B.2 DeviceModule</h2>
 <li>2.3.6 The queue of reported exceptions is cleared. (*)</li>
 <li>2.3.7 Devices/&lt;alias&gt;/status is set to 0 and Devices/&lt;alias&gt;/message is set to an empty string.</li>
 <li>2.3.8 DeviceModule allows ExceptionHandlingDecorators to execute reads and writes again (cf. 2.3.14)</li>
-<li>2.3.9 All frozen read operations (cf. 1.4.4) are notified via DeviceModule::errorIsReportedCondVar.</li>
+<li>2.3.9 All frozen read operations (cf. 1.4.4) are notified via DeviceModule::errorIsResolvedCondVar.</li>
 <li>2.3.10 Release lock for recoveryAccessors.</li>
 <li>2.3.11 The DeviceModuleThread waits for the next reported exception.</li>
 <li>2.3.12 An exception is received.</li>
@@ -304,10 +304,10 @@ B.2 DeviceModule</h2>
 <li>1.1 Possible future change: Output accessors can have the option not to have a recovery accessor. This is needed for instance for "trigger registers" which start an operation on the hardware. Also void registers don't have recovery accessors (once the void data type is supported).</li>
 <li>1.1.1 The written flag cannot be replaced by comparing the version number of the recoveryAccessor and the version number stored in the RecoveryHelper, because normal writes (without exceptions) would not update the version number of the recoveryAccessor.</li>
 <li>1.1.2 The ordering guarantee cannot work across DeviceModules anyway. Different devices may go offline and recover at different times. Even in case of two DeviceModules which actually refer to the same hardware device there is no synchronisation mechanism which ensures the recovering procedure is done in a defined order.</li>
+<li>1.2.3 The lock excludes that the DeviceModule is between 2.3.2 and 2.3.10. If it is right before, the device is still in fault state and the value written to the recoveryAccessor is guaranteed to be written in 2.3.5. If it is right after, the exception state has already been resolved and the real write transfer will be attempted by the ExceptionHandlingDecorator.</li>
 <li>1.2.5 The cppext::future_queue in the TransferFuture is a notification queue and hence of the type void. So we don't have to "invent" any value. Also this injection of values is legal, since the queue is multi-producer but single-consumer. This means, potentially concurrent injection of values while the actual accessor might also write to the queue is allowed. Also, the application is the only receiver of values of this queue, so injecting values cannot disturb the backend in any way.</li>
 <li>1.5.3 The written flag for the recoveryAccessor is used to report loss of data. If the loss of data is already reported directly, it should not later be reported again. Hence the written flag is set even if there was a loss of data in this context.</li>
-<li>1.4.3 The order of locks is important here. The recovery lock prevents the DeviceModule from entering the section 2.3.2 to 2.3.10, which includes the notification through the DeviceModule::errorIsReportedCondVar at 2.3.9. The mutex DeviceModule::errorLock is the mutex used for the condition variable. Since the ExceptionHandlingDecorator obtains it before the DeviceModule can start the notification, it is guaranteed that the decorator does not miss the notification. Note that the DeviceModule::errorLock is not a shared lock, so concurrent ExceptionHandlingDecorator::preRead() will mutually exclude, but the mutex is held only for a short time until errorIsReportedCondVar.wait() is called.</li>
-<li>1.6.3 The lock excludes that the DeviceModule is between 2.3.2 and 2.3.10. If it is right before, the device is still in fault state and the value written to the recoveryAccessor is guaranteed to be written in 2.3.5. If it is right after, the exception state has already been resolved and the real write transfer will be attempted by the ExceptionHandlingDecorator.</li>
+<li>1.4.3 The order of locks is important here. The recovery lock prevents the DeviceModule from entering the section 2.3.2 to 2.3.10, which includes the notification through the DeviceModule::errorIsResolvedCondVar at 2.3.9. The mutex DeviceModule::errorLock is the mutex used for the condition variable. Since the ExceptionHandlingDecorator obtains it before the DeviceModule can start the notification, it is guaranteed that the decorator does not miss the notification. Note that the DeviceModule::errorLock is not a shared lock, so concurrent ExceptionHandlingDecorator::preRead() will mutually exclude, but the mutex is held only for a short time until errorIsResolvedCondVar.wait() is called.</li>
 <li>2.3.6 The exact place when this is done does not matter, as long as it is done under the lock for the recoveryAccessors.</li>
 <li>2.3.15 The backend has to take care that all operations, also the blocking/asynchronous reads with "waitForNewData", terminate when an exception is thrown, so recovery can take place (see DeviceAccess TransferElement specification).</li>
 </ul>
@@ -347,7 +347,7 @@ Known issues - OUTDATED (numbers don't even match)</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Tue May 5 2020 03:53:34 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed May 6 2020 03:53:34 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
