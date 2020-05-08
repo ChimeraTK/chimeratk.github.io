@@ -39,7 +39,6 @@ var NAVTREE =
     [ "Example 2a: Application with automation module", "example2a.html", null ],
     [ "Example 3: Minimal device server", "example3.html", null ],
     [ "Technical specification: data validity propagation", "spec_data_validity_propagation.html", null ],
-    [ "spec_exceptionHandling", "md_doc_spec_exception_handling.html", null ],
     [ "Status Monitor", "statusmonitordoc.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
@@ -86,7 +85,7 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8fae0ac20adce6ffee48c7151b070aa5737",
 "class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780",
 "configreader.html#usage",
-"struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793",
+"struct_chimera_t_k_1_1_config_reader.html#ad514bd3865b91a2609de8c787dadaec9",
 "struct_controller.html#ab39304e11bf3c606f96d08287af4bdc7"
 ];
 
