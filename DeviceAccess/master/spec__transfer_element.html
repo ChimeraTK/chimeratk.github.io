@@ -90,40 +90,40 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </blockquote>
 <h2>Introduction</h2>
 <p>This documnent is currently still <b>INCOMPLETE</b>!</p>
-<h3>Definitions</h3>
+<h2>A. Definitions</h2>
 <ul>
-<li>A <em>process variable</em> is the logical entity which is accessed through the TransferElement. Outside this document, it is sometimes also called register.<ul>
-<li>A process variable can be read-only, write-only or read-write (bidirectional).</li>
-<li>A process variable as a data type.</li>
-<li>A process variable has a fixed <em>number of elements</em> and a <em>number of channels</em>.<ul>
-<li>For scalars, both the number of elements and channels are 1.</li>
-<li>For 1D arrays, the number of channels is 1.</li>
+<li>1. A <em>process variable</em> is the logical entity which is accessed through the TransferElement. Outside this document, it is sometimes also called register.<ul>
+<li>1.1 A process variable can be read-only, write-only or read-write (bidirectional).</li>
+<li>1.2 A process variable as a data type.</li>
+<li>1.3 A process variable has a fixed <em>number of elements</em> and a <em>number of channels</em>.<ul>
+<li>1.3.1 For scalars, both the number of elements and channels are 1.</li>
+<li>1.3.2 For 1D arrays, the number of channels is 1.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>A <em>device</em> is the logical entity which owns the <em>process variable</em>. The device can be a piece of hardware, another application or even the current application.<ul>
-<li>The first two cases (piece of hardware and another application) are considered identical, since just different <em>backends</em> are used for the communication.</li>
-<li>The third case (current application) is when using the ChimeraTK::ControlSystemAdapter::ProcessArray e.g. in ApplicationCore.</li>
-<li>The application-side behavior of all three cases is identical. The requirements for the implementation are slightly different in some aspects. This will be mentioned where applicable.</li>
+<li>2. A <em>device</em> is the logical entity which owns the <em>process variable</em>. The device can be a piece of hardware, another application or even the current application.<ul>
+<li>2.1 The first two cases (piece of hardware and another application) are considered identical, since just different <em>backends</em> are used for the communication.</li>
+<li>2.2 The third case (current application) is when using the ChimeraTK::ControlSystemAdapter::ProcessArray e.g. in ApplicationCore.</li>
+<li>2.3 The application-side behavior of all three cases is identical. The requirements for the implementation are slightly different in some aspects. This will be mentioned where applicable.</li>
 </ul>
 </li>
-<li>A <em>transfer</em> is the exchange of data between the application and the device, using a transfer protocol which determines the technical implementation. The protocol used for the transfer is determined by the backend and hence all details about the protocol are abstracted and not visible by the application.</li>
-<li>An <em>operation</em> is the action taken by the application to read or write data from or to a device. An operation is related to a transfer, yet it is to be distinguished. The transfer can e.g. be initiated by the device, while the operation is always initiated by the application.</li>
-<li>The <em>application buffer</em> (sometimes also called user buffer outside this document) is referring to the buffer containing the data and meta data, which is accessible to the application.<ul>
-<li>It can be accessed through the following functions:<ul>
+<li>3. A <em>transfer</em> is the exchange of data between the application and the device, using a transfer protocol which determines the technical implementation. The protocol used for the transfer is determined by the backend and hence all details about the protocol are abstracted and not visible by the application.</li>
+<li>4. An <em>operation</em> is the action taken by the application to read or write data from or to a device. An operation is related to a transfer, yet it is to be distinguished. The transfer can e.g. be initiated by the device, while the operation is always initiated by the application.</li>
+<li>5. The <em>application buffer</em> (sometimes also called user buffer outside this document) is referring to the buffer containing the data and meta data, which is accessible to the application.<ul>
+<li>5.1 It can be accessed through the following functions:<ul>
 <li><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#ae07a53bd251a3c65105f70a05ef3ffd0" title="Get or set register accessor&#39;s buffer content (1D version). ">ChimeraTK::NDRegisterAccessor::accessData()</a> / <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#ae7320f8139ee7b794743bd4e203fbb12" title="Get or set register accessor&#39;s channel vector. ">ChimeraTK::NDRegisterAccessor::accessChannel()</a></li>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a97ff27579d6a52ef1c5c629c316bf53e" title="Returns the version number that is associated with the last transfer (i.e. ">ChimeraTK::TransferElement::getVersionNumber()</a></li>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4a3faa3cb3d0a1766c08d1ac0e6144c8" title="Return current validity of the data. ">ChimeraTK::TransferElement::dataValidity()</a></li>
 </ul>
 </li>
-<li>If not stated otherwise, the term <em>application buffer</em> refers to <b>all</b> components of the buffer.</li>
-<li>The content of the buffer is in read operations and transferred to the device in write operations.</li>
-<li>The content of the buffer can always be modified by the application.</li>
+<li>5.2 If not stated otherwise, the term <em>application buffer</em> refers to <b>all</b> components of the buffer.</li>
+<li>5.3 The content of the buffer is in read operations and transferred to the device in write operations.</li>
+<li>5.4 The content of the buffer can always be modified by the application.(*)</li>
 </ul>
 </li>
-<li>Placeholders are used to summarise various function names:<ul>
-<li>xxxYyy()<ul>
+<li>6. Placeholders are used to summarise various function names:<ul>
+<li>6.1 xxxYyy(), public, operations called by the application<ul>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa21ae3855a6df0e877865702df066f5e" title="Read the data from the device. ">ChimeraTK::TransferElement::read()</a></li>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0e5dce57ab971b6fc68bc13fbd00401c" title="Read the next value, if available in the input buffer. ">ChimeraTK::TransferElement::readNonBlocking()</a></li>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9488e50bea018025dd4b061afdf2f52b" title="Read the latest value, discarding any other update since the last read if present. ">ChimeraTK::TransferElement::readLatest()</a></li>
@@ -131,58 +131,70 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a91e44b68014588b44adea0d17ec45599" title="Just like write(), but allows the implementation to destroy the content of the user buffer in the pro...">ChimeraTK::TransferElement::writeDestructively()</a></li>
 </ul>
 </li>
-<li>preXxx()<ul>
+<li>6.2 preXxx(), private<ul>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae792208f14c960f0283cfc0e06766d5a" title="Perform any pre-read tasks if necessary. ">ChimeraTK::TransferElement::preRead()</a></li>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad55e5f5a37940479ae2b1ef423e80536" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">ChimeraTK::TransferElement::preWrite()</a></li>
 </ul>
 </li>
-<li>doPreXxx()<ul>
+<li>6.3 doPreXxx(), virtual<ul>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a60d3b43f03bed1cf27c57fd7e0c76127" title="Backend specific implementation of preRead(). ">ChimeraTK::TransferElement::doPreRead()</a></li>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd" title="Backend specific implementation of preWrite(). ">ChimeraTK::TransferElement::doPreWrite()</a></li>
 </ul>
 </li>
-<li>xxxTransferYyy()<ul>
+<li>6.4 xxxTransferYyy(), private<ul>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0d42b90e885f41503366fcc171424ad0" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">ChimeraTK::TransferElement::readTransfer()</a></li>
-<li>&lt;strike&gt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ac5371e987d333433904dab31015e67e5" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">ChimeraTK::TransferElement::readTransferNonBlocking()</a>&lt;/strike&gt;</li>
+<li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ac5371e987d333433904dab31015e67e5" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">ChimeraTK::TransferElement::readTransferNonBlocking()</a></li>
 <li>&lt;strike&gt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa0c94c362e3a02bc12ff66fe718c915b" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">ChimeraTK::TransferElement::readTransferLatest()</a>&lt;/strike&gt;</li>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab4191d8726a081651d3b0bcf48fa297e" title="Write the data to the device. ">ChimeraTK::TransferElement::writeTransfer()</a></li>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a963e712e3e4189914d2f05e3c4fb2d42" title="Write the data to the device. ">ChimeraTK::TransferElement::writeTransferDestructively()</a></li>
 </ul>
 </li>
-<li>doXxxTransferYyy()<ul>
-<li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0ab70efc5651769deb2bb6c5d4cb5453" title="Implementation version of readTransfer(). ">ChimeraTK::TransferElement::doReadTransfer()</a></li>
+<li>6.5 doXxxTransferYyy()<ul>
+<li>ChimeraTK::TransferElement::doReadTransferSynchonously(), pure virtual (*)</li>
 <li>&lt;strike&gt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae1dcdfeb3d4d849cb9d6232727031e51" title="Implementation version of readTransferNonBlocking(). ">ChimeraTK::TransferElement::doReadTransferNonBlocking()</a>&lt;/strike&gt;</li>
 <li>&lt;strike&gt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a630bcd4b15d5579c0a97f9beb9b63a22" title="Implementation version of readTransferLatest(). ">ChimeraTK::TransferElement::doReadTransferLatest()</a>&lt;/strike&gt;</li>
-<li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer(). ">ChimeraTK::TransferElement::doWriteTransfer()</a></li>
-<li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a98f467545b6682f18cec6b113c5898cc" title="Implementation version of writeTransferDestructively(). ">ChimeraTK::TransferElement::doWriteTransferDestructively()</a></li>
+<li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer(). ">ChimeraTK::TransferElement::doWriteTransfer()</a>, pure virtual</li>
+<li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a98f467545b6682f18cec6b113c5898cc" title="Implementation version of writeTransferDestructively(). ">ChimeraTK::TransferElement::doWriteTransferDestructively()</a>, virtual</li>
 </ul>
 </li>
-<li>postXxx()<ul>
+<li>6.6 postXxx(), private<ul>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a71aa608f151dbe46289a6214dd5ece4b" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">ChimeraTK::TransferElement::postRead()</a></li>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a268de3bedb11cc1739d243efca87f31d" title="Perform any post-write cleanups if necessary. ">ChimeraTK::TransferElement::postWrite()</a></li>
 </ul>
 </li>
-<li>doPostXxx()<ul>
+<li>6.7 doPostXxx(), virtual<ul>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7" title="Backend specific implementation of postRead(). ">ChimeraTK::TransferElement::doPostRead()</a></li>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a1ce7447bb8e50c3da38bc2ae3aa185b3" title="Backend specific implementation of postWrite(). ">ChimeraTK::TransferElement::doPostWrite()</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li>7. Private and virtual functions<ul>
+<li>7.1 The private functions preXxx(), xxxTransferYyy(), and postXxx() implement common, decorating functionality like exception handling in the TransferElement base class</li>
+<li>7.2 They internally call their virtual counterparts which start with 'do'</li>
+<li>7.3 The virtual do-functions are the actual implementations of the transfer or pre/post action, which are specific for each backend, decorator etc.</li>
 </ul>
-<h2>A. Behavioural specification</h2>
+</li>
+</ul>
+<h3>(*) Comments</h3>
 <ul>
-<li>1. Data types [TODO]</li>
-<li>2. Modes of transfers<ul>
-<li>2.1 Read operations:<ul>
-<li>2.1.1 The flag <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> determines whether the transfer is initiated by the device side (flag is set) or not.</li>
-<li>2.1.2 If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is not set, read operations<ul>
+<li>5.4 The buffer is accessed by the operatons and must not be changed at this time. As transfer elements are not thread safe (B.1) this means the application will either perform an operation or otherwise change the buffer ad libitum.</li>
+<li>6.5 doReadTransferSynchonously() is currently called doReadTransfer(). This should be renamed.</li>
+</ul>
+<h2>B. Behavioural specification</h2>
+<ul>
+<li>1. TransferElements are not thread safe</li>
+<li>2. Data types [TODO]</li>
+<li>3. Modes of transfers<ul>
+<li>3.1 Read operations:<ul>
+<li>3.1.1 The flag <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> determines whether the transfer is initiated by the device side (flag is set) or not.</li>
+<li>3.1.2 If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is not set, read operations<ul>
 <li>obtain the <em>current</em> value of the process variable (if possible/applicable by synchronously communicating with the device),</li>
 <li>have no information whether the value has changed, and</li>
 <li>behave identical whether read(), readNonBlocking() or readLatest() is called, and readNonBlocking() and readLatest() always return true.</li>
 </ul>
 </li>
-<li>2.1.3 If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is set,<ul>
+<li>3.1.3 If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is set,<ul>
 <li>read() blocks until new data has arrived,</li>
 <li>readNonBlocking() does not block and instead returns whether new data has arrived or not, and</li>
 <li>readLatest() is merely a convenience function which calls readNonBlocking() until no more new data is available.</li>
@@ -190,9 +202,12 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </li>
 </ul>
 </li>
-<li>2.2 Write operations<ul>
-<li>2.2.1 do not distingish on which end the transfer is initiated. The API allows for device-initiated transfers and is compatible with receiver-initiated transfers as well.</li>
-<li>2.2.2 can optionally be "destructively", which allows the implementation to destroy content of the application buffer in the process.<ul>
+<li>3.2 Write operations<ul>
+<li>3.2.1 do not distingish on which end the transfer is initiated. The API allows for application-initiated transfers and is compatible with device-initiated transfers as well.<ul>
+<li>It is guaranteed that the application buffer is still intact after the write operation.</li>
+</ul>
+</li>
+<li>3.2.2 can optionally be "destructively", which allows the implementation to destroy content of the application buffer in the process.<ul>
 <li>Applications can allow this optimisation by using writeDestructively() instead of write().</li>
 <li>The optimisation is still optional, backends are allowed to not make use of it. In this case, the content of the application buffer will be intact after writeDestructively(). Applications still are not allowed to use the content of the application buffer after writeDestructively().</li>
 </ul>
@@ -201,62 +216,83 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </li>
 </ul>
 </li>
-<li>3. Stages of an operation initiated by calling xxxYyy()<ul>
-<li>3.1 preXxx(): calls doPreXxx() of the implementation to allow preparatory work before the actual transfer. Might be empty, if nothing is to be done.<ul>
-<li>3.1.1 In case of reads with AccessMode::wait_for_new_data, preRead() and hece doPreRead() is not called before the actual transfer due to its asynchronous nature (initiated by the device). Hence backend implementations usually will do nothing there, but decorator-like implementations still can use it to execute preparatory tasks.</li>
+<li>4. Stages of an operation initiated by calling xxxYyy()<ul>
+<li>4.1 preXxx(): calls doPreXxx() of the implementation to allow preparatory work before the actual transfer. doPreXxx() can be empty if nothing is to be done (*)<ul>
+<li>4.1.1 preXxx() is part of the operation, not of the actual transfer. In case of reads with AccessMode::wait_for_new_data the transfer is asynchonousy initiated by the device and not connected to the operation. Hence backend implementations usually have an empty doPreWrite(), but decorator-like implementations still can use it to execute preparatory tasks.</li>
 </ul>
 </li>
-<li>3.2 xxxTransferYyy(): This stage only exists for writes, and for reads without AccessMode::wait_for_new_data.<ul>
-<li>3.2.1 Calls doWriteTransferYyy() resp. doReadTransfer(), which performs the actual transfer, but does not yet change the application buffer.</li>
+<li>4.2 xxxTransferYyy():<ul>
+<li>4.2.1 readTransfer()<ul>
+<li>If wait_for_new_data is set, it waits until new data has been received and returns</li>
+<li>If wait_for_new_data is not set, it calls doReadTransferAsynchrously()</li>
 </ul>
 </li>
-<li>3.3 postXxx(): calls doPostXxx() of the implementation to allow follow-up work after the actual transfer.<ul>
-<li>3.3.1 doPostRead() is the only place where the application buffer may be changed.</li>
+<li>4.2.2 readTransferNonBlocking()<ul>
+<li>If wait_for_new_data is set, it returns immediately with the information whether new data has been received</li>
+<li>If wait_for_new_data is not set, it calls doReadTransferAsynchrously() and returns true</li>
+</ul>
+</li>
+<li>4.2.3 writeTransferYyy() calls the corresonding doWriteTransferYyy()</li>
+<li>Transfer implementations do not change the application buffer</li>
+</ul>
+</li>
+<li>4.3 postXxx(): calls doPostXxx() of the implementation to allow follow-up work after the actual transfer.<ul>
+<li>4.3.1 doPostRead() is the only place where the application buffer may be changed.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>4. preXxx() and postXxx(), resp. doPreXxx() and doPostXxx(), are called always in pairs. (*)<ul>
-<li>4.1 This holds even if exceptions (both <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> and <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a>, and also boost::thread_interrupted and boost::numeric::bad_numeric_cast) are thrown (see 4).</li>
-<li>4.2 The implementations of preXxx() and postXxx() ignores duplicate calls, such that a call to doPreXxx() is never followed by another call to doPreXxx() before doPostXxx() has been called, and vice versa.</li>
+<li>5. preXxx() and postXxx(), resp. doPreXxx() and doPostXxx(), are called always in pairs. (*)<ul>
+<li>5.1 This holds even if exceptions (both <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> and <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a>, and also boost::thread_interrupted and boost::numeric::bad_numeric_cast) are thrown (see 6).</li>
+<li>5.2 The implementations of preXxx() and postXxx() ignore duplicate calls, such that a call to doPreXxx() is never followed by another call to doPreXxx() before doPostXxx() has been called, and vice versa.</li>
 </ul>
 </li>
-<li>5. Exceptions thrown in preXxx() or xxxTransferYyy() are caught and delayed until postXxx() by the framework. This ensures that preXxx() and postXxx() are always called in pairs.<ul>
-<li>5.1 If in preXxx() an exception is thrown, the corresponding xxxTransferYyy() is not called, instead directly postXxx() is called.</li>
+<li>6. Exceptions thrown in preXxx() or xxxTransferYyy() are caught and delayed until postXxx() by the framework. This ensures that preXxx() and postXxx() are always called in pairs.<ul>
+<li>6.1 If in preXxx() an exception is thrown, the corresponding xxxTransferYyy() is not called, instead directly postXxx() is called.</li>
 </ul>
 </li>
-<li>6. Return values of xxxTransferYyy():<ul>
-<li>6.1 readTransferNonBlocking() returns whether there has been new data. It returns true, if readTransfer() would not have blocked, and false otherwise.</li>
-<li>6.2 writeTransfer() and writeTransferDestructively return whether there has been data lost. If it returns true, some data was rejected in the process of the transfer. It can be either the data that should have been written in the current transfer, or some older data was overwritten.</li>
-<li>6.3 The return value is passed on to the postXxx() function call (via hasNewData resp. dataLost), to allow the doPostXxx() implementations to decide the right actions.</li>
-<li>6.4 In case of an exception in either preXxx() or xxxTransferYyy(), postXxx() receives instead the information that the transfer didn't sucessfully take place (hasNewData = false resp. dataLost = true).</li>
+<li>7. Return values of xxxTransferYyy():<ul>
+<li>7.1 readTransferNonBlocking() returns whether new data has been received (see 4.2.2)</li>
+<li>7.2 writeTransfer() and writeTransferDestructively() return whether data has been lost. If it returns true, some data was rejected in the process of the transfer. It can be either the data that should have been written in the current transfer, or some older data was overwritten.</li>
+<li>7.3 The return value is passed on to the postXxx() function call (via hasNewData resp. dataLost), to allow the doPostXxx() implementations to decide the right actions.</li>
+<li>7.4 In case of an exception in either preXxx() or xxxTransferYyy(), postXxx() receives instead the information that the transfer didn't sucessfully take place (hasNewData = false resp. dataLost = true).</li>
 </ul>
 </li>
-<li>7. Read operations with AccessMode::wait_for_new_data:<ul>
-<li>7.1 Since the transfer is initiated by the device side in this case, the transfer is asynchronous to the read operation.</li>
-<li>7.2 The backend fills any received values into a queue, from which the read()/readNonBlocking() operations will obtain the value.<ul>
-<li>7.2.1 If the queue is full, the last written value will be overwritten.</li>
-<li>7.2.2 The backend may fill a ChimeraTK::detail::DiscardValueException to the queue, which has the same effect as if no entry was filled to the queue. (*)</li>
+<li>8. Read operations with AccessMode::wait_for_new_data:<ul>
+<li>8.1 Since the transfer is initiated by the device side in this case, the transfer is asynchronous to the read operation.</li>
+<li>8.2 The backend fills any received values into a queue, from which the read()/readNonBlocking() operations will obtain the value.<ul>
+<li>8.2.1 If the queue is full, the last written value will be overwritten.</li>
+<li>8.2.2 The backend may fill a ChimeraTK::detail::DiscardValueException to the queue, which has the same effect on the application side as if no entry was filled to the queue. (*)</li>
 </ul>
 </li>
-<li>7.3 Runtime errors like broken connections are reported by the backend by pushing <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> exceptions into the queue. The exception will then be obtained by the read operation in place of a value.</li>
-<li>7.4 Due to the asynchronous nature, it is not possible to obtain a valid value before the first device-initiated transfer took place.<ul>
+<li>8.3 Runtime errors like broken connections are reported by the backend by pushing <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> exceptions into the queue. The exception will then be obtained by the read operation in place of a value.</li>
+<li>8.4 Due to the asynchronous nature, it is not possible to obtain a valid value before the first device-initiated transfer took place.<ul>
 <li>Hint: Applications may use an accessor without AccessMode::wait_for_new_data to read the initial value after opening the device.</li>
 </ul>
 </li>
-<li>7.5 The backend ensures consistency of the value with the device, even if data loss may occur on the transport layer. If necessary, a heartbeat mechanism is implemented to correct any inconsistencies at regular intervals.</li>
+<li>8.5 The backend ensures consistency of the value with the device, even if data loss may occur on the transport layer. If necessary, a heartbeat mechanism is implemented to correct any inconsistencies at regular intervals.</li>
+<li>8.6 When open() is called on the backend(*), all accessors with AccessMode::wait_for_new_data must get an initial value via doReadTransferAsync() and treat it as if it would have been received.<ul>
+<li>8.6.1 An initial value must also be read when a TransferElement is created when the backend is already opened.</li>
 </ul>
 </li>
-<li>7. TransferGroup [TODO]</li>
-<li>8. ReadAnyGroup [TODO]</li>
-<li>9. DataConsistencyGroup [TODO]</li>
+</ul>
+</li>
+<li>9. TransferGroup<ul>
+<li>9.1 TransferGroups are only allowed for TransferElements without AccessMode::wait_for_new_data.</li>
+<li>[TODO]</li>
+</ul>
+</li>
+<li>10. ReadAnyGroup [TODO]</li>
+<li>11 DataConsistencyGroup [TODO]</li>
 </ul>
 <h3>(*) Comments</h3>
 <ul>
-<li>4. Reason: It might be that the user buffer has to be swapped out during the transfer (while taking away the ownership of the calling code), and this must be restored in the postXxx action.</li>
-<li>7.2.2 This allows to discard values inside a continuation of a cppext::future_queue. It is used e.g. by the ControlSystemAdapter's BidirectionalProcessArray. [TBD: It could be replaced by a feature of the cppext::future_queue allowing to reject values in continuations...]</li>
+<li>4.1 preXxx() is part of the operation, not of the actual transfer. In case of reads with AccessMode::wait_for_new_data the transfer is asynchonousy initiated by the device and not connected to the operation. Hence backend implementations usually have an empty doPreWrite(), but decorator-like implementations still can use it to execute preparatory tasks.</li>
+<li>5. Reason: It might be that the user buffer has to be swapped out during the transfer (while taking away the ownership of the calling code), and this must be restored in the postXxx action.</li>
+<li>8.2.2 This allows to discard values inside a continuation of a cppext::future_queue. It is used e.g. by the ControlSystemAdapter's BidirectionalProcessArray. [TBD: It could be replaced by a feature of the cppext::future_queue allowing to reject values in continuations...]</li>
+<li>8.6 Open can be called again on an already opened backend to start error recovery.</li>
 </ul>
-<h2>B. Requirements for all implementations (full and decorator-like)</h2>
+<h2>C. Requirements for all implementations (full and decorator-like)</h2>
 <ul>
 <li>Other exceptions than <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a>, <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a>, boost::thread_interrupted and boost::numeric::bad_numeric_cast are not allowed to be thrown or passed through at any place under any circumstance (unless of course they are guaranteed to be caught before they become visible to the application, like the detail::DiscardValueException). The framework (in particular ApplicationCore) may use "uncatchable" exceptions in some places to force the termination of the application. Backend implementations etc. may not do this, since it would lead to uncontrollable behaviour.</li>
 <li>In the constructor of a TransferElement implementation, <em>only</em> ChimeraTK::logic_errror may be thrown.</li>
@@ -287,7 +323,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </ul>
 </li>
 </ul>
-<h2>C. Requirements for full implementations (e.g. in backends)</h2>
+<h2>D. Requirements for full implementations (e.g. in backends)</h2>
 <ul>
 <li>If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is specified:<ul>
 <li>ChimeraTK::TransferElement::readQueue is initialised in the constructor. [TBD: Allow setting the queue length through the public API?]</li>
@@ -296,18 +332,18 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </ul>
 </li>
 </ul>
-<h2>D. Requirements for decorator-like implementations</h2>
+<h2>E. Requirements for decorator-like implementations</h2>
 <ul>
 <li>If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is specified, ChimeraTK::TransferElement::readQueue is initialised in the constructor with a copy of the readQueue of the target TransferElement. Decorator-like implementations with multiple targets must provide a readQueue e.g. by using cppext::future_queue::when_any() or cppext::future_queue::when_all().</li>
 <li>All functions doPreXxx, doXxxTransferYyy and doPostXxx must delegate to their non-do counterparts (preXxx, xxxTransferYyy and postXxx). Never delegate to the do... of the target implementation functions directly.</li>
 <li>If a function of the same instance should be called, e.g. if doWriteTransferDestructively should redirect to doWriteTransfer or if doPostRead should call doPostRead of a base class, call to do-version of the function. This is merely to avoid code duplication, hence the surrounding logic of the non-do function is not wanted here.</li>
 <li>Decorators must merely delegate doXxxTransferYyy, never add any functionalty there. Reason: TransferGroup might effectively bypass the decorator implementation of these functions.</li>
 </ul>
-<h2>E. Implementation in the framework (e.g. class TransferElement itself)</h2>
+<h2>F. Implementation in the framework (e.g. class TransferElement itself)</h2>
 <p><b>Note:</b> This section is biased by the current implementation and mostly lists parts that needs to be changed!</p>
-<h3>E.1 TransferFuture</h3>
+<h3>1. TransferFuture</h3>
 <p>The TransferFuture will be kept as is for now to provide backwards compatibility and as a helper to the TransferElement implementation.</p>
-<h3>E.2 TransferElement</h3>
+<h3>2. TransferElement</h3>
 <ul>
 <li>2.1 <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad00999178a215bc11d9c1377c6427c23" title="Read data from the device in the background and return a future which will be fulfilled when the data...">ChimeraTK::TransferElement::readAsync()</a> is deprecated</li>
 <li>2.2 <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af60ec6ab982e620f5bfdc3b5bbed9928" title="Last future returned by doReadTransferAsync() (valid if hasActiveFuture == true). ...">ChimeraTK::TransferElement::activeFuture</a> is created in the first call to read(), readNonBlockig() or readAsync() from ChimeraTK::TransferElement::readQueue if <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is set.</li>
@@ -319,11 +355,11 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>2.4 readLatest() is directly calling readNonBlocking() in a loop.</li>
 <li>2.5 Add function ChimeraTK::detail::getFutureQueueFromTransferElement(), replacing ChimeraTK::detail::getFutureQueueFromTransferFuture().</li>
 </ul>
-<h3>E.3 ReadAnyGroup</h3>
+<h3>3. ReadAnyGroup</h3>
 <ul>
 <li>3.1 Use the new ChimeraTK::detail::getFutureQueueFromTransferElement().</li>
 </ul>
-<h3>E.4 ApplicationCore</h3>
+<h3>4. ApplicationCore</h3>
 <ul>
 <li>4.1 For the TestableModeAccessorDecorator: TransferElement::transferFutureWaitCallback() does no longer exist. Instead preRead() will now be called. In case of readAny, multiple calls to preRead() on different accessors will be made on the first call to readAny - the decorator has to deal with that properly. </li>
 </ul>
@@ -332,7 +368,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu May 7 2020 03:53:09 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat May 9 2020 03:53:09 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
