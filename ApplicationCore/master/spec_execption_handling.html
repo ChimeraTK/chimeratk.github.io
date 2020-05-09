@@ -86,21 +86,6 @@ $(document).ready(function(){initNavTree('spec_execption_handling.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><b>DRAFT VERSION, WRITE-UP IN PROGRESS!</b></p>
-<h1><a class="anchor" id="spec_execptionHandling_changes"></a>
-Recent changes</h1>
-<p>This section lists bigger recent changes, which might be hard to track due to restructuring the document at the same time. This section will go away once the changes have been reviewed.</p>
-<ul>
-<li>Write never blocks in case of exceptions. The following spec points (with discussion why) were hence <b>removed/replaced</b>. See also the mattermost channel.<ul>
-<li>&lt;strike&gt;Write operations will block immediately until the device has been recovered and the write operation has been completed. [TBD: is this really a good idea? <b>COMMENT</b>: The order of write operations is still not guaranteed through the recovery accessors (which maybe should be changed), and blocking writes has some severe drawbacks. Not only in fan outs but also in normal ApplicationModules blocking writes will prevent propagation of DataValidity flags! Blocking writes might help if a sequence of values is written to the same register - this is not handled by the recovery accessor. But if a handshake register is read back in between the writes, the situation can already be handled properly (check DataValidity flag, restart sequence after recovery). Maybe blocking writes create more probelms then they solve!? On the other hand, how does the application then know that a write() has no effect yet? E.g. a PI controller might wind-up if actuator and sensor are on different devices and the actuator fails. Then again, how is this different a failing actuator hardware without breaking the communication? Some form of a status readback of the actuator again cures the situation. I think I am in favour of "fire-and-forget" writes.].&lt;/strike&gt;<ul>
-<li>&lt;strike&gt;Write should not block in case of an exception for the outputs of <a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html" title="FanOut implementation with an internal thread which waits for new data which is read from the given f...">ThreadedFanOut</a> / <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html" title="InternalModule which waits for a trigger, then reads a number of variables and distributes each of th...">TriggerFanOut</a>.&lt;/strike&gt;</li>
-<li>&lt;strike&gt;According to <a class="el" href="spec_initial_value_propagation.html">spec_initialValuePropagation</a>, writes in ApplicationModules do not block before the first successful read in the main loop.&lt;/strike&gt;</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>The order of writes during recovery (through recoveryAccessors) is now guaranteed to be the same as the original writes.</li>
-<li>Direct access to the DataFaultCounter is not necessary. Since the spec says the behavior should be transparent whether a connection is directly made to the device or another ApplicationModule/FanOut is in between, it is sufficient to override the flag returned by <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a28c3c3d51c5e97712bdece9bf9657a73">ExceptionHandlingDecorator::dataValidity()</a> in case of an exception state. This greatly simplifies the implementation and does not change the behavior.</li>
-</ul>
 <h1><a class="anchor" id="spec_execptionHandling_intro"></a>
 Introduction</h1>
 <p>Exceptions are handled by ApplicationCore in a way that the application developer does not need to care much about it.</p>
@@ -115,7 +100,7 @@ Special terminology used in this document</h2>
 <li>An write operation might be "delayed". This means, the operation will not be executed immediately and the calling thread continues. The operation will be asynchronosuly executed when the fault state is resolved. Note that the VersionNumber specified in the write operation will be retained and also used for the delayed write operation.</li>
 <li>Whenever a write operation or a call to write() is mentioned, destructive writes via writeDestructively() are included. The destructive write optimisation makes no difference for the exception handling.</li>
 </ul>
-<h1><a class="anchor" id="spec_execptionHandling_behavior"></a>
+<h1><a class="anchor" id="spec_execptionHandling_behaviour"></a>
 A. Behavioural description</h1>
 <ul>
 <li>1. All ChimeraTK::runtime_error exceptions thrown by device register accessors are handled by the framework and are never exposed to user code in ApplicationModules.<ul>
@@ -148,7 +133,7 @@ A. Behavioural description</h1>
 <li>2.3.3 It is guaranteed that the write takes place before the device is considered fully recovered again and other transfers are allowed (cf. 3.1).</li>
 </ul>
 </li>
-<li>2.4 In case of exceptions, there is no guaranteed realtime behavior, not even for "non-blocking" transfers. (*)</li>
+<li>2.4 In case of exceptions, there is no guaranteed realtime behaviour, not even for "non-blocking" transfers. (*)</li>
 </ul>
 </li>
 <li>3. The framework tries to resolve an exception state by periodically re-opening the faulty device.<ul>
@@ -161,145 +146,110 @@ A. Behavioural description</h1>
 <li>3.2 Any number of initialisation handlers can be added to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> in the user code. Initialisation handlers are callback function which will be executed when a device is opened for the first time and after a device recovers from an exception, before any process variables are written. See <a class="el" href="class_chimera_t_k_1_1_device_module.html#ab30bf1b235913143d45bb5da7d84052c" title="Add initialisation handlers to the device. ">DeviceModule::addInitialisationHandler()</a>.</li>
 </ul>
 </li>
-<li>4. The behavior at application start (when all devices are still closed at first) is similar to the case of a later received exception. The only differences are mentioned in 4.2.<ul>
+<li>4. The behaviour at application start (when all devices are still closed at first) is similar to the case of a later received exception. The only differences are mentioned in 4.2.<ul>
 <li>4.1 Even if some devices are initially in a persisting error state, the part of the application which does not interact with the faulty devices starts and works normally.</li>
 <li>4.2 Initial values are correctly propagated after a device is opened. See <a class="el" href="spec_initial_value_propagation.html">spec_initialValuePropagation</a>. Especially, all read operations (even readNonBlocking/readLatest) will be frozen until an initial value has been received. (*)</li>
 </ul>
 </li>
+<li>5. Any <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> can explicitly report a problem with the device by calling <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception. ">DeviceModule::reportException()</a>. This allows the reinitialisation of a device e.g. after a reboot of the device which didn't result in a exception (e.g. because it was too quick to be noticed, or rebooting the device takes place without interrupting the communication).</li>
 </ul>
-<h2><a class="anchor" id="spec_execptionHandling_behavior_comments"></a>
+<h2><a class="anchor" id="spec_execptionHandling_behaviour_comments"></a>
 (*) Comments</h2>
 <ul>
 <li>1.1 In future, maybe logic_errors are also handled, so configuration errors can nicely be presented to the control system. This may be important especially since logic_errors may depend also on the configuration of external components (devices). If e.g. a device is changed (e.g. device is another control system application which has been modified), logic_errors may be thrown in the recovery phase, despite the device had been successfully initialsed previously.</li>
 <li>2.2.4 Preventing the device to send data before the recovery is complete is not trivial in the general case for asynchronous transfers (i.e. wait_for_new_data). Race conditions might occur if the transport layer does not guarantee the order of packets (e.g. UDP), in which case unsubscribing a variable might not guarantee that no more data arrives which has been sent before unsubscribing. Hence it was decided not to specify a mechanism which would guarantee that no asychronous data transfers take place before the recovery has completed.</li>
-<li>2.2.5 Not defining the behavior here avoids a conflict with 1.2 without requiring a complicated implementation which does not block in this case. Implementing this would not present any gain for the application. If there are many exceptions on the same device in a short period of time, the number of faulty data updates seen by the application modules will always depend on the speed the module is attempting to read data (unless we require every exception to be visible to every module, but this will have complex effects, too). It might break consistency of the number of updates sent through different paths in an application, but applications should anyway not rely on that and use a DataConsistencyGroup to synchronise instead. Hence, the implementation will block always if a blocking read sees a known exception</li>
+<li>2.2.5 Not defining the behaviour here avoids a conflict with 1.2 without requiring a complicated implementation which does not block in this case. Implementing this would not present any gain for the application. If there are many exceptions on the same device in a short period of time, the number of faulty data updates seen by the application modules will always depend on the speed the module is attempting to read data (unless we require every exception to be visible to every module, but this will have complex effects, too). It might break consistency of the number of updates sent through different paths in an application, but applications should anyway not rely on that and use a DataConsistencyGroup to synchronise instead. Hence, the implementation will block always if a blocking read sees a known exception</li>
 <li>2.3 / 3.1.3 If timing is important for write operations (e.g. must not write a sequence of registers too fast), or if multiple values need to be written to the same register in sequence, the application cannot fully rely on the framework's recovery procedure. The framework hence provides the process variable Devices/&lt;alias&gt;/deviceBecameFunctional for each device, which will be written each time the recovery procedure is completed (cf. 3.1.3). ApplicationModules which implement such timed sequence need to receive this variable and restart the entire sequence after the recovery.</li>
 <li>2.4 Even non-blocking read and write operations are not truely non-blocking, since they are still synchronous. The "non-blocking" guarantee only means that the operation does not block until new data has arrived, and that it is not frozen until the device is recovered. For the duration of the recovery procedure and of course for timeout periods these operations may still block.</li>
 <li>3.1.2 For some applications, the order of writes may be important, e.g. if firmware expects this. Please note that the VersionNumber is insufficient as a sorting criteria, since many writes may have been done with the same VersionNumber (in an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a>, the VersionNumber used for the writes is determined by the largest VersionNumber of the inputs).</li>
-<li>4.2 DataValidity::faulty is initially set by default, so there is no need to propagate this flag initially. To prevent race conditions and undefined behavior, it even needs to be made sure that the flag is not propagated unnecessarily. The behavior of non-blocking reads presents a slight asymmetry between the initial device opening and a later recovery. This will in particular be visible when restarting a server while a device is offline. If a module only uses readLatest()/readNonBlocking() (= read() for poll-type inputs) for the offline device, the module was still running before the server restart using the last known values for the dysfunctional registers (and flagging all outputs as faulty). After the restart, the module has to wait for the initial value and hence will not run until the device becomes functional again. To make this behavior symmetric, one would need to persist the values of device inputs. Since this only affects a corner case in which anyway no usable output is produced, this slight inconsistency is considered acceptable.</li>
+<li>4.2 DataValidity::faulty is initially set by default, so there is no need to propagate this flag initially. To prevent race conditions and undefined behaviour, it even needs to be made sure that the flag is not propagated unnecessarily. The behaviour of non-blocking reads presents a slight asymmetry between the initial device opening and a later recovery. This will in particular be visible when restarting a server while a device is offline. If a module only uses readLatest()/readNonBlocking() (= read() for poll-type inputs) for the offline device, the module was still running before the server restart using the last known values for the dysfunctional registers (and flagging all outputs as faulty). After the restart, the module has to wait for the initial value and hence will not run until the device becomes functional again. To make this behaviour symmetric, one would need to persist the values of device inputs. Since this only affects a corner case in which anyway no usable output is produced, this slight inconsistency is considered acceptable.</li>
 </ul>
 <h1><a class="anchor" id="spec_execptionHandling_high_level_implmentation"></a>
 B. Implementation</h1>
-<p>A so-called <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> is placed around all device register accessors (used in ApplicationModules and FanOuts). It is responsible for catching the exceptions and implementing most of the behavior described in A.2. It has to work closely with the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> and there is a complex syncronsiation and locking scheme, which is described here, together with the according interface functions of the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>. The sequence executed in the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> is described in <a class="el" href="spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule">B.2 DeviceModule</a>.</p>
-<h2><a class="anchor" id="spec_execptionHandling_high_level_implmentation_TransferElement"></a>
-B.0 Requirements to the DeviceAccess TransferElement</h2>
-<p>Note: This section should be integrated into the TransferElement specification and then removed here. Requirements which are already met by the TransferElement specifciation are not mentioned here.</p>
-<ul>
-<li>0.1 readAsync() may only be called if AccessMode::wait_for_new_data is set. It will throw a ChimeraTK::logic_error otherwise.</li>
-<li>0.2 If AccessMode::wait_for_new_data is set, the TransferFuture is initialised in the constructor. All read implementations except readLatest() are then using always the TransferFuture.</li>
-<li>0.3 readLatest() never uses the TransferFuture. Its implementation is identical to the one read implementation when AccessMode::wait_for_new_data is not set. The return value of readLatest() is changed to void.</li>
-<li>0.4 readTransferAsync() and doReadTransferAsync() are obsolete and hence removed from the interface.</li>
-<li>0.5 readAsync() always returns the same TransferFuture in subsequent calls.</li>
-<li>0.6 TransferFuture::wait() and TransferFuture::hasNewData(), as well as ReadAnyGroup::waitAny(), call TransferElement::preRead() at the beginning (keep in mind that extra calls to preRead() are ignored) before the transferFutureWaitCallback is called. This makes sure that preRead() and postRead() are always called in pairs.</li>
-<li>0.7 Due to the nature of asynchronous transfers, backends must not expect preRead() to be called before new data arrives and is filled into the cppext::future_queue. Hence, doPreRead() of asynchronous accessor implementations will usually be empty. The call to preRead() is still necessary also for asynchronous transfers, since decorators might have important tasks to be done there.</li>
-<li>0.8 There is no need to call readAsync() for each read transfer again. If the TransferFuture has been obtained once it can simply be used over and over again. Hence, readAsync() will just return the TransferFuture (which had been created in the constructor already) only. It does not call preRead() - this is done by the TransferFuture (see 0.6), and it doesn't have any side effects. (Maybe it should be renamed into getTransferFuture()).</li>
-</ul>
-<h2><a class="anchor" id="spec_execptionHandling_high_level_implmentation_locking"></a>
-B.4 Syncronsisation and locking between ExceptionHandlingDecorator and DeviceModule</h2>
+<p>A so-called <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> is placed around all device register accessors (used in ApplicationModules and FanOuts). It is responsible for catching the exceptions and implementing most of the behaviour described in A.2. It has to work closely with the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> and there is a complex syncronsiation and locking scheme, which is described here, together with the according interface functions of the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>. The sequence executed in the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> is described in <a class="el" href="spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule">B.2 DeviceModule</a>.</p>
+<h2><a class="anchor" id="spec_execptionHandling_high_level_implmentation_interface"></a>
+B.4 Internal interface between ExceptionHandlingDecorator and DeviceModule</h2>
 <p>FIXME: NUMBERING</p>
+<p>Note: This section defines the internal interface on a low level. Helper functions, like getters and setters, are intenionally not mentioned here, since those are (in this context) unimportant details which can be chosen at will to structure the code conveniently. The entire interface between the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> and the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> should be protected and the two classes should be friends, to prevent interference with the interface from other entities. Only <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception. ">DeviceModule::reportException()</a> is public, see A.5.</p>
 <ul>
-<li>4.1 <a class="el" href="class_chimera_t_k_1_1_device_module.html#ad329aeca005a9b591168360ec1b068a6" title="The error flag (predicate) for the conditionVariable. ">ChimeraTK::DeviceModule::deviceHasError</a> is used by the RecoveryAccessor to detect prevailing error conditions, to know when transfers have to be skipped, frozen or delayed. The access is protected by the <a class="el" href="class_chimera_t_k_1_1_device_module.html#a4e61eb7f0c5215a0579f83ee65d0c889" title="Mutex for errorCondVar. ">ChimeraTK::DeviceModule::errorMutex</a>:<ul>
-<li>4.1.1 shared lock allows to read</li>
-<li>4.1.3 unique lock allows to read and write</li>
-</ul>
-</li>
-<li>4.2 The atomic ChimeraTK::DeviceModule::transferCounter is used by the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> to wait until all on-going transfers are terminated (2.3.15). The access is protected by the <a class="el" href="class_chimera_t_k_1_1_device_module.html#a4e61eb7f0c5215a0579f83ee65d0c889" title="Mutex for errorCondVar. ">ChimeraTK::DeviceModule::errorMutex</a>:<ul>
-<li>4.2.4 no lock required to read and decrement</li>
-<li>4.2.4 shared lock allows to read and increment</li>
-</ul>
-</li>
-<li>4.3 The <a class="el" href="class_chimera_t_k_1_1_device_module.html#aa5e37e4eeac6bf7ee83c5043e9fd9545" title="List of TransferElements to be written after the device has been recovered. ">ChimeraTK::DeviceModule::recoveryHelpers</a> are used delay write operations and to restore the last-written values during recovery. The access to the list elements are protected by the ChimeraTK::DeviceModule::recoveryMutex:<ul>
-<li>4.3.1 shared lock allows to update the application buffer</li>
-<li>4.3.2 unique lock allows to call write()</li>
-</ul>
-</li>
-<li>4.4 Reading initial values is controlled by the ChimeraTK::DeviceModule::initialValueMutex:<ul>
-<li>4.4.1 unique lock is hold by the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">ChimeraTK::DeviceModule</a> from the beginning until the recovery procedure is complete for the first time</li>
-<li>4.4.2 shared lock allows to continue with reading the initial values (no need to keep it, just acquire it once)</li>
+<li>4.1 The boolean flag <a class="el" href="class_chimera_t_k_1_1_device_module.html#ad329aeca005a9b591168360ec1b068a6" title="The error flag (predicate) for the conditionVariable. ">DeviceModule::deviceHasError</a><ul>
+<li>4.1.1 is used by the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> to detect prevailing error conditions, to know when transfers have to be skipped, frozen or delayed (cf. 1.2 and 1.4).</li>
+<li>4.1.2 The access is protected by the <a class="el" href="class_chimera_t_k_1_1_device_module.html#a4e61eb7f0c5215a0579f83ee65d0c889" title="Mutex for errorCondVar. ">DeviceModule::errorMutex</a>:<ul>
+<li>shared lock allows to read</li>
+<li>unique lock allows to read and write</li>
 </ul>
 </li>
 </ul>
-<p>FIXME: MOVE THE REST</p>
+</li>
+<li>4.2 The atomic DeviceModule::transferCounter (*)<ul>
+<li>4.2.1 tracks the number of on-going (synchronous) transfers, and</li>
+<li>4.2.2 is used by the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> to wait until they are all terminated (2.3.15).</li>
+</ul>
+</li>
+<li>4.3 The <a class="el" href="class_chimera_t_k_1_1_device_module.html#aa5e37e4eeac6bf7ee83c5043e9fd9545" title="List of TransferElements to be written after the device has been recovered. ">DeviceModule::recoveryHelpers</a> list elements<ul>
+<li>4.3.1 are used to delay write operations and to restore the last-written values during recovery.</li>
+<li>4.3.2 are protected by the DeviceModule::recoveryMutex:<ul>
+<li>shared lock allows to update the application buffer of <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a1c13eb170308c756b559d46c35681d14">RecoveryHelper::accessor</a> and to change the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#ac4c488a3aecf5f363b46f15c26b566ee">RecoveryHelper::versionNumber</a> (*)</li>
+<li>unique lock allows to call RecoveryHelper::accessor.write() and to read the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#ac4c488a3aecf5f363b46f15c26b566ee">RecoveryHelper::versionNumber</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>4.4 The cppext::future_queue <a class="el" href="class_chimera_t_k_1_1_device_module.html#a81936a1ddd5c7bf141124aa599181a03" title="Queue used for communication between reportException() and the moduleThread. ">DeviceModule::errorQueue</a><ul>
+<li>4.4.1 is used by the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> to inform the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> about new exceptions.</li>
+</ul>
+</li>
+<li>4.5 The following mutexes govern critical sections (besides variable access listed above):<ul>
+<li>4.5.1 <a class="el" href="class_chimera_t_k_1_1_device_module.html#a4e61eb7f0c5215a0579f83ee65d0c889" title="Mutex for errorCondVar. ">DeviceModule::errorMutex</a> protects (*)<ul>
+<li>the (positive) decision to start a transfer followed by incrementing the DeviceModule::transferCounter in 1.2.1 to 1.2.3, against</li>
+<li>setting <a class="el" href="class_chimera_t_k_1_1_device_module.html#ad329aeca005a9b591168360ec1b068a6" title="The error flag (predicate) for the conditionVariable. ">DeviceModule::deviceHasError</a> flag in 1.6.1.</li>
+</ul>
+</li>
+<li>4.5.2 DeviceModule::recoveryMutex protects (*)<ul>
+<li>writing the <a class="el" href="class_chimera_t_k_1_1_device_module.html#aa5e37e4eeac6bf7ee83c5043e9fd9545" title="List of TransferElements to be written after the device has been recovered. ">DeviceModule::recoveryHelpers</a> to the device and clearing the <a class="el" href="class_chimera_t_k_1_1_device_module.html#ad329aeca005a9b591168360ec1b068a6" title="The error flag (predicate) for the conditionVariable. ">DeviceModule::deviceHasError</a> flag in 2.3.5 to 2.3.8, against</li>
+<li>updating the <a class="el" href="class_chimera_t_k_1_1_device_module.html#aa5e37e4eeac6bf7ee83c5043e9fd9545" title="List of TransferElements to be written after the device has been recovered. ">DeviceModule::recoveryHelpers</a> in 1.3.</li>
+</ul>
+</li>
+<li>4.5.3 DeviceModule::initialValueMutex protects (*)<ul>
+<li>the start of a read operation in 1.4.4, against</li>
+<li>the setup phase of a device until it has been opened and recovered for the very first time in 2.1 to 2.9.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="spec_execptionHandling_high_level_implmentation_interface_comments"></a>
+(*) Comments</h3>
 <ul>
-<li>4.1 To ensure that the accessor knows when the device is working or has an error, there is boolean flag <code><b>deviceHasError</b></code> in the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>.<ul>
-<li>4.1.1 The flag is protected by the <code><b>errorMutex</b></code>.</li>
-<li>4.1.2 A conditon variable <code>recoveryCondVar</code> allows to wait for a change on this flag in another thread. It is used inside <b><a class="el" href="class_chimera_t_k_1_1_device_module.html#af1f90d82cac718e665a2e074d2e0c0c2" title="This functions is blocking until the device has been opened, initialsed and all recovery accessors ha...">DeviceModule::waitForRecovery()</a></b>, which is called from the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> which is running in the <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> or <a class="el" href="class_chimera_t_k_1_1_fan_out.html" title="Base class for several implementations which distribute values from one feeder to multiple consumers...">FanOut</a> thread.</li>
-<li>4.1.3 <code>deviceHasErrror</code> is set to  only from <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> threads (and in the constructor) (*)</li>
-<li>4.1.4 <code>deviceHasError</code> is set to  at exactly one place in the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> thread. Afterwars the <code>recoveryCondVar</code> condition variable is notified.</li>
-</ul>
-</li>
-<li>4.2 To inform the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> that there is a new exception, there is a queue of strings where the exeption message can be pushed by the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a>.<ul>
-<li>4.2.1 The function <code><b><a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception. ">DeviceModule::reportException()</a></b></code> </li>
-</ul>
-</li>
-<li>4.3 The atomic <code><b>transferCounter</b></code> in the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> is tracking how many transfers are running. Only when all transfers have finished, the recovery can take place.<ul>
-<li>4.3.1 A function <code><b>startTransfer()</b></code> is increasing the counter if the device is not in error state.<ul>
-<li>4.3.1.1 As the deviceHasError must only be accessed while holding the errorMutex, also increasing the counter must happen under the mutex to ensure without race condition that no transfer is started while the device is not OK.</li>
-<li>4.3.1.2 If the device is OK and the counter was increased, <code>startTransfer()</code> return <code>true</code>, otherwise it returns <code>false</code>.</li>
-</ul>
-</li>
-<li>4.3.2 The counter has to be decreased without acquiring the mutex (*). That's why it has to be atomic. This is done in a convenience function <code></code>** stopTransfer()**.</li>
-<li>4.3.3 If <code>startTransfer()</code> returned <code>true</code>, <code>stopTransfer()</code> must be called exactly once. <code>stopTransfer()</code> must not be called if startTransfer() returned false.</li>
-</ul>
-</li>
-<li>4.4 The so called recovery accessors and <b>RecoveryHelpers</b> (see 1.1) are used by the ExceptionHandlingDecorators and the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>.<ul>
-<li>4.4.1 As accessors and RecoveryHelpers are not thread-safe, they have to be protected by a mutex, the <code><b>recoveryMutex</b></code>.</li>
-<li>4.4.2 The mutex can be a shared mutex for the ExceptionHandlingDecorators. Each <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> is only setting values of it's recovery helper, so all ExceptionHandlingDecorators can to this in parallel.</li>
-<li>4.4.3 During recovery, there is a <em>critical recovery section</em> where the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> must hold an <em>exlusive</em> lock of the recoveryMutex. There it accesses all recovery helpers and executes accessors' write functions.</li>
-</ul>
-</li>
-<li>4.6 MOVE THIS? The critical recovery section<ul>
-<li>4.6.1 It has 3 steps<ul>
-<li>4.6.1.1 Write all recovery accessors. If an exception occurs release the exclusive lock and exit the critical section.</li>
-<li>4.6.1.2 Clear the list of reported exceptions.</li>
-<li>4.6.1.3 Reset the <code>deviceHasError</code> flag (while holding the <code>errorMutex</code> in additon to the <code>recoveryMutex</code>)(*)</li>
-</ul>
-</li>
-<li>4.6.2 Step 2 and step 3 must only be executed if step 1 was successful</li>
-<li>4.6.3 Do not release the <code>recoveryMutex</code> between step 2 and 3. Only this guarantees that no value in a recovery accessor is lost.</li>
-<li>4.6.4 If the critical section is left without having cleared the exception list and <code>deviceHasError</code>, it must be re-tried later</li>
-<li>4.6.5 The list of exceptions must be cleared before resetting deviceHasError. As soon as deviceHasError is cleared new exceptions can be reported, which would be lost if the list was cleared afterwards.</li>
-<li>4.6.7 resetting deviceHasError must the be the very last action taken in the recovery. It happens directly before the recovery lock is released.</li>
-</ul>
-</li>
-<li>4.7 Interaction of 4.4 and 4.6 to make sure no value in a recovery accessor is skipped<ul>
-<li>4.7.1 The <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> is setting the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a> while holdling the shared recovery lock, so the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> is not in the critical recovery section.</li>
-<li>4.7.2 If the subsequent call to startTransfer() returns false it is guaranteed that the recovery will be executed (because of 4.6.3 and 4.6.4), so the data will eventually be written (unless the recovery helber is later re-filled before this has happened, but then this data loss is reportet, see 1.3.1).</li>
-<li>4.7.3 If the subsequent call to startTransfer() returns true, the transfer will take place<ul>
-<li>4.7.3.1 if there is no exception the data is written successfully</li>
-<li>4.7.3.2 if there is an exception the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> will be informed and the recovery section will be executed</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>MOVE COMMENTS TO THE COMMENT SECTION</p>
-<ul>
-<li>4.1.3 Setting the flag has to be done in the application thread. If you just send a message and let the device module do both setting and clearing of the flag you can have a race condition: A blocking read would inform the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> about an exception and continue. The next call to the blocking read is supposed to freeze, but pre-read might not detect this because the device module thread has not woken up yet to set the error flag.</li>
-<li>4.3.2 The state of <code>deviceHasError</code> does not matter here. The counter always MUST be decreased after a transfer, whether the transfer failed or not.</li>
-<li>4.6.1.3 This includes all related steps like notifying the CS, clearing the error message, clearing the actual errorMutex protected variable and notifying the condition variable</li>
+<li>4.2 Reason for not using an (exclusive) lock: Incrementing and decrementing the counter is done in the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> for each operation, even if there is no exception or error state. Concurrent operations must not exclude each other, to allow lockfree operation in the no-exception case (if the backend supports it) and to avoid priority inversion, if different application threads have different priority.</li>
+<li>4.3.2 A shared lock (in contrast to an exclusive lock) is used for the same reasons as in 4.2.</li>
+<li>4.5.1 This prevents a race condition in 2.3.15. If a (synchronous) transfer might be started after <a class="el" href="class_chimera_t_k_1_1_device_module.html#ad329aeca005a9b591168360ec1b068a6" title="The error flag (predicate) for the conditionVariable. ">DeviceModule::deviceHasError</a> has been set, the barrier for new transfers in 2.3.15 would not be effective and the transfer might be even executed only after the device has been re-openend (2.3.1) but before the recovery is complete.</li>
+<li>4.5.2 This prevents data loss due to a race condition. If the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> would update the corresponding DeviceModule::RecoveryHelpers list entry only after it has been written to the device in 2.3.5, but the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> would decide not to execute the write operation (1.2) because the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> thread is still before 2.3.8, the data would not be written to the device at all.</li>
+<li>4.5.3 This implements freezing reads until the initial value can be read, cf. 4.2.</li>
 </ul>
 <h2><a class="anchor" id="spec_execptionHandling_high_level_implmentation_decorator"></a>
 B.1 ExceptionHandlingDecorator</h2>
 <ul>
-<li>1.1 A second, undecorated copy of each writeable device register accessor (*) is used as a so-called recoveryAccessor by the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> and the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>. These recoveryAccessor are used to set the initial values of registers when the device is opened for the first time and to recover the last written values during the recovery procedure.<ul>
-<li>1.1.1 The recoveryAccessor is stored by the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> with additional meta data in a so-called <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a> data structure, which contains:<ul>
-<li>the recoveryAccessor itself,</li>
-<li>the VersionNumber of the (potentially unwritten) data stored in the accessor,</li>
-<li>an ordering parameter which determines the order of write opereations during recovery.</li>
-<li>an atomic flag which indicates whether the value in the recoveryAccessor has already been written to data. (*)</li>
+<li>1.1 A second, undecorated copy of each writeable device register accessor (*), the so-called recovery accessor, is stored in the <a class="el" href="class_chimera_t_k_1_1_device_module.html#aa5e37e4eeac6bf7ee83c5043e9fd9545" title="List of TransferElements to be written after the device has been recovered. ">DeviceModule::recoveryHelpers</a>. These recoveryHelpers are used to set the initial values of registers when the device is opened for the first time and to recover the last written values during the recovery procedure.<ul>
+<li>1.1.1 The <a class="el" href="class_chimera_t_k_1_1_device_module.html#aa5e37e4eeac6bf7ee83c5043e9fd9545" title="List of TransferElements to be written after the device has been recovered. ">DeviceModule::recoveryHelpers</a> is a list of <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a> objects, which each contain:<ul>
+<li><a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a1c13eb170308c756b559d46c35681d14">RecoveryHelper::accessor</a>, the recovery accessor itself,</li>
+<li><a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#ac4c488a3aecf5f363b46f15c26b566ee">RecoveryHelper::versionNumber</a>, the VersionNumber of the (potentially unwritten) data stored in the value buffer of the accessor,</li>
+<li>RecoveryHelper::writeOrder, an ordering parameter which determines the order of write opereations during recovery.</li>
+<li>RecoveryHelper::wasWritten, an atomic flag which indicates whether the data in the value buffer of the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a1c13eb170308c756b559d46c35681d14">RecoveryHelper::accessor</a> has already been written to the device. (*)</li>
 </ul>
 </li>
-<li>1.1.2 Ordering can be done per device (*), hence each <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> has one 64-bit atomic counter which is incremented for each write operation and the value is stored in the ordering parameter for the recoveryAccessor.</li>
-<li>1.1.3 The <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a> object may be accessed only under a lock to prevent concurrent access during recovery. The lock shall be shared to allow concurrent write operations of different registers - only the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> needs to obtain an exclusive lock during recovery. The lock is obained by the ExceptionHandlingDecorators via <a class="el" href="class_chimera_t_k_1_1_device_module.html#a2e4743eb941b949db66d5a309172a62d" title="Returns a shared lock for the DeviceModule::recoverySharedMutex. ">DeviceModule::getRecoverySharedLock()</a>.</li>
+<li>1.1.2 Ordering can be done per device (*), hence each <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> has one 64-bit atomic counter which is incremented for each write operation and the value is stored in RecoveryHelper::writeOrder.</li>
+<li>1.1.3 The <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a> objects may be accessed only under a lock, see 4.3.</li>
 </ul>
 </li>
-<li>1.3 In doPreWrite() the recoveryAccessor with the version number and ordering parameter is updated, and the written flag is cleared. This has to happen while holding the shared recovery lock.<ul>
+<li>1.3 In doPreWrite() the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a> is updated. This has to happen while holding the shared recovery lock.<ul>
+<li>1.3.0 This step needs to be done unconditionally at the very beginning of doPreWrite(), before 1.2 and before delegating preWrite(). (*)</li>
 <li>1.3.1 If the written flag was previously not set, the return value of doWriteTransfer() must be forced to true (data lost).</li>
-<li>1.3.2 The check wheterh to skip the transfer (cf. 1.2) has to be done without releasing the lock between the write to the recoveryAccessor and the check. (*)</li>
+<li>1.3.x Update the value buffer of the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a1c13eb170308c756b559d46c35681d14">RecoveryHelper::accessor</a></li>
+<li>1.3.2 The check whether to skip the transfer (cf. 1.2) has to be done without releasing the lock between the update of the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a> and the check. (*)</li>
 </ul>
 </li>
-<li>1.2 In doPreRead()/doPreWrite(), it must be decided whether to execute xxxTransferYyy(). This part requires a shared lock on the <a class="el" href="class_chimera_t_k_1_1_device_module.html#a4e61eb7f0c5215a0579f83ee65d0c889" title="Mutex for errorCondVar. ">ChimeraTK::DeviceModule::errorMutex</a>.<ul>
+<li>1.2 In doPreRead()/doPreWrite(), it must be decided whether to execute xxxTransferYyy(). This part requires a shared lock on the <a class="el" href="class_chimera_t_k_1_1_device_module.html#a4e61eb7f0c5215a0579f83ee65d0c889" title="Mutex for errorCondVar. ">DeviceModule::errorMutex</a>.<ul>
 <li>1.2.1 xxxTransferYyy() is <em>not</em> executed, if <a class="el" href="class_chimera_t_k_1_1_device_module.html#ad329aeca005a9b591168360ec1b068a6" title="The error flag (predicate) for the conditionVariable. ">DeviceModule::deviceHasError</a> == true and either:<ul>
 <li>it is a write transfer (cf. A.2.3), or</li>
 <li>it is a read transfer and AccessMode::wait_for_new_data is not set (cf. A.2.2.3), or</li>
@@ -307,22 +257,22 @@ B.1 ExceptionHandlingDecorator</h2>
 </ul>
 </li>
 <li>1.2.2 If xxxTransferYyy() is not executed, none of the pre/transfer/post functions must be delegated to the target accessor.</li>
-<li>1.2.3 If xxxTransferYyy() is executed, and it is <em>not</em> a read transfer with AccessMode::wait_for_new_data set, the ChimeraTK::DeviceModule::transferCounter must be incremented.</li>
+<li>1.2.3 If xxxTransferYyy() is executed, and it is <em>not</em> a read transfer with AccessMode::wait_for_new_data set, the DeviceModule::transferCounter must be incremented.</li>
 </ul>
 </li>
 <li>1.4 In doPreRead() certain read operations are frozen in case of a fault state, i.e. startTransfer() returned false (see A.2.2):<ul>
 <li>1.4.1 The shared lock on the <a class="el" href="class_chimera_t_k_1_1_device_module.html#a4e61eb7f0c5215a0579f83ee65d0c889" title="Mutex for errorCondVar. ">DeviceModule::errorMutex</a> acquired in 1.2 is still kept.</li>
 <li>1.4.2 Decide, whether freezing is done (don't freeze yet). Freezing is done if no initial value has been read yet (getCurretVersion() == {nullptr}) and <a class="el" href="class_chimera_t_k_1_1_device_module.html#ad329aeca005a9b591168360ec1b068a6" title="The error flag (predicate) for the conditionVariable. ">DeviceModule::deviceHasError</a> == true (cf. A.4.2). (*)</li>
 <li>1.4.3 Release the <a class="el" href="class_chimera_t_k_1_1_device_module.html#a4e61eb7f0c5215a0579f83ee65d0c889" title="Mutex for errorCondVar. ">DeviceModule::errorMutex</a>.</li>
-<li>1.4.4 If the read should be frozen, acquire a shared lock on the ChimeraTK::DeviceModule::initialValueMutex. (*)</li>
+<li>1.4.4 If the read should be frozen, acquire a shared lock on the DeviceModule::initialValueMutex. (*)</li>
 </ul>
 </li>
 <li>1.5 In doPostRead()/doPostWrite():<ul>
 <li>1.5.0 Delegate postRead() / postWrite() (see 1.6)</li>
 <li>1.5.1 If there was no exception, set <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a1c1ca495827f5fdb4ec6dae83bb8aa3e">ExceptionHandlingDecorator::previousReadFailed</a> = false (cf. 1.2.1 and 1.6.3.1).</li>
-<li>1.5.3 In doPostWrite() the recoveryAccessor's written flag is set if the write was successful (no exception thrown; data lost flag does not matter here). (*)</li>
+<li>1.5.2 If the DeviceModule::transferCounter was incremented in 1.2.3, decrement it. (*)</li>
+<li>1.5.3 In doPostWrite() the RecoveryHelper::wasWritten flag is set if the write was successful (no exception thrown; data lost flag does not matter here). (*)</li>
 <li>1.5.4 In doPostRead(), if no exception was thrown, end overriding the DataValidity returned by the accessor (cf. 1.6.2).</li>
-<li>1.5.2 If the transfer wasperform allowed, call in 1.2.2 the DeviceModule::activeTransfers counter was incremented, atomically decrement it. Must happen after 1.5.3 FIXME: fix numbering</li>
 </ul>
 </li>
 <li>1.6 In doPostRead()/doPostWrite(), any runtime_error exception thrown by the delegated postRead()/postWrite() is caught (*). The following actions are in case of an exception:<ul>
@@ -342,6 +292,23 @@ B.1 ExceptionHandlingDecorator</h2>
 </li>
 <li>1.7 In the constructor of the decorator, put the name of the register to DeviceModule::listOfReadRegisters resp. DeviceModule::listOfWriteRegisters depending on the direction the accessor is used.</li>
 </ul>
+<h3><a class="anchor" id="spec_execptionHandling_high_level_implmentation_decorator_comments"></a>
+(*) Comments</h3>
+<ul>
+<li>1.1 Possible future change: Output accessors can have the option not to have a <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a>. This is needed for instance for "trigger registers" which start an operation on the hardware. Also void registers don't have a <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a> (once the void data type is supported by <a class="el" href="namespace_chimera_t_k.html" title="Generic modules for status monitoring. ">ChimeraTK</a>).</li>
+<li>1.1.1 The written flag cannot be replaced by comparing RecoveryHelper::accessor.getCurrentVersion() and <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#ac4c488a3aecf5f363b46f15c26b566ee">RecoveryHelper::versionNumber</a>, because normal writes (without exceptions) would not update the version number of the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a1c13eb170308c756b559d46c35681d14">RecoveryHelper::accessor</a>. The written flag is atomic so it can be set without getting the recoveryLock again in doPostWrite(). This has to happen before calling DeviceModule::stopTransfer() to ensure the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> does not start the recovery yet. When clearing it in doPreWrite(), and setting it in the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> during recovery, the recoveryLock must be held (see 4.5.2).</li>
+<li>1.1.2 The ordering guarantee cannot work across DeviceModules anyway. Different devices may go offline and recover at different times. Even in case of two DeviceModules which actually refer to the same hardware device there is no synchronisation mechanism which ensures the recovering procedure is done in a defined order.</li>
+<li>1.3.0 Updating the recoveryHelper first ensures that no data is lost, even if the write operation attempt is concurrent with a recovery. See 4.5.2.</li>
+<li>1.3.2 Extending the duration of the lock until the decision whether to skip the transfer will prevent unncessary duplicate writes, which otherwise could occur if the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> went through the whole critical section 2.3.2 to 2.3.10 in between.</li>
+<li>1.2.5 The cppext::future_queue in the TransferFuture is a notification queue and hence of the type void. So we don't have to "invent" any value. Also this injection of values is legal, since the queue is multi-producer but single-consumer. This means, potentially concurrent injection of values while the actual accessor might also write to the queue is allowed. Also, the application is the only receiver of values of this queue, so injecting values cannot disturb the backend in any way.</li>
+<li>1.4.2 In A.2.2.4 it was stated that also in case AccessMode::wait_for_new_data is set blocking read transfers are frozen on the second operation. Nothing is to be implemented for this case, the freezing simply relies on having an empty queue in the accessor. Once the device sends data again, the operation is intrinsically unfrozen.</li>
+<li>1.4.4 The transferCounter is already incremeted at this point. It is acceptable to freeze anyway in this case by waiting on the initialValueMutex, because the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> release the mutex after the first successful recovery and never obtains it again, and this happens before it waits for the transferCounter to become 0 in 2.3.15.</li>
+<li>1.5.2 The state of <a class="el" href="class_chimera_t_k_1_1_device_module.html#ad329aeca005a9b591168360ec1b068a6" title="The error flag (predicate) for the conditionVariable. ">DeviceModule::deviceHasError</a> does not matter here. The counter always MUST be decreased after a transfer (if it has been incremented in the corresponding preXxx()), whether the transfer failed or not. Note: the exact place of decrementing the counter within doPostXxx does not matter, it just has to be done after delegating to postXxx(). The other actions on doPostXxx() have no influence on the behaviour of the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>.</li>
+<li>1.5.3 The RecoveryHelper::wasWritten flag is used to report loss of data. If the loss of data is already reported directly, it should not later be reported again. Hence the written flag is set even if there was a loss of data in this context.</li>
+<li>1.6 Remember: exceptions from other phases are redirected to the post phase by the TransferElement base class.</li>
+<li>1.6.1 No transfers will be started in any of the accessors of the device, including this one. This is important to avoid the race condition described in the comment to 4.1.3</li>
+<li>1.6.3.1 The freezing is done in doPreRead(), see 1.4.</li>
+</ul>
 <h2><a class="anchor" id="spec_execptionHandling_high_level_implmentation_deviceModule"></a>
 B.2 DeviceModule</h2>
 <ul>
@@ -352,7 +319,7 @@ B.2 DeviceModule</h2>
 <li>2.3.1.1 If the very first attempt to open the device after the application start fails, the error message of the exception is used to overwrite the content of Devices/&lt;alias&gt;/message. Otherwise error messages of exceptions thrown by Device::open() are not visible.</li>
 </ul>
 </li>
-<li>&lt;strike&gt; 2.3.2 Obtain lock for accessing recoveryAccessors.&lt;/strike&gt; too early. Only protects recovery accessors.</li>
+<li>New position for 2.3.6 The queue of reported exceptions is cleared. (*)</li>
 <li>2.3.3 Check that all registers on DeviceModule::listOfReadRegisters are isReadable() and all registers on DeviceModule::listOfWriteRegisters are isWriteable().<ul>
 <li>2.3.3.1 This involves obtaining an accessor for the register first, which is discarded after the check.</li>
 <li>2.3.3.2 If there is an exception, update Devices/&lt;alias&gt;/message with the error message and go back to 2.3.1.</li>
@@ -363,46 +330,34 @@ B.2 DeviceModule</h2>
 <li>2.3.4.1 If there is an exception, update Devices/&lt;alias&gt;/message with the error message and go back to 2.3.1.</li>
 </ul>
 </li>
-<li>New positon of 2.3.2 Obtain lock for accessing recoveryAccessors.</li>
-<li>2.3.5 All valid recoveryAccessors are written in the same order they were originally written.<ul>
-<li>2.3.5.1 A recoveryAccessor is considered "valid", if it has already received a value, i.e. its current version number is not {nullptr} any more.</li>
+<li>New positon of 2.3.2 Obtain unique lock on DeviceModule::recoveryMutex.</li>
+<li>2.3.5 Call write() on all valid <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a1c13eb170308c756b559d46c35681d14">RecoveryHelper::accessor</a>, in the ascending order of the DeviceModule::writeOrder.<ul>
+<li>2.3.5.1 A <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a1c13eb170308c756b559d46c35681d14">RecoveryHelper::accessor</a> is considered "valid", if it has already received a value, i.e. <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#ac4c488a3aecf5f363b46f15c26b566ee">RecoveryHelper::versionNumber</a> != {nullptr}</li>
 <li>2.3.5.2 If there is an exception, update Devices/&lt;alias&gt;/message with the error message, release the lock and go back to 2.3.1.</li>
 </ul>
 </li>
-<li>FIXME numberig: write all remaining async reads. Clear them from the list if successful. If there is an exception, update Devices/&lt;alias&gt;/message with the error message, release the lock and go back to 2.3.1.</li>
-<li>2.3.6 The queue of reported exceptions is cleared. &lt;strike&gt;(*)&lt;/strike&gt;</li>
 <li>2.3.7 Devices/&lt;alias&gt;/status is set to 0 and Devices/&lt;alias&gt;/message is set to an empty string.</li>
 <li>2.3.8 <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> allows ExceptionHandlingDecorators to execute reads and writes again (cf. 2.3.14)</li>
 <li>2.3.9 All frozen read operations (cf. 1.4.4) are notified via <a class="el" href="class_chimera_t_k_1_1_device_module.html#af32d735a4004798d75121112501a9f70" title="This condition variable is used to block reportException() until the error state has been resolved by...">DeviceModule::errorIsResolvedCondVar</a>.</li>
-<li>2.3.10 Release lock for recoveryAccessors.</li>
-<li>2.3.11 The DeviceModuleThread waits for the next reported exception. The call to reportException in the other thread has already set deviceHasError to true. From this point on, no new transfers will be started.</li>
+<li>2.3.10 Release lock on DeviceModule::recoveryMutex (was obtained in 2.3.2).</li>
+<li>2.3.11 The DeviceModuleThread waits for the next reported exception. The call to reportException in the other thread has already set deviceHasError to true (*). From this point on, no new transfers will be started.</li>
 <li>2.3.12 An exception is received.</li>
 <li>2.3.13 Devices/&lt;alias&gt;/status is set to 1 and Devices/&lt;alias&gt;/message is set to the first received exception message.</li>
-<li>&lt;strike&gt; 2.3.14 Set <a class="el" href="class_chimera_t_k_1_1_device_module.html#ad329aeca005a9b591168360ec1b068a6" title="The error flag (predicate) for the conditionVariable. ">DeviceModule::deviceHasError</a> = true under exclusive recovery lock (cf. 1.2). From this point on, no new transfers will be started.&lt;/strike&gt; (done in 2.3.11/1.6.1)</li>
 <li>2.3.15 The device module waits until all running read and write operations of ExceptionHandlingDecorators have ended (wait until DeviceModule::activeTransfers == 0). (*)</li>
 <li>2.3.16 The thread goes back to 2.3.1 and tries to re-open the device.</li>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="spec_execptionHandling_high_level_implmentation_comments"></a>
-(*) Comments</h2>
+<h3><a class="anchor" id="spec_execptionHandling_high_level_implmentation_deviceModule_comments"></a>
+(*) Comments</h3>
 <ul>
-<li>1.1 Possible future change: Output accessors can have the option not to have a recovery accessor. This is needed for instance for "trigger registers" which start an operation on the hardware. Also void registers don't have recovery accessors (once the void data type is supported).</li>
-<li>1.1.1 The written flag cannot be replaced by comparing the version number of the recoveryAccessor and the version number stored in the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a>, because normal writes (without exceptions) would not update the version number of the recoveryAccessor.</li>
-<li>1.1.1 The flag is atomic so it can be set without getting the recoveryLock again in doPostRead(). This has to happen before calling DeviceModule::stopTransfer() to ensure the DeviceModule() does not start the recovery yet. When clearing it in doPreRead(), and setting it in the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> during recovery, the recoveryLock must be held.</li>
-<li>1.1.2 The ordering guarantee cannot work across DeviceModules anyway. Different devices may go offline and recover at different times. Even in case of two DeviceModules which actually refer to the same hardware device there is no synchronisation mechanism which ensures the recovering procedure is done in a defined order.</li>
-<li>1.3.2 Extending the duration of the lock until the decision whether to skip the transfer will prevent unncessary duplicate writes, which otherwise could occur if the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> went through the whole critical section 2.3.2 to 2.3.10 in between.</li>
-<li>1.2.5 The cppext::future_queue in the TransferFuture is a notification queue and hence of the type void. So we don't have to "invent" any value. Also this injection of values is legal, since the queue is multi-producer but single-consumer. This means, potentially concurrent injection of values while the actual accessor might also write to the queue is allowed. Also, the application is the only receiver of values of this queue, so injecting values cannot disturb the backend in any way.</li>
-<li>1.4.2 In A.2.2.4 it was stated that also in case AccessMode::wait_for_new_data is set blocking read transfers are frozen on the second operation. Nothing is to be implemented for this case, the freezing simply relies on having an empty queue in the accessor. Once the device sends data again, the operation is intrinsically unfrozen.</li>
-<li>1.4.4 The transferCounter is already incremeted at this point. It is acceptable to freeze anyway in this case by waiting on the initialValueMutex, because the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> release the mutex after the first successful recovery and never obtains it again, and this happens before it waits for the transferCounter to become 0 in 2.3.15.</li>
-<li>1.5.3 The written flag for the recoveryAccessor is used to report loss of data. If the loss of data is already reported directly, it should not later be reported again. Hence the written flag is set even if there was a loss of data in this context.</li>
-<li>1.6 Remember: exceptions from other phases are redirected to the post phase by the TransferElement base class.</li>
-<li>1.6.1 No transfers will be started in any of the accessors of the device, including this one. This is important to avoid the race condition described in the comment to 4.1.3</li>
-<li>1.6.3.1 The freezing is done in doPreRead(), see 1.4.</li>
-<li>&lt;strike&gt; 1.4.3 The order of locks is important here. The recovery lock prevents the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> from entering the section 2.3.2 to 2.3.10, which includes the notification through the <a class="el" href="class_chimera_t_k_1_1_device_module.html#af32d735a4004798d75121112501a9f70" title="This condition variable is used to block reportException() until the error state has been resolved by...">DeviceModule::errorIsResolvedCondVar</a> at 2.3.9. The mutex DeviceModule::errorLock is the mutex used for the condition variable. Since the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> obtains it before the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> can start the notification, it is guaranteed that the decorator does not miss the notification. Note that the DeviceModule::errorLock is not a shared lock, so concurrent ExceptionHandlingDecorator::preRead() will mutually exclude, but the mutex is held only for a short time until errorIsResolvedCondVar.wait() is called.&lt;/strike&gt; See comment on striked out 1.4.3 directly.</li>
-<li>2.3.6 The exact place when this is done does not matter, as long as it is done after 2.3.15 (no ongoing transfers).</li>
+<li>2.3.6 The exact place when this is done does not matter, as long as it is done after 2.3.15 (no ongoing synchronous transfers) and before 2.3.8 (resetting deiveHasError). As soon as deviceHasError is cleared new exceptions can be reported, which would be lost if the list was cleared afterwards. Moving it as early as possible after the device has been reopenend has the (slight) advantage, that exceptions which might be reported by asynchronous transfers during the recovery are not discarded, even if the recovery itself does't catch them for some reason. Since exceptions reported by asynchronous transfers are subject to race conditions with the recovery procedure, there cannot be strict guarantees about the behaviour. The optimal place where to reset the queue (to minimise unnecessary recoveries while minimising the probability of rejecting true errors which then need to be found instead later by other transfers) might need to be found in real-life experiments later.</li>
+<li>2.3.11 Setting the <a class="el" href="class_chimera_t_k_1_1_device_module.html#ad329aeca005a9b591168360ec1b068a6" title="The error flag (predicate) for the conditionVariable. ">DeviceModule::deviceHasError</a> flag has to be done in the application thread which has caught the exception. If you just send a message and let the device module do both setting and clearing of the flag you can have a race condition: A blocking read would inform the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> about an exception and continue. The next call to the blocking read is supposed to freeze, but pre-read might not detect this because the device module thread has not woken up yet to set the error flag.</li>
 <li>2.3.15 The backend has to take care that all operations, also the blocking/asynchronous reads with "waitForNewData", terminate when an exception is thrown, so recovery can take place (see DeviceAccess TransferElement specification).</li>
 </ul>
+<h2><a class="anchor" id="spec_execptionHandling_high_level_implmentation_reportException"></a>
+B.2 DeviceModule::reportException()</h2>
+<p>FIXME missing</p>
 <h1><a class="anchor" id="spec_execptionHandling_known_issues"></a>
 Known issues - OUTDATED (numbers don't even match)</h1>
 <p>&lt;strike&gt;</p><ul>
@@ -437,7 +392,7 @@ Known issues - OUTDATED (numbers don't even match)</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Fri May 8 2020 03:53:36 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat May 9 2020 03:53:54 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

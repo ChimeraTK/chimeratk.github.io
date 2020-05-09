@@ -17,19 +17,23 @@ var NAVTREE =
     ] ],
     [ "Technical specification: propagation of initial values", "spec_initial_value_propagation.html", null ],
     [ "Technical specification: Exception handling for device runtime errors", "spec_execption_handling.html", [
-      [ "Recent changes", "spec_execption_handling.html#spec_execptionHandling_changes", null ],
       [ "Introduction", "spec_execption_handling.html#spec_execptionHandling_intro", [
         [ "Special terminology used in this document", "spec_execption_handling.html#spec_exceptionHandling_intro_terminology", null ]
       ] ],
-      [ "A. Behavioural description", "spec_execption_handling.html#spec_execptionHandling_behavior", [
-        [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_behavior_comments", null ]
+      [ "A. Behavioural description", "spec_execption_handling.html#spec_execptionHandling_behaviour", [
+        [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_behaviour_comments", null ]
       ] ],
       [ "B. Implementation", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation", [
-        [ "B.0 Requirements to the DeviceAccess TransferElement", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_TransferElement", null ],
-        [ "B.4 Syncronsisation and locking between ExceptionHandlingDecorator and DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_locking", null ],
-        [ "B.1 ExceptionHandlingDecorator", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator", null ],
-        [ "B.2 DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule", null ],
-        [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_comments", null ]
+        [ "B.4 Internal interface between ExceptionHandlingDecorator and DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_interface", [
+          [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_interface_comments", null ]
+        ] ],
+        [ "B.1 ExceptionHandlingDecorator", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator", [
+          [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_comments", null ]
+        ] ],
+        [ "B.2 DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule", [
+          [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule_comments", null ]
+        ] ],
+        [ "B.2 DeviceModule::reportException()", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_reportException", null ]
       ] ],
       [ "Known issues - OUTDATED (numbers don't even match)", "spec_execption_handling.html#spec_execptionHandling_known_issues", null ]
     ] ],
@@ -85,7 +89,7 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8fae0ac20adce6ffee48c7151b070aa5737",
 "class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780",
 "configreader.html#usage",
-"struct_chimera_t_k_1_1_config_reader.html#ad514bd3865b91a2609de8c787dadaec9",
+"struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793",
 "struct_controller.html#ab39304e11bf3c606f96d08287af4bdc7"
 ];
 
