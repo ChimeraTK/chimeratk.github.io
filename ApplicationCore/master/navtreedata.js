@@ -24,18 +24,18 @@ var NAVTREE =
         [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_behaviour_comments", null ]
       ] ],
       [ "B. Implementation", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation", [
-        [ "B.4 Internal interface between ExceptionHandlingDecorator and DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_interface", [
+        [ "B.1 Internal interface between ExceptionHandlingDecorator and DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_interface", [
           [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_interface_comments", null ]
         ] ],
-        [ "B.1 ExceptionHandlingDecorator", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator", [
+        [ "B.2 ExceptionHandlingDecorator", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator", [
           [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_comments", null ]
         ] ],
-        [ "B.2 DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule", [
+        [ "B.3 DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule", [
           [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule_comments", null ]
         ] ],
-        [ "B.2 DeviceModule::reportException()", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_reportException", null ]
+        [ "B.4 DeviceModule::reportException()", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_reportException", null ]
       ] ],
-      [ "Known issues - OUTDATED (numbers don't even match)", "spec_execption_handling.html#spec_execptionHandling_known_issues", null ]
+      [ "C. Known issues", "spec_execption_handling.html#spec_execptionHandling_known_issues", null ]
     ] ],
     [ "Technical specification: StatusAggregator", "spec__status_aggregator.html", null ],
     [ "Example 1: Application with two modules and two hardware devices", "example1.html", null ],

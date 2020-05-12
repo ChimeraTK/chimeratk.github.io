@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>The fan outs should have a transparent behaviour, i.e. an entity that receives an initial value through a fan out should see the same behaviour as if a direct connection would have been realised.</li>
 <li>This implies that the inputs need to be treated like described in 8.b.</li>
 <li>The initial value is propagated immediately to the outputs.</li>
-<li>If an output cannot be written at that point (because it writes to a device currently being unavailable), the value propagation to other targets must not be blocked. See recovery mechanism described in exceptionHandlingDesign.</li>
+<li>If an output cannot be written at that point (because it writes to a device currently being unavailable), the value propagation to other targets must not be blocked. See recovery mechanism described in <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors</a>.</li>
 </ol>
 </li>
 <li>Constants (<code><a class="el" href="class_chimera_t_k_1_1_application.html#ac218f88f11166c115b0facb6a2c981f5" title="Convenience function for creating constants. ">ChimeraTK::Application::makeConstant()</a></code>):<ol type="a">
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <ul>
 <li>Each <code>ChimeraTK::NDRegisterAccessor</code> must implement 1. separately.</li>
 <li>Each <code>ChimeraTK::NDRegisterAccessor</code> must implement 2. separately. All accessors should already have a <code>ChimeraTK::VersionNumber</code> data member called <code>currentVersion</code> or similar, it simply needs to be constructed with a <code>nullptr</code> as an argument.</li>
-<li><code>ChimeraTK::NDRegisterAccessor</code> must throw exceptions <em>only</em> in <code>TransferElement::postRead()</code> and <code>TransferElement::postWrite()</code>. No exceptions may be thrown in <code>TransferElement::doReadTransfer()</code> etc. (all transfer implementations). See also exceptionHandlingDesign.</li>
+<li><code>ChimeraTK::NDRegisterAccessor</code> must throw exceptions <em>only</em> in <code>TransferElement::postRead()</code> and <code>TransferElement::postWrite()</code>. No exceptions may be thrown in <code>TransferElement::doReadTransfer()</code> etc. (all transfer implementations). See also <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors</a>.</li>
 </ul>
 <h3>ApplicationModule</h3>
 <ul>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 </li>
 </ul>
 <h3>DeviceModule</h3>
-<p>All points are also covered by exceptionHandlingDesign.</p>
+<p>All points are also covered by <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors</a>.</p>
 <ul>
 <li>Takes part in 6.a:<ul>
 <li><code>ChimeraTK::DeviceModule::writeRecoveryOpen</code> [tbd: new name for the list] is a list of accessors to be written after the device is opened/recovered.</li>
@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <h3>ExceptionHandlingDecorator</h3>
 <ul>
 <li>Must implement part of 6.a/7.c/9.d/10.b: Provide function which allows to write without blocking in case of an unavailable device:<ul>
-<li>The list <code>ChimeraTK::DeviceModule::writeRecoveryOpen</code> [tbd: new name for the list] is filled with the "recovery accessor" (a "copy" of the original accessor, created by <code><a class="el" href="class_chimera_t_k_1_1_application.html#ace062becb6e35520147524dfec914a10" title="Perform the actual connection of an accessor to a device register. ">ChimeraTK::Application::createDeviceVariable()</a></code>). This accessor allows the restoration of the last known value of a register after recovery from an exception by the DeviceModule. See also exceptionHandlingDesign.</li>
+<li>The list <code>ChimeraTK::DeviceModule::writeRecoveryOpen</code> [tbd: new name for the list] is filled with the "recovery accessor" (a "copy" of the original accessor, created by <code><a class="el" href="class_chimera_t_k_1_1_application.html#ace062becb6e35520147524dfec914a10" title="Perform the actual connection of an accessor to a device register. ">ChimeraTK::Application::createDeviceVariable()</a></code>). This accessor allows the restoration of the last known value of a register after recovery from an exception by the DeviceModule. See also <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors</a>.</li>
 <li>When a write happens while the device is still unavailable (not opened or initialisation still in progress), the write should not block (in contrast to normal writes in a <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ChimeraTK::ApplicationModule::mainLoop()</a></code>).</li>
 <li>The "recovery accessor" is also used in this case to defer the write operation until the device becomes available.</li>
 <li>The actual write is then performed asynchronously by the <code><a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">ChimeraTK::DeviceModule</a></code>.</li>
@@ -252,7 +252,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 </li>
 <li>Needs to implement 6.b.:<ul>
 <li>The <code>ChimeraTK::TransferElement::readLatest()</code> must be delayed until the device is available and initialised.</li>
-<li>exceptionHandlingDesign states that non-blocking read operations like <code>ChimeraTK::TransferElement::readLatest()</code> should never block due to an exception.</li>
+<li><a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors</a> states that non-blocking read operations like <code>ChimeraTK::TransferElement::readLatest()</code> should never block due to an exception.</li>
 <li>Hence a special treatment is required in this case:</li>
 <li><code>ChimeraTK::ExceptionHandlingDecorator::readLatest()</code> should block until the device is opened and initialised if (and only if) the accessor still has the <code>ChimeraTK::VersionNumber(nullptr)</code> - which means it has not yet been read.</li>
 </ul>
@@ -312,13 +312,13 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>It currently implements its own exception handling (including the <code>Device::isOpened()</code> check), but in a wrong way. After the <code>NDRegisterAccessor</code> has been fixed, this needs to be removed.</li>
 </ul>
 <h3>DeviceModule</h3>
-<p>Probably all points are duplicates with exceptionHandlingDesign.</p>
+<p>Probably all points are duplicates with <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors</a>.</p>
 <ul>
 <li>Merge <code>ChimeraTK::DeviceModule::writeAfterOpen/writeRecoveryOpen</code> lists.</li>
 <li>Implement mechanism to block read/write operations in other threads until after the initialsation is done.</li>
 </ul>
 <h3>ExceptionHandlingDecorator</h3>
-<p>Some points are duplicates with exceptionHandlingDesign.</p>
+<p>Some points are duplicates with <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors</a>.</p>
 <ul>
 <li>It waits until the device is opened, but not until after the initialisation is done.</li>
 <li>Provide non-blocking function.</li>
@@ -354,7 +354,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Sat May 9 2020 03:53:54 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue May 12 2020 03:53:53 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
