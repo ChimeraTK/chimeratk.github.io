@@ -294,57 +294,110 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </ul>
 <h2>C. Requirements for all implementations (full and decorator-like)</h2>
 <ul>
-<li>Other exceptions than <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a>, <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a>, boost::thread_interrupted and boost::numeric::bad_numeric_cast are not allowed to be thrown or passed through at any place under any circumstance (unless of course they are guaranteed to be caught before they become visible to the application, like the detail::DiscardValueException). The framework (in particular ApplicationCore) may use "uncatchable" exceptions in some places to force the termination of the application. Backend implementations etc. may not do this, since it would lead to uncontrollable behaviour.</li>
-<li>In the constructor of a TransferElement implementation, <em>only</em> ChimeraTK::logic_errror may be thrown.</li>
-<li>In doPreXxx, <em>only</em> <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> may be thrown. In doPreWrite, boost::numeric::bad_numeric_cast can in addition be thrown.</li>
-<li>In doXxxTransferYyy, <em>only</em> <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> may be thrown</li>
-<li>In doPostXxx, <em>only</em> exceptions that were risen in doPreXxx or doXxxTransferYyy, or that were received from the queue (see A.6.3) may be rethrown. This is done by the TransferElement base class in postXxx, so implementations should never actively throw these exceptions in doPostXxx (but decorators must expect exceptions to be thrown by delegated calls). In doPostRead, boost::numeric::bad_numeric_cast may in addition be thrown (also directly), but only if hasNewData == true.</li>
-<li>In addition to the above rules, boost::thread_interrupted may be thrown at any stage, if TransferElement::interrupt has been called. This exception will also be delayed and rethrown in doPostXxx by the TransferElement base class.</li>
-<li>ChimeraTK::logic_errors must follow strict conditions. Any logic_error must be thrown as early as possible. Also logic_erors must always be avoidable by calling the corresponding test functions before executing a potentially failing action. (Note: test functions do not yet exist for everything, this needs to be changed!). In particular:<ul>
-<li>in the accessor's constructor, a logic_error must only be thrown if:<ul>
-<li>no register exists by that name in the catalogue (note: it is legal to provide "hidden" registers not present in the catalogue, but a register listed in the catalogue must always work)</li>
+<li>1. Other exceptions than <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a>, <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a>, boost::thread_interrupted and boost::numeric::bad_numeric_cast are not allowed to be thrown or passed through at any place under any circumstance (unless of course they are guaranteed to be caught before they become visible to the application, like the detail::DiscardValueException). The framework (in particular ApplicationCore) may use "uncatchable" exceptions in some places to force the termination of the application. Backend implementations etc. may not do this, since it would lead to uncontrollable behaviour.</li>
+<li>2. In doPostXxx no new <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> or <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> are thrown. <em>Only</em> exceptions that were risen in doPreXxx or doXxxTransferYyy, or that were received from the queue (see A.6.3) may be rethrown. This is done by the TransferElement base class in postXxx, so implementations should never actively throw these exceptions in doPostXxx (but decorators must expect exceptions to be thrown by delegated calls).</li>
+<li>3. boost::thread_interrupted may be thrown at any stage, if TransferElement::interrupt has been called.</li>
+<li>4. <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> in principle are recoverable. A later call to the same function must be able to succeed (for instance if a network outage has been resolved). ChimeraTK::runtime_erro may only be thrown in<ul>
+<li>4.1 doXxxTransferYyy(). It is the only exception that can occur in this function (except for boost::thread_interrupted)</li>
+<li>4.2 <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946" title="Check if transfer element is readable. ">ChimeraTK::TransferElement::isReadable()</a>, <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8" title="Check if transfer element is writeable. ">ChimeraTK::TransferElement::isWriteable()</a> or <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134" title="Check if transfer element is read only, i.e. ">ChimeraTK::TransferElement::isReadOnly()</a> if there is no map file or such, and it needs to be determined from the running device.</li>
 </ul>
 </li>
-<li>in doPreRead(), a logic_error must be thrown if and only if:<ul>
-<li><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a877f0db7d0c63becf2bd8b8fb0955e60" title="Return whether a device has been opened or not. ">ChimeraTK::DeviceBackend::isOpen()</a> == false</li>
-<li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946" title="Check if transfer element is readable. ">ChimeraTK::TransferElement::isReadable()</a> == false or throws</li>
+<li>5. boost::numeric::bad_numeric_cast may only be thrown in<ul>
+<li>5.1 <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd" title="Backend specific implementation of preWrite(). ">ChimeraTK::TransferElement::doPreWrite()</a></li>
+<li>5.2 <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7" title="Backend specific implementation of postRead(). ">ChimeraTK::TransferElement::doPostRead()</a>, but only if hasNewData == true</li>
+<li>5.3 This exception can in principle be avoided by chosing a user data type that can fit the data without overflow when reading, or small enough so the process variable can hold the data without overflow when writing. New implementations should not throw this exception. Instead a check should be done in the constructor and a <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> should be thrown (see 6.2.4) (*).</li>
 </ul>
 </li>
-<li>in doPreWrite(), a logic_error must be thrown if and only if:<ul>
-<li><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a877f0db7d0c63becf2bd8b8fb0955e60" title="Return whether a device has been opened or not. ">ChimeraTK::DeviceBackend::isOpen()</a> == false</li>
-<li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8" title="Check if transfer element is writeable. ">ChimeraTK::TransferElement::isWriteable()</a> == false or throws</li>
+<li>6. <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> must follow strict conditions.<ul>
+<li>6.1 logic_errors must be deterministic. They must always be avoidable by calling the corresponding test functions before executing a potentially failing action (*), and must occur if the logical condition is not fulfilled and the function is called anyway.</li>
+<li>6.2 Any logic_error must be thrown as early as possible(*). They are thrown <b>if and only if</b> one of the following conditions are met:<ul>
+<li>6.2.1 A register does not exists my that name<ul>
+<li>6.2.1.1 Can be checked in the catalogue (*)</li>
+<li>6.2.1.2 Thrown in the constructor if possible (*), otherwise in doPreXxx(), isReadable(), isWriteable() and isReadOnly().</li>
 </ul>
 </li>
-<li>To comments about how to follow these rules:<ul>
-<li>If there is an error in the map file and the backend does not want to fail on this in backend creation, the register must be hidden from the catalogue.</li>
-<li>If a backend cannot decide the existence of a register in the accessor's constructor (because there is no map file or such, and the backend might be closed), it needs to check the presence also e.g. in isReadable(), isWriteable() and isReadOnly(). This implies that these calls may throw <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> and <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> exceptions.</li>
+<li>6.2.2 The size or dimension of the requested TransferElement is too large (*)<ul>
+<li>6.2.2.1 Can be checked in the catalogue.</li>
+<li>6.2.2.2 Thrown in the constructor if possible, otherwise in doPreXxx().</li>
+</ul>
+</li>
+<li>6.2.3 The wrong <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11" title="Enum type with access mode flags for register accessors. ">ChimeraTK::AccessMode</a> flags are provided<ul>
+<li>6.2.3.1 Can be checked in the catalogue.</li>
+<li>6.2.3.2 Thrown in the constructor if possible, otherwise in doPreXxx().</li>
+</ul>
+</li>
+<li>6.2.4 The requested user data type is to small to hold the data without range overflow when reading, or too big when writing (*)<ul>
+<li>6.2.4.1 ToDo: cannot be checked in the catalogue to a sufficient degree</li>
+<li>6.2.4.2 Thrown in the constructor if possible, otherwise in doPreXxx()</li>
+</ul>
+</li>
+<li>6.2.5 A read/write operation is started while the backend is still closed<ul>
+<li>6.2.5.1 Check with <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a877f0db7d0c63becf2bd8b8fb0955e60" title="Return whether a device has been opened or not. ">ChimeraTK::DeviceBackend::isOpen()</a>.</li>
+<li>6.2.5.2 Thrown in doPreXxx() (*)</li>
+</ul>
+</li>
+<li>6.2.6 A read operation is executed on a transfer element that cannot be read<ul>
+<li>6.2.6.1 Check with TransferElement::isReadable().</li>
+<li>6.2.6.2 Thrown in doPreRead()</li>
+</ul>
+</li>
+<li>6.2.7 A write operation is executed on a transfer element that cannot be written<ul>
+<li>6.2.7.1 Check with TransferElement::isWriteable() or TransferElement::isReadOnly()</li>
+<li>6.2.7.2 Thrown in doPreWrite()</li>
 </ul>
 </li>
 </ul>
 </li>
+<li>6.3 Two remarks about how to follow these rules:<ul>
+<li>6.3.1 If there is an error in the map file and the backend does not want to fail on this in backend creation, the register must be hidden from the catalogue.</li>
+<li>6.3.2 isReadable(), isWriteable() and isReadOnly() might have to check for the existance of the register from a running backend (in case there is no map file). This implies that these calls may throw <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> and <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> exceptions.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>(*) Comments</h3>
+<ul>
+<li>5.3 If there is no map file or such, the information about the target data types must be deretmined from the device. This cannot be done in the constructor if the backend is still closed. In this case the overflow check can happen at runtime and result in a boost::numeric::bad_numeric_cast.</li>
+<li>6.1 Test functions do not yet exist for everything. This needs to be changed!</li>
+<li>6.2 Especially no logic_error must be thrown in doXxxTransferYyy() or doPostXxx(). All tests for logical consistency must be done in doPreXxx() latest.</li>
+<li>6.2.1.1 It is legal to provide "hidden" registers not present in the catalogue, but a register listed in the catalogue must always work.</li>
+<li>6.2.1.2 If a backend cannot decide the existence of a register in the accessor's constructor (because there is no map file or such, and the backend might be closed), it needs to check the presence later. If the information is available in the constructor, the check has to be done there.</li>
+<li>6.2.2 This also includes that the offset in a one dimensional case is so large that there are not enought elements left to provide the requested data.</li>
+<li>6.2.4 Some backends currenty throw a boost:::numeric::bad_numeric_cast instead as described in 5.</li>
+<li>6.2.5.2 The generic tests if a backend is opened, or if an accessor readable or writeable are intentionally not implemented in TransferElement because they would invovle additional virtual function calls. To avoid these each implementation has to implement the checks in doPreXxx().</li>
 </ul>
 <h2>D. Requirements for full implementations (e.g. in backends)</h2>
 <ul>
-<li>If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is specified:<ul>
-<li>ChimeraTK::TransferElement::readQueue is initialised in the constructor. [TBD: Allow setting the queue length through the public API?]</li>
-<li>ChimeraTK::TransferElement::readQueue is pushed whenever new data has arrived. If important for the implementation, the return value of cppext::future_queue::push() will tell whether there will be a corresponding call to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7" title="Backend specific implementation of postRead(). ">ChimeraTK::TransferElement::doPostRead()</a> (if the queue is full, there will be no call).</li>
-<li>In case an exception occurs during an asychronous transfer (after a call to readTransferAsync), the exception must be stored on the cppext::future_queue which has been returned with the TransferFuture by doReadTransferAsync. The TransferFuture will then make sure that the exception is properly stored and rethrown in postRead (just like for synchronous transfers).</li>
+<li>1. If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is specified:<ul>
+<li>1.1 ChimeraTK::TransferElement::readQueue is initialised in the constructor. [TBD: Allow setting the queue length through the public API?]</li>
+<li>1.2 ChimeraTK::TransferElement::readQueue is pushed whenever new data has arrived. If important for the implementation, the return value of cppext::future_queue::push_overwirte() will tell whether there has been discarded (*).</li>
+<li>1.3 In case an exception is detected during an asychronous transfer (for instance in a separate thread), the exception must be stored on the ChimeraTK::TransferElement::readQueue. The TransferFuture will then make sure that the exception is properly rethrown in postRead (just like for synchronous transfers).</li>
 </ul>
 </li>
 </ul>
+<h3>(*) Comments</h3>
+<p>1.2 Either the currently pushed data or older data on the queue might be discarded. In any case there will be one call less to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7" title="Backend specific implementation of postRead(). ">ChimeraTK::TransferElement::doPostRead()</a>, because the number of entries in the queue could not be increased because it was full.</p>
 <h2>E. Requirements for decorator-like implementations</h2>
 <ul>
-<li>If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is specified, ChimeraTK::TransferElement::readQueue is initialised in the constructor with a copy of the readQueue of the target TransferElement. Decorator-like implementations with multiple targets must provide a readQueue e.g. by using cppext::future_queue::when_any() or cppext::future_queue::when_all().</li>
-<li>All functions doPreXxx, doXxxTransferYyy and doPostXxx must delegate to their non-do counterparts (preXxx, xxxTransferYyy and postXxx). Never delegate to the do... of the target implementation functions directly.</li>
-<li>If a function of the same instance should be called, e.g. if doWriteTransferDestructively should redirect to doWriteTransfer or if doPostRead should call doPostRead of a base class, call to do-version of the function. This is merely to avoid code duplication, hence the surrounding logic of the non-do function is not wanted here.</li>
-<li>Decorators must merely delegate doXxxTransferYyy, never add any functionalty there. Reason: TransferGroup might effectively bypass the decorator implementation of these functions.</li>
+<li>1. If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is specified, ChimeraTK::TransferElement::readQueue is initialised in the constructor with a copy of the readQueue of the target TransferElement.<ul>
+<li>1.1 Decorator-like implementations with multiple targets must provide a readQueue e.g. by using cppext::future_queue::when_any() or cppext::future_queue::when_all().</li>
+</ul>
+</li>
+<li>2. All functions doPreXxx, doXxxTransferYyy and doPostXxx must delegate to their non-do counterparts (preXxx, xxxTransferYyy and postXxx). Never delegate to the do... of the target implementation functions directly.</li>
+<li>3. If a function of the same instance should be called, e.g. if doWriteTransferDestructively() should redirect to doWriteTransfer(), or if doPostRead() should call doPostRead() of a base class, call to do-version of the function. This is merely to avoid code duplication, hence the surrounding logic of the non-do function is not wanted here.</li>
+<li>4. Decorators must merely delegate doXxxTransferYyy, never add any functionalty there. Reason: TransferGroup might effectively bypass the decorator implementation of these functions.</li>
+<li>5. All real decorators are in fact decorators of NDRegisterAccessors&lt;USER_TYPE&gt;. Each decoration level contains one NDRegisterAccessors&lt;USER_TYPE&gt;::buffer_2D. The decorator implementation must make sure that its buffer is correctly synchronised with the target's buffer.(*)</li>
+</ul>
+<h3>(*) Comments</h3>
+<ul>
+<li>5 The NDRegisterAccessorDecorator base class already contains an implementation which does this in doPreXxx() and doPostXxx(). You usually call it from the Decorators implementation, as mentioned in 3.</li>
 </ul>
 <h2>F. Implementation in the framework (e.g. class TransferElement itself)</h2>
 <p><b>Note:</b> This section is biased by the current implementation and mostly lists parts that needs to be changed!</p>
-<h3>1. TransferFuture</h3>
-<p>The TransferFuture will be kept as is for now to provide backwards compatibility and as a helper to the TransferElement implementation.</p>
-<h3>2. TransferElement</h3>
 <ul>
+<li>1. The TransferFuture will be kept as is for now to provide backwards compatibility and as a helper to the TransferElement implementation.</li>
+<li>2. TransferElement<ul>
 <li>2.1 <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad00999178a215bc11d9c1377c6427c23" title="Read data from the device in the background and return a future which will be fulfilled when the data...">ChimeraTK::TransferElement::readAsync()</a> is deprecated</li>
 <li>2.2 <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af60ec6ab982e620f5bfdc3b5bbed9928" title="Last future returned by doReadTransferAsync() (valid if hasActiveFuture == true). ...">ChimeraTK::TransferElement::activeFuture</a> is created in the first call to read(), readNonBlockig() or readAsync() from ChimeraTK::TransferElement::readQueue if <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is set.</li>
 <li>2.3 read(), readNonBlocking() first check whether <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is set.<ul>
@@ -355,20 +408,22 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>2.4 readLatest() is directly calling readNonBlocking() in a loop.</li>
 <li>2.5 Add function ChimeraTK::detail::getFutureQueueFromTransferElement(), replacing ChimeraTK::detail::getFutureQueueFromTransferFuture().</li>
 </ul>
-<h3>3. ReadAnyGroup</h3>
-<ul>
+</li>
+<li>3. ReadAnyGroup<ul>
 <li>3.1 Use the new ChimeraTK::detail::getFutureQueueFromTransferElement().</li>
 </ul>
-<h3>4. ApplicationCore</h3>
-<ul>
+</li>
+<li>4. ApplicationCore<ul>
 <li>4.1 For the TestableModeAccessorDecorator: TransferElement::transferFutureWaitCallback() does no longer exist. Instead preRead() will now be called. In case of readAny, multiple calls to preRead() on different accessors will be made on the first call to readAny - the decorator has to deal with that properly. </li>
+</ul>
+</li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat May 9 2020 03:53:09 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue May 12 2020 03:53:10 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
