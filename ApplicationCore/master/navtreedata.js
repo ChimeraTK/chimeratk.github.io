@@ -33,7 +33,9 @@ var NAVTREE =
         [ "B.3 DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule", [
           [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule_comments", null ]
         ] ],
-        [ "B.4 DeviceModule::reportException()", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_reportException", null ]
+        [ "B.4 DeviceModule::reportException()", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_reportException", [
+          [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_reportException_comments", null ]
+        ] ]
       ] ],
       [ "C. Known issues", "spec_execption_handling.html#spec_execptionHandling_known_issues", null ]
     ] ],
@@ -89,8 +91,8 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8fae0ac20adce6ffee48c7151b070aa5737",
 "class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780",
 "configreader.html#usage",
-"struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793",
-"struct_controller.html#ab39304e11bf3c606f96d08287af4bdc7"
+"struct_chimera_t_k_1_1_config_reader.html#ac920876035406f5266007c95398ef782",
+"struct_controller.html#a97ab7bd3852cc42fddd13b1bae1f4c7b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
