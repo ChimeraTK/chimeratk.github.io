@@ -28,7 +28,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ]
@@ -48,7 +48,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_c_s_adapter_eq_fct_8cc.html",
-"namespacemembers.html"
+"functions.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

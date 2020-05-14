@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['i1source',['i1Source',['../struct_chimera_t_k_1_1_ifff_description.html#a8947445094f753bc4d3499e16ddffe65',1,'ChimeraTK::IfffDescription']]],
+  ['ifffdescription',['IfffDescription',['../struct_chimera_t_k_1_1_ifff_description.html',1,'ChimeraTK::IfffDescription'],['../struct_chimera_t_k_1_1_ifff_description.html#a290474f59a2baaf448d19e9c68aec227',1,'ChimeraTK::IfffDescription::IfffDescription()']]],
   ['import',['import',['../class_chimera_t_k_1_1_variable_mapper.html#ab9f8eeb70a5daf40e5f5621895165044',1,'ChimeraTK::VariableMapper']]],
   ['increment',['increment',['../struct_chimera_t_k_1_1_spectrum_description.html#a4006c9278a91b342b2214965a3779d81',1,'ChimeraTK::SpectrumDescription']]],
   ['incrementsource',['incrementSource',['../struct_chimera_t_k_1_1_spectrum_description.html#a8a4e1dfb8644ee71bdac83a897d4f1f9',1,'ChimeraTK::SpectrumDescription']]],
@@ -13,5 +15,5 @@ var searchData=
   ['isreadable',['isReadable',['../class_chimera_t_k_1_1_doocs_transfer_element.html#a1a1fd453b63c079b67fc2a568a468340',1,'ChimeraTK::DoocsTransferElement']]],
   ['isreadonly',['isReadOnly',['../class_chimera_t_k_1_1_doocs_transfer_element.html#a50898c5c1dae6ca3df6a8b84019f6222',1,'ChimeraTK::DoocsTransferElement']]],
   ['issameregister',['isSameRegister',['../class_chimera_t_k_1_1_doocs_transfer_element.html#a67b8a2cbace7ef8f5e8f81ea847039eb',1,'ChimeraTK::DoocsTransferElement']]],
-  ['iswriteable',['isWriteable',['../struct_chimera_t_k_1_1_property_attributes.html#aebe51d307d0289805ea80e3506e51f22',1,'ChimeraTK::PropertyAttributes::isWriteable()'],['../class_chimera_t_k_1_1_doocs_transfer_element.html#abf9791a94be94970e1ba7d0445fbde92',1,'ChimeraTK::DoocsTransferElement::isWriteable()']]]
+  ['iswriteable',['isWriteable',['../class_chimera_t_k_1_1_doocs_ifff.html#a916df608ba189c3d09e65c9be24183cd',1,'ChimeraTK::DoocsIfff::isWriteable()'],['../struct_chimera_t_k_1_1_property_attributes.html#aebe51d307d0289805ea80e3506e51f22',1,'ChimeraTK::PropertyAttributes::isWriteable()'],['../class_chimera_t_k_1_1_doocs_transfer_element.html#abf9791a94be94970e1ba7d0445fbde92',1,'ChimeraTK::DoocsTransferElement::isWriteable()']]]
 ];

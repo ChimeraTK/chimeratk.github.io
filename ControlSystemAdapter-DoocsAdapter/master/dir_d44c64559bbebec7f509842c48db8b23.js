@@ -10,6 +10,9 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "DoocsAdapter.h", "_doocs_adapter_8h.html", [
       [ "DoocsAdapter", "class_chimera_t_k_1_1_doocs_adapter.html", "class_chimera_t_k_1_1_doocs_adapter" ]
     ] ],
+    [ "DoocsIfff.h", "_doocs_ifff_8h.html", [
+      [ "DoocsIfff", "class_chimera_t_k_1_1_doocs_ifff.html", "class_chimera_t_k_1_1_doocs_ifff" ]
+    ] ],
     [ "DoocsProcessArray.h", "_doocs_process_array_8h.html", [
       [ "DoocsProcessArray", "class_chimera_t_k_1_1_doocs_process_array.html", "class_chimera_t_k_1_1_doocs_process_array" ]
     ] ],
@@ -37,6 +40,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "SpectrumDescription", "struct_chimera_t_k_1_1_spectrum_description.html", "struct_chimera_t_k_1_1_spectrum_description" ],
       [ "XyDescription", "struct_chimera_t_k_1_1_xy_description.html", "struct_chimera_t_k_1_1_xy_description" ],
       [ "Axis", "struct_chimera_t_k_1_1_xy_description_1_1_axis.html", "struct_chimera_t_k_1_1_xy_description_1_1_axis" ],
+      [ "IfffDescription", "struct_chimera_t_k_1_1_ifff_description.html", "struct_chimera_t_k_1_1_ifff_description" ],
       [ "LocationInfo", "struct_chimera_t_k_1_1_location_info.html", "struct_chimera_t_k_1_1_location_info" ]
     ] ],
     [ "splitStringAtFirstSlash.h", "split_string_at_first_slash_8h.html", "split_string_at_first_slash_8h" ],

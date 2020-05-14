@@ -21,6 +21,7 @@ var class_chimera_t_k_1_1_variable_mapper =
     [ "print", "class_chimera_t_k_1_1_variable_mapper.html#a545ca3a6e2680f64139ed53da83c58e0", null ],
     [ "processCode", "class_chimera_t_k_1_1_variable_mapper.html#af8b09024be81e0bc17cb95f3df3ac9c8", null ],
     [ "processHistoryAndWritableAttributes", "class_chimera_t_k_1_1_variable_mapper.html#ab77974d5f702f8a1cbd99bc801cc3c02", null ],
+    [ "processIfffNode", "class_chimera_t_k_1_1_variable_mapper.html#ac7ffa344a61aceb701bf12d62cfcab20", null ],
     [ "processImportNode", "class_chimera_t_k_1_1_variable_mapper.html#ac8251f48b9f4a3bddf535ff40bb60eb1", null ],
     [ "processLocationNode", "class_chimera_t_k_1_1_variable_mapper.html#a6938122cddbec29e7714a2fc72ac50df", null ],
     [ "processNode", "class_chimera_t_k_1_1_variable_mapper.html#a9bab31d01cd9a9af0a685ed45f19c6a5", null ],

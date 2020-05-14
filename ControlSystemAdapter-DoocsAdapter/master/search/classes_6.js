@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['variablemapper',['VariableMapper',['../class_chimera_t_k_1_1_variable_mapper.html',1,'ChimeraTK']]]
+  ['spectrumdescription',['SpectrumDescription',['../struct_chimera_t_k_1_1_spectrum_description.html',1,'ChimeraTK']]]
 ];
