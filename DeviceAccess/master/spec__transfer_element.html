@@ -144,15 +144,12 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>6.4 xxxTransferYyy(), private<ul>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0d42b90e885f41503366fcc171424ad0" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">ChimeraTK::TransferElement::readTransfer()</a></li>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ac5371e987d333433904dab31015e67e5" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">ChimeraTK::TransferElement::readTransferNonBlocking()</a></li>
-<li>&lt;strike&gt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa0c94c362e3a02bc12ff66fe718c915b" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">ChimeraTK::TransferElement::readTransferLatest()</a>&lt;/strike&gt;</li>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab4191d8726a081651d3b0bcf48fa297e" title="Write the data to the device. ">ChimeraTK::TransferElement::writeTransfer()</a></li>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a963e712e3e4189914d2f05e3c4fb2d42" title="Write the data to the device. ">ChimeraTK::TransferElement::writeTransferDestructively()</a></li>
 </ul>
 </li>
 <li>6.5 doXxxTransferYyy()<ul>
 <li>ChimeraTK::TransferElement::doReadTransferSynchonously(), pure virtual (*)</li>
-<li>&lt;strike&gt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae1dcdfeb3d4d849cb9d6232727031e51" title="Implementation version of readTransferNonBlocking(). ">ChimeraTK::TransferElement::doReadTransferNonBlocking()</a>&lt;/strike&gt;</li>
-<li>&lt;strike&gt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a630bcd4b15d5579c0a97f9beb9b63a22" title="Implementation version of readTransferLatest(). ">ChimeraTK::TransferElement::doReadTransferLatest()</a>&lt;/strike&gt;</li>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer(). ">ChimeraTK::TransferElement::doWriteTransfer()</a>, pure virtual</li>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a98f467545b6682f18cec6b113c5898cc" title="Implementation version of writeTransferDestructively(). ">ChimeraTK::TransferElement::doWriteTransferDestructively()</a>, virtual</li>
 </ul>
@@ -198,9 +195,9 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>3.1.3 If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is set<ul>
 <li>3.1.3.1 read() blocks until new data has arrived,</li>
 <li>3.1.3.2 readNonBlocking() does not block and instead returns whether new data has arrived or not,</li>
-<li>3.1.3.3 readLatest() is merely a convenience function which calls readNonBlocking() until no more new data is available.</li>
 </ul>
 </li>
+<li>3.1.4 readLatest() is merely a convenience function which calls readNonBlocking() until no more new data is available.</li>
 </ul>
 </li>
 <li>3.2 Write operations<ul>
@@ -217,7 +214,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </li>
 </ul>
 </li>
-<li>4. Stages of an operation initiated by calling xxxYyy()<ul>
+<li>4. Stages of an operation initiated by calling the public high level functions xxxYyy() (see. A.6.1)<ul>
 <li>4.1 preXxx(): calls doPreXxx() of the implementation to allow preparatory work before the actual transfer. doPreXxx() can be empty if nothing is to be done (*)</li>
 <li>4.2 xxxTransferYyy():<ul>
 <li>4.2.1 readTransfer()<ul>
@@ -235,7 +232,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </ul>
 </li>
 <li>4.3 postXxx(): calls doPostXxx() of the implementation to allow follow-up work after the actual transfer.<ul>
-<li>4.3.1 doPostRead() is the only place where the application buffer may be changed.</li>
+<li>4.3.1 In read transfers doPostRead() is the only place where the application buffer may be changed (*).</li>
 </ul>
 </li>
 </ul>
@@ -267,26 +264,27 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>8.4 The backend ensures consistency of the value with the device, even if data loss may occur on the transport layer. If necessary, a heartbeat mechanism is implemented to correct any inconsistencies at regular intervals.</li>
 <li>8.5 For transfer elements which are created before the device has been opened (or after the device has seen an exception, see 9.) the backend does not fill any data into the queue until the device has successfully been opened and Device::activateAsyncRead() is called (*). Also no runtime_errors are send. We call this <em>asyncronous read is not activated</em> for these transfer elements.<ul>
 <li>8.5.1 When Device::activateAsyncRead() is called, it activates asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set (*).</li>
-<li>8.5.2 When asyncronous read is activated in a transfer elememt, it must get an initial value via doReadTransferSynchronously() and treat it as if it would have been received, i.e. push it to the queue. This must happen after the actual asynchronus sending has been turned on to make sure no update is missed. (*)</li>
-<li>8.5.3 If a transfer element is created while the device is opened and functional, the asynchronus read is activated automatically (incl. sending of the initial value). This happens even if there are other transfer elements which have the asynchronous read deactivated because they have been created before opening the device and Device::activateAsyncRead() has not been called yet.</li>
-<li>8.5.4 If Device::activateAsyncRead() is called while the device is not opened or has an error, this call has no effect (*).</li>
+<li>8.5.2 When asyncronous read is activated in a transfer elememt, it must get an initial value synchronously and treat it as if it would have been received, i.e. push it to the queue. This must happen after the actual asynchronous sending has been turned on to make sure no update is missed. (*)</li>
+<li>8.5.3 If a transfer element is created while the device is opened and functional, the asynchronous read is activated automatically (incl. sending of the initial value). This happens even if there are other transfer elements which have the asynchronous read deactivated because they have been created before opening the device and Device::activateAsyncRead() has not been called yet.</li>
+<li>8.5.4 If Device::activateAsyncRead() is called while the device is not opened or has an error, this call has no effect. If it is called when no deactivated transfer element exists, this call also has no effect.</li>
+<li>8.5.5 Device::activateAsyncRead() does not throw any exceptions.</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>9. If one transfer element of a device has seen an exception(*), all other transfer elements of the same device must also be aware of this.<ul>
-<li>9.1 As soon as an exception has been seen in a transfer element, the backend is informed if necessary (to perform 9.2.1 and 9.2.2, and ensure 9.3 and 9.4)</li>
-<li>9.2 TransferElements with wait_for_new_data flag<ul>
-<li>9.2.1 Exactly one <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> is pushed into the queue of <em>each</em> transfer elements of the backend with wait_for_new_data is true (*).</li>
-<li>9.2.2 Each transfer element deactivates asynchronous reads so no further data is pushed into the queue until open() has been called successfully in the backend (*) and Device::activateAsyncRead() has been called</li>
-<li>9.2.3 The first data on the queue after the exception is the initial value send when calling Device::activateAsyncRead().</li>
+<li>9.1 TransferElements with wait_for_new_data flag<ul>
+<li>9.1.1 Each transfer element deactivates asynchronous reads so no further data is pushed into the queue until open() has been called successfully in the backend (*) and Device::activateAsyncRead() has been called</li>
+<li>9.1.2 Exactly one <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> is pushed into the queue of <em>each</em> transfer elements of the backend with wait_for_new_data (*). This must happen after 9.1.1. to avoid race conditions.</li>
+<li>9.1.3 The first data on the queue after the exception is the initial value send when calling Device::activateAsyncRead() (see 8.5.2).</li>
+<li>9.1.4 The backend must maken sure 9.1.2 is finished before a call to Device::activateAsyncRead() re-activates the asynchonous transfers again (*).</li>
 </ul>
 </li>
-<li>9.3 TransferElements without wait_for_new_data<ul>
+<li>9.2 TransferElements without wait_for_new_data<ul>
 <li>9.2.1 Each call to doReadTransferSynchonously() will throw a ChimeraTK::runtime error until open() has been called successfully.</li>
 </ul>
 </li>
-<li>9.4 Write operations will throw a ChimeraTK::runtime error in doWriteTrasferYyy() until open() has been called successfully.</li>
+<li>9.3 Write operations will throw a ChimeraTK::runtime error in doWriteTrasferYyy() until open() has been called successfully.</li>
 </ul>
 </li>
 <li>10. TransferGroup<ul>
@@ -300,15 +298,16 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <h3>(*) Comments</h3>
 <ul>
 <li>4.1 preXxx() is part of the operation, not of the actual transfer. In case of reads with AccessMode::wait_for_new_data the transfer is asynchonousy initiated by the device and not connected to the operation. Hence backend implementations usually have an empty doPreWrite(), but decorator-like implementations still can use it to execute preparatory tasks.</li>
+<li>4.3.1 In write operations the buffer might be swapped out in doPreRead() and swapped back in doPostRead() to restore it for non-destructive read operations to avoid copying of large arrays.</li>
 <li>5. Reason: It might be that the user buffer has to be swapped out during the transfer (while taking away the ownership of the calling code), and this must be restored in the postXxx action.</li>
 <li>8.2.2 This allows to discard values inside a continuation of a cppext::future_queue. It is used e.g. by the ControlSystemAdapter's BidirectionalProcessArray. [TBD: It could be replaced by a feature of the cppext::future_queue allowing to reject values in continuations...]</li>
 <li>8.5 Device::open() does not automatically activate the asyncronous sending because the device might need some initalisation setting to produce valid data (for example setting the correct ADC range). By delaing the activation of asyncronous reads the application has the possibility to do the initialisation before the first data is being send, and can avoid invalid initial values on the process variables.</li>
 <li>8.5.1 Conceptually activating an asyncronous read is like subscribing a variable, and deacticating it is like unsubscribing a variable in a publish-subscribe pattern. The actual implementation depends on the details of the protocols.</li>
-<li>8.5.2 As the asynchonous mechanism and the call to doReadTransferSynchronously() are two idependent channels there are potential race condition, depending on the exact protocol. The backend has to avoid this if possible. If it cannot be avoided the implementation must make sure that the last value in the queue is the newest value, and this is not dopped or missed, even if the values before are not in order or send twice.</li>
-<li>8.5.4 You cannot throw a logic error because a working device might have crashed right before you call the activate function, which can never be avoided. It is not a logic error. There is no need to throw runtime errors. The transfer elements will transport these exceptions.</li>
+<li>8.5.2 As the asynchonous mechanism and a synchronous read are two idependent channels there are potential race condition, depending on the exact protocol. The backend has to avoid this if possible. If it cannot be avoided, the implementation must make sure that the last value in the queue is the newest value, and this is not dopped or missed, even if the values before are not in order or send twice.</li>
 <li>9. It does not matter if the exception occured in an asynchronous or synchronous read, or in a write operation.</li>
-<li>9.2.1 If an asynchronous read transfer is the first one to detect the exception the implementation must make sure that it is only pushed once into the queue, and informing "all" transfer elememnts with wait_for_new data does not send it again if it was already put onto the queue.</li>
-<li>9.2.2 Open can be called again on an already opened backend to start error recovery.</li>
+<li>9.1.1 Open can be called again on an already opened backend to start error recovery.</li>
+<li>9.1.2 If an asynchronous read transfer is the first one to detect the exception, the implementation must make sure that it is only pushed once into the queue, and informing "all" transfer elememnts with wait_for_new data does not send it again if it was already put into the queue.</li>
+<li>9.1.4 Avoid race conditions here. The call to Device::activateAsyncRead() usually is done from a different thread than the transfer which caused the exception.</li>
 </ul>
 <h2>C. Requirements for all implementations (full and decorator-like)</h2>
 <ul>
@@ -341,7 +340,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </li>
 <li>6.2.3 The wrong <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11" title="Enum type with access mode flags for register accessors. ">ChimeraTK::AccessMode</a> flags are provided<ul>
 <li>6.2.3.1 Can be checked in the catalogue.</li>
-<li>6.2.3.2 Thrown in the constructor if possible, otherwise in doPreXxx().</li>
+<li>6.2.3.2 Thrown in the constructor if possible, otherwise in doPreXxx(), isReadable(), isWriteable() and isReadOnly().</li>
 </ul>
 </li>
 <li>6.2.4 The requested user data type is to small to hold the data without range overflow when reading, or too big when writing (*)<ul>
@@ -381,21 +380,22 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>6.2 Especially no logic_error must be thrown in doXxxTransferYyy() or doPostXxx(). All tests for logical consistency must be done in doPreXxx() latest.</li>
 <li>6.2.1.1 It is legal to provide "hidden" registers not present in the catalogue, but a register listed in the catalogue must always work.</li>
 <li>6.2.1.2 If a backend cannot decide the existence of a register in the accessor's constructor (because there is no map file or such, and the backend might be closed), it needs to check the presence later. If the information is available in the constructor, the check has to be done there.</li>
-<li>6.2.2 This also includes that the offset in a one dimensional case is so large that there are not enought elements left to provide the requested data.</li>
+<li>6.2.2 This also includes that the offset in a one dimensional case is so large that there are not enough elements left to provide the requested data.</li>
 <li>6.2.4 Some backends currenty throw a boost:::numeric::bad_numeric_cast instead as described in 5.</li>
 <li>6.2.5.2 The generic tests if a backend is opened, or if an accessor readable or writeable are intentionally not implemented in TransferElement because they would invovle additional virtual function calls. To avoid these each implementation has to implement the checks in doPreXxx().</li>
 </ul>
 <h2>D. Requirements for full implementations (e.g. in backends)</h2>
 <ul>
 <li>1. If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is specified:<ul>
-<li>1.1 ChimeraTK::TransferElement::readQueue is initialised in the constructor. [TBD: Allow setting the queue length through the public API?]</li>
-<li>1.2 ChimeraTK::TransferElement::readQueue is pushed whenever new data has arrived. If important for the implementation, the return value of cppext::future_queue::push_overwirte() will tell whether there has been discarded (*).</li>
-<li>1.3 In case an exception is detected during an asychronous transfer (for instance in a separate thread), the exception must be stored on the ChimeraTK::TransferElement::readQueue. The TransferFuture will then make sure that the exception is properly rethrown in postRead (just like for synchronous transfers).</li>
+<li>1.1 The ChimeraTK::TransferElement::readQueue is a cppext::future_queue of type 'void' which exists in each transfer element. For transfer elements with AccessMode::wait_for_new_data it usually is the continuation queue of another future_queue which is transporting the data. The data type is implementation dependent. Common functionality like exception handling and waiting for new data is implemented on ChimeraTK::TransferElement::readQueue.</li>
+<li>1.2 ChimeraTK::TransferElement::readQueue is initialised in the constructor. [TBD: Allow setting the queue length through the public API?]</li>
+<li>1.3 ChimeraTK::TransferElement::readQueue is pushed whenever new data has arrived. If important for the implementation, the return value of cppext::future_queue::push_overwirte() will tell whether data has been discarded (*).</li>
+<li>1.4 In case an exception is detected during an asychronous transfer (for instance in a separate thread), the exception must be stored on the ChimeraTK::TransferElement::readQueue. The TransferFuture will then make sure that the exception is properly rethrown in postRead (just like for synchronous transfers).</li>
 </ul>
 </li>
 </ul>
 <h3>(*) Comments</h3>
-<p>1.2 Either the currently pushed data or older data on the queue might be discarded. In any case there will be one call less to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7" title="Backend specific implementation of postRead(). ">ChimeraTK::TransferElement::doPostRead()</a>, because the number of entries in the queue could not be increased because it was full </p><h2>E. Requirements for decorator-like implementations</h2>
+<p>1.3 Either the currently pushed data or older data on the queue might be discarded. In any case there will be one call less to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7" title="Backend specific implementation of postRead(). ">ChimeraTK::TransferElement::doPostRead()</a>, because the number of entries in the queue could not be increased because it was full </p><h2>E. Requirements for decorator-like implementations</h2>
 <ul>
 <li>1. If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is specified, ChimeraTK::TransferElement::readQueue is initialised in the constructor with a copy of the readQueue of the target TransferElement.<ul>
 <li>1.1 Decorator-like implementations with multiple targets must provide a readQueue e.g. by using cppext::future_queue::when_any() or cppext::future_queue::when_all().</li>
@@ -413,11 +413,11 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <h2>F. Implementation in the framework (e.g. class TransferElement itself)</h2>
 <p><b>Note:</b> This section is biased by the current implementation and mostly lists parts that needs to be changed!</p>
 <ul>
-<li>1. The TransferFuture will be kept as is for now to provide backwards compatibility and as a helper to the TransferElement implementation.</li>
+<li>1. <b>FIXME: Might be wrong witht the re-introduction of readTransferNonBlocking:</b> The TransferFuture will be kept as is for now to provide backwards compatibility and as a helper to the TransferElement implementation.</li>
 <li>2. TransferElement<ul>
 <li>2.1 <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad00999178a215bc11d9c1377c6427c23" title="Read data from the device in the background and return a future which will be fulfilled when the data...">ChimeraTK::TransferElement::readAsync()</a> is deprecated</li>
-<li>2.2 <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af60ec6ab982e620f5bfdc3b5bbed9928" title="Last future returned by doReadTransferAsync() (valid if hasActiveFuture == true). ...">ChimeraTK::TransferElement::activeFuture</a> is created in the first call to read(), readNonBlockig() or readAsync() from ChimeraTK::TransferElement::readQueue if <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is set.</li>
-<li>2.3 read(), readNonBlocking() first check whether <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is set.<ul>
+<li>2.2 <b>FIXME: Might be wrong with the re-introduction of readTransferNonBlocking:</b> <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af60ec6ab982e620f5bfdc3b5bbed9928" title="Last future returned by doReadTransferAsync() (valid if hasActiveFuture == true). ...">ChimeraTK::TransferElement::activeFuture</a> is created in the first call to read(), readNonBlockig() or readAsync() from ChimeraTK::TransferElement::readQueue if <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is set.</li>
+<li>2.3 <b>FIXME: This is wrong with the re-introduction of readTransferNonBlocking:</b> read(), readNonBlocking() first check whether <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is set.<ul>
 <li>2.3.1 If no, the sequence of preRead(), readTransfer() and postRead() is executed (cf. 3).</li>
 <li>2.3.1 If yes, implement read() as a sequence of preRead() and activeFuture.wait(), resp. readNonBlocking() as a sequence of preRead(), followed by activeFuture.wait() only if activeFuture.hasNewData() == true.</li>
 </ul>
@@ -440,7 +440,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 03:53:10 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue May 19 2020 03:53:10 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
