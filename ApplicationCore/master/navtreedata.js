@@ -16,27 +16,28 @@ var NAVTREE =
       [ "XML file structure", "configreader.html#xmlstructure", null ]
     ] ],
     [ "Technical specification: Exception handling for device runtime errors", "spec_execption_handling.html", [
-      [ "Introduction", "spec_execption_handling.html#spec_execptionHandling_intro", [
-        [ "Special terminology used in this document", "spec_execption_handling.html#spec_exceptionHandling_intro_terminology", null ]
+      [ "A. Introduction", "spec_execption_handling.html#spec_execptionHandling_intro", [
+        [ "A.9 Special terminology used in this document", "spec_execption_handling.html#spec_exceptionHandling_intro_terminology", null ],
+        [ "(*) Comments", "spec_execption_handling.html#spec_exceptionHandling_intro_comments", null ]
       ] ],
-      [ "A. Behavioural description", "spec_execption_handling.html#spec_execptionHandling_behaviour", [
+      [ "B. Behavioural description", "spec_execption_handling.html#spec_execptionHandling_behaviour", [
         [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_behaviour_comments", null ]
       ] ],
-      [ "B. Implementation", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation", [
-        [ "B.1 Internal interface between ExceptionHandlingDecorator and DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_interface", [
+      [ "C. Implementation", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation", [
+        [ "C.1 Internal interface between ExceptionHandlingDecorator and DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_interface", [
           [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_interface_comments", null ]
         ] ],
-        [ "B.2 ExceptionHandlingDecorator", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator", [
+        [ "C.2 ExceptionHandlingDecorator", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator", [
           [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_comments", null ]
         ] ],
-        [ "B.3 DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule", [
+        [ "C.3 DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule", [
           [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule_comments", null ]
         ] ],
-        [ "B.4 DeviceModule::reportException()", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_reportException", [
+        [ "C.4 DeviceModule::reportException()", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_reportException", [
           [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_reportException_comments", null ]
         ] ]
       ] ],
-      [ "C. Known issues", "spec_execption_handling.html#spec_execptionHandling_known_issues", null ]
+      [ "D. Known issues", "spec_execption_handling.html#spec_execptionHandling_known_issues", null ]
     ] ],
     [ "Technical specification: Propagation of initial values", "spec_initial_value_propagation.html", null ],
     [ "Technical specification: data validity propagation", "spec_data_validity_propagation.html", null ],
@@ -91,8 +92,8 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8fae0ac20adce6ffee48c7151b070aa5737",
 "class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780",
 "configreader.html#usage",
-"struct_chimera_t_k_1_1_config_reader.html#ac920876035406f5266007c95398ef782",
-"struct_controller.html#a97ab7bd3852cc42fddd13b1bae1f4c7b"
+"struct_chimera_t_k_1_1_config_reader.html#ac39a42b4171272dd24eb6e2dc07849a6",
+"struct_controller.html#a54f77011079233e80bf09ac9867773ce"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

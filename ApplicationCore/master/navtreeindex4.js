@@ -53,8 +53,8 @@ var NAVTREEINDEX4 =
 "exception_handling.html#DataValidity":[0,1],
 "exception_handling.html#Introduction":[0,0],
 "files.html":[16,0],
-"functions.html":[15,3,0],
 "functions.html":[15,3,0,0],
+"functions.html":[15,3,0],
 "functions_0x7e.html":[15,3,0,23],
 "functions_a.html":[15,3,0,1],
 "functions_b.html":[15,3,0,2],
@@ -166,6 +166,7 @@ var NAVTREEINDEX4 =
 "spec__status_aggregator.html":[7],
 "spec_data_validity_propagation.html":[6],
 "spec_execption_handling.html":[4],
+"spec_execption_handling.html#spec_exceptionHandling_intro_comments":[4,0,1],
 "spec_execption_handling.html#spec_exceptionHandling_intro_terminology":[4,0,0],
 "spec_execption_handling.html#spec_execptionHandling_behaviour":[4,1],
 "spec_execption_handling.html#spec_execptionHandling_behaviour_comments":[4,1,0],
@@ -186,8 +187,8 @@ var NAVTREEINDEX4 =
 "struct_automation.html#a1a86176292eb457cf69d9a764a38a468":[15,0,2,3],
 "struct_automation.html#a4a08a0e51d5adb3d163709212eff7ecb":[15,0,2,4],
 "struct_automation.html#a6d28e80b6662b738458f8753adc2f837":[15,0,2,5],
-"struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[15,0,2,0],
 "struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[15,0,2,1],
+"struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[15,0,2,0],
 "struct_automation.html#aa738677550010b51b08df005e0e1d7f3":[15,0,2,2],
 "struct_automation.html#acff6fa50c6a95870a79b4b1df4a14ea1":[15,0,2,7],
 "struct_automation.html#adc175eb9561ef659f570a65ae1ac97cc":[15,0,2,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "struct_chimera_t_k_1_1_config_reader.html#a8a692faaaddd5419b5754fca31854b63":[15,0,0,16,2],
 "struct_chimera_t_k_1_1_config_reader.html#a9095274a4220b1fbdcdbd54b0f86449f":[15,0,0,16,23],
 "struct_chimera_t_k_1_1_config_reader.html#a926973e3a9dfd07e0171f56d3ec909af":[15,0,0,16,7],
-"struct_chimera_t_k_1_1_config_reader.html#ab8f2f615e502a1b7b5ed8c15a45cc402":[15,0,0,16,5],
-"struct_chimera_t_k_1_1_config_reader.html#ac39a42b4171272dd24eb6e2dc07849a6":[15,0,0,16,16]
+"struct_chimera_t_k_1_1_config_reader.html#ab8f2f615e502a1b7b5ed8c15a45cc402":[15,0,0,16,5]
 };
