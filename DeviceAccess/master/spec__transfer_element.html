@@ -207,7 +207,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </li>
 <li>3.2.2 can optionally be "destructively", which allows the implementation to destroy content of the application buffer in the process.<ul>
 <li>3.2.2.1 Applications can allow this optimisation by using writeDestructively() instead of write().</li>
-<li>3.2.2.2 The optimisation is still optional, backends are allowed to not make use of it. In this case, the content of the application buffer will be intact after writeDestructively(). Applications still are not allowed to use the content of the application buffer after writeDestructively().</li>
+<li><a class="anchor" id="transferElement_B_3_2_2"></a>3.2.2.2 Applications are not allowed to use the content of the application buffer after writeDestructively().<a class="el" href="spec__transfer_element.html#transferElement_comment_B_3_2_2">(*)</a></li>
 </ul>
 </li>
 </ul>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </ul>
 </li>
 <li>4.2.3 writeTransferYyy() calls the corresonding doWriteTransferYyy()</li>
-<li>Transfer implementations do not change the application buffer</li>
+<li>4.2.4 Transfer implementations do not change the application buffer</li>
 </ul>
 </li>
 <li>4.3 postXxx(): calls doPostXxx() of the implementation to allow follow-up work after the actual transfer.<ul>
@@ -297,6 +297,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </ul>
 <h3>(*) Comments</h3>
 <ul>
+<li><a class="anchor" id="transferElement_comment_B_3_2_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_3_2_2">3.2.2</a> The optimisation is still optional, backends are allowed to not make use of it. In this case, the content of the application buffer will be intact after writeDestructively(). Applications still are not allowed to use the content of the application buffer after writeDestructively().</li>
 <li>4.1 preXxx() is part of the operation, not of the actual transfer. In case of reads with AccessMode::wait_for_new_data the transfer is asynchonousy initiated by the device and not connected to the operation. Hence backend implementations usually have an empty doPreWrite(), but decorator-like implementations still can use it to execute preparatory tasks.</li>
 <li>4.3.1 In write operations the buffer might be swapped out in doPreRead() and swapped back in doPostRead() to restore it for non-destructive read operations to avoid copying of large arrays.</li>
 <li>5. Reason: It might be that the user buffer has to be swapped out during the transfer (while taking away the ownership of the calling code), and this must be restored in the postXxx action.</li>
@@ -443,7 +444,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 20 2020 03:53:09 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu May 21 2020 03:53:11 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
