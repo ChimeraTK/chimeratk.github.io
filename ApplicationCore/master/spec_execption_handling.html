@@ -101,9 +101,9 @@ A. Introduction</h1>
 <h2><a class="anchor" id="spec_exceptionHandling_intro_terminology"></a>
 A.9 Special terminology used in this document</h2>
 <ul>
-<li>9.1 A read operation might be <em>skipped</em>. It means there will be no new data because the operation will not take place at all. Instead, the data is marked as DataValidity::faulty. Note: This term is also used if there is no new data because a running operation is interrupted by an exception.</li>
-<li><a class="anchor" id="a_9_2"></a>9.2 A read operation might be <em>frozen</em>. This means, the function called will not return until the fault state is resolved and the operation is executed. Freezing only happens on operations with a pre-existing fault state (*).</li>
-<li>9.3 A write operation might be <em>delayed</em>. This means, the operation will not be executed immediately and the calling thread continues. The operation will be asynchronosuly executed when the fault state is resolved. Note that the VersionNumber specified in the write operation will be retained and also used for the delayed write operation.</li>
+<li>9.1 A <em>read operation</em> might be <em>skipped</em>. It means there will be no new data because the operation will not take place at all. Instead, the <em>function called returns immediately</em> and data is marked as DataValidity::faulty. Note: This term is also used if there is no new data because a running operation is interrupted by an exception.</li>
+<li><a class="anchor" id="a_9_2"></a>9.2 A <em>read operation</em> might be <em>frozen</em>. This means, the <em>function called will not return until the fault state is resolved</em> and the operation is executed. Freezing only happens on operations with a pre-existing fault state (*).</li>
+<li>9.3 A <em>write operation</em> might be <em>delayed</em>. This means, the operation will not be executed immediately and <em>the calling thread continues</em>. The operation will be asynchronosuly executed when the fault state is resolved. Note that the VersionNumber specified in the write operation will be retained and also used for the delayed write operation.</li>
 <li>9.4 Whenever a write operation or a call to write() is mentioned, destructive writes via writeDestructively() are included. The destructive write optimisation makes no difference for the exception handling.</li>
 </ul>
 <h2><a class="anchor" id="spec_exceptionHandling_intro_comments"></a>
@@ -129,8 +129,8 @@ B. Behavioural description</h1>
 <li>2.2.1 The normal module algorithm code will be continued, to allow this flag to propagate to the outputs in the same way as if it had been received through the process variable itself (cf. <a class="el" href="spec_execption_handling.html#b_1_2">1.2</a>).</li>
 <li>2.2.2 The DataValidity::faulty flag resulting from the fault state is propagated once, even if the variable had the a DataValidity::faulty flag already set previously for another reason.</li>
 <li><a class="anchor" id="b_2_2_3"></a>2.2.3 Read operations without AccessMode::wait_for_new_data are <em>skipped</em> until the device is fully recovered again (cf. <a class="el" href="spec_execption_handling.html#b_3_1">3.1</a>). The first skipped read operation will have a new VersionNumber.</li>
-<li><a class="anchor" id="b_2_2_4"></a>2.2.4 Read operations with AccessMode::wait_for_new_data will be <em>skipped</em> once for each accessor to propagate the DataValidity::faulty flag (which counts as new data, i.e. readNonBlocking()/readLatest() will return true, and a new VersionNumber is obtained). In the following:<ul>
-<li>non-blocking read operations (readNonBlocking() and readLatest()) are <em>skipped</em> and return false, until the device is recovered, and</li>
+<li><a class="anchor" id="b_2_2_4"></a>2.2.4 Read operations with AccessMode::wait_for_new_data will be <em>skipped</em> once for each accessor to propagate the DataValidity::faulty flag (which counts as new data, i.e. readNonBlocking()/readLatest() will return true (= hasNewData), and a new VersionNumber is obtained). In the following:<ul>
+<li>non-blocking read operations (readNonBlocking() and readLatest()) are <em>skipped</em> and return false (= no new data), until the device is recovered, and</li>
 <li>blocking read operations (read()) will be <em>frozen</em> until the device is recovered.</li>
 <li>After the device is fully recovered (cf. <a class="el" href="spec_execption_handling.html#b_3_1">3.1</a>), the current value will by (synchronously) read from the device. This will be the first value received by the accessor after an exception.</li>
 </ul>
@@ -141,7 +141,7 @@ B. Behavioural description</h1>
 <li><a class="anchor" id="b_2_3"></a>2.3 Write operations will be <em>delayed</em> until the device is fully recovered again (cf. <a class="el" href="spec_execption_handling.html#b_3_1">3.1</a>).<ul>
 <li>2.3.1 In case of a fault state (new or persisting), the actual write operation will take place asynchronously when the device is recovering.</li>
 <li><a class="anchor" id="b_2_3_2"></a>2.3.2 The same mechanism as used for <a class="el" href="spec_execption_handling.html#b_3_1_2">3.1.2</a> is used here, hence the order of write operations is guaranteed across accessors, but only the latest written value of each accessor prevails. <a class="el" href="spec_execption_handling.html#comment_b_2_3_2">(*)</a></li>
-<li>2.3.3 The return value of write() indicates whether data was lost in the transfer. If the write has to be delayed due to an exception, the return value will be true if a previously delayed and not-yet written value is discarded in the process, false otherwise.</li>
+<li>2.3.3 The return value of write() indicates whether data was lost in the transfer. If the write has to be delayed due to an exception, the return value will be true (= dataLost) if a previously delayed and not-yet written value is discarded in the process, false (= no data lost) otherwise.</li>
 <li>2.3.4 When the delayed value is finally written to the device during the recovery procedure, it is guaranteed that no data loss happens (writes with data loss will be retried).</li>
 <li>2.3.5 It is guaranteed that the write takes place before the device is considered fully recovered again and other transfers are allowed (cf. <a class="el" href="spec_execption_handling.html#b_3_1">3.1</a>).</li>
 </ul>
@@ -169,7 +169,7 @@ B. Behavioural description</h1>
 <li><a class="anchor" id="b_6"></a>6. If a boost::numeric::bad_numeric_cast is received<ul>
 <li>6.1 the exception is not reported to the device.</li>
 <li>6.2 Write operations are skipped because the exception is happening in doPreWrite(). The return value of writeYyy() is true (data was lost).</li>
-<li>6.3 Read operations return with DataValidity::faulty. The data content of the application buffer probably is useless <a class="el" href="spec_execption_handling.html#comment_b_6_3">(*)</a></li>
+<li><a class="anchor" id="b_6_3"></a>6.3 Read operations return with DataValidity::faulty. The data content of the application buffer probably is useless <a class="el" href="spec_execption_handling.html#comment_b_6_3">(*)</a></li>
 </ul>
 </li>
 </ul>
@@ -182,7 +182,7 @@ B. Behavioural description</h1>
 <li><a class="anchor" id="comment_b_2_4"></a><a class="el" href="spec_execption_handling.html#b_2_4">2.4</a> Even read without wait_for_new_data and write operations are not truely non-blocking, since they are still synchronous. The "non-blocking" guarantee only means that the operation does not block until new data has arrived, and that it is not frozen until the device is recovered. For the duration of the recovery procedure and of course for timeout periods these operations may still block. readNonBlocking() and readLatest() with wait_for_new_data could in theory be truely lock-free and wait-free, but the synchronisation mechanism in case of exceptions are not implemented as such. In case of exceptions, the application usually anway does not behave normally any more. If needed, this limitation could be lifted with a more complicated implementation in the future.</li>
 <li><a class="anchor" id="comment_b_3_1_2"></a><a class="el" href="spec_execption_handling.html#b_3_1_2">3.1.2</a> For some applications, the order of writes may be important, e.g. if firmware expects this. Please note that the VersionNumber is insufficient as a sorting criteria, since many writes may have been done with the same VersionNumber (in an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a>, the VersionNumber used for the writes is determined by the largest VersionNumber of the inputs).</li>
 <li><a class="anchor" id="comment_b_4_2"></a><a class="el" href="spec_execption_handling.html#b_4_2">4.2</a> DataValidity::faulty is initially set by default, so there is no need to propagate this flag initially. To prevent race conditions and undefined behaviour (especially in automated tests), it even needs to be made sure that the flag is not propagated unnecessarily. The behaviour of non-blocking reads presents a slight asymmetry between the initial device opening and a later recovery. This will in particular be visible when restarting a server while a device is offline. If a module only uses readLatest()/readNonBlocking() (= read() for poll-type inputs) for the offline device, the module was still running before the server restart using the last known values for the dysfunctional registers (and flagging all outputs as faulty). After the restart, the module has to wait for the initial value and hence will not run until the device becomes functional again. To make this behaviour symmetric, one would need to persist the values of device inputs. Since this only affects a corner case in which likely no usable output is produced anyway, this slight inconsistency is considered acceptable.</li>
-<li><a class="anchor" id="comment_b_6_3"></a>6.3 In contrast to a skipped operation where the it is guaranteed that the previous data content stays intact and only the DataValidity::faulty flag is set.</li>
+<li><a class="anchor" id="comment_b_6_3"></a><a class="el" href="spec_execption_handling.html#b_6_3">6.3</a> In contrast to a skipped operation where the it is guaranteed that the previous data content stays intact and only the DataValidity::faulty flag is set.</li>
 </ul>
 <h1><a class="anchor" id="spec_execptionHandling_high_level_implmentation"></a>
 C. Implementation</h1>
@@ -417,7 +417,7 @@ D. Known issues</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Wed May 20 2020 03:53:55 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu May 21 2020 03:54:05 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
