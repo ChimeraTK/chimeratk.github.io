@@ -70,7 +70,7 @@ var NAVTREEINDEX1 =
 "struct_chimera_t_k_1_1_xy_description_1_1_axis.html#afa2613cd7ef88dd7c4d8c83797d31000":[3,0,0,15,0,3],
 "struct_d__text_unifier.html":[3,0,1],
 "struct_d__text_unifier.html#a448a1633eb29a9158c5c26d23123e5f1":[3,0,1,1],
-"struct_d__text_unifier.html#a8763e1a831ab52a6ebd82a01a6a19113":[3,0,1,2],
+"struct_d__text_unifier.html#acc4bbc994bdedcd86a92a27e856d2a39":[3,0,1,2],
 "struct_d__text_unifier.html#af1e3236f29a3ae88db7603f8bd8b9f0e":[3,0,1,0],
 "todo.html":[1]
 };
