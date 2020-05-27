@@ -93,6 +93,8 @@ var searchData=
   ['_5ftype',['_type',['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#af7f948baaebac74fb6b19f5b6a9a24dc',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem::_type()'],['../class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#aed58815ba5fc666a233610afc33a5161',1,'ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem::_type()']]],
   ['_5funit',['_unit',['../class_chimera_t_k_1_1_transfer_element.html#a8fffb069722f43530cecbcaa40b7c670',1,'ChimeraTK::TransferElement']]],
   ['_5fvalue',['_value',['../class_chimera_t_k_1_1_data_type.html#aa7ad04100934a45d506a1613f697ad3c',1,'ChimeraTK::DataType']]],
+  ['_5fversionnumber',['_versionNumber',['../class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a5d51a62ca112b00c349e9ea61a4f55ca',1,'ChimeraTK::LNMBackendBitAccessor']]],
+  ['_5fversionnumbertemp',['_versionNumberTemp',['../class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a00c3ae98af04af834bc2f17e14669d66',1,'ChimeraTK::LNMBackendBitAccessor']]],
   ['_5fwordoffsetinregister',['_wordOffsetInRegister',['../class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a34307ddff43c6c4bcbef9c341a670da7',1,'ChimeraTK::LNMBackendVariableAccessor']]],
   ['_5fwritecallbackfunctions',['_writeCallbackFunctions',['../class_chimera_t_k_1_1_dummy_backend.html#a285d504ac33efcead9ba2da059a70cdf',1,'ChimeraTK::DummyBackend']]]
 ];

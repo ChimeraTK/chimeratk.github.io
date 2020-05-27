@@ -1,5 +1,8 @@
 var NAVTREEINDEX9 =
 {
+"struct_chimera_t_k_1_1_sdm.html#ad30ac0490fe8f446be6b7fd5f4f7db1a":[16,0,0,73,0],
+"struct_chimera_t_k_1_1_sdm.html#aec473660a07053d91c0d99ff3cdab21e":[16,0,0,73,1],
+"struct_chimera_t_k_1_1_sdm.html#af45f7ca4c5663a3adeff975c4cbfc2fa":[16,0,0,73,6],
 "struct_chimera_t_k_1_1_thread_informer_mutex.html":[16,0,0,79],
 "struct_chimera_t_k_1_1_thread_informer_mutex.html#a577ee1e0f70212e916365c9475428c84":[16,0,0,79,0],
 "struct_chimera_t_k_1_1_thread_informer_mutex.html#a8160152b415ddd8d3986b292616b7ff0":[16,0,0,79,1],
@@ -62,7 +65,7 @@ var NAVTREEINDEX9 =
 "util_2include_2_supported_user_types_8h.html#a8256edfa28cb73e5de13c92e1920369d":[17,0,7,0,1,4],
 "util_2include_2_supported_user_types_8h.html#aa159464ac26217627bc921cc3e9f3c62":[17,0,7,0,1,12],
 "util_2include_2_supported_user_types_8h.html#abe698a21f62a02296a12b08433b980dc":[17,0,7,0,1,6],
-"util_2include_2_supported_user_types_8h.html#afee0348f3a67cc3dc7efec51279bde7d":[17,0,7,0,1,11],
+"util_2include_2_supported_user_types_8h.html#ae7a87d6ef5da36852a971cab2ac6eddc":[17,0,7,0,1,11],
 "util_2include_2_supported_user_types_8h_source.html":[17,0,7,0,1],
 "util_2include_2_utilities_8h.html":[17,0,7,0,2],
 "util_2include_2_utilities_8h.html#a8c117b1197fc52428981490a838ccf0c":[17,0,7,0,2,3],
