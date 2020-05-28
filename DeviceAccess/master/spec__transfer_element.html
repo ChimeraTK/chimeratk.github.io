@@ -111,10 +111,10 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>3. A <em>transfer</em> is the exchange of data between the application and the device, using a transfer protocol which determines the technical implementation. The protocol used for the transfer is determined by the backend and hence all details about the protocol are abstracted and not visible by the application.</li>
 <li>4. An <em>operation</em> is the action taken by the application to read or write data from or to a device. An operation is related to a transfer, yet it is to be distinguished. The transfer can e.g. be initiated by the device, while the operation is always initiated by the application.</li>
 <li>5. The <em>application buffer</em> (sometimes also called user buffer outside this document) is referring to the buffer containing the data and meta data, which is accessible to the application.<ul>
-<li>5.1 It can be accessed through the following functions:<ul>
-<li><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#ae07a53bd251a3c65105f70a05ef3ffd0" title="Get or set register accessor&#39;s buffer content (1D version). ">ChimeraTK::NDRegisterAccessor::accessData()</a> / <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#ae7320f8139ee7b794743bd4e203fbb12" title="Get or set register accessor&#39;s channel vector. ">ChimeraTK::NDRegisterAccessor::accessChannel()</a></li>
-<li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a97ff27579d6a52ef1c5c629c316bf53e" title="Returns the version number that is associated with the last transfer (i.e. ">ChimeraTK::TransferElement::getVersionNumber()</a></li>
-<li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4a3faa3cb3d0a1766c08d1ac0e6144c8" title="Return current validity of the data. ">ChimeraTK::TransferElement::dataValidity()</a></li>
+<li>5.1 It can be accessed through the following (non-virtual) functions:<ul>
+<li><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#ae07a53bd251a3c65105f70a05ef3ffd0" title="Get or set register accessor&#39;s buffer content (1D version). ">ChimeraTK::NDRegisterAccessor::accessData()</a> / <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#ae7320f8139ee7b794743bd4e203fbb12" title="Get or set register accessor&#39;s channel vector. ">ChimeraTK::NDRegisterAccessor::accessChannel()</a> - gives access to <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#ab3e9f790076370e901fd8c6079ed6770" title="Buffer of converted data elements. ">ChimeraTK::NDRegisterAccessor::buffer_2D</a></li>
+<li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a97ff27579d6a52ef1c5c629c316bf53e" title="Returns the version number that is associated with the last transfer (i.e. ">ChimeraTK::TransferElement::getVersionNumber()</a> - returns content of ChimeraTK::TransferElement::_versionNumber</li>
+<li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a4a3faa3cb3d0a1766c08d1ac0e6144c8" title="Return current validity of the data. ">ChimeraTK::TransferElement::dataValidity()</a> - returns content of ChimeraTK::TransferElement::_dataValidity</li>
 </ul>
 </li>
 <li>5.2 If not stated otherwise, the term <em>application buffer</em> refers to <b>all</b> components of the buffer.</li>
@@ -232,7 +232,8 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </ul>
 </li>
 <li>4.3 postXxx(): calls doPostXxx() of the implementation to allow follow-up work after the actual transfer.<ul>
-<li>4.3.1 In read transfers doPostRead() is the only place where the application buffer may be changed (*).</li>
+<li>4.3.1 In read transfers, doPostRead() is the only place where the application buffer may be changed (*).</li>
+<li>4.3.2 In write transfers, postWrite() updates the version number of the application buffer TransferElement::_versionNumber to the version number provided to the write() call, if no exception is (re-)thrown in doPostWrite().</li>
 </ul>
 </li>
 </ul>
@@ -248,7 +249,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </li>
 <li>7. Return values of xxxTransferYyy():<ul>
 <li>7.1 readTransferNonBlocking() returns whether new data has been received (see 4.2.2)</li>
-<li>7.2 writeTransfer() and writeTransferDestructively() return whether data has been lost. If it returns true, some data was rejected in the process of the transfer. It can be either the data that should have been written in the current transfer, or some older data was overwritten.</li>
+<li><a class="anchor" id="transferElement_B_7_2"></a>7.2 writeTransfer() and writeTransferDestructively() return whether data has been lost. If it returns true, previous data was rejected in the process of the transfer. It is always guaranteed that the data of the current transfer is not lost. <a class="el" href="spec__transfer_element.html#transferElement_comment_B_7_2">(*)</a></li>
 <li>7.3 The return value is passed on to the postXxx() function call (via hasNewData resp. dataLost), to allow the doPostXxx() implementations to decide the right actions.</li>
 <li>7.4 In case of an exception in either preXxx() or xxxTransferYyy(), postXxx() receives instead the information that the transfer didn't sucessfully take place (hasNewData = false resp. dataLost = true).</li>
 </ul>
@@ -316,6 +317,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>4.1 preXxx() is part of the operation, not of the actual transfer. In case of reads with AccessMode::wait_for_new_data the transfer is asynchonousy initiated by the device and not connected to the operation. Hence backend implementations usually have an empty doPreWrite(), but decorator-like implementations still can use it to execute preparatory tasks.</li>
 <li>4.3.1 In write operations the buffer might be swapped out in doPreRead() and swapped back in doPostRead() to restore it for non-destructive read operations to avoid copying of large arrays.</li>
 <li>5. Reason: It might be that the user buffer has to be swapped out during the transfer (while taking away the ownership of the calling code), and this must be restored in the postXxx action.</li>
+<li><a class="anchor" id="transferElement_comment_B_7_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_7_2">7.2</a> Usually, writes are implemented as synchronous transfers, in which case no previous data can be lost. In case of asynchronous write transfers (as e.g. implemented in the ControlSystemAdapter's ProcessArray), the implementation must ensure the specified behaviour e.g. by using cppext::future_queue::push_overwrite() or a similar functionality. Please keep in mind that the return value of cppext::future_queue::push_overwrite() does not guarantee which data is lost <em>only</em> if concurrent push_overwrite() calls are executed in a multi-producer environment. TransferElements are not thread safe anyway, hence push_overwrite() will always overwrite old data in this context.</li>
 <li>8.2.2 This allows to discard values inside a continuation of a cppext::future_queue. It is used e.g. by the ControlSystemAdapter's BidirectionalProcessArray. [TBD: It could be replaced by a feature of the cppext::future_queue allowing to reject values in continuations...]</li>
 <li>8.5 Device::open() does not automatically activate the asyncronous sending because the device might need some initalisation setting to produce valid data (for example setting the correct ADC range). By delaing the activation of asyncronous reads the application has the possibility to do the initialisation before the first data is being send, and can avoid invalid initial values on the process variables.</li>
 <li>8.5.1 Conceptually activating an asyncronous read is like subscribing a variable, and deactivating it is like unsubscribing a variable in a publish-subscribe pattern. The actual implementation depends on the details of the protocols.</li>
@@ -457,7 +459,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 27 2020 03:53:09 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu May 28 2020 03:53:17 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
