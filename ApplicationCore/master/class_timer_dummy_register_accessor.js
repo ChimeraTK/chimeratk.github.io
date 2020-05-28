@@ -1,9 +1,9 @@
 var class_timer_dummy_register_accessor =
 [
     [ "TimerDummyRegisterAccessor", "class_timer_dummy_register_accessor.html#a5f4cc6d59d4216ee26864394223c46e6", null ],
-    [ "~TimerDummyRegisterAccessor", "class_timer_dummy_register_accessor.html#a99b23597a145ee255c55eb2117ab0fb8", null ],
-    [ "doPostRead", "class_timer_dummy_register_accessor.html#aa73b65904e41c4f8c15049f22e3ed14a", null ],
-    [ "doPostRead", "class_timer_dummy_register_accessor.html#a42a609f19264ba0bd98024a6e28c56ad", null ],
+    [ "~TimerDummyRegisterAccessor", "class_timer_dummy_register_accessor.html#ab6bba01dd9887e9044fb02db1fc02e03", null ],
+    [ "doPostRead", "class_timer_dummy_register_accessor.html#a8b5dc81b01b6018d9beb3077271ac7f1", null ],
+    [ "doPostRead", "class_timer_dummy_register_accessor.html#ae8026c4a28286c33f9272db20394cacb", null ],
     [ "doReadTransfer", "class_timer_dummy_register_accessor.html#afdd3f74e6357b0d8ed83ba2c08be19aa", null ],
     [ "doReadTransferLatest", "class_timer_dummy_register_accessor.html#ac2feb8fcfa46a67fd7d59271d650a5c4", null ],
     [ "doReadTransferNonBlocking", "class_timer_dummy_register_accessor.html#a343f37e2695ac9ab3ef8a766843ae856", null ],

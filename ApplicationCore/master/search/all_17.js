@@ -20,7 +20,7 @@ var searchData=
   ['_7estatusmonitorimpl',['~StatusMonitorImpl',['../struct_chimera_t_k_1_1_status_monitor_impl.html#a2f4e5e7bcaaeb33eb809d0d97765c6fc',1,'ChimeraTK::StatusMonitorImpl']]],
   ['_7etemplatemodule',['~TemplateModule',['../struct_template_module.html#a6b8f84dae76a1cf6e5704a60908f3996',1,'TemplateModule']]],
   ['_7ethreadedfanout',['~ThreadedFanOut',['../class_chimera_t_k_1_1_threaded_fan_out.html#a74e762aadaacc9fab87360cab167c882',1,'ChimeraTK::ThreadedFanOut']]],
-  ['_7etimerdummyregisteraccessor',['~TimerDummyRegisterAccessor',['../class_timer_dummy_register_accessor.html#a99b23597a145ee255c55eb2117ab0fb8',1,'TimerDummyRegisterAccessor']]],
+  ['_7etimerdummyregisteraccessor',['~TimerDummyRegisterAccessor',['../class_timer_dummy_register_accessor.html#ab6bba01dd9887e9044fb02db1fc02e03',1,'TimerDummyRegisterAccessor']]],
   ['_7etriggerfanout',['~TriggerFanOut',['../class_chimera_t_k_1_1_trigger_fan_out.html#a8a654a293098909f923f554ee1008882',1,'ChimeraTK::TriggerFanOut']]],
   ['_7evariablegroup',['~VariableGroup',['../class_chimera_t_k_1_1_variable_group.html#ac400d5fc69af741656efe04c0610c04d',1,'ChimeraTK::VariableGroup']]],
   ['_7evariablenetworkdumpingvisitor',['~VariableNetworkDumpingVisitor',['../class_chimera_t_k_1_1_variable_network_dumping_visitor.html#a466ed35bca4d3b1a97428ec7b3f06ef9',1,'ChimeraTK::VariableNetworkDumpingVisitor']]],
