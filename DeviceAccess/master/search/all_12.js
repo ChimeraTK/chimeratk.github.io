@@ -41,7 +41,7 @@ var searchData=
   ['sizeinbytes',['sizeInBytes',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html#a1c631fad58cb1b7ac2bb0c0403fda029',1,'ChimeraTK::DummyBackend::AddressRange']]],
   ['sleep_5funtil',['sleep_until',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html#a35a618bb93efcf6f87f192a3dcc33439',1,'ChimeraTK::testable_rebot_sleep']]],
   ['sleeptime',['sleepTime',['../class_chimera_t_k_1_1_subdevice_backend.html#ab01bbfe4c4c1d1d9b8d18ee5e97e7586',1,'ChimeraTK::SubdeviceBackend']]],
-  ['spec_5ftransferelement_2emd',['spec_TransferElement.md',['../spec___transfer_element_8md.html',1,'']]],
+  ['spec_5ftransferelement_2edox',['spec_TransferElement.dox',['../spec___transfer_element_8dox.html',1,'']]],
   ['splitstringatlastdot',['splitStringAtLastDot',['../class_chimera_t_k_1_1_map_file_parser.html#af8b0334352da84a275101083c91c462a',1,'ChimeraTK::MapFileParser']]],
   ['start',['start',['../_register_info_map_8cpp.html#a61eb63d26b2fa6c2971603ceccffb14b',1,'RegisterInfoMap.cpp']]],
   ['start_5ftime',['start_time',['../structdevice__ioctrl__time.html#a73717c26f9ec75f5b4ea114976a1ba2c',1,'device_ioctrl_time']]],
