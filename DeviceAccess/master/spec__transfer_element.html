@@ -250,13 +250,13 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>7. Return values of xxxTransferYyy():<ul>
 <li>7.1 readTransferNonBlocking() returns whether new data has been received (see 4.2.2)</li>
 <li><a class="anchor" id="transferElement_B_7_2"></a>7.2 writeTransfer() and writeTransferDestructively() return whether data has been lost. If it returns true, previous data was rejected in the process of the transfer. It is always guaranteed that the data of the current transfer is not lost. <a class="el" href="spec__transfer_element.html#transferElement_comment_B_7_2">(*)</a></li>
-<li>7.3 The return value is passed on to the postXxx() function call (via hasNewData resp. dataLost), to allow the doPostXxx() implementations to decide the right actions.</li>
+<li>7.3 The return value is passed on to the postXxx() function call (via hasNewData resp. dataLost), to allow the doPostXxx() implementations to decide the right actions. In case of readTransfer(), hasNewData is set to true.</li>
 <li>7.4 In case of an exception in either preXxx() or xxxTransferYyy(), postXxx() receives instead the information that the transfer didn't sucessfully take place (hasNewData = false resp. dataLost = true).</li>
 </ul>
 </li>
 <li>8. Read operations with AccessMode::wait_for_new_data:<ul>
 <li>8.1 Since the transfer is initiated by the device side in this case, the transfer is asynchronous to the read operation.</li>
-<li>8.2 The backend fills any received values into a queue, from which the read()/readNonBlocking() operations will obtain the value.<ul>
+<li>8.2 The backend fills any received values into the ChimeraTK::TransferElement::_readQueue, from which the read()/readNonBlocking() operations will obtain the value.<ul>
 <li>8.2.1 If the queue is full, the last written value will be overwritten.</li>
 <li>8.2.2 The backend may fill a ChimeraTK::detail::DiscardValueException to the queue, which has the same effect on the application side as if no entry was filled to the queue. (*)</li>
 </ul>
@@ -276,14 +276,14 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>9. If one transfer element of a device has seen an exception(*), all other transfer elements of the same device must also be aware of this.<ul>
 <li><a class="anchor" id="transferElement_B_9_1"></a>9.1 The transfer element which detects the exception reports it to its TransferElement::exceptionBackend by calling DeviceBackend::setException <a class="el" href="spec__transfer_element.html#transferElement_comment_B_9_1">(*)</a> (cf. <a class="el" href="spec__transfer_element.html#transferElement_B_10_1">10.1</a>)</li>
 <li><a class="anchor" id="transferElement_B_9_2"></a>9.2 TransferElements with wait_for_new_data flag<ul>
-<li>9.2.1 Each transfer element deactivates asynchronous reads so no further data is pushed into the queue until open() has been called successfully in the backend (*) and Device::activateAsyncRead() has been called</li>
+<li><a class="anchor" id="transferElement_B_9_2_1"></a>9.2.1 Each transfer element deactivates asynchronous reads so no further data is pushed into the ChimeraTK::TransferElement::_readQueue until open() has been called successfully in the backend (*) and Device::activateAsyncRead() has been called</li>
 <li>9.2.2 Exactly one <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> is pushed into the queue of <em>each</em> transfer elements of the backend with wait_for_new_data (*). This must happen after 9.2.1. to avoid race conditions.</li>
 <li>9.2.3 The first data on the queue after the exception is the initial value send when calling Device::activateAsyncRead() (see 8.5.2).</li>
 <li>9.2.4 The backend must make sure 9.2.2 is finished before a call to Device::activateAsyncRead() re-activates the asynchonous transfers again (*).</li>
 </ul>
 </li>
 <li><a class="anchor" id="transferElement_B_9_3"></a>9.3 TransferElements without wait_for_new_data<ul>
-<li>9.3.1 Each call to doReadTransferSynchonously() will throw a ChimeraTK::runtime error until open() has been called successfully.</li>
+<li><a class="anchor" id="transferElement_B_9_3_1"></a>9.3.1 Each call to doReadTransferSynchonously() will throw a ChimeraTK::runtime error until open() has been called successfully.</li>
 </ul>
 </li>
 <li><a class="anchor" id="transferElement_B_9_4"></a>9.4 Write operations will throw a ChimeraTK::runtime error in doWriteTrasferYyy() until open() has been called successfully.</li>
@@ -293,7 +293,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li><a class="anchor" id="transferElement_B_10_1"></a>10.1 DeviceBackend::setException() triggers the actions described in <a class="el" href="spec__transfer_element.html#transferElement_B_9_2">9.2</a>, <a class="el" href="spec__transfer_element.html#transferElement_B_9_3">9.3</a> and <a class="el" href="spec__transfer_element.html#transferElement_B_9_4">9.4</a><ul>
 <li><a class="anchor" id="transferElement_B_10_1_1"></a>10.1.1 Meta-backends like the LogicalNameMappingBackend delegate this call to all of their target backends</li>
 <li>10.1.2 Further calls to DeviceBackend::setException() have no effect until Device::open() has successfully been called.</li>
-<li><a class="anchor" id="transferElement_B_10_1_3"></a>10.1.3 Application code can call Device::setException() to trigger the exception state <a class="el" href="spec__transfer_element.html#transferElement_comment_B_10_1_3">transferElement_comment_B_10_1_3</a> (*)</li>
+<li><a class="anchor" id="transferElement_B_10_1_3"></a>10.1.3 Application code can call Device::setException() to trigger the exception state <a class="el" href="spec__transfer_element.html#transferElement_comment_B_10_1_3">(*)</a></li>
 </ul>
 </li>
 <li><a class="anchor" id="transferElement_B_10_2"></a>10.2 TransferElements know which backend to report exceptions to<ul>
@@ -334,9 +334,10 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>1. Other exceptions than <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a>, <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a>, boost::thread_interrupted and boost::numeric::bad_numeric_cast are not allowed to be thrown or passed through at any place under any circumstance (unless of course they are guaranteed to be caught before they become visible to the application, like the detail::DiscardValueException). The framework (in particular ApplicationCore) may use "uncatchable" exceptions in some places to force the termination of the application. Backend implementations etc. may not do this, since it would lead to uncontrollable behaviour.</li>
 <li>2. In doPostXxx no new <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> or <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> are thrown. <em>Only</em> exceptions that were risen in doPreXxx or doXxxTransferYyy, or that were received from the queue (see B.8.3) may be rethrown. This is done by the TransferElement base class in postXxx, so implementations should never actively throw these exceptions in doPostXxx (but decorators must expect exceptions to be thrown by delegated calls).</li>
 <li>3. boost::thread_interrupted may be thrown at any stage, if TransferElement::interrupt has been called.</li>
-<li>4. <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> in principle are recoverable. A later call to the same function must be able to succeed (for instance if a network outage has been resolved). ChimeraTK::runtime_erro may only be thrown in<ul>
+<li>4. <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> in principle are recoverable. It is thrown, if the device (including the communication link) does not behave as expected. A later call to the same function (after the recovery has been triggered, cf. <a class="el" href="spec__transfer_element.html#transferElement_B_9_2_1">B.9.2.1</a> resp. <a class="el" href="spec__transfer_element.html#transferElement_B_9_3_1">B.9.3.1</a>) must be able to succeed (for instance if a network outage has been resolved). <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> may only be thrown in<ul>
 <li>4.1 doXxxTransferYyy(). It is the only exception that can occur in this function (except for boost::thread_interrupted)</li>
 <li>4.2 <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946" title="Check if transfer element is readable. ">ChimeraTK::TransferElement::isReadable()</a>, <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8" title="Check if transfer element is writeable. ">ChimeraTK::TransferElement::isWriteable()</a> or <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134" title="Check if transfer element is read only, i.e. ">ChimeraTK::TransferElement::isReadOnly()</a> if there is no map file or such, and it needs to be determined from the running device.</li>
+<li>4.3 doPreXxx(), if the information returned by the functions in 4.2 is not yet available and needs to be determined from the running device.</li>
 </ul>
 </li>
 <li>5. boost::numeric::bad_numeric_cast may only be thrown in<ul>
@@ -348,7 +349,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>5.3 This exception can in principle be avoided by chosing a user data type that can fit the data without overflow when reading, or small enough so the process variable can hold the data without overflow when writing. New implementations should not throw this exception. Instead a check should be done in the constructor and a <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> should be thrown (see 6.2.4) (*).</li>
 </ul>
 </li>
-<li>6. <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> must follow strict conditions.<ul>
+<li>6. <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> must follow strict conditions. It is thrown, if the application (including its configuration files) does not behave as expected.<ul>
 <li>6.1 logic_errors must be deterministic. They must always be avoidable by calling the corresponding test functions before executing a potentially failing action (*), and must occur if the logical condition is not fulfilled and the function is called anyway.</li>
 <li>6.2 Any logic_error must be thrown as early as possible(*). They are thrown <b>if and only if</b> one of the following conditions are met:<ul>
 <li>6.2.1 A register does not exists my that name<ul>
@@ -388,9 +389,13 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </li>
 </ul>
 </li>
-<li>6.3 Two remarks about how to follow these rules:<ul>
-<li>6.3.1 If there is an error in the map file and the backend does not want to fail on this in backend creation, the register must be hidden from the catalogue.</li>
-<li>6.3.2 isReadable(), isWriteable() and isReadOnly() might have to check for the existance of the register from a running backend (in case there is no map file). This implies that these calls may throw <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> and <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> exceptions.</li>
+<li>6.3 The information mentioned in 6.2 which determines whether a <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> is thrown is considered to be constant under normal circumstances. Only when open() is called (either for the first time or to recover form a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a>) the information might change and applications are expected to check it again.<ul>
+<li><a class="anchor" id="transferElement_C_6_3_1"></a>6.3.1 If a device is changing this information on its own (e.g. makes a register read-only which was readable before), and the application hence performes an operation which is no longer possible, a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> must be thrown (unexpected behaviour of the device). <a class="el" href="spec__transfer_element.html#transferElement_comment_C_6_3_1">(*)</a></li>
+</ul>
+</li>
+<li>6.4 Two remarks about how to follow these rules:<ul>
+<li>6.4.1 If there is an error in the map file and the backend does not want to fail on this in backend creation, the register must be hidden from the catalogue.</li>
+<li>6.4.2 isReadable(), isWriteable() and isReadOnly() might have to check for the existance of the register from a running backend (in case there is no map file). This implies that these calls may throw <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> and <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> exceptions.</li>
 </ul>
 </li>
 </ul>
@@ -406,13 +411,14 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>6.2.2 This also includes that the offset in a one dimensional case is so large that there are not enough elements left to provide the requested data.</li>
 <li>6.2.4 Some backends currenty throw a boost::numeric::bad_numeric_cast instead as described in 5.</li>
 <li>6.2.5.2 The generic tests if a backend is opened, or if an accessor readable or writeable are intentionally not implemented in TransferElement because they would invovle additional virtual function calls. To avoid these each implementation has to implement the checks in doPreXxx().</li>
+<li><a class="anchor" id="transferElement_comment_C_6_3_1"></a><a class="el" href="spec__transfer_element.html#transferElement_C_6_3_1">6.3.1</a> To recover from the <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a>, the application must call open(). At that point, the information is allowed to be changed. If the application fails to recheck the information, a retry of the failed operation will result in a <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a>. This behaviour follows the requirement to throw logic_errors only in doPreXxx(): if during a transfer the backend discovers that the operation is no longer allowed, a runtime_error must be thrown.</li>
 </ul>
 <h2>D. Requirements for full implementations (e.g. in backends)</h2>
 <ul>
 <li>1. If <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a> is specified:<ul>
-<li>1.1 The ChimeraTK::TransferElement::readQueue is a cppext::future_queue of type 'void' which exists in each transfer element. For transfer elements with AccessMode::wait_for_new_data it usually is the continuation queue of another future_queue which is transporting the data. The data type is implementation dependent. Common functionality like exception handling and waiting for new data is implemented on ChimeraTK::TransferElement::readQueue.</li>
-<li>1.2 ChimeraTK::TransferElement::readQueue is initialised in the constructor. [TBD: Allow setting the queue length through the public API?]</li>
-<li>1.3 ChimeraTK::TransferElement::readQueue is pushed whenever new data has arrived. If important for the implementation, the return value of cppext::future_queue::push_overwirte() will tell whether data has been discarded (*).</li>
+<li>1.1 The ChimeraTK::TransferElement::_readQueue is a cppext::future_queue of type 'void' which exists in each transfer element. For transfer elements with AccessMode::wait_for_new_data it usually is the continuation queue of another future_queue which is transporting the data. The data type is implementation dependent. Common functionality like exception handling and waiting for new data is implemented on ChimeraTK::TransferElement::_readQueue.</li>
+<li>1.2 ChimeraTK::TransferElement::_readQueue is initialised in the constructor. [TBD: Allow setting the queue length through the public API?]</li>
+<li>1.3 ChimeraTK::TransferElement::_readQueue is pushed whenever new data has arrived. If important for the implementation, the return value of cppext::future_queue::push_overwirte() will tell whether data has been discarded (*).</li>
 <li>1.4 In case an exception is detected during an asychronous transfer (for instance in a separate thread), the exception must be stored on the ChimeraTK::TransferElement::readQueue. The TransferFuture will then make sure that the exception is properly rethrown in postRead (just like for synchronous transfers).</li>
 </ul>
 </li>
@@ -459,7 +465,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat May 30 2020 03:53:08 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue Jun 2 2020 07:54:44 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
