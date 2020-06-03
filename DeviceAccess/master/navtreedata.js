@@ -79,8 +79,8 @@ var NAVTREE =
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", "globals_func" ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
@@ -93,15 +93,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"class_chimera_t_k_1_1_backend_factory.html#a7348fb0d34d8737df3fa4f396fc5163d",
-"class_chimera_t_k_1_1_dummy_backend.html#a8ff43143f271f34f948afa5861ddb06b",
-"class_chimera_t_k_1_1_logical_name_map_parser.html#a3accc305e418a90e5de5d19cf1df6f07",
-"class_chimera_t_k_1_1_read_any_group.html#a0616097393d6007d2b865c2fb3362bb6",
-"class_chimera_t_k_1_1_register_info_map_1_1iterator.html#afaafc170b4bc9e4a73fea76de19a3977",
-"class_chimera_t_k_1_1_transfer_future.html#ad0c38d0ce64a2153697d13dc0d07a468",
-"device__backends_2pcie_2include_2pciedev__io_8h.html#a07aad6c0ab1a1d0386c51904d1d4e481",
-"mtca4u__compatibility__headers_2_forward_declarations_8h.html",
-"struct_chimera_t_k_1_1_sdm.html#ad30ac0490fe8f446be6b7fd5f4f7db1a"
+"accessor2_d_8cpp.html",
+"class_chimera_t_k_1_1_device.html#aac982d8d84a51a436c4f64dc3d024f2f",
+"class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a7969fcf5c8f7bb62da4d3e3c990784a6",
+"class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html",
+"class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a92b9f9999f51e4d626af6f4bc12a5609",
+"class_chimera_t_k_1_1_subdevice_register_accessor.html#a94993237a2d547c579a83e4550896143",
+"class_d_map_files_parser_test.html#a9564492721c913828e3588e63434de6d",
+"classmy_register_info.html#a1f263033ecf55189f63ee99259dc307f",
+"exceptions.html",
+"mtca4u__compatibility__headers_2_scalar_register_accessor_8h.html",
+"struct_counting_decorator.html#a7b4b92ae74dc3f3466ad4cb54b254d16",
+"test_float_raw_data_8cpp.html#ad83a9ae92a2d96654569ffc0a941da0c",
+"test_utilities_8cpp.html#a8608bded46c11dafac9cc16cf962666b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

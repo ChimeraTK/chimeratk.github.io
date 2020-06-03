@@ -7,5 +7,6 @@ var files =
     [ "fileparsers", "dir_dea78313235eb47f342de8e8297f8ee6.html", "dir_dea78313235eb47f342de8e8297f8ee6" ],
     [ "mtca4u_compatibility_headers", "dir_5e7c60a04e98453414a9c829e48a7cd6.html", "dir_5e7c60a04e98453414a9c829e48a7cd6" ],
     [ "plugin_example", "dir_908ce70ef3d4f5552e3237726394cfcd.html", "dir_908ce70ef3d4f5552e3237726394cfcd" ],
+    [ "tests", "dir_59425e443f801f1f2fd8bbe4959a3ccf.html", "dir_59425e443f801f1f2fd8bbe4959a3ccf" ],
     [ "util", "dir_23ec12649285f9fabf3a6b7380226c28.html", "dir_23ec12649285f9fabf3a6b7380226c28" ]
 ];

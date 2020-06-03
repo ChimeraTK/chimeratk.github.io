@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_one_d_register_a
 </div><!--header-->
 <div class="contents">
 
-<p>Accessor class to read and write registers transparently by using the accessor object like a vector of the type UserType.  
+<p><a class="el" href="class_accessor.html">Accessor</a> class to read and write registers transparently by using the accessor object like a vector of the type UserType.  
  <a href="class_chimera_t_k_1_1_one_d_register_accessor.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html">OneDRegisterAccessor.h</a>&gt;</code></p>
@@ -305,7 +305,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename UserType&gt;<br />
 class ChimeraTK::OneDRegisterAccessor&lt; UserType &gt;</h3>
 
-<p>Accessor class to read and write registers transparently by using the accessor object like a vector of the type UserType. </p>
+<p><a class="el" href="class_accessor.html">Accessor</a> class to read and write registers transparently by using the accessor object like a vector of the type UserType. </p>
 <p>Conversion to and from the UserType will be handled by a data converter matching the register description in the map (if applicable). Obtain the accessor using the <a class="el" href="class_chimera_t_k_1_1_device.html#a551e87d9d9087d6af2ff5e65943a486f" title="DEPRECATED ">Device::getBufferingRegisterAccessor()</a> function.</p>
 <p>Note: Transfers between the device and the internal buffer need to be triggered using the <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a66980fe7b7c0dc937361e71b1750767f" title="Read the data from the device. ">read()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a281b905219e719a1a0cdbd9d8d42d1dd" title="Write the data to device. ">write()</a> functions before reading from resp. after writing to the buffer using the operators. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="accessor1_d_8cpp-example.html#_a4">accessor1D.cpp</a>.</dd>
@@ -479,6 +479,14 @@ template&lt;typename UserType&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html#l00062">62</a> of file <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html">OneDRegisterAccessor.h</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_one_d_register_accessor_a82d3a71fe01af7668ffcc08b67627f32_icgraph.svg" width="100%" height="378"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -656,6 +664,14 @@ template&lt;typename UserType&gt; </div>
 <dl class="section attention"><dt>Attention</dt><dd>Note that this pointer will be invalidated during <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a66980fe7b7c0dc937361e71b1750767f" title="Read the data from the device. ">read()</a>, <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a281b905219e719a1a0cdbd9d8d42d1dd" title="Write the data to device. ">write()</a> and <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html#ac6aaa6f5f6f680a4df224c5b24adb478">swap()</a>. If this accessor is part of a <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a>, any call to one of these functions on any element of the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> or the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> itself may invalidate the pointer! </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html#l00100">100</a> of file <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html">OneDRegisterAccessor.h</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_one_d_register_accessor_a1b00d744f58710d077ec0aecc9e76f6e_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -685,6 +701,14 @@ template&lt;typename UserType&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html#l00065">65</a> of file <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html">OneDRegisterAccessor.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_one_d_register_accessor_acf3ec055d6f333b530d9036048e0da8e_icgraph.svg" width="100%" height="378"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -780,12 +804,12 @@ template&lt;typename UserType&gt; </div>
 <p>Return number of elements/samples in the register. </p>
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html#l00055">55</a> of file <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html">OneDRegisterAccessor.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_one_d_register_accessor_aa1a214bbd3c6638a8b58146ff83cd88e_icgraph.svg" width="363" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_one_d_register_accessor_aa1a214bbd3c6638a8b58146ff83cd88e_icgraph.svg" width="100%" height="427"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -909,6 +933,14 @@ template&lt;typename UserType&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html#l00068">68</a> of file <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html">OneDRegisterAccessor.h</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_one_d_register_accessor_ae52c835a7d6e05a8a6d2a817ca5320d8_icgraph.svg" width="100%" height="378"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -967,6 +999,14 @@ template&lt;typename UserType&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html#l00071">71</a> of file <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html">OneDRegisterAccessor.h</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_one_d_register_accessor_ae092b64da4ea1ce92175ac51bdcd092a_icgraph.svg" width="100%" height="378"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -1071,6 +1111,14 @@ template&lt;typename UserType&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html#l00076">76</a> of file <a class="el" href="device_2include_2_one_d_register_accessor_8h_source.html">OneDRegisterAccessor.h</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_one_d_register_accessor_ac6aaa6f5f6f680a4df224c5b24adb478_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -1110,7 +1158,7 @@ template&lt;typename UserType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html">OneDRegisterAccessor</a></li>
-    <li class="footer">Generated on Wed Jun 3 2020 09:13:31 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Jun 3 2020 12:35:57 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

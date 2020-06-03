@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['transferelement',['TransferElement',['../class_chimera_t_k_1_1_transfer_element_i_d.html#ae547c940e25a03e8dd7cc9758b3e478d',1,'ChimeraTK::TransferElementID']]],
-  ['transferfuture',['TransferFuture',['../class_chimera_t_k_1_1_transfer_element.html#aba6cb788c9f76a35a66d7b6266e94c70',1,'ChimeraTK::TransferElement']]],
-  ['transfergroup',['TransferGroup',['../class_chimera_t_k_1_1_buffering_register_accessor.html#a5bdf5501b097a054a0be0bd5c8332ef3',1,'ChimeraTK::BufferingRegisterAccessor::TransferGroup()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#a5bdf5501b097a054a0be0bd5c8332ef3',1,'ChimeraTK::OneDRegisterAccessor::TransferGroup()'],['../class_chimera_t_k_1_1_scalar_register_accessor.html#a5bdf5501b097a054a0be0bd5c8332ef3',1,'ChimeraTK::ScalarRegisterAccessor::TransferGroup()'],['../class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html#a5bdf5501b097a054a0be0bd5c8332ef3',1,'ChimeraTK::ScalarRegisterAccessor&lt; std::string &gt;::TransferGroup()'],['../class_chimera_t_k_1_1_two_d_register_accessor.html#a5bdf5501b097a054a0be0bd5c8332ef3',1,'ChimeraTK::TwoDRegisterAccessor::TransferGroup()'],['../class_chimera_t_k_1_1_transfer_element.html#a5bdf5501b097a054a0be0bd5c8332ef3',1,'ChimeraTK::TransferElement::TransferGroup()']]]
+  ['hash_3c_20transferelementid_20_3e',['hash&lt; TransferElementID &gt;',['../class_chimera_t_k_1_1_transfer_element_i_d.html#a1786e4f964aeea0cdb1004ed61c3a8da',1,'ChimeraTK::TransferElementID']]],
+  ['less_3c_20transferelementid_20_3e',['less&lt; TransferElementID &gt;',['../class_chimera_t_k_1_1_transfer_element_i_d.html#a7d334f85bce936e449c91f06f0bc123a',1,'ChimeraTK::TransferElementID']]],
+  ['shareddummybackend',['SharedDummyBackend',['../class_chimera_t_k_1_1_dummy_backend.html#a3f1bcd0246e29a875b8da576814ca31e',1,'ChimeraTK::DummyBackend']]],
+  ['subdeviceregisteraccessor',['SubdeviceRegisterAccessor',['../class_chimera_t_k_1_1_subdevice_backend.html#aaf89942c9bca72aed0839f25f6117249',1,'ChimeraTK::SubdeviceBackend']]]
 ];
