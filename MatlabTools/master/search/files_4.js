@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setup_2em',['setup.m',['../setup_8m.html',1,'']]]
+  ['passcode_2em',['passcode.m',['../passcode_8m.html',1,'']]]
 ];
