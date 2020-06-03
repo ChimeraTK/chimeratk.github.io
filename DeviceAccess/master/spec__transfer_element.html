@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>void <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad55e5f5a37940479ae2b1ef423e80536" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">TransferElement::preWrite(TransferType type, VersionNumber versionNumber)</a></li>
 </ul>
 </li>
-<li>6.3 doPreXxx(), private virtual<ul>
+<li>6.3 doPreXxx(), protected virtual<ul>
 <li>void <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a60d3b43f03bed1cf27c57fd7e0c76127" title="Backend specific implementation of preRead(). ">TransferElement::doPreRead(TransferType type)</a></li>
 <li>void <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd" title="Backend specific implementation of preWrite(). ">TransferElement::doPreWrite(TransferType type, VersionNumber versionNumber)</a></li>
 </ul>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>bool <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a963e712e3e4189914d2f05e3c4fb2d42" title="Write the data to the device. ">TransferElement::writeTransferDestructively(VersionNumber versionNumber)</a></li>
 </ul>
 </li>
-<li>6.5 doXxxTransferYyy()<ul>
+<li>6.5 doXxxTransferYyy(), protected<ul>
 <li>void TransferElement::doReadTransferSynchonously(), pure virtual (*)</li>
 <li>bool <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer(). ">TransferElement::doWriteTransfer(VersionNumber versionNumber)</a>, pure virtual</li>
 <li>bool <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a98f467545b6682f18cec6b113c5898cc" title="Implementation version of writeTransferDestructively(). ">TransferElement::doWriteTransferDestructively(VersionNumber versionNumber)</a>, virtual</li>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>TransferElement::postWrite(TransferType type)</li>
 </ul>
 </li>
-<li>6.7 doPostXxx(), private virtual<ul>
+<li>6.7 doPostXxx(), protected virtual<ul>
 <li><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7" title="Backend specific implementation of postRead(). ">TransferElement::doPostRead(TransferType type, bool hasNewData)</a></li>
 <li>TransferElement::doPostWrite(TransferType type)</li>
 </ul>
@@ -496,7 +496,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jun 3 2020 12:35:56 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Jun 3 2020 15:48:33 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

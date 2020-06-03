@@ -100,12 +100,12 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a92b9f9999f51e4d626af6f4bc12a5609",
 "class_chimera_t_k_1_1_subdevice_register_accessor.html#a94993237a2d547c579a83e4550896143",
 "class_d_map_files_parser_test.html#a9564492721c913828e3588e63434de6d",
-"classmy_register_info.html#a1f263033ecf55189f63ee99259dc307f",
-"exceptions.html",
-"mtca4u__compatibility__headers_2_scalar_register_accessor_8h.html",
-"struct_counting_decorator.html#a7b4b92ae74dc3f3466ad4cb54b254d16",
-"test_float_raw_data_8cpp.html#ad83a9ae92a2d96654569ffc0a941da0c",
-"test_utilities_8cpp.html#a8608bded46c11dafac9cc16cf962666b"
+"classmy_register_info.html#a180ff4161e9a676db08a1e5310956ce3",
+"exception_2include_2_exception_8h.html",
+"mtca4u__compatibility__headers_2_register_path_8h.html",
+"struct_counting_decorator.html#a6b9e847b1caf3cad50aef5bef0aa15f5",
+"test_float_raw_data_8cpp.html#a7220c58e3084fe9f9452a0cb6a062db8",
+"test_utilities_8cpp.html#a6b2a3852db8bb19ab6909bac01859985"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"mtca4u__compatibility__headers_2_register_path_8h.html":[17,0,5,51],
+"mtca4u__compatibility__headers_2_register_path_8h_source.html":[17,0,5,51],
 "mtca4u__compatibility__headers_2_scalar_register_accessor_8h.html":[17,0,5,53],
 "mtca4u__compatibility__headers_2_scalar_register_accessor_8h_source.html":[17,0,5,53],
 "mtca4u__compatibility__headers_2_subdevice_backend_8h.html":[17,0,5,55],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "struct_counting_decorator.html#a2b36552e49b21ee4e583fffc9239140f":[16,0,10,19],
 "struct_counting_decorator.html#a53f76288b61e1f6b721e9019bcd00ffc":[16,0,10,10],
 "struct_counting_decorator.html#a5a2933829250c27cf1c595adfe223875":[16,0,10,14],
-"struct_counting_decorator.html#a5b06f194cb4fdaabf514bba23d5380e4":[16,0,10,7],
-"struct_counting_decorator.html#a6b9e847b1caf3cad50aef5bef0aa15f5":[16,0,10,8],
-"struct_counting_decorator.html#a6bce6fefb4061b6002f70e6fc0af09d6":[16,0,10,5]
+"struct_counting_decorator.html#a5b06f194cb4fdaabf514bba23d5380e4":[16,0,10,7]
 };

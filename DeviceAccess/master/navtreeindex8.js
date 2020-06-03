@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"classmy_register_info.html#a180ff4161e9a676db08a1e5310956ce3":[16,0,36,10],
+"classmy_register_info.html#a19975a112e6b0d3795fd423eee953ad5":[16,0,36,7],
 "classmy_register_info.html#a1f263033ecf55189f63ee99259dc307f":[16,0,36,13],
 "classmy_register_info.html#a5255a0d3f3507f7c23f5e618236526da":[16,0,36,12],
 "classmy_register_info.html#a77e60ff151bfaaa4ccd9c39f8b8a4d45":[16,0,36,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "dir_f7d8e8f898b7b1e9b0579569ae94cf59.html":[17,0,1,6],
 "dmap.html":[5],
 "dmap.html#The":[5,0],
-"examples.html":[18],
-"exception_2include_2_exception_8h.html":[17,0,3,0,0],
-"exception_2include_2_exception_8h_source.html":[17,0,3,0,0]
+"examples.html":[18]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"exception_2include_2_exception_8h.html":[17,0,3,0,0],
+"exception_2include_2_exception_8h_source.html":[17,0,3,0,0],
 "exceptions.html":[6],
 "exceptions.html#Exceptions":[6,0],
 "exceptions.html#auto_recover":[6,2,1],
@@ -83,8 +85,8 @@ var NAVTREEINDEX9 =
 "functions_type.html":[16,3,3],
 "functions_u.html":[16,3,0,19],
 "functions_v.html":[16,3,0,20],
-"functions_vars.html":[16,3,2,0],
 "functions_vars.html":[16,3,2],
+"functions_vars.html":[16,3,2,0],
 "functions_vars_a.html":[16,3,2,1],
 "functions_vars_b.html":[16,3,2,2],
 "functions_vars_c.html":[16,3,2,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "mtca4u__compatibility__headers_2_register_info_8h.html":[17,0,5,48],
 "mtca4u__compatibility__headers_2_register_info_8h_source.html":[17,0,5,48],
 "mtca4u__compatibility__headers_2_register_info_map_8h.html":[17,0,5,49],
-"mtca4u__compatibility__headers_2_register_info_map_8h_source.html":[17,0,5,49],
-"mtca4u__compatibility__headers_2_register_path_8h.html":[17,0,5,51],
-"mtca4u__compatibility__headers_2_register_path_8h_source.html":[17,0,5,51]
+"mtca4u__compatibility__headers_2_register_info_map_8h_source.html":[17,0,5,49]
 };
