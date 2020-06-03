@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hexdatatype',['HexDataType',['../_variant_user_types_8h.html#abfc6e5b4da32e2d4bc3e99ed6840306a',1,'VariantUserTypes.h']]]
+  ['genericregisterpropertieswidget',['genericRegisterPropertiesWidget',['../struct_device_element_q_tree_item__fixture_base.html#a3e854861931ca84de192bc0ffd703f5e',1,'DeviceElementQTreeItem_fixtureBase']]]
 ];
