@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['operator_28_29',['operator()',['../struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html#ae903a5258af0b9638fda06ecbd166188',1,'ChimeraTK::PersistentDataStorage::registerVariable_oldTypeRemover::operator()()'],['../class_chimera_t_k_1_1_decorator_factory.html#a21c0c0beab575442fcad5fce43d7a9bd',1,'ChimeraTK::DecoratorFactory::operator()()']]]
+  ['nearbyint',['nearbyint',['../struct_chimera_t_k_1_1csa__helpers_1_1_round.html#a2eb7768e02d05b0fb23844e830c974f8',1,'ChimeraTK::csa_helpers::Round']]],
+  ['nextcontrolsystemnotification',['nextControlSystemNotification',['../class_chimera_t_k_1_1_p_v_manager.html#a66b55ba76cb341c52ad4fc07e4a089e8',1,'ChimeraTK::PVManager']]],
+  ['nextdevicenotification',['nextDeviceNotification',['../class_chimera_t_k_1_1_p_v_manager.html#ada3b4788574245571d3ec84fb8b23372',1,'ChimeraTK::PVManager']]],
+  ['nextnotification',['nextNotification',['../class_chimera_t_k_1_1_control_system_p_v_manager.html#a25ef5922529a3387842f7d51f8e32c8f',1,'ChimeraTK::ControlSystemPVManager::nextNotification()'],['../class_chimera_t_k_1_1_device_p_v_manager.html#a052efde0018880c3b560c4ed36f44958',1,'ChimeraTK::DevicePVManager::nextNotification()']]],
+  ['notify',['notify',['../class_chimera_t_k_1_1_process_variable_listener.html#ae013b83811162bbac160b70f83aba3db',1,'ChimeraTK::ProcessVariableListener::notify()'],['../struct_chimera_t_k_1_1_counting_process_variable_listener.html#a9fa41f8be8e76fcfdcac3b1140b4e605',1,'ChimeraTK::CountingProcessVariableListener::notify()']]]
 ];

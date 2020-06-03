@@ -5,6 +5,7 @@ var namespace_chimera_t_k =
     [ "BidirectionalProcessArray", "class_chimera_t_k_1_1_bidirectional_process_array.html", "class_chimera_t_k_1_1_bidirectional_process_array" ],
     [ "ControlSystemPVManager", "class_chimera_t_k_1_1_control_system_p_v_manager.html", "class_chimera_t_k_1_1_control_system_p_v_manager" ],
     [ "ControlSystemSynchronizationUtility", "class_chimera_t_k_1_1_control_system_synchronization_utility.html", "class_chimera_t_k_1_1_control_system_synchronization_utility" ],
+    [ "CountingProcessVariableListener", "struct_chimera_t_k_1_1_counting_process_variable_listener.html", "struct_chimera_t_k_1_1_counting_process_variable_listener" ],
     [ "DecoratorFactory", "class_chimera_t_k_1_1_decorator_factory.html", "class_chimera_t_k_1_1_decorator_factory" ],
     [ "DecoratorTypeHolder", "class_chimera_t_k_1_1_decorator_type_holder.html", "class_chimera_t_k_1_1_decorator_type_holder" ],
     [ "DevicePVManager", "class_chimera_t_k_1_1_device_p_v_manager.html", "class_chimera_t_k_1_1_device_p_v_manager" ],

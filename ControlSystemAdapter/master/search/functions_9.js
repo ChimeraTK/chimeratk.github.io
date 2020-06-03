@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['nearbyint',['nearbyint',['../struct_chimera_t_k_1_1csa__helpers_1_1_round.html#a2eb7768e02d05b0fb23844e830c974f8',1,'ChimeraTK::csa_helpers::Round']]],
-  ['nextcontrolsystemnotification',['nextControlSystemNotification',['../class_chimera_t_k_1_1_p_v_manager.html#a66b55ba76cb341c52ad4fc07e4a089e8',1,'ChimeraTK::PVManager']]],
-  ['nextdevicenotification',['nextDeviceNotification',['../class_chimera_t_k_1_1_p_v_manager.html#ada3b4788574245571d3ec84fb8b23372',1,'ChimeraTK::PVManager']]],
-  ['nextnotification',['nextNotification',['../class_chimera_t_k_1_1_control_system_p_v_manager.html#a25ef5922529a3387842f7d51f8e32c8f',1,'ChimeraTK::ControlSystemPVManager::nextNotification()'],['../class_chimera_t_k_1_1_device_p_v_manager.html#a052efde0018880c3b560c4ed36f44958',1,'ChimeraTK::DevicePVManager::nextNotification()']]],
-  ['notify',['notify',['../class_chimera_t_k_1_1_process_variable_listener.html#ae013b83811162bbac160b70f83aba3db',1,'ChimeraTK::ProcessVariableListener']]]
+  ['main',['main',['../stresstest_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;stresstest.cpp'],['../test_performance_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;testPerformance.cpp']]],
+  ['mainbody',['mainBody',['../class_reference_test_application.html#a45263737c0dea86b5badf4680c200dc5',1,'ReferenceTestApplication']]],
+  ['mainloop',['mainLoop',['../class_reference_test_application.html#ac6d13819622e891d130741e72e1b3375',1,'ReferenceTestApplication']]],
+  ['mainloopexecutionrequested',['mainLoopExecutionRequested',['../class_reference_test_application.html#a7bf87480b4429896f415ac5f6c0b6ac0',1,'ReferenceTestApplication']]],
+  ['mainloopmutex',['mainLoopMutex',['../class_reference_test_application.html#a73ee382bad2cfc47fac04d10a1562fbb',1,'ReferenceTestApplication']]],
+  ['manuallycontrolmainloop',['manuallyControlMainLoop',['../class_reference_test_application.html#ae2da0ae8f0a262246caea0a8bd8bc805',1,'ReferenceTestApplication']]],
+  ['mayreplaceother',['mayReplaceOther',['../class_chimera_t_k_1_1_process_array.html#aebb45abf9ccc76d79097bcce60ed6deb',1,'ChimeraTK::ProcessArray::mayReplaceOther()'],['../class_chimera_t_k_1_1_type_changing_decorator.html#a7f1776390cf8f0023dc0a7205c19d573',1,'ChimeraTK::TypeChangingDecorator::mayReplaceOther()']]]
 ];

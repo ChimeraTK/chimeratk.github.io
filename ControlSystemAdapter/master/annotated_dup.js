@@ -1,6 +1,22 @@
 var annotated_dup =
 [
     [ "ChimeraTK", "namespace_chimera_t_k.html", "namespace_chimera_t_k" ],
+    [ "Adder", "struct_adder.html", null ],
+    [ "Adder< std::string, IMPL_T >", "struct_adder_3_01std_1_1string_00_01_i_m_p_l___t_01_4.html", null ],
+    [ "Adder< std::string, int8_t >", "struct_adder_3_01std_1_1string_00_01int8__t_01_4.html", null ],
+    [ "Adder< std::string, uint8_t >", "struct_adder_3_01std_1_1string_00_01uint8__t_01_4.html", null ],
+    [ "AsyncReadTest", "class_async_read_test.html", "class_async_read_test" ],
+    [ "AsyncReadTestSuite", "class_async_read_test_suite.html", "class_async_read_test_suite" ],
     [ "Hardware", "class_hardware.html", "class_hardware" ],
-    [ "IndependentControlCore", "class_independent_control_core.html", "class_independent_control_core" ]
+    [ "IndependentControlCore", "class_independent_control_core.html", "class_independent_control_core" ],
+    [ "MyTestApplication", "class_my_test_application.html", "class_my_test_application" ],
+    [ "PerformInputToOutput", "struct_perform_input_to_output.html", "struct_perform_input_to_output" ],
+    [ "ReferenceTestApplication", "class_reference_test_application.html", "class_reference_test_application" ],
+    [ "TestApplicationFixture", "struct_test_application_fixture.html", "struct_test_application_fixture" ],
+    [ "TestDeviceCallable", "struct_test_device_callable.html", "struct_test_device_callable" ],
+    [ "TestDeviceCallable2", "struct_test_device_callable2.html", "struct_test_device_callable2" ],
+    [ "TestDeviceCallable3", "struct_test_device_callable3.html", "struct_test_device_callable3" ],
+    [ "TestDeviceCallable4", "struct_test_device_callable4.html", "struct_test_device_callable4" ],
+    [ "TestDeviceCallable5", "struct_test_device_callable5.html", "struct_test_device_callable5" ],
+    [ "TypedPVHolder", "struct_typed_p_v_holder.html", "struct_typed_p_v_holder" ]
 ];
