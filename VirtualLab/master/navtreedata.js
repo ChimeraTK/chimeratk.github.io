@@ -34,7 +34,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_signal_sink_8cpp.html"
+"_signal_sink_8cpp.html",
+"class_virtual_test_device.html#ac4970222a27dfac3d1d27be232f8c5dc"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

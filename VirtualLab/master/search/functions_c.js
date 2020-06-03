@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['_7etimergroup',['~TimerGroup',['../class_chimera_t_k_1_1_virtual_lab_1_1_timer_group.html#a37bb1f16e9a2f873b89b65bd0b129429',1,'ChimeraTK::VirtualLab::TimerGroup']]],
-  ['_7evirtuallabbackend',['~VirtualLabBackend',['../class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#a3767bd1a673cb25fdf8dad001a8c7195',1,'ChimeraTK::VirtualLab::VirtualLabBackend']]]
+  ['virtuallabbackend',['VirtualLabBackend',['../class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#af02656245e58400373f030ff52acdd5e',1,'ChimeraTK::VirtualLab::VirtualLabBackend']]],
+  ['virtuallabtest',['VirtualLabTest',['../class_virtual_lab_test.html#a6b4360cd4e1edfad4e235a5adfd3db69',1,'VirtualLabTest']]],
+  ['virtuallabtestsuite',['VirtualLabTestSuite',['../class_virtual_lab_test_suite.html#a3af7993053d2089d4d86b547aed4c920',1,'VirtualLabTestSuite']]]
 ];

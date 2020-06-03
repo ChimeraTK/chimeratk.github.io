@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['declare_5fevent',['DECLARE_EVENT',['../class_virtual_test_device.html#a4df2c07d03a8e53dc64efa3442bfeece',1,'VirtualTestDevice']]],
-  ['declare_5fmain_5fstate_5fmachine',['DECLARE_MAIN_STATE_MACHINE',['../class_virtual_test_device.html#aa9a4702ee976c474146fd5de4d6439e7',1,'VirtualTestDevice']]],
-  ['declare_5fmuxed_5fregister',['DECLARE_MUXED_REGISTER',['../class_virtual_test_device.html#ace73fc5edbe8627c05d8a57eb0d5408d',1,'VirtualTestDevice']]],
-  ['declare_5fregister',['DECLARE_REGISTER',['../class_virtual_test_device.html#a88d791f31f66b51d3fa1b1213669e0a7',1,'VirtualTestDevice']]],
-  ['declare_5fstate',['DECLARE_STATE',['../class_virtual_test_device.html#af9e9e10ebaa39d32672c7a027b51d8c6',1,'VirtualTestDevice']]],
-  ['declare_5ftimer',['DECLARE_TIMER',['../class_virtual_test_device.html#a85704c8e4fb372530d369b008f1d0082',1,'VirtualTestDevice']]],
-  ['declare_5ftimer_5fgroup',['DECLARE_TIMER_GROUP',['../class_virtual_test_device.html#a4a2f27a8bf0469dca908a3ac4f0e5052',1,'VirtualTestDevice']]],
-  ['defaultinterpolate',['defaultInterpolate',['../class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html#a397167e55bd8aad36a31ee350e69dabf',1,'ChimeraTK::VirtualLab::StateVariableSet']]]
+  ['clear',['clear',['../class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a2dbb540b2490ce2fb140cc9a9d135431',1,'ChimeraTK::VirtualLab::VirtualLabBackend::Timer']]],
+  ['close',['close',['../class_virtual_test_device.html#a4d4fe7e9b40b4406bb21753d232cff67',1,'VirtualTestDevice']]],
+  ['connect',['connect',['../class_chimera_t_k_1_1_virtual_lab_1_1_signal_sink.html#a66f419f2bc6133456644a3fb14553de6',1,'ChimeraTK::VirtualLab::SignalSink']]],
+  ['connect_5fregister_5fevent',['CONNECT_REGISTER_EVENT',['../class_virtual_test_device.html#a1ecd77216dd123e0bc4de07ad0289f42',1,'VirtualTestDevice::CONNECT_REGISTER_EVENT(onRead, someRegister)'],['../class_virtual_test_device.html#a73ba338c0bc81cee8103baaf2021ddf1',1,'VirtualTestDevice::CONNECT_REGISTER_EVENT(onWrite, someRegister)'],['../class_virtual_test_device.html#ad7f59ec602b03868656ed6b6d2a6f437',1,'VirtualTestDevice::CONNECT_REGISTER_EVENT(onWriteMuxed, someMuxedRegister)']]],
+  ['constantcallback',['constantCallback',['../class_chimera_t_k_1_1_virtual_lab_1_1_constant_signal_source.html#aa86f7b13762483d1335768a5e180fb95',1,'ChimeraTK::VirtualLab::ConstantSignalSource']]],
+  ['constantsignalsource',['ConstantSignalSource',['../class_chimera_t_k_1_1_virtual_lab_1_1_constant_signal_source.html#a013efe1a09b5956997505b8b56b32695',1,'ChimeraTK::VirtualLab::ConstantSignalSource']]],
+  ['constructor',['CONSTRUCTOR',['../class_virtual_test_device.html#a72ffe60363f3db47bca8e0fe730129ee',1,'VirtualTestDevice::CONSTRUCTOR(VirtualTestDevice, bigPlain(this, &quot;PERFTEST&quot;, &quot;BIGPLAIN&quot;), someMuxedRegister(this, &quot;APP0&quot;, &quot;DAQ0_ADCA&quot;), myTimer(this), timers(this), currentOffset(0), readNext(0)) END_CONSTRUCTOR virtual ~VirtualTestDevice()'],['../class_virtual_test_device.html#af9a80e79d407a837452bfe2d4958b2a0',1,'VirtualTestDevice::CONSTRUCTOR(VirtualTestDevice, someCounter(0), readCount(0), writeCount(0), writeMuxedCount(0), write42Count(0), readWithFlagCount(0), someRegister(this, &quot;APP0&quot;, &quot;SOME_REGISTER&quot;), someMuxedRegister(this, &quot;APP0&quot;, &quot;DAQ0_ADCA&quot;), myTimer(this), mySecondTimer(this), timers__(this), timers(this), someFlag(false), subCounter(0)) INIT_SUB_STATE_MACHINE(subMachine)']]],
+  ['convertpathrelativetodmaptoabs',['convertPathRelativeToDmapToAbs',['../test_virtual_lab_8cpp.html#ae6e687588f105b8c77b93929e5f18d31',1,'testVirtualLab.cpp']]]
 ];
