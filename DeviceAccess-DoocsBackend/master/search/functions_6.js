@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['generatecachefile',['generateCacheFile',['../test_caching_8cpp.html#a65ea264a0eb080858b1511a1f457387c',1,'testCaching.cpp']]],
   ['getaccessmodeflags',['getAccessModeFlags',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a5d83c027dd028c783f3ce008a759f08e',1,'ChimeraTK::DoocsBackendRegisterAccessor']]],
   ['getdatadescriptor',['getDataDescriptor',['../class_doocs_backend_register_info.html#a8a1c08683741ee10610f61fdd21637ee',1,'DoocsBackendRegisterInfo']]],
   ['gethardwareaccessingelements',['getHardwareAccessingElements',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#afaa016b39be620cbef56b5f350a91ac3',1,'ChimeraTK::DoocsBackendRegisterAccessor']]],

@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['savecatalogue',['saveCatalogue',['../namespace_cache.html#a9bcd131aceee0b32a5b5d0d10de93dac',1,'Cache']]],
-  ['shutdown',['shutdown',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a14e6481ebb423ffab7c49078e87fe6cf',1,'ChimeraTK::DoocsBackendRegisterAccessor']]],
-  ['slashes',['slashes',['../namespacedetail.html#adab1d68bf0f127a195efab7d3a74cb62',1,'detail']]],
-  ['subscribe',['subscribe',['../class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#afccea9af8b0253c7b05590bee7157828',1,'ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager']]]
+  ['readcatalogue',['readCatalogue',['../namespace_cache.html#aa85c43f09c98932d7bbdff1612a4c875',1,'Cache']]],
+  ['readdeviceinfo',['readDeviceInfo',['../class_chimera_t_k_1_1_doocs_backend.html#a64beee5b734545cd830b337f1891fb3d',1,'ChimeraTK::DoocsBackend']]],
+  ['refresh_5fepilog',['refresh_epilog',['../doocs_dummy__rpc__server_8cc.html#abad3095cb4eb0f7b41ad51882965e40a',1,'doocsDummy_rpc_server.cc']]],
+  ['refresh_5fprolog',['refresh_prolog',['../doocs_dummy__rpc__server_8cc.html#a8b5b57acbc923f1e052c514858e87797',1,'doocsDummy_rpc_server.cc']]],
+  ['replacetransferelement',['replaceTransferElement',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a21af88c286d123e95742b2f87e85aac9',1,'ChimeraTK::DoocsBackendRegisterAccessor']]]
 ];

@@ -18,12 +18,19 @@ var hierarchy =
         [ "ChimeraTK::DoocsBackendTimeStampRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_time_stamp_register_accessor.html", null ]
       ] ]
     ] ],
+    [ "EqFct", null, [
+      [ "eq_dummy", "classeq__dummy.html", null ]
+    ] ],
     [ "EventIdMapper", "class_event_id_mapper.html", null ],
     [ "NDRegisterAccessor", null, [
       [ "ChimeraTK::DoocsBackendRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html", null ]
     ] ],
     [ "RegisterInfo", null, [
       [ "DoocsBackendRegisterInfo", "class_doocs_backend_register_info.html", null ]
+    ] ],
+    [ "ThreadedDoocsServer", null, [
+      [ "DoocsLauncher", "class_doocs_launcher.html", null ],
+      [ "DoocsLauncher", "class_doocs_launcher.html", null ]
     ] ],
     [ "ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager", "class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html", null ]
 ];
