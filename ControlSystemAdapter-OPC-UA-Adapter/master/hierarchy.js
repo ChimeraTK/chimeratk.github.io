@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "AdditionalVariableTest", "class_additional_variable_test.html", null ],
     [ "ApplicationBase", null, [
       [ "MyApp", "struct_my_app.html", null ]
     ] ],
@@ -8,6 +9,7 @@ var hierarchy =
     [ "ServerNetworkLayerTCP::ConnectionMapping", "struct_server_network_layer_t_c_p_1_1_connection_mapping.html", null ],
     [ "ContinuationPointEntry", "struct_continuation_point_entry.html", null ],
     [ "csa_opcua_adapter", "classcsa__opcua__adapter.html", null ],
+    [ "CSAOPCUATest", "class_c_s_a_o_p_c_u_a_test.html", null ],
     [ "FolderInfo", "struct_folder_info.html", null ],
     [ "MonitoredItem_queuedValue", "struct_monitored_item__queued_value.html", null ],
     [ "ua_namespace.opcua_namespace", "classua__namespace_1_1opcua__namespace.html", null ],
@@ -53,6 +55,7 @@ var hierarchy =
     [ "open62541_XMLPreprocessor.open62541_XMLPreprocessor", "classopen62541___x_m_l_preprocessor_1_1open62541___x_m_l_preprocessor.html", null ],
     [ "pcg_state_setseq_64", "structpcg__state__setseq__64.html", null ],
     [ "open62541_XMLPreprocessor.preProcessDocument", "classopen62541___x_m_l_preprocessor_1_1pre_process_document.html", null ],
+    [ "ProcessVariableTest", "class_process_variable_test.html", null ],
     [ "RepeatedJob", "struct_repeated_job.html", null ],
     [ "ResponseDescription", "struct_response_description.html", null ],
     [ "runtime_value_generator", "classruntime__value__generator.html", null ],
@@ -60,6 +63,17 @@ var hierarchy =
     [ "ServerNetworkLayerTCP", "struct_server_network_layer_t_c_p.html", null ],
     [ "session_list_entry", "structsession__list__entry.html", null ],
     [ "SessionEntry", "struct_session_entry.html", null ],
+    [ "test_suite", null, [
+      [ "AdditionalVariableTestSuite", "class_additional_variable_test_suite.html", null ],
+      [ "CSAOPCUATestSuite", "class_c_s_a_o_p_c_u_a_test_suite.html", null ],
+      [ "ProcessVariableTestSuite", "class_process_variable_test_suite.html", null ],
+      [ "UAAdapterTestSuite", "class_u_a_adapter_test_suite.html", null ],
+      [ "UAMappingTestSuite", "class_u_a_mapping_test_suite.html", null ],
+      [ "XMLFileHandlerTestSuite", "class_x_m_l_file_handler_test_suite.html", null ]
+    ] ],
+    [ "TestFixtureEmptySet", "struct_test_fixture_empty_set.html", null ],
+    [ "TestFixturePVSet", "struct_test_fixture_p_v_set.html", null ],
+    [ "TestFixtureServerSet", "struct_test_fixture_server_set.html", null ],
     [ "ua_namespace.testing", "classua__namespace_1_1testing.html", null ],
     [ "ua_namespace.testing_open62541_header", "classua__namespace_1_1testing__open62541__header.html", null ],
     [ "UA_ActivateSessionRequest", "struct_u_a___activate_session_request.html", null ],
@@ -249,5 +263,8 @@ var hierarchy =
     [ "UA_WriteRequest", "struct_u_a___write_request.html", null ],
     [ "UA_WriteResponse", "struct_u_a___write_response.html", null ],
     [ "UA_WriteValue", "struct_u_a___write_value.html", null ],
-    [ "xml_file_handler", "classxml__file__handler.html", null ]
+    [ "UAAdapterTest", "class_u_a_adapter_test.html", null ],
+    [ "UAMappingTest", "class_u_a_mapping_test.html", null ],
+    [ "xml_file_handler", "classxml__file__handler.html", null ],
+    [ "XMLFileHandlerTest", "class_x_m_l_file_handler_test.html", null ]
 ];

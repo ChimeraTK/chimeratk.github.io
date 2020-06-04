@@ -3,6 +3,8 @@ var searchData=
   ['xml_5ffile_5fhandler',['xml_file_handler',['../classxml__file__handler.html',1,'xml_file_handler'],['../classxml__file__handler.html#ade1ccaaad4a60148a3a0f3d6392ba9e7',1,'xml_file_handler::xml_file_handler()']]],
   ['xml_5ffile_5fhandler_2ecpp',['xml_file_handler.cpp',['../xml__file__handler_8cpp.html',1,'']]],
   ['xml_5ffile_5fhandler_2eh',['xml_file_handler.h',['../xml__file__handler_8h.html',1,'']]],
+  ['xmlfilehandlertest',['XMLFileHandlerTest',['../class_x_m_l_file_handler_test.html',1,'']]],
+  ['xmlfilehandlertestsuite',['XMLFileHandlerTestSuite',['../class_x_m_l_file_handler_test_suite.html',1,'XMLFileHandlerTestSuite'],['../class_x_m_l_file_handler_test_suite.html#a7c4af12917c2829f72823d631acb1e95',1,'XMLFileHandlerTestSuite::XMLFileHandlerTestSuite()']]],
   ['xsimpleq_5fempty',['XSIMPLEQ_EMPTY',['../open62541_8c.html#af4a2b77d3bb93db78e88a293fb9d2414',1,'open62541.c']]],
   ['xsimpleq_5fend',['XSIMPLEQ_END',['../open62541_8c.html#a02e78a5fbe937fbd45f7d2806c4ede1c',1,'open62541.c']]],
   ['xsimpleq_5fentry',['XSIMPLEQ_ENTRY',['../open62541_8c.html#a0bb53980c488001e0f1169efbc76f266',1,'open62541.c']]],

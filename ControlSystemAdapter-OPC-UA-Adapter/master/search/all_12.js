@@ -3,6 +3,7 @@ var searchData=
   ['read',['read',['../struct_u_a___data_source___map___element__t.html#aaefd2a019058edb5bc1d98fec8c05161',1,'UA_DataSource_Map_Element_t']]],
   ['readadditionalnodes',['readAdditionalNodes',['../classua__uaadapter.html#a69c513fe9fcae8c7327e7ad3a1256150',1,'ua_uaadapter']]],
   ['readconfig',['readConfig',['../classua__uaadapter.html#a12912b44b243616817f23748788514eb',1,'ua_uaadapter']]],
+  ['readdocfile',['readDocFile',['../class_x_m_l_file_handler_test.html#a8e7454fdc4cb8a90c4938e311fcb7a62',1,'XMLFileHandlerTest']]],
   ['readvalueattribute',['readValueAttribute',['../open62541_8c.html#ae0cd8f1d934fa712cd48bdf4a88e440c',1,'open62541.c']]],
   ['reason',['reason',['../struct_u_a___secure_conversation_message_abort_body.html#a7aa34d2fa77b1f82e7737081516e15dc',1,'UA_SecureConversationMessageAbortBody::reason()'],['../struct_u_a___tcp_error_message.html#abbc7bbc3b709e5e407cac35e90b970db',1,'UA_TcpErrorMessage::reason()']]],
   ['reassignnamespaceid',['reassignNamespaceId',['../classopen62541___x_m_l_preprocessor_1_1pre_process_document.html#a08d09be8a55dc85155cf449f7b6c53dd',1,'open62541_XMLPreprocessor::preProcessDocument']]],
@@ -72,5 +73,6 @@ var searchData=
   ['running',['running',['../classua__uaadapter.html#ad9e41e2c6176bf24563bb1fa88c29393',1,'ua_uaadapter']]],
   ['runtime_5fvalue_5fgenerator',['runtime_value_generator',['../classruntime__value__generator.html',1,'runtime_value_generator'],['../classruntime__value__generator.html#acf314791bff536d40b39a1f4d3364d21',1,'runtime_value_generator::runtime_value_generator()']]],
   ['runtime_5fvalue_5fgenerator_2ecpp',['runtime_value_generator.cpp',['../runtime__value__generator_8cpp.html',1,'']]],
-  ['runtime_5fvalue_5fgenerator_2eh',['runtime_value_generator.h',['../runtime__value__generator_8h.html',1,'']]]
+  ['runtime_5fvalue_5fgenerator_2eh',['runtime_value_generator.h',['../runtime__value__generator_8h.html',1,'']]],
+  ['runuaserver',['runUAServer',['../struct_test_fixture_server_set.html#aef3438720d102c06abadb2bcde8b3e76',1,'TestFixtureServerSet']]]
 ];

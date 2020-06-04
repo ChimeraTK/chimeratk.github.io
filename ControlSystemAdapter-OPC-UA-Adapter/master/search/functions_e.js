@@ -2,6 +2,7 @@ var searchData=
 [
   ['readadditionalnodes',['readAdditionalNodes',['../classua__uaadapter.html#a69c513fe9fcae8c7327e7ad3a1256150',1,'ua_uaadapter']]],
   ['readconfig',['readConfig',['../classua__uaadapter.html#a12912b44b243616817f23748788514eb',1,'ua_uaadapter']]],
+  ['readdocfile',['readDocFile',['../class_x_m_l_file_handler_test.html#a8e7454fdc4cb8a90c4938e311fcb7a62',1,'XMLFileHandlerTest']]],
   ['readvalueattribute',['readValueAttribute',['../open62541_8c.html#ae0cd8f1d934fa712cd48bdf4a88e440c',1,'open62541.c']]],
   ['reassignnamespaceid',['reassignNamespaceId',['../classopen62541___x_m_l_preprocessor_1_1pre_process_document.html#a08d09be8a55dc85155cf449f7b6c53dd',1,'open62541_XMLPreprocessor::preProcessDocument']]],
   ['reassignreferencednamespaceid',['reassignReferencedNamespaceId',['../classopen62541___x_m_l_preprocessor_1_1pre_process_document.html#aa5ce0cb4959cbfdf2b294ee589c9a6ad',1,'open62541_XMLPreprocessor::preProcessDocument']]],
