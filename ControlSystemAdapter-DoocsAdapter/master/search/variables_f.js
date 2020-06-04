@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xsource',['xSource',['../struct_chimera_t_k_1_1_xy_description.html#a37757553ec1ab2faa41e443b562776ca',1,'ChimeraTK::XyDescription']]]
+  ['todeviceint',['toDeviceInt',['../struct_business_logic.html#a45589a91f5263453cf0dc44fdaa09c2f',1,'BusinessLogic']]]
 ];

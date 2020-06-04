@@ -1,12 +1,14 @@
 var searchData=
 [
-  ['sendtoapplication',['sendToApplication',['../class_chimera_t_k_1_1_doocs_ifff.html#aaaa0cac1df491d46902f3038fb6efcbd',1,'ChimeraTK::DoocsIfff']]],
-  ['sendtodevice',['sendToDevice',['../class_chimera_t_k_1_1_doocs_process_array.html#abae2235e5e58a63afb9049b56e79bea9',1,'ChimeraTK::DoocsProcessArray::sendToDevice()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a82a1c3ef4e19443909353485811dff6a',1,'ChimeraTK::DoocsSpectrum::sendToDevice()']]],
-  ['set',['set',['../class_chimera_t_k_1_1_doocs_ifff.html#a856371572bcbb46ec010641f75a4ea58',1,'ChimeraTK::DoocsIfff::set()'],['../class_chimera_t_k_1_1_doocs_process_array.html#a14b984d84addffe256f4bf4cfa29f8a0',1,'ChimeraTK::DoocsProcessArray::set()'],['../class_chimera_t_k_1_1_doocs_process_scalar.html#ac9f48a3ee466e86095d17f3ff268d08f',1,'ChimeraTK::DoocsProcessScalar::set()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a06ed6051d5722b690e217d39073ae24f',1,'ChimeraTK::DoocsSpectrum::set()']]],
-  ['set_5fand_5farchive',['set_and_archive',['../struct_d__text_unifier.html#acc4bbc994bdedcd86a92a27e856d2a39',1,'D_textUnifier']]],
-  ['setdatavalidity',['setDataValidity',['../class_chimera_t_k_1_1_doocs_transfer_element.html#a13f4876119afe59271e998ac326edaae',1,'ChimeraTK::DoocsTransferElement']]],
-  ['setmacropulsenumbersource',['setMacroPulseNumberSource',['../class_chimera_t_k_1_1_doocs_ifff.html#acc3d25b87a5fb3e1f04b151ba80d09e0',1,'ChimeraTK::DoocsIfff::setMacroPulseNumberSource()'],['../class_chimera_t_k_1_1_doocs_process_array.html#a10c4c6f5b23e711ad8064f251fb38d11',1,'ChimeraTK::DoocsProcessArray::setMacroPulseNumberSource()'],['../class_chimera_t_k_1_1_doocs_process_scalar.html#ad13b40f2d12f57129e0427307573b96b',1,'ChimeraTK::DoocsProcessScalar::setMacroPulseNumberSource()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a142e85183fcdca035369a1cb1a91e364',1,'ChimeraTK::DoocsSpectrum::setMacroPulseNumberSource()']]],
-  ['spectrumdescription',['SpectrumDescription',['../struct_chimera_t_k_1_1_spectrum_description.html#a41af855afa3487885c9f1e51d4d0af98',1,'ChimeraTK::SpectrumDescription']]],
-  ['splitstringatfirstslash',['splitStringAtFirstSlash',['../namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98',1,'ChimeraTK']]],
-  ['stop',['stop',['../class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286',1,'ChimeraTK::DoocsUpdater']]]
+  ['readasync',['readAsync',['../class_chimera_t_k_1_1_doocs_transfer_element.html#ab3fe7c92380232d40eae4ff891f1dc6e',1,'ChimeraTK::DoocsTransferElement']]],
+  ['readspectrumincrement',['readSpectrumIncrement',['../server_based_test_tools_8h.html#a11857b9d32bb4efef6c5f53352bf8de0',1,'serverBasedTestTools.h']]],
+  ['readspectrumstart',['readSpectrumStart',['../server_based_test_tools_8h.html#ab8c1b6f5a145e2d6a9b9ee1f444b2c6f',1,'serverBasedTestTools.h']]],
+  ['referencetestapplication',['referenceTestApplication',['../server_test_variable_mapper_with_location_and_code_8cpp.html#a6b3c47c8a23f294c3cc50a00dad91db1',1,'serverTestVariableMapperWithLocationAndCode.cpp']]],
+  ['refresh_5fepilog',['refresh_epilog',['../empty__doocs__functions_8cc.html#abad3095cb4eb0f7b41ad51882965e40a',1,'refresh_epilog():&#160;empty_doocs_functions.cc'],['../empty_server_functions_8h.html#abad3095cb4eb0f7b41ad51882965e40a',1,'refresh_epilog():&#160;emptyServerFunctions.h']]],
+  ['refresh_5fprolog',['refresh_prolog',['../empty__doocs__functions_8cc.html#a8b5b57acbc923f1e052c514858e87797',1,'refresh_prolog():&#160;empty_doocs_functions.cc'],['../empty_server_functions_8h.html#a8b5b57acbc923f1e052c514858e87797',1,'refresh_prolog():&#160;emptyServerFunctions.h']]],
+  ['registerifffsources',['registerIfffSources',['../class_chimera_t_k_1_1_doocs_ifff.html#aa4e6c45750b5590481f7674664babeb2',1,'ChimeraTK::DoocsIfff']]],
+  ['registerprocessvariablesindoocs',['registerProcessVariablesInDoocs',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#ae6ea446f82465cd12cce0232017f9f7c',1,'ChimeraTK::CSAdapterEqFct']]],
+  ['registervariable',['registerVariable',['../class_chimera_t_k_1_1_doocs_ifff.html#a8b9e59a5809aa21eb21d4d9a304899ba',1,'ChimeraTK::DoocsIfff']]],
+  ['replacetransferelement',['replaceTransferElement',['../class_chimera_t_k_1_1_doocs_transfer_element.html#ac51735a2dbc909ef1d21b9fc23e1ad41',1,'ChimeraTK::DoocsTransferElement']]],
+  ['run',['run',['../class_chimera_t_k_1_1_doocs_updater.html#aafe7082f09c25245074fed216d78c528',1,'ChimeraTK::DoocsUpdater']]]
 ];

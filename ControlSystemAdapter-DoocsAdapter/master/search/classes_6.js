@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['spectrumdescription',['SpectrumDescription',['../struct_chimera_t_k_1_1_spectrum_description.html',1,'ChimeraTK']]]
+  ['locationinfo',['LocationInfo',['../struct_chimera_t_k_1_1_location_info.html',1,'ChimeraTK']]]
 ];
