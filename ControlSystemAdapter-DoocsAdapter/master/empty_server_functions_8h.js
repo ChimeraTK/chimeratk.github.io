@@ -11,6 +11,5 @@ var empty_server_functions_8h =
     [ "post_init_epilog", "empty_server_functions_8h.html#a38623e21fbb34913ef41a02871cf1ce5", null ],
     [ "post_init_prolog", "empty_server_functions_8h.html#ae60e62832bff3e8fd4688f871bd66ec7", null ],
     [ "refresh_epilog", "empty_server_functions_8h.html#abad3095cb4eb0f7b41ad51882965e40a", null ],
-    [ "refresh_prolog", "empty_server_functions_8h.html#a8b5b57acbc923f1e052c514858e87797", null ],
-    [ "object_name", "empty_server_functions_8h.html#a06c138c2b0b13b0e11be4e16bf242cb8", null ]
+    [ "refresh_prolog", "empty_server_functions_8h.html#a8b5b57acbc923f1e052c514858e87797", null ]
 ];
