@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement</title>
+<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.0RC2</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,11 +82,15 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Technical specification: <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> </div>  </div>
+<div class="title">Technical specification: <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> V1.0RC2 </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><blockquote class="doxtable">
-<p><b>DRAFT VERSION, WRITE-UP IN PROGRESS!</b></p>
+<p>**This is a release candidate in implementation.</p>
+</blockquote>
+<p>The official V1.0 release will be done once the implementation is ready and we know that the specified behavious is working as intended.**</p>
+<blockquote class="doxtable">
+<p><b>NOTICE FOR FUTURE RELEASES: AVOID CHANGING THE NUMBERING!</b> The tests refer to the sections, incl. links and unlinked references from tests or other parts of the specification. These break, or even worse become wrong, when they are not changed consistenty! </p>
 </blockquote>
 <h2>Introduction</h2>
 <p>This documnent is currently still <b>INCOMPLETE</b>!</p>
@@ -156,12 +160,12 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </li>
 <li>6.6 postXxx(), public<ul>
 <li>void <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a71aa608f151dbe46289a6214dd5ece4b" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">TransferElement::postRead(TransferType type, bool hasNewData)</a></li>
-<li>void TransferElement::postWrite(TransferType type)</li>
+<li>void TransferElement::postWrite(TransferType type, VersionNumber versionNumber)</li>
 </ul>
 </li>
 <li>6.7 doPostXxx(), protected virtual<ul>
 <li>void <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7" title="Backend specific implementation of postRead(). ">TransferElement::doPostRead(TransferType type, bool hasNewData)</a></li>
-<li>void TransferElement::doPostWrite(TransferType type)</li>
+<li>void TransferElement::doPostWrite(TransferType type, VersionNumber versionNumber)</li>
 </ul>
 </li>
 </ul>
@@ -508,7 +512,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jun 5 2020 03:53:26 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Fri Jun 5 2020 10:18:34 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

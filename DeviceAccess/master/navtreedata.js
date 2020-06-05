@@ -45,7 +45,7 @@ var NAVTREE =
       [ "Why do RegisterAccessors not have an assignment operator for other RegisterAccessors?", "q_and_a.html#why_no_accessor_assignment", null ],
       [ "Why can I not read SEQUENCE registers?", "q_and_a.html#use_sequences", null ]
     ] ],
-    [ "Technical specification: TransferElement", "spec__transfer_element.html", null ],
+    [ "Technical specification: TransferElement V1.0RC2", "spec__transfer_element.html", null ],
     [ "Testing applications using the DummyBackends", "testing_with_dummy_backends.html", [
       [ "Specifying the dummies in the device map file", "testing_with_dummy_backends.html#dmap_specify_dummies", null ],
       [ "Writeing to read-only registers", "testing_with_dummy_backends.html#dummy_backends_write_readonly", null ]
