@@ -2,6 +2,7 @@ var class_reference_test_application =
 [
     [ "ReferenceTestApplication", "class_reference_test_application.html#ad26824f47ce67d9a7bf6714f67388240", null ],
     [ "~ReferenceTestApplication", "class_reference_test_application.html#a6f2d06601d0905d3d5e9d363f70e8564", null ],
+    [ "getFailedTransfers", "class_reference_test_application.html#a17256ef0b7e1d055b19e3e2a2e4fa542", null ],
     [ "initialise", "class_reference_test_application.html#ab6ee82c54c2941157ce767fee73b6d9c", null ],
     [ "mainBody", "class_reference_test_application.html#a45263737c0dea86b5badf4680c200dc5", null ],
     [ "mainLoop", "class_reference_test_application.html#ac6d13819622e891d130741e72e1b3375", null ],
