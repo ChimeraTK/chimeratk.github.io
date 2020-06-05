@@ -27,7 +27,7 @@ var searchData=
   ['doocsbackendtimestampaccessor_2eh',['DoocsBackendTimeStampAccessor.h',['../_doocs_backend_time_stamp_accessor_8h.html',1,'']]],
   ['doocsbackendtimestampregisteraccessor',['DoocsBackendTimeStampRegisterAccessor',['../class_chimera_t_k_1_1_doocs_backend_time_stamp_register_accessor.html',1,'ChimeraTK::DoocsBackendTimeStampRegisterAccessor&lt; UserType &gt;'],['../class_chimera_t_k_1_1_doocs_backend_time_stamp_register_accessor.html#a4a31c937417c64a90020514e72906b46',1,'ChimeraTK::DoocsBackendTimeStampRegisterAccessor::DoocsBackendTimeStampRegisterAccessor()']]],
   ['doocsdummy_5frpc_5fserver_2ecc',['doocsDummy_rpc_server.cc',['../doocs_dummy__rpc__server_8cc.html',1,'']]],
-  ['doocslauncher',['DoocsLauncher',['../class_doocs_launcher.html',1,'DoocsLauncher'],['../class_doocs_launcher.html#aaa101e97c38453759440975ebfb7eda1',1,'DoocsLauncher::DoocsLauncher()'],['../class_doocs_launcher.html#aaa101e97c38453759440975ebfb7eda1',1,'DoocsLauncher::DoocsLauncher()']]],
+  ['doocslauncher',['DoocsLauncher',['../class_doocs_launcher.html',1,'DoocsLauncher'],['../class_doocs_launcher.html#aaa101e97c38453759440975ebfb7eda1',1,'DoocsLauncher::DoocsLauncher()'],['../class_doocs_launcher.html#aaa101e97c38453759440975ebfb7eda1',1,'DoocsLauncher::DoocsLauncher()'],['../class_doocs_launcher.html#aaa101e97c38453759440975ebfb7eda1',1,'DoocsLauncher::DoocsLauncher()']]],
   ['doocsserver1',['DoocsServer1',['../class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca',1,'DoocsLauncher']]],
   ['doocsserver1_5fcached',['DoocsServer1_cached',['../class_doocs_launcher.html#a4524c308d7800ed0bc2f1b5e2b8ceb3d',1,'DoocsLauncher']]],
   ['doocsserver2',['DoocsServer2',['../class_doocs_launcher.html#af1c287e6c089a5f389c821f615b96b4c',1,'DoocsLauncher']]],
