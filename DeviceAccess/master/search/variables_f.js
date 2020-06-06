@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['rawdatabuffer',['rawDataBuffer',['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae70e070df9727a85bc43751ced9e4302',1,'ChimeraTK::NumericAddressedLowLevelTransferElement']]],
   ['read_5fsuccess_5findication',['READ_SUCCESS_INDICATION',['../class_chimera_t_k_1_1_rebot_dummy_session.html#acc1694f04edfb880bcd210c9002d418d',1,'ChimeraTK::RebotDummySession']]],
   ['readable',['readable',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6c445623ee9b3977e4e73c1965ab7cb2',1,'ChimeraTK::LNMBackendRegisterInfo']]],
   ['readonly',['readOnly',['../class_chimera_t_k_1_1_transfer_group.html#a52bc98ae72e9cf28d281a71c2b9bbb4e',1,'ChimeraTK::TransferGroup']]],

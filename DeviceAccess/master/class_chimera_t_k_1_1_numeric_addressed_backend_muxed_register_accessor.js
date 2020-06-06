@@ -4,14 +4,10 @@ var class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor =
     [ "~NumericAddressedBackendMuxedRegisterAccessor", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#abe3cb01ebbef0fb9e87022f085a35a52", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a9f78a09a6d8704a274e02682cb6b1c1e", null ],
     [ "doPreWrite", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#ac45367b2901931167b93b4db3d9d4fe7", null ],
-    [ "doReadTransfer", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#ae32ece34dc312d0bdfd3ef0754394ae1", null ],
-    [ "doReadTransferLatest", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a1de3baca25098ad2eff628d8d6779213", null ],
-    [ "doReadTransferNonBlocking", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#ae87b15813ed949737b915c7cb6247fc6", null ],
+    [ "doReadTransferSynchronously", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a76389d6885f87531ec1b90ed83a33e69", null ],
     [ "doWriteTransfer", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#ab7654ddf9a091bc4d4982aeafce6d71f", null ],
-    [ "getAccessModeFlags", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#ac27cea94fc839e8f3d08b7af7ee80009", null ],
     [ "getHardwareAccessingElements", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a64df1fb2f5a4dbe56b1ddd75d9813a02", null ],
     [ "getInternalElements", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a61efbb917df7cdbab4e5d32e03afad28", null ],
-    [ "getVersionNumber", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a7908c382da048b1ada7739471c02aaae", null ],
     [ "isReadable", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#af3065bc46ec087c9b1fe4684f0c77e99", null ],
     [ "isReadOnly", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a987eec34956cfd09184be38b19b52923", null ],
     [ "isWriteable", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a759f2c8cb842adcc03178cfeb1122788", null ],
@@ -35,6 +31,5 @@ var class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor =
     [ "_registerPathName", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#af925e7fbb95678063036e1097808d50d", null ],
     [ "_sequenceInfos", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a9bd76854aba8cdacb62ca4881e8f73d7", null ],
     [ "_startIterators", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a0665694f49feda3ce82eda6db07fe67e", null ],
-    [ "bytesPerBlock", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a6a3258d76e109ea07c7859d7447b9250", null ],
-    [ "currentVersion", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a430671e7e0c8d94eb128841aad6c8adf", null ]
+    [ "bytesPerBlock", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a6a3258d76e109ea07c7859d7447b9250", null ]
 ];

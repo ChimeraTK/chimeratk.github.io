@@ -1,8 +1,6 @@
 var searchData=
 [
   ['dataconsistencygroup',['DataConsistencyGroup',['../class_chimera_t_k_1_1_data_consistency_group.html',1,'ChimeraTK']]],
-  ['dataconvertertemplatespecialisationhelper',['dataConverterTemplateSpecialisationHelper',['../struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_specialisation_helper.html',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor']]],
-  ['dataconvertertemplatespecialisationhelper_3c_20int32_5ft_2c_20cookedt_20_3e',['dataConverterTemplateSpecialisationHelper&lt; int32_t, CookedT &gt;',['../struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_spe9033bbf1deb4f2449f5a993bab102f6.html',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor']]],
   ['datadescriptor',['DataDescriptor',['../class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html',1,'ChimeraTK::RegisterInfo']]],
   ['datatype',['DataType',['../class_chimera_t_k_1_1_data_type.html',1,'ChimeraTK']]],
   ['device',['Device',['../class_chimera_t_k_1_1_device.html',1,'ChimeraTK']]],
@@ -25,9 +23,6 @@ var searchData=
   ['dmapfilesparsertest',['DMapFilesParserTest',['../class_d_map_files_parser_test.html',1,'']]],
   ['dmapfilesparsertestsuite',['DMapFilesParserTestSuite',['../class_d_map_files_parser_test_suite.html',1,'']]],
   ['dummybackend',['DummyBackend',['../class_chimera_t_k_1_1_dummy_backend.html',1,'ChimeraTK']]],
-  ['dummybackendbase',['DummyBackendBase',['../class_chimera_t_k_1_1_dummy_backend_base.html',1,'ChimeraTK']]],
-  ['dummybackendbase_3c_20dummybackend_20_3e',['DummyBackendBase&lt; DummyBackend &gt;',['../class_chimera_t_k_1_1_dummy_backend_base.html',1,'ChimeraTK']]],
-  ['dummybackendbase_3c_20shareddummybackend_20_3e',['DummyBackendBase&lt; SharedDummyBackend &gt;',['../class_chimera_t_k_1_1_dummy_backend_base.html',1,'ChimeraTK']]],
   ['dummybackendtest',['DummyBackendTest',['../class_dummy_backend_test.html',1,'']]],
   ['dummybackendtestsuite',['DummyBackendTestSuite',['../class_dummy_backend_test_suite.html',1,'']]],
   ['dummymultiplexedregisteraccessor',['DummyMultiplexedRegisterAccessor',['../class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html',1,'ChimeraTK']]],

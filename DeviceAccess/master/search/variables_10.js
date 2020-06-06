@@ -17,6 +17,5 @@ var searchData=
   ['start_5ftime',['start_time',['../structdevice__ioctrl__time.html#a73717c26f9ec75f5b4ea114976a1ba2c',1,'device_ioctrl_time']]],
   ['stop_5frebot_5fserver',['stop_rebot_server',['../namespace_chimera_t_k.html#ac86dd51067ed1b14abf11e60de2df484',1,'ChimeraTK']]],
   ['stop_5ftime',['stop_time',['../structdevice__ioctrl__time.html#a04786d897463142079bd0cc2b041efcd',1,'device_ioctrl_time']]],
-  ['supportedflags',['supportedFlags',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6546006951dc0b02aaf98a42c3f6630c',1,'ChimeraTK::LNMBackendRegisterInfo']]],
-  ['symbols',['symbols',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#afbe762724bc94cf064d77db7c4f02e5a',1,'ChimeraTK::LNMBackend::MathPluginDecorator']]]
+  ['supportedflags',['supportedFlags',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6546006951dc0b02aaf98a42c3f6630c',1,'ChimeraTK::LNMBackendRegisterInfo']]]
 ];
