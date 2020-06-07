@@ -1,8 +1,8 @@
 var class_chimera_t_k_1_1_backend_factory =
 [
     [ "aliasLookUp", "class_chimera_t_k_1_1_backend_factory.html#ae166738b5e8ce2b948c542b91eb66237", null ],
-    [ "createBackend", "class_chimera_t_k_1_1_backend_factory.html#ab15da64c2cd662c63e6fc3a38ee32606", null ],
-    [ "createBackendInternal", "class_chimera_t_k_1_1_backend_factory.html#a6802ed15dea77f6e7c389c12deccba9b", null ],
+    [ "createBackend", "class_chimera_t_k_1_1_backend_factory.html#a240088c806406533d0aa975b7bf61b05", null ],
+    [ "createBackendInternal", "class_chimera_t_k_1_1_backend_factory.html#a517b7eba664608f0cff9bf3b4dca8141", null ],
     [ "getDMapFilePath", "class_chimera_t_k_1_1_backend_factory.html#ad822950d59282d538922d5ac05edd94f", null ],
     [ "loadAllPluginsFromDMapFile", "class_chimera_t_k_1_1_backend_factory.html#afb11ba2d5dbe02a49f8e99ff9e84ae54", null ],
     [ "loadPluginLibrary", "class_chimera_t_k_1_1_backend_factory.html#a5269ea223738146c67a03e80af6fd88a", null ],

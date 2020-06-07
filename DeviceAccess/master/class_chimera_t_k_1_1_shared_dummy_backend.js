@@ -1,7 +1,7 @@
 var class_chimera_t_k_1_1_shared_dummy_backend =
 [
     [ "SharedDummyBackend", "class_chimera_t_k_1_1_shared_dummy_backend.html#a1caea4b00d60bb10686e2391b9305381", null ],
-    [ "~SharedDummyBackend", "class_chimera_t_k_1_1_shared_dummy_backend.html#a1d17a2039321ec2e8b758323c5cddd78", null ],
+    [ "~SharedDummyBackend", "class_chimera_t_k_1_1_shared_dummy_backend.html#a249ab56910ad17a547b8613e56516ebe", null ],
     [ "close", "class_chimera_t_k_1_1_shared_dummy_backend.html#a3ee404eb034debf6256f7f2551cd5726", null ],
     [ "getRegisterContent", "class_chimera_t_k_1_1_shared_dummy_backend.html#aaa42fc4a9f4c06c3ce8c311952edcb22", null ],
     [ "isFunctional", "class_chimera_t_k_1_1_shared_dummy_backend.html#a1a02803a1200e812e775e6e9bfe930f8", null ],

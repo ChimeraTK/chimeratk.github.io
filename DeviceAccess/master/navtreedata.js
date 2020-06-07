@@ -93,18 +93,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"argument_parser_8cc.html#a4a88f44a22a5f0914a9ecf5723f8fa02",
-"class_chimera_t_k_1_1_device.html#ae5e0c416ca16eb2fd45fe5cc4a610469",
-"class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a9464202cbbe226e71394b4cdf00a6cbb",
-"class_chimera_t_k_1_1_read_any_group.html#aa39feaeaa501c009b3bcd90b7304445d",
-"class_chimera_t_k_1_1_register_info_map_1_1const__iterator.html",
-"class_chimera_t_k_1_1_transfer_element_i_d.html#ae547c940e25a03e8dd7cc9758b3e478d",
-"class_rebot_device_test_suite.html",
-"device__backends_2include_2_transfer_element_8h.html#aefbbe1fd9e4eefc7aa088b1242274ee7aafcf399c9a4d4e33eda6ff5e3b011540",
-"globals_type.html",
-"struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#aae1c5729f32d641750828ddae7499b0f",
-"test_fixed_point_converter_8cpp.html#a03b1ca77f2c69d10fc0e65867bb8c3c5",
-"test_scalar_register_accessor_8cpp.html#af6690df3622b4b8fc105f750a010295b"
+"accessor2_d_8cpp.html",
+"class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf",
+"class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#afa886caa84a39ab94f4be19088898dac",
+"class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a1d1052c41073932d547b3e91a4bbf943",
+"class_chimera_t_k_1_1_register_info_map.html#aae48ed78bd3c2e77a09cda66669f03e0",
+"class_chimera_t_k_1_1_transfer_element.html#a90287ea25d81da5a74b41c04a89851c4",
+"class_example_backend.html#ac2d7f01de8bbc5d71a0099918ffd62a7",
+"device_2include_2_transfer_group_8h.html",
+"functions_func_t.html",
+"parser_utilities_8cc.html#a4b7d71c43b5b99282686080779736272",
+"structdevice__ioctrl__data.html#ad8ffd816b771df6ef50f7c40166a37a6",
+"test_l_map_type_hint_modifier_plugin_8cc.html#a6b2a3852db8bb19ab6909bac01859985"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

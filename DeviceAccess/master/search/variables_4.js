@@ -3,6 +3,7 @@ var searchData=
   ['data',['data',['../structdevice__ioctrl__data.html#a99d6274576188aeea8225493378b04ec',1,'device_ioctrl_data']]],
   ['data_5frw',['data_rw',['../structdevice__rw.html#a4731025369481beeaa5c408775ad2a7e',1,'device_rw']]],
   ['datadescriptor',['dataDescriptor',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a35726baa004e88f0b928d7901708f7cd',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
+  ['datalossininactivate',['dataLossInInactivate',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#ab21ee3f3ce40a386d5d11c6db54cd014',1,'ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator']]],
   ['datatype',['dataType',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a7e1262bdfc1cfc50032749c54f18bea1',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
   ['default_5fconnection_5ftimeout_5fsec',['DEFAULT_CONNECTION_TIMEOUT_sec',['../class_chimera_t_k_1_1_rebot_backend.html#aa679521e1252d07a1cb3e8b9f7ff754d',1,'ChimeraTK::RebotBackend']]],
   ['delay',['delay',['../class_test_dummy.html#a72ef645efb10190c2c01a38d8c901d71',1,'TestDummy']]],

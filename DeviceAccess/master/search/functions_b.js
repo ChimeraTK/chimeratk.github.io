@@ -10,5 +10,7 @@ var searchData=
   ['now',['now',['../class_chimera_t_k_1_1_rebot_testable_clock.html#acb80b64f40928883bcab5162239c91f6',1,'ChimeraTK::RebotTestableClock::now()'],['../namespace_chimera_t_k_1_1testable__rebot__sleep.html#a1851c267e4dd419a948306ff85195a86',1,'ChimeraTK::testable_rebot_sleep::now()']]],
   ['numericaddressedbackend',['NumericAddressedBackend',['../class_chimera_t_k_1_1_numeric_addressed_backend.html#a6d8802ff0005f775c7728bdb064d3d18',1,'ChimeraTK::NumericAddressedBackend']]],
   ['numericaddressedbackendmuxedregisteraccessor',['NumericAddressedBackendMuxedRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a4b92f7ba1b3197c0c21cd157c2c2b846',1,'ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor']]],
+  ['numericaddressedbackendregisteraccessor',['NumericAddressedBackendRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#a1b8adbec76eb57a790ef011ebadb86a7',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor']]],
+  ['numericaddressedlowleveltransferelement',['NumericAddressedLowLevelTransferElement',['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a85c5f37136887c2381fdb3a2b8090192',1,'ChimeraTK::NumericAddressedLowLevelTransferElement']]],
   ['numerictousertype',['numericToUserType',['../namespace_chimera_t_k.html#aa159464ac26217627bc921cc3e9f3c62',1,'ChimeraTK']]]
 ];

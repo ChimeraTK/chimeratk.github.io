@@ -18,7 +18,7 @@ var dir_f6c06f7a01da37196a5f6fe3a6212106 =
       [ "DummyBackend", "class_chimera_t_k_1_1_dummy_backend.html", "class_chimera_t_k_1_1_dummy_backend" ],
       [ "AddressRange", "struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html", "struct_chimera_t_k_1_1_dummy_backend_1_1_address_range" ]
     ] ],
-    [ "DummyBackendBase.h", "_dummy_backend_base_8h.html", null ],
+    [ "DummyBackendBase.h", "_dummy_backend_base_8h.html", "_dummy_backend_base_8h" ],
     [ "DummyRegisterAccessor.h", "device__backends_2include_2_dummy_register_accessor_8h.html", [
       [ "DummyRegisterElement", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element" ],
       [ "DummyRegisterSequence", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence" ],
@@ -48,8 +48,11 @@ var dir_f6c06f7a01da37196a5f6fe3a6212106 =
       [ "NumericAddressedBackend", "class_chimera_t_k_1_1_numeric_addressed_backend.html", "class_chimera_t_k_1_1_numeric_addressed_backend" ]
     ] ],
     [ "NumericAddressedBackendMuxedRegisterAccessor.h", "device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h.html", "device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h" ],
-    [ "NumericAddressedBackendRegisterAccessor.h", "device__backends_2include_2_numeric_addressed_backend_register_accessor_8h.html", null ],
-    [ "NumericAddressedLowLevelTransferElement.h", "device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h.html", null ],
+    [ "NumericAddressedBackendRegisterAccessor.h", "device__backends_2include_2_numeric_addressed_backend_register_accessor_8h.html", "device__backends_2include_2_numeric_addressed_backend_register_accessor_8h" ],
+    [ "NumericAddressedLowLevelTransferElement.h", "device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h.html", [
+      [ "NumericAddressedBackendRegisterAccessor", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor" ],
+      [ "NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element" ]
+    ] ],
     [ "SyncNDRegisterAccessor.h", "device__backends_2include_2_sync_n_d_register_accessor_8h.html", [
       [ "SyncNDRegisterAccessor", "class_chimera_t_k_1_1_sync_n_d_register_accessor.html", "class_chimera_t_k_1_1_sync_n_d_register_accessor" ]
     ] ],
