@@ -1,6 +1,6 @@
 var class_transfer_element_test_accessor =
 [
-    [ "TransferElementTestAccessor", "class_transfer_element_test_accessor.html#a0e04145787da314cc7697ebcf5ad7988", null ],
+    [ "TransferElementTestAccessor", "class_transfer_element_test_accessor.html#aab2d1dd002545a756d395b94a45ac11c", null ],
     [ "~TransferElementTestAccessor", "class_transfer_element_test_accessor.html#a735a29b4bba9a34c168862034961fe02", null ],
     [ "doPostRead", "class_transfer_element_test_accessor.html#a9f6849a501f6541fa4b6d3f640a6df07", null ],
     [ "doPostWrite", "class_transfer_element_test_accessor.html#a3fe49c3eb7b557f245b1461932664400", null ],
@@ -16,11 +16,11 @@ var class_transfer_element_test_accessor =
     [ "isReadOnly", "class_transfer_element_test_accessor.html#a285d31389c7e48c326bcfdb724bbbde9", null ],
     [ "isWriteable", "class_transfer_element_test_accessor.html#af42bfcfd7b03cdaf1d777410202cf696", null ],
     [ "mayReplaceOther", "class_transfer_element_test_accessor.html#a51403f85cf4267c429477ab8671c19ca", null ],
+    [ "push", "class_transfer_element_test_accessor.html#aecb9424af792768b85448bc5d19eebed", null ],
     [ "putDiscardValueOnQueue", "class_transfer_element_test_accessor.html#a72993ef06f433c5586bac0347504849c", null ],
     [ "putRuntimeErrorOnQueue", "class_transfer_element_test_accessor.html#a0cde077962e051a2e4f31550aab9db0d", null ],
     [ "replaceTransferElement", "class_transfer_element_test_accessor.html#a7d6c8a5d8830f54ad4cf371cb09003dc", null ],
     [ "resetCounters", "class_transfer_element_test_accessor.html#a64263cb759c67bb019fa73ffbde76294", null ],
-    [ "_flags", "class_transfer_element_test_accessor.html#a2849ba2348ee8c2ff61db4ebd1be1f5c", null ],
     [ "_hasNewData", "class_transfer_element_test_accessor.html#a7066ff70ac8573b5e031834f89ecd08f", null ],
     [ "_newVersion", "class_transfer_element_test_accessor.html#ad6a8bcec5e141008ca9599b0a87f5bf0", null ],
     [ "_postRead_counter", "class_transfer_element_test_accessor.html#a3d73df59f8a539e091df8f818069ba8e", null ],
@@ -29,7 +29,6 @@ var class_transfer_element_test_accessor =
     [ "_previousDataLost", "class_transfer_element_test_accessor.html#a330a04674d1a4e666d218b5fc85372b2", null ],
     [ "_preWrite_counter", "class_transfer_element_test_accessor.html#a8ba9d1ee09e0dcd5e457711f55fee596", null ],
     [ "_readable", "class_transfer_element_test_accessor.html#a3611f45f2e2f7b14c06ce66483e4b2f2", null ],
-    [ "_readQueue", "class_transfer_element_test_accessor.html#a1b8fb75bb039874fdb04ccdc0496005c", null ],
     [ "_readTransfer_counter", "class_transfer_element_test_accessor.html#abb90b58b65008c212f3871961c721e48", null ],
     [ "_throwLogicErr", "class_transfer_element_test_accessor.html#a19ce880e264f505288f736936d0d3e4a", null ],
     [ "_throwNumericCast", "class_transfer_element_test_accessor.html#a5b98fe73244dfd5bcbd99d20b33d1dd8", null ],

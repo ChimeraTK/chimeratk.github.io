@@ -119,14 +119,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae33d96421e851799c9712b6630d2f62d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_counting_decorator.html#ae33d96421e851799c9712b6630d2f62d">doPreWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber) override</td></tr>
 <tr class="memdesc:ae33d96421e851799c9712b6630d2f62d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ad55e5f5a37940479ae2b1ef423e80536" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>.  <a href="#ae33d96421e851799c9712b6630d2f62d">More...</a><br /></td></tr>
 <tr class="separator:ae33d96421e851799c9712b6630d2f62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84840cc8a22787fe57987746523ae721"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_counting_decorator.html#a84840cc8a22787fe57987746523ae721">doPostWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type, bool dataLost) override</td></tr>
-<tr class="separator:a84840cc8a22787fe57987746523ae721"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bce6fefb4061b6002f70e6fc0af09d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_counting_decorator.html#a6bce6fefb4061b6002f70e6fc0af09d6">doReadTransfer</a> () override</td></tr>
-<tr class="separator:a6bce6fefb4061b6002f70e6fc0af09d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b06f194cb4fdaabf514bba23d5380e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_counting_decorator.html#a5b06f194cb4fdaabf514bba23d5380e4">doReadTransferNonBlocking</a> () override</td></tr>
-<tr class="separator:a5b06f194cb4fdaabf514bba23d5380e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80477afdc92d145bf6bbe21a12e06d0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_counting_decorator.html#a80477afdc92d145bf6bbe21a12e06d0a">doReadTransferLatest</a> () override</td></tr>
-<tr class="separator:a80477afdc92d145bf6bbe21a12e06d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4580ef470ef7b0488524baf489d06550"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_counting_decorator.html#a4580ef470ef7b0488524baf489d06550">doPostWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber) override</td></tr>
+<tr class="memdesc:a4580ef470ef7b0488524baf489d06550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write cleanups if necessary. ">postWrite()</a>.  <a href="#a4580ef470ef7b0488524baf489d06550">More...</a><br /></td></tr>
+<tr class="separator:a4580ef470ef7b0488524baf489d06550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5776c51ee5d0164147707751ce6f0efa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_counting_decorator.html#a5776c51ee5d0164147707751ce6f0efa">doReadTransferSynchronously</a> () override</td></tr>
+<tr class="memdesc:a5776c51ee5d0164147707751ce6f0efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0d42b90e885f41503366fcc171424ad0" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a>.  <a href="#a5776c51ee5d0164147707751ce6f0efa">More...</a><br /></td></tr>
+<tr class="separator:a5776c51ee5d0164147707751ce6f0efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b9e847b1caf3cad50aef5bef0aa15f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_counting_decorator.html#a6b9e847b1caf3cad50aef5bef0aa15f5">doWriteTransfer</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber) override</td></tr>
 <tr class="memdesc:a6b9e847b1caf3cad50aef5bef0aa15f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab4191d8726a081651d3b0bcf48fa297e" title="Write the data to the device. ">writeTransfer()</a>.  <a href="#a6b9e847b1caf3cad50aef5bef0aa15f5">More...</a><br /></td></tr>
 <tr class="separator:a6b9e847b1caf3cad50aef5bef0aa15f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,8 +296,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a84840cc8a22787fe57987746523ae721"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84840cc8a22787fe57987746523ae721">&#9670;&nbsp;</a></span>doPostWrite()</h2>
+<a id="a4580ef470ef7b0488524baf489d06550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4580ef470ef7b0488524baf489d06550">&#9670;&nbsp;</a></span>doPostWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,13 +311,13 @@ template&lt;typename T &gt; </div>
           <td class="memname">void <a class="el" href="struct_counting_decorator.html">CountingDecorator</a>&lt; T &gt;::doPostWrite </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>dataLost</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -329,10 +327,16 @@ template&lt;typename T &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write cleanups if necessary. ">postWrite()</a>. </p>
+<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write cleanups if necessary. ">postWrite()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
+<p>No actual communication may be done. Hence, no runtime_error exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown. </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7c0a6bc5c1779ce47afe7871573ef2a1">ChimeraTK::TransferElement</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00581">581</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
@@ -420,8 +424,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a6bce6fefb4061b6002f70e6fc0af09d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bce6fefb4061b6002f70e6fc0af09d6">&#9670;&nbsp;</a></span>doReadTransfer()</h2>
+<a id="a5776c51ee5d0164147707751ce6f0efa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5776c51ee5d0164147707751ce6f0efa">&#9670;&nbsp;</a></span>doReadTransferSynchronously()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -432,7 +436,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="struct_counting_decorator.html">CountingDecorator</a>&lt; T &gt;::doReadTransfer </td>
+          <td class="memname">void <a class="el" href="struct_counting_decorator.html">CountingDecorator</a>&lt; T &gt;::doReadTransferSynchronously </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -440,70 +444,22 @@ template&lt;typename T &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0d42b90e885f41503366fcc171424ad0" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a>. </p>
+<p>This function must be implemented by the backend. For the functional description read the documentation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0d42b90e885f41503366fcc171424ad0" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a>.</p>
+<p>Implementation notes:</p><ul>
+<li>This function must return within ~1 second after boost::thread::interrupt() has been called on the thread calling this function.</li>
+<li>Decorators must delegate the call to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a0d42b90e885f41503366fcc171424ad0" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a> of the decorated target.</li>
+<li>Delegations within the same object should go to the "do" version, e.g. to this-&gt;doReadTransferLatest() </li>
+</ul>
+
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a948f1bec4d00fce4ef5d5ea8fc35f8d5">ChimeraTK::TransferElement</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00586">586</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a80477afdc92d145bf6bbe21a12e06d0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80477afdc92d145bf6bbe21a12e06d0a">&#9670;&nbsp;</a></span>doReadTransferLatest()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="struct_counting_decorator.html">CountingDecorator</a>&lt; T &gt;::doReadTransferLatest </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00596">596</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a5b06f194cb4fdaabf514bba23d5380e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b06f194cb4fdaabf514bba23d5380e4">&#9670;&nbsp;</a></span>doReadTransferNonBlocking()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="struct_counting_decorator.html">CountingDecorator</a>&lt; T &gt;::doReadTransferNonBlocking </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00591">591</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -541,7 +497,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00601">601</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00591">591</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -576,7 +532,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a36b8f2cad449056d909560e371c78229">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00606">606</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00596">596</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -613,7 +569,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a561932e1a87dcc57cb3525a9980bdf49">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00625">625</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00615">615</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -650,7 +606,7 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#acfe89e1cf7c5d45797fd062b9faaea6a">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00634">634</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00624">624</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -685,7 +641,7 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a791a4902b649e859fbadea20cc90ede2">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00615">615</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00605">605</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -722,7 +678,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00642">642</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00632">632</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -741,7 +697,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00653">653</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00643">643</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -759,7 +715,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00655">655</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00645">645</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -777,7 +733,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00657">657</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00647">647</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -795,7 +751,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00654">654</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00644">644</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -813,7 +769,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00656">656</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00646">646</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -831,7 +787,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00658">658</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00648">648</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -849,7 +805,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00660">660</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00650">650</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -867,7 +823,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00659">659</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00649">649</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -885,7 +841,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00661">661</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00651">651</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -898,7 +854,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_counting_decorator.html">CountingDecorator</a></li>
-    <li class="footer">Generated on Sun Jun 7 2020 03:53:12 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Mon Jun 8 2020 03:54:06 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
