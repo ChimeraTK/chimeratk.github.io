@@ -29,6 +29,5 @@ var test_doocs_backend_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#aa2b56760321300ad0fb6c2670b833ebe", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_doocs_backend_8cpp.html#a8bd9202033f6e5ae4dea1695dd320716", null ],
     [ "BOOST_GLOBAL_FIXTURE", "test_doocs_backend_8cpp.html#a28df7f71d0da5f3d08e45822674622e5", null ],
-    [ "createDummyXml", "test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11", null ],
-    [ "object_name", "test_doocs_backend_8cpp.html#a06c138c2b0b13b0e11be4e16bf242cb8", null ]
+    [ "createDummyXml", "test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11", null ]
 ];
