@@ -184,7 +184,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{                                                                                                                    \</div><div class="line">    static <span class="keyword">const</span> <span class="keywordtype">size_t</span> nIterations = 10000;                                                                           \</div><div class="line">    size_t local_index_i = 0;                                                                                          \</div><div class="line">    for(; local_index_i &lt; nIterations; ++local_index_i) {                                                              \</div><div class="line">      if(__VA_ARGS__) {                                                                                                \</div><div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;ok after &quot;</span> &lt;&lt; local_index_i &lt;&lt; std::endl;                                                        \</div><div class="line">        break;                                                                                                         \</div><div class="line">      }                                                                                                                \</div><div class="line">      usleep(100);                                                                                                     \</div><div class="line">    }                                                                                                                  \</div><div class="line">    if(local_index_i == nIterations) BOOST_CHECK(__VA_ARGS__);                                                         \</div><div class="line">  }</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00180">180</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00178">178</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 
 </div>
 </div>
@@ -199,11 +199,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code" href="struct_global_fixture.html">GlobalFixture</a> {                                                                                               \</div><div class="line">    GlobalFixture() { <a class="code" href="class_chimera_t_k_1_1_doocs_adapter.html#a95c4448e95dcf81fd189c172306d8e38">ChimeraTK::DoocsAdapter::waitUntilInitialised</a>(); }                                               \</div><div class="line">                                                                                                                       \</div><div class="line">    ReferenceTestApplication <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">referenceTestApplication</a>{framework::master_test_suite().p_name.value};                    \</div><div class="line">    ThreadedDoocsServer <a class="code" href="struct_global_fixture.html#a6da5db95b6a905a3cc0470dc80e9c4f0">server</a>{framework::master_test_suite().p_name.value,                                            \</div><div class="line">        framework::master_test_suite().p_name.value + <span class="stringliteral">&quot;.conf&quot;</span>, framework::master_test_suite().argc,                    \</div><div class="line">        framework::master_test_suite().argv};                                                                          \</div><div class="line">  };                                                                                                                   <a class="code" href="server_test_auto_create_locations_8cpp.html#a6108ecb4b5c426c40bae776d3dc5f7fd">\</a></div><div class="line"><a class="code" href="server_test_auto_create_locations_8cpp.html#a6108ecb4b5c426c40bae776d3dc5f7fd">                                                                                                                       \</a></div><div class="line"><a class="code" href="server_test_auto_create_locations_8cpp.html#a6108ecb4b5c426c40bae776d3dc5f7fd">  BOOST_GLOBAL_FIXTURE</a>(<a class="code" href="struct_global_fixture.html">GlobalFixture</a>);</div><div class="ttc" id="class_chimera_t_k_1_1_doocs_adapter_html_a95c4448e95dcf81fd189c172306d8e38"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_adapter.html#a95c4448e95dcf81fd189c172306d8e38">ChimeraTK::DoocsAdapter::waitUntilInitialised</a></div><div class="ttdeci">static void waitUntilInitialised()</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_adapter_8cc_source.html#l00024">DoocsAdapter.cc:24</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code" href="struct_global_fixture.html">GlobalFixture</a> {                                                                                               \</div><div class="line">    GlobalFixture() { <a class="code" href="class_chimera_t_k_1_1_doocs_adapter.html#a95c4448e95dcf81fd189c172306d8e38">ChimeraTK::DoocsAdapter::waitUntilInitialised</a>(); }                                               \</div><div class="line">                                                                                                                       \</div><div class="line">    ReferenceTestApplication <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">referenceTestApplication</a>{framework::master_test_suite().p_name.value};                    \</div><div class="line">    ThreadedDoocsServer <a class="code" href="struct_global_fixture.html#ab299e97573c5ec9fb32c02789a138af5">server</a>{framework::master_test_suite().p_name.value + <span class="stringliteral">&quot;.conf&quot;</span>,                                  \</div><div class="line">        framework::master_test_suite().argc, framework::master_test_suite().argv};                                     \</div><div class="line">  };                                                                                                                   <a class="code" href="server_test_auto_create_locations_8cpp.html#a6108ecb4b5c426c40bae776d3dc5f7fd">\</a></div><div class="line"><a class="code" href="server_test_auto_create_locations_8cpp.html#a6108ecb4b5c426c40bae776d3dc5f7fd">                                                                                                                       \</a></div><div class="line"><a class="code" href="server_test_auto_create_locations_8cpp.html#a6108ecb4b5c426c40bae776d3dc5f7fd">  BOOST_GLOBAL_FIXTURE</a>(<a class="code" href="struct_global_fixture.html">GlobalFixture</a>);</div><div class="ttc" id="struct_global_fixture_html_ab299e97573c5ec9fb32c02789a138af5"><div class="ttname"><a href="struct_global_fixture.html#ab299e97573c5ec9fb32c02789a138af5">GlobalFixture::server</a></div><div class="ttdeci">InternalTestServer server</div><div class="ttdef"><b>Definition:</b> <a href="server_test_auto_create_locations_8cpp_source.html#l00037">serverTestAutoCreateLocations.cpp:37</a></div></div>
+<div class="ttc" id="class_chimera_t_k_1_1_doocs_adapter_html_a95c4448e95dcf81fd189c172306d8e38"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_adapter.html#a95c4448e95dcf81fd189c172306d8e38">ChimeraTK::DoocsAdapter::waitUntilInitialised</a></div><div class="ttdeci">static void waitUntilInitialised()</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_adapter_8cc_source.html#l00024">DoocsAdapter.cc:24</a></div></div>
 <div class="ttc" id="server_test_auto_create_locations_8cpp_html_a6108ecb4b5c426c40bae776d3dc5f7fd"><div class="ttname"><a href="server_test_auto_create_locations_8cpp.html#a6108ecb4b5c426c40bae776d3dc5f7fd">BOOST_GLOBAL_FIXTURE</a></div><div class="ttdeci">BOOST_GLOBAL_FIXTURE(GlobalFixture)</div></div>
-<div class="ttc" id="struct_global_fixture_html_ae53b0447f01f4c125c50be2035158c97"><div class="ttname"><a href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a></div><div class="ttdeci">ReferenceTestApplication referenceTestApplication</div><div class="ttdef"><b>Definition:</b> <a href="server_test_auto_create_locations_8cpp_source.html#l00030">serverTestAutoCreateLocations.cpp:30</a></div></div>
-<div class="ttc" id="struct_global_fixture_html_a6da5db95b6a905a3cc0470dc80e9c4f0"><div class="ttname"><a href="struct_global_fixture.html#a6da5db95b6a905a3cc0470dc80e9c4f0">GlobalFixture::server</a></div><div class="ttdeci">ThreadedDoocsServer server</div><div class="ttdef"><b>Definition:</b> <a href="server_test_auto_create_locations_8cpp_source.html#l00031">serverTestAutoCreateLocations.cpp:31</a></div></div>
-<div class="ttc" id="struct_global_fixture_html"><div class="ttname"><a href="struct_global_fixture.html">GlobalFixture</a></div><div class="ttdef"><b>Definition:</b> <a href="server_test_auto_create_locations_8cpp_source.html#l00022">serverTestAutoCreateLocations.cpp:22</a></div></div>
+<div class="ttc" id="struct_global_fixture_html_ae53b0447f01f4c125c50be2035158c97"><div class="ttname"><a href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a></div><div class="ttdeci">ReferenceTestApplication referenceTestApplication</div><div class="ttdef"><b>Definition:</b> <a href="server_test_auto_create_locations_8cpp_source.html#l00036">serverTestAutoCreateLocations.cpp:36</a></div></div>
+<div class="ttc" id="struct_global_fixture_html"><div class="ttname"><a href="struct_global_fixture.html">GlobalFixture</a></div><div class="ttdef"><b>Definition:</b> <a href="server_test_auto_create_locations_8cpp_source.html#l00028">serverTestAutoCreateLocations.cpp:28</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00012">12</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 
@@ -221,7 +221,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00046">46</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00044">44</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 
 </div>
 </div>
@@ -240,13 +240,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code" href="struct_global_fixture.html">GlobalFixture</a> {                                                                                               \</div><div class="line">    GlobalFixture() {                                                                                                  \</div><div class="line">      rpcNo = <a class="code" href="struct_global_fixture.html#a6da5db95b6a905a3cc0470dc80e9c4f0">server</a>.rpcNo();                                                                                          <a class="code" href="class_chimera_t_k_1_1_doocs_adapter.html#a95c4448e95dcf81fd189c172306d8e38">\</a></div><div class="line"><a class="code" href="class_chimera_t_k_1_1_doocs_adapter.html#a95c4448e95dcf81fd189c172306d8e38">      ChimeraTK::DoocsAdapter::waitUntilInitialised</a>();                                                                 <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">\</a></div><div class="line"><a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">      GlobalFixture::referenceTestApplication</a>.initialiseManualLoopControl();                                           \</div><div class="line">      codeBlockStartUp                                                                                                 \</div><div class="line">    }                                                                                                                  \</div><div class="line">                                                                                                                       \</div><div class="line">    ~GlobalFixture() { <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.releaseManualLoopControl(); }                           \</div><div class="line">                                                                                                                       \</div><div class="line">    static ReferenceTestApplication <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">referenceTestApplication</a>;                                                          \</div><div class="line">    static std::string rpcNo;                                                                                          \</div><div class="line">    ThreadedDoocsServer <a class="code" href="struct_global_fixture.html#a6da5db95b6a905a3cc0470dc80e9c4f0">server</a>{framework::master_test_suite().p_name.value,                                            \</div><div class="line">        framework::master_test_suite().p_name.value + <span class="stringliteral">&quot;.conf&quot;</span>, framework::master_test_suite().argc,                    \</div><div class="line">        framework::master_test_suite().argv};                                                                          \</div><div class="line">  };                                                                                                                   \</div><div class="line">                                                                                                                       \</div><div class="line">  ReferenceTestApplication <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>{BOOST_STRINGIZE(<a class="code" href="server_test_auto_create_locations_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>)};                \</div><div class="line">  std::string GlobalFixture::rpcNo;                                                                                    \</div><div class="line">  BOOST_GLOBAL_FIXTURE(<a class="code" href="struct_global_fixture.html">GlobalFixture</a>);</div><div class="ttc" id="class_chimera_t_k_1_1_doocs_adapter_html_a95c4448e95dcf81fd189c172306d8e38"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_adapter.html#a95c4448e95dcf81fd189c172306d8e38">ChimeraTK::DoocsAdapter::waitUntilInitialised</a></div><div class="ttdeci">static void waitUntilInitialised()</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_adapter_8cc_source.html#l00024">DoocsAdapter.cc:24</a></div></div>
-<div class="ttc" id="struct_global_fixture_html_ae53b0447f01f4c125c50be2035158c97"><div class="ttname"><a href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a></div><div class="ttdeci">ReferenceTestApplication referenceTestApplication</div><div class="ttdef"><b>Definition:</b> <a href="server_test_auto_create_locations_8cpp_source.html#l00030">serverTestAutoCreateLocations.cpp:30</a></div></div>
-<div class="ttc" id="struct_global_fixture_html_a6da5db95b6a905a3cc0470dc80e9c4f0"><div class="ttname"><a href="struct_global_fixture.html#a6da5db95b6a905a3cc0470dc80e9c4f0">GlobalFixture::server</a></div><div class="ttdeci">ThreadedDoocsServer server</div><div class="ttdef"><b>Definition:</b> <a href="server_test_auto_create_locations_8cpp_source.html#l00031">serverTestAutoCreateLocations.cpp:31</a></div></div>
-<div class="ttc" id="struct_global_fixture_html"><div class="ttname"><a href="struct_global_fixture.html">GlobalFixture</a></div><div class="ttdef"><b>Definition:</b> <a href="server_test_auto_create_locations_8cpp_source.html#l00022">serverTestAutoCreateLocations.cpp:22</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code" href="struct_global_fixture.html">GlobalFixture</a> {                                                                                               \</div><div class="line">    GlobalFixture() {                                                                                                  \</div><div class="line">      rpcNo = <a class="code" href="struct_global_fixture.html#ab299e97573c5ec9fb32c02789a138af5">server</a>.rpcNo();                                                                                          <a class="code" href="class_chimera_t_k_1_1_doocs_adapter.html#a95c4448e95dcf81fd189c172306d8e38">\</a></div><div class="line"><a class="code" href="class_chimera_t_k_1_1_doocs_adapter.html#a95c4448e95dcf81fd189c172306d8e38">      ChimeraTK::DoocsAdapter::waitUntilInitialised</a>();                                                                 <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">\</a></div><div class="line"><a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">      GlobalFixture::referenceTestApplication</a>.initialiseManualLoopControl();                                           \</div><div class="line">      codeBlockStartUp                                                                                                 \</div><div class="line">    }                                                                                                                  \</div><div class="line">                                                                                                                       \</div><div class="line">    ~GlobalFixture() { <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>.releaseManualLoopControl(); }                           \</div><div class="line">                                                                                                                       \</div><div class="line">    static ReferenceTestApplication <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">referenceTestApplication</a>;                                                          \</div><div class="line">    static std::string rpcNo;                                                                                          \</div><div class="line">    ThreadedDoocsServer <a class="code" href="struct_global_fixture.html#ab299e97573c5ec9fb32c02789a138af5">server</a>{framework::master_test_suite().p_name.value + <span class="stringliteral">&quot;.conf&quot;</span>,                                  \</div><div class="line">        framework::master_test_suite().argc, framework::master_test_suite().argv};                                     \</div><div class="line">  };                                                                                                                   \</div><div class="line">                                                                                                                       \</div><div class="line">  ReferenceTestApplication <a class="code" href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a>{BOOST_STRINGIZE(<a class="code" href="server_test_auto_create_locations_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>)};                \</div><div class="line">  std::string GlobalFixture::rpcNo;                                                                                    \</div><div class="line">  BOOST_GLOBAL_FIXTURE(<a class="code" href="struct_global_fixture.html">GlobalFixture</a>);</div><div class="ttc" id="struct_global_fixture_html_ab299e97573c5ec9fb32c02789a138af5"><div class="ttname"><a href="struct_global_fixture.html#ab299e97573c5ec9fb32c02789a138af5">GlobalFixture::server</a></div><div class="ttdeci">InternalTestServer server</div><div class="ttdef"><b>Definition:</b> <a href="server_test_auto_create_locations_8cpp_source.html#l00037">serverTestAutoCreateLocations.cpp:37</a></div></div>
+<div class="ttc" id="class_chimera_t_k_1_1_doocs_adapter_html_a95c4448e95dcf81fd189c172306d8e38"><div class="ttname"><a href="class_chimera_t_k_1_1_doocs_adapter.html#a95c4448e95dcf81fd189c172306d8e38">ChimeraTK::DoocsAdapter::waitUntilInitialised</a></div><div class="ttdeci">static void waitUntilInitialised()</div><div class="ttdef"><b>Definition:</b> <a href="_doocs_adapter_8cc_source.html#l00024">DoocsAdapter.cc:24</a></div></div>
+<div class="ttc" id="struct_global_fixture_html_ae53b0447f01f4c125c50be2035158c97"><div class="ttname"><a href="struct_global_fixture.html#ae53b0447f01f4c125c50be2035158c97">GlobalFixture::referenceTestApplication</a></div><div class="ttdeci">ReferenceTestApplication referenceTestApplication</div><div class="ttdef"><b>Definition:</b> <a href="server_test_auto_create_locations_8cpp_source.html#l00036">serverTestAutoCreateLocations.cpp:36</a></div></div>
+<div class="ttc" id="struct_global_fixture_html"><div class="ttname"><a href="struct_global_fixture.html">GlobalFixture</a></div><div class="ttdef"><b>Definition:</b> <a href="server_test_auto_create_locations_8cpp_source.html#l00028">serverTestAutoCreateLocations.cpp:28</a></div></div>
 <div class="ttc" id="server_test_auto_create_locations_8cpp_html_a6b2a3852db8bb19ab6909bac01859985"><div class="ttname"><a href="server_test_auto_create_locations_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a></div><div class="ttdeci">#define BOOST_TEST_MODULE</div><div class="ttdef"><b>Definition:</b> <a href="server_test_auto_create_locations_8cpp_source.html#l00001">serverTestAutoCreateLocations.cpp:1</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00024">24</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00023">23</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 
 </div>
 </div>
@@ -277,7 +277,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00168">168</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00166">166</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -331,7 +331,7 @@ template&lt;class DOOCS_T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00103">103</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00101">101</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -371,7 +371,7 @@ template&lt;class DOOCS_T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00049">49</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00047">47</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -412,7 +412,7 @@ template&lt;&gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>FIXME implement check on D_spectrum history/ ring buffer </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00056">56</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00054">54</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 
 </div>
 </div>
@@ -444,7 +444,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00061">61</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00059">59</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 
 </div>
 </div>
@@ -476,7 +476,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00063">63</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00061">61</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +508,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00065">65</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00063">63</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 
 </div>
 </div>
@@ -540,7 +540,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00067">67</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00065">65</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 
 </div>
 </div>
@@ -572,7 +572,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00069">69</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00067">67</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 
 </div>
 </div>
@@ -604,7 +604,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00071">71</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00069">69</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 
 </div>
 </div>
@@ -652,7 +652,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00211">211</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00209">209</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -712,7 +712,7 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00195">195</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00193">193</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 
 </div>
 </div>
@@ -737,7 +737,7 @@ template&lt;class DOOCS_T &gt; </div>
 <p>Used internally. </p>
 <p>ATTENTION: DOES NOT LOCK THE LOCATION. DO THIS MANUALLY BEFORE GETTING THE PROPERTY! </p>
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00087">87</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00085">85</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -765,7 +765,7 @@ template&lt;class DOOCS_T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00073">73</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00071">71</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -793,7 +793,7 @@ template&lt;class DOOCS_T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00142">142</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00140">140</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -829,7 +829,7 @@ template&lt;class DOOCS_T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00128">128</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_based_test_tools_8h_source.html#l00126">126</a> of file <a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -855,7 +855,7 @@ template&lt;class DOOCS_T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_dcba6dfd410a966f3c2ecded9b1039f6.html">include</a></li><li class="navelem"><a class="el" href="server_based_test_tools_8h.html">serverBasedTestTools.h</a></li>
-    <li class="footer">Generated on Fri Jun 5 2020 03:56:29 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Fri Jun 12 2020 03:56:01 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

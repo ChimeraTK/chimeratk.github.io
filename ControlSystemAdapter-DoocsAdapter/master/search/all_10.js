@@ -2,7 +2,7 @@ var searchData=
 [
   ['sendtoapplication',['sendToApplication',['../class_chimera_t_k_1_1_doocs_ifff.html#aaaa0cac1df491d46902f3038fb6efcbd',1,'ChimeraTK::DoocsIfff']]],
   ['sendtodevice',['sendToDevice',['../class_chimera_t_k_1_1_doocs_process_array.html#abae2235e5e58a63afb9049b56e79bea9',1,'ChimeraTK::DoocsProcessArray::sendToDevice()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a82a1c3ef4e19443909353485811dff6a',1,'ChimeraTK::DoocsSpectrum::sendToDevice()'],['../class_testable_doocs_spectrum.html#a9eddaf724a081b996ad683e79d176693',1,'TestableDoocsSpectrum::sendToDevice()']]],
-  ['server',['server',['../struct_global_fixture.html#a6da5db95b6a905a3cc0470dc80e9c4f0',1,'GlobalFixture']]],
+  ['server',['server',['../struct_global_fixture.html#ab299e97573c5ec9fb32c02789a138af5',1,'GlobalFixture::server()'],['../struct_global_fixture.html#a6da5db95b6a905a3cc0470dc80e9c4f0',1,'GlobalFixture::server()']]],
   ['serverbasedtesttools_2eh',['serverBasedTestTools.h',['../server_based_test_tools_8h.html',1,'']]],
   ['servertestautocreatelocations_2ecpp',['serverTestAutoCreateLocations.cpp',['../server_test_auto_create_locations_8cpp.html',1,'']]],
   ['servertestdatamatching_2ecpp',['serverTestDataMatching.cpp',['../server_test_data_matching_8cpp.html',1,'']]],
