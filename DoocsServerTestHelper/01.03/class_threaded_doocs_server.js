@@ -6,5 +6,6 @@ var class_threaded_doocs_server =
     [ "start", "class_threaded_doocs_server.html#a852bd6176b199c7f5cd343eddd6b99d5", null ],
     [ "_configFile", "class_threaded_doocs_server.html#a54993978ae146c2cf40d232528cef8c5", null ],
     [ "_doocsServerThread", "class_threaded_doocs_server.html#a16820a8bea285a0581a8cbcc5e802f7f", null ],
-    [ "_rpcNo", "class_threaded_doocs_server.html#ac12692b92772ac8413faaa268fe77930", null ]
+    [ "_rpcNo", "class_threaded_doocs_server.html#ac12692b92772ac8413faaa268fe77930", null ],
+    [ "_serverName", "class_threaded_doocs_server.html#adfc1f91c5dda65ea6df7d4b7294a922d", null ]
 ];

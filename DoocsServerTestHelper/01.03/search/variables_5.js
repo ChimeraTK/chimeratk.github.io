@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['server_5feq',['server_eq',['../doocs_server_test_helper_8cc.html#a00c3842df56e98215f0359d7d9af6a84',1,'doocsServerTestHelper.cc']]],
-  ['sigusr1_5flock',['sigusr1_lock',['../class_doocs_server_test_helper.html#aa39bde10238bf3b299d2bd4e5b7b1a25',1,'DoocsServerTestHelper']]],
-  ['sigusr1_5fmutex',['sigusr1_mutex',['../class_doocs_server_test_helper.html#a85f8e78715d01a566b48682f135dc16d',1,'DoocsServerTestHelper']]]
+  ['lastpromisesigusr1',['lastPromiseSigusr1',['../class_helper_test.html#a27bcaa3aa7e53e167bdf23ae61817e63',1,'HelperTest']]],
+  ['lastpromiseupdate',['lastPromiseUpdate',['../class_helper_test.html#aa8477dccd4a95cce047877b5b91558d3',1,'HelperTest']]]
 ];
