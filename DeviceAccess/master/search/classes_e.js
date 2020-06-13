@@ -16,7 +16,7 @@ var searchData=
   ['registercatalogue',['RegisterCatalogue',['../class_chimera_t_k_1_1_register_catalogue.html',1,'ChimeraTK']]],
   ['registercataloguetest',['RegisterCatalogueTest',['../class_register_catalogue_test.html',1,'']]],
   ['registercataloguetestsuite',['registerCatalogueTestSuite',['../classregister_catalogue_test_suite.html',1,'']]],
-  ['registerinfo',['RegisterInfo',['../class_chimera_t_k_1_1_register_info.html',1,'ChimeraTK::RegisterInfo'],['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html',1,'ChimeraTK::RegisterInfoMap::RegisterInfo'],['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html',1,'ChimeraTK::RebotProtocol0::RegisterInfo']]],
+  ['registerinfo',['RegisterInfo',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html',1,'ChimeraTK::RegisterInfoMap::RegisterInfo'],['../class_chimera_t_k_1_1_register_info.html',1,'ChimeraTK::RegisterInfo'],['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html',1,'ChimeraTK::RebotProtocol0::RegisterInfo']]],
   ['registerinfomap',['RegisterInfoMap',['../class_chimera_t_k_1_1_register_info_map.html',1,'ChimeraTK']]],
   ['registerpath',['RegisterPath',['../class_chimera_t_k_1_1_register_path.html',1,'ChimeraTK']]],
   ['registerpathtest',['RegisterPathTest',['../class_register_path_test.html',1,'']]],

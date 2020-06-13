@@ -17,6 +17,7 @@ var searchData=
   ['exception_2eh',['Exception.h',['../exception_2include_2_exception_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_exception_8h.html',1,'(Global Namespace)']]],
   ['exceptiondummy',['ExceptionDummy',['../class_chimera_t_k_1_1_exception_dummy.html',1,'ChimeraTK::ExceptionDummy'],['../class_chimera_t_k_1_1_exception_dummy.html#af9d7b6889e101ce97fd4321a2e380e3e',1,'ChimeraTK::ExceptionDummy::ExceptionDummy()'],['../test_exception_dummy_device_8cc.html#a46db3fa07daf73263818dfdf6a0041d7',1,'exceptionDummy():&#160;testExceptionDummyDevice.cc']]],
   ['exceptiondummybackend_2eh',['ExceptionDummyBackend.h',['../_exception_dummy_backend_8h.html',1,'']]],
+  ['exceptionhandlingresult',['ExceptionHandlingResult',['../struct_chimera_t_k_1_1_transfer_group_1_1_exception_handling_result.html',1,'ChimeraTK::TransferGroup::ExceptionHandlingResult'],['../struct_chimera_t_k_1_1_transfer_group_1_1_exception_handling_result.html#a51ac6bff048f56abbcc9db61d8837e2a',1,'ChimeraTK::TransferGroup::ExceptionHandlingResult::ExceptionHandlingResult()']]],
   ['exceptions_20and_20recovery',['Exceptions and recovery',['../exceptions.html',1,'']]],
   ['exceptions_2edox',['exceptions.dox',['../exceptions_8dox.html',1,'']]],
   ['existing_5fdevice',['EXISTING_DEVICE',['../test_dummy_backend_8cpp.html#af608de2728bb17c300bd9cfdd7cd8115',1,'testDummyBackend.cpp']]],

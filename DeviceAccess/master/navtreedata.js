@@ -98,13 +98,14 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#afa886caa84a39ab94f4be19088898dac",
 "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a1d1052c41073932d547b3e91a4bbf943",
 "class_chimera_t_k_1_1_register_info_map.html#aae48ed78bd3c2e77a09cda66669f03e0",
-"class_chimera_t_k_1_1_transfer_element.html#a8fffb069722f43530cecbcaa40b7c670",
-"class_example_backend.html#ac2d7f01de8bbc5d71a0099918ffd62a7",
-"device_2include_2_transfer_group_8h_source.html",
-"functions_func_u.html",
-"parser_utilities_8cc.html#a529f65d15e870ea369edaa98ad14ec84",
-"structdevice__ioctrl__dma.html#a0b2c5967b28765ba545b56dcb88c2762",
-"test_l_map_type_hint_modifier_plugin_8cc_source.html"
+"class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946",
+"class_example_backend.html#ab28efb9790bba3ba0d7f5878c53f14e2",
+"device_2include_2_transfer_group_8h.html",
+"functions_func_t.html",
+"parser_utilities_8cc.html#a4b7d71c43b5b99282686080779736272",
+"structaccess_private_data_1_1stowed.html",
+"test_l_map_monostable_trigger_plugin_8cpp.html#a6b2a3852db8bb19ab6909bac01859985",
+"util_2include_2_virtual_function_template_8h.html#af17cdfe4bdc6a97d29cda32a0253187f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

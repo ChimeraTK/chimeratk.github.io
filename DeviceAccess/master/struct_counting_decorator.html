@@ -114,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae81401eba39087a200e2c98954fc9c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary. ">preRead()</a>.  <a href="#ae81401eba39087a200e2c98954fc9c93">More...</a><br /></td></tr>
 <tr class="separator:ae81401eba39087a200e2c98954fc9c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a849c1c3e778931356175326d2fe531"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_counting_decorator.html#a1a849c1c3e778931356175326d2fe531">doPostRead</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type, bool hasNewData) override</td></tr>
-<tr class="memdesc:a1a849c1c3e778931356175326d2fe531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a71aa608f151dbe46289a6214dd5ece4b" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>.  <a href="#a1a849c1c3e778931356175326d2fe531">More...</a><br /></td></tr>
+<tr class="memdesc:a1a849c1c3e778931356175326d2fe531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aebd5de52d8f625ea84ec0b17224c316c" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>.  <a href="#a1a849c1c3e778931356175326d2fe531">More...</a><br /></td></tr>
 <tr class="separator:a1a849c1c3e778931356175326d2fe531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae33d96421e851799c9712b6630d2f62d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_counting_decorator.html#ae33d96421e851799c9712b6630d2f62d">doPreWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber) override</td></tr>
 <tr class="memdesc:ae33d96421e851799c9712b6630d2f62d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa8dbf971f07658c489d452016244e1a5" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>.  <a href="#ae33d96421e851799c9712b6630d2f62d">More...</a><br /></td></tr>
@@ -204,7 +204,7 @@ Public Attributes</h2></td></tr>
 struct CountingDecorator&lt; T &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00555">555</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00576">576</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a86505de3b2c8edc75e644b1b4bbee0c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86505de3b2c8edc75e644b1b4bbee0c7">&#9670;&nbsp;</a></span>CountingDecorator()</h2>
@@ -242,7 +242,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00558">558</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00579">579</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -283,8 +283,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a71aa608f151dbe46289a6214dd5ece4b" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. </p>
-<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a71aa608f151dbe46289a6214dd5ece4b" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
+<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aebd5de52d8f625ea84ec0b17224c316c" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>. </p>
+<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aebd5de52d8f625ea84ec0b17224c316c" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
 <p>No actual communication may be done. Hence, no runtime_error exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown.</p>
 <p>Notes for backend implementations:</p><ul>
 <li>If the flag hasNewData is false, the user buffer must stay unaltered. This is true also if the backend did not throw any exception and did not return false in the doReadTransfer...() call. The flag is also controlled by the TransferGroup and will be set to false, if an exception has been seen on any other transfer. </li>
@@ -292,7 +292,7 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00571">571</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00592">592</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -338,7 +338,7 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7c0a6bc5c1779ce47afe7871573ef2a1">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00581">581</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00602">602</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -374,7 +374,7 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a60d3b43f03bed1cf27c57fd7e0c76127">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00566">566</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00587">587</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -420,7 +420,7 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00576">576</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00597">597</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -459,7 +459,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a948f1bec4d00fce4ef5d5ea8fc35f8d5">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00586">586</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00607">607</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -497,7 +497,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00591">591</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00612">612</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -532,7 +532,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a36b8f2cad449056d909560e371c78229">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00596">596</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00617">617</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -569,7 +569,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a561932e1a87dcc57cb3525a9980bdf49">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00615">615</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00636">636</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -606,7 +606,7 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#acfe89e1cf7c5d45797fd062b9faaea6a">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00624">624</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00645">645</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -641,7 +641,7 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a791a4902b649e859fbadea20cc90ede2">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00605">605</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00626">626</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -678,7 +678,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00632">632</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00653">653</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -697,7 +697,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00643">643</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00664">664</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -715,7 +715,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00645">645</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00666">666</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -733,7 +733,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00647">647</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00668">668</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -751,7 +751,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00644">644</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00665">665</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -769,7 +769,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00646">646</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00667">667</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -787,7 +787,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00648">648</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00669">669</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -805,7 +805,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00650">650</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00671">671</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -823,7 +823,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00649">649</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00670">670</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -841,7 +841,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00651">651</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00672">672</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 
 </div>
 </div>
@@ -854,7 +854,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_counting_decorator.html">CountingDecorator</a></li>
-    <li class="footer">Generated on Fri Jun 12 2020 03:53:12 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Jun 13 2020 03:53:11 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

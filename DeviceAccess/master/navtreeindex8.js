@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"device_2include_2_transfer_group_8h.html":[17,0,0,0,17],
 "device_2include_2_transfer_group_8h_source.html":[17,0,0,0,17],
 "device_2include_2_two_d_register_accessor_8h.html":[17,0,0,0,18],
 "device_2include_2_two_d_register_accessor_8h_source.html":[17,0,0,0,18],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "functions_func_o.html":[16,3,1,12],
 "functions_func_p.html":[16,3,1,13],
 "functions_func_r.html":[16,3,1,14],
-"functions_func_s.html":[16,3,1,15],
-"functions_func_t.html":[16,3,1,16]
+"functions_func_s.html":[16,3,1,15]
 };

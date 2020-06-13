@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </ul>
 </li>
 <li>6.6 postXxx(), public<ul>
-<li>void <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a71aa608f151dbe46289a6214dd5ece4b" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">TransferElement::postRead(TransferType type, bool updateDataBuffer)</a></li>
+<li>void <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aebd5de52d8f625ea84ec0b17224c316c" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">TransferElement::postRead(TransferType type, bool updateDataBuffer)</a></li>
 <li>void <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write cleanups if necessary. ">TransferElement::postWrite(TransferType type, VersionNumber versionNumber)</a></li>
 </ul>
 </li>
@@ -251,7 +251,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li><a class="anchor" id="transferElement_B_6"></a>6. Exceptions thrown in doPreXxx(), doXxxTransferYyy() or received on the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab824c85c63163e76ccda588ef4768f68" title="The queue for asyncronous read transfers. ">TransferElement::_readQueue</a> are caught and delayed until postXxx() by the framework. This ensures that preXxx() and postXxx() are always called in pairs. [<a class="el" href="test_transfer_element_8cpp.html#testTransferElement_B_6">T</a>]<ul>
 <li><a class="anchor" id="transferElement_B_6_1"></a>6.1 If in preXxx() an exception is thrown, the corresponding xxxTransferYyy() is not called, instead directly postXxx() is called. [<a class="el" href="class_transfer_element_test_accessor.html#testTransferElement_B_6_1_read">T</a>, <a class="el" href="class_transfer_element_test_accessor.html#testTransferElement_B_6_1_write">T</a>]</li>
 <li>6.2 To ensure <a class="el" href="spec__transfer_element.html#transferElement_B_6_1">6.1</a> is guaranteed with decorators, the exception has to be caught and stored in the outermost decorator, i.e. in the public xxxYyy() which delegate to the transfers.</li>
-<li>6.3 To ensure that the ApplicationCore ExeptionHandlingDecorator works in combination with other decorators, each decorator has to pass the stored exception to its target, and it has to be re-thrown in the doPostRead() of the layer where the exception originated (see <a class="el" href="spec__transfer_element.html#transferElement_C_2">C.2</a>)</li>
+<li><a class="anchor" id="transferElement_B_6_3"></a>6.3 To ensure that the ApplicationCore ExeptionHandlingDecorator works in combination with other decorators, each decorator has to pass the stored exception to its target, and it has to be re-thrown in the doPostRead() of the layer where the exception originated (see <a class="el" href="spec__transfer_element.html#transferElement_C_2">C.2</a>) <a class="el" href="test_transfer_element_8cpp.html#testTransferElement_B_6_3">[T]</a></li>
 <li><a class="anchor" id="transferElement_B_6_4"></a>6.4 When an exception is finally thrown by a <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>, the application buffer must still be unchanged. <a class="el" href="spec__transfer_element.html#transferElement_comment_B_6_4">(*)</a></li>
 </ul>
 </li>
@@ -549,7 +549,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jun 12 2020 03:53:12 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Jun 13 2020 03:53:11 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
