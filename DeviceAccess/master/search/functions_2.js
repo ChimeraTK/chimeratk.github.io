@@ -12,6 +12,7 @@ var searchData=
   ['checkforunknownflags',['checkForUnknownFlags',['../class_chimera_t_k_1_1_access_mode_flags.html#a785c39a24b2731c30a05d04798242883',1,'ChimeraTK::AccessModeFlags']]],
   ['checkpointersarenotnull',['checkPointersAreNotNull',['../class_chimera_t_k_1_1_device.html#a9e472f646192fb1b56a5fe83cc02507b',1,'ChimeraTK::Device']]],
   ['checkregister',['checkRegister',['../class_chimera_t_k_1_1_numeric_addressed_backend.html#ad3d2a68b3f4421dfd456bdbd57f31f9b',1,'ChimeraTK::NumericAddressedBackend']]],
+  ['checkremotevalue',['checkRemoteValue',['../class_unified_backend_test.html#ae31238c6b6a3f67eb13e985dae5de0e7',1,'UnifiedBackendTest']]],
   ['checksizeismultipleofwordsize',['checkSizeIsMultipleOfWordSize',['../class_chimera_t_k_1_1_dummy_backend_base.html#a03400490d8472157eca70455f8313ba8',1,'ChimeraTK::DummyBackendBase']]],
   ['checktocooked',['checkToCooked',['../test_fixed_point_converter_8cpp.html#ad882e15ec48ff47ceb050e573c2cc1df',1,'testFixedPointConverter.cpp']]],
   ['checktocookedoverflowneg',['checkToCookedOverflowNeg',['../test_fixed_point_converter_8cpp.html#adc3ac53eaca804f520f6e447f9589ce1',1,'testFixedPointConverter.cpp']]],

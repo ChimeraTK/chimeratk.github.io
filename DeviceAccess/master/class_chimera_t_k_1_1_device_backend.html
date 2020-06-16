@@ -142,6 +142,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae27b29c1570a6f749efdb0dfe4f2972d"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#ae27b29c1570a6f749efdb0dfe4f2972d">readDeviceInfo</a> ()=0</td></tr>
 <tr class="memdesc:ae27b29c1570a6f749efdb0dfe4f2972d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a device information string containing hardware details like the firmware version number or the slot number used by the board.  <a href="#ae27b29c1570a6f749efdb0dfe4f2972d">More...</a><br /></td></tr>
 <tr class="separator:ae27b29c1570a6f749efdb0dfe4f2972d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5332e4cddac1f176352f53cf3dbcbf31"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a5332e4cddac1f176352f53cf3dbcbf31">setException</a> ()=0</td></tr>
+<tr class="memdesc:a5332e4cddac1f176352f53cf3dbcbf31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the backend into an exception state.  <a href="#a5332e4cddac1f176352f53cf3dbcbf31">More...</a><br /></td></tr>
+<tr class="separator:a5332e4cddac1f176352f53cf3dbcbf31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513692593b6dc8babc9544d9bfea04c8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a513692593b6dc8babc9544d9bfea04c8">activateAsyncRead</a> () noexcept</td></tr>
+<tr class="memdesc:a513692593b6dc8babc9544d9bfea04c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate asyncronous read for all transfer elements where <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> is set.  <a href="#a513692593b6dc8babc9544d9bfea04c8">More...</a><br /></td></tr>
+<tr class="separator:a513692593b6dc8babc9544d9bfea04c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade6ceb13d1f554138f8d3180cca88ba6"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:ade6ceb13d1f554138f8d3180cca88ba6"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#ade6ceb13d1f554138f8d3180cca88ba6">getRegisterAccessor</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, bool enforceRawAccess)</td></tr>
 <tr class="memdesc:ade6ceb13d1f554138f8d3180cca88ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">DEPRECATED.  <a href="#ade6ceb13d1f554138f8d3180cca88ba6">More...</a><br /></td></tr>
@@ -186,6 +192,45 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a513692593b6dc8babc9544d9bfea04c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a513692593b6dc8babc9544d9bfea04c8">&#9670;&nbsp;</a></span>activateAsyncRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::DeviceBackend::activateAsyncRead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Activate asyncronous read for all transfer elements where <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> is set. </p>
+<p>If <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set...">Device::activateAsyncRead()</a> is called while the device is not opened or has an error, this call has no effect. If it is called when no deactivated transfer element exists, this call also has no effect. When <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set...">Device::activateAsyncRead()</a> returns, it is not guaranteed that all initial values have been received already.</p>
+<p>For more details, see <a class="el" href="spec__transfer_element.html#transferElement_B_8_5">Technical specification: TransferElement B.8.5</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_device_backend_8h_source.html#l00088">88</a> of file <a class="el" href="device__backends_2include_2_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_backend_a513692593b6dc8babc9544d9bfea04c8_cgraph.svg" width="464" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a655b8995589b3916ce9b71633f8fe33e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a655b8995589b3916ce9b71633f8fe33e">&#9670;&nbsp;</a></span>close()</h2>
 
@@ -285,13 +330,13 @@ template&lt;typename UserType &gt; </div>
 
 <p>Get a <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor. ">NDRegisterAccessor</a> object from the register name. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_device_backend_8h_source.html#l00100">100</a> of file <a class="el" href="device__backends_2include_2_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_device_backend_8h_source.html#l00116">116</a> of file <a class="el" href="device__backends_2include_2_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_backend_a85a134106068b02a89cbfa9a4559ccfc_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_backend_a85a134106068b02a89cbfa9a4559ccfc_icgraph.svg" width="100%" height="400"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -341,7 +386,7 @@ template&lt;typename UserType &gt; </div>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000064">Deprecated:</a></b></dt><dd>{ This function is deprecated. Do not use the backend directly, always use a <a class="el" href="class_chimera_t_k_1_1_device.html" title="Class allows to read/write registers from device. ">Device</a>. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000062">Todo:</a></b></dt><dd>Add runtine warning after release of version 0.12 } </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_device_backend_8h_source.html#l00109">109</a> of file <a class="el" href="device__backends_2include_2_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_device_backend_8h_source.html#l00125">125</a> of file <a class="el" href="device__backends_2include_2_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -402,6 +447,14 @@ template&lt;typename UserType &gt; </div>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000063">Todo:</a></b></dt><dd>Add runtime warning after release of version 0.9 } </dd></dl>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#aa1e029731af6f317c7ba134e169d9e16">ChimeraTK::DeviceBackendImpl</a>, and <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a88cfce526ebe714e872d10cb15709800">ChimeraTK::NumericAddressedBackend</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_backend_aa0f072cc0811a8d72c787849a47f4fcf_icgraph.svg" width="464" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -550,7 +603,37 @@ template&lt;typename UserType &gt; </div>
 <p>Return a device information string containing hardware details like the firmware version number or the slot number used by the board. </p>
 <p>The format and contained information of this string is completely backend implementation dependent, so the string may only be printed to the user as an informational output. Do not try to parse this string or extract information from it programmatically. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#aa031066178cd12f936af25aefbd2a591">ChimeraTK::RebotBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#a6d56cd361c4aa9af0befcc9efd4adbe4">ChimeraTK::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a0a6a12f58740d8ab15dd0d280b581bc0">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ab828431ccd2b4255ccc0ba469d1999f0">ChimeraTK::SubdeviceBackend</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a9c8176ef109558bdff21ad025242698a">ChimeraTK::SharedDummyBackend</a>, <a class="el" href="class_example_backend.html#ac2d7f01de8bbc5d71a0099918ffd62a7">ExampleBackend</a>, <a class="el" href="class_async_test_dummy.html#ab5eec23df8c5bbea58f4e1a77a9c9b06">AsyncTestDummy</a>, <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a8a63092ddf7030074e927eeaf67c5b13">ChimeraTK::LogicalNameMappingBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a6c0c6390d697ba054d377d2f96082dbc">ChimeraTK::NumericAddressedBackend</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#a6d56cd361c4aa9af0befcc9efd4adbe4">ChimeraTK::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#aa031066178cd12f936af25aefbd2a591">ChimeraTK::RebotBackend</a>, <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a0a6a12f58740d8ab15dd0d280b581bc0">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ab828431ccd2b4255ccc0ba469d1999f0">ChimeraTK::SubdeviceBackend</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a9c8176ef109558bdff21ad025242698a">ChimeraTK::SharedDummyBackend</a>, <a class="el" href="class_example_backend.html#ac2d7f01de8bbc5d71a0099918ffd62a7">ExampleBackend</a>, <a class="el" href="class_async_test_dummy.html#ab5eec23df8c5bbea58f4e1a77a9c9b06">AsyncTestDummy</a>, <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a8a63092ddf7030074e927eeaf67c5b13">ChimeraTK::LogicalNameMappingBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a6c0c6390d697ba054d377d2f96082dbc">ChimeraTK::NumericAddressedBackend</a>.</p>
+
+</div>
+</div>
+<a id="a5332e4cddac1f176352f53cf3dbcbf31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5332e4cddac1f176352f53cf3dbcbf31">&#9670;&nbsp;</a></span>setException()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ChimeraTK::DeviceBackend::setException </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the backend into an exception state. </p>
+<p>All backends must remember this, turn off asyncronous reads and all accessors will throw a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> on read and write operations, saying that there is a "previous, unrecovered fault", until <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a9da6866e3f0b481e1fcc13985382f5f9" title="Open the device. ">open()</a> has been called successfully. </p>
+
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ae31023a5d3bd9e0e129a6738ccd96b4b">ChimeraTK::SubdeviceBackend</a>, <a class="el" href="class_async_test_dummy.html#a499dd48bdca5ca0262fab7bd824b555f">AsyncTestDummy</a>, <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#aa97f0aaacd0ae3db157bfd330c34a16f">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#a5362cfc3ecaf3be2ce5ea8b639da99be">ChimeraTK::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#af89ca050e6b82d5632d95862a9dba31f">ChimeraTK::RebotBackend</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a9813ee0b4f9a0b9aa3439114447c3bd6">ChimeraTK::SharedDummyBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a9cd1370e52314a5c8c20bf6885f77236">ChimeraTK::LogicalNameMappingBackend</a>.</p>
 
 </div>
 </div>
@@ -564,7 +647,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a></li>
-    <li class="footer">Generated on Sat Jun 13 2020 03:53:11 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue Jun 16 2020 03:53:14 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

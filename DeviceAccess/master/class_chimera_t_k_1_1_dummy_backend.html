@@ -146,6 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a27fa3031e73c504d0e9964df66288b79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_dummy_register_raw_accessor.html">DummyRegisterRawAccessor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a27fa3031e73c504d0e9964df66288b79">getRawAccessor</a> (std::string module, std::string register_name)</td></tr>
 <tr class="memdesc:a27fa3031e73c504d0e9964df66288b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a raw accessor to the underlying memory with the convenience of using register names.  <a href="#a27fa3031e73c504d0e9964df66288b79">More...</a><br /></td></tr>
 <tr class="separator:a27fa3031e73c504d0e9964df66288b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97f0aaacd0ae3db157bfd330c34a16f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#aa97f0aaacd0ae3db157bfd330c34a16f">setException</a> () override</td></tr>
+<tr class="memdesc:aa97f0aaacd0ae3db157bfd330c34a16f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the backend into an exception state.  <a href="#aa97f0aaacd0ae3db157bfd330c34a16f">More...</a><br /></td></tr>
+<tr class="separator:aa97f0aaacd0ae3db157bfd330c34a16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html">ChimeraTK::NumericAddressedBackend</a></td></tr>
 <tr class="memitem:a6d8802ff0005f775c7728bdb064d3d18 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a6d8802ff0005f775c7728bdb064d3d18">NumericAddressedBackend</a> (std::string mapFileName=&quot;&quot;)</td></tr>
 <tr class="separator:a6d8802ff0005f775c7728bdb064d3d18 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,6 +192,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a85a134106068b02a89cbfa9a4559ccfc inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3feea5c1b2cdfbafa6aec22c86dbe6dd inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a3feea5c1b2cdfbafa6aec22c86dbe6dd">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a> (getRegisterAccessor_impl, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; T &gt;&gt;(const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;, size_t, size_t, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>))</td></tr>
 <tr class="separator:a3feea5c1b2cdfbafa6aec22c86dbe6dd inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513692593b6dc8babc9544d9bfea04c8 inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a513692593b6dc8babc9544d9bfea04c8">activateAsyncRead</a> () noexcept</td></tr>
+<tr class="memdesc:a513692593b6dc8babc9544d9bfea04c8 inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate asyncronous read for all transfer elements where <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> is set.  <a href="class_chimera_t_k_1_1_device_backend.html#a513692593b6dc8babc9544d9bfea04c8">More...</a><br /></td></tr>
+<tr class="separator:a513692593b6dc8babc9544d9bfea04c8 inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade6ceb13d1f554138f8d3180cca88ba6 inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:ade6ceb13d1f554138f8d3180cca88ba6 inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#ade6ceb13d1f554138f8d3180cca88ba6">getRegisterAccessor</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, bool enforceRawAccess)</td></tr>
 <tr class="memdesc:ade6ceb13d1f554138f8d3180cca88ba6 inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">DEPRECATED.  <a href="class_chimera_t_k_1_1_device_backend.html#ade6ceb13d1f554138f8d3180cca88ba6">More...</a><br /></td></tr>
@@ -266,6 +272,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a285d504ac33efcead9ba2da059a70cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4747061060c35e1c02296dd2cbe94e6f"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a4747061060c35e1c02296dd2cbe94e6f">mutex</a></td></tr>
 <tr class="separator:a4747061060c35e1c02296dd2cbe94e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c74575edf290a396cd8439dbf3049ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a9c74575edf290a396cd8439dbf3049ed">_hasActiveException</a> {false}</td></tr>
+<tr class="separator:a9c74575edf290a396cd8439dbf3049ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_dummy_backend_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_dummy_backend_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html">ChimeraTK::DummyBackendBase&lt; DummyBackend &gt;</a></td></tr>
 <tr class="memitem:a3c3508ff1a9b9ffdabe6546a851ec2ea inherit pro_attribs_class_chimera_t_k_1_1_dummy_backend_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_chimera_t_k.html#a7b983744ce153647b8fa3c6552de8b0d">RegisterInfoMapPointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a3c3508ff1a9b9ffdabe6546a851ec2ea">_registerMapping</a></td></tr>
 <tr class="separator:a3c3508ff1a9b9ffdabe6546a851ec2ea inherit pro_attribs_class_chimera_t_k_1_1_dummy_backend_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -402,7 +410,7 @@ Friends</h2></td></tr>
 
 <p>A virtual address is an address is a virtual 64 bit address space which contains all bars. </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00094">94</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00101">101</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -442,7 +450,7 @@ Friends</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a655b8995589b3916ce9b71633f8fe33e">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00044">44</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00045">45</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -479,7 +487,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="_custom_backend_8cc-example.html#a4">CustomBackend.cc</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00191">191</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00198">198</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -533,7 +541,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00178">178</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00185">185</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -577,7 +585,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00130">130</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00137">137</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -622,7 +630,7 @@ Friends</h2></td></tr>
 
 <p>map of instance names and pointers to allow re-connecting to the same instance with multiple Devices </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00122">122</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00126">126</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -656,7 +664,7 @@ Friends</h2></td></tr>
 <p>This accessor had nothing to do with regular, <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> based accessors and serves as second, independet implementation for debugging.</p>
 <p>We have to use the old module/register interface because the dummy uses the old style mapping internally. </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00199">199</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00206">206</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -745,7 +753,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00110">110</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00117">117</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -801,7 +809,7 @@ Friends</h2></td></tr>
 
 <p>returns true if the ranges overlap and at least one of the overlapping registers can be written </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00157">157</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00164">164</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -912,7 +920,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a570eec6450d7229dfaa927f6cf816c99">ChimeraTK::ExceptionDummy</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00057">57</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00058">58</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-18-summary" class="dynsummary" style="display:block;">
@@ -960,7 +968,7 @@ Friends</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a6c0c6390d697ba054d377d2f96082dbc">ChimeraTK::NumericAddressedBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00088">88</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00095">95</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-20-summary" class="dynsummary" style="display:block;">
@@ -995,7 +1003,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00033">33</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00034">34</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-21-summary" class="dynsummary" style="display:block;">
@@ -1039,7 +1047,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00121">121</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00128">128</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-23-summary" class="dynsummary" style="display:block;">
@@ -1056,6 +1064,38 @@ Friends</h2></td></tr>
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_dummy_backend_ad604f70e94234f037cd01853b0765ce4_icgraph.svg" width="100%" height="525"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
+
+</div>
+</div>
+<a id="aa97f0aaacd0ae3db157bfd330c34a16f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa97f0aaacd0ae3db157bfd330c34a16f">&#9670;&nbsp;</a></span>setException()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::DummyBackend::setException </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the backend into an exception state. </p>
+<p>All backends must remember this, turn off asyncronous reads and all accessors will throw a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> on read and write operations, saying that there is a "previous, unrecovered fault", until <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a2c3076ae91f3156e33482a89bfad394a" title="Open the device. ">open()</a> has been called successfully. </p>
+
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a5332e4cddac1f176352f53cf3dbcbf31">ChimeraTK::DeviceBackend</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00083">83</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1099,7 +1139,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00099">99</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00106">106</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-25-summary" class="dynsummary" style="display:block;">
@@ -1143,7 +1183,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00106">106</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00113">113</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-27-summary" class="dynsummary" style="display:block;">
@@ -1189,7 +1229,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00115">115</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00122">122</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-28-summary" class="dynsummary" style="display:block;">
@@ -1251,7 +1291,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#aa0937e8b84ce3377907a720b50b476df">ChimeraTK::ExceptionDummy</a>, and <a class="el" href="class_test_dummy.html#aaeabcba82a33d4f0cd44d68bc10089a2">TestDummy</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00068">68</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00072">72</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-29-summary" class="dynsummary" style="display:block;">
@@ -1314,7 +1354,7 @@ Friends</h2></td></tr>
 <p>Not write-protected function for internal use only. </p>
 <p>It does not trigger the callback function so it can be used inside a callback function for resynchronisation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00052">52</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8cc_source.html#l00053">53</a> of file <a class="el" href="_dummy_backend_8cc_source.html">DummyBackend.cc</a>.</p>
 <div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-31-summary" class="dynsummary" style="display:block;">
@@ -1347,7 +1387,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00127">127</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00131">131</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1373,7 +1413,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00134">134</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00138">138</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1401,7 +1441,7 @@ template&lt;typename T &gt; </div>
 
 <p>register accessors must be friends to access the map and the registers </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00131">131</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00135">135</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1425,7 +1465,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00136">136</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00140">140</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1449,7 +1489,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00137">137</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00141">141</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1474,7 +1514,31 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00098">98</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00100">100</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
+
+</div>
+</div>
+<a id="a9c74575edf290a396cd8439dbf3049ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c74575edf290a396cd8439dbf3049ed">&#9670;&nbsp;</a></span>_hasActiveException</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::DummyBackend::_hasActiveException {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00105">105</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1500,7 +1564,7 @@ template&lt;typename T &gt; </div>
 
 <p>name of the map file </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00096">96</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00098">98</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1524,7 +1588,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00099">99</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00101">101</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1548,7 +1612,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00100">100</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00102">102</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1572,7 +1636,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00101">101</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html#l00103">103</a> of file <a class="el" href="device__backends_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1586,7 +1650,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_dummy_backend.html">DummyBackend</a></li>
-    <li class="footer">Generated on Sat Jun 13 2020 03:53:11 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue Jun 16 2020 03:53:14 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

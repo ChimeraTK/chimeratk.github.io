@@ -97,8 +97,8 @@ $(document).ready(function(){initNavTree('class_unified_backend_test.html','');}
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test_1_1_action_list.html">ActionList</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Strong typedef" for list of pairs of functors for enabling and disbaling a test condition.  <a href="class_unified_backend_test_1_1_action_list.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test_1_1_enable_disable_action_list.html">EnableDisableActionList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Strong typedef" for list of pairs of functors for enabling and disbaling a test condition.  <a href="class_unified_backend_test_1_1_enable_disable_action_list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -106,12 +106,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a09a69d6aaa80ba20695b010bb91de958"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a09a69d6aaa80ba20695b010bb91de958">runTests</a> (const std::string &amp;cdd)</td></tr>
 <tr class="memdesc:a09a69d6aaa80ba20695b010bb91de958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute all tests.  <a href="#a09a69d6aaa80ba20695b010bb91de958">More...</a><br /></td></tr>
 <tr class="separator:a09a69d6aaa80ba20695b010bb91de958"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a994bd757e54484b87aed05710c2313ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a994bd757e54484b87aed05710c2313ea">forceRuntimeErrorOnRead</a> (const <a class="el" href="class_unified_backend_test_1_1_action_list.html">ActionList</a> &amp;list)</td></tr>
-<tr class="memdesc:a994bd757e54484b87aed05710c2313ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set list of enable/disable actions for the following test condition: Communication is broken, all reads fail with a runtime_error.  <a href="#a994bd757e54484b87aed05710c2313ea">More...</a><br /></td></tr>
-<tr class="separator:a994bd757e54484b87aed05710c2313ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07256bc5d1db5516e31d323ee0fbdcef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a07256bc5d1db5516e31d323ee0fbdcef">forceRuntimeErrorOnWrite</a> (const <a class="el" href="class_unified_backend_test_1_1_action_list.html">ActionList</a> &amp;list)</td></tr>
-<tr class="memdesc:a07256bc5d1db5516e31d323ee0fbdcef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set functor, which will do whatever necessary that the backend will throw a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> for any write operation.  <a href="#a07256bc5d1db5516e31d323ee0fbdcef">More...</a><br /></td></tr>
-<tr class="separator:a07256bc5d1db5516e31d323ee0fbdcef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8985a54a33a6cbc1cc1467b8a91802c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a8985a54a33a6cbc1cc1467b8a91802c2">setRemoteValue</a> (std::function&lt; void(const std::string &amp;, size_t)&gt; functor)</td></tr>
+<tr class="memdesc:a8985a54a33a6cbc1cc1467b8a91802c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set functor to set values in remote registers.  <a href="#a8985a54a33a6cbc1cc1467b8a91802c2">More...</a><br /></td></tr>
+<tr class="separator:a8985a54a33a6cbc1cc1467b8a91802c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31238c6b6a3f67eb13e985dae5de0e7"><td class="memTemplParams" colspan="2">template&lt;typename LAMBDA &gt; </td></tr>
+<tr class="memitem:ae31238c6b6a3f67eb13e985dae5de0e7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#ae31238c6b6a3f67eb13e985dae5de0e7">checkRemoteValue</a> (LAMBDA lambda)</td></tr>
+<tr class="memdesc:ae31238c6b6a3f67eb13e985dae5de0e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set functor to check values in remote registers.  <a href="#ae31238c6b6a3f67eb13e985dae5de0e7">More...</a><br /></td></tr>
+<tr class="separator:ae31238c6b6a3f67eb13e985dae5de0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9197b13cacc01ab3f28b0d02eba0455"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#ae9197b13cacc01ab3f28b0d02eba0455">forceRuntimeErrorOnRead</a> (const <a class="el" href="class_unified_backend_test_1_1_enable_disable_action_list.html">EnableDisableActionList</a> &amp;list)</td></tr>
+<tr class="memdesc:ae9197b13cacc01ab3f28b0d02eba0455"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set list of enable/disable actions for the following test condition: Communication is broken, all reads fail with a runtime_error.  <a href="#ae9197b13cacc01ab3f28b0d02eba0455">More...</a><br /></td></tr>
+<tr class="separator:ae9197b13cacc01ab3f28b0d02eba0455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a04911d1d45beabc64911c12ada9b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#af9a04911d1d45beabc64911c12ada9b9">forceRuntimeErrorOnWrite</a> (const <a class="el" href="class_unified_backend_test_1_1_enable_disable_action_list.html">EnableDisableActionList</a> &amp;list)</td></tr>
+<tr class="memdesc:af9a04911d1d45beabc64911c12ada9b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set functor, which will do whatever necessary that the backend will throw a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> for any write operation.  <a href="#af9a04911d1d45beabc64911c12ada9b9">More...</a><br /></td></tr>
+<tr class="separator:af9a04911d1d45beabc64911c12ada9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e2e8d37e3e145ebd811b1ccb46488d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a68e2e8d37e3e145ebd811b1ccb46488d">quirkHookActivateAsyncRead</a> (std::function&lt; void(void)&gt; hook)</td></tr>
+<tr class="memdesc:a68e2e8d37e3e145ebd811b1ccb46488d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quirk hook: Call this functor after each call to activateAsyncRead().  <a href="#a68e2e8d37e3e145ebd811b1ccb46488d">More...</a><br /></td></tr>
+<tr class="separator:a68e2e8d37e3e145ebd811b1ccb46488d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3d035326a39fb8bf7c11502fb152b45"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:ab3d035326a39fb8bf7c11502fb152b45"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#ab3d035326a39fb8bf7c11502fb152b45">setSyncReadTestRegisters</a> (std::list&lt; std::string &gt; names)</td></tr>
 <tr class="memdesc:ab3d035326a39fb8bf7c11502fb152b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the names of synchronous read registers to be used for the tests.  <a href="#ab3d035326a39fb8bf7c11502fb152b45">More...</a><br /></td></tr>
@@ -131,14 +141,59 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Class to test any backend for correct behavior. </p>
 <p>Instantiate this class and call all (!) preparatory functions to provide the tests with the backend-specific test actions etc. Finally call <a class="el" href="class_unified_backend_test.html#a09a69d6aaa80ba20695b010bb91de958" title="Execute all tests. ">runTests()</a> to execute all tests. Internally the BOOST unit test framework is used, so this shall be called inside a normal unit test.</p>
 <p>Failing to call all preparatory functions will result in an error. This allows a safe test schema evolution - if more backend specific actions for enabling and disabling test conditions are needed for the tests and the backend test has not yet been updated, tests will fail.</p>
-<p>Actions are usually speficied as list of pairs of functors. The pair's first element is always the action to enable the the test condition, the second is the action to disable it. By providing multiple entries in the lists it is possible to test several code paths the backend has to end up in the intended test condition. For example in case of <a class="el" href="class_unified_backend_test.html#a994bd757e54484b87aed05710c2313ea" title="Set list of enable/disable actions for the following test condition: Communication is broken...">forceRuntimeErrorOnRead()</a>: runtime_errors in a read can be caused by a timeout in the communication channel, or by a bad reply of the device. Two list entries would be provided in this case, one to make read operations run into timeouts, and one to make the (dummy) device reply with garbage. If only one singe code path exists to get to the test condition, it is perfectly fine to have only a single entry in the list.</p>
+<p>Actions are usually speficied as list of pairs of functors. The pair's first element is always the action to enable the the test condition, the second is the action to disable it. By providing multiple entries in the lists it is possible to test several code paths the backend has to end up in the intended test condition. For example in case of <a class="el" href="class_unified_backend_test.html#ae9197b13cacc01ab3f28b0d02eba0455" title="Set list of enable/disable actions for the following test condition: Communication is broken...">forceRuntimeErrorOnRead()</a>: runtime_errors in a read can be caused by a timeout in the communication channel, or by a bad reply of the device. Two list entries would be provided in this case, one to make read operations run into timeouts, and one to make the (dummy) device reply with garbage. If only one singe code path exists to get to the test condition, it is perfectly fine to have only a single entry in the list.</p>
 <p>In the same way as for the actions, names of registers etc. are provided as lists, so all test can be repeated for different registers, if required for full coverage.</p>
 <p>Note: This is work in progress. Tests are by far not yet complete. Interface changes of the test class are also likely. </p>
 
 <p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00038">38</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a994bd757e54484b87aed05710c2313ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a994bd757e54484b87aed05710c2313ea">&#9670;&nbsp;</a></span>forceRuntimeErrorOnRead()</h2>
+<a id="ae31238c6b6a3f67eb13e985dae5de0e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae31238c6b6a3f67eb13e985dae5de0e7">&#9670;&nbsp;</a></span>checkRemoteValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename LAMBDA &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnifiedBackendTest::checkRemoteValue </td>
+          <td>(</td>
+          <td class="paramtype">LAMBDA&#160;</td>
+          <td class="paramname"><em>lambda</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set functor to check values in remote registers. </p>
+<p>The test will call this functor e.g. after reading the register through the backend, to compare the result with the value previously set via <a class="el" href="class_unified_backend_test.html#a8985a54a33a6cbc1cc1467b8a91802c2" title="Set functor to set values in remote registers. ">setRemoteValue()</a>.</p>
+<p>The first argument (const std::string&amp;) of the functor is the register name. The second argument (size_t) is an index used to identify the value. The same value has been passed previously to <a class="el" href="class_unified_backend_test.html#a8985a54a33a6cbc1cc1467b8a91802c2" title="Set functor to set values in remote registers. ">setRemoteValue()</a> (note that this was not necessarily the last call to <a class="el" href="class_unified_backend_test.html#a8985a54a33a6cbc1cc1467b8a91802c2" title="Set functor to set values in remote registers. ">setRemoteValue()</a>, hence the index is required to find the expected value). The third argument (auto -&gt; will be std::vector&lt;std::vector&lt;UserType&gt;&gt;&amp;) is the value which has been read through the accessor.</p>
+<p>The functor needs to convert the expected value into the given type of the 3rd argument. Then the comparison shall be performed with BOOST_CHECK_EQUAL for non-float, resp. BOOST_CHECK_CLOSE for float types.</p>
+<p>For the conversion, <a class="el" href="namespace_chimera_t_k.html#aa159464ac26217627bc921cc3e9f3c62" title="Helper function to convert numeric data into any UserType (even if it is a string etc...">ChimeraTK::numericToUserType()</a> should be used for convenience. The conversion should be done in the direction as described here (from original type into given UserType), so the information loss which might take place during conversion is the same as in the read operation.</p>
+<p>Note: If the original data type is a string there will never be any conversion expected, the 3rd argument will always be of the type std::string. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00087">87</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ae31238c6b6a3f67eb13e985dae5de0e7_cgraph.svg" width="372" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ae9197b13cacc01ab3f28b0d02eba0455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9197b13cacc01ab3f28b0d02eba0455">&#9670;&nbsp;</a></span>forceRuntimeErrorOnRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,7 +204,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void UnifiedBackendTest::forceRuntimeErrorOnRead </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_unified_backend_test_1_1_action_list.html">ActionList</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_unified_backend_test_1_1_enable_disable_action_list.html">EnableDisableActionList</a> &amp;&#160;</td>
           <td class="paramname"><em>list</em></td><td>)</td>
           <td></td>
         </tr>
@@ -163,12 +218,12 @@ Public Member Functions</h2></td></tr>
 
 <p>Set list of enable/disable actions for the following test condition: Communication is broken, all reads fail with a runtime_error. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00058">58</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00099">99</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
-<a id="a07256bc5d1db5516e31d323ee0fbdcef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07256bc5d1db5516e31d323ee0fbdcef">&#9670;&nbsp;</a></span>forceRuntimeErrorOnWrite()</h2>
+<a id="af9a04911d1d45beabc64911c12ada9b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a04911d1d45beabc64911c12ada9b9">&#9670;&nbsp;</a></span>forceRuntimeErrorOnWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,7 +234,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void UnifiedBackendTest::forceRuntimeErrorOnWrite </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_unified_backend_test_1_1_action_list.html">ActionList</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_unified_backend_test_1_1_enable_disable_action_list.html">EnableDisableActionList</a> &amp;&#160;</td>
           <td class="paramname"><em>list</em></td><td>)</td>
           <td></td>
         </tr>
@@ -193,7 +248,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Set functor, which will do whatever necessary that the backend will throw a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> for any write operation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00064">64</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00105">105</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +276,38 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00103">103</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00157">157</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a68e2e8d37e3e145ebd811b1ccb46488d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68e2e8d37e3e145ebd811b1ccb46488d">&#9670;&nbsp;</a></span>quirkHookActivateAsyncRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnifiedBackendTest::quirkHookActivateAsyncRead </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(void)&gt;&#160;</td>
+          <td class="paramname"><em>hook</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Quirk hook: Call this functor after each call to activateAsyncRead(). </p>
+<p>Note: When any quirk hook needs to be used to pass the test, the backend is <em>not</em> complying to the specifications. Hence, use quirk hooks <em>only</em> when it is impossible to implement the backed to fully comply to the specifications, because the implemented protocol is broken. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00114">114</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -244,13 +330,13 @@ Public Member Functions</h2></td></tr>
 <p>Execute all tests. </p>
 <p>Call this function within a BOOST_AUTO_TEST_CASE after calling all preparatory functions below. The tests are executed for the backend identified by the given CDD. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00133">133</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00206">206</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a09a69d6aaa80ba20695b010bb91de958_cgraph.svg" width="368" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a09a69d6aaa80ba20695b010bb91de958_cgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -285,7 +371,39 @@ template&lt;typename UserType &gt; </div>
 <p>Set the names of asynchronous read registers to be used for the tests. </p>
 <p>These registers must support AccessMode::wait_for_new_data. The registers must be readable. Registers may not appear in the list set via <a class="el" href="class_unified_backend_test.html#ab3d035326a39fb8bf7c11502fb152b45" title="Set the names of synchronous read registers to be used for the tests. ">setSyncReadTestRegisters()</a> as well, but they may appear in the list set through <a class="el" href="class_unified_backend_test.html#aeec3eaa5d9889831ac2bd6bc3a5634a2" title="Set the names of asynchronous read registers to be used for the tests. ">setWriteTestRegisters()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00085">85</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00139">139</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a8985a54a33a6cbc1cc1467b8a91802c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8985a54a33a6cbc1cc1467b8a91802c2">&#9670;&nbsp;</a></span>setRemoteValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnifiedBackendTest::setRemoteValue </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const std::string &amp;, size_t)&gt;&#160;</td>
+          <td class="paramname"><em>functor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set functor to set values in remote registers. </p>
+<p>The test will call this functor e.g. before reading the register through the backend, then verify the read value through <a class="el" href="class_unified_backend_test.html#ae31238c6b6a3f67eb13e985dae5de0e7" title="Set functor to check values in remote registers. ">checkRemoteValue()</a>.</p>
+<p>The first argument of the functor is the register name. The second argument is an index used to identify the value. The functor shall generate a quasi-unique value which is a member of the set of possible values the register can have, and assign the remote register to that value. If the functor is called again with the same index, the same value is supposed to be set. If it is called with a different index, a different value shall be used. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00064">64</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -318,12 +436,12 @@ template&lt;typename UserType &gt; </div>
 <p>Set the names of synchronous read registers to be used for the tests. </p>
 <p>These registers must <em>not</em> support AccessMode::wait_for_new_data. The registers must be readable. Registers may not appear in the list set via <a class="el" href="class_unified_backend_test.html#a6ee48dda943bdbb1e4ee6bce341c8a1d" title="Set the names of asynchronous read registers to be used for the tests. ">setAsyncReadTestRegisters()</a> as well, but they may appear in the list set through <a class="el" href="class_unified_backend_test.html#aeec3eaa5d9889831ac2bd6bc3a5634a2" title="Set the names of asynchronous read registers to be used for the tests. ">setWriteTestRegisters()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00072">72</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00126">126</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ab3d035326a39fb8bf7c11502fb152b45_icgraph.svg" width="448" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -359,7 +477,7 @@ template&lt;typename UserType &gt; </div>
 <p>Set the names of asynchronous read registers to be used for the tests. </p>
 <p>These registers must support AccessMode::wait_for_new_data. The registers must be readable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00097">97</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00151">151</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +490,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a></li>
-    <li class="footer">Generated on Sat Jun 13 2020 03:53:11 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue Jun 16 2020 03:53:14 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

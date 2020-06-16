@@ -59,6 +59,6 @@ var dir_f6c06f7a01da37196a5f6fe3a6212106 =
     [ "TransferElement.h", "device__backends_2include_2_transfer_element_8h.html", "device__backends_2include_2_transfer_element_8h" ],
     [ "UnifiedBackendTest.h", "_unified_backend_test_8h.html", [
       [ "UnifiedBackendTest", "class_unified_backend_test.html", "class_unified_backend_test" ],
-      [ "ActionList", "class_unified_backend_test_1_1_action_list.html", null ]
+      [ "EnableDisableActionList", "class_unified_backend_test_1_1_enable_disable_action_list.html", null ]
     ] ]
 ];

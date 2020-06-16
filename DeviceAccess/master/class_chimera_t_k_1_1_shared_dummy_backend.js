@@ -8,6 +8,7 @@ var class_chimera_t_k_1_1_shared_dummy_backend =
     [ "open", "class_chimera_t_k_1_1_shared_dummy_backend.html#a80a15441b3839ae89d0181f2fa3dddec", null ],
     [ "read", "class_chimera_t_k_1_1_shared_dummy_backend.html#a4308ce62fef9e4d8230bf34f22251eb2", null ],
     [ "readDeviceInfo", "class_chimera_t_k_1_1_shared_dummy_backend.html#a9c8176ef109558bdff21ad025242698a", null ],
+    [ "setException", "class_chimera_t_k_1_1_shared_dummy_backend.html#a9813ee0b4f9a0b9aa3439114447c3bd6", null ],
     [ "write", "class_chimera_t_k_1_1_shared_dummy_backend.html#acb98b5e99532f29dfe38a86b8f9b93fc", null ],
     [ "DummyBackendBase< SharedDummyBackend >", "class_chimera_t_k_1_1_shared_dummy_backend.html#a853033681f6e5b93f2d799046db52775", null ]
 ];

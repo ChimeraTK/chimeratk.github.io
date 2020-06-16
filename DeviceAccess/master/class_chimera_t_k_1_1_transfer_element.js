@@ -42,6 +42,7 @@ var class_chimera_t_k_1_1_transfer_element =
     [ "readTransfer", "class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77", null ],
     [ "readTransferNonBlocking", "class_chimera_t_k_1_1_transfer_element.html#ac53f4e5fb0474ea69ab4ae2f6348cef0", null ],
     [ "replaceTransferElement", "class_chimera_t_k_1_1_transfer_element.html#a791a4902b649e859fbadea20cc90ede2", null ],
+    [ "setActiveException", "class_chimera_t_k_1_1_transfer_element.html#adb356d062ef74ccc271a2f58328b295e", null ],
     [ "setDataValidity", "class_chimera_t_k_1_1_transfer_element.html#a0a63b80ca5f72d59f7d265b4242ed824", null ],
     [ "setPersistentDataStorage", "class_chimera_t_k_1_1_transfer_element.html#a70d4c154c564848bfb6b08992cdf7059", null ],
     [ "write", "class_chimera_t_k_1_1_transfer_element.html#ae9a9be48fa8f5cab72e62ce20d99004b", null ],

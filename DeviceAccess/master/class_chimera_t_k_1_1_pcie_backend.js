@@ -7,5 +7,6 @@ var class_chimera_t_k_1_1_pcie_backend =
     [ "open", "class_chimera_t_k_1_1_pcie_backend.html#a6c3004620460dd3657f3f583886af017", null ],
     [ "read", "class_chimera_t_k_1_1_pcie_backend.html#a23b98aec1088e239fd58d1fcea559699", null ],
     [ "readDeviceInfo", "class_chimera_t_k_1_1_pcie_backend.html#a6d56cd361c4aa9af0befcc9efd4adbe4", null ],
+    [ "setException", "class_chimera_t_k_1_1_pcie_backend.html#a5362cfc3ecaf3be2ce5ea8b639da99be", null ],
     [ "write", "class_chimera_t_k_1_1_pcie_backend.html#a39516fe0396948c81cc04a20a2ecfa83", null ]
 ];

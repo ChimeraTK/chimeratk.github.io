@@ -165,6 +165,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a85a134106068b02a89cbfa9a4559ccfc inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3feea5c1b2cdfbafa6aec22c86dbe6dd inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a3feea5c1b2cdfbafa6aec22c86dbe6dd">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a> (getRegisterAccessor_impl, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; T &gt;&gt;(const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;, size_t, size_t, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>))</td></tr>
 <tr class="separator:a3feea5c1b2cdfbafa6aec22c86dbe6dd inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513692593b6dc8babc9544d9bfea04c8 inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a513692593b6dc8babc9544d9bfea04c8">activateAsyncRead</a> () noexcept</td></tr>
+<tr class="memdesc:a513692593b6dc8babc9544d9bfea04c8 inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate asyncronous read for all transfer elements where <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> is set.  <a href="class_chimera_t_k_1_1_device_backend.html#a513692593b6dc8babc9544d9bfea04c8">More...</a><br /></td></tr>
+<tr class="separator:a513692593b6dc8babc9544d9bfea04c8 inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade6ceb13d1f554138f8d3180cca88ba6 inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:ade6ceb13d1f554138f8d3180cca88ba6 inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#ade6ceb13d1f554138f8d3180cca88ba6">getRegisterAccessor</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, bool enforceRawAccess)</td></tr>
 <tr class="memdesc:ade6ceb13d1f554138f8d3180cca88ba6 inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">DEPRECATED.  <a href="class_chimera_t_k_1_1_device_backend.html#ade6ceb13d1f554138f8d3180cca88ba6">More...</a><br /></td></tr>
@@ -204,6 +207,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a44636d261cd8ce509c2d5ab93664ab55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a44636d261cd8ce509c2d5ab93664ab55">isFunctional</a> () const override</td></tr>
 <tr class="memdesc:a44636d261cd8ce509c2d5ab93664ab55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return wether a device is working as intended, usually this means it is opened and does not have any errors.  <a href="#a44636d261cd8ce509c2d5ab93664ab55">More...</a><br /></td></tr>
 <tr class="separator:a44636d261cd8ce509c2d5ab93664ab55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31023a5d3bd9e0e129a6738ccd96b4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ae31023a5d3bd9e0e129a6738ccd96b4b">setException</a> () override</td></tr>
+<tr class="memdesc:ae31023a5d3bd9e0e129a6738ccd96b4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the backend into an exception state.  <a href="#ae31023a5d3bd9e0e129a6738ccd96b4b">More...</a><br /></td></tr>
+<tr class="separator:ae31023a5d3bd9e0e129a6738ccd96b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a729af3d2e645796f1b12604efafb588c"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a729af3d2e645796f1b12604efafb588c"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; int32_t &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a729af3d2e645796f1b12604efafb588c">getRegisterAccessor_area</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
 <tr class="separator:a729af3d2e645796f1b12604efafb588c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -861,6 +867,14 @@ template&lt;typename UserType &gt; </div>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7">ChimeraTK::DeviceBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00124">124</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a44636d261cd8ce509c2d5ab93664ab55_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -890,12 +904,12 @@ template&lt;typename UserType &gt; </div>
 <p>obtain the target backend if not yet done </p>
 
 <p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00149">149</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a7f4e065c2951bee366d15aa23a50adf3_icgraph.svg" width="100%" height="461"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a7f4e065c2951bee366d15aa23a50adf3_icgraph.svg" width="100%" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -929,19 +943,19 @@ template&lt;typename UserType &gt; </div>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a9da6866e3f0b481e1fcc13985382f5f9">ChimeraTK::DeviceBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00157">157</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a3aa244b79dfa6ddd8357b5854aa112d7_cgraph.svg" width="510" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a3aa244b79dfa6ddd8357b5854aa112d7_cgraph.svg" width="510" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a3aa244b79dfa6ddd8357b5854aa112d7_icgraph.svg" width="510" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -978,12 +992,60 @@ template&lt;typename UserType &gt; </div>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#ae27b29c1570a6f749efdb0dfe4f2972d">ChimeraTK::DeviceBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00060">60</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_ab828431ccd2b4255ccc0ba469d1999f0_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ae31023a5d3bd9e0e129a6738ccd96b4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae31023a5d3bd9e0e129a6738ccd96b4b">&#9670;&nbsp;</a></span>setException()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::SubdeviceBackend::setException </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the backend into an exception state. </p>
+<p>All backends must remember this, turn off asyncronous reads and all accessors will throw a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> on read and write operations, saying that there is a "previous, unrecovered fault", until <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a3aa244b79dfa6ddd8357b5854aa112d7" title="Open the device. ">open()</a> has been called successfully. </p>
+
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a5332e4cddac1f176352f53cf3dbcbf31">ChimeraTK::DeviceBackend</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00550">550</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_ae31023a5d3bd9e0e129a6738ccd96b4b_cgraph.svg" width="510" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_ae31023a5d3bd9e0e129a6738ccd96b4b_icgraph.svg" width="510" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1283,7 +1345,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html">SubdeviceBackend</a></li>
-    <li class="footer">Generated on Sat Jun 13 2020 03:53:11 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue Jun 16 2020 03:53:15 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
