@@ -25,9 +25,16 @@ var NAVTREE =
       ] ],
       [ "C. Implementation", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation", [
         [ "C.1 Internal interface between ExceptionHandlingDecorator and DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_interface", [
+          [ "Runtime error handling", "spec_execption_handling.html#spec_exceptionHandling_behaviour_runtime_errors", null ],
+          [ "Recovery", "spec_execption_handling.html#spec_execptionHandling_behaviour_recovery", null ],
+          [ "Startup", "spec_execption_handling.html#spec_execptionHandling_behaviour_startup", null ],
+          [ "Forced Recovery", "spec_execption_handling.html#spec_execptionHandling_behaviour_forced_recovery", null ],
+          [ "Numeric cast error handling", "spec_execption_handling.html#spec_exceptionHandling_behaviour_numeric_cast_errors", null ],
           [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_interface_comments", null ]
         ] ],
         [ "C.2 ExceptionHandlingDecorator", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator", [
+          [ "Structure", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_structure", null ],
+          [ "Behaviour", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_behaviour", null ],
           [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_comments", null ]
         ] ],
         [ "C.3 DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule", [
@@ -94,11 +101,11 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8fa8963bd99a5d8bd9b55688118bfd966c0",
 "class_chimera_t_k_1_1_test_facility.html#a49151a45dd4adf2dfdfcb5109d5d879b",
 "classlogging_1_1_logging_module.html",
-"struct_chimera_t_k_1_1_array_pipe.html#aa8a38b4a03250d5b2d9bb3405b0252ee",
-"struct_chimera_t_k_1_1history_1_1_accessor_attacher.html",
-"struct_read_only_test_application.html#a6c8aee9f6e8e0af88e1b102a2f28dbb4",
-"struct_test_application4.html#a3f0a72ec5aa28bc27399ca306e0a7914",
-"test_device_accessors_8cc.html"
+"struct_chimera_t_k_1_1_array_output.html",
+"struct_chimera_t_k_1_1_write_bit_mask_1_1_input.html#a82cd6a37dc02fc535e99b2f1def8d9d5",
+"struct_read_any_test_module_1_1_inputs.html#a0bab2bfa676fe43d45b5db91fa4c462e",
+"struct_test_application3.html#a69dac3011df60c1389550fe5ca640075",
+"test_control_system_accessors_8cc.html#a497768cd7df6fb647f3363ce52b90095"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
