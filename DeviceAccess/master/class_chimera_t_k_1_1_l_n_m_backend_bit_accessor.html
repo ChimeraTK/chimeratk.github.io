@@ -145,6 +145,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a984adf0f9474550e5daeb4502aea5c33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a984adf0f9474550e5daeb4502aea5c33">isWriteable</a> () const override</td></tr>
 <tr class="memdesc:a984adf0f9474550e5daeb4502aea5c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transfer element is writeable.  <a href="#a984adf0f9474550e5daeb4502aea5c33">More...</a><br /></td></tr>
 <tr class="separator:a984adf0f9474550e5daeb4502aea5c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c11d4535cfdd2d76c04fc3a3d3f2659"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a9c11d4535cfdd2d76c04fc3a3d3f2659">setExceptionBackend</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt; exceptionBackend) override</td></tr>
+<tr class="memdesc:a9c11d4535cfdd2d76c04fc3a3d3f2659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the backend to which the exception has to be reported.  <a href="#a9c11d4535cfdd2d76c04fc3a3d3f2659">More...</a><br /></td></tr>
+<tr class="separator:a9c11d4535cfdd2d76c04fc3a3d3f2659"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_sync_n_d_register_accessor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_sync_n_d_register_accessor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_sync_n_d_register_accessor.html">ChimeraTK::SyncNDRegisterAccessor&lt; UserType &gt;</a></td></tr>
 <tr class="memitem:a252277a34a967792dbd0d631fc2cb197 inherit pub_methods_class_chimera_t_k_1_1_sync_n_d_register_accessor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_sync_n_d_register_accessor.html#a252277a34a967792dbd0d631fc2cb197">SyncNDRegisterAccessor</a> (std::string const &amp;name, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> accessModeFlags, std::string const &amp;unit=std::string(<a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af4c7678155e4598ca95a4f900b9dfced">TransferElement::unitNotSet</a>), std::string const &amp;description=std::string())</td></tr>
 <tr class="separator:a252277a34a967792dbd0d631fc2cb197 inherit pub_methods_class_chimera_t_k_1_1_sync_n_d_register_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -255,6 +258,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb356d062ef74ccc271a2f58328b295e inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adb356d062ef74ccc271a2f58328b295e">setActiveException</a> (std::exception_ptr &amp;setThisException)</td></tr>
 <tr class="memdesc:adb356d062ef74ccc271a2f58328b295e inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an actice exception.  <a href="class_chimera_t_k_1_1_transfer_element.html#adb356d062ef74ccc271a2f58328b295e">More...</a><br /></td></tr>
 <tr class="separator:adb356d062ef74ccc271a2f58328b295e inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a92cdf46219996db158c82f20154b9 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a14a92cdf46219996db158c82f20154b9">getExceptionBackend</a> ()</td></tr>
+<tr class="memdesc:a14a92cdf46219996db158c82f20154b9 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the exception backend.  <a href="class_chimera_t_k_1_1_transfer_element.html#a14a92cdf46219996db158c82f20154b9">More...</a><br /></td></tr>
+<tr class="separator:a14a92cdf46219996db158c82f20154b9 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ff2cbf554da6961dc4f165875bcd3a inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">cppext::future_queue&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ac1ff2cbf554da6961dc4f165875bcd3a">getReadQueue</a> ()</td></tr>
+<tr class="memdesc:ac1ff2cbf554da6961dc4f165875bcd3a inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get a copy of the read queue.  <a href="class_chimera_t_k_1_1_transfer_element.html#ac1ff2cbf554da6961dc4f165875bcd3a">More...</a><br /></td></tr>
+<tr class="separator:ac1ff2cbf554da6961dc4f165875bcd3a inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaf41bf7340270e223afc8ed96f46b77 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77">readTransfer</a> ()</td></tr>
 <tr class="memdesc:adaf41bf7340270e223afc8ed96f46b77 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the data from the device but do not fill it into the user buffer of this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77">More...</a><br /></td></tr>
 <tr class="separator:adaf41bf7340270e223afc8ed96f46b77 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -344,6 +353,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:ab3e9f790076370e901fd8c6079ed6770 inherit pro_attribs_class_chimera_t_k_1_1_n_d_register_accessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer of converted data elements.  <a href="class_chimera_t_k_1_1_n_d_register_accessor.html#ab3e9f790076370e901fd8c6079ed6770">More...</a><br /></td></tr>
 <tr class="separator:ab3e9f790076370e901fd8c6079ed6770 inherit pro_attribs_class_chimera_t_k_1_1_n_d_register_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_transfer_element"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_transfer_element')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">ChimeraTK::TransferElement</a></td></tr>
+<tr class="memitem:aee95f5dfccb41075150d0a7d00f5e494 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aee95f5dfccb41075150d0a7d00f5e494">_exceptionBackend</a></td></tr>
+<tr class="memdesc:aee95f5dfccb41075150d0a7d00f5e494 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">The backend to which the runtime_errors are reported via DeviceBackend::setEception().  <a href="class_chimera_t_k_1_1_transfer_element.html#aee95f5dfccb41075150d0a7d00f5e494">More...</a><br /></td></tr>
+<tr class="separator:aee95f5dfccb41075150d0a7d00f5e494 inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13235d15a13bfc43764e464f1b6fe50d inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a13235d15a13bfc43764e464f1b6fe50d">_name</a></td></tr>
 <tr class="memdesc:a13235d15a13bfc43764e464f1b6fe50d inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifier uniquely identifying the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>.  <a href="class_chimera_t_k_1_1_transfer_element.html#a13235d15a13bfc43764e464f1b6fe50d">More...</a><br /></td></tr>
 <tr class="separator:a13235d15a13bfc43764e464f1b6fe50d inherit pro_attribs_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -790,7 +802,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a36b8f2cad449056d909560e371c78229">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00178">178</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00183">183</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -827,7 +839,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a561932e1a87dcc57cb3525a9980bdf49">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00183">183</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00188">188</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1013,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a791a4902b649e859fbadea20cc90ede2">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00190">190</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00195">195</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -1010,6 +1022,42 @@ template&lt;typename UserType &gt; </div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor_a4439853c000269dd3e862e8713263be0_cgraph.svg" width="512" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+
+</div>
+</div>
+<a id="a9c11d4535cfdd2d76c04fc3a3d3f2659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c11d4535cfdd2d76c04fc3a3d3f2659">&#9670;&nbsp;</a></span>setExceptionBackend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html">ChimeraTK::LNMBackendBitAccessor</a>&lt; UserType &gt;::setExceptionBackend </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;&#160;</td>
+          <td class="paramname"><em>exceptionBackend</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the backend to which the exception has to be reported. </p>
+<p>Each backend has to do this when creating TransferElements. However, not all TransferElements will have it set, for instance ProcessArrays in the ControlSystemAdapter and Application core,# which don't have backends at all. This function is only to be called inside of <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a85a134106068b02a89cbfa9a4559ccfc" title="Get a NDRegisterAccessor object from the register name. ">DeviceBackend::getRegisterAccessor()</a>!</p>
+<p>It is virtual because some accessor implementations like <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html" title="Implementation of the NDRegisterAccessor for NumericAddressedBackends for scalar and 1D registers...">NumericAddressedBackendRegisterAccessor</a> have an inner layer (LowLevelTransferElement), and all layers need to know the exception backend.Hence the functions needs to be overridden in this case. </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a23782060d06fa418950b74f8b10d4ec8">ChimeraTK::TransferElement</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00152">152</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1038,7 +1086,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>pointer to underlying accessor </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00154">154</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00159">159</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1066,7 +1114,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>bit mask for the bit we want to access </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00176">176</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00181">181</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1094,7 +1142,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>backend device </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00168">168</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00173">173</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1123,7 +1171,7 @@ template&lt;typename UserType &gt; </div>
 <p>fixed point converter to handle type conversions from our "raw" type int to the requested user type. </p>
 <p>Note: no actual fixed point conversion is done, it is just used for the type conversion! </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00173">173</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00178">178</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1152,7 +1200,7 @@ template&lt;typename UserType &gt; </div>
 <p>mutex to be held while using _accessor. </p>
 <p>This mutex lives in the targetAccessorMap of the <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html" title="Backend to map logical register names onto real hardware registers. ">LogicalNameMappingBackend</a>. Since we have a shared pointer to that backend, this pointer is always valid. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00158">158</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00163">163</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1180,7 +1228,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>register and module name </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00161">161</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00166">166</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1208,7 +1256,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>temporary version number passed to the target accessor in write transfers The <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">VersionNumber</a> needs to be decoupled from target accessor, because the target accessor is used by multiple bit accessors! </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00165">165</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html#l00170">170</a> of file <a class="el" href="_l_n_m_backend_bit_accessor_8h_source.html">LNMBackendBitAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1221,7 +1269,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html">LNMBackendBitAccessor</a></li>
-    <li class="footer">Generated on Tue Jun 16 2020 03:53:14 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Jun 17 2020 03:53:11 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

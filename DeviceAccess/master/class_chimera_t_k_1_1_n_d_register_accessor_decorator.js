@@ -11,5 +11,6 @@ var class_chimera_t_k_1_1_n_d_register_accessor_decorator =
     [ "isReadOnly", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#ab33f87c48179e5c134991d8874471b24", null ],
     [ "isWriteable", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aecf37cd79f233aade89f616d9f236ff8", null ],
     [ "replaceTransferElement", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a91ee5febe49ac00d6e0523acbf777266", null ],
+    [ "setExceptionBackend", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a19a3d128ee8a823743e5a032d23ca726", null ],
     [ "setPersistentDataStorage", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a4eee9c9221bf2ac861f1d734ae447a84", null ]
 ];

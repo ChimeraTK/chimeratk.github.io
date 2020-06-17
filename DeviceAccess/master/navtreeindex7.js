@@ -1,5 +1,13 @@
 var NAVTREEINDEX7 =
 {
+"class_dummy_backend_test.html#a887b1e097fd25661d01fcc47e907109d":[16,0,22,14],
+"class_dummy_backend_test.html#aa88afb9f5177a4c548f120160e2434ff":[16,0,22,7],
+"class_dummy_backend_test.html#ab423e04bb75ff46d25b2026e5657cb48":[16,0,22,5],
+"class_dummy_backend_test.html#ac928235c0df1c6aa42a6ac5c813cb6bc":[16,0,22,1],
+"class_dummy_backend_test.html#ad8c686a6cc7aaeb04d4f177b3b141fbc":[16,0,22,10],
+"class_dummy_backend_test.html#ae2206813692a64a7af3c7e74b7da715a":[16,0,22,2],
+"class_dummy_backend_test_suite.html":[16,0,23],
+"class_dummy_backend_test_suite.html#a3ba640e4b62468a8c7d61fd255343703":[16,0,23,0],
 "class_dummy_register_test.html":[16,0,25],
 "class_dummy_register_test.html#a24c9f97460af41a2295f512e1df1b7f2":[16,0,25,2],
 "class_dummy_register_test.html#a4feac4ea64180327ac5c3a4726ab3768":[16,0,25,1],
@@ -112,8 +120,8 @@ var NAVTREEINDEX7 =
 "class_testable_dummy_backend.html":[16,0,55],
 "class_testable_dummy_backend.html#a08acddf64f5cfdad67b81d93811b176a":[16,0,55,3],
 "class_testable_dummy_backend.html#a225ea9c4f235aaa2938de2f75d4934a5":[16,0,55,5],
-"class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a":[16,0,55,1],
 "class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a":[16,0,55,0],
+"class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a":[16,0,55,1],
 "class_testable_dummy_backend.html#a9cff1f9992e5c20d72987def7be6eb9c":[16,0,55,2],
 "class_testable_dummy_backend.html#aa9ee83d4709bd52b2f3d9510c2e6c7d3":[16,0,55,4],
 "class_transfer_element_test_accessor.html":[16,0,58],
@@ -241,13 +249,5 @@ var NAVTREEINDEX7 =
 "device_2include_2_buffering_register_accessor_8h.html":[17,0,0,0,1],
 "device_2include_2_buffering_register_accessor_8h_source.html":[17,0,0,0,1],
 "device_2include_2_device_8h.html":[17,0,0,0,3],
-"device_2include_2_device_8h_source.html":[17,0,0,0,3],
-"device_2include_2_experimental_features_8h.html":[17,0,0,0,4],
-"device_2include_2_experimental_features_8h_source.html":[17,0,0,0,4],
-"device_2include_2_forward_declarations_8h.html":[17,0,0,0,5],
-"device_2include_2_forward_declarations_8h_source.html":[17,0,0,0,5],
-"device_2include_2_multiplexed_data_accessor_exception_8h.html":[17,0,0,0,6],
-"device_2include_2_multiplexed_data_accessor_exception_8h_source.html":[17,0,0,0,6],
-"device_2include_2_n_d_register_accessor_abstractor_8h.html":[17,0,0,0,7],
-"device_2include_2_n_d_register_accessor_abstractor_8h_source.html":[17,0,0,0,7]
+"device_2include_2_device_8h_source.html":[17,0,0,0,3]
 };

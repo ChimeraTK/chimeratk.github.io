@@ -15,6 +15,7 @@ var class_chimera_t_k_1_1_l_n_m_backend_bit_accessor =
     [ "isWriteable", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a984adf0f9474550e5daeb4502aea5c33", null ],
     [ "mayReplaceOther", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a21432897852ea89ab69913c59baabff0", null ],
     [ "replaceTransferElement", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a4439853c000269dd3e862e8713263be0", null ],
+    [ "setExceptionBackend", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a9c11d4535cfdd2d76c04fc3a3d3f2659", null ],
     [ "_accessor", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#af0f684eb43ab495074a0f1dd6c8b6b15", null ],
     [ "_bitMask", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#abcb9b845999e0b58a2472279d21f0fac", null ],
     [ "_dev", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ae0053e8b9dccc0a2ba7d32a38d841681", null ],
