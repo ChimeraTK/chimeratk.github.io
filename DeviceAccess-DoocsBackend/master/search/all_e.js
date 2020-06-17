@@ -1,6 +1,7 @@
 var searchData=
 [
   ['savecatalogue',['saveCatalogue',['../namespace_cache.html#a9bcd131aceee0b32a5b5d0d10de93dac',1,'Cache']]],
+  ['setexception',['setException',['../class_chimera_t_k_1_1_doocs_backend.html#a7edfcfc60808a52f47010ec0759ee121',1,'ChimeraTK::DoocsBackend']]],
   ['shutdown',['shutdown',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a14e6481ebb423ffab7c49078e87fe6cf',1,'ChimeraTK::DoocsBackendRegisterAccessor']]],
   ['shutdowncalled',['shutdownCalled',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aa7b9d96704ee9583991689100f7a9e13',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]],
   ['slashes',['slashes',['../namespacedetail.html#adab1d68bf0f127a195efab7d3a74cb62',1,'detail']]],

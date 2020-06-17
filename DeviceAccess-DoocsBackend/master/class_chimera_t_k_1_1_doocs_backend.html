@@ -147,11 +147,16 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ab2e9a53151458d87b7cec8127a8bf08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64beee5b734545cd830b337f1891fb3d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#a64beee5b734545cd830b337f1891fb3d">readDeviceInfo</a> () override</td></tr>
 <tr class="separator:a64beee5b734545cd830b337f1891fb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7edfcfc60808a52f47010ec0759ee121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#a7edfcfc60808a52f47010ec0759ee121">setException</a> () override</td></tr>
+<tr class="separator:a7edfcfc60808a52f47010ec0759ee121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad275a7a9e412614591512f7aafab19c6"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:ad275a7a9e412614591512f7aafab19c6"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#ad275a7a9e412614591512f7aafab19c6">getRegisterAccessor_impl</a> (const RegisterPath &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, AccessModeFlags flags)</td></tr>
 <tr class="separator:ad275a7a9e412614591512f7aafab19c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af722dad9f7247dbcc506f4fb2b6bc359"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#af722dad9f7247dbcc506f4fb2b6bc359">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER</a> (<a class="el" href="class_chimera_t_k_1_1_doocs_backend.html">DoocsBackend</a>, <a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#ad275a7a9e412614591512f7aafab19c6">getRegisterAccessor_impl</a>, 4)</td></tr>
 <tr class="separator:af722dad9f7247dbcc506f4fb2b6bc359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d6534ffa82f11d8cf10f68320de385"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#aa2d6534ffa82f11d8cf10f68320de385">informRuntimeError</a> (const std::string &amp;address)</td></tr>
+<tr class="memdesc:aa2d6534ffa82f11d8cf10f68320de385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by accessors to inform about runtime_error.  <a href="#aa2d6534ffa82f11d8cf10f68320de385">More...</a><br /></td></tr>
+<tr class="separator:aa2d6534ffa82f11d8cf10f68320de385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -314,7 +319,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00155">155</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00180">180</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -462,7 +467,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00167">167</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00196">196</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -505,7 +510,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00146">146</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00171">171</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -514,6 +519,36 @@ template&lt;typename UserType &gt; </div>
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_a706cd10e5a07e138fcf56db804cf8957_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
+
+</div>
+</div>
+<a id="aa2d6534ffa82f11d8cf10f68320de385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2d6534ffa82f11d8cf10f68320de385">&#9670;&nbsp;</a></span>informRuntimeError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::DoocsBackend::informRuntimeError </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>address</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called by accessors to inform about runtime_error. </p>
+
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00141">141</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -540,7 +575,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00159">159</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00188">188</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -567,7 +602,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00142">142</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00149">149</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -595,12 +630,39 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00056">56</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+
+</div>
+</div>
+<a id="a7edfcfc60808a52f47010ec0759ee121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7edfcfc60808a52f47010ec0759ee121">&#9670;&nbsp;</a></span>setException()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::DoocsBackend::setException </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00058">58</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_a64beee5b734545cd830b337f1891fb3d_cgraph.svg" width="100%" height="449"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_a7edfcfc60808a52f47010ec0759ee121_cgraph.svg" width="100%" height="449"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -629,7 +691,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00086">86</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00091">91</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
@@ -656,7 +718,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>We need to make the catalogue mutable, since we fill it within <a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#a706cd10e5a07e138fcf56db804cf8957">getRegisterCatalogue()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00073">73</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00078">78</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
@@ -682,7 +744,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>DOOCS address component for the server (FACILITY/DEVICE) </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00069">69</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00074">74</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
@@ -706,7 +768,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00080">80</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00085">85</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
 
 </div>
 </div>
@@ -720,7 +782,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html">DoocsBackend</a></li>
-    <li class="footer">Generated on Fri Jun 12 2020 03:53:52 for ChimeraTK-DeviceAccess-DoocsBackend by
+    <li class="footer">Generated on Wed Jun 17 2020 03:53:45 for ChimeraTK-DeviceAccess-DoocsBackend by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

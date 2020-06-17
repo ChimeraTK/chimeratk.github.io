@@ -19,7 +19,6 @@ var searchData=
   ['create',['create',['../class_doocs_backend_register_info.html#ac8dcaa8c11fd755dbe73c7d7e349a3c1',1,'DoocsBackendRegisterInfo']]],
   ['createdummyxml',['createDummyXml',['../test_doocs_backend_8cpp.html#ac44d28c7f7e4ebf191da6594ee07ec11',1,'testDoocsBackend.cpp']]],
   ['createinstance',['createInstance',['../class_chimera_t_k_1_1_doocs_backend.html#a6858ec1a1833cc69444017506e68fb62',1,'ChimeraTK::DoocsBackend']]],
-  ['currentversion',['currentVersion',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a9e25d7a8968f11e4186009ef4be11ab3',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]],
   ['doocsbackendnamespace',['DoocsBackendNamespace',['../namespace_chimera_t_k_1_1_doocs_backend_namespace.html',1,'ChimeraTK']]],
   ['chimeratk_2ddeviceaccess_2ddoocsbackend',['ChimeraTK-DeviceAccess-DoocsBackend',['../index.html',1,'']]]
 ];

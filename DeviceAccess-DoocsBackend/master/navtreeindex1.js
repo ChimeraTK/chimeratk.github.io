@@ -1,9 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classes.html":[4,1],
-"dir_59425e443f801f1f2fd8bbe4959a3ccf.html":[5,0,2],
-"dir_68267d1309a1af8e8297ef4c3efbcdba.html":[5,0,1],
-"dir_7ab5dec27422f487cf9d62e729e73f9f.html":[5,0,2,1],
 "dir_c4edaa9151b75292cc7f5b696a5ad2e1.html":[5,0,2,0],
 "dir_d44c64559bbebec7f509842c48db8b23.html":[5,0,0],
 "doocs_dummy__rpc__server_8cc.html":[5,0,2,0,0],
@@ -44,8 +40,8 @@ var NAVTREEINDEX1 =
 "namespace_cache.html":[3,0,0],
 "namespace_chimera_t_k.html":[4,0,0],
 "namespace_chimera_t_k.html":[3,0,1],
-"namespace_chimera_t_k_1_1_doocs_backend_namespace.html":[3,0,1,0],
 "namespace_chimera_t_k_1_1_doocs_backend_namespace.html":[4,0,0,0],
+"namespace_chimera_t_k_1_1_doocs_backend_namespace.html":[3,0,1,0],
 "namespacedetail.html":[3,0,2],
 "namespacemembers.html":[3,1,0],
 "namespacemembers_func.html":[3,1,1],
