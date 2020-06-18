@@ -47,7 +47,6 @@ var searchData=
   ['sharedmemoryvector',['SharedMemoryVector',['../_shared_dummy_backend_8h.html#ae5c130c00eb99bd7fa9e98a5a552ff3d',1,'SharedDummyBackend.h']]],
   ['sharedptr',['SharedPtr',['../class_chimera_t_k_1_1_transfer_element.html#a5a3283a433fa427031456d9a68878a51',1,'ChimeraTK::TransferElement']]],
   ['shmemallocator',['ShmemAllocator',['../_shared_dummy_backend_8h.html#a10e04a31366079cb5f6a395b68373295',1,'SharedDummyBackend.h']]],
-  ['shutdown',['shutdown',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html#a4fe7dcd426667f3f5283fabad34f6576',1,'ChimeraTK::SyncNDRegisterAccessor']]],
   ['signed_5fhex_5fto_5fdouble',['SIGNED_HEX_TO_DOUBLE',['../test_fixed_point_converter_8cpp.html#a9f73ef3bea860f19d8173bea35bc7695',1,'testFixedPointConverter.cpp']]],
   ['signed_5fhex_5fto_5fint64',['SIGNED_HEX_TO_INT64',['../test_fixed_point_converter_8cpp.html#afa79a47a36fbc3954dc61b30a16b7e74',1,'testFixedPointConverter.cpp']]],
   ['signedflag',['signedFlag',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#abfed0bd506a5c85c2776c27a2a305efb',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
@@ -81,8 +80,5 @@ var searchData=
   ['supportedflags',['supportedFlags',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6546006951dc0b02aaf98a42c3f6630c',1,'ChimeraTK::LNMBackendRegisterInfo']]],
   ['supportedusertypes_2eh',['SupportedUserTypes.h',['../mtca4u__compatibility__headers_2_supported_user_types_8h.html',1,'(Global Namespace)'],['../util_2include_2_supported_user_types_8h.html',1,'(Global Namespace)']]],
   ['swap',['swap',['../class_chimera_t_k_1_1_buffering_register_accessor.html#ace4033d0920147b6bc781ab8ce5b8553',1,'ChimeraTK::BufferingRegisterAccessor::swap()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#ac6aaa6f5f6f680a4df224c5b24adb478',1,'ChimeraTK::OneDRegisterAccessor::swap()']]],
-  ['symbols',['symbols',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#afbe762724bc94cf064d77db7c4f02e5a',1,'ChimeraTK::LNMBackend::MathPluginDecorator']]],
-  ['syncndregisteraccessor',['SyncNDRegisterAccessor',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html',1,'ChimeraTK::SyncNDRegisterAccessor&lt; UserType &gt;'],['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html#a252277a34a967792dbd0d631fc2cb197',1,'ChimeraTK::SyncNDRegisterAccessor::SyncNDRegisterAccessor()']]],
-  ['syncndregisteraccessor_2eh',['SyncNDRegisterAccessor.h',['../device__backends_2include_2_sync_n_d_register_accessor_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_sync_n_d_register_accessor_8h.html',1,'(Global Namespace)']]],
-  ['syncndregisteraccessor_3c_20int32_5ft_20_3e',['SyncNDRegisterAccessor&lt; int32_t &gt;',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html',1,'ChimeraTK']]]
+  ['symbols',['symbols',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#afbe762724bc94cf064d77db7c4f02e5a',1,'ChimeraTK::LNMBackend::MathPluginDecorator']]]
 ];

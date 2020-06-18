@@ -47,9 +47,6 @@ var dir_0128381db4b4f5acbef62e610c8688e8 =
     [ "TransferElementID.h", "device_2include_2_transfer_element_i_d_8h.html", [
       [ "TransferElementID", "class_chimera_t_k_1_1_transfer_element_i_d.html", "class_chimera_t_k_1_1_transfer_element_i_d" ]
     ] ],
-    [ "TransferFuture.h", "device_2include_2_transfer_future_8h.html", [
-      [ "TransferFuture", "class_chimera_t_k_1_1_transfer_future.html", "class_chimera_t_k_1_1_transfer_future" ]
-    ] ],
     [ "TransferGroup.h", "device_2include_2_transfer_group_8h.html", [
       [ "TransferGroup", "class_chimera_t_k_1_1_transfer_group.html", "class_chimera_t_k_1_1_transfer_group" ],
       [ "ExceptionHandlingResult", "struct_chimera_t_k_1_1_transfer_group_1_1_exception_handling_result.html", "struct_chimera_t_k_1_1_transfer_group_1_1_exception_handling_result" ]

@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb6a774c1f984547f6380cd9d944e2e6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#aeb6a774c1f984547f6380cd9d944e2e6">~NumericAddressedLowLevelTransferElement</a> ()</td></tr>
 <tr class="separator:aeb6a774c1f984547f6380cd9d944e2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d1052c41073932d547b3e91a4bbf943"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a1d1052c41073932d547b3e91a4bbf943">doReadTransferSynchronously</a> () override</td></tr>
-<tr class="memdesc:a1d1052c41073932d547b3e91a4bbf943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a>.  <a href="#a1d1052c41073932d547b3e91a4bbf943">More...</a><br /></td></tr>
+<tr class="memdesc:a1d1052c41073932d547b3e91a4bbf943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a> for synchronous reads.  <a href="#a1d1052c41073932d547b3e91a4bbf943">More...</a><br /></td></tr>
 <tr class="separator:a1d1052c41073932d547b3e91a4bbf943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fd9333024437258f3efc021ffca8814"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a6fd9333024437258f3efc021ffca8814">doWriteTransfer</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a>) override</td></tr>
 <tr class="memdesc:a6fd9333024437258f3efc021ffca8814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab472541c0dd3171f8bf34a8c7e4600ff" title="Write the data to the device. ">writeTransfer()</a>.  <a href="#a6fd9333024437258f3efc021ffca8814">More...</a><br /></td></tr>
@@ -558,7 +558,7 @@ Additional Inherited Members</h2></td></tr>
 <p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aebd5de52d8f625ea84ec0b17224c316c" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
 <p>No actual communication may be done. Hence, no <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown.</p>
 <p>Notes for backend implementations:</p><ul>
-<li>If the flag hasNewData is false, the user buffer must stay unaltered. This is true also if the backend did not throw any exception and did not return false in the doReadTransfer...() call. The flag is also controlled by the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> and will be set to false, if an exception has been seen on any other transfer. </li>
+<li>If the flag updateDataBuffer is false, the data buffer must stay unaltered. Full implementations (backends) must also leave the meta data (version number and data validity) unchanged. Decorators are allowed to change the meta data (for instance set the <a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfac4ef1e7ec5c765839c8acdd9968542b2" title="The data is considered valid. ">DataValidity::faulty</a>). </li>
 </ul>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7">ChimeraTK::TransferElement</a>.</p>
@@ -590,12 +590,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a>. </p>
+<p>Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a> for synchronous reads. </p>
 <p>This function must be implemented by the backend. For the functional description read the documentation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a>.</p>
 <p>Implementation notes:</p><ul>
 <li>This function must return within ~1 second after boost::thread::interrupt() has been called on the thread calling this function.</li>
 <li>Decorators must delegate the call to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a> of the decorated target.</li>
-<li>Delegations within the same object should go to the "do" version, e.g. to this-&gt;doReadTransferLatest() </li>
+<li>Delegations within the same object should go to the "do" version, e.g. to BaseClass::doReadTransferSynchronously() </li>
 </ul>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a948f1bec4d00fce4ef5d5ea8fc35f8d5">ChimeraTK::TransferElement</a>.</p>
@@ -1254,7 +1254,7 @@ template&lt;typename UserType , typename DataConverterType , bool isRaw&gt; </di
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html">NumericAddressedLowLevelTransferElement</a></li>
-    <li class="footer">Generated on Wed Jun 17 2020 03:53:11 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Jun 18 2020 03:53:12 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

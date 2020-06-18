@@ -45,7 +45,7 @@ var NAVTREE =
       [ "Why do RegisterAccessors not have an assignment operator for other RegisterAccessors?", "q_and_a.html#why_no_accessor_assignment", null ],
       [ "Why can I not read SEQUENCE registers?", "q_and_a.html#use_sequences", null ]
     ] ],
-    [ "Technical specification: TransferElement V1.0RC5", "spec__transfer_element.html", null ],
+    [ "Technical specification: TransferElement V1.0RC6", "spec__transfer_element.html", null ],
     [ "Testing applications using the DummyBackends", "testing_with_dummy_backends.html", [
       [ "Specifying the dummies in the device map file", "testing_with_dummy_backends.html#dmap_specify_dummies", null ],
       [ "Writeing to read-only registers", "testing_with_dummy_backends.html#dummy_backends_write_readonly", null ]
@@ -93,19 +93,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"accessor2_d_8cpp.html",
-"class_chimera_t_k_1_1_device.html#ad49ec7cc7fa3d57fad993363005b727a",
-"class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ab46c4d65ee82e73fb239ebf836347a1b",
-"class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ac196e00898eb06cf2b8ec22c8ee4582b",
-"class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a6ffb4b343c74f267602c8fea1b51d0b5",
-"class_chimera_t_k_1_1_transfer_element.html#a561932e1a87dcc57cb3525a9980bdf49",
-"class_dummy_backend_test.html#a887b1e097fd25661d01fcc47e907109d",
-"device_2include_2_experimental_features_8h.html",
-"functions_a.html",
-"namespace_chimera_t_k.html",
-"struct_f.html#a98c81d1a8ffc123b27ac180f924abb84",
-"test_l_map_backend_8cpp.html#afe538536b4c920c39216373c868ac0a6",
-"testing_with_dummy_backends.html#dummy_backends_write_readonly"
+"accessor2_d_8cpp_source.html",
+"class_chimera_t_k_1_1_device.html#adf15f424f0da1211264b5c1b7b49fb9a",
+"class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ad236c093d0be42c459d13ad62f91a325",
+"class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aed0e14af22fd5bca0f2639a0de9f38df",
+"class_chimera_t_k_1_1_register_info_map.html#a0322cfe3b34d926081665ce2d4eb4c7d",
+"class_chimera_t_k_1_1_transfer_element.html#a779b431f4a3452f6e41bf3da48fb5bef",
+"class_invalid_dummy_backend.html#a08acddf64f5cfdad67b81d93811b176a",
+"device_2include_2_version_number_8h_source.html",
+"functions_n.html",
+"q_and_a.html#why_no_accessor_assignment",
+"structdevice__ioctrl__time.html#a04786d897463142079bd0cc2b041efcd",
+"test_multiplexed_data_accesor_8cpp.html#a175d07b5821ea6c062f0054a172048a1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

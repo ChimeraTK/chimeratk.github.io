@@ -28,7 +28,6 @@ var searchData=
   ['setwritecallbackfunction',['setWriteCallbackFunction',['../class_chimera_t_k_1_1_dummy_backend.html#a1bef5821adab43ec90aeca88767632ae',1,'ChimeraTK::DummyBackend']]],
   ['setwritetestregisters',['setWriteTestRegisters',['../class_unified_backend_test.html#aeec3eaa5d9889831ac2bd6bc3a5634a2',1,'UnifiedBackendTest']]],
   ['shareddummybackend',['SharedDummyBackend',['../class_chimera_t_k_1_1_shared_dummy_backend.html#a1caea4b00d60bb10686e2391b9305381',1,'ChimeraTK::SharedDummyBackend']]],
-  ['shutdown',['shutdown',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html#a4fe7dcd426667f3f5283fabad34f6576',1,'ChimeraTK::SyncNDRegisterAccessor']]],
   ['singlewordwrite',['singleWordWrite',['../struct_chimera_t_k_1_1_dummy_protocol0.html#a5b1420d7783d3ff12b2e4dbaff6f283c',1,'ChimeraTK::DummyProtocol0::singleWordWrite()'],['../struct_dummy_protocol_implementor.html#a7a8c27b5c69cb07f92d304515249e7f3',1,'DummyProtocolImplementor::singleWordWrite()']]],
   ['sleep_5funtil',['sleep_until',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html#a35a618bb93efcf6f87f192a3dcc33439',1,'ChimeraTK::testable_rebot_sleep']]],
   ['splitstringatlastdot',['splitStringAtLastDot',['../class_chimera_t_k_1_1_map_file_parser.html#af8b0334352da84a275101083c91c462a',1,'ChimeraTK::MapFileParser']]],
@@ -39,6 +38,5 @@ var searchData=
   ['stow_5fprivate',['stow_private',['../structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5',1,'accessPrivateData::stow_private']]],
   ['subdevicebackend',['SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html#a767cac6cd44e993c13796c841a45c54b',1,'ChimeraTK::SubdeviceBackend']]],
   ['subdeviceregisteraccessor',['SubdeviceRegisterAccessor',['../class_chimera_t_k_1_1_subdevice_register_accessor.html#a3ba0161652dec0adddc2141861e6c49a',1,'ChimeraTK::SubdeviceRegisterAccessor']]],
-  ['swap',['swap',['../class_chimera_t_k_1_1_buffering_register_accessor.html#ace4033d0920147b6bc781ab8ce5b8553',1,'ChimeraTK::BufferingRegisterAccessor::swap()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#ac6aaa6f5f6f680a4df224c5b24adb478',1,'ChimeraTK::OneDRegisterAccessor::swap()']]],
-  ['syncndregisteraccessor',['SyncNDRegisterAccessor',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html#a252277a34a967792dbd0d631fc2cb197',1,'ChimeraTK::SyncNDRegisterAccessor']]]
+  ['swap',['swap',['../class_chimera_t_k_1_1_buffering_register_accessor.html#ace4033d0920147b6bc781ab8ce5b8553',1,'ChimeraTK::BufferingRegisterAccessor::swap()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#ac6aaa6f5f6f680a4df224c5b24adb478',1,'ChimeraTK::OneDRegisterAccessor::swap()']]]
 ];

@@ -35,8 +35,6 @@ var searchData=
   ['devicebackend',['DeviceBackend',['../class_chimera_t_k_1_1_device_backend.html',1,'ChimeraTK']]],
   ['devicebackend_2ecc',['DeviceBackend.cc',['../_device_backend_8cc.html',1,'']]],
   ['devicebackend_2eh',['DeviceBackend.h',['../device__backends_2include_2_device_backend_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_device_backend_8h.html',1,'(Global Namespace)']]],
-  ['devicebackendexception',['DeviceBackendException',['../namespace_chimera_t_k.html#a1dfea2352bc429cbaa5f91f3789ea597',1,'ChimeraTK']]],
-  ['devicebackendexception_2eh',['DeviceBackendException.h',['../device__backends_2include_2_device_backend_exception_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_device_backend_exception_8h.html',1,'(Global Namespace)']]],
   ['devicebackendimpl',['DeviceBackendImpl',['../class_chimera_t_k_1_1_device_backend_impl.html',1,'ChimeraTK::DeviceBackendImpl'],['../class_chimera_t_k_1_1_device_backend_impl.html#a6456dd85892ef6afd5dd44691696b61d',1,'ChimeraTK::DeviceBackendImpl::DeviceBackendImpl()']]],
   ['devicebackendimpl_2ecc',['DeviceBackendImpl.cc',['../_device_backend_impl_8cc.html',1,'']]],
   ['devicebackendimpl_2eh',['DeviceBackendImpl.h',['../device__backends_2include_2_device_backend_impl_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_device_backend_impl_8h.html',1,'(Global Namespace)']]],

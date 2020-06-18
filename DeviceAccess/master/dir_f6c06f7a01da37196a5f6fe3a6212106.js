@@ -8,7 +8,6 @@ var dir_f6c06f7a01da37196a5f6fe3a6212106 =
     [ "DeviceBackend.h", "device__backends_2include_2_device_backend_8h.html", [
       [ "DeviceBackend", "class_chimera_t_k_1_1_device_backend.html", "class_chimera_t_k_1_1_device_backend" ]
     ] ],
-    [ "DeviceBackendException.h", "device__backends_2include_2_device_backend_exception_8h.html", "device__backends_2include_2_device_backend_exception_8h" ],
     [ "DeviceBackendImpl.h", "device__backends_2include_2_device_backend_impl_8h.html", [
       [ "DeviceBackendImpl", "class_chimera_t_k_1_1_device_backend_impl.html", "class_chimera_t_k_1_1_device_backend_impl" ]
     ] ],
@@ -52,9 +51,6 @@ var dir_f6c06f7a01da37196a5f6fe3a6212106 =
     [ "NumericAddressedLowLevelTransferElement.h", "device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h.html", [
       [ "NumericAddressedBackendRegisterAccessor", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor" ],
       [ "NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element" ]
-    ] ],
-    [ "SyncNDRegisterAccessor.h", "device__backends_2include_2_sync_n_d_register_accessor_8h.html", [
-      [ "SyncNDRegisterAccessor", "class_chimera_t_k_1_1_sync_n_d_register_accessor.html", "class_chimera_t_k_1_1_sync_n_d_register_accessor" ]
     ] ],
     [ "TransferElement.h", "device__backends_2include_2_transfer_element_8h.html", "device__backends_2include_2_transfer_element_8h" ],
     [ "UnifiedBackendTest.h", "_unified_backend_test_8h.html", [

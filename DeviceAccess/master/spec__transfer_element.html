@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.0RC5</title>
+<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.0RC6</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,7 +82,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Technical specification: <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> V1.0RC5 </div>  </div>
+<div class="title">Technical specification: <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> V1.0RC6 </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><blockquote class="doxtable">
@@ -401,8 +401,8 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li><a class="anchor" id="transferElement_C_2"></a>2. In doPostXxx no new <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> or <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> are thrown. Exceptions that were risen in doPreXxx or doXxxTransferYyy, or that were received from the queue (see B.8.3) are rethrown. <a class="el" href="spec__transfer_element.html#transferElement_comment_C_2">(*)</a><ul>
 <li>2.1 The <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> base class stores the caught exceptions in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a779b431f4a3452f6e41bf3da48fb5bef" title="Exception to be rethrown in postXXX() in case hasSeenException == true Can be set via setActiveExcept...">TransferElement::_activeException</a>.</li>
 <li>2.2 postXxx() is re-throwing the exception after delegating to doPostXxx().</li>
-<li><a class="anchor" id="transferElement_C_2_3"></a>2.3 Decorators must swap the _activeException with its target before delegating to the target's postXxx(). This swaps the active exception into the target, which is now responsible for handling it, and swaps in a nullptr from the target, so the decorator level does not throw any more <a class="el" href="spec__transfer_element.html#transferElement_comment_C_2_3a">(*)</a>. <a class="el" href="spec__transfer_element.html#transferElement_comment_C_2_3b">(*)</a><ul>
-<li>2.3.1 Decorators which are throwing themselves in doPreXxx(), before delegating to the target preXxx(), must remember this. If they did throw in doPreXxx(), then in doPostXxx() they do not swap the exception into the target and do not delegate to postXxx(). The exception is then re-thrown by the decorator's postXxx().</li>
+<li><a class="anchor" id="transferElement_C_2_3"></a>2.3 Decorators delegate the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a779b431f4a3452f6e41bf3da48fb5bef" title="Exception to be rethrown in postXXX() in case hasSeenException == true Can be set via setActiveExcept...">TransferElement::_activeException</a> to their target using <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adb356d062ef74ccc271a2f58328b295e" title="Set an actice exception. ">TransferElement::setActiveException()</a>. If the decorator's _activeException is not nullptr, the targets _activeException is replaced by it, and the decorator's _activeException, which is handed by reference, is set to nullptr <a class="el" href="spec__transfer_element.html#transferElement_comment_C_2_3a">(*)</a>. The target is now responsible for handling the exception. If the decorator's _activeException already is nullptr, setActiveException() has no effect, so an active exception in the target is not overwritten <a class="el" href="spec__transfer_element.html#transferElement_comment_C_2_3b">(*)</a>. <a class="el" href="spec__transfer_element.html#transferElement_comment_C_2_3c">(*)</a><ul>
+<li>2.3.1 Decorators which are throwing themselves in doPreXxx(), before delegating to the target preXxx(), remember this. If they did throw in doPreXxx(), then in doPostXxx() they do not call setActiveException() of the target and do not delegate to postXxx(). The exception is then re-thrown by the decorator's postXxx().</li>
 </ul>
 </li>
 </ul>
@@ -474,8 +474,9 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <h3>(*) Comments</h3>
 <ul>
 <li><a class="anchor" id="transferElement_comment_C_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_2">2.</a> This concerns all exceptions that were caught, not only <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> and <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a>.</li>
-<li><a class="anchor" id="transferElement_comment_C_2_3a"></a><a class="el" href="spec__transfer_element.html#transferElement_C_2_3">2.3</a> Swapping in a nullptr is required by the ApplicationCore::ExceptionHandlingDecorator. It suppresses the exception and then the outer layers must not throw any more.</li>
-<li><a class="anchor" id="transferElement_comment_C_2_3b"></a><a class="el" href="spec__transfer_element.html#transferElement_C_2_3">2.3</a> This behaviour is implemented in doPostXxx() of the <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html" title="Base class for decorators of the NDRegisterAccessor. ">NDRegisterAccessorDecorator</a> base class, which is usually called by decorator implementations.</li>
+<li><a class="anchor" id="transferElement_comment_C_2_3a"></a><a class="el" href="spec__transfer_element.html#transferElement_C_2_3">2.3</a> It is important that after calling the target's setActiveException(), the decorator has a nullptr in its _activeException. This is for instance required if the target is the ApplicationCore::ExceptionHandlingDecorator. It suppresses the exception and then the outer layers must not throw any more.</li>
+<li><a class="anchor" id="transferElement_comment_C_2_3b"></a><a class="el" href="spec__transfer_element.html#transferElement_C_2_3">2.3</a> Notice that if both the decorator and the target <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> have an active exception, the exception in the target is replaced. This is intentional. It can only happen if the same low level <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> is used by several high level elements in a <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a>. In this case the tranfer had not been executed because the high level elements had already seen the exception in preXxx, and the exception in the target can only be the exception which had been put in by another high level element in its doPostXxx, and thus has already been thrown.</li>
+<li><a class="anchor" id="transferElement_comment_C_2_3c"></a><a class="el" href="spec__transfer_element.html#transferElement_C_2_3">2.3</a> This behaviour is implemented in doPostXxx() of the <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html" title="Base class for decorators of the NDRegisterAccessor. ">NDRegisterAccessorDecorator</a> base class, which is usually called by decorator implementations.</li>
 <li>4.3 If there is no map file or such, the information about the target data types must be deretmined from the device. This cannot be done in the constructor if the backend is still closed. In this case the overflow check can happen at runtime and result in a boost::numeric::bad_numeric_cast.</li>
 <li>5.1 Test functions do not yet exist for everything. This needs to be changed!</li>
 <li>5.2 Especially no <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">logic_error</a> must be thrown in doXxxTransferYyy() or doPostXxx(). All tests for logical consistency must be done in doPreXxx() latest.</li>
@@ -526,19 +527,6 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <h2><a class="el" href="struct_f.html">F</a>. Implementation in the framework (e.g. class <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> itself)</h2>
 <p>Note:** This section is biased by the current implementation and mostly lists parts that needs to be changed!</p>
 <ul>
-<li>1. The <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> will be removed. According to D.1.1 all common functionality is implemented with <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab824c85c63163e76ccda588ef4768f68" title="The queue for asyncronous read transfers. ">TransferElement::_readQueue</a>, so the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a> provides no added value and even complicates the implementation.</li>
-<li>2. <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a><ul>
-<li>2.1 TransferElement::readAsync() will be removed (not deprecated because it would have to return the <a class="el" href="class_chimera_t_k_1_1_transfer_future.html" title="Special future returned by TransferElement::readAsync(). ">TransferFuture</a>, which will be removed), (together with readTransferAsync() and doReadTransferAsync()).</li>
-<li>2.2 readTransferLatest() and doReadTransferLatest() will be removed.</li>
-<li>2.3 doReadTransferNonBlockin() will be removed. The implementation of readTransferNonBlocking will use the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab824c85c63163e76ccda588ef4768f68" title="The queue for asyncronous read transfers. ">TransferElement::_readQueue</a>.</li>
-<li>2.4 readLatest() is directly calling readNonBlocking() in a loop (see B.3.1.4)</li>
-<li>2.5 Add function ChimeraTK::detail::getFutureQueueFromTransferElement(), replacing ChimeraTK::detail::getFutureQueueFromTransferFuture().</li>
-</ul>
-</li>
-<li>3. <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers...">ReadAnyGroup</a><ul>
-<li>3.1 Use the new ChimeraTK::detail::getFutureQueueFromTransferElement() (or make <a class="el" href="class_chimera_t_k_1_1_read_any_group.html" title="Group several registers (= TransferElement) to allow waiting for an update of any of the registers...">ReadAnyGroup</a> friend of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>?)</li>
-</ul>
-</li>
 <li>4. ApplicationCore<ul>
 <li>4.1 For the TestableModeAccessorDecorator: TransferElement::transferFutureWaitCallback() does no longer exist. Instead preRead() will now be called. In case of readAny, multiple calls to preRead() on different accessors will be made on the first call to readAny - the decorator has to deal with that properly. </li>
 </ul>
@@ -549,7 +537,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jun 17 2020 03:53:11 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Jun 18 2020 03:53:11 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

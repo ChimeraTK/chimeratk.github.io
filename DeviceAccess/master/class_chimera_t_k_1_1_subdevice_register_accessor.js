@@ -1,7 +1,6 @@
 var class_chimera_t_k_1_1_subdevice_register_accessor =
 [
     [ "SubdeviceRegisterAccessor", "class_chimera_t_k_1_1_subdevice_register_accessor.html#a3ba0161652dec0adddc2141861e6c49a", null ],
-    [ "~SubdeviceRegisterAccessor", "class_chimera_t_k_1_1_subdevice_register_accessor.html#ab53b8ff5fcca1e86e6a16cb54b1cf935", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_subdevice_register_accessor.html#a4c02e1f18c9d1ad94672aa58f196d988", null ],
     [ "doPostWrite", "class_chimera_t_k_1_1_subdevice_register_accessor.html#acacf9de969a48d3f255d71ed832d1c1e", null ],
     [ "doPreRead", "class_chimera_t_k_1_1_subdevice_register_accessor.html#a990ab9554975fe0c33ebac5793c2ee19", null ],

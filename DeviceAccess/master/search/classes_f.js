@@ -8,7 +8,5 @@ var searchData=
   ['stow_5fprivate',['stow_private',['../structaccess_private_data_1_1stow__private.html',1,'accessPrivateData']]],
   ['stowed',['stowed',['../structaccess_private_data_1_1stowed.html',1,'accessPrivateData']]],
   ['subdevicebackend',['SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html',1,'ChimeraTK']]],
-  ['subdeviceregisteraccessor',['SubdeviceRegisterAccessor',['../class_chimera_t_k_1_1_subdevice_register_accessor.html',1,'ChimeraTK']]],
-  ['syncndregisteraccessor',['SyncNDRegisterAccessor',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html',1,'ChimeraTK']]],
-  ['syncndregisteraccessor_3c_20int32_5ft_20_3e',['SyncNDRegisterAccessor&lt; int32_t &gt;',['../class_chimera_t_k_1_1_sync_n_d_register_accessor.html',1,'ChimeraTK']]]
+  ['subdeviceregisteraccessor',['SubdeviceRegisterAccessor',['../class_chimera_t_k_1_1_subdevice_register_accessor.html',1,'ChimeraTK']]]
 ];
