@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['readcatalogue',['readCatalogue',['../namespace_cache.html#aa85c43f09c98932d7bbdff1612a4c875',1,'Cache']]],
-  ['readdeviceinfo',['readDeviceInfo',['../class_chimera_t_k_1_1_doocs_backend.html#a64beee5b734545cd830b337f1891fb3d',1,'ChimeraTK::DoocsBackend']]],
-  ['refresh_5fepilog',['refresh_epilog',['../doocs_dummy__rpc__server_8cc.html#abad3095cb4eb0f7b41ad51882965e40a',1,'doocsDummy_rpc_server.cc']]],
-  ['refresh_5fprolog',['refresh_prolog',['../doocs_dummy__rpc__server_8cc.html#a8b5b57acbc923f1e052c514858e87797',1,'doocsDummy_rpc_server.cc']]],
-  ['replacetransferelement',['replaceTransferElement',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a21af88c286d123e95742b2f87e85aac9',1,'ChimeraTK::DoocsBackendRegisterAccessor']]]
+  ['post_5finit',['post_init',['../classeq__dummy.html#a5e5b75127cd24ff36d1cfac2a9860b3f',1,'eq_dummy']]],
+  ['post_5finit_5fepilog',['post_init_epilog',['../doocs_dummy__rpc__server_8cc.html#a13bb82460f4a94d785f99da53b3566a8',1,'doocsDummy_rpc_server.cc']]],
+  ['post_5finit_5fprolog',['post_init_prolog',['../doocs_dummy__rpc__server_8cc.html#af312c745af7ea52e38c6fbe6c6c2b126',1,'doocsDummy_rpc_server.cc']]]
 ];

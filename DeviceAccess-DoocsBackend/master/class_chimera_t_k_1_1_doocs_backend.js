@@ -3,6 +3,7 @@ var class_chimera_t_k_1_1_doocs_backend =
     [ "BackendRegisterer", "class_chimera_t_k_1_1_doocs_backend_1_1_backend_registerer.html", "class_chimera_t_k_1_1_doocs_backend_1_1_backend_registerer" ],
     [ "~DoocsBackend", "class_chimera_t_k_1_1_doocs_backend.html#a67efbbe747ea5719410305fb82065394", null ],
     [ "DoocsBackend", "class_chimera_t_k_1_1_doocs_backend.html#ac946fd5bfddbadd42ffe693b4d6a7765", null ],
+    [ "activateAsyncRead", "class_chimera_t_k_1_1_doocs_backend.html#a60af750f68aad5c342fb159949240077", null ],
     [ "close", "class_chimera_t_k_1_1_doocs_backend.html#aa0b104650a279c02f853d7a7f6e07f48", null ],
     [ "DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER", "class_chimera_t_k_1_1_doocs_backend.html#af722dad9f7247dbcc506f4fb2b6bc359", null ],
     [ "getRegisterAccessor_impl", "class_chimera_t_k_1_1_doocs_backend.html#ad275a7a9e412614591512f7aafab19c6", null ],
