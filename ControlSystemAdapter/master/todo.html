@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('todo.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="test_persistent_data_storage_8cpp.html#a31d5e8d6a1eb8e77fcaee35cded120ba">BOOST_AUTO_TEST_CASE</a>  (testStoreAndRetrieve)</dt>
+<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="test_persistent_data_storage_8cpp.html#a31d5e8d6a1eb8e77fcaee35cded120ba">BOOST_AUTO_TEST_CASE</a>  (testStoreAndRetrieve)</dt>
 <dd>FIXME No exception tests are yet done. </dd>
 <dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="namespace_chimera_t_k.html#a8690be421cfecbc1fe176cc019c12060">ChimeraTK::getDecorator</a>  (const boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &amp;transferElement, DecoratorType decoratorType=<a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a4c3daeb243d26d7ecb2a563fdd1de8b6">DecoratorType::range_checking</a>)</dt>
 <dd>eliminate this cast and change map to hold <a class="el" href="class_chimera_t_k_1_1_decorator_type_holder.html">DecoratorTypeHolder</a>  </dd>
@@ -97,27 +97,23 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <li>manual commits triggered by the application (with support for other implementations, e.g. if the persistency is already provided by the control system middleware)  </li>
 </ul>
 </dd>
-<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ae29c614248cc8509083f157058e9fd19">ChimeraTK::PersistentDataStorage::readFromFile</a>  ()</dt>
+<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ae29c614248cc8509083f157058e9fd19">ChimeraTK::PersistentDataStorage::readFromFile</a>  ()</dt>
 <dd>TODO check if the application name is correct?  </dd>
-<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a102ac2b8bc54568ef24da361e3426c22">ChimeraTK::PersistentDataStorage::writerThreadFunction</a>  ()</dt>
+<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a102ac2b8bc54568ef24da361e3426c22">ChimeraTK::PersistentDataStorage::writerThreadFunction</a>  ()</dt>
 <dd>FIXME make the variable access proper for a multi-threaded environment!!!  </dd>
-<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ac5ff86636442f6f856bf41813ecf680d">ChimeraTK::PersistentDataStorage::writeToFile</a>  ()</dt>
+<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ac5ff86636442f6f856bf41813ecf680d">ChimeraTK::PersistentDataStorage::writeToFile</a>  ()</dt>
 <dd>TODO what todo here?  </dd>
 <dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#a4e76fa5b5b3b9c5d0dabf009524d6809">ChimeraTK::PVManager::ProcessVariableMap</a>  </dt>
 <dd>FIXME: This was an unordered_map of strings, but it was changed to register path. The register path does not have a hash, thus we fall back to std::map. Write a std::hash&lt;RegisterPath&gt; if you cant to improve the performance.  </dd>
-<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a4c10cec4751c5bb4370bdc61e13654cc">ChimeraTK::UnidirectionalProcessArray&lt; T &gt;::doReadTransfer</a>  () override</dt>
-<dd>if wait_for_new_data is not set, make identical to <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a5aa3d4f0b0f4da26737e89ef4e70caab">doReadTransferLatest()</a>  </dd>
-<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a64cfeee87162fa14fe7474c3dadf96d4">ChimeraTK::UnidirectionalProcessArray&lt; T &gt;::doReadTransferAsync</a>  () override</dt>
-<dd>if wait_for_new_data is not set, make identical to <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a5aa3d4f0b0f4da26737e89ef4e70caab">doReadTransferLatest()</a> (but asynchronous)  </dd>
-<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a5903176cbd3aaf82e418c2321e358999">ChimeraTK::UnidirectionalProcessArray&lt; T &gt;::doReadTransferNonBlocking</a>  () override</dt>
-<dd>if wait_for_new_data is not set, make identical to <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a5aa3d4f0b0f4da26737e89ef4e70caab">doReadTransferLatest()</a> </dd>
+<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a7600e8835f4d072a7e7de72e0bb995ea">ChimeraTK::UnidirectionalProcessArray&lt; T &gt;::doReadTransferSynchronously</a>  () override</dt>
+<dd>if wait_for_new_data is not set, make identical to doReadTransferLatest() </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jun 9 2020 03:53:27 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Fri Jun 19 2020 03:54:07 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

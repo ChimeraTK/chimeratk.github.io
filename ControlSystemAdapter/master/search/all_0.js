@@ -5,7 +5,6 @@ var searchData=
   ['_5fdevicethread',['_deviceThread',['../class_reference_test_application.html#a6ddfbcee95b6e462f46efe6be6a1556c',1,'ReferenceTestApplication']]],
   ['_5ffilename',['_filename',['../class_chimera_t_k_1_1_persistent_data_storage.html#addcd2b59828c5c83068f5fd9745eae75',1,'ChimeraTK::PersistentDataStorage']]],
   ['_5ffilewriteinterval',['_fileWriteInterval',['../class_chimera_t_k_1_1_persistent_data_storage.html#adc600aafdd39a481d76be861d317a2e2',1,'ChimeraTK::PersistentDataStorage']]],
-  ['_5fflags',['_flags',['../class_chimera_t_k_1_1_process_array.html#a669ead59d26328434fe2e07b977f301d',1,'ChimeraTK::ProcessArray']]],
   ['_5fholdermap',['_holderMap',['../class_reference_test_application.html#a5663edd11053d834a9e7c392fa67481d',1,'ReferenceTestApplication']]],
   ['_5finstancetype',['_instanceType',['../class_chimera_t_k_1_1_process_array.html#a9575622a9d81b4bd8a765e5d45437166',1,'ChimeraTK::ProcessArray']]],
   ['_5fpersistentdatastorage',['_persistentDataStorage',['../class_chimera_t_k_1_1_application_base.html#a63baa1626fd1a7a5debabd66161fe394',1,'ChimeraTK::ApplicationBase']]],

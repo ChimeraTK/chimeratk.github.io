@@ -133,37 +133,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9d9a0fc5aeaca4b6557d9c2415cb39f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#ab9d9a0fc5aeaca4b6557d9c2415cb39f">BidirectionalProcessArray</a> (std::size_t uniqueId, const ChimeraTK::RegisterPath &amp;name, const std::string &amp;unit, const std::string &amp;description, bool allowPersistentDataStorage, typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::<a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a2d8f0a97ee81132f0871e322a3a33af4">SharedPtr</a> receiver, typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::<a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a2d8f0a97ee81132f0871e322a3a33af4">SharedPtr</a> sender, <a class="el" href="class_chimera_t_k_1_1_process_variable_listener.html#a7dd2ecde88627d53af6e92941ad54f06">ProcessVariableListener::SharedPtr</a> sendNotificationListener, VersionNumber initialVersionNumber, const AccessModeFlags &amp;flags)</td></tr>
 <tr class="memdesc:ab9d9a0fc5aeaca4b6557d9c2415cb39f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a bidirectional process array that uses the passed process arrays for sending and receiving data.  <a href="#ab9d9a0fc5aeaca4b6557d9c2415cb39f">More...</a><br /></td></tr>
 <tr class="separator:ab9d9a0fc5aeaca4b6557d9c2415cb39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a54507fdf2344c0ee6c16bafc6de533"><td class="memItemLeft" align="right" valign="top">VersionNumber&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a9a54507fdf2344c0ee6c16bafc6de533">getVersionNumber</a> () const override</td></tr>
-<tr class="separator:a9a54507fdf2344c0ee6c16bafc6de533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fff00020d25289a6750b589e6f29ddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a5fff00020d25289a6750b589e6f29ddd">setDataValidity</a> (ChimeraTK::DataValidity valid) override</td></tr>
-<tr class="separator:a5fff00020d25289a6750b589e6f29ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d22dcf75cce74be161b496b9ae1a597"><td class="memItemLeft" align="right" valign="top">ChimeraTK::DataValidity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a0d22dcf75cce74be161b496b9ae1a597">dataValidity</a> () const override</td></tr>
-<tr class="separator:a0d22dcf75cce74be161b496b9ae1a597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20a2e497a0cef7f629ecc50e1d2c0d7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a20a2e497a0cef7f629ecc50e1d2c0d7a">doPreRead</a> (ChimeraTK::TransferType type) override</td></tr>
 <tr class="separator:a20a2e497a0cef7f629ecc50e1d2c0d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0216803a4c128acf61cf9aeb75a40c68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a0216803a4c128acf61cf9aeb75a40c68">doReadTransfer</a> () override</td></tr>
-<tr class="separator:a0216803a4c128acf61cf9aeb75a40c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85b53c090b1ae56edac86e836f3a81fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a85b53c090b1ae56edac86e836f3a81fa">doReadTransferNonBlocking</a> () override</td></tr>
-<tr class="separator:a85b53c090b1ae56edac86e836f3a81fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a690c3d4b6c8a4f8cf3f92cfd4f96c7fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a690c3d4b6c8a4f8cf3f92cfd4f96c7fa">doReadTransferLatest</a> () override</td></tr>
-<tr class="separator:a690c3d4b6c8a4f8cf3f92cfd4f96c7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabe63014733fa70e1e354a6b56301601"><td class="memItemLeft" align="right" valign="top">ChimeraTK::TransferFuture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#aabe63014733fa70e1e354a6b56301601">doReadTransferAsync</a> () override</td></tr>
-<tr class="separator:aabe63014733fa70e1e354a6b56301601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6869e2707fc797b002bd906b715634ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a6869e2707fc797b002bd906b715634ea">doReadTransferSynchronously</a> () override</td></tr>
+<tr class="separator:a6869e2707fc797b002bd906b715634ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac32a7a74262a70bd0dfe88401e2f6209"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#ac32a7a74262a70bd0dfe88401e2f6209">doPostRead</a> (ChimeraTK::TransferType type, bool hasNewData) override</td></tr>
 <tr class="separator:ac32a7a74262a70bd0dfe88401e2f6209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade028c210513a748ef73f9cad3d27575"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#ade028c210513a748ef73f9cad3d27575">doPreWrite</a> (ChimeraTK::TransferType type, VersionNumber versionNumber) override</td></tr>
 <tr class="separator:ade028c210513a748ef73f9cad3d27575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ddf2fb5a9b7827ca5346923ac347e38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a9ddf2fb5a9b7827ca5346923ac347e38">doWriteTransfer</a> (ChimeraTK::VersionNumber versionNumber) override</td></tr>
 <tr class="separator:a9ddf2fb5a9b7827ca5346923ac347e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab148110214143163be35496904a267f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#ab148110214143163be35496904a267f3">doPostWrite</a> (ChimeraTK::TransferType type, bool hasNewData) override</td></tr>
-<tr class="separator:ab148110214143163be35496904a267f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37749466ee45aaf2ad935c91df8d9fed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a37749466ee45aaf2ad935c91df8d9fed">doPostWrite</a> (ChimeraTK::TransferType type, ChimeraTK::VersionNumber versionNumber) override</td></tr>
+<tr class="separator:a37749466ee45aaf2ad935c91df8d9fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9d55a715a86e0c0ff4cb4380b90f569"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#ae9d55a715a86e0c0ff4cb4380b90f569">setPersistentDataStorage</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html">PersistentDataStorage</a> &gt; storage) override</td></tr>
 <tr class="separator:ae9d55a715a86e0c0ff4cb4380b90f569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84b3d639a532053b86710d3ca2104192"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a84b3d639a532053b86710d3ca2104192">getUniqueId</a> () const override</td></tr>
 <tr class="memdesc:a84b3d639a532053b86710d3ca2104192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unique ID of this process variable, which will be indentical for the receiver and sender side of the same variable but different for any other process variable within the same process.  <a href="#a84b3d639a532053b86710d3ca2104192">More...</a><br /></td></tr>
 <tr class="separator:a84b3d639a532053b86710d3ca2104192"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe253acf5011ef0fe61a288c9050171f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#abe253acf5011ef0fe61a288c9050171f">interrupt</a> () override</td></tr>
-<tr class="separator:abe253acf5011ef0fe61a288c9050171f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ad4005d5d301a2befaa2120e021590d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html#a9ad4005d5d301a2befaa2120e021590d">setValueRejectCallback</a> (std::function&lt; void()&gt; callback)</td></tr>
 <tr class="memdesc:a9ad4005d5d301a2befaa2120e021590d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a callback function which is called whenever a value is rejected because it is old.  <a href="#a9ad4005d5d301a2befaa2120e021590d">More...</a><br /></td></tr>
 <tr class="separator:a9ad4005d5d301a2befaa2120e021590d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,8 +175,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5f231bf7d037b760f74fd9a68bc9f4bf inherit pub_methods_class_chimera_t_k_1_1_process_array"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a9a87416793c87a3ce907c5da8c8f71 inherit pub_methods_class_chimera_t_k_1_1_process_array"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_process_array.html#a4a9a87416793c87a3ce907c5da8c8f71">replaceTransferElement</a> (boost::shared_ptr&lt; ChimeraTK::TransferElement &gt;) override</td></tr>
 <tr class="separator:a4a9a87416793c87a3ce907c5da8c8f71 inherit pub_methods_class_chimera_t_k_1_1_process_array"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0acd11ff0158ccde334886671de5f50b inherit pub_methods_class_chimera_t_k_1_1_process_array"><td class="memItemLeft" align="right" valign="top">AccessModeFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_process_array.html#a0acd11ff0158ccde334886671de5f50b">getAccessModeFlags</a> () const override</td></tr>
-<tr class="separator:a0acd11ff0158ccde334886671de5f50b inherit pub_methods_class_chimera_t_k_1_1_process_array"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -207,9 +191,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a9575622a9d81b4bd8a765e5d45437166 inherit pro_attribs_class_chimera_t_k_1_1_process_array"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_process_array.html#ab3ed8ce4da736ec65ea938eb401f46dd">InstanceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_process_array.html#a9575622a9d81b4bd8a765e5d45437166">_instanceType</a></td></tr>
 <tr class="memdesc:a9575622a9d81b4bd8a765e5d45437166 inherit pro_attribs_class_chimera_t_k_1_1_process_array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type this instance is representing.  <a href="class_chimera_t_k_1_1_process_array.html#a9575622a9d81b4bd8a765e5d45437166">More...</a><br /></td></tr>
 <tr class="separator:a9575622a9d81b4bd8a765e5d45437166 inherit pro_attribs_class_chimera_t_k_1_1_process_array"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a669ead59d26328434fe2e07b977f301d inherit pro_attribs_class_chimera_t_k_1_1_process_array"><td class="memItemLeft" align="right" valign="top">AccessModeFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_process_array.html#a669ead59d26328434fe2e07b977f301d">_flags</a></td></tr>
-<tr class="memdesc:a669ead59d26328434fe2e07b977f301d inherit pro_attribs_class_chimera_t_k_1_1_process_array"><td class="mdescLeft">&#160;</td><td class="mdescRight">AccessModeFlags of this <a class="el" href="class_chimera_t_k_1_1_process_array.html" title="Array version of the ProcessVariable. ">ProcessArray</a>.  <a href="class_chimera_t_k_1_1_process_array.html#a669ead59d26328434fe2e07b977f301d">More...</a><br /></td></tr>
-<tr class="separator:a669ead59d26328434fe2e07b977f301d inherit pro_attribs_class_chimera_t_k_1_1_process_array"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
@@ -320,7 +301,7 @@ template&lt;class T &gt; </div>
 <p>Creates a bidirectional process array that uses the passed process arrays for sending and receiving data. </p>
 <p>This constructor should not be used directly. Instead, one should use one of the createBidirectionalSynchronizedProcessArray functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00274">274</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00260">260</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -333,43 +314,6 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0d22dcf75cce74be161b496b9ae1a597"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d22dcf75cce74be161b496b9ae1a597">&#9670;&nbsp;</a></span>dataValidity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ChimeraTK::DataValidity <a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html">ChimeraTK::BidirectionalProcessArray</a>&lt; T &gt;::dataValidity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00157">157</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_a0d22dcf75cce74be161b496b9ae1a597_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
 <a id="ac32a7a74262a70bd0dfe88401e2f6209"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac32a7a74262a70bd0dfe88401e2f6209">&#9670;&nbsp;</a></span>doPostRead()</h2>
 
@@ -406,20 +350,12 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00383">383</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_ac32a7a74262a70bd0dfe88401e2f6209_icgraph.svg" width="442" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00313">313</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
-<a id="ab148110214143163be35496904a267f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab148110214143163be35496904a267f3">&#9670;&nbsp;</a></span>doPostWrite()</h2>
+<a id="a37749466ee45aaf2ad935c91df8d9fed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37749466ee45aaf2ad935c91df8d9fed">&#9670;&nbsp;</a></span>doPostWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -438,8 +374,8 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>hasNewData</em>&#160;</td>
+          <td class="paramtype">ChimeraTK::VersionNumber&#160;</td>
+          <td class="paramname"><em>versionNumber</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -454,15 +390,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00443">443</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_ab148110214143163be35496904a267f3_icgraph.svg" width="443" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00373">373</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -492,15 +420,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00304">304</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_a20a2e497a0cef7f629ecc50e1d2c0d7a_icgraph.svg" width="435" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00290">290</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -540,20 +460,12 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00407">407</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_ade028c210513a748ef73f9cad3d27575_icgraph.svg" width="436" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00337">337</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
-<a id="a0216803a4c128acf61cf9aeb75a40c68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0216803a4c128acf61cf9aeb75a40c68">&#9670;&nbsp;</a></span>doReadTransfer()</h2>
+<a id="a6869e2707fc797b002bd906b715634ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6869e2707fc797b002bd906b715634ea">&#9670;&nbsp;</a></span>doReadTransferSynchronously()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -564,7 +476,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html">ChimeraTK::BidirectionalProcessArray</a>&lt; T &gt;::doReadTransfer </td>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html">ChimeraTK::BidirectionalProcessArray</a>&lt; T &gt;::doReadTransferSynchronously </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -577,126 +489,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00309">309</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_a0216803a4c128acf61cf9aeb75a40c68_icgraph.svg" width="466" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="aabe63014733fa70e1e354a6b56301601"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabe63014733fa70e1e354a6b56301601">&#9670;&nbsp;</a></span>doReadTransferAsync()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ChimeraTK::TransferFuture <a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html">ChimeraTK::BidirectionalProcessArray</a>&lt; T &gt;::doReadTransferAsync </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00365">365</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_aabe63014733fa70e1e354a6b56301601_icgraph.svg" width="504" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a690c3d4b6c8a4f8cf3f92cfd4f96c7fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a690c3d4b6c8a4f8cf3f92cfd4f96c7fa">&#9670;&nbsp;</a></span>doReadTransferLatest()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html">ChimeraTK::BidirectionalProcessArray</a>&lt; T &gt;::doReadTransferLatest </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00346">346</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_a690c3d4b6c8a4f8cf3f92cfd4f96c7fa_icgraph.svg" width="466" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a85b53c090b1ae56edac86e836f3a81fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85b53c090b1ae56edac86e836f3a81fa">&#9670;&nbsp;</a></span>doReadTransferNonBlocking()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html">ChimeraTK::BidirectionalProcessArray</a>&lt; T &gt;::doReadTransferNonBlocking </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00327">327</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_a85b53c090b1ae56edac86e836f3a81fa_icgraph.svg" width="466" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00295">295</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -726,13 +519,13 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00412">412</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00342">342</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_a9ddf2fb5a9b7827ca5346923ac347e38_icgraph.svg" width="100%" height="369"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_a9ddf2fb5a9b7827ca5346923ac347e38_icgraph.svg" width="506" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -768,95 +561,7 @@ template&lt;class T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_process_array.html#ac1be019e072c4306fa9d3516177215f5">ChimeraTK::ProcessArray&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00184">184</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
-
-</div>
-</div>
-<a id="a9a54507fdf2344c0ee6c16bafc6de533"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a54507fdf2344c0ee6c16bafc6de533">&#9670;&nbsp;</a></span>getVersionNumber()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">VersionNumber <a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html">ChimeraTK::BidirectionalProcessArray</a>&lt; T &gt;::getVersionNumber </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00153">153</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
-
-</div>
-</div>
-<a id="abe253acf5011ef0fe61a288c9050171f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe253acf5011ef0fe61a288c9050171f">&#9670;&nbsp;</a></span>interrupt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html">ChimeraTK::BidirectionalProcessArray</a>&lt; T &gt;::interrupt </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00186">186</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
-
-</div>
-</div>
-<a id="a5fff00020d25289a6750b589e6f29ddd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fff00020d25289a6750b589e6f29ddd">&#9670;&nbsp;</a></span>setDataValidity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html">ChimeraTK::BidirectionalProcessArray</a>&lt; T &gt;::setDataValidity </td>
-          <td>(</td>
-          <td class="paramtype">ChimeraTK::DataValidity&#160;</td>
-          <td class="paramname"><em>valid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00155">155</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00172">172</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -886,21 +591,13 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00448">448</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00378">378</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_ae9d55a715a86e0c0ff4cb4380b90f569_cgraph.svg" width="506" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_bidirectional_process_array_ae9d55a715a86e0c0ff4cb4380b90f569_icgraph.svg" width="482" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -935,7 +632,7 @@ template&lt;class T &gt; </div>
 <p>Set a callback function which is called whenever a value is rejected because it is old. </p>
 <p>This is used by ApplicationCore testable mode to keep track of the number of values. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00193">193</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00179">179</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -1021,7 +718,7 @@ template&lt;class T &gt; </div>
 <p>The array's size is set to the number of elements stored in the vector provided for initialization and all elements are initialized with the values provided by this vector.</p>
 <p>Of the two returned process arrays, only the first one can take an optional persistent data storage. Trying to set a persistent data storage on the first one results in an exception. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00502">502</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00432">432</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -1112,7 +809,7 @@ template&lt;class T &gt; </div>
 <p>The specified initial value is used for all the elements of the array.</p>
 <p>Of the two returned process arrays, only the first one can take an optional persistent data storage. Trying to set a persistent data storage on the first one results in an exception. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00474">474</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_bidirectional_process_array_8h_source.html#l00404">404</a> of file <a class="el" href="_bidirectional_process_array_8h_source.html">BidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -1125,7 +822,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_bidirectional_process_array.html">BidirectionalProcessArray</a></li>
-    <li class="footer">Generated on Tue Jun 9 2020 03:53:27 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Fri Jun 19 2020 03:54:07 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

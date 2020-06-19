@@ -8,7 +8,6 @@ var class_chimera_t_k_1_1_process_array =
     ] ],
     [ "ProcessArray", "class_chimera_t_k_1_1_process_array.html#ac0451f6e5bb37a946731a10b9c4eade2", null ],
     [ "~ProcessArray", "class_chimera_t_k_1_1_process_array.html#a9c49ee8f1760d42f32384640d0561de3", null ],
-    [ "getAccessModeFlags", "class_chimera_t_k_1_1_process_array.html#a0acd11ff0158ccde334886671de5f50b", null ],
     [ "getHardwareAccessingElements", "class_chimera_t_k_1_1_process_array.html#ad2c207fc04eb6774d09666636cae6cb1", null ],
     [ "getInternalElements", "class_chimera_t_k_1_1_process_array.html#a5f231bf7d037b760f74fd9a68bc9f4bf", null ],
     [ "getUniqueId", "class_chimera_t_k_1_1_process_array.html#ac1be019e072c4306fa9d3516177215f5", null ],
@@ -18,6 +17,5 @@ var class_chimera_t_k_1_1_process_array =
     [ "isWriteable", "class_chimera_t_k_1_1_process_array.html#a66ede83bca155215a0e5d030c9403ab1", null ],
     [ "mayReplaceOther", "class_chimera_t_k_1_1_process_array.html#aebb45abf9ccc76d79097bcce60ed6deb", null ],
     [ "replaceTransferElement", "class_chimera_t_k_1_1_process_array.html#a4a9a87416793c87a3ce907c5da8c8f71", null ],
-    [ "_flags", "class_chimera_t_k_1_1_process_array.html#a669ead59d26328434fe2e07b977f301d", null ],
     [ "_instanceType", "class_chimera_t_k_1_1_process_array.html#a9575622a9d81b4bd8a765e5d45437166", null ]
 ];

@@ -1,7 +1,6 @@
 var searchData=
 [
   ['generatexmlvaluetags',['generateXmlValueTags',['../class_chimera_t_k_1_1_persistent_data_storage.html#af609f72847e2be1d7fe3b11372d676c9',1,'ChimeraTK::PersistentDataStorage']]],
-  ['getaccessmodeflags',['getAccessModeFlags',['../class_chimera_t_k_1_1_process_array.html#a0acd11ff0158ccde334886671de5f50b',1,'ChimeraTK::ProcessArray']]],
   ['getallprocessvariables',['getAllProcessVariables',['../class_chimera_t_k_1_1_control_system_p_v_manager.html#ad6dd14be82a2308353dce28bc16488a0',1,'ChimeraTK::ControlSystemPVManager::getAllProcessVariables()'],['../class_chimera_t_k_1_1_device_p_v_manager.html#a5c2cfffbc7d75bd8205b673c125f1105',1,'ChimeraTK::DevicePVManager::getAllProcessVariables()'],['../class_chimera_t_k_1_1_p_v_manager.html#ab5921db2ce0a6de40a3354b9d7fce81d',1,'ChimeraTK::PVManager::getAllProcessVariables()']]],
   ['getcurrenttimestamp',['getCurrentTimeStamp',['../class_chimera_t_k_1_1_manual_time_stamp_source.html#a7862dcdead7b74c0745d8be79f52600e',1,'ChimeraTK::ManualTimeStampSource']]],
   ['getdecorator',['getDecorator',['../namespace_chimera_t_k.html#a8690be421cfecbc1fe176cc019c12060',1,'ChimeraTK::getDecorator(const boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &amp;transferElement, DecoratorType decoratorType=DecoratorType::range_checking)'],['../namespace_chimera_t_k.html#a4d842c2ce81692303eb38cd42326c30c',1,'ChimeraTK::getDecorator(ChimeraTK::TransferElementAbstractor &amp;transferElement, DecoratorType decoratorType=DecoratorType::range_checking)']]],
@@ -18,6 +17,5 @@ var searchData=
   ['getpvmanager',['getPVManager',['../class_chimera_t_k_1_1_application_base.html#a35298f9e9a366164a6789cd691af5cbd',1,'ChimeraTK::ApplicationBase']]],
   ['getuniqueid',['getUniqueId',['../class_chimera_t_k_1_1_bidirectional_process_array.html#a84b3d639a532053b86710d3ca2104192',1,'ChimeraTK::BidirectionalProcessArray::getUniqueId()'],['../class_chimera_t_k_1_1_process_array.html#ac1be019e072c4306fa9d3516177215f5',1,'ChimeraTK::ProcessArray::getUniqueId()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a3cfa68f1632196e2e1c093c1e7e3c5f8',1,'ChimeraTK::UnidirectionalProcessArray::getUniqueId()']]],
   ['getvaluetype',['getValueType',['../class_chimera_t_k_1_1_process_array.html#a9c1283cdafc6521ba25b5fa1e3dce80a',1,'ChimeraTK::ProcessArray']]],
-  ['getversionnumber',['getVersionNumber',['../class_chimera_t_k_1_1_bidirectional_process_array.html#a9a54507fdf2344c0ee6c16bafc6de533',1,'ChimeraTK::BidirectionalProcessArray::getVersionNumber()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a57a5a9bacf608a411500dccf43c39e55',1,'ChimeraTK::UnidirectionalProcessArray::getVersionNumber()']]],
   ['getvoltage',['getVoltage',['../class_hardware.html#a84d6e097d04ee740dba1c40557db2627',1,'Hardware']]]
 ];
