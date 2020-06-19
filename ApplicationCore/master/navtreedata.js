@@ -21,15 +21,15 @@ var NAVTREE =
         [ "(*) Comments", "spec_execption_handling.html#spec_exceptionHandling_intro_comments", null ]
       ] ],
       [ "B. Behavioural description", "spec_execption_handling.html#spec_execptionHandling_behaviour", [
+        [ "Runtime error handling", "spec_execption_handling.html#spec_exceptionHandling_behaviour_runtime_errors", null ],
+        [ "Recovery", "spec_execption_handling.html#spec_execptionHandling_behaviour_recovery", null ],
+        [ "Startup", "spec_execption_handling.html#spec_execptionHandling_behaviour_startup", null ],
+        [ "Forced Recovery", "spec_execption_handling.html#spec_execptionHandling_behaviour_forced_recovery", null ],
+        [ "Numeric cast error handling", "spec_execption_handling.html#spec_exceptionHandling_behaviour_numeric_cast_errors", null ],
         [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_behaviour_comments", null ]
       ] ],
       [ "C. Implementation", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation", [
         [ "C.1 Internal interface between ExceptionHandlingDecorator and DeviceModule", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_interface", [
-          [ "Runtime error handling", "spec_execption_handling.html#spec_exceptionHandling_behaviour_runtime_errors", null ],
-          [ "Recovery", "spec_execption_handling.html#spec_execptionHandling_behaviour_recovery", null ],
-          [ "Startup", "spec_execption_handling.html#spec_execptionHandling_behaviour_startup", null ],
-          [ "Forced Recovery", "spec_execption_handling.html#spec_execptionHandling_behaviour_forced_recovery", null ],
-          [ "Numeric cast error handling", "spec_execption_handling.html#spec_exceptionHandling_behaviour_numeric_cast_errors", null ],
           [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_interface_comments", null ]
         ] ],
         [ "C.2 ExceptionHandlingDecorator", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator", [
