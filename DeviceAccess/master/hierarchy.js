@@ -206,6 +206,9 @@ var hierarchy =
     [ "ChimeraTK::LNMBackend::ForcePollingReadPlugin_Helper< UserType, UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin___helper_3_01_user_type_00_01_user_type_01_4.html", null ],
     [ "ChimeraTK::LNMBackend::ForceReadOnlyPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper.html", null ],
     [ "ChimeraTK::LNMBackend::ForceReadOnlyPlugin_Helper< UserType, UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper_3_01_user_type_00_01_user_type_01_4.html", null ],
+    [ "function", null, [
+      [ "UnifiedBackendTest::_checkRemoteValue_functor< UserType >", "class_unified_backend_test_1_1__check_remote_value__functor.html", null ]
+    ] ],
     [ "std::hash< ChimeraTK::TransferElementID >", "structstd_1_1hash_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html", null ],
     [ "ChimeraTK::InstantiateLogicalNameMappingBackendFunctions< UserType >", "class_chimera_t_k_1_1_instantiate_logical_name_mapping_backend_functions.html", null ],
@@ -263,10 +266,10 @@ var hierarchy =
     [ "accessPrivateData::stow_private< Tag, x >", "structaccess_private_data_1_1stow__private.html", null ],
     [ "accessPrivateData::stowed< Tag >", "structaccess_private_data_1_1stowed.html", null ],
     [ "ChimeraTK::TemplateUserTypeMap< TemplateClass >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],
-    [ "ChimeraTK::TemplateUserTypeMap< _checkRemoteValue_functor >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],
     [ "ChimeraTK::TemplateUserTypeMap< ChimeraTK::RegisterAccessor::AccessorHandler >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],
     [ "ChimeraTK::TemplateUserTypeMap< myVector >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],
     [ "ChimeraTK::TemplateUserTypeMap< SharedAccessorMap >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],
+    [ "ChimeraTK::TemplateUserTypeMap< UnifiedBackendTest::_checkRemoteValue_functor >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],
     [ "test_suite", null, [
       [ "BufferingRegisterTestSuite", "class_buffering_register_test_suite.html", null ],
       [ "DeviceInfoMapTestSuite", "class_device_info_map_test_suite.html", null ],
@@ -305,8 +308,8 @@ var hierarchy =
     [ "ChimeraTK::Utilities", "class_chimera_t_k_1_1_utilities.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
-    [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
+    [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
     [ "ChimeraTK::VersionNumber", "class_chimera_t_k_1_1_version_number.html", null ],
     [ "VersionNumberTest", "class_version_number_test.html", null ]
 ];

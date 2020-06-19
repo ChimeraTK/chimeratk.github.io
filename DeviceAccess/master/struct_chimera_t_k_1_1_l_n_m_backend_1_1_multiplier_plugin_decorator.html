@@ -122,9 +122,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a653263866d52cb5c9af37a7ab509d2cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#a653263866d52cb5c9af37a7ab509d2cc">doPostWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> dataLost) override</td></tr>
 <tr class="memdesc:a653263866d52cb5c9af37a7ab509d2cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write cleanups if necessary. ">postWrite()</a>.  <a href="#a653263866d52cb5c9af37a7ab509d2cc">More...</a><br /></td></tr>
 <tr class="separator:a653263866d52cb5c9af37a7ab509d2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa298a1393fcfe24a794efeb118b8e475"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html#aa298a1393fcfe24a794efeb118b8e475">interrupt</a> () override</td></tr>
-<tr class="memdesc:aa298a1393fcfe24a794efeb118b8e475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel any pending transfer and throw boost::thread_interrupted in its postRead.  <a href="#aa298a1393fcfe24a794efeb118b8e475">More...</a><br /></td></tr>
-<tr class="separator:aa298a1393fcfe24a794efeb118b8e475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, double &gt;</a></td></tr>
 <tr class="memitem:a7c0d4fdaf998bece8d9b26b6a913ff13 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a7c0d4fdaf998bece8d9b26b6a913ff13">NDRegisterAccessorDecorator</a> (const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">ChimeraTK::NDRegisterAccessor</a>&lt; double &gt;&gt; &amp;target)</td></tr>
 <tr class="separator:a7c0d4fdaf998bece8d9b26b6a913ff13 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_decorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,7 +259,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_multiplier_plugin_8cc_source.html#l00059">59</a> of file <a class="el" href="_l_n_m_multiplier_plugin_8cc_source.html">LNMMultiplierPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_multiplier_plugin_8cc_source.html#l00057">57</a> of file <a class="el" href="_l_n_m_multiplier_plugin_8cc_source.html">LNMMultiplierPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -390,42 +387,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_multiplier_plugin_8cc_source.html#l00072">72</a> of file <a class="el" href="_l_n_m_multiplier_plugin_8cc_source.html">LNMMultiplierPlugin.cc</a>.</p>
-
-</div>
-</div>
-<a id="aa298a1393fcfe24a794efeb118b8e475"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa298a1393fcfe24a794efeb118b8e475">&#9670;&nbsp;</a></span>interrupt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UserType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html">ChimeraTK::LNMBackend::MultiplierPluginDecorator</a>&lt; UserType &gt;::interrupt </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Cancel any pending transfer and throw boost::thread_interrupted in its postRead. </p>
-<p>This function can be used to shutdown a thread waiting on the transfer to complete (which might never happen due to the sending part of the application already shut down).</p>
-<p>Note: there is no guarantee that the exception is actually thrown if no transfer is currently running or if the transfer completes while this function is called. Also for transfer elements which never block for an extended period of time this function may just do nothing. To really shut down the receiving thread, a interrupt request should be sent to the thread and boost::this_thread::interruption_point() shall be called after each transfer. </p>
-
-<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05">ChimeraTK::TransferElement</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_l_n_m_multiplier_plugin_8cc_source.html#l00051">51</a> of file <a class="el" href="_l_n_m_multiplier_plugin_8cc_source.html">LNMMultiplierPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_multiplier_plugin_8cc_source.html#l00070">70</a> of file <a class="el" href="_l_n_m_multiplier_plugin_8cc_source.html">LNMMultiplierPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -444,7 +406,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_multiplier_plugin_8cc_source.html#l00053">53</a> of file <a class="el" href="_l_n_m_multiplier_plugin_8cc_source.html">LNMMultiplierPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_multiplier_plugin_8cc_source.html#l00051">51</a> of file <a class="el" href="_l_n_m_multiplier_plugin_8cc_source.html">LNMMultiplierPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -457,7 +419,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html">LNMBackend</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html">MultiplierPluginDecorator</a></li>
-    <li class="footer">Generated on Thu Jun 18 2020 03:53:12 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Fri Jun 19 2020 03:53:12 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -6,7 +6,10 @@ var searchData=
   ['errorelem',['ErrorElem',['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a8b6ade0fd0ee3f8208114afa27935ff0',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem::ErrorElem()'],['../class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#aa2ee0c87712ac0cb553d7c57fda8e056',1,'ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem::ErrorElem()']]],
   ['examplebackend',['ExampleBackend',['../class_example_backend.html#a58db813470c7a500e30de9bdb91c92da',1,'ExampleBackend']]],
   ['exceptiondummy',['ExceptionDummy',['../class_chimera_t_k_1_1_exception_dummy.html#af9d7b6889e101ce97fd4321a2e380e3e',1,'ChimeraTK::ExceptionDummy']]],
+  ['exceptionhandlingasyncread',['exceptionHandlingAsyncRead',['../class_unified_backend_test.html#a200f2e0995b76b7808099250baea1c2f',1,'UnifiedBackendTest']]],
   ['exceptionhandlingresult',['ExceptionHandlingResult',['../struct_chimera_t_k_1_1_transfer_group_1_1_exception_handling_result.html#a51ac6bff048f56abbcc9db61d8837e2a',1,'ChimeraTK::TransferGroup::ExceptionHandlingResult']]],
+  ['exceptionhandlingsyncread',['exceptionHandlingSyncRead',['../class_unified_backend_test.html#a37fa4e0e6e9e5b57d0f9a19097479295',1,'UnifiedBackendTest']]],
+  ['exceptionhandlingwrite',['exceptionHandlingWrite',['../class_unified_backend_test.html#a0c628b2ac58c2463e681791ae6af667d',1,'UnifiedBackendTest']]],
   ['extractdirectory',['extractDirectory',['../namespace_chimera_t_k_1_1parser_utilities.html#a91ebf0d4263ce92117ee4f260cdd5edf',1,'ChimeraTK::parserUtilities']]],
   ['extractfilename',['extractFileName',['../namespace_chimera_t_k_1_1parser_utilities.html#a4b7d71c43b5b99282686080779736272',1,'ChimeraTK::parserUtilities']]]
 ];
