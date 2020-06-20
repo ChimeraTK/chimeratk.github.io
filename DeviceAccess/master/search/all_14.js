@@ -6,7 +6,7 @@ var searchData=
   ['uint64',['uint64',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a96029c8f8221a7daf59052e022975d72',1,'ChimeraTK::DataType']]],
   ['uint8',['uint8',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899ace6a08c56e7e5db1ca00d700ddd7191f',1,'ChimeraTK::DataType']]],
   ['undefined',['undefined',['../class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8a5e543256c480ac577d30f76f9120eb74',1,'ChimeraTK::RegisterInfo']]],
-  ['unifiedbackendtest',['UnifiedBackendTest',['../class_unified_backend_test.html',1,'']]],
+  ['unifiedbackendtest',['UnifiedBackendTest',['../class_unified_backend_test.html',1,'UnifiedBackendTest&lt; SET_REMOTE_VALUE_CALLABLE_T &gt;'],['../class_unified_backend_test.html#a000e4a56c61600bb151fbdadbfc950ff',1,'UnifiedBackendTest::UnifiedBackendTest()']]],
   ['unifiedbackendtest_2eh',['UnifiedBackendTest.h',['../_unified_backend_test_8h.html',1,'']]],
   ['unitnotset',['unitNotSet',['../class_chimera_t_k_1_1_transfer_element.html#af4c7678155e4598ca95a4f900b9dfced',1,'ChimeraTK::TransferElement']]],
   ['unknown_5finstruction',['UNKNOWN_INSTRUCTION',['../class_chimera_t_k_1_1_rebot_dummy_session.html#ae3faeac2f48c676d22d1fd0c8f863abb',1,'ChimeraTK::RebotDummySession']]],

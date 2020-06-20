@@ -4,7 +4,6 @@ var searchData=
   ['templateusertypemap_3c_20chimeratk_3a_3aregisteraccessor_3a_3aaccessorhandler_20_3e',['TemplateUserTypeMap&lt; ChimeraTK::RegisterAccessor::AccessorHandler &gt;',['../class_chimera_t_k_1_1_template_user_type_map.html',1,'ChimeraTK']]],
   ['templateusertypemap_3c_20myvector_20_3e',['TemplateUserTypeMap&lt; myVector &gt;',['../class_chimera_t_k_1_1_template_user_type_map.html',1,'ChimeraTK']]],
   ['templateusertypemap_3c_20sharedaccessormap_20_3e',['TemplateUserTypeMap&lt; SharedAccessorMap &gt;',['../class_chimera_t_k_1_1_template_user_type_map.html',1,'ChimeraTK']]],
-  ['templateusertypemap_3c_20unifiedbackendtest_3a_3a_5fcheckremotevalue_5ffunctor_20_3e',['TemplateUserTypeMap&lt; UnifiedBackendTest::_checkRemoteValue_functor &gt;',['../class_chimera_t_k_1_1_template_user_type_map.html',1,'ChimeraTK']]],
   ['testabledevice',['TestableDevice',['../class_testable_device.html',1,'']]],
   ['testabledummybackend',['TestableDummyBackend',['../class_testable_dummy_backend.html',1,'']]],
   ['testdummy',['TestDummy',['../class_test_dummy.html',1,'']]],

@@ -17,7 +17,7 @@ var searchData=
   ['int32',['int32',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a3c8acc4ab071e644c3590db8c20b2e96',1,'ChimeraTK::DataType']]],
   ['int64',['int64',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a507102dc046aef8ad3ab6766020987b0',1,'ChimeraTK::DataType']]],
   ['int8',['int8',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899ad63bc1d1e58cba5dbadfd284c9a0d253',1,'ChimeraTK::DataType']]],
-  ['integerregister',['integerRegister',['../class_unified_backend_test.html#af8dcb79787052e8c3d02d577dd0567b0',1,'UnifiedBackendTest']]],
+  ['integerregister',['integerRegister',['../class_unified_backend_test.html#afc9f0547e34e3e5b336ef82a0db917ec',1,'UnifiedBackendTest']]],
   ['interrupt',['interrupt',['../class_chimera_t_k_1_1_transfer_element.html#ad2cc0b32c7b6944345f3704da8b6ac8e',1,'ChimeraTK::TransferElement']]],
   ['invalid',['INVALID',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba464bac7271c91e146fddec802a1076e5',1,'ChimeraTK::LNMBackendRegisterInfo']]],
   ['invalid_5fdevice_5fstring',['INVALID_DEVICE_STRING',['../test_utilities_8cpp.html#a40ccf6e4f8b6cd0f5e45f90a9a4df46a',1,'testUtilities.cpp']]],

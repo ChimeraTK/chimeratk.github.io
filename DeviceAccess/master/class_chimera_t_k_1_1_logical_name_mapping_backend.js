@@ -4,6 +4,7 @@ var class_chimera_t_k_1_1_logical_name_mapping_backend =
     [ "SharedAccessorMap", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a6111c465c9c4130bf75c88f00c74b431", null ],
     [ "LogicalNameMappingBackend", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a7d3c15281246ec70a9977004d4fb02c3", null ],
     [ "~LogicalNameMappingBackend", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#aca8a90331ac46ea8e8afdfcd467fca01", null ],
+    [ "activateAsyncRead", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#ac0aa218e9c9f77da85b197b6c27d996c", null ],
     [ "close", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a86961274d5614231b472f7dd26aa6960", null ],
     [ "getRegisterAccessor_impl", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a98f6b271e1d6f1ec80f325e7b59af804", null ],
     [ "getRegisterAccessor_internal", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a863d826eb0fc7dbabbd8f9815d872549", null ],

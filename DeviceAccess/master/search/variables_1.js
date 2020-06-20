@@ -5,6 +5,6 @@ var searchData=
   ['active',['active',['../class_test_dummy.html#aa5067318f24c35303b5316d122b8f362',1,'TestDummy']]],
   ['address',['address',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a4c5816665d4b2efe2a1609b15b38524e',1,'ChimeraTK::RegisterInfoMap::RegisterInfo::address()'],['../struct_chimera_t_k_1_1_device_descriptor.html#abb8149f71839abaad25c671b3ef70688',1,'ChimeraTK::DeviceDescriptor::address()']]],
   ['addressinwords',['addressInWords',['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#ac3df6436518ace3a5d09ec50f48924af',1,'ChimeraTK::RebotProtocol0::RegisterInfo']]],
-  ['allregisters',['allRegisters',['../class_unified_backend_test.html#af5386b3e3a9060a3e7f6e443624903ce',1,'UnifiedBackendTest']]],
-  ['asyncreadregisters',['asyncReadRegisters',['../class_unified_backend_test.html#a7c5755d6a0ab5fcbcf778258a14fe726',1,'UnifiedBackendTest']]]
+  ['allregisters',['allRegisters',['../class_unified_backend_test.html#a4f88bdc10db493f5b2598307218dd966',1,'UnifiedBackendTest']]],
+  ['asyncreadregisters',['asyncReadRegisters',['../class_unified_backend_test.html#a9a6288a940a11b5818c05c23c0d0fb11',1,'UnifiedBackendTest']]]
 ];

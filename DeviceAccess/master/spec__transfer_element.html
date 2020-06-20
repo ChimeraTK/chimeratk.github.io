@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.0RC6</title>
+<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.0RC8WIP !! Based on RC6. Changes from RC7 still missing !!</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,7 +82,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Technical specification: <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> V1.0RC6 </div>  </div>
+<div class="title">Technical specification: <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> V1.0RC8WIP !! Based on RC6. Changes from RC7 still missing !! </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><blockquote class="doxtable">
@@ -269,7 +269,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li><a class="anchor" id="transferElement_B_8_2_2"></a>8.2.2 The backend may fill a ChimeraTK::detail::DiscardValueException to the queue, which has the same effect on the application side as if no entry was filled to the queue. (*) [<a class="el" href="test_transfer_element_8cpp.html#testTransferElement_B_8_2_2">T</a>]</li>
 </ul>
 </li>
-<li><a class="anchor" id="transferElement_B_8_3"></a>8.3 Runtime errors like broken connections are reported by the backend by pushing <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> exceptions into the queue. The exception will then be obtained by the read operation in place of a value. [<a class="el" href="test_transfer_element_8cpp.html#testTransferElement_B_8_3">T</a> (only second sentence)]</li>
+<li><a class="anchor" id="transferElement_B_8_3"></a>8.3 Runtime errors like broken connections are reported by the backend by pushing <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> exceptions into the queue. The exception will then be obtained by the read operation in place of a value. [<a class="el" href="class_unified_backend_test.html#UnifiedTest_TransferElement_B_8_3">U</a> (first sentence), <a class="el" href="test_transfer_element_8cpp.html#testTransferElement_B_8_3">T</a> (second sentence)]</li>
 <li>8.4 The backend ensures consistency of the value with the device, even if data loss may occur on the transport layer. If necessary, a heartbeat mechanism is implemented to correct any inconsistencies at regular intervals.</li>
 <li><a class="anchor" id="transferElement_B_8_5"></a>8.5 For transfer elements which are created before the device has been opened (or after the device has seen an exception, see 9.) the backend does not fill any data into the queue until the device has successfully been opened and <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set...">Device::activateAsyncRead()</a> is called (*). Also no runtime_errors are send. We call this <em>asyncronous read is not activated</em> for these transfer elements.<ul>
 <li>8.5.1 When <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set...">Device::activateAsyncRead()</a> is called, it activates asyncronous read for all transfer elements where <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> is set (*).</li>
@@ -341,10 +341,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li><a class="anchor" id="transferElement_B_11_4_2"></a>11.4.2 The <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">VersionNumber</a> is passed on to the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> implementation via the calls <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd" title="Backend specific implementation of preWrite(). ">TransferElement::doPreWrite()</a>, <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687" title="Implementation version of writeTransfer(). ">TransferElement::doWriteTransfer()</a> resp. <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a98f467545b6682f18cec6b113c5898cc" title="Implementation version of writeTransferDestructively(). ">TransferElement::doWriteTransferDestructively()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7c0a6bc5c1779ce47afe7871573ef2a1" title="Backend specific implementation of postWrite(). ">TransferElement::doPostWrite()</a>, after the precondition 11.4.1 has been checked. [<a class="el" href="test_transfer_element_8cpp.html#testTransferElement_B_11_4_2">T</a>]</li>
 </ul>
 </li>
-<li><a class="anchor" id="transferElement_B_11_5"></a>11.5 If a transfer was not successful (exception has been thrown), the <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">VersionNumber</a> returned by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a69298f31fe4a42e779bca3669d06c2bd" title="Returns the version number that is associated with the last transfer (i.e. ">TransferElement::getVersionNumber()</a> does not change. [<a class="el" href="test_transfer_element_8cpp.html#testTransferElement_B_11_5">T</a>]<ul>
-<li>11.5.1 This implies that also the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a39c613419eebb2f29590fecded7a96d0" title="The validity of the data in the application buffer. Part of the application buffer (see TransferEleme...">TransferElement::_dataValidity</a> and the application data buffer are not changed.</li>
-</ul>
-</li>
+<li><a class="anchor" id="transferElement_B_11_5"></a>11.5 If a transfer was not successful (exception has been thrown), the <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">VersionNumber</a> returned by <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a69298f31fe4a42e779bca3669d06c2bd" title="Returns the version number that is associated with the last transfer (i.e. ">TransferElement::getVersionNumber()</a> does not change (cf. <a class="el" href="spec__transfer_element.html#transferElement_B_6_4">B.6.4</a>). [<a class="el" href="test_transfer_element_8cpp.html#testTransferElement_B_11_5">T</a>]</li>
 <li><a class="anchor" id="transferElement_B_11_6"></a>11.6 Before the first successful transfer, <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a69298f31fe4a42e779bca3669d06c2bd" title="Returns the version number that is associated with the last transfer (i.e. ">TransferElement::getVersionNumber()</a> always returns the {nullptr} constructed <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">VersionNumber</a>. [<a class="el" href="test_transfer_element_8cpp.html#testTransferElement_B_11_6">T</a>, <a class="el" href="class_unified_backend_test.html#UnifiedTest_TransferElement_B_11_6">U</a>]</li>
 <li><a class="anchor" id="transferElement_B_11_7"></a>11.7 <em>To be decided if we only allow 11.7.2:</em> Bi-directional variables<ul>
 <li><a class="anchor" id="transferElement_B_11_7_1"></a>11.7.1 <em>either</em> do not guarantee that consecutive calls to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a69298f31fe4a42e779bca3669d06c2bd" title="Returns the version number that is associated with the last transfer (i.e. ">TransferElement::getVersionNumber()</a> always return a <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">VersionNumber</a> that is equal or greater than the one from the previous call <a class="el" href="spec__transfer_element.html#transferElement_comment_B_11_7_1">(*)</a></li>
@@ -367,6 +364,13 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>15.3.1 The constructor argument does not have a default value. It must be set correctly by the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> implementation in their constructor.</li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+<h3>New sections in RC 08 !! UNREVIEWED EXTENSION TO THE SPEC !!</h3>
+<ul>
+<li><a class="anchor" id="transferElement_B_10_3"></a>10.3 <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a513692593b6dc8babc9544d9bfea04c8" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set...">DeviceBackend::activateAsyncRead()</a> activates the sending of data through the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab824c85c63163e76ccda588ef4768f68" title="The queue for asyncronous read transfers. ">TransferElement::_readQueue()</a> as described in <a class="el" href="spec__transfer_element.html#transferElement_B_8_5">8.5</a><ul>
+<li><a class="anchor" id="transferElement_B_10_3_1"></a>10.3.1 Meta-backends like the <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html" title="Backend to map logical register names onto real hardware registers. ">LogicalNameMappingBackend</a> delegate this call to all of their target backends</li>
 </ul>
 </li>
 </ul>
@@ -537,7 +541,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jun 19 2020 03:53:11 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Jun 20 2020 03:53:12 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

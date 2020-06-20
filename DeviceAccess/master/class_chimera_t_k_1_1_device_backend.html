@@ -219,6 +219,8 @@ Public Member Functions</h2></td></tr>
 <p>If <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set...">Device::activateAsyncRead()</a> is called while the device is not opened or has an error, this call has no effect. If it is called when no deactivated transfer element exists, this call also has no effect. When <a class="el" href="class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af" title="Activate asyncronous read for all transfer elements where AccessMode::wait_for_new_data is set...">Device::activateAsyncRead()</a> returns, it is not guaranteed that all initial values have been received already.</p>
 <p>For more details, see <a class="el" href="spec__transfer_element.html#transferElement_B_8_5">Technical specification: TransferElement B.8.5</a>. </p>
 
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ae231a2b26431cb1bccee3b18723e367d">ChimeraTK::SubdeviceBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#ac0aa218e9c9f77da85b197b6c27d996c">ChimeraTK::LogicalNameMappingBackend</a>.</p>
+
 <p class="definition">Definition at line <a class="el" href="device__backends_2include_2_device_backend_8h_source.html#l00088">88</a> of file <a class="el" href="device__backends_2include_2_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -647,7 +649,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a></li>
-    <li class="footer">Generated on Fri Jun 19 2020 03:53:12 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Jun 20 2020 03:53:12 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

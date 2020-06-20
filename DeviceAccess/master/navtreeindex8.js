@@ -1,5 +1,10 @@
 var NAVTREEINDEX8 =
 {
+"device_2include_2_one_d_register_accessor_8h.html":[17,0,0,0,8],
+"device_2include_2_one_d_register_accessor_8h_source.html":[17,0,0,0,8],
+"device_2include_2_register_accessor_8h.html":[17,0,0,0,10],
+"device_2include_2_register_accessor_8h.html#a877b8841005f92d00f5cb9e50951ff7f":[17,0,0,0,10,2],
+"device_2include_2_register_accessor_8h.html#aa7199f55dc8b6d8c32ad7d93e37991dc":[17,0,0,0,10,3],
 "device_2include_2_register_accessor_8h_source.html":[17,0,0,0,10],
 "device_2include_2_register_catalogue_8h.html":[17,0,0,0,11],
 "device_2include_2_register_catalogue_8h_source.html":[17,0,0,0,11],
@@ -244,10 +249,5 @@ var NAVTREEINDEX8 =
 "functions_func_b.html":[16,3,1,1],
 "functions_func_c.html":[16,3,1,2],
 "functions_func_d.html":[16,3,1,3],
-"functions_func_e.html":[16,3,1,4],
-"functions_func_f.html":[16,3,1,5],
-"functions_func_g.html":[16,3,1,6],
-"functions_func_h.html":[16,3,1,7],
-"functions_func_i.html":[16,3,1,8],
-"functions_func_l.html":[16,3,1,9]
+"functions_func_e.html":[16,3,1,4]
 };

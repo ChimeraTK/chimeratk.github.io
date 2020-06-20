@@ -30,7 +30,7 @@ var searchData=
   ['accessorpluginbase',['AccessorPluginBase',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html',1,'ChimeraTK::LNMBackend']]],
   ['accessprivatedata',['accessPrivateData',['../namespaceaccess_private_data.html',1,'']]],
   ['accessprivatedata_2eh',['accessPrivateData.h',['../access_private_data_8h.html',1,'']]],
-  ['activateasyncread',['activateAsyncRead',['../class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af',1,'ChimeraTK::Device::activateAsyncRead()'],['../class_chimera_t_k_1_1_device_backend.html#a513692593b6dc8babc9544d9bfea04c8',1,'ChimeraTK::DeviceBackend::activateAsyncRead()']]],
+  ['activateasyncread',['activateAsyncRead',['../class_chimera_t_k_1_1_device.html#ad7c7d319aa029ecdb9a1e5aae5e667af',1,'ChimeraTK::Device::activateAsyncRead()'],['../class_chimera_t_k_1_1_device_backend.html#a513692593b6dc8babc9544d9bfea04c8',1,'ChimeraTK::DeviceBackend::activateAsyncRead()'],['../class_chimera_t_k_1_1_logical_name_mapping_backend.html#ac0aa218e9c9f77da85b197b6c27d996c',1,'ChimeraTK::LogicalNameMappingBackend::activateAsyncRead()'],['../class_chimera_t_k_1_1_subdevice_backend.html#ae231a2b26431cb1bccee3b18723e367d',1,'ChimeraTK::SubdeviceBackend::activateAsyncRead()']]],
   ['active',['active',['../class_test_dummy.html#aa5067318f24c35303b5316d122b8f362',1,'TestDummy']]],
   ['add',['add',['../class_chimera_t_k_1_1_access_mode_flags.html#af6f8198e1092b53bfc0be4a8a221db0c',1,'ChimeraTK::AccessModeFlags::add()'],['../class_chimera_t_k_1_1_data_consistency_group.html#a0ffe36d41c805556dc2270f2c48e8b03',1,'ChimeraTK::DataConsistencyGroup::add(TransferElementAbstractor element)'],['../class_chimera_t_k_1_1_data_consistency_group.html#a6bd9e4bf2892c9857c7a155ab1be746e',1,'ChimeraTK::DataConsistencyGroup::add(boost::shared_ptr&lt; TransferElement &gt; element)'],['../class_chimera_t_k_1_1_read_any_group.html#a662fa4a8da3311e9fe1c1e1e86a4eb16',1,'ChimeraTK::ReadAnyGroup::add(TransferElementAbstractor element)'],['../class_chimera_t_k_1_1_read_any_group.html#a5f3b1d214ca8bdd742f16896fb3dc28d',1,'ChimeraTK::ReadAnyGroup::add(boost::shared_ptr&lt; TransferElement &gt; element)']]],
   ['addaccessor',['addAccessor',['../class_chimera_t_k_1_1_transfer_group.html#a105197b54833784c119bc3f445ae8a91',1,'ChimeraTK::TransferGroup::addAccessor(TransferElementAbstractor &amp;accessor)'],['../class_chimera_t_k_1_1_transfer_group.html#a13f0ae7ce386f0f34b9ea9db867efbf4',1,'ChimeraTK::TransferGroup::addAccessor(const boost::shared_ptr&lt; TransferElement &gt; &amp;accessor)']]],
@@ -42,7 +42,7 @@ var searchData=
   ['addressrange',['AddressRange',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html',1,'ChimeraTK::DummyBackend::AddressRange'],['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html#ae18c40ccd64efd9484032a1f1bd137f8',1,'ChimeraTK::DummyBackend::AddressRange::AddressRange()']]],
   ['advance_5funtil',['advance_until',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html#a73e89a8c5e60ca0f1571ed3e34c7af68',1,'ChimeraTK::testable_rebot_sleep']]],
   ['aliaslookup',['aliasLookUp',['../class_chimera_t_k_1_1_backend_factory.html#ae166738b5e8ce2b948c542b91eb66237',1,'ChimeraTK::BackendFactory::aliasLookUp()'],['../class_chimera_t_k_1_1_utilities.html#a0124cd7dc8ef468a7c292788414848ed',1,'ChimeraTK::Utilities::aliasLookUp()']]],
-  ['allregisters',['allRegisters',['../class_unified_backend_test.html#af5386b3e3a9060a3e7f6e443624903ce',1,'UnifiedBackendTest']]],
+  ['allregisters',['allRegisters',['../class_unified_backend_test.html#a4f88bdc10db493f5b2598307218dd966',1,'UnifiedBackendTest']]],
   ['anotherworkingbackend',['AnotherWorkingBackend',['../struct_another_working_backend.html',1,'']]],
   ['anotherworkingbackend_2ecc',['AnotherWorkingBackend.cc',['../_another_working_backend_8cc.html',1,'']]],
   ['appendnumbertoname',['appendNumberToName',['../helper_functions_8h.html#a46b0ebb2324f645c97fa08cebca0f010',1,'appendNumberToName(std::string name, int cardNumber):&#160;helperFunctions.cc'],['../helper_functions_8cc.html#a4588ba93ef42031eafc572bfebe9b2ca',1,'appendNumberToName(std::string name, int suffixNumber):&#160;helperFunctions.cc']]],
@@ -52,7 +52,7 @@ var searchData=
   ['argumentparser_2ecc',['argumentParser.cc',['../argument_parser_8cc.html',1,'']]],
   ['argumentparser_2eh',['argumentParser.h',['../argument_parser_8h.html',1,'']]],
   ['ascii',['ASCII',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6b842be755b82e8e9f26f9104aac1600a2fbf8a3df38e98a5d5a95a70e74ad2b5',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
-  ['asyncreadregisters',['asyncReadRegisters',['../class_unified_backend_test.html#a7c5755d6a0ab5fcbcf778258a14fe726',1,'UnifiedBackendTest']]],
+  ['asyncreadregisters',['asyncReadRegisters',['../class_unified_backend_test.html#a9a6288a940a11b5818c05c23c0d0fb11',1,'UnifiedBackendTest']]],
   ['asynctestdummy',['AsyncTestDummy',['../class_async_test_dummy.html',1,'AsyncTestDummy'],['../class_async_test_dummy.html#a63702eaa288d6f09ca8eb470064f8e15',1,'AsyncTestDummy::AsyncTestDummy()']]],
   ['accessing_20numeric_2daddressed_20registers_20without_20a_20map_20file',['Accessing numeric-addressed registers without a map file',['../numeric_addresses.html',1,'']]]
 ];
