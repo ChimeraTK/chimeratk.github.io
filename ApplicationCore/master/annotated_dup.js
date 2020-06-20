@@ -3,7 +3,6 @@ var annotated_dup =
     [ "ChimeraTK", "namespace_chimera_t_k.html", "namespace_chimera_t_k" ],
     [ "logging", "namespacelogging.html", "namespacelogging" ],
     [ "AssignModuleLaterApp", "struct_assign_module_later_app.html", "struct_assign_module_later_app" ],
-    [ "AsyncReadTestModule", "struct_async_read_test_module.html", "struct_async_read_test_module" ],
     [ "Automation", "struct_automation.html", "struct_automation" ],
     [ "BlockingReadTestModule", "struct_blocking_read_test_module.html", "struct_blocking_read_test_module" ],
     [ "Controller", "struct_controller.html", "struct_controller" ],

@@ -59,7 +59,6 @@ var struct_test_application =
     [ "defineConnections", "struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9", null ],
     [ "_skipConnection", "struct_test_application.html#a85dd2a47fb7c490174e0dfb2d610ac43", null ],
     [ "a", "struct_test_application.html#a181492d1f41dd005266caf3428adb331", null ],
-    [ "asyncReadTestModule", "struct_test_application.html#af1333f84b34457b3e557b51a2ddb8692", null ],
     [ "b", "struct_test_application.html#a6f8f9567e7fc90316f0f36ff71c43555", null ],
     [ "blockingReadTestModule", "struct_test_application.html#adcfadecebf2a00a720352b3173d9fcf9", null ],
     [ "config", "struct_test_application.html#ad9bb8d863d3af22510b99f528863e103", null ],

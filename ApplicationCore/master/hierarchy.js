@@ -86,7 +86,6 @@ var hierarchy =
         [ "ChimeraTK::DeviceModule", "class_chimera_t_k_1_1_device_module.html", null ],
         [ "ChimeraTK::ModuleImpl", "class_chimera_t_k_1_1_module_impl.html", [
           [ "ChimeraTK::ApplicationModule", "class_chimera_t_k_1_1_application_module.html", [
-            [ "AsyncReadTestModule< T >", "struct_async_read_test_module.html", null ],
             [ "Automation", "struct_automation.html", null ],
             [ "Automation", "struct_automation.html", null ],
             [ "BlockingReadTestModule< T >", "struct_blocking_read_test_module.html", null ],
@@ -412,6 +411,7 @@ var hierarchy =
     [ "logging::Logger", "classlogging_1_1_logger.html", null ],
     [ "ChimeraTK::ModuleList", "class_chimera_t_k_1_1_module_list.html", null ],
     [ "NDRegisterAccessor", null, [
+      [ "ChimeraTK::ConstantAccessor< UserType >", "class_chimera_t_k_1_1_constant_accessor.html", null ],
       [ "ChimeraTK::FeedingFanOut< UserType >", "class_chimera_t_k_1_1_feeding_fan_out.html", null ]
     ] ],
     [ "NDRegisterAccessorDecorator", null, [
@@ -466,7 +466,6 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::TriggerFanOut::SendDataToConsumers", "struct_chimera_t_k_1_1_trigger_fan_out_1_1_send_data_to_consumers.html", null ],
     [ "SyncNDRegisterAccessor", null, [
-      [ "ChimeraTK::ConstantAccessor< UserType >", "class_chimera_t_k_1_1_constant_accessor.html", null ],
       [ "TimerDummyRegisterAccessor< UserType >", "class_timer_dummy_register_accessor.html", null ]
     ] ],
     [ "ChimeraTK::TestFacility", "class_chimera_t_k_1_1_test_facility.html", null ],

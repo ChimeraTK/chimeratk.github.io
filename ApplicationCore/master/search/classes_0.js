@@ -47,6 +47,5 @@ var searchData=
   ['arraypushinput_3c_20uint16_5ft_20_3e',['ArrayPushInput&lt; uint16_t &gt;',['../struct_chimera_t_k_1_1_array_push_input.html',1,'ChimeraTK']]],
   ['arraypushinputwb',['ArrayPushInputWB',['../struct_chimera_t_k_1_1_array_push_input_w_b.html',1,'ChimeraTK']]],
   ['assignmodulelaterapp',['AssignModuleLaterApp',['../struct_assign_module_later_app.html',1,'']]],
-  ['asyncreadtestmodule',['AsyncReadTestModule',['../struct_async_read_test_module.html',1,'']]],
   ['automation',['Automation',['../struct_automation.html',1,'']]]
 ];
