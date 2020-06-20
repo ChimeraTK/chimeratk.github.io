@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['object_5fname',['object_name',['../_doocs_backend_8cc.html#a06c138c2b0b13b0e11be4e16bf242cb8',1,'object_name():&#160;DoocsBackend.cc'],['../doocs_dummy__rpc__server_8cc.html#a06c138c2b0b13b0e11be4e16bf242cb8',1,'object_name():&#160;doocsDummy_rpc_server.cc']]]
+  ['nelements',['nElements',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a0fde7fd874fc30900874ba0f701c07b6',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]],
+  ['notifications',['notifications',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#abd18febd65ffa0a2776fd393ebc859e7',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]],
+  ['nullptr',['nullptr',['../_empty_doocs_functions_8cc.html#af0e56fff84bd1453dd83f743e5e653d9',1,'EmptyDoocsFunctions.cc']]]
 ];

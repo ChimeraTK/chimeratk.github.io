@@ -1,14 +1,13 @@
 var searchData=
 [
-  ['savecatalogue',['saveCatalogue',['../namespace_cache.html#a9bcd131aceee0b32a5b5d0d10de93dac',1,'Cache']]],
-  ['setexception',['setException',['../class_chimera_t_k_1_1_doocs_backend.html#a7edfcfc60808a52f47010ec0759ee121',1,'ChimeraTK::DoocsBackend']]],
-  ['shutdown',['shutdown',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a14e6481ebb423ffab7c49078e87fe6cf',1,'ChimeraTK::DoocsBackendRegisterAccessor']]],
-  ['shutdowncalled',['shutdownCalled',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aa7b9d96704ee9583991689100f7a9e13',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]],
-  ['slashes',['slashes',['../namespacedetail.html#adab1d68bf0f127a195efab7d3a74cb62',1,'detail']]],
-  ['src',['src',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a47151e07ff8caa8288db819dab284037',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]],
-  ['starttime',['startTime',['../classeq__dummy.html#ac4d3ffc28c8af68e7b67aceb83b10f45',1,'eq_dummy']]],
-  ['stringutility_2ecc',['StringUtility.cc',['../_string_utility_8cc.html',1,'']]],
-  ['stringutility_2eh',['StringUtility.h',['../_string_utility_8h.html',1,'']]],
-  ['subscribe',['subscribe',['../class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#afccea9af8b0253c7b05590bee7157828',1,'ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager']]],
-  ['supported_20data_20types',['Supported Data Types',['../supported_types.html',1,'']]]
+  ['readasyncthread',['readAsyncThread',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a2d7708781bc98de9844473ae60ff8bf7',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]],
+  ['readcatalogue',['readCatalogue',['../namespace_cache.html#aa85c43f09c98932d7bbdff1612a4c875',1,'Cache']]],
+  ['readdeviceinfo',['readDeviceInfo',['../class_chimera_t_k_1_1_doocs_backend.html#a64beee5b734545cd830b337f1891fb3d',1,'ChimeraTK::DoocsBackend']]],
+  ['refresh_5fepilog',['refresh_epilog',['../doocs_dummy__rpc__server_8cc.html#abad3095cb4eb0f7b41ad51882965e40a',1,'doocsDummy_rpc_server.cc']]],
+  ['refresh_5fprolog',['refresh_prolog',['../doocs_dummy__rpc__server_8cc.html#a8b5b57acbc923f1e052c514858e87797',1,'doocsDummy_rpc_server.cc']]],
+  ['registerinfo_2ecc',['RegisterInfo.cc',['../_register_info_8cc.html',1,'']]],
+  ['registerinfo_2eh',['RegisterInfo.h',['../_register_info_8h.html',1,'']]],
+  ['registerinfolist',['RegisterInfoList',['../_register_info_8h.html#a4009a4e5ef8e183e09276de2798c0c91',1,'RegisterInfo.h']]],
+  ['replacetransferelement',['replaceTransferElement',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a21af88c286d123e95742b2f87e85aac9',1,'ChimeraTK::DoocsBackendRegisterAccessor']]],
+  ['rpc_5fno',['rpc_no',['../class_doocs_launcher.html#a630db5a8b76a821f5824dae8e1d6dc78',1,'DoocsLauncher']]]
 ];
