@@ -124,8 +124,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a61884bb031aa5f516aded1645c2355da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#a61884bb031aa5f516aded1645c2355da">releaseLock</a> ()</td></tr>
 <tr class="memdesc:a61884bb031aa5f516aded1645c2355da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the testableModeLock.  <a href="#a61884bb031aa5f516aded1645c2355da">More...</a><br /></td></tr>
 <tr class="separator:a61884bb031aa5f516aded1645c2355da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef5c201edbc328dc38e078d256cebef4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#aef5c201edbc328dc38e078d256cebef4">doPreRead</a> (TransferType type) override</td></tr>
+<tr class="memdesc:aef5c201edbc328dc38e078d256cebef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement callback called by TransferFuture before it blocks in wait()  <a href="#aef5c201edbc328dc38e078d256cebef4">More...</a><br /></td></tr>
+<tr class="separator:aef5c201edbc328dc38e078d256cebef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c68c9a78beb5144dbd6374bd8256fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#ac2c68c9a78beb5144dbd6374bd8256fb">obtainLockAndDecrementCounter</a> (bool hasNewData)</td></tr>
-<tr class="memdesc:ac2c68c9a78beb5144dbd6374bd8256fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement callback called by TransferFuture before it blocks in wait()  <a href="#ac2c68c9a78beb5144dbd6374bd8256fb">More...</a><br /></td></tr>
+<tr class="memdesc:ac2c68c9a78beb5144dbd6374bd8256fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the testableModeLock if not owned yet, and decrement the counter.  <a href="#ac2c68c9a78beb5144dbd6374bd8256fb">More...</a><br /></td></tr>
 <tr class="separator:ac2c68c9a78beb5144dbd6374bd8256fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1253e11765c46d5e332550e39896ec4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#a1253e11765c46d5e332550e39896ec4c">decrementCounter</a> ()</td></tr>
 <tr class="memdesc:a1253e11765c46d5e332550e39896ec4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the testableModeLock if not owned yet, decrement the counter, and release the lock again.  <a href="#a1253e11765c46d5e332550e39896ec4c">More...</a><br /></td></tr>
@@ -246,7 +249,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Obtain the testableModeLock if not owned yet, decrement the counter, and release the lock again. </p>
 
-<p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00151">151</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00157">157</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -302,13 +305,53 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00156">156</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00162">162</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_testable_mode_accessor_decorator_a11e354efd0b6bdd841d14739b9359941_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aef5c201edbc328dc38e078d256cebef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef5c201edbc328dc38e078d256cebef4">&#9670;&nbsp;</a></span>doPreRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html">ChimeraTK::TestableModeAccessorDecorator</a>&lt; UserType &gt;::doPreRead </td>
+          <td>(</td>
+          <td class="paramtype">TransferType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implement callback called by TransferFuture before it blocks in wait() </p>
+
+<p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00119">119</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_testable_mode_accessor_decorator_aef5c201edbc328dc38e078d256cebef4_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -340,11 +383,11 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00106">106</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_testable_mode_accessor_decorator_a55d609b83bcd8c64c343157883739c67_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -378,11 +421,11 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00046">46</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_testable_mode_accessor_decorator_a358fff2c7ae82359be2b84ba8a6e064f_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -416,11 +459,11 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00076">76</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_testable_mode_accessor_decorator_ac6f45f3b0ba8a1b951c7f97fb2fb4f5c_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -453,23 +496,22 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implement callback called by TransferFuture before it blocks in wait() </p>
 <p>Obtain the testableModeLock if not owned yet, and decrement the counter. </p>
 
-<p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00122">122</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_testable_mode_accessor_decorator_ac2c68c9a78beb5144dbd6374bd8256fb_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00128">128</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_testable_mode_accessor_decorator_ac2c68c9a78beb5144dbd6374bd8256fb_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_testable_mode_accessor_decorator_ac2c68c9a78beb5144dbd6374bd8256fb_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -504,20 +546,20 @@ template&lt;typename UserType &gt; </div>
 <p>Release the testableModeLock. </p>
 
 <p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00112">112</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_testable_mode_accessor_decorator_a61884bb031aa5f516aded1645c2355da_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_testable_mode_accessor_decorator_a61884bb031aa5f516aded1645c2355da_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_testable_mode_accessor_decorator_a61884bb031aa5f516aded1645c2355da_cgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_testable_mode_accessor_decorator_a61884bb031aa5f516aded1645c2355da_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -546,7 +588,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00165">165</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00171">171</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -572,7 +614,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00165">165</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00171">171</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -598,7 +640,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00166">166</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00172">172</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -624,7 +666,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00166">166</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_testable_mode_accessor_decorator_8h_source.html#l00172">172</a> of file <a class="el" href="_testable_mode_accessor_decorator_8h_source.html">TestableModeAccessorDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -637,7 +679,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html">TestableModeAccessorDecorator</a></li>
-    <li class="footer">Generated on Sat Jun 20 2020 03:54:21 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Jun 23 2020 03:54:23 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

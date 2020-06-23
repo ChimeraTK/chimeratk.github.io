@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"test_device_initialisation_handler_8cc.html#a2ad6c925891235740d62c8cfc154bb1b":[16,0,10,0,8,8],
 "test_device_initialisation_handler_8cc.html#a3917892dbcc32d34def69384ada8d155":[16,0,10,0,8,9],
 "test_device_initialisation_handler_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[16,0,10,0,8,1],
 "test_device_initialisation_handler_8cc.html#a7cadc402273ba104ca92a9e8fb2ccd83":[16,0,10,0,8,7],
