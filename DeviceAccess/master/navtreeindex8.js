@@ -1,5 +1,11 @@
 var NAVTREEINDEX8 =
 {
+"device_2include_2_forward_declarations_8h.html":[17,0,0,0,5],
+"device_2include_2_forward_declarations_8h_source.html":[17,0,0,0,5],
+"device_2include_2_multiplexed_data_accessor_exception_8h.html":[17,0,0,0,6],
+"device_2include_2_multiplexed_data_accessor_exception_8h_source.html":[17,0,0,0,6],
+"device_2include_2_n_d_register_accessor_abstractor_8h.html":[17,0,0,0,7],
+"device_2include_2_n_d_register_accessor_abstractor_8h_source.html":[17,0,0,0,7],
 "device_2include_2_one_d_register_accessor_8h.html":[17,0,0,0,8],
 "device_2include_2_one_d_register_accessor_8h_source.html":[17,0,0,0,8],
 "device_2include_2_register_accessor_8h.html":[17,0,0,0,10],
@@ -232,8 +238,8 @@ var NAVTREEINDEX8 =
 "fileparsers_2include_2predicates_8h.html":[17,0,4,0,6],
 "fileparsers_2include_2predicates_8h_source.html":[17,0,4,0,6],
 "files.html":[17,0],
-"functions.html":[16,3,0,0],
 "functions.html":[16,3,0],
+"functions.html":[16,3,0,0],
 "functions_0x7e.html":[16,3,0,22],
 "functions_a.html":[16,3,0,1],
 "functions_b.html":[16,3,0,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX8 =
 "functions_enum.html":[16,3,4],
 "functions_eval.html":[16,3,5],
 "functions_f.html":[16,3,0,6],
-"functions_func.html":[16,3,1],
-"functions_func.html":[16,3,1,0],
-"functions_func_0x7e.html":[16,3,1,21],
-"functions_func_b.html":[16,3,1,1],
-"functions_func_c.html":[16,3,1,2],
-"functions_func_d.html":[16,3,1,3],
-"functions_func_e.html":[16,3,1,4]
+"functions_func.html":[16,3,1]
 };

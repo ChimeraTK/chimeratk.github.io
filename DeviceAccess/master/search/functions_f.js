@@ -28,7 +28,7 @@ var searchData=
   ['rebotserverdetails',['RebotServerDetails',['../struct_rebot_server_details.html#a54cfa8f2324e1c9531cd6a04de5e5986',1,'RebotServerDetails::RebotServerDetails()'],['../struct_rebot_server_details.html#af56ecc4076d920b0c8d9bb61b81bc6d3',1,'RebotServerDetails::RebotServerDetails(std::string &amp;ipAddress, std::string portNumber)']]],
   ['rebottestclass',['RebotTestClass',['../class_rebot_test_class.html#ac58d489c5a55ea8f6521c505c9aee6fc',1,'RebotTestClass']]],
   ['reconfigure',['reconfigure',['../class_chimera_t_k_1_1_fixed_point_converter.html#aae7ba81ef0eb12d2ed6c1144b4c9eb9f',1,'ChimeraTK::FixedPointConverter']]],
-  ['recoverdevice',['recoverDevice',['../class_unified_backend_test.html#acb134b6ed1dad73b0656cda31ed1ec8f',1,'UnifiedBackendTest']]],
+  ['recoverdevice',['recoverDevice',['../class_unified_backend_test.html#ac48719d14974fcc50462bb8c99d3a037',1,'UnifiedBackendTest']]],
   ['registeraccessor',['RegisterAccessor',['../class_chimera_t_k_1_1_register_accessor.html#aba251da7d81a431932ac1c8efaec8df0',1,'ChimeraTK::RegisterAccessor']]],
   ['registerbackendtype',['registerBackendType',['../class_chimera_t_k_1_1_backend_factory.html#a6eeda70f92759cf25e039bf585f1b6f8',1,'ChimeraTK::BackendFactory::registerBackendType(std::string backendType, boost::shared_ptr&lt; DeviceBackend &gt;(*creatorFunction)(std::string address, std::map&lt; std::string, std::string &gt; parameters), std::vector&lt; std::string &gt; sdmParameterNames={}, std::string deviceAccessVersion=CHIMERATK_DEVICEACCESS_VERSION)'],['../class_chimera_t_k_1_1_backend_factory.html#ac296a980ae51626ba1cd267870f8abf3',1,'ChimeraTK::BackendFactory::registerBackendType(std::string interface, std::string protocol, boost::shared_ptr&lt; DeviceBackend &gt;(*creatorFunction)(std::string host, std::string instance, std::list&lt; std::string &gt; parameters, std::string mapFileName), std::string version)']]],
   ['registercataloguetestsuite',['registerCatalogueTestSuite',['../classregister_catalogue_test_suite.html#a3362164ec4600ad33c0adadd77aae58a',1,'registerCatalogueTestSuite']]],
@@ -46,7 +46,7 @@ var searchData=
   ['rethrow',['reThrow',['../struct_chimera_t_k_1_1_transfer_group_1_1_exception_handling_result.html#ae956c41554177d220998225cbfca8b54',1,'ChimeraTK::TransferGroup::ExceptionHandlingResult']]],
   ['returninstance',['returnInstance',['../class_chimera_t_k_1_1_dummy_backend_base.html#a40b4f7314cfee45c32794b885f7a231e',1,'ChimeraTK::DummyBackendBase']]],
   ['runpostreads',['runPostReads',['../class_chimera_t_k_1_1_transfer_group.html#a8bd9110de16fd25a51e4f865331bacf1',1,'ChimeraTK::TransferGroup']]],
-  ['runtests',['runTests',['../class_unified_backend_test.html#a814c4cd067e49143569d18e1e1befed3',1,'UnifiedBackendTest']]],
+  ['runtests',['runTests',['../class_unified_backend_test.html#a1dd47c405881513fc6ef4aca7279bff8',1,'UnifiedBackendTest']]],
   ['runtime_5ferror',['runtime_error',['../class_chimera_t_k_1_1runtime__error.html#a1787cc6ae81bd4112878463a5a477603',1,'ChimeraTK::runtime_error']]],
   ['runwritecallbackfunctionsforaddressrange',['runWriteCallbackFunctionsForAddressRange',['../class_chimera_t_k_1_1_dummy_backend.html#ad604f70e94234f037cd01853b0765ce4',1,'ChimeraTK::DummyBackend']]],
   ['write_3c_20std_3a_3astring_20_3e',['write&lt; std::string &gt;',['../namespace_chimera_t_k.html#aa7199f55dc8b6d8c32ad7d93e37991dc',1,'ChimeraTK']]]

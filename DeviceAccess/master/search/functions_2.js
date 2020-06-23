@@ -23,6 +23,8 @@ var searchData=
   ['comparemodulename_5fpred',['compareModuleName_pred',['../class_chimera_t_k_1_1compare_module_name__pred.html#a848de2c268d4ce6f52150079491115d3',1,'ChimeraTK::compareModuleName_pred']]],
   ['compareregisterinfoents',['compareRegisterInfoents',['../helper_functions_8h.html#aba35a48257aa37733e2b9fe815175d5b',1,'compareRegisterInfoents(const ChimeraTK::RegisterInfoMap::RegisterInfo &amp;element1, const ChimeraTK::RegisterInfoMap::RegisterInfo &amp;element2):&#160;helperFunctions.cc'],['../helper_functions_8cc.html#aba35a48257aa37733e2b9fe815175d5b',1,'compareRegisterInfoents(const ChimeraTK::RegisterInfoMap::RegisterInfo &amp;element1, const ChimeraTK::RegisterInfoMap::RegisterInfo &amp;element2):&#160;helperFunctions.cc']]],
   ['comparhelper',['comparHelper',['../_unified_backend_test_8h.html#aec9949efafbf4f8ce58383b7487b7dd7',1,'UnifiedBackendTest.h']]],
+  ['comparhelper_3c_20double_20_3e',['comparHelper&lt; double &gt;',['../_unified_backend_test_8h.html#a14a04c39cfb9637a1f1b2618a3cd17a2',1,'UnifiedBackendTest.h']]],
+  ['comparhelper_3c_20float_20_3e',['comparHelper&lt; float &gt;',['../_unified_backend_test_8h.html#a2578583ff735d4162a83119d7f4bbc18',1,'UnifiedBackendTest.h']]],
   ['comparhelper_3c_20std_3a_3astring_20_3e',['comparHelper&lt; std::string &gt;',['../_unified_backend_test_8h.html#a875a3eb42a265bcd97e1f6053e292d92',1,'UnifiedBackendTest.h']]],
   ['concatenatepaths',['concatenatePaths',['../namespace_chimera_t_k_1_1parser_utilities.html#aa12c9ae1b43184cbb38d56f9aec8f630',1,'ChimeraTK::parserUtilities']]],
   ['connection',['Connection',['../class_chimera_t_k_1_1_rebot_1_1_connection.html#a30ca330e1a4ee3ddc77d2eb516765b10',1,'ChimeraTK::Rebot::Connection']]],

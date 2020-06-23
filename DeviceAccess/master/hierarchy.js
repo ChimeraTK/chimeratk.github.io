@@ -213,7 +213,7 @@ var hierarchy =
     [ "ChimeraTK::RegisterCatalogue::iterator", "class_chimera_t_k_1_1_register_catalogue_1_1iterator.html", null ],
     [ "std::less< ChimeraTK::TransferElementID >", "structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", null ],
     [ "std::list< T >", null, [
-      [ "UnifiedBackendTest< SET_REMOTE_VALUE_CALLABLE_T >::EnableDisableActionList", "class_unified_backend_test_1_1_enable_disable_action_list.html", null ]
+      [ "UnifiedBackendTest< GET_REMOTE_VALUE_CALLABLE_T >::EnableDisableActionList", "class_unified_backend_test_1_1_enable_disable_action_list.html", null ]
     ] ],
     [ "ChimeraTK::LogicalNameMapParser", "class_chimera_t_k_1_1_logical_name_map_parser.html", null ],
     [ "ChimeraTK::MapFileParser", "class_chimera_t_k_1_1_map_file_parser.html", null ],
@@ -300,7 +300,7 @@ var hierarchy =
     [ "ChimeraTK::TransferElementID", "class_chimera_t_k_1_1_transfer_element_i_d.html", null ],
     [ "ChimeraTK::TransferGroup", "class_chimera_t_k_1_1_transfer_group.html", null ],
     [ "TransferGroupTest", "class_transfer_group_test.html", null ],
-    [ "UnifiedBackendTest< SET_REMOTE_VALUE_CALLABLE_T >", "class_unified_backend_test.html", null ],
+    [ "UnifiedBackendTest< GET_REMOTE_VALUE_CALLABLE_T >", "class_unified_backend_test.html", null ],
     [ "ChimeraTK::Utilities", "class_chimera_t_k_1_1_utilities.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],

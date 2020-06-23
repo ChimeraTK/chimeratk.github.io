@@ -42,7 +42,7 @@ var searchData=
   ['addressrange',['AddressRange',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html',1,'ChimeraTK::DummyBackend::AddressRange'],['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html#ae18c40ccd64efd9484032a1f1bd137f8',1,'ChimeraTK::DummyBackend::AddressRange::AddressRange()']]],
   ['advance_5funtil',['advance_until',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html#a73e89a8c5e60ca0f1571ed3e34c7af68',1,'ChimeraTK::testable_rebot_sleep']]],
   ['aliaslookup',['aliasLookUp',['../class_chimera_t_k_1_1_backend_factory.html#ae166738b5e8ce2b948c542b91eb66237',1,'ChimeraTK::BackendFactory::aliasLookUp()'],['../class_chimera_t_k_1_1_utilities.html#a0124cd7dc8ef468a7c292788414848ed',1,'ChimeraTK::Utilities::aliasLookUp()']]],
-  ['allregisters',['allRegisters',['../class_unified_backend_test.html#a4f88bdc10db493f5b2598307218dd966',1,'UnifiedBackendTest']]],
+  ['allregisters',['allRegisters',['../class_unified_backend_test.html#ae4d88e102c47587c58a775c57eef390b',1,'UnifiedBackendTest']]],
   ['anotherworkingbackend',['AnotherWorkingBackend',['../struct_another_working_backend.html',1,'']]],
   ['anotherworkingbackend_2ecc',['AnotherWorkingBackend.cc',['../_another_working_backend_8cc.html',1,'']]],
   ['appendnumbertoname',['appendNumberToName',['../helper_functions_8h.html#a46b0ebb2324f645c97fa08cebca0f010',1,'appendNumberToName(std::string name, int cardNumber):&#160;helperFunctions.cc'],['../helper_functions_8cc.html#a4588ba93ef42031eafc572bfebe9b2ca',1,'appendNumberToName(std::string name, int suffixNumber):&#160;helperFunctions.cc']]],
@@ -52,7 +52,7 @@ var searchData=
   ['argumentparser_2ecc',['argumentParser.cc',['../argument_parser_8cc.html',1,'']]],
   ['argumentparser_2eh',['argumentParser.h',['../argument_parser_8h.html',1,'']]],
   ['ascii',['ASCII',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6b842be755b82e8e9f26f9104aac1600a2fbf8a3df38e98a5d5a95a70e74ad2b5',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
-  ['asyncreadregisters',['asyncReadRegisters',['../class_unified_backend_test.html#a9a6288a940a11b5818c05c23c0d0fb11',1,'UnifiedBackendTest']]],
+  ['asyncreadregisters',['asyncReadRegisters',['../class_unified_backend_test.html#a9456ebc04a0a7c0a0fc0f6b17e9a200a',1,'UnifiedBackendTest']]],
   ['asynctestdummy',['AsyncTestDummy',['../class_async_test_dummy.html',1,'AsyncTestDummy'],['../class_async_test_dummy.html#a63702eaa288d6f09ca8eb470064f8e15',1,'AsyncTestDummy::AsyncTestDummy()']]],
   ['accessing_20numeric_2daddressed_20registers_20without_20a_20map_20file',['Accessing numeric-addressed registers without a map file',['../numeric_addresses.html',1,'']]]
 ];
