@@ -1,12 +1,14 @@
 var searchData=
 [
   ['test_5fasyncread',['test_asyncRead',['../class_unified_backend_test.html#a582fceb8a595d8081ccdb07b00be6caa',1,'UnifiedBackendTest']]],
+  ['test_5fasyncreadconsistencyheartbeat',['test_asyncReadConsistencyHeartbeat',['../class_unified_backend_test.html#ad6232a74280552f66a358da609cce96a',1,'UnifiedBackendTest']]],
   ['test_5fexceptionhandlingasyncread',['test_exceptionHandlingAsyncRead',['../class_unified_backend_test.html#ae53899102fab549f875dd278088c6162',1,'UnifiedBackendTest']]],
   ['test_5fexceptionhandlingsyncread',['test_exceptionHandlingSyncRead',['../class_unified_backend_test.html#a5f4251a2fde751daa9a167e3b988b4b4',1,'UnifiedBackendTest']]],
   ['test_5fexceptionhandlingwrite',['test_exceptionHandlingWrite',['../class_unified_backend_test.html#a8bc2476c423df93524c5087f0ba44f84',1,'UnifiedBackendTest']]],
   ['test_5fsyncread',['test_syncRead',['../class_unified_backend_test.html#a3a4b8ff8f3161185c8f18c9f188f83d4',1,'UnifiedBackendTest']]],
   ['test_5fvalueafterconstruction',['test_valueAfterConstruction',['../class_unified_backend_test.html#af3256946b1b3a344670e026cce47f0a7',1,'UnifiedBackendTest']]],
   ['test_5fwrite',['test_write',['../class_unified_backend_test.html#adb92da84da01eaf43254c64c66f48c30',1,'UnifiedBackendTest']]],
+  ['test_5fwritedataloss',['test_writeDataLoss',['../class_unified_backend_test.html#a21e3077fe9f2a5f15ec863c546b98567',1,'UnifiedBackendTest']]],
   ['testabledummybackend',['TestableDummyBackend',['../class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a',1,'TestableDummyBackend::TestableDummyBackend(std::string mapFileName)'],['../class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a',1,'TestableDummyBackend::TestableDummyBackend(std::string mapFileName)']]],
   ['testadding',['testAdding',['../class_transfer_group_test.html#a817de2dfd4fbb046acc0c36b1f39316f',1,'TransferGroupTest']]],
   ['testaddressrange',['testAddressRange',['../class_dummy_backend_test.html#a3a04a2873fdf1f32d5647fa3054bd8aa',1,'DummyBackendTest']]],

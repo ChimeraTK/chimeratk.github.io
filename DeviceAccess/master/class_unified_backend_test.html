@@ -110,6 +110,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test_1_1_enable_disable_action_list.html">EnableDisableActionList</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Strong typedef" for list of pairs of functors for enabling and disbaling a test condition.  <a href="class_unified_backend_test_1_1_enable_disable_action_list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_unified_backend_test_1_1_exception_reporting_backend.html">ExceptionReportingBackend</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special DeviceBacked used for testing the exception reporting to the backend.  <a href="struct_unified_backend_test_1_1_exception_reporting_backend.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -125,6 +128,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a07de491c88f300e668d985128c41d05a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a07de491c88f300e668d985128c41d05a">forceRuntimeErrorOnWrite</a> (const <a class="el" href="class_unified_backend_test_1_1_enable_disable_action_list.html">EnableDisableActionList</a> &amp;list)</td></tr>
 <tr class="memdesc:a07de491c88f300e668d985128c41d05a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set functor, which will do whatever necessary that the backend will throw a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> for any write operation.  <a href="#a07de491c88f300e668d985128c41d05a">More...</a><br /></td></tr>
 <tr class="separator:a07de491c88f300e668d985128c41d05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492cee18443b4bc120bf48b96d9681af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a492cee18443b4bc120bf48b96d9681af">forceDataLossWrite</a> (std::function&lt; size_t(std::string)&gt; enable, std::function&lt; void(std::string)&gt; disable)</td></tr>
+<tr class="memdesc:a492cee18443b4bc120bf48b96d9681af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set functors, which will do whatever necessary that data will be lost in write operations.  <a href="#a492cee18443b4bc120bf48b96d9681af">More...</a><br /></td></tr>
+<tr class="separator:a492cee18443b4bc120bf48b96d9681af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b10339cb368d3f20adc0217bfb8a7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#ab9b10339cb368d3f20adc0217bfb8a7e">forceAsyncReadInconsistency</a> (std::function&lt; void(std::string)&gt; callable)</td></tr>
+<tr class="memdesc:ab9b10339cb368d3f20adc0217bfb8a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set functors, which will do whatever necessary that data last received via a push-type subscription is inconsistent with the actual value (as read by a synchronous read).  <a href="#ab9b10339cb368d3f20adc0217bfb8a7e">More...</a><br /></td></tr>
+<tr class="separator:ab9b10339cb368d3f20adc0217bfb8a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eab49b15b550907027f1b92583fb5bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a5eab49b15b550907027f1b92583fb5bb">quirkHookActivateAsyncRead</a> (std::function&lt; void(void)&gt; hook)</td></tr>
 <tr class="memdesc:a5eab49b15b550907027f1b92583fb5bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quirk hook: Call this functor after each call to activateAsyncRead().  <a href="#a5eab49b15b550907027f1b92583fb5bb">More...</a><br /></td></tr>
 <tr class="separator:a5eab49b15b550907027f1b92583fb5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +175,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a8bc2476c423df93524c5087f0ba44f84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a8bc2476c423df93524c5087f0ba44f84">test_exceptionHandlingWrite</a> ()</td></tr>
 <tr class="memdesc:a8bc2476c423df93524c5087f0ba44f84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test exception handling for write operations.  <a href="#a8bc2476c423df93524c5087f0ba44f84">More...</a><br /></td></tr>
 <tr class="separator:a8bc2476c423df93524c5087f0ba44f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e3077fe9f2a5f15ec863c546b98567"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a21e3077fe9f2a5f15ec863c546b98567">test_writeDataLoss</a> ()</td></tr>
+<tr class="memdesc:a21e3077fe9f2a5f15ec863c546b98567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test data loss in write.  <a href="#a21e3077fe9f2a5f15ec863c546b98567">More...</a><br /></td></tr>
+<tr class="separator:a21e3077fe9f2a5f15ec863c546b98567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6232a74280552f66a358da609cce96a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#ad6232a74280552f66a358da609cce96a">test_asyncReadConsistencyHeartbeat</a> ()</td></tr>
+<tr class="memdesc:ad6232a74280552f66a358da609cce96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test async read consistency heartbeat.  <a href="#ad6232a74280552f66a358da609cce96a">More...</a><br /></td></tr>
+<tr class="separator:ad6232a74280552f66a358da609cce96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac48719d14974fcc50462bb8c99d3a037"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#ac48719d14974fcc50462bb8c99d3a037">recoverDevice</a> (<a class="el" href="class_chimera_t_k_1_1_device.html">ChimeraTK::Device</a> &amp;d)</td></tr>
 <tr class="memdesc:ac48719d14974fcc50462bb8c99d3a037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility functions for recurring tasks.  <a href="#ac48719d14974fcc50462bb8c99d3a037">More...</a><br /></td></tr>
 <tr class="separator:ac48719d14974fcc50462bb8c99d3a037"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +192,14 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ab89ef8c991484eb5dba41020691bb495"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba09408b51a9331018c67b262db7c4db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_unified_backend_test_1_1_enable_disable_action_list.html">EnableDisableActionList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#aba09408b51a9331018c67b262db7c4db">forceExceptionsWrite</a></td></tr>
 <tr class="separator:aba09408b51a9331018c67b262db7c4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a865bbfc69da65451630b5171abd1949d"><td class="memItemLeft" align="right" valign="top">std::function&lt; size_t(std::string)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a865bbfc69da65451630b5171abd1949d">_enableForceDataLossWrite</a></td></tr>
+<tr class="memdesc:a865bbfc69da65451630b5171abd1949d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action to provoke data loss in writes.  <a href="#a865bbfc69da65451630b5171abd1949d">More...</a><br /></td></tr>
+<tr class="separator:a865bbfc69da65451630b5171abd1949d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad09e26d068c815d05780ff2985c53784"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(std::string)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#ad09e26d068c815d05780ff2985c53784">_disableForceDataLossWrite</a></td></tr>
+<tr class="separator:ad09e26d068c815d05780ff2985c53784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb7ff6bdcfa50eb2fa90c5f132fd3892"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(std::string)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#acb7ff6bdcfa50eb2fa90c5f132fd3892">_forceAsyncReadInconsistency</a></td></tr>
+<tr class="memdesc:acb7ff6bdcfa50eb2fa90c5f132fd3892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action to provoke a value inconsistency in asynchronous read transfers.  <a href="#acb7ff6bdcfa50eb2fa90c5f132fd3892">More...</a><br /></td></tr>
+<tr class="separator:acb7ff6bdcfa50eb2fa90c5f132fd3892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34264e15116da5a31739df4b0b328b05"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a34264e15116da5a31739df4b0b328b05">quirk_activateAsyncRead</a> {[] {}}</td></tr>
 <tr class="memdesc:a34264e15116da5a31739df4b0b328b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quirk hook: called right after each call to activateAsyncRead()  <a href="#a34264e15116da5a31739df4b0b328b05">More...</a><br /></td></tr>
 <tr class="separator:a34264e15116da5a31739df4b0b328b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,6 +280,84 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab9b10339cb368d3f20adc0217bfb8a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b10339cb368d3f20adc0217bfb8a7e">&#9670;&nbsp;</a></span>forceAsyncReadInconsistency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::forceAsyncReadInconsistency </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(std::string)&gt;&#160;</td>
+          <td class="paramname"><em>callable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set functors, which will do whatever necessary that data last received via a push-type subscription is inconsistent with the actual value (as read by a synchronous read). </p>
+<p>This can e.g. be achieved by changing the value without publishng the update to the subscribers.</p>
+<p>The functor receives the register name to be put into an inconsistent state as an argument. The test will use the getRemoteValueCallable to obtain the true value which the accessor should eventually become consistent to, so the implementation is free to change the actual value of the register.</p>
+<p>If it is impossible to create an inconsistent state (e.g. because the used protocol already implements measures to prevent this), this function shall not be called. The corresponding tests will then be disabled. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00099">99</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a492cee18443b4bc120bf48b96d9681af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a492cee18443b4bc120bf48b96d9681af">&#9670;&nbsp;</a></span>forceDataLossWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::forceDataLossWrite </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; size_t(std::string)&gt;&#160;</td>
+          <td class="paramname"><em>enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(std::string)&gt;&#160;</td>
+          <td class="paramname"><em>disable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set functors, which will do whatever necessary that data will be lost in write operations. </p>
+<p>The enable function returns the number of write operations to be executed before data loss occurs. If std::numeric_limits&lt;size_t&gt;::max() is returned, the test will be skipped for the given register and the disable function will not be called. Otherwise it is guaranteed that disable is called for each register enable was called before. The remote value will only be checked after disable has been called. Disable hence needs to block until the buffers actually have been flushed, so a subsequent remote value test will not fail supriously. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00082">82</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
 <a id="a42117b7827b9f8fc040556ee1d220818"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42117b7827b9f8fc040556ee1d220818">&#9670;&nbsp;</a></span>forceRuntimeErrorOnRead()</h2>
 
@@ -347,7 +448,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00124">124</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00153">153</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -388,7 +489,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 <p>Quirk hook: Call this functor after each call to activateAsyncRead(). </p>
 <p>Note: When any quirk hook needs to be used to pass the test, the backend is <em>not</em> complying to the specifications. Hence, use quirk hooks <em>only</em> when it is impossible to implement the backed to fully comply to the specifications, because the implemented protocol is broken. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00081">81</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00110">110</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -420,7 +521,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 
 <p>Utility functions for recurring tasks. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00321">321</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00400">400</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -461,7 +562,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <p>Execute all tests. </p>
 <p>Call this function within a BOOST_AUTO_TEST_CASE after calling all preparatory functions below. The tests are executed for the backend identified by the given CDD. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00257">257</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00322">322</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -504,7 +605,7 @@ template&lt;typename UserType &gt; </div>
 <p>Set the names of asynchronous read registers to be used for the tests. </p>
 <p>These registers must support AccessMode::wait_for_new_data. The registers must be readable. Registers may not appear in the list set via <a class="el" href="class_unified_backend_test.html#a1ee16e7381ee871c77c2e84a1f481954" title="Set the names of synchronous read registers to be used for the tests. ">setSyncReadTestRegisters()</a> as well, but they may appear in the list set through <a class="el" href="class_unified_backend_test.html#a17cb03d31d0e4b1aae8ccc9d48bbe35f" title="Set the names of asynchronous read registers to be used for the tests. ">setWriteTestRegisters()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00106">106</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00135">135</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -539,7 +640,7 @@ template&lt;typename UserType &gt; </div>
 <p>Set the names of synchronous read registers to be used for the tests. </p>
 <p>These registers must <em>not</em> support AccessMode::wait_for_new_data. The registers must be readable. Registers may not appear in the list set via <a class="el" href="class_unified_backend_test.html#ae46230275c6c6af94430b91a1c8b16e0" title="Set the names of asynchronous read registers to be used for the tests. ">setAsyncReadTestRegisters()</a> as well, but they may appear in the list set through <a class="el" href="class_unified_backend_test.html#a17cb03d31d0e4b1aae8ccc9d48bbe35f" title="Set the names of asynchronous read registers to be used for the tests. ">setWriteTestRegisters()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00093">93</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00122">122</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -574,7 +675,7 @@ template&lt;typename UserType &gt; </div>
 <p>Set the names of asynchronous read registers to be used for the tests. </p>
 <p>These registers must support AccessMode::wait_for_new_data. The registers must be readable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00118">118</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00147">147</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -615,7 +716,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_11_2_2_sameRegister"></a><a class="el" href="spec__transfer_element.html#transferElement_B_11_2_2">B.11.2.2</a> (same register only), </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00448">448</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00527">527</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -630,6 +731,56 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a582fceb8a595d8081ccdb07b00be6caa_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ad6232a74280552f66a358da609cce96a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6232a74280552f66a358da609cce96a">&#9670;&nbsp;</a></span>test_asyncReadConsistencyHeartbeat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_asyncReadConsistencyHeartbeat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test async read consistency heartbeat. </p>
+<p>This tests if data consistency is checked and corrected periodically for async reads (if necessary), and it verifies that the implementation complies to the following TransferElement specifications:</p><ul>
+<li><a class="anchor" id="UnifiedTest_TransferElement_B_8_4"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_4">B.8.4</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01212">1212</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ad6232a74280552f66a358da609cce96a_cgraph.svg" width="428" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ad6232a74280552f66a358da609cce96a_icgraph.svg" width="420" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -667,23 +818,24 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_8_3"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_3">B.8.3</a> (only first sentence),</li>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_9_2_1_single"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_2_1">B.9.2.1</a> (only single accessor), and</li>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_9_2_2_single"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_2_2">B.9.2.2</a> (only single accessor).</li>
+<li><a class="anchor" id="UnifiedTest_TransferElement_B_9_1_asyncRead"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_1">B.9.1</a></li>
 </ul>
 <p>Note: it is probbaly better to move the logic_error related tests into a separate function and test here for runtime_error handling only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00765">765</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00860">860</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ae53899102fab549f875dd278088c6162_cgraph.svg" width="472" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ae53899102fab549f875dd278088c6162_icgraph.svg" width="464" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -720,23 +872,24 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_6_4_syncRead"></a><a class="el" href="spec__transfer_element.html#transferElement_B_6_4">B.6.4</a>, and</li>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_9_3"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_3">B.9.3</a>, and</li>
 <li><a class="anchor" id="UnifiedTest_TransferElement_C_5_2_5_syncRead"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_5">C.5.2.5</a>.</li>
+<li><a class="anchor" id="UnifiedTest_TransferElement_B_9_1_syncRead"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_1">B.9.1</a></li>
 </ul>
 <p>Note: it is probbaly better to move the logic_error related tests into a separate function and test here for runtime_error handling only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00659">659</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00739">739</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a5f4251a2fde751daa9a167e3b988b4b4_cgraph.svg" width="464" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a5f4251a2fde751daa9a167e3b988b4b4_icgraph.svg" width="456" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -773,23 +926,24 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_6_4_write"></a><a class="el" href="spec__transfer_element.html#transferElement_B_6_4">B.6.4</a>,</li>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_9_4_single"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_4">B.9.4</a> (only single accessor),</li>
 <li><a class="anchor" id="UnifiedTest_TransferElement_C_5_2_5_write"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_5">C.5.2.5</a>,</li>
+<li><a class="anchor" id="UnifiedTest_TransferElement_B_9_1_write"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_1">B.9.1</a></li>
 </ul>
 <p>Note: it is probbaly better to move the logic_error related tests into a separate function and test here for runtime_error handling only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00923">923</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01039">1039</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a8bc2476c423df93524c5087f0ba44f84_cgraph.svg" width="436" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a8bc2476c423df93524c5087f0ba44f84_icgraph.svg" width="428" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -827,20 +981,20 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_11_2_1_syncRead"></a><a class="el" href="spec__transfer_element.html#transferElement_B_11_2_1">B.11.2.1</a>, </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00378">378</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00457">457</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a3a4b8ff8f3161185c8f18c9f188f83d4_cgraph.svg" width="368" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a3a4b8ff8f3161185c8f18c9f188f83d4_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -878,20 +1032,20 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li>MISSING SPEC for value after construction of value buffer </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00347">347</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00426">426</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_af3256946b1b3a344670e026cce47f0a7_cgraph.svg" width="430" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_af3256946b1b3a344670e026cce47f0a7_icgraph.svg" width="422" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -929,27 +1083,159 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_3_2_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_3_2_2">B.3.2.2</a>, </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00588">588</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00667">667</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_adb92da84da01eaf43254c64c66f48c30_cgraph.svg" width="368" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_adb92da84da01eaf43254c64c66f48c30_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
+<a id="a21e3077fe9f2a5f15ec863c546b98567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21e3077fe9f2a5f15ec863c546b98567">&#9670;&nbsp;</a></span>test_writeDataLoss()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_writeDataLoss </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test data loss in write. </p>
+<p>This tests if data loss in writes is correctly reported, and it verifies that the implementation complies to the following TransferElement specifications:</p><ul>
+<li><a class="anchor" id="UnifiedTest_TransferElement_B_7_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_7_2">B.7.2</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01148">1148</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a21e3077fe9f2a5f15ec863c546b98567_cgraph.svg" width="372" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a21e3077fe9f2a5f15ec863c546b98567_icgraph.svg" width="364" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad09e26d068c815d05780ff2985c53784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad09e26d068c815d05780ff2985c53784">&#9670;&nbsp;</a></span>_disableForceDataLossWrite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(std::string)&gt; <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::_disableForceDataLossWrite</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00174">174</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a865bbfc69da65451630b5171abd1949d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a865bbfc69da65451630b5171abd1949d">&#9670;&nbsp;</a></span>_enableForceDataLossWrite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;size_t(std::string)&gt; <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::_enableForceDataLossWrite</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Action to provoke data loss in writes. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00173">173</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="acb7ff6bdcfa50eb2fa90c5f132fd3892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb7ff6bdcfa50eb2fa90c5f132fd3892">&#9670;&nbsp;</a></span>_forceAsyncReadInconsistency</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(std::string)&gt; <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::_forceAsyncReadInconsistency</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Action to provoke a value inconsistency in asynchronous read transfers. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00177">177</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
 <a id="a2013447f6da2be1dda2032c52ae1a541"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2013447f6da2be1dda2032c52ae1a541">&#9670;&nbsp;</a></span>_getRemoteValueCallable</h2>
 
@@ -974,7 +1260,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 
 <p>See constructor description. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00148">148</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00186">186</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -1000,7 +1286,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00149">149</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00187">187</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1312,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00152">152</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00190">190</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -1052,7 +1338,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00152">152</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00190">190</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -1080,7 +1366,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 
 <p>CDD for backend to test. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00145">145</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00183">183</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1394,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 
 <p>Actions for enable exception throwing. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00139">139</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00170">170</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -1134,7 +1420,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00139">139</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00170">170</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -1162,7 +1448,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 
 <p>Quirk hook: called right after each call to activateAsyncRead() </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00142">142</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00180">180</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -1188,7 +1474,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00152">152</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00190">190</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -1216,7 +1502,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 
 <p>Name of integer register used for tests. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00152">152</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00190">190</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -1242,7 +1528,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00152">152</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00190">190</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -1255,7 +1541,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a></li>
-    <li class="footer">Generated on Tue Jun 23 2020 03:53:15 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Jun 24 2020 03:53:11 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

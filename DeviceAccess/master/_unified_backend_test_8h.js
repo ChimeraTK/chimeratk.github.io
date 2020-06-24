@@ -2,6 +2,7 @@ var _unified_backend_test_8h =
 [
     [ "UnifiedBackendTest", "class_unified_backend_test.html", "class_unified_backend_test" ],
     [ "EnableDisableActionList", "class_unified_backend_test_1_1_enable_disable_action_list.html", null ],
+    [ "ExceptionReportingBackend", "struct_unified_backend_test_1_1_exception_reporting_backend.html", "struct_unified_backend_test_1_1_exception_reporting_backend" ],
     [ "CHECK_EQUALITY", "_unified_backend_test_8h.html#a3b6893388f16002bc124de0fe5fc18ae", null ],
     [ "comparHelper", "_unified_backend_test_8h.html#aec9949efafbf4f8ce58383b7487b7dd7", null ],
     [ "comparHelper< double >", "_unified_backend_test_8h.html#a14a04c39cfb9637a1f1b2618a3cd17a2", null ],

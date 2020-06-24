@@ -31,6 +31,8 @@ var searchData=
   ['float32',['float32',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a77409000048075a168901376095a70b8',1,'ChimeraTK::DataType']]],
   ['float64',['float64',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899acf9a113559e682b39aab0754540f31cc',1,'ChimeraTK::DataType']]],
   ['for_5feach',['for_each',['../namespace_chimera_t_k.html#ae7a87d6ef5da36852a971cab2ac6eddc',1,'ChimeraTK']]],
+  ['forceasyncreadinconsistency',['forceAsyncReadInconsistency',['../class_unified_backend_test.html#ab9b10339cb368d3f20adc0217bfb8a7e',1,'UnifiedBackendTest']]],
+  ['forcedatalosswrite',['forceDataLossWrite',['../class_unified_backend_test.html#a492cee18443b4bc120bf48b96d9681af',1,'UnifiedBackendTest']]],
   ['forceexceptionsread',['forceExceptionsRead',['../class_unified_backend_test.html#ab89ef8c991484eb5dba41020691bb495',1,'UnifiedBackendTest']]],
   ['forceexceptionswrite',['forceExceptionsWrite',['../class_unified_backend_test.html#aba09408b51a9331018c67b262db7c4db',1,'UnifiedBackendTest']]],
   ['forcepollingreadplugin',['ForcePollingReadPlugin',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html',1,'ChimeraTK::LNMBackend::ForcePollingReadPlugin'],['../class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html#a19edd04ad54717bf3fcf7172c18f8dfa',1,'ChimeraTK::LNMBackend::ForcePollingReadPlugin::ForcePollingReadPlugin()']]],
