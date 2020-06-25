@@ -11,6 +11,7 @@ var searchData=
   ['getregisteraccessor_5fimpl',['getRegisterAccessor_impl',['../class_chimera_t_k_1_1_doocs_backend.html#ad275a7a9e412614591512f7aafab19c6',1,'ChimeraTK::DoocsBackend']]],
   ['getregistercatalogue',['getRegisterCatalogue',['../class_chimera_t_k_1_1_doocs_backend.html#a706cd10e5a07e138fcf56db804cf8957',1,'ChimeraTK::DoocsBackend']]],
   ['getregistername',['getRegisterName',['../class_doocs_backend_register_info.html#a76873fb8a36585d82b670f0d701f85de',1,'DoocsBackendRegisterInfo']]],
+  ['getremotevalue',['getRemoteValue',['../test_unified_backend_test_8cpp.html#af96573d0c29ddac229dabb0a437395ec',1,'testUnifiedBackendTest.cpp']]],
   ['getsupportedaccessmodes',['getSupportedAccessModes',['../class_doocs_backend_register_info.html#afedfa60db50085418b964cacbe3a4441',1,'DoocsBackendRegisterInfo']]],
   ['getversionforeventid',['getVersionForEventId',['../class_event_id_mapper.html#adfda73773e7e4e169664a6f288c72c5b',1,'EventIdMapper']]]
 ];
