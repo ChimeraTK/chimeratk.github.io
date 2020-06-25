@@ -99,13 +99,13 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aa53680194b261a6170adcacfa850bab3",
 "class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a0ffbe083c4eec2daeac9a537e1c91e07",
 "class_chimera_t_k_1_1_transfer_element.html#a561932e1a87dcc57cb3525a9980bdf49",
-"class_example_backend.html",
-"device_2include_2_access_mode_8h.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031",
-"functions_a.html",
-"namespace_chimera_t_k_1_1numeric__address.html",
-"struct_numeric_addressed_low_level_transfer_element__start_address.html#ae7e2f2cb1678a41456c140c179ba0797",
-"test_l_map_backend_8cpp.html#afe538536b4c920c39216373c868ac0a6",
-"testing_with_dummy_backends.html#dummy_backends_write_readonly"
+"class_dummy_register_test_suite.html#aa6c8a19aeab529c53ab1775543e7c80c",
+"data_consistency_group_8cpp_source.html",
+"files.html",
+"namespace_chimera_t_k_1_1_l_n_m_backend.html",
+"struct_not_registering_plugin.html",
+"test_l_map_backend_8cpp.html#ab148c830fb30f16b374203012e700fd8",
+"testable_rebot_sleep__testing_impl_8h.html#a73e89a8c5e60ca0f1571ed3e34c7af68"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

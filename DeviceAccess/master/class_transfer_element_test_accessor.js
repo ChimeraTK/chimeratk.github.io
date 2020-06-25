@@ -11,6 +11,7 @@ var class_transfer_element_test_accessor =
     [ "doWriteTransferDestructively", "class_transfer_element_test_accessor.html#a515570a9911916e73b4b0753958afc70", null ],
     [ "getHardwareAccessingElements", "class_transfer_element_test_accessor.html#a2077e88891a5e6b515c1d428201bf830", null ],
     [ "getInternalElements", "class_transfer_element_test_accessor.html#a31ecf0b5c39cf421dcd7bd4c43a954bf", null ],
+    [ "interrupt", "class_transfer_element_test_accessor.html#a76fd12f8a75121651d9f20426e9e3f5d", null ],
     [ "isReadable", "class_transfer_element_test_accessor.html#ad55b97cdac13415df920fa0eedaf7677", null ],
     [ "isReadOnly", "class_transfer_element_test_accessor.html#a285d31389c7e48c326bcfdb724bbbde9", null ],
     [ "isWriteable", "class_transfer_element_test_accessor.html#af42bfcfd7b03cdaf1d777410202cf696", null ],

@@ -157,6 +157,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af42bfcfd7b03cdaf1d777410202cf696"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transfer_element_test_accessor.html#af42bfcfd7b03cdaf1d777410202cf696">isWriteable</a> () const override</td></tr>
 <tr class="memdesc:af42bfcfd7b03cdaf1d777410202cf696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if transfer element is writeable.  <a href="#af42bfcfd7b03cdaf1d777410202cf696">More...</a><br /></td></tr>
 <tr class="separator:af42bfcfd7b03cdaf1d777410202cf696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76fd12f8a75121651d9f20426e9e3f5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transfer_element_test_accessor.html#a76fd12f8a75121651d9f20426e9e3f5d">interrupt</a> () override</td></tr>
+<tr class="memdesc:a76fd12f8a75121651d9f20426e9e3f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return from a blocking read immediately and throw boost::thread_interrupted.  <a href="#a76fd12f8a75121651d9f20426e9e3f5d">More...</a><br /></td></tr>
+<tr class="separator:a76fd12f8a75121651d9f20426e9e3f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64263cb759c67bb019fa73ffbde76294"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transfer_element_test_accessor.html#a64263cb759c67bb019fa73ffbde76294">resetCounters</a> ()</td></tr>
 <tr class="separator:a64263cb759c67bb019fa73ffbde76294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cde077962e051a2e4f31550aab9db0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transfer_element_test_accessor.html#a0cde077962e051a2e4f31550aab9db0d">putRuntimeErrorOnQueue</a> ()</td></tr>
@@ -309,9 +312,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ae9512ec3459b8b320678e4af4c1334 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a5ae9512ec3459b8b320678e4af4c1334">getId</a> () const</td></tr>
 <tr class="memdesc:a5ae9512ec3459b8b320678e4af4c1334 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain unique ID for this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>, see <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html" title="Simple class holding a unique ID for a TransferElement. ">TransferElementID</a> for details.  <a href="class_chimera_t_k_1_1_transfer_element.html#a5ae9512ec3459b8b320678e4af4c1334">More...</a><br /></td></tr>
 <tr class="separator:a5ae9512ec3459b8b320678e4af4c1334 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af92b78c177bc98923a78a0d4faaf9e05 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05">interrupt</a> ()</td></tr>
-<tr class="memdesc:af92b78c177bc98923a78a0d4faaf9e05 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return from a blocking read immediately and throw boost::thread_interrupted.  <a href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05">More...</a><br /></td></tr>
-<tr class="separator:af92b78c177bc98923a78a0d4faaf9e05 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc6f496a4965a7e81b0c36463ac9ce9 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memTemplParams" colspan="2">template&lt;typename QUEUE_TYPE &gt; </td></tr>
+<tr class="memitem:a7dc6f496a4965a7e81b0c36463ac9ce9 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7dc6f496a4965a7e81b0c36463ac9ce9">interrupt_impl</a> (QUEUE_TYPE &amp;dataTransportQueue)</td></tr>
+<tr class="memdesc:a7dc6f496a4965a7e81b0c36463ac9ce9 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05" title="Return from a blocking read immediately and throw boost::thread_interrupted. ">interrupt()</a> for TransferElements which support <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a>.  <a href="class_chimera_t_k_1_1_transfer_element.html#a7dc6f496a4965a7e81b0c36463ac9ce9">More...</a><br /></td></tr>
+<tr class="separator:a7dc6f496a4965a7e81b0c36463ac9ce9 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -841,6 +845,52 @@ template&lt;typename UserType&gt; </div>
 
 </div>
 </div>
+<a id="a76fd12f8a75121651d9f20426e9e3f5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76fd12f8a75121651d9f20426e9e3f5d">&#9670;&nbsp;</a></span>interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_transfer_element_test_accessor.html">TransferElementTestAccessor</a>&lt; UserType &gt;::interrupt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return from a blocking read immediately and throw boost::thread_interrupted. </p>
+<p>This function can be used to shutdown a thread waiting on data to arrive, which might never happen because the sending part of the application is already shut down, or there is no new data at the moment.</p>
+<p>This function can only be used for TransferElements with AccessMode::wait_for_new_data. Otherwise it will throw a <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a>.</p>
+<p>Note that this function does not stop the sending thread. It just places a boost::thread_interrupted exception on the _TransferElement::_readQueue, so a waiting <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa21ae3855a6df0e877865702df066f5e" title="Read the data from the device. ">read()</a> has something to receive and returns. If regular data is put into the queue just before the exception, this is received first. Hence it is not guaranteed that the read call that is supposed to be interrupted will actually throw an exception. But it is guaranteed that it returns immediately. An it is guarantted that eventually the boost::thread_interrupted exception will be received.</p>
+<p>See <a class="el" href="spec__transfer_element.html#transferElement_B_8_6">Technical specification: TransferElement B.8.6</a></p>
+<p>Implementation notice: This default implementation is always throwing. Each ThransferElement implementation that supports AccessMode::wait_for_new_data has to override it like this: void <a class="el" href="class_transfer_element_test_accessor.html#a76fd12f8a75121651d9f20426e9e3f5d" title="Return from a blocking read immediately and throw boost::thread_interrupted. ">interrupt()</a> override { this-&gt;interrupt_impl(this-&gt;_myDataTransportQueue); } </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05">ChimeraTK::TransferElement</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00213">213</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_transfer_element_test_accessor_a76fd12f8a75121651d9f20426e9e3f5d_icgraph.svg" width="462" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="ad55b97cdac13415df920fa0eedaf7677"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad55b97cdac13415df920fa0eedaf7677">&#9670;&nbsp;</a></span>isReadable()</h2>
 
@@ -1005,7 +1055,7 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00270">270</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00272">272</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1034,7 +1084,7 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00261">261</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00263">263</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1063,12 +1113,12 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00253">253</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00255">255</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_transfer_element_test_accessor_a0cde077962e051a2e4f31550aab9db0d_icgraph.svg" width="462" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1135,12 +1185,12 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00228">228</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00230">230</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_transfer_element_test_accessor_a64263cb759c67bb019fa73ffbde76294_icgraph.svg" width="462" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1162,7 +1212,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00217">217</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00219">219</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1180,7 +1230,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00220">220</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00222">222</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1198,7 +1248,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00226">226</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00228">228</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1216,7 +1266,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00227">227</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00229">229</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1234,7 +1284,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00222">222</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00224">224</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1252,7 +1302,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">      <span class="keyword">false</span>}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00218">218</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00220">220</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1270,7 +1320,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00223">223</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00225">225</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1288,7 +1338,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00214">214</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00216">216</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1306,7 +1356,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00224">224</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00226">226</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1374,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00244">244</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00246">246</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1342,7 +1392,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00247">247</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00249">249</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1360,7 +1410,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00246">246</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00248">248</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1378,7 +1428,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00245">245</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00247">247</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1396,7 +1446,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00250">250</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00252">252</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1414,7 +1464,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00248">248</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00250">250</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1432,7 +1482,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00249">249</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00251">251</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1450,7 +1500,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00216">216</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00218">218</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1468,7 +1518,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00213">213</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00215">215</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1486,7 +1536,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00225">225</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_element_8cpp_source.html#l00227">227</a> of file <a class="el" href="test_transfer_element_8cpp_source.html">testTransferElement.cpp</a>.</p>
 
 </div>
 </div>
@@ -1499,7 +1549,7 @@ template&lt;typename UserType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_transfer_element_test_accessor.html">TransferElementTestAccessor</a></li>
-    <li class="footer">Generated on Wed Jun 24 2020 03:53:11 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Jun 25 2020 03:53:14 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

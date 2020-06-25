@@ -19,6 +19,8 @@ var class_unified_backend_test =
     [ "test_exceptionHandlingAsyncRead", "class_unified_backend_test.html#ae53899102fab549f875dd278088c6162", null ],
     [ "test_exceptionHandlingSyncRead", "class_unified_backend_test.html#a5f4251a2fde751daa9a167e3b988b4b4", null ],
     [ "test_exceptionHandlingWrite", "class_unified_backend_test.html#a8bc2476c423df93524c5087f0ba44f84", null ],
+    [ "test_interrupt", "class_unified_backend_test.html#a31d2dac52f097c3122b0d1c826f463b3", null ],
+    [ "test_setException", "class_unified_backend_test.html#a9a62976d996728a13f4cb24dff0ad89c", null ],
     [ "test_syncRead", "class_unified_backend_test.html#a3a4b8ff8f3161185c8f18c9f188f83d4", null ],
     [ "test_valueAfterConstruction", "class_unified_backend_test.html#af3256946b1b3a344670e026cce47f0a7", null ],
     [ "test_write", "class_unified_backend_test.html#adb92da84da01eaf43254c64c66f48c30", null ],
