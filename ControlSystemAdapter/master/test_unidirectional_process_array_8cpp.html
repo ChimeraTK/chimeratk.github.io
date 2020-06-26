@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('test_unidirectional_process_array_8cpp
 <code>#include &quot;<a class="el" href="_counting_process_variable_listener_8h_source.html">CountingProcessVariableListener.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="to_type_8h_source.html">toType.h</a>&quot;</code><br />
 <code>#include &lt;boost/mpl/list.hpp&gt;</code><br />
+<code>#include &lt;boost/thread.hpp&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for testUnidirectionalProcessArray.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -122,6 +123,10 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:acaabbc2250194a2d6ad9cd439ebf1ab9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_unidirectional_process_array_8cpp.html#acaabbc2250194a2d6ad9cd439ebf1ab9">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testConstructors, T, <a class="el" href="test_unidirectional_process_array_8cpp.html#a94d1ab9c4eb4fa78b5ced84089ccdeea">test_types</a>)</td></tr>
 <tr class="separator:acaabbc2250194a2d6ad9cd439ebf1ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db62350a5362640614cfc27021b21a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_unidirectional_process_array_8cpp.html#a3db62350a5362640614cfc27021b21a5">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testDoubleRead, T, <a class="el" href="test_unidirectional_process_array_8cpp.html#a94d1ab9c4eb4fa78b5ced84089ccdeea">test_types</a>)</td></tr>
+<tr class="separator:a3db62350a5362640614cfc27021b21a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab45b1a1bdc0022d2938006b6c1edc6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_unidirectional_process_array_8cpp.html#aab45b1a1bdc0022d2938006b6c1edc6b">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testInterrupt, T, <a class="el" href="test_unidirectional_process_array_8cpp.html#a94d1ab9c4eb4fa78b5ced84089ccdeea">test_types</a>)</td></tr>
+<tr class="separator:aab45b1a1bdc0022d2938006b6c1edc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62aefc9c0e5533b41b3f1ad96376c435"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_unidirectional_process_array_8cpp.html#a62aefc9c0e5533b41b3f1ad96376c435">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testGet, T, <a class="el" href="test_unidirectional_process_array_8cpp.html#a94d1ab9c4eb4fa78b5ced84089ccdeea">test_types</a>)</td></tr>
 <tr class="separator:a62aefc9c0e5533b41b3f1ad96376c435"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf4367a0139f293197c62dc88f003aca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_unidirectional_process_array_8cpp.html#aaf4367a0139f293197c62dc88f003aca">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testSet, T, <a class="el" href="test_unidirectional_process_array_8cpp.html#a94d1ab9c4eb4fa78b5ced84089ccdeea">test_types</a>)</td></tr>
@@ -171,13 +176,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00020">20</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00021">21</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="acaabbc2250194a2d6ad9cd439ebf1ab9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acaabbc2250194a2d6ad9cd439ebf1ab9">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[1/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acaabbc2250194a2d6ad9cd439ebf1ab9">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[1/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,12 +213,84 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00031">31</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00032">32</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3db62350a5362640614cfc27021b21a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3db62350a5362640614cfc27021b21a5">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[2/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE_TEMPLATE </td>
+          <td>(</td>
+          <td class="paramtype">testDoubleRead&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_unidirectional_process_array_8cpp.html#a94d1ab9c4eb4fa78b5ced84089ccdeea">test_types</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00091">91</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aab45b1a1bdc0022d2938006b6c1edc6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab45b1a1bdc0022d2938006b6c1edc6b">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[3/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE_TEMPLATE </td>
+          <td>(</td>
+          <td class="paramtype">testInterrupt&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_unidirectional_process_array_8cpp.html#a94d1ab9c4eb4fa78b5ced84089ccdeea">test_types</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00110">110</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a62aefc9c0e5533b41b3f1ad96376c435"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62aefc9c0e5533b41b3f1ad96376c435">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[2/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a62aefc9c0e5533b41b3f1ad96376c435">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[4/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,12 +321,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00090">90</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00127">127</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
 
 </div>
 </div>
 <a id="aaf4367a0139f293197c62dc88f003aca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf4367a0139f293197c62dc88f003aca">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[3/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf4367a0139f293197c62dc88f003aca">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[5/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -280,12 +357,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00107">107</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00144">144</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a13b54fb602ca01e2f1e0883069f9a862"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13b54fb602ca01e2f1e0883069f9a862">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b54fb602ca01e2f1e0883069f9a862">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[6/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,12 +393,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00127">127</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00164">164</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a8a6a9f4da77c50d7371914b920265bab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a6a9f4da77c50d7371914b920265bab">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a6a9f4da77c50d7371914b920265bab">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[7/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,12 +429,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00154">154</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00191">191</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a3d94fc1cdfa1715ac982d0d26060404a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d94fc1cdfa1715ac982d0d26060404a">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d94fc1cdfa1715ac982d0d26060404a">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[8/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -388,12 +465,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00170">170</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00207">207</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a5e984ce9d0f58ab4c27864d47d449bb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e984ce9d0f58ab4c27864d47d449bb3">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[7/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e984ce9d0f58ab4c27864d47d449bb3">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[9/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -424,12 +501,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00272">272</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00309">309</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
 
 </div>
 </div>
 <a id="af0d38dd05635ccbfcfc16e3280cb906f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0d38dd05635ccbfcfc16e3280cb906f">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[8/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af0d38dd05635ccbfcfc16e3280cb906f">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[10/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -460,12 +537,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00354">354</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00391">391</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
 
 </div>
 </div>
 <a id="adf93cc3c00825e3d7c01ec2fc85a19e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf93cc3c00825e3d7c01ec2fc85a19e9">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[9/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adf93cc3c00825e3d7c01ec2fc85a19e9">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[11/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -496,12 +573,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00393">393</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00430">430</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a1c9c6b54afb830b4ea9f22a45a743e5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c9c6b54afb830b4ea9f22a45a743e5a">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[10/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c9c6b54afb830b4ea9f22a45a743e5a">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[12/12]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -532,7 +609,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00493">493</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unidirectional_process_array_8cpp_source.html#l00530">530</a> of file <a class="el" href="test_unidirectional_process_array_8cpp_source.html">testUnidirectionalProcessArray.cpp</a>.</p>
 
 </div>
 </div>
@@ -542,7 +619,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="test_unidirectional_process_array_8cpp.html">testUnidirectionalProcessArray.cpp</a></li>
-    <li class="footer">Generated on Thu Jun 25 2020 03:54:05 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Fri Jun 26 2020 03:53:53 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
