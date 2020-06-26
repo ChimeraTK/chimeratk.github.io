@@ -15,6 +15,7 @@ var annotated_dup =
     [ "BufferingRegisterTestSuite", "class_buffering_register_test_suite.html", "class_buffering_register_test_suite" ],
     [ "CountingDecorator", "struct_counting_decorator.html", "struct_counting_decorator" ],
     [ "CustomBackend", "class_custom_backend.html", "class_custom_backend" ],
+    [ "DecoratorTestAccessor", "class_decorator_test_accessor.html", "class_decorator_test_accessor" ],
     [ "device_ioctrl_data", "structdevice__ioctrl__data.html", "structdevice__ioctrl__data" ],
     [ "device_ioctrl_dma", "structdevice__ioctrl__dma.html", "structdevice__ioctrl__dma" ],
     [ "device_ioctrl_time", "structdevice__ioctrl__time.html", "structdevice__ioctrl__time" ],

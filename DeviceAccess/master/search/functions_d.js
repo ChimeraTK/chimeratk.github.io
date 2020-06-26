@@ -29,7 +29,7 @@ var searchData=
   ['processpolled',['processPolled',['../class_chimera_t_k_1_1_read_any_group.html#ae57188eba7e01de51a3f06347913f2c7',1,'ChimeraTK::ReadAnyGroup']]],
   ['processreceivedpackage',['processReceivedPackage',['../class_chimera_t_k_1_1_rebot_dummy_session.html#a6f553d463448be33ed648aa4d1958fa1',1,'ChimeraTK::RebotDummySession']]],
   ['protocolversion',['protocolVersion',['../struct_chimera_t_k_1_1_dummy_protocol0.html#a1cf44e97a9270ec69968c6f3c4c61290',1,'ChimeraTK::DummyProtocol0::protocolVersion()'],['../struct_chimera_t_k_1_1_dummy_protocol1.html#a27cdf2f6f4f5aa923822bde4ef6644c6',1,'ChimeraTK::DummyProtocol1::protocolVersion()'],['../struct_dummy_protocol_implementor.html#a6764cd943e5a41276aeede2113e89efb',1,'DummyProtocolImplementor::protocolVersion()']]],
-  ['push',['push',['../class_transfer_element_test_accessor.html#aecb9424af792768b85448bc5d19eebed',1,'TransferElementTestAccessor']]],
-  ['putdiscardvalueonqueue',['putDiscardValueOnQueue',['../class_transfer_element_test_accessor.html#a72993ef06f433c5586bac0347504849c',1,'TransferElementTestAccessor']]],
-  ['putruntimeerroronqueue',['putRuntimeErrorOnQueue',['../class_transfer_element_test_accessor.html#a0cde077962e051a2e4f31550aab9db0d',1,'TransferElementTestAccessor']]]
+  ['push',['push',['../class_decorator_test_accessor.html#a77d3891c37c4bb0ec7503f5ff07fe0fc',1,'DecoratorTestAccessor::push()'],['../class_transfer_element_test_accessor.html#aecb9424af792768b85448bc5d19eebed',1,'TransferElementTestAccessor::push()']]],
+  ['putdiscardvalueonqueue',['putDiscardValueOnQueue',['../class_decorator_test_accessor.html#ad7b34e3e2fc86d9ac5280cc4f4b165e6',1,'DecoratorTestAccessor::putDiscardValueOnQueue()'],['../class_transfer_element_test_accessor.html#a72993ef06f433c5586bac0347504849c',1,'TransferElementTestAccessor::putDiscardValueOnQueue()']]],
+  ['putruntimeerroronqueue',['putRuntimeErrorOnQueue',['../class_decorator_test_accessor.html#a8db903de1bcbf0b6b32a9a980248b95d',1,'DecoratorTestAccessor::putRuntimeErrorOnQueue()'],['../class_transfer_element_test_accessor.html#a0cde077962e051a2e4f31550aab9db0d',1,'TransferElementTestAccessor::putRuntimeErrorOnQueue()']]]
 ];

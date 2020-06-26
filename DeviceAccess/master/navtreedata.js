@@ -45,7 +45,7 @@ var NAVTREE =
       [ "Why do RegisterAccessors not have an assignment operator for other RegisterAccessors?", "q_and_a.html#why_no_accessor_assignment", null ],
       [ "Why can I not read SEQUENCE registers?", "q_and_a.html#use_sequences", null ]
     ] ],
-    [ "Technical specification: TransferElement V1.0RC8WIP !! Based on RC6. Changes from RC7 still missing !!", "spec__transfer_element.html", null ],
+    [ "Technical specification: TransferElement V1.0RC9WIP !! Based on RC7. Changes from RC8 still missing !!", "spec__transfer_element.html", null ],
     [ "Testing applications using the DummyBackends", "testing_with_dummy_backends.html", [
       [ "Specifying the dummies in the device map file", "testing_with_dummy_backends.html#dmap_specify_dummies", null ],
       [ "Writeing to read-only registers", "testing_with_dummy_backends.html#dummy_backends_write_readonly", null ]
@@ -99,13 +99,13 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aa53680194b261a6170adcacfa850bab3",
 "class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a0ffbe083c4eec2daeac9a537e1c91e07",
 "class_chimera_t_k_1_1_transfer_element.html#a561932e1a87dcc57cb3525a9980bdf49",
-"class_dummy_register_test_suite.html#aa6c8a19aeab529c53ab1775543e7c80c",
-"data_consistency_group_8cpp_source.html",
-"files.html",
-"namespace_chimera_t_k_1_1_l_n_m_backend.html",
-"struct_not_registering_plugin.html",
-"test_l_map_backend_8cpp.html#ab148c830fb30f16b374203012e700fd8",
-"testable_rebot_sleep__testing_impl_8h.html#a73e89a8c5e60ca0f1571ed3e34c7af68"
+"class_decorator_test_accessor.html#aec65a4dda42b4391762e66cb633f5219",
+"class_version_number_test.html#a6853efb6ff40c7070e88b190540933e5",
+"dir_dcba6dfd410a966f3c2ecded9b1039f6.html",
+"mtca4u__compatibility__headers_2_rebot_backend_8h.html",
+"struct_chimera_t_k_1_1_transfer_group_1_1_exception_handling_result.html#ae956c41554177d220998225cbfca8b54",
+"test_fixed_point_converter_8cpp.html#ab8d462822339b1e38bbec981698bdc2c",
+"test_transfer_element_8cpp.html#a85b7626182a8c71ed87001a5f7e86de3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

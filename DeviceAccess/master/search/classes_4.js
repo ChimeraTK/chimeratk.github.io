@@ -5,6 +5,7 @@ var searchData=
   ['dataconvertertemplatespecialisationhelper_3c_20int32_5ft_2c_20cookedt_20_3e',['dataConverterTemplateSpecialisationHelper&lt; int32_t, CookedT &gt;',['../struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_spe9033bbf1deb4f2449f5a993bab102f6.html',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor']]],
   ['datadescriptor',['DataDescriptor',['../class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html',1,'ChimeraTK::RegisterInfo']]],
   ['datatype',['DataType',['../class_chimera_t_k_1_1_data_type.html',1,'ChimeraTK']]],
+  ['decoratortestaccessor',['DecoratorTestAccessor',['../class_decorator_test_accessor.html',1,'']]],
   ['device',['Device',['../class_chimera_t_k_1_1_device.html',1,'ChimeraTK']]],
   ['device_5fioctrl_5fdata',['device_ioctrl_data',['../structdevice__ioctrl__data.html',1,'']]],
   ['device_5fioctrl_5fdma',['device_ioctrl_dma',['../structdevice__ioctrl__dma.html',1,'']]],

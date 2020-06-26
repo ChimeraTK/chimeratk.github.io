@@ -29,6 +29,7 @@ var searchData=
   ['testlmaptypehintmodifierplugin_2ecc',['testLMapTypeHintModifierPlugin.cc',['../test_l_map_type_hint_modifier_plugin_8cc.html',1,'']]],
   ['testmapfileparser_2ecpp',['testMapFileParser.cpp',['../test_map_file_parser_8cpp.html',1,'']]],
   ['testmultiplexeddataaccesor_2ecpp',['testMultiplexedDataAccesor.cpp',['../test_multiplexed_data_accesor_8cpp.html',1,'']]],
+  ['testndregisteraccessordecorator_2ecpp',['testNDRegisterAccessorDecorator.cpp',['../test_n_d_register_accessor_decorator_8cpp.html',1,'']]],
   ['testnumericaddressedbackendregisteraccessor_2ecpp',['testNumericAddressedBackendRegisterAccessor.cpp',['../test_numeric_addressed_backend_register_accessor_8cpp.html',1,'']]],
   ['testonedregisteraccessor_2ecpp',['testOneDRegisterAccessor.cpp',['../test_one_d_register_accessor_8cpp.html',1,'']]],
   ['testparserutilities_2ecpp',['testParserUtilities.cpp',['../test_parser_utilities_8cpp.html',1,'']]],
