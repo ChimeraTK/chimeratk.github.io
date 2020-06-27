@@ -140,6 +140,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5516fcb8d2a24b92b4cd9e47db7f4f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21af88c286d123e95742b2f87e85aac9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a21af88c286d123e95742b2f87e85aac9">replaceTransferElement</a> (boost::shared_ptr&lt; TransferElement &gt;) override</td></tr>
 <tr class="separator:a21af88c286d123e95742b2f87e85aac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf33826f9f16817c0c5d962f4508911"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a5cf33826f9f16817c0c5d962f4508911">interrupt</a> () override</td></tr>
+<tr class="separator:a5cf33826f9f16817c0c5d962f4508911"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -243,7 +245,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00291">291</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00293">293</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -313,7 +315,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00248">248</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00250">250</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -485,7 +487,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00298">298</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00300">300</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -615,7 +617,7 @@ template&lt;typename UserType &gt; </div>
 <p>connect to server etc.).</p>
 <p>Note: must <em>only</em> throw ChimeraTK::logic_error. Just do not proceed with the initialisation if a runtime_error is to be thrown - this will then be done in the transfer. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00185">185</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00187">187</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -665,6 +667,35 @@ template&lt;typename UserType &gt; </div>
 <p>Note: must <em>only</em> throw ChimeraTK::logic_error. Just do not proceed with the initialisation if a runtime_error is to be thrown - this will then be done in the transfer. </p>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_doocs_backend_i_f_f_f_register_accessor.html#aeb7de5fdcb0cb6186346ded1698a0923">ChimeraTK::DoocsBackendIFFFRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_doocs_backend_int_register_accessor.html#a3490a939a1739407f59969c6d27cc42b">ChimeraTK::DoocsBackendIntRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_doocs_backend_long_register_accessor.html#a6b1b3fdf37575490d581fe13aae35ccf">ChimeraTK::DoocsBackendLongRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html#a30a1c2dcc9df93ede1e50c166ddd2a42">ChimeraTK::DoocsBackendFloatRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html#ab819525534d348cd4c647d967f376b90">ChimeraTK::DoocsBackendStringRegisterAccessor&lt; UserType &gt;</a>, <a class="el" href="class_chimera_t_k_1_1_doocs_backend_event_id_register_accessor.html#a7c833504734cd59e01c0c35ace035ba2">ChimeraTK::DoocsBackendEventIdRegisterAccessor&lt; UserType &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_doocs_backend_time_stamp_register_accessor.html#a436c1b9871ef6422a95d1203ec9380cf">ChimeraTK::DoocsBackendTimeStampRegisterAccessor&lt; UserType &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a5cf33826f9f16817c0c5d962f4508911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf33826f9f16817c0c5d962f4508911">&#9670;&nbsp;</a></span>interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">ChimeraTK::DoocsBackendRegisterAccessor</a>&lt; UserType &gt;::interrupt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00148">148</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -890,7 +921,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>internal write from EqData src </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00326">326</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00328">328</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -917,7 +948,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00175">175</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00177">177</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -945,7 +976,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Flag whether the initialisation has been performed already. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00157">157</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_register_accessor_8h_source.html#l00159">159</a> of file <a class="el" href="_doocs_backend_register_accessor_8h_source.html">DoocsBackendRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -958,7 +989,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_backend_register_accessor.html">DoocsBackendRegisterAccessor</a></li>
-    <li class="footer">Generated on Thu Jun 25 2020 03:53:51 for ChimeraTK-DeviceAccess-DoocsBackend by
+    <li class="footer">Generated on Sat Jun 27 2020 03:53:48 for ChimeraTK-DeviceAccess-DoocsBackend by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
