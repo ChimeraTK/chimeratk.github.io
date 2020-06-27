@@ -181,10 +181,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                                                                    \</div><div class="line">    std::string fail = <span class="stringliteral">&quot;&quot;</span>;                                                                                             \</div><div class="line">    BOOST_REQUIRE(accessor.getNChannels() == expectedValue.size());                                                    \</div><div class="line">    BOOST_REQUIRE(accessor.getNElementsPerChannel() == expectedValue[0].size());                                       \</div><div class="line">    for(<span class="keywordtype">size_t</span> i = 0; i &lt; expectedValue.size(); ++i) {                                                                 \</div><div class="line">      for(<span class="keywordtype">size_t</span> k = 0; k &lt; expectedValue.size(); ++k) {                                                               \</div><div class="line">        if(!<a class="code" href="_unified_backend_test_8h.html#aec9949efafbf4f8ce58383b7487b7dd7">comparHelper</a>(accessor[i][k], expectedValue[i][k])) {                                                       \</div><div class="line">          if(fail.size() == 0) {                                                                                       \</div><div class="line">            fail = <span class="stringliteral">&quot;Accessor content differs from expected value. First difference at index [&quot;</span> + <a class="code" href="_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a">std::to_string</a>(i) +   \</div><div class="line">                <span class="stringliteral">&quot;][&quot;</span> + <a class="code" href="_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a">std::to_string</a>(k) + <span class="stringliteral">&quot;]: &quot;</span> + <a class="code" href="_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a">std::to_string</a>(accessor[i][k]) +                                    \</div><div class="line">                <span class="stringliteral">&quot; != &quot;</span> + <a class="code" href="_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a">std::to_string</a>(expectedValue[i][k]);                                                          \</div><div class="line">          }                                                                                                            \</div><div class="line">        }                                                                                                              \</div><div class="line">      }                                                                                                                \</div><div class="line">    }                                                                                                                  \</div><div class="line">    if(fail != <span class="stringliteral">&quot;&quot;</span>) {                                                                                                   \</div><div class="line">      BOOST_ERROR(fail);                                                                                               \</div><div class="line">    }                                                                                                                  \</div><div class="line">  }                                                                                                                    \</div><div class="line">  (void)(0)</div><div class="ttc" id="_unified_backend_test_8h_html_a91283b6c9ec83b1b6502cdb1f753104a"><div class="ttname"><a href="_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a">std::to_string</a></div><div class="ttdeci">std::string to_string(const std::string &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_unified_backend_test_8h_source.html#l00292">UnifiedBackendTest.h:292</a></div></div>
-<div class="ttc" id="_unified_backend_test_8h_html_aec9949efafbf4f8ce58383b7487b7dd7"><div class="ttname"><a href="_unified_backend_test_8h.html#aec9949efafbf4f8ce58383b7487b7dd7">comparHelper</a></div><div class="ttdeci">bool comparHelper(UserType a, UserType b)</div><div class="ttdef"><b>Definition:</b> <a href="_unified_backend_test_8h_source.html#l00272">UnifiedBackendTest.h:272</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                                                    \</div><div class="line">    std::string fail = <span class="stringliteral">&quot;&quot;</span>;                                                                                             \</div><div class="line">    BOOST_REQUIRE(accessor.getNChannels() == expectedValue.size());                                                    \</div><div class="line">    BOOST_REQUIRE(accessor.getNElementsPerChannel() == expectedValue[0].size());                                       \</div><div class="line">    for(<span class="keywordtype">size_t</span> CHECK_EQUALITY_i = 0; CHECK_EQUALITY_i &lt; expectedValue.size(); ++CHECK_EQUALITY_i) {                    \</div><div class="line">      for(<span class="keywordtype">size_t</span> CHECK_EQUALITY_k = 0; CHECK_EQUALITY_k &lt; expectedValue.size(); ++CHECK_EQUALITY_k) {                  \</div><div class="line">        if(!<a class="code" href="_unified_backend_test_8h.html#aec9949efafbf4f8ce58383b7487b7dd7">comparHelper</a>(                                                                                              \</div><div class="line">               accessor[CHECK_EQUALITY_i][CHECK_EQUALITY_k], expectedValue[CHECK_EQUALITY_i][CHECK_EQUALITY_k])) {     \</div><div class="line">          if(fail.size() == 0) {                                                                                       \</div><div class="line">            fail = <span class="stringliteral">&quot;Accessor content differs from expected value. First difference at index [&quot;</span> +                       \</div><div class="line">                std::to_string(CHECK_EQUALITY_i) + <span class="stringliteral">&quot;][&quot;</span> + <a class="code" href="_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a">std::to_string</a>(CHECK_EQUALITY_k) +                           \</div><div class="line">                <span class="stringliteral">&quot;]: &quot;</span> + <a class="code" href="_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a">std::to_string</a>(accessor[CHECK_EQUALITY_i][CHECK_EQUALITY_k]) +                                 \</div><div class="line">                <span class="stringliteral">&quot; != &quot;</span> + <a class="code" href="_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a">std::to_string</a>(expectedValue[CHECK_EQUALITY_i][CHECK_EQUALITY_k]);                            \</div><div class="line">          }                                                                                                            \</div><div class="line">        }                                                                                                              \</div><div class="line">      }                                                                                                                \</div><div class="line">    }                                                                                                                  \</div><div class="line">    if(fail != <span class="stringliteral">&quot;&quot;</span>) {                                                                                                   \</div><div class="line">      BOOST_ERROR(fail);                                                                                               \</div><div class="line">    }                                                                                                                  \</div><div class="line">  }                                                                                                                    \</div><div class="line">  (void)(0)</div><div class="ttc" id="_unified_backend_test_8h_html_a91283b6c9ec83b1b6502cdb1f753104a"><div class="ttname"><a href="_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a">std::to_string</a></div><div class="ttdeci">std::string to_string(const std::string &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_unified_backend_test_8h_source.html#l00293">UnifiedBackendTest.h:293</a></div></div>
+<div class="ttc" id="_unified_backend_test_8h_html_aec9949efafbf4f8ce58383b7487b7dd7"><div class="ttname"><a href="_unified_backend_test_8h.html#aec9949efafbf4f8ce58383b7487b7dd7">comparHelper</a></div><div class="ttdeci">bool comparHelper(UserType a, UserType b)</div><div class="ttdef"><b>Definition:</b> <a href="_unified_backend_test_8h_source.html#l00273">UnifiedBackendTest.h:273</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00299">299</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00300">300</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -217,7 +217,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00272">272</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00273">273</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -249,7 +249,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00277">277</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00278">278</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -281,7 +281,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00282">282</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00283">283</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -313,7 +313,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00287">287</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00288">288</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -345,7 +345,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00644">644</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00721">721</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -401,7 +401,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <p>If getRemoteValueCallable() is called after a call to setRemoteValueCallable() with the same register name, the value returned by getRemoteValueCallable() must be the same as the one which has been set via setRemoteValueCallable(). This is especially important for registers with AccessMode::wait_for_new_data.</p>
 <p>The type specified through decltype(dummy) in the getRemoteValueCallable() call will be one of the ChimeraTK-supported UserTypes, which is equal or bigger than the template argument in the corresponding setSyncReadTestRegisters()/setAsyncReadTestRegisters() call. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00253">253</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00255">255</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -429,7 +429,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00292">292</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00293">293</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -455,7 +455,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_f6c06f7a01da37196a5f6fe3a6212106.html">include</a></li><li class="navelem"><a class="el" href="_unified_backend_test_8h.html">UnifiedBackendTest.h</a></li>
-    <li class="footer">Generated on Fri Jun 26 2020 03:53:11 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Jun 27 2020 03:53:13 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

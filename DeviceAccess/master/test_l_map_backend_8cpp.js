@@ -3,6 +3,7 @@ var test_l_map_backend_8cpp =
     [ "BOOST_TEST_DYN_LINK", "test_l_map_backend_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_l_map_backend_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#abac8006c8d9bd2da40a7d7c48238f48b", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#aebef3718238131ece84d964d01d8f1fa", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#aad9c2513f92e9141623b49f8c24b544b", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a51bdf98ab5c29e2143db19a7a48ab892", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#aab0d3aed5490e1763347b50efa43ff8b", null ],
@@ -15,5 +16,7 @@ var test_l_map_backend_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a7b21d19a7332f57ca5556b6fbab0f3ad", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a7ff992440c0b98be761736b3d41e140b", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a8f027a33bd90eb1c8c2d0a4226bb52ad", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a935ebdda3c7b54344e338ec47b060bfd", null ]
+    [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a935ebdda3c7b54344e338ec47b060bfd", null ],
+    [ "getValueForUBT", "test_l_map_backend_8cpp.html#a17fb10b1669ef7dfb037262489441f9a", null ],
+    [ "setValueFromUBT", "test_l_map_backend_8cpp.html#a23f6ade0df83f11d3dfc5357d768fe2f", null ]
 ];
