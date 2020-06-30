@@ -2,6 +2,7 @@ var class_chimera_t_k_1_1_exception_handling_decorator =
 [
     [ "ExceptionHandlingDecorator", "class_chimera_t_k_1_1_exception_handling_decorator.html#ad3843c4a17c6a2ff7e36a8d2e3c8c60c", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_exception_handling_decorator.html#a2d9fb80a1cc4eeb5b7aa751e55d0b9c6", null ],
+    [ "doPostWrite", "class_chimera_t_k_1_1_exception_handling_decorator.html#a69b3d5a25b51a08d9ecb23682caadafe", null ],
     [ "doPreRead", "class_chimera_t_k_1_1_exception_handling_decorator.html#ac9d4b5ea30f088f5d66492488372affb", null ],
     [ "doPreWrite", "class_chimera_t_k_1_1_exception_handling_decorator.html#a33bae9df0044307412b0fb58f3b832a2", null ],
     [ "doReadTransferSynchronously", "class_chimera_t_k_1_1_exception_handling_decorator.html#ae0a5a2ca58960b11210b68282fa02a4d", null ],

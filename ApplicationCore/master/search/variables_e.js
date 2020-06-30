@@ -8,7 +8,6 @@ var searchData=
   ['pollingreadmodule',['pollingReadModule',['../struct_polling_test_application.html#aa8a12ed184d33c00bcebd5913690db83',1,'PollingTestApplication']]],
   ['pollinputfromdevice',['pollInputFromDevice',['../struct_module3.html#a3a41e3d774c956a33e2a4fc59801f57d',1,'Module3']]],
   ['previousreadfailed',['previousReadFailed',['../class_chimera_t_k_1_1_exception_handling_decorator.html#a1c1ca495827f5fdb4ec6dae83bb8aa3e',1,'ChimeraTK::ExceptionHandlingDecorator']]],
-  ['promise',['promise',['../class_chimera_t_k_1_1_constant_accessor.html#aaa2b5ba0b161ff4e5689f9916744090b',1,'ChimeraTK::ConstantAccessor']]],
   ['proxies',['proxies',['../class_chimera_t_k_1_1_device_module.html#a7428186cbfbb92002fc80b863de786f6',1,'ChimeraTK::DeviceModule']]],
   ['publicname',['publicName',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a9a509a8d919b656c9f7293fd181c42e6',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['pulselength',['pulseLength',['../struct_table_generation_1_1_table_parameters.html#a912e531762773e63b2ffac4a7ba96790',1,'TableGeneration::TableParameters']]],

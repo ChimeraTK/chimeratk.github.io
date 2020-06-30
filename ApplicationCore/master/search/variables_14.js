@@ -41,7 +41,7 @@ var searchData=
   ['vectoroftestmodule',['vectorOfTestModule',['../struct_vector_of_modules_app.html#a415f55a5ef8722c285d98a4b548ef6ea',1,'VectorOfModulesApp']]],
   ['vectorofvectormodule',['vectorOfVectorModule',['../struct_vector_module_group.html#afcac88e9585b48542bcdc762f48113f1',1,'VectorModuleGroup']]],
   ['vectorofvectormodulegroup',['vectorOfVectorModuleGroup',['../struct_vector_of_everything_app.html#ae0061ce28b13b9bd545676ce21a96a0e',1,'VectorOfEverythingApp']]],
-  ['versionnumber',['versionNumber',['../class_chimera_t_k_1_1_constant_accessor.html#ac6f8044ac83164bf1cf57f65e93a98e4',1,'ChimeraTK::ConstantAccessor::versionNumber()'],['../struct_chimera_t_k_1_1_recovery_helper.html#ac4c488a3aecf5f363b46f15c26b566ee',1,'ChimeraTK::RecoveryHelper::versionNumber()']]],
+  ['versionnumber',['versionNumber',['../struct_chimera_t_k_1_1_recovery_helper.html#ac4c488a3aecf5f363b46f15c26b566ee',1,'ChimeraTK::RecoveryHelper']]],
   ['virtualisedmodule',['virtualisedModule',['../class_chimera_t_k_1_1_module_impl.html#a2a3b41576cb2e2ef11a3cdb70f0674ef',1,'ChimeraTK::ModuleImpl']]],
   ['virtualisedmodule_5fisvalid',['virtualisedModule_isValid',['../class_chimera_t_k_1_1_module_impl.html#a1ebd5db3fb56790eac47c04f72efa323',1,'ChimeraTK::ModuleImpl']]],
   ['virtualisedmodulefromcatalog',['virtualisedModuleFromCatalog',['../class_chimera_t_k_1_1_device_module.html#a6278854315239292e1143979799af854',1,'ChimeraTK::DeviceModule']]],
