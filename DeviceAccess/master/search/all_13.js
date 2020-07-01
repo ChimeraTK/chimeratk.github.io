@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['technical_20specification_3a_20transferelement_20v1_2e0rc9wip_20_21_21_20based_20on_20rc7_2e_20changes_20from_20rc8_20still_20missing_20_21_21',['Technical specification: TransferElement V1.0RC9WIP !! Based on RC7. Changes from RC8 still missing !!',['../spec__transfer_element.html',1,'']]],
+  ['technical_20specification_20devicebackend',['Technical specification DeviceBackend',['../spec__device_backend.html',1,'']]],
+  ['technical_20specification_3a_20transferelement_20v1_2e0rc10wip_20_21_21_20based_20on_20rc8_21_20rc9_20is_20not_20in_20yet_20_21_21',['Technical specification: TransferElement V1.0RC10WIP !! Based on RC8! RC9 is not in yet !!',['../spec__transfer_element.html',1,'']]],
   ['t0',['t0',['../class_test_dummy.html#aa1ede7926941251b65bf46228033fb63',1,'TestDummy']]],
   ['table',['table',['../class_chimera_t_k_1_1_fixed_user_type_map.html#a93adaf95b6f3a128828a82a484965af6',1,'ChimeraTK::FixedUserTypeMap::table()'],['../class_chimera_t_k_1_1_template_user_type_map.html#aab6ccfd4504e01e697ede3b4817ef681',1,'ChimeraTK::TemplateUserTypeMap::table()']]],
   ['targetaddress',['targetAddress',['../class_chimera_t_k_1_1_subdevice_backend.html#a0753ed5f431a13a99438183d5b9eb966',1,'ChimeraTK::SubdeviceBackend']]],

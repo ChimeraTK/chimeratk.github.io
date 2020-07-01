@@ -45,7 +45,8 @@ var NAVTREE =
       [ "Why do RegisterAccessors not have an assignment operator for other RegisterAccessors?", "q_and_a.html#why_no_accessor_assignment", null ],
       [ "Why can I not read SEQUENCE registers?", "q_and_a.html#use_sequences", null ]
     ] ],
-    [ "Technical specification: TransferElement V1.0RC9WIP !! Based on RC7. Changes from RC8 still missing !!", "spec__transfer_element.html", null ],
+    [ "Technical specification DeviceBackend", "spec__device_backend.html", null ],
+    [ "Technical specification: TransferElement V1.0RC10WIP !! Based on RC8! RC9 is not in yet !!", "spec__transfer_element.html", null ],
     [ "Testing applications using the DummyBackends", "testing_with_dummy_backends.html", [
       [ "Specifying the dummies in the device map file", "testing_with_dummy_backends.html#dmap_specify_dummies", null ],
       [ "Writeing to read-only registers", "testing_with_dummy_backends.html#dummy_backends_write_readonly", null ]
@@ -103,9 +104,9 @@ var NAVTREEINDEX =
 "class_unified_backend_test.html#ad09e26d068c815d05780ff2985c53784",
 "dir_787b54c01fb56e35ed62199e3ddd64c0.html",
 "mtca4u__compatibility__headers_2_n_d_register_accessor_8h.html",
-"struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html",
-"test_fixed_point_converter_8cpp.html#a55bb5c2182cc892b60ae3169deb4dcb2",
-"test_subdevice_backend_8cpp.html#a6b2a3852db8bb19ab6909bac01859985"
+"struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html#a2072f86b97126bfab990a09bb5d2dde1",
+"test_fixed_point_converter_8cpp.html#a51036b5a673fb0ca708de7555997c0b8",
+"test_subdevice_backend_8cpp.html#a6a4077de324193e0b5efd9d157dd61b2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
