@@ -25,7 +25,6 @@ var NAVTREE =
         [ "Recovery", "spec_execption_handling.html#spec_execptionHandling_behaviour_recovery", null ],
         [ "Startup", "spec_execption_handling.html#spec_execptionHandling_behaviour_startup", null ],
         [ "Forced Recovery", "spec_execption_handling.html#spec_execptionHandling_behaviour_forced_recovery", null ],
-        [ "Numeric cast error handling", "spec_execption_handling.html#spec_exceptionHandling_behaviour_numeric_cast_errors", null ],
         [ "(*) Comments", "spec_execption_handling.html#spec_execptionHandling_behaviour_comments", null ]
       ] ],
       [ "C. Implementation", "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation", [
@@ -101,11 +100,11 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#ad24ced0e968033d3a5f9ab70617ffe55",
 "class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#af63159c4004f5123cf4aeebe49809c06",
 "demo_status_monitor_8cc.html",
-"struct_chimera_t_k_1_1_config_reader.html#a790086daccf009a91f4cd3fc675bc1f9",
-"struct_chimera_t_k_1_1history_1_1_server_history.html#ae982a39b3f0bf3dc291f4db9389e98c1",
-"struct_second_hierarchy_1_1_second_module.html#a1db70f9b608c6372f8c35a6691fa8201",
-"struct_test_application_with_device.html#ac94af21c263436afd1dedc5102cf7096",
-"test_device_initialisation_handler_8cc.html#a6b2a3852db8bb19ab6909bac01859985"
+"struct_chimera_t_k_1_1_config_reader.html#a82bb9534a2ea481b888e995ac73b145e",
+"struct_chimera_t_k_1_1history_1_1_server_history.html#aef56ce644b3c80ae8d6a3fed11efe70e",
+"struct_second_hierarchy_1_1_second_module.html#a8a128a2f653ced29ad9ff9913dc3b070",
+"struct_test_application_with_device.html#ae5b77f65ed55e51f359a7bffd27e782e",
+"test_device_initialisation_handler_8cc.html#a7cadc402273ba104ca92a9e8fb2ccd83"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

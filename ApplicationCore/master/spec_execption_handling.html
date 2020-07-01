@@ -117,6 +117,8 @@ B. Behavioural description</h1>
 <li>1. All ChimeraTK::runtime_error exceptions thrown by device register accessors are handled by the framework and are never exposed to user code in ApplicationModules.<ul>
 <li><a class="anchor" id="b_1_1"></a>1.1 ChimeraTK::logic_error exceptions are left unhandled and will terminate the application. These errors may only occur in the (re-)initialisation phase (up to the point where all devices are opened and initialised) and point to a severe configuration error which is not recoverable. <a class="el" href="spec_execption_handling.html#comment_b_1_1">(*)</a></li>
 <li><a class="anchor" id="b_1_2"></a>1.2 <b>Exception handling and DataValidity flag propagation is implemented such that it is transparent to a module whether it is directly connected to a device, or whether a fanout or another application module is in between.</b> This is the central requirement from which most other requirements are derived.</li>
+<li><a class="anchor" id="exceptionHandling_b_1_3"></a>1.3 boost::numeric::bad_numeric_cast exceptions are treated like ChimeraTK::logic_error. They originate from picking the wrong data type in the program code or the configuration and are also not recoverable by re-opening the device.</li>
+<li><a class="anchor" id="exceptionHandling_b_1_4"></a>1.4 The only other exception allowed by the DeviceAccess::TransferElement specificaton is boost::thread_interrupted. It must not be caught by the exception handling decorator because it is used to cleanly shut down the application.</li>
 </ul>
 </li>
 </ul>
@@ -182,16 +184,6 @@ Startup</h2>
 Forced Recovery</h2>
 <ul>
 <li><a class="anchor" id="b_5"></a>5. Any <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> can explicitly report a problem with the device by calling <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception. ">DeviceModule::reportException()</a>. This allows the reinitialisation of a device e.g. after a reboot of the device which didn't result in an exception (e.g. because it was too quick to be noticed, or rebooting the device takes place without interrupting the communication).</li>
-</ul>
-<h2><a class="anchor" id="spec_exceptionHandling_behaviour_numeric_cast_errors"></a>
-Numeric cast error handling</h2>
-<ul>
-<li><a class="anchor" id="b_6"></a>6. If a boost::numeric::bad_numeric_cast is received<ul>
-<li>6.1 the exception is not reported to the device.</li>
-<li>6.2 Write operations are skipped because the exception is happening in doPreWrite(). The return value of writeYyy() is true (data was lost).</li>
-<li><a class="anchor" id="b_6_3"></a>6.3 Read operations return with DataValidity::faulty.</li>
-</ul>
-</li>
 </ul>
 <h2><a class="anchor" id="spec_execptionHandling_behaviour_comments"></a>
 (*) Comments</h2>
@@ -339,18 +331,12 @@ Behaviour</h3>
 <li><a class="anchor" id="c_2_7_2"></a>2.7.2 For read operations: the DataValidity returned by the accessor is overridden to faulty until next successful read operation (cf. <a class="el" href="spec_execption_handling.html#c_2_6_4">2.6.4</a>), and the current VersionNumber of the accessor is set to DeviceModule::exceptionVersionNumber.</li>
 </ul>
 </li>
-<li>2.8 In doPostRead()/doPostWrite() also boost::numeric::bad_numeric_cast exceptions are caught.<ul>
-<li>2.8.1 The exception is <em>not</em> reported to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> (in contrast to <a class="el" href="spec_execption_handling.html#c_2_7_1">2.7.1</a>)</li>
-<li>2.8.2 In doPostWrite(), the exception is just caught, but no further action is required. The transfer itself has been skipped because the original exception occured in doPreWrite(), and dataLost ist already true. (cf. <a class="el" href="spec_execption_handling.html#b_6">B.6</a>)</li>
-<li>2.8.3 In doPostRead() the DataValidity returned by the accessor is overridden to faulty until the next successful read operation, and currentVersion is taken from the successful transfer.</li>
-</ul>
-</li>
-<li>2.9 The constructor of the decorator<ul>
-<li>2.9.1 receives the <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a> for the device variable, to enable it to create additional, undecorated copies of the register accessor,</li>
-<li>2.9.2 puts the name of the register (from the <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a>) to DeviceModule::listOfReadRegisters resp. DeviceModule::listOfWriteRegisters depending on the direction the accessor is used, and</li>
-<li>2.9.3 creates the recovery accessor and initialises the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a> object.</li>
-<li>2.9.4 Note: The alias name of the device can be obtained from the <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a>, which allows to obtain the corresponding <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> via <a class="el" href="class_chimera_t_k_1_1_application.html#a7e35f287b845c7c810656afd0ecf902a" title="List of DeviceModules. ">Application::deviceModuleList</a> (change the list into a map).</li>
-<li>2.9.5 The code instantiating the decorator (<a class="el" href="class_chimera_t_k_1_1_application.html#ace062becb6e35520147524dfec914a10" title="Perform the actual connection of an accessor to a device register. ">Application::createDeviceVariable()</a>) has to make sure that the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> is "inside" the <a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html" title="NDRegisterAccessorDecorator which propagates meta data attached to input process variables through th...">MetaDataPropagatingRegisterDecorator</a>, so the overriden DataValidity flag in case of an exception is properly propagated to the owning module/fan out (cf. <a class="el" href="spec_execption_handling.html#c_2_7_2">2.7.2</a> and <a class="el" href="spec_execption_handling.html#c_2_4_6">2.4.6</a>).</li>
+<li>2.8 The constructor of the decorator<ul>
+<li>2.8.1 receives the <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a> for the device variable, to enable it to create additional, undecorated copies of the register accessor,</li>
+<li>2.8.2 puts the name of the register (from the <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a>) to DeviceModule::listOfReadRegisters resp. DeviceModule::listOfWriteRegisters depending on the direction the accessor is used, and</li>
+<li>2.8.3 creates the recovery accessor and initialises the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a> object.</li>
+<li>2.8.4 Note: The alias name of the device can be obtained from the <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a>, which allows to obtain the corresponding <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> via <a class="el" href="class_chimera_t_k_1_1_application.html#a7e35f287b845c7c810656afd0ecf902a" title="List of DeviceModules. ">Application::deviceModuleList</a> (change the list into a map).</li>
+<li>2.8.5 The code instantiating the decorator (<a class="el" href="class_chimera_t_k_1_1_application.html#ace062becb6e35520147524dfec914a10" title="Perform the actual connection of an accessor to a device register. ">Application::createDeviceVariable()</a>) has to make sure that the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> is "inside" the <a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html" title="NDRegisterAccessorDecorator which propagates meta data attached to input process variables through th...">MetaDataPropagatingRegisterDecorator</a>, so the overriden DataValidity flag in case of an exception is properly propagated to the owning module/fan out (cf. <a class="el" href="spec_execption_handling.html#c_2_7_2">2.7.2</a> and <a class="el" href="spec_execption_handling.html#c_2_4_6">2.4.6</a>).</li>
 </ul>
 </li>
 </ul>
@@ -443,7 +429,7 @@ D. Known issues</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Tue Jun 30 2020 03:54:15 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Jul 1 2020 03:54:16 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
