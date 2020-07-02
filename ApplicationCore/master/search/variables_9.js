@@ -10,6 +10,7 @@ var searchData=
   ['ingroup',['inGroup',['../struct_some_group.html#ad8dc31ef6d14bd3b8027088285526b1a',1,'SomeGroup']]],
   ['initialisationhandlers',['initialisationHandlers',['../class_chimera_t_k_1_1_device_module.html#a9a605306e90d268b7091e6bad6c334f5',1,'ChimeraTK::DeviceModule']]],
   ['initialisecalled',['initialiseCalled',['../class_chimera_t_k_1_1_application.html#a07485c3b44b7ba199a4a52de04639308',1,'ChimeraTK::Application']]],
+  ['initialvaluemutex',['initialValueMutex',['../class_chimera_t_k_1_1_device_module.html#a62e889d57a6c95654ffdb8481781de7b',1,'ChimeraTK::DeviceModule']]],
   ['innergroup',['innerGroup',['../struct_outer_group.html#a90d8fbf89f3f08ab44ddc99c430474bf',1,'OuterGroup']]],
   ['innermodule',['innerModule',['../struct_inner_group.html#a6407236fbfdccd26e80ffdc439ce9df3',1,'InnerGroup']]],
   ['innermodulegroup',['innerModuleGroup',['../struct_outer_group.html#a95af845866a556b6f41b9d2b55795ea8',1,'OuterGroup']]],
@@ -27,6 +28,7 @@ var searchData=
   ['intarray',['intArray',['../struct_test_module.html#a446e4fa165ce2977010ccd56f277e9e2',1,'TestModule::intArray()'],['../struct_test_module_1_1_module1_1_1_sub_module.html#a7e6f1dbfd1a87ad7ec31d4e04819e734',1,'TestModule::Module1::SubModule::intArray()']]],
   ['internalmodulelist',['internalModuleList',['../class_chimera_t_k_1_1_application.html#ae1832cf40aad192bd303982b2c75e13a',1,'ChimeraTK::Application']]],
   ['invalidnetwork',['invalidNetwork',['../class_chimera_t_k_1_1_application.html#afeaa79b9219a492c6d8345170b1d7f08',1,'ChimeraTK::Application']]],
+  ['isholdinginitialvaluemutex',['isHoldingInitialValueMutex',['../class_chimera_t_k_1_1_device_module.html#aa17217dcf31b8743e2fabc53705e34fd',1,'ChimeraTK::DeviceModule']]],
   ['islimited',['isLimited',['../struct_chimera_t_k_1_1_limit_value_module_base.html#a8863a5bb2bb4e37d61ad2cac8faace2e',1,'ChimeraTK::LimitValueModuleBase']]],
   ['isnonblockingread',['isNonblockingRead',['../class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#aa31c398a0d0f145949116ff8bd28f280',1,'ChimeraTK::MetaDataPropagatingRegisterDecorator']]]
 ];
