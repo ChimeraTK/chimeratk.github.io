@@ -13,6 +13,7 @@ var searchData=
   ['prop_5fsomeint',['prop_someInt',['../classeq__dummy.html#a7715a0d45ab900e497d1de1869181aba',1,'eq_dummy']]],
   ['prop_5fsomeintarray',['prop_someIntArray',['../classeq__dummy.html#a8fd47579ae4ae9c9b460df96866f5abe',1,'eq_dummy']]],
   ['prop_5fsomelongarray',['prop_someLongArray',['../classeq__dummy.html#a40d659cf2280a8b213fa87ae55e83fb7',1,'eq_dummy']]],
+  ['prop_5fsomereadonlyint',['prop_someReadonlyInt',['../classeq__dummy.html#af9077981e641c850ff72eaae22c20053',1,'eq_dummy']]],
   ['prop_5fsomeshortarray',['prop_someShortArray',['../classeq__dummy.html#a844fed502fc371eec227eaf3ffc5aa5f',1,'eq_dummy']]],
   ['prop_5fsomespectrum',['prop_someSpectrum',['../classeq__dummy.html#a7fa1f7b9956062b81ecd3b058c2b8041',1,'eq_dummy']]],
   ['prop_5fsomestatus',['prop_someStatus',['../classeq__dummy.html#affd168c8b455616dd6cd9f0b51c5cfa9',1,'eq_dummy']]],

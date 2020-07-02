@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classeq__dummy.html#affd168c8b455616dd6cd9f0b51c5cfa9":[4,0,4,19],
 "classes.html":[4,1],
 "dir_59425e443f801f1f2fd8bbe4959a3ccf.html":[5,0,2],
 "dir_68267d1309a1af8e8297ef4c3efbcdba.html":[5,0,1],

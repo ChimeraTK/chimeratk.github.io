@@ -17,6 +17,7 @@ var classeq__dummy =
     [ "prop_someInt", "classeq__dummy.html#a7715a0d45ab900e497d1de1869181aba", null ],
     [ "prop_someIntArray", "classeq__dummy.html#a8fd47579ae4ae9c9b460df96866f5abe", null ],
     [ "prop_someLongArray", "classeq__dummy.html#a40d659cf2280a8b213fa87ae55e83fb7", null ],
+    [ "prop_someReadonlyInt", "classeq__dummy.html#af9077981e641c850ff72eaae22c20053", null ],
     [ "prop_someShortArray", "classeq__dummy.html#a844fed502fc371eec227eaf3ffc5aa5f", null ],
     [ "prop_someSpectrum", "classeq__dummy.html#a7fa1f7b9956062b81ecd3b058c2b8041", null ],
     [ "prop_someStatus", "classeq__dummy.html#affd168c8b455616dd6cd9f0b51c5cfa9", null ],

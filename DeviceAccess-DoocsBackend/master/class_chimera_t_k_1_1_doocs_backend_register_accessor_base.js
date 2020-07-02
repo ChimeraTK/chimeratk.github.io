@@ -6,12 +6,10 @@ var class_chimera_t_k_1_1_doocs_backend_register_accessor_base =
     [ "ea", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a24e1d1dd0543bdf728d47a0fd38ac9b4", null ],
     [ "elementOffset", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a36e10fd2604da56e6578c6f1165ed039", null ],
     [ "eq", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aef69bfd602052dfff1102f7d9b9f6138", null ],
-    [ "futureCreated", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a8dbb869119e1a211ba50fb34ad251296", null ],
     [ "isArray", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a0bcce3cfd0a55a8f0362ef3362ae3aa0", null ],
     [ "isPartial", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#afebb23c2ffc20b9744cd382ec06d34a9", null ],
     [ "nElements", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a0fde7fd874fc30900874ba0f701c07b6", null ],
     [ "notifications", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#abd18febd65ffa0a2776fd393ebc859e7", null ],
-    [ "readAsyncThread", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a2d7708781bc98de9844473ae60ff8bf7", null ],
     [ "shutdownCalled", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aa7b9d96704ee9583991689100f7a9e13", null ],
     [ "src", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a47151e07ff8caa8288db819dab284037", null ],
     [ "useZMQ", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aa44a0b61c7f7a3da259bd6c559ec46a5", null ]
