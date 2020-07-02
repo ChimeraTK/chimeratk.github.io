@@ -1,6 +1,7 @@
 var searchData=
 [
   ['call_5fvirtual_5ffunction_5ftemplate',['CALL_VIRTUAL_FUNCTION_TEMPLATE',['../util_2include_2_virtual_function_template_8h.html#a9ae25c66f893b5dffc9251887f2bb9a5',1,'VirtualFunctionTemplate.h']]],
+  ['check_5fapplication_5fbuffer',['CHECK_APPLICATION_BUFFER',['../_unified_backend_test_8h.html#a048d20ccdf8bf904afec713ede5b2cc2',1,'UnifiedBackendTest.h']]],
   ['check_5fequality',['CHECK_EQUALITY',['../_unified_backend_test_8h.html#a3b6893388f16002bc124de0fe5fc18ae',1,'UnifiedBackendTest.h']]],
   ['check_5fequality_5ftimeout',['CHECK_EQUALITY_TIMEOUT',['../_unified_backend_test_8h.html#a04f19c70138fca6224d58e17cc55cffd',1,'UnifiedBackendTest.h']]],
   ['check_5fsigned_5ffixed_5fpoint_5fno_5ffractional',['CHECK_SIGNED_FIXED_POINT_NO_FRACTIONAL',['../test_fixed_point_converter_8cpp.html#a81f43db6e3f488cde3cfae84a86db022',1,'testFixedPointConverter.cpp']]],

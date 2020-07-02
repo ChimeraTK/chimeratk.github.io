@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('class_unified_backend_test.html','');}
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test__coll__graph.svg" width="100%" height="482"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test__coll__graph.svg" width="100%" height="536"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -137,20 +137,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5eab49b15b550907027f1b92583fb5bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a5eab49b15b550907027f1b92583fb5bb">quirkHookActivateAsyncRead</a> (std::function&lt; void(void)&gt; hook)</td></tr>
 <tr class="memdesc:a5eab49b15b550907027f1b92583fb5bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quirk hook: Call this functor after each call to activateAsyncRead().  <a href="#a5eab49b15b550907027f1b92583fb5bb">More...</a><br /></td></tr>
 <tr class="separator:a5eab49b15b550907027f1b92583fb5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ee16e7381ee871c77c2e84a1f481954"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:a1ee16e7381ee871c77c2e84a1f481954"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a1ee16e7381ee871c77c2e84a1f481954">setSyncReadTestRegisters</a> (std::list&lt; std::string &gt; names)</td></tr>
-<tr class="memdesc:a1ee16e7381ee871c77c2e84a1f481954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the names of synchronous read registers to be used for the tests.  <a href="#a1ee16e7381ee871c77c2e84a1f481954">More...</a><br /></td></tr>
-<tr class="separator:a1ee16e7381ee871c77c2e84a1f481954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae46230275c6c6af94430b91a1c8b16e0"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:ae46230275c6c6af94430b91a1c8b16e0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#ae46230275c6c6af94430b91a1c8b16e0">setAsyncReadTestRegisters</a> (std::list&lt; std::string &gt; names)</td></tr>
-<tr class="memdesc:ae46230275c6c6af94430b91a1c8b16e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the names of asynchronous read registers to be used for the tests.  <a href="#ae46230275c6c6af94430b91a1c8b16e0">More...</a><br /></td></tr>
-<tr class="separator:ae46230275c6c6af94430b91a1c8b16e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17cb03d31d0e4b1aae8ccc9d48bbe35f"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:a17cb03d31d0e4b1aae8ccc9d48bbe35f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a17cb03d31d0e4b1aae8ccc9d48bbe35f">setWriteTestRegisters</a> (std::list&lt; std::string &gt; names)</td></tr>
-<tr class="memdesc:a17cb03d31d0e4b1aae8ccc9d48bbe35f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the names of asynchronous read registers to be used for the tests.  <a href="#a17cb03d31d0e4b1aae8ccc9d48bbe35f">More...</a><br /></td></tr>
-<tr class="separator:a17cb03d31d0e4b1aae8ccc9d48bbe35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a411781716ae13ce2fcfede7090810360"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a411781716ae13ce2fcfede7090810360">integerRegister</a> (const std::list&lt; std::string &gt; &amp;names)</td></tr>
-<tr class="separator:a411781716ae13ce2fcfede7090810360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78ecd6c43763405144f1dece379fb81"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:ad78ecd6c43763405144f1dece379fb81"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#ad78ecd6c43763405144f1dece379fb81">addSyncReadTestRegister</a> (const std::string &amp;name, bool isReadOnly, bool supportsRaw)</td></tr>
+<tr class="memdesc:ad78ecd6c43763405144f1dece379fb81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a synchronous read register to be used for the tests.  <a href="#ad78ecd6c43763405144f1dece379fb81">More...</a><br /></td></tr>
+<tr class="separator:ad78ecd6c43763405144f1dece379fb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d7e1937cbee5121cd49bf44d40f3ec"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a34d7e1937cbee5121cd49bf44d40f3ec"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a34d7e1937cbee5121cd49bf44d40f3ec">addAsyncReadTestRegister</a> (const std::string &amp;name, bool isReadOnly, bool supportsRaw)</td></tr>
+<tr class="memdesc:a34d7e1937cbee5121cd49bf44d40f3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an asynchronous read register to be used for the tests.  <a href="#a34d7e1937cbee5121cd49bf44d40f3ec">More...</a><br /></td></tr>
+<tr class="separator:a34d7e1937cbee5121cd49bf44d40f3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4efc38a3c82d18062c2491ec784cc128"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a4efc38a3c82d18062c2491ec784cc128"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a4efc38a3c82d18062c2491ec784cc128">addWriteTestRegister</a> (const std::string &amp;name, bool isWriteOnly, bool supportsRaw)</td></tr>
+<tr class="memdesc:a4efc38a3c82d18062c2491ec784cc128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a write register to be used for the tests.  <a href="#a4efc38a3c82d18062c2491ec784cc128">More...</a><br /></td></tr>
+<tr class="separator:a4efc38a3c82d18062c2491ec784cc128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -163,6 +161,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:adeedf11240f8a7a01fa7ab96686b167a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#adeedf11240f8a7a01fa7ab96686b167a">test_B_3_2_2</a> ()</td></tr>
 <tr class="memdesc:adeedf11240f8a7a01fa7ab96686b167a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test destructive write.  <a href="#adeedf11240f8a7a01fa7ab96686b167a">More...</a><br /></td></tr>
 <tr class="separator:adeedf11240f8a7a01fa7ab96686b167a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d83282f1a7d7aa8f2d55b6e14b4ace"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#ab5d83282f1a7d7aa8f2d55b6e14b4ace">test_B_4_2_4</a> ()</td></tr>
+<tr class="memdesc:ab5d83282f1a7d7aa8f2d55b6e14b4ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test transfer implementations do not change the application buffer.  <a href="#ab5d83282f1a7d7aa8f2d55b6e14b4ace">More...</a><br /></td></tr>
+<tr class="separator:ab5d83282f1a7d7aa8f2d55b6e14b4ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f18fdf2bc586fcfeeaf6355ad366941"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a7f18fdf2bc586fcfeeaf6355ad366941">test_B_6_4</a> ()</td></tr>
 <tr class="memdesc:a7f18fdf2bc586fcfeeaf6355ad366941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test application buffer unchanged after exception.  <a href="#a7f18fdf2bc586fcfeeaf6355ad366941">More...</a><br /></td></tr>
 <tr class="separator:a7f18fdf2bc586fcfeeaf6355ad366941"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,27 +194,27 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab63dac4c68052e29e61bb4a50f81c9bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#ab63dac4c68052e29e61bb4a50f81c9bf">test_B_8_5_3</a> ()</td></tr>
 <tr class="memdesc:ab63dac4c68052e29e61bb4a50f81c9bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test no activation required for accessors created after open.  <a href="#ab63dac4c68052e29e61bb4a50f81c9bf">More...</a><br /></td></tr>
 <tr class="separator:ab63dac4c68052e29e61bb4a50f81c9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72704f4ca83bb381082625912ed20e9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a72704f4ca83bb381082625912ed20e9b">test_B_8_6</a> ()</td></tr>
-<tr class="memdesc:a72704f4ca83bb381082625912ed20e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test interrupt()  <a href="#a72704f4ca83bb381082625912ed20e9b">More...</a><br /></td></tr>
-<tr class="separator:a72704f4ca83bb381082625912ed20e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2767288aab2609962e2b3accd292fac1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a2767288aab2609962e2b3accd292fac1">test_B_8_6_6</a> ()</td></tr>
+<tr class="memdesc:a2767288aab2609962e2b3accd292fac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test interrupt()  <a href="#a2767288aab2609962e2b3accd292fac1">More...</a><br /></td></tr>
+<tr class="separator:a2767288aab2609962e2b3accd292fac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a42b1d49ba3001b9494c0caf3c91a65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a6a42b1d49ba3001b9494c0caf3c91a65">test_B_9_1</a> ()</td></tr>
 <tr class="memdesc:a6a42b1d49ba3001b9494c0caf3c91a65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test reporting exceptions to exception backend.  <a href="#a6a42b1d49ba3001b9494c0caf3c91a65">More...</a><br /></td></tr>
 <tr class="separator:a6a42b1d49ba3001b9494c0caf3c91a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69e59634c46c9813030b7c61c837a94e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a69e59634c46c9813030b7c61c837a94e">test_B_9_2_1</a> ()</td></tr>
-<tr class="memdesc:a69e59634c46c9813030b7c61c837a94e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test setException() disables asynchronous read transfers.  <a href="#a69e59634c46c9813030b7c61c837a94e">More...</a><br /></td></tr>
-<tr class="separator:a69e59634c46c9813030b7c61c837a94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c7c8063e257326e5ffb80d66b03d867"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a9c7c8063e257326e5ffb80d66b03d867">test_B_9_2_2</a> ()</td></tr>
-<tr class="memdesc:a9c7c8063e257326e5ffb80d66b03d867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test exactly one runtime_error in the _readQueue per async read accessor.  <a href="#a9c7c8063e257326e5ffb80d66b03d867">More...</a><br /></td></tr>
+<tr class="memdesc:a9c7c8063e257326e5ffb80d66b03d867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test repeated setException() has no effect (in particular, no additional exceptions in async transfers)  <a href="#a9c7c8063e257326e5ffb80d66b03d867">More...</a><br /></td></tr>
 <tr class="separator:a9c7c8063e257326e5ffb80d66b03d867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75bb53f9d616fa3acbea125513d2bc1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a75bb53f9d616fa3acbea125513d2bc1f">test_B_9_3_1</a> ()</td></tr>
-<tr class="memdesc:a75bb53f9d616fa3acbea125513d2bc1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test doReadTransferSynchonously throws runtime_error after setException() until recovery.  <a href="#a75bb53f9d616fa3acbea125513d2bc1f">More...</a><br /></td></tr>
+<tr class="memdesc:a75bb53f9d616fa3acbea125513d2bc1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test setException() disables asynchronous read transfers.  <a href="#a75bb53f9d616fa3acbea125513d2bc1f">More...</a><br /></td></tr>
 <tr class="separator:a75bb53f9d616fa3acbea125513d2bc1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcedb61c7bc6a9c20c5402f4f0a10547"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#adcedb61c7bc6a9c20c5402f4f0a10547">test_B_9_4</a> ()</td></tr>
-<tr class="memdesc:adcedb61c7bc6a9c20c5402f4f0a10547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test write operations throw after setException()  <a href="#adcedb61c7bc6a9c20c5402f4f0a10547">More...</a><br /></td></tr>
-<tr class="separator:adcedb61c7bc6a9c20c5402f4f0a10547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2e30f6dafc54ba66745683e0f787a8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#af2e30f6dafc54ba66745683e0f787a8c">test_B_10_1_2</a> ()</td></tr>
-<tr class="memdesc:af2e30f6dafc54ba66745683e0f787a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test repeated setException() has no effect (in particular, no additional exceptions in async transfers)  <a href="#af2e30f6dafc54ba66745683e0f787a8c">More...</a><br /></td></tr>
-<tr class="separator:af2e30f6dafc54ba66745683e0f787a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afddf74eb1ec36976678506dd49a91f2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#afddf74eb1ec36976678506dd49a91f2b">test_B_9_3_2</a> ()</td></tr>
+<tr class="memdesc:afddf74eb1ec36976678506dd49a91f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test exactly one runtime_error in the _readQueue per async read accessor.  <a href="#afddf74eb1ec36976678506dd49a91f2b">More...</a><br /></td></tr>
+<tr class="separator:afddf74eb1ec36976678506dd49a91f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc30fa591c77f5e5bf30d2c540cca469"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#adc30fa591c77f5e5bf30d2c540cca469">test_B_9_4_1</a> ()</td></tr>
+<tr class="memdesc:adc30fa591c77f5e5bf30d2c540cca469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test doReadTransferSynchonously throws runtime_error after setException() until recovery.  <a href="#adc30fa591c77f5e5bf30d2c540cca469">More...</a><br /></td></tr>
+<tr class="separator:adc30fa591c77f5e5bf30d2c540cca469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c38eb4156129481d3512e92d3a86fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a35c38eb4156129481d3512e92d3a86fb">test_B_9_5</a> ()</td></tr>
+<tr class="memdesc:a35c38eb4156129481d3512e92d3a86fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test write operations throw after setException()  <a href="#a35c38eb4156129481d3512e92d3a86fb">More...</a><br /></td></tr>
+<tr class="separator:a35c38eb4156129481d3512e92d3a86fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31bce8b2632783a95cf5700ffbcd5070"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a31bce8b2632783a95cf5700ffbcd5070">test_B_11_2_1</a> ()</td></tr>
 <tr class="memdesc:a31bce8b2632783a95cf5700ffbcd5070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test version number bigger for newer values.  <a href="#a31bce8b2632783a95cf5700ffbcd5070">More...</a><br /></td></tr>
 <tr class="separator:a31bce8b2632783a95cf5700ffbcd5070"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,9 +224,24 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a6fd78876375cd5c5a9e7501579d1e04b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a6fd78876375cd5c5a9e7501579d1e04b">test_B_11_6</a> ()</td></tr>
 <tr class="memdesc:a6fd78876375cd5c5a9e7501579d1e04b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test the value after construction for the version number in the application buffer.  <a href="#a6fd78876375cd5c5a9e7501579d1e04b">More...</a><br /></td></tr>
 <tr class="separator:a6fd78876375cd5c5a9e7501579d1e04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f5da3ee5c0a450fab7ac64d25324f92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a7f5da3ee5c0a450fab7ac64d25324f92">test_C_5_2_5</a> ()</td></tr>
-<tr class="memdesc:a7f5da3ee5c0a450fab7ac64d25324f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test logic_error on operation while backend closed.  <a href="#a7f5da3ee5c0a450fab7ac64d25324f92">More...</a><br /></td></tr>
-<tr class="separator:a7f5da3ee5c0a450fab7ac64d25324f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6551266ba8c83f5a95f1fcbbac0fc260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a6551266ba8c83f5a95f1fcbbac0fc260">test_C_5_2_1_2</a> ()</td></tr>
+<tr class="memdesc:a6551266ba8c83f5a95f1fcbbac0fc260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test logic_error for non-existing register.  <a href="#a6551266ba8c83f5a95f1fcbbac0fc260">More...</a><br /></td></tr>
+<tr class="separator:a6551266ba8c83f5a95f1fcbbac0fc260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce5dfce27e20f682a83b166cc0d39f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a9ce5dfce27e20f682a83b166cc0d39f7">test_C_5_2_2_2</a> ()</td></tr>
+<tr class="memdesc:a9ce5dfce27e20f682a83b166cc0d39f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test logic_error for exceeding register size.  <a href="#a9ce5dfce27e20f682a83b166cc0d39f7">More...</a><br /></td></tr>
+<tr class="separator:a9ce5dfce27e20f682a83b166cc0d39f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a7c487fdf21aaf0be836af8933debf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#ac6a7c487fdf21aaf0be836af8933debf">test_C_5_2_3_2</a> ()</td></tr>
+<tr class="memdesc:ac6a7c487fdf21aaf0be836af8933debf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test logic_error for wrong access mode flags.  <a href="#ac6a7c487fdf21aaf0be836af8933debf">More...</a><br /></td></tr>
+<tr class="separator:ac6a7c487fdf21aaf0be836af8933debf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c10cc862a5c81c90d088dbbb0a337d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a2c10cc862a5c81c90d088dbbb0a337d9">test_C_5_2_5_2</a> ()</td></tr>
+<tr class="memdesc:a2c10cc862a5c81c90d088dbbb0a337d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test logic_error on operation while backend closed.  <a href="#a2c10cc862a5c81c90d088dbbb0a337d9">More...</a><br /></td></tr>
+<tr class="separator:a2c10cc862a5c81c90d088dbbb0a337d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adacd2fb2fe4636c44cbdfc857e5830cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#adacd2fb2fe4636c44cbdfc857e5830cd">test_C_5_2_6_2</a> ()</td></tr>
+<tr class="memdesc:adacd2fb2fe4636c44cbdfc857e5830cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test logic_error on read operation on write-only register.  <a href="#adacd2fb2fe4636c44cbdfc857e5830cd">More...</a><br /></td></tr>
+<tr class="separator:adacd2fb2fe4636c44cbdfc857e5830cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f2a2a30848755473b7e46faf7a3db9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a4f2a2a30848755473b7e46faf7a3db9b">test_C_5_2_7_2</a> ()</td></tr>
+<tr class="memdesc:a4f2a2a30848755473b7e46faf7a3db9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test logic_error on write operation on read-only register.  <a href="#a4f2a2a30848755473b7e46faf7a3db9b">More...</a><br /></td></tr>
+<tr class="separator:a4f2a2a30848755473b7e46faf7a3db9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60b5789a2061a6efabd3c73f70a39ada"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a60b5789a2061a6efabd3c73f70a39ada">test_NOSPEC_valueAfterConstruction</a> ()</td></tr>
 <tr class="memdesc:a60b5789a2061a6efabd3c73f70a39ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test the content of the application data buffer after construction.  <a href="#a60b5789a2061a6efabd3c73f70a39ada">More...</a><br /></td></tr>
 <tr class="separator:a60b5789a2061a6efabd3c73f70a39ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,7 +276,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a02b750609b15e549d6b8fd0597a22e58"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(std::string)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a02b750609b15e549d6b8fd0597a22e58">_setRemoteValueCallable</a></td></tr>
 <tr class="separator:a02b750609b15e549d6b8fd0597a22e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9976bd1fdf41b37d51dcd111c687af25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_fixed_user_type_map.html">ctk::FixedUserTypeMap</a>&lt; std::list&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a9976bd1fdf41b37d51dcd111c687af25">syncReadRegisters</a></td></tr>
-<tr class="memdesc:a9976bd1fdf41b37d51dcd111c687af25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of integer register used for tests.  <a href="#a9976bd1fdf41b37d51dcd111c687af25">More...</a><br /></td></tr>
+<tr class="memdesc:a9976bd1fdf41b37d51dcd111c687af25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Names of registers used for tests.  <a href="#a9976bd1fdf41b37d51dcd111c687af25">More...</a><br /></td></tr>
 <tr class="separator:a9976bd1fdf41b37d51dcd111c687af25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9456ebc04a0a7c0a0fc0f6b17e9a200a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_fixed_user_type_map.html">ctk::FixedUserTypeMap</a>&lt; std::list&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a9456ebc04a0a7c0a0fc0f6b17e9a200a">asyncReadRegisters</a></td></tr>
 <tr class="separator:a9456ebc04a0a7c0a0fc0f6b17e9a200a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,6 +286,13 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:adcfec1f6d3edd721624eee5efb3503a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4d88e102c47587c58a775c57eef390b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_fixed_user_type_map.html">ctk::FixedUserTypeMap</a>&lt; std::list&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#ae4d88e102c47587c58a775c57eef390b">allRegisters</a></td></tr>
 <tr class="separator:ae4d88e102c47587c58a775c57eef390b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57f0a4097ce5d2a807b55dae55b22eb8"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a57f0a4097ce5d2a807b55dae55b22eb8">readOnlyRegisters</a></td></tr>
+<tr class="memdesc:a57f0a4097ce5d2a807b55dae55b22eb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special register properties.  <a href="#a57f0a4097ce5d2a807b55dae55b22eb8">More...</a><br /></td></tr>
+<tr class="separator:a57f0a4097ce5d2a807b55dae55b22eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9d152ac16aac92093666475ab0238c4"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#ac9d152ac16aac92093666475ab0238c4">writeOnlyRegisters</a></td></tr>
+<tr class="separator:ac9d152ac16aac92093666475ab0238c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ebaaa7c408f228248a6b4757f9eb908"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unified_backend_test.html#a2ebaaa7c408f228248a6b4757f9eb908">rawRegisters</a></td></tr>
+<tr class="separator:a2ebaaa7c408f228248a6b4757f9eb908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt;<br />
@@ -328,6 +351,172 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a34d7e1937cbee5121cd49bf44d40f3ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d7e1937cbee5121cd49bf44d40f3ec">&#9670;&nbsp;</a></span>addAsyncReadTestRegister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::addAsyncReadTestRegister </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isReadOnly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>supportsRaw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add an asynchronous read register to be used for the tests. </p>
+<p>These registers must support AccessMode::wait_for_new_data. The registers must be readable. Registers may not appear in the list set via setSyncReadTestRegisters() as well, but they may appear in the list set through setWriteTestRegisters().</p>
+<p>Any number of asynchronous read registers can be added.</p>
+<p>If supportsRaw == true, the specified UserType is assumed to be the raw UserType. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00144">144</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="ad78ecd6c43763405144f1dece379fb81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad78ecd6c43763405144f1dece379fb81">&#9670;&nbsp;</a></span>addSyncReadTestRegister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::addSyncReadTestRegister </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isReadOnly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>supportsRaw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a synchronous read register to be used for the tests. </p>
+<p>These registers must <em>not</em> support AccessMode::wait_for_new_data. The registers must be readable. Registers may not appear in the list set via setAsyncReadTestRegisters() as well, but they may appear in the list set through setWriteTestRegisters().</p>
+<p>Any number of synchronous read registers can be added.</p>
+<p>If supportsRaw == true, the specified UserType is assumed to be the raw UserType. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00126">126</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a4efc38a3c82d18062c2491ec784cc128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4efc38a3c82d18062c2491ec784cc128">&#9670;&nbsp;</a></span>addWriteTestRegister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::addWriteTestRegister </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isWriteOnly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>supportsRaw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a write register to be used for the tests. </p>
+<p>Any number of write registers can be added.</p>
+<p>If supportsRaw == true, the specified UserType is assumed to be the raw UserType. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00158">158</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a4efc38a3c82d18062c2491ec784cc128_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
 <a id="ab9b10339cb368d3f20adc0217bfb8a7e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9b10339cb368d3f20adc0217bfb8a7e">&#9670;&nbsp;</a></span>forceAsyncReadInconsistency()</h2>
 
@@ -470,44 +659,6 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 
 </div>
 </div>
-<a id="a411781716ae13ce2fcfede7090810360"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a411781716ae13ce2fcfede7090810360">&#9670;&nbsp;</a></span>integerRegister()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::integerRegister </td>
-          <td>(</td>
-          <td class="paramtype">const std::list&lt; std::string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>names</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00153">153</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a411781716ae13ce2fcfede7090810360_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
 <a id="a5eab49b15b550907027f1b92583fb5bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5eab49b15b550907027f1b92583fb5bb">&#9670;&nbsp;</a></span>quirkHookActivateAsyncRead()</h2>
 
@@ -569,7 +720,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 
 <p>Utility functions for recurring tasks. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00477">477</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00540">540</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -583,7 +734,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ac48719d14974fcc50462bb8c99d3a037_icgraph.svg" width="360" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ac48719d14974fcc50462bb8c99d3a037_icgraph.svg" width="376" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -610,168 +761,13 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <p>Execute all tests. </p>
 <p>Call this function within a BOOST_AUTO_TEST_CASE after calling all preparatory functions below. The tests are executed for the backend identified by the given CDD. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00383">383</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00402">402</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a1dd47c405881513fc6ef4aca7279bff8_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="ae46230275c6c6af94430b91a1c8b16e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae46230275c6c6af94430b91a1c8b16e0">&#9670;&nbsp;</a></span>setAsyncReadTestRegisters()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
-<div class="memtemplate">
-template&lt;typename UserType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::setAsyncReadTestRegisters </td>
-          <td>(</td>
-          <td class="paramtype">std::list&lt; std::string &gt;&#160;</td>
-          <td class="paramname"><em>names</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set the names of asynchronous read registers to be used for the tests. </p>
-<p>These registers must support AccessMode::wait_for_new_data. The registers must be readable. Registers may not appear in the list set via <a class="el" href="class_unified_backend_test.html#a1ee16e7381ee871c77c2e84a1f481954" title="Set the names of synchronous read registers to be used for the tests. ">setSyncReadTestRegisters()</a> as well, but they may appear in the list set through <a class="el" href="class_unified_backend_test.html#a17cb03d31d0e4b1aae8ccc9d48bbe35f" title="Set the names of asynchronous read registers to be used for the tests. ">setWriteTestRegisters()</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00135">135</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-
-</div>
-</div>
-<a id="a1ee16e7381ee871c77c2e84a1f481954"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ee16e7381ee871c77c2e84a1f481954">&#9670;&nbsp;</a></span>setSyncReadTestRegisters()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
-<div class="memtemplate">
-template&lt;typename UserType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::setSyncReadTestRegisters </td>
-          <td>(</td>
-          <td class="paramtype">std::list&lt; std::string &gt;&#160;</td>
-          <td class="paramname"><em>names</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set the names of synchronous read registers to be used for the tests. </p>
-<p>These registers must <em>not</em> support AccessMode::wait_for_new_data. The registers must be readable. Registers may not appear in the list set via <a class="el" href="class_unified_backend_test.html#ae46230275c6c6af94430b91a1c8b16e0" title="Set the names of asynchronous read registers to be used for the tests. ">setAsyncReadTestRegisters()</a> as well, but they may appear in the list set through <a class="el" href="class_unified_backend_test.html#a17cb03d31d0e4b1aae8ccc9d48bbe35f" title="Set the names of asynchronous read registers to be used for the tests. ">setWriteTestRegisters()</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00122">122</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-
-</div>
-</div>
-<a id="a17cb03d31d0e4b1aae8ccc9d48bbe35f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17cb03d31d0e4b1aae8ccc9d48bbe35f">&#9670;&nbsp;</a></span>setWriteTestRegisters()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
-<div class="memtemplate">
-template&lt;typename UserType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::setWriteTestRegisters </td>
-          <td>(</td>
-          <td class="paramtype">std::list&lt; std::string &gt;&#160;</td>
-          <td class="paramname"><em>names</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set the names of asynchronous read registers to be used for the tests. </p>
-<p>These registers must support AccessMode::wait_for_new_data. The registers must be readable. </p>
-
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00147">147</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-
-</div>
-</div>
-<a id="af2e30f6dafc54ba66745683e0f787a8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2e30f6dafc54ba66745683e0f787a8c">&#9670;&nbsp;</a></span>test_B_10_1_2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_B_10_1_2 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Test repeated setException() has no effect (in particular, no additional exceptions in async transfers) </p>
-<ul>
-<li><a class="anchor" id="UnifiedTest_TransferElement_B_10_1_2"></a>B.10.1.2 </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01737">1737</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_af2e30f6dafc54ba66745683e0f787a8c_cgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_af2e30f6dafc54ba66745683e0f787a8c_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -807,21 +803,21 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_11_2_1"></a><a class="el" href="spec__transfer_element.html#transferElement_B_11_2_1">B.11.2.1</a>, </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01789">1789</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01945">1945</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a31bce8b2632783a95cf5700ffbcd5070_cgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a31bce8b2632783a95cf5700ffbcd5070_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a31bce8b2632783a95cf5700ffbcd5070_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -858,21 +854,21 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 </ul>
 <p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!! TODO FIXME This test is not complete yet !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01856">1856</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02012">2012</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a8a444bd7ba5f05fc3ecae8f10df62aa2_cgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a8a444bd7ba5f05fc3ecae8f10df62aa2_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a8a444bd7ba5f05fc3ecae8f10df62aa2_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -908,21 +904,21 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_11_6"></a><a class="el" href="spec__transfer_element.html#transferElement_B_11_6">B.11.6</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01905">1905</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02061">2061</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a6fd78876375cd5c5a9e7501579d1e04b_cgraph.svg" width="368" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a6fd78876375cd5c5a9e7501579d1e04b_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a6fd78876375cd5c5a9e7501579d1e04b_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -958,21 +954,21 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_3_1_2_1"></a><a class="el" href="spec__transfer_element.html#transferElement_B_3_1_2_1">B.3.1.2.1</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00500">500</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00563">563</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_abb058776296c871f7324cda272263b2d_cgraph.svg" width="368" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_abb058776296c871f7324cda272263b2d_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_abb058776296c871f7324cda272263b2d_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1009,21 +1005,21 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 </ul>
 <p>(Exception case is covered by B.6.4) </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00574">574</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00637">637</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a192b5d65fca883ca1f0e3c1800bcbc54_cgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a192b5d65fca883ca1f0e3c1800bcbc54_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a192b5d65fca883ca1f0e3c1800bcbc54_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1059,13 +1055,63 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_3_2_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_3_2_2">B.3.2.2</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00614">614</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00677">677</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_adeedf11240f8a7a01fa7ab96686b167a_cgraph.svg" width="368" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_adeedf11240f8a7a01fa7ab96686b167a_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ab5d83282f1a7d7aa8f2d55b6e14b4ace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5d83282f1a7d7aa8f2d55b6e14b4ace">&#9670;&nbsp;</a></span>test_B_4_2_4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_B_4_2_4 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test transfer implementations do not change the application buffer. </p>
+<ul>
+<li><a class="anchor" id="UnifiedTest_TransferElement_B_4_2_4"></a><a class="el" href="spec__transfer_element.html#transferElement_B_4_2_4">B.4.2.4</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00755">755</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-17-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_adeedf11240f8a7a01fa7ab96686b167a_cgraph.svg" width="368" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ab5d83282f1a7d7aa8f2d55b6e14b4ace_cgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1073,7 +1119,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-18-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_adeedf11240f8a7a01fa7ab96686b167a_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ab5d83282f1a7d7aa8f2d55b6e14b4ace_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1109,7 +1155,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_6_4"></a><a class="el" href="spec__transfer_element.html#transferElement_B_6_4">B.6.4</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00676">676</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00832">832</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-19-summary" class="dynsummary" style="display:block;">
@@ -1123,7 +1169,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-20-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a7f18fdf2bc586fcfeeaf6355ad366941_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a7f18fdf2bc586fcfeeaf6355ad366941_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1159,7 +1205,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_7_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_7_2">B.7.2</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00874">874</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01030">1030</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-21-summary" class="dynsummary" style="display:block;">
@@ -1173,7 +1219,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-22-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a2dfd2aa66d3b601a3da3e5c669cdea51_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a2dfd2aa66d3b601a3da3e5c669cdea51_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1210,7 +1256,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 </ul>
 <p>Note: we do not care about read() vs. readNonBlocking() in this test, since that part of the implementation is in the base class and hence tested in testTransferElement. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00936">936</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01092">1092</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-23-summary" class="dynsummary" style="display:block;">
@@ -1224,7 +1270,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-24-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ad526c2310a6253ad3e427b43e7b6e107_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ad526c2310a6253ad3e427b43e7b6e107_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1261,7 +1307,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 </ul>
 <p>FIXME: This test is not really complete. It tests whether the latest value survives. It does not test though which other values are surviving. For this the test needs to know the length of the implementation specific data transport queue, which is currently not known to it (the length of the _readQueue continuation is always 1). </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01023">1023</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01179">1179</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-25-summary" class="dynsummary" style="display:block;">
@@ -1275,7 +1321,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-26-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ae70454ae1fa5d6c3da7a071fa8b4be13_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ae70454ae1fa5d6c3da7a071fa8b4be13_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1311,7 +1357,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_8_3"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_3">B.8.3</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01073">1073</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01229">1229</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-27-summary" class="dynsummary" style="display:block;">
@@ -1325,7 +1371,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-28-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_afdd55db0e1dd72c792d5c68753299468_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_afdd55db0e1dd72c792d5c68753299468_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1361,7 +1407,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_8_4"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_4">B.8.4</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01124">1124</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01280">1280</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-29-summary" class="dynsummary" style="display:block;">
@@ -1375,7 +1421,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <div id="dynsection-30-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-30-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_afb7c3d073bb2cc759b65f7b009344aaf_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_afb7c3d073bb2cc759b65f7b009344aaf_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1411,7 +1457,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_8_5"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_5">B.8.5</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01194">1194</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01350">1350</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-31-summary" class="dynsummary" style="display:block;">
@@ -1425,7 +1471,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <div id="dynsection-32-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-32-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_adc7be62172a812dcb6922960cc3bcb66_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_adc7be62172a812dcb6922960cc3bcb66_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1461,7 +1507,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_8_5_1"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_5_1">B.8.5.1</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01254">1254</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01410">1410</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-33-summary" class="dynsummary" style="display:block;">
@@ -1475,7 +1521,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <div id="dynsection-34-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-34-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a007a66e45d1f26b94814faa1a753adfb_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a007a66e45d1f26b94814faa1a753adfb_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1511,7 +1557,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_8_5_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_5_2">B.8.5.2</a>, </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01294">1294</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01450">1450</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-35" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-35-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-35-summary" class="dynsummary" style="display:block;">
@@ -1525,7 +1571,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <div id="dynsection-36-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-36-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a5eb35dddfa397899629fecd009aadccc_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a5eb35dddfa397899629fecd009aadccc_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1561,7 +1607,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_8_5_3"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_5_3">B.8.5.3</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01355">1355</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01511">1511</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-37-summary" class="dynsummary" style="display:block;">
@@ -1575,14 +1621,14 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <div id="dynsection-38-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-38-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ab63dac4c68052e29e61bb4a50f81c9bf_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ab63dac4c68052e29e61bb4a50f81c9bf_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a72704f4ca83bb381082625912ed20e9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72704f4ca83bb381082625912ed20e9b">&#9670;&nbsp;</a></span>test_B_8_6()</h2>
+<a id="a2767288aab2609962e2b3accd292fac1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2767288aab2609962e2b3accd292fac1">&#9670;&nbsp;</a></span>test_B_8_6_6()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1593,7 +1639,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_B_8_6 </td>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_B_8_6_6 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1608,16 +1654,16 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 
 <p>Test interrupt() </p>
 <ul>
-<li><a class="anchor" id="UnifiedTest_TransferElement_B_8_6"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_6">B.8.6</a> (with sub-points) </li>
+<li><a class="anchor" id="UnifiedTest_TransferElement_B_8_6_6"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_6_6">B.8.6.6</a> (via high-level test) </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01399">1399</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01555">1555</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-39-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-39-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-39-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a72704f4ca83bb381082625912ed20e9b_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a2767288aab2609962e2b3accd292fac1_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <div id="dynsection-40" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1625,7 +1671,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <div id="dynsection-40-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-40-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a72704f4ca83bb381082625912ed20e9b_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a2767288aab2609962e2b3accd292fac1_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1661,7 +1707,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_9_1"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_1">B.9.1</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01453">1453</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01609">1609</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-41" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-41-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-41-summary" class="dynsummary" style="display:block;">
@@ -1675,57 +1721,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <div id="dynsection-42-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-42-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a6a42b1d49ba3001b9494c0caf3c91a65_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a69e59634c46c9813030b7c61c837a94e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69e59634c46c9813030b7c61c837a94e">&#9670;&nbsp;</a></span>test_B_9_2_1()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_B_9_2_1 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Test setException() disables asynchronous read transfers. </p>
-<ul>
-<li><a class="anchor" id="UnifiedTest_TransferElement_B_9_2_1"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_2_1">B.9.2.1</a> </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01572">1572</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-43" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-43-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-43-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-43-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a69e59634c46c9813030b7c61c837a94e_cgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-44" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-44-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-44-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-44-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a69e59634c46c9813030b7c61c837a94e_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a6a42b1d49ba3001b9494c0caf3c91a65_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1756,26 +1752,26 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Test exactly one runtime_error in the _readQueue per async read accessor. </p>
+<p>Test repeated setException() has no effect (in particular, no additional exceptions in async transfers) </p>
 <ul>
-<li><a class="anchor" id="UnifiedTest_TransferElement_B_9_2_2"></a>B.9.2.2 </li>
+<li><a class="anchor" id="UnifiedTest_TransferElement_B_9_2_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_2_2">B.9.2.2</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01620">1620</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-45" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-45-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-45-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01728">1728</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-43" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-43-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-43-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-45-content" class="dyncontent" style="display:none;">
+<div id="dynsection-43-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a9c7c8063e257326e5ffb80d66b03d867_cgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-46" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-46-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-46-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-44" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-44-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-44-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-46-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a9c7c8063e257326e5ffb80d66b03d867_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-44-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a9c7c8063e257326e5ffb80d66b03d867_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1806,33 +1802,33 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Test doReadTransferSynchonously throws runtime_error after setException() until recovery. </p>
+<p>Test setException() disables asynchronous read transfers. </p>
 <ul>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_9_3_1"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_3_1">B.9.3.1</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01667">1667</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-47" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-47-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-47-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01780">1780</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-45" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-45-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-45-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-47-content" class="dyncontent" style="display:none;">
+<div id="dynsection-45-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a75bb53f9d616fa3acbea125513d2bc1f_cgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-48" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-48-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-48-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-46" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-46-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-46-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-48-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a75bb53f9d616fa3acbea125513d2bc1f_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-46-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a75bb53f9d616fa3acbea125513d2bc1f_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="adcedb61c7bc6a9c20c5402f4f0a10547"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcedb61c7bc6a9c20c5402f4f0a10547">&#9670;&nbsp;</a></span>test_B_9_4()</h2>
+<a id="afddf74eb1ec36976678506dd49a91f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afddf74eb1ec36976678506dd49a91f2b">&#9670;&nbsp;</a></span>test_B_9_3_2()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1843,7 +1839,107 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_B_9_4 </td>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_B_9_3_2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test exactly one runtime_error in the _readQueue per async read accessor. </p>
+<ul>
+<li><a class="anchor" id="UnifiedTest_TransferElement_B_9_3_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_3_2">B.9.3.2</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01828">1828</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-47" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-47-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-47-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-47-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_afddf74eb1ec36976678506dd49a91f2b_cgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-48" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-48-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-48-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-48-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_afddf74eb1ec36976678506dd49a91f2b_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="adc30fa591c77f5e5bf30d2c540cca469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc30fa591c77f5e5bf30d2c540cca469">&#9670;&nbsp;</a></span>test_B_9_4_1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_B_9_4_1 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test doReadTransferSynchonously throws runtime_error after setException() until recovery. </p>
+<ul>
+<li><a class="anchor" id="UnifiedTest_TransferElement_B_9_4_1"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_4_1">B.9.4.1</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01875">1875</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-49" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-49-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-49-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-49-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_adc30fa591c77f5e5bf30d2c540cca469_cgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-50" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-50-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-50-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-50-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_adc30fa591c77f5e5bf30d2c540cca469_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a35c38eb4156129481d3512e92d3a86fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35c38eb4156129481d3512e92d3a86fb">&#9670;&nbsp;</a></span>test_B_9_5()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_B_9_5 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1858,31 +1954,31 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 
 <p>Test write operations throw after setException() </p>
 <ul>
-<li><a class="anchor" id="UnifiedTest_TransferElement_B_9_4"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_4">B.9.4</a> </li>
+<li><a class="anchor" id="UnifiedTest_TransferElement_B_9_5"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_5">B.9.5</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01702">1702</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-49" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-49-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-49-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01910">1910</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-51" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-51-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-51-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-49-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_adcedb61c7bc6a9c20c5402f4f0a10547_cgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-51-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a35c38eb4156129481d3512e92d3a86fb_cgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-50" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-50-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-50-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-52" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-52-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-52-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-50-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_adcedb61c7bc6a9c20c5402f4f0a10547_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-52-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a35c38eb4156129481d3512e92d3a86fb_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a7f5da3ee5c0a450fab7ac64d25324f92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f5da3ee5c0a450fab7ac64d25324f92">&#9670;&nbsp;</a></span>test_C_5_2_5()</h2>
+<a id="a6551266ba8c83f5a95f1fcbbac0fc260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6551266ba8c83f5a95f1fcbbac0fc260">&#9670;&nbsp;</a></span>test_C_5_2_1_2()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1893,7 +1989,157 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_C_5_2_5 </td>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_C_5_2_1_2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test logic_error for non-existing register. </p>
+<ul>
+<li><a class="anchor" id="UnifiedTest_TransferElement_C_5_2_1_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_1_2">C.5.2.1.2</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02084">2084</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-53" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-53-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-53-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-53-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a6551266ba8c83f5a95f1fcbbac0fc260_cgraph.svg" width="631" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-54" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-54-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-54-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-54-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a6551266ba8c83f5a95f1fcbbac0fc260_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a9ce5dfce27e20f682a83b166cc0d39f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce5dfce27e20f682a83b166cc0d39f7">&#9670;&nbsp;</a></span>test_C_5_2_2_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_C_5_2_2_2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test logic_error for exceeding register size. </p>
+<ul>
+<li><a class="anchor" id="UnifiedTest_TransferElement_C_5_2_2_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_2_2">C.5.2.2.2</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02113">2113</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-55" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-55-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-55-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-55-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a9ce5dfce27e20f682a83b166cc0d39f7_cgraph.svg" width="368" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-56" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-56-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-56-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-56-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a9ce5dfce27e20f682a83b166cc0d39f7_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ac6a7c487fdf21aaf0be836af8933debf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6a7c487fdf21aaf0be836af8933debf">&#9670;&nbsp;</a></span>test_C_5_2_3_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_C_5_2_3_2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test logic_error for wrong access mode flags. </p>
+<ul>
+<li><a class="anchor" id="UnifiedTest_TransferElement_C_5_2_3_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_3_2">C.5.2.3.2</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02174">2174</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-57" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-57-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-57-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-57-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ac6a7c487fdf21aaf0be836af8933debf_cgraph.svg" width="368" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-58" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-58-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-58-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-58-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_ac6a7c487fdf21aaf0be836af8933debf_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a2c10cc862a5c81c90d088dbbb0a337d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c10cc862a5c81c90d088dbbb0a337d9">&#9670;&nbsp;</a></span>test_C_5_2_5_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_C_5_2_5_2 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1908,24 +2154,124 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 
 <p>Test logic_error on operation while backend closed. </p>
 <ul>
-<li><a class="anchor" id="UnifiedTest_TransferElement_C_5_2_5"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_5">C.5.2.5</a> </li>
+<li><a class="anchor" id="UnifiedTest_TransferElement_C_5_2_5_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_5_2">C.5.2.5.2</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01928">1928</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-51" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-51-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-51-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02209">2209</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-59" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-59-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-59-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-51-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a7f5da3ee5c0a450fab7ac64d25324f92_cgraph.svg" width="368" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-59-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a2c10cc862a5c81c90d088dbbb0a337d9_cgraph.svg" width="368" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-52" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-52-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-52-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-60" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-60-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-60-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-52-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a7f5da3ee5c0a450fab7ac64d25324f92_icgraph.svg" width="360" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-60-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a2c10cc862a5c81c90d088dbbb0a337d9_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="adacd2fb2fe4636c44cbdfc857e5830cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adacd2fb2fe4636c44cbdfc857e5830cd">&#9670;&nbsp;</a></span>test_C_5_2_6_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_C_5_2_6_2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test logic_error on read operation on write-only register. </p>
+<ul>
+<li><a class="anchor" id="UnifiedTest_TransferElement_C_5_2_6_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_6_2">C.5.2.6.2</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02252">2252</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-61" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-61-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-61-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-61-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_adacd2fb2fe4636c44cbdfc857e5830cd_cgraph.svg" width="368" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-62" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-62-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-62-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-62-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_adacd2fb2fe4636c44cbdfc857e5830cd_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a4f2a2a30848755473b7e46faf7a3db9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f2a2a30848755473b7e46faf7a3db9b">&#9670;&nbsp;</a></span>test_C_5_2_7_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::test_C_5_2_7_2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test logic_error on write operation on read-only register. </p>
+<ul>
+<li><a class="anchor" id="UnifiedTest_TransferElement_C_5_2_7_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_7_2">C.5.2.7.2</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02287">2287</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-63" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-63-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-63-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-63-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a4f2a2a30848755473b7e46faf7a3db9b_cgraph.svg" width="368" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-64" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-64-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-64-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-64-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a4f2a2a30848755473b7e46faf7a3db9b_icgraph.svg" width="376" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1961,21 +2307,21 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T &gt; </div>
 <li>MISSING SPEC </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01971">1971</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
-<div id="dynsection-53" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-53-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-53-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02308">2308</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<div id="dynsection-65" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-65-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-65-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-53-content" class="dyncontent" style="display:none;">
+<div id="dynsection-65-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a60b5789a2061a6efabd3c73f70a39ada_cgraph.svg" width="490" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-54" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-54-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-54-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-66" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-66-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-66-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-54-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a60b5789a2061a6efabd3c73f70a39ada_icgraph.svg" width="482" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-66-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_unified_backend_test_a60b5789a2061a6efabd3c73f70a39ada_icgraph.svg" width="498" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2004,7 +2350,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00190">190</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00206">206</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2032,7 +2378,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 
 <p>Action to provoke data loss in writes. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00189">189</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00205">205</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2060,7 +2406,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 
 <p>Action to provoke a value inconsistency in asynchronous read transfers. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00193">193</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00209">209</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2088,7 +2434,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 
 <p>See constructor description. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00202">202</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00218">218</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2114,7 +2460,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00203">203</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00219">219</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2140,7 +2486,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00206">206</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00222">222</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2166,7 +2512,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00206">206</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00222">222</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2194,7 +2540,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 
 <p>CDD for backend to test. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00199">199</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00215">215</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2222,7 +2568,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 
 <p>Actions for enable exception throwing. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00186">186</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00202">202</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2248,7 +2594,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00186">186</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00202">202</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2276,7 +2622,61 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 
 <p>Quirk hook: called right after each call to activateAsyncRead() </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00196">196</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00212">212</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a2ebaaa7c408f228248a6b4757f9eb908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ebaaa7c408f228248a6b4757f9eb908">&#9670;&nbsp;</a></span>rawRegisters</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, bool&gt; <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::rawRegisters</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00226">226</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a57f0a4097ce5d2a807b55dae55b22eb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57f0a4097ce5d2a807b55dae55b22eb8">&#9670;&nbsp;</a></span>readOnlyRegisters</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, bool&gt; <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::readOnlyRegisters</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Special register properties. </p>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00226">226</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2302,7 +2702,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00206">206</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00222">222</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2328,9 +2728,35 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Name of integer register used for tests. </p>
+<p>Names of registers used for tests. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00206">206</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00222">222</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="ac9d152ac16aac92093666475ab0238c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9d152ac16aac92093666475ab0238c4">&#9670;&nbsp;</a></span>writeOnlyRegisters</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, bool&gt; <a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a>&lt; GET_REMOTE_VALUE_CALLABLE_T &gt;::writeOnlyRegisters</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00226">226</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2356,7 +2782,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00206">206</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00222">222</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2369,7 +2795,7 @@ template&lt;typename GET_REMOTE_VALUE_CALLABLE_T&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_unified_backend_test.html">UnifiedBackendTest</a></li>
-    <li class="footer">Generated on Wed Jul 1 2020 03:53:12 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Jul 2 2020 03:53:11 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

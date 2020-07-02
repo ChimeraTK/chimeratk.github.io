@@ -1,9 +1,11 @@
 var searchData=
 [
   ['rawdatabuffer',['rawDataBuffer',['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae70e070df9727a85bc43751ced9e4302',1,'ChimeraTK::NumericAddressedLowLevelTransferElement']]],
+  ['rawregisters',['rawRegisters',['../class_unified_backend_test.html#a2ebaaa7c408f228248a6b4757f9eb908',1,'UnifiedBackendTest']]],
   ['read_5fsuccess_5findication',['READ_SUCCESS_INDICATION',['../class_chimera_t_k_1_1_rebot_dummy_session.html#acc1694f04edfb880bcd210c9002d418d',1,'ChimeraTK::RebotDummySession']]],
   ['readable',['readable',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6c445623ee9b3977e4e73c1965ab7cb2',1,'ChimeraTK::LNMBackendRegisterInfo']]],
   ['readonly',['readOnly',['../class_chimera_t_k_1_1_transfer_group.html#a52bc98ae72e9cf28d281a71c2b9bbb4e',1,'ChimeraTK::TransferGroup']]],
+  ['readonlyregisters',['readOnlyRegisters',['../class_unified_backend_test.html#a57f0a4097ce5d2a807b55dae55b22eb8',1,'UnifiedBackendTest']]],
   ['readregisters',['readRegisters',['../class_unified_backend_test.html#a85f8bfaccaeab792300d21372c3f09bf',1,'UnifiedBackendTest']]],
   ['rebot_5fmagic_5fword',['REBOT_MAGIC_WORD',['../class_chimera_t_k_1_1_rebot_dummy_session.html#affab2fa72ae592922b9930e2a590bfdb',1,'ChimeraTK::RebotDummySession']]],
   ['rebotserver',['rebotServer',['../struct_f.html#a7073bd2fb241c42f78d5f34ddb1d9293',1,'F']]],

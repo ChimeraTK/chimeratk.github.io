@@ -17,7 +17,6 @@ var searchData=
   ['int32',['int32',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a3c8acc4ab071e644c3590db8c20b2e96',1,'ChimeraTK::DataType']]],
   ['int64',['int64',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a507102dc046aef8ad3ab6766020987b0',1,'ChimeraTK::DataType']]],
   ['int8',['int8',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899ad63bc1d1e58cba5dbadfd284c9a0d253',1,'ChimeraTK::DataType']]],
-  ['integerregister',['integerRegister',['../class_unified_backend_test.html#a411781716ae13ce2fcfede7090810360',1,'UnifiedBackendTest']]],
   ['interrupt',['interrupt',['../class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#aa53474af7726cac1b8437a3aa4ea2fb4',1,'ChimeraTK::NDRegisterAccessorDecorator::interrupt()'],['../class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05',1,'ChimeraTK::TransferElement::interrupt()'],['../class_decorator_test_accessor.html#a89d0d3c6e73fbe78d3a50ab5e7aeadd4',1,'DecoratorTestAccessor::interrupt()'],['../class_transfer_element_test_accessor.html#a76fd12f8a75121651d9f20426e9e3f5d',1,'TransferElementTestAccessor::interrupt()']]],
   ['interrupt_5fimpl',['interrupt_impl',['../class_chimera_t_k_1_1_transfer_element.html#a7dc6f496a4965a7e81b0c36463ac9ce9',1,'ChimeraTK::TransferElement']]],
   ['invalid',['INVALID',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba464bac7271c91e146fddec802a1076e5',1,'ChimeraTK::LNMBackendRegisterInfo']]],
