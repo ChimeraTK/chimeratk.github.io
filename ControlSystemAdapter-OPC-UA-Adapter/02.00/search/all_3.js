@@ -88,6 +88,8 @@ var searchData=
   ['csa_5fopcua_5fadapter_5fexample2_2ecpp',['csa_opcua_adapter_example2.cpp',['../csa__opcua__adapter__example2_8cpp.html',1,'']]],
   ['csa_5fopcua_5fapplication_2ecpp',['csa_opcua_application.cpp',['../csa__opcua__application_8cpp.html',1,'']]],
   ['csaopcua',['csaOPCUA',['../csa__opcua__adapter__example_8cpp.html#a72b1f6c9fc2a291738ed08fec69bfe89',1,'csaOPCUA():&#160;csa_opcua_adapter_example.cpp'],['../csa__opcua__application_8cpp.html#a72b1f6c9fc2a291738ed08fec69bfe89',1,'csaOPCUA():&#160;csa_opcua_application.cpp']]],
-  ['csmanager',['csManager',['../csa__opcua__application_8cpp.html#add976e3e567316f346a38deea3691cb1',1,'csa_opcua_application.cpp']]],
+  ['csaopcuatest',['CSAOPCUATest',['../class_c_s_a_o_p_c_u_a_test.html',1,'']]],
+  ['csaopcuatestsuite',['CSAOPCUATestSuite',['../class_c_s_a_o_p_c_u_a_test_suite.html',1,'CSAOPCUATestSuite'],['../class_c_s_a_o_p_c_u_a_test_suite.html#a9cb60360cc4ad18e1133b109ce1f73e5',1,'CSAOPCUATestSuite::CSAOPCUATestSuite()']]],
+  ['csmanager',['csManager',['../struct_test_fixture_empty_set.html#a5cf27e6635e5969b1d444943e5a36380',1,'TestFixtureEmptySet::csManager()'],['../struct_test_fixture_p_v_set.html#a8d44452c47fdab3485496efc606e7994',1,'TestFixturePVSet::csManager()'],['../csa__opcua__application_8cpp.html#add976e3e567316f346a38deea3691cb1',1,'csManager():&#160;csa_opcua_application.cpp']]],
   ['currenttime',['currentTime',['../struct_u_a___server_status_data_type.html#a8ece07e0677206e7e688f932aa068edb',1,'UA_ServerStatusDataType']]]
 ];

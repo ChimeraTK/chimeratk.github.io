@@ -23,5 +23,6 @@ var searchData=
   ['protocolversion',['protocolVersion',['../struct_u_a___connection_config.html#a87ba3a7575aeb17cdbe9395b562babf5',1,'UA_ConnectionConfig::protocolVersion()'],['../struct_u_a___tcp_hello_message.html#a01562c42b1b28c2549b237d63cfe3769',1,'UA_TcpHelloMessage::protocolVersion()'],['../struct_u_a___tcp_acknowledge_message.html#a3a886d3ba01b389ec9c18342c58afc8f',1,'UA_TcpAcknowledgeMessage::protocolVersion()']]],
   ['publishingenabled',['publishingEnabled',['../struct_u_a___set_publishing_mode_request.html#a0ae26ed669894c3cbde5bd8155036379',1,'UA_SetPublishingModeRequest::publishingEnabled()'],['../struct_u_a___create_subscription_request.html#a7f69cd917905c2d7991a1dd8bb1839ee',1,'UA_CreateSubscriptionRequest::publishingEnabled()']]],
   ['publishingintervallimits',['publishingIntervalLimits',['../struct_u_a___server_config.html#a762bf5494e21a1c3e816a8043def9a2a',1,'UA_ServerConfig']]],
-  ['publishtime',['publishTime',['../struct_u_a___notification_message.html#a425bb6262e0e927fbc1d1925ec2e04ff',1,'UA_NotificationMessage']]]
+  ['publishtime',['publishTime',['../struct_u_a___notification_message.html#a425bb6262e0e927fbc1d1925ec2e04ff',1,'UA_NotificationMessage']]],
+  ['pvmanagers',['pvManagers',['../struct_test_fixture_empty_set.html#a870a0b6a2960a0e0c3414d7a1364649d',1,'TestFixtureEmptySet::pvManagers()'],['../struct_test_fixture_p_v_set.html#a5945304a614c0f8032b9d8c21f57af8b',1,'TestFixturePVSet::pvManagers()']]]
 ];

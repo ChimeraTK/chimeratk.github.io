@@ -4,7 +4,7 @@ var searchData=
   ['manufacturer_5fname',['MANUFACTURER_NAME',['../open62541_8c.html#aaa2b8f5b105c3019df0cb346f472e803',1,'open62541.c']]],
   ['manufacturername',['manufacturerName',['../struct_u_a___build_info.html#af76c60d0732b4d69bd2cccc1014ae2ac',1,'UA_BuildInfo']]],
   ['mappedclient',['mappedClient',['../classua__mapped__class.html#a0d65eb3318c9be3b8ab595c817e154b1',1,'ua_mapped_class']]],
-  ['mappedserver',['mappedServer',['../classua__mapped__class.html#a82d9361e44178646a8a377390be41060',1,'ua_mapped_class']]],
+  ['mappedserver',['mappedServer',['../classua__mapped__class.html#a82d9361e44178646a8a377390be41060',1,'ua_mapped_class::mappedServer()'],['../struct_test_fixture_server_set.html#a531406b26ea0607713f0736723817c27',1,'TestFixtureServerSet::mappedServer()']]],
   ['mappings',['mappings',['../struct_server_network_layer_t_c_p.html#ac997fa1f20615f9548ccb4cfedb1962e',1,'ServerNetworkLayerTCP']]],
   ['mappingssize',['mappingsSize',['../struct_server_network_layer_t_c_p.html#aa8f131b410cb4bbbd8450f70f91253b9',1,'ServerNetworkLayerTCP']]],
   ['max',['max',['../struct_u_a___numeric_range_dimension.html#ae154ceece5417f1e2678a2abbb6fe91d',1,'UA_NumericRangeDimension::max()'],['../struct_u_a___u_int32_range.html#a3150885d3ee87ab2b37d6b9878d87339',1,'UA_UInt32Range::max()'],['../struct_u_a___double_range.html#a492522f2151b02e9df8cb045139cacca',1,'UA_DoubleRange::max()']]],

@@ -8,5 +8,6 @@ var searchData=
   ['createfolderpath',['createFolderPath',['../classua__uaadapter.html#a473150da4d61c689d185e88d4cd98b63',1,'ua_uaadapter']]],
   ['createnode',['createNode',['../classua__namespace_1_1opcua__namespace.html#a0481d8bd275de5d37801f28687518d04',1,'ua_namespace::opcua_namespace']]],
   ['csa_5fnamespaceinit_5fgenerated',['csa_namespaceinit_generated',['../csa__namespaceinit__generated_8c.html#a2ea3cc2b8868d9a2b8dfb4e1f96729c7',1,'csa_namespaceinit_generated(UA_Server *server):&#160;csa_namespaceinit_generated.c'],['../csa__namespaceinit__generated_8h.html#ac64b8ee3031ee78bedfbf9ec610c5f56',1,'csa_namespaceinit_generated(UA_Server *server):&#160;csa_namespaceinit_generated.c']]],
-  ['csa_5fopcua_5fadapter',['csa_opcua_adapter',['../classcsa__opcua__adapter.html#a8a0a7ec49c048811c7f388a5053456f6',1,'csa_opcua_adapter']]]
+  ['csa_5fopcua_5fadapter',['csa_opcua_adapter',['../classcsa__opcua__adapter.html#a8a0a7ec49c048811c7f388a5053456f6',1,'csa_opcua_adapter']]],
+  ['csaopcuatestsuite',['CSAOPCUATestSuite',['../class_c_s_a_o_p_c_u_a_test_suite.html#a9cb60360cc4ad18e1133b109ce1f73e5',1,'CSAOPCUATestSuite']]]
 ];

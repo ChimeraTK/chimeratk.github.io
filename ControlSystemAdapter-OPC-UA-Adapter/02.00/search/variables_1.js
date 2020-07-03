@@ -1,7 +1,7 @@
 var searchData=
 [
   ['b',['b',['../classua__node__types_1_1opcua__node__id__t.html#aa5094982410a55b0016531fcd89314c1',1,'ua_node_types::opcua_node_id_t']]],
-  ['basenodeid',['baseNodeId',['../classua__mapped__class.html#a096c031f9cf99835303d984458861a21',1,'ua_mapped_class']]],
+  ['basenodeid',['baseNodeId',['../classua__mapped__class.html#a096c031f9cf99835303d984458861a21',1,'ua_mapped_class::baseNodeId()'],['../struct_test_fixture_server_set.html#a6215ad5896f4786794ca4ab874bbbf3d',1,'TestFixtureServerSet::baseNodeId()']]],
   ['binaryencodingid',['binaryEncodingId',['../struct_u_a___data_type.html#a545cbd4d15a55357679b20212f5c0cfc',1,'UA_DataType']]],
   ['binarymessage',['binaryMessage',['../struct_u_a___job.html#a424616c5209eb4b8d1a80fa39fdb0fb5',1,'UA_Job']]],
   ['body',['body',['../struct_u_a___extension_object.html#ac1af8afdad7bb507bf0e25c93527c645',1,'UA_ExtensionObject']]],

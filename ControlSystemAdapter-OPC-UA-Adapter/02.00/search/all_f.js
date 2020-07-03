@@ -38,7 +38,7 @@ var searchData=
   ['opcua_5fnode_5fview_5ft',['opcua_node_view_t',['../classua__node__types_1_1opcua__node__view__t.html',1,'ua_node_types']]],
   ['opcua_5freferencepointer_5ft',['opcua_referencePointer_t',['../classua__node__types_1_1opcua__reference_pointer__t.html',1,'ua_node_types']]],
   ['opcua_5fvalue_5ft',['opcua_value_t',['../classua__builtin__types_1_1opcua__value__t.html',1,'ua_builtin_types']]],
-  ['opcuaport',['opcuaPort',['../struct_server_config.html#ad89f298b8fb99aaf63b4ca6a7e98d070',1,'ServerConfig']]],
+  ['opcuaport',['opcuaPort',['../struct_server_config.html#ad89f298b8fb99aaf63b4ca6a7e98d070',1,'ServerConfig::opcuaPort()'],['../struct_test_fixture_server_set.html#affee2a2daa1be45b17ea1cb7c836d2e3',1,'TestFixtureServerSet::opcuaPort()']]],
   ['open62541_2ec',['open62541.c',['../open62541_8c.html',1,'']]],
   ['open62541_2eh',['open62541.h',['../open62541_8h.html',1,'']]],
   ['open62541_5fmacrohelper',['open62541_MacroHelper',['../classopen62541___macro_helper_1_1open62541___macro_helper.html',1,'open62541_MacroHelper.open62541_MacroHelper'],['../namespaceopen62541___macro_helper.html',1,'open62541_MacroHelper']]],

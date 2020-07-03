@@ -11,6 +11,7 @@ var searchData=
   ['getbinaryindirectpointerindex',['getBinaryIndirectPointerIndex',['../classua__namespace_1_1opcua__namespace.html#ade4682b809cdfa657799cf013e70f50b',1,'ua_namespace::opcua_namespace']]],
   ['getcodeinstancename',['getCodeInstanceName',['../classua__builtin__types_1_1opcua___builtin_type__extension_object__t.html#ad277e1780c0903a9ab36628813d2d42e',1,'ua_builtin_types::opcua_BuiltinType_extensionObject_t']]],
   ['getcodeprintableid',['getCodePrintableID',['../classua__node__types_1_1opcua__reference_pointer__t.html#a9faff7a54a04cf3dc7139d07b5354cbc',1,'ua_node_types.opcua_referencePointer_t.getCodePrintableID()'],['../classua__node__types_1_1opcua__node__t.html#a2cfb306a4e763e29ae4cafe384833831',1,'ua_node_types.opcua_node_t.getCodePrintableID()']]],
+  ['getcontent',['getContent',['../class_x_m_l_file_handler_test.html#a50015c2f35f5e80d0311e2e52a40b176',1,'XMLFileHandlerTest']]],
   ['getcontentfromnode',['getContentFromNode',['../classxml__file__handler.html#a674481a9de34089b278a1f8d4c2448b1',1,'xml_file_handler']]],
   ['getcontrolsystemmanager',['getControlSystemManager',['../classcsa__opcua__adapter.html#aadda2301ad68f34068c33602255bba38',1,'csa_opcua_adapter']]],
   ['getcreateexpandednodeidmacro',['getCreateExpandedNodeIDMacro',['../classopen62541___macro_helper_1_1open62541___macro_helper.html#af8a048e54cd7dc3fcf3b839fa3293245',1,'open62541_MacroHelper::open62541_MacroHelper']]],

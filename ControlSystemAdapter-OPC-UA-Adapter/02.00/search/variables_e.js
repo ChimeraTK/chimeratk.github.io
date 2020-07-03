@@ -2,7 +2,7 @@ var searchData=
 [
   ['o',['o',['../classua__node__types_1_1opcua__node__id__t.html#a3d2e09f84f546abc2f7257aa77f1fd3e',1,'ua_node_types::opcua_node_id_t']]],
   ['objectid',['objectId',['../struct_u_a___call_method_request.html#a26a99bb993de37299df444585caab4f5',1,'UA_CallMethodRequest']]],
-  ['opcuaport',['opcuaPort',['../struct_server_config.html#ad89f298b8fb99aaf63b4ca6a7e98d070',1,'ServerConfig']]],
+  ['opcuaport',['opcuaPort',['../struct_server_config.html#ad89f298b8fb99aaf63b4ca6a7e98d070',1,'ServerConfig::opcuaPort()'],['../struct_test_fixture_server_set.html#affee2a2daa1be45b17ea1cb7c836d2e3',1,'TestFixtureServerSet::opcuaPort()']]],
   ['operanddiagnosticinfos',['operandDiagnosticInfos',['../struct_u_a___content_filter_element_result.html#ae8c70fcc16284b312bef4ad59f534239',1,'UA_ContentFilterElementResult']]],
   ['operanddiagnosticinfossize',['operandDiagnosticInfosSize',['../struct_u_a___content_filter_element_result.html#ac1e95ddcb13900b143aa4ee990f5ebf7',1,'UA_ContentFilterElementResult']]],
   ['operandstatuscodes',['operandStatusCodes',['../struct_u_a___content_filter_element_result.html#afe65a05294b4a5b85823e3ec948c3349',1,'UA_ContentFilterElementResult']]],

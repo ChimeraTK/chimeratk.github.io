@@ -9,6 +9,8 @@ var searchData=
   ['addinversereferencetarget',['addInverseReferenceTarget',['../classua__node__types_1_1opcua__node__t.html#ad5ea0657dc62f64c199dc4c0b703f9b7',1,'ua_node_types::opcua_node_t']]],
   ['additionalheader',['additionalHeader',['../struct_u_a___request_header.html#aed53334f83e7101368e9f1e7813239d4',1,'UA_RequestHeader::additionalHeader()'],['../struct_u_a___response_header.html#a37fb1ce36459e6023eb7e8ba0c696a2f',1,'UA_ResponseHeader::additionalHeader()']]],
   ['additionalinfo',['additionalInfo',['../struct_u_a___diagnostic_info.html#a27ca8a6c90713742b582b3cfaf804bb7',1,'UA_DiagnosticInfo']]],
+  ['additionalvariabletest',['AdditionalVariableTest',['../class_additional_variable_test.html',1,'']]],
+  ['additionalvariabletestsuite',['AdditionalVariableTestSuite',['../class_additional_variable_test_suite.html',1,'AdditionalVariableTestSuite'],['../class_additional_variable_test_suite.html#abcb663647a509df35647ca2bef14d6f9',1,'AdditionalVariableTestSuite::AdditionalVariableTestSuite()']]],
   ['addnamespace',['addNamespace',['../classua__namespace_1_1opcua__namespace.html#a4b9dc4f77788e225c2973ca4dc676d84',1,'ua_namespace.opcua_namespace.addNamespace()'],['../open62541_8c.html#a1816470c83dc6297ba3f653b373b4146',1,'addNamespace():&#160;open62541.c']]],
   ['addprofilearray',['ADDPROFILEARRAY',['../open62541_8c.html#acfa8f3f651566ae424537d400fd0a090',1,'open62541.c']]],
   ['addreference',['addReference',['../classua__node__types_1_1opcua__node__t.html#afff10b2bcc5057115d4539a2ec39dabc',1,'ua_node_types::opcua_node_t']]],
