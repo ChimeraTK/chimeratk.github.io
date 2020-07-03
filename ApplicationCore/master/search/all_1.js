@@ -11,7 +11,7 @@ var searchData=
   ['actuator',['actuator',['../struct_test_module2.html#a9e64b8b008322b456d08235fb80b1c89',1,'TestModule2::actuator()'],['../struct_output_module.html#a450f67424d101d35cc85f921bbaaba65',1,'OutputModule::actuator()']]],
   ['addaccessor',['addAccessor',['../class_chimera_t_k_1_1_virtual_module.html#a45df12c39c69536c12a2a481d5d99253',1,'ChimeraTK::VirtualModule']]],
   ['addinitialisationhandler',['addInitialisationHandler',['../class_chimera_t_k_1_1_device_module.html#ab30bf1b235913143d45bb5da7d84052c',1,'ChimeraTK::DeviceModule']]],
-  ['addnetwork',['addNetwork',['../class_chimera_t_k_1_1_trigger_fan_out.html#a69339bf10384cfe35943769d7be44da6',1,'ChimeraTK::TriggerFanOut']]],
+  ['addnetwork',['addNetwork',['../class_chimera_t_k_1_1_trigger_fan_out.html#acbe507e74120073ae3b1292a6d493df9',1,'ChimeraTK::TriggerFanOut']]],
   ['addnode',['addNode',['../class_chimera_t_k_1_1_variable_network.html#a5fb9112ee45366ddea3ad6c4fe81bdae',1,'ChimeraTK::VariableNetwork']]],
   ['addnodetotrigger',['addNodeToTrigger',['../class_chimera_t_k_1_1_variable_network.html#a6cc5740124d63d9926d9f77e406b1864',1,'ChimeraTK::VariableNetwork']]],
   ['addrecoveryaccessor',['addRecoveryAccessor',['../class_chimera_t_k_1_1_device_module.html#adc36415aff0aeb27621ade30f73d07b8',1,'ChimeraTK::DeviceModule']]],

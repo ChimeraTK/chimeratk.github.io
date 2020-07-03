@@ -4,6 +4,7 @@ var searchData=
   ['warninglowerthreshold',['warningLowerThreshold',['../struct_chimera_t_k_1_1_range_monitor.html#af9024a4da784b70404db4647ddae6d41',1,'ChimeraTK::RangeMonitor']]],
   ['warningupperthreshold',['warningUpperThreshold',['../struct_chimera_t_k_1_1_range_monitor.html#abbe332c7fc02516620d56dde6f08186c',1,'ChimeraTK::RangeMonitor']]],
   ['warnunconnectedvariables',['warnUnconnectedVariables',['../class_chimera_t_k_1_1_application.html#af638d687f2d229ab733c48f62f1a8877',1,'ChimeraTK::Application']]],
+  ['waswritten',['wasWritten',['../struct_chimera_t_k_1_1_recovery_helper.html#acb690e93ebfcb0bc7d49b4ea16344637',1,'ChimeraTK::RecoveryHelper']]],
   ['watch',['watch',['../struct_chimera_t_k_1_1_status_monitor_impl_1_1_one_up.html#a1eb2d6568e929c582184c18dd446be53',1,'ChimeraTK::StatusMonitorImpl::OneUp']]],
   ['withreturn',['withReturn',['../struct_chimera_t_k_1_1_variable_direction.html#a7c93d9b94dea8bb79d01bbe612bfbb29',1,'ChimeraTK::VariableDirection']]],
   ['withtimestamps',['withTimeStamps',['../struct_chimera_t_k_1_1history_1_1_history_entry.html#a2586c936907273a4197efd97513adb9a',1,'ChimeraTK::history::HistoryEntry']]],
@@ -14,6 +15,8 @@ var searchData=
   ['writearray',['writeArray',['../class_chimera_t_k_1_1_test_facility.html#a55f38cb91d70939e53456f4735991c72',1,'ChimeraTK::TestFacility']]],
   ['writebitmask',['WriteBitMask',['../struct_chimera_t_k_1_1_write_bit_mask.html',1,'ChimeraTK']]],
   ['writedestructively',['writeDestructively',['../class_chimera_t_k_1_1_array_accessor.html#aa5cdc2783ce70ed7af56607024035735',1,'ChimeraTK::ArrayAccessor::writeDestructively(ChimeraTK::VersionNumber versionNumber)=delete'],['../class_chimera_t_k_1_1_array_accessor.html#a5d91a3032ca365975d39453c139a94ec',1,'ChimeraTK::ArrayAccessor::writeDestructively()'],['../class_chimera_t_k_1_1_scalar_accessor.html#a30c397f9c9a396866c2b6c619812ed46',1,'ChimeraTK::ScalarAccessor::writeDestructively(ChimeraTK::VersionNumber versionNumber)=delete'],['../class_chimera_t_k_1_1_scalar_accessor.html#a3a1668d714e7218f0773f54a5de0976e',1,'ChimeraTK::ScalarAccessor::writeDestructively()']]],
+  ['writeorder',['writeOrder',['../struct_chimera_t_k_1_1_recovery_helper.html#a02f305373033ff9001e294b6fe15c1bd',1,'ChimeraTK::RecoveryHelper::writeOrder()'],['../class_chimera_t_k_1_1_device_module.html#a442eabee695e8c3b0e0ba2a2b8ff5fab',1,'ChimeraTK::DeviceModule::writeOrder()']]],
+  ['writeordercounter',['writeOrderCounter',['../class_chimera_t_k_1_1_device_module.html#a440035910769441b57ca570470c17bc6',1,'ChimeraTK::DeviceModule']]],
   ['writescalar',['writeScalar',['../class_chimera_t_k_1_1_test_facility.html#af3ea3bbf51b30ec24455a42ac67b60f5',1,'ChimeraTK::TestFacility']]],
   ['writesplitarraymodule',['WriteSplitArrayModule',['../struct_chimera_t_k_1_1_write_split_array_module.html',1,'ChimeraTK::WriteSplitArrayModule&lt; TYPE &gt;'],['../struct_chimera_t_k_1_1_write_split_array_module.html#a11679c3da717d26cf44cd7be1af9eba2',1,'ChimeraTK::WriteSplitArrayModule::WriteSplitArrayModule(EntityOwner *owner, const std::string &amp;name, const std::string &amp;description, size_t nGroups, size_t nElemsPerGroup=1)'],['../struct_chimera_t_k_1_1_write_split_array_module.html#ace5fc20d0b0235e159b6d45ae0049744',1,'ChimeraTK::WriteSplitArrayModule::WriteSplitArrayModule()']]]
 ];

@@ -8,7 +8,6 @@ var class_chimera_t_k_1_1_device_module =
     [ "addRecoveryAccessor", "class_chimera_t_k_1_1_device_module.html#adc36415aff0aeb27621ade30f73d07b8", null ],
     [ "connectTo", "class_chimera_t_k_1_1_device_module.html#a9f8221a93d4b964e0daf9b00e81b450b", null ],
     [ "decrementDataFaultCounter", "class_chimera_t_k_1_1_device_module.html#a674ce21caf7c5fad16ecfa054d66e9a2", null ],
-    [ "decrementExceptionCounter", "class_chimera_t_k_1_1_device_module.html#ab39dca139d903e079b3e0c00b92a7f4d", null ],
     [ "defineConnections", "class_chimera_t_k_1_1_device_module.html#a54e3bc866064cb19cbc2c6cab5ee9e51", null ],
     [ "getCurrentVersionNumber", "class_chimera_t_k_1_1_device_module.html#a0b1397c1859b806f25953d8e5823ae9e", null ],
     [ "getDataValidity", "class_chimera_t_k_1_1_device_module.html#ae096be5d7013ce6bc18e5fb39d7674cc", null ],
@@ -18,7 +17,6 @@ var class_chimera_t_k_1_1_device_module =
     [ "getRecoverySharedLock", "class_chimera_t_k_1_1_device_module.html#a2e4743eb941b949db66d5a309172a62d", null ],
     [ "handleException", "class_chimera_t_k_1_1_device_module.html#ab388c8a6e152379643f96c8fb945d3a3", null ],
     [ "incrementDataFaultCounter", "class_chimera_t_k_1_1_device_module.html#a72f0208f35c664dbedf03ba267172d65", null ],
-    [ "incrementExceptionCounter", "class_chimera_t_k_1_1_device_module.html#ab6552ef5e409f449e4f1cdb56ffe2054", null ],
     [ "operator()", "class_chimera_t_k_1_1_device_module.html#aadd7e584d9892ce18a05e0b765840f1b", null ],
     [ "operator()", "class_chimera_t_k_1_1_device_module.html#a8254ed343e15ea278d319b6ff5a1c873", null ],
     [ "operator()", "class_chimera_t_k_1_1_device_module.html#a0cb6412b38f9bd4920f077d6eb8800f8", null ],
@@ -31,6 +29,7 @@ var class_chimera_t_k_1_1_device_module =
     [ "terminate", "class_chimera_t_k_1_1_device_module.html#a579aa9c73405b593553805db4def3a18", null ],
     [ "virtualise", "class_chimera_t_k_1_1_device_module.html#afab701aa44d472d8f7bba14c8c94b046", null ],
     [ "virtualiseFromCatalog", "class_chimera_t_k_1_1_device_module.html#a984e0e97ec34d3f8f05f1eebb28e3acc", null ],
+    [ "writeOrder", "class_chimera_t_k_1_1_device_module.html#a442eabee695e8c3b0e0ba2a2b8ff5fab", null ],
     [ "Application", "class_chimera_t_k_1_1_device_module.html#a23f25bcc02a0e94c2f5a4188496b04d0", null ],
     [ "detail::DeviceModuleProxy", "class_chimera_t_k_1_1_device_module.html#a97967a6daa70f9b4246914953a73b0dd", null ],
     [ "ExceptionHandlingDecorator", "class_chimera_t_k_1_1_device_module.html#aa4d68f9b9ae5e4d36e5dc94efc89dcce", null ],
@@ -56,5 +55,6 @@ var class_chimera_t_k_1_1_device_module =
     [ "registerNamePrefix", "class_chimera_t_k_1_1_device_module.html#a3bd68002fced1ba4049ee2e798d7d26d", null ],
     [ "synchronousTransferCounter", "class_chimera_t_k_1_1_device_module.html#a88f4864f1f3001a38aab45486792db78", null ],
     [ "virtualisedModuleFromCatalog", "class_chimera_t_k_1_1_device_module.html#a6278854315239292e1143979799af854", null ],
-    [ "virtualisedModuleFromCatalog_isValid", "class_chimera_t_k_1_1_device_module.html#a8100399439fb611a1df16093c2aac7fa", null ]
+    [ "virtualisedModuleFromCatalog_isValid", "class_chimera_t_k_1_1_device_module.html#a8100399439fb611a1df16093c2aac7fa", null ],
+    [ "writeOrderCounter", "class_chimera_t_k_1_1_device_module.html#a440035910769441b57ca570470c17bc6", null ]
 ];

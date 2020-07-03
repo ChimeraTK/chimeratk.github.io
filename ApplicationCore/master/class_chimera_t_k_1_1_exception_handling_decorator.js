@@ -5,13 +5,13 @@ var class_chimera_t_k_1_1_exception_handling_decorator =
     [ "doPostWrite", "class_chimera_t_k_1_1_exception_handling_decorator.html#a69b3d5a25b51a08d9ecb23682caadafe", null ],
     [ "doPreRead", "class_chimera_t_k_1_1_exception_handling_decorator.html#ac9d4b5ea30f088f5d66492488372affb", null ],
     [ "doPreWrite", "class_chimera_t_k_1_1_exception_handling_decorator.html#a33bae9df0044307412b0fb58f3b832a2", null ],
-    [ "setOwner", "class_chimera_t_k_1_1_exception_handling_decorator.html#a9f727076598326eb295919670a919d4d", null ],
-    [ "setOwnerValidity", "class_chimera_t_k_1_1_exception_handling_decorator.html#afc200dc1658439741a5174f71ee1d5f5", null ],
+    [ "doWriteTransfer", "class_chimera_t_k_1_1_exception_handling_decorator.html#a7d56ae636daa31425033f25c11d66c55", null ],
+    [ "doWriteTransferDestructively", "class_chimera_t_k_1_1_exception_handling_decorator.html#a7521a788442dfae3fb99316d7b2b0ae6", null ],
+    [ "_dataLostInPreviousWrite", "class_chimera_t_k_1_1_exception_handling_decorator.html#a40009aedcdf2a0b4b4ce47e66f02e945", null ],
+    [ "_deviceModule", "class_chimera_t_k_1_1_exception_handling_decorator.html#abfebc42225ea2d7b59b725e5fc468fb3", null ],
     [ "_direction", "class_chimera_t_k_1_1_exception_handling_decorator.html#a60e6ee62f7c35ebe2bf13e2ce27b7465", null ],
-    [ "_owner", "class_chimera_t_k_1_1_exception_handling_decorator.html#a8c42e79150ac529a54898457794d5c85", null ],
+    [ "_hasThrownToInhibitTransfer", "class_chimera_t_k_1_1_exception_handling_decorator.html#a1d1ba98fb28b9cd0dcbc822f671424a4", null ],
     [ "_recoveryAccessor", "class_chimera_t_k_1_1_exception_handling_decorator.html#adb8931d7eca76758f0de9835af4f0148", null ],
     [ "_recoveryHelper", "class_chimera_t_k_1_1_exception_handling_decorator.html#a1ad91648a84895edeb2b344ca13f479f", null ],
-    [ "deviceModule", "class_chimera_t_k_1_1_exception_handling_decorator.html#a94e84d6cfbda358e6b03e7820384463e", null ],
-    [ "hasThrownToInhibitTransfer", "class_chimera_t_k_1_1_exception_handling_decorator.html#a516241b23030579967a31d58fdfe32f1", null ],
     [ "previousReadFailed", "class_chimera_t_k_1_1_exception_handling_decorator.html#a1c1ca495827f5fdb4ec6dae83bb8aa3e", null ]
 ];

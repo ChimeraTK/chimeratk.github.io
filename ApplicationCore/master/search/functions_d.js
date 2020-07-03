@@ -13,7 +13,7 @@ var searchData=
   ['readscalar',['readScalar',['../class_chimera_t_k_1_1_test_facility.html#a3dbd50a75109e977ed45a13ae29234cc',1,'ChimeraTK::TestFacility']]],
   ['readsplitarraymodule',['ReadSplitArrayModule',['../struct_chimera_t_k_1_1_read_split_array_module.html#a3e1da6334ba26771151430c24436de11',1,'ChimeraTK::ReadSplitArrayModule::ReadSplitArrayModule(EntityOwner *owner, const std::string &amp;name, const std::string &amp;description, size_t nGroups, size_t nElemsPerGroup=1)'],['../struct_chimera_t_k_1_1_read_split_array_module.html#abe971b081574222720afa6ddd1167103',1,'ChimeraTK::ReadSplitArrayModule::ReadSplitArrayModule()']]],
   ['realisticmodule',['RealisticModule',['../struct_realistic_module.html#abb6e099b4c8759365f0bf6b7c60ddc6f',1,'RealisticModule']]],
-  ['recoveryhelper',['RecoveryHelper',['../struct_chimera_t_k_1_1_recovery_helper.html#a7ed4a1f619cf1adde5afd1824091487d',1,'ChimeraTK::RecoveryHelper']]],
+  ['recoveryhelper',['RecoveryHelper',['../struct_chimera_t_k_1_1_recovery_helper.html#af07d7a8033b29d8fae131632acd96101',1,'ChimeraTK::RecoveryHelper']]],
   ['registeraccessor',['registerAccessor',['../class_chimera_t_k_1_1_entity_owner.html#a260d2a06bf851b4b685ae498cf5a2237',1,'ChimeraTK::EntityOwner']]],
   ['registerdevicemodule',['registerDeviceModule',['../class_chimera_t_k_1_1_application.html#a8004bc7d4305468a5497e278f2af7203',1,'ChimeraTK::Application']]],
   ['registermodule',['registerModule',['../class_chimera_t_k_1_1_entity_owner.html#a9690d4ae29d8a9e05d34feed82533e94',1,'ChimeraTK::EntityOwner']]],

@@ -346,6 +346,9 @@ back") and <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:aab0d646f1a4050a8537ab53ee768e09a"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:aab0d646f1a4050a8537ab53ee768e09a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aab0d646f1a4050a8537ab53ee768e09a">ConsumerImplementationPairs</a> = std::list&lt; std::pair&lt; boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &gt; &gt;</td></tr>
+<tr class="separator:aab0d646f1a4050a8537ab53ee768e09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15aa45033d451f2fec1c6f036215b389"><td class="memItemLeft" align="right" valign="top">typedef boost::fusion::map&lt; boost::fusion::pair&lt; int8_t, int8_t &gt;, boost::fusion::pair&lt; uint8_t, uint8_t &gt;, boost::fusion::pair&lt; int16_t, int16_t &gt;, boost::fusion::pair&lt; uint16_t, uint16_t &gt;, boost::fusion::pair&lt; int32_t, int32_t &gt;, boost::fusion::pair&lt; uint32_t, uint32_t &gt;, boost::fusion::pair&lt; float, float &gt;, boost::fusion::pair&lt; double, double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a15aa45033d451f2fec1c6f036215b389">ApplicationCoreUserTypeMap</a></td></tr>
 <tr class="memdesc:a15aa45033d451f2fec1c6f036215b389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of UserType to value of the UserType.  <a href="#a15aa45033d451f2fec1c6f036215b389">More...</a><br /></td></tr>
 <tr class="separator:a15aa45033d451f2fec1c6f036215b389"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -416,6 +419,9 @@ Functions</h2></td></tr>
 <tr class="separator:a708ff6d4b362ef1285e62e2954ff804f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6887c8265880c0ad941addf2ac52784e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a6887c8265880c0ad941addf2ac52784e">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_micro_d_a_q.html">MicroDAQ</a>)</td></tr>
 <tr class="separator:a6887c8265880c0ad941addf2ac52784e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d6fe6905267734b8ef9ce293fe93ba"><td class="memTemplParams" colspan="2">template&lt;typename Callable &gt; </td></tr>
+<tr class="memitem:ac5d6fe6905267734b8ef9ce293fe93ba"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ac5d6fe6905267734b8ef9ce293fe93ba">genericWriteWrapper</a> (Callable writeFunction, VersionNumber versionNumber)</td></tr>
+<tr class="separator:ac5d6fe6905267734b8ef9ce293fe93ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2922a31cfc160510cb2317d67353661e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a2922a31cfc160510cb2317d67353661e">INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES</a> (<a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html">ExceptionHandlingDecorator</a>)</td></tr>
 <tr class="separator:a2922a31cfc160510cb2317d67353661e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -454,6 +460,24 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_config_reader_8cc_source.html#l00032">32</a> of file <a class="el" href="_config_reader_8cc_source.html">ConfigReader.cc</a>.</p>
+
+</div>
+</div>
+<a id="aab0d646f1a4050a8537ab53ee768e09a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab0d646f1a4050a8537ab53ee768e09a">&#9670;&nbsp;</a></span>ConsumerImplementationPairs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_chimera_t_k.html#aab0d646f1a4050a8537ab53ee768e09a">ChimeraTK::ConsumerImplementationPairs</a> = typedef std::list&lt;std::pair&lt;boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;UserType&gt; &gt;, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a>&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00020">20</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
 
 </div>
 </div>
@@ -761,6 +785,44 @@ template&lt;&gt; </div>
 
 </div>
 </div>
+<a id="ac5d6fe6905267734b8ef9ce293fe93ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5d6fe6905267734b8ef9ce293fe93ba">&#9670;&nbsp;</a></span>genericWriteWrapper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Callable &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::genericWriteWrapper </td>
+          <td>(</td>
+          <td class="paramtype">Callable&#160;</td>
+          <td class="paramname"><em>writeFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VersionNumber&#160;</td>
+          <td class="paramname"><em>versionNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_ac5d6fe6905267734b8ef9ce293fe93ba_icgraph.svg" width="580" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a2922a31cfc160510cb2317d67353661e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2922a31cfc160510cb2317d67353661e">&#9670;&nbsp;</a></span>INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES() <span class="overload">[1/2]</span></h2>
 
@@ -794,11 +856,11 @@ template&lt;&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_a6887c8265880c0ad941addf2ac52784e_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -811,7 +873,7 @@ template&lt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li>
-    <li class="footer">Generated on Thu Jul 2 2020 03:54:15 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Jul 3 2020 03:53:38 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

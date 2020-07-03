@@ -1,7 +1,7 @@
 var searchData=
 [
   ['var',['Var',['../struct_chimera_t_k_1_1_config_reader_1_1_var.html',1,'ChimeraTK::ConfigReader']]],
-  ['vargroup',['VarGroup',['../struct_second_hierarchy_1_1_test_module_1_1_eliminated_group_1_1_var_group.html',1,'SecondHierarchy::TestModule::EliminatedGroup::VarGroup'],['../struct_second_hierarchy_1_1_test_module_1_1_var_group.html',1,'SecondHierarchy::TestModule::VarGroup'],['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html',1,'FirstHierarchy::TestModule::VarGroup']]],
+  ['vargroup',['VarGroup',['../struct_second_hierarchy_1_1_test_module_1_1_var_group.html',1,'SecondHierarchy::TestModule::VarGroup'],['../struct_second_hierarchy_1_1_test_module_1_1_eliminated_group_1_1_var_group.html',1,'SecondHierarchy::TestModule::EliminatedGroup::VarGroup'],['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html',1,'FirstHierarchy::TestModule::VarGroup']]],
   ['variable',['Variable',['../struct_chimera_t_k_1_1_variable.html',1,'ChimeraTK']]],
   ['variabledirection',['VariableDirection',['../struct_chimera_t_k_1_1_variable_direction.html',1,'ChimeraTK']]],
   ['variablegroup',['VariableGroup',['../class_chimera_t_k_1_1_variable_group.html',1,'ChimeraTK']]],
