@@ -19,7 +19,7 @@ var searchData=
   ['parserxserverhello',['parseRxServerHello',['../namespace_chimera_t_k.html#a6488bea8863c6fe508989798b7721604',1,'ChimeraTK']]],
   ['parsesdm',['parseSdm',['../class_chimera_t_k_1_1_utilities.html#ace367e0ec915d679ec541c10d19185b6',1,'ChimeraTK::Utilities']]],
   ['parsingerror',['parsingError',['../class_chimera_t_k_1_1_logical_name_map_parser.html#ab77f9b049edc5f2c4dd465a2b3c6ba62',1,'ChimeraTK::LogicalNameMapParser']]],
-  ['path',['path',['../class_chimera_t_k_1_1_register_path.html#a44e4fd08b7637ad39b0e01e0437f286c',1,'ChimeraTK::RegisterPath']]],
+  ['path',['path',['../class_chimera_t_k_1_1_register_path.html#a44e4fd08b7637ad39b0e01e0437f286c',1,'ChimeraTK::RegisterPath::path()'],['../struct_reg_edummy_int32.html#a68d0c93bb4060ddb892d04d74af59c63',1,'RegEdummyInt32::path()'],['../struct_integers__signed32.html#ae779ee3a14af2462888bf4d5b1f34444',1,'Integers_signed32::path()']]],
   ['pcie_5fdevice',['PCIE_DEVICE',['../test_pcie_backend_8cpp.html#a666a688be4897906a5a2e1ad2b6aec78',1,'testPcieBackend.cpp']]],
   ['pcie_5funi_5fdevice',['PCIE_UNI_DEVICE',['../test_pcie_backend_8cpp.html#af69c2520925974915f2141865a990cfc',1,'testPcieBackend.cpp']]],
   ['pciebackend',['PcieBackend',['../class_chimera_t_k_1_1_pcie_backend.html',1,'ChimeraTK::PcieBackend'],['../class_chimera_t_k_1_1_pcie_backend.html#a022a91507cffa2e451267d123f58361f',1,'ChimeraTK::PcieBackend::PcieBackend()']]],

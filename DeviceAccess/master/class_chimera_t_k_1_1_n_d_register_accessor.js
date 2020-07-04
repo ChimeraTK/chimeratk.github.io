@@ -3,6 +3,8 @@ var class_chimera_t_k_1_1_n_d_register_accessor =
     [ "NDRegisterAccessor", "class_chimera_t_k_1_1_n_d_register_accessor.html#a26aa0043b2e832914f208dbe14b9df78", null ],
     [ "accessChannel", "class_chimera_t_k_1_1_n_d_register_accessor.html#ae7320f8139ee7b794743bd4e203fbb12", null ],
     [ "accessChannel", "class_chimera_t_k_1_1_n_d_register_accessor.html#a13367dc5d632a5b57de5ef94a9a00ac1", null ],
+    [ "accessChannels", "class_chimera_t_k_1_1_n_d_register_accessor.html#a1e003b9b5804cf2d3b5d2631212ea79f", null ],
+    [ "accessChannels", "class_chimera_t_k_1_1_n_d_register_accessor.html#ae42e7bea34874ad367b7011b783cb4b3", null ],
     [ "accessData", "class_chimera_t_k_1_1_n_d_register_accessor.html#ae07a53bd251a3c65105f70a05ef3ffd0", null ],
     [ "accessData", "class_chimera_t_k_1_1_n_d_register_accessor.html#a3552a259cae510a3f25b9d942bb1034f", null ],
     [ "accessData", "class_chimera_t_k_1_1_n_d_register_accessor.html#a7199e39d27e7d3a32b92188526a11218", null ],

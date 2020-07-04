@@ -11,7 +11,7 @@ var searchData=
   ['_7edummybackend',['~DummyBackend',['../class_chimera_t_k_1_1_dummy_backend.html#a212f26735d4b2f69dec5bf54cd17b469',1,'ChimeraTK::DummyBackend']]],
   ['_7edummyprotocolimplementor',['~DummyProtocolImplementor',['../struct_dummy_protocol_implementor.html#aa8cc5b73e31d4e73b04356e66992d9e6',1,'DummyProtocolImplementor']]],
   ['_7eexamplebackend',['~ExampleBackend',['../class_example_backend.html#a548c46b38a7a6617ac602a1b34e5720f',1,'ExampleBackend']]],
-  ['_7eexceptionreportingbackend',['~ExceptionReportingBackend',['../struct_unified_backend_test_1_1_exception_reporting_backend.html#a2c428bfb8509d4338d40b6945c66800b',1,'UnifiedBackendTest::ExceptionReportingBackend']]],
+  ['_7eexceptionreportingbackend',['~ExceptionReportingBackend',['../struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#adaabe731e3cf38b09f08a613f3d9c114',1,'ChimeraTK::UnifiedBackendTest::ExceptionReportingBackend']]],
   ['_7ef',['~F',['../struct_f.html#a3eb03ed8921a8a364ada9e7dbc174e07',1,'F']]],
   ['_7elogicalnamemappingbackend',['~LogicalNameMappingBackend',['../class_chimera_t_k_1_1_logical_name_mapping_backend.html#aca8a90331ac46ea8e8afdfcd467fca01',1,'ChimeraTK::LogicalNameMappingBackend']]],
   ['_7enotification',['~Notification',['../class_chimera_t_k_1_1_read_any_group_1_1_notification.html#a949d73dd42d92eb82c81e8413933a030',1,'ChimeraTK::ReadAnyGroup::Notification']]],

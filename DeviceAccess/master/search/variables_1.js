@@ -1,10 +1,9 @@
 var searchData=
 [
+  ['acc',['acc',['../struct_reg_edummy_int32.html#a42e18650b2b9289f80e3a01b9d04d86b',1,'RegEdummyInt32::acc()'],['../struct_integers__signed32.html#a752f586bffff465d1fb0bbd81b2b87fa',1,'Integers_signed32::acc()']]],
   ['accept_5fnew_5fcommand',['ACCEPT_NEW_COMMAND',['../class_chimera_t_k_1_1_rebot_dummy_session.html#a70db0d9091d19b938e6f1f5756579ced',1,'ChimeraTK::RebotDummySession']]],
   ['accessor',['accessor',['../class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html#aeeaf05b000058d15f908baddb7ea8be8',1,'ChimeraTK::RegisterAccessor::AccessorHandler::accessor()'],['../struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html#ab02d3197104c985b854b26ddafbfadc7',1,'ChimeraTK::LogicalNameMappingBackend::SharedAccessor::accessor()']]],
   ['active',['active',['../class_test_dummy.html#aa5067318f24c35303b5316d122b8f362',1,'TestDummy']]],
   ['address',['address',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a4c5816665d4b2efe2a1609b15b38524e',1,'ChimeraTK::RegisterInfoMap::RegisterInfo::address()'],['../struct_chimera_t_k_1_1_device_descriptor.html#abb8149f71839abaad25c671b3ef70688',1,'ChimeraTK::DeviceDescriptor::address()']]],
-  ['addressinwords',['addressInWords',['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#ac3df6436518ace3a5d09ec50f48924af',1,'ChimeraTK::RebotProtocol0::RegisterInfo']]],
-  ['allregisters',['allRegisters',['../class_unified_backend_test.html#ae4d88e102c47587c58a775c57eef390b',1,'UnifiedBackendTest']]],
-  ['asyncreadregisters',['asyncReadRegisters',['../class_unified_backend_test.html#a9456ebc04a0a7c0a0fc0f6b17e9a200a',1,'UnifiedBackendTest']]]
+  ['addressinwords',['addressInWords',['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#ac3df6436518ace3a5d09ec50f48924af',1,'ChimeraTK::RebotProtocol0::RegisterInfo']]]
 ];

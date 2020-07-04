@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['rawusertype',['rawUserType',['../struct_reg_edummy_int32.html#ac25372a13be4648aefd29061b910922a',1,'RegEdummyInt32::rawUserType()'],['../struct_integers__signed32.html#a98141081669e59b9ee52f7a0edd441d9',1,'Integers_signed32::rawUserType()']]],
   ['registeraccessor',['RegisterAccessor',['../class_chimera_t_k_1_1_device.html#ad49ec7cc7fa3d57fad993363005b727a',1,'ChimeraTK::Device']]],
   ['registerinfomappointer',['RegisterInfoMapPointer',['../namespace_chimera_t_k.html#a7b983744ce153647b8fa3c6552de8b0d',1,'ChimeraTK']]],
   ['result_5ftype',['result_type',['../structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html#aeb6f43791b6e596dcdcdf8d809b591b6',1,'std::less&lt; ChimeraTK::TransferElementID &gt;']]],

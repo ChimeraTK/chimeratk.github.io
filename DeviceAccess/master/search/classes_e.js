@@ -12,6 +12,7 @@ var searchData=
   ['rebotsleepsynchroniser',['RebotSleepSynchroniser',['../struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html',1,'ChimeraTK']]],
   ['rebottestableclock',['RebotTestableClock',['../class_chimera_t_k_1_1_rebot_testable_clock.html',1,'ChimeraTK']]],
   ['rebottestclass',['RebotTestClass',['../class_rebot_test_class.html',1,'']]],
+  ['regedummyint32',['RegEdummyInt32',['../struct_reg_edummy_int32.html',1,'']]],
   ['registeraccessor',['RegisterAccessor',['../class_chimera_t_k_1_1_register_accessor.html',1,'ChimeraTK']]],
   ['registercatalogue',['RegisterCatalogue',['../class_chimera_t_k_1_1_register_catalogue.html',1,'ChimeraTK']]],
   ['registercataloguetest',['RegisterCatalogueTest',['../class_register_catalogue_test.html',1,'']]],
