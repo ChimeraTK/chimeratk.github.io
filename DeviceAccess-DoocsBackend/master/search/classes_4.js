@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['zmqsubscriptionmanager',['ZMQSubscriptionManager',['../class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html',1,'ChimeraTK::DoocsBackendNamespace']]]
+  ['eq_5fdummy',['eq_dummy',['../classeq__dummy.html',1,'']]],
+  ['eventidmapper',['EventIdMapper',['../class_event_id_mapper.html',1,'']]]
 ];

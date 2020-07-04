@@ -1,6 +1,7 @@
 var searchData=
 [
   ['generatecachefile',['generateCacheFile',['../test_caching_8cpp.html#a65ea264a0eb080858b1511a1f457387c',1,'testCaching.cpp']]],
+  ['generatevalue',['generateValue',['../struct_scalar_defaults.html#ab5e23ac219712c834efcb03bdde6e0ae',1,'ScalarDefaults::generateValue()'],['../struct_array_defaults.html#a924a0ed230e23e18b9da8d1dc4248f17',1,'ArrayDefaults::generateValue()'],['../struct_reg_some_string.html#a059e999f489487eeb0a8e5a254c00752',1,'RegSomeString::generateValue()'],['../struct_reg_some_bit.html#a86489bbb13e4f836447105fc451613ff',1,'RegSomeBit::generateValue()']]],
   ['getdatadescriptor',['getDataDescriptor',['../class_doocs_backend_register_info.html#a8a1c08683741ee10610f61fdd21637ee',1,'DoocsBackendRegisterInfo']]],
   ['gethardwareaccessingelements',['getHardwareAccessingElements',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#afaa016b39be620cbef56b5f350a91ac3',1,'ChimeraTK::DoocsBackendRegisterAccessor']]],
   ['getinstance',['getInstance',['../class_event_id_mapper.html#a54068de28837dd4be46b4b147e5f583a',1,'EventIdMapper::getInstance()'],['../class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#ae8d8452b5bf527ab0a52a51f10ddc1b6',1,'ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager::getInstance()']]],
@@ -11,7 +12,7 @@ var searchData=
   ['getregisteraccessor_5fimpl',['getRegisterAccessor_impl',['../class_chimera_t_k_1_1_doocs_backend.html#ad275a7a9e412614591512f7aafab19c6',1,'ChimeraTK::DoocsBackend']]],
   ['getregistercatalogue',['getRegisterCatalogue',['../class_chimera_t_k_1_1_doocs_backend.html#a706cd10e5a07e138fcf56db804cf8957',1,'ChimeraTK::DoocsBackend']]],
   ['getregistername',['getRegisterName',['../class_doocs_backend_register_info.html#a76873fb8a36585d82b670f0d701f85de',1,'DoocsBackendRegisterInfo']]],
-  ['getremotevalue',['getRemoteValue',['../test_unified_backend_test_8cpp.html#af96573d0c29ddac229dabb0a437395ec',1,'testUnifiedBackendTest.cpp']]],
+  ['getremotevalue',['getRemoteValue',['../struct_scalar_defaults.html#a36a02f73645ff51525f2246d3ea2010e',1,'ScalarDefaults::getRemoteValue()'],['../struct_array_defaults.html#aa8b3f800169ff06903a1c05fc80f60ef',1,'ArrayDefaults::getRemoteValue()'],['../struct_reg_some_string.html#a55d36275bc531b850e5c0a2e9862b6d5',1,'RegSomeString::getRemoteValue()'],['../struct_reg_some_spectrum.html#a132eb0aa21a8944822ef9c635e6f8700',1,'RegSomeSpectrum::getRemoteValue()'],['../struct_reg_some_iiii.html#ae2565d305ec300618ff7c1b54f22fcd5',1,'RegSomeIiii::getRemoteValue()'],['../struct_reg_some_ifff___i.html#ae0898cf724bbc2c27819c757509bc545',1,'RegSomeIfff_I::getRemoteValue()'],['../struct_reg_some_ifff___f1.html#ad4116597a93af03d9aac4071ded9ef5d',1,'RegSomeIfff_F1::getRemoteValue()'],['../struct_reg_some_ifff___f2.html#aa730d16e512b7a1b74fecdf04f37cae7',1,'RegSomeIfff_F2::getRemoteValue()'],['../struct_reg_some_ifff___f3.html#ad13be03a81592e1931038cb45b8bcf89',1,'RegSomeIfff_F3::getRemoteValue()']]],
   ['getsupportedaccessmodes',['getSupportedAccessModes',['../class_doocs_backend_register_info.html#afedfa60db50085418b964cacbe3a4441',1,'DoocsBackendRegisterInfo']]],
   ['getversionforeventid',['getVersionForEventId',['../class_event_id_mapper.html#adfda73773e7e4e169664a6f288c72c5b',1,'EventIdMapper']]]
 ];
