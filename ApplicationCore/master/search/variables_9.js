@@ -29,6 +29,5 @@ var searchData=
   ['internalmodulelist',['internalModuleList',['../class_chimera_t_k_1_1_application.html#ae1832cf40aad192bd303982b2c75e13a',1,'ChimeraTK::Application']]],
   ['invalidnetwork',['invalidNetwork',['../class_chimera_t_k_1_1_application.html#afeaa79b9219a492c6d8345170b1d7f08',1,'ChimeraTK::Application']]],
   ['isholdinginitialvaluemutex',['isHoldingInitialValueMutex',['../class_chimera_t_k_1_1_device_module.html#aa17217dcf31b8743e2fabc53705e34fd',1,'ChimeraTK::DeviceModule']]],
-  ['islimited',['isLimited',['../struct_chimera_t_k_1_1_limit_value_module_base.html#a8863a5bb2bb4e37d61ad2cac8faace2e',1,'ChimeraTK::LimitValueModuleBase']]],
-  ['isnonblockingread',['isNonblockingRead',['../class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#aa31c398a0d0f145949116ff8bd28f280',1,'ChimeraTK::MetaDataPropagatingRegisterDecorator']]]
+  ['islimited',['isLimited',['../struct_chimera_t_k_1_1_limit_value_module_base.html#a8863a5bb2bb4e37d61ad2cac8faace2e',1,'ChimeraTK::LimitValueModuleBase']]]
 ];
