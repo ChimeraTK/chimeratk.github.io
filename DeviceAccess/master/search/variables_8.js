@@ -1,13 +1,12 @@
 var searchData=
 [
   ['inactive',['inactive',['../class_test_dummy.html#a264a3c4c6a5c347c9b11b9372baa4daf',1,'TestDummy']]],
+  ['increment',['increment',['../struct_reg_single_word.html#a25bdf39d905e8f6311a0249e25f83b1e',1,'RegSingleWord::increment()'],['../struct_reg_full_area.html#a64e7e4fdf34e1cdd17cfa10ad334b3d5',1,'RegFullArea::increment()'],['../struct_reg_part_of_area.html#ad15fbb10ebfe677e9b293fc0888ea8dd',1,'RegPartOfArea::increment()'],['../struct_reg_channel3.html#ae0f2c5019fc4a199767b61ff2ea8b6df',1,'RegChannel3::increment()'],['../struct_reg_channel4.html#ab7057398d7524de1f086752ba608410f',1,'RegChannel4::increment()'],['../struct_reg_channel_last.html#a9cdb4d16c2e1e73568df7f5134883ae1',1,'RegChannelLast::increment()']]],
   ['inside_5fmulti_5fword_5fwrite',['INSIDE_MULTI_WORD_WRITE',['../class_chimera_t_k_1_1_rebot_dummy_session.html#a50761d2f313200af005707faa17fe439',1,'ChimeraTK::RebotDummySession']]],
   ['instance',['instance',['../structaccess_private_data_1_1stow__private.html#ad4b82417b82e1ef582090693eccba12d',1,'accessPrivateData::stow_private']]],
   ['invalidregister',['invalidRegister',['../class_invalid_dummy_backend.html#a506812e91234c4a779f0c78f7909e3d8',1,'InvalidDummyBackend']]],
   ['ip',['ip',['../struct_rebot_server_details.html#ae88870eca060d36af1584dab13b45c86',1,'RebotServerDetails']]],
   ['is2dmultiplexed',['is2DMultiplexed',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a863192de94bed8ca4b09a3e70fa58820',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
-  ['isreadable',['isReadable',['../struct_reg_edummy_int32.html#af443a9481fa3fbd4c1e31614978f119c',1,'RegEdummyInt32::isReadable()'],['../struct_integers__signed32.html#a4e3894aea6719ad6b11ec7dbab2a2c13',1,'Integers_signed32::isReadable()']]],
   ['isshared',['isShared',['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a911732a6c2db0537be22f1e76ad59caf',1,'ChimeraTK::NumericAddressedLowLevelTransferElement']]],
-  ['iswriteable',['isWriteable',['../struct_reg_edummy_int32.html#ae03e899fc186f219da751dd1cc769272',1,'RegEdummyInt32::isWriteable()'],['../struct_integers__signed32.html#ad2c29bd0872919f0603e24a1f4984d25',1,'Integers_signed32::isWriteable()']]],
   ['iter',['iter',['../_register_info_map_8cpp.html#a524e0e5aab7cac6c78784ede6a0928cb',1,'RegisterInfoMap.cpp']]]
 ];

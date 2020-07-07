@@ -22,6 +22,7 @@ var searchData=
   ['testieee754_5fsingleconverter_2ecpp',['testIEEE754_SingleConverter.cpp',['../test_i_e_e_e754___single_converter_8cpp.html',1,'']]],
   ['testing_5fwith_5fdummy_5fbackends_2edox',['testing_with_dummy_backends.dox',['../testing__with__dummy__backends_8dox.html',1,'']]],
   ['testlmapbackend_2ecpp',['testLMapBackend.cpp',['../test_l_map_backend_8cpp.html',1,'']]],
+  ['testlmapbackendunified_2ecpp',['testLMapBackendUnified.cpp',['../test_l_map_backend_unified_8cpp.html',1,'']]],
   ['testlmapfile_2ecpp',['testLMapFile.cpp',['../test_l_map_file_8cpp.html',1,'']]],
   ['testlmapforcereadonlyplugin_2ecc',['testLMapForceReadOnlyPlugin.cc',['../test_l_map_force_read_only_plugin_8cc.html',1,'']]],
   ['testlmapmathplugin_2ecpp',['testLMapMathPlugin.cpp',['../test_l_map_math_plugin_8cpp.html',1,'']]],

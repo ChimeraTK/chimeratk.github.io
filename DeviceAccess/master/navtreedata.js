@@ -46,7 +46,7 @@ var NAVTREE =
       [ "Why can I not read SEQUENCE registers?", "q_and_a.html#use_sequences", null ]
     ] ],
     [ "Technical specification DeviceBackend", "spec__device_backend.html", null ],
-    [ "Technical specification: TransferElement V1.0RC10WIP !! Based on RC8! RC9 is not in yet !!", "spec__transfer_element.html", null ],
+    [ "Technical specification: TransferElement V1.0RC10WIP !! Based on RC9.", "spec__transfer_element.html", null ],
     [ "Testing applications using the DummyBackends", "testing_with_dummy_backends.html", [
       [ "Specifying the dummies in the device map file", "testing_with_dummy_backends.html#dmap_specify_dummies", null ],
       [ "Writeing to read-only registers", "testing_with_dummy_backends.html#dummy_backends_write_readonly", null ]
@@ -104,9 +104,9 @@ var NAVTREEINDEX =
 "class_transfer_group_test.html#a2d4958c2ecced81b4d932ae18c79d73a",
 "dir_820b2b9dd608784780e51ab49715a98b.html",
 "mtca4u__compatibility__headers_2_n_d_register_accessor_decorator_8h_source.html",
-"struct_chimera_t_k_1_1_sdm.html#a6d3d852ef3c7e789530af53c6f9252af",
-"test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35",
-"test_register_path_8cpp.html#a19823c5af9fff4070c144dacf022bf94"
+"struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html",
+"test_backend_factory_8cpp.html#a6b2a3852db8bb19ab6909bac01859985",
+"test_numeric_addressed_backend_register_accessor_8cpp.html#af8c05f1099b6e39241d27c05cac65fe4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,10 +1,8 @@
 var test_l_map_backend_8cpp =
 [
-    [ "RegEdummyInt32", "struct_reg_edummy_int32.html", "struct_reg_edummy_int32" ],
     [ "BOOST_TEST_DYN_LINK", "test_l_map_backend_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_l_map_backend_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#abac8006c8d9bd2da40a7d7c48238f48b", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#aebef3718238131ece84d964d01d8f1fa", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#aad9c2513f92e9141623b49f8c24b544b", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a51bdf98ab5c29e2143db19a7a48ab892", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#aab0d3aed5490e1763347b50efa43ff8b", null ],

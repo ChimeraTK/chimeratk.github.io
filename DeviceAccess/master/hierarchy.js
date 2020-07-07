@@ -81,8 +81,10 @@ var hierarchy =
       [ "ChimeraTK::DummyRegisterAccessor< T >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterRawAccessor", "class_chimera_t_k_1_1_dummy_register_raw_accessor.html", null ],
       [ "ChimeraTK::DummyMultiplexedRegisterAccessor< int >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
+      [ "ChimeraTK::DummyMultiplexedRegisterAccessor< minimumUserType >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< int >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
-      [ "ChimeraTK::DummyRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
+      [ "ChimeraTK::DummyRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
+      [ "ChimeraTK::DummyRegisterAccessor< minimumUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
     ] ],
     [ "ChimeraTK::proxies::DummyRegisterElement< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
       [ "ChimeraTK::DummyRegisterAccessor< T >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
@@ -93,8 +95,14 @@ var hierarchy =
     [ "ChimeraTK::proxies::DummyRegisterElement< int32_t >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
       [ "ChimeraTK::DummyRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
     ] ],
+    [ "ChimeraTK::proxies::DummyRegisterElement< minimumUserType >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
+      [ "ChimeraTK::DummyRegisterAccessor< minimumUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
+    ] ],
     [ "ChimeraTK::proxies::DummyRegisterSequence< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", null ],
     [ "DummyRegisterTest", "class_dummy_register_test.html", null ],
+    [ "enable_shared_from_this", null, [
+      [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
+    ] ],
     [ "enable_shared_from_this", null, [
       [ "ChimeraTK::DeviceBackend", "class_chimera_t_k_1_1_device_backend.html", [
         [ "ChimeraTK::DeviceBackendImpl", "class_chimera_t_k_1_1_device_backend_impl.html", [
@@ -184,9 +192,6 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "enable_shared_from_this", null, [
-      [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
-    ] ],
     [ "ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html", null ],
     [ "ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html", null ],
     [ "ChimeraTK::DeviceInfoMap::ErrorList", "class_chimera_t_k_1_1_device_info_map_1_1_error_list.html", null ],
@@ -250,10 +255,53 @@ var hierarchy =
     [ "ChimeraTK::RebotSleepSynchroniser", "struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html", null ],
     [ "ChimeraTK::RebotTestableClock", "class_chimera_t_k_1_1_rebot_testable_clock.html", null ],
     [ "RebotTestClass", "class_rebot_test_class.html", null ],
-    [ "RegEdummyInt32", "struct_reg_edummy_int32.html", null ],
     [ "ChimeraTK::RegisterAccessor", "class_chimera_t_k_1_1_register_accessor.html", null ],
     [ "ChimeraTK::RegisterCatalogue", "class_chimera_t_k_1_1_register_catalogue.html", null ],
     [ "RegisterCatalogueTest", "class_register_catalogue_test.html", null ],
+    [ "RegisterDescriptorBase< Derived >", "struct_register_descriptor_base.html", [
+      [ "ChannelRegisterDescriptorBase< Derived >", "struct_channel_register_descriptor_base.html", null ],
+      [ "ConstantRegisterDescriptorBase< Derived >", "struct_constant_register_descriptor_base.html", null ],
+      [ "OneDRegisterDescriptorBase< Derived >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< Derived >", "struct_scalar_register_descriptor_base.html", null ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegChannel3 >", "struct_register_descriptor_base.html", [
+      [ "ChannelRegisterDescriptorBase< RegChannel3 >", "struct_channel_register_descriptor_base.html", [
+        [ "RegChannel3", "struct_reg_channel3.html", null ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegChannel4 >", "struct_register_descriptor_base.html", [
+      [ "ChannelRegisterDescriptorBase< RegChannel4 >", "struct_channel_register_descriptor_base.html", [
+        [ "RegChannel4", "struct_reg_channel4.html", null ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegChannelLast >", "struct_register_descriptor_base.html", [
+      [ "ChannelRegisterDescriptorBase< RegChannelLast >", "struct_channel_register_descriptor_base.html", [
+        [ "RegChannelLast", "struct_reg_channel_last.html", null ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegConstant >", "struct_register_descriptor_base.html", [
+      [ "ConstantRegisterDescriptorBase< RegConstant >", "struct_constant_register_descriptor_base.html", [
+        [ "RegConstant", "struct_reg_constant.html", null ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegFullArea >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegFullArea >", "struct_one_d_register_descriptor_base.html", [
+        [ "RegFullArea", "struct_reg_full_area.html", null ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegPartOfArea >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegPartOfArea >", "struct_one_d_register_descriptor_base.html", [
+        [ "RegPartOfArea", "struct_reg_part_of_area.html", null ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegSingleWord >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegSingleWord >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegSingleWord >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegSingleWord", "struct_reg_single_word.html", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "ChimeraTK::RegisterInfo", "class_chimera_t_k_1_1_register_info.html", [
       [ "ChimeraTK::LNMBackendRegisterInfo", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html", null ],
       [ "ChimeraTK::RegisterInfoMap::RegisterInfo", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html", null ],
@@ -311,8 +359,8 @@ var hierarchy =
     [ "ChimeraTK::Utilities", "class_chimera_t_k_1_1_utilities.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
-    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
+    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
     [ "ChimeraTK::VersionNumber", "class_chimera_t_k_1_1_version_number.html", null ],
     [ "VersionNumberTest", "class_version_number_test.html", null ]
 ];

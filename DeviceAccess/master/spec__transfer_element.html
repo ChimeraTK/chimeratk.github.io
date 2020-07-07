@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.0RC10WIP !! Based on RC8! RC9 is not in yet !!</title>
+<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.0RC10WIP !! Based on RC9.</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,7 +82,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Technical specification: <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> V1.0RC10WIP !! Based on RC8! RC9 is not in yet !! </div>  </div>
+<div class="title">Technical specification: <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> V1.0RC10WIP !! Based on RC9. </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><blockquote class="doxtable">
@@ -221,6 +221,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li><a class="anchor" id="transferElement_B_3_2_2_2"></a>3.2.2.2 Applications are not allowed to use the content of the application buffer after writeDestructively().<a class="el" href="spec__transfer_element.html#transferElement_comment_B_3_2_2_2">(*)</a></li>
 </ul>
 </li>
+<li>3.2.3 return whether previous data has been lost, as reported by writeTransfer()/writeTransferDestructively() (c.f. <a class="el" href="spec__transfer_element.html#transferElement_B_7_2">7.2</a>).</li>
 </ul>
 </li>
 </ul>
@@ -270,9 +271,10 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </li>
 <li>8. Read operations with <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a>:<ul>
 <li>8.1 Since the transfer is initiated by the device side in this case, the transfer is asynchronous to the read operation.</li>
-<li><a class="anchor" id="transferElement_B_8_2"></a>8.2 The backend fills any received values into the <a class="el" href="spec__transfer_element.html#transferElement_A_8_2">implementation-specific data transport queue</a>, from which the read()/readNonBlocking() operations will obtain the value. [<a class="el" href="test_transfer_element_8cpp.html#testTransferElement_B_8_2">T</a>, <a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_B_8_2">U</a>]<ul>
+<li><a class="anchor" id="transferElement_B_8_2"></a>8.2 The backend fills any received values into the <a class="el" href="spec__transfer_element.html#transferElement_A_8_2">implementation-specific data transport queue</a>, from which the readTransfer()/readTransferNonBlocking() operations will obtain the value (via the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab824c85c63163e76ccda588ef4768f68" title="The queue for asyncronous read transfers. ">TransferElement::_readQueue</a> continuation). [<a class="el" href="test_transfer_element_8cpp.html#testTransferElement_B_8_2">T</a>, <a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_B_8_2">U</a>]<ul>
 <li><a class="anchor" id="transferElement_B_8_2_1"></a>8.2.1 If the queue is full, the last written value will be overwritten. [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_B_8_2_1">U</a> (STILL INCOMPLETE)]</li>
 <li><a class="anchor" id="transferElement_B_8_2_2"></a>8.2.2 The backend may fill a ChimeraTK::detail::DiscardValueException to the queue, which has the same effect on the application side as if no entry was filled to the queue. (*) [<a class="el" href="test_transfer_element_8cpp.html#testTransferElement_B_8_2_2">T</a>]</li>
+<li>8.2.3 The continuation of the <a class="el" href="spec__transfer_element.html#transferElement_A_8_2">implementation-specific data transport queue</a> stores the value so it is available in doPostRead(), where it is filled into the application buffer.</li>
 </ul>
 </li>
 <li><a class="anchor" id="transferElement_B_8_3"></a>8.3 Runtime errors like broken connections are reported by the backend by pushing <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> exceptions into the queue. The exception will then be obtained by the read operation in place of a value. [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_B_8_3">U</a> (first sentence), <a class="el" href="test_transfer_element_8cpp.html#testTransferElement_B_8_3">T</a> (second sentence)]</li>
@@ -442,38 +444,38 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>3.3 doPreXxx(), if the information returned by the functions in 3.2 is not yet available and needs to be determined from the running device.</li>
 </ul>
 </li>
-<li>4. boost::numeric::bad_numeric_cast may only be thrown in<ul>
+<li><a class="anchor" id="transferElement_C_4"></a>4. boost::numeric::bad_numeric_cast may only be thrown in<ul>
 <li>4.1 <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd" title="Backend specific implementation of preWrite(). ">TransferElement::doPreWrite()</a></li>
 <li>4.2 <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7" title="Backend specific implementation of postRead(). ">TransferElement::doPostRead()</a>, but only if updateDataBuffer == true</li>
-<li>4.3 This exception can in principle be avoided by chosing a user data type that can fit the data without overflow when reading, or small enough so the process variable can hold the data without overflow when writing. New implementations should not throw this exception. Instead a check should be done in the constructor and a <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> should be thrown (see 5.2.4) (*).</li>
+<li>4.3 This exception can in principle be avoided by chosing a user data type that can fit the data without overflow when reading, or small enough so the process variable can hold the data without overflow when writing. New implementations should not throw this exception. Instead a check should be done in the constructor and a <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> should be thrown (see 5.2.4).</li>
 </ul>
 </li>
 <li>5. <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> must follow strict conditions. It is thrown, if the application (including its configuration files) does not behave as expected.<ul>
 <li>5.1 logic_errors must be deterministic. They must always be avoidable by calling the corresponding test functions before executing a potentially failing action (*), and must occur if the logical condition is not fulfilled and the function is called anyway.</li>
-<li>5.2 Any <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">logic_error</a> must be thrown as early as possible(*). They are thrown <b>if and only if</b> one of the following conditions are met:<ul>
+<li><a class="anchor" id="transferElement_C_5_2"></a>5.2 Any <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">logic_error</a> must be thrown as early as possible <a class="el" href="spec__transfer_element.html#transferElement_comment_C_5_2">(*)</a>. They are thrown <b>if and only if</b> one of the following conditions are met:<ul>
 <li>5.2.1 A register does not exists my that name<ul>
-<li>5.2.1.1 Can be checked in the catalogue (*)</li>
-<li><a class="anchor" id="transferElement_C_5_2_1_2"></a>5.2.1.2 Thrown in the constructor if possible (*), otherwise in doPreXxx(), isReadable(), isWriteable() and isReadOnly(). [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_C_5_2_1_2">U</a>]</li>
+<li><a class="anchor" id="transferElement_C_5_2_1_1"></a>5.2.1.1 Can be checked in the catalogue <a class="el" href="spec__transfer_element.html#transferElement_comment_C_5_2_1_1">(*)</a></li>
+<li><a class="anchor" id="transferElement_C_5_2_1_2"></a>5.2.1.2 Thrown in the constructor. [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_C_5_2_1_2">U</a>]</li>
 </ul>
 </li>
-<li>5.2.2 The size or dimension of the requested <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> is too large (*)<ul>
+<li><a class="anchor" id="transferElement_C_5_2_2"></a>5.2.2 The size or dimension of the requested <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> is too large <a class="el" href="spec__transfer_element.html#transferElement_comment_C_5_2_2">(*)</a><ul>
 <li>5.2.2.1 Can be checked in the catalogue.</li>
-<li><a class="anchor" id="transferElement_C_5_2_2_2"></a>5.2.2.2 Thrown in the constructor if possible, otherwise in doPreXxx(). [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_C_5_2_2_2">U</a>]</li>
+<li><a class="anchor" id="transferElement_C_5_2_2_2"></a>5.2.2.2 Thrown in the constructor. [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_C_5_2_2_2">U</a>]</li>
 </ul>
 </li>
 <li>5.2.3 The wrong AccessMode flags are provided<ul>
 <li>5.2.3.1 Can be checked in the catalogue.</li>
-<li><a class="anchor" id="transferElement_C_5_2_3_2"></a>5.2.3.2 Thrown in the constructor if possible, otherwise in doPreXxx(), isReadable(), isWriteable() and isReadOnly(). [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_C_5_2_3_2">U</a>]</li>
+<li><a class="anchor" id="transferElement_C_5_2_3_2"></a>5.2.3.2 Thrown in the constructor. [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_C_5_2_3_2">U</a>]</li>
 </ul>
 </li>
-<li>5.2.4 The requested user data type is too small to hold the data without range overflow when reading, or too big when writing (*)<ul>
+<li><a class="anchor" id="transferElement_C_5_2_4"></a>5.2.4 The requested user data type is too small to hold the data without range overflow when reading <a class="el" href="spec__transfer_element.html#transferElement_comment_C_5_2_4">(*)</a>.<ul>
 <li>5.2.4.1 ToDo: cannot be checked in the catalogue to a sufficient degree</li>
-<li>5.2.4.2 Thrown in the constructor if possible, otherwise in doPreXxx()</li>
+<li>5.2.4.2 Thrown in the constructor.</li>
 </ul>
 </li>
 <li>5.2.5 A read/write operation is started while the backend is still closed<ul>
 <li>5.2.5.1 Check with <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a877f0db7d0c63becf2bd8b8fb0955e60" title="Return whether a device has been opened or not. ">DeviceBackend::isOpen()</a>.</li>
-<li><a class="anchor" id="transferElement_C_5_2_5_2"></a>5.2.5.2 Thrown in doPreXxx() (*) [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_C_5_2_5_2">U</a>]</li>
+<li><a class="anchor" id="transferElement_C_5_2_5_2"></a>5.2.5.2 Thrown in doPreXxx() <a class="el" href="spec__transfer_element.html#transferElement_comment_C_5_2_5_2">(*)</a>. [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_C_5_2_5_2">U</a>]</li>
 </ul>
 </li>
 <li>5.2.6 A read operation is executed on a transfer element that cannot be read<ul>
@@ -492,9 +494,8 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li><a class="anchor" id="transferElement_C_5_3_1"></a>5.3.1 If a device is changing this information on its own (e.g. makes a register read-only which was readable before), and the application hence performes an operation which is no longer possible, a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> must be thrown (unexpected behaviour of the device). <a class="el" href="spec__transfer_element.html#transferElement_comment_C_5_3_1">(*)</a></li>
 </ul>
 </li>
-<li>5.4 Two remarks about how to follow these rules:<ul>
+<li>5.4 Remarks about how to follow these rules:<ul>
 <li>5.4.1 If there is an error in the map file and the backend does not want to fail on this in backend creation, the register must be hidden from the catalogue.</li>
-<li>5.4.2 isReadable(), isWriteable() and isReadOnly() might have to check for the existance of the register from a running backend (in case there is no map file). This implies that these calls may throw <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> and <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> exceptions.</li>
 </ul>
 </li>
 </ul>
@@ -506,14 +507,12 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li><a class="anchor" id="transferElement_comment_C_2_3a"></a><a class="el" href="spec__transfer_element.html#transferElement_C_2_3">2.3</a> It is important that after calling the target's setActiveException(), the decorator has a nullptr in its _activeException. This is for instance required if the target is the ApplicationCore::ExceptionHandlingDecorator. It suppresses the exception and then the outer layers must not throw any more.</li>
 <li><a class="anchor" id="transferElement_comment_C_2_3b"></a><a class="el" href="spec__transfer_element.html#transferElement_C_2_3">2.3</a> Notice that if both the decorator and the target <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> have an active exception, the exception in the target is replaced. This is intentional. It can only happen if the same low level <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> is used by several high level elements in a <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a>. In this case the tranfer had not been executed because the high level elements had already seen the exception in preXxx, and the exception in the target can only be the exception which had been put in by another high level element in its doPostXxx, and thus has already been thrown.</li>
 <li><a class="anchor" id="transferElement_comment_C_2_3c"></a><a class="el" href="spec__transfer_element.html#transferElement_C_2_3">2.3</a> This behaviour is implemented in doPostXxx() of the <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html" title="Base class for decorators of the NDRegisterAccessor. ">NDRegisterAccessorDecorator</a> base class, which is usually called by decorator implementations.</li>
-<li>4.3 If there is no map file or such, the information about the target data types must be deretmined from the device. This cannot be done in the constructor if the backend is still closed. In this case the overflow check can happen at runtime and result in a boost::numeric::bad_numeric_cast.</li>
 <li>5.1 Test functions do not yet exist for everything. This needs to be changed!</li>
-<li>5.2 Especially no <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">logic_error</a> must be thrown in doXxxTransferYyy() or doPostXxx(). All tests for logical consistency must be done in doPreXxx() latest.</li>
-<li>5.2.1.1 It is legal to provide "hidden" registers not present in the catalogue, but a register listed in the catalogue must always work.</li>
-<li>5.2.1.2 If a backend cannot decide the existence of a register in the accessor's constructor (because there is no map file or such, and the backend might be closed), it needs to check the presence later. If the information is available in the constructor, the check has to be done there.</li>
-<li>5.2.2 This also includes that the offset in a one dimensional case is so large that there are not enough elements left to provide the requested data.</li>
-<li>5.2.4 Some backends currenty throw a boost::numeric::bad_numeric_cast instead as described in 5.</li>
-<li>5.2.5.2 The generic tests if a backend is opened, or if an accessor readable or writeable are intentionally not implemented in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> because they would invovle additional virtual function calls. To avoid these each implementation has to implement the checks in doPreXxx().</li>
+<li><a class="anchor" id="transferElement_comment_C_5_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2">5.2</a> Especially no <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">logic_error</a> must be thrown in doXxxTransferYyy() or doPostXxx(). All tests for logical consistency must be done in doPreXxx() latest.</li>
+<li><a class="anchor" id="transferElement_comment_C_5_2_1_1"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_1_1">5.2.1.1</a> It is legal to provide "hidden" registers not present in the catalogue, but a register listed in the catalogue must always work.</li>
+<li><a class="anchor" id="transferElement_comment_C_5_2_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_2">5.2.2</a> This also includes that the offset in a one dimensional case is so large that there are not enough elements left to provide the requested data.</li>
+<li><a class="anchor" id="transferElement_comment_C_5_2_4"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_4">5.2.4</a> Some backends currenty throw a boost::numeric::bad_numeric_cast instead as described in <a class="el" href="spec__transfer_element.html#transferElement_C_4">4</a>.</li>
+<li><a class="anchor" id="transferElement_comment_C_5_2_5_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_5_2">5.2.5.2</a> The generic tests if a backend is opened, or if an accessor readable or writeable are intentionally not implemented in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> because they would invovle additional virtual function calls. To avoid these each implementation has to implement the checks in doPreXxx().</li>
 <li><a class="anchor" id="transferElement_comment_C_5_3_1"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_3_1">5.3.1</a> To recover from the <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a>, the application must call open(). At that point, the information is allowed to be changed. If the application fails to recheck the information, a retry of the failed operation will result in a <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a>. This behaviour follows the requirement to throw logic_errors only in doPreXxx(): if during a transfer the backend discovers that the operation is no longer allowed, a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> must be thrown.</li>
 </ul>
 <h2>D. Requirements for full implementations (e.g. in backends)</h2>
@@ -569,7 +568,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jul 4 2020 03:53:11 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue Jul 7 2020 03:53:14 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

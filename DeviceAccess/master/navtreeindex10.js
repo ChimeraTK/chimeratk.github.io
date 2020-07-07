@@ -117,6 +117,12 @@ var NAVTREEINDEX10 =
 "struct_argument.html#a36da86ea8486edfce1577578acf192eb":[17,0,6,2],
 "struct_argument.html#a38d7336f4f6d7a336a2392f2dc981e6d":[17,0,6,1],
 "struct_argument.html#aa5251ed60ee59544dfddc78043e7d1da":[17,0,6,0],
+"struct_channel_register_descriptor_base.html":[17,0,10],
+"struct_channel_register_descriptor_base.html#a162fc9fa9b333896b4effe0ae8ff22ae":[17,0,10,1],
+"struct_channel_register_descriptor_base.html#a1b2bbef72edf9ae9739ed3ceab98518f":[17,0,10,3],
+"struct_channel_register_descriptor_base.html#a20f832241c202a06d99672e0ab186d53":[17,0,10,4],
+"struct_channel_register_descriptor_base.html#a5907c1d87248990741e1ae16ed092e42":[17,0,10,0],
+"struct_channel_register_descriptor_base.html#a8925d9bf44be7f9850b68cef4b515c15":[17,0,10,2],
 "struct_chimera_t_k_1_1_copy_register_decorator.html":[17,0,1,10],
 "struct_chimera_t_k_1_1_copy_register_decorator.html#a3862add181c233c1f80365008e87a57d":[17,0,1,10,1],
 "struct_chimera_t_k_1_1_copy_register_decorator.html#a762babb29356600d740f549482d50c68":[17,0,1,10,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX10 =
 "struct_chimera_t_k_1_1_rebot_protocol_implementor.html#ac15da0b374255604714fadadae6f6503":[17,0,1,67,1],
 "struct_chimera_t_k_1_1_rebot_protocol_implementor.html#ac4030b951719c735490c6347e60d5b14":[17,0,1,67,0],
 "struct_chimera_t_k_1_1_rebot_protocol_implementor.html#af92af6259adc2803d150982ca153a1cc":[17,0,1,67,2],
-"struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html":[17,0,1,68],
-"struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html":[17,0,1,75],
-"struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html#a2072f86b97126bfab990a09bb5d2dde1":[17,0,1,75,1],
-"struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html":[17,0,1,75,0],
-"struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html#af893a0a797fa5604c3e3b2b3690a217a":[17,0,1,75,0,0],
-"struct_chimera_t_k_1_1_sdm.html":[17,0,1,79],
-"struct_chimera_t_k_1_1_sdm.html#a1b884fc07e0becf8494f6e48525e3c08":[17,0,1,79,5]
+"struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html":[17,0,1,68]
 };
