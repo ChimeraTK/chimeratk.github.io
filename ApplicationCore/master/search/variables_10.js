@@ -6,6 +6,7 @@ var searchData=
   ['readanytestmodule',['readAnyTestModule',['../struct_test_application.html#a9dfaf65bea020737a7f894c264775bd6',1,'TestApplication']]],
   ['readback',['readback',['../struct_test_module2.html#a1fcd7d21a1eb798c789534a8a3c638ee',1,'TestModule2::readback()'],['../struct_input_module.html#a4a39d4a2a60e8ada0bf633fe9254a834',1,'InputModule::readback()']]],
   ['readmode',['readMode',['../struct_test_application.html#a53621860c4e5a0cde8e045c90207c89f',1,'TestApplication']]],
+  ['readregisterpaths',['readRegisterPaths',['../class_chimera_t_k_1_1_device_module.html#a82c64739df7ce551c571bdcc60f0c7d1',1,'ChimeraTK::DeviceModule']]],
   ['realisticmodule',['realisticModule',['../struct_test_application2.html#a633aee5d06f8859e3eb348ffeb1bc8b2',1,'TestApplication2']]],
   ['recoveryhelpers',['recoveryHelpers',['../class_chimera_t_k_1_1_device_module.html#aa5e37e4eeac6bf7ee83c5043e9fd9545',1,'ChimeraTK::DeviceModule']]],
   ['recoverymutex',['recoveryMutex',['../class_chimera_t_k_1_1_device_module.html#ab1e2b830518740acc49a2cb5d3a00d40',1,'ChimeraTK::DeviceModule']]],

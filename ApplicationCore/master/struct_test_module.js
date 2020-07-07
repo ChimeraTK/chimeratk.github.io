@@ -9,6 +9,7 @@ var struct_test_module =
     [ "TestModule", "struct_test_module.html#a0acb19e93076b7da90a20ead9fed1dc4", null ],
     [ "TestModule", "struct_test_module.html#a0acb19e93076b7da90a20ead9fed1dc4", null ],
     [ "TestModule", "struct_test_module.html#a0acb19e93076b7da90a20ead9fed1dc4", null ],
+    [ "TestModule", "struct_test_module.html#a0acb19e93076b7da90a20ead9fed1dc4", null ],
     [ "mainLoop", "struct_test_module.html#a7d6840590346a5b8b9f9d8b045611a56", null ],
     [ "mainLoop", "struct_test_module.html#a7d6840590346a5b8b9f9d8b045611a56", null ],
     [ "mainLoop", "struct_test_module.html#af46cec5b1db1f4fe98e768c226afc688", null ],
