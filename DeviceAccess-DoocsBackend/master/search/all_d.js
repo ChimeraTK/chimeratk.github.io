@@ -22,12 +22,12 @@ var searchData=
   ['regsomeint',['RegSomeInt',['../struct_reg_some_int.html',1,'']]],
   ['regsomeintarray',['RegSomeIntArray',['../struct_reg_some_int_array.html',1,'']]],
   ['regsomelongarray',['RegSomeLongArray',['../struct_reg_some_long_array.html',1,'']]],
-  ['regsomeroint',['RegSomeRoInt',['../struct_reg_some_ro_int.html',1,'RegSomeRoInt'],['../struct_reg_some_ro_int.html#a34ba3d793c06959e7acba87a4eac5a2c',1,'RegSomeRoInt::RegSomeRoInt()']]],
+  ['regsomeroint',['RegSomeRoInt',['../struct_reg_some_ro_int.html',1,'']]],
   ['regsomeshortarray',['RegSomeShortArray',['../struct_reg_some_short_array.html',1,'']]],
   ['regsomespectrum',['RegSomeSpectrum',['../struct_reg_some_spectrum.html',1,'']]],
   ['regsomestatus',['RegSomeStatus',['../struct_reg_some_status.html',1,'']]],
   ['regsomestring',['RegSomeString',['../struct_reg_some_string.html',1,'']]],
-  ['regsomezmqint',['RegSomeZmqInt',['../struct_reg_some_zmq_int.html',1,'RegSomeZmqInt'],['../struct_reg_some_zmq_int.html#a291fe3307cb06ec45538730ef3ec3d60',1,'RegSomeZmqInt::RegSomeZmqInt()']]],
+  ['regsomezmqint',['RegSomeZmqInt',['../struct_reg_some_zmq_int.html',1,'']]],
   ['replacetransferelement',['replaceTransferElement',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a21af88c286d123e95742b2f87e85aac9',1,'ChimeraTK::DoocsBackendRegisterAccessor']]],
   ['rpc_5fno',['rpc_no',['../class_doocs_launcher.html#a630db5a8b76a821f5824dae8e1d6dc78',1,'DoocsLauncher']]]
 ];
