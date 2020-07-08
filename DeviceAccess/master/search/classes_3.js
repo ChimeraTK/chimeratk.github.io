@@ -10,6 +10,7 @@ var searchData=
   ['const_5fiterator',['const_iterator',['../class_chimera_t_k_1_1_register_info_map_1_1const__iterator.html',1,'ChimeraTK::RegisterInfoMap::const_iterator'],['../class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html',1,'ChimeraTK::RegisterCatalogue::const_iterator']]],
   ['constantregisterdescriptorbase',['ConstantRegisterDescriptorBase',['../struct_constant_register_descriptor_base.html',1,'']]],
   ['constantregisterdescriptorbase_3c_20regconstant_20_3e',['ConstantRegisterDescriptorBase&lt; RegConstant &gt;',['../struct_constant_register_descriptor_base.html',1,'']]],
+  ['constantregisterdescriptorbase_3c_20regconstant2_20_3e',['ConstantRegisterDescriptorBase&lt; RegConstant2 &gt;',['../struct_constant_register_descriptor_base.html',1,'']]],
   ['copmaredregisterinfosbyname2_5ffunctor',['copmaredRegisterInfosByName2_functor',['../class_chimera_t_k_1_1copmared_register_infos_by_name2__functor.html',1,'ChimeraTK']]],
   ['copmaredregisterinfosbyname_5ffunctor',['copmaredRegisterInfosByName_functor',['../class_chimera_t_k_1_1copmared_register_infos_by_name__functor.html',1,'ChimeraTK']]],
   ['copyregisterdecorator',['CopyRegisterDecorator',['../struct_chimera_t_k_1_1_copy_register_decorator.html',1,'ChimeraTK']]],

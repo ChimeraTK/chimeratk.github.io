@@ -31,6 +31,7 @@ var searchData=
   ['test_5fc_5f5_5f2_5f6_5f2',['test_C_5_2_6_2',['../class_chimera_t_k_1_1_unified_backend_test.html#ac699886d6d75bb8225c2a528107a6933',1,'ChimeraTK::UnifiedBackendTest']]],
   ['test_5fc_5f5_5f2_5f7_5f2',['test_C_5_2_7_2',['../class_chimera_t_k_1_1_unified_backend_test.html#abc337cbc6ca65ca675fef21e971b1c77',1,'ChimeraTK::UnifiedBackendTest']]],
   ['test_5fnospec_5fvalueafterconstruction',['test_NOSPEC_valueAfterConstruction',['../class_chimera_t_k_1_1_unified_backend_test.html#a0b7e5e218d46f89a2f68a7d04f6a27a8',1,'ChimeraTK::UnifiedBackendTest']]],
+  ['test_5fnospec_5fwrite',['test_NOSPEC_write',['../class_chimera_t_k_1_1_unified_backend_test.html#aec963603aa9e175674288ec4efa9cadf',1,'ChimeraTK::UnifiedBackendTest']]],
   ['testabledummybackend',['TestableDummyBackend',['../class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a',1,'TestableDummyBackend::TestableDummyBackend(std::string mapFileName)'],['../class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a',1,'TestableDummyBackend::TestableDummyBackend(std::string mapFileName)']]],
   ['testadding',['testAdding',['../class_transfer_group_test.html#a817de2dfd4fbb046acc0c36b1f39316f',1,'TransferGroupTest']]],
   ['testaddressrange',['testAddressRange',['../class_dummy_backend_test.html#a3a04a2873fdf1f32d5647fa3054bd8aa',1,'DummyBackendTest']]],

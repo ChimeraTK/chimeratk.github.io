@@ -96,6 +96,7 @@ $(document).ready(function(){initNavTree('test_l_map_backend_unified_8cpp.html',
 <code>#include &quot;<a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>&quot;</code><br />
 <code>#include &quot;DummyRegisterAccessor.h&quot;</code><br />
+<code>#include &quot;LogicalNameMappingBackend.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for testLMapBackendUnified.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -119,6 +120,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_constant_register_descriptor_base.html">ConstantRegisterDescriptorBase&lt; Derived &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_variable_register_descriptor_base.html">VariableRegisterDescriptorBase&lt; Derived &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_reg_single_word.html">RegSingleWord</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_reg_full_area.html">RegFullArea</a></td></tr>
@@ -132,6 +135,18 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_reg_channel_last.html">RegChannelLast</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_reg_constant.html">RegConstant</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_reg_constant2.html">RegConstant2</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_reg_single_word_scaled___r.html">RegSingleWordScaled_R</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_reg_single_word_scaled___w.html">RegSingleWordScaled_W</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_reg_single_word_scaled_twice.html">RegSingleWordScaledTwice</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_reg_full_area_scaled.html">RegFullAreaScaled</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_reg_variable.html">RegVariable</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -196,7 +211,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00227">227</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00366">366</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -206,7 +221,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_l_map_backend_unified_8cpp.html">testLMapBackendUnified.cpp</a></li>
-    <li class="footer">Generated on Tue Jul 7 2020 03:53:14 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Jul 8 2020 03:53:11 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -84,7 +84,8 @@ var hierarchy =
       [ "ChimeraTK::DummyMultiplexedRegisterAccessor< minimumUserType >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< int >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
-      [ "ChimeraTK::DummyRegisterAccessor< minimumUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
+      [ "ChimeraTK::DummyRegisterAccessor< minimumUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
+      [ "ChimeraTK::DummyRegisterAccessor< rawUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
     ] ],
     [ "ChimeraTK::proxies::DummyRegisterElement< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
       [ "ChimeraTK::DummyRegisterAccessor< T >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
@@ -97,6 +98,9 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::proxies::DummyRegisterElement< minimumUserType >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
       [ "ChimeraTK::DummyRegisterAccessor< minimumUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
+    ] ],
+    [ "ChimeraTK::proxies::DummyRegisterElement< rawUserType >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
+      [ "ChimeraTK::DummyRegisterAccessor< rawUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
     ] ],
     [ "ChimeraTK::proxies::DummyRegisterSequence< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", null ],
     [ "DummyRegisterTest", "class_dummy_register_test.html", null ],
@@ -262,7 +266,8 @@ var hierarchy =
       [ "ChannelRegisterDescriptorBase< Derived >", "struct_channel_register_descriptor_base.html", null ],
       [ "ConstantRegisterDescriptorBase< Derived >", "struct_constant_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< Derived >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< Derived >", "struct_scalar_register_descriptor_base.html", null ]
+        [ "ScalarRegisterDescriptorBase< Derived >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "VariableRegisterDescriptorBase< Derived >", "struct_variable_register_descriptor_base.html", null ]
       ] ]
     ] ],
     [ "RegisterDescriptorBase< RegChannel3 >", "struct_register_descriptor_base.html", [
@@ -285,9 +290,19 @@ var hierarchy =
         [ "RegConstant", "struct_reg_constant.html", null ]
       ] ]
     ] ],
+    [ "RegisterDescriptorBase< RegConstant2 >", "struct_register_descriptor_base.html", [
+      [ "ConstantRegisterDescriptorBase< RegConstant2 >", "struct_constant_register_descriptor_base.html", [
+        [ "RegConstant2", "struct_reg_constant2.html", null ]
+      ] ]
+    ] ],
     [ "RegisterDescriptorBase< RegFullArea >", "struct_register_descriptor_base.html", [
       [ "OneDRegisterDescriptorBase< RegFullArea >", "struct_one_d_register_descriptor_base.html", [
         [ "RegFullArea", "struct_reg_full_area.html", null ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegFullAreaScaled >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegFullAreaScaled >", "struct_one_d_register_descriptor_base.html", [
+        [ "RegFullAreaScaled", "struct_reg_full_area_scaled.html", null ]
       ] ]
     ] ],
     [ "RegisterDescriptorBase< RegPartOfArea >", "struct_register_descriptor_base.html", [
@@ -302,12 +317,40 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "RegisterDescriptorBase< RegSingleWordScaled_R >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegSingleWordScaled_R >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegSingleWordScaled_R >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegSingleWordScaled_R", "struct_reg_single_word_scaled___r.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegSingleWordScaled_W >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegSingleWordScaled_W >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegSingleWordScaled_W >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegSingleWordScaled_W", "struct_reg_single_word_scaled___w.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegSingleWordScaledTwice >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegSingleWordScaledTwice >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegSingleWordScaledTwice >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegSingleWordScaledTwice", "struct_reg_single_word_scaled_twice.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegVariable >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegVariable >", "struct_one_d_register_descriptor_base.html", [
+        [ "VariableRegisterDescriptorBase< RegVariable >", "struct_variable_register_descriptor_base.html", [
+          [ "RegVariable", "struct_reg_variable.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "ChimeraTK::RebotProtocol0::RegisterInfo", "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html", null ],
     [ "ChimeraTK::RegisterInfo", "class_chimera_t_k_1_1_register_info.html", [
       [ "ChimeraTK::LNMBackendRegisterInfo", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html", null ],
       [ "ChimeraTK::RegisterInfoMap::RegisterInfo", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html", null ],
       [ "myRegisterInfo", "classmy_register_info.html", null ]
     ] ],
-    [ "ChimeraTK::RebotProtocol0::RegisterInfo", "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html", null ],
     [ "ChimeraTK::RegisterInfoMap", "class_chimera_t_k_1_1_register_info_map.html", null ],
     [ "ChimeraTK::RegisterPath", "class_chimera_t_k_1_1_register_path.html", null ],
     [ "RegisterPathTest", "class_register_path_test.html", null ],
@@ -357,8 +400,8 @@ var hierarchy =
     [ "TransferGroupTest", "class_transfer_group_test.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >", "class_chimera_t_k_1_1_unified_backend_test.html", null ],
     [ "ChimeraTK::Utilities", "class_chimera_t_k_1_1_utilities.html", null ],
-    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
+    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
     [ "ChimeraTK::VersionNumber", "class_chimera_t_k_1_1_version_number.html", null ],

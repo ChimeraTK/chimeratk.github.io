@@ -6,6 +6,7 @@ var _unified_backend_test_8h =
     [ "CHECK_APPLICATION_BUFFER", "_unified_backend_test_8h.html#a048d20ccdf8bf904afec713ede5b2cc2", null ],
     [ "CHECK_EQUALITY", "_unified_backend_test_8h.html#a3b6893388f16002bc124de0fe5fc18ae", null ],
     [ "CHECK_EQUALITY_TIMEOUT", "_unified_backend_test_8h.html#a04f19c70138fca6224d58e17cc55cffd", null ],
+    [ "CHECK_EQUALITY_VECTOR", "_unified_backend_test_8h.html#a28abd8da668bc6ade7349eaaf6131752", null ],
     [ "CHECK_TIMEOUT", "_unified_backend_test_8h.html#a17030ac7f00713a62e05ab6c35cb710e", null ],
     [ "STORE_APPLICATION_BUFFER", "_unified_backend_test_8h.html#a82cbc60bbcb853067a86faadd887b190", null ],
     [ "comparHelper", "_unified_backend_test_8h.html#a8ad312ab3a7f9a31dafed94bbd7eba98", null ],
