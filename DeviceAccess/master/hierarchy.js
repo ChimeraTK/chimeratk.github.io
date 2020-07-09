@@ -35,8 +35,8 @@ var hierarchy =
     [ "WorkingBackend::BackendRegisterer", "struct_working_backend_1_1_backend_registerer.html", null ],
     [ "AnotherWorkingBackend::BackendRegisterer", "struct_another_working_backend_1_1_backend_registerer.html", null ],
     [ "WrongVersionBackend::BackendRegisterer", "struct_wrong_version_backend_1_1_backend_registerer.html", null ],
-    [ "TestDummy::BackendRegisterer", "class_test_dummy_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::ExceptionDummy::BackendRegisterer", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer.html", null ],
+    [ "TestDummy::BackendRegisterer", "class_test_dummy_1_1_backend_registerer.html", null ],
     [ "BufferingRegisterTest", "class_buffering_register_test.html", null ],
     [ "ChimeraTK::compareModuleName_pred", "class_chimera_t_k_1_1compare_module_name__pred.html", null ],
     [ "ChimeraTK::compareRegisterInfosByName_functor", "class_chimera_t_k_1_1compare_register_infos_by_name__functor.html", null ],
@@ -266,8 +266,43 @@ var hierarchy =
       [ "ChannelRegisterDescriptorBase< Derived >", "struct_channel_register_descriptor_base.html", null ],
       [ "ConstantRegisterDescriptorBase< Derived >", "struct_constant_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< Derived >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< Derived >", "struct_scalar_register_descriptor_base.html", null ],
+        [ "BitRegisterDescriptorBase< Derived >", "struct_bit_register_descriptor_base.html", null ],
+        [ "ScalarRegisterDescriptorBase< Derived >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegSingleWordScaled< Derived >", "struct_reg_single_word_scaled.html", null ],
+          [ "RegWordFirmwareWithMath< Derived >", "struct_reg_word_firmware_with_math.html", null ]
+        ] ],
         [ "VariableRegisterDescriptorBase< Derived >", "struct_variable_register_descriptor_base.html", null ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegArrayConstant >", "struct_register_descriptor_base.html", [
+      [ "ConstantRegisterDescriptorBase< RegArrayConstant >", "struct_constant_register_descriptor_base.html", [
+        [ "RegArrayConstant", "struct_reg_array_constant.html", null ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegArrayVariable >", "struct_register_descriptor_base.html", [
+      [ "ConstantRegisterDescriptorBase< RegArrayVariable >", "struct_constant_register_descriptor_base.html", [
+        [ "RegArrayVariable", "struct_reg_array_variable.html", null ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegBit0OfVar >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegBit0OfVar >", "struct_one_d_register_descriptor_base.html", [
+        [ "BitRegisterDescriptorBase< RegBit0OfVar >", "struct_bit_register_descriptor_base.html", [
+          [ "RegBit0OfVar", "struct_reg_bit0_of_var.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegBit2OfWordFirmware >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegBit2OfWordFirmware >", "struct_one_d_register_descriptor_base.html", [
+        [ "BitRegisterDescriptorBase< RegBit2OfWordFirmware >", "struct_bit_register_descriptor_base.html", [
+          [ "RegBit2OfWordFirmware", "struct_reg_bit2_of_word_firmware.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegBit3OfVar >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegBit3OfVar >", "struct_one_d_register_descriptor_base.html", [
+        [ "BitRegisterDescriptorBase< RegBit3OfVar >", "struct_bit_register_descriptor_base.html", [
+          [ "RegBit3OfVar", "struct_reg_bit3_of_var.html", null ]
+        ] ]
       ] ]
     ] ],
     [ "RegisterDescriptorBase< RegChannel3 >", "struct_register_descriptor_base.html", [
@@ -305,6 +340,13 @@ var hierarchy =
         [ "RegFullAreaScaled", "struct_reg_full_area_scaled.html", null ]
       ] ]
     ] ],
+    [ "RegisterDescriptorBase< RegMonostableTrigger >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegMonostableTrigger >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegMonostableTrigger >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegMonostableTrigger", "struct_reg_monostable_trigger.html", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "RegisterDescriptorBase< RegPartOfArea >", "struct_register_descriptor_base.html", [
       [ "OneDRegisterDescriptorBase< RegPartOfArea >", "struct_one_d_register_descriptor_base.html", [
         [ "RegPartOfArea", "struct_reg_part_of_area.html", null ]
@@ -320,14 +362,18 @@ var hierarchy =
     [ "RegisterDescriptorBase< RegSingleWordScaled_R >", "struct_register_descriptor_base.html", [
       [ "OneDRegisterDescriptorBase< RegSingleWordScaled_R >", "struct_one_d_register_descriptor_base.html", [
         [ "ScalarRegisterDescriptorBase< RegSingleWordScaled_R >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegSingleWordScaled_R", "struct_reg_single_word_scaled___r.html", null ]
+          [ "RegSingleWordScaled< RegSingleWordScaled_R >", "struct_reg_single_word_scaled.html", [
+            [ "RegSingleWordScaled_R", "struct_reg_single_word_scaled___r.html", null ]
+          ] ]
         ] ]
       ] ]
     ] ],
     [ "RegisterDescriptorBase< RegSingleWordScaled_W >", "struct_register_descriptor_base.html", [
       [ "OneDRegisterDescriptorBase< RegSingleWordScaled_W >", "struct_one_d_register_descriptor_base.html", [
         [ "ScalarRegisterDescriptorBase< RegSingleWordScaled_W >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegSingleWordScaled_W", "struct_reg_single_word_scaled___w.html", null ]
+          [ "RegSingleWordScaled< RegSingleWordScaled_W >", "struct_reg_single_word_scaled.html", [
+            [ "RegSingleWordScaled_W", "struct_reg_single_word_scaled___w.html", null ]
+          ] ]
         ] ]
       ] ]
     ] ],
@@ -345,12 +391,44 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "ChimeraTK::RebotProtocol0::RegisterInfo", "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html", null ],
+    [ "RegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegWordFirmwareAsParameterInMath", "struct_reg_word_firmware_as_parameter_in_math.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegWordFirmwareForcedReadOnly >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegWordFirmwareForcedReadOnly >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegWordFirmwareForcedReadOnly >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegWordFirmwareForcedReadOnly", "struct_reg_word_firmware_forced_read_only.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegWordFirmwareWithMath_R >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegWordFirmwareWithMath_R >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegWordFirmwareWithMath_R >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegWordFirmwareWithMath< RegWordFirmwareWithMath_R >", "struct_reg_word_firmware_with_math.html", [
+            [ "RegWordFirmwareWithMath_R", "struct_reg_word_firmware_with_math___r.html", null ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegWordFirmwareWithMath_W >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegWordFirmwareWithMath_W >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegWordFirmwareWithMath_W >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegWordFirmwareWithMath< RegWordFirmwareWithMath_W >", "struct_reg_word_firmware_with_math.html", [
+            [ "RegWordFirmwareWithMath_W", "struct_reg_word_firmware_with_math___w.html", null ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
     [ "ChimeraTK::RegisterInfo", "class_chimera_t_k_1_1_register_info.html", [
       [ "ChimeraTK::LNMBackendRegisterInfo", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html", null ],
       [ "ChimeraTK::RegisterInfoMap::RegisterInfo", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html", null ],
       [ "myRegisterInfo", "classmy_register_info.html", null ]
     ] ],
+    [ "ChimeraTK::RebotProtocol0::RegisterInfo", "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html", null ],
     [ "ChimeraTK::RegisterInfoMap", "class_chimera_t_k_1_1_register_info_map.html", null ],
     [ "ChimeraTK::RegisterPath", "class_chimera_t_k_1_1_register_path.html", null ],
     [ "RegisterPathTest", "class_register_path_test.html", null ],
@@ -400,8 +478,8 @@ var hierarchy =
     [ "TransferGroupTest", "class_transfer_group_test.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >", "class_chimera_t_k_1_1_unified_backend_test.html", null ],
     [ "ChimeraTK::Utilities", "class_chimera_t_k_1_1_utilities.html", null ],
-    [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
+    [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
     [ "ChimeraTK::VersionNumber", "class_chimera_t_k_1_1_version_number.html", null ],
