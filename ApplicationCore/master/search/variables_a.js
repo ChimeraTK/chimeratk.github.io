@@ -11,7 +11,6 @@ var searchData=
   ['lateconstrscalarpollinput',['lateConstrScalarPollInput',['../struct_test_module.html#a347a61834c3f4e3db0fc6470f2473b28',1,'TestModule']]],
   ['lateconstrscalarpushinput',['lateConstrScalarPushInput',['../struct_test_module.html#afe9f15db45a2e0492a587e01d3bda309',1,'TestModule']]],
   ['lifecyclestate',['lifeCycleState',['../class_chimera_t_k_1_1_application.html#a0ef8bd0ad224ddca42bff1d1ca4aac00',1,'ChimeraTK::Application']]],
-  ['localvalidity',['localValidity',['../class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#a930ac14a5b64b8998aed7029ecfa8fb1',1,'ChimeraTK::MetaDataPropagatingRegisterDecorator']]],
   ['log',['log',['../structtest_app.html#ac9aec5e153e9f98518a4d14b25f9f1d6',1,'testApp']]],
   ['logfile',['logFile',['../classlogging_1_1_logging_module.html#ae90e453ff52bc721d16da109a5270f0f',1,'logging::LoggingModule']]],
   ['logger',['logger',['../structtest_app.html#a160644201a5636e003596df121dc3b89',1,'testApp']]],

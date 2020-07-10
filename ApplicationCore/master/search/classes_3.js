@@ -8,6 +8,7 @@ var searchData=
   ['devicemodule',['DeviceModule',['../class_chimera_t_k_1_1_device_module.html',1,'ChimeraTK']]],
   ['divider',['Divider',['../struct_chimera_t_k_1_1_divider.html',1,'ChimeraTK']]],
   ['dummy',['Dummy',['../struct_dummy.html',1,'']]],
+  ['dummyapplication',['DummyApplication',['../struct_dummy_application.html',1,'']]],
   ['dummyarray',['DummyArray',['../struct_dummy_array.html',1,'']]],
   ['dummyarray_3c_20int_20_3e',['DummyArray&lt; int &gt;',['../struct_dummy_array.html',1,'']]]
 ];

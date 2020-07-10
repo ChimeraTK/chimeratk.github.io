@@ -98,6 +98,9 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 , <a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html#a2e01fc1efd2e4f39b13c885d33978da8">ChimeraTK::ThreadedFanOut&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html#a3404af1ffc3a6df39808d28887714a90">ChimeraTK::TriggerFanOut</a>
 </li>
+<li>debugMakeConnections()
+: <a class="el" href="class_chimera_t_k_1_1_application.html#a820fa44d5690934984b90f442461108b">ChimeraTK::Application</a>
+</li>
 <li>debugMode_variableList
 : <a class="el" href="class_chimera_t_k_1_1_application.html#a20ee34f9da398c58ad9e4228449412fa">ChimeraTK::Application</a>
 </li>
@@ -142,6 +145,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 , <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>
 , <a class="el" href="class_chimera_t_k_1_1_device_module.html#a54e3bc866064cb19cbc2c6cab5ee9e51">ChimeraTK::DeviceModule</a>
 , <a class="el" href="class_chimera_t_k_1_1_module.html#a9b3536e232d1163debcdca29279191e2">ChimeraTK::Module</a>
+, <a class="el" href="struct_dummy_application.html#ad0420e423c4b93768823b4eeaa692e15">DummyApplication</a>
 , <a class="el" href="struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a">ExampleApp</a>
 , <a class="el" href="struct_one_module_app.html#a4ec6a19c617a62e1eae3263aa96ac755">OneModuleApp</a>
 , <a class="el" href="struct_polling_test_application.html#a31b0e9591988e70a605c79e452c4867b">PollingTestApplication&lt; T &gt;</a>
@@ -207,27 +211,36 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 </li>
 <li>device
 : <a class="el" href="class_chimera_t_k_1_1_device_module.html#a5c5d31cbd8669519f0a974a202c3caa0">ChimeraTK::DeviceModule</a>
+, <a class="el" href="struct_dummy_application.html#ada422297bc2ccad7a961f675586c3b4f">DummyApplication</a>
 , <a class="el" href="struct_test_application1.html#a46389ccb3e9c822dd7e7cc3977df460e">TestApplication1</a>
 , <a class="el" href="struct_test_application_with_device.html#aeb5e090210499b2f1ceef3988a0b38d1">TestApplicationWithDevice</a>
+</li>
+<li>device1
+: <a class="el" href="struct_test_application3.html#a846cbf83e2653ad41093fe9e16606432">TestApplication3</a>
 </li>
 <li>device1DummyBackend
 : <a class="el" href="struct_fixture__no_testable_mode.html#a9393d428baf7c82163556dc7c4a42813">Fixture_noTestableMode</a>
 , <a class="el" href="struct_fixture__test_facility.html#ad24cbb111547829cd9b57405d8f73833">Fixture_testFacility</a>
-, <a class="el" href="struct_test_application3.html#a3689d6441db3e038867437932d70993e">TestApplication3</a>
+</li>
+<li>device1Status
+: <a class="el" href="struct_fixture__no_testable_mode.html#aa2e10e89723f784ec4b8669953b7e7cd">Fixture_noTestableMode</a>
 </li>
 <li>device2
-: <a class="el" href="struct_test_application4.html#ab9dd9ec71ae4b71b592bedc88eb28dfb">TestApplication4</a>
+: <a class="el" href="struct_test_application3.html#a755b00cb8b7045cfda95fa61a621aa02">TestApplication3</a>
+, <a class="el" href="struct_test_application4.html#ab9dd9ec71ae4b71b592bedc88eb28dfb">TestApplication4</a>
 </li>
 <li>device2DummyBackend
 : <a class="el" href="struct_fixture__no_testable_mode.html#a9411759b7b77868e28d924449284ea67">Fixture_noTestableMode</a>
 , <a class="el" href="struct_fixture__test_facility.html#af9f7976d90d70ef6749f074a2aa130f8">Fixture_testFacility</a>
-, <a class="el" href="struct_test_application3.html#a0fd281f7ace97603d46bac5c4cd4fb8f">TestApplication3</a>
 </li>
 <li>deviceAlias
 : <a class="el" href="struct_chimera_t_k_1_1_variable_network_node__data.html#a3dfa2000cbe4999ad42b12b7af905e34">ChimeraTK::VariableNetworkNode_data</a>
 </li>
 <li>deviceAliasOrURI
 : <a class="el" href="class_chimera_t_k_1_1_device_module.html#ac19f5b14011b1cb9830655783eb809fa">ChimeraTK::DeviceModule</a>
+</li>
+<li>deviceBackend
+: <a class="el" href="struct_fixture__no_test_facility.html#a40c571b0dfa80e9ca54321ad701f6e99">Fixture_noTestFacility</a>
 </li>
 <li>deviceBecameFunctional
 : <a class="el" href="class_chimera_t_k_1_1_device_module.html#a10b38c267d12f5e3b06539f54757857c">ChimeraTK::DeviceModule</a>
@@ -246,7 +259,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 </li>
 <li>DeviceModule
 : <a class="el" href="class_chimera_t_k_1_1_application.html#a4e118063020247afcc64aa45d4ec3f12">ChimeraTK::Application</a>
-, <a class="el" href="class_chimera_t_k_1_1_device_module.html#ac981bac0d95b66bfe1f933fc21ace28c">ChimeraTK::DeviceModule</a>
+, <a class="el" href="class_chimera_t_k_1_1_device_module.html#a1b4aab628f9b7cfcf631275bc7adf1b6">ChimeraTK::DeviceModule</a>
 </li>
 <li>deviceModuleMap
 : <a class="el" href="class_chimera_t_k_1_1_application.html#a9d68474aee560a3183ae80b86083b3ca">ChimeraTK::Application</a>
@@ -261,12 +274,12 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 : <a class="el" href="struct_chimera_t_k_1_1_status_monitor.html#a8df1710a1a5c8402ec35cd337ce73d3b">ChimeraTK::StatusMonitor</a>
 </li>
 <li>dispatch()
-: <a class="el" href="class_chimera_t_k_1_1_module_graph_visitor.html#aeb594f2eccff1e8bfbb0c9bc771d8096">ChimeraTK::ModuleGraphVisitor</a>
+: <a class="el" href="class_chimera_t_k_1_1_module_graph_visitor.html#ab3ff9a21b70e6fbe2caa4efbd24e065b">ChimeraTK::ModuleGraphVisitor</a>
 , <a class="el" href="class_chimera_t_k_1_1_variable_network_dumping_visitor.html#a44840afdcbf6d29def51dad208d1c2b8">ChimeraTK::VariableNetworkDumpingVisitor</a>
-, <a class="el" href="class_chimera_t_k_1_1_variable_network_graph_dumping_visitor.html#aab91aa4c312dbc11a48500678207d6b7">ChimeraTK::VariableNetworkGraphDumpingVisitor</a>
+, <a class="el" href="class_chimera_t_k_1_1_variable_network_graph_dumping_visitor.html#a1a58e99a186c4107d15cef052cf8eb40">ChimeraTK::VariableNetworkGraphDumpingVisitor</a>
 , <a class="el" href="class_chimera_t_k_1_1_variable_network_node_dumping_visitor.html#aefcd03589374be3e75fe3aa5145004a9">ChimeraTK::VariableNetworkNodeDumpingVisitor</a>
 , <a class="el" href="class_chimera_t_k_1_1_visitor_3_01_t_01_4.html#a180090c6fafb1978816817f08b3c38cd">ChimeraTK::Visitor&lt; T &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_x_m_l_generator_visitor.html#a746bc15adbe312d9d51ef0d698f9a747">ChimeraTK::XMLGeneratorVisitor</a>
+, <a class="el" href="class_chimera_t_k_1_1_x_m_l_generator_visitor.html#a22621e7ace2c7a7b7f3f5904e7d5f18e">ChimeraTK::XMLGeneratorVisitor</a>
 </li>
 <li>divider
 : <a class="el" href="struct_chimera_t_k_1_1_divider.html#ad9cc0000920baac3739dc54f55aea293">ChimeraTK::Divider&lt; InputType, OutputType, NELEMS &gt;</a>
@@ -280,13 +293,13 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 </li>
 <li>doPostRead()
 : <a class="el" href="class_chimera_t_k_1_1_constant_accessor.html#a69ca261b6d54e902408b412eb75d93c1">ChimeraTK::ConstantAccessor&lt; UserType &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_consuming_fan_out.html#a8f9ed3f749e1bfae684435631f007ad7">ChimeraTK::ConsumingFanOut&lt; UserType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_consuming_fan_out.html#ad5e74a16355f8d60b08533effac49547">ChimeraTK::ConsumingFanOut&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html#affba0d6d0aa9834fbfb780d99ee71ffc">ChimeraTK::DebugPrintAccessorDecorator&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html#a2d9fb80a1cc4eeb5b7aa751e55d0b9c6">ChimeraTK::ExceptionHandlingDecorator&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a88a42be668ace99890fe291b167b7c65">ChimeraTK::FeedingFanOut&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#a2d62a08acf2402410c8b26b1fb45c7ce">ChimeraTK::MetaDataPropagatingRegisterDecorator&lt; T &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#a11e354efd0b6bdd841d14739b9359941">ChimeraTK::TestableModeAccessorDecorator&lt; UserType &gt;</a>
-, <a class="el" href="class_timer_dummy_register_accessor.html#a8b5dc81b01b6018d9beb3077271ac7f1">TimerDummyRegisterAccessor&lt; UserType &gt;</a>
+, <a class="el" href="class_timer_dummy_register_accessor.html#ae8026c4a28286c33f9272db20394cacb">TimerDummyRegisterAccessor&lt; UserType &gt;</a>
 </li>
 <li>doPostWrite()
 : <a class="el" href="class_chimera_t_k_1_1_debug_print_accessor_decorator.html#a77c532dd2a65ed2dd6a09883cec0005b">ChimeraTK::DebugPrintAccessorDecorator&lt; UserType &gt;</a>
@@ -340,6 +353,9 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 , <a class="el" href="structtest_app_array.html#a41828451b75273824cda922f48d0ebbc">testAppArray&lt; UserType &gt;</a>
 , <a class="el" href="structtest_app_dev.html#acc56545ba5f9729aa725ac052298dda2">testAppDev</a>
 </li>
+<li>DummyApplication()
+: <a class="el" href="struct_dummy_application.html#a73d736428c3b6078d1f109f3da039b86">DummyApplication</a>
+</li>
 <li>dummyCDD1
 : <a class="el" href="struct_test_application1.html#ac9ba6a0e71ae0c1a1cbde94c8bfb8cca">TestApplication1</a>
 </li>
@@ -366,7 +382,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jul 9 2020 03:54:15 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Jul 10 2020 03:54:16 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

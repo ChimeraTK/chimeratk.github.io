@@ -131,6 +131,5 @@ var menudata={children:[
 {text:"Typedefs",url:"globals_type.html"},
 {text:"Macros",url:"globals_defs.html",children:[
 {text:"b",url:"globals_defs.html#index_b"},
-{text:"c",url:"globals_defs.html#index_c"},
-{text:"d",url:"globals_defs.html#index_d"}]}]}]},
+{text:"c",url:"globals_defs.html#index_c"}]}]}]},
 {text:"Examples",url:"examples.html"}]}

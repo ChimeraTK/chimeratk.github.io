@@ -4,7 +4,7 @@ var searchData=
   ['tableparameters',['TableParameters',['../struct_table_generation_1_1_table_parameters.html',1,'TableGeneration']]],
   ['templatemodule',['TemplateModule',['../struct_template_module.html',1,'']]],
   ['testablemodeaccessordecorator',['TestableModeAccessorDecorator',['../class_chimera_t_k_1_1_testable_mode_accessor_decorator.html',1,'ChimeraTK']]],
-  ['testapp',['TestApp',['../struct_test_app.html',1,'TestApp'],['../structtest_app.html',1,'testApp&lt; UserType &gt;']]],
+  ['testapp',['testApp',['../structtest_app.html',1,'testApp&lt; UserType &gt;'],['../struct_test_app.html',1,'TestApp']]],
   ['testapparray',['testAppArray',['../structtest_app_array.html',1,'']]],
   ['testappdev',['testAppDev',['../structtest_app_dev.html',1,'']]],
   ['testapplication',['TestApplication',['../struct_test_application.html',1,'']]],

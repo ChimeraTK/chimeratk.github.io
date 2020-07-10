@@ -28,7 +28,7 @@ var searchData=
   ['arrayoutput_3c_20int32_5ft_20_3e',['ArrayOutput&lt; int32_t &gt;',['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK']]],
   ['arrayoutput_3c_20outputtype_20_3e',['ArrayOutput&lt; OutputType &gt;',['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK']]],
   ['arrayoutput_3c_20t_20_3e',['ArrayOutput&lt; T &gt;',['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK']]],
-  ['arrayoutput_3c_20type_20_3e',['ArrayOutput&lt; Type &gt;',['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK::ArrayOutput&lt; Type &gt;'],['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK::ArrayOutput&lt; TYPE &gt;']]],
+  ['arrayoutput_3c_20type_20_3e',['ArrayOutput&lt; TYPE &gt;',['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK::ArrayOutput&lt; TYPE &gt;'],['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK::ArrayOutput&lt; Type &gt;']]],
   ['arrayoutput_3c_20uint16_5ft_20_3e',['ArrayOutput&lt; uint16_t &gt;',['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK']]],
   ['arrayoutput_3c_20uint64_5ft_20_3e',['ArrayOutput&lt; uint64_t &gt;',['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK']]],
   ['arrayoutputrb',['ArrayOutputRB',['../struct_chimera_t_k_1_1_array_output_r_b.html',1,'ChimeraTK']]],

@@ -14,7 +14,6 @@ var searchData=
   ['limitvalue',['LimitValue',['../struct_chimera_t_k_1_1_limit_value.html',1,'ChimeraTK']]],
   ['limitvalue_2eh',['LimitValue.h',['../_limit_value_8h.html',1,'']]],
   ['limitvaluemodulebase',['LimitValueModuleBase',['../struct_chimera_t_k_1_1_limit_value_module_base.html',1,'ChimeraTK']]],
-  ['localvalidity',['localValidity',['../class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#a930ac14a5b64b8998aed7029ecfa8fb1',1,'ChimeraTK::MetaDataPropagatingRegisterDecorator']]],
   ['log',['log',['../structtest_app.html#ac9aec5e153e9f98518a4d14b25f9f1d6',1,'testApp']]],
   ['logfile',['logFile',['../classlogging_1_1_logging_module.html#ae90e453ff52bc721d16da109a5270f0f',1,'logging::LoggingModule']]],
   ['logger',['Logger',['../classlogging_1_1_logger.html',1,'logging::Logger'],['../classlogging_1_1_logger.html#a87cd7a6981b805533c717053ae412cd0',1,'logging::Logger::Logger()'],['../classlogging_1_1_logger.html#a953a449517466c898df8c4258b564690',1,'logging::Logger::Logger(ctk::Module *module)'],['../structtest_app.html#a160644201a5636e003596df121dc3b89',1,'testApp::logger()']]],
