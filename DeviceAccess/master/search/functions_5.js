@@ -16,10 +16,11 @@ var searchData=
   ['fixedpointconvertingrawdecorator',['FixedPointConvertingRawDecorator',['../class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html#a8908fceed581649fee341fb598114fea',1,'ChimeraTK::FixedPointConvertingRawDecorator']]],
   ['fixture',['Fixture',['../struct_fixture.html#a7bd87f852602d02a205b4a811530dfe4',1,'Fixture']]],
   ['for_5feach',['for_each',['../namespace_chimera_t_k.html#ae7a87d6ef5da36852a971cab2ac6eddc',1,'ChimeraTK']]],
-  ['forceasyncreadinconsistency',['forceAsyncReadInconsistency',['../struct_register_descriptor_base.html#aa6cca93c696b721d6ad6b43d9d005ff2',1,'RegisterDescriptorBase::forceAsyncReadInconsistency()'],['../struct_integers__signed32.html#af5d13248e6b42bc45f9880b098bb033e',1,'Integers_signed32::forceAsyncReadInconsistency()']]],
+  ['forceasyncreadinconsistency',['forceAsyncReadInconsistency',['../struct_register_descriptor_base.html#aa6cca93c696b721d6ad6b43d9d005ff2',1,'RegisterDescriptorBase::forceAsyncReadInconsistency()'],['../struct_integers__signed32.html#af5d13248e6b42bc45f9880b098bb033e',1,'Integers_signed32::forceAsyncReadInconsistency()'],['../struct_muxed_nodma.html#a85ef652a2c522533e1232f0aaf5596e5',1,'MuxedNodma::forceAsyncReadInconsistency()'],['../struct_area_type.html#a1c522e200c603a17aa3d1a1e21129f18',1,'AreaType::forceAsyncReadInconsistency()']]],
   ['forcepollingreadplugin',['ForcePollingReadPlugin',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html#a19edd04ad54717bf3fcf7172c18f8dfa',1,'ChimeraTK::LNMBackend::ForcePollingReadPlugin']]],
   ['forcereadonlyplugin',['ForceReadOnlyPlugin',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html#aa9b2cfd4b09a98ce4dd315b33a30f495',1,'ChimeraTK::LNMBackend::ForceReadOnlyPlugin']]],
   ['forcereadonlyplugindecorator',['ForceReadOnlyPluginDecorator',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#af6a0d17a679da14f6350ae0c38929edd',1,'ChimeraTK::LNMBackend::ForceReadOnlyPluginDecorator']]],
+  ['fromraw',['fromRaw',['../struct_my_register1.html#af51dcdbabf3036a841b9efc18f307f4f',1,'MyRegister1::fromRaw()'],['../struct_my_area1.html#ab824d8a4ea0588a8f7fbac95201ddef7',1,'MyArea1::fromRaw()']]],
   ['fundamentaltype',['fundamentalType',['../class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html#a0ffbe083c4eec2daeac9a537e1c91e07',1,'ChimeraTK::RegisterInfo::DataDescriptor']]],
   ['toraw_3c_20std_3a_3astring_20_3e',['toRaw&lt; std::string &gt;',['../namespace_chimera_t_k.html#afff8173557eb5f22e54120e7cd2e4697',1,'ChimeraTK']]]
 ];

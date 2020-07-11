@@ -16,6 +16,7 @@ var searchData=
   ['accessorpluginbase',['AccessorPluginBase',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html',1,'ChimeraTK::LNMBackend']]],
   ['addressrange',['AddressRange',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html',1,'ChimeraTK::DummyBackend']]],
   ['anotherworkingbackend',['AnotherWorkingBackend',['../struct_another_working_backend.html',1,'']]],
+  ['areatype',['AreaType',['../struct_area_type.html',1,'']]],
   ['argument',['Argument',['../struct_argument.html',1,'']]],
   ['asynctestdummy',['AsyncTestDummy',['../class_async_test_dummy.html',1,'']]]
 ];

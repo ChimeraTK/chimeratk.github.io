@@ -128,6 +128,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac45367b2901931167b93b4db3d9d4fe7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#ac45367b2901931167b93b4db3d9d4fe7">doPreWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber) override</td></tr>
 <tr class="memdesc:ac45367b2901931167b93b4db3d9d4fe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa8dbf971f07658c489d452016244e1a5" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>.  <a href="#ac45367b2901931167b93b4db3d9d4fe7">More...</a><br /></td></tr>
 <tr class="separator:ac45367b2901931167b93b4db3d9d4fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b09c3a0ac94dde7df61e02286ad222"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#ac4b09c3a0ac94dde7df61e02286ad222">doPreRead</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>) override</td></tr>
+<tr class="memdesc:ac4b09c3a0ac94dde7df61e02286ad222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary. ">preRead()</a>.  <a href="#ac4b09c3a0ac94dde7df61e02286ad222">More...</a><br /></td></tr>
+<tr class="separator:ac4b09c3a0ac94dde7df61e02286ad222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f602a21064c360c60e6632f8fd18e8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a3f602a21064c360c60e6632f8fd18e8b">mayReplaceOther</a> (const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> const &gt; &amp;other) const override</td></tr>
 <tr class="memdesc:a3f602a21064c360c60e6632f8fd18e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> can be used in places where the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> "other" is currently used, e.g.  <a href="#a3f602a21064c360c60e6632f8fd18e8b">More...</a><br /></td></tr>
 <tr class="separator:a3f602a21064c360c60e6632f8fd18e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,9 +319,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7abbf917c5276bc3f776088e0d97366a inherit pro_methods_class_chimera_t_k_1_1_n_d_register_accessor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#a7abbf917c5276bc3f776088e0d97366a">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER</a> (<a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt;, <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#acced6e77f634ed68e4d66eef4cb48a41">setAsCooked_impl</a>, 3)</td></tr>
 <tr class="separator:a7abbf917c5276bc3f776088e0d97366a inherit pro_methods_class_chimera_t_k_1_1_n_d_register_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_chimera_t_k_1_1_transfer_element"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_chimera_t_k_1_1_transfer_element')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">ChimeraTK::TransferElement</a></td></tr>
-<tr class="memitem:a60d3b43f03bed1cf27c57fd7e0c76127 inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a60d3b43f03bed1cf27c57fd7e0c76127">doPreRead</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>)</td></tr>
-<tr class="memdesc:a60d3b43f03bed1cf27c57fd7e0c76127 inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary. ">preRead()</a>.  <a href="class_chimera_t_k_1_1_transfer_element.html#a60d3b43f03bed1cf27c57fd7e0c76127">More...</a><br /></td></tr>
-<tr class="separator:a60d3b43f03bed1cf27c57fd7e0c76127 inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c0a6bc5c1779ce47afe7871573ef2a1 inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7c0a6bc5c1779ce47afe7871573ef2a1">doPostWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>)</td></tr>
 <tr class="memdesc:a7c0a6bc5c1779ce47afe7871573ef2a1 inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write cleanups if necessary. ">postWrite()</a>.  <a href="class_chimera_t_k_1_1_transfer_element.html#a7c0a6bc5c1779ce47afe7871573ef2a1">More...</a><br /></td></tr>
 <tr class="separator:a7c0a6bc5c1779ce47afe7871573ef2a1 inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -472,7 +472,7 @@ template&lt;class UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00138">138</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00142">142</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -530,7 +530,43 @@ template&lt;class UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00260">260</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00264">264</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+
+</div>
+</div>
+<a id="ac4b09c3a0ac94dde7df61e02286ad222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4b09c3a0ac94dde7df61e02286ad222">&#9670;&nbsp;</a></span>doPreRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor</a>&lt; UserType &gt;::doPreRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary. ">preRead()</a>. </p>
+<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary. ">preRead()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
+<p>No actual communication may be done. Hence, no <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown. </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a60d3b43f03bed1cf27c57fd7e0c76127">ChimeraTK::TransferElement</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00067">67</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -576,7 +612,7 @@ template&lt;class UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00283">283</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00288">288</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -623,7 +659,7 @@ template&lt;class UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a948f1bec4d00fce4ef5d5ea8fc35f8d5">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00253">253</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00257">257</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -661,7 +697,7 @@ template&lt;class UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00275">275</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00280">280</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -696,7 +732,7 @@ template&lt;class UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a36b8f2cad449056d909560e371c78229">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00124">124</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00128">128</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -733,7 +769,7 @@ template&lt;class UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a561932e1a87dcc57cb3525a9980bdf49">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00128">128</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00132">132</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -767,7 +803,7 @@ template&lt;class UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00082">82</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00086">86</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -801,7 +837,7 @@ template&lt;class UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00080">80</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00084">84</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -835,7 +871,7 @@ template&lt;class UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00086">86</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00090">90</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -864,7 +900,7 @@ template&lt;class UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00088">88</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00092">92</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -901,7 +937,7 @@ template&lt;class UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#acfe89e1cf7c5d45797fd062b9faaea6a">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00067">67</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00071">71</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -936,7 +972,7 @@ template&lt;class UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a791a4902b649e859fbadea20cc90ede2">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00130">130</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00134">134</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -963,7 +999,7 @@ template&lt;class UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00115">115</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00119">119</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -989,7 +1025,7 @@ template&lt;class UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00102">102</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00106">106</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1017,7 +1053,7 @@ template&lt;class UserType &gt; </div>
 
 <p>register address (after restricting to area of interes) </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00115">115</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00119">119</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1045,7 +1081,7 @@ template&lt;class UserType &gt; </div>
 
 <p>One fixed point converter for each sequence. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00092">92</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00096">96</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1071,7 +1107,7 @@ template&lt;class UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00119">119</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00123">123</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1097,7 +1133,7 @@ template&lt;class UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00106">106</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00110">110</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1123,7 +1159,7 @@ template&lt;class UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00100">100</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00104">104</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1151,7 +1187,7 @@ template&lt;class UserType &gt; </div>
 
 <p>The device from (/to) which to perform the DMA transfer. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00095">95</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00099">99</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1179,7 +1215,7 @@ template&lt;class UserType &gt; </div>
 
 <p>cache for negated writeable status to avoid repeated evaluation </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00122">122</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00126">126</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1207,7 +1243,7 @@ template&lt;class UserType &gt; </div>
 
 <p>register and module name </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00111">111</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00115">115</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1235,7 +1271,7 @@ template&lt;class UserType &gt; </div>
 
 <p>number of data blocks / samples </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00098">98</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00102">102</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1261,7 +1297,7 @@ template&lt;class UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00115">115</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00119">119</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1289,7 +1325,7 @@ template&lt;class UserType &gt; </div>
 
 <p>area of interest </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00118">118</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00122">122</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1315,7 +1351,7 @@ template&lt;class UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00111">111</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00115">115</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1341,7 +1377,7 @@ template&lt;class UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00112">112</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00116">116</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1367,7 +1403,7 @@ template&lt;class UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00103">103</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00107">107</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1393,7 +1429,7 @@ template&lt;class UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00105">105</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00109">109</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1419,7 +1455,7 @@ template&lt;class UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00108">108</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html#l00112">112</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html">NumericAddressedBackendMuxedRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1432,7 +1468,7 @@ template&lt;class UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html">NumericAddressedBackendMuxedRegisterAccessor</a></li>
-    <li class="footer">Generated on Fri Jul 10 2020 03:53:13 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Jul 11 2020 03:53:13 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

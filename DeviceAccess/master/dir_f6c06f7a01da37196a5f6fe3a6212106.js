@@ -27,8 +27,12 @@ var dir_f6c06f7a01da37196a5f6fe3a6212106 =
       [ "DummyRegisterRawAccessor", "class_chimera_t_k_1_1_dummy_register_raw_accessor.html", "class_chimera_t_k_1_1_dummy_register_raw_accessor" ]
     ] ],
     [ "ExceptionDummyBackend.h", "_exception_dummy_backend_8h.html", [
+      [ "ExceptionDummyPushDecorator", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html", "struct_chimera_t_k_1_1_exception_dummy_push_decorator" ],
       [ "ExceptionDummy", "class_chimera_t_k_1_1_exception_dummy.html", "class_chimera_t_k_1_1_exception_dummy" ],
-      [ "BackendRegisterer", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer.html", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer" ]
+      [ "BackendRegisterer", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer.html", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer" ],
+      [ "ExceptionDummyPushDecoratorBase", "struct_chimera_t_k_1_1_exception_dummy_push_decorator_base.html", "struct_chimera_t_k_1_1_exception_dummy_push_decorator_base" ],
+      [ "ExceptionDummyPushDecorator", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html", "struct_chimera_t_k_1_1_exception_dummy_push_decorator" ],
+      [ "Buffer", "struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer.html", "struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer" ]
     ] ],
     [ "FixedPointConverter.h", "device__backends_2include_2_fixed_point_converter_8h.html", "device__backends_2include_2_fixed_point_converter_8h" ],
     [ "IEEE754_SingleConverter.h", "_i_e_e_e754___single_converter_8h.html", [

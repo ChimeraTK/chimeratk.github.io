@@ -2,7 +2,7 @@ var searchData=
 [
   ['channelregisterdescriptorbase',['ChannelRegisterDescriptorBase',['../struct_channel_register_descriptor_base.html',1,'']]],
   ['channelregisterdescriptorbase_3c_20regchannel3_20_3e',['ChannelRegisterDescriptorBase&lt; RegChannel3 &gt;',['../struct_channel_register_descriptor_base.html',1,'']]],
-  ['channelregisterdescriptorbase_3c_20regchannel4_20_3e',['ChannelRegisterDescriptorBase&lt; RegChannel4 &gt;',['../struct_channel_register_descriptor_base.html',1,'']]],
+  ['channelregisterdescriptorbase_3c_20regchannel4_5fpush_20_3e',['ChannelRegisterDescriptorBase&lt; RegChannel4_push &gt;',['../struct_channel_register_descriptor_base.html',1,'']]],
   ['channelregisterdescriptorbase_3c_20regchannellast_20_3e',['ChannelRegisterDescriptorBase&lt; RegChannelLast &gt;',['../struct_channel_register_descriptor_base.html',1,'']]],
   ['comparemodulename_5fpred',['compareModuleName_pred',['../class_chimera_t_k_1_1compare_module_name__pred.html',1,'ChimeraTK']]],
   ['compareregisterinfosbyname_5ffunctor',['compareRegisterInfosByName_functor',['../class_chimera_t_k_1_1compare_register_infos_by_name__functor.html',1,'ChimeraTK']]],

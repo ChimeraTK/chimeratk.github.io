@@ -1,6 +1,7 @@
 var struct_register_descriptor_base =
 [
     [ "forceAsyncReadInconsistency", "struct_register_descriptor_base.html#aa6cca93c696b721d6ad6b43d9d005ff2", null ],
+    [ "isPush", "struct_register_descriptor_base.html#af57d0534ce35b70d52b2618ced6a5185", null ],
     [ "isReadable", "struct_register_descriptor_base.html#a2400055ed5076b82e62c746f48f9a301", null ],
     [ "isWriteable", "struct_register_descriptor_base.html#ab37f2475709b24565b586926c39cf882", null ],
     [ "nRuntimeErrorCases", "struct_register_descriptor_base.html#a69763ae2bf994bbc97be829123629c9d", null ],
