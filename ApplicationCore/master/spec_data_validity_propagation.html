@@ -86,23 +86,23 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><blockquote class="doxtable">
-<p><b>DRAFT VERSION, WRITE-UP IN PROGRESS!</b> </p>
+<p><b>This is a release candidate in implementation</b> </p>
 </blockquote>
-<p>Specification version v1.0</p>
+<p>Specification version V1.0RC1</p>
 <h2>1. General idea </h2>
-<h3>1.1 Version v1.0</h3>
 <ul>
-<li>1.1.1 In ApplicationCore each variable has a data validiy flag attached to it. ChimeraTK::DataValidity can be 'ok' or 'faulty'.</li>
-<li>1.1.2 This flag is automatically propagated: If one of the inputs of an ApplicationModule is faulty, the data validity of the module becomes faulty, which means all outputs of this module will automatically be flagged as faulty. Fan-outs might be special cases (see 2.4).</li>
-<li>1.1.3 If a device is in error state, all variables which are read from it shall be marked as 'faulty'. This flag is then propagated through all the modules (via 1.1.2) so it shows up in the control system.</li>
-<li>1.1.4 The user has the possibility to query the data validity of the module</li>
-<li>1.1.5 The user has the possibility to set the data validity of the module to 'faulty'. However, the user cannot actively set the module to 'ok' if one of the inputs is 'faulty'.</li>
-<li><a class="anchor" id="dataValidity_1_1_6"></a>1.1.6 The user can decide to flag individual outputs as bad. However, the user cannot actively set an output to 'ok' if the data validity of the module is 'faulty' (to be more precise: if the validity of the corresponding DataFaultCounter is faulty). <a class="el" href="spec_data_validity_propagation.html#dataValidity_comment_1_1_6">(*)</a></li>
-<li>1.1.7 The user can get the data validity flag of individual inputs and take special actions.</li>
+<li>1.1 In ApplicationCore each variable has a data validiy flag attached to it. ChimeraTK::DataValidity can be 'ok' or 'faulty'.</li>
+<li>1.2 This flag is automatically propagated: If one of the inputs of an ApplicationModule is faulty, the data validity of the module becomes faulty, which means all outputs of this module will automatically be flagged as faulty. Fan-outs might be special cases (see 2.4).</li>
+<li>1.3 If a device is in error state, all variables which are read from it shall be marked as 'faulty'. This flag is then propagated through all the modules (via 1.1.2) so it shows up in the control system.</li>
+<li>1.4 The user has the possibility to query the data validity of the module</li>
+<li>1.5 The user has the possibility to set the data validity of the module to 'faulty'. However, the user cannot actively set the module to 'ok' if one of the inputs is 'faulty'.</li>
+<li><a class="anchor" id="dataValidity_1_6"></a>1.6 The user can decide to flag individual outputs as bad. However, the user cannot actively set an output to 'ok' if the data validity of the module is 'faulty' (to be more precise: if the validity of the corresponding DataFaultCounter is faulty). <a class="el" href="spec_data_validity_propagation.html#dataValidity_comment_1_6">(*)</a></li>
+<li>1.7 The user can get the data validity flag of individual inputs and take special actions.</li>
+<li>1.8 The data validity of receiving variables is set to 'faulty' on construction. Like this, data is marked as faulty as long as no sensible initial values have been propagated.</li>
 </ul>
 <h3>Comments</h3>
 <ul>
-<li><a class="anchor" id="dataValidity_comment_1_1_6"></a><a class="el" href="spec_data_validity_propagation.html#dataValidity_1_1_6">1.1.6</a>: The alternative implementation to add a data validity flag to the write() function is not a good solution because it does not work with writeAll().</li>
+<li><a class="anchor" id="dataValidity_comment_1_6"></a><a class="el" href="spec_data_validity_propagation.html#dataValidity_1_6">1.6</a>: The alternative implementation to add a data validity flag to the write() function is not a good solution because it does not work with writeAll().</li>
 </ul>
 <h2>2. Technical implementation </h2>
 <h3>2.1 MetaDataPropagatingRegisterDecorator (*)</h3>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <li>2.1.1 Each input and each output of a module (or fan out) is decorated with a <a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html" title="NDRegisterAccessorDecorator which propagates meta data attached to input process variables through th...">ChimeraTK::MetaDataPropagatingRegisterDecorator</a>.</li>
 <li>2.1.2 The decorator knows about the DataFaultCounter to which it is associated.</li>
 <li>2.1.3 <b>read:</b> For each read operation it checks the incoming data validity and informs the associated ChimeraTK::DataFaultCounter about the status.</li>
-<li>2.1.5 <b>write:</b> When writing, the decorator is checking the validity flags of the DataFaultCounter and the individual flag of the output. Only if both are 'ok' the output validity is 'ok', otherwise the outgoing data is send as 'faulty'.</li>
+<li>2.1.5 <b>write:</b> When writing, the decorator is checking the validity flags of the DataFaultCounter and the individual flag of the output set by the user. Only if both are 'ok' the output validity is 'ok', otherwise the outgoing data is send as 'faulty'.</li>
 </ul>
 <h3>2.2 DataFaultCounter</h3>
 <ul>
@@ -137,6 +137,10 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <ul>
 <li>2.5.1 When creating the objects, ApplicationCore takes care that the MetaDataPropagatingRegisterDecorator is always placed around the ExceptionHandlingDecorators. Like this a <code>faulty</code> flag raised by the ExceptionHandlingDecorator is automatically picked up by the MetaDataPropagatingRegisterDecorator.</li>
 <li>2.5.2 The first failing read returns with the old data and the 'faulty' flag. Like this the flag is propagated to the outputs. Only further reads might freeze until the device is available again.</li>
+</ul>
+<h3>2.6 Application class</h3>
+<ul>
+<li>2.6.1 For device variables, the requirement of setting receiving endpoints to 'faulty' on construction can not be fulfilled. In DeviceAccess the accessor are bidirectional and provide no possibility to distinguish sender and receiver. Instead, the validity is set right after construction in Application::createDeviceVariable() for receivers.</li>
 </ul>
 <h3>Comments:</h3>
 <ul>
@@ -171,7 +175,7 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Fri Jul 10 2020 03:54:15 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Jul 11 2020 03:54:16 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
