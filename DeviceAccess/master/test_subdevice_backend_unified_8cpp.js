@@ -1,6 +1,8 @@
 var test_subdevice_backend_unified_8cpp =
 [
     [ "AreaType", "struct_area_type.html", "struct_area_type" ],
+    [ "StaticCore", "struct_static_core.html", "struct_static_core" ],
+    [ "Regs3Type", "struct_regs3_type.html", "struct_regs3_type" ],
     [ "MyRegister1", "struct_my_register1.html", "struct_my_register1" ],
     [ "MyArea1", "struct_my_area1.html", "struct_my_area1" ],
     [ "BOOST_TEST_DYN_LINK", "test_subdevice_backend_unified_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],

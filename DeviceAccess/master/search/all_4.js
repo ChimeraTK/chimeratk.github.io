@@ -80,6 +80,7 @@ var searchData=
   ['creatormap_5fcompat',['creatorMap_compat',['../class_chimera_t_k_1_1_backend_factory.html#a15b24b38de6528dc74626fc8f1a6501b',1,'ChimeraTK::BackendFactory']]],
   ['crend',['crend',['../class_chimera_t_k_1_1_buffering_register_accessor.html#aa735f97cff3def46fd81285727ae41df',1,'ChimeraTK::BufferingRegisterAccessor::crend()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#acd3bdafc63846390db253f4ac27e98f6',1,'ChimeraTK::OneDRegisterAccessor::crend()']]],
   ['currentmodule',['currentModule',['../class_chimera_t_k_1_1_logical_name_map_parser.html#a4a022ca1c826353be4053b35049fa510',1,'ChimeraTK::LogicalNameMapParser']]],
+  ['currentvalue',['currentValue',['../struct_static_core.html#a540b46cdf636da7518414030e498b095',1,'StaticCore']]],
   ['currentversion',['currentVersion',['../class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#ad1faf9e348d58077399543b20ff0b3e7',1,'ChimeraTK::LNMBackendVariableAccessor']]],
   ['custom_5fbackends_2edox',['custom_backends.dox',['../custom__backends_8dox.html',1,'']]],
   ['custombackend',['CustomBackend',['../class_custom_backend.html',1,'']]],

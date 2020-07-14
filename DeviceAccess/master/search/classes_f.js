@@ -18,6 +18,7 @@ var searchData=
   ['sdm',['Sdm',['../struct_chimera_t_k_1_1_sdm.html',1,'ChimeraTK']]],
   ['sharedaccessor',['SharedAccessor',['../struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html',1,'ChimeraTK::LogicalNameMappingBackend']]],
   ['shareddummybackend',['SharedDummyBackend',['../class_chimera_t_k_1_1_shared_dummy_backend.html',1,'ChimeraTK']]],
+  ['staticcore',['StaticCore',['../struct_static_core.html',1,'']]],
   ['stow_5fprivate',['stow_private',['../structaccess_private_data_1_1stow__private.html',1,'accessPrivateData']]],
   ['stowed',['stowed',['../structaccess_private_data_1_1stowed.html',1,'accessPrivateData']]],
   ['subdevicebackend',['SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html',1,'ChimeraTK']]],

@@ -19,6 +19,7 @@ var searchData=
   ['usertypemap',['userTypeMap',['../namespace_chimera_t_k.html#a238e0526cc4fc45ee733782c69cca349',1,'ChimeraTK']]],
   ['usertypetonumeric',['userTypeToNumeric',['../namespace_chimera_t_k.html#a7fbd27ae4a9682ebb5b14b6c967f488b',1,'ChimeraTK']]],
   ['usertypetousertype',['userTypeToUserType',['../namespace_chimera_t_k.html#a4db52a34472ed003b9ffeb24195f457e',1,'ChimeraTK']]],
+  ['usestatus',['useStatus',['../struct_static_core.html#a8ad4d88b5073deae5dc6b8f59c1bb377',1,'StaticCore']]],
   ['utilities',['Utilities',['../class_chimera_t_k_1_1_utilities.html',1,'ChimeraTK::Utilities'],['../class_chimera_t_k_1_1_utilities.html#a2bb15b10961946a6502a19cda3c4e958',1,'ChimeraTK::Utilities::Utilities()']]],
   ['utilities_2ecpp',['Utilities.cpp',['../_utilities_8cpp.html',1,'']]],
   ['utilities_2eh',['Utilities.h',['../mtca4u__compatibility__headers_2_utilities_8h.html',1,'(Global Namespace)'],['../util_2include_2_utilities_8h.html',1,'(Global Namespace)']]]

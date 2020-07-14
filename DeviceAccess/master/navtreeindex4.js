@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#af925e7fbb95678063036e1097808d50d":[17,0,1,58,28],
 "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#afa8dc77fdb489d7d46a49be62cd4987b":[17,0,1,58,21],
 "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#afb35bdda934d74b34aa2a50e92f4f829":[17,0,1,58,13],
 "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html":[17,0,1,59],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a92b9f9999f51e4d626af6f4bc12a5609":[17,0,1,73,1,11],
 "class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a9a11cc53b53a56a1f27bfe9a6e4c3297":[17,0,1,73,1,0],
 "class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#aa7105dd08e6f8bba608d984efc2b3202":[17,0,1,73,1,12],
-"class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#aaba63f89027bc94ccf0ee079ed6dfcd3":[17,0,1,73,1,9],
-"class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#ab004015e5df37e57fbe3171eca8f8cd8":[17,0,1,73,1,4]
+"class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#aaba63f89027bc94ccf0ee079ed6dfcd3":[17,0,1,73,1,9]
 };
