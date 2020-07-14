@@ -229,9 +229,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a031cd64facf59b5e6142470c4b4bbfda"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:a031cd64facf59b5e6142470c4b4bbfda"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#a031cd64facf59b5e6142470c4b4bbfda">setAppAccessorImplementation</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; impl) const</td></tr>
 <tr class="separator:a031cd64facf59b5e6142470c4b4bbfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bd130f393c86fb123935efbe2451857"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:a6bd130f393c86fb123935efbe2451857"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#a6bd130f393c86fb123935efbe2451857">getConstAccessor</a> () const</td></tr>
-<tr class="separator:a6bd130f393c86fb123935efbe2451857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e0ca03621ea04cb6b9aab2ebf7b777"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a15e0ca03621ea04cb6b9aab2ebf7b777"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#a15e0ca03621ea04cb6b9aab2ebf7b777">createConstAccessor</a> (AccessModeFlags accessModeFlags) const</td></tr>
+<tr class="separator:a15e0ca03621ea04cb6b9aab2ebf7b777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad33632ffd3d0b36f134cd6997fac1cdf"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#ad33632ffd3d0b36f134cd6997fac1cdf">getUniqueId</a> () const</td></tr>
 <tr class="memdesc:ad33632ffd3d0b36f134cd6997fac1cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the unique ID of this node (will change every time the application is started).  <a href="#ad33632ffd3d0b36f134cd6997fac1cdf">More...</a><br /></td></tr>
 <tr class="separator:ad33632ffd3d0b36f134cd6997fac1cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,7 +295,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a4b75169aa1e7bedd394e7020519f2c94a9c6a9d9f033001a9b3104984d319563b"></a>Push&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00183">183</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00184">184</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -689,6 +689,28 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a15e0ca03621ea04cb6b9aab2ebf7b777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15e0ca03621ea04cb6b9aab2ebf7b777">&#9670;&nbsp;</a></span>createConstAccessor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt; ChimeraTK::VariableNetworkNode::createConstAccessor </td>
+          <td>(</td>
+          <td class="paramtype">AccessModeFlags&#160;</td>
+          <td class="paramname"><em>accessModeFlags</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00340">340</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+
+</div>
+</div>
 <a id="a024d12d24ea13597b677318b8dde680f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a024d12d24ea13597b677318b8dde680f">&#9670;&nbsp;</a></span>dump()</h2>
 
@@ -744,7 +766,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00297">297</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00329">329</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -764,27 +786,6 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_variable_network_node_8cc_source.html#l00348">348</a> of file <a class="el" href="_variable_network_node_8cc_source.html">VariableNetworkNode.cc</a>.</p>
-
-</div>
-</div>
-<a id="a6bd130f393c86fb123935efbe2451857"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bd130f393c86fb123935efbe2451857">&#9670;&nbsp;</a></span>getConstAccessor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UserType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt; ChimeraTK::VariableNetworkNode::getConstAccessor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00308">308</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -1215,7 +1216,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Return the unique ID of this node (will change every time the application is started). </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00171">171</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00172">172</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 <div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-21-summary" class="dynsummary" style="display:block;">
@@ -1442,7 +1443,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Factory function for a constant (a constructor cannot be templated) </p>
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00275">275</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00307">307</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 <div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-28-summary" class="dynsummary" style="display:block;">
@@ -1689,7 +1690,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00315">315</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00349">349</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -2041,7 +2042,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00191">191</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variable_network_node_8h_source.html#l00192">192</a> of file <a class="el" href="_variable_network_node_8h_source.html">VariableNetworkNode.h</a>.</p>
 
 </div>
 </div>
@@ -2055,7 +2056,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a></li>
-    <li class="footer">Generated on Sat Jul 11 2020 03:54:18 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Jul 14 2020 03:54:23 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

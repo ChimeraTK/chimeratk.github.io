@@ -1,7 +1,6 @@
 var class_chimera_t_k_1_1_constant_accessor =
 [
     [ "ConstantAccessor", "class_chimera_t_k_1_1_constant_accessor.html#af2ffc316265c3af54206126280004418", null ],
-    [ "~ConstantAccessor", "class_chimera_t_k_1_1_constant_accessor.html#abd9755417448566714011104fc83668b", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_constant_accessor.html#a69ca261b6d54e902408b412eb75d93c1", null ],
     [ "doReadTransferSynchronously", "class_chimera_t_k_1_1_constant_accessor.html#ac88209e4b855c84faab1cb94ea4a5074", null ],
     [ "doWriteTransfer", "class_chimera_t_k_1_1_constant_accessor.html#a67fcdeb293b94401d2fc67487576d0c7", null ],

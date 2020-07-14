@@ -67,6 +67,9 @@ var hierarchy =
     [ "DemoDummy::BackendRegisterer", "class_demo_dummy_1_1_backend_registerer.html", null ],
     [ "TimerDummy::BackendRegisterer", "class_timer_dummy_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::ConfigParser", "class_chimera_t_k_1_1_config_parser.html", null ],
+    [ "ChimeraTK::ConstantAccessorCreator", "struct_chimera_t_k_1_1_constant_accessor_creator.html", [
+      [ "ChimeraTK::ConstantAccessorCreatorImpl< UserType >", "struct_chimera_t_k_1_1_constant_accessor_creator_impl.html", null ]
+    ] ],
     [ "DeviceBackendImpl", null, [
       [ "TimerDummy", "class_timer_dummy.html", null ]
     ] ],
@@ -447,7 +450,6 @@ var hierarchy =
       ] ]
     ] ],
     [ "ChimeraTK::RecoveryHelper", "struct_chimera_t_k_1_1_recovery_helper.html", null ],
-    [ "ChimeraTK::RuntimeErrorCollector", "struct_chimera_t_k_1_1_runtime_error_collector.html", null ],
     [ "ScalarRegisterAccessor", null, [
       [ "ChimeraTK::ScalarAccessor< UserType >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
       [ "ChimeraTK::ScalarAccessor< double >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],

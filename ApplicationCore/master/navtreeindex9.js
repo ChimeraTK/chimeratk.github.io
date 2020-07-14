@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"test_device_accessors_8cc.html#aae17d3638073297654152058593b98ec":[16,0,10,0,6,9],
+"test_device_accessors_8cc.html#ab64cce8536140e53248bb2569d4c39b0":[16,0,10,0,6,17],
 "test_device_accessors_8cc.html#ac11b0b6d6d453f51cfadf0d0ae9ceaf9":[16,0,10,0,6,20],
 "test_device_accessors_8cc_source.html":[16,0,10,0,6],
 "test_device_exception_flag_propagation_8cc.html":[16,0,10,0,7],

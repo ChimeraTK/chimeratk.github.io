@@ -1,7 +1,6 @@
 var searchData=
 [
   ['warnunconnectedvariables',['warnUnconnectedVariables',['../class_chimera_t_k_1_1_application.html#af638d687f2d229ab733c48f62f1a8877',1,'ChimeraTK::Application']]],
-  ['wrap',['wrap',['../struct_chimera_t_k_1_1_runtime_error_collector.html#adf86556b3a69f274f3f9c29513d7ce5b',1,'ChimeraTK::RuntimeErrorCollector']]],
   ['write',['write',['../class_chimera_t_k_1_1_array_accessor.html#a5606d0b5bc14407f0be9d47dca7612d6',1,'ChimeraTK::ArrayAccessor::write(ChimeraTK::VersionNumber versionNumber)=delete'],['../class_chimera_t_k_1_1_array_accessor.html#a9f39e90967b5befde4227ab273ef97c8',1,'ChimeraTK::ArrayAccessor::write()'],['../class_chimera_t_k_1_1_scalar_accessor.html#a02f5ea46e0582dfceb8e9cc06b25c302',1,'ChimeraTK::ScalarAccessor::write(ChimeraTK::VersionNumber versionNumber)=delete'],['../class_chimera_t_k_1_1_scalar_accessor.html#aa95b652b95fb7b51327486ce37d77ab8',1,'ChimeraTK::ScalarAccessor::write()']]],
   ['writeall',['writeAll',['../class_chimera_t_k_1_1_module.html#aa356298e86e9f5a9cc61627f61a48fca',1,'ChimeraTK::Module']]],
   ['writealldestructively',['writeAllDestructively',['../class_chimera_t_k_1_1_module.html#a447778ee24252278efe4547ac5dc5709',1,'ChimeraTK::Module']]],
