@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"struct_reg_bit2_of_word_firmware__push.html#ae9c60d24f6e7335d08eb746e117c5c57":[17,0,64,0],
 "struct_reg_bit3_of_var.html":[17,0,65],
 "struct_reg_bit3_of_var.html#a183b031de36e77ebf2191dd378962276":[17,0,65,0],
 "struct_reg_bit3_of_var.html#a6a28636eda435609f12612d6f749a387":[17,0,65,2],
@@ -58,13 +59,14 @@ var NAVTREEINDEX12 =
 "struct_reg_full_area_scaled.html#ab1d41a016042428b49f5d23a6cd4a762":[17,0,72,5],
 "struct_reg_full_area_scaled.html#af68910dde0d9398d343ae911bbfd9e8d":[17,0,72,4],
 "struct_reg_monostable_trigger.html":[17,0,78],
+"struct_reg_monostable_trigger.html#a076fc12fa1f0bd36e8d697d86af2e0ff":[17,0,78,3],
 "struct_reg_monostable_trigger.html#a083ec04b5594169f83d35cfb50e64740":[17,0,78,1],
 "struct_reg_monostable_trigger.html#a08c3c002614a1e4530a3b147cae6e192":[17,0,78,0],
-"struct_reg_monostable_trigger.html#a4ac0773d98df7f1005df03c0968643f7":[17,0,78,4],
-"struct_reg_monostable_trigger.html#a88c81222bafac52f0105f954ec9d06d6":[17,0,78,6],
-"struct_reg_monostable_trigger.html#abad8ba595922b799cafc26459c16a215":[17,0,78,5],
+"struct_reg_monostable_trigger.html#a4ac0773d98df7f1005df03c0968643f7":[17,0,78,5],
+"struct_reg_monostable_trigger.html#a88c81222bafac52f0105f954ec9d06d6":[17,0,78,7],
+"struct_reg_monostable_trigger.html#abad8ba595922b799cafc26459c16a215":[17,0,78,6],
 "struct_reg_monostable_trigger.html#ac46dc5ed8884528cac2f147e9fa20850":[17,0,78,2],
-"struct_reg_monostable_trigger.html#aeb78662c8d0d38c288b8122eebeb8311":[17,0,78,3],
+"struct_reg_monostable_trigger.html#aeb78662c8d0d38c288b8122eebeb8311":[17,0,78,4],
 "struct_reg_part_of_area.html":[17,0,79],
 "struct_reg_part_of_area.html#a03076c2a6a4f9acf256de343f55c5363":[17,0,79,3],
 "struct_reg_part_of_area.html#a4068e018c9e0ece9a051d861f3e11d3a":[17,0,79,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "test_access_mode_flags_8cc.html#a9dfdfee8f5df525f2f7779f3922f89fd":[18,0,7,1,0,2],
 "test_access_mode_flags_8cc_source.html":[18,0,7,1,0],
 "test_accessor_performance_8cpp.html":[18,0,7,1,1],
-"test_accessor_performance_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[18,0,7,1,1,0],
-"test_accessor_performance_8cpp_source.html":[18,0,7,1,1],
-"test_async_read_8cpp.html":[18,0,7,1,2]
+"test_accessor_performance_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[18,0,7,1,1,0]
 };
