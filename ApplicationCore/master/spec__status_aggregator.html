@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('spec__status_aggregator.html','');});
 </ol>
 <h3>Constraints and issues</h3>
 <ul>
-<li>As detection of underlying instances can only be performed in the constructor, the StatusAggregator has to be declared in user code after all instances of <code><a class="el" href="struct_chimera_t_k_1_1_status_monitor.html" title="Common base for StatusMonitors. ">ChimeraTK::StatusMonitor</a></code> in a <a class="el" href="struct_module.html">Module</a>.</li>
+<li>As detection of underlying instances can only be performed in the constructor, the StatusAggregator has to be declared in user code after all instances of <code><a class="el" href="struct_chimera_t_k_1_1_status_monitor.html" title="Common base for StatusMonitors. ">ChimeraTK::StatusMonitor</a></code> in a Module.</li>
 <li>Usage of <code>HierarchyModifier::moveToRoot</code> on a StatusAggregator is controversial (currently not allowed, see R2.2):<ul>
 <li>Either: Detection of aggregated instances may take place from the virtual hierarchy level of the original (C++) parent module downwards. The Aggregator and its status output would then appear on the root level.</li>
 <li>Or: <code>HierarchyModifier::moveToRoot</code> is not allowed on StatusAggregators</li>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('spec__status_aggregator.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Wed Jul 15 2020 03:54:17 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Jul 16 2020 03:54:31 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

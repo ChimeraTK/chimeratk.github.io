@@ -98,7 +98,7 @@ Introduction to the logging mechanism</h1>
 </ul>
 </li>
 <li>logFile: Give the logfile name. If the file is not empty logging messages will be appended. If you choose targetStream 0 or 1 and don't set a logFile the Logging module simply skips the file writing.</li>
-<li>logLevel: Choose a certain logging level of the <a class="el" href="struct_module.html">Module</a>. Messages send to the Logging module also include a logging level. The Logging module compares both levels and decides if a message is dropped (e.g. message level is DEBUG and <a class="el" href="struct_module.html">Module</a> level is ERROR) or broadcasted.</li>
+<li>logLevel: Choose a certain logging level of the Module. Messages send to the Logging module also include a logging level. The Logging module compares both levels and decides if a message is dropped (e.g. message level is DEBUG and Module level is ERROR) or broadcasted.</li>
 <li>maxTailLength: The number of messages published by the Logging module (see logTail), i.e. to the control system. This length has no influence on the targetStreams, that receive all messages (depending on the logLevel). The logLevel also applies to messages that are published by the Logging module via the logTail</li>
 </ul>
 <p>Available logging levels are:</p><ul>
@@ -118,7 +118,7 @@ Introduction to the logging mechanism</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Wed Jul 15 2020 03:54:17 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Jul 16 2020 03:54:31 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

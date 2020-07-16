@@ -90,7 +90,8 @@ $(document).ready(function(){initNavTree('test_exception_handling_8cc.html','');
 <div class="title">testExceptionHandling.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstring&gt;</code><br />
+<div class="textblock"><code>#include &lt;ChimeraTK/ScalarRegisterAccessor.h&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;future&gt;</code><br />
 <code>#include &lt;boost/mpl/list.hpp&gt;</code><br />
 <code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
@@ -119,7 +120,7 @@ $(document).ready(function(){initNavTree('test_exception_handling_8cc.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_module.html">Module</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_poll_module.html">PollModule</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dummy_application.html">DummyApplication</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,10 +144,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7446aef6596bd4ff34099ca24e7118c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a7446aef6596bd4ff34099ca24e7118c6">BOOST_FIXTURE_TEST_CASE</a> (testFaultReporting, <a class="el" href="struct_fixture__no_test_facility.html">Fixture_noTestFacility</a>)</td></tr>
-<tr class="separator:a7446aef6596bd4ff34099ca24e7118c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad30c8c6b3905b9e97bc774016e4eb805"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ad30c8c6b3905b9e97bc774016e4eb805">BOOST_AUTO_TEST_CASE</a> (testBlockingRead)</td></tr>
-<tr class="separator:ad30c8c6b3905b9e97bc774016e4eb805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70888035ccfc14e454b00835fd34280e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a70888035ccfc14e454b00835fd34280e">BOOST_FIXTURE_TEST_CASE</a> (runtimeErrorHandling_testFaultReporting, <a class="el" href="struct_fixture__no_test_facility.html">Fixture_noTestFacility</a>)</td></tr>
+<tr class="separator:a70888035ccfc14e454b00835fd34280e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866c9c02d656cd0f576cd0668aa01890"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a866c9c02d656cd0f576cd0668aa01890">BOOST_FIXTURE_TEST_CASE</a> (runtimeErrorHandling_testPolledRead, <a class="el" href="struct_fixture__no_test_facility.html">Fixture_noTestFacility</a>)</td></tr>
+<tr class="separator:a866c9c02d656cd0f576cd0668aa01890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeda87737e9ae2c6abce4bdd103b2ebac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#aeda87737e9ae2c6abce4bdd103b2ebac">BOOST_AUTO_TEST_CASE</a> (testReadLatest)</td></tr>
 <tr class="separator:aeda87737e9ae2c6abce4bdd103b2ebac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4b08ee89f81e6cfaafc694376abcbde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ae4b08ee89f81e6cfaafc694376abcbde">BOOST_AUTO_TEST_CASE</a> (testReadNonBlocking)</td></tr>
@@ -188,33 +189,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00004">4</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00005">5</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ad30c8c6b3905b9e97bc774016e4eb805"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad30c8c6b3905b9e97bc774016e4eb805">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">testBlockingRead&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00147">147</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
-
-</div>
-</div>
 <a id="aeda87737e9ae2c6abce4bdd103b2ebac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeda87737e9ae2c6abce4bdd103b2ebac">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeda87737e9ae2c6abce4bdd103b2ebac">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,12 +210,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00157">157</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00251">251</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
 <a id="ae4b08ee89f81e6cfaafc694376abcbde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4b08ee89f81e6cfaafc694376abcbde">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4b08ee89f81e6cfaafc694376abcbde">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,12 +230,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00159">159</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00253">253</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
 <a id="a0d6de50cd7f9e4c3769edafff9c39a9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d6de50cd7f9e4c3769edafff9c39a9c">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d6de50cd7f9e4c3769edafff9c39a9c">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,12 +250,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00161">161</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00255">255</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
 <a id="a33c9f9ebec96166ceec27d4d37889a34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33c9f9ebec96166ceec27d4d37889a34">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a33c9f9ebec96166ceec27d4d37889a34">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,7 +270,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00296">296</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00390">390</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -302,7 +283,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ad89eea204eb2b15c899bccefadcef0c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad89eea204eb2b15c899bccefadcef0c5">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad89eea204eb2b15c899bccefadcef0c5">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -317,7 +298,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00416">416</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00510">510</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -330,7 +311,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ad4b5c302de62b5a103abac85b0858bca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4b5c302de62b5a103abac85b0858bca">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[7/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4b5c302de62b5a103abac85b0858bca">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,7 +327,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>So we have to read until we get a DataValidity::ok </p>
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00520">520</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00614">614</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -359,7 +340,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a78012c8166ca6c6e6381eec2456e6fe3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78012c8166ca6c6e6381eec2456e6fe3">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[8/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a78012c8166ca6c6e6381eec2456e6fe3">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[7/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -374,7 +355,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00594">594</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00688">688</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -387,7 +368,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ae93b8817ddba762e752a002f3b7e597c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae93b8817ddba762e752a002f3b7e597c">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[9/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93b8817ddba762e752a002f3b7e597c">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[8/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -403,12 +384,12 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000026">Todo:</a></b></dt><dd>FIXME: Write test that errors during constant writing are handled correctly, incl. correct error messages to the control system </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00640">640</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00734">734</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
 <a id="a721abe199d00d1387f059d7982c8e0bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a721abe199d00d1387f059d7982c8e0bf">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[10/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a721abe199d00d1387f059d7982c8e0bf">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[9/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -423,7 +404,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00642">642</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00736">736</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -435,8 +416,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7446aef6596bd4ff34099ca24e7118c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7446aef6596bd4ff34099ca24e7118c6">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE()</h2>
+<a id="a70888035ccfc14e454b00835fd34280e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70888035ccfc14e454b00835fd34280e">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,7 +425,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">testFaultReporting&#160;</td>
+          <td class="paramtype">runtimeErrorHandling_testFaultReporting&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -461,7 +442,37 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00123">123</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00146">146</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="a866c9c02d656cd0f576cd0668aa01890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a866c9c02d656cd0f576cd0668aa01890">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">runtimeErrorHandling_testPolledRead&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_fixture__no_test_facility.html">Fixture_noTestFacility</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00181">181</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
@@ -478,7 +489,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00165">165</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00259">259</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
@@ -494,7 +505,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00166">166</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00260">260</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
@@ -510,7 +521,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00167">167</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00261">261</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
@@ -520,7 +531,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_exception_handling_8cc.html">testExceptionHandling.cc</a></li>
-    <li class="footer">Generated on Wed Jul 15 2020 03:54:17 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Jul 16 2020 03:54:31 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -40,5 +40,5 @@ var searchData=
   ['stepapplication',['stepApplication',['../class_chimera_t_k_1_1_application.html#af73af6e9bfd23e6e970ed5bf976068d4',1,'ChimeraTK::Application::stepApplication()'],['../class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780',1,'ChimeraTK::TestFacility::stepApplication()']]],
   ['stopmeasurement',['stopMeasurement',['../class_chimera_t_k_1_1_profiler.html#a35af786affb9aecdc2e36a792c9ff5a5',1,'ChimeraTK::Profiler']]],
   ['stream',['stream',['../class_chimera_t_k_1_1_pushable_stream.html#a916dbc0fd3430135e4fbb2a73c22e52e',1,'ChimeraTK::PushableStream']]],
-  ['submodule',['submodule',['../class_chimera_t_k_1_1_module.html#abf01bd4e8bf267199d6567198115e61d',1,'ChimeraTK::Module']]]
+  ['submodule',['submodule',['../class_chimera_t_k_1_1_module.html#a5b69b847a580b0c4aa20309a81246b0c',1,'ChimeraTK::Module']]]
 ];

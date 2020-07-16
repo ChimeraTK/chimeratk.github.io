@@ -5,5 +5,5 @@ var struct_dummy_application =
     [ "defineConnections", "struct_dummy_application.html#ad0420e423c4b93768823b4eeaa692e15", null ],
     [ "cs", "struct_dummy_application.html#a8ecd42bbd5554fb8866e463601ed872f", null ],
     [ "device", "struct_dummy_application.html#ada422297bc2ccad7a961f675586c3b4f", null ],
-    [ "m", "struct_dummy_application.html#a5c4093bd82d245b9f2cbff95103c251a", null ]
+    [ "pollModule", "struct_dummy_application.html#aeb52fa208f5bfb6a50cb1e30e49e9ebb", null ]
 ];

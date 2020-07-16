@@ -1,6 +1,6 @@
 var test_exception_handling_8cc =
 [
-    [ "Module", "struct_module.html", "struct_module" ],
+    [ "PollModule", "struct_poll_module.html", "struct_poll_module" ],
     [ "DummyApplication", "struct_dummy_application.html", "struct_dummy_application" ],
     [ "Fixture_noTestFacility", "struct_fixture__no_test_facility.html", "struct_fixture__no_test_facility" ],
     [ "TestApplication", "struct_test_application.html", "struct_test_application" ],
@@ -9,7 +9,6 @@ var test_exception_handling_8cc =
     [ "RealisticModule", "struct_realistic_module.html", "struct_realistic_module" ],
     [ "TestApplication2", "struct_test_application2.html", "struct_test_application2" ],
     [ "BOOST_TEST_MODULE", "test_exception_handling_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_exception_handling_8cc.html#ad30c8c6b3905b9e97bc774016e4eb805", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_exception_handling_8cc.html#aeda87737e9ae2c6abce4bdd103b2ebac", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_exception_handling_8cc.html#ae4b08ee89f81e6cfaafc694376abcbde", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_exception_handling_8cc.html#a0d6de50cd7f9e4c3769edafff9c39a9c", null ],
@@ -19,7 +18,8 @@ var test_exception_handling_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_exception_handling_8cc.html#a78012c8166ca6c6e6381eec2456e6fe3", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_exception_handling_8cc.html#ae93b8817ddba762e752a002f3b7e597c", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_exception_handling_8cc.html#a721abe199d00d1387f059d7982c8e0bf", null ],
-    [ "BOOST_FIXTURE_TEST_CASE", "test_exception_handling_8cc.html#a7446aef6596bd4ff34099ca24e7118c6", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "test_exception_handling_8cc.html#a70888035ccfc14e454b00835fd34280e", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "test_exception_handling_8cc.html#a866c9c02d656cd0f576cd0668aa01890", null ],
     [ "ExceptionDummyCDD1", "test_exception_handling_8cc.html#ad0474e2ca924acc9878f8eecb7f6c2ca", null ],
     [ "ExceptionDummyCDD2", "test_exception_handling_8cc.html#a2837104d761eaedd80116c5d648ba580", null ],
     [ "ExceptionDummyCDD3", "test_exception_handling_8cc.html#ad317b4ae499d6a8551f34453b61c4c03", null ]

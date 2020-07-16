@@ -5,7 +5,7 @@ var searchData=
   ['microdaq',['MicroDAQ',['../class_chimera_t_k_1_1_micro_d_a_q.html',1,'ChimeraTK']]],
   ['minmonitor',['MinMonitor',['../struct_chimera_t_k_1_1_min_monitor.html',1,'ChimeraTK']]],
   ['mixedgroup',['MixedGroup',['../struct_test_module_1_1_mixed_group.html',1,'TestModule']]],
-  ['module',['Module',['../struct_module.html',1,'Module'],['../class_chimera_t_k_1_1_module.html',1,'ChimeraTK::Module']]],
+  ['module',['Module',['../class_chimera_t_k_1_1_module.html',1,'ChimeraTK']]],
   ['module1',['Module1',['../struct_test_module_1_1_module1.html',1,'TestModule&lt; T &gt;::Module1'],['../struct_module1.html',1,'Module1']]],
   ['module2',['Module2',['../struct_module2.html',1,'']]],
   ['module3',['Module3',['../struct_module3.html',1,'']]],

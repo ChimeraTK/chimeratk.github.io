@@ -7,6 +7,7 @@ var searchData=
   ['poll',['poll',['../struct_polling_read_module.html#ab91956a91e789f400c507c6c304a70e1',1,'PollingReadModule']]],
   ['pollingreadmodule',['pollingReadModule',['../struct_polling_test_application.html#aa8a12ed184d33c00bcebd5913690db83',1,'PollingTestApplication']]],
   ['pollinputfromdevice',['pollInputFromDevice',['../struct_module3.html#a3a41e3d774c956a33e2a4fc59801f57d',1,'Module3']]],
+  ['pollmodule',['pollModule',['../struct_dummy_application.html#aeb52fa208f5bfb6a50cb1e30e49e9ebb',1,'DummyApplication']]],
   ['previousreadfailed',['previousReadFailed',['../class_chimera_t_k_1_1_exception_handling_decorator.html#a1c1ca495827f5fdb4ec6dae83bb8aa3e',1,'ChimeraTK::ExceptionHandlingDecorator']]],
   ['proxies',['proxies',['../class_chimera_t_k_1_1_device_module.html#a7428186cbfbb92002fc80b863de786f6',1,'ChimeraTK::DeviceModule']]],
   ['publicname',['publicName',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a9a509a8d919b656c9f7293fd181c42e6',1,'ChimeraTK::VariableNetworkNode_data']]],
