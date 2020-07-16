@@ -2,6 +2,8 @@ var class_chimera_t_k_1_1_unified_backend_test =
 [
     [ "EnableDisableActionList", "class_chimera_t_k_1_1_unified_backend_test_1_1_enable_disable_action_list.html", null ],
     [ "ExceptionReportingBackend", "struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html", "struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend" ],
+    [ "RegT_disableSyncReadTests_getter", "struct_chimera_t_k_1_1_unified_backend_test_1_1_reg_t__disable_sync_read_tests__getter.html", null ],
+    [ "RegT_disableSyncReadTests_getter< REG_T, typename std::enable_if< std::is_integral< decltype(REG_T::disableSyncReadTests)>::value >::type >", "struct_chimera_t_k_1_1_unified_backend_test_1_1_reg_t__disable_sync_read_tests__getter_3_01_r_e_a2bc294a9ab0759753ca4ea7ceaaa45e.html", null ],
     [ "addRegister", "class_chimera_t_k_1_1_unified_backend_test.html#a1aaa214c8db203527df5cdd08bde7c63", null ],
     [ "isAsyncRead", "class_chimera_t_k_1_1_unified_backend_test.html#a0f06f9d0dcbaef7c2d5237dead1f97ce", null ],
     [ "isRaw", "class_chimera_t_k_1_1_unified_backend_test.html#a91de67d6c6aaec4461ccd09c29245cb9", null ],
@@ -44,6 +46,8 @@ var class_chimera_t_k_1_1_unified_backend_test =
     [ "test_C_5_2_7_2", "class_chimera_t_k_1_1_unified_backend_test.html#abc337cbc6ca65ca675fef21e971b1c77", null ],
     [ "test_NOSPEC_valueAfterConstruction", "class_chimera_t_k_1_1_unified_backend_test.html#a0b7e5e218d46f89a2f68a7d04f6a27a8", null ],
     [ "test_NOSPEC_write", "class_chimera_t_k_1_1_unified_backend_test.html#aec963603aa9e175674288ec4efa9cadf", null ],
+    [ "testOnlyTransferElement", "class_chimera_t_k_1_1_unified_backend_test.html#a4146331a80e80ca6ac110ffe0d612a04", null ],
+    [ "_testOnlyTransferElement", "class_chimera_t_k_1_1_unified_backend_test.html#ae9fbfbf4616ab4b2b8d3aef405225cdb", null ],
     [ "cdd", "class_chimera_t_k_1_1_unified_backend_test.html#ad3f74d88389c6c2c7d9cea95cc8f38cb", null ],
     [ "registers", "class_chimera_t_k_1_1_unified_backend_test.html#a059c6435bddb12aa1cb1e48cde6d196a", null ]
 ];

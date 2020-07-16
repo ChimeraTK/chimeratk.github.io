@@ -2,6 +2,7 @@ var class_chimera_t_k_1_1_l_n_m_backend_variable_accessor =
 [
     [ "LNMBackendVariableAccessor", "class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#ab1dbc7a69ac2852c9b4809b510ea27b6", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a4e1a38bf1600f424fe6cfa69d8af4dd9", null ],
+    [ "doPreRead", "class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a06373e4b61b9ad48b19f13e1418c7b86", null ],
     [ "doPreWrite", "class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a82f5c5a7f68e6ec23f41f7686358de52", null ],
     [ "doReadTransferSynchronously", "class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a15f640648b0e3e2f5e7bd4dc77a006ef", null ],
     [ "doWriteTransfer", "class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#aa665dda2edf4b9aab028d16aafe686ee", null ],

@@ -2,6 +2,8 @@ var _unified_backend_test_8h =
 [
     [ "UnifiedBackendTest", "class_chimera_t_k_1_1_unified_backend_test.html", "class_chimera_t_k_1_1_unified_backend_test" ],
     [ "EnableDisableActionList", "class_chimera_t_k_1_1_unified_backend_test_1_1_enable_disable_action_list.html", null ],
+    [ "RegT_disableSyncReadTests_getter", "struct_chimera_t_k_1_1_unified_backend_test_1_1_reg_t__disable_sync_read_tests__getter.html", null ],
+    [ "RegT_disableSyncReadTests_getter< REG_T, typename std::enable_if< std::is_integral< decltype(REG_T::disableSyncReadTests)>::value >::type >", "struct_chimera_t_k_1_1_unified_backend_test_1_1_reg_t__disable_sync_read_tests__getter_3_01_r_e_a2bc294a9ab0759753ca4ea7ceaaa45e.html", null ],
     [ "ExceptionReportingBackend", "struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html", "struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend" ],
     [ "CHECK_APPLICATION_BUFFER", "_unified_backend_test_8h.html#a048d20ccdf8bf904afec713ede5b2cc2", null ],
     [ "CHECK_EQUALITY", "_unified_backend_test_8h.html#a3b6893388f16002bc124de0fe5fc18ae", null ],

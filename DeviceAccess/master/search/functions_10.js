@@ -109,6 +109,7 @@ var searchData=
   ['testnodataindmapfile',['testNoDataInDmapFile',['../class_d_map_file_parser_test.html#ae5c141f7c22c33d33cdaa6ccef4467c0',1,'DMapFileParserTest']]],
   ['testnotequal',['testNotEqual',['../class_version_number_test.html#ae9740ab7cf44047b24fa35e9b2fe7a7e',1,'VersionNumberTest']]],
   ['testnumericaddresses',['testNumericAddresses',['../class_register_path_test.html#a771ab65f7e01c200576861da199f773b',1,'RegisterPathTest']]],
+  ['testonlytransferelement',['testOnlyTransferElement',['../class_chimera_t_k_1_1_unified_backend_test.html#a4146331a80e80ca6ac110ffe0d612a04',1,'ChimeraTK::UnifiedBackendTest']]],
   ['testopen',['testOpen',['../class_dummy_backend_test.html#ab423e04bb75ff46d25b2026e5657cb48',1,'DummyBackendTest::testOpen()'],['../class_pcie_backend_test.html#aa6e194013bade461028dbdb540b406a7',1,'PcieBackendTest::testOpen()']]],
   ['testopenclose',['testOpenClose',['../class_dummy_backend_test.html#a5703146b6c4b689a19a372c161128d5f',1,'DummyBackendTest']]],
   ['testoverloadedstreamoperator',['testOverloadedStreamOperator',['../class_d_map_files_parser_test.html#aa8c51042ccf1f1783f89f96c353d1912',1,'DMapFilesParserTest']]],

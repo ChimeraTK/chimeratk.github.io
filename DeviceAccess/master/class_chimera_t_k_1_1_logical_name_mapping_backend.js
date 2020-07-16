@@ -20,6 +20,7 @@ var class_chimera_t_k_1_1_logical_name_mapping_backend =
     [ "LNMBackendVariableAccessor", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#acd3e54bb07d8008c355b3c584050d5a6", null ],
     [ "_catalogue_mutable", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#ad2eb01c9a9cacf4adcc1d6b8a1508afe", null ],
     [ "_devices", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a7951db5c4623f94e23ee5761db07020c", null ],
+    [ "_hasException", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#af214a587b7ed479ebe984b8b76b19de3", null ],
     [ "_lmapFileName", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#af84946cdb9dce95e0ee669127161a975", null ],
     [ "_parameters", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#ae578db87a49db2f3c2effc6403ddcd9c", null ],
     [ "catalogueCompleted", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#ac3778f93fd48c9073c1f8c2e1106e980", null ],
