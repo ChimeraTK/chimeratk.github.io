@@ -12,6 +12,7 @@ var searchData=
   ['testtypechangingdecorator_2ecpp',['testTypeChangingDecorator.cpp',['../test_type_changing_decorator_8cpp.html',1,'']]],
   ['testunidirectionalprocessarray_2ecpp',['testUnidirectionalProcessArray.cpp',['../test_unidirectional_process_array_8cpp.html',1,'']]],
   ['testunidirectionalprocessarraynowaitfornewdata_2ecpp',['testUnidirectionalProcessArrayNoWaitForNewData.cpp',['../test_unidirectional_process_array_no_wait_for_new_data_8cpp.html',1,'']]],
+  ['testunified_2ecpp',['testUnified.cpp',['../test_unified_8cpp.html',1,'']]],
   ['timestamp_2eh',['TimeStamp.h',['../_time_stamp_8h.html',1,'']]],
   ['timestampsource_2eh',['TimeStampSource.h',['../_time_stamp_source_8h.html',1,'']]],
   ['todouble_2eh',['toDouble.h',['../to_double_8h.html',1,'']]],

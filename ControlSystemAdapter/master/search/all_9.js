@@ -12,7 +12,9 @@ var searchData=
   ['instance_5fmutex',['instance_mutex',['../class_chimera_t_k_1_1_application_base.html#aad484a1722c03b9b270c95a649276177',1,'ChimeraTK::ApplicationBase']]],
   ['instancetype',['InstanceType',['../class_chimera_t_k_1_1_process_array.html#ab3ed8ce4da736ec65ea938eb401f46dd',1,'ChimeraTK::ProcessArray']]],
   ['interrupt',['interrupt',['../class_chimera_t_k_1_1_bidirectional_process_array.html#abe253acf5011ef0fe61a288c9050171f',1,'ChimeraTK::BidirectionalProcessArray::interrupt()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#ac48b0c941a29ad8a1e0a04f24277b46e',1,'ChimeraTK::UnidirectionalProcessArray::interrupt()']]],
-  ['isreadable',['isReadable',['../class_chimera_t_k_1_1_process_array.html#a92d8e7e212d04e16e7aebb6b69bf1a1b',1,'ChimeraTK::ProcessArray']]],
+  ['isfunctional',['isFunctional',['../struct_process_array_factory_backend.html#ac39250a2d8a6436b4619587abacd65db',1,'ProcessArrayFactoryBackend']]],
+  ['ispush',['isPush',['../struct_register_descriptor_base.html#af57d0534ce35b70d52b2618ced6a5185',1,'RegisterDescriptorBase']]],
+  ['isreadable',['isReadable',['../class_chimera_t_k_1_1_process_array.html#a92d8e7e212d04e16e7aebb6b69bf1a1b',1,'ChimeraTK::ProcessArray::isReadable()'],['../struct_unidir_sender.html#aecf7b6af43b46e60c10359394cbe8525',1,'UnidirSender::isReadable()'],['../struct_unidir_receiver.html#abffacf939c98de76d01bfe7f40e459d7',1,'UnidirReceiver::isReadable()'],['../struct_bidir.html#ab83207c489acfa48d02679cad0ea7890',1,'Bidir::isReadable()']]],
   ['isreadonly',['isReadOnly',['../class_chimera_t_k_1_1_process_array.html#af12afdc8a9739d0291c91775a6f7b70d',1,'ChimeraTK::ProcessArray']]],
-  ['iswriteable',['isWriteable',['../class_chimera_t_k_1_1_process_array.html#a66ede83bca155215a0e5d030c9403ab1',1,'ChimeraTK::ProcessArray']]]
+  ['iswriteable',['isWriteable',['../class_chimera_t_k_1_1_process_array.html#a66ede83bca155215a0e5d030c9403ab1',1,'ChimeraTK::ProcessArray::isWriteable()'],['../struct_unidir_sender.html#acd33c56023a71bec5e21134156562509',1,'UnidirSender::isWriteable()'],['../struct_unidir_receiver.html#abb1d86b937851cd10c2623b96159fe6d',1,'UnidirReceiver::isWriteable()'],['../struct_bidir.html#a80f18711f5f1fc3168a4c54ce3a2bb22',1,'Bidir::isWriteable()']]]
 ];

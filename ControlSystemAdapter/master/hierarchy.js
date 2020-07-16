@@ -9,6 +9,7 @@ var hierarchy =
       [ "ReferenceTestApplication", "class_reference_test_application.html", null ]
     ] ],
     [ "AsyncReadTest", "class_async_read_test.html", null ],
+    [ "ProcessArrayFactoryBackend::BackendRegisterer", "class_process_array_factory_backend_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::ControlSystemPVManager", "class_chimera_t_k_1_1_control_system_p_v_manager.html", null ],
     [ "ChimeraTK::ControlSystemSynchronizationUtility", "class_chimera_t_k_1_1_control_system_synchronization_utility.html", null ],
     [ "ChimeraTK::DecoratorFactory< UserType >", "class_chimera_t_k_1_1_decorator_factory.html", null ],
@@ -31,6 +32,9 @@ var hierarchy =
           [ "ChimeraTK::TypeChangingRangeCheckingDecorator< T, std::string >", "class_chimera_t_k_1_1_type_changing_range_checking_decorator_3_01_t_00_01std_1_1string_01_4.html", null ]
         ] ]
       ] ]
+    ] ],
+    [ "DeviceBackendImpl", null, [
+      [ "ProcessArrayFactoryBackend", "struct_process_array_factory_backend.html", null ]
     ] ],
     [ "ChimeraTK::DevicePVManager", "class_chimera_t_k_1_1_device_p_v_manager.html", null ],
     [ "ChimeraTK::DeviceSynchronizationUtility", "class_chimera_t_k_1_1_device_synchronization_utility.html", null ],
@@ -57,6 +61,21 @@ var hierarchy =
       [ "ChimeraTK::CountingProcessVariableListener", "struct_chimera_t_k_1_1_counting_process_variable_listener.html", null ]
     ] ],
     [ "ChimeraTK::PersistentDataStorage::Queue< DataType >", "class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html", null ],
+    [ "RegisterDescriptorBase< Derived >", "struct_register_descriptor_base.html", [
+      [ "Bidir< Derived >", "struct_bidir.html", null ]
+    ] ],
+    [ "RegisterDescriptorBase< BidirA >", "struct_register_descriptor_base.html", [
+      [ "Bidir< BidirA >", "struct_bidir.html", [
+        [ "BidirA", "struct_bidir_a.html", null ],
+        [ "BidirB", "struct_bidir_b.html", null ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< UnidirReceiver >", "struct_register_descriptor_base.html", [
+      [ "UnidirReceiver", "struct_unidir_receiver.html", null ]
+    ] ],
+    [ "RegisterDescriptorBase< UnidirSender >", "struct_register_descriptor_base.html", [
+      [ "UnidirSender", "struct_unidir_sender.html", null ]
+    ] ],
     [ "ChimeraTK::PersistentDataStorage::registerVariable_oldTypeRemover", "struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html", null ],
     [ "ChimeraTK::csa_helpers::Round< S >", "struct_chimera_t_k_1_1csa__helpers_1_1_round.html", null ],
     [ "test_suite", null, [

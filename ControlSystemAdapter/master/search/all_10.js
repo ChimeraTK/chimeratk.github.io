@@ -1,7 +1,9 @@
 var searchData=
 [
   ['range_5fchecking',['range_checking',['../namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a4c3daeb243d26d7ecb2a563fdd1de8b6',1,'ChimeraTK']]],
+  ['rawusertype',['rawUserType',['../struct_register_descriptor_base.html#a71c8ed5fb79e195cb05523d89686900f',1,'RegisterDescriptorBase']]],
   ['read_5flatest',['read_latest',['../class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html#ac477f06a31df518a623a3e873a2caeb1',1,'ChimeraTK::PersistentDataStorage::Queue']]],
+  ['readdeviceinfo',['readDeviceInfo',['../struct_process_array_factory_backend.html#aa540d33dff5765b01dda6e6a5848324d',1,'ProcessArrayFactoryBackend']]],
   ['readfromfile',['readFromFile',['../class_chimera_t_k_1_1_persistent_data_storage.html#ae29c614248cc8509083f157058e9fd19',1,'ChimeraTK::PersistentDataStorage']]],
   ['readxmlvaluetags',['readXmlValueTags',['../class_chimera_t_k_1_1_persistent_data_storage.html#afadc587e4b1b2fae9257f6655be6c2ff',1,'ChimeraTK::PersistentDataStorage']]],
   ['receive',['receive',['../class_chimera_t_k_1_1_control_system_synchronization_utility.html#a5169b08ffbc6c4b8777361818b027c88',1,'ChimeraTK::ControlSystemSynchronizationUtility::receive(T processVariables)'],['../class_chimera_t_k_1_1_control_system_synchronization_utility.html#a2b8bfbba6fe03996fb1d9b20e49606f8',1,'ChimeraTK::ControlSystemSynchronizationUtility::receive(T processVariablesBegin, T processVariablesEnd)'],['../class_chimera_t_k_1_1_device_synchronization_utility.html#a49730c1d638e56727618d503220d4a53',1,'ChimeraTK::DeviceSynchronizationUtility::receive(T processVariables)'],['../class_chimera_t_k_1_1_device_synchronization_utility.html#a0e88a71bfbe8b87d00a884c7ed93ee70',1,'ChimeraTK::DeviceSynchronizationUtility::receive(T processVariablesBegin, T processVariablesEnd)']]],
@@ -9,6 +11,10 @@ var searchData=
   ['receiver',['RECEIVER',['../class_chimera_t_k_1_1_process_array.html#ab3ed8ce4da736ec65ea938eb401f46ddadda273cf7f02f57a5bca69fe3bfb3d87',1,'ChimeraTK::ProcessArray']]],
   ['referencetestapplication',['ReferenceTestApplication',['../class_reference_test_application.html',1,'ReferenceTestApplication'],['../class_reference_test_application.html#ad26824f47ce67d9a7bf6714f67388240',1,'ReferenceTestApplication::ReferenceTestApplication()']]],
   ['referencetestapplication_2eh',['ReferenceTestApplication.h',['../_reference_test_application_8h.html',1,'']]],
+  ['registerdescriptorbase',['RegisterDescriptorBase',['../struct_register_descriptor_base.html',1,'']]],
+  ['registerdescriptorbase_3c_20bidira_20_3e',['RegisterDescriptorBase&lt; BidirA &gt;',['../struct_register_descriptor_base.html',1,'']]],
+  ['registerdescriptorbase_3c_20unidirreceiver_20_3e',['RegisterDescriptorBase&lt; UnidirReceiver &gt;',['../struct_register_descriptor_base.html',1,'']]],
+  ['registerdescriptorbase_3c_20unidirsender_20_3e',['RegisterDescriptorBase&lt; UnidirSender &gt;',['../struct_register_descriptor_base.html',1,'']]],
   ['registervariable',['registerVariable',['../class_chimera_t_k_1_1_persistent_data_storage.html#af965b63c9258181f5ff535495b8f316c',1,'ChimeraTK::PersistentDataStorage']]],
   ['registervariable_5foldtyperemover',['registerVariable_oldTypeRemover',['../struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html',1,'ChimeraTK::PersistentDataStorage']]],
   ['releasemanualloopcontrol',['releaseManualLoopControl',['../class_reference_test_application.html#a9ac737323b3a69be4b618387d2cbce11',1,'ReferenceTestApplication']]],

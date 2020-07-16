@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['failedtransfers',['failedTransfers',['../struct_typed_p_v_holder.html#a92ad257a5964989502a8c941d33964a1',1,'TypedPVHolder']]],
-  ['fromdevicearray',['fromDeviceArray',['../struct_typed_p_v_holder.html#ad2d36c854e5f8c62815a74273dc64e8c',1,'TypedPVHolder']]],
-  ['fromdevicescalar',['fromDeviceScalar',['../struct_typed_p_v_holder.html#a8760b633a9ef0acf05a62079c5c35160',1,'TypedPVHolder']]]
+  ['datatypeconstant',['dataTypeConstant',['../struct_typed_p_v_holder.html#ae785c524565140823a19d11a049c229a',1,'TypedPVHolder']]],
+  ['datavalidity',['dataValidity',['../class_reference_test_application.html#a3a915ea761b586066b905a4761001670',1,'ReferenceTestApplication']]],
+  ['default_5fwrite_5finterval',['DEFAULT_WRITE_INTERVAL',['../class_chimera_t_k_1_1_persistent_data_storage.html#ada80e6d680be0364eb0c44ea15dc6240',1,'ChimeraTK::PersistentDataStorage']]],
+  ['derived',['derived',['../struct_register_descriptor_base.html#ace6f5037e321e4955af042f265fb0537',1,'RegisterDescriptorBase']]],
+  ['devmanager',['devManager',['../struct_test_application_fixture.html#ad6e8f8dc06cd3d0107b31cae4e58e5b7',1,'TestApplicationFixture']]],
+  ['disablesyncreadtests',['disableSyncReadTests',['../struct_bidir.html#ababb96e96963937d5816a8f232a5454e',1,'Bidir']]]
 ];

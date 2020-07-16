@@ -6,5 +6,6 @@ var searchData=
   ['nextnotification',['nextNotification',['../class_chimera_t_k_1_1_control_system_p_v_manager.html#a25ef5922529a3387842f7d51f8e32c8f',1,'ChimeraTK::ControlSystemPVManager::nextNotification()'],['../class_chimera_t_k_1_1_device_p_v_manager.html#a052efde0018880c3b560c4ed36f44958',1,'ChimeraTK::DevicePVManager::nextNotification()']]],
   ['notify',['notify',['../class_chimera_t_k_1_1_process_variable_listener.html#ae013b83811162bbac160b70f83aba3db',1,'ChimeraTK::ProcessVariableListener::notify()'],['../struct_chimera_t_k_1_1_counting_process_variable_listener.html#a9fa41f8be8e76fcfdcac3b1140b4e605',1,'ChimeraTK::CountingProcessVariableListener::notify()']]],
   ['nreceiveops',['nReceiveOps',['../stresstest_8cpp.html#ab2716aa4f55fff60d120d6b03c81b39f',1,'stresstest.cpp']]],
+  ['nruntimeerrorcases',['nRuntimeErrorCases',['../struct_register_descriptor_base.html#a69763ae2bf994bbc97be829123629c9d',1,'RegisterDescriptorBase']]],
   ['nsendops',['nSendOps',['../stresstest_8cpp.html#a1fb8abf7a32c0249b1b1d15b039e69c3',1,'stresstest.cpp']]]
 ];
