@@ -1,14 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"test_access_mode_flags_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[18,0,7,1,0,1],
-"test_access_mode_flags_8cc.html#a987f6eb257c4f9556c46feae10e85e1f":[18,0,7,1,0,3],
-"test_access_mode_flags_8cc.html#a9dfdfee8f5df525f2f7779f3922f89fd":[18,0,7,1,0,2],
-"test_access_mode_flags_8cc_source.html":[18,0,7,1,0],
-"test_accessor_performance_8cpp.html":[18,0,7,1,1],
-"test_accessor_performance_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[18,0,7,1,1,0],
-"test_accessor_performance_8cpp_source.html":[18,0,7,1,1],
-"test_async_read_8cpp.html":[18,0,7,1,2],
-"test_async_read_8cpp.html#a02698ab897f3215b69bdc9455ae46e18":[18,0,7,1,2,5],
 "test_async_read_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[18,0,7,1,2,3],
 "test_async_read_8cpp.html#a235814bfef964effb8c56d287f64e75a":[18,0,7,1,2,7],
 "test_async_read_8cpp.html#a4b5b351740d20cbf56d983603405f803":[18,0,7,1,2,8],
@@ -176,6 +167,7 @@ var NAVTREEINDEX13 =
 "test_i_e_e_e754___single_converter_8cpp_source.html":[18,0,7,1,16],
 "test_l_map_backend_8cpp.html":[18,0,7,1,17],
 "test_l_map_backend_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[18,0,7,1,17,0],
+"test_l_map_backend_8cpp.html#a3dba7312259557b34863be9f4a8ec47a":[18,0,7,1,17,16],
 "test_l_map_backend_8cpp.html#a51bdf98ab5c29e2143db19a7a48ab892":[18,0,7,1,17,4],
 "test_l_map_backend_8cpp.html#a6a3e9243554a971184687f837139d64a":[18,0,7,1,17,8],
 "test_l_map_backend_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[18,0,7,1,17,1],
@@ -249,5 +241,13 @@ var NAVTREEINDEX13 =
 "test_multiplexed_data_accesor_8cpp.html#a97df806769b1516808d119fcbd6d253a":[18,0,7,1,25,13],
 "test_multiplexed_data_accesor_8cpp.html#ab9a4080ab72986c0938908e69f024bb2":[18,0,7,1,25,8],
 "test_multiplexed_data_accesor_8cpp.html#aceec7e6443d3116cce672bd59b1b1e59":[18,0,7,1,25,6],
-"test_multiplexed_data_accesor_8cpp.html#adf7dcb4b8a2e74156ccecd65528972f2":[18,0,7,1,25,7]
+"test_multiplexed_data_accesor_8cpp.html#adf7dcb4b8a2e74156ccecd65528972f2":[18,0,7,1,25,7],
+"test_multiplexed_data_accesor_8cpp.html#af3e2f16b8822fc8c59d552239fc48590":[18,0,7,1,25,11],
+"test_multiplexed_data_accesor_8cpp_source.html":[18,0,7,1,25],
+"test_n_d_register_accessor_decorator_8cpp.html":[18,0,7,1,26],
+"test_n_d_register_accessor_decorator_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[18,0,7,1,26,1],
+"test_n_d_register_accessor_decorator_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[18,0,7,1,26,2],
+"test_n_d_register_accessor_decorator_8cpp.html#ad64e074a85030c1367320244e9178ea4":[18,0,7,1,26,3],
+"test_n_d_register_accessor_decorator_8cpp_source.html":[18,0,7,1,26],
+"test_numeric_addressed_backend_register_accessor_8cpp.html":[18,0,7,1,27]
 };

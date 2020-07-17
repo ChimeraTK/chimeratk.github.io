@@ -15,5 +15,6 @@ var test_l_map_backend_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a7b21d19a7332f57ca5556b6fbab0f3ad", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a7ff992440c0b98be761736b3d41e140b", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a8f027a33bd90eb1c8c2d0a4226bb52ad", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a935ebdda3c7b54344e338ec47b060bfd", null ]
+    [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a935ebdda3c7b54344e338ec47b060bfd", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_l_map_backend_8cpp.html#a3dba7312259557b34863be9f4a8ec47a", null ]
 ];
