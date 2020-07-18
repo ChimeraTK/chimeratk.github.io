@@ -168,6 +168,7 @@ var hierarchy =
           [ "ChimeraTK::LNMBackendVariableAccessor< UserType >", "class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html", null ],
           [ "ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor< UserType >", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html", null ],
           [ "ChimeraTK::NumericAddressedBackendRegisterAccessor< UserType, DataConverterType, isRaw >", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html", null ],
+          [ "ChimeraTK::TransferElementTestAccessor< UserType >", "class_chimera_t_k_1_1_transfer_element_test_accessor.html", null ],
           [ "DecoratorTestAccessor< UserType >", "class_decorator_test_accessor.html", null ],
           [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< UserType, double >", null, [
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, double >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
@@ -179,8 +180,7 @@ var hierarchy =
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, uint32_t >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html", null ]
             ] ]
-          ] ],
-          [ "TransferElementTestAccessor< UserType >", "class_transfer_element_test_accessor.html", null ]
+          ] ]
         ] ],
         [ "ChimeraTK::NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html", null ],
         [ "ChimeraTK::NDRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_n_d_register_accessor.html", [
@@ -203,8 +203,8 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html", null ],
     [ "ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html", null ],
+    [ "ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html", null ],
     [ "ChimeraTK::DeviceInfoMap::ErrorList", "class_chimera_t_k_1_1_device_info_map_1_1_error_list.html", null ],
     [ "ChimeraTK::RegisterInfoMap::ErrorList", "class_chimera_t_k_1_1_register_info_map_1_1_error_list.html", null ],
     [ "std::exception", null, [

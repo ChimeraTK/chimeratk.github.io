@@ -90,6 +90,7 @@ var namespace_chimera_t_k =
     [ "TransferElement", "class_chimera_t_k_1_1_transfer_element.html", "class_chimera_t_k_1_1_transfer_element" ],
     [ "TransferElementAbstractor", "class_chimera_t_k_1_1_transfer_element_abstractor.html", "class_chimera_t_k_1_1_transfer_element_abstractor" ],
     [ "TransferElementID", "class_chimera_t_k_1_1_transfer_element_i_d.html", "class_chimera_t_k_1_1_transfer_element_i_d" ],
+    [ "TransferElementTestAccessor", "class_chimera_t_k_1_1_transfer_element_test_accessor.html", "class_chimera_t_k_1_1_transfer_element_test_accessor" ],
     [ "TransferGroup", "class_chimera_t_k_1_1_transfer_group.html", "class_chimera_t_k_1_1_transfer_group" ],
     [ "TwoDRegisterAccessor", "class_chimera_t_k_1_1_two_d_register_accessor.html", "class_chimera_t_k_1_1_two_d_register_accessor" ],
     [ "UnifiedBackendTest", "class_chimera_t_k_1_1_unified_backend_test.html", "class_chimera_t_k_1_1_unified_backend_test" ],

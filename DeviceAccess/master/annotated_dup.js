@@ -104,7 +104,6 @@ var annotated_dup =
     [ "TestableDummyBackend", "class_testable_dummy_backend.html", "class_testable_dummy_backend" ],
     [ "TestDummy", "class_test_dummy.html", "class_test_dummy" ],
     [ "TestLocker", "struct_test_locker.html", "struct_test_locker" ],
-    [ "TransferElementTestAccessor", "class_transfer_element_test_accessor.html", "class_transfer_element_test_accessor" ],
     [ "VariableRegisterDescriptorBase", "struct_variable_register_descriptor_base.html", "struct_variable_register_descriptor_base" ],
     [ "VersionNumberTest", "class_version_number_test.html", "class_version_number_test" ],
     [ "VersionNumberTestSuite", "class_version_number_test_suite.html", "class_version_number_test_suite" ],

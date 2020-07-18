@@ -31,6 +31,6 @@ var searchData=
   ['_7esubdevicebackend',['~SubdeviceBackend',['../class_chimera_t_k_1_1_subdevice_backend.html#aef6a0de034b54d44cc888dce97b0bec2',1,'ChimeraTK::SubdeviceBackend']]],
   ['_7etestlocker',['~TestLocker',['../struct_test_locker.html#a2350e86f1e896171ba56a812e7f7653d',1,'TestLocker']]],
   ['_7etransferelement',['~TransferElement',['../class_chimera_t_k_1_1_transfer_element.html#adbc9b96f43bbf9ca3dec8311fe3e6039',1,'ChimeraTK::TransferElement']]],
-  ['_7etransferelementtestaccessor',['~TransferElementTestAccessor',['../class_transfer_element_test_accessor.html#a735a29b4bba9a34c168862034961fe02',1,'TransferElementTestAccessor']]],
+  ['_7etransferelementtestaccessor',['~TransferElementTestAccessor',['../class_chimera_t_k_1_1_transfer_element_test_accessor.html#a26cf101aa6b36d8d2e0d5b7d628017e8',1,'ChimeraTK::TransferElementTestAccessor']]],
   ['_7etransfergroup',['~TransferGroup',['../class_chimera_t_k_1_1_transfer_group.html#aea5883f974de2d9b2cd5f45a162840a8',1,'ChimeraTK::TransferGroup']]]
 ];

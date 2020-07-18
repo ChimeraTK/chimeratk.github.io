@@ -1,6 +1,5 @@
 var test_transfer_element_8cpp =
 [
-    [ "TransferElementTestAccessor", "class_transfer_element_test_accessor.html", "class_transfer_element_test_accessor" ],
     [ "BOOST_TEST_DYN_LINK", "test_transfer_element_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_transfer_element_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "TEST_TRANSFER_SEQUENCE", "test_transfer_element_8cpp.html#a1fbbb5b1f2eaff0f4b0d03f8b949aa49", null ],
