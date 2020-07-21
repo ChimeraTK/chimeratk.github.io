@@ -26,5 +26,6 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testTestFacility2.cc", "test_test_facility2_8cc.html", "test_test_facility2_8cc" ],
     [ "testTrigger.cc", "test_trigger_8cc.html", "test_trigger_8cc" ],
     [ "testVariableGroup.cc", "test_variable_group_8cc.html", "test_variable_group_8cc" ],
+    [ "testVersionPropagation.cc", "test_version_propagation_8cc.html", "test_version_propagation_8cc" ],
     [ "testVirtualHierarchy.cc", "test_virtual_hierarchy_8cc.html", "test_virtual_hierarchy_8cc" ]
 ];
