@@ -7,7 +7,6 @@ var searchData=
   ['exceptiondummy',['ExceptionDummy',['../class_chimera_t_k_1_1_exception_dummy.html',1,'ChimeraTK']]],
   ['exceptiondummypushdecorator',['ExceptionDummyPushDecorator',['../struct_chimera_t_k_1_1_exception_dummy_push_decorator.html',1,'ChimeraTK']]],
   ['exceptiondummypushdecoratorbase',['ExceptionDummyPushDecoratorBase',['../struct_chimera_t_k_1_1_exception_dummy_push_decorator_base.html',1,'ChimeraTK']]],
-  ['exceptionhandlingresult',['ExceptionHandlingResult',['../struct_chimera_t_k_1_1_transfer_group_1_1_exception_handling_result.html',1,'ChimeraTK::TransferGroup']]],
   ['exceptionreportingbackend',['ExceptionReportingBackend',['../struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html',1,'ChimeraTK::UnifiedBackendTest']]],
   ['experimentalfeatures',['ExperimentalFeatures',['../class_chimera_t_k_1_1_experimental_features.html',1,'ChimeraTK']]]
 ];

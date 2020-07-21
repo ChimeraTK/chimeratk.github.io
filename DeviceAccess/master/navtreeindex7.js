@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"class_chimera_t_k_1_1_version_number.html":[17,0,1,95],
 "class_chimera_t_k_1_1_version_number.html#a00cc7b9bdb84d467f4e5925aa47d6806":[17,0,1,95,12],
 "class_chimera_t_k_1_1_version_number.html#a1df1dc5ea2df340957f7b6b6fa8cdcb5":[17,0,1,95,4],
 "class_chimera_t_k_1_1_version_number.html#a220bf7a03aadf4ab473bc65dde30987d":[17,0,1,95,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "class_rebot_test_class.html":[17,0,59],
 "class_rebot_test_class.html#a1af4a3343b8e5db58711704b369afc3e":[17,0,59,2],
 "class_rebot_test_class.html#a2f42eddf689508e44589824cc751b09c":[17,0,59,1],
-"class_rebot_test_class.html#ac58d489c5a55ea8f6521c505c9aee6fc":[17,0,59,0],
-"class_register_catalogue_test.html":[17,0,73]
+"class_rebot_test_class.html#ac58d489c5a55ea8f6521c505c9aee6fc":[17,0,59,0]
 };

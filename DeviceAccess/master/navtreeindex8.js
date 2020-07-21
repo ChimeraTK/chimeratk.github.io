@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"class_register_catalogue_test.html":[17,0,73],
 "class_register_catalogue_test.html#add3dda5c19f9cb1acb721b335252f124":[17,0,73,0],
 "class_register_path_test.html":[17,0,76],
 "class_register_path_test.html#a771ab65f7e01c200576861da199f773b":[17,0,76,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "device__backends_2pcie_2include_2pcieuni__io__compat_8h_source.html":[18,0,1,2,0,3],
 "dir_0128381db4b4f5acbef62e610c8688e8.html":[18,0,0,0],
 "dir_03a6cfce30b88f6a84e388fa6a89390f.html":[18,0,8,0],
-"dir_04e7a3a48585d4391a17b116de84faa7.html":[18,0,1,1,1],
-"dir_130f923491185552e412a924425dcadd.html":[18,0,1,3]
+"dir_04e7a3a48585d4391a17b116de84faa7.html":[18,0,1,1,1]
 };

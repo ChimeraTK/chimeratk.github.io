@@ -82,7 +82,6 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_transfer_group.h
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -101,15 +100,10 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_transfer_group.h
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group__coll__graph.svg" width="100%" height="407"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group__coll__graph.svg" width="100%" height="450"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_transfer_group_1_1_exception_handling_result.html">ExceptionHandlingResult</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a308301f800e1ff4cf8362083f748d267"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a308301f800e1ff4cf8362083f748d267">TransferGroup</a> ()</td></tr>
@@ -136,23 +130,23 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a8bd9110de16fd25a51e4f865331bacf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_transfer_group_1_1_exception_handling_result.html">ExceptionHandlingResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a8bd9110de16fd25a51e4f865331bacf1">runPostReads</a> (std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt;&gt; &amp;elements)</td></tr>
-<tr class="separator:a8bd9110de16fd25a51e4f865331bacf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a372306b474bc7e64bc253cdc4c28e863"><td class="memTemplParams" colspan="2">template&lt;typename Callable &gt; </td></tr>
-<tr class="memitem:a372306b474bc7e64bc253cdc4c28e863"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_transfer_group_1_1_exception_handling_result.html">ExceptionHandlingResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a372306b474bc7e64bc253cdc4c28e863">handlePostExceptions</a> (Callable function)</td></tr>
-<tr class="separator:a372306b474bc7e64bc253cdc4c28e863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9218c8c0eba3150f46e6e26d4bb948bd"><td class="memItemLeft" align="right" valign="top">std::exception_ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a9218c8c0eba3150f46e6e26d4bb948bd">runPostReads</a> (std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt;&gt; &amp;elements, std::exception_ptr firstDetectedRuntimeError)</td></tr>
+<tr class="separator:a9218c8c0eba3150f46e6e26d4bb948bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ac112808591184b68a1ec62456b98d1ed"><td class="memItemLeft" align="right" valign="top">std::map&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt;, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#ac112808591184b68a1ec62456b98d1ed">lowLevelElementsAndExceptionFlags</a></td></tr>
-<tr class="memdesc:ac112808591184b68a1ec62456b98d1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of low-level TransferElements in this group, which are directly responsible for the hardware access, and a flag whether there has been an exception in pre-pread.  <a href="#ac112808591184b68a1ec62456b98d1ed">More...</a><br /></td></tr>
-<tr class="separator:ac112808591184b68a1ec62456b98d1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a462780b15ada77c3b9a7d2386f3788"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a1a462780b15ada77c3b9a7d2386f3788">copyDecorators</a></td></tr>
-<tr class="memdesc:a1a462780b15ada77c3b9a7d2386f3788"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all CopyRegisterDecorators in the group.  <a href="#a1a462780b15ada77c3b9a7d2386f3788">More...</a><br /></td></tr>
-<tr class="separator:a1a462780b15ada77c3b9a7d2386f3788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1de2bf394b15752012ad0c8d9b0707e"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#ae1de2bf394b15752012ad0c8d9b0707e">highLevelElements</a></td></tr>
-<tr class="memdesc:ae1de2bf394b15752012ad0c8d9b0707e"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of high-level TransferElements in this group which are directly used by the user.  <a href="#ae1de2bf394b15752012ad0c8d9b0707e">More...</a><br /></td></tr>
-<tr class="separator:ae1de2bf394b15752012ad0c8d9b0707e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e45e3ff091f038aceb543a04fb0ec6f"><td class="memItemLeft" align="right" valign="top">std::map&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt;, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a6e45e3ff091f038aceb543a04fb0ec6f">_lowLevelElementsAndExceptionFlags</a></td></tr>
+<tr class="memdesc:a6e45e3ff091f038aceb543a04fb0ec6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of low-level TransferElements in this group, which are directly responsible for the hardware access, and a flag whether there has been an exception in pre-pread.  <a href="#a6e45e3ff091f038aceb543a04fb0ec6f">More...</a><br /></td></tr>
+<tr class="separator:a6e45e3ff091f038aceb543a04fb0ec6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05659fcb52954854fa82ab159de23579"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a05659fcb52954854fa82ab159de23579">_copyDecorators</a></td></tr>
+<tr class="memdesc:a05659fcb52954854fa82ab159de23579"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all CopyRegisterDecorators in the group.  <a href="#a05659fcb52954854fa82ab159de23579">More...</a><br /></td></tr>
+<tr class="separator:a05659fcb52954854fa82ab159de23579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32d6ce6d3b40c3a361874948ab71f327"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a32d6ce6d3b40c3a361874948ab71f327">_highLevelElements</a></td></tr>
+<tr class="memdesc:a32d6ce6d3b40c3a361874948ab71f327"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of high-level TransferElements in this group which are directly used by the user.  <a href="#a32d6ce6d3b40c3a361874948ab71f327">More...</a><br /></td></tr>
+<tr class="separator:a32d6ce6d3b40c3a361874948ab71f327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8782ad050d289be8a9369904ca6d3b4d"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a8782ad050d289be8a9369904ca6d3b4d">_exceptionBackends</a></td></tr>
+<tr class="memdesc:a8782ad050d289be8a9369904ca6d3b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all exception backens.  <a href="#a8782ad050d289be8a9369904ca6d3b4d">More...</a><br /></td></tr>
+<tr class="separator:a8782ad050d289be8a9369904ca6d3b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52bc98ae72e9cf28d281a71c2b9bbb4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a52bc98ae72e9cf28d281a71c2b9bbb4e">readOnly</a></td></tr>
 <tr class="memdesc:a52bc98ae72e9cf28d281a71c2b9bbb4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag if group is read-only.  <a href="#a52bc98ae72e9cf28d281a71c2b9bbb4e">More...</a><br /></td></tr>
 <tr class="separator:a52bc98ae72e9cf28d281a71c2b9bbb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,7 +242,7 @@ Protected Attributes</h2></td></tr>
 <p>Add a register accessor to the group. </p>
 <p>The register accessor might internally be altered so that accessors accessing the same hardware register will share their buffers. Register accessors must not be placed into multiple TransferGroups. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00151">151</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00173">173</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -285,7 +279,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000061">Todo:</a></b></dt><dd>implement smarter and more efficient! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00235">235</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00259">259</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -314,59 +308,13 @@ Protected Attributes</h2></td></tr>
 
 <p>Print information about the accessors in this group to screen, which might help to understand which transfers were merged and which were not. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00243">243</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00267">267</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_aa2e834738d65ec80d6675db392e0c9db_icgraph.svg" width="446" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a372306b474bc7e64bc253cdc4c28e863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a372306b474bc7e64bc253cdc4c28e863">&#9670;&nbsp;</a></span>handlePostExceptions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Callable &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_transfer_group_1_1_exception_handling_result.html">TransferGroup::ExceptionHandlingResult</a> ChimeraTK::TransferGroup::handlePostExceptions </td>
-          <td>(</td>
-          <td class="paramtype">Callable&#160;</td>
-          <td class="paramname"><em>function</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00049">49</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a372306b474bc7e64bc253cdc4c28e863_cgraph.svg" width="423" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a372306b474bc7e64bc253cdc4c28e863_icgraph.svg" width="100%" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -390,12 +338,12 @@ template&lt;typename Callable &gt; </div>
 <p>Check if transfer group is read-only. </p>
 <p>A transfer group is read-only, if at least one of its transfer elements is read-only. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00147">147</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00169">169</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a3e2a181be4626c14587c6d302f0c90eb_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -419,28 +367,28 @@ template&lt;typename Callable &gt; </div>
 
 <p>Trigger read transfer for all accessors in the group. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00072">72</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00061">61</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_af8df339d4a0700087e48d57223231d88_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_af8df339d4a0700087e48d57223231d88_cgraph.svg" width="446" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_af8df339d4a0700087e48d57223231d88_icgraph.svg" width="446" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a8bd9110de16fd25a51e4f865331bacf1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bd9110de16fd25a51e4f865331bacf1">&#9670;&nbsp;</a></span>runPostReads()</h2>
+<a id="a9218c8c0eba3150f46e6e26d4bb948bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9218c8c0eba3150f46e6e26d4bb948bd">&#9670;&nbsp;</a></span>runPostReads()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -449,11 +397,21 @@ template&lt;typename Callable &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_transfer_group_1_1_exception_handling_result.html">TransferGroup::ExceptionHandlingResult</a> ChimeraTK::TransferGroup::runPostReads </td>
+          <td class="memname">std::exception_ptr ChimeraTK::TransferGroup::runPostReads </td>
           <td>(</td>
           <td class="paramtype">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>elements</em></td><td>)</td>
+          <td class="paramname"><em>elements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::exception_ptr&#160;</td>
+          <td class="paramname"><em>firstDetectedRuntimeError</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -464,20 +422,12 @@ template&lt;typename Callable &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00021">21</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a8bd9110de16fd25a51e4f865331bacf1_cgraph.svg" width="664" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a8bd9110de16fd25a51e4f865331bacf1_icgraph.svg" width="100%" height="394"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a9218c8c0eba3150f46e6e26d4bb948bd_icgraph.svg" width="100%" height="378"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -501,20 +451,20 @@ template&lt;typename Callable &gt; </div>
 
 <p>Trigger write transfer for all accessors in the group. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00112">112</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00117">117</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a86287fe11f64206207e0d868ed83c3db_cgraph.svg" width="100%" height="465"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a86287fe11f64206207e0d868ed83c3db_cgraph.svg" width="446" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a86287fe11f64206207e0d868ed83c3db_icgraph.svg" width="446" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -522,8 +472,8 @@ template&lt;typename Callable &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1a462780b15ada77c3b9a7d2386f3788"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a462780b15ada77c3b9a7d2386f3788">&#9670;&nbsp;</a></span>copyDecorators</h2>
+<a id="a05659fcb52954854fa82ab159de23579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05659fcb52954854fa82ab159de23579">&#9670;&nbsp;</a></span>_copyDecorators</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -532,7 +482,7 @@ template&lt;typename Callable &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt;boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a>&gt; &gt; ChimeraTK::TransferGroup::copyDecorators</td>
+          <td class="memname">std::set&lt;boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a>&gt; &gt; ChimeraTK::TransferGroup::_copyDecorators</td>
         </tr>
       </table>
   </td>
@@ -549,8 +499,8 @@ template&lt;typename Callable &gt; </div>
 
 </div>
 </div>
-<a id="ae1de2bf394b15752012ad0c8d9b0707e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1de2bf394b15752012ad0c8d9b0707e">&#9670;&nbsp;</a></span>highLevelElements</h2>
+<a id="a8782ad050d289be8a9369904ca6d3b4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8782ad050d289be8a9369904ca6d3b4d">&#9670;&nbsp;</a></span>_exceptionBackends</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -559,7 +509,34 @@ template&lt;typename Callable &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt;boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a>&gt; &gt; ChimeraTK::TransferGroup::highLevelElements</td>
+          <td class="memname">std::set&lt;boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a>&gt; &gt; ChimeraTK::TransferGroup::_exceptionBackends</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of all exception backens. </p>
+<p>We check on them whether they are opened, and we want to do it for all accessors of the same backend just once. </p>
+
+<p class="definition">Definition at line <a class="el" href="device_2include_2_transfer_group_8h_source.html#l00083">83</a> of file <a class="el" href="device_2include_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
+
+</div>
+</div>
+<a id="a32d6ce6d3b40c3a361874948ab71f327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32d6ce6d3b40c3a361874948ab71f327">&#9670;&nbsp;</a></span>_highLevelElements</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a>&gt; &gt; ChimeraTK::TransferGroup::_highLevelElements</td>
         </tr>
       </table>
   </td>
@@ -575,8 +552,8 @@ template&lt;typename Callable &gt; </div>
 
 </div>
 </div>
-<a id="ac112808591184b68a1ec62456b98d1ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac112808591184b68a1ec62456b98d1ed">&#9670;&nbsp;</a></span>lowLevelElementsAndExceptionFlags</h2>
+<a id="a6e45e3ff091f038aceb543a04fb0ec6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e45e3ff091f038aceb543a04fb0ec6f">&#9670;&nbsp;</a></span>_lowLevelElementsAndExceptionFlags</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -585,7 +562,7 @@ template&lt;typename Callable &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a>&gt;, bool &gt; ChimeraTK::TransferGroup::lowLevelElementsAndExceptionFlags</td>
+          <td class="memname">std::map&lt;boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a>&gt;, bool &gt; ChimeraTK::TransferGroup::_lowLevelElementsAndExceptionFlags</td>
         </tr>
       </table>
   </td>
@@ -623,7 +600,7 @@ template&lt;typename Callable &gt; </div>
 
 <p>Flag if group is read-only. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_transfer_group_8h_source.html#l00081">81</a> of file <a class="el" href="device_2include_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_transfer_group_8h_source.html#l00086">86</a> of file <a class="el" href="device_2include_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
 
 </div>
 </div>
@@ -637,7 +614,7 @@ template&lt;typename Callable &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html">TransferGroup</a></li>
-    <li class="footer">Generated on Sat Jul 18 2020 03:53:12 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue Jul 21 2020 03:53:15 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

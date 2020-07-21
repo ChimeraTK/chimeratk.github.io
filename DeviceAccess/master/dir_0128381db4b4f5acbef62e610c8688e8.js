@@ -48,8 +48,7 @@ var dir_0128381db4b4f5acbef62e610c8688e8 =
       [ "TransferElementID", "class_chimera_t_k_1_1_transfer_element_i_d.html", "class_chimera_t_k_1_1_transfer_element_i_d" ]
     ] ],
     [ "TransferGroup.h", "device_2include_2_transfer_group_8h.html", [
-      [ "TransferGroup", "class_chimera_t_k_1_1_transfer_group.html", "class_chimera_t_k_1_1_transfer_group" ],
-      [ "ExceptionHandlingResult", "struct_chimera_t_k_1_1_transfer_group_1_1_exception_handling_result.html", "struct_chimera_t_k_1_1_transfer_group_1_1_exception_handling_result" ]
+      [ "TransferGroup", "class_chimera_t_k_1_1_transfer_group.html", "class_chimera_t_k_1_1_transfer_group" ]
     ] ],
     [ "TwoDRegisterAccessor.h", "device_2include_2_two_d_register_accessor_8h.html", [
       [ "TwoDRegisterAccessor", "class_chimera_t_k_1_1_two_d_register_accessor.html", "class_chimera_t_k_1_1_two_d_register_accessor" ]
