@@ -46,7 +46,7 @@ var NAVTREE =
       [ "Why can I not read SEQUENCE registers?", "q_and_a.html#use_sequences", null ]
     ] ],
     [ "Technical specification DeviceBackend", "spec__device_backend.html", null ],
-    [ "Technical specification: TransferElement V1.0RC10WIP !! Based on RC9.", "spec__transfer_element.html", null ],
+    [ "Technical specification: TransferElement V1.0RC10", "spec__transfer_element.html", null ],
     [ "Testing applications using the DummyBackends", "testing_with_dummy_backends.html", [
       [ "Specifying the dummies in the device map file", "testing_with_dummy_backends.html#dmap_specify_dummies", null ],
       [ "Writeing to read-only registers", "testing_with_dummy_backends.html#dummy_backends_write_readonly", null ]
@@ -108,7 +108,7 @@ var NAVTREEINDEX =
 "struct_reg_bit3_of_var.html",
 "test_async_read_8cpp.html",
 "test_n_d_register_accessor_decorator_8cpp_source.html",
-"testable_rebot_sleep__testing_impl_8h.html#a35a618bb93efcf6f87f192a3dcc33439"
+"testable_rebot_sleep__testing_impl_8h.html#a6901c950b4203167e804d151547676cf"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
