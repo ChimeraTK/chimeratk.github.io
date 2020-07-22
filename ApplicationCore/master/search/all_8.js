@@ -14,6 +14,5 @@ var searchData=
   ['hierarchymodifier',['HierarchyModifier',['../namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0',1,'ChimeraTK']]],
   ['hist',['hist',['../structtest_app.html#afa7cd076cc38ec19219cbdd9f2f259a3',1,'testApp::hist()'],['../structtest_app_array.html#a0b0cdaaa6b68e19b3e421821ed3000ab',1,'testAppArray::hist()'],['../structtest_app_dev.html#a909d49396c7083c2e4906708a7d6e988',1,'testAppDev::hist()']]],
   ['historyentry',['HistoryEntry',['../struct_chimera_t_k_1_1history_1_1_history_entry.html',1,'ChimeraTK::history::HistoryEntry&lt; UserType &gt;'],['../struct_chimera_t_k_1_1history_1_1_history_entry.html#a9af79b7bfb375f9a79d2210929659449',1,'ChimeraTK::history::HistoryEntry::HistoryEntry()']]],
-  ['hwregister',['hwRegister',['../struct_fixture__no_test_facility.html#a6eb778e6c15388a983db2a06671e01a8',1,'Fixture_noTestFacility']]],
   ['serverhistory',['ServerHistory',['../class_chimera_t_k_1_1_device_module.html#ab9171bb39053b85717ad350f03cf0f02',1,'ChimeraTK::DeviceModule']]]
 ];

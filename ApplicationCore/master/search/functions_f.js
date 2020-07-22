@@ -28,7 +28,6 @@ var searchData=
   ['timerdummy',['TimerDummy',['../class_timer_dummy.html#a74ded7d966806590e337c69085db63a2',1,'TimerDummy']]],
   ['timerdummyregisteraccessor',['TimerDummyRegisterAccessor',['../class_timer_dummy_register_accessor.html#a5f4cc6d59d4216ee26864394223c46e6',1,'TimerDummyRegisterAccessor']]],
   ['triggerfanout',['TriggerFanOut',['../class_chimera_t_k_1_1_trigger_fan_out.html#ad97a325c5719586a1f93f582def505b9',1,'ChimeraTK::TriggerFanOut']]],
-  ['triggerread',['triggerRead',['../struct_poll_module.html#a39a89a91e2f2bac045602cc8770de445',1,'PollModule']]],
   ['typedmakeconnection',['typedMakeConnection',['../class_chimera_t_k_1_1_application.html#ad431c8d3f6f19a593a37b13c5f7cefe8',1,'ChimeraTK::Application']]],
   ['typedmakeconnectioncaller',['TypedMakeConnectionCaller',['../struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html#a5d331033c7f3b8d86194911d1833436f',1,'ChimeraTK::Application::TypedMakeConnectionCaller']]]
 ];

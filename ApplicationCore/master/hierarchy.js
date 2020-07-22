@@ -10,7 +10,6 @@ var hierarchy =
       [ "ChimeraTK::Application", "class_chimera_t_k_1_1_application.html", [
         [ "AssignModuleLaterApp", "struct_assign_module_later_app.html", null ],
         [ "DummyApplication", "struct_dummy_application.html", null ],
-        [ "DummyApplication", "struct_dummy_application.html", null ],
         [ "ExampleApp", "struct_example_app.html", null ],
         [ "ExampleApp", "struct_example_app.html", null ],
         [ "ExampleApp", "struct_example_app.html", null ],
@@ -152,7 +151,6 @@ var hierarchy =
             [ "OutputModule", "struct_output_module.html", null ],
             [ "PollingReadModule< T >", "struct_polling_read_module.html", null ],
             [ "PollModule", "struct_poll_module.html", null ],
-            [ "PollModule", "struct_poll_module.html", null ],
             [ "PushModule", "struct_push_module.html", null ],
             [ "ReadAnyTestModule< T >", "struct_read_any_test_module.html", null ],
             [ "ReadOnlyTestApplication::TestModule", "struct_read_only_test_application_1_1_test_module.html", null ],
@@ -224,10 +222,9 @@ var hierarchy =
       [ "ChimeraTK::FeedingFanOut< UserType >", "class_chimera_t_k_1_1_feeding_fan_out.html", null ],
       [ "ChimeraTK::ThreadedFanOut< UserType >", "class_chimera_t_k_1_1_threaded_fan_out.html", null ]
     ] ],
-    [ "Fixture", "struct_fixture.html", null ],
     [ "Fixture_noTestableMode", "struct_fixture__no_testable_mode.html", null ],
-    [ "Fixture_noTestFacility", "struct_fixture__no_test_facility.html", null ],
     [ "Fixture_testFacility", "struct_fixture__test_facility.html", null ],
+    [ "fixture_with_poll_and_push_input< enableTestFacility >", "structfixture__with__poll__and__push__input.html", null ],
     [ "ChimeraTK::FunctorFill", "struct_chimera_t_k_1_1_functor_fill.html", null ],
     [ "ChimeraTK::FunctorSetValues", "struct_chimera_t_k_1_1_functor_set_values.html", null ],
     [ "ChimeraTK::FunctorSetValuesArray", "struct_chimera_t_k_1_1_functor_set_values_array.html", null ],

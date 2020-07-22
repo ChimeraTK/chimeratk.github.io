@@ -23,6 +23,6 @@ var searchData=
   ['flagiscreated',['flagIsCreated',['../class_chimera_t_k_1_1_variable_network.html#a5219ce75a1d253a58bd84ddfb6cdffe8',1,'ChimeraTK::VariableNetwork']]],
   ['foo',['foo',['../struct_test_module_1_1_another_group.html#aa35c414cd7fd4c825542f0b84bb4f04c',1,'TestModule::AnotherGroup::foo()'],['../struct_vector_module_1_1_another_group.html#ae018216ac8fd059f747c8a5b7071334d',1,'VectorModule::AnotherGroup::foo()']]],
   ['fromconsumingfanout',['fromConsumingFanout',['../struct_module1.html#a717c9a590cc3ee6265ffc57f3907fca4',1,'Module1']]],
-  ['fromdevice',['fromDevice',['../struct_poll_module.html#a82b734e58c7afdd292d5e6897cf159b4',1,'PollModule::fromDevice()'],['../struct_module1.html#a4a4b736f788866b8b81c80b12526854e',1,'Module1::fromDevice()']]],
+  ['fromdevice',['fromDevice',['../struct_module1.html#a4a4b736f788866b8b81c80b12526854e',1,'Module1']]],
   ['fromthreadedfanout',['fromThreadedFanout',['../struct_module1.html#a5754c7879468cc4c79463dca5b754488',1,'Module1']]]
 ];
