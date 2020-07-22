@@ -2,6 +2,9 @@ var searchData=
 [
   ['call_5fvirtual_5ffunction_5ftemplate',['CALL_VIRTUAL_FUNCTION_TEMPLATE',['../util_2include_2_virtual_function_template_8h.html#a9ae25c66f893b5dffc9251887f2bb9a5',1,'VirtualFunctionTemplate.h']]],
   ['check_5fapplication_5fbuffer',['CHECK_APPLICATION_BUFFER',['../_unified_backend_test_8h.html#a048d20ccdf8bf904afec713ede5b2cc2',1,'UnifiedBackendTest.h']]],
+  ['check_5fcounters_5fhigh_5flevel',['CHECK_COUNTERS_HIGH_LEVEL',['../test_transfer_group_8cpp.html#acfbc2b3911b321f1715322ee5075a8ec',1,'testTransferGroup.cpp']]],
+  ['check_5fcounters_5flow_5flevel',['CHECK_COUNTERS_LOW_LEVEL',['../test_transfer_group_8cpp.html#a0217f3fead9d41fd2bef0bd5b63268a1',1,'testTransferGroup.cpp']]],
+  ['check_5fcounters_5fmid_5flevel',['CHECK_COUNTERS_MID_LEVEL',['../test_transfer_group_8cpp.html#ae189acd90ecdf0978b5d0c561a1e9021',1,'testTransferGroup.cpp']]],
   ['check_5fequality',['CHECK_EQUALITY',['../_unified_backend_test_8h.html#a3b6893388f16002bc124de0fe5fc18ae',1,'UnifiedBackendTest.h']]],
   ['check_5fequality_5ftimeout',['CHECK_EQUALITY_TIMEOUT',['../_unified_backend_test_8h.html#a04f19c70138fca6224d58e17cc55cffd',1,'UnifiedBackendTest.h']]],
   ['check_5fequality_5fvector',['CHECK_EQUALITY_VECTOR',['../_unified_backend_test_8h.html#a28abd8da668bc6ade7349eaaf6131752',1,'UnifiedBackendTest.h']]],

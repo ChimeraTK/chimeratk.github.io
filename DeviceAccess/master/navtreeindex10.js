@@ -1,5 +1,9 @@
 var NAVTREEINDEX10 =
 {
+"mtca4u__compatibility__headers_2_fixed_point_converter_8h_source.html":[18,0,5,18],
+"mtca4u__compatibility__headers_2_forward_declarations_8h.html":[18,0,5,19],
+"mtca4u__compatibility__headers_2_forward_declarations_8h_source.html":[18,0,5,19],
+"mtca4u__compatibility__headers_2_l_n_m_backend_channel_accessor_8h.html":[18,0,5,21],
 "mtca4u__compatibility__headers_2_l_n_m_backend_channel_accessor_8h_source.html":[18,0,5,21],
 "mtca4u__compatibility__headers_2_l_n_m_backend_register_info_8h.html":[18,0,5,22],
 "mtca4u__compatibility__headers_2_l_n_m_backend_register_info_8h_source.html":[18,0,5,22],
@@ -79,8 +83,8 @@ var NAVTREEINDEX10 =
 "mtca4u__compatibility__headers_2predicates_8h_source.html":[18,0,5,43],
 "namespace_chimera_t_k.html":[16,0,1],
 "namespace_chimera_t_k.html":[17,0,1],
-"namespace_chimera_t_k_1_1_l_n_m_backend.html":[16,0,1,0],
 "namespace_chimera_t_k_1_1_l_n_m_backend.html":[17,0,1,0],
+"namespace_chimera_t_k_1_1_l_n_m_backend.html":[16,0,1,0],
 "namespace_chimera_t_k_1_1_rebot.html":[16,0,1,4],
 "namespace_chimera_t_k_1_1_rebot.html":[17,0,1,2],
 "namespace_chimera_t_k_1_1numeric__address.html":[16,0,1,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX10 =
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#a27a4786e70ff09a490ae316bdda06430":[17,0,1,0,10,1],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#a46d8e909273211386315b9a65657eb15":[17,0,1,0,10,3],
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#aa7f12bebb92226d9f79136a8a1179187":[17,0,1,0,10,2],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#af6a0d17a679da14f6350ae0c38929edd":[17,0,1,0,10,0],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin___helper.html":[17,0,1,0,12],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin___helper_3_01_user_type_00_01double_01_4.html":[17,0,1,0,13],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html":[17,0,1,0,14],
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#a16e7c50e72e8c5fb9f82d0b1948608ba":[17,0,1,0,14,9]
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html#af6a0d17a679da14f6350ae0c38929edd":[17,0,1,0,10,0]
 };

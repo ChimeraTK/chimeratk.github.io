@@ -119,6 +119,12 @@ Macros</h2></td></tr>
 <tr class="separator:a139f00d2466d591f60b8d6a73c8273f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b2a3852db8bb19ab6909bac01859985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>&#160;&#160;&#160;TransferGroupTest</td></tr>
 <tr class="separator:a6b2a3852db8bb19ab6909bac01859985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfbc2b3911b321f1715322ee5075a8ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#acfbc2b3911b321f1715322ee5075a8ec">CHECK_COUNTERS_HIGH_LEVEL</a>(te,  isWrite,  expectedOrderPreMax,  expectedOrderPostMin,  expectTransfer)</td></tr>
+<tr class="separator:acfbc2b3911b321f1715322ee5075a8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae189acd90ecdf0978b5d0c561a1e9021"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#ae189acd90ecdf0978b5d0c561a1e9021">CHECK_COUNTERS_MID_LEVEL</a>(te)</td></tr>
+<tr class="separator:ae189acd90ecdf0978b5d0c561a1e9021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0217f3fead9d41fd2bef0bd5b63268a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a0217f3fead9d41fd2bef0bd5b63268a1">CHECK_COUNTERS_LOW_LEVEL</a>(te,  isWrite,  expectedOrderMin,  expectedOrderMax)</td></tr>
+<tr class="separator:a0217f3fead9d41fd2bef0bd5b63268a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -128,39 +134,46 @@ Functions</h2></td></tr>
 <tr class="memdesc:a7b449dbca9f9c7b9133a8b8d60f62415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests for single specification points.  <a href="#a7b449dbca9f9c7b9133a8b8d60f62415">More...</a><br /></td></tr>
 <tr class="separator:a7b449dbca9f9c7b9133a8b8d60f62415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc07ef37c66a4f728968697a842baa9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#abc07ef37c66a4f728968697a842baa9d">BOOST_AUTO_TEST_CASE</a> (test_B_12_3)</td></tr>
+<tr class="memdesc:abc07ef37c66a4f728968697a842baa9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test that individual operations are not allowed.  <a href="#abc07ef37c66a4f728968697a842baa9d">More...</a><br /></td></tr>
 <tr class="separator:abc07ef37c66a4f728968697a842baa9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3647e723618f425f6e5b90b242bee287"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a3647e723618f425f6e5b90b242bee287">BOOST_AUTO_TEST_CASE</a> (test_B_12_4)</td></tr>
+<tr class="memdesc:a3647e723618f425f6e5b90b242bee287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test readOnly groups.  <a href="#a3647e723618f425f6e5b90b242bee287">More...</a><br /></td></tr>
 <tr class="separator:a3647e723618f425f6e5b90b242bee287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a076139c159e2107a1b35cfc9026e43a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a076139c159e2107a1b35cfc9026e43a3">BOOST_AUTO_TEST_CASE</a> (test_B_12_5)</td></tr>
+<tr class="memdesc:a076139c159e2107a1b35cfc9026e43a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test that adding same TE twice throws.  <a href="#a076139c159e2107a1b35cfc9026e43a3">More...</a><br /></td></tr>
 <tr class="separator:a076139c159e2107a1b35cfc9026e43a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a712a4d885a70e14ff48d72331b000fb4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a712a4d885a70e14ff48d72331b000fb4">BOOST_AUTO_TEST_CASE</a> (test_B_12_6)</td></tr>
+<tr class="memdesc:a712a4d885a70e14ff48d72331b000fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test that adding same TE to two different groups throws.  <a href="#a712a4d885a70e14ff48d72331b000fb4">More...</a><br /></td></tr>
 <tr class="separator:a712a4d885a70e14ff48d72331b000fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b51429ef8f672e7d28e37c2f14f5a4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a0b51429ef8f672e7d28e37c2f14f5a4c">BOOST_AUTO_TEST_CASE</a> (test_B_12_7)</td></tr>
+<tr class="memdesc:a0b51429ef8f672e7d28e37c2f14f5a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test that adding TE with wait_for_new_data throws.  <a href="#a0b51429ef8f672e7d28e37c2f14f5a4c">More...</a><br /></td></tr>
 <tr class="separator:a0b51429ef8f672e7d28e37c2f14f5a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec183974d43c661c245faf12598ae581"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#aec183974d43c661c245faf12598ae581">BOOST_AUTO_TEST_CASE</a> (test_B_12_8)</td></tr>
+<tr class="memdesc:aec183974d43c661c245faf12598ae581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test optimisation with copy decorator on abstractor level.  <a href="#aec183974d43c661c245faf12598ae581">More...</a><br /></td></tr>
 <tr class="separator:aec183974d43c661c245faf12598ae581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61511adf82a7a5b613218f490252e334"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a61511adf82a7a5b613218f490252e334"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a61511adf82a7a5b613218f490252e334">checkCountersHighLevel</a> (T &amp;te, bool isWrite, size_t expectedOrderPreMax, size_t expectedOrderPostMin)</td></tr>
-<tr class="separator:a61511adf82a7a5b613218f490252e334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51965d98425dbd906d2281df18407720"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a51965d98425dbd906d2281df18407720"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a51965d98425dbd906d2281df18407720">checkCountersMidLevel</a> (T &amp;te)</td></tr>
-<tr class="separator:a51965d98425dbd906d2281df18407720"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e94eb71f5f59000148e54b99487c794"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a0e94eb71f5f59000148e54b99487c794"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a0e94eb71f5f59000148e54b99487c794">checkCountersLowLevel</a> (T &amp;te, bool isWrite, size_t expectedOrderMin, size_t expectedOrderMax)</td></tr>
-<tr class="separator:a0e94eb71f5f59000148e54b99487c794"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a547749b967d07c291a13db9845a420cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a547749b967d07c291a13db9845a420cb">BOOST_AUTO_TEST_CASE</a> (test_B_12_9)</td></tr>
+<tr class="memdesc:a547749b967d07c291a13db9845a420cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test read/write operations.  <a href="#a547749b967d07c291a13db9845a420cb">More...</a><br /></td></tr>
 <tr class="separator:a547749b967d07c291a13db9845a420cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa663fca82c2a4c6e134425e035e733dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#aa663fca82c2a4c6e134425e035e733dc">BOOST_AUTO_TEST_CASE</a> (test_B_12_10_1_1)</td></tr>
+<tr class="memdesc:aa663fca82c2a4c6e134425e035e733dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test runtime_error in precondition check.  <a href="#aa663fca82c2a4c6e134425e035e733dc">More...</a><br /></td></tr>
 <tr class="separator:aa663fca82c2a4c6e134425e035e733dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55c35f772591ee73716bf2312aee5778"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a55c35f772591ee73716bf2312aee5778">BOOST_AUTO_TEST_CASE</a> (test_B_12_10_1_2)</td></tr>
+<tr class="memdesc:a55c35f772591ee73716bf2312aee5778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test that operation throws if precondition not met.  <a href="#a55c35f772591ee73716bf2312aee5778">More...</a><br /></td></tr>
 <tr class="separator:a55c35f772591ee73716bf2312aee5778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c90de97c7e83fe4125288b02c31087e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a5c90de97c7e83fe4125288b02c31087e">BOOST_AUTO_TEST_CASE</a> (test_B_12_10_2)</td></tr>
+<tr class="memdesc:a5c90de97c7e83fe4125288b02c31087e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test that exceptions are propagated to high-level elements.  <a href="#a5c90de97c7e83fe4125288b02c31087e">More...</a><br /></td></tr>
+<tr class="separator:a5c90de97c7e83fe4125288b02c31087e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87a7dbdf82501c472f17df8064b59eb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a87a7dbdf82501c472f17df8064b59eb7">BOOST_AUTO_TEST_CASE</a> (test_B_12_10_3)</td></tr>
+<tr class="memdesc:a87a7dbdf82501c472f17df8064b59eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test that all postXxx() called even when exception thrown.  <a href="#a87a7dbdf82501c472f17df8064b59eb7">More...</a><br /></td></tr>
 <tr class="separator:a87a7dbdf82501c472f17df8064b59eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9483f6931d8b7f5bc1a5ab42379ab74a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a9483f6931d8b7f5bc1a5ab42379ab74a">BOOST_AUTO_TEST_CASE</a> (test_B_12_10_3_1)</td></tr>
+<tr class="memdesc:a9483f6931d8b7f5bc1a5ab42379ab74a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test that one exception from postXxx() gets through.  <a href="#a9483f6931d8b7f5bc1a5ab42379ab74a">More...</a><br /></td></tr>
 <tr class="separator:a9483f6931d8b7f5bc1a5ab42379ab74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50d4876e46004da86296b478a7690f12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a50d4876e46004da86296b478a7690f12">BOOST_AUTO_TEST_CASE</a> (test_B_12_10_3_2)</td></tr>
+<tr class="memdesc:a50d4876e46004da86296b478a7690f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test that thrown exception is identical to the first error.  <a href="#a50d4876e46004da86296b478a7690f12">More...</a><br /></td></tr>
 <tr class="separator:a50d4876e46004da86296b478a7690f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a685231d7e88e5f2c79f7528f2db6c914"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#a685231d7e88e5f2c79f7528f2db6c914">BOOST_AUTO_TEST_CASE</a> (test_B_12_11_1)</td></tr>
+<tr class="memdesc:a685231d7e88e5f2c79f7528f2db6c914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test that updateDataBuffer == false after exception.  <a href="#a685231d7e88e5f2c79f7528f2db6c914">More...</a><br /></td></tr>
 <tr class="separator:a685231d7e88e5f2c79f7528f2db6c914"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad64e074a85030c1367320244e9178ea4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_transfer_group_8cpp.html#ad64e074a85030c1367320244e9178ea4">BOOST_AUTO_TEST_CASE</a> (testExceptionHandling)</td></tr>
 <tr class="memdesc:ad64e074a85030c1367320244e9178ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higher-level tests.  <a href="#ad64e074a85030c1367320244e9178ea4">More...</a><br /></td></tr>
@@ -205,9 +218,119 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="acfbc2b3911b321f1715322ee5075a8ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfbc2b3911b321f1715322ee5075a8ec">&#9670;&nbsp;</a></span>CHECK_COUNTERS_HIGH_LEVEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK_COUNTERS_HIGH_LEVEL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">te, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">isWrite, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expectedOrderPreMax, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expectedOrderPostMin, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expectTransfer&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span>(!isWrite) {                                                                                                       \</div><div class="line">    BOOST_CHECK_EQUAL(te-&gt;_preRead_counter, 1);                                                                        \</div><div class="line">    BOOST_CHECK_EQUAL(te-&gt;_preWrite_counter, 0);                                                                       \</div><div class="line">    BOOST_CHECK_EQUAL(te-&gt;_postRead_counter, 1);                                                                       \</div><div class="line">    BOOST_CHECK_EQUAL(te-&gt;_postWrite_counter, 0);                                                                      \</div><div class="line">    if(expectTransfer) {                                                                                               \</div><div class="line">      BOOST_CHECK_EQUAL(te-&gt;_readTransfer_counter, 1);                                                                 \</div><div class="line">    }                                                                                                                  \</div><div class="line">  }                                                                                                                    \</div><div class="line">  else {                                                                                                               \</div><div class="line">    BOOST_CHECK_EQUAL(te-&gt;_preRead_counter, 0);                                                                        \</div><div class="line">    BOOST_CHECK_EQUAL(te-&gt;_preWrite_counter, 1);                                                                       \</div><div class="line">    BOOST_CHECK_EQUAL(te-&gt;_postRead_counter, 0);                                                                       \</div><div class="line">    BOOST_CHECK_EQUAL(te-&gt;_postWrite_counter, 1);                                                                      \</div><div class="line">    if(expectTransfer) {                                                                                               \</div><div class="line">      BOOST_CHECK_EQUAL(te-&gt;_writeTransfer_counter, 1);                                                                \</div><div class="line">    }                                                                                                                  \</div><div class="line">  }                                                                                                                    \</div><div class="line">  if(!expectTransfer) {                                                                                                \</div><div class="line">    BOOST_CHECK_EQUAL(te-&gt;_readTransfer_counter, 0);                                                                   \</div><div class="line">    BOOST_CHECK_EQUAL(te-&gt;_writeTransfer_counter, 0);                                                                  \</div><div class="line">  }                                                                                                                    \</div><div class="line">                                                                                                                       \</div><div class="line">  BOOST_CHECK(te-&gt;_preIndex &lt;= expectedOrderPreMax);                                                                   \</div><div class="line">  BOOST_CHECK(te-&gt;_postIndex &gt;= expectedOrderPostMin)</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00199">199</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0217f3fead9d41fd2bef0bd5b63268a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0217f3fead9d41fd2bef0bd5b63268a1">&#9670;&nbsp;</a></span>CHECK_COUNTERS_LOW_LEVEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK_COUNTERS_LOW_LEVEL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">te, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">isWrite, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expectedOrderMin, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expectedOrderMax&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">BOOST_CHECK_EQUAL(te-&gt;_preRead_counter, 0); <span class="comment">/* our test accessor does not delegate this... */</span>                        \</div><div class="line">  BOOST_CHECK_EQUAL(te-&gt;_preWrite_counter, 0);                                                                         \</div><div class="line">  if(!isWrite) {                                                                                                       \</div><div class="line">    BOOST_CHECK_EQUAL(te-&gt;_readTransfer_counter, 1);                                                                   \</div><div class="line">    BOOST_CHECK_EQUAL(te-&gt;_writeTransfer_counter, 0);                                                                  \</div><div class="line">  }                                                                                                                    \</div><div class="line">  else {                                                                                                               \</div><div class="line">    BOOST_CHECK_EQUAL(te-&gt;_readTransfer_counter, 0);                                                                   \</div><div class="line">    BOOST_CHECK_EQUAL(te-&gt;_writeTransfer_counter, 1);                                                                  \</div><div class="line">  }                                                                                                                    \</div><div class="line">  BOOST_CHECK_EQUAL(te-&gt;_postRead_counter, 0); <span class="comment">/* our test accessor does not delegate this... */</span>                       \</div><div class="line">  BOOST_CHECK_EQUAL(te-&gt;_postWrite_counter, 0);                                                                        \</div><div class="line">                                                                                                                       \</div><div class="line">  BOOST_CHECK(te-&gt;_transferIndex &gt;= expectedOrderMin);                                                                 \</div><div class="line">  BOOST_CHECK(te-&gt;_transferIndex &lt;= expectedOrderMax)</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00234">234</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae189acd90ecdf0978b5d0c561a1e9021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae189acd90ecdf0978b5d0c561a1e9021">&#9670;&nbsp;</a></span>CHECK_COUNTERS_MID_LEVEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK_COUNTERS_MID_LEVEL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">te</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">BOOST_CHECK_EQUAL(te-&gt;_preRead_counter, 0); <span class="comment">/* our test accessor does not delegate this...*/</span>                         \</div><div class="line">  BOOST_CHECK_EQUAL(te-&gt;_preWrite_counter, 0);                                                                         \</div><div class="line">  BOOST_CHECK_EQUAL(te-&gt;_readTransfer_counter, 0);                                                                     \</div><div class="line">  BOOST_CHECK_EQUAL(te-&gt;_writeTransfer_counter, 0);                                                                    \</div><div class="line">  BOOST_CHECK_EQUAL(te-&gt;_postRead_counter, 0); <span class="comment">/* our test accessor does not delegate this... */</span>                       \</div><div class="line">  BOOST_CHECK_EQUAL(te-&gt;_postWrite_counter, 0)</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00226">226</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a7b449dbca9f9c7b9133a8b8d60f62415"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b449dbca9f9c7b9133a8b8d60f62415">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b449dbca9f9c7b9133a8b8d60f62415">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,21 +346,24 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Tests for single specification points. </p>
+<p>Test that replaceTransferElement() is called in addElement()</p><ul>
+<li><a class="anchor" id="testTransferElement_B_12_1_3"></a>B.12.1.3 </li>
+</ul>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00028">28</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00032">32</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a7b449dbca9f9c7b9133a8b8d60f62415_cgraph.svg" width="100%" height="525"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a7b449dbca9f9c7b9133a8b8d60f62415_cgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
 <a id="abc07ef37c66a4f728968697a842baa9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc07ef37c66a4f728968697a842baa9d">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abc07ef37c66a4f728968697a842baa9d">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,20 +378,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00061">61</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p>Test that individual operations are not allowed. </p>
+<ul>
+<li><a class="anchor" id="testTransferElement_B_12_3"></a>B.12.3 </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00069">69</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_abc07ef37c66a4f728968697a842baa9d_cgraph.svg" width="100%" height="525"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_abc07ef37c66a4f728968697a842baa9d_cgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
 <a id="a3647e723618f425f6e5b90b242bee287"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3647e723618f425f6e5b90b242bee287">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3647e723618f425f6e5b90b242bee287">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -280,20 +411,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00075">75</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p>Test readOnly groups. </p>
+<ul>
+<li><a class="anchor" id="testTransferElement_B_12_4"></a>B.12.4 </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00087">87</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a3647e723618f425f6e5b90b242bee287_cgraph.svg" width="100%" height="574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a3647e723618f425f6e5b90b242bee287_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
 <a id="a076139c159e2107a1b35cfc9026e43a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a076139c159e2107a1b35cfc9026e43a3">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a076139c159e2107a1b35cfc9026e43a3">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,20 +444,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00117">117</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p>Test that adding same TE twice throws. </p>
+<ul>
+<li><a class="anchor" id="testTransferElement_B_12_5"></a>B.12.5 </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00133">133</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a076139c159e2107a1b35cfc9026e43a3_cgraph.svg" width="100%" height="525"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a076139c159e2107a1b35cfc9026e43a3_cgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
 <a id="a712a4d885a70e14ff48d72331b000fb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a712a4d885a70e14ff48d72331b000fb4">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a712a4d885a70e14ff48d72331b000fb4">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,20 +477,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00127">127</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p>Test that adding same TE to two different groups throws. </p>
+<ul>
+<li><a class="anchor" id="testTransferElement_B_12_6"></a>B.12.6 </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00147">147</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a712a4d885a70e14ff48d72331b000fb4_cgraph.svg" width="100%" height="525"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a712a4d885a70e14ff48d72331b000fb4_cgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
 <a id="a0b51429ef8f672e7d28e37c2f14f5a4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b51429ef8f672e7d28e37c2f14f5a4c">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b51429ef8f672e7d28e37c2f14f5a4c">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -364,7 +510,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00138">138</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p>Test that adding TE with wait_for_new_data throws. </p>
+<ul>
+<li><a class="anchor" id="testTransferElement_B_12_7"></a>B.12.7 </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00162">162</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -377,7 +528,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aec183974d43c661c245faf12598ae581"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec183974d43c661c245faf12598ae581">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[7/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aec183974d43c661c245faf12598ae581">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[7/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -392,20 +543,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00147">147</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p>Test optimisation with copy decorator on abstractor level. </p>
+<ul>
+<li><a class="anchor" id="testTransferElement_B_12_8"></a>B.12.8 </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00175">175</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_aec183974d43c661c245faf12598ae581_cgraph.svg" width="100%" height="574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_aec183974d43c661c245faf12598ae581_cgraph.svg" width="100%" height="580"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
 <a id="a547749b967d07c291a13db9845a420cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a547749b967d07c291a13db9845a420cb">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[8/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a547749b967d07c291a13db9845a420cb">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[8/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,20 +576,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00222">222</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p>Test read/write operations. </p>
+<ul>
+<li><a class="anchor" id="testTransferElement_B_12_9"></a>B.12.9 </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00257">257</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a547749b967d07c291a13db9845a420cb_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a547749b967d07c291a13db9845a420cb_cgraph.svg" width="100%" height="574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
 <a id="aa663fca82c2a4c6e134425e035e733dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa663fca82c2a4c6e134425e035e733dc">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[9/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa663fca82c2a4c6e134425e035e733dc">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[9/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -448,12 +609,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00258">258</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p>Test runtime_error in precondition check. </p>
+<ul>
+<li><a class="anchor" id="testTransferElement_B_12_10_1_1"></a>B.12.10.1.1 </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00297">297</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_aa663fca82c2a4c6e134425e035e733dc_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
 <a id="a55c35f772591ee73716bf2312aee5778"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55c35f772591ee73716bf2312aee5778">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[10/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a55c35f772591ee73716bf2312aee5778">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[10/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -468,12 +642,58 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00264">264</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p>Test that operation throws if precondition not met. </p>
+<ul>
+<li><a class="anchor" id="testTransferElement_B_12_10_1_2"></a>B.12.10.1.2 </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00320">320</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a55c35f772591ee73716bf2312aee5778_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a5c90de97c7e83fe4125288b02c31087e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c90de97c7e83fe4125288b02c31087e">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[11/19]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">test_B_12_10_2&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test that exceptions are propagated to high-level elements. </p>
+<ul>
+<li><a class="anchor" id="testTransferElement_B_12_10_2"></a>B.12.10.2 </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00360">360</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a5c90de97c7e83fe4125288b02c31087e_cgraph.svg" width="100%" height="574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
 <a id="a87a7dbdf82501c472f17df8064b59eb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87a7dbdf82501c472f17df8064b59eb7">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[11/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a7dbdf82501c472f17df8064b59eb7">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[12/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -488,12 +708,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00270">270</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p>Test that all postXxx() called even when exception thrown. </p>
+<ul>
+<li><a class="anchor" id="testTransferElement_B_12_10_3"></a>B.12.10.3 </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00391">391</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a87a7dbdf82501c472f17df8064b59eb7_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
 <a id="a9483f6931d8b7f5bc1a5ab42379ab74a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9483f6931d8b7f5bc1a5ab42379ab74a">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[12/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9483f6931d8b7f5bc1a5ab42379ab74a">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[13/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -508,12 +741,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00276">276</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p>Test that one exception from postXxx() gets through. </p>
+<ul>
+<li><a class="anchor" id="testTransferElement_B_12_10_3_1"></a>B.12.10.3.1 </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00458">458</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a9483f6931d8b7f5bc1a5ab42379ab74a_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
 <a id="a50d4876e46004da86296b478a7690f12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50d4876e46004da86296b478a7690f12">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[13/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a50d4876e46004da86296b478a7690f12">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[14/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -528,12 +774,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00282">282</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p>Test that thrown exception is identical to the first error. </p>
+<ul>
+<li><a class="anchor" id="testTransferElement_B_12_10_3_2"></a>B.12.10.3.2 </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00487">487</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a50d4876e46004da86296b478a7690f12_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
 <a id="a685231d7e88e5f2c79f7528f2db6c914"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a685231d7e88e5f2c79f7528f2db6c914">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[14/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a685231d7e88e5f2c79f7528f2db6c914">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[15/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -548,12 +807,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00288">288</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<p>Test that updateDataBuffer == false after exception. </p>
+<ul>
+<li><a class="anchor" id="testTransferElement_B_12_11_1"></a>B.12.11.1 </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00547">547</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a685231d7e88e5f2c79f7528f2db6c914_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
 <a id="ad64e074a85030c1367320244e9178ea4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad64e074a85030c1367320244e9178ea4">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[15/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad64e074a85030c1367320244e9178ea4">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[16/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -570,12 +842,12 @@ Functions</h2></td></tr>
 
 <p>Higher-level tests. </p>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00298">298</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00594">594</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_ad64e074a85030c1367320244e9178ea4_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -583,7 +855,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aac8459236a102c9be77962f3ccb606cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac8459236a102c9be77962f3ccb606cd">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[16/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aac8459236a102c9be77962f3ccb606cd">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[17/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -598,20 +870,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00359">359</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00655">655</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_aac8459236a102c9be77962f3ccb606cd_cgraph.svg" width="100%" height="584"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_aac8459236a102c9be77962f3ccb606cd_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
 <a id="aa5e401b1b0825b1d3dd1ecb0572d2df9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5e401b1b0825b1d3dd1ecb0572d2df9">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[17/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e401b1b0825b1d3dd1ecb0572d2df9">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[18/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -626,20 +898,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00558">558</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00854">854</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_aa5e401b1b0825b1d3dd1ecb0572d2df9_cgraph.svg" width="100%" height="577"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_aa5e401b1b0825b1d3dd1ecb0572d2df9_cgraph.svg" width="100%" height="539"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
 <a id="a1caddae8b870aa08dea86735f24942b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1caddae8b870aa08dea86735f24942b4">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[18/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1caddae8b870aa08dea86735f24942b4">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[19/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -655,147 +927,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000081">Todo:</a></b></dt><dd>FIXME transfer group should become read-only in this scenario!!! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00681">681</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00977">977</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a1caddae8b870aa08dea86735f24942b4_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a61511adf82a7a5b613218f490252e334"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61511adf82a7a5b613218f490252e334">&#9670;&nbsp;</a></span>checkCountersHighLevel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void checkCountersHighLevel </td>
-          <td>(</td>
-          <td class="paramtype">T &amp;&#160;</td>
-          <td class="paramname"><em>te</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isWrite</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>expectedOrderPreMax</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>expectedOrderPostMin</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00171">171</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a61511adf82a7a5b613218f490252e334_icgraph.svg" width="432" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a0e94eb71f5f59000148e54b99487c794"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e94eb71f5f59000148e54b99487c794">&#9670;&nbsp;</a></span>checkCountersLowLevel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void checkCountersLowLevel </td>
-          <td>(</td>
-          <td class="paramtype">T &amp;&#160;</td>
-          <td class="paramname"><em>te</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isWrite</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>expectedOrderMin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>expectedOrderMax</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00202">202</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a0e94eb71f5f59000148e54b99487c794_icgraph.svg" width="428" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a51965d98425dbd906d2281df18407720"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51965d98425dbd906d2281df18407720">&#9670;&nbsp;</a></span>checkCountersMidLevel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void checkCountersMidLevel </td>
-          <td>(</td>
-          <td class="paramtype">T &amp;&#160;</td>
-          <td class="paramname"><em>te</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00192">192</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a51965d98425dbd906d2281df18407720_icgraph.svg" width="426" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -818,11 +956,11 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="test_transfer_group_8cpp_source.html#l00018">18</a> of file <a class="el" href="test_transfer_group_8cpp_source.html">testTransferGroup.cpp</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="test_transfer_group_8cpp_a36e2e1b38077237ab715556d6af8d779_icgraph.svg" width="340" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -835,7 +973,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_transfer_group_8cpp.html">testTransferGroup.cpp</a></li>
-    <li class="footer">Generated on Tue Jul 21 2020 03:53:13 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Jul 22 2020 03:53:12 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -100,15 +100,15 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#acd73494f73d504e5a3bef1d215e00753",
 "class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a92b9f9999f51e4d626af6f4bc12a5609",
 "class_chimera_t_k_1_1_subdevice_register_accessor.html#a94993237a2d547c579a83e4550896143",
-"class_chimera_t_k_1_1_version_number.html",
-"class_register_catalogue_test.html",
-"dir_130f923491185552e412a924425dcadd.html",
-"mtca4u__compatibility__headers_2_l_n_m_backend_channel_accessor_8h_source.html",
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#a2e04a661adee6c4361a4b711e17f8c39",
-"struct_reg_channel3.html",
-"test_async_read_8cpp.html#a4b5b351740d20cbf56d983603405f803",
-"test_numeric_addressed_backend_register_accessor_8cpp.html#a43c76573b6ba32e45f9e7a528957a3d0",
-"testing_with_dummy_backends.html#dmap_specify_dummies"
+"class_chimera_t_k_1_1_unified_backend_test.html#afc29d58b484d91ccf943dd741a8cb688",
+"class_rebot_test_class.html",
+"device__backends_2pcie_2include_2pcieuni__io__compat_8h_source.html",
+"mtca4u__compatibility__headers_2_fixed_point_converter_8h_source.html",
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin___helper.html",
+"struct_reg_bit3_of_var.html",
+"test_async_read_8cpp.html",
+"test_n_d_register_accessor_decorator_8cpp_source.html",
+"testable_rebot_sleep__testing_impl_8h.html#a35a618bb93efcf6f87f192a3dcc33439"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

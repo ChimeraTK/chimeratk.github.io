@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"struct_reg_bit3_of_var.html":[17,0,65],
+"struct_reg_bit3_of_var.html#a183b031de36e77ebf2191dd378962276":[17,0,65,0],
+"struct_reg_bit3_of_var.html#a6a28636eda435609f12612d6f749a387":[17,0,65,2],
+"struct_reg_bit3_of_var.html#af57ac0fd5d5e38df88600a795bc9e6a5":[17,0,65,1],
 "struct_reg_channel3.html":[17,0,66],
 "struct_reg_channel3.html#a05018d5be8b34dc112ed6aba96b24b9b":[17,0,66,5],
 "struct_reg_channel3.html#a6ce97e8e2d277cc05cab8e2dc5d4797b":[17,0,66,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX12 =
 "test_access_mode_flags_8cc_source.html":[18,0,7,1,0],
 "test_accessor_performance_8cpp.html":[18,0,7,1,1],
 "test_accessor_performance_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[18,0,7,1,1,0],
-"test_accessor_performance_8cpp_source.html":[18,0,7,1,1],
-"test_async_read_8cpp.html":[18,0,7,1,2],
-"test_async_read_8cpp.html#a02698ab897f3215b69bdc9455ae46e18":[18,0,7,1,2,5],
-"test_async_read_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[18,0,7,1,2,3],
-"test_async_read_8cpp.html#a235814bfef964effb8c56d287f64e75a":[18,0,7,1,2,7]
+"test_accessor_performance_8cpp_source.html":[18,0,7,1,1]
 };
