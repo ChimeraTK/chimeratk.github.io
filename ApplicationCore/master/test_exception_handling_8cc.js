@@ -18,6 +18,7 @@ var test_exception_handling_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_exception_handling_8cc.html#a721abe199d00d1387f059d7982c8e0bf", null ],
     [ "BOOST_FIXTURE_TEST_CASE", "test_exception_handling_8cc.html#ab566538f58c0f9f11f52778b7a47ddaa", null ],
     [ "BOOST_FIXTURE_TEST_CASE", "test_exception_handling_8cc.html#aa25e50b7358df7d4723d85ed14f53315", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "test_exception_handling_8cc.html#a6e8e608ef91e1ab61f2e9746ed119f32", null ],
     [ "ExceptionDummyCDD1", "test_exception_handling_8cc.html#ad0474e2ca924acc9878f8eecb7f6c2ca", null ],
     [ "ExceptionDummyCDD2", "test_exception_handling_8cc.html#a2837104d761eaedd80116c5d648ba580", null ],
     [ "ExceptionDummyCDD3", "test_exception_handling_8cc.html#ad317b4ae499d6a8551f34453b61c4c03", null ]

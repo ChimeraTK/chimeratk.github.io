@@ -1,7 +1,7 @@
 var test_version_propagation_8cc =
 [
     [ "BOOST_TEST_MODULE", "test_version_propagation_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
-    [ "Fixture_testFacilityEnabled", "test_version_propagation_8cc.html#a17936fd393d0138531b8ed703928c1a8", null ],
+    [ "Fixture", "test_version_propagation_8cc.html#a11417d58618157ad0d0dc3f206ed7795", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#a4ee05a322902e46564ac95de08a9deff", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#af653a39528392a7788d5c9727386ec09", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_version_propagation_8cc.html#ac18a4c2294f549ceb7b2fe571a104c19", null ],

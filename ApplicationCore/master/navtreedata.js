@@ -52,6 +52,7 @@ var NAVTREE =
     [ "Example 2: Small but complete application with a proportional controller", "example2.html", null ],
     [ "Example 2a: Application with automation module", "example2a.html", null ],
     [ "Example 3: Minimal device server", "example3.html", null ],
+    [ "spec_VersionPropagation", "spec__version_propagation.html", null ],
     [ "Status Monitor", "statusmonitordoc.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
@@ -100,11 +101,11 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#ad46327064e76c3cca1cfd32bd6f99412",
 "class_chimera_t_k_1_1_threaded_fan_out.html#aff9c72ddedc4ea22ff686c8bfc36557f",
 "dir_4eeb864c4eec08c7d6b9d3b0352cfdde.html",
-"struct_chimera_t_k_1_1_config_reader.html#ac39a42b4171272dd24eb6e2dc07849a6",
-"struct_chimera_t_k_1_1history_1_1_update.html",
-"struct_realistic_module.html#a002345a0bf447f3568ceed9b6ee639b4",
-"struct_test_application_no_configs.html#a0100b54c5b46c3744b817681ecfada0f",
-"test_device_accessors_8cc.html#a1a7b8eece6ce585530eb559865470054"
+"struct_chimera_t_k_1_1_config_reader.html#ab8f2f615e502a1b7b5ed8c15a45cc402",
+"struct_chimera_t_k_1_1history_1_1_server_history.html#af5ec6a499b65f476981429ee84ebe88d",
+"struct_read_only_test_application_1_1_test_module.html#a78137cd2d5d94465b5496b8c9f3aff36",
+"struct_test_application_connect_to.html#aa906bbac09fb81760b5bc32d8228fc06",
+"test_control_system_accessors_8cc_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
