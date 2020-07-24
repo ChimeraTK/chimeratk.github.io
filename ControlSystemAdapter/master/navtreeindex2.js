@@ -1,10 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"struct_test_device_callable4.html":[3,0,21],
-"struct_test_device_callable4.html#a4ddb581df057b416ae29f0ea1ecc5f89":[3,0,21,0],
-"struct_test_device_callable4.html#a92375c31440c501a683e11bd2057ef92":[3,0,21,1],
-"struct_test_device_callable5.html":[3,0,22],
-"struct_test_device_callable5.html#a5da73eda1ccc3409ef18c979e4e8ef07":[3,0,22,1],
 "struct_test_device_callable5.html#abf88c1b84ddb48f2040d00571d30bd4d":[3,0,22,0],
 "struct_typed_p_v_holder.html":[3,0,23],
 "struct_typed_p_v_holder.html#a0f240c6f0f085c2eb5066f01bcb099ec":[3,0,23,7],

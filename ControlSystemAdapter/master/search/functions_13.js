@@ -1,7 +1,12 @@
 var searchData=
 [
-  ['waitfornotifications',['waitForNotifications',['../class_chimera_t_k_1_1_control_system_synchronization_utility.html#a35843e6ff11795334680c0ca9aac3dbc',1,'ChimeraTK::ControlSystemSynchronizationUtility::waitForNotifications()'],['../class_chimera_t_k_1_1_device_synchronization_utility.html#ae049579fcd548da39ff78bb73f3d5de0',1,'ChimeraTK::DeviceSynchronizationUtility::waitForNotifications()']]],
-  ['writequeuelength',['writeQueueLength',['../struct_register_descriptor_base.html#a14ad808083b841a828bd231da9b65c01',1,'RegisterDescriptorBase']]],
-  ['writerthreadfunction',['writerThreadFunction',['../class_chimera_t_k_1_1_persistent_data_storage.html#a102ac2b8bc54568ef24da361e3426c22',1,'ChimeraTK::PersistentDataStorage']]],
-  ['writetofile',['writeToFile',['../class_chimera_t_k_1_1_persistent_data_storage.html#ac5ff86636442f6f856bf41813ecf680d',1,'ChimeraTK::PersistentDataStorage']]]
+  ['_7eapplicationbase',['~ApplicationBase',['../class_chimera_t_k_1_1_application_base.html#a2e5c230cc0d37e9874f99d1757e36758',1,'ChimeraTK::ApplicationBase']]],
+  ['_7eindependentcontrolcore',['~IndependentControlCore',['../class_independent_control_core.html#aba8e9cc138765b0aa345b5bd683d77c8',1,'IndependentControlCore']]],
+  ['_7emytestapplication',['~MyTestApplication',['../class_my_test_application.html#abe87544ee6f2cde1504d6ef8ed85777c',1,'MyTestApplication']]],
+  ['_7epersistentdatastorage',['~PersistentDataStorage',['../class_chimera_t_k_1_1_persistent_data_storage.html#acc1b9e7b25f2d209e1b15e889af01fb8',1,'ChimeraTK::PersistentDataStorage']]],
+  ['_7eprocessarray',['~ProcessArray',['../class_chimera_t_k_1_1_process_array.html#a9c49ee8f1760d42f32384640d0561de3',1,'ChimeraTK::ProcessArray']]],
+  ['_7eprocessarrayfactorybackend',['~ProcessArrayFactoryBackend',['../struct_process_array_factory_backend.html#a597d0619079c2d0a43fae6a6d88307aa',1,'ProcessArrayFactoryBackend']]],
+  ['_7eprocessvariablelistener',['~ProcessVariableListener',['../class_chimera_t_k_1_1_process_variable_listener.html#aa593b6da75f0147ca9665881fa679de3',1,'ChimeraTK::ProcessVariableListener']]],
+  ['_7ereferencetestapplication',['~ReferenceTestApplication',['../class_reference_test_application.html#a6f2d06601d0905d3d5e9d363f70e8564',1,'ReferenceTestApplication']]],
+  ['_7etestapplicationfixture',['~TestApplicationFixture',['../struct_test_application_fixture.html#a8cda99c5b93fd17d094b25361c54193f',1,'TestApplicationFixture']]]
 ];

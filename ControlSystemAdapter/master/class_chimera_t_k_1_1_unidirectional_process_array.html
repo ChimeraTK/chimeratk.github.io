@@ -145,6 +145,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad7cf9a9aa9dc1df849c03ff3b08528d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceff040bc6e2b181fd5e48ac57d66470"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#aceff040bc6e2b181fd5e48ac57d66470">doPreWrite</a> (ChimeraTK::TransferType type, VersionNumber versionNumber) override</td></tr>
 <tr class="separator:aceff040bc6e2b181fd5e48ac57d66470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56dc18e1a17c483f74e0782196e60799"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#a56dc18e1a17c483f74e0782196e60799">doPostWrite</a> (ChimeraTK::TransferType type, VersionNumber versionNumber) override</td></tr>
+<tr class="separator:a56dc18e1a17c483f74e0782196e60799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0be752f6d508a652e7ee29429d6fbb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#ad0be752f6d508a652e7ee29429d6fbb3">doWriteTransfer</a> (ChimeraTK::VersionNumber versionNumber) override</td></tr>
 <tr class="separator:ad0be752f6d508a652e7ee29429d6fbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac84a21060c27414031aed5d3b71384fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html#ac84a21060c27414031aed5d3b71384fe">doWriteTransferDestructively</a> (ChimeraTK::VersionNumber versionNumber) override</td></tr>
@@ -293,7 +295,7 @@ template&lt;class T &gt; </div>
 <p>A receiver is intended to work as a tandem with a sender and receives values that have been set to the sender.</p>
 <p>This constructor creates the buffers and queues that are needed for the send/receive process and are shared with the sender. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00375">375</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00385">385</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -349,7 +351,7 @@ template&lt;class T &gt; </div>
 <p>A sender is intended intended to work as a tandem with a receiver and send set values to it. It uses the buffers and queues that have been created by the receiver.</p>
 <p>The optional send-notification listener is notified every time the sender's ProcessArray::write() method is called. It can be used to queue a request for the receiver's readNonBlocking() method to be called. The process variable passed to the listener is the receiver and not the sender. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00407">407</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00419">419</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -398,6 +400,46 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00505">505</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+
+</div>
+</div>
+<a id="a56dc18e1a17c483f74e0782196e60799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56dc18e1a17c483f74e0782196e60799">&#9670;&nbsp;</a></span>doPostWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">ChimeraTK::UnidirectionalProcessArray</a>&lt; T &gt;::doPostWrite </td>
+          <td>(</td>
+          <td class="paramtype">ChimeraTK::TransferType&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VersionNumber&#160;</td>
+          <td class="paramname"><em>versionNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 <p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00478">478</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
@@ -428,7 +470,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00434">434</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00448">448</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -476,7 +518,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00443">443</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00457">457</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -513,7 +555,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00461">461</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00488">488</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -551,7 +593,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00503">503</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00530">530</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -588,7 +630,7 @@ template&lt;class T &gt; </div>
 <p>The time-stamp of the sent value is retrieved from the time-stamp source.</p>
 <p>Throws an exception if this process variable is not a sender or if this process variable does not allow destructive sending. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00510">510</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00537">537</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -622,7 +664,7 @@ template&lt;class T&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_process_array.html#ac1be019e072c4306fa9d3516177215f5">ChimeraTK::ProcessArray&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00123">123</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00125">125</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -651,7 +693,7 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00133">133</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00135">135</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -681,7 +723,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00517">517</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00544">544</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -718,7 +760,7 @@ template&lt;typename U &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00277">277</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unidirectional_process_array_8h_source.html#l00287">287</a> of file <a class="el" href="_unidirectional_process_array_8h_source.html">UnidirectionalProcessArray.h</a>.</p>
 
 </div>
 </div>
@@ -877,7 +919,7 @@ template&lt;typename U &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_unidirectional_process_array.html">UnidirectionalProcessArray</a></li>
-    <li class="footer">Generated on Wed Jul 22 2020 03:54:00 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Fri Jul 24 2020 03:56:59 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

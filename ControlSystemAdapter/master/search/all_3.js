@@ -1,6 +1,7 @@
 var searchData=
 [
   ['c_5fstyle_5fconversion',['C_style_conversion',['../namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a6b6318f96cdc11c6a547dcb8753e0a15',1,'ChimeraTK']]],
+  ['capabilities',['capabilities',['../struct_register_descriptor_base.html#ab4589e686752c387be9e0b843284db02',1,'RegisterDescriptorBase::capabilities()'],['../struct_bidir.html#a450ec6ae96b938c7ce8b002613976017',1,'Bidir::capabilities()']]],
   ['check_5fthrow_5fprint',['CHECK_THROW_PRINT',['../test_type_changing_decorator_8cpp.html#aa404515e6020c74d68ab9db69ca69339',1,'testTypeChangingDecorator.cpp']]],
   ['chimeratk',['ChimeraTK',['../namespace_chimera_t_k.html',1,'']]],
   ['close',['close',['../struct_process_array_factory_backend.html#aed60121d04d6a727050f459d9e55c11e',1,'ProcessArrayFactoryBackend']]],

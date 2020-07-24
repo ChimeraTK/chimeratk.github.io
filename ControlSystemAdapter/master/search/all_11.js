@@ -6,7 +6,6 @@ var searchData=
   ['sender_5freceiver',['SENDER_RECEIVER',['../class_chimera_t_k_1_1_process_array.html#ab3ed8ce4da736ec65ea938eb401f46dda9ef2c3242765d411075ab916d2c19b32',1,'ChimeraTK::ProcessArray']]],
   ['setenableprocessarraythreadsafetycheck',['setEnableProcessArrayThreadSafetyCheck',['../namespace_chimera_t_k.html#a3b513f257155d9245ebed197db95a8fc',1,'ChimeraTK']]],
   ['setexception',['setException',['../struct_process_array_factory_backend.html#afd110f2bde405a322cd8d321f4341e75',1,'ProcessArrayFactoryBackend']]],
-  ['setforcedatalosswrite',['setForceDataLossWrite',['../struct_register_descriptor_base.html#a3c9b5a325d35d1866596d64540f6ac90',1,'RegisterDescriptorBase']]],
   ['setforceruntimeerror',['setForceRuntimeError',['../struct_register_descriptor_base.html#ae533fd7efdb247bc103a9a95f8935d18',1,'RegisterDescriptorBase']]],
   ['setpersistentdatastorage',['setPersistentDataStorage',['../class_chimera_t_k_1_1_bidirectional_process_array.html#ae9d55a715a86e0c0ff4cb4380b90f569',1,'ChimeraTK::BidirectionalProcessArray::setPersistentDataStorage()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a70445d795d2a69b6214d0f5d5738c3e6',1,'ChimeraTK::UnidirectionalProcessArray::setPersistentDataStorage()']]],
   ['setpvmanager',['setPVManager',['../class_chimera_t_k_1_1_application_base.html#a408946c453e9c6928c265dac185a87bd',1,'ChimeraTK::ApplicationBase']]],
