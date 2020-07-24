@@ -6,6 +6,7 @@ var searchData=
   ['templateusertypemap_3c_20sharedaccessormap_20_3e',['TemplateUserTypeMap&lt; SharedAccessorMap &gt;',['../class_chimera_t_k_1_1_template_user_type_map.html',1,'ChimeraTK']]],
   ['testabledevice',['TestableDevice',['../class_testable_device.html',1,'']]],
   ['testabledummybackend',['TestableDummyBackend',['../class_testable_dummy_backend.html',1,'']]],
+  ['testcapabilities',['TestCapabilities',['../struct_chimera_t_k_1_1_test_capabilities.html',1,'ChimeraTK']]],
   ['testdummy',['TestDummy',['../class_test_dummy.html',1,'']]],
   ['testlocker',['TestLocker',['../struct_test_locker.html',1,'']]],
   ['threadinformermutex',['ThreadInformerMutex',['../struct_chimera_t_k_1_1_thread_informer_mutex.html',1,'ChimeraTK']]],

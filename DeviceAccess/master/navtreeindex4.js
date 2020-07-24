@@ -1,5 +1,10 @@
 var NAVTREEINDEX4 =
 {
+"class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#ab7654ddf9a091bc4d4982aeafce6d71f":[17,0,1,58,5],
+"class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#ac45367b2901931167b93b4db3d9d4fe7":[17,0,1,58,3],
+"class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#ac4b09c3a0ac94dde7df61e02286ad222":[17,0,1,58,2],
+"class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#acc4d4d473d5a886b4528771877ffb0b8":[17,0,1,58,18],
+"class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#acd2f9de66ee21dd155d1da09f569d2ff":[17,0,1,58,24],
 "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#acd73494f73d504e5a3bef1d215e00753":[17,0,1,58,19],
 "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#adf0efa60b77d7bdbcb97e9a46fe102e4":[17,0,1,58,20],
 "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#aec9c8c6ab38ab64a67a88fe51c61c536":[17,0,1,58,14],
@@ -244,10 +249,5 @@ var NAVTREEINDEX4 =
 "class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html#a86167bb7d109c12718a42e61857824dd":[17,0,1,73,0,10],
 "class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html#ab11f1915c7284a9d21a71e922c1475b6":[17,0,1,73,0,8],
 "class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html#ab94139840aed8ff142701b12e8f1167d":[17,0,1,73,0,1],
-"class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html#af914cf3281a5e9d018f95d2d92af1212":[17,0,1,73,0,6],
-"class_chimera_t_k_1_1_register_catalogue_1_1iterator.html":[17,0,1,73,1],
-"class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a11ae150c12adf767d5035ae842e88e3d":[17,0,1,73,1,6],
-"class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a1f8895b4e71616e8691e40b1c379b414":[17,0,1,73,1,1],
-"class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a3567084eed1e7ecfd879e03ad093c54f":[17,0,1,73,1,7],
-"class_chimera_t_k_1_1_register_catalogue_1_1iterator.html#a36d5babbe37d8e4e37f5abefc0a8af61":[17,0,1,73,1,8]
+"class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html#af914cf3281a5e9d018f95d2d92af1212":[17,0,1,73,0,6]
 };

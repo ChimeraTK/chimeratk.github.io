@@ -73,8 +73,6 @@ var searchData=
   ['regsinglewordscaled_5fr',['RegSingleWordScaled_R',['../struct_reg_single_word_scaled___r.html',1,'']]],
   ['regsinglewordscaled_5fw',['RegSingleWordScaled_W',['../struct_reg_single_word_scaled___w.html',1,'']]],
   ['regsinglewordscaledtwice_5fpush',['RegSingleWordScaledTwice_push',['../struct_reg_single_word_scaled_twice__push.html',1,'']]],
-  ['regt_5fdisablesyncreadtests_5fgetter',['RegT_disableSyncReadTests_getter',['../struct_chimera_t_k_1_1_unified_backend_test_1_1_reg_t__disable_sync_read_tests__getter.html',1,'ChimeraTK::UnifiedBackendTest']]],
-  ['regt_5fdisablesyncreadtests_5fgetter_3c_20reg_5ft_2c_20typename_20std_3a_3aenable_5fif_3c_20std_3a_3ais_5fintegral_3c_20decltype_28reg_5ft_3a_3adisablesyncreadtests_29_3e_3a_3avalue_20_3e_3a_3atype_20_3e',['RegT_disableSyncReadTests_getter&lt; REG_T, typename std::enable_if&lt; std::is_integral&lt; decltype(REG_T::disableSyncReadTests)&gt;::value &gt;::type &gt;',['../struct_chimera_t_k_1_1_unified_backend_test_1_1_reg_t__disable_sync_read_tests__getter_3_01_r_e_a2bc294a9ab0759753ca4ea7ceaaa45e.html',1,'ChimeraTK::UnifiedBackendTest']]],
   ['regvariable',['RegVariable',['../struct_reg_variable.html',1,'']]],
   ['regwordfirmwareasparameterinmath',['RegWordFirmwareAsParameterInMath',['../struct_reg_word_firmware_as_parameter_in_math.html',1,'']]],
   ['regwordfirmwareforcedreadonly',['RegWordFirmwareForcedReadOnly',['../struct_reg_word_firmware_forced_read_only.html',1,'']]],

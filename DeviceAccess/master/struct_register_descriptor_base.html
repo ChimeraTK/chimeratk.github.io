@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('struct_register_descriptor_base.html',
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_register_descriptor_base-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">RegisterDescriptorBase&lt; Derived &gt; Struct Template Reference</div>  </div>
@@ -121,21 +122,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0c5aa1b770ce8013f65a2aa1ae66e082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14ad808083b841a828bd231da9b65c01"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register_descriptor_base.html#a14ad808083b841a828bd231da9b65c01">writeQueueLength</a> ()</td></tr>
 <tr class="separator:a14ad808083b841a828bd231da9b65c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af57ca25bb0110948961cb1092d72fe42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register_descriptor_base.html#af57ca25bb0110948961cb1092d72fe42">testAsyncReadInconsistency</a> ()</td></tr>
-<tr class="separator:af57ca25bb0110948961cb1092d72fe42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69763ae2bf994bbc97be829123629c9d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register_descriptor_base.html#a69763ae2bf994bbc97be829123629c9d">nRuntimeErrorCases</a> ()</td></tr>
 <tr class="separator:a69763ae2bf994bbc97be829123629c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51d65d39543b08129a514efc338e0d2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register_descriptor_base.html#a51d65d39543b08129a514efc338e0d2d">setForceRuntimeError</a> (bool enable, size_t)</td></tr>
 <tr class="separator:a51d65d39543b08129a514efc338e0d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c9b5a325d35d1866596d64540f6ac90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register_descriptor_base.html#a3c9b5a325d35d1866596d64540f6ac90">setForceDataLossWrite</a> (bool)</td></tr>
-<tr class="separator:a3c9b5a325d35d1866596d64540f6ac90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6cca93c696b721d6ad6b43d9d005ff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register_descriptor_base.html#aa6cca93c696b721d6ad6b43d9d005ff2">forceAsyncReadInconsistency</a> ()</td></tr>
-<tr class="separator:aa6cca93c696b721d6ad6b43d9d005ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ace6f5037e321e4955af042f265fb0537"><td class="memItemLeft" align="right" valign="top">Derived *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register_descriptor_base.html#ace6f5037e321e4955af042f265fb0537">derived</a> {static_cast&lt;Derived*&gt;(this)}</td></tr>
 <tr class="separator:ace6f5037e321e4955af042f265fb0537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ab4589e686752c387be9e0b843284db02"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register_descriptor_base.html#ab4589e686752c387be9e0b843284db02">capabilities</a> = <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;&gt;().disableForceDataLossWrite().disableAsyncReadInconsistency()</td></tr>
+<tr class="separator:ab4589e686752c387be9e0b843284db02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename Derived&gt;<br />
@@ -145,35 +145,6 @@ struct RegisterDescriptorBase&lt; Derived &gt;</h3>
 
 <p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00028">28</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa6cca93c696b721d6ad6b43d9d005ff2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6cca93c696b721d6ad6b43d9d005ff2">&#9670;&nbsp;</a></span>forceAsyncReadInconsistency()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Derived&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="struct_register_descriptor_base.html">RegisterDescriptorBase</a>&lt; Derived &gt;::forceAsyncReadInconsistency </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00054">54</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
-
-</div>
-</div>
 <a id="af57d0534ce35b70d52b2618ced6a5185"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af57d0534ce35b70d52b2618ced6a5185">&#9670;&nbsp;</a></span>isPush()</h2>
 
@@ -199,7 +170,7 @@ template&lt;typename Derived&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00033">33</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00035">35</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -228,7 +199,7 @@ template&lt;typename Derived&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00032">32</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00034">34</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -257,7 +228,7 @@ template&lt;typename Derived&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00031">31</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00033">33</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -286,37 +257,7 @@ template&lt;typename Derived&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00041">41</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a3c9b5a325d35d1866596d64540f6ac90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c9b5a325d35d1866596d64540f6ac90">&#9670;&nbsp;</a></span>setForceDataLossWrite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Derived&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="struct_register_descriptor_base.html">RegisterDescriptorBase</a>&lt; Derived &gt;::setForceDataLossWrite </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00052">52</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00042">42</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -356,7 +297,7 @@ template&lt;typename Derived&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00043">43</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00044">44</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -385,36 +326,7 @@ template&lt;typename Derived&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00034">34</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
-
-</div>
-</div>
-<a id="af57ca25bb0110948961cb1092d72fe42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af57ca25bb0110948961cb1092d72fe42">&#9670;&nbsp;</a></span>testAsyncReadInconsistency()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Derived&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="struct_register_descriptor_base.html">RegisterDescriptorBase</a>&lt; Derived &gt;::testAsyncReadInconsistency </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00040">40</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00036">36</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -443,11 +355,37 @@ template&lt;typename Derived&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00039">39</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00041">41</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab4589e686752c387be9e0b843284db02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4589e686752c387be9e0b843284db02">&#9670;&nbsp;</a></span>capabilities</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto <a class="el" href="struct_register_descriptor_base.html">RegisterDescriptorBase</a>&lt; Derived &gt;::capabilities = <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;&gt;().disableForceDataLossWrite().disableAsyncReadInconsistency()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00031">31</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ace6f5037e321e4955af042f265fb0537"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace6f5037e321e4955af042f265fb0537">&#9670;&nbsp;</a></span>derived</h2>
 
@@ -475,7 +413,7 @@ template&lt;typename Derived&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_register_descriptor_base.html">RegisterDescriptorBase</a></li>
-    <li class="footer">Generated on Thu Jul 23 2020 03:53:58 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Fri Jul 24 2020 03:54:59 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

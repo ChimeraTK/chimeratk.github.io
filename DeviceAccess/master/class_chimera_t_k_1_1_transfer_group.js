@@ -16,5 +16,6 @@ var class_chimera_t_k_1_1_transfer_group =
     [ "_highLevelElements", "class_chimera_t_k_1_1_transfer_group.html#a32d6ce6d3b40c3a361874948ab71f327", null ],
     [ "_isReadable", "class_chimera_t_k_1_1_transfer_group.html#a1f5b15a27a3bbb3ac150969dee69b0ff", null ],
     [ "_isWriteable", "class_chimera_t_k_1_1_transfer_group.html#a2f09459b907856e46cd595e0bed49f6c", null ],
-    [ "_lowLevelElementsAndExceptionFlags", "class_chimera_t_k_1_1_transfer_group.html#a6e45e3ff091f038aceb543a04fb0ec6f", null ]
+    [ "_lowLevelElementsAndExceptionFlags", "class_chimera_t_k_1_1_transfer_group.html#a6e45e3ff091f038aceb543a04fb0ec6f", null ],
+    [ "_nRuntimeErrors", "class_chimera_t_k_1_1_transfer_group.html#a95672db21fe6687d79bbb1c1df0ea04e", null ]
 ];

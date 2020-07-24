@@ -31,8 +31,8 @@ var hierarchy =
     [ "Argument", "struct_argument.html", null ],
     [ "ChimeraTK::BackendFactory", "class_chimera_t_k_1_1_backend_factory.html", null ],
     [ "CustomBackend::BackendRegisterer", "struct_custom_backend_1_1_backend_registerer.html", null ],
-    [ "ExampleBackend::BackendRegisterer", "class_example_backend_1_1_backend_registerer.html", null ],
     [ "AnotherWorkingBackend::BackendRegisterer", "struct_another_working_backend_1_1_backend_registerer.html", null ],
+    [ "ExampleBackend::BackendRegisterer", "class_example_backend_1_1_backend_registerer.html", null ],
     [ "WorkingBackend::BackendRegisterer", "struct_working_backend_1_1_backend_registerer.html", null ],
     [ "WrongVersionBackend::BackendRegisterer", "struct_wrong_version_backend_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::ExceptionDummy::BackendRegisterer", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer.html", null ],
@@ -110,6 +110,9 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::proxies::DummyRegisterSequence< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", null ],
     [ "DummyRegisterTest", "class_dummy_register_test.html", null ],
+    [ "enable_shared_from_this", null, [
+      [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
+    ] ],
     [ "enable_shared_from_this", null, [
       [ "ChimeraTK::DeviceBackend", "class_chimera_t_k_1_1_device_backend.html", [
         [ "ChimeraTK::DeviceBackendImpl", "class_chimera_t_k_1_1_device_backend_impl.html", [
@@ -200,9 +203,6 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "enable_shared_from_this", null, [
-      [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
-    ] ],
     [ "ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html", null ],
     [ "ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html", null ],
     [ "ChimeraTK::DeviceInfoMap::ErrorList", "class_chimera_t_k_1_1_device_info_map_1_1_error_list.html", null ],
@@ -225,6 +225,8 @@ var hierarchy =
     [ "ChimeraTK::FixedUserTypeMap< TargetType >", "class_chimera_t_k_1_1_fixed_user_type_map.html", null ],
     [ "ChimeraTK::FixedUserTypeMap< int >", "class_chimera_t_k_1_1_fixed_user_type_map.html", null ],
     [ "Fixture", "struct_fixture.html", null ],
+    [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::forceAsyncReadInconsistency_proxy_helper< T, condition >", "struct_chimera_t_k_1_1_unified_backend_test_1_1force_async_read_inconsistency__proxy__helper.html", null ],
+    [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::forceAsyncReadInconsistency_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1force_async_read_inconsistency__proxy__helper_3_01_t_00_01false_01_4.html", null ],
     [ "ChimeraTK::LNMBackend::ForcePollingReadPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin___helper.html", null ],
     [ "ChimeraTK::LNMBackend::ForcePollingReadPlugin_Helper< UserType, UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin___helper_3_01_user_type_00_01_user_type_01_4.html", null ],
     [ "ChimeraTK::LNMBackend::ForceReadOnlyPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper.html", null ],
@@ -478,15 +480,19 @@ var hierarchy =
     [ "ChimeraTK::RegisterInfoMap", "class_chimera_t_k_1_1_register_info_map.html", null ],
     [ "ChimeraTK::RegisterPath", "class_chimera_t_k_1_1_register_path.html", null ],
     [ "RegisterPathTest", "class_register_path_test.html", null ],
-    [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::RegT_disableSyncReadTests_getter< REG_T, Enable >", "struct_chimera_t_k_1_1_unified_backend_test_1_1_reg_t__disable_sync_read_tests__getter.html", null ],
-    [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::RegT_disableSyncReadTests_getter< REG_T, typename std::enable_if< std::is_integral< decltype(REG_T::disableSyncReadTests)>::value >::type >", "struct_chimera_t_k_1_1_unified_backend_test_1_1_reg_t__disable_sync_read_tests__getter_3_01_r_e_a2bc294a9ab0759753ca4ea7ceaaa45e.html", null ],
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, DestType >::Round< S >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html", null ],
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, DestType >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html", null ],
     [ "ChimeraTK::Sdm", "struct_chimera_t_k_1_1_sdm.html", null ],
+    [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::setForceDataLossWrite_proxy_helper< T, condition >", "struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper.html", null ],
+    [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::setForceDataLossWrite_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper_3_01_t_00_01false_01_4.html", null ],
     [ "ChimeraTK::LogicalNameMappingBackend::SharedAccessor< UserType >", "struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html", null ],
     [ "StaticCore", "struct_static_core.html", null ],
     [ "accessPrivateData::stow_private< Tag, x >", "structaccess_private_data_1_1stow__private.html", null ],
     [ "accessPrivateData::stowed< Tag >", "structaccess_private_data_1_1stowed.html", null ],
+    [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::switchReadOnly_proxy_helper< T, condition >", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_read_only__proxy__helper.html", null ],
+    [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::switchReadOnly_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_read_only__proxy__helper_3_01_t_00_01false_01_4.html", null ],
+    [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::switchWriteOnly_proxy_helper< T, condition >", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_write_only__proxy__helper.html", null ],
+    [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::switchWriteOnly_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_write_only__proxy__helper_3_01_t_00_01false_01_4.html", null ],
     [ "ChimeraTK::TemplateUserTypeMap< TemplateClass >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],
     [ "ChimeraTK::TemplateUserTypeMap< ChimeraTK::RegisterAccessor::AccessorHandler >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],
     [ "ChimeraTK::TemplateUserTypeMap< myVector >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],
@@ -508,6 +514,7 @@ var hierarchy =
       [ "RegisterPathTestSuite", "class_register_path_test_suite.html", null ],
       [ "VersionNumberTestSuite", "class_version_number_test_suite.html", null ]
     ] ],
+    [ "ChimeraTK::TestCapabilities< _syncRead, _forceDataLossWrite, _asyncReadInconsistency, _switchReadOnly, _switchWriteOnly >", "struct_chimera_t_k_1_1_test_capabilities.html", null ],
     [ "TestLocker", "struct_test_locker.html", null ],
     [ "ChimeraTK::ThreadInformerMutex", "struct_chimera_t_k_1_1_thread_informer_mutex.html", null ],
     [ "ChimeraTK::TransferElementAbstractor", "class_chimera_t_k_1_1_transfer_element_abstractor.html", [
@@ -525,8 +532,8 @@ var hierarchy =
     [ "ChimeraTK::TransferGroup", "class_chimera_t_k_1_1_transfer_group.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >", "class_chimera_t_k_1_1_unified_backend_test.html", null ],
     [ "ChimeraTK::Utilities", "class_chimera_t_k_1_1_utilities.html", null ],
-    [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
+    [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
     [ "ChimeraTK::VersionNumber", "class_chimera_t_k_1_1_version_number.html", null ],

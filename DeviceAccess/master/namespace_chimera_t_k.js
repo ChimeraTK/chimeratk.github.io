@@ -86,6 +86,7 @@ var namespace_chimera_t_k =
     [ "SubdeviceBackend", "class_chimera_t_k_1_1_subdevice_backend.html", "class_chimera_t_k_1_1_subdevice_backend" ],
     [ "SubdeviceRegisterAccessor", "class_chimera_t_k_1_1_subdevice_register_accessor.html", "class_chimera_t_k_1_1_subdevice_register_accessor" ],
     [ "TemplateUserTypeMap", "class_chimera_t_k_1_1_template_user_type_map.html", "class_chimera_t_k_1_1_template_user_type_map" ],
+    [ "TestCapabilities", "struct_chimera_t_k_1_1_test_capabilities.html", "struct_chimera_t_k_1_1_test_capabilities" ],
     [ "ThreadInformerMutex", "struct_chimera_t_k_1_1_thread_informer_mutex.html", "struct_chimera_t_k_1_1_thread_informer_mutex" ],
     [ "TransferElement", "class_chimera_t_k_1_1_transfer_element.html", "class_chimera_t_k_1_1_transfer_element" ],
     [ "TransferElementAbstractor", "class_chimera_t_k_1_1_transfer_element_abstractor.html", "class_chimera_t_k_1_1_transfer_element_abstractor" ],

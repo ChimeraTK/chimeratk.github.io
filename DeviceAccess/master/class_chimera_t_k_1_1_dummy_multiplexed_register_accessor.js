@@ -1,6 +1,7 @@
 var class_chimera_t_k_1_1_dummy_multiplexed_register_accessor =
 [
     [ "DummyMultiplexedRegisterAccessor", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html#abe08a02f0388872ac524c6c4ce6d7c32", null ],
+    [ "DummyMultiplexedRegisterAccessor", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html#a92461effbdacf44ed887a70d8c0f9904", null ],
     [ "getBackend", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html#a10182604d825e2d155789507d1735c6d", null ],
     [ "getNumberOfElements", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html#aeb8f03e7ef2945dfc62819271665d1ea", null ],
     [ "getNumberOfSequences", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html#a5b47d076ecd1da63f6ab78c81ac0a804", null ],

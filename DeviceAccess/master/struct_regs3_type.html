@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('struct_regs3_type.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_regs3_type-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Regs3Type&lt; Register &gt; Struct Template Reference</div>  </div>
@@ -119,8 +120,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a33365e110e6d2653f78179378262ff8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaf4d476037e7e03b98de26b7ec964eb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_regs3_type.html#abaf4d476037e7e03b98de26b7ec964eb">nRuntimeErrorCases</a> ()</td></tr>
 <tr class="separator:abaf4d476037e7e03b98de26b7ec964eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a248321112d2e582a156afb34d313e8e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_regs3_type.html#a248321112d2e582a156afb34d313e8e4">testAsyncReadInconsistency</a> ()</td></tr>
-<tr class="separator:a248321112d2e582a156afb34d313e8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58ad347f215d1298152a8626fc305f17"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:a58ad347f215d1298152a8626fc305f17"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_regs3_type.html#a58ad347f215d1298152a8626fc305f17">generateValue</a> ()</td></tr>
 <tr class="separator:a58ad347f215d1298152a8626fc305f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,47 +130,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac463042740c3663b457e8b7af84771e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ab3eee1428c0816dd9e2d94ae30a726"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_regs3_type.html#a1ab3eee1428c0816dd9e2d94ae30a726">setForceRuntimeError</a> (bool enable, size_t)</td></tr>
 <tr class="separator:a1ab3eee1428c0816dd9e2d94ae30a726"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b1bb2dbc6b9492a1a4922f9a073ff3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_regs3_type.html#a6b1bb2dbc6b9492a1a4922f9a073ff3c">setForceDataLossWrite</a> (bool)</td></tr>
-<tr class="separator:a6b1bb2dbc6b9492a1a4922f9a073ff3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad95bc112e3391dd5747d317885ed26c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_regs3_type.html#ad95bc112e3391dd5747d317885ed26c6">forceAsyncReadInconsistency</a> ()</td></tr>
-<tr class="separator:ad95bc112e3391dd5747d317885ed26c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a5e308728ed732e980d9d9d72f93e007a"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_regs3_type.html#a5e308728ed732e980d9d9d72f93e007a">capabilities</a> = <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;&gt;().disableForceDataLossWrite().disableAsyncReadInconsistency()</td></tr>
+<tr class="separator:a5e308728ed732e980d9d9d72f93e007a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename Register&gt;<br />
 struct Regs3Type&lt; Register &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00102">102</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00099">99</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad95bc112e3391dd5747d317885ed26c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad95bc112e3391dd5747d317885ed26c6">&#9670;&nbsp;</a></span>forceAsyncReadInconsistency()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Register &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="struct_regs3_type.html">Regs3Type</a>&lt; Register &gt;::forceAsyncReadInconsistency </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00145">145</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
-
-</div>
-</div>
 <a id="a58ad347f215d1298152a8626fc305f17"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58ad347f215d1298152a8626fc305f17">&#9670;&nbsp;</a></span>generateValue()</h2>
 
@@ -199,7 +170,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00112">112</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00110">110</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -230,7 +201,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00123">123</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00121">121</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -259,7 +230,7 @@ template&lt;typename Register &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00104">104</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00101">101</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -288,7 +259,7 @@ template&lt;typename Register &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00103">103</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00100">100</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -317,7 +288,7 @@ template&lt;typename Register &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00106">106</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00103">103</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -346,37 +317,7 @@ template&lt;typename Register &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00108">108</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a6b1bb2dbc6b9492a1a4922f9a073ff3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b1bb2dbc6b9492a1a4922f9a073ff3c">&#9670;&nbsp;</a></span>setForceDataLossWrite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Register &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="struct_regs3_type.html">Regs3Type</a>&lt; Register &gt;::setForceDataLossWrite </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00143">143</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00105">105</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -416,7 +357,7 @@ template&lt;typename Register &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00138">138</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00136">136</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -445,7 +386,7 @@ template&lt;typename Register &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00131">131</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00129">129</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -474,36 +415,7 @@ template&lt;typename Register &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00105">105</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a248321112d2e582a156afb34d313e8e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a248321112d2e582a156afb34d313e8e4">&#9670;&nbsp;</a></span>testAsyncReadInconsistency()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Register &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="struct_regs3_type.html">Regs3Type</a>&lt; Register &gt;::testAsyncReadInconsistency </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00109">109</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00102">102</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -532,6 +444,33 @@ template&lt;typename Register &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00104">104</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5e308728ed732e980d9d9d72f93e007a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e308728ed732e980d9d9d72f93e007a">&#9670;&nbsp;</a></span>capabilities</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Register &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto <a class="el" href="struct_regs3_type.html">Regs3Type</a>&lt; Register &gt;::capabilities = <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;&gt;().disableForceDataLossWrite().disableAsyncReadInconsistency()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 <p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00107">107</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
@@ -545,7 +484,7 @@ template&lt;typename Register &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_regs3_type.html">Regs3Type</a></li>
-    <li class="footer">Generated on Thu Jul 23 2020 03:53:58 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Fri Jul 24 2020 03:54:59 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

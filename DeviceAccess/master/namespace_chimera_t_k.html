@@ -344,6 +344,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_template_user_type_map.html">TemplateUserTypeMap</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of UserType to a class template with the UserType as template argument.  <a href="class_chimera_t_k_1_1_template_user_type_map.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descriptor for the test capabilites for each register.  <a href="struct_chimera_t_k_1_1_test_capabilities.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_thread_informer_mutex.html">ThreadInformerMutex</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a></td></tr>
@@ -413,6 +416,12 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:aefbbe1fd9e4eefc7aa088b1242274ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to indicate the applicable opereation on a Transferelement.  <a href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:aefbbe1fd9e4eefc7aa088b1242274ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad026dd4a8d0c54ed5084a0ed3e51d985"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">TestCapability</a> { <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985ad415f0e30c471dfdd9bc4f827329ef48">TestCapability::unspecified</a>, 
+<a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423">TestCapability::enabled</a>, 
+<a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713">TestCapability::disabled</a>
+ }<tr class="memdesc:ad026dd4a8d0c54ed5084a0ed3e51d985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by the Capabilities descriptor.  <a href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ad026dd4a8d0c54ed5084a0ed3e51d985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -730,6 +739,40 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ad026dd4a8d0c54ed5084a0ed3e51d985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad026dd4a8d0c54ed5084a0ed3e51d985">&#9670;&nbsp;</a></span>TestCapability</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985">ChimeraTK::TestCapability</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Used by the Capabilities descriptor. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad026dd4a8d0c54ed5084a0ed3e51d985ad415f0e30c471dfdd9bc4f827329ef48"></a>unspecified&#160;</td><td class="fielddoc"><p>Capability is not specified, hence it is disabled and a warning is printed. Usually default. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423"></a>enabled&#160;</td><td class="fielddoc"><p>Enable tests requiring this capability. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713"></a>disabled&#160;</td><td class="fielddoc"><p>Disable tests requiring this capability and do not warn. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00020">20</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
 <a id="aefbbe1fd9e4eefc7aa088b1242274ee7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aefbbe1fd9e4eefc7aa088b1242274ee7">&#9670;&nbsp;</a></span>TransferType</h2>
 
@@ -885,7 +928,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00284">284</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00455">455</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -917,7 +960,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00289">289</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00460">460</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -949,7 +992,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00294">294</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00465">465</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -981,7 +1024,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00299">299</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00470">470</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2665,7 +2708,7 @@ template&lt;typename UserTypeReturn , typename UserTypeParameter &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li>
-    <li class="footer">Generated on Thu Jul 23 2020 03:53:58 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Fri Jul 24 2020 03:54:59 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
