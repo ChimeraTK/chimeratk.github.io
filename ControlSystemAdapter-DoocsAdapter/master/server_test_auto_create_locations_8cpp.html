@@ -82,7 +82,6 @@ $(document).ready(function(){initNavTree('server_test_auto_create_locations_8cpp
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -91,7 +90,9 @@ $(document).ready(function(){initNavTree('server_test_auto_create_locations_8cpp
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="server_based_test_tools_8h_source.html">serverBasedTestTools.h</a>&quot;</code><br />
 <code>#include &lt;boost/filesystem.hpp&gt;</code><br />
+<code>#include &lt;boost/version.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>&quot;</code><br />
 <code>#include &lt;ChimeraTK/ControlSystemAdapter/Testing/ReferenceTestApplication.h&gt;</code><br />
 <code>#include &lt;doocs-server-test-helper/doocsServerTestHelper.h&gt;</code><br />
@@ -108,13 +109,6 @@ $(document).ready(function(){initNavTree('server_test_auto_create_locations_8cpp
 </div>
 <p><a href="server_test_auto_create_locations_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_internal_test_server.html">InternalTestServer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_global_fixture.html">GlobalFixture</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a6b2a3852db8bb19ab6909bac01859985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_test_auto_create_locations_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>&#160;&#160;&#160;serverTestAutoCreateLocations</td></tr>
@@ -122,11 +116,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6108ecb4b5c426c40bae776d3dc5f7fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_test_auto_create_locations_8cpp.html#a6108ecb4b5c426c40bae776d3dc5f7fd">BOOST_GLOBAL_FIXTURE</a> (<a class="el" href="struct_global_fixture.html">GlobalFixture</a>)</td></tr>
-<tr class="separator:a6108ecb4b5c426c40bae776d3dc5f7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45db44fbf9098e40e70d900cfb55a4c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_test_auto_create_locations_8cpp.html#a45db44fbf9098e40e70d900cfb55a4c0">BOOST_AUTO_TEST_CASE</a> (testVariableExistence)</td></tr>
-<tr class="memdesc:a45db44fbf9098e40e70d900cfb55a4c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that all expected variables are there.  <a href="#a45db44fbf9098e40e70d900cfb55a4c0">More...</a><br /></td></tr>
-<tr class="separator:a45db44fbf9098e40e70d900cfb55a4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7b0a6e9928eed1f7cd1d2761b64fa6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="server_based_test_tools_8h.html#a1fee8002aaa2abcd5a1b23996c3d979e">DOOCS_ADAPTER_DEFAULT_FIXTURE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_test_auto_create_locations_8cpp.html#ac7b0a6e9928eed1f7cd1d2761b64fa6f">BOOST_AUTO_TEST_CASE</a> (testVariableExistence)</td></tr>
+<tr class="memdesc:ac7b0a6e9928eed1f7cd1d2761b64fa6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that all expected variables are there.  <a href="#ac7b0a6e9928eed1f7cd1d2761b64fa6f">More...</a><br /></td></tr>
+<tr class="separator:ac7b0a6e9928eed1f7cd1d2761b64fa6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -151,14 +143,14 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a45db44fbf9098e40e70d900cfb55a4c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45db44fbf9098e40e70d900cfb55a4c0">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE()</h2>
+<a id="ac7b0a6e9928eed1f7cd1d2761b64fa6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7b0a6e9928eed1f7cd1d2761b64fa6f">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td class="memname"><a class="el" href="server_based_test_tools_8h.html#a1fee8002aaa2abcd5a1b23996c3d979e">DOOCS_ADAPTER_DEFAULT_FIXTURE</a> BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
           <td class="paramtype">testVariableExistence&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -169,25 +161,7 @@ Variables</h2></td></tr>
 
 <p>Check that all expected variables are there. </p>
 
-<p class="definition">Definition at line <a class="el" href="server_test_auto_create_locations_8cpp_source.html#l00043">43</a> of file <a class="el" href="server_test_auto_create_locations_8cpp_source.html">serverTestAutoCreateLocations.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a6108ecb4b5c426c40bae776d3dc5f7fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6108ecb4b5c426c40bae776d3dc5f7fd">&#9670;&nbsp;</a></span>BOOST_GLOBAL_FIXTURE()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOST_GLOBAL_FIXTURE </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_global_fixture.html">GlobalFixture</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="server_test_auto_create_locations_8cpp_source.html#l00028">28</a> of file <a class="el" href="server_test_auto_create_locations_8cpp_source.html">serverTestAutoCreateLocations.cpp</a>.</p>
 
 </div>
 </div>
@@ -214,7 +188,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_171063ca2b6d8df6d9147a9ad3041fe6.html">src</a></li><li class="navelem"><a class="el" href="server_test_auto_create_locations_8cpp.html">serverTestAutoCreateLocations.cpp</a></li>
-    <li class="footer">Generated on Sat Jul 25 2020 03:58:06 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Wed Jul 29 2020 03:56:20 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

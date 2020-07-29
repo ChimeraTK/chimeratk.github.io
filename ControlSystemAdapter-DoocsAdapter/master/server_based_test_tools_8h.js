@@ -1,6 +1,7 @@
 var server_based_test_tools_8h =
 [
     [ "CHECK_WITH_TIMEOUT", "server_based_test_tools_8h.html#add3f7be9b09feebee2c883b14237272a", null ],
+    [ "CTK_BOOST_GLOBAL_FIXTURE", "server_based_test_tools_8h.html#acee5b40f3f3d70f255fa1fb76709bca0", null ],
     [ "DOOCS_ADAPTER_DEFAULT_FIXTURE", "server_based_test_tools_8h.html#a1fee8002aaa2abcd5a1b23996c3d979e", null ],
     [ "DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION", "server_based_test_tools_8h.html#a9c2852da25e25d4dc4f3f36a4ed8e8df", null ],
     [ "DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION_WITH_CODE", "server_based_test_tools_8h.html#a6d61a0bc33167c439287def79f04e7e9", null ],

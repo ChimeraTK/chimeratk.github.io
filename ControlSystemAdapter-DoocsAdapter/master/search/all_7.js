@@ -24,6 +24,5 @@ var searchData=
   ['getmacropuslenumbersourcedefault',['getMacroPusleNumberSourceDefault',['../class_chimera_t_k_1_1_variable_mapper.html#a28bf057320a328a6fdfdf0524b9e81fb',1,'ChimeraTK::VariableMapper']]],
   ['getprocessvariablesinthislocation',['getProcessVariablesInThisLocation',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#aa9b14a8983622d4d7757709d8d91e1d3',1,'ChimeraTK::CSAdapterEqFct']]],
   ['getpropertiesinlocation',['getPropertiesInLocation',['../class_chimera_t_k_1_1_variable_mapper.html#aafbeae678eaa4d6c47fb57444337f47e',1,'ChimeraTK::VariableMapper']]],
-  ['getvaluetype',['getValueType',['../class_chimera_t_k_1_1_doocs_transfer_element.html#aba7b8c441e0517b5fd48a470d310d1b8',1,'ChimeraTK::DoocsTransferElement']]],
-  ['globalfixture',['GlobalFixture',['../struct_global_fixture.html',1,'GlobalFixture'],['../struct_global_fixture.html#a82a3660c34f8ecf5e55eb1ee55949ca8',1,'GlobalFixture::GlobalFixture()'],['../struct_global_fixture.html#a82a3660c34f8ecf5e55eb1ee55949ca8',1,'GlobalFixture::GlobalFixture()']]]
+  ['getvaluetype',['getValueType',['../class_chimera_t_k_1_1_doocs_transfer_element.html#aba7b8c441e0517b5fd48a470d310d1b8',1,'ChimeraTK::DoocsTransferElement']]]
 ];
