@@ -20,5 +20,7 @@ var class_chimera_t_k_1_1_doocs_backend_register_accessor =
     [ "shutdown", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a14e6481ebb423ffab7c49078e87fe6cf", null ],
     [ "write_internal", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a858e3fa3941ee0adcff3866da1e3544b", null ],
     [ "_allocateBuffers", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a4eb64896ce3e1da2c293b3992e7028fa", null ],
+    [ "_isReadable", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a482c3cbb809d86c42a3cdba03860ee8f", null ],
+    [ "_isWriteable", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a1e5a07459cd76517365d72ab64276bdf", null ],
     [ "isInitialised", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a66bac06a72bf2af7fc769df3d7d237de", null ]
 ];
