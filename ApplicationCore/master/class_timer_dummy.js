@@ -7,5 +7,6 @@ var class_timer_dummy =
     [ "getRegisterAccessor_impl", "class_timer_dummy.html#a67937376d5b0e610d42333a62ca42c1d", null ],
     [ "isFunctional", "class_timer_dummy.html#acf67a575e593bb4e8378743a3573967f", null ],
     [ "open", "class_timer_dummy.html#a37f733778e2db53b3c9d2570934c223b", null ],
-    [ "readDeviceInfo", "class_timer_dummy.html#afc3c0a535cedb19a2e52637ec5f2f318", null ]
+    [ "readDeviceInfo", "class_timer_dummy.html#afc3c0a535cedb19a2e52637ec5f2f318", null ],
+    [ "setException", "class_timer_dummy.html#a50a9092525b847738027b3a40e2d896c", null ]
 ];

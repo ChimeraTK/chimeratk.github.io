@@ -1,9 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"struct_chimera_t_k_1_1_config_reader.html#a926973e3a9dfd07e0171f56d3ec909af":[16,0,0,16,7],
-"struct_chimera_t_k_1_1_config_reader.html#ab8f2f615e502a1b7b5ed8c15a45cc402":[16,0,0,16,5],
-"struct_chimera_t_k_1_1_config_reader.html#ac39a42b4171272dd24eb6e2dc07849a6":[16,0,0,16,16],
-"struct_chimera_t_k_1_1_config_reader.html#ac920876035406f5266007c95398ef782":[16,0,0,16,12],
 "struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793":[16,0,0,16,10],
 "struct_chimera_t_k_1_1_config_reader.html#ad514bd3865b91a2609de8c787dadaec9":[16,0,0,16,3],
 "struct_chimera_t_k_1_1_config_reader.html#adf2ba9d43d41a12a4d18bc3e0a7bc471":[16,0,0,16,6],
@@ -92,10 +88,11 @@ var NAVTREEINDEX5 =
 "struct_chimera_t_k_1_1_multiplier.html#ac7404ab42ab0d3914d1f93f3c801c902":[16,0,0,49,3],
 "struct_chimera_t_k_1_1_periodic_trigger.html":[16,0,0,50],
 "struct_chimera_t_k_1_1_periodic_trigger.html#a69cfce282e00921da38fd2d138281d17":[16,0,0,50,1],
-"struct_chimera_t_k_1_1_periodic_trigger.html#a98719f742b645a3bb1968ebe690ca427":[16,0,0,50,3],
+"struct_chimera_t_k_1_1_periodic_trigger.html#a98719f742b645a3bb1968ebe690ca427":[16,0,0,50,4],
 "struct_chimera_t_k_1_1_periodic_trigger.html#a9b68c32ebbe186c3e8eb6efba697e605":[16,0,0,50,0],
-"struct_chimera_t_k_1_1_periodic_trigger.html#ab4057030a6c29c655f9ce659fc643a4d":[16,0,0,50,2],
-"struct_chimera_t_k_1_1_periodic_trigger.html#aec9052ada4b008f2583a5f61472aac23":[16,0,0,50,4],
+"struct_chimera_t_k_1_1_periodic_trigger.html#ab4057030a6c29c655f9ce659fc643a4d":[16,0,0,50,3],
+"struct_chimera_t_k_1_1_periodic_trigger.html#aec9052ada4b008f2583a5f61472aac23":[16,0,0,50,5],
+"struct_chimera_t_k_1_1_periodic_trigger.html#af89ea984b22c0b0d144d10b7a864b161":[16,0,0,50,2],
 "struct_chimera_t_k_1_1_range_monitor.html":[16,0,0,53],
 "struct_chimera_t_k_1_1_range_monitor.html#a3846f118be4b15f904116fd17d60932b":[16,0,0,53,0],
 "struct_chimera_t_k_1_1_range_monitor.html#a4c983b3f87e2a3e30f5ffca160bb8ee3":[16,0,0,53,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX5 =
 "struct_chimera_t_k_1_1history_1_1_server_history.html#ac082c37e412276cdf0deb1aca39c7ec6":[16,0,0,0,2,0],
 "struct_chimera_t_k_1_1history_1_1_server_history.html#ad81cb718fab07979ae6dbed9336d67bc":[16,0,0,0,2,3],
 "struct_chimera_t_k_1_1history_1_1_server_history.html#add78f8765568f61b68158a653fb5e732":[16,0,0,0,2,7],
-"struct_chimera_t_k_1_1history_1_1_server_history.html#ae982a39b3f0bf3dc291f4db9389e98c1":[16,0,0,0,2,1]
+"struct_chimera_t_k_1_1history_1_1_server_history.html#ae982a39b3f0bf3dc291f4db9389e98c1":[16,0,0,0,2,1],
+"struct_chimera_t_k_1_1history_1_1_server_history.html#aef56ce644b3c80ae8d6a3fed11efe70e":[16,0,0,0,2,4],
+"struct_chimera_t_k_1_1history_1_1_server_history.html#af5ec6a499b65f476981429ee84ebe88d":[16,0,0,0,2,2],
+"struct_chimera_t_k_1_1history_1_1_update.html":[16,0,0,0,3]
 };

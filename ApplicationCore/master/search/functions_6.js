@@ -4,7 +4,6 @@ var searchData=
   ['genericwritewrapper',['genericWriteWrapper',['../namespace_chimera_t_k.html#ac5d6fe6905267734b8ef9ce293fe93ba',1,'ChimeraTK']]],
   ['get',['get',['../struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793',1,'ChimeraTK::ConfigReader::get()'],['../class_chimera_t_k_1_1_module_list.html#a4dc0f789b46c1bdadff5d2685fdff9ce',1,'ChimeraTK::ModuleList::get()']]],
   ['get_5fimpl',['get_impl',['../struct_chimera_t_k_1_1_config_reader.html#ae0d987890819fc887d81cfc296da4de0',1,'ChimeraTK::ConfigReader::get_impl(const std::string &amp;variableName, T *) const'],['../struct_chimera_t_k_1_1_config_reader.html#ac920876035406f5266007c95398ef782',1,'ChimeraTK::ConfigReader::get_impl(const std::string &amp;variableName, std::vector&lt; T &gt; *) const']]],
-  ['getaccessmodeflags',['getAccessModeFlags',['../class_timer_dummy_register_accessor.html#acb109dd3e62f92712da3e372e1dc20fc',1,'TimerDummyRegisterAccessor']]],
   ['getaccessor',['getAccessor',['../class_chimera_t_k_1_1_micro_d_a_q.html#a1a10a2f7bd4a45dd3a21f760126ab04a',1,'ChimeraTK::MicroDAQ::getAccessor()'],['../struct_chimera_t_k_1_1history_1_1_server_history.html#a76739007e938083b5b97e6f8bd4faf39',1,'ChimeraTK::history::ServerHistory::getAccessor()']]],
   ['getaccessorlist',['getAccessorList',['../class_chimera_t_k_1_1_control_system_module.html#af8e4b2d13bdfc111cf2247f2a941edb4',1,'ChimeraTK::ControlSystemModule::getAccessorList()'],['../class_chimera_t_k_1_1_entity_owner.html#ad46327064e76c3cca1cfd32bd6f99412',1,'ChimeraTK::EntityOwner::getAccessorList()']]],
   ['getaccessorlistrecursive',['getAccessorListRecursive',['../class_chimera_t_k_1_1_entity_owner.html#a40de1606ef235a05c84b8e24ef06527d',1,'ChimeraTK::EntityOwner']]],
@@ -63,6 +62,5 @@ var searchData=
   ['getvaluefromnode',['getValueFromNode',['../test_application_8cc.html#a747b9f7c811141b1509f7c267a82d2b6',1,'testApplication.cc']]],
   ['getvaluetype',['getValueType',['../class_chimera_t_k_1_1_variable_network.html#a1d60d20aacced268c9fc82352d788a37',1,'ChimeraTK::VariableNetwork::getValueType()'],['../class_chimera_t_k_1_1_variable_network_node.html#a4d1ef6ae206a43dd3a046abc34ef9eb0',1,'ChimeraTK::VariableNetworkNode::getValueType()']]],
   ['getvariablelist',['getVariableList',['../class_chimera_t_k_1_1_config_parser.html#ab29dfb53965851039c2214fb9581c995',1,'ChimeraTK::ConfigParser']]],
-  ['getversionnumber',['getVersionNumber',['../class_timer_dummy_register_accessor.html#a1486173803cd42723f3d076235ee6236',1,'TimerDummyRegisterAccessor']]],
   ['getvirtualqualifiedname',['getVirtualQualifiedName',['../class_chimera_t_k_1_1_module.html#a210eb585677baa3fc7865c52ac7abb51',1,'ChimeraTK::Module']]]
 ];

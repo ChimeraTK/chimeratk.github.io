@@ -419,7 +419,8 @@ var hierarchy =
     [ "ChimeraTK::ModuleList", "class_chimera_t_k_1_1_module_list.html", null ],
     [ "NDRegisterAccessor", null, [
       [ "ChimeraTK::ConstantAccessor< UserType >", "class_chimera_t_k_1_1_constant_accessor.html", null ],
-      [ "ChimeraTK::FeedingFanOut< UserType >", "class_chimera_t_k_1_1_feeding_fan_out.html", null ]
+      [ "ChimeraTK::FeedingFanOut< UserType >", "class_chimera_t_k_1_1_feeding_fan_out.html", null ],
+      [ "TimerDummyRegisterAccessor< UserType >", "class_timer_dummy_register_accessor.html", null ]
     ] ],
     [ "NDRegisterAccessorDecorator", null, [
       [ "ChimeraTK::ConsumingFanOut< UserType >", "class_chimera_t_k_1_1_consuming_fan_out.html", null ],
@@ -471,9 +472,6 @@ var hierarchy =
       [ "ChimeraTK::ScalarAccessor< uint8_t >", "class_chimera_t_k_1_1_scalar_accessor.html", null ]
     ] ],
     [ "ChimeraTK::TriggerFanOut::SendDataToConsumers", "struct_chimera_t_k_1_1_trigger_fan_out_1_1_send_data_to_consumers.html", null ],
-    [ "SyncNDRegisterAccessor", null, [
-      [ "TimerDummyRegisterAccessor< UserType >", "class_timer_dummy_register_accessor.html", null ]
-    ] ],
     [ "ChimeraTK::TestFacility", "class_chimera_t_k_1_1_test_facility.html", null ],
     [ "TestFixture", "struct_test_fixture.html", null ],
     [ "ChimeraTK::Application::TestsStalled", "class_chimera_t_k_1_1_application_1_1_tests_stalled.html", null ],
