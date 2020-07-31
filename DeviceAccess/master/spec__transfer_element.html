@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.0RC10</title>
+<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.0RC11</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,7 +82,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Technical specification: <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> V1.0RC10 </div>  </div>
+<div class="title">Technical specification: <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> V1.0RC11 </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><blockquote class="doxtable">
@@ -431,21 +431,27 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </ul>
 </li>
 <li><a class="anchor" id="transferElement_B_12_9"></a>12.9 Operations executed via <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88" title="Trigger read transfer for all accessors in the group. ">TransferGroup::read()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a86287fe11f64206207e0d868ed83c3db" title="Trigger write transfer for all accessors in the group. ">TransferGroup::write()</a>: [<a class="el" href="test_transfer_group_8cpp.html#testTransferElement_B_12_9">T</a> (with sub-points)]<ul>
-<li>12.9.1 first call preXxx() on all high-level elements (cf. <a class="el" href="spec__transfer_element.html#transferElement_B_12_1_2_1">12.1.2.1</a>),</li>
+<li><a class="anchor" id="transferElement_B_12_9_1"></a>12.9.1 first call preXxx() on all high-level elements (cf. <a class="el" href="spec__transfer_element.html#transferElement_B_12_1_2_1">12.1.2.1</a>),</li>
 <li><a class="anchor" id="transferElement_B_12_9_2"></a>12.9.2 next call the corresponding xxxTransferYyy() on all low-level elements (cf. <a class="el" href="spec__transfer_element.html#transferElement_B_12_1_2_2">12.1.2.2</a>), and</li>
 <li><a class="anchor" id="transferElement_B_12_9_3"></a>12.9.3 finally call postXxx() on all high-level elements.</li>
 </ul>
 </li>
 <li>12.10 The <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> implements a similar exception handling in <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88" title="Trigger read transfer for all accessors in the group. ">TransferGroup::read()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a86287fe11f64206207e0d868ed83c3db" title="Trigger write transfer for all accessors in the group. ">TransferGroup::write()</a> as their <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> counterparts. This especially means:<ul>
-<li><a class="anchor" id="transferElement_B_12_10_1"></a>12.10.1 Before preXxx() is called, the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> checks all pre-conditions (device opened and operation allowed) to make sure no <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> can occur (other exceptions are anyway not allowed in preXxx).<ul>
+<li><a class="anchor" id="transferElement_B_12_10_1"></a>12.10.1 Before preXxx() is called, the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> checks all pre-conditions (device opened and operation allowed) to make sure no <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> can occur.<ul>
 <li><a class="anchor" id="transferElement_B_12_10_1_1"></a>12.10.1.1 If any <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> occurs while checking the pre-conditions, it is immediately passed on to the application. [<a class="el" href="test_transfer_group_8cpp.html#testTransferElement_B_12_10_1_1">T</a>]</li>
 <li><a class="anchor" id="transferElement_B_12_10_1_2"></a>12.10.1.2 Any pre-condition which is not met will immediately result in a thrown <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> [<a class="el" href="test_transfer_group_8cpp.html#testTransferElement_B_12_10_1_2">T</a>]</li>
 <li>12.10.1.3 The exceptions from <a class="el" href="spec__transfer_element.html#transferElement_B_12_10_1_1">12.10.1.1</a> and <a class="el" href="spec__transfer_element.html#transferElement_B_12_10_1_2">12.10.1.2</a> are not prioritised by type. The first detected error throws.</li>
 </ul>
 </li>
-<li><a class="anchor" id="transferElement_B_12_10_2"></a>12.10.2 <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> exceptions thrown by the low-level elements are propagated to the corresponding high-level elements so they are seen by their postXxx() functions (c.f. <a class="el" href="spec__transfer_element.html#transferElement_B_6_3">6.3</a>) [<a class="el" href="test_transfer_group_8cpp.html#testTransferElement_B_12_10_2">T</a>]</li>
-<li><a class="anchor" id="transferElement_B_12_10_3"></a>12.10.3 postXxx() is called for all high level elements, even if some postXxx() throw exceptions (c.f. <a class="el" href="spec__transfer_element.html#transferElement_B_5">5</a>). [<a class="el" href="test_transfer_group_8cpp.html#testTransferElement_B_12_10_3">T</a>]</li>
-<li><a class="anchor" id="transferElement_B_12_10_4"></a>12.10.4 The first exception that has been caught in <a class="el" href="spec__transfer_element.html#transferElement_B_12_9_2">12.9.2</a> or <a class="el" href="spec__transfer_element.html#transferElement_B_12_9_3">12.9.3</a> is re-thrown. [<a class="el" href="test_transfer_group_8cpp.html#testTransferElement_B_12_10_4">T</a>]</li>
+<li><a class="anchor" id="transferElement_B_12_10_2"></a>12.10.2 If <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> exceptions occur during preXxx()<ul>
+<li><a class="anchor" id="transferElement_B_12_10_2_1"></a>12.10.2.1 still all preXxx() are executed.</li>
+<li><a class="anchor" id="transferElement_B_12_10_2_2"></a>12.10.2.2 the whole transfer phase is skipped.</li>
+<li><a class="anchor" id="transferElement_B_12_10_2_3"></a>12.10.2.3 This implies that TransferElements in TransferGroups must expect that the transfer is not executed, even if preXxx() has not thrown an exception.</li>
+</ul>
+</li>
+<li><a class="anchor" id="transferElement_B_12_10_3"></a>12.10.3 <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> exceptions thrown by the low-level elements are propagated to the corresponding high-level elements so they are seen by their postXxx() functions (c.f. <a class="el" href="spec__transfer_element.html#transferElement_B_6_3">6.3</a>) [<a class="el" href="test_transfer_group_8cpp.html#testTransferElement_B_12_10_3">INCOMPLETE T</a>]</li>
+<li><a class="anchor" id="transferElement_B_12_10_4"></a>12.10.4 postXxx() is called for all high level elements, even if some postXxx() throw exceptions (c.f. <a class="el" href="spec__transfer_element.html#transferElement_B_5">5</a>). [<a class="el" href="test_transfer_group_8cpp.html#testTransferElement_B_12_10_4">T</a>]</li>
+<li><a class="anchor" id="transferElement_B_12_10_5"></a>12.10.5 The first exception that has been caught in <a class="el" href="spec__transfer_element.html#transferElement_B_12_9_1">12.9.1</a>, <a class="el" href="spec__transfer_element.html#transferElement_B_12_9_2">12.9.2</a> or <a class="el" href="spec__transfer_element.html#transferElement_B_12_9_3">12.9.3</a> is re-thrown. [<a class="el" href="test_transfer_group_8cpp.html#testTransferElement_B_12_10_5">INCOMPLETE T</a>]</li>
 </ul>
 </li>
 <li><a class="anchor" id="transferElement_B_12_11"></a>12.11 If a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> is thrown, the content of the application buffers of all elements is not changed. (c.f. <a class="el" href="spec__transfer_element.html#transferElement_B_6_4">6.4</a>)<ul>
@@ -468,7 +474,6 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 </li>
 <li><a class="anchor" id="transferElement_B_16"></a>16. This section will be moved from <a class="el" href="spec__transfer_element.html#transferElement_C_2">C.2</a></li>
 </ul>
-<h3>UNREVIEWED ADDITIONS</h3>
 <h3>(*) Comments</h3>
 <ul>
 <li><a class="anchor" id="transferElement_comment_B_3_2_2_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_3_2_2_2">3.2.2.2</a> The optimisation is still optional, backends are allowed to not make use of it. In this case, the content of the application buffer will be intact after writeDestructively(). Applications still are not allowed to use the content of the application buffer after writeDestructively().</li>
@@ -521,7 +526,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>3. <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> in principle are recoverable. It is thrown, if the device (including the communication link) does not behave as expected. A later call to the same function (after the recovery has been triggered, cf. <a class="el" href="spec__transfer_element.html#transferElement_B_9_3_1">B.9.3.1</a> resp. <a class="el" href="spec__transfer_element.html#transferElement_B_9_4_1">B.9.4.1</a>) must be able to succeed (for instance if a network outage has been resolved). <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> may only be thrown in<ul>
 <li>3.1 doXxxTransferYyy(). It is the only exception that can occur in this function</li>
 <li>3.2 <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946" title="Check if transfer element is readable. ">TransferElement::isReadable()</a>, <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8" title="Check if transfer element is writeable. ">TransferElement::isWriteable()</a> or <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134" title="Check if transfer element is read only, i.e. ">TransferElement::isReadOnly()</a> if there is no map file or such, and it needs to be determined from the running device.</li>
-<li>3.3 (removed)</li>
+<li><a class="anchor" id="transferElement_C_3_3"></a>3.3 doPreXxx(), if the device is not functional and the transfer needs to be skipped so it does not interfere with a device recovery procedure. <a class="el" href="spec__transfer_element.html#transferElement_comment_C_3_3">(*)</a></li>
 </ul>
 </li>
 <li><a class="anchor" id="transferElement_C_4"></a>4. boost::numeric::bad_numeric_cast may only be thrown in<ul>
@@ -591,6 +596,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li><a class="anchor" id="transferElement_comment_C_2_3a"></a><a class="el" href="spec__transfer_element.html#transferElement_C_2_3">2.3</a> It is important that after calling the target's setActiveException(), the decorator has a nullptr in its _activeException. This is for instance required if the target is the ApplicationCore::ExceptionHandlingDecorator. It suppresses the exception and then the outer layers must not throw any more.</li>
 <li><a class="anchor" id="transferElement_comment_C_2_3b"></a><a class="el" href="spec__transfer_element.html#transferElement_C_2_3">2.3</a> Notice that if both the decorator and the target <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> have an active exception, the exception in the target is replaced. This is intentional. It can only happen if the same low level <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> is used by several high level elements in a <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a>. In this case the tranfer had not been executed because the high level elements had already seen the exception in preXxx, and the exception in the target can only be the exception which had been put in by another high level element in its doPostXxx, and thus has already been thrown.</li>
 <li><a class="anchor" id="transferElement_comment_C_2_3c"></a><a class="el" href="spec__transfer_element.html#transferElement_C_2_3">2.3</a> This behaviour is implemented in doPostXxx() of the <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html" title="Base class for decorators of the NDRegisterAccessor. ">NDRegisterAccessorDecorator</a> base class, which is usually called by decorator implementations.</li>
+<li><a class="anchor" id="transferElement_comment_C_3_3"></a><a class="el" href="spec__transfer_element.html#transferElement_C_3_3">3.3</a> This is for instance required by the ApplicationCore ExceptionHandlingDecorator, but also can in general be required in a multi-threaded scenario where the transfers happen in a different thread than the device recovery.</li>
 <li>5.1 Test functions do not yet exist for everything. This needs to be changed!</li>
 <li><a class="anchor" id="transferElement_comment_C_5_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2">5.2</a> Especially no <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">logic_error</a> must be thrown in doXxxTransferYyy() or doPostXxx(). All tests for logical consistency must be done in doPreXxx() latest.</li>
 <li><a class="anchor" id="transferElement_comment_C_5_2_1_1"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_1_1">5.2.1.1</a> It is legal to provide "hidden" registers not present in the catalogue, but a register listed in the catalogue must always work.</li>
@@ -628,15 +634,12 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>6. <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9ad34f0c2eaec6be3dc385f1c4acef46" title="The version number of the last successful transfer. Part of the application buffer (see TransferEleme...">TransferElement::_versionNumber</a> and TransferElement::_dataValitiy are also part of the applicaton buffer. They also must be synchronised.<ul>
 <li>6.1 When reading, <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9ad34f0c2eaec6be3dc385f1c4acef46" title="The version number of the last successful transfer. Part of the application buffer (see TransferEleme...">TransferElement::_versionNumber</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a39c613419eebb2f29590fecded7a96d0" title="The validity of the data in the application buffer. Part of the application buffer (see TransferEleme...">TransferElement::_dataValidity</a> have to be copied over in doPostRead(), after a delegating to the target postRead() and only if there has been no exception.<ul>
 <li><a class="anchor" id="transferElement_E_6_1_1"></a>6.1.1 Decorators then must always copy the meta data from their target, even if updateDataBuffer is false and NDRegisterAccessors&lt;USER_TYPE&gt;::buffer_2D is not updated. <a class="el" href="spec__transfer_element.html#transferElement_comment_E_6_1_1">(*)</a></li>
+<li>6.1.2 The data buffer is updated if there has been no exception and if updateDataBuffer is true.</li>
 </ul>
 </li>
 <li>6.2 When writing, <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a39c613419eebb2f29590fecded7a96d0" title="The validity of the data in the application buffer. Part of the application buffer (see TransferEleme...">TransferElement::_dataValidity</a> has to be copied to the target in doPreWrite() before delegating. Do <b>not</b> manually synchonise the version number. This is done by the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> base class in postWrite according to <a class="el" href="spec__transfer_element.html#transferElement_B_4_3_2">B.4.3.2</a>.</li>
 </ul>
 </li>
-</ul>
-<h3>New in RC 10. NOT REVIEWED YET!</h3>
-<ul>
-<li>6.1.2 The data buffer is updated if there has been no exception and if updateDataBuffer is true.</li>
 </ul>
 <h3>(*) Comments</h3>
 <ul>
@@ -648,7 +651,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jul 28 2020 03:53:23 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Fri Jul 31 2020 03:53:24 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
