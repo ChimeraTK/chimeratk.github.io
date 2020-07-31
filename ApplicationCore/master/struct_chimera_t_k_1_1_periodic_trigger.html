@@ -121,9 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af89ea984b22c0b0d144d10b7a864b161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4057030a6c29c655f9ce659fc643a4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_periodic_trigger.html#ab4057030a6c29c655f9ce659fc643a4d">sendTrigger</a> ()</td></tr>
 <tr class="separator:ab4057030a6c29c655f9ce659fc643a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69cfce282e00921da38fd2d138281d17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_periodic_trigger.html#a69cfce282e00921da38fd2d138281d17">mainLoop</a> ()</td></tr>
-<tr class="memdesc:a69cfce282e00921da38fd2d138281d17"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be implemented by the user: function called in a separate thread executing the main loop of the module.  <a href="#a69cfce282e00921da38fd2d138281d17">More...</a><br /></td></tr>
-<tr class="separator:a69cfce282e00921da38fd2d138281d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5bdf79b5880aba33b45f196a11585e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_periodic_trigger.html#aa5bdf79b5880aba33b45f196a11585e6">mainLoop</a> () override</td></tr>
+<tr class="memdesc:aa5bdf79b5880aba33b45f196a11585e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be implemented by the user: function called in a separate thread executing the main loop of the module.  <a href="#aa5bdf79b5880aba33b45f196a11585e6">More...</a><br /></td></tr>
+<tr class="separator:aa5bdf79b5880aba33b45f196a11585e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_application_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_application_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></td></tr>
 <tr class="memitem:a51393e96b3621ec1dbb066426d61011c inherit pub_methods_class_chimera_t_k_1_1_application_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_module.html#a51393e96b3621ec1dbb066426d61011c">ApplicationModule</a> (<a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> *owner, const std::string &amp;name, const std::string &amp;description, <a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0">HierarchyModifier</a> hierarchyModifier=<a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0a334c4a4c42fdb79d7ebc3e73b517e6f8">HierarchyModifier::none</a>, const std::unordered_set&lt; std::string &gt; &amp;tags={})</td></tr>
 <tr class="memdesc:a51393e96b3621ec1dbb066426d61011c inherit pub_methods_class_chimera_t_k_1_1_application_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: Create <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> by the given name with the given description and register it with its owner.  <a href="class_chimera_t_k_1_1_application_module.html#a51393e96b3621ec1dbb066426d61011c">More...</a><br /></td></tr>
@@ -513,8 +513,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a69cfce282e00921da38fd2d138281d17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69cfce282e00921da38fd2d138281d17">&#9670;&nbsp;</a></span>mainLoop()</h2>
+<a id="aa5bdf79b5880aba33b45f196a11585e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5bdf79b5880aba33b45f196a11585e6">&#9670;&nbsp;</a></span>mainLoop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -531,7 +531,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -546,7 +546,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_periodic_trigger_a69cfce282e00921da38fd2d138281d17_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_periodic_trigger_aa5bdf79b5880aba33b45f196a11585e6_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -677,7 +677,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_periodic_trigger.html">PeriodicTrigger</a></li>
-    <li class="footer">Generated on Thu Jul 30 2020 03:53:44 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Jul 31 2020 03:54:41 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

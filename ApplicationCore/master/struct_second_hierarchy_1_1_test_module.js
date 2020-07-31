@@ -2,7 +2,8 @@ var struct_second_hierarchy_1_1_test_module =
 [
     [ "EliminatedGroup", "struct_second_hierarchy_1_1_test_module_1_1_eliminated_group.html", "struct_second_hierarchy_1_1_test_module_1_1_eliminated_group" ],
     [ "VarGroup", "struct_second_hierarchy_1_1_test_module_1_1_var_group.html", "struct_second_hierarchy_1_1_test_module_1_1_var_group" ],
-    [ "mainLoop", "struct_second_hierarchy_1_1_test_module.html#a3c2e657016c0098df9c9a537cd20de93", null ],
+    [ "mainLoop", "struct_second_hierarchy_1_1_test_module.html#a106c437d56f24935ebcbbff19d781593", null ],
+    [ "prepare", "struct_second_hierarchy_1_1_test_module.html#af80a684d199a6a1db2d5538f1b71ad9d", null ],
     [ "eliminated", "struct_second_hierarchy_1_1_test_module.html#a918874994063e336c2c7b8802e39d856", null ],
     [ "eliminatedGroup", "struct_second_hierarchy_1_1_test_module.html#a4400625115cfb848e9bd87a727f44879", null ],
     [ "extraVar", "struct_second_hierarchy_1_1_test_module.html#ae92d365c69212052869cbfad4492406e", null ],

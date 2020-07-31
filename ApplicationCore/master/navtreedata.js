@@ -103,9 +103,9 @@ var NAVTREEINDEX =
 "dir_68267d1309a1af8e8297ef4c3efbcdba.html",
 "struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793",
 "struct_chimera_t_k_1_1history_1_1_update.html#a0a7a0140f309b9e738f3191e2a010e77",
-"struct_realistic_module.html",
-"struct_test_application_no_configs.html",
-"test_control_system_accessors_8cc_source.html"
+"struct_read_only_test_application_1_1_test_module.html#a78137cd2d5d94465b5496b8c9f3aff36",
+"struct_test_application_connect_to.html#a5c46da9a40ff8c0721d7d90a1bdd93d1",
+"test_control_system_accessors_8cc.html#a6b2a3852db8bb19ab6909bac01859985"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
