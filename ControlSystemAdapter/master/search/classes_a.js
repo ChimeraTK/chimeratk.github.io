@@ -6,6 +6,7 @@ var searchData=
   ['testdevicecallable3',['TestDeviceCallable3',['../struct_test_device_callable3.html',1,'']]],
   ['testdevicecallable4',['TestDeviceCallable4',['../struct_test_device_callable4.html',1,'']]],
   ['testdevicecallable5',['TestDeviceCallable5',['../struct_test_device_callable5.html',1,'']]],
+  ['threadedpvmanagerholder',['ThreadedPvManagerHolder',['../struct_threaded_pv_manager_holder.html',1,'']]],
   ['typechangingdecorator',['TypeChangingDecorator',['../class_chimera_t_k_1_1_type_changing_decorator.html',1,'ChimeraTK']]],
   ['typechangingdecorator_3c_20std_3a_3astring_2c_20impl_5ft_20_3e',['TypeChangingDecorator&lt; std::string, IMPL_T &gt;',['../class_chimera_t_k_1_1_type_changing_decorator.html',1,'ChimeraTK']]],
   ['typechangingdecorator_3c_20t_2c_20std_3a_3astring_20_3e',['TypeChangingDecorator&lt; T, std::string &gt;',['../class_chimera_t_k_1_1_type_changing_decorator.html',1,'ChimeraTK']]],

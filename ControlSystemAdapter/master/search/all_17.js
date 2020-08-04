@@ -8,5 +8,6 @@ var searchData=
   ['_7eprocessarrayfactorybackend',['~ProcessArrayFactoryBackend',['../struct_process_array_factory_backend.html#a597d0619079c2d0a43fae6a6d88307aa',1,'ProcessArrayFactoryBackend']]],
   ['_7eprocessvariablelistener',['~ProcessVariableListener',['../class_chimera_t_k_1_1_process_variable_listener.html#aa593b6da75f0147ca9665881fa679de3',1,'ChimeraTK::ProcessVariableListener']]],
   ['_7ereferencetestapplication',['~ReferenceTestApplication',['../class_reference_test_application.html#a6f2d06601d0905d3d5e9d363f70e8564',1,'ReferenceTestApplication']]],
-  ['_7etestapplicationfixture',['~TestApplicationFixture',['../struct_test_application_fixture.html#a8cda99c5b93fd17d094b25361c54193f',1,'TestApplicationFixture']]]
+  ['_7etestapplicationfixture',['~TestApplicationFixture',['../struct_test_application_fixture.html#a8cda99c5b93fd17d094b25361c54193f',1,'TestApplicationFixture']]],
+  ['_7ethreadedpvmanagerholder',['~ThreadedPvManagerHolder',['../struct_threaded_pv_manager_holder.html#af4b47d0588c031c219abe9a628d6459a',1,'ThreadedPvManagerHolder']]]
 ];

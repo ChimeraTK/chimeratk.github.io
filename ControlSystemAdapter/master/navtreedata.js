@@ -44,7 +44,7 @@ var NAVTREEINDEX =
 [
 "_application_base_8cc.html",
 "class_chimera_t_k_1_1_process_variable_listener.html#aa593b6da75f0147ca9665881fa679de3",
-"struct_typed_p_v_holder.html#a8760b633a9ef0acf05a62079c5c35160"
+"struct_threaded_pv_manager_holder.html#aa53794785d84432b520e5e99f4a23fc9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

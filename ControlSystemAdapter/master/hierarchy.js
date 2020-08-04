@@ -87,6 +87,7 @@ var hierarchy =
     [ "TestDeviceCallable3", "struct_test_device_callable3.html", null ],
     [ "TestDeviceCallable4", "struct_test_device_callable4.html", null ],
     [ "TestDeviceCallable5", "struct_test_device_callable5.html", null ],
+    [ "ThreadedPvManagerHolder< CALLABLE >", "struct_threaded_pv_manager_holder.html", null ],
     [ "TimeStampSource", null, [
       [ "ChimeraTK::ManualTimeStampSource", "class_chimera_t_k_1_1_manual_time_stamp_source.html", null ]
     ] ],

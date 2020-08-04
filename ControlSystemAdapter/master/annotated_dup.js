@@ -23,6 +23,7 @@ var annotated_dup =
     [ "TestDeviceCallable3", "struct_test_device_callable3.html", "struct_test_device_callable3" ],
     [ "TestDeviceCallable4", "struct_test_device_callable4.html", "struct_test_device_callable4" ],
     [ "TestDeviceCallable5", "struct_test_device_callable5.html", "struct_test_device_callable5" ],
+    [ "ThreadedPvManagerHolder", "struct_threaded_pv_manager_holder.html", "struct_threaded_pv_manager_holder" ],
     [ "TypedPVHolder", "struct_typed_p_v_holder.html", "struct_typed_p_v_holder" ],
     [ "UnidirReceiver", "struct_unidir_receiver.html", "struct_unidir_receiver" ],
     [ "UnidirSender", "struct_unidir_sender.html", "struct_unidir_sender" ]

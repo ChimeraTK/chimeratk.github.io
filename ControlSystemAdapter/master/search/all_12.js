@@ -34,6 +34,7 @@ var searchData=
   ['testunidirectionalprocessarraynowaitfornewdata_2ecpp',['testUnidirectionalProcessArrayNoWaitForNewData.cpp',['../test_unidirectional_process_array_no_wait_for_new_data_8cpp.html',1,'']]],
   ['testunified_2ecpp',['testUnified.cpp',['../test_unified_8cpp.html',1,'']]],
   ['theimpl',['theImpl',['../class_chimera_t_k_1_1_decorator_factory.html#a7f433013c81693e69cf712fd6fde6707',1,'ChimeraTK::DecoratorFactory']]],
+  ['threadedpvmanagerholder',['ThreadedPvManagerHolder',['../struct_threaded_pv_manager_holder.html',1,'ThreadedPvManagerHolder&lt; CALLABLE &gt;'],['../struct_threaded_pv_manager_holder.html#aa5c3d8b7b6b5cd2fc2c20851f0e37d74',1,'ThreadedPvManagerHolder::ThreadedPvManagerHolder(shared_ptr&lt; DevicePVManager &gt; devPvManager, shared_ptr&lt; ControlSystemPVManager &gt; csPvManager)'],['../struct_threaded_pv_manager_holder.html#a60a239447be428d84d3a1a41670d62d7',1,'ThreadedPvManagerHolder::ThreadedPvManagerHolder(ThreadedPvManagerHolder &amp;&amp;)=default']]],
   ['timestamp_2eh',['TimeStamp.h',['../_time_stamp_8h.html',1,'']]],
   ['timestampsource_2eh',['TimeStampSource.h',['../_time_stamp_source_8h.html',1,'']]],
   ['todevicearray',['toDeviceArray',['../struct_typed_p_v_holder.html#a0f240c6f0f085c2eb5066f01bcb099ec',1,'TypedPVHolder']]],

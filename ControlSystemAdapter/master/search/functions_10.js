@@ -13,6 +13,7 @@ var searchData=
   ['testdecorator',['testDecorator',['../test_type_changing_decorator_8cpp.html#a5508c2f467404d24528cef39ac8ef00f',1,'testTypeChangingDecorator.cpp']]],
   ['testmixedread',['testMixedRead',['../class_async_read_test.html#aa8edaa70e5bf74e14324fd3380815e8f',1,'AsyncReadTest']]],
   ['testreadany',['testReadAny',['../class_async_read_test.html#ad917a2b2d78b6d0183389a2e764373d1',1,'AsyncReadTest']]],
+  ['threadedpvmanagerholder',['ThreadedPvManagerHolder',['../struct_threaded_pv_manager_holder.html#aa5c3d8b7b6b5cd2fc2c20851f0e37d74',1,'ThreadedPvManagerHolder::ThreadedPvManagerHolder(shared_ptr&lt; DevicePVManager &gt; devPvManager, shared_ptr&lt; ControlSystemPVManager &gt; csPvManager)'],['../struct_threaded_pv_manager_holder.html#a60a239447be428d84d3a1a41670d62d7',1,'ThreadedPvManagerHolder::ThreadedPvManagerHolder(ThreadedPvManagerHolder &amp;&amp;)=default']]],
   ['todouble',['toDouble',['../to_double_8h.html#a0ae21402a5ffb651ae173affd1354918',1,'toDouble.h']]],
   ['todouble_3c_20std_3a_3astring_20_3e',['toDouble&lt; std::string &gt;',['../to_double_8h.html#ab6804051d2decf2280fcf1c49d3efcd1',1,'toDouble.h']]],
   ['totype',['toType',['../to_type_8h.html#afadd26dbf7e0ddfa1e5574834c86c950',1,'toType.h']]],

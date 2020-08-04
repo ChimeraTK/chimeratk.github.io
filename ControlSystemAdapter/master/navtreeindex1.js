@@ -247,7 +247,7 @@ var NAVTREEINDEX1 =
 "struct_test_device_callable5.html":[3,0,22],
 "struct_test_device_callable5.html#a5da73eda1ccc3409ef18c979e4e8ef07":[3,0,22,1],
 "struct_test_device_callable5.html#abf88c1b84ddb48f2040d00571d30bd4d":[3,0,22,0],
-"struct_typed_p_v_holder.html":[3,0,23],
-"struct_typed_p_v_holder.html#a0f240c6f0f085c2eb5066f01bcb099ec":[3,0,23,7],
-"struct_typed_p_v_holder.html#a5b04a98f6b932c7c16d6e079f47cc6a1":[3,0,23,8]
+"struct_threaded_pv_manager_holder.html":[3,0,23],
+"struct_threaded_pv_manager_holder.html#a5e2b3db67191beec9b0d601ad104a750":[3,0,23,5],
+"struct_threaded_pv_manager_holder.html#a60a239447be428d84d3a1a41670d62d7":[3,0,23,2]
 };
