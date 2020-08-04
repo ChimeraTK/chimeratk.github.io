@@ -38,6 +38,7 @@ var class_chimera_t_k_1_1_entity_owner =
     [ "getSubmodule", "class_chimera_t_k_1_1_entity_owner.html#a2906bfcc6c188b9515b67efaad030d7e", null ],
     [ "getSubmoduleList", "class_chimera_t_k_1_1_entity_owner.html#ad0a0084d1642fdf174613b127f0c54ed", null ],
     [ "getSubmoduleListRecursive", "class_chimera_t_k_1_1_entity_owner.html#a3f8825f36ec3d9db2a32f8707afe735c", null ],
+    [ "hasReachedTestableMode", "class_chimera_t_k_1_1_entity_owner.html#a832b61d208952ddfe335f5c5c09208d6", null ],
     [ "hasSubmodule", "class_chimera_t_k_1_1_entity_owner.html#a0bcb02caefb83338f3ad8def4c5f0af7", null ],
     [ "incrementDataFaultCounter", "class_chimera_t_k_1_1_entity_owner.html#a59d02ecae8bc99e76c7561c3ccea946c", null ],
     [ "operator=", "class_chimera_t_k_1_1_entity_owner.html#a13f14868e28539a79bdaa6949fe190f8", null ],

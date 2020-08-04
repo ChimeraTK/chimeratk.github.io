@@ -125,6 +125,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaafb16ad53c653e3b502680e964dc517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1history_1_1_server_history.html#aaafb16ad53c653e3b502680e964dc517">addSource</a> (const <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> &amp;source, const RegisterPath &amp;namePrefix, const <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &amp;trigger={})</td></tr>
 <tr class="memdesc:aaafb16ad53c653e3b502680e964dc517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload that calls virtualiseFromCatalog.  <a href="#aaafb16ad53c653e3b502680e964dc517">More...</a><br /></td></tr>
 <tr class="separator:aaafb16ad53c653e3b502680e964dc517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b4a153e5cea0db7ec8e16c73f6f7ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1history_1_1_server_history.html#a74b4a153e5cea0db7ec8e16c73f6f7ed">prepare</a> () override</td></tr>
+<tr class="memdesc:a74b4a153e5cea0db7ec8e16c73f6f7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the execution of the module.  <a href="#a74b4a153e5cea0db7ec8e16c73f6f7ed">More...</a><br /></td></tr>
+<tr class="separator:a74b4a153e5cea0db7ec8e16c73f6f7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add78f8765568f61b68158a653fb5e732"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1history_1_1_server_history.html#add78f8765568f61b68158a653fb5e732">mainLoop</a> () override</td></tr>
+<tr class="memdesc:add78f8765568f61b68158a653fb5e732"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be implemented by the user: function called in a separate thread executing the main loop of the module.  <a href="#add78f8765568f61b68158a653fb5e732">More...</a><br /></td></tr>
+<tr class="separator:add78f8765568f61b68158a653fb5e732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_application_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_application_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></td></tr>
 <tr class="memitem:a51393e96b3621ec1dbb066426d61011c inherit pub_methods_class_chimera_t_k_1_1_application_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_module.html#a51393e96b3621ec1dbb066426d61011c">ApplicationModule</a> (<a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> *owner, const std::string &amp;name, const std::string &amp;description, <a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0">HierarchyModifier</a> hierarchyModifier=<a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0a334c4a4c42fdb79d7ebc3e73b517e6f8">HierarchyModifier::none</a>, const std::unordered_set&lt; std::string &gt; &amp;tags={})</td></tr>
 <tr class="memdesc:a51393e96b3621ec1dbb066426d61011c inherit pub_methods_class_chimera_t_k_1_1_application_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: Create <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> by the given name with the given description and register it with its owner.  <a href="class_chimera_t_k_1_1_application_module.html#a51393e96b3621ec1dbb066426d61011c">More...</a><br /></td></tr>
@@ -215,9 +221,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab54889cfa1d50a40c5fd841e602c8cf9 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#ab54889cfa1d50a40c5fd841e602c8cf9">operator=</a> (<a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> &amp;&amp;other)</td></tr>
 <tr class="memdesc:ab54889cfa1d50a40c5fd841e602c8cf9 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <a href="class_chimera_t_k_1_1_module.html#ab54889cfa1d50a40c5fd841e602c8cf9">More...</a><br /></td></tr>
 <tr class="separator:ab54889cfa1d50a40c5fd841e602c8cf9 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2807dcc289719688b513e05ca6f1568 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568">prepare</a> ()</td></tr>
-<tr class="memdesc:af2807dcc289719688b513e05ca6f1568 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the execution of the module.  <a href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568">More...</a><br /></td></tr>
-<tr class="separator:af2807dcc289719688b513e05ca6f1568 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad2c88018da69991179b49ea028b13a5 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memItemLeft" align="right" valign="top">ChimeraTK::ReadAnyGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#aad2c88018da69991179b49ea028b13a5">readAnyGroup</a> ()</td></tr>
 <tr class="memdesc:aad2c88018da69991179b49ea028b13a5 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a ChimeraTK::ReadAnyGroup for all readable variables in this <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a>.  <a href="class_chimera_t_k_1_1_module.html#aad2c88018da69991179b49ea028b13a5">More...</a><br /></td></tr>
 <tr class="separator:aad2c88018da69991179b49ea028b13a5 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -363,6 +366,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a86d92396b91b85efe432105e81eb400e inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a86d92396b91b85efe432105e81eb400e">dumpModuleGraph</a> (const std::string &amp;fileName=&quot;graph.dot&quot;) const</td></tr>
 <tr class="memdesc:a86d92396b91b85efe432105e81eb400e inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Graphiz dot graph similar to the one created with dumpGraph, but just show the modules and not the variables.  <a href="class_chimera_t_k_1_1_entity_owner.html#a86d92396b91b85efe432105e81eb400e">More...</a><br /></td></tr>
 <tr class="separator:a86d92396b91b85efe432105e81eb400e inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a832b61d208952ddfe335f5c5c09208d6 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a832b61d208952ddfe335f5c5c09208d6">hasReachedTestableMode</a> ()</td></tr>
+<tr class="memdesc:a832b61d208952ddfe335f5c5c09208d6 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether this module has declared that it reached the testable mode.  <a href="class_chimera_t_k_1_1_entity_owner.html#a832b61d208952ddfe335f5c5c09208d6">More...</a><br /></td></tr>
+<tr class="separator:a832b61d208952ddfe335f5c5c09208d6 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -377,9 +383,6 @@ Protected Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:add78f8765568f61b68158a653fb5e732"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1history_1_1_server_history.html#add78f8765568f61b68158a653fb5e732">mainLoop</a> () override</td></tr>
-<tr class="memdesc:add78f8765568f61b68158a653fb5e732"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be implemented by the user: function called in a separate thread executing the main loop of the module.  <a href="#add78f8765568f61b68158a653fb5e732">More...</a><br /></td></tr>
-<tr class="separator:add78f8765568f61b68158a653fb5e732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76739007e938083b5b97e6f8bd4faf39"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:a76739007e938083b5b97e6f8bd4faf39"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1history_1_1_server_history.html#a76739007e938083b5b97e6f8bd4faf39">getAccessor</a> (const std::string &amp;variableName, const size_t &amp;nElements)</td></tr>
 <tr class="separator:a76739007e938083b5b97e6f8bd4faf39"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -500,7 +503,7 @@ template&lt;typename UserType &gt; </div>
 <p>boost::fusion::map of UserTypes to std::lists containing the <a class="el" href="struct_chimera_t_k_1_1_array_push_input.html" title="Convenience class for input array accessors with UpdateMode::push. ">ArrayPushInput</a> and <a class="el" href="struct_chimera_t_k_1_1_array_output.html" title="Convenience class for output array accessors (always UpdateMode::push) ">ArrayOutput</a> accessors. </p>
 <p>These accessors are dynamically created by the <a class="el" href="struct_chimera_t_k_1_1history_1_1_accessor_attacher.html" title="Callable class for use with boost::fusion::for_each: Attach the given accessor to the History with pr...">AccessorAttacher</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00163">163</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00165">165</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -529,7 +532,7 @@ template&lt;typename UserType &gt; </div>
 <p>boost::fusion::map of UserTypes to std::lists containing the names of the accessors. </p>
 <p>Technically there would be no need to use TemplateUserTypeMap for this (as type does not depend on the UserType), but since these lists must be filled consistently with the accessorListMap, the same construction is used here. </p>
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00172">172</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00174">174</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -806,7 +809,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -814,6 +817,38 @@ template&lt;typename UserType &gt; </div>
 <p>To be implemented by the user: function called in a separate thread executing the main loop of the module. </p>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8">ChimeraTK::ApplicationModule</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_server_history_8cc_source.html#l00165">165</a> of file <a class="el" href="_server_history_8cc_source.html">ServerHistory.cc</a>.</p>
+
+</div>
+</div>
+<a id="a74b4a153e5cea0db7ec8e16c73f6f7ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74b4a153e5cea0db7ec8e16c73f6f7ed">&#9670;&nbsp;</a></span>prepare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::history::ServerHistory::prepare </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prepare the execution of the module. </p>
+<p>This function is called before any module is started (including internal modules like FanOuts) and before the initial values of the variables are pushed into the queues. Reading and writing variables at this point may result in undefined behaviour. </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568">ChimeraTK::Module</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_server_history_8cc_source.html#l00159">159</a> of file <a class="el" href="_server_history_8cc_source.html">ServerHistory.cc</a>.</p>
 
@@ -840,7 +875,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00181">181</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00183">183</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -865,7 +900,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00164">164</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00166">166</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -889,7 +924,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00179">179</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00181">181</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -913,7 +948,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00178">178</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00180">180</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -937,7 +972,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00173">173</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00175">175</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -963,7 +998,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Overall variable name list, used to detect name collisions. </p>
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00176">176</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00178">178</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -990,7 +1025,7 @@ template&lt;typename UserType &gt; </div>
 <p>Map of VariableGroups required to build the hierarchies. </p>
 <p>The key it the full path name. </p>
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00157">157</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00159">159</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -1004,7 +1039,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1history.html">history</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1history_1_1_server_history.html">ServerHistory</a></li>
-    <li class="footer">Generated on Sat Aug 1 2020 03:53:51 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Aug 4 2020 03:54:04 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

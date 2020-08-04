@@ -1,9 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"dir_68267d1309a1af8e8297ef4c3efbcdba.html":[17,0,9],
-"dir_7563e6d9f1c11f74f5c45f175354fcd5.html":[17,0,6,0,1],
-"dir_7ab5dec27422f487cf9d62e729e73f9f.html":[17,0,10,0],
-"dir_7bf3b492df7ad680c491f3b2c5266372.html":[17,0,6,1,0],
 "dir_8814761eb3a53a66201f8cfb9e091422.html":[17,0,6,1,1],
 "dir_91a2c2c801e57bb118f6cefc30b49b7a.html":[17,0,6,0],
 "dir_abef936300788ba4cdc2aea4741d1c91.html":[17,0,6,2],
@@ -120,10 +116,10 @@ var NAVTREEINDEX4 =
 "loggingdoc.html#loggingintro":[1,0],
 "namespace_chimera_t_k.html":[16,0,0],
 "namespace_chimera_t_k.html":[15,0,0],
-"namespace_chimera_t_k_1_1history.html":[15,0,0,0],
 "namespace_chimera_t_k_1_1history.html":[16,0,0,0],
-"namespacelogging.html":[15,0,1],
+"namespace_chimera_t_k_1_1history.html":[15,0,0,0],
 "namespacelogging.html":[16,0,1],
+"namespacelogging.html":[15,0,1],
 "namespacemembers.html":[15,1,0],
 "namespacemembers_enum.html":[15,1,4],
 "namespacemembers_eval.html":[15,1,5],
@@ -249,5 +245,9 @@ var NAVTREEINDEX4 =
 "struct_chimera_t_k_1_1_config_reader.html#a926973e3a9dfd07e0171f56d3ec909af":[16,0,0,16,7],
 "struct_chimera_t_k_1_1_config_reader.html#ab8f2f615e502a1b7b5ed8c15a45cc402":[16,0,0,16,5],
 "struct_chimera_t_k_1_1_config_reader.html#ac39a42b4171272dd24eb6e2dc07849a6":[16,0,0,16,16],
-"struct_chimera_t_k_1_1_config_reader.html#ac920876035406f5266007c95398ef782":[16,0,0,16,12]
+"struct_chimera_t_k_1_1_config_reader.html#ac920876035406f5266007c95398ef782":[16,0,0,16,12],
+"struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793":[16,0,0,16,10],
+"struct_chimera_t_k_1_1_config_reader.html#ad514bd3865b91a2609de8c787dadaec9":[16,0,0,16,3],
+"struct_chimera_t_k_1_1_config_reader.html#adf2ba9d43d41a12a4d18bc3e0a7bc471":[16,0,0,16,6],
+"struct_chimera_t_k_1_1_config_reader.html#ae0d987890819fc887d81cfc296da4de0":[16,0,0,16,11]
 };

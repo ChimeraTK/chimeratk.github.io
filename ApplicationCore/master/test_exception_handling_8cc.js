@@ -7,7 +7,6 @@ var test_exception_handling_8cc =
     [ "TestApplication2", "struct_test_application2.html", "struct_test_application2" ],
     [ "BOOST_TEST_MODULE", "test_exception_handling_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "Fixture", "test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_exception_handling_8cc.html#ae4b08ee89f81e6cfaafc694376abcbde", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_exception_handling_8cc.html#a0d6de50cd7f9e4c3769edafff9c39a9c", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_exception_handling_8cc.html#a33c9f9ebec96166ceec27d4d37889a34", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_exception_handling_8cc.html#ad89eea204eb2b15c899bccefadcef0c5", null ],
@@ -19,6 +18,7 @@ var test_exception_handling_8cc =
     [ "BOOST_FIXTURE_TEST_CASE", "test_exception_handling_8cc.html#aa25e50b7358df7d4723d85ed14f53315", null ],
     [ "BOOST_FIXTURE_TEST_CASE", "test_exception_handling_8cc.html#a6e8e608ef91e1ab61f2e9746ed119f32", null ],
     [ "BOOST_FIXTURE_TEST_CASE", "test_exception_handling_8cc.html#a09c10b24fe03260f9a51731fc5afd734", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "test_exception_handling_8cc.html#adf8b19359f01d6d65b7cacca28b9e0f5", null ],
     [ "ExceptionDummyCDD1", "test_exception_handling_8cc.html#ad0474e2ca924acc9878f8eecb7f6c2ca", null ],
     [ "ExceptionDummyCDD2", "test_exception_handling_8cc.html#a2837104d761eaedd80116c5d648ba580", null ],
     [ "ExceptionDummyCDD3", "test_exception_handling_8cc.html#ad317b4ae499d6a8551f34453b61c4c03", null ]

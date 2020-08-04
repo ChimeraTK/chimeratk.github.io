@@ -1,6 +1,7 @@
 var struct_polling_read_module =
 [
-    [ "mainLoop", "struct_polling_read_module.html#a69522be48c605f06800a921795fd0cf7", null ],
+    [ "mainLoop", "struct_polling_read_module.html#ab216958c5a501d0a1e4453181c90f26e", null ],
+    [ "prepare", "struct_polling_read_module.html#a2056ce08fc15d4c18e2eb72adea7615d", null ],
     [ "poll", "struct_polling_read_module.html#ab91956a91e789f400c507c6c304a70e1", null ],
     [ "push", "struct_polling_read_module.html#a7750adf2bf665c36120c37e6d7a7b953", null ],
     [ "push2", "struct_polling_read_module.html#aff3881e17b498fa8839f82203820f47c", null ],

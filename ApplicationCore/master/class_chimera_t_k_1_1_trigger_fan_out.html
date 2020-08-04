@@ -256,6 +256,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a86d92396b91b85efe432105e81eb400e inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a86d92396b91b85efe432105e81eb400e">dumpModuleGraph</a> (const std::string &amp;fileName=&quot;graph.dot&quot;) const</td></tr>
 <tr class="memdesc:a86d92396b91b85efe432105e81eb400e inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Graphiz dot graph similar to the one created with dumpGraph, but just show the modules and not the variables.  <a href="class_chimera_t_k_1_1_entity_owner.html#a86d92396b91b85efe432105e81eb400e">More...</a><br /></td></tr>
 <tr class="separator:a86d92396b91b85efe432105e81eb400e inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a832b61d208952ddfe335f5c5c09208d6 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a832b61d208952ddfe335f5c5c09208d6">hasReachedTestableMode</a> ()</td></tr>
+<tr class="memdesc:a832b61d208952ddfe335f5c5c09208d6 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether this module has declared that it reached the testable mode.  <a href="class_chimera_t_k_1_1_entity_owner.html#a832b61d208952ddfe335f5c5c09208d6">More...</a><br /></td></tr>
+<tr class="separator:a832b61d208952ddfe335f5c5c09208d6 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -354,7 +357,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map of the feeding NDRegisterAccessor to the corresponding <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html" title="NDRegisterAccessor implementation which distributes values written to this accessor out to any number...">FeedingFanOut</a> for each UserType. </p>
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00157">157</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00145">145</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -463,7 +466,7 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p>Activate synchronisation thread if needed. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>: Unify with <a class="el" href="class_chimera_t_k_1_1_module.html#a998f98d99bde4ca7baebb4eaf595a983" title="Execute the module. ">Module::run()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>: Unify with <a class="el" href="class_chimera_t_k_1_1_module.html#acb588cb7df8290eab1961bd32234b085" title="Execute the module. ">Module::run()</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_internal_module.html#a24bed81e15f9b118bcac99cd5cc422f3">ChimeraTK::InternalModule</a>.</p>
 
@@ -518,7 +521,7 @@ template&lt;typename UserType &gt; </div>
 <p>Add a new network the <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html" title="InternalModule which waits for a trigger, then reads a number of variables and distributes each of th...">TriggerFanOut</a>. </p>
 <p>The network is defined by its feeding node. This function will return the corresponding <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html" title="NDRegisterAccessor implementation which distributes values written to this accessor out to any number...">FeedingFanOut</a>, to which all slaves have to be added. </p>
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00064">64</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00055">55</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -550,7 +553,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_internal_module.html#a7c306d0c2969c4f4151d2f0d7f42937d">ChimeraTK::InternalModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00049">49</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00040">40</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -588,7 +591,7 @@ template&lt;typename UserType &gt; </div>
 <p>Synchronise feeder and the consumers. </p>
 <p>This function is executed in the separate thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00079">79</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00070">70</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -632,7 +635,7 @@ template&lt;typename UserType &gt; </div>
 <p>The <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> of the feeder. </p>
 <p>Required for exception handling </p>
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00167">167</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00155">155</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -658,7 +661,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reference to <a class="el" href="class_chimera_t_k_1_1_variable_network.html" title="This class describes a network of variables all connected to each other. ">VariableNetwork</a> which is being realised by this <a class="el" href="class_chimera_t_k_1_1_fan_out.html" title="Base class for several implementations which distribute values from one feeder to multiple consumers...">FanOut</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00170">170</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00158">158</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -684,7 +687,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Thread handling the synchronisation, if needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00164">164</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00152">152</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -710,7 +713,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>TransferElement acting as our trigger. </p>
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00151">151</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00139">139</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -734,7 +737,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00158">158</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00146">146</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -760,7 +763,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>TransferGroup containing all feeders NDRegisterAccessors. </p>
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00161">161</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00149">149</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -773,7 +776,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html">TriggerFanOut</a></li>
-    <li class="footer">Generated on Sat Aug 1 2020 03:53:51 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Aug 4 2020 03:54:04 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

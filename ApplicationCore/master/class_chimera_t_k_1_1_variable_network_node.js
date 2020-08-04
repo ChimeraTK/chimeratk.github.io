@@ -1,10 +1,5 @@
 var class_chimera_t_k_1_1_variable_network_node =
 [
-    [ "InitialValueMode", "class_chimera_t_k_1_1_variable_network_node.html#a4b75169aa1e7bedd394e7020519f2c94", [
-      [ "None", "class_chimera_t_k_1_1_variable_network_node.html#a4b75169aa1e7bedd394e7020519f2c94a6adf97f83acf6453d4a6a4b1070f3754", null ],
-      [ "Poll", "class_chimera_t_k_1_1_variable_network_node.html#a4b75169aa1e7bedd394e7020519f2c94a87dde47c3c24ba7cc629ea2dacab3806", null ],
-      [ "Push", "class_chimera_t_k_1_1_variable_network_node.html#a4b75169aa1e7bedd394e7020519f2c94a9c6a9d9f033001a9b3104984d319563b", null ]
-    ] ],
     [ "VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html#ae6c65e0978f3382265c632b48b756007", null ],
     [ "VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html#aae3eef593d7a0c3131813a15c6e10ff8", null ],
     [ "VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html#aeb52994cc5ffd4b55e528cae742b4393", null ],
@@ -39,7 +34,6 @@ var class_chimera_t_k_1_1_variable_network_node =
     [ "getValueType", "class_chimera_t_k_1_1_variable_network_node.html#a4d1ef6ae206a43dd3a046abc34ef9eb0", null ],
     [ "hasExternalTrigger", "class_chimera_t_k_1_1_variable_network_node.html#afae6ca8ae50cc893982b51b9accd45b6", null ],
     [ "hasImplementation", "class_chimera_t_k_1_1_variable_network_node.html#a9133f59abf1a4c9553d11695cbbca079", null ],
-    [ "hasInitialValue", "class_chimera_t_k_1_1_variable_network_node.html#ad17ccb6604a475a672d04edcf4cbc8cc", null ],
     [ "hasOwner", "class_chimera_t_k_1_1_variable_network_node.html#a46df1c402de419661ed13b5eb8498e27", null ],
     [ "operator!=", "class_chimera_t_k_1_1_variable_network_node.html#ac02c642f1c402eb09541e8d526a250db", null ],
     [ "operator<", "class_chimera_t_k_1_1_variable_network_node.html#a5ce458951be8abc9a7d305bbc4a5866e", null ],
@@ -52,7 +46,6 @@ var class_chimera_t_k_1_1_variable_network_node =
     [ "setAppAccessorImplementation", "class_chimera_t_k_1_1_variable_network_node.html#af851ec9380c31c0c06c612d03889ab0f", null ],
     [ "setAppAccessorPointer", "class_chimera_t_k_1_1_variable_network_node.html#af79f66ca716abb89a34d6811d030dd82", null ],
     [ "setDirection", "class_chimera_t_k_1_1_variable_network_node.html#a3f3dc812fce3505affc004515b0f9c3a", null ],
-    [ "setHasInitialValue", "class_chimera_t_k_1_1_variable_network_node.html#ab0d7ff19fe870e0affa7b5c735eb2645", null ],
     [ "setMetaData", "class_chimera_t_k_1_1_variable_network_node.html#a978ccb2e0ffa569100790d9cad86487c", null ],
     [ "setMetaData", "class_chimera_t_k_1_1_variable_network_node.html#a2dbeb178c509ec753a452959376bde63", null ],
     [ "setNumberOfElements", "class_chimera_t_k_1_1_variable_network_node.html#a1ca3fd19d3e0a76627cdeb7ff17df352", null ],
