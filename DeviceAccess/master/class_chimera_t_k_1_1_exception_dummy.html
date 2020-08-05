@@ -226,9 +226,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:af64ee2d7f3128cc71e2f2388e3e5bc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7527540f560181e14d1715067f844a8"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#ad7527540f560181e14d1715067f844a8">thereHaveBeenExceptions</a> {false}</td></tr>
 <tr class="separator:ad7527540f560181e14d1715067f844a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3303dd98b551b8e492c90d7d2c341953"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a3303dd98b551b8e492c90d7d2c341953">_mx_pushDecorators</a></td></tr>
-<tr class="memdesc:a3303dd98b551b8e492c90d7d2c341953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of active <a class="el" href="struct_chimera_t_k_1_1_exception_dummy_push_decorator.html">ExceptionDummyPushDecorator</a>.  <a href="#a3303dd98b551b8e492c90d7d2c341953">More...</a><br /></td></tr>
-<tr class="separator:a3303dd98b551b8e492c90d7d2c341953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace44a9273e1e7d86b61150d9cc8a56b5"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#ace44a9273e1e7d86b61150d9cc8a56b5">_pushDecoratorsMutex</a></td></tr>
+<tr class="memdesc:ace44a9273e1e7d86b61150d9cc8a56b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of active <a class="el" href="struct_chimera_t_k_1_1_exception_dummy_push_decorator.html">ExceptionDummyPushDecorator</a>.  <a href="#ace44a9273e1e7d86b61150d9cc8a56b5">More...</a><br /></td></tr>
+<tr class="separator:ace44a9273e1e7d86b61150d9cc8a56b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fdcad2aff892062a1b65cb5bc8a5d76"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a>, std::list&lt; boost::weak_ptr&lt; <a class="el" href="struct_chimera_t_k_1_1_exception_dummy_push_decorator_base.html">ExceptionDummyPushDecoratorBase</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a2fdcad2aff892062a1b65cb5bc8a5d76">_pushDecorators</a></td></tr>
 <tr class="separator:a2fdcad2aff892062a1b65cb5bc8a5d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24281912d4220c24144e97dd58728ac4"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a>, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a24281912d4220c24144e97dd58728ac4">_pushVersions</a></td></tr>
@@ -398,7 +398,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a513692593b6dc8babc9544d9bfea04c8">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00259">259</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00257">257</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -702,7 +702,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#aa97f0aaacd0ae3db157bfd330c34a16f">ChimeraTK::DummyBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00277">277</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00275">275</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -750,7 +750,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Function to trigger sending values for push-type variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00244">244</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00242">242</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
@@ -831,24 +831,6 @@ template&lt;typename UserType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3303dd98b551b8e492c90d7d2c341953"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3303dd98b551b8e492c90d7d2c341953">&#9670;&nbsp;</a></span>_mx_pushDecorators</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::mutex ChimeraTK::ExceptionDummy::_mx_pushDecorators</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Map of active <a class="el" href="struct_chimera_t_k_1_1_exception_dummy_push_decorator.html">ExceptionDummyPushDecorator</a>. </p>
-
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00114">114</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
-
-</div>
-</div>
 <a id="a2fdcad2aff892062a1b65cb5bc8a5d76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2fdcad2aff892062a1b65cb5bc8a5d76">&#9670;&nbsp;</a></span>_pushDecorators</h2>
 
@@ -862,6 +844,24 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00115">115</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+
+</div>
+</div>
+<a id="ace44a9273e1e7d86b61150d9cc8a56b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace44a9273e1e7d86b61150d9cc8a56b5">&#9670;&nbsp;</a></span>_pushDecoratorsMutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex ChimeraTK::ExceptionDummy::_pushDecoratorsMutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Map of active <a class="el" href="struct_chimera_t_k_1_1_exception_dummy_push_decorator.html">ExceptionDummyPushDecorator</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00114">114</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -978,7 +978,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html">ExceptionDummy</a></li>
-    <li class="footer">Generated on Fri Jul 31 2020 03:53:25 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Aug 5 2020 03:53:21 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
