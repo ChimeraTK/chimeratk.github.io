@@ -35,6 +35,7 @@ var searchData=
   ['exceptionhandlingdecorator',['ExceptionHandlingDecorator',['../class_chimera_t_k_1_1_exception_handling_decorator.html',1,'ChimeraTK::ExceptionHandlingDecorator&lt; UserType &gt;'],['../class_chimera_t_k_1_1_application.html#aa4d68f9b9ae5e4d36e5dc94efc89dcce',1,'ChimeraTK::Application::ExceptionHandlingDecorator()'],['../class_chimera_t_k_1_1_device_module.html#aa4d68f9b9ae5e4d36e5dc94efc89dcce',1,'ChimeraTK::DeviceModule::ExceptionHandlingDecorator()'],['../class_chimera_t_k_1_1_exception_handling_decorator.html#a39d312f82a038275ee8ff015bb581988',1,'ChimeraTK::ExceptionHandlingDecorator::ExceptionHandlingDecorator()']]],
   ['exceptionhandlingdecorator_2ecc',['ExceptionHandlingDecorator.cc',['../_exception_handling_decorator_8cc.html',1,'']]],
   ['exceptionhandlingdecorator_2eh',['ExceptionHandlingDecorator.h',['../_exception_handling_decorator_8h.html',1,'']]],
+  ['exceptionversionnumber',['exceptionVersionNumber',['../class_chimera_t_k_1_1_device_module.html#a48f36d166e7ec62884c3b7457cbe0da5',1,'ChimeraTK::DeviceModule']]],
   ['exclude',['Exclude',['../struct_first_hierarchy_1_1_test_module.html#ad3629640aa4f8f27f90d2c9dfa90a0ae',1,'FirstHierarchy::TestModule']]],
   ['excludetag',['excludeTag',['../class_chimera_t_k_1_1_entity_owner.html#af3793d15629cb8b73413a1444008d709',1,'ChimeraTK::EntityOwner']]],
   ['external',['external',['../class_chimera_t_k_1_1_variable_network.html#aae82485cda15b256982eacbb4a103ecaa6a21b6995a068148bbb65c8f949b3fb2',1,'ChimeraTK::VariableNetwork']]],

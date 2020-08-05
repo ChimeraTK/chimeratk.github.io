@@ -14,6 +14,7 @@ var searchData=
   ['_5ffullyqualifiedname',['_fullyQualifiedName',['../class_chimera_t_k_1_1_debug_print_accessor_decorator.html#a15e94bb4bfe4978ee871848ca96b8c7c',1,'ChimeraTK::DebugPrintAccessorDecorator']]],
   ['_5fhandleread',['_handleRead',['../class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#af3c75f0bd6bd0712c76f5a5fee2a5e3f',1,'ChimeraTK::TestableModeAccessorDecorator']]],
   ['_5fhandlewrite',['_handleWrite',['../class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#af63159c4004f5123cf4aeebe49809c06',1,'ChimeraTK::TestableModeAccessorDecorator']]],
+  ['_5fhasreportedexception',['_hasReportedException',['../class_chimera_t_k_1_1_exception_handling_decorator.html#a6aa4a33e0eaecc43142e0cdaa07b39a7',1,'ChimeraTK::ExceptionHandlingDecorator']]],
   ['_5fhasreturnslave',['_hasReturnSlave',['../class_chimera_t_k_1_1_feeding_fan_out.html#a6cc8759cb30495d47af53116e1a136ba',1,'ChimeraTK::FeedingFanOut']]],
   ['_5fhasthrownlogicerror',['_hasThrownLogicError',['../class_chimera_t_k_1_1_exception_handling_decorator.html#aee68b4b4b7593d19e5f15c27f8ce152c',1,'ChimeraTK::ExceptionHandlingDecorator']]],
   ['_5fhasthrowntoinhibittransfer',['_hasThrownToInhibitTransfer',['../class_chimera_t_k_1_1_exception_handling_decorator.html#a1d1ba98fb28b9cd0dcbc822f671424a4',1,'ChimeraTK::ExceptionHandlingDecorator']]],

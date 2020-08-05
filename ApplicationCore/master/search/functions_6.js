@@ -21,6 +21,7 @@ var searchData=
   ['getdevicealias',['getDeviceAlias',['../class_chimera_t_k_1_1_variable_network_node.html#af0d4f24c03c4517bc35408d7a3747aeb',1,'ChimeraTK::VariableNetworkNode']]],
   ['getdirection',['getDirection',['../class_chimera_t_k_1_1_variable_network_node.html#aa2d046f0e4309259e37ea6fe31fe4793',1,'ChimeraTK::VariableNetworkNode']]],
   ['geteliminatehierarchy',['getEliminateHierarchy',['../class_chimera_t_k_1_1_entity_owner.html#a86a370822f4d962d9a4a4634ddd29d27',1,'ChimeraTK::EntityOwner']]],
+  ['getexceptionversionnumber',['getExceptionVersionNumber',['../class_chimera_t_k_1_1_device_module.html#a756f44c344662b51a4dd15ba11657dca',1,'ChimeraTK::DeviceModule']]],
   ['getexternaltrigger',['getExternalTrigger',['../class_chimera_t_k_1_1_variable_network_node.html#a6241c92f5bb8636013bb404c97fac896',1,'ChimeraTK::VariableNetworkNode']]],
   ['getexternaltriggerimpl',['getExternalTriggerImpl',['../class_chimera_t_k_1_1_variable_network.html#a14fc96016f17ce193f67fbcd28b1a34b',1,'ChimeraTK::VariableNetwork']]],
   ['getfeedingnode',['getFeedingNode',['../class_chimera_t_k_1_1_variable_network.html#a77be09c550820ad29b71a4d9bd5e61dd',1,'ChimeraTK::VariableNetwork']]],

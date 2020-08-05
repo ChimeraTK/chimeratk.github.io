@@ -14,6 +14,7 @@ var searchData=
   ['exceptiondummycdd2',['ExceptionDummyCDD2',['../struct_test_application3.html#a455c709c74be66ee6f751fe88c74dd9e',1,'TestApplication3::ExceptionDummyCDD2()'],['../struct_test_application4.html#a002c455657988a8bb455551d28f2ad22',1,'TestApplication4::ExceptionDummyCDD2()'],['../test_exception_handling_8cc.html#a2837104d761eaedd80116c5d648ba580',1,'ExceptionDummyCDD2():&#160;testExceptionHandling.cc']]],
   ['exceptiondummycdd3',['ExceptionDummyCDD3',['../test_exception_handling_8cc.html#ad317b4ae499d6a8551f34453b61c4c03',1,'testExceptionHandling.cc']]],
   ['exceptiondummyregister',['exceptionDummyRegister',['../structfixture__with__poll__and__push__input.html#ab8faf282b14732224a6efed2ae867ad2',1,'fixture_with_poll_and_push_input']]],
+  ['exceptionversionnumber',['exceptionVersionNumber',['../class_chimera_t_k_1_1_device_module.html#a48f36d166e7ec62884c3b7457cbe0da5',1,'ChimeraTK::DeviceModule']]],
   ['exclude',['Exclude',['../struct_first_hierarchy_1_1_test_module.html#ad3629640aa4f8f27f90d2c9dfa90a0ae',1,'FirstHierarchy::TestModule']]],
   ['externaltrigger',['externalTrigger',['../class_chimera_t_k_1_1_trigger_fan_out.html#ab417d72c6be30895d4e19fe5411a2b58',1,'ChimeraTK::TriggerFanOut::externalTrigger()'],['../struct_chimera_t_k_1_1_variable_network_node__data.html#aea2ed7a5d1fe7756e73ed112a3560ca2',1,'ChimeraTK::VariableNetworkNode_data::externalTrigger()']]],
   ['externaltriggerimpl',['externalTriggerImpl',['../class_chimera_t_k_1_1_variable_network.html#aac7e61dc56b86e82ba535c4a68bcbc15',1,'ChimeraTK::VariableNetwork']]],
