@@ -30,6 +30,7 @@ var searchData=
   ['devicemap',['deviceMap',['../class_chimera_t_k_1_1_application.html#a0b48d873e427c274811a351882a50555',1,'ChimeraTK::Application']]],
   ['devicemodulemap',['deviceModuleMap',['../class_chimera_t_k_1_1_application.html#a9d68474aee560a3183ae80b86083b3ca',1,'ChimeraTK::Application']]],
   ['deviceopentimeout',['DeviceOpenTimeout',['../_trigger_fan_out_8h.html#a79e25afc8d49734b01e480603207a6a3',1,'TriggerFanOut.h']]],
+  ['deviceregister',['deviceRegister',['../struct_update_module.html#a6bea1ae0e2aec34fc627d4b7fcd88821',1,'UpdateModule']]],
   ['dir',['dir',['../struct_chimera_t_k_1_1_variable_direction.html#a731e6cd5f58f1f014d443434f9ff6219',1,'ChimeraTK::VariableDirection']]],
   ['direction',['direction',['../struct_chimera_t_k_1_1_variable_network_node__data.html#aeb392b6238bd9ec1603d16868a8aec33',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['disable',['disable',['../struct_chimera_t_k_1_1_status_monitor.html#a8df1710a1a5c8402ec35cd337ce73d3b',1,'ChimeraTK::StatusMonitor']]],

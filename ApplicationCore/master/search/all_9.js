@@ -74,6 +74,7 @@ var searchData=
   ['inversionofcontrolaccessor_3c_20scalaraccessor_3c_20uint8_5ft_20_3e_20_3e',['InversionOfControlAccessor&lt; ScalarAccessor&lt; uint8_t &gt; &gt;',['../class_chimera_t_k_1_1_inversion_of_control_accessor.html',1,'ChimeraTK']]],
   ['inversionofcontrolaccessor_3c_20scalaraccessor_3c_20usertype_20_3e_20_3e',['InversionOfControlAccessor&lt; ScalarAccessor&lt; UserType &gt; &gt;',['../class_chimera_t_k_1_1_inversion_of_control_accessor.html',1,'ChimeraTK::InversionOfControlAccessor&lt; ScalarAccessor&lt; UserType &gt; &gt;'],['../class_chimera_t_k_1_1_scalar_accessor.html#a0df7a7b00fc2569723620429ae22e8c1',1,'ChimeraTK::ScalarAccessor::InversionOfControlAccessor&lt; ScalarAccessor&lt; UserType &gt; &gt;()']]],
   ['iscreated',['isCreated',['../class_chimera_t_k_1_1_variable_network.html#a80ad7bef69bba2e627adf938cf1adb28',1,'ChimeraTK::VariableNetwork']]],
+  ['isdeviceinerror',['isDeviceInError',['../structfixture__with__poll__and__push__input.html#a6cbb092e65658ec1243a91facd42cb22',1,'fixture_with_poll_and_push_input']]],
   ['isfunctional',['isFunctional',['../class_timer_dummy.html#acf67a575e593bb4e8378743a3573967f',1,'TimerDummy']]],
   ['isholdinginitialvaluemutex',['isHoldingInitialValueMutex',['../class_chimera_t_k_1_1_device_module.html#aa17217dcf31b8743e2fabc53705e34fd',1,'ChimeraTK::DeviceModule']]],
   ['islimited',['isLimited',['../struct_chimera_t_k_1_1_limit_value_module_base.html#a8863a5bb2bb4e37d61ad2cac8faace2e',1,'ChimeraTK::LimitValueModuleBase']]],

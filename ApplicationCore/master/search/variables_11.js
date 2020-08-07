@@ -9,7 +9,7 @@ var searchData=
   ['set',['set',['../struct_test_application.html#abb684a5a5625dd3c24ae7807ba2a57ee',1,'TestApplication']]],
   ['setpoint',['setpoint',['../struct_table_generation_1_1_table_parameters.html#a5ee8e2e95476e9f12fa37bd9da3d1cdf',1,'TableGeneration::TableParameters']]],
   ['setpointtable',['setpointTable',['../struct_table_generation.html#ae8c931884174f7c224200ffb1314e5ff',1,'TableGeneration']]],
-  ['simulation',['simulation',['../struct_example_app.html#abd542c1e6b5653650c7d297da9f0abc7',1,'ExampleApp::simulation()'],['../struct_example_app.html#abd16c59e21124f075eed347568b30464',1,'ExampleApp::Simulation()']]],
+  ['simulation',['Simulation',['../struct_example_app.html#abd16c59e21124f075eed347568b30464',1,'ExampleApp::Simulation()'],['../struct_example_app.html#abd542c1e6b5653650c7d297da9f0abc7',1,'ExampleApp::simulation()']]],
   ['sistergroupofvargroup',['SisterGroupOfVarGroup',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#aa7f9ae0a95857c0e00020e8587806065',1,'FirstHierarchy::TestModule::VarGroup']]],
   ['sistervarofvargroup',['sisterVarOfVarGroup',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#a56ce2485fa2bbeaf696e3418a8a2a032',1,'FirstHierarchy::TestModule::VarGroup']]],
   ['slaves',['slaves',['../class_chimera_t_k_1_1_fan_out.html#a5056124514dfea29a94e722e9903d1cd',1,'ChimeraTK::FanOut']]],

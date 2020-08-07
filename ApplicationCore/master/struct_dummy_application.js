@@ -6,5 +6,6 @@ var struct_dummy_application =
     [ "cs", "struct_dummy_application.html#aa702edc62d3dfc07cbe45fdec36738c7", null ],
     [ "device", "struct_dummy_application.html#a9a2a523f4cb94f93d5e147a3d04bcfc5", null ],
     [ "pollModule", "struct_dummy_application.html#aeb52fa208f5bfb6a50cb1e30e49e9ebb", null ],
-    [ "pushModule", "struct_dummy_application.html#a98b914f61f246e1507add0aa289f723e", null ]
+    [ "pushModule", "struct_dummy_application.html#a98b914f61f246e1507add0aa289f723e", null ],
+    [ "updateModule", "struct_dummy_application.html#a6a074feda8ac6528666f94454ae49ec1", null ]
 ];

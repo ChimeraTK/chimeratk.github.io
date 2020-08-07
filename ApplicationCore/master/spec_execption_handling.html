@@ -150,7 +150,7 @@ Runtime error handling</h2>
 </ul>
 <p><a class="anchor" id="b_2_2_5"></a>2.2.5 The VersionNumbers returned in case of an exception are the same for the same exception, even across variables and modules. It will be generated in the moment the exception is reported. <a class="el" href="spec_execption_handling.html#comment_b_2_2_5">(*)</a></p><ul>
 <li><a class="anchor" id="b_2_3"></a>2.3 Write operations will be <em>delayed</em> until the device is fully recovered again (cf. <a class="el" href="spec_execption_handling.html#b_3_1">3.1</a>).<ul>
-<li>2.3.1 In case of a fault state (new or persisting), the actual write operation will take place asynchronously when the device is recovering.</li>
+<li><a class="anchor" id="exceptionHandling_b_2_3_1"></a>2.3.1 In case of a fault state (new or persisting), the actual write operation will take place asynchronously when the device is recovering. [T]</li>
 <li><a class="anchor" id="b_2_3_2"></a>2.3.2 The same mechanism as used for <a class="el" href="spec_execption_handling.html#b_3_1_2">3.1.2</a> is used here, hence the order of write operations is guaranteed across accessors, but only the latest written value of each accessor prevails. <a class="el" href="spec_execption_handling.html#comment_b_2_3_2">(*)</a></li>
 <li>2.3.3 The return value of write() indicates whether data was lost in the transfer. If the write has to be delayed due to an exception, the return value will be true (= data lost) if a previously delayed and not-yet written value is discarded in the process, false (= no data lost) otherwise.</li>
 <li><a class="anchor" id="b_2_3_4"></a>2.3.4 When the delayed value is finally written to the device during the recovery procedure, the return value of the write() is ignored. <a class="el" href="spec_execption_handling.html#comment_b_2_3_4">(*)</a></li>
@@ -439,7 +439,7 @@ D. Known issues</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Thu Aug 6 2020 03:53:58 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Aug 7 2020 11:33:35 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

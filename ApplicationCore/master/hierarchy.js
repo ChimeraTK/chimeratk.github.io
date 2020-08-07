@@ -178,6 +178,7 @@ var hierarchy =
             [ "TestModule2< T >", "struct_test_module2.html", null ],
             [ "TestModule2< T >", "struct_test_module2.html", null ],
             [ "TestModule3", "struct_test_module3.html", null ],
+            [ "UpdateModule", "struct_update_module.html", null ],
             [ "VectorModule", "struct_vector_module.html", null ]
           ] ],
           [ "ChimeraTK::ModuleGroup", "class_chimera_t_k_1_1_module_group.html", [

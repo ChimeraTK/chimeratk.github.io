@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['p',['p',['../struct_poll_module.html#a218eb3ff66588bc1a5d12df8a7e1de1f',1,'PollModule::p()'],['../struct_push_module.html#aa01e2697c456ebf79cb627f260bf6be6',1,'PushModule::p()']]],
+  ['p',['p',['../struct_poll_module.html#a218eb3ff66588bc1a5d12df8a7e1de1f',1,'PollModule::p()'],['../struct_push_module.html#aa01e2697c456ebf79cb627f260bf6be6',1,'PushModule::p()'],['../struct_update_module.html#ac813904fc79bad751c2b8cdce19bbfdc',1,'UpdateModule::p()']]],
   ['partial',['Partial',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#ab301b1cc3a50c265c1c4f378d32ee246',1,'FirstHierarchy::TestModule::VarGroup::Partial()'],['../struct_first_hierarchy_1_1_test_module.html#ae1cc4b85913984660d3a0b3e78744b32',1,'FirstHierarchy::TestModule::Partial()'],['../struct_first_hierarchy_1_1_test_module.html#a2dee232cb718ce96311e1ebb0e5d76cd',1,'FirstHierarchy::TestModule::Partial()']]],
   ['pdata',['pdata',['../class_chimera_t_k_1_1_variable_network_node.html#a05d08d8278b1db30d5cb757fd40c5a0a',1,'ChimeraTK::VariableNetworkNode']]],
   ['period',['period',['../struct_chimera_t_k_1_1_periodic_trigger.html#a98719f742b645a3bb1968ebe690ca427',1,'ChimeraTK::PeriodicTrigger']]],
