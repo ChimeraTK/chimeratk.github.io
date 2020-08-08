@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['technical_20specification_3a_20data_20validity_20propagation',['Technical specification: data validity propagation',['../spec_data_validity_propagation.html',1,'index']]],
-  ['technical_20specification_3a_20exception_20handling_20for_20device_20runtime_20errors',['Technical specification: Exception handling for device runtime errors',['../spec_execption_handling.html',1,'index']]],
+  ['technical_20specification_3a_20data_20validity_20propagation_20specification_20version_20v1_2e0rc1',['Technical specification: data validity propagation Specification version V1.0RC1',['../spec_data_validity_propagation.html',1,'index']]],
+  ['technical_20specification_3a_20exception_20handling_20for_20device_20runtime_20errors_20v1_2e0rc1wip',['Technical specification: Exception handling for device runtime errors V1.0RC1WIP',['../spec_execption_handling.html',1,'index']]],
   ['technical_20specification_3a_20propagation_20of_20initial_20values',['Technical specification: Propagation of initial values',['../spec_initial_value_propagation.html',1,'index']]],
   ['technical_20specification_3a_20statusaggregator',['Technical specification: StatusAggregator',['../spec__status_aggregator.html',1,'index']]],
   ['t1',['t1',['../struct_test_application1.html#a9c5371410796a51388d87306db6ad0c2',1,'TestApplication1::t1()'],['../struct_test_application2.html#aa60429580f0bdfe34bbca5faa476cf5e',1,'TestApplication2::t1()']]],

@@ -15,7 +15,7 @@ var NAVTREE =
       [ "Example usage", "configreader.html#usage", null ],
       [ "XML file structure", "configreader.html#xmlstructure", null ]
     ] ],
-    [ "Technical specification: Exception handling for device runtime errors", "spec_execption_handling.html", [
+    [ "Technical specification: Exception handling for device runtime errors V1.0RC1WIP", "spec_execption_handling.html", [
       [ "A. Introduction", "spec_execption_handling.html#spec_execptionHandling_intro", [
         [ "A.9 Special terminology used in this document", "spec_execption_handling.html#spec_exceptionHandling_intro_terminology", null ],
         [ "(*) Comments", "spec_execption_handling.html#spec_exceptionHandling_intro_comments", null ]
@@ -46,7 +46,7 @@ var NAVTREE =
       [ "D. Known issues", "spec_execption_handling.html#spec_execptionHandling_known_issues", null ]
     ] ],
     [ "Technical specification: Propagation of initial values", "spec_initial_value_propagation.html", null ],
-    [ "Technical specification: data validity propagation", "spec_data_validity_propagation.html", null ],
+    [ "Technical specification: data validity propagation Specification version V1.0RC1", "spec_data_validity_propagation.html", null ],
     [ "Technical specification: StatusAggregator", "spec__status_aggregator.html", null ],
     [ "Example 1: Application with two modules and two hardware devices", "example1.html", null ],
     [ "Example 2: Small but complete application with a proportional controller", "example2.html", null ],

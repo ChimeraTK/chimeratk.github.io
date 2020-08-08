@@ -109,7 +109,7 @@ var searchData=
   ['someinput',['someInput',['../struct_test_module.html#a51b52a53e7c1b1be341103e443f4728c',1,'TestModule::someInput()'],['../struct_vector_module.html#acbc9913ec8048f2ca45c71f59cb8ec6d',1,'VectorModule::someInput()'],['../struct_blocking_read_test_module.html#ac9fe2502bf52889f4cf210ea83297979',1,'BlockingReadTestModule::someInput()']]],
   ['someoutput',['someOutput',['../struct_test_module.html#a9620a90ac94c25a53ddb529e32e73d3c',1,'TestModule::someOutput()'],['../struct_vector_module.html#aff9dd87f9d198b8fe443d6230eb2f514',1,'VectorModule::someOutput()'],['../struct_blocking_read_test_module.html#a706c80baa9a32fdd5e286c87865fcd55',1,'BlockingReadTestModule::someOutput()']]],
   ['sp',['sp',['../struct_controller.html#abc1bd02bfdaf29b368c4d558e087250a',1,'Controller']]],
-  ['spec_5fdatavaliditypropagation_2emd',['spec_dataValidityPropagation.md',['../spec__data_validity_propagation_8md.html',1,'']]],
+  ['spec_5fdatavaliditypropagation_2edox',['spec_dataValidityPropagation.dox',['../spec__data_validity_propagation_8dox.html',1,'']]],
   ['spec_5fexceptionhandling_2edox',['spec_exceptionHandling.dox',['../spec__exception_handling_8dox.html',1,'']]],
   ['spec_5finitialvaluepropagation_2edox',['spec_initialValuePropagation.dox',['../spec__initial_value_propagation_8dox.html',1,'']]],
   ['spec_5fstatusaggregator_2emd',['spec_StatusAggregator.md',['../spec___status_aggregator_8md.html',1,'']]],

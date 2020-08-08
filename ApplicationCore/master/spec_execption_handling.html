@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-ApplicationCore: Technical specification: Exception handling for device runtime errors</title>
+<title>ChimeraTK-ApplicationCore: Technical specification: Exception handling for device runtime errors V1.0RC1WIP</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,10 +82,16 @@ $(document).ready(function(){initNavTree('spec_execption_handling.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Technical specification: Exception handling for device runtime errors </div>  </div>
+<div class="title">Technical specification: Exception handling for device runtime errors V1.0RC1WIP </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>DRAFT VERSION, WRITE-UP IN PROGRESS!</b></p>
+<div class="textblock"><blockquote class="doxtable">
+<p>**This is a release candidate in implementation.</p>
+</blockquote>
+<p>The official V1.0 release will be done once the implementation is ready and we know that the specified behaviour is working as intended.**</p>
+<blockquote class="doxtable">
+<p><b>NOTICE FOR FUTURE RELEASES: AVOID CHANGING THE NUMBERING!</b> The tests refer to the sections, incl. links and unlinked references from tests or other parts of the specification. These break, or even worse become wrong, when they are not changed consistenty! </p>
+</blockquote>
 <h1><a class="anchor" id="spec_execptionHandling_intro"></a>
 A. Introduction</h1>
 <ul>
@@ -116,7 +122,10 @@ B. Behavioural description</h1>
 <ul>
 <li>1. All ChimeraTK::runtime_error exceptions thrown by device register accessors are handled by the framework and are never exposed to user code in ApplicationModules.<ul>
 <li><a class="anchor" id="b_1_1"></a>1.1 ChimeraTK::logic_error exceptions are left unhandled and will terminate the application. These errors may only occur in the (re-)initialisation phase (up to the point where all devices are opened and initialised) and point to a severe configuration error which is not recoverable. <a class="el" href="spec_execption_handling.html#comment_b_1_1">(*)</a></li>
-<li><a class="anchor" id="b_1_2"></a>1.2 <b>Exception handling and DataValidity flag propagation is implemented such that it is transparent to a module whether it is directly connected to a device, or whether a fanout or another application module is in between.</b> This is the central requirement from which most other requirements are derived.</li>
+<li><a class="anchor" id="b_1_2"></a>1.2 <b>Exception handling and DataValidity flag propagation is implemented such that it is transparent to a module whether it is directly connected to a device, or whether a fanout or another application module is in between.</b> This is the central requirement from which most other requirements are derived.<ul>
+<li><a class="anchor" id="b_1_2_1"></a>1.2.1 The only exception to this rule can occur if the application buffer is changed by the user code between two reads to a TransferElement, see <a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_6">2.2.6</a>.</li>
+</ul>
+</li>
 <li><a class="anchor" id="exceptionHandling_b_1_3"></a>1.3 boost::numeric::bad_numeric_cast exceptions are treated like ChimeraTK::logic_error. They originate from picking the wrong data type in the program code or the configuration and are also not recoverable by re-opening the device.</li>
 <li><a class="anchor" id="exceptionHandling_b_1_4"></a>1.4 The only other exception allowed by the DeviceAccess::TransferElement specificaton is boost::thread_interrupted. It must not be caught by the exception handling decorator because it is used to cleanly shut down the application.</li>
 </ul>
@@ -131,7 +140,7 @@ Runtime error handling</h2>
 <li>2.1.2 The variable <code>Devices/&lt;alias&gt;/message</code> contains an error message, if the device is in an error state, or an empty string otherwise.</li>
 </ul>
 </li>
-<li><a class="anchor" id="b_2_2"></a>2.2 Read operations will propagate the DataValidity::faulty flag to the owning module / fan out (without changing the actual data value of the process variable):<ul>
+<li><a class="anchor" id="b_2_2"></a>2.2 Read operations will propagate the DataValidity::faulty flag to the owning module / fan out:<ul>
 <li>2.2.1 The normal module algorithm code will be continued, to allow this flag to propagate to the outputs in the same way as if it had been received through the process variable itself (cf. <a class="el" href="spec_execption_handling.html#b_1_2">1.2</a>).</li>
 <li>2.2.2 The DataValidity::faulty flag resulting from the fault state is propagated once, even if the variable had the a DataValidity::faulty flag already set previously for another reason.</li>
 <li><a class="anchor" id="exceptionHandling_b_2_2_3"></a>2.2.3 Read operations without AccessMode::wait_for_new_data are <em>skipped</em> until the device is fully recovered again (cf. <a class="el" href="spec_execption_handling.html#b_3_1">3.1</a>). The first skipped read operation will have a new VersionNumber. [T]</li>
@@ -146,18 +155,23 @@ Runtime error handling</h2>
 </ul>
 <p>, and</p><ul>
 <li>blocking read operations (read()) will be <em>frozen</em> until the device is recovered. [<a class="el" href="test_exception_handling_8cc.html#testExceptionHandling_b_2_2_4_a">T</a>]</li>
-<li>After the device is fully recovered (cf. <a class="el" href="spec_execption_handling.html#b_3_1">3.1</a>), the current value will by (synchronously) read from the device. This will be the first value received by the accessor after an exception.</li>
+<li>After the device is fully recovered (cf. <a class="el" href="spec_execption_handling.html#b_3_1">3.1</a>), the current value is (synchronously) read from the device. This is the first value received by the accessor after an exception.</li>
 </ul>
 <p><a class="anchor" id="b_2_2_5"></a>2.2.5 The VersionNumbers returned in case of an exception are the same for the same exception, even across variables and modules. It will be generated in the moment the exception is reported. <a class="el" href="spec_execption_handling.html#comment_b_2_2_5">(*)</a></p><ul>
-<li><a class="anchor" id="b_2_3"></a>2.3 Write operations will be <em>delayed</em> until the device is fully recovered again (cf. <a class="el" href="spec_execption_handling.html#b_3_1">3.1</a>).<ul>
+<li><a class="anchor" id="exceptionHandling_b_2_2_6"></a>2.2.6 The data buffer is not updated. This guarantees that the data buffer stays on the last known value if the user code has not modified it since the last read.<ul>
+<li>2.2.6.1 This is different to a working device or an implementation without exception handling, where a returning read() has overwritten the data content of the buffer. If an application requires the last read value in the data buffer, it must not change it in the user code. This is the only exception to the <em>golden rule</em> <a class="el" href="spec_execption_handling.html#b_1_2">1.2</a>.</li>
+</ul>
+</li>
+</ul>
+<p><a class="anchor" id="b_2_3"></a>2.3 Write operations will be <em>delayed</em> until the device is fully recovered again (cf. <a class="el" href="spec_execption_handling.html#b_3_1">3.1</a>).</p><ul>
 <li><a class="anchor" id="exceptionHandling_b_2_3_1"></a>2.3.1 In case of a fault state (new or persisting), the actual write operation will take place asynchronously when the device is recovering. [T]</li>
 <li><a class="anchor" id="b_2_3_2"></a>2.3.2 The same mechanism as used for <a class="el" href="spec_execption_handling.html#b_3_1_2">3.1.2</a> is used here, hence the order of write operations is guaranteed across accessors, but only the latest written value of each accessor prevails. <a class="el" href="spec_execption_handling.html#comment_b_2_3_2">(*)</a></li>
 <li>2.3.3 The return value of write() indicates whether data was lost in the transfer. If the write has to be delayed due to an exception, the return value will be true (= data lost) if a previously delayed and not-yet written value is discarded in the process, false (= no data lost) otherwise.</li>
 <li><a class="anchor" id="b_2_3_4"></a>2.3.4 When the delayed value is finally written to the device during the recovery procedure, the return value of the write() is ignored. <a class="el" href="spec_execption_handling.html#comment_b_2_3_4">(*)</a></li>
 <li>2.3.5 It is guaranteed that the write takes place before the device is considered fully recovered again and other transfers are allowed (cf. <a class="el" href="spec_execption_handling.html#b_3_1">3.1</a>).</li>
 </ul>
-</li>
-<li><a class="anchor" id="b_2_4"></a>2.4 In case of exceptions, there is no guaranteed realtime behaviour, not even for "non-blocking" transfers. <a class="el" href="spec_execption_handling.html#comment_b_2_4">(*)</a></li>
+<p><a class="anchor" id="b_2_4"></a>2.4 In case of exceptions, there is no guaranteed realtime behaviour, not even for "non-blocking" transfers. <a class="el" href="spec_execption_handling.html#comment_b_2_4">(*)</a></p><ul>
+<li><a class="anchor" id="exceptionHandling_b_2_5"></a>2.5 TransferElement::isReadable(), TransferElement::isWriteable() and TransferElement::isReadonly() return with values as if reading and writing would be allowed. <a class="el" href="spec_execption_handling.html#exceptionHandling_comment_b_2_5">(*)</a></li>
 </ul>
 <h2><a class="anchor" id="spec_execptionHandling_behaviour_recovery"></a>
 Recovery</h2>
@@ -196,6 +210,7 @@ Forced Recovery</h2>
 <li><a class="anchor" id="comment_b_2_3_2"></a><a class="anchor" id="comment_b_3_1_4"></a><a class="el" href="spec_execption_handling.html#b_2_3_2">2.3.2</a> / <a class="el" href="spec_execption_handling.html#b_3_1_4">3.1.4</a> If timing is important for write operations (e.g. must not write a sequence of registers too fast), or if multiple values need to be written to the same register in sequence, the application cannot fully rely on the framework's recovery procedure. The framework hence provides the process variable <code>Devices/&lt;alias&gt;/deviceBecameFunctional</code> for each device, which will be written each time the recovery procedure is completed (cf. <a class="el" href="spec_execption_handling.html#b_3_1_4">3.1.4</a>). ApplicationModules which implement such timed sequence need to receive this variable and restart the entire sequence after the recovery.</li>
 <li><a class="anchor" id="comment_b_2_3_4"></a><a class="el" href="spec_execption_handling.html#b_2_3_4">2.3.4</a> The TransferElement specification B.7.2 guarantees that only old data may be lost in a write transfer, hence the latest data is guaranteed to be written to the device during recovery.</li>
 <li><a class="anchor" id="comment_b_2_4"></a><a class="el" href="spec_execption_handling.html#b_2_4">2.4</a> Even read without wait_for_new_data and write operations are not truely non-blocking, since they are still synchronous. The "non-blocking" guarantee only means that the operation does not block until new data has arrived, and that it is not frozen until the device is recovered. For the duration of the recovery procedure and of course for timeout periods these operations may still block. readNonBlocking() and readLatest() with wait_for_new_data could in theory be truely lock-free and wait-free, but the synchronisation mechanism in case of exceptions are not implemented as such. In case of exceptions, the application usually anway does not behave normally any more. If needed, this limitation could be lifted with a more complicated implementation in the future.</li>
+<li><a class="anchor" id="exceptionHandling_comment_b_2_5"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_5">2.5</a> These functions can throw runtime errors if the behaviour has to be determined from the running device. In this case readability and writeability can change on the device (cf. <a href="https://chimeratk.github.io/DeviceAccess/master/spec__transfer_element.html">TransferElement specification</a> C.5.3). Suppressing the exception and allowing the operation does not pose the risk of getting a ChimeraTK::logic_error in the preXxx() phase of the operation because all transfer elements are tested for this during device recovery (cf. <a class="el" href="spec_execption_handling.html#exceptionHandling_c_3_3_3">C.3.3.3</a>).</li>
 <li><a class="anchor" id="comment_b_3_1_2"></a><a class="el" href="spec_execption_handling.html#b_3_1_2">3.1.2</a> For some applications, the order of writes may be important, e.g. if firmware expects this. Please note that the VersionNumber is insufficient as a sorting criteria, since many writes may have been done with the same VersionNumber (in an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a>, the VersionNumber used for the writes is determined by the largest VersionNumber of the inputs).</li>
 <li><a class="anchor" id="comment_b_4_2"></a><a class="el" href="spec_execption_handling.html#b_4_2">4.2</a> DataValidity::faulty is initially set by default, so there is no need to propagate this flag initially. To prevent race conditions and undefined behaviour (especially in automated tests), it even needs to be made sure that the flag is not propagated unnecessarily. The behaviour of non-blocking reads presents a slight asymmetry between the initial device opening and a later recovery. This will in particular be visible when restarting a server while a device is offline. If a module only uses readLatest()/readNonBlocking() (= read() for poll-type inputs) for the offline device, the module was still running before the server restart using the last known values for the dysfunctional registers (and flagging all outputs as faulty). After the restart, the module has to wait for the initial value and hence will not run until the device becomes functional again. To make this behaviour symmetric, one would need to persist the values of device inputs. Since this only affects a corner case in which likely no usable output is produced anyway, this slight inconsistency is considered acceptable.</li>
 </ul>
@@ -289,7 +304,11 @@ Structure</h3>
 <li><a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#acb690e93ebfcb0bc7d49b4ea16344637">RecoveryHelper::wasWritten</a>, a flag which indicates whether the data in the value buffer of the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a1c13eb170308c756b559d46c35681d14">RecoveryHelper::accessor</a> has already been written to the device. <a class="el" href="spec_execption_handling.html#comment_c_2_1_1">(*)</a></li>
 </ul>
 </li>
-<li><a class="anchor" id="c_2_1_2"></a>2.1.2 Ordering can be done per device <a class="el" href="spec_execption_handling.html#comment_c_2_1_2">(*)</a>, hence each <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> has one 64-bit atomic counter DeviceModule::writeCounter which is incremented for each write operation and the value is stored in <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a02f305373033ff9001e294b6fe15c1bd">RecoveryHelper::writeOrder</a>.</li>
+<li><a class="anchor" id="c_2_1_2"></a>2.1.2 Ordering can be done per device <a class="el" href="spec_execption_handling.html#comment_c_2_1_2">(*)</a>, hence each <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> has one 64-bit atomic counter DeviceModule::writeCounter which is incremented for each write operation and the value is stored in <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a02f305373033ff9001e294b6fe15c1bd">RecoveryHelper::writeOrder</a>.<ul>
+<li>2.1.2.1 The writeOrder of each <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a> is initialised with 0, which means "not written yet".</li>
+<li>2.1.2.2 The first writeOrder that is given out by the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> is 1.</li>
+</ul>
+</li>
 <li>2.1.3 The <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a> objects may be accessed only under a lock, see <a class="el" href="spec_execption_handling.html#c_1_3">1.3</a>.</li>
 </ul>
 </li>
@@ -299,7 +318,7 @@ Behaviour</h3>
 <ul>
 <li><a class="anchor" id="c_2_2"></a>2.2 In doPreWrite() the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a> is updated while holding a shared lock on <a class="el" href="class_chimera_t_k_1_1_device_module.html#ab1e2b830518740acc49a2cb5d3a00d40" title="Mutex for writing the DeviceModule::writeRecoveryOpen. ">DeviceModule::recoveryMutex</a>:<ul>
 <li><a class="anchor" id="c_2_2_1"></a>2.2.1 These steps need to be done unconditionally at the very beginning of doPreWrite(), before <a class="el" href="spec_execption_handling.html#c_2_4">2.4</a> and before delegating to preWrite(). <a class="el" href="spec_execption_handling.html#comment_c_2_2_1">(*)</a></li>
-<li>2.2.2 If the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#acb690e93ebfcb0bc7d49b4ea16344637">RecoveryHelper::wasWritten</a> flag was previously not set, the return value of doWriteTransfer() must be forced to true (data lost).</li>
+<li>2.2.2 If the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#acb690e93ebfcb0bc7d49b4ea16344637">RecoveryHelper::wasWritten</a> flag was previously not set and the writeOrder is not 0 any more, the return value of doWriteTransfer() must be forced to true (data lost).</li>
 <li>2.2.3 Update the value buffer of the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a1c13eb170308c756b559d46c35681d14">RecoveryHelper::accessor</a>, update the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#ac4c488a3aecf5f363b46f15c26b566ee">RecoveryHelper::versionNumber</a>, set the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#a02f305373033ff9001e294b6fe15c1bd">RecoveryHelper::writeOrder</a> to the DeviceModule::writeCounter after (atomically) incrementing it, and clear the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html#acb690e93ebfcb0bc7d49b4ea16344637">RecoveryHelper::wasWritten</a> flag. (cf. <a class="el" href="spec_execption_handling.html#b_2_3">b_2_3</a>)</li>
 <li><a class="anchor" id="c_2_2_4"></a>2.2.4 The check whether to execute the transfer (cf. <a class="el" href="spec_execption_handling.html#c_2_4">2.4</a>) has to be done without releasing the lock between the update of the <a class="el" href="struct_chimera_t_k_1_1_recovery_helper.html" title="A Helper struct to store an accessor and a version number. ">RecoveryHelper</a> and the check. <a class="el" href="spec_execption_handling.html#comment_c_2_2_4">(*)</a></li>
 </ul>
@@ -348,6 +367,7 @@ Behaviour</h3>
 <li>2.8.5 The code instantiating the decorator (<a class="el" href="class_chimera_t_k_1_1_application.html#a3f9ce1e49b8dfc7f9228a2db7db0a775" title="Perform the actual connection of an accessor to a device register. ">Application::createDeviceVariable()</a>) makes sure that the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> is "inside" the <a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html" title="NDRegisterAccessorDecorator which propagates meta data attached to input process variables through th...">MetaDataPropagatingRegisterDecorator</a>, so in case of an exception the dataValidity flag is properly propagated to the owning module/fan out (cf. <a class="el" href="spec_execption_handling.html#c_2_6_4">2.6.4</a>).</li>
 </ul>
 </li>
+<li><a class="anchor" id="c_2_9"></a>2.9 When a ChimeraTK::runtime_error is caught in isReadable(), isWriteable() or isReadOnly(), the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> is informed via <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception. ">DeviceModule::reportException()</a>.</li>
 </ul>
 <h3><a class="anchor" id="spec_execptionHandling_high_level_implmentation_decorator_comments"></a>
 (*) Comments</h3>
@@ -378,7 +398,7 @@ C.3 DeviceModule</h2>
 </ul>
 </li>
 <li><a class="anchor" id="c_3_3_2"></a>3.3.2 The queue of reported exceptions is cleared. <a class="el" href="spec_execption_handling.html#comment_c_3_3_2">(*)</a></li>
-<li>3.3.3 Check that all registers on DeviceModule::listOfReadRegisters are isReadable() and all registers on DeviceModule::listOfWriteRegisters are isWriteable().<ul>
+<li><a class="anchor" id="exceptionHandling_c_3_3_3"></a>3.3.3 Check that all registers on DeviceModule::listOfReadRegisters are isReadable() and all registers on DeviceModule::listOfWriteRegisters are isWriteable().<ul>
 <li>3.3.3.1 This involves obtaining an accessor for the register first, which is discarded after the check.</li>
 <li>3.3.3.2 If there is an exception, update <code>Devices/&lt;alias&gt;/message</code> with the error message and go back to <a class="el" href="spec_execption_handling.html#c_3_3_1">3.3.1</a>.</li>
 <li>3.3.3.3 If one of the accessors does not meet this condition, throw a ChimeraTK::logic_error.</li>
@@ -439,7 +459,7 @@ D. Known issues</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Fri Aug 7 2020 11:33:35 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Aug 8 2020 03:54:16 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
