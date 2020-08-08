@@ -123,6 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7be932c74d4162f56bdd4f81db19b7eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a7be932c74d4162f56bdd4f81db19b7eb">open</a> () override</td></tr>
 <tr class="memdesc:a7be932c74d4162f56bdd4f81db19b7eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the device.  <a href="#a7be932c74d4162f56bdd4f81db19b7eb">More...</a><br /></td></tr>
 <tr class="separator:a7be932c74d4162f56bdd4f81db19b7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b4caf50ca9534e518129f4ae1668cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a57b4caf50ca9534e518129f4ae1668cc">close</a> () override</td></tr>
+<tr class="memdesc:a57b4caf50ca9534e518129f4ae1668cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This closes the device, clears all internal registers, read-only settings and callback functions.  <a href="#a57b4caf50ca9534e518129f4ae1668cc">More...</a><br /></td></tr>
+<tr class="separator:a57b4caf50ca9534e518129f4ae1668cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a570eec6450d7229dfaa927f6cf816c99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a570eec6450d7229dfaa927f6cf816c99">read</a> (uint8_t bar, uint32_t address, int32_t *data, size_t sizeInBytes) override</td></tr>
 <tr class="separator:a570eec6450d7229dfaa927f6cf816c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0937e8b84ce3377907a720b50b476df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#aa0937e8b84ce3377907a720b50b476df">write</a> (uint8_t bar, uint32_t address, int32_t const *data, size_t sizeInBytes) override</td></tr>
@@ -148,9 +151,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aac7a59f55e0d319040feb3ef4be27b7a inherit pub_methods_class_chimera_t_k_1_1_dummy_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a212f26735d4b2f69dec5bf54cd17b469 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a212f26735d4b2f69dec5bf54cd17b469">~DummyBackend</a> ()</td></tr>
 <tr class="separator:a212f26735d4b2f69dec5bf54cd17b469 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac748e1f72f72bc98495c7697079262c inherit pub_methods_class_chimera_t_k_1_1_dummy_backend"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#aac748e1f72f72bc98495c7697079262c">close</a> () override</td></tr>
-<tr class="memdesc:aac748e1f72f72bc98495c7697079262c inherit pub_methods_class_chimera_t_k_1_1_dummy_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">This closes the device, clears all internal registers, read-only settings and callback functions.  <a href="class_chimera_t_k_1_1_dummy_backend.html#aac748e1f72f72bc98495c7697079262c">More...</a><br /></td></tr>
-<tr class="separator:aac748e1f72f72bc98495c7697079262c inherit pub_methods_class_chimera_t_k_1_1_dummy_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a6a12f58740d8ab15dd0d280b581bc0 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a0a6a12f58740d8ab15dd0d280b581bc0">readDeviceInfo</a> () override</td></tr>
 <tr class="memdesc:a0a6a12f58740d8ab15dd0d280b581bc0 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a device information string containing hardware details like the firmware version number or the slot number used by the board.  <a href="class_chimera_t_k_1_1_dummy_backend.html#a0a6a12f58740d8ab15dd0d280b581bc0">More...</a><br /></td></tr>
 <tr class="separator:a0a6a12f58740d8ab15dd0d280b581bc0 inherit pub_methods_class_chimera_t_k_1_1_dummy_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -233,6 +233,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a2fdcad2aff892062a1b65cb5bc8a5d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24281912d4220c24144e97dd58728ac4"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a>, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a24281912d4220c24144e97dd58728ac4">_pushVersions</a></td></tr>
 <tr class="separator:a24281912d4220c24144e97dd58728ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e771a1661c54006b4c95b4dc9914aff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a2e771a1661c54006b4c95b4dc9914aff">_activateNewPushAccessors</a></td></tr>
+<tr class="separator:a2e771a1661c54006b4c95b4dc9914aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -354,7 +356,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_af9d7b6889e101ce97fd4321a2e380e3e_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_af9d7b6889e101ce97fd4321a2e380e3e_cgraph.svg" width="100%" height="550"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -398,13 +400,53 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a513692593b6dc8babc9544d9bfea04c8">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00257">257</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00264">264</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_ae4ef5735a32d50e7cb7f699c08e7a349_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a57b4caf50ca9534e518129f4ae1668cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57b4caf50ca9534e518129f4ae1668cc">&#9670;&nbsp;</a></span>close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::ExceptionDummy::close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This closes the device, clears all internal registers, read-only settings and callback functions. </p>
+<p>As the device could be opened with another mapping file later, these will most probably be invalid in this case. This is why the read-only settings and callback functions have to be set again when reopening the file. </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#aac748e1f72f72bc98495c7697079262c">ChimeraTK::DummyBackend</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00046">46</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_a57b4caf50ca9534e518129f4ae1668cc_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -445,19 +487,19 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00028">28</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_aa3e76d50d879e81ff5fbb0539b519658_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_aa3e76d50d879e81ff5fbb0539b519658_cgraph.svg" width="100%" height="550"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_aa3e76d50d879e81ff5fbb0539b519658_icgraph.svg" width="560" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -514,20 +556,20 @@ template&lt;typename UserType &gt; </div>
 
 <p>Specific override which allows to create push-type accessors. </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00073">73</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_a3b9d8307fb2ba845e1ac817952ad70a0_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00078">78</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_a3b9d8307fb2ba845e1ac817952ad70a0_cgraph.svg" width="100%" height="550"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_a3b9d8307fb2ba845e1ac817952ad70a0_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -563,15 +605,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#adb9edefcb11c683496afd130f6fa796a">ChimeraTK::DummyBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00062">62</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_abd03c69319ed34541e791d11a4a9751d_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00067">67</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -662,7 +696,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a96236b98802c327c08ad94dda717a79d">ChimeraTK::DummyBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00046">46</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00051">51</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -702,7 +736,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#aa97f0aaacd0ae3db157bfd330c34a16f">ChimeraTK::DummyBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00275">275</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00283">283</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -716,7 +750,7 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_a58c3f67cedde1d1ce738943d48065606_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_exception_dummy_a58c3f67cedde1d1ce738943d48065606_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -750,7 +784,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Function to trigger sending values for push-type variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00242">242</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00249">249</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
@@ -818,7 +852,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a01b2bd4b676338c77eb4890e14fbca7b">ChimeraTK::DummyBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00054">54</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00059">59</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 <div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
@@ -831,6 +865,22 @@ template&lt;typename UserType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2e771a1661c54006b4c95b4dc9914aff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e771a1661c54006b4c95b4dc9914aff">&#9670;&nbsp;</a></span>_activateNewPushAccessors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::ExceptionDummy::_activateNewPushAccessors</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">        <span class="keyword">false</span>}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00122">122</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+
+</div>
+</div>
 <a id="a2fdcad2aff892062a1b65cb5bc8a5d76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2fdcad2aff892062a1b65cb5bc8a5d76">&#9670;&nbsp;</a></span>_pushDecorators</h2>
 
@@ -843,7 +893,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00115">115</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00120">120</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -861,7 +911,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map of active <a class="el" href="struct_chimera_t_k_1_1_exception_dummy_push_decorator.html">ExceptionDummyPushDecorator</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00114">114</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00119">119</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -877,7 +927,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00116">116</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00121">121</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -901,7 +951,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00122">122</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_exception_dummy_backend_8h_source.html#l00129">129</a> of file <a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -978,7 +1028,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html">ExceptionDummy</a></li>
-    <li class="footer">Generated on Wed Aug 5 2020 03:53:21 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Aug 8 2020 03:53:10 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
