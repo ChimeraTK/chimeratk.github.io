@@ -70,6 +70,9 @@ var hierarchy =
         [ "BidirB", "struct_bidir_b.html", null ]
       ] ]
     ] ],
+    [ "RegisterDescriptorBase< UnidirPolledSender >", "struct_register_descriptor_base.html", [
+      [ "UnidirPolledSender", "struct_unidir_polled_sender.html", null ]
+    ] ],
     [ "RegisterDescriptorBase< UnidirReceiver >", "struct_register_descriptor_base.html", [
       [ "UnidirReceiver", "struct_unidir_receiver.html", null ]
     ] ],

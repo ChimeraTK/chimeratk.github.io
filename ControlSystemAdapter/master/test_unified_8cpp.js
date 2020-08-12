@@ -4,6 +4,7 @@ var test_unified_8cpp =
     [ "BackendRegisterer", "class_process_array_factory_backend_1_1_backend_registerer.html", "class_process_array_factory_backend_1_1_backend_registerer" ],
     [ "RegisterDescriptorBase", "struct_register_descriptor_base.html", "struct_register_descriptor_base" ],
     [ "UnidirSender", "struct_unidir_sender.html", "struct_unidir_sender" ],
+    [ "UnidirPolledSender", "struct_unidir_polled_sender.html", "struct_unidir_polled_sender" ],
     [ "UnidirReceiver", "struct_unidir_receiver.html", "struct_unidir_receiver" ],
     [ "Bidir", "struct_bidir.html", "struct_bidir" ],
     [ "BidirA", "struct_bidir_a.html", "struct_bidir_a" ],

@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('struct_unidir_sender.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_unidir_sender-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">UnidirSender Struct Reference</div>  </div>
@@ -113,6 +114,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acd33c56023a71bec5e21134156562509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecf7b6af43b46e60c10359394cbe8525"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_unidir_sender.html#aecf7b6af43b46e60c10359394cbe8525">isReadable</a> ()</td></tr>
 <tr class="separator:aecf7b6af43b46e60c10359394cbe8525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a41499f9fa1dd312bfcd75882cdeebf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_unidir_sender.html#a7a41499f9fa1dd312bfcd75882cdeebf">writeQueueLength</a> ()</td></tr>
+<tr class="separator:a7a41499f9fa1dd312bfcd75882cdeebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c9a533a63d49b9b91f2142017795d7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_unidir_sender.html#a1c9a533a63d49b9b91f2142017795d7b">setForceDataLossWrite</a> (bool)</td></tr>
+<tr class="separator:a1c9a533a63d49b9b91f2142017795d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a944e374f902bd0f28bf7c8a0a67185fd"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:a944e374f902bd0f28bf7c8a0a67185fd"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_unidir_sender.html#a944e374f902bd0f28bf7c8a0a67185fd">getRemoteValue</a> ()</td></tr>
 <tr class="separator:a944e374f902bd0f28bf7c8a0a67185fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +135,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae533fd7efdb247bc103a9a95f8935d18 inherit pub_methods_struct_register_descriptor_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register_descriptor_base.html#ae533fd7efdb247bc103a9a95f8935d18">setForceRuntimeError</a> (bool, size_t)</td></tr>
 <tr class="separator:ae533fd7efdb247bc103a9a95f8935d18 inherit pub_methods_struct_register_descriptor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:acacc7d2c7a7e35866b04cf70de4ce858"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_unidir_sender.html#acacc7d2c7a7e35866b04cf70de4ce858">capabilities</a> = <a class="el" href="struct_register_descriptor_base.html">RegisterDescriptorBase</a>&lt;<a class="el" href="struct_unidir_sender.html">UnidirSender</a>&gt;::capabilities.enableForceDataLossWrite()</td></tr>
+<tr class="separator:acacc7d2c7a7e35866b04cf70de4ce858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_struct_register_descriptor_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_struct_register_descriptor_base')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="struct_register_descriptor_base.html">RegisterDescriptorBase&lt; UnidirSender &gt;</a></td></tr>
+<tr class="memitem:ab4589e686752c387be9e0b843284db02 inherit pub_static_attribs_struct_register_descriptor_base"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register_descriptor_base.html#ab4589e686752c387be9e0b843284db02">capabilities</a></td></tr>
+<tr class="separator:ab4589e686752c387be9e0b843284db02 inherit pub_static_attribs_struct_register_descriptor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_struct_register_descriptor_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_struct_register_descriptor_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="struct_register_descriptor_base.html">RegisterDescriptorBase&lt; UnidirSender &gt;</a></td></tr>
@@ -140,13 +153,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_struct_register_descriptor_base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_register_descriptor_base')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_register_descriptor_base.html">RegisterDescriptorBase&lt; UnidirSender &gt;</a></td></tr>
 <tr class="memitem:ace6f5037e321e4955af042f265fb0537 inherit pub_attribs_struct_register_descriptor_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_unidir_sender.html">UnidirSender</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register_descriptor_base.html#ace6f5037e321e4955af042f265fb0537">derived</a></td></tr>
 <tr class="separator:ace6f5037e321e4955af042f265fb0537 inherit pub_attribs_struct_register_descriptor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_attribs_struct_register_descriptor_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_struct_register_descriptor_base')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="struct_register_descriptor_base.html">RegisterDescriptorBase&lt; UnidirSender &gt;</a></td></tr>
-<tr class="memitem:ab4589e686752c387be9e0b843284db02 inherit pub_static_attribs_struct_register_descriptor_base"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register_descriptor_base.html#ab4589e686752c387be9e0b843284db02">capabilities</a></td></tr>
-<tr class="separator:ab4589e686752c387be9e0b843284db02 inherit pub_static_attribs_struct_register_descriptor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="test_unified_8cpp_source.html#l00154">154</a> of file <a class="el" href="test_unified_8cpp_source.html">testUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unified_8cpp_source.html#l00161">161</a> of file <a class="el" href="test_unified_8cpp_source.html">testUnified.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a944e374f902bd0f28bf7c8a0a67185fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a944e374f902bd0f28bf7c8a0a67185fd">&#9670;&nbsp;</a></span>getRemoteValue()</h2>
@@ -173,7 +183,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unified_8cpp_source.html#l00161">161</a> of file <a class="el" href="test_unified_8cpp_source.html">testUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unified_8cpp_source.html#l00173">173</a> of file <a class="el" href="test_unified_8cpp_source.html">testUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -200,7 +210,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unified_8cpp_source.html#l00158">158</a> of file <a class="el" href="test_unified_8cpp_source.html">testUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unified_8cpp_source.html#l00167">167</a> of file <a class="el" href="test_unified_8cpp_source.html">testUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -227,7 +237,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unified_8cpp_source.html#l00157">157</a> of file <a class="el" href="test_unified_8cpp_source.html">testUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unified_8cpp_source.html#l00166">166</a> of file <a class="el" href="test_unified_8cpp_source.html">testUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -254,7 +264,35 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unified_8cpp_source.html#l00155">155</a> of file <a class="el" href="test_unified_8cpp_source.html">testUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unified_8cpp_source.html#l00162">162</a> of file <a class="el" href="test_unified_8cpp_source.html">testUnified.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1c9a533a63d49b9b91f2142017795d7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c9a533a63d49b9b91f2142017795d7b">&#9670;&nbsp;</a></span>setForceDataLossWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnidirSender::setForceDataLossWrite </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_unified_8cpp_source.html#l00170">170</a> of file <a class="el" href="test_unified_8cpp_source.html">testUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -281,7 +319,59 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_unified_8cpp_source.html#l00166">166</a> of file <a class="el" href="test_unified_8cpp_source.html">testUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_unified_8cpp_source.html#l00178">178</a> of file <a class="el" href="test_unified_8cpp_source.html">testUnified.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7a41499f9fa1dd312bfcd75882cdeebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a41499f9fa1dd312bfcd75882cdeebf">&#9670;&nbsp;</a></span>writeQueueLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t UnidirSender::writeQueueLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_unified_8cpp_source.html#l00169">169</a> of file <a class="el" href="test_unified_8cpp_source.html">testUnified.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="acacc7d2c7a7e35866b04cf70de4ce858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acacc7d2c7a7e35866b04cf70de4ce858">&#9670;&nbsp;</a></span>capabilities</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto UnidirSender::capabilities = <a class="el" href="struct_register_descriptor_base.html">RegisterDescriptorBase</a>&lt;<a class="el" href="struct_unidir_sender.html">UnidirSender</a>&gt;::capabilities.enableForceDataLossWrite()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_unified_8cpp_source.html#l00164">164</a> of file <a class="el" href="test_unified_8cpp_source.html">testUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -294,7 +384,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_unidir_sender.html">UnidirSender</a></li>
-    <li class="footer">Generated on Tue Aug 11 2020 03:54:28 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Wed Aug 12 2020 03:54:28 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

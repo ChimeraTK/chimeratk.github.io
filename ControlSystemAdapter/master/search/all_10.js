@@ -13,6 +13,7 @@ var searchData=
   ['referencetestapplication_2eh',['ReferenceTestApplication.h',['../_reference_test_application_8h.html',1,'']]],
   ['registerdescriptorbase',['RegisterDescriptorBase',['../struct_register_descriptor_base.html',1,'']]],
   ['registerdescriptorbase_3c_20bidira_20_3e',['RegisterDescriptorBase&lt; BidirA &gt;',['../struct_register_descriptor_base.html',1,'']]],
+  ['registerdescriptorbase_3c_20unidirpolledsender_20_3e',['RegisterDescriptorBase&lt; UnidirPolledSender &gt;',['../struct_register_descriptor_base.html',1,'']]],
   ['registerdescriptorbase_3c_20unidirreceiver_20_3e',['RegisterDescriptorBase&lt; UnidirReceiver &gt;',['../struct_register_descriptor_base.html',1,'']]],
   ['registerdescriptorbase_3c_20unidirsender_20_3e',['RegisterDescriptorBase&lt; UnidirSender &gt;',['../struct_register_descriptor_base.html',1,'']]],
   ['registervariable',['registerVariable',['../class_chimera_t_k_1_1_persistent_data_storage.html#af965b63c9258181f5ff535495b8f316c',1,'ChimeraTK::PersistentDataStorage']]],

@@ -25,6 +25,7 @@ var annotated_dup =
     [ "TestDeviceCallable5", "struct_test_device_callable5.html", "struct_test_device_callable5" ],
     [ "ThreadedPvManagerHolder", "struct_threaded_pv_manager_holder.html", "struct_threaded_pv_manager_holder" ],
     [ "TypedPVHolder", "struct_typed_p_v_holder.html", "struct_typed_p_v_holder" ],
+    [ "UnidirPolledSender", "struct_unidir_polled_sender.html", "struct_unidir_polled_sender" ],
     [ "UnidirReceiver", "struct_unidir_receiver.html", "struct_unidir_receiver" ],
     [ "UnidirSender", "struct_unidir_sender.html", "struct_unidir_sender" ]
 ];

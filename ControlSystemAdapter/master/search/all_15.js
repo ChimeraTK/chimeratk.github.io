@@ -2,6 +2,7 @@ var searchData=
 [
   ['waitfornotifications',['waitForNotifications',['../class_chimera_t_k_1_1_control_system_synchronization_utility.html#a35843e6ff11795334680c0ca9aac3dbc',1,'ChimeraTK::ControlSystemSynchronizationUtility::waitForNotifications()'],['../class_chimera_t_k_1_1_device_synchronization_utility.html#ae049579fcd548da39ff78bb73f3d5de0',1,'ChimeraTK::DeviceSynchronizationUtility::waitForNotifications()']]],
   ['wanteddecoratortype',['wantedDecoratorType',['../class_chimera_t_k_1_1_decorator_factory.html#ab0f93e643748f82e5bfb0a4d028c35b4',1,'ChimeraTK::DecoratorFactory']]],
+  ['writequeuelength',['writeQueueLength',['../struct_unidir_sender.html#a7a41499f9fa1dd312bfcd75882cdeebf',1,'UnidirSender::writeQueueLength()'],['../struct_unidir_polled_sender.html#afafe44828139bbcb37b10cc162c59377',1,'UnidirPolledSender::writeQueueLength()']]],
   ['writerthread',['writerThread',['../class_chimera_t_k_1_1_persistent_data_storage.html#a8e5dc20f15543b6fa3f3a4a228ac970c',1,'ChimeraTK::PersistentDataStorage']]],
   ['writerthreadfunction',['writerThreadFunction',['../class_chimera_t_k_1_1_persistent_data_storage.html#a102ac2b8bc54568ef24da361e3426c22',1,'ChimeraTK::PersistentDataStorage']]],
   ['writetofile',['writeToFile',['../class_chimera_t_k_1_1_persistent_data_storage.html#ac5ff86636442f6f856bf41813ecf680d',1,'ChimeraTK::PersistentDataStorage']]]
