@@ -104,11 +104,11 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename VECTOR_OF_REGISTERS_T = boost::mpl::vector&lt;&gt;&gt;<br />
-template&lt;typename T, bool condition = (T::capabilities.forceDataLossWrite == TestCapability::enabled)&gt;<br />
+template&lt;typename T, bool condition = (T::capabilities.forceDataLossWrite == TestCapability::enabled ||            T::capabilities.writeNeverLosesData == TestCapability::enabled)&gt;<br />
 struct ChimeraTK::UnifiedBackendTest&lt; VECTOR_OF_REGISTERS_T &gt;::writeQueueLength_proxy_helper&lt; T, condition &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00443">443</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00465">465</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acb01c632c0636aa8ac392690e3674253"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb01c632c0636aa8ac392690e3674253">&#9670;&nbsp;</a></span>writeQueueLength_proxy_helper()</h2>
@@ -118,7 +118,7 @@ struct ChimeraTK::UnifiedBackendTest&lt; VECTOR_OF_REGISTERS_T &gt;::writeQueueL
 <div class="memtemplate">
 template&lt;typename VECTOR_OF_REGISTERS_T = boost::mpl::vector&lt;&gt;&gt; </div>
 <div class="memtemplate">
-template&lt;typename T , bool condition = (T::capabilities.forceDataLossWrite == TestCapability::enabled)&gt; </div>
+template&lt;typename T , bool condition = (T::capabilities.forceDataLossWrite == TestCapability::enabled ||            T::capabilities.writeNeverLosesData == TestCapability::enabled)&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -138,7 +138,7 @@ template&lt;typename T , bool condition = (T::capabilities.forceDataLossWrite ==
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00444">444</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00466">466</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -151,7 +151,7 @@ template&lt;typename T , bool condition = (T::capabilities.forceDataLossWrite ==
 <div class="memtemplate">
 template&lt;typename VECTOR_OF_REGISTERS_T = boost::mpl::vector&lt;&gt;&gt; </div>
 <div class="memtemplate">
-template&lt;typename T , bool condition = (T::capabilities.forceDataLossWrite == TestCapability::enabled)&gt; </div>
+template&lt;typename T , bool condition = (T::capabilities.forceDataLossWrite == TestCapability::enabled ||            T::capabilities.writeNeverLosesData == TestCapability::enabled)&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">size_t <a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html">ChimeraTK::UnifiedBackendTest</a>&lt; VECTOR_OF_REGISTERS_T &gt;::<a class="el" href="struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper.html">writeQueueLength_proxy_helper</a>&lt; T, condition &gt;::result</td>
@@ -159,7 +159,7 @@ template&lt;typename T , bool condition = (T::capabilities.forceDataLossWrite ==
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00445">445</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00467">467</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -172,7 +172,7 @@ template&lt;typename T , bool condition = (T::capabilities.forceDataLossWrite ==
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html">UnifiedBackendTest</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper.html">writeQueueLength_proxy_helper</a></li>
-    <li class="footer">Generated on Tue Aug 11 2020 03:53:23 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Aug 12 2020 03:53:24 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

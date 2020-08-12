@@ -40,7 +40,7 @@ var searchData=
   ['testassign',['testAssign',['../class_version_number_test.html#a815eacde826153a8c4043ac8a9279e4a',1,'VersionNumberTest']]],
   ['testbadmappfileparse',['testBadMappFileParse',['../class_map_file_parser_test.html#aff28aa2ed039645218ec75a727b0de62',1,'MapFileParserTest']]],
   ['testcalculatevirtualaddress',['testCalculateVirtualAddress',['../class_dummy_backend_test.html#a812f1b13000698c68455d4689db3c67c',1,'DummyBackendTest']]],
-  ['testcapabilities',['TestCapabilities',['../struct_chimera_t_k_1_1_test_capabilities.html#af8ea5092a8dfb8446ac84bbd0f96dc83',1,'ChimeraTK::TestCapabilities']]],
+  ['testcapabilities',['TestCapabilities',['../struct_chimera_t_k_1_1_test_capabilities.html#af304b6bf9c28ead37cc807bca86dae48',1,'ChimeraTK::TestCapabilities']]],
   ['testcheckforduplicateelements',['testCheckForDuplicateElements',['../class_device_info_map_test.html#ab0596c3badaf29c509db5ae4d06e01ec',1,'DeviceInfoMapTest']]],
   ['testcheckparsedininfo',['testCheckParsedInInfo',['../class_d_map_files_parser_test.html#ad6557f0a0deafc23f2b40b25cea0db07',1,'DMapFilesParserTest']]],
   ['testcheckregisteraddressoverlap',['testCheckRegisterAddressOverlap',['../class_map_file_test.html#adc2a6e5d363bab65a59477f61d8b975b',1,'MapFileTest']]],

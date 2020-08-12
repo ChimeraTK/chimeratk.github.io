@@ -1,13 +1,15 @@
 var struct_chimera_t_k_1_1_test_capabilities =
 [
-    [ "TestCapabilities", "struct_chimera_t_k_1_1_test_capabilities.html#af8ea5092a8dfb8446ac84bbd0f96dc83", null ],
-    [ "disableAsyncReadInconsistency", "struct_chimera_t_k_1_1_test_capabilities.html#acfe002fce2958f3f0f763eb87af8d9b0", null ],
-    [ "disableForceDataLossWrite", "struct_chimera_t_k_1_1_test_capabilities.html#a6da08a2b0873c71cabdd7afa66386876", null ],
-    [ "disableSwitchReadOnly", "struct_chimera_t_k_1_1_test_capabilities.html#a6b84a721658fdfd085fde40b06796ec6", null ],
-    [ "disableSwitchWriteOnly", "struct_chimera_t_k_1_1_test_capabilities.html#ad926036aaa7a9395e054063e0f45cd2b", null ],
-    [ "disableSyncRead", "struct_chimera_t_k_1_1_test_capabilities.html#a678f674c82821f684e59322bd5666f7c", null ],
-    [ "enableAsyncReadInconsistency", "struct_chimera_t_k_1_1_test_capabilities.html#a34600003406a0785291e6fc0ff01094c", null ],
-    [ "enableForceDataLossWrite", "struct_chimera_t_k_1_1_test_capabilities.html#a7eb48fd9114c4128fac96c3c77443d51", null ],
-    [ "enableSwitchReadOnly", "struct_chimera_t_k_1_1_test_capabilities.html#af1f65bd39b62e5718e728f142cf260f4", null ],
-    [ "enableSwitchWriteOnly", "struct_chimera_t_k_1_1_test_capabilities.html#acb1bc1af1fcea91c21a0266b1e62f853", null ]
+    [ "TestCapabilities", "struct_chimera_t_k_1_1_test_capabilities.html#af304b6bf9c28ead37cc807bca86dae48", null ],
+    [ "disableAsyncReadInconsistency", "struct_chimera_t_k_1_1_test_capabilities.html#af05d42e7fbdf0df87b303a788ec5dfdd", null ],
+    [ "disableForceDataLossWrite", "struct_chimera_t_k_1_1_test_capabilities.html#abaf751e2cf08af2845cfe157cb31a307", null ],
+    [ "disableSwitchReadOnly", "struct_chimera_t_k_1_1_test_capabilities.html#a84e8e7513b31fd1209f74bcce2e72c00", null ],
+    [ "disableSwitchWriteOnly", "struct_chimera_t_k_1_1_test_capabilities.html#afe70db00978662db7a38824e757b1a2e", null ],
+    [ "disableSyncRead", "struct_chimera_t_k_1_1_test_capabilities.html#a26f4c7bed27e8e42c1fc293102ea130b", null ],
+    [ "disableTestWriteNeverLosesData", "struct_chimera_t_k_1_1_test_capabilities.html#affe6c7820a880783c01b5bb546748b08", null ],
+    [ "enableAsyncReadInconsistency", "struct_chimera_t_k_1_1_test_capabilities.html#ab2fe9eb79ce5b4985aea3f41dbe8d477", null ],
+    [ "enableForceDataLossWrite", "struct_chimera_t_k_1_1_test_capabilities.html#a00c37145273dfeb602053d945026b20a", null ],
+    [ "enableSwitchReadOnly", "struct_chimera_t_k_1_1_test_capabilities.html#a85d5ff8f5a2f8f798895d75e9a45d362", null ],
+    [ "enableSwitchWriteOnly", "struct_chimera_t_k_1_1_test_capabilities.html#a9ceb53cb6ea449a1e694dc12f9b2227a", null ],
+    [ "enableTestWriteNeverLosesData", "struct_chimera_t_k_1_1_test_capabilities.html#ac50323eb002cb5e786567c8f298997d7", null ]
 ];

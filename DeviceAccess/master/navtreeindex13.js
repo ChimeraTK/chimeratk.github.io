@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"structdevice__ioctrl__data.html#ad8ffd816b771df6ef50f7c40166a37a6":[17,0,17,3],
+"structdevice__ioctrl__dma.html":[17,0,18],
 "structdevice__ioctrl__dma.html#a0796ba7e60f5ed15719a885a871101c5":[17,0,18,4],
 "structdevice__ioctrl__dma.html#a0b2c5967b28765ba545b56dcb88c2762":[17,0,18,3],
 "structdevice__ioctrl__dma.html#a1e19c195c09b5115ca42ca5bf7392bd8":[17,0,18,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "test_l_map_math_plugin_8cpp.html#abac8006c8d9bd2da40a7d7c48238f48b":[18,0,7,1,21,6],
 "test_l_map_math_plugin_8cpp_source.html":[18,0,7,1,21],
 "test_l_map_monostable_trigger_plugin_8cpp.html":[18,0,7,1,22],
-"test_l_map_monostable_trigger_plugin_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[18,0,7,1,22,2],
-"test_l_map_monostable_trigger_plugin_8cpp.html#a28585e414731ab9dd97e452ee540ce43":[18,0,7,1,22,4],
-"test_l_map_monostable_trigger_plugin_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[18,0,7,1,22,3]
+"test_l_map_monostable_trigger_plugin_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[18,0,7,1,22,2]
 };

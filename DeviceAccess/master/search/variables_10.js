@@ -19,8 +19,8 @@ var searchData=
   ['stop_5frebot_5fserver',['stop_rebot_server',['../namespace_chimera_t_k.html#ac86dd51067ed1b14abf11e60de2df484',1,'ChimeraTK']]],
   ['stop_5ftime',['stop_time',['../structdevice__ioctrl__time.html#a04786d897463142079bd0cc2b041efcd',1,'device_ioctrl_time']]],
   ['supportedflags',['supportedFlags',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6546006951dc0b02aaf98a42c3f6630c',1,'ChimeraTK::LNMBackendRegisterInfo']]],
-  ['switchreadonly',['switchReadOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a55ce64c89ffd36936e0a98f64b597ad4',1,'ChimeraTK::TestCapabilities']]],
-  ['switchwriteonly',['switchWriteOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a096d93b2ec05568577d63504211c3972',1,'ChimeraTK::TestCapabilities']]],
+  ['switchreadonly',['switchReadOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a744ea9762f0cd199419825506bb43b3b',1,'ChimeraTK::TestCapabilities']]],
+  ['switchwriteonly',['switchWriteOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a8e0e58f4242abe9926c8e65163f0e39a',1,'ChimeraTK::TestCapabilities']]],
   ['symbols',['symbols',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#afbe762724bc94cf064d77db7c4f02e5a',1,'ChimeraTK::LNMBackend::MathPluginDecorator']]],
-  ['syncread',['syncRead',['../struct_chimera_t_k_1_1_test_capabilities.html#a561b2ec8ed6e0ad2cdacb4f8fd34c103',1,'ChimeraTK::TestCapabilities']]]
+  ['syncread',['syncRead',['../struct_chimera_t_k_1_1_test_capabilities.html#ac1efb85a3e54ea0457b9d8af5a05b111',1,'ChimeraTK::TestCapabilities']]]
 ];
