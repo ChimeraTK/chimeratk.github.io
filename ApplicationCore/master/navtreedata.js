@@ -46,7 +46,7 @@ var NAVTREE =
       [ "D. Known issues", "spec_execption_handling.html#spec_execptionHandling_known_issues", null ]
     ] ],
     [ "Technical specification: Propagation of initial values", "spec_initial_value_propagation.html", null ],
-    [ "Technical specification: data validity propagation Specification version V1.0RC1", "spec_data_validity_propagation.html", null ],
+    [ "Technical specification: data validity propagation Specification version V1.0RC2", "spec_data_validity_propagation.html", null ],
     [ "Technical specification: StatusAggregator", "spec__status_aggregator.html", null ],
     [ "Example 1: Application with two modules and two hardware devices", "example1.html", null ],
     [ "Example 2: Small but complete application with a proportional controller", "example2.html", null ],
@@ -97,15 +97,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_8cc.html",
-"class_chimera_t_k_1_1_application.html#a590cbe05130a2b625f1f3bb6a81312fe",
-"class_chimera_t_k_1_1_entity_owner.html#ac9889d98c6076fa8ac966ae5b89ab687",
-"class_chimera_t_k_1_1_threaded_fan_out.html#a2e01fc1efd2e4f39b13c885d33978da8",
-"dir_7563e6d9f1c11f74f5c45f175354fcd5.html",
-"struct_chimera_t_k_1_1_config_reader.html#ad514bd3865b91a2609de8c787dadaec9",
-"struct_chimera_t_k_1_1history_1_1_update.html#a55dc2c1d4ad4c366360876dd9b1c198d",
-"struct_read_only_test_application.html#aadd6b658950647155876356669fe6f16",
-"struct_test_application4.html#ad861ee3e0b17271ed125c3ea3483d765",
-"test_bidirectional_variables_8cc_source.html"
+"class_chimera_t_k_1_1_application.html#a5a3ff9e91313b472c8780f8bee67204f",
+"class_chimera_t_k_1_1_entity_owner.html#acef33adfcd91868e153def7f4c4eb220",
+"class_chimera_t_k_1_1_threaded_fan_out.html#a271b4551b5338bc3c7b486868f57a530",
+"dir_68267d1309a1af8e8297ef4c3efbcdba.html",
+"struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793",
+"struct_chimera_t_k_1_1history_1_1_update.html#a0a7a0140f309b9e738f3191e2a010e77",
+"struct_read_only_test_application.html#a9d6c93908b0d18793e96c67dfef114e2",
+"struct_test_application4.html#ab9dd9ec71ae4b71b592bedc88eb28dfb",
+"test_bidirectional_variables_8cc.html#ab92f83b705533f950d1ad7405f189ba0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

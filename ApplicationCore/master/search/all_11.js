@@ -100,7 +100,7 @@ var searchData=
   ['setvaluetype',['setValueType',['../class_chimera_t_k_1_1_variable_network_node.html#a05948328d255d895d91e07b285bf20e0',1,'ChimeraTK::VariableNetworkNode']]],
   ['shutdown',['shutdown',['../class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a',1,'ChimeraTK::Application::shutdown()'],['../namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72da5924f03a95ee6f7277e5bdd1e81b8fdc',1,'ChimeraTK::shutdown()']]],
   ['silent',['SILENT',['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416a1b65f50cc55a099d0c120b18314d384b',1,'logging']]],
-  ['simulation',['Simulation',['../struct_example_app.html#abd16c59e21124f075eed347568b30464',1,'ExampleApp::Simulation()'],['../struct_example_app.html#abd542c1e6b5653650c7d297da9f0abc7',1,'ExampleApp::simulation()']]],
+  ['simulation',['simulation',['../struct_example_app.html#abd542c1e6b5653650c7d297da9f0abc7',1,'ExampleApp::simulation()'],['../struct_example_app.html#abd16c59e21124f075eed347568b30464',1,'ExampleApp::Simulation()']]],
   ['simulationmodule',['SimulationModule',['../struct_simulation_module.html',1,'']]],
   ['sistergroupofvargroup',['SisterGroupOfVarGroup',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#aa7f9ae0a95857c0e00020e8587806065',1,'FirstHierarchy::TestModule::VarGroup']]],
   ['sistervarofvargroup',['sisterVarOfVarGroup',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#a56ce2485fa2bbeaf696e3418a8a2a032',1,'FirstHierarchy::TestModule::VarGroup']]],
@@ -137,7 +137,7 @@ var searchData=
   ['stream',['stream',['../class_chimera_t_k_1_1_pushable_stream.html#a916dbc0fd3430135e4fbb2a73c22e52e',1,'ChimeraTK::PushableStream']]],
   ['stringarray',['stringArray',['../struct_test_module.html#af9138b5edf8223227d2d51737a3a5824',1,'TestModule::stringArray()'],['../struct_test_module_1_1_module1_1_1_sub_module.html#aabe62e673f145e192db3b4d16c2629a6',1,'TestModule::Module1::SubModule::stringArray()']]],
   ['submodule',['SubModule',['../struct_test_module_1_1_module1_1_1_sub_module.html',1,'TestModule&lt; T &gt;::Module1::SubModule'],['../struct_test_module_1_1_module1.html#ada22c3784e9fa40b7d59544092cb7d2f',1,'TestModule::Module1::submodule()'],['../class_chimera_t_k_1_1_module.html#a5b69b847a580b0c4aa20309a81246b0c',1,'ChimeraTK::Module::submodule()']]],
-  ['submodules',['subModules',['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()'],['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()']]],
+  ['submodules',['submodules',['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()'],['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()']]],
   ['supportedusertypes_2eh',['SupportedUserTypes.h',['../_supported_user_types_8h.html',1,'']]],
   ['synchronoustransfercounter',['synchronousTransferCounter',['../class_chimera_t_k_1_1_device_module.html#a88f4864f1f3001a38aab45486792db78',1,'ChimeraTK::DeviceModule']]]
 ];

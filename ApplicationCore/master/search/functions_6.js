@@ -1,7 +1,7 @@
 var searchData=
 [
   ['generatexml',['generateXML',['../class_chimera_t_k_1_1_application.html#a1c9c06d9a92bfb9f42875faf48771e2d',1,'ChimeraTK::Application']]],
-  ['genericwritewrapper',['genericWriteWrapper',['../namespace_chimera_t_k.html#ac5d6fe6905267734b8ef9ce293fe93ba',1,'ChimeraTK']]],
+  ['genericwritewrapper',['genericWriteWrapper',['../class_chimera_t_k_1_1_exception_handling_decorator.html#a4cf10b87d3f2989ba4045ef65b6b0543',1,'ChimeraTK::ExceptionHandlingDecorator']]],
   ['get',['get',['../struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793',1,'ChimeraTK::ConfigReader::get()'],['../class_chimera_t_k_1_1_module_list.html#a4dc0f789b46c1bdadff5d2685fdff9ce',1,'ChimeraTK::ModuleList::get()']]],
   ['get_5fimpl',['get_impl',['../struct_chimera_t_k_1_1_config_reader.html#ae0d987890819fc887d81cfc296da4de0',1,'ChimeraTK::ConfigReader::get_impl(const std::string &amp;variableName, T *) const'],['../struct_chimera_t_k_1_1_config_reader.html#ac920876035406f5266007c95398ef782',1,'ChimeraTK::ConfigReader::get_impl(const std::string &amp;variableName, std::vector&lt; T &gt; *) const']]],
   ['getaccessor',['getAccessor',['../class_chimera_t_k_1_1_micro_d_a_q.html#a1a10a2f7bd4a45dd3a21f760126ab04a',1,'ChimeraTK::MicroDAQ::getAccessor()'],['../struct_chimera_t_k_1_1history_1_1_server_history.html#a76739007e938083b5b97e6f8bd4faf39',1,'ChimeraTK::history::ServerHistory::getAccessor()']]],
