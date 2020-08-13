@@ -90,10 +90,10 @@ $(document).ready(function(){initNavTree('test_dummy_backend_8cpp.html','');});
 <div class="title">testDummyBackend.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="boost__dynamic__init__test_8h_source.html">boost_dynamic_init_test.h</a>&quot;</code><br />
-<code>#include &lt;boost/bind.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;boost/bind.hpp&gt;</code><br />
 <code>#include &lt;boost/function.hpp&gt;</code><br />
 <code>#include &lt;boost/lambda/lambda.hpp&gt;</code><br />
+<code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
 <code>#include &quot;Device.h&quot;</code><br />
 <code>#include &quot;BackendFactory.h&quot;</code><br />
 <code>#include &quot;DummyBackend.h&quot;</code><br />
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('test_dummy_backend_8cpp.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_dummy_backend_8cpp__incl.svg" width="100%" height="473"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_dummy_backend_8cpp__incl.svg" width="100%" height="462"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
@@ -116,9 +116,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_testable_dummy_backend.html">TestableDummyBackend</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The TestableDummybackend is derived from DummyBackend to get access to the protected members.  <a href="class_testable_dummy_backend.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dummy_backend_test.html">DummyBackendTest</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_testable_dummy_backend_1_1_backend_registerer.html">TestableDummyBackend::BackendRegisterer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dummy_backend_test_suite.html">DummyBackendTestSuite</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fixture__t.html">Fixture_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -129,6 +129,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a6b2a3852db8bb19ab6909bac01859985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>&#160;&#160;&#160;testDummyBackend</td></tr>
+<tr class="separator:a6b2a3852db8bb19ab6909bac01859985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38f38ba495b8a4f934b9d5813da42bde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#a38f38ba495b8a4f934b9d5813da42bde">TEST_MAPPING_FILE</a>&#160;&#160;&#160;&quot;mtcadummy_withoutModules.map&quot;</td></tr>
 <tr class="separator:a38f38ba495b8a4f934b9d5813da42bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ef23872fb6ac510c609f042ba577f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#a06ef23872fb6ac510c609f042ba577f6">FIRMWARE_REGISTER_STRING</a>&#160;&#160;&#160;&quot;WORD_FIRMWARE&quot;</td></tr>
@@ -143,17 +145,63 @@ Macros</h2></td></tr>
 <tr class="separator:afc582965be2b50c7458505aa0fc5f94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad842bdc5e2d6b862135717c66a98995c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#ad842bdc5e2d6b862135717c66a98995c">READ_ONLY_REGISTER_STRING</a>&#160;&#160;&#160;&quot;WORD_READ_ONLY&quot;</td></tr>
 <tr class="separator:ad842bdc5e2d6b862135717c66a98995c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af608de2728bb17c300bd9cfdd7cd8115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#af608de2728bb17c300bd9cfdd7cd8115">EXISTING_DEVICE</a>&#160;&#160;&#160;&quot;DUMMYD0&quot;</td></tr>
+<tr class="memitem:af608de2728bb17c300bd9cfdd7cd8115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#af608de2728bb17c300bd9cfdd7cd8115">EXISTING_DEVICE</a>&#160;&#160;&#160;&quot;(TestableDummy?map=&quot; TEST_MAPPING_FILE &quot;)&quot;</td></tr>
 <tr class="separator:af608de2728bb17c300bd9cfdd7cd8115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a008ad625224f24a35a1f634d6f73a297"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#a008ad625224f24a35a1f634d6f73a297">NON_EXISTING_DEVICE</a>&#160;&#160;&#160;&quot;DUMMY9&quot;</td></tr>
 <tr class="separator:a008ad625224f24a35a1f634d6f73a297"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a19823c5af9fff4070c144dacf022bf94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#a19823c5af9fff4070c144dacf022bf94">init_unit_test</a> ()</td></tr>
-<tr class="separator:a19823c5af9fff4070c144dacf022bf94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38594dc762d585c7aefc2a7416318516"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#a38594dc762d585c7aefc2a7416318516">BOOST_AUTO_TEST_CASE</a> (testCalculateVirtualAddress)</td></tr>
+<tr class="separator:a38594dc762d585c7aefc2a7416318516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5eeaf24a63e9bca0028cb3a16ad8fae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#aa5eeaf24a63e9bca0028cb3a16ad8fae">BOOST_AUTO_TEST_CASE</a> (testCheckSizeIsMultipleOfWordSize)</td></tr>
+<tr class="separator:aa5eeaf24a63e9bca0028cb3a16ad8fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fe660407b9da474afad32e82fe3fcce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#a4fe660407b9da474afad32e82fe3fcce">BOOST_AUTO_TEST_CASE</a> (testReadWriteSingleWordRegister)</td></tr>
+<tr class="separator:a4fe660407b9da474afad32e82fe3fcce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab06a38a38e27df0bbb75bbf0612ad14a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#ab06a38a38e27df0bbb75bbf0612ad14a">BOOST_AUTO_TEST_CASE</a> (testReadWriteMultiWordRegister)</td></tr>
+<tr class="separator:ab06a38a38e27df0bbb75bbf0612ad14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dfed09610556eb775e3cfabf7ebcd89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#a8dfed09610556eb775e3cfabf7ebcd89">BOOST_AUTO_TEST_CASE</a> (testReadDeviceInfo)</td></tr>
+<tr class="separator:a8dfed09610556eb775e3cfabf7ebcd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f8a92fbe12e8fa983751483c06980d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#a00f8a92fbe12e8fa983751483c06980d">BOOST_AUTO_TEST_CASE</a> (testReadOnly)</td></tr>
+<tr class="separator:a00f8a92fbe12e8fa983751483c06980d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb76cdde6499c079c8882f68ed43502"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#abdb76cdde6499c079c8882f68ed43502">BOOST_AUTO_TEST_CASE</a> (testWriteCallbackFunctions)</td></tr>
+<tr class="separator:abdb76cdde6499c079c8882f68ed43502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3bc3807ba2e542a42539b00864349c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#a0d3bc3807ba2e542a42539b00864349c">BOOST_AUTO_TEST_CASE</a> (testWriteRegisterWithoutCallback)</td></tr>
+<tr class="separator:a0d3bc3807ba2e542a42539b00864349c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a09e9ee4684ff398520a8ccef02df62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#a7a09e9ee4684ff398520a8ccef02df62">BOOST_AUTO_TEST_CASE</a> (testWriteToReadOnlyRegister)</td></tr>
+<tr class="separator:a7a09e9ee4684ff398520a8ccef02df62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd346d674b14f6e7a4f365c35296c1ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#abd346d674b14f6e7a4f365c35296c1ce">BOOST_AUTO_TEST_CASE</a> (testAddressRange)</td></tr>
+<tr class="separator:abd346d674b14f6e7a4f365c35296c1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1c549aea605c905fc69a7ff50ae6331"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#aa1c549aea605c905fc69a7ff50ae6331">BOOST_AUTO_TEST_CASE</a> (testIsWriteRangeOverlap)</td></tr>
+<tr class="separator:aa1c549aea605c905fc69a7ff50ae6331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b19947a4be08aadf22aa6e883ee7e18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#a5b19947a4be08aadf22aa6e883ee7e18">BOOST_AUTO_TEST_CASE</a> (testFinalClosing)</td></tr>
+<tr class="separator:a5b19947a4be08aadf22aa6e883ee7e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9840997c43eddfdaf9798a7845120f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#ab9840997c43eddfdaf9798a7845120f3">BOOST_AUTO_TEST_CASE</a> (testOpenClose)</td></tr>
+<tr class="separator:ab9840997c43eddfdaf9798a7845120f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00cf0c52c63ccf932ac6e632309b2d9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#a00cf0c52c63ccf932ac6e632309b2d9d">BOOST_AUTO_TEST_CASE</a> (testClose)</td></tr>
+<tr class="separator:a00cf0c52c63ccf932ac6e632309b2d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e3eed20b9c0f46154e0d0259e33f183"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#a4e3eed20b9c0f46154e0d0259e33f183">BOOST_AUTO_TEST_CASE</a> (testOpen)</td></tr>
+<tr class="separator:a4e3eed20b9c0f46154e0d0259e33f183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f15aa63cc160538eda9419543a94d60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_dummy_backend_8cpp.html#a9f15aa63cc160538eda9419543a94d60">BOOST_AUTO_TEST_CASE</a> (testCreateBackend)</td></tr>
+<tr class="separator:a9f15aa63cc160538eda9419543a94d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a6b2a3852db8bb19ab6909bac01859985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b2a3852db8bb19ab6909bac01859985">&#9670;&nbsp;</a></span>BOOST_TEST_MODULE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_TEST_MODULE&#160;&#160;&#160;testDummyBackend</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00001">1</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a476d0f9665b137cb4f5530afce2bdb35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a476d0f9665b137cb4f5530afce2bdb35">&#9670;&nbsp;</a></span>CLOCK_MUX_REGISTER_STRING</h2>
 
@@ -166,7 +214,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00028">28</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00027">27</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -182,7 +230,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00029">29</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00028">28</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -193,12 +241,12 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define EXISTING_DEVICE&#160;&#160;&#160;&quot;DUMMYD0&quot;</td>
+          <td class="memname">#define EXISTING_DEVICE&#160;&#160;&#160;&quot;(TestableDummy?map=&quot; TEST_MAPPING_FILE &quot;)&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00032">32</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00031">31</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -214,7 +262,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00025">25</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00024">24</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -230,7 +278,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00033">33</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00032">32</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -246,7 +294,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00030">30</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00029">29</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -262,7 +310,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00026">26</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00025">25</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -278,7 +326,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00024">24</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00023">23</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -294,27 +342,433 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00027">27</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00026">26</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a19823c5af9fff4070c144dacf022bf94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19823c5af9fff4070c144dacf022bf94">&#9670;&nbsp;</a></span>init_unit_test()</h2>
+<a id="a38594dc762d585c7aefc2a7416318516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38594dc762d585c7aefc2a7416318516">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool init_unit_test </td>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
+          <td class="paramtype">testCalculateVirtualAddress&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00169">169</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00103">103</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa5eeaf24a63e9bca0028cb3a16ad8fae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5eeaf24a63e9bca0028cb3a16ad8fae">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testCheckSizeIsMultipleOfWordSize&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00115">115</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="test_dummy_backend_8cpp_aa5eeaf24a63e9bca0028cb3a16ad8fae_cgraph.svg" width="546" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a4fe660407b9da474afad32e82fe3fcce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fe660407b9da474afad32e82fe3fcce">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testReadWriteSingleWordRegister&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00128">128</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_dummy_backend_8cpp_a4fe660407b9da474afad32e82fe3fcce_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ab06a38a38e27df0bbb75bbf0612ad14a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab06a38a38e27df0bbb75bbf0612ad14a">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testReadWriteMultiWordRegister&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00155">155</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_dummy_backend_8cpp_ab06a38a38e27df0bbb75bbf0612ad14a_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a8dfed09610556eb775e3cfabf7ebcd89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dfed09610556eb775e3cfabf7ebcd89">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testReadDeviceInfo&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00212">212</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_dummy_backend_8cpp_a8dfed09610556eb775e3cfabf7ebcd89_cgraph.svg" width="100%" height="495"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a00f8a92fbe12e8fa983751483c06980d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f8a92fbe12e8fa983751483c06980d">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testReadOnly&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00228">228</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_dummy_backend_8cpp_a00f8a92fbe12e8fa983751483c06980d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="abdb76cdde6499c079c8882f68ed43502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdb76cdde6499c079c8882f68ed43502">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[7/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testWriteCallbackFunctions&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00289">289</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_dummy_backend_8cpp_abdb76cdde6499c079c8882f68ed43502_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a0d3bc3807ba2e542a42539b00864349c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d3bc3807ba2e542a42539b00864349c">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[8/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testWriteRegisterWithoutCallback&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00381">381</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_dummy_backend_8cpp_a0d3bc3807ba2e542a42539b00864349c_cgraph.svg" width="100%" height="527"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a7a09e9ee4684ff398520a8ccef02df62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a09e9ee4684ff398520a8ccef02df62">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[9/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testWriteToReadOnlyRegister&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00402">402</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_dummy_backend_8cpp_a7a09e9ee4684ff398520a8ccef02df62_cgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="abd346d674b14f6e7a4f365c35296c1ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd346d674b14f6e7a4f365c35296c1ce">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[10/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testAddressRange&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00444">444</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa1c549aea605c905fc69a7ff50ae6331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1c549aea605c905fc69a7ff50ae6331">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[11/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testIsWriteRangeOverlap&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00474">474</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_dummy_backend_8cpp_aa1c549aea605c905fc69a7ff50ae6331_cgraph.svg" width="100%" height="525"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a5b19947a4be08aadf22aa6e883ee7e18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b19947a4be08aadf22aa6e883ee7e18">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[12/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testFinalClosing&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00485">485</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_dummy_backend_8cpp_a5b19947a4be08aadf22aa6e883ee7e18_cgraph.svg" width="100%" height="527"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ab9840997c43eddfdaf9798a7845120f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9840997c43eddfdaf9798a7845120f3">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[13/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testOpenClose&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00497">497</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_dummy_backend_8cpp_ab9840997c43eddfdaf9798a7845120f3_cgraph.svg" width="100%" height="528"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a00cf0c52c63ccf932ac6e632309b2d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00cf0c52c63ccf932ac6e632309b2d9d">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[14/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testClose&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Try closing the backend</p>
+<p>backend should not be open now</p>
+<p>backend should remain in connected state </p>
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00527">527</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4e3eed20b9c0f46154e0d0259e33f183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e3eed20b9c0f46154e0d0259e33f183">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[15/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testOpen&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00538">538</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9f15aa63cc160538eda9419543a94d60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f15aa63cc160538eda9419543a94d60">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[16/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testCreateBackend&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Only for testing purpose</p>
+<p>Try creating a non existing backend</p>
+<p>Try creating an existing backend - don't use EXISTING_DEVICE here as it bypasses the dummy's factory</p>
+<p>backend should be in connect state now</p>
+<p>backend should not be in open state</p>
+<p>check if instance name is working properly </p>
+
+<p class="definition">Definition at line <a class="el" href="test_dummy_backend_8cpp_source.html#l00546">546</a> of file <a class="el" href="test_dummy_backend_8cpp_source.html">testDummyBackend.cpp</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_dummy_backend_8cpp_a9f15aa63cc160538eda9419543a94d60_cgraph.svg" width="100%" height="527"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -324,7 +778,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_dummy_backend_8cpp.html">testDummyBackend.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 12 2020 03:53:23 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Aug 13 2020 03:53:21 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

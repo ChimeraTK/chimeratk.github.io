@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['c',['c',['../class_fixture__t.html#a554b41c58dfedc3f15f8a9251bc06e54',1,'Fixture_t']]],
   ['called_5fregisterbackendtype',['called_registerBackendType',['../class_chimera_t_k_1_1_backend_factory.html#aa75990b6944f9e6bb5bb4d50a1aab723',1,'ChimeraTK::BackendFactory']]],
   ['capabilities',['capabilities',['../struct_register_descriptor_base.html#ab4589e686752c387be9e0b843284db02',1,'RegisterDescriptorBase::capabilities()'],['../struct_integers__signed32.html#ad1d5a9487e394b197661e451749b32ff',1,'Integers_signed32::capabilities()'],['../struct_muxed_nodma.html#ae77df540890571d0ef6300fe1e27b056',1,'MuxedNodma::capabilities()'],['../struct_area_type.html#acb418760ee106566581537837358e51f',1,'AreaType::capabilities()'],['../struct_regs3_type.html#a5e308728ed732e980d9d9d72f93e007a',1,'Regs3Type::capabilities()']]],
   ['catalogue',['catalogue',['../class_chimera_t_k_1_1_register_catalogue.html#a1637d96aa5a2c7dcd0e2f345205d149b',1,'ChimeraTK::RegisterCatalogue']]],

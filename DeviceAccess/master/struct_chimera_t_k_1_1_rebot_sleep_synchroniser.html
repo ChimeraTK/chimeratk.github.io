@@ -97,13 +97,41 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a4eaa30a44af166fc0e674aae01110b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0572acc2a726f94cb03c5943e7a4710"><td class="memItemLeft" align="right" valign="top">static std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html#ad0572acc2a726f94cb03c5943e7a4710">_clientMayGetLock</a></td></tr>
 <tr class="separator:ad0572acc2a726f94cb03c5943e7a4710"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a7b9e5fe7a1a5818a7d334f18244692"><td class="memItemLeft" align="right" valign="top">static boost::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html#a3a7b9e5fe7a1a5818a7d334f18244692">_nextRequestedWakeup</a> = <a class="el" href="class_chimera_t_k_1_1_rebot_testable_clock.html#afc84ef5320a83473531edc3a7f59954c">RebotTestableClock::_epoch</a></td></tr>
+<tr class="memitem:a3a7b9e5fe7a1a5818a7d334f18244692"><td class="memItemLeft" align="right" valign="top">static boost::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html#a3a7b9e5fe7a1a5818a7d334f18244692">_nextRequestedWakeup</a> = <a class="el" href="class_chimera_t_k_1_1_rebot_testable_clock.html#a57c8813570166b0cdd637a45244c1bd6">RebotTestableClock::_epoch</a></td></tr>
 <tr class="separator:a3a7b9e5fe7a1a5818a7d334f18244692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b181f7e176d13369aae2941095752f8"><td class="memItemLeft" align="right" valign="top">static std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html#a1b181f7e176d13369aae2941095752f8">_clientHasReachedTestableMode</a></td></tr>
+<tr class="separator:a1b181f7e176d13369aae2941095752f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc91abbf4d777491f62e5a5c741e5b7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html#a1cc91abbf4d777491f62e5a5c741e5b7">_testHasReachedTestableMode</a></td></tr>
+<tr class="separator:a1cc91abbf4d777491f62e5a5c741e5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00029">29</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00034">34</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1b181f7e176d13369aae2941095752f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b181f7e176d13369aae2941095752f8">&#9670;&nbsp;</a></span>_clientHasReachedTestableMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt; bool &gt; ChimeraTK::RebotSleepSynchroniser::_clientHasReachedTestableMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00041">41</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
+
+</div>
+</div>
 <a id="ad0572acc2a726f94cb03c5943e7a4710"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0572acc2a726f94cb03c5943e7a4710">&#9670;&nbsp;</a></span>_clientMayGetLock</h2>
 
@@ -124,7 +152,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00032">32</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00037">37</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
 
 </div>
 </div>
@@ -148,7 +176,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00030">30</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00035">35</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
 
 </div>
 </div>
@@ -162,7 +190,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::chrono::steady_clock::time_point ChimeraTK::RebotSleepSynchroniser::_nextRequestedWakeup = <a class="el" href="class_chimera_t_k_1_1_rebot_testable_clock.html#afc84ef5320a83473531edc3a7f59954c">RebotTestableClock::_epoch</a></td>
+          <td class="memname">boost::chrono::steady_clock::time_point ChimeraTK::RebotSleepSynchroniser::_nextRequestedWakeup = <a class="el" href="class_chimera_t_k_1_1_rebot_testable_clock.html#a57c8813570166b0cdd637a45244c1bd6">RebotTestableClock::_epoch</a></td>
         </tr>
       </table>
   </td>
@@ -172,7 +200,31 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00033">33</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00039">39</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
+
+</div>
+</div>
+<a id="a1cc91abbf4d777491f62e5a5c741e5b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cc91abbf4d777491f62e5a5c741e5b7">&#9670;&nbsp;</a></span>_testHasReachedTestableMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::RebotSleepSynchroniser::_testHasReachedTestableMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html#l00044">44</a> of file <a class="el" href="testable_rebot_sleep__testing_impl_8h_source.html">testableRebotSleep_testingImpl.h</a>.</p>
 
 </div>
 </div>
@@ -185,7 +237,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html">RebotSleepSynchroniser</a></li>
-    <li class="footer">Generated on Wed Aug 12 2020 03:53:24 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Aug 13 2020 03:53:22 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

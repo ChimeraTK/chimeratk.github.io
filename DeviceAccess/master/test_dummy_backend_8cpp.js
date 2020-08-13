@@ -1,8 +1,9 @@
 var test_dummy_backend_8cpp =
 [
     [ "TestableDummyBackend", "class_testable_dummy_backend.html", "class_testable_dummy_backend" ],
-    [ "DummyBackendTest", "class_dummy_backend_test.html", "class_dummy_backend_test" ],
-    [ "DummyBackendTestSuite", "class_dummy_backend_test_suite.html", "class_dummy_backend_test_suite" ],
+    [ "BackendRegisterer", "class_testable_dummy_backend_1_1_backend_registerer.html", "class_testable_dummy_backend_1_1_backend_registerer" ],
+    [ "Fixture_t", "class_fixture__t.html", "class_fixture__t" ],
+    [ "BOOST_TEST_MODULE", "test_dummy_backend_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "CLOCK_MUX_REGISTER_STRING", "test_dummy_backend_8cpp.html#a476d0f9665b137cb4f5530afce2bdb35", null ],
     [ "CLOCK_RESET_REGISTER_STRING", "test_dummy_backend_8cpp.html#afc582965be2b50c7458505aa0fc5f94b", null ],
     [ "EXISTING_DEVICE", "test_dummy_backend_8cpp.html#af608de2728bb17c300bd9cfdd7cd8115", null ],
@@ -12,5 +13,20 @@ var test_dummy_backend_8cpp =
     [ "STATUS_REGISTER_STRING", "test_dummy_backend_8cpp.html#ab771a5738d0a773e772ceb42fa26410c", null ],
     [ "TEST_MAPPING_FILE", "test_dummy_backend_8cpp.html#a38f38ba495b8a4f934b9d5813da42bde", null ],
     [ "USER_REGISTER_STRING", "test_dummy_backend_8cpp.html#a3666956980c94e99f82e036ef8b34395", null ],
-    [ "init_unit_test", "test_dummy_backend_8cpp.html#a19823c5af9fff4070c144dacf022bf94", null ]
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#a38594dc762d585c7aefc2a7416318516", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#aa5eeaf24a63e9bca0028cb3a16ad8fae", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#a4fe660407b9da474afad32e82fe3fcce", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#ab06a38a38e27df0bbb75bbf0612ad14a", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#a8dfed09610556eb775e3cfabf7ebcd89", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#a00f8a92fbe12e8fa983751483c06980d", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#abdb76cdde6499c079c8882f68ed43502", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#a0d3bc3807ba2e542a42539b00864349c", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#a7a09e9ee4684ff398520a8ccef02df62", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#abd346d674b14f6e7a4f365c35296c1ce", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#aa1c549aea605c905fc69a7ff50ae6331", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#a5b19947a4be08aadf22aa6e883ee7e18", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#ab9840997c43eddfdaf9798a7845120f3", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#a00cf0c52c63ccf932ac6e632309b2d9d", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#a4e3eed20b9c0f46154e0d0259e33f183", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#a9f15aa63cc160538eda9419543a94d60", null ]
 ];
