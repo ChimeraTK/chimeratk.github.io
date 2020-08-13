@@ -9,6 +9,7 @@ var hierarchy =
     [ "ApplicationBase", null, [
       [ "ChimeraTK::Application", "class_chimera_t_k_1_1_application.html", [
         [ "AssignModuleLaterApp", "struct_assign_module_later_app.html", null ],
+        [ "ConstantPollDummyApplication", "struct_constant_poll_dummy_application.html", null ],
         [ "DummyApplication", "struct_dummy_application.html", null ],
         [ "ExampleApp", "struct_example_app.html", null ],
         [ "ExampleApp", "struct_example_app.html", null ],
@@ -17,7 +18,10 @@ var hierarchy =
         [ "ExampleApp", "struct_example_app.html", null ],
         [ "ExampleApp", "struct_example_app.html", null ],
         [ "OneModuleApp", "struct_one_module_app.html", null ],
+        [ "PollDummyApplication", "struct_poll_dummy_application.html", null ],
         [ "PollingTestApplication< T >", "struct_polling_test_application.html", null ],
+        [ "PollProcessArryDummyApplication", "struct_poll_process_arry_dummy_application.html", null ],
+        [ "PushDummyApplication", "struct_push_dummy_application.html", null ],
         [ "ReadOnlyTestApplication", "struct_read_only_test_application.html", null ],
         [ "Server", "struct_server.html", null ],
         [ "TestApp", "struct_test_app.html", null ],
@@ -70,6 +74,7 @@ var hierarchy =
     [ "ChimeraTK::ConstantAccessorCreator", "struct_chimera_t_k_1_1_constant_accessor_creator.html", [
       [ "ChimeraTK::ConstantAccessorCreatorImpl< UserType >", "struct_chimera_t_k_1_1_constant_accessor_creator_impl.html", null ]
     ] ],
+    [ "ConstantPollTypeInitialValueEceptionDummy", "struct_constant_poll_type_initial_value_eception_dummy.html", null ],
     [ "DeviceBackendImpl", null, [
       [ "TimerDummy", "class_timer_dummy.html", null ]
     ] ],
@@ -127,6 +132,7 @@ var hierarchy =
             ] ],
             [ "ChimeraTK::WriteBitMask< NBITS >", "struct_chimera_t_k_1_1_write_bit_mask.html", null ],
             [ "ChimeraTK::WriteSplitArrayModule< TYPE >", "struct_chimera_t_k_1_1_write_split_array_module.html", null ],
+            [ "ConstantPollModule", "struct_constant_poll_module.html", null ],
             [ "ChimeraTK::ConstMultiplier< double >", "struct_chimera_t_k_1_1_const_multiplier.html", null ],
             [ "ChimeraTK::ConstMultiplier< uint16_t, uint16_t, 120 >", "struct_chimera_t_k_1_1_const_multiplier.html", null ],
             [ "Controller", "struct_controller.html", null ],
@@ -150,11 +156,15 @@ var hierarchy =
             [ "MyModule", "struct_my_module.html", null ],
             [ "OutputModule", "struct_output_module.html", null ],
             [ "PollingReadModule< T >", "struct_polling_read_module.html", null ],
+            [ "PollInputModule", "struct_poll_input_module.html", null ],
             [ "PollModule", "struct_poll_module.html", null ],
+            [ "PollModule", "struct_poll_module.html", null ],
+            [ "PushModule", "struct_push_module.html", null ],
             [ "PushModule", "struct_push_module.html", null ],
             [ "ReadAnyTestModule< T >", "struct_read_any_test_module.html", null ],
             [ "ReadOnlyTestApplication::TestModule", "struct_read_only_test_application_1_1_test_module.html", null ],
             [ "RealisticModule", "struct_realistic_module.html", null ],
+            [ "ScalarOutputModule", "struct_scalar_output_module.html", null ],
             [ "ChimeraTK::ScalarPipe< std::string >", "struct_chimera_t_k_1_1_scalar_pipe.html", null ],
             [ "SecondHierarchy::SecondModule", "struct_second_hierarchy_1_1_second_module.html", null ],
             [ "SecondHierarchy::TestModule", "struct_second_hierarchy_1_1_test_module.html", null ],
@@ -445,6 +455,8 @@ var hierarchy =
       [ "ChimeraTK::ArrayAccessor< uint64_t >", "class_chimera_t_k_1_1_array_accessor.html", null ],
       [ "ChimeraTK::ArrayAccessor< UserType >", "class_chimera_t_k_1_1_array_accessor.html", null ]
     ] ],
+    [ "PollProcessArrayTypeInitialValueEceptionDummy", "struct_poll_process_array_type_initial_value_eception_dummy.html", null ],
+    [ "PollTypeInitialValueEceptionDummy", "struct_poll_type_initial_value_eception_dummy.html", null ],
     [ "ChimeraTK::Profiler", "class_chimera_t_k_1_1_profiler.html", null ],
     [ "ChimeraTK::PushableStream", "class_chimera_t_k_1_1_pushable_stream.html", [
       [ "ChimeraTK::VariableNetworkNodeDumpingVisitor", "class_chimera_t_k_1_1_variable_network_node_dumping_visitor.html", [
@@ -452,6 +464,7 @@ var hierarchy =
         [ "ChimeraTK::VariableNetworkGraphDumpingVisitor", "class_chimera_t_k_1_1_variable_network_graph_dumping_visitor.html", null ]
       ] ]
     ] ],
+    [ "PushTypeInitialValueEceptionDummy", "struct_push_type_initial_value_eception_dummy.html", null ],
     [ "ChimeraTK::RecoveryHelper", "struct_chimera_t_k_1_1_recovery_helper.html", null ],
     [ "ScalarRegisterAccessor", null, [
       [ "ChimeraTK::ScalarAccessor< UserType >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],

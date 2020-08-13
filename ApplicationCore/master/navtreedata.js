@@ -83,7 +83,7 @@ var NAVTREE =
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
@@ -101,11 +101,12 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#acef33adfcd91868e153def7f4c4eb220",
 "class_chimera_t_k_1_1_threaded_fan_out.html#a271b4551b5338bc3c7b486868f57a530",
 "dir_68267d1309a1af8e8297ef4c3efbcdba.html",
-"struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793",
-"struct_chimera_t_k_1_1history_1_1_update.html#a0a7a0140f309b9e738f3191e2a010e77",
-"struct_read_only_test_application.html#a9d6c93908b0d18793e96c67dfef114e2",
-"struct_test_application4.html#ab9dd9ec71ae4b71b592bedc88eb28dfb",
-"test_bidirectional_variables_8cc.html#ab92f83b705533f950d1ad7405f189ba0"
+"struct_chimera_t_k_1_1_config_reader.html#a790086daccf009a91f4cd3fc675bc1f9",
+"struct_chimera_t_k_1_1history_1_1_server_history.html#a757244b6a6e6e8eb984c607942d728bd",
+"struct_poll_module.html",
+"struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4",
+"struct_vector_module.html#a31731a46f755c971d482906d7f33e6c1",
+"test_propagate_data_fault_flag_8cc.html#a58441bd7701bd4b1d52046a334e36cf3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

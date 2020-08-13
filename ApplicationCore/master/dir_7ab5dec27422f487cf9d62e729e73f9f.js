@@ -16,6 +16,7 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testHideThis.cc", "test_hide_this_8cc.html", "test_hide_this_8cc" ],
     [ "testHistory.cc", "test_history_8cc.html", "test_history_8cc" ],
     [ "testIllegalNetworks.cc", "test_illegal_networks_8cc.html", "test_illegal_networks_8cc" ],
+    [ "testInitialValueSpecD8.cc", "test_initial_value_spec_d8_8cc.html", "test_initial_value_spec_d8_8cc" ],
     [ "testLogging.cc", "test_logging_8cc.html", "test_logging_8cc" ],
     [ "testModules.cc", "test_modules_8cc.html", "test_modules_8cc" ],
     [ "testProcessVariableRecovery.cc", "test_process_variable_recovery_8cc.html", "test_process_variable_recovery_8cc" ],

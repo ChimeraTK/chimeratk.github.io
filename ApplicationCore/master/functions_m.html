@@ -118,6 +118,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="class_chimera_t_k_1_1_status_aggregator.html#a49a9371926f9b187b0652438d43f0ef7">ChimeraTK::StatusAggregator</a>
 , <a class="el" href="struct_chimera_t_k_1_1_write_bit_mask.html#a0bfaa8288a5d3249f0f7997a125350ad">ChimeraTK::WriteBitMask&lt; NBITS &gt;</a>
 , <a class="el" href="struct_chimera_t_k_1_1_write_split_array_module.html#a3266bfd01e7d286958de592dfae803f0">ChimeraTK::WriteSplitArrayModule&lt; TYPE &gt;</a>
+, <a class="el" href="struct_constant_poll_module.html#ad0baf434ce01cdc346146789cd1ccb0d">ConstantPollModule</a>
 , <a class="el" href="struct_controller.html#ab39304e11bf3c606f96d08287af4bdc7">Controller</a>
 , <a class="el" href="struct_deeper.html#a92011a30d5796dd7a4a0e1dedaf24b8d">Deeper&lt; T &gt;</a>
 , <a class="el" href="struct_dummy.html#a11ed75b22b02cb8d31c1116f412d732b">Dummy&lt; UserType &gt;</a>
@@ -134,11 +135,13 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="struct_my_module.html#a220b167c558bb5b3bcfc3783dfb5d0fa">MyModule</a>
 , <a class="el" href="struct_output_module.html#a6057d331f8eb7362ef5c8e4be94eeb87">OutputModule</a>
 , <a class="el" href="struct_polling_read_module.html#ab216958c5a501d0a1e4453181c90f26e">PollingReadModule&lt; T &gt;</a>
+, <a class="el" href="struct_poll_input_module.html#a5b8fca11beaffc73f3bf23ffd2030a06">PollInputModule</a>
 , <a class="el" href="struct_poll_module.html#a8d1a0bd3b1e8f28323c3294da3ad479d">PollModule</a>
 , <a class="el" href="struct_push_module.html#aa5749decbd0dca2c2e496b1b7971d8fc">PushModule</a>
 , <a class="el" href="struct_read_any_test_module.html#a697414cdd85b09978e43e492b3e1dd02">ReadAnyTestModule&lt; T &gt;</a>
 , <a class="el" href="struct_read_only_test_application_1_1_test_module.html#ad199078eab98c21df642e334ce50557a">ReadOnlyTestApplication::TestModule</a>
 , <a class="el" href="struct_realistic_module.html#a2d583721681a94d306cfd1b1595da3ce">RealisticModule</a>
+, <a class="el" href="struct_scalar_output_module.html#aeffffbadf3ebc96fdf80ac06b0261b1f">ScalarOutputModule</a>
 , <a class="el" href="struct_second_hierarchy_1_1_second_module.html#a110cb35cd2552660ab92ceff99f48a1d">SecondHierarchy::SecondModule</a>
 , <a class="el" href="struct_second_hierarchy_1_1_test_module.html#a106c437d56f24935ebcbbff19d781593">SecondHierarchy::TestModule</a>
 , <a class="el" href="struct_simulation_module.html#a939276bda8e1c1c0d8f28c3c45671f0f">SimulationModule</a>
@@ -149,7 +152,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="struct_test_module1.html#a3b83a953299e9702871d8e091451d988">TestModule1</a>
 , <a class="el" href="struct_test_module2.html#ac667adf003f2b3e6a41b43c7fee9bdd6">TestModule2&lt; T &gt;</a>
 , <a class="el" href="struct_test_module3.html#af6fd74ec6906d03aa46a469f8e3dcc9b">TestModule3</a>
-, <a class="el" href="struct_test_module.html#a7d6840590346a5b8b9f9d8b045611a56">TestModule&lt; T &gt;</a>
+, <a class="el" href="struct_test_module.html#af46cec5b1db1f4fe98e768c226afc688">TestModule&lt; T &gt;</a>
 , <a class="el" href="struct_update_module.html#a4a1df13e229b5bcb62381db3c8c80a3d">UpdateModule</a>
 , <a class="el" href="struct_vector_module.html#a2f2bebfc90d4cebe5e90caa82649e381">VectorModule</a>
 </li>
@@ -203,7 +206,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 <li>MicroDAQ
 : <a class="el" href="class_chimera_t_k_1_1_device_module.html#a16b6ac2d21c82a6c0d6953b6ee3f8977">ChimeraTK::DeviceModule</a>
-, <a class="el" href="class_chimera_t_k_1_1_micro_d_a_q.html#aaaebad3f79ca19918081fbaa1632b229">ChimeraTK::MicroDAQ&lt; TRIGGERTYPE &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_micro_d_a_q.html#ab97c3f6b66dc90d485fe1847ee6c4dfb">ChimeraTK::MicroDAQ&lt; TRIGGERTYPE &gt;</a>
 </li>
 <li>min
 : <a class="el" href="struct_chimera_t_k_1_1_limit_value.html#a21f3bd9f62ead8b98f636be5ec9ee95e">ChimeraTK::LimitValue&lt; UserType &gt;</a>
@@ -222,12 +225,12 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 <li>Module
 : <a class="el" href="class_chimera_t_k_1_1_application.html#a21f639900c480510650969df9c74d17d">ChimeraTK::Application</a>
-, <a class="el" href="class_chimera_t_k_1_1_module.html#ad45684a75a461aa889cef3a41711348e">ChimeraTK::Module</a>
+, <a class="el" href="class_chimera_t_k_1_1_module.html#a708e4ce93cf2ee684f9ca459cf64b9a1">ChimeraTK::Module</a>
 </li>
 <li>module
 : <a class="el" href="struct_read_only_test_application.html#a05b7835af5794bb9da5fbc4738b2d4c9">ReadOnlyTestApplication</a>
 , <a class="el" href="struct_test_application4.html#a2bb5641e8b2d46344f5c3842c2195c65">TestApplication4</a>
-, <a class="el" href="struct_test_application.html#a6b058ad6b4a1a548e903c7d9b3b56824">TestApplication&lt; T &gt;</a>
+, <a class="el" href="struct_test_application.html#a0ec082e835cee93b8b3fe53a5a57a2d8">TestApplication&lt; T &gt;</a>
 </li>
 <li>module1
 : <a class="el" href="struct_test_module.html#ae5b560ae688dd0f705bc551b90a22b23">TestModule&lt; T &gt;</a>
@@ -236,7 +239,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="class_chimera_t_k_1_1_module_graph_visitor.html#a28306e023e1920c3511355e3579c2907">ChimeraTK::ModuleGraphVisitor</a>
 </li>
 <li>ModuleGroup()
-: <a class="el" href="class_chimera_t_k_1_1_module_group.html#a65b28310b394f273b6e8786af92bf9e7">ChimeraTK::ModuleGroup</a>
+: <a class="el" href="class_chimera_t_k_1_1_module_group.html#ad93637587b0b293c4d86f962f024161e">ChimeraTK::ModuleGroup</a>
 </li>
 <li>ModuleImpl()
 : <a class="el" href="class_chimera_t_k_1_1_module_impl.html#abdade981919c3cebe9afed2f765e9909">ChimeraTK::ModuleImpl</a>
@@ -270,7 +273,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="struct_first_hierarchy_1_1_test_module.html#a4c9d224ce0b4c63dbf95f702a505214a">FirstHierarchy::TestModule</a>
 </li>
 <li>Multiplier()
-: <a class="el" href="struct_chimera_t_k_1_1_multiplier.html#a1c5b79f1e8266473c3f5513d076ffcd0">ChimeraTK::Multiplier&lt; InputType, OutputType, NELEMS &gt;</a>
+: <a class="el" href="struct_chimera_t_k_1_1_multiplier.html#a89eccf442fa61c4931532a9b6e4a1d15">ChimeraTK::Multiplier&lt; InputType, OutputType, NELEMS &gt;</a>
 </li>
 <li>multiplierD
 : <a class="el" href="struct_test_app.html#aa9ed655af3ef3d652b86ec0b19a60455">TestApp</a>
@@ -291,7 +294,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Aug 12 2020 03:55:01 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Aug 13 2020 03:54:45 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
