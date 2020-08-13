@@ -11,7 +11,6 @@ var hierarchy =
     [ "AsyncReadTest", "class_async_read_test.html", null ],
     [ "ProcessArrayFactoryBackend::BackendRegisterer", "class_process_array_factory_backend_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::ControlSystemPVManager", "class_chimera_t_k_1_1_control_system_p_v_manager.html", null ],
-    [ "ChimeraTK::ControlSystemSynchronizationUtility", "class_chimera_t_k_1_1_control_system_synchronization_utility.html", null ],
     [ "ChimeraTK::DecoratorFactory< UserType >", "class_chimera_t_k_1_1_decorator_factory.html", null ],
     [ "ChimeraTK::DecoratorTypeHolder", "class_chimera_t_k_1_1_decorator_type_holder.html", [
       [ "ChimeraTK::TypeChangingDecorator< T, IMPL_T >", "class_chimera_t_k_1_1_type_changing_decorator.html", [
@@ -37,7 +36,6 @@ var hierarchy =
       [ "ProcessArrayFactoryBackend", "struct_process_array_factory_backend.html", null ]
     ] ],
     [ "ChimeraTK::DevicePVManager", "class_chimera_t_k_1_1_device_p_v_manager.html", null ],
-    [ "ChimeraTK::DeviceSynchronizationUtility", "class_chimera_t_k_1_1_device_synchronization_utility.html", null ],
     [ "enable_shared_from_this", null, [
       [ "ChimeraTK::PVManager", "class_chimera_t_k_1_1_p_v_manager.html", null ]
     ] ],
@@ -57,9 +55,6 @@ var hierarchy =
     ] ],
     [ "PerformInputToOutput", "struct_perform_input_to_output.html", null ],
     [ "ChimeraTK::PersistentDataStorage", "class_chimera_t_k_1_1_persistent_data_storage.html", null ],
-    [ "ChimeraTK::ProcessVariableListener", "class_chimera_t_k_1_1_process_variable_listener.html", [
-      [ "ChimeraTK::CountingProcessVariableListener", "struct_chimera_t_k_1_1_counting_process_variable_listener.html", null ]
-    ] ],
     [ "ChimeraTK::PersistentDataStorage::Queue< DataType >", "class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html", null ],
     [ "RegisterDescriptorBase< Derived >", "struct_register_descriptor_base.html", [
       [ "Bidir< Derived >", "struct_bidir.html", null ]
@@ -87,7 +82,6 @@ var hierarchy =
     [ "TestApplicationFixture", "struct_test_application_fixture.html", null ],
     [ "TestDeviceCallable", "struct_test_device_callable.html", null ],
     [ "TestDeviceCallable2", "struct_test_device_callable2.html", null ],
-    [ "TestDeviceCallable3", "struct_test_device_callable3.html", null ],
     [ "TestDeviceCallable4", "struct_test_device_callable4.html", null ],
     [ "TestDeviceCallable5", "struct_test_device_callable5.html", null ],
     [ "ThreadedPvManagerHolder< CALLABLE >", "struct_threaded_pv_manager_holder.html", null ],

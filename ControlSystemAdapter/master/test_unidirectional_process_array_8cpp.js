@@ -8,7 +8,6 @@ var test_unidirectional_process_array_8cpp =
     [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_unidirectional_process_array_8cpp.html#a62aefc9c0e5533b41b3f1ad96376c435", null ],
     [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_unidirectional_process_array_8cpp.html#aaf4367a0139f293197c62dc88f003aca", null ],
     [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_unidirectional_process_array_8cpp.html#a13b54fb602ca01e2f1e0883069f9a862", null ],
-    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_unidirectional_process_array_8cpp.html#a8a6a9f4da77c50d7371914b920265bab", null ],
     [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_unidirectional_process_array_8cpp.html#a3d94fc1cdfa1715ac982d0d26060404a", null ],
     [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_unidirectional_process_array_8cpp.html#a5e984ce9d0f58ab4c27864d47d449bb3", null ],
     [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_unidirectional_process_array_8cpp.html#af0d38dd05635ccbfcfc16e3280cb906f", null ],

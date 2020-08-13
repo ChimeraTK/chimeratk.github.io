@@ -2,7 +2,6 @@ var NAVTREE =
 [
   [ "ChimeraTK-ControlSystemAdapter", "index.html", [
     [ "Todo List", "todo.html", null ],
-    [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -10,8 +9,7 @@ var NAVTREE =
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ],
-        [ "Enumerator", "namespacemembers_eval.html", null ]
+        [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -20,7 +18,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
@@ -43,8 +41,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_base_8cc.html",
-"class_chimera_t_k_1_1_process_variable_listener.html#aa593b6da75f0147ca9665881fa679de3",
-"struct_threaded_pv_manager_holder.html#aa53794785d84432b520e5e99f4a23fc9"
+"class_chimera_t_k_1_1_unidirectional_process_array.html#ac84a21060c27414031aed5d3b71384fe",
+"test_persistent_data_storage_8cpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

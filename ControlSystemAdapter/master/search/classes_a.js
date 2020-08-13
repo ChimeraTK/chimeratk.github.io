@@ -3,7 +3,6 @@ var searchData=
   ['testapplicationfixture',['TestApplicationFixture',['../struct_test_application_fixture.html',1,'']]],
   ['testdevicecallable',['TestDeviceCallable',['../struct_test_device_callable.html',1,'']]],
   ['testdevicecallable2',['TestDeviceCallable2',['../struct_test_device_callable2.html',1,'']]],
-  ['testdevicecallable3',['TestDeviceCallable3',['../struct_test_device_callable3.html',1,'']]],
   ['testdevicecallable4',['TestDeviceCallable4',['../struct_test_device_callable4.html',1,'']]],
   ['testdevicecallable5',['TestDeviceCallable5',['../struct_test_device_callable5.html',1,'']]],
   ['threadedpvmanagerholder',['ThreadedPvManagerHolder',['../struct_threaded_pv_manager_holder.html',1,'']]],

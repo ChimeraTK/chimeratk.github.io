@@ -20,7 +20,6 @@ var annotated_dup =
     [ "TestApplicationFixture", "struct_test_application_fixture.html", "struct_test_application_fixture" ],
     [ "TestDeviceCallable", "struct_test_device_callable.html", "struct_test_device_callable" ],
     [ "TestDeviceCallable2", "struct_test_device_callable2.html", "struct_test_device_callable2" ],
-    [ "TestDeviceCallable3", "struct_test_device_callable3.html", "struct_test_device_callable3" ],
     [ "TestDeviceCallable4", "struct_test_device_callable4.html", "struct_test_device_callable4" ],
     [ "TestDeviceCallable5", "struct_test_device_callable5.html", "struct_test_device_callable5" ],
     [ "ThreadedPvManagerHolder", "struct_threaded_pv_manager_holder.html", "struct_threaded_pv_manager_holder" ],

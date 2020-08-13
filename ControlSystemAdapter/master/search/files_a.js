@@ -2,8 +2,6 @@ var searchData=
 [
   ['testasyncread_2ecpp',['testAsyncRead.cpp',['../test_async_read_8cpp.html',1,'']]],
   ['testbidirectionalprocessarray_2ecpp',['testBidirectionalProcessArray.cpp',['../test_bidirectional_process_array_8cpp.html',1,'']]],
-  ['testcontrolsystemsynchronizationutility_2ecpp',['testControlSystemSynchronizationUtility.cpp',['../test_control_system_synchronization_utility_8cpp.html',1,'']]],
-  ['testdevicesynchronizationutility_2ecpp',['testDeviceSynchronizationUtility.cpp',['../test_device_synchronization_utility_8cpp.html',1,'']]],
   ['testindependentcontrolcore_2ecpp',['testIndependentControlCore.cpp',['../test_independent_control_core_8cpp.html',1,'']]],
   ['testperformance_2ecpp',['testPerformance.cpp',['../test_performance_8cpp.html',1,'']]],
   ['testpersistentdatastorage_2ecpp',['testPersistentDataStorage.cpp',['../test_persistent_data_storage_8cpp.html',1,'']]],

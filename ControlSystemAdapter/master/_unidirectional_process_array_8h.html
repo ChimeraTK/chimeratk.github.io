@@ -99,13 +99,12 @@ $(document).ready(function(){initNavTree('_unidirectional_process_array_8h.html'
 <code>#include &lt;ChimeraTK/VersionNumber.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_process_array_8h_source.html">ProcessArray.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_process_variable_listener_8h_source.html">ProcessVariableListener.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for UnidirectionalProcessArray.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_unidirectional_process_array_8h__incl.svg" width="100%" height="585"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_unidirectional_process_array_8h__incl.svg" width="100%" height="529"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -135,14 +134,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a3b513f257155d9245ebed197db95a8fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a3b513f257155d9245ebed197db95a8fc">ChimeraTK::setEnableProcessArrayThreadSafetyCheck</a> (bool enable)</td></tr>
 <tr class="memdesc:a3b513f257155d9245ebed197db95a8fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Globally enable or disable the thread safety check on each read/write.  <a href="namespace_chimera_t_k.html#a3b513f257155d9245ebed197db95a8fc">More...</a><br /></td></tr>
 <tr class="separator:a3b513f257155d9245ebed197db95a8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada6cf76a5328dcb667e8396c547e8006"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ada6cf76a5328dcb667e8396c547e8006"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename ProcessArray&lt; T &gt;::SharedPtr, typename ProcessArray&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ada6cf76a5328dcb667e8396c547e8006">ChimeraTK::createSynchronizedProcessArray</a> (std::size_t size, const ChimeraTK::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, T initialValue=T(), std::size_t numberOfBuffers=3, ProcessVariableListener::SharedPtr sendNotificationListener=ProcessVariableListener::SharedPtr(), const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
-<tr class="memdesc:ada6cf76a5328dcb667e8396c547e8006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a synchronized process array.  <a href="namespace_chimera_t_k.html#ada6cf76a5328dcb667e8396c547e8006">More...</a><br /></td></tr>
-<tr class="separator:ada6cf76a5328dcb667e8396c547e8006"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2bb422a71cdcc324a12fd92a83b7efb"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aa2bb422a71cdcc324a12fd92a83b7efb"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename ProcessArray&lt; T &gt;::SharedPtr, typename ProcessArray&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aa2bb422a71cdcc324a12fd92a83b7efb">ChimeraTK::createSynchronizedProcessArray</a> (const std::vector&lt; T &gt; &amp;initialValue, const ChimeraTK::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, std::size_t numberOfBuffers=3, ProcessVariableListener::SharedPtr sendNotificationListener=ProcessVariableListener::SharedPtr(), const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
-<tr class="memdesc:aa2bb422a71cdcc324a12fd92a83b7efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a synchronized process array.  <a href="namespace_chimera_t_k.html#aa2bb422a71cdcc324a12fd92a83b7efb">More...</a><br /></td></tr>
-<tr class="separator:aa2bb422a71cdcc324a12fd92a83b7efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4267298283650894fb5cd0a843d7504"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ac4267298283650894fb5cd0a843d7504"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename ProcessArray&lt; T &gt;::SharedPtr, typename ProcessArray&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ac4267298283650894fb5cd0a843d7504">ChimeraTK::createSynchronizedProcessArray</a> (std::size_t size, const ChimeraTK::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, T initialValue=T(), std::size_t numberOfBuffers=3, const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
+<tr class="memdesc:ac4267298283650894fb5cd0a843d7504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a synchronized process array.  <a href="namespace_chimera_t_k.html#ac4267298283650894fb5cd0a843d7504">More...</a><br /></td></tr>
+<tr class="separator:ac4267298283650894fb5cd0a843d7504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0615f64225f18201afa045e8eb0d7187"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a0615f64225f18201afa045e8eb0d7187"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename ProcessArray&lt; T &gt;::SharedPtr, typename ProcessArray&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a0615f64225f18201afa045e8eb0d7187">ChimeraTK::createSynchronizedProcessArray</a> (const std::vector&lt; T &gt; &amp;initialValue, const ChimeraTK::RegisterPath &amp;name=&quot;&quot;, const std::string &amp;unit=&quot;&quot;, const std::string &amp;description=&quot;&quot;, std::size_t numberOfBuffers=3, const AccessModeFlags &amp;flags={AccessMode::wait_for_new_data})</td></tr>
+<tr class="memdesc:a0615f64225f18201afa045e8eb0d7187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a synchronized process array.  <a href="namespace_chimera_t_k.html#a0615f64225f18201afa045e8eb0d7187">More...</a><br /></td></tr>
+<tr class="separator:a0615f64225f18201afa045e8eb0d7187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -150,7 +149,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_f49089301a003ac6c02552292645be83.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="dir_edc72502990ad2b12fcd3ee6c424d5ed.html">ControlSystemAdapter</a></li><li class="navelem"><a class="el" href="_unidirectional_process_array_8h.html">UnidirectionalProcessArray.h</a></li>
-    <li class="footer">Generated on Wed Aug 12 2020 03:54:28 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Thu Aug 13 2020 03:54:20 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

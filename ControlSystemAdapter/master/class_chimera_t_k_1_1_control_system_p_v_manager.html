@@ -114,9 +114,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6dd14be82a2308353dce28bc16488a0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; ProcessVariable::SharedPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html#ad6dd14be82a2308353dce28bc16488a0">getAllProcessVariables</a> () const</td></tr>
 <tr class="memdesc:ad6dd14be82a2308353dce28bc16488a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector containing all process variables that are registered with this PV manager.  <a href="#ad6dd14be82a2308353dce28bc16488a0">More...</a><br /></td></tr>
 <tr class="separator:ad6dd14be82a2308353dce28bc16488a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25ef5922529a3387842f7d51f8e32c8f"><td class="memItemLeft" align="right" valign="top">ProcessVariable::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html#a25ef5922529a3387842f7d51f8e32c8f">nextNotification</a> ()</td></tr>
-<tr class="memdesc:a25ef5922529a3387842f7d51f8e32c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next process variable with a pending notification or <code>null</code> if no notifications are pending.  <a href="#a25ef5922529a3387842f7d51f8e32c8f">More...</a><br /></td></tr>
-<tr class="separator:a25ef5922529a3387842f7d51f8e32c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9c27e3f64777255e4bbde1c32a4aa83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html#ad9c27e3f64777255e4bbde1c32a4aa83">enablePersistentDataStorage</a> (unsigned int writeInterval=<a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ada80e6d680be0364eb0c44ea15dc6240">PersistentDataStorage::DEFAULT_WRITE_INTERVAL</a>)</td></tr>
 <tr class="memdesc:ad9c27e3f64777255e4bbde1c32a4aa83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the persistent data storage system provided by the ControlSystemAdapter.  <a href="#ad9c27e3f64777255e4bbde1c32a4aa83">More...</a><br /></td></tr>
 <tr class="separator:ad9c27e3f64777255e4bbde1c32a4aa83"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,7 +178,7 @@ Friends</h2></td></tr>
 <p>Enable the persistent data storage system provided by the ControlSystemAdapter. </p>
 <p>This function requires an existing instance of an <a class="el" href="class_chimera_t_k_1_1_application_base.html" title="Base class for applications. ">ApplicationBase</a> class. You can specify the write interval in seconds. </p>
 
-<p class="definition">Definition at line <a class="el" href="_control_system_p_v_manager_8h_source.html#l00123">123</a> of file <a class="el" href="_control_system_p_v_manager_8h_source.html">ControlSystemPVManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_control_system_p_v_manager_8h_source.html#l00106">106</a> of file <a class="el" href="_control_system_p_v_manager_8h_source.html">ControlSystemPVManager.h</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -235,7 +232,7 @@ template&lt;class T &gt; </div>
 <p>Returns a reference to a process array that has been created earlier using the <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#acfb69a04b5bf5efe06fa4fff9dea411a" title="Creates a new process array and registers it with the PV manager. ">DevicePVManager::createProcessArray</a>(SynchronizationDirection, const ChimeraTK::RegisterPath&amp;, std::size_t, const std::string&amp;, const std::string&amp;, T, bool, std::size_t, const AccessModeFlags&amp;) or <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#acfb69a04b5bf5efe06fa4fff9dea411a" title="Creates a new process array and registers it with the PV manager. ">DevicePVManager::createProcessArray</a>(SynchronizationDirection, const ChimeraTK::RegisterPath&amp;, const std::vector&lt;T&gt;&amp;, const std::string&amp;, const std::string&amp;, bool, std::size_t, const AccessModeFlags&amp;) method. </p>
 <p>Returns a pointer to <code>null</code> if there is no process scalar or array with the specified name. Throws a bad_cast exception if there is a process scalar or array with the specified name but its type does not match. </p>
 
-<p class="definition">Definition at line <a class="el" href="_control_system_p_v_manager_8h_source.html#l00145">145</a> of file <a class="el" href="_control_system_p_v_manager_8h_source.html">ControlSystemPVManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_control_system_p_v_manager_8h_source.html#l00128">128</a> of file <a class="el" href="_control_system_p_v_manager_8h_source.html">ControlSystemPVManager.h</a>.</p>
 
 </div>
 </div>
@@ -259,29 +256,6 @@ template&lt;class T &gt; </div>
 <p>Returns a pointer to <code>null</code> if there is no process scalar or array with the specified name. The <code>getProcessScalar(const ChimeraTK::RegisterPath&amp;)</code> and <code>getProcessArray(const ChimeraTK::RegisterPath&amp;)</code> methods should be preferred if the type of the process variable is known at compile time. </p>
 
 <p class="definition">Definition at line <a class="el" href="_control_system_p_v_manager_8cc_source.html#l00007">7</a> of file <a class="el" href="_control_system_p_v_manager_8cc_source.html">ControlSystemPVManager.cc</a>.</p>
-
-</div>
-</div>
-<a id="a25ef5922529a3387842f7d51f8e32c8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25ef5922529a3387842f7d51f8e32c8f">&#9670;&nbsp;</a></span>nextNotification()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ProcessVariable::SharedPtr ChimeraTK::ControlSystemPVManager::nextNotification </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the next process variable with a pending notification or <code>null</code> if no notifications are pending. </p>
-<p>This method should be periodically called by the control system in order to find process variables that have updated by the device library and thus have new values available to the control system.</p>
-<p>Please note that for a single process variable, only one notification might be pending even if there are multiple updates available. Therefore, when processing a notification, you should try receiving new values for the process variable until no new values are available. On the other hand, it is also possible that a notification is pending even so there are no new values available. In this case, you should simply ignore the notification. </p>
-
-<p class="definition">Definition at line <a class="el" href="_control_system_p_v_manager_8cc_source.html#l00028">28</a> of file <a class="el" href="_control_system_p_v_manager_8cc_source.html">ControlSystemPVManager.cc</a>.</p>
 
 </div>
 </div>
@@ -326,7 +300,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html">ControlSystemPVManager</a></li>
-    <li class="footer">Generated on Wed Aug 12 2020 03:54:28 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Thu Aug 13 2020 03:54:20 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
