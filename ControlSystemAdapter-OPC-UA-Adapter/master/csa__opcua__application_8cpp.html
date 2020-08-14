@@ -94,8 +94,6 @@ $(document).ready(function(){initNavTree('csa__opcua__application_8cpp.html','')
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;atomic&gt;</code><br />
 <code>#include &quot;ChimeraTK/ControlSystemAdapter/ApplicationBase.h&quot;</code><br />
-<code>#include &quot;ChimeraTK/ControlSystemAdapter/ControlSystemSynchronizationUtility.h&quot;</code><br />
-<code>#include &quot;ChimeraTK/ControlSystemAdapter/DeviceSynchronizationUtility.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="csa__opcua__adapter_8h_source.html">csa_opcua_adapter.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for csa_opcua_application.cpp:</div>
@@ -119,10 +117,6 @@ Variables</h2></td></tr>
 <tr class="separator:add976e3e567316f346a38deea3691cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4533bd6f35aa290a844cfaddce04b5c6"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; DevicePVManager &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="csa__opcua__application_8cpp.html#a4533bd6f35aa290a844cfaddce04b5c6">devManager</a></td></tr>
 <tr class="separator:a4533bd6f35aa290a844cfaddce04b5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4aa8320a05748e2ba69e0b2767004bd"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ControlSystemSynchronizationUtility &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="csa__opcua__application_8cpp.html#ab4aa8320a05748e2ba69e0b2767004bd">syncCsUtility</a></td></tr>
-<tr class="separator:ab4aa8320a05748e2ba69e0b2767004bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a118aa0db4af3e8babc471733c78a5877"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; DeviceSynchronizationUtility &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="csa__opcua__application_8cpp.html#a118aa0db4af3e8babc471733c78a5877">syncDevUtility</a></td></tr>
-<tr class="separator:a118aa0db4af3e8babc471733c78a5877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72b1f6c9fc2a291738ed08fec69bfe89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcsa__opcua__adapter.html">csa_opcua_adapter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="csa__opcua__application_8cpp.html#a72b1f6c9fc2a291738ed08fec69bfe89">csaOPCUA</a></td></tr>
 <tr class="separator:a72b1f6c9fc2a291738ed08fec69bfe89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e10915bc877b4286993ac2f4f5c09ed"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="csa__opcua__application_8cpp.html#a4e10915bc877b4286993ac2f4f5c09ed">terminateMain</a></td></tr>
@@ -144,7 +138,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="csa__opcua__application_8cpp_source.html#l00079">79</a> of file <a class="el" href="csa__opcua__application_8cpp_source.html">csa_opcua_application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="csa__opcua__application_8cpp_source.html#l00075">75</a> of file <a class="el" href="csa__opcua__application_8cpp_source.html">csa_opcua_application.cpp</a>.</p>
 
 </div>
 </div>
@@ -161,7 +155,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="csa__opcua__application_8cpp_source.html#l00064">64</a> of file <a class="el" href="csa__opcua__application_8cpp_source.html">csa_opcua_application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="csa__opcua__application_8cpp_source.html#l00060">60</a> of file <a class="el" href="csa__opcua__application_8cpp_source.html">csa_opcua_application.cpp</a>.</p>
 
 </div>
 </div>
@@ -177,7 +171,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="csa__opcua__application_8cpp_source.html#l00060">60</a> of file <a class="el" href="csa__opcua__application_8cpp_source.html">csa_opcua_application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="csa__opcua__application_8cpp_source.html#l00058">58</a> of file <a class="el" href="csa__opcua__application_8cpp_source.html">csa_opcua_application.cpp</a>.</p>
 
 </div>
 </div>
@@ -193,39 +187,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="csa__opcua__application_8cpp_source.html#l00061">61</a> of file <a class="el" href="csa__opcua__application_8cpp_source.html">csa_opcua_application.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ab4aa8320a05748e2ba69e0b2767004bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4aa8320a05748e2ba69e0b2767004bd">&#9670;&nbsp;</a></span>syncCsUtility</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;ControlSystemSynchronizationUtility&gt; syncCsUtility</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="csa__opcua__application_8cpp_source.html#l00062">62</a> of file <a class="el" href="csa__opcua__application_8cpp_source.html">csa_opcua_application.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a118aa0db4af3e8babc471733c78a5877"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a118aa0db4af3e8babc471733c78a5877">&#9670;&nbsp;</a></span>syncDevUtility</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;DeviceSynchronizationUtility&gt; syncDevUtility</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="csa__opcua__application_8cpp_source.html#l00063">63</a> of file <a class="el" href="csa__opcua__application_8cpp_source.html">csa_opcua_application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="csa__opcua__application_8cpp_source.html#l00059">59</a> of file <a class="el" href="csa__opcua__application_8cpp_source.html">csa_opcua_application.cpp</a>.</p>
 
 </div>
 </div>
@@ -241,7 +203,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="csa__opcua__application_8cpp_source.html#l00066">66</a> of file <a class="el" href="csa__opcua__application_8cpp_source.html">csa_opcua_application.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="csa__opcua__application_8cpp_source.html#l00062">62</a> of file <a class="el" href="csa__opcua__application_8cpp_source.html">csa_opcua_application.cpp</a>.</p>
 
 </div>
 </div>
@@ -251,7 +213,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="csa__opcua__application_8cpp.html">csa_opcua_application.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 12 2020 03:57:37 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <li class="footer">Generated on Fri Aug 14 2020 03:56:57 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
