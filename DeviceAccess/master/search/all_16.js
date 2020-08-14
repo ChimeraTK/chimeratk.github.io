@@ -2,6 +2,7 @@ var searchData=
 [
   ['wait_5ffor_5fnew_5fdata',['wait_for_new_data',['../namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031',1,'ChimeraTK']]],
   ['waitany',['waitAny',['../class_chimera_t_k_1_1_read_any_group.html#a0616097393d6007d2b865c2fb3362bb6',1,'ChimeraTK::ReadAnyGroup']]],
+  ['waitanynonblocking',['waitAnyNonBlocking',['../class_chimera_t_k_1_1_read_any_group.html#ae58487570b91913f2ce2c386b1aae0e3',1,'ChimeraTK::ReadAnyGroup']]],
   ['waitforclienttestablemode',['waitForClientTestableMode',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html#a3d0fecb4548da6114103aed41acd5331',1,'ChimeraTK::testable_rebot_sleep']]],
   ['wake_5fup_5fapplication',['wake_up_application',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html#a6901c950b4203167e804d151547676cf',1,'ChimeraTK::testable_rebot_sleep']]],
   ['warning',['WARNING',['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a080160a160085512f08190b4a10bcd1ca5ad6b78774879a01d465f58dba1a9b54',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem::WARNING()'],['../class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#a6941f15363da9fe7de57f85eddfdfd13a836a1960540831cdfa40961450d1e9cc',1,'ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem::WARNING()']]],

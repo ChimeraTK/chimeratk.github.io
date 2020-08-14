@@ -2,6 +2,7 @@ var class_chimera_t_k_1_1_transfer_element_i_d =
 [
     [ "TransferElementID", "class_chimera_t_k_1_1_transfer_element_i_d.html#ac0e4650496d54f44a46fdc86e1a64ac7", null ],
     [ "TransferElementID", "class_chimera_t_k_1_1_transfer_element_i_d.html#a6d3b09031ef666b7292ed62b57118e1c", null ],
+    [ "isValid", "class_chimera_t_k_1_1_transfer_element_i_d.html#ae6ace4d71ed462b6a725a212f66e2724", null ],
     [ "makeUnique", "class_chimera_t_k_1_1_transfer_element_i_d.html#a4e05a5e6399b1ceb383085b185cb3a5b", null ],
     [ "operator!=", "class_chimera_t_k_1_1_transfer_element_i_d.html#a490de6204e6693e6f4aa40deb6de1c37", null ],
     [ "operator=", "class_chimera_t_k_1_1_transfer_element_i_d.html#a6fcfb263e8a747a9127089f5703b8f05", null ],
