@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['d9initialvalueeceptiondummy',['D9InitialValueEceptionDummy',['../struct_d9_initial_value_eception_dummy.html',1,'']]],
   ['datalosscounter',['DataLossCounter',['../struct_chimera_t_k_1_1_data_loss_counter.html',1,'ChimeraTK']]],
   ['debugprintaccessordecorator',['DebugPrintAccessorDecorator',['../class_chimera_t_k_1_1_debug_print_accessor_decorator.html',1,'ChimeraTK']]],
   ['deeper',['Deeper',['../struct_deeper.html',1,'']]],
