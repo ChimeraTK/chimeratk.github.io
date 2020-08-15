@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['decoratorbackend',['DecoratorBackend',['../class_decorator_backend.html#a5d465031ae7122d405821d46c6079ccf',1,'DecoratorBackend']]],
   ['decoratorfactory',['DecoratorFactory',['../class_chimera_t_k_1_1_decorator_factory.html#ac90b8c95b0270a2b8d6c501752d99b0d',1,'ChimeraTK::DecoratorFactory::DecoratorFactory(boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; theImpl_, DecoratorType wantedDecoratorType_)'],['../class_chimera_t_k_1_1_decorator_factory.html#ad0d0f1685aa2940efb98c10a9ab0c486',1,'ChimeraTK::DecoratorFactory::DecoratorFactory(const DecoratorFactory &amp;)=delete']]],
   ['define_5fvirtual_5ffunction_5ftemplate_5fvtable_5ffiller',['DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER',['../struct_process_array_factory_backend.html#a6b6575befe721b7e5e79d62545d84257',1,'ProcessArrayFactoryBackend']]],
   ['dopostread',['doPostRead',['../class_chimera_t_k_1_1_bidirectional_process_array.html#ac32a7a74262a70bd0dfe88401e2f6209',1,'ChimeraTK::BidirectionalProcessArray::doPostRead()'],['../class_chimera_t_k_1_1_type_changing_decorator.html#ad3f6ed0a3b4870e1a32a03da550ac96b',1,'ChimeraTK::TypeChangingDecorator::doPostRead()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a5793b57ee2a16dbfafcb8f0b28519561',1,'ChimeraTK::UnidirectionalProcessArray::doPostRead()']]],

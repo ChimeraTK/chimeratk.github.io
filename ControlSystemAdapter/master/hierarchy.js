@@ -10,6 +10,7 @@ var hierarchy =
     ] ],
     [ "AsyncReadTest", "class_async_read_test.html", null ],
     [ "ProcessArrayFactoryBackend::BackendRegisterer", "class_process_array_factory_backend_1_1_backend_registerer.html", null ],
+    [ "DecoratorBackend::BackendRegisterer", "class_decorator_backend_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::ControlSystemPVManager", "class_chimera_t_k_1_1_control_system_p_v_manager.html", null ],
     [ "ChimeraTK::DecoratorFactory< UserType >", "class_chimera_t_k_1_1_decorator_factory.html", null ],
     [ "ChimeraTK::DecoratorTypeHolder", "class_chimera_t_k_1_1_decorator_type_holder.html", [
@@ -38,6 +39,9 @@ var hierarchy =
     [ "ChimeraTK::DevicePVManager", "class_chimera_t_k_1_1_device_p_v_manager.html", null ],
     [ "enable_shared_from_this", null, [
       [ "ChimeraTK::PVManager", "class_chimera_t_k_1_1_p_v_manager.html", null ]
+    ] ],
+    [ "ExceptionDummy", null, [
+      [ "DecoratorBackend", "class_decorator_backend.html", null ]
     ] ],
     [ "Hardware", "class_hardware.html", null ],
     [ "IndependentControlCore", "class_independent_control_core.html", null ],
@@ -84,6 +88,15 @@ var hierarchy =
     [ "TestDeviceCallable2", "struct_test_device_callable2.html", null ],
     [ "TestDeviceCallable4", "struct_test_device_callable4.html", null ],
     [ "TestDeviceCallable5", "struct_test_device_callable5.html", null ],
+    [ "TestRegister< T >", "struct_test_register.html", [
+      [ "TestRegisterCasted< T >", "struct_test_register_casted.html", null ],
+      [ "TestRegisterCastedAsync< T >", "struct_test_register_casted_async.html", [
+        [ "TestRegisterCastedAsyncRo< T >", "struct_test_register_casted_async_ro.html", null ]
+      ] ],
+      [ "TestRegisterRangeChecked< T >", "struct_test_register_range_checked.html", null ],
+      [ "TestRegisterRoCasted< T >", "struct_test_register_ro_casted.html", null ],
+      [ "TestRegisterRoRangeChecked< T >", "struct_test_register_ro_range_checked.html", null ]
+    ] ],
     [ "ThreadedPvManagerHolder< CALLABLE >", "struct_threaded_pv_manager_holder.html", null ],
     [ "TimeStampSource", null, [
       [ "ChimeraTK::ManualTimeStampSource", "class_chimera_t_k_1_1_manual_time_stamp_source.html", null ]

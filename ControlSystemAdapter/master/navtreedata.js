@@ -18,7 +18,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
@@ -42,7 +42,7 @@ var NAVTREEINDEX =
 [
 "_application_base_8cc.html",
 "class_chimera_t_k_1_1_unidirectional_process_array.html#ac84a21060c27414031aed5d3b71384fe",
-"test_persistent_data_storage_8cpp_source.html"
+"struct_unidir_polled_sender.html#af4125b01251342a60c289bf4a9a120c5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
