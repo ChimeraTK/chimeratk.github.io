@@ -163,6 +163,7 @@ $(document).ready(function(){initNavTree('functions_vars_t.html','');});
 , <a class="el" href="struct_poll_process_array_type_initial_value_eception_dummy.html#aca88d455df1d088d0e0c9bc322a2b730">PollProcessArrayTypeInitialValueEceptionDummy</a>
 , <a class="el" href="struct_poll_type_initial_value_eception_dummy.html#acd7eaac96088b8e317abfc333f8ad4ad">PollTypeInitialValueEceptionDummy</a>
 , <a class="el" href="struct_push_type_initial_value_eception_dummy.html#a444a83767cfb54f5d2a12854fc5cbe47">PushTypeInitialValueEceptionDummy</a>
+, <a class="el" href="struct_trigger_fan_out_initial_value_eception_dummy.html#abdd40c4feff4dcd34d1665ef86d49e68">TriggerFanOutInitialValueEceptionDummy</a>
 </li>
 <li>TestModule
 : <a class="el" href="struct_first_hierarchy.html#a7e2a9cde15418b9a397df6e5ac5d54de">FirstHierarchy</a>
@@ -204,13 +205,14 @@ $(document).ready(function(){initNavTree('functions_vars_t.html','');});
 , <a class="el" href="struct_second_hierarchy_1_1_second_module.html#abfc931868462d80f5509e282310d8427">SecondHierarchy::SecondModule</a>
 , <a class="el" href="struct_second_hierarchy_1_1_test_module_1_1_eliminated_group.html#a441c6b5c63c4088c35a56ac29ae315c1">SecondHierarchy::TestModule::EliminatedGroup</a>
 , <a class="el" href="struct_second_hierarchy_1_1_test_module.html#a46547036a7904ca8fa072a3ea5754940">SecondHierarchy::TestModule</a>
-, <a class="el" href="struct_second_hierarchy.html#ab8dd96f49e5b1899df601427a400d69f">SecondHierarchy</a>
+, <a class="el" href="struct_second_hierarchy.html#a1a69581b29806e94bc826944b3da056c">SecondHierarchy</a>
 , <a class="el" href="struct_test_app_1_1_a.html#afece241becd6e3a208d169b75810be4e">TestApp::A</a>
 , <a class="el" href="struct_test_app_1_1_b.html#ab3c6f25c4a3a197607ae17b0f1ea8c27">TestApp::B</a>
-, <a class="el" href="struct_test_app.html#a5ee59a5b16c1d1d7bc91d24f370e2628">TestApp</a>
+, <a class="el" href="struct_test_app.html#a0b90aba2c21cfff85b9010b922691145">TestApp</a>
 , <a class="el" href="struct_test_application.html#a122ec197cc44ff14bb66d32c1f36ce09">TestApplication&lt; T &gt;</a>
 , <a class="el" href="struct_test_module_1_1_module1.html#a989db0f6ad7a3d3f9f3b92982d430f51">TestModule&lt; T &gt;::Module1</a>
 , <a class="el" href="struct_test_module.html#afd7da82c062b77958ba31edcaee97b05">TestModule&lt; T &gt;</a>
+, <a class="el" href="struct_trigger_module.html#a36607fe654c27de9efac9b34972f89da">TriggerModule</a>
 , <a class="el" href="struct_vector_module.html#a706209cbacc50c3ac6656fc1db9fe7ea">VectorModule</a>
 </li>
 <li>tick
@@ -229,6 +231,9 @@ $(document).ready(function(){initNavTree('functions_vars_t.html','');});
 <li>transferGroup
 : <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html#a8fd27fe8155aa8aceef11582611ce37b">ChimeraTK::TriggerFanOut</a>
 </li>
+<li>TRIG1
+: <a class="el" href="struct_trigger_module.html#af623f212acd70145952c9692fa714497">TriggerModule</a>
+</li>
 <li>trigger
 : <a class="el" href="struct_automation.html#adc175eb9561ef659f570a65ae1ac97cc">Automation</a>
 , <a class="el" href="struct_chimera_t_k_1_1_data_loss_counter.html#acc87a013c2673d9f0d39b026fc43f73c">ChimeraTK::DataLossCounter&lt; TRIGGERTYPE &gt;</a>
@@ -238,9 +243,13 @@ $(document).ready(function(){initNavTree('functions_vars_t.html','');});
 , <a class="el" href="struct_test_application.html#af8c9e545fff0f2f90d3048ce02edbb64">TestApplication&lt; T &gt;</a>
 , <a class="el" href="struct_test_application_connect_to.html#aa906bbac09fb81760b5bc32d8228fc06">TestApplicationConnectTo</a>
 , <a class="el" href="struct_test_module.html#adcbb555daad6d992b6ecc93bd85a38d6">TestModule&lt; T &gt;</a>
+, <a class="el" href="struct_trigger_module.html#afd28da0151cbea672095c0818dd1e36f">TriggerModule</a>
 </li>
 <li>triggerMap
 : <a class="el" href="class_chimera_t_k_1_1_application.html#a5a3ff9e91313b472c8780f8bee67204f">ChimeraTK::Application</a>
+</li>
+<li>triggerModule
+: <a class="el" href="struct_trigger_fan_out_d9_dummy_application.html#ab6d8e6642716b1019dbc459efab0d731">TriggerFanOutD9DummyApplication</a>
 </li>
 <li>triggersWithDataLoss
 : <a class="el" href="struct_chimera_t_k_1_1_data_loss_counter.html#a90a7e36a4ffd2c73a6b7c4f7bbd11025">ChimeraTK::DataLossCounter&lt; TRIGGERTYPE &gt;</a>
@@ -259,7 +268,7 @@ $(document).ready(function(){initNavTree('functions_vars_t.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Aug 15 2020 03:53:57 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Aug 18 2020 03:54:38 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

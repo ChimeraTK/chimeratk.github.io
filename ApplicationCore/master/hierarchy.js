@@ -61,6 +61,7 @@ var hierarchy =
         [ "TestApplicationNoConfigs", "struct_test_application_no_configs.html", null ],
         [ "TestApplicationTwoConfigs", "struct_test_application_two_configs.html", null ],
         [ "TestApplicationWithDevice", "struct_test_application_with_device.html", null ],
+        [ "TriggerFanOutD9DummyApplication", "struct_trigger_fan_out_d9_dummy_application.html", null ],
         [ "VectorOfEverythingApp", "struct_vector_of_everything_app.html", null ],
         [ "VectorOfModulesApp", "struct_vector_of_modules_app.html", null ]
       ] ]
@@ -135,6 +136,7 @@ var hierarchy =
             [ "ChimeraTK::WriteBitMask< NBITS >", "struct_chimera_t_k_1_1_write_bit_mask.html", null ],
             [ "ChimeraTK::WriteSplitArrayModule< TYPE >", "struct_chimera_t_k_1_1_write_split_array_module.html", null ],
             [ "ConstantPollModule", "struct_constant_poll_module.html", null ],
+            [ "ConstantPushModule", "struct_constant_push_module.html", null ],
             [ "ChimeraTK::ConstMultiplier< double >", "struct_chimera_t_k_1_1_const_multiplier.html", null ],
             [ "ChimeraTK::ConstMultiplier< uint16_t, uint16_t, 120 >", "struct_chimera_t_k_1_1_const_multiplier.html", null ],
             [ "Controller", "struct_controller.html", null ],
@@ -192,6 +194,7 @@ var hierarchy =
             [ "TestModule2< T >", "struct_test_module2.html", null ],
             [ "TestModule2< T >", "struct_test_module2.html", null ],
             [ "TestModule3", "struct_test_module3.html", null ],
+            [ "TriggerModule", "struct_trigger_module.html", null ],
             [ "UpdateModule", "struct_update_module.html", null ],
             [ "VectorModule", "struct_vector_module.html", null ]
           ] ],
@@ -494,6 +497,7 @@ var hierarchy =
     [ "TestFixture", "struct_test_fixture.html", null ],
     [ "ChimeraTK::Application::TestsStalled", "class_chimera_t_k_1_1_application_1_1_tests_stalled.html", null ],
     [ "ChimeraTK::Profiler::ThreadData", "class_chimera_t_k_1_1_profiler_1_1_thread_data.html", null ],
+    [ "TriggerFanOutInitialValueEceptionDummy", "struct_trigger_fan_out_initial_value_eception_dummy.html", null ],
     [ "ChimeraTK::Application::TypedMakeConnectionCaller", "struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html", null ],
     [ "ChimeraTK::history::Update", "struct_chimera_t_k_1_1history_1_1_update.html", null ],
     [ "ChimeraTK::ConfigReader::Var< T >", "struct_chimera_t_k_1_1_config_reader_1_1_var.html", null ],

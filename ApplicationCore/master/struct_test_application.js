@@ -78,6 +78,7 @@ var struct_test_application =
     [ "outerModuleGroup1", "struct_test_application.html#a1f214a63458d120771ad5eec962e4a83", null ],
     [ "read", "struct_test_application.html#a63d449ac723dd45eddb1cd9f2b0ed37c", null ],
     [ "readAnyTestModule", "struct_test_application.html#a9dfaf65bea020737a7f894c264775bd6", null ],
+    [ "readDataValidity", "struct_test_application.html#a45e38aff8a468c3ae97d3b5a1ca6b2b4", null ],
     [ "readMode", "struct_test_application.html#a53621860c4e5a0cde8e045c90207c89f", null ],
     [ "second", "struct_test_application.html#abbdf39f6c5231705ebb7c2c8db984c11", null ],
     [ "set", "struct_test_application.html#abb684a5a5625dd3c24ae7807ba2a57ee", null ],

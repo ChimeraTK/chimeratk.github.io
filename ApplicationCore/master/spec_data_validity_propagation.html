@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <li><a class="anchor" id="dataValidity_2_4_4"></a>2.4.4 Although the trigger conceptually has data type 'void', it can also be <code>faulty</code> <a class="el" href="spec_data_validity_propagation.html#dataValidity_comment_2_4_4">(*)</a>. An invalid trigger is processed, but all read out data is flagged as <code>faulty</code>.</li>
 </ul>
 <h3>2.5 Interaction with exception handling</h3>
-<p>See <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.0RC1WIP</a>.</p>
+<p>See <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.0RC2WIP</a>.</p>
 <ul>
 <li>2.5.1 The <a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html" title="NDRegisterAccessorDecorator which propagates meta data attached to input process variables through th...">MetaDataPropagatingRegisterDecorator</a> is always placed <em>around</em> the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> if both decorators are used on a process variable. Like this a <code>faulty</code> flag raised by the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> is automatically picked up by the <a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html" title="NDRegisterAccessorDecorator which propagates meta data attached to input process variables through th...">MetaDataPropagatingRegisterDecorator</a>.</li>
 <li>2.5.2 The first failing read returns with the old data and the 'faulty' flag. Like this the flag is propagated to the outputs. Only further reads might freeze until the device is available again.</li>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Sat Aug 15 2020 03:53:53 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Aug 18 2020 03:54:36 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

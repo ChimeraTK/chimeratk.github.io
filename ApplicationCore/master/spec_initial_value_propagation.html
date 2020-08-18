@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>The control system does not wait for "initial values" as such. The first value of a process variable is sent to the control system when available. This may depend even on external conditions like the availability of devices, e.g. the control system interface has to run even if devices are not available and hence cannot send an inital value.</li>
 <li>The first value received by the control system can be an initial value. This is different to ApplicationModules, where an initial value is never seen as a new value that can be read because they are always already there and received when the main loop starts.</li>
 <li>Control system variables show the <code>DataValidity::faulty</code> flag until they have received the first valid value.</li>
-<li>For push-type variables from devices, the initial is automatically send by the backend. The framework can just wait for a value to arrive. 9.1 According to the TransferElement specification, also after recovery from an exception the current value is send again. No special action needed by AplicationCore (c.f. <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.0RC1WIP</a>).</li>
+<li>For push-type variables from devices, the initial is automatically send by the backend. The framework can just wait for a value to arrive. 9.1 According to the TransferElement specification, also after recovery from an exception the current value is send again. No special action needed by AplicationCore (c.f. <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.0RC2WIP</a>).</li>
 </ol>
 <h3>(*) Comments</h3>
 <ul>
@@ -220,9 +220,9 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 </li>
 </ul>
 <h3><a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a></h3>
-<p>All points are already covered by <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.0RC1WIP</a>.</p>
+<p>All points are already covered by <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.0RC2WIP</a>.</p>
 <h3><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a></h3>
-<p>All points are already covered by <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.0RC1WIP</a>.</p>
+<p>All points are already covered by <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.0RC2WIP</a>.</p>
 <h3><a class="el" href="class_chimera_t_k_1_1_application.html">Application</a></h3>
 <p>(This section refers to the class <code><a class="el" href="class_chimera_t_k_1_1_application.html">Application</a></code>, not to the user-defined application.)</p>
 <ul>
@@ -275,13 +275,13 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>It currently implements its own exception handling (including the <code>Device::isOpened()</code> check), but in a wrong way. After the <code>NDRegisterAccessor</code> has been fixed, this needs to be removed.</li>
 </ul>
 <h3><a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a></h3>
-<p>Probably all points are duplicates with <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.0RC1WIP</a>.</p>
+<p>Probably all points are duplicates with <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.0RC2WIP</a>.</p>
 <ul>
 <li>Merge <code>DeviceModule::writeAfterOpen/writeRecoveryOpen</code> lists.</li>
 <li>Implement mechanism to block read/write operations in other threads until after the initialsation is done.</li>
 </ul>
 <h3><a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a></h3>
-<p>Some points are duplicates with <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.0RC1WIP</a>.</p>
+<p>Some points are duplicates with <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.0RC2WIP</a>.</p>
 <ul>
 <li>It waits until the device is opened, but not until after the initialisation is done.</li>
 <li>Provide non-blocking function.</li>
@@ -317,7 +317,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Sat Aug 15 2020 03:53:53 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Aug 18 2020 03:54:36 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

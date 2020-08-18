@@ -15,7 +15,7 @@ var NAVTREE =
       [ "Example usage", "configreader.html#usage", null ],
       [ "XML file structure", "configreader.html#xmlstructure", null ]
     ] ],
-    [ "Technical specification: Exception handling for device runtime errors V1.0RC1WIP", "spec_execption_handling.html", [
+    [ "Technical specification: Exception handling for device runtime errors V1.0RC2WIP", "spec_execption_handling.html", [
       [ "A. Introduction", "spec_execption_handling.html#spec_execptionHandling_intro", [
         [ "A.9 Special terminology used in this document", "spec_execption_handling.html#spec_exceptionHandling_intro_terminology", null ],
         [ "(*) Comments", "spec_execption_handling.html#spec_exceptionHandling_intro_comments", null ]
@@ -103,10 +103,10 @@ var NAVTREEINDEX =
 "dir_68267d1309a1af8e8297ef4c3efbcdba.html",
 "struct_chimera_t_k_1_1_config_reader.html#a790086daccf009a91f4cd3fc675bc1f9",
 "struct_chimera_t_k_1_1history_1_1_server_history.html#a757244b6a6e6e8eb984c607942d728bd",
-"struct_poll_dummy_application.html#a7e163aa278e051809b1e7a722adf8e71",
+"struct_output_module.html#a761cbaedcf707c7ab3d37ba6c071e1d7",
 "struct_test_application.html#a4702932ffea66d2abc6e24d388961cf7",
-"struct_test_module3.html",
-"test_initial_value_spec_d8_8cc_source.html"
+"struct_test_module2.html#a6bea7575ddab25afcb8720b601a2e824",
+"test_history_8cc.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
