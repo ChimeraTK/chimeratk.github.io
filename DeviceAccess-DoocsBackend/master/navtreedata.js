@@ -4,10 +4,12 @@ var NAVTREE =
     [ "Features", "index.html#Features", [
       [ "Data meta information", "index.html#meta_information", null ]
     ] ],
+    [ "Specifications", "index.html#Technical", null ],
     [ "CacheFile Mechanism", "cache_file.html", null ],
     [ "Supported Data Types", "supported_types.html", [
       [ "IFFF", "supported_types.html#ifff", null ]
     ] ],
+    [ "Technical specification: DeviceAccess DoocsBackend V0.0WIP", "spec__doocs_backend.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -45,7 +47,7 @@ var NAVTREEINDEX =
 [
 "_catalogue_cache_8cc.html",
 "classeq__dummy.html#af9681a7ba9f87b95bc9b5f68f037b438",
-"test_doocs_backend_8cpp.html#acd18d6d870bfedc07825bc0238fa2ddf"
+"test_doocs_backend_8cpp.html#abac8006c8d9bd2da40a7d7c48238f48b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
