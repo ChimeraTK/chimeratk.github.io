@@ -5,7 +5,7 @@ var searchData=
   ['onelevelup',['oneLevelUp',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#ab6b095adad481b54de11afaa5e5983f6',1,'FirstHierarchy::TestModule::VarGroup::oneLevelUp()'],['../struct_module2.html#a717c09eeb22fa826549b862ff10b24d2',1,'Module2::oneLevelUp()']]],
   ['oneup',['oneUp',['../struct_chimera_t_k_1_1_status_monitor_impl.html#a83b0f930b4045a20fffb2bdeef97ec9a',1,'ChimeraTK::StatusMonitorImpl']]],
   ['oneupandhide',['oneUpAndHide',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#a25de03ce90fdde2e8c10ce1e97746511',1,'FirstHierarchy::TestModule::VarGroup']]],
-  ['opsp',['opSp',['../struct_automation.html#a6d28e80b6662b738458f8753adc2f837',1,'Automation::opSp()'],['../struct_automation.html#a4a08a0e51d5adb3d163709212eff7ecb',1,'Automation::opSP()']]],
+  ['opsp',['opSP',['../struct_automation.html#a4a08a0e51d5adb3d163709212eff7ecb',1,'Automation::opSP()'],['../struct_automation.html#a6d28e80b6662b738458f8753adc2f837',1,'Automation::opSp()']]],
   ['out',['out',['../struct_test_app_1_1_b.html#a70abed79933da0b6c2dc338135b17881',1,'TestApp::B::out()'],['../struct_dummy.html#a16e64e8a65ca0908f8ff296f4386df7c',1,'Dummy::out()'],['../struct_dummy_array.html#ad06e2636b7ff81c58daf79cc7728c929',1,'DummyArray::out()']]],
   ['outermodule',['outerModule',['../struct_outer_group.html#afa0c77076bc4c5f3fc097390f83ad182',1,'OuterGroup::outerModule()'],['../struct_test_application.html#a6134424cd8d8ac69d998a17687c9c400',1,'TestApplication::outerModule()']]],
   ['outermodulegroup1',['outerModuleGroup1',['../struct_test_application.html#a1f214a63458d120771ad5eec962e4a83',1,'TestApplication']]],

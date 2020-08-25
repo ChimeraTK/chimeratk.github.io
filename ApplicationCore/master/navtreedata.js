@@ -106,7 +106,7 @@ var NAVTREEINDEX =
 "struct_output_module.html#a761cbaedcf707c7ab3d37ba6c071e1d7",
 "struct_test_application.html#a4702932ffea66d2abc6e24d388961cf7",
 "struct_test_module2.html#a6bea7575ddab25afcb8720b601a2e824",
-"test_history_8cc.html"
+"test_hide_this_8cc.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

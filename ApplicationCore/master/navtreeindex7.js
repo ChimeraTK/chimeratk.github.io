@@ -14,8 +14,8 @@ var NAVTREEINDEX7 =
 "struct_poll_input_module.html#a5b8fca11beaffc73f3bf23ffd2030a06":[16,0,35,0],
 "struct_poll_input_module.html#ac1a66eb306540f1ffcab64b1fdb2c6fb":[16,0,35,2],
 "struct_poll_module.html":[16,0,36],
-"struct_poll_module.html#a8d1a0bd3b1e8f28323c3294da3ad479d":[16,0,36,1],
 "struct_poll_module.html#a8d1a0bd3b1e8f28323c3294da3ad479d":[16,0,36,0],
+"struct_poll_module.html#a8d1a0bd3b1e8f28323c3294da3ad479d":[16,0,36,1],
 "struct_poll_module.html#aa1ccbaeb42291dd07e149a57e7daefa9":[16,0,36,3],
 "struct_poll_module.html#aecdada4bee89b3baa1f78b5f58de74ea":[16,0,36,2],
 "struct_poll_module.html#afd6643a14b6ab87e64793e139bcaf7b3":[16,0,36,4],
@@ -249,5 +249,5 @@ var NAVTREEINDEX7 =
 "struct_test_application.html#a39569e5f1b9e949cf786afefd5d4039b":[16,0,60,36],
 "struct_test_application.html#a44b2d8473b2ae49c6d0493089a02f2a8":[16,0,60,63],
 "struct_test_application.html#a45e38aff8a468c3ae97d3b5a1ca6b2b4":[16,0,60,78],
-"struct_test_application.html#a4702932ffea66d2abc6e24d388961cf7":[16,0,60,34]
+"struct_test_application.html#a4702932ffea66d2abc6e24d388961cf7":[16,0,60,16]
 };
