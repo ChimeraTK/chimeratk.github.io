@@ -1,6 +1,7 @@
 var NAVTREEINDEX1 =
 {
-"class_register_type_abstractor.html#af8f97fe27d17eb03a865d9105f8336b8":[2,0,31,6],
+"class_register_type_abstractor.html#ac7cec671b0756136f127f0fb66f055dd":[2,0,31,4],
+"class_register_type_abstractor.html#af8f97fe27d17eb03a865d9105f8336b8":[2,0,31,7],
 "class_register_type_abstractor_impl.html":[2,0,32],
 "class_register_type_abstractor_impl.html#a00c5106f3b7747a64430ce1ebf24e517":[2,0,32,13],
 "class_register_type_abstractor_impl.html#a017fd437d7613137527c5367ad8974ab":[2,0,32,4],
