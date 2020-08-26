@@ -16,6 +16,7 @@ var class_chimera_t_k_1_1_doocs_spectrum =
     [ "_eqFct", "class_chimera_t_k_1_1_doocs_spectrum.html#acd64ce3569a47f820e16182280812170", null ],
     [ "_incrementAccessor", "class_chimera_t_k_1_1_doocs_spectrum.html#a522689bb63253a3315193eac89a6f950", null ],
     [ "_macroPulseNumberSource", "class_chimera_t_k_1_1_doocs_spectrum.html#af3e583d4bd5f07dbec9385d70cb404b2", null ],
+    [ "_nDataLossWarnings", "class_chimera_t_k_1_1_doocs_spectrum.html#a005df2f18cb76f83817ded9e87d5a128", null ],
     [ "_processArray", "class_chimera_t_k_1_1_doocs_spectrum.html#a534524b0be3fdafc240d8629371933b3", null ],
     [ "_startAccessor", "class_chimera_t_k_1_1_doocs_spectrum.html#a1b0ff12ba9b213be7d02ab0964ac635d", null ],
     [ "modified", "class_chimera_t_k_1_1_doocs_spectrum.html#aa5d59a574c2a78d8ec5338f1febe67e0", null ],

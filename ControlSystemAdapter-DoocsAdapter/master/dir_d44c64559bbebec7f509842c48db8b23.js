@@ -23,9 +23,6 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "DoocsSpectrum.h", "_doocs_spectrum_8h.html", [
       [ "DoocsSpectrum", "class_chimera_t_k_1_1_doocs_spectrum.html", "class_chimera_t_k_1_1_doocs_spectrum" ]
     ] ],
-    [ "DoocsTransferElement.h", "_doocs_transfer_element_8h.html", [
-      [ "DoocsTransferElement", "class_chimera_t_k_1_1_doocs_transfer_element.html", "class_chimera_t_k_1_1_doocs_transfer_element" ]
-    ] ],
     [ "DoocsUpdater.h", "_doocs_updater_8h.html", [
       [ "DoocsUpdater", "class_chimera_t_k_1_1_doocs_updater.html", "class_chimera_t_k_1_1_doocs_updater" ]
     ] ],

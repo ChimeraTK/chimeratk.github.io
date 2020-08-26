@@ -49,8 +49,5 @@ var hierarchy =
       [ "ChimeraTK::SpectrumDescription", "struct_chimera_t_k_1_1_spectrum_description.html", null ],
       [ "ChimeraTK::XyDescription", "struct_chimera_t_k_1_1_xy_description.html", null ]
     ] ],
-    [ "TransferElement", null, [
-      [ "ChimeraTK::DoocsTransferElement< UserType >", "class_chimera_t_k_1_1_doocs_transfer_element.html", null ]
-    ] ],
     [ "ChimeraTK::VariableMapper", "class_chimera_t_k_1_1_variable_mapper.html", null ]
 ];

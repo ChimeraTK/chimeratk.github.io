@@ -13,7 +13,6 @@ var searchData=
   ['doocspvfactory_2eh',['DoocsPVFactory.h',['../_doocs_p_v_factory_8h.html',1,'']]],
   ['doocsspectrum_2ecc',['DoocsSpectrum.cc',['../_doocs_spectrum_8cc.html',1,'']]],
   ['doocsspectrum_2eh',['DoocsSpectrum.h',['../_doocs_spectrum_8h.html',1,'']]],
-  ['doocstransferelement_2eh',['DoocsTransferElement.h',['../_doocs_transfer_element_8h.html',1,'']]],
   ['doocsupdater_2ecc',['DoocsUpdater.cc',['../_doocs_updater_8cc.html',1,'']]],
   ['doocsupdater_2eh',['DoocsUpdater.h',['../_doocs_updater_8h.html',1,'']]],
   ['doocsxy_2ecc',['DoocsXy.cc',['../_doocs_xy_8cc.html',1,'']]],
