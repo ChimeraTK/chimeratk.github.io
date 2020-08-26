@@ -22,7 +22,7 @@ var class_chimera_t_k_1_1_unified_backend_test =
     [ "isWrite", "class_chimera_t_k_1_1_unified_backend_test.html#a25e48099e9aae7963438ac8de4ec3ec6", null ],
     [ "isWriteOnly", "class_chimera_t_k_1_1_unified_backend_test.html#afbe6576e20a37da96b8d472974869114", null ],
     [ "recoverDevice", "class_chimera_t_k_1_1_unified_backend_test.html#a2a5af100a20a46cf62a7311ce92c2f71", null ],
-    [ "runTests", "class_chimera_t_k_1_1_unified_backend_test.html#a7434d5256809a1b2cf634d39f32a83df", null ],
+    [ "runTests", "class_chimera_t_k_1_1_unified_backend_test.html#ae1ddf7aff4441126f32b6cb1768684a8", null ],
     [ "setForceDataLossWrite", "class_chimera_t_k_1_1_unified_backend_test.html#ac86d237dc0a1ccc3ed7d0c1754602a8f", null ],
     [ "switchReadOnly", "class_chimera_t_k_1_1_unified_backend_test.html#af206fd074baa70192b00859ea5cc563c", null ],
     [ "switchWriteOnly", "class_chimera_t_k_1_1_unified_backend_test.html#a00ddda84b1553de482d56928001f7be4", null ],
@@ -65,5 +65,6 @@ var class_chimera_t_k_1_1_unified_backend_test =
     [ "writeQueueLength", "class_chimera_t_k_1_1_unified_backend_test.html#a731759a055164fbf12b0468eb1d34004", null ],
     [ "_testOnlyTransferElement", "class_chimera_t_k_1_1_unified_backend_test.html#ae9fbfbf4616ab4b2b8d3aef405225cdb", null ],
     [ "cdd", "class_chimera_t_k_1_1_unified_backend_test.html#ad3f74d88389c6c2c7d9cea95cc8f38cb", null ],
+    [ "cdd2", "class_chimera_t_k_1_1_unified_backend_test.html#ac3f965fb633aa0a248bbb8424a57f3a4", null ],
     [ "registers", "class_chimera_t_k_1_1_unified_backend_test.html#a059c6435bddb12aa1cb1e48cde6d196a", null ]
 ];
