@@ -166,6 +166,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a6c014c6a4117bbe93e78b4fc6c24909c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; RegisterCatalogue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#a6c014c6a4117bbe93e78b4fc6c24909c">_catalogue_mutable</a> {}</td></tr>
 <tr class="memdesc:a6c014c6a4117bbe93e78b4fc6c24909c"><td class="mdescLeft">&#160;</td><td class="mdescRight">We need to make the catalogue mutable, since we fill it within <a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#a706cd10e5a07e138fcf56db804cf8957">getRegisterCatalogue()</a>  <a href="#a6c014c6a4117bbe93e78b4fc6c24909c">More...</a><br /></td></tr>
 <tr class="separator:a6c014c6a4117bbe93e78b4fc6c24909c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b7e95c78800543c5031042a45143bc"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#a19b7e95c78800543c5031042a45143bc">_asyncReadActivated</a> {false}</td></tr>
+<tr class="separator:a19b7e95c78800543c5031042a45143bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -267,7 +269,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00213">213</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00215">215</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -480,7 +482,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00220">220</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00223">223</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -554,7 +556,7 @@ template&lt;typename UserType &gt; </div>
 <p>Called by accessors to inform about addess causing a runtime_error. </p>
 <p>Does not switch backend into exception state, this is done separately by calling <a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#a7edfcfc60808a52f47010ec0759ee121">setException()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00196">196</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00197">197</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -581,7 +583,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00189">189</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00190">190</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -678,7 +680,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00203">203</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00204">204</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -726,6 +728,22 @@ template&lt;typename UserType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a19b7e95c78800543c5031042a45143bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19b7e95c78800543c5031042a45143bc">&#9670;&nbsp;</a></span>_asyncReadActivated</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;bool&gt; ChimeraTK::DoocsBackend::_asyncReadActivated {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00093">93</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+
+</div>
+</div>
 <a id="a6c014c6a4117bbe93e78b4fc6c24909c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c014c6a4117bbe93e78b4fc6c24909c">&#9670;&nbsp;</a></span>_catalogue_mutable</h2>
 
@@ -804,7 +822,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html">DoocsBackend</a></li>
-    <li class="footer">Generated on Tue Aug 25 2020 03:53:28 for ChimeraTK-DeviceAccess-DoocsBackend by
+    <li class="footer">Generated on Wed Aug 26 2020 03:54:41 for ChimeraTK-DeviceAccess-DoocsBackend by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

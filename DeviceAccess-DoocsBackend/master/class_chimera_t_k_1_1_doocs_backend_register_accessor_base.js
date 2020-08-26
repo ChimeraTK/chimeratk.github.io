@@ -7,6 +7,7 @@ var class_chimera_t_k_1_1_doocs_backend_register_accessor_base =
     [ "ea", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a24e1d1dd0543bdf728d47a0fd38ac9b4", null ],
     [ "elementOffset", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a36e10fd2604da56e6578c6f1165ed039", null ],
     [ "eq", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#aef69bfd602052dfff1102f7d9b9f6138", null ],
+    [ "isActiveZMQ", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a0ec142a6c6489e6a2e911d60e4fded45", null ],
     [ "isArray", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a0bcce3cfd0a55a8f0362ef3362ae3aa0", null ],
     [ "isPartial", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#afebb23c2ffc20b9744cd382ec06d34a9", null ],
     [ "nElements", "class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a0fde7fd874fc30900874ba0f701c07b6", null ],

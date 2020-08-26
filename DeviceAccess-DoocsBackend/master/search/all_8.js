@@ -12,6 +12,7 @@ var searchData=
   ['interrupt_5fusr1_5fprolog',['interrupt_usr1_prolog',['../doocs_dummy__rpc__server_8cc.html#a77ed65cc8e8d7a43df9b3d622632e09d',1,'doocsDummy_rpc_server.cc']]],
   ['interrupt_5fusr2_5fepilog',['interrupt_usr2_epilog',['../doocs_dummy__rpc__server_8cc.html#a180c486354bb5f6a1dabbbc21f8056f9',1,'doocsDummy_rpc_server.cc']]],
   ['interrupt_5fusr2_5fprolog',['interrupt_usr2_prolog',['../doocs_dummy__rpc__server_8cc.html#aa4bf94c204aa5895b575b79587b1a5b1',1,'doocsDummy_rpc_server.cc']]],
+  ['isactivezmq',['isActiveZMQ',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a0ec142a6c6489e6a2e911d60e4fded45',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]],
   ['isarray',['isArray',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html#a0bcce3cfd0a55a8f0362ef3362ae3aa0',1,'ChimeraTK::DoocsBackendRegisterAccessorBase']]],
   ['isfunctional',['isFunctional',['../class_chimera_t_k_1_1_doocs_backend.html#ab2e9a53151458d87b7cec8127a8bf08a',1,'ChimeraTK::DoocsBackend']]],
   ['isinitialised',['isInitialised',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a66bac06a72bf2af7fc769df3d7d237de',1,'ChimeraTK::DoocsBackendRegisterAccessor']]],
