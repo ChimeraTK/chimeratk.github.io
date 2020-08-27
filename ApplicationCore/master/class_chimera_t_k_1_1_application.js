@@ -1,5 +1,6 @@
 var class_chimera_t_k_1_1_application =
 [
+    [ "CircularDependencyDetector", "struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html", "struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector" ],
     [ "TestsStalled", "class_chimera_t_k_1_1_application_1_1_tests_stalled.html", null ],
     [ "TypedMakeConnectionCaller", "struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html", "struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller" ],
     [ "Application", "class_chimera_t_k_1_1_application.html#a65ea3c005eec5249f9f8b0d2ce340d52", null ],
@@ -56,6 +57,7 @@ var class_chimera_t_k_1_1_application =
     [ "VariableNetworkNode", "class_chimera_t_k_1_1_application.html#a6834042482a4ce821c0bd9ba7eaa6d80", null ],
     [ "XMLGeneratorVisitor", "class_chimera_t_k_1_1_application.html#abd52c8e27bb2e61730c8904c2a26ebae", null ],
     [ "_startVersion", "class_chimera_t_k_1_1_application.html#a811e44b86e02723eb7716944f241db56", null ],
+    [ "circularDependencyDetector", "class_chimera_t_k_1_1_application.html#abdc2cb014f7668e6a5a16b9a33998e7e", null ],
     [ "constantList", "class_chimera_t_k_1_1_application.html#a3a4eb7108167ede1b8d3702180f115c4", null ],
     [ "dataLossCounter", "class_chimera_t_k_1_1_application.html#a80e8990554832fe825057368d512a7a5", null ],
     [ "debugMode_variableList", "class_chimera_t_k_1_1_application.html#a20ee34f9da398c58ad9e4228449412fa", null ],

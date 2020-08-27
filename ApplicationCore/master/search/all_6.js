@@ -26,6 +26,7 @@ var searchData=
   ['filename',['filename',['../structtest_app.html#a8af2d86ab4879bec130d73ab2b039328',1,'testApp::filename()'],['../namespacevariable_houseold_to_wiki_table.html#a1b6fd4d7a25a8207652a04b430235f28',1,'variableHouseoldToWikiTable.filename()']]],
   ['fileprefix',['fileprefix',['../structtest_app.html#a814bfc0b2be654e9c5c52563b7a7a297',1,'testApp']]],
   ['finalisenetworks',['finaliseNetworks',['../class_chimera_t_k_1_1_application.html#a4100a652864974ac1ab64d1bd1327d81',1,'ChimeraTK::Application']]],
+  ['findapplicationmodule',['findApplicationModule',['../class_chimera_t_k_1_1_module.html#ae1b039da6906085a906e4d59509a4de9',1,'ChimeraTK::Module']]],
   ['findcommonprefix',['findCommonPrefix',['../namespacevariable_houseold_to_wiki_table.html#ae04b03174d5356fce5062180ed016f2d',1,'variableHouseoldToWikiTable']]],
   ['findtag',['findTag',['../class_chimera_t_k_1_1_entity_owner.html#a10abe5f666483380a4dee7fb8caacd86',1,'ChimeraTK::EntityOwner']]],
   ['findtagandappendtomodule',['findTagAndAppendToModule',['../class_chimera_t_k_1_1_entity_owner.html#a2010b6d4b740f5d128a442856af08245',1,'ChimeraTK::EntityOwner']]],

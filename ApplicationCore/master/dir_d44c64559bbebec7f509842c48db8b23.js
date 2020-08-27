@@ -6,6 +6,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "ConsumingFanOut", "class_chimera_t_k_1_1_consuming_fan_out.html", "class_chimera_t_k_1_1_consuming_fan_out" ],
       [ "Application", "class_chimera_t_k_1_1_application.html", "class_chimera_t_k_1_1_application" ],
       [ "TestsStalled", "class_chimera_t_k_1_1_application_1_1_tests_stalled.html", null ],
+      [ "CircularDependencyDetector", "struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html", "struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector" ],
       [ "TypedMakeConnectionCaller", "struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html", "struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller" ]
     ] ],
     [ "ApplicationCore.h", "_application_core_8h.html", null ],

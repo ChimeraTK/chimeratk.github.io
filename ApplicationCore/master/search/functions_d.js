@@ -15,6 +15,7 @@ var searchData=
   ['realisticmodule',['RealisticModule',['../struct_realistic_module.html#abb6e099b4c8759365f0bf6b7c60ddc6f',1,'RealisticModule']]],
   ['recoveryhelper',['RecoveryHelper',['../struct_chimera_t_k_1_1_recovery_helper.html#af07d7a8033b29d8fae131632acd96101',1,'ChimeraTK::RecoveryHelper']]],
   ['registeraccessor',['registerAccessor',['../class_chimera_t_k_1_1_entity_owner.html#a260d2a06bf851b4b685ae498cf5a2237',1,'ChimeraTK::EntityOwner']]],
+  ['registerdependencywait',['registerDependencyWait',['../struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a6ba63aa3d36361aad82113e8f31ecb8d',1,'ChimeraTK::Application::CircularDependencyDetector']]],
   ['registerdevicemodule',['registerDeviceModule',['../class_chimera_t_k_1_1_application.html#a8004bc7d4305468a5497e278f2af7203',1,'ChimeraTK::Application']]],
   ['registermodule',['registerModule',['../class_chimera_t_k_1_1_entity_owner.html#a9690d4ae29d8a9e05d34feed82533e94',1,'ChimeraTK::EntityOwner']]],
   ['registerthread',['registerThread',['../class_chimera_t_k_1_1_application.html#abf343e8bf9893031d1785aa0aa1a1066',1,'ChimeraTK::Application::registerThread()'],['../class_chimera_t_k_1_1_profiler.html#a3c025d8af36c5c6415190b3843f5bb16',1,'ChimeraTK::Profiler::registerThread()']]],

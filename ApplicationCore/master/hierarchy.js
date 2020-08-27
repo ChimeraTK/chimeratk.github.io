@@ -72,6 +72,7 @@ var hierarchy =
     [ "ChimeraTK::ArrayFunctorFill", "struct_chimera_t_k_1_1_array_functor_fill.html", null ],
     [ "DemoDummy::BackendRegisterer", "class_demo_dummy_1_1_backend_registerer.html", null ],
     [ "TimerDummy::BackendRegisterer", "class_timer_dummy_1_1_backend_registerer.html", null ],
+    [ "ChimeraTK::Application::CircularDependencyDetector", "struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html", null ],
     [ "ChimeraTK::ConfigParser", "class_chimera_t_k_1_1_config_parser.html", null ],
     [ "ChimeraTK::ConstantAccessorCreator", "struct_chimera_t_k_1_1_constant_accessor_creator.html", [
       [ "ChimeraTK::ConstantAccessorCreatorImpl< UserType >", "struct_chimera_t_k_1_1_constant_accessor_creator_impl.html", null ]
