@@ -101,12 +101,12 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#ac9889d98c6076fa8ac966ae5b89ab687",
 "class_chimera_t_k_1_1_threaded_fan_out.html",
 "dir_52713a7cd53474fec784a13806f62d5c.html",
-"struct_chimera_t_k_1_1_config_reader.html#a0a8337c260f18a86c8a43daacc050100",
-"struct_chimera_t_k_1_1history_1_1_server_history.html",
-"struct_outer_group_1_1_inner_group.html#a17553ea4c6c23c4053e5928e2e07b432",
-"struct_test_application.html#a122ec197cc44ff14bb66d32c1f36ce09",
+"struct_chimera_t_k_1_1_config_reader.html",
+"struct_chimera_t_k_1_1history_1_1_history_entry.html#ad46bdb2e96e023936d9f08b0d50de31d",
+"struct_outer_group_1_1_inner_group.html",
+"struct_test_application.html#a0ec082e835cee93b8b3fe53a5a57a2d8",
 "struct_test_module1.html#a3b83a953299e9702871d8e091451d988",
-"test_fanout_connections_8cc.html#a6b2a3852db8bb19ab6909bac01859985"
+"test_fanout_connections_8cc.html#a19508cf43e44823aee9853a18fd7c9fb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

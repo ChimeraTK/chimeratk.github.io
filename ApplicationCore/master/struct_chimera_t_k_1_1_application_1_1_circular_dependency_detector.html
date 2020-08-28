@@ -111,6 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abd136a913538fb7dde71571fefd44429"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#abd136a913538fb7dde71571fefd44429">unregisterDependencyWait</a> (<a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &amp;node)</td></tr>
 <tr class="memdesc:abd136a913538fb7dde71571fefd44429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call after an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> has received an initial value on the given node.  <a href="#abd136a913538fb7dde71571fefd44429">More...</a><br /></td></tr>
 <tr class="separator:abd136a913538fb7dde71571fefd44429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec37b44e22b4df08160f0e621d268e58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#aec37b44e22b4df08160f0e621d268e58">printWaiters</a> ()</td></tr>
+<tr class="separator:aec37b44e22b4df08160f0e621d268e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -126,6 +128,41 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00214">214</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aec37b44e22b4df08160f0e621d268e58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec37b44e22b4df08160f0e621d268e58">&#9670;&nbsp;</a></span>printWaiters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::CircularDependencyDetector::printWaiters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01321">1321</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_aec37b44e22b4df08160f0e621d268e58_cgraph.svg" width="451" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_aec37b44e22b4df08160f0e621d268e58_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a6ba63aa3d36361aad82113e8f31ecb8d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ba63aa3d36361aad82113e8f31ecb8d">&#9670;&nbsp;</a></span>registerDependencyWait()</h2>
 
@@ -145,20 +182,20 @@ Protected Attributes</h2></td></tr>
 <p>Call before an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> waits for an initial value on the given node. </p>
 <p>Calls with non-Application-typed nodes are ignored. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01259">1259</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01261">1261</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_a6ba63aa3d36361aad82113e8f31ecb8d_cgraph.svg" width="100%" height="535"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_a6ba63aa3d36361aad82113e8f31ecb8d_icgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -184,20 +221,20 @@ Protected Attributes</h2></td></tr>
 <p>Call after an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> has received an initial value on the given node. </p>
 <p>Calls with non-Application-typed nodes are ignored. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01300">1300</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01333">1333</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_abd136a913538fb7dde71571fefd44429_cgraph.svg" width="100%" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_abd136a913538fb7dde71571fefd44429_icgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -225,7 +262,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00226">226</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00228">228</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -249,7 +286,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00224">224</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00226">226</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -273,7 +310,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00225">225</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00227">227</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -287,7 +324,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_application.html">Application</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html">CircularDependencyDetector</a></li>
-    <li class="footer">Generated on Thu Aug 27 2020 03:54:56 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Aug 28 2020 03:53:41 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
