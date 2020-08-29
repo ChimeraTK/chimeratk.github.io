@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('test_initial_value_spec_d8_8cc.html','
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">testInitialValueSpecD8.cc File Reference</div>  </div>
@@ -92,22 +93,16 @@ $(document).ready(function(){initNavTree('test_initial_value_spec_d8_8cc.html','
 <div class="textblock"><code>#include &lt;boost/mpl/list.hpp&gt;</code><br />
 <code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
-<code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;future&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;ChimeraTK/BackendFactory.h&gt;</code><br />
 <code>#include &lt;ChimeraTK/Device.h&gt;</code><br />
-<code>#include &lt;ChimeraTK/NDRegisterAccessor.h&gt;</code><br />
 <code>#include &lt;ChimeraTK/ExceptionDummyBackend.h&gt;</code><br />
-<code>#include &lt;ChimeraTK/DummyRegisterAccessor.h&gt;</code><br />
-<code>#include &lt;ChimeraTK/ControlSystemAdapter/DevicePVManager.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="_application_8h_source.html">Application.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_application_module_8h_source.html">ApplicationModule.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_control_system_module_8h_source.html">ControlSystemModule.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_scalar_accessor_8h_source.html">ScalarAccessor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="check__timeout_8h_source.html">check_timeout.h</a>&quot;</code><br />
-<code>#include &lt;functional&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for testInitialValueSpecD8.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -121,33 +116,19 @@ $(document).ready(function(){initNavTree('test_initial_value_spec_d8_8cc.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_poll_module.html">PollModule</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_input_module.html">InputModule&lt; INPUT_TYPE &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_poll_dummy_application.html">PollDummyApplication</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_poll_type_initial_value_eception_dummy.html">PollTypeInitialValueEceptionDummy</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_push_module.html">PushModule</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_push_dummy_application.html">PushDummyApplication</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_push_type_initial_value_eception_dummy.html">PushTypeInitialValueEceptionDummy</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_poll_input_module.html">PollInputModule</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_fixture_with_eception_dummy.html">TestFixtureWithEceptionDummy&lt; APPLICATION_TYPE &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_scalar_output_module.html">ScalarOutputModule</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_poll_process_arry_dummy_application.html">PollProcessArryDummyApplication</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_arry_dummy_application.html">ProcessArryDummyApplication&lt; INPUT_TYPE &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_poll_process_array_type_initial_value_eception_dummy.html">PollProcessArrayTypeInitialValueEceptionDummy</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_constant_poll_module.html">ConstantPollModule</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_constant_push_module.html">ConstantPushModule</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_constant_poll_dummy_application.html">ConstantPollDummyApplication</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_constant_poll_type_initial_value_eception_dummy.html">ConstantPollTypeInitialValueEceptionDummy</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_constant_test_application.html">ConstantTestApplication&lt; INPUT_TYPE &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_push_module_d9__1.html">PushModuleD9_1</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,19 +150,25 @@ Macros</h2></td></tr>
 <tr class="memitem:a6b2a3852db8bb19ab6909bac01859985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_initial_value_spec_d8_8cc.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>&#160;&#160;&#160;testInitialValues</td></tr>
 <tr class="separator:a6b2a3852db8bb19ab6909bac01859985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a51f5b88bfe26cda0d6728f946c81ad99"><td class="memItemLeft" align="right" valign="top">typedef boost::mpl::list&lt; <a class="el" href="struct_poll_dummy_application.html">PollDummyApplication</a>, <a class="el" href="struct_push_dummy_application.html">PushDummyApplication</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_initial_value_spec_d8_8cc.html#a51f5b88bfe26cda0d6728f946c81ad99">DeviceTestApplicationTypes</a></td></tr>
+<tr class="memdesc:a51f5b88bfe26cda0d6728f946c81ad99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test Initial Values - Inputs of <code>ApplicationModule</code>s.  <a href="#a51f5b88bfe26cda0d6728f946c81ad99">More...</a><br /></td></tr>
+<tr class="separator:a51f5b88bfe26cda0d6728f946c81ad99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03129048d722076e83d096c8ef6973da"><td class="memItemLeft" align="right" valign="top">typedef boost::mpl::list&lt; <a class="el" href="struct_chimera_t_k_1_1_scalar_poll_input.html">ctk::ScalarPollInput</a>&lt; int &gt;, <a class="el" href="struct_chimera_t_k_1_1_scalar_push_input.html">ctk::ScalarPushInput</a>&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_initial_value_spec_d8_8cc.html#a03129048d722076e83d096c8ef6973da">TestInputTypes</a></td></tr>
+<tr class="separator:a03129048d722076e83d096c8ef6973da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abd966764006e13fa0ed6226a5b52cf67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_initial_value_spec_d8_8cc.html#abd966764006e13fa0ed6226a5b52cf67">BOOST_AUTO_TEST_CASE</a> (testPollInitValueAtDevice8bi)</td></tr>
-<tr class="memdesc:abd966764006e13fa0ed6226a5b52cf67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test Initial Values - Inputs of <code>ApplicationModule</code>s.  <a href="#abd966764006e13fa0ed6226a5b52cf67">More...</a><br /></td></tr>
-<tr class="separator:abd966764006e13fa0ed6226a5b52cf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b802984b4ef61e049394fa0fcd171d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_initial_value_spec_d8_8cc.html#a7b802984b4ef61e049394fa0fcd171d8">BOOST_AUTO_TEST_CASE</a> (testPushInitValueAtDevice8bi)</td></tr>
-<tr class="separator:a7b802984b4ef61e049394fa0fcd171d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74adad13836eeb80656f6cbde8d9a074"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_initial_value_spec_d8_8cc.html#a74adad13836eeb80656f6cbde8d9a074">BOOST_AUTO_TEST_CASE</a> (testPollProcessArrayInitValueAtDevice8bii)</td></tr>
-<tr class="memdesc:a74adad13836eeb80656f6cbde8d9a074"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessArray freeze in their implementation until the initial value is received.  <a href="#a74adad13836eeb80656f6cbde8d9a074">More...</a><br /></td></tr>
-<tr class="separator:a74adad13836eeb80656f6cbde8d9a074"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a203236d92b38d21cc0e6c51708040ee0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_initial_value_spec_d8_8cc.html#a203236d92b38d21cc0e6c51708040ee0">BOOST_AUTO_TEST_CASE</a> (testConstantPollInitValueAtDevice8biii)</td></tr>
-<tr class="memdesc:a203236d92b38d21cc0e6c51708040ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants can be read exactly once in case of <code>AccessMode::wait_for_new_data</code>, so the initial value can be received.  <a href="#a203236d92b38d21cc0e6c51708040ee0">More...</a><br /></td></tr>
-<tr class="separator:a203236d92b38d21cc0e6c51708040ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250bbd4994894796c6dc11df5f9e8468"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_initial_value_spec_d8_8cc.html#a250bbd4994894796c6dc11df5f9e8468">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testInitValueAtDevice8bi, APPLICATION_TYPE, <a class="el" href="test_initial_value_spec_d8_8cc.html#a51f5b88bfe26cda0d6728f946c81ad99">DeviceTestApplicationTypes</a>)</td></tr>
+<tr class="memdesc:a250bbd4994894796c6dc11df5f9e8468"><td class="mdescLeft">&#160;</td><td class="mdescRight">For device variables the ExeptionHandlingDecorator freezes the variable until the device is available.  <a href="#a250bbd4994894796c6dc11df5f9e8468">More...</a><br /></td></tr>
+<tr class="separator:a250bbd4994894796c6dc11df5f9e8468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae432892316f4f23cdb7d77db2152b3fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_initial_value_spec_d8_8cc.html#ae432892316f4f23cdb7d77db2152b3fe">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testProcessArrayInitValueAtDevice8bii, INPUT_TYPE, <a class="el" href="test_initial_value_spec_d8_8cc.html#a03129048d722076e83d096c8ef6973da">TestInputTypes</a>)</td></tr>
+<tr class="memdesc:ae432892316f4f23cdb7d77db2152b3fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">ProcessArray freeze in their implementation until the initial value is received.  <a href="#ae432892316f4f23cdb7d77db2152b3fe">More...</a><br /></td></tr>
+<tr class="separator:ae432892316f4f23cdb7d77db2152b3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcba53b9118f4f2c74f5d073e8bcdfe2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_initial_value_spec_d8_8cc.html#afcba53b9118f4f2c74f5d073e8bcdfe2">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testConstantInitValueAtDevice8biii, INPUT_TYPE, <a class="el" href="test_initial_value_spec_d8_8cc.html#a03129048d722076e83d096c8ef6973da">TestInputTypes</a>)</td></tr>
+<tr class="memdesc:afcba53b9118f4f2c74f5d073e8bcdfe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants can be read exactly once in case of <code>AccessMode::wait_for_new_data</code>, so the initial value can be received.  <a href="#afcba53b9118f4f2c74f5d073e8bcdfe2">More...</a><br /></td></tr>
+<tr class="separator:afcba53b9118f4f2c74f5d073e8bcdfe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a310251d5f6785824440991b9e68f5b14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_initial_value_spec_d8_8cc.html#a310251d5f6785824440991b9e68f5b14">BOOST_AUTO_TEST_CASE</a> (testPushInitValueAtDeviceD9)</td></tr>
 <tr class="memdesc:a310251d5f6785824440991b9e68f5b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">D 9 b for ThreaddedFanOut.  <a href="#a310251d5f6785824440991b9e68f5b14">More...</a><br /></td></tr>
 <tr class="separator:a310251d5f6785824440991b9e68f5b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,130 +193,45 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="abd966764006e13fa0ed6226a5b52cf67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd966764006e13fa0ed6226a5b52cf67">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/6]</span></h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a51f5b88bfe26cda0d6728f946c81ad99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51f5b88bfe26cda0d6728f946c81ad99">&#9670;&nbsp;</a></span>DeviceTestApplicationTypes</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">testPollInitValueAtDevice8bi&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">typedef boost::mpl::list&lt;<a class="el" href="struct_poll_dummy_application.html">PollDummyApplication</a>, <a class="el" href="struct_push_dummy_application.html">PushDummyApplication</a>&gt; <a class="el" href="test_initial_value_spec_d8_8cc.html#a51f5b88bfe26cda0d6728f946c81ad99">DeviceTestApplicationTypes</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Test Initial Values - Inputs of <code>ApplicationModule</code>s. </p>
-<p><a class="anchor" id="testInitialValuesInputsOfApplicationCore"></a><a class="el" href="spec_initial_value_propagation.html#InitialValuesInputsOfApplicationCore_D_8">D.8</a> For device variables the ExeptionHandlingDecorator freezes the variable until the device is available <a class="anchor" id="testInitialValue_D_8_b_i"></a><a class="el" href="spec_initial_value_propagation.html#initialValue_D_8_b_i">initialValue_D_8_b_i</a> </p>
+<p><a class="anchor" id="testInitialValuesInputsOfApplicationCore"></a><a class="el" href="spec_initial_value_propagation.html#InitialValuesInputsOfApplicationCore_D_8">D.8</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="test_initial_value_spec_d8_8cc_source.html#l00078">78</a> of file <a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_initial_value_spec_d8_8cc_abd966764006e13fa0ed6226a5b52cf67_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="test_initial_value_spec_d8_8cc_source.html#l00082">82</a> of file <a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a>.</p>
 
 </div>
 </div>
-<a id="a7b802984b4ef61e049394fa0fcd171d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b802984b4ef61e049394fa0fcd171d8">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/6]</span></h2>
+<a id="a03129048d722076e83d096c8ef6973da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03129048d722076e83d096c8ef6973da">&#9670;&nbsp;</a></span>TestInputTypes</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">testPushInitValueAtDevice8bi&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">typedef boost::mpl::list&lt;<a class="el" href="struct_chimera_t_k_1_1_scalar_poll_input.html">ctk::ScalarPollInput</a>&lt;int&gt;, <a class="el" href="struct_chimera_t_k_1_1_scalar_push_input.html">ctk::ScalarPushInput</a>&lt;int&gt; &gt; <a class="el" href="test_initial_value_spec_d8_8cc.html#a03129048d722076e83d096c8ef6973da">TestInputTypes</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_initial_value_spec_d8_8cc_source.html#l00156">156</a> of file <a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_initial_value_spec_d8_8cc_a7b802984b4ef61e049394fa0fcd171d8_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="test_initial_value_spec_d8_8cc_source.html#l00141">141</a> of file <a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a>.</p>
 
 </div>
 </div>
-<a id="a74adad13836eeb80656f6cbde8d9a074"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74adad13836eeb80656f6cbde8d9a074">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">testPollProcessArrayInitValueAtDevice8bii&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ProcessArray freeze in their implementation until the initial value is received. </p>
-<p><a class="anchor" id="testInitialValue_D_8_b_ii"></a><a class="el" href="spec_initial_value_propagation.html#initialValue_D_8_b_ii">initialValue_D_8_b_ii</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="test_initial_value_spec_d8_8cc_source.html#l00242">242</a> of file <a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_initial_value_spec_d8_8cc_a74adad13836eeb80656f6cbde8d9a074_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a203236d92b38d21cc0e6c51708040ee0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a203236d92b38d21cc0e6c51708040ee0">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">testConstantPollInitValueAtDevice8biii&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constants can be read exactly once in case of <code>AccessMode::wait_for_new_data</code>, so the initial value can be received. </p>
-<p><a class="anchor" id="testInitialValue_D_8_b_iii"></a><a class="el" href="spec_initial_value_propagation.html#initialValue_D_8_b_iii">initialValue_D_8_b_iii</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="test_initial_value_spec_d8_8cc_source.html#l00316">316</a> of file <a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_initial_value_spec_d8_8cc_a203236d92b38d21cc0e6c51708040ee0_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a310251d5f6785824440991b9e68f5b14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a310251d5f6785824440991b9e68f5b14">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a310251d5f6785824440991b9e68f5b14">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,12 +249,12 @@ Functions</h2></td></tr>
 <p>D 9 b for ThreaddedFanOut. </p>
 <p><a class="anchor" id="testInitialValueThreaddedFanOut_D_9_b"></a><a class="el" href="spec_initial_value_propagation.html#initialValueThreaddedFanOut_D_9_b">initialValueThreaddedFanOut_D_9_b</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="test_initial_value_spec_d8_8cc_source.html#l00398">398</a> of file <a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="test_initial_value_spec_d8_8cc_source.html#l00274">274</a> of file <a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_initial_value_spec_d8_8cc_a310251d5f6785824440991b9e68f5b14_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -360,7 +262,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a2f1ba0606a544dafef8d5971131d096e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f1ba0606a544dafef8d5971131d096e">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f1ba0606a544dafef8d5971131d096e">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,15 +280,140 @@ Functions</h2></td></tr>
 <p>D 9 b for TriggerFanOut. </p>
 <p><a class="anchor" id="testInitialValueThreaddedFanOut_D_9_b"></a><a class="el" href="spec_initial_value_propagation.html#initialValueThreaddedFanOut_D_9_b">initialValueThreaddedFanOut_D_9_b</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="test_initial_value_spec_d8_8cc_source.html#l00482">482</a> of file <a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="test_initial_value_spec_d8_8cc_source.html#l00356">356</a> of file <a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_initial_value_spec_d8_8cc_a2f1ba0606a544dafef8d5971131d096e_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
+
+</div>
+</div>
+<a id="a250bbd4994894796c6dc11df5f9e8468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a250bbd4994894796c6dc11df5f9e8468">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE_TEMPLATE </td>
+          <td>(</td>
+          <td class="paramtype">testInitValueAtDevice8bi&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">APPLICATION_TYPE&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_initial_value_spec_d8_8cc.html#a51f5b88bfe26cda0d6728f946c81ad99">DeviceTestApplicationTypes</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For device variables the ExeptionHandlingDecorator freezes the variable until the device is available. </p>
+<p><a class="anchor" id="testInitialValue_D_8_b_i"></a><a class="el" href="spec_initial_value_propagation.html#initialValue_D_8_b_i">initialValue_D_8_b_i</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="test_initial_value_spec_d8_8cc_source.html#l00088">88</a> of file <a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_initial_value_spec_d8_8cc_a250bbd4994894796c6dc11df5f9e8468_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ae432892316f4f23cdb7d77db2152b3fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae432892316f4f23cdb7d77db2152b3fe">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE_TEMPLATE </td>
+          <td>(</td>
+          <td class="paramtype">testProcessArrayInitValueAtDevice8bii&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INPUT_TYPE&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_initial_value_spec_d8_8cc.html#a03129048d722076e83d096c8ef6973da">TestInputTypes</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ProcessArray freeze in their implementation until the initial value is received. </p>
+<p><a class="anchor" id="testInitialValue_D_8_b_ii"></a><a class="el" href="spec_initial_value_propagation.html#initialValue_D_8_b_ii">initialValue_D_8_b_ii</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="test_initial_value_spec_d8_8cc_source.html#l00147">147</a> of file <a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a>.</p>
+
+</div>
+</div>
+<a id="afcba53b9118f4f2c74f5d073e8bcdfe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcba53b9118f4f2c74f5d073e8bcdfe2">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE_TEMPLATE </td>
+          <td>(</td>
+          <td class="paramtype">testConstantInitValueAtDevice8biii&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INPUT_TYPE&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_initial_value_spec_d8_8cc.html#a03129048d722076e83d096c8ef6973da">TestInputTypes</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constants can be read exactly once in case of <code>AccessMode::wait_for_new_data</code>, so the initial value can be received. </p>
+<p><a class="anchor" id="testInitialValue_D_8_b_iii"></a><a class="el" href="spec_initial_value_propagation.html#initialValue_D_8_b_iii">initialValue_D_8_b_iii</a> </p>
+
+<p class="definition">Definition at line <a class="el" href="test_initial_value_spec_d8_8cc_source.html#l00190">190</a> of file <a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a>.</p>
 
 </div>
 </div>
@@ -396,7 +423,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_initial_value_spec_d8_8cc.html">testInitialValueSpecD8.cc</a></li>
-    <li class="footer">Generated on Fri Aug 28 2020 03:53:39 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Aug 29 2020 03:53:47 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
