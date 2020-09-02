@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['updatefunctions',['updateFunctions',['../struct_chimera_t_k_1_1_doocs_updater_1_1_to_doocs_update_descriptor.html#ad388643979cb7312599d020c8da67dcc',1,'ChimeraTK::DoocsUpdater::ToDoocsUpdateDescriptor']]],
   ['updater',['updater',['../class_chimera_t_k_1_1_doocs_adapter.html#a2ffe502b554af5713c1a1b0406f7b5a4',1,'ChimeraTK::DoocsAdapter']]],
   ['updater_5f',['updater_',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#ae855cff8ead1562949db6afbf09a36e7',1,'ChimeraTK::CSAdapterEqFct']]],
   ['usedatamatchingdefault',['useDataMatchingDefault',['../struct_chimera_t_k_1_1_location_info.html#ae927dc86399daa04681f7d41011d8c50',1,'ChimeraTK::LocationInfo']]],

@@ -24,7 +24,8 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "DoocsSpectrum", "class_chimera_t_k_1_1_doocs_spectrum.html", "class_chimera_t_k_1_1_doocs_spectrum" ]
     ] ],
     [ "DoocsUpdater.h", "_doocs_updater_8h.html", [
-      [ "DoocsUpdater", "class_chimera_t_k_1_1_doocs_updater.html", "class_chimera_t_k_1_1_doocs_updater" ]
+      [ "DoocsUpdater", "class_chimera_t_k_1_1_doocs_updater.html", "class_chimera_t_k_1_1_doocs_updater" ],
+      [ "ToDoocsUpdateDescriptor", "struct_chimera_t_k_1_1_doocs_updater_1_1_to_doocs_update_descriptor.html", "struct_chimera_t_k_1_1_doocs_updater_1_1_to_doocs_update_descriptor" ]
     ] ],
     [ "DoocsXY.h", "_doocs_x_y_8h.html", [
       [ "DoocsXy", "class_chimera_t_k_1_1_doocs_xy.html", "class_chimera_t_k_1_1_doocs_xy" ]
