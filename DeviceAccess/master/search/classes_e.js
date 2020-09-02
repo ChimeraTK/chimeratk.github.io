@@ -57,7 +57,7 @@ var searchData=
   ['registerdescriptorbase_3c_20regwordfirmwarewithmath_5fr_20_3e',['RegisterDescriptorBase&lt; RegWordFirmwareWithMath_R &gt;',['../struct_register_descriptor_base.html',1,'']]],
   ['registerdescriptorbase_3c_20regwordfirmwarewithmath_5fr_5fpush_20_3e',['RegisterDescriptorBase&lt; RegWordFirmwareWithMath_R_push &gt;',['../struct_register_descriptor_base.html',1,'']]],
   ['registerdescriptorbase_3c_20regwordfirmwarewithmath_5fw_20_3e',['RegisterDescriptorBase&lt; RegWordFirmwareWithMath_W &gt;',['../struct_register_descriptor_base.html',1,'']]],
-  ['registerinfo',['RegisterInfo',['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html',1,'ChimeraTK::RebotProtocol0::RegisterInfo'],['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html',1,'ChimeraTK::RegisterInfoMap::RegisterInfo'],['../class_chimera_t_k_1_1_register_info.html',1,'ChimeraTK::RegisterInfo']]],
+  ['registerinfo',['RegisterInfo',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html',1,'ChimeraTK::RegisterInfoMap::RegisterInfo'],['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html',1,'ChimeraTK::RebotProtocol0::RegisterInfo'],['../class_chimera_t_k_1_1_register_info.html',1,'ChimeraTK::RegisterInfo']]],
   ['registerinfomap',['RegisterInfoMap',['../class_chimera_t_k_1_1_register_info_map.html',1,'ChimeraTK']]],
   ['registerpath',['RegisterPath',['../class_chimera_t_k_1_1_register_path.html',1,'ChimeraTK']]],
   ['registerpathtest',['RegisterPathTest',['../class_register_path_test.html',1,'']]],

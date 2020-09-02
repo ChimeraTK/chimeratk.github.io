@@ -111,6 +111,9 @@ var hierarchy =
     [ "ChimeraTK::proxies::DummyRegisterSequence< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", null ],
     [ "DummyRegisterTest", "class_dummy_register_test.html", null ],
     [ "enable_shared_from_this", null, [
+      [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
+    ] ],
+    [ "enable_shared_from_this", null, [
       [ "ChimeraTK::DeviceBackend", "class_chimera_t_k_1_1_device_backend.html", [
         [ "ChimeraTK::DeviceBackendImpl", "class_chimera_t_k_1_1_device_backend_impl.html", [
           [ "AsyncTestDummy", "class_async_test_dummy.html", null ],
@@ -199,9 +202,6 @@ var hierarchy =
           ] ]
         ] ]
       ] ]
-    ] ],
-    [ "enable_shared_from_this", null, [
-      [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
     ] ],
     [ "ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html", null ],
     [ "ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html", null ],
@@ -487,6 +487,7 @@ var hierarchy =
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::setForceDataLossWrite_proxy_helper< T, condition >", "struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::setForceDataLossWrite_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper_3_01_t_00_01false_01_4.html", null ],
     [ "ChimeraTK::LogicalNameMappingBackend::SharedAccessor< UserType >", "struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html", null ],
+    [ "ChimeraTK::LogicalNameMappingBackend::SharedAccessor< uint64_t >", "struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html", null ],
     [ "StaticCore", "struct_static_core.html", null ],
     [ "accessPrivateData::stow_private< Tag, x >", "structaccess_private_data_1_1stow__private.html", null ],
     [ "accessPrivateData::stowed< Tag >", "structaccess_private_data_1_1stowed.html", null ],
