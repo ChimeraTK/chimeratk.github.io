@@ -1,10 +1,12 @@
 var searchData=
 [
   ['datamap',['DataMap',['../class_chimera_t_k_1_1_persistent_data_storage.html#a07a3059107896eb852ddc821d628334b',1,'ChimeraTK::PersistentDataStorage']]],
+  ['datatype',['dataType',['../struct_chimera_t_k_1_1_decorator_map_key.html#aa9ae4915e87dadd64339924fb53ce1d8',1,'ChimeraTK::DecoratorMapKey']]],
   ['datatypeconstant',['dataTypeConstant',['../struct_typed_p_v_holder.html#ae785c524565140823a19d11a049c229a',1,'TypedPVHolder']]],
   ['datavalidity',['dataValidity',['../class_reference_test_application.html#a3a915ea761b586066b905a4761001670',1,'ReferenceTestApplication']]],
   ['decoratorbackend',['DecoratorBackend',['../class_decorator_backend.html',1,'DecoratorBackend'],['../class_decorator_backend.html#a5d465031ae7122d405821d46c6079ccf',1,'DecoratorBackend::DecoratorBackend()']]],
   ['decoratorfactory',['DecoratorFactory',['../class_chimera_t_k_1_1_decorator_factory.html',1,'ChimeraTK::DecoratorFactory&lt; UserType &gt;'],['../class_chimera_t_k_1_1_decorator_factory.html#ac90b8c95b0270a2b8d6c501752d99b0d',1,'ChimeraTK::DecoratorFactory::DecoratorFactory(boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; theImpl_, DecoratorType wantedDecoratorType_)'],['../class_chimera_t_k_1_1_decorator_factory.html#ad0d0f1685aa2940efb98c10a9ab0c486',1,'ChimeraTK::DecoratorFactory::DecoratorFactory(const DecoratorFactory &amp;)=delete']]],
+  ['decoratormapkey',['DecoratorMapKey',['../struct_chimera_t_k_1_1_decorator_map_key.html',1,'ChimeraTK']]],
   ['decoratortype',['DecoratorType',['../namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96',1,'ChimeraTK']]],
   ['decoratortypeholder',['DecoratorTypeHolder',['../class_chimera_t_k_1_1_decorator_type_holder.html',1,'ChimeraTK']]],
   ['default_5fwrite_5finterval',['DEFAULT_WRITE_INTERVAL',['../class_chimera_t_k_1_1_persistent_data_storage.html#ada80e6d680be0364eb0c44ea15dc6240',1,'ChimeraTK::PersistentDataStorage']]],

@@ -1,5 +1,11 @@
 var NAVTREEINDEX2 =
 {
+"struct_typed_p_v_holder.html#ae785c524565140823a19d11a049c229a":[2,0,31,3],
+"struct_typed_p_v_holder.html#aee3601a1a61bfae272f97c714bf574c5":[2,0,31,2],
+"struct_unidir_polled_sender.html":[2,0,32],
+"struct_unidir_polled_sender.html#a1e8f90e952809f65482694fca5130ff5":[2,0,32,1],
+"struct_unidir_polled_sender.html#a9dc62bf08060cee2c358a2ba6d2d389b":[2,0,32,4],
+"struct_unidir_polled_sender.html#adbfee8dc4cbc91d97f7138b6f129e3ac":[2,0,32,2],
 "struct_unidir_polled_sender.html#af4125b01251342a60c289bf4a9a120c5":[2,0,32,3],
 "struct_unidir_polled_sender.html#af8333d48fa4a4388ad5690ee345548ac":[2,0,32,0],
 "struct_unidir_polled_sender.html#afafe44828139bbcb37b10cc162c59377":[2,0,32,5],

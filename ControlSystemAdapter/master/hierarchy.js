@@ -13,6 +13,7 @@ var hierarchy =
     [ "DecoratorBackend::BackendRegisterer", "class_decorator_backend_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::ControlSystemPVManager", "class_chimera_t_k_1_1_control_system_p_v_manager.html", null ],
     [ "ChimeraTK::DecoratorFactory< UserType >", "class_chimera_t_k_1_1_decorator_factory.html", null ],
+    [ "ChimeraTK::DecoratorMapKey", "struct_chimera_t_k_1_1_decorator_map_key.html", null ],
     [ "ChimeraTK::DecoratorTypeHolder", "class_chimera_t_k_1_1_decorator_type_holder.html", [
       [ "ChimeraTK::TypeChangingDecorator< T, IMPL_T >", "class_chimera_t_k_1_1_type_changing_decorator.html", [
         [ "ChimeraTK::TypeChangingStringImplDecorator< T, IMPL_T >", "class_chimera_t_k_1_1_type_changing_string_impl_decorator.html", [

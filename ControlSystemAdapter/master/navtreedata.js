@@ -42,7 +42,7 @@ var NAVTREEINDEX =
 [
 "_application_base_8cc.html",
 "class_chimera_t_k_1_1_unidirectional_process_array.html#ac84a21060c27414031aed5d3b71384fe",
-"struct_unidir_polled_sender.html#af4125b01251342a60c289bf4a9a120c5"
+"struct_typed_p_v_holder.html#ae785c524565140823a19d11a049c229a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
