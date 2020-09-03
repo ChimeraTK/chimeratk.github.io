@@ -1,8 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"struct_my_register1.html#af51dcdbabf3036a841b9efc18f307f4f":[17,0,43,3],
-"struct_new_backend.html":[17,0,45],
-"struct_not_registering_plugin.html":[17,0,46],
 "struct_numeric_addressed_low_level_transfer_element__number_of_bytes.html":[17,0,47],
 "struct_numeric_addressed_low_level_transfer_element__number_of_bytes.html#aadbf79334adff8ebd202681421e037dd":[17,0,47,0],
 "struct_numeric_addressed_low_level_transfer_element__start_address.html":[17,0,48],
@@ -245,9 +242,12 @@ var NAVTREEINDEX12 =
 "struct_working_backend_1_1_backend_registerer.html#ae177e6eb4297f167e35303b9af09de99":[17,0,103,0,0],
 "struct_wrong_version_backend.html":[17,0,104],
 "struct_wrong_version_backend_1_1_backend_registerer.html":[17,0,104,0],
-"struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[17,0,104,0,1],
 "struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[17,0,104,0,0],
+"struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[17,0,104,0,1],
 "structaccess_private_data_1_1stow__private.html":[17,0,0,0],
 "structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5":[17,0,0,0,0],
-"structaccess_private_data_1_1stowed.html":[17,0,0,1]
+"structaccess_private_data_1_1stowed.html":[17,0,0,1],
+"structdevice__ioctrl__data.html":[17,0,17],
+"structdevice__ioctrl__data.html#a99d6274576188aeea8225493378b04ec":[17,0,17,1],
+"structdevice__ioctrl__data.html#aa0b658a92f878b772eacf929ffe1e180":[17,0,17,2]
 };

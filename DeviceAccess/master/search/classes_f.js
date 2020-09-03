@@ -19,7 +19,6 @@ var searchData=
   ['setforcedatalosswrite_5fproxy_5fhelper',['setForceDataLossWrite_proxy_helper',['../struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper.html',1,'ChimeraTK::UnifiedBackendTest']]],
   ['setforcedatalosswrite_5fproxy_5fhelper_3c_20t_2c_20false_20_3e',['setForceDataLossWrite_proxy_helper&lt; T, false &gt;',['../struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper_3_01_t_00_01false_01_4.html',1,'ChimeraTK::UnifiedBackendTest']]],
   ['sharedaccessor',['SharedAccessor',['../struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html',1,'ChimeraTK::LogicalNameMappingBackend']]],
-  ['sharedaccessor_3c_20uint64_5ft_20_3e',['SharedAccessor&lt; uint64_t &gt;',['../struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html',1,'ChimeraTK::LogicalNameMappingBackend']]],
   ['shareddummybackend',['SharedDummyBackend',['../class_chimera_t_k_1_1_shared_dummy_backend.html',1,'ChimeraTK']]],
   ['staticcore',['StaticCore',['../struct_static_core.html',1,'']]],
   ['stow_5fprivate',['stow_private',['../structaccess_private_data_1_1stow__private.html',1,'accessPrivateData']]],

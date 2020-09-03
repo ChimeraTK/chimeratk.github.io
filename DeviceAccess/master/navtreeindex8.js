@@ -1,7 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"class_pcie_backend_test.html":[17,0,54],
-"class_pcie_backend_test.html#a0f0b11cd82ff3497ce3d211bbc0db699":[17,0,54,8],
 "class_pcie_backend_test.html#a18cadb478a8f1d17ad8bef4dbd94ac5f":[17,0,54,0],
 "class_pcie_backend_test.html#a2b469d1e64d7ec199b9e9b517e167d10":[17,0,54,12],
 "class_pcie_backend_test.html#a3ac8298d3a88e08f9f67b5039c56d565":[17,0,54,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX8 =
 "device__backends_2pcie_2include_2pciedev__io_8h.html#aa293c11b73c1e8a741c9060d8ef1c021":[18,0,1,2,0,2,10],
 "device__backends_2pcie_2include_2pciedev__io_8h.html#aba7e14009372d9742940885711d7890e":[18,0,1,2,0,2,36],
 "device__backends_2pcie_2include_2pciedev__io_8h.html#abc50dc315c651c129149ea8f543e23ea":[18,0,1,2,0,2,29],
-"device__backends_2pcie_2include_2pciedev__io_8h.html#ace7f77e5691514de1c5a1f8c16d3025c":[18,0,1,2,0,2,8]
+"device__backends_2pcie_2include_2pciedev__io_8h.html#ace7f77e5691514de1c5a1f8c16d3025c":[18,0,1,2,0,2,8],
+"device__backends_2pcie_2include_2pciedev__io_8h.html#acf195079e65702428087887dd5649ffc":[18,0,1,2,0,2,16],
+"device__backends_2pcie_2include_2pciedev__io_8h.html#ae4a61739d33de556c654b0b2d3458549":[18,0,1,2,0,2,24]
 };

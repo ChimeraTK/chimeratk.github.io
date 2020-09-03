@@ -82,7 +82,6 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_logical_name_ma
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -94,27 +93,13 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_logical_name_ma
  <a href="struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ChimeraTK::LogicalNameMappingBackend::SharedAccessor&lt; UserType &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor__inherit__graph.svg" width="254" height="186"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c70cebd85bd3474ef47462fc6bab44e"><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html#a8c70cebd85bd3474ef47462fc6bab44e">operationInProgressInSameThread</a> ()</td></tr>
-<tr class="memdesc:a8c70cebd85bd3474ef47462fc6bab44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to a thread-local flag which indicates whether an operation on the shared accessor is currently in progress by the same thread.  <a href="#a8c70cebd85bd3474ef47462fc6bab44e">More...</a><br /></td></tr>
-<tr class="separator:a8c70cebd85bd3474ef47462fc6bab44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa65bfb2a352ffe3d3730a72b8ffc3f35"><td class="memItemLeft" align="right" valign="top">boost::weak_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html#aa65bfb2a352ffe3d3730a72b8ffc3f35">accessor</a></td></tr>
 <tr class="separator:aa65bfb2a352ffe3d3730a72b8ffc3f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a884eb8b13559ab852d03e3b13189a2c7"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html#a884eb8b13559ab852d03e3b13189a2c7">mutex</a></td></tr>
-<tr class="separator:a884eb8b13559ab852d03e3b13189a2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb87eec35875c0a700dd72036303ee5"><td class="memItemLeft" align="right" valign="top">std::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html#afeb87eec35875c0a700dd72036303ee5">mutex</a></td></tr>
+<tr class="separator:afeb87eec35875c0a700dd72036303ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename UserType&gt;<br />
@@ -124,47 +109,14 @@ struct ChimeraTK::LogicalNameMappingBackend::SharedAccessor&lt; UserType &gt;</h
 <p>See sharedAccessorMap data member. </p>
 
 <p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00077">77</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8c70cebd85bd3474ef47462fc6bab44e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c70cebd85bd3474ef47462fc6bab44e">&#9670;&nbsp;</a></span>operationInProgressInSameThread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool &amp; <a class="el" href="struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html">ChimeraTK::LogicalNameMappingBackend::SharedAccessor</a>&lt; T &gt;::operationInProgressInSameThread </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns a reference to a thread-local flag which indicates whether an operation on the shared accessor is currently in progress by the same thread. </p>
-<p>This flag is used to avoid dead-locks when attempting to lock the mutex in preXxx of the decorator-like accessor, which would occur e.g. in TransferGroups when preXxx is called for all decorator-likes using the same accessor. When calling this function, the accessor weak_ptr must be locked, e.g. a shared_ptr must be held. </p>
-
-<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00290">290</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor_a8c70cebd85bd3474ef47462fc6bab44e_icgraph.svg" width="543" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="aa65bfb2a352ffe3d3730a72b8ffc3f35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa65bfb2a352ffe3d3730a72b8ffc3f35">&#9670;&nbsp;</a></span>accessor</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType&gt; </div>
+template&lt;typename UserType &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">boost::weak_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt;UserType&gt; &gt; <a class="el" href="struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html">ChimeraTK::LogicalNameMappingBackend::SharedAccessor</a>&lt; UserType &gt;::accessor</td>
@@ -176,16 +128,16 @@ template&lt;typename UserType&gt; </div>
 
 </div>
 </div>
-<a id="a884eb8b13559ab852d03e3b13189a2c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a884eb8b13559ab852d03e3b13189a2c7">&#9670;&nbsp;</a></span>mutex</h2>
+<a id="afeb87eec35875c0a700dd72036303ee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb87eec35875c0a700dd72036303ee5">&#9670;&nbsp;</a></span>mutex</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename UserType&gt; </div>
+template&lt;typename UserType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::mutex <a class="el" href="struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html">ChimeraTK::LogicalNameMappingBackend::SharedAccessor</a>&lt; UserType &gt;::mutex</td>
+          <td class="memname">std::recursive_mutex <a class="el" href="struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html">ChimeraTK::LogicalNameMappingBackend::SharedAccessor</a>&lt; UserType &gt;::mutex</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -194,9 +146,8 @@ template&lt;typename UserType&gt; </div>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following files:<ul>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>device_backends/LogicalNameMapping/include/<a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a></li>
-<li>device_backends/LogicalNameMapping/src/<a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -204,7 +155,7 @@ template&lt;typename UserType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html">LogicalNameMappingBackend</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html">SharedAccessor</a></li>
-    <li class="footer">Generated on Wed Sep 2 2020 03:54:04 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Sep 3 2020 03:53:49 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

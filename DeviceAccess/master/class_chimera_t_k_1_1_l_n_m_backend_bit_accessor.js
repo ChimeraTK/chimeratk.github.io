@@ -20,7 +20,6 @@ var class_chimera_t_k_1_1_l_n_m_backend_bit_accessor =
     [ "_dev", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ae0053e8b9dccc0a2ba7d32a38d841681", null ],
     [ "_fixedPointConverter", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a6b49da001999978dd11a4e91e904df84", null ],
     [ "_registerPathName", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ae66734714f8896a5c566fd19d5a7333f", null ],
-    [ "_sharedAccessor", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a53be70593b5640eda3c85031632f9885", null ],
     [ "_versionNumberTemp", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a00c3ae98af04af834bc2f17e14669d66", null ],
-    [ "lock", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a60a0bdd17a6449fd7e7c22d44836e84a", null ]
+    [ "lock", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#af195f467968cfe6db337f1a6ebd8b5bd", null ]
 ];

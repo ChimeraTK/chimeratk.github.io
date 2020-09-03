@@ -155,7 +155,6 @@ var searchData=
   ['_5fserverport',['_serverPort',['../class_chimera_t_k_1_1_rebot_dummy_session.html#a1b2d057e1fab7e52772caec327e5ffd8',1,'ChimeraTK::RebotDummySession']]],
   ['_5fsetpostreaddata',['_setPostReadData',['../class_chimera_t_k_1_1_transfer_element_test_accessor.html#a411928ed21279752e8c9381e05495bbb',1,'ChimeraTK::TransferElementTestAccessor']]],
   ['_5fsetpostreadversion',['_setPostReadVersion',['../class_chimera_t_k_1_1_transfer_element_test_accessor.html#a95aa80e089628d505bcbe630a10b2dca',1,'ChimeraTK::TransferElementTestAccessor']]],
-  ['_5fsharedaccessor',['_sharedAccessor',['../class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a53be70593b5640eda3c85031632f9885',1,'ChimeraTK::LNMBackendBitAccessor']]],
   ['_5fshortname',['_shortName',['../struct_argument.html#a36da86ea8486edfce1577578acf192eb',1,'Argument']]],
   ['_5fstartaddress',['_startAddress',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#aac8a1e7b32dd4cfde6b307df21907219',1,'ChimeraTK::NumericAddressedBackendRegisterAccessor::_startAddress()'],['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a6c7e832c7412c05fbbc7d5dd30638f9a',1,'ChimeraTK::NumericAddressedLowLevelTransferElement::_startAddress()']]],
   ['_5fstartiterators',['_startIterators',['../class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a0665694f49feda3ce82eda6db07fe67e',1,'ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor']]],
