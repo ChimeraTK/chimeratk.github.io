@@ -12,6 +12,7 @@ var searchData=
   ['modinstancetoassignlater',['modInstanceToAssignLater',['../struct_assign_module_later_app.html#ad61e643ff9bfaa1692a95552866c6ac2',1,'AssignModuleLaterApp']]],
   ['module',['module',['../struct_test_application.html#a6b058ad6b4a1a548e903c7d9b3b56824',1,'TestApplication::module()'],['../struct_test_application.html#a0ec082e835cee93b8b3fe53a5a57a2d8',1,'TestApplication::module()'],['../struct_read_only_test_application.html#a05b7835af5794bb9da5fbc4738b2d4c9',1,'ReadOnlyTestApplication::module()'],['../struct_test_application4.html#a2bb5641e8b2d46344f5c3842c2195c65',1,'TestApplication4::module()']]],
   ['module1',['module1',['../struct_test_module.html#ae5b560ae688dd0f705bc551b90a22b23',1,'TestModule']]],
+  ['module2',['module2',['../struct_test_module.html#a2f70f07e06b1c50340967d0d9adf30ed',1,'TestModule']]],
   ['modulelist',['moduleList',['../class_chimera_t_k_1_1_entity_owner.html#ac709dfcbaa6f9cfc090f617fc60e21c7',1,'ChimeraTK::EntityOwner']]],
   ['moduleoutput',['moduleOutput',['../struct_test_module1.html#a6828ce5ba370a3327780e0819231868c',1,'TestModule1']]],
   ['modulethread',['moduleThread',['../class_chimera_t_k_1_1_application_module.html#a6da2ea5bac29df0a1c69c5117a0e57e0',1,'ChimeraTK::ApplicationModule::moduleThread()'],['../class_chimera_t_k_1_1_device_module.html#ad60c1bb16b26f8cbfc441d755bffc0fe',1,'ChimeraTK::DeviceModule::moduleThread()']]],

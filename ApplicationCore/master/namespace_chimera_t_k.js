@@ -48,7 +48,7 @@ var namespace_chimera_t_k =
     [ "ModuleGraphVisitor", "class_chimera_t_k_1_1_module_graph_visitor.html", "class_chimera_t_k_1_1_module_graph_visitor" ],
     [ "ModuleGroup", "class_chimera_t_k_1_1_module_group.html", "class_chimera_t_k_1_1_module_group" ],
     [ "ModuleImpl", "class_chimera_t_k_1_1_module_impl.html", "class_chimera_t_k_1_1_module_impl" ],
-    [ "ModuleList", "class_chimera_t_k_1_1_module_list.html", "class_chimera_t_k_1_1_module_list" ],
+    [ "ModuleTree", "class_chimera_t_k_1_1_module_tree.html", "class_chimera_t_k_1_1_module_tree" ],
     [ "Multiplier", "struct_chimera_t_k_1_1_multiplier.html", "struct_chimera_t_k_1_1_multiplier" ],
     [ "PeriodicTrigger", "struct_chimera_t_k_1_1_periodic_trigger.html", "struct_chimera_t_k_1_1_periodic_trigger" ],
     [ "Profiler", "class_chimera_t_k_1_1_profiler.html", "class_chimera_t_k_1_1_profiler" ],

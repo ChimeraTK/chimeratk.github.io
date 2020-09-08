@@ -25,7 +25,7 @@ var searchData=
   ['_5finhibitwritetransfer',['_inhibitWriteTransfer',['../class_chimera_t_k_1_1_exception_handling_decorator.html#a896eb37ebab74f3f13e39b25b1dd3b8c',1,'ChimeraTK::ExceptionHandlingDecorator']]],
   ['_5finput',['_input',['../struct_chimera_t_k_1_1_status_monitor.html#a104b79b743bf87e7f3da721307c6c34d',1,'ChimeraTK::StatusMonitor']]],
   ['_5flastreceivedvalue',['_lastReceivedValue',['../class_chimera_t_k_1_1_consuming_fan_out.html#a7765eed336654e5f4a8d1d76d43b978c',1,'ChimeraTK::ConsumingFanOut']]],
-  ['_5fmodulelist',['_moduleList',['../struct_chimera_t_k_1_1_config_reader.html#a0a8337c260f18a86c8a43daacc050100',1,'ChimeraTK::ConfigReader']]],
+  ['_5fmoduletree',['_moduleTree',['../struct_chimera_t_k_1_1_config_reader.html#a719aee8228348a43efff2a8cd878fddb',1,'ChimeraTK::ConfigReader']]],
   ['_5fmoduletype',['_moduleType',['../class_chimera_t_k_1_1_virtual_module.html#a330a7818ef3da81b87519bc03dc36205',1,'ChimeraTK::VirtualModule']]],
   ['_5fmutex',['_mutex',['../struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a43f51ee2c1ea6f99f6de0f53bb424513',1,'ChimeraTK::Application::CircularDependencyDetector']]],
   ['_5fname',['_name',['../class_chimera_t_k_1_1_entity_owner.html#a3b3c71e5ae35ad4bdbd491ac43676971',1,'ChimeraTK::EntityOwner::_name()'],['../struct_chimera_t_k_1_1_functor_fill.html#af0bd49e5be8335960aa095cd4cf204ca',1,'ChimeraTK::FunctorFill::_name()'],['../struct_chimera_t_k_1_1_array_functor_fill.html#a4470abe4b0e242ef1cd129798a25f3d6',1,'ChimeraTK::ArrayFunctorFill::_name()'],['../struct_chimera_t_k_1_1history_1_1_accessor_attacher.html#a34e9f28237c9227bc7b58c51d77649bd',1,'ChimeraTK::history::AccessorAttacher::_name()']]],

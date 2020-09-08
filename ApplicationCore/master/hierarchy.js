@@ -210,6 +210,7 @@ var hierarchy =
           ] ],
           [ "ChimeraTK::VariableGroup", "class_chimera_t_k_1_1_variable_group.html", [
             [ "ChimeraTK::DeviceModule::DeviceError", "struct_chimera_t_k_1_1_device_module_1_1_device_error.html", null ],
+            [ "ChimeraTK::ModuleTree", "class_chimera_t_k_1_1_module_tree.html", null ],
             [ "ChimeraTK::ReadBitMask< NBITS >::Output", "struct_chimera_t_k_1_1_read_bit_mask_1_1_output.html", null ],
             [ "ChimeraTK::StatusMonitorImpl< T >::OneUp", "struct_chimera_t_k_1_1_status_monitor_impl_1_1_one_up.html", null ],
             [ "ChimeraTK::WriteBitMask< NBITS >::Input", "struct_chimera_t_k_1_1_write_bit_mask_1_1_input.html", null ],
@@ -229,6 +230,9 @@ var hierarchy =
             [ "TestModule< T >::MixedGroup", "struct_test_module_1_1_mixed_group.html", null ],
             [ "TestModule< T >::Module1", "struct_test_module_1_1_module1.html", null ],
             [ "TestModule< T >::Module1::SubModule", "struct_test_module_1_1_module1_1_1_sub_module.html", null ],
+            [ "TestModule< T >::Module1::SubModule::SubSubModule", "struct_test_module_1_1_module1_1_1_sub_module_1_1_sub_sub_module.html", null ],
+            [ "TestModule< T >::Module2", "struct_test_module_1_1_module2.html", null ],
+            [ "TestModule< T >::Module2::AnotherSubModule", "struct_test_module_1_1_module2_1_1_another_sub_module.html", null ],
             [ "VectorModule::AnotherGroup", "struct_vector_module_1_1_another_group.html", null ]
           ] ]
         ] ],
@@ -247,7 +251,15 @@ var hierarchy =
     [ "ChimeraTK::FunctorSetValues", "struct_chimera_t_k_1_1_functor_set_values.html", null ],
     [ "ChimeraTK::FunctorSetValuesArray", "struct_chimera_t_k_1_1_functor_set_values_array.html", null ],
     [ "ChimeraTK::history::HistoryEntry< UserType >", "struct_chimera_t_k_1_1history_1_1_history_entry.html", null ],
-    [ "ChimeraTK::InversionOfControlAccessor< Derived >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
+    [ "ChimeraTK::InversionOfControlAccessor< Derived >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
+      [ "ChimeraTK::ScalarAccessor< UserType >", "class_chimera_t_k_1_1_scalar_accessor.html", [
+        [ "ChimeraTK::ScalarOutput< UserType >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
+        [ "ChimeraTK::ScalarOutputPushRB< UserType >", "struct_chimera_t_k_1_1_scalar_output_push_r_b.html", null ],
+        [ "ChimeraTK::ScalarPollInput< UserType >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ],
+        [ "ChimeraTK::ScalarPushInput< UserType >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
+        [ "ChimeraTK::ScalarPushInputWB< UserType >", "struct_chimera_t_k_1_1_scalar_push_input_w_b.html", null ]
+      ] ]
+    ] ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< double > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
       [ "ChimeraTK::ArrayAccessor< double >", "class_chimera_t_k_1_1_array_accessor.html", [
         [ "ChimeraTK::ArrayOutput< double >", "struct_chimera_t_k_1_1_array_output.html", null ],
@@ -424,17 +436,8 @@ var hierarchy =
         [ "ChimeraTK::ScalarPushInput< uint8_t >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ]
       ] ]
     ] ],
-    [ "ChimeraTK::InversionOfControlAccessor< ScalarAccessor< UserType > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
-      [ "ChimeraTK::ScalarAccessor< UserType >", "class_chimera_t_k_1_1_scalar_accessor.html", [
-        [ "ChimeraTK::ScalarOutput< UserType >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
-        [ "ChimeraTK::ScalarOutputPushRB< UserType >", "struct_chimera_t_k_1_1_scalar_output_push_r_b.html", null ],
-        [ "ChimeraTK::ScalarPollInput< UserType >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ],
-        [ "ChimeraTK::ScalarPushInput< UserType >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ],
-        [ "ChimeraTK::ScalarPushInputWB< UserType >", "struct_chimera_t_k_1_1_scalar_push_input_w_b.html", null ]
-      ] ]
-    ] ],
+    [ "ChimeraTK::InversionOfControlAccessor< ScalarAccessor< UserType > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
     [ "logging::Logger", "classlogging_1_1_logger.html", null ],
-    [ "ChimeraTK::ModuleList", "class_chimera_t_k_1_1_module_list.html", null ],
     [ "NDRegisterAccessor", null, [
       [ "ChimeraTK::ConstantAccessor< UserType >", "class_chimera_t_k_1_1_constant_accessor.html", null ],
       [ "ChimeraTK::FeedingFanOut< UserType >", "class_chimera_t_k_1_1_feeding_fan_out.html", null ],

@@ -3,7 +3,7 @@ var _config_reader_8cc =
     [ "Variable", "struct_chimera_t_k_1_1_variable.html", "struct_chimera_t_k_1_1_variable" ],
     [ "Array", "struct_chimera_t_k_1_1_array.html", "struct_chimera_t_k_1_1_array" ],
     [ "ConfigParser", "class_chimera_t_k_1_1_config_parser.html", "class_chimera_t_k_1_1_config_parser" ],
-    [ "ModuleList", "class_chimera_t_k_1_1_module_list.html", "class_chimera_t_k_1_1_module_list" ],
+    [ "ModuleTree", "class_chimera_t_k_1_1_module_tree.html", "class_chimera_t_k_1_1_module_tree" ],
     [ "FunctorFill", "struct_chimera_t_k_1_1_functor_fill.html", "struct_chimera_t_k_1_1_functor_fill" ],
     [ "ArrayFunctorFill", "struct_chimera_t_k_1_1_array_functor_fill.html", "struct_chimera_t_k_1_1_array_functor_fill" ],
     [ "FunctorSetValues", "struct_chimera_t_k_1_1_functor_set_values.html", "struct_chimera_t_k_1_1_functor_set_values" ],
