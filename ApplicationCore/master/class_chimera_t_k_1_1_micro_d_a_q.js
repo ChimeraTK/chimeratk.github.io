@@ -1,8 +1,9 @@
 var class_chimera_t_k_1_1_micro_d_a_q =
 [
-    [ "AccessorList", "class_chimera_t_k_1_1_micro_d_a_q.html#a2cd3ddd4c4333b8e55694e769342c77b", null ],
+    [ "AccessorList", "class_chimera_t_k_1_1_micro_d_a_q.html#a11c63024bc13bf915142e66b82a61ae7", null ],
     [ "NameList", "class_chimera_t_k_1_1_micro_d_a_q.html#ac8f02608afc09594ad1d81b647c00edc", null ],
-    [ "MicroDAQ", "class_chimera_t_k_1_1_micro_d_a_q.html#aaaebad3f79ca19918081fbaa1632b229", null ],
+    [ "MicroDAQ", "class_chimera_t_k_1_1_micro_d_a_q.html#ad5b886fa347048fd79e148d0d0118a51", null ],
+    [ "MicroDAQ", "class_chimera_t_k_1_1_micro_d_a_q.html#acc79076a92dc6ed239bc435ee2fa784c", null ],
     [ "MicroDAQ", "class_chimera_t_k_1_1_micro_d_a_q.html#ab97c3f6b66dc90d485fe1847ee6c4dfb", null ],
     [ "addSource", "class_chimera_t_k_1_1_micro_d_a_q.html#a28107771e09fbd64c97f7e95a5ca5118", null ],
     [ "addSource", "class_chimera_t_k_1_1_micro_d_a_q.html#a1aecb7863d8b114c12fd1b1f5bfebc89", null ],
@@ -16,7 +17,8 @@ var class_chimera_t_k_1_1_micro_d_a_q =
     [ "currentFile", "class_chimera_t_k_1_1_micro_d_a_q.html#a0337ce76e6626730ee15ff864db4f980", null ],
     [ "decimationFactor_", "class_chimera_t_k_1_1_micro_d_a_q.html#a3547ddcde372e192daf54c1415d1b85c", null ],
     [ "decimationThreshold_", "class_chimera_t_k_1_1_micro_d_a_q.html#a9ba8c6767c7f9c7f2f342f871fc36e8d", null ],
-    [ "enable", "class_chimera_t_k_1_1_micro_d_a_q.html#ab599522f70cffff454a7cef825c2eda7", null ],
+    [ "enable", "class_chimera_t_k_1_1_micro_d_a_q.html#a9b5a996e00037f560ec67f88e1cd98be", null ],
+    [ "fileNamePrefix_", "class_chimera_t_k_1_1_micro_d_a_q.html#aa3ec70d8dbef38d4998a93cdfa1a5727", null ],
     [ "groupMap", "class_chimera_t_k_1_1_micro_d_a_q.html#a8303420bbcc4eda60717bd5f19364a06", null ],
     [ "nameListMap", "class_chimera_t_k_1_1_micro_d_a_q.html#a8691973d9bfbdd8d257976e244c9a5f9", null ],
     [ "nMaxFiles", "class_chimera_t_k_1_1_micro_d_a_q.html#ae3da179c602eb71515890b1709dfbcef", null ],
