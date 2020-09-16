@@ -11,6 +11,7 @@ var searchData=
   ['module3',['Module3',['../struct_module3.html',1,'']]],
   ['modulea',['ModuleA',['../struct_module_a.html',1,'']]],
   ['moduleb',['ModuleB',['../struct_module_b.html',1,'']]],
+  ['modulec',['ModuleC',['../struct_module_c.html',1,'']]],
   ['modulegraphvisitor',['ModuleGraphVisitor',['../class_chimera_t_k_1_1_module_graph_visitor.html',1,'ChimeraTK']]],
   ['modulegroup',['ModuleGroup',['../class_chimera_t_k_1_1_module_group.html',1,'ChimeraTK']]],
   ['moduleimpl',['ModuleImpl',['../class_chimera_t_k_1_1_module_impl.html',1,'ChimeraTK']]],

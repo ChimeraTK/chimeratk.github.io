@@ -15,6 +15,7 @@ var searchData=
   ['_7efixture_5fnotestablemode',['~Fixture_noTestableMode',['../struct_fixture__no_testable_mode.html#abcb0ac6bd04d95a974c5487e9f466984',1,'Fixture_noTestableMode']]],
   ['_7efixture_5ftestfacility',['~Fixture_testFacility',['../struct_fixture__test_facility.html#aa568a9b228173d6c894450f80598b930',1,'Fixture_testFacility']]],
   ['_7efixture_5fwith_5fpoll_5fand_5fpush_5finput',['~fixture_with_poll_and_push_input',['../structfixture__with__poll__and__push__input.html#ae91820f130260f6ba75e2a45f3dc573f',1,'fixture_with_poll_and_push_input']]],
+  ['_7einittestapplication',['~InitTestApplication',['../struct_init_test_application.html#ab3c0f1dfa86bcdcf6399684fe4f2119d',1,'InitTestApplication']]],
   ['_7einternalmodule',['~InternalModule',['../class_chimera_t_k_1_1_internal_module.html#a08cf9f0376cd0f1ad9bd9bfb2676b56d',1,'ChimeraTK::InternalModule']]],
   ['_7einversionofcontrolaccessor',['~InversionOfControlAccessor',['../class_chimera_t_k_1_1_inversion_of_control_accessor.html#af60e79a119e1116b0bc00d78d458d549',1,'ChimeraTK::InversionOfControlAccessor']]],
   ['_7emodule',['~Module',['../class_chimera_t_k_1_1_module.html#a73dc438d7af52c3223cb617c93e2617c',1,'ChimeraTK::Module']]],

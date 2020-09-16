@@ -19,7 +19,7 @@ var searchData=
   ['testfacility',['TestFacility',['../class_chimera_t_k_1_1_test_facility.html',1,'ChimeraTK']]],
   ['testfixture',['TestFixture',['../struct_test_fixture.html',1,'']]],
   ['testfixturewitheceptiondummy',['TestFixtureWithEceptionDummy',['../struct_test_fixture_with_eception_dummy.html',1,'']]],
-  ['testmodule',['TestModule',['../struct_read_only_test_application_1_1_test_module.html',1,'ReadOnlyTestApplication::TestModule'],['../struct_test_module.html',1,'TestModule&lt; T &gt;'],['../struct_first_hierarchy_1_1_test_module.html',1,'FirstHierarchy::TestModule'],['../struct_second_hierarchy_1_1_test_module.html',1,'SecondHierarchy::TestModule']]],
+  ['testmodule',['TestModule',['../struct_first_hierarchy_1_1_test_module.html',1,'FirstHierarchy::TestModule'],['../struct_second_hierarchy_1_1_test_module.html',1,'SecondHierarchy::TestModule'],['../struct_read_only_test_application_1_1_test_module.html',1,'ReadOnlyTestApplication::TestModule'],['../struct_test_module.html',1,'TestModule&lt; T &gt;']]],
   ['testmodule1',['TestModule1',['../struct_test_module1.html',1,'']]],
   ['testmodule2',['TestModule2',['../struct_test_module2.html',1,'']]],
   ['testmodule3',['TestModule3',['../struct_test_module3.html',1,'']]],
