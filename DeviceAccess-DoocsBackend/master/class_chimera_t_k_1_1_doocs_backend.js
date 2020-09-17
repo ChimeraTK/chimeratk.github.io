@@ -16,5 +16,6 @@ var class_chimera_t_k_1_1_doocs_backend =
     [ "DoocsBackendRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend.html#a8c596c0085374b46950ac3868ff637e0", null ],
     [ "_asyncReadActivated", "class_chimera_t_k_1_1_doocs_backend.html#a19b7e95c78800543c5031042a45143bc", null ],
     [ "_catalogue_mutable", "class_chimera_t_k_1_1_doocs_backend.html#a6c014c6a4117bbe93e78b4fc6c24909c", null ],
-    [ "_serverAddress", "class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0", null ]
+    [ "_serverAddress", "class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0", null ],
+    [ "_startVersion", "class_chimera_t_k_1_1_doocs_backend.html#a422dc1c04927ead2446d814831c3e2fa", null ]
 ];
