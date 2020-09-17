@@ -8,5 +8,5 @@ var test_bidirectional_variables_8cc =
     [ "BOOST_TEST_MODULE", "test_bidirectional_variables_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_bidirectional_variables_8cc.html#a770cbc1044b9190bbc8583fa9858a27f", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_bidirectional_variables_8cc.html#ab92f83b705533f950d1ad7405f189ba0", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_bidirectional_variables_8cc.html#a97583cbb189af0767fc924d455dc8007", null ]
+    [ "BOOST_AUTO_TEST_CASE", "test_bidirectional_variables_8cc.html#a6c9c8208a9bb806350b7a2229830b5b8", null ]
 ];
