@@ -13,7 +13,7 @@ var class_chimera_t_k_1_1_rebot_backend =
     [ "_boardAddr", "class_chimera_t_k_1_1_rebot_backend.html#a47be98f8d30f8d7103c0065cf6f8d968", null ],
     [ "_connection", "class_chimera_t_k_1_1_rebot_backend.html#ab46c1a85b3ab8f92a98a8d78d98019ac", null ],
     [ "_connectionTimeout", "class_chimera_t_k_1_1_rebot_backend.html#a5b131273731812b8b3496ecfc8d78562", null ],
-    [ "_hasActiveException", "class_chimera_t_k_1_1_rebot_backend.html#a1db0a89e32fc4a939d0072cb3b3d8e40", null ],
+    [ "_hasActiveException", "class_chimera_t_k_1_1_rebot_backend.html#a13bc44375bce7fd378cf4212aecbfc9e", null ],
     [ "_heartbeatThread", "class_chimera_t_k_1_1_rebot_backend.html#a38cbb37d6a5764b629ebed3916eaf084", null ],
     [ "_lastSendTime", "class_chimera_t_k_1_1_rebot_backend.html#a1c1ae7f083194cefe211bdb77e28b159", null ],
     [ "_port", "class_chimera_t_k_1_1_rebot_backend.html#aa117e8c88a3a1001af5c8e5efa5a8c8e", null ],
