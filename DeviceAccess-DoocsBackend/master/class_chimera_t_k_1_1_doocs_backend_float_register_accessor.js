@@ -8,6 +8,5 @@ var class_chimera_t_k_1_1_doocs_backend_float_register_accessor =
     [ "doPostRead", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html#a771d961a62e5f409afec600d1e21a583", null ],
     [ "doPreWrite", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html#ab4638d6debf851130f3dfcddcf3c86fd", null ],
     [ "doPreWrite", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html#a20001a15e1af39a3d61d1a1d70db1192", null ],
-    [ "initialiseImplementation", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html#a30a1c2dcc9df93ede1e50c166ddd2a42", null ],
     [ "DoocsBackend", "class_chimera_t_k_1_1_doocs_backend_float_register_accessor.html#a6e853e82624128177b710eb80e45303f", null ]
 ];

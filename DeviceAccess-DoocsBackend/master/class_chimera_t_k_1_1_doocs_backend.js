@@ -8,6 +8,7 @@ var class_chimera_t_k_1_1_doocs_backend =
     [ "DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER", "class_chimera_t_k_1_1_doocs_backend.html#af722dad9f7247dbcc506f4fb2b6bc359", null ],
     [ "getRegisterAccessor_impl", "class_chimera_t_k_1_1_doocs_backend.html#ad275a7a9e412614591512f7aafab19c6", null ],
     [ "getRegisterCatalogue", "class_chimera_t_k_1_1_doocs_backend.html#a706cd10e5a07e138fcf56db804cf8957", null ],
+    [ "getStartVersion", "class_chimera_t_k_1_1_doocs_backend.html#a1dfcd1e520fd0026a516b60b1dfee46b", null ],
     [ "informRuntimeError", "class_chimera_t_k_1_1_doocs_backend.html#aa2d6534ffa82f11d8cf10f68320de385", null ],
     [ "isFunctional", "class_chimera_t_k_1_1_doocs_backend.html#ab2e9a53151458d87b7cec8127a8bf08a", null ],
     [ "open", "class_chimera_t_k_1_1_doocs_backend.html#ad777f3414af4944b2f9c1bafd272a801", null ],
@@ -16,6 +17,5 @@ var class_chimera_t_k_1_1_doocs_backend =
     [ "DoocsBackendRegisterAccessor", "class_chimera_t_k_1_1_doocs_backend.html#a8c596c0085374b46950ac3868ff637e0", null ],
     [ "_asyncReadActivated", "class_chimera_t_k_1_1_doocs_backend.html#a19b7e95c78800543c5031042a45143bc", null ],
     [ "_catalogue_mutable", "class_chimera_t_k_1_1_doocs_backend.html#a6c014c6a4117bbe93e78b4fc6c24909c", null ],
-    [ "_serverAddress", "class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0", null ],
-    [ "_startVersion", "class_chimera_t_k_1_1_doocs_backend.html#a422dc1c04927ead2446d814831c3e2fa", null ]
+    [ "_serverAddress", "class_chimera_t_k_1_1_doocs_backend.html#a58f45db14806046e4511b36f23ba2bb0", null ]
 ];
