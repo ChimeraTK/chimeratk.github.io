@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['post_5finit_5fepilog',['post_init_epilog',['../test_doocs_server_test_helper__skeleton_8h.html#a38623e21fbb34913ef41a02871cf1ce5',1,'testDoocsServerTestHelper_skeleton.h']]],
-  ['post_5finit_5fprolog',['post_init_prolog',['../test_doocs_server_test_helper__skeleton_8h.html#ae60e62832bff3e8fd4688f871bd66ec7',1,'testDoocsServerTestHelper_skeleton.h']]]
+  ['object_5fname',['object_name',['../_threaded_doocs_server_8h.html#a06c138c2b0b13b0e11be4e16bf242cb8',1,'object_name():&#160;testDoocsServerTestHelper_skeleton.h'],['../test_doocs_server_test_helper__skeleton_8h.html#a06c138c2b0b13b0e11be4e16bf242cb8',1,'object_name():&#160;testDoocsServerTestHelper_skeleton.h']]]
 ];
