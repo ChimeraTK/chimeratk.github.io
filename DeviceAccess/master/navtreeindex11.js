@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#aec1772ec3ef599bf91279c68dc1a25e3":[17,0,1,43,2],
 "struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#af89b6af47cb7ed5f474aa74722799844":[17,0,1,43,7],
 "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html":[17,0,1,43,0],
 "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html":[17,0,1,43,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "struct_my_register1.html#ae71fbf4b882a2f24ccdbface9b55f149":[17,0,43,7],
 "struct_my_register1.html#ae8af9f4874b179cc489cacd9b91f7261":[17,0,43,2],
 "struct_my_register1.html#af51dcdbabf3036a841b9efc18f307f4f":[17,0,43,3],
-"struct_new_backend.html":[17,0,45],
-"struct_not_registering_plugin.html":[17,0,46]
+"struct_new_backend.html":[17,0,45]
 };
