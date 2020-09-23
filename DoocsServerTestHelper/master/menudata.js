@@ -23,7 +23,16 @@ var menudata={children:[
 {text:"w",url:"functions.html#index_w"},
 {text:"~",url:"functions.html#index_0x7e"}]},
 {text:"Functions",url:"functions_func.html"},
-{text:"Variables",url:"functions_vars.html"}]}]},
+{text:"Variables",url:"functions_vars.html",children:[
+{text:"_",url:"functions_vars.html#index__"},
+{text:"a",url:"functions_vars.html#index_a"},
+{text:"d",url:"functions_vars.html#index_d"},
+{text:"e",url:"functions_vars.html#index_e"},
+{text:"l",url:"functions_vars.html#index_l"},
+{text:"m",url:"functions_vars.html#index_m"},
+{text:"q",url:"functions_vars.html#index_q"},
+{text:"s",url:"functions_vars.html#index_s"},
+{text:"u",url:"functions_vars.html#index_u"}]}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"File Members",url:"globals.html",children:[
