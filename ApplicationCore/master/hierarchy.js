@@ -250,6 +250,7 @@ var hierarchy =
     [ "Fixture_testFacility", "struct_fixture__test_facility.html", null ],
     [ "fixture_with_poll_and_push_input< enableTestFacility >", "structfixture__with__poll__and__push__input.html", null ],
     [ "ChimeraTK::FunctorFill", "struct_chimera_t_k_1_1_functor_fill.html", null ],
+    [ "ChimeraTK::FunctorGetTypeForName", "struct_chimera_t_k_1_1_functor_get_type_for_name.html", null ],
     [ "ChimeraTK::FunctorSetValues", "struct_chimera_t_k_1_1_functor_set_values.html", null ],
     [ "ChimeraTK::FunctorSetValuesArray", "struct_chimera_t_k_1_1_functor_set_values_array.html", null ],
     [ "ChimeraTK::history::HistoryEntry< UserType >", "struct_chimera_t_k_1_1history_1_1_history_entry.html", null ],

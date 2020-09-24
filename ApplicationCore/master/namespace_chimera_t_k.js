@@ -34,6 +34,7 @@ var namespace_chimera_t_k =
     [ "FeedingFanOut", "class_chimera_t_k_1_1_feeding_fan_out.html", "class_chimera_t_k_1_1_feeding_fan_out" ],
     [ "FixedLimitValue", "struct_chimera_t_k_1_1_fixed_limit_value.html", "struct_chimera_t_k_1_1_fixed_limit_value" ],
     [ "FunctorFill", "struct_chimera_t_k_1_1_functor_fill.html", "struct_chimera_t_k_1_1_functor_fill" ],
+    [ "FunctorGetTypeForName", "struct_chimera_t_k_1_1_functor_get_type_for_name.html", "struct_chimera_t_k_1_1_functor_get_type_for_name" ],
     [ "FunctorSetValues", "struct_chimera_t_k_1_1_functor_set_values.html", "struct_chimera_t_k_1_1_functor_set_values" ],
     [ "FunctorSetValuesArray", "struct_chimera_t_k_1_1_functor_set_values_array.html", "struct_chimera_t_k_1_1_functor_set_values_array" ],
     [ "InternalModule", "class_chimera_t_k_1_1_internal_module.html", "class_chimera_t_k_1_1_internal_module" ],
