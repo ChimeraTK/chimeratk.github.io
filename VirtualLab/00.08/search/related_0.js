@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main',['main',['../class_virtual_test_device.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'VirtualTestDevice']]]
+  ['dummydevicetestsuite',['DummyDeviceTestSuite',['../class_virtual_lab_test.html#a5406012fb898e6039b85d52fa484e8f7',1,'VirtualLabTest']]]
 ];
