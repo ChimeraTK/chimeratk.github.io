@@ -17,6 +17,7 @@ var dir_171063ca2b6d8df6d9147a9ad3041fe6 =
     [ "serverTestVariableMapperWithLocationAndCode.cpp", "server_test_variable_mapper_with_location_and_code_8cpp.html", "server_test_variable_mapper_with_location_and_code_8cpp" ],
     [ "serverTestXy.cpp", "server_test_xy_8cpp.html", "server_test_xy_8cpp" ],
     [ "serverTestZeroMQ.cpp", "server_test_zero_m_q_8cpp.html", "server_test_zero_m_q_8cpp" ],
+    [ "serverTestZMQ_CsToApp.cpp", "server_test_z_m_q___cs_to_app_8cpp.html", "server_test_z_m_q___cs_to_app_8cpp" ],
     [ "testBasenameFromAddress.cpp", "test_basename_from_address_8cpp.html", "test_basename_from_address_8cpp" ],
     [ "testCSAdapterEqFct.cpp", "test_c_s_adapter_eq_fct_8cpp.html", "test_c_s_adapter_eq_fct_8cpp" ],
     [ "testDoocsAdapter.cpp", "test_doocs_adapter_8cpp.html", "test_doocs_adapter_8cpp" ],
