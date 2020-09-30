@@ -53,6 +53,11 @@ var NAVTREE =
     [ "Example 2a: Application with automation module", "example2a.html", null ],
     [ "Example 3: Minimal device server", "example3.html", null ],
     [ "spec_VersionPropagation", "spec__version_propagation.html", null ],
+    [ "What's new in ApplicationCore 2.0", "whats_new__a_c_2_0.html", [
+      [ "Initial value propagation", "whats_new__a_c_2_0.html#whats_new_2_0_initial_value", [
+        [ "Required changes to existing applications", "whats_new__a_c_2_0.html#whats_new_2_0_initial_value_app_change", null ]
+      ] ]
+    ] ],
     [ "Status Monitor", "statusmonitordoc.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
