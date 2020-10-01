@@ -14,11 +14,14 @@ var searchData=
   ['setrawdata',['setRawData',['../class_register_type_abstractor.html#a478cd5890a491bafdb1d500dafdeda0f',1,'RegisterTypeAbstractor::setRawData()'],['../class_register_type_abstractor_impl.html#af5046d3fc2fb04f26b548e13f52fd740',1,'RegisterTypeAbstractorImpl::setRawData()'],['../class_register_type_abstractor_raw_impl.html#ab72bb62b2fd07eef7bd35a0116145523',1,'RegisterTypeAbstractorRawImpl::setRawData()']]],
   ['setshape',['setShape',['../class_properties_widget.html#af499d1e850fdbe8d75773620c6bfc949',1,'PropertiesWidget']]],
   ['setsize',['setSize',['../class_example_properties_widget.html#ae4f5535431a7cd2b7b0ff8ce47ba64b1',1,'ExamplePropertiesWidget']]],
+  ['settablevalue',['setTableValue',['../class_test_utilities.html#a6a0515de025d3c790084be430c621852',1,'TestUtilities::setTableValue(RegisterPropertiesWidget *widget, int row, int column, std::tuple&lt; int, int, double &gt; dataTuple)'],['../class_test_utilities.html#a03c33cb3d0993707d5dd65dc01a88901',1,'TestUtilities::setTableValue(GenericRegisterPropertiesWidget *widget, int row, int column, std::tuple&lt; int, int, double &gt; dataTuple)']]],
   ['settwodwidgetsvisible',['setTwoDWidgetsVisible',['../class_properties_widget.html#a6e11727cf0e96427d8f36bf2ffb2f7b1',1,'PropertiesWidget']]],
   ['settype',['setType',['../class_properties_widget.html#a28916a51d808bb7597008098c8037526',1,'PropertiesWidget']]],
   ['setvalue',['setValue',['../class_config_file_reader_writer.html#a8a16d95464e893a8faf501b13a9b8dc9',1,'ConfigFileReaderWriter::setValue()'],['../class_preferences_provider.html#a3fba48a3098f3bb9f1630841b039e70d',1,'PreferencesProvider::setValue()']]],
   ['show_5fplot_5fwindow_5fstring',['SHOW_PLOT_WINDOW_STRING',['../_qt_hard_mon_8cpp.html#aa260bb77f5e5f635d7495c1c4c20616f',1,'QtHardMon.cpp']]],
   ['singlethread',['SingleThread',['../class_single_thread.html',1,'']]],
   ['singletonholder',['SingletonHolder',['../class_singleton_holder.html',1,'']]],
-  ['singletonholder_2eh',['SingletonHolder.h',['../_singleton_holder_8h.html',1,'']]]
+  ['singletonholder_2eh',['SingletonHolder.h',['../_singleton_holder_8h.html',1,'']]],
+  ['switchdeviceselection',['switchDeviceSelection',['../struct_qt_hardmon__populates_register_tree__fixture.html#a3fa818ea465424fd5da28b251a4e2170',1,'QtHardmon_populatesRegisterTree_fixture']]],
+  ['switchregisterselection',['switchRegisterSelection',['../struct_qt_hardmon__populates_register_properties__fixture.html#a3a60ea2ab8e316a692a2fca99dfe8995',1,'QtHardmon_populatesRegisterProperties_fixture']]]
 ];

@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">QtHardMon
-   &#160;<span id="projectnumber">01.03.00</span>
+   &#160;<span id="projectnumber">01.03.01</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('class_register_type_abstractor_raw_imp
   <tr><td class="entry"><a class="el" href="class_register_type_abstractor_raw_impl.html#a2767c4bd279d044abbbf51bf96674de9">rawData</a>(unsigned int channelIndex, unsigned int elementIndex) const override</td><td class="entry"><a class="el" href="class_register_type_abstractor_raw_impl.html">RegisterTypeAbstractorRawImpl&lt; RAW_DATA_TYPE, COOKED_DATA_TYPE &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_register_type_abstractor_raw_impl.html#a79179c02c72a6c25fcce54896209a67a">rawDataAsHex</a>(unsigned int channelIndex, unsigned int elementIndex) const override</td><td class="entry"><a class="el" href="class_register_type_abstractor_raw_impl.html">RegisterTypeAbstractorRawImpl&lt; RAW_DATA_TYPE, COOKED_DATA_TYPE &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_register_type_abstractor_impl.html#a8380216ad523a3efa34f82f47d1110f6">rawDataType</a>() const override</td><td class="entry"><a class="el" href="class_register_type_abstractor_impl.html">RegisterTypeAbstractorImpl&lt; RAW_DATA_TYPE &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_register_type_abstractor_raw_impl.html#ab136c181bdafc0427c6ca897a832452a">read</a>()</td><td class="entry"><a class="el" href="class_register_type_abstractor_raw_impl.html">RegisterTypeAbstractorRawImpl&lt; RAW_DATA_TYPE, COOKED_DATA_TYPE &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_register_type_abstractor_raw_impl.html#af88867e4c3f1f5b2562b9ba6176f94d8">read</a>() override</td><td class="entry"><a class="el" href="class_register_type_abstractor_raw_impl.html">RegisterTypeAbstractorRawImpl&lt; RAW_DATA_TYPE, COOKED_DATA_TYPE &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_register_type_abstractor_impl.html#a27d53e92d988da53cbcfa217c115a625">RegisterTypeAbstractorImpl</a>(ChimeraTK::TwoDRegisterAccessor&lt; RAW_DATA_TYPE &gt; const &amp;accessor, ChimeraTK::DataType const &amp;rawDataType)</td><td class="entry"><a class="el" href="class_register_type_abstractor_impl.html">RegisterTypeAbstractorImpl&lt; RAW_DATA_TYPE &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_register_type_abstractor_raw_impl.html#af7923efec62373bc4798c450098fe0c7">RegisterTypeAbstractorRawImpl</a>(ChimeraTK::TwoDRegisterAccessor&lt; RAW_DATA_TYPE &gt; const &amp;accessor, ChimeraTK::DataType const &amp;rawDataType)</td><td class="entry"><a class="el" href="class_register_type_abstractor_raw_impl.html">RegisterTypeAbstractorRawImpl&lt; RAW_DATA_TYPE, COOKED_DATA_TYPE &gt;</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_register_type_abstractor_raw_impl.html#a3492d5940446fda6006906c28fd2b276">setData</a>(unsigned int channelIndex, unsigned int elementIndex, const QVariant &amp;data) override</td><td class="entry"><a class="el" href="class_register_type_abstractor_raw_impl.html">RegisterTypeAbstractorRawImpl&lt; RAW_DATA_TYPE, COOKED_DATA_TYPE &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -108,12 +108,13 @@ $(document).ready(function(){initNavTree('class_register_type_abstractor_raw_imp
   <tr><td class="entry"><a class="el" href="class_register_type_abstractor_raw_impl.html#adaa8f84b101cfc6420147e7d76fc154e">updateCachedCookedData</a>()</td><td class="entry"><a class="el" href="class_register_type_abstractor_raw_impl.html">RegisterTypeAbstractorRawImpl&lt; RAW_DATA_TYPE, COOKED_DATA_TYPE &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_register_type_abstractor_impl.html#ac2b6425f1367d47bfa26abd081a82a2a">writable</a>() override</td><td class="entry"><a class="el" href="class_register_type_abstractor_impl.html">RegisterTypeAbstractorImpl&lt; RAW_DATA_TYPE &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_register_type_abstractor_impl.html#a913162bcefc000eed04403c0a0f92361">write</a>() override</td><td class="entry"><a class="el" href="class_register_type_abstractor_impl.html">RegisterTypeAbstractorImpl&lt; RAW_DATA_TYPE &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_register_type_abstractor.html#a2541df91f2aad9cc67fa4018f0ae827f">~RegisterTypeAbstractor</a>()=default</td><td class="entry"><a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 11 2019 03:53:34 for QtHardMon by
+    <li class="footer">Generated on Thu Oct 1 2020 03:53:25 for QtHardMon by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

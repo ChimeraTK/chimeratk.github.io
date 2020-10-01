@@ -1,5 +1,6 @@
 var class_register_type_abstractor =
 [
+    [ "~RegisterTypeAbstractor", "class_register_type_abstractor.html#a2541df91f2aad9cc67fa4018f0ae827f", null ],
     [ "data", "class_register_type_abstractor.html#a224d78bce23419919af6c94330c04af2", null ],
     [ "dataAsHex", "class_register_type_abstractor.html#a47e78567f331fc0bee9610fbff17f771", null ],
     [ "isIntegral", "class_register_type_abstractor.html#a60cb6d79dac7d07c72182a97071dbea3", null ],

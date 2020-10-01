@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ui',['ui',['../class_example_properties_widget.html#a5aeddaf899014ef57378eb53f8d33fba',1,'ExamplePropertiesWidget::ui()'],['../class_properties_widget.html#adba137f054fca3c8ecedbc1bdb3ad835',1,'PropertiesWidget::ui()'],['../class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e',1,'QtHardMon::ui()']]]
+  ['onedregisteraccessor',['oneDRegisterAccessor',['../struct_register_q_tree_item__fixture.html#ae0541d0e618d57aaafdfd0e53bccc98a',1,'RegisterQTreeItem_fixture::oneDRegisterAccessor()'],['../struct_numeric_addressed_register_q_tree_item__fixture.html#a1dbc25f5068c47ed3435d57c5e412a06',1,'NumericAddressedRegisterQTreeItem_fixture::oneDRegisterAccessor()']]]
 ];

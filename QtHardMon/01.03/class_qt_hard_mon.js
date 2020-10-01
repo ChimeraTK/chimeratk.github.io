@@ -1,7 +1,7 @@
 var class_qt_hard_mon =
 [
     [ "DeviceListItem", "class_qt_hard_mon_1_1_device_list_item.html", "class_qt_hard_mon_1_1_device_list_item" ],
-    [ "QtHardMon", "class_qt_hard_mon.html#ac50e3f7f4332350413f94105d68a2d86", null ],
+    [ "QtHardMon", "class_qt_hard_mon.html#a283d6fa6d44b3d8818c5eec7e48f1782", null ],
     [ "~QtHardMon", "class_qt_hard_mon.html#a307689d5bb5904a509203086e7843c26", null ],
     [ "closeDevice", "class_qt_hard_mon.html#a5da296206e6ab06385c7c2c58cb73e2b", null ],
     [ "extractFileNameFromPath", "class_qt_hard_mon.html#a6bebae0b642d5aab09fc9b20deddef15", null ],
