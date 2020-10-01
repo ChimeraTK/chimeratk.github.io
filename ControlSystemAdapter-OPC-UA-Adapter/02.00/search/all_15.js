@@ -320,7 +320,7 @@ var searchData=
   ['ua_5flogcategory_5fsession',['UA_LOGCATEGORY_SESSION',['../open62541_8h.html#ae3af3c02fdb05fd1bd53060113aac471a56e3103283bca6c477febd153dc0bd3d',1,'open62541.h']]],
   ['ua_5flogcategory_5fuserland',['UA_LOGCATEGORY_USERLAND',['../open62541_8h.html#ae3af3c02fdb05fd1bd53060113aac471a10491284bba890887bfa5e814172df60',1,'open62541.h']]],
   ['ua_5flogger',['UA_Logger',['../open62541_8h.html#a02307a9a29d922aa0b93d93102c5b594',1,'open62541.h']]],
-  ['ua_5floglevel',['UA_LOGLEVEL',['../open62541_8h.html#a04de75528c8ceeea2a205eb264181c2e',1,'UA_LOGLEVEL():&#160;open62541.h'],['../open62541_8h.html#a8ef40be05c138d1635386794b46ebf76',1,'UA_LogLevel():&#160;open62541.h']]],
+  ['ua_5floglevel',['UA_LogLevel',['../open62541_8h.html#a8ef40be05c138d1635386794b46ebf76',1,'UA_LogLevel():&#160;open62541.h'],['../open62541_8h.html#a04de75528c8ceeea2a205eb264181c2e',1,'UA_LOGLEVEL():&#160;open62541.h']]],
   ['ua_5floglevel_5fdebug',['UA_LOGLEVEL_DEBUG',['../open62541_8h.html#a8ef40be05c138d1635386794b46ebf76a09752ee80fc12c648c77365677cc42df',1,'open62541.h']]],
   ['ua_5floglevel_5ferror',['UA_LOGLEVEL_ERROR',['../open62541_8h.html#a8ef40be05c138d1635386794b46ebf76a6b0ece0ef59ab807c2c2452ad2b77191',1,'open62541.h']]],
   ['ua_5floglevel_5ffatal',['UA_LOGLEVEL_FATAL',['../open62541_8h.html#a8ef40be05c138d1635386794b46ebf76aec913c29865add9149ef0648adadc534',1,'open62541.h']]],
