@@ -196,6 +196,8 @@ var hierarchy =
             [ "TestModule2< T >", "struct_test_module2.html", null ],
             [ "TestModule2< T >", "struct_test_module2.html", null ],
             [ "TestModule3", "struct_test_module3.html", null ],
+            [ "TestModuleWithVariableGroups", "struct_test_module_with_variable_groups.html", null ],
+            [ "TestModuleWithVariableGroups2", "struct_test_module_with_variable_groups2.html", null ],
             [ "TriggerModule", "struct_trigger_module.html", null ],
             [ "UpdateModule", "struct_update_module.html", null ],
             [ "VectorModule", "struct_vector_module.html", null ]
