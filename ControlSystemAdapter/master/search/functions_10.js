@@ -11,7 +11,6 @@ var searchData=
   ['testapplicationfixture',['TestApplicationFixture',['../struct_test_application_fixture.html#aea4c1d9787accced0de973aa4ae071e0',1,'TestApplicationFixture']]],
   ['testasyncread',['testAsyncRead',['../class_async_read_test.html#aeb471e8ef22f1848277584f619771241',1,'AsyncReadTest']]],
   ['testdecorator',['testDecorator',['../test_type_changing_decorator_8cpp.html#a5508c2f467404d24528cef39ac8ef00f',1,'testTypeChangingDecorator.cpp']]],
-  ['testmixedread',['testMixedRead',['../class_async_read_test.html#aa8edaa70e5bf74e14324fd3380815e8f',1,'AsyncReadTest']]],
   ['testreadany',['testReadAny',['../class_async_read_test.html#ad917a2b2d78b6d0183389a2e764373d1',1,'AsyncReadTest']]],
   ['threadedpvmanagerholder',['ThreadedPvManagerHolder',['../struct_threaded_pv_manager_holder.html#aa5c3d8b7b6b5cd2fc2c20851f0e37d74',1,'ThreadedPvManagerHolder::ThreadedPvManagerHolder(shared_ptr&lt; DevicePVManager &gt; devPvManager, shared_ptr&lt; ControlSystemPVManager &gt; csPvManager)'],['../struct_threaded_pv_manager_holder.html#a60a239447be428d84d3a1a41670d62d7',1,'ThreadedPvManagerHolder::ThreadedPvManagerHolder(ThreadedPvManagerHolder &amp;&amp;)=default']]],
   ['todouble',['toDouble',['../to_double_8h.html#a0ae21402a5ffb651ae173affd1354918',1,'toDouble.h']]],
