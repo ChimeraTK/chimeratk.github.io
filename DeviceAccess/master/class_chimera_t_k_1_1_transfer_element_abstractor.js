@@ -6,7 +6,7 @@ var class_chimera_t_k_1_1_transfer_element_abstractor =
     [ "getAccessModeFlags", "class_chimera_t_k_1_1_transfer_element_abstractor.html#acc639d986bbab7f30b86c6f8f8596e57", null ],
     [ "getDescription", "class_chimera_t_k_1_1_transfer_element_abstractor.html#ad13db8be528e984ee93035b5e584b7af", null ],
     [ "getHardwareAccessingElements", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a1a2e43388030a0136b71430ca8b920b7", null ],
-    [ "getHighLevelImplElement", "class_chimera_t_k_1_1_transfer_element_abstractor.html#aa171eea3cb1539fa1370753f5004df8a", null ],
+    [ "getHighLevelImplElement", "class_chimera_t_k_1_1_transfer_element_abstractor.html#abf920b0effd69fd1962d03c9c616ae2b", null ],
     [ "getId", "class_chimera_t_k_1_1_transfer_element_abstractor.html#afb4c01a7604516958f57d8ec67f4aa5e", null ],
     [ "getInternalElements", "class_chimera_t_k_1_1_transfer_element_abstractor.html#a842ee5157edbfe0e1d5c248c343a6dd4", null ],
     [ "getName", "class_chimera_t_k_1_1_transfer_element_abstractor.html#aa2ce6abbffcd87c4168594749068dd9d", null ],
