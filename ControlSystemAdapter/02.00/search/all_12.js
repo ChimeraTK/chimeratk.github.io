@@ -20,7 +20,6 @@ var searchData=
   ['testdevicecallable4',['TestDeviceCallable4',['../struct_test_device_callable4.html',1,'']]],
   ['testdevicecallable5',['TestDeviceCallable5',['../struct_test_device_callable5.html',1,'']]],
   ['testindependentcontrolcore_2ecpp',['testIndependentControlCore.cpp',['../test_independent_control_core_8cpp.html',1,'']]],
-  ['testmixedread',['testMixedRead',['../class_async_read_test.html#aa8edaa70e5bf74e14324fd3380815e8f',1,'AsyncReadTest']]],
   ['testperformance_2ecpp',['testPerformance.cpp',['../test_performance_8cpp.html',1,'']]],
   ['testpersistentdatastorage_2ecpp',['testPersistentDataStorage.cpp',['../test_persistent_data_storage_8cpp.html',1,'']]],
   ['testpvmanager_2ecpp',['testPVManager.cpp',['../test_p_v_manager_8cpp.html',1,'']]],
