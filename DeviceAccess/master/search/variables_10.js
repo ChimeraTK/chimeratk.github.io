@@ -18,6 +18,7 @@ var searchData=
   ['status',['status',['../struct_static_core.html#ad3aefae3aee28fdc99400b2655f0b5ce',1,'StaticCore']]],
   ['stop_5frebot_5fserver',['stop_rebot_server',['../namespace_chimera_t_k.html#ac86dd51067ed1b14abf11e60de2df484',1,'ChimeraTK']]],
   ['stop_5ftime',['stop_time',['../structdevice__ioctrl__time.html#a04786d897463142079bd0cc2b041efcd',1,'device_ioctrl_time']]],
+  ['subscriptions',['subscriptions',['../struct_chimera_t_k_1_1_l_n_m_backend_register_info_1_1_value_table.html#a8b7e122894f906804d8028e76138161e',1,'ChimeraTK::LNMBackendRegisterInfo::ValueTable']]],
   ['supportedflags',['supportedFlags',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6546006951dc0b02aaf98a42c3f6630c',1,'ChimeraTK::LNMBackendRegisterInfo']]],
   ['switchreadonly',['switchReadOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a744ea9762f0cd199419825506bb43b3b',1,'ChimeraTK::TestCapabilities']]],
   ['switchwriteonly',['switchWriteOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a8e0e58f4242abe9926c8e65163f0e39a',1,'ChimeraTK::TestCapabilities']]],

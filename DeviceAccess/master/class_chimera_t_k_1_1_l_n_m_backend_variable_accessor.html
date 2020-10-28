@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_l_n_m_backend_va
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor__coll__graph.svg" width="100%" height="586"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -113,6 +113,8 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_l_n_m_backend_va
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab1dbc7a69ac2852c9b4809b510ea27b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#ab1dbc7a69ac2852c9b4809b510ea27b6">LNMBackendVariableAccessor</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt; dev, const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
 <tr class="separator:ab1dbc7a69ac2852c9b4809b510ea27b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047eaafb81e8194d39bc7b43c2f33362"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a047eaafb81e8194d39bc7b43c2f33362">~LNMBackendVariableAccessor</a> ()</td></tr>
+<tr class="separator:a047eaafb81e8194d39bc7b43c2f33362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15f640648b0e3e2f5e7bd4dc77a006ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a15f640648b0e3e2f5e7bd4dc77a006ef">doReadTransferSynchronously</a> () override</td></tr>
 <tr class="memdesc:a15f640648b0e3e2f5e7bd4dc77a006ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a> for synchronous reads.  <a href="#a15f640648b0e3e2f5e7bd4dc77a006ef">More...</a><br /></td></tr>
 <tr class="separator:a15f640648b0e3e2f5e7bd4dc77a006ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +142,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4e1a38bf1600f424fe6cfa69d8af4dd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a4e1a38bf1600f424fe6cfa69d8af4dd9">doPostRead</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>, bool hasNewData) override</td></tr>
 <tr class="memdesc:a4e1a38bf1600f424fe6cfa69d8af4dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aebd5de52d8f625ea84ec0b17224c316c" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>.  <a href="#a4e1a38bf1600f424fe6cfa69d8af4dd9">More...</a><br /></td></tr>
 <tr class="separator:a4e1a38bf1600f424fe6cfa69d8af4dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfac7967b12ee312556fbb6827f3be72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#adfac7967b12ee312556fbb6827f3be72">interrupt</a> () override</td></tr>
+<tr class="memdesc:adfac7967b12ee312556fbb6827f3be72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return from a blocking read immediately and throw boost::thread_interrupted.  <a href="#adfac7967b12ee312556fbb6827f3be72">More...</a><br /></td></tr>
+<tr class="separator:adfac7967b12ee312556fbb6827f3be72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_n_d_register_accessor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_n_d_register_accessor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">ChimeraTK::NDRegisterAccessor&lt; UserType &gt;</a></td></tr>
 <tr class="memitem:a26aa0043b2e832914f208dbe14b9df78 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#a26aa0043b2e832914f208dbe14b9df78">NDRegisterAccessor</a> (std::string const &amp;name, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> accessModeFlags, std::string const &amp;unit=std::string(<a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af4c7678155e4598ca95a4f900b9dfced">TransferElement::unitNotSet</a>), std::string const &amp;description=std::string())</td></tr>
 <tr class="memdesc:a26aa0043b2e832914f208dbe14b9df78 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor. ">NDRegisterAccessor</a> with the specified name (passed on to the transfer element).  <a href="class_chimera_t_k_1_1_n_d_register_accessor.html#a26aa0043b2e832914f208dbe14b9df78">More...</a><br /></td></tr>
@@ -289,9 +294,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ae9512ec3459b8b320678e4af4c1334 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html">TransferElementID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a5ae9512ec3459b8b320678e4af4c1334">getId</a> () const</td></tr>
 <tr class="memdesc:a5ae9512ec3459b8b320678e4af4c1334 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain unique ID for this <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>, see <a class="el" href="class_chimera_t_k_1_1_transfer_element_i_d.html" title="Simple class holding a unique ID for a TransferElement. ">TransferElementID</a> for details.  <a href="class_chimera_t_k_1_1_transfer_element.html#a5ae9512ec3459b8b320678e4af4c1334">More...</a><br /></td></tr>
 <tr class="separator:a5ae9512ec3459b8b320678e4af4c1334 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af92b78c177bc98923a78a0d4faaf9e05 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05">interrupt</a> ()</td></tr>
-<tr class="memdesc:af92b78c177bc98923a78a0d4faaf9e05 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return from a blocking read immediately and throw boost::thread_interrupted.  <a href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05">More...</a><br /></td></tr>
-<tr class="separator:af92b78c177bc98923a78a0d4faaf9e05 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dc6f496a4965a7e81b0c36463ac9ce9 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memTemplParams" colspan="2">template&lt;typename QUEUE_TYPE &gt; </td></tr>
 <tr class="memitem:a7dc6f496a4965a7e81b0c36463ac9ce9 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7dc6f496a4965a7e81b0c36463ac9ce9">interrupt_impl</a> (QUEUE_TYPE &amp;dataTransportQueue)</td></tr>
 <tr class="memdesc:a7dc6f496a4965a7e81b0c36463ac9ce9 inherit pub_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05" title="Return from a blocking read immediately and throw boost::thread_interrupted. ">interrupt()</a> for TransferElements which support <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a>.  <a href="class_chimera_t_k_1_1_transfer_element.html#a7dc6f496a4965a7e81b0c36463ac9ce9">More...</a><br /></td></tr>
@@ -341,17 +343,18 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a863be1543fde3b005215105291285f16"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a863be1543fde3b005215105291285f16">_info</a></td></tr>
 <tr class="memdesc:a863be1543fde3b005215105291285f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">register information.  <a href="#a863be1543fde3b005215105291285f16">More...</a><br /></td></tr>
 <tr class="separator:a863be1543fde3b005215105291285f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab90fc449f07242d041df323c95f87218"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298df">DataValidity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#ab90fc449f07242d041df323c95f87218">_valueTableDataValidity</a> {<a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfa444bcb3a3fcf8389296c49467f27e1d6">DataValidity::ok</a>}</td></tr>
-<tr class="memdesc:ab90fc449f07242d041df323c95f87218"><td class="mdescLeft">&#160;</td><td class="mdescRight">The validity of the data in the value table of _info.  <a href="#ab90fc449f07242d041df323c95f87218">More...</a><br /></td></tr>
-<tr class="separator:ab90fc449f07242d041df323c95f87218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34307ddff43c6c4bcbef9c341a670da7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a34307ddff43c6c4bcbef9c341a670da7">_wordOffsetInRegister</a></td></tr>
 <tr class="memdesc:a34307ddff43c6c4bcbef9c341a670da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Word offset when reading.  <a href="#a34307ddff43c6c4bcbef9c341a670da7">More...</a><br /></td></tr>
 <tr class="separator:a34307ddff43c6c4bcbef9c341a670da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93163f19acdf7505ad4a4e269c17ee74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a93163f19acdf7505ad4a4e269c17ee74">_fixedPointConverter</a></td></tr>
-<tr class="memdesc:a93163f19acdf7505ad4a4e269c17ee74"><td class="mdescLeft">&#160;</td><td class="mdescRight">fixed point converter to handle type conversions from our "raw" type int to the requested user type.  <a href="#a93163f19acdf7505ad4a4e269c17ee74">More...</a><br /></td></tr>
-<tr class="separator:a93163f19acdf7505ad4a4e269c17ee74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe5a9859928752f4a294eaf9a1c111a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_register_info_1_1_value_table.html">LNMBackendRegisterInfo::ValueTable</a>&lt; UserType &gt;::QueuedValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#abe5a9859928752f4a294eaf9a1c111a5">_queueValue</a></td></tr>
+<tr class="memdesc:abe5a9859928752f4a294eaf9a1c111a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intermediate buffer used when receiving value from queue, as writing to application buffer must only happen in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a4e1a38bf1600f424fe6cfa69d8af4dd9" title="Backend specific implementation of postRead(). ">doPostRead()</a>.  <a href="#abe5a9859928752f4a294eaf9a1c111a5">More...</a><br /></td></tr>
+<tr class="separator:abe5a9859928752f4a294eaf9a1c111a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1faf9e348d58077399543b20ff0b3e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#ad1faf9e348d58077399543b20ff0b3e7">currentVersion</a> {nullptr}</td></tr>
+<tr class="memdesc:ad1faf9e348d58077399543b20ff0b3e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version number of the last transfer.  <a href="#ad1faf9e348d58077399543b20ff0b3e7">More...</a><br /></td></tr>
 <tr class="separator:ad1faf9e348d58077399543b20ff0b3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0a849b529297895a4740ddb2739d2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a3a0a849b529297895a4740ddb2739d2d">_flags</a></td></tr>
+<tr class="memdesc:a3a0a849b529297895a4740ddb2739d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">access mode flags  <a href="#a3a0a849b529297895a4740ddb2739d2d">More...</a><br /></td></tr>
+<tr class="separator:a3a0a849b529297895a4740ddb2739d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_n_d_register_accessor"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_n_d_register_accessor')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">ChimeraTK::NDRegisterAccessor&lt; UserType &gt;</a></td></tr>
 <tr class="memitem:ab3e9f790076370e901fd8c6079ed6770 inherit pro_attribs_class_chimera_t_k_1_1_n_d_register_accessor"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; UserType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#ab3e9f790076370e901fd8c6079ed6770">buffer_2D</a></td></tr>
 <tr class="memdesc:ab3e9f790076370e901fd8c6079ed6770 inherit pro_attribs_class_chimera_t_k_1_1_n_d_register_accessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer of converted data elements.  <a href="class_chimera_t_k_1_1_n_d_register_accessor.html#ab3e9f790076370e901fd8c6079ed6770">More...</a><br /></td></tr>
@@ -416,9 +419,6 @@ class ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</h3>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename UserType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">ChimeraTK::LNMBackendVariableAccessor</a>&lt; UserType &gt;::<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">LNMBackendVariableAccessor</a> </td>
@@ -456,20 +456,44 @@ template&lt;typename UserType &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00027">27</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00091">91</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor_ab1dbc7a69ac2852c9b4809b510ea27b6_cgraph.svg" width="588" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor_ab1dbc7a69ac2852c9b4809b510ea27b6_cgraph.svg" width="100%" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a047eaafb81e8194d39bc7b43c2f33362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a047eaafb81e8194d39bc7b43c2f33362">&#9670;&nbsp;</a></span>~LNMBackendVariableAccessor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">ChimeraTK::LNMBackendVariableAccessor</a>&lt; UserType &gt;::~<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">LNMBackendVariableAccessor</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00166">166</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor_a047eaafb81e8194d39bc7b43c2f33362_cgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -507,7 +531,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -521,13 +545,13 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00113">113</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00269">269</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor_a4e1a38bf1600f424fe6cfa69d8af4dd9_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor_a4e1a38bf1600f424fe6cfa69d8af4dd9_cgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -554,7 +578,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -565,7 +589,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a60d3b43f03bed1cf27c57fd7e0c76127">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00107">107</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00260">260</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -600,7 +624,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -611,7 +635,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00068">68</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00190">190</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -635,7 +659,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -650,7 +674,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a948f1bec4d00fce4ef5d5ea8fc35f8d5">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00062">62</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00181">181</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -675,7 +699,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -688,13 +712,13 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00083">83</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00204">204</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor_aa665dda2edf4b9aab028d16aafe686ee_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor_aa665dda2edf4b9aab028d16aafe686ee_cgraph.svg" width="100%" height="378"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -731,7 +755,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a36b8f2cad449056d909560e371c78229">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00151">151</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00076">76</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -768,7 +792,53 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a561932e1a87dcc57cb3525a9980bdf49">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00155">155</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00080">80</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+
+</div>
+</div>
+<a id="adfac7967b12ee312556fbb6827f3be72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfac7967b12ee312556fbb6827f3be72">&#9670;&nbsp;</a></span>interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">ChimeraTK::LNMBackendVariableAccessor</a>&lt; UserType &gt;::interrupt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return from a blocking read immediately and throw boost::thread_interrupted. </p>
+<p>This function can be used to shutdown a thread waiting on data to arrive, which might never happen because the sending part of the application is already shut down, or there is no new data at the moment.</p>
+<p>This function can only be used for TransferElements with <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a>. Otherwise it will throw a <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a>.</p>
+<p>Note that this function does not stop the sending thread. It just places a boost::thread_interrupted exception on the _TransferElement::_readQueue, so a waiting <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa21ae3855a6df0e877865702df066f5e" title="Read the data from the device. ">read()</a> has something to receive and returns. If regular data is put into the queue just before the exception, this is received first. Hence it is not guaranteed that the read call that is supposed to be interrupted will actually throw an exception. But it is guaranteed that it returns immediately. An it is guarantted that eventually the boost::thread_interrupted exception will be received.</p>
+<p>See <a class="el" href="spec__transfer_element.html#transferElement_B_8_6">Technical specification: TransferElement B.8.6</a></p>
+<p>Implementation notice: This default implementation is always throwing. Each ThransferElement implementation that supports <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> has to override it like this: void <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#adfac7967b12ee312556fbb6827f3be72" title="Return from a blocking read immediately and throw boost::thread_interrupted. ">interrupt()</a> override { this-&gt;interrupt_impl(this-&gt;_myDataTransportQueue); } </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05">ChimeraTK::TransferElement</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00295">295</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor_adfac7967b12ee312556fbb6827f3be72_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -792,7 +862,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -802,7 +872,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00103">103</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00246">246</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -826,7 +896,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -836,7 +906,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00101">101</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00239">239</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -860,7 +930,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -870,7 +940,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00105">105</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00253">253</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -895,7 +965,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -907,7 +977,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#acfe89e1cf7c5d45797fd062b9faaea6a">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00097">97</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00232">232</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -942,7 +1012,15 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a791a4902b649e859fbadea20cc90ede2">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00157">157</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00082">82</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor_a6539b6ca4b91c3a1aab9b31547b84b87_cgraph.svg" width="512" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -971,12 +1049,12 @@ template&lt;typename UserType &gt; </div>
 
 <p>backend device </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00133">133</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00057">57</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
 
 </div>
 </div>
-<a id="a93163f19acdf7505ad4a4e269c17ee74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93163f19acdf7505ad4a4e269c17ee74">&#9670;&nbsp;</a></span>_fixedPointConverter</h2>
+<a id="a3a0a849b529297895a4740ddb2739d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a0a849b529297895a4740ddb2739d2d">&#9670;&nbsp;</a></span>_flags</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -987,7 +1065,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converter.html">FixedPointConverter</a> <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">ChimeraTK::LNMBackendVariableAccessor</a>&lt; UserType &gt;::_fixedPointConverter</td>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">ChimeraTK::LNMBackendVariableAccessor</a>&lt; UserType &gt;::_flags</td>
         </tr>
       </table>
   </td>
@@ -997,10 +1075,9 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>fixed point converter to handle type conversions from our "raw" type int to the requested user type. </p>
-<p>Note: no actual fixed point conversion is done, it is just used for the type conversion! </p>
+<p>access mode flags </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00149">149</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00074">74</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +1106,36 @@ template&lt;typename UserType &gt; </div>
 <p>register information. </p>
 <p>We have a shared pointer to the original <a class="el" href="class_chimera_t_k_1_1_register_info.html" title="DeviceBackend-independent register description. ">RegisterInfo</a> inside the map, since we need to modify the value in it (in case of a writeable variable register) </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00138">138</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00061">61</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+
+</div>
+</div>
+<a id="abe5a9859928752f4a294eaf9a1c111a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe5a9859928752f4a294eaf9a1c111a5">&#9670;&nbsp;</a></span>_queueValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_register_info_1_1_value_table.html">LNMBackendRegisterInfo::ValueTable</a>&lt;UserType&gt;::QueuedValue <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">ChimeraTK::LNMBackendVariableAccessor</a>&lt; UserType &gt;::_queueValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Intermediate buffer used when receiving value from queue, as writing to application buffer must only happen in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a4e1a38bf1600f424fe6cfa69d8af4dd9" title="Backend specific implementation of postRead(). ">doPostRead()</a>. </p>
+<p>Only used when wait_for_new_data is set. </p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00068">68</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1057,35 +1163,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>register and module name </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00130">130</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
-
-</div>
-</div>
-<a id="ab90fc449f07242d041df323c95f87218"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab90fc449f07242d041df323c95f87218">&#9670;&nbsp;</a></span>_valueTableDataValidity</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UserType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298df">DataValidity</a> <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">ChimeraTK::LNMBackendVariableAccessor</a>&lt; UserType &gt;::_valueTableDataValidity {<a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfa444bcb3a3fcf8389296c49467f27e1d6">DataValidity::ok</a>}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The validity of the data in the value table of _info. </p>
-
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00141">141</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00054">54</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1113,7 +1191,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Word offset when reading. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00144">144</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00064">64</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1139,7 +1217,9 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00160">160</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
+<p>Version number of the last transfer. </p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html#l00071">71</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_variable_accessor_8h_source.html">LNMBackendVariableAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1152,7 +1232,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html">LNMBackendVariableAccessor</a></li>
-    <li class="footer">Generated on Fri Oct 23 2020 03:53:20 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Oct 28 2020 04:53:14 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

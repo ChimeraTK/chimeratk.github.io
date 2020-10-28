@@ -4,5 +4,5 @@ var struct_reg_array_variable =
     [ "rawUserType", "struct_reg_array_variable.html#a315721b8f8260a166d55d59c50d26554", null ],
     [ "nElementsPerChannel", "struct_reg_array_variable.html#a85dcf566bed21d84f1a76b9a1e792c1b", null ],
     [ "path", "struct_reg_array_variable.html#a5205cfab997607e757385e36bbf3c5f8", null ],
-    [ "value", "struct_reg_array_variable.html#ad0f473bf4c683ce7763b3dff901627ec", null ]
+    [ "increment", "struct_reg_array_variable.html#a449421101f738aaaf3c92b0e83a0a24b", null ]
 ];

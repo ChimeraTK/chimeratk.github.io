@@ -18,6 +18,7 @@ var class_chimera_t_k_1_1_logical_name_mapping_backend =
     [ "LNMBackendChannelAccessor", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a1c0b8d785b19438fd99732c526f068cb", null ],
     [ "LNMBackendRegisterAccessor", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a98fc73a54316e87b50c1a80625692d51", null ],
     [ "LNMBackendVariableAccessor", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#acd3e54bb07d8008c355b3c584050d5a6", null ],
+    [ "_asyncReadActive", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a808c50e22a1e4651388f607597d3ca97", null ],
     [ "_catalogue_mutable", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#ad2eb01c9a9cacf4adcc1d6b8a1508afe", null ],
     [ "_devices", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#a7951db5c4623f94e23ee5761db07020c", null ],
     [ "_hasException", "class_chimera_t_k_1_1_logical_name_mapping_backend.html#abe09d8c0a49df0462566efd7e049390b", null ],

@@ -116,6 +116,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>_areaInfo
 : <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a93ccbb7a70dfc827d4f256a618864291">ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor&lt; UserType &gt;</a>
 </li>
+<li>_asyncReadActive
+: <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a808c50e22a1e4651388f607597d3ca97">ChimeraTK::LogicalNameMappingBackend</a>
+</li>
 <li>_backend
 : <a class="el" href="class_async_test_dummy_1_1_accessor.html#a6502e60adb782e6bd0e0edf152db917b">AsyncTestDummy::Accessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_dummy_register_raw_accessor.html#a742952527782a0bc99687ec6515e89bd">ChimeraTK::DummyRegisterRawAccessor</a>
@@ -292,7 +295,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_decorator.html#a31e7ec7a5daed4ef780df02a46578661">ChimeraTK::FixedPointConvertingDecorator&lt; UserType, TargetUserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html#a414669966c9e310628688f7cd10e1544">ChimeraTK::FixedPointConvertingRawDecorator&lt; TargetUserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a6b49da001999978dd11a4e91e904df84">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>
-, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a93163f19acdf7505ad4a4e269c17ee74">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>
+</li>
+<li>_flags
+: <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a3a0a849b529297895a4740ddb2739d2d">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>
 </li>
 <li>_hardwareAccessingElements
 : <a class="el" href="class_chimera_t_k_1_1_transfer_element_test_accessor.html#aad2a880b788cba7234ec445e0c0cf0c0">ChimeraTK::TransferElementTestAccessor&lt; UserType &gt;</a>
@@ -370,6 +375,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>_isReadable
 : <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a1f5b15a27a3bbb3ac150969dee69b0ff">ChimeraTK::TransferGroup</a>
+</li>
+<li>_isWrite
+: <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#a5bca893ed36171847f958d1ef2033f94">ChimeraTK::LNMBackend::MathPluginDecorator&lt; UserType &gt;</a>
 </li>
 <li>_isWriteable
 : <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a2f09459b907856e46cd595e0bed49f6c">ChimeraTK::TransferGroup</a>
@@ -538,6 +546,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>_pushVersions
 : <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a24281912d4220c24144e97dd58728ac4">ChimeraTK::ExceptionDummy</a>
 </li>
+<li>_queueValue
+: <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#abe5a9859928752f4a294eaf9a1c111a5">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>
+</li>
 <li>_rawAccessor
 : <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html#ac0f6ebe0f51b2c0a856ac8e168030b37">ChimeraTK::NumericAddressedBackendRegisterAccessor&lt; UserType, DataConverterType, isRaw &gt;</a>
 </li>
@@ -689,9 +700,6 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>_value
 : <a class="el" href="class_chimera_t_k_1_1_data_type.html#aa7ad04100934a45d506a1613f697ad3c">ChimeraTK::DataType</a>
 </li>
-<li>_valueTableDataValidity
-: <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#ab90fc449f07242d041df323c95f87218">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>
-</li>
 <li>_version
 : <a class="el" href="struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer.html#a410345297605e0aa109db3f4c213d50b">ChimeraTK::ExceptionDummyPushDecorator&lt; UserType &gt;::Buffer</a>
 </li>
@@ -728,7 +736,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 23 2020 03:53:20 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Oct 28 2020 04:53:14 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
