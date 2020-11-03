@@ -9,6 +9,7 @@ var searchData=
   ['valuetable',['valueTable',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a590a19d43436d76e0cb28cc1c9fc1bc3',1,'ChimeraTK::LNMBackendRegisterInfo']]],
   ['valuetable_5fmutex',['valueTable_mutex',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#aa3ca59f81e4a0ca2dcffa1ea698a166e',1,'ChimeraTK::LNMBackendRegisterInfo']]],
   ['valuetype',['valueType',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a0232afb5cb9aabded20da080b24ecc47',1,'ChimeraTK::LNMBackendRegisterInfo']]],
-  ['valueview',['valueView',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#a16e7c50e72e8c5fb9f82d0b1948608ba',1,'ChimeraTK::LNMBackend::MathPluginDecorator']]],
+  ['valueview',['valueView',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#ac0cd63fb4c5f046a3717e4be227a0486',1,'ChimeraTK::LNMBackend::MathPluginFormulaHelper']]],
+  ['varname',['varName',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#aaa27bc4223d25ac3fdd65465eca8dcaf',1,'ChimeraTK::LNMBackend::MathPluginFormulaHelper']]],
   ['version',['version',['../struct_chimera_t_k_1_1_l_n_m_backend_register_info_1_1_value_table_1_1_queued_value.html#aafb73a53826565ce0a9d7c6d31cb6040',1,'ChimeraTK::LNMBackendRegisterInfo::ValueTable::QueuedValue']]]
 ];

@@ -38,7 +38,7 @@ var searchData=
   ['testabledummybackend',['TestableDummyBackend',['../class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a',1,'TestableDummyBackend::TestableDummyBackend(std::string mapFileName)'],['../class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a',1,'TestableDummyBackend::TestableDummyBackend(std::string mapFileName)']]],
   ['testassign',['testAssign',['../class_version_number_test.html#a815eacde826153a8c4043ac8a9279e4a',1,'VersionNumberTest']]],
   ['testbadmappfileparse',['testBadMappFileParse',['../class_map_file_parser_test.html#aff28aa2ed039645218ec75a727b0de62',1,'MapFileParserTest']]],
-  ['testcapabilities',['TestCapabilities',['../struct_chimera_t_k_1_1_test_capabilities.html#af304b6bf9c28ead37cc807bca86dae48',1,'ChimeraTK::TestCapabilities']]],
+  ['testcapabilities',['TestCapabilities',['../struct_chimera_t_k_1_1_test_capabilities.html#a8a2ae52c6248058b176567410b782e5c',1,'ChimeraTK::TestCapabilities']]],
   ['testcheckforduplicateelements',['testCheckForDuplicateElements',['../class_device_info_map_test.html#ab0596c3badaf29c509db5ae4d06e01ec',1,'DeviceInfoMapTest']]],
   ['testcheckparsedininfo',['testCheckParsedInInfo',['../class_d_map_files_parser_test.html#ad6557f0a0deafc23f2b40b25cea0db07',1,'DMapFilesParserTest']]],
   ['testcheckregisteraddressoverlap',['testCheckRegisterAddressOverlap',['../class_map_file_test.html#adc2a6e5d363bab65a59477f61d8b975b',1,'MapFileTest']]],

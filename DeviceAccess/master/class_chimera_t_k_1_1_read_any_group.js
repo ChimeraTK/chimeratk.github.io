@@ -8,6 +8,7 @@ var class_chimera_t_k_1_1_read_any_group =
     [ "add", "class_chimera_t_k_1_1_read_any_group.html#a662fa4a8da3311e9fe1c1e1e86a4eb16", null ],
     [ "add", "class_chimera_t_k_1_1_read_any_group.html#a5f3b1d214ca8bdd742f16896fb3dc28d", null ],
     [ "finalise", "class_chimera_t_k_1_1_read_any_group.html#af53a97adcbde58b2ee8249536b30e36a", null ],
+    [ "interrupt", "class_chimera_t_k_1_1_read_any_group.html#af970686444d50c58a097a0a97bb1ced0", null ],
     [ "processPolled", "class_chimera_t_k_1_1_read_any_group.html#ae57188eba7e01de51a3f06347913f2c7", null ],
     [ "readAny", "class_chimera_t_k_1_1_read_any_group.html#a52e203fd66aed19b829db1150fb90fc1", null ],
     [ "readAnyNonBlocking", "class_chimera_t_k_1_1_read_any_group.html#a8eb7e6feb056c6920293d28004495783", null ],

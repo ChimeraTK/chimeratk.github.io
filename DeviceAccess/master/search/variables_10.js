@@ -20,8 +20,8 @@ var searchData=
   ['stop_5ftime',['stop_time',['../structdevice__ioctrl__time.html#a04786d897463142079bd0cc2b041efcd',1,'device_ioctrl_time']]],
   ['subscriptions',['subscriptions',['../struct_chimera_t_k_1_1_l_n_m_backend_register_info_1_1_value_table.html#a8b7e122894f906804d8028e76138161e',1,'ChimeraTK::LNMBackendRegisterInfo::ValueTable']]],
   ['supportedflags',['supportedFlags',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#a6546006951dc0b02aaf98a42c3f6630c',1,'ChimeraTK::LNMBackendRegisterInfo']]],
-  ['switchreadonly',['switchReadOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a744ea9762f0cd199419825506bb43b3b',1,'ChimeraTK::TestCapabilities']]],
-  ['switchwriteonly',['switchWriteOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a8e0e58f4242abe9926c8e65163f0e39a',1,'ChimeraTK::TestCapabilities']]],
-  ['symbols',['symbols',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html#afbe762724bc94cf064d77db7c4f02e5a',1,'ChimeraTK::LNMBackend::MathPluginDecorator']]],
-  ['syncread',['syncRead',['../struct_chimera_t_k_1_1_test_capabilities.html#ac1efb85a3e54ea0457b9d8af5a05b111',1,'ChimeraTK::TestCapabilities']]]
+  ['switchreadonly',['switchReadOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#ae6f1bdeae87455aba28211fcee335e07',1,'ChimeraTK::TestCapabilities']]],
+  ['switchwriteonly',['switchWriteOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#ad7fe457dca37a33e5cea24e51e39cd12',1,'ChimeraTK::TestCapabilities']]],
+  ['symbols',['symbols',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#a86cccc2b98dd88bcd9467dd898ef3a75',1,'ChimeraTK::LNMBackend::MathPluginFormulaHelper']]],
+  ['syncread',['syncRead',['../struct_chimera_t_k_1_1_test_capabilities.html#a3dc3867fd91fbc1f7a356f617d130f76',1,'ChimeraTK::TestCapabilities']]]
 ];

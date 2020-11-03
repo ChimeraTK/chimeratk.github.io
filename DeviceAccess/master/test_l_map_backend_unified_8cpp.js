@@ -35,6 +35,7 @@ var test_l_map_backend_unified_8cpp =
     [ "RegWordFirmwareWithMath_R_push", "struct_reg_word_firmware_with_math___r__push.html", "struct_reg_word_firmware_with_math___r__push" ],
     [ "RegWordFirmwareWithMath_W", "struct_reg_word_firmware_with_math___w.html", "struct_reg_word_firmware_with_math___w" ],
     [ "RegWordFirmwareAsParameterInMath", "struct_reg_word_firmware_as_parameter_in_math.html", "struct_reg_word_firmware_as_parameter_in_math" ],
+    [ "RegVariableAsPushParameterInMath", "struct_reg_variable_as_push_parameter_in_math.html", "struct_reg_variable_as_push_parameter_in_math" ],
     [ "RegMonostableTrigger", "struct_reg_monostable_trigger.html", "struct_reg_monostable_trigger" ],
     [ "BOOST_TEST_DYN_LINK", "test_l_map_backend_unified_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_l_map_backend_unified_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],

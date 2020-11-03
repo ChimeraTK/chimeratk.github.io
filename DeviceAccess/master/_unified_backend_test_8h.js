@@ -18,6 +18,7 @@ var _unified_backend_test_8h =
     [ "CHECK_EQUALITY", "_unified_backend_test_8h.html#a3b6893388f16002bc124de0fe5fc18ae", null ],
     [ "CHECK_EQUALITY_TIMEOUT", "_unified_backend_test_8h.html#a04f19c70138fca6224d58e17cc55cffd", null ],
     [ "CHECK_EQUALITY_VECTOR", "_unified_backend_test_8h.html#a28abd8da668bc6ade7349eaaf6131752", null ],
+    [ "CHECK_EQUALITY_VECTOR_TIMEOUT", "_unified_backend_test_8h.html#a928dc10e51341a04675c0c2760fc0e46", null ],
     [ "CHECK_TIMEOUT", "_unified_backend_test_8h.html#a17030ac7f00713a62e05ab6c35cb710e", null ],
     [ "STORE_APPLICATION_BUFFER", "_unified_backend_test_8h.html#a82cbc60bbcb853067a86faadd887b190", null ],
     [ "TestCapability", "_unified_backend_test_8h.html#ad026dd4a8d0c54ed5084a0ed3e51d985", [
@@ -30,5 +31,6 @@ var _unified_backend_test_8h =
     [ "compareHelper< float >", "_unified_backend_test_8h.html#a0696347ee77c11e2986d8d745d5b08fe", null ],
     [ "compareHelper< std::string >", "_unified_backend_test_8h.html#a30d24f6ea4866dacebad82c6c15082d2", null ],
     [ "to_string", "_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a", null ],
-    [ "to_string", "_unified_backend_test_8h.html#a4fbed40f4c6c4285e3e37fcf23aa535b", null ]
+    [ "to_string", "_unified_backend_test_8h.html#a4fbed40f4c6c4285e3e37fcf23aa535b", null ],
+    [ "CHECK_REPEAT_COUNT", "_unified_backend_test_8h.html#a82a79bc2ac6d5f9b12e589bcae767090", null ]
 ];

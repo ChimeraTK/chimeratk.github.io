@@ -117,6 +117,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0afe1b5ba4b4cca6bfe2513cd1822f5c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a0afe1b5ba4b4cca6bfe2513cd1822f5c"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_one_d_register_descriptor_base.html#a0afe1b5ba4b4cca6bfe2513cd1822f5c">convertRawToCooked</a> (T value)</td></tr>
 <tr class="separator:a0afe1b5ba4b4cca6bfe2513cd1822f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7173c76df76092e91e6b78a9d57bd11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_one_d_register_descriptor_base.html#ab7173c76df76092e91e6b78a9d57bd11">generateValueHook</a> ()</td></tr>
+<tr class="separator:ab7173c76df76092e91e6b78a9d57bd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdde6f46dbbf40a17e2bc4f4bd8c517a"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:acdde6f46dbbf40a17e2bc4f4bd8c517a"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_one_d_register_descriptor_base.html#acdde6f46dbbf40a17e2bc4f4bd8c517a">generateValue</a> (bool getRaw=false)</td></tr>
 <tr class="separator:acdde6f46dbbf40a17e2bc4f4bd8c517a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,7 +149,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ace6f5037e321e4955af042f265fb0537 inherit pub_attribs_struct_register_descriptor_base"><td class="memItemLeft" align="right" valign="top">Derived *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register_descriptor_base.html#ace6f5037e321e4955af042f265fb0537">derived</a> {static_cast&lt;Derived*&gt;(this)}</td></tr>
 <tr class="separator:ace6f5037e321e4955af042f265fb0537 inherit pub_attribs_struct_register_descriptor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_struct_register_descriptor_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_struct_register_descriptor_base')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="struct_register_descriptor_base.html">RegisterDescriptorBase&lt; Derived &gt;</a></td></tr>
-<tr class="memitem:ab4589e686752c387be9e0b843284db02 inherit pub_static_attribs_struct_register_descriptor_base"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register_descriptor_base.html#ab4589e686752c387be9e0b843284db02">capabilities</a> = <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;&gt;().disableForceDataLossWrite().disableAsyncReadInconsistency()</td></tr>
+<tr class="memitem:ab4589e686752c387be9e0b843284db02 inherit pub_static_attribs_struct_register_descriptor_base"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_register_descriptor_base.html#ab4589e686752c387be9e0b843284db02">capabilities</a></td></tr>
 <tr class="separator:ab4589e686752c387be9e0b843284db02 inherit pub_static_attribs_struct_register_descriptor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -156,7 +158,7 @@ struct OneDRegisterDescriptorBase&lt; Derived &gt;</h3>
 
 <p>Base descriptor for 1D accessors (and scalars) </p>
 
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00094">94</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00099">99</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0afe1b5ba4b4cca6bfe2513cd1822f5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0afe1b5ba4b4cca6bfe2513cd1822f5c">&#9670;&nbsp;</a></span>convertRawToCooked()</h2>
@@ -186,7 +188,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00103">103</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00108">108</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -218,7 +220,36 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00108">108</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00115">115</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab7173c76df76092e91e6b78a9d57bd11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7173c76df76092e91e6b78a9d57bd11">&#9670;&nbsp;</a></span>generateValueHook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_one_d_register_descriptor_base.html">OneDRegisterDescriptorBase</a>&lt; Derived &gt;::generateValueHook </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00112">112</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -250,7 +281,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00126">126</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00134">134</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -279,7 +310,7 @@ template&lt;typename Derived&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00099">99</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00104">104</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -308,7 +339,7 @@ template&lt;typename Derived&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00097">97</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00102">102</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -337,7 +368,7 @@ template&lt;typename Derived&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00142">142</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_l_map_backend_unified_8cpp_source.html#l00150">150</a> of file <a class="el" href="test_l_map_backend_unified_8cpp_source.html">testLMapBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -350,7 +381,7 @@ template&lt;typename Derived&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_one_d_register_descriptor_base.html">OneDRegisterDescriptorBase</a></li>
-    <li class="footer">Generated on Wed Oct 28 2020 04:53:13 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue Nov 3 2020 04:54:44 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

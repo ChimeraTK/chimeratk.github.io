@@ -17,6 +17,7 @@ var searchData=
   ['onedregisterdescriptorbase_3c_20regsinglewordscaled_5fw_20_3e',['OneDRegisterDescriptorBase&lt; RegSingleWordScaled_W &gt;',['../struct_one_d_register_descriptor_base.html',1,'']]],
   ['onedregisterdescriptorbase_3c_20regsinglewordscaledtwice_5fpush_20_3e',['OneDRegisterDescriptorBase&lt; RegSingleWordScaledTwice_push &gt;',['../struct_one_d_register_descriptor_base.html',1,'']]],
   ['onedregisterdescriptorbase_3c_20regvariable_20_3e',['OneDRegisterDescriptorBase&lt; RegVariable &gt;',['../struct_one_d_register_descriptor_base.html',1,'']]],
+  ['onedregisterdescriptorbase_3c_20regvariableaspushparameterinmath_20_3e',['OneDRegisterDescriptorBase&lt; RegVariableAsPushParameterInMath &gt;',['../struct_one_d_register_descriptor_base.html',1,'']]],
   ['onedregisterdescriptorbase_3c_20regwordfirmwareasparameterinmath_20_3e',['OneDRegisterDescriptorBase&lt; RegWordFirmwareAsParameterInMath &gt;',['../struct_one_d_register_descriptor_base.html',1,'']]],
   ['onedregisterdescriptorbase_3c_20regwordfirmwareforcedreadonly_20_3e',['OneDRegisterDescriptorBase&lt; RegWordFirmwareForcedReadOnly &gt;',['../struct_one_d_register_descriptor_base.html',1,'']]],
   ['onedregisterdescriptorbase_3c_20regwordfirmwareforcedreadonly_5fpush_20_3e',['OneDRegisterDescriptorBase&lt; RegWordFirmwareForcedReadOnly_push &gt;',['../struct_one_d_register_descriptor_base.html',1,'']]],

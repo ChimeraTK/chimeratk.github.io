@@ -90,6 +90,7 @@ var annotated_dup =
     [ "RegSingleWordScaled_W", "struct_reg_single_word_scaled___w.html", "struct_reg_single_word_scaled___w" ],
     [ "RegSingleWordScaledTwice_push", "struct_reg_single_word_scaled_twice__push.html", "struct_reg_single_word_scaled_twice__push" ],
     [ "RegVariable", "struct_reg_variable.html", "struct_reg_variable" ],
+    [ "RegVariableAsPushParameterInMath", "struct_reg_variable_as_push_parameter_in_math.html", "struct_reg_variable_as_push_parameter_in_math" ],
     [ "RegWordFirmwareAsParameterInMath", "struct_reg_word_firmware_as_parameter_in_math.html", "struct_reg_word_firmware_as_parameter_in_math" ],
     [ "RegWordFirmwareForcedReadOnly", "struct_reg_word_firmware_forced_read_only.html", "struct_reg_word_firmware_forced_read_only" ],
     [ "RegWordFirmwareForcedReadOnly_push", "struct_reg_word_firmware_forced_read_only__push.html", "struct_reg_word_firmware_forced_read_only__push" ],

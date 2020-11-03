@@ -15,6 +15,7 @@ var namespace_chimera_t_k_1_1_l_n_m_backend =
     [ "MathPlugin_Helper", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin___helper.html", null ],
     [ "MathPlugin_Helper< UserType, double >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin___helper_3_01_user_type_00_01double_01_4.html", null ],
     [ "MathPluginDecorator", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator" ],
+    [ "MathPluginFormulaHelper", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper" ],
     [ "MonostableTriggerPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin" ],
     [ "MonostableTriggerPlugin_Helper", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin___helper.html", null ],
     [ "MonostableTriggerPlugin_Helper< UserType, uint32_t >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin___helper_3_01_user_type_00_01uint32__t_01_4.html", null ],
