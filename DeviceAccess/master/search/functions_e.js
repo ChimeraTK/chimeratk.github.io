@@ -45,7 +45,7 @@ var searchData=
   ['resetcounters',['resetCounters',['../class_decorator_test_accessor.html#a4a671686bac8c952f1abd29c3774315c',1,'DecoratorTestAccessor::resetCounters()'],['../struct_counting_decorator.html#a9f933e35370a945419faef18478da638',1,'CountingDecorator::resetCounters()'],['../class_chimera_t_k_1_1_transfer_element_test_accessor.html#a41ea1fcb6f6fcc7bc34944029179fb4b',1,'ChimeraTK::TransferElementTestAccessor::resetCounters()']]],
   ['resizebarcontents',['resizeBarContents',['../class_chimera_t_k_1_1_dummy_backend.html#ac242edd316563f73a2801591962a4721',1,'ChimeraTK::DummyBackend']]],
   ['returninstance',['returnInstance',['../class_chimera_t_k_1_1_dummy_backend_base.html#a40b4f7314cfee45c32794b885f7a231e',1,'ChimeraTK::DummyBackendBase']]],
-  ['runpostreads',['runPostReads',['../class_chimera_t_k_1_1_transfer_group.html#a9218c8c0eba3150f46e6e26d4bb948bd',1,'ChimeraTK::TransferGroup']]],
+  ['runpostreads',['runPostReads',['../class_chimera_t_k_1_1_transfer_group.html#a89d7d1095d99972a6c404e9fa20ffdad',1,'ChimeraTK::TransferGroup']]],
   ['runtests',['runTests',['../class_chimera_t_k_1_1_unified_backend_test.html#ae1ddf7aff4441126f32b6cb1768684a8',1,'ChimeraTK::UnifiedBackendTest']]],
   ['runtime_5ferror',['runtime_error',['../class_chimera_t_k_1_1runtime__error.html#a1787cc6ae81bd4112878463a5a477603',1,'ChimeraTK::runtime_error']]],
   ['runwritecallbackfunctionsforaddressrange',['runWriteCallbackFunctionsForAddressRange',['../class_chimera_t_k_1_1_dummy_backend.html#ad604f70e94234f037cd01853b0765ce4',1,'ChimeraTK::DummyBackend']]],
