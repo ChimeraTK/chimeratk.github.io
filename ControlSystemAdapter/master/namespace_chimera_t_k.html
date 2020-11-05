@@ -176,8 +176,7 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:aa7e41ad56888f34fba9598d89cc6bbcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direction when synchronizing process variables.  <a href="namespace_chimera_t_k.html#aa7e41ad56888f34fba9598d89cc6bbcc">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:aa7e41ad56888f34fba9598d89cc6bbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a378b03423a5a360b373d3d14136c1b96"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96">DecoratorType</a> { <a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a4c3daeb243d26d7ecb2a563fdd1de8b6">DecoratorType::range_checking</a>, 
-<a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a7585f22b9855288d28ebea110ab39224">DecoratorType::limiting</a>, 
+<tr class="memitem:a378b03423a5a360b373d3d14136c1b96"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96">DecoratorType</a> { <a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a7585f22b9855288d28ebea110ab39224">DecoratorType::limiting</a>, 
 <a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a6b6318f96cdc11c6a547dcb8753e0a15">DecoratorType::C_style_conversion</a>
  }<tr class="memdesc:a378b03423a5a360b373d3d14136c1b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">There are three types of TypeChanging decorators which do different data conversions from the user data type to the implementation data type.  <a href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96">More...</a><br /></td></tr>
 </td></tr>
@@ -196,13 +195,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a2da887c3ca7c2351d7d6331b5636bd24"><td class="memItemLeft" align="right" valign="top">std::pair&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html">ControlSystemPVManager</a> &gt;, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html">DevicePVManager</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a2da887c3ca7c2351d7d6331b5636bd24">createPVManager</a> ()</td></tr>
 <tr class="memdesc:a2da887c3ca7c2351d7d6331b5636bd24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a PV manager and returns a pair containing references to its <a class="el" href="class_chimera_t_k_1_1_control_system_p_v_manager.html">ControlSystemPVManager</a> and <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html">DevicePVManager</a> interfaces.  <a href="#a2da887c3ca7c2351d7d6331b5636bd24">More...</a><br /></td></tr>
 <tr class="separator:a2da887c3ca7c2351d7d6331b5636bd24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8690be421cfecbc1fe176cc019c12060"><td class="memTemplParams" colspan="2">template&lt;class UserType &gt; </td></tr>
-<tr class="memitem:a8690be421cfecbc1fe176cc019c12060"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a8690be421cfecbc1fe176cc019c12060">getDecorator</a> (const boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &amp;transferElement, <a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96">DecoratorType</a> decoratorType=<a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a4c3daeb243d26d7ecb2a563fdd1de8b6">DecoratorType::range_checking</a>)</td></tr>
-<tr class="memdesc:a8690be421cfecbc1fe176cc019c12060"><td class="mdescLeft">&#160;</td><td class="mdescRight">The factory function for type changing decorators.  <a href="#a8690be421cfecbc1fe176cc019c12060">More...</a><br /></td></tr>
-<tr class="separator:a8690be421cfecbc1fe176cc019c12060"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d842c2ce81692303eb38cd42326c30c"><td class="memTemplParams" colspan="2">template&lt;class UserType &gt; </td></tr>
-<tr class="memitem:a4d842c2ce81692303eb38cd42326c30c"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a4d842c2ce81692303eb38cd42326c30c">getDecorator</a> (ChimeraTK::TransferElementAbstractor &amp;transferElement, <a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96">DecoratorType</a> decoratorType=<a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a4c3daeb243d26d7ecb2a563fdd1de8b6">DecoratorType::range_checking</a>)</td></tr>
-<tr class="separator:a4d842c2ce81692303eb38cd42326c30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0956da557455c1cde83d2295dd1ae961"><td class="memTemplParams" colspan="2">template&lt;class UserType &gt; </td></tr>
+<tr class="memitem:a0956da557455c1cde83d2295dd1ae961"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a0956da557455c1cde83d2295dd1ae961">getDecorator</a> (const boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &amp;transferElement, <a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96">DecoratorType</a> decoratorType=<a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a7585f22b9855288d28ebea110ab39224">DecoratorType::limiting</a>)</td></tr>
+<tr class="memdesc:a0956da557455c1cde83d2295dd1ae961"><td class="mdescLeft">&#160;</td><td class="mdescRight">The factory function for type changing decorators.  <a href="#a0956da557455c1cde83d2295dd1ae961">More...</a><br /></td></tr>
+<tr class="separator:a0956da557455c1cde83d2295dd1ae961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9cd0ba3253ed6f31af03005a2acb61"><td class="memTemplParams" colspan="2">template&lt;class UserType &gt; </td></tr>
+<tr class="memitem:a5d9cd0ba3253ed6f31af03005a2acb61"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a5d9cd0ba3253ed6f31af03005a2acb61">getDecorator</a> (ChimeraTK::TransferElementAbstractor &amp;transferElement, <a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96">DecoratorType</a> decoratorType=<a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a7585f22b9855288d28ebea110ab39224">DecoratorType::limiting</a>)</td></tr>
+<tr class="separator:a5d9cd0ba3253ed6f31af03005a2acb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade942ee5a562daf9a6bafe21ad4e39cc"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="struct_chimera_t_k_1_1_decorator_map_key.html">DecoratorMapKey</a>, boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ade942ee5a562daf9a6bafe21ad4e39cc">getGlobalDecoratorMap</a> ()</td></tr>
 <tr class="memdesc:ade942ee5a562daf9a6bafe21ad4e39cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quasi singleton to have a unique, global map across UserType templated factories.  <a href="#ade942ee5a562daf9a6bafe21ad4e39cc">More...</a><br /></td></tr>
 <tr class="separator:ade942ee5a562daf9a6bafe21ad4e39cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,17 +262,15 @@ Variables</h2></td></tr>
 
 <p>There are three types of TypeChanging decorators which do different data conversions from the user data type to the implementation data type. </p>
 <ul>
-<li>range_checking This decorator checks the limits and throws an exception of the range is exceeced (for instance if you cast a negative integer to an unsiged int, or 500 to int8_t). This decorator does proper rounding from floating point types t o integer (e.g. 6.7 to 7). </li>
 <li>limiting This decorator limits the data to the maximum possible in the target data type (for instance 500 will result in 127 in int8_t and 255 in uint8_t, -200 will be -128 in int8t, 0 in uint8_t). This decorator also does correct rounding from floating point to integer type. </li>
 <li>C_style_conversion This decorator does a direct cast like an assigment in C/C++ does it. For instance 500 (=0x1f4) will result in 0xf4 for an 8 bit integer, which is interpreted as 244 in uint8_t and -12 in int8_t. Digits after the decimal point are cut when converting a floating point value to an integer type. This decorator can be useful to display unsigned integers which use the full dynamic range in a control system which only supports signed data types (the user has to correctly interpret the 'wrong' representation), of for bit fields where it is acceptable to lose the higher bits. </li>
 </ul>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a378b03423a5a360b373d3d14136c1b96a4c3daeb243d26d7ecb2a563fdd1de8b6"></a>range_checking&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a378b03423a5a360b373d3d14136c1b96a7585f22b9855288d28ebea110ab39224"></a>limiting&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a378b03423a5a360b373d3d14136c1b96a7585f22b9855288d28ebea110ab39224"></a>limiting&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a378b03423a5a360b373d3d14136c1b96a6b6318f96cdc11c6a547dcb8753e0a15"></a>C_style_conversion&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00032">32</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00030">30</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -644,8 +641,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a8690be421cfecbc1fe176cc019c12060"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8690be421cfecbc1fe176cc019c12060">&#9670;&nbsp;</a></span>getDecorator() <span class="overload">[1/2]</span></h2>
+<a id="a0956da557455c1cde83d2295dd1ae961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0956da557455c1cde83d2295dd1ae961">&#9670;&nbsp;</a></span>getDecorator() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -662,7 +659,7 @@ template&lt;class UserType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96">DecoratorType</a>&#160;</td>
-          <td class="paramname"><em>decoratorType</em> = <code><a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a4c3daeb243d26d7ecb2a563fdd1de8b6">DecoratorType::range_checking</a></code>&#160;</td>
+          <td class="paramname"><em>decoratorType</em> = <code><a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a7585f22b9855288d28ebea110ab39224">DecoratorType::limiting</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -683,20 +680,20 @@ template&lt;class UserType &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00449">449</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00451">451</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_a8690be421cfecbc1fe176cc019c12060_cgraph.svg" width="502" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespace_chimera_t_k_a0956da557455c1cde83d2295dd1ae961_cgraph.svg" width="502" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a4d842c2ce81692303eb38cd42326c30c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d842c2ce81692303eb38cd42326c30c">&#9670;&nbsp;</a></span>getDecorator() <span class="overload">[2/2]</span></h2>
+<a id="a5d9cd0ba3253ed6f31af03005a2acb61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d9cd0ba3253ed6f31af03005a2acb61">&#9670;&nbsp;</a></span>getDecorator() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -713,7 +710,7 @@ template&lt;class UserType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96">DecoratorType</a>&#160;</td>
-          <td class="paramname"><em>decoratorType</em> = <code><a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a4c3daeb243d26d7ecb2a563fdd1de8b6">DecoratorType::range_checking</a></code>&#160;</td>
+          <td class="paramname"><em>decoratorType</em> = <code><a class="el" href="namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a7585f22b9855288d28ebea110ab39224">DecoratorType::limiting</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -723,7 +720,7 @@ template&lt;class UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00060">60</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00058">58</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -803,7 +800,7 @@ template&lt;class UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li>
-    <li class="footer">Generated on Fri Oct 23 2020 03:55:14 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Thu Nov 5 2020 04:53:48 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['range_5fchecking',['range_checking',['../namespace_chimera_t_k.html#a378b03423a5a360b373d3d14136c1b96a4c3daeb243d26d7ecb2a563fdd1de8b6',1,'ChimeraTK']]],
   ['rawusertype',['rawUserType',['../struct_register_descriptor_base.html#a71c8ed5fb79e195cb05523d89686900f',1,'RegisterDescriptorBase::rawUserType()'],['../struct_test_register.html#a841f7ed1056c2dc425407a9e2fd6e13a',1,'TestRegister::rawUserType()']]],
   ['read_5flatest',['read_latest',['../class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html#ac477f06a31df518a623a3e873a2caeb1',1,'ChimeraTK::PersistentDataStorage::Queue']]],
   ['readanygroup',['readAnyGroup',['../struct_test_application_fixture.html#a8c3cd97ce805b5f2e911b1e2ae0de922',1,'TestApplicationFixture']]],
