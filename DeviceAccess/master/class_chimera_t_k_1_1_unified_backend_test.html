@@ -117,6 +117,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_unified_backend_test_1_1force_async_read_inconsistency__proxy__helper_3_01_t_00_01false_01_4.html">forceAsyncReadInconsistency_proxy_helper&lt; T, false &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unified_backend_test_1_1has__n_values_to_test.html">has_nValuesToTest</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper.html">nValuesToTest_proxy_helper</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper_3_01_t_00_01false_01_4.html">nValuesToTest_proxy_helper&lt; T, false &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper.html">setForceDataLossWrite_proxy_helper</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper_3_01_t_00_01false_01_4.html">setForceDataLossWrite_proxy_helper&lt; T, false &gt;</a></td></tr>
@@ -294,6 +300,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a731759a055164fbf12b0468eb1d34004"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a731759a055164fbf12b0468eb1d34004"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#a731759a055164fbf12b0468eb1d34004">writeQueueLength</a> (T t)</td></tr>
 <tr class="separator:a731759a055164fbf12b0468eb1d34004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec15d95643c362e114a80e8ad75c5b6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9ec15d95643c362e114a80e8ad75c5b6"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#a9ec15d95643c362e114a80e8ad75c5b6">nValuesToTest</a> (T t)</td></tr>
+<tr class="separator:a9ec15d95643c362e114a80e8ad75c5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -356,6 +365,7 @@ template&lt;typename REG_T &gt; </div>
 <p>This function takes a register descriptor in form of a struct type as template argument and returns a new <a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html" title="Class to test any backend for correct behavior. ">UnifiedBackendTest</a> object.</p>
 <p>The register descriptor must be of the following form:</p>
 <p>struct MyRegisterDescriptor { std::string path() {return "/path/of/register";} bool isWriteable() {return true;} bool isReadable() {return true;} <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html" title="Set of AccessMode flags with additional functionality for an easier handling. ">ChimeraTK::AccessModeFlags</a> supportedFlags() {return {<a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">ChimeraTK::AccessMode::wait_for_new_data</a>};} size_t nChannels() {return 1;} size_t nElementsPerChannel() {return 5;} size_t nRuntimeErrorCases() {return 1;} // see setForceRuntimeError()</p>
+<p>/// Number of values to test in read and write tests. Put in how many calls to generateValue() are necessary /// to cover all corner cases to be tested. Should be at least 2 even if no corner cases are to be tested. /// Optional, defaults to 2. size_t <a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#a9ec15d95643c362e114a80e8ad75c5b6">nValuesToTest()</a> {return 2;}</p>
 <p>typedef int32_t minimumUserType; typedef minimumUserType rawUserType; // only used if <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11abdd166af3a63f7be696dd17a218a6ffb" title="Raw access: disable any possible conversion from the original hardware data type into the given UserT...">AccessMode::raw</a> is supprted, can be omitted otherwise</p>
 <p>/// Generate value which can be represented by the register, convert it to the UserType (e.g. using /// <a class="el" href="namespace_chimera_t_k.html#aa159464ac26217627bc921cc3e9f3c62" title="Helper function to convert numeric data into any UserType (even if it is a string etc...">ChimeraTK::numericToUserType</a>) and return it. template&lt;typename UserType&gt; std::vector&lt;std::vector&lt;UserType&gt;&gt; generateValue();</p>
 <p>/// Obtain the current value of the register, convert it to the UserType (e.g. using /// <a class="el" href="namespace_chimera_t_k.html#aa159464ac26217627bc921cc3e9f3c62" title="Helper function to convert numeric data into any UserType (even if it is a string etc...">ChimeraTK::numericToUserType</a>) and return it. template&lt;typename UserType&gt; std::vector&lt;std::vector&lt;UserType&gt;&gt; getRemoteValue();</p>
@@ -370,7 +380,7 @@ template&lt;typename REG_T &gt; </div>
 <p>Note: Instances of the register descriptors are created and discarded arbitrarily. If it is necessary to store any data (e.g. seeds for generating values), use static member variables.</p>
 <p>Properties of the register are implemented as functions instead of data members to make it easier to override values when using a common base clase for multiple descriptors to avoid code duplication (without triggering a shadowing warning). </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00275">275</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00280">280</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -410,7 +420,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00452">452</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00457">457</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -442,7 +452,7 @@ template&lt;typename REG_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00365">365</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00370">370</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -474,7 +484,7 @@ template&lt;typename REG_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00370">370</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00375">375</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +518,7 @@ template&lt;typename REG_T &gt; </div>
 
 <p>Utility functions for register traits. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00349">349</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00354">354</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -540,7 +550,7 @@ template&lt;typename REG_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00374">374</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00379">379</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -572,7 +582,7 @@ template&lt;typename REG_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00360">360</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00365">365</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -604,7 +614,7 @@ template&lt;typename REG_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00355">355</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00360">360</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -636,7 +646,39 @@ template&lt;typename REG_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00378">378</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00383">383</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+
+</div>
+</div>
+<a id="a9ec15d95643c362e114a80e8ad75c5b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ec15d95643c362e114a80e8ad75c5b6">&#9670;&nbsp;</a></span>nValuesToTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename VECTOR_OF_REGISTERS_T = boost::mpl::vector&lt;&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html">ChimeraTK::UnifiedBackendTest</a>&lt; VECTOR_OF_REGISTERS_T &gt;::nValuesToTest </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00551">551</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -668,7 +710,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 
 <p>Utility functions for recurring tasks. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00811">811</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00849">849</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -712,7 +754,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <p>Call this function within a BOOST_AUTO_TEST_CASE after calling all preparatory functions below. The tests are executed for the backend identified by the given CDD.</p>
 <p>A second CDD should be specified, if it is possible to reach the same registers through a different backend. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00691">691</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00729">729</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -762,7 +804,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00433">433</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00438">438</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -804,7 +846,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00471">471</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00476">476</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -846,7 +888,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00490">490</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00495">495</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -880,7 +922,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_11_2_1"></a><a class="el" href="spec__transfer_element.html#transferElement_B_11_2_1">B.11.2.1</a>, </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02419">2419</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02462">2462</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -923,7 +965,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 </ul>
 <p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!! TODO FIXME This test is not complete yet !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02487">2487</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02530">2530</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -965,7 +1007,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_11_6"></a><a class="el" href="spec__transfer_element.html#transferElement_B_11_6">B.11.6</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02538">2538</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02581">2581</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -1007,7 +1049,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_3_1_2_1"></a><a class="el" href="spec__transfer_element.html#transferElement_B_3_1_2_1">B.3.1.2.1</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00834">834</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00872">872</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -1050,7 +1092,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 </ul>
 <p>(Exception case is covered by B.6.4) </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00931">931</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00974">974</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -1092,7 +1134,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_3_2_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_3_2_2">B.3.2.2</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00971">971</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01014">1014</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -1134,7 +1176,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_4_2_4"></a><a class="el" href="spec__transfer_element.html#transferElement_B_4_2_4">B.4.2.4</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01030">1030</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01073">1073</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -1176,7 +1218,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_6_4"></a><a class="el" href="spec__transfer_element.html#transferElement_B_6_4">B.6.4</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01109">1109</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01152">1152</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -1218,7 +1260,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_7_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_7_2">B.7.2</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01308">1308</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01351">1351</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -1261,7 +1303,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 </ul>
 <p>Note: we do not care about <a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7aecae13117d6f0584c25a9da6c8f8415e">read()</a> vs. <a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7aafcf399c9a4d4e33eda6ff5e3b011540">readNonBlocking()</a> in this test, since that part of the implementation is in the base class and hence tested in testTransferElement. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01398">1398</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01441">1441</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -1304,7 +1346,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 </ul>
 <p>FIXME: This test is not really complete. It tests whether the latest value survives. It does not test though which other values are surviving. For this the test needs to know the length of the implementation specific data transport queue, which is currently not known to it (the length of the _readQueue continuation is always 1). </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01486">1486</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01529">1529</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
@@ -1346,7 +1388,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_8_3"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_3">B.8.3</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01535">1535</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01578">1578</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -1388,7 +1430,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_8_4"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_4">B.8.4</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01595">1595</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01638">1638</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
@@ -1430,7 +1472,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_8_5"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_5">B.8.5</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01660">1660</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01703">1703</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
@@ -1474,7 +1516,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <p>REMOVE</p>
 <p>REMOVE </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01728">1728</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01771">1771</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-18-summary" class="dynsummary" style="display:block;">
@@ -1516,7 +1558,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_8_5_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_5_2">B.8.5.2</a>, </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01793">1793</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01836">1836</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-19-summary" class="dynsummary" style="display:block;">
@@ -1558,7 +1600,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_8_5_3"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_5_3">B.8.5.3</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01857">1857</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01900">1900</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-20-summary" class="dynsummary" style="display:block;">
@@ -1600,7 +1642,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_8_6_6"></a><a class="el" href="spec__transfer_element.html#transferElement_B_8_6_6">B.8.6.6</a> (via high-level test) </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01888">1888</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01931">1931</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-21-summary" class="dynsummary" style="display:block;">
@@ -1642,7 +1684,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_9_1"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_1">B.9.1</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01942">1942</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l01985">1985</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-22-summary" class="dynsummary" style="display:block;">
@@ -1684,7 +1726,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_9_2_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_2_2">B.9.2.2</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02191">2191</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02234">2234</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-23-summary" class="dynsummary" style="display:block;">
@@ -1726,7 +1768,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_9_3_1"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_3_1">B.9.3.1</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02245">2245</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02288">2288</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-24-summary" class="dynsummary" style="display:block;">
@@ -1768,7 +1810,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_9_3_2"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_3_2">B.9.3.2</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02296">2296</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02339">2339</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-25-summary" class="dynsummary" style="display:block;">
@@ -1810,7 +1852,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_9_4_1"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_4_1">B.9.4.1</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02345">2345</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02388">2388</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-26-summary" class="dynsummary" style="display:block;">
@@ -1852,7 +1894,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_B_9_5"></a><a class="el" href="spec__transfer_element.html#transferElement_B_9_5">B.9.5</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02383">2383</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02426">2426</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-27-summary" class="dynsummary" style="display:block;">
@@ -1894,7 +1936,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_C_5_2_1_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_1_2">C.5.2.1.2</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02560">2560</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02603">2603</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-28-summary" class="dynsummary" style="display:block;">
@@ -1936,7 +1978,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_C_5_2_2_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_2_2">C.5.2.2.2</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02590">2590</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02633">2633</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-29-summary" class="dynsummary" style="display:block;">
@@ -1978,7 +2020,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_C_5_2_3_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_3_2">C.5.2.3.2</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02655">2655</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02698">2698</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-30-summary" class="dynsummary" style="display:block;">
@@ -2020,7 +2062,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_C_5_2_5_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_5_2">C.5.2.5.2</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02683">2683</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02726">2726</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-31-summary" class="dynsummary" style="display:block;">
@@ -2062,7 +2104,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_C_5_2_6_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_6_2">C.5.2.6.2</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02727">2727</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02770">2770</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-32-summary" class="dynsummary" style="display:block;">
@@ -2104,7 +2146,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_C_5_2_7_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_7_2">C.5.2.7.2</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02759">2759</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02802">2802</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-33" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-33-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-33-summary" class="dynsummary" style="display:block;">
@@ -2147,7 +2189,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_C_5_3_1"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_3_1">C.5.3.1</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02781">2781</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02824">2824</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-34-summary" class="dynsummary" style="display:block;">
@@ -2189,7 +2231,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_C_5_3_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_3_2">C.5.3.2</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02822">2822</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02865">2865</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-35" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-35-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-35-summary" class="dynsummary" style="display:block;">
@@ -2231,7 +2273,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li><a class="anchor" id="UnifiedTest_TransferElement_C_5_3_3"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_3_3">C.5.3.3</a> </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02863">2863</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02906">2906</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-36" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-36-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-36-summary" class="dynsummary" style="display:block;">
@@ -2273,7 +2315,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li>MISSING SPEC </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02904">2904</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l02947">2947</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-37" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-37-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-37-summary" class="dynsummary" style="display:block;">
@@ -2315,7 +2357,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T &gt; </div>
 <li>MISSING SPEC </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00893">893</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00934">934</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-38" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-38-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-38-summary" class="dynsummary" style="display:block;">
@@ -2355,7 +2397,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T = boost::mpl::vector&lt;&gt;&gt; </di
 <p>Call if not a real backend is tested but just a special <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> implementation. </p>
 <p>This will disable those tests which do not make sense in that context. Use this for testing the ControlSystemAdapter's ProcessArray, or the <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html" title="Base class for decorators of the NDRegisterAccessor. ">NDRegisterAccessorDecorator</a> base class. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00302">302</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00307">307</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 <div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-39-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-39-summary" class="dynsummary" style="display:block;">
@@ -2395,7 +2437,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00513">513</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00518">518</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2424,7 +2466,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T = boost::mpl::vector&lt;&gt;&gt; </di
 
 <p>Flag wheter to disable tests for the backend itself. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00389">389</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00394">394</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2452,7 +2494,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T = boost::mpl::vector&lt;&gt;&gt; </di
 
 <p>CDD for backend to test. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00386">386</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00391">391</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2478,7 +2520,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T = boost::mpl::vector&lt;&gt;&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00386">386</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00391">391</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2506,7 +2548,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T = boost::mpl::vector&lt;&gt;&gt; </di
 
 <p>boost::mpl::vector with all register descriptors </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00383">383</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00388">388</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -2519,7 +2561,7 @@ template&lt;typename VECTOR_OF_REGISTERS_T = boost::mpl::vector&lt;&gt;&gt; </di
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html">UnifiedBackendTest</a></li>
-    <li class="footer">Generated on Tue Nov 10 2020 04:53:23 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Nov 11 2020 04:53:23 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -8,6 +8,8 @@ var class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin =
     [ "openHook", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a0a99fa66c9020f37c2daefe4cb8ce47a", null ],
     [ "updateRegisterInfo", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a1ba88e8bb8d8e779c1ca925caa26183b", null ],
     [ "_backend", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a098c650c3ae425666d44d59b6a5f259e", null ],
+    [ "_enablePushParameters", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a4bb9a0035fe429d3b5113b2ad75964e5", null ],
+    [ "_formula", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a87d67e51361cc9f2fb7ce2cc66c41a7b", null ],
     [ "_h", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a99642db02be9a5bd2e4ab66eaf13ae5e", null ],
     [ "_hasPushParameter", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#aea2ebe188cfe41f7c922eaa4d5d71d72", null ],
     [ "_info", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a954890566609e17c461b54377e3d0fe3", null ],

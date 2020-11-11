@@ -32,8 +32,8 @@ var hierarchy =
     [ "ChimeraTK::BackendFactory", "class_chimera_t_k_1_1_backend_factory.html", null ],
     [ "CustomBackend::BackendRegisterer", "struct_custom_backend_1_1_backend_registerer.html", null ],
     [ "ExampleBackend::BackendRegisterer", "class_example_backend_1_1_backend_registerer.html", null ],
-    [ "WorkingBackend::BackendRegisterer", "struct_working_backend_1_1_backend_registerer.html", null ],
     [ "AnotherWorkingBackend::BackendRegisterer", "struct_another_working_backend_1_1_backend_registerer.html", null ],
+    [ "WorkingBackend::BackendRegisterer", "struct_working_backend_1_1_backend_registerer.html", null ],
     [ "WrongVersionBackend::BackendRegisterer", "struct_wrong_version_backend_1_1_backend_registerer.html", null ],
     [ "TestableDummyBackend::BackendRegisterer", "class_testable_dummy_backend_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::ExceptionDummy::BackendRegisterer", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer.html", null ],
@@ -43,8 +43,8 @@ var hierarchy =
     [ "ChimeraTK::compareModuleName_pred", "class_chimera_t_k_1_1compare_module_name__pred.html", null ],
     [ "ChimeraTK::compareRegisterInfosByName_functor", "class_chimera_t_k_1_1compare_register_infos_by_name__functor.html", null ],
     [ "ChimeraTK::Rebot::Connection", "class_chimera_t_k_1_1_rebot_1_1_connection.html", null ],
-    [ "ChimeraTK::RegisterInfoMap::const_iterator", "class_chimera_t_k_1_1_register_info_map_1_1const__iterator.html", null ],
     [ "ChimeraTK::RegisterCatalogue::const_iterator", "class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html", null ],
+    [ "ChimeraTK::RegisterInfoMap::const_iterator", "class_chimera_t_k_1_1_register_info_map_1_1const__iterator.html", null ],
     [ "ChimeraTK::copmaredRegisterInfosByName2_functor", "class_chimera_t_k_1_1copmared_register_infos_by_name2__functor.html", null ],
     [ "ChimeraTK::copmaredRegisterInfosByName_functor", "class_chimera_t_k_1_1copmared_register_infos_by_name__functor.html", null ],
     [ "ChimeraTK::CopyRegisterDecoratorTrait", "struct_chimera_t_k_1_1_copy_register_decorator_trait.html", [
@@ -110,9 +110,6 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::proxies::DummyRegisterSequence< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", null ],
     [ "DummyRegisterTest", "class_dummy_register_test.html", null ],
-    [ "enable_shared_from_this", null, [
-      [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
-    ] ],
     [ "enable_shared_from_this", null, [
       [ "ChimeraTK::DeviceBackend", "class_chimera_t_k_1_1_device_backend.html", [
         [ "ChimeraTK::DeviceBackendImpl", "class_chimera_t_k_1_1_device_backend_impl.html", [
@@ -203,6 +200,9 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "enable_shared_from_this", null, [
+      [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
+    ] ],
     [ "ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html", null ],
     [ "ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html", null ],
     [ "ChimeraTK::DeviceInfoMap::ErrorList", "class_chimera_t_k_1_1_device_info_map_1_1_error_list.html", null ],
@@ -232,12 +232,13 @@ var hierarchy =
     [ "ChimeraTK::LNMBackend::ForcePollingReadPlugin_Helper< UserType, UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin___helper_3_01_user_type_00_01_user_type_01_4.html", null ],
     [ "ChimeraTK::LNMBackend::ForceReadOnlyPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper.html", null ],
     [ "ChimeraTK::LNMBackend::ForceReadOnlyPlugin_Helper< UserType, UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper_3_01_user_type_00_01_user_type_01_4.html", null ],
+    [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::has_nValuesToTest< T >", "class_chimera_t_k_1_1_unified_backend_test_1_1has__n_values_to_test.html", null ],
     [ "std::hash< ChimeraTK::TransferElementID >", "structstd_1_1hash_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html", null ],
     [ "ChimeraTK::InstantiateLogicalNameMappingBackendFunctions< UserType >", "class_chimera_t_k_1_1_instantiate_logical_name_mapping_backend_functions.html", null ],
     [ "Integers_signed32", "struct_integers__signed32.html", null ],
-    [ "ChimeraTK::RegisterInfoMap::iterator", "class_chimera_t_k_1_1_register_info_map_1_1iterator.html", null ],
     [ "ChimeraTK::RegisterCatalogue::iterator", "class_chimera_t_k_1_1_register_catalogue_1_1iterator.html", null ],
+    [ "ChimeraTK::RegisterInfoMap::iterator", "class_chimera_t_k_1_1_register_info_map_1_1iterator.html", null ],
     [ "std::less< ChimeraTK::TransferElementID >", "structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", null ],
     [ "std::list< T >", null, [
       [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::EnableDisableActionList", "class_chimera_t_k_1_1_unified_backend_test_1_1_enable_disable_action_list.html", null ]
@@ -261,6 +262,8 @@ var hierarchy =
     [ "ChimeraTK::ReadAnyGroup::Notification", "class_chimera_t_k_1_1_read_any_group_1_1_notification.html", null ],
     [ "NumericAddressedLowLevelTransferElement_numberOfBytes", "struct_numeric_addressed_low_level_transfer_element__number_of_bytes.html", null ],
     [ "NumericAddressedLowLevelTransferElement_startAddress", "struct_numeric_addressed_low_level_transfer_element__start_address.html", null ],
+    [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::nValuesToTest_proxy_helper< T, hasFn >", "struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper.html", null ],
+    [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::nValuesToTest_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper_3_01_t_00_01false_01_4.html", null ],
     [ "OneDRegisterTest", "class_one_d_register_test.html", null ],
     [ "ParserUtilsTestClass", "class_parser_utils_test_class.html", null ],
     [ "PcieBackendTest", "class_pcie_backend_test.html", null ],
@@ -290,6 +293,7 @@ var hierarchy =
         [ "BitRegisterDescriptorBase< Derived >", "struct_bit_register_descriptor_base.html", null ],
         [ "ScalarRegisterDescriptorBase< Derived >", "struct_scalar_register_descriptor_base.html", [
           [ "RegSingleWordScaled< Derived >", "struct_reg_single_word_scaled.html", null ],
+          [ "RegVariableAsPushParameterInMathBase< Derived >", "struct_reg_variable_as_push_parameter_in_math_base.html", null ],
           [ "RegWordFirmwareWithMath< Derived >", "struct_reg_word_firmware_with_math.html", null ]
         ] ],
         [ "VariableRegisterDescriptorBase< Derived >", "struct_variable_register_descriptor_base.html", null ]
@@ -428,10 +432,30 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegVariableAsPushParameterInMath", "struct_reg_variable_as_push_parameter_in_math.html", null ]
+    [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_var1 >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1 >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1 >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_var1 >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+            [ "RegVariableAsPushParameterInMath_var1", "struct_reg_variable_as_push_parameter_in_math__var1.html", null ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_var2 >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_var2 >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_var2 >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_var2 >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+            [ "RegVariableAsPushParameterInMath_var2", "struct_reg_variable_as_push_parameter_in_math__var2.html", null ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_x >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+            [ "RegVariableAsPushParameterInMath_x", "struct_reg_variable_as_push_parameter_in_math__x.html", null ]
+          ] ]
         ] ]
       ] ]
     ] ],
@@ -483,12 +507,12 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "ChimeraTK::RebotProtocol0::RegisterInfo", "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html", null ],
     [ "ChimeraTK::RegisterInfo", "class_chimera_t_k_1_1_register_info.html", [
       [ "ChimeraTK::LNMBackendRegisterInfo", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html", null ],
       [ "ChimeraTK::RegisterInfoMap::RegisterInfo", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html", null ],
       [ "myRegisterInfo", "classmy_register_info.html", null ]
     ] ],
-    [ "ChimeraTK::RebotProtocol0::RegisterInfo", "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html", null ],
     [ "ChimeraTK::RegisterInfoMap", "class_chimera_t_k_1_1_register_info_map.html", null ],
     [ "ChimeraTK::RegisterPath", "class_chimera_t_k_1_1_register_path.html", null ],
     [ "RegisterPathTest", "class_register_path_test.html", null ],
@@ -545,8 +569,8 @@ var hierarchy =
     [ "ChimeraTK::Utilities", "class_chimera_t_k_1_1_utilities.html", null ],
     [ "ChimeraTK::LNMBackendRegisterInfo::ValueTable< T >", "struct_chimera_t_k_1_1_l_n_m_backend_register_info_1_1_value_table.html", null ],
     [ "ChimeraTK::LNMBackendRegisterInfo::ValueTable< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_register_info_1_1_value_table.html", null ],
-    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
+    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
     [ "ChimeraTK::VersionNumber", "class_chimera_t_k_1_1_version_number.html", null ],

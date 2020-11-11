@@ -20,5 +20,7 @@ var searchData=
   ['numericaddressedbackendregisteraccessor',['NumericAddressedBackendRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html',1,'ChimeraTK']]],
   ['numericaddressedlowleveltransferelement',['NumericAddressedLowLevelTransferElement',['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html',1,'ChimeraTK']]],
   ['numericaddressedlowleveltransferelement_5fnumberofbytes',['NumericAddressedLowLevelTransferElement_numberOfBytes',['../struct_numeric_addressed_low_level_transfer_element__number_of_bytes.html',1,'']]],
-  ['numericaddressedlowleveltransferelement_5fstartaddress',['NumericAddressedLowLevelTransferElement_startAddress',['../struct_numeric_addressed_low_level_transfer_element__start_address.html',1,'']]]
+  ['numericaddressedlowleveltransferelement_5fstartaddress',['NumericAddressedLowLevelTransferElement_startAddress',['../struct_numeric_addressed_low_level_transfer_element__start_address.html',1,'']]],
+  ['nvaluestotest_5fproxy_5fhelper',['nValuesToTest_proxy_helper',['../struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper.html',1,'ChimeraTK::UnifiedBackendTest']]],
+  ['nvaluestotest_5fproxy_5fhelper_3c_20t_2c_20false_20_3e',['nValuesToTest_proxy_helper&lt; T, false &gt;',['../struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper_3_01_t_00_01false_01_4.html',1,'ChimeraTK::UnifiedBackendTest']]]
 ];
