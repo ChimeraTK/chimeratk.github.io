@@ -98,18 +98,18 @@ var NAVTREEINDEX =
 "_version_number_8cc_source.html",
 "class_chimera_t_k_1_1_device.html#a9ae9661c1f6c71ad6b5ef7baf6149e32",
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html#a59c0c822994c713cb024265ab4b85440",
-"class_chimera_t_k_1_1_numeric_addressed_backend.html#ae787be574ee1a808ce4a7191aed72e9d",
-"class_chimera_t_k_1_1_register_catalogue.html#a5fc45d407cf3065c245ab788db94322c",
-"class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5caa79cab19160fbdafa655ba29a5716758",
-"class_chimera_t_k_1_1_unified_backend_test.html#a25e48099e9aae7963438ac8de4ec3ec6",
-"class_map_file_test.html#acb42e146867f135e403935ed2eaeba6b",
-"device__backends_2pcie_2include_2pciedev__io_8h.html#a3550d7327b976a7882121d4fb3e9e518",
-"lmap.html#plugins_reference_force_read_only",
-"struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#acc09906c9b5b1803b0b703e02732e535",
-"struct_integers__signed32.html#ae0b5a2830661b161ba0056d5c3409063",
-"struct_register_descriptor_base.html",
-"test_fixed_point_converter_8cpp_source.html",
-"test_transfer_element_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1"
+"class_chimera_t_k_1_1_numeric_addressed_backend.html#ac9793fa0906c50fe472b871964f54f64",
+"class_chimera_t_k_1_1_register_catalogue.html#a2f7770571ced6c490b0896bbf031f290",
+"class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5c",
+"class_chimera_t_k_1_1_unified_backend_test.html#a11d106162d2a111205ed5da3b2217910",
+"class_map_file_test.html#a2855928f624776cc625be88db64320fe",
+"device__backends_2pcie_2include_2pciedev__io_8h.html#a1fce441aaa962f572d643140658a6e4c",
+"lmap.html",
+"struct_chimera_t_k_1_1_exception_dummy_push_decorator.html",
+"struct_integers__signed32.html",
+"struct_reg_word_firmware_forced_read_only__push.html#ac3eba5591696f9a7ad3871c08597db8e",
+"test_fixed_point_converter_8cpp.html#a869d7e3e66b6c1b7d1dfd33b9f096458",
+"test_subdevice_backend_8cpp.html#a935ebdda3c7b54344e338ec47b060bfd"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -7,7 +7,7 @@ var searchData=
   ['comparemodulename_5fpred',['compareModuleName_pred',['../class_chimera_t_k_1_1compare_module_name__pred.html',1,'ChimeraTK']]],
   ['compareregisterinfosbyname_5ffunctor',['compareRegisterInfosByName_functor',['../class_chimera_t_k_1_1compare_register_infos_by_name__functor.html',1,'ChimeraTK']]],
   ['connection',['Connection',['../class_chimera_t_k_1_1_rebot_1_1_connection.html',1,'ChimeraTK::Rebot']]],
-  ['const_5fiterator',['const_iterator',['../class_chimera_t_k_1_1_register_info_map_1_1const__iterator.html',1,'ChimeraTK::RegisterInfoMap::const_iterator'],['../class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html',1,'ChimeraTK::RegisterCatalogue::const_iterator']]],
+  ['const_5fiterator',['const_iterator',['../class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html',1,'ChimeraTK::RegisterCatalogue::const_iterator'],['../class_chimera_t_k_1_1_register_info_map_1_1const__iterator.html',1,'ChimeraTK::RegisterInfoMap::const_iterator']]],
   ['constantregisterdescriptorbase',['ConstantRegisterDescriptorBase',['../struct_constant_register_descriptor_base.html',1,'']]],
   ['constantregisterdescriptorbase_3c_20regarrayconstant_20_3e',['ConstantRegisterDescriptorBase&lt; RegArrayConstant &gt;',['../struct_constant_register_descriptor_base.html',1,'']]],
   ['constantregisterdescriptorbase_3c_20regconstant_20_3e',['ConstantRegisterDescriptorBase&lt; RegConstant &gt;',['../struct_constant_register_descriptor_base.html',1,'']]],
