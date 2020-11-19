@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"struct_integers__signed32.html":[17,0,35],
 "struct_integers__signed32.html#a27f5bed12fda3df65d9ced5f49add0a9":[17,0,35,2],
 "struct_integers__signed32.html#a301a60bcab680fb72b058b951449ab41":[17,0,35,6],
 "struct_integers__signed32.html#a42263392836eb3cec9edc0d2f7110b6a":[17,0,35,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "struct_reg_word_firmware_forced_read_only__push.html":[17,0,93],
 "struct_reg_word_firmware_forced_read_only__push.html#a03eac48b1e852868aaaca68ae051d09b":[17,0,93,0],
 "struct_reg_word_firmware_forced_read_only__push.html#a175ab56f64dbae6db67ef2be5d2213c9":[17,0,93,5],
-"struct_reg_word_firmware_forced_read_only__push.html#a878ffeb2f5977dbfe33710dfa6f5da6e":[17,0,93,4],
-"struct_reg_word_firmware_forced_read_only__push.html#ac3eba5591696f9a7ad3871c08597db8e":[17,0,93,6]
+"struct_reg_word_firmware_forced_read_only__push.html#a878ffeb2f5977dbfe33710dfa6f5da6e":[17,0,93,4]
 };

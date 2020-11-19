@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"class_map_file_test.html#a2855928f624776cc625be88db64320fe":[17,0,39,2],
 "class_map_file_test.html#a3e19629bb33c26e08f3707170990b4a4":[17,0,39,8],
 "class_map_file_test.html#a808608820fe5b4c10c5b34540eb6e534":[17,0,39,7],
 "class_map_file_test.html#ab1e012e22d189ed88d18d60acefc21de":[17,0,39,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a07aad6c0ab1a1d0386c51904d1d4e481":[18,0,1,2,0,2,20],
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a0ce58a436c9a78d135964a5b62c0dfd5":[18,0,1,2,0,2,21],
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a198b5f4fef9dff99b6c27836f972bc19":[18,0,1,2,0,2,37],
-"device__backends_2pcie_2include_2pciedev__io_8h.html#a1dc1215c881918ae78af0f20713b05a5":[18,0,1,2,0,2,12],
-"device__backends_2pcie_2include_2pciedev__io_8h.html#a1fce441aaa962f572d643140658a6e4c":[18,0,1,2,0,2,4]
+"device__backends_2pcie_2include_2pciedev__io_8h.html#a1dc1215c881918ae78af0f20713b05a5":[18,0,1,2,0,2,12]
 };
