@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-DeviceAccess-DoocsBackend
-   &#160;<span id="projectnumber">01.00.03</span>
+   &#160;<span id="projectnumber">01.00.04</span>
    </div>
   </td>
  </tr>
@@ -159,6 +159,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad41fafea3a42b3cb84bcbaf13fcb9e5e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#ad41fafea3a42b3cb84bcbaf13fcb9e5e">checkZmqAvailability</a> (const std::string &amp;fullLocationPath, const std::string &amp;propertyName)</td></tr>
 <tr class="memdesc:ad41fafea3a42b3cb84bcbaf13fcb9e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to check if a property is published by ZMQ.  <a href="#ad41fafea3a42b3cb84bcbaf13fcb9e5e">More...</a><br /></td></tr>
 <tr class="separator:ad41fafea3a42b3cb84bcbaf13fcb9e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e160d0a945224f86d7ef21af9629c9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#a02e160d0a945224f86d7ef21af9629c9">isCommunicationError</a> (int doocs_error)</td></tr>
+<tr class="separator:a02e160d0a945224f86d7ef21af9629c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -563,6 +565,14 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00095">95</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_a1dfcd1e520fd0026a516b60b1dfee46b_cgraph.svg" width="456" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -586,6 +596,42 @@ template&lt;typename UserType &gt; </div>
 <p>Does not switch backend into exception state, this is done separately by calling <a class="el" href="class_chimera_t_k_1_1_doocs_backend.html#a7edfcfc60808a52f47010ec0759ee121">setException()</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00198">198</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+
+</div>
+</div>
+<a id="a02e160d0a945224f86d7ef21af9629c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02e160d0a945224f86d7ef21af9629c9">&#9670;&nbsp;</a></span>isCommunicationError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::DoocsBackend::isCommunicationError </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>doocs_error</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00339">339</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_a02e160d0a945224f86d7ef21af9629c9_icgraph.svg" width="100%" height="599"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -640,11 +686,11 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00143">143</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_ad777f3414af4944b2f9c1bafd272a801_cgraph.svg" width="100%" height="536"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -675,11 +721,11 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_doocs_backend_8h_source.html#l00056">56</a> of file <a class="el" href="_doocs_backend_8h_source.html">DoocsBackend.h</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_a64beee5b734545cd830b337f1891fb3d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -710,19 +756,19 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_doocs_backend_8cc_source.html#l00205">205</a> of file <a class="el" href="_doocs_backend_8cc_source.html">DoocsBackend.cc</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_a7edfcfc60808a52f47010ec0759ee121_cgraph.svg" width="100%" height="536"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_backend_a7edfcfc60808a52f47010ec0759ee121_icgraph.svg" width="456" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -851,7 +897,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_backend.html">DoocsBackend</a></li>
-    <li class="footer">Generated on Wed Nov 18 2020 04:53:31 for ChimeraTK-DeviceAccess-DoocsBackend by
+    <li class="footer">Generated on Tue Nov 24 2020 04:54:45 for ChimeraTK-DeviceAccess-DoocsBackend by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
