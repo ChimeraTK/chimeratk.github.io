@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ApplicationCore
-   &#160;<span id="projectnumber">02.00.01</span>
+   &#160;<span id="projectnumber">02.00.02</span>
    </div>
   </td>
  </tr>
@@ -94,12 +94,13 @@ Introduction to the logging mechanism</h1>
 <li>0: cout/cerr+logfile</li>
 <li>1: logfile</li>
 <li>2: cout/cerr</li>
-<li>3: nowhere</li>
+<li>3: controlsystem only</li>
+<li>4: nowhere</li>
 </ul>
 </li>
 <li>logFile: Give the logfile name. If the file is not empty logging messages will be appended. If you choose targetStream 0 or 1 and don't set a logFile the Logging module simply skips the file writing.</li>
 <li>logLevel: Choose a certain logging level of the Module. Messages send to the Logging module also include a logging level. The Logging module compares both levels and decides if a message is dropped (e.g. message level is DEBUG and Module level is ERROR) or broadcasted.</li>
-<li>maxTailLength: The number of messages published by the Logging module (see logTail), i.e. to the control system. This length has no influence on the targetStreams, that receive all messages (depending on the logLevel). The logLevel also applies to messages that are published by the Logging module via the logTail</li>
+<li>maxTailLength: The number of messages published by the Logging module (see logTail), i.e. to the control system. If set to 0 the number of messages defaults to 20. This length has no influence on the targetStreams, that receive all messages (depending on the logLevel). The logLevel also applies to messages that are published by the Logging module via the logTail</li>
 </ul>
 <p>Available logging levels are:</p><ul>
 <li>DEBUG</li>
@@ -111,14 +112,15 @@ Introduction to the logging mechanism</h1>
 <p>The only variable that is published by the Logging module is the logTail. It contains the list of latest messages. Messages are separated by a newline character. The number of messages published in the logTail is set via the input variable tailLength. Other than that, messages are written to cout/cerr and/or a log file as explained above.</p>
 <p>In order to add a source to the Logging module the method <code>addSource(Logger*)</code> is available. The foreseen way of using the Logger is to add a Logger to a module that should send log messages. In the definition of connections of the application (<code>defineConnections()</code> ) one can add this source to the Logging module.</p>
 <p>The following example shows how to integrate the Logging module and the Logging into an application (myApp) and one module sending messages (<a class="el" href="struct_test_module.html">TestModule</a>). </p><div class="fragment"><div class="line">sruct <a class="code" href="struct_test_module.html">TestModule</a>: <span class="keyword">public</span> <a class="code" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a>{</div><div class="line">boost::shared_ptr&lt;Logger&gt; logger{<span class="keyword">new</span> Logger(<span class="keyword">this</span>)};</div><div class="line">...</div><div class="line">};</div><div class="line"><span class="keyword">struct </span>myApp : <span class="keyword">public</span> <a class="code" href="class_chimera_t_k_1_1_application.html">ChimeraTK::Application</a>{</div><div class="line"></div><div class="line">LoggingModule log { <span class="keyword">this</span>, <span class="stringliteral">&quot;LoggingModule&quot;</span>, <span class="stringliteral">&quot;LoggingModule test&quot;</span> };</div><div class="line"></div><div class="line"><a class="code" href="class_chimera_t_k_1_1_control_system_module.html">ChimeraTK::ControlSystemModule</a> cs;</div><div class="line"></div><div class="line"><a class="code" href="struct_test_module.html">TestModule</a> { <span class="keyword">this</span>, <span class="stringliteral">&quot;test&quot;</span>, <span class="stringliteral">&quot;&quot;</span> };</div><div class="line">...</div><div class="line">};</div><div class="line"></div><div class="line"></div><div class="line"><span class="keywordtype">void</span> myAPP::defineConnctions(){</div><div class="line">log.<a class="code" href="class_chimera_t_k_1_1_entity_owner.html#a10abe5f666483380a4dee7fb8caacd86">findTag</a>(<span class="stringliteral">&quot;CS&quot;</span>).<a class="code" href="class_chimera_t_k_1_1_virtual_module.html#a2fbf47f6be36e9ebcf8abf3d3f955741">connectTo</a>(cs);</div><div class="line">log.addSource(&amp;<a class="code" href="struct_test_module.html">TestModule</a>.logger)</div><div class="line">...</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> <a class="code" href="struct_test_module.html#a7d6840590346a5b8b9f9d8b045611a56">TestModule::mainLoop</a>{</div><div class="line">  logger.sendMessage(<span class="stringliteral">&quot;Test&quot;</span>,<a class="code" href="namespacelogging.html#a12e05573477c76b8d6db5081863f4416a682501b7fb187303796e3f533735b51f">LogLevel::DEBUG</a>);</div><div class="line">  ...</div><div class="line">}</div></div><!-- fragment --><p>A message always looks like this: LogLevel::LoggingModuleName/SendingModuleName TimeString -&gt; message<br />
- In the example given above the message could look like: </p><div class="fragment"><div class="line">DEBUG::LogggingModule/test 2018-Apr-12 14:03:07.947949 -&gt; Test</div></div><!-- fragment --> <dl class="section remark"><dt>Remarks</dt><dd>Instead of adding a Logger to every module that should feed the Logging module, one could also consider using only one Logger object. This is not thread safe and would not work for multiple modules trying to send messages via the Logger object to the Logging module at the same time. </dd></dl>
+ In the example given above the message could look like: </p><div class="fragment"><div class="line">DEBUG::LogggingModule/test 2018-Apr-12 14:03:07.947949 -&gt; Test</div></div><!-- fragment --> <dl class="section remark"><dt>Remarks</dt><dd>Instead of adding a Logger to every module that should feed the Logging module, one could also consider using only one Logger object. This is not thread safe and would not work for multiple modules trying to send messages via the Logger object to the Logging module at the same time.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>If sendMessage is called multiple times in a sequence some messages might get lost. This is because of the internal buffer used by <a class="el" href="namespace_chimera_t_k.html" title="Generic modules for status monitoring. ">ChimeraTK</a>, that has a size of 3. If the LoggingModule is not done processing a message, the internal buffer is full and a new message arrives it is dropped. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Fri Oct 23 2020 03:56:22 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Nov 25 2020 04:55:33 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
