@@ -1,5 +1,6 @@
 var class_helper_test =
 [
+    [ "HelperTest", "class_helper_test.html#a3d64dc46545aa14ce94f5984042092ac", null ],
     [ "allowSigusr1", "class_helper_test.html#a0e16edb310f1b63a01c7fbf8b22a8346", null ],
     [ "allowUpdate", "class_helper_test.html#a1e7bb479ce05158a06a94773c296917c", null ],
     [ "sigusr1", "class_helper_test.html#adc58a94f329045123269e0696b6c0730", null ],

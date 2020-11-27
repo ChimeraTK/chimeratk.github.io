@@ -83,7 +83,6 @@ $(document).ready(function(){initNavTree('class_doocs_server_test_helper.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="class_doocs_server_test_helper-members.html">List of all members</a>  </div>
@@ -102,6 +101,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9feb98ae2b93ce92e3a11f568561da9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#ad9feb98ae2b93ce92e3a11f568561da9">setDoNotProcessSignalsInDoocs</a> (bool <a class="el" href="class_doocs_server_test_helper.html#a6190d9f9f852a45f2bfa2095ce8f9d67">doNotProcessSignalsInDoocs</a>=true)</td></tr>
 <tr class="memdesc:ad9feb98ae2b93ce92e3a11f568561da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If doNotProcessSignalsInDoocs is set to true, DOOCS will not receive any signals via <a class="el" href="doocs_server_test_helper_8cc.html#acb52e9b9307534ee8e4fb0ffbc297307">sigwait()</a> to process.  <a href="#ad9feb98ae2b93ce92e3a11f568561da9">More...</a><br /></td></tr>
 <tr class="separator:ad9feb98ae2b93ce92e3a11f568561da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a153ce9718db7c51c3b176cefea926817"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#a153ce9718db7c51c3b176cefea926817">initialise</a> (doocs::Server *)</td></tr>
+<tr class="memdesc:a153ce9718db7c51c3b176cefea926817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Needed to register the wait_for_upate() function with the doocs Server object.  <a href="#a153ce9718db7c51c3b176cefea926817">More...</a><br /></td></tr>
+<tr class="separator:a153ce9718db7c51c3b176cefea926817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04ca53ec67776e500f6144f39044e99"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#ab04ca53ec67776e500f6144f39044e99">initialise</a> (<a class="el" href="class_helper_test.html">HelperTest</a> *)</td></tr>
+<tr class="memdesc:ab04ca53ec67776e500f6144f39044e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation function for use in the test for the test helper.  <a href="#ab04ca53ec67776e500f6144f39044e99">More...</a><br /></td></tr>
+<tr class="separator:ab04ca53ec67776e500f6144f39044e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6feb31616fc57eb7cd0ec350f3369a48"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#a6feb31616fc57eb7cd0ec350f3369a48">runSigusr1</a> ()</td></tr>
 <tr class="memdesc:a6feb31616fc57eb7cd0ec350f3369a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">trigger doocs to run interrupt_usr1() in all locations and wait until the processing is finished  <a href="#a6feb31616fc57eb7cd0ec350f3369a48">More...</a><br /></td></tr>
 <tr class="separator:a6feb31616fc57eb7cd0ec350f3369a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,19 +138,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a48624764253133bd539dbf06b1d77ec5"><td class="memTemplItemLeft" align="right" valign="top">static std::vector&lt; TYPE &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#a48624764253133bd539dbf06b1d77ec5">doocsGetArray</a> (const std::string &amp;name)</td></tr>
 <tr class="memdesc:a48624764253133bd539dbf06b1d77ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">get an array DOOCS property "name" is the property name in the form "//&lt;location&gt;/&lt;property&gt;"  <a href="#a48624764253133bd539dbf06b1d77ec5">More...</a><br /></td></tr>
 <tr class="separator:a48624764253133bd539dbf06b1d77ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:ace9bb101a162448255c9c25610ef4847"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#ace9bb101a162448255c9c25610ef4847">magic_sleep_time_sec</a> = 57005</td></tr>
-<tr class="memdesc:ace9bb101a162448255c9c25610ef4847"><td class="mdescLeft">&#160;</td><td class="mdescRight">magic sleep time to identify the nanosleep to intercept  <a href="#ace9bb101a162448255c9c25610ef4847">More...</a><br /></td></tr>
-<tr class="separator:ace9bb101a162448255c9c25610ef4847"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcf786f64c567f37d9f2e574c244d388"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#afcf786f64c567f37d9f2e574c244d388">magic_sleep_time_usec</a> = 48879</td></tr>
-<tr class="separator:afcf786f64c567f37d9f2e574c244d388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc6bada3604cb132aef93fd8c3b756e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#a2dc6bada3604cb132aef93fd8c3b756e">wait_for_update</a> (const doocs::Server *server)</td></tr>
+<tr class="memdesc:a2dc6bada3604cb132aef93fd8c3b756e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to replace the <a class="el" href="class_doocs_server_test_helper.html#a2dc6bada3604cb132aef93fd8c3b756e" title="Function to replace the wait_for_update() function in the server. ">wait_for_update()</a> function in the server.  <a href="#a2dc6bada3604cb132aef93fd8c3b756e">More...</a><br /></td></tr>
+<tr class="separator:a2dc6bada3604cb132aef93fd8c3b756e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a77883b7e4e4cb49564042fc0207afbd6"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#a77883b7e4e4cb49564042fc0207afbd6">int ::nanosleep</a> (__const struct timespec *__requested_time, struct timespec *__remaining)</td></tr>
-<tr class="separator:a77883b7e4e4cb49564042fc0207afbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86fbc6e282e4fc0e45156facfaf532ed"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#a86fbc6e282e4fc0e45156facfaf532ed">int ::sigwait</a> (__const sigset_t *__restrict __set, int *__restrict __sig)</td></tr>
 <tr class="separator:a86fbc6e282e4fc0e45156facfaf532ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -172,12 +170,15 @@ Static Protected Attributes</h2></td></tr>
 <tr class="memitem:aee7b4b2cd965488f45d9251e910787cc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#aee7b4b2cd965488f45d9251e910787cc">event</a></td></tr>
 <tr class="memdesc:aee7b4b2cd965488f45d9251e910787cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal event counter  <a href="#aee7b4b2cd965488f45d9251e910787cc">More...</a><br /></td></tr>
 <tr class="separator:aee7b4b2cd965488f45d9251e910787cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d5a6e6f21ff510fd5ea098299bafb3"><td class="memItemLeft" align="right" valign="top">static std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#ad2d5a6e6f21ff510fd5ea098299bafb3">is_initialised</a></td></tr>
+<tr class="separator:ad2d5a6e6f21ff510fd5ea098299bafb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd884333853d9dd7f99cab4e7490078a"><td class="memItemLeft" align="right" valign="top">static std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doocs_server_test_helper.html#abd884333853d9dd7f99cab4e7490078a">do_shutdown</a></td></tr>
+<tr class="separator:abd884333853d9dd7f99cab4e7490078a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Collection of helper routines to test DOOCS servers: control the DOOCS update() and interrupt_usr1() functions and access properties directly through pointers (instead of the RPC interface). </p>
 <p>The class has only static functions, so there is no need to create an instance.</p>
-<p>Warning: When linking against the <a class="el" href="class_doocs_server_test_helper.html" title="Collection of helper routines to test DOOCS servers: control the DOOCS update() and interrupt_usr1() ...">DoocsServerTestHelper</a> library, <a class="el" href="doocs_server_test_helper_8cc.html#af4a12c0f643353df9d8874294132e77f">nanosleep()</a> and <a class="el" href="doocs_server_test_helper_8cc.html#acb52e9b9307534ee8e4fb0ffbc297307">sigwait()</a> will be replaced and calls to those functions will be intercepted to wait until the corresponding function (<a class="el" href="class_doocs_server_test_helper.html#a6feb31616fc57eb7cd0ec350f3369a48" title="trigger doocs to run interrupt_usr1() in all locations and wait until the processing is finished ...">runSigusr1()</a> or <a class="el" href="class_doocs_server_test_helper.html#aa36f5adadfc0edbf3de9907e3ad54ed5" title="trigger doocs to run update() in all locations and wait until the processing is finished ...">runUpdate()</a>) has been called by the test code, if the passed arguments match the expected signature. If this library is linked against an ordinary DOOCS server without a test routine calling those functions, the server will hang in a dead lock situation. Use this library only in combination with an appropriate test routine!</p>
-<p>Important: You need to set the update rate in the DOOCS server configuration to the following exact values, or your test will not be able to control update(): "SVR.RATE: 57005 48879 0 0" </p>
+<p>Warning: When linking against the <a class="el" href="class_doocs_server_test_helper.html" title="Collection of helper routines to test DOOCS servers: control the DOOCS update() and interrupt_usr1() ...">DoocsServerTestHelper</a> library, doocs::Server::wait_for_update() and <a class="el" href="doocs_server_test_helper_8cc.html#acb52e9b9307534ee8e4fb0ffbc297307">sigwait()</a> will be replaced and calls to those functions will be intercepted to wait until the corresponding function (<a class="el" href="class_doocs_server_test_helper.html#a6feb31616fc57eb7cd0ec350f3369a48" title="trigger doocs to run interrupt_usr1() in all locations and wait until the processing is finished ...">runSigusr1()</a> or <a class="el" href="class_doocs_server_test_helper.html#aa36f5adadfc0edbf3de9907e3ad54ed5" title="trigger doocs to run update() in all locations and wait until the processing is finished ...">runUpdate()</a>) has been called by the test code, if the passed arguments match the expected signature. If this library is linked against an ordinary DOOCS server without a test routine calling those functions, the server will hang in a dead lock situation. Use this library only in combination with an appropriate test routine! </p>
 
 <p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00048">48</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -209,7 +210,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>get a scalar DOOCS property "name" is the property name in the form "//&lt;location&gt;/&lt;property&gt;" </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00197">197</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00210">210</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -241,7 +242,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>get an array DOOCS property "name" is the property name in the form "//&lt;location&gt;/&lt;property&gt;" </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00227">227</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00240">240</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -283,7 +284,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>set a DOOCS property "name" is the property name in the form "//&lt;location&gt;/&lt;property&gt;" "value" is the value to be set </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00136">136</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00149">149</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -325,7 +326,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>set a DOOCS property - array version "name" is the property name in the form "//&lt;location&gt;/&lt;property&gt;" "value" is the value to be set </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00155">155</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00168">168</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -365,7 +366,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>set a DOOCS property - IIII version "name" is the property name in the form "//&lt;location&gt;/&lt;property&gt;" "value" is the value to be set </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00158">158</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00168">168</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
 
 </div>
 </div>
@@ -405,12 +406,12 @@ template&lt;typename TYPE &gt; </div>
 
 <p>set a DOOCS property - spectrum version "name" is the property name in the form "//&lt;location&gt;/&lt;property&gt;" "value" is the value to be set </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00131">131</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00141">141</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
 
 </div>
 </div>
-<a id="a77883b7e4e4cb49564042fc0207afbd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77883b7e4e4cb49564042fc0207afbd6">&#9670;&nbsp;</a></span>int ::nanosleep()</h2>
+<a id="a153ce9718db7c51c3b176cefea926817"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a153ce9718db7c51c3b176cefea926817">&#9670;&nbsp;</a></span>initialise() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -419,29 +420,70 @@ template&lt;typename TYPE &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">DoocsServerTestHelper::int ::<a class="el" href="doocs_server_test_helper_8cc.html#af4a12c0f643353df9d8874294132e77f">nanosleep</a> </td>
+          <td class="memname">void DoocsServerTestHelper::initialise </td>
           <td>(</td>
-          <td class="paramtype">__const struct timespec *&#160;</td>
-          <td class="paramname"><em>__requested_time</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">doocs::Server *&#160;</td>
+          <td class="paramname"><em>server</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">struct timespec *&#160;</td>
-          <td class="paramname"><em>__remaining</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Needed to register the wait_for_upate() function with the doocs Server object. </p>
+<p>This can only happen after the server object has been created, but has to happen before the server is started. </p>
+
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00071">71</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_doocs_server_test_helper_a153ce9718db7c51c3b176cefea926817_cgraph.svg" width="406" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_doocs_server_test_helper_a153ce9718db7c51c3b176cefea926817_icgraph.svg" width="400" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ab04ca53ec67776e500f6144f39044e99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04ca53ec67776e500f6144f39044e99">&#9670;&nbsp;</a></span>initialise() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoocsServerTestHelper::initialise </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_helper_test.html">HelperTest</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialisation function for use in the test for the test helper. </p>
+
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00078">78</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
 
 </div>
 </div>
@@ -506,7 +548,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>trigger doocs to run interrupt_usr1() in all locations and wait until the processing is finished </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00098">98</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00105">105</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
 
 </div>
 </div>
@@ -535,12 +577,12 @@ template&lt;typename TYPE &gt; </div>
 
 <p>trigger doocs to run update() in all locations and wait until the processing is finished </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00109">109</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00116">116</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_doocs_server_test_helper_aa36f5adadfc0edbf3de9907e3ad54ed5_icgraph.svg" width="439" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -574,7 +616,7 @@ template&lt;typename TYPE &gt; </div>
 <p>If doNotProcessSignalsInDoocs is set to true, DOOCS will not receive any signals via <a class="el" href="doocs_server_test_helper_8cc.html#acb52e9b9307534ee8e4fb0ffbc297307">sigwait()</a> to process. </p>
 <p>This allows catching signals via signal handlers (e.g. sigaction). </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00092">92</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00099">99</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
 
 </div>
 </div>
@@ -603,13 +645,52 @@ template&lt;typename TYPE &gt; </div>
 
 <p>shutdown the doocs server </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00120">120</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00130">130</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_doocs_server_test_helper_afc4cadcbb0ac931b7a1092ff7a37bcca_icgraph.svg" width="655" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_doocs_server_test_helper_afc4cadcbb0ac931b7a1092ff7a37bcca_icgraph.svg" width="666" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a2dc6bada3604cb132aef93fd8c3b756e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dc6bada3604cb132aef93fd8c3b756e">&#9670;&nbsp;</a></span>wait_for_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoocsServerTestHelper::wait_for_update </td>
+          <td>(</td>
+          <td class="paramtype">const doocs::Server *&#160;</td>
+          <td class="paramname"><em>server</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function to replace the <a class="el" href="class_doocs_server_test_helper.html#a2dc6bada3604cb132aef93fd8c3b756e" title="Function to replace the wait_for_update() function in the server. ">wait_for_update()</a> function in the server. </p>
+<p>It blocks until <a class="el" href="class_doocs_server_test_helper.html#aa36f5adadfc0edbf3de9907e3ad54ed5" title="trigger doocs to run update() in all locations and wait until the processing is finished ...">runUpdate()</a> has been called in the test. Public to be able to unit-test it. </p>
+
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8cc_source.html#l00086">86</a> of file <a class="el" href="doocs_server_test_helper_8cc_source.html">doocsServerTestHelper.cc</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_doocs_server_test_helper_a2dc6bada3604cb132aef93fd8c3b756e_icgraph.svg" width="100%" height="383"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -636,7 +717,7 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00119">119</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00129">129</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -660,7 +741,31 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00115">115</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00125">125</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+
+</div>
+</div>
+<a id="abd884333853d9dd7f99cab4e7490078a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd884333853d9dd7f99cab4e7490078a">&#9670;&nbsp;</a></span>do_shutdown</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt; bool &gt; DoocsServerTestHelper::do_shutdown</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00143">143</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -686,7 +791,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>do not process any signals in DOOCS (to allow installing signal handlers instead) </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00127">127</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00137">137</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -712,12 +817,12 @@ template&lt;typename TYPE &gt; </div>
 
 <p>internal event counter </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00130">130</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00140">140</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
-<a id="ace9bb101a162448255c9c25610ef4847"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace9bb101a162448255c9c25610ef4847">&#9670;&nbsp;</a></span>magic_sleep_time_sec</h2>
+<a id="ad2d5a6e6f21ff510fd5ea098299bafb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d5a6e6f21ff510fd5ea098299bafb3">&#9670;&nbsp;</a></span>is_initialised</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -726,43 +831,17 @@ template&lt;typename TYPE &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int DoocsServerTestHelper::magic_sleep_time_sec = 57005</td>
+          <td class="memname">std::atomic&lt; bool &gt; DoocsServerTestHelper::is_initialised</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>magic sleep time to identify the nanosleep to intercept </p>
-
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00106">106</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
-
-</div>
-</div>
-<a id="afcf786f64c567f37d9f2e574c244d388"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcf786f64c567f37d9f2e574c244d388">&#9670;&nbsp;</a></span>magic_sleep_time_usec</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int DoocsServerTestHelper::magic_sleep_time_usec = 48879</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00107">107</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00142">142</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -786,7 +865,7 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00123">123</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00133">133</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -812,7 +891,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>mutex and flag to trigger interrupt_usr1() </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00118">118</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00128">128</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -838,7 +917,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>unique locks for </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00122">122</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00132">132</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -864,7 +943,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>mutex and flag to trigger update() </p>
 
-<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00114">114</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="doocs_server_test_helper_8h_source.html#l00124">124</a> of file <a class="el" href="doocs_server_test_helper_8h_source.html">doocsServerTestHelper.h</a>.</p>
 
 </div>
 </div>
@@ -878,7 +957,7 @@ template&lt;typename TYPE &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_doocs_server_test_helper.html">DoocsServerTestHelper</a></li>
-    <li class="footer">Generated on Thu Nov 19 2020 04:56:13 for doocs-server-test-helper by
+    <li class="footer">Generated on Fri Nov 27 2020 04:54:21 for doocs-server-test-helper by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

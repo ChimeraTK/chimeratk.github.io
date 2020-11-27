@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['post_5finit_5fepilog',['post_init_epilog',['../test_doocs_server_test_helper__skeleton_8h.html#a38623e21fbb34913ef41a02871cf1ce5',1,'testDoocsServerTestHelper_skeleton.h']]],
-  ['post_5finit_5fprolog',['post_init_prolog',['../test_doocs_server_test_helper__skeleton_8h.html#ae60e62832bff3e8fd4688f871bd66ec7',1,'testDoocsServerTestHelper_skeleton.h']]]
+  ['refresh_5fepilog',['refresh_epilog',['../test_doocs_server_test_helper__skeleton_8h.html#abad3095cb4eb0f7b41ad51882965e40a',1,'testDoocsServerTestHelper_skeleton.h']]],
+  ['refresh_5fprolog',['refresh_prolog',['../test_doocs_server_test_helper__skeleton_8h.html#a8b5b57acbc923f1e052c514858e87797',1,'testDoocsServerTestHelper_skeleton.h']]],
+  ['rpcno',['rpcNo',['../class_threaded_doocs_server.html#a4f63eb4cf737be5b016adc66f4bb4e17',1,'ThreadedDoocsServer']]],
+  ['runsigusr1',['runSigusr1',['../class_doocs_server_test_helper.html#a6feb31616fc57eb7cd0ec350f3369a48',1,'DoocsServerTestHelper']]],
+  ['runupdate',['runUpdate',['../class_doocs_server_test_helper.html#aa36f5adadfc0edbf3de9907e3ad54ed5',1,'DoocsServerTestHelper']]]
 ];
