@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('structSystemInfoModule_1_1Info.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="classSystemInfoModule.html">SystemInfoModule</a></li><li class="navelem"><a class="el" href="structSystemInfoModule_1_1Info.html">Info</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -71,33 +88,39 @@ $(function() {
 <div class="title">SystemInfoModule::Info Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for SystemInfoModule::Info:</div>
-<div class="dyncontent">
-<div class="center"><img src="structSystemInfoModule_1_1Info__inherit__graph.png" border="0" usemap="#SystemInfoModule_1_1Info_inherit__map" alt="Inheritance graph"/></div>
-<map name="SystemInfoModule_1_1Info_inherit__map" id="SystemInfoModule_1_1Info_inherit__map">
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for SystemInfoModule::Info:</div>
-<div class="dyncontent">
-<div class="center"><img src="structSystemInfoModule_1_1Info__coll__graph.png" border="0" usemap="#SystemInfoModule_1_1Info_coll__map" alt="Collaboration graph"/></div>
-<map name="SystemInfoModule_1_1Info_coll__map" id="SystemInfoModule_1_1Info_coll__map">
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+
+<p><code>#include &lt;<a class="el" href="SystemInfoModule_8h_source.html">SystemInfoModule.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for SystemInfoModule::Info:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structSystemInfoModule_1_1Info__inherit__graph.svg" width="187" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for SystemInfoModule::Info:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structSystemInfoModule_1_1Info__coll__graph.svg" width="416" height="379"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a3aa0cef63e9b67cfc18e47e698a05475"><td class="memItemLeft" align="right" valign="top"><a id="a3aa0cef63e9b67cfc18e47e698a05475"></a>
-std::map&lt; std::string, ctk::ScalarOutput&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>strInfos</b></td></tr>
+<tr class="memitem:a3aa0cef63e9b67cfc18e47e698a05475"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, ctk::ScalarOutput&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSystemInfoModule_1_1Info.html#a3aa0cef63e9b67cfc18e47e698a05475">strInfos</a></td></tr>
 <tr class="separator:a3aa0cef63e9b67cfc18e47e698a05475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d4c711f28f4123d2557ccaf14705ad7"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSystemInfoModule_1_1Info.html#a4d4c711f28f4123d2557ccaf14705ad7">ticksPerSecond</a></td></tr>
 <tr class="memdesc:a4d4c711f28f4123d2557ccaf14705ad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of clock ticks per second.  <a href="#a4d4c711f28f4123d2557ccaf14705ad7">More...</a><br /></td></tr>
 <tr class="separator:a4d4c711f28f4123d2557ccaf14705ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ee190d4d0189f94c1af70f77bd8ecfe"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>nCPU</b></td></tr>
+<tr class="memitem:a9ee190d4d0189f94c1af70f77bd8ecfe"><td class="memItemLeft" align="right" valign="top">ctk::ScalarOutput&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSystemInfoModule_1_1Info.html#a9ee190d4d0189f94c1af70f77bd8ecfe">nCPU</a></td></tr>
 <tr class="separator:a9ee190d4d0189f94c1af70f77bd8ecfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="SystemInfoModule_8h_source.html#l00082">82</a> of file <a class="el" href="SystemInfoModule_8h_source.html">SystemInfoModule.h</a>.</p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a9ee190d4d0189f94c1af70f77bd8ecfe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ee190d4d0189f94c1af70f77bd8ecfe">&#9670;&nbsp;</a></span>nCPU</h2>
 
@@ -110,6 +133,24 @@ std::map&lt; std::string, ctk::ScalarOutput&lt; std::string &gt; &gt;&#160;</td>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;nCPU&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Number of CPUs&quot;</span>,</div><div class="line">      { <span class="stringliteral">&quot;CS&quot;</span> } }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="SystemInfoModule_8h_source.html#l00087">87</a> of file <a class="el" href="SystemInfoModule_8h_source.html">SystemInfoModule.h</a>.</p>
+
+</div>
+</div>
+<a id="a3aa0cef63e9b67cfc18e47e698a05475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aa0cef63e9b67cfc18e47e698a05475">&#9670;&nbsp;</a></span>strInfos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, ctk::ScalarOutput&lt;std::string&gt; &gt; SystemInfoModule::Info::strInfos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="SystemInfoModule_8h_source.html#l00084">84</a> of file <a class="el" href="SystemInfoModule_8h_source.html">SystemInfoModule.h</a>.</p>
+
 </div>
 </div>
 <a id="a4d4c711f28f4123d2557ccaf14705ad7"></a>
@@ -126,17 +167,23 @@ std::map&lt; std::string, ctk::ScalarOutput&lt; std::string &gt; &gt;&#160;</td>
 <b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;ticksPerSecond&quot;</span>, <span class="stringliteral">&quot;Hz&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;Number of clock ticks per second&quot;</span>,  { <span class="stringliteral">&quot;CS&quot;</span> }}</div></div><!-- fragment -->
 <p>Number of clock ticks per second. </p>
 
+<p class="definition">Definition at line <a class="el" href="SystemInfoModule_8h_source.html#l00085">85</a> of file <a class="el" href="SystemInfoModule_8h_source.html">SystemInfoModule.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/<a class="el" href="SystemInfoModule_8h_source.html">SystemInfoModule.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classSystemInfoModule.html">SystemInfoModule</a></li><li class="navelem"><a class="el" href="structSystemInfoModule_1_1Info.html">Info</a></li>
+    <li class="footer">Generated on Thu Dec 3 2020 04:56:36 for watchdog-server by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

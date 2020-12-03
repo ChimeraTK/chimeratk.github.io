@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['terminate',['terminate',['../classSystemInfoModule.html#a293bb7cb8a4a0fbd55156251322fa6e2',1,'SystemInfoModule::terminate()'],['../structFileSystemModule.html#afb17665a1cecdec043f09e9ead389dd0',1,'FileSystemModule::terminate()'],['../structNetworkModule.html#a593e66b34e1f3bdc5180aee6ae5c90b8',1,'NetworkModule::terminate()']]]
+  ['processcontrolmodule',['ProcessControlModule',['../structProcessControlModule.html#aa0df00c3427df88c0f2b8f436263e5ce',1,'ProcessControlModule']]],
+  ['processhandler',['ProcessHandler',['../structProcessHandler.html#a8b3e2bdfd035834b7f1f24448612634e',1,'ProcessHandler::ProcessHandler(const std::string &amp;PIDFileName, const bool deletePIDFile, int &amp;PID, std::ostream &amp;os, const std::string &amp;name=&quot;&quot;)'],['../structProcessHandler.html#a7eae2717540d1d2da5218998a00a44ec',1,'ProcessHandler::ProcessHandler(const std::string &amp;PIDFileName, const bool deletePIDFile=false, std::ostream &amp;os=std::cout, const std::string &amp;name=&quot;&quot;)']]]
 ];

@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('structProcessInfoModule_1_1Statistics.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></li><li class="navelem"><a class="el" href="structProcessInfoModule_1_1Statistics.html">Statistics</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">ProcessInfoModule::Statistics Member List</div>  </div>
@@ -74,23 +91,26 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html#ade7739187261e2676f995247703779ee">avgcpu</a></td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html#a5fc0f8617c81abba72c33f1f082215be">cstime</a></td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html#a8a45fd1a2c348fbe94378c8e1e03ca3d">cutime</a></td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>mem</b> (defined in <a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a>)</td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>memoryUsage</b> (defined in <a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a>)</td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html#a1b743fe6b6f956aaa677a4753d96c95e">mem</a></td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html#a8540a75be3b77b0e79e056ee5a532647">memoryUsage</a></td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html#ab3a9572e8059975298688e71cf1d80b3">nice</a></td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html#aebc3dd0608eb75c337e25f44a65c62ee">pcpu</a></td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html#ab35b6378b311d4960b28db50ef4eacfe">priority</a></td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html#af4ed52d9a2805fb69338ab8aab9b1f7a">rss</a></td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html#a8a08dbf77998e8e5fe0f025eacb5de43">runtime</a></td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html#ab5a27aacb5ac78046949975da63def54">startTime</a></td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>startTimeStr</b> (defined in <a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a>)</td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html#ac0e76caf951af9170b57cb86a7fb642f">startTimeStr</a></td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html#a96830e5fe66a17d0272efe068344bc06">stime</a></td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html#aa7442474a344e5863688030359276161">utime</a></td><td class="entry"><a class="el" href="structProcessInfoModule_1_1Statistics.html">ProcessInfoModule::Statistics</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Thu Dec 3 2020 04:56:36 for watchdog-server by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

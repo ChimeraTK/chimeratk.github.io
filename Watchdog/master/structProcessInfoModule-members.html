@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('structProcessInfoModule.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,7 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">ProcessInfoModule Member List</div>  </div>
@@ -69,26 +90,29 @@ $(function() {
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="structProcessInfoModule.html#a85e87f2c7a75ada7b23e8a672b06c75a">FillProcInfo</a>(const std::shared_ptr&lt; proc_t &gt; &amp;info)</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="structProcessInfoModule.html#ada9eaa0787b9c5b393450c321e8941a7">getTime</a>()</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>input</b> (defined in <a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a>)</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>logStream</b> (defined in <a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a>)</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structProcessInfoModule.html#ae8faa41e062d6ecc0617ff87841bbc5a">input</a></td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structProcessInfoModule.html#abf10b47ab8fe49ed0bdb94c4d074b960">logStream</a></td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structProcessInfoModule.html#a66f1ebb4d2179c7ceb5798fd1c81bc27">mainLoop</a>() override</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>process</b> (defined in <a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a>)</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>statistics</b> (defined in <a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a>)</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>status</b> (defined in <a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a>)</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>system</b> (defined in <a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a>)</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>SystemInfoModule</b> (defined in <a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a>)</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>terminate</b>() override (defined in <a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a>)</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>this</b> (defined in <a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a>)</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>this</b> (defined in <a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a>)</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>this</b> (defined in <a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a>)</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structProcessInfoModule.html#a9b49f9d04f62893a00d98e80c010e8a8">process</a></td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structProcessInfoModule.html#a28a43a6301039bfcf5043ce368bc7ad4">statistics</a></td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structProcessInfoModule.html#a41a3ce4607e7affc7cb1c5619642168e">status</a></td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structProcessInfoModule.html#a7ea2d9a58f3d7e720225cf087c67b21f">system</a></td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structProcessInfoModule.html#a4539b1693640ee143d77423345862602">SystemInfoModule</a></td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structProcessInfoModule.html#a4949333ed2abc7e07933dda2c1f8cf7e">terminate</a>() override</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structProcessInfoModule.html#aa2c65ca6cbbe0349513c9c497000fb55">this</a></td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structProcessInfoModule.html#a50cbcb3a733dbb4d71fd87e8e75ce594">this</a></td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structProcessInfoModule.html#afe44b39d90effd900c77fa4f3d2ef571">this</a></td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structProcessInfoModule.html#af863af6e454aa703037963ad401cae92">time_stamp</a></td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>trigger</b> (defined in <a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a>)</td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structProcessInfoModule.html#a3f91718924955fc3bdbd2070c08eec2c">trigger</a></td><td class="entry"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Thu Dec 3 2020 04:56:36 for watchdog-server by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

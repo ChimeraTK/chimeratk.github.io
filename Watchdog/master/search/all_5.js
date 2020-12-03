@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['getinfo',['getInfo',['../classSysInfo.html#a429fb6d15d8790484be15eca47f7a1d5',1,'SysInfo::getInfo()'],['../namespaceproc__util.html#a82bc404af2ea091b460762103e6621e6',1,'proc_util::getInfo()']]],
-  ['getnchilds',['getNChilds',['../namespaceproc__util.html#a55cf35ee280c561e235c1dd1381be6af',1,'proc_util']]],
-  ['getncpu',['getNCpu',['../classSysInfo.html#a836d6f2b00e37dd02caa17c18cce8492',1,'SysInfo']]],
-  ['gettime',['getTime',['../structProcessInfoModule.html#ada9eaa0787b9c5b393450c321e8941a7',1,'ProcessInfoModule']]],
-  ['gib',['GiB',['../structFileSystemModule.html#ae1467aa618390c54862d14806571f6d7',1,'FileSystemModule']]]
+  ['enableprocess',['enableProcess',['../structProcessControlModule.html#a0e5511753b568a4fde7d00caa1575299',1,'ProcessControlModule']]],
+  ['env',['env',['../structProcessControlModule_1_1ProcessStatus.html#a44c29febb07dc3f98250c03d97988512',1,'ProcessControlModule::ProcessStatus::env()'],['../structProcessControlModule_1_1Config.html#a8045787612e111bf4282be12dcf1d5c9',1,'ProcessControlModule::Config::env()']]],
+  ['error',['ERROR',['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416abef691e55fd1813b7540614e718ab7f1',1,'logging']]],
+  ['errorlevel',['errorLevel',['../structFileSystemModule_1_1Config.html#a1237466445b60360aa39c30fb87d85df',1,'FileSystemModule::Config']]]
 ];

@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('structLogFileModule.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,7 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">LogFileModule Member List</div>  </div>
@@ -67,22 +88,25 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="structLogFileModule.html">LogFileModule</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>config</b> (defined in <a class="el" href="structLogFileModule.html">LogFileModule</a>)</td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>logFileBuffer</b> (defined in <a class="el" href="structLogFileModule.html">LogFileModule</a>)</td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structLogFileModule.html#aa545d4de82974f63613c8908fc780917">config</a></td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structLogFileModule.html#af9308aaa96e504094ac12b4aa7bc8a87">logFileBuffer</a></td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structLogFileModule.html#a730fe9ac0bbe5a6ec9b4df7f9e66c5cd">mainLoop</a>() override</td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>process</b> (defined in <a class="el" href="structLogFileModule.html">LogFileModule</a>)</td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>process</b> (defined in <a class="el" href="structLogFileModule.html">LogFileModule</a>)</td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>status</b> (defined in <a class="el" href="structLogFileModule.html">LogFileModule</a>)</td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>terminate</b>() (defined in <a class="el" href="structLogFileModule.html">LogFileModule</a>)</td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>this</b> (defined in <a class="el" href="structLogFileModule.html">LogFileModule</a>)</td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>this</b> (defined in <a class="el" href="structLogFileModule.html">LogFileModule</a>)</td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>trigger</b> (defined in <a class="el" href="structLogFileModule.html">LogFileModule</a>)</td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structLogFileModule.html#af366b30a77ae58c0fe082725dc334704">process</a></td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structLogFileModule.html#a94dda7c2973252590ce976a579cc39c2">process</a></td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structLogFileModule.html#abb6cb83e4c1532cfe40c9227e723ebb2">status</a></td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structLogFileModule.html#ada8647269480d8165b0b0ac1b521b6e5">terminate</a>()</td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structLogFileModule.html#a6cad84249f9e095377785c71f3b88f7f">this</a></td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structLogFileModule.html#aa9a1d27f627b63832fb057cf8985aee0">this</a></td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structLogFileModule.html#a0d769ef594c042748d0233a6b3e31435">trigger</a></td><td class="entry"><a class="el" href="structLogFileModule.html">LogFileModule</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Thu Dec 3 2020 04:56:36 for watchdog-server by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

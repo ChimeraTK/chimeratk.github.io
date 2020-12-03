@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['ibegin',['ibegin',['../classSysInfo.html#a2ad650a35f8c6724da23fb5cf2856cae',1,'SysInfo']]],
-  ['iend',['iend',['../classSysInfo.html#ae259cf43e550331f51a2cb07034964df',1,'SysInfo']]],
-  ['isprocessrunning',['isProcessRunning',['../namespaceproc__util.html#a3239beea007655f5b9ca18eeae0ba8d4',1,'proc_util']]]
+  ['handle_5fsigchld',['handle_sigchld',['../ProcessHandler_8cc.html#aeef5beabd582be0ae43caa8151b4466d',1,'ProcessHandler.cc']]]
 ];

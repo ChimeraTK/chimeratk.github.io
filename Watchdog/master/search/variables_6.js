@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isrunning',['isRunning',['../structProcessControlModule_1_1ProcessStatus.html#a424aa12fefcf135ed050ae64575619d5',1,'ProcessControlModule::ProcessStatus']]]
+  ['gib',['GiB',['../structFileSystemModule.html#ae1467aa618390c54862d14806571f6d7',1,'FileSystemModule']]]
 ];

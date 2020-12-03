@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['killsig',['killSig',['../structProcessControlModule_1_1Config.html#ac5ec62e16199edf77cc15953a5041f1f',1,'ProcessControlModule::Config']]]
+  ['history',['history',['../structWatchdogServer.html#a5250e08f8ba03bab3d1ac56f64134723',1,'WatchdogServer']]]
 ];

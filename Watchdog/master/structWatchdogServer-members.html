@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -44,6 +51,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('structWatchdogServer.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,7 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">WatchdogServer Member List</div>  </div>
@@ -67,25 +88,27 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="structWatchdogServer.html">WatchdogServer</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>config</b> (defined in <a class="el" href="structWatchdogServer.html">WatchdogServer</a>)</td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>cs</b> (defined in <a class="el" href="structWatchdogServer.html">WatchdogServer</a>)</td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structWatchdogServer.html#aff0de39ddfc412f63c5ea21dafc89ddd">config</a></td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structWatchdogServer.html#ac2a80d4a412c142f8d4753b51e12bfa3">cs</a></td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structWatchdogServer.html#a08c98672aee20a4640a56b3b5ac7cd47">defineConnections</a>() override</td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>filesystemGroup</b> (defined in <a class="el" href="structWatchdogServer.html">WatchdogServer</a>)</td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>history</b> (defined in <a class="el" href="structWatchdogServer.html">WatchdogServer</a>)</td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>microDAQ</b> (defined in <a class="el" href="structWatchdogServer.html">WatchdogServer</a>)</td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>networkGroup</b> (defined in <a class="el" href="structWatchdogServer.html">WatchdogServer</a>)</td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>processGroup</b> (defined in <a class="el" href="structWatchdogServer.html">WatchdogServer</a>)</td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>systemInfo</b> (defined in <a class="el" href="structWatchdogServer.html">WatchdogServer</a>)</td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>trigger</b> (defined in <a class="el" href="structWatchdogServer.html">WatchdogServer</a>)</td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>watchdog</b> (defined in <a class="el" href="structWatchdogServer.html">WatchdogServer</a>)</td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>WatchdogServer</b>() (defined in <a class="el" href="structWatchdogServer.html">WatchdogServer</a>)</td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~WatchdogServer</b>() (defined in <a class="el" href="structWatchdogServer.html">WatchdogServer</a>)</td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structWatchdogServer.html#a3a1dc6e550f4ec8557f6052c62bea1d2">filesystemGroup</a></td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structWatchdogServer.html#a5250e08f8ba03bab3d1ac56f64134723">history</a></td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structWatchdogServer.html#a3e411b2434cb02987a530b230617bf15">networkGroup</a></td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structWatchdogServer.html#a0c928a382ab3dd2b7f7649e9bed006b5">processGroup</a></td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structWatchdogServer.html#a433d3ce980aa862c0cf72ccec69846da">systemInfo</a></td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structWatchdogServer.html#ad28386ab5c73d0f07dbafd7a6a738cfb">trigger</a></td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structWatchdogServer.html#a5284e735372ca5947a8105ad3167c54a">watchdog</a></td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structWatchdogServer.html#a241f6016a9ebdb674fa582f6d5d794b1">WatchdogServer</a>()</td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structWatchdogServer.html#a7799ce444fae7c058d93dee89c2d1cb2">~WatchdogServer</a>()</td><td class="entry"><a class="el" href="structWatchdogServer.html">WatchdogServer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Thu Dec 3 2020 04:56:36 for watchdog-server by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>
