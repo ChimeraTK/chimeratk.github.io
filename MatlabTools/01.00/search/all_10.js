@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['varargout',['varargout',['../mtca4u__interface_8m.html#a64af3e25200c59fba64c6e2a38fb4456',1,'mtca4u_interface.m']]],
-  ['vectorofcommands',['vectorOfCommands',['../mtca4u__mex_8cpp.html#a0e1d37cba4c6a42e3c7efad5ac2dcd44',1,'mtca4u_mex.cpp']]],
-  ['visible',['Visible',['../passcode_8m.html#a68e6c0e5086f053f527c8b234312362e',1,'passcode.m']]]
+  ['ui',['ui',['../cd2ui_8m.html#ac492f8de2d00b6c4282e766bfadaf2e7',1,'ui():&#160;cd2ui.m'],['../cui2d_8m.html#ac492f8de2d00b6c4282e766bfadaf2e7',1,'ui():&#160;cui2d.m']]],
+  ['usage_3aversion_3aauthor_3a',['usage:Version:Author:',['../passcode_8m.html#ac07fd47a48975898c1b5da332e711541',1,'passcode.m']]]
 ];
