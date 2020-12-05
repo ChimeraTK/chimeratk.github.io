@@ -14,6 +14,7 @@ var class_threaded_doocs_server =
     [ "_configFileInstance", "class_threaded_doocs_server.html#a2b16c4b0e01945c798277e4fcffdd618", null ],
     [ "_configLock", "class_threaded_doocs_server.html#abcc17f23142247dc4a9950bfa1550f66", null ],
     [ "_configMutex", "class_threaded_doocs_server.html#a18975b056157429e87cb371c8e2e6086", null ],
+    [ "_doocsServer", "class_threaded_doocs_server.html#a016e86782f97d5b05fc2b0cdd993755b", null ],
     [ "_doocsServerThread", "class_threaded_doocs_server.html#a16820a8bea285a0581a8cbcc5e802f7f", null ],
     [ "_rpcNo", "class_threaded_doocs_server.html#ac12692b92772ac8413faaa268fe77930", null ],
     [ "_rpcNoLock", "class_threaded_doocs_server.html#a7957218f07dc50a2fc0a085cebf4a85c", null ],
