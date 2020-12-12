@@ -5,8 +5,6 @@ var searchData=
   ['datafaultcounter',['dataFaultCounter',['../class_chimera_t_k_1_1_application_module.html#a2bd9acaa66ad5954acd207efade11cf3',1,'ChimeraTK::ApplicationModule']]],
   ['datalosscounter',['dataLossCounter',['../class_chimera_t_k_1_1_application.html#a80e8990554832fe825057368d512a7a5',1,'ChimeraTK::Application']]],
   ['debugmode_5fvariablelist',['debugMode_variableList',['../class_chimera_t_k_1_1_application.html#a20ee34f9da398c58ad9e4228449412fa',1,'ChimeraTK::Application']]],
-  ['decimationfactor_5f',['decimationFactor_',['../class_chimera_t_k_1_1_micro_d_a_q.html#a3547ddcde372e192daf54c1415d1b85c',1,'ChimeraTK::MicroDAQ']]],
-  ['decimationthreshold_5f',['decimationThreshold_',['../class_chimera_t_k_1_1_micro_d_a_q.html#a9ba8c6767c7f9c7f2f342f871fc36e8d',1,'ChimeraTK::MicroDAQ']]],
   ['deeper',['deeper',['../struct_test_application2.html#a3b8e95b824f05f32e399addda23725a7',1,'TestApplication2']]],
   ['defaults',['defaults',['../class_chimera_t_k_1_1_test_facility.html#abaa04745a7c6c50bff0806aa747574a6',1,'ChimeraTK::TestFacility']]],
   ['description',['description',['../class_chimera_t_k_1_1_variable_network.html#a9c9b4e28e28b61f844a0e74c0ed16261',1,'ChimeraTK::VariableNetwork::description()'],['../struct_chimera_t_k_1_1_variable_network_node__data.html#ae415593a9b9a048543f38466e49c540f',1,'ChimeraTK::VariableNetworkNode_data::description()']]],

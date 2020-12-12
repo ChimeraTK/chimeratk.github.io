@@ -20,7 +20,6 @@ var dir_b74252328106591dfb0d36463b609fd4 =
       [ "FixedLimitValue", "struct_chimera_t_k_1_1_fixed_limit_value.html", "struct_chimera_t_k_1_1_fixed_limit_value" ]
     ] ],
     [ "Logging.h", "_logging_8h.html", "_logging_8h" ],
-    [ "MicroDAQ.h", "_micro_d_a_q_8h.html", "_micro_d_a_q_8h" ],
     [ "Multiplier.h", "_multiplier_8h.html", [
       [ "ConstMultiplier", "struct_chimera_t_k_1_1_const_multiplier.html", "struct_chimera_t_k_1_1_const_multiplier" ],
       [ "Multiplier", "struct_chimera_t_k_1_1_multiplier.html", "struct_chimera_t_k_1_1_multiplier" ],

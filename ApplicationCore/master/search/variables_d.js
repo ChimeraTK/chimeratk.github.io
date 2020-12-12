@@ -5,7 +5,7 @@ var searchData=
   ['onelevelup',['oneLevelUp',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#ab6b095adad481b54de11afaa5e5983f6',1,'FirstHierarchy::TestModule::VarGroup::oneLevelUp()'],['../struct_module2.html#a717c09eeb22fa826549b862ff10b24d2',1,'Module2::oneLevelUp()'],['../struct_test_module_with_variable_groups.html#ae4162f81f984ef56e8feca9ae1221556',1,'TestModuleWithVariableGroups::oneLevelUp()'],['../struct_test_module_with_variable_groups2.html#ae7506eb87c7394b2f28c70e57ec6595d',1,'TestModuleWithVariableGroups2::oneLevelUp()']]],
   ['oneup',['oneUp',['../struct_chimera_t_k_1_1_status_monitor_impl.html#a83b0f930b4045a20fffb2bdeef97ec9a',1,'ChimeraTK::StatusMonitorImpl']]],
   ['oneupandhide',['oneUpAndHide',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#a25de03ce90fdde2e8c10ce1e97746511',1,'FirstHierarchy::TestModule::VarGroup::oneUpAndHide()'],['../struct_test_module_with_variable_groups.html#a8503ae1b2f486d670a83183f177436b7',1,'TestModuleWithVariableGroups::oneUpAndHide()'],['../struct_test_module_with_variable_groups2.html#ab19c18ab1b62937d79d913d26cf10f93',1,'TestModuleWithVariableGroups2::oneUpAndHide()']]],
-  ['opsp',['opSP',['../struct_automation.html#a4a08a0e51d5adb3d163709212eff7ecb',1,'Automation::opSP()'],['../struct_automation.html#a6d28e80b6662b738458f8753adc2f837',1,'Automation::opSp()']]],
+  ['opsp',['opSp',['../struct_automation.html#a6d28e80b6662b738458f8753adc2f837',1,'Automation::opSp()'],['../struct_automation.html#a4a08a0e51d5adb3d163709212eff7ecb',1,'Automation::opSP()']]],
   ['out',['out',['../struct_test_app_1_1_b.html#a70abed79933da0b6c2dc338135b17881',1,'TestApp::B::out()'],['../struct_dummy.html#a16e64e8a65ca0908f8ff296f4386df7c',1,'Dummy::out()'],['../struct_dummy_array.html#ad06e2636b7ff81c58daf79cc7728c929',1,'DummyArray::out()']]],
   ['outermodule',['outerModule',['../struct_outer_group.html#afa0c77076bc4c5f3fc097390f83ad182',1,'OuterGroup::outerModule()'],['../struct_test_application.html#a6134424cd8d8ac69d998a17687c9c400',1,'TestApplication::outerModule()']]],
   ['outermodulegroup1',['outerModuleGroup1',['../struct_test_application.html#a1f214a63458d120771ad5eec962e4a83',1,'TestApplication']]],
@@ -18,7 +18,6 @@ var searchData=
   ['outputvariable',['outputVariable',['../structfixture__with__poll__and__push__input.html#a76053f2959bd7ab1478b847b0fa2968e',1,'fixture_with_poll_and_push_input']]],
   ['oven',['oven',['../struct_example_app.html#adf3de10d6f57c1d9e5e58c8dbc3a7210',1,'ExampleApp']]],
   ['oventemp',['ovenTemp',['../namespaceoven__sim.html#a3244babec1f505d68e6d8573e9163903',1,'oven_sim']]],
-  ['overallvariablelist',['overallVariableList',['../class_chimera_t_k_1_1_micro_d_a_q.html#af70486d1984996c0b4acc34d0974e187',1,'ChimeraTK::MicroDAQ']]],
   ['owner',['owner',['../class_chimera_t_k_1_1_device_module.html#acc495fb95e532c24d54422955df7be78',1,'ChimeraTK::DeviceModule']]],
   ['owningmodule',['owningModule',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a87f4975ed069256b930182573cd0fcc1',1,'ChimeraTK::VariableNetworkNode_data']]]
 ];

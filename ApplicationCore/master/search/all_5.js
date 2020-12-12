@@ -2,7 +2,6 @@ var searchData=
 [
   ['eliminated',['eliminated',['../struct_second_hierarchy_1_1_test_module.html#a918874994063e336c2c7b8802e39d856',1,'SecondHierarchy::TestModule']]],
   ['eliminatedgroup',['EliminatedGroup',['../struct_second_hierarchy_1_1_test_module_1_1_eliminated_group.html',1,'SecondHierarchy::TestModule::EliminatedGroup'],['../struct_second_hierarchy_1_1_test_module.html#a4400625115cfb848e9bd87a727f44879',1,'SecondHierarchy::TestModule::eliminatedGroup()']]],
-  ['enable',['enable',['../class_chimera_t_k_1_1_micro_d_a_q.html#a9b5a996e00037f560ec67f88e1cd98be',1,'ChimeraTK::MicroDAQ']]],
   ['enabledebugmakeconnections',['enableDebugMakeConnections',['../class_chimera_t_k_1_1_application.html#a344b8b314214e65660e39e6299d445fb',1,'ChimeraTK::Application']]],
   ['enabledebugtestablemode',['enableDebugTestableMode',['../class_chimera_t_k_1_1_application.html#a2e7a4a1dc5d457fe7f7b929794ec4261',1,'ChimeraTK::Application']]],
   ['enabletestablemode',['enableTestableMode',['../class_chimera_t_k_1_1_application.html#aab5d12e4073ae6bb0dd7fde8b435aa38',1,'ChimeraTK::Application']]],

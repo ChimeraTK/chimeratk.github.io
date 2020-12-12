@@ -2,12 +2,11 @@ var searchData=
 [
   ['maxmonitor',['MaxMonitor',['../struct_chimera_t_k_1_1_max_monitor.html',1,'ChimeraTK']]],
   ['metadatapropagatingregisterdecorator',['MetaDataPropagatingRegisterDecorator',['../class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html',1,'ChimeraTK']]],
-  ['microdaq',['MicroDAQ',['../class_chimera_t_k_1_1_micro_d_a_q.html',1,'ChimeraTK']]],
   ['minmonitor',['MinMonitor',['../struct_chimera_t_k_1_1_min_monitor.html',1,'ChimeraTK']]],
   ['mixedgroup',['MixedGroup',['../struct_test_module_1_1_mixed_group.html',1,'TestModule']]],
   ['module',['Module',['../class_chimera_t_k_1_1_module.html',1,'ChimeraTK']]],
   ['module1',['Module1',['../struct_test_module_1_1_module1.html',1,'TestModule&lt; T &gt;::Module1'],['../struct_module1.html',1,'Module1']]],
-  ['module2',['Module2',['../struct_module2.html',1,'Module2'],['../struct_test_module_1_1_module2.html',1,'TestModule&lt; T &gt;::Module2']]],
+  ['module2',['Module2',['../struct_test_module_1_1_module2.html',1,'TestModule&lt; T &gt;::Module2'],['../struct_module2.html',1,'Module2']]],
   ['module3',['Module3',['../struct_module3.html',1,'']]],
   ['modulea',['ModuleA',['../struct_module_a.html',1,'']]],
   ['moduleb',['ModuleB',['../struct_module_b.html',1,'']]],

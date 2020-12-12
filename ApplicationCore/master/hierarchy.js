@@ -112,7 +112,6 @@ var hierarchy =
               [ "ChimeraTK::FixedLimitValue< UserType, min, max >", "struct_chimera_t_k_1_1_fixed_limit_value.html", null ],
               [ "ChimeraTK::LimitValue< UserType >", "struct_chimera_t_k_1_1_limit_value.html", null ]
             ] ],
-            [ "ChimeraTK::MicroDAQ< TRIGGERTYPE >", "class_chimera_t_k_1_1_micro_d_a_q.html", null ],
             [ "ChimeraTK::Multiplier< InputType, OutputType, NELEMS >", "struct_chimera_t_k_1_1_multiplier.html", null ],
             [ "ChimeraTK::PeriodicTrigger", "struct_chimera_t_k_1_1_periodic_trigger.html", null ],
             [ "ChimeraTK::ReadBitMask< NBITS >", "struct_chimera_t_k_1_1_read_bit_mask.html", null ],
