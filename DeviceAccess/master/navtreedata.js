@@ -52,6 +52,7 @@ var NAVTREE =
       [ "Specifying the dummies in the device map file", "testing_with_dummy_backends.html#dmap_specify_dummies", null ],
       [ "Writeing to read-only registers", "testing_with_dummy_backends.html#dummy_backends_write_readonly", null ]
     ] ],
+    [ "Using push-type inputs with AccessMode::wait_for_new_data", "wait_for_new_data.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", null, [
@@ -104,12 +105,12 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_unified_backend_test.html#a11d106162d2a111205ed5da3b2217910",
 "class_map_file_test.html#a2855928f624776cc625be88db64320fe",
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a1fce441aaa962f572d643140658a6e4c",
-"lmap.html",
-"struct_chimera_t_k_1_1_exception_dummy_push_decorator.html",
-"struct_integers__signed32.html",
-"struct_reg_word_firmware_forced_read_only__push.html#ac3eba5591696f9a7ad3871c08597db8e",
-"test_fixed_point_converter_8cpp.html#a869d7e3e66b6c1b7d1dfd33b9f096458",
-"test_subdevice_backend_8cpp.html#a935ebdda3c7b54344e338ec47b060bfd"
+"index.html#first_steps",
+"struct_chimera_t_k_1_1_dummy_protocol1.html#a4b069fe0d9e019addd3fd1668bb31632",
+"struct_f.html#a7073bd2fb241c42f78d5f34ddb1d9293",
+"struct_reg_word_firmware_forced_read_only.html#aff3b7641a24d7188f0b7a74139f9802a",
+"test_fixed_point_converter_8cpp.html#a6b2a3852db8bb19ab6909bac01859985",
+"test_subdevice_backend_8cpp.html#a1f465f12a79f6e68e0184f039fe0d17d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

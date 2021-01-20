@@ -5,5 +5,6 @@ var examples =
     [ "accessor2D_multiplexed.cpp", "accessor2_d_multiplexed_8cpp-example.html", null ],
     [ "basic.cpp", "basic_8cpp-example.html", null ],
     [ "CustomBackend.cc", "_custom_backend_8cc-example.html", null ],
-    [ "dataConsistencyGroup.cpp", "data_consistency_group_8cpp-example.html", null ]
+    [ "dataConsistencyGroup.cpp", "data_consistency_group_8cpp-example.html", null ],
+    [ "read_temperature_doocs_zmq.cpp", "read_temperature_doocs_zmq_8cpp-example.html", null ]
 ];

@@ -24,5 +24,6 @@ var searchData=
   ['usestatus',['useStatus',['../struct_static_core.html#a8ad4d88b5073deae5dc6b8f59c1bb377',1,'StaticCore']]],
   ['utilities',['Utilities',['../class_chimera_t_k_1_1_utilities.html',1,'ChimeraTK::Utilities'],['../class_chimera_t_k_1_1_utilities.html#a2bb15b10961946a6502a19cda3c4e958',1,'ChimeraTK::Utilities::Utilities()']]],
   ['utilities_2ecpp',['Utilities.cpp',['../_utilities_8cpp.html',1,'']]],
-  ['utilities_2eh',['Utilities.h',['../mtca4u__compatibility__headers_2_utilities_8h.html',1,'(Global Namespace)'],['../util_2include_2_utilities_8h.html',1,'(Global Namespace)']]]
+  ['utilities_2eh',['Utilities.h',['../mtca4u__compatibility__headers_2_utilities_8h.html',1,'(Global Namespace)'],['../util_2include_2_utilities_8h.html',1,'(Global Namespace)']]],
+  ['using_20push_2dtype_20inputs_20with_20accessmode_3a_3await_5ffor_5fnew_5fdata',['Using push-type inputs with AccessMode::wait_for_new_data',['../wait_for_new_data.html',1,'']]]
 ];

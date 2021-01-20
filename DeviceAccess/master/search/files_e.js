@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['read_5ftemperature_5fdoocs_5fzmq_2ecpp',['read_temperature_doocs_zmq.cpp',['../read__temperature__doocs__zmq_8cpp.html',1,'']]],
   ['readanygroup_2eh',['ReadAnyGroup.h',['../_read_any_group_8h.html',1,'']]],
   ['rebotbackend_2ecc',['RebotBackend.cc',['../_rebot_backend_8cc.html',1,'']]],
   ['rebotbackend_2eh',['RebotBackend.h',['../device__backends_2_rebot_2include_2_rebot_backend_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_rebot_backend_8h.html',1,'(Global Namespace)']]],
