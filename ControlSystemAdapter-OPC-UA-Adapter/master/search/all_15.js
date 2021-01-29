@@ -124,6 +124,7 @@ var searchData=
   ['ua_5fclient_5fdeletereference',['UA_Client_deleteReference',['../open62541_8c.html#a01bc72e700a1f57246a47c1355412985',1,'open62541.c']]],
   ['ua_5fclient_5fdisconnect',['UA_Client_disconnect',['../open62541_8c.html#a77caa64f5788ccd88a3760461fcafe43',1,'open62541.c']]],
   ['ua_5fclient_5fforeachchildnodecall',['UA_Client_forEachChildNodeCall',['../open62541_8c.html#a65f4ab185f1e43cb6ee2d9c3a962d77b',1,'open62541.c']]],
+  ['ua_5fclient_5fgetconnectionstate',['UA_Client_getConnectionState',['../open62541_8c.html#afc769a5a14491de49755065d0df20c4f',1,'open62541.c']]],
   ['ua_5fclient_5fgetendpoints',['UA_Client_getEndpoints',['../open62541_8c.html#aaf3bd81def2e0df473df3b4ddff76f23',1,'open62541.c']]],
   ['ua_5fclient_5fgetstate',['UA_Client_getState',['../open62541_8c.html#a8a1ed871019c73f861b60e2c8593b32e',1,'open62541.c']]],
   ['ua_5fclient_5fmanuallyrenewsecurechannel',['UA_Client_manuallyRenewSecureChannel',['../open62541_8c.html#ae1772918ea2d1fe419c49af5a2d2315d',1,'open62541.c']]],

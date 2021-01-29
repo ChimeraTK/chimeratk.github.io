@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"struct_u_a___query_data_set.html#a7ec5e616bb69e3197ce3896c840199ae":[3,0,146,2],
 "struct_u_a___query_data_set.html#ad08a94aaa67a7ff7d2f5dbbab95d63cc":[3,0,146,3],
 "struct_u_a___query_first_request.html":[3,0,147],
 "struct_u_a___query_first_request.html#a5392d898cd294b80a02fd058b62abf45":[3,0,147,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "struct_u_a___tcp_error_message.html#abbc7bbc3b709e5e407cac35e90b970db":[3,0,191,1],
 "struct_u_a___tcp_hello_message.html":[3,0,192],
 "struct_u_a___tcp_hello_message.html#a01562c42b1b28c2549b237d63cfe3769":[3,0,192,3],
-"struct_u_a___tcp_hello_message.html#a7bcd40d8ea675a903162cb2c4cad97fa":[3,0,192,4],
-"struct_u_a___tcp_hello_message.html#a8fead84c7af9ada3082a12ad10bb168e":[3,0,192,0]
+"struct_u_a___tcp_hello_message.html#a7bcd40d8ea675a903162cb2c4cad97fa":[3,0,192,4]
 };
