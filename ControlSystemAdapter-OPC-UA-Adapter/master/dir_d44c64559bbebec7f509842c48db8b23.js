@@ -6,7 +6,6 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     ] ],
     [ "ipc_managed_object.h", "ipc__managed__object_8h.html", null ],
     [ "ipc_manager.h", "ipc__manager_8h.html", null ],
-    [ "open62541.h", "open62541_8h.html", "open62541_8h" ],
     [ "ua_adapter.h", "ua__adapter_8h.html", [
       [ "FolderInfo", "struct_folder_info.html", "struct_folder_info" ],
       [ "ServerConfig", "struct_server_config.html", "struct_server_config" ],

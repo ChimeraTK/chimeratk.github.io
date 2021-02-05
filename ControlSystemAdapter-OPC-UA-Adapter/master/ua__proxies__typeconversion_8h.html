@@ -150,8 +150,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">char *s  = (<span class="keywordtype">char</span> *) malloc(_p_cppstring-&gt;length()+1); \</div><div class="line">strncpy(s, (<span class="keywordtype">char</span>*) _p_cppstring-&gt;c_str(), _p_cppstring-&gt;length()); \</div><div class="line">_p_uastring.length = _p_cppstring-&gt;length(); \</div><div class="line">_p_uastring.data = (<a class="code" href="open62541_8h.html#ac31865e6fcb9a042b5eaf5a5bd4ed30d">UA_Byte</a> *) malloc(_p_uastring.length); \</div><div class="line">memcpy(_p_uastring.data, s, _p_uastring.length); \</div><div class="line">free(s); \</div><div class="line">}</div><div class="ttc" id="open62541_8h_html_ac31865e6fcb9a042b5eaf5a5bd4ed30d"><div class="ttname"><a href="open62541_8h.html#ac31865e6fcb9a042b5eaf5a5bd4ed30d">UA_Byte</a></div><div class="ttdeci">uint8_t UA_Byte</div><div class="ttdoc">Byte ^^^^ An integer value between 0 and 255. </div><div class="ttdef"><b>Definition:</b> <a href="open62541_8h_source.html#l00938">open62541.h:938</a></div></div>
-</div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">char *s  = (<span class="keywordtype">char</span> *) malloc(_p_cppstring-&gt;length()+1); \</div><div class="line">strncpy(s, (<span class="keywordtype">char</span>*) _p_cppstring-&gt;c_str(), _p_cppstring-&gt;length()); \</div><div class="line">_p_uastring.length = _p_cppstring-&gt;length(); \</div><div class="line">_p_uastring.data = (UA_Byte *) malloc(_p_uastring.length); \</div><div class="line">memcpy(_p_uastring.data, s, _p_uastring.length); \</div><div class="line">free(s); \</div><div class="line">}</div></div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="ua__proxies__typeconversion_8h_source.html#l00070">70</a> of file <a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>.</p>
 
 </div>
@@ -289,8 +288,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">UA_String *ua_url = (<a class="code" href="struct_u_a___string.html">UA_String</a> *) _p_uastring; \</div><div class="line">char *ua_str_tmp = (<span class="keywordtype">char</span> *) malloc(ua_url-&gt;length+1); \</div><div class="line">memset(ua_str_tmp, 0, ua_url-&gt;length+1); \</div><div class="line">strncpy(ua_str_tmp, (<span class="keywordtype">char</span> *) ua_url-&gt;data, ua_url-&gt;length); \</div><div class="line">*(_p_cppstring) = ua_str_tmp; \</div><div class="line">free(ua_str_tmp); \</div><div class="line">} <span class="keywordflow">while</span>(0); \</div><div class="ttc" id="struct_u_a___string_html"><div class="ttname"><a href="struct_u_a___string.html">UA_String</a></div><div class="ttdoc">String ^^^^^^ A sequence of Unicode characters. </div><div class="ttdef"><b>Definition:</b> <a href="open62541_8h_source.html#l01038">open62541.h:1038</a></div></div>
-</div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">UA_String *ua_url = (UA_String *) _p_uastring; \</div><div class="line">char *ua_str_tmp = (<span class="keywordtype">char</span> *) malloc(ua_url-&gt;length+1); \</div><div class="line">memset(ua_str_tmp, 0, ua_url-&gt;length+1); \</div><div class="line">strncpy(ua_str_tmp, (<span class="keywordtype">char</span> *) ua_url-&gt;data, ua_url-&gt;length); \</div><div class="line">*(_p_cppstring) = ua_str_tmp; \</div><div class="line">free(ua_str_tmp); \</div><div class="line">} <span class="keywordflow">while</span>(0); \</div></div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="ua__proxies__typeconversion_8h_source.html#l00027">27</a> of file <a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>.</p>
 
 </div>
@@ -361,7 +359,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="ua__proxies__typeconversion_8h.html">ua_proxies_typeconversion.h</a></li>
-    <li class="footer">Generated on Fri Jan 29 2021 04:56:56 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <li class="footer">Generated on Fri Feb 5 2021 04:56:51 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

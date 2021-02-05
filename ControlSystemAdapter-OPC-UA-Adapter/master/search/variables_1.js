@@ -2,17 +2,6 @@ var searchData=
 [
   ['b',['b',['../classua__node__types_1_1opcua__node__id__t.html#aa5094982410a55b0016531fcd89314c1',1,'ua_node_types::opcua_node_id_t']]],
   ['basenodeid',['baseNodeId',['../classua__mapped__class.html#a096c031f9cf99835303d984458861a21',1,'ua_mapped_class::baseNodeId()'],['../struct_test_fixture_server_set.html#a6215ad5896f4786794ca4ab874bbbf3d',1,'TestFixtureServerSet::baseNodeId()']]],
-  ['binaryencodingid',['binaryEncodingId',['../struct_u_a___data_type.html#a545cbd4d15a55357679b20212f5c0cfc',1,'UA_DataType']]],
-  ['binarymessage',['binaryMessage',['../struct_u_a___job.html#a424616c5209eb4b8d1a80fa39fdb0fb5',1,'UA_Job']]],
-  ['body',['body',['../struct_u_a___extension_object.html#ac1af8afdad7bb507bf0e25c93527c645',1,'UA_ExtensionObject']]],
-  ['browsedirection',['browseDirection',['../struct_u_a___browse_description.html#af14044124dcc6a014f96186e10de0eac',1,'UA_BrowseDescription']]],
-  ['browsename',['browseName',['../struct_u_a___reference_description.html#ad1e31d6c57d0e1e88da14a6e118fda53',1,'UA_ReferenceDescription::browseName()'],['../struct_u_a___add_nodes_item.html#a180f6562b17ec344cb15e000b307599c',1,'UA_AddNodesItem::browseName()']]],
-  ['browsepaths',['browsePaths',['../struct_u_a___translate_browse_paths_to_node_ids_request.html#a19aade6560b97cc5376416900447dbb0',1,'UA_TranslateBrowsePathsToNodeIdsRequest']]],
-  ['browsepathssize',['browsePathsSize',['../struct_u_a___translate_browse_paths_to_node_ids_request.html#a80dfa7b15dc576a8dd52a7f17c71331c',1,'UA_TranslateBrowsePathsToNodeIdsRequest']]],
-  ['builddate',['buildDate',['../struct_u_a___build_info.html#a8e138d9912df2ef6bdc2b5fcd0350e74',1,'UA_BuildInfo']]],
-  ['buildinfo',['buildInfo',['../struct_u_a___server_status_data_type.html#ad4afb932c15ff97eef2a4a3ed8f4609d',1,'UA_ServerStatusDataType::buildInfo()'],['../struct_u_a___server_config.html#a82f5b5aae08a9048c3151db5a40ecea9',1,'UA_ServerConfig::buildInfo()']]],
-  ['buildnumber',['buildNumber',['../struct_u_a___build_info.html#a0988e74957d82bce3e026eb6fc435739',1,'UA_BuildInfo']]],
-  ['builtin',['builtin',['../struct_u_a___data_type.html#ae92f7f596472f9104614f81c7e03d93b',1,'UA_DataType']]],
   ['builtintype_5ftypeid_5fboolean',['BUILTINTYPE_TYPEID_BOOLEAN',['../namespaceua__constants.html#a4ab16f1fb2850ce0faae39236575261c',1,'ua_constants']]],
   ['builtintype_5ftypeid_5fbyte',['BUILTINTYPE_TYPEID_BYTE',['../namespaceua__constants.html#a7b7d05d4de2df2160292c79f6e5424f6',1,'ua_constants']]],
   ['builtintype_5ftypeid_5fbytestring',['BUILTINTYPE_TYPEID_BYTESTRING',['../namespaceua__constants.html#a6cdb07e7d17a3d5019bda5b283a04b96',1,'ua_constants']]],
@@ -35,6 +24,5 @@ var searchData=
   ['builtintype_5ftypeid_5fuint16',['BUILTINTYPE_TYPEID_UINT16',['../namespaceua__constants.html#a8307c094a5d470d626bff3c524f3afd2',1,'ua_constants']]],
   ['builtintype_5ftypeid_5fuint32',['BUILTINTYPE_TYPEID_UINT32',['../namespaceua__constants.html#a9d7dd20d19293ca955dde9ec649ce80b',1,'ua_constants']]],
   ['builtintype_5ftypeid_5fuint64',['BUILTINTYPE_TYPEID_UINT64',['../namespaceua__constants.html#a2bc42a6004c1a73702c495217ebf0541',1,'ua_constants']]],
-  ['builtintype_5ftypeid_5fxmlelement',['BUILTINTYPE_TYPEID_XMLELEMENT',['../namespaceua__constants.html#abf79d50b78d09f11acfbafcec38ff387',1,'ua_constants']]],
-  ['bytestring',['byteString',['../struct_u_a___node_id.html#aea4a6299c5ce6a23a8312af364f4b69b',1,'UA_NodeId']]]
+  ['builtintype_5ftypeid_5fxmlelement',['BUILTINTYPE_TYPEID_XMLELEMENT',['../namespaceua__constants.html#abf79d50b78d09f11acfbafcec38ff387',1,'ua_constants']]]
 ];

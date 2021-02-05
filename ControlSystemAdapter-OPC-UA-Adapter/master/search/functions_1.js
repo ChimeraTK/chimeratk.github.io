@@ -5,7 +5,7 @@ var searchData=
   ['adddocument',['addDocument',['../classopen62541___x_m_l_preprocessor_1_1open62541___x_m_l_preprocessor.html#a78caaeac80b753c45983a8e536303e0e',1,'open62541_XMLPreprocessor::open62541_XMLPreprocessor']]],
   ['addinversereferencetarget',['addInverseReferenceTarget',['../classua__node__types_1_1opcua__node__t.html#ad5ea0657dc62f64c199dc4c0b703f9b7',1,'ua_node_types::opcua_node_t']]],
   ['additionalvariabletestsuite',['AdditionalVariableTestSuite',['../class_additional_variable_test_suite.html#abcb663647a509df35647ca2bef14d6f9',1,'AdditionalVariableTestSuite']]],
-  ['addnamespace',['addNamespace',['../classua__namespace_1_1opcua__namespace.html#a4b9dc4f77788e225c2973ca4dc676d84',1,'ua_namespace.opcua_namespace.addNamespace()'],['../open62541_8c.html#a1816470c83dc6297ba3f653b373b4146',1,'addNamespace():&#160;open62541.c']]],
+  ['addnamespace',['addNamespace',['../classua__namespace_1_1opcua__namespace.html#a4b9dc4f77788e225c2973ca4dc676d84',1,'ua_namespace::opcua_namespace']]],
   ['addreference',['addReference',['../classua__node__types_1_1opcua__node__t.html#afff10b2bcc5057115d4539a2ec39dabc',1,'ua_node_types::opcua_node_t']]],
   ['address',['address',['../classua__node__types_1_1opcua__reference_pointer__t.html#a21236c879be166defbf93170915b6c12',1,'ua_node_types.opcua_referencePointer_t.address()'],['../classua__node__types_1_1opcua__node__t.html#adefb5f5c3019c1bd10fb7fbbd34a85aa',1,'ua_node_types.opcua_node_t.address()']]],
   ['addvariable',['addVariable',['../classua__uaadapter.html#ab545ab2829045d6f140dd1a6165200ab',1,'ua_uaadapter']]],

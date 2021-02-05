@@ -31,9 +31,7 @@ var searchData=
   ['getnodeiddefinestring',['getNodeIdDefineString',['../classopen62541___macro_helper_1_1open62541___macro_helper.html#acc300110c489d40bde3801c6494f09e0',1,'open62541_MacroHelper::open62541_MacroHelper']]],
   ['getnodesbyname',['getNodesByName',['../classxml__file__handler.html#a216ab22dd00e70a326bc24cff2c8d505',1,'xml_file_handler']]],
   ['getnodeset',['getNodeSet',['../classxml__file__handler.html#a98a59be29cc38545db6c65fd8094a31f',1,'xml_file_handler']]],
-  ['getnodetype',['getNodeType',['../open62541_8c.html#a7fd2597443141f8334f15d9feb4212ff',1,'open62541.c']]],
   ['getnumericrepresentation',['getNumericRepresentation',['../classua__builtin__types_1_1opcua__value__t.html#af0917a7b13d606d122f502995cc48a29',1,'ua_builtin_types::opcua_value_t']]],
-  ['getobjectnodetype',['getObjectNodeType',['../open62541_8c.html#a79f24ff00c2ec2057a39a6e94f79887e',1,'open62541.c']]],
   ['getownnodeid',['getOwnNodeId',['../classua__uaadapter.html#a5983c3a8b425e50cf1e2acbc354b2580',1,'ua_uaadapter::getOwnNodeId()'],['../classua__processvariable.html#a3fa602a9d9036b423ea54f9b9b8544bd',1,'ua_processvariable::getOwnNodeId()']]],
   ['getpreprocessedfiles',['getPreProcessedFiles',['../classopen62541___x_m_l_preprocessor_1_1open62541___x_m_l_preprocessor.html#a8fb94b5c14dc82e91c34e31528f48b65',1,'open62541_XMLPreprocessor::open62541_XMLPreprocessor']]],
   ['getreferencednamespaceuri',['getReferencedNamespaceUri',['../classopen62541___x_m_l_preprocessor_1_1pre_process_document.html#aedd28220b35124145047444981884b1e',1,'open62541_XMLPreprocessor::preProcessDocument']]],
@@ -44,7 +42,6 @@ var searchData=
   ['gettargetxmlname',['getTargetXMLName',['../classopen62541___x_m_l_preprocessor_1_1pre_process_document.html#a77d2eb9ccad8d44858b1be6bed33037f',1,'open62541_XMLPreprocessor::preProcessDocument']]],
   ['gettype',['getType',['../classua__processvariable.html#aea1530568e8df83367cb9e43a8ff005b',1,'ua_processvariable']]],
   ['gettypebystring',['getTypeByString',['../classua__builtin__types_1_1opcua__value__t.html#af566ce4fec39df389ba4de0aadd7ee4d',1,'ua_builtin_types::opcua_value_t']]],
-  ['gettypehierarchy',['getTypeHierarchy',['../open62541_8c.html#af41e3b553e07dc94520bd94100b5b32f',1,'open62541.c']]],
   ['getuaadapter',['getUAAdapter',['../classcsa__opcua__adapter.html#a5aa0336125f84e40a40e4e3a975c5890',1,'csa_opcua_adapter']]],
   ['getunlinkedpointers',['getUnlinkedPointers',['../classua__namespace_1_1opcua__namespace.html#a00e2fac780b3d5f62b6d24d15f1f0562',1,'ua_namespace::opcua_namespace']]],
   ['getusednamespacearraynames',['getUsedNamespaceArrayNames',['../classopen62541___x_m_l_preprocessor_1_1open62541___x_m_l_preprocessor.html#a32bb865c9b8a8c2b9ec5ca9977ece485',1,'open62541_XMLPreprocessor::open62541_XMLPreprocessor']]],
@@ -62,6 +59,5 @@ var searchData=
   ['getvalue_5fuint64',['getValue_uint64',['../classua__processvariable.html#abc3f902ba0f6425b9b7bab9c0c525581',1,'ua_processvariable']]],
   ['getvalue_5fuint8',['getValue_uint8',['../classua__processvariable.html#a00cc982a09434d6f53f8a7ef138801e3',1,'ua_processvariable']]],
   ['getvaluefieldbyalias',['getValueFieldByAlias',['../classua__builtin__types_1_1opcua__value__t.html#a252a955d45624a65e3e7d20b78795109',1,'ua_builtin_types::opcua_value_t']]],
-  ['getvariablenodetype',['getVariableNodeType',['../open62541_8c.html#aeb87a8cc513ad025a8d560202671934d',1,'open62541.c']]],
   ['getvariables',['getVariables',['../classua__uaadapter.html#a29d02f6eaea49e043ed8fc95fb893b62',1,'ua_uaadapter']]]
 ];

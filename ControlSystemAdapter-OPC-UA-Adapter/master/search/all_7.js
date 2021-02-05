@@ -1,7 +1,6 @@
 var searchData=
 [
   ['g',['g',['../classua__node__types_1_1opcua__node__id__t.html#ac2e0a8765c14dffb67b8f3ac7f770d5f',1,'ua_node_types.opcua_node_id_t.g()'],['../classua__node__types_1_1opcua__node__id__t.html#ae1266ed9fe49c8cbbfda37ec265e40d9',1,'ua_node_types.opcua_node_id_t.g()']]],
-  ['gatewayserveruri',['gatewayServerUri',['../struct_u_a___application_description.html#abfe87af61cffc29acc02250bc5dd8a9f',1,'UA_ApplicationDescription']]],
   ['generate_5fopen62541ccode',['generate_open62541CCode',['../namespacegenerate__open62541_c_code.html',1,'']]],
   ['generate_5fopen62541ccode_2epy',['generate_open62541CCode.py',['../generate__open62541_c_code_8py.html',1,'']]],
   ['generatedcode',['generatedCode',['../namespacegenerate__open62541_c_code.html#a127fe917a86218677d351d61beadf5a6',1,'generate_open62541CCode']]],
@@ -25,7 +24,6 @@ var searchData=
   ['getengineeringunit',['getEngineeringUnit',['../classua__processvariable.html#ab2eff188e100cfd69a805280d2b85adb',1,'ua_processvariable']]],
   ['getfirstparentnode',['getFirstParentNode',['../classua__node__types_1_1opcua__node__t.html#a27826da33429d07b55b278018a79ed0a',1,'ua_node_types::opcua_node_t']]],
   ['getinversereferences',['getInverseReferences',['../classua__node__types_1_1opcua__node__t.html#a06713ebc3bff11a5c4be281ecf9af96f',1,'ua_node_types::opcua_node_t']]],
-  ['getjobs',['getJobs',['../struct_u_a___server_network_layer.html#abc83c9d9cf623ce0452bf37452444953',1,'UA_ServerNetworkLayer']]],
   ['getmappedserver',['getMappedServer',['../classua__uaadapter.html#a861aa2538707a4fd004530e2c0c9384c',1,'ua_uaadapter']]],
   ['getname',['getName',['../classua__processvariable.html#ac6473898e6fc83dddd15d088a9a37dd9',1,'ua_processvariable']]],
   ['getnamespace',['getNamespace',['../classua__node__types_1_1opcua__node__t.html#a0a5acc32a8083243df05cb22c5bf43f0',1,'ua_node_types::opcua_node_t']]],
@@ -37,21 +35,17 @@ var searchData=
   ['getnodeiddefinestring',['getNodeIdDefineString',['../classopen62541___macro_helper_1_1open62541___macro_helper.html#acc300110c489d40bde3801c6494f09e0',1,'open62541_MacroHelper::open62541_MacroHelper']]],
   ['getnodesbyname',['getNodesByName',['../classxml__file__handler.html#a216ab22dd00e70a326bc24cff2c8d505',1,'xml_file_handler']]],
   ['getnodeset',['getNodeSet',['../classxml__file__handler.html#a98a59be29cc38545db6c65fd8094a31f',1,'xml_file_handler']]],
-  ['getnodetype',['getNodeType',['../open62541_8c.html#a7fd2597443141f8334f15d9feb4212ff',1,'open62541.c']]],
   ['getnumericrepresentation',['getNumericRepresentation',['../classua__builtin__types_1_1opcua__value__t.html#af0917a7b13d606d122f502995cc48a29',1,'ua_builtin_types::opcua_value_t']]],
-  ['getobjectnodetype',['getObjectNodeType',['../open62541_8c.html#a79f24ff00c2ec2057a39a6e94f79887e',1,'open62541.c']]],
   ['getownnodeid',['getOwnNodeId',['../classua__uaadapter.html#a5983c3a8b425e50cf1e2acbc354b2580',1,'ua_uaadapter::getOwnNodeId()'],['../classua__processvariable.html#a3fa602a9d9036b423ea54f9b9b8544bd',1,'ua_processvariable::getOwnNodeId()']]],
   ['getpreprocessedfiles',['getPreProcessedFiles',['../classopen62541___x_m_l_preprocessor_1_1open62541___x_m_l_preprocessor.html#a8fb94b5c14dc82e91c34e31528f48b65',1,'open62541_XMLPreprocessor::open62541_XMLPreprocessor']]],
   ['getreferencednamespaceuri',['getReferencedNamespaceUri',['../classopen62541___x_m_l_preprocessor_1_1pre_process_document.html#aedd28220b35124145047444981884b1e',1,'open62541_XMLPreprocessor::preProcessDocument']]],
   ['getreferences',['getReferences',['../classua__node__types_1_1opcua__node__t.html#a545b24dec70a6f6f6294688fabe16a61',1,'ua_node_types::opcua_node_t']]],
   ['getroot',['getRoot',['../classua__namespace_1_1opcua__namespace.html#a49a26a33fab9c87691f5c0acf9d52f2a',1,'ua_namespace::opcua_namespace']]],
-  ['getsendbuffer',['getSendBuffer',['../struct_u_a___connection.html#ab74d0b1bca3410bab2b53bf053c67134',1,'UA_Connection']]],
   ['getsourcetimestamp',['getSourceTimeStamp',['../classua__uaadapter.html#af0901be64485243fabd977b1dfa76719',1,'ua_uaadapter::getSourceTimeStamp()'],['../classua__additionalvariable.html#a11c229ea00b09e4d49fbd83a87f1efb6',1,'ua_additionalvariable::getSourceTimeStamp()'],['../classua__mapped__class.html#a72e312c7bae0bdedd012da15bf2a0ac5',1,'ua_mapped_class::getSourceTimeStamp()'],['../classua__processvariable.html#a9db67f91aab96359b3de47560661d7a6',1,'ua_processvariable::getSourceTimeStamp()']]],
   ['getsubtypesof',['getSubTypesOf',['../classua__namespace_1_1opcua__namespace.html#abe7652392c7090fa672c1cfea05fc4d1',1,'ua_namespace::opcua_namespace']]],
   ['gettargetxmlname',['getTargetXMLName',['../classopen62541___x_m_l_preprocessor_1_1pre_process_document.html#a77d2eb9ccad8d44858b1be6bed33037f',1,'open62541_XMLPreprocessor::preProcessDocument']]],
   ['gettype',['getType',['../classua__processvariable.html#aea1530568e8df83367cb9e43a8ff005b',1,'ua_processvariable']]],
   ['gettypebystring',['getTypeByString',['../classua__builtin__types_1_1opcua__value__t.html#af566ce4fec39df389ba4de0aadd7ee4d',1,'ua_builtin_types::opcua_value_t']]],
-  ['gettypehierarchy',['getTypeHierarchy',['../open62541_8c.html#af41e3b553e07dc94520bd94100b5b32f',1,'open62541.c']]],
   ['getuaadapter',['getUAAdapter',['../classcsa__opcua__adapter.html#a5aa0336125f84e40a40e4e3a975c5890',1,'csa_opcua_adapter']]],
   ['getunlinkedpointers',['getUnlinkedPointers',['../classua__namespace_1_1opcua__namespace.html#a00e2fac780b3d5f62b6d24d15f1f0562',1,'ua_namespace::opcua_namespace']]],
   ['getusednamespacearraynames',['getUsedNamespaceArrayNames',['../classopen62541___x_m_l_preprocessor_1_1open62541___x_m_l_preprocessor.html#a32bb865c9b8a8c2b9ec5ca9977ece485',1,'open62541_XMLPreprocessor::open62541_XMLPreprocessor']]],
@@ -69,7 +63,5 @@ var searchData=
   ['getvalue_5fuint64',['getValue_uint64',['../classua__processvariable.html#abc3f902ba0f6425b9b7bab9c0c525581',1,'ua_processvariable']]],
   ['getvalue_5fuint8',['getValue_uint8',['../classua__processvariable.html#a00cc982a09434d6f53f8a7ef138801e3',1,'ua_processvariable']]],
   ['getvaluefieldbyalias',['getValueFieldByAlias',['../classua__builtin__types_1_1opcua__value__t.html#a252a955d45624a65e3e7d20b78795109',1,'ua_builtin_types::opcua_value_t']]],
-  ['getvariablenodetype',['getVariableNodeType',['../open62541_8c.html#aeb87a8cc513ad025a8d560202671934d',1,'open62541.c']]],
-  ['getvariables',['getVariables',['../classua__uaadapter.html#a29d02f6eaea49e043ed8fc95fb893b62',1,'ua_uaadapter']]],
-  ['guid',['guid',['../struct_u_a___node_id.html#a703d19ab1cd3c3f2a49fc25b1520aeae',1,'UA_NodeId']]]
+  ['getvariables',['getVariables',['../classua__uaadapter.html#a29d02f6eaea49e043ed8fc95fb893b62',1,'ua_uaadapter']]]
 ];

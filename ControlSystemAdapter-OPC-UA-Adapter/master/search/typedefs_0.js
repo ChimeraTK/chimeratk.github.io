@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['channel_5flist_5fentry',['channel_list_entry',['../open62541_8c.html#a4baf341ca5b0dc585e210797b1c488d7',1,'open62541.c']]]
+  ['nodepairlist',['nodePairList',['../ua__proxies_8h.html#abd0548c07f69a3eeb209ff084d92de1d',1,'ua_proxies.h']]]
 ];

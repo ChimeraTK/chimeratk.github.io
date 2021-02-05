@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['i16',['i16',['../open62541_8c.html#aebef1ee89a24da974f65db31c31fcc8a',1,'open62541.c']]],
-  ['i32',['i32',['../open62541_8c.html#a3d1fa3e377f5089c20c06ec27d71f11c',1,'open62541.c']]],
-  ['i64',['i64',['../open62541_8c.html#a96f0549d97c2de62503ab404c55fe974',1,'open62541.c']]],
-  ['i8',['i8',['../open62541_8c.html#a438c7fe1be183dd409864e35be77ee3a',1,'open62541.c']]]
+  ['ua_5fdatasource_5fmap',['UA_DataSource_Map',['../ua__proxies_8h.html#a93d2d9d0190200ec3863a0e8a99722b9',1,'ua_proxies.h']]],
+  ['ua_5fdatasource_5fmap_5felement',['UA_DataSource_Map_Element',['../ua__proxies_8h.html#a41c1a0b9a8112e2dc62b45cc2cace642',1,'ua_proxies.h']]],
+  ['ua_5fnodeid_5fpair',['UA_NodeId_pair',['../ua__proxies_8h.html#ac5a289d5cb9227915bba5e3483e6a463',1,'ua_proxies.h']]]
 ];
