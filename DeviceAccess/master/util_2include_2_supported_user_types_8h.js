@@ -9,6 +9,7 @@ var util_2include_2_supported_user_types_8h =
     [ "INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES", "util_2include_2_supported_user_types_8h.html#abe698a21f62a02296a12b08433b980dc", null ],
     [ "SingleTypeUserTypeMap", "util_2include_2_supported_user_types_8h.html#a524d59631b15721f7de86613c015b56b", null ],
     [ "userTypeMap", "util_2include_2_supported_user_types_8h.html#a238e0526cc4fc45ee733782c69cca349", null ],
+    [ "callForRawType", "util_2include_2_supported_user_types_8h.html#a0c6a8b37004cfe48be8855986e1316c8", null ],
     [ "callForType", "util_2include_2_supported_user_types_8h.html#a7f5acdbb978c1916af3a896bea089a7d", null ],
     [ "callForType", "util_2include_2_supported_user_types_8h.html#a1d994c91e77f9c70310556ae90e136b9", null ],
     [ "for_each", "util_2include_2_supported_user_types_8h.html#ae7a87d6ef5da36852a971cab2ac6eddc", null ],

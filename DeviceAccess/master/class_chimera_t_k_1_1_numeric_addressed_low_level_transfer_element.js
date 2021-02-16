@@ -1,10 +1,12 @@
 var class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element =
 [
-    [ "NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a85c5f37136887c2381fdb3a2b8090192", null ],
+    [ "NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#aa002b9f85a8af514dca630cff8cd32bc", null ],
     [ "~NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#aeb6a774c1f984547f6380cd9d944e2e6", null ],
-    [ "begin", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a95e440115087bce4206943e65ed3d347", null ],
+    [ "begin", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a1bd61c68ab3c25786e0376eb523ff070", null ],
     [ "changeAddress", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a81976cf0605fecd60cbc54aadb626692", null ],
     [ "doPostRead", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a024a22d994ee9b159d955030242e789b", null ],
+    [ "doPostWrite", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae08a734a6d7f3024c2478687eb0da7d0", null ],
+    [ "doPreWrite", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae3991bf5308f4043763e305332e01c91", null ],
     [ "doReadTransferSynchronously", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a1d1052c41073932d547b3e91a4bbf943", null ],
     [ "doWriteTransfer", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a6fd9333024437258f3efc021ffca8814", null ],
     [ "getHardwareAccessingElements", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#abbb7cc32f336337c28d4deb534e31f1c", null ],
@@ -17,14 +19,15 @@ var class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element =
     [ "makeCopyRegisterDecorator", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a219fae3b02a64aa355e55f891837b218", null ],
     [ "mayReplaceOther", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#af0db033b7d19e3709ce29639b8b5a5ea", null ],
     [ "replaceTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a37713b9281070f2fb1a1ea72868c2aff", null ],
-    [ "setAddress", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae6d65498775b33644ee0d6757e8ff06e", null ],
+    [ "setAddress", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae8c6ac7894418d104cf2fd57ef9f3c5f", null ],
     [ "detail::NumericAddressedPrePostActionsImplementor", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a7d08580f8aff61b552ab9f2a1a2a20f8", null ],
     [ "NumericAddressedBackendRegisterAccessor", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ac06c3adbcb08c25e2a42e23c96e66152", null ],
     [ "_bar", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a9e58624a9c60967b5e4ed9c0d2ca7253", null ],
     [ "_dev", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae5327f3948a8280b10dfb527255cdf93", null ],
+    [ "_isUnaligned", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a69e835a10744be100f9cd8b5db703548", null ],
     [ "_numberOfBytes", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a148d1bd3945c4898480f4c5a942489c2", null ],
-    [ "_numberOfWords", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a3a1c0c692c688004a3ef9cc70f1e7e83", null ],
     [ "_startAddress", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a6c7e832c7412c05fbbc7d5dd30638f9a", null ],
+    [ "_unalignedAccess", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a7df75fac99e96ad6f221dc11132ac545", null ],
     [ "isShared", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a911732a6c2db0537be22f1e76ad59caf", null ],
-    [ "rawDataBuffer", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae70e070df9727a85bc43751ced9e4302", null ]
+    [ "rawDataBuffer", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#afa490188dab3b006302a07f4985e054c", null ]
 ];

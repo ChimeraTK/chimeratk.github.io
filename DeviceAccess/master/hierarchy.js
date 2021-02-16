@@ -52,7 +52,9 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::DataConsistencyGroup", "class_chimera_t_k_1_1_data_consistency_group.html", null ],
     [ "ChimeraTK::NumericAddressedBackendRegisterAccessor< UserType, DataConverterType, isRaw >::dataConverterTemplateSpecialisationHelper< RawT, CookedT >", "struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_specialisation_helper.html", null ],
+    [ "ChimeraTK::NumericAddressedBackendRegisterAccessor< UserType, DataConverterType, isRaw >::dataConverterTemplateSpecialisationHelper< int16_t, CookedT >", "struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_sp72f8bbd4ea2560b0168c6c4349da7b2b.html", null ],
     [ "ChimeraTK::NumericAddressedBackendRegisterAccessor< UserType, DataConverterType, isRaw >::dataConverterTemplateSpecialisationHelper< int32_t, CookedT >", "struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_spe9033bbf1deb4f2449f5a993bab102f6.html", null ],
+    [ "ChimeraTK::NumericAddressedBackendRegisterAccessor< UserType, DataConverterType, isRaw >::dataConverterTemplateSpecialisationHelper< int8_t, CookedT >", "struct_chimera_t_k_1_1_numeric_addressed_backend_register_accessor_1_1data_converter_template_sp2e9527c1ad98e72a8c438d5dfc5781dc.html", null ],
     [ "ChimeraTK::RegisterInfo::DataDescriptor", "class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html", null ],
     [ "ChimeraTK::DataType", "class_chimera_t_k_1_1_data_type.html", null ],
     [ "ChimeraTK::Device", "class_chimera_t_k_1_1_device.html", [
@@ -110,6 +112,9 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::proxies::DummyRegisterSequence< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", null ],
     [ "DummyRegisterTest", "class_dummy_register_test.html", null ],
+    [ "enable_shared_from_this", null, [
+      [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
+    ] ],
     [ "enable_shared_from_this", null, [
       [ "ChimeraTK::DeviceBackend", "class_chimera_t_k_1_1_device_backend.html", [
         [ "ChimeraTK::DeviceBackendImpl", "class_chimera_t_k_1_1_device_backend_impl.html", [
@@ -200,9 +205,6 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "enable_shared_from_this", null, [
-      [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
-    ] ],
     [ "ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html", null ],
     [ "ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html", null ],
     [ "ChimeraTK::DeviceInfoMap::ErrorList", "class_chimera_t_k_1_1_device_info_map_1_1_error_list.html", null ],
@@ -237,8 +239,8 @@ var hierarchy =
     [ "ChimeraTK::IEEE754_SingleConverter", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html", null ],
     [ "ChimeraTK::InstantiateLogicalNameMappingBackendFunctions< UserType >", "class_chimera_t_k_1_1_instantiate_logical_name_mapping_backend_functions.html", null ],
     [ "Integers_signed32", "struct_integers__signed32.html", null ],
-    [ "ChimeraTK::RegisterCatalogue::iterator", "class_chimera_t_k_1_1_register_catalogue_1_1iterator.html", null ],
     [ "ChimeraTK::RegisterInfoMap::iterator", "class_chimera_t_k_1_1_register_info_map_1_1iterator.html", null ],
+    [ "ChimeraTK::RegisterCatalogue::iterator", "class_chimera_t_k_1_1_register_catalogue_1_1iterator.html", null ],
     [ "std::less< ChimeraTK::TransferElementID >", "structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", null ],
     [ "std::list< T >", null, [
       [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::EnableDisableActionList", "class_chimera_t_k_1_1_unified_backend_test_1_1_enable_disable_action_list.html", null ]
@@ -522,6 +524,31 @@ var hierarchy =
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::setForceDataLossWrite_proxy_helper< T, condition >", "struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::setForceDataLossWrite_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper_3_01_t_00_01false_01_4.html", null ],
     [ "ChimeraTK::LogicalNameMappingBackend::SharedAccessor< UserType >", "struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html", null ],
+    [ "ShortRaw_base< Derived, rawUserType >", "struct_short_raw__base.html", null ],
+    [ "ShortRaw_base< ByteRaw_fixedPoint8_4s, int8_t >", "struct_short_raw__base.html", [
+      [ "ByteRaw_fixedPoint8_4s", "struct_byte_raw__fixed_point8__4s.html", null ]
+    ] ],
+    [ "ShortRaw_base< ByteRaw_fixedPoint8_4u, uint8_t >", "struct_short_raw__base.html", [
+      [ "ByteRaw_fixedPoint8_4u", "struct_byte_raw__fixed_point8__4u.html", null ]
+    ] ],
+    [ "ShortRaw_base< ByteRaw_signed8, int8_t >", "struct_short_raw__base.html", [
+      [ "ByteRaw_signed8", "struct_byte_raw__signed8.html", null ]
+    ] ],
+    [ "ShortRaw_base< ByteRaw_unsigned8, uint8_t >", "struct_short_raw__base.html", [
+      [ "ByteRaw_unsigned8", "struct_byte_raw__unsigned8.html", null ]
+    ] ],
+    [ "ShortRaw_base< ShortRaw_fixedPoint16_8s, int16_t >", "struct_short_raw__base.html", [
+      [ "ShortRaw_fixedPoint16_8s", "struct_short_raw__fixed_point16__8s.html", null ]
+    ] ],
+    [ "ShortRaw_base< ShortRaw_fixedPoint16_8u, uint16_t >", "struct_short_raw__base.html", [
+      [ "ShortRaw_fixedPoint16_8u", "struct_short_raw__fixed_point16__8u.html", null ]
+    ] ],
+    [ "ShortRaw_base< ShortRaw_signed16, int16_t >", "struct_short_raw__base.html", [
+      [ "ShortRaw_signed16", "struct_short_raw__signed16.html", null ]
+    ] ],
+    [ "ShortRaw_base< ShortRaw_unsigned16, uint16_t >", "struct_short_raw__base.html", [
+      [ "ShortRaw_unsigned16", "struct_short_raw__unsigned16.html", null ]
+    ] ],
     [ "StaticCore", "struct_static_core.html", null ],
     [ "accessPrivateData::stow_private< Tag, x >", "structaccess_private_data_1_1stow__private.html", null ],
     [ "accessPrivateData::stowed< Tag >", "structaccess_private_data_1_1stowed.html", null ],
@@ -569,10 +596,10 @@ var hierarchy =
     [ "ChimeraTK::Utilities", "class_chimera_t_k_1_1_utilities.html", null ],
     [ "ChimeraTK::LNMBackendRegisterInfo::ValueTable< T >", "struct_chimera_t_k_1_1_l_n_m_backend_register_info_1_1_value_table.html", null ],
     [ "ChimeraTK::LNMBackendRegisterInfo::ValueTable< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_register_info_1_1_value_table.html", null ],
-    [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
-    [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
+    [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
+    [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
     [ "ChimeraTK::VersionNumber", "class_chimera_t_k_1_1_version_number.html", null ],
     [ "VersionNumberTest", "class_version_number_test.html", null ],
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >::writeQueueLength_proxy_helper< T, condition >", "struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper.html", null ],

@@ -100,17 +100,18 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_device.html#a9ae9661c1f6c71ad6b5ef7baf6149e32",
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html#a59c0c822994c713cb024265ab4b85440",
 "class_chimera_t_k_1_1_numeric_addressed_backend.html#ac9793fa0906c50fe472b871964f54f64",
-"class_chimera_t_k_1_1_register_catalogue.html#a2f7770571ced6c490b0896bbf031f290",
-"class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5c",
-"class_chimera_t_k_1_1_unified_backend_test.html#a11d106162d2a111205ed5da3b2217910",
-"class_map_file_test.html#a2855928f624776cc625be88db64320fe",
-"device__backends_2pcie_2include_2pciedev__io_8h.html#a1fce441aaa962f572d643140658a6e4c",
-"index.html#first_steps",
-"struct_chimera_t_k_1_1_dummy_protocol1.html#a4b069fe0d9e019addd3fd1668bb31632",
-"struct_f.html#a7073bd2fb241c42f78d5f34ddb1d9293",
-"struct_reg_word_firmware_forced_read_only.html#aff3b7641a24d7188f0b7a74139f9802a",
-"test_fixed_point_converter_8cpp.html#a6b2a3852db8bb19ab6909bac01859985",
-"test_subdevice_backend_8cpp.html#a1f465f12a79f6e68e0184f039fe0d17d"
+"class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html#ac24c3977c5933514ab1bced050a64470",
+"class_chimera_t_k_1_1_subdevice_backend.html#a4cb9be498366d571fd497aa3b50f8f04",
+"class_chimera_t_k_1_1_unified_backend_test.html#a0096a3fc279c9bc1258a56fe5a7f52dd",
+"class_map_file_parser_test.html#a92c0e28a50a1bfe421e3331eb0a6c47b",
+"device__backends_2pcie_2include_2llrfdrv__io__compat_8h.html#a8f61a27ac0aebb17664cd246c3134f66",
+"helper_functions_8h.html",
+"struct_channel_register_descriptor_base.html#a162fc9fa9b333896b4effe0ae8ff22ae",
+"struct_counting_decorator.html#a1a849c1c3e778931356175326d2fe531",
+"struct_reg_variable.html#a5d1c55d686b7c421acf0a0baee2b5dd8",
+"test_device_8cpp.html#aba7302c0bd61a773e5a764177519309a",
+"test_pcie_backend_8cpp.html#a46c3624450dd339bd4ece5181f8da881",
+"util_2include_2_virtual_function_template_8h.html#a9cfaa4375c315e463c69a4f05bb90d94"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

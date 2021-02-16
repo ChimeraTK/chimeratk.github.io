@@ -20,6 +20,7 @@ var class_chimera_t_k_1_1_register_info_map_1_1_register_info =
     [ "getSupportedAccessModes", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a336eeb3cbd25264fbe4338933467d1e6", null ],
     [ "isReadable", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a03eb70a6ba306a5c3180c64a21c06b69", null ],
     [ "isWriteable", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aac548b0ce34daec49406f49165a39e29", null ],
+    [ "nBytesPerElement", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a33ee6f965db8b95d8a4ba4acd867f7c3", null ],
     [ "operator=", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#af18d723d90aa2326af0946ce9468b73f", null ],
     [ "operator<<", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6bfa76543d9f1b5b4bbeea1025396235", null ],
     [ "address", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a4c5816665d4b2efe2a1609b15b38524e", null ],

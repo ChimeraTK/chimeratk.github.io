@@ -5,6 +5,7 @@ var class_chimera_t_k_1_1_rebot_backend =
     [ "close", "class_chimera_t_k_1_1_rebot_backend.html#a68f639d73c9193bb0a7984e8675bfe68", null ],
     [ "heartbeatLoop", "class_chimera_t_k_1_1_rebot_backend.html#a9196198b1d46c54118e197714b396e62", null ],
     [ "isFunctional", "class_chimera_t_k_1_1_rebot_backend.html#ae81734d8d47993c5da3d7732025611a0", null ],
+    [ "minimumTransferAlignment", "class_chimera_t_k_1_1_rebot_backend.html#a0f33801e0652beac08844fc8cdc7dfb2", null ],
     [ "open", "class_chimera_t_k_1_1_rebot_backend.html#a3288127514c4650a38177443ea021281", null ],
     [ "read", "class_chimera_t_k_1_1_rebot_backend.html#a0be2add1a07a11fbde4d7394ea76d169", null ],
     [ "readDeviceInfo", "class_chimera_t_k_1_1_rebot_backend.html#aa031066178cd12f936af25aefbd2a591", null ],

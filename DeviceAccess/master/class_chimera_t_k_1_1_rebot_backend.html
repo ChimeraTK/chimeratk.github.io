@@ -136,6 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af89ca050e6b82d5632d95862a9dba31f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#af89ca050e6b82d5632d95862a9dba31f">setException</a> () override</td></tr>
 <tr class="memdesc:af89ca050e6b82d5632d95862a9dba31f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the backend into an exception state.  <a href="#af89ca050e6b82d5632d95862a9dba31f">More...</a><br /></td></tr>
 <tr class="separator:af89ca050e6b82d5632d95862a9dba31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f33801e0652beac08844fc8cdc7dfb2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a0f33801e0652beac08844fc8cdc7dfb2">minimumTransferAlignment</a> () const override</td></tr>
+<tr class="memdesc:a0f33801e0652beac08844fc8cdc7dfb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the supported minimum alignment for any read/write requests.  <a href="#a0f33801e0652beac08844fc8cdc7dfb2">More...</a><br /></td></tr>
+<tr class="separator:a0f33801e0652beac08844fc8cdc7dfb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html">ChimeraTK::NumericAddressedBackend</a></td></tr>
 <tr class="memitem:a6d8802ff0005f775c7728bdb064d3d18 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a6d8802ff0005f775c7728bdb064d3d18">NumericAddressedBackend</a> (std::string mapFileName=&quot;&quot;)</td></tr>
 <tr class="separator:a6d8802ff0005f775c7728bdb064d3d18 inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,6 +232,11 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a39251fbfc114b5c557ccbbb89ad88e74 inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_register_info_map.html">RegisterInfoMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a39251fbfc114b5c557ccbbb89ad88e74">_registerMap</a></td></tr>
 <tr class="memdesc:a39251fbfc114b5c557ccbbb89ad88e74 inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">map from register names to addresses  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a39251fbfc114b5c557ccbbb89ad88e74">More...</a><br /></td></tr>
 <tr class="separator:a39251fbfc114b5c557ccbbb89ad88e74 inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae75bc2509b25827513f35d4dce5f1630 inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ae75bc2509b25827513f35d4dce5f1630">_unalignedAccess</a></td></tr>
+<tr class="memdesc:ae75bc2509b25827513f35d4dce5f1630 inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">mutex for protecting unaligned access  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ae75bc2509b25827513f35d4dce5f1630">More...</a><br /></td></tr>
+<tr class="separator:ae75bc2509b25827513f35d4dce5f1630 inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46371e0b798610cae236a0b4c81ce04 inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ad46371e0b798610cae236a0b4c81ce04">NumericAddressedLowLevelTransferElement</a></td></tr>
+<tr class="separator:ad46371e0b798610cae236a0b4c81ce04 inherit pro_attribs_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_device_backend_impl')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html">ChimeraTK::DeviceBackendImpl</a></td></tr>
 <tr class="memitem:a58c0f4de37b9123029b248a08b7505d4 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_register_catalogue.html">RegisterCatalogue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a58c0f4de37b9123029b248a08b7505d4">_catalogue</a></td></tr>
 <tr class="memdesc:a58c0f4de37b9123029b248a08b7505d4 inherit pro_attribs_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">the register catalogue containing describing the registers known by this backend  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a58c0f4de37b9123029b248a08b7505d4">More...</a><br /></td></tr>
@@ -478,6 +486,40 @@ Static Protected Attributes</h2></td></tr>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7">ChimeraTK::DeviceBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_rebot_backend_8cc_source.html#l00085">85</a> of file <a class="el" href="_rebot_backend_8cc_source.html">RebotBackend.cc</a>.</p>
+
+</div>
+</div>
+<a id="a0f33801e0652beac08844fc8cdc7dfb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f33801e0652beac08844fc8cdc7dfb2">&#9670;&nbsp;</a></span>minimumTransferAlignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ChimeraTK::RebotBackend::minimumTransferAlignment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines the supported minimum alignment for any read/write requests. </p>
+<p>If the backend expects a particular alignment for <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a0be2add1a07a11fbde4d7394ea76d169">read()</a>/write() calls it should return a value biggern than 1. The address and sizeInBytes arguments of the <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a0be2add1a07a11fbde4d7394ea76d169">read()</a>/write() calls will be always an integer multiple of this number. Any unaligned transfers will be changed to meet these criteria (additional padding data will be thrown away).</p>
+<p>The default implementation returns 1, which means no special alignment is required.</p>
+<dl class="section return"><dt>Returns</dt><dd>Minimum alignment in bytes </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#aeb2750bc003ebf549248c5f18f70f5f0">ChimeraTK::NumericAddressedBackend</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2_rebot_2include_2_rebot_backend_8h_source.html#l00075">75</a> of file <a class="el" href="device__backends_2_rebot_2include_2_rebot_backend_8h_source.html">RebotBackend.h</a>.</p>
 
 </div>
 </div>
@@ -821,7 +863,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_rebot_2include_2_rebot_backend_8h_source.html#l00081">81</a> of file <a class="el" href="device__backends_2_rebot_2include_2_rebot_backend_8h_source.html">RebotBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_rebot_2include_2_rebot_backend_8h_source.html#l00083">83</a> of file <a class="el" href="device__backends_2_rebot_2include_2_rebot_backend_8h_source.html">RebotBackend.h</a>.</p>
 
 </div>
 </div>
@@ -845,7 +887,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_rebot_2include_2_rebot_backend_8h_source.html#l00077">77</a> of file <a class="el" href="device__backends_2_rebot_2include_2_rebot_backend_8h_source.html">RebotBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_rebot_2include_2_rebot_backend_8h_source.html#l00079">79</a> of file <a class="el" href="device__backends_2_rebot_2include_2_rebot_backend_8h_source.html">RebotBackend.h</a>.</p>
 
 </div>
 </div>
@@ -967,7 +1009,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_rebot_2include_2_rebot_backend_8h_source.html#l00079">79</a> of file <a class="el" href="device__backends_2_rebot_2include_2_rebot_backend_8h_source.html">RebotBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_rebot_2include_2_rebot_backend_8h_source.html#l00081">81</a> of file <a class="el" href="device__backends_2_rebot_2include_2_rebot_backend_8h_source.html">RebotBackend.h</a>.</p>
 
 </div>
 </div>
@@ -981,7 +1023,7 @@ Static Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_rebot_backend.html">RebotBackend</a></li>
-    <li class="footer">Generated on Wed Jan 20 2021 04:53:23 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue Feb 16 2021 04:53:30 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -10,5 +10,9 @@ var searchData=
   ['buffer',['Buffer',['../struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer.html',1,'ChimeraTK::ExceptionDummyPushDecorator']]],
   ['bufferingregisteraccessor',['BufferingRegisterAccessor',['../class_chimera_t_k_1_1_buffering_register_accessor.html',1,'ChimeraTK']]],
   ['bufferingregistertest',['BufferingRegisterTest',['../class_buffering_register_test.html',1,'']]],
-  ['bufferingregistertestsuite',['BufferingRegisterTestSuite',['../class_buffering_register_test_suite.html',1,'']]]
+  ['bufferingregistertestsuite',['BufferingRegisterTestSuite',['../class_buffering_register_test_suite.html',1,'']]],
+  ['byteraw_5ffixedpoint8_5f4s',['ByteRaw_fixedPoint8_4s',['../struct_byte_raw__fixed_point8__4s.html',1,'']]],
+  ['byteraw_5ffixedpoint8_5f4u',['ByteRaw_fixedPoint8_4u',['../struct_byte_raw__fixed_point8__4u.html',1,'']]],
+  ['byteraw_5fsigned8',['ByteRaw_signed8',['../struct_byte_raw__signed8.html',1,'']]],
+  ['byteraw_5funsigned8',['ByteRaw_unsigned8',['../struct_byte_raw__unsigned8.html',1,'']]]
 ];
