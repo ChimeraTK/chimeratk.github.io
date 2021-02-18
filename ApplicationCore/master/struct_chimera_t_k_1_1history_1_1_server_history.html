@@ -122,9 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aef56ce644b3c80ae8d6a3fed11efe70e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1history_1_1_server_history.html#aef56ce644b3c80ae8d6a3fed11efe70e">addSource</a> (const <a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> &amp;source, const RegisterPath &amp;namePrefix, const <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &amp;trigger={})</td></tr>
 <tr class="memdesc:aef56ce644b3c80ae8d6a3fed11efe70e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a> as a source to this History module.  <a href="#aef56ce644b3c80ae8d6a3fed11efe70e">More...</a><br /></td></tr>
 <tr class="separator:aef56ce644b3c80ae8d6a3fed11efe70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaafb16ad53c653e3b502680e964dc517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1history_1_1_server_history.html#aaafb16ad53c653e3b502680e964dc517">addSource</a> (const <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> &amp;source, const RegisterPath &amp;namePrefix, const <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &amp;trigger={})</td></tr>
-<tr class="memdesc:aaafb16ad53c653e3b502680e964dc517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload that calls virtualiseFromCatalog.  <a href="#aaafb16ad53c653e3b502680e964dc517">More...</a><br /></td></tr>
-<tr class="separator:aaafb16ad53c653e3b502680e964dc517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33aa8c21f07687aa1588fc4473fa8a69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1history_1_1_server_history.html#a33aa8c21f07687aa1588fc4473fa8a69">addSource</a> (const <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> &amp;source, const RegisterPath &amp;namePrefix, const std::string &amp;<a class="el" href="class_chimera_t_k_1_1_module.html#a5b69b847a580b0c4aa20309a81246b0c">submodule</a>=&quot;&quot;, const <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &amp;trigger={})</td></tr>
+<tr class="memdesc:a33aa8c21f07687aa1588fc4473fa8a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload that calls virtualiseFromCatalog.  <a href="#a33aa8c21f07687aa1588fc4473fa8a69">More...</a><br /></td></tr>
+<tr class="separator:a33aa8c21f07687aa1588fc4473fa8a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74b4a153e5cea0db7ec8e16c73f6f7ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1history_1_1_server_history.html#a74b4a153e5cea0db7ec8e16c73f6f7ed">prepare</a> () override</td></tr>
 <tr class="memdesc:a74b4a153e5cea0db7ec8e16c73f6f7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the execution of the module.  <a href="#a74b4a153e5cea0db7ec8e16c73f6f7ed">More...</a><br /></td></tr>
 <tr class="separator:a74b4a153e5cea0db7ec8e16c73f6f7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -506,7 +506,7 @@ template&lt;typename UserType &gt; </div>
 <p>boost::fusion::map of UserTypes to std::lists containing the <a class="el" href="struct_chimera_t_k_1_1_array_push_input.html" title="Convenience class for input array accessors with UpdateMode::push. ">ArrayPushInput</a> and <a class="el" href="struct_chimera_t_k_1_1_array_output.html" title="Convenience class for output array accessors (always UpdateMode::push) ">ArrayOutput</a> accessors. </p>
 <p>These accessors are dynamically created by the <a class="el" href="struct_chimera_t_k_1_1history_1_1_accessor_attacher.html" title="Callable class for use with boost::fusion::for_each: Attach the given accessor to the History with pr...">AccessorAttacher</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00165">165</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00166">166</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -535,7 +535,7 @@ template&lt;typename UserType &gt; </div>
 <p>boost::fusion::map of UserTypes to std::lists containing the names of the accessors. </p>
 <p>Technically there would be no need to use TemplateUserTypeMap for this (as type does not depend on the UserType), but since these lists must be filled consistently with the accessorListMap, the same construction is used here. </p>
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00174">174</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00175">175</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -708,8 +708,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="aaafb16ad53c653e3b502680e964dc517"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaafb16ad53c653e3b502680e964dc517">&#9670;&nbsp;</a></span>addSource() <span class="overload">[2/2]</span></h2>
+<a id="a33aa8c21f07687aa1588fc4473fa8a69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33aa8c21f07687aa1588fc4473fa8a69">&#9670;&nbsp;</a></span>addSource() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -729,6 +729,12 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>submodule</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &amp;&#160;</td>
           <td class="paramname"><em>trigger</em> = <code>{}</code>&#160;</td>
         </tr>
@@ -741,6 +747,12 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p>Overload that calls virtualiseFromCatalog. </p>
+<p>Parameter see addSource(const <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a>&amp;...) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">submodule</td><td>If only a submodule should be added give the name. It does not work do create a submodule of the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> itself! </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="_server_history_8cc_source.html#l00071">71</a> of file <a class="el" href="_server_history_8cc_source.html">ServerHistory.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -748,7 +760,7 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1history_1_1_server_history_aaafb16ad53c653e3b502680e964dc517_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1history_1_1_server_history_a33aa8c21f07687aa1588fc4473fa8a69_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -790,7 +802,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8cc_source.html#l00078">78</a> of file <a class="el" href="_server_history_8cc_source.html">ServerHistory.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8cc_source.html#l00081">81</a> of file <a class="el" href="_server_history_8cc_source.html">ServerHistory.cc</a>.</p>
 
 </div>
 </div>
@@ -821,7 +833,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8">ChimeraTK::ApplicationModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8cc_source.html#l00165">165</a> of file <a class="el" href="_server_history_8cc_source.html">ServerHistory.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8cc_source.html#l00168">168</a> of file <a class="el" href="_server_history_8cc_source.html">ServerHistory.cc</a>.</p>
 
 </div>
 </div>
@@ -853,7 +865,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8cc_source.html#l00159">159</a> of file <a class="el" href="_server_history_8cc_source.html">ServerHistory.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8cc_source.html#l00162">162</a> of file <a class="el" href="_server_history_8cc_source.html">ServerHistory.cc</a>.</p>
 
 </div>
 </div>
@@ -878,7 +890,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00183">183</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00184">184</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -903,7 +915,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00166">166</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00167">167</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -927,7 +939,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00181">181</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00182">182</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -951,7 +963,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00180">180</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00181">181</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -975,7 +987,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00175">175</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00176">176</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1013,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Overall variable name list, used to detect name collisions. </p>
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00178">178</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00179">179</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1040,7 @@ template&lt;typename UserType &gt; </div>
 <p>Map of VariableGroups required to build the hierarchies. </p>
 <p>The key it the full path name. </p>
 
-<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00159">159</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_history_8h_source.html#l00160">160</a> of file <a class="el" href="_server_history_8h_source.html">ServerHistory.h</a>.</p>
 
 </div>
 </div>
@@ -1042,7 +1054,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1history.html">history</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1history_1_1_server_history.html">ServerHistory</a></li>
-    <li class="footer">Generated on Fri Jan 15 2021 04:53:54 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Feb 18 2021 04:54:59 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -245,9 +245,9 @@ var NAVTREEINDEX5 =
 "struct_chimera_t_k_1_1history_1_1_server_history.html#a0ed269372d8bde802cdab0ebb3f19bc7":[17,0,0,0,2,12],
 "struct_chimera_t_k_1_1history_1_1_server_history.html#a1773b22e624aea53d0d496b62385aa26":[17,0,0,0,2,13],
 "struct_chimera_t_k_1_1history_1_1_server_history.html#a2b1e85f6dd4a1c4dc48a716b45bf51b4":[17,0,0,0,2,15],
+"struct_chimera_t_k_1_1history_1_1_server_history.html#a33aa8c21f07687aa1588fc4473fa8a69":[17,0,0,0,2,5],
 "struct_chimera_t_k_1_1history_1_1_server_history.html#a3cb01202eccf94bd0f464127ab8a79f9":[17,0,0,0,2,10],
 "struct_chimera_t_k_1_1history_1_1_server_history.html#a4463572e264db6115969e49e403e5ad4":[17,0,0,0,2,0],
 "struct_chimera_t_k_1_1history_1_1_server_history.html#a60eef4dfdf8b361485e0d8ff2f5cfdee":[17,0,0,0,2,14],
-"struct_chimera_t_k_1_1history_1_1_server_history.html#a74b4a153e5cea0db7ec8e16c73f6f7ed":[17,0,0,0,2,8],
-"struct_chimera_t_k_1_1history_1_1_server_history.html#a757244b6a6e6e8eb984c607942d728bd":[17,0,0,0,2,11]
+"struct_chimera_t_k_1_1history_1_1_server_history.html#a74b4a153e5cea0db7ec8e16c73f6f7ed":[17,0,0,0,2,8]
 };
