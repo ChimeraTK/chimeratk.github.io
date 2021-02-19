@@ -144,6 +144,7 @@ var hierarchy =
             [ "Dummy< UserType >", "struct_dummy.html", null ],
             [ "DummyArray< UserType >", "struct_dummy_array.html", null ],
             [ "DummyArray< int >", "struct_dummy_array.html", null ],
+            [ "DummyModule", "struct_dummy_module.html", null ],
             [ "FirstHierarchy::SecondModule", "struct_first_hierarchy_1_1_second_module.html", null ],
             [ "FirstHierarchy::SecondModule", "struct_first_hierarchy_1_1_second_module.html", null ],
             [ "FirstHierarchy::TestModule", "struct_first_hierarchy_1_1_test_module.html", null ],
@@ -222,6 +223,7 @@ var hierarchy =
             [ "FirstHierarchy::TestModule::MoveToRoot", "struct_first_hierarchy_1_1_test_module_1_1_move_to_root.html", null ],
             [ "FirstHierarchy::TestModule::VarGroup", "struct_first_hierarchy_1_1_test_module_1_1_var_group.html", null ],
             [ "FirstHierarchy::TestModule::VarGroup", "struct_first_hierarchy_1_1_test_module_1_1_var_group.html", null ],
+            [ "logging::Logger", "classlogging_1_1_logger.html", null ],
             [ "ReadAnyTestModule< T >::Inputs", "struct_read_any_test_module_1_1_inputs.html", null ],
             [ "SecondHierarchy::SecondModule::ExtraGroup", "struct_second_hierarchy_1_1_second_module_1_1_extra_group.html", null ],
             [ "SecondHierarchy::TestModule::EliminatedGroup", "struct_second_hierarchy_1_1_test_module_1_1_eliminated_group.html", null ],
@@ -441,7 +443,6 @@ var hierarchy =
       ] ]
     ] ],
     [ "ChimeraTK::InversionOfControlAccessor< ScalarAccessor< UserType > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", null ],
-    [ "logging::Logger", "classlogging_1_1_logger.html", null ],
     [ "NDRegisterAccessor", null, [
       [ "ChimeraTK::ConstantAccessor< UserType >", "class_chimera_t_k_1_1_constant_accessor.html", null ],
       [ "ChimeraTK::FeedingFanOut< UserType >", "class_chimera_t_k_1_1_feeding_fan_out.html", null ],

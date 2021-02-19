@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"files.html":[18,0],
+"fixtures_8h.html":[18,0,10,1,1],
 "fixtures_8h_source.html":[18,0,10,1,1],
 "functions.html":[17,3,0],
 "functions.html":[17,3,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "struct_chimera_t_k_1_1_config_reader.html#a8a279e5c1d7cacdad362f7456a2ec09f":[17,0,0,16,25],
 "struct_chimera_t_k_1_1_config_reader.html#a8a692faaaddd5419b5754fca31854b63":[17,0,0,16,2],
 "struct_chimera_t_k_1_1_config_reader.html#a9095274a4220b1fbdcdbd54b0f86449f":[17,0,0,16,26],
-"struct_chimera_t_k_1_1_config_reader.html#a926973e3a9dfd07e0171f56d3ec909af":[17,0,0,16,9],
-"struct_chimera_t_k_1_1_config_reader.html#ab8f2f615e502a1b7b5ed8c15a45cc402":[17,0,0,16,5],
-"struct_chimera_t_k_1_1_config_reader.html#ac39a42b4171272dd24eb6e2dc07849a6":[17,0,0,16,18]
+"struct_chimera_t_k_1_1_config_reader.html#a926973e3a9dfd07e0171f56d3ec909af":[17,0,0,16,9]
 };

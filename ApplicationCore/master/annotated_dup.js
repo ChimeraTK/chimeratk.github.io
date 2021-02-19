@@ -13,6 +13,7 @@ var annotated_dup =
     [ "Dummy", "struct_dummy.html", "struct_dummy" ],
     [ "DummyApplication", "struct_dummy_application.html", "struct_dummy_application" ],
     [ "DummyArray", "struct_dummy_array.html", "struct_dummy_array" ],
+    [ "DummyModule", "struct_dummy_module.html", "struct_dummy_module" ],
     [ "ExampleApp", "struct_example_app.html", "struct_example_app" ],
     [ "FirstHierarchy", "struct_first_hierarchy.html", "struct_first_hierarchy" ],
     [ "Fixture_noTestableMode", "struct_fixture__no_testable_mode.html", "struct_fixture__no_testable_mode" ],

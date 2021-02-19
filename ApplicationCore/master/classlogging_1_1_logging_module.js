@@ -1,6 +1,7 @@
 var classlogging_1_1_logging_module =
 [
-    [ "addSource", "classlogging_1_1_logging_module.html#ad85821c384b32b66cc8057df4a3b98ca", null ],
+    [ "LoggingModule", "classlogging_1_1_logging_module.html#a0fb204e6fc80c6c4944760df0b7da320", null ],
+    [ "LoggingModule", "classlogging_1_1_logging_module.html#ab5c1ef5cba36b8642c71fc7ebff925b3", null ],
     [ "mainLoop", "classlogging_1_1_logging_module.html#a4357b2e9b1d391541a2936ad39bbb0ed", null ],
     [ "prepare", "classlogging_1_1_logging_module.html#ae01a9ebafa209e0c250e093e3c6b713f", null ],
     [ "terminate", "classlogging_1_1_logging_module.html#a65e49a11677dde2c6ea428d05dd044c1", null ],

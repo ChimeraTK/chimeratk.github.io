@@ -287,10 +287,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:afa7cd076cc38ec19219cbdd9f2f259a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6fb0658227320c5fc94182748ff386c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_control_system_module.html">ChimeraTK::ControlSystemModule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtest_app.html#ae6fb0658227320c5fc94182748ff386c">cs</a></td></tr>
 <tr class="separator:ae6fb0658227320c5fc94182748ff386c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e87c69afc0f097498d31fb4aed52eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_dummy_module.html">DummyModule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtest_app.html#ad1e87c69afc0f097498d31fb4aed52eb">dummy</a> {this, &quot;Dummy&quot;, &quot;<a class="el" href="struct_dummy.html">Dummy</a>&quot;}</td></tr>
+<tr class="separator:ad1e87c69afc0f097498d31fb4aed52eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9aec5e153e9f98518a4d14b25f9f1d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlogging_1_1_logging_module.html">LoggingModule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtest_app.html#ac9aec5e153e9f98518a4d14b25f9f1d6">log</a> {this, &quot;LoggingModule&quot;, &quot;<a class="el" href="classlogging_1_1_logging_module.html">LoggingModule</a> test&quot;}</td></tr>
 <tr class="separator:ac9aec5e153e9f98518a4d14b25f9f1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a160644201a5636e003596df121dc3b89"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="classlogging_1_1_logger.html">Logger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtest_app.html#a160644201a5636e003596df121dc3b89">logger</a> {new <a class="el" href="classlogging_1_1_logger.html">Logger</a>(&amp;<a class="el" href="structtest_app.html#ac9aec5e153e9f98518a4d14b25f9f1d6">log</a>)}</td></tr>
-<tr class="separator:a160644201a5636e003596df121dc3b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41a6f5ea147b73718994979a68fae19a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtest_app.html#a41a6f5ea147b73718994979a68fae19a">fileCreated</a></td></tr>
 <tr class="separator:a41a6f5ea147b73718994979a68fae19a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d08dc9306d99954c3818196f68f68ab"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtest_app.html#a6d08dc9306d99954c3818196f68f68ab">dir</a></td></tr>
@@ -532,7 +532,7 @@ Additional Inherited Members</h2></td></tr>
 struct testApp&lt; UserType &gt;</h3>
 
 <p>Define a test app to test the scalar History Module. </p>
-<p>Define a test app to test the SoftwareMasterModule.</p>
+<p>Define a test app to test the LoggingModule.</p>
 <p>A temporary directory /tmp/testLogging.XXXXXX will be created. Here XXXXXX will be replaced by a unique string. Once the <a class="el" href="structtest_app.html" title="Define a test app to test the scalar History Module. ">testApp</a> object is deleted that directory is removed. </p>
 
 <p class="definition">Definition at line <a class="el" href="test_history_8cc_source.html#l00062">62</a> of file <a class="el" href="test_history_8cc_source.html">testHistory.cc</a>.</p>
@@ -620,7 +620,7 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00034">34</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00047">47</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
 
 </div>
 </div>
@@ -649,7 +649,7 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00040">40</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00053">53</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
 
 </div>
 </div>
@@ -684,7 +684,7 @@ template&lt;typename UserType&gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00055">55</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00068">68</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
 
 </div>
 </div>
@@ -755,7 +755,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00061">61</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00073">73</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
 
 </div>
 </div>
@@ -773,12 +773,30 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00064">64</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00076">76</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
+
+</div>
+</div>
+<a id="ad1e87c69afc0f097498d31fb4aed52eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e87c69afc0f097498d31fb4aed52eb">&#9670;&nbsp;</a></span>dummy <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_dummy_module.html">DummyModule</a> <a class="el" href="structtest_app.html">testApp</a>&lt; UserType &gt;::dummy {this, &quot;Dummy&quot;, &quot;<a class="el" href="struct_dummy.html">Dummy</a>&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00062">62</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
 
 </div>
 </div>
 <a id="abf3445a8944e9a42cc0ca1b31cc6245a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf3445a8944e9a42cc0ca1b31cc6245a">&#9670;&nbsp;</a></span>dummy</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abf3445a8944e9a42cc0ca1b31cc6245a">&#9670;&nbsp;</a></span>dummy <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -809,7 +827,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00060">60</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00072">72</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
 
 </div>
 </div>
@@ -827,7 +845,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00062">62</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00074">74</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
 
 </div>
 </div>
@@ -845,7 +863,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00065">65</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00077">77</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
 
 </div>
 </div>
@@ -881,25 +899,7 @@ template&lt;typename UserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00049">49</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
-
-</div>
-</div>
-<a id="a160644201a5636e003596df121dc3b89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a160644201a5636e003596df121dc3b89">&#9670;&nbsp;</a></span>logger</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UserType&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;<a class="el" href="classlogging_1_1_logger.html">Logger</a>&gt; <a class="el" href="structtest_app.html">testApp</a>&lt; UserType &gt;::logger {new <a class="el" href="classlogging_1_1_logger.html">Logger</a>(&amp;<a class="el" href="structtest_app.html#ac9aec5e153e9f98518a4d14b25f9f1d6">log</a>)}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00051">51</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_logging_8cc_source.html#l00064">64</a> of file <a class="el" href="test_logging_8cc_source.html">testLogging.cc</a>.</p>
 
 </div>
 </div>
@@ -913,7 +913,7 @@ template&lt;typename UserType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structtest_app.html">testApp</a></li>
-    <li class="footer">Generated on Thu Feb 18 2021 04:54:58 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Feb 19 2021 04:53:41 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

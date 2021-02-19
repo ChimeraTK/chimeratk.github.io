@@ -1,5 +1,6 @@
 var test_logging_8cc =
 [
+    [ "DummyModule", "struct_dummy_module.html", "struct_dummy_module" ],
     [ "testApp", "structtest_app.html", "structtest_app" ],
     [ "BOOST_TEST_MODULE", "test_logging_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_logging_8cc.html#af2ea12666b6426b545ba47b8ddc7363f", null ],

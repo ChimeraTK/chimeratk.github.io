@@ -11,5 +11,6 @@ var searchData=
   ['dummy',['Dummy',['../struct_dummy.html',1,'']]],
   ['dummyapplication',['DummyApplication',['../struct_dummy_application.html',1,'']]],
   ['dummyarray',['DummyArray',['../struct_dummy_array.html',1,'']]],
-  ['dummyarray_3c_20int_20_3e',['DummyArray&lt; int &gt;',['../struct_dummy_array.html',1,'']]]
+  ['dummyarray_3c_20int_20_3e',['DummyArray&lt; int &gt;',['../struct_dummy_array.html',1,'']]],
+  ['dummymodule',['DummyModule',['../struct_dummy_module.html',1,'']]]
 ];

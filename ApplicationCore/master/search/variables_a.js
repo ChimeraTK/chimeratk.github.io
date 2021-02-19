@@ -14,7 +14,7 @@ var searchData=
   ['lifecyclestate',['lifeCycleState',['../class_chimera_t_k_1_1_application.html#a0ef8bd0ad224ddca42bff1d1ca4aac00',1,'ChimeraTK::Application']]],
   ['log',['log',['../structtest_app.html#ac9aec5e153e9f98518a4d14b25f9f1d6',1,'testApp']]],
   ['logfile',['logFile',['../classlogging_1_1_logging_module.html#ae90e453ff52bc721d16da109a5270f0f',1,'logging::LoggingModule']]],
-  ['logger',['logger',['../structtest_app.html#a160644201a5636e003596df121dc3b89',1,'testApp']]],
+  ['logger',['logger',['../struct_dummy_module.html#a3b16300f4de3e7634f91c8b42d92410b',1,'DummyModule']]],
   ['loglevel',['logLevel',['../classlogging_1_1_logging_module.html#a56e605b3ab3beb718f4aa1a283f7164e',1,'logging::LoggingModule']]],
   ['logtail',['logTail',['../classlogging_1_1_logging_module.html#a58341fa99b5ee6c3921e4e1689b933cd',1,'logging::LoggingModule']]],
   ['lostdatainlasttrigger',['lostDataInLastTrigger',['../struct_chimera_t_k_1_1_data_loss_counter.html#a5a4b553a489f7f97591b583424f233cb',1,'ChimeraTK::DataLossCounter']]]
