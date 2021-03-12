@@ -1,6 +1,5 @@
 var empty__doocs__functions_8cc =
 [
-    [ "eq_cancel", "empty__doocs__functions_8cc.html#ad35c4e81ddbfefad3813919ee86ec82f", null ],
     [ "eq_init_epilog", "empty__doocs__functions_8cc.html#ad68cb7b6f77871fee00b0abf4c3c57cf", null ],
     [ "interrupt_usr1_epilog", "empty__doocs__functions_8cc.html#af20c61d0fcfd8848be67e1ecb1810123", null ],
     [ "interrupt_usr1_prolog", "empty__doocs__functions_8cc.html#a77ed65cc8e8d7a43df9b3d622632e09d", null ],
