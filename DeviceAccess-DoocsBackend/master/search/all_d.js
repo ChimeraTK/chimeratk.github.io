@@ -2,7 +2,6 @@ var searchData=
 [
   ['generatevalue_3c_20std_3a_3astring_20_3e',['generateValue&lt; std::string &gt;',['../test_unified_backend_test_8cpp.html#ab6633e116b5815c9253d61ed0f4a98d3',1,'testUnifiedBackendTest.cpp']]],
   ['rawusertype',['rawUserType',['../struct_all_register_defaults.html#aa22cc95de9cc3f78bcba4fd7a30ab1ac',1,'AllRegisterDefaults']]],
-  ['reacticateallsubscriptions',['reActicateAllSubscriptions',['../class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#aca3f96076df8f507f8f0daddda54137d',1,'ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager']]],
   ['readcatalogue',['readCatalogue',['../namespace_cache.html#aa85c43f09c98932d7bbdff1612a4c875',1,'Cache']]],
   ['readdeviceinfo',['readDeviceInfo',['../class_chimera_t_k_1_1_doocs_backend.html#a64beee5b734545cd830b337f1891fb3d',1,'ChimeraTK::DoocsBackend']]],
   ['refresh_5fepilog',['refresh_epilog',['../doocs_dummy__rpc__server_8cc.html#abad3095cb4eb0f7b41ad51882965e40a',1,'doocsDummy_rpc_server.cc']]],
