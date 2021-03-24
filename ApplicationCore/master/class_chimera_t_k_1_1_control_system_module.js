@@ -13,6 +13,5 @@ var class_chimera_t_k_1_1_control_system_module =
     [ "operator[]", "class_chimera_t_k_1_1_control_system_module.html#a96f1a079c29139ded8dc9fee638a1c57", null ],
     [ "virtualise", "class_chimera_t_k_1_1_control_system_module.html#a61be8696270f26ed4e7a8d9fc7d66a03", null ],
     [ "subModules", "class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0", null ],
-    [ "variableNamePrefix", "class_chimera_t_k_1_1_control_system_module.html#a732a7bbc6f90fefa517a5643d2031858", null ],
-    [ "variables", "class_chimera_t_k_1_1_control_system_module.html#a9d62aca2baf414b4d94aa7a328f180ce", null ]
+    [ "variableNamePrefix", "class_chimera_t_k_1_1_control_system_module.html#a732a7bbc6f90fefa517a5643d2031858", null ]
 ];

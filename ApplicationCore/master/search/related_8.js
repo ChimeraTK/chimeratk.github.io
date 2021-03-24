@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['testablemodeaccessordecorator',['TestableModeAccessorDecorator',['../class_chimera_t_k_1_1_application.html#a7e87574adc19a814f9af8decb92a5d03',1,'ChimeraTK::Application']]],
-  ['testfacility',['TestFacility',['../class_chimera_t_k_1_1_application.html#ac79f4a9d4117d899517047de93a44610',1,'ChimeraTK::Application']]],
-  ['triggerfanout',['TriggerFanOut',['../class_chimera_t_k_1_1_application.html#aa9b0a018685f775680c855e56a305328',1,'ChimeraTK::Application']]]
+  ['profiler',['Profiler',['../class_chimera_t_k_1_1_profiler_1_1_thread_data.html#ad73e5645d5b7b84a00d4a5d07b8d8078',1,'ChimeraTK::Profiler::ThreadData']]]
 ];

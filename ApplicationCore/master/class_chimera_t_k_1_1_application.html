@@ -409,6 +409,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a5a3ff9e91313b472c8780f8bee67204f"><td class="memItemLeft" align="right" valign="top">std::map&lt; const void *, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html">TriggerFanOut</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a5a3ff9e91313b472c8780f8bee67204f">triggerMap</a></td></tr>
 <tr class="memdesc:a5a3ff9e91313b472c8780f8bee67204f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of trigger consumers to their corresponding TriggerFanOuts.  <a href="#a5a3ff9e91313b472c8780f8bee67204f">More...</a><br /></td></tr>
 <tr class="separator:a5a3ff9e91313b472c8780f8bee67204f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39711811004259e3b4d73fd27574a78d"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a39711811004259e3b4d73fd27574a78d">controlSystemVariables</a></td></tr>
+<tr class="memdesc:a39711811004259e3b4d73fd27574a78d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of control system type VariableNetworkNodes handed out by ControlSystemModules.  <a href="#a39711811004259e3b4d73fd27574a78d">More...</a><br /></td></tr>
+<tr class="separator:a39711811004259e3b4d73fd27574a78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeaa79b9219a492c6d8345170b1d7f08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_variable_network.html">VariableNetwork</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#afeaa79b9219a492c6d8345170b1d7f08">invalidNetwork</a></td></tr>
 <tr class="memdesc:afeaa79b9219a492c6d8345170b1d7f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instance of <a class="el" href="class_chimera_t_k_1_1_variable_network.html" title="This class describes a network of variables all connected to each other. ">VariableNetwork</a> to indicate an invalid network.  <a href="#afeaa79b9219a492c6d8345170b1d7f08">More...</a><br /></td></tr>
 <tr class="separator:afeaa79b9219a492c6d8345170b1d7f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -534,6 +537,8 @@ Friends</h2></td></tr>
 <tr class="separator:af033b26a09f6c807cb8727f4c52385d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9b0a018685f775680c855e56a305328"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#aa9b0a018685f775680c855e56a305328">TriggerFanOut</a></td></tr>
 <tr class="separator:aa9b0a018685f775680c855e56a305328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a987d65c8265c2cdca7480ca3e9e15771"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a987d65c8265c2cdca7480ca3e9e15771">ControlSystemModule</a></td></tr>
+<tr class="separator:a987d65c8265c2cdca7480ca3e9e15771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae695c6843b4a8363af68d12eb640997e"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:ae695c6843b4a8363af68d12eb640997e"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#ae695c6843b4a8363af68d12eb640997e">DebugPrintAccessorDecorator</a></td></tr>
 <tr class="separator:ae695c6843b4a8363af68d12eb640997e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -991,7 +996,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a2e6036e82c5f3b01bc062ceb431f94bb">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00475">475</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00482">482</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1021,7 +1026,7 @@ template&lt;typename UserType &gt; </div>
 <p>Define the connections between process variables. </p>
 <p>Must be implemented by the application developer. </p>
 
-<p>Implemented in <a class="el" href="struct_test_application4.html#a3e261d25e42c51848709d640abad097e">TestApplication4</a>, <a class="el" href="struct_test_application2.html#a77d1e46d4b9785bb87e697280953b629">TestApplication2&lt; T &gt;</a>, <a class="el" href="struct_test_application2.html#a77d1e46d4b9785bb87e697280953b629">TestApplication2&lt; T &gt;</a>, <a class="el" href="struct_test_application3.html#a07546aff06a80f2848bc305fdcd7ad96">TestApplication3</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_trigger_fan_out_d9_dummy_application.html#ad6f824d887a252d33cf640179f4b95f2">TriggerFanOutD9DummyApplication</a>, <a class="el" href="struct_push_d9_dummy_application.html#aac1b982872d16afbce10420d07787764">PushD9DummyApplication</a>, <a class="el" href="struct_polling_test_application.html#a31b0e9591988e70a605c79e452c4867b">PollingTestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application_with_device.html#ac2dadde0a6dad43f4b1203ead4545fda">TestApplicationWithDevice</a>, <a class="el" href="struct_constant_test_application.html#a8fc2c197f7a36444f820487a4a3b8ae0">ConstantTestApplication&lt; INPUT_TYPE &gt;</a>, <a class="el" href="struct_test_application_no_configs.html#a29b6a92716e75d8ed6e553db3e389a62">TestApplicationNoConfigs</a>, <a class="el" href="struct_assign_module_later_app.html#acee480dbb16e32ac01478a36208c9b7d">AssignModuleLaterApp</a>, <a class="el" href="struct_test_application_two_configs.html#a928e8473f398080fc56752d0ed939af9">TestApplicationTwoConfigs</a>, <a class="el" href="struct_vector_of_everything_app.html#a68cbc648e6ce2e063562326948b70e13">VectorOfEverythingApp</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_process_arry_dummy_application.html#a83550d0eb370a867a052cfe7487f8179">ProcessArryDummyApplication&lt; INPUT_TYPE &gt;</a>, <a class="el" href="struct_init_test_application.html#af8859a73129ba3fe222302407695c803">InitTestApplication</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="structtest_app_dev.html#acbfccd1a5213dac1e7d8e0aeb7588c48">testAppDev</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="structtest_app_array.html#a1323188a48d77e2f7f29dcdcc0155728">testAppArray&lt; UserType &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a">ExampleApp</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_vector_of_modules_app.html#a07fbe7a9945fab02427a3dcefb7e2a4f">VectorOfModulesApp</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_read_only_test_application.html#a6c8aee9f6e8e0af88e1b102a2f28dbb4">ReadOnlyTestApplication</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="structtest_app.html#ae2bbd6a2c7933bd89e488fc0804cc50b">testApp&lt; UserType &gt;</a>, <a class="el" href="struct_test_application2.html#a77d1e46d4b9785bb87e697280953b629">TestApplication2&lt; T &gt;</a>, <a class="el" href="struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a">ExampleApp</a>, <a class="el" href="structtest_app.html#ae2bbd6a2c7933bd89e488fc0804cc50b">testApp&lt; UserType &gt;</a>, <a class="el" href="struct_test_application_connect_to.html#a1256a26afccc827492340d6815b9e792">TestApplicationConnectTo</a>, <a class="el" href="struct_test_app.html#a98dcacb904a536b40e46632cfa19d222">TestApp</a>, <a class="el" href="struct_one_module_app.html#a4ec6a19c617a62e1eae3263aa96ac755">OneModuleApp</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_dummy_application.html#ad0420e423c4b93768823b4eeaa692e15">DummyApplication</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application1.html#a73356b82674828623008c5ef3b8d7a67">TestApplication1</a>, <a class="el" href="struct_push_dummy_application.html#a2396fc90fb2afeb6846946618b28e714">PushDummyApplication</a>, <a class="el" href="struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a">ExampleApp</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_poll_dummy_application.html#ad6e37ca61a350c7670828cc690c34c1e">PollDummyApplication</a>, <a class="el" href="struct_test_application1.html#a73356b82674828623008c5ef3b8d7a67">TestApplication1</a>, <a class="el" href="struct_server.html#ad44a7669c1ed714994987d5fe366f247">Server</a>, <a class="el" href="struct_test_app.html#a98dcacb904a536b40e46632cfa19d222">TestApp</a>, <a class="el" href="struct_test_app.html#a2d17785773a5b340c1d8b9c0218cc9ca">TestApp</a>, <a class="el" href="struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a">ExampleApp</a>, <a class="el" href="struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a">ExampleApp</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, and <a class="el" href="struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a">ExampleApp</a>.</p>
+<p>Implemented in <a class="el" href="struct_test_application4.html#a3e261d25e42c51848709d640abad097e">TestApplication4</a>, <a class="el" href="struct_test_application2.html#a77d1e46d4b9785bb87e697280953b629">TestApplication2&lt; T &gt;</a>, <a class="el" href="struct_test_application2.html#a77d1e46d4b9785bb87e697280953b629">TestApplication2&lt; T &gt;</a>, <a class="el" href="struct_test_application3.html#a07546aff06a80f2848bc305fdcd7ad96">TestApplication3</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_trigger_fan_out_d9_dummy_application.html#ad6f824d887a252d33cf640179f4b95f2">TriggerFanOutD9DummyApplication</a>, <a class="el" href="struct_push_d9_dummy_application.html#aac1b982872d16afbce10420d07787764">PushD9DummyApplication</a>, <a class="el" href="struct_polling_test_application.html#a31b0e9591988e70a605c79e452c4867b">PollingTestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application_with_device.html#ac2dadde0a6dad43f4b1203ead4545fda">TestApplicationWithDevice</a>, <a class="el" href="struct_constant_test_application.html#a8fc2c197f7a36444f820487a4a3b8ae0">ConstantTestApplication&lt; INPUT_TYPE &gt;</a>, <a class="el" href="struct_test_application_no_configs.html#a29b6a92716e75d8ed6e553db3e389a62">TestApplicationNoConfigs</a>, <a class="el" href="struct_assign_module_later_app.html#acee480dbb16e32ac01478a36208c9b7d">AssignModuleLaterApp</a>, <a class="el" href="struct_test_application_two_configs.html#a928e8473f398080fc56752d0ed939af9">TestApplicationTwoConfigs</a>, <a class="el" href="struct_vector_of_everything_app.html#a68cbc648e6ce2e063562326948b70e13">VectorOfEverythingApp</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_process_arry_dummy_application.html#a83550d0eb370a867a052cfe7487f8179">ProcessArryDummyApplication&lt; INPUT_TYPE &gt;</a>, <a class="el" href="struct_init_test_application.html#af8859a73129ba3fe222302407695c803">InitTestApplication</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="structtest_app_dev.html#acbfccd1a5213dac1e7d8e0aeb7588c48">testAppDev</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="structtest_app_array.html#a1323188a48d77e2f7f29dcdcc0155728">testAppArray&lt; UserType &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a">ExampleApp</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_vector_of_modules_app.html#a07fbe7a9945fab02427a3dcefb7e2a4f">VectorOfModulesApp</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_read_only_test_application.html#a6c8aee9f6e8e0af88e1b102a2f28dbb4">ReadOnlyTestApplication</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="structtest_app.html#ae2bbd6a2c7933bd89e488fc0804cc50b">testApp&lt; UserType &gt;</a>, <a class="el" href="struct_test_application2.html#a77d1e46d4b9785bb87e697280953b629">TestApplication2&lt; T &gt;</a>, <a class="el" href="struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a">ExampleApp</a>, <a class="el" href="structtest_app.html#ae2bbd6a2c7933bd89e488fc0804cc50b">testApp&lt; UserType &gt;</a>, <a class="el" href="struct_test_application_connect_to.html#a1256a26afccc827492340d6815b9e792">TestApplicationConnectTo</a>, <a class="el" href="struct_test_app.html#a98dcacb904a536b40e46632cfa19d222">TestApp</a>, <a class="el" href="struct_one_module_app.html#a4ec6a19c617a62e1eae3263aa96ac755">OneModuleApp</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_dummy_application.html#ad0420e423c4b93768823b4eeaa692e15">DummyApplication</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application1.html#a73356b82674828623008c5ef3b8d7a67">TestApplication1</a>, <a class="el" href="struct_push_dummy_application.html#a2396fc90fb2afeb6846946618b28e714">PushDummyApplication</a>, <a class="el" href="struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a">ExampleApp</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_poll_dummy_application.html#ad6e37ca61a350c7670828cc690c34c1e">PollDummyApplication</a>, <a class="el" href="struct_test_application1.html#a73356b82674828623008c5ef3b8d7a67">TestApplication1</a>, <a class="el" href="struct_server.html#ad44a7669c1ed714994987d5fe366f247">Server</a>, <a class="el" href="struct_test_app.html#a98dcacb904a536b40e46632cfa19d222">TestApp</a>, <a class="el" href="struct_test_app.html#a2d17785773a5b340c1d8b9c0218cc9ca">TestApp</a>, <a class="el" href="struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a">ExampleApp</a>, <a class="el" href="struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a">ExampleApp</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9">TestApplication&lt; T &gt;</a>, <a class="el" href="struct_test_application.html#a6d76ae9093a016d3a18ed247a6cf1fed">TestApplication&lt; T &gt;</a>, and <a class="el" href="struct_example_app.html#a10ec5ef425297cef6414d1ef438a4e1a">ExampleApp</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -1334,7 +1339,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a83a34142cea47d7396de8a3657004ef7">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00459">459</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00466">466</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1366,7 +1371,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a9a32600fa633b1cd991ba8f2bd3ac6b3">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00467">467</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00474">474</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -1523,7 +1528,7 @@ template&lt;typename UserType &gt; </div>
 <p>Return a fresh variable ID which can be assigned to a sender/receiver pair. </p>
 <p>The ID will always be non-zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00396">396</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00401">401</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 <div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-26-summary" class="dynsummary" style="display:block;">
@@ -1668,7 +1673,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a59d02ecae8bc99e76c7561c3ccea946c">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00471">471</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00478">478</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2243,7 +2248,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a5e2a53bcd523efe6546098aec632a60b">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00463">463</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00470">470</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2655,6 +2660,30 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a id="a987d65c8265c2cdca7480ca3e9e15771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a987d65c8265c2cdca7480ca3e9e15771">&#9670;&nbsp;</a></span>ControlSystemModule</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_chimera_t_k_1_1_control_system_module.html">ControlSystemModule</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00462">462</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+
+</div>
+</div>
 <a id="ae695c6843b4a8363af68d12eb640997e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae695c6843b4a8363af68d12eb640997e">&#9670;&nbsp;</a></span>DebugPrintAccessorDecorator</h2>
 
@@ -2677,7 +2706,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00458">458</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00465">465</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2701,7 +2730,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00453">453</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00458">458</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2777,7 +2806,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00447">447</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00452">452</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2801,7 +2830,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00452">452</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00457">457</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2825,7 +2854,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00455">455</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00460">460</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2949,7 +2978,7 @@ template&lt;typename UserType &gt; </div>
 <p>Version number used at application start, e.g. </p>
 <p>to propagate initial values </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00444">444</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00449">449</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -2993,6 +3022,33 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
+<a id="a39711811004259e3b4d73fd27574a78d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39711811004259e3b4d73fd27574a78d">&#9670;&nbsp;</a></span>controlSystemVariables</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a>&gt; ChimeraTK::Application::controlSystemVariables</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Map of control system type VariableNetworkNodes handed out by ControlSystemModules. </p>
+<p>This is used to hand out the same node again if the same variable is requested another time, to ensure the connections are registered in the same network. </p>
+
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00334">334</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+
+</div>
+</div>
 <a id="a80e8990554832fe825057368d512a7a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80e8990554832fe825057368d512a7a5">&#9670;&nbsp;</a></span>dataLossCounter</h2>
 
@@ -3015,7 +3071,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Counter for how many write() operations have overwritten unread data. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00438">438</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00443">443</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3042,7 +3098,7 @@ template&lt;typename UserType &gt; </div>
 <p>List of variables for which debug output was requested via <a class="el" href="class_chimera_t_k_1_1_application.html#a87520a53f9a635b49aace46f76c0cf07" title="Enable debug output for a given variable. ">enableVariableDebugging()</a>. </p>
 <p>Stored is the unique id of the <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00435">435</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00440">440</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3069,7 +3125,7 @@ template&lt;typename UserType &gt; </div>
 <p>Map of DeviceBackends used by this application. </p>
 <p>The map key is the alias name from the DMAP file </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00339">339</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00344">344</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3096,7 +3152,7 @@ template&lt;typename UserType &gt; </div>
 <p>Map of DeviceModules. </p>
 <p>The alias name is the key. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00342">342</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00347">347</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3122,7 +3178,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Flag if debug output is enabled for creation of the varible connections. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00388">388</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00393">393</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3148,7 +3204,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Flag if noisy debug output is enabled for the testable mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00382">382</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00387">387</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3174,7 +3230,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Flag whether to warn about unconnected variables or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00385">385</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00390">390</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3200,7 +3256,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Flag whether <a class="el" href="class_chimera_t_k_1_1_application.html#a697d4a47ece6750203eecbff97039773">initialise()</a> has been called already, to make sure it doesn't get called twice. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00354">354</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00359">359</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3252,7 +3308,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Instance of <a class="el" href="class_chimera_t_k_1_1_variable_network.html" title="This class describes a network of variables all connected to each other. ">VariableNetwork</a> to indicate an invalid network. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00335">335</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00340">340</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3278,7 +3334,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Life-cycle state of the application. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00441">441</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00446">446</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3331,7 +3387,7 @@ template&lt;typename UserType &gt; </div>
 <p>Map from ProcessArray uniqueId to the variable ID for control system variables. </p>
 <p>This is required for the <a class="el" href="class_chimera_t_k_1_1_test_facility.html" title="Helper class to facilitate tests of applications based on ApplicationCore. ">TestFacility</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00392">392</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00397">397</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3357,7 +3413,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Flag whether <a class="el" href="class_chimera_t_k_1_1_application.html#a6815195c956c091a6558a316f8fd9976">run()</a> has been called already, to make sure it doesn't get called twice. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00357">357</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00362">362</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3384,7 +3440,7 @@ template&lt;typename UserType &gt; </div>
 <p>Flag if connections should be made in testable mode (i.e. </p>
 <p>the <a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">TestableModeAccessorDecorator</a> is put around all push-type input accessors etc.). </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00347">347</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00352">352</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3411,7 +3467,7 @@ template&lt;typename UserType &gt; </div>
 <p>Semaphore counter used in testable mode to check if application code is finished executing. </p>
 <p>This value may only be accessed while holding the testableMode_mutex. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00374">374</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00379">379</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3438,7 +3494,7 @@ template&lt;typename UserType &gt; </div>
 <p>Semaphore counter used in testable mode to check if device initialisation is finished executing. </p>
 <p>This value may only be accessed while holding the testableMode_mutex. This counter is a separate counter from testableMode_counter so <a class="el" href="class_chimera_t_k_1_1_application.html#af73af6e9bfd23e6e970ed5bf976068d4" title="Resume the application until all application threads are stuck in a blocking read operation...">stepApplication()</a> can be controlled whether to obey this counter. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00379">379</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00384">384</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3464,7 +3520,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map of unique IDs to flags whether the update mode is <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3bab0f6dfb42fa80caee6825bfecd30f094">UpdateMode::poll</a> (so we do not use the decorator) </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00430">430</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00435">435</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3491,7 +3547,7 @@ template&lt;typename UserType &gt; </div>
 <p>Last thread which successfully obtained the lock for the testable mode. </p>
 <p>This is used to prevent spamming repeating messages if the same thread acquires and releases the lock in a loop without another thread activating in between. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00405">405</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00410">410</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3519,7 +3575,7 @@ template&lt;typename UserType &gt; </div>
 <p>Use only through the lock object obtained through getLockObjectForCurrentThread().</p>
 <p>This member is static, since it should survive destroying an application instance and creating a new one. Otherwise <a class="el" href="class_chimera_t_k_1_1_application.html#aca0e46e006bc223748a3c4056bddc176" title="Obtain the lock object for the testable mode lock for the current thread. ">getTestableModeLockObject()</a> would not work, since it relies on thread_local instances which have to be static. The static storage duration presents no problem in either case, since there can only be one single instance of <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> at a time (see ApplicationBase constructor). </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00369">369</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00374">374</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3545,7 +3601,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map of unique IDs to namess, used along with testableMode_perVarCounter to print sensible information. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00422">422</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00427">427</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3572,7 +3628,7 @@ template&lt;typename UserType &gt; </div>
 <p>Testable mode: like testableMode_counter but broken out for each variable. </p>
 <p>This is not actually used as a semaphore counter but only in case of a detected stall (see testableMode_repeatingMutexOwner) to print a list of variables which still contain unread values. The index of the map is the unique ID of the variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00418">418</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00423">423</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3598,7 +3654,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map of unique IDs to process variables which have been decorated with the <a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">TestableModeAccessorDecorator</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00426">426</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00431">431</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3625,7 +3681,7 @@ template&lt;typename UserType &gt; </div>
 <p>Counter how often the same thread has acquired the testable mode mutex in a row without another thread owning it in between. </p>
 <p>This is an indicator for the test being stalled due to data send through a process variable but not read by the receiver. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00411">411</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00416">416</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3652,7 +3708,7 @@ template&lt;typename UserType &gt; </div>
 <p>Flag which is set by the <a class="el" href="class_chimera_t_k_1_1_test_facility.html" title="Helper class to facilitate tests of applications based on ApplicationCore. ">TestFacility</a> in runApplication() at the beginning. </p>
 <p>This is used to make sure runApplication() is called by the <a class="el" href="class_chimera_t_k_1_1_test_facility.html" title="Helper class to facilitate tests of applications based on ApplicationCore. ">TestFacility</a> and not manually. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00351">351</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00356">356</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -3693,7 +3749,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_application.html">Application</a></li>
-    <li class="footer">Generated on Fri Feb 19 2021 04:53:42 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Mar 24 2021 04:54:38 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

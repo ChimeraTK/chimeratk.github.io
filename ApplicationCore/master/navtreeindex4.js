@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"exception_handling.html#Introduction":[0,0],
 "files.html":[18,0],
 "fixtures_8h.html":[18,0,10,1,1],
 "fixtures_8h_source.html":[18,0,10,1,1],
@@ -14,8 +15,8 @@ var NAVTREEINDEX4 =
 "functions_enum.html":[17,3,4],
 "functions_eval.html":[17,3,5],
 "functions_f.html":[17,3,0,6],
-"functions_func.html":[17,3,1],
 "functions_func.html":[17,3,1,0],
+"functions_func.html":[17,3,1],
 "functions_func_0x7e.html":[17,3,1,20],
 "functions_func_b.html":[17,3,1,1],
 "functions_func_c.html":[17,3,1,2],
@@ -52,8 +53,8 @@ var NAVTREEINDEX4 =
 "functions_type.html":[17,3,3],
 "functions_u.html":[17,3,0,19],
 "functions_v.html":[17,3,0,20],
-"functions_vars.html":[17,3,2,0],
 "functions_vars.html":[17,3,2],
+"functions_vars.html":[17,3,2,0],
 "functions_vars_a.html":[17,3,2,1],
 "functions_vars_b.html":[17,3,2,2],
 "functions_vars_c.html":[17,3,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "struct_chimera_t_k_1_1_config_reader.html#a889a4d8521fd8b37705f84d95f79ff20":[17,0,0,16,17],
 "struct_chimera_t_k_1_1_config_reader.html#a8a279e5c1d7cacdad362f7456a2ec09f":[17,0,0,16,25],
 "struct_chimera_t_k_1_1_config_reader.html#a8a692faaaddd5419b5754fca31854b63":[17,0,0,16,2],
-"struct_chimera_t_k_1_1_config_reader.html#a9095274a4220b1fbdcdbd54b0f86449f":[17,0,0,16,26],
-"struct_chimera_t_k_1_1_config_reader.html#a926973e3a9dfd07e0171f56d3ec909af":[17,0,0,16,9]
+"struct_chimera_t_k_1_1_config_reader.html#a9095274a4220b1fbdcdbd54b0f86449f":[17,0,0,16,26]
 };
