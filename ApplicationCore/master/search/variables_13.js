@@ -1,5 +1,31 @@
 var searchData=
 [
-  ['unit',['unit',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a5da8f84d69e239401006d7af009acc15',1,'ChimeraTK::VariableNetworkNode_data']]],
-  ['updatemodule',['updateModule',['../struct_dummy_application.html#a6a074feda8ac6528666f94454ae49ec1',1,'DummyApplication']]]
+  ['samplingfrequency',['samplingFrequency',['../demo_app_8cc.html#a8aff6cd57074d5d12c0a90e6c1115358',1,'demoApp.cc']]],
+  ['scalaroutput',['scalarOutput',['../struct_test_module.html#a79f5734acc944d97d7c0d9e2f9bbd2d9',1,'TestModule']]],
+  ['scalaroutputmodule',['scalarOutputModule',['../struct_process_arry_dummy_application.html#a47b5290010bda6fef449109033523f10',1,'ProcessArryDummyApplication']]],
+  ['scalarroinput',['scalarROInput',['../struct_read_only_test_application_1_1_test_module.html#a03e485c6bd2cec4e922da9326fb8c869',1,'ReadOnlyTestApplication::TestModule']]],
+  ['second',['second',['../struct_test_application.html#abbdf39f6c5231705ebb7c2c8db984c11',1,'TestApplication']]],
+  ['secondmodule',['SecondModule',['../struct_first_hierarchy.html#af13767854586c92f52633311e273288d',1,'FirstHierarchy::SecondModule()'],['../struct_second_hierarchy.html#ac4c839ffee45181fee63294bb875e888',1,'SecondHierarchy::SecondModule()']]],
+  ['set',['set',['../struct_test_application.html#abb684a5a5625dd3c24ae7807ba2a57ee',1,'TestApplication']]],
+  ['setpoint',['setpoint',['../struct_table_generation_1_1_table_parameters.html#a5ee8e2e95476e9f12fa37bd9da3d1cdf',1,'TableGeneration::TableParameters']]],
+  ['setpointtable',['setpointTable',['../struct_table_generation.html#ae8c931884174f7c224200ffb1314e5ff',1,'TableGeneration']]],
+  ['simulation',['Simulation',['../struct_example_app.html#abd16c59e21124f075eed347568b30464',1,'ExampleApp::Simulation()'],['../struct_example_app.html#abd542c1e6b5653650c7d297da9f0abc7',1,'ExampleApp::simulation()']]],
+  ['sistergroupofvargroup',['SisterGroupOfVarGroup',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#aa7f9ae0a95857c0e00020e8587806065',1,'FirstHierarchy::TestModule::VarGroup']]],
+  ['sistervarofvargroup',['sisterVarOfVarGroup',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#a56ce2485fa2bbeaf696e3418a8a2a032',1,'FirstHierarchy::TestModule::VarGroup']]],
+  ['slaves',['slaves',['../class_chimera_t_k_1_1_fan_out.html#a5056124514dfea29a94e722e9903d1cd',1,'ChimeraTK::FanOut']]],
+  ['somegroup',['someGroup',['../struct_test_module.html#a2370c2310c6742f51ee94779a6269d2d',1,'TestModule']]],
+  ['someinput',['someInput',['../struct_test_module.html#a51b52a53e7c1b1be341103e443f4728c',1,'TestModule::someInput()'],['../struct_vector_module.html#acbc9913ec8048f2ca45c71f59cb8ec6d',1,'VectorModule::someInput()'],['../struct_blocking_read_test_module.html#ac9fe2502bf52889f4cf210ea83297979',1,'BlockingReadTestModule::someInput()']]],
+  ['someoutput',['someOutput',['../struct_test_module.html#a9620a90ac94c25a53ddb529e32e73d3c',1,'TestModule::someOutput()'],['../struct_vector_module.html#aff9dd87f9d198b8fe443d6230eb2f514',1,'VectorModule::someOutput()'],['../struct_blocking_read_test_module.html#a706c80baa9a32fdd5e286c87865fcd55',1,'BlockingReadTestModule::someOutput()']]],
+  ['sp',['sp',['../struct_controller.html#abc1bd02bfdaf29b368c4d558e087250a',1,'Controller']]],
+  ['start',['start',['../struct_read_only_test_application_1_1_test_module.html#a78137cd2d5d94465b5496b8c9f3aff36',1,'ReadOnlyTestApplication::TestModule']]],
+  ['state',['state',['../struct_polling_read_module.html#af828a7994db01ee6ee690bcd53e1f891',1,'PollingReadModule']]],
+  ['status',['status',['../struct_chimera_t_k_1_1_device_module_1_1_device_error.html#adc906e2de974b7f48e7cba812f6a979a',1,'ChimeraTK::DeviceModule::DeviceError::status()'],['../class_chimera_t_k_1_1_status_aggregator.html#a7c330bd9b4f80b2d6b6b42bbb9e0d003',1,'ChimeraTK::StatusAggregator::status()'],['../struct_chimera_t_k_1_1_status_monitor.html#abe4fa4c42d0ec3bb5c6ccbe1825f9eb7',1,'ChimeraTK::StatusMonitor::status()'],['../structfixture__with__poll__and__push__input.html#ac21efef32f38e4c04ac44ee4b6b0267d',1,'fixture_with_poll_and_push_input::status()']]],
+  ['statusinput',['statusInput',['../class_chimera_t_k_1_1_status_aggregator.html#a33e9e8d7dbcbfa1dd96e1b0d3fc0051e',1,'ChimeraTK::StatusAggregator']]],
+  ['stringarray',['stringArray',['../struct_test_module.html#af9138b5edf8223227d2d51737a3a5824',1,'TestModule::stringArray()'],['../struct_test_module_1_1_module1_1_1_sub_module.html#aabe62e673f145e192db3b4d16c2629a6',1,'TestModule::Module1::SubModule::stringArray()']]],
+  ['submodule',['submodule',['../struct_test_module_1_1_module1.html#ada22c3784e9fa40b7d59544092cb7d2f',1,'TestModule::Module1']]],
+  ['submodule1',['submodule1',['../struct_test_module_1_1_module2.html#ae0925eb2adf2a23c7e67f4c5d7b8c0ff',1,'TestModule::Module2']]],
+  ['submodule2',['submodule2',['../struct_test_module_1_1_module2.html#abef5050a3a8bc91cfd78a6aa681967ce',1,'TestModule::Module2']]],
+  ['submodules',['subModules',['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()'],['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()']]],
+  ['subsubmodule',['subsubmodule',['../struct_test_module_1_1_module1_1_1_sub_module.html#af07d409f95763fa8a592fa5084c9658e',1,'TestModule::Module1::SubModule']]],
+  ['synchronoustransfercounter',['synchronousTransferCounter',['../class_chimera_t_k_1_1_device_module.html#a88f4864f1f3001a38aab45486792db78',1,'ChimeraTK::DeviceModule']]]
 ];

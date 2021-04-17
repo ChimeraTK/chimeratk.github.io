@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['g',['g',['../struct_test_application_1_1_test_module.html#a05e3d8f489dca041407e395280a4de44',1,'TestApplication::TestModule']]],
   ['gains',['gains',['../namespaceoven__sim2c.html#a777cec4acd8be67aa8508c2be5a832b1',1,'oven_sim2c']]],
   ['generatexml',['generateXML',['../class_chimera_t_k_1_1_application.html#a1c9c06d9a92bfb9f42875faf48771e2d',1,'ChimeraTK::Application']]],
   ['genericwritewrapper',['genericWriteWrapper',['../class_chimera_t_k_1_1_exception_handling_decorator.html#a4cf10b87d3f2989ba4045ef65b6b0543',1,'ChimeraTK::ExceptionHandlingDecorator']]],
@@ -42,6 +43,7 @@ var searchData=
   ['getnumberofelements',['getNumberOfElements',['../class_chimera_t_k_1_1_variable_network_node.html#a7e29bff86c44ab110c525903826722c1',1,'ChimeraTK::VariableNetworkNode']]],
   ['getowner',['getOwner',['../class_chimera_t_k_1_1_inversion_of_control_accessor.html#aa9695443e71aca7a26755278e1f73f38',1,'ChimeraTK::InversionOfControlAccessor::getOwner()'],['../class_chimera_t_k_1_1_module.html#acf4cf5c7d86e570d7d92d257666e2fad',1,'ChimeraTK::Module::getOwner()'],['../class_chimera_t_k_1_1_variable_network_node.html#a4445cd91467119430db5a61f8e996362',1,'ChimeraTK::VariableNetworkNode::getOwner()']]],
   ['getowningmodule',['getOwningModule',['../class_chimera_t_k_1_1_variable_network_node.html#aecf2d39df34f2a86c8e29c6b7c852520',1,'ChimeraTK::VariableNetworkNode']]],
+  ['getpathname',['getPathName',['../struct_chimera_t_k_1_1_hierarchy_modifying_group.html#a7109812d343a31f3da6588878ba95518',1,'ChimeraTK::HierarchyModifyingGroup']]],
   ['getproxy',['getProxy',['../class_chimera_t_k_1_1_device_module.html#a8afdd6992d399ae7fafa6e3d29cc28d3',1,'ChimeraTK::DeviceModule']]],
   ['getpublicname',['getPublicName',['../class_chimera_t_k_1_1_variable_network_node.html#a4417fb9748d02e246a58dd7be0ae50ef',1,'ChimeraTK::VariableNetworkNode']]],
   ['getqualifiedname',['getQualifiedName',['../class_chimera_t_k_1_1_application.html#a614e97c009f31afe1844f2ce99f2de1c',1,'ChimeraTK::Application::getQualifiedName()'],['../class_chimera_t_k_1_1_entity_owner.html#aa3fc963233d251705cd197ced1aa0876',1,'ChimeraTK::EntityOwner::getQualifiedName()'],['../class_chimera_t_k_1_1_internal_module.html#a9d24d6f7e57786cc5775c36a0a0d9ae7',1,'ChimeraTK::InternalModule::getQualifiedName()'],['../class_chimera_t_k_1_1_module.html#a09462e535a0c30344012fc821d148f8e',1,'ChimeraTK::Module::getQualifiedName()'],['../class_chimera_t_k_1_1_variable_network_node.html#a36dcf5a792616f56e5c1d4abc144bb99',1,'ChimeraTK::VariableNetworkNode::getQualifiedName()']]],
@@ -61,12 +63,13 @@ var searchData=
   ['gettype',['getType',['../class_chimera_t_k_1_1_variable_network_node.html#a12f1d9725e90360d0e842c3222313cf8',1,'ChimeraTK::VariableNetworkNode']]],
   ['getuniqueid',['getUniqueId',['../class_chimera_t_k_1_1_variable_network_node.html#ad33632ffd3d0b36f134cd6997fac1cdf',1,'ChimeraTK::VariableNetworkNode']]],
   ['getunit',['getUnit',['../class_chimera_t_k_1_1_variable_network.html#a29f7a61defbc3ca33459f87966bff939',1,'ChimeraTK::VariableNetwork::getUnit()'],['../class_chimera_t_k_1_1_variable_network_node.html#af2c26e82b61376a13729bccab739ba4c',1,'ChimeraTK::VariableNetworkNode::getUnit()']]],
+  ['getunqualifiedname',['getUnqualifiedName',['../struct_chimera_t_k_1_1_hierarchy_modifying_group.html#a05e931fa2a529755d286f1856d7d69fb',1,'ChimeraTK::HierarchyModifyingGroup']]],
   ['getvaluefromnode',['getValueFromNode',['../test_application_8cc.html#a747b9f7c811141b1509f7c267a82d2b6',1,'testApplication.cc']]],
   ['getvaluetype',['getValueType',['../class_chimera_t_k_1_1_variable_network.html#a1d60d20aacced268c9fc82352d788a37',1,'ChimeraTK::VariableNetwork::getValueType()'],['../class_chimera_t_k_1_1_variable_network_node.html#a4d1ef6ae206a43dd3a046abc34ef9eb0',1,'ChimeraTK::VariableNetworkNode::getValueType()']]],
   ['getvariablelist',['getVariableList',['../class_chimera_t_k_1_1_config_parser.html#ab29dfb53965851039c2214fb9581c995',1,'ChimeraTK::ConfigParser']]],
   ['getvirtualqualifiedname',['getVirtualQualifiedName',['../class_chimera_t_k_1_1_module.html#a210eb585677baa3fc7865c52ac7abb51',1,'ChimeraTK::Module']]],
   ['globalstatemonitor',['globalStateMonitor',['../struct_test_application.html#adf05a930ae6b74bb79527151f9c80772',1,'TestApplication']]],
   ['globalstatusaggregator',['globalStatusAggregator',['../struct_test_application.html#ac28c5490d225fc0a3306bcee360b14c8',1,'TestApplication']]],
-  ['group',['group',['../struct_first_hierarchy_1_1_test_module.html#ae18ed231092719faf5b2f1e3ffd475f3',1,'FirstHierarchy::TestModule::group()'],['../struct_second_hierarchy_1_1_test_module.html#ab7bbd27214ffb05b2196536efe2632f8',1,'SecondHierarchy::TestModule::group()'],['../struct_second_hierarchy_1_1_second_module.html#a1db70f9b608c6372f8c35a6691fa8201',1,'SecondHierarchy::SecondModule::group()'],['../struct_test_module.html#a9939ffa3e758b936aeb60da840546d28',1,'TestModule::group()'],['../struct_vector_module.html#ac646e85ba51acf05167a71fe3b056f9c',1,'VectorModule::group()']]],
+  ['group',['group',['../struct_first_hierarchy_1_1_test_module.html#ae18ed231092719faf5b2f1e3ffd475f3',1,'FirstHierarchy::TestModule::group()'],['../struct_second_hierarchy_1_1_test_module.html#ab7bbd27214ffb05b2196536efe2632f8',1,'SecondHierarchy::TestModule::group()'],['../struct_second_hierarchy_1_1_second_module.html#a1db70f9b608c6372f8c35a6691fa8201',1,'SecondHierarchy::SecondModule::group()'],['../struct_test_application__empty.html#aced6de52fefcc135c7718fbbdb6ba1c5',1,'TestApplication_empty::group()'],['../struct_test_module.html#a9939ffa3e758b936aeb60da840546d28',1,'TestModule::group()'],['../struct_vector_module.html#ac646e85ba51acf05167a71fe3b056f9c',1,'VectorModule::group()']]],
   ['groupmap',['groupMap',['../struct_chimera_t_k_1_1history_1_1_server_history.html#a2b1e85f6dd4a1c4dc48a716b45bf51b4',1,'ChimeraTK::history::ServerHistory']]]
 ];

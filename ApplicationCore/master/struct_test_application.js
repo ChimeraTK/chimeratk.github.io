@@ -1,6 +1,9 @@
 var struct_test_application =
 [
     [ "IO", "struct_test_application_1_1_i_o.html", "struct_test_application_1_1_i_o" ],
+    [ "TestModule", "struct_test_application_1_1_test_module.html", "struct_test_application_1_1_test_module" ],
+    [ "TestApplication", "struct_test_application.html#a4702932ffea66d2abc6e24d388961cf7", null ],
+    [ "~TestApplication", "struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4", null ],
     [ "TestApplication", "struct_test_application.html#a4702932ffea66d2abc6e24d388961cf7", null ],
     [ "~TestApplication", "struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4", null ],
     [ "TestApplication", "struct_test_application.html#a4702932ffea66d2abc6e24d388961cf7", null ],
@@ -44,6 +47,7 @@ var struct_test_application =
     [ "defineConnections", "struct_test_application.html#a6d76ae9093a016d3a18ed247a6cf1fed", null ],
     [ "defineConnections", "struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9", null ],
     [ "defineConnections", "struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9", null ],
+    [ "defineConnections", "struct_test_application.html#a6d76ae9093a016d3a18ed247a6cf1fed", null ],
     [ "defineConnections", "struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9", null ],
     [ "defineConnections", "struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9", null ],
     [ "defineConnections", "struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9", null ],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['c',['c',['../struct_init_test_application.html#a7a193592143703e32ee211349ad28840',1,'InitTestApplication::c()'],['../namespaceoven__sim.html#adc2713b1b600d9a8f8f1c3273a21ba6c',1,'oven_sim.c()'],['../namespaceoven__sim2c.html#ae7da0a36a43c57777fc3312a7d038d50',1,'oven_sim2c.c()']]],
+  ['c',['c',['../struct_init_test_application.html#a7a193592143703e32ee211349ad28840',1,'InitTestApplication::c()'],['../struct_test_application_1_1_test_module.html#a012582f8859e1a970ed3a0bb058f9438',1,'TestApplication::TestModule::c()'],['../namespaceoven__sim.html#adc2713b1b600d9a8f8f1c3273a21ba6c',1,'oven_sim.c()'],['../namespaceoven__sim2c.html#ae7da0a36a43c57777fc3312a7d038d50',1,'oven_sim2c.c()']]],
   ['check',['check',['../class_chimera_t_k_1_1_variable_network.html#afcfb9d57d834e2e61abe8f38773e5b22',1,'ChimeraTK::VariableNetwork']]],
   ['check_5fequal_5ftimeout',['CHECK_EQUAL_TIMEOUT',['../check__timeout_8h.html#a53486434270be6831a41afe38262de96',1,'check_timeout.h']]],
   ['check_5ftimeout',['CHECK_TIMEOUT',['../test_control_system_accessors_8cc.html#a17030ac7f00713a62e05ab6c35cb710e',1,'CHECK_TIMEOUT():&#160;testControlSystemAccessors.cc'],['../test_device_accessors_8cc.html#a17030ac7f00713a62e05ab6c35cb710e',1,'CHECK_TIMEOUT():&#160;testDeviceAccessors.cc'],['../test_test_facilities_8cc.html#a17030ac7f00713a62e05ab6c35cb710e',1,'CHECK_TIMEOUT():&#160;testTestFacilities.cc'],['../check__timeout_8h.html#a17030ac7f00713a62e05ab6c35cb710e',1,'CHECK_TIMEOUT():&#160;check_timeout.h']]],
@@ -71,6 +71,7 @@ var searchData=
   ['cs2',['cs2',['../struct_test_application.html#a6f6bf6b3fd62b4151aa4340654f62c7f',1,'TestApplication']]],
   ['csmod',['csmod',['../struct_test_app.html#a8a959ab8f5ab64b044145df4202ed4f1',1,'TestApp']]],
   ['cur',['cur',['../struct_controller.html#a54f77011079233e80bf09ac9867773ce',1,'Controller']]],
+  ['current',['current',['../struct_test_helper.html#a3b403722ee65c15e1f6ea380989de296',1,'TestHelper']]],
   ['currentversionnumber',['currentVersionNumber',['../class_chimera_t_k_1_1_application_module.html#ad8476bb19cd8ded587db75a19b9ffa15',1,'ChimeraTK::ApplicationModule::currentVersionNumber()'],['../class_chimera_t_k_1_1_device_module.html#a4a3bfad5ba8749f4e37a5165bbbdb321',1,'ChimeraTK::DeviceModule::currentVersionNumber()']]],
   ['cursp',['curSP',['../struct_automation.html#a1a86176292eb457cf69d9a764a38a468',1,'Automation']]],
   ['history',['history',['../namespace_chimera_t_k_1_1history.html',1,'ChimeraTK']]]

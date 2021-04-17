@@ -47,6 +47,9 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "FeedingFanOut", "class_chimera_t_k_1_1_feeding_fan_out.html", "class_chimera_t_k_1_1_feeding_fan_out" ]
     ] ],
     [ "Flags.h", "_flags_8h.html", "_flags_8h" ],
+    [ "HierarchyModifyingGroup.h", "_hierarchy_modifying_group_8h.html", [
+      [ "HierarchyModifyingGroup", "struct_chimera_t_k_1_1_hierarchy_modifying_group.html", "struct_chimera_t_k_1_1_hierarchy_modifying_group" ]
+    ] ],
     [ "InternalModule.h", "_internal_module_8h.html", [
       [ "InternalModule", "class_chimera_t_k_1_1_internal_module.html", "class_chimera_t_k_1_1_internal_module" ]
     ] ],

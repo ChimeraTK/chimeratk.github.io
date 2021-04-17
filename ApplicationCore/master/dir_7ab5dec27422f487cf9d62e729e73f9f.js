@@ -15,6 +15,7 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testFanoutConnections.cc", "test_fanout_connections_8cc.html", "test_fanout_connections_8cc" ],
     [ "testFindTag.cc", "test_find_tag_8cc.html", "test_find_tag_8cc" ],
     [ "testHideThis.cc", "test_hide_this_8cc.html", "test_hide_this_8cc" ],
+    [ "testHierarchyModifyingGroup.cc", "test_hierarchy_modifying_group_8cc.html", "test_hierarchy_modifying_group_8cc" ],
     [ "testHistory.cc", "test_history_8cc.html", "test_history_8cc" ],
     [ "testIllegalNetworks.cc", "test_illegal_networks_8cc.html", "test_illegal_networks_8cc" ],
     [ "testInitialValueSpecD8.cc", "test_initial_value_spec_d8_8cc.html", "test_initial_value_spec_d8_8cc" ],

@@ -12,6 +12,8 @@ var class_chimera_t_k_1_1_virtual_module =
     [ "operator()", "class_chimera_t_k_1_1_virtual_module.html#adfe29a83ad224f4396d0e9bacd9b1496", null ],
     [ "operator=", "class_chimera_t_k_1_1_virtual_module.html#a4a157143167e2c27e32401e4fe197991", null ],
     [ "operator[]", "class_chimera_t_k_1_1_virtual_module.html#acd5aa6126236acfa735dde86bd33cab7", null ],
+    [ "removeSubModule", "class_chimera_t_k_1_1_virtual_module.html#accf66f988af47798d958b356923054db", null ],
+    [ "stripEmptyChildsRecursive", "class_chimera_t_k_1_1_virtual_module.html#aebd71b0d2d77aa279c6879cc16e27c7d", null ],
     [ "virtualise", "class_chimera_t_k_1_1_virtual_module.html#abc61ba0a45c257edef5f9a29d5667003", null ],
     [ "_moduleType", "class_chimera_t_k_1_1_virtual_module.html#a330a7818ef3da81b87519bc03dc36205", null ],
     [ "submodules", "class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f", null ]

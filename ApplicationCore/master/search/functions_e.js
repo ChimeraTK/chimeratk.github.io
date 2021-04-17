@@ -40,5 +40,6 @@ var searchData=
   ['stepapplication',['stepApplication',['../class_chimera_t_k_1_1_application.html#af73af6e9bfd23e6e970ed5bf976068d4',1,'ChimeraTK::Application::stepApplication()'],['../class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780',1,'ChimeraTK::TestFacility::stepApplication()']]],
   ['stopmeasurement',['stopMeasurement',['../class_chimera_t_k_1_1_profiler.html#a35af786affb9aecdc2e36a792c9ff5a5',1,'ChimeraTK::Profiler']]],
   ['stream',['stream',['../class_chimera_t_k_1_1_pushable_stream.html#a916dbc0fd3430135e4fbb2a73c22e52e',1,'ChimeraTK::PushableStream']]],
-  ['submodule',['submodule',['../class_chimera_t_k_1_1_module.html#a5b69b847a580b0c4aa20309a81246b0c',1,'ChimeraTK::Module']]]
+  ['stripemptychildsrecursive',['stripEmptyChildsRecursive',['../class_chimera_t_k_1_1_virtual_module.html#aebd71b0d2d77aa279c6879cc16e27c7d',1,'ChimeraTK::VirtualModule']]],
+  ['submodule',['submodule',['../class_chimera_t_k_1_1_module.html#a5b69b847a580b0c4aa20309a81246b0c',1,'ChimeraTK::Module::submodule()'],['../struct_test_helper.html#a93e930908685f4a6ffc1fb9621e84dc6',1,'TestHelper::submodule()']]]
 ];
