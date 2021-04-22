@@ -9,5 +9,6 @@ var test_app_module_connections_8cc =
     [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#acb752a051f22de0fb9969c3e089e565d", null ],
     [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#aafe5b5185bdcb0075fac64dfa99a1c65", null ],
     [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#aa1f784a144a1caeb42f1360aed672148", null ],
-    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#a8994ae0fd8ab9e7a600d25d839b9d56f", null ]
+    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#a8994ae0fd8ab9e7a600d25d839b9d56f", null ],
+    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_app_module_connections_8cc.html#a120a22318caddf6f4e86a679224f8df0", null ]
 ];

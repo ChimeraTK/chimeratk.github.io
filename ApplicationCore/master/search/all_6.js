@@ -30,7 +30,7 @@ var searchData=
   ['findapplicationmodule',['findApplicationModule',['../class_chimera_t_k_1_1_module.html#ae1b039da6906085a906e4d59509a4de9',1,'ChimeraTK::Module']]],
   ['findcommonprefix',['findCommonPrefix',['../namespacevariable_houseold_to_wiki_table.html#ae04b03174d5356fce5062180ed016f2d',1,'variableHouseoldToWikiTable']]],
   ['findtag',['findTag',['../class_chimera_t_k_1_1_entity_owner.html#a10abe5f666483380a4dee7fb8caacd86',1,'ChimeraTK::EntityOwner']]],
-  ['findtagandappendtomodule',['findTagAndAppendToModule',['../class_chimera_t_k_1_1_entity_owner.html#abde59a69fac6f2d07b199dfe4ec78b85',1,'ChimeraTK::EntityOwner']]],
+  ['findtagandappendtomodule',['findTagAndAppendToModule',['../class_chimera_t_k_1_1_entity_owner.html#abde59a69fac6f2d07b199dfe4ec78b85',1,'ChimeraTK::EntityOwner::findTagAndAppendToModule()'],['../struct_chimera_t_k_1_1_hierarchy_modifying_group.html#aa1ddb806ce2f6d3174f95cc737315734',1,'ChimeraTK::HierarchyModifyingGroup::findTagAndAppendToModule()']]],
   ['first',['first',['../struct_test_application.html#adceb2aa5bc2aa7acaad9ef255264638d',1,'TestApplication']]],
   ['firsthierarchy',['FirstHierarchy',['../struct_first_hierarchy.html',1,'']]],
   ['fixedlimitvalue',['FixedLimitValue',['../struct_chimera_t_k_1_1_fixed_limit_value.html',1,'ChimeraTK']]],

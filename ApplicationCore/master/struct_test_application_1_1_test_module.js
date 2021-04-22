@@ -16,7 +16,9 @@ var struct_test_application_1_1_test_module =
     [ "j", "struct_test_application_1_1_test_module.html#afc57e923aef7a5aa3a2be5a53145305a", null ],
     [ "k", "struct_test_application_1_1_test_module.html#aa2bcf8ad8312cc3c0daac1d383c89467", null ],
     [ "m", "struct_test_application_1_1_test_module.html#a2d046b6886a9b3dd43877352bb4c3d8c", null ],
+    [ "n", "struct_test_application_1_1_test_module.html#af5281469a8bd7eb9cfb3f70332f9834b", null ],
     [ "none", "struct_test_application_1_1_test_module.html#a4ac7fc7b733bdfd248e4cdb45af03654", null ],
+    [ "o", "struct_test_application_1_1_test_module.html#aa260b83f3b60da3e2a29d3715332b6b5", null ],
     [ "TagL", "struct_test_application_1_1_test_module.html#a08bf7306dc58a90c2c3adc8fd82e2320", null ],
     [ "this", "struct_test_application_1_1_test_module.html#ab11d945f364d16b6f1ce86f46ccf9d31", null ]
 ];
