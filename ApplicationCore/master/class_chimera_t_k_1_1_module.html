@@ -164,9 +164,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae95b667831d2fd73d1a1ccf680653da2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#ae95b667831d2fd73d1a1ccf680653da2">operator[]</a> (const std::string &amp;moduleName) const =0</td></tr>
 <tr class="memdesc:ae95b667831d2fd73d1a1ccf680653da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscript operator: Return sub-module of the given name.  <a href="#ae95b667831d2fd73d1a1ccf680653da2">More...</a><br /></td></tr>
 <tr class="separator:ae95b667831d2fd73d1a1ccf680653da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b69b847a580b0c4aa20309a81246b0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#a5b69b847a580b0c4aa20309a81246b0c">submodule</a> (const std::string &amp;moduleName) const</td></tr>
-<tr class="memdesc:a5b69b847a580b0c4aa20309a81246b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function which works similar as the subscript operator [].  <a href="#a5b69b847a580b0c4aa20309a81246b0c">More...</a><br /></td></tr>
-<tr class="separator:a5b69b847a580b0c4aa20309a81246b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7956cea755837779d3d50113083be937"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#a7956cea755837779d3d50113083be937">submodule</a> (std::string_view moduleName) const</td></tr>
+<tr class="memdesc:a7956cea755837779d3d50113083be937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function which works similar as the subscript operator [].  <a href="#a7956cea755837779d3d50113083be937">More...</a><br /></td></tr>
+<tr class="separator:a7956cea755837779d3d50113083be937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eda3b9e2532460a0da859f5cee69f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#a7eda3b9e2532460a0da859f5cee69f95">submodule</a> (std::string_view moduleName)</td></tr>
+<tr class="separator:a7eda3b9e2532460a0da859f5cee69f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9efbb4df2454977ec359f4687fe39f28"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#a9efbb4df2454977ec359f4687fe39f28">virtualise</a> () const =0</td></tr>
 <tr class="memdesc:a9efbb4df2454977ec359f4687fe39f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the virtual version of this module and its sub-modules, i.e.  <a href="#a9efbb4df2454977ec359f4687fe39f28">More...</a><br /></td></tr>
 <tr class="separator:a9efbb4df2454977ec359f4687fe39f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -634,7 +636,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Explcitly add <a class="el" href="class_chimera_t_k_1_1_module.html#aa636a3de904f79c580c68c6fc64f2d3c" title="Explcitly add accept() method so that we can distinguish between a Module and an EntityOwner in the V...">accept()</a> method so that we can distinguish between a <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a> and an <a class="el" href="class_chimera_t_k_1_1_entity_owner.html" title="Base class for owners of other EntityOwners (e.g. ">EntityOwner</a> in the <a class="el" href="class_chimera_t_k_1_1_visitor.html">Visitor</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00154">154</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00155">155</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -716,7 +718,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a2e6036e82c5f3b01bc062ceb431f94bb">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00161">161</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00162">162</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -754,7 +756,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_device_module.html#a54e3bc866064cb19cbc2c6cab5ee9e51">ChimeraTK::DeviceModule</a>.</p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="demo_status_monitor_8cc-example.html#a16">demoStatusMonitor.cc</a>, <a class="el" href="example_2demo_app_8cc-example.html#a23">example/demoApp.cc</a>, <a class="el" href="example2_2demo_app2_8cc-example.html#a17">example2/demoApp2.cc</a>, and <a class="el" href="example2a_2demo_app2a_8cc-example.html#a20">example2a/demoApp2a.cc</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00111">111</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00112">112</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -792,7 +794,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Find <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> owner. </p>
 <p>If "this" is an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a>, "this" is returned. If "this" is a <a class="el" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>, the tree of owners is followed, until the <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> is found. If "this" is neither an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> nor a <a class="el" href="class_chimera_t_k_1_1_variable_group.html">VariableGroup</a>, a ChimeraTK::logic_error is thrown. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00225">225</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00239">239</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -839,7 +841,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a83a34142cea47d7396de8a3657004ef7">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00156">156</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00157">157</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -887,7 +889,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a9a32600fa633b1cd991ba8f2bd3ac6b3">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00159">159</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00160">160</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
@@ -926,7 +928,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#ac9889d98c6076fa8ac966ae5b89ab687">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00134">134</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00135">135</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-18-summary" class="dynsummary" style="display:block;">
@@ -961,7 +963,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00147">147</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00148">148</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 <div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-19-summary" class="dynsummary" style="display:block;">
@@ -1001,7 +1003,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#aa3fc963233d251705cd197ced1aa0876">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00128">128</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00129">129</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 <div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-20-summary" class="dynsummary" style="display:block;">
@@ -1044,7 +1046,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00172">172</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00184">184</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
 <div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-22-summary" class="dynsummary" style="display:block;">
@@ -1092,7 +1094,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a59d02ecae8bc99e76c7561c3ccea946c">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00160">160</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00161">161</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 <div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-24-summary" class="dynsummary" style="display:block;">
@@ -1482,7 +1484,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a5e2a53bcd523efe6546098aec632a60b">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00157">157</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00158">158</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 <div id="dynsection-39" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-39-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-39-summary" class="dynsummary" style="display:block;">
@@ -1529,20 +1531,20 @@ Additional Inherited Members</h2></td></tr>
 <p>Set a new owner. </p>
 <p>The caller has to take care himself that the <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a> gets unregistered with the old owner and registered with the new one. Do not use in user code! </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00145">145</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00146">146</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
-<a id="a5b69b847a580b0c4aa20309a81246b0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b69b847a580b0c4aa20309a81246b0c">&#9670;&nbsp;</a></span>submodule()</h2>
+<a id="a7956cea755837779d3d50113083be937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7956cea755837779d3d50113083be937">&#9670;&nbsp;</a></span>submodule() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> &amp; ChimeraTK::Module::submodule </td>
+          <td class="memname">const <a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> &amp; ChimeraTK::Module::submodule </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>moduleName</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1558,7 +1560,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-41-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-41-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_module_a5b69b847a580b0c4aa20309a81246b0c_cgraph.svg" width="168" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_module_a7956cea755837779d3d50113083be937_cgraph.svg" width="168" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-42" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1566,7 +1568,35 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-42-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-42-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_module_a5b69b847a580b0c4aa20309a81246b0c_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_module_a7956cea755837779d3d50113083be937_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a7eda3b9e2532460a0da859f5cee69f95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eda3b9e2532460a0da859f5cee69f95">&#9670;&nbsp;</a></span>submodule() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> &amp; ChimeraTK::Module::submodule </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>moduleName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00177">177</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
+<div id="dynsection-43" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-43-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-43-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-43-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_module_a7eda3b9e2532460a0da859f5cee69f95_cgraph.svg" width="374" height="76"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1601,11 +1631,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented in <a class="el" href="classlogging_1_1_logging_module.html#a65e49a11677dde2c6ea428d05dd044c1">logging::LoggingModule</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html#a579aa9c73405b593553805db4def3a18">ChimeraTK::DeviceModule</a>, and <a class="el" href="class_chimera_t_k_1_1_application_module.html#a7063da466e760cc5c9838834be08a267">ChimeraTK::ApplicationModule</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00064">64</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
-<div id="dynsection-43" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-43-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-43-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-44" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-44-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-44-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-43-content" class="dyncontent" style="display:none;">
+<div id="dynsection-44-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_module_ae3497a487a36f2e1a51bc01592aabf5b_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1639,11 +1669,11 @@ Additional Inherited Members</h2></td></tr>
 <p>eliminate hierarchies where requested and apply other dynamic model changes. </p>
 
 <p>Implemented in <a class="el" href="class_chimera_t_k_1_1_device_module.html#afab701aa44d472d8f7bba14c8c94b046">ChimeraTK::DeviceModule</a>, <a class="el" href="class_chimera_t_k_1_1_virtual_module.html#abc61ba0a45c257edef5f9a29d5667003">ChimeraTK::VirtualModule</a>, <a class="el" href="class_chimera_t_k_1_1_control_system_module.html#a61be8696270f26ed4e7a8d9fc7d66a03">ChimeraTK::ControlSystemModule</a>, and <a class="el" href="class_chimera_t_k_1_1_module_impl.html#a04d8be278c790e0479a847225d7e1c5f">ChimeraTK::ModuleImpl</a>.</p>
-<div id="dynsection-44" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-44-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-44-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-45" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-45-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-45-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-44-content" class="dyncontent" style="display:none;">
+<div id="dynsection-45-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_module_a9efbb4df2454977ec359f4687fe39f28_icgraph.svg" width="100%" height="501"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1671,19 +1701,19 @@ Additional Inherited Members</h2></td></tr>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="example2_2demo_app2_8cc-example.html#a11">example2/demoApp2.cc</a>, and <a class="el" href="example2a_2demo_app2a_8cc-example.html#a11">example2a/demoApp2a.cc</a>.</dd>
 </dl>
 <p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00130">130</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
-<div id="dynsection-45" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-45-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-45-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-45-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_module_ac91e2a2ce01c0616d57050b229cde5bb_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
 <div id="dynsection-46" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-46-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-46-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-46-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-46-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_module_ac91e2a2ce01c0616d57050b229cde5bb_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-47" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-47-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-47-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-47-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_module_ac91e2a2ce01c0616d57050b229cde5bb_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -1710,19 +1740,19 @@ Additional Inherited Members</h2></td></tr>
 <p>includeReturnChannels determines whether return channels of *InputWB accessors are included in the write. </p>
 
 <p class="definition">Definition at line <a class="el" href="_module_8cc_source.html#l00146">146</a> of file <a class="el" href="_module_8cc_source.html">Module.cc</a>.</p>
-<div id="dynsection-47" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-47-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-47-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-47-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_module_a52547cc6ff2510b82c8c8e281c01b02a_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
 <div id="dynsection-48" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-48-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-48-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-48-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-48-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_module_a52547cc6ff2510b82c8c8e281c01b02a_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-49" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-49-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-49-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-49-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_module_a52547cc6ff2510b82c8c8e281c01b02a_icgraph.svg" width="375" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1752,7 +1782,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Owner of this instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00170">170</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00171">171</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -1766,7 +1796,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_module.html">Module</a></li>
-    <li class="footer">Generated on Sat Apr 24 2021 03:53:55 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Apr 27 2021 03:53:41 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
