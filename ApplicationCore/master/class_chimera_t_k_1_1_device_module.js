@@ -1,7 +1,7 @@
 var class_chimera_t_k_1_1_device_module =
 [
     [ "DeviceError", "struct_chimera_t_k_1_1_device_module_1_1_device_error.html", "struct_chimera_t_k_1_1_device_module_1_1_device_error" ],
-    [ "DeviceModule", "class_chimera_t_k_1_1_device_module.html#a1b4aab628f9b7cfcf631275bc7adf1b6", null ],
+    [ "DeviceModule", "class_chimera_t_k_1_1_device_module.html#a4c01df2c5e8af1bd1300836e5200677d", null ],
     [ "~DeviceModule", "class_chimera_t_k_1_1_device_module.html#a3b3c82b4e2bb69de77e4793764835922", null ],
     [ "DeviceModule", "class_chimera_t_k_1_1_device_module.html#ac981bac0d95b66bfe1f933fc21ace28c", null ],
     [ "addInitialisationHandler", "class_chimera_t_k_1_1_device_module.html#ab30bf1b235913143d45bb5da7d84052c", null ],
@@ -32,6 +32,7 @@ var class_chimera_t_k_1_1_device_module =
     [ "virtualiseFromCatalog", "class_chimera_t_k_1_1_device_module.html#a984e0e97ec34d3f8f05f1eebb28e3acc", null ],
     [ "writeOrder", "class_chimera_t_k_1_1_device_module.html#a442eabee695e8c3b0e0ba2a2b8ff5fab", null ],
     [ "Application", "class_chimera_t_k_1_1_device_module.html#a23f25bcc02a0e94c2f5a4188496b04d0", null ],
+    [ "ConnectingDeviceModule", "class_chimera_t_k_1_1_device_module.html#a8d0a35a00e592fe53e309a10f0736ef9", null ],
     [ "detail::DeviceModuleProxy", "class_chimera_t_k_1_1_device_module.html#a97967a6daa70f9b4246914953a73b0dd", null ],
     [ "ExceptionHandlingDecorator", "class_chimera_t_k_1_1_device_module.html#aa4d68f9b9ae5e4d36e5dc94efc89dcce", null ],
     [ "history::ServerHistory", "class_chimera_t_k_1_1_device_module.html#ab9171bb39053b85717ad350f03cf0f02", null ],

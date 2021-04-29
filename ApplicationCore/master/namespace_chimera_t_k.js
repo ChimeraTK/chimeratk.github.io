@@ -17,6 +17,7 @@ var namespace_chimera_t_k =
     [ "ArrayPushInputWB", "struct_chimera_t_k_1_1_array_push_input_w_b.html", "struct_chimera_t_k_1_1_array_push_input_w_b" ],
     [ "ConfigParser", "class_chimera_t_k_1_1_config_parser.html", "class_chimera_t_k_1_1_config_parser" ],
     [ "ConfigReader", "struct_chimera_t_k_1_1_config_reader.html", "struct_chimera_t_k_1_1_config_reader" ],
+    [ "ConnectingDeviceModule", "class_chimera_t_k_1_1_connecting_device_module.html", "class_chimera_t_k_1_1_connecting_device_module" ],
     [ "ConstantAccessor", "class_chimera_t_k_1_1_constant_accessor.html", "class_chimera_t_k_1_1_constant_accessor" ],
     [ "ConstantAccessorCreator", "struct_chimera_t_k_1_1_constant_accessor_creator.html", "struct_chimera_t_k_1_1_constant_accessor_creator" ],
     [ "ConstantAccessorCreatorImpl", "struct_chimera_t_k_1_1_constant_accessor_creator_impl.html", "struct_chimera_t_k_1_1_constant_accessor_creator_impl" ],

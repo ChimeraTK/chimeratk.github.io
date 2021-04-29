@@ -4,6 +4,8 @@ var searchData=
   ['parsedirectory',['parseDirectory',['../namespacevariable_houseold_to_wiki_table.html#a1f2633619abe4692efa9b01b523a080f',1,'variableHouseoldToWikiTable']]],
   ['parsingerror',['parsingError',['../struct_chimera_t_k_1_1_config_reader.html#a3ed2c844cf00558caac8be694a6ed38b',1,'ChimeraTK::ConfigReader']]],
   ['partial',['Partial',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#ab301b1cc3a50c265c1c4f378d32ee246',1,'FirstHierarchy::TestModule::VarGroup::Partial()'],['../struct_first_hierarchy_1_1_test_module.html#ae1cc4b85913984660d3a0b3e78744b32',1,'FirstHierarchy::TestModule::Partial()'],['../struct_first_hierarchy_1_1_test_module.html#a2dee232cb718ce96311e1ebb0e5d76cd',1,'FirstHierarchy::TestModule::Partial()']]],
+  ['pathindevice',['pathInDevice',['../class_chimera_t_k_1_1_connecting_device_module.html#a0f616edcae119bded50ebb63d0710ff5',1,'ChimeraTK::ConnectingDeviceModule']]],
+  ['pathtoconnectto',['pathToConnectTo',['../class_chimera_t_k_1_1_connecting_device_module.html#a8f46c8574b6dc4c97834dcd98bbf575c',1,'ChimeraTK::ConnectingDeviceModule']]],
   ['pdata',['pdata',['../class_chimera_t_k_1_1_variable_network_node.html#a05d08d8278b1db30d5cb757fd40c5a0a',1,'ChimeraTK::VariableNetworkNode']]],
   ['period',['period',['../struct_chimera_t_k_1_1_periodic_trigger.html#a98719f742b645a3bb1968ebe690ca427',1,'ChimeraTK::PeriodicTrigger']]],
   ['periodictrigger',['PeriodicTrigger',['../struct_chimera_t_k_1_1_periodic_trigger.html',1,'ChimeraTK::PeriodicTrigger'],['../struct_chimera_t_k_1_1_periodic_trigger.html#a9b68c32ebbe186c3e8eb6efba697e605',1,'ChimeraTK::PeriodicTrigger::PeriodicTrigger()']]],

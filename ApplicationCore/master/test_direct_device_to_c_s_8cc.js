@@ -2,6 +2,7 @@ var test_direct_device_to_c_s_8cc =
 [
     [ "TestApplication", "struct_test_application.html", "struct_test_application" ],
     [ "TestApplicationConnectTo", "struct_test_application_connect_to.html", "struct_test_application_connect_to" ],
+    [ "BOOST_NO_EXCEPTIONS", "test_direct_device_to_c_s_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
     [ "BOOST_TEST_MODULE", "test_direct_device_to_c_s_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "test_types", "test_direct_device_to_c_s_8cc.html#aae17d3638073297654152058593b98ec", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_direct_device_to_c_s_8cc.html#a08399741d25e3a09169c4d2aa997dc57", null ],

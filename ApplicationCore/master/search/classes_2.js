@@ -3,6 +3,7 @@ var searchData=
   ['circulardependencydetector',['CircularDependencyDetector',['../struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html',1,'ChimeraTK::Application']]],
   ['configparser',['ConfigParser',['../class_chimera_t_k_1_1_config_parser.html',1,'ChimeraTK']]],
   ['configreader',['ConfigReader',['../struct_chimera_t_k_1_1_config_reader.html',1,'ChimeraTK']]],
+  ['connectingdevicemodule',['ConnectingDeviceModule',['../class_chimera_t_k_1_1_connecting_device_module.html',1,'ChimeraTK']]],
   ['constantaccessor',['ConstantAccessor',['../class_chimera_t_k_1_1_constant_accessor.html',1,'ChimeraTK']]],
   ['constantaccessorcreator',['ConstantAccessorCreator',['../struct_chimera_t_k_1_1_constant_accessor_creator.html',1,'ChimeraTK']]],
   ['constantaccessorcreatorimpl',['ConstantAccessorCreatorImpl',['../struct_chimera_t_k_1_1_constant_accessor_creator_impl.html',1,'ChimeraTK']]],

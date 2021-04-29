@@ -44,6 +44,7 @@ var class_chimera_t_k_1_1_application =
     [ "unregisterDeviceModule", "class_chimera_t_k_1_1_application.html#abbd4a2c1453606fb7b357022fdb35799", null ],
     [ "warnUnconnectedVariables", "class_chimera_t_k_1_1_application.html#af638d687f2d229ab733c48f62f1a8877", null ],
     [ "Accessor", "class_chimera_t_k_1_1_application.html#af6ffd104cd1bfe13fd84f63bcd1c2c44", null ],
+    [ "ConnectingDeviceModule", "class_chimera_t_k_1_1_application.html#a8d0a35a00e592fe53e309a10f0736ef9", null ],
     [ "ControlSystemModule", "class_chimera_t_k_1_1_application.html#a987d65c8265c2cdca7480ca3e9e15771", null ],
     [ "DebugPrintAccessorDecorator", "class_chimera_t_k_1_1_application.html#ae695c6843b4a8363af68d12eb640997e", null ],
     [ "DeviceModule", "class_chimera_t_k_1_1_application.html#af033b26a09f6c807cb8727f4c52385d3", null ],

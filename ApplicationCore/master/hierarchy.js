@@ -213,6 +213,7 @@ var hierarchy =
             [ "VectorModule", "struct_vector_module.html", null ]
           ] ],
           [ "ChimeraTK::ModuleGroup", "class_chimera_t_k_1_1_module_group.html", [
+            [ "ChimeraTK::ConnectingDeviceModule", "class_chimera_t_k_1_1_connecting_device_module.html", null ],
             [ "FirstHierarchy", "struct_first_hierarchy.html", null ],
             [ "FirstHierarchy", "struct_first_hierarchy.html", null ],
             [ "InnerGroup", "struct_inner_group.html", null ],

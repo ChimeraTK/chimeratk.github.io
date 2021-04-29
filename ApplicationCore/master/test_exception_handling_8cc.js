@@ -5,6 +5,7 @@ var test_exception_handling_8cc =
     [ "InputModule", "struct_input_module.html", "struct_input_module" ],
     [ "RealisticModule", "struct_realistic_module.html", "struct_realistic_module" ],
     [ "TestApplication2", "struct_test_application2.html", "struct_test_application2" ],
+    [ "BOOST_NO_EXCEPTIONS", "test_exception_handling_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
     [ "BOOST_TEST_MODULE", "test_exception_handling_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "Fixture", "test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_exception_handling_8cc.html#a33c9f9ebec96166ceec27d4d37889a34", null ],

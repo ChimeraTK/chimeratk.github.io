@@ -35,7 +35,8 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     ] ],
     [ "DeviceModule.h", "_device_module_8h.html", [
       [ "DeviceModule", "class_chimera_t_k_1_1_device_module.html", "class_chimera_t_k_1_1_device_module" ],
-      [ "DeviceError", "struct_chimera_t_k_1_1_device_module_1_1_device_error.html", "struct_chimera_t_k_1_1_device_module_1_1_device_error" ]
+      [ "DeviceError", "struct_chimera_t_k_1_1_device_module_1_1_device_error.html", "struct_chimera_t_k_1_1_device_module_1_1_device_error" ],
+      [ "ConnectingDeviceModule", "class_chimera_t_k_1_1_connecting_device_module.html", "class_chimera_t_k_1_1_connecting_device_module" ]
     ] ],
     [ "EnableXMLGenerator.h", "_enable_x_m_l_generator_8h.html", null ],
     [ "EntityOwner.h", "_entity_owner_8h.html", [
