@@ -3,6 +3,7 @@ var class_chimera_t_k_1_1_doocs_updater =
     [ "ToDoocsUpdateDescriptor", "struct_chimera_t_k_1_1_doocs_updater_1_1_to_doocs_update_descriptor.html", "struct_chimera_t_k_1_1_doocs_updater_1_1_to_doocs_update_descriptor" ],
     [ "~DoocsUpdater", "class_chimera_t_k_1_1_doocs_updater.html#a59282eb42563fb3483756170bda65329", null ],
     [ "addVariable", "class_chimera_t_k_1_1_doocs_updater.html#a90b9cdeafcf5e2ceacef04ecbd891b81", null ],
+    [ "getElementsToRead", "class_chimera_t_k_1_1_doocs_updater.html#a92a3437b66912dea1328333ddecfcb8d", null ],
     [ "run", "class_chimera_t_k_1_1_doocs_updater.html#aafe7082f09c25245074fed216d78c528", null ],
     [ "stop", "class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286", null ],
     [ "update", "class_chimera_t_k_1_1_doocs_updater.html#a47e2fd420a881a64e0ab38d4b4bba5aa", null ],

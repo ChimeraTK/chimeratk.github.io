@@ -15,6 +15,7 @@ var searchData=
   ['getdevicepvmanager',['getDevicePVManager',['../class_chimera_t_k_1_1_doocs_adapter.html#a396057c5005d59f33b94733e86b2948c',1,'ChimeraTK::DoocsAdapter']]],
   ['getdoocsproperties',['getDoocsProperties',['../class_testable_c_s_adapter_eq_fct.html#a41085f984e033bd952ac3ec0032097b8',1,'TestableCSAdapterEqFct']]],
   ['getdoocsproperty',['getDoocsProperty',['../server_based_test_tools_8h.html#acc3ed5bc6386b42ed79d1653c1361f62',1,'serverBasedTestTools.h']]],
+  ['getelementstoread',['getElementsToRead',['../class_chimera_t_k_1_1_doocs_updater.html#a92a3437b66912dea1328333ddecfcb8d',1,'ChimeraTK::DoocsUpdater']]],
   ['gethashistorydefault',['getHasHistoryDefault',['../class_chimera_t_k_1_1_variable_mapper.html#adf790079aada402c1db0ad4e42c16752',1,'ChimeraTK::VariableMapper']]],
   ['getinstance',['getInstance',['../class_chimera_t_k_1_1_variable_mapper.html#ab7359ad69bc42594947748c51ceb8e73',1,'ChimeraTK::VariableMapper']]],
   ['getiswriteabledefault',['getIsWriteableDefault',['../class_chimera_t_k_1_1_variable_mapper.html#aed5f14a453c9d868c26dcedd490b84cf',1,'ChimeraTK::VariableMapper']]],
@@ -22,5 +23,6 @@ var searchData=
   ['getlocationfrompropertyaddress',['getLocationFromPropertyAddress',['../server_based_test_tools_8h.html#ab72e9bb9f1d314e6e36ca2c81c3bf85c',1,'serverBasedTestTools.h']]],
   ['getmacropuslenumbersourcedefault',['getMacroPusleNumberSourceDefault',['../class_chimera_t_k_1_1_variable_mapper.html#a28bf057320a328a6fdfdf0524b9e81fb',1,'ChimeraTK::VariableMapper']]],
   ['getprocessvariablesinthislocation',['getProcessVariablesInThisLocation',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#aa9b14a8983622d4d7757709d8d91e1d3',1,'ChimeraTK::CSAdapterEqFct']]],
-  ['getpropertiesinlocation',['getPropertiesInLocation',['../class_chimera_t_k_1_1_variable_mapper.html#aafbeae678eaa4d6c47fb57444337f47e',1,'ChimeraTK::VariableMapper']]]
+  ['getpropertiesinlocation',['getPropertiesInLocation',['../class_chimera_t_k_1_1_variable_mapper.html#aafbeae678eaa4d6c47fb57444337f47e',1,'ChimeraTK::VariableMapper']]],
+  ['getusedvariables',['getUsedVariables',['../class_chimera_t_k_1_1_variable_mapper.html#a4a095441bcd16d9c5acd0796aa5a9537',1,'ChimeraTK::VariableMapper']]]
 ];

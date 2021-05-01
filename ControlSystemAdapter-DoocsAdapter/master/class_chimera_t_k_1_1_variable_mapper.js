@@ -14,6 +14,7 @@ var class_chimera_t_k_1_1_variable_mapper =
     [ "getLocationAndCode", "class_chimera_t_k_1_1_variable_mapper.html#abd94469f3c6eab5f750539d31300ea9f", null ],
     [ "getMacroPusleNumberSourceDefault", "class_chimera_t_k_1_1_variable_mapper.html#a28bf057320a328a6fdfdf0524b9e81fb", null ],
     [ "getPropertiesInLocation", "class_chimera_t_k_1_1_variable_mapper.html#aafbeae678eaa4d6c47fb57444337f47e", null ],
+    [ "getUsedVariables", "class_chimera_t_k_1_1_variable_mapper.html#a4a095441bcd16d9c5acd0796aa5a9537", null ],
     [ "import", "class_chimera_t_k_1_1_variable_mapper.html#ab9f8eeb70a5daf40e5f5621895165044", null ],
     [ "nodeIsWhitespace", "class_chimera_t_k_1_1_variable_mapper.html#a63889dd4e7107d5e43b9a417f8b2b4a7", null ],
     [ "operator=", "class_chimera_t_k_1_1_variable_mapper.html#addb8b19f9c9e8515a53d7486f4f25b7c", null ],
