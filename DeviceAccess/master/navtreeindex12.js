@@ -1,17 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"struct_counting_decorator.html#a1a849c1c3e778931356175326d2fe531":[18,0,18,1],
-"struct_counting_decorator.html#a25378ac118add8d71116f1a0ecb49d12":[18,0,18,9],
-"struct_counting_decorator.html#a2b36552e49b21ee4e583fffc9239140f":[18,0,18,17],
-"struct_counting_decorator.html#a4580ef470ef7b0488524baf489d06550":[18,0,18,2],
-"struct_counting_decorator.html#a53f76288b61e1f6b721e9019bcd00ffc":[18,0,18,8],
-"struct_counting_decorator.html#a5776c51ee5d0164147707751ce6f0efa":[18,0,18,5],
-"struct_counting_decorator.html#a5a2933829250c27cf1c595adfe223875":[18,0,18,12],
-"struct_counting_decorator.html#a6b9e847b1caf3cad50aef5bef0aa15f5":[18,0,18,6],
-"struct_counting_decorator.html#a7b4b92ae74dc3f3466ad4cb54b254d16":[18,0,18,15],
-"struct_counting_decorator.html#a86505de3b2c8edc75e644b1b4bbee0c7":[18,0,18,0],
-"struct_counting_decorator.html#a8c836afa2a2ab7d09d8bc0047c8a0bff":[18,0,18,16],
-"struct_counting_decorator.html#a99e23eba88a7a57d80997edac7adda81":[18,0,18,7],
 "struct_counting_decorator.html#a9f933e35370a945419faef18478da638":[18,0,18,11],
 "struct_counting_decorator.html#aa26f3382bdb5c9a4852c5dd1010f730d":[18,0,18,19],
 "struct_counting_decorator.html#ac202b330d2212af28f218458ac46025f":[18,0,18,14],
@@ -249,5 +237,17 @@ var NAVTREEINDEX12 =
 "struct_reg_single_word_scaled_twice__push.html#af8b585aaa6a5b8674ecd07a28ddcd86b":[18,0,89,0],
 "struct_reg_variable.html":[18,0,90],
 "struct_reg_variable.html#a2669a8adb17d69e3753a167a9cfba994":[18,0,90,4],
-"struct_reg_variable.html#a5aac18fbb5dca8c5e27c4b898b5be172":[18,0,90,2]
+"struct_reg_variable.html#a5aac18fbb5dca8c5e27c4b898b5be172":[18,0,90,2],
+"struct_reg_variable.html#a5d1c55d686b7c421acf0a0baee2b5dd8":[18,0,90,1],
+"struct_reg_variable.html#a775241f87610112d5670f2101cebbcf0":[18,0,90,0],
+"struct_reg_variable.html#ae757cdc24117cb0cfce0093060ec3e85":[18,0,90,3],
+"struct_reg_variable_as_push_parameter_in_math__var1.html":[18,0,91],
+"struct_reg_variable_as_push_parameter_in_math__var1.html#a7711f7947fa66713bc661b4fc3028831":[18,0,91,2],
+"struct_reg_variable_as_push_parameter_in_math__var1.html#aec99177290fa5514a6169cd85c097d99":[18,0,91,0],
+"struct_reg_variable_as_push_parameter_in_math__var1.html#aef683a321911919c044a938567cb3a2c":[18,0,91,1],
+"struct_reg_variable_as_push_parameter_in_math__var2.html":[18,0,92],
+"struct_reg_variable_as_push_parameter_in_math__var2.html#a04076548dded965ee38e1a0e39458782":[18,0,92,2],
+"struct_reg_variable_as_push_parameter_in_math__var2.html#a721d58c0c16144804d55472de0756529":[18,0,92,1],
+"struct_reg_variable_as_push_parameter_in_math__var2.html#ac08568d92e1d8faf2fc4693a6646f402":[18,0,92,0],
+"struct_reg_variable_as_push_parameter_in_math__x.html":[18,0,93]
 };

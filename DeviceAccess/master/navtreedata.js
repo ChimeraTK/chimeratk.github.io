@@ -97,21 +97,20 @@ var NAVTREEINDEX =
 [
 ".html",
 "_version_number_8cc_source.html",
-"class_chimera_t_k_1_1_device.html#a9ae9661c1f6c71ad6b5ef7baf6149e32",
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html#a59c0c822994c713cb024265ab4b85440",
-"class_chimera_t_k_1_1_numeric_addressed_backend.html#ac9793fa0906c50fe472b871964f54f64",
-"class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html#ac24c3977c5933514ab1bced050a64470",
-"class_chimera_t_k_1_1_subdevice_backend.html#a4cb9be498366d571fd497aa3b50f8f04",
-"class_chimera_t_k_1_1_unified_backend_test.html#a0096a3fc279c9bc1258a56fe5a7f52dd",
-"class_map_file_parser_test.html#a92c0e28a50a1bfe421e3331eb0a6c47b",
-"device__backends_2pcie_2include_2llrfdrv__io__compat_8h.html#a8f61a27ac0aebb17664cd246c3134f66",
-"helper_functions_8h.html",
-"struct_channel_register_descriptor_base.html#a162fc9fa9b333896b4effe0ae8ff22ae",
-"struct_counting_decorator.html#a1a849c1c3e778931356175326d2fe531",
-"struct_reg_variable.html#a5d1c55d686b7c421acf0a0baee2b5dd8",
-"test_device_8cpp.html#aba7302c0bd61a773e5a764177519309a",
-"test_pcie_backend_8cpp.html#a46c3624450dd339bd4ece5181f8da881",
-"util_2include_2_virtual_function_template_8h.html#a9cfaa4375c315e463c69a4f05bb90d94"
+"class_chimera_t_k_1_1_device.html#aa66c2706ddaf02774dc1524cbcf9cbf0",
+"class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a1644e5b74820bbd23009aa98031d3ccd",
+"class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a3f602a21064c360c60e6632f8fd18e8b",
+"class_chimera_t_k_1_1_register_catalogue.html#a7468054b21767fb5403135c2fc37048e",
+"class_chimera_t_k_1_1_subdevice_backend.html#a7f4e065c2951bee366d15aa23a50adf3",
+"class_chimera_t_k_1_1_unified_backend_test.html#a2b0e5e29d93440a1e96610e8155fc8f2",
+"class_map_file_test.html#ac535c64d74b2de4711e46f782a844815",
+"device__backends_2pcie_2include_2pciedev__io_8h.html#a314ade3cefcb60fbf18f80c8eba4b54c",
+"lmap.html#map",
+"struct_chimera_t_k_1_1_device_descriptor.html",
+"struct_counting_decorator.html#a9f933e35370a945419faef18478da638",
+"struct_reg_variable_as_push_parameter_in_math__x.html#a458fb3a391b982a2a1634cd59fcddae7",
+"test_dummy_backend_8cpp.html#a00cf0c52c63ccf932ac6e632309b2d9d",
+"test_pcie_error_handling_8cpp.html#aa4af271ead84b8c1f0cbde70fe23910a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -22,7 +22,5 @@ var test_device_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_device_8cpp.html#a681418ec80915438019ece5419d66727", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_device_8cpp.html#aba7302c0bd61a773e5a764177519309a", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_device_8cpp.html#ae92d491e189ed18a8de40118d8f3a83a", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_device_8cpp.html#a8f8e5e510a6a1969930a0bcf59ca2889", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_device_8cpp.html#ac4290a8f63af100ab5057740ac2f8ab6", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_device_8cpp.html#a935ebdda3c7b54344e338ec47b060bfd", null ]
 ];
