@@ -6,6 +6,7 @@ var class_chimera_t_k_1_1_application_base =
     [ "getPersistentDataStorage", "class_chimera_t_k_1_1_application_base.html#a25aebdb26a0fe2520bbb9989194ea69b", null ],
     [ "getPVManager", "class_chimera_t_k_1_1_application_base.html#a35298f9e9a366164a6789cd691af5cbd", null ],
     [ "initialise", "class_chimera_t_k_1_1_application_base.html#a060c36044735bb3b479940fe9f644a5b", null ],
+    [ "optimiseUnmappedVariables", "class_chimera_t_k_1_1_application_base.html#abd3103d056ea320768e422280ee709f3", null ],
     [ "run", "class_chimera_t_k_1_1_application_base.html#a3a32c70d9576ac03963dbcf2f9f4f34d", null ],
     [ "setPVManager", "class_chimera_t_k_1_1_application_base.html#a408946c453e9c6928c265dac185a87bd", null ],
     [ "shutdown", "class_chimera_t_k_1_1_application_base.html#a5ec279bbc23164f485c3d63b8c1dd012", null ],
