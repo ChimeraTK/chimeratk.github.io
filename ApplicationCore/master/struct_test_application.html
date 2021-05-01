@@ -272,6 +272,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acd050c59340807685052276fb053787a inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a697d4a47ece6750203eecbff97039773 inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a697d4a47ece6750203eecbff97039773">initialise</a> () override</td></tr>
 <tr class="separator:a697d4a47ece6750203eecbff97039773 inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb2d39a3b53e9c19bb2bd9b1d2da0c1 inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a9eb2d39a3b53e9c19bb2bd9b1d2da0c1">optimiseUnmappedVariables</a> (const std::set&lt; std::string &gt; &amp;names) override</td></tr>
+<tr class="separator:a9eb2d39a3b53e9c19bb2bd9b1d2da0c1 inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6815195c956c091a6558a316f8fd9976 inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a6815195c956c091a6558a316f8fd9976">run</a> () override</td></tr>
 <tr class="separator:a6815195c956c091a6558a316f8fd9976 inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c9c06d9a92bfb9f42875faf48771e2d inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a1c9c06d9a92bfb9f42875faf48771e2d">generateXML</a> ()</td></tr>
@@ -1330,7 +1332,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00375">375</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00376">376</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
@@ -1359,7 +1361,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00376">376</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00377">377</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
@@ -1995,9 +1997,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_c_s_network_merging_8cc_source.html#l00020">20</a> of file <a class="el" href="test_c_s_network_merging_8cc_source.html">testCSNetworkMerging.cc</a>.</p>
 
@@ -2029,9 +2031,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_status_module_8cc_source.html#l00024">24</a> of file <a class="el" href="test_status_module_8cc_source.html">testStatusModule.cc</a>.</p>
 
@@ -2063,9 +2065,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_device_exception_flag_propagation_8cc_source.html#l00027">27</a> of file <a class="el" href="test_device_exception_flag_propagation_8cc_source.html">testDeviceExceptionFlagPropagation.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2105,9 +2107,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_hierarchy_modifying_group_8cc_source.html#l00033">33</a> of file <a class="el" href="test_hierarchy_modifying_group_8cc_source.html">testHierarchyModifyingGroup.cc</a>.</p>
 
@@ -2139,9 +2141,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_device_initialisation_handler_8cc_source.html#l00053">53</a> of file <a class="el" href="test_device_initialisation_handler_8cc_source.html">testDeviceInitialisationHandler.cc</a>.</p>
 
@@ -2173,9 +2175,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_direct_device_to_c_s_8cc_source.html#l00054">54</a> of file <a class="el" href="test_direct_device_to_c_s_8cc_source.html">testDirectDeviceToCS.cc</a>.</p>
 
@@ -2207,9 +2209,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_status_aggregator_8cc_source.html#l00055">55</a> of file <a class="el" href="test_status_aggregator_8cc_source.html">testStatusAggregator.cc</a>.</p>
 
@@ -2241,9 +2243,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00061">61</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
 
@@ -2275,9 +2277,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_process_variable_recovery_8cc_source.html#l00064">64</a> of file <a class="el" href="test_process_variable_recovery_8cc_source.html">testProcessVariableRecovery.cc</a>.</p>
 
@@ -2309,9 +2311,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_variable_group_8cc_source.html#l00077">77</a> of file <a class="el" href="test_variable_group_8cc_source.html">testVariableGroup.cc</a>.</p>
 
@@ -2343,9 +2345,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_control_system_accessors_8cc_source.html#l00080">80</a> of file <a class="el" href="test_control_system_accessors_8cc_source.html">testControlSystemAccessors.cc</a>.</p>
 
@@ -2377,9 +2379,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_device_accessors_8cc_source.html#l00081">81</a> of file <a class="el" href="test_device_accessors_8cc_source.html">testDeviceAccessors.cc</a>.</p>
 
@@ -2411,9 +2413,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_app_module_connections_8cc_source.html#l00087">87</a> of file <a class="el" href="test_app_module_connections_8cc_source.html">testAppModuleConnections.cc</a>.</p>
 
@@ -2445,9 +2447,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_find_tag_8cc_source.html#l00088">88</a> of file <a class="el" href="test_find_tag_8cc_source.html">testFindTag.cc</a>.</p>
 
@@ -2479,9 +2481,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_bidirectional_variables_8cc_source.html#l00101">101</a> of file <a class="el" href="test_bidirectional_variables_8cc_source.html">testBidirectionalVariables.cc</a>.</p>
 
@@ -2513,9 +2515,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_trigger_8cc_source.html#l00118">118</a> of file <a class="el" href="test_trigger_8cc_source.html">testTrigger.cc</a>.</p>
 
@@ -2547,9 +2549,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_connect_to_8cc_source.html#l00128">128</a> of file <a class="el" href="test_connect_to_8cc_source.html">testConnectTo.cc</a>.</p>
 
@@ -2581,9 +2583,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_virtual_hierarchy_8cc_source.html#l00130">130</a> of file <a class="el" href="test_virtual_hierarchy_8cc_source.html">testVirtualHierarchy.cc</a>.</p>
 
@@ -2615,9 +2617,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_config_reader_8cc_source.html#l00153">153</a> of file <a class="el" href="test_config_reader_8cc_source.html">testConfigReader.cc</a>.</p>
 
@@ -2649,9 +2651,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00218">218</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
@@ -2683,11 +2685,11 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00378">378</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00379">379</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
@@ -2868,7 +2870,7 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00380">380</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00381">381</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
@@ -2886,7 +2888,7 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00381">381</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00382">382</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
@@ -3367,7 +3369,7 @@ template&lt;typename T&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_test_application.html">TestApplication</a></li>
-    <li class="footer">Generated on Thu Apr 29 2021 03:54:34 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat May 1 2021 03:54:46 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

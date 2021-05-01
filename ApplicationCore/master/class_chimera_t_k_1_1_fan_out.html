@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_fan_out.html',''
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_fan_out__coll__graph.svg" width="375" height="379"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_fan_out__coll__graph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -115,13 +115,16 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_fan_out.html',''
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a594ddb995549aa3b52d3387d43f37084"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fan_out.html#a594ddb995549aa3b52d3387d43f37084">FanOut</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; feedingImpl)</td></tr>
 <tr class="separator:a594ddb995549aa3b52d3387d43f37084"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad97f9dd99f82ffa3e0713863eaee823f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fan_out.html#ad97f9dd99f82ffa3e0713863eaee823f">~FanOut</a> ()</td></tr>
-<tr class="separator:ad97f9dd99f82ffa3e0713863eaee823f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b539e3c2bc584859b3f096b5f7ba164"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fan_out.html#a8b539e3c2bc584859b3f096b5f7ba164">addSlave</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; slave, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &amp;)</td></tr>
 <tr class="memdesc:a8b539e3c2bc584859b3f096b5f7ba164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a slave to the <a class="el" href="class_chimera_t_k_1_1_fan_out.html" title="Base class for several implementations which distribute values from one feeder to multiple consumers...">FanOut</a>.  <a href="#a8b539e3c2bc584859b3f096b5f7ba164">More...</a><br /></td></tr>
 <tr class="separator:a8b539e3c2bc584859b3f096b5f7ba164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3496aa9439055f429a1ed9f86d9d98fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fan_out.html#a3496aa9439055f429a1ed9f86d9d98fa">removeSlave</a> (const boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &amp;slave) override</td></tr>
+<tr class="separator:a3496aa9439055f429a1ed9f86d9d98fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac081b30f6ee324347bfae872d918ea6b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fan_out.html#ac081b30f6ee324347bfae872d918ea6b">interrupt</a> ()</td></tr>
 <tr class="separator:ac081b30f6ee324347bfae872d918ea6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_chimera_t_k_1_1_fan_out_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_fan_out_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_fan_out_base.html">ChimeraTK::FanOutBase</a></td></tr>
+<tr class="memitem:a8b860235b6981eb1e696bcb0536e2f46 inherit pub_methods_class_chimera_t_k_1_1_fan_out_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fan_out_base.html#a8b860235b6981eb1e696bcb0536e2f46">~FanOutBase</a> ()</td></tr>
+<tr class="separator:a8b860235b6981eb1e696bcb0536e2f46 inherit pub_methods_class_chimera_t_k_1_1_fan_out_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -164,36 +167,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00028">28</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
-
-</div>
-</div>
-<a id="ad97f9dd99f82ffa3e0713863eaee823f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad97f9dd99f82ffa3e0713863eaee823f">&#9670;&nbsp;</a></span>~FanOut()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UserType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="class_chimera_t_k_1_1_fan_out.html">ChimeraTK::FanOut</a>&lt; UserType &gt;::~<a class="el" href="class_chimera_t_k_1_1_fan_out.html">FanOut</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00030">30</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00035">35</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
 
 </div>
 </div>
@@ -239,7 +213,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_threaded_fan_out_with_return.html#a904e889933a4f134f0535ca21a47be29">ChimeraTK::ThreadedFanOutWithReturn&lt; UserType &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#ab543f8100799a049314e8989d50eafc6">ChimeraTK::FeedingFanOut&lt; UserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00034">34</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00039">39</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -278,7 +252,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#ad72378ffc301674a52f6d07a2a40f130">ChimeraTK::FeedingFanOut&lt; UserType &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_consuming_fan_out.html#a17df2a36e786db38c7194d9546b93610">ChimeraTK::ConsumingFanOut&lt; UserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00059">59</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00081">81</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -287,6 +261,38 @@ template&lt;typename UserType &gt; </div>
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_fan_out_ac081b30f6ee324347bfae872d918ea6b_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
+
+</div>
+</div>
+<a id="a3496aa9439055f429a1ed9f86d9d98fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3496aa9439055f429a1ed9f86d9d98fa">&#9670;&nbsp;</a></span>removeSlave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_fan_out.html">ChimeraTK::FanOut</a>&lt; UserType &gt;::removeSlave </td>
+          <td>(</td>
+          <td class="paramtype">const boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &amp;&#160;</td>
+          <td class="paramname"><em>slave</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_fan_out_base.html#a8c9305cd266f0fd84a493bfae9f9cb4f">ChimeraTK::FanOutBase</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00064">64</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
 
 </div>
 </div>
@@ -313,7 +319,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00073">73</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00095">95</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +345,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00075">75</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00097">97</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
 
 </div>
 </div>
@@ -353,7 +359,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_fan_out.html">FanOut</a></li>
-    <li class="footer">Generated on Thu Apr 29 2021 03:54:35 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat May 1 2021 03:54:47 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

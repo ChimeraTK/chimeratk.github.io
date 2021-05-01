@@ -124,6 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acd050c59340807685052276fb053787a inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a697d4a47ece6750203eecbff97039773 inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a697d4a47ece6750203eecbff97039773">initialise</a> () override</td></tr>
 <tr class="separator:a697d4a47ece6750203eecbff97039773 inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb2d39a3b53e9c19bb2bd9b1d2da0c1 inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a9eb2d39a3b53e9c19bb2bd9b1d2da0c1">optimiseUnmappedVariables</a> (const std::set&lt; std::string &gt; &amp;names) override</td></tr>
+<tr class="separator:a9eb2d39a3b53e9c19bb2bd9b1d2da0c1 inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6815195c956c091a6558a316f8fd9976 inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a6815195c956c091a6558a316f8fd9976">run</a> () override</td></tr>
 <tr class="separator:a6815195c956c091a6558a316f8fd9976 inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c9c06d9a92bfb9f42875faf48771e2d inherit pub_methods_class_chimera_t_k_1_1_application"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html#a1c9c06d9a92bfb9f42875faf48771e2d">generateXML</a> ()</td></tr>
@@ -594,9 +596,9 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Define the connections between process variables. </p>
-<p>Must be implemented by the application developer. </p>
+<p>Can be implemented by the application developer. The default implementation will connect the entire application with the control system (virtual hierarchy). </p>
 
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_application.html#a65225062b04c9389b1ae0a4cb7f1b6f7">ChimeraTK::Application</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application.html#ab770876d2aa67d7a13d25aa9b4350d22">ChimeraTK::Application</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test_test_facilities_8cc_source.html#l00234">234</a> of file <a class="el" href="test_test_facilities_8cc_source.html">testTestFacilities.cc</a>.</p>
 
@@ -648,7 +650,7 @@ template&lt;typename T&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_polling_test_application.html">PollingTestApplication</a></li>
-    <li class="footer">Generated on Thu Apr 29 2021 03:54:34 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat May 1 2021 03:54:46 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

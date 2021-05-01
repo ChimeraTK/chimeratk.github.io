@@ -32,6 +32,7 @@ var namespace_chimera_t_k =
     [ "ExactMonitor", "struct_chimera_t_k_1_1_exact_monitor.html", "struct_chimera_t_k_1_1_exact_monitor" ],
     [ "ExceptionHandlingDecorator", "class_chimera_t_k_1_1_exception_handling_decorator.html", "class_chimera_t_k_1_1_exception_handling_decorator" ],
     [ "FanOut", "class_chimera_t_k_1_1_fan_out.html", "class_chimera_t_k_1_1_fan_out" ],
+    [ "FanOutBase", "class_chimera_t_k_1_1_fan_out_base.html", "class_chimera_t_k_1_1_fan_out_base" ],
     [ "FeedingFanOut", "class_chimera_t_k_1_1_feeding_fan_out.html", "class_chimera_t_k_1_1_feeding_fan_out" ],
     [ "FixedLimitValue", "struct_chimera_t_k_1_1_fixed_limit_value.html", "struct_chimera_t_k_1_1_fixed_limit_value" ],
     [ "FunctorFill", "struct_chimera_t_k_1_1_functor_fill.html", "struct_chimera_t_k_1_1_functor_fill" ],

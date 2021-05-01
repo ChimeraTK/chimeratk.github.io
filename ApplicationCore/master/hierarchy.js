@@ -262,10 +262,12 @@ var hierarchy =
         [ "ChimeraTK::VirtualModule", "class_chimera_t_k_1_1_virtual_module.html", null ]
       ] ]
     ] ],
-    [ "ChimeraTK::FanOut< UserType >", "class_chimera_t_k_1_1_fan_out.html", [
-      [ "ChimeraTK::ConsumingFanOut< UserType >", "class_chimera_t_k_1_1_consuming_fan_out.html", null ],
-      [ "ChimeraTK::FeedingFanOut< UserType >", "class_chimera_t_k_1_1_feeding_fan_out.html", null ],
-      [ "ChimeraTK::ThreadedFanOut< UserType >", "class_chimera_t_k_1_1_threaded_fan_out.html", null ]
+    [ "ChimeraTK::FanOutBase", "class_chimera_t_k_1_1_fan_out_base.html", [
+      [ "ChimeraTK::FanOut< UserType >", "class_chimera_t_k_1_1_fan_out.html", [
+        [ "ChimeraTK::ConsumingFanOut< UserType >", "class_chimera_t_k_1_1_consuming_fan_out.html", null ],
+        [ "ChimeraTK::FeedingFanOut< UserType >", "class_chimera_t_k_1_1_feeding_fan_out.html", null ],
+        [ "ChimeraTK::ThreadedFanOut< UserType >", "class_chimera_t_k_1_1_threaded_fan_out.html", null ]
+      ] ]
     ] ],
     [ "Fixture_noTestableMode", "struct_fixture__no_testable_mode.html", null ],
     [ "Fixture_testFacility", "struct_fixture__test_facility.html", null ],
