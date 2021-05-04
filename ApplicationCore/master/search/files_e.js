@@ -25,6 +25,7 @@ var searchData=
   ['testinitialvaluespecd8_2ecc',['testInitialValueSpecD8.cc',['../test_initial_value_spec_d8_8cc.html',1,'']]],
   ['testlogging_2ecc',['testLogging.cc',['../test_logging_8cc.html',1,'']]],
   ['testmodules_2ecc',['testModules.cc',['../test_modules_8cc.html',1,'']]],
+  ['testoptimiseunmappedvariables_2ecc',['testOptimiseUnmappedVariables.cc',['../test_optimise_unmapped_variables_8cc.html',1,'']]],
   ['testprocessvariablerecovery_2ecc',['testProcessVariableRecovery.cc',['../test_process_variable_recovery_8cc.html',1,'']]],
   ['testpropagatedatafaultflag_2ecc',['testPropagateDataFaultFlag.cc',['../test_propagate_data_fault_flag_8cc.html',1,'']]],
   ['teststatusaggregator_2ecc',['testStatusAggregator.cc',['../test_status_aggregator_8cc.html',1,'']]],

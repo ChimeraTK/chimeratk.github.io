@@ -6,7 +6,7 @@ var searchData=
   ['pathtoconnectto',['pathToConnectTo',['../class_chimera_t_k_1_1_connecting_device_module.html#a8f46c8574b6dc4c97834dcd98bbf575c',1,'ChimeraTK::ConnectingDeviceModule']]],
   ['pdata',['pdata',['../class_chimera_t_k_1_1_variable_network_node.html#a05d08d8278b1db30d5cb757fd40c5a0a',1,'ChimeraTK::VariableNetworkNode']]],
   ['period',['period',['../struct_chimera_t_k_1_1_periodic_trigger.html#a98719f742b645a3bb1968ebe690ca427',1,'ChimeraTK::PeriodicTrigger']]],
-  ['pipe',['pipe',['../struct_test_app.html#a053ea51131d3752ebb3894b190f973be',1,'TestApp']]],
+  ['pipe',['pipe',['../struct_test_app.html#a053ea51131d3752ebb3894b190f973be',1,'TestApp::pipe()'],['../struct_test_app.html#a9ccacf2a3513981e1240cd89a5b74679',1,'TestApp::pipe()']]],
   ['poll',['poll',['../struct_polling_read_module.html#ab91956a91e789f400c507c6c304a70e1',1,'PollingReadModule']]],
   ['pollingreadmodule',['pollingReadModule',['../struct_polling_test_application.html#aa8a12ed184d33c00bcebd5913690db83',1,'PollingTestApplication']]],
   ['pollinput',['pollInput',['../struct_poll_module.html#ad7f22c4afc89672e139ca41b0b0b66fa',1,'PollModule']]],

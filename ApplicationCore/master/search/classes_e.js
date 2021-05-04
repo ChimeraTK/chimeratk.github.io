@@ -32,6 +32,7 @@ var searchData=
   ['scalaroutputpushrb',['ScalarOutputPushRB',['../struct_chimera_t_k_1_1_scalar_output_push_r_b.html',1,'ChimeraTK']]],
   ['scalaroutputpushrb_3c_20double_20_3e',['ScalarOutputPushRB&lt; double &gt;',['../struct_chimera_t_k_1_1_scalar_output_push_r_b.html',1,'ChimeraTK']]],
   ['scalarpipe',['ScalarPipe',['../struct_chimera_t_k_1_1_scalar_pipe.html',1,'ChimeraTK']]],
+  ['scalarpipe_3c_20double_20_3e',['ScalarPipe&lt; double &gt;',['../struct_chimera_t_k_1_1_scalar_pipe.html',1,'ChimeraTK']]],
   ['scalarpipe_3c_20std_3a_3astring_20_3e',['ScalarPipe&lt; std::string &gt;',['../struct_chimera_t_k_1_1_scalar_pipe.html',1,'ChimeraTK']]],
   ['scalarpollinput',['ScalarPollInput',['../struct_chimera_t_k_1_1_scalar_poll_input.html',1,'ChimeraTK']]],
   ['scalarpollinput_3c_20double_20_3e',['ScalarPollInput&lt; double &gt;',['../struct_chimera_t_k_1_1_scalar_poll_input.html',1,'ChimeraTK']]],
