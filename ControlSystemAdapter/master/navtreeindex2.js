@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"struct_typed_p_v_holder.html#ae664d9db3be89457c11e16dc1ba3d6e3":[2,0,31,0],
+"struct_typed_p_v_holder.html#ae785c524565140823a19d11a049c229a":[2,0,31,3],
 "struct_typed_p_v_holder.html#aee3601a1a61bfae272f97c714bf574c5":[2,0,31,2],
 "struct_unidir_polled_sender.html":[2,0,32],
 "struct_unidir_polled_sender.html#a1e8f90e952809f65482694fca5130ff5":[2,0,32,1],
