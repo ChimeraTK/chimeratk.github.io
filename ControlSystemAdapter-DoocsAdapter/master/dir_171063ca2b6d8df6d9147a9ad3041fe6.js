@@ -1,6 +1,7 @@
 var dir_171063ca2b6d8df6d9147a9ad3041fe6 =
 [
     [ "serverTestAutoCreateLocations.cpp", "server_test_auto_create_locations_8cpp.html", "server_test_auto_create_locations_8cpp" ],
+    [ "serverTestCallOptimiseUnmappedVariables.cpp", "server_test_call_optimise_unmapped_variables_8cpp.html", "server_test_call_optimise_unmapped_variables_8cpp" ],
     [ "serverTestDataMatching.cpp", "server_test_data_matching_8cpp.html", "server_test_data_matching_8cpp" ],
     [ "serverTestErrorFlag.cpp", "server_test_error_flag_8cpp.html", "server_test_error_flag_8cpp" ],
     [ "serverTestGlobalTurnOnOffHistory.cpp", "server_test_global_turn_on_off_history_8cpp.html", "server_test_global_turn_on_off_history_8cpp" ],

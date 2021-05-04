@@ -4,6 +4,7 @@ var searchData=
   ['sendtodevice',['sendToDevice',['../class_chimera_t_k_1_1_doocs_process_array.html#abae2235e5e58a63afb9049b56e79bea9',1,'ChimeraTK::DoocsProcessArray::sendToDevice()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a82a1c3ef4e19443909353485811dff6a',1,'ChimeraTK::DoocsSpectrum::sendToDevice()'],['../class_testable_doocs_spectrum.html#a9eddaf724a081b996ad683e79d176693',1,'TestableDoocsSpectrum::sendToDevice()']]],
   ['serverbasedtesttools_2eh',['serverBasedTestTools.h',['../server_based_test_tools_8h.html',1,'']]],
   ['servertestautocreatelocations_2ecpp',['serverTestAutoCreateLocations.cpp',['../server_test_auto_create_locations_8cpp.html',1,'']]],
+  ['servertestcalloptimiseunmappedvariables_2ecpp',['serverTestCallOptimiseUnmappedVariables.cpp',['../server_test_call_optimise_unmapped_variables_8cpp.html',1,'']]],
   ['servertestdatamatching_2ecpp',['serverTestDataMatching.cpp',['../server_test_data_matching_8cpp.html',1,'']]],
   ['servertesterrorflag_2ecpp',['serverTestErrorFlag.cpp',['../server_test_error_flag_8cpp.html',1,'']]],
   ['servertestglobalturnonoffhistory_2ecpp',['serverTestGlobalTurnOnOffHistory.cpp',['../server_test_global_turn_on_off_history_8cpp.html',1,'']]],
