@@ -1,0 +1,806 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>mtca4u &#8212; mtca4uPy  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for mtca4u</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">mtca4udeviceaccess</span>
+<span class="kn">import</span> <span class="nn">numpy</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">__version__</span> <span class="o">=</span> <span class="s2">&quot;02.00.00&quot;</span>
+
+<span class="c1"># http://stackoverflow.com/questions/4219717/how-to-assert-output-with-nosetest-unittest-in-python</span>
+
+
+<div class="viewcode-block" id="get_info"><a class="viewcode-back" href="../mtca4u.html#mtca4u.get_info">[docs]</a><span class="k">def</span> <span class="nf">get_info</span><span class="p">(</span><span class="n">outputStream</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot; prints details about the module and the deviceaccess library</span>
+<span class="sd">  against which it was linked</span>
+
+<span class="sd">  Parameters</span>
+<span class="sd">  ----------</span>
+<span class="sd">  outputStream: optional</span>
+<span class="sd">    default: sys.stdout</span>
+
+<span class="sd">  Returns</span>
+<span class="sd">  -------</span>
+
+<span class="sd">  Examples</span>
+<span class="sd">  --------</span>
+<span class="sd">  &gt;&gt;&gt; import mtca4u</span>
+<span class="sd">  &gt;&gt;&gt; mtca4u.get_info()</span>
+<span class="sd">  mtca4uPy v02.00.00, linked with mtca4u-deviceaccess v$ChimeraTK-DeviceAccess_VERSION}</span>
+
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="n">outputStream</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;mtca4uPy v02.00.00, linked with mtca4u-deviceaccess v02.02focal2&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="set_dmap_location"><a class="viewcode-back" href="../mtca4u.html#mtca4u.set_dmap_location">[docs]</a><span class="k">def</span> <span class="nf">set_dmap_location</span><span class="p">(</span><span class="n">dmapFileLocation</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot; Sets the location of the dmap file to use</span>
+
+<span class="sd">  The library will check the user specified device Alias names (when creating</span>
+<span class="sd">  devices) in this dmap file. Once set, the library will look at this dmap file</span>
+<span class="sd">  through out the program lifetime. This is true until a new dmap file is</span>
+<span class="sd">  set again using set_dmap_location</span>
+
+<span class="sd">  Parameters</span>
+<span class="sd">  ----------</span>
+<span class="sd">  dmapFileLocation: string</span>
+<span class="sd">    Path to the desired dmap file.</span>
+
+<span class="sd">  Returns</span>
+<span class="sd">  -------</span>
+
+<span class="sd">  Examples</span>
+<span class="sd">  --------</span>
+<span class="sd">    &gt;&gt;&gt; import mtca4u</span>
+<span class="sd">    &gt;&gt;&gt; mtca4u.set_dmap_location(&quot;../my_example_dmap_file.dmap&quot;)</span>
+<span class="sd">    &gt;&gt;&gt; device = mtca4u.Device(&quot;my_card&quot;) # my_card is a alias in my_example_dmap_file.dmap</span>
+
+<span class="sd">  See Also</span>
+<span class="sd">  --------</span>
+<span class="sd">  get_dmap_location: View the current dmap file which the library uses for device name (alias) lookup.</span>
+<span class="sd">  Device : Open device using specified alias names or using device id and mapfile</span>
+
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="c1">#os.environ[&quot;DMAP_FILE&quot;] = dmapFileLocation</span>
+  <span class="n">mtca4udeviceaccess</span><span class="o">.</span><span class="n">setDmapFile</span><span class="p">(</span><span class="n">dmapFileLocation</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="get_dmap_location"><a class="viewcode-back" href="../mtca4u.html#mtca4u.get_dmap_location">[docs]</a><span class="k">def</span> <span class="nf">get_dmap_location</span><span class="p">():</span>
+  <span class="sd">&quot;&quot;&quot; Get the dmap file which is currently in use by the library.</span>
+
+<span class="sd">  Method returns the file path of the dmap file the library currently uses.</span>
+<span class="sd">  This is the dmap file the library uses to look up the device name(alias) and</span>
+<span class="sd">  its details</span>
+
+<span class="sd">  Parameters</span>
+<span class="sd">  ----------</span>
+
+<span class="sd">  Returns</span>
+<span class="sd">  -------</span>
+<span class="sd">  string: File path of the dmap file the library currently uses.</span>
+
+<span class="sd">  Examples</span>
+<span class="sd">  --------</span>
+<span class="sd">    &gt;&gt;&gt; import mtca4u</span>
+<span class="sd">    &gt;&gt;&gt; mtca4u.set_dmap_location(&quot;../my_example_dmap_file.dmap&quot;)</span>
+<span class="sd">    &gt;&gt;&gt; dmapPath = mtca4u.get_dmap_location()</span>
+<span class="sd">    &gt;&gt;&gt; print dmapPath # prints &#39;../my_example_dmap_file.dmap&#39;</span>
+
+<span class="sd">  See Also</span>
+<span class="sd">  --------</span>
+<span class="sd">  set_dmap_location : set dmap file path for the library.</span>
+<span class="sd">  Device : Open device using specified alias names or using device id and mapfile</span>
+
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="k">return</span> <span class="n">mtca4udeviceaccess</span><span class="o">.</span><span class="n">getDmapFile</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="Device"><a class="viewcode-back" href="../mtca4u.html#mtca4u.Device">[docs]</a><span class="k">class</span> <span class="nc">Device</span><span class="p">:</span>
+  <span class="sd">&quot;&quot;&quot; Construct Device from user provided device information</span>
+
+<span class="sd">  This constructor is used to open a device listed in the dmap file.</span>
+
+<span class="sd">  Parameters</span>
+<span class="sd">  ----------</span>
+<span class="sd">  alias : str</span>
+<span class="sd">    The device alias/name in the dmap file for the hardware</span>
+
+<span class="sd">  Examples</span>
+<span class="sd">  --------</span>
+<span class="sd">  Creating a device using dmap file:</span>
+<span class="sd">    &gt;&gt;&gt; import mtca4u</span>
+<span class="sd">    &gt;&gt;&gt; mtca4u.set_dmap_location(&quot;../my_example_dmap_file.dmap&quot;)</span>
+<span class="sd">    &gt;&gt;&gt; device = mtca4u.Device(&quot;my_card&quot;) # my_card is a alias in my_example_dmap_file.dmap</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="c1"># define a dictiWe do not wantonary to hold multiplexed data accessors</span>
+    <span class="c1"># TODO: Limit the number of entries this dictionary can hold,</span>
+    <span class="c1"># We do not want to hold on to too much ram</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">__accsessor_dictionary</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+      <span class="n">deviceFile</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+      <span class="n">mapFile</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">__printDeprecationWarning</span><span class="p">(</span><span class="n">deviceFile</span><span class="p">,</span> <span class="n">mapFile</span><span class="p">)</span>
+      <span class="k">raise</span> <span class="ne">SyntaxError</span><span class="p">(</span><span class="s2">&quot;Syntax error.&quot;</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+      <span class="n">cardAlias</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span> <span class="o">=</span> <span class="n">mtca4udeviceaccess</span><span class="o">.</span><span class="n">createDevice</span><span class="p">(</span><span class="n">cardAlias</span><span class="p">)</span>
+
+    <span class="k">else</span><span class="p">:</span>
+      <span class="k">raise</span> <span class="ne">SyntaxError</span><span class="p">(</span><span class="s2">&quot;Syntax Error: please see help(mtca4u.Device) for usage instructions.&quot;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Device.read"><a class="viewcode-back" href="../mtca4u.html#mtca4u.Device.read">[docs]</a>  <span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">moduleName</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">registerName</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numberOfElementsToRead</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="n">elementIndexInRegister</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">registerPath</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Reads out Fixed point converted values from the opened device</span>
+
+<span class="sd">    This method uses the map file to return Fixed Point converted values from a</span>
+<span class="sd">    register. It can read the whole register or an arbitary number of register</span>
+<span class="sd">    elements. Data can also be read from an offset within the register (through</span>
+<span class="sd">    the &#39;elementIndexInRegister&#39; parameter).</span>
+
+<span class="sd">    .. note::     Both moduleName and registerName parameters are ignored when</span>
+<span class="sd">                  registerPath is provided.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    moduleName : str, optional</span>
+<span class="sd">      The name of the device module to which the register belongs to. If the</span>
+<span class="sd">      register is not contained in a  module, then provide an empty string as</span>
+<span class="sd">      the parameter value.</span>
+
+<span class="sd">    registerName : str, optional</span>
+<span class="sd">      The name of the register to read from.</span>
+
+<span class="sd">    numberOfElementsToRead : int, optional</span>
+<span class="sd">      Specifies the number of register elements that should</span>
+<span class="sd">      be read out. The width and fixed point representation of the register</span>
+<span class="sd">      element are internally obtained from the map file.</span>
+
+<span class="sd">      The method returns all elements in the register if this parameter is</span>
+<span class="sd">      ommitted or when its value is set as 0.</span>
+
+<span class="sd">      If the value provided as this parameter exceeds the register size, an</span>
+<span class="sd">      array with all elements upto the last element is returned</span>
+
+<span class="sd">    elementIndexInRegister : int, optional</span>
+<span class="sd">      This is a zero indexed offset from the first element of the register. When</span>
+<span class="sd">      an elementIndexInRegister parameter is specified, the method reads out</span>
+<span class="sd">      elements starting from this element index. The elemnt at the index</span>
+<span class="sd">      position is included in the read as well.</span>
+
+<span class="sd">    registerPath : str, optional</span>
+<span class="sd">      When provided, it takes precedences over moduleName and registerName for</span>
+<span class="sd">      location lookup.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    readoutValues: numpy.array, dtype == numpy.float64</span>
+<span class="sd">      The return type for the method is a 1-Dimensional numpy array with</span>
+<span class="sd">      datatype numpy.float64. The returned numpy.array would either contain all</span>
+<span class="sd">      elements in the register or only the number specified by the</span>
+<span class="sd">      numberOfElementsToRead parameter</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    register &quot;WORD_STATUS&quot; is 1 element long..</span>
+<span class="sd">      &gt;&gt;&gt; import mtca4u</span>
+<span class="sd">      &gt;&gt;&gt; mtca4u.set_dmap_location(&quot;../my_example_dmap_file.dmap&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; boardWithModules = mtca4u.Device(&quot;device_name&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; boardWithModules.read(&quot;BOARD&quot;, &quot;WORD_STATUS&quot;)</span>
+<span class="sd">      array([15.0], dtype=float64)</span>
+<span class="sd">      &gt;&gt;&gt; boardWithModules.read(registerPath=&quot;/BOARD/WORD_STATUS&quot;)</span>
+<span class="sd">      array([15.0], dtype=float64)</span>
+
+
+<span class="sd">    register &quot;WORD_CLK_MUX&quot; is 4 elements long.</span>
+<span class="sd">      &gt;&gt;&gt; import mtca4u</span>
+<span class="sd">      &gt;&gt;&gt; device = mtca4u.Device(&quot;device_name&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; device.read(&quot;&quot;, &quot;WORD_CLK_MUX&quot;)</span>
+<span class="sd">      array([15.0, 14.0, 13.0, 12.0], dtype=float64)</span>
+<span class="sd">      &gt;&gt;&gt; device.read(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, 0)</span>
+<span class="sd">      array([15.0, 14.0, 13.0, 12.0], dtype=float64)</span>
+<span class="sd">    read out select number of elements from specified locations:</span>
+<span class="sd">      &gt;&gt;&gt; device.read(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, 1)</span>
+<span class="sd">      array([15.0], dtype=float64)</span>
+<span class="sd">      &gt;&gt;&gt; device.read(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, 1, 2 )</span>
+<span class="sd">      array([13.0], dtype=float64)</span>
+<span class="sd">      &gt;&gt;&gt; device.read(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, 0, 2 )</span>
+<span class="sd">      array([13.0, 12.0], dtype=float64)</span>
+<span class="sd">      &gt;&gt;&gt; device.read(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, 5, 2 )</span>
+<span class="sd">      array([13.0, 12.0], dtype=float64)</span>
+<span class="sd">      &gt;&gt;&gt; device.read(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, numberOfElementsToRead=1, elementIndexInRegister=2 )</span>
+<span class="sd">      array([13.0], dtype=float64)</span>
+<span class="sd">      &gt;&gt;&gt; device.read(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, elementIndexInRegister=2 )</span>
+<span class="sd">      array([13.0, 12.0], dtype=float64)</span>
+
+
+<span class="sd">    See Also</span>
+<span class="sd">    --------</span>
+<span class="sd">    Device.read_raw : Read in &#39;raw&#39; bit values from a device register</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">registerPath</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">registerPath</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">moduleName</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">registerName</span>
+    <span class="n">registerAccessor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">get1DAccessor_double</span><span class="p">(</span><span class="n">registerPath</span><span class="p">,</span>
+                                                                <span class="n">numberOfElementsToRead</span><span class="p">,</span>
+                                                                <span class="n">elementIndexInRegister</span><span class="p">)</span>
+
+    <span class="n">registerSize</span> <span class="o">=</span> <span class="n">registerAccessor</span><span class="o">.</span><span class="n">getNumElements</span><span class="p">();</span>
+    <span class="n">array</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">registerSize</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">double</span><span class="p">)</span>
+    <span class="n">registerAccessor</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">array</span></div>
+
+<div class="viewcode-block" id="Device.write"><a class="viewcode-back" href="../mtca4u.html#mtca4u.Device.write">[docs]</a>  <span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">moduleName</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">registerName</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">dataToWrite</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">elementIndexInRegister</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">registerPath</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Sets data into a desired register</span>
+
+<span class="sd">    This method writes values into a register on the board. The method</span>
+<span class="sd">    internally uses a fixed point converter that is aware of the register width</span>
+<span class="sd">    on the device and its fractional representation. This Fixed point converter</span>
+<span class="sd">    converts the input into corresponding Fixed Point representaions that fit</span>
+<span class="sd">    into the decive register.</span>
+
+<span class="sd">    .. note::     Both moduleName and registerName parameters are ignored when</span>
+<span class="sd">                  registerPath is provided.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    moduleName : str, optional</span>
+<span class="sd">      The name of the device module which has the register to write into.</span>
+<span class="sd">      If module name is not applicable to the register, then provide an empty</span>
+<span class="sd">      string as the parameter value.</span>
+
+<span class="sd">    registerName : str, optional</span>
+<span class="sd">      Mapped name of the register to write to</span>
+
+<span class="sd">    dataToWrite : int, float, \</span>
+<span class="sd">    list of int/float, numpy.array(dtype numpy.float32/64), \</span>
+<span class="sd">    numpy.array(dtype = numpy.int32/64)</span>
+<span class="sd">      The data to be written in to the register. it may be a numpy.float32/64 or a</span>
+<span class="sd">      numpy.int32/64 array or a list with int or float values . Each value in this</span>
+<span class="sd">      array represents an induvidual element of the register. dataToWrite may also</span>
+<span class="sd">      take on int/float type when single vaues are passesed</span>
+
+<span class="sd">    elementIndexInRegister : int, optional</span>
+<span class="sd">      This is a zero indexed offset from the first element of the register. When</span>
+<span class="sd">      an elementIndexInRegister parameter is specified, the method starts the</span>
+<span class="sd">      write from this index</span>
+
+<span class="sd">    registerPath : str, optional</span>
+<span class="sd">      When provided, it takes precedences over moduleName and registerName for</span>
+<span class="sd">      location lookup.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    register &quot;WORD_STATUS&quot; is 1 element long and belongs to module &quot;BOARD&quot;.</span>
+<span class="sd">      &gt;&gt;&gt; import mtca4u</span>
+<span class="sd">      &gt;&gt;&gt; mtca4u.set_dmap_location(&quot;../my_example_dmap_file.dmap&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; boardWithModules = mtca4u.Device(&quot;device_name&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; boardWithModules.write(&quot;BOARD&quot;, &quot;WORD_STATUS&quot;, 15)</span>
+<span class="sd">      &gt;&gt;&gt; boardWithModules.write(&quot;BOARD&quot;, &quot;WORD_STATUS&quot;, 15.0)</span>
+<span class="sd">      &gt;&gt;&gt; boardWithModules.write(&quot;BOARD&quot;, &quot;WORD_STATUS&quot;, [15])</span>
+<span class="sd">      &gt;&gt;&gt; boardWithModules.write(&quot;BOARD&quot;, &quot;WORD_STATUS&quot;, [15.0])</span>
+
+<span class="sd">      &gt;&gt;&gt; boardWithModules.write(registerPath = &quot;/BOARD/WORD_STATUS&quot;,</span>
+<span class="sd">                                 dataToWrite = [15.0])</span>
+
+<span class="sd">      &gt;&gt;&gt; dataToWrite = numpy.array([15.0])</span>
+<span class="sd">      &gt;&gt;&gt; boardWithModules.write(&quot;BOARD&quot;, &quot;WORD_STATUS&quot;, dataToWrite)</span>
+
+<span class="sd">    register &quot;WORD_CLK_MUX&quot; is 4 elements long.</span>
+<span class="sd">      &gt;&gt;&gt; import mtca4u</span>
+<span class="sd">      &gt;&gt;&gt; mtca4u.set_dmap_location(&quot;../my_example_dmap_file.dmap&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; device = mtca4u.Device(&quot;device_name&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; dataToWrite = numpy.array([15.0, 14.0, 13.0, 12.0])</span>
+<span class="sd">      &gt;&gt;&gt; device.write(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, dataToWrite)</span>
+<span class="sd">      &gt;&gt;&gt; dataToWrite = numpy.array([13, 12])</span>
+<span class="sd">      &gt;&gt;&gt; device.write(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, dataToWrite, 2)</span>
+<span class="sd">      &gt;&gt;&gt; device.write(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, 2.78) # writes value to first element of register</span>
+<span class="sd">      &gt;&gt;&gt; device.write(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, 10, elementIndexInRegister=3)</span>
+
+<span class="sd">    See Also</span>
+<span class="sd">    --------</span>
+<span class="sd">    Device.write_raw : Write &#39;raw&#39; bit values to a device register</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># get register accessor</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">dataToWrite</span><span class="p">)</span>
+    <span class="n">numberOfElementsToWrite</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">size</span>
+    <span class="k">if</span> <span class="n">numberOfElementsToWrite</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">return</span>
+    <span class="k">if</span> <span class="n">registerPath</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">registerPath</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">moduleName</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">registerName</span>
+    <span class="n">arguments</span> <span class="o">=</span> <span class="p">(</span><span class="n">registerPath</span><span class="p">,</span>
+                 <span class="n">numberOfElementsToWrite</span><span class="p">,</span>
+                 <span class="n">elementIndexInRegister</span><span class="p">)</span>
+
+
+    <span class="n">device</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span>
+    <span class="n">dtype</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">dtype</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">dtype</span> <span class="o">==</span> <span class="n">numpy</span><span class="o">.</span><span class="n">int32</span><span class="p">):</span>
+        <span class="n">accessor</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">get1DAccessor_int32</span><span class="p">(</span><span class="o">*</span><span class="n">arguments</span><span class="p">)</span>
+    <span class="k">elif</span><span class="p">(</span><span class="n">dtype</span> <span class="o">==</span> <span class="n">numpy</span><span class="o">.</span><span class="n">int64</span><span class="p">):</span>
+        <span class="n">accessor</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">get1DAccessor_int64</span><span class="p">(</span><span class="o">*</span><span class="n">arguments</span><span class="p">)</span>
+    <span class="k">elif</span><span class="p">(</span><span class="n">dtype</span> <span class="o">==</span> <span class="n">numpy</span><span class="o">.</span><span class="n">float32</span><span class="p">):</span>
+        <span class="n">accessor</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">get1DAccessor_float</span><span class="p">(</span><span class="o">*</span><span class="n">arguments</span><span class="p">)</span>
+    <span class="k">elif</span><span class="p">(</span><span class="n">dtype</span> <span class="o">==</span> <span class="n">numpy</span><span class="o">.</span><span class="n">float64</span><span class="p">):</span>
+        <span class="n">accessor</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">get1DAccessor_double</span><span class="p">(</span><span class="o">*</span><span class="n">arguments</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Data format used is unsupported&quot;</span><span class="p">)</span>
+
+    <span class="n">accessor</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="Device.read_raw"><a class="viewcode-back" href="../mtca4u.html#mtca4u.Device.read_raw">[docs]</a>  <span class="k">def</span> <span class="nf">read_raw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">moduleName</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">registerName</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">numberOfElementsToRead</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+              <span class="n">elementIndexInRegister</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">registerPath</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Returns &#39;raw values&#39; (Without fixed point conversion applied) from a device&#39;s register</span>
+
+<span class="sd">    This method returns the raw bit values contained in the queried register.</span>
+<span class="sd">    The returned values are not Fixed Point converted, but direct binary values</span>
+<span class="sd">    contained in the register elements.</span>
+
+<span class="sd">    .. note::     Both moduleName and registerName parameters are ignored when</span>
+<span class="sd">                  registerPath is provided.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    moduleName : str, optional</span>
+<span class="sd">      The name of the device module to which the register to read from belongs.</span>
+<span class="sd">      If module name is not applicable to the register, then provide an empty</span>
+<span class="sd">      string as the parameter value.</span>
+
+<span class="sd">    registerName : str, optional</span>
+<span class="sd">      The name of the device register to read from.</span>
+
+<span class="sd">    numberOfElementsToRead : int, optional</span>
+<span class="sd">      Specifies the number of register elements that should be read out.</span>
+<span class="sd">      The method returns all elements in the register if this parameter is</span>
+<span class="sd">      ommitted or when its value is set as 0.</span>
+<span class="sd">      If the value provided as this parameter exceeds the register size, an</span>
+<span class="sd">      array will all elements upto the last element is returned</span>
+
+<span class="sd">    elementIndexInRegister : int, optional</span>
+<span class="sd">      This is a zero indexed offset from the first element of the register. When</span>
+<span class="sd">      an elementIndexInRegister parameter is specified, the method reads out</span>
+<span class="sd">      elements starting from this element index. The element at the index</span>
+<span class="sd">      position is included in the read as well.</span>
+
+<span class="sd">    registerPath : str, optional</span>
+<span class="sd">      When provided, it takes precedences over moduleName and registerName for</span>
+<span class="sd">      location lookup.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    readInRawValues: numpy.array, dtype == numpy.int32</span>
+<span class="sd">      The method returns a numpy.int32 array containing the raw bit values of</span>
+<span class="sd">      the register elements. The length of the array either equals the number of</span>
+<span class="sd">      elements that make up the register or the number specified through the</span>
+<span class="sd">      numberOfElementsToRead parameter</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    register &quot;WORD_STATUS&quot; is 1 element long.</span>
+<span class="sd">      &gt;&gt;&gt; import mtca4u</span>
+<span class="sd">      &gt;&gt;&gt; mtca4u.set_dmap_location(&quot;../my_example_dmap_file.dmap&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; boardWithModules = mtca4u.Device(&quot;device_name&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; boardWithModules.read_raw(&quot;BOARD&quot;, &quot;WORD_STATUS&quot;)</span>
+<span class="sd">      array([15], dtype=int32)</span>
+<span class="sd">      &gt;&gt;&gt; boardWithModules.read_raw(registerPath=&quot;/BOARD/WORD_STATUS&quot;)</span>
+<span class="sd">      array([15], dtype=int32)</span>
+
+<span class="sd">    register &quot;WORD_CLK_MUX&quot; is 4 elements long.</span>
+<span class="sd">      &gt;&gt;&gt; import mtca4u</span>
+<span class="sd">      &gt;&gt;&gt; mtca4u.set_dmap_location(&quot;../my_example_dmap_file.dmap&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; device = mtca4u.Device(&quot;device_name&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; device.read_raw(&quot;&quot;, &quot;WORD_CLK_MUX&quot;)</span>
+<span class="sd">      array([15, 14, 13, 12], dtype=int32)</span>
+<span class="sd">      &gt;&gt;&gt; device.read_raw(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, 0)</span>
+<span class="sd">      array([15, 14, 13, 12], dtype=int32)</span>
+<span class="sd">      &gt;&gt;&gt; device.read_raw(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, 1)</span>
+<span class="sd">      array([15], dtype=int32)</span>
+<span class="sd">      &gt;&gt;&gt; device.read_raw(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, 1, 2 )</span>
+<span class="sd">      array([13], dtype = int32)</span>
+<span class="sd">      &gt;&gt;&gt; device.read_raw(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, 0, 2 )</span>
+<span class="sd">      array([13, 12], dtype=int32)</span>
+<span class="sd">      &gt;&gt;&gt; device.read_raw(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, numberOfElementsToRead=1, elementIndexInRegister=2 )</span>
+<span class="sd">      array([13], dtype=int32)</span>
+<span class="sd">      &gt;&gt;&gt; device.read_raw(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, elementIndexInRegister=2 )</span>
+<span class="sd">      array([13, 12], dtype=int32)</span>
+
+<span class="sd">    See Also</span>
+<span class="sd">    --------</span>
+<span class="sd">    Device.read : Read in Fixed Point converted bit values from a device register</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">registerPath</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">registerPath</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">moduleName</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">registerName</span>
+    <span class="n">registerAccessor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">getRaw1DAccessor</span><span class="p">(</span><span class="n">registerPath</span><span class="p">,</span>
+                                                            <span class="n">numberOfElementsToRead</span><span class="p">,</span>
+                                                            <span class="n">elementIndexInRegister</span><span class="p">)</span>
+
+    <span class="n">registerSize</span> <span class="o">=</span> <span class="n">registerAccessor</span><span class="o">.</span><span class="n">getNumElements</span><span class="p">()</span>
+    <span class="n">array</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">registerSize</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+    <span class="n">registerAccessor</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">array</span></div>
+
+<div class="viewcode-block" id="Device.write_raw"><a class="viewcode-back" href="../mtca4u.html#mtca4u.Device.write_raw">[docs]</a>  <span class="k">def</span> <span class="nf">write_raw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">moduleName</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">registerName</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">dataToWrite</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                <span class="n">elementIndexInRegister</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">registerPath</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Write raw bit values (no fixed point conversion applied) into the register</span>
+
+<span class="sd">    Provides a way to put in a desired bit value into individual register</span>
+<span class="sd">    elements.</span>
+
+<span class="sd">    .. note::     Both moduleName and registerName parameters are ignored when</span>
+<span class="sd">                  registerPath is provided.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    moduleName : str, optional</span>
+<span class="sd">      The name of the device module that has the register we intend to write to.</span>
+<span class="sd">      If module name is not applicable to the register, then provide an empty</span>
+<span class="sd">      string as the parameter value.</span>
+
+<span class="sd">    registerName : str, optional</span>
+<span class="sd">      The name of the desired register to write into.</span>
+
+<span class="sd">    dataToWrite : numpy.array, dtype == numpy.int32</span>
+<span class="sd">     The array holding the bit values to be written into the register. The numpy</span>
+<span class="sd">     array is expected to contain numpy.int32 values</span>
+
+<span class="sd">    elementIndexInRegister : int, optional</span>
+<span class="sd">      This is a zero indexed offset from the first element of the register. When</span>
+<span class="sd">      an elementIndexInRegister parameter is specified, the method starts the</span>
+<span class="sd">      write from this index</span>
+
+<span class="sd">    registerPath : str, optional</span>
+<span class="sd">      When provided, it takes precedences over moduleName and registerName for</span>
+<span class="sd">      location lookup.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    register &quot;WORD_STATUS&quot; is 1 element long and is part of the module &quot;BOARD&quot;.</span>
+<span class="sd">      &gt;&gt;&gt; import mtca4u</span>
+<span class="sd">      &gt;&gt;&gt; mtca4u.set_dmap_location(&quot;../my_example_dmap_file.dmap&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; boardWithModules = mtca4u.Device(&quot;device_name&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; _dataToWrite = numpy.array([15], dtype=int32)</span>
+<span class="sd">      &gt;&gt;&gt; boardWithModules.write_raw(&quot;BOARD&quot;, &quot;WORD_STATUS&quot;, dataToWrite=_dataToWrite)</span>
+<span class="sd">      &gt;&gt;&gt; boardWithModules.write_raw(registerPath = &quot;/BOARD/WORD_STATUS&quot;,</span>
+<span class="sd">                                      dataToWrite=_dataToWrite)</span>
+
+<span class="sd">    register &quot;WORD_CLK_MUX&quot; is 4 elements long.</span>
+<span class="sd">      &gt;&gt;&gt; import mtca4u</span>
+<span class="sd">      &gt;&gt;&gt; mtca4u.set_dmap_location(&quot;../my_example_dmap_file.dmap&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; device = mtca4u.Device(&quot;device_name&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; dataToWrite = numpy.array([15, 14, 13, 12], dtype=int32)</span>
+<span class="sd">      &gt;&gt;&gt; device.write_raw(&quot;&quot;, &quot;WORD_CLK_MUX&quot;, dataToWrite)</span>
+<span class="sd">      &gt;&gt;&gt; dataToWrite = numpy.array([13, 12], dtype=int32)</span>
+<span class="sd">      &gt;&gt;&gt; device.write_raw(&quot;MODULE1&quot;, &quot;WORD_CLK_MUX&quot;, dataToWrite, 2)</span>
+
+<span class="sd">    See Also</span>
+<span class="sd">    --------</span>
+<span class="sd">    Device.write : Write values that get fixed point converted to the device</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">__checkAndExitIfArrayNotInt32</span><span class="p">(</span><span class="n">dataToWrite</span><span class="p">)</span>
+
+    <span class="n">numberOfElementsToWrite</span> <span class="o">=</span> <span class="n">dataToWrite</span><span class="o">.</span><span class="n">size</span>
+    <span class="k">if</span> <span class="n">numberOfElementsToWrite</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span>
+
+    <span class="k">if</span> <span class="n">registerPath</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">registerPath</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">moduleName</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">registerName</span>
+    <span class="n">accessor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">getRaw1DAccessor</span><span class="p">(</span><span class="n">registerPath</span><span class="p">,</span>
+                                                    <span class="n">numberOfElementsToWrite</span><span class="p">,</span>
+                                                    <span class="n">elementIndexInRegister</span><span class="p">)</span>
+    <span class="n">accessor</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">dataToWrite</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Device.read_dma_raw"><a class="viewcode-back" href="../mtca4u.html#mtca4u.Device.read_dma_raw">[docs]</a>  <span class="k">def</span> <span class="nf">read_dma_raw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">moduleName</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">DMARegisterName</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                   <span class="n">numberOfElementsToRead</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                   <span class="n">registerPath</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Read in Data from the DMA region of the card</span>
+
+<span class="sd">    This method can be used to fetch data copied to a dma memory block. The</span>
+<span class="sd">    method assumes that the device maps the DMA memory block to a register made</span>
+<span class="sd">    up of 32 bit elements.</span>
+
+
+<span class="sd">    .. note:: Deprecated since 1.0.0; use Device.read_raw instead.</span>
+
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    moduleName : str, optional</span>
+<span class="sd">      The name of the device module that has the register we intend to write to.</span>
+<span class="sd">      If module name is not applicable to the device, then provide an empty</span>
+<span class="sd">      string as the parameter value.</span>
+
+<span class="sd">    DMARegisterName : str, optional</span>
+<span class="sd">      The register name to which the DMA memory region is mapped</span>
+
+<span class="sd">    numberOfElementsToRead : int, optional</span>
+<span class="sd">      This optional parameter specifies the number of 32 bit elements that have</span>
+<span class="sd">      to be returned from the mapped dma register. When this parameter is not</span>
+<span class="sd">      specified or is provided with a value of 0,  every  element in the DMA</span>
+<span class="sd">      memory block is returned.</span>
+
+<span class="sd">      If the value provided as this parameter exceeds the register size, an</span>
+<span class="sd">      array with all elements upto the last element is returned</span>
+
+<span class="sd">    elementIndexInRegister : int, optional</span>
+<span class="sd">      This parameter specifies the index from which the read should commence.</span>
+
+<span class="sd">    registerPath : str, optional</span>
+<span class="sd">      When provided, it takes precedences over moduleName and registerName for</span>
+<span class="sd">      location lookup.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    arrayOfRawValues: numpy.array, dtype == numpy.int32</span>
+<span class="sd">      The method returns a numpy.int32 array containing the raw bit values</span>
+<span class="sd">      contained in the DMA register elements. The length of the array either</span>
+<span class="sd">      equals the number of 32 bit elements that make up the whole DMA region or</span>
+<span class="sd">      the number specified through the numberOfElementsToRead parameter</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Use Device.read_raw: In the example, register &quot;AREA_DMA_VIA_DMA&quot; is the DMA mapped memory made up of 32 bit elements.</span>
+<span class="sd">      &gt;&gt;&gt; import mtca4u</span>
+<span class="sd">      &gt;&gt;&gt; mtca4u.set_dmap_location(&quot;../my_example_dmap_file.dmap&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; device = mtca4u.Device(&quot;device_name&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; device.read__raw(&quot;&quot;, &quot;AREA_DMA_VIA_DMA&quot;, 10)</span>
+<span class="sd">      array([0, 1, 4, 9, 16, 25, 36, 49, 64, 81], dtype=int32)</span>
+
+<span class="sd">    See Also</span>
+<span class="sd">    --------</span>
+<span class="sd">    Device.read_raw : Use this method for the same purpose instead.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="n">moduleName</span><span class="p">,</span> <span class="n">DMARegisterName</span><span class="p">,</span>
+                  <span class="n">numberOfElementsToRead</span><span class="p">,</span>
+                  <span class="n">elementIndexInRegister</span><span class="p">,</span> <span class="n">registerPath</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Device.read_sequences"><a class="viewcode-back" href="../mtca4u.html#mtca4u.Device.read_sequences">[docs]</a>  <span class="k">def</span> <span class="nf">read_sequences</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">moduleName</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">regionName</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">registerPath</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Read in all sequences from a Multiplexed data Region</span>
+
+<span class="sd">    This method returns the demultiplexed sequences in the memory area specified</span>
+<span class="sd">    by regionName. The data is returned as a 2D numpy array with the coulums</span>
+<span class="sd">    representing induvidual sequences</span>
+
+<span class="sd">    .. note::     Both moduleName and regionName parameters are ignored when</span>
+<span class="sd">                  registerPath is provided.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    moduleName : str, optional</span>
+<span class="sd">      The name of the device module that has the register we intend to write to.</span>
+<span class="sd">      If module name is not applicable to the device, then provide an empty</span>
+<span class="sd">      string as the parameter value.</span>
+
+<span class="sd">    regionName : str, optional</span>
+<span class="sd">      The name of the memory area containing the multiplexed data.</span>
+
+<span class="sd">    registerPath : str, optional</span>
+<span class="sd">      When provided, it takes precedences over moduleName and regionName for</span>
+<span class="sd">      location lookup.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    2DarrayOfValues: numpy.array, dtype == numpy.double</span>
+<span class="sd">      The method returns a 2D numpy.double array containing extracted</span>
+<span class="sd">      induvidual sequences as the columns</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &quot;DMA&quot; is the Multiplexed data region name. This region is defined by &#39;AREA_MULTIPLEXED_SEQUENCE_DMA&#39; in the mapfile.</span>
+<span class="sd">      &gt;&gt;&gt; import mtca4u</span>
+<span class="sd">      &gt;&gt;&gt; mtca4u.set_dmap_location(&quot;../my_example_dmap_file.dmap&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; device = mtca4u.Device(&quot;device_name&quot;)</span>
+<span class="sd">      &gt;&gt;&gt; device.read_sequences(&quot;BOARD.0&quot;, &quot;DMA&quot;)</span>
+<span class="sd">      array([[   0.,    1.,    4.,    9.,   16.],</span>
+<span class="sd">             [  25.,   36.,   49.,   64.,   81.],</span>
+<span class="sd">             [ 100.,  121.,  144.,  169.,  196.],</span>
+<span class="sd">             [ 225.,  256.,  289.,  324.,  361.]</span>
+<span class="sd">             [ 400.,  441.,  484.,  529.,  576.]], dtype=double)</span>
+<span class="sd">      &gt;&gt;&gt; device.read_sequences(registerPath= &#39;/BOARD.0/DMA&#39;)</span>
+<span class="sd">      array([[   0.,    1.,    4.,    9.,   16.],</span>
+<span class="sd">             [  25.,   36.,   49.,   64.,   81.],</span>
+<span class="sd">             [ 100.,  121.,  144.,  169.,  196.],</span>
+<span class="sd">             [ 225.,  256.,  289.,  324.,  361.]</span>
+<span class="sd">             [ 400.,  441.,  484.,  529.,  576.]], dtype=double)</span>
+
+<span class="sd">    Each column of the 2D matrix represents an extracted sequence:</span>
+<span class="sd">     &gt;&gt;&gt; data = device.read_sequences(&quot;BOARD.0&quot;, &quot;DMA&quot;)</span>
+<span class="sd">     &gt;&gt;&gt; adc0_values = data[:,0] # array([0., 25., 100., 225., 400.])</span>
+<span class="sd">     &gt;&gt;&gt; adc1_values = data[:,1] # array([1., 36., 49., 64., 81.])</span>
+<span class="sd">     &gt;&gt;&gt; adc3_values = data[:,3] # array([9., 64., 169., 324., 529.])</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="n">registerPath</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">registerPath</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">moduleName</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">regionName</span>
+    <span class="n">accessor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">get2DAccessor</span><span class="p">(</span><span class="n">registerPath</span><span class="p">)</span>
+
+    <span class="c1"># readFromDevice fetches data from the card to its intenal buffer of the</span>
+    <span class="c1"># c++ accessor</span>
+    <span class="n">numberOfSequences</span> <span class="o">=</span> <span class="n">accessor</span><span class="o">.</span><span class="n">getNChannels</span><span class="p">()</span>
+    <span class="n">numberOfBlocks</span> <span class="o">=</span> <span class="n">accessor</span><span class="o">.</span><span class="n">getNElementsPerChannel</span><span class="p">()</span>
+    <span class="n">array2D</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__create2DArray</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">double</span><span class="p">,</span> <span class="n">numberOfBlocks</span><span class="p">,</span>
+                                   <span class="n">numberOfSequences</span><span class="p">)</span>
+
+    <span class="n">accessor</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">array2D</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">array2D</span></div>
+
+<span class="c1"># Helper methods below</span>
+
+  <span class="k">def</span> <span class="nf">__exitIfSuppliedIndexIncorrect</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">registerAccessor</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="p">):</span>
+    <span class="n">registerSize</span> <span class="o">=</span> <span class="n">registerAccessor</span><span class="o">.</span><span class="n">getNumElements</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">elementIndexInRegister</span> <span class="o">&gt;=</span> <span class="n">registerSize</span><span class="p">:</span>
+      <span class="k">if</span> <span class="n">registerSize</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="c1"># did this for displaying specific error string without the range when</span>
+        <span class="c1"># there is only one element in the register</span>
+        <span class="n">errorString</span> <span class="o">=</span> <span class="s2">&quot;Element index: </span><span class="si">{0}</span><span class="s2"> incorrect. Valid index is </span><span class="si">{1}</span><span class="s2">&quot;</span>\
+          <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">elementIndexInRegister</span><span class="p">,</span> <span class="n">registerSize</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+      <span class="k">else</span><span class="p">:</span>
+        <span class="n">errorString</span> <span class="o">=</span> <span class="s2">&quot;Element index: </span><span class="si">{0}</span><span class="s2"> incorrect. Valid index range is [0-</span><span class="si">{1}</span><span class="s2">]&quot;</span>\
+          <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">elementIndexInRegister</span><span class="p">,</span> <span class="n">registerSize</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+      <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">errorString</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">__checkAndExitIfArrayNotFloat32</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataToWrite</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">__raiseExceptionIfNumpyArraydTypeIncorrect</span><span class="p">(</span><span class="n">dataToWrite</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">__checkAndExitIfArrayNotInt32</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataToWrite</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">__raiseExceptionIfNumpyArraydTypeIncorrect</span><span class="p">(</span><span class="n">dataToWrite</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">__raiseExceptionIfNumpyArraydTypeIncorrect</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">numpyArray</span><span class="p">,</span> <span class="n">dType</span><span class="p">):</span>
+    <span class="k">if</span><span class="p">((</span><span class="nb">type</span><span class="p">(</span><span class="n">numpyArray</span><span class="p">)</span> <span class="o">!=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="ow">or</span>
+       <span class="p">(</span><span class="n">numpyArray</span><span class="o">.</span><span class="n">dtype</span> <span class="o">!=</span> <span class="n">dType</span><span class="p">)):</span>
+      <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Method expects values in a </span><span class="si">{0}</span><span class="s2"> &quot;</span>
+                      <span class="s2">&quot; numpy.array&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dType</span><span class="p">))</span>
+
+  <span class="k">def</span> <span class="nf">__getCorrectedElementCount</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">elementCountInRegister</span><span class="p">,</span> <span class="n">numberOfelements</span><span class="p">,</span>
+                                  <span class="n">elementOffset</span><span class="p">):</span>
+    <span class="n">elementCountInRegister</span> <span class="c1">#=  registerAccessor.getNumElements()</span>
+    <span class="n">maxFetchableElements</span> <span class="o">=</span> <span class="n">elementCountInRegister</span> <span class="o">-</span> <span class="n">elementOffset</span>
+    <span class="n">correctedElementCount</span> <span class="o">=</span> <span class="n">numberOfelements</span> <span class="k">if</span> <span class="p">(</span><span class="n">numberOfelements</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">numberOfelements</span> <span class="o">&lt;=</span> <span class="n">maxFetchableElements</span><span class="p">)</span> \
+        <span class="k">else</span> <span class="n">maxFetchableElements</span>
+    <span class="k">return</span> <span class="n">correctedElementCount</span>
+
+  <span class="k">def</span> <span class="nf">__createArray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dType</span><span class="p">,</span> <span class="n">numberOfElementsInRegister</span><span class="p">,</span> <span class="n">numberOfElementsToRead</span><span class="p">,</span>
+                    <span class="n">elementIndexInRegister</span><span class="p">):</span>
+    <span class="n">size</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__getCorrectedElementCount</span><span class="p">(</span><span class="n">numberOfElementsInRegister</span><span class="p">,</span>
+                                           <span class="n">numberOfElementsToRead</span><span class="p">,</span>
+                                           <span class="n">elementIndexInRegister</span><span class="p">)</span>
+    <span class="n">array</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">dtype</span> <span class="o">=</span> <span class="n">dType</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">array</span>
+
+  <span class="k">def</span> <span class="nf">__create2DArray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dType</span><span class="p">,</span> <span class="n">numberOfRows</span><span class="p">,</span> <span class="n">numberOfColumns</span><span class="p">):</span>
+      <span class="n">array2D</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">numberOfRows</span><span class="p">,</span> <span class="n">numberOfColumns</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dType</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">array2D</span>
+
+  <span class="k">def</span> <span class="nf">__printDeprecationWarning</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deviceFile</span><span class="p">,</span> <span class="n">mapFile</span><span class="p">):</span>
+      <span class="n">deviceFileName</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__extractNameFromDeviceFile</span><span class="p">(</span><span class="n">deviceFile</span><span class="p">)</span>
+
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*************************************************************************************************&quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &gt;&gt;&gt; mtca4u.Device(&#39;&quot;</span> <span class="o">+</span> <span class="n">deviceFile</span> <span class="o">+</span> <span class="s2">&quot;&#39;, &#39;&quot;</span> <span class="o">+</span> <span class="n">mapFile</span> <span class="o">+</span> <span class="s2">&quot;&#39;)&quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; ERROR: The above usage for device creation has been phased out!&quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                                                            &quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; Please consider using a dmap file for device creation.                     &quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; Instructions:                                                              &quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; - Create dmap file: &lt;your_dmapfile_name_goes_here&gt;.dmap                    &quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                                                            &quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; - Add this line to your dmap file:                                         &quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;     &lt;your_card_alias_goes_here&gt; sdm://./pci:&quot;</span> <span class="o">+</span> <span class="n">deviceFileName</span> <span class="o">+</span> <span class="s2">&quot;; &quot;</span> <span class="o">+</span> <span class="n">mapFile</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                                                            &quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; - Tell the library about the dmap file                                     &quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;     &gt;&gt;&gt; mtca4u.set_dmap_location(&#39;your_dmapfile_name.dmap&#39;)                &quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                                                            &quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; - Create your device                                                       &quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;     &gt;&gt;&gt; device = mtca4u.Device(&#39;your_card_alias&#39;)                          &quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                                                            &quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; Alternatively, you can pass the sdm string directly in place of the alias  &quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; name, if it includes the map file name, e.g.:                              &quot;</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   sdm://./pci:&quot;</span> <span class="o">+</span> <span class="n">deviceFileName</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span> <span class="o">+</span> <span class="n">mapFile</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*************************************************************************************************&quot;</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">__extractNameFromDeviceFile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deviceFile</span><span class="p">):</span>
+      <span class="n">index</span> <span class="o">=</span> <span class="p">(</span><span class="n">deviceFile</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">))</span> <span class="o">+</span> <span class="mi">1</span>
+      <span class="k">return</span> <span class="n">deviceFile</span><span class="p">[</span><span class="n">index</span><span class="p">:]</span></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/DESY_logo.png" alt="Logo"/>
+            </a></p>
+<h1 class="logo"><a href="../index.html">mtca4uPy</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../mtca4u.html">mtca4u module</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, .
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
