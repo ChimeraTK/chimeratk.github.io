@@ -8,9 +8,11 @@ var class_chimera_t_k_1_1_numeric_addressed_backend =
     [ "getRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a7333d238a0a4552529935881ad0f8c5e", null ],
     [ "getRegisterMap", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a88cfce526ebe714e872d10cb15709800", null ],
     [ "minimumTransferAlignment", "class_chimera_t_k_1_1_numeric_addressed_backend.html#aeb2750bc003ebf549248c5f18f70f5f0", null ],
-    [ "read", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ac9793fa0906c50fe472b871964f54f64", null ],
+    [ "read", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ab0177e32cf5e85277376e853a6db4b09", null ],
+    [ "read", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a6853b7c9a59de799378606917c30e803", null ],
     [ "readDeviceInfo", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a6c0c6390d697ba054d377d2f96082dbc", null ],
-    [ "write", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ae787be574ee1a808ce4a7191aed72e9d", null ],
+    [ "write", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a405bb3b3d03602f053d7f4332d784da7", null ],
+    [ "write", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a6698fc462e6dda0c70dacf936b7414c5", null ],
     [ "_registerMap", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a39251fbfc114b5c557ccbbb89ad88e74", null ],
     [ "_unalignedAccess", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ae75bc2509b25827513f35d4dce5f1630", null ],
     [ "NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ad46371e0b798610cae236a0b4c81ce04", null ]

@@ -94,7 +94,7 @@ var searchData=
   ['spec_5fdevicebackend_2edox',['spec_DeviceBackend.dox',['../spec___device_backend_8dox.html',1,'']]],
   ['spec_5ftransferelement_2edox',['spec_TransferElement.dox',['../spec___transfer_element_8dox.html',1,'']]],
   ['splitstringatlastdot',['splitStringAtLastDot',['../class_chimera_t_k_1_1_map_file_parser.html#af8b0334352da84a275101083c91c462a',1,'ChimeraTK::MapFileParser']]],
-  ['start',['start',['../class_chimera_t_k_1_1_rebot_dummy_session.html#a15c3f858311a2f03fec87fe42f06af5b',1,'ChimeraTK::RebotDummySession::start()'],['../class_chimera_t_k_1_1_rebot_dummy_server.html#abb38ed196f76e6d2863f6929bef7feda',1,'ChimeraTK::RebotDummyServer::start()'],['../_register_info_map_8cpp.html#a61eb63d26b2fa6c2971603ceccffb14b',1,'start():&#160;RegisterInfoMap.cpp']]],
+  ['start',['start',['../class_chimera_t_k_1_1_rebot_dummy_session.html#a15c3f858311a2f03fec87fe42f06af5b',1,'ChimeraTK::RebotDummySession::start()'],['../class_chimera_t_k_1_1_rebot_dummy_server.html#abb38ed196f76e6d2863f6929bef7feda',1,'ChimeraTK::RebotDummyServer::start()'],['../_register_info_map_8cpp.html#a6a51e9baeec9b06ae477cf6475efc71d',1,'start():&#160;RegisterInfoMap.cpp']]],
   ['start_5ftime',['start_time',['../structdevice__ioctrl__time.html#a73717c26f9ec75f5b4ea114976a1ba2c',1,'device_ioctrl_time']]],
   ['startswith',['startsWith',['../class_chimera_t_k_1_1_register_path.html#a6ccb225c24d44fc469dc190a1fba80af',1,'ChimeraTK::RegisterPath']]],
   ['staticcore',['StaticCore',['../struct_static_core.html',1,'StaticCore'],['../struct_static_core.html#a74beeda65f3093871ac033d7a108afa4',1,'StaticCore::StaticCore()']]],
