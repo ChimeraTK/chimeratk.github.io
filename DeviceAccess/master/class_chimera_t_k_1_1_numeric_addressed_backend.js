@@ -2,6 +2,7 @@ var class_chimera_t_k_1_1_numeric_addressed_backend =
 [
     [ "NumericAddressedBackend", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a6d8802ff0005f775c7728bdb064d3d18", null ],
     [ "~NumericAddressedBackend", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ac310e495b2f2b94485bf799cd09163d1", null ],
+    [ "barIndexValid", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ac30c2e07ae8802e710fdd647020ceb2f", null ],
     [ "canMergeRequests", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a9c628ba2417dd01ef43508a87324e15f", null ],
     [ "checkRegister", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ad3d2a68b3f4421dfd456bdbd57f31f9b", null ],
     [ "getRegisterAccessor_impl", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a5395e67e4d9c77c09826a0adb572ec01", null ],

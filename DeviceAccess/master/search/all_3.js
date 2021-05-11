@@ -15,6 +15,7 @@ var searchData=
   ['bar5',['BAR5',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a7473bbc92af15efd739f5c06409d8bc4',1,'pciedev_io.h']]],
   ['bar_5fmask',['BAR_MASK',['../namespace_chimera_t_k.html#a48e5529d117d16700b4f1487d510e94c',1,'ChimeraTK']]],
   ['bar_5fposition_5fin_5fvirtual_5fregister',['BAR_POSITION_IN_VIRTUAL_REGISTER',['../namespace_chimera_t_k.html#a83f8ba2a957f8ec51579c647ba6c51b3',1,'ChimeraTK']]],
+  ['barindexvalid',['barIndexValid',['../class_chimera_t_k_1_1_numeric_addressed_backend.html#ac30c2e07ae8802e710fdd647020ceb2f',1,'ChimeraTK::NumericAddressedBackend']]],
   ['barsizes',['barSizes',['../struct__pcieuni__ioctl__bar__sizes.html#a1655f2c0a5992b5017c45c4bbd8d045d',1,'_pcieuni_ioctl_bar_sizes']]],
   ['barx_5frw',['barx_rw',['../structdevice__rw.html#ae382b34e69e05728f9a046ae0cf53c3a',1,'device_rw']]],
   ['basic_2ecpp',['basic.cpp',['../basic_8cpp.html',1,'']]],

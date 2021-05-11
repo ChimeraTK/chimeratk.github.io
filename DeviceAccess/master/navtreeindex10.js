@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"lmap.html":[7],
 "lmap.html#cdd":[7,0],
 "lmap.html#internal_redirect":[7,1,1],
 "lmap.html#map":[7,1],
@@ -126,8 +127,8 @@ var NAVTREEINDEX10 =
 "mtca4u__compatibility__headers_2pcieuni__io__compat_8h_source.html":[19,0,5,42],
 "mtca4u__compatibility__headers_2predicates_8h.html":[19,0,5,43],
 "mtca4u__compatibility__headers_2predicates_8h_source.html":[19,0,5,43],
-"namespace_chimera_t_k.html":[17,0,1],
 "namespace_chimera_t_k.html":[18,0,1],
+"namespace_chimera_t_k.html":[17,0,1],
 "namespace_chimera_t_k_1_1_l_n_m_backend.html":[18,0,1,0],
 "namespace_chimera_t_k_1_1_l_n_m_backend.html":[17,0,1,0],
 "namespace_chimera_t_k_1_1_rebot.html":[17,0,1,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "struct_chimera_t_k_1_1_copy_register_decorator.html":[18,0,1,10],
 "struct_chimera_t_k_1_1_copy_register_decorator.html#a3862add181c233c1f80365008e87a57d":[18,0,1,10,1],
 "struct_chimera_t_k_1_1_copy_register_decorator.html#a762babb29356600d740f549482d50c68":[18,0,1,10,3],
-"struct_chimera_t_k_1_1_copy_register_decorator.html#a7eed48aa29f299f930ec3cc28bab6923":[18,0,1,10,0],
-"struct_chimera_t_k_1_1_copy_register_decorator.html#ae4e47253eee1f8e86f9dbb64832e3535":[18,0,1,10,2]
+"struct_chimera_t_k_1_1_copy_register_decorator.html#a7eed48aa29f299f930ec3cc28bab6923":[18,0,1,10,0]
 };
