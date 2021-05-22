@@ -56,6 +56,7 @@ var hierarchy =
         [ "TestApplication< T >", "struct_test_application.html", null ],
         [ "TestApplication1", "struct_test_application1.html", null ],
         [ "TestApplication1", "struct_test_application1.html", null ],
+        [ "TestApplication1", "struct_test_application1.html", null ],
         [ "TestApplication2< T >", "struct_test_application2.html", null ],
         [ "TestApplication2< T >", "struct_test_application2.html", null ],
         [ "TestApplication2< T >", "struct_test_application2.html", null ],
@@ -208,6 +209,10 @@ var hierarchy =
             [ "TestModule2< T >", "struct_test_module2.html", null ],
             [ "TestModule2< T >", "struct_test_module2.html", null ],
             [ "TestModule3", "struct_test_module3.html", null ],
+            [ "TestModuleBase", "struct_test_module_base.html", [
+              [ "ModuleA", "struct_module_a.html", null ],
+              [ "ModuleC", "struct_module_c.html", null ]
+            ] ],
             [ "TestModuleWithVariableGroups", "struct_test_module_with_variable_groups.html", null ],
             [ "TestModuleWithVariableGroups2", "struct_test_module_with_variable_groups2.html", null ],
             [ "TriggerModule", "struct_trigger_module.html", null ],

@@ -8,6 +8,7 @@ var class_chimera_t_k_1_1_application_module =
     [ "decrementDataFaultCounter", "class_chimera_t_k_1_1_application_module.html#a91ee550d32401fa635fbad8a8b301d1d", null ],
     [ "getCurrentVersionNumber", "class_chimera_t_k_1_1_application_module.html#acf7f5e081d8dedd9ee61e6f3bc13aa37", null ],
     [ "getDataValidity", "class_chimera_t_k_1_1_application_module.html#a16d396795d2e8116cc75cd3a10d160f2", null ],
+    [ "getInputModulesRecursively", "class_chimera_t_k_1_1_application_module.html#a788c28bd639915dde490cad0469e0079", null ],
     [ "getModuleType", "class_chimera_t_k_1_1_application_module.html#a78cc04235745bc0dca70a65d46217fc5", null ],
     [ "incrementDataFaultCounter", "class_chimera_t_k_1_1_application_module.html#af4290a346d2b866d4c8fd11e459a0196", null ],
     [ "mainLoop", "class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8", null ],

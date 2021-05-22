@@ -2,6 +2,7 @@ var struct_chimera_t_k_1_1_variable_network_node__data =
 [
     [ "VariableNetworkNode_data", "struct_chimera_t_k_1_1_variable_network_node__data.html#a491ae491d551c46ff4b2f674831429bf", null ],
     [ "appNode", "struct_chimera_t_k_1_1_variable_network_node__data.html#a813a974414573c296ffe2f34d81cf0d1", null ],
+    [ "circularNetworkHash", "struct_chimera_t_k_1_1_variable_network_node__data.html#a8d8d4cab71c80df623beb08566c48639", null ],
     [ "constNodeCreator", "struct_chimera_t_k_1_1_variable_network_node__data.html#ad0b03ba47fdae1610b4b319c1db9fc05", null ],
     [ "description", "struct_chimera_t_k_1_1_variable_network_node__data.html#ae415593a9b9a048543f38466e49c540f", null ],
     [ "deviceAlias", "struct_chimera_t_k_1_1_variable_network_node__data.html#a3dfa2000cbe4999ad42b12b7af905e34", null ],

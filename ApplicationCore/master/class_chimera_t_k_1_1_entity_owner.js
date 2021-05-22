@@ -32,6 +32,7 @@ var class_chimera_t_k_1_1_entity_owner =
     [ "getEliminateHierarchy", "class_chimera_t_k_1_1_entity_owner.html#a86a370822f4d962d9a4a4634ddd29d27", null ],
     [ "getFullDescription", "class_chimera_t_k_1_1_entity_owner.html#ac9889d98c6076fa8ac966ae5b89ab687", null ],
     [ "getHierarchyModifier", "class_chimera_t_k_1_1_entity_owner.html#a864d33dc0620ce84905a0e0415b20856", null ],
+    [ "getInputModulesRecursively", "class_chimera_t_k_1_1_entity_owner.html#a59407f4f875b5114378b54029c27b378", null ],
     [ "getModuleType", "class_chimera_t_k_1_1_entity_owner.html#a44d138bbe63552b5b8dd9a128c76fcbe", null ],
     [ "getName", "class_chimera_t_k_1_1_entity_owner.html#a9ac0f0454393196b8abb3b2393ca69c5", null ],
     [ "getQualifiedName", "class_chimera_t_k_1_1_entity_owner.html#aa3fc963233d251705cd197ced1aa0876", null ],
