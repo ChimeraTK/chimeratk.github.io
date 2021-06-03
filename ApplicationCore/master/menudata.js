@@ -112,7 +112,19 @@ var menudata={children:[
 {text:"Typedefs",url:"functions_type.html"},
 {text:"Enumerations",url:"functions_enum.html"},
 {text:"Enumerator",url:"functions_eval.html"},
-{text:"Related Functions",url:"functions_rela.html"}]}]},
+{text:"Related Functions",url:"functions_rela.html",children:[
+{text:"a",url:"functions_rela.html#index_a"},
+{text:"c",url:"functions_rela.html#index_c"},
+{text:"d",url:"functions_rela.html#index_d"},
+{text:"e",url:"functions_rela.html#index_e"},
+{text:"f",url:"functions_rela.html#index_f"},
+{text:"h",url:"functions_rela.html#index_h"},
+{text:"i",url:"functions_rela.html#index_i"},
+{text:"m",url:"functions_rela.html#index_m"},
+{text:"p",url:"functions_rela.html#index_p"},
+{text:"t",url:"functions_rela.html#index_t"},
+{text:"v",url:"functions_rela.html#index_v"},
+{text:"x",url:"functions_rela.html#index_x"}]}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"File Members",url:"globals.html",children:[

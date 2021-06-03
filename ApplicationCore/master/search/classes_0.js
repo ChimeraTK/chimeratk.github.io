@@ -1,6 +1,7 @@
 var searchData=
 [
   ['a',['A',['../struct_test_app_1_1_a.html',1,'TestApp']]],
+  ['aa',['AA',['../struct_a_a.html',1,'']]],
   ['accessor',['Accessor',['../class_chimera_t_k_1_1_accessor.html',1,'ChimeraTK']]],
   ['accessorattacher',['AccessorAttacher',['../struct_chimera_t_k_1_1history_1_1_accessor_attacher.html',1,'ChimeraTK::history']]],
   ['anothergroup',['AnotherGroup',['../struct_test_module_1_1_another_group.html',1,'TestModule&lt; T &gt;::AnotherGroup'],['../struct_vector_module_1_1_another_group.html',1,'VectorModule::AnotherGroup']]],
@@ -9,7 +10,7 @@ var searchData=
   ['application',['Application',['../class_chimera_t_k_1_1_application.html',1,'ChimeraTK']]],
   ['applicationcoretemplateusertypemap',['ApplicationCoreTemplateUserTypeMap',['../class_chimera_t_k_1_1_application_core_template_user_type_map.html',1,'ChimeraTK']]],
   ['applicationmodule',['ApplicationModule',['../class_chimera_t_k_1_1_application_module.html',1,'ChimeraTK']]],
-  ['array',['Array',['../struct_chimera_t_k_1_1_config_reader_1_1_array.html',1,'ChimeraTK::ConfigReader::Array&lt; T &gt;'],['../struct_chimera_t_k_1_1_array.html',1,'ChimeraTK::Array']]],
+  ['array',['Array',['../struct_chimera_t_k_1_1_array.html',1,'ChimeraTK::Array'],['../struct_chimera_t_k_1_1_config_reader_1_1_array.html',1,'ChimeraTK::ConfigReader::Array&lt; T &gt;']]],
   ['arrayaccessor',['ArrayAccessor',['../class_chimera_t_k_1_1_array_accessor.html',1,'ChimeraTK']]],
   ['arrayaccessor_3c_20double_20_3e',['ArrayAccessor&lt; double &gt;',['../class_chimera_t_k_1_1_array_accessor.html',1,'ChimeraTK']]],
   ['arrayaccessor_3c_20inputtype_20_3e',['ArrayAccessor&lt; InputType &gt;',['../class_chimera_t_k_1_1_array_accessor.html',1,'ChimeraTK']]],

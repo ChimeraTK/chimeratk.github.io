@@ -10,6 +10,7 @@ var class_chimera_t_k_1_1_module =
     [ "decrementDataFaultCounter", "class_chimera_t_k_1_1_module.html#a449d69fbb2f2fa6835c3db45e148aace", null ],
     [ "defineConnections", "class_chimera_t_k_1_1_module.html#a9b3536e232d1163debcdca29279191e2", null ],
     [ "findApplicationModule", "class_chimera_t_k_1_1_module.html#ae1b039da6906085a906e4d59509a4de9", null ],
+    [ "getCircularNetworkHash", "class_chimera_t_k_1_1_module.html#a026326ec49e0aa40d8e14002f197f04c", null ],
     [ "getCurrentVersionNumber", "class_chimera_t_k_1_1_module.html#a18f537b069bebcf366f78b989f244994", null ],
     [ "getDataValidity", "class_chimera_t_k_1_1_module.html#a5a5f8bbd296d64d5fb804c2c6a9de643", null ],
     [ "getFullDescription", "class_chimera_t_k_1_1_module.html#ac9d145451d59e7bacc80766364a8d73e", null ],

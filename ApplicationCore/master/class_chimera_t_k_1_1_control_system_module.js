@@ -5,6 +5,7 @@ var class_chimera_t_k_1_1_control_system_module =
     [ "ControlSystemModule", "class_chimera_t_k_1_1_control_system_module.html#aabb1207d266af506033122166032098d", null ],
     [ "connectTo", "class_chimera_t_k_1_1_control_system_module.html#ae00bfe6379a470d410ebc354bf61d6c9", null ],
     [ "getAccessorList", "class_chimera_t_k_1_1_control_system_module.html#af8e4b2d13bdfc111cf2247f2a941edb4", null ],
+    [ "getCircularNetworkHash", "class_chimera_t_k_1_1_control_system_module.html#a93d8c3a35532c15d7502ec8645bf5992", null ],
     [ "getInputModulesRecursively", "class_chimera_t_k_1_1_control_system_module.html#ae6e2a810b7467dbcfe53b335d83776c4", null ],
     [ "getModuleType", "class_chimera_t_k_1_1_control_system_module.html#a5e011248216c848749021f0c572944fe", null ],
     [ "getSubmoduleList", "class_chimera_t_k_1_1_control_system_module.html#ab2b648eb105b3dc55969db1c1328d94c", null ],

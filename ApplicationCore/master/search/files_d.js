@@ -11,6 +11,7 @@ var searchData=
   ['spec_5fstatusaggregator_2emd',['spec_StatusAggregator.md',['../spec___status_aggregator_8md.html',1,'']]],
   ['spec_5fversionpropagation_2edox',['spec_VersionPropagation.dox',['../spec___version_propagation_8dox.html',1,'']]],
   ['splitarray_2eh',['SplitArray.h',['../_split_array_8h.html',1,'']]],
+  ['statusaccessor_2eh',['StatusAccessor.h',['../_status_accessor_8h.html',1,'']]],
   ['statusaggregator_2ecc',['StatusAggregator.cc',['../_status_aggregator_8cc.html',1,'']]],
   ['statusaggregator_2eh',['StatusAggregator.h',['../_status_aggregator_8h.html',1,'']]],
   ['statusmonitor_2eh',['StatusMonitor.h',['../_status_monitor_8h.html',1,'']]],

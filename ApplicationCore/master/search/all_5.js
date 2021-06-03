@@ -1,6 +1,7 @@
 var searchData=
 [
   ['e',['e',['../struct_test_application_1_1_test_module.html#ae0020f4651b8acb4fda012cf616b8845',1,'TestApplication::TestModule']]],
+  ['ee',['EE',['../struct_e_e.html',1,'EE'],['../struct_b_b.html#a8e589910b1338409fab3f981a2bc4611',1,'BB::EE()'],['../struct_test_application2.html#aa2815fd126e24253cad16a2d9f9c2d1a',1,'TestApplication2::ee()']]],
   ['eliminated',['eliminated',['../struct_second_hierarchy_1_1_test_module.html#a918874994063e336c2c7b8802e39d856',1,'SecondHierarchy::TestModule']]],
   ['eliminatedgroup',['EliminatedGroup',['../struct_second_hierarchy_1_1_test_module_1_1_eliminated_group.html',1,'SecondHierarchy::TestModule::EliminatedGroup'],['../struct_second_hierarchy_1_1_test_module.html#a4400625115cfb848e9bd87a727f44879',1,'SecondHierarchy::TestModule::eliminatedGroup()']]],
   ['enabledebugmakeconnections',['enableDebugMakeConnections',['../class_chimera_t_k_1_1_application.html#a344b8b314214e65660e39e6299d445fb',1,'ChimeraTK::Application']]],
@@ -42,6 +43,7 @@ var searchData=
   ['external',['external',['../class_chimera_t_k_1_1_variable_network.html#aae82485cda15b256982eacbb4a103ecaa6a21b6995a068148bbb65c8f949b3fb2',1,'ChimeraTK::VariableNetwork']]],
   ['externaltrigger',['externalTrigger',['../class_chimera_t_k_1_1_trigger_fan_out.html#ab417d72c6be30895d4e19fe5411a2b58',1,'ChimeraTK::TriggerFanOut::externalTrigger()'],['../struct_chimera_t_k_1_1_variable_network_node__data.html#aea2ed7a5d1fe7756e73ed112a3560ca2',1,'ChimeraTK::VariableNetworkNode_data::externalTrigger()']]],
   ['externaltriggerimpl',['externalTriggerImpl',['../class_chimera_t_k_1_1_variable_network.html#aac7e61dc56b86e82ba535c4a68bcbc15',1,'ChimeraTK::VariableNetwork']]],
+  ['extraaggregator',['extraAggregator',['../struct_test_application2_levels_1_1_outer_group.html#ad766be199f3f9f314ec0167aac5c9820',1,'TestApplication2Levels::OuterGroup']]],
   ['extragroup',['ExtraGroup',['../struct_second_hierarchy_1_1_second_module_1_1_extra_group.html',1,'SecondHierarchy::SecondModule::ExtraGroup'],['../struct_second_hierarchy_1_1_second_module.html#ad4c96c7d9db06e18567711117f47bf55',1,'SecondHierarchy::SecondModule::ExtraGroup()']]],
   ['extrahierarchy',['ExtraHierarchy',['../struct_test_application_1_1_test_module_1_1_extra_hierarchy.html',1,'TestApplication&lt; T &gt;::TestModule::ExtraHierarchy'],['../struct_test_application_1_1_test_module.html#adbf1f8b3c3807d8b055054506a0a06bb',1,'TestApplication::TestModule::ExtraHierarchy()']]],
   ['extravar',['extraVar',['../struct_second_hierarchy_1_1_test_module.html#ae92d365c69212052869cbfad4492406e',1,'SecondHierarchy::TestModule']]]

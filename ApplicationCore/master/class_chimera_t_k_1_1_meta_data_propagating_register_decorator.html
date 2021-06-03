@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_meta_data_propag
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_meta_data_propagating_register_decorator__inherit__graph.svg" width="254" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_meta_data_propagating_register_decorator__inherit__graph.svg" width="544" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_meta_data_propag
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_meta_data_propagating_register_decorator__coll__graph.svg" width="100%" height="508"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_meta_data_propagating_register_decorator__coll__graph.svg" width="100%" height="521"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -127,8 +127,11 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aeef54ab6a9169a1da0f8af8b230bd83c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#aeef54ab6a9169a1da0f8af8b230bd83c">_owner</a></td></tr>
 <tr class="separator:aeef54ab6a9169a1da0f8af8b230bd83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff1c7d9f0addd5468ffd292574cad4fd"><td class="memItemLeft" align="right" valign="top">DataValidity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#aff1c7d9f0addd5468ffd292574cad4fd">lastValidity</a> {DataValidity::ok}</td></tr>
-<tr class="memdesc:aff1c7d9f0addd5468ffd292574cad4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">value of validity flag from last read operation  <a href="#aff1c7d9f0addd5468ffd292574cad4fd">More...</a><br /></td></tr>
+<tr class="memdesc:aff1c7d9f0addd5468ffd292574cad4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">value of validity flag from last read or write operation  <a href="#aff1c7d9f0addd5468ffd292574cad4fd">More...</a><br /></td></tr>
 <tr class="separator:aff1c7d9f0addd5468ffd292574cad4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_meta_data_propagation_flag_provider"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_meta_data_propagation_flag_provider')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_meta_data_propagation_flag_provider.html">ChimeraTK::MetaDataPropagationFlagProvider</a></td></tr>
+<tr class="memitem:a9bd93e480a9fa42445318b99059acc11 inherit pro_attribs_class_chimera_t_k_1_1_meta_data_propagation_flag_provider"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_meta_data_propagation_flag_provider.html#a9bd93e480a9fa42445318b99059acc11">_isCircularInput</a> {false}</td></tr>
+<tr class="separator:a9bd93e480a9fa42445318b99059acc11 inherit pro_attribs_class_chimera_t_k_1_1_meta_data_propagation_flag_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -137,7 +140,7 @@ class ChimeraTK::MetaDataPropagatingRegisterDecorator&lt; T &gt;</h3>
 <p>NDRegisterAccessorDecorator which propagates meta data attached to input process variables through the owning <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a>. </p>
 <p>It will set the current version number of the owning <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> in postRead. At the same time it will also propagate the DataValidity flag to/from the owning module. </p>
 
-<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00018">18</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00031">31</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af3109a4046f72ba382c114e7b68b3b04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af3109a4046f72ba382c114e7b68b3b04">&#9670;&nbsp;</a></span>MetaDataPropagatingRegisterDecorator()</h2>
@@ -175,7 +178,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00020">20</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00034">34</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -216,13 +219,13 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8cc_source.html#l00007">7</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8cc_source.html">MetaDataPropagatingRegisterDecorator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8cc_source.html#l00010">10</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8cc_source.html">MetaDataPropagatingRegisterDecorator.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_meta_data_propagating_register_decorator_a2d62a08acf2402410c8b26b1fb45c7ce_icgraph.svg" width="544" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_meta_data_propagating_register_decorator_a2d62a08acf2402410c8b26b1fb45c7ce_cgraph.svg" width="476" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -254,15 +257,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00023">23</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_meta_data_propagating_register_decorator_a5e6b1c1b4f1bbe831d5784037c2b4ed8_cgraph.svg" width="100%" height="394"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00037">37</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -302,21 +297,13 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8cc_source.html#l00026">26</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8cc_source.html">MetaDataPropagatingRegisterDecorator.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8cc_source.html#l00039">39</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8cc_source.html">MetaDataPropagatingRegisterDecorator.cc</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_meta_data_propagating_register_decorator_a0bff559ae4f9c5f2c588d08b992cb679_cgraph.svg" width="512" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_meta_data_propagating_register_decorator_a0bff559ae4f9c5f2c588d08b992cb679_icgraph.svg" width="544" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_meta_data_propagating_register_decorator_a0bff559ae4f9c5f2c588d08b992cb679_cgraph.svg" width="512" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -345,7 +332,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00029">29</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00043">43</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -371,9 +358,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>value of validity flag from last read operation </p>
+<p>value of validity flag from last read or write operation </p>
 
-<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00032">32</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00046">46</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -387,7 +374,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html">MetaDataPropagatingRegisterDecorator</a></li>
-    <li class="footer">Generated on Sat May 22 2021 03:53:52 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Jun 3 2021 03:53:43 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

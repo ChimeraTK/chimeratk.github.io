@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['triggertype',['TriggerType',['../class_chimera_t_k_1_1_variable_network.html#aae82485cda15b256982eacbb4a103eca',1,'ChimeraTK::VariableNetwork']]]
+  ['status',['Status',['../struct_chimera_t_k_1_1_status_accessor_base.html#a2cb26eb708491cef93d4bb358db711dd',1,'ChimeraTK::StatusAccessorBase']]]
 ];

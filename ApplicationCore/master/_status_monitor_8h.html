@@ -83,13 +83,13 @@ $(document).ready(function(){initNavTree('_status_monitor_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">StatusMonitor.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_application_core_8h_source.html">ApplicationCore.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_status_accessor_8h_source.html">StatusAccessor.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for StatusMonitor.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('_status_monitor_8h.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_status_monitor_8h__dep__incl.svg" width="559" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_status_monitor_8h__dep__incl.svg" width="379" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -132,25 +132,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_exact_monitor.html">ChimeraTK::ExactMonitor&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a> for status monitoring of an exact value.  <a href="struct_chimera_t_k_1_1_exact_monitor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_state_monitor.html">ChimeraTK::StateMonitor&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a> for On/off status monitoring.  <a href="struct_chimera_t_k_1_1_state_monitor.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_chimera_t_k"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></td></tr>
 <tr class="memdesc:namespace_chimera_t_k"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic modules for status monitoring. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a6921a3fa4a30c73fc33e3a7f84326781"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781">ChimeraTK::States</a> { <a class="el" href="namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781a010c61379bf7863db40cee3b9836248b">ChimeraTK::OFF</a>, 
-<a class="el" href="namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781a1ff4d91265345b7ab22a94125ccf11db">ChimeraTK::OK</a>, 
-<a class="el" href="namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781a1258a3c774701420cfd704cebc54587b">ChimeraTK::WARNING</a>, 
-<a class="el" href="namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781a63e717b34d7aa6b114610042a2e76a46">ChimeraTK::FAULT</a>
- }<tr class="memdesc:a6921a3fa4a30c73fc33e3a7f84326781"><td class="mdescLeft">&#160;</td><td class="mdescRight">There are four states that can be reported.  <a href="namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781">More...</a><br /></td></tr>
-</td></tr>
-<tr class="separator:a6921a3fa4a30c73fc33e3a7f84326781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -158,7 +145,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_f2541a3b18981391fa76fac5599e978a.html">Modules</a></li><li class="navelem"><a class="el" href="dir_b74252328106591dfb0d36463b609fd4.html">include</a></li><li class="navelem"><a class="el" href="_status_monitor_8h.html">StatusMonitor.h</a></li>
-    <li class="footer">Generated on Sat May 22 2021 03:53:50 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Jun 3 2021 03:53:41 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

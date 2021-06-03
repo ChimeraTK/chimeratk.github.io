@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <p><b>NOTICE FOR FUTURE RELEASES: AVOID CHANGING THE NUMBERING!</b> The tests refer to the sections, incl. links and unlinked references from tests or other parts of the specification. These break, or even worse become wrong, when they are not changed consistenty! </p>
 </blockquote>
 <h2>1. General idea </h2>
-<ul>
+<p><a class="anchor" id="dataValidity_1"></a></p><ul>
 <li>1.1 In ApplicationCore each variable has a data validiy flag attached to it. DataValidity can be 'ok' or 'faulty'.</li>
 <li>1.2 This flag is automatically propagated: If any of the inputs of an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> is faulty, the data validity of the module becomes faulty, which means all outputs of this module will automatically be flagged as faulty. Fan-outs might be special cases (see 2.4).</li>
 <li>1.3 If a device is in error state, all variables which are read from it shall be marked as 'faulty'. This flag is then propagated through all the modules (via 1.1.2) so it shows up in the control system.</li>
@@ -112,12 +112,12 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <li>2.1.1 Each input and each output of a module (or fan out) is decorated with a <a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html" title="NDRegisterAccessorDecorator which propagates meta data attached to input process variables through th...">MetaDataPropagatingRegisterDecorator</a> (except for the <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html" title="InternalModule which waits for a trigger, then reads a number of variables and distributes each of th...">TriggerFanOut</a>, see. <a class="el" href="spec_data_validity_propagation.html#dataValidity_2_4">2.4</a>)</li>
 <li>2.1.2 The decorator knows about the module it is connected to. It is called the 'owner'.</li>
 <li>2.1.3 <b>read:</b> For each read operation it checks the incoming data validity and increases/decreases the data fault counter of the owner.</li>
-<li>2.1.5 <b>write:</b> When writing, the decorator is checking the validity of the owner and the individual flag of the output set by the user. Only if both are 'ok' the output validity is 'ok', otherwise the outgoing data is send as 'faulty'.</li>
+<li><a class="anchor" id="dataValidity_2_1_5"></a>2.1.5 <b>write:</b> When writing, the decorator is checking the validity of the owner and the individual flag of the output set by the user. Only if both are 'ok' the output validity is 'ok', otherwise the outgoing data is send as 'faulty'.</li>
 </ul>
 <h3>2.2 removed</h3>
 <h3>2.3 <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a></h3>
 <ul>
-<li>2.3.1 Each <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> has one data fault counter variable which is increased/decreased by <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a59d02ecae8bc99e76c7561c3ccea946c" title="Set the data validity flag to fault and increment the fault counter. ">EntityOwner::incrementDataFaultCounter()</a> and <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a2e6036e82c5f3b01bc062ceb431f94bb" title="Decrement the fault counter and set the data validity flag to ok if the counter has reached 0...">EntityOwner::decrementDataFaultCounter</a>.</li>
+<li><a class="anchor" id="dataValidity_2_3_1"></a> 2.3.1 Each <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> has one data fault counter variable which is increased/decreased by <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a59d02ecae8bc99e76c7561c3ccea946c" title="Set the data validity flag to fault and increment the fault counter. ">EntityOwner::incrementDataFaultCounter()</a> and <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a2e6036e82c5f3b01bc062ceb431f94bb" title="Decrement the fault counter and set the data validity flag to ok if the counter has reached 0...">EntityOwner::decrementDataFaultCounter</a>.</li>
 <li>2.3.2 All inputs and outputs have a <a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html" title="NDRegisterAccessorDecorator which propagates meta data attached to input process variables through th...">MetaDataPropagatingRegisterDecorator</a>.</li>
 <li><a class="anchor" id="dataValidity_2_3_3"></a>2.3.3 The main loop of the module usualy does not care about data validity. If any input is invalid, all outputs are automatically invalid <a class="el" href="spec_data_validity_propagation.html#dataValidity_comment_2_3_3a">(*)</a>. The loop just runs through normaly, even if an input has invalid data. <a class="el" href="spec_data_validity_propagation.html#dataValidity_comment_2_3_3b">(*)</a></li>
 <li>2.3.4 Inside the <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> main loop the module's data fault counter is accessible. The user can increment and decrement it, but has to be careful to do this in pairs. The more common use case will be to query the module's data validity.</li>
@@ -150,7 +150,49 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 </ul>
 <h2>3. Implementation details </h2>
 <ul>
-<li>3.1 The decorators which manipulate the data fault counter are responsible for counting up and down in pairs, such that the counter goes back to 0 if all data is ok, and never becomes negative. </li>
+<li>3.1 The decorators which manipulate the data fault counter are responsible for counting up and down in pairs, such that the counter goes back to 0 if all data is ok, and never becomes negative.</li>
+</ul>
+<h2>4. Circular dependencies </h2>
+<p>If modules have circular dependencies, the algorithm described in <a class="el" href="spec_data_validity_propagation.html#dataValidity_1">section 1</a> leads to a self-excited loop: Once the <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3bafedb2d84cafe20862cb4399751a8a7e3">DataValidity::invalid</a> flag has made a full circle, there is always at least on input with invalid data in each module and you can't get rid of it any more. To break this circle, the following additional behaviour is implemented:</p>
+<h3>4.1 General behaviour</h3>
+<ul>
+<li><a class="anchor" id="dataValidity_4_1_1"></a>4.1.1 Inputs which are part of a circular dependency are marked as <em>circular input</em>.[<a class="el" href="test_circular_dependency_faulty_flags_8cc.html#dataValidity_test_TestCircularInputDetection">T</a>]<ul>
+<li><a class="anchor" id="dataValidity_4_1_1_1"></a>4.1.1.1 Inputs which are coming from other applicatiation modules which are not part of the circle, from the control system module or from device modules are considered <em>external inputs</em>.[<a class="el" href="test_circular_dependency_faulty_flags_8cc.html#dataValidity_test_TestCircularInputDetection">T</a> (only CS module)]</li>
+</ul>
+</li>
+<li><a class="anchor" id="dataValidity_4_1_2"></a>4.1.2 All modules which have a circular dependency form a <em>circular network</em>.[<a class="el" href="test_circular_dependency_faulty_flags_8cc.html#dataValidity_test_TestCircularInputDetection">T</a>]<ul>
+<li><a class="anchor" id="dataValidity_4_1_2_1"></a>4.1.2.1 Also entangled circles of different variables which intersect in some of the modules are part of the same circular network.[<a class="el" href="test_circular_dependency_faulty_flags_8cc.html#dataValidity_test_TestCircularInputDetection2">T</a>]</li>
+<li><a class="anchor" id="dataValidity_4_1_2_2"></a>4.1.2.2 There can be multiple disconnected circular networks in an application.[<a class="el" href="test_circular_dependency_faulty_flags_8cc.html#dataValidity_test_TestCircularInputDetection2">T</a>]</li>
+</ul>
+</li>
+<li>4.1.3 Circular inputs and circular networks are identified at application start after the variable networks are established.</li>
+<li><a class="anchor" id="dataValidity_4_1_4"></a>4.1.4 As long as at least one <em>external input</em> of any module in the <em>circular network</em> is invalid, the invalidity flag is propagated as described in <a class="el" href="spec_data_validity_propagation.html#dataValidity_1">1.</a> [<a class="el" href="test_circular_dependency_faulty_flags_8cc.html#dataValidity_test_OneInvalidVariable">T</a>]</li>
+<li><a class="anchor" id="dataValidity_4_1_5"></a>4.1.5 Once all <em>external inputs</em> of one <em>circular network</em> are back to DataValidity::ok, all <em>circular inputs</em> of the <em>circular network</em> ignore the invalid flag and also switch to DataValidity::ok. This breaks the self-exciting loop. [<a class="el" href="test_circular_dependency_faulty_flags_8cc.html#dataValidity_test_OneInvalidVariable">T</a>] [<a class="el" href="test_circular_dependency_faulty_flags_8cc.html#dataValidity_test_TwoFaultyInOneModule">T</a>]</li>
+<li><a class="anchor" id="dataValidity_4_1_6"></a>4.1.6 If all inputs of a module have DataValidity::ok, the module's output validity is also DataValidity::ok, even if other modules in the <em>circular network</em> have <em>external inputs</em> which are invalid.</li>
+<li><a class="anchor" id="dataValidity_4_1_7"></a>4.1.7 The <a class="el" href="class_chimera_t_k_1_1_control_system_module.html">ControlSystemModule</a> and DeviceModules are never part of a circular dependency.[<a class="el" href="test_circular_dependency_faulty_flags_8cc.html#dataValidity_test_TestCircularInputDetection2">T</a> (only CS module)]</li>
+<li><a class="anchor" id="dataValidity_4_1_8"></a>4.1.8 If the user code of a module progammatically sets one of its outpts to <code>faulty</code>, this is treated as if an <em>external input</em> was invalid.[<a class="el" href="test_circular_dependency_faulty_flags_8cc.html#dataValidity_test_outputManuallyFaulty">T</a> (only CS module)]</li>
+</ul>
+<h3>4.2 Side effects and race conditions</h3>
+<ul>
+<li><a class="anchor" id="dataValidity_4_2_1"></a>4.2.1 The data validity of circular inputs is ignored as soon as all external inputs are back to <code>ok</code>, even if the data with the invalidity flag has not been propagated in the whole circle yet. (The data validity is set to <code>ok</code> "too early")</li>
+<li>4.2.2 If it is strictly required that a DataValidity::faulty flag is always transported because critical decisions depend on it, circular dependencies must be avoided in the application.</li>
+<li><a class="anchor" id="dataValidity_4_2_3"></a>4.2.3 When an <em>external input</em> changes validity from <code>faulty</code> to <code>ok</code>, the invalidity at the <em>circular inputs</em> of that module might or might not be ignored, depending on the other <em>external inputs</em> of the <em>circular network</em>. In large, entangled networks, where the remaining faulty <em>external input</em> is "far away", this might give the impression the the invalidity is resovled "too late". However, it is consistent. Only if ALL external inputs in the <em>circular network</em> are <code>ok</code>, the self-exciting loop may be broken. [<a class="el" href="test_circular_dependency_faulty_flags_8cc.html#dataValidity_test_TwoFaultyInTwoModules">T</a>]</li>
+</ul>
+<h3>4.3 Technical implementation</h3>
+<ul>
+<li><a class="anchor" id="dataValidity_4_3_1"></a>4.3.1 In addition to the owner (see <a class="el" href="spec_data_validity_propagation.html#dataValidity_2_3_1">2.3.1</a>), the <em>circular network</em> (<a class="el" href="spec_data_validity_propagation.html#dataValidity_4_1_2">4.1.2</a>) also gets an atomic invalidity counter.(<a class="el" href="spec_data_validity_propagation.html#dataValidity_comment_4_3_1">*</a>).</li>
+<li><a class="anchor" id="dataValidity_4_3_2"></a>4.3.2 Each module and each <em>circular input</em> knows its <em>circular network</em> [<a class="el" href="test_circular_dependency_faulty_flags_8cc.html#dataValidity_test_TestCircularInputDetection2">T</a>]</li>
+<li>4.3.3 If an <em>external input</em> receives data, it increases/decreases the <em>circular network</em>'s invalidity counter, together with the owner's invaliditys counter.</li>
+<li>4.3.4 If a module estimates its validity (as used in <a class="el" href="spec_data_validity_propagation.html#dataValidity_2_1_5">2.1.5</a>), it returns<ul>
+<li><code>DataValidity::ok</code> if the module's internal invalidity counter is 0 (<a class="el" href="spec_data_validity_propagation.html#dataValidity_4_1_6">4.1.6</a>)</li>
+<li><code>DataValidity::ok</code> if the module's internal invalidity counter is not 0 and the <em>circular network</em>'s invalidity counter is 0 (<a class="el" href="spec_data_validity_propagation.html#dataValidity_4_1_5">4.1.5</a>)</li>
+<li><code>DataValidity::faulty</code> if both counters are not 0 (<a class="el" href="spec_data_validity_propagation.html#dataValidity_4_1_4">4.1.4</a>)</li>
+</ul>
+</li>
+</ul>
+<h4>Comments</h4>
+<ul>
+<li><a class="anchor" id="dataValidity_comment_4_3_1"></a><a class="el" href="spec_data_validity_propagation.html#dataValidity_4_3_1">4.3.1</a> This counter has to be atomic because it is accessed from different module threads. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -158,7 +200,7 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Sat May 22 2021 03:53:50 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Jun 3 2021 03:53:41 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['states',['States',['../namespace_chimera_t_k.html#a6921a3fa4a30c73fc33e3a7f84326781',1,'ChimeraTK']]]
+  ['prioritymode',['PriorityMode',['../struct_chimera_t_k_1_1_status_aggregator.html#a4a647915ca42fb4f7de4a1aed66d2334',1,'ChimeraTK::StatusAggregator']]]
 ];

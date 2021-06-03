@@ -26,6 +26,7 @@ var class_chimera_t_k_1_1_entity_owner =
     [ "flatten", "class_chimera_t_k_1_1_entity_owner.html#a952d3abbffa16054f744f3da7fc46c3f", null ],
     [ "getAccessorList", "class_chimera_t_k_1_1_entity_owner.html#ad46327064e76c3cca1cfd32bd6f99412", null ],
     [ "getAccessorListRecursive", "class_chimera_t_k_1_1_entity_owner.html#a40de1606ef235a05c84b8e24ef06527d", null ],
+    [ "getCircularNetworkHash", "class_chimera_t_k_1_1_entity_owner.html#a1f308e1d01781ed595ec5bddb5a6a115", null ],
     [ "getCurrentVersionNumber", "class_chimera_t_k_1_1_entity_owner.html#a83a34142cea47d7396de8a3657004ef7", null ],
     [ "getDataValidity", "class_chimera_t_k_1_1_entity_owner.html#a9a32600fa633b1cd991ba8f2bd3ac6b3", null ],
     [ "getDescription", "class_chimera_t_k_1_1_entity_owner.html#ad7b95816cec9192c997e0447bcf73d4a", null ],

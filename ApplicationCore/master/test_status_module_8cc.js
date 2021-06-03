@@ -5,6 +5,5 @@ var test_status_module_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_status_module_8cc.html#a195b58c0938469c3098f7d3fe1b70822", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_status_module_8cc.html#a467743b219ce89874a1ae7cf5d6c0e3c", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_status_module_8cc.html#a6eb54d0c39c83c8203cb5abb5f76af72", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_status_module_8cc.html#a91bbbc4384827d95519f838e308c5d6e", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_status_module_8cc.html#a9d1f555306ef6f3552b503bf482ba316", null ]
+    [ "BOOST_AUTO_TEST_CASE", "test_status_module_8cc.html#a91bbbc4384827d95519f838e308c5d6e", null ]
 ];
