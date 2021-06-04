@@ -1,6 +1,7 @@
 var test_status_module_8cc =
 [
     [ "TestApplication", "struct_test_application.html", "struct_test_application" ],
+    [ "TestApplicationNewInterface", "struct_test_application_new_interface.html", "struct_test_application_new_interface" ],
     [ "BOOST_TEST_MODULE", "test_status_module_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_status_module_8cc.html#a195b58c0938469c3098f7d3fe1b70822", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_status_module_8cc.html#a467743b219ce89874a1ae7cf5d6c0e3c", null ],

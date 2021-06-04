@@ -19,6 +19,7 @@ var class_chimera_t_k_1_1_application =
     [ "enableTestableMode", "class_chimera_t_k_1_1_application.html#aab5d12e4073ae6bb0dd7fde8b435aa38", null ],
     [ "enableVariableDebugging", "class_chimera_t_k_1_1_application.html#a87520a53f9a635b49aace46f76c0cf07", null ],
     [ "finaliseNetworks", "class_chimera_t_k_1_1_application.html#a4100a652864974ac1ab64d1bd1327d81", null ],
+    [ "findConstantNodes", "class_chimera_t_k_1_1_application.html#a227fa9544c0cb66261256a08e475a99a", null ],
     [ "generateXML", "class_chimera_t_k_1_1_application.html#a1c9c06d9a92bfb9f42875faf48771e2d", null ],
     [ "getCircularNetworkHash", "class_chimera_t_k_1_1_application.html#a0580d00e8d1d0937f977fb9ab7e2e003", null ],
     [ "getCurrentVersionNumber", "class_chimera_t_k_1_1_application.html#a85591458b59766a934c520d3894ea40c", null ],

@@ -231,6 +231,9 @@ back") and <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_min_monitor.html">MinMonitor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a> for status monitoring depending on a minimum threshold value.  <a href="struct_chimera_t_k_1_1_min_monitor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_modify_hierarchy.html">ModifyHierarchy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience version of the <a class="el" href="struct_chimera_t_k_1_1_hierarchy_modifying_group.html" title="A HierarchyModifyingGroup is a VariableGroup which can easily appear at a different place in the hier...">HierarchyModifyingGroup</a> with exactly one variable inside.  <a href="struct_chimera_t_k_1_1_modify_hierarchy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html">Module</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a>, <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> and <a class="el" href="class_chimera_t_k_1_1_control_system_module.html">ControlSystemModule</a>, to have a common interface for these module types.  <a href="class_chimera_t_k_1_1_module.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -370,6 +373,9 @@ back") and <a class="el" href="namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a0ed227f630f3662ae808b4e91a6018c8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a0ed227f630f3662ae808b4e91a6018c8">TAGS</a> = const std::unordered_set&lt; std::string &gt;</td></tr>
+<tr class="memdesc:a0ed227f630f3662ae808b4e91a6018c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience type definition which can optionally be used as a shortcut for the type which defines a list of tags.  <a href="#a0ed227f630f3662ae808b4e91a6018c8">More...</a><br /></td></tr>
+<tr class="separator:a0ed227f630f3662ae808b4e91a6018c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab0d646f1a4050a8537ab53ee768e09a"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:aab0d646f1a4050a8537ab53ee768e09a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aab0d646f1a4050a8537ab53ee768e09a">ConsumerImplementationPairs</a> = std::list&lt; std::pair&lt; boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &gt; &gt;</td></tr>
 <tr class="separator:aab0d646f1a4050a8537ab53ee768e09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -493,6 +499,24 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00021">21</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
+
+</div>
+</div>
+<a id="a0ed227f630f3662ae808b4e91a6018c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ed227f630f3662ae808b4e91a6018c8">&#9670;&nbsp;</a></span>TAGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_chimera_t_k.html#a0ed227f630f3662ae808b4e91a6018c8">ChimeraTK::TAGS</a> = typedef const std::unordered_set&lt;std::string&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convenience type definition which can optionally be used as a shortcut for the type which defines a list of tags. </p>
+
+<p class="definition">Definition at line <a class="el" href="_entity_owner_8h_source.html#l00027">27</a> of file <a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>.</p>
 
 </div>
 </div>
@@ -790,7 +814,7 @@ template&lt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li>
-    <li class="footer">Generated on Thu Jun 3 2021 03:53:43 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Jun 4 2021 03:54:08 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -48,6 +48,7 @@ var namespace_chimera_t_k =
     [ "MetaDataPropagatingRegisterDecorator", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator" ],
     [ "MetaDataPropagationFlagProvider", "class_chimera_t_k_1_1_meta_data_propagation_flag_provider.html", "class_chimera_t_k_1_1_meta_data_propagation_flag_provider" ],
     [ "MinMonitor", "struct_chimera_t_k_1_1_min_monitor.html", "struct_chimera_t_k_1_1_min_monitor" ],
+    [ "ModifyHierarchy", "struct_chimera_t_k_1_1_modify_hierarchy.html", "struct_chimera_t_k_1_1_modify_hierarchy" ],
     [ "Module", "class_chimera_t_k_1_1_module.html", "class_chimera_t_k_1_1_module" ],
     [ "ModuleGraphVisitor", "class_chimera_t_k_1_1_module_graph_visitor.html", "class_chimera_t_k_1_1_module_graph_visitor" ],
     [ "ModuleGroup", "class_chimera_t_k_1_1_module_group.html", "class_chimera_t_k_1_1_module_group" ],

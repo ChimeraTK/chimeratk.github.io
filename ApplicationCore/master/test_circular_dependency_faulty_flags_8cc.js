@@ -3,6 +3,7 @@ var test_circular_dependency_faulty_flags_8cc =
     [ "TestModuleBase", "struct_test_module_base.html", "struct_test_module_base" ],
     [ "ModuleA", "struct_module_a.html", "struct_module_a" ],
     [ "ModuleC", "struct_module_c.html", "struct_module_c" ],
+    [ "ModuleD", "struct_module_d.html", "struct_module_d" ],
     [ "TestApplication1", "struct_test_application1.html", "struct_test_application1" ],
     [ "CircularAppTestFixcture", "struct_circular_app_test_fixcture.html", "struct_circular_app_test_fixcture" ],
     [ "TestModuleBase2", "struct_test_module_base2.html", "struct_test_module_base2" ],

@@ -18,6 +18,7 @@ var searchData=
   ['testapplication_5fmoveassignment',['TestApplication_moveAssignment',['../struct_test_application__move_assignment.html#a80e9418d7f08ec1444447a2f718c8b73',1,'TestApplication_moveAssignment']]],
   ['testapplication_5fmoveconstruct',['TestApplication_moveConstruct',['../struct_test_application__move_construct.html#a99ce1a8f71336dc0d5d2e78147a26d6d',1,'TestApplication_moveConstruct']]],
   ['testapplicationconnectto',['TestApplicationConnectTo',['../struct_test_application_connect_to.html#a4d09c83919f2c3b789c4e0f0b31858a6',1,'TestApplicationConnectTo']]],
+  ['testapplicationnewinterface',['TestApplicationNewInterface',['../struct_test_application_new_interface.html#a2abdf4d48bf88f14dec3cc25f7ece761',1,'TestApplicationNewInterface']]],
   ['testapplicationnoconfigs',['TestApplicationNoConfigs',['../struct_test_application_no_configs.html#a0100b54c5b46c3744b817681ecfada0f',1,'TestApplicationNoConfigs']]],
   ['testapplicationtags',['TestApplicationTags',['../struct_test_application_tags.html#a2bbffd11647946540a9d6bcc8dd060ae',1,'TestApplicationTags']]],
   ['testapplicationtwoconfigs',['TestApplicationTwoConfigs',['../struct_test_application_two_configs.html#a1d3db921c6d69f7f4d835014b53a8b8e',1,'TestApplicationTwoConfigs']]],

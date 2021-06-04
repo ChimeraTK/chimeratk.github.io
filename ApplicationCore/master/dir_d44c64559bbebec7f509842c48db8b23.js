@@ -40,9 +40,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "ConnectingDeviceModule", "class_chimera_t_k_1_1_connecting_device_module.html", "class_chimera_t_k_1_1_connecting_device_module" ]
     ] ],
     [ "EnableXMLGenerator.h", "_enable_x_m_l_generator_8h.html", null ],
-    [ "EntityOwner.h", "_entity_owner_8h.html", [
-      [ "EntityOwner", "class_chimera_t_k_1_1_entity_owner.html", "class_chimera_t_k_1_1_entity_owner" ]
-    ] ],
+    [ "EntityOwner.h", "_entity_owner_8h.html", "_entity_owner_8h" ],
     [ "ExceptionHandlingDecorator.h", "_exception_handling_decorator_8h.html", "_exception_handling_decorator_8h" ],
     [ "FanOut.h", "_fan_out_8h.html", "_fan_out_8h" ],
     [ "FeedingFanOut.h", "_feeding_fan_out_8h.html", [
@@ -50,7 +48,8 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     ] ],
     [ "Flags.h", "_flags_8h.html", "_flags_8h" ],
     [ "HierarchyModifyingGroup.h", "_hierarchy_modifying_group_8h.html", [
-      [ "HierarchyModifyingGroup", "struct_chimera_t_k_1_1_hierarchy_modifying_group.html", "struct_chimera_t_k_1_1_hierarchy_modifying_group" ]
+      [ "HierarchyModifyingGroup", "struct_chimera_t_k_1_1_hierarchy_modifying_group.html", "struct_chimera_t_k_1_1_hierarchy_modifying_group" ],
+      [ "ModifyHierarchy", "struct_chimera_t_k_1_1_modify_hierarchy.html", "struct_chimera_t_k_1_1_modify_hierarchy" ]
     ] ],
     [ "InternalModule.h", "_internal_module_8h.html", [
       [ "InternalModule", "class_chimera_t_k_1_1_internal_module.html", "class_chimera_t_k_1_1_internal_module" ]
