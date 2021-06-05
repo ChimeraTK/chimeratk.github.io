@@ -53,7 +53,6 @@ var searchData=
   ['declare_5ftimer_5fgroup_5fmakemap_5f_5f',['DECLARE_TIMER_GROUP_MAKEMAP__',['../_timer_group_8h.html#a46f6e56c54fbc651a8dfa0f28c4d8bb0',1,'TimerGroup.h']]],
   ['defaultinterpolate',['defaultInterpolate',['../class_chimera_t_k_1_1_virtual_lab_1_1_state_variable_set.html#a397167e55bd8aad36a31ee350e69dabf',1,'ChimeraTK::VirtualLab::StateVariableSet']]],
   ['dev',['dev',['../class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a33c7d836e580c0b08e67c8f56eed3d7a',1,'ChimeraTK::VirtualLab::VirtualLabBackend::Timer']]],
-  ['devicelock',['deviceLock',['../class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#a86e21d335fc084029096d548e78bb801',1,'ChimeraTK::VirtualLab::VirtualLabBackend']]],
   ['dummydevicetestsuite',['DummyDeviceTestSuite',['../class_virtual_lab_test.html#a5406012fb898e6039b85d52fa484e8f7',1,'VirtualLabTest']]],
   ['dummydevicetype',['dummyDeviceType',['../class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#a95779fb624c6fa6e11f2346b1774cb72',1,'ChimeraTK::VirtualLab::VirtualLabBackend']]]
 ];
