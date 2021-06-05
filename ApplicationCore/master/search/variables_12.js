@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['rb',['rb',['../struct_controller.html#a97ab7bd3852cc42fddd13b1bae1f4c7b',1,'Controller']]],
+  ['rb',['rb',['../struct_controller.html#a97ab7bd3852cc42fddd13b1bae1f4c7b',1,'Controller::rb()'],['../struct_controller.html#ab2b14c17d22911e4b7662723a6b8cbb5',1,'Controller::rb()']]],
   ['read',['read',['../struct_test_application.html#a63d449ac723dd45eddb1cd9f2b0ed37c',1,'TestApplication']]],
   ['read_5fonly_5ftest',['READ_ONLY_TEST',['../struct_read_only_test_application.html#a999ce8a0266ed750a47f1c4c813e7eda',1,'ReadOnlyTestApplication']]],
   ['readanytestmodule',['readAnyTestModule',['../struct_test_application.html#a9dfaf65bea020737a7f894c264775bd6',1,'TestApplication']]],
@@ -12,7 +12,7 @@ var searchData=
   ['recoveryhelpers',['recoveryHelpers',['../class_chimera_t_k_1_1_device_module.html#aa5e37e4eeac6bf7ee83c5043e9fd9545',1,'ChimeraTK::DeviceModule']]],
   ['recoverymutex',['recoveryMutex',['../class_chimera_t_k_1_1_device_module.html#ab1e2b830518740acc49a2cb5d3a00d40',1,'ChimeraTK::DeviceModule']]],
   ['reg1',['REG1',['../struct_push_module_d9__1.html#a70604c09e2f7cbfc85d23866ec224f64',1,'PushModuleD9_1::REG1()'],['../struct_push_module.html#a709015eb42f936d0315fd29f76914c0d',1,'PushModule::REG1()'],['../struct_realistic_module.html#ae8b658f04729a076c2ba16206dc13edb',1,'RealisticModule::reg1()']]],
-  ['reg2',['REG2',['../struct_push_module_d9__2.html#a90e324b942c0b6e6bf5db66b9807a557',1,'PushModuleD9_2::REG2()'],['../struct_realistic_module.html#a002345a0bf447f3568ceed9b6ee639b4',1,'RealisticModule::reg2()']]],
+  ['reg2',['reg2',['../struct_realistic_module.html#a002345a0bf447f3568ceed9b6ee639b4',1,'RealisticModule::reg2()'],['../struct_push_module_d9__2.html#a90e324b942c0b6e6bf5db66b9807a557',1,'PushModuleD9_2::REG2()']]],
   ['reg3',['reg3',['../struct_realistic_module.html#a9ee799f158467425d99e438b3184570c',1,'RealisticModule']]],
   ['registername',['registerName',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a29c4580a91e4e43cbe1efa82b2de3f6d',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['registernameprefix',['registerNamePrefix',['../class_chimera_t_k_1_1_device_module.html#a3bd68002fced1ba4049ee2e798d7d26d',1,'ChimeraTK::DeviceModule']]],

@@ -11,7 +11,6 @@ var struct_test_application2 =
     [ "defineConnections", "struct_test_application2.html#a77d1e46d4b9785bb87e697280953b629", null ],
     [ "defineConnections", "struct_test_application2.html#a77d1e46d4b9785bb87e697280953b629", null ],
     [ "defineConnections", "struct_test_application2.html#a77d1e46d4b9785bb87e697280953b629", null ],
-    [ "defineConnections", "struct_test_application2.html#a77d1e46d4b9785bb87e697280953b629", null ],
     [ "getCircularDependencyNetworks", "struct_test_application2.html#aa07048b3024d6471a55cffc7ea0d7565", null ],
     [ "aa", "struct_test_application2.html#ad0c138f4c78cd1b8a9f7d9f03b706d67", null ],
     [ "bb", "struct_test_application2.html#ac6ad5c4a1616e25e9646a6c6909747cf", null ],

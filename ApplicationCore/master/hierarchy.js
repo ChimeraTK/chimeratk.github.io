@@ -397,6 +397,7 @@ var hierarchy =
     [ "ChimeraTK::InversionOfControlAccessor< ScalarAccessor< float > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
       [ "ChimeraTK::ScalarAccessor< float >", "class_chimera_t_k_1_1_scalar_accessor.html", [
         [ "ChimeraTK::ScalarOutput< float >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
+        [ "ChimeraTK::ScalarPollInput< float >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ],
         [ "ChimeraTK::ScalarPushInput< float >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ]
       ] ]
     ] ],

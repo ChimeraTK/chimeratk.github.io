@@ -1,5 +1,8 @@
 var NAVTREEINDEX12 =
 {
+"test_status_aggregator_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e":[18,0,10,0,25,9],
+"test_status_aggregator_8cc.html#af5e427ae57eeb3d1316ff322cc56680d":[18,0,10,0,25,14],
+"test_status_aggregator_8cc.html#afa4501a6ef1542d2e69c7f612fb0f3c4":[18,0,10,0,25,13],
 "test_status_aggregator_8cc_source.html":[18,0,10,0,25],
 "test_status_module_8cc.html":[18,0,10,0,26],
 "test_status_module_8cc.html#a195b58c0938469c3098f7d3fe1b70822":[18,0,10,0,26,3],
