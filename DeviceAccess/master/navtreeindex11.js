@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"struct_chimera_t_k_1_1_copy_register_decorator.html#a7eed48aa29f299f930ec3cc28bab6923":[18,0,1,10,0],
 "struct_chimera_t_k_1_1_copy_register_decorator.html#ae4e47253eee1f8e86f9dbb64832e3535":[18,0,1,10,2],
 "struct_chimera_t_k_1_1_copy_register_decorator.html#af5b3281ababd53a5567e284517bf6007":[18,0,1,10,4],
 "struct_chimera_t_k_1_1_copy_register_decorator_trait.html":[18,0,1,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "struct_counting_decorator.html#a53f76288b61e1f6b721e9019bcd00ffc":[18,0,18,8],
 "struct_counting_decorator.html#a5776c51ee5d0164147707751ce6f0efa":[18,0,18,5],
 "struct_counting_decorator.html#a5a2933829250c27cf1c595adfe223875":[18,0,18,12],
-"struct_counting_decorator.html#a6b9e847b1caf3cad50aef5bef0aa15f5":[18,0,18,6],
-"struct_counting_decorator.html#a7b4b92ae74dc3f3466ad4cb54b254d16":[18,0,18,15]
+"struct_counting_decorator.html#a6b9e847b1caf3cad50aef5bef0aa15f5":[18,0,18,6]
 };

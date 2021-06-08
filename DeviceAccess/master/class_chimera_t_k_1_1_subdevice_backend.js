@@ -31,5 +31,6 @@ var class_chimera_t_k_1_1_subdevice_backend =
     [ "targetControl", "class_chimera_t_k_1_1_subdevice_backend.html#afe19e61ca78f6ec577b1f65ed15c692f", null ],
     [ "targetData", "class_chimera_t_k_1_1_subdevice_backend.html#a4cb9be498366d571fd497aa3b50f8f04", null ],
     [ "targetDevice", "class_chimera_t_k_1_1_subdevice_backend.html#ab463f31ed49f8490954116ccd58d60ce", null ],
+    [ "timeout", "class_chimera_t_k_1_1_subdevice_backend.html#a1c7f9405794bc11bacaa13ea120dd11b", null ],
     [ "type", "class_chimera_t_k_1_1_subdevice_backend.html#aabbf31c21d868a0a7b7135463c0c1c2b", null ]
 ];

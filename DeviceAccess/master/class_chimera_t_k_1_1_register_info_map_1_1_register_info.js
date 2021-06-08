@@ -10,7 +10,7 @@ var class_chimera_t_k_1_1_register_info_map_1_1_register_info =
       [ "IEEE754", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6b842be755b82e8e9f26f9104aac1600a08cafdf5abafe2886ed7145511176714", null ],
       [ "ASCII", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6b842be755b82e8e9f26f9104aac1600a2fbf8a3df38e98a5d5a95a70e74ad2b5", null ]
     ] ],
-    [ "RegisterInfo", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a308c04180d36b7fa1c0a4294b9a0c4e2", null ],
+    [ "RegisterInfo", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a03359c29c5abc84119cd148c4b394a42", null ],
     [ "RegisterInfo", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a16dd0f55e88e2d104f7a9ab3e14fb335", null ],
     [ "getDataDescriptor", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aa9557afbc83009c30022f9f7237b6f3e", null ],
     [ "getNumberOfChannels", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a86d5bd5caa1c9db167e3e76fba76714a", null ],
@@ -24,7 +24,7 @@ var class_chimera_t_k_1_1_register_info_map_1_1_register_info =
     [ "operator=", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#af18d723d90aa2326af0946ce9468b73f", null ],
     [ "operator<<", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6bfa76543d9f1b5b4bbeea1025396235", null ],
     [ "address", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a260ba0335e85fab9f14f5e6706e4d349", null ],
-    [ "bar", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a31b7738595b55de271d998c5a05f564b", null ],
+    [ "bar", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#afe4c5bcdd76ed520e96aca76b03c38b3", null ],
     [ "dataDescriptor", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a35726baa004e88f0b928d7901708f7cd", null ],
     [ "dataType", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a7e1262bdfc1cfc50032749c54f18bea1", null ],
     [ "is2DMultiplexed", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a863192de94bed8ca4b09a3e70fa58820", null ],

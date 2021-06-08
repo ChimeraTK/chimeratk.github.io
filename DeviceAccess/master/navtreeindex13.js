@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"struct_reg_variable_as_push_parameter_in_math__var2.html#a04076548dded965ee38e1a0e39458782":[18,0,92,2],
 "struct_reg_variable_as_push_parameter_in_math__var2.html#a721d58c0c16144804d55472de0756529":[18,0,92,1],
 "struct_reg_variable_as_push_parameter_in_math__var2.html#ac08568d92e1d8faf2fc4693a6646f402":[18,0,92,0],
 "struct_reg_variable_as_push_parameter_in_math__x.html":[18,0,93],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "test_device_8cpp.html#afbe6214ef57244189cc4018a67f56142":[19,0,7,1,6,9],
 "test_device_8cpp.html#afc1c8480bee545e1592e3c37548c485e":[19,0,7,1,6,18],
 "test_device_8cpp_source.html":[19,0,7,1,6],
-"test_device_info_map_8cpp.html":[19,0,7,1,7],
-"test_device_info_map_8cpp.html#a19823c5af9fff4070c144dacf022bf94":[19,0,7,1,7,2]
+"test_device_info_map_8cpp.html":[19,0,7,1,7]
 };

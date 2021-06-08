@@ -17,6 +17,7 @@ var searchData=
   ['throwexceptionopen',['throwExceptionOpen',['../class_chimera_t_k_1_1_exception_dummy.html#a9c7c34627bb1dc67ca27c0cf2c484774',1,'ChimeraTK::ExceptionDummy']]],
   ['throwexceptionread',['throwExceptionRead',['../class_chimera_t_k_1_1_exception_dummy.html#a0c701089cee0c06f1f34802fb7b9ec14',1,'ChimeraTK::ExceptionDummy']]],
   ['throwexceptionwrite',['throwExceptionWrite',['../class_chimera_t_k_1_1_exception_dummy.html#af64ee2d7f3128cc71e2f2388e3e5bc2e',1,'ChimeraTK::ExceptionDummy']]],
+  ['timeout',['timeout',['../class_chimera_t_k_1_1_subdevice_backend.html#a1c7f9405794bc11bacaa13ea120dd11b',1,'ChimeraTK::SubdeviceBackend']]],
   ['too_5fmuch_5fdata_5frequested',['TOO_MUCH_DATA_REQUESTED',['../class_chimera_t_k_1_1_rebot_dummy_session.html#a0773a814ad9e374200a5af8e77b40dcd',1,'ChimeraTK::RebotDummySession']]],
   ['type',['type',['../class_chimera_t_k_1_1_subdevice_backend.html#aabbf31c21d868a0a7b7135463c0c1c2b',1,'ChimeraTK::SubdeviceBackend']]]
 ];
