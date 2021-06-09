@@ -12,7 +12,7 @@ var searchData=
   ['modifyhierarchy_3c_20chimeratk_3a_3ascalarpushinput_3c_20t_20_3e_20_3e',['ModifyHierarchy&lt; ChimeraTK::ScalarPushInput&lt; T &gt; &gt;',['../struct_chimera_t_k_1_1_modify_hierarchy.html',1,'ChimeraTK']]],
   ['modifyhierarchy_3c_20chimeratk_3a_3astatusoutput_20_3e',['ModifyHierarchy&lt; ChimeraTK::StatusOutput &gt;',['../struct_chimera_t_k_1_1_modify_hierarchy.html',1,'ChimeraTK']]],
   ['module',['Module',['../class_chimera_t_k_1_1_module.html',1,'ChimeraTK']]],
-  ['module1',['Module1',['../struct_module1.html',1,'Module1'],['../struct_test_module_1_1_module1.html',1,'TestModule&lt; T &gt;::Module1']]],
+  ['module1',['Module1',['../struct_test_module_1_1_module1.html',1,'TestModule&lt; T &gt;::Module1'],['../struct_module1.html',1,'Module1']]],
   ['module2',['Module2',['../struct_test_module_1_1_module2.html',1,'TestModule&lt; T &gt;::Module2'],['../struct_module2.html',1,'Module2']]],
   ['module3',['Module3',['../struct_module3.html',1,'']]],
   ['modulea',['ModuleA',['../struct_module_a.html',1,'']]],

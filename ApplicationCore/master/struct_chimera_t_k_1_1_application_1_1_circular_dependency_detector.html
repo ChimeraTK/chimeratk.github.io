@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_application_1_1
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -112,7 +113,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:abd136a913538fb7dde71571fefd44429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call after an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> has received an initial value on the given node.  <a href="#abd136a913538fb7dde71571fefd44429">More...</a><br /></td></tr>
 <tr class="separator:abd136a913538fb7dde71571fefd44429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec37b44e22b4df08160f0e621d268e58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#aec37b44e22b4df08160f0e621d268e58">printWaiters</a> ()</td></tr>
+<tr class="memdesc:aec37b44e22b4df08160f0e621d268e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print modules which are currently waiting for initial values.  <a href="#aec37b44e22b4df08160f0e621d268e58">More...</a><br /></td></tr>
 <tr class="separator:aec37b44e22b4df08160f0e621d268e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bee986c978f70b20aa19e558d9c65ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a6bee986c978f70b20aa19e558d9c65ff">startDetectBlockedModules</a> ()</td></tr>
+<tr class="memdesc:a6bee986c978f70b20aa19e558d9c65ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start detection thread.  <a href="#a6bee986c978f70b20aa19e558d9c65ff">More...</a><br /></td></tr>
+<tr class="separator:a6bee986c978f70b20aa19e558d9c65ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a2d14ce71ee85b9dc94c514ca26467bd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a2d14ce71ee85b9dc94c514ca26467bd9">detectBlockedModules</a> ()</td></tr>
+<tr class="memdesc:a2d14ce71ee85b9dc94c514ca26467bd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function executed in thread.  <a href="#a2d14ce71ee85b9dc94c514ca26467bd9">More...</a><br /></td></tr>
+<tr class="separator:a2d14ce71ee85b9dc94c514ca26467bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -122,12 +133,59 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a772051b2e6116f592b39763b7faa23f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a770a2921a8ddefe5beeed0e81a791e02"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> *, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a770a2921a8ddefe5beeed0e81a791e02">_awaitedVariables</a></td></tr>
 <tr class="separator:a770a2921a8ddefe5beeed0e81a791e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef00492145091d9018720ab1c35cb06"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> *, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a8ef00492145091d9018720ab1c35cb06">_awaitedNodes</a></td></tr>
+<tr class="separator:a8ef00492145091d9018720ab1c35cb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea562afe27d832704adedf2aa5636b06"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#aea562afe27d832704adedf2aa5636b06">_modulesWeHaveWarnedAbout</a></td></tr>
+<tr class="separator:aea562afe27d832704adedf2aa5636b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd44cc954b338d0404520e97b15f37e"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#aadd44cc954b338d0404520e97b15f37e">_devicesWeHaveWarnedAbout</a></td></tr>
+<tr class="separator:aadd44cc954b338d0404520e97b15f37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b95a1eb636fcac3410b9b06fb475d74"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1d">NodeType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a7b95a1eb636fcac3410b9b06fb475d74">_otherThingsWeHaveWarnedAbout</a></td></tr>
+<tr class="separator:a7b95a1eb636fcac3410b9b06fb475d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf4700cb40d381923fcd9cb700a18e44"><td class="memItemLeft" align="right" valign="top">std::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#acf4700cb40d381923fcd9cb700a18e44">_thread</a></td></tr>
+<tr class="separator:acf4700cb40d381923fcd9cb700a18e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Detection mechanism for cirular dependencies of initial values in ApplicationModules. </p>
 
 <p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00214">214</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2d14ce71ee85b9dc94c514ca26467bd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d14ce71ee85b9dc94c514ca26467bd9">&#9670;&nbsp;</a></span>detectBlockedModules()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::CircularDependencyDetector::detectBlockedModules </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function executed in thread. </p>
+
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01515">1515</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_a2d14ce71ee85b9dc94c514ca26467bd9_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
 <a id="aec37b44e22b4df08160f0e621d268e58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec37b44e22b4df08160f0e621d268e58">&#9670;&nbsp;</a></span>printWaiters()</h2>
 
@@ -143,20 +201,22 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01477">1477</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_aec37b44e22b4df08160f0e621d268e58_cgraph.svg" width="451" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p>Print modules which are currently waiting for initial values. </p>
+
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01486">1486</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_aec37b44e22b4df08160f0e621d268e58_cgraph.svg" width="451" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_aec37b44e22b4df08160f0e621d268e58_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -182,21 +242,50 @@ Protected Attributes</h2></td></tr>
 <p>Call before an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> waits for an initial value on the given node. </p>
 <p>Calls with non-Application-typed nodes are ignored. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01411">1411</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_a6ba63aa3d36361aad82113e8f31ecb8d_cgraph.svg" width="100%" height="535"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01414">1414</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_a6ba63aa3d36361aad82113e8f31ecb8d_cgraph.svg" width="100%" height="535"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_a6ba63aa3d36361aad82113e8f31ecb8d_icgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a6bee986c978f70b20aa19e558d9c65ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bee986c978f70b20aa19e558d9c65ff">&#9670;&nbsp;</a></span>startDetectBlockedModules()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::CircularDependencyDetector::startDetectBlockedModules </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start detection thread. </p>
+
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01509">1509</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_a6bee986c978f70b20aa19e558d9c65ff_icgraph.svg" width="100%" height="481"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -221,20 +310,20 @@ Protected Attributes</h2></td></tr>
 <p>Call after an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> has received an initial value on the given node. </p>
 <p>Calls with non-Application-typed nodes are ignored. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01489">1489</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01498">1498</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_abd136a913538fb7dde71571fefd44429_cgraph.svg" width="100%" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_abd136a913538fb7dde71571fefd44429_cgraph.svg" width="487" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_abd136a913538fb7dde71571fefd44429_icgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -242,6 +331,30 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8ef00492145091d9018720ab1c35cb06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef00492145091d9018720ab1c35cb06">&#9670;&nbsp;</a></span>_awaitedNodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a>*, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html">VariableNetworkNode</a>&gt; ChimeraTK::Application::CircularDependencyDetector::_awaitedNodes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00236">236</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+
+</div>
+</div>
 <a id="a770a2921a8ddefe5beeed0e81a791e02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a770a2921a8ddefe5beeed0e81a791e02">&#9670;&nbsp;</a></span>_awaitedVariables</h2>
 
@@ -262,7 +375,55 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00228">228</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00235">235</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+
+</div>
+</div>
+<a id="aadd44cc954b338d0404520e97b15f37e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadd44cc954b338d0404520e97b15f37e">&#9670;&nbsp;</a></span>_devicesWeHaveWarnedAbout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_set&lt;std::string&gt; ChimeraTK::Application::CircularDependencyDetector::_devicesWeHaveWarnedAbout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00238">238</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+
+</div>
+</div>
+<a id="aea562afe27d832704adedf2aa5636b06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea562afe27d832704adedf2aa5636b06">&#9670;&nbsp;</a></span>_modulesWeHaveWarnedAbout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_set&lt;<a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a>*&gt; ChimeraTK::Application::CircularDependencyDetector::_modulesWeHaveWarnedAbout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00237">237</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -286,7 +447,55 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00226">226</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00233">233</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+
+</div>
+</div>
+<a id="a7b95a1eb636fcac3410b9b06fb475d74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b95a1eb636fcac3410b9b06fb475d74">&#9670;&nbsp;</a></span>_otherThingsWeHaveWarnedAbout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_set&lt;<a class="el" href="namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1d">NodeType</a>&gt; ChimeraTK::Application::CircularDependencyDetector::_otherThingsWeHaveWarnedAbout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00239">239</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+
+</div>
+</div>
+<a id="acf4700cb40d381923fcd9cb700a18e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf4700cb40d381923fcd9cb700a18e44">&#9670;&nbsp;</a></span>_thread</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::thread ChimeraTK::Application::CircularDependencyDetector::_thread</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00240">240</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -310,7 +519,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00227">227</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00234">234</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -324,7 +533,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_application.html">Application</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html">CircularDependencyDetector</a></li>
-    <li class="footer">Generated on Sat Jun 5 2021 03:54:45 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Jun 9 2021 03:54:53 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
