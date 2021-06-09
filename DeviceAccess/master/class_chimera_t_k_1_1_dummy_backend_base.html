@@ -114,9 +114,9 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_dummy_backend_ba
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a9ff81c5e9d05a5b404730c034e80489b"><td class="memItemLeft" align="right" valign="top">std::map&lt; uint8_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a9ff81c5e9d05a5b404730c034e80489b">getBarSizesInBytesFromRegisterMapping</a> () const</td></tr>
-<tr class="memdesc:a9ff81c5e9d05a5b404730c034e80489b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the size of each bar because the DummyBackends allocate memory per bar.  <a href="#a9ff81c5e9d05a5b404730c034e80489b">More...</a><br /></td></tr>
-<tr class="separator:a9ff81c5e9d05a5b404730c034e80489b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc4da0d3b5c384c642ff037c8af8c03"><td class="memItemLeft" align="right" valign="top">std::map&lt; uint64_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a0bc4da0d3b5c384c642ff037c8af8c03">getBarSizesInBytesFromRegisterMapping</a> () const</td></tr>
+<tr class="memdesc:a0bc4da0d3b5c384c642ff037c8af8c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the size of each bar because the DummyBackends allocate memory per bar.  <a href="#a0bc4da0d3b5c384c642ff037c8af8c03">More...</a><br /></td></tr>
+<tr class="separator:a0bc4da0d3b5c384c642ff037c8af8c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ee47a5bf8e65b0ad71dee3e2905cecb"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:a0ee47a5bf8e65b0ad71dee3e2905cecb"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html#a0ee47a5bf8e65b0ad71dee3e2905cecb">getRegisterAccessor_impl</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
 <tr class="memdesc:a0ee47a5bf8e65b0ad71dee3e2905cecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specific override which allows to create "DUMMY_WRITEABLE" accessors for read-only registers.  <a href="#a0ee47a5bf8e65b0ad71dee3e2905cecb">More...</a><br /></td></tr>
@@ -264,12 +264,12 @@ template&lt;typename DerivedBackendType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00066">66</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00085">85</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
 
 </div>
 </div>
-<a id="a9ff81c5e9d05a5b404730c034e80489b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ff81c5e9d05a5b404730c034e80489b">&#9670;&nbsp;</a></span>getBarSizesInBytesFromRegisterMapping()</h2>
+<a id="a0bc4da0d3b5c384c642ff037c8af8c03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bc4da0d3b5c384c642ff037c8af8c03">&#9670;&nbsp;</a></span>getBarSizesInBytesFromRegisterMapping()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -280,7 +280,7 @@ template&lt;typename DerivedBackendType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;uint8_t, size_t&gt; <a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html">ChimeraTK::DummyBackendBase</a>&lt; DerivedBackendType &gt;::getBarSizesInBytesFromRegisterMapping </td>
+          <td class="memname">std::map&lt;uint64_t, size_t&gt; <a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html">ChimeraTK::DummyBackendBase</a>&lt; DerivedBackendType &gt;::getBarSizesInBytesFromRegisterMapping </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -295,7 +295,7 @@ template&lt;typename DerivedBackendType&gt; </div>
 
 <p>Determines the size of each bar because the DummyBackends allocate memory per bar. </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00056">56</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00075">75</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
 
 </div>
 </div>
@@ -351,7 +351,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Specific override which allows to create "DUMMY_WRITEABLE" accessors for read-only registers. </p>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00074">74</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00093">93</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
 
 </div>
 </div>
@@ -403,7 +403,7 @@ template&lt;typename T , typename... Args&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00155">155</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00174">174</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
 
 </div>
 </div>
@@ -430,7 +430,7 @@ template&lt;typename DerivedBackendType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00053">53</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00072">72</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
 
 </div>
 </div>
@@ -443,7 +443,7 @@ template&lt;typename DerivedBackendType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html">DummyBackendBase</a></li>
-    <li class="footer">Generated on Tue Jun 8 2021 03:53:23 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Jun 9 2021 03:53:24 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

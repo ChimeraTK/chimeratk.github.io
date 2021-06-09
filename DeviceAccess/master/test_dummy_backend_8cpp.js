@@ -13,7 +13,6 @@ var test_dummy_backend_8cpp =
     [ "STATUS_REGISTER_STRING", "test_dummy_backend_8cpp.html#ab771a5738d0a773e772ceb42fa26410c", null ],
     [ "TEST_MAPPING_FILE", "test_dummy_backend_8cpp.html#a38f38ba495b8a4f934b9d5813da42bde", null ],
     [ "USER_REGISTER_STRING", "test_dummy_backend_8cpp.html#a3666956980c94e99f82e036ef8b34395", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#a38594dc762d585c7aefc2a7416318516", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#aa5eeaf24a63e9bca0028cb3a16ad8fae", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#a4fe660407b9da474afad32e82fe3fcce", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_dummy_backend_8cpp.html#ab06a38a38e27df0bbb75bbf0612ad14a", null ],

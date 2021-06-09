@@ -41,8 +41,6 @@ var NAVTREEINDEX0 =
 "_device_info_map_8cc.html#afb99f6118424df3932ed1c7d42398661":[19,0,4,1,0,0],
 "_device_info_map_8cc_source.html":[19,0,4,1,0],
 "_dummy_backend_8cc.html":[19,0,1,5,3],
-"_dummy_backend_8cc.html#a48e5529d117d16700b4f1487d510e94c":[19,0,1,5,3,0],
-"_dummy_backend_8cc.html#a83f8ba2a957f8ec51579c647ba6c51b3":[19,0,1,5,3,1],
 "_dummy_backend_8cc_source.html":[19,0,1,5,3],
 "_dummy_backend_base_8h.html":[19,0,1,0,5],
 "_dummy_backend_base_8h.html#ae845db7f933611bff0617577388e4c4f":[19,0,1,0,5,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX0 =
 "_utilities_8cpp.html#a8c117b1197fc52428981490a838ccf0c":[19,0,8,1,1,0],
 "_utilities_8cpp.html#ac081e51ebc9ef4fe64b469290d39b7a2":[19,0,8,1,1,1],
 "_utilities_8cpp_source.html":[19,0,8,1,1],
-"_version_number_8cc.html":[19,0,0,1,6]
+"_version_number_8cc.html":[19,0,0,1,6],
+"_version_number_8cc_source.html":[19,0,0,1,6],
+"_working_backend_8cc.html":[19,0,7,0,2]
 };

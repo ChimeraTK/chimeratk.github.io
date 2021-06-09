@@ -167,7 +167,7 @@ struct ChimeraTK::TestCapabilities&lt; _syncRead, _forceDataLossWrite, _asyncRea
 <p>static constexpr auto capabilities = <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a8a2ae52c6248058b176567410b782e5c">TestCapabilities&lt;&gt;()</a>.<a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a79b24f005032b4635dadece6a35dd664" title="See setForceDataLossWrite() function in the register descriptor. ">enableForceDataLossWrite()</a>.<a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#acc443edf5ddec1f6c5e1d40bc8e22d5f">disableAsyncReadInconsistency()</a>;</p>
 <p>Use any number of enable/disable functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00044">44</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00045">45</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8a2ae52c6248058b176567410b782e5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a2ae52c6248058b176567410b782e5c">&#9670;&nbsp;</a></span>TestCapabilities()</h2>
@@ -194,7 +194,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00045">45</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00046">46</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -224,7 +224,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00080">80</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00081">81</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +253,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00068">68</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00069">69</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -282,7 +282,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00092">92</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00093">93</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +311,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00104">104</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00105">105</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -343,7 +343,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 <p>Allows to prevent the test from executing any synchronous read tests. </p>
 <p>This should be used only when testing TransferElements which do not support reads without <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a>, like e.g. the ControlSystemAdapter BidirectionalProcessArray. TransferElements handed out by real backends must always support this, to the syncReadTests capability should be enable for all backend tests. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00054">54</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00055">55</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +372,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00144">144</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00145">145</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00120">120</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00121">121</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -430,7 +430,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00132">132</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00133">133</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -461,7 +461,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 
 <p>See forceAsyncReadInconsistency() function in the register descriptor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00075">75</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00076">76</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -492,7 +492,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 
 <p>See setForceDataLossWrite() function in the register descriptor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00061">61</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00062">62</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -523,7 +523,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 
 <p>See <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#ae6f1bdeae87455aba28211fcee335e07">switchReadOnly()</a> function in the register descriptor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00087">87</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00088">88</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -554,7 +554,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 
 <p>See <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#ad7fe457dca37a33e5cea24e51e39cd12">switchWriteOnly()</a> function in the register descriptor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00099">99</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00100">100</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -585,7 +585,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 
 <p>Enable/disable testing only read operations, even if the register is readable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00139">139</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00140">140</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -617,7 +617,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 <p>Enable/disable test whether write transfers never report lost data (part of B.7.2). </p>
 <p>A series of writeQueueLength writes is performed and no data loss must be reported. Mutually exclusive with <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html#a79b24f005032b4635dadece6a35dd664" title="See setForceDataLossWrite() function in the register descriptor. ">enableForceDataLossWrite()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00113">113</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00114">114</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -648,7 +648,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 
 <p>Enable/disable testing only write operations, even if the register is readable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00127">127</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00128">128</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -675,7 +675,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00150">150</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00151">151</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -701,7 +701,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00149">149</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00150">150</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -727,7 +727,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00151">151</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00152">152</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -753,7 +753,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00152">152</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00153">153</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -779,7 +779,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00148">148</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00149">149</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -805,7 +805,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00155">155</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00156">156</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -831,7 +831,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00154">154</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00155">155</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -857,7 +857,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00153">153</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unified_backend_test_8h_source.html#l00154">154</a> of file <a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>.</p>
 
 </div>
 </div>
@@ -870,7 +870,7 @@ template&lt;TestCapability _syncRead = TestCapability::enabled, TestCapability _
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a></li>
-    <li class="footer">Generated on Tue Jun 8 2021 03:53:24 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Jun 9 2021 03:53:25 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

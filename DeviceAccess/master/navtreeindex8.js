@@ -1,8 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"class_map_file_test.html#a2855928f624776cc625be88db64320fe":[18,0,43,2],
-"class_map_file_test.html#a3e19629bb33c26e08f3707170990b4a4":[18,0,43,8],
-"class_map_file_test.html#a808608820fe5b4c10c5b34540eb6e534":[18,0,43,7],
 "class_map_file_test.html#ab1e012e22d189ed88d18d60acefc21de":[18,0,43,4],
 "class_map_file_test.html#ac535c64d74b2de4711e46f782a844815":[18,0,43,1],
 "class_map_file_test.html#ac76d05f3349b216cc879ce7325b8074a":[18,0,43,5],
@@ -59,12 +56,12 @@ var NAVTREEINDEX8 =
 "class_test_dummy.html":[18,0,111],
 "class_test_dummy.html#a264a3c4c6a5c347c9b11b9372baa4daf":[18,0,111,5],
 "class_test_dummy.html#a30e519979fca2e5552a50e447d62bb00":[18,0,111,7],
+"class_test_dummy.html#a4286ed170b0c40a9fb52e8e757a37714":[18,0,111,2],
 "class_test_dummy.html#a544f444e8aabb40f58d017b5e1fd8f60":[18,0,111,1],
 "class_test_dummy.html#a63928a153b1c1fb645c8d988bd8427b5":[18,0,111,6],
 "class_test_dummy.html#a72ef645efb10190c2c01a38d8c901d71":[18,0,111,4],
 "class_test_dummy.html#aa1ede7926941251b65bf46228033fb63":[18,0,111,8],
 "class_test_dummy.html#aa5067318f24c35303b5316d122b8f362":[18,0,111,3],
-"class_test_dummy.html#aaeabcba82a33d4f0cd44d68bc10089a2":[18,0,111,2],
 "class_test_dummy_1_1_backend_registerer.html":[18,0,111,0],
 "class_test_dummy_1_1_backend_registerer.html#a3ddcdbcee40de9541c2311c1edb59499":[18,0,111,0,0],
 "class_testable_device.html":[18,0,109],
@@ -72,8 +69,8 @@ var NAVTREEINDEX8 =
 "class_testable_dummy_backend.html":[18,0,110],
 "class_testable_dummy_backend.html#a08acddf64f5cfdad67b81d93811b176a":[18,0,110,3],
 "class_testable_dummy_backend.html#a225ea9c4f235aaa2938de2f75d4934a5":[18,0,110,5],
-"class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a":[18,0,110,2],
 "class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a":[18,0,110,1],
+"class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a":[18,0,110,2],
 "class_testable_dummy_backend.html#aa9ee83d4709bd52b2f3d9510c2e6c7d3":[18,0,110,4],
 "class_testable_dummy_backend_1_1_backend_registerer.html":[18,0,110,0],
 "class_testable_dummy_backend_1_1_backend_registerer.html#ae9f09c49a5a061b967552bb6b540fdb4":[18,0,110,0,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX8 =
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a07aad6c0ab1a1d0386c51904d1d4e481":[19,0,1,2,0,2,20],
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a0ce58a436c9a78d135964a5b62c0dfd5":[19,0,1,2,0,2,21],
 "device__backends_2pcie_2include_2pciedev__io_8h.html#a198b5f4fef9dff99b6c27836f972bc19":[19,0,1,2,0,2,37],
-"device__backends_2pcie_2include_2pciedev__io_8h.html#a1dc1215c881918ae78af0f20713b05a5":[19,0,1,2,0,2,12]
+"device__backends_2pcie_2include_2pciedev__io_8h.html#a1dc1215c881918ae78af0f20713b05a5":[19,0,1,2,0,2,12],
+"device__backends_2pcie_2include_2pciedev__io_8h.html#a1fce441aaa962f572d643140658a6e4c":[19,0,1,2,0,2,4],
+"device__backends_2pcie_2include_2pciedev__io_8h.html#a2140cdb4612e1aeb483572affbeb9f20":[19,0,1,2,0,2,17],
+"device__backends_2pcie_2include_2pciedev__io_8h.html#a2aa7940c0614fa9c0c1031e028db6fc0":[19,0,1,2,0,2,19]
 };

@@ -17,6 +17,7 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testFloatRawData.cpp", "test_float_raw_data_8cpp.html", "test_float_raw_data_8cpp" ],
     [ "testGetSetAsCoocked.cpp", "test_get_set_as_coocked_8cpp.html", "test_get_set_as_coocked_8cpp" ],
     [ "testIEEE754_SingleConverter.cpp", "test_i_e_e_e754___single_converter_8cpp.html", "test_i_e_e_e754___single_converter_8cpp" ],
+    [ "testLargeBar.cpp", "test_large_bar_8cpp.html", "test_large_bar_8cpp" ],
     [ "testLMapBackend.cpp", "test_l_map_backend_8cpp.html", "test_l_map_backend_8cpp" ],
     [ "testLMapBackendUnified.cpp", "test_l_map_backend_unified_8cpp.html", "test_l_map_backend_unified_8cpp" ],
     [ "testLMapFile.cpp", "test_l_map_file_8cpp.html", "test_l_map_file_8cpp" ],

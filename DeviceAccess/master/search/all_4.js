@@ -1,7 +1,6 @@
 var searchData=
 [
   ['c',['c',['../class_fixture__t.html#a554b41c58dfedc3f15f8a9251bc06e54',1,'Fixture_t']]],
-  ['calculatevirtualaddress',['calculateVirtualAddress',['../class_chimera_t_k_1_1_dummy_backend.html#ab9d14e393cb50167be33df831344d911',1,'ChimeraTK::DummyBackend']]],
   ['call_5fvirtual_5ffunction_5ftemplate',['CALL_VIRTUAL_FUNCTION_TEMPLATE',['../util_2include_2_virtual_function_template_8h.html#a9ae25c66f893b5dffc9251887f2bb9a5',1,'VirtualFunctionTemplate.h']]],
   ['called_5fregisterbackendtype',['called_registerBackendType',['../class_chimera_t_k_1_1_backend_factory.html#aa75990b6944f9e6bb5bb4d50a1aab723',1,'ChimeraTK::BackendFactory']]],
   ['callforrawtype',['callForRawType',['../namespace_chimera_t_k.html#a0c6a8b37004cfe48be8855986e1316c8',1,'ChimeraTK']]],

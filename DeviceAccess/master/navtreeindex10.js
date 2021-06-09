@@ -1,8 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"index.html#first_steps":[0],
-"lmap.html":[7],
-"lmap.html#cdd":[7,0],
 "lmap.html#internal_redirect":[7,1,1],
 "lmap.html#map":[7,1],
 "lmap.html#plugins":[7,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX10 =
 "struct_channel_register_descriptor_base.html#a8925d9bf44be7f9850b68cef4b515c15":[18,0,16,2],
 "struct_chimera_t_k_1_1_copy_register_decorator.html":[18,0,1,10],
 "struct_chimera_t_k_1_1_copy_register_decorator.html#a3862add181c233c1f80365008e87a57d":[18,0,1,10,1],
-"struct_chimera_t_k_1_1_copy_register_decorator.html#a762babb29356600d740f549482d50c68":[18,0,1,10,3]
+"struct_chimera_t_k_1_1_copy_register_decorator.html#a762babb29356600d740f549482d50c68":[18,0,1,10,3],
+"struct_chimera_t_k_1_1_copy_register_decorator.html#a7eed48aa29f299f930ec3cc28bab6923":[18,0,1,10,0],
+"struct_chimera_t_k_1_1_copy_register_decorator.html#ae4e47253eee1f8e86f9dbb64832e3535":[18,0,1,10,2],
+"struct_chimera_t_k_1_1_copy_register_decorator.html#af5b3281ababd53a5567e284517bf6007":[18,0,1,10,4]
 };
