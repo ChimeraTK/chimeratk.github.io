@@ -41,6 +41,7 @@ var namespace_chimera_t_k =
     [ "FunctorSetValuesArray", "struct_chimera_t_k_1_1_functor_set_values_array.html", "struct_chimera_t_k_1_1_functor_set_values_array" ],
     [ "HierarchyModifyingGroup", "struct_chimera_t_k_1_1_hierarchy_modifying_group.html", "struct_chimera_t_k_1_1_hierarchy_modifying_group" ],
     [ "InternalModule", "class_chimera_t_k_1_1_internal_module.html", "class_chimera_t_k_1_1_internal_module" ],
+    [ "InvalidityTracer", "struct_chimera_t_k_1_1_invalidity_tracer.html", "struct_chimera_t_k_1_1_invalidity_tracer" ],
     [ "InversionOfControlAccessor", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", "class_chimera_t_k_1_1_inversion_of_control_accessor" ],
     [ "LimitValue", "struct_chimera_t_k_1_1_limit_value.html", "struct_chimera_t_k_1_1_limit_value" ],
     [ "LimitValueModuleBase", "struct_chimera_t_k_1_1_limit_value_module_base.html", "struct_chimera_t_k_1_1_limit_value_module_base" ],

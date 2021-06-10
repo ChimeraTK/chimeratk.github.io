@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_application_1_1
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ChimeraTK::Application::CircularDependencyDetector Struct Reference</div>  </div>
@@ -115,12 +116,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aec37b44e22b4df08160f0e621d268e58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#aec37b44e22b4df08160f0e621d268e58">printWaiters</a> ()</td></tr>
 <tr class="memdesc:aec37b44e22b4df08160f0e621d268e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print modules which are currently waiting for initial values.  <a href="#aec37b44e22b4df08160f0e621d268e58">More...</a><br /></td></tr>
 <tr class="separator:aec37b44e22b4df08160f0e621d268e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bee986c978f70b20aa19e558d9c65ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a6bee986c978f70b20aa19e558d9c65ff">startDetectBlockedModules</a> ()</td></tr>
-<tr class="memdesc:a6bee986c978f70b20aa19e558d9c65ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start detection thread.  <a href="#a6bee986c978f70b20aa19e558d9c65ff">More...</a><br /></td></tr>
-<tr class="separator:a6bee986c978f70b20aa19e558d9c65ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c38cc68dbc3af885fbf227f6555341c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a4c38cc68dbc3af885fbf227f6555341c">~CircularDependencyDetector</a> ()</td></tr>
+<tr class="separator:a4c38cc68dbc3af885fbf227f6555341c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6bee986c978f70b20aa19e558d9c65ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a6bee986c978f70b20aa19e558d9c65ff">startDetectBlockedModules</a> ()</td></tr>
+<tr class="memdesc:a6bee986c978f70b20aa19e558d9c65ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start detection thread.  <a href="#a6bee986c978f70b20aa19e558d9c65ff">More...</a><br /></td></tr>
+<tr class="separator:a6bee986c978f70b20aa19e558d9c65ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d14ce71ee85b9dc94c514ca26467bd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a2d14ce71ee85b9dc94c514ca26467bd9">detectBlockedModules</a> ()</td></tr>
 <tr class="memdesc:a2d14ce71ee85b9dc94c514ca26467bd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function executed in thread.  <a href="#a2d14ce71ee85b9dc94c514ca26467bd9">More...</a><br /></td></tr>
 <tr class="separator:a2d14ce71ee85b9dc94c514ca26467bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,14 +144,39 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:aadd44cc954b338d0404520e97b15f37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b95a1eb636fcac3410b9b06fb475d74"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1d">NodeType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a7b95a1eb636fcac3410b9b06fb475d74">_otherThingsWeHaveWarnedAbout</a></td></tr>
 <tr class="separator:a7b95a1eb636fcac3410b9b06fb475d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf4700cb40d381923fcd9cb700a18e44"><td class="memItemLeft" align="right" valign="top">std::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#acf4700cb40d381923fcd9cb700a18e44">_thread</a></td></tr>
-<tr class="separator:acf4700cb40d381923fcd9cb700a18e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3433011030990227cc0ad271a84886c6"><td class="memItemLeft" align="right" valign="top">boost::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a3433011030990227cc0ad271a84886c6">_thread</a></td></tr>
+<tr class="separator:a3433011030990227cc0ad271a84886c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a23f25bcc02a0e94c2f5a4188496b04d0"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a23f25bcc02a0e94c2f5a4188496b04d0">Application</a></td></tr>
+<tr class="separator:a23f25bcc02a0e94c2f5a4188496b04d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Detection mechanism for cirular dependencies of initial values in ApplicationModules. </p>
 
 <p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00214">214</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4c38cc68dbc3af885fbf227f6555341c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c38cc68dbc3af885fbf227f6555341c">&#9670;&nbsp;</a></span>~CircularDependencyDetector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Application::CircularDependencyDetector::~CircularDependencyDetector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01627">1627</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2d14ce71ee85b9dc94c514ca26467bd9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d14ce71ee85b9dc94c514ca26467bd9">&#9670;&nbsp;</a></span>detectBlockedModules()</h2>
 
@@ -174,7 +202,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Function executed in thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01515">1515</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01516">1516</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -203,7 +231,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Print modules which are currently waiting for initial values. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01486">1486</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01487">1487</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -242,7 +270,7 @@ Protected Attributes</h2></td></tr>
 <p>Call before an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> waits for an initial value on the given node. </p>
 <p>Calls with non-Application-typed nodes are ignored. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01414">1414</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01415">1415</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -267,6 +295,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Application::CircularDependencyDetector::startDetectBlockedModules </td>
@@ -275,11 +306,16 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Start detection thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01509">1509</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01510">1510</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -310,7 +346,7 @@ Protected Attributes</h2></td></tr>
 <p>Call after an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> has received an initial value on the given node. </p>
 <p>Calls with non-Application-typed nodes are ignored. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01498">1498</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01499">1499</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -327,6 +363,31 @@ Protected Attributes</h2></td></tr>
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_abd136a913538fb7dde71571fefd44429_icgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a23f25bcc02a0e94c2f5a4188496b04d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f25bcc02a0e94c2f5a4188496b04d0">&#9670;&nbsp;</a></span>Application</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00244">244</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -351,7 +412,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00236">236</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00238">238</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -375,7 +436,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00235">235</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00237">237</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -399,7 +460,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00238">238</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00240">240</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -423,7 +484,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00237">237</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00239">239</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -447,7 +508,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00233">233</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00235">235</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -471,12 +532,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00239">239</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00241">241</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
-<a id="acf4700cb40d381923fcd9cb700a18e44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf4700cb40d381923fcd9cb700a18e44">&#9670;&nbsp;</a></span>_thread</h2>
+<a id="a3433011030990227cc0ad271a84886c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3433011030990227cc0ad271a84886c6">&#9670;&nbsp;</a></span>_thread</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -485,7 +546,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::thread ChimeraTK::Application::CircularDependencyDetector::_thread</td>
+          <td class="memname">boost::thread ChimeraTK::Application::CircularDependencyDetector::_thread</td>
         </tr>
       </table>
   </td>
@@ -495,7 +556,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00240">240</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00242">242</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -519,7 +580,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00234">234</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00236">236</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -533,7 +594,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_application.html">Application</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html">CircularDependencyDetector</a></li>
-    <li class="footer">Generated on Wed Jun 9 2021 03:54:53 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Jun 10 2021 03:54:38 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

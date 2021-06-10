@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_meta_data_propag
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_chimera_t_k_1_1_meta_data_propagation_flag_provider-members.html">List of all members</a>  </div>
@@ -103,10 +104,19 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_meta_data_propag
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a6f24f40cf33d01d756d2364ee4054c46"><td class="memItemLeft" align="right" valign="top">DataValidity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_meta_data_propagation_flag_provider.html#a6f24f40cf33d01d756d2364ee4054c46">getLastValidity</a> () const</td></tr>
+<tr class="separator:a6f24f40cf33d01d756d2364ee4054c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a9bd93e480a9fa42445318b99059acc11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_meta_data_propagation_flag_provider.html#a9bd93e480a9fa42445318b99059acc11">_isCircularInput</a> {false}</td></tr>
+<tr class="memdesc:a9bd93e480a9fa42445318b99059acc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether this is decorating a circular input.  <a href="#a9bd93e480a9fa42445318b99059acc11">More...</a><br /></td></tr>
 <tr class="separator:a9bd93e480a9fa42445318b99059acc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176a0f57ddcdabcf1f39ec9f8d4d7135"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; DataValidity &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_meta_data_propagation_flag_provider.html#a176a0f57ddcdabcf1f39ec9f8d4d7135">lastValidity</a> {DataValidity::ok}</td></tr>
+<tr class="memdesc:a176a0f57ddcdabcf1f39ec9f8d4d7135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value of validity flag from last read or write operation.  <a href="#a176a0f57ddcdabcf1f39ec9f8d4d7135">More...</a><br /></td></tr>
+<tr class="separator:a176a0f57ddcdabcf1f39ec9f8d4d7135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -116,8 +126,36 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A mix-in helper class so you can set the flags without knowing the user data type. </p>
 
-<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00016">16</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
-</div><h2 class="groupheader">Friends And Related Function Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00017">17</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6f24f40cf33d01d756d2364ee4054c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f24f40cf33d01d756d2364ee4054c46">&#9670;&nbsp;</a></span>getLastValidity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataValidity ChimeraTK::MetaDataPropagationFlagProvider::getLastValidity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00019">19</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
 <a id="a6834042482a4ce821c0bd9ba7eaa6d80"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6834042482a4ce821c0bd9ba7eaa6d80">&#9670;&nbsp;</a></span>VariableNetworkNode</h2>
 
@@ -138,7 +176,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00022">22</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00035">35</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -163,7 +201,36 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00018">18</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
+<p>Flag whether this is decorating a circular input. </p>
+
+<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00025">25</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
+
+</div>
+</div>
+<a id="a176a0f57ddcdabcf1f39ec9f8d4d7135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a176a0f57ddcdabcf1f39ec9f8d4d7135">&#9670;&nbsp;</a></span>lastValidity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;DataValidity&gt; ChimeraTK::MetaDataPropagationFlagProvider::lastValidity {DataValidity::ok}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Value of validity flag from last read or write operation. </p>
+<p>This is atomic to allow the <a class="el" href="struct_chimera_t_k_1_1_invalidity_tracer.html">InvalidityTracer</a> module to access this information. </p>
+
+<p class="definition">Definition at line <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html#l00031">31</a> of file <a class="el" href="_meta_data_propagating_register_decorator_8h_source.html">MetaDataPropagatingRegisterDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -176,7 +243,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_meta_data_propagation_flag_provider.html">MetaDataPropagationFlagProvider</a></li>
-    <li class="footer">Generated on Wed Jun 9 2021 03:54:53 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Jun 10 2021 03:54:39 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

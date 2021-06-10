@@ -22,6 +22,6 @@ var class_chimera_t_k_1_1_application_module =
     [ "_circularNetworkHash", "class_chimera_t_k_1_1_application_module.html#ac27b74907d1d37e17539d3399eb60b21", null ],
     [ "_recursionStopper", "class_chimera_t_k_1_1_application_module.html#a4714f0858da3bda2b8179f472840b5cd", null ],
     [ "currentVersionNumber", "class_chimera_t_k_1_1_application_module.html#ad8476bb19cd8ded587db75a19b9ffa15", null ],
-    [ "dataFaultCounter", "class_chimera_t_k_1_1_application_module.html#a2bd9acaa66ad5954acd207efade11cf3", null ],
+    [ "dataFaultCounter", "class_chimera_t_k_1_1_application_module.html#a9a83283d70b2821ad742f881de38ae18", null ],
     [ "moduleThread", "class_chimera_t_k_1_1_application_module.html#a6da2ea5bac29df0a1c69c5117a0e57e0", null ]
 ];

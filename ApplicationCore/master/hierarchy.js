@@ -122,6 +122,7 @@ var hierarchy =
             [ "ChimeraTK::Divider< InputType, OutputType, NELEMS >", "struct_chimera_t_k_1_1_divider.html", null ],
             [ "ChimeraTK::ExactMonitor< T >", "struct_chimera_t_k_1_1_exact_monitor.html", null ],
             [ "ChimeraTK::history::ServerHistory", "struct_chimera_t_k_1_1history_1_1_server_history.html", null ],
+            [ "ChimeraTK::InvalidityTracer", "struct_chimera_t_k_1_1_invalidity_tracer.html", null ],
             [ "ChimeraTK::LimitValueModuleBase< UserType >", "struct_chimera_t_k_1_1_limit_value_module_base.html", [
               [ "ChimeraTK::FixedLimitValue< UserType, min, max >", "struct_chimera_t_k_1_1_fixed_limit_value.html", null ],
               [ "ChimeraTK::LimitValue< UserType >", "struct_chimera_t_k_1_1_limit_value.html", null ]

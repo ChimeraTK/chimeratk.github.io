@@ -16,6 +16,9 @@ var dir_b74252328106591dfb0d36463b609fd4 =
       [ "TriggerGroup", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group.html", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group" ],
       [ "TriggerGroup_compat", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat" ]
     ] ],
+    [ "InvalidityTracer.h", "_invalidity_tracer_8h.html", [
+      [ "InvalidityTracer", "struct_chimera_t_k_1_1_invalidity_tracer.html", "struct_chimera_t_k_1_1_invalidity_tracer" ]
+    ] ],
     [ "LimitValue.h", "_limit_value_8h.html", [
       [ "LimitValueModuleBase", "struct_chimera_t_k_1_1_limit_value_module_base.html", "struct_chimera_t_k_1_1_limit_value_module_base" ],
       [ "LimitValue", "struct_chimera_t_k_1_1_limit_value.html", "struct_chimera_t_k_1_1_limit_value" ],

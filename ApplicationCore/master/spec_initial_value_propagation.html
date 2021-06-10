@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <div class="textblock"><p><b>DRAFT VERSION, WRITE-UP IN PROGRESS!</b></p>
 <h2>A. Introduction</h2>
 <p>This document describes how initial values are propagated from the control system persistency layer, from the devices and from application modules into the attached components (control system, devices and other application modules).</p>
-<p>This specification goes beyond ApplicationCore. It has impact on other <a class="el" href="namespace_chimera_t_k.html" title="Generic modules for status monitoring. ">ChimeraTK</a> libraries like DeviceAccess, the ControlSystemAdapter and even backends and adapter implementations.</p>
+<p>This specification goes beyond ApplicationCore. It has impact on other <a class="el" href="namespace_chimera_t_k.html" title="InvalidityTracer application module. ">ChimeraTK</a> libraries like DeviceAccess, the ControlSystemAdapter and even backends and adapter implementations.</p>
 <h2>B. Definitions</h2>
 <ul>
 <li>Initial value: The start value of a process variable. The value is available to the receiving end of the process variable at a well defined point in time at the start. This is a logical concept. It is to be distinguished from the (often hardcoded) "value after construction" of the <code>ProcessArray</code> or any other <code>NDRegisterAccessor</code> implementation. The point in time when the value becomes available is well-defined, as described in the section C (high-level requirements).</li>
@@ -252,7 +252,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>2. is not implemented for Device implementations (only the <code>UnidirectionalProcessArray</code> is correct at the moment).</li>
 <li>Exceptions are currently thrown in the wrong place (see implementation section for the NDRegisterAccessor). A possible implementation to help backends complying with this rule would be:<ul>
 <li>Introduce non-virtual <code>TransferElement::readTransfer()</code> etc, i.e. all functions like <code>do[...]Transfer[...]()</code> should have non-virtual pendants without <code>do</code>.</li>
-<li>These new functions will call the actual <code>do[...]Transfer[...]()</code> function, but place a try-catch-block around to catch all <a class="el" href="namespace_chimera_t_k.html" title="Generic modules for status monitoring. ">ChimeraTK</a> exceptions</li>
+<li>These new functions will call the actual <code>do[...]Transfer[...]()</code> function, but place a try-catch-block around to catch all <a class="el" href="namespace_chimera_t_k.html" title="InvalidityTracer application module. ">ChimeraTK</a> exceptions</li>
 <li>The exceptions are stored and operation is continued. In case of boolean return values correct values must be implemented:<ul>
 <li><code>doReadTransferNonBlocking()</code>and <code>doReadTransferLatest()</code> must return false (there was no new data), except for the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> which has to return true if it will do a recovery in postRead() and there will be new data.</li>
 <li><code>doWriteTransfer()</code> shall return true (dataLost), except for the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a>. It should return true only if the data of the recovery accessor is replaced and the previous value has not been written to the hardware.</li>
@@ -317,7 +317,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Wed Jun 9 2021 03:54:51 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Jun 10 2021 03:54:37 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

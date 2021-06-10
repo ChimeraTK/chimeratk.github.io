@@ -27,7 +27,7 @@ var searchData=
   ['recoveryhelpers',['recoveryHelpers',['../class_chimera_t_k_1_1_device_module.html#aa5e37e4eeac6bf7ee83c5043e9fd9545',1,'ChimeraTK::DeviceModule']]],
   ['recoverymutex',['recoveryMutex',['../class_chimera_t_k_1_1_device_module.html#ab1e2b830518740acc49a2cb5d3a00d40',1,'ChimeraTK::DeviceModule']]],
   ['reg1',['REG1',['../struct_push_module_d9__1.html#a70604c09e2f7cbfc85d23866ec224f64',1,'PushModuleD9_1::REG1()'],['../struct_push_module.html#a709015eb42f936d0315fd29f76914c0d',1,'PushModule::REG1()'],['../struct_realistic_module.html#ae8b658f04729a076c2ba16206dc13edb',1,'RealisticModule::reg1()']]],
-  ['reg2',['reg2',['../struct_realistic_module.html#a002345a0bf447f3568ceed9b6ee639b4',1,'RealisticModule::reg2()'],['../struct_push_module_d9__2.html#a90e324b942c0b6e6bf5db66b9807a557',1,'PushModuleD9_2::REG2()']]],
+  ['reg2',['REG2',['../struct_push_module_d9__2.html#a90e324b942c0b6e6bf5db66b9807a557',1,'PushModuleD9_2::REG2()'],['../struct_realistic_module.html#a002345a0bf447f3568ceed9b6ee639b4',1,'RealisticModule::reg2()']]],
   ['reg3',['reg3',['../struct_realistic_module.html#a9ee799f158467425d99e438b3184570c',1,'RealisticModule']]],
   ['registeraccessor',['registerAccessor',['../class_chimera_t_k_1_1_entity_owner.html#a260d2a06bf851b4b685ae498cf5a2237',1,'ChimeraTK::EntityOwner']]],
   ['registerdependencywait',['registerDependencyWait',['../struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a6ba63aa3d36361aad82113e8f31ecb8d',1,'ChimeraTK::Application::CircularDependencyDetector']]],
