@@ -116,6 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aec37b44e22b4df08160f0e621d268e58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#aec37b44e22b4df08160f0e621d268e58">printWaiters</a> ()</td></tr>
 <tr class="memdesc:aec37b44e22b4df08160f0e621d268e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print modules which are currently waiting for initial values.  <a href="#aec37b44e22b4df08160f0e621d268e58">More...</a><br /></td></tr>
 <tr class="separator:aec37b44e22b4df08160f0e621d268e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab86d07141f987a4f5ffd31dbca2672a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#aab86d07141f987a4f5ffd31dbca2672a">terminate</a> ()</td></tr>
+<tr class="memdesc:aab86d07141f987a4f5ffd31dbca2672a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the thread before ApplicationBase::terminate() is called.  <a href="#aab86d07141f987a4f5ffd31dbca2672a">More...</a><br /></td></tr>
+<tr class="separator:aab86d07141f987a4f5ffd31dbca2672a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c38cc68dbc3af885fbf227f6555341c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a4c38cc68dbc3af885fbf227f6555341c">~CircularDependencyDetector</a> ()</td></tr>
 <tr class="separator:a4c38cc68dbc3af885fbf227f6555341c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -172,7 +175,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01622">1622</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01632">1632</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 
 </div>
 </div>
@@ -202,7 +205,7 @@ Friends</h2></td></tr>
 
 <p>Function executed in thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01516">1516</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01517">1517</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -231,7 +234,7 @@ Friends</h2></td></tr>
 
 <p>Print modules which are currently waiting for initial values. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01487">1487</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01488">1488</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -270,7 +273,7 @@ Friends</h2></td></tr>
 <p>Call before an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> waits for an initial value on the given node. </p>
 <p>Calls with non-Application-typed nodes are ignored. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01415">1415</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01416">1416</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -315,13 +318,42 @@ Friends</h2></td></tr>
 
 <p>Start detection thread. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01510">1510</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01511">1511</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_a6bee986c978f70b20aa19e558d9c65ff_icgraph.svg" width="100%" height="481"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aab86d07141f987a4f5ffd31dbca2672a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab86d07141f987a4f5ffd31dbca2672a">&#9670;&nbsp;</a></span>terminate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::CircularDependencyDetector::terminate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop the thread before ApplicationBase::terminate() is called. </p>
+
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01623">1623</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_aab86d07141f987a4f5ffd31dbca2672a_icgraph.svg" width="100%" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -346,20 +378,20 @@ Friends</h2></td></tr>
 <p>Call after an <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> has received an initial value on the given node. </p>
 <p>Calls with non-Application-typed nodes are ignored. </p>
 
-<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01499">1499</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_abd136a913538fb7dde71571fefd44429_cgraph.svg" width="487" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_application_8cc_source.html#l01500">1500</a> of file <a class="el" href="_application_8cc_source.html">Application.cc</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_abd136a913538fb7dde71571fefd44429_cgraph.svg" width="487" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector_abd136a913538fb7dde71571fefd44429_icgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -387,7 +419,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00244">244</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00247">247</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -412,7 +444,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00238">238</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00241">241</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -436,7 +468,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00237">237</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00240">240</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -460,7 +492,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00240">240</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00243">243</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -484,7 +516,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00239">239</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00242">242</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +540,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00235">235</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00238">238</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -532,7 +564,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00241">241</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00244">244</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -556,7 +588,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00242">242</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00245">245</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -580,7 +612,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00236">236</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_application_8h_source.html#l00239">239</a> of file <a class="el" href="_application_8h_source.html">Application.h</a>.</p>
 
 </div>
 </div>
@@ -594,7 +626,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_application.html">Application</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html">CircularDependencyDetector</a></li>
-    <li class="footer">Generated on Sat Jun 12 2021 03:54:02 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Jun 15 2021 03:53:56 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

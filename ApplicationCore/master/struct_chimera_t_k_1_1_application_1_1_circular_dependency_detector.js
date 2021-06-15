@@ -5,6 +5,7 @@ var struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector =
     [ "printWaiters", "struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#aec37b44e22b4df08160f0e621d268e58", null ],
     [ "registerDependencyWait", "struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a6ba63aa3d36361aad82113e8f31ecb8d", null ],
     [ "startDetectBlockedModules", "struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a6bee986c978f70b20aa19e558d9c65ff", null ],
+    [ "terminate", "struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#aab86d07141f987a4f5ffd31dbca2672a", null ],
     [ "unregisterDependencyWait", "struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#abd136a913538fb7dde71571fefd44429", null ],
     [ "Application", "struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a23f25bcc02a0e94c2f5a4188496b04d0", null ],
     [ "_awaitedNodes", "struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a8ef00492145091d9018720ab1c35cb06", null ],
