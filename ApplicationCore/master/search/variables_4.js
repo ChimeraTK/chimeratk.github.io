@@ -7,6 +7,7 @@ var searchData=
   ['datafaultcounter',['dataFaultCounter',['../class_chimera_t_k_1_1_application_module.html#a9a83283d70b2821ad742f881de38ae18',1,'ChimeraTK::ApplicationModule']]],
   ['datalosscounter',['dataLossCounter',['../class_chimera_t_k_1_1_application.html#a80e8990554832fe825057368d512a7a5',1,'ChimeraTK::Application']]],
   ['dd',['DD',['../struct_c_c.html#a7b72ba69bc60ce75f7935f71ba52c333',1,'CC::DD()'],['../struct_f_f.html#a146e7a3017a06023b3a4f76aeabdd4a3',1,'FF::DD()'],['../struct_test_application2.html#a21ea730ea63427551cc57a2f9683fe07',1,'TestApplication2::dd()']]],
+  ['debugdataloss',['debugDataLoss',['../class_chimera_t_k_1_1_application.html#ac2296b9fe4f9ab5684c41b43e7be4f0f',1,'ChimeraTK::Application']]],
   ['debugmode_5fvariablelist',['debugMode_variableList',['../class_chimera_t_k_1_1_application.html#a20ee34f9da398c58ad9e4228449412fa',1,'ChimeraTK::Application']]],
   ['deep',['deep',['../struct_test_application_1_1_outer_group_1_1_inner_group.html#aa7386821ec346ea7f4a5c47de3015cf7',1,'TestApplication::OuterGroup::InnerGroup']]],
   ['deeper',['deeper',['../struct_test_application2.html#a3b8e95b824f05f32e399addda23725a7',1,'TestApplication2']]],

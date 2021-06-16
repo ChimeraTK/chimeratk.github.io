@@ -110,7 +110,7 @@ var searchData=
   ['setvaluetype',['setValueType',['../class_chimera_t_k_1_1_variable_network_node.html#a05948328d255d895d91e07b285bf20e0',1,'ChimeraTK::VariableNetworkNode']]],
   ['shutdown',['shutdown',['../class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a',1,'ChimeraTK::Application::shutdown()'],['../namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72da5924f03a95ee6f7277e5bdd1e81b8fdc',1,'ChimeraTK::shutdown()']]],
   ['silent',['SILENT',['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416a1b65f50cc55a099d0c120b18314d384b',1,'logging']]],
-  ['simulation',['Simulation',['../struct_example_app.html#abd16c59e21124f075eed347568b30464',1,'ExampleApp::Simulation()'],['../struct_example_app.html#abd542c1e6b5653650c7d297da9f0abc7',1,'ExampleApp::simulation()']]],
+  ['simulation',['simulation',['../struct_example_app.html#abd542c1e6b5653650c7d297da9f0abc7',1,'ExampleApp::simulation()'],['../struct_example_app.html#abd16c59e21124f075eed347568b30464',1,'ExampleApp::Simulation()']]],
   ['simulationmodule',['SimulationModule',['../struct_simulation_module.html',1,'']]],
   ['sistergroupofvargroup',['SisterGroupOfVarGroup',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#aa7f9ae0a95857c0e00020e8587806065',1,'FirstHierarchy::TestModule::VarGroup']]],
   ['sistervarofvargroup',['sisterVarOfVarGroup',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#a56ce2485fa2bbeaf696e3418a8a2a032',1,'FirstHierarchy::TestModule::VarGroup']]],

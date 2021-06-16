@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_fan_out_base.htm
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_chimera_t_k_1_1_fan_out_base-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ChimeraTK::FanOutBase Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -108,6 +109,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8b860235b6981eb1e696bcb0536e2f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c9305cd266f0fd84a493bfae9f9cb4f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fan_out_base.html#a8c9305cd266f0fd84a493bfae9f9cb4f">removeSlave</a> (const boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &amp;slave)=0</td></tr>
 <tr class="separator:a8c9305cd266f0fd84a493bfae9f9cb4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f66d62810531211171ece8f285fc54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fan_out_base.html#a39f66d62810531211171ece8f285fc54">disable</a> ()</td></tr>
+<tr class="memdesc:a39f66d62810531211171ece8f285fc54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the <a class="el" href="class_chimera_t_k_1_1_fan_out.html" title="Base class for several implementations which distribute values from one feeder to multiple consumers...">FanOut</a> so it does nothing.  <a href="#a39f66d62810531211171ece8f285fc54">More...</a><br /></td></tr>
+<tr class="separator:a39f66d62810531211171ece8f285fc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a51011a8136b116e42958f1e3754ba70f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fan_out_base.html#a51011a8136b116e42958f1e3754ba70f">_disabled</a> {false}</td></tr>
+<tr class="separator:a51011a8136b116e42958f1e3754ba70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Type independent base. </p>
@@ -150,6 +159,36 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a39f66d62810531211171ece8f285fc54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39f66d62810531211171ece8f285fc54">&#9670;&nbsp;</a></span>disable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::FanOutBase::disable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Disable the <a class="el" href="class_chimera_t_k_1_1_fan_out.html" title="Base class for several implementations which distribute values from one feeder to multiple consumers...">FanOut</a> so it does nothing. </p>
+<p>Used by <a class="el" href="class_chimera_t_k_1_1_application.html#a9eb2d39a3b53e9c19bb2bd9b1d2da0c1">Application::optimiseUnmappedVariables()</a>. <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html" title="NDRegisterAccessor implementation which distributes values written to this accessor out to any number...">FeedingFanOut</a> simply do nothing instead of read/write operations. ThreadedFanOuts will not launch their thread. Has to be called before launching the application/fanout threads. </p>
+
+<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00032">32</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
+
+</div>
+</div>
 <a id="a8c9305cd266f0fd84a493bfae9f9cb4f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c9305cd266f0fd84a493bfae9f9cb4f">&#9670;&nbsp;</a></span>removeSlave()</h2>
 
@@ -186,6 +225,31 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a51011a8136b116e42958f1e3754ba70f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51011a8136b116e42958f1e3754ba70f">&#9670;&nbsp;</a></span>_disabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::FanOutBase::_disabled {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_fan_out_8h_source.html#l00035">35</a> of file <a class="el" href="_fan_out_8h_source.html">FanOut.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/<a class="el" href="_fan_out_8h_source.html">FanOut.h</a></li>
 </ul>
@@ -195,7 +259,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_fan_out_base.html">FanOutBase</a></li>
-    <li class="footer">Generated on Tue Jun 15 2021 03:53:56 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Jun 16 2021 03:53:52 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
