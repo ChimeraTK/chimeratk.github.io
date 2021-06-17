@@ -4,16 +4,23 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>mtca4u module &#8212; mtca4uPy  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="mtca4u Python Bindings Doucmentation" href="index.html" />
@@ -22,7 +29,8 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head><body>
+  </head>
+  <body>
   
 
     <div class="document">
@@ -35,8 +43,7 @@
 <dl class="class">
 <dt id="mtca4u.Device">
 <em class="property">class </em><code class="descclassname">mtca4u.</code><code class="descname">Device</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#Device"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.Device" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Construct Device from user provided device information</p>
+<dd><p>Construct Device from user provided device information</p>
 <p>This constructor is used to open a device listed in the dmap file.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -49,7 +56,7 @@
 <p class="rubric">Examples</p>
 <dl class="docutils">
 <dt>Creating a device using dmap file:</dt>
-<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;my_card&quot;</span><span class="p">)</span> <span class="c1"># my_card is a alias in my_example_dmap_file.dmap</span>
 </pre></div>
@@ -109,7 +116,7 @@ numberOfElementsToRead parameter</p>
 <p class="rubric">Examples</p>
 <dl class="docutils">
 <dt>register “WORD_STATUS” is 1 element long..</dt>
-<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;BOARD&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_STATUS&quot;</span><span class="p">)</span>
@@ -120,7 +127,7 @@ numberOfElementsToRead parameter</p>
 </div>
 </dd>
 <dt>register “WORD_CLK_MUX” is 4 elements long.</dt>
-<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">)</span>
 <span class="go">array([15.0, 14.0, 13.0, 12.0], dtype=float64)</span>
@@ -130,7 +137,7 @@ numberOfElementsToRead parameter</p>
 </div>
 </dd>
 <dt>read out select number of elements from specified locations:</dt>
-<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="go">array([15.0], dtype=float64)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">)</span>
 <span class="go">array([13.0], dtype=float64)</span>
@@ -149,7 +156,7 @@ numberOfElementsToRead parameter</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="#mtca4u.Device.read_raw" title="mtca4u.Device.read_raw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Device.read_raw()</span></code></a></dt>
+<dt><a class="reference internal" href="#mtca4u.Device.read_raw" title="mtca4u.Device.read_raw"><code class="xref py py-meth docutils literal"><span class="pre">Device.read_raw()</span></code></a></dt>
 <dd>Read in ‘raw’ bit values from a device register</dd>
 </dl>
 </div>
@@ -202,7 +209,7 @@ the number specified through the numberOfElementsToRead parameter</p>
 <p class="rubric">Examples</p>
 <dl class="docutils">
 <dt>Use Device.read_raw: In the example, register “AREA_DMA_VIA_DMA” is the DMA mapped memory made up of 32 bit elements.</dt>
-<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read__raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;AREA_DMA_VIA_DMA&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
@@ -214,7 +221,7 @@ the number specified through the numberOfElementsToRead parameter</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="#mtca4u.Device.read_raw" title="mtca4u.Device.read_raw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Device.read_raw()</span></code></a></dt>
+<dt><a class="reference internal" href="#mtca4u.Device.read_raw" title="mtca4u.Device.read_raw"><code class="xref py py-meth docutils literal"><span class="pre">Device.read_raw()</span></code></a></dt>
 <dd>Use this method for the same purpose instead.</dd>
 </dl>
 </div>
@@ -269,7 +276,7 @@ numberOfElementsToRead parameter</p>
 <p class="rubric">Examples</p>
 <dl class="docutils">
 <dt>register “WORD_STATUS” is 1 element long.</dt>
-<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;BOARD&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_STATUS&quot;</span><span class="p">)</span>
@@ -280,7 +287,7 @@ numberOfElementsToRead parameter</p>
 </div>
 </dd>
 <dt>register “WORD_CLK_MUX” is 4 elements long.</dt>
-<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_raw</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_CLK_MUX&quot;</span><span class="p">)</span>
@@ -304,7 +311,7 @@ numberOfElementsToRead parameter</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="#mtca4u.Device.read" title="mtca4u.Device.read"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Device.read()</span></code></a></dt>
+<dt><a class="reference internal" href="#mtca4u.Device.read" title="mtca4u.Device.read"><code class="xref py py-meth docutils literal"><span class="pre">Device.read()</span></code></a></dt>
 <dd>Read in Fixed Point converted bit values from a device register</dd>
 </dl>
 </div>
@@ -348,7 +355,7 @@ induvidual sequences as the columns</p>
 <p class="rubric">Examples</p>
 <dl class="docutils">
 <dt>“DMA” is the Multiplexed data region name. This region is defined by ‘AREA_MULTIPLEXED_SEQUENCE_DMA’ in the mapfile.</dt>
-<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">device</span><span class="o">.</span><span class="n">read_sequences</span><span class="p">(</span><span class="s2">&quot;BOARD.0&quot;</span><span class="p">,</span> <span class="s2">&quot;DMA&quot;</span><span class="p">)</span>
@@ -367,7 +374,7 @@ induvidual sequences as the columns</p>
 </div>
 </dd>
 <dt>Each column of the 2D matrix represents an extracted sequence:</dt>
-<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">read_sequences</span><span class="p">(</span><span class="s2">&quot;BOARD.0&quot;</span><span class="p">,</span> <span class="s2">&quot;DMA&quot;</span><span class="p">)</span>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">read_sequences</span><span class="p">(</span><span class="s2">&quot;BOARD.0&quot;</span><span class="p">,</span> <span class="s2">&quot;DMA&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">adc0_values</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># array([0., 25., 100., 225., 400.])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">adc1_values</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># array([1., 36., 49., 64., 81.])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">adc3_values</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span> <span class="c1"># array([9., 64., 169., 324., 529.])</span>
@@ -417,7 +424,7 @@ location lookup.</li>
 <p class="rubric">Examples</p>
 <dl class="docutils">
 <dt>register “WORD_STATUS” is 1 element long and belongs to module “BOARD”.</dt>
-<dd><div class="first highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<dd><div class="first highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;BOARD&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_STATUS&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
@@ -426,17 +433,17 @@ location lookup.</li>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;BOARD&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_STATUS&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mf">15.0</span><span class="p">])</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">registerPath</span> <span class="o">=</span> <span class="s2">&quot;/BOARD/WORD_STATUS&quot;</span><span class="p">,</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">registerPath</span> <span class="o">=</span> <span class="s2">&quot;/BOARD/WORD_STATUS&quot;</span><span class="p">,</span>
 <span class="go">                           dataToWrite = [15.0])</span>
 </pre></div>
 </div>
-<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataToWrite</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">15.0</span><span class="p">])</span>
+<div class="last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataToWrite</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">15.0</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;BOARD&quot;</span><span class="p">,</span> <span class="s2">&quot;WORD_STATUS&quot;</span><span class="p">,</span> <span class="n">dataToWrite</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd>
 <dt>register “WORD_CLK_MUX” is 4 elements long.</dt>
-<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">dataToWrite</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">15.0</span><span class="p">,</span> <span class="mf">14.0</span><span class="p">,</span> <span class="mf">13.0</span><span class="p">,</span> <span class="mf">12.0</span><span class="p">])</span>
@@ -452,7 +459,7 @@ location lookup.</li>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="#mtca4u.Device.write_raw" title="mtca4u.Device.write_raw"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Device.write_raw()</span></code></a></dt>
+<dt><a class="reference internal" href="#mtca4u.Device.write_raw" title="mtca4u.Device.write_raw"><code class="xref py py-meth docutils literal"><span class="pre">Device.write_raw()</span></code></a></dt>
 <dd>Write ‘raw’ bit values to a device register</dd>
 </dl>
 </div>
@@ -493,7 +500,7 @@ location lookup.</li>
 <p class="rubric">Examples</p>
 <dl class="docutils">
 <dt>register “WORD_STATUS” is 1 element long and is part of the module “BOARD”.</dt>
-<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">boardWithModules</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">_dataToWrite</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">15</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int32</span><span class="p">)</span>
@@ -504,7 +511,7 @@ location lookup.</li>
 </div>
 </dd>
 <dt>register “WORD_CLK_MUX” is 4 elements long.</dt>
-<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;device_name&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">dataToWrite</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">15</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int32</span><span class="p">)</span>
@@ -518,7 +525,7 @@ location lookup.</li>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="#mtca4u.Device.write" title="mtca4u.Device.write"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Device.write()</span></code></a></dt>
+<dt><a class="reference internal" href="#mtca4u.Device.write" title="mtca4u.Device.write"><code class="xref py py-meth docutils literal"><span class="pre">Device.write()</span></code></a></dt>
 <dd>Write values that get fixed point converted to the device</dd>
 </dl>
 </div>
@@ -544,7 +551,7 @@ its details</p>
 </tbody>
 </table>
 <p class="rubric">Examples</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">dmapPath</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">get_dmap_location</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">dmapPath</span> <span class="c1"># prints &#39;../my_example_dmap_file.dmap&#39;</span>
@@ -553,9 +560,9 @@ its details</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="#mtca4u.set_dmap_location" title="mtca4u.set_dmap_location"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_dmap_location()</span></code></a></dt>
+<dt><a class="reference internal" href="#mtca4u.set_dmap_location" title="mtca4u.set_dmap_location"><code class="xref py py-func docutils literal"><span class="pre">set_dmap_location()</span></code></a></dt>
 <dd>set dmap file path for the library.</dd>
-<dt><a class="reference internal" href="#mtca4u.Device" title="mtca4u.Device"><code class="xref py py-func docutils literal notranslate"><span class="pre">Device()</span></code></a></dt>
+<dt><a class="reference internal" href="#mtca4u.Device" title="mtca4u.Device"><code class="xref py py-func docutils literal"><span class="pre">Device()</span></code></a></dt>
 <dd>Open device using specified alias names or using device id and mapfile</dd>
 </dl>
 </div>
@@ -563,7 +570,7 @@ its details</p>
 
 <dl class="function">
 <dt id="mtca4u.get_info">
-<code class="descclassname">mtca4u.</code><code class="descname">get_info</code><span class="sig-paren">(</span><em>outputStream=&lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='utf-8'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#get_info"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.get_info" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">mtca4u.</code><code class="descname">get_info</code><span class="sig-paren">(</span><em>outputStream=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mtca4u.html#get_info"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mtca4u.get_info" title="Permalink to this definition">¶</a></dt>
 <dd><p>prints details about the module and the deviceaccess library
 against which it was linked</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -575,7 +582,7 @@ against which it was linked</p>
 </tbody>
 </table>
 <p class="rubric">Examples</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">get_info</span><span class="p">()</span>
 <span class="go">mtca4uPy v${${PROJECT_NAME}_VERSION}, linked with mtca4u-deviceaccess v$ChimeraTK-DeviceAccess_VERSION}</span>
 </pre></div>
@@ -599,7 +606,7 @@ set again using set_dmap_location</p>
 </tbody>
 </table>
 <p class="rubric">Examples</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">set_dmap_location</span><span class="p">(</span><span class="s2">&quot;../my_example_dmap_file.dmap&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">device</span> <span class="o">=</span> <span class="n">mtca4u</span><span class="o">.</span><span class="n">Device</span><span class="p">(</span><span class="s2">&quot;my_card&quot;</span><span class="p">)</span> <span class="c1"># my_card is a alias in my_example_dmap_file.dmap</span>
 </pre></div>
@@ -607,9 +614,9 @@ set again using set_dmap_location</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="#mtca4u.get_dmap_location" title="mtca4u.get_dmap_location"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_dmap_location()</span></code></a></dt>
+<dt><a class="reference internal" href="#mtca4u.get_dmap_location" title="mtca4u.get_dmap_location"><code class="xref py py-func docutils literal"><span class="pre">get_dmap_location()</span></code></a></dt>
 <dd>View the current dmap file which the library uses for device name (alias) lookup.</dd>
-<dt><a class="reference internal" href="#mtca4u.Device" title="mtca4u.Device"><code class="xref py py-func docutils literal notranslate"><span class="pre">Device()</span></code></a></dt>
+<dt><a class="reference internal" href="#mtca4u.Device" title="mtca4u.Device"><code class="xref py py-func docutils literal"><span class="pre">Device()</span></code></a></dt>
 <dd>Open device using specified alias names or using device id and mapfile</dd>
 </dl>
 </div>
@@ -650,14 +657,12 @@ set again using set_dmap_location</p>
 </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
-    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
