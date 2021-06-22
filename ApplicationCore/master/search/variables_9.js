@@ -11,7 +11,7 @@ var searchData=
   ['ingroup',['inGroup',['../struct_some_group.html#ad8dc31ef6d14bd3b8027088285526b1a',1,'SomeGroup']]],
   ['initialisationhandlers',['initialisationHandlers',['../class_chimera_t_k_1_1_device_module.html#a9a605306e90d268b7091e6bad6c334f5',1,'ChimeraTK::DeviceModule']]],
   ['initialisecalled',['initialiseCalled',['../class_chimera_t_k_1_1_application.html#a07485c3b44b7ba199a4a52de04639308',1,'ChimeraTK::Application']]],
-  ['initialvaluemutex',['initialValueMutex',['../class_chimera_t_k_1_1_device_module.html#a62e889d57a6c95654ffdb8481781de7b',1,'ChimeraTK::DeviceModule']]],
+  ['initialvaluelatch',['initialValueLatch',['../class_chimera_t_k_1_1_device_module.html#acc988d0c9b73919f960b1579639289e6',1,'ChimeraTK::DeviceModule']]],
   ['innergroup',['innerGroup',['../struct_outer_group.html#a90d8fbf89f3f08ab44ddc99c430474bf',1,'OuterGroup']]],
   ['innergroup1',['innerGroup1',['../struct_test_application_1_1_outer_group.html#a79795f309618df7233292dfd766c5eca',1,'TestApplication::OuterGroup']]],
   ['innergroup2',['innerGroup2',['../struct_test_application_1_1_outer_group.html#a6b1f37a278888b86cc6cd3aaab314ed8',1,'TestApplication::OuterGroup']]],
@@ -32,6 +32,6 @@ var searchData=
   ['intentionallynotyoullneversee',['IntentionallyNotYoullNeverSee',['../struct_test_module_with_variable_groups2.html#a5c337ab0409a3f29a85cba769a4a3489',1,'TestModuleWithVariableGroups2']]],
   ['internalmodulelist',['internalModuleList',['../class_chimera_t_k_1_1_application.html#ae1832cf40aad192bd303982b2c75e13a',1,'ChimeraTK::Application']]],
   ['invalidnetwork',['invalidNetwork',['../class_chimera_t_k_1_1_application.html#afeaa79b9219a492c6d8345170b1d7f08',1,'ChimeraTK::Application']]],
-  ['isholdinginitialvaluemutex',['isHoldingInitialValueMutex',['../class_chimera_t_k_1_1_device_module.html#aa17217dcf31b8743e2fabc53705e34fd',1,'ChimeraTK::DeviceModule']]],
+  ['isholdinginitialvaluelatch',['isHoldingInitialValueLatch',['../class_chimera_t_k_1_1_device_module.html#af087831ed2108cd90c426fc99e904259',1,'ChimeraTK::DeviceModule']]],
   ['islimited',['isLimited',['../struct_chimera_t_k_1_1_limit_value_module_base.html#a8863a5bb2bb4e37d61ad2cac8faace2e',1,'ChimeraTK::LimitValueModuleBase']]]
 ];

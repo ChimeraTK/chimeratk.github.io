@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"structtest_app.html":[17,0,64],
 "structtest_app.html#a41a6f5ea147b73718994979a68fae19a":[17,0,64,11],
 "structtest_app.html#a4dd7b4bfb10e6cd312a98f65e76af6c1":[17,0,64,3],
 "structtest_app.html#a4dd7b4bfb10e6cd312a98f65e76af6c1":[17,0,64,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "test_modules_8cc_source.html":[18,0,10,0,21],
 "test_optimise_unmapped_variables_8cc.html":[18,0,10,0,22],
 "test_optimise_unmapped_variables_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[18,0,10,0,22,2],
-"test_optimise_unmapped_variables_8cc.html#ad043444aea6f8af778d7329e46ed3770":[18,0,10,0,22,3],
-"test_optimise_unmapped_variables_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e":[18,0,10,0,22,1]
+"test_optimise_unmapped_variables_8cc.html#ad043444aea6f8af778d7329e46ed3770":[18,0,10,0,22,3]
 };

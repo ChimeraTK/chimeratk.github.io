@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"class_chimera_t_k_1_1_test_facility.html#afc1238aaadcddda96d35a6c64b88326a":[17,0,0,79,2],
 "class_chimera_t_k_1_1_testable_mode_accessor_decorator.html":[17,0,0,78],
 "class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#a11e354efd0b6bdd841d14739b9359941":[17,0,0,78,2],
 "class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#a1253e11765c46d5e332550e39896ec4c":[17,0,0,78,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classlogging_1_1_logging_module.html#ae01a9ebafa209e0c250e093e3c6b713f":[17,0,1,1,3],
 "classlogging_1_1_logging_module.html#ae90e453ff52bc721d16da109a5270f0f":[17,0,1,1,6],
 "configreader.html":[3],
-"configreader.html#usage":[3,0],
-"configreader.html#xmlstructure":[3,1]
+"configreader.html#usage":[3,0]
 };

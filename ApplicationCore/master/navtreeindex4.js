@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"configreader.html#xmlstructure":[3,1],
 "demo_app2_8cc.html":[18,0,1,1],
 "demo_app2_8cc_source.html":[18,0,1,1],
 "demo_app2a_8cc.html":[18,0,2,0],
@@ -58,8 +59,8 @@ var NAVTREEINDEX4 =
 "files.html":[18,0],
 "fixtures_8h.html":[18,0,10,1,1],
 "fixtures_8h_source.html":[18,0,10,1,1],
-"functions.html":[17,3,0,0],
 "functions.html":[17,3,0],
+"functions.html":[17,3,0,0],
 "functions_0x7e.html":[17,3,0,26],
 "functions_a.html":[17,3,0,1],
 "functions_b.html":[17,3,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[17,0,4,1],
 "struct_automation.html#aa738677550010b51b08df005e0e1d7f3":[17,0,4,2],
 "struct_automation.html#acff6fa50c6a95870a79b4b1df4a14ea1":[17,0,4,7],
-"struct_automation.html#adc175eb9561ef659f570a65ae1ac97cc":[17,0,4,6],
-"struct_b_b.html":[17,0,5]
+"struct_automation.html#adc175eb9561ef659f570a65ae1ac97cc":[17,0,4,6]
 };
