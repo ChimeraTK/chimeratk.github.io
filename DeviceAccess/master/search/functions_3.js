@@ -15,6 +15,7 @@ var searchData=
   ['device',['Device',['../class_chimera_t_k_1_1_device.html#ae5e0c416ca16eb2fd45fe5cc4a610469',1,'ChimeraTK::Device::Device()=default'],['../class_chimera_t_k_1_1_device.html#aa92aa6a52e36ec4224a730c32c8606ae',1,'ChimeraTK::Device::Device(const std::string &amp;aliasName)']]],
   ['deviceaccessversionusedtocompile',['deviceAccessVersionUsedToCompile',['../_another_working_backend_8cc.html#a31a53b4da86cdc9b887dc39fe431200b',1,'deviceAccessVersionUsedToCompile():&#160;AnotherWorkingBackend.cc'],['../_wrong_version_backend_compat_8cc.html#a31a53b4da86cdc9b887dc39fe431200b',1,'deviceAccessVersionUsedToCompile():&#160;WrongVersionBackendCompat.cc']]],
   ['devicebackendimpl',['DeviceBackendImpl',['../class_chimera_t_k_1_1_device_backend_impl.html#a6456dd85892ef6afd5dd44691696b61d',1,'ChimeraTK::DeviceBackendImpl']]],
+  ['devicefile',['DeviceFile',['../class_chimera_t_k_1_1_device_file.html#a7d481f438d0226336be5f0b4e11d99dc',1,'ChimeraTK::DeviceFile::DeviceFile(const std::string &amp;filePath, int flags)'],['../class_chimera_t_k_1_1_device_file.html#a8258fe13a9ad60aa65c22ae385235bc5',1,'ChimeraTK::DeviceFile::DeviceFile(DeviceFile &amp;&amp;d)']]],
   ['deviceinfo',['DeviceInfo',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a137b77a27881ed6debd666207556b922',1,'ChimeraTK::DeviceInfoMap::DeviceInfo']]],
   ['deviceinfomap',['DeviceInfoMap',['../class_chimera_t_k_1_1_device_info_map.html#aa3f5d757987b28713906a7f88be306a0',1,'ChimeraTK::DeviceInfoMap']]],
   ['deviceinfomaptestsuite',['DeviceInfoMapTestSuite',['../class_device_info_map_test_suite.html#a89be45b690a81f2b3fa1dfd5ec54c4ca',1,'DeviceInfoMapTestSuite']]],
@@ -26,6 +27,7 @@ var searchData=
   ['disabletestreadonly',['disableTestReadOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a9d2f678336a0e214241b422b2d4b0d6e',1,'ChimeraTK::TestCapabilities']]],
   ['disabletestwriteneverlosesdata',['disableTestWriteNeverLosesData',['../struct_chimera_t_k_1_1_test_capabilities.html#a9278f52ff908df628f00ea1c13db9358',1,'ChimeraTK::TestCapabilities']]],
   ['disabletestwriteonly',['disableTestWriteOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a4d2be84d6bb78b2ba89478e384f7d30f',1,'ChimeraTK::TestCapabilities']]],
+  ['dmaintf',['DmaIntf',['../class_chimera_t_k_1_1_dma_intf.html#a2572c3efc6f598a68f589ad01afb57e8',1,'ChimeraTK::DmaIntf::DmaIntf(const std::string &amp;devicePath, size_t channelIdx)'],['../class_chimera_t_k_1_1_dma_intf.html#ab6d794376d4806306a56b121c8bd1f4e',1,'ChimeraTK::DmaIntf::DmaIntf(DmaIntf &amp;&amp;d)']]],
   ['dmapfileparsertestsuite',['DMapFileParserTestSuite',['../class_d_map_file_parser_test_suite.html#a0e28986d4837eca18c86797318d14d41',1,'DMapFileParserTestSuite']]],
   ['dmapfilesparser',['DMapFilesParser',['../class_chimera_t_k_1_1_d_map_files_parser.html#aebfabe8fc97c00b746c8298ba39285c3',1,'ChimeraTK::DMapFilesParser::DMapFilesParser()'],['../class_chimera_t_k_1_1_d_map_files_parser.html#a35eb272f781b2752a2853d30f6bd1759',1,'ChimeraTK::DMapFilesParser::DMapFilesParser(const std::string &amp;dir)']]],
   ['dmapfilesparsertestsuite',['DMapFilesParserTestSuite',['../class_d_map_files_parser_test_suite.html#a448cfa3cd54855eb74caa5275c57453f',1,'DMapFilesParserTestSuite']]],
@@ -49,6 +51,6 @@ var searchData=
   ['dummyregistersequence',['DummyRegisterSequence',['../class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html#ab3572d6ec56c252695f875c4945f4c96',1,'ChimeraTK::proxies::DummyRegisterSequence']]],
   ['dummyregistertest',['DummyRegisterTest',['../class_dummy_register_test.html#aaa98a1dfb3684b4b7a6b79b8c9096579',1,'DummyRegisterTest']]],
   ['dummyregistertestsuite',['DummyRegisterTestSuite',['../class_dummy_register_test_suite.html#aa6c8a19aeab529c53ab1775543e7c80c',1,'DummyRegisterTestSuite']]],
-  ['dump',['dump',['../class_chimera_t_k_1_1_transfer_group.html#aa2e834738d65ec80d6675db392e0c9db',1,'ChimeraTK::TransferGroup']]],
+  ['dump',['dump',['../class_chimera_t_k_1_1_transfer_group.html#aa2e834738d65ec80d6675db392e0c9db',1,'ChimeraTK::TransferGroup::dump()'],['../class_chimera_t_k_1_1_xdma_backend.html#a01d15c73dbcea086ba5b7eb2846a0528',1,'ChimeraTK::XdmaBackend::dump()']]],
   ['dysfunctdummy',['DysfunctDummy',['../struct_dysfunct_dummy.html#ae8dc8083fb3b723d6d8360da907ebffc',1,'DysfunctDummy']]]
 ];

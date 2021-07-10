@@ -96,21 +96,22 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"_working_backend_8cc_source.html",
-"class_chimera_t_k_1_1_device.html#aa7fe4ce4336cedce3fce015d15f59bda",
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a1f116f6cc9a8c6dd848102380ea866cf",
-"class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a23014011db872ef6ea5fad554170f7ff",
-"class_chimera_t_k_1_1_register_catalogue.html#a708cdd491140065e80bcfe27f71aabc6",
-"class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5caadc4f6303576980fe0402f0c06c5b9fd",
-"class_chimera_t_k_1_1_unified_backend_test.html#a2a5af100a20a46cf62a7311ce92c2f71",
-"class_map_file_test.html#ab1e012e22d189ed88d18d60acefc21de",
-"device__backends_2pcie_2include_2pciedev__io_8h.html#a2adc22a34dd80aeb9090741dad0bf049",
-"lmap.html#internal_redirect",
-"struct_chimera_t_k_1_1_copy_register_decorator_trait.html",
-"struct_counting_decorator.html#a99e23eba88a7a57d80997edac7adda81",
-"struct_reg_variable_as_push_parameter_in_math__x.html",
-"test_dummy_backend_8cpp.html#a008ad625224f24a35a1f634d6f73a297",
-"test_pcie_backend_8cpp.html#af69c2520925974915f2141865a990cfc"
+"_unified_backend_test_8h.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713",
+"class_chimera_t_k_1_1_device.html#a129c5f11a5e1a0ada19cbcc293d1a429",
+"class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html#af6b19ad6679641e315ecb43ee80f7cbe",
+"class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a4eee9c9221bf2ac861f1d734ae447a84",
+"class_chimera_t_k_1_1_rebot_testable_clock.html",
+"class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html",
+"class_chimera_t_k_1_1_transfer_group.html#a86287fe11f64206207e0d868ed83c3db",
+"class_dummy_register_test.html#aaa98a1dfb3684b4b7a6b79b8c9096579",
+"device__backends_2include_2_n_d_register_accessor_8h.html",
+"functions_vars_v.html",
+"struct_argument.html#a36da86ea8486edfce1577578acf192eb",
+"struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#a986069aa80f9cf382066361e59a29800",
+"struct_reg_part_of_area.html#a4068e018c9e0ece9a051d861f3e11d3a",
+"test_async_read_8cpp.html#ac0bab11760e2aafd6e5e761b618fe67a",
+"test_multiplexed_data_accesor_8cpp.html#a6cd37c6cd46433c255bd78c774673d38",
+"test_virtual_function_template_compiler_flags_8cc_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

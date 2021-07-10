@@ -17,5 +17,6 @@ var searchData=
   ['copyregisterdecorator',['CopyRegisterDecorator',['../struct_chimera_t_k_1_1_copy_register_decorator.html',1,'ChimeraTK']]],
   ['copyregisterdecoratortrait',['CopyRegisterDecoratorTrait',['../struct_chimera_t_k_1_1_copy_register_decorator_trait.html',1,'ChimeraTK']]],
   ['countingdecorator',['CountingDecorator',['../struct_counting_decorator.html',1,'']]],
+  ['ctrlintf',['CtrlIntf',['../class_chimera_t_k_1_1_ctrl_intf.html',1,'ChimeraTK']]],
   ['custombackend',['CustomBackend',['../class_custom_backend.html',1,'']]]
 ];
