@@ -19,6 +19,6 @@ var class_chimera_t_k_1_1_subdevice_register_accessor =
     [ "_accStatus", "class_chimera_t_k_1_1_subdevice_register_accessor.html#ada88d6d75e7f6201791589d1dedc9bfe", null ],
     [ "_backend", "class_chimera_t_k_1_1_subdevice_register_accessor.html#a818b2cd99b81c755458198933a8c7058", null ],
     [ "_buffer", "class_chimera_t_k_1_1_subdevice_register_accessor.html#a01471d063f50467c648e053e573e6eaa", null ],
-    [ "_byteOffset", "class_chimera_t_k_1_1_subdevice_register_accessor.html#aaf0b173c0183c6aa5bd763911ee69ff7", null ],
-    [ "_numberOfWords", "class_chimera_t_k_1_1_subdevice_register_accessor.html#a6af895f9fc7fe4178918cadfbe53ca13", null ]
+    [ "_numberOfWords", "class_chimera_t_k_1_1_subdevice_register_accessor.html#a6af895f9fc7fe4178918cadfbe53ca13", null ],
+    [ "_startAddress", "class_chimera_t_k_1_1_subdevice_register_accessor.html#a3ad9c9852a85303ad76358a986779415", null ]
 ];

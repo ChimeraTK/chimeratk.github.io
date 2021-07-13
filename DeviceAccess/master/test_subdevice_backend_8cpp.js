@@ -1,5 +1,6 @@
 var test_subdevice_backend_8cpp =
 [
+    [ "BOOST_NO_EXCEPTIONS", "test_subdevice_backend_8cpp.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
     [ "BOOST_TEST_DYN_LINK", "test_subdevice_backend_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1", null ],
     [ "BOOST_TEST_MODULE", "test_subdevice_backend_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "CHECK_TIMEOUT", "test_subdevice_backend_8cpp.html#a4231b3c2fbf5750f62fc192c34b48a27", null ],

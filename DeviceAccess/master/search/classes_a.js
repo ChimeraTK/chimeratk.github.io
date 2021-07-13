@@ -20,6 +20,8 @@ var searchData=
   ['multiplierplugin_5fhelper',['MultiplierPlugin_Helper',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin___helper.html',1,'ChimeraTK::LNMBackend']]],
   ['multiplierplugin_5fhelper_3c_20usertype_2c_20double_20_3e',['MultiplierPlugin_Helper&lt; UserType, double &gt;',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin___helper_3_01_user_type_00_01double_01_4.html',1,'ChimeraTK::LNMBackend']]],
   ['multiplierplugindecorator',['MultiplierPluginDecorator',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html',1,'ChimeraTK::LNMBackend']]],
+  ['muxedarea1',['MuxedArea1',['../struct_muxed_area1.html',1,'']]],
+  ['muxedarea2',['MuxedArea2',['../struct_muxed_area2.html',1,'']]],
   ['muxednodma',['MuxedNodma',['../struct_muxed_nodma.html',1,'']]],
   ['myarea1',['MyArea1',['../struct_my_area1.html',1,'']]],
   ['myregister1',['MyRegister1',['../struct_my_register1.html',1,'']]],

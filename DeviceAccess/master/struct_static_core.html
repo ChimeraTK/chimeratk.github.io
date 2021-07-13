@@ -111,14 +111,22 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a2eba5dcb8602cda0416c3ea027fc470b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb729216fb515cc16e38f7faf0c46cb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_dummy_register_accessor.html">DummyRegisterAccessor</a>&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_static_core.html#adb729216fb515cc16e38f7faf0c46cb1">data</a> {target.get(), &quot;APP.1&quot;, &quot;DATA&quot;}</td></tr>
 <tr class="separator:adb729216fb515cc16e38f7faf0c46cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6462bc497b1e3a1143929d9e5747e238"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_dummy_register_accessor.html">DummyRegisterAccessor</a>&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_static_core.html#a6462bc497b1e3a1143929d9e5747e238">area</a> {target.get(), &quot;APP.0&quot;, &quot;THE_AREA&quot;}</td></tr>
+<tr class="separator:a6462bc497b1e3a1143929d9e5747e238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3aefae3aee28fdc99400b2655f0b5ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_dummy_register_accessor.html">DummyRegisterAccessor</a>&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_static_core.html#ad3aefae3aee28fdc99400b2655f0b5ce">status</a> {target.get(), &quot;APP.1&quot;, &quot;STATUS&quot;}</td></tr>
 <tr class="separator:ad3aefae3aee28fdc99400b2655f0b5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66d4752e77d7bd743e556f40f28830a5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_static_core.html#a66d4752e77d7bd743e556f40f28830a5">lastAddress</a> {32}</td></tr>
 <tr class="separator:a66d4752e77d7bd743e556f40f28830a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a540b46cdf636da7518414030e498b095"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_static_core.html#a540b46cdf636da7518414030e498b095">currentValue</a> {std::vector&lt;uint32_t&gt;(<a class="el" href="struct_static_core.html#a66d4752e77d7bd743e556f40f28830a5">lastAddress</a>)}</td></tr>
 <tr class="separator:a540b46cdf636da7518414030e498b095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288c03e7a0df51b5d6702b29b4385c89"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_static_core.html#a288c03e7a0df51b5d6702b29b4385c89">areaSize</a> {10}</td></tr>
+<tr class="separator:a288c03e7a0df51b5d6702b29b4385c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9971fa98405aaad70b27228bf2fba7ba"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; uint32_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_static_core.html#a9971fa98405aaad70b27228bf2fba7ba">currentAreaValue</a> {<a class="el" href="struct_static_core.html#a66d4752e77d7bd743e556f40f28830a5">lastAddress</a>, std::vector&lt;uint32_t&gt;(<a class="el" href="struct_static_core.html#a288c03e7a0df51b5d6702b29b4385c89">areaSize</a>)}</td></tr>
+<tr class="separator:a9971fa98405aaad70b27228bf2fba7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ad4d88b5073deae5dc6b8f59c1bb377"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_static_core.html#a8ad4d88b5073deae5dc6b8f59c1bb377">useStatus</a> {true}</td></tr>
 <tr class="separator:a8ad4d88b5073deae5dc6b8f59c1bb377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cefba6ff47a0e308499283995da8ab1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_static_core.html#a6cefba6ff47a0e308499283995da8ab1">useArea</a> {false}</td></tr>
+<tr class="separator:a6cefba6ff47a0e308499283995da8ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -175,7 +183,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00086">86</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00091">91</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -192,7 +200,55 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00078">78</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00079">79</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6462bc497b1e3a1143929d9e5747e238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6462bc497b1e3a1143929d9e5747e238">&#9670;&nbsp;</a></span>area</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_dummy_register_accessor.html">DummyRegisterAccessor</a>&lt;uint32_t&gt; StaticCore::area {target.get(), &quot;APP.0&quot;, &quot;THE_AREA&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00081">81</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a288c03e7a0df51b5d6702b29b4385c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a288c03e7a0df51b5d6702b29b4385c89">&#9670;&nbsp;</a></span>areaSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t StaticCore::areaSize {10}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00085">85</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9971fa98405aaad70b27228bf2fba7ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9971fa98405aaad70b27228bf2fba7ba">&#9670;&nbsp;</a></span>currentAreaValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;uint32_t&gt; &gt; StaticCore::currentAreaValue {<a class="el" href="struct_static_core.html#a66d4752e77d7bd743e556f40f28830a5">lastAddress</a>, std::vector&lt;uint32_t&gt;(<a class="el" href="struct_static_core.html#a288c03e7a0df51b5d6702b29b4385c89">areaSize</a>)}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00086">86</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -208,7 +264,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00082">82</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00084">84</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -224,7 +280,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00079">79</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00080">80</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -240,7 +296,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00081">81</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00083">83</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -256,7 +312,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00080">80</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00082">82</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6cefba6ff47a0e308499283995da8ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cefba6ff47a0e308499283995da8ab1">&#9670;&nbsp;</a></span>useArea</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StaticCore::useArea {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00089">89</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -272,7 +344,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00084">84</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00088">88</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -285,7 +357,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_static_core.html">StaticCore</a></li>
-    <li class="footer">Generated on Sat Jul 10 2021 03:53:23 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue Jul 13 2021 03:53:21 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

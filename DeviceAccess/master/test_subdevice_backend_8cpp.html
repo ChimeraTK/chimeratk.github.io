@@ -88,9 +88,9 @@ $(document).ready(function(){initNavTree('test_subdevice_backend_8cpp.html','');
 <div class="title">testSubdeviceBackend.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
-<code>#include &quot;Device.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;Device.h&quot;</code><br />
 <code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for testSubdeviceBackend.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -108,6 +108,8 @@ Macros</h2></td></tr>
 <tr class="separator:a139f00d2466d591f60b8d6a73c8273f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b2a3852db8bb19ab6909bac01859985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_subdevice_backend_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>&#160;&#160;&#160;SubdeviceBackendTest</td></tr>
 <tr class="separator:a6b2a3852db8bb19ab6909bac01859985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e644e01e76c0a2b950bac6e3d2cf0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_subdevice_backend_8cpp.html#ad9e644e01e76c0a2b950bac6e3d2cf0e">BOOST_NO_EXCEPTIONS</a></td></tr>
+<tr class="separator:ad9e644e01e76c0a2b950bac6e3d2cf0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4231b3c2fbf5750f62fc192c34b48a27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_subdevice_backend_8cpp.html#a4231b3c2fbf5750f62fc192c34b48a27">CHECK_TIMEOUT</a>(execPreCheck,  condition,  maxMilliseconds)</td></tr>
 <tr class="separator:a4231b3c2fbf5750f62fc192c34b48a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -149,6 +151,22 @@ Functions</h2></td></tr>
 <tr class="separator:a935ebdda3c7b54344e338ec47b060bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ad9e644e01e76c0a2b950bac6e3d2cf0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9e644e01e76c0a2b950bac6e3d2cf0e">&#9670;&nbsp;</a></span>BOOST_NO_EXCEPTIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_NO_EXCEPTIONS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00006">6</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a139f00d2466d591f60b8d6a73c8273f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a139f00d2466d591f60b8d6a73c8273f1">&#9670;&nbsp;</a></span>BOOST_TEST_DYN_LINK</h2>
 
@@ -161,7 +179,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00001">1</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00004">4</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -177,7 +195,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00002">2</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00005">5</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -214,7 +232,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{                                                                                                                    \</div><div class="line">    std::chrono::steady_clock::time_point t0 = <a class="code" href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a1851c267e4dd419a948306ff85195a86">std::chrono::steady_clock::now</a>();                                       \</div><div class="line">    execPreCheck <span class="keywordflow">while</span>(!(condition)) {                                                                                 \</div><div class="line">      bool timeout_reached = (<a class="code" href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a1851c267e4dd419a948306ff85195a86">std::chrono::steady_clock::now</a>() - t0) &gt; std::chrono::milliseconds(maxMilliseconds);     \</div><div class="line">      BOOST_CHECK(!timeout_reached);                                                                                   \</div><div class="line">      if(timeout_reached) <span class="keywordflow">break</span>;                                                                                       \</div><div class="line">      usleep(1000);                                                                                                    \</div><div class="line">      execPreCheck                                                                                                     \</div><div class="line">    }                                                                                                                  \</div><div class="line">  }</div><div class="ttc" id="namespace_chimera_t_k_1_1testable__rebot__sleep_html_a1851c267e4dd419a948306ff85195a86"><div class="ttname"><a href="namespace_chimera_t_k_1_1testable__rebot__sleep.html#a1851c267e4dd419a948306ff85195a86">ChimeraTK::testable_rebot_sleep::now</a></div><div class="ttdeci">boost::chrono::steady_clock::time_point now()</div><div class="ttdef"><b>Definition:</b> <a href="testable_rebot_sleep_8cc_source.html#l00004">testableRebotSleep.cc:4</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00011">11</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00013">13</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -235,7 +253,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00027">27</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00029">29</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -264,7 +282,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000074">Todo:</a></b></dt><dd>Test exception handling! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00053">53</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00055">55</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -292,7 +310,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00099">99</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00101">101</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -320,7 +338,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00143">143</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00145">145</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -348,7 +366,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00182">182</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00184">184</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -376,7 +394,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00208">208</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00210">210</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -404,7 +422,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00254">254</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00256">256</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -432,7 +450,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00283">283</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00285">285</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -460,7 +478,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00322">322</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00324">324</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -488,7 +506,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00361">361</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00363">363</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -516,7 +534,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00387">387</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00389">389</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -544,7 +562,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00432">432</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00434">434</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -572,7 +590,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00458">458</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00460">460</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -601,7 +619,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000075">Todo:</a></b></dt><dd>Make a proper test with a custom backend, to make sure all elements of the array are properly written </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00506">506</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00508">508</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
@@ -629,7 +647,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00547">547</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00549">549</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -657,7 +675,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00587">587</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00589">589</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
@@ -685,7 +703,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00620">620</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_8cpp_source.html#l00622">622</a> of file <a class="el" href="test_subdevice_backend_8cpp_source.html">testSubdeviceBackend.cpp</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
@@ -703,7 +721,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_subdevice_backend_8cpp.html">testSubdeviceBackend.cpp</a></li>
-    <li class="footer">Generated on Sat Jul 10 2021 03:53:23 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue Jul 13 2021 03:53:20 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

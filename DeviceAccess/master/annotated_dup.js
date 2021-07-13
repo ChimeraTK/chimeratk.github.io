@@ -48,6 +48,8 @@ var annotated_dup =
     [ "MapFileParserTestSuite", "class_map_file_parser_test_suite.html", "class_map_file_parser_test_suite" ],
     [ "MapFileTest", "class_map_file_test.html", "class_map_file_test" ],
     [ "mapFileTestSuite", "classmap_file_test_suite.html", "classmap_file_test_suite" ],
+    [ "MuxedArea1", "struct_muxed_area1.html", "struct_muxed_area1" ],
+    [ "MuxedArea2", "struct_muxed_area2.html", "struct_muxed_area2" ],
     [ "MuxedNodma", "struct_muxed_nodma.html", "struct_muxed_nodma" ],
     [ "MyArea1", "struct_my_area1.html", "struct_my_area1" ],
     [ "MyRegister1", "struct_my_register1.html", "struct_my_register1" ],

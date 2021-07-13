@@ -91,6 +91,7 @@ var searchData=
   ['ctrlintf',['CtrlIntf',['../class_chimera_t_k_1_1_ctrl_intf.html',1,'ChimeraTK::CtrlIntf'],['../class_chimera_t_k_1_1_ctrl_intf.html#a106034383580891fbe9f3524eaeeeeae',1,'ChimeraTK::CtrlIntf::CtrlIntf()']]],
   ['ctrlintf_2ecc',['CtrlIntf.cc',['../_ctrl_intf_8cc.html',1,'']]],
   ['ctrlintf_2eh',['CtrlIntf.h',['../_ctrl_intf_8h.html',1,'']]],
+  ['currentareavalue',['currentAreaValue',['../struct_static_core.html#a9971fa98405aaad70b27228bf2fba7ba',1,'StaticCore']]],
   ['currentmodule',['currentModule',['../class_chimera_t_k_1_1_logical_name_map_parser.html#a4a022ca1c826353be4053b35049fa510',1,'ChimeraTK::LogicalNameMapParser']]],
   ['currentvalue',['currentValue',['../struct_static_core.html#a540b46cdf636da7518414030e498b095',1,'StaticCore']]],
   ['currentversion',['currentVersion',['../class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#ad1faf9e348d58077399543b20ff0b3e7',1,'ChimeraTK::LNMBackendVariableAccessor']]],
