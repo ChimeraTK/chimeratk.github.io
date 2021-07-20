@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="hzdr_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">watchdog-server
-   &#160;<span id="projectnumber">01.04.02</span>
+   &#160;<span id="projectnumber">01.04.03</span>
    </div>
   </td>
  </tr>
@@ -118,11 +118,15 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggingModule_1_1Input.html">Input</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggingModule_1_1LogFileGroup.html">LogFileGroup</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggingModule_1_1Status.html">Status</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a54294cd517646051efc6564b1f47df5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggingModule.html#a54294cd517646051efc6564b1f47df5c">LoggingModule</a> (EntityOwner *owner, const std::string &amp;name, const std::string &amp;description, ctk::HierarchyModifier hierarchyModifier=ctk::HierarchyModifier::none, const std::unordered_set&lt; std::string &gt; &amp;tags={ }, const std::string &amp;pathToLogFile=&quot;/watchdog/<a class="el" href="structLoggingModule.html#a9467e41aed3798e2fa0cbf6adaac8149">config</a>/logfile&quot;)</td></tr>
+<tr class="separator:a54294cd517646051efc6564b1f47df5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1447048dd90e2a7951d23c33987650f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggingModule.html#ae1447048dd90e2a7951d23c33987650f">mainLoop</a> ()</td></tr>
 <tr class="separator:ae1447048dd90e2a7951d23c33987650f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add19c1f65a576c57d327430e85dc0e91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggingModule.html#add19c1f65a576c57d327430e85dc0e91">terminate</a> ()</td></tr>
@@ -150,6 +154,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a8845981975aac22280b1d99ad5a43e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad66157e7c5c8f75e1448b8dda6f6aa7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLoggingModule_1_1Status.html">LoggingModule::Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggingModule.html#ad66157e7c5c8f75e1448b8dda6f6aa7f">process</a></td></tr>
 <tr class="separator:ad66157e7c5c8f75e1448b8dda6f6aa7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c4f0c57a019a3419a76105c9cd6ef9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLoggingModule_1_1LogFileGroup.html">LoggingModule::LogFileGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggingModule.html#a22c4f0c57a019a3419a76105c9cd6ef9">logFileGroup</a></td></tr>
+<tr class="separator:a22c4f0c57a019a3419a76105c9cd6ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a600659a6a9219f9123ae1fd7b2f43826"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; std::ofstream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLoggingModule.html#a600659a6a9219f9123ae1fd7b2f43826">file</a></td></tr>
 <tr class="memdesc:a600659a6a9219f9123ae1fd7b2f43826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log file where to write log messages.  <a href="#a600659a6a9219f9123ae1fd7b2f43826">More...</a><br /></td></tr>
 <tr class="separator:a600659a6a9219f9123ae1fd7b2f43826"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,8 +172,71 @@ Public Attributes</h2></td></tr>
 <p>You can control which stream is used by setting the targetStream varibale: 0: cout/cerr and logfile 1: logfile 2: cout/cerr 3: none</p>
 <p>The logfile is given by the client using the logFile variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="LoggingModule_8h_source.html#l00078">78</a> of file <a class="el" href="LoggingModule_8h_source.html">LoggingModule.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="LoggingModule_8h_source.html#l00104">104</a> of file <a class="el" href="LoggingModule_8h_source.html">LoggingModule.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a54294cd517646051efc6564b1f47df5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54294cd517646051efc6564b1f47df5c">&#9670;&nbsp;</a></span>LoggingModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LoggingModule::LoggingModule </td>
+          <td>(</td>
+          <td class="paramtype">EntityOwner *&#160;</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ctk::HierarchyModifier&#160;</td>
+          <td class="paramname"><em>hierarchyModifier</em> = <code>ctk::HierarchyModifier::none</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::unordered_set&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tags</em> = <code>{&#160;}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>pathToLogFile</em> = <code>&quot;/watchdog/<a class="el" href="structLoggingModule.html#a9467e41aed3798e2fa0cbf6adaac8149">config</a>/logfile&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="LoggingModule_8h_source.html#l00109">109</a> of file <a class="el" href="LoggingModule_8h_source.html">LoggingModule.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae1447048dd90e2a7951d23c33987650f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1447048dd90e2a7951d23c33987650f">&#9670;&nbsp;</a></span>mainLoop()</h2>
 
@@ -258,7 +327,7 @@ Public Attributes</h2></td></tr>
 
 <p>Name of the current log file. </p>
 
-<p class="definition">Definition at line <a class="el" href="LoggingModule_8h_source.html#l00121">121</a> of file <a class="el" href="LoggingModule_8h_source.html">LoggingModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LoggingModule_8h_source.html#l00160">160</a> of file <a class="el" href="LoggingModule_8h_source.html">LoggingModule.h</a>.</p>
 
 </div>
 </div>
@@ -276,7 +345,7 @@ Public Attributes</h2></td></tr>
 
 <p>Log file where to write log messages. </p>
 
-<p class="definition">Definition at line <a class="el" href="LoggingModule_8h_source.html#l00119">119</a> of file <a class="el" href="LoggingModule_8h_source.html">LoggingModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LoggingModule_8h_source.html#l00158">158</a> of file <a class="el" href="LoggingModule_8h_source.html">LoggingModule.h</a>.</p>
 
 </div>
 </div>
@@ -288,6 +357,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"> <a class="el" href="structLoggingModule_1_1Input.html">LoggingModule::Input</a> LoggingModule::input</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22c4f0c57a019a3419a76105c9cd6ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22c4f0c57a019a3419a76105c9cd6ef9">&#9670;&nbsp;</a></span>logFileGroup</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="structLoggingModule_1_1LogFileGroup.html">LoggingModule::LogFileGroup</a>  LoggingModule::logFileGroup</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -307,7 +390,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Number of messages stored in the tail </p>
 
-<p class="definition">Definition at line <a class="el" href="LoggingModule_8h_source.html#l00081">81</a> of file <a class="el" href="LoggingModule_8h_source.html">LoggingModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LoggingModule_8h_source.html#l00107">107</a> of file <a class="el" href="LoggingModule_8h_source.html">LoggingModule.h</a>.</p>
 
 </div>
 </div>
@@ -405,7 +488,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structLoggingModule.html">LoggingModule</a></li>
-    <li class="footer">Generated on Tue Apr 13 2021 03:57:10 for watchdog-server by
+    <li class="footer">Generated on Tue Jul 20 2021 03:58:44 for watchdog-server by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

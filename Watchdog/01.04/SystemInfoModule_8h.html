@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="hzdr_logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">watchdog-server
-   &#160;<span id="projectnumber">01.04.02</span>
+   &#160;<span id="projectnumber">01.04.03</span>
    </div>
   </td>
  </tr>
@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('SystemInfoModule_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;ChimeraTK/ApplicationCore/ApplicationCore.h&gt;</code><br />
+<code>#include &lt;ChimeraTK/ApplicationCore/HierarchyModifyingGroup.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="sys__stat_8h_source.html">sys_stat.h</a>&quot;</code><br />
 <code>#include &lt;unordered_set&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -116,6 +117,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemInfoModule.html">SystemInfoModule</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module is used to read system parameter.  <a href="classSystemInfoModule.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSystemInfoModule_1_1TriggerGroup.html">SystemInfoModule::TriggerGroup</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSystemInfoModule_1_1Info.html">SystemInfoModule::Info</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSystemInfoModule_1_1Status.html">SystemInfoModule::Status</a></td></tr>
@@ -127,6 +130,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFileSystemModule_1_1Status.html">FileSystemModule::Status</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFileSystemModule_1_1TriggerGroup.html">FileSystemModule::TriggerGroup</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFileSystemGroup.html">FileSystemGroup</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This group includes one <a class="el" href="structFileSystemModule.html" title="Module reading file system information (size, available space) ">FileSystemModule</a> per hard drive.  <a href="structFileSystemGroup.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +139,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module reading information of a network adapter.  <a href="structNetworkModule.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkModule_1_1Status.html">NetworkModule::Status</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkModule_1_1TriggerGroup.html">NetworkModule::TriggerGroup</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetworkModule_1_1raw.html">NetworkModule::raw</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,7 +176,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SystemInfoModule_8cc_source.html#l00277">277</a> of file <a class="el" href="SystemInfoModule_8cc_source.html">SystemInfoModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SystemInfoModule_8cc_source.html#l00278">278</a> of file <a class="el" href="SystemInfoModule_8cc_source.html">SystemInfoModule.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -204,7 +211,7 @@ Variables</h2></td></tr>
 
 <p>This mutex is used when reading filesystem information via statfs. </p>
 
-<p class="definition">Definition at line <a class="el" href="SystemInfoModule_8cc_source.html#l00300">300</a> of file <a class="el" href="SystemInfoModule_8cc_source.html">SystemInfoModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SystemInfoModule_8cc_source.html#l00302">302</a> of file <a class="el" href="SystemInfoModule_8cc_source.html">SystemInfoModule.cc</a>.</p>
 
 </div>
 </div>
@@ -214,7 +221,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="SystemInfoModule_8h.html">SystemInfoModule.h</a></li>
-    <li class="footer">Generated on Tue Apr 13 2021 03:57:10 for watchdog-server by
+    <li class="footer">Generated on Tue Jul 20 2021 03:58:44 for watchdog-server by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -11,6 +11,8 @@ var annotated_dup =
     [ "ProcessHandler", "structProcessHandler.html", "structProcessHandler" ],
     [ "ProcessInfoModule", "structProcessInfoModule.html", "structProcessInfoModule" ],
     [ "SysInfo", "classSysInfo.html", "classSysInfo" ],
+    [ "SystemInfoGroup", "structSystemInfoGroup.html", "structSystemInfoGroup" ],
     [ "SystemInfoModule", "classSystemInfoModule.html", "classSystemInfoModule" ],
+    [ "WatchdogModuleGroup", "structWatchdogModuleGroup.html", "structWatchdogModuleGroup" ],
     [ "WatchdogServer", "structWatchdogServer.html", "structWatchdogServer" ]
 ];

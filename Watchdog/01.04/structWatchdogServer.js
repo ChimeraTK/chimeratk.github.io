@@ -9,7 +9,7 @@ var structWatchdogServer =
     [ "history", "structWatchdogServer.html#a5250e08f8ba03bab3d1ac56f64134723", null ],
     [ "networkGroup", "structWatchdogServer.html#a3e411b2434cb02987a530b230617bf15", null ],
     [ "processGroup", "structWatchdogServer.html#a0c928a382ab3dd2b7f7649e9bed006b5", null ],
-    [ "systemInfo", "structWatchdogServer.html#a433d3ce980aa862c0cf72ccec69846da", null ],
+    [ "systemInfo", "structWatchdogServer.html#a01b4f79f4767ae1f2a9896058ff78fe9", null ],
     [ "trigger", "structWatchdogServer.html#ad28386ab5c73d0f07dbafd7a6a738cfb", null ],
-    [ "watchdog", "structWatchdogServer.html#a5284e735372ca5947a8105ad3167c54a", null ]
+    [ "watchdog", "structWatchdogServer.html#a86b02c2f0ac388ddfa4be1adf018d4ce", null ]
 ];

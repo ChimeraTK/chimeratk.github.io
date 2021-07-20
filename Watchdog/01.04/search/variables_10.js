@@ -9,7 +9,7 @@ var searchData=
   ['swapusage',['swapUsage',['../structSystemInfoModule_1_1Status.html#a09ec2317c8f18f1ad89a2826b9c46dd3',1,'SystemInfoModule::Status']]],
   ['sysstarttime',['sysStartTime',['../structProcessInfoModule_1_1Input.html#ad0ea6cf08b4975e881840bba5c085221',1,'ProcessInfoModule::Input']]],
   ['system',['system',['../structProcessInfoModule.html#a7ea2d9a58f3d7e720225cf087c67b21f',1,'ProcessInfoModule::system()'],['../classSystemInfoModule.html#a61ab7ee77ab55c62397dbbac4c5119a4',1,'SystemInfoModule::system()']]],
-  ['systeminfo',['systemInfo',['../structWatchdogServer.html#a433d3ce980aa862c0cf72ccec69846da',1,'WatchdogServer']]],
+  ['systeminfo',['systemInfo',['../structWatchdogServer.html#a01b4f79f4767ae1f2a9896058ff78fe9',1,'WatchdogServer']]],
   ['systeminfomodule',['SystemInfoModule',['../structProcessInfoModule.html#a4539b1693640ee143d77423345862602',1,'ProcessInfoModule']]],
   ['sysuptime',['sysUpTime',['../structProcessInfoModule_1_1Input.html#a13e06b501dddaf00951a6ccc3cc4c4eb',1,'ProcessInfoModule::Input']]]
 ];
