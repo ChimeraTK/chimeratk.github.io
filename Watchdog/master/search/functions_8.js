@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_3c_3c',['operator&lt;&lt;',['../namespacelogging.html#a4933226495fe152b5ec6b3556f2f78fa',1,'logging']]]
+  ['networkmodule',['NetworkModule',['../structNetworkModule.html#adb4efd9c1a2d4f88b3470a01f4634737',1,'NetworkModule']]]
 ];

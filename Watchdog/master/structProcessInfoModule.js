@@ -3,6 +3,8 @@ var structProcessInfoModule =
     [ "Input", "structProcessInfoModule_1_1Input.html", "structProcessInfoModule_1_1Input" ],
     [ "Statistics", "structProcessInfoModule_1_1Statistics.html", "structProcessInfoModule_1_1Statistics" ],
     [ "Status", "structProcessInfoModule_1_1Status.html", "structProcessInfoModule_1_1Status" ],
+    [ "TriggerGroup", "structProcessInfoModule_1_1TriggerGroup.html", "structProcessInfoModule_1_1TriggerGroup" ],
+    [ "ProcessInfoModule", "structProcessInfoModule.html#a8ac4df9fef8d9504518855cc3d361b2a", null ],
     [ "FillProcInfo", "structProcessInfoModule.html#a85e87f2c7a75ada7b23e8a672b06c75a", null ],
     [ "getTime", "structProcessInfoModule.html#ada9eaa0787b9c5b393450c321e8941a7", null ],
     [ "mainLoop", "structProcessInfoModule.html#a66f1ebb4d2179c7ceb5798fd1c81bc27", null ],
@@ -18,5 +20,5 @@ var structProcessInfoModule =
     [ "this", "structProcessInfoModule.html#a50cbcb3a733dbb4d71fd87e8e75ce594", null ],
     [ "this", "structProcessInfoModule.html#afe44b39d90effd900c77fa4f3d2ef571", null ],
     [ "time_stamp", "structProcessInfoModule.html#af863af6e454aa703037963ad401cae92", null ],
-    [ "trigger", "structProcessInfoModule.html#a3f91718924955fc3bdbd2070c08eec2c", null ]
+    [ "triggerGroup", "structProcessInfoModule.html#a6f5f3e8ee8a9bfd6f0e22121962aeddb", null ]
 ];

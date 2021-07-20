@@ -2,7 +2,8 @@ var structNetworkModule =
 [
     [ "raw", "structNetworkModule_1_1raw.html", "structNetworkModule_1_1raw" ],
     [ "Status", "structNetworkModule_1_1Status.html", "structNetworkModule_1_1Status" ],
-    [ "NetworkModule", "structNetworkModule.html#ab73cb3fb3051d4b179bd8eeb8c85e5ad", null ],
+    [ "TriggerGroup", "structNetworkModule_1_1TriggerGroup.html", "structNetworkModule_1_1TriggerGroup" ],
+    [ "NetworkModule", "structNetworkModule.html#adb4efd9c1a2d4f88b3470a01f4634737", null ],
     [ "mainLoop", "structNetworkModule.html#af06fc227b558a13184bd0c3b168d7102", null ],
     [ "read", "structNetworkModule.html#a16f323f8ccfa306d1e0213179b9e0aae", null ],
     [ "terminate", "structNetworkModule.html#a593e66b34e1f3bdc5180aee6ae5c90b8", null ],
@@ -14,5 +15,5 @@ var structNetworkModule =
     [ "previousData", "structNetworkModule.html#a66af7484e4c3258162a689820f864280", null ],
     [ "status", "structNetworkModule.html#adb991b3e21ac05545ffc25554288b93a", null ],
     [ "this", "structNetworkModule.html#ad489b4e83d10e2bd70404b330656eaeb", null ],
-    [ "trigger", "structNetworkModule.html#a5c3c5089f7ac5af3af0011ad991ce754", null ]
+    [ "triggerGroup", "structNetworkModule.html#ae9d6c509fad5b42d273c7c7f1c097a7e", null ]
 ];

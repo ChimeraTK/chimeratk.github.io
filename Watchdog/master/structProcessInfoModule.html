@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('structProcessInfoModule.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structProcessInfoModule__coll__graph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structProcessInfoModule__coll__graph.svg" width="100%" height="577"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -120,9 +120,13 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule_1_1Status.html">Status</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule_1_1TriggerGroup.html">TriggerGroup</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a8ac4df9fef8d9504518855cc3d361b2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a8ac4df9fef8d9504518855cc3d361b2a">ProcessInfoModule</a> (EntityOwner *owner, const std::string &amp;name, const std::string &amp;description, ctk::HierarchyModifier hierarchyModifier=ctk::HierarchyModifier::none, const std::unordered_set&lt; std::string &gt; &amp;tags={ }, const std::string &amp;pathToTrigger=&quot;/Configuration/tick&quot;)</td></tr>
+<tr class="separator:a8ac4df9fef8d9504518855cc3d361b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66f1ebb4d2179c7ceb5798fd1c81bc27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a66f1ebb4d2179c7ceb5798fd1c81bc27">mainLoop</a> () override</td></tr>
 <tr class="separator:a66f1ebb4d2179c7ceb5798fd1c81bc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85e87f2c7a75ada7b23e8a672b06c75a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a85e87f2c7a75ada7b23e8a672b06c75a">FillProcInfo</a> (const std::shared_ptr&lt; proc_t &gt; &amp;info)</td></tr>
@@ -134,8 +138,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a3f91718924955fc3bdbd2070c08eec2c"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPushInput&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a3f91718924955fc3bdbd2070c08eec2c">trigger</a></td></tr>
-<tr class="separator:a3f91718924955fc3bdbd2070c08eec2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f5f3e8ee8a9bfd6f0e22121962aeddb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structProcessInfoModule_1_1TriggerGroup.html">ProcessInfoModule::TriggerGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a6f5f3e8ee8a9bfd6f0e22121962aeddb">triggerGroup</a></td></tr>
+<tr class="separator:a6f5f3e8ee8a9bfd6f0e22121962aeddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2c65ca6cbbe0349513c9c497000fb55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structProcessInfoModule_1_1Status.html">ProcessInfoModule::Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#aa2c65ca6cbbe0349513c9c497000fb55">this</a></td></tr>
 <tr class="separator:aa2c65ca6cbbe0349513c9c497000fb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41a3ce4607e7affc7cb1c5619642168e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structProcessInfoModule_1_1Status.html">ProcessInfoModule::Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessInfoModule.html#a41a3ce4607e7affc7cb1c5619642168e">status</a></td></tr>
@@ -164,8 +168,79 @@ Public Attributes</h2></td></tr>
 <p><a class="el" href="ProcessModule_8h.html">ProcessModule.h</a></p>
 <p>Created on: Sep 6, 2017 Author: zenker It also collects information about the running job. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Implement proper data types instead of using int for all of them! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ProcessModule_8h_source.html#l00034">34</a> of file <a class="el" href="ProcessModule_8h_source.html">ProcessModule.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="ProcessModule_8h_source.html#l00035">35</a> of file <a class="el" href="ProcessModule_8h_source.html">ProcessModule.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8ac4df9fef8d9504518855cc3d361b2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ac4df9fef8d9504518855cc3d361b2a">&#9670;&nbsp;</a></span>ProcessInfoModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProcessInfoModule::ProcessInfoModule </td>
+          <td>(</td>
+          <td class="paramtype">EntityOwner *&#160;</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ctk::HierarchyModifier&#160;</td>
+          <td class="paramname"><em>hierarchyModifier</em> = <code>ctk::HierarchyModifier::none</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::unordered_set&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tags</em> = <code>{&#160;}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>pathToTrigger</em> = <code>&quot;/Configuration/tick&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ProcessModule_8h_source.html#l00037">37</a> of file <a class="el" href="ProcessModule_8h_source.html">ProcessModule.h</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structProcessInfoModule_a8ac4df9fef8d9504518855cc3d361b2a_icgraph.svg" width="386" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a85e87f2c7a75ada7b23e8a672b06c75a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85e87f2c7a75ada7b23e8a672b06c75a">&#9670;&nbsp;</a></span>FillProcInfo()</h2>
 
@@ -184,19 +259,19 @@ Public Attributes</h2></td></tr>
 <p>Fill process information read via proc interface. </p><dl class="section remark"><dt>Remarks</dt><dd>When changing the pidOffset to get information of another child the cpu usage value will be wrong for the first reading! </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ProcessModule_8cc_source.html#l00043">43</a> of file <a class="el" href="ProcessModule_8cc_source.html">ProcessModule.cc</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structProcessInfoModule_a85e87f2c7a75ada7b23e8a672b06c75a_cgraph.svg" width="543" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structProcessInfoModule_a85e87f2c7a75ada7b23e8a672b06c75a_cgraph.svg" width="543" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="structProcessInfoModule_a85e87f2c7a75ada7b23e8a672b06c75a_icgraph.svg" width="378" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -227,20 +302,20 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Print the watchdog server name, a time stamp and the module name: Result is: 'WATCHDOG_SERVER: "day of week" "month" "day" hh:mm:ss yyyy "module_name" -&gt; ' </p>
 
-<p class="definition">Definition at line <a class="el" href="ProcessModule_8cc_source.html#l00449">449</a> of file <a class="el" href="ProcessModule_8cc_source.html">ProcessModule.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structProcessInfoModule_ada9eaa0787b9c5b393450c321e8941a7_cgraph.svg" width="343" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="ProcessModule_8cc_source.html#l00451">451</a> of file <a class="el" href="ProcessModule_8cc_source.html">ProcessModule.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structProcessInfoModule_ada9eaa0787b9c5b393450c321e8941a7_cgraph.svg" width="343" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="structProcessInfoModule_ada9eaa0787b9c5b393450c321e8941a7_icgraph.svg" width="592" height="431"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -272,11 +347,11 @@ Public Attributes</h2></td></tr>
 <p>Application core main loop. </p>
 
 <p class="definition">Definition at line <a class="el" href="ProcessModule_8cc_source.html#l00015">15</a> of file <a class="el" href="ProcessModule_8cc_source.html">ProcessModule.cc</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structProcessInfoModule_a66f1ebb4d2179c7ceb5798fd1c81bc27_cgraph.svg" width="100%" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -307,11 +382,11 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="ProcessModule_8cc_source.html#l00101">101</a> of file <a class="el" href="ProcessModule_8cc_source.html">ProcessModule.cc</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="structProcessInfoModule_a4949333ed2abc7e07933dda2c1f8cf7e_icgraph.svg" width="386" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -345,7 +420,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ProcessModule_8h_source.html#l00156">156</a> of file <a class="el" href="ProcessModule_8h_source.html">ProcessModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ProcessModule_8h_source.html#l00172">172</a> of file <a class="el" href="ProcessModule_8h_source.html">ProcessModule.h</a>.</p>
 
 </div>
 </div>
@@ -474,23 +549,21 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Store an internal time stamp that is used to calculate the cpu usage. </p>
 
-<p class="definition">Definition at line <a class="el" href="ProcessModule_8h_source.html#l00062">62</a> of file <a class="el" href="ProcessModule_8h_source.html">ProcessModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ProcessModule_8h_source.html#l00078">78</a> of file <a class="el" href="ProcessModule_8h_source.html">ProcessModule.h</a>.</p>
 
 </div>
 </div>
-<a id="a3f91718924955fc3bdbd2070c08eec2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f91718924955fc3bdbd2070c08eec2c">&#9670;&nbsp;</a></span>trigger</h2>
+<a id="a6f5f3e8ee8a9bfd6f0e22121962aeddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f5f3e8ee8a9bfd6f0e22121962aeddb">&#9670;&nbsp;</a></span>triggerGroup</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ctk::ScalarPushInput&lt;uint64_t&gt; ProcessInfoModule::trigger</td>
+          <td class="memname"> <a class="el" href="structProcessInfoModule_1_1TriggerGroup.html">ProcessInfoModule::TriggerGroup</a>  ProcessInfoModule::triggerGroup</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{ <span class="keyword">this</span>, <span class="stringliteral">&quot;trigger&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;Trigger used to update the watchdog&quot;</span>}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ProcessModule_8h_source.html#l00037">37</a> of file <a class="el" href="ProcessModule_8h_source.html">ProcessModule.h</a>.</p>
 
 </div>
 </div>
@@ -504,7 +577,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a></li>
-    <li class="footer">Generated on Tue Apr 13 2021 03:57:05 for watchdog-server by
+    <li class="footer">Generated on Tue Jul 20 2021 03:58:40 for watchdog-server by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

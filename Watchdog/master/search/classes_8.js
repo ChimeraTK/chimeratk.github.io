@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['watchdogserver',['WatchdogServer',['../structWatchdogServer.html',1,'']]]
+  ['triggergroup',['TriggerGroup',['../structNetworkModule_1_1TriggerGroup.html',1,'NetworkModule::TriggerGroup'],['../structLogFileModule_1_1TriggerGroup.html',1,'LogFileModule::TriggerGroup'],['../structProcessInfoModule_1_1TriggerGroup.html',1,'ProcessInfoModule::TriggerGroup'],['../structSystemInfoModule_1_1TriggerGroup.html',1,'SystemInfoModule::TriggerGroup'],['../structFileSystemModule_1_1TriggerGroup.html',1,'FileSystemModule::TriggerGroup']]]
 ];

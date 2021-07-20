@@ -13,10 +13,21 @@ var hierarchy =
       ] ],
       [ "SystemInfoModule", "classSystemInfoModule.html", null ]
     ] ],
+    [ "HierarchyModifyingGroup", null, [
+      [ "FileSystemModule::TriggerGroup", "structFileSystemModule_1_1TriggerGroup.html", null ],
+      [ "LogFileModule::LogFileGroup", "structLogFileModule_1_1LogFileGroup.html", null ],
+      [ "LogFileModule::TriggerGroup", "structLogFileModule_1_1TriggerGroup.html", null ],
+      [ "LoggingModule::LogFileGroup", "structLoggingModule_1_1LogFileGroup.html", null ],
+      [ "NetworkModule::TriggerGroup", "structNetworkModule_1_1TriggerGroup.html", null ],
+      [ "ProcessInfoModule::TriggerGroup", "structProcessInfoModule_1_1TriggerGroup.html", null ],
+      [ "SystemInfoModule::TriggerGroup", "structSystemInfoModule_1_1TriggerGroup.html", null ]
+    ] ],
     [ "ModuleGroup", null, [
       [ "FileSystemGroup", "structFileSystemGroup.html", null ],
       [ "NetworkGroup", "structNetworkGroup.html", null ],
-      [ "ProcessGroup", "structProcessGroup.html", null ]
+      [ "ProcessGroup", "structProcessGroup.html", null ],
+      [ "SystemInfoGroup", "structSystemInfoGroup.html", null ],
+      [ "WatchdogModuleGroup", "structWatchdogModuleGroup.html", null ]
     ] ],
     [ "ProcessHandler", "structProcessHandler.html", null ],
     [ "NetworkModule::raw", "structNetworkModule_1_1raw.html", null ],

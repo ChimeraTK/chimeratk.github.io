@@ -2,7 +2,8 @@ var structFileSystemModule =
 [
     [ "Config", "structFileSystemModule_1_1Config.html", "structFileSystemModule_1_1Config" ],
     [ "Status", "structFileSystemModule_1_1Status.html", "structFileSystemModule_1_1Status" ],
-    [ "FileSystemModule", "structFileSystemModule.html#a1afdb84fa3475bc6b4acb2567e09f171", null ],
+    [ "TriggerGroup", "structFileSystemModule_1_1TriggerGroup.html", "structFileSystemModule_1_1TriggerGroup" ],
+    [ "FileSystemModule", "structFileSystemModule.html#ac31ea27fa6b6399b221bca8e81b1d686", null ],
     [ "mainLoop", "structFileSystemModule.html#a4199e1dd422368b3e3700d500f53666b", null ],
     [ "read", "structFileSystemModule.html#a67434494675af85aa26dee1671de0dd5", null ],
     [ "terminate", "structFileSystemModule.html#afb17665a1cecdec043f09e9ead389dd0", null ],
@@ -16,5 +17,5 @@ var structFileSystemModule =
     [ "this", "structFileSystemModule.html#a17a1cef5ba04bb2ee1bc5539f1abba2a", null ],
     [ "this", "structFileSystemModule.html#aa42f3faaff9ed5d7492755b53ce02b41", null ],
     [ "tmp", "structFileSystemModule.html#aa603ec6c7cf976b9fffcc632d6325f2e", null ],
-    [ "trigger", "structFileSystemModule.html#a9aa6745dca44753b6b41bdacfbad39b6", null ]
+    [ "triggerGroup", "structFileSystemModule.html#af8a5ec06d8f289bce23d8e85ff169cda", null ]
 ];
