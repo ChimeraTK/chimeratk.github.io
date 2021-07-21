@@ -12,6 +12,7 @@ var class_chimera_t_k_1_1_device_module =
     [ "getCircularNetworkHash", "class_chimera_t_k_1_1_device_module.html#a947adaf8b75d17468e85b9c996f10bce", null ],
     [ "getCurrentVersionNumber", "class_chimera_t_k_1_1_device_module.html#a0b1397c1859b806f25953d8e5823ae9e", null ],
     [ "getDataValidity", "class_chimera_t_k_1_1_device_module.html#ae096be5d7013ce6bc18e5fb39d7674cc", null ],
+    [ "getDeviceAliasOrURI", "class_chimera_t_k_1_1_device_module.html#aef35434c93225a27eba9220c19b9bbb9", null ],
     [ "getExceptionVersionNumber", "class_chimera_t_k_1_1_device_module.html#a756f44c344662b51a4dd15ba11657dca", null ],
     [ "getInputModulesRecursively", "class_chimera_t_k_1_1_device_module.html#aaf0c917563c4c7ebfc2aaca66a8a11a1", null ],
     [ "getModuleType", "class_chimera_t_k_1_1_device_module.html#aad3660d26fc3cb6cda85d2e4e7945eb0", null ],

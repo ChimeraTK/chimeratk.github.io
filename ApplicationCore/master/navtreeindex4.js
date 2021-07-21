@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"configreader.html#usage":[3,0],
 "configreader.html#xmlstructure":[3,1],
 "demo_app2_8cc.html":[18,0,1,1],
 "demo_app2_8cc_source.html":[18,0,1,1],
@@ -245,9 +246,8 @@ var NAVTREEINDEX4 =
 "struct_automation.html#a1a86176292eb457cf69d9a764a38a468":[17,0,4,3],
 "struct_automation.html#a4a08a0e51d5adb3d163709212eff7ecb":[17,0,4,4],
 "struct_automation.html#a6d28e80b6662b738458f8753adc2f837":[17,0,4,5],
-"struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[17,0,4,0],
 "struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[17,0,4,1],
+"struct_automation.html#a98e7f8e8132e573677b8862924bb403a":[17,0,4,0],
 "struct_automation.html#aa738677550010b51b08df005e0e1d7f3":[17,0,4,2],
-"struct_automation.html#acff6fa50c6a95870a79b4b1df4a14ea1":[17,0,4,7],
-"struct_automation.html#adc175eb9561ef659f570a65ae1ac97cc":[17,0,4,6]
+"struct_automation.html#acff6fa50c6a95870a79b4b1df4a14ea1":[17,0,4,7]
 };

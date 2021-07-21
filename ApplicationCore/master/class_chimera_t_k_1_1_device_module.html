@@ -206,6 +206,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a947adaf8b75d17468e85b9c996f10bce"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#a947adaf8b75d17468e85b9c996f10bce">getCircularNetworkHash</a> () override</td></tr>
 <tr class="memdesc:a947adaf8b75d17468e85b9c996f10bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of the circular dependency network (0 if none).  <a href="#a947adaf8b75d17468e85b9c996f10bce">More...</a><br /></td></tr>
 <tr class="separator:a947adaf8b75d17468e85b9c996f10bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef35434c93225a27eba9220c19b9bbb9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_module.html#aef35434c93225a27eba9220c19b9bbb9">getDeviceAliasOrURI</a> () const</td></tr>
+<tr class="memdesc:aef35434c93225a27eba9220c19b9bbb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return associated device alias resp.  <a href="#aef35434c93225a27eba9220c19b9bbb9">More...</a><br /></td></tr>
+<tr class="separator:aef35434c93225a27eba9220c19b9bbb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_module.html">ChimeraTK::Module</a></td></tr>
 <tr class="memitem:ad45684a75a461aa889cef3a41711348e inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#ad45684a75a461aa889cef3a41711348e">Module</a> (<a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> *owner, const std::string &amp;name, const std::string &amp;description, <a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0">HierarchyModifier</a> hierarchyModifier=<a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0a334c4a4c42fdb79d7ebc3e73b517e6f8">HierarchyModifier::none</a>, const std::unordered_set&lt; std::string &gt; &amp;tags={})</td></tr>
 <tr class="memdesc:ad45684a75a461aa889cef3a41711348e inherit pub_methods_class_chimera_t_k_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: Create <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a> by the given name with the given description and register it with its owner.  <a href="class_chimera_t_k_1_1_module.html#ad45684a75a461aa889cef3a41711348e">More...</a><br /></td></tr>
@@ -932,6 +935,36 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a9a32600fa633b1cd991ba8f2bd3ac6b3">ChimeraTK::EntityOwner</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00149">149</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+
+</div>
+</div>
+<a id="aef35434c93225a27eba9220c19b9bbb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef35434c93225a27eba9220c19b9bbb9">&#9670;&nbsp;</a></span>getDeviceAliasOrURI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ChimeraTK::DeviceModule::getDeviceAliasOrURI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return associated device alias resp. </p>
+<p>URI </p>
+
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00219">219</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1732,7 +1765,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00295">295</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00300">300</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1756,7 +1789,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00306">306</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00311">311</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1780,7 +1813,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00301">301</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00306">306</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1806,7 +1839,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00304">304</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00309">309</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1830,7 +1863,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00297">297</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00302">302</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1856,7 +1889,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00300">300</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00305">305</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1921,7 +1954,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00224">224</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00229">229</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1964,7 +1997,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00243">243</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00248">248</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -1991,7 +2024,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 <p>The error flag whether the device is functional. </p>
 <p>protected by the errorMutex. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00261">261</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00266">266</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2015,7 +2048,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00276">276</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00281">281</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2042,7 +2075,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 <p>Mutex to protect deviceHasError. </p>
 <p>Attention: In testable mode this mutex must only be locked when holding the testable mode mutex! </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00254">254</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00259">259</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2068,7 +2101,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 
 <p>Queue used for communication between <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception. ">reportException()</a> and the moduleThread. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00250">250</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00255">255</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2095,7 +2128,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 <p>Version number of the last exception. </p>
 <p>Only access under the error mutex. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00257">257</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00262">262</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2119,7 +2152,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00279">279</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00284">284</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2143,7 +2176,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00287">287</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00292">292</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2170,7 +2203,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 <p>Latch to halt accessors until initial values can be received. </p>
 <p>Must be a latch and not a mutex as it is locked in a different thread than unlocked. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00286">286</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00291">291</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2197,7 +2230,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 <p>The thread waiting for <a class="el" href="class_chimera_t_k_1_1_device_module.html#a866cf974d4a178d389753536be5a88db" title="Use this function to report an exception. ">reportException()</a>. </p>
 <p>It runs <a class="el" href="class_chimera_t_k_1_1_device_module.html#ab388c8a6e152379643f96c8fb945d3a3" title="This functions tries to open the device and set the deviceError. ">handleException()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00246">246</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00251">251</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2221,7 +2254,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00274">274</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00279">279</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2245,7 +2278,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00230">230</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00235">235</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2269,7 +2302,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00293">293</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00298">298</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2296,7 +2329,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 <p>List of TransferElements to be written after the device has been recovered. </p>
 <p>See function <a class="el" href="class_chimera_t_k_1_1_device_module.html#adc36415aff0aeb27621ade30f73d07b8" title="Add a TransferElement to the list DeviceModule::writeRecoveryOpen. ">addRecoveryAccessor()</a> for details. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00272">272</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00277">277</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2322,7 +2355,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 
 <p>Mutex for writing the DeviceModule::writeRecoveryOpen. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00282">282</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00287">287</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2346,7 +2379,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00225">225</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00230">230</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2370,7 +2403,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00289">289</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00294">294</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2394,7 +2427,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00221">221</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00226">226</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2418,7 +2451,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00222">222</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00227">227</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2442,7 +2475,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00290">290</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00295">295</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2466,7 +2499,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00292">292</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00297">297</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -2480,7 +2513,7 @@ template&lt;typename TRIGGERTYPE &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a></li>
-    <li class="footer">Generated on Fri Jul 2 2021 03:53:46 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Jul 21 2021 03:53:50 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
