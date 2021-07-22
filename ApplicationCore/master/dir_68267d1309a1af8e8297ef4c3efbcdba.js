@@ -18,6 +18,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "VariableNetwork.cc", "_variable_network_8cc.html", null ],
     [ "VariableNetworkDumpingVisitor.cc", "_variable_network_dumping_visitor_8cc.html", null ],
     [ "VariableNetworkGraphDumpingVisitor.cc", "_variable_network_graph_dumping_visitor_8cc.html", null ],
+    [ "VariableNetworkModuleGraphDumpingVisitor.cc", "_variable_network_module_graph_dumping_visitor_8cc.html", null ],
     [ "VariableNetworkNode.cc", "_variable_network_node_8cc.html", null ],
     [ "VariableNetworkNodeDumpingVisitor.cc", "_variable_network_node_dumping_visitor_8cc.html", null ],
     [ "VirtualModule.cc", "_virtual_module_8cc.html", null ],

@@ -541,7 +541,8 @@ var hierarchy =
     [ "ChimeraTK::PushableStream", "class_chimera_t_k_1_1_pushable_stream.html", [
       [ "ChimeraTK::VariableNetworkNodeDumpingVisitor", "class_chimera_t_k_1_1_variable_network_node_dumping_visitor.html", [
         [ "ChimeraTK::VariableNetworkDumpingVisitor", "class_chimera_t_k_1_1_variable_network_dumping_visitor.html", null ],
-        [ "ChimeraTK::VariableNetworkGraphDumpingVisitor", "class_chimera_t_k_1_1_variable_network_graph_dumping_visitor.html", null ]
+        [ "ChimeraTK::VariableNetworkGraphDumpingVisitor", "class_chimera_t_k_1_1_variable_network_graph_dumping_visitor.html", null ],
+        [ "ChimeraTK::VariableNetworkModuleGraphDumpingVisitor", "class_chimera_t_k_1_1_variable_network_module_graph_dumping_visitor.html", null ]
       ] ]
     ] ],
     [ "ChimeraTK::RecoveryHelper", "struct_chimera_t_k_1_1_recovery_helper.html", null ],
@@ -588,6 +589,9 @@ var hierarchy =
     [ "ChimeraTK::VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html", null ],
     [ "ChimeraTK::VariableNetworkNode_data", "struct_chimera_t_k_1_1_variable_network_node__data.html", null ],
     [ "ChimeraTK::Visitor< Types >", "class_chimera_t_k_1_1_visitor.html", null ],
+    [ "ChimeraTK::Visitor< Application, Module, VariableNetwork >", "class_chimera_t_k_1_1_visitor.html", [
+      [ "ChimeraTK::VariableNetworkModuleGraphDumpingVisitor", "class_chimera_t_k_1_1_variable_network_module_graph_dumping_visitor.html", null ]
+    ] ],
     [ "ChimeraTK::Visitor< Application, VariableNetwork >", "class_chimera_t_k_1_1_visitor.html", [
       [ "ChimeraTK::VariableNetworkGraphDumpingVisitor", "class_chimera_t_k_1_1_variable_network_graph_dumping_visitor.html", null ]
     ] ],

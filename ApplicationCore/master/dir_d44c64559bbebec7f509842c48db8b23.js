@@ -109,6 +109,9 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "VariableNetworkGraphDumpingVisitor.h", "_variable_network_graph_dumping_visitor_8h.html", [
       [ "VariableNetworkGraphDumpingVisitor", "class_chimera_t_k_1_1_variable_network_graph_dumping_visitor.html", "class_chimera_t_k_1_1_variable_network_graph_dumping_visitor" ]
     ] ],
+    [ "VariableNetworkModuleGraphDumpingVisitor.h", "_variable_network_module_graph_dumping_visitor_8h.html", [
+      [ "VariableNetworkModuleGraphDumpingVisitor", "class_chimera_t_k_1_1_variable_network_module_graph_dumping_visitor.html", "class_chimera_t_k_1_1_variable_network_module_graph_dumping_visitor" ]
+    ] ],
     [ "VariableNetworkNode.h", "_variable_network_node_8h.html", [
       [ "AnyType", "class_chimera_t_k_1_1_any_type.html", null ],
       [ "VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html", "class_chimera_t_k_1_1_variable_network_node" ],

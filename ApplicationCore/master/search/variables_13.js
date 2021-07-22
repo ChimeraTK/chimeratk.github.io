@@ -29,7 +29,7 @@ var searchData=
   ['submodule',['submodule',['../struct_test_module_1_1_module1.html#ada22c3784e9fa40b7d59544092cb7d2f',1,'TestModule::Module1']]],
   ['submodule1',['submodule1',['../struct_test_module_1_1_module2.html#ae0925eb2adf2a23c7e67f4c5d7b8c0ff',1,'TestModule::Module2']]],
   ['submodule2',['submodule2',['../struct_test_module_1_1_module2.html#abef5050a3a8bc91cfd78a6aa681967ce',1,'TestModule::Module2']]],
-  ['submodules',['subModules',['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()'],['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()']]],
+  ['submodules',['submodules',['../class_chimera_t_k_1_1_virtual_module.html#aaabf33844ce367973e9ea0997fbc760f',1,'ChimeraTK::VirtualModule::submodules()'],['../class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0',1,'ChimeraTK::ControlSystemModule::subModules()']]],
   ['subsubmodule',['subsubmodule',['../struct_test_module_1_1_module1_1_1_sub_module.html#af07d409f95763fa8a592fa5084c9658e',1,'TestModule::Module1::SubModule']]],
   ['synchronoustransfercounter',['synchronousTransferCounter',['../class_chimera_t_k_1_1_device_module.html#a88f4864f1f3001a38aab45486792db78',1,'ChimeraTK::DeviceModule']]]
 ];
