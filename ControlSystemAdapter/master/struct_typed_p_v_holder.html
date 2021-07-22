@@ -102,8 +102,8 @@ $(document).ready(function(){initNavTree('struct_typed_p_v_holder.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae664d9db3be89457c11e16dc1ba3d6e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_typed_p_v_holder.html#ae664d9db3be89457c11e16dc1ba3d6e3">TypedPVHolder</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html">ChimeraTK::DevicePVManager</a> &gt; const &amp;processVariableManager, std::string typeNamePrefix)</td></tr>
-<tr class="separator:ae664d9db3be89457c11e16dc1ba3d6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aff2efd16a76cab7114535bc851a12c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_typed_p_v_holder.html#a3aff2efd16a76cab7114535bc851a12c">TypedPVHolder</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html">ChimeraTK::DevicePVManager</a> &gt; const &amp;processVariableManager, std::string typeNamePrefix, int arrayLen)</td></tr>
+<tr class="separator:a3aff2efd16a76cab7114535bc851a12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9dc715bac39c750d70bd93b7bb33bbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_typed_p_v_holder.html#ad9dc715bac39c750d70bd93b7bb33bbe">inputToOutput</a> (boost::optional&lt; ChimeraTK::VersionNumber &gt; version, ChimeraTK::DataValidity validity)</td></tr>
 <tr class="separator:ad9dc715bac39c750d70bd93b7bb33bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -132,8 +132,8 @@ struct TypedPVHolder&lt; DataType &gt;</h3>
 
 <p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00023">23</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae664d9db3be89457c11e16dc1ba3d6e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae664d9db3be89457c11e16dc1ba3d6e3">&#9670;&nbsp;</a></span>TypedPVHolder()</h2>
+<a id="a3aff2efd16a76cab7114535bc851a12c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aff2efd16a76cab7114535bc851a12c">&#9670;&nbsp;</a></span>TypedPVHolder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +153,13 @@ template&lt;class DataType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>typeNamePrefix</em>&#160;</td>
+          <td class="paramname"><em>typeNamePrefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>arrayLen</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -357,7 +363,7 @@ template&lt;class DataType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_typed_p_v_holder.html">TypedPVHolder</a></li>
-    <li class="footer">Generated on Tue May 4 2021 03:55:26 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Thu Jul 22 2021 03:54:30 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

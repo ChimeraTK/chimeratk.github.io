@@ -114,8 +114,8 @@ $(document).ready(function(){initNavTree('class_reference_test_application.html'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad26824f47ce67d9a7bf6714f67388240"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reference_test_application.html#ad26824f47ce67d9a7bf6714f67388240">ReferenceTestApplication</a> (std::string const &amp;applicationName_=&quot;ReferenceTest&quot;)</td></tr>
-<tr class="separator:ad26824f47ce67d9a7bf6714f67388240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84056c940ce8b73da761f0dae2bb4665"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reference_test_application.html#a84056c940ce8b73da761f0dae2bb4665">ReferenceTestApplication</a> (std::string const &amp;applicationName_=&quot;ReferenceTest&quot;, int arrayLength=10)</td></tr>
+<tr class="separator:a84056c940ce8b73da761f0dae2bb4665"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f2d06601d0905d3d5e9d363f70e8564"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reference_test_application.html#a6f2d06601d0905d3d5e9d363f70e8564">~ReferenceTestApplication</a> () override</td></tr>
 <tr class="separator:a6f2d06601d0905d3d5e9d363f70e8564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6ee82c54c2941157ce767fee73b6d9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reference_test_application.html#ab6ee82c54c2941157ce767fee73b6d9c">initialise</a> () override</td></tr>
@@ -201,6 +201,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a6ddfbcee95b6e462f46efe6be6a1556c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5663edd11053d834a9e7c392fa67481d"><td class="memItemLeft" align="right" valign="top">boost::scoped_ptr&lt; <a class="el" href="_reference_test_application_8h.html#a6d2511c4efaade2516cd34e18a4763a1">HolderMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reference_test_application.html#a5663edd11053d834a9e7c392fa67481d">_holderMap</a></td></tr>
 <tr class="separator:a5663edd11053d834a9e7c392fa67481d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ff3450c527194315edfe9e5c45b59f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reference_test_application.html#ad2ff3450c527194315edfe9e5c45b59f">arrayLen</a></td></tr>
+<tr class="separator:ad2ff3450c527194315edfe9e5c45b59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_application_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_application_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_application_base.html">ChimeraTK::ApplicationBase</a></td></tr>
 <tr class="memitem:adb56be02730cdd3abc9002700dbb84c4 inherit pro_attribs_class_chimera_t_k_1_1_application_base"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_base.html#adb56be02730cdd3abc9002700dbb84c4">applicationName</a></td></tr>
 <tr class="memdesc:adb56be02730cdd3abc9002700dbb84c4 inherit pro_attribs_class_chimera_t_k_1_1_application_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the application.  <a href="class_chimera_t_k_1_1_application_base.html#adb56be02730cdd3abc9002700dbb84c4">More...</a><br /></td></tr>
@@ -229,8 +231,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00127">127</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad26824f47ce67d9a7bf6714f67388240"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad26824f47ce67d9a7bf6714f67388240">&#9670;&nbsp;</a></span>ReferenceTestApplication()</h2>
+<a id="a84056c940ce8b73da761f0dae2bb4665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84056c940ce8b73da761f0dae2bb4665">&#9670;&nbsp;</a></span>ReferenceTestApplication()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,8 +244,18 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">ReferenceTestApplication::ReferenceTestApplication </td>
           <td>(</td>
           <td class="paramtype">std::string const &amp;&#160;</td>
-          <td class="paramname"><em>applicationName_</em> = <code>&quot;ReferenceTest&quot;</code></td><td>)</td>
+          <td class="paramname"><em>applicationName_</em> = <code>&quot;ReferenceTest&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>arrayLength</em> = <code>10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -253,7 +265,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00196">196</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00197">197</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 
 </div>
 </div>
@@ -280,7 +292,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00226">226</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00227">227</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -318,7 +330,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns a list of process variables for which data transfer failed during the last runMainLoopOnce call. </p>
 
-<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00309">309</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00310">310</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 
 </div>
 </div>
@@ -345,7 +357,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00183">183</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00184">184</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -384,7 +396,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_application_base.html#a060c36044735bb3b479940fe9f644a5b">ChimeraTK::ApplicationBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00200">200</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00201">201</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -419,7 +431,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00295">295</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00296">296</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -465,7 +477,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The 'body' of the main loop, i.e. </p>
 <p>the functionality once, without the loop around it. </p>
 
-<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00273">273</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00274">274</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -502,7 +514,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>An infinite while loop, running <a class="el" href="class_reference_test_application.html#a45263737c0dea86b5badf4680c200dc5" title="The &#39;body&#39; of the main loop, i.e. ">mainBody()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00237">237</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00238">238</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -545,7 +557,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00178">178</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00179">179</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -580,7 +592,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00167">167</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00168">168</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -615,7 +627,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00172">172</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00173">173</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -682,7 +694,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00303">303</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00304">304</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -729,7 +741,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_application_base.html#a3a32c70d9576ac03963dbcf2f9f4f34d">ChimeraTK::ApplicationBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00222">222</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00223">223</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -772,7 +784,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00277">277</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00278">278</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
@@ -857,6 +869,30 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ad2ff3450c527194315edfe9e5c45b59f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2ff3450c527194315edfe9e5c45b59f">&#9670;&nbsp;</a></span>arrayLen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ReferenceTestApplication::arrayLen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_reference_test_application_8h_source.html#l00166">166</a> of file <a class="el" href="_reference_test_application_8h_source.html">ReferenceTestApplication.h</a>.</p>
+
+</div>
+</div>
 <a id="a3a915ea761b586066b905a4761001670"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a915ea761b586066b905a4761001670">&#9670;&nbsp;</a></span>dataValidity</h2>
 
@@ -898,7 +934,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_reference_test_application.html">ReferenceTestApplication</a></li>
-    <li class="footer">Generated on Tue May 4 2021 03:55:26 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Thu Jul 22 2021 03:54:30 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
