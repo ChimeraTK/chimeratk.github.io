@@ -677,6 +677,25 @@
     <span class="n">accessor</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">array2D</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">array2D</span></div>
 
+<div class="viewcode-block" id="Device.getCatalogueMetadata"><a class="viewcode-back" href="../mtca4u.html#mtca4u.Device.getCatalogueMetadata">[docs]</a>  <span class="k">def</span> <span class="nf">getCatalogueMetadata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameterName</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Reads out metadata form the device catalogue</span>
+
+<span class="sd">    The available metadata depends on the use backend. E.g. for</span>
+<span class="sd">    NumericAddressedBackends, metadata will come from the map file.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    parameterName : str</span>
+<span class="sd">      Name of the metadata parameter to read.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    metadataValue: str</span>
+<span class="sd">      The value corresponding to the given parameterName.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">getCatalogueMetadata</span><span class="p">(</span><span class="n">parameterName</span><span class="p">)</span></div>
+
 <span class="c1"># Helper methods below</span>
 
   <span class="k">def</span> <span class="nf">__exitIfSuppliedIndexIncorrect</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">registerAccessor</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="p">):</span>
