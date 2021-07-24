@@ -111,9 +111,9 @@ var NAVTREEINDEX =
 "struct_deeper_1_1_hierarchies.html#a88babc325442a36eddaefceeb32c3f31",
 "struct_polling_read_module.html",
 "struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4",
-"struct_test_helper.html",
-"structfixture__with__poll__and__push__input.html#a65d38ee518e5af46524d85612d34b1ea",
-"test_modules_8cc.html#a695e09374252f192a0cc230d730fef2c"
+"struct_test_fixture_with_eception_dummy.html#ac78aed2f92b009ecd53b7f097622a08b",
+"structfixture__with__poll__and__push__input.html",
+"test_modules_8cc.html#a0280ba7565cb73cb576a3c7591086a95"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

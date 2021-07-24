@@ -195,6 +195,7 @@ var hierarchy =
             [ "TestApp::B", "struct_test_app_1_1_b.html", null ],
             [ "TestApplication< T >::IO", "struct_test_application_1_1_i_o.html", null ],
             [ "TestApplication< T >::TestModule", "struct_test_application_1_1_test_module.html", null ],
+            [ "TestApplication< T >::TestModuleHidden", "struct_test_application_1_1_test_module_hidden.html", null ],
             [ "TestApplication_empty::TestModule", "struct_test_application__empty_1_1_test_module.html", null ],
             [ "TestApplication_moveAssignment::TestModule", "struct_test_application__move_assignment_1_1_test_module.html", null ],
             [ "TestApplication_moveConstruct::TestModule", "struct_test_application__move_construct_1_1_test_module.html", null ],
