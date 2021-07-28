@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['macropulsenumbersource',['macroPulseNumberSource',['../struct_chimera_t_k_1_1_property_attributes.html#a6430c0e2c3e469ae30fa4670d51792f7',1,'ChimeraTK::PropertyAttributes']]],
-  ['modified',['modified',['../class_chimera_t_k_1_1_doocs_spectrum.html#aa5d59a574c2a78d8ec5338f1febe67e0',1,'ChimeraTK::DoocsSpectrum']]]
+  ['label',['label',['../struct_chimera_t_k_1_1_xy_description_1_1_axis.html#a10655a7aaa6fc81bd7716db02fd37dea',1,'ChimeraTK::XyDescription::Axis']]],
+  ['location',['location',['../struct_chimera_t_k_1_1_property_description.html#a5a47381286d2ea5687ad3dbf986873de',1,'ChimeraTK::PropertyDescription']]],
+  ['locations',['locations',['../struct_chimera_t_k_1_1_doocs_updater_1_1_to_doocs_update_descriptor.html#a60afa2a46a27511cfd73e660cfd09cd3',1,'ChimeraTK::DoocsUpdater::ToDoocsUpdateDescriptor']]],
+  ['logarithmic',['logarithmic',['../struct_chimera_t_k_1_1_xy_description_1_1_axis.html#ae124b732298f4effc4ef3c96f9c34b0e',1,'ChimeraTK::XyDescription::Axis']]]
 ];

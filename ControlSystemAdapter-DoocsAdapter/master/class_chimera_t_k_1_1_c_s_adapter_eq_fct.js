@@ -7,6 +7,8 @@ var class_chimera_t_k_1_1_c_s_adapter_eq_fct =
     [ "init", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#a80c3ca3307536c6beed43a6783fc354d", null ],
     [ "post_init", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#a7df72b8ab51561ff038a696b45069019", null ],
     [ "registerProcessVariablesInDoocs", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#ae6ea446f82465cd12cce0232017f9f7c", null ],
+    [ "saveArray", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#a7608f3f454f73488328f2e6f8cdd1e19", null ],
+    [ "write", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#aa88769179f52993aaec24d66ac4f2a2e", null ],
     [ "controlSystemPVManager_", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#ac7cc4df5a4f7e1e934a00179dcb6a7ae", null ],
     [ "doocsProperties_", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#af8151acfed3a1d39beb7af74bc0b7d74", null ],
     [ "fctCode_", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#ae7c47c35674abcfdc8b58e0e2d89a0b1", null ],

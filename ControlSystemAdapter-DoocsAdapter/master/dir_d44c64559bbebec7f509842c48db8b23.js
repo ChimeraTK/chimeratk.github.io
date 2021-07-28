@@ -32,6 +32,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     ] ],
     [ "getAllVariableNames.h", "get_all_variable_names_8h.html", "get_all_variable_names_8h" ],
     [ "PropertyDescription.h", "_property_description_8h.html", [
+      [ "PersistConfig", "struct_chimera_t_k_1_1_persist_config.html", "struct_chimera_t_k_1_1_persist_config" ],
       [ "PropertyAttributes", "struct_chimera_t_k_1_1_property_attributes.html", "struct_chimera_t_k_1_1_property_attributes" ],
       [ "PropertyDescription", "struct_chimera_t_k_1_1_property_description.html", "struct_chimera_t_k_1_1_property_description" ],
       [ "AutoPropertyDescription", "struct_chimera_t_k_1_1_auto_property_description.html", "struct_chimera_t_k_1_1_auto_property_description" ],

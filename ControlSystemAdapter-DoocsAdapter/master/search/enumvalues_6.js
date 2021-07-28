@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['short',['Short',['../struct_chimera_t_k_1_1_auto_property_description.html#ae47b83262db33cd0267c9470e1d78661a30bb747c98bccdd11b3f89e644c4d0ad',1,'ChimeraTK::AutoPropertyDescription']]]
+  ['off',['OFF',['../struct_chimera_t_k_1_1_persist_config.html#a257cb72e6fc55c018296bb9dc80a524faec3aa7b561babab2be4e9729d3e66c1f',1,'ChimeraTK::PersistConfig']]],
+  ['on',['ON',['../struct_chimera_t_k_1_1_persist_config.html#a257cb72e6fc55c018296bb9dc80a524fac172a5ab3931f982cdc2a1b9b0c38edc',1,'ChimeraTK::PersistConfig']]]
 ];

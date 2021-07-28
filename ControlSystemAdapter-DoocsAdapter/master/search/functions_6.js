@@ -20,7 +20,9 @@ var searchData=
   ['getlocationandcode',['getLocationAndCode',['../class_chimera_t_k_1_1_variable_mapper.html#abd94469f3c6eab5f750539d31300ea9f',1,'ChimeraTK::VariableMapper']]],
   ['getlocationfrompropertyaddress',['getLocationFromPropertyAddress',['../server_based_test_tools_8h.html#ab72e9bb9f1d314e6e36ca2c81c3bf85c',1,'serverBasedTestTools.h']]],
   ['getmacropuslenumbersourcedefault',['getMacroPusleNumberSourceDefault',['../class_chimera_t_k_1_1_variable_mapper.html#a28bf057320a328a6fdfdf0524b9e81fb',1,'ChimeraTK::VariableMapper']]],
+  ['getpersistdefault',['getPersistDefault',['../class_chimera_t_k_1_1_variable_mapper.html#abe4078f73e1af8ef9e95083e63e52178',1,'ChimeraTK::VariableMapper']]],
   ['getprocessvariablesinthislocation',['getProcessVariablesInThisLocation',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#aa9b14a8983622d4d7757709d8d91e1d3',1,'ChimeraTK::CSAdapterEqFct']]],
   ['getpropertiesinlocation',['getPropertiesInLocation',['../class_chimera_t_k_1_1_variable_mapper.html#aafbeae678eaa4d6c47fb57444337f47e',1,'ChimeraTK::VariableMapper']]],
-  ['getusedvariables',['getUsedVariables',['../class_chimera_t_k_1_1_variable_mapper.html#a4a095441bcd16d9c5acd0796aa5a9537',1,'ChimeraTK::VariableMapper']]]
+  ['getusedvariables',['getUsedVariables',['../class_chimera_t_k_1_1_variable_mapper.html#a4a095441bcd16d9c5acd0796aa5a9537',1,'ChimeraTK::VariableMapper']]],
+  ['globalfixture',['GlobalFixture',['../struct_global_fixture.html#a82a3660c34f8ecf5e55eb1ee55949ca8',1,'GlobalFixture']]]
 ];

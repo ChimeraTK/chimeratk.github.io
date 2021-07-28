@@ -12,6 +12,7 @@ var namespace_chimera_t_k =
     [ "DoocsXy", "class_chimera_t_k_1_1_doocs_xy.html", "class_chimera_t_k_1_1_doocs_xy" ],
     [ "IfffDescription", "struct_chimera_t_k_1_1_ifff_description.html", "struct_chimera_t_k_1_1_ifff_description" ],
     [ "LocationInfo", "struct_chimera_t_k_1_1_location_info.html", "struct_chimera_t_k_1_1_location_info" ],
+    [ "PersistConfig", "struct_chimera_t_k_1_1_persist_config.html", "struct_chimera_t_k_1_1_persist_config" ],
     [ "PropertyAttributes", "struct_chimera_t_k_1_1_property_attributes.html", "struct_chimera_t_k_1_1_property_attributes" ],
     [ "PropertyDescription", "struct_chimera_t_k_1_1_property_description.html", "struct_chimera_t_k_1_1_property_description" ],
     [ "SpectrumDescription", "struct_chimera_t_k_1_1_spectrum_description.html", "struct_chimera_t_k_1_1_spectrum_description" ],

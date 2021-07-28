@@ -9,6 +9,7 @@ var searchData=
   ['checkspectrum',['checkSpectrum',['../server_based_test_tools_8h.html#a19f7c51a55fc5ea47f9ffd766f485bfd',1,'serverBasedTestTools.h']]],
   ['checkwithtimeout',['checkWithTimeout',['../server_based_test_tools_8h.html#a144561068fc8e9326fb24b82cba2b1ad',1,'serverBasedTestTools.h']]],
   ['chimeratk',['ChimeraTK',['../namespace_chimera_t_k.html',1,'']]],
+  ['cleanupfiles',['cleanupFiles',['../struct_global_fixture.html#afc7f8a843bfa27ab87cddafbff18f5ec',1,'GlobalFixture']]],
   ['clear',['clear',['../class_chimera_t_k_1_1_variable_mapper.html#a10b7e160794fa0ea39deb0354956cf39',1,'ChimeraTK::VariableMapper']]],
   ['controlsystempvmanager_5f',['controlSystemPVManager_',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#ac7cc4df5a4f7e1e934a00179dcb6a7ae',1,'ChimeraTK::CSAdapterEqFct']]],
   ['create',['create',['../class_chimera_t_k_1_1_doocs_p_v_factory.html#aa39ca83409ab6a864386a0dbf504e7a8',1,'ChimeraTK::DoocsPVFactory']]],

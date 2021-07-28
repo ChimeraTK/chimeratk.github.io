@@ -7,6 +7,7 @@ var searchData=
   ['checksourceconsistency',['checkSourceConsistency',['../class_chimera_t_k_1_1_doocs_ifff.html#addd93fb3d86780b87b281c71ec05f0ff',1,'ChimeraTK::DoocsIfff']]],
   ['checkspectrum',['checkSpectrum',['../server_based_test_tools_8h.html#a19f7c51a55fc5ea47f9ffd766f485bfd',1,'serverBasedTestTools.h']]],
   ['checkwithtimeout',['checkWithTimeout',['../server_based_test_tools_8h.html#a144561068fc8e9326fb24b82cba2b1ad',1,'serverBasedTestTools.h']]],
+  ['cleanupfiles',['cleanupFiles',['../struct_global_fixture.html#afc7f8a843bfa27ab87cddafbff18f5ec',1,'GlobalFixture']]],
   ['clear',['clear',['../class_chimera_t_k_1_1_variable_mapper.html#a10b7e160794fa0ea39deb0354956cf39',1,'ChimeraTK::VariableMapper']]],
   ['create',['create',['../class_chimera_t_k_1_1_doocs_p_v_factory.html#aa39ca83409ab6a864386a0dbf504e7a8',1,'ChimeraTK::DoocsPVFactory']]],
   ['createdoocsarray',['createDoocsArray',['../class_chimera_t_k_1_1_doocs_p_v_factory.html#a4410f04a76298cca7e9764d0a8f57de7',1,'ChimeraTK::DoocsPVFactory']]],
