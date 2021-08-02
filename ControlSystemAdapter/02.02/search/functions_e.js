@@ -4,7 +4,7 @@ var searchData=
   ['readdeviceinfo',['readDeviceInfo',['../struct_process_array_factory_backend.html#aa540d33dff5765b01dda6e6a5848324d',1,'ProcessArrayFactoryBackend']]],
   ['readfromfile',['readFromFile',['../class_chimera_t_k_1_1_persistent_data_storage.html#ae29c614248cc8509083f157058e9fd19',1,'ChimeraTK::PersistentDataStorage']]],
   ['readxmlvaluetags',['readXmlValueTags',['../class_chimera_t_k_1_1_persistent_data_storage.html#afadc587e4b1b2fae9257f6655be6c2ff',1,'ChimeraTK::PersistentDataStorage']]],
-  ['referencetestapplication',['ReferenceTestApplication',['../class_reference_test_application.html#ad26824f47ce67d9a7bf6714f67388240',1,'ReferenceTestApplication']]],
+  ['referencetestapplication',['ReferenceTestApplication',['../class_reference_test_application.html#a84056c940ce8b73da761f0dae2bb4665',1,'ReferenceTestApplication']]],
   ['registervariable',['registerVariable',['../class_chimera_t_k_1_1_persistent_data_storage.html#af965b63c9258181f5ff535495b8f316c',1,'ChimeraTK::PersistentDataStorage']]],
   ['releasemanualloopcontrol',['releaseManualLoopControl',['../class_reference_test_application.html#a9ac737323b3a69be4b618387d2cbce11',1,'ReferenceTestApplication']]],
   ['replacetransferelement',['replaceTransferElement',['../class_chimera_t_k_1_1_process_array.html#a4a9a87416793c87a3ce907c5da8c8f71',1,'ChimeraTK::ProcessArray']]],
