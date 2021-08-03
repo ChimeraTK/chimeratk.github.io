@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"class_chimera_t_k_1_1_rebot_dummy_session.html#afeadacfa2edd5180c8d7f18f877203b9":[18,0,1,69,13],
 "class_chimera_t_k_1_1_rebot_testable_clock.html":[18,0,1,74],
 "class_chimera_t_k_1_1_register_accessor.html":[18,0,1,75],
 "class_chimera_t_k_1_1_register_accessor.html#a1e3b4f23ab4fa74e52f41be067547c8c":[18,0,1,75,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "class_chimera_t_k_1_1_scalar_register_accessor.html#a9a26027c7e3539b8aab569787b3466f1":[18,0,1,82,5],
 "class_chimera_t_k_1_1_scalar_register_accessor.html#ab6b9f082cde29b0faf7fd09a0199060d":[18,0,1,82,0],
 "class_chimera_t_k_1_1_scalar_register_accessor.html#ac91a668d687c25e64f20c3ee9e4ac7c2":[18,0,1,82,6],
-"class_chimera_t_k_1_1_scalar_register_accessor.html#acad78236ac3ce3b5f238c3f09f926567":[18,0,1,82,4],
-"class_chimera_t_k_1_1_scalar_register_accessor.html#af19bbac3338b95f0e9e0f28c5489060a":[18,0,1,82,2]
+"class_chimera_t_k_1_1_scalar_register_accessor.html#acad78236ac3ce3b5f238c3f09f926567":[18,0,1,82,4]
 };

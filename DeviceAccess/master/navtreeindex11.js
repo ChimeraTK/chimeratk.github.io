@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"struct_area_type.html#af07f821d2eecf55f0317fbfae9371336":[18,0,6,3],
+"struct_argument.html":[18,0,7],
 "struct_argument.html#a36da86ea8486edfce1577578acf192eb":[18,0,7,2],
 "struct_argument.html#a38d7336f4f6d7a336a2392f2dc981e6d":[18,0,7,1],
 "struct_argument.html#aa5251ed60ee59544dfddc78043e7d1da":[18,0,7,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "struct_chimera_t_k_1_1_thread_informer_mutex.html#a8160152b415ddd8d3986b292616b7ff0":[18,0,1,90,1],
 "struct_chimera_t_k_1_1_thread_informer_mutex.html#ac4c4cab0aba0c7abc480d4ed94c2b78e":[18,0,1,90,2],
 "struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html":[18,0,1,97,1],
-"struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#a0de450243d490dbb0194626019e3f05b":[18,0,1,97,1,5],
-"struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#a4dab008cb6732171464d21c5e5a56e62":[18,0,1,97,1,3],
-"struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#a71bca8957cbb4e3ae6c87b3b47ef033d":[18,0,1,97,1,6]
+"struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#a0de450243d490dbb0194626019e3f05b":[18,0,1,97,1,5]
 };

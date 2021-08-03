@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"struct_reg_full_area.html#aaaefbf3d8002c78819aa0a3b915e4e07":[18,0,76,1],
+"struct_reg_full_area.html#aebfe9054dea555a325b739fa7e6b1650":[18,0,76,0],
 "struct_reg_full_area_scaled.html":[18,0,77],
 "struct_reg_full_area_scaled.html#a0e61a0caf17f1546abb91328438d7c2f":[18,0,77,3],
 "struct_reg_full_area_scaled.html#a0f72f6971f31d5ec0633c2c367150cb9":[18,0,77,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "structdevice__ioctrl__time.html#a73717c26f9ec75f5b4ea114976a1ba2c":[18,0,23,0],
 "structdevice__rw.html":[18,0,24],
 "structdevice__rw.html#a4731025369481beeaa5c408775ad2a7e":[18,0,24,1],
-"structdevice__rw.html#ab06d43634d5687872ab483eb4dd96a29":[18,0,24,3],
-"structdevice__rw.html#ad00399557d63fd24a5301204a7631c52":[18,0,24,4],
-"structdevice__rw.html#ad9348912dabb0b218d0c500c66dda20d":[18,0,24,5]
+"structdevice__rw.html#ab06d43634d5687872ab483eb4dd96a29":[18,0,24,3]
 };

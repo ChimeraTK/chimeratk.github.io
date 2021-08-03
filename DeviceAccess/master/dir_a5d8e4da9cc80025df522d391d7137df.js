@@ -6,5 +6,5 @@ var dir_a5d8e4da9cc80025df522d391d7137df =
     [ "RegisterCatalogue.cc", "_register_catalogue_8cc.html", null ],
     [ "TransferElement.cc", "_transfer_element_8cc.html", null ],
     [ "TransferGroup.cc", "_transfer_group_8cc.html", null ],
-    [ "VersionNumber.cc", "_version_number_8cc.html", null ]
+    [ "VersionNumber.cc", "_version_number_8cc.html", "_version_number_8cc" ]
 ];
