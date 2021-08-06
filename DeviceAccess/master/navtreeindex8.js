@@ -1,5 +1,10 @@
 var NAVTREEINDEX8 =
 {
+"class_device_info_map_test_suite.html#a89be45b690a81f2b3fa1dfd5ec54c4ca":[18,0,26,0],
+"class_dummy_register_test.html":[18,0,32],
+"class_dummy_register_test.html#a24c9f97460af41a2295f512e1df1b7f2":[18,0,32,2],
+"class_dummy_register_test.html#a4feac4ea64180327ac5c3a4726ab3768":[18,0,32,1],
+"class_dummy_register_test.html#a557da1a8b2223f1e4d6b133fbaea55a4":[18,0,32,5],
 "class_dummy_register_test.html#a6a476d9aec16f7a3c1c21ae13efe1b61":[18,0,32,3],
 "class_dummy_register_test.html#a82a19f93c51e91cc35bdb477140ca565":[18,0,32,4],
 "class_dummy_register_test.html#aaa98a1dfb3684b4b7a6b79b8c9096579":[18,0,32,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX8 =
 "device__backends_2include_2_device_backend_8h.html":[19,0,1,0,2],
 "device__backends_2include_2_device_backend_8h_source.html":[19,0,1,0,2],
 "device__backends_2include_2_device_backend_impl_8h.html":[19,0,1,0,3],
-"device__backends_2include_2_device_backend_impl_8h_source.html":[19,0,1,0,3],
-"device__backends_2include_2_dummy_backend_8h.html":[19,0,1,0,4],
-"device__backends_2include_2_dummy_backend_8h_source.html":[19,0,1,0,4],
-"device__backends_2include_2_dummy_register_accessor_8h.html":[19,0,1,0,6],
-"device__backends_2include_2_dummy_register_accessor_8h_source.html":[19,0,1,0,6],
-"device__backends_2include_2_fixed_point_converter_8h.html":[19,0,1,0,8]
+"device__backends_2include_2_device_backend_impl_8h_source.html":[19,0,1,0,3]
 };

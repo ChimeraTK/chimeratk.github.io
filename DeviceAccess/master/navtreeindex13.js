@@ -1,5 +1,10 @@
 var NAVTREEINDEX13 =
 {
+"struct_reg_full_area.html":[18,0,76],
+"struct_reg_full_area.html#a2e312ba340bf2a610e9a43d914ffd357":[18,0,76,3],
+"struct_reg_full_area.html#a6396aafd56c43efe51752f1c4029825e":[18,0,76,4],
+"struct_reg_full_area.html#a64e7e4fdf34e1cdd17cfa10ad334b3d5":[18,0,76,5],
+"struct_reg_full_area.html#a8d674c50583d279dee8470a92a543265":[18,0,76,2],
 "struct_reg_full_area.html#aaaefbf3d8002c78819aa0a3b915e4e07":[18,0,76,1],
 "struct_reg_full_area.html#aebfe9054dea555a325b739fa7e6b1650":[18,0,76,0],
 "struct_reg_full_area_scaled.html":[18,0,77],
@@ -227,8 +232,8 @@ var NAVTREEINDEX13 =
 "struct_working_backend_1_1_backend_registerer.html#ae177e6eb4297f167e35303b9af09de99":[18,0,118,0,0],
 "struct_wrong_version_backend.html":[18,0,119],
 "struct_wrong_version_backend_1_1_backend_registerer.html":[18,0,119,0],
-"struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[18,0,119,0,1],
 "struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[18,0,119,0,0],
+"struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[18,0,119,0,1],
 "structaccess_private_data_1_1stow__private.html":[18,0,0,0],
 "structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5":[18,0,0,0,0],
 "structaccess_private_data_1_1stowed.html":[18,0,0,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX13 =
 "structdevice__ioctrl__dma.html#a32b3b16303be485dc116787dc4564bdd":[18,0,22,5],
 "structdevice__ioctrl__dma.html#a5cce7fa7327b8572fba52bdf18d14b0f":[18,0,22,0],
 "structdevice__ioctrl__dma.html#afcf57847c512e334f1a83bd89be950fd":[18,0,22,1],
-"structdevice__ioctrl__time.html":[18,0,23],
-"structdevice__ioctrl__time.html#a04786d897463142079bd0cc2b041efcd":[18,0,23,1],
-"structdevice__ioctrl__time.html#a73717c26f9ec75f5b4ea114976a1ba2c":[18,0,23,0],
-"structdevice__rw.html":[18,0,24],
-"structdevice__rw.html#a4731025369481beeaa5c408775ad2a7e":[18,0,24,1],
-"structdevice__rw.html#ab06d43634d5687872ab483eb4dd96a29":[18,0,24,3]
+"structdevice__ioctrl__time.html":[18,0,23]
 };

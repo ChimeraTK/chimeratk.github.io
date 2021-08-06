@@ -1,5 +1,10 @@
 var NAVTREEINDEX7 =
 {
+"class_chimera_t_k_1_1_transfer_group.html#a2f09459b907856e46cd595e0bed49f6c":[18,0,1,95,15],
+"class_chimera_t_k_1_1_transfer_group.html#a32d6ce6d3b40c3a361874948ab71f327":[18,0,1,95,13],
+"class_chimera_t_k_1_1_transfer_group.html#a359ad5b2f663420d47720acfb58cb13a":[18,0,1,95,10],
+"class_chimera_t_k_1_1_transfer_group.html#a3e2a181be4626c14587c6d302f0c90eb":[18,0,1,95,4],
+"class_chimera_t_k_1_1_transfer_group.html#a6e45e3ff091f038aceb543a04fb0ec6f":[18,0,1,95,16],
 "class_chimera_t_k_1_1_transfer_group.html#a7466ad987832950933ac0cdb204bb8f6":[18,0,1,95,5],
 "class_chimera_t_k_1_1_transfer_group.html#a86287fe11f64206207e0d868ed83c3db":[18,0,1,95,9],
 "class_chimera_t_k_1_1_transfer_group.html#a8782ad050d289be8a9369904ca6d3b4d":[18,0,1,95,12],
@@ -244,10 +249,5 @@ var NAVTREEINDEX7 =
 "class_device_info_map_test.html#aa5629297d0035e1fae4d6da81d43d422":[18,0,25,8],
 "class_device_info_map_test.html#ab0596c3badaf29c509db5ae4d06e01ec":[18,0,25,0],
 "class_device_info_map_test.html#abfad2d17a9e87ec0a0e9fbce9808817b":[18,0,25,5],
-"class_device_info_map_test_suite.html":[18,0,26],
-"class_device_info_map_test_suite.html#a89be45b690a81f2b3fa1dfd5ec54c4ca":[18,0,26,0],
-"class_dummy_register_test.html":[18,0,32],
-"class_dummy_register_test.html#a24c9f97460af41a2295f512e1df1b7f2":[18,0,32,2],
-"class_dummy_register_test.html#a4feac4ea64180327ac5c3a4726ab3768":[18,0,32,1],
-"class_dummy_register_test.html#a557da1a8b2223f1e4d6b133fbaea55a4":[18,0,32,5]
+"class_device_info_map_test_suite.html":[18,0,26]
 };

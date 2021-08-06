@@ -96,5 +96,7 @@ var searchData=
   ['getvaluevectorfromxmlsubnode',['getValueVectorFromXmlSubnode',['../class_chimera_t_k_1_1_logical_name_map_parser.html#ae8f13a61e1995b759840129c793168d7',1,'ChimeraTK::LogicalNameMapParser::getValueVectorFromXmlSubnode(const xmlpp::Node *node, const std::string &amp;subnodeName)'],['../class_chimera_t_k_1_1_logical_name_map_parser.html#a3accc305e418a90e5de5d19cf1df6f07',1,'ChimeraTK::LogicalNameMapParser::getValueVectorFromXmlSubnode(const xmlpp::Node *node, const std::string &amp;subnodeName)']]],
   ['getversionnumber',['getVersionNumber',['../class_chimera_t_k_1_1_transfer_element_abstractor.html#a05416264bd9c68ac18d9ba5b476cc801',1,'ChimeraTK::TransferElementAbstractor::getVersionNumber()'],['../class_chimera_t_k_1_1_transfer_element.html#a69298f31fe4a42e779bca3669d06c2bd',1,'ChimeraTK::TransferElement::getVersionNumber()']]],
   ['getwithaltseparator',['getWithAltSeparator',['../class_chimera_t_k_1_1_register_path.html#a8316ef607751347a61e746b38837ef83',1,'ChimeraTK::RegisterPath']]],
-  ['getwithotherseparatorreplaced',['getWithOtherSeparatorReplaced',['../class_chimera_t_k_1_1_register_path.html#a57672f170b4a4d76dd32094b6109bf32',1,'ChimeraTK::RegisterPath']]]
+  ['getwithotherseparatorreplaced',['getWithOtherSeparatorReplaced',['../class_chimera_t_k_1_1_register_path.html#a57672f170b4a4d76dd32094b6109bf32',1,'ChimeraTK::RegisterPath']]],
+  ['getwritecount',['getWriteCount',['../class_chimera_t_k_1_1_exception_dummy.html#ac86bf7b958e3125e344876afd28e9861',1,'ChimeraTK::ExceptionDummy']]],
+  ['getwriteorder',['getWriteOrder',['../class_chimera_t_k_1_1_exception_dummy.html#a9e9dbeb58711d364acdd49d327bee099',1,'ChimeraTK::ExceptionDummy']]]
 ];
