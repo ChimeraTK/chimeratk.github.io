@@ -10,6 +10,7 @@ var test_propagate_data_fault_flag_8cc =
     [ "Fixture_noTestableMode", "struct_fixture__no_testable_mode.html", "struct_fixture__no_testable_mode" ],
     [ "Module3", "struct_module3.html", "struct_module3" ],
     [ "TestApplication4", "struct_test_application4.html", "struct_test_application4" ],
+    [ "BOOST_NO_EXCEPTIONS", "test_propagate_data_fault_flag_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
     [ "BOOST_TEST_MODULE", "test_propagate_data_fault_flag_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_propagate_data_fault_flag_8cc.html#af080bc28f9c1f17bafd7290495ac285e", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_propagate_data_fault_flag_8cc.html#aceedc5686e8b140ddacd6321e9fac0e6", null ],
