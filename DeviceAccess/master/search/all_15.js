@@ -31,5 +31,6 @@ var searchData=
   ['versionnumber_2eh',['VersionNumber.h',['../device_2include_2_version_number_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_version_number_8h.html',1,'(Global Namespace)']]],
   ['versionnumbertest',['VersionNumberTest',['../class_version_number_test.html',1,'']]],
   ['versionnumbertestsuite',['VersionNumberTestSuite',['../class_version_number_test_suite.html',1,'VersionNumberTestSuite'],['../class_version_number_test_suite.html#ac4f2cae3c40499352a027cd3a25745bb',1,'VersionNumberTestSuite::VersionNumberTestSuite()']]],
-  ['virtualfunctiontemplate_2eh',['VirtualFunctionTemplate.h',['../mtca4u__compatibility__headers_2_virtual_function_template_8h.html',1,'(Global Namespace)'],['../util_2include_2_virtual_function_template_8h.html',1,'(Global Namespace)']]]
+  ['virtualfunctiontemplate_2eh',['VirtualFunctionTemplate.h',['../mtca4u__compatibility__headers_2_virtual_function_template_8h.html',1,'(Global Namespace)'],['../util_2include_2_virtual_function_template_8h.html',1,'(Global Namespace)']]],
+  ['void',['VOID',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6b842be755b82e8e9f26f9104aac1600a9974e0d8371b39d2827b3b386706d0b7',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]]
 ];

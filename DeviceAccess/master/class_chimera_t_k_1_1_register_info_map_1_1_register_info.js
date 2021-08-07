@@ -3,14 +3,16 @@ var class_chimera_t_k_1_1_register_info_map_1_1_register_info =
     [ "Access", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79f", [
       [ "READ", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79fa856a86944e7e14ea6140fb19e584d406", null ],
       [ "WRITE", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79fad16044acc9efa248e4d7bc9b7c8a01bd", null ],
-      [ "READWRITE", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79faee0698ea9ceea2d7fff201cd0af5dbca", null ]
+      [ "READWRITE", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79faee0698ea9ceea2d7fff201cd0af5dbca", null ],
+      [ "INTERRUPT", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79faffd3a25b325019343a2d24d28032f253", null ]
     ] ],
     [ "Type", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6b842be755b82e8e9f26f9104aac1600", [
       [ "FIXED_POINT", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6b842be755b82e8e9f26f9104aac1600ae8d3be0bb81bf8e129350ad2c8ba1ee0", null ],
       [ "IEEE754", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6b842be755b82e8e9f26f9104aac1600a08cafdf5abafe2886ed7145511176714", null ],
-      [ "ASCII", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6b842be755b82e8e9f26f9104aac1600a2fbf8a3df38e98a5d5a95a70e74ad2b5", null ]
+      [ "ASCII", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6b842be755b82e8e9f26f9104aac1600a2fbf8a3df38e98a5d5a95a70e74ad2b5", null ],
+      [ "VOID", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a6b842be755b82e8e9f26f9104aac1600a9974e0d8371b39d2827b3b386706d0b7", null ]
     ] ],
-    [ "RegisterInfo", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a03359c29c5abc84119cd148c4b394a42", null ],
+    [ "RegisterInfo", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a9280b2fdcfdb1120e5ad1abfdc46b708", null ],
     [ "RegisterInfo", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a16dd0f55e88e2d104f7a9ab3e14fb335", null ],
     [ "getDataDescriptor", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aa9557afbc83009c30022f9f7237b6f3e", null ],
     [ "getNumberOfChannels", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a86d5bd5caa1c9db167e3e76fba76714a", null ],
@@ -27,6 +29,8 @@ var class_chimera_t_k_1_1_register_info_map_1_1_register_info =
     [ "bar", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#afe4c5bcdd76ed520e96aca76b03c38b3", null ],
     [ "dataDescriptor", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a35726baa004e88f0b928d7901708f7cd", null ],
     [ "dataType", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a7e1262bdfc1cfc50032749c54f18bea1", null ],
+    [ "interruptCtrlNumber", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a69db734d964ac4e561ca8f3b7a6bcdac", null ],
+    [ "interruptNumber", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ad0cd4f45ef03bf5924c75afb44af9d0b", null ],
     [ "is2DMultiplexed", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a863192de94bed8ca4b09a3e70fa58820", null ],
     [ "module", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aa203d6ed4514692e915999e0c7eed203", null ],
     [ "name", "class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a54d1776db5ef445d35e6617823296d13", null ],

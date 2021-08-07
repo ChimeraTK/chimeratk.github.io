@@ -3,6 +3,7 @@ var class_chimera_t_k_1_1_exception_dummy =
     [ "BackendRegisterer", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer.html", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer" ],
     [ "ExceptionDummy", "class_chimera_t_k_1_1_exception_dummy.html#af9d7b6889e101ce97fd4321a2e380e3e", null ],
     [ "activateAsyncRead", "class_chimera_t_k_1_1_exception_dummy.html#ae4ef5735a32d50e7cb7f699c08e7a349", null ],
+    [ "asyncReadActivated", "class_chimera_t_k_1_1_exception_dummy.html#afdaaa7b439df0b45045828438c29e50b", null ],
     [ "close", "class_chimera_t_k_1_1_exception_dummy.html#a57b4caf50ca9534e518129f4ae1668cc", null ],
     [ "getRegisterAccessor_impl", "class_chimera_t_k_1_1_exception_dummy.html#a3b9d8307fb2ba845e1ac817952ad70a0", null ],
     [ "getWriteCount", "class_chimera_t_k_1_1_exception_dummy.html#ac86bf7b958e3125e344876afd28e9861", null ],

@@ -1,5 +1,16 @@
 var NAVTREEINDEX14 =
 {
+"structdevice__ioctrl__data.html#aa0b658a92f878b772eacf929ffe1e180":[18,0,21,2],
+"structdevice__ioctrl__data.html#abce7358be06d7ce7e756fe02c25c187e":[18,0,21,0],
+"structdevice__ioctrl__data.html#ad8ffd816b771df6ef50f7c40166a37a6":[18,0,21,3],
+"structdevice__ioctrl__dma.html":[18,0,22],
+"structdevice__ioctrl__dma.html#a0796ba7e60f5ed15719a885a871101c5":[18,0,22,4],
+"structdevice__ioctrl__dma.html#a0b2c5967b28765ba545b56dcb88c2762":[18,0,22,3],
+"structdevice__ioctrl__dma.html#a1e19c195c09b5115ca42ca5bf7392bd8":[18,0,22,2],
+"structdevice__ioctrl__dma.html#a32b3b16303be485dc116787dc4564bdd":[18,0,22,5],
+"structdevice__ioctrl__dma.html#a5cce7fa7327b8572fba52bdf18d14b0f":[18,0,22,0],
+"structdevice__ioctrl__dma.html#afcf57847c512e334f1a83bd89be950fd":[18,0,22,1],
+"structdevice__ioctrl__time.html":[18,0,23],
 "structdevice__ioctrl__time.html#a04786d897463142079bd0cc2b041efcd":[18,0,23,1],
 "structdevice__ioctrl__time.html#a73717c26f9ec75f5b4ea114976a1ba2c":[18,0,23,0],
 "structdevice__rw.html":[18,0,24],
@@ -238,16 +249,5 @@ var NAVTREEINDEX14 =
 "test_l_map_file_8cpp.html#a7ff992440c0b98be761736b3d41e140b":[19,0,7,1,20,5],
 "test_l_map_file_8cpp.html#ac5b33c0a3bb6a337f6f003abe97eeb4b":[19,0,7,1,20,6],
 "test_l_map_file_8cpp_source.html":[19,0,7,1,20],
-"test_l_map_force_read_only_plugin_8cc.html":[19,0,7,1,21],
-"test_l_map_force_read_only_plugin_8cc.html#a139f00d2466d591f60b8d6a73c8273f1":[19,0,7,1,21,0],
-"test_l_map_force_read_only_plugin_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[19,0,7,1,21,1],
-"test_l_map_force_read_only_plugin_8cc.html#aa44b30d2486baac0b4cac391dd6025e9":[19,0,7,1,21,2],
-"test_l_map_force_read_only_plugin_8cc_source.html":[19,0,7,1,21],
-"test_l_map_math_plugin_8cpp.html":[19,0,7,1,22],
-"test_l_map_math_plugin_8cpp.html#a0f1daf79791093feb347007aec002bea":[19,0,7,1,22,2],
-"test_l_map_math_plugin_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[19,0,7,1,22,0],
-"test_l_map_math_plugin_8cpp.html#a4c1987a2d587b2038b41fa14416c4d0f":[19,0,7,1,22,3],
-"test_l_map_math_plugin_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[19,0,7,1,22,1],
-"test_l_map_math_plugin_8cpp.html#a7ff992440c0b98be761736b3d41e140b":[19,0,7,1,22,5],
-"test_l_map_math_plugin_8cpp.html#a994f7c79465e4bd4426aa1c419c35f96":[19,0,7,1,22,4]
+"test_l_map_force_read_only_plugin_8cc.html":[19,0,7,1,21]
 };

@@ -33,6 +33,7 @@ var searchData=
   ['check_5ftimeout',['CHECK_TIMEOUT',['../_unified_backend_test_8h.html#a17030ac7f00713a62e05ab6c35cb710e',1,'CHECK_TIMEOUT():&#160;UnifiedBackendTest.h'],['../test_subdevice_backend_8cpp.html#a4231b3c2fbf5750f62fc192c34b48a27',1,'CHECK_TIMEOUT():&#160;testSubdeviceBackend.cpp']]],
   ['checkandresize',['checkAndResize',['../class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html#a379ba1a3ed2d5cfd4247d709f0917490',1,'ChimeraTK::RegisterAccessor::AccessorHandler']]],
   ['checkasraw',['checkAsRaw',['../test_float_raw_data_8cpp.html#a7220c58e3084fe9f9452a0cb6a062db8',1,'checkAsRaw(int32_t rawValue, float expectedValue):&#160;testFloatRawData.cpp'],['../test_i_e_e_e754___single_converter_8cpp.html#a7220c58e3084fe9f9452a0cb6a062db8',1,'checkAsRaw(int32_t rawValue, float expectedValue):&#160;testIEEE754_SingleConverter.cpp']]],
+  ['checkfileconsitencyandthrowiferror',['checkFileConsitencyAndThrowIfError',['../class_chimera_t_k_1_1_map_file_parser.html#a363b5255d3acf4e05c40f66fa3c492ad',1,'ChimeraTK::MapFileParser']]],
   ['checkforunknownflags',['checkForUnknownFlags',['../class_chimera_t_k_1_1_access_mode_flags.html#a785c39a24b2731c30a05d04798242883',1,'ChimeraTK::AccessModeFlags']]],
   ['checkpointersarenotnull',['checkPointersAreNotNull',['../class_chimera_t_k_1_1_device.html#a9e472f646192fb1b56a5fe83cc02507b',1,'ChimeraTK::Device']]],
   ['checkregister',['checkRegister',['../class_chimera_t_k_1_1_numeric_addressed_backend.html#ad3d2a68b3f4421dfd456bdbd57f31f9b',1,'ChimeraTK::NumericAddressedBackend']]],
