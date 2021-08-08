@@ -5,6 +5,7 @@ var namespace_chimera_t_k =
     [ "Rebot", "namespace_chimera_t_k_1_1_rebot.html", "namespace_chimera_t_k_1_1_rebot" ],
     [ "AccessModeFlags", "class_chimera_t_k_1_1_access_mode_flags.html", "class_chimera_t_k_1_1_access_mode_flags" ],
     [ "BackendFactory", "class_chimera_t_k_1_1_backend_factory.html", "class_chimera_t_k_1_1_backend_factory" ],
+    [ "Boolean", "class_chimera_t_k_1_1_boolean.html", "class_chimera_t_k_1_1_boolean" ],
     [ "BufferingRegisterAccessor", "class_chimera_t_k_1_1_buffering_register_accessor.html", "class_chimera_t_k_1_1_buffering_register_accessor" ],
     [ "compareModuleName_pred", "class_chimera_t_k_1_1compare_module_name__pred.html", "class_chimera_t_k_1_1compare_module_name__pred" ],
     [ "compareRegisterInfosByName_functor", "class_chimera_t_k_1_1compare_register_infos_by_name__functor.html", "class_chimera_t_k_1_1compare_register_infos_by_name__functor" ],
@@ -100,6 +101,7 @@ var namespace_chimera_t_k =
     [ "UnifiedBackendTest", "class_chimera_t_k_1_1_unified_backend_test.html", "class_chimera_t_k_1_1_unified_backend_test" ],
     [ "Utilities", "class_chimera_t_k_1_1_utilities.html", "class_chimera_t_k_1_1_utilities" ],
     [ "VersionNumber", "class_chimera_t_k_1_1_version_number.html", "class_chimera_t_k_1_1_version_number" ],
+    [ "Void", "class_chimera_t_k_1_1_void.html", "class_chimera_t_k_1_1_void" ],
     [ "XdmaBackend", "class_chimera_t_k_1_1_xdma_backend.html", "class_chimera_t_k_1_1_xdma_backend" ],
     [ "XdmaIntfAbstract", "class_chimera_t_k_1_1_xdma_intf_abstract.html", "class_chimera_t_k_1_1_xdma_intf_abstract" ]
 ];

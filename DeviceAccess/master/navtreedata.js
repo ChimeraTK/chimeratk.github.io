@@ -97,21 +97,21 @@ var NAVTREEINDEX =
 [
 ".html",
 "_unified_backend_test_8h.html#ad026dd4a8d0c54ed5084a0ed3e51d985a075ae3d2fc31640504f814f60e5ef713",
-"class_chimera_t_k_1_1_device.html#a0a86afbebd076b8bc1d7bc6fe87db89d",
-"class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html",
-"class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html#a9a4deff23e2b4a080b0c28cbe2dc7937",
-"class_chimera_t_k_1_1_rebot_dummy_session.html#a9f5986355e0b28da3e72243f836c8a68",
-"class_chimera_t_k_1_1_scalar_register_accessor.html",
-"class_chimera_t_k_1_1_transfer_element_test_accessor.html#afee4901c6b29e55418c26cc758da566b",
-"class_device_info_map_test.html#a3c0ecba4b118a224d2764684ad86c05a",
-"device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html",
-"functions_vars_a.html",
-"struct__pcieuni__ioctl__bar__sizes.html#a1655f2c0a5992b5017c45c4bbd8d045d",
-"struct_chimera_t_k_1_1_test_capabilities.html#a667988f1a5628bc5c03f6b251b97eb37",
-"struct_reg_constant.html#a07ac5c8ca63653bd96ad45087026b7e7",
-"structdevice__ioctrl__data.html#aa0b658a92f878b772eacf929ffe1e180",
-"test_l_map_force_read_only_plugin_8cc.html#a139f00d2466d591f60b8d6a73c8273f1",
-"test_transfer_group_8cpp.html#a6b2a3852db8bb19ab6909bac01859985"
+"class_chimera_t_k_1_1_data_type.html#af99ead6e20dd92fa1d90d8095f0210b9",
+"class_chimera_t_k_1_1_fixed_point_converter.html#ac585ba939272d706a022b02784a75e75",
+"class_chimera_t_k_1_1_n_d_register_accessor.html#acced6e77f634ed68e4d66eef4cb48a41",
+"class_chimera_t_k_1_1_rebot_dummy_session.html#a15c3f858311a2f03fec87fe42f06af5b",
+"class_chimera_t_k_1_1_register_path.html#aa1572adeb0e4da637d4251912da0f92f",
+"class_chimera_t_k_1_1_transfer_element_test_accessor.html#ad8972031ae35b6e0d01bce9fb8a6c9f8",
+"class_decorator_test_accessor.html#aab3b082f73a9db9fb599beb3203e3ebf",
+"device__backends_2_logical_name_mapping_2include_2_l_n_m_backend_channel_accessor_8h.html",
+"functions_i.html",
+"parser_utilities_8h.html#aa12c9ae1b43184cbb38d56f9aec8f630",
+"struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html#af893a0a797fa5604c3e3b2b3690a217a",
+"struct_reg_channel4__push.html#a406e15fa04783a39a6e6a23f6ac0c723",
+"struct_variable_register_descriptor_base.html#aad5338fa118d3ab730d74ed3e031034a",
+"test_l_map_backend_8cpp.html#acb468ba72afbbff23617cf7022ecd53b",
+"test_transfer_element_8cpp.html#ae1e19de86b21eb1bfa7f0c1bc82899c9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

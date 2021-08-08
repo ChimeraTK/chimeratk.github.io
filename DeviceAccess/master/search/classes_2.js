@@ -7,6 +7,7 @@ var searchData=
   ['bitregisterdescriptorbase_3c_20regbit2ofwordfirmware_20_3e',['BitRegisterDescriptorBase&lt; RegBit2OfWordFirmware &gt;',['../struct_bit_register_descriptor_base.html',1,'']]],
   ['bitregisterdescriptorbase_3c_20regbit2ofwordfirmware_5fpush_20_3e',['BitRegisterDescriptorBase&lt; RegBit2OfWordFirmware_push &gt;',['../struct_bit_register_descriptor_base.html',1,'']]],
   ['bitregisterdescriptorbase_3c_20regbit3ofvar_20_3e',['BitRegisterDescriptorBase&lt; RegBit3OfVar &gt;',['../struct_bit_register_descriptor_base.html',1,'']]],
+  ['boolean',['Boolean',['../class_chimera_t_k_1_1_boolean.html',1,'ChimeraTK']]],
   ['buffer',['Buffer',['../struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer.html',1,'ChimeraTK::ExceptionDummyPushDecorator']]],
   ['bufferingregisteraccessor',['BufferingRegisterAccessor',['../class_chimera_t_k_1_1_buffering_register_accessor.html',1,'ChimeraTK']]],
   ['bufferingregistertest',['BufferingRegisterTest',['../class_buffering_register_test.html',1,'']]],

@@ -12,7 +12,9 @@ var class_chimera_t_k_1_1_data_type =
       [ "uint64", "class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a96029c8f8221a7daf59052e022975d72", null ],
       [ "float32", "class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a77409000048075a168901376095a70b8", null ],
       [ "float64", "class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899acf9a113559e682b39aab0754540f31cc", null ],
-      [ "string", "class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a4385209851f5523769bdd194d86b970d", null ]
+      [ "string", "class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a4385209851f5523769bdd194d86b970d", null ],
+      [ "Boolean", "class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a3de8e99d1cd4908685abb635925636ae", null ],
+      [ "Void", "class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a51cddcf7e04fca1b6590e993576fc8e2", null ]
     ] ],
     [ "DataType", "class_chimera_t_k_1_1_data_type.html#ae4824db416a83fb98cc802c8bf0424a8", null ],
     [ "DataType", "class_chimera_t_k_1_1_data_type.html#a40b59072a3ac3f6b49a88d1b63d4983a", null ],

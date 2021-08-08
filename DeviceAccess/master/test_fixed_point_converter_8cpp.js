@@ -54,6 +54,8 @@ var test_fixed_point_converter_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_fixed_point_converter_8cpp.html#a6789262e4eff433ebff1cd9420c177cc", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_fixed_point_converter_8cpp.html#a9ed56285727c6d6368fabd4e87b193c1", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_fixed_point_converter_8cpp.html#a1057fd740d427b9415f4496193c534fc", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_fixed_point_converter_8cpp.html#a288242211a19f7a56530138a4cdb7174", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_fixed_point_converter_8cpp.html#a73aa1a85dbb2f04233f0e01017071c70", null ],
     [ "checkToCooked", "test_fixed_point_converter_8cpp.html#ad882e15ec48ff47ceb050e573c2cc1df", null ],
     [ "checkToCookedOverflowNeg", "test_fixed_point_converter_8cpp.html#adc3ac53eaca804f520f6e447f9589ce1", null ],
     [ "checkToCookedOverflowPos", "test_fixed_point_converter_8cpp.html#a48ef98e7a7ec6d83ef42d79d68fb6e51", null ],

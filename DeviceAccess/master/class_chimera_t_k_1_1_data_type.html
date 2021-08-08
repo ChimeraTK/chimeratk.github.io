@@ -112,7 +112,10 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a96029c8f8221a7daf59052e022975d72">uint64</a>, 
 <a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a77409000048075a168901376095a70b8">float32</a>, 
 <a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899acf9a113559e682b39aab0754540f31cc">float64</a>, 
-<a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a4385209851f5523769bdd194d86b970d">string</a>
+<a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a4385209851f5523769bdd194d86b970d">string</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a3de8e99d1cd4908685abb635925636ae">Boolean</a>, 
+<a class="el" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a51cddcf7e04fca1b6590e993576fc8e2">Void</a>
 <br />
  }<tr class="memdesc:a4e8b0e61b39b533564f1e3866165f899"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual enum representing the data type.  <a href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899">More...</a><br /></td></tr>
 </td></tr>
@@ -157,7 +160,7 @@ Protected Attributes</h2></td></tr>
 <p>There is the additional type 'none' to indicate that the data type is not available in the current context. For instance if <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> is used to identify the raw data type of an accessor, the value is none if the accessor does not have a raw transfer mechanism.</p>
 <p>The <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> behaves almost like a class enum due to the plain enum inside it (see description of the <code>operator TheType &amp; ()</code> ). </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00314">314</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00384">384</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a4e8b0e61b39b533564f1e3866165f899"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e8b0e61b39b533564f1e3866165f899">&#9670;&nbsp;</a></span>TheType</h2>
@@ -199,9 +202,13 @@ Protected Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a4e8b0e61b39b533564f1e3866165f899a4385209851f5523769bdd194d86b970d"></a>string&#160;</td><td class="fielddoc"><p>std::string </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a4e8b0e61b39b533564f1e3866165f899a3de8e99d1cd4908685abb635925636ae"></a>Boolean&#160;</td><td class="fielddoc"><p><a class="el" href="class_chimera_t_k_1_1_boolean.html" title="Wrapper Class to avoid vector&lt;bool&gt; problems. ">Boolean</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4e8b0e61b39b533564f1e3866165f899a51cddcf7e04fca1b6590e993576fc8e2"></a>Void&#160;</td><td class="fielddoc"><p><a class="el" href="class_chimera_t_k_1_1_void.html" title="Wrapper Class for void. ">Void</a>. </p>
+</td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00320">320</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00390">390</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -233,7 +240,7 @@ Protected Attributes</h2></td></tr>
 <p>The constructor can get the type as an argument. </p>
 <p>It defaults to 'none'. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00405">405</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00479">479</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -264,7 +271,15 @@ Protected Attributes</h2></td></tr>
 <p>Construct <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> from std::type_info. </p>
 <p>If the type is not known, 'none' is returned. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00408">408</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00482">482</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_data_type_a40b59072a3ac3f6b49a88d1b63d4983a_cgraph.svg" width="376" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -294,7 +309,15 @@ Protected Attributes</h2></td></tr>
 
 <p>Construct <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> from std::string. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00448">448</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00528">528</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_data_type_a4fdfcb7274cb8b763be5a0f4e2343042_cgraph.svg" width="376" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -324,7 +347,15 @@ Protected Attributes</h2></td></tr>
 
 <p>Return string representation of the data type. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00488">488</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00574">574</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_data_type_aeb9ee0f4841febd1266f773e7ffa01dd_cgraph.svg" width="376" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -354,12 +385,20 @@ Protected Attributes</h2></td></tr>
 <p>Return whether the raw data type is an integer. </p>
 <p>False is also returned for non-numerical types and 'none'. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00354">354</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00426">426</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_data_type_ae258a960f986b3c11232c4b726fbe10e_cgraph.svg" width="376" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_data_type_ae258a960f986b3c11232c4b726fbe10e_icgraph.svg" width="456" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -392,12 +431,12 @@ Protected Attributes</h2></td></tr>
 <p>Returns whether the data type is numeric. </p>
 <p>Type 'none' returns false. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00391">391</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00464">464</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_data_type_a61c6477b0b17ed6a4df78bfc3e4e9fcc_icgraph.svg" width="456" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -430,12 +469,12 @@ Protected Attributes</h2></td></tr>
 <p>Return whether the raw data type is signed. </p>
 <p>True for signed integers and floating point types (currently only signed implementations). False otherwise (also for non-numerical types and 'none'). </p>
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00374">374</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00447">447</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_data_type_aef71601ea1cc74a0824fb275a0c0514f_icgraph.svg" width="456" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -467,7 +506,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implicit conversion operator to make <a class="el" href="class_chimera_t_k_1_1_data_type.html" title="A class to describe which of the supported data types is used. ">DataType</a> behave like a class enum. </p>
 <p>Allows for instance comparison or assigment with members of the TheType enum. </p><div class="fragment"><div class="line"><a class="code" href="class_chimera_t_k_1_1_data_type.html#ae4824db416a83fb98cc802c8bf0424a8">DataType</a> myDataType; <span class="comment">// default constructor. The type now is &#39;none&#39;.</span></div><div class="line"></div><div class="line"><span class="comment">// DataType::int32 is of type DataType::TheType. The implicit conversion of</span></div><div class="line">\c myDataType</div><div class="line"><span class="comment">// allows the assignment.</span></div><div class="line">myDataType = <a class="code" href="class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a3c8acc4ab071e644c3590db8c20b2e96">DataType::int32</a>;</div></div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00348">348</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00420">420</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -494,7 +533,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00349">349</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00421">421</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -519,7 +558,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00518">518</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_2include_2_supported_user_types_8h_source.html#l00608">608</a> of file <a class="el" href="util_2include_2_supported_user_types_8h_source.html">SupportedUserTypes.h</a>.</p>
 
 </div>
 </div>
@@ -532,7 +571,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_data_type.html">DataType</a></li>
-    <li class="footer">Generated on Sat Aug 7 2021 03:53:25 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sun Aug 8 2021 03:53:13 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
