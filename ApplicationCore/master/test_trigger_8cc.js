@@ -8,6 +8,7 @@ var test_trigger_8cc =
     [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_trigger_8cc.html#af15a1403f8615df2e03b761a97698938", null ],
     [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_trigger_8cc.html#ab13748297669bba5ab67ca75515cefc6", null ],
     [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_trigger_8cc.html#ad7a190695f65fe20d6cc1f41799cf84b", null ],
+    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_trigger_8cc.html#a1770f4762830b26a6c0c85a4fb571a3c", null ],
     [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_trigger_8cc.html#a48c5ccd5ade337e93584128e00171a3a", null ],
     [ "dummySdm", "test_trigger_8cc.html#a866078d15d3d912b44e894d363a9b62b", null ]
 ];

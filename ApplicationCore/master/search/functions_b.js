@@ -21,6 +21,5 @@ var searchData=
   ['optimiseconnections',['optimiseConnections',['../class_chimera_t_k_1_1_application.html#af71a6285010334471d4a77206d26212d',1,'ChimeraTK::Application']]],
   ['optimiseunmappedvariables',['optimiseUnmappedVariables',['../class_chimera_t_k_1_1_application.html#a9eb2d39a3b53e9c19bb2bd9b1d2da0c1',1,'ChimeraTK::Application']]],
   ['outergroup',['OuterGroup',['../struct_outer_group.html#aa4c86ade068bad915c9ac00575860bbb',1,'OuterGroup']]],
-  ['output',['Output',['../struct_chimera_t_k_1_1_read_bit_mask_1_1_output.html#ac1d8f7df51dcd9a0e27522e39c9b1cb9',1,'ChimeraTK::ReadBitMask::Output::Output()'],['../struct_chimera_t_k_1_1_read_bit_mask_1_1_output.html#a9eb31bc6b6c606f6c6070539fdaaa021',1,'ChimeraTK::ReadBitMask::Output::Output(EntityOwner *owner, const std::string &amp;name, const std::string &amp;description)']]],
-  ['outputmodule',['OutputModule',['../struct_output_module.html#a5a00e712c69516ed384bd6be33018b1c',1,'OutputModule']]]
+  ['output',['Output',['../struct_chimera_t_k_1_1_read_bit_mask_1_1_output.html#ac1d8f7df51dcd9a0e27522e39c9b1cb9',1,'ChimeraTK::ReadBitMask::Output::Output()'],['../struct_chimera_t_k_1_1_read_bit_mask_1_1_output.html#a9eb31bc6b6c606f6c6070539fdaaa021',1,'ChimeraTK::ReadBitMask::Output::Output(EntityOwner *owner, const std::string &amp;name, const std::string &amp;description)']]]
 ];

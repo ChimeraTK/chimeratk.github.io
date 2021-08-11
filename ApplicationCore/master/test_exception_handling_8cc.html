@@ -82,19 +82,17 @@ $(document).ready(function(){initNavTree('test_exception_handling_8cc.html','');
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">testExceptionHandling.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/mpl/list.hpp&gt;</code><br />
-<code>#include &lt;chrono&gt;</code><br />
+<div class="textblock"><code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;future&gt;</code><br />
+<code>#include &lt;boost/mpl/list.hpp&gt;</code><br />
 <code>#include &lt;ChimeraTK/BackendFactory.h&gt;</code><br />
 <code>#include &lt;ChimeraTK/Device.h&gt;</code><br />
 <code>#include &lt;ChimeraTK/NDRegisterAccessor.h&gt;</code><br />
@@ -120,19 +118,6 @@ $(document).ready(function(){initNavTree('test_exception_handling_8cc.html','');
 </div>
 <p><a href="test_exception_handling_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_application.html">TestApplication&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_output_module.html">OutputModule</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_input_module.html">InputModule&lt; INPUT_TYPE &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_realistic_module.html">RealisticModule</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_application2.html">TestApplication2&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a6b2a3852db8bb19ab6909bac01859985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>&#160;&#160;&#160;testExceptionHandling</td></tr>
@@ -144,45 +129,61 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a11417d58618157ad0d0dc3f206ed7795"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a> = <a class="el" href="structfixture__with__poll__and__push__input.html">fixture_with_poll_and_push_input</a>&lt; false &gt;</td></tr>
 <tr class="separator:a11417d58618157ad0d0dc3f206ed7795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1daf3fdcb784516342651f3a8fa45e06"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06">Fixture_initHandlers</a> = <a class="el" href="structfixture__with__poll__and__push__input.html">fixture_with_poll_and_push_input</a>&lt; false, true &gt;</td></tr>
+<tr class="separator:a1daf3fdcb784516342651f3a8fa45e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8176165ff35c6ede5e33f268efd9a34"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#af8176165ff35c6ede5e33f268efd9a34">Fixture_secondDeviceBroken</a> = <a class="el" href="structfixture__with__poll__and__push__input.html">fixture_with_poll_and_push_input</a>&lt; false, false, true &gt;</td></tr>
+<tr class="separator:af8176165ff35c6ede5e33f268efd9a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab566538f58c0f9f11f52778b7a47ddaa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ab566538f58c0f9f11f52778b7a47ddaa">BOOST_FIXTURE_TEST_CASE</a> (runtimeErrorHandling_testFaultReporting, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
-<tr class="separator:ab566538f58c0f9f11f52778b7a47ddaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa25e50b7358df7d4723d85ed14f53315"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#aa25e50b7358df7d4723d85ed14f53315">BOOST_FIXTURE_TEST_CASE</a> (runtimeErrorHandling_testPolledRead, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
-<tr class="separator:aa25e50b7358df7d4723d85ed14f53315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e8e608ef91e1ab61f2e9746ed119f32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a6e8e608ef91e1ab61f2e9746ed119f32">BOOST_FIXTURE_TEST_CASE</a> (runtimeErrorHandling_testPushTypeRead, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
-<tr class="memdesc:a6e8e608ef91e1ab61f2e9746ed119f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from a device in error using a pushType Process Variable (PV)  <a href="#a6e8e608ef91e1ab61f2e9746ed119f32">More...</a><br /></td></tr>
-<tr class="separator:a6e8e608ef91e1ab61f2e9746ed119f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09c10b24fe03260f9a51731fc5afd734"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a09c10b24fe03260f9a51731fc5afd734">BOOST_FIXTURE_TEST_CASE</a> (runtimeErrorHandling_testPushTypeReadNonBlocking, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
-<tr class="separator:a09c10b24fe03260f9a51731fc5afd734"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf8b19359f01d6d65b7cacca28b9e0f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#adf8b19359f01d6d65b7cacca28b9e0f5">BOOST_FIXTURE_TEST_CASE</a> (runtimeErrorHandling_testPushTypeReadLatest, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
-<tr class="separator:adf8b19359f01d6d65b7cacca28b9e0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a356dd3fa343512b9da41bb6bbe5ce559"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a356dd3fa343512b9da41bb6bbe5ce559">BOOST_FIXTURE_TEST_CASE</a> (runtimeErrorHandling_testWrite, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
-<tr class="separator:a356dd3fa343512b9da41bb6bbe5ce559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab17577267aa77e659515dc6d394aa293"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ab17577267aa77e659515dc6d394aa293">BOOST_FIXTURE_TEST_CASE</a> (runtimeErrorHandling_testMultipleWrites, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
-<tr class="separator:ab17577267aa77e659515dc6d394aa293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33c9f9ebec96166ceec27d4d37889a34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a33c9f9ebec96166ceec27d4d37889a34">BOOST_AUTO_TEST_CASE</a> (testExceptionHandlingRead)</td></tr>
-<tr class="separator:a33c9f9ebec96166ceec27d4d37889a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad89eea204eb2b15c899bccefadcef0c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ad89eea204eb2b15c899bccefadcef0c5">BOOST_AUTO_TEST_CASE</a> (testExceptionHandlingWrite)</td></tr>
-<tr class="separator:ad89eea204eb2b15c899bccefadcef0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4b5c302de62b5a103abac85b0858bca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ad4b5c302de62b5a103abac85b0858bca">BOOST_AUTO_TEST_CASE</a> (testExceptionHandlingOpen)</td></tr>
-<tr class="separator:ad4b5c302de62b5a103abac85b0858bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78012c8166ca6c6e6381eec2456e6fe3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a78012c8166ca6c6e6381eec2456e6fe3">BOOST_AUTO_TEST_CASE</a> (testConstants)</td></tr>
-<tr class="separator:a78012c8166ca6c6e6381eec2456e6fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae93b8817ddba762e752a002f3b7e597c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ae93b8817ddba762e752a002f3b7e597c">BOOST_AUTO_TEST_CASE</a> (testConstantWitingErrors)</td></tr>
-<tr class="separator:ae93b8817ddba762e752a002f3b7e597c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a721abe199d00d1387f059d7982c8e0bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a721abe199d00d1387f059d7982c8e0bf">BOOST_AUTO_TEST_CASE</a> (testShutdown)</td></tr>
-<tr class="separator:a721abe199d00d1387f059d7982c8e0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ad0474e2ca924acc9878f8eecb7f6c2ca"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ad0474e2ca924acc9878f8eecb7f6c2ca">ExceptionDummyCDD1</a> [] = &quot;(ExceptionDummy:1?map=test3.map)&quot;</td></tr>
-<tr class="separator:ad0474e2ca924acc9878f8eecb7f6c2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2837104d761eaedd80116c5d648ba580"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a2837104d761eaedd80116c5d648ba580">ExceptionDummyCDD2</a> [] = &quot;(ExceptionDummy:2?map=test3.map)&quot;</td></tr>
-<tr class="separator:a2837104d761eaedd80116c5d648ba580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad317b4ae499d6a8551f34453b61c4c03"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ad317b4ae499d6a8551f34453b61c4c03">ExceptionDummyCDD3</a> [] = &quot;(ExceptionDummy:3?map=test4.map)&quot;</td></tr>
-<tr class="separator:ad317b4ae499d6a8551f34453b61c4c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b0c140ef553809e67cc4a5e2a16fe4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a70b0c140ef553809e67cc4a5e2a16fe4">BOOST_FIXTURE_TEST_CASE</a> (B_2_1, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:a70b0c140ef553809e67cc4a5e2a16fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311ab50fb44dc04ad19c162c175f23fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a311ab50fb44dc04ad19c162c175f23fa">BOOST_FIXTURE_TEST_CASE</a> (B_2_2_2_poll, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:a311ab50fb44dc04ad19c162c175f23fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e2b5e1cbc2514ba769839cfb1dbf1d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a9e2b5e1cbc2514ba769839cfb1dbf1d4">BOOST_FIXTURE_TEST_CASE</a> (B_2_2_2_push, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:a9e2b5e1cbc2514ba769839cfb1dbf1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d723ad424b0ed2c485506f1a96f372e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a2d723ad424b0ed2c485506f1a96f372e">BOOST_FIXTURE_TEST_CASE</a> (B_2_2_3, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:a2d723ad424b0ed2c485506f1a96f372e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7954bfcfdbcd5e7e8c75be3c49d8e6b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a7954bfcfdbcd5e7e8c75be3c49d8e6b7">BOOST_FIXTURE_TEST_CASE</a> (B_2_2_3_TriggerFanOut, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:a7954bfcfdbcd5e7e8c75be3c49d8e6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1599f9d783c1c7af52abd3e925272cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#aa1599f9d783c1c7af52abd3e925272cf">BOOST_FIXTURE_TEST_CASE</a> (B_2_2_4_blocking, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:aa1599f9d783c1c7af52abd3e925272cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d031fb825cdf1d350e25bbc43f968f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a3d031fb825cdf1d350e25bbc43f968f0">BOOST_FIXTURE_TEST_CASE</a> (B_2_2_4_nonBlocking, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:a3d031fb825cdf1d350e25bbc43f968f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac9e72e4945d1a9582dbb73005ccb64d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#aac9e72e4945d1a9582dbb73005ccb64d">BOOST_FIXTURE_TEST_CASE</a> (B_2_2_4_latest, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:aac9e72e4945d1a9582dbb73005ccb64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2a2f5191171c88318280fd6235e753"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a3e2a2f5191171c88318280fd6235e753">BOOST_FIXTURE_TEST_CASE</a> (B_2_2_4_ThFO, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:a3e2a2f5191171c88318280fd6235e753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66db2b38bf6f05785ccb24dc3609b366"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a66db2b38bf6f05785ccb24dc3609b366">BOOST_FIXTURE_TEST_CASE</a> (B_2_2_4_TrFO, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:a66db2b38bf6f05785ccb24dc3609b366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6229c1e6cb14f8f6873c88f6cbe6654"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ac6229c1e6cb14f8f6873c88f6cbe6654">BOOST_FIXTURE_TEST_CASE</a> (B_2_2_4_1_nonBlocking, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:ac6229c1e6cb14f8f6873c88f6cbe6654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae380ae62a69e798965050be7a2ab797e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ae380ae62a69e798965050be7a2ab797e">BOOST_FIXTURE_TEST_CASE</a> (B_2_2_4_1_latest, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:ae380ae62a69e798965050be7a2ab797e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5b6c93dfe57f85637ac7b9bb4292e86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ae5b6c93dfe57f85637ac7b9bb4292e86">BOOST_FIXTURE_TEST_CASE</a> (B_2_2_4_2, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:ae5b6c93dfe57f85637ac7b9bb4292e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4e3191fcc507be69c2f9ef8c4b60af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#aae4e3191fcc507be69c2f9ef8c4b60af">BOOST_FIXTURE_TEST_CASE</a> (B_2_2_4_3, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:aae4e3191fcc507be69c2f9ef8c4b60af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae515199cf3541a9b6ad1bb601828b40e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ae515199cf3541a9b6ad1bb601828b40e">BOOST_FIXTURE_TEST_CASE</a> (B_2_2_5, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:ae515199cf3541a9b6ad1bb601828b40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cfffc10fc0b167da8332a70b653f5e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a4cfffc10fc0b167da8332a70b653f5e8">BOOST_FIXTURE_TEST_CASE</a> (B_2_2_6, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:a4cfffc10fc0b167da8332a70b653f5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf6d9cd1b0990c1cddc3030e59cd690"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a3cf6d9cd1b0990c1cddc3030e59cd690">BOOST_FIXTURE_TEST_CASE</a> (B_2_3_3, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:a3cf6d9cd1b0990c1cddc3030e59cd690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887bf58d364bb24cce887d4b73a5426d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a887bf58d364bb24cce887d4b73a5426d">BOOST_FIXTURE_TEST_CASE</a> (B_2_3_5, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:a887bf58d364bb24cce887d4b73a5426d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5468273a819691b019d81b56a3f4353"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ab5468273a819691b019d81b56a3f4353">BOOST_FIXTURE_TEST_CASE</a> (B_2_5, <a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>)</td></tr>
+<tr class="separator:ab5468273a819691b019d81b56a3f4353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a093fb4ff78352404b40f9304c037db9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a093fb4ff78352404b40f9304c037db9d">BOOST_FIXTURE_TEST_CASE</a> (B_3_1_1, <a class="el" href="test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06">Fixture_initHandlers</a>)</td></tr>
+<tr class="separator:a093fb4ff78352404b40f9304c037db9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae072efe31ae1f589096ca4b6d4dc8d4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ae072efe31ae1f589096ca4b6d4dc8d4a">BOOST_FIXTURE_TEST_CASE</a> (B_2_3_2, <a class="el" href="test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06">Fixture_initHandlers</a>)</td></tr>
+<tr class="separator:ae072efe31ae1f589096ca4b6d4dc8d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9d97ae60ccef791e552096613cf018"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#abb9d97ae60ccef791e552096613cf018">BOOST_FIXTURE_TEST_CASE</a> (B_3_1_3, <a class="el" href="test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06">Fixture_initHandlers</a>)</td></tr>
+<tr class="separator:abb9d97ae60ccef791e552096613cf018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a166708d24b2d9ced5d85148258fd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a91a166708d24b2d9ced5d85148258fd9">BOOST_FIXTURE_TEST_CASE</a> (B_3_1_4, <a class="el" href="test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06">Fixture_initHandlers</a>)</td></tr>
+<tr class="separator:a91a166708d24b2d9ced5d85148258fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70caf5138e29e43609f852183207e9ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a70caf5138e29e43609f852183207e9ef">BOOST_FIXTURE_TEST_CASE</a> (B_4_1, <a class="el" href="test_exception_handling_8cc.html#af8176165ff35c6ede5e33f268efd9a34">Fixture_secondDeviceBroken</a>)</td></tr>
+<tr class="separator:a70caf5138e29e43609f852183207e9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ad9e644e01e76c0a2b950bac6e3d2cf0e"></a>
@@ -197,7 +198,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00024">24</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00025">25</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
@@ -230,175 +231,45 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00030">30</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00031">31</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="a1daf3fdcb784516342651f3a8fa45e06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1daf3fdcb784516342651f3a8fa45e06">&#9670;&nbsp;</a></span>Fixture_initHandlers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06">Fixture_initHandlers</a> =  <a class="el" href="structfixture__with__poll__and__push__input.html">fixture_with_poll_and_push_input</a>&lt;false, true&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00032">32</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="af8176165ff35c6ede5e33f268efd9a34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8176165ff35c6ede5e33f268efd9a34">&#9670;&nbsp;</a></span>Fixture_secondDeviceBroken</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="test_exception_handling_8cc.html#af8176165ff35c6ede5e33f268efd9a34">Fixture_secondDeviceBroken</a> =  <a class="el" href="structfixture__with__poll__and__push__input.html">fixture_with_poll_and_push_input</a>&lt;false, false, true&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00033">33</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a33c9f9ebec96166ceec27d4d37889a34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33c9f9ebec96166ceec27d4d37889a34">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">testExceptionHandlingRead&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00500">500</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_exception_handling_8cc_a33c9f9ebec96166ceec27d4d37889a34_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="ad89eea204eb2b15c899bccefadcef0c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad89eea204eb2b15c899bccefadcef0c5">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">testExceptionHandlingWrite&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00620">620</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_exception_handling_8cc_ad89eea204eb2b15c899bccefadcef0c5_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="ad4b5c302de62b5a103abac85b0858bca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4b5c302de62b5a103abac85b0858bca">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">testExceptionHandlingOpen&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>So we have to read until we get a DataValidity::ok </p>
-
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00724">724</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_exception_handling_8cc_ad4b5c302de62b5a103abac85b0858bca_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a78012c8166ca6c6e6381eec2456e6fe3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78012c8166ca6c6e6381eec2456e6fe3">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">testConstants&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00798">798</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_exception_handling_8cc_a78012c8166ca6c6e6381eec2456e6fe3_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="ae93b8817ddba762e752a002f3b7e597c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae93b8817ddba762e752a002f3b7e597c">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">testConstantWitingErrors&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo:</a></b></dt><dd>FIXME: Write test that errors during constant writing are handled correctly, incl. correct error messages to the control system </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00844">844</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
-
-</div>
-</div>
-<a id="a721abe199d00d1387f059d7982c8e0bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a721abe199d00d1387f059d7982c8e0bf">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">testShutdown&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00846">846</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_exception_handling_8cc_a721abe199d00d1387f059d7982c8e0bf_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="ab566538f58c0f9f11f52778b7a47ddaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab566538f58c0f9f11f52778b7a47ddaa">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[1/7]</span></h2>
+<a id="a70b0c140ef553809e67cc4a5e2a16fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70b0c140ef553809e67cc4a5e2a16fe4">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[1/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,7 +277,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">runtimeErrorHandling_testFaultReporting&#160;</td>
+          <td class="paramtype">B_2_1&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -422,13 +293,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_1"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_1">B.2.1</a></p>
+<p>"The exception status is published as a process variable together with an error message." </p>
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00049">49</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00046">46</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
-<a id="aa25e50b7358df7d4723d85ed14f53315"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa25e50b7358df7d4723d85ed14f53315">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[2/7]</span></h2>
+<a id="a311ab50fb44dc04ad19c162c175f23fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a311ab50fb44dc04ad19c162c175f23fa">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[2/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -436,7 +309,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">runtimeErrorHandling_testPolledRead&#160;</td>
+          <td class="paramtype">B_2_2_2_poll&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -452,13 +325,17 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_2_2_poll"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_2">B.2.2.2</a></p>
+<p>"The DataValidity::faulty flag resulting from the fault state is propagated once, even if the variable had the a
+DataValidity::faulty flag already set previously for another reason."</p>
+<p>TODO: Set previous fault flag through Backend, and test inside TriggerFanOut (the latter needs the first) </p>
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00088">88</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00084">84</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
-<a id="a6e8e608ef91e1ab61f2e9746ed119f32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e8e608ef91e1ab61f2e9746ed119f32">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[3/7]</span></h2>
+<a id="a9e2b5e1cbc2514ba769839cfb1dbf1d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e2b5e1cbc2514ba769839cfb1dbf1d4">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[3/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -466,7 +343,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">runtimeErrorHandling_testPushTypeRead&#160;</td>
+          <td class="paramtype">B_2_2_2_push&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -482,25 +359,17 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_2_2_push"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_2">B.2.2.2</a></p>
+<p>"The DataValidity::faulty flag resulting from the fault state is propagated once, even if the variable had the a
+DataValidity::faulty flag already set previously for another reason."</p>
+<p>TODO: Set previous fault flag through Backend, and test inside ThreadedFanOut and TriggerFanOut (as trigger). </p>
 
-<p>Read from a device in error using a pushType Process Variable (PV) </p>
-<p>Expected Behavior:</p>
-<ul>
-<li>First call on pushType PV read is skipped. This:<ul>
-<li>Generates a new version number</li>
-<li>Sets PV data validity flag to faulty.</li>
-</ul>
-</li>
-<li>The subsequent call on read blocks till device recovery.</li>
-</ul>
-<p><a class="anchor" id="testExceptionHandling_b_2_2_4_a"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_4">B.2.2.4</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00144">144</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00125">125</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
-<a id="a09c10b24fe03260f9a51731fc5afd734"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09c10b24fe03260f9a51731fc5afd734">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[4/7]</span></h2>
+<a id="a2d723ad424b0ed2c485506f1a96f372e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d723ad424b0ed2c485506f1a96f372e">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[4/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -508,7 +377,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">runtimeErrorHandling_testPushTypeReadNonBlocking&#160;</td>
+          <td class="paramtype">B_2_2_3&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -524,13 +393,17 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_2_3"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_3">B.2.2.3</a></p>
+<p>"Read operations without AccessMode::wait_for_new_data are skipped until the device is fully recovered again (cf.
+3.1). The first skipped read operation will have a new VersionNumber."</p>
+<p>Test directly inside ApplicationModule </p>
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00203">203</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00164">164</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
-<a id="adf8b19359f01d6d65b7cacca28b9e0f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf8b19359f01d6d65b7cacca28b9e0f5">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[5/7]</span></h2>
+<a id="a7954bfcfdbcd5e7e8c75be3c49d8e6b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7954bfcfdbcd5e7e8c75be3c49d8e6b7">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[5/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -538,7 +411,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">runtimeErrorHandling_testPushTypeReadLatest&#160;</td>
+          <td class="paramtype">B_2_2_3_TriggerFanOut&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -554,13 +427,17 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_2_3_TrFO"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_3">B.2.2.3</a></p>
+<p>"Read operations without AccessMode::wait_for_new_data are skipped until the device is fully recovered again (cf.
+3.1). The first skipped read operation will have a new VersionNumber."</p>
+<p>Test inside a TriggerFanOut. This is mainly necessary to make sure the ExceptionHandlingDecorator is used for variables inside the TriggerFanOut. </p>
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00258">258</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00201">201</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
-<a id="a356dd3fa343512b9da41bb6bbe5ce559"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a356dd3fa343512b9da41bb6bbe5ce559">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[6/7]</span></h2>
+<a id="aa1599f9d783c1c7af52abd3e925272cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1599f9d783c1c7af52abd3e925272cf">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[6/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -568,7 +445,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">runtimeErrorHandling_testWrite&#160;</td>
+          <td class="paramtype">B_2_2_4_blocking&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -584,13 +461,16 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_2_4_blocking"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_4">B.2.2.4</a></p>
+<p>"Read operations with AccessMode::wait_for_new_data will be skipped once for each accessor to propagate the DataValidity::faulty flag (which counts as new data, i.e. readNonBlocking()/readLatest() will return true (= hasNewData), and a new VersionNumber is obtained)."</p>
+<p>This test is for blocking read(). </p>
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00304">304</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00237">237</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
-<a id="ab17577267aa77e659515dc6d394aa293"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab17577267aa77e659515dc6d394aa293">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[7/7]</span></h2>
+<a id="a3d031fb825cdf1d350e25bbc43f968f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d031fb825cdf1d350e25bbc43f968f0">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[7/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -598,7 +478,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">runtimeErrorHandling_testMultipleWrites&#160;</td>
+          <td class="paramtype">B_2_2_4_nonBlocking&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -614,57 +494,573 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_2_4_nonBlocking"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_4">B.2.2.4</a></p>
+<p>"Read operations with AccessMode::wait_for_new_data will be skipped once for each accessor to propagate the DataValidity::faulty flag (which counts as new data, i.e. readNonBlocking()/readLatest() will return true (= hasNewData), and a new VersionNumber is obtained)."</p>
+<p>This test is for readNonBlocking(). </p>
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00341">341</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00265">265</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="ad0474e2ca924acc9878f8eecb7f6c2ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0474e2ca924acc9878f8eecb7f6c2ca">&#9670;&nbsp;</a></span>ExceptionDummyCDD1</h2>
+<a id="aac9e72e4945d1a9582dbb73005ccb64d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac9e72e4945d1a9582dbb73005ccb64d">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[8/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr char ExceptionDummyCDD1[] = &quot;(ExceptionDummy:1?map=test3.map)&quot;</td>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_2_2_4_latest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_2_4_latest"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_4">B.2.2.4</a></p>
+<p>"Read operations with AccessMode::wait_for_new_data will be skipped once for each accessor to propagate the DataValidity::faulty flag (which counts as new data, i.e. readNonBlocking()/readLatest() will return true (= hasNewData), and a new VersionNumber is obtained)."</p>
+<p>This test is for readLatest(). </p>
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00369">369</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00293">293</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
-<a id="a2837104d761eaedd80116c5d648ba580"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2837104d761eaedd80116c5d648ba580">&#9670;&nbsp;</a></span>ExceptionDummyCDD2</h2>
+<a id="a3e2a2f5191171c88318280fd6235e753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e2a2f5191171c88318280fd6235e753">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[9/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr char ExceptionDummyCDD2[] = &quot;(ExceptionDummy:2?map=test3.map)&quot;</td>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_2_2_4_ThFO&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_2_4_ThFO"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_4">B.2.2.4</a></p>
+<p>"Read operations with AccessMode::wait_for_new_data will be skipped once for each accessor to propagate the DataValidity::faulty flag (which counts as new data, i.e. readNonBlocking()/readLatest() will return true (= hasNewData), and a new VersionNumber is obtained)."</p>
+<p>This test is for read() inside a ThreadedFanOut. (The ThreadedFanOut never calles the other read functions.) </p>
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00370">370</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00321">321</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
-<a id="ad317b4ae499d6a8551f34453b61c4c03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad317b4ae499d6a8551f34453b61c4c03">&#9670;&nbsp;</a></span>ExceptionDummyCDD3</h2>
+<a id="a66db2b38bf6f05785ccb24dc3609b366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66db2b38bf6f05785ccb24dc3609b366">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[10/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr char ExceptionDummyCDD3[] = &quot;(ExceptionDummy:3?map=test4.map)&quot;</td>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_2_2_4_TrFO&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_2_4_TrFO"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_4">B.2.2.4</a></p>
+<p>"Read operations with AccessMode::wait_for_new_data will be skipped once for each accessor to propagate the DataValidity::faulty flag (which counts as new data, i.e. readNonBlocking()/readLatest() will return true (= hasNewData), and a new VersionNumber is obtained)."</p>
+<p>This test is for read() inside a TriggerFanOut on the trigger variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00371">371</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00357">357</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="ac6229c1e6cb14f8f6873c88f6cbe6654"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6229c1e6cb14f8f6873c88f6cbe6654">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[11/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_2_2_4_1_nonBlocking&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_2_4_1_nonBlocking"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_4_1">B.2.2.4.1</a></p>
+<p>[After first skipped read operation in 2.2.4, the following] "non-blocking read operations (readNonBlocking() and
+readLatest()) are skipped and return false (= no new data), until the device is recovered".</p>
+<p>This test is for readNonBlocking(). </p>
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00389">389</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="ae380ae62a69e798965050be7a2ab797e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae380ae62a69e798965050be7a2ab797e">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[12/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_2_2_4_1_latest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_2_4_1_latest"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_4_1">B.2.2.4.1</a></p>
+<p>[After first skipped read operation in 2.2.4, the following] "non-blocking read operations (readNonBlocking() and
+readLatest()) are skipped and return false (= no new data), until the device is recovered".</p>
+<p>This test is for readLatest(). </p>
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00421">421</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="ae5b6c93dfe57f85637ac7b9bb4292e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5b6c93dfe57f85637ac7b9bb4292e86">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[13/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_2_2_4_2&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_2_4_2"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_4_2">B.2.2.4.2</a></p>
+<p>[After first skipped read operation in 2.2.4, the following] "blocking read operations (read()) will be frozen until
+the device is recovered." </p>
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00451">451</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="aae4e3191fcc507be69c2f9ef8c4b60af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4e3191fcc507be69c2f9ef8c4b60af">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[14/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_2_2_4_3&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_2_4_3"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_4_3">B.2.2.4.3</a></p>
+<p>"After the device is fully recovered (cf. 3.1), the current value is (synchronously) read from the device. This is
+the first value received by the accessor after an exception." </p>
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00481">481</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="ae515199cf3541a9b6ad1bb601828b40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae515199cf3541a9b6ad1bb601828b40e">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[15/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_2_2_5&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_2_5"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_5">B.2.2.5</a></p>
+<p>"The VersionNumbers returned in case of an exception are the same for the same exception, even across variables and
+modules. It will be generated in the moment the exception is reported." </p>
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00514">514</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="a4cfffc10fc0b167da8332a70b653f5e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cfffc10fc0b167da8332a70b653f5e8">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[16/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_2_2_6&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_2_6"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_2_6">B.2.2.6</a></p>
+<p>"The data buffer is not updated. This guarantees that the data buffer stays on the last known value if the user code
+has not modified it since the last read." </p>
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00542">542</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="a3cf6d9cd1b0990c1cddc3030e59cd690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf6d9cd1b0990c1cddc3030e59cd690">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[17/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_2_3_3&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_3_3"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_3_3">B.2.3.3</a></p>
+<p>"The return value of write() indicates whether data was lost in the transfer. If the write has to be delayed due to an exception, the return value will be true (= data lost) if a previously delayed and not-yet written value is discarded in the process, false (= no data lost) otherwise." </p>
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00580">580</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="a887bf58d364bb24cce887d4b73a5426d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a887bf58d364bb24cce887d4b73a5426d">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[18/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_2_3_5&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_3_5"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_3_5">B.2.3.5</a></p>
+<p>"It is guaranteed that the write takes place before the device is considered fully recovered again and other
+transfers are allowed (cf. 3.1)." </p>
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00604">604</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="ab5468273a819691b019d81b56a3f4353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5468273a819691b019d81b56a3f4353">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[19/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_2_5&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795">Fixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_2_5"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_2_5">B.2.5</a></p>
+<p>"TransferElement::isReadable(), TransferElement::isWriteable() and TransferElement::isReadonly() return with values
+as if reading and writing would be allowed." </p>
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00632">632</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="a093fb4ff78352404b40f9304c037db9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a093fb4ff78352404b40f9304c037db9d">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[20/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_3_1_1&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06">Fixture_initHandlers</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_3_1_1"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_3_1_1">B.3.1.1</a></p>
+<p>[The recovery procedure involves] "the execution of so-called initialisation handlers (see 3.2)."</p>
+<p><a class="anchor" id="testExceptionHandling_b_3_2"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_3_2">B.3.2</a></p>
+<p>"Any number of initialisation handlers can be added to the DeviceModule in the user code. Initialisation handlers are callback functions which will be executed when a device is opened for the first time and after a device recovers from an exception, before any application-initiated transfers are executed (including delayed write transfers). See DeviceModule::addInitialisationHandler()." </p>
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00663">663</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="ae072efe31ae1f589096ca4b6d4dc8d4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae072efe31ae1f589096ca4b6d4dc8d4a">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[21/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_2_3_2&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06">Fixture_initHandlers</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_3_1_2"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_3_1_2">B.3.1.2</a></p>
+<p>[After calling the initialisation handlers are called, the recovery procedure involves] "restoring all registers that have been written since the start of the application with their latest values. The register values are restored in the same order they were written." </p>
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00708">708</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="abb9d97ae60ccef791e552096613cf018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb9d97ae60ccef791e552096613cf018">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[22/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_3_1_3&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06">Fixture_initHandlers</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_3_1_3"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_3_1_3">B.3.1.3</a></p>
+<p>[During recovery,] "the asynchronous read transfers of the device are (re-)activated by calling
+Device::activateAsyncReads()" [after the delayed writes are executed.] </p>
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00782">782</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="a91a166708d24b2d9ced5d85148258fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91a166708d24b2d9ced5d85148258fd9">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[23/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_3_1_4&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06">Fixture_initHandlers</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_3_1_4"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_3_1_4">B.3.1.4</a></p>
+<p>[As last part of the recovery,] "Devices/&lt;alias&gt;/deviceBecameFunctional is written to inform any module subscribing
+to this variable about the finished recovery." </p>
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00816">816</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+
+</div>
+</div>
+<a id="a70caf5138e29e43609f852183207e9ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70caf5138e29e43609f852183207e9ef">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[24/24]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">B_4_1&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="test_exception_handling_8cc.html#af8176165ff35c6ede5e33f268efd9a34">Fixture_secondDeviceBroken</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="anchor" id="testExceptionHandling_b_4_1"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_4_1">B.4.1</a></p>
+<p>"Even if some devices are initially in a persisting error state, the part of the application which does not interact
+with the faulty devices starts and works normally." </p>
+
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00851">851</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
@@ -674,7 +1070,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_exception_handling_8cc.html">testExceptionHandling.cc</a></li>
-    <li class="footer">Generated on Sat Aug 7 2021 03:54:50 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Aug 11 2021 03:54:27 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
