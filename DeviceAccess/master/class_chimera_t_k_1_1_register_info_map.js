@@ -12,6 +12,7 @@ var class_chimera_t_k_1_1_register_info_map =
     [ "check", "class_chimera_t_k_1_1_register_info_map.html#ace014fb6dd7bafae167c087ee758bbee", null ],
     [ "end", "class_chimera_t_k_1_1_register_info_map.html#a269b765477b2a2e737a88807836ca28f", null ],
     [ "end", "class_chimera_t_k_1_1_register_info_map.html#a0322cfe3b34d926081665ce2d4eb4c7d", null ],
+    [ "getListOfInterrupts", "class_chimera_t_k_1_1_register_info_map.html#afa1a8c62f46deed9c8c7b5bc3f7c6495", null ],
     [ "getMapFileName", "class_chimera_t_k_1_1_register_info_map.html#a0eca2bbc7ea37f5daf983a6a489a285e", null ],
     [ "getMapFileSize", "class_chimera_t_k_1_1_register_info_map.html#a866f1f5384e079eb85f347f682d9314e", null ],
     [ "getMetaData", "class_chimera_t_k_1_1_register_info_map.html#a74bd971e761068faf55a036d2150b0a2", null ],

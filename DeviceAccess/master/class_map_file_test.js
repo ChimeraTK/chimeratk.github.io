@@ -5,6 +5,7 @@ var class_map_file_test =
     [ "testErrElemTypeCoutStreamOperator", "class_map_file_test.html#a2855928f624776cc625be88db64320fe", null ],
     [ "testErrorElemCoutStreamOperator", "class_map_file_test.html#ad0b27fa36c617a7baf2c8a23d3a85c2f", null ],
     [ "testErrorListCoutStreamOperator", "class_map_file_test.html#ab1e012e22d189ed88d18d60acefc21de", null ],
+    [ "testGetListOfInterrupts", "class_map_file_test.html#a28a4a87c48b51bd742ef6551fd9b2e7c", null ],
     [ "testGetMetaData", "class_map_file_test.html#ac76d05f3349b216cc879ce7325b8074a", null ],
     [ "testGetRegisterInfo", "class_map_file_test.html#a13e25dcddb6cf4f7d51ed80824384720", null ],
     [ "testGetRegistersInModule", "class_map_file_test.html#a808608820fe5b4c10c5b34540eb6e534", null ],

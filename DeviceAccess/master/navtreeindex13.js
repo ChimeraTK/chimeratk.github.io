@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"struct_reg_channel4__push.html":[18,0,72],
+"struct_reg_channel4__push.html#a0a505bfb5eb473f9e3c17907ff9a29d0":[18,0,72,2],
 "struct_reg_channel4__push.html#a406e15fa04783a39a6e6a23f6ac0c723":[18,0,72,7],
 "struct_reg_channel4__push.html#a459143ce6e0a508f67ba9f6160e93654":[18,0,72,1],
 "struct_reg_channel4__push.html#a5ca4c961f22a5197113731e2d172e2ef":[18,0,72,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "struct_test_locker.html#a2350e86f1e896171ba56a812e7f7653d":[18,0,114,1],
 "struct_test_locker.html#a53df2e77dd02d4582270cc57184af79a":[18,0,114,0],
 "struct_test_locker.html#abd27bfa14ea0cc45b8f2be1b741ca233":[18,0,114,2],
-"struct_variable_register_descriptor_base.html":[18,0,115],
-"struct_variable_register_descriptor_base.html#a6ad00095881007b8c5625c4964391012":[18,0,115,1],
-"struct_variable_register_descriptor_base.html#aa63947f9ce971cc23fbdbd20374ba925":[18,0,115,0]
+"struct_variable_register_descriptor_base.html":[18,0,115]
 };

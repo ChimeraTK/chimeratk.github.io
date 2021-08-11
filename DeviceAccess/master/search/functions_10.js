@@ -78,6 +78,7 @@ var searchData=
   ['testgetdevicefileandmapfilename',['testGetDeviceFileAndMapFileName',['../class_device_info_map_test.html#a15aec0d82281df2751cdb02ad0df8f28',1,'DeviceInfoMapTest']]],
   ['testgetdeviceinfo',['testGetDeviceInfo',['../class_device_info_map_test.html#a7f68dbb088bc7e3184293b74fba0c2eb',1,'DeviceInfoMapTest']]],
   ['testgetdmapfilesize',['testGetDMapFileSize',['../class_d_map_files_parser_test.html#a2a5026188223c93c654d4990e6a7f1dd',1,'DMapFilesParserTest']]],
+  ['testgetlistofinterrupts',['testGetListOfInterrupts',['../class_map_file_test.html#a28a4a87c48b51bd742ef6551fd9b2e7c',1,'MapFileTest']]],
   ['testgetmapfile',['testGetMapFile',['../class_d_map_files_parser_test.html#a7f98e282da9151a8185b904fadab568e',1,'DMapFilesParserTest']]],
   ['testgetmetadata',['testGetMetaData',['../class_map_file_test.html#ac76d05f3349b216cc879ce7325b8074a',1,'MapFileTest']]],
   ['testgetregisterinfo',['testGetRegisterInfo',['../class_d_map_files_parser_test.html#a526b06ed4f0232175736a47067faa9d4',1,'DMapFilesParserTest::testGetRegisterInfo()'],['../class_map_file_test.html#a13e25dcddb6cf4f7d51ed80824384720',1,'MapFileTest::testGetRegisterInfo()']]],
