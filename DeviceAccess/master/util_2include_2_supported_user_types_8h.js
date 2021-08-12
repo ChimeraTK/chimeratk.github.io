@@ -16,6 +16,7 @@ var util_2include_2_supported_user_types_8h =
     [ "callForType", "util_2include_2_supported_user_types_8h.html#a1d994c91e77f9c70310556ae90e136b9", null ],
     [ "for_each", "util_2include_2_supported_user_types_8h.html#ae7a87d6ef5da36852a971cab2ac6eddc", null ],
     [ "numericToUserType", "util_2include_2_supported_user_types_8h.html#aa159464ac26217627bc921cc3e9f3c62", null ],
+    [ "operator<<", "util_2include_2_supported_user_types_8h.html#af18aef2d15d6461cd8122f11666de2e1", null ],
     [ "operator>>", "util_2include_2_supported_user_types_8h.html#a7b608503f26011e1e46f845fe3916ccb", null ],
     [ "operator>>", "util_2include_2_supported_user_types_8h.html#a2c70352ca3e000b7378e9fd5a28bacee", null ],
     [ "userTypeToNumeric", "util_2include_2_supported_user_types_8h.html#a7fbd27ae4a9682ebb5b14b6c967f488b", null ],

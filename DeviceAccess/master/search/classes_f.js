@@ -96,5 +96,7 @@ var searchData=
   ['regwordfirmwarewithmath_5fw',['RegWordFirmwareWithMath_W',['../struct_reg_word_firmware_with_math___w.html',1,'']]],
   ['round',['Round',['../struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html',1,'ChimeraTK::RoundingRangeCheckingDataConverter']]],
   ['roundingrangecheckingdataconverter',['RoundingRangeCheckingDataConverter',['../struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html',1,'ChimeraTK']]],
+  ['roundingrangecheckingdataconverter_3c_20sourcetype_2c_20void_20_3e',['RoundingRangeCheckingDataConverter&lt; SourceType, Void &gt;',['../struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_source_type_00_01_void_01_4.html',1,'ChimeraTK']]],
+  ['roundingrangecheckingdataconverter_3c_20void_2c_20desttype_20_3e',['RoundingRangeCheckingDataConverter&lt; Void, DestType &gt;',['../struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_void_00_01_dest_type_01_4.html',1,'ChimeraTK']]],
   ['runtime_5ferror',['runtime_error',['../class_chimera_t_k_1_1runtime__error.html',1,'ChimeraTK']]]
 ];

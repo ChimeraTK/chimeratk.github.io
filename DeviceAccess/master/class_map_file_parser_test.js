@@ -8,7 +8,6 @@ var class_map_file_parser_test =
     [ "testIncorrectRegisterWidth", "class_map_file_parser_test.html#a7ce784a650dcfa401327e423d31a7b7e", null ],
     [ "testInterruptBadMapFileParse", "class_map_file_parser_test.html#a505db2468734e06a78ddd3191c9c64f7", null ],
     [ "testInterruptMapFileParse", "class_map_file_parser_test.html#af931705e11cb5dbd773283b1d21f48c3", null ],
-    [ "testInterruptMapFileSupportedDataType", "class_map_file_parser_test.html#a8e9c278885cefba4b21c2dc538b286d9", null ],
     [ "testInvalidMetadata", "class_map_file_parser_test.html#a92c0e28a50a1bfe421e3331eb0a6c47b", null ],
     [ "testMandatoryRegisterFieldMissing", "class_map_file_parser_test.html#a515b834b7a38930c901ab58be4e4d415", null ],
     [ "testMapFileWithCommentsParse", "class_map_file_parser_test.html#a1c95b347ba35c993f36a3594696abbbb", null ],

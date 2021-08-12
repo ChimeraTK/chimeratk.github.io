@@ -82,6 +82,12 @@ var namespace_chimera_t_k =
     [ "RegisterInfoMap", "class_chimera_t_k_1_1_register_info_map.html", "class_chimera_t_k_1_1_register_info_map" ],
     [ "RegisterPath", "class_chimera_t_k_1_1_register_path.html", "class_chimera_t_k_1_1_register_path" ],
     [ "RoundingRangeCheckingDataConverter", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter" ],
+    [ "RoundingRangeCheckingDataConverter< SourceType, Void >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_source_type_00_01_void_01_4.html", [
+      [ "converter", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_source_type_00_01_void_01_4_1_1converter.html", null ]
+    ] ],
+    [ "RoundingRangeCheckingDataConverter< Void, DestType >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_void_00_01_dest_type_01_4.html", [
+      [ "converter", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_3_01_void_00_01_dest_type_01_4_1_1converter.html", null ]
+    ] ],
     [ "runtime_error", "class_chimera_t_k_1_1runtime__error.html", "class_chimera_t_k_1_1runtime__error" ],
     [ "ScalarRegisterAccessor", "class_chimera_t_k_1_1_scalar_register_accessor.html", "class_chimera_t_k_1_1_scalar_register_accessor" ],
     [ "ScalarRegisterAccessor< std::string >", "class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html", "class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4" ],
