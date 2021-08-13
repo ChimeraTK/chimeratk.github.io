@@ -32,6 +32,7 @@ var searchData=
   ['exceptionreportingbackend',['ExceptionReportingBackend',['../struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html',1,'ChimeraTK::UnifiedBackendTest&lt; VECTOR_OF_REGISTERS_T &gt;::ExceptionReportingBackend'],['../struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#aafe208f0ca2653f295275add2963025b',1,'ChimeraTK::UnifiedBackendTest::ExceptionReportingBackend::ExceptionReportingBackend()']]],
   ['exceptions_20and_20recovery',['Exceptions and recovery',['../exceptions.html',1,'']]],
   ['exceptions_2edox',['exceptions.dox',['../exceptions_8dox.html',1,'']]],
+  ['executewithcopy',['executeWithCopy',['../struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#ad74e3188150bccfba88b97ddbd14c60f',1,'ChimeraTK::NumericAddressedAsyncVariableImpl']]],
   ['existing_5fdevice',['EXISTING_DEVICE',['../test_dummy_backend_8cpp.html#af608de2728bb17c300bd9cfdd7cd8115',1,'testDummyBackend.cpp']]],
   ['experimentalfeatures',['ExperimentalFeatures',['../class_chimera_t_k_1_1_experimental_features.html',1,'ChimeraTK']]],
   ['experimentalfeatures_2ecc',['ExperimentalFeatures.cc',['../_experimental_features_8cc.html',1,'']]],

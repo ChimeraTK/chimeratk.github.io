@@ -23,5 +23,6 @@ var searchData=
   ['switchreadonly',['switchReadOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#ae6f1bdeae87455aba28211fcee335e07',1,'ChimeraTK::TestCapabilities']]],
   ['switchwriteonly',['switchWriteOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#ad7fe457dca37a33e5cea24e51e39cd12',1,'ChimeraTK::TestCapabilities']]],
   ['symbols',['symbols',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#a86cccc2b98dd88bcd9467dd898ef3a75',1,'ChimeraTK::LNMBackend::MathPluginFormulaHelper']]],
+  ['syncaccessor',['syncAccessor',['../struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#a07e68d77c6401205e9790a811b7570fc',1,'ChimeraTK::NumericAddressedAsyncVariableImpl']]],
   ['syncread',['syncRead',['../struct_chimera_t_k_1_1_test_capabilities.html#a3dc3867fd91fbc1f7a356f617d130f76',1,'ChimeraTK::TestCapabilities']]]
 ];

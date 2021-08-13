@@ -1,5 +1,6 @@
 var class_chimera_t_k_1_1_n_d_register_accessor =
 [
+    [ "Buffer", "struct_chimera_t_k_1_1_n_d_register_accessor_1_1_buffer.html", "struct_chimera_t_k_1_1_n_d_register_accessor_1_1_buffer" ],
     [ "NDRegisterAccessor", "class_chimera_t_k_1_1_n_d_register_accessor.html#a26aa0043b2e832914f208dbe14b9df78", null ],
     [ "accessChannel", "class_chimera_t_k_1_1_n_d_register_accessor.html#ae7320f8139ee7b794743bd4e203fbb12", null ],
     [ "accessChannel", "class_chimera_t_k_1_1_n_d_register_accessor.html#a13367dc5d632a5b57de5ef94a9a00ac1", null ],

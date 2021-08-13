@@ -16,5 +16,7 @@ var searchData=
   ['numericaddressedbackendmuxedregisteraccessor_2eh',['NumericAddressedBackendMuxedRegisterAccessor.h',['../device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_numeric_addressed_backend_muxed_register_accessor_8h.html',1,'(Global Namespace)']]],
   ['numericaddressedbackendregisteraccessor_2ecc',['NumericAddressedBackendRegisterAccessor.cc',['../_numeric_addressed_backend_register_accessor_8cc.html',1,'']]],
   ['numericaddressedbackendregisteraccessor_2eh',['NumericAddressedBackendRegisterAccessor.h',['../device__backends_2include_2_numeric_addressed_backend_register_accessor_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_numeric_addressed_backend_register_accessor_8h.html',1,'(Global Namespace)']]],
+  ['numericaddressedinterruptdispatcher_2ecc',['NumericAddressedInterruptDispatcher.cc',['../_numeric_addressed_interrupt_dispatcher_8cc.html',1,'']]],
+  ['numericaddressedinterruptdispatcher_2eh',['NumericAddressedInterruptDispatcher.h',['../_numeric_addressed_interrupt_dispatcher_8h.html',1,'']]],
   ['numericaddressedlowleveltransferelement_2eh',['NumericAddressedLowLevelTransferElement.h',['../device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_numeric_addressed_low_level_transfer_element_8h.html',1,'(Global Namespace)']]]
 ];

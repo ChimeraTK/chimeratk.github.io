@@ -16,6 +16,7 @@ var searchData=
   ['exceptiondummypushdecorator',['ExceptionDummyPushDecorator',['../struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#acc09906c9b5b1803b0b703e02732e535',1,'ChimeraTK::ExceptionDummyPushDecorator']]],
   ['exceptionhook',['exceptionHook',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a09112f5742836feb83f0d62b4d94e967',1,'ChimeraTK::LNMBackend::AccessorPluginBase::exceptionHook()'],['../class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a262a1cfcaeb8694bab48f2781a276219',1,'ChimeraTK::LNMBackend::MathPlugin::exceptionHook()']]],
   ['exceptionreportingbackend',['ExceptionReportingBackend',['../struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#aafe208f0ca2653f295275add2963025b',1,'ChimeraTK::UnifiedBackendTest::ExceptionReportingBackend']]],
+  ['executewithcopy',['executeWithCopy',['../struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#ad74e3188150bccfba88b97ddbd14c60f',1,'ChimeraTK::NumericAddressedAsyncVariableImpl']]],
   ['extractdirectory',['extractDirectory',['../namespace_chimera_t_k_1_1parser_utilities.html#a91ebf0d4263ce92117ee4f260cdd5edf',1,'ChimeraTK::parserUtilities']]],
   ['extractfilename',['extractFileName',['../namespace_chimera_t_k_1_1parser_utilities.html#a4b7d71c43b5b99282686080779736272',1,'ChimeraTK::parserUtilities']]]
 ];

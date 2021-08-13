@@ -6,6 +6,7 @@ var class_chimera_t_k_1_1_access_mode_flags =
     [ "checkForUnknownFlags", "class_chimera_t_k_1_1_access_mode_flags.html#a785c39a24b2731c30a05d04798242883", null ],
     [ "empty", "class_chimera_t_k_1_1_access_mode_flags.html#a6e4ae3aafddf1adee5e9bcc37dc4a692", null ],
     [ "has", "class_chimera_t_k_1_1_access_mode_flags.html#a3a8fdd12b01e34b7e605a858338efeab", null ],
+    [ "operator<", "class_chimera_t_k_1_1_access_mode_flags.html#a1d509b12bd747a392369d30c21acbfc2", null ],
     [ "operator==", "class_chimera_t_k_1_1_access_mode_flags.html#a96d08e4ec0d64c91d6bfddc19b84bdba", null ],
     [ "remove", "class_chimera_t_k_1_1_access_mode_flags.html#a661836ae1fba8fcb4a4ed41f676ffe7e", null ],
     [ "serialize", "class_chimera_t_k_1_1_access_mode_flags.html#aa9178964ee154f237514a41cd5129d25", null ]

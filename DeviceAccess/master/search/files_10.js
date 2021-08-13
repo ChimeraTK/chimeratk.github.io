@@ -5,6 +5,7 @@ var searchData=
   ['testablerebotsleep_5ftestingimpl_2eh',['testableRebotSleep_testingImpl.h',['../testable_rebot_sleep__testing_impl_8h.html',1,'']]],
   ['testaccessmodeflags_2ecc',['testAccessModeFlags.cc',['../test_access_mode_flags_8cc.html',1,'']]],
   ['testaccessorperformance_2ecpp',['testAccessorPerformance.cpp',['../test_accessor_performance_8cpp.html',1,'']]],
+  ['testasyncndregisteraccessor_2ecpp',['testAsyncNDRegisterAccessor.cpp',['../test_async_n_d_register_accessor_8cpp.html',1,'']]],
   ['testasyncread_2ecpp',['testAsyncRead.cpp',['../test_async_read_8cpp.html',1,'']]],
   ['testbackendfactory_2ecpp',['testBackendFactory.cpp',['../test_backend_factory_8cpp.html',1,'']]],
   ['testbufferingregisteraccessor_2ecpp',['testBufferingRegisterAccessor.cpp',['../test_buffering_register_accessor_8cpp.html',1,'']]],

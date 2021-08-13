@@ -1,5 +1,8 @@
 var dir_f6c06f7a01da37196a5f6fe3a6212106 =
 [
+    [ "AsyncNDRegisterAccessor.h", "_async_n_d_register_accessor_8h.html", [
+      [ "AsyncNDRegisterAccessor", "class_chimera_t_k_1_1_async_n_d_register_accessor.html", "class_chimera_t_k_1_1_async_n_d_register_accessor" ]
+    ] ],
     [ "BackendFactory.h", "device__backends_2include_2_backend_factory_8h.html", "device__backends_2include_2_backend_factory_8h" ],
     [ "CopyRegisterDecorator.h", "device__backends_2include_2_copy_register_decorator_8h.html", [
       [ "CopyRegisterDecoratorTrait", "struct_chimera_t_k_1_1_copy_register_decorator_trait.html", null ],
@@ -60,6 +63,7 @@ var dir_f6c06f7a01da37196a5f6fe3a6212106 =
     ] ],
     [ "NumericAddressedBackendMuxedRegisterAccessor.h", "device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h.html", "device__backends_2include_2_numeric_addressed_backend_muxed_register_accessor_8h" ],
     [ "NumericAddressedBackendRegisterAccessor.h", "device__backends_2include_2_numeric_addressed_backend_register_accessor_8h.html", "device__backends_2include_2_numeric_addressed_backend_register_accessor_8h" ],
+    [ "NumericAddressedInterruptDispatcher.h", "_numeric_addressed_interrupt_dispatcher_8h.html", "_numeric_addressed_interrupt_dispatcher_8h" ],
     [ "NumericAddressedLowLevelTransferElement.h", "device__backends_2include_2_numeric_addressed_low_level_transfer_element_8h.html", [
       [ "NumericAddressedBackendRegisterAccessor", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor" ],
       [ "NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element" ]
