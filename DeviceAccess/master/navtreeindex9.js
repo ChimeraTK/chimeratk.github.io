@@ -1,5 +1,9 @@
 var NAVTREEINDEX9 =
 {
+"classmy_register_info.html#adf9eac2a7d7a057f286aba1e31de70d1":[18,0,50,14],
+"classmy_register_info.html#ae8145c77ae96df6cd5384ef67f48912b":[18,0,50,4],
+"classregister_catalogue_test_suite.html":[18,0,79],
+"classregister_catalogue_test_suite.html#a3362164ec4600ad33c0adadd77aae58a":[18,0,79,0],
 "custom_backends.html":[3],
 "custom_backends.html#loading_backends":[3,1,0],
 "custom_backends.html#plugin_mechanism":[3,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX9 =
 "fileparsers_2include_2_d_map_files_parser_8h_source.html":[19,0,4,0,3],
 "fileparsers_2include_2_device_info_map_8h.html":[19,0,4,0,0],
 "fileparsers_2include_2_device_info_map_8h.html#af6310a045e1d4eb8181410f278fe7913":[19,0,4,0,0,4],
-"fileparsers_2include_2_device_info_map_8h_source.html":[19,0,4,0,0],
-"fileparsers_2include_2_map_file_parser_8h.html":[19,0,4,0,4],
-"fileparsers_2include_2_map_file_parser_8h_source.html":[19,0,4,0,4],
-"fileparsers_2include_2_register_info_8h.html":[19,0,4,0,7],
-"fileparsers_2include_2_register_info_8h_source.html":[19,0,4,0,7]
+"fileparsers_2include_2_device_info_map_8h_source.html":[19,0,4,0,0]
 };

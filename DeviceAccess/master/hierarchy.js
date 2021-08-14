@@ -34,8 +34,8 @@ var hierarchy =
     [ "CustomBackend::BackendRegisterer", "struct_custom_backend_1_1_backend_registerer.html", null ],
     [ "ExampleBackend::BackendRegisterer", "class_example_backend_1_1_backend_registerer.html", null ],
     [ "AnotherWorkingBackend::BackendRegisterer", "struct_another_working_backend_1_1_backend_registerer.html", null ],
-    [ "WrongVersionBackend::BackendRegisterer", "struct_wrong_version_backend_1_1_backend_registerer.html", null ],
     [ "WorkingBackend::BackendRegisterer", "struct_working_backend_1_1_backend_registerer.html", null ],
+    [ "WrongVersionBackend::BackendRegisterer", "struct_wrong_version_backend_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::ExceptionDummy::BackendRegisterer", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer.html", null ],
     [ "TestableDummyBackend::BackendRegisterer", "class_testable_dummy_backend_1_1_backend_registerer.html", null ],
     [ "TestDummy::BackendRegisterer", "class_test_dummy_1_1_backend_registerer.html", null ],
@@ -169,6 +169,7 @@ var hierarchy =
           ] ],
           [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< UserType, UserType >", null, [
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
+              [ "ChimeraTK::ExceptionDummyPollDecorator< UserType >", "struct_chimera_t_k_1_1_exception_dummy_poll_decorator.html", null ],
               [ "ChimeraTK::ExceptionDummyPushDecorator< UserType >", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html", null ],
               [ "ChimeraTK::LNMBackend::ForceReadOnlyPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html", null ]
             ] ]
@@ -220,6 +221,9 @@ var hierarchy =
     [ "std::exception", null, [
       [ "ChimeraTK::logic_error", "class_chimera_t_k_1_1logic__error.html", null ],
       [ "ChimeraTK::runtime_error", "class_chimera_t_k_1_1runtime__error.html", null ]
+    ] ],
+    [ "ChimeraTK::ExceptionDummyPollDecoratorBase", "struct_chimera_t_k_1_1_exception_dummy_poll_decorator_base.html", [
+      [ "ChimeraTK::ExceptionDummyPollDecorator< UserType >", "struct_chimera_t_k_1_1_exception_dummy_poll_decorator.html", null ]
     ] ],
     [ "ChimeraTK::ExceptionDummyPushDecoratorBase", "struct_chimera_t_k_1_1_exception_dummy_push_decorator_base.html", [
       [ "ChimeraTK::ExceptionDummyPushDecorator< UserType >", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html", null ]
@@ -617,8 +621,8 @@ var hierarchy =
     [ "ChimeraTK::LNMBackendRegisterInfo::ValueTable< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_register_info_1_1_value_table.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
-    [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
+    [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
     [ "ChimeraTK::VersionNumber", "class_chimera_t_k_1_1_version_number.html", null ],
     [ "VersionNumberTest", "class_version_number_test.html", null ],
     [ "ChimeraTK::Void", "class_chimera_t_k_1_1_void.html", null ],

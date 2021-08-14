@@ -1,5 +1,16 @@
 var NAVTREEINDEX16 =
 {
+"test_rebot_connection_timeouts_8cpp.html#a102f15900f3b998f2c3b79efa4815cb4":[19,0,7,1,35,4],
+"test_rebot_connection_timeouts_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[19,0,7,1,35,1],
+"test_rebot_connection_timeouts_8cpp.html#abf78619de0cef368f25f0dffd14757c8":[19,0,7,1,35,3],
+"test_rebot_connection_timeouts_8cpp.html#afe8add314e9a43890a35735260651569":[19,0,7,1,35,2],
+"test_rebot_connection_timeouts_8cpp_source.html":[19,0,7,1,35],
+"test_rebot_heartbeat_count_8cpp.html":[19,0,7,1,36],
+"test_rebot_heartbeat_count_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[19,0,7,1,36,0],
+"test_rebot_heartbeat_count_8cpp.html#a889146005b28fcea4776cebe477dffac":[19,0,7,1,36,1],
+"test_rebot_heartbeat_count_8cpp_source.html":[19,0,7,1,36],
+"test_register_access_8cpp.html":[19,0,7,1,37],
+"test_register_access_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[19,0,7,1,37,0],
 "test_register_access_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[19,0,7,1,37,1],
 "test_register_access_8cpp.html#a7f1f5e01d207bb000cf937b92ce3ca10":[19,0,7,1,37,2],
 "test_register_access_8cpp_source.html":[19,0,7,1,37],

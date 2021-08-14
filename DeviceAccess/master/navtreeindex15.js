@@ -1,5 +1,16 @@
 var NAVTREEINDEX15 =
 {
+"test_exception_dummy_device_8cc.html":[19,0,7,1,13],
+"test_exception_dummy_device_8cc.html#a46db3fa07daf73263818dfdf6a0041d7":[19,0,7,1,13,3],
+"test_exception_dummy_device_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[19,0,7,1,13,0],
+"test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35":[19,0,7,1,13,2],
+"test_exception_dummy_device_8cc.html#a9ac89077e8428a50888478bacef3d113":[19,0,7,1,13,1],
+"test_exception_dummy_device_8cc_source.html":[19,0,7,1,13],
+"test_fixed_point_converter_8cpp.html":[19,0,7,1,14],
+"test_fixed_point_converter_8cpp.html#a030e5039d3142f8ef4c16d6dc5e0cb78":[19,0,7,1,14,47],
+"test_fixed_point_converter_8cpp.html#a03b1ca77f2c69d10fc0e65867bb8c3c5":[19,0,7,1,14,30],
+"test_fixed_point_converter_8cpp.html#a03ca9c7985826dead7c5a6a0427dfb5a":[19,0,7,1,14,18],
+"test_fixed_point_converter_8cpp.html#a060cd00c15cfba89278bdac7c340ed4b":[19,0,7,1,14,41],
 "test_fixed_point_converter_8cpp.html#a09998a98b4fb5c182cafbbffce9dda64":[19,0,7,1,14,43],
 "test_fixed_point_converter_8cpp.html#a0cde5d99cfc68b27cad3b47dfbc62147":[19,0,7,1,14,38],
 "test_fixed_point_converter_8cpp.html#a0f8fdeb51f230a659194b64210f0e83d":[19,0,7,1,14,20],
@@ -238,16 +249,5 @@ var NAVTREEINDEX15 =
 "test_rebot_backend_creation_8cpp.html#a72b0eb8769d21dde9e43a961bff9be2e":[19,0,7,5,4,3],
 "test_rebot_backend_creation_8cpp.html#af5e0065971f86f4039f7a9ed991e3add":[19,0,7,5,4,2],
 "test_rebot_backend_creation_8cpp_source.html":[19,0,7,5,4],
-"test_rebot_connection_timeouts_8cpp.html":[19,0,7,1,35],
-"test_rebot_connection_timeouts_8cpp.html#a102f15900f3b998f2c3b79efa4815cb4":[19,0,7,1,35,4],
-"test_rebot_connection_timeouts_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[19,0,7,1,35,1],
-"test_rebot_connection_timeouts_8cpp.html#abf78619de0cef368f25f0dffd14757c8":[19,0,7,1,35,3],
-"test_rebot_connection_timeouts_8cpp.html#afe8add314e9a43890a35735260651569":[19,0,7,1,35,2],
-"test_rebot_connection_timeouts_8cpp_source.html":[19,0,7,1,35],
-"test_rebot_heartbeat_count_8cpp.html":[19,0,7,1,36],
-"test_rebot_heartbeat_count_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[19,0,7,1,36,0],
-"test_rebot_heartbeat_count_8cpp.html#a889146005b28fcea4776cebe477dffac":[19,0,7,1,36,1],
-"test_rebot_heartbeat_count_8cpp_source.html":[19,0,7,1,36],
-"test_register_access_8cpp.html":[19,0,7,1,37],
-"test_register_access_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[19,0,7,1,37,0]
+"test_rebot_connection_timeouts_8cpp.html":[19,0,7,1,35]
 };
