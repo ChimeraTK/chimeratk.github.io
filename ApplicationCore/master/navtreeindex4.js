@@ -160,6 +160,10 @@ var NAVTREEINDEX4 =
 "globals_e.html":[18,1,0,3],
 "globals_f.html":[18,1,0,4],
 "globals_func.html":[18,1,1],
+"globals_func.html":[18,1,1,0],
+"globals_func_g.html":[18,1,1,1],
+"globals_func_i.html":[18,1,1,2],
+"globals_func_t.html":[18,1,1,3],
 "globals_g.html":[18,1,0,5],
 "globals_i.html":[18,1,0,6],
 "globals_s.html":[18,1,0,7],
@@ -177,8 +181,8 @@ var NAVTREEINDEX4 =
 "namespace_chimera_t_k.html":[17,0,0],
 "namespace_chimera_t_k_1_1history.html":[17,0,0,0],
 "namespace_chimera_t_k_1_1history.html":[16,0,0,0],
-"namespacelogging.html":[16,0,1],
 "namespacelogging.html":[17,0,1],
+"namespacelogging.html":[16,0,1],
 "namespacemembers.html":[16,1,0],
 "namespacemembers_enum.html":[16,1,4],
 "namespacemembers_eval.html":[16,1,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX4 =
 "struct_a_a.html#a36e4ba8270c062dde5d1a7a404fa793b":[17,0,2,6],
 "struct_a_a.html#a40f5093d93080e59bdbc7c39f66a3033":[17,0,2,0],
 "struct_a_a.html#a7202525a0e0d6fd4662c00ca218dd0b5":[17,0,2,3],
-"struct_a_a.html#aa053bca00ca939e4ea05a0ff304633f5":[17,0,2,7],
-"struct_a_a.html#abd096b4a252153bed7be089d9d736576":[17,0,2,2],
-"struct_a_a.html#adee425769ffaac462a504dfea427d97a":[17,0,2,5],
-"struct_assign_module_later_app.html":[17,0,3],
-"struct_assign_module_later_app.html#a5fad6708d75fe64d712d1f7ab31ba7fd":[17,0,3,3]
+"struct_a_a.html#aa053bca00ca939e4ea05a0ff304633f5":[17,0,2,7]
 };

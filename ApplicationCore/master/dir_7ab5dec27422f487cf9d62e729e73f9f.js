@@ -8,6 +8,7 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testConnectTo.cc", "test_connect_to_8cc.html", "test_connect_to_8cc" ],
     [ "testControlSystemAccessors.cc", "test_control_system_accessors_8cc.html", "test_control_system_accessors_8cc" ],
     [ "testCSNetworkMerging.cc", "test_c_s_network_merging_8cc.html", "test_c_s_network_merging_8cc" ],
+    [ "testDataValidityPropagation.cc", "test_data_validity_propagation_8cc.html", "test_data_validity_propagation_8cc" ],
     [ "testDeviceAccessors.cc", "test_device_accessors_8cc.html", "test_device_accessors_8cc" ],
     [ "testDeviceExceptionFlagPropagation.cc", "test_device_exception_flag_propagation_8cc.html", "test_device_exception_flag_propagation_8cc" ],
     [ "testDeviceInitialisationHandler.cc", "test_device_initialisation_handler_8cc.html", "test_device_initialisation_handler_8cc" ],

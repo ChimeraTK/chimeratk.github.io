@@ -89,7 +89,7 @@ var NAVTREE =
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", null ],
+        [ "Functions", "globals_func.html", "globals_func" ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
@@ -106,14 +106,14 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#a0bcb02caefb83338f3ad8def4c5f0af7",
 "class_chimera_t_k_1_1_test_facility.html#aa27fd819018ba8a7e6d9f8727c0ab92c",
 "classlogging_1_1_logging_module.html#a00a5432ac851dadb47f5947a319bb083",
-"struct_assign_module_later_app.html#a9eaeda570986f47bdd2e5bf5541faaf1",
-"struct_chimera_t_k_1_1_read_bit_mask.html#a3c5eb103cebed81404382b5455898b82",
-"struct_deeper_1_1_hierarchies.html#a88babc325442a36eddaefceeb32c3f31",
-"struct_poll_module.html#a218eb3ff66588bc1a5d12df8a7e1de1f",
+"struct_a_a.html#abd096b4a252153bed7be089d9d736576",
+"struct_chimera_t_k_1_1_range_monitor.html#aa97f80f14f517bdceb2707ebf817b891",
+"struct_deeper.html#a610ec0f1c5aef2799890b9b90924429d",
+"struct_poll_dummy_application.html#a9710f01d4d1d4c0f45b11a8defee52ed",
 "struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4",
-"struct_test_module.html#a0acb19e93076b7da90a20ead9fed1dc4",
-"structfixture__with__poll__and__push__input.html#a9f1ba6109632cc5e0ae2324689546ba4",
-"test_logging_8cc.html#a3fc7767c1a2a89f2a8e1c73b712c1b27"
+"struct_test_fixture_with_eception_dummy.html",
+"struct_vector_module_1_1_another_group.html",
+"test_hierarchy_modifying_group_8cc.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

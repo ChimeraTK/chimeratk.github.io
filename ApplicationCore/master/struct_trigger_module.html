@@ -111,6 +111,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7523868a6efa6ac8cc93675a3c382fb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_trigger_module.html#a7523868a6efa6ac8cc93675a3c382fb7">mainLoop</a> () override</td></tr>
 <tr class="memdesc:a7523868a6efa6ac8cc93675a3c382fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be implemented by the user: function called in a separate thread executing the main loop of the module.  <a href="#a7523868a6efa6ac8cc93675a3c382fb7">More...</a><br /></td></tr>
 <tr class="separator:a7523868a6efa6ac8cc93675a3c382fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7523868a6efa6ac8cc93675a3c382fb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_trigger_module.html#a7523868a6efa6ac8cc93675a3c382fb7">mainLoop</a> () override</td></tr>
+<tr class="memdesc:a7523868a6efa6ac8cc93675a3c382fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be implemented by the user: function called in a separate thread executing the main loop of the module.  <a href="#a7523868a6efa6ac8cc93675a3c382fb7">More...</a><br /></td></tr>
+<tr class="separator:a7523868a6efa6ac8cc93675a3c382fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_application_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_application_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></td></tr>
 <tr class="memitem:a51393e96b3621ec1dbb066426d61011c inherit pub_methods_class_chimera_t_k_1_1_application_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_module.html#a51393e96b3621ec1dbb066426d61011c">ApplicationModule</a> (<a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> *owner, const std::string &amp;name, const std::string &amp;description, <a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0">HierarchyModifier</a> hierarchyModifier=<a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0a334c4a4c42fdb79d7ebc3e73b517e6f8">HierarchyModifier::none</a>, const std::unordered_set&lt; std::string &gt; &amp;tags={})</td></tr>
 <tr class="memdesc:a51393e96b3621ec1dbb066426d61011c inherit pub_methods_class_chimera_t_k_1_1_application_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: Create <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> by the given name with the given description and register it with its owner.  <a href="class_chimera_t_k_1_1_application_module.html#a51393e96b3621ec1dbb066426d61011c">More...</a><br /></td></tr>
@@ -378,6 +381,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a930e782919b683bcf12265bfb7e72d02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_scalar_output.html">ctk::ScalarOutput</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_trigger_module.html#a930e782919b683bcf12265bfb7e72d02">o1</a> {<a class="el" href="struct_trigger_module.html#a36607fe654c27de9efac9b34972f89da">this</a>, &quot;o1&quot;, &quot;&quot;, &quot;&quot;}</td></tr>
+<tr class="separator:a930e782919b683bcf12265bfb7e72d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd28da0151cbea672095c0818dd1e36f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_scalar_output.html">ChimeraTK::ScalarOutput</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_trigger_module.html#afd28da0151cbea672095c0818dd1e36f">trigger</a> {<a class="el" href="struct_trigger_module.html#a36607fe654c27de9efac9b34972f89da">this</a>, &quot;PUSH_OUT&quot;, &quot;&quot;, &quot;&quot;}</td></tr>
 <tr class="separator:afd28da0151cbea672095c0818dd1e36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36607fe654c27de9efac9b34972f89da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_trigger_module.html#a36607fe654c27de9efac9b34972f89da">this</a></td></tr>
@@ -463,10 +468,41 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="test_initial_value_spec_d8_8cc_source.html#l00305">305</a> of file <a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_data_validity_propagation_8cc_source.html#l00096">96</a> of file <a class="el" href="test_data_validity_propagation_8cc_source.html">testDataValidityPropagation.cc</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7523868a6efa6ac8cc93675a3c382fb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7523868a6efa6ac8cc93675a3c382fb7">&#9670;&nbsp;</a></span>mainLoop()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7523868a6efa6ac8cc93675a3c382fb7">&#9670;&nbsp;</a></span>mainLoop() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TriggerModule::mainLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>To be implemented by the user: function called in a separate thread executing the main loop of the module. </p>
+
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8">ChimeraTK::ApplicationModule</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="test_data_validity_propagation_8cc_source.html#l00099">99</a> of file <a class="el" href="test_data_validity_propagation_8cc_source.html">testDataValidityPropagation.cc</a>.</p>
+
+</div>
+</div>
+<a id="a7523868a6efa6ac8cc93675a3c382fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7523868a6efa6ac8cc93675a3c382fb7">&#9670;&nbsp;</a></span>mainLoop() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -510,6 +546,22 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="test_initial_value_spec_d8_8cc_source.html#l00312">312</a> of file <a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a>.</p>
+
+</div>
+</div>
+<a id="a930e782919b683bcf12265bfb7e72d02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a930e782919b683bcf12265bfb7e72d02">&#9670;&nbsp;</a></span>o1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_scalar_output.html">ctk::ScalarOutput</a>&lt;int&gt; TriggerModule::o1 {<a class="el" href="struct_trigger_module.html#a36607fe654c27de9efac9b34972f89da">this</a>, &quot;o1&quot;, &quot;&quot;, &quot;&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_data_validity_propagation_8cc_source.html#l00098">98</a> of file <a class="el" href="test_data_validity_propagation_8cc_source.html">testDataValidityPropagation.cc</a>.</p>
 
 </div>
 </div>
@@ -573,7 +625,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li>tests/executables_src/<a class="el" href="test_data_validity_propagation_8cc_source.html">testDataValidityPropagation.cc</a></li>
 <li>tests/executables_src/<a class="el" href="test_initial_value_spec_d8_8cc_source.html">testInitialValueSpecD8.cc</a></li>
 </ul>
 </div><!-- contents -->
@@ -582,7 +635,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_trigger_module.html">TriggerModule</a></li>
-    <li class="footer">Generated on Thu Aug 12 2021 03:55:07 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Aug 14 2021 03:54:54 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

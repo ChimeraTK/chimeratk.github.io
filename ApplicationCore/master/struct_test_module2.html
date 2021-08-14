@@ -108,6 +108,9 @@ $(document).ready(function(){initNavTree('struct_test_module2.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac667adf003f2b3e6a41b43c7fee9bdd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_module2.html#ac667adf003f2b3e6a41b43c7fee9bdd6">mainLoop</a> () override</td></tr>
+<tr class="memdesc:ac667adf003f2b3e6a41b43c7fee9bdd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be implemented by the user: function called in a separate thread executing the main loop of the module.  <a href="#ac667adf003f2b3e6a41b43c7fee9bdd6">More...</a><br /></td></tr>
+<tr class="separator:ac667adf003f2b3e6a41b43c7fee9bdd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0ab57f957417c51ad8835df7ce95484"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_module2.html#aa0ab57f957417c51ad8835df7ce95484">mainLoop</a> ()</td></tr>
 <tr class="memdesc:aa0ab57f957417c51ad8835df7ce95484"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be implemented by the user: function called in a separate thread executing the main loop of the module.  <a href="#aa0ab57f957417c51ad8835df7ce95484">More...</a><br /></td></tr>
 <tr class="separator:aa0ab57f957417c51ad8835df7ce95484"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -381,6 +384,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a99f10e012a76c1bf71a0493a0cdd908f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_scalar_push_input.html">ctk::ScalarPushInput</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_module2.html#a99f10e012a76c1bf71a0493a0cdd908f">i1</a> {this, &quot;i1&quot;, &quot;&quot;, &quot;&quot;}</td></tr>
+<tr class="separator:a99f10e012a76c1bf71a0493a0cdd908f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de763d2ffe68a18c035d187ab9b843b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_module2.html#a7de763d2ffe68a18c035d187ab9b843b">dataValidity1</a> = true</td></tr>
+<tr class="separator:a7de763d2ffe68a18c035d187ab9b843b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ee8ed2836e237932c817b1601f185cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_module2.html#a8ee8ed2836e237932c817b1601f185cd">dataValidity2</a> = true</td></tr>
+<tr class="separator:a8ee8ed2836e237932c817b1601f185cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e64b8b008322b456d08235fb80b1c89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_scalar_output.html">ctk::ScalarOutput</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_module2.html#a9e64b8b008322b456d08235fb80b1c89">actuator</a> {this, &quot;actuator&quot;, &quot;MV/m&quot;, &quot;Description&quot;}</td></tr>
 <tr class="separator:a9e64b8b008322b456d08235fb80b1c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fcd7d21a1eb798c789534a8a3c638ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_scalar_poll_input.html">ctk::ScalarPollInput</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_module2.html#a1fcd7d21a1eb798c789534a8a3c638ee">readback</a> {this, &quot;readBack&quot;, &quot;MV/m&quot;, &quot;Description&quot;}</td></tr>
@@ -467,10 +476,10 @@ Additional Inherited Members</h2></td></tr>
 struct TestModule2&lt; T &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="test_device_accessors_8cc_source.html#l00450">450</a> of file <a class="el" href="test_device_accessors_8cc_source.html">testDeviceAccessors.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_data_validity_propagation_8cc_source.html#l00079">79</a> of file <a class="el" href="test_data_validity_propagation_8cc_source.html">testDataValidityPropagation.cc</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac667adf003f2b3e6a41b43c7fee9bdd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac667adf003f2b3e6a41b43c7fee9bdd6">&#9670;&nbsp;</a></span>mainLoop() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac667adf003f2b3e6a41b43c7fee9bdd6">&#9670;&nbsp;</a></span>mainLoop() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -502,8 +511,41 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ac667adf003f2b3e6a41b43c7fee9bdd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac667adf003f2b3e6a41b43c7fee9bdd6">&#9670;&nbsp;</a></span>mainLoop() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_test_module2.html">TestModule2</a>&lt; T &gt;::mainLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>To be implemented by the user: function called in a separate thread executing the main loop of the module. </p>
+
+<p>Implements <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8">ChimeraTK::ApplicationModule</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="test_data_validity_propagation_8cc_source.html#l00083">83</a> of file <a class="el" href="test_data_validity_propagation_8cc_source.html">testDataValidityPropagation.cc</a>.</p>
+
+</div>
+</div>
 <a id="aa0ab57f957417c51ad8835df7ce95484"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0ab57f957417c51ad8835df7ce95484">&#9670;&nbsp;</a></span>mainLoop() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0ab57f957417c51ad8835df7ce95484">&#9670;&nbsp;</a></span>mainLoop() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -551,6 +593,60 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="test_device_accessors_8cc_source.html#l00453">453</a> of file <a class="el" href="test_device_accessors_8cc_source.html">testDeviceAccessors.cc</a>.</p>
+
+</div>
+</div>
+<a id="a7de763d2ffe68a18c035d187ab9b843b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7de763d2ffe68a18c035d187ab9b843b">&#9670;&nbsp;</a></span>dataValidity1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="struct_test_module2.html">TestModule2</a>&lt; T &gt;::dataValidity1 = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_data_validity_propagation_8cc_source.html#l00082">82</a> of file <a class="el" href="test_data_validity_propagation_8cc_source.html">testDataValidityPropagation.cc</a>.</p>
+
+</div>
+</div>
+<a id="a8ee8ed2836e237932c817b1601f185cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ee8ed2836e237932c817b1601f185cd">&#9670;&nbsp;</a></span>dataValidity2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="struct_test_module2.html">TestModule2</a>&lt; T &gt;::dataValidity2 = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_data_validity_propagation_8cc_source.html#l00082">82</a> of file <a class="el" href="test_data_validity_propagation_8cc_source.html">testDataValidityPropagation.cc</a>.</p>
+
+</div>
+</div>
+<a id="a99f10e012a76c1bf71a0493a0cdd908f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99f10e012a76c1bf71a0493a0cdd908f">&#9670;&nbsp;</a></span>i1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_scalar_push_input.html">ctk::ScalarPushInput</a>&lt;int&gt; <a class="el" href="struct_test_module2.html">TestModule2</a>&lt; T &gt;::i1 {this, &quot;i1&quot;, &quot;&quot;, &quot;&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_data_validity_propagation_8cc_source.html#l00081">81</a> of file <a class="el" href="test_data_validity_propagation_8cc_source.html">testDataValidityPropagation.cc</a>.</p>
 
 </div>
 </div>
@@ -609,6 +705,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
+<li>tests/executables_src/<a class="el" href="test_data_validity_propagation_8cc_source.html">testDataValidityPropagation.cc</a></li>
 <li>tests/executables_src/<a class="el" href="test_device_accessors_8cc_source.html">testDeviceAccessors.cc</a></li>
 <li>tests/executables_src/<a class="el" href="test_virtual_hierarchy_8cc_source.html">testVirtualHierarchy.cc</a></li>
 </ul>
@@ -618,7 +715,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_test_module2.html">TestModule2</a></li>
-    <li class="footer">Generated on Thu Aug 12 2021 03:55:07 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Aug 14 2021 03:54:54 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
