@@ -97,21 +97,22 @@ var NAVTREEINDEX =
 [
 ".html",
 "_unified_backend_test_8h.html#a30d24f6ea4866dacebad82c6c15082d2",
-"class_chimera_t_k_1_1_data_consistency_group.html#a0ffe36d41c805556dc2270f2c48e8b03",
-"class_chimera_t_k_1_1_exception_dummy.html#a2fdcad2aff892062a1b65cb5bc8a5d76",
-"class_chimera_t_k_1_1_logical_name_mapping_backend.html#a87887044c83149abdccd69c3767cc811",
-"class_chimera_t_k_1_1_read_any_group.html#ae57188eba7e01de51a3f06347913f2c7",
-"class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79faee0698ea9ceea2d7fff201cd0af5dbca",
-"class_chimera_t_k_1_1_transfer_element_i_d.html",
-"class_d_map_file_parser_test.html#ad2e10d86a9e4d09b943897c0e921b844",
-"classmy_register_info.html#adf9eac2a7d7a057f286aba1e31de70d1",
-"fileparsers_2include_2_map_file_parser_8h.html",
-"mtca4u__compatibility__headers_2_transfer_group_8h_source.html",
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a95196fea2b405e7b9fb5f1867b537ae3",
-"struct_muxed_area2.html#a1cceb7be4a0c282e6cff70e5ab40f2ac",
-"struct_reg_word_firmware_with_math.html#af010362411e7fe2536881e4e1a08628e",
-"test_exception_dummy_device_8cc.html",
-"test_rebot_connection_timeouts_8cpp.html#a102f15900f3b998f2c3b79efa4815cb4"
+"class_chimera_t_k_1_1_d_map_files_parser.html#af2e50f8583c32d1776c5f47ddf87e16a",
+"class_chimera_t_k_1_1_exception_dummy.html#a07e0ca117010bf50f9b5788d0b677c16",
+"class_chimera_t_k_1_1_logical_name_mapping_backend.html#a61288f923cb78a49373c69387b1c139d",
+"class_chimera_t_k_1_1_read_any_group.html#a7c1409af66afc55d74fe83b6adddb68f",
+"class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aac548b0ce34daec49406f49165a39e29",
+"class_chimera_t_k_1_1_transfer_element_abstractor.html#abf920b0effd69fd1962d03c9c616ae2b",
+"class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html#af046e72ae62006636555f454a489bbd1",
+"classmy_register_info.html",
+"exceptions.html",
+"mtca4u__compatibility__headers_2_register_path_8h_source.html",
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#a84692678773756a2b001c42bd62c1304",
+"struct_integers__signed32.html#ae0b5a2830661b161ba0056d5c3409063",
+"struct_reg_word_firmware_forced_read_only.html#a78d2e6bba407900b5f6f597c981168e0",
+"test_dummy_backend_8cpp.html#aa1c549aea605c905fc69a7ff50ae6331",
+"test_raw_data_type_info_8cpp.html",
+"wait_for_new_data.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

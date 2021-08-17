@@ -87,6 +87,7 @@ var searchData=
   ['signedflag',['signedFlag',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#abfed0bd506a5c85c2776c27a2a305efb',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
   ['single_5fword_5fwrite',['SINGLE_WORD_WRITE',['../class_chimera_t_k_1_1_rebot_dummy_session.html#ae5cb6c872eb4eb9c83ad4fc24761b099',1,'ChimeraTK::RebotDummySession']]],
   ['singletypeusertypemap',['SingleTypeUserTypeMap',['../namespace_chimera_t_k.html#ae7a8921ab1ff250afdd79cc5f3c70fea',1,'ChimeraTK']]],
+  ['singletypeusertypemapnovoid',['SingleTypeUserTypeMapNoVoid',['../namespace_chimera_t_k.html#ad2a806d36f9db8ff11fa81fa7d3a31d9',1,'ChimeraTK']]],
   ['singlewordwrite',['singleWordWrite',['../struct_chimera_t_k_1_1_dummy_protocol0.html#a5b1420d7783d3ff12b2e4dbaff6f283c',1,'ChimeraTK::DummyProtocol0::singleWordWrite()'],['../struct_dummy_protocol_implementor.html#a7a8c27b5c69cb07f92d304515249e7f3',1,'DummyProtocolImplementor::singleWordWrite()']]],
   ['size_5frw',['size_rw',['../structdevice__rw.html#ad9348912dabb0b218d0c500c66dda20d',1,'device_rw']]],
   ['sizeinbytes',['sizeInBytes',['../struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html#a1c631fad58cb1b7ac2bb0c0403fda029',1,'ChimeraTK::DummyBackend::AddressRange']]],

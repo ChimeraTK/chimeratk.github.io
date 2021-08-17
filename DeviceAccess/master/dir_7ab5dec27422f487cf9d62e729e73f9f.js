@@ -49,5 +49,6 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testTransferElement.cpp", "test_transfer_element_8cpp.html", "test_transfer_element_8cpp" ],
     [ "testTransferGroup.cpp", "test_transfer_group_8cpp.html", "test_transfer_group_8cpp" ],
     [ "testUtilities.cpp", "test_utilities_8cpp.html", "test_utilities_8cpp" ],
-    [ "testVersionNumber.cpp", "test_version_number_8cpp.html", "test_version_number_8cpp" ]
+    [ "testVersionNumber.cpp", "test_version_number_8cpp.html", "test_version_number_8cpp" ],
+    [ "testVoidRegisterAccessor.cpp", "test_void_register_accessor_8cpp.html", "test_void_register_accessor_8cpp" ]
 ];

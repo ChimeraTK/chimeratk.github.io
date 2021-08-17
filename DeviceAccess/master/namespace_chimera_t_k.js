@@ -50,6 +50,7 @@ var namespace_chimera_t_k =
     [ "FixedPointConvertingDecorator", "class_chimera_t_k_1_1_fixed_point_converting_decorator.html", "class_chimera_t_k_1_1_fixed_point_converting_decorator" ],
     [ "FixedPointConvertingRawDecorator", "class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html", "class_chimera_t_k_1_1_fixed_point_converting_raw_decorator" ],
     [ "FixedUserTypeMap", "class_chimera_t_k_1_1_fixed_user_type_map.html", "class_chimera_t_k_1_1_fixed_user_type_map" ],
+    [ "FixedUserTypeMapNoVoid", "class_chimera_t_k_1_1_fixed_user_type_map_no_void.html", "class_chimera_t_k_1_1_fixed_user_type_map_no_void" ],
     [ "IEEE754_SingleConverter", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter" ],
     [ "InstantiateLogicalNameMappingBackendFunctions", "class_chimera_t_k_1_1_instantiate_logical_name_mapping_backend_functions.html", null ],
     [ "LNMBackendBitAccessor", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor" ],
@@ -102,6 +103,7 @@ var namespace_chimera_t_k =
     [ "SubdeviceBackend", "class_chimera_t_k_1_1_subdevice_backend.html", "class_chimera_t_k_1_1_subdevice_backend" ],
     [ "SubdeviceRegisterAccessor", "class_chimera_t_k_1_1_subdevice_register_accessor.html", "class_chimera_t_k_1_1_subdevice_register_accessor" ],
     [ "TemplateUserTypeMap", "class_chimera_t_k_1_1_template_user_type_map.html", "class_chimera_t_k_1_1_template_user_type_map" ],
+    [ "TemplateUserTypeMapNoVoid", "class_chimera_t_k_1_1_template_user_type_map_no_void.html", "class_chimera_t_k_1_1_template_user_type_map_no_void" ],
     [ "TestCapabilities", "struct_chimera_t_k_1_1_test_capabilities.html", "struct_chimera_t_k_1_1_test_capabilities" ],
     [ "ThreadInformerMutex", "struct_chimera_t_k_1_1_thread_informer_mutex.html", "struct_chimera_t_k_1_1_thread_informer_mutex" ],
     [ "TransferElement", "class_chimera_t_k_1_1_transfer_element.html", "class_chimera_t_k_1_1_transfer_element" ],
@@ -114,6 +116,7 @@ var namespace_chimera_t_k =
     [ "Utilities", "class_chimera_t_k_1_1_utilities.html", "class_chimera_t_k_1_1_utilities" ],
     [ "VersionNumber", "class_chimera_t_k_1_1_version_number.html", "class_chimera_t_k_1_1_version_number" ],
     [ "Void", "class_chimera_t_k_1_1_void.html", "class_chimera_t_k_1_1_void" ],
+    [ "VoidRegisterAccessor", "class_chimera_t_k_1_1_void_register_accessor.html", "class_chimera_t_k_1_1_void_register_accessor" ],
     [ "XdmaBackend", "class_chimera_t_k_1_1_xdma_backend.html", "class_chimera_t_k_1_1_xdma_backend" ],
     [ "XdmaIntfAbstract", "class_chimera_t_k_1_1_xdma_intf_abstract.html", "class_chimera_t_k_1_1_xdma_intf_abstract" ]
 ];

@@ -55,5 +55,8 @@ var dir_0128381db4b4f5acbef62e610c8688e8 =
     ] ],
     [ "VersionNumber.h", "device_2include_2_version_number_8h.html", [
       [ "VersionNumber", "class_chimera_t_k_1_1_version_number.html", "class_chimera_t_k_1_1_version_number" ]
+    ] ],
+    [ "VoidRegisterAccessor.h", "_void_register_accessor_8h.html", [
+      [ "VoidRegisterAccessor", "class_chimera_t_k_1_1_void_register_accessor.html", "class_chimera_t_k_1_1_void_register_accessor" ]
     ] ]
 ];

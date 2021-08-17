@@ -21,6 +21,7 @@ var searchData=
   ['usednodes',['usedNodes',['../struct_test_locker.html#abd27bfa14ea0cc45b8f2be1b741ca233',1,'TestLocker']]],
   ['user_5fregister_5fstring',['USER_REGISTER_STRING',['../test_dummy_backend_8cpp.html#a3666956980c94e99f82e036ef8b34395',1,'testDummyBackend.cpp']]],
   ['usertypemap',['userTypeMap',['../namespace_chimera_t_k.html#ae8479f8354952a82794b11d1b2366242',1,'ChimeraTK']]],
+  ['usertypemapnovoid',['userTypeMapNoVoid',['../namespace_chimera_t_k.html#a52fd8bdb987666d61f9721c6a81a60a0',1,'ChimeraTK']]],
   ['usertypetonumeric',['userTypeToNumeric',['../namespace_chimera_t_k.html#a7fbd27ae4a9682ebb5b14b6c967f488b',1,'ChimeraTK']]],
   ['usertypetousertype',['userTypeToUserType',['../namespace_chimera_t_k.html#a4db52a34472ed003b9ffeb24195f457e',1,'ChimeraTK']]],
   ['usestatus',['useStatus',['../struct_static_core.html#a8ad4d88b5073deae5dc6b8f59c1bb377',1,'StaticCore']]],
