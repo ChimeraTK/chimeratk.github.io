@@ -18,7 +18,7 @@ var searchData=
   ['limitvaluemodulebase',['LimitValueModuleBase',['../struct_chimera_t_k_1_1_limit_value_module_base.html',1,'ChimeraTK']]],
   ['log',['log',['../structtest_app.html#ac9aec5e153e9f98518a4d14b25f9f1d6',1,'testApp']]],
   ['logfile',['logFile',['../classlogging_1_1_logging_module.html#ae90e453ff52bc721d16da109a5270f0f',1,'logging::LoggingModule']]],
-  ['logger',['Logger',['../classlogging_1_1_logger.html',1,'logging::Logger'],['../classlogging_1_1_logger.html#a87cd7a6981b805533c717053ae412cd0',1,'logging::Logger::Logger()'],['../classlogging_1_1_logger.html#a7a759481f080e2ba9598a5b7a83dc725',1,'logging::Logger::Logger(ctk::Module *module, const std::string &amp;tag=&quot;Logging&quot;)'],['../struct_dummy_module.html#a3b16300f4de3e7634f91c8b42d92410b',1,'DummyModule::logger()']]],
+  ['logger',['Logger',['../classlogging_1_1_logger.html',1,'logging::Logger'],['../struct_dummy_module.html#a3b16300f4de3e7634f91c8b42d92410b',1,'DummyModule::logger()'],['../classlogging_1_1_logger.html#a87cd7a6981b805533c717053ae412cd0',1,'logging::Logger::Logger()'],['../classlogging_1_1_logger.html#a7a759481f080e2ba9598a5b7a83dc725',1,'logging::Logger::Logger(ctk::Module *module, const std::string &amp;tag=&quot;Logging&quot;)']]],
   ['logging',['logging',['../namespacelogging.html',1,'']]],
   ['logging_2ecc',['Logging.cc',['../_logging_8cc.html',1,'']]],
   ['logging_2eh',['Logging.h',['../_logging_8h.html',1,'']]],
@@ -27,5 +27,6 @@ var searchData=
   ['loglevel',['logLevel',['../classlogging_1_1_logging_module.html#a56e605b3ab3beb718f4aa1a283f7164e',1,'logging::LoggingModule::logLevel()'],['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416',1,'logging::LogLevel()']]],
   ['logtail',['logTail',['../classlogging_1_1_logging_module.html#a58341fa99b5ee6c3921e4e1689b933cd',1,'logging::LoggingModule']]],
   ['lookup',['lookup',['../class_chimera_t_k_1_1_module_tree.html#a9d7f8bd7a93bf8275ff9ab2df7cf6998',1,'ChimeraTK::ModuleTree']]],
-  ['lostdatainlasttrigger',['lostDataInLastTrigger',['../struct_chimera_t_k_1_1_data_loss_counter.html#a5a4b553a489f7f97591b583424f233cb',1,'ChimeraTK::DataLossCounter']]]
+  ['lostdatainlasttrigger',['lostDataInLastTrigger',['../struct_chimera_t_k_1_1_data_loss_counter.html#a5a4b553a489f7f97591b583424f233cb',1,'ChimeraTK::DataLossCounter']]],
+  ['lower',['lower',['../struct_test_application2.html#a9638ad5097d32237558fab2ef97e4625',1,'TestApplication2']]]
 ];

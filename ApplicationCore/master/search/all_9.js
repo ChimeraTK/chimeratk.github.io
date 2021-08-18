@@ -17,6 +17,7 @@ var searchData=
   ['inithandler1throws',['initHandler1Throws',['../structfixture__with__poll__and__push__input.html#a9f1ba6109632cc5e0ae2324689546ba4',1,'fixture_with_poll_and_push_input']]],
   ['inithandler2called',['initHandler2Called',['../structfixture__with__poll__and__push__input.html#afe8b934123fccdf52c17ec56ee729003',1,'fixture_with_poll_and_push_input']]],
   ['inithandler2throws',['initHandler2Throws',['../structfixture__with__poll__and__push__input.html#aeb7cf58e33c9ce168bf01fe56f01f5af',1,'fixture_with_poll_and_push_input']]],
+  ['inithandlercallcount',['initHandlerCallCount',['../struct_test_application3.html#acb1cbba6b127f64590c1b88f16fe0b45',1,'TestApplication3']]],
   ['initialisation',['initialisation',['../namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72da3e52131e6b272be51242ee00310b7252',1,'ChimeraTK']]],
   ['initialisationhandlers',['initialisationHandlers',['../class_chimera_t_k_1_1_device_module.html#a9a605306e90d268b7091e6bad6c334f5',1,'ChimeraTK::DeviceModule']]],
   ['initialise',['initialise',['../class_chimera_t_k_1_1_application.html#a697d4a47ece6750203eecbff97039773',1,'ChimeraTK::Application']]],

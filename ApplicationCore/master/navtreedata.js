@@ -15,7 +15,7 @@ var NAVTREE =
       [ "Example usage", "configreader.html#usage", null ],
       [ "XML file structure", "configreader.html#xmlstructure", null ]
     ] ],
-    [ "Technical specification: Exception handling for device runtime errors V1.0RC2WIP", "spec_execption_handling.html", [
+    [ "Technical specification: Exception handling for device runtime errors V1.0", "spec_execption_handling.html", [
       [ "A. Introduction", "spec_execption_handling.html#spec_execptionHandling_intro", [
         [ "A.9 Special terminology used in this document", "spec_execption_handling.html#spec_exceptionHandling_intro_terminology", null ],
         [ "(*) Comments", "spec_execption_handling.html#spec_exceptionHandling_intro_comments", null ]
@@ -45,8 +45,8 @@ var NAVTREE =
       ] ],
       [ "D. Known issues", "spec_execption_handling.html#spec_execptionHandling_known_issues", null ]
     ] ],
-    [ "Technical specification: Propagation of initial values", "spec_initial_value_propagation.html", null ],
-    [ "Technical specification: data validity propagation Specification version V1.0RC2", "spec_data_validity_propagation.html", null ],
+    [ "Technical specification: Propagation of initial values V1.0", "spec_initial_value_propagation.html", null ],
+    [ "Technical specification: data validity propagation Specification version V1.0", "spec_data_validity_propagation.html", null ],
     [ "Technical specification: StatusAggregator", "spec__status_aggregator.html", null ],
     [ "Example 1: Application with two modules and two hardware devices", "example1.html", null ],
     [ "Example 2: Small but complete application with a proportional controller", "example2.html", null ],
@@ -107,13 +107,13 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_test_facility.html#aa27fd819018ba8a7e6d9f8727c0ab92c",
 "classlogging_1_1_logging_module.html#a00a5432ac851dadb47f5947a319bb083",
 "struct_a_a.html#abd096b4a252153bed7be089d9d736576",
-"struct_chimera_t_k_1_1_range_monitor.html#aa97f80f14f517bdceb2707ebf817b891",
-"struct_deeper.html#a610ec0f1c5aef2799890b9b90924429d",
-"struct_poll_dummy_application.html#a9710f01d4d1d4c0f45b11a8defee52ed",
-"struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4",
-"struct_test_fixture_with_eception_dummy.html",
-"struct_vector_module_1_1_another_group.html",
-"test_hierarchy_modifying_group_8cc.html"
+"struct_chimera_t_k_1_1_multiplier.html#a296ca34e58d7bc03c91cc1afc116055f",
+"struct_d9_initial_value_eception_dummy.html",
+"struct_module_c.html#a5004f74ebcf867a484712ec01e2b620f",
+"struct_test_application.html#a4702932ffea66d2abc6e24d388961cf7",
+"struct_test_application__move_construct.html",
+"struct_test_module_with_variable_groups2.html",
+"test_device_initialisation_handler_8cc.html#a6b2a3852db8bb19ab6909bac01859985"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

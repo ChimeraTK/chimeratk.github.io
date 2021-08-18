@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-ApplicationCore: Technical specification: data validity propagation Specification version V1.0RC2</title>
+<title>ChimeraTK-ApplicationCore: Technical specification: data validity propagation Specification version V1.0</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,11 +82,11 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Technical specification: data validity propagation Specification version V1.0RC2 </div>  </div>
+<div class="title">Technical specification: data validity propagation Specification version V1.0 </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><blockquote class="doxtable">
-<p><b>This is a release candidate in implementation</b></p>
+<p>This version is identical to V1.0RC2.</p>
 </blockquote>
 <blockquote class="doxtable">
 <p><b>NOTICE FOR FUTURE RELEASES: AVOID CHANGING THE NUMBERING!</b> The tests refer to the sections, incl. links and unlinked references from tests or other parts of the specification. These break, or even worse become wrong, when they are not changed consistenty! </p>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <li><a class="anchor" id="dataValidity_2_4_4"></a>2.4.4 Although the trigger conceptually has data type 'void', it can also be <code>faulty</code> <a class="el" href="spec_data_validity_propagation.html#dataValidity_comment_2_4_4">(*)</a>. An invalid trigger is processed, but all read out data is flagged as <code>faulty</code>. [<a class="el" href="test_data_validity_propagation_8cc.html#testDataValidity_2_4_1">T</a>]</li>
 </ul>
 <h3>2.5 Interaction with exception handling</h3>
-<p>See <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.0RC2WIP</a>.</p>
+<p>See <a class="el" href="spec_execption_handling.html">Technical specification: Exception handling for device runtime errors V1.0</a>.</p>
 <ul>
 <li><a class="anchor" id="dataValidity_2_5_1"></a>2.5.1 The <a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html" title="NDRegisterAccessorDecorator which propagates meta data attached to input process variables through th...">MetaDataPropagatingRegisterDecorator</a> is always placed <em>around</em> the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> if both decorators are used on a process variable. Like this a <code>faulty</code> flag raised by the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a> is automatically picked up by the <a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html" title="NDRegisterAccessorDecorator which propagates meta data attached to input process variables through th...">MetaDataPropagatingRegisterDecorator</a>. [<a class="el" href="test_data_validity_propagation_8cc.html#testDataValidity_1_3">T</a>]</li>
 <li><a class="anchor" id="dataValidity_2_5_2"></a>2.5.2 The first failing read returns with the old data and the 'faulty' flag. Like this the flag is propagated to the outputs. Only further reads might freeze until the device is available again. [<a class="el" href="test_data_validity_propagation_8cc.html#testDataValidity_1_3">T</a>]</li>
@@ -198,7 +198,7 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Tue Aug 17 2021 03:54:31 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Aug 18 2021 03:54:46 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

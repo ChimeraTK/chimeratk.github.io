@@ -5,6 +5,7 @@ var searchData=
   ['accessor',['Accessor',['../class_chimera_t_k_1_1_accessor.html',1,'ChimeraTK']]],
   ['accessorattacher',['AccessorAttacher',['../struct_chimera_t_k_1_1history_1_1_accessor_attacher.html',1,'ChimeraTK::history']]],
   ['anothergroup',['AnotherGroup',['../struct_test_module_1_1_another_group.html',1,'TestModule&lt; T &gt;::AnotherGroup'],['../struct_vector_module_1_1_another_group.html',1,'VectorModule::AnotherGroup']]],
+  ['anotherpolltestapplication',['AnotherPollTestApplication',['../struct_another_poll_test_application.html',1,'']]],
   ['anothersubmodule',['AnotherSubModule',['../struct_test_module_1_1_module2_1_1_another_sub_module.html',1,'TestModule::Module2']]],
   ['anytype',['AnyType',['../class_chimera_t_k_1_1_any_type.html',1,'ChimeraTK']]],
   ['application',['Application',['../class_chimera_t_k_1_1_application.html',1,'ChimeraTK']]],

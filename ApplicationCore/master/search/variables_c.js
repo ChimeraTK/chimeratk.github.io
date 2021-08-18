@@ -18,5 +18,6 @@ var searchData=
   ['logger',['logger',['../struct_dummy_module.html#a3b16300f4de3e7634f91c8b42d92410b',1,'DummyModule']]],
   ['loglevel',['logLevel',['../classlogging_1_1_logging_module.html#a56e605b3ab3beb718f4aa1a283f7164e',1,'logging::LoggingModule']]],
   ['logtail',['logTail',['../classlogging_1_1_logging_module.html#a58341fa99b5ee6c3921e4e1689b933cd',1,'logging::LoggingModule']]],
-  ['lostdatainlasttrigger',['lostDataInLastTrigger',['../struct_chimera_t_k_1_1_data_loss_counter.html#a5a4b553a489f7f97591b583424f233cb',1,'ChimeraTK::DataLossCounter']]]
+  ['lostdatainlasttrigger',['lostDataInLastTrigger',['../struct_chimera_t_k_1_1_data_loss_counter.html#a5a4b553a489f7f97591b583424f233cb',1,'ChimeraTK::DataLossCounter']]],
+  ['lower',['lower',['../struct_test_application2.html#a9638ad5097d32237558fab2ef97e4625',1,'TestApplication2']]]
 ];

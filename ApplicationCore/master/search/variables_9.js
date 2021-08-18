@@ -14,6 +14,7 @@ var searchData=
   ['inithandler1throws',['initHandler1Throws',['../structfixture__with__poll__and__push__input.html#a9f1ba6109632cc5e0ae2324689546ba4',1,'fixture_with_poll_and_push_input']]],
   ['inithandler2called',['initHandler2Called',['../structfixture__with__poll__and__push__input.html#afe8b934123fccdf52c17ec56ee729003',1,'fixture_with_poll_and_push_input']]],
   ['inithandler2throws',['initHandler2Throws',['../structfixture__with__poll__and__push__input.html#aeb7cf58e33c9ce168bf01fe56f01f5af',1,'fixture_with_poll_and_push_input']]],
+  ['inithandlercallcount',['initHandlerCallCount',['../struct_test_application3.html#acb1cbba6b127f64590c1b88f16fe0b45',1,'TestApplication3']]],
   ['initialisationhandlers',['initialisationHandlers',['../class_chimera_t_k_1_1_device_module.html#a9a605306e90d268b7091e6bad6c334f5',1,'ChimeraTK::DeviceModule']]],
   ['initialisecalled',['initialiseCalled',['../class_chimera_t_k_1_1_application.html#a07485c3b44b7ba199a4a52de04639308',1,'ChimeraTK::Application']]],
   ['initialvaluelatch',['initialValueLatch',['../class_chimera_t_k_1_1_device_module.html#acc988d0c9b73919f960b1579639289e6',1,'ChimeraTK::DeviceModule']]],
