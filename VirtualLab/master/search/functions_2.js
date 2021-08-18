@@ -1,7 +1,7 @@
 var searchData=
 [
   ['clear',['clear',['../class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend_1_1_timer.html#a2dbb540b2490ce2fb140cc9a9d135431',1,'ChimeraTK::VirtualLab::VirtualLabBackend::Timer']]],
-  ['close',['close',['../class_virtual_test_device.html#a4d4fe7e9b40b4406bb21753d232cff67',1,'VirtualTestDevice']]],
+  ['closeimpl',['closeImpl',['../class_virtual_test_device.html#aad55d1e74916a3e4e59de5d1dfd99016',1,'VirtualTestDevice']]],
   ['connect',['connect',['../class_chimera_t_k_1_1_virtual_lab_1_1_signal_sink.html#a66f419f2bc6133456644a3fb14553de6',1,'ChimeraTK::VirtualLab::SignalSink']]],
   ['connect_5fregister_5fevent',['CONNECT_REGISTER_EVENT',['../class_virtual_test_device.html#a1ecd77216dd123e0bc4de07ad0289f42',1,'VirtualTestDevice::CONNECT_REGISTER_EVENT(onRead, someRegister)'],['../class_virtual_test_device.html#a73ba338c0bc81cee8103baaf2021ddf1',1,'VirtualTestDevice::CONNECT_REGISTER_EVENT(onWrite, someRegister)'],['../class_virtual_test_device.html#ad7f59ec602b03868656ed6b6d2a6f437',1,'VirtualTestDevice::CONNECT_REGISTER_EVENT(onWriteMuxed, someMuxedRegister)']]],
   ['constantcallback',['constantCallback',['../class_chimera_t_k_1_1_virtual_lab_1_1_constant_signal_source.html#aa86f7b13762483d1335768a5e180fb95',1,'ChimeraTK::VirtualLab::ConstantSignalSource']]],
