@@ -47,7 +47,7 @@ var NAVTREE =
       [ "Why can I not read SEQUENCE registers?", "q_and_a.html#use_sequences", null ]
     ] ],
     [ "Technical specification DeviceBackend", "spec__device_backend.html", null ],
-    [ "Technical specification: TransferElement V1.0RC13", "spec__transfer_element.html", null ],
+    [ "Technical specification: TransferElement V1.0", "spec__transfer_element.html", null ],
     [ "Testing applications using the DummyBackends", "testing_with_dummy_backends.html", [
       [ "Specifying the dummies in the device map file", "testing_with_dummy_backends.html#dmap_specify_dummies", null ],
       [ "Writeing to read-only registers", "testing_with_dummy_backends.html#dummy_backends_write_readonly", null ]
@@ -86,7 +86,7 @@ var NAVTREE =
         [ "Functions", "globals_func.html", "globals_func" ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ],
     [ "Examples", "examples.html", "examples" ]
@@ -96,23 +96,23 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"_unified_backend_test_8h.html#a30d24f6ea4866dacebad82c6c15082d2",
-"class_chimera_t_k_1_1_d_map_files_parser.html#af2e50f8583c32d1776c5f47ddf87e16a",
-"class_chimera_t_k_1_1_exception_dummy.html#a07e0ca117010bf50f9b5788d0b677c16",
-"class_chimera_t_k_1_1_logical_name_mapping_backend.html#a61288f923cb78a49373c69387b1c139d",
-"class_chimera_t_k_1_1_read_any_group.html#a7c1409af66afc55d74fe83b6adddb68f",
-"class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aac548b0ce34daec49406f49165a39e29",
-"class_chimera_t_k_1_1_transfer_element_abstractor.html#abf920b0effd69fd1962d03c9c616ae2b",
-"class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html#af046e72ae62006636555f454a489bbd1",
-"classmy_register_info.html",
-"exceptions.html",
-"mtca4u__compatibility__headers_2_register_path_8h_source.html",
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#a84692678773756a2b001c42bd62c1304",
-"struct_integers__signed32.html#ae0b5a2830661b161ba0056d5c3409063",
-"struct_reg_word_firmware_forced_read_only.html#a78d2e6bba407900b5f6f597c981168e0",
-"test_dummy_backend_8cpp.html#aa1c549aea605c905fc69a7ff50ae6331",
-"test_raw_data_type_info_8cpp.html",
-"wait_for_new_data.html"
+"_unified_backend_test_8h.html#a2900a37864e8877318baf6b76f76ef48",
+"class_chimera_t_k_1_1_d_map_files_parser.html#ae2358f1fc40e375f76c6fc2761175ab4",
+"class_chimera_t_k_1_1_dummy_register_raw_accessor.html#ad4873a8ed018d4dc30501b2f4b903aa1",
+"class_chimera_t_k_1_1_logical_name_mapping_backend.html#a0d32bb3ea0ba626b4d5f9853726dd07c",
+"class_chimera_t_k_1_1_read_any_group.html#a52e203fd66aed19b829db1150fb90fc1",
+"class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a9e0a0d3eeecbf8b0603f83464f509c30",
+"class_chimera_t_k_1_1_transfer_element_abstractor.html#aa67bef82a23eb01b2e9f20de95ca0a75",
+"class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html#adea2b03e16dee1d0d0e34c5727cae7bc",
+"classes.html",
+"examples.html",
+"mtca4u__compatibility__headers_2_numeric_addressed_backend_register_accessor_8h.html",
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper.html",
+"struct_f.html",
+"struct_reg_variable_as_push_parameter_in_math_base.html",
+"test_device_8cpp_source.html",
+"test_pcie_backend_8cpp.html#a666a688be4897906a5a2e1ad2b6aec78",
+"util_2include_2_supported_user_types_8h.html#a7b608503f26011e1e46f845fe3916ccb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

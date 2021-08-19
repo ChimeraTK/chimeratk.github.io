@@ -1,7 +1,9 @@
 var searchData=
 [
   ['declare_5fmulti_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes',['DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES',['../util_2include_2_supported_user_types_8h.html#a393c59a0bbe800ef9a1420bc5f8f8be7',1,'SupportedUserTypes.h']]],
+  ['declare_5fmulti_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes_5fno_5fvoid',['DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES_NO_VOID',['../util_2include_2_supported_user_types_8h.html#a15e1765bd46f19c26165b67774466461',1,'SupportedUserTypes.h']]],
   ['declare_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes',['DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES',['../util_2include_2_supported_user_types_8h.html#a8256edfa28cb73e5de13c92e1920369d',1,'SupportedUserTypes.h']]],
+  ['declare_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes_5fno_5fvoid',['DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES_NO_VOID',['../util_2include_2_supported_user_types_8h.html#a6e202e989c52cc471484fa2f1864e3db',1,'SupportedUserTypes.h']]],
   ['def_5ftypename',['DEF_TYPENAME',['../test_fixed_point_converter_8cpp.html#a4b4edc265050c3971e52f9643040e649',1,'testFixedPointConverter.cpp']]],
   ['define_5fvirtual_5ffunction_5ftemplate_5fvtable',['DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE',['../util_2include_2_virtual_function_template_8h.html#af17cdfe4bdc6a97d29cda32a0253187f',1,'VirtualFunctionTemplate.h']]],
   ['define_5fvirtual_5ffunction_5ftemplate_5fvtable_5ffiller',['DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER',['../util_2include_2_virtual_function_template_8h.html#ad55f079dbae8d46794e4a68782511746',1,'VirtualFunctionTemplate.h']]],

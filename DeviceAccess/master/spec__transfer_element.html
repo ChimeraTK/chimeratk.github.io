@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.0RC13</title>
+<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.0</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,18 +82,17 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Technical specification: <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> V1.0RC13 </div>  </div>
+<div class="title">Technical specification: <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> V1.0 </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><blockquote class="doxtable">
-<p>**This is a release candidate in implementation.</p>
+<p>This version is identical to V1.0RC13 (apart from added introduction).</p>
 </blockquote>
-<p>The official V1.0 release will be done once the implementation is ready and we know that the specified behavious is working as intended.**</p>
 <blockquote class="doxtable">
 <p><b>NOTICE FOR FUTURE RELEASES: AVOID CHANGING THE NUMBERING!</b> The tests refer to the sections, incl. links and unlinked references from tests or other parts of the specification. These break, or even worse become wrong, when they are not changed consistenty! </p>
 </blockquote>
 <h2>Introduction</h2>
-<p>This documnent is currently still <b>INCOMPLETE</b>!</p>
+<p>This document describes the behaviour of the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> base class, the <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor. ">NDRegisterAccessor</a> base class, as well as requirements for all implementations (backends and decorators). The behaviour has been defined such that consistent behaviour with other libraries in the framework is ensured, namely ApplicationCore with the specifications for exception handling, initial value propagation and propagation of the data validity flag.</p>
 <h2>A. Definitions</h2>
 <ul>
 <li>1. A <em>process variable</em> is the logical entity which is accessed through the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. Outside this document, it is sometimes also called register.<ul>
@@ -643,7 +642,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Aug 18 2021 03:53:12 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Aug 19 2021 03:53:15 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

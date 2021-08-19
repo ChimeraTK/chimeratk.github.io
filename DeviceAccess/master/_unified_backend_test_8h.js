@@ -20,8 +20,8 @@ var _unified_backend_test_8h =
     [ "CHECK_APPLICATION_BUFFER", "_unified_backend_test_8h.html#a048d20ccdf8bf904afec713ede5b2cc2", null ],
     [ "CHECK_EQUALITY", "_unified_backend_test_8h.html#a3b6893388f16002bc124de0fe5fc18ae", null ],
     [ "CHECK_EQUALITY_TIMEOUT", "_unified_backend_test_8h.html#a04f19c70138fca6224d58e17cc55cffd", null ],
-    [ "CHECK_EQUALITY_VECTOR", "_unified_backend_test_8h.html#a28abd8da668bc6ade7349eaaf6131752", null ],
-    [ "CHECK_EQUALITY_VECTOR_TIMEOUT", "_unified_backend_test_8h.html#a928dc10e51341a04675c0c2760fc0e46", null ],
+    [ "CHECK_EQUALITY_VECTOR", "_unified_backend_test_8h.html#a0a9475c70cbaa9787e856ee5fa363044", null ],
+    [ "CHECK_EQUALITY_VECTOR_TIMEOUT", "_unified_backend_test_8h.html#a282b845dd77195597ebb0903d0332344", null ],
     [ "CHECK_TIMEOUT", "_unified_backend_test_8h.html#a17030ac7f00713a62e05ab6c35cb710e", null ],
     [ "STORE_APPLICATION_BUFFER", "_unified_backend_test_8h.html#a82cbc60bbcb853067a86faadd887b190", null ],
     [ "TestCapability", "_unified_backend_test_8h.html#ad026dd4a8d0c54ed5084a0ed3e51d985", [

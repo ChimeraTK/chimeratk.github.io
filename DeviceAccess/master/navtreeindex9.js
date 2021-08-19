@@ -1,5 +1,8 @@
 var NAVTREEINDEX9 =
 {
+"classes.html":[18,1],
+"classmap_file_test_suite.html":[18,0,44],
+"classmap_file_test_suite.html#a5905399415b88a36aa55bcd73f45ad59":[18,0,44,0],
 "classmy_register_info.html":[18,0,50],
 "classmy_register_info.html#a0f0e6ca6d97d5dd557cad5d5263b7639":[18,0,50,16],
 "classmy_register_info.html#a180ff4161e9a676db08a1e5310956ce3":[18,0,50,10],
@@ -246,8 +249,5 @@ var NAVTREEINDEX9 =
 "dir_f7d8e8f898b7b1e9b0579569ae94cf59.html":[19,0,1,6],
 "dir_ff4f312f938d4beffb3ddcab4a7dfd02.html":[19,0,1,7],
 "dmap.html":[5],
-"dmap.html#The":[5,0],
-"examples.html":[20],
-"exception_2include_2_exception_8h.html":[19,0,3,0,0],
-"exception_2include_2_exception_8h_source.html":[19,0,3,0,0]
+"dmap.html#The":[5,0]
 };

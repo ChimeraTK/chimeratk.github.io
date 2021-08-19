@@ -130,18 +130,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2974369280c07f08d97f90dca96774d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#a2974369280c07f08d97f90dca96774d2">deactivate</a> ()</td></tr>
 <tr class="memdesc:a2974369280c07f08d97f90dca96774d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Needs to be called in case a device is closed.  <a href="#a2974369280c07f08d97f90dca96774d2">More...</a><br /></td></tr>
 <tr class="separator:a2974369280c07f08d97f90dca96774d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9634c940baafd933043fd58cfddf63d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#a9634c940baafd933043fd58cfddf63d1">setWriteAccessor</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt;&gt; const &amp;writeAccessor)</td></tr>
+<tr class="memdesc:a9634c940baafd933043fd58cfddf63d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an accessor if the register is writeable.  <a href="#a9634c940baafd933043fd58cfddf63d1">More...</a><br /></td></tr>
+<tr class="separator:a9634c940baafd933043fd58cfddf63d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6a14edbe20eff5a34cbf4908a449dc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#aa6a14edbe20eff5a34cbf4908a449dc6">doReadTransferSynchronously</a> () override</td></tr>
 <tr class="memdesc:aa6a14edbe20eff5a34cbf4908a449dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#adaf41bf7340270e223afc8ed96f46b77" title="Read the data from the device but do not fill it into the user buffer of this TransferElement. ">readTransfer()</a> for synchronous reads.  <a href="#aa6a14edbe20eff5a34cbf4908a449dc6">More...</a><br /></td></tr>
 <tr class="separator:aa6a14edbe20eff5a34cbf4908a449dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab594a1c8391560f8782434e60bacf9b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#ab594a1c8391560f8782434e60bacf9b3">doWriteTransfer</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a>) override</td></tr>
-<tr class="memdesc:ab594a1c8391560f8782434e60bacf9b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab472541c0dd3171f8bf34a8c7e4600ff" title="Write the data to the device. ">writeTransfer()</a>.  <a href="#ab594a1c8391560f8782434e60bacf9b3">More...</a><br /></td></tr>
-<tr class="separator:ab594a1c8391560f8782434e60bacf9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ad4256fca034ffb74dc39c4581bccd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#a8ad4256fca034ffb74dc39c4581bccd0">doPreWrite</a> ([[maybe_unused]] <a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type, [[maybe_unused]] <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber) override</td></tr>
-<tr class="separator:a8ad4256fca034ffb74dc39c4581bccd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392b8a08069312a051b320b2718f469f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#a392b8a08069312a051b320b2718f469f">doWriteTransfer</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber) override</td></tr>
+<tr class="memdesc:a392b8a08069312a051b320b2718f469f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab472541c0dd3171f8bf34a8c7e4600ff" title="Write the data to the device. ">writeTransfer()</a>.  <a href="#a392b8a08069312a051b320b2718f469f">More...</a><br /></td></tr>
+<tr class="separator:a392b8a08069312a051b320b2718f469f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d09551a35242010a181844a9d90b0e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#a36d09551a35242010a181844a9d90b0e">doWriteTransferDestructively</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber) override</td></tr>
+<tr class="memdesc:a36d09551a35242010a181844a9d90b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a04427c0c30fd937a5c85a6bb60120a9e" title="Write the data to the device. ">writeTransferDestructively()</a>.  <a href="#a36d09551a35242010a181844a9d90b0e">More...</a><br /></td></tr>
+<tr class="separator:a36d09551a35242010a181844a9d90b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f9c3eb72c4ea939da135a5f88f17a8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#a3f9c3eb72c4ea939da135a5f88f17a8e">doPreWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber) override</td></tr>
+<tr class="memdesc:a3f9c3eb72c4ea939da135a5f88f17a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa8dbf971f07658c489d452016244e1a5" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>.  <a href="#a3f9c3eb72c4ea939da135a5f88f17a8e">More...</a><br /></td></tr>
+<tr class="separator:a3f9c3eb72c4ea939da135a5f88f17a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77fce4be2f61bb787c9025b36d562cd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#a77fce4be2f61bb787c9025b36d562cd3">doPreRead</a> ([[maybe_unused]] <a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type) override</td></tr>
 <tr class="separator:a77fce4be2f61bb787c9025b36d562cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b14e0bed78f602472cecde07cbf2025"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#a7b14e0bed78f602472cecde07cbf2025">doPostWrite</a> ([[maybe_unused]] <a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type, [[maybe_unused]] <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber) override</td></tr>
-<tr class="separator:a7b14e0bed78f602472cecde07cbf2025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affab9932d1b385b81fa850ed40c17215"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#affab9932d1b385b81fa850ed40c17215">doPostWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber) override</td></tr>
+<tr class="memdesc:affab9932d1b385b81fa850ed40c17215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write cleanups if necessary. ">postWrite()</a>.  <a href="#affab9932d1b385b81fa850ed40c17215">More...</a><br /></td></tr>
+<tr class="separator:affab9932d1b385b81fa850ed40c17215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ff0e9996f72a4a82acbd536102b19ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#a8ff0e9996f72a4a82acbd536102b19ff">doPostRead</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>, bool updateDataBuffer) override</td></tr>
 <tr class="memdesc:a8ff0e9996f72a4a82acbd536102b19ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aebd5de52d8f625ea84ec0b17224c316c" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a>.  <a href="#a8ff0e9996f72a4a82acbd536102b19ff">More...</a><br /></td></tr>
 <tr class="separator:a8ff0e9996f72a4a82acbd536102b19ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -343,6 +351,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a6b6c5a9b7fe93289ab6f4d1973c560f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9410f90700a817b950af7360d6938372"><td class="memItemLeft" align="right" valign="top">cppext::future_queue&lt; Buffer, cppext::SWAP_DATA &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#a9410f90700a817b950af7360d6938372">_dataTransportQueue</a> {_queueSize}</td></tr>
 <tr class="separator:a9410f90700a817b950af7360d6938372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925e87499648e6cb7eddf7058509d52a"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#a925e87499648e6cb7eddf7058509d52a">_writeAccessor</a></td></tr>
+<tr class="separator:a925e87499648e6cb7eddf7058509d52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_n_d_register_accessor"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_n_d_register_accessor')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">ChimeraTK::NDRegisterAccessor&lt; UserType &gt;</a></td></tr>
 <tr class="memitem:ab3e9f790076370e901fd8c6079ed6770 inherit pro_attribs_class_chimera_t_k_1_1_n_d_register_accessor"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; UserType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#ab3e9f790076370e901fd8c6079ed6770">buffer_2D</a></td></tr>
 <tr class="memdesc:ab3e9f790076370e901fd8c6079ed6770 inherit pro_attribs_class_chimera_t_k_1_1_n_d_register_accessor"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_chimera_t_k_1_1_n_d_register_accessor_1_1_buffer.html" title="Data type to create individual buffers. ">Buffer</a> of converted data elements.  <a href="class_chimera_t_k_1_1_n_d_register_accessor.html#ab3e9f790076370e901fd8c6079ed6770">More...</a><br /></td></tr>
@@ -401,15 +411,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a60d3b43f03bed1cf27c57fd7e0c76127 inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a60d3b43f03bed1cf27c57fd7e0c76127">doPreRead</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>)</td></tr>
 <tr class="memdesc:a60d3b43f03bed1cf27c57fd7e0c76127 inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a3b9d8f76450952744a6a046de7b4eb16" title="Perform any pre-read tasks if necessary. ">preRead()</a>.  <a href="class_chimera_t_k_1_1_transfer_element.html#a60d3b43f03bed1cf27c57fd7e0c76127">More...</a><br /></td></tr>
 <tr class="separator:a60d3b43f03bed1cf27c57fd7e0c76127 inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6ae99999ae6548d80d9f744e93f03bd inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd">doPreWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>)</td></tr>
-<tr class="memdesc:aa6ae99999ae6548d80d9f744e93f03bd inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa8dbf971f07658c489d452016244e1a5" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>.  <a href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd">More...</a><br /></td></tr>
-<tr class="separator:aa6ae99999ae6548d80d9f744e93f03bd inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c0a6bc5c1779ce47afe7871573ef2a1 inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7c0a6bc5c1779ce47afe7871573ef2a1">doPostWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>)</td></tr>
-<tr class="memdesc:a7c0a6bc5c1779ce47afe7871573ef2a1 inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write cleanups if necessary. ">postWrite()</a>.  <a href="class_chimera_t_k_1_1_transfer_element.html#a7c0a6bc5c1779ce47afe7871573ef2a1">More...</a><br /></td></tr>
-<tr class="separator:a7c0a6bc5c1779ce47afe7871573ef2a1 inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98f467545b6682f18cec6b113c5898cc inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a98f467545b6682f18cec6b113c5898cc">doWriteTransferDestructively</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a> versionNumber)</td></tr>
-<tr class="memdesc:a98f467545b6682f18cec6b113c5898cc inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a04427c0c30fd937a5c85a6bb60120a9e" title="Write the data to the device. ">writeTransferDestructively()</a>.  <a href="class_chimera_t_k_1_1_transfer_element.html#a98f467545b6682f18cec6b113c5898cc">More...</a><br /></td></tr>
-<tr class="separator:a98f467545b6682f18cec6b113c5898cc inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a833c655eca8c53f5ff0d97c3d81c1376 inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a833c655eca8c53f5ff0d97c3d81c1376">makeUniqueId</a> ()</td></tr>
 <tr class="memdesc:a833c655eca8c53f5ff0d97c3d81c1376 inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow generating a unique ID from derived classes.  <a href="class_chimera_t_k_1_1_transfer_element.html#a833c655eca8c53f5ff0d97c3d81c1376">More...</a><br /></td></tr>
 <tr class="separator:a833c655eca8c53f5ff0d97c3d81c1376 inherit pro_methods_class_chimera_t_k_1_1_transfer_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -424,7 +425,7 @@ class ChimeraTK::AsyncNDRegisterAccessor&lt; UserType, AsyncAccessorManager, Asy
 void AsyncAccessorManager::unsubscribe(AsyncAccessorID)
 </pre><p> in its destructor to unregister itself. As the way the asynchronous accessors are store highly depends on the interrupt and data structure of backend, the implementation of the manager is up to the backend implementation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00027">27</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00028">28</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad266a25d134985379fc64aeeade5c109"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad266a25d134985379fc64aeeade5c109">&#9670;&nbsp;</a></span>AsyncNDRegisterAccessor()</h2>
@@ -498,7 +499,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 <p>In addition to the arguments of the <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor. ">NDRegisterAccessor</a> constructor, you need an AccessorManager where you can unsubscribe, and an ID so the AccessorManager can identify the accessor when doing so. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00142">142</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00174">174</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -535,7 +536,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00041">41</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00042">42</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -568,7 +569,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 <p>Activate the accessor and send the initial value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00066">66</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00067">67</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -607,7 +608,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 <p>Needs to be called in case a device is closed. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00074">74</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00075">75</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -656,7 +657,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00172">172</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00205">205</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -668,8 +669,8 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 </div>
 </div>
-<a id="a7b14e0bed78f602472cecde07cbf2025"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b14e0bed78f602472cecde07cbf2025">&#9670;&nbsp;</a></span>doPostWrite()</h2>
+<a id="affab9932d1b385b81fa850ed40c17215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affab9932d1b385b81fa850ed40c17215">&#9670;&nbsp;</a></span>doPostWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -682,14 +683,14 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html">ChimeraTK::AsyncNDRegisterAccessor</a>&lt; UserType, AsyncAccessorManager, AsyncAccessorID &gt;::doPostWrite </td>
           <td>(</td>
-          <td class="paramtype">[[maybe_unused] ] <a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
+          <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&#160;</td>
-          <td class="paramname"><em>versionNumber</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -699,18 +700,24 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00097">97</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write cleanups if necessary. ">postWrite()</a>. </p>
+<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write cleanups if necessary. ">postWrite()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
+<p>No actual communication may be done. Hence, no <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown. </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7c0a6bc5c1779ce47afe7871573ef2a1">ChimeraTK::TransferElement</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00118">118</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_n_d_register_accessor_a7b14e0bed78f602472cecde07cbf2025_cgraph.svg" width="488" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_n_d_register_accessor_affab9932d1b385b81fa850ed40c17215_cgraph.svg" width="488" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -742,12 +749,12 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00092">92</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00113">113</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
-<a id="a8ad4256fca034ffb74dc39c4581bccd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ad4256fca034ffb74dc39c4581bccd0">&#9670;&nbsp;</a></span>doPreWrite()</h2>
+<a id="a3f9c3eb72c4ea939da135a5f88f17a8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f9c3eb72c4ea939da135a5f88f17a8e">&#9670;&nbsp;</a></span>doPreWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -760,14 +767,14 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html">ChimeraTK::AsyncNDRegisterAccessor</a>&lt; UserType, AsyncAccessorManager, AsyncAccessorID &gt;::doPreWrite </td>
           <td>(</td>
-          <td class="paramtype">[[maybe_unused] ] <a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
+          <td class="paramtype"><a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a>&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">[[maybe_unused] ] <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&#160;</td>
-          <td class="paramname"><em>versionNumber</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -777,12 +784,26 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00088">88</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa8dbf971f07658c489d452016244e1a5" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>. </p>
+<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa8dbf971f07658c489d452016244e1a5" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
+<p>No actual communication may be done. Hence, no <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown. </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd">ChimeraTK::TransferElement</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00102">102</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_n_d_register_accessor_a3f9c3eb72c4ea939da135a5f88f17a8e_cgraph.svg" width="482" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -821,12 +842,12 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a948f1bec4d00fce4ef5d5ea8fc35f8d5">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00080">80</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00089">89</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
-<a id="ab594a1c8391560f8782434e60bacf9b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab594a1c8391560f8782434e60bacf9b3">&#9670;&nbsp;</a></span>doWriteTransfer()</h2>
+<a id="a392b8a08069312a051b320b2718f469f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a392b8a08069312a051b320b2718f469f">&#9670;&nbsp;</a></span>doWriteTransfer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -859,7 +880,47 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aae3498d969f1eff074cb2a431a3ad687">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00084">84</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00094">94</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+
+</div>
+</div>
+<a id="a36d09551a35242010a181844a9d90b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36d09551a35242010a181844a9d90b0e">&#9670;&nbsp;</a></span>doWriteTransferDestructively()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAccessorID &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html">ChimeraTK::AsyncNDRegisterAccessor</a>&lt; UserType, AsyncAccessorManager, AsyncAccessorID &gt;::doWriteTransferDestructively </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">ChimeraTK::VersionNumber</a>&#160;</td>
+          <td class="paramname"><em>versionNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementation version of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a04427c0c30fd937a5c85a6bb60120a9e" title="Write the data to the device. ">writeTransferDestructively()</a>. </p>
+<p>This function must be implemented by the backend. For the functional description read the documentation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab472541c0dd3171f8bf34a8c7e4600ff" title="Write the data to the device. ">writeTransfer()</a>.</p>
+<p>Implementation notes:</p><ul>
+<li>Decorators must delegate the call to <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ab472541c0dd3171f8bf34a8c7e4600ff" title="Write the data to the device. ">writeTransfer()</a> of the decorated target.</li>
+<li>Delegations within the same object should go to the "do" version, e.g. to this-&gt;<a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#a392b8a08069312a051b320b2718f469f" title="Implementation version of writeTransfer(). ">doWriteTransfer()</a></li>
+<li>The implementation may destroy the content of the user buffer in the process. This is an optional optimisation, hence there is a default implementation which just calls the normal <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#a392b8a08069312a051b320b2718f469f" title="Implementation version of writeTransfer(). ">doWriteTransfer()</a>. </li>
+</ul>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a98f467545b6682f18cec6b113c5898cc">ChimeraTK::TransferElement</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00098">98</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -894,7 +955,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a36b8f2cad449056d909560e371c78229">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00111">111</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00141">141</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -931,7 +992,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a561932e1a87dcc57cb3525a9980bdf49">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00114">114</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00144">144</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -969,12 +1030,12 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#af92b78c177bc98923a78a0d4faaf9e05">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00118">118</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00148">148</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_n_d_register_accessor_a6695277d3d4e807e41e673d66881ef50_cgraph.svg" width="482" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1011,7 +1072,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a9045dd72e498456e821811ef551b9946">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00104">104</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00134">134</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1045,7 +1106,15 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00103">103</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00131">131</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_n_d_register_accessor_a60a5947dc37e9f39b239b90c63dbcb1e_cgraph.svg" width="488" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -1079,7 +1148,15 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00105">105</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00135">135</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_n_d_register_accessor_a2d5fe470ca421a4a0e27cdddd2ab8127_icgraph.svg" width="488" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -1114,7 +1191,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a791a4902b649e859fbadea20cc90ede2">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00116">116</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00146">146</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1147,12 +1224,12 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 <p>You can only send descructively. </p>
 <p>If you want to keep a copy you have to make once yourself. This is more efficient that having one extra buffer within each <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00056">56</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00057">57</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_async_n_d_register_accessor_a131783090f60dd42fdd93c6ca2e2612d_icgraph.svg" width="488" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1187,7 +1264,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 <p>Pushes the exception to the queue and marks the accessor as inactive, so nothing is pushed until re-activation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00046">46</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00047">47</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1223,7 +1300,40 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a23782060d06fa418950b74f8b10d4ec8">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00107">107</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00137">137</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+
+</div>
+</div>
+<a id="a9634c940baafd933043fd58cfddf63d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9634c940baafd933043fd58cfddf63d1">&#9670;&nbsp;</a></span>setWriteAccessor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAccessorID &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html">ChimeraTK::AsyncNDRegisterAccessor</a>&lt; UserType, AsyncAccessorManager, AsyncAccessorID &gt;::setWriteAccessor </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt;&gt; const &amp;&#160;</td>
+          <td class="paramname"><em>writeAccessor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set an accessor if the register is writeable. </p>
+<p>As the asynchronous mechanism is generic and does not access the hardware, an implementation which can write is added here. </p>
+
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00080">80</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1250,7 +1360,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00122">122</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00152">152</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1276,7 +1386,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00121">121</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00151">151</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1302,7 +1412,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00134">134</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00164">164</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1328,7 +1438,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00126">126</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00156">156</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1354,7 +1464,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00129">129</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00159">159</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1380,7 +1490,33 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00125">125</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00155">155</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
+
+</div>
+</div>
+<a id="a925e87499648e6cb7eddf7058509d52a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925e87499648e6cb7eddf7058509d52a">&#9670;&nbsp;</a></span>_writeAccessor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAccessorID &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt;UserType&gt; &gt; <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html">ChimeraTK::AsyncNDRegisterAccessor</a>&lt; UserType, AsyncAccessorManager, AsyncAccessorID &gt;::_writeAccessor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_async_n_d_register_accessor_8h_source.html#l00166">166</a> of file <a class="el" href="_async_n_d_register_accessor_8h_source.html">AsyncNDRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -1393,7 +1529,7 @@ template&lt;typename UserType , typename AsyncAccessorManager , typename AsyncAc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html">AsyncNDRegisterAccessor</a></li>
-    <li class="footer">Generated on Wed Aug 18 2021 03:53:12 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Aug 19 2021 03:53:16 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
