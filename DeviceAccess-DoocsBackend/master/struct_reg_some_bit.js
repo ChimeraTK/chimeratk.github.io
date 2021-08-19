@@ -1,6 +1,6 @@
 var struct_reg_some_bit =
 [
-    [ "minimumUserType", "struct_reg_some_bit.html#a98411849699a8d6cc198e3f4b25617d6", null ],
+    [ "minimumUserType", "struct_reg_some_bit.html#acadd63236bf9fafb1a1362f51579bfa5", null ],
     [ "generateValue", "struct_reg_some_bit.html#a86489bbb13e4f836447105fc451613ff", null ],
     [ "path", "struct_reg_some_bit.html#ab8e7acd73e8c03729e57dfa2c428e104", null ],
     [ "increment", "struct_reg_some_bit.html#a9257d3c7cf6fb2c6ba5c662aadf875ae", null ],
