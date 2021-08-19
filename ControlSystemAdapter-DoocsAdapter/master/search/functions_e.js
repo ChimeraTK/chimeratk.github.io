@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['savearray',['saveArray',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#a7608f3f454f73488328f2e6f8cdd1e19',1,'ChimeraTK::CSAdapterEqFct']]],
+  ['savearray',['saveArray',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#a4cafc4b8bd0264b955025c3b6d860a4f',1,'ChimeraTK::CSAdapterEqFct']]],
   ['sendtoapplication',['sendToApplication',['../class_chimera_t_k_1_1_doocs_ifff.html#aaaa0cac1df491d46902f3038fb6efcbd',1,'ChimeraTK::DoocsIfff']]],
   ['sendtodevice',['sendToDevice',['../class_chimera_t_k_1_1_doocs_process_array.html#abae2235e5e58a63afb9049b56e79bea9',1,'ChimeraTK::DoocsProcessArray::sendToDevice()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a82a1c3ef4e19443909353485811dff6a',1,'ChimeraTK::DoocsSpectrum::sendToDevice()'],['../class_testable_doocs_spectrum.html#a9eddaf724a081b996ad683e79d176693',1,'TestableDoocsSpectrum::sendToDevice()']]],
   ['set',['set',['../class_chimera_t_k_1_1_doocs_ifff.html#a856371572bcbb46ec010641f75a4ea58',1,'ChimeraTK::DoocsIfff::set()'],['../class_chimera_t_k_1_1_doocs_process_array.html#a14b984d84addffe256f4bf4cfa29f8a0',1,'ChimeraTK::DoocsProcessArray::set()'],['../class_chimera_t_k_1_1_doocs_process_scalar.html#ac9f48a3ee466e86095d17f3ff268d08f',1,'ChimeraTK::DoocsProcessScalar::set()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a06ed6051d5722b690e217d39073ae24f',1,'ChimeraTK::DoocsSpectrum::set()']]],

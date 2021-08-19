@@ -14,5 +14,6 @@ var class_chimera_t_k_1_1_doocs_process_array =
     [ "_macroPulseNumberSource", "class_chimera_t_k_1_1_doocs_process_array.html#a6c9764bf16174cfc00bce3296f32ba51", null ],
     [ "_nDataLossWarnings", "class_chimera_t_k_1_1_doocs_process_array.html#a1c04a2a3138cddb128138789acc6d9b7", null ],
     [ "_processArray", "class_chimera_t_k_1_1_doocs_process_array.html#a4daae8544f6c321267a0d1cfb48ac0e3", null ],
+    [ "modified", "class_chimera_t_k_1_1_doocs_process_array.html#af2e9c0a771392dff4cc03436cb93b96f", null ],
     [ "publishZMQ", "class_chimera_t_k_1_1_doocs_process_array.html#a915bc263a2809baa52ccdf189987f8e0", null ]
 ];
