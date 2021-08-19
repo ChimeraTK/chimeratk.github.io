@@ -3,7 +3,7 @@ var structNetworkModule =
     [ "raw", "structNetworkModule_1_1raw.html", "structNetworkModule_1_1raw" ],
     [ "Status", "structNetworkModule_1_1Status.html", "structNetworkModule_1_1Status" ],
     [ "TriggerGroup", "structNetworkModule_1_1TriggerGroup.html", "structNetworkModule_1_1TriggerGroup" ],
-    [ "NetworkModule", "structNetworkModule.html#adb4efd9c1a2d4f88b3470a01f4634737", null ],
+    [ "NetworkModule", "structNetworkModule.html#ab9b4ee308c03a0495846aadcef861789", null ],
     [ "mainLoop", "structNetworkModule.html#af06fc227b558a13184bd0c3b168d7102", null ],
     [ "read", "structNetworkModule.html#a16f323f8ccfa306d1e0213179b9e0aae", null ],
     [ "terminate", "structNetworkModule.html#a593e66b34e1f3bdc5180aee6ae5c90b8", null ],

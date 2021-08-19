@@ -11,5 +11,5 @@ var searchData=
   ['split_5farguments',['split_arguments',['../sys__stat_8h.html#abce4d45807ae27696c0cfe532ee2ceb3',1,'split_arguments(const std::string &amp;arguments, const std::string &amp;token=&quot;\&quot;):&#160;sys_stat.cc'],['../sys__stat_8cc.html#ab9ae70bcc245ca1c92266bdb7fc2a37f',1,'split_arguments(const std::string &amp;arguments, const std::string &amp;token):&#160;sys_stat.cc']]],
   ['startprocess',['startProcess',['../structProcessHandler.html#a9102d9895d68907414a97d4cd4ed79cc',1,'ProcessHandler']]],
   ['sysinfo',['SysInfo',['../classSysInfo.html#aa7d27a2d73754c6b47d33946e5135a7f',1,'SysInfo']]],
-  ['systeminfomodule',['SystemInfoModule',['../classSystemInfoModule.html#aa67d75fed531224be00132e153f7562c',1,'SystemInfoModule']]]
+  ['systeminfomodule',['SystemInfoModule',['../classSystemInfoModule.html#a38c4299ac096e8a78e878ec45361e117',1,'SystemInfoModule']]]
 ];
