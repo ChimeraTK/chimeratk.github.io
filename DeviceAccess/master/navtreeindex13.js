@@ -1,6 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"struct_f.html":[18,0,36],
 "struct_f.html#a3eb03ed8921a8a364ada9e7dbc174e07":[18,0,36,1],
 "struct_f.html#a7073bd2fb241c42f78d5f34ddb1d9293":[18,0,36,2],
 "struct_f.html#a98c81d1a8ffc123b27ac180f924abb84":[18,0,36,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX13 =
 "struct_reg_variable_as_push_parameter_in_math__x.html#a458fb3a391b982a2a1634cd59fcddae7":[18,0,95,2],
 "struct_reg_variable_as_push_parameter_in_math__x.html#a567b3dffdf914532e1f69e55de537863":[18,0,95,1],
 "struct_reg_variable_as_push_parameter_in_math__x.html#a69d5ec09d0cc562dfa02c45f095970ca":[18,0,95,3],
-"struct_reg_variable_as_push_parameter_in_math__x.html#a75852957e79a5542ecd9c585914fc9de":[18,0,95,0]
+"struct_reg_variable_as_push_parameter_in_math__x.html#a75852957e79a5542ecd9c585914fc9de":[18,0,95,0],
+"struct_reg_variable_as_push_parameter_in_math_base.html":[18,0,96]
 };

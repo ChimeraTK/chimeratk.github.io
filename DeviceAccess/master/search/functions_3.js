@@ -28,6 +28,7 @@ var searchData=
   ['disabletestreadonly',['disableTestReadOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a9d2f678336a0e214241b422b2d4b0d6e',1,'ChimeraTK::TestCapabilities']]],
   ['disabletestwriteneverlosesdata',['disableTestWriteNeverLosesData',['../struct_chimera_t_k_1_1_test_capabilities.html#a9278f52ff908df628f00ea1c13db9358',1,'ChimeraTK::TestCapabilities']]],
   ['disabletestwriteonly',['disableTestWriteOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a4d2be84d6bb78b2ba89478e384f7d30f',1,'ChimeraTK::TestCapabilities']]],
+  ['dispatchinterrupt',['dispatchInterrupt',['../class_chimera_t_k_1_1_numeric_addressed_backend.html#a15e819dc9cd674fd351cd0a5ed57d08c',1,'ChimeraTK::NumericAddressedBackend']]],
   ['dmaintf',['DmaIntf',['../class_chimera_t_k_1_1_dma_intf.html#a2572c3efc6f598a68f589ad01afb57e8',1,'ChimeraTK::DmaIntf::DmaIntf(const std::string &amp;devicePath, size_t channelIdx)'],['../class_chimera_t_k_1_1_dma_intf.html#ab6d794376d4806306a56b121c8bd1f4e',1,'ChimeraTK::DmaIntf::DmaIntf(DmaIntf &amp;&amp;d)']]],
   ['dmapfileparsertestsuite',['DMapFileParserTestSuite',['../class_d_map_file_parser_test_suite.html#a0e28986d4837eca18c86797318d14d41',1,'DMapFileParserTestSuite']]],
   ['dmapfilesparser',['DMapFilesParser',['../class_chimera_t_k_1_1_d_map_files_parser.html#aebfabe8fc97c00b746c8298ba39285c3',1,'ChimeraTK::DMapFilesParser::DMapFilesParser()'],['../class_chimera_t_k_1_1_d_map_files_parser.html#a35eb272f781b2752a2853d30f6bd1759',1,'ChimeraTK::DMapFilesParser::DMapFilesParser(const std::string &amp;dir)']]],

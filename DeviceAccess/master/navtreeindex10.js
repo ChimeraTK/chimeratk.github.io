@@ -1,6 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"examples.html":[20],
 "exception_2include_2_exception_8h.html":[19,0,3,0,0],
 "exception_2include_2_exception_8h_source.html":[19,0,3,0,0],
 "exceptions.html":[6],
@@ -37,8 +36,8 @@ var NAVTREEINDEX10 =
 "fileparsers_2include_2predicates_8h.html":[19,0,4,0,6],
 "fileparsers_2include_2predicates_8h_source.html":[19,0,4,0,6],
 "files.html":[19,0],
-"functions.html":[18,3,0,0],
 "functions.html":[18,3,0],
+"functions.html":[18,3,0,0],
 "functions_0x7e.html":[18,3,0,23],
 "functions_a.html":[18,3,0,1],
 "functions_b.html":[18,3,0,2],
@@ -48,8 +47,8 @@ var NAVTREEINDEX10 =
 "functions_enum.html":[18,3,4],
 "functions_eval.html":[18,3,5],
 "functions_f.html":[18,3,0,6],
-"functions_func.html":[18,3,1],
 "functions_func.html":[18,3,1,0],
+"functions_func.html":[18,3,1],
 "functions_func_0x7e.html":[18,3,1,21],
 "functions_func_b.html":[18,3,1,1],
 "functions_func_c.html":[18,3,1,2],
@@ -87,8 +86,8 @@ var NAVTREEINDEX10 =
 "functions_type.html":[18,3,3],
 "functions_u.html":[18,3,0,19],
 "functions_v.html":[18,3,0,20],
-"functions_vars.html":[18,3,2,0],
 "functions_vars.html":[18,3,2],
+"functions_vars.html":[18,3,2,0],
 "functions_vars_a.html":[18,3,2,1],
 "functions_vars_b.html":[18,3,2,2],
 "functions_vars_c.html":[18,3,2,3],
@@ -111,8 +110,8 @@ var NAVTREEINDEX10 =
 "functions_vars_w.html":[18,3,2,20],
 "functions_w.html":[18,3,0,21],
 "functions_x.html":[18,3,0,22],
-"globals.html":[19,1,0,0],
 "globals.html":[19,1,0],
+"globals.html":[19,1,0,0],
 "globals_b.html":[19,1,0,1],
 "globals_c.html":[19,1,0,2],
 "globals_d.html":[19,1,0,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "mtca4u__compatibility__headers_2_numeric_addressed_backend_8h.html":[19,0,5,35],
 "mtca4u__compatibility__headers_2_numeric_addressed_backend_8h_source.html":[19,0,5,35],
 "mtca4u__compatibility__headers_2_numeric_addressed_backend_muxed_register_accessor_8h.html":[19,0,5,36],
-"mtca4u__compatibility__headers_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html":[19,0,5,36]
+"mtca4u__compatibility__headers_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html":[19,0,5,36],
+"mtca4u__compatibility__headers_2_numeric_addressed_backend_register_accessor_8h.html":[19,0,5,37]
 };

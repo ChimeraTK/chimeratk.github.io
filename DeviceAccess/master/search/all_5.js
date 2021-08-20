@@ -68,6 +68,7 @@ var searchData=
   ['disabletestreadonly',['disableTestReadOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a9d2f678336a0e214241b422b2d4b0d6e',1,'ChimeraTK::TestCapabilities']]],
   ['disabletestwriteneverlosesdata',['disableTestWriteNeverLosesData',['../struct_chimera_t_k_1_1_test_capabilities.html#a9278f52ff908df628f00ea1c13db9358',1,'ChimeraTK::TestCapabilities']]],
   ['disabletestwriteonly',['disableTestWriteOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a4d2be84d6bb78b2ba89478e384f7d30f',1,'ChimeraTK::TestCapabilities']]],
+  ['dispatchinterrupt',['dispatchInterrupt',['../class_chimera_t_k_1_1_numeric_addressed_backend.html#a15e819dc9cd674fd351cd0a5ed57d08c',1,'ChimeraTK::NumericAddressedBackend']]],
   ['dma_5fcmd',['dma_cmd',['../structdevice__ioctrl__dma.html#a5cce7fa7327b8572fba52bdf18d14b0f',1,'device_ioctrl_dma']]],
   ['dma_5fdata_5foffset',['DMA_DATA_OFFSET',['../device__backends_2pcie_2include_2pciedev__io_8h.html#aa293c11b73c1e8a741c9060d8ef1c021',1,'pciedev_io.h']]],
   ['dma_5fdata_5foffset_5fbyte',['DMA_DATA_OFFSET_BYTE',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a9fa9f95b2d69f5b07cb9cb30b1ba9afe',1,'pciedev_io.h']]],

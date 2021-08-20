@@ -1,6 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"test_device_8cpp_source.html":[19,0,7,1,7],
 "test_device_info_map_8cpp.html":[19,0,7,1,8],
 "test_device_info_map_8cpp.html#a19823c5af9fff4070c144dacf022bf94":[19,0,7,1,8,2],
 "test_device_info_map_8cpp_source.html":[19,0,7,1,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX15 =
 "test_pcie_backend_8cpp.html#a19823c5af9fff4070c144dacf022bf94":[19,0,7,1,32,18],
 "test_pcie_backend_8cpp.html#a271c147e9d6c7b61bf537cd2223451a9":[19,0,7,1,32,10],
 "test_pcie_backend_8cpp.html#a30f806c6f8ec8307adf87cc48b00b90a":[19,0,7,1,32,4],
-"test_pcie_backend_8cpp.html#a46c3624450dd339bd4ece5181f8da881":[19,0,7,1,32,5]
+"test_pcie_backend_8cpp.html#a46c3624450dd339bd4ece5181f8da881":[19,0,7,1,32,5],
+"test_pcie_backend_8cpp.html#a666a688be4897906a5a2e1ad2b6aec78":[19,0,7,1,32,8]
 };
