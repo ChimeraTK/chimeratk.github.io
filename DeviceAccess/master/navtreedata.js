@@ -109,10 +109,10 @@ var NAVTREEINDEX =
 "mtca4u__compatibility__headers_2_numeric_addressed_backend_register_accessor_8h_source.html",
 "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin___helper_3_01_user_type_00_01_user_type_01_4.html",
 "struct_f.html#a3eb03ed8921a8a364ada9e7dbc174e07",
-"struct_reg_variable_as_push_parameter_in_math_base.html#a0745b37101ae809c449864a623c59c65",
-"test_device_info_map_8cpp.html",
-"test_pcie_backend_8cpp.html#a6f7e381650a31d9c7cf3a9a0c81a910c",
-"util_2include_2_supported_user_types_8h.html#a7f5acdbb978c1916af3a896bea089a7d"
+"struct_reg_single_word.html#ab39ceb0610ad6bbafebae85db8f0ce7d",
+"test_async_read_8cpp.html#ac0bab11760e2aafd6e5e761b618fe67a",
+"test_multiplexed_data_accesor_8cpp.html#a47d4c68634f9d41b35ed9b7d873bafaa",
+"test_version_number_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

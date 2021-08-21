@@ -23,6 +23,7 @@ var searchData=
   ['muxedarea1',['MuxedArea1',['../struct_muxed_area1.html',1,'']]],
   ['muxedarea2',['MuxedArea2',['../struct_muxed_area2.html',1,'']]],
   ['muxednodma',['MuxedNodma',['../struct_muxed_nodma.html',1,'']]],
+  ['muxednodmaasync',['MuxedNodmaAsync',['../struct_muxed_nodma_async.html',1,'']]],
   ['myarea1',['MyArea1',['../struct_my_area1.html',1,'']]],
   ['myregister1',['MyRegister1',['../struct_my_register1.html',1,'']]],
   ['myregisterinfo',['myRegisterInfo',['../classmy_register_info.html',1,'']]]
