@@ -102,7 +102,6 @@ var searchData=
   ['custom_5fbackends_2edox',['custom_backends.dox',['../custom__backends_8dox.html',1,'']]],
   ['custombackend',['CustomBackend',['../class_custom_backend.html',1,'']]],
   ['custombackend_2ecc',['CustomBackend.cc',['../_custom_backend_8cc.html',1,'']]],
-  ['cxx_5fdemangle_5fsymbol',['cxx_demangle_symbol',['../class_chimera_t_k_1_1_utilities.html#ab090394ff4ace2bb57e67182953917a9',1,'ChimeraTK::Utilities']]],
   ['chimeratk_2ddeviceaccess',['ChimeraTK-DeviceAccess',['../index.html',1,'']]],
   ['lnmbackend',['LNMBackend',['../namespace_chimera_t_k_1_1_l_n_m_backend.html',1,'ChimeraTK']]],
   ['numeric_5faddress',['numeric_address',['../namespace_chimera_t_k_1_1numeric__address.html',1,'ChimeraTK']]],
