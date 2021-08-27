@@ -134,9 +134,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9c628ba2417dd01ef43508a87324e15f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a9c628ba2417dd01ef43508a87324e15f">canMergeRequests</a> () const</td></tr>
 <tr class="memdesc:a9c628ba2417dd01ef43508a87324e15f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the backend supports merging of requests (read or write)  <a href="#a9c628ba2417dd01ef43508a87324e15f">More...</a><br /></td></tr>
 <tr class="separator:a9c628ba2417dd01ef43508a87324e15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb2750bc003ebf549248c5f18f70f5f0"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#aeb2750bc003ebf549248c5f18f70f5f0">minimumTransferAlignment</a> () const</td></tr>
-<tr class="memdesc:aeb2750bc003ebf549248c5f18f70f5f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the supported minimum alignment for any read/write requests.  <a href="#aeb2750bc003ebf549248c5f18f70f5f0">More...</a><br /></td></tr>
-<tr class="separator:aeb2750bc003ebf549248c5f18f70f5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addca12b3b7c60694f6e27b69f44e8afa"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#addca12b3b7c60694f6e27b69f44e8afa">minimumTransferAlignment</a> ([[maybe_unused]] uint64_t bar) const</td></tr>
+<tr class="memdesc:addca12b3b7c60694f6e27b69f44e8afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the supported minimum alignment for any read/write requests.  <a href="#addca12b3b7c60694f6e27b69f44e8afa">More...</a><br /></td></tr>
+<tr class="separator:addca12b3b7c60694f6e27b69f44e8afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88cfce526ebe714e872d10cb15709800"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; const <a class="el" href="class_chimera_t_k_1_1_register_info_map.html">RegisterInfoMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a88cfce526ebe714e872d10cb15709800">getRegisterMap</a> () const</td></tr>
 <tr class="separator:a88cfce526ebe714e872d10cb15709800"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7333d238a0a4552529935881ad0f8c5e"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html">RegisterInfoMap::RegisterInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a7333d238a0a4552529935881ad0f8c5e">getRegisterInfo</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName)</td></tr>
@@ -820,8 +820,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="aeb2750bc003ebf549248c5f18f70f5f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb2750bc003ebf549248c5f18f70f5f0">&#9670;&nbsp;</a></span>minimumTransferAlignment()</h2>
+<a id="addca12b3b7c60694f6e27b69f44e8afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addca12b3b7c60694f6e27b69f44e8afa">&#9670;&nbsp;</a></span>minimumTransferAlignment()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -832,7 +832,8 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="memname">virtual size_t ChimeraTK::NumericAddressedBackend::minimumTransferAlignment </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">[[maybe_unused] ] uint64_t&#160;</td>
+          <td class="paramname"><em>bar</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -844,11 +845,11 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p>Determines the supported minimum alignment for any read/write requests. </p>
-<p>If the backend expects a particular alignment for <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ab0177e32cf5e85277376e853a6db4b09">read()</a>/write() calls it should return a value biggern than 1. The address and sizeInBytes arguments of the <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ab0177e32cf5e85277376e853a6db4b09">read()</a>/write() calls will be always an integer multiple of this number. Any unaligned transfers will be changed to meet these criteria (additional padding data will be thrown away).</p>
+<p>If the backend expects a particular alignment for <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ab0177e32cf5e85277376e853a6db4b09">read()</a>/write() calls it should return a value bigger than 1. The address and sizeInBytes arguments of the <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#ab0177e32cf5e85277376e853a6db4b09">read()</a>/write() calls will be always an integer multiple of this number. Any unaligned transfers will be changed to meet these criteria (additional padding data will be thrown away).</p>
 <p>The default implementation returns 1, which means no special alignment is required.</p>
 <dl class="section return"><dt>Returns</dt><dd>Minimum alignment in bytes </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a0f33801e0652beac08844fc8cdc7dfb2">ChimeraTK::RebotBackend</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a472346bb94b9912dd73105184e097da7">ChimeraTK::RebotBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="device__backends_2include_2_numeric_addressed_backend_8h_source.html#l00061">61</a> of file <a class="el" href="device__backends_2include_2_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -856,7 +857,7 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-18-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_aeb2750bc003ebf549248c5f18f70f5f0_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_addca12b3b7c60694f6e27b69f44e8afa_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -1363,7 +1364,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html">NumericAddressedBackend</a></li>
-    <li class="footer">Generated on Tue Aug 24 2021 03:53:25 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Fri Aug 27 2021 03:53:25 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
