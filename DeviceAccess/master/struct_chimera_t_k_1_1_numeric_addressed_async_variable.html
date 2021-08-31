@@ -106,27 +106,15 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_numeric_address
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3469f9f4eed6373129f56d0d496427a8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable.html#a3469f9f4eed6373129f56d0d496427a8">~NumericAddressedAsyncVariable</a> ()=default</td></tr>
 <tr class="separator:a3469f9f4eed6373129f56d0d496427a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b611a360cf193f4e1b3487d4e633794"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable.html#a2b611a360cf193f4e1b3487d4e633794">activate</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> const &amp;version)=0</td></tr>
-<tr class="memdesc:a2b611a360cf193f4e1b3487d4e633794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate all subscribers and send an initial value.  <a href="#a2b611a360cf193f4e1b3487d4e633794">More...</a><br /></td></tr>
-<tr class="separator:a2b611a360cf193f4e1b3487d4e633794"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a088675da1644282f0caa792efd474bb8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable.html#a088675da1644282f0caa792efd474bb8">trigger</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> const &amp;version)=0</td></tr>
-<tr class="memdesc:a088675da1644282f0caa792efd474bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the synchronous accessor and push the data to all subscribers, using the specified version number.  <a href="#a088675da1644282f0caa792efd474bb8">More...</a><br /></td></tr>
-<tr class="separator:a088675da1644282f0caa792efd474bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a537249c6366f5886d7fef38c222dab08"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable.html#a537249c6366f5886d7fef38c222dab08">unsubscribe</a> ()=0</td></tr>
-<tr class="memdesc:a537249c6366f5886d7fef38c222dab08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribes the first invalid subscriber.  <a href="#a537249c6366f5886d7fef38c222dab08">More...</a><br /></td></tr>
-<tr class="separator:a537249c6366f5886d7fef38c222dab08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36a261b5323c6e1426796eea54ad2563"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable.html#a36a261b5323c6e1426796eea54ad2563">sendException</a> (std::exception_ptr e)=0</td></tr>
-<tr class="memdesc:a36a261b5323c6e1426796eea54ad2563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an exception to all subscribers.  <a href="#a36a261b5323c6e1426796eea54ad2563">More...</a><br /></td></tr>
-<tr class="separator:a36a261b5323c6e1426796eea54ad2563"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ac0746db5f3fe92d06ce06438f86977"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable.html#a0ac0746db5f3fe92d06ce06438f86977">deactivate</a> ()=0</td></tr>
-<tr class="memdesc:a0ac0746db5f3fe92d06ce06438f86977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivate all subscribers without throwing an exception.  <a href="#a0ac0746db5f3fe92d06ce06438f86977">More...</a><br /></td></tr>
-<tr class="separator:a0ac0746db5f3fe92d06ce06438f86977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84d9945354a6fe38e434f93c8ca6f204"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable.html#a84d9945354a6fe38e434f93c8ca6f204">fillSendBuffer</a> (<a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> const &amp;version)=0</td></tr>
+<tr class="memdesc:a84d9945354a6fe38e434f93c8ca6f204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the user buffer from the sync accessor, and replace the version number with the given version.  <a href="#a84d9945354a6fe38e434f93c8ca6f204">More...</a><br /></td></tr>
+<tr class="separator:a84d9945354a6fe38e434f93c8ca6f204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Typeless base class. </p>
 <p>The implementations will have a list of all asynchronous accessors and one synchrounous accessor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00012">12</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00013">13</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3469f9f4eed6373129f56d0d496427a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3469f9f4eed6373129f56d0d496427a8">&#9670;&nbsp;</a></span>~NumericAddressedAsyncVariable()</h2>
@@ -154,8 +142,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2b611a360cf193f4e1b3487d4e633794"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b611a360cf193f4e1b3487d4e633794">&#9670;&nbsp;</a></span>activate()</h2>
+<a id="a84d9945354a6fe38e434f93c8ca6f204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d9945354a6fe38e434f93c8ca6f204">&#9670;&nbsp;</a></span>fillSendBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,7 +152,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void ChimeraTK::NumericAddressedAsyncVariable::activate </td>
+          <td class="memname">virtual void ChimeraTK::NumericAddressedAsyncVariable::fillSendBuffer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> const &amp;&#160;</td>
           <td class="paramname"><em>version</em></td><td>)</td>
@@ -178,170 +166,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Activate all subscribers and send an initial value. </p>
+<p>Fill the user buffer from the sync accessor, and replace the version number with the given version. </p>
 
-<p>Implemented in <a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#a7a08fce0af9a8c0433491b2ca24063c3">ChimeraTK::NumericAddressedAsyncVariableImpl&lt; UserType &gt;</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_numeric_addressed_async_variable_a2b611a360cf193f4e1b3487d4e633794_icgraph.svg" width="562" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a0ac0746db5f3fe92d06ce06438f86977"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ac0746db5f3fe92d06ce06438f86977">&#9670;&nbsp;</a></span>deactivate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void ChimeraTK::NumericAddressedAsyncVariable::deactivate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Deactivate all subscribers without throwing an exception. </p>
-<p>This has to happen when a backend is closed. </p>
-
-<p>Implemented in <a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#ad01fa10c1886e2c64039e19f74d5217b">ChimeraTK::NumericAddressedAsyncVariableImpl&lt; UserType &gt;</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_numeric_addressed_async_variable_a0ac0746db5f3fe92d06ce06438f86977_icgraph.svg" width="562" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a36a261b5323c6e1426796eea54ad2563"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36a261b5323c6e1426796eea54ad2563">&#9670;&nbsp;</a></span>sendException()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void ChimeraTK::NumericAddressedAsyncVariable::sendException </td>
-          <td>(</td>
-          <td class="paramtype">std::exception_ptr&#160;</td>
-          <td class="paramname"><em>e</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Send an exception to all subscribers. </p>
-<p>This automatically de-activates then. </p>
-
-<p>Implemented in <a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#aaad754a5a559f9f8d22fd3c63c7b074f">ChimeraTK::NumericAddressedAsyncVariableImpl&lt; UserType &gt;</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_numeric_addressed_async_variable_a36a261b5323c6e1426796eea54ad2563_icgraph.svg" width="562" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a088675da1644282f0caa792efd474bb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a088675da1644282f0caa792efd474bb8">&#9670;&nbsp;</a></span>trigger()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void ChimeraTK::NumericAddressedAsyncVariable::trigger </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> const &amp;&#160;</td>
-          <td class="paramname"><em>version</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Read the synchronous accessor and push the data to all subscribers, using the specified version number. </p>
-
-<p>Implemented in <a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#a6c876958bf590911890789ade4b017c3">ChimeraTK::NumericAddressedAsyncVariableImpl&lt; UserType &gt;</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_numeric_addressed_async_variable_a088675da1644282f0caa792efd474bb8_icgraph.svg" width="562" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a537249c6366f5886d7fef38c222dab08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a537249c6366f5886d7fef38c222dab08">&#9670;&nbsp;</a></span>unsubscribe()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual size_t ChimeraTK::NumericAddressedAsyncVariable::unsubscribe </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Unsubscribes the first invalid subscriber. </p>
-<p>Returns the number of remaining subscribers </p>
-
-<p>Implemented in <a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#a012f600d95c29994779363f62ad97f08">ChimeraTK::NumericAddressedAsyncVariableImpl&lt; UserType &gt;</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_numeric_addressed_async_variable_a537249c6366f5886d7fef38c222dab08_icgraph.svg" width="562" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p>Implemented in <a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html#a0e84939686bd26ba977767168dc5ad35">ChimeraTK::NumericAddressedAsyncVariableImpl&lt; UserType &gt;</a>.</p>
 
 </div>
 </div>
@@ -354,7 +181,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_numeric_addressed_async_variable.html">NumericAddressedAsyncVariable</a></li>
-    <li class="footer">Generated on Mon Aug 30 2021 03:55:14 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue Aug 31 2021 03:53:28 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

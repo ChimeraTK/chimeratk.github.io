@@ -4,7 +4,7 @@ var hierarchy =
     [ "ChimeraTK::AccessModeFlags", "class_chimera_t_k_1_1_access_mode_flags.html", null ],
     [ "ChimeraTK::RegisterAccessor::AccessorHandler< UserType >", "class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html", null ],
     [ "ChimeraTK::RegisterAccessor::AccessorHandler< int32_t >", "class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html", null ],
-    [ "ChimeraTK::NumericAddressedInterruptDispatcher::AccessorInstanceDescriptor", "struct_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher_1_1_accessor_instance_descriptor.html", null ],
+    [ "ChimeraTK::AccessorInstanceDescriptor", "struct_chimera_t_k_1_1_accessor_instance_descriptor.html", null ],
     [ "ChimeraTK::LNMBackend::AccessorPlugin_Helper< UserType, TargetType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin___helper.html", null ],
     [ "ChimeraTK::LNMBackend::AccessorPlugin_Helper< UserType, UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin___helper_3_01_user_type_00_01_user_type_01_4.html", null ],
     [ "ChimeraTK::LNMBackend::AccessorPluginBase", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html", [
@@ -30,14 +30,19 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::DummyBackend::AddressRange", "struct_chimera_t_k_1_1_dummy_backend_1_1_address_range.html", null ],
     [ "Argument", "struct_argument.html", null ],
+    [ "ChimeraTK::AsyncVariable", "struct_chimera_t_k_1_1_async_variable.html", [
+      [ "ChimeraTK::AsyncVariableImpl< UserType >", "struct_chimera_t_k_1_1_async_variable_impl.html", [
+        [ "ChimeraTK::NumericAddressedAsyncVariableImpl< UserType >", "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html", null ]
+      ] ]
+    ] ],
     [ "ChimeraTK::BackendFactory", "class_chimera_t_k_1_1_backend_factory.html", null ],
     [ "CustomBackend::BackendRegisterer", "struct_custom_backend_1_1_backend_registerer.html", null ],
     [ "ExampleBackend::BackendRegisterer", "class_example_backend_1_1_backend_registerer.html", null ],
     [ "AnotherWorkingBackend::BackendRegisterer", "struct_another_working_backend_1_1_backend_registerer.html", null ],
     [ "WorkingBackend::BackendRegisterer", "struct_working_backend_1_1_backend_registerer.html", null ],
     [ "WrongVersionBackend::BackendRegisterer", "struct_wrong_version_backend_1_1_backend_registerer.html", null ],
-    [ "ChimeraTK::ExceptionDummy::BackendRegisterer", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer.html", null ],
     [ "TestableDummyBackend::BackendRegisterer", "class_testable_dummy_backend_1_1_backend_registerer.html", null ],
+    [ "ChimeraTK::ExceptionDummy::BackendRegisterer", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer.html", null ],
     [ "TestDummy::BackendRegisterer", "class_test_dummy_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::Boolean", "class_chimera_t_k_1_1_boolean.html", null ],
     [ "ChimeraTK::ExceptionDummyPushDecorator< UserType >::Buffer", "struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer.html", null ],
@@ -118,6 +123,12 @@ var hierarchy =
     [ "ChimeraTK::proxies::DummyRegisterSequence< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", null ],
     [ "DummyRegisterTest", "class_dummy_register_test.html", null ],
     [ "enable_shared_from_this", null, [
+      [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
+    ] ],
+    [ "enable_shared_from_this", null, [
+      [ "ChimeraTK::AsyncAccessorManager", "class_chimera_t_k_1_1_async_accessor_manager.html", [
+        [ "ChimeraTK::NumericAddressedInterruptDispatcher", "class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html", null ]
+      ] ],
       [ "ChimeraTK::DeviceBackend", "class_chimera_t_k_1_1_device_backend.html", [
         [ "ChimeraTK::DeviceBackendImpl", "class_chimera_t_k_1_1_device_backend_impl.html", [
           [ "AsyncTestDummy", "class_async_test_dummy.html", null ],
@@ -153,12 +164,11 @@ var hierarchy =
           [ "ExampleBackend", "class_example_backend.html", null ]
         ] ]
       ] ],
-      [ "ChimeraTK::NumericAddressedInterruptDispatcher", "class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html", null ],
       [ "ChimeraTK::TransferElement", "class_chimera_t_k_1_1_transfer_element.html", [
         [ "ChimeraTK::NDRegisterAccessor< UserType >", "class_chimera_t_k_1_1_n_d_register_accessor.html", [
           [ "Accessor< UserType >", "class_accessor.html", null ],
           [ "AsyncTestDummy::Accessor< UserType >", "class_async_test_dummy_1_1_accessor.html", null ],
-          [ "ChimeraTK::AsyncNDRegisterAccessor< UserType, AsyncAccessorManager, AsyncAccessorID >", "class_chimera_t_k_1_1_async_n_d_register_accessor.html", null ],
+          [ "ChimeraTK::AsyncNDRegisterAccessor< UserType >", "class_chimera_t_k_1_1_async_n_d_register_accessor.html", null ],
           [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< UserType, TargetUserType >", null, [
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::FixedPointConvertingDecorator< UserType, TargetUserType >", "class_chimera_t_k_1_1_fixed_point_converting_decorator.html", null ]
@@ -210,9 +220,6 @@ var hierarchy =
           ] ]
         ] ]
       ] ]
-    ] ],
-    [ "enable_shared_from_this", null, [
-      [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
     ] ],
     [ "ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html", null ],
     [ "ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html", null ],
@@ -627,8 +634,8 @@ var hierarchy =
     [ "ChimeraTK::Utilities", "class_chimera_t_k_1_1_utilities.html", null ],
     [ "ChimeraTK::LNMBackendRegisterInfo::ValueTable< T >", "struct_chimera_t_k_1_1_l_n_m_backend_register_info_1_1_value_table.html", null ],
     [ "ChimeraTK::LNMBackendRegisterInfo::ValueTable< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_register_info_1_1_value_table.html", null ],
-    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
+    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
     [ "ChimeraTK::VersionNumber", "class_chimera_t_k_1_1_version_number.html", null ],

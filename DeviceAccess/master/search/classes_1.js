@@ -4,7 +4,7 @@ var searchData=
   ['accessor',['Accessor',['../class_async_test_dummy_1_1_accessor.html',1,'AsyncTestDummy::Accessor&lt; UserType &gt;'],['../class_accessor.html',1,'Accessor&lt; UserType &gt;']]],
   ['accessorhandler',['AccessorHandler',['../class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html',1,'ChimeraTK::RegisterAccessor']]],
   ['accessorhandler_3c_20int32_5ft_20_3e',['AccessorHandler&lt; int32_t &gt;',['../class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html',1,'ChimeraTK::RegisterAccessor']]],
-  ['accessorinstancedescriptor',['AccessorInstanceDescriptor',['../struct_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher_1_1_accessor_instance_descriptor.html',1,'ChimeraTK::NumericAddressedInterruptDispatcher']]],
+  ['accessorinstancedescriptor',['AccessorInstanceDescriptor',['../struct_chimera_t_k_1_1_accessor_instance_descriptor.html',1,'ChimeraTK']]],
   ['accessorplugin',['AccessorPlugin',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html',1,'ChimeraTK::LNMBackend']]],
   ['accessorplugin_3c_20forcepollingreadplugin_20_3e',['AccessorPlugin&lt; ForcePollingReadPlugin &gt;',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html',1,'ChimeraTK::LNMBackend']]],
   ['accessorplugin_3c_20forcereadonlyplugin_20_3e',['AccessorPlugin&lt; ForceReadOnlyPlugin &gt;',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html',1,'ChimeraTK::LNMBackend']]],
@@ -19,6 +19,9 @@ var searchData=
   ['anotherworkingbackend',['AnotherWorkingBackend',['../struct_another_working_backend.html',1,'']]],
   ['areatype',['AreaType',['../struct_area_type.html',1,'']]],
   ['argument',['Argument',['../struct_argument.html',1,'']]],
+  ['asyncaccessormanager',['AsyncAccessorManager',['../class_chimera_t_k_1_1_async_accessor_manager.html',1,'ChimeraTK']]],
   ['asyncndregisteraccessor',['AsyncNDRegisterAccessor',['../class_chimera_t_k_1_1_async_n_d_register_accessor.html',1,'ChimeraTK']]],
-  ['asynctestdummy',['AsyncTestDummy',['../class_async_test_dummy.html',1,'']]]
+  ['asynctestdummy',['AsyncTestDummy',['../class_async_test_dummy.html',1,'']]],
+  ['asyncvariable',['AsyncVariable',['../struct_chimera_t_k_1_1_async_variable.html',1,'ChimeraTK']]],
+  ['asyncvariableimpl',['AsyncVariableImpl',['../struct_chimera_t_k_1_1_async_variable_impl.html',1,'ChimeraTK']]]
 ];

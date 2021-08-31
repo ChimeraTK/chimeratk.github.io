@@ -2,8 +2,10 @@ var searchData=
 [
   ['_7eaccessor',['~Accessor',['../class_async_test_dummy_1_1_accessor.html#a72607329bf1158ab82d2121a10d5fefa',1,'AsyncTestDummy::Accessor::~Accessor()'],['../class_accessor.html#a4e93f9c774ad1cfe135634d964be511c',1,'Accessor::~Accessor()']]],
   ['_7eaccessorpluginbase',['~AccessorPluginBase',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#ab5e5987f6922ce650f6b0290a28e22ad',1,'ChimeraTK::LNMBackend::AccessorPluginBase']]],
-  ['_7easyncndregisteraccessor',['~AsyncNDRegisterAccessor',['../class_chimera_t_k_1_1_async_n_d_register_accessor.html#a5ad3111bcfa7032bff2cd1980f9c4374',1,'ChimeraTK::AsyncNDRegisterAccessor']]],
+  ['_7easyncaccessormanager',['~AsyncAccessorManager',['../class_chimera_t_k_1_1_async_accessor_manager.html#aa038d1d4774c7b16a6106b3c07dbd07f',1,'ChimeraTK::AsyncAccessorManager']]],
+  ['_7easyncndregisteraccessor',['~AsyncNDRegisterAccessor',['../class_chimera_t_k_1_1_async_n_d_register_accessor.html#a4d4bbd81e7533298fca2cd3e5e3e8fe5',1,'ChimeraTK::AsyncNDRegisterAccessor']]],
   ['_7easynctestdummy',['~AsyncTestDummy',['../class_async_test_dummy.html#acf4bb8e5e6f12d7898ac2e643f1c103e',1,'AsyncTestDummy']]],
+  ['_7easyncvariable',['~AsyncVariable',['../struct_chimera_t_k_1_1_async_variable.html#ab521f2039f57c12b3f8801075521bfe4',1,'ChimeraTK::AsyncVariable']]],
   ['_7ectrlintf',['~CtrlIntf',['../class_chimera_t_k_1_1_ctrl_intf.html#a34d369c100ebbfbb4ad3fb552577b4f3',1,'ChimeraTK::CtrlIntf']]],
   ['_7edecoratortestaccessor',['~DecoratorTestAccessor',['../class_decorator_test_accessor.html#a0048b6b13c2f5af6a8f65318c13ed8d5',1,'DecoratorTestAccessor']]],
   ['_7edevice',['~Device',['../class_chimera_t_k_1_1_device.html#aac982d8d84a51a436c4f64dc3d024f2f',1,'ChimeraTK::Device']]],
