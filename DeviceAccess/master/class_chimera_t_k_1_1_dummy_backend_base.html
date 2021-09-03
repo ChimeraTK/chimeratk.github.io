@@ -189,9 +189,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ad1098fd2df0455e1fcfb6625dd22b99a inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55ad13a5ab2754923d62ad753657116e inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a55ad13a5ab2754923d62ad753657116e">barIndexValid</a> (uint64_t bar)</td></tr>
 <tr class="separator:a55ad13a5ab2754923d62ad753657116e inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c0c6390d697ba054d377d2f96082dbc inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a6c0c6390d697ba054d377d2f96082dbc">readDeviceInfo</a> ()=0</td></tr>
-<tr class="memdesc:a6c0c6390d697ba054d377d2f96082dbc inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a device information string containing hardware details like the firmware version number or the slot number used by the board.  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a6c0c6390d697ba054d377d2f96082dbc">More...</a><br /></td></tr>
-<tr class="separator:a6c0c6390d697ba054d377d2f96082dbc inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c628ba2417dd01ef43508a87324e15f inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a9c628ba2417dd01ef43508a87324e15f">canMergeRequests</a> () const</td></tr>
 <tr class="memdesc:a9c628ba2417dd01ef43508a87324e15f inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the backend supports merging of requests (read or write)  <a href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a9c628ba2417dd01ef43508a87324e15f">More...</a><br /></td></tr>
 <tr class="separator:a9c628ba2417dd01ef43508a87324e15f inherit pub_methods_class_chimera_t_k_1_1_numeric_addressed_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,6 +241,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a85a134106068b02a89cbfa9a4559ccfc inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3feea5c1b2cdfbafa6aec22c86dbe6dd inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a3feea5c1b2cdfbafa6aec22c86dbe6dd">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a> (getRegisterAccessor_impl, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; T &gt;&gt;(const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;, size_t, size_t, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>))</td></tr>
 <tr class="separator:a3feea5c1b2cdfbafa6aec22c86dbe6dd inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae27b29c1570a6f749efdb0dfe4f2972d inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#ae27b29c1570a6f749efdb0dfe4f2972d">readDeviceInfo</a> ()=0</td></tr>
+<tr class="memdesc:ae27b29c1570a6f749efdb0dfe4f2972d inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a device information string containing hardware details like the firmware version number or the slot number used by the board.  <a href="class_chimera_t_k_1_1_device_backend.html#ae27b29c1570a6f749efdb0dfe4f2972d">More...</a><br /></td></tr>
+<tr class="separator:ae27b29c1570a6f749efdb0dfe4f2972d inherit pub_methods_class_chimera_t_k_1_1_device_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename DerivedBackendType&gt;<br />
@@ -459,7 +459,7 @@ template&lt;typename DerivedBackendType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_dummy_backend_base.html">DummyBackendBase</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 03:53:28 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Fri Sep 3 2021 03:53:22 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

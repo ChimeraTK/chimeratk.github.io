@@ -16,7 +16,6 @@ var class_chimera_t_k_1_1_numeric_addressed_backend =
     [ "minimumTransferAlignment", "class_chimera_t_k_1_1_numeric_addressed_backend.html#addca12b3b7c60694f6e27b69f44e8afa", null ],
     [ "read", "class_chimera_t_k_1_1_numeric_addressed_backend.html#ab0177e32cf5e85277376e853a6db4b09", null ],
     [ "read", "class_chimera_t_k_1_1_numeric_addressed_backend.html#afc3c29e05410f66513e88cecab73ac53", null ],
-    [ "readDeviceInfo", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a6c0c6390d697ba054d377d2f96082dbc", null ],
     [ "setException", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a424dfc7d5ba776349f48f43a5e57ab17", null ],
     [ "startInterruptHandlingThread", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a4fdccd9dbff15fc0338cd30e909092d0", null ],
     [ "write", "class_chimera_t_k_1_1_numeric_addressed_backend.html#a405bb3b3d03602f053d7f4332d784da7", null ],

@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"struct_chimera_t_k_1_1_exception_dummy_poll_decorator.html#adfa9cea66361da5cce250647b8397c9c":[18,0,1,40,2],
 "struct_chimera_t_k_1_1_exception_dummy_poll_decorator.html#af523bab3b7c54e38d16dfc2a69d6e366":[18,0,1,40,1],
 "struct_chimera_t_k_1_1_exception_dummy_poll_decorator_base.html":[18,0,1,41],
 "struct_chimera_t_k_1_1_exception_dummy_poll_decorator_base.html#a55afd362f21e0ee1fc0ba09fd9ce22a8":[18,0,1,41,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX12 =
 "struct_counting_decorator.html#a86505de3b2c8edc75e644b1b4bbee0c7":[18,0,18,0],
 "struct_counting_decorator.html#a8c836afa2a2ab7d09d8bc0047c8a0bff":[18,0,18,16],
 "struct_counting_decorator.html#a99e23eba88a7a57d80997edac7adda81":[18,0,18,7],
-"struct_counting_decorator.html#a9f933e35370a945419faef18478da638":[18,0,18,11]
+"struct_counting_decorator.html#a9f933e35370a945419faef18478da638":[18,0,18,11],
+"struct_counting_decorator.html#aa26f3382bdb5c9a4852c5dd1010f730d":[18,0,18,19]
 };
