@@ -30,6 +30,8 @@ var searchData=
   ['clearowner',['clearOwner',['../class_chimera_t_k_1_1_variable_network_node.html#a151c28c8c8a95953419919aee3f180d2',1,'ChimeraTK::VariableNetworkNode']]],
   ['close',['close',['../class_timer_dummy.html#aa27cc0e7f13b6e099b1ba5250cec8539',1,'TimerDummy']]],
   ['completedescription',['completeDescription',['../class_chimera_t_k_1_1_inversion_of_control_accessor.html#aa20de44a7450523383b1ff08715f8d8a',1,'ChimeraTK::InversionOfControlAccessor']]],
+  ['conceptual_20overview',['Conceptual overview',['../conceptual_overview.html',1,'index']]],
+  ['conceptualoverview_2edox',['conceptualOverview.dox',['../conceptual_overview_8dox.html',1,'']]],
   ['config',['config',['../struct_example_app.html#ac27615ec57647b865dc7e34864e68076',1,'ExampleApp::config()'],['../struct_server.html#a11edddb6a72e6e1c5541413fdf733d57',1,'Server::config()'],['../struct_test_application.html#ad9bb8d863d3af22510b99f528863e103',1,'TestApplication::config()'],['../struct_test_application_two_configs.html#a935b5f4fd8abe9d4768cc863d2a5c91e',1,'TestApplicationTwoConfigs::config()'],['../struct_test_application_with_device.html#a63cbf6b1a9638bce2c1d5beb1efefd48',1,'TestApplicationWithDevice::config()']]],
   ['config2',['config2',['../struct_test_application_two_configs.html#a8ca63b645b4d61db5191b5f29eb0b702',1,'TestApplicationTwoConfigs']]],
   ['configparser',['ConfigParser',['../class_chimera_t_k_1_1_config_parser.html',1,'ChimeraTK::ConfigParser'],['../class_chimera_t_k_1_1_config_parser.html#a84aab1b30addb608393e70acde7902ed',1,'ChimeraTK::ConfigParser::ConfigParser()']]],

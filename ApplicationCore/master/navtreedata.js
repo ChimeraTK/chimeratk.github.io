@@ -1,8 +1,27 @@
 var NAVTREE =
 [
   [ "ChimeraTK-ApplicationCore", "index.html", [
+    [ "Conceptual overview", "conceptual_overview.html", [
+      [ "Introduction", "conceptual_overview.html#Introduction", null ],
+      [ "Application module", "conceptual_overview.html#conceptualOverview_ApplicationModule", null ],
+      [ "Process variables and accessors", "conceptual_overview.html#conceptualOverview_ProcessVariable", [
+        [ "Introduction", "conceptual_overview.html#conceptualOverview_ProcessVariable_intro", null ],
+        [ "Push and poll transfer modes", "conceptual_overview.html#conceptualOverview_ProcessVariable_accessMode", null ],
+        [ "Name and hierarchies", "conceptual_overview.html#conceptualOverview_ProcessVariable_hierarchy", null ],
+        [ "Variable networks", "conceptual_overview.html#conceptualOverview_ProcessVariable_network", null ],
+        [ "Type and meta information", "conceptual_overview.html#conceptualOverview_ProcessVariable_metainfo", null ]
+      ] ],
+      [ "Variable groups", "conceptual_overview.html#conceptualOverview_VariableGroup", null ],
+      [ "Module groups", "conceptual_overview.html#conceptualOverview_ModuleGroup", null ],
+      [ "Device modules", "conceptual_overview.html#conceptualOverview_DeviceModule", [
+        [ "Triggers", "conceptual_overview.html#conceptualOverview_DeviceModule_trigger", null ]
+      ] ],
+      [ "Control system module", "conceptual_overview.html#conceptualOverview_ControlSystemModule", null ],
+      [ "The Application", "conceptual_overview.html#conceptualOverview_Application", null ],
+      [ "Process variable connections", "conceptual_overview.html#conceptualOverview_Connections", null ],
+      [ "Fanouts", "conceptual_overview.html#conceptualOverview_FanOuts", null ]
+    ] ],
     [ "Exception Handling", "exception_handling.html", [
-      [ "Introduction", "exception_handling.html#Introduction", null ],
       [ "DataValidity", "exception_handling.html#DataValidity", null ]
     ] ],
     [ "Logging module and Logger", "loggingdoc.html", [
@@ -106,15 +125,15 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#a0bcb02caefb83338f3ad8def4c5f0af7",
 "class_chimera_t_k_1_1_test_facility.html#aa27fd819018ba8a7e6d9f8727c0ab92c",
 "classlogging_1_1_logging_module.html#a00a5432ac851dadb47f5947a319bb083",
-"struct_a_a.html#abd096b4a252153bed7be089d9d736576",
-"struct_chimera_t_k_1_1_multiplier.html#a296ca34e58d7bc03c91cc1afc116055f",
-"struct_constant_module.html#a601d7c044ecf50d9e2777378848083d6",
-"struct_module3.html#aaa149334bb6c2ea9f37616f37bebd195",
-"struct_test6__a2___initial_value_eception_dummy.html#a2c3c956c7e7247bdf85cea02af1b010f",
-"struct_test_application2.html#a35b9580e32d0b949f9e86b5c53ca9d50",
-"struct_test_module.html#a4d8abe37869248d75f70872ddc94bffd",
-"structfixture__with__poll__and__push__input.html#a6d5bcfdd2246605e2aceec7b1314cce9",
-"test_history_8cc.html#a0aefabba9665db1b5f67a40755db73e9"
+"spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule_comments",
+"struct_chimera_t_k_1_1_limit_value_module_base.html#af6ed74eda0fae416bf97f4a0ab06c07e",
+"struct_circular_app_test_fixcture.html#ae80652056be8528acb47ef72eedb529c",
+"struct_module1.html#a065bc98c1f583a25dd39f8ef19d36a76",
+"struct_test6__a1___initial_value_eception_dummy.html#a421ce23b949994aae723a7a5f013b68f",
+"struct_test_application1.html#ad350a8194a484a244300df9cd7e0d8f9",
+"struct_test_module.html#a286c2b8890effd7dc8d24c862e3a0060",
+"struct_writer_module.html#ae1c4cd188afa0cc13d00ff42e8e459e0",
+"test_hierarchy_modifying_group_8cc.html#a5791d84b4c08af7cdc5e9abc9d42a10b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
