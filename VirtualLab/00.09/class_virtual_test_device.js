@@ -1,7 +1,7 @@
 var class_virtual_test_device =
 [
     [ "timers_", "class_virtual_test_device_1_1timers__.html", "class_virtual_test_device_1_1timers__" ],
-    [ "close", "class_virtual_test_device.html#a4d4fe7e9b40b4406bb21753d232cff67", null ],
+    [ "closeImpl", "class_virtual_test_device.html#aad55d1e74916a3e4e59de5d1dfd99016", null ],
     [ "CONNECT_REGISTER_EVENT", "class_virtual_test_device.html#a1ecd77216dd123e0bc4de07ad0289f42", null ],
     [ "CONNECT_REGISTER_EVENT", "class_virtual_test_device.html#a73ba338c0bc81cee8103baaf2021ddf1", null ],
     [ "CONNECT_REGISTER_EVENT", "class_virtual_test_device.html#ad7f59ec602b03868656ed6b6d2a6f437", null ],
@@ -44,7 +44,7 @@ var class_virtual_test_device =
     [ "DECLARE_TIMER", "class_virtual_test_device.html#a708c28a1686c3f21a9f8889f47bcc4e9", null ],
     [ "DECLARE_TIMER_GROUP", "class_virtual_test_device.html#a4a2f27a8bf0469dca908a3ac4f0e5052", null ],
     [ "DECLARE_TIMER_GROUP", "class_virtual_test_device.html#adae7a1a3f7864ba93286bb8d2987485a", null ],
-    [ "open", "class_virtual_test_device.html#a1f175f743e88d1b37709850b2740d40e", null ],
+    [ "open", "class_virtual_test_device.html#abf94b0f6d8d5ef40766cb2d95f1c4e53", null ],
     [ "set", "class_virtual_test_device.html#a6b5e2a029c0bb7d2822378979ef562fa", null ],
     [ "set", "class_virtual_test_device.html#a8b3ff619611753317753d2f526269e76", null ],
     [ "set", "class_virtual_test_device.html#a8b3ff619611753317753d2f526269e76", null ],

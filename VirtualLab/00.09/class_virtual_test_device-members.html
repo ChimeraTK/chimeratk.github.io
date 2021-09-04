@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mtca4u-VirtualLab
-   &#160;<span id="projectnumber">00.09.00</span>
+   &#160;<span id="projectnumber">00.09.01</span>
    </div>
   </td>
  </tr>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('class_virtual_test_device.html','');})
 <p>This is the complete list of members for <a class="el" href="class_virtual_test_device.html">VirtualTestDevice</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_virtual_test_device.html#a17e2b141f5d1a49c55196353ade73ecf">bigPlain</a></td><td class="entry"><a class="el" href="class_virtual_test_device.html">VirtualTestDevice</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_virtual_test_device.html#a4d4fe7e9b40b4406bb21753d232cff67">close</a>()</td><td class="entry"><a class="el" href="class_virtual_test_device.html">VirtualTestDevice</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_virtual_test_device.html#aad55d1e74916a3e4e59de5d1dfd99016">closeImpl</a>() override</td><td class="entry"><a class="el" href="class_virtual_test_device.html">VirtualTestDevice</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_virtual_test_device.html#a1ecd77216dd123e0bc4de07ad0289f42">CONNECT_REGISTER_EVENT</a>(onRead, someRegister)</td><td class="entry"><a class="el" href="class_virtual_test_device.html">VirtualTestDevice</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_virtual_test_device.html#a73ba338c0bc81cee8103baaf2021ddf1">CONNECT_REGISTER_EVENT</a>(onWrite, someRegister)</td><td class="entry"><a class="el" href="class_virtual_test_device.html">VirtualTestDevice</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_virtual_test_device.html#ad7f59ec602b03868656ed6b6d2a6f437">CONNECT_REGISTER_EVENT</a>(onWriteMuxed, someMuxedRegister)</td><td class="entry"><a class="el" href="class_virtual_test_device.html">VirtualTestDevice</a></td><td class="entry"></td></tr>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('class_virtual_test_device.html','');})
   <tr><td class="entry"><a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#ac26bfb19f95ae4c24907ea77cd46048f">lastWrittenData</a></td><td class="entry"><a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html">ChimeraTK::VirtualLab::VirtualLabBackend&lt; VirtualTestDevice &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#aa61fc8b7799b3785af33d390ea912a2d">lastWrittenSize</a></td><td class="entry"><a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html">ChimeraTK::VirtualLab::VirtualLabBackend&lt; VirtualTestDevice &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_virtual_test_device.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</td><td class="entry"><a class="el" href="class_virtual_test_device.html">VirtualTestDevice</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_virtual_test_device.html#a1f175f743e88d1b37709850b2740d40e">open</a>()</td><td class="entry"><a class="el" href="class_virtual_test_device.html">VirtualTestDevice</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_virtual_test_device.html#abf94b0f6d8d5ef40766cb2d95f1c4e53">open</a>() override</td><td class="entry"><a class="el" href="class_virtual_test_device.html">VirtualTestDevice</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html#afd37522964e5cd3561687ee27d61eaa6">read</a>(uint64_t bar, uint64_t address, int32_t *data, size_t sizeInBytes) override</td><td class="entry"><a class="el" href="class_chimera_t_k_1_1_virtual_lab_1_1_virtual_lab_backend.html">ChimeraTK::VirtualLab::VirtualLabBackend&lt; VirtualTestDevice &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_virtual_test_device.html#a6e50c66468c970f279a827a833b8f11d">readCount</a></td><td class="entry"><a class="el" href="class_virtual_test_device.html">VirtualTestDevice</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_virtual_test_device.html#a9cf8151b7de86bc74ebf49f0d19df206">readCount</a></td><td class="entry"><a class="el" href="class_virtual_test_device.html">VirtualTestDevice</a></td><td class="entry"></td></tr>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('class_virtual_test_device.html','');})
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 17 2021 03:55:04 for mtca4u-VirtualLab by
+    <li class="footer">Generated on Sat Sep 4 2021 03:54:58 for mtca4u-VirtualLab by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

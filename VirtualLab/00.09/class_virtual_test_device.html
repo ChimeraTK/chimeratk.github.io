@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">mtca4u-VirtualLab
-   &#160;<span id="projectnumber">00.09.00</span>
+   &#160;<span id="projectnumber">00.09.01</span>
    </div>
   </td>
  </tr>
@@ -144,10 +144,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa9a4702ee976c474146fd5de4d6439e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9a80e79d407a837452bfe2d4958b2a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_virtual_test_device.html#af9a80e79d407a837452bfe2d4958b2a0">CONSTRUCTOR</a> (<a class="el" href="class_virtual_test_device.html">VirtualTestDevice</a>, <a class="el" href="class_virtual_test_device.html#a83e2af16759798e42393bdafba72fe2d">someCounter</a>(0), <a class="el" href="class_virtual_test_device.html#a6e50c66468c970f279a827a833b8f11d">readCount</a>(0), <a class="el" href="class_virtual_test_device.html#ad5c7fccbd902faf4907af55ffa754c26">writeCount</a>(0), <a class="el" href="class_virtual_test_device.html#ae56324fb823559362c20f11aa625ea23">writeMuxedCount</a>(0), <a class="el" href="class_virtual_test_device.html#a9fc0cebeb51f8a43e7623a1059bc5709">write42Count</a>(0), <a class="el" href="class_virtual_test_device.html#a01ad5d32ea3c146e7410ada84b4826a3">readWithFlagCount</a>(0), someRegister(this, &quot;APP0&quot;, &quot;SOME_REGISTER&quot;), someMuxedRegister(this, &quot;APP0&quot;, &quot;DAQ0_ADCA&quot;), myTimer(this), mySecondTimer(this), timers__(this), <a class="el" href="class_virtual_test_device.html#adb03acc1a91c8c072145e44420293e0d">timers</a>(this), <a class="el" href="class_virtual_test_device.html#a5dc5e4c3dc8c1fc3445ff8a99a51ea6f">someFlag</a>(false), <a class="el" href="class_virtual_test_device.html#a3305286c92da207f69f0b77e5b3b893c">subCounter</a>(0)) <a class="el" href="_virtual_lab_backend_8h.html#adfdf7e53c4ae944c0cabb976b95e1ce1">INIT_SUB_STATE_MACHINE</a>(subMachine)</td></tr>
 <tr class="separator:af9a80e79d407a837452bfe2d4958b2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f175f743e88d1b37709850b2740d40e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_virtual_lab_backend_8h.html#a2aeeec92fddba06ad6654c09bda37eca">END_CONSTRUCTOR</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_virtual_test_device.html#a1f175f743e88d1b37709850b2740d40e">open</a> ()</td></tr>
-<tr class="separator:a1f175f743e88d1b37709850b2740d40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d4fe7e9b40b4406bb21753d232cff67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_virtual_test_device.html#a4d4fe7e9b40b4406bb21753d232cff67">close</a> ()</td></tr>
-<tr class="separator:a4d4fe7e9b40b4406bb21753d232cff67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf94b0f6d8d5ef40766cb2d95f1c4e53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_virtual_lab_backend_8h.html#a2aeeec92fddba06ad6654c09bda37eca">END_CONSTRUCTOR</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_virtual_test_device.html#abf94b0f6d8d5ef40766cb2d95f1c4e53">open</a> () override</td></tr>
+<tr class="separator:abf94b0f6d8d5ef40766cb2d95f1c4e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad55d1e74916a3e4e59de5d1dfd99016"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_virtual_test_device.html#aad55d1e74916a3e4e59de5d1dfd99016">closeImpl</a> () override</td></tr>
+<tr class="separator:aad55d1e74916a3e4e59de5d1dfd99016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c9f53ddefa881f1eef5185d06cffbe1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_virtual_test_device.html#a5c9f53ddefa881f1eef5185d06cffbe1">DECLARE_STATE</a> (DevClosed)</td></tr>
 <tr class="memdesc:a5c9f53ddefa881f1eef5185d06cffbe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">states  <a href="#a5c9f53ddefa881f1eef5185d06cffbe1">More...</a><br /></td></tr>
 <tr class="separator:a5c9f53ddefa881f1eef5185d06cffbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -337,8 +337,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="performance__test_8cpp_source.html#l00020">20</a> of file <a class="el" href="performance__test_8cpp_source.html">performance_test.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4d4fe7e9b40b4406bb21753d232cff67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d4fe7e9b40b4406bb21753d232cff67">&#9670;&nbsp;</a></span>close()</h2>
+<a id="aad55d1e74916a3e4e59de5d1dfd99016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad55d1e74916a3e4e59de5d1dfd99016">&#9670;&nbsp;</a></span>closeImpl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,7 +347,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void VirtualTestDevice::close </td>
+          <td class="memname">void VirtualTestDevice::closeImpl </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -355,7 +355,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1458,8 +1458,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a1f175f743e88d1b37709850b2740d40e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f175f743e88d1b37709850b2740d40e">&#9670;&nbsp;</a></span>open()</h2>
+<a id="abf94b0f6d8d5ef40766cb2d95f1c4e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf94b0f6d8d5ef40766cb2d95f1c4e53">&#9670;&nbsp;</a></span>open()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1468,7 +1468,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="_virtual_lab_backend_8h.html#a2aeeec92fddba06ad6654c09bda37eca">END_CONSTRUCTOR</a> void VirtualTestDevice::open </td>
+          <td class="memname"><a class="el" href="_virtual_lab_backend_8h.html#a2aeeec92fddba06ad6654c09bda37eca">END_CONSTRUCTOR</a> void VirtualTestDevice::open </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1476,7 +1476,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1487,7 +1487,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_virtual_test_device_a1f175f743e88d1b37709850b2740d40e_icgraph.svg" width="624" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_virtual_test_device_abf94b0f6d8d5ef40766cb2d95f1c4e53_icgraph.svg" width="624" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1734,7 +1734,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>read and write actions </p>
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00100">100</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00097">97</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -1752,7 +1752,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>counters for read and write events </p>
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00124">124</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00121">121</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -1788,7 +1788,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>read and write actions </p>
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00105">105</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00102">102</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -1804,7 +1804,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00128">128</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00125">125</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -1822,7 +1822,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>counting action: increase counter and set timer again </p>
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00091">91</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00088">88</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -1840,7 +1840,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>our counter for the counting action </p>
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00096">96</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00093">93</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -1858,7 +1858,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>guard testing if a flag is set or not </p>
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00172">172</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00169">169</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -1874,7 +1874,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00174">174</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00171">171</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -1890,7 +1890,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00181">181</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00178">178</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -1906,7 +1906,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00183">183</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00180">180</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -1922,7 +1922,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00154">154</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00151">151</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -1940,7 +1940,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>read and write actions </p>
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00115">115</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00112">112</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -1956,7 +1956,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00127">127</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00124">124</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -1974,7 +1974,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>read and write actions </p>
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00110">110</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00107">107</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -1990,7 +1990,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00125">125</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00122">122</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -2008,7 +2008,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>read and write actions </p>
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00120">120</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00117">117</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -2024,7 +2024,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00126">126</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_virtual_lab_8cpp_source.html#l00123">123</a> of file <a class="el" href="test_virtual_lab_8cpp_source.html">testVirtualLab.cpp</a>.</p>
 
 </div>
 </div>
@@ -2038,7 +2038,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_virtual_test_device.html">VirtualTestDevice</a></li>
-    <li class="footer">Generated on Thu Jun 17 2021 03:55:04 for mtca4u-VirtualLab by
+    <li class="footer">Generated on Sat Sep 4 2021 03:54:58 for mtca4u-VirtualLab by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
