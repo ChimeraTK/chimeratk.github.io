@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"struct_input_module.html#ac7a77f52444e2c8b20bc5c78a0e46988":[18,0,35,3],
+"struct_module1.html":[18,0,36],
 "struct_module1.html#a065bc98c1f583a25dd39f8ef19d36a76":[18,0,36,0],
 "struct_module1.html#a1f17d004c2c7dfdbb925a2ed9efee80c":[18,0,36,4],
 "struct_module1.html#a4a4b736f788866b8b81c80b12526854e":[18,0,36,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "struct_test6__a1___dummy_application.html#aedbeff0c0833a6de0f3a0c82a345b989":[18,0,68,0],
 "struct_test6__a1___dummy_application.html#aee131b440c5d5d8c031e643725b1ec3e":[18,0,68,4],
 "struct_test6__a1___initial_value_eception_dummy.html":[18,0,69],
-"struct_test6__a1___initial_value_eception_dummy.html#a02ec6f317da6e94b0340f806c7b61acd":[18,0,69,6],
-"struct_test6__a1___initial_value_eception_dummy.html#a27607cff701ffd220b2ce659b6f9ae84":[18,0,69,3],
-"struct_test6__a1___initial_value_eception_dummy.html#a35cd9add70a2785a74dd605578c08976":[18,0,69,4]
+"struct_test6__a1___initial_value_eception_dummy.html#a02ec6f317da6e94b0340f806c7b61acd":[18,0,69,6]
 };

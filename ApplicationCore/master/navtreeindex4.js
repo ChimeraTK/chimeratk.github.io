@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"classlogging_1_1_logger.html#ae53dadb4bf80fcfd041f4ed94b68f443":[18,0,1,0,4],
+"classlogging_1_1_logging_module.html":[18,0,1,1],
 "classlogging_1_1_logging_module.html#a00a5432ac851dadb47f5947a319bb083":[18,0,1,1,9],
 "classlogging_1_1_logging_module.html#a0fb204e6fc80c6c4944760df0b7da320":[18,0,1,1,0],
 "classlogging_1_1_logging_module.html#a3e3fdf144eeafe58073ab4e2eeae5b4d":[18,0,1,1,10],
@@ -175,8 +177,8 @@ var NAVTREEINDEX4 =
 "globals_defs.html":[19,1,4],
 "globals_e.html":[19,1,0,3],
 "globals_f.html":[19,1,0,4],
-"globals_func.html":[19,1,1],
 "globals_func.html":[19,1,1,0],
+"globals_func.html":[19,1,1],
 "globals_func_g.html":[19,1,1,1],
 "globals_func_i.html":[19,1,1,2],
 "globals_func_t.html":[19,1,1,3],
@@ -195,8 +197,8 @@ var NAVTREEINDEX4 =
 "loggingdoc.html#loggingintro":[2,0],
 "namespace_chimera_t_k.html":[17,0,0],
 "namespace_chimera_t_k.html":[18,0,0],
-"namespace_chimera_t_k_1_1history.html":[18,0,0,0],
 "namespace_chimera_t_k_1_1history.html":[17,0,0,0],
+"namespace_chimera_t_k_1_1history.html":[18,0,0,0],
 "namespacelogging.html":[17,0,1],
 "namespacelogging.html":[18,0,1],
 "namespacemembers.html":[17,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation":[5,2],
 "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator":[5,2,1],
 "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_behaviour":[5,2,1,1],
-"spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_comments":[5,2,1,2],
-"spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_structure":[5,2,1,0],
-"spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule":[5,2,2]
+"spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_comments":[5,2,1,2]
 };

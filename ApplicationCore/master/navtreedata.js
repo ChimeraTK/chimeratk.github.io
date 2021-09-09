@@ -124,16 +124,16 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_application.html#a29e6ea03c178fe30ce76a9e7b13c4dce",
 "class_chimera_t_k_1_1_entity_owner.html#a0bcb02caefb83338f3ad8def4c5f0af7",
 "class_chimera_t_k_1_1_test_facility.html#aa27fd819018ba8a7e6d9f8727c0ab92c",
-"classlogging_1_1_logging_module.html#a00a5432ac851dadb47f5947a319bb083",
-"spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule_comments",
-"struct_chimera_t_k_1_1_limit_value_module_base.html#af6ed74eda0fae416bf97f4a0ab06c07e",
-"struct_circular_app_test_fixcture.html#ae80652056be8528acb47ef72eedb529c",
-"struct_module1.html#a065bc98c1f583a25dd39f8ef19d36a76",
-"struct_test6__a1___initial_value_eception_dummy.html#a421ce23b949994aae723a7a5f013b68f",
+"classlogging_1_1_logger.html#ae53dadb4bf80fcfd041f4ed94b68f443",
+"spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_structure",
+"struct_chimera_t_k_1_1_limit_value_module_base.html#a09190a9e8f34ccb82ff1240fe4d8c473",
+"struct_circular_app_test_fixcture.html#abc31c89b6419b16e6e83c969f545a743",
+"struct_input_module.html#ac7a77f52444e2c8b20bc5c78a0e46988",
+"struct_test6__a1___initial_value_eception_dummy.html#a27607cff701ffd220b2ce659b6f9ae84",
 "struct_test_application1.html#ad350a8194a484a244300df9cd7e0d8f9",
-"struct_test_module.html#a286c2b8890effd7dc8d24c862e3a0060",
-"struct_writer_module.html#ae1c4cd188afa0cc13d00ff42e8e459e0",
-"test_hierarchy_modifying_group_8cc.html#a5791d84b4c08af7cdc5e9abc9d42a10b"
+"struct_test_module.html#a2370c2310c6742f51ee94779a6269d2d",
+"struct_writer_module.html#a6ef19a1972a71b9492b2e481b140d8f9",
+"test_hierarchy_modifying_group_8cc.html#a47eb60e308ff9ccc30ec0ca767cb5bcd"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
