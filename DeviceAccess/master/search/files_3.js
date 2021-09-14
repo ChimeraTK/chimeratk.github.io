@@ -4,6 +4,7 @@ var searchData=
   ['dataconsistencygroup_2edox',['dataConsistencyGroup.dox',['../data_consistency_group_8dox.html',1,'']]],
   ['dataconsistencygroup_2eh',['DataConsistencyGroup.h',['../_data_consistency_group_8h.html',1,'']]],
   ['datamodifierplugin_2eh',['DataModifierPlugin.h',['../_data_modifier_plugin_8h.html',1,'']]],
+  ['design_5fasyncndregisteracessor_5fand_5fnumericaddressedbackend_2edox',['design_AsyncNDRegisterAcessor_and_NumericAddressedBackend.dox',['../design___async_n_d_register_acessor__and___numeric_addressed_backend_8dox.html',1,'']]],
   ['device_2ecc',['Device.cc',['../_device_8cc.html',1,'']]],
   ['device_2eh',['Device.h',['../device_2include_2_device_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_device_8h.html',1,'(Global Namespace)']]],
   ['deviceaccessversion_2eh',['DeviceAccessVersion.h',['../_device_access_version_8h.html',1,'']]],

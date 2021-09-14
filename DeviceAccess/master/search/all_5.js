@@ -30,6 +30,8 @@ var searchData=
   ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
   ['derived',['derived',['../struct_register_descriptor_base.html#ace6f5037e321e4955af042f265fb0537',1,'RegisterDescriptorBase::derived()'],['../struct_short_raw__base.html#a939dcd1eb49724e0e7b6c7090106b141',1,'ShortRaw_base::derived()']]],
   ['deserialize',['deserialize',['../class_chimera_t_k_1_1_access_mode_flags.html#a4a963de9d69e98282f6875e02d65531a',1,'ChimeraTK::AccessModeFlags']]],
+  ['design_3a_20asyncndregisteraccessor',['Design: AsyncNDRegisterAccessor',['../design__async_n_d_register_accessor__numeric_addressed.html',1,'']]],
+  ['design_5fasyncndregisteracessor_5fand_5fnumericaddressedbackend_2edox',['design_AsyncNDRegisterAcessor_and_NumericAddressedBackend.dox',['../design___async_n_d_register_acessor__and___numeric_addressed_backend_8dox.html',1,'']]],
   ['device',['Device',['../class_chimera_t_k_1_1_device.html',1,'ChimeraTK::Device'],['../class_chimera_t_k_1_1_device.html#ae5e0c416ca16eb2fd45fe5cc4a610469',1,'ChimeraTK::Device::Device()=default'],['../class_chimera_t_k_1_1_device.html#aa92aa6a52e36ec4224a730c32c8606ae',1,'ChimeraTK::Device::Device(const std::string &amp;aliasName)'],['../test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35',1,'device():&#160;testExceptionDummyDevice.cc']]],
   ['device_2ecc',['Device.cc',['../_device_8cc.html',1,'']]],
   ['device_2eh',['Device.h',['../device_2include_2_device_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_device_8h.html',1,'(Global Namespace)']]],

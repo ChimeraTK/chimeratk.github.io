@@ -12,6 +12,17 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Data Consistency Group", "data_consistency_group.html", null ],
+    [ "Design: AsyncNDRegisterAccessor", "design__async_n_d_register_accessor__numeric_addressed.html", [
+      [ "The AsyncNDRegisterAccessor and the AsyncAccessorManager", "design__async_n_d_register_accessor__numeric_addressed.html#design_AsyncNDRegisterAccessor", [
+        [ "Design decisions and implementation details", "design__async_n_d_register_accessor__numeric_addressed.html#AsyncNDRegisterAccessor_details", null ],
+        [ "Interface for implementing backends", "design__async_n_d_register_accessor__numeric_addressed.html#AsyncNDRegisterAccessor_usage", null ]
+      ] ],
+      [ "Implementation in the NumericAddressedBackend", "design__async_n_d_register_accessor__numeric_addressed.html#design_async_NumericAddressedBackend", [
+        [ "Asynchronous registers in the map file", "design__async_n_d_register_accessor__numeric_addressed.html#design_async_map_file", null ],
+        [ "Design and implementation details", "design__async_n_d_register_accessor__numeric_addressed.html#implementation_async_NumericAddressed", null ],
+        [ "Interface to implementing backends", "design__async_n_d_register_accessor__numeric_addressed.html#async_NumericAddressedBackend_interface", null ]
+      ] ]
+    ] ],
     [ "Device Mapping", "dmap.html", [
       [ "CimeraTK device descriptor", "dmap.html#The", null ]
     ] ],
@@ -105,14 +116,14 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_transfer_element_abstractor.html#a1a2e43388030a0136b71430ca8b920b7",
 "class_chimera_t_k_1_1find_register_by_name__pred.html",
 "class_version_number_test.html#a7c581d482c0898bdf9c680c04bc146f1",
-"dir_d28a4824dc47e487b107a5db32ef43c4.html",
-"mtca4u__compatibility__headers_2_multiplexed_data_accessor_exception_8h_source.html",
-"struct_chimera_t_k_1_1_exception_dummy_poll_decorator.html#af523bab3b7c54e38d16dfc2a69d6e366",
-"struct_counting_decorator.html#ac202b330d2212af28f218458ac46025f",
-"struct_reg_full_area_scaled.html#ab1d41a016042428b49f5d23a6cd4a762",
-"structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html#aeb6f43791b6e596dcdcdf8d809b591b6",
-"test_l_map_monostable_trigger_plugin_8cpp.html#a6b2a3852db8bb19ab6909bac01859985",
-"test_utilities_8cpp.html#a01e2ba4d1f9e3d8b42882e38d4673458"
+"dir_a5d8e4da9cc80025df522d391d7137df.html",
+"mtca4u__compatibility__headers_2_l_n_m_backend_variable_accessor_8h_source.html",
+"struct_chimera_t_k_1_1_dummy_protocol1.html#a59e2d55cbe4b3a93a8d94c7ad21f6b39",
+"struct_counting_decorator.html#a5a2933829250c27cf1c595adfe223875",
+"struct_reg_full_area.html#aebfe9054dea555a325b739fa7e6b1650",
+"structdevice__rw.html#ad9348912dabb0b218d0c500c66dda20d",
+"test_l_map_math_plugin_8cpp.html#a6b2a3852db8bb19ab6909bac01859985",
+"test_transfer_group_8cpp.html#aac8459236a102c9be77962f3ccb606cd"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
