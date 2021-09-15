@@ -9,7 +9,7 @@ var _x_m_l_parser_8h =
       [ "IN", "_x_m_l_parser_8h.html#a07f49f0aece09c6a894ff776c668b5ecaf2ae282aa38e7e05fb2e8a58b81adc70", null ],
       [ "OUT", "_x_m_l_parser_8h.html#a07f49f0aece09c6a894ff776c668b5eca43aa8d1eb17076b608d7702d26e6541e", null ]
     ] ],
-    [ "addElement", "_x_m_l_parser_8h.html#aa08f028a54b7fb0049d8e3a61d2c9258", null ],
+    [ "addElement", "_x_m_l_parser_8h.html#a65a2040fcf788559eb4dfba7d371f2ea", null ],
     [ "analyseNode", "_x_m_l_parser_8h.html#a44808ef63a5c332a7398f04014cfaaa9", null ],
     [ "getRootDir", "_x_m_l_parser_8h.html#a06567f4f85279cf918a9ca55d043244e", null ]
 ];
