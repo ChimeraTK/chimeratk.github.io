@@ -4,7 +4,7 @@ var structLoggingModule =
     [ "Input", "structLoggingModule_1_1Input.html", "structLoggingModule_1_1Input" ],
     [ "LogFileGroup", "structLoggingModule_1_1LogFileGroup.html", "structLoggingModule_1_1LogFileGroup" ],
     [ "Status", "structLoggingModule_1_1Status.html", "structLoggingModule_1_1Status" ],
-    [ "LoggingModule", "structLoggingModule.html#a54294cd517646051efc6564b1f47df5c", null ],
+    [ "LoggingModule", "structLoggingModule.html#ae4ca26b827c555c4a65a0fead0453460", null ],
     [ "mainLoop", "structLoggingModule.html#ae1447048dd90e2a7951d23c33987650f", null ],
     [ "terminate", "structLoggingModule.html#add19c1f65a576c57d327430e85dc0e91", null ],
     [ "LoggingModule", "structLoggingModule.html#a40f4e5855dc357ce1198d4bfb49ca71e", null ],

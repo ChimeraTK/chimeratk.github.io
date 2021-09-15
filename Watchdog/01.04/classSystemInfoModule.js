@@ -3,7 +3,7 @@ var classSystemInfoModule =
     [ "Info", "structSystemInfoModule_1_1Info.html", "structSystemInfoModule_1_1Info" ],
     [ "Status", "structSystemInfoModule_1_1Status.html", "structSystemInfoModule_1_1Status" ],
     [ "TriggerGroup", "structSystemInfoModule_1_1TriggerGroup.html", "structSystemInfoModule_1_1TriggerGroup" ],
-    [ "SystemInfoModule", "classSystemInfoModule.html#aa67d75fed531224be00132e153f7562c", null ],
+    [ "SystemInfoModule", "classSystemInfoModule.html#a38c4299ac096e8a78e878ec45361e117", null ],
     [ "mainLoop", "classSystemInfoModule.html#a876c95c70f1cdf6ffa3f3301f1d1a898", null ],
     [ "terminate", "classSystemInfoModule.html#a293bb7cb8a4a0fbd55156251322fa6e2", null ],
     [ "info", "classSystemInfoModule.html#ac0c380841e99594b7a3f3d7f04a8e753", null ],

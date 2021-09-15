@@ -8,7 +8,7 @@ var searchData=
   ['logging',['logging',['../namespacelogging.html',1,'']]],
   ['logging_2ecc',['Logging.cc',['../Logging_8cc.html',1,'']]],
   ['logging_2eh',['Logging.h',['../Logging_8h.html',1,'']]],
-  ['loggingmodule',['LoggingModule',['../structLoggingModule.html',1,'LoggingModule'],['../structLoggingModule.html#a40f4e5855dc357ce1198d4bfb49ca71e',1,'LoggingModule::LoggingModule()'],['../structLoggingModule.html#a54294cd517646051efc6564b1f47df5c',1,'LoggingModule::LoggingModule(EntityOwner *owner, const std::string &amp;name, const std::string &amp;description, ctk::HierarchyModifier hierarchyModifier=ctk::HierarchyModifier::none, const std::unordered_set&lt; std::string &gt; &amp;tags={ }, const std::string &amp;pathToLogFile=&quot;/watchdog/config/logfile&quot;)']]],
+  ['loggingmodule',['LoggingModule',['../structLoggingModule.html',1,'LoggingModule'],['../structLoggingModule.html#a40f4e5855dc357ce1198d4bfb49ca71e',1,'LoggingModule::LoggingModule()'],['../structLoggingModule.html#ae4ca26b827c555c4a65a0fead0453460',1,'LoggingModule::LoggingModule(EntityOwner *owner, const std::string &amp;name, const std::string &amp;description, ctk::HierarchyModifier hierarchyModifier=ctk::HierarchyModifier::none, const std::unordered_set&lt; std::string &gt; &amp;tags={ }, const std::string &amp;pathToLogFile=&quot;/watchdog/config/logFile&quot;)']]],
   ['loggingmodule_2ecc',['LoggingModule.cc',['../LoggingModule_8cc.html',1,'']]],
   ['loggingmodule_2eh',['LoggingModule.h',['../LoggingModule_8h.html',1,'']]],
   ['loglevel',['logLevel',['../structLoggingModule_1_1Config.html#a13abac1f5919013a3098ecbeaa6e4915',1,'LoggingModule::Config::logLevel()'],['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416',1,'logging::LogLevel()']]],
