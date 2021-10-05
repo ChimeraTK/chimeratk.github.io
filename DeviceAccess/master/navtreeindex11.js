@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"mtca4u__compatibility__headers_2_l_n_m_backend_register_info_8h_source.html":[20,0,5,22],
+"mtca4u__compatibility__headers_2_l_n_m_backend_variable_accessor_8h.html":[20,0,5,23],
 "mtca4u__compatibility__headers_2_l_n_m_backend_variable_accessor_8h_source.html":[20,0,5,23],
 "mtca4u__compatibility__headers_2_logical_name_map_parser_8h.html":[20,0,5,24],
 "mtca4u__compatibility__headers_2_logical_name_map_parser_8h_source.html":[20,0,5,24],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "struct_chimera_t_k_1_1_dummy_protocol0.html#ab790036ec6c8b4debed7838602651d35":[19,0,1,34,1],
 "struct_chimera_t_k_1_1_dummy_protocol1.html":[19,0,1,35],
 "struct_chimera_t_k_1_1_dummy_protocol1.html#a1e1d5b05db8c820f5b3f7be5dad69c68":[19,0,1,35,4],
-"struct_chimera_t_k_1_1_dummy_protocol1.html#a27cdf2f6f4f5aa923822bde4ef6644c6":[19,0,1,35,5],
-"struct_chimera_t_k_1_1_dummy_protocol1.html#a3a159f2314b9a68e09eabc65fdb93a04":[19,0,1,35,3],
-"struct_chimera_t_k_1_1_dummy_protocol1.html#a4b069fe0d9e019addd3fd1668bb31632":[19,0,1,35,6]
+"struct_chimera_t_k_1_1_dummy_protocol1.html#a27cdf2f6f4f5aa923822bde4ef6644c6":[19,0,1,35,5]
 };

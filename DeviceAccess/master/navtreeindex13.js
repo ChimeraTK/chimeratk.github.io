@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"struct_counting_decorator.html#a53f76288b61e1f6b721e9019bcd00ffc":[19,0,18,8],
+"struct_counting_decorator.html#a5776c51ee5d0164147707751ce6f0efa":[19,0,18,5],
 "struct_counting_decorator.html#a5a2933829250c27cf1c595adfe223875":[19,0,18,12],
 "struct_counting_decorator.html#a6b9e847b1caf3cad50aef5bef0aa15f5":[19,0,18,6],
 "struct_counting_decorator.html#a7b4b92ae74dc3f3466ad4cb54b254d16":[19,0,18,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "struct_reg_full_area.html":[19,0,79],
 "struct_reg_full_area.html#a2e312ba340bf2a610e9a43d914ffd357":[19,0,79,3],
 "struct_reg_full_area.html#a6396aafd56c43efe51752f1c4029825e":[19,0,79,4],
-"struct_reg_full_area.html#a64e7e4fdf34e1cdd17cfa10ad334b3d5":[19,0,79,5],
-"struct_reg_full_area.html#a8d674c50583d279dee8470a92a543265":[19,0,79,2],
-"struct_reg_full_area.html#aaaefbf3d8002c78819aa0a3b915e4e07":[19,0,79,1]
+"struct_reg_full_area.html#a64e7e4fdf34e1cdd17cfa10ad334b3d5":[19,0,79,5]
 };
