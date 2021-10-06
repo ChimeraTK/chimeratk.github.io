@@ -3,6 +3,7 @@ var class_chimera_t_k_1_1_test_facility =
     [ "AccessorMap", "class_chimera_t_k_1_1_test_facility.html#ac6004f239d9aeb03ae39993d5310cdec", null ],
     [ "Defaults", "class_chimera_t_k_1_1_test_facility.html#a35bb27a7b17bd09da4b3d9649e074006", null ],
     [ "TestFacility", "class_chimera_t_k_1_1_test_facility.html#afc1238aaadcddda96d35a6c64b88326a", null ],
+    [ "canStepApplication", "class_chimera_t_k_1_1_test_facility.html#a4e063b255066ae6cd381f006ddac4e74", null ],
     [ "getArray", "class_chimera_t_k_1_1_test_facility.html#a22b409c06a925abdff1c6a2bbfc4af28", null ],
     [ "getScalar", "class_chimera_t_k_1_1_test_facility.html#a48a5b9acda13e4a79936b19b576cc7a9", null ],
     [ "readArray", "class_chimera_t_k_1_1_test_facility.html#aa27fd819018ba8a7e6d9f8727c0ab92c", null ],

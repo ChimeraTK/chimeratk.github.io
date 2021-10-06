@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"classlogging_1_1_logger.html#a7c3e250e68bf01dc1003ac250e321fb3":[18,0,1,0,2],
+"classlogging_1_1_logger.html#a87cd7a6981b805533c717053ae412cd0":[18,0,1,0,0],
 "classlogging_1_1_logger.html#ae53dadb4bf80fcfd041f4ed94b68f443":[18,0,1,0,4],
 "classlogging_1_1_logging_module.html":[18,0,1,1],
 "classlogging_1_1_logging_module.html#a00a5432ac851dadb47f5947a319bb083":[18,0,1,1,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "spec_execption_handling.html#spec_execptionHandling_behaviour_recovery":[5,1,1],
 "spec_execption_handling.html#spec_execptionHandling_behaviour_startup":[5,1,2],
 "spec_execption_handling.html#spec_execptionHandling_high_level_implmentation":[5,2],
-"spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator":[5,2,1],
-"spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_behaviour":[5,2,1,1],
-"spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_comments":[5,2,1,2]
+"spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator":[5,2,1]
 };

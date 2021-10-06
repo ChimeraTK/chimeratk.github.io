@@ -4,6 +4,7 @@ var class_chimera_t_k_1_1_application =
     [ "TestsStalled", "class_chimera_t_k_1_1_application_1_1_tests_stalled.html", null ],
     [ "TypedMakeConnectionCaller", "struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html", "struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller" ],
     [ "Application", "class_chimera_t_k_1_1_application.html#a65ea3c005eec5249f9f8b0d2ce340d52", null ],
+    [ "canStepApplication", "class_chimera_t_k_1_1_application.html#ab4fcd08d657a7dbd28fcf5bfcada9559", null ],
     [ "checkConnections", "class_chimera_t_k_1_1_application.html#a9297edd9885aa6510aa44c2cdf49d19b", null ],
     [ "connect", "class_chimera_t_k_1_1_application.html#a17b9eed2f522249889c7138cffbba8c3", null ],
     [ "createApplicationVariable", "class_chimera_t_k_1_1_application.html#a11ee00018ac000ba12d9e250f5803a28", null ],
