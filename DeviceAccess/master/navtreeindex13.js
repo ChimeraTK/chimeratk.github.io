@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"struct_counting_decorator.html#a4580ef470ef7b0488524baf489d06550":[19,0,18,2],
 "struct_counting_decorator.html#a53f76288b61e1f6b721e9019bcd00ffc":[19,0,18,8],
 "struct_counting_decorator.html#a5776c51ee5d0164147707751ce6f0efa":[19,0,18,5],
 "struct_counting_decorator.html#a5a2933829250c27cf1c595adfe223875":[19,0,18,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "struct_reg_constant2.html#af9b7bcd21523ffcb3e0e4262e382a88c":[19,0,78,0],
 "struct_reg_full_area.html":[19,0,79],
 "struct_reg_full_area.html#a2e312ba340bf2a610e9a43d914ffd357":[19,0,79,3],
-"struct_reg_full_area.html#a6396aafd56c43efe51752f1c4029825e":[19,0,79,4],
-"struct_reg_full_area.html#a64e7e4fdf34e1cdd17cfa10ad334b3d5":[19,0,79,5]
+"struct_reg_full_area.html#a6396aafd56c43efe51752f1c4029825e":[19,0,79,4]
 };

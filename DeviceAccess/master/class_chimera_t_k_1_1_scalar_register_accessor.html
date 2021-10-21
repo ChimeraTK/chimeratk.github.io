@@ -148,9 +148,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a929f7b4dc76f47e5a7b421bf40044485"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#a929f7b4dc76f47e5a7b421bf40044485">setAsCooked</a> (COOKED_TYPE value)</td></tr>
 <tr class="memdesc:a929f7b4dc76f47e5a7b421bf40044485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cooked values in case the accessor is a raw accessor (which does not do data conversion).  <a href="#a929f7b4dc76f47e5a7b421bf40044485">More...</a><br /></td></tr>
 <tr class="separator:a929f7b4dc76f47e5a7b421bf40044485"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a286a6b370e1cd77e469e3d00e46c2eec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#a286a6b370e1cd77e469e3d00e46c2eec">writeIfDifferent</a> (UserType newValue)</td></tr>
-<tr class="memdesc:a286a6b370e1cd77e469e3d00e46c2eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to set and write new value if it differes from the current value.  <a href="#a286a6b370e1cd77e469e3d00e46c2eec">More...</a><br /></td></tr>
-<tr class="separator:a286a6b370e1cd77e469e3d00e46c2eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44107585a32260cb4f1fb097b84170a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#a44107585a32260cb4f1fb097b84170a8">writeIfDifferent</a> (UserType newValue, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber=<a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>{nullptr})</td></tr>
+<tr class="memdesc:a44107585a32260cb4f1fb097b84170a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to set and write new value if it differes from the current value.  <a href="#a44107585a32260cb4f1fb097b84170a8">More...</a><br /></td></tr>
+<tr class="separator:a44107585a32260cb4f1fb097b84170a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_abstractor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_abstractor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html">ChimeraTK::NDRegisterAccessorAbstractor&lt; UserType &gt;</a></td></tr>
 <tr class="memitem:a211acfa274e880b5210cc762aec58d01 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_abstractor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html#a211acfa274e880b5210cc762aec58d01">NDRegisterAccessorAbstractor</a> ()</td></tr>
 <tr class="memdesc:a211acfa274e880b5210cc762aec58d01 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_abstractor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an uninitialised abstractor - just for late initialisation.  <a href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html#a211acfa274e880b5210cc762aec58d01">More...</a><br /></td></tr>
@@ -632,7 +632,7 @@ template&lt;typename UserType&gt; </div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_scalar_register_accessor_a47763b3295a8b0ac97ae45e3d08109de_icgraph.svg" width="448" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_scalar_register_accessor_a47763b3295a8b0ac97ae45e3d08109de_icgraph.svg" width="448" height="264"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -673,8 +673,8 @@ template&lt;typename COOKED_TYPE &gt; </div>
 
 </div>
 </div>
-<a id="a286a6b370e1cd77e469e3d00e46c2eec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a286a6b370e1cd77e469e3d00e46c2eec">&#9670;&nbsp;</a></span>writeIfDifferent()</h2>
+<a id="a44107585a32260cb4f1fb097b84170a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44107585a32260cb4f1fb097b84170a8">&#9670;&nbsp;</a></span>writeIfDifferent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -688,8 +688,18 @@ template&lt;typename UserType&gt; </div>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ChimeraTK::ScalarRegisterAccessor</a>&lt; UserType &gt;::writeIfDifferent </td>
           <td>(</td>
           <td class="paramtype">UserType&#160;</td>
-          <td class="paramname"><em>newValue</em></td><td>)</td>
+          <td class="paramname"><em>newValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>&#160;</td>
+          <td class="paramname"><em>versionNumber</em> = <code><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>{nullptr}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -700,14 +710,15 @@ template&lt;typename UserType&gt; </div>
 </div><div class="memdoc">
 
 <p>Convenience function to set and write new value if it differes from the current value. </p>
+<p>The given version number is only used in case the value differs. If versionNumber == {nullptr}, a new version number is generated only if the write actually takes place. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00103">103</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00105">105</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_scalar_register_accessor_a286a6b370e1cd77e469e3d00e46c2eec_cgraph.svg" width="472" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_scalar_register_accessor_a44107585a32260cb4f1fb097b84170a8_cgraph.svg" width="472" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -736,7 +747,7 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00110">110</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00113">113</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -749,7 +760,7 @@ template&lt;typename UserType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ScalarRegisterAccessor</a></li>
-    <li class="footer">Generated on Tue Oct 5 2021 03:53:37 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Oct 21 2021 03:53:22 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
