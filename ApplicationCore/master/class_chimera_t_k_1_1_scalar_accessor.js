@@ -10,5 +10,7 @@ var class_chimera_t_k_1_1_scalar_accessor =
     [ "write", "class_chimera_t_k_1_1_scalar_accessor.html#aa95b652b95fb7b51327486ce37d77ab8", null ],
     [ "writeDestructively", "class_chimera_t_k_1_1_scalar_accessor.html#a30c397f9c9a396866c2b6c619812ed46", null ],
     [ "writeDestructively", "class_chimera_t_k_1_1_scalar_accessor.html#a3a1668d714e7218f0773f54a5de0976e", null ],
+    [ "writeIfDifferent", "class_chimera_t_k_1_1_scalar_accessor.html#a9a3948bf9e74f29447bda153422bcac9", null ],
+    [ "writeIfDifferent", "class_chimera_t_k_1_1_scalar_accessor.html#a78be8599aa780f82d53eb4b57270d76b", null ],
     [ "InversionOfControlAccessor< ScalarAccessor< UserType > >", "class_chimera_t_k_1_1_scalar_accessor.html#a0df7a7b00fc2569723620429ae22e8c1", null ]
 ];
