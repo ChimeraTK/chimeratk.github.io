@@ -233,7 +233,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:afe19e61ca78f6ec577b1f65ed15c692f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#afe19e61ca78f6ec577b1f65ed15c692f">targetControl</a></td></tr>
 <tr class="separator:afe19e61ca78f6ec577b1f65ed15c692f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab01bbfe4c4c1d1d9b8d18ee5e97e7586"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ab01bbfe4c4c1d1d9b8d18ee5e97e7586">sleepTime</a> {100}</td></tr>
-<tr class="memdesc:ab01bbfe4c4c1d1d9b8d18ee5e97e7586"><td class="mdescLeft">&#160;</td><td class="mdescRight">for type == threeRegisters or twoRegisters: sleep time of polling loop resp.  <a href="#ab01bbfe4c4c1d1d9b8d18ee5e97e7586">More...</a><br /></td></tr>
+<tr class="memdesc:ab01bbfe4c4c1d1d9b8d18ee5e97e7586"><td class="mdescLeft">&#160;</td><td class="mdescRight">for type == threeRegisters or twoRegisters: sleep time of polling loop resp. between operations, in usecs.  <a href="#ab01bbfe4c4c1d1d9b8d18ee5e97e7586">More...</a><br /></td></tr>
 <tr class="separator:ab01bbfe4c4c1d1d9b8d18ee5e97e7586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72b52eefeb319aa4a8e84a87faae0084"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_register_info_map.html">RegisterInfoMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a72b52eefeb319aa4a8e84a87faae0084">_registerMap</a></td></tr>
 <tr class="memdesc:a72b52eefeb319aa4a8e84a87faae0084"><td class="mdescLeft">&#160;</td><td class="mdescRight">map from register names to addresses  <a href="#a72b52eefeb319aa4a8e84a87faae0084">More...</a><br /></td></tr>
@@ -906,7 +906,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00132">132</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00129">129</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
@@ -1199,7 +1199,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>map from register names to addresses </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00107">107</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00104">104</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1249,10 +1249,9 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>for type == threeRegisters or twoRegisters: sleep time of polling loop resp. </p>
-<p>between operations, in usecs. </p>
+<p>for type == threeRegisters or twoRegisters: sleep time of polling loop resp. between operations, in usecs. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00104">104</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00101">101</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1278,7 +1277,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>for type == threeRegisters or twoRegisters: the name of the target registers </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00100">100</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00098">98</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1330,7 +1329,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>for type == area: the name of the target register </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00096">96</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00094">94</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1354,7 +1353,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00100">100</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00098">98</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1378,7 +1377,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00100">100</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00098">98</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1403,9 +1402,9 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p>The target device backend itself. </p>
-<p>We are using directly a backend since we want to obtain </p>
+<p>We are using directly a backend since we want to obtain NDRegisterAccessors which we can directly return in <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a83996f092b4370d18fcac2ab205481cc">getRegisterAccessor_impl()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00093">93</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00091">91</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1471,7 +1470,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html">SubdeviceBackend</a></li>
-    <li class="footer">Generated on Tue Nov 2 2021 04:53:29 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Nov 17 2021 04:53:22 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
