@@ -150,8 +150,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">char *s  = (<span class="keywordtype">char</span> *) malloc(_p_cppstring-&gt;length()+1); \</div><div class="line">strncpy(s, (<span class="keywordtype">char</span>*) _p_cppstring-&gt;c_str(), _p_cppstring-&gt;length()); \</div><div class="line">_p_uastring.length = _p_cppstring-&gt;length(); \</div><div class="line">_p_uastring.data = (UA_Byte *) malloc(_p_uastring.length); \</div><div class="line">memcpy(_p_uastring.data, s, _p_uastring.length); \</div><div class="line">free(s); \</div><div class="line">}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ua__proxies__typeconversion_8h_source.html#l00070">70</a> of file <a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                                                  \</div><div class="line">        char* s = (<span class="keywordtype">char</span>*)malloc(_p_cppstring-&gt;length() + 1);                                                           \</div><div class="line">        strncpy(s, (<span class="keywordtype">char</span>*)_p_cppstring-&gt;c_str(), _p_cppstring-&gt;length());                                              \</div><div class="line">        _p_uastring.length = _p_cppstring-&gt;length();                                                                   \</div><div class="line">        _p_uastring.data = (UA_Byte*)malloc(_p_uastring.length);                                                       \</div><div class="line">        memcpy(_p_uastring.data, s, _p_uastring.length);                                                               \</div><div class="line">        free(s);                                                                                                       \</div><div class="line">    }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="ua__proxies__typeconversion_8h_source.html#l00071">71</a> of file <a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>.</p>
 
 </div>
 </div>
@@ -186,8 +186,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ \</div><div class="line">UA_QualifiedName _p_tmpName; \</div><div class="line">UA_Server_readBrowseName(_p_server, _p_nodeid, &amp;_p_tmpName); \</div><div class="line">UASTRING_AS_STRING(_p_tmpName.name,  _p_strbuffer); \</div><div class="line">}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ua__proxies__typeconversion_8h_source.html#l00079">79</a> of file <a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                                                  \</div><div class="line">        UA_QualifiedName _p_tmpName;                                                                                   \</div><div class="line">        UA_Server_readBrowseName(_p_server, _p_nodeid, &amp;_p_tmpName);                                                   \</div><div class="line">        UASTRING_AS_STRING(_p_tmpName.name, _p_strbuffer);                                                             \</div><div class="line">    }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="ua__proxies__typeconversion_8h_source.html#l00081">81</a> of file <a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>.</p>
 
 </div>
 </div>
@@ -222,8 +222,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ \</div><div class="line">UA_LocalizedText _p_tmpName; \</div><div class="line">UA_Server_readDisplayName(_p_server, _p_nodeid, &amp;_p_tmpName); \</div><div class="line">UASTRING_AS_STRING(_p_tmpName.text,  _p_strbuffer); \</div><div class="line">}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ua__proxies__typeconversion_8h_source.html#l00091">91</a> of file <a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                                                  \</div><div class="line">        UA_LocalizedText _p_tmpName;                                                                                   \</div><div class="line">        UA_Server_readDisplayName(_p_server, _p_nodeid, &amp;_p_tmpName);                                                  \</div><div class="line">        UASTRING_AS_STRING(_p_tmpName.text, _p_strbuffer);                                                             \</div><div class="line">    }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="ua__proxies__typeconversion_8h_source.html#l00095">95</a> of file <a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>.</p>
 
 </div>
 </div>
@@ -258,8 +258,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ \</div><div class="line">UA_LocalizedText _p_tmpName; \</div><div class="line">UA_Server_readDisplayName(_p_server, _p_nodeid, &amp;_p_tmpName); \</div><div class="line">UASTRING_AS_STRING(_p_tmpName.text,  _p_strbuffer); \</div><div class="line">}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ua__proxies__typeconversion_8h_source.html#l00085">85</a> of file <a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                                                  \</div><div class="line">        UA_LocalizedText _p_tmpName;                                                                                   \</div><div class="line">        UA_Server_readDisplayName(_p_server, _p_nodeid, &amp;_p_tmpName);                                                  \</div><div class="line">        UASTRING_AS_STRING(_p_tmpName.text, _p_strbuffer);                                                             \</div><div class="line">    }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="ua__proxies__typeconversion_8h_source.html#l00088">88</a> of file <a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>.</p>
 
 </div>
 </div>
@@ -288,7 +288,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">UA_String *ua_url = (UA_String *) _p_uastring; \</div><div class="line">char *ua_str_tmp = (<span class="keywordtype">char</span> *) malloc(ua_url-&gt;length+1); \</div><div class="line">memset(ua_str_tmp, 0, ua_url-&gt;length+1); \</div><div class="line">strncpy(ua_str_tmp, (<span class="keywordtype">char</span> *) ua_url-&gt;data, ua_url-&gt;length); \</div><div class="line">*(_p_cppstring) = ua_str_tmp; \</div><div class="line">free(ua_str_tmp); \</div><div class="line">} <span class="keywordflow">while</span>(0); \</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                                                               \</div><div class="line">        UA_String* ua_url = (UA_String*)_p_uastring;                                                                   \</div><div class="line">        char* ua_str_tmp = (<span class="keywordtype">char</span>*)malloc(ua_url-&gt;length + 1);                                                          \</div><div class="line">        memset(ua_str_tmp, 0, ua_url-&gt;length + 1);                                                                     \</div><div class="line">        strncpy(ua_str_tmp, (<span class="keywordtype">char</span>*)ua_url-&gt;data, ua_url-&gt;length);                                                      \</div><div class="line">        *(_p_cppstring) = ua_str_tmp;                                                                                  \</div><div class="line">        free(ua_str_tmp);                                                                                              \</div><div class="line">    } <span class="keywordflow">while</span>(0);</div></div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="ua__proxies__typeconversion_8h_source.html#l00027">27</a> of file <a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>.</p>
 
 </div>
@@ -318,8 +318,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ \</div><div class="line">_p_strbuffer = (<span class="keywordtype">char</span> *) malloc(_p_uastring.length + 1); \</div><div class="line">memset(_p_strbuffer, 0, _p_uastring.length + 1); \</div><div class="line">memcpy(_p_strbuffer, _p_uastring.data,_p_uastring.length); \</div><div class="line">}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ua__proxies__typeconversion_8h_source.html#l00040">40</a> of file <a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                                                  \</div><div class="line">        _p_strbuffer = (<span class="keywordtype">char</span>*)malloc(_p_uastring.length + 1);                                                          \</div><div class="line">        memset(_p_strbuffer, 0, _p_uastring.length + 1);                                                               \</div><div class="line">        memcpy(_p_strbuffer, _p_uastring.data, _p_uastring.length);                                                    \</div><div class="line">    }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="ua__proxies__typeconversion_8h_source.html#l00041">41</a> of file <a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>.</p>
 
 </div>
 </div>
@@ -348,8 +348,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div><div class="line">char *s;\</div><div class="line">UASTRING_AS_CSTRING(_p_uastring, s) \</div><div class="line">_p_cppstring.assign(s, _p_uastring.length);\</div><div class="line">free(s);\</div><div class="line">} <span class="keywordflow">while</span>(0);</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ua__proxies__typeconversion_8h_source.html#l00050">50</a> of file <a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>.</p>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                                                               \</div><div class="line">        char* s;                                                                                                       \</div><div class="line">        UASTRING_AS_CSTRING(_p_uastring, s)                                                                            \</div><div class="line">        _p_cppstring.assign(s, _p_uastring.length);                                                                    \</div><div class="line">        free(s);                                                                                                       \</div><div class="line">    } <span class="keywordflow">while</span>(0);</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="ua__proxies__typeconversion_8h_source.html#l00052">52</a> of file <a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>.</p>
 
 </div>
 </div>
@@ -359,7 +359,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="ua__proxies__typeconversion_8h.html">ua_proxies_typeconversion.h</a></li>
-    <li class="footer">Generated on Tue Sep 14 2021 03:59:13 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <li class="footer">Generated on Sat Nov 20 2021 04:57:53 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

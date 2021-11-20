@@ -121,22 +121,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a11c229ea00b09e4d49fbd83a87f1efb6"><td class="memItemLeft" align="right" valign="top">UA_DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__additionalvariable.html#a11c229ea00b09e4d49fbd83a87f1efb6">getSourceTimeStamp</a> ()</td></tr>
 <tr class="memdesc:a11c229ea00b09e4d49fbd83a87f1efb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the SourceTimeStamp from node in the OPC UA server Virtual methode which returned Timestamp is setted into the node with the help of the proxy_callback.h.  <a href="#a11c229ea00b09e4d49fbd83a87f1efb6">More...</a><br /></td></tr>
 <tr class="separator:a11c229ea00b09e4d49fbd83a87f1efb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1dfdced576328677b013788179cdcc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__additionalvariable.html#ae1dfdced576328677b013788179cdcc6">setValue</a> (string value)</td></tr>
-<tr class="separator:ae1dfdced576328677b013788179cdcc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40952d0b0dc30d95e39fdf07d243d446"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__additionalvariable.html#a40952d0b0dc30d95e39fdf07d243d446">getValue</a> ()</td></tr>
 <tr class="separator:a40952d0b0dc30d95e39fdf07d243d446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8e436879a7ee33c036e84663487bf9fc"><td class="memItemLeft" align="right" valign="top">static UA_StatusCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__additionalvariable.html#a8e436879a7ee33c036e84663487bf9fc">ua_readproxy_ua_additionalvariable_getValue</a> (void *handle, const UA_NodeId nodeid, UA_Boolean includeSourceTimeStamp, const UA_NumericRange *range, UA_DataValue *value)</td></tr>
-<tr class="separator:a8e436879a7ee33c036e84663487bf9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b8a4674f0f8fbf332cf606eae4d58b"><td class="memItemLeft" align="right" valign="top">static UA_StatusCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classua__additionalvariable.html#a32b8a4674f0f8fbf332cf606eae4d58b">ua_readproxy_ua_additionalvariable_getValue</a> (UA_Server *server, const UA_NodeId *sessionId, void *sessionContext, const UA_NodeId *nodeId, void *nodeContext, UA_Boolean includeSourceTimeStamp, const UA_NumericRange *range, UA_DataValue *value)</td></tr>
+<tr class="separator:a32b8a4674f0f8fbf332cf606eae4d58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represent a additional variable from &lt;variableMap.xml&gt; in the information model of a OPC UA Server. </p>
 <dl class="section author"><dt>Author</dt><dd>Chris Iatrou, Julian Rahm </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>22.11.2016 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ua__additionalvariable_8h_source.html#l00035">35</a> of file <a class="el" href="ua__additionalvariable_8h_source.html">ua_additionalvariable.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__additionalvariable_8h_source.html#l00036">36</a> of file <a class="el" href="ua__additionalvariable_8h_source.html">ua_additionalvariable.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a34f4a43d9446aa9079e143d0406c9d76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34f4a43d9446aa9079e143d0406c9d76">&#9670;&nbsp;</a></span>ua_additionalvariable()</h2>
@@ -213,7 +211,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ua__additionalvariable_8cpp_source.html#l00045">45</a> of file <a class="el" href="ua__additionalvariable_8cpp_source.html">ua_additionalvariable.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__additionalvariable_8cpp_source.html#l00046">46</a> of file <a class="el" href="ua__additionalvariable_8cpp_source.html">ua_additionalvariable.cpp</a>.</p>
 
 </div>
 </div>
@@ -246,7 +244,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classua__mapped__class.html#a72e312c7bae0bdedd012da15bf2a0ac5">ua_mapped_class</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="ua__additionalvariable_8cpp_source.html#l00148">148</a> of file <a class="el" href="ua__additionalvariable_8cpp_source.html">ua_additionalvariable.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__additionalvariable_8cpp_source.html#l00153">153</a> of file <a class="el" href="ua__additionalvariable_8cpp_source.html">ua_additionalvariable.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -273,7 +271,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ua__additionalvariable_8cpp_source.html#l00073">73</a> of file <a class="el" href="ua__additionalvariable_8cpp_source.html">ua_additionalvariable.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__additionalvariable_8cpp_source.html#l00076">76</a> of file <a class="el" href="ua__additionalvariable_8cpp_source.html">ua_additionalvariable.cpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -293,26 +291,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae1dfdced576328677b013788179cdcc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1dfdced576328677b013788179cdcc6">&#9670;&nbsp;</a></span>setValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ua_additionalvariable::setValue </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8e436879a7ee33c036e84663487bf9fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e436879a7ee33c036e84663487bf9fc">&#9670;&nbsp;</a></span>ua_readproxy_ua_additionalvariable_getValue()</h2>
+<a id="a32b8a4674f0f8fbf332cf606eae4d58b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32b8a4674f0f8fbf332cf606eae4d58b">&#9670;&nbsp;</a></span>ua_readproxy_ua_additionalvariable_getValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,14 +303,32 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">UA_StatusCode ua_additionalvariable::ua_readproxy_ua_additionalvariable_getValue </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype">UA_Server *&#160;</td>
+          <td class="paramname"><em>server</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const UA_NodeId&#160;</td>
-          <td class="paramname"><em>nodeid</em>, </td>
+          <td class="paramtype">const UA_NodeId *&#160;</td>
+          <td class="paramname"><em>sessionId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>sessionContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UA_NodeId *&#160;</td>
+          <td class="paramname"><em>nodeId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>nodeContext</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -363,13 +361,13 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ua__additionalvariable_8cpp_source.html#l00051">51</a> of file <a class="el" href="ua__additionalvariable_8cpp_source.html">ua_additionalvariable.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__additionalvariable_8cpp_source.html#l00052">52</a> of file <a class="el" href="ua__additionalvariable_8cpp_source.html">ua_additionalvariable.cpp</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__additionalvariable_a8e436879a7ee33c036e84663487bf9fc_cgraph.svg" width="100%" height="405"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classua__additionalvariable_a32b8a4674f0f8fbf332cf606eae4d58b_cgraph.svg" width="100%" height="405"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -377,7 +375,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classua__additionalvariable_a8e436879a7ee33c036e84663487bf9fc_icgraph.svg" width="488" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classua__additionalvariable_a32b8a4674f0f8fbf332cf606eae4d58b_icgraph.svg" width="488" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -393,7 +391,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classua__additionalvariable.html">ua_additionalvariable</a></li>
-    <li class="footer">Generated on Tue Sep 14 2021 03:59:13 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <li class="footer">Generated on Sat Nov 20 2021 04:57:53 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

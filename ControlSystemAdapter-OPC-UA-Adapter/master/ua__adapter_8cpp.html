@@ -81,6 +81,8 @@ $(document).ready(function(){initNavTree('ua__adapter_8cpp.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">ua_adapter.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -89,17 +91,15 @@ $(document).ready(function(){initNavTree('ua__adapter_8cpp.html','');});
 <code>#include &quot;<a class="el" href="csa__namespaceinit__generated_8h_source.html">csa_namespaceinit_generated.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;thread&gt;</code><br />
-<code>#include &lt;future&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;regex&gt;</code><br />
 <code>#include &quot;<a class="el" href="csa__config_8h_source.html">csa_config.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ua__processvariable_8h_source.html">ua_processvariable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ua__additionalvariable_8h_source.html">ua_additionalvariable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="xml__file__handler_8h_source.html">xml_file_handler.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ua__proxies_8h_source.html">ua_proxies.h</a>&quot;</code><br />
-<code>#include &quot;ChimeraTK/ControlSystemAdapter/ControlSystemPVManager.h&quot;</code><br />
-<code>#include &quot;ChimeraTK/ControlSystemAdapter/PVManager.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ua_adapter.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -110,13 +110,62 @@ $(document).ready(function(){initNavTree('ua__adapter_8cpp.html','');});
 </div>
 </div>
 <p><a href="ua__adapter_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aff6b53dd58cea43d24393a9a2f79e772"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ua__adapter_8cpp.html#aff6b53dd58cea43d24393a9a2f79e772">xstr</a>(a)&#160;&#160;&#160;<a class="el" href="ua__adapter_8cpp.html#af6cf19e40e97afb5a7c29f7b439d091d">str</a>(a)</td></tr>
+<tr class="separator:aff6b53dd58cea43d24393a9a2f79e772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6cf19e40e97afb5a7c29f7b439d091d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ua__adapter_8cpp.html#af6cf19e40e97afb5a7c29f7b439d091d">str</a>(a)&#160;&#160;&#160;#a</td></tr>
+<tr class="separator:af6cf19e40e97afb5a7c29f7b439d091d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="af6cf19e40e97afb5a7c29f7b439d091d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6cf19e40e97afb5a7c29f7b439d091d">&#9670;&nbsp;</a></span>str</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define str</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a</td><td>)</td>
+          <td>&#160;&#160;&#160;#a</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00042">42</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aff6b53dd58cea43d24393a9a2f79e772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff6b53dd58cea43d24393a9a2f79e772">&#9670;&nbsp;</a></span>xstr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define xstr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="ua__adapter_8cpp.html#af6cf19e40e97afb5a7c29f7b439d091d">str</a>(a)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8cpp_source.html#l00041">41</a> of file <a class="el" href="ua__adapter_8cpp_source.html">ua_adapter.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="ua__adapter_8cpp.html">ua_adapter.cpp</a></li>
-    <li class="footer">Generated on Tue Sep 14 2021 03:59:13 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <li class="footer">Generated on Sat Nov 20 2021 04:57:53 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

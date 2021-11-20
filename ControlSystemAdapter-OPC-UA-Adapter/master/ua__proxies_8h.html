@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('ua__proxies_8h.html','');});
 <div class="title">ua_proxies.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;open62541.h&quot;</code><br />
+<div class="textblock"><code>#include &lt;open62541/server.h&gt;</code><br />
 <code>#include &lt;list&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &quot;<a class="el" href="ua__proxies__typeconversion_8h_source.html">ua_proxies_typeconversion.h</a>&quot;</code><br />
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('ua__proxies_8h.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ua__proxies_8h__incl.svg" width="524" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ua__proxies_8h__incl.svg" width="568" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -182,9 +182,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {\</div><div class="line">UA_NodeId_pair *tmp = <span class="keyword">new</span> <a class="code" href="ua__proxies_8h.html#ac5a289d5cb9227915bba5e3483e6a463">UA_NodeId_pair</a>;\</div><div class="line">UA_NodeId_copy(&amp;_p_srcId, &amp;tmp-&gt;sourceNodeId);\</div><div class="line">UA_NodeId_copy(&amp;_p_targetId, &amp;tmp-&gt;targetNodeId);\</div><div class="line">_p_listname.push_back(tmp); } <span class="keywordflow">while</span> (0);</div><div class="ttc" id="ua__proxies_8h_html_ac5a289d5cb9227915bba5e3483e6a463"><div class="ttname"><a href="ua__proxies_8h.html#ac5a289d5cb9227915bba5e3483e6a463">UA_NodeId_pair</a></div><div class="ttdeci">struct UA_NodeId_pair_t UA_NodeId_pair</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                                                               \</div><div class="line">        UA_NodeId_pair* tmp = <span class="keyword">new</span> <a class="code" href="ua__proxies_8h.html#ac5a289d5cb9227915bba5e3483e6a463">UA_NodeId_pair</a>;                                                                      \</div><div class="line">        UA_NodeId_copy(&amp;_p_srcId, &amp;tmp-&gt;sourceNodeId);                                                                 \</div><div class="line">        UA_NodeId_copy(&amp;_p_targetId, &amp;tmp-&gt;targetNodeId);                                                              \</div><div class="line">        _p_listname.push_back(tmp);                                                                                    \</div><div class="line">    } <span class="keywordflow">while</span>(0);</div><div class="ttc" id="ua__proxies_8h_html_ac5a289d5cb9227915bba5e3483e6a463"><div class="ttname"><a href="ua__proxies_8h.html#ac5a289d5cb9227915bba5e3483e6a463">UA_NodeId_pair</a></div><div class="ttdeci">struct UA_NodeId_pair_t UA_NodeId_pair</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ua__proxies_8h_source.html#l00047">47</a> of file <a class="el" href="ua__proxies_8h_source.html">ua_proxies.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__proxies_8h_source.html#l00048">48</a> of file <a class="el" href="ua__proxies_8h_source.html">ua_proxies.h</a>.</p>
 
 </div>
 </div>
@@ -201,7 +201,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ua__proxies_8h_source.html#l00031">31</a> of file <a class="el" href="ua__proxies_8h_source.html">ua_proxies.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__proxies_8h_source.html#l00030">30</a> of file <a class="el" href="ua__proxies_8h_source.html">ua_proxies.h</a>.</p>
 
 </div>
 </div>
@@ -217,7 +217,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ua__proxies_8h_source.html#l00044">44</a> of file <a class="el" href="ua__proxies_8h_source.html">ua_proxies.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__proxies_8h_source.html#l00046">46</a> of file <a class="el" href="ua__proxies_8h_source.html">ua_proxies.h</a>.</p>
 
 </div>
 </div>
@@ -286,7 +286,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>UA_NodeId from the found node </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ua__proxies_8cpp_source.html#l00030">30</a> of file <a class="el" href="ua__proxies_8cpp_source.html">ua_proxies.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__proxies_8cpp_source.html#l00029">29</a> of file <a class="el" href="ua__proxies_8cpp_source.html">ua_proxies.cpp</a>.</p>
 
 </div>
 </div>
@@ -340,7 +340,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>UA_StatusCode </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ua__proxies_8cpp_source.html#l00052">52</a> of file <a class="el" href="ua__proxies_8cpp_source.html">ua_proxies.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__proxies_8cpp_source.html#l00051">51</a> of file <a class="el" href="ua__proxies_8cpp_source.html">ua_proxies.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -395,7 +395,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>UA_StatusCode </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ua__proxies_8cpp_source.html#l00041">41</a> of file <a class="el" href="ua__proxies_8cpp_source.html">ua_proxies.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__proxies_8cpp_source.html#l00040">40</a> of file <a class="el" href="ua__proxies_8cpp_source.html">ua_proxies.cpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -413,7 +413,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="ua__proxies_8h.html">ua_proxies.h</a></li>
-    <li class="footer">Generated on Tue Sep 14 2021 03:59:13 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <li class="footer">Generated on Sat Nov 20 2021 04:57:53 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
