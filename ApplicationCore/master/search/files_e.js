@@ -30,6 +30,7 @@ var searchData=
   ['testoptimiseunmappedvariables_2ecc',['testOptimiseUnmappedVariables.cc',['../test_optimise_unmapped_variables_8cc.html',1,'']]],
   ['testprocessvariablerecovery_2ecc',['testProcessVariableRecovery.cc',['../test_process_variable_recovery_8cc.html',1,'']]],
   ['testpropagatedatafaultflag_2ecc',['testPropagateDataFaultFlag.cc',['../test_propagate_data_fault_flag_8cc.html',1,'']]],
+  ['testscriptedinitialisationhandler_2ecc',['testScriptedInitialisationHandler.cc',['../test_scripted_initialisation_handler_8cc.html',1,'']]],
   ['teststatusaggregator_2ecc',['testStatusAggregator.cc',['../test_status_aggregator_8cc.html',1,'']]],
   ['teststatusmodule_2ecc',['testStatusModule.cc',['../test_status_module_8cc.html',1,'']]],
   ['testtemplatemodule_2ecc',['testTemplateModule.cc',['../test_template_module_8cc.html',1,'']]],

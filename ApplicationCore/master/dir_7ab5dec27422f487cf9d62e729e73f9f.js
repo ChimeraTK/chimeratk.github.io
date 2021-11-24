@@ -26,6 +26,7 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testOptimiseUnmappedVariables.cc", "test_optimise_unmapped_variables_8cc.html", "test_optimise_unmapped_variables_8cc" ],
     [ "testProcessVariableRecovery.cc", "test_process_variable_recovery_8cc.html", "test_process_variable_recovery_8cc" ],
     [ "testPropagateDataFaultFlag.cc", "test_propagate_data_fault_flag_8cc.html", "test_propagate_data_fault_flag_8cc" ],
+    [ "testScriptedInitialisationHandler.cc", "test_scripted_initialisation_handler_8cc.html", "test_scripted_initialisation_handler_8cc" ],
     [ "testStatusAggregator.cc", "test_status_aggregator_8cc.html", "test_status_aggregator_8cc" ],
     [ "testStatusModule.cc", "test_status_module_8cc.html", "test_status_module_8cc" ],
     [ "testTestFacilities.cc", "test_test_facilities_8cc.html", "test_test_facilities_8cc" ],

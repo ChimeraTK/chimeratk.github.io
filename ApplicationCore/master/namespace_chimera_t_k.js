@@ -70,6 +70,7 @@ var namespace_chimera_t_k =
     [ "ScalarPollInput", "struct_chimera_t_k_1_1_scalar_poll_input.html", "struct_chimera_t_k_1_1_scalar_poll_input" ],
     [ "ScalarPushInput", "struct_chimera_t_k_1_1_scalar_push_input.html", "struct_chimera_t_k_1_1_scalar_push_input" ],
     [ "ScalarPushInputWB", "struct_chimera_t_k_1_1_scalar_push_input_w_b.html", "struct_chimera_t_k_1_1_scalar_push_input_w_b" ],
+    [ "ScriptedInitHandler", "struct_chimera_t_k_1_1_scripted_init_handler.html", "struct_chimera_t_k_1_1_scripted_init_handler" ],
     [ "StatusAccessor", "struct_chimera_t_k_1_1_status_accessor.html", "struct_chimera_t_k_1_1_status_accessor" ],
     [ "StatusAccessorBase", "struct_chimera_t_k_1_1_status_accessor_base.html", "struct_chimera_t_k_1_1_status_accessor_base" ],
     [ "StatusAggregator", "struct_chimera_t_k_1_1_status_aggregator.html", "struct_chimera_t_k_1_1_status_aggregator" ],

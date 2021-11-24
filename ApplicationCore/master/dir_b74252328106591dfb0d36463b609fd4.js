@@ -37,6 +37,9 @@ var dir_b74252328106591dfb0d36463b609fd4 =
       [ "ScalarPipe", "struct_chimera_t_k_1_1_scalar_pipe.html", "struct_chimera_t_k_1_1_scalar_pipe" ],
       [ "ArrayPipe", "struct_chimera_t_k_1_1_array_pipe.html", "struct_chimera_t_k_1_1_array_pipe" ]
     ] ],
+    [ "ScriptedInitialisationHandler.h", "_scripted_initialisation_handler_8h.html", [
+      [ "ScriptedInitHandler", "struct_chimera_t_k_1_1_scripted_init_handler.html", "struct_chimera_t_k_1_1_scripted_init_handler" ]
+    ] ],
     [ "ServerHistory.h", "_server_history_8h.html", [
       [ "HistoryEntry", "struct_chimera_t_k_1_1history_1_1_history_entry.html", "struct_chimera_t_k_1_1history_1_1_history_entry" ],
       [ "ServerHistory", "struct_chimera_t_k_1_1history_1_1_server_history.html", "struct_chimera_t_k_1_1history_1_1_server_history" ]
