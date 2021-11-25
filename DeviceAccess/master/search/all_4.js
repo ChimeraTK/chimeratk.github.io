@@ -93,7 +93,7 @@ var searchData=
   ['creatormap',['creatorMap',['../class_chimera_t_k_1_1_backend_factory.html#ac6f2809b16bc6fac6572e2104e5d99d7',1,'ChimeraTK::BackendFactory']]],
   ['creatormap_5fcompat',['creatorMap_compat',['../class_chimera_t_k_1_1_backend_factory.html#a15b24b38de6528dc74626fc8f1a6501b',1,'ChimeraTK::BackendFactory']]],
   ['crend',['crend',['../class_chimera_t_k_1_1_buffering_register_accessor.html#aa735f97cff3def46fd81285727ae41df',1,'ChimeraTK::BufferingRegisterAccessor::crend()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#acd3bdafc63846390db253f4ac27e98f6',1,'ChimeraTK::OneDRegisterAccessor::crend()']]],
-  ['ctrlintf',['CtrlIntf',['../class_chimera_t_k_1_1_ctrl_intf.html',1,'ChimeraTK::CtrlIntf'],['../class_chimera_t_k_1_1_ctrl_intf.html#a106034383580891fbe9f3524eaeeeeae',1,'ChimeraTK::CtrlIntf::CtrlIntf()']]],
+  ['ctrlintf',['CtrlIntf',['../class_chimera_t_k_1_1_ctrl_intf.html',1,'ChimeraTK::CtrlIntf'],['../class_chimera_t_k_1_1_ctrl_intf.html#a771bcfda58872f4576942566a45f04c9',1,'ChimeraTK::CtrlIntf::CtrlIntf()=delete'],['../class_chimera_t_k_1_1_ctrl_intf.html#a106034383580891fbe9f3524eaeeeeae',1,'ChimeraTK::CtrlIntf::CtrlIntf(const std::string &amp;devicePath)']]],
   ['ctrlintf_2ecc',['CtrlIntf.cc',['../_ctrl_intf_8cc.html',1,'']]],
   ['ctrlintf_2eh',['CtrlIntf.h',['../_ctrl_intf_8h.html',1,'']]],
   ['currentareavalue',['currentAreaValue',['../struct_static_core.html#a9971fa98405aaad70b27228bf2fba7ba',1,'StaticCore']]],

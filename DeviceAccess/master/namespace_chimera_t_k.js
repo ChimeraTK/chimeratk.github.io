@@ -39,6 +39,8 @@ var namespace_chimera_t_k =
     [ "DummyRegisterAccessor", "class_chimera_t_k_1_1_dummy_register_accessor.html", "class_chimera_t_k_1_1_dummy_register_accessor" ],
     [ "DummyRegisterAddressChecker", "class_chimera_t_k_1_1_dummy_register_address_checker.html", "class_chimera_t_k_1_1_dummy_register_address_checker" ],
     [ "DummyRegisterRawAccessor", "class_chimera_t_k_1_1_dummy_register_raw_accessor.html", "class_chimera_t_k_1_1_dummy_register_raw_accessor" ],
+    [ "EventFile", "class_chimera_t_k_1_1_event_file.html", "class_chimera_t_k_1_1_event_file" ],
+    [ "EventThread", "class_chimera_t_k_1_1_event_thread.html", "class_chimera_t_k_1_1_event_thread" ],
     [ "ExceptionDummy", "class_chimera_t_k_1_1_exception_dummy.html", "class_chimera_t_k_1_1_exception_dummy" ],
     [ "ExceptionDummyPollDecorator", "struct_chimera_t_k_1_1_exception_dummy_poll_decorator.html", "struct_chimera_t_k_1_1_exception_dummy_poll_decorator" ],
     [ "ExceptionDummyPollDecoratorBase", "struct_chimera_t_k_1_1_exception_dummy_poll_decorator_base.html", "struct_chimera_t_k_1_1_exception_dummy_poll_decorator_base" ],

@@ -7,6 +7,7 @@ var searchData=
   ['active',['active',['../class_test_dummy.html#aa5067318f24c35303b5316d122b8f362',1,'TestDummy']]],
   ['address',['address',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#a260ba0335e85fab9f14f5e6706e4d349',1,'ChimeraTK::RegisterInfoMap::RegisterInfo::address()'],['../struct_static_core.html#a2eba5dcb8602cda0416c3ea027fc470b',1,'StaticCore::address()'],['../struct_chimera_t_k_1_1_device_descriptor.html#abb8149f71839abaad25c671b3ef70688',1,'ChimeraTK::DeviceDescriptor::address()']]],
   ['addressinwords',['addressInWords',['../struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#ac3df6436518ace3a5d09ec50f48924af',1,'ChimeraTK::RebotProtocol0::RegisterInfo']]],
+  ['addresstodatadelay',['addressToDataDelay',['../class_chimera_t_k_1_1_subdevice_backend.html#a31cdcdbfc10595adc3432d810ed13a0a',1,'ChimeraTK::SubdeviceBackend']]],
   ['area',['area',['../struct_static_core.html#a6462bc497b1e3a1143929d9e5747e238',1,'StaticCore']]],
   ['areasize',['areaSize',['../struct_static_core.html#a288c03e7a0df51b5d6702b29b4385c89',1,'StaticCore']]],
   ['asyncreadinconsistency',['asyncReadInconsistency',['../struct_chimera_t_k_1_1_test_capabilities.html#a97725c464253c88759beabc9e4594e15',1,'ChimeraTK::TestCapabilities']]]

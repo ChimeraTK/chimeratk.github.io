@@ -220,6 +220,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_dummy_register_raw_accessor.html">DummyRegisterRawAccessor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_accessor.html">Accessor</a> for raw 32 bit integer access to the underlying memory space.  <a href="class_chimera_t_k_1_1_dummy_register_raw_accessor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_event_file.html">EventFile</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_event_thread.html">EventThread</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_exception_dummy.html">ExceptionDummy</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_exception_dummy_poll_decorator.html">ExceptionDummyPollDecorator</a></td></tr>
@@ -436,6 +440,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a031d7179f7b64f9b37159cea41b41a14"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a031d7179f7b64f9b37159cea41b41a14">EventCallback</a> = std::function&lt; void()&gt;</td></tr>
+<tr class="separator:a031d7179f7b64f9b37159cea41b41a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6310a045e1d4eb8181410f278fe7913"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_info_map.html">DeviceInfoMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#af6310a045e1d4eb8181410f278fe7913">DeviceInfoMapPointer</a></td></tr>
 <tr class="memdesc:af6310a045e1d4eb8181410f278fe7913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Introduce specialisation of shared_pointer template for pointers to <a class="el" href="class_chimera_t_k_1_1_register_info_map.html" title="Provides container to store information about registers described in MAP file. ">RegisterInfoMap</a> object as a DeviceInfoMapPointer.  <a href="#af6310a045e1d4eb8181410f278fe7913">More...</a><br /></td></tr>
 <tr class="separator:af6310a045e1d4eb8181410f278fe7913"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -692,6 +698,22 @@ Variables</h2></td></tr>
 <p>Introduce specialisation of shared_pointer template for pointers to <a class="el" href="class_chimera_t_k_1_1_register_info_map.html" title="Provides container to store information about registers described in MAP file. ">RegisterInfoMap</a> object as a DeviceInfoMapPointer. </p>
 
 <p class="definition">Definition at line <a class="el" href="fileparsers_2include_2_device_info_map_8h_source.html#l00230">230</a> of file <a class="el" href="fileparsers_2include_2_device_info_map_8h_source.html">DeviceInfoMap.h</a>.</p>
+
+</div>
+</div>
+<a id="a031d7179f7b64f9b37159cea41b41a14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a031d7179f7b64f9b37159cea41b41a14">&#9670;&nbsp;</a></span>EventCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespace_chimera_t_k.html#a031d7179f7b64f9b37159cea41b41a14">ChimeraTK::EventCallback</a> = typedef std::function&lt;void()&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_event_file_8h_source.html#l00014">14</a> of file <a class="el" href="_event_file_8h_source.html">EventFile.h</a>.</p>
 
 </div>
 </div>
@@ -3080,7 +3102,7 @@ template&lt;typename UserTypeReturn , typename UserTypeParameter &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li>
-    <li class="footer">Generated on Wed Nov 17 2021 04:53:22 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Nov 25 2021 04:53:26 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

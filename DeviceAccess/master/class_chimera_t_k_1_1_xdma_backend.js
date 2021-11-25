@@ -9,5 +9,6 @@ var class_chimera_t_k_1_1_xdma_backend =
     [ "open", "class_chimera_t_k_1_1_xdma_backend.html#a7e52f16c9e5f6a12aa67fe9575bef7c0", null ],
     [ "read", "class_chimera_t_k_1_1_xdma_backend.html#aa34dc7c4aedc136318af7515e5302b84", null ],
     [ "readDeviceInfo", "class_chimera_t_k_1_1_xdma_backend.html#aba237aeb88b4c9cd04c4711998912d08", null ],
+    [ "startInterruptHandlingThread", "class_chimera_t_k_1_1_xdma_backend.html#acd32568ca5f08a6286d7a6e5bd703aa6", null ],
     [ "write", "class_chimera_t_k_1_1_xdma_backend.html#a62f358a0e1d3502f9a1d1d0c728ab40c", null ]
 ];

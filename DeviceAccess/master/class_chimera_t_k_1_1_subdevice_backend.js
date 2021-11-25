@@ -23,6 +23,7 @@ var class_chimera_t_k_1_1_subdevice_backend =
     [ "verifyRegisterAccessorSize", "class_chimera_t_k_1_1_subdevice_backend.html#a5d0833f29eb3ccaf203ea395d5fcdd07", null ],
     [ "SubdeviceRegisterAccessor", "class_chimera_t_k_1_1_subdevice_backend.html#aaf89942c9bca72aed0839f25f6117249", null ],
     [ "_registerMap", "class_chimera_t_k_1_1_subdevice_backend.html#a72b52eefeb319aa4a8e84a87faae0084", null ],
+    [ "addressToDataDelay", "class_chimera_t_k_1_1_subdevice_backend.html#a31cdcdbfc10595adc3432d810ed13a0a", null ],
     [ "mutex", "class_chimera_t_k_1_1_subdevice_backend.html#a2cb3917c576e89074e093bd369ecfb6f", null ],
     [ "sleepTime", "class_chimera_t_k_1_1_subdevice_backend.html#ab01bbfe4c4c1d1d9b8d18ee5e97e7586", null ],
     [ "targetAddress", "class_chimera_t_k_1_1_subdevice_backend.html#a0753ed5f431a13a99438183d5b9eb966", null ],

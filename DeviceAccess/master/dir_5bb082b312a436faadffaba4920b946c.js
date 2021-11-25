@@ -9,6 +9,7 @@ var dir_5bb082b312a436faadffaba4920b946c =
     [ "DmaIntf.h", "_dma_intf_8h.html", [
       [ "DmaIntf", "class_chimera_t_k_1_1_dma_intf.html", "class_chimera_t_k_1_1_dma_intf" ]
     ] ],
+    [ "EventFile.h", "_event_file_8h.html", "_event_file_8h" ],
     [ "XdmaBackend.h", "_xdma_backend_8h.html", [
       [ "XdmaBackend", "class_chimera_t_k_1_1_xdma_backend.html", "class_chimera_t_k_1_1_xdma_backend" ]
     ] ],

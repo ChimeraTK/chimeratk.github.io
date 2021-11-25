@@ -16,6 +16,8 @@ var searchData=
   ['_7edmapfilesparser',['~DMapFilesParser',['../class_chimera_t_k_1_1_d_map_files_parser.html#ab1f4f81945c523d1afd328fdf88d87a7',1,'ChimeraTK::DMapFilesParser']]],
   ['_7edummybackend',['~DummyBackend',['../class_chimera_t_k_1_1_dummy_backend.html#aabd3f2be02887349b90efa2af609a326',1,'ChimeraTK::DummyBackend']]],
   ['_7edummyprotocolimplementor',['~DummyProtocolImplementor',['../struct_dummy_protocol_implementor.html#aa8cc5b73e31d4e73b04356e66992d9e6',1,'DummyProtocolImplementor']]],
+  ['_7eeventfile',['~EventFile',['../class_chimera_t_k_1_1_event_file.html#a2c015bf15afa8d940f4749ee5183660b',1,'ChimeraTK::EventFile']]],
+  ['_7eeventthread',['~EventThread',['../class_chimera_t_k_1_1_event_thread.html#a15e93964080a3ec0d0ff5bae311ec9a2',1,'ChimeraTK::EventThread']]],
   ['_7eexamplebackend',['~ExampleBackend',['../class_example_backend.html#a548c46b38a7a6617ac602a1b34e5720f',1,'ExampleBackend']]],
   ['_7eexceptiondummypolldecoratorbase',['~ExceptionDummyPollDecoratorBase',['../struct_chimera_t_k_1_1_exception_dummy_poll_decorator_base.html#a55afd362f21e0ee1fc0ba09fd9ce22a8',1,'ChimeraTK::ExceptionDummyPollDecoratorBase']]],
   ['_7eexceptiondummypushdecorator',['~ExceptionDummyPushDecorator',['../struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#abbe256286bde78acae7f8a5f504fa6ea',1,'ChimeraTK::ExceptionDummyPushDecorator']]],

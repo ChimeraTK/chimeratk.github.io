@@ -144,6 +144,7 @@ var menudata={children:[
 {text:"Related Functions",url:"functions_rela.html",children:[
 {text:"b",url:"functions_rela.html#index_b"},
 {text:"d",url:"functions_rela.html#index_d"},
+{text:"e",url:"functions_rela.html#index_e"},
 {text:"l",url:"functions_rela.html#index_l"},
 {text:"m",url:"functions_rela.html#index_m"},
 {text:"n",url:"functions_rela.html#index_n"},
