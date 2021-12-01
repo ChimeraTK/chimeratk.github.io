@@ -31,7 +31,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_mtca_programmer_base_8cpp.html",
-"struct_prog_access_dmap.html#a428891bd42f302560d292fcf955e3b18"
+"struct_prog_access_dmap.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
