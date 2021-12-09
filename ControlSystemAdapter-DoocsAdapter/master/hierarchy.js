@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "ChimeraTK::SpectrumDescription::Axis", "struct_chimera_t_k_1_1_spectrum_description_1_1_axis.html", null ],
     [ "ChimeraTK::XyDescription::Axis", "struct_chimera_t_k_1_1_xy_description_1_1_axis.html", null ],
     [ "BusinessLogic", "struct_business_logic.html", null ],
     [ "D_ifff", null, [

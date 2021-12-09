@@ -9,7 +9,7 @@ var searchData=
   ['datamatching',['dataMatching',['../struct_chimera_t_k_1_1_property_attributes.html#ae036c433a7fcfeff798e5be06b877e26',1,'ChimeraTK::PropertyAttributes']]],
   ['datatype',['DataType',['../struct_chimera_t_k_1_1_auto_property_description.html#ae47b83262db33cd0267c9470e1d78661',1,'ChimeraTK::AutoPropertyDescription::DataType()'],['../struct_chimera_t_k_1_1_auto_property_description.html#ac137241890437840be9f80a0502fe246',1,'ChimeraTK::AutoPropertyDescription::dataType()']]],
   ['derivetype',['deriveType',['../struct_chimera_t_k_1_1_auto_property_description.html#a3cfc7fc63c81386a2eb16f652b1e7c63',1,'ChimeraTK::AutoPropertyDescription']]],
-  ['description',['description',['../struct_chimera_t_k_1_1_xy_description.html#a8dbd08e1db49b6b78216a523c79f6b7d',1,'ChimeraTK::XyDescription']]],
+  ['description',['description',['../struct_chimera_t_k_1_1_spectrum_description.html#a13b843a0ecd9ac2013a5de11ab8cbf8d',1,'ChimeraTK::SpectrumDescription::description()'],['../struct_chimera_t_k_1_1_xy_description.html#a8dbd08e1db49b6b78216a523c79f6b7d',1,'ChimeraTK::XyDescription::description()']]],
   ['determinename',['determineName',['../namespace_chimera_t_k.html#a76ae8c499735588a556f99205b693955',1,'ChimeraTK']]],
   ['directimport',['directImport',['../class_chimera_t_k_1_1_variable_mapper.html#aa82afb60d4171aae9cdf9f89f8a892e8',1,'ChimeraTK::VariableMapper']]],
   ['doocs_5fadapter_5fdefault_5ffixture',['DOOCS_ADAPTER_DEFAULT_FIXTURE',['../server_based_test_tools_8h.html#a1fee8002aaa2abcd5a1b23996c3d979e',1,'serverBasedTestTools.h']]],
