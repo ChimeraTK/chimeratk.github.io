@@ -33,6 +33,7 @@ var searchData=
   ['dummybackendbase',['DummyBackendBase',['../class_chimera_t_k_1_1_dummy_backend_base.html',1,'ChimeraTK']]],
   ['dummybackendbase_3c_20dummybackend_20_3e',['DummyBackendBase&lt; DummyBackend &gt;',['../class_chimera_t_k_1_1_dummy_backend_base.html',1,'ChimeraTK']]],
   ['dummybackendbase_3c_20shareddummybackend_20_3e',['DummyBackendBase&lt; SharedDummyBackend &gt;',['../class_chimera_t_k_1_1_dummy_backend_base.html',1,'ChimeraTK']]],
+  ['dummyforareahandshakebackend',['DummyForAreaHandshakeBackend',['../struct_dummy_for_area_handshake_backend.html',1,'']]],
   ['dummymultiplexedregisteraccessor',['DummyMultiplexedRegisterAccessor',['../class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html',1,'ChimeraTK']]],
   ['dummymultiplexedregisteraccessor_3c_20int_20_3e',['DummyMultiplexedRegisterAccessor&lt; int &gt;',['../class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html',1,'ChimeraTK']]],
   ['dummymultiplexedregisteraccessor_3c_20minimumusertype_20_3e',['DummyMultiplexedRegisterAccessor&lt; minimumUserType &gt;',['../class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html',1,'ChimeraTK']]],

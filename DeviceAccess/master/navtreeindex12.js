@@ -1,5 +1,11 @@
 var NAVTREEINDEX12 =
 {
+"struct_chimera_t_k_1_1_async_variable_impl.html#a59d1b965a57b5c4a6019945caa5efa12":[20,0,1,8,2],
+"struct_chimera_t_k_1_1_async_variable_impl.html#a5b7b5dcaf5a299d1826b6f49c7d91016":[20,0,1,8,6],
+"struct_chimera_t_k_1_1_async_variable_impl.html#ae7ac1aa2b66cbd5dd99c3ae551700028":[20,0,1,8,5],
+"struct_chimera_t_k_1_1_async_variable_impl.html#af0f062a4bf95af842dde266c943d49c3":[20,0,1,8,4],
+"struct_chimera_t_k_1_1_copy_register_decorator.html":[20,0,1,16],
+"struct_chimera_t_k_1_1_copy_register_decorator.html#a3862add181c233c1f80365008e87a57d":[20,0,1,16,1],
 "struct_chimera_t_k_1_1_copy_register_decorator.html#a762babb29356600d740f549482d50c68":[20,0,1,16,3],
 "struct_chimera_t_k_1_1_copy_register_decorator.html#a7eed48aa29f299f930ec3cc28bab6923":[20,0,1,16,0],
 "struct_chimera_t_k_1_1_copy_register_decorator.html#ae4e47253eee1f8e86f9dbb64832e3535":[20,0,1,16,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX12 =
 "struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper.html":[20,0,1,114,5],
 "struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper.html#aa998e0e8c7d21a1d099d62a6360a7393":[20,0,1,114,5,1],
 "struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper.html#af98dc444b20483b8c6dfbf1b13b7594f":[20,0,1,114,5,0],
-"struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper_3_01_t_00_01false_01_4.html":[20,0,1,114,6],
-"struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper_3_01_t_00_01false_01_4.html#a17ef516d3675783e9c54ee1e4c653a9d":[20,0,1,114,6,0],
-"struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper_3_01_t_00_01false_01_4.html#aafabf2dcf796cf30333a41bb035730a9":[20,0,1,114,6,1],
-"struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper.html":[20,0,1,114,7],
-"struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper.html#ad87ddb8699f13344d4613061db591484":[20,0,1,114,7,0],
-"struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper_3_01_t_00_01false_01_4.html":[20,0,1,114,8],
-"struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper_3_01_t_00_01false_01_4.html#a1a6f0b6c292c6567472a002c99673775":[20,0,1,114,8,0]
+"struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper_3_01_t_00_01false_01_4.html":[20,0,1,114,6]
 };

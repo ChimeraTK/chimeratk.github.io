@@ -28,6 +28,7 @@ var searchData=
   ['dummybackend_2ecc',['DummyBackend.cc',['../_dummy_backend_8cc.html',1,'']]],
   ['dummybackend_2eh',['DummyBackend.h',['../device__backends_2include_2_dummy_backend_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_dummy_backend_8h.html',1,'(Global Namespace)']]],
   ['dummybackendbase_2eh',['DummyBackendBase.h',['../_dummy_backend_base_8h.html',1,'']]],
+  ['dummyforareahandshake_2ecc',['DummyForAreaHandshake.cc',['../_dummy_for_area_handshake_8cc.html',1,'']]],
   ['dummyprotocol0_2ecc',['DummyProtocol0.cc',['../_dummy_protocol0_8cc.html',1,'']]],
   ['dummyprotocol0_2eh',['DummyProtocol0.h',['../_dummy_protocol0_8h.html',1,'']]],
   ['dummyprotocol1_2ecc',['DummyProtocol1.cc',['../_dummy_protocol1_8cc.html',1,'']]],

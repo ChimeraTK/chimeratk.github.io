@@ -34,6 +34,7 @@ var annotated_dup =
     [ "DMapFileParserTestSuite", "class_d_map_file_parser_test_suite.html", "class_d_map_file_parser_test_suite" ],
     [ "DMapFilesParserTest", "class_d_map_files_parser_test.html", "class_d_map_files_parser_test" ],
     [ "DMapFilesParserTestSuite", "class_d_map_files_parser_test_suite.html", "class_d_map_files_parser_test_suite" ],
+    [ "DummyForAreaHandshakeBackend", "struct_dummy_for_area_handshake_backend.html", "struct_dummy_for_area_handshake_backend" ],
     [ "DummyProtocolImplementor", "struct_dummy_protocol_implementor.html", "struct_dummy_protocol_implementor" ],
     [ "DummyRegisterTest", "class_dummy_register_test.html", "class_dummy_register_test" ],
     [ "DummyRegisterTestSuite", "class_dummy_register_test_suite.html", "class_dummy_register_test_suite" ],

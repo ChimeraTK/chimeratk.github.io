@@ -53,6 +53,7 @@ var searchData=
   ['anotherworkingbackend_2ecc',['AnotherWorkingBackend.cc',['../_another_working_backend_8cc.html',1,'']]],
   ['appendnumbertoname',['appendNumberToName',['../helper_functions_8h.html#a46b0ebb2324f645c97fa08cebca0f010',1,'appendNumberToName(std::string name, int cardNumber):&#160;helperFunctions.cc'],['../helper_functions_8cc.html#a4588ba93ef42031eafc572bfebe9b2ca',1,'appendNumberToName(std::string name, int suffixNumber):&#160;helperFunctions.cc']]],
   ['area',['area',['../struct_static_core.html#a6462bc497b1e3a1143929d9e5747e238',1,'StaticCore::area()'],['../class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5ca4b82677b6c1408df4be21ada9a584fde',1,'ChimeraTK::SubdeviceBackend::area()']]],
+  ['areahandshake',['areaHandshake',['../class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5ca823016c445fd949268f2194963bc235f',1,'ChimeraTK::SubdeviceBackend']]],
   ['areasize',['areaSize',['../struct_static_core.html#a288c03e7a0df51b5d6702b29b4385c89',1,'StaticCore']]],
   ['areatype',['AreaType',['../struct_area_type.html',1,'']]],
   ['argument',['Argument',['../struct_argument.html',1,'Argument'],['../struct_argument.html#aa5251ed60ee59544dfddc78043e7d1da',1,'Argument::Argument()']]],

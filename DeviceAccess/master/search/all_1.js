@@ -1,7 +1,7 @@
 var searchData=
 [
   ['_5faccaddress',['_accAddress',['../class_chimera_t_k_1_1_subdevice_register_accessor.html#a874482c50dee391ac09698c07f25631d',1,'ChimeraTK::SubdeviceRegisterAccessor']]],
-  ['_5faccdata',['_accData',['../class_chimera_t_k_1_1_subdevice_register_accessor.html#a1222691fc0f95f42432f1838d7008a1b',1,'ChimeraTK::SubdeviceRegisterAccessor']]],
+  ['_5faccdataarea',['_accDataArea',['../class_chimera_t_k_1_1_subdevice_register_accessor.html#a00a787c3ce409abe9aef67c33b896c49',1,'ChimeraTK::SubdeviceRegisterAccessor']]],
   ['_5faccessmodeflags',['_accessModeFlags',['../class_chimera_t_k_1_1_transfer_element.html#a35e5595381e62b6f86d524761c3be44b',1,'ChimeraTK::TransferElement']]],
   ['_5faccessor',['_accessor',['../class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#af0f684eb43ab495074a0f1dd6c8b6b15',1,'ChimeraTK::LNMBackendBitAccessor::_accessor()'],['../class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a90f6d724c9c292b0ce248fc01fc6a865',1,'ChimeraTK::LNMBackendChannelAccessor::_accessor()']]],
   ['_5faccessormanager',['_accessorManager',['../class_chimera_t_k_1_1_async_n_d_register_accessor.html#adbb8db83f23525c9783456f6d006f515',1,'ChimeraTK::AsyncNDRegisterAccessor']]],

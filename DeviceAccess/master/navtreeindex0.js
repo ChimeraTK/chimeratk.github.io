@@ -67,6 +67,8 @@ var NAVTREEINDEX0 =
 "_dummy_backend_base_8h.html":[21,0,1,0,7],
 "_dummy_backend_base_8h.html#ae845db7f933611bff0617577388e4c4f":[21,0,1,0,7,1],
 "_dummy_backend_base_8h_source.html":[21,0,1,0,7],
+"_dummy_for_area_handshake_8cc.html":[21,0,7,0,1],
+"_dummy_for_area_handshake_8cc_source.html":[21,0,7,0,1],
 "_dummy_protocol0_8cc.html":[21,0,7,3,1,1],
 "_dummy_protocol0_8cc_source.html":[21,0,7,3,1,1],
 "_dummy_protocol0_8h.html":[21,0,7,3,0,1],
@@ -148,8 +150,8 @@ var NAVTREEINDEX0 =
 "_n_d_register_accessor_decorator_8cc_source.html":[21,0,1,5,9],
 "_not_implemented_exception_8h.html":[21,0,5,33],
 "_not_implemented_exception_8h_source.html":[21,0,5,33],
-"_not_registering_plugin_8cc.html":[21,0,7,0,1],
-"_not_registering_plugin_8cc_source.html":[21,0,7,0,1],
+"_not_registering_plugin_8cc.html":[21,0,7,0,2],
+"_not_registering_plugin_8cc_source.html":[21,0,7,0,2],
 "_numeric_addressed_backend_8cc.html":[21,0,1,5,10],
 "_numeric_addressed_backend_8cc_source.html":[21,0,1,5,10],
 "_numeric_addressed_backend_muxed_register_accessor_8cc.html":[21,0,1,5,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "_subdevice_register_accessor_8cc.html":[21,0,1,6,1,1],
 "_subdevice_register_accessor_8cc_source.html":[21,0,1,6,1,1],
 "_subdevice_register_accessor_8h.html":[21,0,1,6,0,1],
-"_subdevice_register_accessor_8h_source.html":[21,0,1,6,0,1],
-"_transfer_element_8cc.html":[21,0,0,1,4],
-"_transfer_element_8cc_source.html":[21,0,0,1,4]
+"_subdevice_register_accessor_8h_source.html":[21,0,1,6,0,1]
 };

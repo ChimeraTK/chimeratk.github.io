@@ -164,7 +164,8 @@ Static Public Member Functions</h2></td></tr>
 Protected Types</h2></td></tr>
 <tr class="memitem:a7753d98abbf70b7ef234a80731bb4c5c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5c">Type</a> { <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5ca4b82677b6c1408df4be21ada9a584fde">Type::area</a>, 
 <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5caadc4f6303576980fe0402f0c06c5b9fd">Type::threeRegisters</a>, 
-<a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5caa79cab19160fbdafa655ba29a5716758">Type::twoRegisters</a>
+<a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5caa79cab19160fbdafa655ba29a5716758">Type::twoRegisters</a>, 
+<a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a7753d98abbf70b7ef234a80731bb4c5ca823016c445fd949268f2194963bc235f">Type::areaHandshake</a>
  }</td></tr>
 <tr class="separator:a7753d98abbf70b7ef234a80731bb4c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -182,10 +183,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad584015f09db6583a6f21a67c3e83710"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ad584015f09db6583a6f21a67c3e83710">getRegisterAccessor_area</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
 <tr class="memdesc:ad584015f09db6583a6f21a67c3e83710"><td class="mdescLeft">&#160;</td><td class="mdescRight">getRegisterAccessor implemenation for area types  <a href="#ad584015f09db6583a6f21a67c3e83710">More...</a><br /></td></tr>
 <tr class="separator:ad584015f09db6583a6f21a67c3e83710"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2a15d20bba67a7a0e5690a4a62cf8f2"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:ac2a15d20bba67a7a0e5690a4a62cf8f2"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ac2a15d20bba67a7a0e5690a4a62cf8f2">getRegisterAccessor_3regs</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
-<tr class="memdesc:ac2a15d20bba67a7a0e5690a4a62cf8f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">getRegisterAccessor implemenation for threeRegisters types  <a href="#ac2a15d20bba67a7a0e5690a4a62cf8f2">More...</a><br /></td></tr>
-<tr class="separator:ac2a15d20bba67a7a0e5690a4a62cf8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0e21429fe072dbf3e6ea3c0b66771e"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a2f0e21429fe072dbf3e6ea3c0b66771e"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a2f0e21429fe072dbf3e6ea3c0b66771e">getRegisterAccessor_synchronized</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
+<tr class="memdesc:a2f0e21429fe072dbf3e6ea3c0b66771e"><td class="mdescLeft">&#160;</td><td class="mdescRight">getRegisterAccessor implemenation for threeRegisters types  <a href="#a2f0e21429fe072dbf3e6ea3c0b66771e">More...</a><br /></td></tr>
+<tr class="separator:a2f0e21429fe072dbf3e6ea3c0b66771e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f4e065c2951bee366d15aa23a50adf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a7f4e065c2951bee366d15aa23a50adf3">obtainTargetBackend</a> ()</td></tr>
 <tr class="memdesc:a7f4e065c2951bee366d15aa23a50adf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">obtain the target backend if not yet done  <a href="#a7f4e065c2951bee366d15aa23a50adf3">More...</a><br /></td></tr>
 <tr class="separator:a7f4e065c2951bee366d15aa23a50adf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,12 +199,18 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae231a2b26431cb1bccee3b18723e367d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ae231a2b26431cb1bccee3b18723e367d">activateAsyncRead</a> () noexcept override</td></tr>
 <tr class="memdesc:ae231a2b26431cb1bccee3b18723e367d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate asyncronous read for all transfer elements where <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> is set.  <a href="#ae231a2b26431cb1bccee3b18723e367d">More...</a><br /></td></tr>
 <tr class="separator:ae231a2b26431cb1bccee3b18723e367d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b7c93ebf4975c7b14b6fa47104eb33a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a9b7c93ebf4975c7b14b6fa47104eb33a">needAreaParam</a> ()</td></tr>
+<tr class="separator:a9b7c93ebf4975c7b14b6fa47104eb33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c66337776d133fb4f7f7fa84ca1f404"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a3c66337776d133fb4f7f7fa84ca1f404">needStatusParam</a> ()</td></tr>
+<tr class="separator:a3c66337776d133fb4f7f7fa84ca1f404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8f9878a26cc5ff01e87cde2c5301df"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html">SubdeviceRegisterAccessor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#adf8f9878a26cc5ff01e87cde2c5301df">getRegisterAccessor_helper</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html">RegisterInfoMap::RegisterInfo</a> &gt; &amp;info)</td></tr>
+<tr class="separator:adf8f9878a26cc5ff01e87cde2c5301df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a729af3d2e645796f1b12604efafb588c"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a729af3d2e645796f1b12604efafb588c"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; int32_t &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a729af3d2e645796f1b12604efafb588c">getRegisterAccessor_area</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
 <tr class="separator:a729af3d2e645796f1b12604efafb588c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a81ab17340070dc7b1175023e2857b4"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:a9a81ab17340070dc7b1175023e2857b4"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; int32_t &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a9a81ab17340070dc7b1175023e2857b4">getRegisterAccessor_3regs</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
-<tr class="separator:a9a81ab17340070dc7b1175023e2857b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54baec4e8d0eb03d17971a3964423ce8"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a54baec4e8d0eb03d17971a3964423ce8"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; int32_t &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a54baec4e8d0eb03d17971a3964423ce8">getRegisterAccessor_synchronized</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
+<tr class="separator:a54baec4e8d0eb03d17971a3964423ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -269,10 +276,13 @@ Friends</h2></td></tr>
 URI scheme:<br />
 <pre class="fragment">(subdevice?type=3regs&amp;device=&lt;targetDevice&gt;&amp;address=&lt;addressRegister&gt;&amp;data=&lt;dataRegister&gt;&amp;status=&lt;statusRegister&gt;&amp;sleep=&lt;usecs&gt;&amp;map=&lt;mapFile&gt;)</pre> The sleep parameter is optional and defaults to 100 usecs. It sets the polling interval for the status register in microseconds. Another optional parameter "dataDelay" can be used to configure an additional delay in microseconds between the write of the address and the data registers (defaults to 0 usecs).</li>
 <li>"2regs" type: same as "3regs" but without a status register. Instead the sleep parameter is mandatory and specifies the fixed sleep time before each operation.</li>
+<li>"areaHandshake" type: mapped area, but before write operations to registers inside the map, waits for value 0 in the status register like in 3regs mode. The sleep parameter is optional.<br />
+URI scheme:<br />
+<pre class="fragment">(subdevice?type=areaHandshake&amp;device=&lt;targetDevice&gt;&amp;area=&lt;targetRegister&gt;&amp;map=mapFile&amp;status=&lt;statusRegister&gt;&amp;sleep=&lt;usecs&gt;)</pre></li>
 </ul>
 <p>Example: We like to use the register "APP.0.EXT_PZ16M" of the device with the alias name "TCK7_0" in our dmap file as a target and the file piezo_pz16m_acc1_r0.mapp as a map file. The file contains addresses relative to the beginning of the register "APP.0.EXT_PZ16M". The URI then looks like this: </p><pre class="fragment">(subdevice?type=area&amp;device=TCK7_0&amp;area=APP.0.EXT_PZ16M&amp;map=piezo_pz16m_acc1_r0.mapp)</pre><dl class="section warning"><dt>Warning</dt><dd>The protocol for the types "3regs" and "2regs" is not yet finalised. In particular read transfers might change in future. Please do not use these for reading in production code! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00052">52</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00058">58</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a7753d98abbf70b7ef234a80731bb4c5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7753d98abbf70b7ef234a80731bb4c5c">&#9670;&nbsp;</a></span>Type</h2>
@@ -297,9 +307,10 @@ URI scheme:<br />
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7753d98abbf70b7ef234a80731bb4c5ca4b82677b6c1408df4be21ada9a584fde"></a>area&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7753d98abbf70b7ef234a80731bb4c5caadc4f6303576980fe0402f0c06c5b9fd"></a>threeRegisters&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7753d98abbf70b7ef234a80731bb4c5caa79cab19160fbdafa655ba29a5716758"></a>twoRegisters&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7753d98abbf70b7ef234a80731bb4c5ca823016c445fd949268f2194963bc235f"></a>areaHandshake&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00072">72</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00078">78</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -326,7 +337,7 @@ URI scheme:<br />
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a767cac6cd44e993c13796c841a45c54b_cgraph.svg" width="100%" height="535"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a767cac6cd44e993c13796c841a45c54b_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -363,7 +374,7 @@ URI scheme:<br />
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00056">56</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00062">62</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -405,7 +416,7 @@ URI scheme:<br />
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a513692593b6dc8babc9544d9bfea04c8">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00525">525</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00504">504</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -452,7 +463,7 @@ URI scheme:<br />
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a655b8995589b3916ce9b71633f8fe33e">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00184">184</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00175">175</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -512,7 +523,7 @@ URI scheme:<br />
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a4a372c08e928fc807ad615eb4a4347bd_cgraph.svg" width="100%" height="535"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a4a372c08e928fc807ad615eb4a4347bd_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -568,128 +579,6 @@ URI scheme:<br />
 
 </div>
 </div>
-<a id="ac2a15d20bba67a7a0e5690a4a62cf8f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2a15d20bba67a7a0e5690a4a62cf8f2">&#9670;&nbsp;</a></span>getRegisterAccessor_3regs() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename UserType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt; ChimeraTK::SubdeviceBackend::getRegisterAccessor_3regs </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
-          <td class="paramname"><em>registerPathName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>numberOfWords</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>wordOffsetInRegister</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>getRegisterAccessor implemenation for threeRegisters types </p>
-
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00387">387</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_ac2a15d20bba67a7a0e5690a4a62cf8f2_cgraph.svg" width="531" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a9a81ab17340070dc7b1175023e2857b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a81ab17340070dc7b1175023e2857b4">&#9670;&nbsp;</a></span>getRegisterAccessor_3regs() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt;int32_t&gt; &gt; ChimeraTK::SubdeviceBackend::getRegisterAccessor_3regs </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
-          <td class="paramname"><em>registerPathName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>numberOfWords</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>wordOffsetInRegister</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00470">470</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a9a81ab17340070dc7b1175023e2857b4_cgraph.svg" width="510" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
 <a id="ad584015f09db6583a6f21a67c3e83710"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad584015f09db6583a6f21a67c3e83710">&#9670;&nbsp;</a></span>getRegisterAccessor_area() <span class="overload">[1/2]</span></h2>
 
@@ -740,12 +629,12 @@ template&lt;typename UserType &gt; </div>
 
 <p>getRegisterAccessor implemenation for area types </p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00352">352</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00344">344</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_ad584015f09db6583a6f21a67c3e83710_cgraph.svg" width="532" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -800,13 +689,85 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00438">438</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00444">444</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a729af3d2e645796f1b12604efafb588c_cgraph.svg" width="510" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="adf8f9878a26cc5ff01e87cde2c5301df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf8f9878a26cc5ff01e87cde2c5301df">&#9670;&nbsp;</a></span>getRegisterAccessor_helper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_subdevice_register_accessor.html">SubdeviceRegisterAccessor</a> &gt; ChimeraTK::SubdeviceBackend::getRegisterAccessor_helper </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numberOfWords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>wordOffsetInRegister</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_register_info_map_1_1_register_info.html">RegisterInfoMap::RegisterInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00377">377</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_adf8f9878a26cc5ff01e87cde2c5301df_cgraph.svg" width="532" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a729af3d2e645796f1b12604efafb588c_cgraph.svg" width="510" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_adf8f9878a26cc5ff01e87cde2c5301df_icgraph.svg" width="100%" height="430"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -860,7 +821,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00289">289</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00280">280</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -875,6 +836,128 @@ template&lt;typename UserType &gt; </div>
 </div>
 <div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a83996f092b4370d18fcac2ab205481cc_icgraph.svg" width="100%" height="405"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a2f0e21429fe072dbf3e6ea3c0b66771e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f0e21429fe072dbf3e6ea3c0b66771e">&#9670;&nbsp;</a></span>getRegisterAccessor_synchronized() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UserType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt; ChimeraTK::SubdeviceBackend::getRegisterAccessor_synchronized </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numberOfWords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>wordOffsetInRegister</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getRegisterAccessor implemenation for threeRegisters types </p>
+
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00419">419</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a2f0e21429fe072dbf3e6ea3c0b66771e_cgraph.svg" width="100%" height="574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a54baec4e8d0eb03d17971a3964423ce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54baec4e8d0eb03d17971a3964423ce8">&#9670;&nbsp;</a></span>getRegisterAccessor_synchronized() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt;int32_t&gt; &gt; ChimeraTK::SubdeviceBackend::getRegisterAccessor_synchronized </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;&#160;</td>
+          <td class="paramname"><em>registerPathName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numberOfWords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>wordOffsetInRegister</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00476">476</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a54baec4e8d0eb03d17971a3964423ce8_cgraph.svg" width="100%" height="574"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -909,13 +992,91 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00134">134</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00141">141</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a44636d261cd8ce509c2d5ab93664ab55_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a9b7c93ebf4975c7b14b6fa47104eb33a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b7c93ebf4975c7b14b6fa47104eb33a">&#9670;&nbsp;</a></span>needAreaParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::SubdeviceBackend::needAreaParam </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00147">147</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a9b7c93ebf4975c7b14b6fa47104eb33a_icgraph.svg" width="100%" height="452"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a3c66337776d133fb4f7f7fa84ca1f404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c66337776d133fb4f7f7fa84ca1f404">&#9670;&nbsp;</a></span>needStatusParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::SubdeviceBackend::needStatusParam </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00148">148</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a3c66337776d133fb4f7f7fa84ca1f404_cgraph.svg" width="100%" height="525"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a3c66337776d133fb4f7f7fa84ca1f404_icgraph.svg" width="100%" height="430"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -946,12 +1107,12 @@ template&lt;typename UserType &gt; </div>
 
 <p>obtain the target backend if not yet done </p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00167">167</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00158">158</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a7f4e065c2951bee366d15aa23a50adf3_icgraph.svg" width="100%" height="535"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -985,20 +1146,20 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a9da6866e3f0b481e1fcc13985382f5f9">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00175">175</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00166">166</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a3aa244b79dfa6ddd8357b5854aa112d7_cgraph.svg" width="510" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a3aa244b79dfa6ddd8357b5854aa112d7_icgraph.svg" width="510" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1034,13 +1195,13 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#ae27b29c1570a6f749efdb0dfe4f2972d">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00062">62</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00068">68</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_ab828431ccd2b4255ccc0ba469d1999f0_cgraph.svg" width="100%" height="535"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_ab828431ccd2b4255ccc0ba469d1999f0_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -1074,20 +1235,20 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a5332e4cddac1f176352f53cf3dbcbf31">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00518">518</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
-<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00497">497</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_ae31023a5d3bd9e0e129a6738ccd96b4b_cgraph.svg" width="510" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_ae31023a5d3bd9e0e129a6738ccd96b4b_icgraph.svg" width="510" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1142,13 +1303,13 @@ template&lt;typename UserType &gt; </div>
 
 <p>Check consistency of the passed sizes and offsets against the information in the map file Will adjust numberOfWords to the default value if 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00309">309</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
-<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00301">301</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a5d0833f29eb3ccaf203ea395d5fcdd07_icgraph.svg" width="510" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_subdevice_backend_a5d0833f29eb3ccaf203ea395d5fcdd07_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -1175,7 +1336,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00070">70</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00076">76</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1202,7 +1363,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>map from register names to addresses </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00109">109</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00116">116</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1228,7 +1389,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>for type == threeRegisters or twoRegisters: sleep time between address and data write </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00106">106</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00113">113</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1254,7 +1415,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Mutex to deal with concurrent access to the device. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00080">80</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00087">87</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1280,7 +1441,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>for type == threeRegisters or twoRegisters: sleep time of polling loop resp. between operations, in usecs. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00103">103</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00110">110</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1306,7 +1467,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>for type == threeRegisters or twoRegisters: the name of the target registers </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00100">100</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00107">107</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1332,7 +1493,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>the target device name </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00089">89</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00096">96</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1358,7 +1519,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>for type == area: the name of the target register </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00096">96</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00103">103</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1382,7 +1543,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00100">100</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00107">107</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1406,7 +1567,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00100">100</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00107">107</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1433,7 +1594,7 @@ template&lt;typename UserType &gt; </div>
 <p>The target device backend itself. </p>
 <p>We are using directly a backend since we want to obtain NDRegisterAccessors which we can directly return in <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a83996f092b4370d18fcac2ab205481cc">getRegisterAccessor_impl()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00093">93</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00100">100</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1459,7 +1620,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>timeout (in milliseconds), used in threeRegisters to throw a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> if status register stuck at 1 </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00086">86</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00093">93</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1485,7 +1646,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>type of the subdeivce </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00083">83</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html#l00090">90</a> of file <a class="el" href="device__backends_2_subdevice_2include_2_subdevice_backend_8h_source.html">SubdeviceBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1499,7 +1660,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html">SubdeviceBackend</a></li>
-    <li class="footer">Generated on Fri Dec 3 2021 04:53:14 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Thu Dec 16 2021 04:53:26 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
