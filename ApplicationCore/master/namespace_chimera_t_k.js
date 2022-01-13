@@ -84,6 +84,7 @@ var namespace_chimera_t_k =
     [ "ThreadedFanOut", "class_chimera_t_k_1_1_threaded_fan_out.html", "class_chimera_t_k_1_1_threaded_fan_out" ],
     [ "ThreadedFanOutWithReturn", "class_chimera_t_k_1_1_threaded_fan_out_with_return.html", "class_chimera_t_k_1_1_threaded_fan_out_with_return" ],
     [ "TriggerFanOut", "class_chimera_t_k_1_1_trigger_fan_out.html", "class_chimera_t_k_1_1_trigger_fan_out" ],
+    [ "UserInputValidator", "struct_chimera_t_k_1_1_user_input_validator.html", "struct_chimera_t_k_1_1_user_input_validator" ],
     [ "Variable", "struct_chimera_t_k_1_1_variable.html", "struct_chimera_t_k_1_1_variable" ],
     [ "VariableDirection", "struct_chimera_t_k_1_1_variable_direction.html", "struct_chimera_t_k_1_1_variable_direction" ],
     [ "VariableGroup", "class_chimera_t_k_1_1_variable_group.html", "class_chimera_t_k_1_1_variable_group" ],

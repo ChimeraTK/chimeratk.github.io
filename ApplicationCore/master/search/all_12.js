@@ -35,6 +35,7 @@ var searchData=
   ['registername',['registerName',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a29c4580a91e4e43cbe1efa82b2de3f6d',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['registernameprefix',['registerNamePrefix',['../class_chimera_t_k_1_1_device_module.html#a3bd68002fced1ba4049ee2e798d7d26d',1,'ChimeraTK::DeviceModule']]],
   ['registerthread',['registerThread',['../class_chimera_t_k_1_1_application.html#abf343e8bf9893031d1785aa0aa1a1066',1,'ChimeraTK::Application::registerThread()'],['../class_chimera_t_k_1_1_profiler.html#a3c025d8af36c5c6415190b3843f5bb16',1,'ChimeraTK::Profiler::registerThread()']]],
+  ['reject',['reject',['../struct_chimera_t_k_1_1_user_input_validator_1_1_variable_base.html#ac37947066ea3340a966ef91ec88b9b0e',1,'ChimeraTK::UserInputValidator::VariableBase::reject()'],['../struct_chimera_t_k_1_1_user_input_validator_1_1_variable.html#a148416de150a042beac847b7806953ed',1,'ChimeraTK::UserInputValidator::Variable::reject()']]],
   ['releaselock',['releaseLock',['../class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#a61884bb031aa5f516aded1645c2355da',1,'ChimeraTK::TestableModeAccessorDecorator']]],
   ['removeexternaltrigger',['removeExternalTrigger',['../class_chimera_t_k_1_1_variable_network_node.html#a7680b3c87a0c4f1cfb994ee362b3be90',1,'ChimeraTK::VariableNetworkNode']]],
   ['removenode',['removeNode',['../class_chimera_t_k_1_1_variable_network.html#ac09351bf16c6727446fdfde3f0592334',1,'ChimeraTK::VariableNetwork']]],

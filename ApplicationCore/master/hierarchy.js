@@ -626,8 +626,13 @@ var hierarchy =
     [ "TriggerFanOutInitialValueEceptionDummy", "struct_trigger_fan_out_initial_value_eception_dummy.html", null ],
     [ "ChimeraTK::Application::TypedMakeConnectionCaller", "struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html", null ],
     [ "ChimeraTK::history::Update", "struct_chimera_t_k_1_1history_1_1_update.html", null ],
+    [ "ChimeraTK::UserInputValidator", "struct_chimera_t_k_1_1_user_input_validator.html", null ],
+    [ "ChimeraTK::UserInputValidator::Validator", "struct_chimera_t_k_1_1_user_input_validator_1_1_validator.html", null ],
     [ "ChimeraTK::ConfigReader::Var< T >", "struct_chimera_t_k_1_1_config_reader_1_1_var.html", null ],
     [ "ChimeraTK::Variable", "struct_chimera_t_k_1_1_variable.html", null ],
+    [ "ChimeraTK::UserInputValidator::VariableBase", "struct_chimera_t_k_1_1_user_input_validator_1_1_variable_base.html", [
+      [ "ChimeraTK::UserInputValidator::Variable< UserType, Accessor >", "struct_chimera_t_k_1_1_user_input_validator_1_1_variable.html", null ]
+    ] ],
     [ "ChimeraTK::VariableDirection", "struct_chimera_t_k_1_1_variable_direction.html", null ],
     [ "ChimeraTK::VariableNetwork", "class_chimera_t_k_1_1_variable_network.html", null ],
     [ "ChimeraTK::VariableNetworkNode", "class_chimera_t_k_1_1_variable_network_node.html", null ],
