@@ -120,10 +120,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0720037bc29528d2eac9af7b5078da70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Placeholder constructor, to allow late initialisation of the accessor, e.g.  <a href="#a0720037bc29528d2eac9af7b5078da70">More...</a><br /></td></tr>
 <tr class="separator:a0720037bc29528d2eac9af7b5078da70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acad78236ac3ce3b5f238c3f09f926567"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#acad78236ac3ce3b5f238c3f09f926567">operator UserType &amp;</a> ()</td></tr>
-<tr class="memdesc:acad78236ac3ce3b5f238c3f09f926567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit type conversion to user type T to access the value as a reference.  <a href="#acad78236ac3ce3b5f238c3f09f926567">More...</a><br /></td></tr>
+<tr class="memdesc:acad78236ac3ce3b5f238c3f09f926567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit type conversion to UserType&amp; to access the value as a reference.  <a href="#acad78236ac3ce3b5f238c3f09f926567">More...</a><br /></td></tr>
 <tr class="separator:acad78236ac3ce3b5f238c3f09f926567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a617d9578e36db7f04bf448280ad089d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#a617d9578e36db7f04bf448280ad089d8">operator const UserType &amp;</a> () const</td></tr>
-<tr class="memdesc:a617d9578e36db7f04bf448280ad089d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit type conversion to user type T to access the const value.  <a href="#a617d9578e36db7f04bf448280ad089d8">More...</a><br /></td></tr>
+<tr class="memdesc:a617d9578e36db7f04bf448280ad089d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit type conversion to const UserType&amp; to access the const reference.  <a href="#a617d9578e36db7f04bf448280ad089d8">More...</a><br /></td></tr>
 <tr class="separator:a617d9578e36db7f04bf448280ad089d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47763b3295a8b0ac97ae45e3d08109de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ScalarRegisterAccessor</a>&lt; UserType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#a47763b3295a8b0ac97ae45e3d08109de">operator=</a> (UserType rightHandSide)</td></tr>
 <tr class="memdesc:a47763b3295a8b0ac97ae45e3d08109de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator, assigns the first element.  <a href="#a47763b3295a8b0ac97ae45e3d08109de">More...</a><br /></td></tr>
@@ -339,7 +339,7 @@ template&lt;typename UserType&gt; </div>
 <p>Placeholder constructor, to allow late initialisation of the accessor, e.g. </p>
 <p>in the open function. </p><dl class="section attention"><dt>Attention</dt><dd>Accessors created with this constructors will be dysfunctional, calling any member function will throw an exception (by the boost::shared_ptr)! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00044">44</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00045">45</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -374,7 +374,7 @@ template&lt;typename COOKED_TYPE &gt; </div>
 <p>Get the cooked values in case the accessor is a raw accessor (which does not do data conversion). </p>
 <p>This returns the converted data from the user buffer. It does not do any read or write transfer. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00087">87</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00094">94</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -403,9 +403,9 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implicit type conversion to user type T to access the const value. </p>
+<p>Implicit type conversion to const UserType&amp; to access the const reference. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00054">54</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00057">57</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -434,7 +434,7 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implicit type conversion to user type T to access the value as a reference. </p>
+<p>Implicit type conversion to UserType&amp; to access the value as a reference. </p>
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00051">51</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
@@ -467,7 +467,7 @@ template&lt;typename UserType&gt; </div>
 
 <p>Pre-increment operator for the first element. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00063">63</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00070">70</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -507,7 +507,7 @@ template&lt;typename UserType&gt; </div>
 
 <p>Post-increment operator for the first element. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00069">69</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00076">76</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -546,7 +546,7 @@ template&lt;typename UserType&gt; </div>
 
 <p>Pre-decrement operator for the first element. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00066">66</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00073">73</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -586,7 +586,7 @@ template&lt;typename UserType&gt; </div>
 
 <p>Post-decrement operator for the first element. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00076">76</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00083">83</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -626,7 +626,7 @@ template&lt;typename UserType&gt; </div>
 
 <p>Assignment operator, assigns the first element. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00057">57</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00064">64</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -669,7 +669,7 @@ template&lt;typename COOKED_TYPE &gt; </div>
 <p>Set the cooked values in case the accessor is a raw accessor (which does not do data conversion). </p>
 <p>This converts to raw and writes the data to the user buffer. It does not do any read or write transfer. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00096">96</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00103">103</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -712,7 +712,7 @@ template&lt;typename UserType&gt; </div>
 <p>Convenience function to set and write new value if it differes from the current value. </p>
 <p>The given version number is only used in case the value differs. If versionNumber == {nullptr}, a new version number is generated only if the write actually takes place. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00105">105</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00112">112</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -747,7 +747,7 @@ template&lt;typename UserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00113">113</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html#l00120">120</a> of file <a class="el" href="device_2include_2_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -760,7 +760,7 @@ template&lt;typename UserType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html">ScalarRegisterAccessor</a></li>
-    <li class="footer">Generated on Sat Jan 15 2022 04:53:22 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue Jan 18 2022 04:53:23 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
