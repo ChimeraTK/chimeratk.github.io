@@ -103,6 +103,7 @@ var namespace_chimera_t_k =
     ] ],
     [ "runtime_error", "class_chimera_t_k_1_1runtime__error.html", "class_chimera_t_k_1_1runtime__error" ],
     [ "ScalarRegisterAccessor", "class_chimera_t_k_1_1_scalar_register_accessor.html", "class_chimera_t_k_1_1_scalar_register_accessor" ],
+    [ "ScalarRegisterAccessor< ChimeraTK::Boolean, std::nullptr_t >", "class_chimera_t_k_1_1_scalar_register_accessor_3_01_chimera_t_k_1_1_boolean_00_01std_1_1nullptr__t_01_4.html", "class_chimera_t_k_1_1_scalar_register_accessor_3_01_chimera_t_k_1_1_boolean_00_01std_1_1nullptr__t_01_4" ],
     [ "ScalarRegisterAccessor< std::string >", "class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html", "class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4" ],
     [ "Sdm", "struct_chimera_t_k_1_1_sdm.html", "struct_chimera_t_k_1_1_sdm" ],
     [ "SharedDummyBackend", "class_chimera_t_k_1_1_shared_dummy_backend.html", "class_chimera_t_k_1_1_shared_dummy_backend" ],
