@@ -1,6 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"spec_data_validity_propagation.html":[7],
 "spec_execption_handling.html":[5],
 "spec_execption_handling.html#spec_exceptionHandling_behaviour_runtime_errors":[5,1,0],
 "spec_execption_handling.html#spec_exceptionHandling_intro_comments":[5,0,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX5 =
 "struct_chimera_t_k_1_1_functor_set_values_array.html":[18,0,0,38],
 "struct_chimera_t_k_1_1_functor_set_values_array.html#a22b4b6eef5c8f1998bf628a10d99dc1e":[18,0,0,38,0],
 "struct_chimera_t_k_1_1_functor_set_values_array.html#a65bddd225e6556e83ea96b6233721870":[18,0,0,38,2],
-"struct_chimera_t_k_1_1_functor_set_values_array.html#ae12abee9c64cedd54736a7a365f6efb0":[18,0,0,38,1]
+"struct_chimera_t_k_1_1_functor_set_values_array.html#ae12abee9c64cedd54736a7a365f6efb0":[18,0,0,38,1],
+"struct_chimera_t_k_1_1_hierarchy_modifying_group.html":[18,0,0,39]
 };

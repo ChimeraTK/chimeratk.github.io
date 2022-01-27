@@ -1,6 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"struct_first_hierarchy_1_1_test_module_1_1_var_group.html#a7aac4d4d27ee200a97e7dbcd1937323f":[18,0,28,1,1,1],
 "struct_first_hierarchy_1_1_test_module_1_1_var_group.html#a8e7aa753406e8e9c1b73e8fbaa0f8853":[18,0,28,1,1,14],
 "struct_first_hierarchy_1_1_test_module_1_1_var_group.html#aa7f9ae0a95857c0e00020e8587806065":[18,0,28,1,1,6],
 "struct_first_hierarchy_1_1_test_module_1_1_var_group.html#ab105dab1ed9b650e56b7a1d9b92f1c28":[18,0,28,1,1,12],
@@ -249,5 +248,6 @@ var NAVTREEINDEX8 =
 "struct_second_hierarchy_1_1_second_module.html#afa6fb7d05c4f28af9489b488605888de":[18,0,63,0,7],
 "struct_second_hierarchy_1_1_second_module_1_1_extra_group.html":[18,0,63,0,0],
 "struct_second_hierarchy_1_1_second_module_1_1_extra_group.html#a841bd8e911cf79c97de20d93f73c3a9b":[18,0,63,0,0,0],
-"struct_second_hierarchy_1_1_test_module.html":[18,0,63,1]
+"struct_second_hierarchy_1_1_test_module.html":[18,0,63,1],
+"struct_second_hierarchy_1_1_test_module.html#a106c437d56f24935ebcbbff19d781593":[18,0,63,1,2]
 };

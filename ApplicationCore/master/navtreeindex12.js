@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"struct_test_module_with_variable_groups2.html#ae7506eb87c7394b2f28c70e57ec6595d":[18,0,117,3],
 "struct_test_prio_application.html":[18,0,118],
 "struct_test_prio_application.html#a1c8aa65835b99e3a840725cd4b52fb0a":[18,0,118,0],
 "struct_test_prio_application.html#a6f08f409b50d17e1feaa91daca134219":[18,0,118,2],
@@ -28,8 +27,8 @@ var NAVTREEINDEX12 =
 "struct_trigger_module.html#a00a000db8f8351e25d72d3274e59ccbb":[18,0,124,2],
 "struct_trigger_module.html#a040fb09ed059413c60b422d2ccf00b9f":[18,0,124,4],
 "struct_trigger_module.html#a36607fe654c27de9efac9b34972f89da":[18,0,124,5],
-"struct_trigger_module.html#a7523868a6efa6ac8cc93675a3c382fb7":[18,0,124,0],
 "struct_trigger_module.html#a7523868a6efa6ac8cc93675a3c382fb7":[18,0,124,1],
+"struct_trigger_module.html#a7523868a6efa6ac8cc93675a3c382fb7":[18,0,124,0],
 "struct_trigger_module.html#a930e782919b683bcf12265bfb7e72d02":[18,0,124,3],
 "struct_trigger_module.html#af623f212acd70145952c9692fa714497":[18,0,124,6],
 "struct_trigger_module.html#afd28da0151cbea672095c0818dd1e36f":[18,0,124,7],
@@ -107,8 +106,8 @@ var NAVTREEINDEX12 =
 "structtest_app.html#a41a6f5ea147b73718994979a68fae19a":[18,0,84,11],
 "structtest_app.html#a4dd7b4bfb10e6cd312a98f65e76af6c1":[18,0,84,3],
 "structtest_app.html#a4dd7b4bfb10e6cd312a98f65e76af6c1":[18,0,84,1],
-"structtest_app.html#a4dfd4404e1998e517b168adcc3fc9308":[18,0,84,0],
 "structtest_app.html#a4dfd4404e1998e517b168adcc3fc9308":[18,0,84,2],
+"structtest_app.html#a4dfd4404e1998e517b168adcc3fc9308":[18,0,84,0],
 "structtest_app.html#a6d08dc9306d99954c3818196f68f68ab":[18,0,84,7],
 "structtest_app.html#a814bfc0b2be654e9c5c52563b7a7a297":[18,0,84,13],
 "structtest_app.html#a8af2d86ab4879bec130d73ab2b039328":[18,0,84,12],
@@ -249,5 +248,6 @@ var NAVTREEINDEX12 =
 "test_device_initialisation_handler_8cc.html#a7cadc402273ba104ca92a9e8fb2ccd83":[19,0,10,0,11,7],
 "test_device_initialisation_handler_8cc.html#a83950dd861e8826645f7b41729dc2826":[19,0,10,0,11,6],
 "test_device_initialisation_handler_8cc.html#a991acb8cebbb3c0f25a233c4c72986f8":[19,0,10,0,11,3],
-"test_device_initialisation_handler_8cc.html#aca1033754f9b4558c293d862e4735478":[19,0,10,0,11,4]
+"test_device_initialisation_handler_8cc.html#aca1033754f9b4558c293d862e4735478":[19,0,10,0,11,4],
+"test_device_initialisation_handler_8cc.html#ae94a73f04927a960981d57f545c36f90":[19,0,10,0,11,5]
 };
