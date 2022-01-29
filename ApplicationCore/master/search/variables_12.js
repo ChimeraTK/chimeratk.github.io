@@ -17,6 +17,6 @@ var searchData=
   ['registernameprefix',['registerNamePrefix',['../class_chimera_t_k_1_1_device_module.html#a3bd68002fced1ba4049ee2e798d7d26d',1,'ChimeraTK::DeviceModule']]],
   ['requiredvalue',['requiredValue',['../struct_chimera_t_k_1_1_exact_monitor.html#ad3a58490c3c0f71cc538e0ebf78524bb',1,'ChimeraTK::ExactMonitor']]],
   ['result',['result',['../struct_module1.html#a1f17d004c2c7dfdbb925a2ed9efee80c',1,'Module1::result()'],['../struct_module2.html#a9a14d105e916570f102377de1147b462',1,'Module2::result()'],['../struct_module2.html#a496d12878154de4c46d81f75f2c45e72',1,'Module2::result()'],['../struct_module3.html#a28563f50b6102e991ea3cc502575eb17',1,'Module3::result()']]],
-  ['root',['root',['../struct_test_helper.html#a2387fc136808ed80747a2b23db89fcca',1,'TestHelper::root()'],['../namespacevariable_houseold_to_wiki_table.html#a193dd605ddbb0c227b8955204a1a8e7d',1,'variableHouseoldToWikiTable.root()']]],
+  ['root',['root',['../struct_test_helper.html#a2387fc136808ed80747a2b23db89fcca',1,'TestHelper::root()'],['../namespacedraw_module_connections.html#abfbed52cde3f71396dbf5c6942036fc8',1,'drawModuleConnections.root()'],['../namespacevariable_houseold_to_wiki_table.html#a193dd605ddbb0c227b8955204a1a8e7d',1,'variableHouseoldToWikiTable.root()']]],
   ['runcalled',['runCalled',['../class_chimera_t_k_1_1_application.html#a5cd9227555b95483251de62a82367660',1,'ChimeraTK::Application']]]
 ];

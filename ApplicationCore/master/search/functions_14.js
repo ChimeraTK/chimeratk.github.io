@@ -88,5 +88,5 @@ var searchData=
   ['_7evectorofeverythingapp',['~VectorOfEverythingApp',['../struct_vector_of_everything_app.html#a0961dd24a505effa151fc64cf064e06a',1,'VectorOfEverythingApp']]],
   ['_7evectorofmodulesapp',['~VectorOfModulesApp',['../struct_vector_of_modules_app.html#abbcb8d44a3464b2d804ab496b66b1cdf',1,'VectorOfModulesApp']]],
   ['_7evirtualmodule',['~VirtualModule',['../class_chimera_t_k_1_1_virtual_module.html#a783182881d5b16c0c08db344d090f3eb',1,'ChimeraTK::VirtualModule']]],
-  ['_7exmlgeneratorvisitor',['~XMLGeneratorVisitor',['../class_chimera_t_k_1_1_x_m_l_generator_visitor.html#a0301829d34f8835b38bbea4cd1ef291f',1,'ChimeraTK::XMLGeneratorVisitor']]]
+  ['_7exmlgeneratorvisitor',['~XMLGeneratorVisitor',['../class_chimera_t_k_1_1_x_m_l_generator_visitor.html#a3687c2dfb437f1455a48c922502bde06',1,'ChimeraTK::XMLGeneratorVisitor']]]
 ];

@@ -5,6 +5,7 @@ var searchData=
   ['makeconnections',['makeConnections',['../class_chimera_t_k_1_1_application.html#acbbcd560d74531326d4ce56c601132ca',1,'ChimeraTK::Application']]],
   ['makeconnectionsfornetwork',['makeConnectionsForNetwork',['../class_chimera_t_k_1_1_application.html#a9b3bd0b5ad6a7cef5bbd015e654bc584',1,'ChimeraTK::Application']]],
   ['makeconstant',['makeConstant',['../class_chimera_t_k_1_1_application.html#ac218f88f11166c115b0facb6a2c981f5',1,'ChimeraTK::Application::makeConstant()'],['../class_chimera_t_k_1_1_variable_network_node.html#a8a974782ca971fd143aad7b1e87419fa',1,'ChimeraTK::VariableNetworkNode::makeConstant()']]],
+  ['makenodename',['makeNodeName',['../namespacedraw_module_connections.html#a6ef9b047a12af39df2901e2c85589f2b',1,'drawModuleConnections']]],
   ['markcircularconsumers',['markCircularConsumers',['../class_chimera_t_k_1_1_application.html#a6927d6d885c9795e7ae1acf321a58e26',1,'ChimeraTK::Application']]],
   ['markcreated',['markCreated',['../class_chimera_t_k_1_1_variable_network.html#a9a762e216902521b42c86559abfc15d0',1,'ChimeraTK::VariableNetwork']]],
   ['mayreplaceother',['mayReplaceOther',['../class_timer_dummy_register_accessor.html#a40f81012077f9b0340d301beef191058',1,'TimerDummyRegisterAccessor::mayReplaceOther()'],['../class_chimera_t_k_1_1_constant_accessor.html#a0f6af4de06e4c1d7ff227260e18fa30b',1,'ChimeraTK::ConstantAccessor::mayReplaceOther()'],['../class_chimera_t_k_1_1_feeding_fan_out.html#a176dddfedbea6dbf15b9e3a76d111a11',1,'ChimeraTK::FeedingFanOut::mayReplaceOther()']]],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logging',['logging',['../namespacelogging.html',1,'']]]
+  ['drawmoduleconnections',['drawModuleConnections',['../namespacedraw_module_connections.html',1,'']]]
 ];
