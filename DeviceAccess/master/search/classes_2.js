@@ -6,6 +6,7 @@ var searchData=
   ['bitregisterdescriptorbase_3c_20regbit0ofvar_20_3e',['BitRegisterDescriptorBase&lt; RegBit0OfVar &gt;',['../struct_bit_register_descriptor_base.html',1,'']]],
   ['bitregisterdescriptorbase_3c_20regbit2ofwordfirmware_20_3e',['BitRegisterDescriptorBase&lt; RegBit2OfWordFirmware &gt;',['../struct_bit_register_descriptor_base.html',1,'']]],
   ['bitregisterdescriptorbase_3c_20regbit2ofwordfirmware_5fpush_20_3e',['BitRegisterDescriptorBase&lt; RegBit2OfWordFirmware_push &gt;',['../struct_bit_register_descriptor_base.html',1,'']]],
+  ['bitregisterdescriptorbase_3c_20regbit2ofwordfirmwareb_20_3e',['BitRegisterDescriptorBase&lt; RegBit2OfWordFirmwareB &gt;',['../struct_bit_register_descriptor_base.html',1,'']]],
   ['bitregisterdescriptorbase_3c_20regbit3ofvar_20_3e',['BitRegisterDescriptorBase&lt; RegBit3OfVar &gt;',['../struct_bit_register_descriptor_base.html',1,'']]],
   ['boolean',['Boolean',['../class_chimera_t_k_1_1_boolean.html',1,'ChimeraTK']]],
   ['buffer',['Buffer',['../struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer.html',1,'ChimeraTK::ExceptionDummyPushDecorator&lt; UserType &gt;::Buffer'],['../struct_chimera_t_k_1_1_n_d_register_accessor_1_1_buffer.html',1,'ChimeraTK::NDRegisterAccessor&lt; UserType &gt;::Buffer']]],

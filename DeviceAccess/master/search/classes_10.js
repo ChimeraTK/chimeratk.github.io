@@ -8,6 +8,7 @@ var searchData=
   ['scalarregisterdescriptorbase_3c_20regmonostabletrigger_20_3e',['ScalarRegisterDescriptorBase&lt; RegMonostableTrigger &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],
   ['scalarregisterdescriptorbase_3c_20regsingleword_20_3e',['ScalarRegisterDescriptorBase&lt; RegSingleWord &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],
   ['scalarregisterdescriptorbase_3c_20regsingleword_5fpush_20_3e',['ScalarRegisterDescriptorBase&lt; RegSingleWord_push &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],
+  ['scalarregisterdescriptorbase_3c_20regsinglewordb_20_3e',['ScalarRegisterDescriptorBase&lt; RegSingleWordB &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],
   ['scalarregisterdescriptorbase_3c_20regsinglewordscaled_5fr_20_3e',['ScalarRegisterDescriptorBase&lt; RegSingleWordScaled_R &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],
   ['scalarregisterdescriptorbase_3c_20regsinglewordscaled_5fw_20_3e',['ScalarRegisterDescriptorBase&lt; RegSingleWordScaled_W &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],
   ['scalarregisterdescriptorbase_3c_20regsinglewordscaledtwice_5fpush_20_3e',['ScalarRegisterDescriptorBase&lt; RegSingleWordScaledTwice_push &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],

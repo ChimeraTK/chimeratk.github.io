@@ -6,6 +6,7 @@ var searchData=
   ['sequencecounter',['sequenceCounter',['../class_test_dummy.html#a30e519979fca2e5552a50e447d62bb00',1,'TestDummy']]],
   ['serverthread',['serverThread',['../struct_f.html#a98c81d1a8ffc123b27ac180f924abb84',1,'F']]],
   ['sharedaccessormap',['sharedAccessorMap',['../class_chimera_t_k_1_1_logical_name_mapping_backend.html#ad7a5edbc226acdcd5c8a73aeaeb14e8e',1,'ChimeraTK::LogicalNameMappingBackend']]],
+  ['sharedaccessormap_5fmutex',['sharedAccessorMap_mutex',['../class_chimera_t_k_1_1_logical_name_mapping_backend.html#ac312b659a909625cf6fb6e67a74e1f96',1,'ChimeraTK::LogicalNameMappingBackend']]],
   ['signedflag',['signedFlag',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#abfed0bd506a5c85c2776c27a2a305efb',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
   ['single_5fword_5fwrite',['SINGLE_WORD_WRITE',['../class_chimera_t_k_1_1_rebot_dummy_session.html#ae5cb6c872eb4eb9c83ad4fc24761b099',1,'ChimeraTK::RebotDummySession']]],
   ['size_5frw',['size_rw',['../structdevice__rw.html#ad9348912dabb0b218d0c500c66dda20d',1,'device_rw']]],

@@ -370,6 +370,13 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "RegisterDescriptorBase< RegBit2OfWordFirmwareB >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegBit2OfWordFirmwareB >", "struct_one_d_register_descriptor_base.html", [
+        [ "BitRegisterDescriptorBase< RegBit2OfWordFirmwareB >", "struct_bit_register_descriptor_base.html", [
+          [ "RegBit2OfWordFirmwareB", "struct_reg_bit2_of_word_firmware_b.html", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "RegisterDescriptorBase< RegBit3OfVar >", "struct_register_descriptor_base.html", [
       [ "OneDRegisterDescriptorBase< RegBit3OfVar >", "struct_one_d_register_descriptor_base.html", [
         [ "BitRegisterDescriptorBase< RegBit3OfVar >", "struct_bit_register_descriptor_base.html", [
@@ -435,6 +442,13 @@ var hierarchy =
       [ "OneDRegisterDescriptorBase< RegSingleWord_push >", "struct_one_d_register_descriptor_base.html", [
         [ "ScalarRegisterDescriptorBase< RegSingleWord_push >", "struct_scalar_register_descriptor_base.html", [
           [ "RegSingleWord_push", "struct_reg_single_word__push.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegSingleWordB >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegSingleWordB >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegSingleWordB >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegSingleWordB", "struct_reg_single_word_b.html", null ]
         ] ]
       ] ]
     ] ],
