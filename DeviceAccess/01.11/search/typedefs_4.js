@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['first_5fargument_5ftype',['first_argument_type',['../structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html#a1d8319065587ddb9136b453162355d66',1,'std::less&lt; ChimeraTK::TransferElementID &gt;']]]
+  ['namelist',['NameList',['../class_chimera_t_k_1_1_micro_d_a_q.html#ac8f02608afc09594ad1d81b647c00edc',1,'ChimeraTK::MicroDAQ::NameList()'],['../struct_chimera_t_k_1_1history_1_1_server_history.html#ae982a39b3f0bf3dc291f4db9389e98c1',1,'ChimeraTK::history::ServerHistory::NameList()']]]
 ];

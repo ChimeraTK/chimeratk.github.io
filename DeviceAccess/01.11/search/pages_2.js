@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['basic_20example',['Basic Example',['../basic_example.html',1,'']]]
+  ['logging_20module_20and_20logger',['Logging module and Logger',['../loggingdoc.html',1,'index']]]
 ];

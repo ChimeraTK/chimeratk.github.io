@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['mapfilename',['mapFileName',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a6490bbf255c0da29018b73113342f83a',1,'ChimeraTK::DeviceInfoMap::DeviceInfo']]],
-  ['metadata',['metadata',['../class_chimera_t_k_1_1_register_catalogue.html#ae325cb9f9ff37acb75a90f16f675dfc1',1,'ChimeraTK::RegisterCatalogue']]],
-  ['mode_5frw',['mode_rw',['../structdevice__rw.html#afed29415714fb813dea1c933ef904a2c',1,'device_rw']]],
-  ['module',['module',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#aa203d6ed4514692e915999e0c7eed203',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
-  ['mutex',['mutex',['../class_chimera_t_k_1_1_dummy_backend.html#a4747061060c35e1c02296dd2cbe94e6f',1,'ChimeraTK::DummyBackend::mutex()'],['../struct_chimera_t_k_1_1_logical_name_mapping_backend_1_1_shared_accessor.html#a884eb8b13559ab852d03e3b13189a2c7',1,'ChimeraTK::LogicalNameMappingBackend::SharedAccessor::mutex()'],['../struct_chimera_t_k_1_1_thread_informer_mutex.html#a8160152b415ddd8d3986b292616b7ff0',1,'ChimeraTK::ThreadInformerMutex::mutex()'],['../class_chimera_t_k_1_1_subdevice_backend.html#a2cb3917c576e89074e093bd369ecfb6f',1,'ChimeraTK::SubdeviceBackend::mutex()']]]
+  ['lastvalidity',['lastValidity',['../class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html#aff1c7d9f0addd5468ffd292574cad4fd',1,'ChimeraTK::MetaDataPropagatingRegisterDecorator']]],
+  ['lifecyclestate',['lifeCycleState',['../class_chimera_t_k_1_1_application.html#a0ef8bd0ad224ddca42bff1d1ca4aac00',1,'ChimeraTK::Application']]],
+  ['logfile',['logFile',['../classlogging_1_1_logging_module.html#ae90e453ff52bc721d16da109a5270f0f',1,'logging::LoggingModule']]],
+  ['loglevel',['logLevel',['../classlogging_1_1_logging_module.html#a56e605b3ab3beb718f4aa1a283f7164e',1,'logging::LoggingModule']]],
+  ['logtail',['logTail',['../classlogging_1_1_logging_module.html#a58341fa99b5ee6c3921e4e1689b933cd',1,'logging::LoggingModule']]],
+  ['lostdatainlasttrigger',['lostDataInLastTrigger',['../struct_chimera_t_k_1_1_data_loss_counter.html#a5a4b553a489f7f97591b583424f233cb',1,'ChimeraTK::DataLossCounter']]]
 ];

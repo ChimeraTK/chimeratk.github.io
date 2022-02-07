@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['chimeratk_2ddeviceaccess',['ChimeraTK-DeviceAccess',['../index.html',1,'']]]
+  ['server_20based_20history_20module',['Server based history module',['../historydoc.html',1,'index']]],
+  ['status_20monitor',['Status Monitor',['../statusmonitordoc.html',1,'']]]
 ];

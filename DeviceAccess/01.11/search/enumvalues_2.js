@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['channel',['CHANNEL',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba4fa75b6bb761d6e2f1e64b7eb1225cf8',1,'ChimeraTK::LNMBackendRegisterInfo']]],
-  ['constant',['CONSTANT',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba8ce29512674d44455434a1034ea3de7d',1,'ChimeraTK::LNMBackendRegisterInfo']]]
+  ['debug',['DEBUG',['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416a682501b7fb187303796e3f533735b51f',1,'logging']]],
+  ['device',['Device',['../class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8fae0ac20adce6ffee48c7151b070aa5737',1,'ChimeraTK::EntityOwner::Device()'],['../namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1dae0ac20adce6ffee48c7151b070aa5737',1,'ChimeraTK::Device()']]]
 ];

@@ -1,56 +1,34 @@
 var NAVTREE =
 [
-  [ "ChimeraTK-DeviceAccess", "index.html", [
-    [ "First steps", "index.html#first_steps", null ],
-    [ "Multi Value Registers (1D Register Accessors)", "accessor1d.html", null ],
-    [ "2D Register Accessors", "accessor2d.html", null ],
-    [ "Using and creating custom backends", "custom_backends.html", [
-      [ "Writing Dummies: Extending the DummyBackend", "custom_backends.html#writing_dummies", null ],
-      [ "The Plugin Mechanism", "custom_backends.html#plugin_mechanism", [
-        [ "Loading custom backends", "custom_backends.html#loading_backends", null ],
-        [ "Writing your own backed", "custom_backends.html#writing_backends", null ]
+  [ "ChimeraTK-ApplicationCore", "index.html", [
+    [ "Exception Handling", "exception_handling.html", [
+      [ "Introduction", "exception_handling.html#Introduction", null ],
+      [ "DataValidity", "exception_handling.html#DataValidity", null ]
+    ] ],
+    [ "Logging module and Logger", "loggingdoc.html", [
+      [ "Introduction to the logging mechanism", "loggingdoc.html#loggingintro", null ]
+    ] ],
+    [ "Server based history module", "historydoc.html", [
+      [ "Server based history", "historydoc.html#historyintro", null ]
+    ] ],
+    [ "ConfigReader Module", "configreader.html", [
+      [ "Example usage", "configreader.html#usage", null ],
+      [ "XML file structure", "configreader.html#xmlstructure", null ]
+    ] ],
+    [ "Technical specification: propagation of initial values", "spec_initial_value_propagation.html", null ],
+    [ "Technical specification: Exception Handling Design", "exception_handling_design.html", [
+      [ "General Idea", "exception_handling_design.html#gen_idea", null ],
+      [ "Implementation", "exception_handling_design.html#exception_handling_implmentation", [
+        [ "Implementation details", "exception_handling_design.html#exception_handling_impl_details", null ]
       ] ]
     ] ],
-    [ "Data Consistency Group", "data_consistency_group.html", null ],
-    [ "Device Mapping", "dmap.html", [
-      [ "CimeraTK device descriptor", "dmap.html#The", null ]
-    ] ],
-    [ "Exceptions and recovery", "exceptions.html", [
-      [ "Exceptions", "exceptions.html#Exceptions", null ],
-      [ "isFunctional()", "exceptions.html#isFunctional", null ],
-      [ "Recovery", "exceptions.html#recovery", [
-        [ "Recovery on re-open", "exceptions.html#recover_open", null ],
-        [ "Automatic recovery", "exceptions.html#auto_recover", null ],
-        [ "No recovery necessary", "exceptions.html#no_recovery", null ]
-      ] ]
-    ] ],
-    [ "Logical Name Mapping Backend", "lmap.html", [
-      [ "CDD syntax", "lmap.html#cdd", null ],
-      [ "Map file syntax", "lmap.html#map", [
-        [ "Self-referencing redirects", "lmap.html#internal_redirect", null ]
-      ] ],
-      [ "Accessor plugins", "lmap.html#plugins", [
-        [ "List of plugins", "lmap.html#plugins_reference", [
-          [ "multiply", "lmap.html#plugins_reference_multiply", null ],
-          [ "math", "lmap.html#plugins_reference_math", null ],
-          [ "forceReadOnly", "lmap.html#plugins_reference_force_read_only", null ],
-          [ "monostableTrigger", "lmap.html#plugins_reference_monostable_trigger", null ],
-          [ "typeHintModifier", "lmap.html#plugins_reference_type_hint_modifier", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "Basic Example", "basic_example.html", null ],
-    [ "Accessing numeric-addressed registers without a map file", "numeric_addresses.html", null ],
-    [ "Questions and Answers", "q_and_a.html", [
-      [ "Why do RegisterAccessors not have an assignment operator for other RegisterAccessors?", "q_and_a.html#why_no_accessor_assignment", null ],
-      [ "Why can I not read SEQUENCE registers?", "q_and_a.html#use_sequences", null ]
-    ] ],
-    [ "Testing applications using the DummyBackends", "testing_with_dummy_backends.html", [
-      [ "Specifying the dummies in the device map file", "testing_with_dummy_backends.html#dmap_specify_dummies", null ],
-      [ "Writeing to read-only registers", "testing_with_dummy_backends.html#dummy_backends_write_readonly", null ]
-    ] ],
+    [ "Example 1: Application with two modules and two hardware devices", "example1.html", null ],
+    [ "Example 2: Small but complete application with a proportional controller", "example2.html", null ],
+    [ "Example 2a: Application with automation module", "example2a.html", null ],
+    [ "Example 3: Minimal device server", "example3.html", null ],
+    [ "Technical specification: data validity propagation", "spec_data_validity_propagation.html", null ],
+    [ "Status Monitor", "statusmonitordoc.html", null ],
     [ "Todo List", "todo.html", null ],
-    [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -58,7 +36,8 @@ var NAVTREE =
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ]
+        [ "Enumerations", "namespacemembers_enum.html", null ],
+        [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -80,9 +59,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
-        [ "Typedefs", "globals_type.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Variables", "globals_vars.html", null ]
       ] ]
     ] ],
     [ "Examples", "examples.html", "examples" ]
@@ -91,16 +68,13 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html",
-"class_chimera_t_k_1_1_buffering_register_accessor.html",
-"class_chimera_t_k_1_1_dummy_backend.html#ad604f70e94234f037cd01853b0765ce4",
-"class_chimera_t_k_1_1_logical_name_mapping_backend.html",
-"class_chimera_t_k_1_1_read_any_group_1_1_notification.html",
-"class_chimera_t_k_1_1_register_path.html#a6ccb225c24d44fc469dc190a1fba80af",
-"class_chimera_t_k_1_1_two_d_register_accessor.html#a260355da3297d6de2aa27ae70d3d2f97",
-"device__backends_2pcie_2include_2pciedev__io_8h.html#ace7f77e5691514de1c5a1f8c16d3025c",
-"mtca4u__compatibility__headers_2_multiplexed_data_accessor_exception_8h.html",
-"structdevice__ioctrl__dma.html"
+"_application_8cc.html",
+"class_chimera_t_k_1_1_application.html#a6815195c956c091a6558a316f8fd9976",
+"class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8fae0ac20adce6ffee48c7151b070aa5737",
+"class_chimera_t_k_1_1_testable_mode_accessor_decorator.html#a1253e11765c46d5e332550e39896ec4c",
+"demo_app_8cc.html",
+"struct_chimera_t_k_1_1_data_loss_counter.html#a42b52a6a2b9349604cf5be6ce65824da",
+"struct_example_app.html#aecb5f2041899e8eea99688077e998a2b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

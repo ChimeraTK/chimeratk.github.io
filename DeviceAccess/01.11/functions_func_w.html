@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: Class Members - Functions</title>
+<title>ChimeraTK-ApplicationCore: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,8 +29,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ChimeraTK-DeviceAccess
-   &#160;<span id="projectnumber">01.11.00</span>
+   <div id="projectname">ChimeraTK-ApplicationCore
+   &#160;<span id="projectnumber">01.11.01</span>
    </div>
   </td>
  </tr>
@@ -84,53 +84,31 @@ $(document).ready(function(){initNavTree('functions_func_w.html','');});
 &#160;
 
 <h3><a id="index_w"></a>- w -</h3><ul>
-<li>wait()
-: <a class="el" href="class_chimera_t_k_1_1_transfer_future.html#ac69099e41046c798d94c8289c335574d">ChimeraTK::TransferFuture</a>
-</li>
-<li>waitAny()
-: <a class="el" href="class_chimera_t_k_1_1_read_any_group.html#a0616097393d6007d2b865c2fb3362bb6">ChimeraTK::ReadAnyGroup</a>
-</li>
-<li>what()
-: <a class="el" href="class_chimera_t_k_1_1logic__error.html#a6877982911ce13563bf6ff47a3851400">ChimeraTK::logic_error</a>
-, <a class="el" href="class_chimera_t_k_1_1runtime__error.html#ab67e3b1164fa01d3ec0f70c08a1fa610">ChimeraTK::runtime_error</a>
+<li>warnUnconnectedVariables()
+: <a class="el" href="class_chimera_t_k_1_1_application.html#af638d687f2d229ab733c48f62f1a8877">ChimeraTK::Application</a>
 </li>
 <li>write()
-: <a class="el" href="class_chimera_t_k_1_1_device.html#adf15f424f0da1211264b5c1b7b49fb9a">ChimeraTK::Device</a>
-, <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#abd6859714e4dbcfe90a83319a261ccad">ChimeraTK::DeviceBackendImpl</a>
-, <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a01b2bd4b676338c77eb4890e14fbca7b">ChimeraTK::DummyBackend</a>
-, <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#aa0937e8b84ce3377907a720b50b476df">ChimeraTK::ExceptionDummy</a>
-, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a9559a4c68e92879447099c45106a56eb">ChimeraTK::NumericAddressedBackend</a>
-, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#a39516fe0396948c81cc04a20a2ecfa83">ChimeraTK::PcieBackend</a>
-, <a class="el" href="class_chimera_t_k_1_1_rebot_1_1_connection.html#a4d4b4b1562453d575e528c514b702cde">ChimeraTK::Rebot::Connection</a>
-, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a9c0030d5dd366ac1f91a64041d942f30">ChimeraTK::RebotBackend</a>
-, <a class="el" href="struct_chimera_t_k_1_1_rebot_protocol0.html#a69c26d37a772260744ebc7562df81713">ChimeraTK::RebotProtocol0</a>
-, <a class="el" href="struct_chimera_t_k_1_1_rebot_protocol1.html#af16693f15829deb2cd9ad961d485813d">ChimeraTK::RebotProtocol1</a>
-, <a class="el" href="struct_chimera_t_k_1_1_rebot_protocol_implementor.html#a2b0b647dc620f8a1aa852e41f459e6bf">ChimeraTK::RebotProtocolImplementor</a>
-, <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#af90621d044f5010bff9511c9074e0067">ChimeraTK::RegisterAccessor</a>
-, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#acb98b5e99532f29dfe38a86b8f9b93fc">ChimeraTK::SharedDummyBackend</a>
-, <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#ae9a9be48fa8f5cab72e62ce20d99004b">ChimeraTK::TransferElement</a>
-, <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a281b905219e719a1a0cdbd9d8d42d1dd">ChimeraTK::TransferElementAbstractor</a>
-, <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#addc288b86f8349ee1c7c18ec82560a84">ChimeraTK::TransferGroup</a>
+: <a class="el" href="class_chimera_t_k_1_1_array_accessor.html#a5606d0b5bc14407f0be9d47dca7612d6">ChimeraTK::ArrayAccessor&lt; UserType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_scalar_accessor.html#a02f5ea46e0582dfceb8e9cc06b25c302">ChimeraTK::ScalarAccessor&lt; UserType &gt;</a>
 </li>
-<li>writeArea()
-: <a class="el" href="class_chimera_t_k_1_1_device.html#ac434ea5dce4b655a716067b7c06b4062">ChimeraTK::Device</a>
+<li>writeAll()
+: <a class="el" href="class_chimera_t_k_1_1_module.html#ac91e2a2ce01c0616d57050b229cde5bb">ChimeraTK::Module</a>
+</li>
+<li>writeAllDestructively()
+: <a class="el" href="class_chimera_t_k_1_1_module.html#a52547cc6ff2510b82c8c8e281c01b02a">ChimeraTK::Module</a>
+</li>
+<li>writeArray()
+: <a class="el" href="class_chimera_t_k_1_1_test_facility.html#a55f38cb91d70939e53456f4735991c72">ChimeraTK::TestFacility</a>
 </li>
 <li>writeDestructively()
-: <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a91e44b68014588b44adea0d17ec45599">ChimeraTK::TransferElement</a>
-, <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#a53668fb61c4310fa8f1a11d8e414cbc8">ChimeraTK::TransferElementAbstractor</a>
+: <a class="el" href="class_chimera_t_k_1_1_array_accessor.html#aa5cdc2783ce70ed7af56607024035735">ChimeraTK::ArrayAccessor&lt; UserType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_scalar_accessor.html#a30c397f9c9a396866c2b6c619812ed46">ChimeraTK::ScalarAccessor&lt; UserType &gt;</a>
 </li>
-<li>writeDMA()
-: <a class="el" href="class_chimera_t_k_1_1_device.html#a3519e11f95e23248bcca227ae2ca0c4d">ChimeraTK::Device</a>
-, <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#a90c2eed17f0fd8ddf8fcf7f5a9c1d2dc">ChimeraTK::RegisterAccessor</a>
+<li>writeScalar()
+: <a class="el" href="class_chimera_t_k_1_1_test_facility.html#af3ea3bbf51b30ec24455a42ac67b60f5">ChimeraTK::TestFacility</a>
 </li>
-<li>writeRaw()
-: <a class="el" href="class_chimera_t_k_1_1_register_accessor.html#ae286f9b3c624d257534854c69311cac6">ChimeraTK::RegisterAccessor</a>
-</li>
-<li>writeReg()
-: <a class="el" href="class_chimera_t_k_1_1_device.html#aa6c9fa85aca91ab0dce1717db8b1863d">ChimeraTK::Device</a>
-</li>
-<li>writeRegisterWithoutCallback()
-: <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a56f3c411431666b803a072e856d6c713">ChimeraTK::DummyBackend</a>
+<li>WriteSplitArrayModule()
+: <a class="el" href="struct_chimera_t_k_1_1_write_split_array_module.html#ace5fc20d0b0235e159b6d45ae0049744">ChimeraTK::WriteSplitArrayModule&lt; TYPE &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -138,7 +116,7 @@ $(document).ready(function(){initNavTree('functions_func_w.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 24 2020 04:53:31 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Mon Feb 7 2022 04:56:13 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
