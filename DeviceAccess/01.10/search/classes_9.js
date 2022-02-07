@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['less_3c_20chimeratk_3a_3atransferelementid_20_3e',['less&lt; ChimeraTK::TransferElementID &gt;',['../structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html',1,'std']]],
-  ['lnmbackendbitaccessor',['LNMBackendBitAccessor',['../class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html',1,'ChimeraTK']]],
-  ['lnmbackendchannelaccessor',['LNMBackendChannelAccessor',['../class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html',1,'ChimeraTK']]],
-  ['lnmbackendregisterinfo',['LNMBackendRegisterInfo',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html',1,'ChimeraTK']]],
-  ['lnmbackendvariableaccessor',['LNMBackendVariableAccessor',['../class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html',1,'ChimeraTK']]],
-  ['logic_5ferror',['logic_error',['../class_chimera_t_k_1_1logic__error.html',1,'ChimeraTK']]],
-  ['logicalnamemapparser',['LogicalNameMapParser',['../class_chimera_t_k_1_1_logical_name_map_parser.html',1,'ChimeraTK']]],
-  ['logicalnamemappingbackend',['LogicalNameMappingBackend',['../class_chimera_t_k_1_1_logical_name_mapping_backend.html',1,'ChimeraTK']]]
+  ['maxmonitor',['MaxMonitor',['../struct_chimera_t_k_1_1_max_monitor.html',1,'ChimeraTK']]],
+  ['metadatapropagatingregisterdecorator',['MetaDataPropagatingRegisterDecorator',['../class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html',1,'ChimeraTK']]],
+  ['microdaq',['MicroDAQ',['../class_chimera_t_k_1_1_micro_d_a_q.html',1,'ChimeraTK']]],
+  ['minmonitor',['MinMonitor',['../struct_chimera_t_k_1_1_min_monitor.html',1,'ChimeraTK']]],
+  ['module',['Module',['../class_chimera_t_k_1_1_module.html',1,'ChimeraTK']]],
+  ['modulegraphvisitor',['ModuleGraphVisitor',['../class_chimera_t_k_1_1_module_graph_visitor.html',1,'ChimeraTK']]],
+  ['modulegroup',['ModuleGroup',['../class_chimera_t_k_1_1_module_group.html',1,'ChimeraTK']]],
+  ['moduleimpl',['ModuleImpl',['../class_chimera_t_k_1_1_module_impl.html',1,'ChimeraTK']]],
+  ['modulelist',['ModuleList',['../class_chimera_t_k_1_1_module_list.html',1,'ChimeraTK']]],
+  ['multiplier',['Multiplier',['../struct_chimera_t_k_1_1_multiplier.html',1,'ChimeraTK']]]
 ];

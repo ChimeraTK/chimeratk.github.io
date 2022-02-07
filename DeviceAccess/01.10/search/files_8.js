@@ -1,9 +1,17 @@
 var searchData=
 [
-  ['mainpage_2edox',['mainpage.dox',['../mainpage_8dox.html',1,'']]],
-  ['mapexception_2eh',['MapException.h',['../fileparsers_2include_2_map_exception_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_map_exception_8h.html',1,'(Global Namespace)']]],
-  ['mapfileparser_2ecpp',['MapFileParser.cpp',['../_map_file_parser_8cpp.html',1,'']]],
-  ['mapfileparser_2eh',['MapFileParser.h',['../fileparsers_2include_2_map_file_parser_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_map_file_parser_8h.html',1,'(Global Namespace)']]],
-  ['multiplexeddataaccessor_2eh',['MultiplexedDataAccessor.h',['../_multiplexed_data_accessor_8h.html',1,'']]],
-  ['multiplexeddataaccessorexception_2eh',['MultiplexedDataAccessorException.h',['../device_2include_2_multiplexed_data_accessor_exception_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_multiplexed_data_accessor_exception_8h.html',1,'(Global Namespace)']]]
+  ['main_2edox',['main.dox',['../main_8dox.html',1,'']]],
+  ['metadatapropagatingregisterdecorator_2ecc',['MetaDataPropagatingRegisterDecorator.cc',['../_meta_data_propagating_register_decorator_8cc.html',1,'']]],
+  ['metadatapropagatingregisterdecorator_2eh',['MetaDataPropagatingRegisterDecorator.h',['../_meta_data_propagating_register_decorator_8h.html',1,'']]],
+  ['microdaq_2ecc',['MicroDAQ.cc',['../_micro_d_a_q_8cc.html',1,'']]],
+  ['microdaq_2eh',['MicroDAQ.h',['../_micro_d_a_q_8h.html',1,'']]],
+  ['module_2ecc',['Module.cc',['../_module_8cc.html',1,'']]],
+  ['module_2eh',['Module.h',['../_module_8h.html',1,'']]],
+  ['modulegraphvisitor_2ecc',['ModuleGraphVisitor.cc',['../_module_graph_visitor_8cc.html',1,'']]],
+  ['modulegraphvisitor_2eh',['ModuleGraphVisitor.h',['../_module_graph_visitor_8h.html',1,'']]],
+  ['modulegroup_2ecc',['ModuleGroup.cc',['../_module_group_8cc.html',1,'']]],
+  ['modulegroup_2eh',['ModuleGroup.h',['../_module_group_8h.html',1,'']]],
+  ['moduleimpl_2ecc',['ModuleImpl.cc',['../_module_impl_8cc.html',1,'']]],
+  ['moduleimpl_2eh',['ModuleImpl.h',['../_module_impl_8h.html',1,'']]],
+  ['multiplier_2eh',['Multiplier.h',['../_multiplier_8h.html',1,'']]]
 ];

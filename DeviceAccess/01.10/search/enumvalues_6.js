@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['nodata',['nodata',['../class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8aba7879f8819d6b74aa4dd9e24b2fe90e',1,'ChimeraTK::RegisterInfo']]],
-  ['none',['none',['../class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a43e32937488a25bceb7b75994793a087',1,'ChimeraTK::DataType::none()'],['../class_chimera_t_k_1_1_data_consistency_group.html#abce53bc4f2979ff64f30da01d799397ba334c4a4c42fdb79d7ebc3e73b517e6f8',1,'ChimeraTK::DataConsistencyGroup::none()']]],
-  ['nonunique_5fdevice_5fname',['NONUNIQUE_DEVICE_NAME',['../class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html#a018152873d71d9ba1114d16272191908ab1f3f7d5c592cc90c46b85831fa6b3b7',1,'ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem']]],
-  ['nonunique_5fregister_5fname',['NONUNIQUE_REGISTER_NAME',['../class_chimera_t_k_1_1_register_info_map_1_1_error_list_1_1_error_elem.html#abd68efcf13704999134c7b6735ab052fa64f42b53c992286887c2025af7e88309',1,'ChimeraTK::RegisterInfoMap::ErrorList::ErrorElem']]],
-  ['numeric',['numeric',['../class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8a49057168d24dc9566533ec48326ced2c',1,'ChimeraTK::RegisterInfo']]]
+  ['info',['INFO',['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416a599d39352a6b7a4d371ea9e27bd22562',1,'logging']]],
+  ['initialisation',['initialisation',['../namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72da3e52131e6b272be51242ee00310b7252',1,'ChimeraTK']]],
+  ['invalid',['Invalid',['../class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8fa4bbb8f967da6d1a610596d7257179c2b',1,'ChimeraTK::EntityOwner::Invalid()'],['../struct_chimera_t_k_1_1_variable_direction.html#a0640f33372cd401d80c0a95c2d5dec35aebec9ae463e0d8f9063973ef3a18783e',1,'ChimeraTK::VariableDirection::invalid()'],['../namespace_chimera_t_k.html#a8a67a705a6d1aa75228d7859f508bf3bafedb2d84cafe20862cb4399751a8a7e3',1,'ChimeraTK::invalid()'],['../namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1dafedb2d84cafe20862cb4399751a8a7e3',1,'ChimeraTK::invalid()']]]
 ];
