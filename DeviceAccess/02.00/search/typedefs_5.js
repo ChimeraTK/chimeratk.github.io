@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['iterator',['iterator',['../class_chimera_t_k_1_1_buffering_register_accessor.html#a1f1d0e0f9636c6147a3c11fd1390134a',1,'ChimeraTK::BufferingRegisterAccessor::iterator()'],['../class_chimera_t_k_1_1_one_d_register_accessor.html#a238361a2d9805a74f21ac82ff680e23a',1,'ChimeraTK::OneDRegisterAccessor::iterator()'],['../class_chimera_t_k_1_1_device_info_map.html#ab3ce8a0593eaa19c33d8696ca03531b0',1,'ChimeraTK::DeviceInfoMap::iterator()'],['../class_chimera_t_k_1_1_d_map_files_parser.html#ae2358f1fc40e375f76c6fc2761175ab4',1,'ChimeraTK::DMapFilesParser::iterator()']]]
+  ['namelist',['NameList',['../class_chimera_t_k_1_1_micro_d_a_q.html#ac8f02608afc09594ad1d81b647c00edc',1,'ChimeraTK::MicroDAQ::NameList()'],['../struct_chimera_t_k_1_1history_1_1_server_history.html#ae982a39b3f0bf3dc291f4db9389e98c1',1,'ChimeraTK::history::ServerHistory::NameList()']]]
 ];

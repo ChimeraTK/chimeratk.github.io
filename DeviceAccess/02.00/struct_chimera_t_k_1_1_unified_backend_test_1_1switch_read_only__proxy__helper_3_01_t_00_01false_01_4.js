@@ -1,4 +1,0 @@
-var struct_chimera_t_k_1_1_unified_backend_test_1_1switch_read_only__proxy__helper_3_01_t_00_01false_01_4 =
-[
-    [ "switchReadOnly_proxy_helper", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_read_only__proxy__helper_3_01_t_00_01false_01_4.html#a762986b737c6a0a1d176ea25b697fc80", null ]
-];

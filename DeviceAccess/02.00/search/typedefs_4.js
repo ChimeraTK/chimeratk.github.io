@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['first_5fargument_5ftype',['first_argument_type',['../structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html#a1d8319065587ddb9136b453162355d66',1,'std::less&lt; ChimeraTK::TransferElementID &gt;']]]
+  ['mapofarray',['MapOfArray',['../struct_chimera_t_k_1_1_config_reader.html#a8a692faaaddd5419b5754fca31854b63',1,'ChimeraTK::ConfigReader']]],
+  ['mapofvar',['MapOfVar',['../struct_chimera_t_k_1_1_config_reader.html#ad514bd3865b91a2609de8c787dadaec9',1,'ChimeraTK::ConfigReader']]]
 ];

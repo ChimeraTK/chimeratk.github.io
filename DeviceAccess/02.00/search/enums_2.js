@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fundamentaltype',['FundamentalType',['../class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8',1,'ChimeraTK::RegisterInfo']]]
+  ['moduletype',['ModuleType',['../class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8f',1,'ChimeraTK::EntityOwner']]]
 ];

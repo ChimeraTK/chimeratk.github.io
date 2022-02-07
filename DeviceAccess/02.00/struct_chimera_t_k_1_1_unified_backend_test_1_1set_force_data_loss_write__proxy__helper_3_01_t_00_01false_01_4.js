@@ -1,4 +1,0 @@
-var struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper_3_01_t_00_01false_01_4 =
-[
-    [ "setForceDataLossWrite_proxy_helper", "struct_chimera_t_k_1_1_unified_backend_test_1_1set_force_data_loss_write__proxy__helper_3_01_t_00_01false_01_4.html#a1a6f0b6c292c6567472a002c99673775", null ]
-];

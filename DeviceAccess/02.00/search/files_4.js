@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['examplebackend_2ecc',['ExampleBackend.cc',['../_example_backend_8cc.html',1,'']]],
-  ['examplebackend_2eh',['ExampleBackend.h',['../_example_backend_8h.html',1,'']]],
-  ['exception_2ecpp',['Exception.cpp',['../_exception_8cpp.html',1,'']]],
-  ['exception_2eh',['Exception.h',['../exception_2include_2_exception_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_exception_8h.html',1,'(Global Namespace)']]],
-  ['exceptiondummybackend_2eh',['ExceptionDummyBackend.h',['../_exception_dummy_backend_8h.html',1,'']]],
-  ['exceptions_2edox',['exceptions.dox',['../exceptions_8dox.html',1,'']]],
-  ['experimentalfeatures_2ecc',['ExperimentalFeatures.cc',['../_experimental_features_8cc.html',1,'']]],
-  ['experimentalfeatures_2eh',['ExperimentalFeatures.h',['../device_2include_2_experimental_features_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_experimental_features_8h.html',1,'(Global Namespace)']]]
+  ['enablexmlgenerator_2eh',['EnableXMLGenerator.h',['../_enable_x_m_l_generator_8h.html',1,'']]],
+  ['entityowner_2ecc',['EntityOwner.cc',['../_entity_owner_8cc.html',1,'']]],
+  ['entityowner_2eh',['EntityOwner.h',['../_entity_owner_8h.html',1,'']]],
+  ['example1_2edox',['example1.dox',['../example1_8dox.html',1,'']]],
+  ['example2_2edox',['example2.dox',['../example2_8dox.html',1,'']]],
+  ['example3_2edox',['example3.dox',['../example3_8dox.html',1,'']]],
+  ['exceptionhandling_2edox',['exceptionHandling.dox',['../exception_handling_8dox.html',1,'']]],
+  ['exceptionhandlingdecorator_2ecc',['ExceptionHandlingDecorator.cc',['../_exception_handling_decorator_8cc.html',1,'']]],
+  ['exceptionhandlingdecorator_2eh',['ExceptionHandlingDecorator.h',['../_exception_handling_decorator_8h.html',1,'']]]
 ];

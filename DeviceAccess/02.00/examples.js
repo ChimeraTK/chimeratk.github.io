@@ -1,9 +1,8 @@
 var examples =
 [
-    [ "accessor1D.cpp", "accessor1_d_8cpp-example.html", null ],
-    [ "accessor2D.cpp", "accessor2_d_8cpp-example.html", null ],
-    [ "accessor2D_multiplexed.cpp", "accessor2_d_multiplexed_8cpp-example.html", null ],
-    [ "basic.cpp", "basic_8cpp-example.html", null ],
-    [ "CustomBackend.cc", "_custom_backend_8cc-example.html", null ],
-    [ "dataConsistencyGroup.cpp", "data_consistency_group_8cpp-example.html", null ]
+    [ "demoStatusMonitor.cc", "demo_status_monitor_8cc-example.html", null ],
+    [ "example/demoApp.cc", "example_2demo_app_8cc-example.html", null ],
+    [ "example2/demoApp2.cc", "example2_2demo_app2_8cc-example.html", null ],
+    [ "example2a/demoApp2a.cc", "example2a_2demo_app2a_8cc-example.html", null ],
+    [ "example3/demoApp3.cc", "example3_2demo_app3_8cc-example.html", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['numericaddressedbackendregisteraccessor',['NumericAddressedBackendRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ac06c3adbcb08c25e2a42e23c96e66152',1,'ChimeraTK::NumericAddressedLowLevelTransferElement']]]
+  ['serverhistory',['ServerHistory',['../class_chimera_t_k_1_1_device_module.html#ab9171bb39053b85717ad350f03cf0f02',1,'ChimeraTK::DeviceModule']]]
 ];

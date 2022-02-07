@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['variable',['VARIABLE',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787ba4ec9fd489be4c3384dbafebd980148e7',1,'ChimeraTK::LNMBackendRegisterInfo']]]
+  ['triggerprovider',['TriggerProvider',['../namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1da8b1546fe8fb0d89d148d1a35c690a26b',1,'ChimeraTK']]],
+  ['triggerreceiver',['TriggerReceiver',['../namespace_chimera_t_k.html#a8ef88da2631968bb315b54f3bf2e9f1da2d7240d713d5e6467385a9ab4475eda0',1,'ChimeraTK']]]
 ];
