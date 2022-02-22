@@ -1,6 +1,7 @@
 var struct_short_raw__signed16 =
 [
     [ "minimumUserType", "struct_short_raw__signed16.html#a550b2d19069900ed33fc678471b3648c", null ],
+    [ "rawUserType", "struct_short_raw__signed16.html#a4a4f08af2f71504b15843149fed15223", null ],
     [ "path", "struct_short_raw__signed16.html#a67b61450910f29fa40a431ded789e657", null ],
     [ "bitmask", "struct_short_raw__signed16.html#ad2ec99e5a5d15a09fa72299bbdd17c44", null ],
     [ "bitshift", "struct_short_raw__signed16.html#a190f8ebcb20a8bc1ef1405343d807acb", null ],

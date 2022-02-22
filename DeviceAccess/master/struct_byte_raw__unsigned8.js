@@ -1,6 +1,7 @@
 var struct_byte_raw__unsigned8 =
 [
     [ "minimumUserType", "struct_byte_raw__unsigned8.html#a624e7c22fa147cd2cc166622cce56c57", null ],
+    [ "rawUserType", "struct_byte_raw__unsigned8.html#ab81aaa12f94109b8d082daf34c9e201f", null ],
     [ "path", "struct_byte_raw__unsigned8.html#a6aa2be92cb82556e40fcdaf8bebfeb2e", null ],
     [ "bitmask", "struct_byte_raw__unsigned8.html#a677b96a73ea202eded000bc1cf43f39c", null ],
     [ "bitshift", "struct_byte_raw__unsigned8.html#a638e0f45e90299196693366ffb7b18ed", null ],

@@ -34,6 +34,8 @@ var searchData=
   ['test_5fc_5f5_5f3_5f2',['test_C_5_3_2',['../class_chimera_t_k_1_1_unified_backend_test.html#a11d106162d2a111205ed5da3b2217910',1,'ChimeraTK::UnifiedBackendTest']]],
   ['test_5fc_5f5_5f3_5f3',['test_C_5_3_3',['../class_chimera_t_k_1_1_unified_backend_test.html#abf4d7dcce4eacab07647680d974c310f',1,'ChimeraTK::UnifiedBackendTest']]],
   ['test_5fnospec_5fbackendnotclosedafterexception',['test_NOSPEC_backendNotClosedAfterException',['../class_chimera_t_k_1_1_unified_backend_test.html#a5e552144f0c112791e430d07d23f319e',1,'ChimeraTK::UnifiedBackendTest']]],
+  ['test_5fnospec_5fcatalogueraw',['test_NOSPEC_catalogueRaw',['../class_chimera_t_k_1_1_unified_backend_test.html#a2702689c97a4924078d427490c5ebaa8',1,'ChimeraTK::UnifiedBackendTest']]],
+  ['test_5fnospec_5frawtransfer',['test_NOSPEC_rawTransfer',['../class_chimera_t_k_1_1_unified_backend_test.html#a503c90a198ffefea38335cbf674992cc',1,'ChimeraTK::UnifiedBackendTest']]],
   ['test_5fnospec_5fvalueafterconstruction',['test_NOSPEC_valueAfterConstruction',['../class_chimera_t_k_1_1_unified_backend_test.html#a0b7e5e218d46f89a2f68a7d04f6a27a8',1,'ChimeraTK::UnifiedBackendTest']]],
   ['test_5fnospec_5fwrite',['test_NOSPEC_write',['../class_chimera_t_k_1_1_unified_backend_test.html#aec963603aa9e175674288ec4efa9cadf',1,'ChimeraTK::UnifiedBackendTest']]],
   ['testabledummybackend',['TestableDummyBackend',['../class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a',1,'TestableDummyBackend::TestableDummyBackend(std::string mapFileName)'],['../class_testable_dummy_backend.html#a700d30cdd5eb816885775713e7274f4a',1,'TestableDummyBackend::TestableDummyBackend(std::string mapFileName)']]],

@@ -1,7 +1,7 @@
 var struct_bit_register_descriptor_base =
 [
     [ "minimumUserType", "struct_bit_register_descriptor_base.html#a98bb55120358f9cab4942c67a345d1b1", null ],
-    [ "rawUserType", "struct_bit_register_descriptor_base.html#ab6bc671c5142bb0f70a4bbb17dc6f44e", null ],
+    [ "rawUserType", "struct_bit_register_descriptor_base.html#a7f7df65e213f806edf105ce7b69c26b2", null ],
     [ "generateValue", "struct_bit_register_descriptor_base.html#ad8421faba45bf9bf6e817bc5f2cb718e", null ],
     [ "getRemoteValue", "struct_bit_register_descriptor_base.html#a6a3433b55b2666b5c92c40bd9a5eb816", null ],
     [ "nChannels", "struct_bit_register_descriptor_base.html#a070ba0d9bdd145f103de37f4913eef12", null ],

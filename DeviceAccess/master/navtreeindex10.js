@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"device__backends_2pcie_2include_2pcieuni__io__compat_8h.html#a1500cb79fd250fdd018729ac3d3438a4":[21,0,1,2,0,3,12],
+"device__backends_2pcie_2include_2pcieuni__io__compat_8h.html#a48af1e78d5a496413d104767eee58d7c":[21,0,1,2,0,3,10],
 "device__backends_2pcie_2include_2pcieuni__io__compat_8h.html#a4fa4ce11062d16b3584492431cc762e6":[21,0,1,2,0,3,11],
 "device__backends_2pcie_2include_2pcieuni__io__compat_8h.html#a6129fae85cf12b22415ca8559e1dbaa2":[21,0,1,2,0,3,7],
 "device__backends_2pcie_2include_2pcieuni__io__compat_8h.html#a6374d619fc21c995ad132713820b101d":[21,0,1,2,0,3,13],
@@ -100,8 +102,8 @@ var NAVTREEINDEX10 =
 "fileparsers_2include_2predicates_8h.html":[21,0,4,0,6],
 "fileparsers_2include_2predicates_8h_source.html":[21,0,4,0,6],
 "files.html":[21,0],
-"functions.html":[20,3,0,0],
 "functions.html":[20,3,0],
+"functions.html":[20,3,0,0],
 "functions_0x7e.html":[20,3,0,23],
 "functions_a.html":[20,3,0,1],
 "functions_b.html":[20,3,0,2],
@@ -111,8 +113,8 @@ var NAVTREEINDEX10 =
 "functions_enum.html":[20,3,4],
 "functions_eval.html":[20,3,5],
 "functions_f.html":[20,3,0,6],
-"functions_func.html":[20,3,1],
 "functions_func.html":[20,3,1,0],
+"functions_func.html":[20,3,1],
 "functions_func_0x7e.html":[20,3,1,21],
 "functions_func_b.html":[20,3,1,1],
 "functions_func_c.html":[20,3,1,2],
@@ -174,8 +176,8 @@ var NAVTREEINDEX10 =
 "functions_vars_w.html":[20,3,2,20],
 "functions_w.html":[20,3,0,21],
 "functions_x.html":[20,3,0,22],
-"globals.html":[21,1,0,0],
 "globals.html":[21,1,0],
+"globals.html":[21,1,0,0],
 "globals_b.html":[21,1,0,1],
 "globals_c.html":[21,1,0,2],
 "globals_d.html":[21,1,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "lmap.html#plugins_reference_force_read_only":[8,2,0,2],
 "lmap.html#plugins_reference_math":[8,2,0,1],
 "lmap.html#plugins_reference_monostable_trigger":[8,2,0,3],
-"lmap.html#plugins_reference_multiply":[8,2,0,0],
-"lmap.html#plugins_reference_type_hint_modifier":[8,2,0,4],
-"lmap.html#variables_and_constants":[8,1,0]
+"lmap.html#plugins_reference_multiply":[8,2,0,0]
 };

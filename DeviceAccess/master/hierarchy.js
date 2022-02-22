@@ -97,6 +97,7 @@ var hierarchy =
       [ "ChimeraTK::DummyMultiplexedRegisterAccessor< int >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
       [ "ChimeraTK::DummyMultiplexedRegisterAccessor< minimumUserType >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
       [ "ChimeraTK::DummyMultiplexedRegisterAccessor< uint16_t >", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", null ],
+      [ "ChimeraTK::DummyRegisterAccessor< ChimeraTK::Boolean >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< int >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< minimumUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
@@ -105,6 +106,9 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::proxies::DummyRegisterElement< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
       [ "ChimeraTK::DummyRegisterAccessor< T >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
+    ] ],
+    [ "ChimeraTK::proxies::DummyRegisterElement< ChimeraTK::Boolean >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
+      [ "ChimeraTK::DummyRegisterAccessor< ChimeraTK::Boolean >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
     ] ],
     [ "ChimeraTK::proxies::DummyRegisterElement< int >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
       [ "ChimeraTK::DummyRegisterAccessor< int >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
