@@ -5,6 +5,7 @@ var structWatchdogServer =
     [ "defineConnections", "structWatchdogServer.html#a08c98672aee20a4640a56b3b5ac7cd47", null ],
     [ "config", "structWatchdogServer.html#aff0de39ddfc412f63c5ea21dafc89ddd", null ],
     [ "cs", "structWatchdogServer.html#ac2a80d4a412c142f8d4753b51e12bfa3", null ],
+    [ "dataLossCounter", "structWatchdogServer.html#ac09a12c67cb27017e41acb8b934ef43c", null ],
     [ "filesystemGroup", "structWatchdogServer.html#a3a1dc6e550f4ec8557f6052c62bea1d2", null ],
     [ "history", "structWatchdogServer.html#a5250e08f8ba03bab3d1ac56f64134723", null ],
     [ "networkGroup", "structWatchdogServer.html#a3e411b2434cb02987a530b230617bf15", null ],

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['data',['data',['../structNetworkModule_1_1Status.html#a4af2bdfad5c6b5fd7ec9bce6c62b0177',1,'NetworkModule::Status::data()'],['../structNetworkModule_1_1raw.html#ae45615ddaebe769ab5d12687cf06c24e',1,'NetworkModule::raw::data()']]],
+  ['datalosscounter',['dataLossCounter',['../structWatchdogServer.html#ac09a12c67cb27017e41acb8b934ef43c',1,'WatchdogServer']]],
   ['device',['device',['../structFileSystemModule.html#a2d90373f89c966b793f97085e050a01e',1,'FileSystemModule::device()'],['../structNetworkModule.html#ac21162f8e4ebd6e3465b3182029e8c4a',1,'NetworkModule::device()']]],
   ['devicename',['deviceName',['../structFileSystemModule.html#a1f0d9c5b8ee4bf06a7ea0d5cb0205eeb',1,'FileSystemModule::deviceName()'],['../structNetworkModule.html#a905ba8feb33486a15d2b79bec4e55b17',1,'NetworkModule::deviceName()']]],
   ['disk_5ffree',['disk_free',['../structFileSystemModule_1_1Status.html#a242e2863f1dd684f6bdc1a1bf6b3d1b6',1,'FileSystemModule::Status']]],
