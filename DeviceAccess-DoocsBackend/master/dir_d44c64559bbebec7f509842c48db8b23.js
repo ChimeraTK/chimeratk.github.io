@@ -39,7 +39,10 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "EventIdMapper.h", "_event_id_mapper_8h.html", [
       [ "EventIdMapper", "class_event_id_mapper.html", "class_event_id_mapper" ]
     ] ],
-    [ "RegisterInfo.h", "_register_info_8h.html", "_register_info_8h" ],
+    [ "RegisterInfo.h", "_register_info_8h.html", [
+      [ "DoocsBackendRegisterCatalogue", "class_doocs_backend_register_catalogue.html", "class_doocs_backend_register_catalogue" ],
+      [ "DoocsBackendRegisterInfo", "class_doocs_backend_register_info.html", "class_doocs_backend_register_info" ]
+    ] ],
     [ "StringUtility.h", "_string_utility_8h.html", "_string_utility_8h" ],
     [ "ZMQSubscriptionManager.h", "_z_m_q_subscription_manager_8h.html", [
       [ "ZMQSubscriptionManager", "class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html", "class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager" ]

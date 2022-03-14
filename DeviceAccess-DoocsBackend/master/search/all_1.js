@@ -3,6 +3,7 @@ var searchData=
   ['accessmodeflags',['accessModeFlags',['../class_doocs_backend_register_info.html#a89fda9983145f0534b40f0932681aa17',1,'DoocsBackendRegisterInfo']]],
   ['activatealllisteners',['activateAllListeners',['../class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#a08562f36cc6ab3216f6af32133678d5a',1,'ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager']]],
   ['activateasyncread',['activateAsyncRead',['../class_chimera_t_k_1_1_doocs_backend.html#a60af750f68aad5c342fb159949240077',1,'ChimeraTK::DoocsBackend']]],
+  ['addproperty',['addProperty',['../class_doocs_backend_register_catalogue.html#a0e2154284f6dc7da3c131985dbdd9991',1,'DoocsBackendRegisterCatalogue']]],
   ['allregisterdefaults',['AllRegisterDefaults',['../struct_all_register_defaults.html',1,'']]],
   ['allregisterdefaults_3c_20regsomebit_20_3e',['AllRegisterDefaults&lt; RegSomeBit &gt;',['../struct_all_register_defaults.html',1,'']]],
   ['allregisterdefaults_3c_20regsomedouble_20_3e',['AllRegisterDefaults&lt; RegSomeDouble &gt;',['../struct_all_register_defaults.html',1,'']]],

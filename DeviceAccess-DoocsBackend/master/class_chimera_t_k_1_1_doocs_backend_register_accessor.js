@@ -9,7 +9,7 @@ var class_chimera_t_k_1_1_doocs_backend_register_accessor =
     [ "doWriteTransfer", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a7d5442439cd505bb3d0f5b4d560175b3", null ],
     [ "getHardwareAccessingElements", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#afaa016b39be620cbef56b5f350a91ac3", null ],
     [ "getInternalElements", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a5516fcb8d2a24b92b4cd9e47db7f4f53", null ],
-    [ "initialise", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a793f6302493d009c2a9f42c2bf7edf99", null ],
+    [ "initialise", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ae6037438b370642c6010741eddace8fb", null ],
     [ "interrupt", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a5cf33826f9f16817c0c5d962f4508911", null ],
     [ "isReadable", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#ab06f770035140bb017209536360d336d", null ],
     [ "isReadOnly", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html#a1918bddc241da2d9e188d1e30265374f", null ],

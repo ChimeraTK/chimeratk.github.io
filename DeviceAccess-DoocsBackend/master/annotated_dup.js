@@ -4,6 +4,7 @@ var annotated_dup =
     [ "AllRegisterDefaults", "struct_all_register_defaults.html", "struct_all_register_defaults" ],
     [ "ArrayDefaults", "struct_array_defaults.html", "struct_array_defaults" ],
     [ "CatalogueFetcher", "class_catalogue_fetcher.html", "class_catalogue_fetcher" ],
+    [ "DoocsBackendRegisterCatalogue", "class_doocs_backend_register_catalogue.html", "class_doocs_backend_register_catalogue" ],
     [ "DoocsBackendRegisterInfo", "class_doocs_backend_register_info.html", "class_doocs_backend_register_info" ],
     [ "DoocsLauncher", "class_doocs_launcher.html", "class_doocs_launcher" ],
     [ "eq_dummy", "classeq__dummy.html", "classeq__dummy" ],

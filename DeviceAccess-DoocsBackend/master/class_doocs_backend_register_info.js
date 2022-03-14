@@ -1,10 +1,10 @@
 var class_doocs_backend_register_info =
 [
+    [ "DoocsBackendRegisterInfo", "class_doocs_backend_register_info.html#a7ed8754f5e6af6d2add99959f32978fa", null ],
     [ "DoocsBackendRegisterInfo", "class_doocs_backend_register_info.html#a96c2e8bede75794549083b860ebed92c", null ],
-    [ "~DoocsBackendRegisterInfo", "class_doocs_backend_register_info.html#a1ac1eafbe3f7526a92624abd374c4703", null ],
-    [ "getDataDescriptor", "class_doocs_backend_register_info.html#a8a1c08683741ee10610f61fdd21637ee", null ],
+    [ "clone", "class_doocs_backend_register_info.html#a8ddba2fe18759f38fa4a6bf5befd68e2", null ],
+    [ "getDataDescriptor", "class_doocs_backend_register_info.html#a867700bb11f1f6fdcb072cf071c07cff", null ],
     [ "getNumberOfChannels", "class_doocs_backend_register_info.html#a704c7b61234dc55338832b3b83f7b941", null ],
-    [ "getNumberOfDimensions", "class_doocs_backend_register_info.html#a6527c374f2ce8ee2174c880dbbccff88", null ],
     [ "getNumberOfElements", "class_doocs_backend_register_info.html#ad0b9b9ad0e6505e3e41e2620c05cd216", null ],
     [ "getRegisterName", "class_doocs_backend_register_info.html#a76873fb8a36585d82b670f0d701f85de", null ],
     [ "getSupportedAccessModes", "class_doocs_backend_register_info.html#afedfa60db50085418b964cacbe3a4441", null ],
@@ -15,6 +15,6 @@ var class_doocs_backend_register_info =
     [ "_readable", "class_doocs_backend_register_info.html#abaa16f77e7da1339c88550f46d191e85", null ],
     [ "_writable", "class_doocs_backend_register_info.html#a3ead7621876d0375e7dc694c2433cd1e", null ],
     [ "accessModeFlags", "class_doocs_backend_register_info.html#a89fda9983145f0534b40f0932681aa17", null ],
-    [ "dataDescriptor", "class_doocs_backend_register_info.html#a988dda12b927435f6c912509b65fcf13", null ],
+    [ "dataDescriptor", "class_doocs_backend_register_info.html#a4f5d206800ede6e46004b2b4c28f2a7f", null ],
     [ "doocsTypeId", "class_doocs_backend_register_info.html#a96d907af25636665d23dbef9e40550db", null ]
 ];

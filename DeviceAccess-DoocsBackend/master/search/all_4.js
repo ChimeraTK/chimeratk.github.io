@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['datadescriptor',['dataDescriptor',['../class_doocs_backend_register_info.html#a988dda12b927435f6c912509b65fcf13',1,'DoocsBackendRegisterInfo']]],
+  ['datadescriptor',['dataDescriptor',['../class_doocs_backend_register_info.html#a4f5d206800ede6e46004b2b4c28f2a7f',1,'DoocsBackendRegisterInfo']]],
   ['deactivatealllisteners',['deactivateAllListeners',['../class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#a30c75e5928220a718f8a7f9fa198fd1b',1,'ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager']]],
   ['deactivatealllistenersandpushexception',['deactivateAllListenersAndPushException',['../class_chimera_t_k_1_1_doocs_backend_namespace_1_1_z_m_q_subscription_manager.html#a06888e243c359a75a6d2796072806e0a',1,'ChimeraTK::DoocsBackendNamespace::ZMQSubscriptionManager']]],
   ['define_5fvirtual_5ffunction_5ftemplate_5fvtable_5ffiller',['DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER',['../class_chimera_t_k_1_1_doocs_backend.html#af722dad9f7247dbcc506f4fb2b6bc359',1,'ChimeraTK::DoocsBackend']]],
@@ -24,7 +24,8 @@ var searchData=
   ['doocsbackendregisteraccessor',['DoocsBackendRegisterAccessor',['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html',1,'ChimeraTK::DoocsBackendRegisterAccessor&lt; UserType &gt;'],['../class_chimera_t_k_1_1_doocs_backend.html#a8c596c0085374b46950ac3868ff637e0',1,'ChimeraTK::DoocsBackend::DoocsBackendRegisterAccessor()'],['../class_chimera_t_k_1_1_doocs_backend_register_accessor.html#aa1e88c093f1951deaf0123e16c08117b',1,'ChimeraTK::DoocsBackendRegisterAccessor::DoocsBackendRegisterAccessor()']]],
   ['doocsbackendregisteraccessor_2eh',['DoocsBackendRegisterAccessor.h',['../_doocs_backend_register_accessor_8h.html',1,'']]],
   ['doocsbackendregisteraccessorbase',['DoocsBackendRegisterAccessorBase',['../class_chimera_t_k_1_1_doocs_backend_register_accessor_base.html',1,'ChimeraTK']]],
-  ['doocsbackendregisterinfo',['DoocsBackendRegisterInfo',['../class_doocs_backend_register_info.html',1,'DoocsBackendRegisterInfo'],['../class_doocs_backend_register_info.html#a96c2e8bede75794549083b860ebed92c',1,'DoocsBackendRegisterInfo::DoocsBackendRegisterInfo()']]],
+  ['doocsbackendregistercatalogue',['DoocsBackendRegisterCatalogue',['../class_doocs_backend_register_catalogue.html',1,'']]],
+  ['doocsbackendregisterinfo',['DoocsBackendRegisterInfo',['../class_doocs_backend_register_info.html',1,'DoocsBackendRegisterInfo'],['../class_doocs_backend_register_info.html#a7ed8754f5e6af6d2add99959f32978fa',1,'DoocsBackendRegisterInfo::DoocsBackendRegisterInfo()=default'],['../class_doocs_backend_register_info.html#a96c2e8bede75794549083b860ebed92c',1,'DoocsBackendRegisterInfo::DoocsBackendRegisterInfo(const DoocsBackendRegisterInfo &amp;other)=default']]],
   ['doocsbackendstringregisteraccessor',['DoocsBackendStringRegisterAccessor',['../class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html',1,'ChimeraTK::DoocsBackendStringRegisterAccessor&lt; UserType &gt;'],['../class_chimera_t_k_1_1_doocs_backend_string_register_accessor.html#a238eef2791d961eb9c90754b92ca83fe',1,'ChimeraTK::DoocsBackendStringRegisterAccessor::DoocsBackendStringRegisterAccessor()']]],
   ['doocsbackendstringregisteraccessor_2eh',['DoocsBackendStringRegisterAccessor.h',['../_doocs_backend_string_register_accessor_8h.html',1,'']]],
   ['doocsbackendtimestampaccessor_2eh',['DoocsBackendTimeStampAccessor.h',['../_doocs_backend_time_stamp_accessor_8h.html',1,'']]],

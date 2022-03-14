@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['datadescriptor',['dataDescriptor',['../class_doocs_backend_register_info.html#a988dda12b927435f6c912509b65fcf13',1,'DoocsBackendRegisterInfo']]],
+  ['datadescriptor',['dataDescriptor',['../class_doocs_backend_register_info.html#a4f5d206800ede6e46004b2b4c28f2a7f',1,'DoocsBackendRegisterInfo']]],
   ['derived',['derived',['../struct_all_register_defaults.html#a9546f6e3dc5b6397e171f2c4f15fd0c4',1,'AllRegisterDefaults']]],
   ['doocsserver',['DoocsServer',['../class_doocs_launcher.html#a4234e6ec40714d4c05d025e45539a306',1,'DoocsLauncher']]],
   ['doocsserver1',['DoocsServer1',['../class_doocs_launcher.html#a473b8c6ab026c30358edd31e43fc0eca',1,'DoocsLauncher']]],

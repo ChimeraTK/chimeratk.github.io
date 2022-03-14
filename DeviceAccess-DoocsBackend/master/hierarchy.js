@@ -95,7 +95,13 @@ var hierarchy =
         [ "RegSomeZmqInt", "struct_reg_some_zmq_int.html", null ]
       ] ]
     ] ],
+    [ "BackendRegisterCatalogue", null, [
+      [ "DoocsBackendRegisterCatalogue", "class_doocs_backend_register_catalogue.html", null ]
+    ] ],
     [ "ChimeraTK::DoocsBackend::BackendRegisterer", "class_chimera_t_k_1_1_doocs_backend_1_1_backend_registerer.html", null ],
+    [ "BackendRegisterInfoBase", null, [
+      [ "DoocsBackendRegisterInfo", "class_doocs_backend_register_info.html", null ]
+    ] ],
     [ "CatalogueFetcher", "class_catalogue_fetcher.html", null ],
     [ "DeviceBackendImpl", null, [
       [ "ChimeraTK::DoocsBackend", "class_chimera_t_k_1_1_doocs_backend.html", null ]
@@ -119,9 +125,6 @@ var hierarchy =
     [ "EventIdMapper", "class_event_id_mapper.html", null ],
     [ "NDRegisterAccessor", null, [
       [ "ChimeraTK::DoocsBackendRegisterAccessor< UserType >", "class_chimera_t_k_1_1_doocs_backend_register_accessor.html", null ]
-    ] ],
-    [ "RegisterInfo", null, [
-      [ "DoocsBackendRegisterInfo", "class_doocs_backend_register_info.html", null ]
     ] ],
     [ "ThreadedDoocsServer", null, [
       [ "DoocsLauncher", "class_doocs_launcher.html", null ],

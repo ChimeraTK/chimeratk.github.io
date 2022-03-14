@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['savecatalogue',['saveCatalogue',['../namespace_cache.html#a9bcd131aceee0b32a5b5d0d10de93dac',1,'Cache']]],
+  ['savecatalogue',['saveCatalogue',['../namespace_cache.html#aa3a2d3ba9bd2d1353cb061af6b0031e4',1,'Cache']]],
   ['scalardefaults',['ScalarDefaults',['../struct_scalar_defaults.html',1,'']]],
   ['scalardefaults_3c_20regsomebit_20_3e',['ScalarDefaults&lt; RegSomeBit &gt;',['../struct_scalar_defaults.html',1,'']]],
   ['scalardefaults_3c_20regsomedouble_20_3e',['ScalarDefaults&lt; RegSomeDouble &gt;',['../struct_scalar_defaults.html',1,'']]],

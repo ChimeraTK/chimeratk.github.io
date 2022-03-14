@@ -89,9 +89,7 @@ $(document).ready(function(){initNavTree('spec__doocs_backend.html','');});
 <p>**This is just a stub to get started.</p>
 </blockquote>
 <p>**</p>
-<h2>A. Introduction</h2>
 <p>This documnent is currently still <b>INCOMPLETE</b>!</p>
-<h2>B. Behavioural specification</h2>
 <ul>
 <li><p class="startli">1. Doocs EventID &lt;=&gt; ChimeraTK::VersionNumber mapping</p>
 <p class="startli">In Doocs, the EventID (aka macro pulse number) allows to correlate data. In <a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a> this is done through the VersionNumber. The Doocs EventID is not known in a <a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a> application as meta data for a TransferElement. To allow correlating data with the data consistency group, all data with the same Doocs EventID get the same ChimeraTK::VersionNumber. At the same time the specification for the TransferElement must be fulfilled.</p><ul>
@@ -149,7 +147,6 @@ $(document).ready(function(){initNavTree('spec__doocs_backend.html','');});
 </ul>
 </li>
 </ul>
-<h3>Comments</h3>
 <ul>
 <li><a class="anchor" id="DoocsBackend_comment_b_1_1_3_1"></a><a class="el" href="spec__doocs_backend.html#DoocsBackend_b_1_1_3_1">1.1.3.1</a> This can happen because different backends connected to different servers are sharing the mapper.</li>
 <li><a class="anchor" id="DoocsBackend_comment_b_1_1_5"></a><a class="el" href="spec__doocs_backend.html#DoocsBackend_b_1_1_5">1.1.5</a> Giving out a VersionNumber(nullptr) would violate the DeviceAccess TransferElement specification.</li>
@@ -160,7 +157,7 @@ $(document).ready(function(){initNavTree('spec__doocs_backend.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Feb 9 2022 04:54:22 for ChimeraTK-DeviceAccess-DoocsBackend by
+    <li class="footer">Generated on Mon Mar 14 2022 15:30:28 for ChimeraTK-DeviceAccess-DoocsBackend by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
