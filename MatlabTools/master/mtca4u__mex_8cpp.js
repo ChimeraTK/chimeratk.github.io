@@ -9,7 +9,7 @@ var mtca4u__mex_8cpp =
     [ "getDeviceInfo", "mtca4u__mex_8cpp.html#a25b3b5d6ad5e70991edc9528cc1a3ef7", null ],
     [ "getDMapFilePath", "mtca4u__mex_8cpp.html#a1c3c8a674059a8ddff8a5cdc772a4d11", null ],
     [ "getDMapFilePath", "mtca4u__mex_8cpp.html#a0a977bfba16f240e18eb6d7eb4b8d3cc", null ],
-    [ "getFundamentalTypeString", "mtca4u__mex_8cpp.html#a2edda3f5a975d9e3d1a00b7409aaf3f8", null ],
+    [ "getFundamentalTypeString", "mtca4u__mex_8cpp.html#a1dc93d0ff425e15f27875e27eed58e00", null ],
     [ "getInfo", "mtca4u__mex_8cpp.html#a51a0463e8e78842851c784617745a24a", null ],
     [ "getInfo", "mtca4u__mex_8cpp.html#a75ae46bfaae7b69ccd96963249d2711c", null ],
     [ "getOrdinalNumerString", "mtca4u__mex_8cpp.html#aabea6eed6861530fce3e482de7408267", null ],
