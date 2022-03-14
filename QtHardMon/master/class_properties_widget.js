@@ -8,7 +8,7 @@ var class_properties_widget =
     [ "setOneDWidgetsVisible", "class_properties_widget.html#a76743665a4fd1fda4420abf9f1c1e05f", null ],
     [ "setShape", "class_properties_widget.html#af499d1e850fdbe8d75773620c6bfc949", null ],
     [ "setTwoDWidgetsVisible", "class_properties_widget.html#a6e11727cf0e96427d8f36bf2ffb2f7b1", null ],
-    [ "setType", "class_properties_widget.html#a28916a51d808bb7597008098c8037526", null ],
-    [ "updateRegisterInfo", "class_properties_widget.html#af24e33cca6c7971bba19a5e7e4dcada9", null ],
+    [ "setType", "class_properties_widget.html#addefe8953b1bfa88be5c9e21eeb34c92", null ],
+    [ "updateRegisterInfo", "class_properties_widget.html#ae66a58da457ec132b8d52464e29b447f", null ],
     [ "ui", "class_properties_widget.html#adba137f054fca3c8ecedbc1bdb3ad835", null ]
 ];

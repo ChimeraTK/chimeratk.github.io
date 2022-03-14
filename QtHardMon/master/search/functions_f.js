@@ -16,7 +16,7 @@ var searchData=
   ['setsize',['setSize',['../class_example_properties_widget.html#ae4f5535431a7cd2b7b0ff8ce47ba64b1',1,'ExamplePropertiesWidget']]],
   ['settablevalue',['setTableValue',['../class_test_utilities.html#a6a0515de025d3c790084be430c621852',1,'TestUtilities::setTableValue(RegisterPropertiesWidget *widget, int row, int column, std::tuple&lt; int, int, double &gt; dataTuple)'],['../class_test_utilities.html#a03c33cb3d0993707d5dd65dc01a88901',1,'TestUtilities::setTableValue(GenericRegisterPropertiesWidget *widget, int row, int column, std::tuple&lt; int, int, double &gt; dataTuple)']]],
   ['settwodwidgetsvisible',['setTwoDWidgetsVisible',['../class_properties_widget.html#a6e11727cf0e96427d8f36bf2ffb2f7b1',1,'PropertiesWidget']]],
-  ['settype',['setType',['../class_properties_widget.html#a28916a51d808bb7597008098c8037526',1,'PropertiesWidget']]],
+  ['settype',['setType',['../class_properties_widget.html#addefe8953b1bfa88be5c9e21eeb34c92',1,'PropertiesWidget']]],
   ['setvalue',['setValue',['../class_config_file_reader_writer.html#a8a16d95464e893a8faf501b13a9b8dc9',1,'ConfigFileReaderWriter::setValue()'],['../class_preferences_provider.html#a3fba48a3098f3bb9f1630841b039e70d',1,'PreferencesProvider::setValue()']]],
   ['switchdeviceselection',['switchDeviceSelection',['../struct_qt_hardmon__populates_register_tree__fixture.html#a3fa818ea465424fd5da28b251a4e2170',1,'QtHardmon_populatesRegisterTree_fixture']]],
   ['switchregisterselection',['switchRegisterSelection',['../struct_qt_hardmon__populates_register_properties__fixture.html#a3a60ea2ab8e316a692a2fca99dfe8995',1,'QtHardmon_populatesRegisterProperties_fixture']]]

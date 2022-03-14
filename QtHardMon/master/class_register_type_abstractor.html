@@ -128,8 +128,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8b382ff726fdbb372383e107bb543936"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cfd3ba37f751b16192916318bb9519e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor.html#a8cfd3ba37f751b16192916318bb9519e">write</a> ()=0</td></tr>
 <tr class="separator:a8cfd3ba37f751b16192916318bb9519e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c3745d988155acf95819b60f23f401a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor.html#a3c3745d988155acf95819b60f23f401a">writable</a> ()=0</td></tr>
-<tr class="separator:a3c3745d988155acf95819b60f23f401a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3e079daa15754f893df9df00c98eed"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor.html#a8d3e079daa15754f893df9df00c98eed">isWritable</a> ()=0</td></tr>
+<tr class="separator:a8d3e079daa15754f893df9df00c98eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1471caf788b44eceb52db46b6a90f8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor.html#a6c1471caf788b44eceb52db46b6a90f8">isReadable</a> ()=0</td></tr>
+<tr class="separator:a6c1471caf788b44eceb52db46b6a90f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2541df91f2aad9cc67fa4018f0ae827f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor.html#a2541df91f2aad9cc67fa4018f0ae827f">~RegisterTypeAbstractor</a> ()=default</td></tr>
 <tr class="separator:a2541df91f2aad9cc67fa4018f0ae827f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -265,6 +267,60 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="class_register_type_abstractor_raw_impl.html#a09abfa376aa7a6d5227b62eb9677a4b3">RegisterTypeAbstractorRawImpl&lt; RAW_DATA_TYPE, COOKED_DATA_TYPE &gt;</a>, <a class="el" href="class_register_type_abstractor_impl.html#a3b4c561468a8481b733090d5fb2c8de4">RegisterTypeAbstractorImpl&lt; USER_DATA_TYPE &gt;</a>, and <a class="el" href="class_register_type_abstractor_impl.html#a3b4c561468a8481b733090d5fb2c8de4">RegisterTypeAbstractorImpl&lt; RAW_DATA_TYPE &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a6c1471caf788b44eceb52db46b6a90f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1471caf788b44eceb52db46b6a90f8">&#9670;&nbsp;</a></span>isReadable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool RegisterTypeAbstractor::isReadable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_register_type_abstractor_impl.html#a6cd46e8f58176f7ef59f8d4db4a91ba9">RegisterTypeAbstractorImpl&lt; USER_DATA_TYPE &gt;</a>, and <a class="el" href="class_register_type_abstractor_impl.html#a6cd46e8f58176f7ef59f8d4db4a91ba9">RegisterTypeAbstractorImpl&lt; RAW_DATA_TYPE &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a8d3e079daa15754f893df9df00c98eed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d3e079daa15754f893df9df00c98eed">&#9670;&nbsp;</a></span>isWritable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool RegisterTypeAbstractor::isWritable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_register_type_abstractor_impl.html#a9be3cd144bb8c763606168fead397aed">RegisterTypeAbstractorImpl&lt; USER_DATA_TYPE &gt;</a>, and <a class="el" href="class_register_type_abstractor_impl.html#a9be3cd144bb8c763606168fead397aed">RegisterTypeAbstractorImpl&lt; RAW_DATA_TYPE &gt;</a>.</p>
 
 </div>
 </div>
@@ -540,33 +596,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3c3745d988155acf95819b60f23f401a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c3745d988155acf95819b60f23f401a">&#9670;&nbsp;</a></span>writable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool RegisterTypeAbstractor::writable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_register_type_abstractor_impl.html#ac2b6425f1367d47bfa26abd081a82a2a">RegisterTypeAbstractorImpl&lt; USER_DATA_TYPE &gt;</a>, and <a class="el" href="class_register_type_abstractor_impl.html#ac2b6425f1367d47bfa26abd081a82a2a">RegisterTypeAbstractorImpl&lt; RAW_DATA_TYPE &gt;</a>.</p>
-
-</div>
-</div>
 <a id="a8cfd3ba37f751b16192916318bb9519e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8cfd3ba37f751b16192916318bb9519e">&#9670;&nbsp;</a></span>write()</h2>
 
@@ -603,7 +632,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_register_type_abstractor.html">RegisterTypeAbstractor</a></li>
-    <li class="footer">Generated on Sat Sep 4 2021 03:54:17 for QtHardMon by
+    <li class="footer">Generated on Mon Mar 14 2022 15:30:56 for QtHardMon by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

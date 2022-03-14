@@ -6,6 +6,7 @@ var class_register_accessor_model =
     [ "data", "class_register_accessor_model.html#a4b9dc31ab2b4e814d20a966f8b2424ec", null ],
     [ "flags", "class_register_accessor_model.html#a5e742d8cff0c5c7cfe5fb9f85400bcfd", null ],
     [ "headerData", "class_register_accessor_model.html#ab40a89d74973315e9d9742c85c9bece9", null ],
+    [ "isReadable", "class_register_accessor_model.html#a266bd4709a073f52f27f54aeac13af22", null ],
     [ "read", "class_register_accessor_model.html#a88d345d53cc46d5955577244df2cb321", null ],
     [ "rowCount", "class_register_accessor_model.html#a2ce063127f54c5058fa5b53c689bfc9b", null ],
     [ "setChannelNumber", "class_register_accessor_model.html#af5343774a8fd7b4291f225d89c72a050", null ],
