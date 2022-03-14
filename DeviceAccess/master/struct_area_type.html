@@ -121,12 +121,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a042930befb4d68a51839ca8bb4799f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ab355bcbfb44933ab0a373d843934a9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_area_type.html#a0ab355bcbfb44933ab0a373d843934a9">nRuntimeErrorCases</a> ()</td></tr>
 <tr class="separator:a0ab355bcbfb44933ab0a373d843934a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a531204077ecc966900ae1071a1d677c8"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:a531204077ecc966900ae1071a1d677c8"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_area_type.html#a531204077ecc966900ae1071a1d677c8">generateValue</a> ()</td></tr>
-<tr class="separator:a531204077ecc966900ae1071a1d677c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2a85252b35975a76c163c7fc18400c8"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:ab2a85252b35975a76c163c7fc18400c8"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_area_type.html#ab2a85252b35975a76c163c7fc18400c8">getRemoteValue</a> ()</td></tr>
-<tr class="separator:ab2a85252b35975a76c163c7fc18400c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b2dfcc07725d5413a2fb7eecdca2db"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:a77b2dfcc07725d5413a2fb7eecdca2db"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_area_type.html#a77b2dfcc07725d5413a2fb7eecdca2db">generateValue</a> (bool raw=false)</td></tr>
+<tr class="separator:a77b2dfcc07725d5413a2fb7eecdca2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6c5aa1259ce527705680be779e027c"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
+<tr class="memitem:acf6c5aa1259ce527705680be779e027c"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_area_type.html#acf6c5aa1259ce527705680be779e027c">getRemoteValue</a> (bool raw=false)</td></tr>
+<tr class="separator:acf6c5aa1259ce527705680be779e027c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a148e722677e2dc68f01a5c1899030ff1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_area_type.html#a148e722677e2dc68f01a5c1899030ff1">setRemoteValue</a> ()</td></tr>
 <tr class="separator:a148e722677e2dc68f01a5c1899030ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c486ceeaef450b2d7fcbc6b1fe5de00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_area_type.html#a8c486ceeaef450b2d7fcbc6b1fe5de00">setForceRuntimeError</a> (bool enable, size_t)</td></tr>
@@ -139,7 +139,7 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:acb418760ee106566581537837358e51f"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_area_type.html#acb418760ee106566581537837358e51f">capabilities</a> = <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;&gt;().disableForceDataLossWrite().disableAsyncReadInconsistency()</td></tr>
+<tr class="memitem:acb418760ee106566581537837358e51f"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_area_type.html#acb418760ee106566581537837358e51f">capabilities</a></td></tr>
 <tr class="separator:acb418760ee106566581537837358e51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -149,8 +149,8 @@ struct AreaType&lt; Register &gt;</h3>
 
 <p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00023">23</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a531204077ecc966900ae1071a1d677c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a531204077ecc966900ae1071a1d677c8">&#9670;&nbsp;</a></span>generateValue()</h2>
+<a id="a77b2dfcc07725d5413a2fb7eecdca2db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77b2dfcc07725d5413a2fb7eecdca2db">&#9670;&nbsp;</a></span>generateValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +165,8 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="memname">std::vector&lt;std::vector&lt;UserType&gt; &gt; <a class="el" href="struct_area_type.html">AreaType</a>&lt; Register &gt;::generateValue </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>raw</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -176,27 +177,28 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00036">36</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00037">37</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ab2a85252b35975a76c163c7fc18400c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2a85252b35975a76c163c7fc18400c8">&#9670;&nbsp;</a></span>getRemoteValue()</h2>
+<a id="acf6c5aa1259ce527705680be779e027c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf6c5aa1259ce527705680be779e027c">&#9670;&nbsp;</a></span>getRemoteValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Register &gt; </div>
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;typename Type &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::vector&lt;UserType&gt; &gt; <a class="el" href="struct_area_type.html">AreaType</a>&lt; Register &gt;::getRemoteValue </td>
+          <td class="memname">std::vector&lt;std::vector&lt;Type&gt; &gt; <a class="el" href="struct_area_type.html">AreaType</a>&lt; Register &gt;::getRemoteValue </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>raw</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -207,7 +209,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00047">47</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00051">51</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -363,7 +365,7 @@ template&lt;typename Register &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00064">64</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00069">69</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -392,7 +394,7 @@ template&lt;typename Register &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00056">56</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00061">61</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -469,7 +471,7 @@ template&lt;typename Register &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00033">33</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00034">34</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -485,7 +487,7 @@ template&lt;typename Register &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto <a class="el" href="struct_area_type.html">AreaType</a>&lt; Register &gt;::capabilities = <a class="el" href="struct_chimera_t_k_1_1_test_capabilities.html">TestCapabilities</a>&lt;&gt;().disableForceDataLossWrite().disableAsyncReadInconsistency()</td>
+          <td class="memname">constexpr auto <a class="el" href="struct_area_type.html">AreaType</a>&lt; Register &gt;::capabilities</td>
         </tr>
       </table>
   </td>
@@ -494,7 +496,7 @@ template&lt;typename Register &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">      TestCapabilities&lt;&gt;().disableForceDataLossWrite().disableAsyncReadInconsistency().enableTestRawTransfer()</div></div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="test_subdevice_backend_unified_8cpp_source.html#l00031">31</a> of file <a class="el" href="test_subdevice_backend_unified_8cpp_source.html">testSubdeviceBackendUnified.cpp</a>.</p>
 
 </div>
@@ -508,7 +510,7 @@ template&lt;typename Register &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_area_type.html">AreaType</a></li>
-    <li class="footer">Generated on Tue Feb 22 2022 04:53:26 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Mon Mar 14 2022 15:28:37 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

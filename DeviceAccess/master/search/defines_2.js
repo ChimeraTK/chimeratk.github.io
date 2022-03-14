@@ -1,13 +1,16 @@
 var searchData=
 [
-  ['declare_5fmulti_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes',['DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES',['../util_2include_2_supported_user_types_8h.html#a393c59a0bbe800ef9a1420bc5f8f8be7',1,'SupportedUserTypes.h']]],
-  ['declare_5fmulti_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes_5fno_5fvoid',['DECLARE_MULTI_TEMPLATE_FOR_CHIMERATK_USER_TYPES_NO_VOID',['../util_2include_2_supported_user_types_8h.html#a15e1765bd46f19c26165b67774466461',1,'SupportedUserTypes.h']]],
-  ['declare_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes',['DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES',['../util_2include_2_supported_user_types_8h.html#a8256edfa28cb73e5de13c92e1920369d',1,'SupportedUserTypes.h']]],
-  ['declare_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes_5fno_5fvoid',['DECLARE_TEMPLATE_FOR_CHIMERATK_USER_TYPES_NO_VOID',['../util_2include_2_supported_user_types_8h.html#a6e202e989c52cc471484fa2f1864e3db',1,'SupportedUserTypes.h']]],
-  ['def_5ftypename',['DEF_TYPENAME',['../test_fixed_point_converter_8cpp.html#a4b4edc265050c3971e52f9643040e649',1,'testFixedPointConverter.cpp']]],
-  ['define_5fvirtual_5ffunction_5ftemplate_5fvtable',['DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE',['../util_2include_2_virtual_function_template_8h.html#af17cdfe4bdc6a97d29cda32a0253187f',1,'VirtualFunctionTemplate.h']]],
-  ['define_5fvirtual_5ffunction_5ftemplate_5fvtable_5ffiller',['DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER',['../util_2include_2_virtual_function_template_8h.html#ad55f079dbae8d46794e4a68782511746',1,'VirtualFunctionTemplate.h']]],
-  ['dma_5fdata_5foffset',['DMA_DATA_OFFSET',['../device__backends_2pcie_2include_2pciedev__io_8h.html#aa293c11b73c1e8a741c9060d8ef1c021',1,'pciedev_io.h']]],
-  ['dma_5fdata_5foffset_5fbyte',['DMA_DATA_OFFSET_BYTE',['../device__backends_2pcie_2include_2pciedev__io_8h.html#a9fa9f95b2d69f5b07cb9cb30b1ba9afe',1,'pciedev_io.h']]],
-  ['dmmy_5fas_5fascii',['DMMY_AS_ASCII',['../test_pcie_backend_8cpp.html#a129f24ffa58f2c3dcb7d527e18cf0770',1,'testPcieBackend.cpp']]]
+  ['call_5fvirtual_5ffunction_5ftemplate',['CALL_VIRTUAL_FUNCTION_TEMPLATE',['../util_2include_2_virtual_function_template_8h.html#a9ae25c66f893b5dffc9251887f2bb9a5',1,'VirtualFunctionTemplate.h']]],
+  ['check_5fapplication_5fbuffer',['CHECK_APPLICATION_BUFFER',['../_unified_backend_test_8h.html#a048d20ccdf8bf904afec713ede5b2cc2',1,'UnifiedBackendTest.h']]],
+  ['check_5fcounters_5fhigh_5flevel',['CHECK_COUNTERS_HIGH_LEVEL',['../test_transfer_group_8cpp.html#acfbc2b3911b321f1715322ee5075a8ec',1,'testTransferGroup.cpp']]],
+  ['check_5fcounters_5flow_5flevel',['CHECK_COUNTERS_LOW_LEVEL',['../test_transfer_group_8cpp.html#a0217f3fead9d41fd2bef0bd5b63268a1',1,'testTransferGroup.cpp']]],
+  ['check_5fcounters_5fmid_5flevel',['CHECK_COUNTERS_MID_LEVEL',['../test_transfer_group_8cpp.html#ae189acd90ecdf0978b5d0c561a1e9021',1,'testTransferGroup.cpp']]],
+  ['check_5fequality',['CHECK_EQUALITY',['../_unified_backend_test_8h.html#a3b6893388f16002bc124de0fe5fc18ae',1,'UnifiedBackendTest.h']]],
+  ['check_5fequality_5ftimeout',['CHECK_EQUALITY_TIMEOUT',['../_unified_backend_test_8h.html#a04f19c70138fca6224d58e17cc55cffd',1,'UnifiedBackendTest.h']]],
+  ['check_5fequality_5fvector',['CHECK_EQUALITY_VECTOR',['../_unified_backend_test_8h.html#a0a9475c70cbaa9787e856ee5fa363044',1,'UnifiedBackendTest.h']]],
+  ['check_5fequality_5fvector_5ftimeout',['CHECK_EQUALITY_VECTOR_TIMEOUT',['../_unified_backend_test_8h.html#a282b845dd77195597ebb0903d0332344',1,'UnifiedBackendTest.h']]],
+  ['check_5fsigned_5ffixed_5fpoint_5fno_5ffractional',['CHECK_SIGNED_FIXED_POINT_NO_FRACTIONAL',['../test_fixed_point_converter_8cpp.html#a81f43db6e3f488cde3cfae84a86db022',1,'testFixedPointConverter.cpp']]],
+  ['check_5ftimeout',['CHECK_TIMEOUT',['../_unified_backend_test_8h.html#a17030ac7f00713a62e05ab6c35cb710e',1,'CHECK_TIMEOUT():&#160;UnifiedBackendTest.h'],['../test_subdevice_backend_8cpp.html#a4231b3c2fbf5750f62fc192c34b48a27',1,'CHECK_TIMEOUT():&#160;testSubdeviceBackend.cpp']]],
+  ['clock_5fmux_5fregister_5fstring',['CLOCK_MUX_REGISTER_STRING',['../test_dummy_backend_8cpp.html#a476d0f9665b137cb4f5530afce2bdb35',1,'testDummyBackend.cpp']]],
+  ['clock_5freset_5fregister_5fstring',['CLOCK_RESET_REGISTER_STRING',['../test_dummy_backend_8cpp.html#afc582965be2b50c7458505aa0fc5f94b',1,'testDummyBackend.cpp']]]
 ];

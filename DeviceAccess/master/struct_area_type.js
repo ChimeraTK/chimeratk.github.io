@@ -1,7 +1,7 @@
 var struct_area_type =
 [
-    [ "generateValue", "struct_area_type.html#a531204077ecc966900ae1071a1d677c8", null ],
-    [ "getRemoteValue", "struct_area_type.html#ab2a85252b35975a76c163c7fc18400c8", null ],
+    [ "generateValue", "struct_area_type.html#a77b2dfcc07725d5413a2fb7eecdca2db", null ],
+    [ "getRemoteValue", "struct_area_type.html#acf6c5aa1259ce527705680be779e027c", null ],
     [ "isReadable", "struct_area_type.html#ab98ad7fceb56b11c53420b87dc3dbf41", null ],
     [ "isWriteable", "struct_area_type.html#af07f821d2eecf55f0317fbfae9371336", null ],
     [ "nChannels", "struct_area_type.html#a0bea9bca4d1525f9dd53fac0c968c114", null ],

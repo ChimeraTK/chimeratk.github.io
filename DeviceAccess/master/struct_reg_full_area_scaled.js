@@ -2,7 +2,7 @@ var struct_reg_full_area_scaled =
 [
     [ "minimumUserType", "struct_reg_full_area_scaled.html#a0f72f6971f31d5ec0633c2c367150cb9", null ],
     [ "rawUserType", "struct_reg_full_area_scaled.html#a303d71c20f6accc07676e02df216b9f9", null ],
-    [ "convertRawToCooked", "struct_reg_full_area_scaled.html#a63f9a6c10946e48e835b079aa59906df", null ],
+    [ "convertRawToCooked", "struct_reg_full_area_scaled.html#a024a787d5aac8131792881984885c9a2", null ],
     [ "isWriteable", "struct_reg_full_area_scaled.html#a0e61a0caf17f1546abb91328438d7c2f", null ],
     [ "nElementsPerChannel", "struct_reg_full_area_scaled.html#af68910dde0d9398d343ae911bbfd9e8d", null ],
     [ "path", "struct_reg_full_area_scaled.html#ab1d41a016042428b49f5d23a6cd4a762", null ],

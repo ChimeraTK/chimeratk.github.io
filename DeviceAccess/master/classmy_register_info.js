@@ -1,14 +1,16 @@
 var classmy_register_info =
 [
     [ "myRegisterInfo", "classmy_register_info.html#abbc4e77521b384685031779fd35c871c", null ],
+    [ "myRegisterInfo", "classmy_register_info.html#a4ff285b574d1f0888feedf703cef2990", null ],
+    [ "clone", "classmy_register_info.html#adc8ec398d03045a349bfa4c4ea181397", null ],
     [ "getDataDescriptor", "classmy_register_info.html#ad3e8cab96ac744704ac11abf017fa851", null ],
     [ "getNumberOfChannels", "classmy_register_info.html#a8afebaf3baa27beba0435f92dcf6c550", null ],
-    [ "getNumberOfDimensions", "classmy_register_info.html#adc3fed9349a571cf3226fd145e62a496", null ],
     [ "getNumberOfElements", "classmy_register_info.html#ae8145c77ae96df6cd5384ef67f48912b", null ],
     [ "getRegisterName", "classmy_register_info.html#ade061abb459aac00556b421dedd23a13", null ],
     [ "getSupportedAccessModes", "classmy_register_info.html#a91a84451c482c514214f1e2bf49d977e", null ],
     [ "isReadable", "classmy_register_info.html#a19975a112e6b0d3795fd423eee953ad5", null ],
     [ "isWriteable", "classmy_register_info.html#abd50ef365c6ea0646f2c385866d8254a", null ],
+    [ "operator==", "classmy_register_info.html#abdb6b360ff57f013658628a46a55399a", null ],
     [ "_dataDescriptor", "classmy_register_info.html#a77e60ff151bfaaa4ccd9c39f8b8a4d45", null ],
     [ "_nbOfChannels", "classmy_register_info.html#a180ff4161e9a676db08a1e5310956ce3", null ],
     [ "_nbOfDimensions", "classmy_register_info.html#a89e8c289ee957a4d741c519af5558398", null ],

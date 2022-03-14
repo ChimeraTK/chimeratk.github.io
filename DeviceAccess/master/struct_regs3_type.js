@@ -1,7 +1,7 @@
 var struct_regs3_type =
 [
-    [ "generateValue", "struct_regs3_type.html#a58ad347f215d1298152a8626fc305f17", null ],
-    [ "getRemoteValue", "struct_regs3_type.html#aae6a8e4b0cc484d459eeb2c1113ed07e", null ],
+    [ "generateValue", "struct_regs3_type.html#a682f5446e77172a3e53b5bc85a35f816", null ],
+    [ "getRemoteValue", "struct_regs3_type.html#aace3adc4c26980e5bc72eb1f5deb6bd4", null ],
     [ "isReadable", "struct_regs3_type.html#a0a868e6d036b602f650a14097702c5d3", null ],
     [ "isWriteable", "struct_regs3_type.html#a6d70dd80a852a207c1968c05a364f457", null ],
     [ "nChannels", "struct_regs3_type.html#adf4d8245304441c943ef90ab2de6616d", null ],

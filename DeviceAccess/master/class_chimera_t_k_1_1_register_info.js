@@ -1,20 +1,20 @@
 var class_chimera_t_k_1_1_register_info =
 [
-    [ "DataDescriptor", "class_chimera_t_k_1_1_register_info_1_1_data_descriptor.html", "class_chimera_t_k_1_1_register_info_1_1_data_descriptor" ],
-    [ "FundamentalType", "class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8", [
-      [ "numeric", "class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8a49057168d24dc9566533ec48326ced2c", null ],
-      [ "string", "class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8ab45cffe084dd3d20d928bee85e7b0f21", null ],
-      [ "boolean", "class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8a84e2c64f38f78ba3ea5c905ab5a2da27", null ],
-      [ "nodata", "class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8aba7879f8819d6b74aa4dd9e24b2fe90e", null ],
-      [ "undefined", "class_chimera_t_k_1_1_register_info.html#a860f659821e8bfab2804820bb42bb9d8a5e543256c480ac577d30f76f9120eb74", null ]
-    ] ],
-    [ "~RegisterInfo", "class_chimera_t_k_1_1_register_info.html#a92a66342bceca280cef3846e74b051c6", null ],
-    [ "getDataDescriptor", "class_chimera_t_k_1_1_register_info.html#a341d7226406a1b1d91b4dbaecec80b5a", null ],
-    [ "getNumberOfChannels", "class_chimera_t_k_1_1_register_info.html#a2fdccd50df8d11ab3b524d936e62793e", null ],
-    [ "getNumberOfDimensions", "class_chimera_t_k_1_1_register_info.html#a1642a8e5d3889f619c0e7958706aff30", null ],
-    [ "getNumberOfElements", "class_chimera_t_k_1_1_register_info.html#acc18b368ac96ca55d2a280aef0c6de43", null ],
-    [ "getRegisterName", "class_chimera_t_k_1_1_register_info.html#abb41176808c22e66a7708fb155f2fdbb", null ],
-    [ "getSupportedAccessModes", "class_chimera_t_k_1_1_register_info.html#a9b672a259a7daccda1165fe77102eb9c", null ],
-    [ "isReadable", "class_chimera_t_k_1_1_register_info.html#a6e479c07f9e757d2191f943110ba8fdc", null ],
-    [ "isWriteable", "class_chimera_t_k_1_1_register_info.html#a1c6958586d0b1a4ad3564b20a89a0111", null ]
+    [ "RegisterInfo", "class_chimera_t_k_1_1_register_info.html#a521c5396f06c04fff9b1bc81a573eeec", null ],
+    [ "RegisterInfo", "class_chimera_t_k_1_1_register_info.html#a646bc7934eb91a4e2b1aeb173390188a", null ],
+    [ "RegisterInfo", "class_chimera_t_k_1_1_register_info.html#a3abda37c309f4dbacd273b333bec1c48", null ],
+    [ "getDataDescriptor", "class_chimera_t_k_1_1_register_info.html#a5dd54ae0f2a10869c0ca6be167ee7a67", null ],
+    [ "getImpl", "class_chimera_t_k_1_1_register_info.html#a345b911952e5a33c9faee4469bde7020", null ],
+    [ "getImpl", "class_chimera_t_k_1_1_register_info.html#a7c1c00fcd4e479955c749bdf9dcfb9f2", null ],
+    [ "getNumberOfChannels", "class_chimera_t_k_1_1_register_info.html#a458be3ba7283800091e4102cb496edd4", null ],
+    [ "getNumberOfDimensions", "class_chimera_t_k_1_1_register_info.html#a256a7c512d94bc56e1564c4092103126", null ],
+    [ "getNumberOfElements", "class_chimera_t_k_1_1_register_info.html#ae7b72a02bd79a5a97ffe4f2c9a205c72", null ],
+    [ "getRegisterName", "class_chimera_t_k_1_1_register_info.html#a00d0b08366995234dbe9f239b00498b9", null ],
+    [ "getSupportedAccessModes", "class_chimera_t_k_1_1_register_info.html#a748df43161b035b9a2af7044e3f827ee", null ],
+    [ "isReadable", "class_chimera_t_k_1_1_register_info.html#aebe1c7b073d0968d40aed64e4e53b014", null ],
+    [ "isValid", "class_chimera_t_k_1_1_register_info.html#adff51ba5bd6b966dae36fe56495eafcc", null ],
+    [ "isWriteable", "class_chimera_t_k_1_1_register_info.html#a28f514a946cc889dae837573466c3d30", null ],
+    [ "operator=", "class_chimera_t_k_1_1_register_info.html#a92343f1785ebbe11bac92ee469418005", null ],
+    [ "operator=", "class_chimera_t_k_1_1_register_info.html#a261989b32f5b5fcb0c315c13b220353a", null ],
+    [ "_impl", "class_chimera_t_k_1_1_register_info.html#a39869fe19786b078104e794dff52f0f5", null ]
 ];

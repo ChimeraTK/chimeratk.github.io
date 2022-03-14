@@ -28,6 +28,7 @@ var test_l_map_backend_unified_8cpp =
     [ "RegSingleWordScaled", "struct_reg_single_word_scaled.html", "struct_reg_single_word_scaled" ],
     [ "RegSingleWordScaled_R", "struct_reg_single_word_scaled___r.html", "struct_reg_single_word_scaled___r" ],
     [ "RegSingleWordScaled_W", "struct_reg_single_word_scaled___w.html", "struct_reg_single_word_scaled___w" ],
+    [ "RegSingleWordScaled_RW", "struct_reg_single_word_scaled___r_w.html", "struct_reg_single_word_scaled___r_w" ],
     [ "RegSingleWordScaledTwice_push", "struct_reg_single_word_scaled_twice__push.html", "struct_reg_single_word_scaled_twice__push" ],
     [ "RegFullAreaScaled", "struct_reg_full_area_scaled.html", "struct_reg_full_area_scaled" ],
     [ "RegWordFirmwareForcedReadOnly", "struct_reg_word_firmware_forced_read_only.html", "struct_reg_word_firmware_forced_read_only" ],

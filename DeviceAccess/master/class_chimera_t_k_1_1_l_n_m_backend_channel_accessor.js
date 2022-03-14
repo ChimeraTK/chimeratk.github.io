@@ -17,6 +17,6 @@ var class_chimera_t_k_1_1_l_n_m_backend_channel_accessor =
     [ "setExceptionBackend", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a3822926558c11c5be5fbfae74540f807", null ],
     [ "_accessor", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a90f6d724c9c292b0ce248fc01fc6a865", null ],
     [ "_dev", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a5b96b1fcd78d50acfbf92bf320d9a919", null ],
-    [ "_info", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a0ba8602ecdc6311b89c0c386ebe643c2", null ],
+    [ "_info", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#ad64e9a2cc509dc1672334a805cdefd12", null ],
     [ "_registerPathName", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a5c9796ecfa342cbb3c221f6251682ba5", null ]
 ];

@@ -112,9 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a37e282b37293947ed77fb6d598d4478d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72a3263e620acb595ef1accded57f877"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a72a3263e620acb595ef1accded57f877">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a> (getAccessor_impl, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; T &gt;&gt;(boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html">LogicalNameMappingBackend</a> &gt;, size_t, size_t, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a>, size_t))</td></tr>
 <tr class="separator:a72a3263e620acb595ef1accded57f877"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ce7d2832f60c6ee7d46550bc08ac86e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a2ce7d2832f60c6ee7d46550bc08ac86e">updateRegisterInfo</a> ()=0</td></tr>
-<tr class="memdesc:a2ce7d2832f60c6ee7d46550bc08ac86e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the register info if needed.  <a href="#a2ce7d2832f60c6ee7d46550bc08ac86e">More...</a><br /></td></tr>
-<tr class="separator:a2ce7d2832f60c6ee7d46550bc08ac86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e3c76b9192a11c7cfcb45f6a269ec8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#ae9e3c76b9192a11c7cfcb45f6a269ec8">updateRegisterInfo</a> (<a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html">BackendRegisterCatalogue</a>&lt; <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a> &gt; &amp;)=0</td></tr>
+<tr class="memdesc:ae9e3c76b9192a11c7cfcb45f6a269ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the register info inside the catalogue if needed.  <a href="#ae9e3c76b9192a11c7cfcb45f6a269ec8">More...</a><br /></td></tr>
+<tr class="separator:ae9e3c76b9192a11c7cfcb45f6a269ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a473707beebda4bc205b8e89d4e234ebe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a473707beebda4bc205b8e89d4e234ebe">openHook</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html">LogicalNameMappingBackend</a> &gt; backend)</td></tr>
 <tr class="memdesc:a473707beebda4bc205b8e89d4e234ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hook called when the backend is openend, at the end of the open() function after all backend work has been done already.  <a href="#a473707beebda4bc205b8e89d4e234ebe">More...</a><br /></td></tr>
 <tr class="separator:a473707beebda4bc205b8e89d4e234ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,7 +129,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Base class for AccessorPlugins used by the LogicalNameMapping backend to store backends in lists. </p>
 <p>When writing plugins, the class <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html" title="Base class for plugins that modify the behaviour of accessors in the logical name mapping backend...">AccessorPlugin</a> should be implemented, not this one. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00012">12</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00011">11</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab5e5987f6922ce650f6b0290a28e22ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5e5987f6922ce650f6b0290a28e22ad">&#9670;&nbsp;</a></span>~AccessorPluginBase()</h2>
@@ -154,7 +154,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00014">14</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00013">13</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -186,7 +186,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ab707ce88179ed5aff7b474f5708ff569">ChimeraTK::LNMBackend::MathPlugin</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00048">48</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00052">52</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +253,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a262a1cfcaeb8694bab48f2781a276219">ChimeraTK::LNMBackend::MathPlugin</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00054">54</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00058">58</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -313,7 +313,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Called by the backend when obtaining a register accessor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00018">18</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00017">17</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -353,12 +353,12 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a0a99fa66c9020f37c2daefe4cb8ce47a">ChimeraTK::LNMBackend::MathPlugin</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00043">43</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00047">47</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
-<a id="a2ce7d2832f60c6ee7d46550bc08ac86e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ce7d2832f60c6ee7d46550bc08ac86e">&#9670;&nbsp;</a></span>updateRegisterInfo()</h2>
+<a id="ae9e3c76b9192a11c7cfcb45f6a269ec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9e3c76b9192a11c7cfcb45f6a269ec8">&#9670;&nbsp;</a></span>updateRegisterInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,6 +369,7 @@ template&lt;typename UserType &gt; </div>
         <tr>
           <td class="memname">virtual void ChimeraTK::LNMBackend::AccessorPluginBase::updateRegisterInfo </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_backend_register_catalogue.html">BackendRegisterCatalogue</a>&lt; <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a> &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -380,17 +381,18 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Update the register info if needed. </p>
+<p>Update the register info inside the catalogue if needed. </p>
 <p>This function is called by the backend after the <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html" title="RegisterInfo structure for the LogicalNameMappingBackend. ">LNMBackendRegisterInfo</a> has been filled with all information from the target backend. If plugins intend to change the catalogue information, they need to do it in this function. This function is only called if the <a class="el" href="class_chimera_t_k_1_1_register_catalogue.html" title="Catalogue of register information. ">RegisterCatalogue</a> is obtained from the device, so do not rely on this function to be called.</p>
+<p>If the plugin needs data that depends on the target and which is only available after opening (e.g. whether the register is writeable), the plugin has to call updateRegisterInfo in the <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a473707beebda4bc205b8e89d4e234ebe" title="Hook called when the backend is openend, at the end of the open() function after all backend work has...">openHook()</a> and can then modify internal vadiables in the updateRegisterInfo function.</p>
 <p>Note: in principle it is fine to do nothing in this function, if no catalogue change is required. This function intentionally has no empty default implementation, because it might otherwise easy to overlook that the register info must be updated here instead of the constructor. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_type_hint_modifier_plugin.html#a13b5d8b8e92498469d64fa2fe579cdc2">ChimeraTK::LNMBackend::TypeHintModifierPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html#a9e4a995893ee0ae7ff66f2aa9a1457e3">ChimeraTK::LNMBackend::ForcePollingReadPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html#aab22a93a3e1f6bda4e5bcc3fcb0b7b66">ChimeraTK::LNMBackend::ForceReadOnlyPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html#a428dc499db36108d79938e53ff16c2a9">ChimeraTK::LNMBackend::MonostableTriggerPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a1ba88e8bb8d8e779c1ca925caa26183b">ChimeraTK::LNMBackend::MathPlugin</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html#a26e3ec4d15b50b4c3970971dbca13696">ChimeraTK::LNMBackend::MultiplierPlugin</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_type_hint_modifier_plugin.html#a9e620625aae1659cd5b3069722860593">ChimeraTK::LNMBackend::TypeHintModifierPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html#a7737b76aa398f8f2a5b29232321ae95d">ChimeraTK::LNMBackend::ForcePollingReadPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin.html#ad9811b857e9bd697c153e4f8579385cb">ChimeraTK::LNMBackend::ForceReadOnlyPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html#a384041e9249d800c601e6ae181c94d95">ChimeraTK::LNMBackend::MonostableTriggerPlugin</a>, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#af57bd036cb7f628cdd524955adc911b9">ChimeraTK::LNMBackend::MathPlugin</a>, and <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html#a51515671db63d4b68093fd22f8adbc16">ChimeraTK::LNMBackend::MultiplierPlugin</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base_a2ce7d2832f60c6ee7d46550bc08ac86e_icgraph.svg" width="432" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base_ae9e3c76b9192a11c7cfcb45f6a269ec8_icgraph.svg" width="432" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -405,7 +407,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html">LNMBackend</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html">AccessorPluginBase</a></li>
-    <li class="footer">Generated on Tue Feb 22 2022 04:53:27 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Mon Mar 14 2022 15:28:39 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -24,5 +24,6 @@ var test_transfer_group_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_transfer_group_8cpp.html#aac8459236a102c9be77962f3ccb606cd", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_transfer_group_8cpp.html#aa5e401b1b0825b1d3dd1ecb0572d2df9", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_transfer_group_8cpp.html#a1caddae8b870aa08dea86735f24942b4", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_transfer_group_8cpp.html#a10aea291c8afe5cda98fe78a10872044", null ],
     [ "makeTETA", "test_transfer_group_8cpp.html#a36e2e1b38077237ab715556d6af8d779", null ]
 ];

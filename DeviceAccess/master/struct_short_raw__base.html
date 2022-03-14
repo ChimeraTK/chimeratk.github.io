@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('struct_short_raw__base.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_short_raw__base__coll__graph.svg" width="390" height="546"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="struct_short_raw__base__coll__graph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -127,12 +127,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a462eac9be6ae7ffd5e99aabf0f6a66d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8f789dc42f64614acf91d6808a944fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_short_raw__base.html#ae8f789dc42f64614acf91d6808a944fe">set</a> (rawUserType val)</td></tr>
 <tr class="separator:ae8f789dc42f64614acf91d6808a944fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a621bcff22ca6a73576fee726e72f1fc3"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:a621bcff22ca6a73576fee726e72f1fc3"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_short_raw__base.html#a621bcff22ca6a73576fee726e72f1fc3">generateValue</a> ()</td></tr>
-<tr class="separator:a621bcff22ca6a73576fee726e72f1fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eec1cf401a19cdd3fdd5b01c29439b1"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:a4eec1cf401a19cdd3fdd5b01c29439b1"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_short_raw__base.html#a4eec1cf401a19cdd3fdd5b01c29439b1">getRemoteValue</a> ()</td></tr>
-<tr class="separator:a4eec1cf401a19cdd3fdd5b01c29439b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b7a839e1ef98c03e7ff269a97f894b6"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
+<tr class="memitem:a0b7a839e1ef98c03e7ff269a97f894b6"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_short_raw__base.html#a0b7a839e1ef98c03e7ff269a97f894b6">generateValue</a> (bool raw=false)</td></tr>
+<tr class="separator:a0b7a839e1ef98c03e7ff269a97f894b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae967e537794bd8ff4ff39f6681357755"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
+<tr class="memitem:ae967e537794bd8ff4ff39f6681357755"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_short_raw__base.html#ae967e537794bd8ff4ff39f6681357755">getRemoteValue</a> (bool raw=false)</td></tr>
+<tr class="separator:ae967e537794bd8ff4ff39f6681357755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5962d144a2a6fc5c7a233198b2e9eea9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_short_raw__base.html#a5962d144a2a6fc5c7a233198b2e9eea9">setRemoteValue</a> ()</td></tr>
 <tr class="separator:a5962d144a2a6fc5c7a233198b2e9eea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04891e64b0e286e8e2de104ac4cb330c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_short_raw__base.html#a04891e64b0e286e8e2de104ac4cb330c">setForceRuntimeError</a> (bool enable, size_t)</td></tr>
@@ -159,25 +159,26 @@ Static Public Attributes</h2></td></tr>
 struct ShortRaw_base&lt; Derived, rawUserType &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00186">186</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00185">185</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a621bcff22ca6a73576fee726e72f1fc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a621bcff22ca6a73576fee726e72f1fc3">&#9670;&nbsp;</a></span>generateValue()</h2>
+<a id="a0b7a839e1ef98c03e7ff269a97f894b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b7a839e1ef98c03e7ff269a97f894b6">&#9670;&nbsp;</a></span>generateValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Derived, typename rawUserType&gt; </div>
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;typename Type &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::vector&lt;UserType&gt; &gt; <a class="el" href="struct_short_raw__base.html">ShortRaw_base</a>&lt; Derived, rawUserType &gt;::generateValue </td>
+          <td class="memname">std::vector&lt;std::vector&lt;Type&gt; &gt; <a class="el" href="struct_short_raw__base.html">ShortRaw_base</a>&lt; Derived, rawUserType &gt;::generateValue </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>raw</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -188,7 +189,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00228">228</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00229">229</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -221,23 +222,24 @@ template&lt;typename Derived, typename rawUserType&gt; </div>
 
 </div>
 </div>
-<a id="a4eec1cf401a19cdd3fdd5b01c29439b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4eec1cf401a19cdd3fdd5b01c29439b1">&#9670;&nbsp;</a></span>getRemoteValue()</h2>
+<a id="ae967e537794bd8ff4ff39f6681357755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae967e537794bd8ff4ff39f6681357755">&#9670;&nbsp;</a></span>getRemoteValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Derived, typename rawUserType&gt; </div>
 <div class="memtemplate">
-template&lt;typename UserType &gt; </div>
+template&lt;typename Type &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::vector&lt;UserType&gt; &gt; <a class="el" href="struct_short_raw__base.html">ShortRaw_base</a>&lt; Derived, rawUserType &gt;::getRemoteValue </td>
+          <td class="memname">std::vector&lt;std::vector&lt;Type&gt; &gt; <a class="el" href="struct_short_raw__base.html">ShortRaw_base</a>&lt; Derived, rawUserType &gt;::getRemoteValue </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>raw</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -248,7 +250,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00238">238</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00245">245</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -277,7 +279,7 @@ template&lt;typename Derived, typename rawUserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00190">190</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00189">189</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -306,7 +308,7 @@ template&lt;typename Derived, typename rawUserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00189">189</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00188">188</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -335,7 +337,7 @@ template&lt;typename Derived, typename rawUserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00192">192</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00191">191</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -364,7 +366,7 @@ template&lt;typename Derived, typename rawUserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00193">193</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00192">192</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -393,7 +395,7 @@ template&lt;typename Derived, typename rawUserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00195">195</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00194">194</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -463,7 +465,7 @@ template&lt;typename Derived, typename rawUserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00259">259</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00266">266</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -492,7 +494,7 @@ template&lt;typename Derived, typename rawUserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00253">253</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00260">260</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -521,7 +523,7 @@ template&lt;typename Derived, typename rawUserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00191">191</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00190">190</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -550,7 +552,7 @@ template&lt;typename Derived, typename rawUserType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00194">194</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00193">193</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -594,8 +596,8 @@ template&lt;typename Derived, typename rawUserType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= TestCapabilities&lt;&gt;()</div><div class="line">                                           .disableForceDataLossWrite()</div><div class="line">                                           .disableAsyncReadInconsistency()</div><div class="line">                                           .disableSwitchReadOnly()</div><div class="line">                                           .disableSwitchWriteOnly()</div><div class="line">                                           .disableTestWriteNeverLosesData()</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00207">207</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<b>Initial value:</b><div class="fragment"><div class="line">= TestCapabilities&lt;&gt;()</div><div class="line">                                           .disableForceDataLossWrite()</div><div class="line">                                           .disableAsyncReadInconsistency()</div><div class="line">                                           .disableSwitchReadOnly()</div><div class="line">                                           .disableSwitchWriteOnly()</div><div class="line">                                           .disableTestWriteNeverLosesData()</div><div class="line">                                           .enableTestRawTransfer()</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00206">206</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -613,7 +615,7 @@ template&lt;typename Derived, typename rawUserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00187">187</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00186">186</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -631,7 +633,7 @@ template&lt;typename Derived, typename rawUserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00204">204</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00203">203</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -649,7 +651,7 @@ template&lt;typename Derived, typename rawUserType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00205">205</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html#l00204">204</a> of file <a class="el" href="test_numeric_addressed_backend_unified_8cpp_source.html">testNumericAddressedBackendUnified.cpp</a>.</p>
 
 </div>
 </div>
@@ -662,7 +664,7 @@ template&lt;typename Derived, typename rawUserType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_short_raw__base.html">ShortRaw_base</a></li>
-    <li class="footer">Generated on Tue Feb 22 2022 04:53:26 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Mon Mar 14 2022 15:28:37 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

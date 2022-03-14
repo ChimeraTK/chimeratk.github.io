@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['access',['Access',['../class_chimera_t_k_1_1_register_info_map_1_1_register_info.html#ae92b95a9c8d8fab1ee9b1dc40d0fe79f',1,'ChimeraTK::RegisterInfoMap::RegisterInfo']]],
+  ['access',['Access',['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0',1,'ChimeraTK::NumericAddressedRegisterInfo']]],
   ['accessmode',['AccessMode',['../namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11',1,'ChimeraTK']]]
 ];

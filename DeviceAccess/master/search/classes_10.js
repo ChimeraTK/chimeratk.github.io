@@ -10,6 +10,7 @@ var searchData=
   ['scalarregisterdescriptorbase_3c_20regsingleword_5fpush_20_3e',['ScalarRegisterDescriptorBase&lt; RegSingleWord_push &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],
   ['scalarregisterdescriptorbase_3c_20regsinglewordb_20_3e',['ScalarRegisterDescriptorBase&lt; RegSingleWordB &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],
   ['scalarregisterdescriptorbase_3c_20regsinglewordscaled_5fr_20_3e',['ScalarRegisterDescriptorBase&lt; RegSingleWordScaled_R &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],
+  ['scalarregisterdescriptorbase_3c_20regsinglewordscaled_5frw_20_3e',['ScalarRegisterDescriptorBase&lt; RegSingleWordScaled_RW &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],
   ['scalarregisterdescriptorbase_3c_20regsinglewordscaled_5fw_20_3e',['ScalarRegisterDescriptorBase&lt; RegSingleWordScaled_W &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],
   ['scalarregisterdescriptorbase_3c_20regsinglewordscaledtwice_5fpush_20_3e',['ScalarRegisterDescriptorBase&lt; RegSingleWordScaledTwice_push &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],
   ['scalarregisterdescriptorbase_3c_20regvariableaspushparameterinmath_5fvar1_20_3e',['ScalarRegisterDescriptorBase&lt; RegVariableAsPushParameterInMath_var1 &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],

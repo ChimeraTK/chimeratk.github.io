@@ -89,6 +89,8 @@ $(document).ready(function(){initNavTree('struct_test_locker.html','');});
 <div class="title">TestLocker Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="shared_dummy_helpers_8h_source.html">sharedDummyHelpers.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for TestLocker:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -104,18 +106,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a53df2e77dd02d4582270cc57184af79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2350e86f1e896171ba56a812e7f7653d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_locker.html#a2350e86f1e896171ba56a812e7f7653d">~TestLocker</a> ()</td></tr>
 <tr class="separator:a2350e86f1e896171ba56a812e7f7653d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31dca32b746efab8407d6d1db97737a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_locker.html#a31dca32b746efab8407d6d1db97737a1">TestLocker</a> (const char *dmapFile)</td></tr>
+<tr class="separator:a31dca32b746efab8407d6d1db97737a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:abd27bfa14ea0cc45b8f2be1b741ca233"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_locker.html#abd27bfa14ea0cc45b8f2be1b741ca233">usedNodes</a> {&quot;mtcadummys0&quot;, &quot;llrfdummys4&quot;, &quot;noioctldummys5&quot;, &quot;pcieunidummys6&quot;}</td></tr>
 <tr class="separator:abd27bfa14ea0cc45b8f2be1b741ca233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15564fdf2963fe392b32d2b081446ed4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_locker.html#a15564fdf2963fe392b32d2b081446ed4">fd</a></td></tr>
+<tr class="separator:a15564fdf2963fe392b32d2b081446ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="test_pcie_backend_8cpp_source.html#l00047">47</a> of file <a class="el" href="test_pcie_backend_8cpp_source.html">testPcieBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_pcie_backend_8cpp_source.html#l00049">49</a> of file <a class="el" href="test_pcie_backend_8cpp_source.html">testPcieBackend.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a53df2e77dd02d4582270cc57184af79a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53df2e77dd02d4582270cc57184af79a">&#9670;&nbsp;</a></span>TestLocker()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a53df2e77dd02d4582270cc57184af79a">&#9670;&nbsp;</a></span>TestLocker() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,7 +143,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_pcie_backend_8cpp_source.html#l00050">50</a> of file <a class="el" href="test_pcie_backend_8cpp_source.html">testPcieBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_pcie_backend_8cpp_source.html#l00052">52</a> of file <a class="el" href="test_pcie_backend_8cpp_source.html">testPcieBackend.cpp</a>.</p>
 
 </div>
 </div>
@@ -164,11 +170,55 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_pcie_backend_8cpp_source.html#l00072">72</a> of file <a class="el" href="test_pcie_backend_8cpp_source.html">testPcieBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_pcie_backend_8cpp_source.html#l00074">74</a> of file <a class="el" href="test_pcie_backend_8cpp_source.html">testPcieBackend.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a31dca32b746efab8407d6d1db97737a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31dca32b746efab8407d6d1db97737a1">&#9670;&nbsp;</a></span>TestLocker() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TestLocker::TestLocker </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dmapFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="shared_dummy_helpers_8h_source.html#l00038">38</a> of file <a class="el" href="shared_dummy_helpers_8h_source.html">sharedDummyHelpers.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a15564fdf2963fe392b32d2b081446ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15564fdf2963fe392b32d2b081446ed4">&#9670;&nbsp;</a></span>fd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TestLocker::fd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="shared_dummy_helpers_8h_source.html#l00054">54</a> of file <a class="el" href="shared_dummy_helpers_8h_source.html">sharedDummyHelpers.h</a>.</p>
+
+</div>
+</div>
 <a id="abd27bfa14ea0cc45b8f2be1b741ca233"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd27bfa14ea0cc45b8f2be1b741ca233">&#9670;&nbsp;</a></span>usedNodes</h2>
 
@@ -181,12 +231,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_pcie_backend_8cpp_source.html#l00048">48</a> of file <a class="el" href="test_pcie_backend_8cpp_source.html">testPcieBackend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_pcie_backend_8cpp_source.html#l00050">50</a> of file <a class="el" href="test_pcie_backend_8cpp_source.html">testPcieBackend.cpp</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>tests/executables_src/<a class="el" href="test_pcie_backend_8cpp_source.html">testPcieBackend.cpp</a></li>
+<li>tests/include/<a class="el" href="shared_dummy_helpers_8h_source.html">sharedDummyHelpers.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -194,7 +245,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_test_locker.html">TestLocker</a></li>
-    <li class="footer">Generated on Tue Feb 22 2022 04:53:26 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Mon Mar 14 2022 15:28:37 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

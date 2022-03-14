@@ -7,6 +7,7 @@ var dir_0128381db4b4f5acbef62e610c8688e8 =
     [ "DataConsistencyGroup.h", "_data_consistency_group_8h.html", [
       [ "DataConsistencyGroup", "class_chimera_t_k_1_1_data_consistency_group.html", "class_chimera_t_k_1_1_data_consistency_group" ]
     ] ],
+    [ "DataDescriptor.h", "_data_descriptor_8h.html", "_data_descriptor_8h" ],
     [ "Device.h", "device_2include_2_device_8h.html", [
       [ "Device", "class_chimera_t_k_1_1_device.html", "class_chimera_t_k_1_1_device" ]
     ] ],
@@ -19,6 +20,9 @@ var dir_0128381db4b4f5acbef62e610c8688e8 =
       [ "TwoDRegisterAccessor", "class_chimera_t_k_1_1_two_d_register_accessor.html", "class_chimera_t_k_1_1_two_d_register_accessor" ],
       [ "MultiplexedDataAccessor", "class_chimera_t_k_1_1_multiplexed_data_accessor.html", null ]
     ] ],
+    [ "MetadataCatalogue.h", "_metadata_catalogue_8h.html", [
+      [ "MetadataCatalogue", "class_chimera_t_k_1_1_metadata_catalogue.html", "class_chimera_t_k_1_1_metadata_catalogue" ]
+    ] ],
     [ "MultiplexedDataAccessorException.h", "device_2include_2_multiplexed_data_accessor_exception_8h.html", null ],
     [ "NDRegisterAccessorAbstractor.h", "device_2include_2_n_d_register_accessor_abstractor_8h.html", [
       [ "NDRegisterAccessorAbstractor", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor" ]
@@ -30,11 +34,14 @@ var dir_0128381db4b4f5acbef62e610c8688e8 =
       [ "ReadAnyGroup", "class_chimera_t_k_1_1_read_any_group.html", "class_chimera_t_k_1_1_read_any_group" ],
       [ "Notification", "class_chimera_t_k_1_1_read_any_group_1_1_notification.html", "class_chimera_t_k_1_1_read_any_group_1_1_notification" ]
     ] ],
-    [ "RegisterAccessor.h", "device_2include_2_register_accessor_8h.html", "device_2include_2_register_accessor_8h" ],
+    [ "RegisterAccessor.h", "device_2include_2_register_accessor_8h.html", null ],
     [ "RegisterCatalogue.h", "device_2include_2_register_catalogue_8h.html", [
       [ "RegisterCatalogue", "class_chimera_t_k_1_1_register_catalogue.html", "class_chimera_t_k_1_1_register_catalogue" ],
       [ "const_iterator", "class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html", "class_chimera_t_k_1_1_register_catalogue_1_1const__iterator" ],
-      [ "iterator", "class_chimera_t_k_1_1_register_catalogue_1_1iterator.html", "class_chimera_t_k_1_1_register_catalogue_1_1iterator" ]
+      [ "const_RegisterCatalogueImplIterator", "class_chimera_t_k_1_1const___register_catalogue_impl_iterator.html", "class_chimera_t_k_1_1const___register_catalogue_impl_iterator" ]
+    ] ],
+    [ "RegisterInfo.h", "device_2include_2_register_info_8h.html", [
+      [ "RegisterInfo", "class_chimera_t_k_1_1_register_info.html", "class_chimera_t_k_1_1_register_info" ]
     ] ],
     [ "ScalarRegisterAccessor.h", "device_2include_2_scalar_register_accessor_8h.html", [
       [ "ScalarRegisterAccessor", "class_chimera_t_k_1_1_scalar_register_accessor.html", "class_chimera_t_k_1_1_scalar_register_accessor" ],

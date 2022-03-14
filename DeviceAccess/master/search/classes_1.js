@@ -2,8 +2,6 @@ var searchData=
 [
   ['accessmodeflags',['AccessModeFlags',['../class_chimera_t_k_1_1_access_mode_flags.html',1,'ChimeraTK']]],
   ['accessor',['Accessor',['../class_async_test_dummy_1_1_accessor.html',1,'AsyncTestDummy::Accessor&lt; UserType &gt;'],['../class_accessor.html',1,'Accessor&lt; UserType &gt;']]],
-  ['accessorhandler',['AccessorHandler',['../class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html',1,'ChimeraTK::RegisterAccessor']]],
-  ['accessorhandler_3c_20int32_5ft_20_3e',['AccessorHandler&lt; int32_t &gt;',['../class_chimera_t_k_1_1_register_accessor_1_1_accessor_handler.html',1,'ChimeraTK::RegisterAccessor']]],
   ['accessorinstancedescriptor',['AccessorInstanceDescriptor',['../struct_chimera_t_k_1_1_accessor_instance_descriptor.html',1,'ChimeraTK']]],
   ['accessorplugin',['AccessorPlugin',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html',1,'ChimeraTK::LNMBackend']]],
   ['accessorplugin_3c_20forcepollingreadplugin_20_3e',['AccessorPlugin&lt; ForcePollingReadPlugin &gt;',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html',1,'ChimeraTK::LNMBackend']]],

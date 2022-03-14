@@ -1,19 +1,16 @@
 var class_chimera_t_k_1_1_logical_name_map_parser =
 [
-    [ "LogicalNameMapParser", "class_chimera_t_k_1_1_logical_name_map_parser.html#a71a813dbed5f30ce2ae69ab8863a9284", null ],
-    [ "LogicalNameMapParser", "class_chimera_t_k_1_1_logical_name_map_parser.html#a288f59851095c33853480053dc93e690", null ],
-    [ "getCatalogue", "class_chimera_t_k_1_1_logical_name_map_parser.html#a522b79ccb322bbf25ccfdead57545c26", null ],
-    [ "getTargetDevices", "class_chimera_t_k_1_1_logical_name_map_parser.html#a6562185173cf14efa5e8abb2f8e66610", null ],
-    [ "getValueFromXmlSubnode", "class_chimera_t_k_1_1_logical_name_map_parser.html#a27bb810f80d4e1b71af1552bfdf6deba", null ],
-    [ "getValueFromXmlSubnode", "class_chimera_t_k_1_1_logical_name_map_parser.html#abd38fcc7e2fa960acd93cebd16b8d917", null ],
-    [ "getValueFromXmlSubnode", "class_chimera_t_k_1_1_logical_name_map_parser.html#a59e3cadf8ca975a0c01291db2d1d9ac0", null ],
-    [ "getValueVectorFromXmlSubnode", "class_chimera_t_k_1_1_logical_name_map_parser.html#ae8f13a61e1995b759840129c793168d7", null ],
-    [ "getValueVectorFromXmlSubnode", "class_chimera_t_k_1_1_logical_name_map_parser.html#a3accc305e418a90e5de5d19cf1df6f07", null ],
-    [ "parseElement", "class_chimera_t_k_1_1_logical_name_map_parser.html#ab8662db4e59f62f412c0b906a7aa00a8", null ],
-    [ "parseFile", "class_chimera_t_k_1_1_logical_name_map_parser.html#a9db9a3f936019b197cc735509adea429", null ],
+    [ "LogicalNameMapParser", "class_chimera_t_k_1_1_logical_name_map_parser.html#abbdc8cc59333b17286c73b960e83e88a", null ],
+    [ "getValueFromXmlSubnode", "class_chimera_t_k_1_1_logical_name_map_parser.html#a9dc96a4df7af6eaae89c2998e76fb037", null ],
+    [ "getValueFromXmlSubnode", "class_chimera_t_k_1_1_logical_name_map_parser.html#aa18b1c4ea03dbcdaed15d4553ec51de6", null ],
+    [ "getValueFromXmlSubnode", "class_chimera_t_k_1_1_logical_name_map_parser.html#aa78697767ef64de32bf29812aa77afc3", null ],
+    [ "getValueVectorFromXmlSubnode", "class_chimera_t_k_1_1_logical_name_map_parser.html#a19eaba0f3fcb9456ac1b67c61b7b1c68", null ],
+    [ "getValueVectorFromXmlSubnode", "class_chimera_t_k_1_1_logical_name_map_parser.html#a49965bc0d61d67b919fe48bd51a93211", null ],
+    [ "parseElement", "class_chimera_t_k_1_1_logical_name_map_parser.html#a4c94691489dc26f8edca6cb5c80ec934", null ],
+    [ "parseFile", "class_chimera_t_k_1_1_logical_name_map_parser.html#a63e405294bc4a2b05069bf7168690cc0", null ],
     [ "parsingError", "class_chimera_t_k_1_1_logical_name_map_parser.html#ab77f9b049edc5f2c4dd465a2b3c6ba62", null ],
-    [ "_catalogue", "class_chimera_t_k_1_1_logical_name_map_parser.html#a1aa41ed783b977a4db1d15e78a9bee1a", null ],
     [ "_fileName", "class_chimera_t_k_1_1_logical_name_map_parser.html#a846186119cf155cd11a9f2a0e3d18ae5", null ],
     [ "_parameters", "class_chimera_t_k_1_1_logical_name_map_parser.html#aad287205504c89a1d6047f87d7cfd8d6", null ],
+    [ "_variables", "class_chimera_t_k_1_1_logical_name_map_parser.html#a3c451c45dac5d42adf0ef99395f64b41", null ],
     [ "currentModule", "class_chimera_t_k_1_1_logical_name_map_parser.html#a4a022ca1c826353be4053b35049fa510", null ]
 ];

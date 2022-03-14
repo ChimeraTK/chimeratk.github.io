@@ -125,14 +125,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a877f0db7d0c63becf2bd8b8fb0955e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a device has been opened or not.  <a href="#a877f0db7d0c63becf2bd8b8fb0955e60">More...</a><br /></td></tr>
 <tr class="separator:a877f0db7d0c63becf2bd8b8fb0955e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a055b0e25c6a296fa9f60db4cf7880e83"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a055b0e25c6a296fa9f60db4cf7880e83">isConnected</a> ()=0</td></tr>
-<tr class="memdesc:a055b0e25c6a296fa9f60db4cf7880e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a device has been connected or not.  <a href="#a055b0e25c6a296fa9f60db4cf7880e83">More...</a><br /></td></tr>
+<tr class="memdesc:a055b0e25c6a296fa9f60db4cf7880e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated.  <a href="#a055b0e25c6a296fa9f60db4cf7880e83">More...</a><br /></td></tr>
 <tr class="separator:a055b0e25c6a296fa9f60db4cf7880e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f47e5db720bc662736aa062b2448bb7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7">isFunctional</a> () const =0</td></tr>
 <tr class="memdesc:a1f47e5db720bc662736aa062b2448bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return wether a device is working as intended, usually this means it is opened and does not have any errors.  <a href="#a1f47e5db720bc662736aa062b2448bb7">More...</a><br /></td></tr>
 <tr class="separator:a1f47e5db720bc662736aa062b2448bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40aa37ea1d505dede96fa82bf8a6d249"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_chimera_t_k_1_1_register_catalogue.html">RegisterCatalogue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a40aa37ea1d505dede96fa82bf8a6d249">getRegisterCatalogue</a> () const =0</td></tr>
-<tr class="memdesc:a40aa37ea1d505dede96fa82bf8a6d249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the register catalogue with detailed information on all registers.  <a href="#a40aa37ea1d505dede96fa82bf8a6d249">More...</a><br /></td></tr>
-<tr class="separator:a40aa37ea1d505dede96fa82bf8a6d249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517c358022e282864da357bc1b8dfd5e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_chimera_t_k_1_1_register_catalogue.html">RegisterCatalogue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a517c358022e282864da357bc1b8dfd5e">getRegisterCatalogue</a> () const =0</td></tr>
+<tr class="memdesc:a517c358022e282864da357bc1b8dfd5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the register catalogue with detailed information on all registers.  <a href="#a517c358022e282864da357bc1b8dfd5e">More...</a><br /></td></tr>
+<tr class="separator:a517c358022e282864da357bc1b8dfd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89791ccc7e5e875cd4b1e6efb21c5633"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_chimera_t_k_1_1_metadata_catalogue.html">MetadataCatalogue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a89791ccc7e5e875cd4b1e6efb21c5633">getMetadataCatalogue</a> () const =0</td></tr>
+<tr class="memdesc:a89791ccc7e5e875cd4b1e6efb21c5633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the device metadata catalogue.  <a href="#a89791ccc7e5e875cd4b1e6efb21c5633">More...</a><br /></td></tr>
+<tr class="separator:a89791ccc7e5e875cd4b1e6efb21c5633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85a134106068b02a89cbfa9a4559ccfc"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
 <tr class="memitem:a85a134106068b02a89cbfa9a4559ccfc"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend.html#a85a134106068b02a89cbfa9a4559ccfc">getRegisterAccessor</a> (const <a class="el" href="class_chimera_t_k_1_1_register_path.html">RegisterPath</a> &amp;registerPathName, size_t numberOfWords, size_t wordOffsetInRegister, <a class="el" href="class_chimera_t_k_1_1_access_mode_flags.html">AccessModeFlags</a> flags)</td></tr>
 <tr class="memdesc:a85a134106068b02a89cbfa9a4559ccfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor. ">NDRegisterAccessor</a> object from the register name.  <a href="#a85a134106068b02a89cbfa9a4559ccfc">More...</a><br /></td></tr>
@@ -153,7 +156,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>The base class for backends providing IO functionality for the <a class="el" href="class_chimera_t_k_1_1_device.html" title="Class allows to read/write registers from device. ">Device</a> class. </p>
 <p>Note that most backends should actually be based on the <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends...">DeviceBackendImpl</a> class (unless it is a decorator backend). The actual IO is always performed through register accessors, which is obtained through the getBufferingRegisterAccessor() member function. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_device_backend_8h_source.html#l00026">26</a> of file <a class="el" href="device__backends_2include_2_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_device_backend_8h_source.html#l00021">21</a> of file <a class="el" href="device__backends_2include_2_device_backend_8h_source.html">DeviceBackend.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aea141a8f0992e9580c908799c4220680"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea141a8f0992e9580c908799c4220680">&#9670;&nbsp;</a></span>~DeviceBackend()</h2>
@@ -275,6 +278,35 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a89791ccc7e5e875cd4b1e6efb21c5633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89791ccc7e5e875cd4b1e6efb21c5633">&#9670;&nbsp;</a></span>getMetadataCatalogue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_chimera_t_k_1_1_metadata_catalogue.html">MetadataCatalogue</a> ChimeraTK::DeviceBackend::getMetadataCatalogue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the device metadata catalogue. </p>
+
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#aab6aefb8e9dbbf6f8bd8a5d36bedebb6">ChimeraTK::NumericAddressedBackend</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a5bdfdbcf703ead898c3b1a96f4c33644">ChimeraTK::SubdeviceBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a7a1e8276598a0d7d47923c7c5f0f7504">ChimeraTK::DeviceBackendImpl</a>.</p>
+
+</div>
+</div>
 <a id="a85a134106068b02a89cbfa9a4559ccfc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85a134106068b02a89cbfa9a4559ccfc">&#9670;&nbsp;</a></span>getRegisterAccessor()</h2>
 
@@ -329,8 +361,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="a40aa37ea1d505dede96fa82bf8a6d249"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40aa37ea1d505dede96fa82bf8a6d249">&#9670;&nbsp;</a></span>getRegisterCatalogue()</h2>
+<a id="a517c358022e282864da357bc1b8dfd5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a517c358022e282864da357bc1b8dfd5e">&#9670;&nbsp;</a></span>getRegisterCatalogue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -339,7 +371,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const <a class="el" href="class_chimera_t_k_1_1_register_catalogue.html">RegisterCatalogue</a>&amp; ChimeraTK::DeviceBackend::getRegisterCatalogue </td>
+          <td class="memname">virtual <a class="el" href="class_chimera_t_k_1_1_register_catalogue.html">RegisterCatalogue</a> ChimeraTK::DeviceBackend::getRegisterCatalogue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -354,7 +386,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Return the register catalogue with detailed information on all registers. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a87887044c83149abdccd69c3767cc811">ChimeraTK::LogicalNameMappingBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#ad085e63f6f91280d7a1e5a9bb2ebc800">ChimeraTK::DeviceBackendImpl</a>.</p>
+<p>Implemented in <a class="el" href="struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#a6009c2a1bd6f0667c503e909c3d59a8a">ChimeraTK::UnifiedBackendTest&lt; VECTOR_OF_REGISTERS_T &gt;::ExceptionReportingBackend</a>, <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a1b50f2e7460810b9cfac12f45c0aaab5">ChimeraTK::NumericAddressedBackend</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ad7aeeca18b2e41a5ea79cc28b18af30b">ChimeraTK::SubdeviceBackend</a>, <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a72f1bf37a09e7c088658d00ed8b83ac8">ChimeraTK::LogicalNameMappingBackend</a>, and <a class="el" href="class_async_test_dummy.html#a035e3c398b88401c1386d070c3d4e804">AsyncTestDummy</a>.</p>
 
 </div>
 </div>
@@ -381,10 +413,10 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Return whether a device has been connected or not. </p>
-<p>A device is considered connected when it is created. </p>
+<p>Deprecated. </p>
+<p>Do not use. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#adda9402b29b72150ce6d7682e93797d2">ChimeraTK::DeviceBackendImpl</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a5cfb27d6fb8145c428661863d5cefbda">ChimeraTK::DeviceBackendImpl</a>.</p>
 
 </div>
 </div>
@@ -415,7 +447,7 @@ template&lt;typename UserType &gt; </div>
 <p>The default implementeation in <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html" title="DeviceBackendImpl implements some basic functionality which should be available for all backends...">DeviceBackendImpl</a> reports (_opened &amp;&amp; !_hasErrors). Backends can overload it to implement a more sophisticated error reporting. The implementation might involve a communication attempt with the device.</p>
 <p>Notice: <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a> shall only return false if there are known errors (or the device is closed). If the working state is unknown, the response should be <code>true</code>. Client code will then try to read/write and might get an exception, while <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7" title="Return wether a device is working as intended, usually this means it is opened and does not have any ...">isFunctional()</a>==false means you surely will get an exception. </p>
 
-<p>Implemented in <a class="el" href="struct_dysfunct_dummy.html#a826c77ae9b4db8162637ea01fd6266ae">DysfunctDummy</a>, <a class="el" href="struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#ab3ab5b22b2765cb61ea0f7e1cb90ea22">ChimeraTK::UnifiedBackendTest&lt; VECTOR_OF_REGISTERS_T &gt;::ExceptionReportingBackend</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a44636d261cd8ce509c2d5ab93664ab55">ChimeraTK::SubdeviceBackend</a>, <a class="el" href="class_async_test_dummy.html#adfaca7e1b448bc3c2a0d5dd1c3196a7c">AsyncTestDummy</a>, <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#abd03c69319ed34541e791d11a4a9751d">ChimeraTK::ExceptionDummy</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#ae81734d8d47993c5da3d7732025611a0">ChimeraTK::RebotBackend</a>, <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#adb9edefcb11c683496afd130f6fa796a">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#a5c8b5b7825369150b6cdbc79c62a7f94">ChimeraTK::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a1a02803a1200e812e775e6e9bfe930f8">ChimeraTK::SharedDummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#aa1a761972bfbd77d26b63436973effc9">ChimeraTK::XdmaBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a0d32bb3ea0ba626b4d5f9853726dd07c">ChimeraTK::LogicalNameMappingBackend</a>.</p>
+<p>Implemented in <a class="el" href="struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#ab3ab5b22b2765cb61ea0f7e1cb90ea22">ChimeraTK::UnifiedBackendTest&lt; VECTOR_OF_REGISTERS_T &gt;::ExceptionReportingBackend</a>, <a class="el" href="struct_dysfunct_dummy.html#a826c77ae9b4db8162637ea01fd6266ae">DysfunctDummy</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a44636d261cd8ce509c2d5ab93664ab55">ChimeraTK::SubdeviceBackend</a>, <a class="el" href="class_async_test_dummy.html#adfaca7e1b448bc3c2a0d5dd1c3196a7c">AsyncTestDummy</a>, <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#abd03c69319ed34541e791d11a4a9751d">ChimeraTK::ExceptionDummy</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#ae81734d8d47993c5da3d7732025611a0">ChimeraTK::RebotBackend</a>, <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#adb9edefcb11c683496afd130f6fa796a">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#a5c8b5b7825369150b6cdbc79c62a7f94">ChimeraTK::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a1a02803a1200e812e775e6e9bfe930f8">ChimeraTK::SharedDummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#aa1a761972bfbd77d26b63436973effc9">ChimeraTK::XdmaBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a0d32bb3ea0ba626b4d5f9853726dd07c">ChimeraTK::LogicalNameMappingBackend</a>.</p>
 
 </div>
 </div>
@@ -444,7 +476,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Return whether a device has been opened or not. </p>
 
-<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#af33c71a4c02b4851548a65bb502939f7">ChimeraTK::XdmaBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a9eb07db4e5b1b1dba6fb6d5bf5c0136b">ChimeraTK::DeviceBackendImpl</a>.</p>
+<p>Implemented in <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#af33c71a4c02b4851548a65bb502939f7">ChimeraTK::XdmaBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#ac9f608c0eafd7cb37f66290eb70f084d">ChimeraTK::DeviceBackendImpl</a>.</p>
 
 </div>
 </div>
@@ -473,7 +505,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Open the device. </p>
 
-<p>Implemented in <a class="el" href="struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#a0de450243d490dbb0194626019e3f05b">ChimeraTK::UnifiedBackendTest&lt; VECTOR_OF_REGISTERS_T &gt;::ExceptionReportingBackend</a>, <a class="el" href="class_async_test_dummy.html#a4b8f0b0fc0ecd3808369403b687fca5f">AsyncTestDummy</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a3aa244b79dfa6ddd8357b5854aa112d7">ChimeraTK::SubdeviceBackend</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a3288127514c4650a38177443ea021281">ChimeraTK::RebotBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#a6c3004620460dd3657f3f583886af017">ChimeraTK::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a2c3076ae91f3156e33482a89bfad394a">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a80a15441b3839ae89d0181f2fa3dddec">ChimeraTK::SharedDummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a7be932c74d4162f56bdd4f81db19b7eb">ChimeraTK::ExceptionDummy</a>, <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#a7e52f16c9e5f6a12aa67fe9575bef7c0">ChimeraTK::XdmaBackend</a>, <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#aa62cb97e2a5de85ae6151410b78f0ec6">ChimeraTK::LogicalNameMappingBackend</a>, and <a class="el" href="class_example_backend.html#ace9471bff30ac79382fae02a815d2625">ExampleBackend</a>.</p>
+<p>Implemented in <a class="el" href="struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#a0de450243d490dbb0194626019e3f05b">ChimeraTK::UnifiedBackendTest&lt; VECTOR_OF_REGISTERS_T &gt;::ExceptionReportingBackend</a>, <a class="el" href="class_async_test_dummy.html#a4b8f0b0fc0ecd3808369403b687fca5f">AsyncTestDummy</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#a3288127514c4650a38177443ea021281">ChimeraTK::RebotBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#a6c3004620460dd3657f3f583886af017">ChimeraTK::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a3aa244b79dfa6ddd8357b5854aa112d7">ChimeraTK::SubdeviceBackend</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a80a15441b3839ae89d0181f2fa3dddec">ChimeraTK::SharedDummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a2c3076ae91f3156e33482a89bfad394a">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a7be932c74d4162f56bdd4f81db19b7eb">ChimeraTK::ExceptionDummy</a>, <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#a7e52f16c9e5f6a12aa67fe9575bef7c0">ChimeraTK::XdmaBackend</a>, <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#aa62cb97e2a5de85ae6151410b78f0ec6">ChimeraTK::LogicalNameMappingBackend</a>, and <a class="el" href="class_example_backend.html#ace9471bff30ac79382fae02a815d2625">ExampleBackend</a>.</p>
 
 </div>
 </div>
@@ -503,7 +535,7 @@ template&lt;typename UserType &gt; </div>
 <p>Return a device information string containing hardware details like the firmware version number or the slot number used by the board. </p>
 <p>The format and contained information of this string is completely backend implementation dependent, so the string may only be printed to the user as an informational output. Do not try to parse this string or extract information from it programmatically. </p>
 
-<p>Implemented in <a class="el" href="struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#a71bca8957cbb4e3ae6c87b3b47ef033d">ChimeraTK::UnifiedBackendTest&lt; VECTOR_OF_REGISTERS_T &gt;::ExceptionReportingBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#a6d56cd361c4aa9af0befcc9efd4adbe4">ChimeraTK::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ab828431ccd2b4255ccc0ba469d1999f0">ChimeraTK::SubdeviceBackend</a>, <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a0a6a12f58740d8ab15dd0d280b581bc0">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#aa031066178cd12f936af25aefbd2a591">ChimeraTK::RebotBackend</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a9c8176ef109558bdff21ad025242698a">ChimeraTK::SharedDummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#aba237aeb88b4c9cd04c4711998912d08">ChimeraTK::XdmaBackend</a>, <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a8a63092ddf7030074e927eeaf67c5b13">ChimeraTK::LogicalNameMappingBackend</a>, <a class="el" href="class_example_backend.html#ac2d7f01de8bbc5d71a0099918ffd62a7">ExampleBackend</a>, and <a class="el" href="class_async_test_dummy.html#ab5eec23df8c5bbea58f4e1a77a9c9b06">AsyncTestDummy</a>.</p>
+<p>Implemented in <a class="el" href="struct_chimera_t_k_1_1_unified_backend_test_1_1_exception_reporting_backend.html#a71bca8957cbb4e3ae6c87b3b47ef033d">ChimeraTK::UnifiedBackendTest&lt; VECTOR_OF_REGISTERS_T &gt;::ExceptionReportingBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#a6d56cd361c4aa9af0befcc9efd4adbe4">ChimeraTK::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a0a6a12f58740d8ab15dd0d280b581bc0">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#aa031066178cd12f936af25aefbd2a591">ChimeraTK::RebotBackend</a>, <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#ab828431ccd2b4255ccc0ba469d1999f0">ChimeraTK::SubdeviceBackend</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a9c8176ef109558bdff21ad025242698a">ChimeraTK::SharedDummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#aba237aeb88b4c9cd04c4711998912d08">ChimeraTK::XdmaBackend</a>, <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a8a63092ddf7030074e927eeaf67c5b13">ChimeraTK::LogicalNameMappingBackend</a>, <a class="el" href="class_example_backend.html#ac2d7f01de8bbc5d71a0099918ffd62a7">ExampleBackend</a>, and <a class="el" href="class_async_test_dummy.html#ab5eec23df8c5bbea58f4e1a77a9c9b06">AsyncTestDummy</a>.</p>
 
 </div>
 </div>
@@ -547,7 +579,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a></li>
-    <li class="footer">Generated on Tue Feb 22 2022 04:53:26 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Mon Mar 14 2022 15:28:37 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

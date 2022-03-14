@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2f3e27ed3b708df9086b9b264864cd97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa8dbf971f07658c489d452016244e1a5" title="Transfer the data from the user buffer into the device send buffer, while converting the data from th...">preWrite()</a>.  <a href="#a2f3e27ed3b708df9086b9b264864cd97">More...</a><br /></td></tr>
 <tr class="separator:a2f3e27ed3b708df9086b9b264864cd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3749599438c99278bc0c02f6a92b9236"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_decorator.html#a3749599438c99278bc0c02f6a92b9236">doPostWrite</a> (<a class="el" href="namespace_chimera_t_k.html#aefbbe1fd9e4eefc7aa088b1242274ee7">TransferType</a> type, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber) override</td></tr>
-<tr class="memdesc:a3749599438c99278bc0c02f6a92b9236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write cleanups if necessary. ">postWrite()</a>.  <a href="#a3749599438c99278bc0c02f6a92b9236">More...</a><br /></td></tr>
+<tr class="memdesc:a3749599438c99278bc0c02f6a92b9236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write clean-ups if necessary. ">postWrite()</a>.  <a href="#a3749599438c99278bc0c02f6a92b9236">More...</a><br /></td></tr>
 <tr class="separator:a3749599438c99278bc0c02f6a92b9236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b24b1bf0d829da86cafb13fe1705138"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_decorator.html#a6b24b1bf0d829da86cafb13fe1705138">mayReplaceOther</a> (const boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">ChimeraTK::TransferElement</a> const &gt; &amp;other) const override</td></tr>
 <tr class="separator:a6b24b1bf0d829da86cafb13fe1705138"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,7 +173,7 @@ Protected Attributes</h2></td></tr>
 class ChimeraTK::FixedPointConvertingDecorator&lt; UserType, TargetUserType &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00184">184</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00201">201</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad4f0b696da0a163b90fe7fd78c33e784"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad4f0b696da0a163b90fe7fd78c33e784">&#9670;&nbsp;</a></span>FixedPointConvertingDecorator()</h2>
@@ -211,7 +211,7 @@ template&lt;typename UserType , typename TargetUserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00186">186</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00203">203</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -261,7 +261,7 @@ template&lt;typename UserType , typename TargetUserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00192">192</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00209">209</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -301,13 +301,13 @@ template&lt;typename UserType , typename TargetUserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write cleanups if necessary. ">postWrite()</a>. </p>
-<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write cleanups if necessary. ">postWrite()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
+<p>Backend specific implementation of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write clean-ups if necessary. ">postWrite()</a>. </p>
+<p><a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02" title="Perform any post-write clean-ups if necessary. ">postWrite()</a> will call this function, but it will make sure that it gets called only once per transfer.</p>
 <p>No actual communication may be done. Hence, no <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> exception may be thrown by this function. Also it must be acceptable to call this function while the device is closed or not functional (see isFunctional()) and no exception is thrown. </p>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a7c0a6bc5c1779ce47afe7871573ef2a1">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00213">213</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00230">230</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -343,7 +343,7 @@ template&lt;typename UserType , typename TargetUserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a9559d505d8c8826a5acc8e03a0fb6f7f">ChimeraTK::NDRegisterAccessorDecorator&lt; UserType, TargetUserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00190">190</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00207">207</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -389,7 +389,7 @@ template&lt;typename UserType , typename TargetUserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00203">203</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00220">220</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -419,7 +419,7 @@ template&lt;typename UserType , typename TargetUserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00217">217</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00234">234</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -462,7 +462,7 @@ template&lt;typename UserType , typename TargetUserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00225">225</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_subdevice_backend_8cc_source.html#l00242">242</a> of file <a class="el" href="_subdevice_backend_8cc_source.html">SubdeviceBackend.cc</a>.</p>
 
 </div>
 </div>
@@ -475,7 +475,7 @@ template&lt;typename UserType , typename TargetUserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_fixed_point_converting_decorator.html">FixedPointConvertingDecorator</a></li>
-    <li class="footer">Generated on Tue Feb 22 2022 04:53:26 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Mon Mar 14 2022 15:28:38 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

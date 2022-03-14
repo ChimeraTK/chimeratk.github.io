@@ -16,6 +16,7 @@ var searchData=
   ['onedregisterdescriptorbase_3c_20regsingleword_5fpush_20_3e',['OneDRegisterDescriptorBase&lt; RegSingleWord_push &gt;',['../struct_one_d_register_descriptor_base.html',1,'']]],
   ['onedregisterdescriptorbase_3c_20regsinglewordb_20_3e',['OneDRegisterDescriptorBase&lt; RegSingleWordB &gt;',['../struct_one_d_register_descriptor_base.html',1,'']]],
   ['onedregisterdescriptorbase_3c_20regsinglewordscaled_5fr_20_3e',['OneDRegisterDescriptorBase&lt; RegSingleWordScaled_R &gt;',['../struct_one_d_register_descriptor_base.html',1,'']]],
+  ['onedregisterdescriptorbase_3c_20regsinglewordscaled_5frw_20_3e',['OneDRegisterDescriptorBase&lt; RegSingleWordScaled_RW &gt;',['../struct_one_d_register_descriptor_base.html',1,'']]],
   ['onedregisterdescriptorbase_3c_20regsinglewordscaled_5fw_20_3e',['OneDRegisterDescriptorBase&lt; RegSingleWordScaled_W &gt;',['../struct_one_d_register_descriptor_base.html',1,'']]],
   ['onedregisterdescriptorbase_3c_20regsinglewordscaledtwice_5fpush_20_3e',['OneDRegisterDescriptorBase&lt; RegSingleWordScaledTwice_push &gt;',['../struct_one_d_register_descriptor_base.html',1,'']]],
   ['onedregisterdescriptorbase_3c_20regvariable_20_3e',['OneDRegisterDescriptorBase&lt; RegVariable &gt;',['../struct_one_d_register_descriptor_base.html',1,'']]],

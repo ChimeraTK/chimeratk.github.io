@@ -85,10 +85,10 @@ $(document).ready(function(){initNavTree('dmap.html','');});
 <div class="title">Device Mapping </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>A device map file (dmap file) allows to give alias names for <a class="el" href="namespace_chimera_t_k.html" title="Provides storage object for devices descriptions. ">ChimeraTK</a> device descriptors.</p>
+<div class="textblock"><p>A device map file (dmap file) allows to give alias names for <a class="el" href="namespace_chimera_t_k.html" title="Provides storage object for registers description taken from MAP file. ">ChimeraTK</a> device descriptors.</p>
 <p>This provides an additional layer of abstraction so that device addresses and types do not need to be hardcoded into the application. A dmap file is a simple text file with one entry per line. Each line corresponds to one device and each line has two space-separated columns: </p><ul>
 <li>Alias name </li>
-<li><a class="el" href="namespace_chimera_t_k.html" title="Provides storage object for devices descriptions. ">ChimeraTK</a> device descriptor</li>
+<li><a class="el" href="namespace_chimera_t_k.html" title="Provides storage object for registers description taken from MAP file. ">ChimeraTK</a> device descriptor</li>
 </ul>
 <p>Example: </p><ul>
 <li>A PCI express device (device node /dev/pciedevs5) with the map file "mps_v00.07.map" get the alias name "MPS" </li>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('dmap.html','');});
 DUMMY (dummy?map=DFMC_MD22_v3.0.map)
 TIMER (doocs:XFEL.RF/TIMER/LLA6M)
 </pre><p>The alias names can be chosen freely by the developer.</p>
-<p>Please note that for compatibility reasons an old format with three columns is still supported. The third column was specifying the map file in combination with either specifying directly the path to the device node for PCI express or with a "standard device model" URI. Since both approaches do not really fit the structure of the DeviceAccess library any more, they have been superseeded by the <a class="el" href="namespace_chimera_t_k.html" title="Provides storage object for devices descriptions. ">ChimeraTK</a> device descriptor. If you encounter a dmap file containing the old format, consider updating it to the new format. Support for the old formats will eventually be deprecated and removed.</p>
+<p>Please note that for compatibility reasons an old format with three columns is still supported. The third column was specifying the map file in combination with either specifying directly the path to the device node for PCI express or with a "standard device model" URI. Since both approaches do not really fit the structure of the DeviceAccess library any more, they have been superseeded by the <a class="el" href="namespace_chimera_t_k.html" title="Provides storage object for registers description taken from MAP file. ">ChimeraTK</a> device descriptor. If you encounter a dmap file containing the old format, consider updating it to the new format. Support for the old formats will eventually be deprecated and removed.</p>
 <h1><a class="anchor" id="The"></a>
 CimeraTK device descriptor</h1>
 <p>The CimeraTK device descriptor (CDD) specifies the type of the device, the address of the device and additional parameters needed. The basic form of a CDD looks like this: </p><pre class="fragment">(backend_type:address?key1=value1&amp;key2=value2)
@@ -134,7 +134,7 @@ CimeraTK device descriptor</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Feb 22 2022 04:53:25 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Mon Mar 14 2022 15:28:37 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

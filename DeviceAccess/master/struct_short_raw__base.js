@@ -1,8 +1,8 @@
 var struct_short_raw__base =
 [
-    [ "generateValue", "struct_short_raw__base.html#a621bcff22ca6a73576fee726e72f1fc3", null ],
+    [ "generateValue", "struct_short_raw__base.html#a0b7a839e1ef98c03e7ff269a97f894b6", null ],
     [ "get", "struct_short_raw__base.html#a462eac9be6ae7ffd5e99aabf0f6a66d8", null ],
-    [ "getRemoteValue", "struct_short_raw__base.html#a4eec1cf401a19cdd3fdd5b01c29439b1", null ],
+    [ "getRemoteValue", "struct_short_raw__base.html#ae967e537794bd8ff4ff39f6681357755", null ],
     [ "isReadable", "struct_short_raw__base.html#a043a799dc401cb4a7b7e9bfe7ea2e23c", null ],
     [ "isWriteable", "struct_short_raw__base.html#a7230378c471feb2835d77ff84b759aa0", null ],
     [ "nChannels", "struct_short_raw__base.html#ab927a9f3ac528b18c88d89f078824bcd", null ],

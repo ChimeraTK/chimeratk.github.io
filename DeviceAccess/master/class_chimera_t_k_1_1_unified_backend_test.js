@@ -65,6 +65,7 @@ var class_chimera_t_k_1_1_unified_backend_test =
     [ "test_C_5_3_3", "class_chimera_t_k_1_1_unified_backend_test.html#abf4d7dcce4eacab07647680d974c310f", null ],
     [ "test_NOSPEC_backendNotClosedAfterException", "class_chimera_t_k_1_1_unified_backend_test.html#a5e552144f0c112791e430d07d23f319e", null ],
     [ "test_NOSPEC_catalogueRaw", "class_chimera_t_k_1_1_unified_backend_test.html#a2702689c97a4924078d427490c5ebaa8", null ],
+    [ "test_NOSPEC_catalogueReadWrite", "class_chimera_t_k_1_1_unified_backend_test.html#af464a57cf92601ce3f26a3ef6413c030", null ],
     [ "test_NOSPEC_rawTransfer", "class_chimera_t_k_1_1_unified_backend_test.html#a503c90a198ffefea38335cbf674992cc", null ],
     [ "test_NOSPEC_valueAfterConstruction", "class_chimera_t_k_1_1_unified_backend_test.html#a0b7e5e218d46f89a2f68a7d04f6a27a8", null ],
     [ "test_NOSPEC_write", "class_chimera_t_k_1_1_unified_backend_test.html#aec963603aa9e175674288ec4efa9cadf", null ],

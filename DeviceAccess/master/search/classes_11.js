@@ -1,8 +1,7 @@
 var searchData=
 [
   ['templateusertypemap',['TemplateUserTypeMap',['../class_chimera_t_k_1_1_template_user_type_map.html',1,'ChimeraTK']]],
-  ['templateusertypemap_3c_20chimeratk_3a_3alnmbackendregisterinfo_3a_3avaluetable_20_3e',['TemplateUserTypeMap&lt; ChimeraTK::LNMBackendRegisterInfo::ValueTable &gt;',['../class_chimera_t_k_1_1_template_user_type_map.html',1,'ChimeraTK']]],
-  ['templateusertypemap_3c_20chimeratk_3a_3aregisteraccessor_3a_3aaccessorhandler_20_3e',['TemplateUserTypeMap&lt; ChimeraTK::RegisterAccessor::AccessorHandler &gt;',['../class_chimera_t_k_1_1_template_user_type_map.html',1,'ChimeraTK']]],
+  ['templateusertypemap_3c_20chimeratk_3a_3alnmvariable_3a_3avaluetable_20_3e',['TemplateUserTypeMap&lt; ChimeraTK::LNMVariable::ValueTable &gt;',['../class_chimera_t_k_1_1_template_user_type_map.html',1,'ChimeraTK']]],
   ['templateusertypemap_3c_20sharedaccessormap_20_3e',['TemplateUserTypeMap&lt; SharedAccessorMap &gt;',['../class_chimera_t_k_1_1_template_user_type_map.html',1,'ChimeraTK']]],
   ['templateusertypemapnovoid',['TemplateUserTypeMapNoVoid',['../class_chimera_t_k_1_1_template_user_type_map_no_void.html',1,'ChimeraTK']]],
   ['testabledevice',['TestableDevice',['../class_testable_device.html',1,'']]],

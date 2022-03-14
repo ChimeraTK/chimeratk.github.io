@@ -84,7 +84,8 @@ $(document).ready(function(){initNavTree('_shared_dummy_backend_8h.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">SharedDummyBackend.h File Reference</div>  </div>
 </div><!--header-->
@@ -101,11 +102,13 @@ $(document).ready(function(){initNavTree('_shared_dummy_backend_8h.html','');});
 <code>#include &lt;boost/interprocess/containers/vector.hpp&gt;</code><br />
 <code>#include &lt;boost/interprocess/managed_shared_memory.hpp&gt;</code><br />
 <code>#include &lt;boost/interprocess/sync/named_mutex.hpp&gt;</code><br />
+<code>#include &lt;boost/interprocess/sync/interprocess_semaphore.hpp&gt;</code><br />
+<code>#include &lt;boost/move/unique_ptr.hpp&gt;</code><br />
 <code>#include &lt;boost/unordered_set.hpp&gt;</code><br />
 <code>#include &quot;Exception.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_process_management_8h_source.html">ProcessManagement.h</a>&quot;</code><br />
-<code>#include &quot;RegisterInfoMap.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_numeric_addressed_register_catalogue_8h_source.html">NumericAddressedRegisterCatalogue.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for SharedDummyBackend.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -134,7 +137,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_chimera_t_k"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></td></tr>
-<tr class="memdesc:namespace_chimera_t_k"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides storage object for devices descriptions. <br /></td></tr>
+<tr class="memdesc:namespace_chimera_t_k"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides storage object for registers description taken from MAP file. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -145,6 +148,11 @@ Typedefs</h2></td></tr>
 <tr class="separator:ae5c130c00eb99bd7fa9e98a5a552ff3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60ad18a95d5f451480dbf4e0fcdf3b7c"><td class="memItemLeft" align="right" valign="top">typedef boost::interprocess::vector&lt; int32_t, <a class="el" href="_shared_dummy_backend_8h.html#a10e04a31366079cb5f6a395b68373295">ShmemAllocator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_shared_dummy_backend_8h.html#a60ad18a95d5f451480dbf4e0fcdf3b7c">PidSet</a></td></tr>
 <tr class="separator:a60ad18a95d5f451480dbf4e0fcdf3b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ad8feb605e95e15ab6e0dee12dfdcbae6"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#ad8feb605e95e15ab6e0dee12dfdcbae6">ChimeraTK::SHARED_MEMORY_N_MAX_MEMBER</a> = 10</td></tr>
+<tr class="separator:ad8feb605e95e15ab6e0dee12dfdcbae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a60ad18a95d5f451480dbf4e0fcdf3b7c"></a>
@@ -159,7 +167,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00028">28</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00030">30</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -175,7 +183,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00027">27</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00029">29</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -191,7 +199,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00026">26</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_shared_dummy_backend_8h_source.html#l00028">28</a> of file <a class="el" href="_shared_dummy_backend_8h_source.html">SharedDummyBackend.h</a>.</p>
 
 </div>
 </div>
@@ -201,7 +209,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_2c90e15a7117effef4353a6eb562e96d.html">SharedDummy</a></li><li class="navelem"><a class="el" href="dir_3c66f29659ecf7488c415b717becb971.html">include</a></li><li class="navelem"><a class="el" href="_shared_dummy_backend_8h.html">SharedDummyBackend.h</a></li>
-    <li class="footer">Generated on Tue Feb 22 2022 04:53:25 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Mon Mar 14 2022 15:28:36 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -141,7 +141,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a6e45e3ff091f038aceb543a04fb0ec6f"><td class="memItemLeft" align="right" valign="top">std::map&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt;, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a6e45e3ff091f038aceb543a04fb0ec6f">_lowLevelElementsAndExceptionFlags</a></td></tr>
-<tr class="memdesc:a6e45e3ff091f038aceb543a04fb0ec6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of low-level TransferElements in this group, which are directly responsible for the hardware access, and a flag whether there has been an exception in pre-pread.  <a href="#a6e45e3ff091f038aceb543a04fb0ec6f">More...</a><br /></td></tr>
+<tr class="memdesc:a6e45e3ff091f038aceb543a04fb0ec6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of low-level TransferElements in this group, which are directly responsible for the hardware access, and a flag whether there has been an exception in pre-read.  <a href="#a6e45e3ff091f038aceb543a04fb0ec6f">More...</a><br /></td></tr>
 <tr class="separator:a6e45e3ff091f038aceb543a04fb0ec6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05659fcb52954854fa82ab159de23579"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_element.html">TransferElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a05659fcb52954854fa82ab159de23579">_copyDecorators</a></td></tr>
 <tr class="memdesc:a05659fcb52954854fa82ab159de23579"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all CopyRegisterDecorators in the group.  <a href="#a05659fcb52954854fa82ab159de23579">More...</a><br /></td></tr>
@@ -150,7 +150,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:a32d6ce6d3b40c3a361874948ab71f327"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of high-level TransferElements in this group which are directly used by the user.  <a href="#a32d6ce6d3b40c3a361874948ab71f327">More...</a><br /></td></tr>
 <tr class="separator:a32d6ce6d3b40c3a361874948ab71f327"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8782ad050d289be8a9369904ca6d3b4d"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a8782ad050d289be8a9369904ca6d3b4d">_exceptionBackends</a></td></tr>
-<tr class="memdesc:a8782ad050d289be8a9369904ca6d3b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all exception backens.  <a href="#a8782ad050d289be8a9369904ca6d3b4d">More...</a><br /></td></tr>
+<tr class="memdesc:a8782ad050d289be8a9369904ca6d3b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all exception backends.  <a href="#a8782ad050d289be8a9369904ca6d3b4d">More...</a><br /></td></tr>
 <tr class="separator:a8782ad050d289be8a9369904ca6d3b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f5b15a27a3bbb3ac150969dee69b0ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a1f5b15a27a3bbb3ac150969dee69b0ff">_isReadable</a> {false}</td></tr>
 <tr class="memdesc:a1f5b15a27a3bbb3ac150969dee69b0ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached value whether all elements are readable.  <a href="#a1f5b15a27a3bbb3ac150969dee69b0ff">More...</a><br /></td></tr>
@@ -168,7 +168,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>Group multiple data accessors to efficiently trigger data transfers on the whole group. </p>
 <p>In case of some backends like the <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html" title="Backend to map logical register names onto real hardware registers. ">LogicalNameMappingBackend</a>, grouping data accessors can avoid unnecessary transfers of the same data. This happens in particular, if accessing the data of one accessor requires transfer of a bigger block of data containing also data of another accessor (e.g. channel accessors for multiplexed 2D registers).</p>
 <p>Note that <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88" title="Trigger read transfer for all accessors in the group. ">read()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a86287fe11f64206207e0d868ed83c3db" title="Trigger write transfer for all accessors in the group. ">write()</a> of the accessors put into the group can no longer be used. Instead, <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88" title="Trigger read transfer for all accessors in the group. ">read()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a86287fe11f64206207e0d868ed83c3db" title="Trigger write transfer for all accessors in the group. ">write()</a> of the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> should be called.</p>
-<p>Grouping accessors can only work with accessors that internally buffer the transferred data. Therefore the deprecated <a class="el" href="class_chimera_t_k_1_1_register_accessor.html" title="DEPRECATED! Use BufferingRegisterAccessor instead! ">RegisterAccessor</a> is not supported, as its <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88" title="Trigger read transfer for all accessors in the group. ">read()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a86287fe11f64206207e0d868ed83c3db" title="Trigger write transfer for all accessors in the group. ">write()</a> functions always directly read from/write to the hardware.</p>
+<p>Grouping accessors can only work with accessors that internally buffer the transferred data. Therefore the deprecated RegisterAccessor is not supported, as its <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#af8df339d4a0700087e48d57223231d88" title="Trigger read transfer for all accessors in the group. ">read()</a> and <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a86287fe11f64206207e0d868ed83c3db" title="Trigger write transfer for all accessors in the group. ">write()</a> functions always directly read from/write to the hardware.</p>
 <p>Important note: If accessors pointing to the same values are added to the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a>, the behaviour will be when writing. Depending on the backend and on the exact scenario, the accessors might appear like a copy sharing the internal buffers, thus writing to one accessor may (or may not) change the content of the other. Also calling <a class="el" href="class_chimera_t_k_1_1_transfer_group.html#a86287fe11f64206207e0d868ed83c3db" title="Trigger write transfer for all accessors in the group. ">write()</a> has then undefined behaviour, since it is not defined from which accessor the values will be written to the device (maybe both in an undefined order). </p>
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_transfer_group_8h_source.html#l00041">41</a> of file <a class="el" href="device_2include_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
@@ -192,21 +192,13 @@ Protected Attributes</h2></td></tr>
 <p>Add a register accessor to the group. </p>
 <p>The register accessor might internally be altered so that accessors accessing the same hardware register will share their buffers. Register accessors must not be placed into multiple TransferGroups. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00209">209</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00303">303</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a105197b54833784c119bc3f445ae8a91_cgraph.svg" width="519" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a105197b54833784c119bc3f445ae8a91_icgraph.svg" width="446" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a105197b54833784c119bc3f445ae8a91_icgraph.svg" width="443" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -227,17 +219,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000059">Todo:</a></b></dt><dd>implement smarter and more efficient! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000043">Todo:</a></b></dt><dd>implement smarter and more efficient! </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00295">295</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a13f0ae7ce386f0f34b9ea9db867efbf4_cgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
 
 </div>
 </div>
@@ -258,7 +242,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Print information about the accessors in this group to screen, which might help to understand which transfers were merged and which were not. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00315">315</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00321">321</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
 
 </div>
 </div>
@@ -280,19 +264,19 @@ Protected Attributes</h2></td></tr>
 <p>All elements are readable. </p>
 
 <p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00191">191</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a90b3cb47d10a8b7b6631644daeaead4d_cgraph.svg" width="460" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a90b3cb47d10a8b7b6631644daeaead4d_icgraph.svg" width="100%" height="465"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -318,19 +302,19 @@ Protected Attributes</h2></td></tr>
 <p>A transfer group is read-only, if at least one of its transfer elements is read-only. </p>
 
 <p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00187">187</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a3e2a181be4626c14587c6d302f0c90eb_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a3e2a181be4626c14587c6d302f0c90eb_cgraph.svg" width="100%" height="525"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a3e2a181be4626c14587c6d302f0c90eb_icgraph.svg" width="443" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -355,19 +339,19 @@ Protected Attributes</h2></td></tr>
 <p>All elements are writeable. </p>
 
 <p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00200">200</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a7466ad987832950933ac0cdb204bb8f6_cgraph.svg" width="460" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a7466ad987832950933ac0cdb204bb8f6_cgraph.svg" width="519" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a7466ad987832950933ac0cdb204bb8f6_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -392,19 +376,19 @@ Protected Attributes</h2></td></tr>
 <p>Trigger read transfer for all accessors in the group. </p>
 
 <p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00046">46</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_af8df339d4a0700087e48d57223231d88_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_af8df339d4a0700087e48d57223231d88_icgraph.svg" width="478" height="170"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -446,11 +430,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00021">21</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a89d7d1095d99972a6c404e9fa20ffdad_icgraph.svg" width="100%" height="427"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -482,12 +466,12 @@ Protected Attributes</h2></td></tr>
 
 <p>Helper function to update the cached state variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00303">303</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00309">309</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_ac12d9e5bc7ea718c5b6b4522c105c8e0_icgraph.svg" width="100%" height="483"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -513,19 +497,19 @@ Protected Attributes</h2></td></tr>
 <p>Trigger write transfer for all accessors in the group. </p>
 
 <p class="definition">Definition at line <a class="el" href="_transfer_group_8cc_source.html#l00125">125</a> of file <a class="el" href="_transfer_group_8cc_source.html">TransferGroup.cc</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a86287fe11f64206207e0d868ed83c3db_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a86287fe11f64206207e0d868ed83c3db_cgraph.svg" width="100%" height="525"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_transfer_group_a86287fe11f64206207e0d868ed83c3db_icgraph.svg" width="443" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -606,7 +590,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>List of all exception backens. </p>
+<p>List of all exception backends. </p>
 <p>We check on them whether they are opened, and we want to do it for all accessors of the same backend just once. </p>
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_transfer_group_8h_source.html#l00088">88</a> of file <a class="el" href="device_2include_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
@@ -711,7 +695,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>List of low-level TransferElements in this group, which are directly responsible for the hardware access, and a flag whether there has been an exception in pre-pread. </p>
+<p>List of low-level TransferElements in this group, which are directly responsible for the hardware access, and a flag whether there has been an exception in pre-read. </p>
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_transfer_group_8h_source.html#l00075">75</a> of file <a class="el" href="device_2include_2_transfer_group_8h_source.html">TransferGroup.h</a>.</p>
 
@@ -751,7 +735,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html">TransferGroup</a></li>
-    <li class="footer">Generated on Tue Feb 22 2022 04:53:27 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Mon Mar 14 2022 15:28:39 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

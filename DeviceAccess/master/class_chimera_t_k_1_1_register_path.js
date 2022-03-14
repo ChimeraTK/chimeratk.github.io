@@ -4,6 +4,7 @@ var class_chimera_t_k_1_1_register_path =
     [ "RegisterPath", "class_chimera_t_k_1_1_register_path.html#abe7dd8d02127d9551a8011601ab27300", null ],
     [ "RegisterPath", "class_chimera_t_k_1_1_register_path.html#a76a999faa2d2acef4c22bbb4a8f6699e", null ],
     [ "RegisterPath", "class_chimera_t_k_1_1_register_path.html#a00f08def24d7f4af410a0253b76d2ac2", null ],
+    [ "endsWith", "class_chimera_t_k_1_1_register_path.html#a123d778e88c570288d8acbec9ab33af0", null ],
     [ "getCommonAltSeparator", "class_chimera_t_k_1_1_register_path.html#a965e3b6fc9294782dd987f57c685a083", null ],
     [ "getComponents", "class_chimera_t_k_1_1_register_path.html#aa828ded01cbedfacd0d7b18a1022bbd4", null ],
     [ "getWithAltSeparator", "class_chimera_t_k_1_1_register_path.html#a8316ef607751347a61e746b38837ef83", null ],
