@@ -13,13 +13,14 @@ var class_qt_hard_mon =
     [ "write", "class_qt_hard_mon.html#a3c604ea8f93615e8856e97e4ebe70e3f", null ],
     [ "writeConfig", "class_qt_hard_mon.html#a81efa5e61c35f932af1026528047e2e3", null ],
     [ "PlotWindow", "class_qt_hard_mon.html#a9a209df8a0320461906b6dfe4643d187", null ],
+    [ "_continuousReadTimner", "class_qt_hard_mon.html#ad2e5bc6fec801dc6cf2da30133981253", null ],
     [ "_currentDeviceListItem", "class_qt_hard_mon.html#abf98cabc4a7c57c5e45696bac4d9005e", null ],
+    [ "_defaultTableViewEditTriggers", "class_qt_hard_mon.html#a057d6716bcce7d56a24ea7cc3f0ed0da", null ],
     [ "_plotWindow", "class_qt_hard_mon.html#a67ccc9ef5b6ceabb169646b1767c4c40", null ],
     [ "configFileName_", "class_qt_hard_mon.html#a290a03165229e164c8fb42ede8968c83", null ],
     [ "currentAccessorModel_", "class_qt_hard_mon.html#ab064bc2e14df9e49d4134aef6d3d09a1", null ],
     [ "currentDevice_", "class_qt_hard_mon.html#a701b45dcc304495f934b2167b6a1e380", null ],
     [ "customDelegate_", "class_qt_hard_mon.html#a5ee9c01471f3a88aa48be67145e1a40e", null ],
     [ "dmapFileName_", "class_qt_hard_mon.html#a35c1a0c1c999e078ce93bbdcd3c20411", null ],
-    [ "insideReadOrWrite_", "class_qt_hard_mon.html#ab69fa11debc8ac16f46a2fc126ee4fd1", null ],
     [ "ui", "class_qt_hard_mon.html#aca92d604830ae1fac015c79148f6367e", null ]
 ];

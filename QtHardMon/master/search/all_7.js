@@ -15,5 +15,7 @@ var searchData=
   ['getregistername',['getRegisterName',['../class_register_tree_utilities.html#a9cc680505b9cadb38ea307e37b7e3a77',1,'RegisterTreeUtilities']]],
   ['getregisterpath',['getRegisterPath',['../class_device_element_q_tree_item.html#a78f81f762e8122f229317bb69b7788f4',1,'DeviceElementQTreeItem']]],
   ['getstringvalues',['getStringValues',['../class_config_file_reader_writer.html#af7ac4bdf4205fb179a37d37160a5402d',1,'ConfigFileReaderWriter']]],
-  ['getvalue',['getValue',['../class_config_file_reader_writer.html#a06b2235fc87ee8c2823502c1348fd027',1,'ConfigFileReaderWriter::getValue()'],['../class_preferences_provider.html#ac151abeeeb758ee63cfea9118d6373f1',1,'PreferencesProvider::getValue()']]]
+  ['gettimestamp',['getTimeStamp',['../class_register_accessor_model.html#a59923f849efb14f93b04e2c075e81822',1,'RegisterAccessorModel']]],
+  ['getvalue',['getValue',['../class_config_file_reader_writer.html#a06b2235fc87ee8c2823502c1348fd027',1,'ConfigFileReaderWriter::getValue()'],['../class_preferences_provider.html#ac151abeeeb758ee63cfea9118d6373f1',1,'PreferencesProvider::getValue()']]],
+  ['getversionnumber',['getVersionNumber',['../class_register_type_abstractor.html#a47584649408fcdc5419cf768e289ddde',1,'RegisterTypeAbstractor::getVersionNumber()'],['../class_register_type_abstractor_impl.html#a4d4f27b7044ba8dab7f2802bd45f0062',1,'RegisterTypeAbstractorImpl::getVersionNumber()']]]
 ];
