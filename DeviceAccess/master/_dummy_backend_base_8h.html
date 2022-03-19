@@ -100,7 +100,6 @@ $(document).ready(function(){initNavTree('_dummy_backend_base_8h.html','');});
 <code>#include &quot;<a class="el" href="_dummy_backend_register_catalogue_8h_source.html">DummyBackendRegisterCatalogue.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_dummy_interrupt_trigger_accessor_8h_source.html">DummyInterruptTriggerAccessor.h</a>&quot;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
-<code>#include &lt;regex&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for DummyBackendBase.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -159,7 +158,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">try</span> {                                                                                                                \</div><div class="line">    COMMAND                                                                                                            \</div><div class="line">  }                                                                                                                    \</div><div class="line">  catch(std::out_of_range &amp; outOfRangeException) {                                                                     \</div><div class="line">    std::stringstream errorMessage;                                                                                    \</div><div class="line">    errorMessage &lt;&lt; <span class="stringliteral">&quot;Invalid address offset &quot;</span> &lt;&lt; address &lt;&lt; <span class="stringliteral">&quot; in bar &quot;</span> &lt;&lt; bar &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>                                   \</div><div class="line">                 &lt;&lt; <span class="stringliteral">&quot;Caught out_of_range exception: &quot;</span> &lt;&lt; outOfRangeException.what();                                   \</div><div class="line">    std::cout &lt;&lt; errorMessage.str() &lt;&lt; std::endl;                                                                      \</div><div class="line">    throw <a class="code" href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a>(errorMessage.str());                                                                  \</div><div class="line">  }                                                                                                                    \</div><div class="line">  while(<span class="keyword">false</span>)</div><div class="ttc" id="class_chimera_t_k_1_1logic__error_html"><div class="ttname"><a href="class_chimera_t_k_1_1logic__error.html">ChimeraTK::logic_error</a></div><div class="ttdoc">Exception thrown when a logic error has occured. </div><div class="ttdef"><b>Definition:</b> <a href="exception_2include_2_exception_8h_source.html#l00050">Exception.h:50</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00020">20</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_base_8h_source.html#l00019">19</a> of file <a class="el" href="_dummy_backend_base_8h_source.html">DummyBackendBase.h</a>.</p>
 
 </div>
 </div>
@@ -169,7 +168,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a6e0c1fcdf1d5a4727261697f51b55f1.html">device_backends</a></li><li class="navelem"><a class="el" href="dir_88f2d6bf3e5c857c71ef9d0d20aedb7b.html">DummyBackend</a></li><li class="navelem"><a class="el" href="dir_ced00e1711a5de84614ce156ecd6cc66.html">include</a></li><li class="navelem"><a class="el" href="_dummy_backend_base_8h.html">DummyBackendBase.h</a></li>
-    <li class="footer">Generated on Mon Mar 14 2022 15:28:36 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Mar 19 2022 04:53:14 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

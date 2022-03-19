@@ -1,5 +1,10 @@
 var NAVTREEINDEX8 =
 {
+"class_chimera_t_k_1_1_xdma_intf_abstract.html#a62c4b4da7220775934d6e80d8e052059":[20,0,1,123,1],
+"class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator.html":[20,0,1,16],
+"class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator.html#a1b70a98a9d1304458209b248db3d4041":[20,0,1,16,8],
+"class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator.html#a40b8bb91f3e6dcdcf9ce44950a526ac1":[20,0,1,16,5],
+"class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator.html#a45032fcf22c49656cfee12bcecc6db94":[20,0,1,16,9],
 "class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator.html#a56360792fb72ab6319d5a335006fe422":[20,0,1,16,6],
 "class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator.html#a61284381ea6c6fd280b6f75bfcd50b0f":[20,0,1,16,13],
 "class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator.html#a88cb323867c366986a3b905b8d6ce597":[20,0,1,16,10],
@@ -244,10 +249,5 @@ var NAVTREEINDEX8 =
 "classmy_register_info.html#a8afebaf3baa27beba0435f92dcf6c550":[20,0,56,4],
 "classmy_register_info.html#a91a84451c482c514214f1e2bf49d977e":[20,0,56,7],
 "classmy_register_info.html#abbc4e77521b384685031779fd35c871c":[20,0,56,0],
-"classmy_register_info.html#abd50ef365c6ea0646f2c385866d8254a":[20,0,56,9],
-"classmy_register_info.html#abdb6b360ff57f013658628a46a55399a":[20,0,56,10],
-"classmy_register_info.html#ad3e8cab96ac744704ac11abf017fa851":[20,0,56,3],
-"classmy_register_info.html#adc8ec398d03045a349bfa4c4ea181397":[20,0,56,2],
-"classmy_register_info.html#ade061abb459aac00556b421dedd23a13":[20,0,56,6],
-"classmy_register_info.html#adf9eac2a7d7a057f286aba1e31de70d1":[20,0,56,16]
+"classmy_register_info.html#abd50ef365c6ea0646f2c385866d8254a":[20,0,56,9]
 };

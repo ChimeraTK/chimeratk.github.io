@@ -1,5 +1,10 @@
 var NAVTREEINDEX15 =
 {
+"struct_reg_word_firmware_with_math___r__push.html#a4e11d27bd0c7696f873b5cd31538b27f":[20,0,109,1],
+"struct_reg_word_firmware_with_math___r__push.html#ac1fa08b9dfd913464305f7105b709d2e":[20,0,109,3],
+"struct_reg_word_firmware_with_math___r__push.html#ac998424e07e6e6761f50bc478b9339fd":[20,0,109,2],
+"struct_reg_word_firmware_with_math___r__push.html#afc3bbd0e53690ea738d1b1356d3ee615":[20,0,109,0],
+"struct_reg_word_firmware_with_math___w.html":[20,0,110],
 "struct_reg_word_firmware_with_math___w.html#a702effa67ca090eac4d2a410f440bb8f":[20,0,110,1],
 "struct_reg_word_firmware_with_math___w.html#ab8dfec0eefb4f13ac3a6f3157a38294d":[20,0,110,2],
 "struct_reg_word_firmware_with_math___w.html#acbf428581eddf1d660f7178f71c076f0":[20,0,110,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX15 =
 "test_dummy_register_accessor_8cpp.html#a9aa79a191e36fe6704968a98c575b6e7":[21,0,7,1,12,4],
 "test_dummy_register_accessor_8cpp_source.html":[21,0,7,1,12],
 "test_exception_dummy_device_8cc.html":[21,0,7,1,13],
-"test_exception_dummy_device_8cc.html#a46db3fa07daf73263818dfdf6a0041d7":[21,0,7,1,13,3],
-"test_exception_dummy_device_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[21,0,7,1,13,0],
-"test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35":[21,0,7,1,13,2],
-"test_exception_dummy_device_8cc.html#a9ac89077e8428a50888478bacef3d113":[21,0,7,1,13,1],
-"test_exception_dummy_device_8cc_source.html":[21,0,7,1,13],
-"test_fixed_point_converter_8cpp.html":[21,0,7,1,14]
+"test_exception_dummy_device_8cc.html#a46db3fa07daf73263818dfdf6a0041d7":[21,0,7,1,13,3]
 };

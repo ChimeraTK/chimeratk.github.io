@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"class_chimera_t_k_1_1_device_info_map.html#aef25605221a880cc2a37c128ffc35a30":[20,0,1,30,6],
 "class_chimera_t_k_1_1_device_info_map.html#afc0be887b370a25f4037b8021c2a480a":[20,0,1,30,2],
 "class_chimera_t_k_1_1_device_info_map_1_1_device_info.html":[20,0,1,30,0],
 "class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a0c7bb5ea1149d7220da8bc22f8ba171e":[20,0,1,30,0,7],
@@ -75,8 +76,10 @@ var NAVTREEINDEX3 =
 "class_chimera_t_k_1_1_dummy_backend_base.html#ab0ead34576958ed54fb4165fcd22e742":[20,0,1,35,7],
 "class_chimera_t_k_1_1_dummy_backend_base.html#ab1955cb88908fae9aec1709c65bc022e":[20,0,1,35,2],
 "class_chimera_t_k_1_1_dummy_backend_register_catalogue.html":[20,0,1,36],
-"class_chimera_t_k_1_1_dummy_backend_register_catalogue.html#a56d4a7e00d5218a5ff9ad4deeb8f0adb":[20,0,1,36,1],
-"class_chimera_t_k_1_1_dummy_backend_register_catalogue.html#a68ac3973fa455d92cc618a08e5bebda4":[20,0,1,36,0],
+"class_chimera_t_k_1_1_dummy_backend_register_catalogue.html#a56d4a7e00d5218a5ff9ad4deeb8f0adb":[20,0,1,36,3],
+"class_chimera_t_k_1_1_dummy_backend_register_catalogue.html#a68ac3973fa455d92cc618a08e5bebda4":[20,0,1,36,2],
+"class_chimera_t_k_1_1_dummy_backend_register_catalogue.html#a6ffa5e8b92af1010e31f31acd69d6ed8":[20,0,1,36,0],
+"class_chimera_t_k_1_1_dummy_backend_register_catalogue.html#aed1708ec53e60b12944f94dd10622c93":[20,0,1,36,1],
 "class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html":[20,0,1,37],
 "class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html#a2f2f2cf72315f034dcfdd816a29e27bd":[20,0,1,37,7],
 "class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html#a31b37c5faa294549d9b11adceddddbf5":[20,0,1,37,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX3 =
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a10df5e12741eb5c411e00a32c890c6c2":[20,0,1,0,11,17],
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a1644e5b74820bbd23009aa98031d3ccd":[20,0,1,0,11,14],
 "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a1f116f6cc9a8c6dd848102380ea866cf":[20,0,1,0,11,2],
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a262a1cfcaeb8694bab48f2781a276219":[20,0,1,0,11,3],
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a30296fb8ab85f26dca4070063c1c16a9":[20,0,1,0,11,16],
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a48fc2e548c962b003ae884f948de93e2":[20,0,1,0,11,0],
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a4bb9a0035fe429d3b5113b2ad75964e5":[20,0,1,0,11,8]
+"class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a262a1cfcaeb8694bab48f2781a276219":[20,0,1,0,11,3]
 };

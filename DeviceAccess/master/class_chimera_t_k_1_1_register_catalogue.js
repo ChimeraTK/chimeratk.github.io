@@ -7,6 +7,7 @@ var class_chimera_t_k_1_1_register_catalogue =
     [ "~RegisterCatalogue", "class_chimera_t_k_1_1_register_catalogue.html#acfb7367c08fd2501ca7755b2bfb50458", null ],
     [ "begin", "class_chimera_t_k_1_1_register_catalogue.html#abfc69e96fc9cf1278a00cabf25e2c9c5", null ],
     [ "end", "class_chimera_t_k_1_1_register_catalogue.html#aac5ec7c5d7754b78eb114a0d3a972f15", null ],
+    [ "getImpl", "class_chimera_t_k_1_1_register_catalogue.html#ae4473a526b659eca88ec7e45255ddadf", null ],
     [ "getNumberOfRegisters", "class_chimera_t_k_1_1_register_catalogue.html#a56bed442d9785241307a8183c69171d9", null ],
     [ "getRegister", "class_chimera_t_k_1_1_register_catalogue.html#a0d525dad746dec2901009906910f368e", null ],
     [ "hasRegister", "class_chimera_t_k_1_1_register_catalogue.html#a5fc45d407cf3065c245ab788db94322c", null ],
