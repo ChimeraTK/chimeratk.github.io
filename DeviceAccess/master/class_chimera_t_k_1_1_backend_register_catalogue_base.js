@@ -2,6 +2,7 @@ var class_chimera_t_k_1_1_backend_register_catalogue_base =
 [
     [ "BackendRegisterCatalogueBase", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#ac11a165c71f792f084445b7d3848f919", null ],
     [ "BackendRegisterCatalogueBase", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a17a8cbcd1f2d7ebd88a7840eacdac8be", null ],
+    [ "~BackendRegisterCatalogueBase", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a0720f531a1e6a16cb04982df5bb1c4fa", null ],
     [ "BackendRegisterCatalogueBase", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a24c80b49f7384777d988be19e49f2e67", null ],
     [ "clone", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#a70de19981c9b5459f95baff09ae98735", null ],
     [ "getConstIteratorBegin", "class_chimera_t_k_1_1_backend_register_catalogue_base.html#aebd6cdf51331ad2c3b33ecfd789045b7", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"struct_chimera_t_k_1_1_dummy_protocol1.html#a59e2d55cbe4b3a93a8d94c7ad21f6b39":[20,0,1,40,2],
+"struct_chimera_t_k_1_1_dummy_protocol1.html#a639a250eb07d288a4fada019690e32f2":[20,0,1,40,7],
 "struct_chimera_t_k_1_1_dummy_protocol1.html#a9ef666defda2ed2a3b922ac5dcb54b61":[20,0,1,40,1],
 "struct_chimera_t_k_1_1_dummy_protocol1.html#a9f70e86302ee35253948e49734a02bb9":[20,0,1,40,0],
 "struct_chimera_t_k_1_1_exception_dummy_poll_decorator.html":[20,0,1,46],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_write_only__proxy__helper_3_01_t_00_01false_01_4.html#a7873b4d283b63cfc446d5692a4fa101b":[20,0,1,117,12,0],
 "struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper.html":[20,0,1,117,13],
 "struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper.html#a54d30c5c81dc08a487fb0e05467538d2":[20,0,1,117,13,1],
-"struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper.html#acb01c632c0636aa8ac392690e3674253":[20,0,1,117,13,0],
-"struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper_3_01_t_00_01false_01_4.html":[20,0,1,117,14],
-"struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper_3_01_t_00_01false_01_4.html#a51c1a7b7ff7033155a00b23ff9664fbe":[20,0,1,117,14,1]
+"struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper.html#acb01c632c0636aa8ac392690e3674253":[20,0,1,117,13,0]
 };

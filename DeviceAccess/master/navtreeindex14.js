@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"struct_my_area1.html#a8c75ccc54d3b359d0b8cfa7449cc9692":[20,0,54,5],
+"struct_my_area1.html#a958c28f745c91d5728d8e1ace6a0f163":[20,0,54,4],
 "struct_my_area1.html#a95a72cd0bebe54e005ae37266e5d5621":[20,0,54,1],
 "struct_my_area1.html#ab824d8a4ea0588a8f7fbac95201ddef7":[20,0,54,3],
 "struct_my_register1.html":[20,0,55],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "struct_reg_word_firmware_with_math___r.html":[20,0,108],
 "struct_reg_word_firmware_with_math___r.html#a19dd72da11701b6bc8e4ca1e98daf966":[20,0,108,0],
 "struct_reg_word_firmware_with_math___r.html#a4c76cc0c1abb4faa5251c5e2594bd5d8":[20,0,108,2],
-"struct_reg_word_firmware_with_math___r.html#a4fb589ea22eb1afe9d112e53cd0bd8ef":[20,0,108,1],
-"struct_reg_word_firmware_with_math___r__push.html":[20,0,109],
-"struct_reg_word_firmware_with_math___r__push.html#a0756f2904ddbdac76fd0c1f6cbc9a74a":[20,0,109,4]
+"struct_reg_word_firmware_with_math___r.html#a4fb589ea22eb1afe9d112e53cd0bd8ef":[20,0,108,1]
 };
