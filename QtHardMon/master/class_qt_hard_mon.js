@@ -10,6 +10,8 @@ var class_qt_hard_mon =
     [ "openDevice", "class_qt_hard_mon.html#aa136dd5bf3cdf3296490ee815f19ab77", null ],
     [ "parseArgument", "class_qt_hard_mon.html#a57779de6afbaaab4306780c25aaa2073", null ],
     [ "read", "class_qt_hard_mon.html#aed608f4dce895ce59714cbf4b27609e3", null ],
+    [ "readImpl", "class_qt_hard_mon.html#a0223023aa60b8f6fe79b5cec0ce38f94", null ],
+    [ "readLatest", "class_qt_hard_mon.html#a8b0ce2be1ce6b2f179f1d993556f04b2", null ],
     [ "write", "class_qt_hard_mon.html#a3c604ea8f93615e8856e97e4ebe70e3f", null ],
     [ "writeConfig", "class_qt_hard_mon.html#a81efa5e61c35f932af1026528047e2e3", null ],
     [ "PlotWindow", "class_qt_hard_mon.html#a9a209df8a0320461906b6dfe4643d187", null ],

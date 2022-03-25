@@ -137,6 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4dee6aff61dc48bc75e125ee8e055986"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor_raw_impl.html#a4dee6aff61dc48bc75e125ee8e055986">readLatest</a> () override</td></tr>
 <tr class="memdesc:a4dee6aff61dc48bc75e125ee8e055986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override to update the cached cooked data after reading.  <a href="#a4dee6aff61dc48bc75e125ee8e055986">More...</a><br /></td></tr>
 <tr class="separator:a4dee6aff61dc48bc75e125ee8e055986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af88867e4c3f1f5b2562b9ba6176f94d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor_raw_impl.html#af88867e4c3f1f5b2562b9ba6176f94d8">read</a> () override</td></tr>
+<tr class="memdesc:af88867e4c3f1f5b2562b9ba6176f94d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override to update the cached cooked data after reading.  <a href="#af88867e4c3f1f5b2562b9ba6176f94d8">More...</a><br /></td></tr>
+<tr class="separator:af88867e4c3f1f5b2562b9ba6176f94d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09abfa376aa7a6d5227b62eb9677a4b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor_raw_impl.html#a09abfa376aa7a6d5227b62eb9677a4b3">isIntegral</a> () const override</td></tr>
 <tr class="memdesc:a09abfa376aa7a6d5227b62eb9677a4b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override because this is for the cooked type while the base implementation would return for the raw type.  <a href="#a09abfa376aa7a6d5227b62eb9677a4b3">More...</a><br /></td></tr>
 <tr class="separator:a09abfa376aa7a6d5227b62eb9677a4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,6 +188,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aafe441f3a63b279c1402ca106882ddcf inherit pub_methods_class_register_type_abstractor_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7a17424e3722fcc8d79b901d5a40ae2 inherit pub_methods_class_register_type_abstractor_impl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor_impl.html#ad7a17424e3722fcc8d79b901d5a40ae2">readLatest</a> () override</td></tr>
 <tr class="separator:ad7a17424e3722fcc8d79b901d5a40ae2 inherit pub_methods_class_register_type_abstractor_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb279a54616c5fbd74fcba88c8e588f inherit pub_methods_class_register_type_abstractor_impl"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor_impl.html#a6bb279a54616c5fbd74fcba88c8e588f">read</a> () override</td></tr>
+<tr class="separator:a6bb279a54616c5fbd74fcba88c8e588f inherit pub_methods_class_register_type_abstractor_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a913162bcefc000eed04403c0a0f92361 inherit pub_methods_class_register_type_abstractor_impl"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor_impl.html#a913162bcefc000eed04403c0a0f92361">write</a> () override</td></tr>
 <tr class="separator:a913162bcefc000eed04403c0a0f92361 inherit pub_methods_class_register_type_abstractor_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9be3cd144bb8c763606168fead397aed inherit pub_methods_class_register_type_abstractor_impl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_register_type_abstractor_impl.html#a9be3cd144bb8c763606168fead397aed">isWritable</a> () override</td></tr>
@@ -254,7 +259,7 @@ template&lt;class RAW_DATA_TYPE , class COOKED_DATA_TYPE &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00075">75</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00077">77</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -307,7 +312,7 @@ template&lt;class RAW_DATA_TYPE , class COOKED_DATA_TYPE &gt; </div>
 
 <p>Implements <a class="el" href="class_register_type_abstractor.html#a224d78bce23419919af6c94330c04af2">RegisterTypeAbstractor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00087">87</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00089">89</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -367,7 +372,7 @@ template&lt;class RAW_DATA_TYPE , class COOKED_DATA_TYPE &gt; </div>
 
 <p>Implements <a class="el" href="class_register_type_abstractor.html#a47e78567f331fc0bee9610fbff17f771">RegisterTypeAbstractor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00104">104</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00106">106</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
 
 </div>
 </div>
@@ -398,7 +403,7 @@ template&lt;class RAW_DATA_TYPE , class COOKED_DATA_TYPE &gt; </div>
 
 <p>Implements <a class="el" href="class_register_type_abstractor.html#a0227d45c33decd598e59b2d5cbe68302">RegisterTypeAbstractor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00190">190</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00198">198</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
 
 </div>
 </div>
@@ -431,7 +436,7 @@ template&lt;class RAW_DATA_TYPE , class COOKED_DATA_TYPE &gt; </div>
 
 <p>Implements <a class="el" href="class_register_type_abstractor.html#a60cb6d79dac7d07c72182a97071dbea3">RegisterTypeAbstractor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00143">143</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00151">151</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
 
 </div>
 </div>
@@ -475,7 +480,7 @@ template&lt;class RAW_DATA_TYPE , class COOKED_DATA_TYPE &gt; </div>
 
 <p>Implements <a class="el" href="class_register_type_abstractor.html#abe40109c68aacae04b546e28e67d1093">RegisterTypeAbstractor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00116">116</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00118">118</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -527,7 +532,48 @@ template&lt;class RAW_DATA_TYPE , class COOKED_DATA_TYPE &gt; </div>
 
 <p>Implements <a class="el" href="class_register_type_abstractor.html#af8f97fe27d17eb03a865d9105f8336b8">RegisterTypeAbstractor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00124">124</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00126">126</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+
+</div>
+</div>
+<a id="af88867e4c3f1f5b2562b9ba6176f94d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af88867e4c3f1f5b2562b9ba6176f94d8">&#9670;&nbsp;</a></span>read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class RAW_DATA_TYPE , class COOKED_DATA_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_register_type_abstractor_raw_impl.html">RegisterTypeAbstractorRawImpl</a>&lt; RAW_DATA_TYPE, COOKED_DATA_TYPE &gt;::read </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Override to update the cached cooked data after reading. </p>
+
+<p>Implements <a class="el" href="class_register_type_abstractor.html#a8b382ff726fdbb372383e107bb543936">RegisterTypeAbstractor</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00144">144</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_register_type_abstractor_raw_impl_af88867e4c3f1f5b2562b9ba6176f94d8_cgraph.svg" width="491" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -560,12 +606,12 @@ template&lt;class RAW_DATA_TYPE , class COOKED_DATA_TYPE &gt; </div>
 
 <p>Implements <a class="el" href="class_register_type_abstractor.html#a45fba5ab4d3b0b23fb1412021f74b87a">RegisterTypeAbstractor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00133">133</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00135">135</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_register_type_abstractor_raw_impl_a4dee6aff61dc48bc75e125ee8e055986_cgraph.svg" width="491" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -618,12 +664,12 @@ template&lt;class RAW_DATA_TYPE , class COOKED_DATA_TYPE &gt; </div>
 
 <p>Implements <a class="el" href="class_register_type_abstractor.html#a8b68c0521e05262667d6a02f40871d9d">RegisterTypeAbstractor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00149">149</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00157">157</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_register_type_abstractor_raw_impl_a3492d5940446fda6006906c28fd2b276_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -676,12 +722,12 @@ template&lt;class RAW_DATA_TYPE , class COOKED_DATA_TYPE &gt; </div>
 
 <p>Implements <a class="el" href="class_register_type_abstractor.html#a478cd5890a491bafdb1d500dafdeda0f">RegisterTypeAbstractor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00164">164</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00172">172</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_register_type_abstractor_raw_impl_ab72bb62b2fd07eef7bd35a0116145523_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -713,13 +759,13 @@ template&lt;class RAW_DATA_TYPE , class COOKED_DATA_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00178">178</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00186">186</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_register_type_abstractor_raw_impl_adaa8f84b101cfc6420147e7d76fc154e_icgraph.svg" width="558" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_register_type_abstractor_raw_impl_adaa8f84b101cfc6420147e7d76fc154e_icgraph.svg" width="558" height="314"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -751,7 +797,7 @@ template&lt;class RAW_DATA_TYPE , class COOKED_DATA_TYPE &gt; </div>
 <p>Cached data for painting. </p>
 <p>If exceptions occur during data conversion this does not happen every time when painting. </p>
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00049">49</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00051">51</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
 
 </div>
 </div>
@@ -777,7 +823,7 @@ template&lt;class RAW_DATA_TYPE , class COOKED_DATA_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00050">50</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html#l00052">52</a> of file <a class="el" href="_register_type_abstractor_raw_impl_8h_source.html">RegisterTypeAbstractorRawImpl.h</a>.</p>
 
 </div>
 </div>
@@ -790,7 +836,7 @@ template&lt;class RAW_DATA_TYPE , class COOKED_DATA_TYPE &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_register_type_abstractor_raw_impl.html">RegisterTypeAbstractorRawImpl</a></li>
-    <li class="footer">Generated on Sat Mar 19 2022 04:54:22 for QtHardMon by
+    <li class="footer">Generated on Fri Mar 25 2022 04:53:39 for QtHardMon by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

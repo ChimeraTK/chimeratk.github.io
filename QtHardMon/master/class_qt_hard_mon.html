@@ -127,6 +127,9 @@ Public Slots</h2></td></tr>
 <tr class="memitem:aed608f4dce895ce59714cbf4b27609e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#aed608f4dce895ce59714cbf4b27609e3">read</a> ()</td></tr>
 <tr class="memdesc:aed608f4dce895ce59714cbf4b27609e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read register from device.  <a href="#aed608f4dce895ce59714cbf4b27609e3">More...</a><br /></td></tr>
 <tr class="separator:aed608f4dce895ce59714cbf4b27609e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b0ce2be1ce6b2f179f1d993556f04b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#a8b0ce2be1ce6b2f179f1d993556f04b2">readLatest</a> ()</td></tr>
+<tr class="memdesc:a8b0ce2be1ce6b2f179f1d993556f04b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-blocking read for the continuous read loop.  <a href="#a8b0ce2be1ce6b2f179f1d993556f04b2">More...</a><br /></td></tr>
+<tr class="separator:a8b0ce2be1ce6b2f179f1d993556f04b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c604ea8f93615e8856e97e4ebe70e3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#a3c604ea8f93615e8856e97e4ebe70e3f">write</a> ()</td></tr>
 <tr class="memdesc:a3c604ea8f93615e8856e97e4ebe70e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read register to device.  <a href="#a3c604ea8f93615e8856e97e4ebe70e3f">More...</a><br /></td></tr>
 <tr class="separator:a3c604ea8f93615e8856e97e4ebe70e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,6 +159,8 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0223023aa60b8f6fe79b5cec0ce38f94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#a0223023aa60b8f6fe79b5cec0ce38f94">readImpl</a> (bool doBlockingRead)</td></tr>
+<tr class="separator:a0223023aa60b8f6fe79b5cec0ce38f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81efa5e61c35f932af1026528047e2e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_hard_mon.html#a81efa5e61c35f932af1026528047e2e3">writeConfig</a> (QString const &amp;fileName)</td></tr>
 <tr class="memdesc:a81efa5e61c35f932af1026528047e2e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the config to the given file name.  <a href="#a81efa5e61c35f932af1026528047e2e3">More...</a><br /></td></tr>
 <tr class="separator:a81efa5e61c35f932af1026528047e2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,7 +354,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00916">916</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00930">930</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -387,7 +392,7 @@ Friends</h2></td></tr>
 
 <p>The function which actually performs the loading of the config file. </p>
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00574">574</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00587">587</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -503,7 +508,7 @@ Friends</h2></td></tr>
 <p>This method checks if <a class="el" href="class_qt_hard_mon.html" title="The QtHadMon class which implements all the GUI functionality. ">QtHardMon</a> executable has been called with a valid configuration or dmap file as an argument. </p>
 <p>It checks the extension of the passed in argument to distinguish the two file types. Depending on the file type passed, the method invokes either loadConfig or loadBoards internally. A pop up window with a warning is displayed if the fileName argument provided does not end with extension ".dmap" or ".cfg" </p>
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00897">897</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00911">911</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -547,9 +552,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read register from device. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>The error message accesses the _currentDeviceListItem. Is this safe? It might be NULL. On the other hand <a class="el" href="class_qt_hard_mon.html#aed608f4dce895ce59714cbf4b27609e3" title="Read register from device. ">read()</a> should only be active if a device is opened. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00433">433</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00435">435</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -564,6 +568,96 @@ Friends</h2></td></tr>
 </div>
 <div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_qt_hard_mon_aed608f4dce895ce59714cbf4b27609e3_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a0223023aa60b8f6fe79b5cec0ce38f94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0223023aa60b8f6fe79b5cec0ce38f94">&#9670;&nbsp;</a></span>readImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QtHardMon::readImpl </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>doBlockingRead</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>The error message accesses the _currentDeviceListItem. Is this safe? It might be NULL. On the other hand <a class="el" href="class_qt_hard_mon.html#aed608f4dce895ce59714cbf4b27609e3" title="Read register from device. ">read()</a> should only be active if a device is opened. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00443">443</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_qt_hard_mon_a0223023aa60b8f6fe79b5cec0ce38f94_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_qt_hard_mon_a0223023aa60b8f6fe79b5cec0ce38f94_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a8b0ce2be1ce6b2f179f1d993556f04b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b0ce2be1ce6b2f179f1d993556f04b2">&#9670;&nbsp;</a></span>readLatest</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QtHardMon::readLatest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Non-blocking read for the continuous read loop. </p>
+
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00439">439</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_qt_hard_mon_a8b0ce2be1ce6b2f179f1d993556f04b2_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_qt_hard_mon_a8b0ce2be1ce6b2f179f1d993556f04b2_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -595,20 +689,20 @@ Friends</h2></td></tr>
 <p>Read register to device. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>The error message accesses the _currentDeviceListItem. Is this safe? It might be NULL. On the other hand <a class="el" href="class_qt_hard_mon.html#a3c604ea8f93615e8856e97e4ebe70e3f" title="Read register to device. ">write()</a> should only be active if a device is opened. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00470">470</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00480">480</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_qt_hard_mon_a3c604ea8f93615e8856e97e4ebe70e3f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_qt_hard_mon_a3c604ea8f93615e8856e97e4ebe70e3f_icgraph.svg" width="371" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -641,20 +735,20 @@ Friends</h2></td></tr>
 
 <p>Write the config to the given file name. </p>
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00757">757</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8cpp_source.html#l00770">770</a> of file <a class="el" href="_qt_hard_mon_8cpp_source.html">QtHardMon.cpp</a>.</p>
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_qt_hard_mon_a81efa5e61c35f932af1026528047e2e3_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_qt_hard_mon_a81efa5e61c35f932af1026528047e2e3_icgraph.svg" width="100%" height="365"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -682,7 +776,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00219">219</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00222">222</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
 
 </div>
 </div>
@@ -707,7 +801,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00224">224</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00227">227</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
 
 </div>
 </div>
@@ -733,7 +827,7 @@ Friends</h2></td></tr>
 
 <p>Pointer to the currently selected deviceListItem. </p>
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00207">207</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00210">210</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
 
 </div>
 </div>
@@ -757,7 +851,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00225">225</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00228">228</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
 
 </div>
 </div>
@@ -783,7 +877,7 @@ Friends</h2></td></tr>
 
 <p>The plot window. </p>
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00210">210</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00213">213</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
 
 </div>
 </div>
@@ -809,7 +903,7 @@ Friends</h2></td></tr>
 
 <p>Name of the config file (last saved or read) </p>
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00155">155</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00156">156</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
 
 </div>
 </div>
@@ -835,7 +929,7 @@ Friends</h2></td></tr>
 
 <p>The accessor model for the current register. </p>
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00156">156</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00157">157</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
 
 </div>
 </div>
@@ -861,7 +955,7 @@ Friends</h2></td></tr>
 
 <p>The instance of the device which is being accessed. </p>
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00153">153</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00154">154</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
 
 </div>
 </div>
@@ -887,7 +981,7 @@ Friends</h2></td></tr>
 
 <p>The delegate for the values table view. </p>
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00157">157</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00158">158</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
 
 </div>
 </div>
@@ -913,7 +1007,7 @@ Friends</h2></td></tr>
 
 <p>The file name of the last opened dmap file. </p>
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00154">154</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00155">155</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
 
 </div>
 </div>
@@ -931,7 +1025,7 @@ Friends</h2></td></tr>
 
 <p>The GUI form which hold all the widgets. </p>
 
-<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00144">144</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_hard_mon_8h_source.html#l00145">145</a> of file <a class="el" href="_qt_hard_mon_8h_source.html">QtHardMon.h</a>.</p>
 
 </div>
 </div>
@@ -945,7 +1039,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_qt_hard_mon.html">QtHardMon</a></li>
-    <li class="footer">Generated on Sat Mar 19 2022 04:54:22 for QtHardMon by
+    <li class="footer">Generated on Fri Mar 25 2022 04:53:39 for QtHardMon by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

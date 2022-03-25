@@ -22,6 +22,7 @@ var class_register_type_abstractor_impl =
     [ "rawData", "class_register_type_abstractor_impl.html#adda488e905759411f589ad7910ae098c", null ],
     [ "rawDataAsHex", "class_register_type_abstractor_impl.html#a3c070bf27a7e51a4d59a900b8da31073", null ],
     [ "rawDataType", "class_register_type_abstractor_impl.html#a8380216ad523a3efa34f82f47d1110f6", null ],
+    [ "read", "class_register_type_abstractor_impl.html#a6bb279a54616c5fbd74fcba88c8e588f", null ],
     [ "readLatest", "class_register_type_abstractor_impl.html#ad7a17424e3722fcc8d79b901d5a40ae2", null ],
     [ "setData", "class_register_type_abstractor_impl.html#a3d5cb7e9720f3b90f8000b17bba5272c", null ],
     [ "setRawData", "class_register_type_abstractor_impl.html#af5046d3fc2fb04f26b548e13f52fd740", null ],
