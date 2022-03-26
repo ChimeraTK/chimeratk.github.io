@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['parameterreadloop',['parameterReadLoop',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#affe8cfc2dc9b0509579173531c8f32bb',1,'ChimeraTK::LNMBackend::MathPlugin']]],
   ['parameters',['parameters',['../struct_chimera_t_k_1_1_device_descriptor.html#ad5b3d511524f18cd96ad990f94733e1b',1,'ChimeraTK::DeviceDescriptor']]],
   ['params',['params',['../struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#aeaab98d46b9cdaeec4e2961c377c9566',1,'ChimeraTK::LNMBackend::MathPluginFormulaHelper']]],
   ['parse',['parse',['../class_chimera_t_k_1_1_logical_name_mapping_backend.html#a6b020ac5ae848f98a0220c858d7808e7',1,'ChimeraTK::LogicalNameMappingBackend::parse()'],['../class_chimera_t_k_1_1_map_file_parser.html#a776c32591cc38e554ddbba1fbfae8e57',1,'ChimeraTK::MapFileParser::parse()'],['../class_chimera_t_k_1_1_d_map_file_parser.html#af5bc5f64b8e53e070862ac5e9992a412',1,'ChimeraTK::DMapFileParser::parse()']]],
@@ -57,7 +58,7 @@ var searchData=
   ['pcieuni_5ftest_5fslot',['PCIEUNI_TEST_SLOT',['../test_pcie_backend_8cpp.html#a6f7e381650a31d9c7cf3a9a0c81a910c',1,'testPcieBackend.cpp']]],
   ['pcieuni_5fwrite_5fdma',['PCIEUNI_WRITE_DMA',['../device__backends_2pcie_2include_2pcieuni__io__compat_8h.html#a1500cb79fd250fdd018729ac3d3438a4',1,'pcieuni_io_compat.h']]],
   ['pidset',['PidSet',['../_shared_dummy_backend_8h.html#a60ad18a95d5f451480dbf4e0fcdf3b7c',1,'SharedDummyBackend.h']]],
-  ['ping',['PING',['../class_chimera_t_k_1_1_rebot_dummy_session.html#aafb9594fe0ee67b44577967af92b4a28',1,'ChimeraTK::RebotDummySession::PING()'],['../struct_chimera_t_k_1_1_dummy_protocol0.html#a369540e492a7e9a79bb6a72e88174c59',1,'ChimeraTK::DummyProtocol0::ping()'],['../struct_dummy_protocol_implementor.html#ac60d8e7bae14fda22982a49c54b3ca47',1,'DummyProtocolImplementor::ping()']]],
+  ['ping',['ping',['../struct_chimera_t_k_1_1_dummy_protocol0.html#a369540e492a7e9a79bb6a72e88174c59',1,'ChimeraTK::DummyProtocol0::ping()'],['../struct_dummy_protocol_implementor.html#ac60d8e7bae14fda22982a49c54b3ca47',1,'DummyProtocolImplementor::ping()'],['../class_chimera_t_k_1_1_rebot_dummy_session.html#aafb9594fe0ee67b44577967af92b4a28',1,'ChimeraTK::RebotDummySession::PING()']]],
   ['pitch',['pitch',['../class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html#a1ab05d3d094cad208ffe39767d3075ad',1,'ChimeraTK::proxies::DummyRegisterSequence::pitch()'],['../class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html#a34aca12eef21df4080234eccd618393b',1,'ChimeraTK::DummyMultiplexedRegisterAccessor::pitch()']]],
   ['plugins',['plugins',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#af7bab2b23212722a12ac7dbec26d6978',1,'ChimeraTK::LNMBackendRegisterInfo']]],
   ['pong',['PONG',['../class_chimera_t_k_1_1_rebot_dummy_session.html#ac5d9d235dab59e2201723faa77e266e3',1,'ChimeraTK::RebotDummySession']]],

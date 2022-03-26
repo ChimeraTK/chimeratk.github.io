@@ -133,6 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a262a1cfcaeb8694bab48f2781a276219"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a262a1cfcaeb8694bab48f2781a276219">exceptionHook</a> () override</td></tr>
 <tr class="memdesc:a262a1cfcaeb8694bab48f2781a276219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hook called when an exception is reported to the the backend via setException(), after the backend has been moved into the exception state.  <a href="#a262a1cfcaeb8694bab48f2781a276219">More...</a><br /></td></tr>
 <tr class="separator:a262a1cfcaeb8694bab48f2781a276219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affe8cfc2dc9b0509579173531c8f32bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#affe8cfc2dc9b0509579173531c8f32bb">parameterReadLoop</a> (boost::barrier &amp;waitUntilThreadLaunched)</td></tr>
+<tr class="separator:affe8cfc2dc9b0509579173531c8f32bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html">ChimeraTK::LNMBackend::AccessorPlugin&lt; MathPlugin &gt;</a></td></tr>
 <tr class="memitem:a167b2d975e3ee12e8d621e5ea33eccbe inherit pub_methods_class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#a167b2d975e3ee12e8d621e5ea33eccbe">AccessorPlugin</a> (<a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html">LNMBackendRegisterInfo</a> info)</td></tr>
 <tr class="memdesc:a167b2d975e3ee12e8d621e5ea33eccbe inherit pub_methods_class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor of the plugin should also accept a second argument: const std::map&lt;std::string, std::string&gt;&amp; parameters Since the parameters are not used in the base class, they do not need to be passed on.  <a href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#a167b2d975e3ee12e8d621e5ea33eccbe">More...</a><br /></td></tr>
@@ -159,6 +161,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a6fc268417f47b2b68e99674d12804e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea2ebe188cfe41f7c922eaa4d5d71d72"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#aea2ebe188cfe41f7c922eaa4d5d71d72">_hasPushParameter</a> {false}</td></tr>
 <tr class="separator:aea2ebe188cfe41f7c922eaa4d5d71d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c6df120af6c652b0fbc9412c5292ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a59c6df120af6c652b0fbc9412c5292ce">_mainValueWrittenAfterOpen</a> {false}</td></tr>
+<tr class="separator:a59c6df120af6c652b0fbc9412c5292ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4a864706ad536054a8ee7f4eb5a9005"><td class="memItemLeft" align="right" valign="top">boost::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ac4a864706ad536054a8ee7f4eb5a9005">_pushParameterWriteThread</a></td></tr>
 <tr class="separator:ac4a864706ad536054a8ee7f4eb5a9005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10df5e12741eb5c411e00a32c890c6c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_read_any_group.html">ReadAnyGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a10df5e12741eb5c411e00a32c890c6c2">_pushParameterReadGroup</a></td></tr>
@@ -169,8 +173,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a99642db02be9a5bd2e4ab66eaf13ae5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06473d999eea5f48c29e50d0f2fde094"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a06473d999eea5f48c29e50d0f2fde094">_lastWrittenValue</a></td></tr>
 <tr class="separator:a06473d999eea5f48c29e50d0f2fde094"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1644e5b74820bbd23009aa98031d3ccd"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a1644e5b74820bbd23009aa98031d3ccd">_mx_lastWrittenValue</a></td></tr>
-<tr class="separator:a1644e5b74820bbd23009aa98031d3ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d5b1fc6f9fd2563cb239c990ebb63f"><td class="memItemLeft" align="right" valign="top">std::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ac4d5b1fc6f9fd2563cb239c990ebb63f">_writeMutex</a></td></tr>
+<tr class="separator:ac4d5b1fc6f9fd2563cb239c990ebb63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a098c650c3ae425666d44d59b6a5f259e"><td class="memItemLeft" align="right" valign="top">boost::weak_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html">LogicalNameMappingBackend</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a098c650c3ae425666d44d59b6a5f259e">_backend</a></td></tr>
 <tr class="separator:a098c650c3ae425666d44d59b6a5f259e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab49a8d6b345e1716cd3a82a9b49a84a6"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ab49a8d6b345e1716cd3a82a9b49a84a6">_parameters</a></td></tr>
@@ -248,7 +252,7 @@ Public Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#abccc6cbdd185a2d9b6e705f058bb94f2">ChimeraTK::LNMBackend::AccessorPluginBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_math_plugin_8cc_source.html#l00190">190</a> of file <a class="el" href="_l_n_m_math_plugin_8cc_source.html">LNMMathPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_math_plugin_8cc_source.html#l00199">199</a> of file <a class="el" href="_l_n_m_math_plugin_8cc_source.html">LNMMathPlugin.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -296,7 +300,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_math_plugin_8cc_source.html#l00366">366</a> of file <a class="el" href="_l_n_m_math_plugin_8cc_source.html">LNMMathPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_math_plugin_8cc_source.html#l00392">392</a> of file <a class="el" href="_l_n_m_math_plugin_8cc_source.html">LNMMathPlugin.cc</a>.</p>
 
 </div>
 </div>
@@ -327,7 +331,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a09112f5742836feb83f0d62b4d94e967">ChimeraTK::LNMBackend::AccessorPluginBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_math_plugin_8cc_source.html#l00206">206</a> of file <a class="el" href="_l_n_m_math_plugin_8cc_source.html">LNMMathPlugin.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_math_plugin_8cc_source.html#l00215">215</a> of file <a class="el" href="_l_n_m_math_plugin_8cc_source.html">LNMMathPlugin.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -412,6 +416,42 @@ template&lt;typename UserType , typename TargetType &gt; </div>
 
 </div>
 </div>
+<a id="affe8cfc2dc9b0509579173531c8f32bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affe8cfc2dc9b0509579173531c8f32bb">&#9670;&nbsp;</a></span>parameterReadLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::LNMBackend::MathPlugin::parameterReadLoop </td>
+          <td>(</td>
+          <td class="paramtype">boost::barrier &amp;&#160;</td>
+          <td class="paramname"><em>waitUntilThreadLaunched</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_l_n_m_math_plugin_8cc_source.html#l00158">158</a> of file <a class="el" href="_l_n_m_math_plugin_8cc_source.html">LNMMathPlugin.cc</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_affe8cfc2dc9b0509579173531c8f32bb_cgraph.svg" width="100%" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_affe8cfc2dc9b0509579173531c8f32bb_icgraph.svg" width="487" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="af57bd036cb7f628cdd524955adc911b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af57bd036cb7f628cdd524955adc911b9">&#9670;&nbsp;</a></span>updateRegisterInfo()</h2>
 
@@ -444,19 +484,19 @@ template&lt;typename UserType , typename TargetType &gt; </div>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#ae9e3c76b9192a11c7cfcb45f6a269ec8">ChimeraTK::LNMBackend::AccessorPluginBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_l_n_m_math_plugin_8cc_source.html#l00052">52</a> of file <a class="el" href="_l_n_m_math_plugin_8cc_source.html">LNMMathPlugin.cc</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_af57bd036cb7f628cdd524955adc911b9_cgraph.svg" width="519" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_af57bd036cb7f628cdd524955adc911b9_icgraph.svg" width="479" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -476,7 +516,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00167">167</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00179">179</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -492,7 +532,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00171">171</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00183">183</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +548,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00170">170</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00182">182</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -524,7 +564,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00164">164</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00168">168</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -540,7 +580,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00159">159</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00162">162</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -556,7 +596,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00158">158</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00161">161</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -572,23 +612,23 @@ template&lt;typename UserType , typename TargetType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00165">165</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00169">169</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
-<a id="a1644e5b74820bbd23009aa98031d3ccd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1644e5b74820bbd23009aa98031d3ccd">&#9670;&nbsp;</a></span>_mx_lastWrittenValue</h2>
+<a id="a59c6df120af6c652b0fbc9412c5292ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59c6df120af6c652b0fbc9412c5292ce">&#9670;&nbsp;</a></span>_mainValueWrittenAfterOpen</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::mutex ChimeraTK::LNMBackend::MathPlugin::_mx_lastWrittenValue</td>
+          <td class="memname">bool ChimeraTK::LNMBackend::MathPlugin::_mainValueWrittenAfterOpen {false}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00166">166</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00163">163</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -604,7 +644,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00169">169</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00181">181</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -620,7 +660,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00163">163</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00167">167</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -636,7 +676,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00161">161</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00165">165</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -652,7 +692,23 @@ template&lt;typename UserType , typename TargetType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00160">160</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00164">164</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
+
+</div>
+</div>
+<a id="ac4d5b1fc6f9fd2563cb239c990ebb63f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4d5b1fc6f9fd2563cb239c990ebb63f">&#9670;&nbsp;</a></span>_writeMutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::recursive_mutex ChimeraTK::LNMBackend::MathPlugin::_writeMutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_l_n_m_accessor_plugin_8h_source.html#l00178">178</a> of file <a class="el" href="_l_n_m_accessor_plugin_8h_source.html">LNMAccessorPlugin.h</a>.</p>
 
 </div>
 </div>
@@ -666,7 +722,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html">LNMBackend</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html">MathPlugin</a></li>
-    <li class="footer">Generated on Wed Mar 23 2022 04:53:27 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Mar 26 2022 04:53:20 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

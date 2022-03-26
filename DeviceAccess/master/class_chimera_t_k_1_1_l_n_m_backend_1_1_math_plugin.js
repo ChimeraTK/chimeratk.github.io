@@ -6,6 +6,7 @@ var class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin =
     [ "exceptionHook", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a262a1cfcaeb8694bab48f2781a276219", null ],
     [ "getTargetDataType", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a0b4c026d688a81624526cde1ec98a73a", null ],
     [ "openHook", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a0a99fa66c9020f37c2daefe4cb8ce47a", null ],
+    [ "parameterReadLoop", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#affe8cfc2dc9b0509579173531c8f32bb", null ],
     [ "updateRegisterInfo", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#af57bd036cb7f628cdd524955adc911b9", null ],
     [ "_backend", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a098c650c3ae425666d44d59b6a5f259e", null ],
     [ "_enablePushParameters", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a4bb9a0035fe429d3b5113b2ad75964e5", null ],
@@ -14,9 +15,10 @@ var class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin =
     [ "_hasPushParameter", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#aea2ebe188cfe41f7c922eaa4d5d71d72", null ],
     [ "_isWrite", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a6fc268417f47b2b68e99674d12804e64", null ],
     [ "_lastWrittenValue", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a06473d999eea5f48c29e50d0f2fde094", null ],
-    [ "_mx_lastWrittenValue", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a1644e5b74820bbd23009aa98031d3ccd", null ],
+    [ "_mainValueWrittenAfterOpen", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a59c6df120af6c652b0fbc9412c5292ce", null ],
     [ "_parameters", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ab49a8d6b345e1716cd3a82a9b49a84a6", null ],
     [ "_pushParameterAccessorMap", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a30296fb8ab85f26dca4070063c1c16a9", null ],
     [ "_pushParameterReadGroup", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a10df5e12741eb5c411e00a32c890c6c2", null ],
-    [ "_pushParameterWriteThread", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ac4a864706ad536054a8ee7f4eb5a9005", null ]
+    [ "_pushParameterWriteThread", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ac4a864706ad536054a8ee7f4eb5a9005", null ],
+    [ "_writeMutex", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ac4d5b1fc6f9fd2563cb239c990ebb63f", null ]
 ];
