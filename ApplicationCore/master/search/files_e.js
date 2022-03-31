@@ -28,6 +28,7 @@ var searchData=
   ['testlogging_2ecc',['testLogging.cc',['../test_logging_8cc.html',1,'']]],
   ['testmodules_2ecc',['testModules.cc',['../test_modules_8cc.html',1,'']]],
   ['testoptimiseunmappedvariables_2ecc',['testOptimiseUnmappedVariables.cc',['../test_optimise_unmapped_variables_8cc.html',1,'']]],
+  ['testperiodictrigger_2ecc',['testPeriodicTrigger.cc',['../test_periodic_trigger_8cc.html',1,'']]],
   ['testprocessvariablerecovery_2ecc',['testProcessVariableRecovery.cc',['../test_process_variable_recovery_8cc.html',1,'']]],
   ['testpropagatedatafaultflag_2ecc',['testPropagateDataFaultFlag.cc',['../test_propagate_data_fault_flag_8cc.html',1,'']]],
   ['testscriptedinitialisationhandler_2ecc',['testScriptedInitialisationHandler.cc',['../test_scripted_initialisation_handler_8cc.html',1,'']]],

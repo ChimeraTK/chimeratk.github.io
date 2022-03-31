@@ -5,7 +5,8 @@ var hierarchy =
     [ "ChimeraTK::AnyType", "class_chimera_t_k_1_1_any_type.html", null ],
     [ "Application", null, [
       [ "TestApp", "struct_test_app.html", null ],
-      [ "TestApp", "struct_test_app.html", null ]
+      [ "TestApp", "struct_test_app.html", null ],
+      [ "TestApplication< T >", "struct_test_application.html", null ]
     ] ],
     [ "ApplicationBase", null, [
       [ "ChimeraTK::Application", "class_chimera_t_k_1_1_application.html", [
@@ -95,6 +96,9 @@ var hierarchy =
       ] ]
     ] ],
     [ "ChimeraTK::ApplicationCoreTemplateUserTypeMap< TemplateClass >", "class_chimera_t_k_1_1_application_core_template_user_type_map.html", null ],
+    [ "ApplicationModule", null, [
+      [ "TestModule< T >", "struct_test_module.html", null ]
+    ] ],
     [ "ChimeraTK::Array", "struct_chimera_t_k_1_1_array.html", null ],
     [ "ChimeraTK::ConfigReader::Array< T >", "struct_chimera_t_k_1_1_config_reader_1_1_array.html", null ],
     [ "ChimeraTK::ArrayFunctorFill", "struct_chimera_t_k_1_1_array_functor_fill.html", null ],
@@ -290,7 +294,9 @@ var hierarchy =
               [ "ChimeraTK::StatusAggregator::StatusOutputGroup", "struct_chimera_t_k_1_1_status_aggregator_1_1_status_output_group.html", null ],
               [ "ChimeraTK::ModifyHierarchy< ChimeraTK::ScalarOutput< int > >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
               [ "ChimeraTK::ModifyHierarchy< ChimeraTK::ScalarOutput< std::string > >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
+              [ "ChimeraTK::ModifyHierarchy< ChimeraTK::ScalarOutput< uint64_t > >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
               [ "ChimeraTK::ModifyHierarchy< ChimeraTK::ScalarPollInput< int > >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
+              [ "ChimeraTK::ModifyHierarchy< ChimeraTK::ScalarPollInput< uint32_t > >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
               [ "ChimeraTK::ModifyHierarchy< ChimeraTK::ScalarPushInput< int > >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
               [ "ChimeraTK::ModifyHierarchy< ChimeraTK::ScalarPushInput< T > >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
               [ "ChimeraTK::ModifyHierarchy< ChimeraTK::StatusOutput >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
