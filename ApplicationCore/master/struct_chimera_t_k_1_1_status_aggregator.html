@@ -427,9 +427,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aaf50679c1f4cab57af9c2b66d5d750aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#aaf50679c1f4cab57af9c2b66d5d750aa">scanAndPopulateFromHierarchyLevel</a> (<a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> &amp;module, const std::string &amp;namePrefix)</td></tr>
 <tr class="memdesc:aaf50679c1f4cab57af9c2b66d5d750aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for populateStatusInput.  <a href="#aaf50679c1f4cab57af9c2b66d5d750aa">More...</a><br /></td></tr>
 <tr class="separator:aaf50679c1f4cab57af9c2b66d5d750aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a426609321471dc10307dcd873c888ba9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#a426609321471dc10307dcd873c888ba9">getPriority</a> (<a class="el" href="struct_chimera_t_k_1_1_status_accessor_base.html#a2cb26eb708491cef93d4bb358db711dd">StatusOutput::Status</a> status)</td></tr>
-<tr class="memdesc:a426609321471dc10307dcd873c888ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert Status value into a priority (high integer value = high priority), depending on chosen PriorityMode Return value of -1 has the special meaning that the input Status's must be all equal, otherwise it must result in a warning Status.  <a href="#a426609321471dc10307dcd873c888ba9">More...</a><br /></td></tr>
-<tr class="separator:a426609321471dc10307dcd873c888ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77531f83df97984df96fa8eef7fde128"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#a77531f83df97984df96fa8eef7fde128">getPriority</a> (<a class="el" href="struct_chimera_t_k_1_1_status_accessor_base.html#a2cb26eb708491cef93d4bb358db711dd">StatusOutput::Status</a> status) const</td></tr>
+<tr class="memdesc:a77531f83df97984df96fa8eef7fde128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert Status value into a priority (high integer value = high priority), depending on chosen PriorityMode Return value of -1 has the special meaning that the input Status's must be all equal, otherwise it must result in a warning Status.  <a href="#a77531f83df97984df96fa8eef7fde128">More...</a><br /></td></tr>
+<tr class="separator:a77531f83df97984df96fa8eef7fde128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_chimera_t_k_1_1_application_module"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_chimera_t_k_1_1_application_module')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></td></tr>
 <tr class="memitem:a1307f3a48b1ab8a14f8efcece2b0c047 inherit pro_methods_class_chimera_t_k_1_1_application_module"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_module.html#a1307f3a48b1ab8a14f8efcece2b0c047">mainLoopWrapper</a> ()</td></tr>
 <tr class="memdesc:a1307f3a48b1ab8a14f8efcece2b0c047 inherit pro_methods_class_chimera_t_k_1_1_application_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">mainLoop()</a>, to execute additional tasks in the thread before entering the main loop.  <a href="class_chimera_t_k_1_1_application_module.html#a1307f3a48b1ab8a14f8efcece2b0c047">More...</a><br /></td></tr>
@@ -749,7 +749,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#abde59a69fac6f2d07b199dfe4ec78b85">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00166">166</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00174">174</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -761,8 +761,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a426609321471dc10307dcd873c888ba9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a426609321471dc10307dcd873c888ba9">&#9670;&nbsp;</a></span>getPriority()</h2>
+<a id="a77531f83df97984df96fa8eef7fde128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77531f83df97984df96fa8eef7fde128">&#9670;&nbsp;</a></span>getPriority()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -775,7 +775,7 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_chimera_t_k_1_1_status_accessor_base.html#a2cb26eb708491cef93d4bb358db711dd">StatusOutput::Status</a>&#160;</td>
           <td class="paramname"><em>status</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -793,7 +793,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_status_aggregator_a426609321471dc10307dcd873c888ba9_icgraph.svg" width="488" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_chimera_t_k_1_1_status_aggregator_a77531f83df97984df96fa8eef7fde128_icgraph.svg" width="488" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -826,7 +826,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8">ChimeraTK::ApplicationModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00130">130</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00131">131</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -1128,7 +1128,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html">StatusAggregator</a></li>
-    <li class="footer">Generated on Fri Apr 1 2022 03:55:29 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Apr 2 2022 03:54:16 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
