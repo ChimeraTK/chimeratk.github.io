@@ -12,7 +12,6 @@ var class_chimera_t_k_1_1_device =
     [ "getMetadataCatalogue", "class_chimera_t_k_1_1_device.html#a1155c5fd9b8f2dd50f2dfc871bcb381f", null ],
     [ "getOneDRegisterAccessor", "class_chimera_t_k_1_1_device.html#aa88ff92b7fa348da80729437dde47f5d", null ],
     [ "getOneDRegisterAccessor", "class_chimera_t_k_1_1_device.html#acb4abc6b05aa9251b9e3c37d77a7f99d", null ],
-    [ "getRegisterAccessor", "class_chimera_t_k_1_1_device.html#a5b506cc49750ca6fba4217edceaba178", null ],
     [ "getRegisterCatalogue", "class_chimera_t_k_1_1_device.html#aa43e1797a29c2bfcfa8d370cbc389cc1", null ],
     [ "getScalarRegisterAccessor", "class_chimera_t_k_1_1_device.html#a953db6616908b17380fb1ace248c5a77", null ],
     [ "getScalarRegisterAccessor", "class_chimera_t_k_1_1_device.html#a4a5651ff6d3e8418ea8e787765346b5d", null ],

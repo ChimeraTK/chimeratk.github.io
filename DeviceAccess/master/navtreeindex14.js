@@ -1,6 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"struct_my_area1.html#a57c9bfdc66867b17188bdc8b6902d3ab":[20,0,54,0],
 "struct_my_area1.html#a61da69d56c012c4ffa25bec4a39e9498":[20,0,54,8],
 "struct_my_area1.html#a8c75ccc54d3b359d0b8cfa7449cc9692":[20,0,54,5],
 "struct_my_area1.html#a958c28f745c91d5728d8e1ace6a0f163":[20,0,54,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX14 =
 "struct_reg_word_firmware_with_math.html#ae98aa0857476b5187daaff1333d81a4e":[20,0,107,1],
 "struct_reg_word_firmware_with_math.html#af010362411e7fe2536881e4e1a08628e":[20,0,107,4],
 "struct_reg_word_firmware_with_math___r.html":[20,0,108],
-"struct_reg_word_firmware_with_math___r.html#a19dd72da11701b6bc8e4ca1e98daf966":[20,0,108,0]
+"struct_reg_word_firmware_with_math___r.html#a19dd72da11701b6bc8e4ca1e98daf966":[20,0,108,0],
+"struct_reg_word_firmware_with_math___r.html#a4c76cc0c1abb4faa5251c5e2594bd5d8":[20,0,108,2]
 };
