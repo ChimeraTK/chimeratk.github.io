@@ -9,7 +9,7 @@ var searchData=
   ['oneup',['oneUp',['../struct_chimera_t_k_1_1_status_monitor_impl.html#a83b0f930b4045a20fffb2bdeef97ec9a',1,'ChimeraTK::StatusMonitorImpl']]],
   ['oneupandhide',['oneUpAndHide',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#a25de03ce90fdde2e8c10ce1e97746511',1,'FirstHierarchy::TestModule::VarGroup::oneUpAndHide()'],['../struct_test_module_with_variable_groups.html#a8503ae1b2f486d670a83183f177436b7',1,'TestModuleWithVariableGroups::oneUpAndHide()'],['../struct_test_module_with_variable_groups2.html#ab19c18ab1b62937d79d913d26cf10f93',1,'TestModuleWithVariableGroups2::oneUpAndHide()']]],
   ['onothing',['oNothing',['../struct_test_module0.html#a7e7f2b92009f97887d8573d2d25095c7',1,'TestModule0']]],
-  ['opsp',['opSP',['../struct_automation.html#a4a08a0e51d5adb3d163709212eff7ecb',1,'Automation::opSP()'],['../struct_automation.html#a6d28e80b6662b738458f8753adc2f837',1,'Automation::opSp()']]],
+  ['opsp',['opSp',['../struct_automation.html#a6d28e80b6662b738458f8753adc2f837',1,'Automation::opSp()'],['../struct_automation.html#a4a08a0e51d5adb3d163709212eff7ecb',1,'Automation::opSP()']]],
   ['out',['out',['../struct_test_app_1_1_b.html#a70abed79933da0b6c2dc338135b17881',1,'TestApp::B::out()'],['../struct_dummy.html#a16e64e8a65ca0908f8ff296f4386df7c',1,'Dummy::out()'],['../struct_dummy_array.html#ad06e2636b7ff81c58daf79cc7728c929',1,'DummyArray::out()']]],
   ['out1',['out1',['../struct_another_poll_test_application_1_1_module.html#a91c4773719b0873df3042dacf5b12cee',1,'AnotherPollTestApplication::Module']]],
   ['out2',['out2',['../struct_another_poll_test_application_1_1_module.html#aac5d1edc76edca157ad4609f18d9fd2f',1,'AnotherPollTestApplication::Module']]],
