@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.0</title>
+<title>ChimeraTK-DeviceAccess: Technical specification: TransferElement V1.1</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,15 +82,13 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Technical specification: <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> V1.0 </div>  </div>
+<div class="title">Technical specification: <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> V1.1 </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><blockquote class="doxtable">
-<p>This version is identical to V1.0RC13 (apart from added introduction).</p>
+<p><b>NOTICE FOR FUTURE RELEASES: AVOID CHANGING THE NUMBERING!</b> The tests refer to the sections, incl.</p>
 </blockquote>
-<blockquote class="doxtable">
-<p><b>NOTICE FOR FUTURE RELEASES: AVOID CHANGING THE NUMBERING!</b> The tests refer to the sections, incl. links and unlinked references from tests or other parts of the specification. These break, or even worse become wrong, when they are not changed consistenty! </p>
-</blockquote>
+<p>links and unlinked references from tests or other parts of the specification. These break, or even worse become wrong, when they are not changed consistenty!</p>
 <p>This document describes the behaviour of the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> base class, the <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor. ">NDRegisterAccessor</a> base class, as well as requirements for all implementations (backends and decorators). The behaviour has been defined such that consistent behaviour with other libraries in the framework is ensured, namely ApplicationCore with the specifications for exception handling, initial value propagation and propagation of the data validity flag.</p>
 <ul>
 <li>1. A <em>process variable</em> is the logical entity which is accessed through the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. Outside this document, it is sometimes also called register.<ul>
@@ -200,10 +198,16 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li>float</li>
 <li>double</li>
 <li>std::string</li>
+<li><a class="el" href="class_chimera_t_k_1_1_boolean.html" title="Wrapper Class to avoid vector&lt;bool&gt; problems. ">ChimeraTK::Boolean</a></li>
+<li><a class="el" href="class_chimera_t_k_1_1_void.html" title="Wrapper Class for void. ">ChimeraTK::Void</a></li>
 </ul>
 </li>
 <li>2.2 Applications select a data type for the buffer via the UserType template argument of Device::getZzzRegisterAccessor() resp. <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a85a134106068b02a89cbfa9a4559ccfc" title="Get a NDRegisterAccessor object from the register name. ">DeviceBackend::getRegisterAccessor()</a>.</li>
-<li>2.3 If needed, the register value is converted between the actual register's data type and the application-selected UserType.</li>
+<li>2.3 If needed, the register value is converted between the actual register's data type and the application-selected UserType.<ul>
+<li>2.3.1 Reading from an actual void register into a UserType which is not <a class="el" href="class_chimera_t_k_1_1_void.html" title="Wrapper Class for void. ">ChimeraTK::Void</a> fills the user buffer with 0. The user buffer has 1 channel with 1 element.</li>
+<li>2.3.2 Writing from a user buffer with <a class="el" href="class_chimera_t_k_1_1_void.html" title="Wrapper Class for void. ">ChimeraTK::Void</a> to an actual non-void value writes 0 to the register. The user buffer matches the register's dimension.</li>
+</ul>
+</li>
 <li>2.4 In read operations, values outside the possible range of the UserType are moved to the nearest possible value (rounding and clamping).<ul>
 <li>2.4.1 The data is marked with <a class="el" href="namespace_chimera_t_k.html#a9a7d226a45242c6825eb7a26235298dfac4ef1e7ec5c765839c8acdd9968542b2" title="The data is considered valid. ">DataValidity::faulty</a> in case of an overflow/underflow.</li>
 </ul>
@@ -559,6 +563,14 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li><a class="anchor" id="transferElement_C_5_2_7_2"></a>5.2.7.2 Thrown in doPreWrite() [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_C_5_2_7_2">U</a>]</li>
 </ul>
 </li>
+<li><a class="anchor" id="transferElement_C_5_2_8"></a>5.2.8 A <a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html" title="Accessor class to read and write scalar registers transparently by using the accessor object like a v...">ScalarRegisterAccessor</a>, <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html" title="Accessor class to read and write registers transparently by using the accessor object like a vector o...">OneDRegisterAccessor</a> or <a class="el" href="class_chimera_t_k_1_1_two_d_register_accessor.html" title="TODO add documentation. ">TwoDRegisterAccessor</a> is instantiated with UserType <a class="el" href="class_chimera_t_k_1_1_void.html" title="Wrapper Class for void. ">ChimeraTK::Void</a>. <a class="el" href="spec__transfer_element.html#transferElement_comment_C_5_2_8">(*)</a><ul>
+<li>Throws in constructor</li>
+</ul>
+</li>
+<li>5.2.9 A read-only <a class="el" href="class_chimera_t_k_1_1_void_register_accessor.html">VoidRegisterAccessor</a> that does not have the wait_for_new_data flag is instantiated.<ul>
+<li>Throws in constructor.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="anchor" id="transferElement_C_5_3"></a>5.3 The information mentioned in 5.2 which determines whether a <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a> is thrown is considered to be constant for each <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>. Only when a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a> is thrown by the <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a>, the information might change and applications are expected to check it again. [<a class="el" href="class_chimera_t_k_1_1_unified_backend_test.html#UnifiedTest_TransferElement_C_5_3">U</a>]<ul>
@@ -587,6 +599,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <li><a class="anchor" id="transferElement_comment_C_5_2_1_1"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_1_1">5.2.1.1</a> It is legal to provide "hidden" registers not present in the catalogue, but a register listed in the catalogue must always work.</li>
 <li><a class="anchor" id="transferElement_comment_C_5_2_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_2">5.2.2</a> This also includes that the offset in a one dimensional case is so large that there are not enough elements left to provide the requested data.</li>
 <li><a class="anchor" id="transferElement_comment_C_5_2_5_2"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_5_2">5.2.5.2</a> The generic tests if a backend is opened, or if an accessor readable or writeable are intentionally not implemented in <a class="el" href="class_chimera_t_k_1_1_transfer_element.html" title="Base class for register accessors which can be part of a TransferGroup. ">TransferElement</a> because they would invovle additional virtual function calls. To avoid these each implementation has to implement the checks in doPreXxx().</li>
+<li><a class="anchor" id="transferElement_comment_C_5_2_8"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_2_8">5.2.8</a> A <a class="el" href="class_chimera_t_k_1_1_void_register_accessor.html">VoidRegisterAccessor</a> has to be used instead.</li>
 <li><a class="anchor" id="transferElement_comment_C_5_3_1"></a><a class="el" href="spec__transfer_element.html#transferElement_C_5_3_1">5.3.1</a> To recover from the <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">ChimeraTK::runtime_error</a>, the application must call open(). At that point, the information is allowed to be changed. If the application fails to recheck the information, a retry of the failed operation will result in a <a class="el" href="class_chimera_t_k_1_1logic__error.html" title="Exception thrown when a logic error has occured. ">ChimeraTK::logic_error</a>. This behaviour follows the requirement to throw logic_errors only in doPreXxx(): if during a transfer the backend discovers that the operation is no longer allowed, a <a class="el" href="class_chimera_t_k_1_1runtime__error.html" title="Exception thrown when a runtime error has occured. ">runtime_error</a> must be thrown.</li>
 </ul>
 <ul>
@@ -631,7 +644,7 @@ $(document).ready(function(){initNavTree('spec__transfer_element.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Apr 5 2022 03:53:32 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Apr 6 2022 03:53:26 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

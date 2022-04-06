@@ -100,12 +100,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9182ffd8795b397438d1fb58aec79886"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_version_number.html#a9182ffd8795b397438d1fb58aec79886">VersionNumber</a> ()</td></tr>
 <tr class="memdesc:a9182ffd8795b397438d1fb58aec79886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor: Generate new unique version number with current time as time stamp.  <a href="#a9182ffd8795b397438d1fb58aec79886">More...</a><br /></td></tr>
 <tr class="separator:a9182ffd8795b397438d1fb58aec79886"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae616becd3977713152152b294230f247"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_version_number.html#ae616becd3977713152152b294230f247">VersionNumber</a> (const <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> &amp;other)</td></tr>
-<tr class="memdesc:ae616becd3977713152152b294230f247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#ae616becd3977713152152b294230f247">More...</a><br /></td></tr>
-<tr class="separator:ae616becd3977713152152b294230f247"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3423d20dac862b970febc6ab5254d7af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_version_number.html#a3423d20dac862b970febc6ab5254d7af">operator=</a> (const <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> &amp;other)</td></tr>
-<tr class="memdesc:a3423d20dac862b970febc6ab5254d7af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the full state of another <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">VersionNumber</a> object.  <a href="#a3423d20dac862b970febc6ab5254d7af">More...</a><br /></td></tr>
-<tr class="separator:a3423d20dac862b970febc6ab5254d7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0087d83bf4d009467a9069c69654b1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_version_number.html#aa0087d83bf4d009467a9069c69654b1a">VersionNumber</a> (const <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> &amp;other)=default</td></tr>
+<tr class="memdesc:aa0087d83bf4d009467a9069c69654b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#aa0087d83bf4d009467a9069c69654b1a">More...</a><br /></td></tr>
+<tr class="separator:aa0087d83bf4d009467a9069c69654b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2a95f5d872eb8c188e5f598299566b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_version_number.html#a3f2a95f5d872eb8c188e5f598299566b">operator=</a> (const <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> &amp;other)=default</td></tr>
+<tr class="memdesc:a3f2a95f5d872eb8c188e5f598299566b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the full state of another <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">VersionNumber</a> object.  <a href="#a3f2a95f5d872eb8c188e5f598299566b">More...</a><br /></td></tr>
+<tr class="separator:a3f2a95f5d872eb8c188e5f598299566b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a994f595256fe422eb71f034091a557a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_version_number.html#a994f595256fe422eb71f034091a557a5">VersionNumber</a> (std::chrono::system_clock::time_point timestamp)</td></tr>
 <tr class="memdesc:a994f595256fe422eb71f034091a557a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate new unique version number with a given time stamp.  <a href="#a994f595256fe422eb71f034091a557a5">More...</a><br /></td></tr>
 <tr class="separator:a994f595256fe422eb71f034091a557a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,11 +171,19 @@ Friends</h2></td></tr>
 <p>Default constructor: Generate new unique version number with current time as time stamp. </p>
 
 <p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00027">27</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_version_number_a9182ffd8795b397438d1fb58aec79886_cgraph.svg" width="464" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
-<a id="ae616becd3977713152152b294230f247"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae616becd3977713152152b294230f247">&#9670;&nbsp;</a></span>VersionNumber() <span class="overload">[2/4]</span></h2>
+<a id="aa0087d83bf4d009467a9069c69654b1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0087d83bf4d009467a9069c69654b1a">&#9670;&nbsp;</a></span>VersionNumber() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,14 +201,12 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Copy constructor. </p>
-
-<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00030">30</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -230,7 +236,7 @@ Friends</h2></td></tr>
 
 <p>Generate new unique version number with a given time stamp. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00040">40</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00036">36</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -261,7 +267,7 @@ Friends</h2></td></tr>
 <p>Create null version number, which is guaranteed to be smaller than all version numbers generated with the default constructor. </p>
 <p>This should be used to initialse version numbers which are never actually used for data transfers (e.g. at application start). The argument is a dummy argument to distinguish the contructor signature. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00047">47</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00043">43</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -291,12 +297,12 @@ Friends</h2></td></tr>
 
 <p>Return the time stamp associated with this version number. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00050">50</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00046">46</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_version_number_a1df1dc5ea2df340957f7b6b6fa8cdcb5_icgraph.svg" width="655" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -329,7 +335,7 @@ Friends</h2></td></tr>
 <p>Conversion into a human readable std::string to allow e.g. </p>
 <p>printing the version number on screen. Do not try to parse the string in any way, the exact format is unspecified. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00069">69</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00065">65</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -357,7 +363,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00060">60</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00056">56</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -385,7 +391,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00062">62</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00058">58</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -413,12 +419,12 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00064">64</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00060">60</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
-<a id="a3423d20dac862b970febc6ab5254d7af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3423d20dac862b970febc6ab5254d7af">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="a3f2a95f5d872eb8c188e5f598299566b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f2a95f5d872eb8c188e5f598299566b">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -436,14 +442,20 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Copy the full state of another <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">VersionNumber</a> object. </p>
-
-<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00033">33</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_version_number_a3f2a95f5d872eb8c188e5f598299566b_icgraph.svg" width="464" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -474,7 +486,7 @@ Friends</h2></td></tr>
 <p>Comparison operators. </p>
 <p>Compare version number only, since they are ordered in time and atomically generated, so the result is logically as expected. The time stamp is not precise and not atomically generated, so comparing it would not be precise. </p>
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00059">59</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00055">55</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -502,7 +514,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00061">61</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00057">57</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -530,7 +542,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00063">63</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device_2include_2_version_number_8h_source.html#l00059">59</a> of file <a class="el" href="device_2include_2_version_number_8h_source.html">VersionNumber.h</a>.</p>
 
 </div>
 </div>
@@ -585,7 +597,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a></li>
-    <li class="footer">Generated on Tue Apr 5 2022 03:53:34 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Apr 6 2022 03:53:28 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
