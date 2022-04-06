@@ -37,6 +37,7 @@ var searchData=
   ['setpublicname',['setPublicName',['../class_chimera_t_k_1_1_variable_network_node.html#a93c6d8185db9dbbaddc4f20c5cf522eb',1,'ChimeraTK::VariableNetworkNode']]],
   ['setreturnchannelslave',['setReturnChannelSlave',['../class_chimera_t_k_1_1_threaded_fan_out_with_return.html#a8b4847a9e301fdd706ec94c4ac56af70',1,'ChimeraTK::ThreadedFanOutWithReturn']]],
   ['setscalardefault',['setScalarDefault',['../class_chimera_t_k_1_1_test_facility.html#aaec541448a82eaf896cf4acbeb16cf24',1,'ChimeraTK::TestFacility']]],
+  ['setthreadname',['setThreadName',['../class_chimera_t_k_1_1_application.html#ae5b7de7b4b345a74358cf392cc1181cd',1,'ChimeraTK::Application']]],
   ['setvaluetype',['setValueType',['../class_chimera_t_k_1_1_variable_network_node.html#a05948328d255d895d91e07b285bf20e0',1,'ChimeraTK::VariableNetworkNode']]],
   ['shutdown',['shutdown',['../class_chimera_t_k_1_1_application.html#acd050c59340807685052276fb053787a',1,'ChimeraTK::Application']]],
   ['startdetectblockedmodules',['startDetectBlockedModules',['../struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a6bee986c978f70b20aa19e558d9c65ff',1,'ChimeraTK::Application::CircularDependencyDetector']]],

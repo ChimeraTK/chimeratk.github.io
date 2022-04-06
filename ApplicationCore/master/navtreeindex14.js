@@ -1,5 +1,8 @@
 var NAVTREEINDEX14 =
 {
+"test_trigger_8cc.html#aae17d3638073297654152058593b98ec":[19,0,10,0,32,4],
+"test_trigger_8cc.html#ab13748297669bba5ab67ca75515cefc6":[19,0,10,0,32,6],
+"test_trigger_8cc.html#ad7a190695f65fe20d6cc1f41799cf84b":[19,0,10,0,32,7],
 "test_trigger_8cc.html#af15a1403f8615df2e03b761a97698938":[19,0,10,0,32,5],
 "test_trigger_8cc_source.html":[19,0,10,0,32],
 "test_variable_group_8cc.html":[19,0,10,0,33],
