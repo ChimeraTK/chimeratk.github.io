@@ -10,7 +10,7 @@ var searchData=
   ['makeunique',['makeUnique',['../class_chimera_t_k_1_1_transfer_element_i_d.html#a4e05a5e6399b1ceb383085b185cb3a5b',1,'ChimeraTK::TransferElementID']]],
   ['makeuniqueid',['makeUniqueId',['../class_chimera_t_k_1_1_transfer_element.html#a833c655eca8c53f5ff0d97c3d81c1376',1,'ChimeraTK::TransferElement']]],
   ['mapexception_2eh',['MapException.h',['../_map_exception_8h.html',1,'']]],
-  ['mapfilename',['mapFileName',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a6490bbf255c0da29018b73113342f83a',1,'ChimeraTK::DeviceInfoMap::DeviceInfo']]],
+  ['mapfilename',['mapFileName',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a6490bbf255c0da29018b73113342f83a',1,'ChimeraTK::DeviceInfoMap::DeviceInfo::mapFileName()'],['../struct_test_parameters.html#a64c7b150036a861800e339586407cf00',1,'TestParameters::mapFileName()']]],
   ['mapfileparser',['MapFileParser',['../class_chimera_t_k_1_1_map_file_parser.html',1,'ChimeraTK']]],
   ['mapfileparser_2ecpp',['MapFileParser.cpp',['../_map_file_parser_8cpp.html',1,'']]],
   ['mapfileparser_2eh',['MapFileParser.h',['../device__backends_2_numeric_addressed_backend_2include_2_map_file_parser_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_map_file_parser_8h.html',1,'(Global Namespace)']]],

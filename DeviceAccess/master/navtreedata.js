@@ -119,14 +119,14 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_xdma_backend.html#affd02be57cac49a6c7eb0567c3e4234e",
 "classmy_register_info.html#a91a84451c482c514214f1e2bf49d977e",
 "dir_f26bb000a1e1043e70c2db11ab15aafc.html",
-"mtca4u__compatibility__headers_2_numeric_addressed_backend_register_accessor_8h_source.html",
-"struct_chimera_t_k_1_1_dummy_protocol1.html#a4b069fe0d9e019addd3fd1668bb31632",
-"struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper.html#acb01c632c0636aa8ac392690e3674253",
-"struct_my_area1.html#a61da69d56c012c4ffa25bec4a39e9498",
-"struct_reg_word_firmware_with_math___r.html#a4fb589ea22eb1afe9d112e53cd0bd8ef",
-"test_dummy_register_accessor_8cpp_source.html",
-"test_rebot_backend_8cpp.html#a19823c5af9fff4070c144dacf022bf94",
-"util_2include_2_supported_user_types_8h.html#ae7a8921ab1ff250afdd79cc5f3c70fea"
+"mtca4u__compatibility__headers_2_numeric_addressed_backend_muxed_register_accessor_8h_source.html",
+"struct_chimera_t_k_1_1_dummy_protocol1.html#a27cdf2f6f4f5aa923822bde4ef6644c6",
+"struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper.html",
+"struct_my_area1.html#a53c17123f20c464a6a962e34d69603db",
+"struct_reg_word_firmware_with_math___r.html#a19dd72da11701b6bc8e4ca1e98daf966",
+"test_dummy_backend_unified_8cc.html#a139f00d2466d591f60b8d6a73c8273f1",
+"test_pcie_error_handling_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1",
+"util_2include_2_supported_user_types_8h.html#a6e202e989c52cc471484fa2f1864e3db"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

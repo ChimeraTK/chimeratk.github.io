@@ -12,6 +12,9 @@ var searchData=
   ['delay',['delay',['../class_test_dummy.html#a72ef645efb10190c2c01a38d8c901d71',1,'TestDummy']]],
   ['derived',['derived',['../struct_register_descriptor_base.html#ace6f5037e321e4955af042f265fb0537',1,'RegisterDescriptorBase::derived()'],['../struct_short_raw__base.html#a939dcd1eb49724e0e7b6c7090106b141',1,'ShortRaw_base::derived()'],['../struct_integers__base.html#a1e578e58e8b8961ab6f106122280ea19',1,'Integers_base::derived()']]],
   ['device',['device',['../test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35',1,'testExceptionDummyDevice.cc']]],
+  ['devicealias',['deviceAlias',['../struct_test_parameters.html#a779318d4a88a0ea8c2c350ca247c158d',1,'TestParameters']]],
+  ['deviceinvalidalias',['deviceInvalidAlias',['../struct_test_parameters.html#a4fdc31cbc7002d1418f8ff2ce90560d3',1,'TestParameters']]],
+  ['devicemixedalias',['deviceMixedAlias',['../struct_test_parameters.html#a0ac4f0788d0c981e0172e2622c173168',1,'TestParameters']]],
   ['devicename',['deviceName',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ab574ea38cd9b4463f5f32aeac3d749de',1,'ChimeraTK::LNMBackendRegisterInfo::deviceName()'],['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#aececd6f51fac87a98c4d5f6a57ab1011',1,'ChimeraTK::DeviceInfoMap::DeviceInfo::deviceName()']]],
   ['dma_5fcmd',['dma_cmd',['../structdevice__ioctrl__dma.html#a5cce7fa7327b8572fba52bdf18d14b0f',1,'device_ioctrl_dma']]],
   ['dma_5foffset',['dma_offset',['../structdevice__ioctrl__dma.html#afcf57847c512e334f1a83bd89be950fd',1,'device_ioctrl_dma']]],
@@ -20,6 +23,7 @@ var searchData=
   ['dma_5freserved2',['dma_reserved2',['../structdevice__ioctrl__dma.html#a0796ba7e60f5ed15719a885a871101c5',1,'device_ioctrl_dma']]],
   ['dma_5fsize',['dma_size',['../structdevice__ioctrl__dma.html#a32b3b16303be485dc116787dc4564bdd',1,'device_ioctrl_dma']]],
   ['dmaareasize',['dmaAreaSize',['../struct__pcieuni__ioctl__bar__sizes.html#a5965724071c9397c5319ef10e9ebf5fa',1,'_pcieuni_ioctl_bar_sizes']]],
+  ['dmapfile',['dmapFile',['../struct_test_parameters.html#a3f89355a4fa5d9f8b093dc4a3b3a347d',1,'TestParameters']]],
   ['dmapfilelinenumber',['dmapFileLineNumber',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#aab8018e944f04b3dea79982f9ff02f5d',1,'ChimeraTK::DeviceInfoMap::DeviceInfo']]],
   ['dmapfilename',['dmapFileName',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a563737aed65226e0717444c4a6c75f37',1,'ChimeraTK::DeviceInfoMap::DeviceInfo']]]
 ];

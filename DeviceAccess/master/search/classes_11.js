@@ -9,6 +9,7 @@ var searchData=
   ['testcapabilities',['TestCapabilities',['../struct_chimera_t_k_1_1_test_capabilities.html',1,'ChimeraTK']]],
   ['testdummy',['TestDummy',['../class_test_dummy.html',1,'']]],
   ['testlocker',['TestLocker',['../struct_test_locker.html',1,'']]],
+  ['testparameters',['TestParameters',['../struct_test_parameters.html',1,'']]],
   ['threadinformermutex',['ThreadInformerMutex',['../struct_chimera_t_k_1_1_thread_informer_mutex.html',1,'ChimeraTK']]],
   ['transferelement',['TransferElement',['../class_chimera_t_k_1_1_transfer_element.html',1,'ChimeraTK']]],
   ['transferelementabstractor',['TransferElementAbstractor',['../class_chimera_t_k_1_1_transfer_element_abstractor.html',1,'ChimeraTK']]],

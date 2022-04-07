@@ -13,6 +13,7 @@ var test_map_file_parser_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "test_map_file_parser_8cpp.html#ac0c895e7688502e0d80dcf66a2913485", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_map_file_parser_8cpp.html#a4944ecfaf5fea9c12fea267affbdd8b0", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_map_file_parser_8cpp.html#a5cbfe2e88c6f4527ffb222ba1e406585", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_map_file_parser_8cpp.html#a51db5eac284b3e4a1cf9060abb581702", null ],
     [ "compareCatalogue", "test_map_file_parser_8cpp.html#ac85b7ab8de427ed1f21bc704fff7a6b0", null ],
     [ "printRegInfo", "test_map_file_parser_8cpp.html#a5807aba63f58ad25dd82fa3319ac77ed", null ]
 ];

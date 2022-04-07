@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper.html":[20,0,1,117,13],
+"struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper.html#a54d30c5c81dc08a487fb0e05467538d2":[20,0,1,117,13,1],
 "struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper.html#acb01c632c0636aa8ac392690e3674253":[20,0,1,117,13,0],
 "struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper_3_01_t_00_01false_01_4.html":[20,0,1,117,14],
 "struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper_3_01_t_00_01false_01_4.html#a51c1a7b7ff7033155a00b23ff9664fbe":[20,0,1,117,14,1],
@@ -108,8 +110,8 @@ var NAVTREEINDEX13 =
 "struct_integers__signed32.html#aca4e105f7f1611da71bcb8ad9d5854f2":[20,0,41,9],
 "struct_integers__signed32.html#ae0b5a2830661b161ba0056d5c3409063":[20,0,41,7],
 "struct_integers__signed32.html#ae0b5a2830661b161ba0056d5c3409063":[20,0,41,6],
-"struct_integers__signed32.html#af1552dd040ac8b52ea20a6dfe5b99386":[20,0,41,11],
 "struct_integers__signed32.html#af1552dd040ac8b52ea20a6dfe5b99386":[20,0,41,12],
+"struct_integers__signed32.html#af1552dd040ac8b52ea20a6dfe5b99386":[20,0,41,11],
 "struct_integers__signed32.html#af9682a9bf7a41431125cce414a59ecb6":[20,0,41,5],
 "struct_integers__signed32.html#af9682a9bf7a41431125cce414a59ecb6":[20,0,41,4],
 "struct_integers__signed32___dummy_writable.html":[20,0,44],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "struct_muxed_nodma_async.html#ae009802f4ac0d26fb7b306ef90739674":[20,0,53,6],
 "struct_my_area1.html":[20,0,54],
 "struct_my_area1.html#a184b2dd55f6d3dcb16300ce48c017882":[20,0,54,6],
-"struct_my_area1.html#a1f1998eec28e954bad1c2979e968186a":[20,0,54,2],
-"struct_my_area1.html#a53c17123f20c464a6a962e34d69603db":[20,0,54,7],
-"struct_my_area1.html#a57c9bfdc66867b17188bdc8b6902d3ab":[20,0,54,0]
+"struct_my_area1.html#a1f1998eec28e954bad1c2979e968186a":[20,0,54,2]
 };
