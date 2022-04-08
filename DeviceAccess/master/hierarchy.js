@@ -320,6 +320,9 @@ var hierarchy =
     [ "ParserUtilsTestClass", "class_parser_utils_test_class.html", null ],
     [ "PcieBackendTest", "class_pcie_backend_test.html", null ],
     [ "ChimeraTK::LNMVariable::ValueTable< T >::QueuedValue", "struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table_1_1_queued_value.html", null ],
+    [ "RawToCookedProvider_Var1", "struct_raw_to_cooked_provider___var1.html", null ],
+    [ "RawToCookedProvider_Var2", "struct_raw_to_cooked_provider___var2.html", null ],
+    [ "RawToCookedProvider_x", "struct_raw_to_cooked_provider__x.html", null ],
     [ "ChimeraTK::ReadAnyGroup", "class_chimera_t_k_1_1_read_any_group.html", null ],
     [ "ChimeraTK::RebotDummyServer", "class_chimera_t_k_1_1_rebot_dummy_server.html", null ],
     [ "ChimeraTK::RebotProtocolImplementor", "struct_chimera_t_k_1_1_rebot_protocol_implementor.html", [
@@ -343,7 +346,9 @@ var hierarchy =
         [ "BitRegisterDescriptorBase< Derived >", "struct_bit_register_descriptor_base.html", null ],
         [ "ScalarRegisterDescriptorBase< Derived >", "struct_scalar_register_descriptor_base.html", [
           [ "RegSingleWordScaled< Derived >", "struct_reg_single_word_scaled.html", null ],
-          [ "RegVariableAsPushParameterInMathBase< Derived >", "struct_reg_variable_as_push_parameter_in_math_base.html", null ],
+          [ "RegVariableAsPushParameterInMathBase< Derived, RawToCookedProvider >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+            [ "RegVariableAsPushParameterInMath_not_written< Derived, RawToCookedProvider >", "struct_reg_variable_as_push_parameter_in_math__not__written.html", null ]
+          ] ],
           [ "RegWordFirmwareWithMath< Derived >", "struct_reg_word_firmware_with_math.html", null ]
         ] ],
         [ "VariableRegisterDescriptorBase< Derived >", "struct_variable_register_descriptor_base.html", null ]
@@ -508,8 +513,30 @@ var hierarchy =
     [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_var1 >", "struct_register_descriptor_base.html", [
       [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1 >", "struct_one_d_register_descriptor_base.html", [
         [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1 >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_var1 >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_var1, RawToCookedProvider_Var1 >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
             [ "RegVariableAsPushParameterInMath_var1", "struct_reg_variable_as_push_parameter_in_math__var1.html", null ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written1 >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written1 >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written1 >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_var1_not_written1, RawToCookedProvider_Var1 >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+            [ "RegVariableAsPushParameterInMath_not_written< RegVariableAsPushParameterInMath_var1_not_written1, RawToCookedProvider_Var1 >", "struct_reg_variable_as_push_parameter_in_math__not__written.html", [
+              [ "RegVariableAsPushParameterInMath_var1_not_written1", "struct_reg_variable_as_push_parameter_in_math__var1__not__written1.html", null ]
+            ] ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written2 >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written2 >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written2 >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_var1_not_written2, RawToCookedProvider_Var1 >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+            [ "RegVariableAsPushParameterInMath_not_written< RegVariableAsPushParameterInMath_var1_not_written2, RawToCookedProvider_Var1 >", "struct_reg_variable_as_push_parameter_in_math__not__written.html", [
+              [ "RegVariableAsPushParameterInMath_var1_not_written2", "struct_reg_variable_as_push_parameter_in_math__var1__not__written2.html", null ]
+            ] ]
           ] ]
         ] ]
       ] ]
@@ -517,7 +544,7 @@ var hierarchy =
     [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_var2 >", "struct_register_descriptor_base.html", [
       [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_var2 >", "struct_one_d_register_descriptor_base.html", [
         [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_var2 >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_var2 >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_var2, RawToCookedProvider_Var2 >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
             [ "RegVariableAsPushParameterInMath_var2", "struct_reg_variable_as_push_parameter_in_math__var2.html", null ]
           ] ]
         ] ]
@@ -526,8 +553,30 @@ var hierarchy =
     [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_register_descriptor_base.html", [
       [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_one_d_register_descriptor_base.html", [
         [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_x >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_x, RawToCookedProvider_x >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
             [ "RegVariableAsPushParameterInMath_x", "struct_reg_variable_as_push_parameter_in_math__x.html", null ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written1 >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written1 >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written1 >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_x_not_written1, RawToCookedProvider_x >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+            [ "RegVariableAsPushParameterInMath_not_written< RegVariableAsPushParameterInMath_x_not_written1, RawToCookedProvider_x >", "struct_reg_variable_as_push_parameter_in_math__not__written.html", [
+              [ "RegVariableAsPushParameterInMath_x_not_written1", "struct_reg_variable_as_push_parameter_in_math__x__not__written1.html", null ]
+            ] ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
+    [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written2 >", "struct_register_descriptor_base.html", [
+      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written2 >", "struct_one_d_register_descriptor_base.html", [
+        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written2 >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_x_not_written2, RawToCookedProvider_x >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+            [ "RegVariableAsPushParameterInMath_not_written< RegVariableAsPushParameterInMath_x_not_written2, RawToCookedProvider_x >", "struct_reg_variable_as_push_parameter_in_math__not__written.html", [
+              [ "RegVariableAsPushParameterInMath_x_not_written2", "struct_reg_variable_as_push_parameter_in_math__x__not__written2.html", null ]
+            ] ]
           ] ]
         ] ]
       ] ]
@@ -580,8 +629,8 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "ChimeraTK::RegisterInfo", "class_chimera_t_k_1_1_register_info.html", null ],
     [ "ChimeraTK::RebotProtocol0::RegisterInfo", "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html", null ],
+    [ "ChimeraTK::RegisterInfo", "class_chimera_t_k_1_1_register_info.html", null ],
     [ "ChimeraTK::RegisterPath", "class_chimera_t_k_1_1_register_path.html", null ],
     [ "RegisterPathTest", "class_register_path_test.html", null ],
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, DestType >::Round< S >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html", null ],
@@ -669,10 +718,10 @@ var hierarchy =
     [ "ChimeraTK::Utilities", "class_chimera_t_k_1_1_utilities.html", null ],
     [ "ChimeraTK::LNMVariable::ValueTable< T >", "struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html", null ],
     [ "ChimeraTK::LNMVariable::ValueTable< UserType >", "struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html", null ],
-    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
-    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
+    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
+    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
     [ "ChimeraTK::VersionNumber", "class_chimera_t_k_1_1_version_number.html", null ],
     [ "VersionNumberTest", "class_version_number_test.html", null ],
     [ "ChimeraTK::Void", "class_chimera_t_k_1_1_void.html", null ],
