@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['boost_5ftest_5fmodule',['BOOST_TEST_MODULE',['../test_backend_creation_8cpp.html#a6b2a3852db8bb19ab6909bac01859985',1,'testBackendCreation.cpp']]]
+  ['boost_5fno_5fexceptions',['BOOST_NO_EXCEPTIONS',['../test_virtual_lab_8cpp.html#ad9e644e01e76c0a2b950bac6e3d2cf0e',1,'testVirtualLab.cpp']]]
 ];
