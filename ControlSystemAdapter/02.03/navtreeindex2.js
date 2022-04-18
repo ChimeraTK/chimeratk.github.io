@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"struct_test_register.html#a63201794d3ebba8a1540c571fb3c7022":[2,0,23,7],
 "struct_test_register.html#a841f7ed1056c2dc425407a9e2fd6e13a":[2,0,23,1],
 "struct_test_register.html#aa53f3a33ddde296cba0824fd910ac953":[2,0,23,3],
 "struct_test_register.html#acbc1b918daab01a092e254ad2ca9e18b":[2,0,23,10],
@@ -160,6 +161,7 @@ var NAVTREEINDEX2 =
 "test_unified_type_changing_decorator_8cpp.html":[3,0,3,1,12],
 "test_unified_type_changing_decorator_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[3,0,3,1,12,9],
 "test_unified_type_changing_decorator_8cpp.html#a9f5533e72ee880d6d818844f51879211":[3,0,3,1,12,10],
+"test_unified_type_changing_decorator_8cpp.html#aeac2e3cb19a2c57275266ff5eff5553a":[3,0,3,1,12,11],
 "test_unified_type_changing_decorator_8cpp_source.html":[3,0,3,1,12],
 "to_double_8h.html":[3,0,3,1,13],
 "to_double_8h.html#a0ae21402a5ffb651ae173affd1354918":[3,0,3,1,13,0],
