@@ -13,6 +13,7 @@ var struct_chimera_t_k_1_1_config_reader =
     [ "createArray", "struct_chimera_t_k_1_1_config_reader.html#afba6fa48bc3f8a00adae168e72e6f2e0", null ],
     [ "createVar", "struct_chimera_t_k_1_1_config_reader.html#a4d05f33a9e1cec75914953c25c51e6ce", null ],
     [ "get", "struct_chimera_t_k_1_1_config_reader.html#ad2b1bb3c5c4a974bce539fc4cd194793", null ],
+    [ "get", "struct_chimera_t_k_1_1_config_reader.html#a7c395bf7f08f6a8a8ab692b1c0f92499", null ],
     [ "get_impl", "struct_chimera_t_k_1_1_config_reader.html#ae0d987890819fc887d81cfc296da4de0", null ],
     [ "get_impl", "struct_chimera_t_k_1_1_config_reader.html#ac920876035406f5266007c95398ef782", null ],
     [ "mainLoop", "struct_chimera_t_k_1_1_config_reader.html#a0f1e483debabad5572efe57e0b1f13b9", null ],
