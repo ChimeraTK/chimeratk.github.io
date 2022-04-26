@@ -18,7 +18,7 @@ var searchData=
   ['limitvaluemodulebase',['LimitValueModuleBase',['../struct_chimera_t_k_1_1_limit_value_module_base.html',1,'ChimeraTK']]],
   ['log',['log',['../structtest_app.html#ac9aec5e153e9f98518a4d14b25f9f1d6',1,'testApp']]],
   ['logfile',['logFile',['../classlogging_1_1_logging_module.html#ae90e453ff52bc721d16da109a5270f0f',1,'logging::LoggingModule']]],
-  ['logger',['Logger',['../classlogging_1_1_logger.html',1,'logging::Logger'],['../struct_dummy_module.html#a3b16300f4de3e7634f91c8b42d92410b',1,'DummyModule::logger()'],['../classlogging_1_1_logger.html#a87cd7a6981b805533c717053ae412cd0',1,'logging::Logger::Logger()'],['../classlogging_1_1_logger.html#a7a759481f080e2ba9598a5b7a83dc725',1,'logging::Logger::Logger(ctk::Module *module, const std::string &amp;tag=&quot;Logging&quot;)']]],
+  ['logger',['Logger',['../classlogging_1_1_logger.html',1,'logging::Logger'],['../classlogging_1_1_logger.html#a87cd7a6981b805533c717053ae412cd0',1,'logging::Logger::Logger()'],['../classlogging_1_1_logger.html#a7a759481f080e2ba9598a5b7a83dc725',1,'logging::Logger::Logger(ctk::Module *module, const std::string &amp;tag=&quot;Logging&quot;)'],['../struct_dummy_module.html#a3b16300f4de3e7634f91c8b42d92410b',1,'DummyModule::logger()']]],
   ['logging',['logging',['../namespacelogging.html',1,'']]],
   ['logging_2ecc',['Logging.cc',['../_logging_8cc.html',1,'']]],
   ['logging_2eh',['Logging.h',['../_logging_8h.html',1,'']]],

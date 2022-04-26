@@ -17,7 +17,7 @@ var searchData=
   ['test6_5fc_5finitialvalueeceptiondummy',['Test6_c_InitialValueEceptionDummy',['../struct_test6__c___initial_value_eception_dummy.html',1,'']]],
   ['test7dummyapplication',['Test7DummyApplication',['../struct_test7_dummy_application.html',1,'']]],
   ['testablemodeaccessordecorator',['TestableModeAccessorDecorator',['../class_chimera_t_k_1_1_testable_mode_accessor_decorator.html',1,'ChimeraTK']]],
-  ['testapp',['TestApp',['../struct_test_app.html',1,'TestApp'],['../structtest_app.html',1,'testApp&lt; UserType &gt;']]],
+  ['testapp',['testApp',['../structtest_app.html',1,'testApp&lt; UserType &gt;'],['../struct_test_app.html',1,'TestApp']]],
   ['testapparray',['testAppArray',['../structtest_app_array.html',1,'']]],
   ['testappdev',['testAppDev',['../structtest_app_dev.html',1,'']]],
   ['testapplication',['TestApplication',['../struct_test_application.html',1,'']]],

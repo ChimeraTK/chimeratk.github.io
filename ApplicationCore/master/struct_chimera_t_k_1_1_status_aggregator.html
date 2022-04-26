@@ -321,9 +321,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a026326ec49e0aa40d8e14002f197f04c inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#a026326ec49e0aa40d8e14002f197f04c">getCircularNetworkHash</a> () override</td></tr>
 <tr class="memdesc:a026326ec49e0aa40d8e14002f197f04c inherit pub_methods_class_chimera_t_k_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of the circular dependency network (0 if none).  <a href="class_chimera_t_k_1_1_module.html#a026326ec49e0aa40d8e14002f197f04c">More...</a><br /></td></tr>
 <tr class="separator:a026326ec49e0aa40d8e14002f197f04c inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1b039da6906085a906e4d59509a4de9 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#ae1b039da6906085a906e4d59509a4de9">findApplicationModule</a> ()</td></tr>
-<tr class="memdesc:ae1b039da6906085a906e4d59509a4de9 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> owner.  <a href="class_chimera_t_k_1_1_module.html#ae1b039da6906085a906e4d59509a4de9">More...</a><br /></td></tr>
-<tr class="separator:ae1b039da6906085a906e4d59509a4de9 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d74e2a65968f8edba29ec86f342f95 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#a61d74e2a65968f8edba29ec86f342f95">findApplicationModule</a> ()</td></tr>
+<tr class="memdesc:a61d74e2a65968f8edba29ec86f342f95 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> owner.  <a href="class_chimera_t_k_1_1_module.html#a61d74e2a65968f8edba29ec86f342f95">More...</a><br /></td></tr>
+<tr class="separator:a61d74e2a65968f8edba29ec86f342f95 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_entity_owner"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_entity_owner')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_entity_owner.html">ChimeraTK::EntityOwner</a></td></tr>
 <tr class="memitem:a09942e9c8257992cdd05027c437f8a4c inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a09942e9c8257992cdd05027c437f8a4c">EntityOwner</a> (const std::string &amp;name, const std::string &amp;description, <a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0">HierarchyModifier</a> hierarchyModifier=<a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0a334c4a4c42fdb79d7ebc3e73b517e6f8">HierarchyModifier::none</a>, const std::unordered_set&lt; std::string &gt; &amp;tags={})</td></tr>
 <tr class="memdesc:a09942e9c8257992cdd05027c437f8a4c inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: Create <a class="el" href="class_chimera_t_k_1_1_entity_owner.html" title="Base class for owners of other EntityOwners (e.g. ">EntityOwner</a> by the given name with the given description.  <a href="class_chimera_t_k_1_1_entity_owner.html#a09942e9c8257992cdd05027c437f8a4c">More...</a><br /></td></tr>
@@ -622,7 +622,7 @@ Additional Inherited Members</h2></td></tr>
 <p>outputTags is the list of tags which is attached to the aggregated output. This tag has no influence on the aggregation. Other StatusAggregators will aggregate the output based on the tagsToAggregate, not based on the outputTags. Any number of tags can be specified here. Typically no tag is specified (even if tagsToAggregate contains a tag), unless the output needs special treatment somewhere else (e.g. if it is included in the MicroDAQ system searching for a particular tag).</p>
 <p>Note: The constructor will search for StatusOutputs to be aggregated. It can only find what has been constructed already. Make sure all StatusOutputs to be aggregated are constructed before this aggregator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00011">11</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00012">12</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -749,7 +749,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#abde59a69fac6f2d07b199dfe4ec78b85">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00174">174</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00183">183</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -787,7 +787,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Convert Status value into a priority (high integer value = high priority), depending on chosen PriorityMode Return value of -1 has the special meaning that the input Status's must be all equal, otherwise it must result in a warning Status. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00116">116</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00125">125</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -826,7 +826,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8">ChimeraTK::ApplicationModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00131">131</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00140">140</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -889,7 +889,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Recursivly search for StatusMonitors and other StatusAggregators. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00030">30</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00031">31</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -945,7 +945,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Helper for populateStatusInput. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00042">42</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00051">51</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -1128,7 +1128,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html">StatusAggregator</a></li>
-    <li class="footer">Generated on Fri Apr 22 2022 03:55:36 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Apr 26 2022 03:54:23 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -123,6 +123,7 @@ var menudata={children:[
 {text:"i",url:"functions_rela.html#index_i"},
 {text:"m",url:"functions_rela.html#index_m"},
 {text:"p",url:"functions_rela.html#index_p"},
+{text:"s",url:"functions_rela.html#index_s"},
 {text:"t",url:"functions_rela.html#index_t"},
 {text:"v",url:"functions_rela.html#index_v"},
 {text:"x",url:"functions_rela.html#index_x"}]}]}]},
