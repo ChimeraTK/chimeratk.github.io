@@ -19,5 +19,6 @@ var struct_chimera_t_k_1_1_status_aggregator =
     [ "_inputs", "struct_chimera_t_k_1_1_status_aggregator.html#afd16005e1ada056d7102d6f645d47e80", null ],
     [ "_mode", "struct_chimera_t_k_1_1_status_aggregator.html#a909230dde3ffa65085ee1ee62122af4e", null ],
     [ "_output", "struct_chimera_t_k_1_1_status_aggregator.html#a0e29f435b8064eeb69dbe44dc214bce1", null ],
-    [ "_tagsToAggregate", "struct_chimera_t_k_1_1_status_aggregator.html#ae04644247af5ca8ad848a73bf256cfba", null ]
+    [ "_tagsToAggregate", "struct_chimera_t_k_1_1_status_aggregator.html#ae04644247af5ca8ad848a73bf256cfba", null ],
+    [ "debug", "struct_chimera_t_k_1_1_status_aggregator.html#aa1f1eb67548d99e5cfda3c76b4d63a8b", null ]
 ];

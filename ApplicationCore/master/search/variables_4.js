@@ -9,6 +9,7 @@ var searchData=
   ['datavalidity1',['dataValidity1',['../struct_test_module2.html#a7de763d2ffe68a18c035d187ab9b843b',1,'TestModule2']]],
   ['datavalidity2',['dataValidity2',['../struct_test_module2.html#a8ee8ed2836e237932c817b1601f185cd',1,'TestModule2']]],
   ['dd',['DD',['../struct_c_c.html#a7b72ba69bc60ce75f7935f71ba52c333',1,'CC::DD()'],['../struct_f_f.html#a146e7a3017a06023b3a4f76aeabdd4a3',1,'FF::DD()'],['../struct_test_application2.html#a21ea730ea63427551cc57a2f9683fe07',1,'TestApplication2::dd()']]],
+  ['debug',['debug',['../struct_chimera_t_k_1_1_status_aggregator.html#aa1f1eb67548d99e5cfda3c76b4d63a8b',1,'ChimeraTK::StatusAggregator']]],
   ['debugdataloss',['debugDataLoss',['../class_chimera_t_k_1_1_application.html#ac2296b9fe4f9ab5684c41b43e7be4f0f',1,'ChimeraTK::Application']]],
   ['debugmode_5fvariablelist',['debugMode_variableList',['../class_chimera_t_k_1_1_application.html#a20ee34f9da398c58ad9e4228449412fa',1,'ChimeraTK::Application']]],
   ['deccalled',['decCalled',['../struct_test_module1.html#a728eb8a0eb2d5b9d97069c95f162029b',1,'TestModule1']]],

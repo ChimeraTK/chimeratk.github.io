@@ -448,6 +448,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ae04644247af5ca8ad848a73bf256cfba"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#ae04644247af5ca8ad848a73bf256cfba">_tagsToAggregate</a></td></tr>
 <tr class="memdesc:ae04644247af5ca8ad848a73bf256cfba"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of tags to aggregate.  <a href="#ae04644247af5ca8ad848a73bf256cfba">More...</a><br /></td></tr>
 <tr class="separator:ae04644247af5ca8ad848a73bf256cfba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f1eb67548d99e5cfda3c76b4d63a8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_modify_hierarchy.html">ModifyHierarchy</a>&lt; <a class="el" href="struct_chimera_t_k_1_1_scalar_push_input.html">ScalarPushInput</a>&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#aa1f1eb67548d99e5cfda3c76b4d63a8b">debug</a></td></tr>
+<tr class="memdesc:aa1f1eb67548d99e5cfda3c76b4d63a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow runtime debugging (FIXME: use Void instead!)  <a href="#aa1f1eb67548d99e5cfda3c76b4d63a8b">More...</a><br /></td></tr>
+<tr class="separator:aa1f1eb67548d99e5cfda3c76b4d63a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_application_module"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_application_module')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></td></tr>
 <tr class="memitem:a6da2ea5bac29df0a1c69c5117a0e57e0 inherit pro_attribs_class_chimera_t_k_1_1_application_module"><td class="memItemLeft" align="right" valign="top">boost::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_module.html#a6da2ea5bac29df0a1c69c5117a0e57e0">moduleThread</a></td></tr>
 <tr class="memdesc:a6da2ea5bac29df0a1c69c5117a0e57e0 inherit pro_attribs_class_chimera_t_k_1_1_application_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">The thread executing <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">mainLoop()</a>  <a href="class_chimera_t_k_1_1_application_module.html#a6da2ea5bac29df0a1c69c5117a0e57e0">More...</a><br /></td></tr>
@@ -622,7 +625,7 @@ Additional Inherited Members</h2></td></tr>
 <p>outputTags is the list of tags which is attached to the aggregated output. This tag has no influence on the aggregation. Other StatusAggregators will aggregate the output based on the tagsToAggregate, not based on the outputTags. Any number of tags can be specified here. Typically no tag is specified (even if tagsToAggregate contains a tag), unless the output needs special treatment somewhere else (e.g. if it is included in the MicroDAQ system searching for a particular tag).</p>
 <p>Note: The constructor will search for StatusOutputs to be aggregated. It can only find what has been constructed already. Make sure all StatusOutputs to be aggregated are constructed before this aggregator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00012">12</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00013">13</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -749,7 +752,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#abde59a69fac6f2d07b199dfe4ec78b85">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00183">183</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00198">198</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -787,7 +790,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Convert Status value into a priority (high integer value = high priority), depending on chosen PriorityMode Return value of -1 has the special meaning that the input Status's must be all equal, otherwise it must result in a warning Status. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00125">125</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00126">126</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -826,7 +829,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8">ChimeraTK::ApplicationModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00140">140</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00141">141</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -889,7 +892,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Recursivly search for StatusMonitors and other StatusAggregators. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00031">31</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00032">32</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -945,7 +948,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Helper for populateStatusInput. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00051">51</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00052">52</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -1066,6 +1069,32 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aa1f1eb67548d99e5cfda3c76b4d63a8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f1eb67548d99e5cfda3c76b4d63a8b">&#9670;&nbsp;</a></span>debug</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_modify_hierarchy.html">ModifyHierarchy</a>&lt;<a class="el" href="struct_chimera_t_k_1_1_scalar_push_input.html">ScalarPushInput</a>&lt;int&gt; &gt; ChimeraTK::StatusAggregator::debug</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">        <span class="keyword">this</span>, <span class="stringliteral">&quot;/Debug/statusAggregators&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Print debug info for all status aggregators once.&quot;</span>}</div></div><!-- fragment -->
+<p>Allow runtime debugging (FIXME: use Void instead!) </p>
+
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00120">120</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
+
+</div>
+</div>
 <a id="af24009d0423417f9178e5f5d6de507a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af24009d0423417f9178e5f5d6de507a2">&#9670;&nbsp;</a></span>tagAggregatedStatus</h2>
 
@@ -1128,7 +1157,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html">StatusAggregator</a></li>
-    <li class="footer">Generated on Tue Apr 26 2022 03:54:23 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Apr 27 2022 03:54:31 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

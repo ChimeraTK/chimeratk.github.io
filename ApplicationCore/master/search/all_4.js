@@ -12,7 +12,7 @@ var searchData=
   ['datavalidity2',['dataValidity2',['../struct_test_module2.html#a8ee8ed2836e237932c817b1601f185cd',1,'TestModule2']]],
   ['dd',['DD',['../struct_d_d.html',1,'DD'],['../struct_c_c.html#a7b72ba69bc60ce75f7935f71ba52c333',1,'CC::DD()'],['../struct_f_f.html#a146e7a3017a06023b3a4f76aeabdd4a3',1,'FF::DD()'],['../struct_test_application2.html#a21ea730ea63427551cc57a2f9683fe07',1,'TestApplication2::dd()']]],
   ['deactivate',['deactivate',['../class_chimera_t_k_1_1_internal_module.html#a7c306d0c2969c4f4151d2f0d7f42937d',1,'ChimeraTK::InternalModule::deactivate()'],['../class_chimera_t_k_1_1_threaded_fan_out.html#a2e01fc1efd2e4f39b13c885d33978da8',1,'ChimeraTK::ThreadedFanOut::deactivate()'],['../class_chimera_t_k_1_1_trigger_fan_out.html#a3404af1ffc3a6df39808d28887714a90',1,'ChimeraTK::TriggerFanOut::deactivate()']]],
-  ['debug',['DEBUG',['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416a682501b7fb187303796e3f533735b51f',1,'logging']]],
+  ['debug',['debug',['../struct_chimera_t_k_1_1_status_aggregator.html#aa1f1eb67548d99e5cfda3c76b4d63a8b',1,'ChimeraTK::StatusAggregator::debug()'],['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416a682501b7fb187303796e3f533735b51f',1,'logging::DEBUG()']]],
   ['debugdataloss',['debugDataLoss',['../class_chimera_t_k_1_1_application.html#ac2296b9fe4f9ab5684c41b43e7be4f0f',1,'ChimeraTK::Application']]],
   ['debugmakeconnections',['debugMakeConnections',['../class_chimera_t_k_1_1_application.html#a820fa44d5690934984b90f442461108b',1,'ChimeraTK::Application']]],
   ['debugmode_5fvariablelist',['debugMode_variableList',['../class_chimera_t_k_1_1_application.html#a20ee34f9da398c58ad9e4228449412fa',1,'ChimeraTK::Application']]],
