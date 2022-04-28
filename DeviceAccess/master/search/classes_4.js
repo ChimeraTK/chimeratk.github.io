@@ -26,6 +26,8 @@ var searchData=
   ['dmapfileparser',['DMapFileParser',['../class_chimera_t_k_1_1_d_map_file_parser.html',1,'ChimeraTK']]],
   ['dmapfileparsertest',['DMapFileParserTest',['../class_d_map_file_parser_test.html',1,'']]],
   ['dmapfileparsertestsuite',['DMapFileParserTestSuite',['../class_d_map_file_parser_test_suite.html',1,'']]],
+  ['doublebufferaccessordecorator',['DoubleBufferAccessorDecorator',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_accessor_decorator.html',1,'ChimeraTK::LNMBackend']]],
+  ['doublebufferplugin',['DoubleBufferPlugin',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_plugin.html',1,'ChimeraTK::LNMBackend']]],
   ['dummybackend',['DummyBackend',['../class_chimera_t_k_1_1_dummy_backend.html',1,'ChimeraTK']]],
   ['dummybackendbase',['DummyBackendBase',['../class_chimera_t_k_1_1_dummy_backend_base.html',1,'ChimeraTK']]],
   ['dummybackendregistercatalogue',['DummyBackendRegisterCatalogue',['../class_chimera_t_k_1_1_dummy_backend_register_catalogue.html',1,'ChimeraTK']]],

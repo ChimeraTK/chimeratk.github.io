@@ -4,6 +4,7 @@ var searchData=
   ['accessor',['Accessor',['../class_async_test_dummy_1_1_accessor.html',1,'AsyncTestDummy::Accessor&lt; UserType &gt;'],['../class_accessor.html',1,'Accessor&lt; UserType &gt;']]],
   ['accessorinstancedescriptor',['AccessorInstanceDescriptor',['../struct_chimera_t_k_1_1_accessor_instance_descriptor.html',1,'ChimeraTK']]],
   ['accessorplugin',['AccessorPlugin',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html',1,'ChimeraTK::LNMBackend']]],
+  ['accessorplugin_3c_20doublebufferplugin_20_3e',['AccessorPlugin&lt; DoubleBufferPlugin &gt;',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html',1,'ChimeraTK::LNMBackend']]],
   ['accessorplugin_3c_20forcepollingreadplugin_20_3e',['AccessorPlugin&lt; ForcePollingReadPlugin &gt;',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html',1,'ChimeraTK::LNMBackend']]],
   ['accessorplugin_3c_20forcereadonlyplugin_20_3e',['AccessorPlugin&lt; ForceReadOnlyPlugin &gt;',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html',1,'ChimeraTK::LNMBackend']]],
   ['accessorplugin_3c_20mathplugin_20_3e',['AccessorPlugin&lt; MathPlugin &gt;',['../class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html',1,'ChimeraTK::LNMBackend']]],

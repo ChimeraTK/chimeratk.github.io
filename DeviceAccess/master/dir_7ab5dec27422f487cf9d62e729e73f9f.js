@@ -10,6 +10,7 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testDevice.cpp", "test_device_8cpp.html", "test_device_8cpp" ],
     [ "testDeviceInfoMap.cpp", "test_device_info_map_8cpp.html", "test_device_info_map_8cpp" ],
     [ "testDMapFileParser.cpp", "test_d_map_file_parser_8cpp.html", "test_d_map_file_parser_8cpp" ],
+    [ "testDoubleBuffering.cpp", "test_double_buffering_8cpp.html", "test_double_buffering_8cpp" ],
     [ "testDummyBackend.cpp", "test_dummy_backend_8cpp.html", "test_dummy_backend_8cpp" ],
     [ "testDummyBackendUnified.cc", "test_dummy_backend_unified_8cc.html", "test_dummy_backend_unified_8cc" ],
     [ "testDummyRegisterAccessor.cpp", "test_dummy_register_accessor_8cpp.html", "test_dummy_register_accessor_8cpp" ],

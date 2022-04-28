@@ -28,6 +28,7 @@ var searchData=
   ['_5fconverters',['_converters',['../class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#af0c5333d00421ce70867d2818bbf7aa3',1,'ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor']]],
   ['_5fcopydecorators',['_copyDecorators',['../class_chimera_t_k_1_1_transfer_group.html#a05659fcb52954854fa82ab159de23579',1,'ChimeraTK::TransferGroup']]],
   ['_5fcurrent',['_current',['../struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#ad319e839119cb0140070b67430c44898',1,'ChimeraTK::ExceptionDummyPushDecorator']]],
+  ['_5fcurrentbuffernumber',['_currentBufferNumber',['../struct_area_type.html#ad1da3a0e9ad9de396c9f4e25d816b48f',1,'AreaType']]],
   ['_5fcurrentclientconnection',['_currentClientConnection',['../class_chimera_t_k_1_1_rebot_dummy_session.html#a6bf85af3d44a25f8be32e188363a7fcd',1,'ChimeraTK::RebotDummySession']]],
   ['_5fcurrentindex',['_currentIndex',['../class_chimera_t_k_1_1_transfer_element_test_accessor.html#aa54cb12f0bdbfc7994eba9f4b1210271',1,'ChimeraTK::TransferElementTestAccessor']]],
   ['_5fdata',['_data',['../struct_chimera_t_k_1_1_exception_dummy_push_decorator_1_1_buffer.html#ac93eb678cd323f261e3edd7cd75c0345',1,'ChimeraTK::ExceptionDummyPushDecorator::Buffer']]],
