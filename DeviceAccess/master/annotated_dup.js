@@ -11,6 +11,7 @@ var annotated_dup =
     [ "AnotherWorkingBackend", "struct_another_working_backend.html", "struct_another_working_backend" ],
     [ "AreaType", "struct_area_type.html", "struct_area_type" ],
     [ "Argument", "struct_argument.html", "struct_argument" ],
+    [ "AsciiData", "struct_ascii_data.html", "struct_ascii_data" ],
     [ "AsyncTestDummy", "class_async_test_dummy.html", "class_async_test_dummy" ],
     [ "BitRegisterDescriptorBase", "struct_bit_register_descriptor_base.html", "struct_bit_register_descriptor_base" ],
     [ "BufferingRegisterTest", "class_buffering_register_test.html", "class_buffering_register_test" ],

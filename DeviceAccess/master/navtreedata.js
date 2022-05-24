@@ -112,24 +112,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"_register_path_8cc.html#a3866f314ddf52c6edb0f62cef066f796",
-"class_chimera_t_k_1_1_backend_register_catalogue.html#a14505243ab8cd34540415b777052190a",
-"class_chimera_t_k_1_1_device_info_map.html#ab3ce8a0593eaa19c33d8696ca03531b0",
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html",
-"class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a9559d505d8c8826a5acc8e03a0fb6f7f",
-"class_chimera_t_k_1_1_rebot_backend.html#ab46c1a85b3ab8f92a98a8d78d98019ac",
-"class_chimera_t_k_1_1_transfer_element.html#a79fface1764b83bf0f8535616dc08d02",
-"class_chimera_t_k_1_1_void.html#a938fe6ff519c1f94f0879b4807dbd6f4",
-"class_version_number_test.html#aafdecf434cd4a3fa22b29258b5461129",
-"dir_9e938238994bf6c30587f7ab5108cdb0.html",
-"mtca4u__compatibility__headers_2_l_n_m_backend_register_info_8h_source.html",
-"struct_chimera_t_k_1_1_async_variable_impl.html#ae7ac1aa2b66cbd5dd99c3ae551700028",
-"struct_chimera_t_k_1_1_thread_informer_mutex.html#a577ee1e0f70212e916365c9475428c84",
-"struct_muxed_nodma.html",
-"struct_reg_variable_as_push_parameter_in_math__var1.html#a7711f7947fa66713bc661b4fc3028831",
-"test_backend_factory_8cpp_source.html",
-"test_map_file_parser_8cpp.html#ac20b9c65d7e044fcb27d117eceae333b",
-"test_utilities_8cpp.html#a01e2ba4d1f9e3d8b42882e38d4673458"
+"_register_path_8cc.html",
+"class_chimera_t_k_1_1_backend_register_catalogue.html",
+"class_chimera_t_k_1_1_device_info_map.html#aa3f5d757987b28713906a7f88be306a0",
+"class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_plugin.html#a12d4d34cf8016f88ab7f6310f26c577c",
+"class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a7c0d4fdaf998bece8d9b26b6a913ff13",
+"class_chimera_t_k_1_1_read_any_group_1_1_notification.html#a949d73dd42d92eb82c81e8413933a030",
+"class_chimera_t_k_1_1_transfer_element.html#a13235d15a13bfc43764e464f1b6fe50d",
+"class_chimera_t_k_1_1_unified_backend_test.html#af464a57cf92601ce3f26a3ef6413c030",
+"class_test_dummy.html#aa1ede7926941251b65bf46228033fb63",
+"dir_171063ca2b6d8df6d9147a9ad3041fe6.html",
+"mtca4u__compatibility__headers_2_d_map_file_8h_source.html",
+"struct_byte_raw__unsigned8.html#a677b96a73ea202eded000bc1cf43f39c",
+"struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html#af893a0a797fa5604c3e3b2b3690a217a",
+"struct_interrupt__dummy.html#aeead18088be61af793b09531492b52a9",
+"struct_reg_single_word_scaled.html#abcbd6185253a222a18915ba174a8a8c1",
+"structstd_1_1hash_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html",
+"test_l_map_math_plugin_8cpp.html#a7ff992440c0b98be761736b3d41e140b",
+"test_transfer_element_8cpp.html#ae849aad73ebd57577b48b1913b9803b5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

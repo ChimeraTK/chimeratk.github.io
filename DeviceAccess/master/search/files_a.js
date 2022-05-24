@@ -12,6 +12,7 @@ var searchData=
   ['numericaddress_2eh',['NumericAddress.h',['../device__backends_2_numeric_addressed_backend_2include_2_numeric_address_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_numeric_address_8h.html',1,'(Global Namespace)']]],
   ['numericaddressedbackend_2ecc',['NumericAddressedBackend.cc',['../_numeric_addressed_backend_8cc.html',1,'']]],
   ['numericaddressedbackend_2eh',['NumericAddressedBackend.h',['../device__backends_2_numeric_addressed_backend_2include_2_numeric_addressed_backend_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_numeric_addressed_backend_8h.html',1,'(Global Namespace)']]],
+  ['numericaddressedbackendasciiaccessor_2eh',['NumericAddressedBackendASCIIAccessor.h',['../_numeric_addressed_backend_a_s_c_i_i_accessor_8h.html',1,'']]],
   ['numericaddressedbackendmuxedregisteraccessor_2ecc',['NumericAddressedBackendMuxedRegisterAccessor.cc',['../_numeric_addressed_backend_muxed_register_accessor_8cc.html',1,'']]],
   ['numericaddressedbackendmuxedregisteraccessor_2eh',['NumericAddressedBackendMuxedRegisterAccessor.h',['../device__backends_2_numeric_addressed_backend_2include_2_numeric_addressed_backend_muxed_register_accessor_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_numeric_addressed_backend_muxed_register_accessor_8h.html',1,'(Global Namespace)']]],
   ['numericaddressedbackendregisteraccessor_2ecc',['NumericAddressedBackendRegisterAccessor.cc',['../_numeric_addressed_backend_register_accessor_8cc.html',1,'']]],

@@ -18,6 +18,7 @@ var searchData=
   ['anotherworkingbackend',['AnotherWorkingBackend',['../struct_another_working_backend.html',1,'']]],
   ['areatype',['AreaType',['../struct_area_type.html',1,'']]],
   ['argument',['Argument',['../struct_argument.html',1,'']]],
+  ['asciidata',['AsciiData',['../struct_ascii_data.html',1,'']]],
   ['asyncaccessormanager',['AsyncAccessorManager',['../class_chimera_t_k_1_1_async_accessor_manager.html',1,'ChimeraTK']]],
   ['asyncndregisteraccessor',['AsyncNDRegisterAccessor',['../class_chimera_t_k_1_1_async_n_d_register_accessor.html',1,'ChimeraTK']]],
   ['asynctestdummy',['AsyncTestDummy',['../class_async_test_dummy.html',1,'']]],

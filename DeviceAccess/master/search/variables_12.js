@@ -14,6 +14,7 @@ var searchData=
   ['testrawtransfer',['testRawTransfer',['../struct_chimera_t_k_1_1_test_capabilities.html#a3939c8b572baad5d0e88db3a6c5e1d63',1,'ChimeraTK::TestCapabilities']]],
   ['testreadonly',['testReadOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a2e7ed640325ff305b67124c0283690cf',1,'ChimeraTK::TestCapabilities']]],
   ['testwriteonly',['testWriteOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#aaa548de3a818ef89b8bc848fb752b138',1,'ChimeraTK::TestCapabilities']]],
+  ['textbase',['textBase',['../struct_ascii_data.html#a7d6b693e833b42ef41ee5d1727d72ec6',1,'AsciiData']]],
   ['theinfo',['theInfo',['../class_catalogue_generator.html#ab9a47656f33cd36c0138c66b96f3bfa6',1,'CatalogueGenerator']]],
   ['theinfo2',['theInfo2',['../class_catalogue_generator.html#aec8418823f0aed01a99b353611d1b84e',1,'CatalogueGenerator']]],
   ['theinfo3',['theInfo3',['../class_catalogue_generator.html#ab059b538bc3a00d6f38dc059d67251d4',1,'CatalogueGenerator']]],

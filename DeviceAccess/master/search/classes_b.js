@@ -2,6 +2,7 @@ var searchData=
 [
   ['ndregisteraccessor',['NDRegisterAccessor',['../class_chimera_t_k_1_1_n_d_register_accessor.html',1,'ChimeraTK']]],
   ['ndregisteraccessor_3c_20int32_5ft_20_3e',['NDRegisterAccessor&lt; int32_t &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor.html',1,'ChimeraTK']]],
+  ['ndregisteraccessor_3c_20std_3a_3astring_20_3e',['NDRegisterAccessor&lt; std::string &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor.html',1,'ChimeraTK']]],
   ['ndregisteraccessor_3c_20t_20_3e',['NDRegisterAccessor&lt; T &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor.html',1,'ChimeraTK']]],
   ['ndregisteraccessor_3c_20targetusertype_20_3e',['NDRegisterAccessor&lt; TargetUserType &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor.html',1,'ChimeraTK']]],
   ['ndregisteraccessorabstractor',['NDRegisterAccessorAbstractor',['../class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html',1,'ChimeraTK']]],
@@ -20,6 +21,7 @@ var searchData=
   ['numericaddressedasyncvariable',['NumericAddressedAsyncVariable',['../struct_chimera_t_k_1_1_numeric_addressed_async_variable.html',1,'ChimeraTK']]],
   ['numericaddressedasyncvariableimpl',['NumericAddressedAsyncVariableImpl',['../struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html',1,'ChimeraTK']]],
   ['numericaddressedbackend',['NumericAddressedBackend',['../class_chimera_t_k_1_1_numeric_addressed_backend.html',1,'ChimeraTK']]],
+  ['numericaddressedbackendasciiaccessor',['NumericAddressedBackendASCIIAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend_a_s_c_i_i_accessor.html',1,'ChimeraTK']]],
   ['numericaddressedbackendmuxedregisteraccessor',['NumericAddressedBackendMuxedRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html',1,'ChimeraTK']]],
   ['numericaddressedbackendregisteraccessor',['NumericAddressedBackendRegisterAccessor',['../class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html',1,'ChimeraTK']]],
   ['numericaddressedinterruptdispatcher',['NumericAddressedInterruptDispatcher',['../class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html',1,'ChimeraTK']]],

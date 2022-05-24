@@ -12,6 +12,7 @@ var test_numeric_addressed_backend_unified_8cpp =
     [ "ByteRaw_unsigned8", "struct_byte_raw__unsigned8.html", "struct_byte_raw__unsigned8" ],
     [ "ByteRaw_fixedPoint8_4u", "struct_byte_raw__fixed_point8__4u.html", "struct_byte_raw__fixed_point8__4u" ],
     [ "ByteRaw_fixedPoint8_4s", "struct_byte_raw__fixed_point8__4s.html", "struct_byte_raw__fixed_point8__4s" ],
+    [ "AsciiData", "struct_ascii_data.html", "struct_ascii_data" ],
     [ "MuxedNodma", "struct_muxed_nodma.html", "struct_muxed_nodma" ],
     [ "MuxedNodmaAsync", "struct_muxed_nodma_async.html", "struct_muxed_nodma_async" ],
     [ "MuxedFloat", "struct_muxed_float.html", "struct_muxed_float" ],

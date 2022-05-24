@@ -21,6 +21,7 @@ var class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element =
     [ "replaceTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a37713b9281070f2fb1a1ea72868c2aff", null ],
     [ "setAddress", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae8c6ac7894418d104cf2fd57ef9f3c5f", null ],
     [ "detail::NumericAddressedPrePostActionsImplementor", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a7d08580f8aff61b552ab9f2a1a2a20f8", null ],
+    [ "NumericAddressedBackendASCIIAccessor", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a92b66d52d21601b7a69589c1959a05a1", null ],
     [ "NumericAddressedBackendRegisterAccessor", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ac06c3adbcb08c25e2a42e23c96e66152", null ],
     [ "_bar", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#a9e58624a9c60967b5e4ed9c0d2ca7253", null ],
     [ "_dev", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html#ae5327f3948a8280b10dfb527255cdf93", null ],

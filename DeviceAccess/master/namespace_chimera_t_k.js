@@ -76,6 +76,7 @@ var namespace_chimera_t_k =
     [ "NumericAddressedAsyncVariable", "struct_chimera_t_k_1_1_numeric_addressed_async_variable.html", "struct_chimera_t_k_1_1_numeric_addressed_async_variable" ],
     [ "NumericAddressedAsyncVariableImpl", "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html", "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl" ],
     [ "NumericAddressedBackend", "class_chimera_t_k_1_1_numeric_addressed_backend.html", "class_chimera_t_k_1_1_numeric_addressed_backend" ],
+    [ "NumericAddressedBackendASCIIAccessor", "class_chimera_t_k_1_1_numeric_addressed_backend_a_s_c_i_i_accessor.html", "class_chimera_t_k_1_1_numeric_addressed_backend_a_s_c_i_i_accessor" ],
     [ "NumericAddressedBackendMuxedRegisterAccessor", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor" ],
     [ "NumericAddressedBackendRegisterAccessor", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor" ],
     [ "NumericAddressedInterruptDispatcher", "class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html", "class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher" ],
