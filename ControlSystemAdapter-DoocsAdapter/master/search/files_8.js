@@ -15,6 +15,7 @@ var searchData=
   ['servertestregression_5fnomatchingmpnumber_2ecc',['serverTestRegression_noMatchingMPNumber.cc',['../server_test_regression__no_matching_m_p_number_8cc.html',1,'']]],
   ['servertestrenameimport_2ecpp',['serverTestRenameImport.cpp',['../server_test_rename_import_8cpp.html',1,'']]],
   ['servertestretypeproperties_2ecpp',['serverTestRetypeProperties.cpp',['../server_test_retype_properties_8cpp.html',1,'']]],
+  ['servertestseterror_2ecpp',['serverTestSetError.cpp',['../server_test_set_error_8cpp.html',1,'']]],
   ['servertestspectrumarray_2ecpp',['serverTestSpectrumArray.cpp',['../server_test_spectrum_array_8cpp.html',1,'']]],
   ['servertestspectrumbuffer_2dexception_2ecpp',['serverTestSpectrumBuffer-exception.cpp',['../server_test_spectrum_buffer-exception_8cpp.html',1,'']]],
   ['servertestspectrumbuffer_2ecpp',['serverTestSpectrumBuffer.cpp',['../server_test_spectrum_buffer_8cpp.html',1,'']]],
@@ -23,5 +24,7 @@ var searchData=
   ['servertestzeromq_2ecpp',['serverTestZeroMQ.cpp',['../server_test_zero_m_q_8cpp.html',1,'']]],
   ['servertestzmq_5fcstoapp_2ecpp',['serverTestZMQ_CsToApp.cpp',['../server_test_z_m_q___cs_to_app_8cpp.html',1,'']]],
   ['set_5fdoocs_5fvalue_2eh',['set_doocs_value.h',['../set__doocs__value_8h.html',1,'']]],
-  ['splitstringatfirstslash_2eh',['splitStringAtFirstSlash.h',['../split_string_at_first_slash_8h.html',1,'']]]
+  ['splitstringatfirstslash_2eh',['splitStringAtFirstSlash.h',['../split_string_at_first_slash_8h.html',1,'']]],
+  ['statushandler_2ecc',['StatusHandler.cc',['../_status_handler_8cc.html',1,'']]],
+  ['statushandler_2eh',['StatusHandler.h',['../_status_handler_8h.html',1,'']]]
 ];

@@ -42,9 +42,13 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "XyDescription", "struct_chimera_t_k_1_1_xy_description.html", "struct_chimera_t_k_1_1_xy_description" ],
       [ "Axis", "struct_chimera_t_k_1_1_xy_description_1_1_axis.html", "struct_chimera_t_k_1_1_xy_description_1_1_axis" ],
       [ "IfffDescription", "struct_chimera_t_k_1_1_ifff_description.html", "struct_chimera_t_k_1_1_ifff_description" ],
-      [ "LocationInfo", "struct_chimera_t_k_1_1_location_info.html", "struct_chimera_t_k_1_1_location_info" ]
+      [ "LocationInfo", "struct_chimera_t_k_1_1_location_info.html", "struct_chimera_t_k_1_1_location_info" ],
+      [ "ErrorReportingInfo", "struct_chimera_t_k_1_1_error_reporting_info.html", "struct_chimera_t_k_1_1_error_reporting_info" ]
     ] ],
     [ "splitStringAtFirstSlash.h", "split_string_at_first_slash_8h.html", "split_string_at_first_slash_8h" ],
+    [ "StatusHandler.h", "_status_handler_8h.html", [
+      [ "StatusHandler", "class_chimera_t_k_1_1_status_handler.html", "class_chimera_t_k_1_1_status_handler" ]
+    ] ],
     [ "VariableMapper.h", "_variable_mapper_8h.html", [
       [ "VariableMapper", "class_chimera_t_k_1_1_variable_mapper.html", "class_chimera_t_k_1_1_variable_mapper" ]
     ] ]

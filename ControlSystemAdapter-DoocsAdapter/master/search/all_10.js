@@ -19,6 +19,7 @@ var searchData=
   ['servertestregression_5fnomatchingmpnumber_2ecc',['serverTestRegression_noMatchingMPNumber.cc',['../server_test_regression__no_matching_m_p_number_8cc.html',1,'']]],
   ['servertestrenameimport_2ecpp',['serverTestRenameImport.cpp',['../server_test_rename_import_8cpp.html',1,'']]],
   ['servertestretypeproperties_2ecpp',['serverTestRetypeProperties.cpp',['../server_test_retype_properties_8cpp.html',1,'']]],
+  ['servertestseterror_2ecpp',['serverTestSetError.cpp',['../server_test_set_error_8cpp.html',1,'']]],
   ['servertestspectrumarray_2ecpp',['serverTestSpectrumArray.cpp',['../server_test_spectrum_array_8cpp.html',1,'']]],
   ['servertestspectrumbuffer_2dexception_2ecpp',['serverTestSpectrumBuffer-exception.cpp',['../server_test_spectrum_buffer-exception_8cpp.html',1,'']]],
   ['servertestspectrumbuffer_2ecpp',['serverTestSpectrumBuffer.cpp',['../server_test_spectrum_buffer_8cpp.html',1,'']]],
@@ -39,5 +40,12 @@ var searchData=
   ['splitstringatfirstslash_2eh',['splitStringAtFirstSlash.h',['../split_string_at_first_slash_8h.html',1,'']]],
   ['start',['start',['../struct_chimera_t_k_1_1_spectrum_description_1_1_axis.html#a375daf8bd01a531d544415ce9ef4b991',1,'ChimeraTK::SpectrumDescription::Axis::start()'],['../struct_chimera_t_k_1_1_spectrum_description.html#a2fcb663668440fc471bccd1ded6e4071',1,'ChimeraTK::SpectrumDescription::start()'],['../struct_chimera_t_k_1_1_xy_description_1_1_axis.html#a4e6fb2f7b8b430bad1a3def92aca1f9c',1,'ChimeraTK::XyDescription::Axis::start()']]],
   ['startsource',['startSource',['../struct_chimera_t_k_1_1_spectrum_description.html#a5b5ab5708e1d64d5d59535e6188be034',1,'ChimeraTK::SpectrumDescription']]],
+  ['statuscodemapping',['statusCodeMapping',['../class_chimera_t_k_1_1_status_handler.html#a42161ce230f61c83d7e2524ac4240130',1,'ChimeraTK::StatusHandler']]],
+  ['statuscodesource',['statusCodeSource',['../struct_chimera_t_k_1_1_error_reporting_info.html#a0e3938262da4545bf5f1bde1047d5e6f',1,'ChimeraTK::ErrorReportingInfo']]],
+  ['statushandler',['StatusHandler',['../class_chimera_t_k_1_1_status_handler.html',1,'ChimeraTK::StatusHandler'],['../class_chimera_t_k_1_1_status_handler.html#a412d2ea515aebc7280e6cdc36a5580e4',1,'ChimeraTK::StatusHandler::StatusHandler()']]],
+  ['statushandler_2ecc',['StatusHandler.cc',['../_status_handler_8cc.html',1,'']]],
+  ['statushandler_2eh',['StatusHandler.h',['../_status_handler_8h.html',1,'']]],
+  ['statushandler_5f',['statusHandler_',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#a656953e1fc0349634590a9e62f169d47',1,'ChimeraTK::CSAdapterEqFct']]],
+  ['statusstringsource',['statusStringSource',['../struct_chimera_t_k_1_1_error_reporting_info.html#aa98625cf1f9db791e5a6b76288141950',1,'ChimeraTK::ErrorReportingInfo']]],
   ['stop',['stop',['../struct_chimera_t_k_1_1_spectrum_description_1_1_axis.html#a58dae2a27db8026492d077344523f308',1,'ChimeraTK::SpectrumDescription::Axis::stop()'],['../struct_chimera_t_k_1_1_xy_description_1_1_axis.html#afa2613cd7ef88dd7c4d8c83797d31000',1,'ChimeraTK::XyDescription::Axis::stop()'],['../class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286',1,'ChimeraTK::DoocsUpdater::stop()']]]
 ];

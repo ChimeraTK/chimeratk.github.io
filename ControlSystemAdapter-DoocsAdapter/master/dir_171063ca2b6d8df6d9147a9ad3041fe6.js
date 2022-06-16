@@ -14,6 +14,7 @@ var dir_171063ca2b6d8df6d9147a9ad3041fe6 =
     [ "serverTestRegression_noMatchingMPNumber.cc", "server_test_regression__no_matching_m_p_number_8cc.html", "server_test_regression__no_matching_m_p_number_8cc" ],
     [ "serverTestRenameImport.cpp", "server_test_rename_import_8cpp.html", "server_test_rename_import_8cpp" ],
     [ "serverTestRetypeProperties.cpp", "server_test_retype_properties_8cpp.html", "server_test_retype_properties_8cpp" ],
+    [ "serverTestSetError.cpp", "server_test_set_error_8cpp.html", "server_test_set_error_8cpp" ],
     [ "serverTestSpectrumArray.cpp", "server_test_spectrum_array_8cpp.html", "server_test_spectrum_array_8cpp" ],
     [ "serverTestSpectrumBuffer-exception.cpp", "server_test_spectrum_buffer-exception_8cpp.html", "server_test_spectrum_buffer-exception_8cpp" ],
     [ "serverTestSpectrumBuffer.cpp", "server_test_spectrum_buffer_8cpp.html", "server_test_spectrum_buffer_8cpp" ],

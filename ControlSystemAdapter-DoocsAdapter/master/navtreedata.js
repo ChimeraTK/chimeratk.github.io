@@ -10,10 +10,11 @@ var NAVTREE =
       [ "Overriding auto-detected types", "index.html#type_override", null ],
       [ "Special DOOCS properties", "index.html#special_properties", [
         [ "D_spectrum", "index.html#D_spectrum", null ],
-        [ "D_array", "index.html#D_array", null ]
+        [ "D_array", "index.html#D_array", null ],
+        [ "D_xy", "index.html#D_xy", null ]
       ] ],
-      [ "D_xy", "index.html#D_xy", null ],
-      [ "Specifie `eq_fct_code` in the mapping file", "index.html#specifie_code", null ]
+      [ "Error reporting", "index.html#set_error", null ],
+      [ "Specify `eq_fct_code` in the mapping file", "index.html#specifie_code", null ]
     ] ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
@@ -51,8 +52,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_c_s_adapter_eq_fct_8cc.html",
-"dir_086a13c2b09f6695f2ce910b939db1b5.html",
-"server_test_spectrum_array_8cpp.html"
+"class_chimera_t_k_1_1_variable_mapper.html#addb8b19f9c9e8515a53d7486f4f25b7c",
+"server_test_regression__no_matching_m_p_number_8cc.html#a6b2a3852db8bb19ab6909bac01859985"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

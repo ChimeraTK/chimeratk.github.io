@@ -9,5 +9,7 @@ var searchData=
   ['setmacropulsenumbersource',['setMacroPulseNumberSource',['../class_chimera_t_k_1_1_doocs_ifff.html#acc3d25b87a5fb3e1f04b151ba80d09e0',1,'ChimeraTK::DoocsIfff::setMacroPulseNumberSource()'],['../class_chimera_t_k_1_1_doocs_process_array.html#a10c4c6f5b23e711ad8064f251fb38d11',1,'ChimeraTK::DoocsProcessArray::setMacroPulseNumberSource()'],['../class_chimera_t_k_1_1_doocs_process_scalar.html#ad13b40f2d12f57129e0427307573b96b',1,'ChimeraTK::DoocsProcessScalar::setMacroPulseNumberSource()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a142e85183fcdca035369a1cb1a91e364',1,'ChimeraTK::DoocsSpectrum::setMacroPulseNumberSource()']]],
   ['spectrumdescription',['SpectrumDescription',['../struct_chimera_t_k_1_1_spectrum_description.html#a41af855afa3487885c9f1e51d4d0af98',1,'ChimeraTK::SpectrumDescription']]],
   ['splitstringatfirstslash',['splitStringAtFirstSlash',['../namespace_chimera_t_k.html#afbd78a37f72dd506f7e136f7ac06cf98',1,'ChimeraTK']]],
+  ['statuscodemapping',['statusCodeMapping',['../class_chimera_t_k_1_1_status_handler.html#a42161ce230f61c83d7e2524ac4240130',1,'ChimeraTK::StatusHandler']]],
+  ['statushandler',['StatusHandler',['../class_chimera_t_k_1_1_status_handler.html#a412d2ea515aebc7280e6cdc36a5580e4',1,'ChimeraTK::StatusHandler']]],
   ['stop',['stop',['../class_chimera_t_k_1_1_doocs_updater.html#ae95813ee7f671133d514189c3c033286',1,'ChimeraTK::DoocsUpdater']]]
 ];

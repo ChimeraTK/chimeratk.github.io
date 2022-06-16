@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['globalfixture',['GlobalFixture',['../struct_global_fixture.html',1,'']]]
+  ['errorreportinginfo',['ErrorReportingInfo',['../struct_chimera_t_k_1_1_error_reporting_info.html',1,'ChimeraTK']]]
 ];

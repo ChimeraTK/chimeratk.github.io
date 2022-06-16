@@ -12,5 +12,6 @@ var class_chimera_t_k_1_1_c_s_adapter_eq_fct =
     [ "controlSystemPVManager_", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#ac7cc4df5a4f7e1e934a00179dcb6a7ae", null ],
     [ "doocsProperties_", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#af8151acfed3a1d39beb7af74bc0b7d74", null ],
     [ "fctCode_", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#ae7c47c35674abcfdc8b58e0e2d89a0b1", null ],
+    [ "statusHandler_", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#a656953e1fc0349634590a9e62f169d47", null ],
     [ "updater_", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#ae855cff8ead1562949db6afbf09a36e7", null ]
 ];

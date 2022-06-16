@@ -10,12 +10,14 @@ var namespace_chimera_t_k =
     [ "DoocsSpectrum", "class_chimera_t_k_1_1_doocs_spectrum.html", "class_chimera_t_k_1_1_doocs_spectrum" ],
     [ "DoocsUpdater", "class_chimera_t_k_1_1_doocs_updater.html", "class_chimera_t_k_1_1_doocs_updater" ],
     [ "DoocsXy", "class_chimera_t_k_1_1_doocs_xy.html", "class_chimera_t_k_1_1_doocs_xy" ],
+    [ "ErrorReportingInfo", "struct_chimera_t_k_1_1_error_reporting_info.html", "struct_chimera_t_k_1_1_error_reporting_info" ],
     [ "IfffDescription", "struct_chimera_t_k_1_1_ifff_description.html", "struct_chimera_t_k_1_1_ifff_description" ],
     [ "LocationInfo", "struct_chimera_t_k_1_1_location_info.html", "struct_chimera_t_k_1_1_location_info" ],
     [ "PersistConfig", "struct_chimera_t_k_1_1_persist_config.html", "struct_chimera_t_k_1_1_persist_config" ],
     [ "PropertyAttributes", "struct_chimera_t_k_1_1_property_attributes.html", "struct_chimera_t_k_1_1_property_attributes" ],
     [ "PropertyDescription", "struct_chimera_t_k_1_1_property_description.html", "struct_chimera_t_k_1_1_property_description" ],
     [ "SpectrumDescription", "struct_chimera_t_k_1_1_spectrum_description.html", "struct_chimera_t_k_1_1_spectrum_description" ],
+    [ "StatusHandler", "class_chimera_t_k_1_1_status_handler.html", "class_chimera_t_k_1_1_status_handler" ],
     [ "VariableMapper", "class_chimera_t_k_1_1_variable_mapper.html", "class_chimera_t_k_1_1_variable_mapper" ],
     [ "XyDescription", "struct_chimera_t_k_1_1_xy_description.html", "struct_chimera_t_k_1_1_xy_description" ]
 ];

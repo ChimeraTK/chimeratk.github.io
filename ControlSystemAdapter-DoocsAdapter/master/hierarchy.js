@@ -27,6 +27,7 @@ var hierarchy =
         [ "TestableCSAdapterEqFct", "class_testable_c_s_adapter_eq_fct.html", null ]
       ] ]
     ] ],
+    [ "ChimeraTK::ErrorReportingInfo", "struct_chimera_t_k_1_1_error_reporting_info.html", null ],
     [ "GlobalFixture", "struct_global_fixture.html", null ],
     [ "noncopyable", null, [
       [ "ChimeraTK::CSAdapterEqFct", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html", null ],
@@ -36,7 +37,8 @@ var hierarchy =
       [ "ChimeraTK::DoocsPVFactory", "class_chimera_t_k_1_1_doocs_p_v_factory.html", null ],
       [ "ChimeraTK::DoocsSpectrum", "class_chimera_t_k_1_1_doocs_spectrum.html", null ],
       [ "ChimeraTK::DoocsUpdater", "class_chimera_t_k_1_1_doocs_updater.html", null ],
-      [ "ChimeraTK::DoocsXy", "class_chimera_t_k_1_1_doocs_xy.html", null ]
+      [ "ChimeraTK::DoocsXy", "class_chimera_t_k_1_1_doocs_xy.html", null ],
+      [ "ChimeraTK::StatusHandler", "class_chimera_t_k_1_1_status_handler.html", null ]
     ] ],
     [ "ChimeraTK::PersistConfig", "struct_chimera_t_k_1_1_persist_config.html", null ],
     [ "ChimeraTK::PropertyAttributes", "struct_chimera_t_k_1_1_property_attributes.html", [

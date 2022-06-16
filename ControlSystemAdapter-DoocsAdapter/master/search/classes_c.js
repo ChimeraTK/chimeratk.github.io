@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zmqdata',['ZmqData',['../struct_zmq_data.html',1,'']]]
+  ['xydescription',['XyDescription',['../struct_chimera_t_k_1_1_xy_description.html',1,'ChimeraTK']]]
 ];
