@@ -25,6 +25,13 @@ var dir_edc72502990ad2b12fcd3ee6c424d5ed =
     [ "ProcessVariableDecl.h", "_process_variable_decl_8h.html", null ],
     [ "PVManager.h", "_p_v_manager_8h.html", "_p_v_manager_8h" ],
     [ "PVManagerDecl.h", "_p_v_manager_decl_8h.html", null ],
+    [ "StatusAccessorBase.h", "_status_accessor_base_8h.html", [
+      [ "StatusAccessorBase", "struct_chimera_t_k_1_1_status_accessor_base.html", "struct_chimera_t_k_1_1_status_accessor_base" ]
+    ] ],
+    [ "StatusWithMessageReader.h", "_status_with_message_reader_8h.html", [
+      [ "StatusWithMessageReaderBase", "class_chimera_t_k_1_1_status_with_message_reader_base.html", "class_chimera_t_k_1_1_status_with_message_reader_base" ],
+      [ "StatusWithMessageReader", "struct_chimera_t_k_1_1_status_with_message_reader.html", "struct_chimera_t_k_1_1_status_with_message_reader" ]
+    ] ],
     [ "SynchronizationDirection.h", "_synchronization_direction_8h.html", "_synchronization_direction_8h" ],
     [ "TimeStamp.h", "_time_stamp_8h.html", null ],
     [ "TimeStampSource.h", "_time_stamp_source_8h.html", null ],

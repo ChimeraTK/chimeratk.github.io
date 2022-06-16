@@ -12,6 +12,7 @@ var searchData=
   ['gethardwareaccessingelements',['getHardwareAccessingElements',['../class_chimera_t_k_1_1_process_array.html#ad2c207fc04eb6774d09666636cae6cb1',1,'ChimeraTK::ProcessArray']]],
   ['getinstance',['getInstance',['../class_chimera_t_k_1_1_application_base.html#ac4dc7a539634dc5b5e874e2409f7bfa3',1,'ChimeraTK::ApplicationBase']]],
   ['getinternalelements',['getInternalElements',['../class_chimera_t_k_1_1_process_array.html#a5f231bf7d037b760f74fd9a68bc9f4bf',1,'ChimeraTK::ProcessArray']]],
+  ['getmessage',['getMessage',['../class_chimera_t_k_1_1_status_with_message_reader_base.html#ab7a399482c9fd485038222a427d00aeb',1,'ChimeraTK::StatusWithMessageReaderBase']]],
   ['getmetadatacatalogue',['getMetadataCatalogue',['../struct_process_array_factory_backend.html#a0bd651d037fbd925f4c3f340ae8cd024',1,'ProcessArrayFactoryBackend']]],
   ['getname',['getName',['../class_chimera_t_k_1_1_application_base.html#aca7083d2e7ba79435fcb337c205dfc43',1,'ChimeraTK::ApplicationBase']]],
   ['getpathandtype',['getPathAndType',['../test_unified_type_changing_decorator_8cpp.html#aeac2e3cb19a2c57275266ff5eff5553a',1,'testUnifiedTypeChangingDecorator.cpp']]],

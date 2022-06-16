@@ -117,6 +117,11 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::PersistentDataStorage::registerVariable_oldTypeRemover", "struct_chimera_t_k_1_1_persistent_data_storage_1_1register_variable__old_type_remover.html", null ],
     [ "ChimeraTK::csa_helpers::Round< S >", "struct_chimera_t_k_1_1csa__helpers_1_1_round.html", null ],
+    [ "ChimeraTK::StatusAccessorBase", "struct_chimera_t_k_1_1_status_accessor_base.html", null ],
+    [ "ChimeraTK::StatusWithMessageReaderBase< Derived >", "class_chimera_t_k_1_1_status_with_message_reader_base.html", null ],
+    [ "ChimeraTK::StatusWithMessageReaderBase< StatusWithMessageReader >", "class_chimera_t_k_1_1_status_with_message_reader_base.html", [
+      [ "ChimeraTK::StatusWithMessageReader", "struct_chimera_t_k_1_1_status_with_message_reader.html", null ]
+    ] ],
     [ "test_suite", null, [
       [ "AsyncReadTestSuite", "class_async_read_test_suite.html", null ]
     ] ],

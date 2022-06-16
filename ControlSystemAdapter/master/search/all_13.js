@@ -6,5 +6,6 @@ var searchData=
   ['unidirpolledsender',['UnidirPolledSender',['../struct_unidir_polled_sender.html',1,'']]],
   ['unidirreceiver',['UnidirReceiver',['../struct_unidir_receiver.html',1,'']]],
   ['unidirsender',['UnidirSender',['../struct_unidir_sender.html',1,'']]],
+  ['update',['update',['../class_chimera_t_k_1_1_status_with_message_reader_base.html#a90dd33ca23af7edcdd84ec65b3edf88d',1,'ChimeraTK::StatusWithMessageReaderBase']]],
   ['updatevalue',['updateValue',['../class_chimera_t_k_1_1_persistent_data_storage.html#a612dbafae9899fbead5ca29b867d4642',1,'ChimeraTK::PersistentDataStorage']]]
 ];
