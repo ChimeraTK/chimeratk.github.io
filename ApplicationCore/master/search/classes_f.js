@@ -75,16 +75,16 @@ var searchData=
   ['statusaccessor_3c_20scalaroutput_3c_20int32_5ft_20_3e_20_3e',['StatusAccessor&lt; ScalarOutput&lt; int32_t &gt; &gt;',['../struct_chimera_t_k_1_1_status_accessor.html',1,'ChimeraTK']]],
   ['statusaccessor_3c_20scalarpollinput_3c_20int32_5ft_20_3e_20_3e',['StatusAccessor&lt; ScalarPollInput&lt; int32_t &gt; &gt;',['../struct_chimera_t_k_1_1_status_accessor.html',1,'ChimeraTK']]],
   ['statusaccessor_3c_20scalarpushinput_3c_20int32_5ft_20_3e_20_3e',['StatusAccessor&lt; ScalarPushInput&lt; int32_t &gt; &gt;',['../struct_chimera_t_k_1_1_status_accessor.html',1,'ChimeraTK']]],
-  ['statusaccessorbase',['StatusAccessorBase',['../struct_chimera_t_k_1_1_status_accessor_base.html',1,'ChimeraTK']]],
   ['statusaggregator',['StatusAggregator',['../struct_chimera_t_k_1_1_status_aggregator.html',1,'ChimeraTK']]],
   ['statusgenerator',['StatusGenerator',['../struct_status_generator.html',1,'']]],
   ['statusmonitor',['StatusMonitor',['../struct_chimera_t_k_1_1_status_monitor.html',1,'ChimeraTK']]],
   ['statusmonitorimpl',['StatusMonitorImpl',['../struct_chimera_t_k_1_1_status_monitor_impl.html',1,'ChimeraTK']]],
   ['statusmonitorimpl_3c_20double_20_3e',['StatusMonitorImpl&lt; double &gt;',['../struct_chimera_t_k_1_1_status_monitor_impl.html',1,'ChimeraTK']]],
   ['statusoutput',['StatusOutput',['../struct_chimera_t_k_1_1_status_output.html',1,'ChimeraTK']]],
-  ['statusoutputgroup',['StatusOutputGroup',['../struct_chimera_t_k_1_1_status_aggregator_1_1_status_output_group.html',1,'ChimeraTK::StatusAggregator']]],
   ['statuspollinput',['StatusPollInput',['../struct_chimera_t_k_1_1_status_poll_input.html',1,'ChimeraTK']]],
   ['statuspushinput',['StatusPushInput',['../struct_chimera_t_k_1_1_status_push_input.html',1,'ChimeraTK']]],
+  ['statuswithmessage',['StatusWithMessage',['../struct_chimera_t_k_1_1_status_with_message.html',1,'ChimeraTK']]],
+  ['statuswithmessageinput',['StatusWithMessageInput',['../struct_chimera_t_k_1_1_status_with_message_input.html',1,'ChimeraTK']]],
   ['submodule',['SubModule',['../struct_test_module_1_1_module1_1_1_sub_module.html',1,'TestModule::Module1']]],
   ['subsubmodule',['SubSubModule',['../struct_test_module_1_1_module1_1_1_sub_module_1_1_sub_sub_module.html',1,'TestModule::Module1::SubModule']]]
 ];

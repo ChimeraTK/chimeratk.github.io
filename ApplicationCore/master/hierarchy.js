@@ -287,11 +287,10 @@ var hierarchy =
           ] ],
           [ "ChimeraTK::VariableGroup", "class_chimera_t_k_1_1_variable_group.html", [
             [ "ChimeraTK::DataLossCounter< TRIGGERTYPE >::TriggerGroup_compat", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html", null ],
-            [ "ChimeraTK::DeviceModule::DeviceError", "struct_chimera_t_k_1_1_device_module_1_1_device_error.html", null ],
             [ "ChimeraTK::HierarchyModifyingGroup", "struct_chimera_t_k_1_1_hierarchy_modifying_group.html", [
               [ "ChimeraTK::DataLossCounter< TRIGGERTYPE >::TriggerGroup", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group.html", null ],
               [ "ChimeraTK::ModifyHierarchy< ACCESSOR >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
-              [ "ChimeraTK::StatusAggregator::StatusOutputGroup", "struct_chimera_t_k_1_1_status_aggregator_1_1_status_output_group.html", null ],
+              [ "ChimeraTK::StatusWithMessage", "struct_chimera_t_k_1_1_status_with_message.html", null ],
               [ "ChimeraTK::ModifyHierarchy< ChimeraTK::ScalarOutput< int > >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
               [ "ChimeraTK::ModifyHierarchy< ChimeraTK::ScalarOutput< std::string > >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
               [ "ChimeraTK::ModifyHierarchy< ChimeraTK::ScalarOutput< uint64_t > >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
@@ -305,6 +304,7 @@ var hierarchy =
             [ "ChimeraTK::ModuleTree", "class_chimera_t_k_1_1_module_tree.html", null ],
             [ "ChimeraTK::ReadBitMask< NBITS >::Output", "struct_chimera_t_k_1_1_read_bit_mask_1_1_output.html", null ],
             [ "ChimeraTK::StatusMonitorImpl< T >::OneUp", "struct_chimera_t_k_1_1_status_monitor_impl_1_1_one_up.html", null ],
+            [ "ChimeraTK::StatusWithMessageInput", "struct_chimera_t_k_1_1_status_with_message_input.html", null ],
             [ "ChimeraTK::WriteBitMask< NBITS >::Input", "struct_chimera_t_k_1_1_write_bit_mask_1_1_input.html", null ],
             [ "Deeper2< T >::Hierarchies::Need", "struct_deeper2_1_1_hierarchies_1_1_need.html", null ],
             [ "Deeper< T >::Hierarchies", "struct_deeper_1_1_hierarchies.html", null ],
@@ -609,11 +609,14 @@ var hierarchy =
       [ "ChimeraTK::ScalarAccessor< uint8_t >", "class_chimera_t_k_1_1_scalar_accessor.html", null ]
     ] ],
     [ "ChimeraTK::TriggerFanOut::SendDataToConsumers", "struct_chimera_t_k_1_1_trigger_fan_out_1_1_send_data_to_consumers.html", null ],
-    [ "ChimeraTK::StatusAccessorBase", "struct_chimera_t_k_1_1_status_accessor_base.html", [
+    [ "StatusAccessorBase", null, [
       [ "ChimeraTK::StatusAccessor< ACCESSOR >", "struct_chimera_t_k_1_1_status_accessor.html", null ],
       [ "ChimeraTK::StatusAccessor< ScalarOutput< int32_t > >", "struct_chimera_t_k_1_1_status_accessor.html", null ],
       [ "ChimeraTK::StatusAccessor< ScalarPollInput< int32_t > >", "struct_chimera_t_k_1_1_status_accessor.html", null ],
       [ "ChimeraTK::StatusAccessor< ScalarPushInput< int32_t > >", "struct_chimera_t_k_1_1_status_accessor.html", null ]
+    ] ],
+    [ "StatusWithMessageReaderBase", null, [
+      [ "ChimeraTK::StatusWithMessageInput", "struct_chimera_t_k_1_1_status_with_message_input.html", null ]
     ] ],
     [ "Test6_a1_InitialValueEceptionDummy", "struct_test6__a1___initial_value_eception_dummy.html", null ],
     [ "Test6_a2_InitialValueEceptionDummy", "struct_test6__a2___initial_value_eception_dummy.html", null ],

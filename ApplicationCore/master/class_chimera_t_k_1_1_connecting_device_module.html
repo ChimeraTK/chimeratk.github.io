@@ -435,7 +435,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl><dt><b>Examples: </b></dt><dd><a class="el" href="example2_2demo_app2_8cc-example.html#_a15">example2/demoApp2.cc</a>.</dd>
 </dl>
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00323">323</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00319">319</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa887b7fce33e23207e0078c78d1eb1c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa887b7fce33e23207e0078c78d1eb1c4">&#9670;&nbsp;</a></span>ConnectingDeviceModule()</h2>
@@ -489,7 +489,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Note about typical usage: A <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> constructed with this constructer is often owned by the <a class="el" href="class_chimera_t_k_1_1_module_group.html">ModuleGroup</a> which is using this device. The device should be a logical name mapped device so the variable hierarchy of the <a class="el" href="class_chimera_t_k_1_1_module_group.html">ModuleGroup</a> and the Device can be matched. The logical device may be subdivided into several parts, e.g. if different parts of the device are used by independent ModuleGroups, or if different triggers are required. This is possible by use of the pathInDevice prefix. To avoid the creation of multiple DeviceBackends for the same device (which may not even be possible for some transport protocols) make sure that the device CDD is identical for all instances (the alias name does not matter, so multiple DMAP file entires pointing to the same device are possible if needed).</p>
 <p>Keep in mind that mulitple DeviceModules will perform independent and asynchronous recovery procedures after an exception, even when pointing to the same device. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00549">549</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00539">539</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -527,7 +527,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_module.html#a9b3536e232d1163debcdca29279191e2">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00579">579</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8cc_source.html#l00569">569</a> of file <a class="el" href="_device_module_8cc_source.html">DeviceModule.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -564,7 +564,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return the underlying <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00355">355</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00351">351</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -599,7 +599,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> represented by this <a class="el" href="class_chimera_t_k_1_1_connecting_device_module.html">ConnectingDeviceModule</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00365">365</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00361">361</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -625,7 +625,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Shared pointer holding the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a> if (and only if) this <a class="el" href="class_chimera_t_k_1_1_connecting_device_module.html">ConnectingDeviceModule</a> owns the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00373">373</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00369">369</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -652,7 +652,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Initialisation handler to add to the <a class="el" href="class_chimera_t_k_1_1_device_module.html" title="Implementes access to a ChimeraTK::Device. ">DeviceModule</a>. </p>
 <p>This must be done only in <a class="el" href="class_chimera_t_k_1_1_connecting_device_module.html#a5ce43a31e588040cbfbb358efb875f69">defineConnections()</a>, as otherwise the initialisation handler would need to be removed in the destructor which is not possible. Not doing so at least creates issues with move operations, especially if the initialisation handler points to a moved object. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00370">370</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00366">366</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -676,7 +676,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00362">362</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00358">358</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -700,7 +700,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00360">360</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00356">356</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -724,7 +724,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00361">361</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_module_8h_source.html#l00357">357</a> of file <a class="el" href="_device_module_8h_source.html">DeviceModule.h</a>.</p>
 
 </div>
 </div>
@@ -738,7 +738,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_connecting_device_module.html">ConnectingDeviceModule</a></li>
-    <li class="footer">Generated on Thu Apr 28 2022 03:55:43 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Jun 16 2022 03:55:16 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -82,7 +82,6 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_status_aggregat
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -115,12 +114,6 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_status_aggregat
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator_1_1_status_output_group.html">StatusOutputGroup</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The aggregated status output.  <a href="struct_chimera_t_k_1_1_status_aggregator_1_1_status_output_group.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a4a647915ca42fb4f7de4a1aed66d2334"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#a4a647915ca42fb4f7de4a1aed66d2334">PriorityMode</a> { <a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#a4a647915ca42fb4f7de4a1aed66d2334ac90c93ec623713028d0cbf53a627cbad">PriorityMode::fwok</a>, 
@@ -427,7 +420,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aaf50679c1f4cab57af9c2b66d5d750aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#aaf50679c1f4cab57af9c2b66d5d750aa">scanAndPopulateFromHierarchyLevel</a> (<a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> &amp;module, const std::string &amp;namePrefix)</td></tr>
 <tr class="memdesc:aaf50679c1f4cab57af9c2b66d5d750aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for populateStatusInput.  <a href="#aaf50679c1f4cab57af9c2b66d5d750aa">More...</a><br /></td></tr>
 <tr class="separator:aaf50679c1f4cab57af9c2b66d5d750aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77531f83df97984df96fa8eef7fde128"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#a77531f83df97984df96fa8eef7fde128">getPriority</a> (<a class="el" href="struct_chimera_t_k_1_1_status_accessor_base.html#a2cb26eb708491cef93d4bb358db711dd">StatusOutput::Status</a> status) const</td></tr>
+<tr class="memitem:a77531f83df97984df96fa8eef7fde128"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#a77531f83df97984df96fa8eef7fde128">getPriority</a> (StatusOutput::Status status) const</td></tr>
 <tr class="memdesc:a77531f83df97984df96fa8eef7fde128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert Status value into a priority (high integer value = high priority), depending on chosen PriorityMode Return value of -1 has the special meaning that the input Status's must be all equal, otherwise it must result in a warning Status.  <a href="#a77531f83df97984df96fa8eef7fde128">More...</a><br /></td></tr>
 <tr class="separator:a77531f83df97984df96fa8eef7fde128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_chimera_t_k_1_1_application_module"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_chimera_t_k_1_1_application_module')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></td></tr>
@@ -437,11 +430,12 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a0e29f435b8064eeb69dbe44dc214bce1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator_1_1_status_output_group.html">ChimeraTK::StatusAggregator::StatusOutputGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#a0e29f435b8064eeb69dbe44dc214bce1">_output</a></td></tr>
-<tr class="separator:a0e29f435b8064eeb69dbe44dc214bce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd16005e1ada056d7102d6f645d47e80"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_chimera_t_k_1_1_status_push_input.html">StatusPushInput</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#afd16005e1ada056d7102d6f645d47e80">_inputs</a></td></tr>
-<tr class="memdesc:afd16005e1ada056d7102d6f645d47e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">All status inputs to be aggregated.  <a href="#afd16005e1ada056d7102d6f645d47e80">More...</a><br /></td></tr>
-<tr class="separator:afd16005e1ada056d7102d6f645d47e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a767d08c3b9ba52e475da4ff0c22bd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_status_with_message.html">StatusWithMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#a9a767d08c3b9ba52e475da4ff0c22bd8">_output</a></td></tr>
+<tr class="memdesc:a9a767d08c3b9ba52e475da4ff0c22bd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The aggregated status output.  <a href="#a9a767d08c3b9ba52e475da4ff0c22bd8">More...</a><br /></td></tr>
+<tr class="separator:a9a767d08c3b9ba52e475da4ff0c22bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742c174eafa171afd1688234285d69e6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_chimera_t_k_1_1_status_with_message_input.html">StatusWithMessageInput</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#a742c174eafa171afd1688234285d69e6">_inputs</a></td></tr>
+<tr class="memdesc:a742c174eafa171afd1688234285d69e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">All status inputs to be aggregated.  <a href="#a742c174eafa171afd1688234285d69e6">More...</a><br /></td></tr>
+<tr class="separator:a742c174eafa171afd1688234285d69e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a909230dde3ffa65085ee1ee62122af4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#a4a647915ca42fb4f7de4a1aed66d2334">PriorityMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html#a909230dde3ffa65085ee1ee62122af4e">_mode</a></td></tr>
 <tr class="memdesc:a909230dde3ffa65085ee1ee62122af4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Priority mode used in aggregation.  <a href="#a909230dde3ffa65085ee1ee62122af4e">More...</a><br /></td></tr>
 <tr class="separator:a909230dde3ffa65085ee1ee62122af4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -526,7 +520,7 @@ Additional Inherited Members</h2></td></tr>
 <p>It will search for all StatusOutputs from its point in hierarchy downwards, matching the tagsToAggregate passed to the constructor. If a StatusOutputs beloging to another <a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html" title="The StatusAggregator collects results of multiple StatusMonitor instances and aggregates them into a ...">StatusAggregator</a> is found (also matching the tagsToAggregate) the search is not recursing further down at that branch, since the <a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html" title="The StatusAggregator collects results of multiple StatusMonitor instances and aggregates them into a ...">StatusAggregator</a> already represents the complete status of the branch below it. StatusAggregators created on the same hierarchy level (i.e. sharing the owner) never aggregate each other.</p>
 <p>Note: The aggregated instances are collected on construction. Hence, the <a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html" title="The StatusAggregator collects results of multiple StatusMonitor instances and aggregates them into a ...">StatusAggregator</a> has to be declared after all instances that shall to be included in the scope (<a class="el" href="class_chimera_t_k_1_1_module_group.html">ModuleGroup</a>, <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a>, ...) of interest. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00030">30</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00031">31</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a4a647915ca42fb4f7de4a1aed66d2334"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a647915ca42fb4f7de4a1aed66d2334">&#9670;&nbsp;</a></span>PriorityMode</h2>
@@ -563,7 +557,7 @@ Additional Inherited Members</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00039">39</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00040">40</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
 
 </div>
 </div>
@@ -752,7 +746,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#abde59a69fac6f2d07b199dfe4ec78b85">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00198">198</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00253">253</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -776,7 +770,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">int ChimeraTK::StatusAggregator::getPriority </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_chimera_t_k_1_1_status_accessor_base.html#a2cb26eb708491cef93d4bb358db711dd">StatusOutput::Status</a>&#160;</td>
+          <td class="paramtype">StatusOutput::Status&#160;</td>
           <td class="paramname"><em>status</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -790,7 +784,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Convert Status value into a priority (high integer value = high priority), depending on chosen PriorityMode Return value of -1 has the special meaning that the input Status's must be all equal, otherwise it must result in a warning Status. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00126">126</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00146">146</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -829,7 +823,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8">ChimeraTK::ApplicationModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00141">141</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8cc_source.html#l00161">161</a> of file <a class="el" href="_status_aggregator_8cc_source.html">StatusAggregator.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -969,8 +963,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="afd16005e1ada056d7102d6f645d47e80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd16005e1ada056d7102d6f645d47e80">&#9670;&nbsp;</a></span>_inputs</h2>
+<a id="a742c174eafa171afd1688234285d69e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a742c174eafa171afd1688234285d69e6">&#9670;&nbsp;</a></span>_inputs</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -979,7 +973,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="struct_chimera_t_k_1_1_status_push_input.html">StatusPushInput</a>&gt; ChimeraTK::StatusAggregator::_inputs</td>
+          <td class="memname">std::vector&lt;<a class="el" href="struct_chimera_t_k_1_1_status_with_message_input.html">StatusWithMessageInput</a>&gt; ChimeraTK::StatusAggregator::_inputs</td>
         </tr>
       </table>
   </td>
@@ -991,7 +985,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>All status inputs to be aggregated. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00106">106</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00101">101</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
 
 </div>
 </div>
@@ -1017,12 +1011,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Priority mode used in aggregation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00109">109</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00104">104</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
 
 </div>
 </div>
-<a id="a0e29f435b8064eeb69dbe44dc214bce1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e29f435b8064eeb69dbe44dc214bce1">&#9670;&nbsp;</a></span>_output</h2>
+<a id="a9a767d08c3b9ba52e475da4ff0c22bd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a767d08c3b9ba52e475da4ff0c22bd8">&#9670;&nbsp;</a></span>_output</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1031,7 +1025,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"> <a class="el" href="struct_chimera_t_k_1_1_status_aggregator_1_1_status_output_group.html">ChimeraTK::StatusAggregator::StatusOutputGroup</a>  ChimeraTK::StatusAggregator::_output</td>
+          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_status_with_message.html">StatusWithMessage</a> ChimeraTK::StatusAggregator::_output</td>
         </tr>
       </table>
   </td>
@@ -1040,6 +1034,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The aggregated status output. </p>
+
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00098">98</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
 
 </div>
 </div>
@@ -1065,7 +1063,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>List of tags to aggregate. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00112">112</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00107">107</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
 
 </div>
 </div>
@@ -1091,7 +1089,7 @@ Additional Inherited Members</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">        <span class="keyword">this</span>, <span class="stringliteral">&quot;/Debug/statusAggregators&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Print debug info for all status aggregators once.&quot;</span>}</div></div><!-- fragment -->
 <p>Allow runtime debugging (FIXME: use Void instead!) </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00120">120</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00115">115</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
 
 </div>
 </div>
@@ -1117,7 +1115,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reserved tag which is used to mark aggregated status outputs (need to stop searching further down the hierarchy) </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00091">91</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00092">92</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
 
 </div>
 </div>
@@ -1143,7 +1141,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reserved tag which is used to mark internal variables which should not be visible in the virtual hierachy. </p>
 
-<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00094">94</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_status_aggregator_8h_source.html#l00095">95</a> of file <a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>.</p>
 
 </div>
 </div>
@@ -1157,7 +1155,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html">StatusAggregator</a></li>
-    <li class="footer">Generated on Thu Apr 28 2022 03:55:44 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Thu Jun 16 2022 03:55:16 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

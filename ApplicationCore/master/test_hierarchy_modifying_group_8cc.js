@@ -33,5 +33,6 @@ var test_hierarchy_modifying_group_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#a5791d84b4c08af7cdc5e9abc9d42a10b", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#ac136e97adfba6b3856a29bdbbc442a18", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#a655c4e9829972f0a47a6965c528b283a", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#afbac65e07d7e2f36e189bd6c6cb4b54e", null ]
+    [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#afbac65e07d7e2f36e189bd6c6cb4b54e", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#af3c502828bc0942d844d7ab998f5e418", null ]
 ];

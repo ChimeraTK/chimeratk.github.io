@@ -49,15 +49,13 @@ var dir_b74252328106591dfb0d36463b609fd4 =
       [ "ReadSplitArrayModule", "struct_chimera_t_k_1_1_read_split_array_module.html", "struct_chimera_t_k_1_1_read_split_array_module" ]
     ] ],
     [ "StatusAccessor.h", "_status_accessor_8h.html", [
-      [ "StatusAccessorBase", "struct_chimera_t_k_1_1_status_accessor_base.html", "struct_chimera_t_k_1_1_status_accessor_base" ],
       [ "StatusAccessor", "struct_chimera_t_k_1_1_status_accessor.html", "struct_chimera_t_k_1_1_status_accessor" ],
       [ "StatusOutput", "struct_chimera_t_k_1_1_status_output.html", "struct_chimera_t_k_1_1_status_output" ],
       [ "StatusPushInput", "struct_chimera_t_k_1_1_status_push_input.html", null ],
       [ "StatusPollInput", "struct_chimera_t_k_1_1_status_poll_input.html", null ]
     ] ],
     [ "StatusAggregator.h", "_status_aggregator_8h.html", [
-      [ "StatusAggregator", "struct_chimera_t_k_1_1_status_aggregator.html", "struct_chimera_t_k_1_1_status_aggregator" ],
-      [ "StatusOutputGroup", "struct_chimera_t_k_1_1_status_aggregator_1_1_status_output_group.html", "struct_chimera_t_k_1_1_status_aggregator_1_1_status_output_group" ]
+      [ "StatusAggregator", "struct_chimera_t_k_1_1_status_aggregator.html", "struct_chimera_t_k_1_1_status_aggregator" ]
     ] ],
     [ "StatusMonitor.h", "_status_monitor_8h.html", [
       [ "StatusMonitor", "struct_chimera_t_k_1_1_status_monitor.html", "struct_chimera_t_k_1_1_status_monitor" ],
@@ -67,6 +65,10 @@ var dir_b74252328106591dfb0d36463b609fd4 =
       [ "MinMonitor", "struct_chimera_t_k_1_1_min_monitor.html", "struct_chimera_t_k_1_1_min_monitor" ],
       [ "RangeMonitor", "struct_chimera_t_k_1_1_range_monitor.html", "struct_chimera_t_k_1_1_range_monitor" ],
       [ "ExactMonitor", "struct_chimera_t_k_1_1_exact_monitor.html", "struct_chimera_t_k_1_1_exact_monitor" ]
+    ] ],
+    [ "StatusWithMessage.h", "_status_with_message_8h.html", [
+      [ "StatusWithMessage", "struct_chimera_t_k_1_1_status_with_message.html", "struct_chimera_t_k_1_1_status_with_message" ],
+      [ "StatusWithMessageInput", "struct_chimera_t_k_1_1_status_with_message_input.html", "struct_chimera_t_k_1_1_status_with_message_input" ]
     ] ],
     [ "UserInputValidator.h", "_user_input_validator_8h.html", [
       [ "UserInputValidator", "struct_chimera_t_k_1_1_user_input_validator.html", "struct_chimera_t_k_1_1_user_input_validator" ],

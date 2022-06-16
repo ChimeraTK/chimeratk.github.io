@@ -7,7 +7,7 @@ var searchData=
   ['m_5fthreadnames',['m_threadNames',['../class_chimera_t_k_1_1_application.html#ab430b41caafe8b0064fb38108855e45a',1,'ChimeraTK::Application']]],
   ['mainloopstarted',['mainLoopStarted',['../struct_test_module.html#ae291c3e4bac45b1e7126de77553f73bf',1,'TestModule::mainLoopStarted()'],['../struct_test_application2_1_1_module.html#a7b81d2edfb46033c740ab631915dc791',1,'TestApplication2::Module::mainLoopStarted()']]],
   ['max',['max',['../struct_chimera_t_k_1_1_limit_value.html#ac6f4be6876ca3202691de73a9a5147f4',1,'ChimeraTK::LimitValue::max()'],['../struct_module_b.html#a621ffac3a4c232d52c3d7c7495c066f9',1,'ModuleB::max()']]],
-  ['message',['message',['../struct_chimera_t_k_1_1_device_module_1_1_device_error.html#ab12031f9177387ccc2b3d505910bfafe',1,'ChimeraTK::DeviceModule::DeviceError::message()'],['../classlogging_1_1_logger.html#ae53dadb4bf80fcfd041f4ed94b68f443',1,'logging::Logger::message()'],['../structfixture__with__poll__and__push__input.html#a475eabb866d0e6abf10dbfd44df6e145',1,'fixture_with_poll_and_push_input::message()']]],
+  ['message',['message',['../classlogging_1_1_logger.html#ae53dadb4bf80fcfd041f4ed94b68f443',1,'logging::Logger::message()'],['../structfixture__with__poll__and__push__input.html#a475eabb866d0e6abf10dbfd44df6e145',1,'fixture_with_poll_and_push_input::message()']]],
   ['min',['min',['../struct_chimera_t_k_1_1_limit_value.html#a21f3bd9f62ead8b98f636be5ec9ee95e',1,'ChimeraTK::LimitValue']]],
   ['mixedgroup',['mixedGroup',['../struct_test_module.html#a0d878f5e538b4289bd18692799050831',1,'TestModule']]],
   ['mod',['mod',['../struct_test_application1.html#a32d46effef9270fef546341222dd671f',1,'TestApplication1']]],
