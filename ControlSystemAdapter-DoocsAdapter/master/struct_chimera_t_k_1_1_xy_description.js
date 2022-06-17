@@ -2,6 +2,7 @@ var struct_chimera_t_k_1_1_xy_description =
 [
     [ "Axis", "struct_chimera_t_k_1_1_xy_description_1_1_axis.html", "struct_chimera_t_k_1_1_xy_description_1_1_axis" ],
     [ "XyDescription", "struct_chimera_t_k_1_1_xy_description.html#ac50884784e27ceda204a9bdfe5edfd48", null ],
+    [ "getSources", "struct_chimera_t_k_1_1_xy_description.html#ab385d6a133708cf16c3388a805e3d8ac", null ],
     [ "print", "struct_chimera_t_k_1_1_xy_description.html#ad63794dc063c6c759a900b552fbe1fe9", null ],
     [ "type", "struct_chimera_t_k_1_1_xy_description.html#a8d7fc0a1adabf851aaee43fd439340a7", null ],
     [ "axis", "struct_chimera_t_k_1_1_xy_description.html#a38586b96103e0eedbd8eef5475620170", null ],

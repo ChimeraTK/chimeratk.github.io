@@ -15,6 +15,7 @@ var namespace_chimera_t_k =
     [ "LocationInfo", "struct_chimera_t_k_1_1_location_info.html", "struct_chimera_t_k_1_1_location_info" ],
     [ "PersistConfig", "struct_chimera_t_k_1_1_persist_config.html", "struct_chimera_t_k_1_1_persist_config" ],
     [ "PropertyAttributes", "struct_chimera_t_k_1_1_property_attributes.html", "struct_chimera_t_k_1_1_property_attributes" ],
+    [ "PropertyBase", "class_chimera_t_k_1_1_property_base.html", "class_chimera_t_k_1_1_property_base" ],
     [ "PropertyDescription", "struct_chimera_t_k_1_1_property_description.html", "struct_chimera_t_k_1_1_property_description" ],
     [ "SpectrumDescription", "struct_chimera_t_k_1_1_spectrum_description.html", "struct_chimera_t_k_1_1_spectrum_description" ],
     [ "StatusHandler", "class_chimera_t_k_1_1_status_handler.html", "class_chimera_t_k_1_1_status_handler" ],

@@ -97,6 +97,14 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_doocs_adapter.ht
  <a href="class_chimera_t_k_1_1_doocs_adapter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for ChimeraTK::DoocsAdapter:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_adapter__coll__graph.svg" width="100%" height="446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -106,6 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a396057c5005d59f33b94733e86b2948c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63f08e25bb5fe5f7752d6b77b72f9041"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ControlSystemPVManager &gt; const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_adapter.html#a63f08e25bb5fe5f7752d6b77b72f9041">getControlSystemPVManager</a> () const</td></tr>
 <tr class="separator:a63f08e25bb5fe5f7752d6b77b72f9041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5bf597dc2bae183d58a76f877205c89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_adapter.html#ae5bf597dc2bae183d58a76f877205c89">before_auto_init</a> ()</td></tr>
+<tr class="separator:ae5bf597dc2bae183d58a76f877205c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -118,6 +128,8 @@ Static Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a2ffe502b554af5713c1a1b0406f7b5a4"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_adapter.html#a2ffe502b554af5713c1a1b0406f7b5a4">updater</a></td></tr>
 <tr class="separator:a2ffe502b554af5713c1a1b0406f7b5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079032b392318763a637f520c84969cb"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_adapter.html#a079032b392318763a637f520c84969cb">writeableVariablesWithMultipleProperties</a></td></tr>
+<tr class="separator:a079032b392318763a637f520c84969cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -130,12 +142,14 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:abd9d02096a55995d55eaa0fa2fe176f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa68288d8deb8724e6c357b9ded29217c"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; DevicePVManager &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_adapter.html#aa68288d8deb8724e6c357b9ded29217c">_devicePVManager</a></td></tr>
 <tr class="separator:aa68288d8deb8724e6c357b9ded29217c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7014da3e8c5e7822d06b1af938262f5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_adapter.html#a7014da3e8c5e7822d06b1af938262f5d">before_auto_init_called</a> {false}</td></tr>
+<tr class="separator:a7014da3e8c5e7822d06b1af938262f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The main adapter class. </p>
 <p>With this tool the EqFct should shrink to about 4 lines of code (plus boiler plate). </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00013">13</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00029">29</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a07438247086e6cfac3ccf66a33226899"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07438247086e6cfac3ccf66a33226899">&#9670;&nbsp;</a></span>DoocsAdapter()</h2>
@@ -157,6 +171,33 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae5bf597dc2bae183d58a76f877205c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5bf597dc2bae183d58a76f877205c89">&#9670;&nbsp;</a></span>before_auto_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::DoocsAdapter::before_auto_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00048">48</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_adapter_ae5bf597dc2bae183d58a76f877205c89_icgraph.svg" width="484" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a516cb7cb2ede3eecdde51eba83bfc03f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a516cb7cb2ede3eecdde51eba83bfc03f">&#9670;&nbsp;</a></span>checkPrintDataLossWarning()</h2>
 
@@ -182,11 +223,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00037">37</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_adapter_a516cb7cb2ede3eecdde51eba83bfc03f_icgraph.svg" width="100%" height="461"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -209,12 +250,12 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00020">20</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_adapter_a63f08e25bb5fe5f7752d6b77b72f9041_icgraph.svg" width="404" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_adapter_a63f08e25bb5fe5f7752d6b77b72f9041_icgraph.svg" width="470" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -236,12 +277,12 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00018">18</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_adapter_a396057c5005d59f33b94733e86b2948c_icgraph.svg" width="367" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_adapter_a396057c5005d59f33b94733e86b2948c_icgraph.svg" width="443" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -271,11 +312,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_doocs_adapter_8cc_source.html#l00024">24</a> of file <a class="el" href="_doocs_adapter_8cc_source.html">DoocsAdapter.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_adapter_a95c4448e95dcf81fd189c172306d8e38_icgraph.svg" width="455" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -303,7 +344,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00032">32</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00058">58</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
 
 </div>
 </div>
@@ -327,7 +368,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00033">33</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00059">59</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
+
+</div>
+</div>
+<a id="a7014da3e8c5e7822d06b1af938262f5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7014da3e8c5e7822d06b1af938262f5d">&#9670;&nbsp;</a></span>before_auto_init_called</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::DoocsAdapter::before_auto_init_called {false}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00062">62</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
 
 </div>
 </div>
@@ -351,7 +416,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00023">23</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00045">45</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
 
 </div>
 </div>
@@ -367,7 +432,23 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00019">19</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00035">35</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
+
+</div>
+</div>
+<a id="a079032b392318763a637f520c84969cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a079032b392318763a637f520c84969cb">&#9670;&nbsp;</a></span>writeableVariablesWithMultipleProperties</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, std::set&lt;boost::shared_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a>&gt; &gt; &gt; ChimeraTK::DoocsAdapter::writeableVariablesWithMultipleProperties</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_doocs_adapter_8h_source.html#l00055">55</a> of file <a class="el" href="_doocs_adapter_8h_source.html">DoocsAdapter.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +462,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_adapter.html">DoocsAdapter</a></li>
-    <li class="footer">Generated on Thu Jun 16 2022 04:02:59 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Fri Jun 17 2022 04:00:29 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

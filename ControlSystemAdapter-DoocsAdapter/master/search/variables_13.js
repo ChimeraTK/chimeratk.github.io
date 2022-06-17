@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xsource',['xSource',['../struct_chimera_t_k_1_1_xy_description.html#a37757553ec1ab2faa41e443b562776ca',1,'ChimeraTK::XyDescription']]]
+  ['writeablevariableswithmultipleproperties',['writeableVariablesWithMultipleProperties',['../class_chimera_t_k_1_1_doocs_adapter.html#a079032b392318763a637f520c84969cb',1,'ChimeraTK::DoocsAdapter']]]
 ];

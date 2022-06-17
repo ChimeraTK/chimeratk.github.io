@@ -22,6 +22,15 @@ var hierarchy =
       [ "ChimeraTK::DoocsProcessScalar< T, DOOCS_T >", "class_chimera_t_k_1_1_doocs_process_scalar.html", null ]
     ] ],
     [ "ChimeraTK::DoocsAdapter", "class_chimera_t_k_1_1_doocs_adapter.html", null ],
+    [ "enable_shared_from_this", null, [
+      [ "ChimeraTK::PropertyBase", "class_chimera_t_k_1_1_property_base.html", [
+        [ "ChimeraTK::DoocsIfff", "class_chimera_t_k_1_1_doocs_ifff.html", null ],
+        [ "ChimeraTK::DoocsProcessArray< DOOCS_T, DOOCS_PRIMITIVE_T >", "class_chimera_t_k_1_1_doocs_process_array.html", null ],
+        [ "ChimeraTK::DoocsProcessScalar< T, DOOCS_T >", "class_chimera_t_k_1_1_doocs_process_scalar.html", null ],
+        [ "ChimeraTK::DoocsSpectrum", "class_chimera_t_k_1_1_doocs_spectrum.html", null ],
+        [ "ChimeraTK::DoocsXy", "class_chimera_t_k_1_1_doocs_xy.html", null ]
+      ] ]
+    ] ],
     [ "EqFct", null, [
       [ "ChimeraTK::CSAdapterEqFct", "class_chimera_t_k_1_1_c_s_adapter_eq_fct.html", [
         [ "TestableCSAdapterEqFct", "class_testable_c_s_adapter_eq_fct.html", null ]

@@ -5,6 +5,7 @@ var server_based_test_tools_8h =
     [ "DOOCS_ADAPTER_DEFAULT_FIXTURE", "server_based_test_tools_8h.html#a1fee8002aaa2abcd5a1b23996c3d979e", null ],
     [ "DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION", "server_based_test_tools_8h.html#a9c2852da25e25d4dc4f3f36a4ed8e8df", null ],
     [ "DOOCS_ADAPTER_DEFAULT_FIXTURE_STATIC_APPLICATION_WITH_CODE", "server_based_test_tools_8h.html#a6d61a0bc33167c439287def79f04e7e9", null ],
+    [ "TEST_WITH_TIMEOUT", "server_based_test_tools_8h.html#a272d7452848709ef0ba13b05f4fb01e1", null ],
     [ "checkDataType", "server_based_test_tools_8h.html#a1155cd082f1f8518b19c78cf3bdf6f3c", null ],
     [ "checkDoocsProperty", "server_based_test_tools_8h.html#a3c68fa49ad9439afce058be92e09824d", null ],
     [ "checkHistory", "server_based_test_tools_8h.html#a02f442b017a61d0d87ef08faf3eb4bf5", null ],

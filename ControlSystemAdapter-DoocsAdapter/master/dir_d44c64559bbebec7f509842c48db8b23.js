@@ -8,9 +8,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "D_textUnifier.h", "_d__text_unifier_8h.html", [
       [ "D_textUnifier", "struct_d__text_unifier.html", "struct_d__text_unifier" ]
     ] ],
-    [ "DoocsAdapter.h", "_doocs_adapter_8h.html", [
-      [ "DoocsAdapter", "class_chimera_t_k_1_1_doocs_adapter.html", "class_chimera_t_k_1_1_doocs_adapter" ]
-    ] ],
+    [ "DoocsAdapter.h", "_doocs_adapter_8h.html", "_doocs_adapter_8h" ],
     [ "DoocsIfff.h", "_doocs_ifff_8h.html", [
       [ "DoocsIfff", "class_chimera_t_k_1_1_doocs_ifff.html", "class_chimera_t_k_1_1_doocs_ifff" ]
     ] ],

@@ -1,8 +1,8 @@
 var searchData=
 [
   ['savearray',['saveArray',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#a4cafc4b8bd0264b955025c3b6d860a4f',1,'ChimeraTK::CSAdapterEqFct']]],
-  ['sendtoapplication',['sendToApplication',['../class_chimera_t_k_1_1_doocs_ifff.html#aaaa0cac1df491d46902f3038fb6efcbd',1,'ChimeraTK::DoocsIfff']]],
-  ['sendtodevice',['sendToDevice',['../class_chimera_t_k_1_1_doocs_process_array.html#abae2235e5e58a63afb9049b56e79bea9',1,'ChimeraTK::DoocsProcessArray::sendToDevice()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a82a1c3ef4e19443909353485811dff6a',1,'ChimeraTK::DoocsSpectrum::sendToDevice()'],['../class_testable_doocs_spectrum.html#a9eddaf724a081b996ad683e79d176693',1,'TestableDoocsSpectrum::sendToDevice()']]],
+  ['sendtoapplication',['sendToApplication',['../class_chimera_t_k_1_1_doocs_ifff.html#aa53a7159c0a221ed783b5d28731e198f',1,'ChimeraTK::DoocsIfff']]],
+  ['sendtodevice',['sendToDevice',['../class_chimera_t_k_1_1_doocs_process_array.html#a1cd96f065adc8be77560c9301bc3ae33',1,'ChimeraTK::DoocsProcessArray::sendToDevice()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#ae5eb8cc34d17f90b3556de8422f1af6d',1,'ChimeraTK::DoocsSpectrum::sendToDevice()']]],
   ['server',['server',['../struct_global_fixture.html#a6da5db95b6a905a3cc0470dc80e9c4f0',1,'GlobalFixture']]],
   ['serverbasedtesttools_2eh',['serverBasedTestTools.h',['../server_based_test_tools_8h.html',1,'']]],
   ['servertestarraypersistence_2ecpp',['serverTestArrayPersistence.cpp',['../server_test_array_persistence_8cpp.html',1,'']]],
@@ -14,6 +14,7 @@ var searchData=
   ['servertestglobalturnonoffwriteable_2ecpp',['serverTestGlobalTurnOnOffWriteable.cpp',['../server_test_global_turn_on_off_writeable_8cpp.html',1,'']]],
   ['servertestifff_2ecpp',['serverTestIfff.cpp',['../server_test_ifff_8cpp.html',1,'']]],
   ['servertestimportallintolocation_2ecpp',['serverTestImportAllIntoLocation.cpp',['../server_test_import_all_into_location_8cpp.html',1,'']]],
+  ['servertestmultimappedpv_2ecpp',['serverTestMultiMappedPV.cpp',['../server_test_multi_mapped_p_v_8cpp.html',1,'']]],
   ['servertestplainvariablecreation_2ecpp',['serverTestPlainVariableCreation.cpp',['../server_test_plain_variable_creation_8cpp.html',1,'']]],
   ['servertestreadwrite_2ecpp',['serverTestReadWrite.cpp',['../server_test_read_write_8cpp.html',1,'']]],
   ['servertestregression_5fnomatchingmpnumber_2ecc',['serverTestRegression_noMatchingMPNumber.cc',['../server_test_regression__no_matching_m_p_number_8cc.html',1,'']]],

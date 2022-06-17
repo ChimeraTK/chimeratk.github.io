@@ -122,6 +122,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac426d9dceedf73c0d2f99ebf90e5ed16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6e4f76e35862dfeed6f5f59e22ab495"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_spectrum_description.html#ab6e4f76e35862dfeed6f5f59e22ab495">print</a> (std::ostream &amp;os=std::cout) const override</td></tr>
 <tr class="separator:ab6e4f76e35862dfeed6f5f59e22ab495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62510f49575b13a9f66b8e14343aa87f"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_spectrum_description.html#a62510f49575b13a9f66b8e14343aa87f">getSources</a> () override</td></tr>
+<tr class="separator:a62510f49575b13a9f66b8e14343aa87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_chimera_t_k_1_1_property_description"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_chimera_t_k_1_1_property_description')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_chimera_t_k_1_1_property_description.html">ChimeraTK::PropertyDescription</a></td></tr>
 <tr class="memitem:a94c06c101bc5591f70c2b37f4faf931d inherit pub_methods_struct_chimera_t_k_1_1_property_description"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_property_description.html#a94c06c101bc5591f70c2b37f4faf931d">PropertyDescription</a> (std::string location_=&quot;&quot;, std::string name_=&quot;&quot;)</td></tr>
 <tr class="separator:a94c06c101bc5591f70c2b37f4faf931d inherit pub_methods_struct_chimera_t_k_1_1_property_description"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,7 +176,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00125">125</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00128">128</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a41af855afa3487885c9f1e51d4d0af98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a41af855afa3487885c9f1e51d4d0af98">&#9670;&nbsp;</a></span>SpectrumDescription()</h2>
@@ -228,11 +230,40 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00142">142</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00145">145</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a62510f49575b13a9f66b8e14343aa87f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62510f49575b13a9f66b8e14343aa87f">&#9670;&nbsp;</a></span>getSources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;std::string&gt; ChimeraTK::SpectrumDescription::getSources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="struct_chimera_t_k_1_1_property_description.html#a3a7d4a55788e2621325be1e32b9406c0">ChimeraTK::PropertyDescription</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00156">156</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+
+</div>
+</div>
 <a id="ab6e4f76e35862dfeed6f5f59e22ab495"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6e4f76e35862dfeed6f5f59e22ab495">&#9670;&nbsp;</a></span>print()</h2>
 
@@ -259,7 +290,7 @@ Public Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="struct_chimera_t_k_1_1_property_description.html#ae5425264f864fe2532c2a9241e4d6126">ChimeraTK::PropertyDescription</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00148">148</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00151">151</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -288,7 +319,7 @@ Public Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="struct_chimera_t_k_1_1_property_description.html#a05584bd5be86b762557872b69f468f47">ChimeraTK::PropertyDescription</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00147">147</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00150">150</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -305,7 +336,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00140">140</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00143">143</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -321,7 +352,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00139">139</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00142">142</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -337,7 +368,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00137">137</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00140">140</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -353,7 +384,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00135">135</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00138">138</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -369,7 +400,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00138">138</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00141">141</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -385,7 +416,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00133">133</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00136">136</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -401,7 +432,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00136">136</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00139">139</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -417,7 +448,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00134">134</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_description_8h_source.html#l00137">137</a> of file <a class="el" href="_property_description_8h_source.html">PropertyDescription.h</a>.</p>
 
 </div>
 </div>
@@ -430,7 +461,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_spectrum_description.html">SpectrumDescription</a></li>
-    <li class="footer">Generated on Thu Jun 16 2022 04:02:59 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Fri Jun 17 2022 04:00:29 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

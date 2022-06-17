@@ -1,8 +1,8 @@
 var searchData=
 [
   ['savearray',['saveArray',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#a4cafc4b8bd0264b955025c3b6d860a4f',1,'ChimeraTK::CSAdapterEqFct']]],
-  ['sendtoapplication',['sendToApplication',['../class_chimera_t_k_1_1_doocs_ifff.html#aaaa0cac1df491d46902f3038fb6efcbd',1,'ChimeraTK::DoocsIfff']]],
-  ['sendtodevice',['sendToDevice',['../class_chimera_t_k_1_1_doocs_process_array.html#abae2235e5e58a63afb9049b56e79bea9',1,'ChimeraTK::DoocsProcessArray::sendToDevice()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a82a1c3ef4e19443909353485811dff6a',1,'ChimeraTK::DoocsSpectrum::sendToDevice()'],['../class_testable_doocs_spectrum.html#a9eddaf724a081b996ad683e79d176693',1,'TestableDoocsSpectrum::sendToDevice()']]],
+  ['sendtoapplication',['sendToApplication',['../class_chimera_t_k_1_1_doocs_ifff.html#aa53a7159c0a221ed783b5d28731e198f',1,'ChimeraTK::DoocsIfff']]],
+  ['sendtodevice',['sendToDevice',['../class_chimera_t_k_1_1_doocs_process_array.html#a1cd96f065adc8be77560c9301bc3ae33',1,'ChimeraTK::DoocsProcessArray::sendToDevice()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#ae5eb8cc34d17f90b3556de8422f1af6d',1,'ChimeraTK::DoocsSpectrum::sendToDevice()']]],
   ['set',['set',['../class_chimera_t_k_1_1_doocs_ifff.html#a856371572bcbb46ec010641f75a4ea58',1,'ChimeraTK::DoocsIfff::set()'],['../class_chimera_t_k_1_1_doocs_process_array.html#a14b984d84addffe256f4bf4cfa29f8a0',1,'ChimeraTK::DoocsProcessArray::set()'],['../class_chimera_t_k_1_1_doocs_process_scalar.html#ac9f48a3ee466e86095d17f3ff268d08f',1,'ChimeraTK::DoocsProcessScalar::set()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a06ed6051d5722b690e217d39073ae24f',1,'ChimeraTK::DoocsSpectrum::set()']]],
   ['set_5fand_5farchive',['set_and_archive',['../struct_d__text_unifier.html#acc4bbc994bdedcd86a92a27e856d2a39',1,'D_textUnifier']]],
   ['set_5fdoocs_5fvalue',['set_doocs_value',['../set__doocs__value_8h.html#aa1af9201ce386d11499030efe6def5d1',1,'set_doocs_value.h']]],
