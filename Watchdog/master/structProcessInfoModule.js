@@ -4,7 +4,7 @@ var structProcessInfoModule =
     [ "Statistics", "structProcessInfoModule_1_1Statistics.html", "structProcessInfoModule_1_1Statistics" ],
     [ "Status", "structProcessInfoModule_1_1Status.html", "structProcessInfoModule_1_1Status" ],
     [ "TriggerGroup", "structProcessInfoModule_1_1TriggerGroup.html", "structProcessInfoModule_1_1TriggerGroup" ],
-    [ "ProcessInfoModule", "structProcessInfoModule.html#aa1c07e821d431028e2a1f596229acf87", null ],
+    [ "ProcessInfoModule", "structProcessInfoModule.html#a4df5e5d9a79ba586f9443c18dff8ff5d", null ],
     [ "FillProcInfo", "structProcessInfoModule.html#a85e87f2c7a75ada7b23e8a672b06c75a", null ],
     [ "getTime", "structProcessInfoModule.html#ada9eaa0787b9c5b393450c321e8941a7", null ],
     [ "mainLoop", "structProcessInfoModule.html#a66f1ebb4d2179c7ceb5798fd1c81bc27", null ],
