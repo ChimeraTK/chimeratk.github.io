@@ -82,7 +82,6 @@ $(document).ready(function(){initNavTree('spec__version_propagation.html','');})
 
 <div class="contents">
 <div class="textblock"><p><b>STUB VERSION, COLLECTION OF BITS AND BOBS THAT ARE NOT WRITTEN DOWN ANYWHERE</b></p>
-<h2><a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a></h2>
 <ul>
 <li>Push-type ProcessArrays will try update their owner's module version (AplicationModule::setCurrentVersion()) on each TransferMode::read transfer<ul>
 <li>The version update is independent of the availability of new data.</li>
@@ -92,7 +91,6 @@ $(document).ready(function(){initNavTree('spec__version_propagation.html','');})
 <li>Poll-type ProcessArrays and non-blocking read transfers (TransferMode::readNonBlocking, TransferMode::readLatest) on Push-type ProccessArrays will NOT alter the version of their owner.</li>
 <li>All write transfers on ProcessArrays associated with a module will use ApplicationModule::getCurrentVersion() as the version associated with that transfer.</li>
 </ul>
-<h2>Transfer Groups</h2>
 <ul>
 <li>Transfer elements that are part of a TransferGroup can share a common version number that can signify data consistency if they are part of a merged transfer (TE 12.1.1.1, TODO needs anchor) </li>
 </ul>
@@ -101,7 +99,7 @@ $(document).ready(function(){initNavTree('spec__version_propagation.html','');})
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 16 2022 03:55:13 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Jun 18 2022 03:56:59 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

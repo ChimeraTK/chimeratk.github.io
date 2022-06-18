@@ -74,6 +74,70 @@ var NAVTREE =
     [ "spec_VersionPropagation", "spec__version_propagation.html", null ],
     [ "What's new in ApplicationCore 2.0", "whats_new__a_c_2_0.html", [
       [ "Initial value propagation", "whats_new__a_c_2_0.html#whats_new_2_0_initial_value", [
+        [ "A. Introduction", "spec_initial_value_propagation.html#autotoc_md16", null ],
+        [ "B. Definitions", "spec_initial_value_propagation.html#autotoc_md17", null ],
+        [ "C. High-level requirements", "spec_initial_value_propagation.html#autotoc_md18", [
+          [ "(*) Comments", "spec_initial_value_propagation.html#autotoc_md19", null ]
+        ] ],
+        [ "D. Detailed requirements", "spec_initial_value_propagation.html#autotoc_md20", [
+          [ "Comments", "spec_initial_value_propagation.html#autotoc_md21", null ]
+        ] ],
+        [ "E. Implementation", "spec_initial_value_propagation.html#autotoc_md22", [
+          [ "NDRegisterAccessor implementations", "spec_initial_value_propagation.html#autotoc_md23", null ],
+          [ "ApplicationModule", "spec_initial_value_propagation.html#autotoc_md24", null ],
+          [ "ThreadedFanOut", "spec_initial_value_propagation.html#autotoc_md25", null ],
+          [ "TriggerFanOut", "spec_initial_value_propagation.html#autotoc_md26", null ],
+          [ "DeviceModule", "spec_initial_value_propagation.html#autotoc_md27", null ],
+          [ "ExceptionHandlingDecorator", "spec_initial_value_propagation.html#autotoc_md28", null ],
+          [ "Application", "spec_initial_value_propagation.html#autotoc_md29", null ],
+          [ "ControlSystemAdapter", "spec_initial_value_propagation.html#autotoc_md30", null ],
+          [ "@anchor initialValue_E_process_arrays ProcessArrays", "spec_initial_value_propagation.html#autotoc_md31", null ]
+        ] ],
+        [ "F. Known bugs [OUTDATED!!!]", "spec_initial_value_propagation.html#autotoc_md32", [
+          [ "DeviceAccess interface", "spec_initial_value_propagation.html#autotoc_md33", null ],
+          [ "NDRegisterAccessor implementations", "spec_initial_value_propagation.html#autotoc_md34", null ],
+          [ "ApplicationModule / EntityOwner", "spec_initial_value_propagation.html#autotoc_md35", null ],
+          [ "TriggerFanOut", "spec_initial_value_propagation.html#autotoc_md36", null ],
+          [ "DeviceModule", "spec_initial_value_propagation.html#autotoc_md37", null ],
+          [ "ExceptionHandlingDecorator", "spec_initial_value_propagation.html#autotoc_md38", null ],
+          [ "VariableNetworkNode", "spec_initial_value_propagation.html#autotoc_md39", null ],
+          [ "ControlSystemAdapter", "spec_initial_value_propagation.html#autotoc_md40", null ],
+          [ "Non-memeber functions", "spec_initial_value_propagation.html#autotoc_md41", null ],
+          [ "Documentation", "spec_initial_value_propagation.html#autotoc_md42", null ]
+        ] ],
+        [ "1. General idea", "spec_data_validity_propagation.html#autotoc_md0", [
+          [ "Comments", "spec_data_validity_propagation.html#autotoc_md1", null ]
+        ] ],
+        [ "2. Technical implementation", "spec_data_validity_propagation.html#autotoc_md2", [
+          [ "2.1 MetaDataPropagatingRegisterDecorator (*)", "spec_data_validity_propagation.html#autotoc_md3", null ],
+          [ "2.2 removed", "spec_data_validity_propagation.html#autotoc_md4", null ],
+          [ "2.3 ApplicationModule", "spec_data_validity_propagation.html#autotoc_md5", null ],
+          [ "2.4 TriggerFanOut", "spec_data_validity_propagation.html#autotoc_md6", null ],
+          [ "2.5 Interaction with exception handling", "spec_data_validity_propagation.html#autotoc_md7", null ],
+          [ "2.6 Application class", "spec_data_validity_propagation.html#autotoc_md8", null ],
+          [ "Comments:", "spec_data_validity_propagation.html#autotoc_md9", null ]
+        ] ],
+        [ "3. Implementation details", "spec_data_validity_propagation.html#autotoc_md10", null ],
+        [ "4. Circular dependencies", "spec_data_validity_propagation.html#autotoc_md11", [
+          [ "4.1 General behaviour", "spec_data_validity_propagation.html#autotoc_md12", [
+            [ "Comments", "spec_data_validity_propagation.html#autotoc_md13", null ]
+          ] ],
+          [ "4.3 Technical implementation", "spec_data_validity_propagation.html#autotoc_md14", [
+            [ "Comments", "spec_data_validity_propagation.html#autotoc_md15", null ]
+          ] ]
+        ] ],
+        [ "Introduction", "spec__status_aggregator.html#autotoc_md43", null ],
+        [ "High-level requirements", "spec__status_aggregator.html#autotoc_md44", [
+          [ "R1.1 Automatic detection of instances", "spec__status_aggregator.html#autotoc_md45", null ],
+          [ "R1.2 Priorization of status values", "spec__status_aggregator.html#autotoc_md46", null ],
+          [ "Constraints and issues", "spec__status_aggregator.html#autotoc_md47", null ]
+        ] ],
+        [ "Implementation", "spec__status_aggregator.html#autotoc_md48", [
+          [ "Requirements", "spec__status_aggregator.html#autotoc_md49", null ],
+          [ "Constraints and issues", "spec__status_aggregator.html#autotoc_md50", null ]
+        ] ],
+        [ "ApplicationModule", "spec__version_propagation.html#autotoc_md51", null ],
+        [ "Transfer Groups", "spec__version_propagation.html#autotoc_md52", null ],
         [ "Required changes to existing applications", "whats_new__a_c_2_0.html#whats_new_2_0_initial_value_app_change", null ]
       ] ]
     ] ],
@@ -126,15 +190,15 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_scalar_accessor.html#a0df7a7b00fc2569723620429ae22e8c1",
 "class_timer_dummy_register_accessor.html#a3273ca0691293b8cd2117a74e5bcd81a",
 "oven__sim2c_8py.html#a97f2fff2d514e1d3ff8a8d5384b0a41d",
-"struct_chimera_t_k_1_1_functor_fill.html#ade02c32a80ff802889863bc8bfa22bd0",
-"struct_chimera_t_k_1_1_variable_network_node__data.html#a55196ea2ebb93e081d552de34bd65777",
-"struct_first_hierarchy_1_1_test_module.html#a4c9d224ce0b4c63dbf95f702a505214a",
-"struct_reader_module.html#ae3ccaeaa6f0c04a6fa7fbb3b47387998",
-"struct_test_application.html#a4702932ffea66d2abc6e24d388961cf7",
-"struct_test_application__move_construct_1_1_test_module.html",
-"struct_test_module_base.html#ac48ef2191b5ceb3e495db3f5378155ad",
-"test_device_accessors_8cc.html#a325c64c917833c03a0e261dfb62b522d",
-"test_test_facility2_8cc.html#a6b2a3852db8bb19ab6909bac01859985"
+"struct_chimera_t_k_1_1_config_reader_1_1_var.html#abed95dec950c3af9ff90c26d903dc304",
+"struct_chimera_t_k_1_1_trigger_fan_out_1_1_send_data_to_consumers.html",
+"struct_example_app.html#a1ee7980cd0cbed783956d1ddac0a4f4d",
+"struct_push_dummy_application.html#aa5dd15cf8c5d774232d04018e25b2c66",
+"struct_test_app.html#ac814e0feffbd826b1e91dab97db727eb",
+"struct_test_application_1_1_test_module.html#a012582f8859e1a970ed3a0bb058f9438",
+"struct_test_module2.html#a6bea7575ddab25afcb8720b601a2e824",
+"test_c_s_network_merging_8cc.html#a6b2a3852db8bb19ab6909bac01859985",
+"test_propagate_data_fault_flag_8cc.html#a6b2a3852db8bb19ab6909bac01859985"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
