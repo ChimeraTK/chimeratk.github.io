@@ -119,6 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a939072fc261e4422c48e699ddd7c27cf"><td class="memItemLeft" align="right" valign="top">ProcessVariable::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a939072fc261e4422c48e699ddd7c27cf">getProcessVariable</a> (const ChimeraTK::RegisterPath &amp;processVariableName) const</td></tr>
 <tr class="memdesc:a939072fc261e4422c48e699ddd7c27cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to a process scalar or array that has been created earlier using the createProcessArray(SynchronizationDirection, const ChimeraTK::RegisterPath&amp;, std::size_t, const std::string&amp;, const std::string&amp;, T, bool, std::size_t, const AccessModeFlags&amp;), or createProcessArray(SynchronizationDirection, const ChimeraTK::RegisterPath&amp;, const std::vector&lt;T&gt;&amp;, const std::string&amp;, const std::string&amp;, bool, std::size_t, const AccessModeFlags&amp;) method.  <a href="#a939072fc261e4422c48e699ddd7c27cf">More...</a><br /></td></tr>
 <tr class="separator:a939072fc261e4422c48e699ddd7c27cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a59b4d240b37ade4636ff6a31167ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a53a59b4d240b37ade4636ff6a31167ca">hasProcessVariable</a> (ChimeraTK::RegisterPath const &amp;processVariableName) const</td></tr>
+<tr class="memdesc:a53a59b4d240b37ade4636ff6a31167ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a process scalar or array with the specified name exists.  <a href="#a53a59b4d240b37ade4636ff6a31167ca">More...</a><br /></td></tr>
+<tr class="separator:a53a59b4d240b37ade4636ff6a31167ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c2cfffbc7d75bd8205b673c125f1105"><td class="memItemLeft" align="right" valign="top">std::vector&lt; ProcessVariable::SharedPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html#a5c2cfffbc7d75bd8205b673c125f1105">getAllProcessVariables</a> () const</td></tr>
 <tr class="memdesc:a5c2cfffbc7d75bd8205b673c125f1105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector containing all process variables that are registered with this PV manager.  <a href="#a5c2cfffbc7d75bd8205b673c125f1105">More...</a><br /></td></tr>
 <tr class="separator:a5c2cfffbc7d75bd8205b673c125f1105"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,7 +228,7 @@ template&lt;class T &gt; </div>
 <p>The number of buffers (the minimum and default value is two) is the max. number of values that can be queued in the transfer queue. Specifying a larger number make loss of data less likely but increases the memory footprint.</p>
 <p>Two process variables are created: one for the control system and one for the device library. The one that is returned is the one that should be used by the device library. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_p_v_manager_8h_source.html#l00163">163</a> of file <a class="el" href="_device_p_v_manager_8h_source.html">DevicePVManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_p_v_manager_8h_source.html#l00171">171</a> of file <a class="el" href="_device_p_v_manager_8h_source.html">DevicePVManager.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +296,7 @@ template&lt;class T &gt; </div>
 <p>The number of buffers (the minimum and default value is two) is the max. number of values that can be queued in the transfer queue. Specifying a larger number make loss of data less likely but increases the memory footprint.</p>
 <p>Two process variables are created: one for the control system and one for the device library. The one that is returned is the one that should be used by the device library. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_p_v_manager_8h_source.html#l00190">190</a> of file <a class="el" href="_device_p_v_manager_8h_source.html">DevicePVManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_p_v_manager_8h_source.html#l00198">198</a> of file <a class="el" href="_device_p_v_manager_8h_source.html">DevicePVManager.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +317,15 @@ template&lt;class T &gt; </div>
 
 <p>Returns a vector containing all process variables that are registered with this PV manager. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_p_v_manager_8cc_source.html#l00017">17</a> of file <a class="el" href="_device_p_v_manager_8cc_source.html">DevicePVManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_p_v_manager_8cc_source.html#l00014">14</a> of file <a class="el" href="_device_p_v_manager_8cc_source.html">DevicePVManager.cc</a>.</p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_p_v_manager_a5c2cfffbc7d75bd8205b673c125f1105_icgraph.svg" width="499" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -337,9 +348,9 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns a reference to a process array that has been created earlier using the createProcessArray(SynchronizationDirection, const ChimeraTK::RegisterPath&amp;, std::size_t, const std::string&amp;, const std::string&amp;, T, bool, std::size_t, const AccessModeFlags&amp;) or createProcessArray(SynchronizationDirection, const ChimeraTK::RegisterPath&amp;, const std::vector&lt;T&gt;&amp;, const std::string&amp;, const std::string&amp;, bool, std::size_t, const AccessModeFlags&amp;) method. </p>
-<p>Returns a pointer to <code>null</code> if there is no process scalar or array with the specified name. Throws a logic_error if there is a process scalar or array with the specified name but its type does not match. </p>
+<p>Throws a logic_error if there is no process scalar or array with the specified name. Also throws logic_error if there is a process scalar or array with the specified name but its type does not match. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_p_v_manager_8h_source.html#l00214">214</a> of file <a class="el" href="_device_p_v_manager_8h_source.html">DevicePVManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_p_v_manager_8h_source.html#l00222">222</a> of file <a class="el" href="_device_p_v_manager_8h_source.html">DevicePVManager.h</a>.</p>
 
 </div>
 </div>
@@ -360,9 +371,47 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns a reference to a process scalar or array that has been created earlier using the createProcessArray(SynchronizationDirection, const ChimeraTK::RegisterPath&amp;, std::size_t, const std::string&amp;, const std::string&amp;, T, bool, std::size_t, const AccessModeFlags&amp;), or createProcessArray(SynchronizationDirection, const ChimeraTK::RegisterPath&amp;, const std::vector&lt;T&gt;&amp;, const std::string&amp;, const std::string&amp;, bool, std::size_t, const AccessModeFlags&amp;) method. </p>
-<p>Returns a pointer to <code>null</code> if there is no process scalar or array with the specified name. The <code>getProcessScalar(const ChimeraTK::RegisterPath&amp;)</code> and <code>getProcessArray(const ChimeraTK::RegisterPath&amp;)</code> methods should be preferred if the type of the process variable is known at compile time. </p>
+<p>Throws a logic_error if there is no process scalar or array with the specified name. Also throws logic_error if there is a process scalar or array with the specified name but its type does not match. The <code>getProcessScalar(const ChimeraTK::RegisterPath&amp;)</code> and <code>getProcessArray(const ChimeraTK::RegisterPath&amp;)</code> methods should be preferred if the type of the process variable is known at compile time. </p>
 
 <p class="definition">Definition at line <a class="el" href="_device_p_v_manager_8cc_source.html#l00009">9</a> of file <a class="el" href="_device_p_v_manager_8cc_source.html">DevicePVManager.cc</a>.</p>
+
+</div>
+</div>
+<a id="a53a59b4d240b37ade4636ff6a31167ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53a59b4d240b37ade4636ff6a31167ca">&#9670;&nbsp;</a></span>hasProcessVariable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ChimeraTK::DevicePVManager::hasProcessVariable </td>
+          <td>(</td>
+          <td class="paramtype">ChimeraTK::RegisterPath const &amp;&#160;</td>
+          <td class="paramname"><em>processVariableName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether a process scalar or array with the specified name exists. </p>
+
+<p class="definition">Definition at line <a class="el" href="_device_p_v_manager_8h_source.html#l00152">152</a> of file <a class="el" href="_device_p_v_manager_8h_source.html">DevicePVManager.h</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_device_p_v_manager_a53a59b4d240b37ade4636ff6a31167ca_cgraph.svg" width="499" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -407,7 +456,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html">DevicePVManager</a></li>
-    <li class="footer">Generated on Sat Jun 18 2022 03:56:00 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Wed Jun 29 2022 03:55:05 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
