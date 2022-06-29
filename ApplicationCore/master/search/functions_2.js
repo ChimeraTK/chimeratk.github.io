@@ -31,12 +31,10 @@ var searchData=
   ['createandgetsubmodulerecursive',['createAndGetSubmoduleRecursive',['../class_chimera_t_k_1_1_virtual_module.html#a28338588d4dd3ad1deac932ae7b70a72',1,'ChimeraTK::VirtualModule']]],
   ['createapplicationvariable',['createApplicationVariable',['../class_chimera_t_k_1_1_application.html#a11ee00018ac000ba12d9e250f5803a28',1,'ChimeraTK::Application']]],
   ['createarray',['createArray',['../struct_chimera_t_k_1_1_config_reader.html#afba6fa48bc3f8a00adae168e72e6f2e0',1,'ChimeraTK::ConfigReader']]],
-  ['createarray_3c_20std_3a_3astring_20_3e',['createArray&lt; std::string &gt;',['../namespace_chimera_t_k.html#a708ff6d4b362ef1285e62e2954ff804f',1,'ChimeraTK']]],
   ['createconstaccessor',['createConstAccessor',['../class_chimera_t_k_1_1_variable_network_node.html#a15e0ca03621ea04cb6b9aab2ebf7b777',1,'ChimeraTK::VariableNetworkNode']]],
   ['createdevicevariable',['createDeviceVariable',['../class_chimera_t_k_1_1_application.html#a3f9ce1e49b8dfc7f9228a2db7db0a775',1,'ChimeraTK::Application']]],
   ['createinstance',['createInstance',['../class_demo_dummy.html#a81a761189bbada41323514360fb3a2e6',1,'DemoDummy::createInstance()'],['../class_timer_dummy.html#ac46ae268eb8c9688c411d3b108eb5f95',1,'TimerDummy::createInstance()'],['../class_test_transfer_group_dummy.html#aaca72b0f6941ff21ea8c2318f0ab601f',1,'TestTransferGroupDummy::createInstance()']]],
   ['createnetwork',['createNetwork',['../class_chimera_t_k_1_1_application.html#afbcfcd3b9b23aa5df19a661a9f8a80bb',1,'ChimeraTK::Application']]],
   ['createprocessvariable',['createProcessVariable',['../class_chimera_t_k_1_1_application.html#a7ffa5299dd6e3692f34eb88d16fb4b15',1,'ChimeraTK::Application']]],
-  ['createvar',['createVar',['../struct_chimera_t_k_1_1_config_reader.html#a4d05f33a9e1cec75914953c25c51e6ce',1,'ChimeraTK::ConfigReader']]],
-  ['createvar_3c_20std_3a_3astring_20_3e',['createVar&lt; std::string &gt;',['../namespace_chimera_t_k.html#a6e327a9236115c1fe8a03f2c31e61fbb',1,'ChimeraTK']]]
+  ['createvar',['createVar',['../struct_chimera_t_k_1_1_config_reader.html#a4d05f33a9e1cec75914953c25c51e6ce',1,'ChimeraTK::ConfigReader']]]
 ];
