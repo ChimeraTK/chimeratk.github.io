@@ -8,6 +8,6 @@ var class_chimera_t_k_1_1_p_v_manager =
     [ "getAllProcessVariables", "class_chimera_t_k_1_1_p_v_manager.html#ab5921db2ce0a6de40a3354b9d7fce81d", null ],
     [ "getProcessArray", "class_chimera_t_k_1_1_p_v_manager.html#a7550c0066ace01a7d7ec2d7a7c22b74b", null ],
     [ "getProcessVariable", "class_chimera_t_k_1_1_p_v_manager.html#ab684935583b526e5a2bf1ed3a860e97f", null ],
-    [ "hasProcessArray", "class_chimera_t_k_1_1_p_v_manager.html#acf19338f5282889c4d4c2aa59a7bc596", null ],
+    [ "hasProcessVariable", "class_chimera_t_k_1_1_p_v_manager.html#a2534cbf9d8f8d975cf50fec077e0b8be", null ],
     [ "createPVManager", "class_chimera_t_k_1_1_p_v_manager.html#ab4cc40820493020ce035479360273eff", null ]
 ];

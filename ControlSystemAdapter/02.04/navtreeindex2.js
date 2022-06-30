@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"struct_test_application_fixture.html#a8c3cd97ce805b5f2e911b1e2ae0de922":[2,0,18,8],
+"struct_test_application_fixture.html#a8cda99c5b93fd17d094b25361c54193f":[2,0,18,1],
 "struct_test_application_fixture.html#aa8ec4e4bd2cf4e4097922c9a84585bf3":[2,0,18,9],
 "struct_test_application_fixture.html#ab31faee6ca0ae368646af11514b75b0f":[2,0,18,3],
 "struct_test_application_fixture.html#ad6e8f8dc06cd3d0107b31cae4e58e5b7":[2,0,18,6],

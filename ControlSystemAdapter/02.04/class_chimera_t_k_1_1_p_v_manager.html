@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="ChimeraTK_Logo_whitebg.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ChimeraTK-ControlSystemAdapter
-   &#160;<span id="projectnumber">02.04.00</span>
+   &#160;<span id="projectnumber">02.04.01</span>
    </div>
   </td>
  </tr>
@@ -136,9 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7550c0066ace01a7d7ec2d7a7c22b74b"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr, typename <a class="el" href="class_chimera_t_k_1_1_process_array.html">ProcessArray</a>&lt; T &gt;::SharedPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#a7550c0066ace01a7d7ec2d7a7c22b74b">getProcessArray</a> (ChimeraTK::RegisterPath const &amp;processVariableName) const</td></tr>
 <tr class="memdesc:a7550c0066ace01a7d7ec2d7a7c22b74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to a process array that has been created earlier using one of the <code>createProcessArray...</code> methods.  <a href="#a7550c0066ace01a7d7ec2d7a7c22b74b">More...</a><br /></td></tr>
 <tr class="separator:a7550c0066ace01a7d7ec2d7a7c22b74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf19338f5282889c4d4c2aa59a7bc596"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#acf19338f5282889c4d4c2aa59a7bc596">hasProcessArray</a> (ChimeraTK::RegisterPath const &amp;processVariableName) const</td></tr>
-<tr class="memdesc:acf19338f5282889c4d4c2aa59a7bc596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a process scalar or array with the specified name exists.  <a href="#acf19338f5282889c4d4c2aa59a7bc596">More...</a><br /></td></tr>
-<tr class="separator:acf19338f5282889c4d4c2aa59a7bc596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2534cbf9d8f8d975cf50fec077e0b8be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#a2534cbf9d8f8d975cf50fec077e0b8be">hasProcessVariable</a> (ChimeraTK::RegisterPath const &amp;processVariableName) const</td></tr>
+<tr class="memdesc:a2534cbf9d8f8d975cf50fec077e0b8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a process scalar or array with the specified name exists.  <a href="#a2534cbf9d8f8d975cf50fec077e0b8be">More...</a><br /></td></tr>
+<tr class="separator:a2534cbf9d8f8d975cf50fec077e0b8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab684935583b526e5a2bf1ed3a860e97f"><td class="memItemLeft" align="right" valign="top">std::pair&lt; ProcessVariable::SharedPtr, ProcessVariable::SharedPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html#ab684935583b526e5a2bf1ed3a860e97f">getProcessVariable</a> (ChimeraTK::RegisterPath const &amp;processVariableName) const</td></tr>
 <tr class="memdesc:ab684935583b526e5a2bf1ed3a860e97f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to a process scalar or array that has been created earlier using one of the <code>createProcessScalar...</code> or <code>createProcessArray...</code> methods.  <a href="#ab684935583b526e5a2bf1ed3a860e97f">More...</a><br /></td></tr>
 <tr class="separator:ab684935583b526e5a2bf1ed3a860e97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -493,8 +493,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="acf19338f5282889c4d4c2aa59a7bc596"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf19338f5282889c4d4c2aa59a7bc596">&#9670;&nbsp;</a></span>hasProcessArray()</h2>
+<a id="a2534cbf9d8f8d975cf50fec077e0b8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2534cbf9d8f8d975cf50fec077e0b8be">&#9670;&nbsp;</a></span>hasProcessVariable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -503,7 +503,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool ChimeraTK::PVManager::hasProcessArray </td>
+          <td class="memname">bool ChimeraTK::PVManager::hasProcessVariable </td>
           <td>(</td>
           <td class="paramtype">ChimeraTK::RegisterPath const &amp;&#160;</td>
           <td class="paramname"><em>processVariableName</em></td><td>)</td>
@@ -564,7 +564,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_p_v_manager.html">PVManager</a></li>
-    <li class="footer">Generated on Sat Jun 18 2022 03:56:12 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Thu Jun 30 2022 03:56:13 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
