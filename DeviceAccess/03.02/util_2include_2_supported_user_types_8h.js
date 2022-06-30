@@ -28,6 +28,7 @@ var util_2include_2_supported_user_types_8h =
     [ "operator<<", "util_2include_2_supported_user_types_8h.html#af18aef2d15d6461cd8122f11666de2e1", null ],
     [ "operator>>", "util_2include_2_supported_user_types_8h.html#a7b608503f26011e1e46f845fe3916ccb", null ],
     [ "operator>>", "util_2include_2_supported_user_types_8h.html#a2c70352ca3e000b7378e9fd5a28bacee", null ],
+    [ "to_string", "util_2include_2_supported_user_types_8h.html#a20b2775608abae67eee7a9e7b7cf6b3c", null ],
     [ "userTypeToNumeric", "util_2include_2_supported_user_types_8h.html#a7fbd27ae4a9682ebb5b14b6c967f488b", null ],
     [ "userTypeToUserType", "util_2include_2_supported_user_types_8h.html#a4db52a34472ed003b9ffeb24195f457e", null ]
 ];
