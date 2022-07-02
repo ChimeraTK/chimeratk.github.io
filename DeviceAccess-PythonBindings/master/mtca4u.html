@@ -23,6 +23,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="deviceaccess module" href="deviceaccess.html" />
     <link rel="prev" title="mtca4u Python Bindings Doucmentation" href="index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -427,7 +428,7 @@ registerPath is provided.</p>
 If module name is not applicable to the register, then provide an empty
 string as the parameter value.</li>
 <li><strong>registerName</strong> (<em>str</em><em>, </em><em>optional</em>) – Mapped name of the register to write to</li>
-<li><strong>dataToWrite</strong> (<em>int</em><em>, </em><em>float</em><em>,     </em><em>list of int/float</em><em>, </em><em>numpy.array</em><em>(</em><em>dtype numpy.float32/64</em><em>)</em><em>,     </em><em>numpy.array</em><em>(</em><em>dtype = numpy.int32/64</em><em>)</em>) – The data to be written in to the register. it may be a numpy.float32/64 or a
+<li><strong>dataToWrite</strong> (<em>int</em><em>, </em><em>float</em><em>,         </em><em>list of int/float</em><em>, </em><em>numpy.array</em><em>(</em><em>dtype numpy.float32/64</em><em>)</em><em>,         </em><em>numpy.array</em><em>(</em><em>dtype = numpy.int32/64</em><em>)</em>) – The data to be written in to the register. it may be a numpy.float32/64 or a
 numpy.int32/64 array or a list with int or float values . Each value in this
 array represents an induvidual element of the register. dataToWrite may also
 take on int/float type when single vaues are passesed</li>
@@ -604,7 +605,7 @@ against which it was linked</p>
 <p class="rubric">Examples</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mtca4u</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mtca4u</span><span class="o">.</span><span class="n">get_info</span><span class="p">()</span>
-<span class="go">mtca4uPy v${${PROJECT_NAME}_VERSION}, linked with mtca4u-deviceaccess v$ChimeraTK-DeviceAccess_VERSION}</span>
+<span class="go">mtca4uPy v02.03.00, linked with mtca4u-deviceaccess v$ChimeraTK-DeviceAccess_VERSION}</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -652,7 +653,13 @@ set again using set_dmap_location</p>
         <div class="sphinxsidebarwrapper">
             <p class="logo"><a href="index.html">
               <img class="logo" src="_static/DESY_logo.png" alt="Logo"/>
-            </a></p>
+            </a></p><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">mtca4u module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deviceaccess.html">deviceaccess module</a></li>
+</ul>
+
+
 <h1 class="logo"><a href="index.html">mtca4uPy</a></h1>
 
 
@@ -662,16 +669,12 @@ set again using set_dmap_location</p>
 
 
 
-<h3>Navigation</h3>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">mtca4u module</a></li>
-</ul>
-
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="index.html" title="previous chapter">mtca4u Python Bindings Doucmentation</a></li>
+      <li>Next: <a href="deviceaccess.html" title="next chapter">deviceaccess module</a></li>
   </ul></li>
 </ul>
 </div>
