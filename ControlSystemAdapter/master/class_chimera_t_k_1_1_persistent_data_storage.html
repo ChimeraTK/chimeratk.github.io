@@ -152,9 +152,9 @@ Protected Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac5ff86636442f6f856bf41813ecf680d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ac5ff86636442f6f856bf41813ecf680d">writeToFile</a> ()</td></tr>
-<tr class="memdesc:ac5ff86636442f6f856bf41813ecf680d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out the file containing the persistent data.  <a href="#ac5ff86636442f6f856bf41813ecf680d">More...</a><br /></td></tr>
-<tr class="separator:ac5ff86636442f6f856bf41813ecf680d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a968935ca0a2e351ec9d9623c9931b821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#a968935ca0a2e351ec9d9623c9931b821">writeToFile</a> () noexcept</td></tr>
+<tr class="memdesc:a968935ca0a2e351ec9d9623c9931b821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write out the file containing the persistent data.  <a href="#a968935ca0a2e351ec9d9623c9931b821">More...</a><br /></td></tr>
+<tr class="separator:a968935ca0a2e351ec9d9623c9931b821"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae29c614248cc8509083f157058e9fd19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html#ae29c614248cc8509083f157058e9fd19">readFromFile</a> ()</td></tr>
 <tr class="memdesc:ae29c614248cc8509083f157058e9fd19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the file containing the persistent data.  <a href="#ae29c614248cc8509083f157058e9fd19">More...</a><br /></td></tr>
 <tr class="separator:ae29c614248cc8509083f157058e9fd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,7 +313,7 @@ template&lt;typename DataType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename DataType &gt; </div>
+template&lt;typename UserType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -345,7 +345,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Generate XML tags for the given value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00124">124</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00097">97</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 
 </div>
 </div>
@@ -373,9 +373,9 @@ template&lt;typename DataType &gt; </div>
 </div><div class="memdoc">
 
 <p>Read the file containing the persistent data. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>TODO check if the application name is correct? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>TODO check if the application name is correct? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00142">142</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00115">115</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -393,7 +393,7 @@ template&lt;typename DataType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename DataType &gt; </div>
+template&lt;typename UserType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -425,7 +425,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Read value from XML tags. </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00217">217</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00167">167</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 
 </div>
 </div>
@@ -490,7 +490,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Retrieve the current value for the variable with the given ID. </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00238">238</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00239">239</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -524,7 +524,7 @@ template&lt;typename DataType &gt; </div>
 
 <p>Notify the storage system about a new value of the variable with the given ID (as returned by registerVariable) </p>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00246">246</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8h_source.html#l00247">247</a> of file <a class="el" href="_persistent_data_storage_8h_source.html">PersistentDataStorage.h</a>.</p>
 
 </div>
 </div>
@@ -550,9 +550,8 @@ template&lt;typename DataType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>FIXME make the variable access proper for a multi-threaded environment!!! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00038">38</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00043">43</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -572,8 +571,8 @@ template&lt;typename DataType &gt; </div>
 
 </div>
 </div>
-<a id="ac5ff86636442f6f856bf41813ecf680d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5ff86636442f6f856bf41813ecf680d">&#9670;&nbsp;</a></span>writeToFile()</h2>
+<a id="a968935ca0a2e351ec9d9623c9931b821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a968935ca0a2e351ec9d9623c9931b821">&#9670;&nbsp;</a></span>writeToFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -590,21 +589,20 @@ template&lt;typename DataType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Write out the file containing the persistent data. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>TODO what todo here? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00052">52</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_persistent_data_storage_8cc_source.html#l00055">55</a> of file <a class="el" href="_persistent_data_storage_8cc_source.html">PersistentDataStorage.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_persistent_data_storage_ac5ff86636442f6f856bf41813ecf680d_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_persistent_data_storage_a968935ca0a2e351ec9d9623c9931b821_icgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -878,7 +876,7 @@ template&lt;typename DataType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html">PersistentDataStorage</a></li>
-    <li class="footer">Generated on Thu Jun 30 2022 03:55:59 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Wed Jul 6 2022 03:54:40 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
