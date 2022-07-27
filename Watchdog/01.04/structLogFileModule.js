@@ -4,7 +4,7 @@ var structLogFileModule =
     [ "LogFileGroup", "structLogFileModule_1_1LogFileGroup.html", "structLogFileModule_1_1LogFileGroup" ],
     [ "Status", "structLogFileModule_1_1Status.html", "structLogFileModule_1_1Status" ],
     [ "TriggerGroup", "structLogFileModule_1_1TriggerGroup.html", "structLogFileModule_1_1TriggerGroup" ],
-    [ "LogFileModule", "structLogFileModule.html#a4bf992259d951643f17e0bb411bc9756", null ],
+    [ "LogFileModule", "structLogFileModule.html#a158b6f45a954068bcd65582d12bcfcd8", null ],
     [ "mainLoop", "structLogFileModule.html#a730fe9ac0bbe5a6ec9b4df7f9e66c5cd", null ],
     [ "terminate", "structLogFileModule.html#ada8647269480d8165b0b0ac1b521b6e5", null ],
     [ "config", "structLogFileModule.html#aa545d4de82974f63613c8908fc780917", null ],

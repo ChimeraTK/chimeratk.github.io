@@ -25,7 +25,7 @@ var searchData=
   ['system',['system',['../structProcessInfoModule.html#a7ea2d9a58f3d7e720225cf087c67b21f',1,'ProcessInfoModule::system()'],['../classSystemInfoModule.html#a61ab7ee77ab55c62397dbbac4c5119a4',1,'SystemInfoModule::system()']]],
   ['systeminfo',['systemInfo',['../structWatchdogServer.html#a01b4f79f4767ae1f2a9896058ff78fe9',1,'WatchdogServer']]],
   ['systeminfogroup',['SystemInfoGroup',['../structSystemInfoGroup.html',1,'']]],
-  ['systeminfomodule',['SystemInfoModule',['../classSystemInfoModule.html',1,'SystemInfoModule'],['../structProcessInfoModule.html#a4539b1693640ee143d77423345862602',1,'ProcessInfoModule::SystemInfoModule()'],['../classSystemInfoModule.html#a38c4299ac096e8a78e878ec45361e117',1,'SystemInfoModule::SystemInfoModule()']]],
+  ['systeminfomodule',['SystemInfoModule',['../classSystemInfoModule.html',1,'SystemInfoModule'],['../structProcessInfoModule.html#a4539b1693640ee143d77423345862602',1,'ProcessInfoModule::SystemInfoModule()'],['../classSystemInfoModule.html#a1532590ef088c75492f618e2eeab8b32',1,'SystemInfoModule::SystemInfoModule()']]],
   ['systeminfomodule_2ecc',['SystemInfoModule.cc',['../SystemInfoModule_8cc.html',1,'']]],
   ['systeminfomodule_2eh',['SystemInfoModule.h',['../SystemInfoModule_8h.html',1,'']]],
   ['sysuptime',['sysUpTime',['../structProcessInfoModule_1_1Input.html#a13e06b501dddaf00951a6ccc3cc4c4eb',1,'ProcessInfoModule::Input']]]
