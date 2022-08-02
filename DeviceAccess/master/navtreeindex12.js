@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"struct_byte_raw__unsigned8.html#a638e0f45e90299196693366ffb7b18ed":[21,0,16,4],
 "struct_byte_raw__unsigned8.html#a677b96a73ea202eded000bc1cf43f39c":[21,0,16,3],
 "struct_byte_raw__unsigned8.html#a6aa2be92cb82556e40fcdaf8bebfeb2e":[21,0,16,2],
 "struct_byte_raw__unsigned8.html#ab81aaa12f94109b8d082daf34c9e201f":[21,0,16,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "struct_chimera_t_k_1_1_rebot_protocol_implementor.html#af92af6259adc2803d150982ca153a1cc":[21,0,1,91,2],
 "struct_chimera_t_k_1_1_rebot_sleep_synchroniser.html":[21,0,1,92],
 "struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html":[21,0,1,97],
-"struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html#a2072f86b97126bfab990a09bb5d2dde1":[21,0,1,97,1],
-"struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html":[21,0,1,97,0]
+"struct_chimera_t_k_1_1_rounding_range_checking_data_converter.html#a2072f86b97126bfab990a09bb5d2dde1":[21,0,1,97,1]
 };

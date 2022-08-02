@@ -29,12 +29,13 @@ var NAVTREEINDEX8 =
 "class_chimera_t_k_1_1_void.html#a938fe6ff519c1f94f0879b4807dbd6f4":[21,0,1,121,1],
 "class_chimera_t_k_1_1_void.html#ae739d8f614f20f4ae6fd1a8d34591cf8":[21,0,1,121,0],
 "class_chimera_t_k_1_1_void_register_accessor.html":[21,0,1,122],
-"class_chimera_t_k_1_1_void_register_accessor.html#a1db7c90205f046388b9441e67bab459f":[21,0,1,122,2],
-"class_chimera_t_k_1_1_void_register_accessor.html#a3d05bc745a41cbe2a8c9d5d383c6e6e4":[21,0,1,122,4],
-"class_chimera_t_k_1_1_void_register_accessor.html#a655a5dcc5ed0e7296d77b56f1db960ab":[21,0,1,122,3],
+"class_chimera_t_k_1_1_void_register_accessor.html#a1db7c90205f046388b9441e67bab459f":[21,0,1,122,3],
+"class_chimera_t_k_1_1_void_register_accessor.html#a357ebc835807fd7ba01ad5d16f4915de":[21,0,1,122,1],
+"class_chimera_t_k_1_1_void_register_accessor.html#a3d05bc745a41cbe2a8c9d5d383c6e6e4":[21,0,1,122,5],
+"class_chimera_t_k_1_1_void_register_accessor.html#a655a5dcc5ed0e7296d77b56f1db960ab":[21,0,1,122,4],
 "class_chimera_t_k_1_1_void_register_accessor.html#a8c93791697dba14cb90c563e9739efcd":[21,0,1,122,0],
-"class_chimera_t_k_1_1_void_register_accessor.html#ac7e995c53832db9604b3a753d53285f3":[21,0,1,122,1],
-"class_chimera_t_k_1_1_void_register_accessor.html#af2f4130e2dce76e7c9601a2634ce7963":[21,0,1,122,5],
+"class_chimera_t_k_1_1_void_register_accessor.html#ac7e995c53832db9604b3a753d53285f3":[21,0,1,122,2],
+"class_chimera_t_k_1_1_void_register_accessor.html#af2f4130e2dce76e7c9601a2634ce7963":[21,0,1,122,6],
 "class_chimera_t_k_1_1_xdma_backend.html":[21,0,1,123],
 "class_chimera_t_k_1_1_xdma_backend.html#a01d15c73dbcea086ba5b7eb2846a0528":[21,0,1,123,3],
 "class_chimera_t_k_1_1_xdma_backend.html#a62f358a0e1d3502f9a1d1d0c728ab40c":[21,0,1,123,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "class_test_dummy.html#a30e519979fca2e5552a50e447d62bb00":[21,0,129,7],
 "class_test_dummy.html#a4286ed170b0c40a9fb52e8e757a37714":[21,0,129,2],
 "class_test_dummy.html#a544f444e8aabb40f58d017b5e1fd8f60":[21,0,129,1],
-"class_test_dummy.html#a63928a153b1c1fb645c8d988bd8427b5":[21,0,129,6],
-"class_test_dummy.html#a72ef645efb10190c2c01a38d8c901d71":[21,0,129,4]
+"class_test_dummy.html#a63928a153b1c1fb645c8d988bd8427b5":[21,0,129,6]
 };
