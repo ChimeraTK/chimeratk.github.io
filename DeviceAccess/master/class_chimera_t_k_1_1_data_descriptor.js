@@ -7,10 +7,10 @@ var class_chimera_t_k_1_1_data_descriptor =
       [ "nodata", "class_chimera_t_k_1_1_data_descriptor.html#af3be571231a41e3600c1143c7162a951aba7879f8819d6b74aa4dd9e24b2fe90e", null ],
       [ "undefined", "class_chimera_t_k_1_1_data_descriptor.html#af3be571231a41e3600c1143c7162a951a5e543256c480ac577d30f76f9120eb74", null ]
     ] ],
-    [ "DataDescriptor", "class_chimera_t_k_1_1_data_descriptor.html#a5c59ffacd377d469c8f33eb6a68b1a2f", null ],
     [ "DataDescriptor", "class_chimera_t_k_1_1_data_descriptor.html#a10ca48ff240a24817203d3ea4f29ef39", null ],
     [ "DataDescriptor", "class_chimera_t_k_1_1_data_descriptor.html#a2fd9392090a25ba08f3167b290aa56f3", null ],
-    [ "fundamentalType", "class_chimera_t_k_1_1_data_descriptor.html#ab2502d86318ee77b1497aee27af96d91", null ],
+    [ "DataDescriptor", "class_chimera_t_k_1_1_data_descriptor.html#a5c59ffacd377d469c8f33eb6a68b1a2f", null ],
+    [ "fundamentalType", "class_chimera_t_k_1_1_data_descriptor.html#a40d518a86f5269b6a0b706c85d9fcfc8", null ],
     [ "isIntegral", "class_chimera_t_k_1_1_data_descriptor.html#a45f6a47466d1096d2387bf9aa1886acf", null ],
     [ "isSigned", "class_chimera_t_k_1_1_data_descriptor.html#aaab62545dad995c54e3ca0994df5a6e6", null ],
     [ "nDigits", "class_chimera_t_k_1_1_data_descriptor.html#a9d31f0424da0bdda153f2ee7ed5606fd", null ],

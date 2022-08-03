@@ -11,7 +11,6 @@ var searchData=
   ['_7econst_5fregistercatalogueimpliterator',['~const_RegisterCatalogueImplIterator',['../class_chimera_t_k_1_1const___register_catalogue_impl_iterator.html#a138914f0d505bf6669b8faef5e5e2d26',1,'ChimeraTK::const_RegisterCatalogueImplIterator']]],
   ['_7ectrlintf',['~CtrlIntf',['../class_chimera_t_k_1_1_ctrl_intf.html#a34d369c100ebbfbb4ad3fb552577b4f3',1,'ChimeraTK::CtrlIntf']]],
   ['_7edecoratortestaccessor',['~DecoratorTestAccessor',['../class_decorator_test_accessor.html#a0048b6b13c2f5af6a8f65318c13ed8d5',1,'DecoratorTestAccessor']]],
-  ['_7edevice',['~Device',['../class_chimera_t_k_1_1_device.html#aac982d8d84a51a436c4f64dc3d024f2f',1,'ChimeraTK::Device']]],
   ['_7edevicebackend',['~DeviceBackend',['../class_chimera_t_k_1_1_device_backend.html#aea141a8f0992e9580c908799c4220680',1,'ChimeraTK::DeviceBackend']]],
   ['_7edevicefile',['~DeviceFile',['../class_chimera_t_k_1_1_device_file.html#a1a9b71e14fffb41effba59eb1017e788',1,'ChimeraTK::DeviceFile']]],
   ['_7edmaintf',['~DmaIntf',['../class_chimera_t_k_1_1_dma_intf.html#a6d825e53e9fcb46133da82917e386043',1,'ChimeraTK::DmaIntf']]],

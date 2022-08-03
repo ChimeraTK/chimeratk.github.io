@@ -22,7 +22,6 @@ var searchData=
   ['deviceinfomaptest',['DeviceInfoMapTest',['../class_device_info_map_test.html',1,'']]],
   ['deviceinfomaptestsuite',['DeviceInfoMapTestSuite',['../class_device_info_map_test_suite.html',1,'']]],
   ['dmaintf',['DmaIntf',['../class_chimera_t_k_1_1_dma_intf.html',1,'ChimeraTK']]],
-  ['dmapfile',['DMapFile',['../class_chimera_t_k_1_1_d_map_file.html',1,'ChimeraTK']]],
   ['dmapfileparser',['DMapFileParser',['../class_chimera_t_k_1_1_d_map_file_parser.html',1,'ChimeraTK']]],
   ['dmapfileparsertest',['DMapFileParserTest',['../class_d_map_file_parser_test.html',1,'']]],
   ['dmapfileparsertestsuite',['DMapFileParserTestSuite',['../class_d_map_file_parser_test_suite.html',1,'']]],

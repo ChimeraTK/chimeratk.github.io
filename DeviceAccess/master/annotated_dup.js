@@ -3,7 +3,9 @@ var annotated_dup =
     [ "accessPrivateData", "namespaceaccess_private_data.html", "namespaceaccess_private_data" ],
     [ "ChimeraTK", "namespace_chimera_t_k.html", "namespace_chimera_t_k" ],
     [ "std", null, [
+      [ "hash", "structstd_1_1hash.html", null ],
       [ "hash< ChimeraTK::TransferElementID >", "structstd_1_1hash_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", "structstd_1_1hash_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4" ],
+      [ "less", "structstd_1_1less.html", null ],
       [ "less< ChimeraTK::TransferElementID >", "structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", "structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4" ]
     ] ],
     [ "_pcieuni_ioctl_bar_sizes", "struct__pcieuni__ioctl__bar__sizes.html", "struct__pcieuni__ioctl__bar__sizes" ],
@@ -14,8 +16,6 @@ var annotated_dup =
     [ "AsciiData", "struct_ascii_data.html", "struct_ascii_data" ],
     [ "AsyncTestDummy", "class_async_test_dummy.html", "class_async_test_dummy" ],
     [ "BitRegisterDescriptorBase", "struct_bit_register_descriptor_base.html", "struct_bit_register_descriptor_base" ],
-    [ "BufferingRegisterTest", "class_buffering_register_test.html", "class_buffering_register_test" ],
-    [ "BufferingRegisterTestSuite", "class_buffering_register_test_suite.html", "class_buffering_register_test_suite" ],
     [ "ByteRaw_fixedPoint8_4s", "struct_byte_raw__fixed_point8__4s.html", "struct_byte_raw__fixed_point8__4s" ],
     [ "ByteRaw_fixedPoint8_4u", "struct_byte_raw__fixed_point8__4u.html", "struct_byte_raw__fixed_point8__4u" ],
     [ "ByteRaw_signed8", "struct_byte_raw__signed8.html", "struct_byte_raw__signed8" ],

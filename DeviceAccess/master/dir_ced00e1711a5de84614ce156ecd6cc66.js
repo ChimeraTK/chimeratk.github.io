@@ -1,6 +1,6 @@
 var dir_ced00e1711a5de84614ce156ecd6cc66 =
 [
-    [ "DummyBackend.h", "device__backends_2_dummy_backend_2include_2_dummy_backend_8h.html", [
+    [ "DummyBackend.h", "_dummy_backend_8h.html", [
       [ "DummyRegisterAccessor", "class_chimera_t_k_1_1_dummy_register_accessor.html", "class_chimera_t_k_1_1_dummy_register_accessor" ],
       [ "DummyMultiplexedRegisterAccessor", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor.html", "class_chimera_t_k_1_1_dummy_multiplexed_register_accessor" ],
       [ "DummyBackend", "class_chimera_t_k_1_1_dummy_backend.html", "class_chimera_t_k_1_1_dummy_backend" ],
@@ -11,7 +11,7 @@ var dir_ced00e1711a5de84614ce156ecd6cc66 =
       [ "DummyBackendRegisterCatalogue", "class_chimera_t_k_1_1_dummy_backend_register_catalogue.html", "class_chimera_t_k_1_1_dummy_backend_register_catalogue" ]
     ] ],
     [ "DummyInterruptTriggerAccessor.h", "_dummy_interrupt_trigger_accessor_8h.html", "_dummy_interrupt_trigger_accessor_8h" ],
-    [ "DummyRegisterAccessor.h", "device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h.html", [
+    [ "DummyRegisterAccessor.h", "_dummy_register_accessor_8h.html", [
       [ "DummyRegisterElement", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element" ],
       [ "DummyRegisterSequence", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence" ],
       [ "DummyRegisterAccessor", "class_chimera_t_k_1_1_dummy_register_accessor.html", "class_chimera_t_k_1_1_dummy_register_accessor" ],

@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_dummy_register_a
 <p>Register accessor for accessing single word or 1D array registers internally of a <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html" title="The dummy device opens a mapping file instead of a device, and implements all registers defined in th...">DummyBackend</a> implementation.  
  <a href="class_chimera_t_k_1_1_dummy_register_accessor.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_dummy_backend_8h_source.html">DummyBackend.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ChimeraTK::DummyRegisterAccessor&lt; T &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -207,7 +207,7 @@ class ChimeraTK::DummyRegisterAccessor&lt; T &gt;</h3>
 <p>This accessor should be used to access the dummy registers through the "backdoor" when unit-testing e.g. a library or when implementing a device in the VirtualLab framework. A simple access is provided through the operators and implicit type conversions. The [] operator will return a temporary proxy class, which deals with converting read and write operations of a single word of the register. The temporary proxy implements all needed operators and the implicit type conversion to the type T, so it can be used as it were a variable of the type T in most places.</p>
 <p>This class inherits from the DummyRegisterElement proxy, to avoid reimplementing the same interface again. It is thus possible to access through the DummyRegister class directly the first element of the register, without using the [0] operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_backend_8h_source.html#l00019">19</a> of file <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_backend_8h_source.html#l00020">20</a> of file <a class="el" href="_dummy_backend_8h_source.html">DummyBackend.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa306e8d93a3bb20f2680c601c54ebca0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa306e8d93a3bb20f2680c601c54ebca0">&#9670;&nbsp;</a></span>DummyRegisterAccessor() <span class="overload">[1/2]</span></h2>
@@ -254,7 +254,7 @@ template&lt;typename T&gt; </div>
 <p>Constructor should normally be called in the constructor of the <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html" title="The dummy device opens a mapping file instead of a device, and implements all registers defined in th...">DummyBackend</a> implementation. </p>
 <p>dev must be the pointer to the <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html" title="The dummy device opens a mapping file instead of a device, and implements all registers defined in th...">DummyBackend</a> to be accessed. A raw pointer is needed, as used inside the <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html" title="The dummy device opens a mapping file instead of a device, and implements all registers defined in th...">DummyBackend</a> itself. module and name denominate the register entry in the map file. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html#l00139">139</a> of file <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00133">133</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +314,7 @@ template&lt;typename T&gt; </div>
 
 <p>Return the backend. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html#l00162">162</a> of file <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00156">156</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -346,7 +346,7 @@ template&lt;typename T&gt; </div>
 <p>Get a lock to safely modify the buffer in a multi-treaded environment. </p>
 <p>You have to release it as soon as possible because it will block all other functionality of the Dummy and all application threads which use it. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html#l00181">181</a> of file <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00175">175</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -378,7 +378,7 @@ template&lt;typename T&gt; </div>
 
 <p>return element </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html#l00197">197</a> of file <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00191">191</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -409,7 +409,7 @@ template&lt;typename T&gt; </div>
 
 <p>return number of elements </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html#l00156">156</a> of file <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00150">150</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -441,7 +441,7 @@ template&lt;typename T&gt; </div>
 
 <p>return a proxy object </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html#l00202">202</a> of file <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00196">196</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -470,7 +470,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html#l00176">176</a> of file <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00170">170</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -501,7 +501,7 @@ template&lt;typename T&gt; </div>
 
 <p>Return the register path. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html#l00165">165</a> of file <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00159">159</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -533,7 +533,7 @@ template&lt;typename T&gt; </div>
 
 <p>Get or set register content by [] operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html#l00153">153</a> of file <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00147">147</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -565,7 +565,7 @@ template&lt;typename T&gt; </div>
 
 <p>Set callback function which is called when the register is written to (through the normal <a class="el" href="class_chimera_t_k_1_1_device.html" title="Class allows to read/write registers from device. ">Device</a> interface) </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html#l00168">168</a> of file <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00162">162</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -594,7 +594,7 @@ template&lt;typename T&gt; </div>
 
 <p>pointer to VirtualDevice </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html#l00185">185</a> of file <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00179">179</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -622,7 +622,7 @@ template&lt;typename T&gt; </div>
 
 <p>path of the register </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html#l00191">191</a> of file <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00185">185</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -650,7 +650,7 @@ template&lt;typename T&gt; </div>
 
 <p>fixed point converter </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html#l00194">194</a> of file <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00188">188</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -678,13 +678,13 @@ template&lt;typename T&gt; </div>
 
 <p>register map information </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html#l00188">188</a> of file <a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_dummy_register_accessor_8h_source.html#l00182">182</a> of file <a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>device_backends/DummyBackend/include/<a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_backend_8h_source.html">DummyBackend.h</a></li>
-<li>device_backends/DummyBackend/include/<a class="el" href="device__backends_2_dummy_backend_2include_2_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a></li>
+<li>device_backends/DummyBackend/include/<a class="el" href="_dummy_backend_8h_source.html">DummyBackend.h</a></li>
+<li>device_backends/DummyBackend/include/<a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -692,7 +692,7 @@ template&lt;typename T&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_dummy_register_accessor.html">DummyRegisterAccessor</a></li>
-    <li class="footer">Generated on Tue Aug 2 2022 03:53:17 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Aug 3 2022 03:53:16 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

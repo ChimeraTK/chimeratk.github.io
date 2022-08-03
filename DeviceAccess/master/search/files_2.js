@@ -2,7 +2,7 @@ var searchData=
 [
   ['connection_2ecc',['Connection.cc',['../_connection_8cc.html',1,'']]],
   ['connection_2eh',['Connection.h',['../_connection_8h.html',1,'']]],
-  ['copyregisterdecorator_2eh',['CopyRegisterDecorator.h',['../device__backends_2include_2_copy_register_decorator_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_copy_register_decorator_8h.html',1,'(Global Namespace)']]],
+  ['copyregisterdecorator_2eh',['CopyRegisterDecorator.h',['../_copy_register_decorator_8h.html',1,'']]],
   ['createdataconverter_2ecc',['createDataConverter.cc',['../create_data_converter_8cc.html',1,'']]],
   ['createdataconverter_2eh',['createDataConverter.h',['../create_data_converter_8h.html',1,'']]],
   ['ctrlintf_2ecc',['CtrlIntf.cc',['../_ctrl_intf_8cc.html',1,'']]],

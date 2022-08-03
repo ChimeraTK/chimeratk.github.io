@@ -158,7 +158,7 @@ Protected Attributes</h2></td></tr>
 <p>This is done in a single class because the container with the fluctuating number of subscribed variables is not thread safe. This class implements a lock so dispatching an interrupt is safe against concurrent subscriptions/unsubscriptions.</p>
 <p>The <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html" title="The AsyncAccessorManager has three main functionalities: ">AsyncAccessorManager</a> has some pure virtual functions. The implementation is backend specific and must be provided by a derived version of the <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html" title="The AsyncAccessorManager has three main functionalities: ">AsyncAccessorManager</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00076">76</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00079">79</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa038d1d4774c7b16a6106b3c07dbd07f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa038d1d4774c7b16a6106b3c07dbd07f">&#9670;&nbsp;</a></span>~AsyncAccessorManager()</h2>
@@ -234,7 +234,7 @@ Protected Attributes</h2></td></tr>
 <p>Deactivate all subscribers without throwing an exception. </p>
 <p>This has to happen when a backend is closed. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8cc_source.html#l00037">37</a> of file <a class="el" href="_async_accessor_manager_8cc_source.html">AsyncAccessorManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8cc_source.html#l00040">40</a> of file <a class="el" href="_async_accessor_manager_8cc_source.html">AsyncAccessorManager.cc</a>.</p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ Protected Attributes</h2></td></tr>
 <p>Send an exception to all accessors. </p>
 <p>This automatically de-activates them. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8cc_source.html#l00013">13</a> of file <a class="el" href="_async_accessor_manager_8cc_source.html">AsyncAccessorManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8cc_source.html#l00016">16</a> of file <a class="el" href="_async_accessor_manager_8cc_source.html">AsyncAccessorManager.cc</a>.</p>
 
 </div>
 </div>
@@ -346,7 +346,7 @@ template&lt;typename UserType &gt; </div>
 <p>Request a new subscription. </p>
 <p>This function internally creates the correct asynchronous accessor and a matching <a class="el" href="struct_chimera_t_k_1_1_async_variable.html" title="Typeless base class. ">AsyncVariable</a>. A weak pointer to the <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a> is registered in the <a class="el" href="struct_chimera_t_k_1_1_async_variable.html" title="Typeless base class. ">AsyncVariable</a>, and a shared pointer is returned to the calling code. </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00211">211</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00218">218</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -376,7 +376,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>This function must only be called from the destructor of the <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a> which is created in the subscribe function! </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8cc_source.html#l00006">6</a> of file <a class="el" href="_async_accessor_manager_8cc_source.html">AsyncAccessorManager.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8cc_source.html#l00009">9</a> of file <a class="el" href="_async_accessor_manager_8cc_source.html">AsyncAccessorManager.cc</a>.</p>
 
 </div>
 </div>
@@ -403,7 +403,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>protected by _variablesMutex </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00123">123</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00129">129</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -429,7 +429,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>protected by _variablesMutex </p>
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00124">124</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00130">130</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -453,7 +453,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00122">122</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_async_accessor_manager_8h_source.html#l00128">128</a> of file <a class="el" href="_async_accessor_manager_8h_source.html">AsyncAccessorManager.h</a>.</p>
 
 </div>
 </div>
@@ -467,7 +467,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html">AsyncAccessorManager</a></li>
-    <li class="footer">Generated on Tue Aug 2 2022 03:53:17 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Aug 3 2022 03:53:16 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

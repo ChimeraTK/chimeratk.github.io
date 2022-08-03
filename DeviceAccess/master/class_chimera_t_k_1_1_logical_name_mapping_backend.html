@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_logical_name_map
 <p>Backend to map logical register names onto real hardware registers.  
  <a href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ChimeraTK::LogicalNameMappingBackend:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -176,7 +176,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac9f608c0eafd7cb37f66290eb70f084d inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a device has been opened or not.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#ac9f608c0eafd7cb37f66290eb70f084d">More...</a><br /></td></tr>
 <tr class="separator:ac9f608c0eafd7cb37f66290eb70f084d inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cfb27d6fb8145c428661863d5cefbda inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a5cfb27d6fb8145c428661863d5cefbda">isConnected</a> () final</td></tr>
-<tr class="memdesc:a5cfb27d6fb8145c428661863d5cefbda inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a5cfb27d6fb8145c428661863d5cefbda">More...</a><br /></td></tr>
+<tr class="memdesc:a5cfb27d6fb8145c428661863d5cefbda inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated since 2022-03-03.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a5cfb27d6fb8145c428661863d5cefbda">More...</a><br /></td></tr>
 <tr class="separator:a5cfb27d6fb8145c428661863d5cefbda inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a1e8276598a0d7d47923c7c5f0f7504 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_metadata_catalogue.html">MetadataCatalogue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_backend_impl.html#a7a1e8276598a0d7d47923c7c5f0f7504">getMetadataCatalogue</a> () const override</td></tr>
 <tr class="memdesc:a7a1e8276598a0d7d47923c7c5f0f7504 inherit pub_methods_class_chimera_t_k_1_1_device_backend_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the device metadata catalogue.  <a href="class_chimera_t_k_1_1_device_backend_impl.html#a7a1e8276598a0d7d47923c7c5f0f7504">More...</a><br /></td></tr>
@@ -258,7 +258,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Backend to map logical register names onto real hardware registers. </p>
 <p>See <a class="el" href="lmap.html">Logical Name Mapping Backend</a> for details. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00024">24</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00019">19</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ab626c98d89f490d4094fe3e173213f2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab626c98d89f490d4094fe3e173213f2d">&#9670;&nbsp;</a></span>AccessorKey</h2>
@@ -275,7 +275,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Map of target accessors which are potentially shared across our accessors. </p>
 <p>An example is the target accessors of <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html">LNMBackendBitAccessor</a>. Multiple instances of <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html">LNMBackendBitAccessor</a> referring to different bits of the same register share their target accessor. This sharing is governed by this map. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00088">88</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00083">83</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00090">90</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00085">85</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +314,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00016">16</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00013">13</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -349,7 +349,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00028">28</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00023">23</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -391,7 +391,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a513692593b6dc8babc9544d9bfea04c8">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00330">330</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00327">327</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -438,7 +438,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a655b8995589b3916ce9b71633f8fe33e">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00068">68</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00065">65</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -492,7 +492,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00089">89</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00086">86</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -550,7 +550,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00103">103</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00100">100</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -610,7 +610,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00129">129</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00126">126</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -657,7 +657,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a517c358022e282864da357bc1b8dfd5e">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00195">195</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00192">192</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -694,7 +694,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Obtain list of all target devices referenced in the catalogue. </p>
 
-<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00363">363</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00360">360</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -721,7 +721,7 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00375">375</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00372">372</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
 <div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
@@ -762,7 +762,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a1f47e5db720bc662736aa062b2448bb7">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00274">274</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00271">271</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
@@ -801,7 +801,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a9da6866e3f0b481e1fcc13985382f5f9">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00040">40</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00037">37</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-18-summary" class="dynsummary" style="display:block;">
@@ -838,7 +838,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>parse the logical map file, if not yet done </p>
 
-<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00023">23</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00020">20</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
 <div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-20-summary" class="dynsummary" style="display:block;">
@@ -886,7 +886,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#ae27b29c1570a6f749efdb0dfe4f2972d">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00036">36</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00031">31</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 <div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-22-summary" class="dynsummary" style="display:block;">
@@ -926,7 +926,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_device_backend.html#a5332e4cddac1f176352f53cf3dbcbf31">ChimeraTK::DeviceBackend</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00290">290</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8cc_source.html#l00287">287</a> of file <a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a>.</p>
 <div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-23-summary" class="dynsummary" style="display:block;">
@@ -969,7 +969,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00107">107</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00102">102</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -995,7 +995,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00104">104</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00099">99</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1021,7 +1021,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00101">101</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00096">96</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1047,7 +1047,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00110">110</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00105">105</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1066,7 +1066,7 @@ template&lt;typename T &gt; </div>
 
 <p>Flag storing whether asynchronous read has been activated. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00117">117</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00112">112</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1092,7 +1092,7 @@ template&lt;typename T &gt; </div>
 
 <p>We need to make the catalogue mutable, since we fill it within <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a72f1bf37a09e7c088658d00ed8b83ac8" title="Return the register catalogue with detailed information on all registers. ">getRegisterCatalogue()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00072">72</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00067">67</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1118,7 @@ template&lt;typename T &gt; </div>
 
 <p>map of target devices </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00065">65</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00060">60</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1137,7 +1137,7 @@ template&lt;typename T &gt; </div>
 <p>Flag storing whether setException has been called. </p>
 <p>Cleared in <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#aa62cb97e2a5de85ae6151410b78f0ec6" title="Open the device. ">open()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00114">114</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00109">109</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1155,7 @@ template&lt;typename T &gt; </div>
 
 <p>name of the logical map file </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00062">62</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00057">57</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1173,7 +1173,7 @@ template&lt;typename T &gt; </div>
 
 <p>map of parameters passed through the CDD </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00068">68</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00063">63</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1200,7 +1200,7 @@ template&lt;typename T &gt; </div>
 <p>Map of variables and constants. </p>
 <p>This map contains the mpl tables with the actual values and a mutex for each of them. It has to be mutable as the parse function must be const. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00098">98</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00093">93</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1226,7 +1226,7 @@ template&lt;typename T &gt; </div>
 
 <p>Flag whether the catalogue has already been filled with extra information from the target backends. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00076">76</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00071">71</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1252,7 +1252,7 @@ template&lt;typename T &gt; </div>
 
 <p>flag if already parsed </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00059">59</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00054">54</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1268,7 +1268,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00091">91</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00086">86</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
@@ -1286,12 +1286,12 @@ template&lt;typename T &gt; </div>
 
 <p>a mutex to be locked when sharedAccessorMap (the container) is changed </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html#l00093">93</a> of file <a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logical_name_mapping_backend_8h_source.html#l00088">88</a> of file <a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>device_backends/LogicalNameMapping/include/<a class="el" href="device__backends_2_logical_name_mapping_2include_2_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a></li>
+<li>device_backends/LogicalNameMapping/include/<a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a></li>
 <li>device_backends/LogicalNameMapping/src/<a class="el" href="_logical_name_mapping_backend_8cc_source.html">LogicalNameMappingBackend.cc</a></li>
 </ul>
 </div><!-- contents -->
@@ -1300,7 +1300,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html">LogicalNameMappingBackend</a></li>
-    <li class="footer">Generated on Tue Aug 2 2022 03:53:17 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Aug 3 2022 03:53:16 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

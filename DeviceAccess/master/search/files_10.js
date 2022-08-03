@@ -8,7 +8,6 @@ var searchData=
   ['testasyncndregisteraccessor_2ecpp',['testAsyncNDRegisterAccessor.cpp',['../test_async_n_d_register_accessor_8cpp.html',1,'']]],
   ['testasyncread_2ecpp',['testAsyncRead.cpp',['../test_async_read_8cpp.html',1,'']]],
   ['testbackendfactory_2ecpp',['testBackendFactory.cpp',['../test_backend_factory_8cpp.html',1,'']]],
-  ['testbufferingregisteraccessor_2ecpp',['testBufferingRegisterAccessor.cpp',['../test_buffering_register_accessor_8cpp.html',1,'']]],
   ['testdataconsistencygroup_2ecpp',['testDataConsistencyGroup.cpp',['../test_data_consistency_group_8cpp.html',1,'']]],
   ['testdevice_2ecpp',['testDevice.cpp',['../test_device_8cpp.html',1,'']]],
   ['testdeviceinfomap_2ecpp',['testDeviceInfoMap.cpp',['../test_device_info_map_8cpp.html',1,'']]],
@@ -62,13 +61,14 @@ var searchData=
   ['testversionnumber_2ecpp',['testVersionNumber.cpp',['../test_version_number_8cpp.html',1,'']]],
   ['testvirtualfunctiontemplatecompilerflags_2ecc',['testVirtualFunctionTemplateCompilerFlags.cc',['../test_virtual_function_template_compiler_flags_8cc.html',1,'']]],
   ['testvoidregisteraccessor_2ecpp',['testVoidRegisterAccessor.cpp',['../test_void_register_accessor_8cpp.html',1,'']]],
-  ['timestamp_2eh',['TimeStamp.h',['../device_2include_2_time_stamp_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_time_stamp_8h.html',1,'(Global Namespace)']]],
   ['transferelement_2ecc',['TransferElement.cc',['../_transfer_element_8cc.html',1,'']]],
-  ['transferelement_2eh',['TransferElement.h',['../device__backends_2include_2_transfer_element_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_transfer_element_8h.html',1,'(Global Namespace)']]],
-  ['transferelementabstractor_2eh',['TransferElementAbstractor.h',['../device_2include_2_transfer_element_abstractor_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_transfer_element_abstractor_8h.html',1,'(Global Namespace)']]],
-  ['transferelementid_2eh',['TransferElementID.h',['../device_2include_2_transfer_element_i_d_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_transfer_element_i_d_8h.html',1,'(Global Namespace)']]],
+  ['transferelement_2eh',['TransferElement.h',['../_transfer_element_8h.html',1,'']]],
+  ['transferelementabstractor_2ecc',['TransferElementAbstractor.cc',['../_transfer_element_abstractor_8cc.html',1,'']]],
+  ['transferelementabstractor_2eh',['TransferElementAbstractor.h',['../_transfer_element_abstractor_8h.html',1,'']]],
+  ['transferelementid_2ecc',['TransferElementID.cc',['../_transfer_element_i_d_8cc.html',1,'']]],
+  ['transferelementid_2eh',['TransferElementID.h',['../_transfer_element_i_d_8h.html',1,'']]],
   ['transferelementtestaccessor_2eh',['TransferElementTestAccessor.h',['../_transfer_element_test_accessor_8h.html',1,'']]],
   ['transfergroup_2ecc',['TransferGroup.cc',['../_transfer_group_8cc.html',1,'']]],
-  ['transfergroup_2eh',['TransferGroup.h',['../device_2include_2_transfer_group_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_transfer_group_8h.html',1,'(Global Namespace)']]],
-  ['twodregisteraccessor_2eh',['TwoDRegisterAccessor.h',['../device_2include_2_two_d_register_accessor_8h.html',1,'(Global Namespace)'],['../mtca4u__compatibility__headers_2_two_d_register_accessor_8h.html',1,'(Global Namespace)']]]
+  ['transfergroup_2eh',['TransferGroup.h',['../_transfer_group_8h.html',1,'']]],
+  ['twodregisteraccessor_2eh',['TwoDRegisterAccessor.h',['../_two_d_register_accessor_8h.html',1,'']]]
 ];

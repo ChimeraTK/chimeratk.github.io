@@ -5,7 +5,6 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testAsyncNDRegisterAccessor.cpp", "test_async_n_d_register_accessor_8cpp.html", "test_async_n_d_register_accessor_8cpp" ],
     [ "testAsyncRead.cpp", "test_async_read_8cpp.html", "test_async_read_8cpp" ],
     [ "testBackendFactory.cpp", "test_backend_factory_8cpp.html", "test_backend_factory_8cpp" ],
-    [ "testBufferingRegisterAccessor.cpp", "test_buffering_register_accessor_8cpp.html", "test_buffering_register_accessor_8cpp" ],
     [ "testDataConsistencyGroup.cpp", "test_data_consistency_group_8cpp.html", "test_data_consistency_group_8cpp" ],
     [ "testDevice.cpp", "test_device_8cpp.html", "test_device_8cpp" ],
     [ "testDeviceInfoMap.cpp", "test_device_info_map_8cpp.html", "test_device_info_map_8cpp" ],

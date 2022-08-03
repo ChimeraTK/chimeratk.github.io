@@ -69,7 +69,6 @@ var NAVTREE =
     [ "Using push-type inputs with AccessMode::wait_for_new_data", "wait_for_new_data.html", null ],
     [ "XDMA backend", "autotoc_md13.html", null ],
     [ "Todo List", "todo.html", null ],
-    [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -112,24 +111,23 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"_register_path_8cc.html",
-"class_chimera_t_k_1_1_backend_register_catalogue.html",
-"class_chimera_t_k_1_1_device_info_map.html#aa3f5d757987b28713906a7f88be306a0",
-"class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_plugin.html#a12d4d34cf8016f88ab7f6310f26c577c",
-"class_chimera_t_k_1_1_n_d_register_accessor_decorator.html#a7c0d4fdaf998bece8d9b26b6a913ff13",
-"class_chimera_t_k_1_1_read_any_group_1_1_notification.html#a949d73dd42d92eb82c81e8413933a030",
-"class_chimera_t_k_1_1_transfer_element.html#a13235d15a13bfc43764e464f1b6fe50d",
-"class_chimera_t_k_1_1_unified_backend_test.html#af464a57cf92601ce3f26a3ef6413c030",
-"class_test_dummy.html#a72ef645efb10190c2c01a38d8c901d71",
-"dir_130f923491185552e412a924425dcadd.html",
-"mtca4u__compatibility__headers_2_d_map_file_8h.html",
-"struct_byte_raw__unsigned8.html#a638e0f45e90299196693366ffb7b18ed",
-"struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html",
-"struct_interrupt__dummy.html#aedc83648b27554b4f80805887223d545",
-"struct_reg_single_word_scaled.html#aaffff53c7f80053d2e85a8333e19958e",
-"structdevice__rw.html#afed29415714fb813dea1c933ef904a2c",
-"test_l_map_math_plugin_8cpp.html#a6b2a3852db8bb19ab6909bac01859985",
-"test_transfer_element_8cpp.html#ae1e19de86b21eb1bfa7f0c1bc82899c9"
+"_numeric_addressed_backend_register_accessor_8h.html",
+"autotoc_md13.html#autotoc_md15",
+"class_chimera_t_k_1_1_data_type.html#a4e8b0e61b39b533564f1e3866165f899a51cddcf7e04fca1b6590e993576fc8e2",
+"class_chimera_t_k_1_1_exception_dummy.html#ab4a4085a0c80283ee8a2dae5ea6af0d7",
+"class_chimera_t_k_1_1_logical_name_mapping_backend.html#a72f1bf37a09e7c088658d00ed8b83ac8",
+"class_chimera_t_k_1_1_numeric_addressed_register_info.html#aa5032d91d8ce44b53d5ff257624cb1c4",
+"class_chimera_t_k_1_1_shared_dummy_backend.html#a1caea4b00d60bb10686e2391b9305381",
+"class_chimera_t_k_1_1_transfer_group.html#a8782ad050d289be8a9369904ca6d3b4d",
+"class_example_backend.html#a29cb604880ec30b64848139d934018ef",
+"functions_func_u.html",
+"spec__transfer_element.html#autotoc_md11",
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#abf53f6a2c42bd7833e9386a372f91b1b",
+"struct_integers__base.html#ab121f6572ed883e1a2e23e07e550113a",
+"struct_reg_channel4__push.html#a406e15fa04783a39a6e6a23f6ac0c723",
+"struct_short_raw__fixed_point16__8s.html#acd2235bd3df5df9409981afa2a6dd5a1",
+"test_fixed_point_converter_8cpp.html#ac50a762fe400679331c3ecd823c5293e",
+"test_shared_dummy_backend_ext_8cpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

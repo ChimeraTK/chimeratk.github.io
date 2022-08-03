@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_copy_register_d
 <p>Decorator for NDRegisterAccessors which makes a copy of the data from the target accessor.  
  <a href="struct_chimera_t_k_1_1_copy_register_decorator.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="device__backends_2include_2_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ChimeraTK::CopyRegisterDecorator&lt; T &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -175,7 +175,7 @@ struct ChimeraTK::CopyRegisterDecorator&lt; T &gt;</h3>
 <p>Decorator for NDRegisterAccessors which makes a copy of the data from the target accessor. </p>
 <p>This must be used in implementations of <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a791a4902b649e859fbadea20cc90ede2" title="Search for all underlying TransferElements which are considered identical (see sameRegister()) with t...">TransferElement::replaceTransferElement()</a> when a used accessor shall be replaced with an accessor used already in another place and thus a copy of the data shall be made. Note that this decorator is special in the sense that the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> will call <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aebd5de52d8f625ea84ec0b17224c316c" title="Transfer the data from the device receive buffer into the user buffer, while converting the data into...">postRead()</a> on them first. Therefore it is mandatory to use exactly this implementation (potentially extended by inheritance) and not reimplement it directly based on the <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_decorator.html">NDRegisterAccessorDecorator&lt;T&gt;</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_copy_register_decorator_8h_source.html#l00031">31</a> of file <a class="el" href="device__backends_2include_2_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00025">25</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7eed48aa29f299f930ec3cc28bab6923"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7eed48aa29f299f930ec3cc28bab6923">&#9670;&nbsp;</a></span>CopyRegisterDecorator()</h2>
@@ -203,7 +203,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_copy_register_decorator_8h_source.html#l00032">32</a> of file <a class="el" href="device__backends_2include_2_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00026">26</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +253,7 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a650d977e62e54324d6fc1b281feb0ba7">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_copy_register_decorator_8h_source.html#l00043">43</a> of file <a class="el" href="device__backends_2include_2_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00037">37</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -299,7 +299,7 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#aa6ae99999ae6548d80d9f744e93f03bd">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_copy_register_decorator_8h_source.html#l00039">39</a> of file <a class="el" href="device__backends_2include_2_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00033">33</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -333,7 +333,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#afb77cfdfd4be6fbf76f16d9ada9d2134">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_copy_register_decorator_8h_source.html#l00050">50</a> of file <a class="el" href="device__backends_2include_2_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00044">44</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
 
 </div>
 </div>
@@ -367,12 +367,12 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#accfe1aea9752501fd25381d3e3bdbee8">ChimeraTK::TransferElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="device__backends_2include_2_copy_register_decorator_8h_source.html#l00052">52</a> of file <a class="el" href="device__backends_2include_2_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_copy_register_decorator_8h_source.html#l00046">46</a> of file <a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>device_backends/include/<a class="el" href="device__backends_2include_2_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a></li>
+<li>device_backends/include/<a class="el" href="_copy_register_decorator_8h_source.html">CopyRegisterDecorator.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -380,7 +380,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_copy_register_decorator.html">CopyRegisterDecorator</a></li>
-    <li class="footer">Generated on Tue Aug 2 2022 03:53:17 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Aug 3 2022 03:53:16 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
