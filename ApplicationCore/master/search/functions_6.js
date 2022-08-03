@@ -72,5 +72,6 @@ var searchData=
   ['getvaluefromnode',['getValueFromNode',['../test_application_8cc.html#a747b9f7c811141b1509f7c267a82d2b6',1,'testApplication.cc']]],
   ['getvaluetype',['getValueType',['../class_chimera_t_k_1_1_variable_network.html#a1d60d20aacced268c9fc82352d788a37',1,'ChimeraTK::VariableNetwork::getValueType()'],['../class_chimera_t_k_1_1_variable_network_node.html#a4d1ef6ae206a43dd3a046abc34ef9eb0',1,'ChimeraTK::VariableNetworkNode::getValueType()']]],
   ['getvariablelist',['getVariableList',['../class_chimera_t_k_1_1_config_parser.html#ab29dfb53965851039c2214fb9581c995',1,'ChimeraTK::ConfigParser']]],
-  ['getvirtualqualifiedname',['getVirtualQualifiedName',['../class_chimera_t_k_1_1_module.html#a210eb585677baa3fc7865c52ac7abb51',1,'ChimeraTK::Module']]]
+  ['getvirtualqualifiedname',['getVirtualQualifiedName',['../class_chimera_t_k_1_1_module.html#a210eb585677baa3fc7865c52ac7abb51',1,'ChimeraTK::Module']]],
+  ['getvoid',['getVoid',['../class_chimera_t_k_1_1_test_facility.html#a8f7965aa97520a44bcd2f7c7ed707856',1,'ChimeraTK::TestFacility']]]
 ];

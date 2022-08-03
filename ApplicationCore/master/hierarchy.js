@@ -550,6 +550,12 @@ var hierarchy =
         [ "ChimeraTK::ScalarPushInputWB< UserType >", "struct_chimera_t_k_1_1_scalar_push_input_w_b.html", null ]
       ] ]
     ] ],
+    [ "ChimeraTK::InversionOfControlAccessor< VoidAccessor >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
+      [ "ChimeraTK::VoidAccessor", "class_chimera_t_k_1_1_void_accessor.html", [
+        [ "ChimeraTK::VoidInput", "struct_chimera_t_k_1_1_void_input.html", null ],
+        [ "ChimeraTK::VoidOutput", "struct_chimera_t_k_1_1_void_output.html", null ]
+      ] ]
+    ] ],
     [ "ChimeraTK::MetaDataPropagationFlagProvider", "class_chimera_t_k_1_1_meta_data_propagation_flag_provider.html", [
       [ "ChimeraTK::MetaDataPropagatingRegisterDecorator< T >", "class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html", null ]
     ] ],
@@ -670,6 +676,9 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::Visitor< VariableNetworkNode >", "class_chimera_t_k_1_1_visitor.html", [
       [ "ChimeraTK::VariableNetworkNodeDumpingVisitor", "class_chimera_t_k_1_1_variable_network_node_dumping_visitor.html", null ]
+    ] ],
+    [ "VoidRegisterAccessor", null, [
+      [ "ChimeraTK::VoidAccessor", "class_chimera_t_k_1_1_void_accessor.html", null ]
     ] ],
     [ "ACCESSOR", null, [
       [ "ChimeraTK::StatusAccessor< ACCESSOR >", "struct_chimera_t_k_1_1_status_accessor.html", null ]
