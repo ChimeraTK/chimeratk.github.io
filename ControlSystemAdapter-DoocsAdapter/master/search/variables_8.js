@@ -5,5 +5,5 @@ var searchData=
   ['incrementsource',['incrementSource',['../struct_chimera_t_k_1_1_spectrum_description.html#a8a4e1dfb8644ee71bdac83a897d4f1f9',1,'ChimeraTK::SpectrumDescription']]],
   ['info',['info',['../struct_zmq_data.html#a72c714767e66fb837f08a5a6d7e2caed',1,'ZmqData']]],
   ['isinitialised',['isInitialised',['../class_chimera_t_k_1_1_doocs_adapter.html#aefa97e9f933246fe87418ed282900f54',1,'ChimeraTK::DoocsAdapter']]],
-  ['iswriteable',['isWriteable',['../class_chimera_t_k_1_1_doocs_ifff.html#a916df608ba189c3d09e65c9be24183cd',1,'ChimeraTK::DoocsIfff::isWriteable()'],['../struct_chimera_t_k_1_1_property_attributes.html#aebe51d307d0289805ea80e3506e51f22',1,'ChimeraTK::PropertyAttributes::isWriteable()']]]
+  ['iswriteable',['isWriteable',['../struct_chimera_t_k_1_1_property_attributes.html#aebe51d307d0289805ea80e3506e51f22',1,'ChimeraTK::PropertyAttributes']]]
 ];

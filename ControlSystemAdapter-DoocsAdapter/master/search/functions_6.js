@@ -11,10 +11,11 @@ var searchData=
   ['getcontrolsystempvmanager',['getControlSystemPVManager',['../class_chimera_t_k_1_1_doocs_adapter.html#a63f08e25bb5fe5f7752d6b77b72f9041',1,'ChimeraTK::DoocsAdapter']]],
   ['getdatamatchingdefault',['getDataMatchingDefault',['../class_chimera_t_k_1_1_variable_mapper.html#adea1bd6bc590e7cd8d58650010c29958',1,'ChimeraTK::VariableMapper']]],
   ['getdevicepvmanager',['getDevicePVManager',['../class_chimera_t_k_1_1_doocs_adapter.html#a396057c5005d59f33b94733e86b2948c',1,'ChimeraTK::DoocsAdapter']]],
+  ['getdfct',['getDfct',['../class_chimera_t_k_1_1_property_base.html#ab34ae123a011159bba8c74d7792f5d4c',1,'ChimeraTK::PropertyBase']]],
   ['getdoocsproperties',['getDoocsProperties',['../class_testable_c_s_adapter_eq_fct.html#a41085f984e033bd952ac3ec0032097b8',1,'TestableCSAdapterEqFct']]],
   ['getdoocsproperty',['getDoocsProperty',['../server_based_test_tools_8h.html#acc3ed5bc6386b42ed79d1653c1361f62',1,'serverBasedTestTools.h']]],
   ['getelementstoread',['getElementsToRead',['../class_chimera_t_k_1_1_doocs_updater.html#a92a3437b66912dea1328333ddecfcb8d',1,'ChimeraTK::DoocsUpdater']]],
-  ['geteqfct',['getEqFct',['../class_chimera_t_k_1_1_property_base.html#a51c30c7143b7215c6b1b3bdeb22896c4',1,'ChimeraTK::PropertyBase::getEqFct()'],['../class_chimera_t_k_1_1_doocs_ifff.html#a672c00135c29d539583535eb9737a11a',1,'ChimeraTK::DoocsIfff::getEqFct()'],['../class_chimera_t_k_1_1_doocs_process_array.html#a8cf14cab0be706add447d836c25fe465',1,'ChimeraTK::DoocsProcessArray::getEqFct()'],['../class_chimera_t_k_1_1_doocs_process_scalar.html#a8679d7fe9ddc0bd052c47382df82b9c7',1,'ChimeraTK::DoocsProcessScalar::getEqFct()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a99ad65ccfb4ff600e9c71c85e606db86',1,'ChimeraTK::DoocsSpectrum::getEqFct()'],['../class_chimera_t_k_1_1_doocs_xy.html#aac64463b5586877c3c3c527259653df3',1,'ChimeraTK::DoocsXy::getEqFct()']]],
+  ['geteqfct',['getEqFct',['../class_chimera_t_k_1_1_property_base.html#a5b600b005b3170eb235541f7e10c6a63',1,'ChimeraTK::PropertyBase']]],
   ['geterrorreportinginfos',['getErrorReportingInfos',['../class_chimera_t_k_1_1_variable_mapper.html#a0a1bbe74e75d383b0a1d75479f68d843',1,'ChimeraTK::VariableMapper']]],
   ['gethashistorydefault',['getHasHistoryDefault',['../class_chimera_t_k_1_1_variable_mapper.html#adf790079aada402c1db0ad4e42c16752',1,'ChimeraTK::VariableMapper']]],
   ['getinstance',['getInstance',['../class_chimera_t_k_1_1_variable_mapper.html#ab7359ad69bc42594947748c51ceb8e73',1,'ChimeraTK::VariableMapper']]],
@@ -26,6 +27,7 @@ var searchData=
   ['getprocessvariablesinthislocation',['getProcessVariablesInThisLocation',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#aa9b14a8983622d4d7757709d8d91e1d3',1,'ChimeraTK::CSAdapterEqFct']]],
   ['getpropertiesinlocation',['getPropertiesInLocation',['../class_chimera_t_k_1_1_variable_mapper.html#aafbeae678eaa4d6c47fb57444337f47e',1,'ChimeraTK::VariableMapper']]],
   ['getsources',['getSources',['../struct_chimera_t_k_1_1_property_description.html#a3a7d4a55788e2621325be1e32b9406c0',1,'ChimeraTK::PropertyDescription::getSources()'],['../struct_chimera_t_k_1_1_auto_property_description.html#a73cb09c4ac947a66c37795ca48c925a9',1,'ChimeraTK::AutoPropertyDescription::getSources()'],['../struct_chimera_t_k_1_1_spectrum_description.html#a62510f49575b13a9f66b8e14343aa87f',1,'ChimeraTK::SpectrumDescription::getSources()'],['../struct_chimera_t_k_1_1_xy_description.html#ab385d6a133708cf16c3388a805e3d8ac',1,'ChimeraTK::XyDescription::getSources()'],['../struct_chimera_t_k_1_1_ifff_description.html#a95579272c6a78881fbfb952c49496796',1,'ChimeraTK::IfffDescription::getSources()']]],
+  ['gettimestamp',['getTimestamp',['../class_chimera_t_k_1_1_property_base.html#a99d914cc5fdbeaf9f2fa31d219686c17',1,'ChimeraTK::PropertyBase']]],
   ['getusedvariables',['getUsedVariables',['../class_chimera_t_k_1_1_variable_mapper.html#a4a095441bcd16d9c5acd0796aa5a9537',1,'ChimeraTK::VariableMapper']]],
   ['globalfixture',['GlobalFixture',['../struct_global_fixture.html#a82a3660c34f8ecf5e55eb1ee55949ca8',1,'GlobalFixture']]]
 ];

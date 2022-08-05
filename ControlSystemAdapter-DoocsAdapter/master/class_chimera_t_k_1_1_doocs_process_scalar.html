@@ -83,7 +83,8 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_doocs_process_sc
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_chimera_t_k_1_1_doocs_process_scalar-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ChimeraTK::DoocsProcessScalar&lt; T, DOOCS_T &gt; Class Template Reference</div>  </div>
@@ -113,45 +114,97 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_doocs_process_sc
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaabb23a58c28664aad70cfef8e961c31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#aaabb23a58c28664aad70cfef8e961c31">updateDoocsBuffer</a> (const TransferElementID &amp;transferElementId) override</td></tr>
-<tr class="separator:aaabb23a58c28664aad70cfef8e961c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8679d7fe9ddc0bd052c47382df82b9c7"><td class="memItemLeft" align="right" valign="top">EqFct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a8679d7fe9ddc0bd052c47382df82b9c7">getEqFct</a> () override</td></tr>
-<tr class="separator:a8679d7fe9ddc0bd052c47382df82b9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab07e3addb7c8642cf0ebe6f064f7e49f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#ab07e3addb7c8642cf0ebe6f064f7e49f">DoocsProcessScalar</a> (EqFct *eqFct, std::string doocsPropertyName, boost::shared_ptr&lt; typename ChimeraTK::NDRegisterAccessor&lt; T &gt;&gt; const &amp;processScalar, <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;updater)</td></tr>
+<tr class="memdesc:ab07e3addb7c8642cf0ebe6f064f7e49f"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor with history: EqFtc first  <a href="#ab07e3addb7c8642cf0ebe6f064f7e49f">More...</a><br /></td></tr>
 <tr class="separator:ab07e3addb7c8642cf0ebe6f064f7e49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0b4bf938939916d3220b13a024032ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#aa0b4bf938939916d3220b13a024032ff">DoocsProcessScalar</a> (std::string doocsPropertyName, EqFct *eqFct, boost::shared_ptr&lt; typename ChimeraTK::NDRegisterAccessor&lt; T &gt;&gt; const &amp;processScalar, <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;updater)</td></tr>
+<tr class="memdesc:aa0b4bf938939916d3220b13a024032ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor without history: name first  <a href="#aa0b4bf938939916d3220b13a024032ff">More...</a><br /></td></tr>
 <tr class="separator:aa0b4bf938939916d3220b13a024032ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9f48a3ee466e86095d17f3ff268d08f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#ac9f48a3ee466e86095d17f3ff268d08f">set</a> (EqAdr *adr, EqData *data1, EqData *data2, EqFct *eqfct) override</td></tr>
 <tr class="memdesc:ac9f48a3ee466e86095d17f3ff268d08f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the Doocs set method which is triggered by the RPC calls.  <a href="#ac9f48a3ee466e86095d17f3ff268d08f">More...</a><br /></td></tr>
 <tr class="separator:ac9f48a3ee466e86095d17f3ff268d08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9083eafab25e669b9ad746773dbc4123"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a9083eafab25e669b9ad746773dbc4123">auto_init</a> (void) override</td></tr>
-<tr class="memdesc:a9083eafab25e669b9ad746773dbc4123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the Doocs <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a9083eafab25e669b9ad746773dbc4123" title="Override the Doocs auto_init() method, which is called after initialising the value of the property f...">auto_init()</a> method, which is called after initialising the value of the property from the config file.  <a href="#a9083eafab25e669b9ad746773dbc4123">More...</a><br /></td></tr>
-<tr class="separator:a9083eafab25e669b9ad746773dbc4123"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f55136185466eaf6f8c5791bf1b380f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a5f55136185466eaf6f8c5791bf1b380f">publishZeroMQ</a> ()</td></tr>
-<tr class="separator:a5f55136185466eaf6f8c5791bf1b380f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad13b40f2d12f57129e0427307573b96b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#ad13b40f2d12f57129e0427307573b96b">setMacroPulseNumberSource</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt;&gt; macroPulseNumberSource)</td></tr>
-<tr class="separator:ad13b40f2d12f57129e0427307573b96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2143da2a3e9ada05b995c788c581bafb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a2143da2a3e9ada05b995c788c581bafb">auto_init</a> () override</td></tr>
+<tr class="memdesc:a2143da2a3e9ada05b995c788c581bafb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the Doocs <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a2143da2a3e9ada05b995c788c581bafb" title="Override the Doocs auto_init() method, which is called after initialising the value of the property f...">auto_init()</a> method, which is called after initialising the value of the property from the config file.  <a href="#a2143da2a3e9ada05b995c788c581bafb">More...</a><br /></td></tr>
+<tr class="separator:a2143da2a3e9ada05b995c788c581bafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_chimera_t_k_1_1_property_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_property_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_property_base.html">ChimeraTK::PropertyBase</a></td></tr>
+<tr class="memitem:a546476b698ca647aa1dee64969f5334e inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a546476b698ca647aa1dee64969f5334e">PropertyBase</a> (std::string doocsPropertyName, <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;updater)</td></tr>
+<tr class="separator:a546476b698ca647aa1dee64969f5334e inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5023202fa5df70b195677491547a8ca2 inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a5023202fa5df70b195677491547a8ca2">~PropertyBase</a> ()=default</td></tr>
+<tr class="separator:a5023202fa5df70b195677491547a8ca2 inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b600b005b3170eb235541f7e10c6a63 inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">EqFct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a5b600b005b3170eb235541f7e10c6a63">getEqFct</a> ()</td></tr>
+<tr class="memdesc:a5b600b005b3170eb235541f7e10c6a63 inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns associated DOOCS location  <a href="class_chimera_t_k_1_1_property_base.html#a5b600b005b3170eb235541f7e10c6a63">More...</a><br /></td></tr>
+<tr class="separator:a5b600b005b3170eb235541f7e10c6a63 inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34ae123a011159bba8c74d7792f5d4c inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">D_fct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#ab34ae123a011159bba8c74d7792f5d4c">getDfct</a> ()</td></tr>
+<tr class="memdesc:ab34ae123a011159bba8c74d7792f5d4c inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns associated DOOCS property. Not null.  <a href="class_chimera_t_k_1_1_property_base.html#ab34ae123a011159bba8c74d7792f5d4c">More...</a><br /></td></tr>
+<tr class="separator:ab34ae123a011159bba8c74d7792f5d4c inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0033cff00aad08d04aea38303d3b946 inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#aa0033cff00aad08d04aea38303d3b946">publishZeroMQ</a> ()</td></tr>
+<tr class="memdesc:aa0033cff00aad08d04aea38303d3b946 inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns on ZeroMQ publishing  <a href="class_chimera_t_k_1_1_property_base.html#aa0033cff00aad08d04aea38303d3b946">More...</a><br /></td></tr>
+<tr class="separator:aa0033cff00aad08d04aea38303d3b946 inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5daf977e9c3fc9f4870bab0134d659ff inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a5daf977e9c3fc9f4870bab0134d659ff">setMacroPulseNumberSource</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt;&gt; macroPulseNumberSource)</td></tr>
+<tr class="separator:a5daf977e9c3fc9f4870bab0134d659ff inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57e0f0b418f29806fafb377c788208c inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#aa57e0f0b418f29806fafb377c788208c">setMatchingMode</a> (DataConsistencyGroup::MatchingMode newMode)</td></tr>
+<tr class="separator:aa57e0f0b418f29806fafb377c788208c inherit pub_methods_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aaabb23a58c28664aad70cfef8e961c31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#aaabb23a58c28664aad70cfef8e961c31">updateDoocsBuffer</a> (const TransferElementID &amp;transferElementId) override</td></tr>
+<tr class="memdesc:aaabb23a58c28664aad70cfef8e961c31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update DOOCS buffer from PVs.  <a href="#aaabb23a58c28664aad70cfef8e961c31">More...</a><br /></td></tr>
+<tr class="separator:aaabb23a58c28664aad70cfef8e961c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_chimera_t_k_1_1_property_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_chimera_t_k_1_1_property_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_property_base.html">ChimeraTK::PropertyBase</a></td></tr>
+<tr class="memitem:a24b9748fec6e913d9e7103d677db2b48 inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a24b9748fec6e913d9e7103d677db2b48 inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a24b9748fec6e913d9e7103d677db2b48">setupOutputVar</a> (boost::shared_ptr&lt; typename ChimeraTK::NDRegisterAccessor&lt; T &gt;&gt; const &amp;processVar)</td></tr>
+<tr class="memdesc:a24b9748fec6e913d9e7103d677db2b48 inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">should be called for output vars mapped to doocs registers processVar in data consistency group, initializes DOOCS error state and keeps a reference as _mainOutputVar  <a href="class_chimera_t_k_1_1_property_base.html#a24b9748fec6e913d9e7103d677db2b48">More...</a><br /></td></tr>
+<tr class="separator:a24b9748fec6e913d9e7103d677db2b48 inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff70d958167694a5f54f2495323c422 inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#aeff70d958167694a5f54f2495323c422">registerVariable</a> (const ChimeraTK::TransferElementAbstractor &amp;var)</td></tr>
+<tr class="memdesc:aeff70d958167694a5f54f2495323c422 inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">register a variable in consistency group  <a href="class_chimera_t_k_1_1_property_base.html#aeff70d958167694a5f54f2495323c422">More...</a><br /></td></tr>
+<tr class="separator:aeff70d958167694a5f54f2495323c422 inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a748011619da365007e5f1ffaca82b29f inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a748011619da365007e5f1ffaca82b29f">updateConsistency</a> (const TransferElementID &amp;updatedId)</td></tr>
+<tr class="memdesc:a748011619da365007e5f1ffaca82b29f inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">update for data consistency group  <a href="class_chimera_t_k_1_1_property_base.html#a748011619da365007e5f1ffaca82b29f">More...</a><br /></td></tr>
+<tr class="separator:a748011619da365007e5f1ffaca82b29f inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99d914cc5fdbeaf9f2fa31d219686c17 inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">virtual doocs::Timestamp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a99d914cc5fdbeaf9f2fa31d219686c17">getTimestamp</a> ()</td></tr>
+<tr class="memdesc:a99d914cc5fdbeaf9f2fa31d219686c17 inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">default implementation returns timestamp of _outputVarForVersionNum  <a href="class_chimera_t_k_1_1_property_base.html#a99d914cc5fdbeaf9f2fa31d219686c17">More...</a><br /></td></tr>
+<tr class="separator:a99d914cc5fdbeaf9f2fa31d219686c17 inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa910037ad5a10c8047c7aa9a071bec0d inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">doocs::Timestamp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#aa910037ad5a10c8047c7aa9a071bec0d">correctDoocsTimestamp</a> ()</td></tr>
+<tr class="memdesc:aa910037ad5a10c8047c7aa9a071bec0d inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">implements timestamp workarounds for associated DOOCS property  <a href="class_chimera_t_k_1_1_property_base.html#aa910037ad5a10c8047c7aa9a071bec0d">More...</a><br /></td></tr>
+<tr class="separator:aa910037ad5a10c8047c7aa9a071bec0d inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc83cf086f9caac0f5612795eb68a3f9 inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#adc83cf086f9caac0f5612795eb68a3f9">sendZMQ</a> (doocs::Timestamp timestamp)</td></tr>
+<tr class="memdesc:adc83cf086f9caac0f5612795eb68a3f9 inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">send data via ZeroMQ if enabled and if DOOCS initialisation is complete  <a href="class_chimera_t_k_1_1_property_base.html#adc83cf086f9caac0f5612795eb68a3f9">More...</a><br /></td></tr>
+<tr class="separator:adc83cf086f9caac0f5612795eb68a3f9 inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd11e59ec01a446c193e6a1aeb5ca3fe inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#afd11e59ec01a446c193e6a1aeb5ca3fe">updateOthers</a> (bool handleLocking)</td></tr>
+<tr class="memdesc:afd11e59ec01a446c193e6a1aeb5ca3fe inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">make sure other properties using these PVs see the update  <a href="class_chimera_t_k_1_1_property_base.html#afd11e59ec01a446c193e6a1aeb5ca3fe">More...</a><br /></td></tr>
+<tr class="separator:afd11e59ec01a446c193e6a1aeb5ca3fe inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f8acfc56fc493ac85b961eb536512eb inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memTemplParams" colspan="2">template&lt;typename SELF , typename UserType &gt; </td></tr>
+<tr class="memitem:a1f8acfc56fc493ac85b961eb536512eb inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a1f8acfc56fc493ac85b961eb536512eb">sendArrayToDevice</a> (SELF *dfct, const boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; &amp;processArray)</td></tr>
+<tr class="memdesc:a1f8acfc56fc493ac85b961eb536512eb inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">a helper which unifies data-&gt;device for DOOCS_T = one of D_array&lt;DOOCS_PRIMITIVE_T&gt; or D_spectrum  <a href="class_chimera_t_k_1_1_property_base.html#a1f8acfc56fc493ac85b961eb536512eb">More...</a><br /></td></tr>
+<tr class="separator:a1f8acfc56fc493ac85b961eb536512eb inherit pro_methods_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
 <tr class="memitem:a8094bd569539554353d269b416f9e7ac"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a8094bd569539554353d269b416f9e7ac">_processScalar</a></td></tr>
 <tr class="separator:a8094bd569539554353d269b416f9e7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacc08be2190a969b6ebe7f70390dcb6a"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#aacc08be2190a969b6ebe7f70390dcb6a">_macroPulseNumberSource</a></td></tr>
-<tr class="separator:aacc08be2190a969b6ebe7f70390dcb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56eedfb09dd5ad6cfbef359f9f99c386"><td class="memItemLeft" align="right" valign="top">DataConsistencyGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a56eedfb09dd5ad6cfbef359f9f99c386">_consistencyGroup</a></td></tr>
-<tr class="separator:a56eedfb09dd5ad6cfbef359f9f99c386"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b03fc98070acab7614ad93e9b56e346"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a9b03fc98070acab7614ad93e9b56e346">_doocsUpdater</a></td></tr>
-<tr class="separator:a9b03fc98070acab7614ad93e9b56e346"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad816f9429b682af6e9c1aaa794d4d0fa"><td class="memItemLeft" align="right" valign="top">EqFct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#ad816f9429b682af6e9c1aaa794d4d0fa">_eqFct</a></td></tr>
-<tr class="separator:ad816f9429b682af6e9c1aaa794d4d0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5b5b33efbc7881741f076a36f1da35c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#ad5b5b33efbc7881741f076a36f1da35c">_publishZMQ</a> {false}</td></tr>
-<tr class="separator:ad5b5b33efbc7881741f076a36f1da35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a175b665f69ddd19f430524438d9536ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a175b665f69ddd19f430524438d9536ab">_doocsSuccessfullyUpdated</a> {true}</td></tr>
-<tr class="separator:a175b665f69ddd19f430524438d9536ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae95599f11af7221e0c1c90c3217cdcf9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#ae95599f11af7221e0c1c90c3217cdcf9">_nDataLossWarnings</a> {0}</td></tr>
-<tr class="separator:ae95599f11af7221e0c1c90c3217cdcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_property_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_property_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_property_base.html">ChimeraTK::PropertyBase</a></td></tr>
+<tr class="memitem:a74e7fad4053a18b7377c047421929cd6 inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a74e7fad4053a18b7377c047421929cd6">_macroPulseNumberSource</a></td></tr>
+<tr class="separator:a74e7fad4053a18b7377c047421929cd6 inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be1e73892ca1594417061c8500bb016 inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">DataConsistencyGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a0be1e73892ca1594417061c8500bb016">_consistencyGroup</a></td></tr>
+<tr class="separator:a0be1e73892ca1594417061c8500bb016 inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8c117c4f68363e9c8ff1cb1ed752b37 inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#aa8c117c4f68363e9c8ff1cb1ed752b37">_doocsPropertyName</a></td></tr>
+<tr class="separator:aa8c117c4f68363e9c8ff1cb1ed752b37 inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e0c272a4cb7504c2cbcbfd11e4701c inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a07e0c272a4cb7504c2cbcbfd11e4701c">_doocsUpdater</a></td></tr>
+<tr class="separator:a07e0c272a4cb7504c2cbcbfd11e4701c inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce2aea8fa82cfe47100215fa85687b1 inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a5ce2aea8fa82cfe47100215fa85687b1">_publishZMQ</a> {false}</td></tr>
+<tr class="separator:a5ce2aea8fa82cfe47100215fa85687b1 inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c191c75303b7c5f1adfc5e6c94b805f inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::TransferElement &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a6c191c75303b7c5f1adfc5e6c94b805f">_outputVarForVersionNum</a></td></tr>
+<tr class="separator:a6c191c75303b7c5f1adfc5e6c94b805f inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dcddac856de0f3b22d3020ddf043162 inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a6dcddac856de0f3b22d3020ddf043162">_doocsSuccessfullyUpdated</a> {true}</td></tr>
+<tr class="separator:a6dcddac856de0f3b22d3020ddf043162 inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7226e87348331ab527255e37b8f9d6b0 inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#a7226e87348331ab527255e37b8f9d6b0">_nDataLossWarnings</a> {0}</td></tr>
+<tr class="separator:a7226e87348331ab527255e37b8f9d6b0 inherit pro_attribs_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_chimera_t_k_1_1_property_base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_chimera_t_k_1_1_property_base')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_property_base.html">ChimeraTK::PropertyBase</a></td></tr>
 <tr class="memitem:ab3924b02a7735ac918103c699f1afc4c inherit pub_attribs_class_chimera_t_k_1_1_property_base"><td class="memItemLeft" align="right" valign="top">std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_property_base.html">PropertyBase</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_property_base.html#ab3924b02a7735ac918103c699f1afc4c">otherPropertiesToUpdate</a></td></tr>
+<tr class="memdesc:ab3924b02a7735ac918103c699f1afc4c inherit pub_attribs_class_chimera_t_k_1_1_property_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of other properties which need to update their DOOCS buffers when this property is written from the DOOCS side.  <a href="class_chimera_t_k_1_1_property_base.html#ab3924b02a7735ac918103c699f1afc4c">More...</a><br /></td></tr>
 <tr class="separator:ab3924b02a7735ac918103c699f1afc4c inherit pub_attribs_class_chimera_t_k_1_1_property_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -164,7 +217,7 @@ class ChimeraTK::DoocsProcessScalar&lt; T, DOOCS_T &gt;</h3>
 <li><code>DOOCS_T</code>, The Doocs type which is used </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00021">21</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00024">24</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab07e3addb7c8642cf0ebe6f064f7e49f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab07e3addb7c8642cf0ebe6f064f7e49f">&#9670;&nbsp;</a></span>DoocsProcessScalar() <span class="overload">[1/2]</span></h2>
@@ -173,9 +226,6 @@ class ChimeraTK::DoocsProcessScalar&lt; T, DOOCS_T &gt;</h3>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T, typename DOOCS_T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::<a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">DoocsProcessScalar</a> </td>
@@ -207,22 +257,9 @@ template&lt;typename T, typename DOOCS_T&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00104">104</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_process_scalar_ab07e3addb7c8642cf0ebe6f064f7e49f_cgraph.svg" width="486" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p>constructor with history: EqFtc first </p>
 
 </div>
 </div>
@@ -233,9 +270,6 @@ template&lt;typename T, typename DOOCS_T&gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T, typename DOOCS_T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::<a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">DoocsProcessScalar</a> </td>
@@ -267,33 +301,20 @@ template&lt;typename T, typename DOOCS_T&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00119">119</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_process_scalar_aa0b4bf938939916d3220b13a024032ff_cgraph.svg" width="486" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p>constructor without history: name first </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9083eafab25e669b9ad746773dbc4123"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9083eafab25e669b9ad746773dbc4123">&#9670;&nbsp;</a></span>auto_init()</h2>
+<a id="a2143da2a3e9ada05b995c788c581bafb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2143da2a3e9ada05b995c788c581bafb">&#9670;&nbsp;</a></span>auto_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, typename DOOCS_T&gt; </div>
+template&lt;typename T , typename DOOCS_T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -301,89 +322,28 @@ template&lt;typename T, typename DOOCS_T&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::auto_init </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Override the Doocs <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a9083eafab25e669b9ad746773dbc4123" title="Override the Doocs auto_init() method, which is called after initialising the value of the property f...">auto_init()</a> method, which is called after initialising the value of the property from the config file. </p>
+<p>Override the Doocs <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html#a2143da2a3e9ada05b995c788c581bafb" title="Override the Doocs auto_init() method, which is called after initialising the value of the property f...">auto_init()</a> method, which is called after initialising the value of the property from the config file. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00190">190</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00091">91</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_process_scalar_a9083eafab25e669b9ad746773dbc4123_cgraph.svg" width="484" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_process_scalar_a2143da2a3e9ada05b995c788c581bafb_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<a id="a8679d7fe9ddc0bd052c47382df82b9c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8679d7fe9ddc0bd052c47382df82b9c7">&#9670;&nbsp;</a></span>getEqFct()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, typename DOOCS_T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">EqFct* <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::getEqFct </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="class_chimera_t_k_1_1_property_base.html#a51c30c7143b7215c6b1b3bdeb22896c4">ChimeraTK::PropertyBase</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00102">102</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
-
-</div>
-</div>
-<a id="a5f55136185466eaf6f8c5791bf1b380f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f55136185466eaf6f8c5791bf1b380f">&#9670;&nbsp;</a></span>publishZeroMQ()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, typename DOOCS_T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::publishZeroMQ </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00209">209</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +353,7 @@ template&lt;typename T, typename DOOCS_T&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, typename DOOCS_T&gt; </div>
+template&lt;typename T , typename DOOCS_T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -430,50 +390,20 @@ template&lt;typename T, typename DOOCS_T&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Override the Doocs set method which is triggered by the RPC calls. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00137">137</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
-
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00067">67</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-</div>
-<a id="ad13b40f2d12f57129e0427307573b96b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad13b40f2d12f57129e0427307573b96b">&#9670;&nbsp;</a></span>setMacroPulseNumberSource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, typename DOOCS_T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::setMacroPulseNumberSource </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; int64_t &gt;&gt;&#160;</td>
-          <td class="paramname"><em>macroPulseNumberSource</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00211">211</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_process_scalar_ad13b40f2d12f57129e0427307573b96b_cgraph.svg" width="486" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_process_scalar_ac9f48a3ee466e86095d17f3ff268d08f_cgraph.svg" width="100%" height="431"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -485,7 +415,7 @@ template&lt;typename T, typename DOOCS_T&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, typename DOOCS_T&gt; </div>
+template&lt;typename T , typename DOOCS_T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -500,134 +430,29 @@ template&lt;typename T, typename DOOCS_T&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Update DOOCS buffer from PVs. </p>
+<p>The given transferElementId shall be used only for checking consistency with the DataConsistencyGroup. {} will be passed if the update is coming from another property (hence the update will only be taken with data matching set to none, which is the expected behaviour). </p>
+
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_property_base.html#a84321bee2f774f409885cca97c6c8ff8">ChimeraTK::PropertyBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00023">23</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00108">108</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_process_scalar_aaabb23a58c28664aad70cfef8e961c31_cgraph.svg" width="502" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_doocs_process_scalar_aaabb23a58c28664aad70cfef8e961c31_cgraph.svg" width="100%" height="511"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a56eedfb09dd5ad6cfbef359f9f99c386"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56eedfb09dd5ad6cfbef359f9f99c386">&#9670;&nbsp;</a></span>_consistencyGroup</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, typename DOOCS_T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">DataConsistencyGroup <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::_consistencyGroup</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00229">229</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
-
-</div>
-</div>
-<a id="a175b665f69ddd19f430524438d9536ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a175b665f69ddd19f430524438d9536ab">&#9670;&nbsp;</a></span>_doocsSuccessfullyUpdated</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, typename DOOCS_T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::_doocsSuccessfullyUpdated {true}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00233">233</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
-
-</div>
-</div>
-<a id="a9b03fc98070acab7614ad93e9b56e346"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b03fc98070acab7614ad93e9b56e346">&#9670;&nbsp;</a></span>_doocsUpdater</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, typename DOOCS_T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a>&amp; <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::_doocsUpdater</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00230">230</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
-
-</div>
-</div>
-<a id="ad816f9429b682af6e9c1aaa794d4d0fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad816f9429b682af6e9c1aaa794d4d0fa">&#9670;&nbsp;</a></span>_eqFct</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, typename DOOCS_T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">EqFct* <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::_eqFct</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00231">231</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
-
-</div>
-</div>
-<a id="aacc08be2190a969b6ebe7f70390dcb6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacc08be2190a969b6ebe7f70390dcb6a">&#9670;&nbsp;</a></span>_macroPulseNumberSource</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, typename DOOCS_T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;int64_t&gt; &gt; <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::_macroPulseNumberSource</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00228">228</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
-
-</div>
-</div>
-<a id="ae95599f11af7221e0c1c90c3217cdcf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae95599f11af7221e0c1c90c3217cdcf9">&#9670;&nbsp;</a></span>_nDataLossWarnings</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, typename DOOCS_T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::_nDataLossWarnings {0}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00236">236</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
-
-</div>
-</div>
 <a id="a8094bd569539554353d269b416f9e7ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8094bd569539554353d269b416f9e7ac">&#9670;&nbsp;</a></span>_processScalar</h2>
 
@@ -635,32 +460,22 @@ template&lt;typename T, typename DOOCS_T&gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T, typename DOOCS_T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">boost::shared_ptr&lt;ChimeraTK::NDRegisterAccessor&lt;T&gt; &gt; <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::_processScalar</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00227">227</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
-
-</div>
-</div>
-<a id="ad5b5b33efbc7881741f076a36f1da35c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5b5b33efbc7881741f076a36f1da35c">&#9670;&nbsp;</a></span>_publishZMQ</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, typename DOOCS_T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">ChimeraTK::DoocsProcessScalar</a>&lt; T, DOOCS_T &gt;::_publishZMQ {false}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00232">232</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_process_scalar_8h_source.html#l00047">47</a> of file <a class="el" href="_doocs_process_scalar_8h_source.html">DoocsProcessScalar.h</a>.</p>
 
 </div>
 </div>
@@ -673,7 +488,7 @@ template&lt;typename T, typename DOOCS_T&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_process_scalar.html">DoocsProcessScalar</a></li>
-    <li class="footer">Generated on Thu Aug 4 2022 04:04:19 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Fri Aug 5 2022 04:02:51 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

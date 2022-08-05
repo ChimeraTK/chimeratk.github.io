@@ -114,9 +114,9 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_doocs_p_v_factor
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a619205b2e864b0e27c343d18fa570cf0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_p_v_factory.html#a619205b2e864b0e27c343d18fa570cf0">DoocsPVFactory</a> (EqFct *const eqFct, <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;updater, boost::shared_ptr&lt; ControlSystemPVManager &gt; const &amp;csPVManager)</td></tr>
-<tr class="memdesc:a619205b2e864b0e27c343d18fa570cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor needs a pointer to the EqFct.  <a href="#a619205b2e864b0e27c343d18fa570cf0">More...</a><br /></td></tr>
-<tr class="separator:a619205b2e864b0e27c343d18fa570cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87a4ef13e61eeb7ebf9280868d4ba09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_p_v_factory.html#aa87a4ef13e61eeb7ebf9280868d4ba09">DoocsPVFactory</a> (EqFct *eqFct, <a class="el" href="class_chimera_t_k_1_1_doocs_updater.html">DoocsUpdater</a> &amp;updater, boost::shared_ptr&lt; ControlSystemPVManager &gt; const &amp;csPVManager)</td></tr>
+<tr class="memdesc:aa87a4ef13e61eeb7ebf9280868d4ba09"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor needs a pointer to the EqFct.  <a href="#aa87a4ef13e61eeb7ebf9280868d4ba09">More...</a><br /></td></tr>
+<tr class="separator:aa87a4ef13e61eeb7ebf9280868d4ba09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa39ca83409ab6a864386a0dbf504e7a8"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; D_fct &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_doocs_p_v_factory.html#aa39ca83409ab6a864386a0dbf504e7a8">create</a> (std::shared_ptr&lt; <a class="el" href="struct_chimera_t_k_1_1_property_description.html">PropertyDescription</a> &gt; const &amp;propertyDescription)</td></tr>
 <tr class="separator:aa39ca83409ab6a864386a0dbf504e7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -154,10 +154,10 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The DoocsProcessVariableFactory creates Doocs variables (D_fct) from ChimeraTK::ProcessVariables. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8h_source.html#l00020">20</a> of file <a class="el" href="_doocs_p_v_factory_8h_source.html">DoocsPVFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8h_source.html#l00022">22</a> of file <a class="el" href="_doocs_p_v_factory_8h_source.html">DoocsPVFactory.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a619205b2e864b0e27c343d18fa570cf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a619205b2e864b0e27c343d18fa570cf0">&#9670;&nbsp;</a></span>DoocsPVFactory()</h2>
+<a id="aa87a4ef13e61eeb7ebf9280868d4ba09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa87a4ef13e61eeb7ebf9280868d4ba09">&#9670;&nbsp;</a></span>DoocsPVFactory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +165,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">ChimeraTK::DoocsPVFactory::DoocsPVFactory </td>
           <td>(</td>
-          <td class="paramtype">EqFct *const&#160;</td>
+          <td class="paramtype">EqFct *&#160;</td>
           <td class="paramname"><em>eqFct</em>, </td>
         </tr>
         <tr>
@@ -191,7 +191,7 @@ Protected Attributes</h2></td></tr>
 <p>The constructor needs a pointer to the EqFct. </p>
 <p>It is designed to be used inside the EqFct, so the 'this' pointer will be given. As it is not copyable this is ok. </p>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00017">17</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00021">21</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
 
 </div>
 </div>
@@ -220,7 +220,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00342">342</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00348">348</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -248,7 +248,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00496">496</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00500">500</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -292,7 +292,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00461">461</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00465">465</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -348,7 +348,7 @@ template&lt;class DOOCS_PRIMITIVE_T , class DOOCS_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00026">26</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00030">30</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
 
 </div>
 </div>
@@ -377,7 +377,7 @@ template&lt;class DOOCS_PRIMITIVE_T , class DOOCS_T &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>FIXME: use <a class="el" href="struct_chimera_t_k_1_1_spectrum_description.html">SpectrumDescription</a> here </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00157">157</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00160">160</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -413,7 +413,7 @@ template&lt;class DOOCS_PRIMITIVE_T , class DOOCS_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00273">273</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00279">279</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -449,7 +449,7 @@ template&lt;class DOOCS_PRIMITIVE_T , class DOOCS_T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00243">243</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00245">245</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -488,7 +488,7 @@ template&lt;class DOOCS_PRIMITIVE_T , class DOOCS_T &gt; </div>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>FIXME Add the decorator type as option to the array description, and only use C_style_conversion as default </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00400">400</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00406">406</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
 
 </div>
 </div>
@@ -540,7 +540,7 @@ template&lt;class DOOCS_SCALAR_T , class DOOCS_PRIMITIVE_T , class DOOCS_ARRAY_T
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00319">319</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8cc_source.html#l00325">325</a> of file <a class="el" href="_doocs_p_v_factory_8cc_source.html">DoocsPVFactory.cc</a>.</p>
 
 </div>
 </div>
@@ -565,7 +565,7 @@ template&lt;class DOOCS_SCALAR_T , class DOOCS_PRIMITIVE_T , class DOOCS_ARRAY_T
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8h_source.html#l00036">36</a> of file <a class="el" href="_doocs_p_v_factory_8h_source.html">DoocsPVFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8h_source.html#l00037">37</a> of file <a class="el" href="_doocs_p_v_factory_8h_source.html">DoocsPVFactory.h</a>.</p>
 
 </div>
 </div>
@@ -589,7 +589,7 @@ template&lt;class DOOCS_SCALAR_T , class DOOCS_PRIMITIVE_T , class DOOCS_ARRAY_T
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8h_source.html#l00033">33</a> of file <a class="el" href="_doocs_p_v_factory_8h_source.html">DoocsPVFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8h_source.html#l00034">34</a> of file <a class="el" href="_doocs_p_v_factory_8h_source.html">DoocsPVFactory.h</a>.</p>
 
 </div>
 </div>
@@ -613,7 +613,7 @@ template&lt;class DOOCS_SCALAR_T , class DOOCS_PRIMITIVE_T , class DOOCS_ARRAY_T
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8h_source.html#l00035">35</a> of file <a class="el" href="_doocs_p_v_factory_8h_source.html">DoocsPVFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_doocs_p_v_factory_8h_source.html#l00036">36</a> of file <a class="el" href="_doocs_p_v_factory_8h_source.html">DoocsPVFactory.h</a>.</p>
 
 </div>
 </div>
@@ -627,7 +627,7 @@ template&lt;class DOOCS_SCALAR_T , class DOOCS_PRIMITIVE_T , class DOOCS_ARRAY_T
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_doocs_p_v_factory.html">DoocsPVFactory</a></li>
-    <li class="footer">Generated on Thu Aug 4 2022 04:04:19 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
+    <li class="footer">Generated on Fri Aug 5 2022 04:02:52 for ChimeraTK-ControlSystemAdapter-DoocsAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

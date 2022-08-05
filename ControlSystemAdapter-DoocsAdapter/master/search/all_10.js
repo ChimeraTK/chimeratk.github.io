@@ -1,8 +1,10 @@
 var searchData=
 [
   ['savearray',['saveArray',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#a4cafc4b8bd0264b955025c3b6d860a4f',1,'ChimeraTK::CSAdapterEqFct']]],
+  ['sendarraytodevice',['sendArrayToDevice',['../class_chimera_t_k_1_1_property_base.html#a1f8acfc56fc493ac85b961eb536512eb',1,'ChimeraTK::PropertyBase']]],
   ['sendtoapplication',['sendToApplication',['../class_chimera_t_k_1_1_doocs_ifff.html#aa53a7159c0a221ed783b5d28731e198f',1,'ChimeraTK::DoocsIfff']]],
   ['sendtodevice',['sendToDevice',['../class_chimera_t_k_1_1_doocs_process_array.html#a1cd96f065adc8be77560c9301bc3ae33',1,'ChimeraTK::DoocsProcessArray::sendToDevice()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#ae5eb8cc34d17f90b3556de8422f1af6d',1,'ChimeraTK::DoocsSpectrum::sendToDevice()']]],
+  ['sendzmq',['sendZMQ',['../class_chimera_t_k_1_1_property_base.html#adc83cf086f9caac0f5612795eb68a3f9',1,'ChimeraTK::PropertyBase']]],
   ['server',['server',['../struct_global_fixture.html#a6da5db95b6a905a3cc0470dc80e9c4f0',1,'GlobalFixture']]],
   ['serverbasedtesttools_2eh',['serverBasedTestTools.h',['../server_based_test_tools_8h.html',1,'']]],
   ['servertestarraypersistence_2ecpp',['serverTestArrayPersistence.cpp',['../server_test_array_persistence_8cpp.html',1,'']]],
@@ -32,7 +34,9 @@ var searchData=
   ['set_5fand_5farchive',['set_and_archive',['../struct_d__text_unifier.html#acc4bbc994bdedcd86a92a27e856d2a39',1,'D_textUnifier']]],
   ['set_5fdoocs_5fvalue',['set_doocs_value',['../set__doocs__value_8h.html#aa1af9201ce386d11499030efe6def5d1',1,'set_doocs_value.h']]],
   ['set_5fdoocs_5fvalue_2eh',['set_doocs_value.h',['../set__doocs__value_8h.html',1,'']]],
-  ['setmacropulsenumbersource',['setMacroPulseNumberSource',['../class_chimera_t_k_1_1_doocs_ifff.html#acc3d25b87a5fb3e1f04b151ba80d09e0',1,'ChimeraTK::DoocsIfff::setMacroPulseNumberSource()'],['../class_chimera_t_k_1_1_doocs_process_array.html#a10c4c6f5b23e711ad8064f251fb38d11',1,'ChimeraTK::DoocsProcessArray::setMacroPulseNumberSource()'],['../class_chimera_t_k_1_1_doocs_process_scalar.html#ad13b40f2d12f57129e0427307573b96b',1,'ChimeraTK::DoocsProcessScalar::setMacroPulseNumberSource()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#a142e85183fcdca035369a1cb1a91e364',1,'ChimeraTK::DoocsSpectrum::setMacroPulseNumberSource()']]],
+  ['setmacropulsenumbersource',['setMacroPulseNumberSource',['../class_chimera_t_k_1_1_property_base.html#a5daf977e9c3fc9f4870bab0134d659ff',1,'ChimeraTK::PropertyBase']]],
+  ['setmatchingmode',['setMatchingMode',['../class_chimera_t_k_1_1_property_base.html#aa57e0f0b418f29806fafb377c788208c',1,'ChimeraTK::PropertyBase']]],
+  ['setupoutputvar',['setupOutputVar',['../class_chimera_t_k_1_1_property_base.html#a24b9748fec6e913d9e7103d677db2b48',1,'ChimeraTK::PropertyBase']]],
   ['short',['Short',['../struct_chimera_t_k_1_1_auto_property_description.html#ae47b83262db33cd0267c9470e1d78661a30bb747c98bccdd11b3f89e644c4d0ad',1,'ChimeraTK::AutoPropertyDescription']]],
   ['simple_5ftest_5ftypes',['simple_test_types',['../test_doocs_p_v_factory_8cpp.html#a943e1ba9eadbc59adfe9aa67ede217fd',1,'simple_test_types():&#160;testDoocsPVFactory.cpp'],['../test_doocs_spectrum_8cpp.html#a665cca247e3b5107ed037118096b2349',1,'simple_test_types():&#160;testDoocsSpectrum.cpp']]],
   ['source',['source',['../struct_chimera_t_k_1_1_auto_property_description.html#ab5146c69e798b20a26bf8a05ee9c539d',1,'ChimeraTK::AutoPropertyDescription::source()'],['../struct_chimera_t_k_1_1_spectrum_description.html#a7c5ff8a2cbc319d3c5c304f85740cc9a',1,'ChimeraTK::SpectrumDescription::source()']]],

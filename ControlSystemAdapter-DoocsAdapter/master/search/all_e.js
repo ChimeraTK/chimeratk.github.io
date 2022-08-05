@@ -18,9 +18,11 @@ var searchData=
   ['processxynode',['processXyNode',['../class_chimera_t_k_1_1_variable_mapper.html#a0ae04625dba7e9b611a0368b55ec7b28',1,'ChimeraTK::VariableMapper']]],
   ['property_5fname',['PROPERTY_NAME',['../server_test_ifff_8cpp.html#a3a0ff8a947b99ecd7440e172d57d2c92',1,'PROPERTY_NAME():&#160;serverTestIfff.cpp'],['../server_test_xy_8cpp.html#a642e190f1867ffcf3d68888589bea066',1,'PROPERTY_NAME():&#160;serverTestXy.cpp']]],
   ['propertyattributes',['PropertyAttributes',['../struct_chimera_t_k_1_1_property_attributes.html',1,'ChimeraTK::PropertyAttributes'],['../struct_chimera_t_k_1_1_property_attributes.html#a879ee6a4d1909a6ee98b1ff71774ea3e',1,'ChimeraTK::PropertyAttributes::PropertyAttributes()']]],
-  ['propertybase',['PropertyBase',['../class_chimera_t_k_1_1_property_base.html',1,'ChimeraTK']]],
+  ['propertybase',['PropertyBase',['../class_chimera_t_k_1_1_property_base.html',1,'ChimeraTK::PropertyBase'],['../class_chimera_t_k_1_1_property_base.html#a546476b698ca647aa1dee64969f5334e',1,'ChimeraTK::PropertyBase::PropertyBase()']]],
+  ['propertybase_2ecc',['PropertyBase.cc',['../_property_base_8cc.html',1,'']]],
+  ['propertybase_2eh',['PropertyBase.h',['../_property_base_8h.html',1,'']]],
   ['propertydescription',['PropertyDescription',['../struct_chimera_t_k_1_1_property_description.html',1,'ChimeraTK::PropertyDescription'],['../struct_chimera_t_k_1_1_property_description.html#a94c06c101bc5591f70c2b37f4faf931d',1,'ChimeraTK::PropertyDescription::PropertyDescription()']]],
   ['propertydescription_2eh',['PropertyDescription.h',['../_property_description_8h.html',1,'']]],
-  ['publishzeromq',['publishZeroMQ',['../class_chimera_t_k_1_1_doocs_ifff.html#aca63d16b1e576bb9bcd3c3278729f5af',1,'ChimeraTK::DoocsIfff::publishZeroMQ()'],['../class_chimera_t_k_1_1_doocs_process_array.html#a17728d409c23a3c974e2049eb1e1ed76',1,'ChimeraTK::DoocsProcessArray::publishZeroMQ()'],['../class_chimera_t_k_1_1_doocs_process_scalar.html#a5f55136185466eaf6f8c5791bf1b380f',1,'ChimeraTK::DoocsProcessScalar::publishZeroMQ()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#addacf7abb78920edcaf91d454da646d8',1,'ChimeraTK::DoocsSpectrum::publishZeroMQ()']]],
-  ['publishzmq',['publishZMQ',['../class_chimera_t_k_1_1_doocs_process_array.html#a915bc263a2809baa52ccdf189987f8e0',1,'ChimeraTK::DoocsProcessArray::publishZMQ()'],['../class_chimera_t_k_1_1_doocs_spectrum.html#ad9c0e9ccb9a13e93bc3078dcde4e74fd',1,'ChimeraTK::DoocsSpectrum::publishZMQ()'],['../struct_chimera_t_k_1_1_property_attributes.html#a2e90872d5391a4c6e71efe3b2057f061',1,'ChimeraTK::PropertyAttributes::publishZMQ()']]]
+  ['publishzeromq',['publishZeroMQ',['../class_chimera_t_k_1_1_property_base.html#aa0033cff00aad08d04aea38303d3b946',1,'ChimeraTK::PropertyBase']]],
+  ['publishzmq',['publishZMQ',['../struct_chimera_t_k_1_1_property_attributes.html#a2e90872d5391a4c6e71efe3b2057f061',1,'ChimeraTK::PropertyAttributes']]]
 ];

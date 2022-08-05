@@ -8,7 +8,7 @@ var searchData=
   ['refresh_5fprolog',['refresh_prolog',['../empty__doocs__functions_8cc.html#a8b5b57acbc923f1e052c514858e87797',1,'refresh_prolog():&#160;empty_doocs_functions.cc'],['../empty_server_functions_8h.html#a8b5b57acbc923f1e052c514858e87797',1,'refresh_prolog():&#160;emptyServerFunctions.h']]],
   ['registerifffsources',['registerIfffSources',['../class_chimera_t_k_1_1_doocs_ifff.html#aa4e6c45750b5590481f7674664babeb2',1,'ChimeraTK::DoocsIfff']]],
   ['registerprocessvariablesindoocs',['registerProcessVariablesInDoocs',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#ae6ea446f82465cd12cce0232017f9f7c',1,'ChimeraTK::CSAdapterEqFct']]],
-  ['registervariable',['registerVariable',['../class_chimera_t_k_1_1_doocs_ifff.html#a8b9e59a5809aa21eb21d4d9a304899ba',1,'ChimeraTK::DoocsIfff']]],
+  ['registervariable',['registerVariable',['../class_chimera_t_k_1_1_property_base.html#aeff70d958167694a5f54f2495323c422',1,'ChimeraTK::PropertyBase']]],
   ['rpcno',['rpcNo',['../struct_global_fixture.html#af4d07773622b270bc44eed044d0d8d39',1,'GlobalFixture']]],
   ['run',['run',['../class_chimera_t_k_1_1_doocs_updater.html#aafe7082f09c25245074fed216d78c528',1,'ChimeraTK::DoocsUpdater']]]
 ];

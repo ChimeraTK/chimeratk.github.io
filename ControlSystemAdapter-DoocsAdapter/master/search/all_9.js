@@ -14,5 +14,5 @@ var searchData=
   ['interrupt_5fusr2_5fepilog',['interrupt_usr2_epilog',['../empty__doocs__functions_8cc.html#a81f4459bd6ba380a4dbaca99700a9108',1,'interrupt_usr2_epilog():&#160;empty_doocs_functions.cc'],['../empty_server_functions_8h.html#a81f4459bd6ba380a4dbaca99700a9108',1,'interrupt_usr2_epilog():&#160;emptyServerFunctions.h']]],
   ['interrupt_5fusr2_5fprolog',['interrupt_usr2_prolog',['../empty__doocs__functions_8cc.html#a4e44246a6c25c6a17f3022dac1d818b8',1,'interrupt_usr2_prolog():&#160;empty_doocs_functions.cc'],['../empty_server_functions_8h.html#a4e44246a6c25c6a17f3022dac1d818b8',1,'interrupt_usr2_prolog():&#160;emptyServerFunctions.h']]],
   ['isinitialised',['isInitialised',['../class_chimera_t_k_1_1_doocs_adapter.html#aefa97e9f933246fe87418ed282900f54',1,'ChimeraTK::DoocsAdapter']]],
-  ['iswriteable',['isWriteable',['../class_chimera_t_k_1_1_doocs_ifff.html#a916df608ba189c3d09e65c9be24183cd',1,'ChimeraTK::DoocsIfff::isWriteable()'],['../struct_chimera_t_k_1_1_property_attributes.html#aebe51d307d0289805ea80e3506e51f22',1,'ChimeraTK::PropertyAttributes::isWriteable()']]]
+  ['iswriteable',['isWriteable',['../struct_chimera_t_k_1_1_property_attributes.html#aebe51d307d0289805ea80e3506e51f22',1,'ChimeraTK::PropertyAttributes']]]
 ];

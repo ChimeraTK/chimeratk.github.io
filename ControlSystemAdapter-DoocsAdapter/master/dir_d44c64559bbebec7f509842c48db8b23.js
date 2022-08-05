@@ -30,6 +30,9 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "DoocsXy", "class_chimera_t_k_1_1_doocs_xy.html", "class_chimera_t_k_1_1_doocs_xy" ]
     ] ],
     [ "getAllVariableNames.h", "get_all_variable_names_8h.html", "get_all_variable_names_8h" ],
+    [ "PropertyBase.h", "_property_base_8h.html", [
+      [ "PropertyBase", "class_chimera_t_k_1_1_property_base.html", "class_chimera_t_k_1_1_property_base" ]
+    ] ],
     [ "PropertyDescription.h", "_property_description_8h.html", [
       [ "PersistConfig", "struct_chimera_t_k_1_1_persist_config.html", "struct_chimera_t_k_1_1_persist_config" ],
       [ "PropertyAttributes", "struct_chimera_t_k_1_1_property_attributes.html", "struct_chimera_t_k_1_1_property_attributes" ],
