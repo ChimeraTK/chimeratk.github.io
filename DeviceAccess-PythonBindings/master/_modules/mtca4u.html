@@ -677,8 +677,7 @@
         <span class="c1"># c++ accessor</span>
         <span class="n">numberOfSequences</span> <span class="o">=</span> <span class="n">accessor</span><span class="o">.</span><span class="n">getNChannels</span><span class="p">()</span>
         <span class="n">numberOfBlocks</span> <span class="o">=</span> <span class="n">accessor</span><span class="o">.</span><span class="n">getNElementsPerChannel</span><span class="p">()</span>
-        <span class="n">array2D</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__create2DArray</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">double</span><span class="p">,</span> <span class="n">numberOfBlocks</span><span class="p">,</span>
-                                       <span class="n">numberOfSequences</span><span class="p">)</span>
+        <span class="n">array2D</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__create2DArray</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">double</span><span class="p">,</span>  <span class="n">numberOfSequences</span><span class="p">,</span> <span class="n">numberOfBlocks</span><span class="p">)</span>
 
         <span class="n">accessor</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">array2D</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">numpy</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">array2D</span><span class="p">)</span></div>
