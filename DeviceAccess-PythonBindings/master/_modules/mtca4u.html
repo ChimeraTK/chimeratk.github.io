@@ -463,7 +463,7 @@
                                                                      <span class="n">elementIndexInRegister</span><span class="p">,</span> <span class="p">[</span><span class="n">mtca4udeviceaccess</span><span class="o">.</span><span class="n">AccessMode</span><span class="o">.</span><span class="n">raw</span><span class="p">])</span>
         <span class="n">registerSize</span> <span class="o">=</span> <span class="n">registerAccessor</span><span class="o">.</span><span class="n">getNElements</span><span class="p">()</span>
         <span class="n">array</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">registerSize</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
-        <span class="n">registerAccessor</span><span class="o">.</span><span class="n">copyUserBufferToNpArray</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+        <span class="n">registerAccessor</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="n">array</span></div>
 
@@ -542,7 +542,6 @@
         <span class="c1"># accessor = self.__openedDevice.getRaw1DAccessor(registerPath, numberOfElementsToWrite, elementIndexInRegister)</span>
         <span class="n">accessor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__openedDevice</span><span class="o">.</span><span class="n">getOneDAccessor_int32</span><span class="p">(</span>
             <span class="n">registerPath</span><span class="p">,</span> <span class="n">numberOfElementsToWrite</span><span class="p">,</span> <span class="n">elementIndexInRegister</span><span class="p">,</span> <span class="p">[</span><span class="n">mtca4udeviceaccess</span><span class="o">.</span><span class="n">AccessMode</span><span class="o">.</span><span class="n">raw</span><span class="p">])</span>
-        <span class="n">accessor</span><span class="o">.</span><span class="n">copyNpArrayToUserBuffer</span><span class="p">(</span><span class="n">dataToWrite</span><span class="p">)</span>
         <span class="n">accessor</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">dataToWrite</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="Device.read_dma_raw"><a class="viewcode-back" href="../mtca4u.html#mtca4u.Device.read_dma_raw">[docs]</a>    <span class="k">def</span> <span class="nf">read_dma_raw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">moduleName</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">DMARegisterName</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
