@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['a',['A',['../struct_test_app_1_1_a.html',1,'TestApp']]],
+  ['a',['A',['../struct_test_app_1_1_a.html',1,'TestApp::A'],['../struct_test_group_1_1_a.html',1,'TestGroup::A']]],
   ['aa',['AA',['../struct_a_a.html',1,'']]],
   ['accessor',['Accessor',['../class_chimera_t_k_1_1_accessor.html',1,'ChimeraTK']]],
   ['accessorattacher',['AccessorAttacher',['../struct_chimera_t_k_1_1history_1_1_accessor_attacher.html',1,'ChimeraTK::history']]],

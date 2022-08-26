@@ -118,15 +118,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0fb204e6fc80c6c4944760df0b7da320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5c1ef5cba36b8642c71fc7ebff925b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlogging_1_1_logging_module.html#ab5c1ef5cba36b8642c71fc7ebff925b3">LoggingModule</a> ()</td></tr>
 <tr class="separator:ab5c1ef5cba36b8642c71fc7ebff925b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae01a9ebafa209e0c250e093e3c6b713f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlogging_1_1_logging_module.html#ae01a9ebafa209e0c250e093e3c6b713f">prepare</a> () override</td></tr>
-<tr class="memdesc:ae01a9ebafa209e0c250e093e3c6b713f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the execution of the module.  <a href="#ae01a9ebafa209e0c250e093e3c6b713f">More...</a><br /></td></tr>
-<tr class="separator:ae01a9ebafa209e0c250e093e3c6b713f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7bc13f9895059d84f4432f6f7b9c925"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlogging_1_1_logging_module.html#ae7bc13f9895059d84f4432f6f7b9c925">getNumberOfModules</a> ()</td></tr>
+<tr class="separator:ae7bc13f9895059d84f4432f6f7b9c925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4357b2e9b1d391541a2936ad39bbb0ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlogging_1_1_logging_module.html#a4357b2e9b1d391541a2936ad39bbb0ed">mainLoop</a> () override</td></tr>
 <tr class="memdesc:a4357b2e9b1d391541a2936ad39bbb0ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application core main loop.  <a href="#a4357b2e9b1d391541a2936ad39bbb0ed">More...</a><br /></td></tr>
 <tr class="separator:a4357b2e9b1d391541a2936ad39bbb0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65e49a11677dde2c6ea428d05dd044c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlogging_1_1_logging_module.html#a65e49a11677dde2c6ea428d05dd044c1">terminate</a> () override</td></tr>
 <tr class="memdesc:a65e49a11677dde2c6ea428d05dd044c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate the module.  <a href="#a65e49a11677dde2c6ea428d05dd044c1">More...</a><br /></td></tr>
 <tr class="separator:a65e49a11677dde2c6ea428d05dd044c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4bdbaee51b78da3e1e775243ab4d9d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlogging_1_1_logging_module.html#ac4bdbaee51b78da3e1e775243ab4d9d5">findTagAndAppendToModule</a> (<a class="el" href="class_chimera_t_k_1_1_virtual_module.html">ctk::VirtualModule</a> &amp;virtualParent, const std::string &amp;tag, bool eliminateAllHierarchies, bool eliminateFirstHierarchy, bool negate, <a class="el" href="class_chimera_t_k_1_1_virtual_module.html">ctk::VirtualModule</a> &amp;root) const override</td></tr>
+<tr class="memdesc:ac4bdbaee51b78da3e1e775243ab4d9d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the part of the tree structure matching the given tag to a VirtualModule.  <a href="#ac4bdbaee51b78da3e1e775243ab4d9d5">More...</a><br /></td></tr>
+<tr class="separator:ac4bdbaee51b78da3e1e775243ab4d9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_application_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_application_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_application_module.html">ChimeraTK::ApplicationModule</a></td></tr>
 <tr class="memitem:aaacc16fd2e0b18919c3ffc35987338d4 inherit pub_methods_class_chimera_t_k_1_1_application_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_module.html#aaacc16fd2e0b18919c3ffc35987338d4">ApplicationModule</a> (<a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> *owner, const std::string &amp;name, const std::string &amp;description, <a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0">HierarchyModifier</a> hierarchyModifier=<a class="el" href="namespace_chimera_t_k.html#a335687084d53741a8764f40a3e6d35c0a334c4a4c42fdb79d7ebc3e73b517e6f8">HierarchyModifier::none</a>, const std::unordered_set&lt; std::string &gt; &amp;tags={})</td></tr>
 <tr class="memdesc:aaacc16fd2e0b18919c3ffc35987338d4 inherit pub_methods_class_chimera_t_k_1_1_application_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: Create <a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> by the given name with the given description and register it with its owner.  <a href="class_chimera_t_k_1_1_application_module.html#aaacc16fd2e0b18919c3ffc35987338d4">More...</a><br /></td></tr>
@@ -220,6 +222,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab54889cfa1d50a40c5fd841e602c8cf9 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#ab54889cfa1d50a40c5fd841e602c8cf9">operator=</a> (<a class="el" href="class_chimera_t_k_1_1_module.html">Module</a> &amp;&amp;other)</td></tr>
 <tr class="memdesc:ab54889cfa1d50a40c5fd841e602c8cf9 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <a href="class_chimera_t_k_1_1_module.html#ab54889cfa1d50a40c5fd841e602c8cf9">More...</a><br /></td></tr>
 <tr class="separator:ab54889cfa1d50a40c5fd841e602c8cf9 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2807dcc289719688b513e05ca6f1568 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568">prepare</a> ()</td></tr>
+<tr class="memdesc:af2807dcc289719688b513e05ca6f1568 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the execution of the module.  <a href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568">More...</a><br /></td></tr>
+<tr class="separator:af2807dcc289719688b513e05ca6f1568 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad2c88018da69991179b49ea028b13a5 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memItemLeft" align="right" valign="top">ChimeraTK::ReadAnyGroup&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_module.html#aad2c88018da69991179b49ea028b13a5">readAnyGroup</a> ()</td></tr>
 <tr class="memdesc:aad2c88018da69991179b49ea028b13a5 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a ChimeraTK::ReadAnyGroup for all readable variables in this <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a>.  <a href="class_chimera_t_k_1_1_module.html#aad2c88018da69991179b49ea028b13a5">More...</a><br /></td></tr>
 <tr class="separator:aad2c88018da69991179b49ea028b13a5 inherit pub_methods_class_chimera_t_k_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -376,9 +381,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a86d92396b91b85efe432105e81eb400e inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a86d92396b91b85efe432105e81eb400e">dumpModuleGraph</a> (const std::string &amp;fileName=&quot;graph.dot&quot;) const</td></tr>
 <tr class="memdesc:a86d92396b91b85efe432105e81eb400e inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Graphiz dot graph similar to the one created with dumpGraph, but just show the modules and not the variables.  <a href="class_chimera_t_k_1_1_entity_owner.html#a86d92396b91b85efe432105e81eb400e">More...</a><br /></td></tr>
 <tr class="separator:a86d92396b91b85efe432105e81eb400e inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abde59a69fac6f2d07b199dfe4ec78b85 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#abde59a69fac6f2d07b199dfe4ec78b85">findTagAndAppendToModule</a> (<a class="el" href="class_chimera_t_k_1_1_virtual_module.html">VirtualModule</a> &amp;virtualParent, const std::string &amp;tag, bool eliminateAllHierarchies, bool eliminateFirstHierarchy, bool negate, <a class="el" href="class_chimera_t_k_1_1_virtual_module.html">VirtualModule</a> &amp;root) const</td></tr>
-<tr class="memdesc:abde59a69fac6f2d07b199dfe4ec78b85 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the part of the tree structure matching the given tag to a <a class="el" href="class_chimera_t_k_1_1_virtual_module.html" title="A virtual module generated by EntityOwner::findTag(). ">VirtualModule</a>.  <a href="class_chimera_t_k_1_1_entity_owner.html#abde59a69fac6f2d07b199dfe4ec78b85">More...</a><br /></td></tr>
-<tr class="separator:abde59a69fac6f2d07b199dfe4ec78b85 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a832b61d208952ddfe335f5c5c09208d6 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a832b61d208952ddfe335f5c5c09208d6">hasReachedTestableMode</a> ()</td></tr>
 <tr class="memdesc:a832b61d208952ddfe335f5c5c09208d6 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether this module has declared that it reached the testable mode.  <a href="class_chimera_t_k_1_1_entity_owner.html#a832b61d208952ddfe335f5c5c09208d6">More...</a><br /></td></tr>
 <tr class="separator:a832b61d208952ddfe335f5c5c09208d6 inherit pub_methods_class_chimera_t_k_1_1_entity_owner"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -485,7 +487,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The logfile is given by the client using the logFile variable.</p>
 <dl class="section attention"><dt>Attention</dt><dd>The <a class="el" href="classlogging_1_1_logging_module.html" title="Module used to handle logging messages. ">LoggingModule</a> should be added last to the Application. Doing so all logging messages added by <a class="el" href="classlogging_1_1_logger.html" title="Class used to send messages in a convenient way to the LoggingModule. ">Logger</a> object will be collected and connected to the <a class="el" href="classlogging_1_1_logging_module.html" title="Module used to handle logging messages. ">LoggingModule</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00202">202</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00212">212</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0fb204e6fc80c6c4944760df0b7da320"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0fb204e6fc80c6c4944760df0b7da320">&#9670;&nbsp;</a></span>LoggingModule() <span class="overload">[1/2]</span></h2>
@@ -531,7 +533,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00073">73</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00078">78</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -566,11 +568,129 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00232">232</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00265">265</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac4bdbaee51b78da3e1e775243ab4d9d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4bdbaee51b78da3e1e775243ab4d9d5">&#9670;&nbsp;</a></span>findTagAndAppendToModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LoggingModule::findTagAndAppendToModule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_virtual_module.html">ctk::VirtualModule</a> &amp;&#160;</td>
+          <td class="paramname"><em>virtualParent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>eliminateAllHierarchies</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>eliminateFirstHierarchy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>negate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_virtual_module.html">ctk::VirtualModule</a> &amp;&#160;</td>
+          <td class="paramname"><em>root</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add the part of the tree structure matching the given tag to a VirtualModule. </p>
+<p>Users normally will use <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a10abe5f666483380a4dee7fb8caacd86" title="Return a VirtualModule containing the part of the tree structure matching the given tag...">findTag()</a> instead. "tag" is interpreted as a regular expression (see std::regex_match). </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#abde59a69fac6f2d07b199dfe4ec78b85">ChimeraTK::EntityOwner</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00286">286</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classlogging_1_1_logging_module_ac4bdbaee51b78da3e1e775243ab4d9d5_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ae7bc13f9895059d84f4432f6f7b9c925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7bc13f9895059d84f4432f6f7b9c925">&#9670;&nbsp;</a></span>getNumberOfModules()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t logging::LoggingModule::getNumberOfModules </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00288">288</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classlogging_1_1_logging_module_ae7bc13f9895059d84f4432f6f7b9c925_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classlogging_1_1_logging_module_ae7bc13f9895059d84f4432f6f7b9c925_icgraph.svg" width="426" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a4357b2e9b1d391541a2936ad39bbb0ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4357b2e9b1d391541a2936ad39bbb0ed">&#9670;&nbsp;</a></span>mainLoop()</h2>
 
@@ -598,53 +718,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8">ChimeraTK::ApplicationModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00130">130</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00183">183</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classlogging_1_1_logging_module_a4357b2e9b1d391541a2936ad39bbb0ed_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="ae01a9ebafa209e0c250e093e3c6b713f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae01a9ebafa209e0c250e093e3c6b713f">&#9670;&nbsp;</a></span>prepare()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LoggingModule::prepare </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Prepare the execution of the module. </p>
-<p>This function is called before any module is started (including internal modules like FanOuts) and before the initial values of the variables are pushed into the queues. Reading and writing variables at this point may result in undefined behaviour. </p>
-
-<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568">ChimeraTK::Module</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00124">124</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classlogging_1_1_logging_module_ae01a9ebafa209e0c250e093e3c6b713f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -678,7 +758,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_application_module.html#a9354126bc7b302c306575433a3fb12e6">ChimeraTK::ApplicationModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00217">217</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00281">281</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
 
 </div>
 </div>
@@ -697,7 +777,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Log file where to write log messages. </p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00253">253</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00286">286</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -713,7 +793,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{<span class="keyword">this</span>, <span class="stringliteral">&quot;logFile&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;Name of the external logfile. If empty messages are pushed to &quot;</span></div><div class="line">        <span class="stringliteral">&quot;cout/cerr&quot;</span>,</div><div class="line">        {<span class="stringliteral">&quot;CS&quot;</span>, <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#a9ac0f0454393196b8abb3b2393ca69c5">getName</a>()}}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00239">239</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00272">272</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -729,7 +809,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">        <span class="keyword">this</span>, <span class="stringliteral">&quot;logLevel&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Current log level used for messages.&quot;</span>, {<span class="stringliteral">&quot;CS&quot;</span>, <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#a9ac0f0454393196b8abb3b2393ca69c5">getName</a>()}}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00247">247</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00280">280</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -745,7 +825,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">        <span class="keyword">this</span>, <span class="stringliteral">&quot;logTail&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;Tail of the logging stream.&quot;</span>, {<span class="stringliteral">&quot;CS&quot;</span>, <span class="stringliteral">&quot;PROCESS&quot;</span>, <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#a9ac0f0454393196b8abb3b2393ca69c5">getName</a>()}}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00250">250</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00283">283</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -761,7 +841,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{<span class="keyword">this</span>, <span class="stringliteral">&quot;maxTailLength&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;Maximum number of messages to be shown in the logging stream tail. 0 is treated as 20.&quot;</span>, {<span class="stringliteral">&quot;CS&quot;</span>, <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#a9ac0f0454393196b8abb3b2393ca69c5">getName</a>()}}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00244">244</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00277">277</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -777,7 +857,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{<span class="keyword">this</span>, <span class="stringliteral">&quot;targetStream&quot;</span>, <span class="stringliteral">&quot;&quot;</span>,</div><div class="line">        <span class="stringliteral">&quot;Set the tagret stream: 0 (cout/cerr+logfile), 1 (logfile), 2 &quot;</span></div><div class="line">        <span class="stringliteral">&quot;(cout/cerr), 3 (Controls System only), 4 (nowhere)&quot;</span>,</div><div class="line">        {<span class="stringliteral">&quot;CS&quot;</span>, <a class="code" href="class_chimera_t_k_1_1_entity_owner.html#a9ac0f0454393196b8abb3b2393ca69c5">getName</a>()}}</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00234">234</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00267">267</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -791,7 +871,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelogging.html">logging</a></li><li class="navelem"><a class="el" href="classlogging_1_1_logging_module.html">LoggingModule</a></li>
-    <li class="footer">Generated on Thu Aug 25 2022 03:56:15 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Aug 26 2022 03:54:14 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

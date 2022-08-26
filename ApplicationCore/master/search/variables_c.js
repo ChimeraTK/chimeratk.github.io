@@ -13,7 +13,7 @@ var searchData=
   ['lateconstrscalarpushinput',['lateConstrScalarPushInput',['../struct_test_module.html#afe9f15db45a2e0492a587e01d3bda309',1,'TestModule']]],
   ['length',['length',['../struct_chimera_t_k_1_1_constant_accessor_creator_impl.html#a6b6280385ee3df010a89ab55a14ee9f5',1,'ChimeraTK::ConstantAccessorCreatorImpl']]],
   ['lifecyclestate',['lifeCycleState',['../class_chimera_t_k_1_1_application.html#a0ef8bd0ad224ddca42bff1d1ca4aac00',1,'ChimeraTK::Application']]],
-  ['log',['log',['../structtest_app.html#ac9aec5e153e9f98518a4d14b25f9f1d6',1,'testApp']]],
+  ['log',['log',['../structtest_app.html#ac9aec5e153e9f98518a4d14b25f9f1d6',1,'testApp::log()'],['../struct_multiple_module_app.html#aadcccc78c0e488c921c812ba27020f16',1,'MultipleModuleApp::log()']]],
   ['logfile',['logFile',['../classlogging_1_1_logging_module.html#ae90e453ff52bc721d16da109a5270f0f',1,'logging::LoggingModule']]],
   ['logger',['logger',['../struct_dummy_module.html#a3b16300f4de3e7634f91c8b42d92410b',1,'DummyModule']]],
   ['loglevel',['logLevel',['../classlogging_1_1_logging_module.html#a56e605b3ab3beb718f4aa1a283f7164e',1,'logging::LoggingModule']]],

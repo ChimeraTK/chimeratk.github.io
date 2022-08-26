@@ -22,7 +22,7 @@ var searchData=
   ['inithandlercallcount',['initHandlerCallCount',['../struct_test_application3.html#acb1cbba6b127f64590c1b88f16fe0b45',1,'TestApplication3']]],
   ['initialisation',['initialisation',['../namespace_chimera_t_k.html#a69c04b7fb1519cd2b454be33d88bb72da3e52131e6b272be51242ee00310b7252',1,'ChimeraTK']]],
   ['initialisationhandlers',['initialisationHandlers',['../class_chimera_t_k_1_1_device_module.html#a9a605306e90d268b7091e6bad6c334f5',1,'ChimeraTK::DeviceModule']]],
-  ['initialise',['initialise',['../class_chimera_t_k_1_1_application.html#a697d4a47ece6750203eecbff97039773',1,'ChimeraTK::Application']]],
+  ['initialise',['initialise',['../class_chimera_t_k_1_1_application.html#a697d4a47ece6750203eecbff97039773',1,'ChimeraTK::Application::initialise()'],['../structtest_app.html#add09d6ea30073e903d6cba4a75bb70e4',1,'testApp::initialise()'],['../struct_multiple_module_app.html#a8af0b7f1bfff1145f87e5055f12bbfea',1,'MultipleModuleApp::initialise()']]],
   ['initialisecalled',['initialiseCalled',['../class_chimera_t_k_1_1_application.html#a07485c3b44b7ba199a4a52de04639308',1,'ChimeraTK::Application']]],
   ['initialisedev',['initialiseDev',['../struct_test_application1.html#af8626efcf7136b8e4810baff90e8a4cf',1,'TestApplication1']]],
   ['initialiseoven',['initialiseOven',['../struct_example_app.html#adfb108ad37e6fb57ec514245395676a7',1,'ExampleApp']]],
@@ -52,6 +52,7 @@ var searchData=
   ['instantiate_5ftemplate_5ffor_5fchimeratk_5fuser_5ftypes',['INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES',['../namespace_chimera_t_k.html#a2922a31cfc160510cb2317d67353661e',1,'ChimeraTK::INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES()'],['../_meta_data_propagating_register_decorator_8cc.html#a3e5ae3d1a5898dc7017586e4baf2bb7f',1,'INSTANTIATE_TEMPLATE_FOR_CHIMERATK_USER_TYPES():&#160;MetaDataPropagatingRegisterDecorator.cc']]],
   ['intarray',['intArray',['../struct_test_module.html#a446e4fa165ce2977010ccd56f277e9e2',1,'TestModule::intArray()'],['../struct_test_module_1_1_module1_1_1_sub_module.html#a7e6f1dbfd1a87ad7ec31d4e04819e734',1,'TestModule::Module1::SubModule::intArray()']]],
   ['intentionallynotyoullneversee',['IntentionallyNotYoullNeverSee',['../struct_test_module_with_variable_groups2.html#a5c337ab0409a3f29a85cba769a4a3489',1,'TestModuleWithVariableGroups2']]],
+  ['internal',['INTERNAL',['../namespacelogging.html#a12e05573477c76b8d6db5081863f4416a8b4946a903ed09f3242d965e0ea04a79',1,'logging']]],
   ['internalmodule',['InternalModule',['../class_chimera_t_k_1_1_internal_module.html',1,'ChimeraTK']]],
   ['internalmodule_2eh',['InternalModule.h',['../_internal_module_8h.html',1,'']]],
   ['internalmodulelist',['internalModuleList',['../class_chimera_t_k_1_1_application.html#ae1832cf40aad192bd303982b2c75e13a',1,'ChimeraTK::Application']]],
@@ -102,6 +103,7 @@ var searchData=
   ['islimited',['isLimited',['../struct_chimera_t_k_1_1_limit_value_module_base.html#a8863a5bb2bb4e37d61ad2cac8faace2e',1,'ChimeraTK::LimitValueModuleBase']]],
   ['isreadable',['isReadable',['../class_timer_dummy_register_accessor.html#a80b614ca33746fd74f506acf307b77d7',1,'TimerDummyRegisterAccessor::isReadable()'],['../class_chimera_t_k_1_1_constant_accessor.html#a3a30eaefeffd3338fd0cfb56a3c0b4ff',1,'ChimeraTK::ConstantAccessor::isReadable()'],['../class_chimera_t_k_1_1_feeding_fan_out.html#a77d35630b945bce470c62f71f0200e05',1,'ChimeraTK::FeedingFanOut::isReadable()']]],
   ['isreadonly',['isReadOnly',['../class_timer_dummy_register_accessor.html#a51a92a7beea515f59a5faf4aa8ba42de',1,'TimerDummyRegisterAccessor::isReadOnly()'],['../class_chimera_t_k_1_1_constant_accessor.html#a37e276bac7fafdf6f9a9fc59be9a6a60',1,'ChimeraTK::ConstantAccessor::isReadOnly()'],['../class_chimera_t_k_1_1_feeding_fan_out.html#ab25d68fb154f9f8407dcb415660da4a5',1,'ChimeraTK::FeedingFanOut::isReadOnly()']]],
+  ['isshutdown',['isShutDown',['../structtest_app.html#a55f69bd6073b7e3f17bf2ce4527ac210',1,'testApp']]],
   ['istestablemodeenabled',['isTestableModeEnabled',['../class_chimera_t_k_1_1_application.html#a881553efec1eb3bab305b775eae5d3ea',1,'ChimeraTK::Application']]],
   ['iswriteable',['isWriteable',['../class_timer_dummy_register_accessor.html#a7dd0f4768980fc12d3cd865d20c03603',1,'TimerDummyRegisterAccessor::isWriteable()'],['../class_chimera_t_k_1_1_constant_accessor.html#a84de76710103c29a186a36ef0791575c',1,'ChimeraTK::ConstantAccessor::isWriteable()'],['../class_chimera_t_k_1_1_feeding_fan_out.html#a6a04459f4acf4cad164eb5f13cc53724',1,'ChimeraTK::FeedingFanOut::isWriteable()']]]
 ];

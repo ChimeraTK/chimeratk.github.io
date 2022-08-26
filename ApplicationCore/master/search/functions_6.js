@@ -45,6 +45,7 @@ var searchData=
   ['getnextvariableid',['getNextVariableId',['../class_chimera_t_k_1_1_application.html#a9d0daf8097a28c58577e3b617b02dff2',1,'ChimeraTK::Application']]],
   ['getnodetotrigger',['getNodeToTrigger',['../class_chimera_t_k_1_1_variable_network_node.html#a1edce95de50974526f7340755af83536',1,'ChimeraTK::VariableNetworkNode']]],
   ['getnumberofelements',['getNumberOfElements',['../class_chimera_t_k_1_1_variable_network_node.html#a7e29bff86c44ab110c525903826722c1',1,'ChimeraTK::VariableNetworkNode']]],
+  ['getnumberofmodules',['getNumberOfModules',['../classlogging_1_1_logging_module.html#ae7bc13f9895059d84f4432f6f7b9c925',1,'logging::LoggingModule']]],
   ['getowner',['getOwner',['../class_chimera_t_k_1_1_inversion_of_control_accessor.html#aa9695443e71aca7a26755278e1f73f38',1,'ChimeraTK::InversionOfControlAccessor::getOwner()'],['../class_chimera_t_k_1_1_module.html#acf4cf5c7d86e570d7d92d257666e2fad',1,'ChimeraTK::Module::getOwner()'],['../class_chimera_t_k_1_1_variable_network_node.html#a4445cd91467119430db5a61f8e996362',1,'ChimeraTK::VariableNetworkNode::getOwner()']]],
   ['getowningmodule',['getOwningModule',['../class_chimera_t_k_1_1_variable_network_node.html#aecf2d39df34f2a86c8e29c6b7c852520',1,'ChimeraTK::VariableNetworkNode']]],
   ['getpathname',['getPathName',['../struct_chimera_t_k_1_1_hierarchy_modifying_group.html#a7109812d343a31f3da6588878ba95518',1,'ChimeraTK::HierarchyModifyingGroup']]],

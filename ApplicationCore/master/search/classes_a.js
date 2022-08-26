@@ -15,7 +15,7 @@ var searchData=
   ['modifyhierarchy_3c_20chimeratk_3a_3ascalarpushinput_3c_20t_20_3e_20_3e',['ModifyHierarchy&lt; ChimeraTK::ScalarPushInput&lt; T &gt; &gt;',['../struct_chimera_t_k_1_1_modify_hierarchy.html',1,'ChimeraTK']]],
   ['modifyhierarchy_3c_20chimeratk_3a_3astatusoutput_20_3e',['ModifyHierarchy&lt; ChimeraTK::StatusOutput &gt;',['../struct_chimera_t_k_1_1_modify_hierarchy.html',1,'ChimeraTK']]],
   ['module',['Module',['../class_chimera_t_k_1_1_module.html',1,'ChimeraTK::Module'],['../struct_test_application2_1_1_module.html',1,'TestApplication2&lt; T &gt;::Module&lt; ACCESSOR &gt;'],['../struct_another_poll_test_application_1_1_module.html',1,'AnotherPollTestApplication::Module']]],
-  ['module1',['Module1',['../struct_test_module_1_1_module1.html',1,'TestModule&lt; T &gt;::Module1'],['../struct_module1.html',1,'Module1']]],
+  ['module1',['Module1',['../struct_module1.html',1,'Module1'],['../struct_test_module_1_1_module1.html',1,'TestModule&lt; T &gt;::Module1']]],
   ['module2',['Module2',['../struct_test_module_1_1_module2.html',1,'TestModule&lt; T &gt;::Module2'],['../struct_module2.html',1,'Module2']]],
   ['module3',['Module3',['../struct_module3.html',1,'']]],
   ['module_3c_20chimeratk_3a_3ascalaroutputpushrb_3c_20int_20_3e_20_3e',['Module&lt; ChimeraTK::ScalarOutputPushRB&lt; int &gt; &gt;',['../struct_test_application2_1_1_module.html',1,'TestApplication2']]],
@@ -29,6 +29,7 @@ var searchData=
   ['moduleimpl',['ModuleImpl',['../class_chimera_t_k_1_1_module_impl.html',1,'ChimeraTK']]],
   ['moduletree',['ModuleTree',['../class_chimera_t_k_1_1_module_tree.html',1,'ChimeraTK']]],
   ['movetoroot',['MoveToRoot',['../struct_first_hierarchy_1_1_test_module_1_1_move_to_root.html',1,'FirstHierarchy::TestModule']]],
+  ['multiplemoduleapp',['MultipleModuleApp',['../struct_multiple_module_app.html',1,'']]],
   ['multiplier',['Multiplier',['../struct_chimera_t_k_1_1_multiplier.html',1,'ChimeraTK']]],
   ['mymodule',['MyModule',['../struct_my_module.html',1,'']]]
 ];
