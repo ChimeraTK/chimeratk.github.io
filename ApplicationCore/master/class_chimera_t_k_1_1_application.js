@@ -19,7 +19,7 @@ var class_chimera_t_k_1_1_application =
     [ "dumpConnections", "class_chimera_t_k_1_1_application.html#a3bda80942954b4d7d9f8b4644ef5f2dd", null ],
     [ "dumpModuleConnectionGraph", "class_chimera_t_k_1_1_application.html#a578cc81a9e1e7f24b84a5e4b9854b0e6", null ],
     [ "enableDebugDataLoss", "class_chimera_t_k_1_1_application.html#a90d3be39e8df243e6180c5634470c1dc", null ],
-    [ "enableTestableMode", "class_chimera_t_k_1_1_application.html#aab5d12e4073ae6bb0dd7fde8b435aa38", null ],
+    [ "enableTestableMode", "class_chimera_t_k_1_1_application.html#a44bc60895cb325bcd3bd57daef7b235b", null ],
     [ "enableVariableDebugging", "class_chimera_t_k_1_1_application.html#a87520a53f9a635b49aace46f76c0cf07", null ],
     [ "finaliseNetworks", "class_chimera_t_k_1_1_application.html#a4100a652864974ac1ab64d1bd1327d81", null ],
     [ "findConstantNodes", "class_chimera_t_k_1_1_application.html#a227fa9544c0cb66261256a08e475a99a", null ],

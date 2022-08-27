@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('exception_handling.html','');});
 <div class="title">Exception Handling </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="Introduction"></a>
+<div class="textblock"><h1><a class="anchor" id="exceptionHandling_Introduction"></a>
 Introduction</h1>
 <p>To handle expection, the current simple implementation includes two error state variables:</p><ul>
 <li>"state" (boolean flag if error occurred)</li>
@@ -97,7 +97,7 @@ Introduction</h1>
 </ul>
 <p>In this implementation a user/application can report an exception by calling reportException of DeviceModule with an exception string. The reportException packs the exception in a queue and the blocks the thread. This queue is processed by an internal function handleException which updates the DeviceError variables (status=1 and message="YourExceptionString") and tries to open the device. Once device can be opened the DeviceError variables are updated (status=0 and message="") and blocking threads are notified to continue. It must be noted that whatever operation which lead to exception e.g., read or write, should be repeated after the exception is handled.</p>
 <p>Checkout testExceptionTest.cc under tests/executables_src to see how it works.</p>
-<h1><a class="anchor" id="DataValidity"></a>
+<h1><a class="anchor" id="exceptionHandling_DataValidity"></a>
 DataValidity</h1>
 <p><a class="el" href="namespace_chimera_t_k.html" title="InvalidityTracer application module. ">ChimeraTK</a> supports a DataValidity flag, which is attached to all TransferElements. It can have the two states ok and faulty. This flag is propagated through ApplicationModules automatically. If a faulty flag has been received in an read operation of any input, all subsequent write operations will set the faulty flag as well, until the flag is back to the ok state for all inputs.</p>
 <p>Note that if the data is distributed through a triggered FanOut (i.e. variables from device is connected to other variables through a trigger, the usual way for poll-type variables) the data read from the receiving end of the variable cannot be considered valid if the DataValidity is faulty.</p>
@@ -108,7 +108,7 @@ DataValidity</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Fri Aug 26 2022 03:54:11 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Aug 27 2022 03:56:22 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -42,7 +42,7 @@ var dir_b74252328106591dfb0d36463b609fd4 =
     ] ],
     [ "ServerHistory.h", "_server_history_8h.html", [
       [ "HistoryEntry", "struct_chimera_t_k_1_1history_1_1_history_entry.html", "struct_chimera_t_k_1_1history_1_1_history_entry" ],
-      [ "ServerHistory", "struct_chimera_t_k_1_1history_1_1_server_history.html", "struct_chimera_t_k_1_1history_1_1_server_history" ]
+      [ "ServerHistory", "class_chimera_t_k_1_1history_1_1_server_history.html", "class_chimera_t_k_1_1history_1_1_server_history" ]
     ] ],
     [ "SplitArray.h", "_split_array_8h.html", [
       [ "WriteSplitArrayModule", "struct_chimera_t_k_1_1_write_split_array_module.html", "struct_chimera_t_k_1_1_write_split_array_module" ],

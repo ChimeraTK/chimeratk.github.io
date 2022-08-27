@@ -139,7 +139,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Class used to send messages in a convenient way to the <a class="el" href="classlogging_1_1_logging_module.html" title="Module used to handle logging messages. ">LoggingModule</a>. </p>
 <p>In principle this class only adds two output variables and provides a simple method to fill these variables. They are supposed to be connected to the <a class="el" href="classlogging_1_1_logging_module.html" title="Module used to handle logging messages. ">LoggingModule</a> via LoggingModule::addSource. If sendMessage is used before chimeraTK process variables are initialized an internal buffer is used to store those messages. Once the process variables are initialized the messages from the buffer are send. </p><dl class="section attention"><dt>Attention</dt><dd>This only happens once a message is send after chimeraTK process variables are initialized! In other words if no message is send in the mainLoop messages from defineConnections will never be shown. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00148">148</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00145">145</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a87cd7a6981b805533c717053ae412cd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87cd7a6981b805533c717053ae412cd0">&#9670;&nbsp;</a></span>Logger() <span class="overload">[1/2]</span></h2>
@@ -168,7 +168,7 @@ Public Attributes</h2></td></tr>
 <p>when creating arrays of modules).</p>
 <p>This constructor also has to be here to mitigate a bug in gcc. It is needed to allow constructor inheritance of modules owning other modules. This constructor will not actually be called then. See this bug report: <a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=67054">https://gcc.gnu.org/bugzilla/show_bug.cgi?id=67054</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00161">161</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00158">158</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +221,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00047">47</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00042">42</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -262,7 +262,7 @@ Public Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_module.html#af2807dcc289719688b513e05ca6f1568">ChimeraTK::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00073">73</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00068">68</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -302,7 +302,7 @@ Public Attributes</h2></td></tr>
 
 <p>Send a message, which means to update the message and messageLevel member variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00055">55</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8cc_source.html#l00050">50</a> of file <a class="el" href="_logging_8cc_source.html">Logging.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -329,7 +329,7 @@ Public Attributes</h2></td></tr>
 
 <p>Alias that is used instead of the module name when printing messages. </p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00178">178</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00175">175</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -347,7 +347,7 @@ Public Attributes</h2></td></tr>
 
 <p>Message to be send to the logging module. </p>
 
-<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00175">175</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logging_8h_source.html#l00172">172</a> of file <a class="el" href="_logging_8h_source.html">Logging.h</a>.</p>
 
 </div>
 </div>
@@ -361,7 +361,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelogging.html">logging</a></li><li class="navelem"><a class="el" href="classlogging_1_1_logger.html">Logger</a></li>
-    <li class="footer">Generated on Fri Aug 26 2022 03:54:14 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Aug 27 2022 03:56:25 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

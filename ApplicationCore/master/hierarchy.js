@@ -96,7 +96,6 @@ var hierarchy =
         [ "VectorOfModulesApp", "struct_vector_of_modules_app.html", null ]
       ] ]
     ] ],
-    [ "ChimeraTK::ApplicationCoreTemplateUserTypeMap< TemplateClass >", "class_chimera_t_k_1_1_application_core_template_user_type_map.html", null ],
     [ "ApplicationModule", null, [
       [ "TestModule< T >", "struct_test_module.html", null ]
     ] ],
@@ -144,7 +143,7 @@ var hierarchy =
             [ "ChimeraTK::DataLossCounter< TRIGGERTYPE >", "struct_chimera_t_k_1_1_data_loss_counter.html", null ],
             [ "ChimeraTK::Divider< InputType, OutputType, NELEMS >", "struct_chimera_t_k_1_1_divider.html", null ],
             [ "ChimeraTK::ExactMonitor< T >", "struct_chimera_t_k_1_1_exact_monitor.html", null ],
-            [ "ChimeraTK::history::ServerHistory", "struct_chimera_t_k_1_1history_1_1_server_history.html", null ],
+            [ "ChimeraTK::history::ServerHistory", "class_chimera_t_k_1_1history_1_1_server_history.html", null ],
             [ "ChimeraTK::InvalidityTracer", "struct_chimera_t_k_1_1_invalidity_tracer.html", null ],
             [ "ChimeraTK::LimitValueModuleBase< UserType >", "struct_chimera_t_k_1_1_limit_value_module_base.html", [
               [ "ChimeraTK::FixedLimitValue< UserType, min, max >", "struct_chimera_t_k_1_1_fixed_limit_value.html", null ],
@@ -222,6 +221,8 @@ var hierarchy =
             [ "TestApp::B", "struct_test_app_1_1_b.html", null ],
             [ "TestApplication2< T >::Module< ACCESSOR >", "struct_test_application2_1_1_module.html", null ],
             [ "TestApplication< T >::IO", "struct_test_application_1_1_i_o.html", null ],
+            [ "TestApplication< T >::Module", "struct_test_application_1_1_module.html", null ],
+            [ "TestApplication< T >::Name", "struct_test_application_1_1_name.html", null ],
             [ "TestApplication< T >::TestModule", "struct_test_application_1_1_test_module.html", null ],
             [ "TestApplication< T >::TestModuleHidden", "struct_test_application_1_1_test_module_hidden.html", null ],
             [ "TestApplication_empty::TestModule", "struct_test_application__empty_1_1_test_module.html", null ],
@@ -290,6 +291,8 @@ var hierarchy =
             [ "VectorModuleGroup", "struct_vector_module_group.html", null ]
           ] ],
           [ "ChimeraTK::VariableGroup", "class_chimera_t_k_1_1_variable_group.html", [
+            [ "BB::OutputGroup2", "struct_b_b_1_1_output_group2.html", null ],
+            [ "CC::OutputGroup2", "struct_c_c_1_1_output_group2.html", null ],
             [ "ChimeraTK::DataLossCounter< TRIGGERTYPE >::TriggerGroup_compat", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group__compat.html", null ],
             [ "ChimeraTK::HierarchyModifyingGroup", "struct_chimera_t_k_1_1_hierarchy_modifying_group.html", [
               [ "ChimeraTK::DataLossCounter< TRIGGERTYPE >::TriggerGroup", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group.html", null ],
@@ -319,12 +322,15 @@ var hierarchy =
             [ "FirstHierarchy::TestModule::VarGroup", "struct_first_hierarchy_1_1_test_module_1_1_var_group.html", null ],
             [ "logging::Logger", "classlogging_1_1_logger.html", null ],
             [ "ReadAnyTestModule< T >::Inputs", "struct_read_any_test_module_1_1_inputs.html", null ],
+            [ "ReaderModule::Reg2", "struct_reader_module_1_1_reg2.html", null ],
             [ "SecondHierarchy::SecondModule::ExtraGroup", "struct_second_hierarchy_1_1_second_module_1_1_extra_group.html", null ],
             [ "SecondHierarchy::TestModule::EliminatedGroup", "struct_second_hierarchy_1_1_test_module_1_1_eliminated_group.html", null ],
             [ "SecondHierarchy::TestModule::EliminatedGroup::VarGroup", "struct_second_hierarchy_1_1_test_module_1_1_eliminated_group_1_1_var_group.html", null ],
             [ "SecondHierarchy::TestModule::VarGroup", "struct_second_hierarchy_1_1_test_module_1_1_var_group.html", null ],
             [ "SomeGroup", "struct_some_group.html", null ],
             [ "TableGeneration::TableParameters", "struct_table_generation_1_1_table_parameters.html", null ],
+            [ "TestApplication< T >::Module::Vars", "struct_test_application_1_1_module_1_1_vars.html", null ],
+            [ "TestApplication< T >::Name::Name2", "struct_test_application_1_1_name_1_1_name2.html", null ],
             [ "TestApplication< T >::TestModule::ExtraHierarchy", "struct_test_application_1_1_test_module_1_1_extra_hierarchy.html", null ],
             [ "TestModule< T >::AnotherGroup", "struct_test_module_1_1_another_group.html", null ],
             [ "TestModule< T >::MixedGroup", "struct_test_module_1_1_mixed_group.html", null ],
@@ -591,7 +597,6 @@ var hierarchy =
       [ "ChimeraTK::ArrayAccessor< uint64_t >", "class_chimera_t_k_1_1_array_accessor.html", null ],
       [ "ChimeraTK::ArrayAccessor< UserType >", "class_chimera_t_k_1_1_array_accessor.html", null ]
     ] ],
-    [ "ChimeraTK::Profiler", "class_chimera_t_k_1_1_profiler.html", null ],
     [ "ChimeraTK::PushableStream", "class_chimera_t_k_1_1_pushable_stream.html", [
       [ "ChimeraTK::VariableNetworkNodeDumpingVisitor", "class_chimera_t_k_1_1_variable_network_node_dumping_visitor.html", [
         [ "ChimeraTK::VariableNetworkDumpingVisitor", "class_chimera_t_k_1_1_variable_network_dumping_visitor.html", null ],
@@ -619,7 +624,6 @@ var hierarchy =
       [ "ChimeraTK::ScalarAccessor< uint64_t >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
       [ "ChimeraTK::ScalarAccessor< uint8_t >", "class_chimera_t_k_1_1_scalar_accessor.html", null ]
     ] ],
-    [ "ChimeraTK::TriggerFanOut::SendDataToConsumers", "struct_chimera_t_k_1_1_trigger_fan_out_1_1_send_data_to_consumers.html", null ],
     [ "StatusAccessorBase", null, [
       [ "ChimeraTK::StatusAccessor< ACCESSOR >", "struct_chimera_t_k_1_1_status_accessor.html", null ],
       [ "ChimeraTK::StatusAccessor< ScalarOutput< int32_t > >", "struct_chimera_t_k_1_1_status_accessor.html", null ],
@@ -642,7 +646,6 @@ var hierarchy =
     [ "TestInitialValueEceptionDummy", "struct_test_initial_value_eception_dummy.html", null ],
     [ "TestApplication< T >::TestModule< T >", "struct_test_application_1_1_test_module.html", null ],
     [ "ChimeraTK::Application::TestsStalled", "class_chimera_t_k_1_1_application_1_1_tests_stalled.html", null ],
-    [ "ChimeraTK::Profiler::ThreadData", "class_chimera_t_k_1_1_profiler_1_1_thread_data.html", null ],
     [ "TriggerFanOutInitialValueEceptionDummy", "struct_trigger_fan_out_initial_value_eception_dummy.html", null ],
     [ "ChimeraTK::Application::TypedMakeConnectionCaller", "struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html", null ],
     [ "ChimeraTK::history::Update", "struct_chimera_t_k_1_1history_1_1_update.html", null ],

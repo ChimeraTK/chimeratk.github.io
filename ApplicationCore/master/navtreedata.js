@@ -22,7 +22,8 @@ var NAVTREE =
       [ "Fanouts", "conceptual_overview.html#conceptualOverview_FanOuts", null ]
     ] ],
     [ "Exception Handling", "exception_handling.html", [
-      [ "DataValidity", "exception_handling.html#DataValidity", null ]
+      [ "Introduction", "exception_handling.html#exceptionHandling_Introduction", null ],
+      [ "DataValidity", "exception_handling.html#exceptionHandling_DataValidity", null ]
     ] ],
     [ "Logging module and Logger", "loggingdoc.html", [
       [ "Introduction to the logging mechanism", "loggingdoc.html#loggingintro", null ]
@@ -91,7 +92,7 @@ var NAVTREE =
           [ "ExceptionHandlingDecorator", "spec_initial_value_propagation.html#autotoc_md28", null ],
           [ "Application", "spec_initial_value_propagation.html#autotoc_md29", null ],
           [ "ControlSystemAdapter", "spec_initial_value_propagation.html#autotoc_md30", null ],
-          [ "@anchor initialValue_E_process_arrays ProcessArrays", "spec_initial_value_propagation.html#autotoc_md31", null ]
+          [ "ProcessArrays", "spec_initial_value_propagation.html#autotoc_md31", null ]
         ] ],
         [ "F. Known bugs [OUTDATED!!!]", "spec_initial_value_propagation.html#autotoc_md32", [
           [ "DeviceAccess interface", "spec_initial_value_propagation.html#autotoc_md33", null ],
@@ -185,20 +186,20 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_application_8cc.html",
-"class_chimera_t_k_1_1_application.html#a071fb9e762f3d957d8696809180b01e5",
+"class_chimera_t_k_1_1_application.html#a0043e5e1a2c7a89bd114113596281475",
 "class_chimera_t_k_1_1_device_module.html#ac19f5b14011b1cb9830655783eb809fa",
-"class_chimera_t_k_1_1_scalar_accessor.html#a0aaf8f6a83137c4ba22ea18740fb3c1e",
-"class_test_transfer_group_dummy.html#af04ec9f4c7008ac93cf5ee16e6625bc5",
-"namespacemembers.html",
-"struct_chimera_t_k_1_1_config_reader.html#ac920876035406f5266007c95398ef782",
-"struct_chimera_t_k_1_1_status_output.html#a96db5706bf58c98b000885e67749b944",
-"struct_dummy_application.html#af0b374566c64e2bd89e20a51faad76e8",
-"struct_polling_read_module.html#ab91956a91e789f400c507c6c304a70e1",
-"struct_test7_dummy_application.html#a053bee709e34e9aa40f68c812c85bbbf",
-"struct_test_application4.html#a16ecbd83fe77f05c63f389769c42f803",
-"struct_test_module.html#ae6dc703b89d47bb62649f66ba2e73722",
-"structtest_app_dev.html#a92d64e67f1a8fe7b4fc555ac9929aeb8",
-"test_logging_8cc.html#abf30e390d6511a194534818524c07519"
+"class_chimera_t_k_1_1_scalar_accessor.html#aa95b652b95fb7b51327486ce37d77ab8",
+"class_test_transfer_group_dummy.html#a65d178261d66d110e8f0f8788fd3f642",
+"namespace_chimera_t_k.html",
+"struct_chimera_t_k_1_1_config_reader.html#a4d05f33a9e1cec75914953c25c51e6ce",
+"struct_chimera_t_k_1_1_status_monitor.html#a8df1710a1a5c8402ec35cd337ce73d3b",
+"struct_dummy_module.html#a49b06d4c6744fb8d99770fdae555e333",
+"struct_polling_test_application.html#a65714910a770475b7d835a33087c5829",
+"struct_test7_dummy_application.html#af636e7cfaadf4de96322ecbaabdff063",
+"struct_test_application4.html#ad861ee3e0b17271ed125c3ea3483d765",
+"struct_test_module.html#ad03c34fbb788ecb46d39e6bc1b7b03d6",
+"structtest_app_array.html#a41828451b75273824cda922f48d0ebbc",
+"test_initial_value_spec_d8_8cc.html#afb76694bef4b6b05a0817ce9ab710f7b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

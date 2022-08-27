@@ -6,7 +6,6 @@ var searchData=
   ['pollingtestapplication',['PollingTestApplication',['../struct_polling_test_application.html',1,'']]],
   ['pollmodule',['PollModule',['../struct_poll_module.html',1,'']]],
   ['processarrydummyapplication',['ProcessArryDummyApplication',['../struct_process_arry_dummy_application.html',1,'']]],
-  ['profiler',['Profiler',['../class_chimera_t_k_1_1_profiler.html',1,'ChimeraTK']]],
   ['pushablestream',['PushableStream',['../class_chimera_t_k_1_1_pushable_stream.html',1,'ChimeraTK']]],
   ['pushd9dummyapplication',['PushD9DummyApplication',['../struct_push_d9_dummy_application.html',1,'']]],
   ['pushdummyapplication',['PushDummyApplication',['../struct_push_dummy_application.html',1,'']]],

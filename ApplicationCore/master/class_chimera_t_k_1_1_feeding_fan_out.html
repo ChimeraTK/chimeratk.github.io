@@ -140,10 +140,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac97afae637101579a729d6e8ec629ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a176dddfedbea6dbf15b9e3a76d111a11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a176dddfedbea6dbf15b9e3a76d111a11">mayReplaceOther</a> (const boost::shared_ptr&lt; const ChimeraTK::TransferElement &gt; &amp;) const override</td></tr>
 <tr class="separator:a176dddfedbea6dbf15b9e3a76d111a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8091060981212781e3a7fab5e350ac69"><td class="memItemLeft" align="right" valign="top">std::list&lt; boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a8091060981212781e3a7fab5e350ac69">getInternalElements</a> () override</td></tr>
-<tr class="separator:a8091060981212781e3a7fab5e350ac69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76e0e18a12836701efff7b91c6fda640"><td class="memItemLeft" align="right" valign="top">std::vector&lt; boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a76e0e18a12836701efff7b91c6fda640">getHardwareAccessingElements</a> () override</td></tr>
-<tr class="separator:a76e0e18a12836701efff7b91c6fda640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a463cf20582ffa8d8f47e525cad93ff56"><td class="memItemLeft" align="right" valign="top">std::list&lt; boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a463cf20582ffa8d8f47e525cad93ff56">getInternalElements</a> () override</td></tr>
+<tr class="separator:a463cf20582ffa8d8f47e525cad93ff56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236c4e600a6e334a9f00959d69061396"><td class="memItemLeft" align="right" valign="top">std::vector&lt; boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a236c4e600a6e334a9f00959d69061396">getHardwareAccessingElements</a> () override</td></tr>
+<tr class="separator:a236c4e600a6e334a9f00959d69061396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eb92857a2f6b3d501abc8c441618896"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a0eb92857a2f6b3d501abc8c441618896">replaceTransferElement</a> (boost::shared_ptr&lt; ChimeraTK::TransferElement &gt;) override</td></tr>
 <tr class="separator:a0eb92857a2f6b3d501abc8c441618896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abab2b93a016a1c94156ded693be4ffd1"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#abab2b93a016a1c94156ded693be4ffd1">getReturnSlave</a> ()</td></tr>
@@ -191,7 +191,7 @@ class ChimeraTK::FeedingFanOut&lt; UserType &gt;</h3>
 
 <p>NDRegisterAccessor implementation which distributes values written to this accessor out to any number of slaves. </p>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00024">24</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00021">21</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4ad1d338effacc26a2f5f0fa0b3e5352"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ad1d338effacc26a2f5f0fa0b3e5352">&#9670;&nbsp;</a></span>FeedingFanOut()</h2>
@@ -200,9 +200,6 @@ class ChimeraTK::FeedingFanOut&lt; UserType &gt;</h3>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename UserType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">ChimeraTK::FeedingFanOut</a>&lt; UserType &gt;::<a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">FeedingFanOut</a> </td>
@@ -246,14 +243,9 @@ template&lt;typename UserType &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00026">26</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00083">83</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -297,7 +289,7 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -305,9 +297,9 @@ template&lt;typename UserType &gt; </div>
 <p>Add a slave to the <a class="el" href="class_chimera_t_k_1_1_fan_out.html" title="Base class for several implementations which distribute values from one feeder to multiple consumers...">FanOut</a>. </p>
 <p>Only sending end-points of a consuming node may be added. </p>
 
-<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_fan_out.html#a8b539e3c2bc584859b3f096b5f7ba164">ChimeraTK::FanOut&lt; UserType &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_fan_out.html#aa1a940be01f017aea279642ed5309e59">ChimeraTK::FanOut&lt; UserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00047">47</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00105">105</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -350,12 +342,20 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00107">107</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00169">169</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_feeding_fan_out_a88a42be668ace99890fe291b167b7c65_icgraph.svg" width="454" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -390,12 +390,20 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00181">181</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00256">256</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_feeding_fan_out_ac97afae637101579a729d6e8ec629ab1_icgraph.svg" width="454" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -420,12 +428,20 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00100">100</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00159">159</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_feeding_fan_out_aa4c75b615bcf033caccd8f0477c70523_icgraph.svg" width="454" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -460,12 +476,20 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00131">131</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00196">196</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_feeding_fan_out_ab41d20d7b2639532c8bd3fd89cdbcb0c_icgraph.svg" width="454" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -489,12 +513,20 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00094">94</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00150">150</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_feeding_fan_out_ad285ee77db8ce04779c6c0b7cf7200a9_icgraph.svg" width="482" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -519,12 +551,20 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00153">153</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00222">222</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_feeding_fan_out_ab5e5a3f48536f2d4c4c399f064517ec6_icgraph.svg" width="454" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -549,17 +589,25 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00171">171</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00243">243</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_feeding_fan_out_a74929741ef1dce5f736e238eab2623c3_icgraph.svg" width="475" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
-<a id="a76e0e18a12836701efff7b91c6fda640"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76e0e18a12836701efff7b91c6fda640">&#9670;&nbsp;</a></span>getHardwareAccessingElements()</h2>
+<a id="a236c4e600a6e334a9f00959d69061396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a236c4e600a6e334a9f00959d69061396">&#9670;&nbsp;</a></span>getHardwareAccessingElements()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -570,7 +618,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;boost::shared_ptr&lt;ChimeraTK::TransferElement&gt; &gt; <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">ChimeraTK::FeedingFanOut</a>&lt; UserType &gt;::getHardwareAccessingElements </td>
+          <td class="memname">std::vector&lt; boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &gt; <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">ChimeraTK::FeedingFanOut</a>&lt; UserType &gt;::getHardwareAccessingElements </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -578,18 +626,26 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>implement properly? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00195">195</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00279">279</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_feeding_fan_out_a236c4e600a6e334a9f00959d69061396_icgraph.svg" width="496" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
-<a id="a8091060981212781e3a7fab5e350ac69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8091060981212781e3a7fab5e350ac69">&#9670;&nbsp;</a></span>getInternalElements()</h2>
+<a id="a463cf20582ffa8d8f47e525cad93ff56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a463cf20582ffa8d8f47e525cad93ff56">&#9670;&nbsp;</a></span>getInternalElements()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -600,7 +656,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt;boost::shared_ptr&lt;ChimeraTK::TransferElement&gt; &gt; <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">ChimeraTK::FeedingFanOut</a>&lt; UserType &gt;::getInternalElements </td>
+          <td class="memname">std::list&lt; boost::shared_ptr&lt; ChimeraTK::TransferElement &gt; &gt; <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">ChimeraTK::FeedingFanOut</a>&lt; UserType &gt;::getInternalElements </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -608,13 +664,21 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>implement properly? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00191">191</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00272">272</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_feeding_fan_out_a463cf20582ffa8d8f47e525cad93ff56_icgraph.svg" width="454" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -643,7 +707,15 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00205">205</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00059">59</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_feeding_fan_out_abab2b93a016a1c94156ded693be4ffd1_cgraph.svg" width="656" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -667,20 +739,28 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_fan_out.html#ac081b30f6ee324347bfae872d918ea6b">ChimeraTK::FanOut&lt; UserType &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_fan_out.html#acd4fd1135e8f1cf792c356bc9e609080">ChimeraTK::FanOut&lt; UserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00207">207</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00295">295</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_feeding_fan_out_ad72378ffc301674a52f6d07a2a40f130_cgraph.svg" width="411" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_feeding_fan_out_ad72378ffc301674a52f6d07a2a40f130_icgraph.svg" width="454" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -711,7 +791,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00088">88</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00031">31</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -740,7 +820,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00090">90</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00033">33</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -769,7 +849,15 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00092">92</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00035">35</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_feeding_fan_out_a6a04459f4acf4cad164eb5f13cc53724_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -794,13 +882,21 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>implement properly? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00187">187</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00265">265</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_feeding_fan_out_a176dddfedbea6dbf15b9e3a76d111a11_icgraph.svg" width="454" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -825,13 +921,21 @@ template&lt;typename UserType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>implement properly? </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00200">200</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00287">287</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_feeding_fan_out_a0eb92857a2f6b3d501abc8c441618896_icgraph.svg" width="454" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -860,7 +964,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Used if _withReturn is true: flag whether the corresponding slave with the return channel has already been added. </p>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00222">222</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00070">70</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -888,7 +992,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>The slave with return channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00225">225</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00073">73</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -917,7 +1021,7 @@ template&lt;typename UserType &gt; </div>
 <p>Flag whether this <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html" title="NDRegisterAccessor implementation which distributes values written to this accessor out to any number...">FeedingFanOut</a> has a return channel. </p>
 <p>Is specified in the constructor </p>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00218">218</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00066">66</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -945,7 +1049,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>DataValidity to attach to the data. </p>
 
-<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00228">228</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_feeding_fan_out_8h_source.html#l00076">76</a> of file <a class="el" href="_feeding_fan_out_8h_source.html">FeedingFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -958,7 +1062,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">FeedingFanOut</a></li>
-    <li class="footer">Generated on Fri Aug 26 2022 03:54:13 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Aug 27 2022 03:56:25 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

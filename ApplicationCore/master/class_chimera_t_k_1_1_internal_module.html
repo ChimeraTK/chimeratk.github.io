@@ -112,8 +112,8 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_internal_module.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a08cf9f0376cd0f1ad9bd9bfb2676b56d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_internal_module.html#a08cf9f0376cd0f1ad9bd9bfb2676b56d">~InternalModule</a> () override</td></tr>
-<tr class="separator:a08cf9f0376cd0f1ad9bd9bfb2676b56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb1f3ec33bc0aff0d2238dd837afdaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_internal_module.html#a9cb1f3ec33bc0aff0d2238dd837afdaf">~InternalModule</a> () override=default</td></tr>
+<tr class="separator:a9cb1f3ec33bc0aff0d2238dd837afdaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24bed81e15f9b118bcac99cd5cc422f3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_internal_module.html#a24bed81e15f9b118bcac99cd5cc422f3">activate</a> ()</td></tr>
 <tr class="memdesc:a24bed81e15f9b118bcac99cd5cc422f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate synchronisation thread if needed.  <a href="#a24bed81e15f9b118bcac99cd5cc422f3">More...</a><br /></td></tr>
 <tr class="separator:a24bed81e15f9b118bcac99cd5cc422f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,8 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9cc7e19957d8dce55abc2e95d911dde3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_internal_module.html#a9cc7e19957d8dce55abc2e95d911dde3">decrementDataFaultCounter</a> () override</td></tr>
 <tr class="memdesc:a9cc7e19957d8dce55abc2e95d911dde3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement the fault counter and set the data validity flag to ok if the counter has reached 0.  <a href="#a9cc7e19957d8dce55abc2e95d911dde3">More...</a><br /></td></tr>
 <tr class="separator:a9cc7e19957d8dce55abc2e95d911dde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5abdbdc3186f209406f615b4da90a690"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_internal_module.html#a5abdbdc3186f209406f615b4da90a690">getInputModulesRecursively</a> ([[maybe_unused]] std::list&lt; <a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> *&gt; startList) override</td></tr>
-<tr class="separator:a5abdbdc3186f209406f615b4da90a690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add60db9c00df2cf82ed3963127e56460"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_internal_module.html#add60db9c00df2cf82ed3963127e56460">getInputModulesRecursively</a> ([[maybe_unused]] std::list&lt; <a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> *&gt; startList) override</td></tr>
+<tr class="separator:add60db9c00df2cf82ed3963127e56460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4120675c3bd8cdb294bfa8a87ed74185"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_internal_module.html#a4120675c3bd8cdb294bfa8a87ed74185">getCircularNetworkHash</a> () override</td></tr>
 <tr class="memdesc:a4120675c3bd8cdb294bfa8a87ed74185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of the circular dependency network (0 if none).  <a href="#a4120675c3bd8cdb294bfa8a87ed74185">More...</a><br /></td></tr>
 <tr class="separator:a4120675c3bd8cdb294bfa8a87ed74185"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,10 +297,10 @@ Additional Inherited Members</h2></td></tr>
 <p><a class="el" href="class_chimera_t_k_1_1_application.html#acbbcd560d74531326d4ce56c601132ca" title="Make the connections between accessors as requested in the initialise() function. ...">Application::makeConnections()</a>). These modules have to be handled differently since the instance is created dynamically and thus we cannot store the plain pointer in Application::overallModuleList.</p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Currently this class is based on <a class="el" href="class_chimera_t_k_1_1_entity_owner.html" title="Base class for owners of other EntityOwners (e.g. ">EntityOwner</a> somewhat artificially. Instead the <a class="el" href="class_chimera_t_k_1_1_internal_module.html" title="Base class for internal modules which are created by the variable connection code (e...">InternalModule</a> class needs to be properly unified with the normal <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a> classes. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00025">25</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00021">21</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a08cf9f0376cd0f1ad9bd9bfb2676b56d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08cf9f0376cd0f1ad9bd9bfb2676b56d">&#9670;&nbsp;</a></span>~InternalModule()</h2>
+<a id="a9cb1f3ec33bc0aff0d2238dd837afdaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cb1f3ec33bc0aff0d2238dd837afdaf">&#9670;&nbsp;</a></span>~InternalModule()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -317,12 +317,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00027">27</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
 
 </div>
 </div>
@@ -353,9 +351,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Activate synchronisation thread if needed. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>: Unify with <a class="el" href="class_chimera_t_k_1_1_module.html#acb588cb7df8290eab1961bd32234b085" title="Execute the module. ">Module::run()</a> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html#a256e80f1a94f3fe0706d6a8dcbe47e29">ChimeraTK::ThreadedFanOut&lt; UserType &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html#a1e62fe742bdca6b91751bb21047f9a6f">ChimeraTK::TriggerFanOut</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html#a1e62fe742bdca6b91751bb21047f9a6f">ChimeraTK::TriggerFanOut</a>, and <a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html#a256e80f1a94f3fe0706d6a8dcbe47e29">ChimeraTK::ThreadedFanOut&lt; UserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00031">31</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00027">27</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
 
 </div>
 </div>
@@ -385,9 +383,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Deactivate synchronisation thread if running. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>: Unify with <a class="el" href="class_chimera_t_k_1_1_module.html#ae3497a487a36f2e1a51bc01592aabf5b" title="Terminate the module. ">Module::terminate()</a> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html#a2e01fc1efd2e4f39b13c885d33978da8">ChimeraTK::ThreadedFanOut&lt; UserType &gt;</a>, and <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html#a3404af1ffc3a6df39808d28887714a90">ChimeraTK::TriggerFanOut</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html#a3404af1ffc3a6df39808d28887714a90">ChimeraTK::TriggerFanOut</a>, and <a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html#a2e01fc1efd2e4f39b13c885d33978da8">ChimeraTK::ThreadedFanOut&lt; UserType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00035">35</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00031">31</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
 
 </div>
 </div>
@@ -419,7 +417,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a2e6036e82c5f3b01bc062ceb431f94bb">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00046">46</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00042">42</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_internal_module_a9cc7e19957d8dce55abc2e95d911dde3_cgraph.svg" width="486" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -451,7 +457,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a1f308e1d01781ed595ec5bddb5a6a115">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00052">52</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00059">59</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_internal_module_a4120675c3bd8cdb294bfa8a87ed74185_icgraph.svg" width="471" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -482,7 +496,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a83a34142cea47d7396de8a3657004ef7">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00042">42</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00038">38</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
 
 </div>
 </div>
@@ -514,7 +528,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a9a32600fa633b1cd991ba8f2bd3ac6b3">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00044">44</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00040">40</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
 
 </div>
 </div>
@@ -545,12 +559,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#ac9889d98c6076fa8ac966ae5b89ab687">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00040">40</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00036">36</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
 
 </div>
 </div>
-<a id="a5abdbdc3186f209406f615b4da90a690"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5abdbdc3186f209406f615b4da90a690">&#9670;&nbsp;</a></span>getInputModulesRecursively()</h2>
+<a id="add60db9c00df2cf82ed3963127e56460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add60db9c00df2cf82ed3963127e56460">&#9670;&nbsp;</a></span>getInputModulesRecursively()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -559,7 +573,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::list&lt;<a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a>*&gt; ChimeraTK::InternalModule::getInputModulesRecursively </td>
+          <td class="memname">std::list&lt; <a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> * &gt; ChimeraTK::InternalModule::getInputModulesRecursively </td>
           <td>(</td>
           <td class="paramtype">[[maybe_unused] ] std::list&lt; <a class="el" href="class_chimera_t_k_1_1_entity_owner.html">EntityOwner</a> *&gt;&#160;</td>
           <td class="paramname"><em>startList</em></td><td>)</td>
@@ -573,7 +587,15 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00047">47</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00050">50</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_internal_module_add60db9c00df2cf82ed3963127e56460_icgraph.svg" width="486" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -604,7 +626,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a44d138bbe63552b5b8dd9a128c76fcbe">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00041">41</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00037">37</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
 
 </div>
 </div>
@@ -636,7 +658,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#aa3fc963233d251705cd197ced1aa0876">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00039">39</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00035">35</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
 
 </div>
 </div>
@@ -668,7 +690,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a59d02ecae8bc99e76c7561c3ccea946c">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00045">45</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00041">41</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
 
 </div>
 </div>
@@ -701,7 +723,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a5e2a53bcd523efe6546098aec632a60b">ChimeraTK::EntityOwner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00043">43</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_internal_module_8h_source.html#l00039">39</a> of file <a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>.</p>
 
 </div>
 </div>
@@ -714,7 +736,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_internal_module.html">InternalModule</a></li>
-    <li class="footer">Generated on Fri Aug 26 2022 03:54:13 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Aug 27 2022 03:56:25 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

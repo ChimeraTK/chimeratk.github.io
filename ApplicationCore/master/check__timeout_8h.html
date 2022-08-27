@@ -147,7 +147,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{                                                                                                                    \</div><div class="line">    CHECK_TIMEOUT(left == right, maxMilliseconds);                                                                     \</div><div class="line">    BOOST_CHECK_EQUAL(left, right);                                                                                    \</div><div class="line">  }                                                                                                                    \</div><div class="line">  (void)0</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="check__timeout_8h_source.html#l00018">18</a> of file <a class="el" href="check__timeout_8h_source.html">check_timeout.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="check__timeout_8h_source.html#l00019">19</a> of file <a class="el" href="check__timeout_8h_source.html">check_timeout.h</a>.</p>
 
 </div>
 </div>
@@ -177,7 +177,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{                                                                                                                    \</div><div class="line">    std::chrono::steady_clock::time_point t0 = std::chrono::steady_clock::now();                                       \</div><div class="line">    while(!(condition)) {                                                                                              \</div><div class="line">      bool timeout_reached = (std::chrono::steady_clock::now() - t0) &gt; std::chrono::milliseconds(maxMilliseconds);     \</div><div class="line">      BOOST_CHECK(!timeout_reached);                                                                                   \</div><div class="line">      if(timeout_reached) <span class="keywordflow">break</span>;                                                                                       \</div><div class="line">      usleep(1000);                                                                                                    \</div><div class="line">    }                                                                                                                  \</div><div class="line">  }                                                                                                                    \</div><div class="line">  (void)0</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="check__timeout_8h_source.html#l00006">6</a> of file <a class="el" href="check__timeout_8h_source.html">check_timeout.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="check__timeout_8h_source.html#l00007">7</a> of file <a class="el" href="check__timeout_8h_source.html">check_timeout.h</a>.</p>
 
 </div>
 </div>
@@ -187,7 +187,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_dcba6dfd410a966f3c2ecded9b1039f6.html">include</a></li><li class="navelem"><a class="el" href="check__timeout_8h.html">check_timeout.h</a></li>
-    <li class="footer">Generated on Fri Aug 26 2022 03:54:11 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Aug 27 2022 03:56:22 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

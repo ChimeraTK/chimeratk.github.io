@@ -7,5 +7,6 @@ var searchData=
   ['readermodule',['ReaderModule',['../struct_reader_module.html',1,'']]],
   ['readonlytestapplication',['ReadOnlyTestApplication',['../struct_read_only_test_application.html',1,'']]],
   ['readsplitarraymodule',['ReadSplitArrayModule',['../struct_chimera_t_k_1_1_read_split_array_module.html',1,'ChimeraTK']]],
-  ['recoveryhelper',['RecoveryHelper',['../struct_chimera_t_k_1_1_recovery_helper.html',1,'ChimeraTK']]]
+  ['recoveryhelper',['RecoveryHelper',['../struct_chimera_t_k_1_1_recovery_helper.html',1,'ChimeraTK']]],
+  ['reg2',['Reg2',['../struct_reader_module_1_1_reg2.html',1,'ReaderModule']]]
 ];

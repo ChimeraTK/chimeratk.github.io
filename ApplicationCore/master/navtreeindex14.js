@@ -1,5 +1,13 @@
 var NAVTREEINDEX14 =
 {
+"test_initial_value_spec_d8_8cc.html#afb76694bef4b6b05a0817ce9ab710f7b":[19,0,10,0,20,44],
+"test_initial_value_spec_d8_8cc.html#afcba53b9118f4f2c74f5d073e8bcdfe2":[19,0,10,0,20,56],
+"test_initial_value_spec_d8_8cc_source.html":[19,0,10,0,20],
+"test_logging_8cc.html":[19,0,10,0,21],
+"test_logging_8cc.html#a3fc7767c1a2a89f2a8e1c73b712c1b27":[19,0,10,0,21,11],
+"test_logging_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[19,0,10,0,21,6],
+"test_logging_8cc.html#a9bebd2e7e644c76d80b27f1c4ca105e3":[19,0,10,0,21,13],
+"test_logging_8cc.html#a9dba9d736c267a32e6177bfc4b8ed2c5":[19,0,10,0,21,9],
 "test_logging_8cc.html#abf30e390d6511a194534818524c07519":[19,0,10,0,21,12],
 "test_logging_8cc.html#adffa4bad642a20e9a865372d80a36173":[19,0,10,0,21,7],
 "test_logging_8cc.html#aedf8402c2e09123880996e302358cafa":[19,0,10,0,21,8],

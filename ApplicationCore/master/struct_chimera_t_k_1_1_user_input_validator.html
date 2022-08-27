@@ -167,7 +167,7 @@ Protected Attributes</h2></td></tr>
 <p>... do some computations based on myInput which would fail for myInput &lt;= 0 ...</p>
 <p>change = rag.readAny(); } } </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00059">59</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00062">62</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab949ef18c845814bdacfdb6eaa1e97f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab949ef18c845814bdacfdb6eaa1e97f1">&#9670;&nbsp;</a></span>add()</h2>
@@ -210,7 +210,7 @@ template&lt;typename... ACCESSORTYPES&gt; </div>
 <p>This function can be called an arbitrary number of times. Also the same accessors may be passed multiple times to different calls of this function. That way the expressions written in the isValidFunction can be kept simple and the provided error messages can be more specific. E.g. the two conditions A &gt; 0 and A &lt; B can be defined in two separate calls to the <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ab949ef18c845814bdacfdb6eaa1e97f1" title="Add new condition to validate the given accessors against. ">add()</a> function despite A being part of both conditions. If A changes, both conditions will be checked, since A is specified in the list of accessors in both calls.</p>
 <p>This function does not yet evaluate anything. It merely stores all information for later use. When <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change. ">validate()</a> is called, all isValidFunctions matching the given change are checked. If any of the checked isValidFunctions returns false, the variable passed to <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change. ">validate()</a> is reverted to its previous value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00189">189</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00192">192</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -248,7 +248,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00218">218</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00221">221</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -279,7 +279,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>Define how to report error messages to the user. </p>
 <p>The first argument of the <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#ab949ef18c845814bdacfdb6eaa1e97f1" title="Add new condition to validate the given accessors against. ">add()</a> function is passed to the given errorFunction when the corresponding validation condition is false. Typically this function will pass this string on to some string output which will display the value to the user/operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00007">7</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00009">9</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
 
 </div>
 </div>
@@ -315,7 +315,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>This value is used if the validation of the initial value fails, since there is no previous value to revert to in that case.</p>
 <p>It is mandatory to call this function for all accessors whose value after construction (usually 0) is outside the range of valid values, as otherwise a failed initial value validation reverts to the (invalid) value after construction and hence the subsequent computations might fail. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00208">208</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00211">211</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -348,7 +348,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>The value of the accessor is then changed back to the last known value (resp. the fallback value if no previous valid value exists). If the accessor has a writeback channel, this reverted value is written back. Finally, the errorFunction provided through <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a16caa942446623c2f97416667be52406" title="Define how to report error messages to the user. ">setErrorFunction()</a> is called with the error string matching the first failed validation condition to inform the user/operator.</p>
 <p>If change is a default-constructed ChimeraTK::TransferElementID, all validation conditions are evaluated and all invalid values are corrected. This is equivalent to call <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#aec1ce9b3f82cf6c093373bed08c57d47" title="Evaluate all validation conditions and correct all invalid values. ">validateAll()</a>. This functionality is useful to trigger the validation of initial values. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00013">13</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00015">15</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -386,7 +386,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <p>Evaluate all validation conditions and correct all invalid values. </p>
 <p>This is equivalent to call <a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html#a151e31bb3edbf713a54e43dbe3333fb9" title="Execute all validations for the given change. ">validate()</a> with a default-constructed ChimeraTK::TransferElementID. This function is useful to trigger the validation of initial values. </p>
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00031">31</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8cc_source.html#l00033">33</a> of file <a class="el" href="_user_input_validator_8cc_source.html">UserInputValidator.cc</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -427,7 +427,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00183">183</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00186">186</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -451,7 +451,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00180">180</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00183">183</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -475,7 +475,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00174">174</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00177">177</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -499,7 +499,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00177">177</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_user_input_validator_8h_source.html#l00180">180</a> of file <a class="el" href="_user_input_validator_8h_source.html">UserInputValidator.h</a>.</p>
 
 </div>
 </div>
@@ -513,7 +513,7 @@ template&lt;typename UserType , template&lt; typename &gt; typename Accessor&gt;
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_user_input_validator.html">UserInputValidator</a></li>
-    <li class="footer">Generated on Fri Aug 26 2022 03:54:14 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Aug 27 2022 03:56:25 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

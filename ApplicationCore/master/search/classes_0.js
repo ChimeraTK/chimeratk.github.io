@@ -9,7 +9,6 @@ var searchData=
   ['anothersubmodule',['AnotherSubModule',['../struct_test_module_1_1_module2_1_1_another_sub_module.html',1,'TestModule::Module2']]],
   ['anytype',['AnyType',['../class_chimera_t_k_1_1_any_type.html',1,'ChimeraTK']]],
   ['application',['Application',['../class_chimera_t_k_1_1_application.html',1,'ChimeraTK']]],
-  ['applicationcoretemplateusertypemap',['ApplicationCoreTemplateUserTypeMap',['../class_chimera_t_k_1_1_application_core_template_user_type_map.html',1,'ChimeraTK']]],
   ['applicationmodule',['ApplicationModule',['../class_chimera_t_k_1_1_application_module.html',1,'ChimeraTK']]],
   ['array',['Array',['../struct_chimera_t_k_1_1_array.html',1,'ChimeraTK::Array'],['../struct_chimera_t_k_1_1_config_reader_1_1_array.html',1,'ChimeraTK::ConfigReader::Array&lt; T &gt;']]],
   ['arrayaccessor',['ArrayAccessor',['../class_chimera_t_k_1_1_array_accessor.html',1,'ChimeraTK']]],

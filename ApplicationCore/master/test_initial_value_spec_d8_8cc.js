@@ -22,6 +22,7 @@ var test_initial_value_spec_d8_8cc =
     [ "TestInitialValueEceptionDummy", "struct_test_initial_value_eception_dummy.html", "struct_test_initial_value_eception_dummy" ],
     [ "WriterModule", "struct_writer_module.html", "struct_writer_module" ],
     [ "ReaderModule", "struct_reader_module.html", "struct_reader_module" ],
+    [ "Reg2", "struct_reader_module_1_1_reg2.html", "struct_reader_module_1_1_reg2" ],
     [ "Test7DummyApplication", "struct_test7_dummy_application.html", "struct_test7_dummy_application" ],
     [ "Test6_a1_DummyApplication", "struct_test6__a1___dummy_application.html", "struct_test6__a1___dummy_application" ],
     [ "Test6_a1_InitialValueEceptionDummy", "struct_test6__a1___initial_value_eception_dummy.html", "struct_test6__a1___initial_value_eception_dummy" ],

@@ -31,9 +31,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "ControlSystemModule.h", "_control_system_module_8h.html", [
       [ "ControlSystemModule", "class_chimera_t_k_1_1_control_system_module.html", "class_chimera_t_k_1_1_control_system_module" ]
     ] ],
-    [ "DebugPrintAccessorDecorator.h", "_debug_print_accessor_decorator_8h.html", [
-      [ "DebugPrintAccessorDecorator", "class_chimera_t_k_1_1_debug_print_accessor_decorator.html", "class_chimera_t_k_1_1_debug_print_accessor_decorator" ]
-    ] ],
+    [ "DebugPrintAccessorDecorator.h", "_debug_print_accessor_decorator_8h.html", "_debug_print_accessor_decorator_8h" ],
     [ "DeviceModule.h", "_device_module_8h.html", [
       [ "DeviceModule", "class_chimera_t_k_1_1_device_module.html", "class_chimera_t_k_1_1_device_module" ],
       [ "ConnectingDeviceModule", "class_chimera_t_k_1_1_connecting_device_module.html", "class_chimera_t_k_1_1_connecting_device_module" ]
@@ -69,10 +67,6 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "ModuleImpl.h", "_module_impl_8h.html", [
       [ "ModuleImpl", "class_chimera_t_k_1_1_module_impl.html", "class_chimera_t_k_1_1_module_impl" ]
     ] ],
-    [ "Profiler.h", "_profiler_8h.html", [
-      [ "Profiler", "class_chimera_t_k_1_1_profiler.html", "class_chimera_t_k_1_1_profiler" ],
-      [ "ThreadData", "class_chimera_t_k_1_1_profiler_1_1_thread_data.html", "class_chimera_t_k_1_1_profiler_1_1_thread_data" ]
-    ] ],
     [ "RecoveryHelper.h", "_recovery_helper_8h.html", [
       [ "RecoveryHelper", "struct_chimera_t_k_1_1_recovery_helper.html", "struct_chimera_t_k_1_1_recovery_helper" ]
     ] ],
@@ -84,7 +78,6 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "ScalarPushInputWB", "struct_chimera_t_k_1_1_scalar_push_input_w_b.html", "struct_chimera_t_k_1_1_scalar_push_input_w_b" ],
       [ "ScalarOutputPushRB", "struct_chimera_t_k_1_1_scalar_output_push_r_b.html", "struct_chimera_t_k_1_1_scalar_output_push_r_b" ]
     ] ],
-    [ "SupportedUserTypes.h", "_supported_user_types_8h.html", "_supported_user_types_8h" ],
     [ "TestableModeAccessorDecorator.h", "_testable_mode_accessor_decorator_8h.html", [
       [ "TestableModeAccessorDecorator", "class_chimera_t_k_1_1_testable_mode_accessor_decorator.html", "class_chimera_t_k_1_1_testable_mode_accessor_decorator" ]
     ] ],

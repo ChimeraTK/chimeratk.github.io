@@ -1,12 +1,12 @@
 var searchData=
 [
   ['n',['n',['../struct_test_application_1_1_test_module.html#af5281469a8bd7eb9cfb3f70332f9834b',1,'TestApplication::TestModule']]],
-  ['name',['name',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a58197c786a08cdcd9d22585818e49db1',1,'ChimeraTK::VariableNetworkNode_data::name()'],['../struct_chimera_t_k_1_1_variable.html#a904232c96d47ce6de4095753aa5f3c54',1,'ChimeraTK::Variable::name()'],['../struct_chimera_t_k_1_1_array.html#a3fd321284846576870e78a57bd741457',1,'ChimeraTK::Array::name()'],['../struct_test_application.html#a75e5f6310bb40abe6b9f9506d596c538',1,'TestApplication::name()']]],
+  ['name',['name',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a58197c786a08cdcd9d22585818e49db1',1,'ChimeraTK::VariableNetworkNode_data::name()'],['../struct_chimera_t_k_1_1_variable.html#a904232c96d47ce6de4095753aa5f3c54',1,'ChimeraTK::Variable::name()'],['../struct_chimera_t_k_1_1_array.html#a3fd321284846576870e78a57bd741457',1,'ChimeraTK::Array::name()'],['../struct_test_application_1_1_name.html#a388b19f1e8aaa9fe3c55997cf32bd861',1,'TestApplication::Name::name()'],['../struct_test_application.html#a1f6ce8f2098a97cc9bfa13ad0c8d0244',1,'TestApplication::name()']]],
   ['need',['need',['../struct_deeper_1_1_hierarchies.html#a88babc325442a36eddaefceeb32c3f31',1,'Deeper::Hierarchies::need()'],['../struct_deeper2_1_1_hierarchies.html#af3adc85befe1bc84a9a5435eaced58a8',1,'Deeper2::Hierarchies::need()']]],
   ['nelements',['nElements',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a45c063050975eec1d6914bc52d210c45',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['network',['network',['../struct_chimera_t_k_1_1_variable_network_node__data.html#a926c70762b8e69b85a666f15d757ab7e',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['networklist',['networkList',['../class_chimera_t_k_1_1_application.html#ade501a4252a23f1639a5ea8b46cf738b',1,'ChimeraTK::Application']]],
-  ['niecegroup',['NieceGroup',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#a7aac4d4d27ee200a97e7dbcd1937323f',1,'FirstHierarchy::TestModule::VarGroup']]],
+  ['niecegroup',['NieceGroup',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#a75565a3d2412ab26cde68cc0914e9c9d',1,'FirstHierarchy::TestModule::VarGroup']]],
   ['nieceofvargroup',['nieceOfVarGroup',['../struct_first_hierarchy_1_1_test_module_1_1_var_group.html#a144764e755ee7120220c836086f7eb07',1,'FirstHierarchy::TestModule::VarGroup']]],
   ['node',['node',['../class_chimera_t_k_1_1_inversion_of_control_accessor.html#a9474a907142e1636de752e29398a9065',1,'ChimeraTK::InversionOfControlAccessor']]],
   ['nodeids',['nodeIds',['../namespacedraw_module_connections.html#a15e96c5194314ddab035b5a4396ed452',1,'drawModuleConnections']]],

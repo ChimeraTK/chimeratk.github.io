@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>Initial values are read by the framwork before the start of <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ApplicationModule::mainLoop()</a></code> (but already in the same thread which later executes the <code>mainLoop()</code>).</li>
 <li>Initial values are read by calling <code>TransferElement::read()</code>, which <em>freezes</em> until the initial value has arrived, both with <code>AccessMode::wait_for_new_data</code> and without.<ol type="i">
 <li><a class="anchor" id="initialValue_D_8_b_i"></a>For device variables the ExeptionHandlingDecorator freezes the variable until the device is available. [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testInitialValue_D_8_b_i">T</a>]</li>
-<li><a class="anchor" id="initialValue_D_8_b_ii"></a>ProcessArray freeze in their implementation until the initial value is received (see. <a class="el" href="/home/msk_jenkins/workspace/ChimeraTK_documentation_update/checkouts/ApplicationCore/doc/spec_initialValuePropagation.dox.html#initialValue_E_process_arrays">E ProcessArrays</a>). [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testInitialValue_D_8_b_ii">T</a>]</li>
+<li><a class="anchor" id="initialValue_D_8_b_ii"></a>ProcessArray freeze in their implementation until the initial value is received (see. <a class="el" href="spec_initial_value_propagation.html#initialValue_E_process_arrays">E ProcessArrays</a>). [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testInitialValue_D_8_b_ii">T</a>]</li>
 <li><a class="anchor" id="initialValue_D_8_b_iii"></a>Constants can be read exactly once in case of <code>AccessMode::wait_for_new_data</code>, so the initial value can be received. (see. <a class="el" href="spec_initial_value_propagation.html#initialValue_d_10">10</a>) [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testInitialValue_D_8_b_iii">T</a>]</li>
 </ol>
 </li>
@@ -149,11 +149,11 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 </li>
 <li>The module-like fan outs <code><a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html" title="FanOut implementation with an internal thread which waits for new data which is read from the given f...">ThreadedFanOut</a></code> and <code><a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html" title="InternalModule which waits for a trigger, then reads a number of variables and distributes each of th...">TriggerFanOut</a></code> (does not apply to the accessor-like fan outs <code><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html" title="NDRegisterAccessor implementation which distributes values written to this accessor out to any number...">FeedingFanOut</a></code> and <code><a class="el" href="class_chimera_t_k_1_1_consuming_fan_out.html" title="FanOut implementation which acts as a read-only (i.e. ">ConsumingFanOut</a></code>)<ol type="a">
 <li>The fan outs have a transparent behaviour, i.e. an entity that receives an initial value through a fan out sees the same behaviour as if a direct connection would have been realised.</li>
-<li><a class="anchor" id="initialValueThreaddedFanOut_D_9_b"></a>This implies that the inputs are treated like described in 8.b. [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testInitialValueThreaddedFanOut_D_9_b">T for ThreadedFanOut</a>] [ T for TriggerFanOut]</li>
+<li><a class="anchor" id="initialValueThreaddedFanOut_D_9_b"></a>This implies that the inputs are treated like described in 8.b. [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testInitialValueThreaddedFanOut_D_9_b_ThreaddedFanOut">T for ThreadedFanOut</a>] [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testInitialValueThreaddedFanOut_D_9_b_TriggerFanOut">T for TriggerFanOut</a>]</li>
 <li><a class="anchor" id="initialValue_d_9_3"></a>The initial value is propagated immediately to the outputs. <a class="el" href="spec_initial_value_propagation.html#initialValue_comment_d_9_3">(*)</a></li>
 </ol>
 </li>
-<li><a class="anchor" id="initialValue_d_10"></a>Constants (<code><a class="el" href="class_chimera_t_k_1_1_application.html#ac218f88f11166c115b0facb6a2c981f5" title="Convenience function for creating constants. ">Application::makeConstant()</a></code>): [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testConstantD10InitialValue_D_10">T</a>]<ol type="a">
+<li><a class="anchor" id="initialValue_d_10"></a>Constants (<code><a class="el" href="class_chimera_t_k_1_1_application.html#aff57a64a0270d24e48ebf6094570703b" title="Convenience function for creating constants. ">Application::makeConstant()</a></code>): [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testConstantD10InitialValue_D_10">T</a>]<ol type="a">
 <li>Constant accessors only have one value, which is propagates as the intitial value. They conceptually behave like a process array that is written exactly once by the framework.<ol type="i">
 <li>This implies that in case of <code>AccessMode::wait_for_new_data</code> the value can be read exactly once. This is enough to propagate the initial value. Any further read() to the variable will block infinitely.</li>
 </ol>
@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <ul>
 <li>Implement 3, implementation will be already covered by normal flag propagation</li>
 <li>Needs to implement 9. (hence takes part in 5.a, 6 and 7 implicitly):<ul>
-<li>structure the fan out's "mainLoop"-equivalent (<code><a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html#aec8d6bcf52e7887791968acf8ac2a3e1" title="Synchronise feeder and the consumers. ">ThreadedFanOut::run()</a></code>) like this:<ul>
+<li>structure the fan out's "mainLoop"-equivalent (<code><a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html#ae77058e349d0af9ac787c9b329dd4bfb" title="Synchronise feeder and the consumers. ">ThreadedFanOut::run()</a></code>) like this:<ul>
 <li>read initial values</li>
 <li>begin loop</li>
 <li>write outputs</li>
@@ -223,7 +223,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 </ul>
 </li>
 </ul>
-<ul>
+<p><a class="anchor" id="initialValue_E_process_arrays"></a></p><ul>
 <li>Must implement 8.b.ii, especially if wait_for_new_data is <em>not</em> set.</li>
 </ul>
 <p>As ProcessArrays do not have a synchronous read channel which can be used to obtain the "current value", the implementation freezes all read operations (even readNonBlocking() and readLatest()) until a first value has been send. This is consistent with the behaviour of the <a class="el" href="class_chimera_t_k_1_1_exception_handling_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">ExceptionHandlingDecorator</a>, which freezes until the device has become available and the synchronous channel can deliver data.</p>
@@ -293,7 +293,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Fri Aug 26 2022 03:54:11 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Sat Aug 27 2022 03:56:22 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

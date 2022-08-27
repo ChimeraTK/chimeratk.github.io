@@ -9,5 +9,6 @@ var test_find_tag_8cc =
     [ "BOOST_TEST_MODULE", "test_find_tag_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_find_tag_8cc.html#ad0aec4a0c86b93826672369d10b4af28", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_find_tag_8cc.html#a7bbb5ce58734f7a1c6c9429d7c4eefd5", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_find_tag_8cc.html#ada376d0489090af9b0936677bf732ee1", null ]
+    [ "BOOST_AUTO_TEST_CASE", "test_find_tag_8cc.html#ada376d0489090af9b0936677bf732ee1", null ],
+    [ "varC", "test_find_tag_8cc.html#a9e3d67f4e6de7ef289eff235927a767f", null ]
 ];

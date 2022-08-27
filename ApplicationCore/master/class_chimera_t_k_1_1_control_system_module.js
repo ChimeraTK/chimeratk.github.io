@@ -11,7 +11,7 @@ var class_chimera_t_k_1_1_control_system_module =
     [ "getSubmoduleList", "class_chimera_t_k_1_1_control_system_module.html#ab2b648eb105b3dc55969db1c1328d94c", null ],
     [ "operator()", "class_chimera_t_k_1_1_control_system_module.html#adc7c172d8609ffe1792949077b3fc61d", null ],
     [ "operator()", "class_chimera_t_k_1_1_control_system_module.html#a01e4f35073c7c1f9ff6c90571b66af1d", null ],
-    [ "operator=", "class_chimera_t_k_1_1_control_system_module.html#aa32ce09ceede6cb5358e38b3ab24a567", null ],
+    [ "operator=", "class_chimera_t_k_1_1_control_system_module.html#ae375502fa98aa15654ec64dbbb25ae80", null ],
     [ "operator[]", "class_chimera_t_k_1_1_control_system_module.html#a96f1a079c29139ded8dc9fee638a1c57", null ],
     [ "virtualise", "class_chimera_t_k_1_1_control_system_module.html#a61be8696270f26ed4e7a8d9fc7d66a03", null ],
     [ "subModules", "class_chimera_t_k_1_1_control_system_module.html#a3217bfe8a1d7bf7ec87516061cc6d1a0", null ],
