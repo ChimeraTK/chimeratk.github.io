@@ -6,7 +6,6 @@ var hierarchy =
     [ "ApplicationModule", null, [
       [ "FileSystemModule", "structFileSystemModule.html", null ],
       [ "LogFileModule", "structLogFileModule.html", null ],
-      [ "LoggingModule", "structLoggingModule.html", null ],
       [ "NetworkModule", "structNetworkModule.html", null ],
       [ "ProcessInfoModule", "structProcessInfoModule.html", [
         [ "ProcessControlModule", "structProcessControlModule.html", null ]
@@ -17,16 +16,15 @@ var hierarchy =
       [ "FileSystemModule::TriggerGroup", "structFileSystemModule_1_1TriggerGroup.html", null ],
       [ "LogFileModule::LogFileGroup", "structLogFileModule_1_1LogFileGroup.html", null ],
       [ "LogFileModule::TriggerGroup", "structLogFileModule_1_1TriggerGroup.html", null ],
-      [ "LoggingModule::LogFileGroup", "structLoggingModule_1_1LogFileGroup.html", null ],
       [ "NetworkModule::TriggerGroup", "structNetworkModule_1_1TriggerGroup.html", null ],
       [ "ProcessInfoModule::TriggerGroup", "structProcessInfoModule_1_1TriggerGroup.html", null ],
       [ "SystemInfoModule::TriggerGroup", "structSystemInfoModule_1_1TriggerGroup.html", null ]
     ] ],
+    [ "logging::Message", "structlogging_1_1Message.html", null ],
     [ "ModuleGroup", null, [
       [ "FileSystemGroup", "structFileSystemGroup.html", null ],
       [ "NetworkGroup", "structNetworkGroup.html", null ],
       [ "ProcessGroup", "structProcessGroup.html", null ],
-      [ "SystemInfoGroup", "structSystemInfoGroup.html", null ],
       [ "WatchdogModuleGroup", "structWatchdogModuleGroup.html", null ]
     ] ],
     [ "ProcessHandler", "structProcessHandler.html", null ],
@@ -37,15 +35,14 @@ var hierarchy =
       [ "FileSystemModule::Status", "structFileSystemModule_1_1Status.html", null ],
       [ "LogFileModule::Config", "structLogFileModule_1_1Config.html", null ],
       [ "LogFileModule::Status", "structLogFileModule_1_1Status.html", null ],
-      [ "LoggingModule::Config", "structLoggingModule_1_1Config.html", null ],
-      [ "LoggingModule::Input", "structLoggingModule_1_1Input.html", null ],
-      [ "LoggingModule::Status", "structLoggingModule_1_1Status.html", null ],
       [ "NetworkModule::Status", "structNetworkModule_1_1Status.html", null ],
       [ "ProcessControlModule::Config", "structProcessControlModule_1_1Config.html", null ],
       [ "ProcessControlModule::ProcessStatus", "structProcessControlModule_1_1ProcessStatus.html", null ],
-      [ "ProcessInfoModule::Input", "structProcessInfoModule_1_1Input.html", null ],
       [ "ProcessInfoModule::Statistics", "structProcessInfoModule_1_1Statistics.html", null ],
       [ "ProcessInfoModule::Status", "structProcessInfoModule_1_1Status.html", null ],
+      [ "ProcessInfoModule::System", "structProcessInfoModule_1_1System.html", null ],
+      [ "ProcessInfoModule::System::Info", "structProcessInfoModule_1_1System_1_1Info.html", null ],
+      [ "ProcessInfoModule::System::Status", "structProcessInfoModule_1_1System_1_1Status.html", null ],
       [ "SystemInfoModule::Info", "structSystemInfoModule_1_1Info.html", null ],
       [ "SystemInfoModule::Status", "structSystemInfoModule_1_1Status.html", null ]
     ] ]

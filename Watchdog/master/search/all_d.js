@@ -4,7 +4,7 @@ var searchData=
   ['ncpu',['nCPU',['../structSystemInfoModule_1_1Info.html#a9ee190d4d0189f94c1af70f77bd8ecfe',1,'SystemInfoModule::Info']]],
   ['networkdevicename',['networkDeviceName',['../structNetworkModule.html#a76cc834e274988b5796385355e486081',1,'NetworkModule']]],
   ['networkgroup',['NetworkGroup',['../structNetworkGroup.html',1,'NetworkGroup'],['../structWatchdogServer.html#a3e411b2434cb02987a530b230617bf15',1,'WatchdogServer::networkGroup()']]],
-  ['networkmodule',['NetworkModule',['../structNetworkModule.html',1,'NetworkModule'],['../structNetworkModule.html#aaa7208d5a1f61d4572c8ec1beff28f4b',1,'NetworkModule::NetworkModule()']]],
+  ['networkmodule',['NetworkModule',['../structNetworkModule.html',1,'NetworkModule'],['../structNetworkModule.html#abadd1a66d43b9087f6e566b2b46550b6',1,'NetworkModule::NetworkModule()']]],
   ['networkmonitors',['networkMonitors',['../structNetworkGroup.html#a3aa5459cc78490932ecf8c7657877bba',1,'NetworkGroup']]],
   ['nfailed',['nFailed',['../structProcessControlModule_1_1ProcessStatus.html#a5f886b6a7e811ff61ba0c6a5a94d4477',1,'ProcessControlModule::ProcessStatus']]],
   ['nice',['nice',['../structProcessInfoModule_1_1Statistics.html#ab3a9572e8059975298688e71cf1d80b3',1,'ProcessInfoModule::Statistics']]],

@@ -88,18 +88,18 @@ $(document).ready(function(){initNavTree('sys__stat_8cc.html','');});
 <div class="title">sys_stat.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;fstream&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;stdlib.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="sys__stat_8h_source.html">sys_stat.h</a>&quot;</code><br />
 <code>#include &lt;proc/readproc.h&gt;</code><br />
 <code>#include &lt;proc/sysinfo.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="sys__stat_8h_source.html">sys_stat.h</a>&quot;</code><br />
-<code>#include &lt;sstream&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;signal.h&gt;</code><br />
-<code>#include &lt;iterator&gt;</code><br />
 <code>#include &lt;boost/algorithm/string.hpp&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;signal.h&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for sys_stat.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -120,14 +120,18 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3239beea007655f5b9ca18eeae0ba8d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceproc__util.html#a3239beea007655f5b9ca18eeae0ba8d4">proc_util::isProcessRunning</a> (const int &amp;PID)</td></tr>
+<tr class="memdesc:a3239beea007655f5b9ca18eeae0ba8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use system folder <code>/proc</code> to search for a process with the given process ID.  <a href="namespaceproc__util.html#a3239beea007655f5b9ca18eeae0ba8d4">More...</a><br /></td></tr>
 <tr class="separator:a3239beea007655f5b9ca18eeae0ba8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55cf35ee280c561e235c1dd1381be6af"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceproc__util.html#a55cf35ee280c561e235c1dd1381be6af">proc_util::getNChilds</a> (const size_t &amp;PGID, std::ostream &amp;os=std::cout)</td></tr>
+<tr class="memdesc:a55cf35ee280c561e235c1dd1381be6af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the number of processes that belong to the same process group id (PGID).  <a href="namespaceproc__util.html#a55cf35ee280c561e235c1dd1381be6af">More...</a><br /></td></tr>
 <tr class="separator:a55cf35ee280c561e235c1dd1381be6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82bc404af2ea091b460762103e6621e6"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; proc_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceproc__util.html#a82bc404af2ea091b460762103e6621e6">proc_util::getInfo</a> (const size_t &amp;PID)</td></tr>
+<tr class="memdesc:a82bc404af2ea091b460762103e6621e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read procps information of a certain process.  <a href="namespaceproc__util.html#a82bc404af2ea091b460762103e6621e6">More...</a><br /></td></tr>
 <tr class="separator:a82bc404af2ea091b460762103e6621e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a686b506568e29db2dfb04fe227bbb438"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sys__stat_8cc.html#a686b506568e29db2dfb04fe227bbb438">space2underscore</a> (std::string text)</td></tr>
 <tr class="separator:a686b506568e29db2dfb04fe227bbb438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9ae70bcc245ca1c92266bdb7fc2a37f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sys__stat_8cc.html#ab9ae70bcc245ca1c92266bdb7fc2a37f">split_arguments</a> (const std::string &amp;arguments, const std::string &amp;token)</td></tr>
+<tr class="memdesc:ab9ae70bcc245ca1c92266bdb7fc2a37f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a string in tokens.  <a href="#ab9ae70bcc245ca1c92266bdb7fc2a37f">More...</a><br /></td></tr>
 <tr class="separator:ab9ae70bcc245ca1c92266bdb7fc2a37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -148,7 +152,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>New string where spaces are replaced by underscores. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sys__stat_8cc_source.html#l00082">82</a> of file <a class="el" href="sys__stat_8cc_source.html">sys_stat.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sys__stat_8cc_source.html#l00083">83</a> of file <a class="el" href="sys__stat_8cc_source.html">sys_stat.cc</a>.</p>
 
 </div>
 </div>
@@ -167,7 +171,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Split a string in tokens. Considered delimiters are tabs and spaces. If there is a sequence of delimiters they are treated as one delimiter. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Split a string in tokens. </p>
+<p>Considered delimiters are tabs and spaces. If there is a sequence of delimiters they are treated as one delimiter. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">arguments</td><td>The string to be split </td></tr>
     <tr><td class="paramname">token</td><td>The token used to split the string </td></tr>
@@ -176,7 +182,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Tokens of the split string. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sys__stat_8cc_source.html#l00087">87</a> of file <a class="el" href="sys__stat_8cc_source.html">sys_stat.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sys__stat_8cc_source.html#l00088">88</a> of file <a class="el" href="sys__stat_8cc_source.html">sys_stat.cc</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -194,7 +200,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="sys__stat_8cc.html">sys_stat.cc</a></li>
-    <li class="footer">Generated on Tue Aug 16 2022 04:02:12 for watchdog-server by
+    <li class="footer">Generated on Tue Aug 30 2022 04:02:13 for watchdog-server by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

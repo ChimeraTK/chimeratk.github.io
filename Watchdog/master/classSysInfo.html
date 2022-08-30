@@ -97,12 +97,16 @@ $(document).ready(function(){initNavTree('classSysInfo.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2ad650a35f8c6724da23fb5cf2856cae"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSysInfo.html#a2ad650a35f8c6724da23fb5cf2856cae">ibegin</a> ()</td></tr>
+<tr class="memdesc:a2ad650a35f8c6724da23fb5cf2856cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator pointing to the beginning of the system data map.  <a href="#a2ad650a35f8c6724da23fb5cf2856cae">More...</a><br /></td></tr>
 <tr class="separator:a2ad650a35f8c6724da23fb5cf2856cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae259cf43e550331f51a2cb07034964df"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSysInfo.html#ae259cf43e550331f51a2cb07034964df">iend</a> ()</td></tr>
+<tr class="memdesc:ae259cf43e550331f51a2cb07034964df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator pointing to the end of the system data map.  <a href="#ae259cf43e550331f51a2cb07034964df">More...</a><br /></td></tr>
 <tr class="separator:ae259cf43e550331f51a2cb07034964df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7d27a2d73754c6b47d33946e5135a7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSysInfo.html#aa7d27a2d73754c6b47d33946e5135a7f">SysInfo</a> (const std::string &amp;cpuinfoFile=&quot;/proc/cpuinfo&quot;)</td></tr>
+<tr class="memdesc:aa7d27a2d73754c6b47d33946e5135a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read information about the system.  <a href="#aa7d27a2d73754c6b47d33946e5135a7f">More...</a><br /></td></tr>
 <tr class="separator:aa7d27a2d73754c6b47d33946e5135a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a429fb6d15d8790484be15eca47f7a1d5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSysInfo.html#a429fb6d15d8790484be15eca47f7a1d5">getInfo</a> (const std::string &amp;pattern)</td></tr>
+<tr class="memdesc:a429fb6d15d8790484be15eca47f7a1d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a system parameter stored in <code>/proc/cpuinfo</code>.  <a href="#a429fb6d15d8790484be15eca47f7a1d5">More...</a><br /></td></tr>
 <tr class="separator:a429fb6d15d8790484be15eca47f7a1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a836d6f2b00e37dd02caa17c18cce8492"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSysInfo.html#a836d6f2b00e37dd02caa17c18cce8492">getNCpu</a> ()</td></tr>
 <tr class="separator:a836d6f2b00e37dd02caa17c18cce8492"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,7 +120,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sys__stat_8h_source.html#l00070">70</a> of file <a class="el" href="sys__stat_8h_source.html">sys_stat.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sys__stat_8h_source.html#l00072">72</a> of file <a class="el" href="sys__stat_8h_source.html">sys_stat.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa7d27a2d73754c6b47d33946e5135a7f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7d27a2d73754c6b47d33946e5135a7f">&#9670;&nbsp;</a></span>SysInfo()</h2>
@@ -133,7 +137,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Read information about the system. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Read information about the system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cpuinfoFile</td><td>Name of cpu info file created by procps. Only change this for test purposes. </td></tr>
   </table>
@@ -146,7 +152,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sys__stat_8cc_source.html#l00093">93</a> of file <a class="el" href="sys__stat_8cc_source.html">sys_stat.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sys__stat_8cc_source.html#l00094">94</a> of file <a class="el" href="sys__stat_8cc_source.html">sys_stat.cc</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -182,7 +188,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get a system parameter stored in <code>/proc/cpuinfo</code> </p><dl class="section remark"><dt>Remarks</dt><dd>Not all parameter found in <code>/proc/cpuinfo</code> are available. </dd></dl>
+
+<p>Get a system parameter stored in <code>/proc/cpuinfo</code>. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Not all parameter found in <code>/proc/cpuinfo</code> are available. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pattern</td><td>The key used in <code>/proc/cpuinfo</code> and the internal map sysData. </td></tr>
@@ -190,7 +198,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sys__stat_8h_source.html#l00112">112</a> of file <a class="el" href="sys__stat_8h_source.html">sys_stat.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sys__stat_8h_source.html#l00114">114</a> of file <a class="el" href="sys__stat_8h_source.html">sys_stat.h</a>.</p>
 
 </div>
 </div>
@@ -218,7 +226,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Number cpu cores of the system </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sys__stat_8h_source.html#l00117">117</a> of file <a class="el" href="sys__stat_8h_source.html">sys_stat.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sys__stat_8h_source.html#l00119">119</a> of file <a class="el" href="sys__stat_8h_source.html">sys_stat.h</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -252,9 +260,10 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Iterator pointing to the beginning of the system data map </p>
 
-<p class="definition">Definition at line <a class="el" href="sys__stat_8h_source.html#l00095">95</a> of file <a class="el" href="sys__stat_8h_source.html">sys_stat.h</a>.</p>
+<p>Iterator pointing to the beginning of the system data map. </p>
+
+<p class="definition">Definition at line <a class="el" href="sys__stat_8h_source.html#l00097">97</a> of file <a class="el" href="sys__stat_8h_source.html">sys_stat.h</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -288,9 +297,10 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Iterator pointing to the end of the system data map </p>
 
-<p class="definition">Definition at line <a class="el" href="sys__stat_8h_source.html#l00097">97</a> of file <a class="el" href="sys__stat_8h_source.html">sys_stat.h</a>.</p>
+<p>Iterator pointing to the end of the system data map. </p>
+
+<p class="definition">Definition at line <a class="el" href="sys__stat_8h_source.html#l00099">99</a> of file <a class="el" href="sys__stat_8h_source.html">sys_stat.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -312,7 +322,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSysInfo.html">SysInfo</a></li>
-    <li class="footer">Generated on Tue Aug 16 2022 04:02:12 for watchdog-server by
+    <li class="footer">Generated on Tue Aug 30 2022 04:02:13 for watchdog-server by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

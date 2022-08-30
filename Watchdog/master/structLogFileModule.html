@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('structLogFileModule.html','');});
 <p>Module used to read external log file in order to make messages available to the control system.  
  <a href="structLogFileModule.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="LoggingModule_8h_source.html">LoggingModule.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="LogFileReader_8h_source.html">LogFileReader.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for LogFileModule:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -128,6 +128,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a158b6f45a954068bcd65582d12bcfcd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLogFileModule.html#a158b6f45a954068bcd65582d12bcfcd8">LogFileModule</a> (EntityOwner *owner, const std::string &amp;name, const std::string &amp;description, const std::string &amp;pathToTrigger, const std::string &amp;pathToLogFile, ctk::HierarchyModifier hierarchyModifier=ctk::HierarchyModifier::none, const std::unordered_set&lt; std::string &gt; &amp;tags={})</td></tr>
 <tr class="separator:a158b6f45a954068bcd65582d12bcfcd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a730fe9ac0bbe5a6ec9b4df7f9e66c5cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLogFileModule.html#a730fe9ac0bbe5a6ec9b4df7f9e66c5cd">mainLoop</a> () override</td></tr>
+<tr class="memdesc:a730fe9ac0bbe5a6ec9b4df7f9e66c5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application core main loop.  <a href="#a730fe9ac0bbe5a6ec9b4df7f9e66c5cd">More...</a><br /></td></tr>
 <tr class="separator:a730fe9ac0bbe5a6ec9b4df7f9e66c5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada8647269480d8165b0b0ac1b521b6e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLogFileModule.html#ada8647269480d8165b0b0ac1b521b6e5">terminate</a> ()</td></tr>
 <tr class="separator:ada8647269480d8165b0b0ac1b521b6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,7 +158,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Module used to read external log file in order to make messages available to the control system. </p>
 <p>E.g. the ChimeraTk watchdog starts a process and its output is not available by the watchdog. But the log file produced by the process can be read. If the log file is set via <code>logFileExternal</code> it is parsed and the tail is published to <code>LogFileTailExternal</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="LoggingModule_8h_source.html#l00028">28</a> of file <a class="el" href="LoggingModule_8h_source.html">LoggingModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LogFileReader_8h_source.html#l00029">29</a> of file <a class="el" href="LogFileReader_8h_source.html">LogFileReader.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a158b6f45a954068bcd65582d12bcfcd8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a158b6f45a954068bcd65582d12bcfcd8">&#9670;&nbsp;</a></span>LogFileModule()</h2>
@@ -223,7 +224,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LoggingModule_8h_source.html#l00029">29</a> of file <a class="el" href="LoggingModule_8h_source.html">LoggingModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LogFileReader_8h_source.html#l00030">30</a> of file <a class="el" href="LogFileReader_8h_source.html">LogFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -250,10 +251,19 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Application core main loop. </p>
 <p>Always reopen the file buffer. If the file buffer is only opened in case the log file name changes the following problem arises: When the process is stopped the buffer is not updated anymore, which is ok. But if the log file is deleted and the process is started again a new log file is created. The buffer will not recognize this and still show the last update (of the log file that was deleted). Updates of the new log file would not be updated here.</p>
 
-<p class="definition">Definition at line <a class="el" href="LoggingModule_8cc_source.html#l00010">10</a> of file <a class="el" href="LoggingModule_8cc_source.html">LoggingModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LogFileReader_8cc_source.html#l00013">13</a> of file <a class="el" href="LogFileReader_8cc_source.html">LogFileReader.cc</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structLogFileModule_a730fe9ac0bbe5a6ec9b4df7f9e66c5cd_cgraph.svg" width="412" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -272,7 +282,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LoggingModule_8cc_source.html#l00052">52</a> of file <a class="el" href="LoggingModule_8cc_source.html">LoggingModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LogFileReader_8cc_source.html#l00055">55</a> of file <a class="el" href="LogFileReader_8cc_source.html">LogFileReader.cc</a>.</p>
 
 </div>
 </div>
@@ -303,7 +313,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LoggingModule_8h_source.html#l00069">69</a> of file <a class="el" href="LoggingModule_8h_source.html">LoggingModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LogFileReader_8h_source.html#l00069">69</a> of file <a class="el" href="LogFileReader_8h_source.html">LogFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -406,8 +416,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>include/<a class="el" href="LoggingModule_8h_source.html">LoggingModule.h</a></li>
-<li>src/<a class="el" href="LoggingModule_8cc_source.html">LoggingModule.cc</a></li>
+<li>include/<a class="el" href="LogFileReader_8h_source.html">LogFileReader.h</a></li>
+<li>src/<a class="el" href="LogFileReader_8cc_source.html">LogFileReader.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -415,7 +425,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structLogFileModule.html">LogFileModule</a></li>
-    <li class="footer">Generated on Tue Aug 16 2022 04:02:12 for watchdog-server by
+    <li class="footer">Generated on Tue Aug 30 2022 04:02:13 for watchdog-server by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

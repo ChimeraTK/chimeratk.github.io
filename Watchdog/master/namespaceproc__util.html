@@ -95,10 +95,13 @@ $(document).ready(function(){initNavTree('namespaceproc__util.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3239beea007655f5b9ca18eeae0ba8d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceproc__util.html#a3239beea007655f5b9ca18eeae0ba8d4">isProcessRunning</a> (const int &amp;PID)</td></tr>
+<tr class="memdesc:a3239beea007655f5b9ca18eeae0ba8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use system folder <code>/proc</code> to search for a process with the given process ID.  <a href="#a3239beea007655f5b9ca18eeae0ba8d4">More...</a><br /></td></tr>
 <tr class="separator:a3239beea007655f5b9ca18eeae0ba8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82bc404af2ea091b460762103e6621e6"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; proc_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceproc__util.html#a82bc404af2ea091b460762103e6621e6">getInfo</a> (const size_t &amp;PID)</td></tr>
+<tr class="memdesc:a82bc404af2ea091b460762103e6621e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read procps information of a certain process.  <a href="#a82bc404af2ea091b460762103e6621e6">More...</a><br /></td></tr>
 <tr class="separator:a82bc404af2ea091b460762103e6621e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55cf35ee280c561e235c1dd1381be6af"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceproc__util.html#a55cf35ee280c561e235c1dd1381be6af">getNChilds</a> (const size_t &amp;PGID, std::ostream &amp;os=std::cout)</td></tr>
+<tr class="memdesc:a55cf35ee280c561e235c1dd1381be6af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the number of processes that belong to the same process group id (PGID).  <a href="#a55cf35ee280c561e235c1dd1381be6af">More...</a><br /></td></tr>
 <tr class="separator:a55cf35ee280c561e235c1dd1381be6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -125,7 +128,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Read procps information of a certain process. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Read procps information of a certain process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">PID</td><td>pid of the process to be considered. </td></tr>
   </table>
@@ -138,7 +143,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sys__stat_8cc_source.html#l00061">61</a> of file <a class="el" href="sys__stat_8cc_source.html">sys_stat.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sys__stat_8cc_source.html#l00062">62</a> of file <a class="el" href="sys__stat_8cc_source.html">sys_stat.cc</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -175,7 +180,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Read the number of processes that belong to the same process group id (PGID). </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Read the number of processes that belong to the same process group id (PGID). </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">PGID</td><td>The process group id used to look for processes </td></tr>
     <tr><td class="paramname">os</td><td>Stream used to print messages. </td></tr>
@@ -183,7 +190,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sys__stat_8cc_source.html#l00045">45</a> of file <a class="el" href="sys__stat_8cc_source.html">sys_stat.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sys__stat_8cc_source.html#l00046">46</a> of file <a class="el" href="sys__stat_8cc_source.html">sys_stat.cc</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -210,7 +217,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Use system folder <code>/proc</code> to search for a process with the given process ID. If a directory with the given PID is found the process is running. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Use system folder <code>/proc</code> to search for a process with the given process ID. </p>
+<p>If a directory with the given PID is found the process is running. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">PID</td><td>Process ID to look for </td></tr>
   </table>
@@ -218,7 +227,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the process is running and registered in the <code>/proc</code> folder </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sys__stat_8cc_source.html#l00029">29</a> of file <a class="el" href="sys__stat_8cc_source.html">sys_stat.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sys__stat_8cc_source.html#l00030">30</a> of file <a class="el" href="sys__stat_8cc_source.html">sys_stat.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -243,7 +252,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sys__stat_8cc_source.html#l00027">27</a> of file <a class="el" href="sys__stat_8cc_source.html">sys_stat.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sys__stat_8cc_source.html#l00028">28</a> of file <a class="el" href="sys__stat_8cc_source.html">sys_stat.cc</a>.</p>
 
 </div>
 </div>
@@ -253,7 +262,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceproc__util.html">proc_util</a></li>
-    <li class="footer">Generated on Tue Aug 16 2022 04:02:12 for watchdog-server by
+    <li class="footer">Generated on Tue Aug 30 2022 04:02:13 for watchdog-server by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
