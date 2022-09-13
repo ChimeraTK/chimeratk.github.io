@@ -24,7 +24,7 @@ var searchData=
   ['moduleoutput',['moduleOutput',['../struct_test_module1.html#a6828ce5ba370a3327780e0819231868c',1,'TestModule1']]],
   ['modulethread',['moduleThread',['../class_chimera_t_k_1_1_application_module.html#a6da2ea5bac29df0a1c69c5117a0e57e0',1,'ChimeraTK::ApplicationModule::moduleThread()'],['../class_chimera_t_k_1_1_device_module.html#ad60c1bb16b26f8cbfc441d755bffc0fe',1,'ChimeraTK::DeviceModule::moduleThread()']]],
   ['moduletrigger',['moduleTrigger',['../struct_test_module1.html#aa4821d6dad01bcb4ed17aeb3262bb779',1,'TestModule1']]],
-  ['monitor',['monitor',['../struct_test_application.html#af362dae54eb7eb425409c5c114e70743',1,'TestApplication::monitor()'],['../struct_test_application_new_interface.html#a4893e67c3f80b4138e08197c3dce2776',1,'TestApplicationNewInterface::monitor()']]],
+  ['monitor',['monitor',['../struct_test_application.html#af362dae54eb7eb425409c5c114e70743',1,'TestApplication']]],
   ['movemealong',['moveMeAlong',['../test_hide_this_8cc.html#a3b41a4a492b56f68cb8f4985ec6709bd',1,'testHideThis.cc']]],
   ['movemetoroot',['MoveMeToRoot',['../struct_first_hierarchy_1_1_test_module.html#a65c61978ea580d3a23132dce234aeb4f',1,'FirstHierarchy::TestModule']]],
   ['movetoroot',['moveToRoot',['../struct_chimera_t_k_1_1_hierarchy_modifying_group.html#a0b627f07dfaa259ccb9a977a6a184fc2',1,'ChimeraTK::HierarchyModifyingGroup::moveToRoot()'],['../struct_first_hierarchy_1_1_test_module.html#a4c9d224ce0b4c63dbf95f702a505214a',1,'FirstHierarchy::TestModule::moveToRoot()']]],

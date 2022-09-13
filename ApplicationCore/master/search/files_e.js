@@ -34,7 +34,7 @@ var searchData=
   ['testpropagatedatafaultflag_2ecc',['testPropagateDataFaultFlag.cc',['../test_propagate_data_fault_flag_8cc.html',1,'']]],
   ['testscriptedinitialisationhandler_2ecc',['testScriptedInitialisationHandler.cc',['../test_scripted_initialisation_handler_8cc.html',1,'']]],
   ['teststatusaggregator_2ecc',['testStatusAggregator.cc',['../test_status_aggregator_8cc.html',1,'']]],
-  ['teststatusmodule_2ecc',['testStatusModule.cc',['../test_status_module_8cc.html',1,'']]],
+  ['teststatusmonitor_2ecc',['testStatusMonitor.cc',['../test_status_monitor_8cc.html',1,'']]],
   ['testtemplatemodule_2ecc',['testTemplateModule.cc',['../test_template_module_8cc.html',1,'']]],
   ['testtestfacilities_2ecc',['testTestFacilities.cc',['../test_test_facilities_8cc.html',1,'']]],
   ['testtestfacility2_2ecc',['testTestFacility2.cc',['../test_test_facility2_8cc.html',1,'']]],

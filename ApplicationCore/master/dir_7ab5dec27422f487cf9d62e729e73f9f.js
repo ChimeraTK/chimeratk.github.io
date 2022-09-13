@@ -29,7 +29,7 @@ var dir_7ab5dec27422f487cf9d62e729e73f9f =
     [ "testPropagateDataFaultFlag.cc", "test_propagate_data_fault_flag_8cc.html", "test_propagate_data_fault_flag_8cc" ],
     [ "testScriptedInitialisationHandler.cc", "test_scripted_initialisation_handler_8cc.html", "test_scripted_initialisation_handler_8cc" ],
     [ "testStatusAggregator.cc", "test_status_aggregator_8cc.html", "test_status_aggregator_8cc" ],
-    [ "testStatusModule.cc", "test_status_module_8cc.html", "test_status_module_8cc" ],
+    [ "testStatusMonitor.cc", "test_status_monitor_8cc.html", "test_status_monitor_8cc" ],
     [ "testTestFacilities.cc", "test_test_facilities_8cc.html", "test_test_facilities_8cc" ],
     [ "testTestFacility2.cc", "test_test_facility2_8cc.html", "test_test_facility2_8cc" ],
     [ "testTrigger.cc", "test_trigger_8cc.html", "test_trigger_8cc" ],

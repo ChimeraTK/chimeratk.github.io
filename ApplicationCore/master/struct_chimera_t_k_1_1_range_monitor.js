@@ -1,8 +1,12 @@
 var struct_chimera_t_k_1_1_range_monitor =
 [
+    [ "RangeMonitor", "struct_chimera_t_k_1_1_range_monitor.html#a58ab41d374e1698210e9ab8451ab63b9", null ],
+    [ "RangeMonitor", "struct_chimera_t_k_1_1_range_monitor.html#a185ab85c10ddc9370732c168d730ccb3", null ],
+    [ "RangeMonitor", "struct_chimera_t_k_1_1_range_monitor.html#ae87ef9a628147ebe3e5668e552039666", null ],
     [ "mainLoop", "struct_chimera_t_k_1_1_range_monitor.html#a3846f118be4b15f904116fd17d60932b", null ],
-    [ "faultLowerThreshold", "struct_chimera_t_k_1_1_range_monitor.html#aa97f80f14f517bdceb2707ebf817b891", null ],
-    [ "faultUpperThreshold", "struct_chimera_t_k_1_1_range_monitor.html#a4c983b3f87e2a3e30f5ffca160bb8ee3", null ],
-    [ "warningLowerThreshold", "struct_chimera_t_k_1_1_range_monitor.html#af9024a4da784b70404db4647ddae6d41", null ],
-    [ "warningUpperThreshold", "struct_chimera_t_k_1_1_range_monitor.html#abbe332c7fc02516620d56dde6f08186c", null ]
+    [ "faultLowerThreshold", "struct_chimera_t_k_1_1_range_monitor.html#a1d514540437dba7982d1bbf4cd2a850e", null ],
+    [ "faultUpperThreshold", "struct_chimera_t_k_1_1_range_monitor.html#a6ccab35297961e82dc4559b2025987a3", null ],
+    [ "warningLowerThreshold", "struct_chimera_t_k_1_1_range_monitor.html#acee570b71a7985560056a5bfb1987aec", null ],
+    [ "warningUpperThreshold", "struct_chimera_t_k_1_1_range_monitor.html#ab8254964010b8ba0d250e2c678408825", null ],
+    [ "watch", "struct_chimera_t_k_1_1_range_monitor.html#a9d59f88a26d42272547460bbb0e9c60f", null ]
 ];

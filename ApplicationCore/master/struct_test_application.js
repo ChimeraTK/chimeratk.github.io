@@ -49,7 +49,6 @@ var struct_test_application =
     [ "TestApplication", "struct_test_application.html#a39569e5f1b9e949cf786afefd5d4039b", null ],
     [ "~TestApplication", "struct_test_application.html#a74ab3dd6980576ac0baabc65bb96aef4", null ],
     [ "defineConnections", "struct_test_application.html#a6d76ae9093a016d3a18ed247a6cf1fed", null ],
-    [ "defineConnections", "struct_test_application.html#a6d76ae9093a016d3a18ed247a6cf1fed", null ],
     [ "defineConnections", "struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9", null ],
     [ "defineConnections", "struct_test_application.html#a6d76ae9093a016d3a18ed247a6cf1fed", null ],
     [ "defineConnections", "struct_test_application.html#ae29fb9ad682a188dd71e731fda413af9", null ],

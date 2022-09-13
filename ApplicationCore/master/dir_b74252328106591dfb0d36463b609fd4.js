@@ -58,9 +58,7 @@ var dir_b74252328106591dfb0d36463b609fd4 =
       [ "StatusAggregator", "struct_chimera_t_k_1_1_status_aggregator.html", "struct_chimera_t_k_1_1_status_aggregator" ]
     ] ],
     [ "StatusMonitor.h", "_status_monitor_8h.html", [
-      [ "StatusMonitor", "struct_chimera_t_k_1_1_status_monitor.html", "struct_chimera_t_k_1_1_status_monitor" ],
-      [ "StatusMonitorImpl", "struct_chimera_t_k_1_1_status_monitor_impl.html", "struct_chimera_t_k_1_1_status_monitor_impl" ],
-      [ "OneUp", "struct_chimera_t_k_1_1_status_monitor_impl_1_1_one_up.html", "struct_chimera_t_k_1_1_status_monitor_impl_1_1_one_up" ],
+      [ "MonitorBase", "struct_chimera_t_k_1_1_monitor_base.html", "struct_chimera_t_k_1_1_monitor_base" ],
       [ "MaxMonitor", "struct_chimera_t_k_1_1_max_monitor.html", "struct_chimera_t_k_1_1_max_monitor" ],
       [ "MinMonitor", "struct_chimera_t_k_1_1_min_monitor.html", "struct_chimera_t_k_1_1_min_monitor" ],
       [ "RangeMonitor", "struct_chimera_t_k_1_1_range_monitor.html", "struct_chimera_t_k_1_1_range_monitor" ],

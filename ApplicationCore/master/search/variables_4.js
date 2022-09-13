@@ -48,7 +48,7 @@ var searchData=
   ['dir',['dir',['../struct_chimera_t_k_1_1_variable_direction.html#a731e6cd5f58f1f014d443434f9ff6219',1,'ChimeraTK::VariableDirection::dir()'],['../structtest_app.html#a6d08dc9306d99954c3818196f68f68ab',1,'testApp::dir()']]],
   ['direction',['direction',['../struct_chimera_t_k_1_1_variable_network_node__data.html#aeb392b6238bd9ec1603d16868a8aec33',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['directory',['directory',['../structtest_app.html#add8b544954e60f42ac52c8b8c295c3e2',1,'testApp']]],
-  ['disable',['disable',['../struct_chimera_t_k_1_1_status_monitor.html#a8df1710a1a5c8402ec35cd337ce73d3b',1,'ChimeraTK::StatusMonitor::disable()'],['../struct_chimera_t_k_1_1_exact_monitor.html#a2b9d138a379470fa35a94e608c2a5a3e',1,'ChimeraTK::ExactMonitor::disable()']]],
+  ['disable',['disable',['../struct_chimera_t_k_1_1_monitor_base.html#a3d2632ea099486988211877abf021da1',1,'ChimeraTK::MonitorBase']]],
   ['divider',['divider',['../struct_chimera_t_k_1_1_divider.html#ad9cc0000920baac3739dc54f55aea293',1,'ChimeraTK::Divider']]],
   ['dmapsetter',['dmapSetter',['../struct_fixture.html#a641f4543559e38a65c5fe3f7af43fc88',1,'Fixture']]],
   ['done',['done',['../struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html#a5ca367f5f723695e5ae77fcc48e90501',1,'ChimeraTK::Application::TypedMakeConnectionCaller::done()'],['../struct_test_module.html#a8ca8d7f0e72a002b770056251cdf154f',1,'TestModule::done()']]],

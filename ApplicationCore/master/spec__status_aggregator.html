@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('spec__status_aggregator.html','');});
 </blockquote>
 <p>The <code><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html" title="The StatusAggregator collects results of multiple StatusMonitor instances and aggregates them into a ...">ChimeraTK::StatusAggregator</a></code> provides a facitlity to collect multiple statuses and merge them into a single output status. The sources of input statuses can be:</p>
 <ul>
-<li>Instances of <code><a class="el" href="struct_chimera_t_k_1_1_status_monitor.html" title="Common base for StatusMonitors. ">ChimeraTK::StatusMonitor</a></code></li>
+<li>Instances of <code>ChimeraTK::StatusMonitor</code></li>
 <li>Other instances of the StatusAggregator</li>
 </ul>
 <p>The StatusMonitor and StatusAggregator instances to be connected into the StatusAggregator should be found automatically as follows:</p>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('spec__status_aggregator.html','');});
 <li>off - error - warning - ok</li>
 </ol>
 <ul>
-<li>As detection of underlying instances can only be performed in the constructor, the StatusAggregator has to be declared in user code after all instances of <code><a class="el" href="struct_chimera_t_k_1_1_status_monitor.html" title="Common base for StatusMonitors. ">ChimeraTK::StatusMonitor</a></code> in a Module.</li>
+<li>As detection of underlying instances can only be performed in the constructor, the StatusAggregator has to be declared in user code after all instances of <code>ChimeraTK::StatusMonitor</code> in a Module.</li>
 <li>Usage of <code>HierarchyModifier::moveToRoot</code> on a StatusAggregator is controversial (currently not allowed, see R2.2):<ul>
 <li>Either: Detection of aggregated instances may take place from the virtual hierarchy level of the original (C++) parent module downwards. The Aggregator and its status output would then appear on the root level.</li>
 <li>Or: <code>HierarchyModifier::moveToRoot</code> is not allowed on StatusAggregators</li>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('spec__status_aggregator.html','');});
 <ul>
 <li>The detection and connection of the instances to be aggregated has to be performed in the constructor, later the variable household is fixed and the status inputs can not be added anymore.</li>
 <li>As a consequence of the implementation requirements, in order to get the virtual parent module, the entire Application needs to be virtualised and the search algorithm must then navigate to the parent module.</li>
-<li>Related to R1.1.3: If a StatusAggregator is found on a level below, the instances of <code><a class="el" href="struct_chimera_t_k_1_1_status_monitor.html" title="Common base for StatusMonitors. ">ChimeraTK::StatusMonitor</a></code>s on that level must be ignored. </li>
+<li>Related to R1.1.3: If a StatusAggregator is found on a level below, the instances of <code>ChimeraTK::StatusMonitor</code>s on that level must be ignored. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('spec__status_aggregator.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Sat Aug 27 2022 03:56:22 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Sep 13 2022 03:54:12 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

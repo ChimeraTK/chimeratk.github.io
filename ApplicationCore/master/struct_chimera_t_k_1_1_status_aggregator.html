@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('struct_chimera_t_k_1_1_status_aggregat
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html" title="The StatusAggregator collects results of multiple StatusMonitor instances and aggregates them into a ...">StatusAggregator</a> collects results of multiple <a class="el" href="struct_chimera_t_k_1_1_status_monitor.html" title="Common base for StatusMonitors. ">StatusMonitor</a> instances and aggregates them into a single status, which can take the same values as the result of the individual monitors.  
+<p>The <a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html" title="The StatusAggregator collects results of multiple StatusMonitor instances and aggregates them into a ...">StatusAggregator</a> collects results of multiple StatusMonitor instances and aggregates them into a single status, which can take the same values as the result of the individual monitors.  
  <a href="struct_chimera_t_k_1_1_status_aggregator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_status_aggregator_8h_source.html">StatusAggregator.h</a>&gt;</code></p>
@@ -516,7 +516,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a38e92b9f1be12d637408b06f8020b855 inherit pub_static_methods_class_chimera_t_k_1_1_entity_owner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html" title="The StatusAggregator collects results of multiple StatusMonitor instances and aggregates them into a ...">StatusAggregator</a> collects results of multiple <a class="el" href="struct_chimera_t_k_1_1_status_monitor.html" title="Common base for StatusMonitors. ">StatusMonitor</a> instances and aggregates them into a single status, which can take the same values as the result of the individual monitors. </p>
+<div class="textblock"><p>The <a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html" title="The StatusAggregator collects results of multiple StatusMonitor instances and aggregates them into a ...">StatusAggregator</a> collects results of multiple StatusMonitor instances and aggregates them into a single status, which can take the same values as the result of the individual monitors. </p>
 <p>It will search for all StatusOutputs from its point in hierarchy downwards, matching the tagsToAggregate passed to the constructor. If a StatusOutputs beloging to another <a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html" title="The StatusAggregator collects results of multiple StatusMonitor instances and aggregates them into a ...">StatusAggregator</a> is found (also matching the tagsToAggregate) the search is not recursing further down at that branch, since the <a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html" title="The StatusAggregator collects results of multiple StatusMonitor instances and aggregates them into a ...">StatusAggregator</a> already represents the complete status of the branch below it. StatusAggregators created on the same hierarchy level (i.e. sharing the owner) never aggregate each other.</p>
 <p>Note: The aggregated instances are collected on construction. Hence, the <a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html" title="The StatusAggregator collects results of multiple StatusMonitor instances and aggregates them into a ...">StatusAggregator</a> has to be declared after all instances that shall to be included in the scope (<a class="el" href="class_chimera_t_k_1_1_module_group.html">ModuleGroup</a>, <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a>, ...) of interest. </p>
 
@@ -1155,7 +1155,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="struct_chimera_t_k_1_1_status_aggregator.html">StatusAggregator</a></li>
-    <li class="footer">Generated on Sat Aug 27 2022 03:56:25 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Sep 13 2022 03:54:15 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
