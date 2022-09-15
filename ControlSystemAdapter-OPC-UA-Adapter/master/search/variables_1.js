@@ -2,6 +2,7 @@ var searchData=
 [
   ['b',['b',['../classua__node__types_1_1opcua__node__id__t.html#aa5094982410a55b0016531fcd89314c1',1,'ua_node_types::opcua_node_id_t']]],
   ['basenodeid',['baseNodeId',['../classua__mapped__class.html#a096c031f9cf99835303d984458861a21',1,'ua_mapped_class::baseNodeId()'],['../struct_test_fixture_server_set.html#a6215ad5896f4786794ca4ab874bbbf3d',1,'TestFixtureServerSet::baseNodeId()']]],
+  ['blocklistfolder',['blockListFolder',['../struct_server_config.html#ab683d5a50675f5d579b2ea972b3f8c88',1,'ServerConfig']]],
   ['builtintype_5ftypeid_5fboolean',['BUILTINTYPE_TYPEID_BOOLEAN',['../namespaceua__constants.html#a4ab16f1fb2850ce0faae39236575261c',1,'ua_constants']]],
   ['builtintype_5ftypeid_5fbyte',['BUILTINTYPE_TYPEID_BYTE',['../namespaceua__constants.html#a7b7d05d4de2df2160292c79f6e5424f6',1,'ua_constants']]],
   ['builtintype_5ftypeid_5fbytestring',['BUILTINTYPE_TYPEID_BYTESTRING',['../namespaceua__constants.html#a6cdb07e7d17a3d5019bda5b283a04b96',1,'ua_constants']]],

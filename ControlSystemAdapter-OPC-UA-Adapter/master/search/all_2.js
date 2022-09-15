@@ -2,6 +2,7 @@ var searchData=
 [
   ['b',['b',['../classua__node__types_1_1opcua__node__id__t.html#aa5094982410a55b0016531fcd89314c1',1,'ua_node_types::opcua_node_id_t']]],
   ['basenodeid',['baseNodeId',['../classua__mapped__class.html#a096c031f9cf99835303d984458861a21',1,'ua_mapped_class::baseNodeId()'],['../struct_test_fixture_server_set.html#a6215ad5896f4786794ca4ab874bbbf3d',1,'TestFixtureServerSet::baseNodeId()']]],
+  ['blocklistfolder',['blockListFolder',['../struct_server_config.html#ab683d5a50675f5d579b2ea972b3f8c88',1,'ServerConfig']]],
   ['browsename',['browseName',['../classua__node__types_1_1opcua__node__t.html#ade4967a60db1cd32153b10f623cfbec1',1,'ua_node_types::opcua_node_t']]],
   ['buildaliaslist',['buildAliasList',['../classua__namespace_1_1opcua__namespace.html#a2cafe663785f19d77bbe134289497895',1,'ua_namespace::opcua_namespace']]],
   ['buildencoding',['buildEncoding',['../classua__node__types_1_1opcua__node__data_type__t.html#afa91a325319bf5887e2a120e76adbe1f',1,'ua_node_types::opcua_node_dataType_t']]],

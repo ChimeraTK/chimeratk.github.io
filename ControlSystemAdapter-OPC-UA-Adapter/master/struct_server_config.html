@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('struct_server_config.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="struct_server_config__coll__graph.svg" width="194" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="struct_server_config__coll__graph.svg" width="194" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -118,6 +118,20 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a4a1d0b2a3f194881a5b9a14b7eac27a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad89f298b8fb99aaf63b4ca6a7e98d070"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_config.html#ad89f298b8fb99aaf63b4ca6a7e98d070">opcuaPort</a> = 16664</td></tr>
 <tr class="separator:ad89f298b8fb99aaf63b4ca6a7e98d070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f9a3cd65b76dd84c949b9711e2a6cbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_config.html#a8f9a3cd65b76dd84c949b9711e2a6cbf">enableSecurity</a> = false</td></tr>
+<tr class="separator:a8f9a3cd65b76dd84c949b9711e2a6cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308fe2b1a9a7c9f277ed4980f9e86e20"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_config.html#a308fe2b1a9a7c9f277ed4980f9e86e20">unsecure</a> = false</td></tr>
+<tr class="separator:a308fe2b1a9a7c9f277ed4980f9e86e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b89295898f24f7f173ee3676d04cb1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_config.html#ae8b89295898f24f7f173ee3676d04cb1">certPath</a> = &quot;&quot;</td></tr>
+<tr class="separator:ae8b89295898f24f7f173ee3676d04cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0058dfc0c04a08b47b2579fe14c1c9a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_config.html#ae0058dfc0c04a08b47b2579fe14c1c9a">keyPath</a> = &quot;&quot;</td></tr>
+<tr class="separator:ae0058dfc0c04a08b47b2579fe14c1c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7eeca7d24b9e0471461a4a45beefedc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_config.html#ac7eeca7d24b9e0471461a4a45beefedc">allowListFolder</a> = &quot;&quot;</td></tr>
+<tr class="separator:ac7eeca7d24b9e0471461a4a45beefedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab683d5a50675f5d579b2ea972b3f8c88"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_config.html#ab683d5a50675f5d579b2ea972b3f8c88">blockListFolder</a> = &quot;&quot;</td></tr>
+<tr class="separator:ab683d5a50675f5d579b2ea972b3f8c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0123aa1d252c5c4aea613e64e68c162b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_config.html#a0123aa1d252c5c4aea613e64e68c162b">issuerListFolder</a> = &quot;&quot;</td></tr>
+<tr class="separator:a0123aa1d252c5c4aea613e64e68c162b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This struct represents a server config. </p>
@@ -125,8 +139,24 @@ Public Attributes</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Chris Iatrou, Julian Rahm </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>03.12.2016 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00070">70</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00069">69</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac7eeca7d24b9e0471461a4a45beefedc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7eeca7d24b9e0471461a4a45beefedc">&#9670;&nbsp;</a></span>allowListFolder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ServerConfig::allowListFolder = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00081">81</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
+
+</div>
+</div>
 <a id="a4a1d0b2a3f194881a5b9a14b7eac27a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a1d0b2a3f194881a5b9a14b7eac27a3">&#9670;&nbsp;</a></span>applicationName</h2>
 
@@ -139,7 +169,39 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00076">76</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00075">75</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
+
+</div>
+</div>
+<a id="ab683d5a50675f5d579b2ea972b3f8c88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab683d5a50675f5d579b2ea972b3f8c88">&#9670;&nbsp;</a></span>blockListFolder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ServerConfig::blockListFolder = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00082">82</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
+
+</div>
+</div>
+<a id="ae8b89295898f24f7f173ee3676d04cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8b89295898f24f7f173ee3676d04cb1">&#9670;&nbsp;</a></span>certPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ServerConfig::certPath = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00079">79</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
 
 </div>
 </div>
@@ -155,7 +217,55 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00072">72</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00071">71</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
+
+</div>
+</div>
+<a id="a8f9a3cd65b76dd84c949b9711e2a6cbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f9a3cd65b76dd84c949b9711e2a6cbf">&#9670;&nbsp;</a></span>enableSecurity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ServerConfig::enableSecurity = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00077">77</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
+
+</div>
+</div>
+<a id="a0123aa1d252c5c4aea613e64e68c162b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0123aa1d252c5c4aea613e64e68c162b">&#9670;&nbsp;</a></span>issuerListFolder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ServerConfig::issuerListFolder = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00083">83</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
+
+</div>
+</div>
+<a id="ae0058dfc0c04a08b47b2579fe14c1c9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0058dfc0c04a08b47b2579fe14c1c9a">&#9670;&nbsp;</a></span>keyPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ServerConfig::keyPath = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00080">80</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
 
 </div>
 </div>
@@ -171,7 +281,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00077">77</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00076">76</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
 
 </div>
 </div>
@@ -187,7 +297,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00074">74</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00073">73</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
 
 </div>
 </div>
@@ -203,7 +313,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00071">71</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00070">70</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
+
+</div>
+</div>
+<a id="a308fe2b1a9a7c9f277ed4980f9e86e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308fe2b1a9a7c9f277ed4980f9e86e20">&#9670;&nbsp;</a></span>unsecure</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ServerConfig::unsecure = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00078">78</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
 
 </div>
 </div>
@@ -219,7 +345,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00075">75</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00074">74</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
 
 </div>
 </div>
@@ -235,7 +361,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00073">73</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ua__adapter_8h_source.html#l00072">72</a> of file <a class="el" href="ua__adapter_8h_source.html">ua_adapter.h</a>.</p>
 
 </div>
 </div>
@@ -248,7 +374,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_server_config.html">ServerConfig</a></li>
-    <li class="footer">Generated on Sat Aug 27 2022 04:07:07 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
+    <li class="footer">Generated on Thu Sep 15 2022 04:02:00 for ChimeraTK-ControlSystemAdapter-OPCUAAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

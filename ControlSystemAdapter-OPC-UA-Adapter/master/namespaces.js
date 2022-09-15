@@ -1,5 +1,6 @@
 var namespaces =
 [
+    [ "create_self-signed", "namespacecreate__self-signed.html", null ],
     [ "generate_open62541CCode", "namespacegenerate__open62541_c_code.html", null ],
     [ "open62541_MacroHelper", "namespaceopen62541___macro_helper.html", null ],
     [ "open62541_XMLPreprocessor", "namespaceopen62541___x_m_l_preprocessor.html", null ],

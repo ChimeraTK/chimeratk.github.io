@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['open62541_5fmacrohelper',['open62541_MacroHelper',['../namespaceopen62541___macro_helper.html',1,'']]],
-  ['open62541_5fxmlpreprocessor',['open62541_XMLPreprocessor',['../namespaceopen62541___x_m_l_preprocessor.html',1,'']]]
+  ['generate_5fopen62541ccode',['generate_open62541CCode',['../namespacegenerate__open62541_c_code.html',1,'']]]
 ];

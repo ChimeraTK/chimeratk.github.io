@@ -40,8 +40,8 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classua__builtin__types_1_1opcua__value__t.html#ac343f0beb92afd91315044b585e41bac",
-"classua__uaadapter.html#af0901be64485243fabd977b1dfa76719",
-"ua__additionalvariable_8h.html"
+"classua__uaadapter.html#ad9f8d4f0b7962231ba87ec3b00832203",
+"struct_u_a___node_id__pair__t.html#aca370f03453a8e53e9ba16fc98f0c914"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

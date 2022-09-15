@@ -13,6 +13,7 @@ var classua__uaadapter =
     [ "existFolder", "classua__uaadapter.html#a7c1e27a2d1fa4f3515d55af3f952cd58", null ],
     [ "existFolderPath", "classua__uaadapter.html#a9fc23375179ed6c20b8455b3f846eab0", null ],
     [ "explicitVarMapping", "classua__uaadapter.html#a2457f02d1d25e9306f1d00eadb8a9328", null ],
+    [ "fillBuildInfo", "classua__uaadapter.html#a9e969dd9b83ac33c146b7eb6e2b75430", null ],
     [ "findMappingIndex", "classua__uaadapter.html#ad9f8d4f0b7962231ba87ec3b00832203", null ],
     [ "getAllNotMappableVariablesNames", "classua__uaadapter.html#a7a221f466bc35e7a18779d02748dc8ae", null ],
     [ "getMappedServer", "classua__uaadapter.html#a861aa2538707a4fd004530e2c0c9384c", null ],
