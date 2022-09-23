@@ -34,7 +34,6 @@ var searchData=
   ['_7epushdummyapplication',['~PushDummyApplication',['../struct_push_dummy_application.html#a21ac5da9d23a788692bb952bda4b0357',1,'PushDummyApplication']]],
   ['_7ereadonlytestapplication',['~ReadOnlyTestApplication',['../struct_read_only_test_application.html#a47490c227e67a02b7d9c2b25025ce9f7',1,'ReadOnlyTestApplication']]],
   ['_7eserver',['~Server',['../struct_server.html#af575d2e7efe3b7130dcbffc2c163f5e6',1,'Server']]],
-  ['_7etemplatemodule',['~TemplateModule',['../struct_template_module.html#a6b8f84dae76a1cf6e5704a60908f3996',1,'TemplateModule']]],
   ['_7etest6_5fa1_5fdummyapplication',['~Test6_a1_DummyApplication',['../struct_test6__a1___dummy_application.html#a35007af04f498ac06905c3cc7786e892',1,'Test6_a1_DummyApplication']]],
   ['_7etest6_5fa1_5finitialvalueeceptiondummy',['~Test6_a1_InitialValueEceptionDummy',['../struct_test6__a1___initial_value_eception_dummy.html#a6f3b89a923eec69e319dc3a1f0dcaa8c',1,'Test6_a1_InitialValueEceptionDummy']]],
   ['_7etest6_5fa2_5fdummyapplication',['~Test6_a2_DummyApplication',['../struct_test6__a2___dummy_application.html#adc35f53c27e2c7f6643ea5836c0db7ac',1,'Test6_a2_DummyApplication']]],

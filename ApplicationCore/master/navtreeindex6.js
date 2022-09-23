@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"struct_chimera_t_k_1_1_config_reader.html#a47db4f61e9581df45abc2910876fd1ed":[18,0,0,15,20],
 "struct_chimera_t_k_1_1_config_reader.html#a4d05f33a9e1cec75914953c25c51e6ce":[18,0,0,15,11],
 "struct_chimera_t_k_1_1_config_reader.html#a540a1a043b8ddf46f01c3d9ab2c1601d":[18,0,0,15,4],
 "struct_chimera_t_k_1_1_config_reader.html#a5b64f1f2926e1bb3aa8b2d4698ec36db":[18,0,0,15,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "struct_chimera_t_k_1_1_status_aggregator.html#a49a9371926f9b187b0652438d43f0ef7":[18,0,0,71,6],
 "struct_chimera_t_k_1_1_status_aggregator.html#a4a647915ca42fb4f7de4a1aed66d2334":[18,0,0,71,0],
 "struct_chimera_t_k_1_1_status_aggregator.html#a4a647915ca42fb4f7de4a1aed66d2334a3242dfc7371c5c52a116bbe41207a725":[18,0,0,71,0,2],
-"struct_chimera_t_k_1_1_status_aggregator.html#a4a647915ca42fb4f7de4a1aed66d2334a412107231cf50aa9cf203ee144454625":[18,0,0,71,0,3],
-"struct_chimera_t_k_1_1_status_aggregator.html#a4a647915ca42fb4f7de4a1aed66d2334a6b37ea8f9ddd660dd78777cb2caf402d":[18,0,0,71,0,1]
+"struct_chimera_t_k_1_1_status_aggregator.html#a4a647915ca42fb4f7de4a1aed66d2334a412107231cf50aa9cf203ee144454625":[18,0,0,71,0,3]
 };
