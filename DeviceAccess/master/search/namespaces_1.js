@@ -6,5 +6,6 @@ var searchData=
   ['parserutilities',['parserUtilities',['../namespace_chimera_t_k_1_1parser_utilities.html',1,'ChimeraTK']]],
   ['proxies',['proxies',['../namespace_chimera_t_k_1_1proxies.html',1,'ChimeraTK']]],
   ['rebot',['Rebot',['../namespace_chimera_t_k_1_1_rebot.html',1,'ChimeraTK']]],
-  ['testable_5frebot_5fsleep',['testable_rebot_sleep',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html',1,'ChimeraTK']]]
+  ['testable_5frebot_5fsleep',['testable_rebot_sleep',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html',1,'ChimeraTK']]],
+  ['utilities',['Utilities',['../namespace_chimera_t_k_1_1_utilities.html',1,'ChimeraTK']]]
 ];

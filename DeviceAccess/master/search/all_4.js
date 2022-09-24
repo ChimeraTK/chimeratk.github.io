@@ -87,7 +87,7 @@ var searchData=
   ['copyregisterdecoratortrait',['CopyRegisterDecoratorTrait',['../struct_chimera_t_k_1_1_copy_register_decorator_trait.html',1,'ChimeraTK']]],
   ['counter',['counter',['../struct_ascii_data.html#ad3d77468f84879ad1594bd76637d2d90',1,'AsciiData']]],
   ['countingdecorator',['CountingDecorator',['../struct_counting_decorator.html',1,'CountingDecorator&lt; T &gt;'],['../struct_counting_decorator.html#a86505de3b2c8edc75e644b1b4bbee0c7',1,'CountingDecorator::CountingDecorator()']]],
-  ['countoccurence',['countOccurence',['../class_chimera_t_k_1_1_utilities.html#a5bf0fb7a4de6e9fba9e6b36baa4bf531',1,'ChimeraTK::Utilities']]],
+  ['countoccurence',['countOccurence',['../namespace_chimera_t_k_1_1_utilities.html#a5bf0fb7a4de6e9fba9e6b36baa4bf531',1,'ChimeraTK::Utilities']]],
   ['crbegin',['crbegin',['../class_chimera_t_k_1_1_one_d_register_accessor.html#a8bab630db59235f8b6e54baebeb35748',1,'ChimeraTK::OneDRegisterAccessor']]],
   ['createasyncvariable',['createAsyncVariable',['../class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html#ab5e5983d3be57b8cedde01a699ff0ddd',1,'ChimeraTK::NumericAddressedInterruptDispatcher']]],
   ['createbackend',['createBackend',['../class_chimera_t_k_1_1_backend_factory.html#a240088c806406533d0aa975b7bf61b05',1,'ChimeraTK::BackendFactory']]],
@@ -115,5 +115,6 @@ var searchData=
   ['parserutilities',['parserUtilities',['../namespace_chimera_t_k_1_1parser_utilities.html',1,'ChimeraTK']]],
   ['proxies',['proxies',['../namespace_chimera_t_k_1_1proxies.html',1,'ChimeraTK']]],
   ['rebot',['Rebot',['../namespace_chimera_t_k_1_1_rebot.html',1,'ChimeraTK']]],
-  ['testable_5frebot_5fsleep',['testable_rebot_sleep',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html',1,'ChimeraTK']]]
+  ['testable_5frebot_5fsleep',['testable_rebot_sleep',['../namespace_chimera_t_k_1_1testable__rebot__sleep.html',1,'ChimeraTK']]],
+  ['utilities',['Utilities',['../namespace_chimera_t_k_1_1_utilities.html',1,'ChimeraTK']]]
 ];
