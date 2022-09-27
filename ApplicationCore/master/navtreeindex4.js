@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"class_demo_dummy_1_1_backend_registerer.html#a391f85ddf7bd166b744baa5e2eb9ec78":[18,0,19,0,0],
+"class_test_transfer_group_dummy.html":[18,0,119],
 "class_test_transfer_group_dummy.html#a4410f3a0f799f80c0f698cfd6e2e7406":[18,0,119,2],
 "class_test_transfer_group_dummy.html#a4d4ab59e77dfd650c5975e3a75e9dea0":[18,0,119,5],
 "class_test_transfer_group_dummy.html#a65d178261d66d110e8f0f8788fd3f642":[18,0,119,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "globals_vars.html":[19,1,2],
 "hierarchy.html":[18,2],
 "historydoc.html":[3],
-"historydoc.html#historyintro":[3,0],
-"index.html":[],
-"loggingdoc.html":[2]
+"historydoc.html#historyintro":[3,0]
 };

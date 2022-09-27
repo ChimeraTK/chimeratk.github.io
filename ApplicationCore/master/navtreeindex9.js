@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"struct_polling_test_application.html#a18aa44b3ec4c590d599cdf554f33e31f":[18,0,52,0],
+"struct_polling_test_application.html#a31b0e9591988e70a605c79e452c4867b":[18,0,52,2],
 "struct_polling_test_application.html#a65714910a770475b7d835a33087c5829":[18,0,52,1],
 "struct_polling_test_application.html#a94fb8410d66cd609e986a389f98b9ce2":[18,0,52,3],
 "struct_polling_test_application.html#aa8a12ed184d33c00bcebd5913690db83":[18,0,52,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "struct_test7_dummy_application.html#a4dbd6b7c108bcf8d0b246c7a3a738705":[18,0,83,3],
 "struct_test7_dummy_application.html#a571be3a118e912e454c247916cdd443a":[18,0,83,5],
 "struct_test7_dummy_application.html#adf2fb03f44e89c8ae72be08206c524c3":[18,0,83,1],
-"struct_test7_dummy_application.html#af636e7cfaadf4de96322ecbaabdff063":[18,0,83,4],
-"struct_test7_dummy_application.html#af7682961c8d2ac957d76344744490f1b":[18,0,83,2],
-"struct_test_app.html":[18,0,84]
+"struct_test7_dummy_application.html#af636e7cfaadf4de96322ecbaabdff063":[18,0,83,4]
 };
