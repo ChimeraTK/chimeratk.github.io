@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['a',['A',['../struct_test_app_1_1_a.html',1,'TestApp::A'],['../struct_test_group_1_1_a.html',1,'TestGroup::A']]],
+  ['a',['A',['../struct_test_app_1_1_a.html',1,'TestApp']]],
   ['aa',['AA',['../struct_a_a.html',1,'']]],
   ['accessor',['Accessor',['../class_chimera_t_k_1_1_accessor.html',1,'ChimeraTK']]],
-  ['accessorattacher',['AccessorAttacher',['../struct_chimera_t_k_1_1history_1_1_accessor_attacher.html',1,'ChimeraTK::history']]],
   ['anothergroup',['AnotherGroup',['../struct_test_module_1_1_another_group.html',1,'TestModule&lt; T &gt;::AnotherGroup'],['../struct_vector_module_1_1_another_group.html',1,'VectorModule::AnotherGroup']]],
   ['anotherpolltestapplication',['AnotherPollTestApplication',['../struct_another_poll_test_application.html',1,'']]],
   ['anothersubmodule',['AnotherSubModule',['../struct_test_module_1_1_module2_1_1_another_sub_module.html',1,'TestModule::Module2']]],
@@ -22,7 +21,6 @@ var searchData=
   ['arrayaccessor_3c_20t_20_3e',['ArrayAccessor&lt; T &gt;',['../class_chimera_t_k_1_1_array_accessor.html',1,'ChimeraTK']]],
   ['arrayaccessor_3c_20type_20_3e',['ArrayAccessor&lt; Type &gt;',['../class_chimera_t_k_1_1_array_accessor.html',1,'ChimeraTK::ArrayAccessor&lt; Type &gt;'],['../class_chimera_t_k_1_1_array_accessor.html',1,'ChimeraTK::ArrayAccessor&lt; TYPE &gt;']]],
   ['arrayaccessor_3c_20uint16_5ft_20_3e',['ArrayAccessor&lt; uint16_t &gt;',['../class_chimera_t_k_1_1_array_accessor.html',1,'ChimeraTK']]],
-  ['arrayaccessor_3c_20uint64_5ft_20_3e',['ArrayAccessor&lt; uint64_t &gt;',['../class_chimera_t_k_1_1_array_accessor.html',1,'ChimeraTK']]],
   ['arrayfunctorfill',['ArrayFunctorFill',['../struct_chimera_t_k_1_1_array_functor_fill.html',1,'ChimeraTK']]],
   ['arrayoutput',['ArrayOutput',['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK']]],
   ['arrayoutput_3c_20double_20_3e',['ArrayOutput&lt; double &gt;',['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK']]],
@@ -32,7 +30,6 @@ var searchData=
   ['arrayoutput_3c_20t_20_3e',['ArrayOutput&lt; T &gt;',['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK']]],
   ['arrayoutput_3c_20type_20_3e',['ArrayOutput&lt; Type &gt;',['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK::ArrayOutput&lt; Type &gt;'],['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK::ArrayOutput&lt; TYPE &gt;']]],
   ['arrayoutput_3c_20uint16_5ft_20_3e',['ArrayOutput&lt; uint16_t &gt;',['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK']]],
-  ['arrayoutput_3c_20uint64_5ft_20_3e',['ArrayOutput&lt; uint64_t &gt;',['../struct_chimera_t_k_1_1_array_output.html',1,'ChimeraTK']]],
   ['arrayoutputrb',['ArrayOutputRB',['../struct_chimera_t_k_1_1_array_output_r_b.html',1,'ChimeraTK']]],
   ['arraypipe',['ArrayPipe',['../struct_chimera_t_k_1_1_array_pipe.html',1,'ChimeraTK']]],
   ['arraypollinput',['ArrayPollInput',['../struct_chimera_t_k_1_1_array_poll_input.html',1,'ChimeraTK']]],

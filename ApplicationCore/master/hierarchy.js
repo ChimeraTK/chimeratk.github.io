@@ -1,7 +1,6 @@
 var hierarchy =
 [
     [ "ChimeraTK::Accessor< UserType >", "class_chimera_t_k_1_1_accessor.html", null ],
-    [ "ChimeraTK::history::AccessorAttacher", "struct_chimera_t_k_1_1history_1_1_accessor_attacher.html", null ],
     [ "ChimeraTK::AnyType", "class_chimera_t_k_1_1_any_type.html", null ],
     [ "Application", null, [
       [ "TestApp", "struct_test_app.html", null ],
@@ -22,7 +21,6 @@ var hierarchy =
         [ "ExampleApp", "struct_example_app.html", null ],
         [ "ExampleApp", "struct_example_app.html", null ],
         [ "InitTestApplication", "struct_init_test_application.html", null ],
-        [ "MultipleModuleApp", "struct_multiple_module_app.html", null ],
         [ "OneModuleApp", "struct_one_module_app.html", null ],
         [ "PollDummyApplication", "struct_poll_dummy_application.html", null ],
         [ "PollingTestApplication< T >", "struct_polling_test_application.html", null ],
@@ -41,10 +39,6 @@ var hierarchy =
         [ "TestApp", "struct_test_app.html", null ],
         [ "TestApp", "struct_test_app.html", null ],
         [ "TestApp", "struct_test_app.html", null ],
-        [ "testApp< UserType >", "structtest_app.html", null ],
-        [ "testApp< UserType >", "structtest_app.html", null ],
-        [ "testAppArray< UserType >", "structtest_app_array.html", null ],
-        [ "testAppDev", "structtest_app_dev.html", null ],
         [ "TestApplication< T >", "struct_test_application.html", null ],
         [ "TestApplication< T >", "struct_test_application.html", null ],
         [ "TestApplication< T >", "struct_test_application.html", null ],
@@ -141,7 +135,6 @@ var hierarchy =
             [ "ChimeraTK::ConstMultiplier< InputType, OutputType, NELEMS >", "struct_chimera_t_k_1_1_const_multiplier.html", null ],
             [ "ChimeraTK::DataLossCounter< TRIGGERTYPE >", "struct_chimera_t_k_1_1_data_loss_counter.html", null ],
             [ "ChimeraTK::Divider< InputType, OutputType, NELEMS >", "struct_chimera_t_k_1_1_divider.html", null ],
-            [ "ChimeraTK::history::ServerHistory", "class_chimera_t_k_1_1history_1_1_server_history.html", null ],
             [ "ChimeraTK::InvalidityTracer", "struct_chimera_t_k_1_1_invalidity_tracer.html", null ],
             [ "ChimeraTK::LimitValueModuleBase< UserType >", "struct_chimera_t_k_1_1_limit_value_module_base.html", [
               [ "ChimeraTK::FixedLimitValue< UserType, min, max >", "struct_chimera_t_k_1_1_fixed_limit_value.html", null ],
@@ -172,10 +165,6 @@ var hierarchy =
             [ "Deeper< T >", "struct_deeper.html", null ],
             [ "Deeper2< T >::Hierarchies", "struct_deeper2_1_1_hierarchies.html", null ],
             [ "Deeper< int >", "struct_deeper.html", null ],
-            [ "Dummy< UserType >", "struct_dummy.html", null ],
-            [ "DummyArray< UserType >", "struct_dummy_array.html", null ],
-            [ "DummyArray< int >", "struct_dummy_array.html", null ],
-            [ "DummyModule", "struct_dummy_module.html", null ],
             [ "FirstHierarchy::SecondModule", "struct_first_hierarchy_1_1_second_module.html", null ],
             [ "FirstHierarchy::SecondModule", "struct_first_hierarchy_1_1_second_module.html", null ],
             [ "FirstHierarchy::TestModule", "struct_first_hierarchy_1_1_test_module.html", null ],
@@ -183,7 +172,6 @@ var hierarchy =
             [ "InputModule< INPUT_TYPE >", "struct_input_module.html", null ],
             [ "InputModule< ChimeraTK::ScalarPollInput< int > >", "struct_input_module.html", null ],
             [ "InputModule< ChimeraTK::ScalarPushInput< int > >", "struct_input_module.html", null ],
-            [ "logging::LoggingModule", "classlogging_1_1_logging_module.html", null ],
             [ "Module1", "struct_module1.html", null ],
             [ "Module2", "struct_module2.html", null ],
             [ "Module3", "struct_module3.html", null ],
@@ -280,9 +268,6 @@ var hierarchy =
             [ "TestApplication< T >::OuterGroup::InnerGroup", "struct_test_application_1_1_outer_group_1_1_inner_group.html", null ],
             [ "TestApplication_empty::TestModuleGroup", "struct_test_application__empty_1_1_test_module_group.html", null ],
             [ "TestApplicationTags::OuterGroup", "struct_test_application_tags_1_1_outer_group.html", null ],
-            [ "TestGroup", "struct_test_group.html", null ],
-            [ "TestGroup::A", "struct_test_group_1_1_a.html", null ],
-            [ "TestGroup::B", "struct_test_group_1_1_b.html", null ],
             [ "VectorModuleGroup", "struct_vector_module_group.html", null ]
           ] ],
           [ "ChimeraTK::VariableGroup", "class_chimera_t_k_1_1_variable_group.html", [
@@ -293,7 +278,6 @@ var hierarchy =
               [ "ChimeraTK::DataLossCounter< TRIGGERTYPE >::TriggerGroup", "struct_chimera_t_k_1_1_data_loss_counter_1_1_trigger_group.html", null ],
               [ "ChimeraTK::ModifyHierarchy< ACCESSOR >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
               [ "ChimeraTK::StatusWithMessage", "struct_chimera_t_k_1_1_status_with_message.html", null ],
-              [ "logging::LoggingModule::MessageSource::Data", "structlogging_1_1_logging_module_1_1_message_source_1_1_data.html", null ],
               [ "ChimeraTK::ModifyHierarchy< ChimeraTK::ScalarOutput< int > >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
               [ "ChimeraTK::ModifyHierarchy< ChimeraTK::ScalarOutput< std::string > >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
               [ "ChimeraTK::ModifyHierarchy< ChimeraTK::ScalarOutput< uint64_t > >", "struct_chimera_t_k_1_1_modify_hierarchy.html", null ],
@@ -316,7 +300,6 @@ var hierarchy =
             [ "FirstHierarchy::TestModule::MoveToRoot", "struct_first_hierarchy_1_1_test_module_1_1_move_to_root.html", null ],
             [ "FirstHierarchy::TestModule::VarGroup", "struct_first_hierarchy_1_1_test_module_1_1_var_group.html", null ],
             [ "FirstHierarchy::TestModule::VarGroup", "struct_first_hierarchy_1_1_test_module_1_1_var_group.html", null ],
-            [ "logging::Logger", "classlogging_1_1_logger.html", null ],
             [ "ReadAnyTestModule< T >::Inputs", "struct_read_any_test_module_1_1_inputs.html", null ],
             [ "ReaderModule::Reg2", "struct_reader_module_1_1_reg2.html", null ],
             [ "SecondHierarchy::SecondModule::ExtraGroup", "struct_second_hierarchy_1_1_second_module_1_1_extra_group.html", null ],
@@ -356,7 +339,6 @@ var hierarchy =
     [ "ChimeraTK::FunctorGetTypeForName", "struct_chimera_t_k_1_1_functor_get_type_for_name.html", null ],
     [ "ChimeraTK::FunctorSetValues", "struct_chimera_t_k_1_1_functor_set_values.html", null ],
     [ "ChimeraTK::FunctorSetValuesArray", "struct_chimera_t_k_1_1_functor_set_values_array.html", null ],
-    [ "ChimeraTK::history::HistoryEntry< UserType >", "struct_chimera_t_k_1_1history_1_1_history_entry.html", null ],
     [ "ChimeraTK::InversionOfControlAccessor< Derived >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
       [ "ChimeraTK::ScalarAccessor< UserType >", "class_chimera_t_k_1_1_scalar_accessor.html", [
         [ "ChimeraTK::ScalarOutput< UserType >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
@@ -411,27 +393,22 @@ var hierarchy =
         [ "ChimeraTK::ArrayPushInput< T >", "struct_chimera_t_k_1_1_array_push_input.html", null ]
       ] ]
     ] ],
-    [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< TYPE > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
-      [ "ChimeraTK::ArrayAccessor< TYPE >", "class_chimera_t_k_1_1_array_accessor.html", [
-        [ "ChimeraTK::ArrayOutput< TYPE >", "struct_chimera_t_k_1_1_array_output.html", null ],
-        [ "ChimeraTK::ArrayPushInput< TYPE >", "struct_chimera_t_k_1_1_array_push_input.html", null ]
-      ] ]
-    ] ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< Type > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
       [ "ChimeraTK::ArrayAccessor< Type >", "class_chimera_t_k_1_1_array_accessor.html", [
         [ "ChimeraTK::ArrayOutput< Type >", "struct_chimera_t_k_1_1_array_output.html", null ],
         [ "ChimeraTK::ArrayPushInput< Type >", "struct_chimera_t_k_1_1_array_push_input.html", null ]
       ] ]
     ] ],
+    [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< TYPE > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
+      [ "ChimeraTK::ArrayAccessor< TYPE >", "class_chimera_t_k_1_1_array_accessor.html", [
+        [ "ChimeraTK::ArrayOutput< TYPE >", "struct_chimera_t_k_1_1_array_output.html", null ],
+        [ "ChimeraTK::ArrayPushInput< TYPE >", "struct_chimera_t_k_1_1_array_push_input.html", null ]
+      ] ]
+    ] ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< uint16_t > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
       [ "ChimeraTK::ArrayAccessor< uint16_t >", "class_chimera_t_k_1_1_array_accessor.html", [
         [ "ChimeraTK::ArrayOutput< uint16_t >", "struct_chimera_t_k_1_1_array_output.html", null ],
         [ "ChimeraTK::ArrayPushInput< uint16_t >", "struct_chimera_t_k_1_1_array_push_input.html", null ]
-      ] ]
-    ] ],
-    [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< uint64_t > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
-      [ "ChimeraTK::ArrayAccessor< uint64_t >", "class_chimera_t_k_1_1_array_accessor.html", [
-        [ "ChimeraTK::ArrayOutput< uint64_t >", "struct_chimera_t_k_1_1_array_output.html", null ]
       ] ]
     ] ],
     [ "ChimeraTK::InversionOfControlAccessor< ArrayAccessor< UserType > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
@@ -510,7 +487,6 @@ var hierarchy =
     [ "ChimeraTK::InversionOfControlAccessor< ScalarAccessor< std::string > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
       [ "ChimeraTK::ScalarAccessor< std::string >", "class_chimera_t_k_1_1_scalar_accessor.html", [
         [ "ChimeraTK::ScalarOutput< std::string >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
-        [ "ChimeraTK::ScalarPollInput< std::string >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ],
         [ "ChimeraTK::ScalarPushInput< std::string >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ]
       ] ]
     ] ],
@@ -530,11 +506,6 @@ var hierarchy =
       [ "ChimeraTK::ScalarAccessor< Type >", "class_chimera_t_k_1_1_scalar_accessor.html", [
         [ "ChimeraTK::ScalarOutput< Type >", "struct_chimera_t_k_1_1_scalar_output.html", null ],
         [ "ChimeraTK::ScalarPushInput< Type >", "struct_chimera_t_k_1_1_scalar_push_input.html", null ]
-      ] ]
-    ] ],
-    [ "ChimeraTK::InversionOfControlAccessor< ScalarAccessor< uint > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
-      [ "ChimeraTK::ScalarAccessor< uint >", "class_chimera_t_k_1_1_scalar_accessor.html", [
-        [ "ChimeraTK::ScalarPollInput< uint >", "struct_chimera_t_k_1_1_scalar_poll_input.html", null ]
       ] ]
     ] ],
     [ "ChimeraTK::InversionOfControlAccessor< ScalarAccessor< uint16_t > >", "class_chimera_t_k_1_1_inversion_of_control_accessor.html", [
@@ -595,7 +566,6 @@ var hierarchy =
       [ "ChimeraTK::ArrayAccessor< TYPE >", "class_chimera_t_k_1_1_array_accessor.html", null ],
       [ "ChimeraTK::ArrayAccessor< Type >", "class_chimera_t_k_1_1_array_accessor.html", null ],
       [ "ChimeraTK::ArrayAccessor< uint16_t >", "class_chimera_t_k_1_1_array_accessor.html", null ],
-      [ "ChimeraTK::ArrayAccessor< uint64_t >", "class_chimera_t_k_1_1_array_accessor.html", null ],
       [ "ChimeraTK::ArrayAccessor< UserType >", "class_chimera_t_k_1_1_array_accessor.html", null ]
     ] ],
     [ "ChimeraTK::PushableStream", "class_chimera_t_k_1_1_pushable_stream.html", [
@@ -620,7 +590,6 @@ var hierarchy =
       [ "ChimeraTK::ScalarAccessor< T >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
       [ "ChimeraTK::ScalarAccessor< TRIGGERTYPE >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
       [ "ChimeraTK::ScalarAccessor< Type >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
-      [ "ChimeraTK::ScalarAccessor< uint >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
       [ "ChimeraTK::ScalarAccessor< uint16_t >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
       [ "ChimeraTK::ScalarAccessor< uint32_t >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
       [ "ChimeraTK::ScalarAccessor< uint64_t >", "class_chimera_t_k_1_1_scalar_accessor.html", null ],
@@ -650,7 +619,6 @@ var hierarchy =
     [ "ChimeraTK::Application::TestsStalled", "class_chimera_t_k_1_1_application_1_1_tests_stalled.html", null ],
     [ "TriggerFanOutInitialValueEceptionDummy", "struct_trigger_fan_out_initial_value_eception_dummy.html", null ],
     [ "ChimeraTK::Application::TypedMakeConnectionCaller", "struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html", null ],
-    [ "ChimeraTK::history::Update", "struct_chimera_t_k_1_1history_1_1_update.html", null ],
     [ "ChimeraTK::UserInputValidator", "struct_chimera_t_k_1_1_user_input_validator.html", null ],
     [ "ChimeraTK::UserInputValidator::Validator", "struct_chimera_t_k_1_1_user_input_validator_1_1_validator.html", null ],
     [ "ChimeraTK::ConfigReader::Var< T >", "struct_chimera_t_k_1_1_config_reader_1_1_var.html", null ],

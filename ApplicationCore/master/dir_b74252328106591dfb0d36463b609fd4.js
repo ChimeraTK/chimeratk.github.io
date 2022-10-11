@@ -24,7 +24,6 @@ var dir_b74252328106591dfb0d36463b609fd4 =
       [ "LimitValue", "struct_chimera_t_k_1_1_limit_value.html", "struct_chimera_t_k_1_1_limit_value" ],
       [ "FixedLimitValue", "struct_chimera_t_k_1_1_fixed_limit_value.html", "struct_chimera_t_k_1_1_fixed_limit_value" ]
     ] ],
-    [ "Logging.h", "_logging_8h.html", "_logging_8h" ],
     [ "Multiplier.h", "_multiplier_8h.html", [
       [ "ConstMultiplier", "struct_chimera_t_k_1_1_const_multiplier.html", "struct_chimera_t_k_1_1_const_multiplier" ],
       [ "Multiplier", "struct_chimera_t_k_1_1_multiplier.html", "struct_chimera_t_k_1_1_multiplier" ],
@@ -39,10 +38,6 @@ var dir_b74252328106591dfb0d36463b609fd4 =
     ] ],
     [ "ScriptedInitialisationHandler.h", "_scripted_initialisation_handler_8h.html", [
       [ "ScriptedInitHandler", "struct_chimera_t_k_1_1_scripted_init_handler.html", "struct_chimera_t_k_1_1_scripted_init_handler" ]
-    ] ],
-    [ "ServerHistory.h", "_server_history_8h.html", [
-      [ "HistoryEntry", "struct_chimera_t_k_1_1history_1_1_history_entry.html", "struct_chimera_t_k_1_1history_1_1_history_entry" ],
-      [ "ServerHistory", "class_chimera_t_k_1_1history_1_1_server_history.html", "class_chimera_t_k_1_1history_1_1_server_history" ]
     ] ],
     [ "SplitArray.h", "_split_array_8h.html", [
       [ "WriteSplitArrayModule", "struct_chimera_t_k_1_1_write_split_array_module.html", "struct_chimera_t_k_1_1_write_split_array_module" ],

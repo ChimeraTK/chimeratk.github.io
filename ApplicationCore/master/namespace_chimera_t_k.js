@@ -1,6 +1,5 @@
 var namespace_chimera_t_k =
 [
-    [ "history", "namespace_chimera_t_k_1_1history.html", "namespace_chimera_t_k_1_1history" ],
     [ "Accessor", "class_chimera_t_k_1_1_accessor.html", null ],
     [ "AnyType", "class_chimera_t_k_1_1_any_type.html", null ],
     [ "Application", "class_chimera_t_k_1_1_application.html", "class_chimera_t_k_1_1_application" ],

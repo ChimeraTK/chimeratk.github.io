@@ -6,7 +6,6 @@ var searchData=
   ['waswritten',['wasWritten',['../struct_chimera_t_k_1_1_recovery_helper.html#acb690e93ebfcb0bc7d49b4ea16344637',1,'ChimeraTK::RecoveryHelper']]],
   ['watch',['watch',['../struct_chimera_t_k_1_1_max_monitor.html#ad30115610371c33cc7c0807a41e1024d',1,'ChimeraTK::MaxMonitor::watch()'],['../struct_chimera_t_k_1_1_min_monitor.html#a778515fe2366efe0a72c359168615ff5',1,'ChimeraTK::MinMonitor::watch()'],['../struct_chimera_t_k_1_1_range_monitor.html#a9d59f88a26d42272547460bbb0e9c60f',1,'ChimeraTK::RangeMonitor::watch()'],['../struct_chimera_t_k_1_1_exact_monitor.html#a3692fec09a8506d56b98b47a8442ab67',1,'ChimeraTK::ExactMonitor::watch()']]],
   ['withreturn',['withReturn',['../struct_chimera_t_k_1_1_variable_direction.html#a7c93d9b94dea8bb79d01bbe612bfbb29',1,'ChimeraTK::VariableDirection']]],
-  ['withtimestamps',['withTimeStamps',['../struct_chimera_t_k_1_1history_1_1_history_entry.html#a2586c936907273a4197efd97513adb9a',1,'ChimeraTK::history::HistoryEntry']]],
   ['writeorder',['writeOrder',['../struct_chimera_t_k_1_1_recovery_helper.html#a02f305373033ff9001e294b6fe15c1bd',1,'ChimeraTK::RecoveryHelper']]],
   ['writeordercounter',['writeOrderCounter',['../class_chimera_t_k_1_1_device_module.html#a440035910769441b57ca570470c17bc6',1,'ChimeraTK::DeviceModule']]],
   ['writeregisterpaths',['writeRegisterPaths',['../class_chimera_t_k_1_1_device_module.html#ac53accff2cf3cf7a9aa053c42d7da80d',1,'ChimeraTK::DeviceModule']]],

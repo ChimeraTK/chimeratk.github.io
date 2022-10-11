@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['technical_20specification_3a_20data_20validity_20propagation_20specification_20version_20v1_2e0',['Technical specification: data validity propagation Specification version V1.0',['../spec_data_validity_propagation.html',1,'index']]],
-  ['technical_20specification_3a_20exception_20handling_20for_20device_20runtime_20errors_20v1_2e0',['Technical specification: Exception handling for device runtime errors V1.0',['../spec_execption_handling.html',1,'index']]],
-  ['technical_20specification_3a_20propagation_20of_20initial_20values_20v1_2e0',['Technical specification: Propagation of initial values V1.0',['../spec_initial_value_propagation.html',1,'index']]],
-  ['technical_20specification_3a_20statusaggregator',['Technical specification: StatusAggregator',['../spec__status_aggregator.html',1,'index']]],
-  ['todo_20list',['Todo List',['../todo.html',1,'']]]
+  ['what_27s_20new_20in_20applicationcore_202_2e0',['What&apos;s new in ApplicationCore 2.0',['../whats_new__a_c_2_0.html',1,'']]]
 ];
