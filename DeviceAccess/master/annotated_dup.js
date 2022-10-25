@@ -3,9 +3,7 @@ var annotated_dup =
     [ "accessPrivateData", "namespaceaccess_private_data.html", "namespaceaccess_private_data" ],
     [ "ChimeraTK", "namespace_chimera_t_k.html", "namespace_chimera_t_k" ],
     [ "std", null, [
-      [ "hash", "structstd_1_1hash.html", null ],
       [ "hash< ChimeraTK::TransferElementID >", "structstd_1_1hash_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", "structstd_1_1hash_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4" ],
-      [ "less", "structstd_1_1less.html", null ],
       [ "less< ChimeraTK::TransferElementID >", "structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4.html", "structstd_1_1less_3_01_chimera_t_k_1_1_transfer_element_i_d_01_4" ]
     ] ],
     [ "_pcieuni_ioctl_bar_sizes", "struct__pcieuni__ioctl__bar__sizes.html", "struct__pcieuni__ioctl__bar__sizes" ],
