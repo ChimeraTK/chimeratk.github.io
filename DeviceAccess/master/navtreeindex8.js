@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"class_chimera_t_k_1_1_transfer_group.html#a05659fcb52954854fa82ab159de23579":[20,0,1,115,11],
+"class_chimera_t_k_1_1_transfer_group.html#a105197b54833784c119bc3f445ae8a91":[20,0,1,115,0],
 "class_chimera_t_k_1_1_transfer_group.html#a13f0ae7ce386f0f34b9ea9db867efbf4":[20,0,1,115,1],
 "class_chimera_t_k_1_1_transfer_group.html#a1f5b15a27a3bbb3ac150969dee69b0ff":[20,0,1,115,14],
 "class_chimera_t_k_1_1_transfer_group.html#a2f09459b907856e46cd595e0bed49f6c":[20,0,1,115,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "class_device_info_map_test.html#ab0596c3badaf29c509db5ae4d06e01ec":[20,0,25,0],
 "class_device_info_map_test.html#abfad2d17a9e87ec0a0e9fbce9808817b":[20,0,25,5],
 "class_device_info_map_test_suite.html":[20,0,26],
-"class_device_info_map_test_suite.html#a89be45b690a81f2b3fa1dfd5ec54c4ca":[20,0,26,0],
-"class_dummy_register_test.html":[20,0,31],
-"class_dummy_register_test.html#a24c9f97460af41a2295f512e1df1b7f2":[20,0,31,1]
+"class_device_info_map_test_suite.html#a89be45b690a81f2b3fa1dfd5ec54c4ca":[20,0,26,0]
 };

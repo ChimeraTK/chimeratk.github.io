@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"class_chimera_t_k_1_1_exception_dummy.html#a334e11b3f65149fb8c4049017961dd64":[20,0,1,44,11],
 "class_chimera_t_k_1_1_exception_dummy.html#a3b9d8307fb2ba845e1ac817952ad70a0":[20,0,1,44,5],
 "class_chimera_t_k_1_1_exception_dummy.html#a58c3f67cedde1d1ce738943d48065606":[20,0,1,44,12],
 "class_chimera_t_k_1_1_exception_dummy.html#a7be932c74d4162f56bdd4f81db19b7eb":[20,0,1,44,10],
@@ -29,10 +30,10 @@ var NAVTREEINDEX4 =
 "class_chimera_t_k_1_1_fixed_point_converter.html#a4e19e966fa42b8e3b250299ad423b110":[20,0,1,51,3],
 "class_chimera_t_k_1_1_fixed_point_converter.html#a5016ab22288746437b63d087926fcec2":[20,0,1,51,10],
 "class_chimera_t_k_1_1_fixed_point_converter.html#a5e5cfd62ab0319d60ef1f90abe41fa57":[20,0,1,51,9],
-"class_chimera_t_k_1_1_fixed_point_converter.html#a617008796d4d49974a7c85e84b9800a3":[20,0,1,51,15],
 "class_chimera_t_k_1_1_fixed_point_converter.html#a617008796d4d49974a7c85e84b9800a3":[20,0,1,51,13],
-"class_chimera_t_k_1_1_fixed_point_converter.html#a830c56e254ff5b136cbb068562e6bf8b":[20,0,1,51,12],
+"class_chimera_t_k_1_1_fixed_point_converter.html#a617008796d4d49974a7c85e84b9800a3":[20,0,1,51,15],
 "class_chimera_t_k_1_1_fixed_point_converter.html#a830c56e254ff5b136cbb068562e6bf8b":[20,0,1,51,14],
+"class_chimera_t_k_1_1_fixed_point_converter.html#a830c56e254ff5b136cbb068562e6bf8b":[20,0,1,51,12],
 "class_chimera_t_k_1_1_fixed_point_converter.html#a841c00be723f5977877526c4fc9598f4":[20,0,1,51,6],
 "class_chimera_t_k_1_1_fixed_point_converter.html#a89b8ea5d4ed1d331c71c35abc17c0e4c":[20,0,1,51,4],
 "class_chimera_t_k_1_1_fixed_point_converter.html#a9cc7507424b4de95d07ca76c0560f27d":[20,0,1,51,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "class_chimera_t_k_1_1_logical_name_map_parser.html#a9dc96a4df7af6eaae89c2998e76fb037":[20,0,1,64,1],
 "class_chimera_t_k_1_1_logical_name_map_parser.html#aa18b1c4ea03dbcdaed15d4553ec51de6":[20,0,1,64,2],
 "class_chimera_t_k_1_1_logical_name_map_parser.html#aa78697767ef64de32bf29812aa77afc3":[20,0,1,64,3],
-"class_chimera_t_k_1_1_logical_name_map_parser.html#aad287205504c89a1d6047f87d7cfd8d6":[20,0,1,64,10],
-"class_chimera_t_k_1_1_logical_name_map_parser.html#ab77f9b049edc5f2c4dd465a2b3c6ba62":[20,0,1,64,8]
+"class_chimera_t_k_1_1_logical_name_map_parser.html#aad287205504c89a1d6047f87d7cfd8d6":[20,0,1,64,10]
 };

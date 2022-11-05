@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_numeric_addresse
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -107,7 +108,7 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_numeric_addresse
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher__coll__graph.svg" width="100%" height="586"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -141,10 +142,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa79195db1c3c5d3433fa74c316f4ecc8 inherit pub_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivate all subscribers without throwing an exception.  <a href="class_chimera_t_k_1_1_async_accessor_manager.html#aa79195db1c3c5d3433fa74c316f4ecc8">More...</a><br /></td></tr>
 <tr class="separator:aa79195db1c3c5d3433fa74c316f4ecc8 inherit pub_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a319cf0bb33bf48112dd3f738507cd5f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html#a319cf0bb33bf48112dd3f738507cd5f5">asyncVariableMapChanged</a> () override</td></tr>
+<tr class="memdesc:a319cf0bb33bf48112dd3f738507cd5f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">this virtual function lets derived classes react on subscribe / unsubscribe _variablesMutex locked during call  <a href="#a319cf0bb33bf48112dd3f738507cd5f5">More...</a><br /></td></tr>
+<tr class="separator:a319cf0bb33bf48112dd3f738507cd5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_chimera_t_k_1_1_async_accessor_manager"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_chimera_t_k_1_1_async_accessor_manager')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html">ChimeraTK::AsyncAccessorManager</a></td></tr>
+<tr class="memitem:a82ebd2f1226080e2eadfc7793d9b8830 inherit pro_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#a82ebd2f1226080e2eadfc7793d9b8830">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a> (createAsyncVariable, std::unique_ptr&lt; <a class="el" href="struct_chimera_t_k_1_1_async_variable.html">AsyncVariable</a> &gt;(boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;, <a class="el" href="struct_chimera_t_k_1_1_accessor_instance_descriptor.html">AccessorInstanceDescriptor</a> const &amp;, bool isActive))</td></tr>
+<tr class="separator:a82ebd2f1226080e2eadfc7793d9b8830 inherit pro_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ab4d414bf07aefaff7101e861338e6202"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html">TransferGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html#ab4d414bf07aefaff7101e861338e6202">_transferGroup</a></td></tr>
-<tr class="separator:ab4d414bf07aefaff7101e861338e6202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971b3320761f4f1d7054aa4c71bcc4cf"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_transfer_group.html">TransferGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html#a971b3320761f4f1d7054aa4c71bcc4cf">_transferGroup</a> {new <a class="el" href="class_chimera_t_k_1_1_transfer_group.html">TransferGroup</a>}</td></tr>
+<tr class="separator:a971b3320761f4f1d7054aa4c71bcc4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_chimera_t_k_1_1_async_accessor_manager"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_chimera_t_k_1_1_async_accessor_manager')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html">ChimeraTK::AsyncAccessorManager</a></td></tr>
 <tr class="memitem:a2e26841ed7ab578b341b6387dd2bb621 inherit pro_attribs_class_chimera_t_k_1_1_async_accessor_manager"><td class="memItemLeft" align="right" valign="top">std::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#a2e26841ed7ab578b341b6387dd2bb621">_variablesMutex</a></td></tr>
 <tr class="separator:a2e26841ed7ab578b341b6387dd2bb621 inherit pro_attribs_class_chimera_t_k_1_1_async_accessor_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,12 +164,6 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a1322f60b034e188949591b3d10512ea4 inherit pro_attribs_class_chimera_t_k_1_1_async_accessor_manager"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#a1322f60b034e188949591b3d10512ea4">_isActive</a> {false}</td></tr>
 <tr class="memdesc:a1322f60b034e188949591b3d10512ea4 inherit pro_attribs_class_chimera_t_k_1_1_async_accessor_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">protected by _variablesMutex  <a href="class_chimera_t_k_1_1_async_accessor_manager.html#a1322f60b034e188949591b3d10512ea4">More...</a><br /></td></tr>
 <tr class="separator:a1322f60b034e188949591b3d10512ea4 inherit pro_attribs_class_chimera_t_k_1_1_async_accessor_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_class_chimera_t_k_1_1_async_accessor_manager"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_chimera_t_k_1_1_async_accessor_manager')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html">ChimeraTK::AsyncAccessorManager</a></td></tr>
-<tr class="memitem:a82ebd2f1226080e2eadfc7793d9b8830 inherit pro_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#a82ebd2f1226080e2eadfc7793d9b8830">DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE</a> (createAsyncVariable, std::unique_ptr&lt; <a class="el" href="struct_chimera_t_k_1_1_async_variable.html">AsyncVariable</a> &gt;(boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_device_backend.html">DeviceBackend</a> &gt;, <a class="el" href="struct_chimera_t_k_1_1_accessor_instance_descriptor.html">AccessorInstanceDescriptor</a> const &amp;, bool isActive))</td></tr>
-<tr class="separator:a82ebd2f1226080e2eadfc7793d9b8830 inherit pro_methods_class_chimera_t_k_1_1_async_accessor_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html" title="The NumericAddressedInterruptDispatcher has two main functionalities: ">NumericAddressedInterruptDispatcher</a> has two main functionalities: </p>
@@ -228,14 +232,37 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#a82fdaaf8173f79c73dff28fd65e50ab7">ChimeraTK::AsyncAccessorManager</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8cc_source.html#l00037">37</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8cc_source.html">NumericAddressedInterruptDispatcher.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher_a8e7501f06cd9c78abee67cbffe165ab6_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+
 </div>
 </div>
+<a id="a319cf0bb33bf48112dd3f738507cd5f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a319cf0bb33bf48112dd3f738507cd5f5">&#9670;&nbsp;</a></span>asyncVariableMapChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::NumericAddressedInterruptDispatcher::asyncVariableMapChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>this virtual function lets derived classes react on subscribe / unsubscribe _variablesMutex locked during call </p>
+
+<p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#afd989f47c1bfc3df60fd4326822047c8">ChimeraTK::AsyncAccessorManager</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00049">49</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 
 </div>
 </div>
@@ -273,20 +300,20 @@ template&lt;typename UserType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00078">78</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00087">87</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher_ab5e5983d3be57b8cedde01a699ff0ddd_cgraph.svg" width="511" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher_ab5e5983d3be57b8cedde01a699ff0ddd_icgraph.svg" width="574" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -312,20 +339,12 @@ template&lt;typename UserType &gt; </div>
 <p>Creates a new <a class="el" href="class_chimera_t_k_1_1_version_number.html" title="Class for generating and holding version numbers without exposing a numeric representation. ">VersionNumber</a> and sends all data with this version. </p>
 
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8cc_source.html#l00013">13</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8cc_source.html">NumericAddressedInterruptDispatcher.cc</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher_a8bd176f8178d4799f9c592d1b5ee4b1d_cgraph.svg" width="100%" height="388"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab4d414bf07aefaff7101e861338e6202"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4d414bf07aefaff7101e861338e6202">&#9670;&nbsp;</a></span>_transferGroup</h2>
+<a id="a971b3320761f4f1d7054aa4c71bcc4cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a971b3320761f4f1d7054aa4c71bcc4cf">&#9670;&nbsp;</a></span>_transferGroup</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -334,7 +353,7 @@ template&lt;typename UserType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_transfer_group.html">TransferGroup</a> ChimeraTK::NumericAddressedInterruptDispatcher::_transferGroup</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_chimera_t_k_1_1_transfer_group.html">TransferGroup</a>&gt; ChimeraTK::NumericAddressedInterruptDispatcher::_transferGroup {new <a class="el" href="class_chimera_t_k_1_1_transfer_group.html">TransferGroup</a>}</td>
         </tr>
       </table>
   </td>
@@ -344,7 +363,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00049">49</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html#l00058">58</a> of file <a class="el" href="_numeric_addressed_interrupt_dispatcher_8h_source.html">NumericAddressedInterruptDispatcher.h</a>.</p>
 
 </div>
 </div>
@@ -358,7 +377,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html">NumericAddressedInterruptDispatcher</a></li>
-    <li class="footer">Generated on Wed Oct 26 2022 03:53:17 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Nov 5 2022 04:53:18 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

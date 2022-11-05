@@ -27,5 +27,6 @@ var searchData=
   ['asyncndregisteraccessor',['AsyncNDRegisterAccessor',['../class_chimera_t_k_1_1_async_n_d_register_accessor.html#a6d5142ce67e24b3ad64e76391d1e1057',1,'ChimeraTK::AsyncNDRegisterAccessor']]],
   ['asyncreadactivated',['asyncReadActivated',['../class_chimera_t_k_1_1_exception_dummy.html#afdaaa7b439df0b45045828438c29e50b',1,'ChimeraTK::ExceptionDummy']]],
   ['asynctestdummy',['AsyncTestDummy',['../class_async_test_dummy.html#a63702eaa288d6f09ca8eb470064f8e15',1,'AsyncTestDummy']]],
-  ['asyncvariableimpl',['AsyncVariableImpl',['../struct_chimera_t_k_1_1_async_variable_impl.html#a1055477f27ad0d34f7c4d7314f971473',1,'ChimeraTK::AsyncVariableImpl']]]
+  ['asyncvariableimpl',['AsyncVariableImpl',['../struct_chimera_t_k_1_1_async_variable_impl.html#a1055477f27ad0d34f7c4d7314f971473',1,'ChimeraTK::AsyncVariableImpl']]],
+  ['asyncvariablemapchanged',['asyncVariableMapChanged',['../class_chimera_t_k_1_1_async_accessor_manager.html#afd989f47c1bfc3df60fd4326822047c8',1,'ChimeraTK::AsyncAccessorManager::asyncVariableMapChanged()'],['../class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html#a319cf0bb33bf48112dd3f738507cd5f5',1,'ChimeraTK::NumericAddressedInterruptDispatcher::asyncVariableMapChanged()']]]
 ];

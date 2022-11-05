@@ -15,6 +15,7 @@ var NAVTREE =
     ] ],
     [ "Data Consistency Group", "data_consistency_group.html", null ],
     [ "Design: AsyncNDRegisterAccessor", "design__async_n_d_register_accessor__numeric_addressed.html", [
+      [ "Concept overview", "design__async_n_d_register_accessor__numeric_addressed.html#conceptOverview", null ],
       [ "The AsyncNDRegisterAccessor and the AsyncAccessorManager", "design__async_n_d_register_accessor__numeric_addressed.html#design_AsyncNDRegisterAccessor", [
         [ "Design decisions and implementation details", "design__async_n_d_register_accessor__numeric_addressed.html#AsyncNDRegisterAccessor_details", null ],
         [ "Interface for implementing backends", "design__async_n_d_register_accessor__numeric_addressed.html#AsyncNDRegisterAccessor_usage", null ]
@@ -113,21 +114,21 @@ var NAVTREEINDEX =
 ".html",
 "_numeric_addressed_backend_register_accessor_8h.html",
 "argument_parser_8cc.html#a4a88f44a22a5f0914a9ecf5723f8fa02",
-"class_chimera_t_k_1_1_data_type.html#a49e51238a71325a56b9da73a034ec2d6",
-"class_chimera_t_k_1_1_exception_dummy.html#a3b9d8307fb2ba845e1ac817952ad70a0",
-"class_chimera_t_k_1_1_logical_name_map_parser.html#abbdc8cc59333b17286c73b960e83e88a",
-"class_chimera_t_k_1_1_numeric_addressed_register_info.html#a42c10bdd34bf7f303b4a05c69c7fac5f",
-"class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html#a3393470c97529c75037e50dd50f3a7ba",
-"class_chimera_t_k_1_1_transfer_group.html#a13f0ae7ce386f0f34b9ea9db867efbf4",
-"class_dummy_register_test.html#a557da1a8b2223f1e4d6b133fbaea55a4",
-"functions_func_m.html",
-"shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2ead98a07f84921b24ee30f86fd8cd85c3c",
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html#a3a3e6339b8f1fb8e1b3577fb80587f12",
-"struct_integers__base.html#a3ab3b0918da8ce2f054b66add329efd3",
-"struct_reg_channel3.html#a2deccd8e20556ae067a9ea66ca16524f",
-"struct_short_raw__base.html#af58b6bc74067b6731283460893bccf98",
-"test_fixed_point_converter_8cpp.html#a9bc9c54b816c8400b914b4ba309341c2",
-"test_shared_dummy_backend_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1"
+"class_chimera_t_k_1_1_data_type.html#a40b59072a3ac3f6b49a88d1b63d4983a",
+"class_chimera_t_k_1_1_exception_dummy.html#a334e11b3f65149fb8c4049017961dd64",
+"class_chimera_t_k_1_1_logical_name_map_parser.html#ab77f9b049edc5f2c4dd465a2b3c6ba62",
+"class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0aa7b843fb734e3b3fea8e5f902d3f4144",
+"class_chimera_t_k_1_1_scalar_register_accessor_3_01_chimera_t_k_1_1_boolean_00_01std_1_1nullptr__t_01_4.html#acfa024e4c69080777c952c56639ca8c5",
+"class_chimera_t_k_1_1_transfer_group.html#a05659fcb52954854fa82ab159de23579",
+"class_dummy_register_test.html",
+"functions_func_i.html",
+"shared_dummy_helpers_8h.html",
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html",
+"struct_integers__base.html#a247d84b871c017ae73799e93c8d706a9",
+"struct_reg_channel3.html",
+"struct_short_raw__base.html#ac0940d2422ff570d04fcfa75ac86ed12",
+"test_fixed_point_converter_8cpp.html#a8ce115b3e6ce1189864602474105d8cd",
+"test_scalar_register_accessor_8cpp.html#af8c05f1099b6e39241d27c05cac65fe4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

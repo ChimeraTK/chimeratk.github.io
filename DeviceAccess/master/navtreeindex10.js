@@ -1,5 +1,8 @@
 var NAVTREEINDEX10 =
 {
+"functions_func_i.html":[20,3,1,8],
+"functions_func_k.html":[20,3,1,9],
+"functions_func_l.html":[20,3,1,10],
 "functions_func_m.html":[20,3,1,11],
 "functions_func_n.html":[20,3,1,12],
 "functions_func_o.html":[20,3,1,13],
@@ -28,8 +31,8 @@ var NAVTREEINDEX10 =
 "functions_type.html":[20,3,3],
 "functions_u.html":[20,3,0,20],
 "functions_v.html":[20,3,0,21],
-"functions_vars.html":[20,3,2,0],
 "functions_vars.html":[20,3,2],
+"functions_vars.html":[20,3,2,0],
 "functions_vars_a.html":[20,3,2,1],
 "functions_vars_b.html":[20,3,2,2],
 "functions_vars_c.html":[20,3,2,3],
@@ -143,10 +146,10 @@ var NAVTREEINDEX10 =
 "main_8cpp.html":[21,0,6,3,2],
 "main_8cpp.html#a51a0c03e82a49c8df1aee64a078f33e7":[21,0,6,3,2,0],
 "main_8cpp_source.html":[21,0,6,3,2],
-"namespace_chimera_t_k.html":[20,0,1],
 "namespace_chimera_t_k.html":[19,0,9],
-"namespace_chimera_t_k_1_1_l_n_m_backend.html":[19,0,9,0],
+"namespace_chimera_t_k.html":[20,0,1],
 "namespace_chimera_t_k_1_1_l_n_m_backend.html":[20,0,1,0],
+"namespace_chimera_t_k_1_1_l_n_m_backend.html":[19,0,9,0],
 "namespace_chimera_t_k_1_1_rebot.html":[19,0,9,4],
 "namespace_chimera_t_k_1_1_rebot.html":[20,0,1,2],
 "namespace_chimera_t_k_1_1_utilities.html":[19,0,9,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX10 =
 "read_temperature_doocs_zmq_8cpp-example.html":[22,6],
 "rebot_manual_test_8cpp.html":[21,0,6,5,0],
 "rebot_manual_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[21,0,6,5,0,0],
-"rebot_manual_test_8cpp_source.html":[21,0,6,5,0],
-"shared_dummy_helpers_8h.html":[21,0,6,2,3],
-"shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2e":[21,0,6,2,3,1],
-"shared_dummy_helpers_8h.html#a5b3d60e5fcaf56142c47fa3f95408a2ea01b6e20344b68835c5ed1ddedf20d531":[21,0,6,2,3,1,1]
+"rebot_manual_test_8cpp_source.html":[21,0,6,5,0]
 };

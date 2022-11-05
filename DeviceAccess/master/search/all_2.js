@@ -76,5 +76,6 @@ var searchData=
   ['asynctestdummy',['AsyncTestDummy',['../class_async_test_dummy.html',1,'AsyncTestDummy'],['../class_async_test_dummy.html#a63702eaa288d6f09ca8eb470064f8e15',1,'AsyncTestDummy::AsyncTestDummy()']]],
   ['asyncvariable',['AsyncVariable',['../struct_chimera_t_k_1_1_async_variable.html',1,'ChimeraTK']]],
   ['asyncvariableimpl',['AsyncVariableImpl',['../struct_chimera_t_k_1_1_async_variable_impl.html',1,'ChimeraTK::AsyncVariableImpl&lt; UserType &gt;'],['../struct_chimera_t_k_1_1_async_variable_impl.html#a1055477f27ad0d34f7c4d7314f971473',1,'ChimeraTK::AsyncVariableImpl::AsyncVariableImpl()']]],
+  ['asyncvariablemapchanged',['asyncVariableMapChanged',['../class_chimera_t_k_1_1_async_accessor_manager.html#afd989f47c1bfc3df60fd4326822047c8',1,'ChimeraTK::AsyncAccessorManager::asyncVariableMapChanged()'],['../class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html#a319cf0bb33bf48112dd3f738507cd5f5',1,'ChimeraTK::NumericAddressedInterruptDispatcher::asyncVariableMapChanged()']]],
   ['accessing_20numeric_2daddressed_20registers_20without_20a_20map_20file',['Accessing numeric-addressed registers without a map file',['../numeric_addresses.html',1,'']]]
 ];

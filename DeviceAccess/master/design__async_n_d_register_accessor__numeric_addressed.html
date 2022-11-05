@@ -85,7 +85,24 @@ $(document).ready(function(){initNavTree('design__async_n_d_register_accessor__n
 <div class="title">Design: <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a> </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="design_AsyncNDRegisterAccessor"></a>
+<div class="textblock"><h1><a class="anchor" id="conceptOverview"></a>
+Concept overview</h1>
+<div class="image">
+<img src="NABackendAsyncConcept.png" alt="NABackendAsyncConcept.png" width="1000"/>
+<div class="caption">
+object diagram for AyncNDRegisterAccessor</div></div>
+<ul>
+<li>For each AsyncAccessor that user requests: an <a class="el" href="struct_chimera_t_k_1_1_async_variable.html" title="Typeless base class. ">AsyncVariable</a> is created interally, with 1:1 correspondence AsyncAccessor ↔ AsyncVar</li>
+<li>AsyncAccessor reads from AsyncVar and is handed out to user; <a class="el" href="struct_chimera_t_k_1_1_async_variable.html" title="Typeless base class. ">AsyncVariable</a> holds the send buffer which is used to fill userBuffer of AsyncAccessor later</li>
+<li>NumericAddressedAsyncVarImpl implements filling the send buffer from a syncAccessor to the requested register</li>
+<li><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html" title="The NumericAddressedInterruptDispatcher has two main functionalities: ">NumericAddressedInterruptDispatcher</a> is responsible for one interrupt number and collects related SyncAccessors in a transferGroup for efficiency. It implements the actual trigger action (on interrupt), relying on NumericAddressedAsyncVarImpl::filledSendBuffer().</li>
+<li>AsyncVarImpl holds only a weak pointer to the AsyncAccessor, since we want to be sensitive to the user discarding the latter</li>
+<li><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html" title="The NumericAddressedInterruptDispatcher has two main functionalities: ">NumericAddressedInterruptDispatcher</a>, as a <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html" title="The AsyncAccessorManager has three main functionalities: ">AsyncAccessorManager</a>, owns and manages the AsyncVariables (in a map).</li>
+<li>Actual copy operations are eliminated by usage of swap, i.e. only pointers are handed over between the buffer containers.</li>
+<li>Exception handling: If any exception occurs during read/write, <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html" title="The AsyncAccessorManager has three main functionalities: ">AsyncAccessorManager</a> deactivates the AsyncVariables and provides each of them the exception. When activated again, it makes sure new or initial values from the SyncAccessors are provided.</li>
+<li>Deletion: once user releases shared pointer to AsyncNDRegAcc, its destructor calls <a class="el" href="class_chimera_t_k_1_1_async_accessor_manager.html#ac1896007e5233e8b957b112f30aea303" title="This function must only be called from the destructor of the AsyncNDRegisterAccessor which is created...">AsyncAccessorManager::unsubscribe()</a>. Since the syncAccessors in the <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a> keep a shared pointer to the NumericAddressBackend, unsubscribe() must also take care to clean up <a class="el" href="class_chimera_t_k_1_1_transfer_group.html" title="Group multiple data accessors to efficiently trigger data transfers on the whole group. ">TransferGroup</a>.</li>
+</ul>
+<h1><a class="anchor" id="design_AsyncNDRegisterAccessor"></a>
 The AsyncNDRegisterAccessor and the AsyncAccessorManager</h1>
 <p>The <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a> is a generic <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html" title="N-dimensional register accessor. ">NDRegisterAccessor</a> implementation for push-type data. It is used if accessors with <a class="el" href="namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11aa32635b4f0dfdd132457f6a499d6f031" title="Make any read blocking until new data has arrived since the last read. ">AccessMode::wait_for_new_data</a> are requested. See <a class="el" href="spec__transfer_element.html#transferElement_B_8">Technical specification: TransferElement B.8</a> for the requirements it is based on.</p>
 <p>The <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html" title="The AsyncNDRegisterAccessor implements a data transport queue with typed data as continuation of the ...">AsyncNDRegisterAccessor</a> is a generic implementation which can be used for all backends and contains the following components</p>
@@ -187,7 +204,7 @@ Interface to implementing backends</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 26 2022 03:53:16 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Nov 5 2022 04:53:17 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
