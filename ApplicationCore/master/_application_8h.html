@@ -88,10 +88,13 @@ $(document).ready(function(){initNavTree('_application_8h.html','');});
 <div class="title">Application.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_entity_owner_8h_source.html">EntityOwner.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_circular_dependency_detector_8h_source.html">CircularDependencyDetector.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_connection_maker_8h_source.html">ConnectionMaker.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_flags_8h_source.html">Flags.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_internal_module_8h_source.html">InternalModule.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_variable_network_8h_source.html">VariableNetwork.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_model_8h_source.html">Model.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_module_group_8h_source.html">ModuleGroup.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_testable_mode_8h_source.html">TestableMode.h</a>&quot;</code><br />
 <code>#include &lt;ChimeraTK/ControlSystemAdapter/ApplicationBase.h&gt;</code><br />
 <code>#include &lt;ChimeraTK/DeviceBackend.h&gt;</code><br />
 <code>#include &lt;atomic&gt;</code><br />
@@ -127,15 +130,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application.html">ChimeraTK::Application</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_application_1_1_tests_stalled.html">ChimeraTK::Application::TestsStalled</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special exception class which will be thrown if tests with the testable mode are stalled.  <a href="class_chimera_t_k_1_1_application_1_1_tests_stalled.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html">ChimeraTK::Application::CircularDependencyDetector</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detection mechanism for cirular dependencies of initial values in ApplicationModules.  <a href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html">ChimeraTK::Application::TypedMakeConnectionCaller</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor class to call <a class="el" href="class_chimera_t_k_1_1_application.html#ad431c8d3f6f19a593a37b13c5f7cefe8" title="UserType-dependent part of makeConnectionsForNetwork() ">typedMakeConnection()</a> with the right template argument.  <a href="struct_chimera_t_k_1_1_application_1_1_typed_make_connection_caller.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -149,7 +143,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_application_8h.html">Application.h</a></li>
-    <li class="footer">Generated on Tue Oct 11 2022 03:54:08 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Nov 9 2022 04:54:13 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

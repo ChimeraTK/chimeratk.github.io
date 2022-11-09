@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['inversionofcontrolaccessor_3c_20arrayaccessor_3c_20usertype_20_3e_20_3e',['InversionOfControlAccessor&lt; ArrayAccessor&lt; UserType &gt; &gt;',['../class_chimera_t_k_1_1_array_accessor.html#a84e17c9b4cd49ecbbc1ee1fab29ab421',1,'ChimeraTK::ArrayAccessor']]],
-  ['inversionofcontrolaccessor_3c_20scalaraccessor_3c_20usertype_20_3e_20_3e',['InversionOfControlAccessor&lt; ScalarAccessor&lt; UserType &gt; &gt;',['../class_chimera_t_k_1_1_scalar_accessor.html#a0df7a7b00fc2569723620429ae22e8c1',1,'ChimeraTK::ScalarAccessor']]],
-  ['inversionofcontrolaccessor_3c_20voidaccessor_20_3e',['InversionOfControlAccessor&lt; VoidAccessor &gt;',['../class_chimera_t_k_1_1_void_accessor.html#ab2275c8e627c95f1e057c09786df14f9',1,'ChimeraTK::VoidAccessor']]]
+  ['metadatapropagatingregisterdecorator',['MetaDataPropagatingRegisterDecorator',['../class_chimera_t_k_1_1_application.html#ac15bcae2494fcb254affaedcda42e3db',1,'ChimeraTK::Application']]],
+  ['module',['Module',['../class_chimera_t_k_1_1_application.html#a21f639900c480510650969df9c74d17d',1,'ChimeraTK::Application']]],
+  ['modulegroupproxy',['ModuleGroupProxy',['../class_chimera_t_k_1_1_model_1_1_proxy.html#a9aa5a9884b7ff3d80f9b7894bea98167',1,'ChimeraTK::Model::Proxy::ModuleGroupProxy()'],['../class_chimera_t_k_1_1_model_1_1_root_proxy.html#a9aa5a9884b7ff3d80f9b7894bea98167',1,'ChimeraTK::Model::RootProxy::ModuleGroupProxy()'],['../class_chimera_t_k_1_1_model_1_1_impl.html#a9aa5a9884b7ff3d80f9b7894bea98167',1,'ChimeraTK::Model::Impl::ModuleGroupProxy()']]]
 ];

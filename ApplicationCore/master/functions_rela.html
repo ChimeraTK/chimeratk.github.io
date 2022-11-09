@@ -88,11 +88,16 @@ $(document).ready(function(){initNavTree('functions_rela.html','');});
 : <a class="el" href="class_chimera_t_k_1_1_application.html#af6ffd104cd1bfe13fd84f63bcd1c2c44">ChimeraTK::Application</a>
 </li>
 <li>Application
-: <a class="el" href="struct_chimera_t_k_1_1_application_1_1_circular_dependency_detector.html#a23f25bcc02a0e94c2f5a4188496b04d0">ChimeraTK::Application::CircularDependencyDetector</a>
-, <a class="el" href="class_chimera_t_k_1_1_device_module.html#a23f25bcc02a0e94c2f5a4188496b04d0">ChimeraTK::DeviceModule</a>
+: <a class="el" href="class_chimera_t_k_1_1_module_group.html#a23f25bcc02a0e94c2f5a4188496b04d0">ChimeraTK::ModuleGroup</a>
 </li>
 <li>ApplicationModule
 : <a class="el" href="class_chimera_t_k_1_1_application.html#acfb4bf09dc26ce696cc077e79995dd42">ChimeraTK::Application</a>
+, <a class="el" href="class_chimera_t_k_1_1_variable_group.html#acfb4bf09dc26ce696cc077e79995dd42">ChimeraTK::VariableGroup</a>
+</li>
+<li>ApplicationModuleProxy
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_impl.html#a0793b92ff0356b9ff47ab1ce4a0e5f01">ChimeraTK::Model::Impl</a>
+, <a class="el" href="class_chimera_t_k_1_1_model_1_1_proxy.html#a0793b92ff0356b9ff47ab1ce4a0e5f01">ChimeraTK::Model::Proxy</a>
+, <a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html#a0793b92ff0356b9ff47ab1ce4a0e5f01">ChimeraTK::Model::RootProxy</a>
 </li>
 <li>ArrayFunctorFill
 : <a class="el" href="struct_chimera_t_k_1_1_config_reader.html#ac39a42b4171272dd24eb6e2dc07849a6">ChimeraTK::ConfigReader</a>
@@ -101,12 +106,27 @@ $(document).ready(function(){initNavTree('functions_rela.html','');});
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
-<li>ConnectingDeviceModule
-: <a class="el" href="class_chimera_t_k_1_1_application.html#a8d0a35a00e592fe53e309a10f0736ef9">ChimeraTK::Application</a>
-, <a class="el" href="class_chimera_t_k_1_1_device_module.html#a8d0a35a00e592fe53e309a10f0736ef9">ChimeraTK::DeviceModule</a>
+<li>ChimeraTK::ApplicationModule
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_application_module_proxy.html#a0829585e80681712c68dda8c710334ba">ChimeraTK::Model::ApplicationModuleProxy</a>
 </li>
-<li>ControlSystemModule
-: <a class="el" href="class_chimera_t_k_1_1_application.html#a987d65c8265c2cdca7480ca3e9e15771">ChimeraTK::Application</a>
+<li>ChimeraTK::DeviceModule
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_device_module_proxy.html#a94e748225f21f2d3230ab3347f8c5a14">ChimeraTK::Model::DeviceModuleProxy</a>
+, <a class="el" href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a94e748225f21f2d3230ab3347f8c5a14">ChimeraTK::Model::ProcessVariableProxy</a>
+</li>
+<li>ChimeraTK::InversionOfControlAccessor
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a33e5bd714ed80f778b5d105cf49c63ac">ChimeraTK::Model::ProcessVariableProxy</a>
+</li>
+<li>ChimeraTK::ModuleGroup
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_module_group_proxy.html#a009f89316d68b2f98e4fb78fb2aec4f2">ChimeraTK::Model::ModuleGroupProxy</a>
+</li>
+<li>ChimeraTK::VariableGroup
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_variable_group_proxy.html#a28ce78ab56c3828f161b3bf3b3d528dc">ChimeraTK::Model::VariableGroupProxy</a>
+</li>
+<li>ChimeraTK::VariableNetworkNode
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a82b4dd70ad45a0eca1f2264741a72537">ChimeraTK::Model::ProcessVariableProxy</a>
+</li>
+<li>ConnectionMaker
+: <a class="el" href="class_chimera_t_k_1_1_application.html#a9798a81b66fe8dba37b7e53be7928890">ChimeraTK::Application</a>
 </li>
 </ul>
 
@@ -115,19 +135,36 @@ $(document).ready(function(){initNavTree('functions_rela.html','');});
 <li>DebugPrintAccessorDecorator
 : <a class="el" href="class_chimera_t_k_1_1_application.html#ae695c6843b4a8363af68d12eb640997e">ChimeraTK::Application</a>
 </li>
-<li>detail::DeviceModuleProxy
-: <a class="el" href="class_chimera_t_k_1_1_device_module.html#a97967a6daa70f9b4246914953a73b0dd">ChimeraTK::DeviceModule</a>
+<li>detail::CircularDependencyDetector
+: <a class="el" href="class_chimera_t_k_1_1_application.html#af27a883ef1fd8fe1bb4f2be0492d7b4f">ChimeraTK::Application</a>
+, <a class="el" href="class_chimera_t_k_1_1_device_manager.html#af27a883ef1fd8fe1bb4f2be0492d7b4f">ChimeraTK::DeviceManager</a>
+</li>
+<li>detail::TestableMode
+: <a class="el" href="class_chimera_t_k_1_1_application.html#a501cb9a6f6d390b7c12bef5424cd338e">ChimeraTK::Application</a>
 </li>
 <li>DeviceModule
-: <a class="el" href="class_chimera_t_k_1_1_application.html#a4e118063020247afcc64aa45d4ec3f12">ChimeraTK::Application</a>
+: <a class="el" href="class_chimera_t_k_1_1_module_group.html#a4e118063020247afcc64aa45d4ec3f12">ChimeraTK::ModuleGroup</a>
+</li>
+<li>DeviceModuleProxy
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_impl.html#accbfbb0a2f765538b73da1c671cb615f">ChimeraTK::Model::Impl</a>
+, <a class="el" href="class_chimera_t_k_1_1_model_1_1_proxy.html#accbfbb0a2f765538b73da1c671cb615f">ChimeraTK::Model::Proxy</a>
+, <a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html#accbfbb0a2f765538b73da1c671cb615f">ChimeraTK::Model::RootProxy</a>
+</li>
+<li>DirectoryProxy
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_impl.html#a5b56992616643ba81b3a672d7cf40a1b">ChimeraTK::Model::Impl</a>
+, <a class="el" href="class_chimera_t_k_1_1_model_1_1_proxy.html#a5b56992616643ba81b3a672d7cf40a1b">ChimeraTK::Model::Proxy</a>
+, <a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html#a5b56992616643ba81b3a672d7cf40a1b">ChimeraTK::Model::RootProxy</a>
 </li>
 </ul>
 
 
 <h3><a id="index_e"></a>- e -</h3><ul>
+<li>EdgeFilter
+: <a class="el" href="struct_chimera_t_k_1_1_model_1_1_edge_filter.html#af6c52486395756e86790df36a55ac746">ChimeraTK::Model::EdgeFilter&lt; FILTER &gt;</a>
+</li>
 <li>ExceptionHandlingDecorator
 : <a class="el" href="class_chimera_t_k_1_1_application.html#aa4d68f9b9ae5e4d36e5dc94efc89dcce">ChimeraTK::Application</a>
-, <a class="el" href="class_chimera_t_k_1_1_device_module.html#aa4d68f9b9ae5e4d36e5dc94efc89dcce">ChimeraTK::DeviceModule</a>
+, <a class="el" href="class_chimera_t_k_1_1_device_manager.html#aa4d68f9b9ae5e4d36e5dc94efc89dcce">ChimeraTK::DeviceManager</a>
 </li>
 </ul>
 
@@ -148,14 +185,10 @@ $(document).ready(function(){initNavTree('functions_rela.html','');});
 </ul>
 
 
-<h3><a id="index_h"></a>- h -</h3><ul>
-<li>history::ServerHistory
-: <a class="el" href="class_chimera_t_k_1_1_device_module.html#ab9171bb39053b85717ad350f03cf0f02">ChimeraTK::DeviceModule</a>
-</li>
-</ul>
-
-
 <h3><a id="index_i"></a>- i -</h3><ul>
+<li>Impl
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_proxy.html#ae708b2c3f144ba0c31bb444c4efe8ccf">ChimeraTK::Model::Proxy</a>
+</li>
 <li>InversionOfControlAccessor&lt; ArrayAccessor&lt; UserType &gt; &gt;
 : <a class="el" href="class_chimera_t_k_1_1_array_accessor.html#a84e17c9b4cd49ecbbc1ee1fab29ab421">ChimeraTK::ArrayAccessor&lt; UserType &gt;</a>
 </li>
@@ -172,37 +205,65 @@ $(document).ready(function(){initNavTree('functions_rela.html','');});
 <li>MetaDataPropagatingRegisterDecorator
 : <a class="el" href="class_chimera_t_k_1_1_application.html#ac15bcae2494fcb254affaedcda42e3db">ChimeraTK::Application</a>
 </li>
-<li>MicroDAQ
-: <a class="el" href="class_chimera_t_k_1_1_device_module.html#a16b6ac2d21c82a6c0d6953b6ee3f8977">ChimeraTK::DeviceModule</a>
-</li>
 <li>Module
 : <a class="el" href="class_chimera_t_k_1_1_application.html#a21f639900c480510650969df9c74d17d">ChimeraTK::Application</a>
+</li>
+<li>ModuleGroupProxy
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_impl.html#a9aa5a9884b7ff3d80f9b7894bea98167">ChimeraTK::Model::Impl</a>
+, <a class="el" href="class_chimera_t_k_1_1_model_1_1_proxy.html#a9aa5a9884b7ff3d80f9b7894bea98167">ChimeraTK::Model::Proxy</a>
+, <a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html#a9aa5a9884b7ff3d80f9b7894bea98167">ChimeraTK::Model::RootProxy</a>
+</li>
+</ul>
+
+
+<h3><a id="index_n"></a>- n -</h3><ul>
+<li>NetworkVisitor
+: <a class="el" href="class_chimera_t_k_1_1_application.html#affb4264a4f7be0276c15a1b07396942d">ChimeraTK::Application</a>
+</li>
+</ul>
+
+
+<h3><a id="index_p"></a>- p -</h3><ul>
+<li>ProcessVariableProxy
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_impl.html#aea041c73da1d9771be65a8de77db646c">ChimeraTK::Model::Impl</a>
+, <a class="el" href="class_chimera_t_k_1_1_model_1_1_proxy.html#aea041c73da1d9771be65a8de77db646c">ChimeraTK::Model::Proxy</a>
+, <a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html#aea041c73da1d9771be65a8de77db646c">ChimeraTK::Model::RootProxy</a>
+</li>
+<li>Proxy
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_impl.html#a4d76bb4136b3dbba2b533d9c87f017c7">ChimeraTK::Model::Impl</a>
+, <a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html#a4d76bb4136b3dbba2b533d9c87f017c7">ChimeraTK::Model::RootProxy</a>
+</li>
+</ul>
+
+
+<h3><a id="index_r"></a>- r -</h3><ul>
+<li>RootProxy
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_impl.html#a4dcd2aff114d1a9cc923a9cbb1aabe81">ChimeraTK::Model::Impl</a>
+, <a class="el" href="class_chimera_t_k_1_1_model_1_1_proxy.html#a4dcd2aff114d1a9cc923a9cbb1aabe81">ChimeraTK::Model::Proxy</a>
 </li>
 </ul>
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>StatusAggregator
-: <a class="el" href="class_chimera_t_k_1_1_application.html#ac86b4e3e4fb4c56b69ca686b6507a463">ChimeraTK::Application</a>
-, <a class="el" href="class_chimera_t_k_1_1_device_module.html#ac86b4e3e4fb4c56b69ca686b6507a463">ChimeraTK::DeviceModule</a>
+: <a class="el" href="class_chimera_t_k_1_1_application.html#a0e2d0dd9c35f3cdacf53e63ef36c342a">ChimeraTK::Application</a>
 </li>
 </ul>
 
 
 <h3><a id="index_t"></a>- t -</h3><ul>
-<li>TestableModeAccessorDecorator
-: <a class="el" href="class_chimera_t_k_1_1_application.html#a7e87574adc19a814f9af8decb92a5d03">ChimeraTK::Application</a>
-</li>
 <li>TestFacility
 : <a class="el" href="class_chimera_t_k_1_1_application.html#ac79f4a9d4117d899517047de93a44610">ChimeraTK::Application</a>
-</li>
-<li>TriggerFanOut
-: <a class="el" href="class_chimera_t_k_1_1_application.html#aa9b0a018685f775680c855e56a305328">ChimeraTK::Application</a>
 </li>
 </ul>
 
 
 <h3><a id="index_v"></a>- v -</h3><ul>
+<li>VariableGroupProxy
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_impl.html#a1ac33056aa34c5680e47a72b1de3fc49">ChimeraTK::Model::Impl</a>
+, <a class="el" href="class_chimera_t_k_1_1_model_1_1_proxy.html#a1ac33056aa34c5680e47a72b1de3fc49">ChimeraTK::Model::Proxy</a>
+, <a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html#a1ac33056aa34c5680e47a72b1de3fc49">ChimeraTK::Model::RootProxy</a>
+</li>
 <li>VariableNetwork
 : <a class="el" href="class_chimera_t_k_1_1_application.html#ac33de929736939da2f3e3d7b3a613fa4">ChimeraTK::Application</a>
 </li>
@@ -215,6 +276,12 @@ $(document).ready(function(){initNavTree('functions_rela.html','');});
 <li>VariableNetworkNode
 : <a class="el" href="class_chimera_t_k_1_1_application.html#a6834042482a4ce821c0bd9ba7eaa6d80">ChimeraTK::Application</a>
 , <a class="el" href="class_chimera_t_k_1_1_meta_data_propagation_flag_provider.html#a6834042482a4ce821c0bd9ba7eaa6d80">ChimeraTK::MetaDataPropagationFlagProvider</a>
+</li>
+<li>VertexFilter
+: <a class="el" href="struct_chimera_t_k_1_1_model_1_1_vertex_filter.html#a7454235e2d842f98c0e14697d7205fac">ChimeraTK::Model::VertexFilter&lt; FILTER &gt;</a>
+</li>
+<li>VertexProperties
+: <a class="el" href="class_chimera_t_k_1_1_model_1_1_proxy.html#a4bd07f16e35057750f3f09bcdf0beb4a">ChimeraTK::Model::Proxy</a>
 </li>
 </ul>
 
@@ -229,7 +296,7 @@ $(document).ready(function(){initNavTree('functions_rela.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Oct 11 2022 03:54:12 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Nov 9 2022 04:54:15 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

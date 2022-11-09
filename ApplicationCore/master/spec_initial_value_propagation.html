@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 </ol>
 </li>
 <li><a class="anchor" id="InitialValuesInputsOfApplicationCore_D_8"></a>Inputs of <code><a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a></code>s:<ol type="a">
-<li>Initial values are read by the framwork before the start of <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ApplicationModule::mainLoop()</a></code> (but already in the same thread which later executes the <code>mainLoop()</code>).</li>
+<li>Initial values are read by the framwork before the start of <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a21fb69e51e5d150ae2718715c942e0f8" title="To be implemented by the user: function called in a separate thread executing the main loop of the mo...">ApplicationModule::mainLoop()</a></code> (but already in the same thread which later executes the <code><a class="el" href="test_illegal_networks_8cc.html#af14601579e7c6dd672a85c562800b1fa">mainLoop()</a></code>).</li>
 <li>Initial values are read by calling <code>TransferElement::read()</code>, which <em>freezes</em> until the initial value has arrived, both with <code>AccessMode::wait_for_new_data</code> and without.<ol type="i">
 <li><a class="anchor" id="initialValue_D_8_b_i"></a>For device variables the ExeptionHandlingDecorator freezes the variable until the device is available. [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testInitialValue_D_8_b_i">T</a>]</li>
 <li><a class="anchor" id="initialValue_D_8_b_ii"></a>ProcessArray freeze in their implementation until the initial value is received (see. <a class="el" href="spec_initial_value_propagation.html#initialValue_E_process_arrays">E ProcessArrays</a>). [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testInitialValue_D_8_b_ii">T</a>]</li>
@@ -149,11 +149,11 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 </li>
 <li>The module-like fan outs <code><a class="el" href="class_chimera_t_k_1_1_threaded_fan_out.html" title="FanOut implementation with an internal thread which waits for new data which is read from the given f...">ThreadedFanOut</a></code> and <code><a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html" title="InternalModule which waits for a trigger, then reads a number of variables and distributes each of th...">TriggerFanOut</a></code> (does not apply to the accessor-like fan outs <code><a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html" title="NDRegisterAccessor implementation which distributes values written to this accessor out to any number...">FeedingFanOut</a></code> and <code><a class="el" href="class_chimera_t_k_1_1_consuming_fan_out.html" title="FanOut implementation which acts as a read-only (i.e. ">ConsumingFanOut</a></code>)<ol type="a">
 <li>The fan outs have a transparent behaviour, i.e. an entity that receives an initial value through a fan out sees the same behaviour as if a direct connection would have been realised.</li>
-<li><a class="anchor" id="initialValueThreaddedFanOut_D_9_b"></a>This implies that the inputs are treated like described in 8.b. [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testInitialValueThreaddedFanOut_D_9_b_ThreaddedFanOut">T for ThreadedFanOut</a>] [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testInitialValueThreaddedFanOut_D_9_b_TriggerFanOut">T for TriggerFanOut</a>]</li>
+<li><a class="anchor" id="initialValueThreadedFanOut_D_9_b"></a>This implies that the inputs are treated like described in 8.b. [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testInitialValueThreadedFanOut_D_9_b_ThreadedFanOut">T for ThreadedFanOut</a>] [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testInitialValueThreadedFanOut_D_9_b_TriggerFanOut">T for TriggerFanOut</a>]</li>
 <li><a class="anchor" id="initialValue_d_9_3"></a>The initial value is propagated immediately to the outputs. <a class="el" href="spec_initial_value_propagation.html#initialValue_comment_d_9_3">(*)</a></li>
 </ol>
 </li>
-<li><a class="anchor" id="initialValue_d_10"></a>Constants (<code><a class="el" href="class_chimera_t_k_1_1_application.html#aff57a64a0270d24e48ebf6094570703b" title="Convenience function for creating constants. ">Application::makeConstant()</a></code>): [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testConstantD10InitialValue_D_10">T</a>]<ol type="a">
+<li><a class="anchor" id="initialValue_d_10"></a>Constants (<code>Application::makeConstant()</code>): [ <a class="el" href="test_initial_value_spec_d8_8cc.html#testConstantD10InitialValue_D_10">T</a>]<ol type="a">
 <li>Constant accessors only have one value, which is propagates as the intitial value. They conceptually behave like a process array that is written exactly once by the framework.<ol type="i">
 <li>This implies that in case of <code>AccessMode::wait_for_new_data</code> the value can be read exactly once. This is enough to propagate the initial value. Any further read() to the variable will block infinitely.</li>
 </ol>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <li>Implement 3, implementation will be already covered by normal flag propagation</li>
 <li>API documentation must contain 7.</li>
 <li>Implements 8. (hence takes part in 5.a, 6.b and 7 implicitly):<ul>
-<li>All inputs of the module must be read in the <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#a1307f3a48b1ab8a14f8efcece2b0c047" title="Wrapper around mainLoop(), to execute additional tasks in the thread before entering the main loop...">ApplicationModule::mainLoopWrapper()</a></code> before the call to <code>mainLoop()</code>.</li>
+<li>All inputs of the module must be read in the <code><a class="el" href="class_chimera_t_k_1_1_application_module.html#ac2c8911aaa22fca678cfd5f79c0a1f0f" title="Wrapper around mainLoop(), to execute additional tasks in the thread before entering the main loop...">ApplicationModule::mainLoopWrapper()</a></code> before the call to <code><a class="el" href="test_illegal_networks_8cc.html#af14601579e7c6dd672a85c562800b1fa">mainLoop()</a></code>.</li>
 </ul>
 </li>
 </ul>
@@ -293,7 +293,7 @@ $(document).ready(function(){initNavTree('spec_initial_value_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Tue Oct 11 2022 03:54:09 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Nov 9 2022 04:54:13 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

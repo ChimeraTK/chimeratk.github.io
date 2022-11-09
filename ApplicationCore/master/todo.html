@@ -86,49 +86,41 @@ $(document).ready(function(){initNavTree('todo.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000016"></a>Member <a class="el" href="class_chimera_t_k_1_1_application.html#a7ffa5299dd6e3692f34eb88d16fb4b15">ChimeraTK::Application::createProcessVariable</a>  (<a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a> const &amp;node)</dt>
-<dd>Check if this is true!  </dd>
-<dt><a class="anchor" id="_todo000017"></a>Member <a class="el" href="class_chimera_t_k_1_1_application.html#af71a6285010334471d4a77206d26212d">ChimeraTK::Application::optimiseConnections</a>  ()</dt>
-<dd>check if this assumtion is true! control-system nodes can be created with different types, too!  </dd>
-<dt><a class="anchor" id="_todo000014"></a>Class <a class="el" href="struct_chimera_t_k_1_1_array_pipe.html">ChimeraTK::ArrayPipe&lt; Type &gt;</a>  </dt>
+<dt><a class="anchor" id="_todo000013"></a>Class <a class="el" href="struct_chimera_t_k_1_1_array_pipe.html">ChimeraTK::ArrayPipe&lt; Type &gt;</a>  </dt>
 <dd>Make it more efficient by removing this module entirely in the ApplicationCore connection logic!  </dd>
-<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="class_chimera_t_k_1_1_control_system_module.html#ae00bfe6379a470d410ebc354bf61d6c9">ChimeraTK::ControlSystemModule::connectTo</a>  (const <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a> &amp;, <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a>={}) const override</dt>
-<dd>make proper exception  </dd>
-<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#aa3e3839277722f30e1fb32c6e7d8d291">ChimeraTK::EntityOwner::testableModeReached</a>  </dt>
-<dd>This should be moved to a more proper place in the hierarchy (e.g. <a class="el" href="class_chimera_t_k_1_1_module_impl.html" title="Some common implementations of a few functions in Module used by most modules (but the VirtualModule)...">ModuleImpl</a>) after <a class="el" href="class_chimera_t_k_1_1_internal_module.html" title="Base class for internal modules which are created by the variable connection code (e...">InternalModule</a> class has been properly unified with the normal <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a> class.  </dd>
-<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a236c4e600a6e334a9f00959d69061396">ChimeraTK::FeedingFanOut&lt; UserType &gt;::getHardwareAccessingElements</a>  () override</dt>
+<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="class_chimera_t_k_1_1_entity_owner.html#a961e296fa6aa1698a0474803ffe3d44f">ChimeraTK::EntityOwner::_testableModeReached</a>  </dt>
+<dd>This should be moved to a more proper place in the hierarchy (e.g. ModuleImpl) after <a class="el" href="class_chimera_t_k_1_1_internal_module.html" title="Base class for internal modules which are created by the variable connection code (e...">InternalModule</a> class has been properly unified with the normal <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule and DeviceModule, to have a common interface for these module types...">Module</a> class.  </dd>
+<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a236c4e600a6e334a9f00959d69061396">ChimeraTK::FeedingFanOut&lt; UserType &gt;::getHardwareAccessingElements</a>  () override</dt>
 <dd>implement properly?  </dd>
-<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a463cf20582ffa8d8f47e525cad93ff56">ChimeraTK::FeedingFanOut&lt; UserType &gt;::getInternalElements</a>  () override</dt>
+<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a463cf20582ffa8d8f47e525cad93ff56">ChimeraTK::FeedingFanOut&lt; UserType &gt;::getInternalElements</a>  () override</dt>
 <dd>implement properly?  </dd>
-<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a176dddfedbea6dbf15b9e3a76d111a11">ChimeraTK::FeedingFanOut&lt; UserType &gt;::mayReplaceOther</a>  (const boost::shared_ptr&lt; const ChimeraTK::TransferElement &gt; &amp;) const override</dt>
+<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a176dddfedbea6dbf15b9e3a76d111a11">ChimeraTK::FeedingFanOut&lt; UserType &gt;::mayReplaceOther</a>  (const boost::shared_ptr&lt; const ChimeraTK::TransferElement &gt; &amp;) const override</dt>
 <dd>implement properly?  </dd>
-<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a0eb92857a2f6b3d501abc8c441618896">ChimeraTK::FeedingFanOut&lt; UserType &gt;::replaceTransferElement</a>  (boost::shared_ptr&lt; ChimeraTK::TransferElement &gt;) override</dt>
+<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html#a0eb92857a2f6b3d501abc8c441618896">ChimeraTK::FeedingFanOut&lt; UserType &gt;::replaceTransferElement</a>  (boost::shared_ptr&lt; ChimeraTK::TransferElement &gt;) override</dt>
 <dd>implement properly?  </dd>
-<dt><a class="anchor" id="_todo000007"></a>Class <a class="el" href="class_chimera_t_k_1_1_internal_module.html">ChimeraTK::InternalModule</a>  </dt>
-<dd>Currently this class is based on <a class="el" href="class_chimera_t_k_1_1_entity_owner.html" title="Base class for owners of other EntityOwners (e.g. ">EntityOwner</a> somewhat artificially. Instead the <a class="el" href="class_chimera_t_k_1_1_internal_module.html" title="Base class for internal modules which are created by the variable connection code (e...">InternalModule</a> class needs to be properly unified with the normal <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule, DeviceModule and ControlSystemModule, to have a common interface fo...">Module</a> classes.  </dd>
-<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="class_chimera_t_k_1_1_internal_module.html#a24bed81e15f9b118bcac99cd5cc422f3">ChimeraTK::InternalModule::activate</a>  ()</dt>
+<dt><a class="anchor" id="_todo000006"></a>Class <a class="el" href="class_chimera_t_k_1_1_internal_module.html">ChimeraTK::InternalModule</a>  </dt>
+<dd>Currently this class is based on <a class="el" href="class_chimera_t_k_1_1_entity_owner.html" title="Base class for owners of other EntityOwners (e.g. ">EntityOwner</a> somewhat artificially. Instead the <a class="el" href="class_chimera_t_k_1_1_internal_module.html" title="Base class for internal modules which are created by the variable connection code (e...">InternalModule</a> class needs to be properly unified with the normal <a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule and DeviceModule, to have a common interface for these module types...">Module</a> classes.  </dd>
+<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="class_chimera_t_k_1_1_internal_module.html#a24bed81e15f9b118bcac99cd5cc422f3">ChimeraTK::InternalModule::activate</a>  ()</dt>
 <dd>: Unify with <a class="el" href="class_chimera_t_k_1_1_module.html#acb588cb7df8290eab1961bd32234b085" title="Execute the module. ">Module::run()</a>  </dd>
-<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="class_chimera_t_k_1_1_internal_module.html#a7c306d0c2969c4f4151d2f0d7f42937d">ChimeraTK::InternalModule::deactivate</a>  ()</dt>
+<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="class_chimera_t_k_1_1_internal_module.html#a7c306d0c2969c4f4151d2f0d7f42937d">ChimeraTK::InternalModule::deactivate</a>  ()</dt>
 <dd>: Unify with <a class="el" href="class_chimera_t_k_1_1_module.html#ae3497a487a36f2e1a51bc01592aabf5b" title="Terminate the module. ">Module::terminate()</a>  </dd>
-<dt><a class="anchor" id="_todo000012"></a>Member <a class="el" href="struct_chimera_t_k_1_1_periodic_trigger.html#aea8fd071311bc0054bc73f4cfd2827a0">ChimeraTK::PeriodicTrigger::PeriodicTrigger</a>  (<a class="el" href="class_chimera_t_k_1_1_entity_owner.html" title="Base class for owners of other EntityOwners (e.g. ">EntityOwner</a> *owner, const std::string &amp;name, const std::string &amp;description, const uint32_t defaultPeriod=1000, bool eliminateHierarchy=false, const std::unordered_set&lt; std::string &gt; &amp;tags={}, std::string periodName="period", std::string tickName="tick")</dt>
-<dd>change into HierarchyModifyer flag!  </dd>
+<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="class_chimera_t_k_1_1_inversion_of_control_accessor.html#aedaf4ad5d8378ab6c5619eb31b611a98">ChimeraTK::InversionOfControlAccessor&lt; Derived &gt;::InversionOfControlAccessor</a>  (<a class="el" href="class_chimera_t_k_1_1_module.html" title="Base class for ApplicationModule and DeviceModule, to have a common interface for these module types...">Module</a> *owner, const std::string &amp;name, <a class="el" href="struct_chimera_t_k_1_1_variable_direction.html" title="Struct to define the direction of variables. ">VariableDirection</a> direction, std::string unit, size_t nElements, UpdateMode mode, const std::string &amp;description, const std::type_info *valueType, const std::unordered_set&lt; std::string &gt; &amp;tags={})</dt>
+<dd>FIXME eliminate dynamic_cast and the "lambda trick" by changing owner pointer type  </dd>
 <dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="struct_chimera_t_k_1_1_read_bit_mask.html#a78c2de777dc3529459cad9b63ff2fcaf">ChimeraTK::ReadBitMask&lt; NBITS &gt;::mainLoop</a>  ()</dt>
 <dd>TODO better make a <a class="el" href="class_chimera_t_k_1_1_module.html#ac91e2a2ce01c0616d57050b229cde5bb" title="Just call write() on all writable variables in the group. ">writeAll()</a> for VariableGroups  </dd>
-<dt><a class="anchor" id="_todo000013"></a>Class <a class="el" href="struct_chimera_t_k_1_1_scalar_pipe.html">ChimeraTK::ScalarPipe&lt; Type &gt;</a>  </dt>
+<dt><a class="anchor" id="_todo000012"></a>Class <a class="el" href="struct_chimera_t_k_1_1_scalar_pipe.html">ChimeraTK::ScalarPipe&lt; Type &gt;</a>  </dt>
 <dd>Make it more efficient by removing this module entirely in the ApplicationCore connection logic!  </dd>
-<dt><a class="anchor" id="_todo000019"></a>Member <a class="el" href="class_chimera_t_k_1_1_test_facility.html#aa89dcd98d96bef731b8dbd75964bb18c">ChimeraTK::TestFacility::runApplication</a>  () const</dt>
+<dt><a class="anchor" id="_todo000017"></a>Member <a class="el" href="class_chimera_t_k_1_1_test_facility.html#aa89dcd98d96bef731b8dbd75964bb18c">ChimeraTK::TestFacility::runApplication</a>  () const</dt>
 <dd>It is not understood why this happens! Decorated accessors are stored in different maps for scalars are arrays...  </dd>
 <dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html#a4899ab9738a12b99bb1c61d0cf98d265">ChimeraTK::VariableNetworkNode::addTag</a>  (const std::string &amp;tag)</dt>
-<dd>enforce this!  </dd>
-<dt><a class="anchor" id="_todo000020"></a>Member <a class="el" href="class_chimera_t_k_1_1_x_m_l_generator_visitor.html#a5fa92328f832990bc251ea958ed80ced">ChimeraTK::XMLGeneratorVisitor::dispatch</a>  (const <a class="el" href="class_chimera_t_k_1_1_variable_network_node.html" title="Class describing a node of a variable network. ">VariableNetworkNode</a> &amp;node) override</dt>
-<dd>TODO move this somewhere else, or at least take the namespace URI from a common place! </dd>
+<dd>enforce this! </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Oct 11 2022 03:54:09 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Nov 9 2022 04:54:13 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

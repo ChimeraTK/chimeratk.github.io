@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['variablelist',['VariableList',['../namespace_chimera_t_k.html#a4bfbdf81932b5329e6f49991fae02abc',1,'ChimeraTK']]]
+  ['mapofarray',['MapOfArray',['../struct_chimera_t_k_1_1_config_reader.html#a8a692faaaddd5419b5754fca31854b63',1,'ChimeraTK::ConfigReader']]],
+  ['mapofvar',['MapOfVar',['../struct_chimera_t_k_1_1_config_reader.html#ad514bd3865b91a2609de8c787dadaec9',1,'ChimeraTK::ConfigReader']]]
 ];

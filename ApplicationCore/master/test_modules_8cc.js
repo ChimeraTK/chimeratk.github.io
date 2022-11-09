@@ -16,12 +16,8 @@ var test_modules_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#a4821544d6dd45051837c6fe1c78a3abe", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#a8e515083ea4e6cd682e20c6d57ba35cb", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#a8614ce6fd4c8da54eea6afe89cfbed35", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#a0280ba7565cb73cb576a3c7591086a95", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#ac23fe6ca8a1afb3a430206cdc999cc4a", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#a695e09374252f192a0cc230d730fef2c", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#a48ec797b160ba091bb194a0882fa1623", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#a8d1a8553ac6153918e23845a529418ee", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#ac061868745661f1d128b1393bb804a50", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#a8f032dfe7e4405cdbb96e434c34ad78a", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#a20127d0a48bcd471b900539c4533cb78", null ]
+    [ "BOOST_AUTO_TEST_CASE", "test_modules_8cc.html#a66fe25197dcc1d3f436a2f4fbe73c83f", null ]
 ];

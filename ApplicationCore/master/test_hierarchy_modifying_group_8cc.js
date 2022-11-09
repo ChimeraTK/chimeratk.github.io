@@ -4,15 +4,8 @@ var test_hierarchy_modifying_group_8cc =
     [ "TestApplication", "struct_test_application.html", "struct_test_application" ],
     [ "TestModule", "struct_test_application_1_1_test_module.html", "struct_test_application_1_1_test_module" ],
     [ "ExtraHierarchy", "struct_test_application_1_1_test_module_1_1_extra_hierarchy.html", "struct_test_application_1_1_test_module_1_1_extra_hierarchy" ],
-    [ "TestModuleHidden", "struct_test_application_1_1_test_module_hidden.html", "struct_test_application_1_1_test_module_hidden" ],
-    [ "TestHelper", "struct_test_helper.html", "struct_test_helper" ],
     [ "TestApplication_empty", "struct_test_application__empty.html", "struct_test_application__empty" ],
     [ "TestModule", "struct_test_application__empty_1_1_test_module.html", "struct_test_application__empty_1_1_test_module" ],
-    [ "TestModuleGroup", "struct_test_application__empty_1_1_test_module_group.html", null ],
-    [ "TestApplication_moveAssignment", "struct_test_application__move_assignment.html", "struct_test_application__move_assignment" ],
-    [ "TestModule", "struct_test_application__move_assignment_1_1_test_module.html", "struct_test_application__move_assignment_1_1_test_module" ],
-    [ "TestApplication_moveConstruct", "struct_test_application__move_construct.html", "struct_test_application__move_construct" ],
-    [ "TestModule", "struct_test_application__move_construct_1_1_test_module.html", "struct_test_application__move_construct_1_1_test_module" ],
     [ "BOOST_TEST_MODULE", "test_hierarchy_modifying_group_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#aa2537a495d17946d19417c636cde3711", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#a68c72ba3805d44b1b9969abe250c84c7", null ],
@@ -30,9 +23,6 @@ var test_hierarchy_modifying_group_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#a24b3709873566b0c4723a7eb2ee740f5", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#a3e1378990ce97e1f77894f340c06b12b", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#a41014f830237a265f6978de1a6b6f4e0", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#a5791d84b4c08af7cdc5e9abc9d42a10b", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#ac136e97adfba6b3856a29bdbbc442a18", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#a655c4e9829972f0a47a6965c528b283a", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#afbac65e07d7e2f36e189bd6c6cb4b54e", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_hierarchy_modifying_group_8cc.html#af3c502828bc0942d844d7ab998f5e418", null ]
+    [ "check", "test_hierarchy_modifying_group_8cc.html#a792a5c2bd5abce0c6029dcea8fa40d25", null ]
 ];

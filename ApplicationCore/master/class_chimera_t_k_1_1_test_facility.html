@@ -95,12 +95,23 @@ $(document).ready(function(){initNavTree('class_chimera_t_k_1_1_test_facility.ht
  <a href="class_chimera_t_k_1_1_test_facility.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for ChimeraTK::TestFacility:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afc1238aaadcddda96d35a6c64b88326a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#afc1238aaadcddda96d35a6c64b88326a">TestFacility</a> (bool enableTestableMode=true)</td></tr>
 <tr class="memdesc:afc1238aaadcddda96d35a6c64b88326a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor will internally obtain the instance of the application, so the instance of the <a class="el" href="class_chimera_t_k_1_1_test_facility.html" title="Helper class to facilitate tests of applications based on ApplicationCore. ">TestFacility</a> must not be created before the application (i.e.  <a href="#afc1238aaadcddda96d35a6c64b88326a">More...</a><br /></td></tr>
 <tr class="separator:afc1238aaadcddda96d35a6c64b88326a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a554e66f2c4ce8e54e4e28168b0235"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#a00a554e66f2c4ce8e54e4e28168b0235">TestFacility</a> (<a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> &amp;<a class="el" href="class_chimera_t_k_1_1_test_facility.html#a9290e710fc1d537eb2ab734c05ca92ac">app</a>, bool enableTestableMode=true)</td></tr>
+<tr class="memdesc:a00a554e66f2c4ce8e54e4e28168b0235"><td class="mdescLeft">&#160;</td><td class="mdescRight">The passed application will automatically be put into the testable mode and initialised.  <a href="#a00a554e66f2c4ce8e54e4e28168b0235">More...</a><br /></td></tr>
+<tr class="separator:a00a554e66f2c4ce8e54e4e28168b0235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa89dcd98d96bef731b8dbd75964bb18c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#aa89dcd98d96bef731b8dbd75964bb18c">runApplication</a> () const</td></tr>
 <tr class="memdesc:aa89dcd98d96bef731b8dbd75964bb18c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the application in testable mode.  <a href="#aa89dcd98d96bef731b8dbd75964bb18c">More...</a><br /></td></tr>
 <tr class="separator:aa89dcd98d96bef731b8dbd75964bb18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +156,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aabbb782698a274088f5ee5cb1a823a0f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#aabbb782698a274088f5ee5cb1a823a0f">setArrayDefault</a> (const ChimeraTK::RegisterPath &amp;name, const std::vector&lt; T &gt; &amp;value)</td></tr>
 <tr class="memdesc:aabbb782698a274088f5ee5cb1a823a0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default value for array process variable.  <a href="#aabbb782698a274088f5ee5cb1a823a0f">More...</a><br /></td></tr>
 <tr class="separator:aabbb782698a274088f5ee5cb1a823a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17be77a969336fec48a22d7b796d1615"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a17be77a969336fec48a22d7b796d1615"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#a17be77a969336fec48a22d7b796d1615">getAccessor</a> (const ChimeraTK::RegisterPath &amp;name) const</td></tr>
+<tr class="memdesc:a17be77a969336fec48a22d7b796d1615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to obtain a process variable from the control system.  <a href="#a17be77a969336fec48a22d7b796d1615">More...</a><br /></td></tr>
+<tr class="separator:a17be77a969336fec48a22d7b796d1615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -163,11 +178,13 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a8864bdf189948e04323ec755aa06856c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaa04745a7c6c50bff0806aa747574a6"><td class="memItemLeft" align="right" valign="top">ChimeraTK::TemplateUserTypeMap&lt; <a class="el" href="class_chimera_t_k_1_1_test_facility.html#a35bb27a7b17bd09da4b3d9649e074006">Defaults</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#abaa04745a7c6c50bff0806aa747574a6">defaults</a></td></tr>
 <tr class="separator:abaa04745a7c6c50bff0806aa747574a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9290e710fc1d537eb2ab734c05ca92ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_test_facility.html#a9290e710fc1d537eb2ab734c05ca92ac">app</a></td></tr>
+<tr class="separator:a9290e710fc1d537eb2ab734c05ca92ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper class to facilitate tests of applications based on ApplicationCore. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00037">37</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00035">35</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ac6004f239d9aeb03ae39993d5310cdec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6004f239d9aeb03ae39993d5310cdec">&#9670;&nbsp;</a></span>AccessorMap</h2>
@@ -191,7 +208,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00112">112</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00120">120</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -217,13 +234,13 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00117">117</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00125">125</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afc1238aaadcddda96d35a6c64b88326a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc1238aaadcddda96d35a6c64b88326a">&#9670;&nbsp;</a></span>TestFacility()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afc1238aaadcddda96d35a6c64b88326a">&#9670;&nbsp;</a></span>TestFacility() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,12 +267,52 @@ template&lt;typename UserType &gt; </div>
 <p>usually not before the main() routine). The application will automatically be put into the testable mode and initialised. </p>
 
 <p class="definition">Definition at line <a class="el" href="_test_facility_8cc_source.html#l00010">10</a> of file <a class="el" href="_test_facility_8cc_source.html">TestFacility.cc</a>.</p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+
 </div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_afc1238aaadcddda96d35a6c64b88326a_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<a id="a00a554e66f2c4ce8e54e4e28168b0235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00a554e66f2c4ce8e54e4e28168b0235">&#9670;&nbsp;</a></span>TestFacility() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChimeraTK::TestFacility::TestFacility </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_application.html">Application</a> &amp;&#160;</td>
+          <td class="paramname"><em>app</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enableTestableMode</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The passed application will automatically be put into the testable mode and initialised. </p>
+
+<p class="definition">Definition at line <a class="el" href="_test_facility_8cc_source.html#l00013">13</a> of file <a class="el" href="_test_facility_8cc_source.html">TestFacility.cc</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_a00a554e66f2c4ce8e54e4e28168b0235_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -279,15 +336,40 @@ template&lt;typename UserType &gt; </div>
 
 <p>Check whether data has been sent to the application so <a class="el" href="class_chimera_t_k_1_1_test_facility.html#a8e4b9b277fb176ceaf6bd8dd3465a780" title="Perform a &quot;step&quot; of the application. ">stepApplication()</a> can be called. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8cc_source.html#l00086">86</a> of file <a class="el" href="_test_facility_8cc_source.html">TestFacility.cc</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_test_facility_8cc_source.html#l00098">98</a> of file <a class="el" href="_test_facility_8cc_source.html">TestFacility.cc</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_a4e063b255066ae6cd381f006ddac4e74_cgraph.svg" width="408" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_a4e063b255066ae6cd381f006ddac4e74_cgraph.svg" width="408" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+
+</div>
+</div>
+<a id="a17be77a969336fec48a22d7b796d1615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17be77a969336fec48a22d7b796d1615">&#9670;&nbsp;</a></span>getAccessor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; T &gt; &gt; ChimeraTK::TestFacility::getAccessor </td>
+          <td>(</td>
+          <td class="paramtype">const ChimeraTK::RegisterPath &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to obtain a process variable from the control system. </p>
+<p>For conveniently creating arrays and scalars, see getArray, getScalar and getVoid </p>
+
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00226">226</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -311,15 +393,7 @@ template&lt;typename T &gt; </div>
 
 <p>Obtain an array-type process variable from the application, which is published to the control system. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00159">159</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_a0577c3398f60d9aa3485874d87fd9eb8_cgraph.svg" width="408" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00142">142</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -351,21 +425,13 @@ template&lt;typename T &gt; </div>
 
 <p>Obtain a scalar process variable from the application, which is published to the control system. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00125">125</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00135">135</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_aa2724549aa631be07b9163ebb4c1356b_cgraph.svg" width="408" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_aa2724549aa631be07b9163ebb4c1356b_icgraph.svg" width="424" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_aa2724549aa631be07b9163ebb4c1356b_icgraph.svg" width="431" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -389,13 +455,13 @@ template&lt;typename T &gt; </div>
 
 <p>Obtain a void process variable from the application, which is published to the control system. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8cc_source.html#l00098">98</a> of file <a class="el" href="_test_facility_8cc_source.html">TestFacility.cc</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_test_facility_8cc_source.html#l00110">110</a> of file <a class="el" href="_test_facility_8cc_source.html">TestFacility.cc</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_a8f7965aa97520a44bcd2f7c7ed707856_cgraph.svg" width="408" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_a8f7965aa97520a44bcd2f7c7ed707856_icgraph.svg" width="431" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -421,15 +487,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>Convenience function to read the latest value of an array process variable in a single call. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00226">226</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_aa835c14a6959934ffd108c9a34243ad5_icgraph.svg" width="424" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00182">182</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -453,13 +511,13 @@ template&lt;typename TYPE &gt; </div>
 
 <p>Convenience function to read the latest value of a scalar process variable in a single call. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00217">217</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00173">173</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_a3dbd50a75109e977ed45a13ae29234cc_icgraph.svg" width="424" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_a3dbd50a75109e977ed45a13ae29234cc_icgraph.svg" width="424" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -481,23 +539,23 @@ template&lt;typename TYPE &gt; </div>
 </div><div class="memdoc">
 
 <p>Start the application in testable mode. </p>
-<p>Since pv_casted is the undecorated PV (lacking the <a class="el" href="class_chimera_t_k_1_1_testable_mode_accessor_decorator.html" title="Decorator of the NDRegisterAccessor which facilitates tests of the application. ">TestableModeAccessorDecorator</a>), we need to copy the value also to the decorator. We still have to write through the undecorated PV, otherwise the tests are stalled.</p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo:</a></b></dt><dd>It is not understood why this happens! Decorated accessors are stored in different maps for scalars are arrays... </dd></dl>
+<p>Since pv_casted is the undecorated PV (lacking the TestableModeAccessorDecorator), we need to copy the value also to the decorator. We still have to write through the undecorated PV, otherwise the tests are stalled.</p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd>It is not understood why this happens! Decorated accessors are stored in different maps for scalars are arrays... </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8cc_source.html#l00020">20</a> of file <a class="el" href="_test_facility_8cc_source.html">TestFacility.cc</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_test_facility_8cc_source.html#l00023">23</a> of file <a class="el" href="_test_facility_8cc_source.html">TestFacility.cc</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_aa89dcd98d96bef731b8dbd75964bb18c_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_aa89dcd98d96bef731b8dbd75964bb18c_icgraph.svg" width="424" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_aa89dcd98d96bef731b8dbd75964bb18c_icgraph.svg" width="431" height="168"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -533,15 +591,7 @@ template&lt;typename T &gt; </div>
 
 <p>Set default value for array process variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00247">247</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_aabbb782698a274088f5ee5cb1a823a0f_cgraph.svg" width="408" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00203">203</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -575,20 +625,12 @@ template&lt;typename T &gt; </div>
 
 <p>Set default value for scalar process variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00235">235</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00191">191</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_aaec541448a82eaf896cf4acbeb16cf24_cgraph.svg" width="408" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_aaec541448a82eaf896cf4acbeb16cf24_icgraph.svg" width="424" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -614,21 +656,21 @@ template&lt;typename T &gt; </div>
 <p>Perform a "step" of the application. </p>
 <p>This runs the application until all input provided to it has been processed and all application modules wait for new data in blocking read calls. This function returns only after the application has reached that stated and was paused again. After returning from this function, the result can be checked and new data can be provided to the application. The new data will not be processed until the next call to step(). </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8cc_source.html#l00092">92</a> of file <a class="el" href="_test_facility_8cc_source.html">TestFacility.cc</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_test_facility_8cc_source.html#l00104">104</a> of file <a class="el" href="_test_facility_8cc_source.html">TestFacility.cc</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_a8e4b9b277fb176ceaf6bd8dd3465a780_cgraph.svg" width="100%" height="557"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_a8e4b9b277fb176ceaf6bd8dd3465a780_cgraph.svg" width="408" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_a8e4b9b277fb176ceaf6bd8dd3465a780_icgraph.svg" width="663" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_a8e4b9b277fb176ceaf6bd8dd3465a780_icgraph.svg" width="100%" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -664,15 +706,7 @@ template&lt;typename TYPE &gt; </div>
 
 <p>Convenience function to write an array process variable in a single call. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00202">202</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_a55f38cb91d70939e53456f4735991c72_icgraph.svg" width="424" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00158">158</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -706,13 +740,13 @@ template&lt;typename TYPE &gt; </div>
 
 <p>Convenience function to write a scalar process variable in a single call. </p>
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00193">193</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00149">149</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_af3ea3bbf51b30ec24455a42ac67b60f5_icgraph.svg" width="424" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_test_facility_af3ea3bbf51b30ec24455a42ac67b60f5_icgraph.svg" width="424" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -739,7 +773,31 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00113">113</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00121">121</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+
+</div>
+</div>
+<a id="a9290e710fc1d537eb2ab734c05ca92ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9290e710fc1d537eb2ab734c05ca92ac">&#9670;&nbsp;</a></span>app</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chimera_t_k_1_1_application.html">Application</a>&amp; ChimeraTK::TestFacility::app</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00128">128</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -763,7 +821,7 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00118">118</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00126">126</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -787,7 +845,7 @@ template&lt;typename TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00105">105</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_test_facility_8h_source.html#l00113">113</a> of file <a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>.</p>
 
 </div>
 </div>
@@ -801,7 +859,7 @@ template&lt;typename TYPE &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_test_facility.html">TestFacility</a></li>
-    <li class="footer">Generated on Tue Oct 11 2022 03:54:11 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Nov 9 2022 04:54:15 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

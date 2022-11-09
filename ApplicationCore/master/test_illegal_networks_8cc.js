@@ -1,13 +1,16 @@
 var test_illegal_networks_8cc =
 [
-    [ "TestModule", "struct_test_module.html", "struct_test_module" ],
-    [ "TestApplication", "struct_test_application.html", "struct_test_application" ],
+    [ "TestApplication1", "struct_test_application1.html", "struct_test_application1" ],
+    [ "TestApplication3", "struct_test_application3.html", "struct_test_application3" ],
+    [ "TestApplication4", "struct_test_application4.html", "struct_test_application4" ],
+    [ "TestApplication5", "struct_test_application5.html", "struct_test_application5" ],
+    [ "TestApplication6", "struct_test_application6.html", "struct_test_application6" ],
     [ "BOOST_TEST_MODULE", "test_illegal_networks_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
-    [ "test_types", "test_illegal_networks_8cc.html#aae17d3638073297654152058593b98ec", null ],
-    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_illegal_networks_8cc.html#ada5bc554fe4926a57e22e7ab4a73b784", null ],
-    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_illegal_networks_8cc.html#a4d681787d13ca828f2b2a080c875920d", null ],
-    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_illegal_networks_8cc.html#a7b05e729521b10bcc1cb7f3e02bb8f81", null ],
-    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_illegal_networks_8cc.html#aab8a2d4682181ab44159a9526098cbf7", null ],
-    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_illegal_networks_8cc.html#a8ed6fe2612b48ae464a55359fddbed5f", null ],
-    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_illegal_networks_8cc.html#a8f1a03ddce140ac4e7e5b78a41a14a70", null ]
+    [ "TestTypes", "test_illegal_networks_8cc.html#ac48b3b5512f465e5797f1a1cc6838cee", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_illegal_networks_8cc.html#a658dd88d29e08cbbaf1f8855879e75dd", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_illegal_networks_8cc.html#acb44ac04feb1e7c8c4ea933dc2113e46", null ],
+    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_illegal_networks_8cc.html#acda0d5aad356c9747fab2ea53d2cc058", null ],
+    [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "test_illegal_networks_8cc.html#a3b1461d8df1af891d35426fe8028bfb5", null ],
+    [ "mainLoop", "test_illegal_networks_8cc.html#af14601579e7c6dd672a85c562800b1fa", null ],
+    [ "consumingPush", "test_illegal_networks_8cc.html#a6e2ca3d4094e48a3828f04a017ebbc6a", null ]
 ];

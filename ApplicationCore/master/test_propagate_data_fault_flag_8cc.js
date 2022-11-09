@@ -1,6 +1,7 @@
 var test_propagate_data_fault_flag_8cc =
 [
     [ "TestModule1", "struct_test_module1.html", "struct_test_module1" ],
+    [ "TestModule2", "struct_test_module2.html", "struct_test_module2" ],
     [ "TestApplication1", "struct_test_application1.html", "struct_test_application1" ],
     [ "TestApplication2", "struct_test_application2.html", "struct_test_application2" ],
     [ "Module1", "struct_module1.html", "struct_module1" ],

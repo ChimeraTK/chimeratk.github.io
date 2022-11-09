@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xmlgeneratorvisitor',['XMLGeneratorVisitor',['../class_chimera_t_k_1_1_x_m_l_generator_visitor.html#a7d044af6f246514eaede8708fef1cec6',1,'ChimeraTK::XMLGeneratorVisitor']]]
+  ['xmlgenerator',['XMLGenerator',['../class_chimera_t_k_1_1_x_m_l_generator.html#ae8f7946675397c4758848085185b3c54',1,'ChimeraTK::XMLGenerator']]]
 ];

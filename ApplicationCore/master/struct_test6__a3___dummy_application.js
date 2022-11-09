@@ -2,9 +2,9 @@ var struct_test6__a3___dummy_application =
 [
     [ "Test6_a3_DummyApplication", "struct_test6__a3___dummy_application.html#a2e07d7ee6b5af41423c37ad61cf1672d", null ],
     [ "~Test6_a3_DummyApplication", "struct_test6__a3___dummy_application.html#a8a193e1560f869e41935dc181f2fa75f", null ],
-    [ "defineConnections", "struct_test6__a3___dummy_application.html#abef0b790d0b39dc658ae10771b069fa3", null ],
-    [ "csModule", "struct_test6__a3___dummy_application.html#a27df2a6c1752fa5bf5d66b6bcf842f20", null ],
     [ "device", "struct_test6__a3___dummy_application.html#a1163857f08b3b82cfee1f782e002cd26", null ],
     [ "device2", "struct_test6__a3___dummy_application.html#a4f94c5cb6392051917b586e2876821f7", null ],
-    [ "readerModule", "struct_test6__a3___dummy_application.html#ac310de998f666cb4f9b7725d5d7bbc2c", null ]
+    [ "ReaderModule", "struct_test6__a3___dummy_application.html#aa9988c98fc576bfadaae104b79d4c634", null ],
+    [ "reg1", "struct_test6__a3___dummy_application.html#a31094d1c07e3e897920167ac86ed3ed3", null ],
+    [ "this", "struct_test6__a3___dummy_application.html#a86baf22c3988b3faa98a885873c47124", null ]
 ];

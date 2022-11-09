@@ -5,5 +5,5 @@ var struct_test_fixture_with_eception_dummy =
     [ "application", "struct_test_fixture_with_eception_dummy.html#aa51956fb4029da5fef385407f0616922", null ],
     [ "deviceBackend", "struct_test_fixture_with_eception_dummy.html#ac78aed2f92b009ecd53b7f097622a08b", null ],
     [ "exceptionDummyRegister", "struct_test_fixture_with_eception_dummy.html#a686d9737746049597f33f644f3efd068", null ],
-    [ "testFacitiy", "struct_test_fixture_with_eception_dummy.html#aa2489b213ee36f4b6ce7b224fdc5f0c5", null ]
+    [ "testFacility", "struct_test_fixture_with_eception_dummy.html#aaa23b774c0b1b941bb61eef3a22fa52f", null ]
 ];

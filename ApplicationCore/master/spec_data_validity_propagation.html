@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <li><a class="anchor" id="dataValidity_2_5_2"></a>2.5.2 The first failing read returns with the old data and the 'faulty' flag. Like this the flag is propagated to the outputs. Only further reads might freeze until the device is available again. [<a class="el" href="test_data_validity_propagation_8cc.html#testDataValidity_1_3">T</a>]</li>
 </ul>
 <ul>
-<li><a class="anchor" id="dataValidity_2_6_1"></a>2.6.1 For device variables, the requirement of setting receiving endpoints to 'faulty' on construction can not be fulfilled. In DeviceAccess the accessors are bidirectional and provide no possibility to distinguish sender and receiver. Instead, the validity is set right after construction in <a class="el" href="class_chimera_t_k_1_1_application.html#a3f9ce1e49b8dfc7f9228a2db7db0a775" title="Perform the actual connection of an accessor to a device register. ">Application::createDeviceVariable()</a> for receivers.</li>
+<li><a class="anchor" id="dataValidity_2_6_1"></a>2.6.1 For device variables, the requirement of setting receiving endpoints to 'faulty' on construction can not be fulfilled. In DeviceAccess the accessors are bidirectional and provide no possibility to distinguish sender and receiver. Instead, the validity is set right after construction in Application::createDeviceVariable() for receivers.</li>
 </ul>
 <ul>
 <li>2.1 The <a class="el" href="class_chimera_t_k_1_1_meta_data_propagating_register_decorator.html" title="NDRegisterAccessorDecorator which propagates meta data attached to input process variables through th...">MetaDataPropagatingRegisterDecorator</a> also propagates the version number, not only the data validity flag. Hence it's not called DataValidityPropagatingRegisterDecorator.</li>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('spec_data_validity_propagation.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Generated on Tue Oct 11 2022 03:54:09 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Nov 9 2022 04:54:13 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -9,6 +9,8 @@ var test_status_aggregator_8cc =
     [ "OuterGroup", "struct_test_application2_levels_1_1_outer_group.html", "struct_test_application2_levels_1_1_outer_group" ],
     [ "TestApplicationTags", "struct_test_application_tags.html", "struct_test_application_tags" ],
     [ "OuterGroup", "struct_test_application_tags_1_1_outer_group.html", "struct_test_application_tags_1_1_outer_group" ],
+    [ "TestApplicationMessage", "struct_test_application_message.html", "struct_test_application_message" ],
+    [ "OuterGroup", "struct_test_application_message_1_1_outer_group.html", "struct_test_application_message_1_1_outer_group" ],
     [ "BOOST_NO_EXCEPTIONS", "test_status_aggregator_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
     [ "BOOST_TEST_MODULE", "test_status_aggregator_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_status_aggregator_8cc.html#a24c884888833ff767806404b0da45e75", null ],

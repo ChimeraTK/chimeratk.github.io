@@ -5,6 +5,7 @@ var struct_test_module1 =
     [ "mainLoop", "struct_test_module1.html#a3b83a953299e9702871d8e091451d988", null ],
     [ "mainLoop", "struct_test_module1.html#a3b83a953299e9702871d8e091451d988", null ],
     [ "mainLoop", "struct_test_module1.html#a3b83a953299e9702871d8e091451d988", null ],
+    [ "prepare", "struct_test_module1.html#aa630e0f880ce7b1524d9dae57decfead", null ],
     [ "decCalled", "struct_test_module1.html#a728eb8a0eb2d5b9d97069c95f162029b", null ],
     [ "i1", "struct_test_module1.html#a80f80ec3ac4d1e782f1d12ffe11ed2dc", null ],
     [ "i2", "struct_test_module1.html#a2691b61cf7c769a0f454b01945698cf5", null ],

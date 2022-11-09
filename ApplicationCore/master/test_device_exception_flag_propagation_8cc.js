@@ -5,6 +5,7 @@ var test_device_exception_flag_propagation_8cc =
     [ "Name2", "struct_test_application_1_1_name_1_1_name2.html", "struct_test_application_1_1_name_1_1_name2" ],
     [ "Module", "struct_test_application_1_1_module.html", "struct_test_application_1_1_module" ],
     [ "Vars", "struct_test_application_1_1_module_1_1_vars.html", "struct_test_application_1_1_module_1_1_vars" ],
+    [ "BOOST_NO_EXCEPTIONS", "test_device_exception_flag_propagation_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
     [ "BOOST_TEST_MODULE", "test_device_exception_flag_propagation_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_device_exception_flag_propagation_8cc.html#a5fc63a9858aa094b9e5d1103b7cc8360", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_device_exception_flag_propagation_8cc.html#a25fa0a755b26bfd55126e952cc2300b7", null ],

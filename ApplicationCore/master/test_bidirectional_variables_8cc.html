@@ -92,13 +92,12 @@ $(document).ready(function(){initNavTree('test_bidirectional_variables_8cc.html'
 <div class="textblock"><code>#include &lt;future&gt;</code><br />
 <code>#include &quot;<a class="el" href="_application_8h_source.html">Application.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_application_module_8h_source.html">ApplicationModule.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_array_accessor_8h_source.html">ArrayAccessor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="check__timeout_8h_source.html">check_timeout.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_control_system_module_8h_source.html">ControlSystemModule.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_scalar_accessor_8h_source.html">ScalarAccessor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>&quot;</code><br />
 <code>#include &lt;ChimeraTK/BackendFactory.h&gt;</code><br />
 <code>#include &lt;boost/mpl/list.hpp&gt;</code><br />
+<code>#include &lt;boost/thread/latch.hpp&gt;</code><br />
 <code>#include &lt;boost/test/included/unit_test.hpp&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for testBidirectionalVariables.cc:</div>
@@ -114,9 +113,12 @@ $(document).ready(function(){initNavTree('test_bidirectional_variables_8cc.html'
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_module_a.html">ModuleA</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_module_a.html" title="ModuleA has two additonal inputs to get invalidity flags. It is reading all inputs with ReadAny...">ModuleA</a> has two additonal inputs to get invalidity flags. It is reading all inputs with ReadAny.  <a href="struct_module_a.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_module_a.html" title="ModuleA has two additional inputs to get invalidity flags. It is reading all inputs with ReadAny...">ModuleA</a> has two additional inputs to get invalidity flags. It is reading all inputs with ReadAny.  <a href="struct_module_a.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_module_b.html">ModuleB</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_module_d.html">ModuleD</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Involve the DeviceModule. Here are some variables from a test device.  <a href="struct_module_d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_application.html">TestApplication&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,9 +127,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_init_test_application.html">InitTestApplication</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_application2.html">TestApplication2&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_application2.html">TestApplication2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_application2_1_1_module.html">TestApplication2&lt; T &gt;::Module&lt; ACCESSOR &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_application2_1_1_module.html">TestApplication2::Module&lt; ACCESSOR &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -165,7 +167,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_bidirectional_variables_8cc_source.html#l00019">19</a> of file <a class="el" href="test_bidirectional_variables_8cc_source.html">testBidirectionalVariables.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_bidirectional_variables_8cc_source.html#l00018">18</a> of file <a class="el" href="test_bidirectional_variables_8cc_source.html">testBidirectionalVariables.cc</a>.</p>
 
 </div>
 </div>
@@ -202,7 +204,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_bidirectional_variables_8cc_source.html#l00143">143</a> of file <a class="el" href="test_bidirectional_variables_8cc_source.html">testBidirectionalVariables.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_bidirectional_variables_8cc_source.html#l00157">157</a> of file <a class="el" href="test_bidirectional_variables_8cc_source.html">testBidirectionalVariables.cc</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -230,15 +232,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_bidirectional_variables_8cc_source.html#l00195">195</a> of file <a class="el" href="test_bidirectional_variables_8cc_source.html">testBidirectionalVariables.cc</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_bidirectional_variables_8cc_ab92f83b705533f950d1ad7405f189ba0_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="test_bidirectional_variables_8cc_source.html#l00209">209</a> of file <a class="el" href="test_bidirectional_variables_8cc_source.html">testBidirectionalVariables.cc</a>.</p>
 
 </div>
 </div>
@@ -258,7 +252,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_bidirectional_variables_8cc_source.html#l00352">352</a> of file <a class="el" href="test_bidirectional_variables_8cc_source.html">testBidirectionalVariables.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_bidirectional_variables_8cc_source.html#l00362">362</a> of file <a class="el" href="test_bidirectional_variables_8cc_source.html">testBidirectionalVariables.cc</a>.</p>
 
 </div>
 </div>
@@ -278,15 +272,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_bidirectional_variables_8cc_source.html#l00400">400</a> of file <a class="el" href="test_bidirectional_variables_8cc_source.html">testBidirectionalVariables.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_bidirectional_variables_8cc_a6840c90274b0756f647d366cb6ff8cd5_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="test_bidirectional_variables_8cc_source.html#l00410">410</a> of file <a class="el" href="test_bidirectional_variables_8cc_source.html">testBidirectionalVariables.cc</a>.</p>
 
 </div>
 </div>
@@ -306,15 +292,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_bidirectional_variables_8cc_source.html#l00428">428</a> of file <a class="el" href="test_bidirectional_variables_8cc_source.html">testBidirectionalVariables.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_bidirectional_variables_8cc_ac5202a9b6bdba804a1305c63d70e90ee_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="test_bidirectional_variables_8cc_source.html#l00438">438</a> of file <a class="el" href="test_bidirectional_variables_8cc_source.html">testBidirectionalVariables.cc</a>.</p>
 
 </div>
 </div>
@@ -334,12 +312,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_bidirectional_variables_8cc_source.html#l00473">473</a> of file <a class="el" href="test_bidirectional_variables_8cc_source.html">testBidirectionalVariables.cc</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="test_bidirectional_variables_8cc_source.html#l00483">483</a> of file <a class="el" href="test_bidirectional_variables_8cc_source.html">testBidirectionalVariables.cc</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_bidirectional_variables_8cc_a739d28de15adc585ad1298db99693753_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
@@ -352,7 +330,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_bidirectional_variables_8cc.html">testBidirectionalVariables.cc</a></li>
-    <li class="footer">Generated on Tue Oct 11 2022 03:54:09 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Nov 9 2022 04:54:13 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

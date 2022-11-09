@@ -2,6 +2,7 @@ var test_bidirectional_variables_8cc =
 [
     [ "ModuleA", "struct_module_a.html", "struct_module_a" ],
     [ "ModuleB", "struct_module_b.html", "struct_module_b" ],
+    [ "ModuleD", "struct_module_d.html", "struct_module_d" ],
     [ "TestApplication", "struct_test_application.html", "struct_test_application" ],
     [ "ModuleC", "struct_module_c.html", "struct_module_c" ],
     [ "InitTestApplication", "struct_init_test_application.html", "struct_init_test_application" ],

@@ -85,12 +85,14 @@ $(document).ready(function(){initNavTree('test_illegal_networks_8cc.html','');})
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">testIllegalNetworks.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;future&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_test_facility_8h_source.html">TestFacility.h</a>&quot;</code><br />
+<code>#include &lt;future&gt;</code><br />
 <code>#include &quot;<a class="el" href="_application_8h_source.html">Application.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_application_module_8h_source.html">ApplicationModule.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_array_accessor_8h_source.html">ArrayAccessor.h</a>&quot;</code><br />
@@ -112,9 +114,15 @@ $(document).ready(function(){initNavTree('test_illegal_networks_8cc.html','');})
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_module.html">TestModule&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_application1.html">TestApplication1&lt; ModuleT &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_application.html">TestApplication&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_application3.html">TestApplication3&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_application4.html">TestApplication4</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_application5.html">TestApplication5&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_test_application6.html">TestApplication6&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -124,23 +132,26 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aae17d3638073297654152058593b98ec"><td class="memItemLeft" align="right" valign="top">typedef boost::mpl::list&lt; int8_t, uint8_t, int16_t, uint16_t, int32_t, uint32_t, float, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_illegal_networks_8cc.html#aae17d3638073297654152058593b98ec">test_types</a></td></tr>
-<tr class="separator:aae17d3638073297654152058593b98ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac48b3b5512f465e5797f1a1cc6838cee"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_illegal_networks_8cc.html#ac48b3b5512f465e5797f1a1cc6838cee">TestTypes</a> = boost::mpl::list&lt; int8_t, uint8_t, int16_t, uint16_t, int32_t, uint32_t, float, double, ctk::Boolean &gt;</td></tr>
+<tr class="separator:ac48b3b5512f465e5797f1a1cc6838cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ada5bc554fe4926a57e22e7ab4a73b784"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_illegal_networks_8cc.html#ada5bc554fe4926a57e22e7ab4a73b784">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testTwoScalarPollPushAccessors, T, <a class="el" href="test_app_module_connections_8cc.html#aae17d3638073297654152058593b98ec">test_types</a>)</td></tr>
-<tr class="separator:ada5bc554fe4926a57e22e7ab4a73b784"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d681787d13ca828f2b2a080c875920d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_illegal_networks_8cc.html#a4d681787d13ca828f2b2a080c875920d">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testNoFeeder, T, <a class="el" href="test_app_module_connections_8cc.html#aae17d3638073297654152058593b98ec">test_types</a>)</td></tr>
-<tr class="separator:a4d681787d13ca828f2b2a080c875920d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b05e729521b10bcc1cb7f3e02bb8f81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_illegal_networks_8cc.html#a7b05e729521b10bcc1cb7f3e02bb8f81">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testTwoFeeders, T, <a class="el" href="test_app_module_connections_8cc.html#aae17d3638073297654152058593b98ec">test_types</a>)</td></tr>
-<tr class="separator:a7b05e729521b10bcc1cb7f3e02bb8f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab8a2d4682181ab44159a9526098cbf7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_illegal_networks_8cc.html#aab8a2d4682181ab44159a9526098cbf7">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testTooManyPollingConsumers, T, <a class="el" href="test_app_module_connections_8cc.html#aae17d3638073297654152058593b98ec">test_types</a>)</td></tr>
-<tr class="separator:aab8a2d4682181ab44159a9526098cbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ed6fe2612b48ae464a55359fddbed5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_illegal_networks_8cc.html#a8ed6fe2612b48ae464a55359fddbed5f">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testDifferentNrElements, T, <a class="el" href="test_app_module_connections_8cc.html#aae17d3638073297654152058593b98ec">test_types</a>)</td></tr>
-<tr class="separator:a8ed6fe2612b48ae464a55359fddbed5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f1a03ddce140ac4e7e5b78a41a14a70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_illegal_networks_8cc.html#a8f1a03ddce140ac4e7e5b78a41a14a70">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testConstantTrigger, T, <a class="el" href="test_app_module_connections_8cc.html#aae17d3638073297654152058593b98ec">test_types</a>)</td></tr>
-<tr class="separator:a8f1a03ddce140ac4e7e5b78a41a14a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af14601579e7c6dd672a85c562800b1fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_illegal_networks_8cc.html#af14601579e7c6dd672a85c562800b1fa">mainLoop</a> () override</td></tr>
+<tr class="separator:af14601579e7c6dd672a85c562800b1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a658dd88d29e08cbbaf1f8855879e75dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_illegal_networks_8cc.html#a658dd88d29e08cbbaf1f8855879e75dd">BOOST_AUTO_TEST_CASE</a> (testTwoScalarPollPushAccessors)</td></tr>
+<tr class="separator:a658dd88d29e08cbbaf1f8855879e75dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda0d5aad356c9747fab2ea53d2cc058"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_illegal_networks_8cc.html#acda0d5aad356c9747fab2ea53d2cc058">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testTwoFeeders, T, <a class="el" href="test_illegal_networks_8cc.html#ac48b3b5512f465e5797f1a1cc6838cee">TestTypes</a>)</td></tr>
+<tr class="separator:acda0d5aad356c9747fab2ea53d2cc058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb44ac04feb1e7c8c4ea933dc2113e46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_illegal_networks_8cc.html#acb44ac04feb1e7c8c4ea933dc2113e46">BOOST_AUTO_TEST_CASE</a> (testTooManyPollingConsumers)</td></tr>
+<tr class="separator:acb44ac04feb1e7c8c4ea933dc2113e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1461d8df1af891d35426fe8028bfb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_illegal_networks_8cc.html#a3b1461d8df1af891d35426fe8028bfb5">BOOST_AUTO_TEST_CASE_TEMPLATE</a> (testDifferentNrElements, T, <a class="el" href="test_illegal_networks_8cc.html#ac48b3b5512f465e5797f1a1cc6838cee">TestTypes</a>)</td></tr>
+<tr class="separator:a3b1461d8df1af891d35426fe8028bfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a6e2ca3d4094e48a3828f04a017ebbc6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chimera_t_k_1_1_scalar_push_input.html">ctk::ScalarPushInput</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_illegal_networks_8cc.html#a6e2ca3d4094e48a3828f04a017ebbc6a">consumingPush</a> {this, &quot;/MyModule/readBack&quot;, &quot;&quot;, &quot;&quot;}</td></tr>
+<tr class="separator:a6e2ca3d4094e48a3828f04a017ebbc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a6b2a3852db8bb19ab6909bac01859985"></a>
@@ -155,118 +166,86 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00005">5</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00007">7</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="aae17d3638073297654152058593b98ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae17d3638073297654152058593b98ec">&#9670;&nbsp;</a></span>test_types</h2>
+<a id="ac48b3b5512f465e5797f1a1cc6838cee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac48b3b5512f465e5797f1a1cc6838cee">&#9670;&nbsp;</a></span>TestTypes</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::mpl::list&lt;int8_t, uint8_t, int16_t, uint16_t, int32_t, uint32_t, float, double&gt; <a class="el" href="test_app_module_connections_8cc.html#aae17d3638073297654152058593b98ec">test_types</a></td>
+          <td class="memname">using <a class="el" href="test_illegal_networks_8cc.html#ac48b3b5512f465e5797f1a1cc6838cee">TestTypes</a> =  boost::mpl::list&lt;int8_t, uint8_t, int16_t, uint16_t, int32_t, uint32_t, float, double, ctk::Boolean&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00022">22</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00024">24</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ada5bc554fe4926a57e22e7ab4a73b784"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada5bc554fe4926a57e22e7ab4a73b784">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[1/6]</span></h2>
+<a id="a658dd88d29e08cbbaf1f8855879e75dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a658dd88d29e08cbbaf1f8855879e75dd">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE_TEMPLATE </td>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
           <td class="paramtype">testTwoScalarPollPushAccessors&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="test_app_module_connections_8cc.html#aae17d3638073297654152058593b98ec">test_types</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00066">66</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00047">47</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_illegal_networks_8cc_ada5bc554fe4926a57e22e7ab4a73b784_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_illegal_networks_8cc_a658dd88d29e08cbbaf1f8855879e75dd_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a4d681787d13ca828f2b2a080c875920d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d681787d13ca828f2b2a080c875920d">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[2/6]</span></h2>
+<a id="acb44ac04feb1e7c8c4ea933dc2113e46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb44ac04feb1e7c8c4ea933dc2113e46">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE_TEMPLATE </td>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">testNoFeeder&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">testTooManyPollingConsumers&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="test_app_module_connections_8cc.html#aae17d3638073297654152058593b98ec">test_types</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00083">83</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00118">118</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_illegal_networks_8cc_a4d681787d13ca828f2b2a080c875920d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_illegal_networks_8cc_acb44ac04feb1e7c8c4ea933dc2113e46_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a7b05e729521b10bcc1cb7f3e02bb8f81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b05e729521b10bcc1cb7f3e02bb8f81">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[3/6]</span></h2>
+<a id="acda0d5aad356c9747fab2ea53d2cc058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda0d5aad356c9747fab2ea53d2cc058">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,7 +265,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="test_app_module_connections_8cc.html#aae17d3638073297654152058593b98ec">test_types</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="test_illegal_networks_8cc.html#ac48b3b5512f465e5797f1a1cc6838cee">TestTypes</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -297,56 +276,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00099">99</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00084">84</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
 
 </div>
 </div>
-<a id="aab8a2d4682181ab44159a9526098cbf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab8a2d4682181ab44159a9526098cbf7">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE_TEMPLATE </td>
-          <td>(</td>
-          <td class="paramtype">testTooManyPollingConsumers&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="test_app_module_connections_8cc.html#aae17d3638073297654152058593b98ec">test_types</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00114">114</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_illegal_networks_8cc_aab8a2d4682181ab44159a9526098cbf7_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a8ed6fe2612b48ae464a55359fddbed5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ed6fe2612b48ae464a55359fddbed5f">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[5/6]</span></h2>
+<a id="a3b1461d8df1af891d35426fe8028bfb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b1461d8df1af891d35426fe8028bfb5">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,7 +301,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="test_app_module_connections_8cc.html#aae17d3638073297654152058593b98ec">test_types</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="test_illegal_networks_8cc.html#ac48b3b5512f465e5797f1a1cc6838cee">TestTypes</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -377,51 +312,51 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00132">132</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00154">154</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
 
 </div>
 </div>
-<a id="a8f1a03ddce140ac4e7e5b78a41a14a70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f1a03ddce140ac4e7e5b78a41a14a70">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE_TEMPLATE() <span class="overload">[6/6]</span></h2>
+<a id="af14601579e7c6dd672a85c562800b1fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af14601579e7c6dd672a85c562800b1fa">&#9670;&nbsp;</a></span>mainLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mainLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00039">39</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a6e2ca3d4094e48a3828f04a017ebbc6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e2ca3d4094e48a3828f04a017ebbc6a">&#9670;&nbsp;</a></span>consumingPush</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BOOST_AUTO_TEST_CASE_TEMPLATE </td>
-          <td>(</td>
-          <td class="paramtype">testConstantTrigger&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="test_app_module_connections_8cc.html#aae17d3638073297654152058593b98ec">test_types</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="struct_chimera_t_k_1_1_scalar_push_input.html">ctk::ScalarPushInput</a>&lt;int&gt; consumingPush {this, &quot;/MyModule/readBack&quot;, &quot;&quot;, &quot;&quot;}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00149">149</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_illegal_networks_8cc_a8f1a03ddce140ac4e7e5b78a41a14a70_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
+<p class="definition">Definition at line <a class="el" href="test_illegal_networks_8cc_source.html#l00037">37</a> of file <a class="el" href="test_illegal_networks_8cc_source.html">testIllegalNetworks.cc</a>.</p>
 
 </div>
 </div>
@@ -431,7 +366,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_illegal_networks_8cc.html">testIllegalNetworks.cc</a></li>
-    <li class="footer">Generated on Tue Oct 11 2022 03:54:09 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Wed Nov 9 2022 04:54:13 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

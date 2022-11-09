@@ -1,9 +1,9 @@
 var struct_vector_module =
 [
     [ "AnotherGroup", "struct_vector_module_1_1_another_group.html", "struct_vector_module_1_1_another_group" ],
-    [ "VectorModule", "struct_vector_module.html#a692d8e948a379dee845d684e129c669e", null ],
-    [ "VectorModule", "struct_vector_module.html#a31731a46f755c971d482906d7f33e6c1", null ],
-    [ "mainLoop", "struct_vector_module.html#a2f2bebfc90d4cebe5e90caa82649e381", null ],
+    [ "VectorModule", "struct_vector_module.html#ac448a524efa62d4157f67c6cd2cf0470", null ],
+    [ "VectorModule", "struct_vector_module.html#a1deaa4cd9c17265eec4e068c60eab1cc", null ],
+    [ "mainLoop", "struct_vector_module.html#a55d8d89dfbac9bd050d5e90a0a57c651", null ],
     [ "anotherName", "struct_vector_module.html#ade98d61079f4b3c000385033b77155d4", null ],
     [ "group", "struct_vector_module.html#ac646e85ba51acf05167a71fe3b056f9c", null ],
     [ "someInput", "struct_vector_module.html#acbc9913ec8048f2ca45c71f59cb8ec6d", null ],

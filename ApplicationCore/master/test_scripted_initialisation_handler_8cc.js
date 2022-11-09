@@ -1,6 +1,5 @@
 var test_scripted_initialisation_handler_8cc =
 [
-    [ "DMapSetter", "struct_d_map_setter.html", "struct_d_map_setter" ],
     [ "TestApp", "struct_test_app.html", "struct_test_app" ],
     [ "Fixture", "struct_fixture.html", "struct_fixture" ],
     [ "BOOST_TEST_MODULE", "test_scripted_initialisation_handler_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
