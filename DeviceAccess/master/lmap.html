@@ -150,14 +150,23 @@ monostableTrigger</h3>
 typeHintModifier</h3>
 <p>The <code>typeHintModifier</code> is a simple plugin to change the type of the mapped variable in logical name mapper's catalogue. It does, however, <b>NOT</b> perform any type conversion on its own.</p>
 <p>Parameters:</p><ul>
-<li><code>type</code>: New type. The same type names as for <a class="el" href="lmap.html#variables_and_constants">Variables and constants</a> are supported. </li>
+<li><code>type</code>: New type. The same type names as for <a class="el" href="lmap.html#variables_and_constants">Variables and constants</a> are supported.</li>
+</ul>
+<h3><a class="anchor" id="double_buffering_plugin"></a>
+Double Buffering plugin for the Logical Name Mapper</h3>
+<p>This plugin provides a way to read values form the double buffering scheme provided by the firmware. The double buffering mechanism is abstracted away behind a read only register. The plugin is enabled from the LogicalNameMapping xlmap file:</p>
+<div class="fragment"><div class="line">&lt;<span class="keywordtype">redirectedRegister</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;bufferedValue&quot;</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">targetDevice</span>&gt;(<span class="keyword">dummy</span>?<span class="keyword">map</span>=<span class="keyword">DoubleBuffer.map</span>)&lt;/<span class="keywordtype">targetDevice</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">targetRegister</span>&gt;<span class="keyword">APP.0.DAQ0_BUF0</span>&lt;/<span class="keywordtype">targetRegister</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">plugin</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;doubleBuffer&quot;</span>&gt;</div><div class="line">    &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;secondBuffer&quot;</span>&gt; <span class="keyword">APP.0.DAQ0_BUF1</span> &lt;/<span class="keywordtype">parameter</span>&gt;</div><div class="line">    &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;controlRegister&quot;</span>&gt; <span class="keyword">ADC.1.WORD_DUB_BUF_ENA</span> &lt;/<span class="keywordtype">parameter</span>&gt;</div><div class="line">    &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;statusRegister&quot;</span>&gt; <span class="keyword">ADC.1.WORD_DUB_BUF_CURR</span> &lt;/<span class="keywordtype">parameter</span>&gt;</div><div class="line">    &lt;<span class="keywordtype">parameter</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;daqNumber&quot;</span>&gt;0&lt;/<span class="keywordtype">parameter</span>&gt;</div><div class="line">  &lt;/<span class="keywordtype">plugin</span>&gt;</div><div class="line">&lt;/<span class="keywordtype">redirectedRegister</span>&gt;</div></div><!-- fragment --><p>This example creates the read only register, <code>bufferedValue</code>. Reading this register returns the value from the current active buffer, hiding away the buffer switching and handshaking tasks under the hood.</p>
+<p>The controlRegister and statusRegister hook into the corresponding firmware double buffering interface. The optional parameter <code>daqNumber</code> defines the offset used in the controlRegister and statusRegister. If not present, the value 0 is assumed.</p>
+<p>Notes and CAVEATS:</p><ul>
+<li>doubleBuffer plugin is not supported for <em>redirectedChannel</em>. The reason we decided against it is that is would be difficult to optimize access to more than one channel. Instead, apply the plugin to the whole 2D area with redirectedRegister, and refer to the logical register in redirectedChannel by targetDevice=this.</li>
+<li>Current implementation is safe for concurrent readers from the same process, i.e. the double buffering handshake with the firmware begins when first reader starts reading and ends when last reader of the same double buffered region finishes. Regions are identified on the basis of the controlRegister. However, current implementation is not safe for concurrent readers from different processes. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Nov 5 2022 04:53:17 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Fri Nov 18 2022 04:53:23 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

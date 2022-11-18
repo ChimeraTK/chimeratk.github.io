@@ -133,6 +133,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <li>getAccessor_impl()
 : <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html#a4884ca9095e4450dfd5357845338dcd5">ChimeraTK::LNMBackend::AccessorPlugin&lt; Derived &gt;</a>
 </li>
+<li>getActiveBufferNo()
+: <a class="el" href="struct_device_fixture___h_w.html#a848226845bc90e086fa3a5c620906b6e">DeviceFixture_HW</a>
+</li>
 <li>getAsCooked()
 : <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#ade4923b0dda3dfba2fbfd3bf6c9bad66">ChimeraTK::NDRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_one_d_register_accessor.html#aa2da6bb96ff5de1f38c604db45c9ae54">ChimeraTK::OneDRegisterAccessor&lt; UserType &gt;</a>
@@ -168,6 +171,10 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <li>getBufferLock()
 : <a class="el" href="class_chimera_t_k_1_1_dummy_register_accessor.html#af7993349ab799538df2b4c724e4eb983">ChimeraTK::DummyRegisterAccessor&lt; T &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_dummy_register_raw_accessor.html#ad4873a8ed018d4dc30501b2f4b903aa1">ChimeraTK::DummyRegisterRawAccessor</a>
+</li>
+<li>getCf()
+: <a class="el" href="struct_device_fixture2_d___d_a_q0.html#adbca22a96c4fef1220ec351bf519d18d">DeviceFixture2D_DAQ0</a>
+, <a class="el" href="struct_device_fixture2_d___d_a_q2.html#a935b313a0d237252e9a9d54884a34d63">DeviceFixture2D_DAQ2</a>
 </li>
 <li>getCommonAltSeparator()
 : <a class="el" href="class_chimera_t_k_1_1_register_path.html#a965e3b6fc9294782dd987f57c685a083">ChimeraTK::RegisterPath</a>
@@ -219,6 +226,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 , <a class="el" href="class_async_test_dummy_1_1_accessor.html#aef129f7dc90c989ef6f5870d7e25c0a3">AsyncTestDummy::Accessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#a3aed49622e2203db049fc9a21b7859ac">ChimeraTK::AsyncNDRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html#a9457a04e7760f44d72659d7d8b155db0">ChimeraTK::DummyInterruptTriggerAccessor&lt; UserType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_accessor_decorator.html#ad27be480039253cd0650a5fb55ab0aa1">ChimeraTK::LNMBackend::DoubleBufferAccessorDecorator&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#a8ea4fd3e3302e7a8384419d4d3c00ee2">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a6830898bed29bfba2dc61a7840524f6d">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a24670e32d638cc9bc4763ad3f9a3d358">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>
@@ -258,6 +266,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 , <a class="el" href="class_async_test_dummy_1_1_accessor.html#a35f60e270f5ff4184feca7382ec5c0a1">AsyncTestDummy::Accessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_async_n_d_register_accessor.html#a783e8e0769f7583eeeda3fb80131b49a">ChimeraTK::AsyncNDRegisterAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html#a2f2f2cf72315f034dcfdd816a29e27bd">ChimeraTK::DummyInterruptTriggerAccessor&lt; UserType &gt;</a>
+, <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_accessor_decorator.html#aa95986109f346c6360fb793061f3f0fa">ChimeraTK::LNMBackend::DoubleBufferAccessorDecorator&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html#ab46c4d65ee82e73fb239ebf836347a1b">ChimeraTK::LNMBackendBitAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html#a02863c4ca2cb50982adca806776a576d">ChimeraTK::LNMBackendChannelAccessor&lt; UserType &gt;</a>
 , <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#a851f86840ce959223801b84da9a74c86">ChimeraTK::LNMBackendVariableAccessor&lt; UserType &gt;</a>
@@ -384,7 +393,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 , <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a98f6b271e1d6f1ec80f325e7b59af804">ChimeraTK::LogicalNameMappingBackend</a>
 , <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#a5395e67e4d9c77c09826a0adb572ec01">ChimeraTK::NumericAddressedBackend</a>
 , <a class="el" href="class_chimera_t_k_1_1_subdevice_backend.html#a83996f092b4370d18fcac2ab205481cc">ChimeraTK::SubdeviceBackend</a>
-, <a class="el" href="class_example_backend.html#ab28efb9790bba3ba0d7f5878c53f14e2">ExampleBackend</a>
+, <a class="el" href="class_example_backend.html#a69a167f471b871edf156bc37052e1948">ExampleBackend</a>
 </li>
 <li>getRegisterAccessor_internal()
 : <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html#a863d826eb0fc7dbabbd8f9815d872549">ChimeraTK::LogicalNameMappingBackend</a>
@@ -418,7 +427,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 , <a class="el" href="class_chimera_t_k_1_1_dummy_register_accessor.html#a9b4d1e04320977d4f8b0f2a65797f925">ChimeraTK::DummyRegisterAccessor&lt; T &gt;</a>
 </li>
 <li>getRemoteValue()
-: <a class="el" href="struct_area_type.html#acf6c5aa1259ce527705680be779e027c">AreaType&lt; Register &gt;</a>
+: <a class="el" href="struct_area_type.html#a0074bc23dcb62580c879d8a039e8b7cb">AreaType&lt; Register &gt;</a>
 , <a class="el" href="struct_ascii_data.html#a164197f5101b377895257d40f68a786f">AsciiData</a>
 , <a class="el" href="struct_bit_register_descriptor_base.html#a6a3433b55b2666b5c92c40bd9a5eb816">BitRegisterDescriptorBase&lt; Derived &gt;</a>
 , <a class="el" href="struct_channel_register_descriptor_base.html#a162fc9fa9b333896b4effe0ae8ff22ae">ChannelRegisterDescriptorBase&lt; Derived &gt;</a>
@@ -485,7 +494,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 : <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a9ee8e43f841982e2e7f57d22ba0d9b66">ChimeraTK::ExceptionDummy</a>
 </li>
 <li>getValueFromXmlSubnode()
-: <a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a9dc96a4df7af6eaae89c2998e76fb037">ChimeraTK::LogicalNameMapParser</a>
+: <a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#aa78697767ef64de32bf29812aa77afc3">ChimeraTK::LogicalNameMapParser</a>
 </li>
 <li>getValueType()
 : <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html#a5a84f98918e4b1d9ffd3a4db3fbb2365">ChimeraTK::NDRegisterAccessor&lt; UserType &gt;</a>
@@ -494,7 +503,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 , <a class="el" href="class_chimera_t_k_1_1_transfer_element_abstractor.html#aceda7d828e20665cf3d25195565e4ebe">ChimeraTK::TransferElementAbstractor</a>
 </li>
 <li>getValueVectorFromXmlSubnode()
-: <a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a49965bc0d61d67b919fe48bd51a93211">ChimeraTK::LogicalNameMapParser</a>
+: <a class="el" href="class_chimera_t_k_1_1_logical_name_map_parser.html#a19eaba0f3fcb9456ac1b67c61b7b1c68">ChimeraTK::LogicalNameMapParser</a>
 </li>
 <li>getVersionNumber()
 : <a class="el" href="class_chimera_t_k_1_1_transfer_element.html#a69298f31fe4a42e779bca3669d06c2bd">ChimeraTK::TransferElement</a>
@@ -524,7 +533,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Nov 5 2022 04:53:19 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Fri Nov 18 2022 04:53:24 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

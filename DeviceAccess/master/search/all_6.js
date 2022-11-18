@@ -6,6 +6,8 @@ var searchData=
   ['enableasyncreadinconsistency',['enableAsyncReadInconsistency',['../struct_chimera_t_k_1_1_test_capabilities.html#a571288818abd4f4198489e24a583f0a0',1,'ChimeraTK::TestCapabilities']]],
   ['enabled',['enabled',['../namespace_chimera_t_k.html#ad026dd4a8d0c54ed5084a0ed3e51d985aa10311459433adf322f2590a4987c423',1,'ChimeraTK']]],
   ['enabledisableactionlist',['EnableDisableActionList',['../class_chimera_t_k_1_1_unified_backend_test_1_1_enable_disable_action_list.html',1,'ChimeraTK::UnifiedBackendTest']]],
+  ['enabledoublebuf',['enableDoubleBuf',['../struct_device_fixture___h_w.html#a20203bb6b2afae27dfe69486756e76f8',1,'DeviceFixture_HW']]],
+  ['enabledoublebufferingreg',['enableDoubleBufferingReg',['../struct_device_fixture2_d_1_1_config_params.html#ae9c890a4b29f467768180597106c5e25',1,'DeviceFixture2D::ConfigParams']]],
   ['enableforcedatalosswrite',['enableForceDataLossWrite',['../struct_chimera_t_k_1_1_test_capabilities.html#a6af859e99b79a8383f1c58daf775c054',1,'ChimeraTK::TestCapabilities']]],
   ['enableswitchreadonly',['enableSwitchReadOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a692ada35db55ad303d1d44ebe542d85e',1,'ChimeraTK::TestCapabilities']]],
   ['enableswitchwriteonly',['enableSwitchWriteOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a0604720cd0a6503efe1920933e0bd921',1,'ChimeraTK::TestCapabilities']]],

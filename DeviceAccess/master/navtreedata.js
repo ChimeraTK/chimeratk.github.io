@@ -29,7 +29,6 @@ var NAVTREE =
     [ "Device Mapping", "dmap.html", [
       [ "CimeraTK device descriptor", "dmap.html#The", null ]
     ] ],
-    [ "Double Buffering plugin for the Logical Name Mapper", "double_buffering_plugin.html", null ],
     [ "Exceptions and recovery", "exceptions.html", [
       [ "Exceptions", "exceptions.html#Exceptions", null ],
       [ "isFunctional()", "exceptions.html#isFunctional", null ],
@@ -51,7 +50,8 @@ var NAVTREE =
           [ "math", "lmap.html#plugins_reference_math", null ],
           [ "forceReadOnly", "lmap.html#plugins_reference_force_read_only", null ],
           [ "monostableTrigger", "lmap.html#plugins_reference_monostable_trigger", null ],
-          [ "typeHintModifier", "lmap.html#plugins_reference_type_hint_modifier", null ]
+          [ "typeHintModifier", "lmap.html#plugins_reference_type_hint_modifier", null ],
+          [ "Double Buffering plugin for the Logical Name Mapper", "lmap.html#double_buffering_plugin", null ]
         ] ]
       ] ]
     ] ],
@@ -114,21 +114,22 @@ var NAVTREEINDEX =
 ".html",
 "_numeric_addressed_backend_register_accessor_8h.html",
 "argument_parser_8cc.html#a4a88f44a22a5f0914a9ecf5723f8fa02",
-"class_chimera_t_k_1_1_data_type.html#a40b59072a3ac3f6b49a88d1b63d4983a",
-"class_chimera_t_k_1_1_exception_dummy.html#a334e11b3f65149fb8c4049017961dd64",
-"class_chimera_t_k_1_1_logical_name_map_parser.html#ab77f9b049edc5f2c4dd465a2b3c6ba62",
-"class_chimera_t_k_1_1_numeric_addressed_register_info.html#a3820feb4789985e98ed1ac110bcd74a0aa7b843fb734e3b3fea8e5f902d3f4144",
-"class_chimera_t_k_1_1_scalar_register_accessor_3_01_chimera_t_k_1_1_boolean_00_01std_1_1nullptr__t_01_4.html#acfa024e4c69080777c952c56639ca8c5",
-"class_chimera_t_k_1_1_transfer_group.html#a05659fcb52954854fa82ab159de23579",
-"class_dummy_register_test.html",
-"functions_func_i.html",
-"shared_dummy_helpers_8h.html",
-"struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html",
-"struct_integers__base.html#a247d84b871c017ae73799e93c8d706a9",
-"struct_reg_channel3.html",
-"struct_short_raw__base.html#ac0940d2422ff570d04fcfa75ac86ed12",
-"test_fixed_point_converter_8cpp.html#a8ce115b3e6ce1189864602474105d8cd",
-"test_scalar_register_accessor_8cpp.html#af8c05f1099b6e39241d27c05cac65fe4"
+"class_chimera_t_k_1_1_data_type.html",
+"class_chimera_t_k_1_1_exception_dummy.html#a2fdcad2aff892062a1b65cb5bc8a5d76",
+"class_chimera_t_k_1_1_logical_name_map_parser.html#a63e405294bc4a2b05069bf7168690cc0",
+"class_chimera_t_k_1_1_numeric_addressed_register_info.html#a1cfb528d88b13476a6aee9d1db65b06b",
+"class_chimera_t_k_1_1_scalar_register_accessor.html#ac1feec69028b6d3937f475947d0ee98f",
+"class_chimera_t_k_1_1_transfer_element_test_accessor.html#af1ff7bbc0707b6e21ab41cf08808229e",
+"class_device_info_map_test.html#a7f68dbb088bc7e3184293b74fba0c2eb",
+"functions_func_d.html",
+"q_and_a.html#why_no_accessor_assignment",
+"struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_formula_helper.html#a86cccc2b98dd88bcd9467dd898ef3a75",
+"struct_device_fixture___h_w.html#a03e4a0643a322d3a3f4ab87bd23c157f",
+"struct_new_backend.html",
+"struct_reg_word_firmware_forced_read_only__push.html#ad975e54d95a2c898df50c6c90aaa702e",
+"test_dummy_backend_8cpp.html#ab9840997c43eddfdaf9798a7845120f3",
+"test_pcie_backend_8cpp.html#a666a688be4897906a5a2e1ad2b6aec78",
+"use_custom_backend_8cpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

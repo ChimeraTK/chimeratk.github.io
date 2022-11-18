@@ -21,7 +21,6 @@ var searchData=
   ['dmaintf_2eh',['DmaIntf.h',['../_dma_intf_8h.html',1,'']]],
   ['dmapfileparser_2ecpp',['DMapFileParser.cpp',['../_d_map_file_parser_8cpp.html',1,'']]],
   ['dmapfileparser_2eh',['DMapFileParser.h',['../_d_map_file_parser_8h.html',1,'']]],
-  ['double_5fbuffering_2edox',['double_buffering.dox',['../double__buffering_8dox.html',1,'']]],
   ['dummybackend_2ecc',['DummyBackend.cc',['../_dummy_backend_8cc.html',1,'']]],
   ['dummybackend_2eh',['DummyBackend.h',['../_dummy_backend_8h.html',1,'']]],
   ['dummybackendbase_2ecc',['DummyBackendBase.cc',['../_dummy_backend_base_8cc.html',1,'']]],

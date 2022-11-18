@@ -1,5 +1,6 @@
 var _l_n_m_accessor_plugin_8h =
 [
+    [ "UndecoratedParams", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params" ],
     [ "AccessorPluginBase", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base" ],
     [ "AccessorPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin" ],
     [ "MultiplierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html", "class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin" ],

@@ -4,6 +4,7 @@ var searchData=
   ['scalarregisteraccessor_3c_20chimeratk_3a_3aboolean_2c_20std_3a_3anullptr_5ft_20_3e',['ScalarRegisterAccessor&lt; ChimeraTK::Boolean, std::nullptr_t &gt;',['../class_chimera_t_k_1_1_scalar_register_accessor_3_01_chimera_t_k_1_1_boolean_00_01std_1_1nullptr__t_01_4.html',1,'ChimeraTK']]],
   ['scalarregisteraccessor_3c_20chimeratk_3a_3aboolean_2c_20void_20_3e',['ScalarRegisterAccessor&lt; ChimeraTK::Boolean, void &gt;',['../class_chimera_t_k_1_1_scalar_register_accessor.html',1,'ChimeraTK']]],
   ['scalarregisteraccessor_3c_20std_3a_3astring_20_3e',['ScalarRegisterAccessor&lt; std::string &gt;',['../class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html',1,'ChimeraTK']]],
+  ['scalarregisteraccessor_3c_20uint32_5ft_20_3e',['ScalarRegisterAccessor&lt; uint32_t &gt;',['../class_chimera_t_k_1_1_scalar_register_accessor.html',1,'ChimeraTK']]],
   ['scalarregisterdescriptorbase',['ScalarRegisterDescriptorBase',['../struct_scalar_register_descriptor_base.html',1,'']]],
   ['scalarregisterdescriptorbase_3c_20regmonostabletrigger_20_3e',['ScalarRegisterDescriptorBase&lt; RegMonostableTrigger &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],
   ['scalarregisterdescriptorbase_3c_20regsingleword_20_3e',['ScalarRegisterDescriptorBase&lt; RegSingleWord &gt;',['../struct_scalar_register_descriptor_base.html',1,'']]],

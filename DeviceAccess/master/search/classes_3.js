@@ -6,6 +6,7 @@ var searchData=
   ['channelregisterdescriptorbase_3c_20regchannel3_20_3e',['ChannelRegisterDescriptorBase&lt; RegChannel3 &gt;',['../struct_channel_register_descriptor_base.html',1,'']]],
   ['channelregisterdescriptorbase_3c_20regchannel4_5fpush_20_3e',['ChannelRegisterDescriptorBase&lt; RegChannel4_push &gt;',['../struct_channel_register_descriptor_base.html',1,'']]],
   ['channelregisterdescriptorbase_3c_20regchannellast_20_3e',['ChannelRegisterDescriptorBase&lt; RegChannelLast &gt;',['../struct_channel_register_descriptor_base.html',1,'']]],
+  ['configparams',['ConfigParams',['../struct_device_fixture2_d_1_1_config_params.html',1,'DeviceFixture2D']]],
   ['connection',['Connection',['../class_chimera_t_k_1_1_rebot_1_1_connection.html',1,'ChimeraTK::Rebot']]],
   ['const_5fbackendregistercatalogueimpliterator',['const_BackendRegisterCatalogueImplIterator',['../class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator.html',1,'ChimeraTK']]],
   ['const_5fiterator',['const_iterator',['../class_chimera_t_k_1_1_register_catalogue_1_1const__iterator.html',1,'ChimeraTK::RegisterCatalogue']]],

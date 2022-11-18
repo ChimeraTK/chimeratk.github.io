@@ -84,7 +84,8 @@ $(document).ready(function(){initNavTree('test_double_buffering_8cpp.html','');}
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">testDoubleBuffering.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -96,6 +97,7 @@ $(document).ready(function(){initNavTree('test_double_buffering_8cpp.html','');}
 <code>#include &quot;<a class="el" href="_exception_dummy_backend_8h_source.html">ExceptionDummyBackend.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_logical_name_mapping_backend_8h_source.html">LogicalNameMappingBackend.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_unified_backend_test_8h_source.html">UnifiedBackendTest.h</a>&quot;</code><br />
+<code>#include &lt;boost/thread/barrier.hpp&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for testDoubleBuffering.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -109,9 +111,25 @@ $(document).ready(function(){initNavTree('test_double_buffering_8cpp.html','');}
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dummy_for_double_buffering.html">DummyForDoubleBuffering</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">dummy backend used for testing the double buffering handshake.  <a href="struct_dummy_for_double_buffering.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dummy_for_double_buffering_1_1_backend_registerer.html">DummyForDoubleBuffering::BackendRegisterer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_area_type.html">AreaType&lt; Register &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_my_area1.html">MyArea1</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_fixture.html">DeviceFixture</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_fixture2_d.html">DeviceFixture2D&lt; Derived &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_device_fixture.html">DeviceFixture</a> used for the 2D access tests here no overwriting of ExceptionBackend.  <a href="struct_device_fixture2_d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_fixture2_d_1_1_config_params.html">DeviceFixture2D&lt; Derived &gt;::ConfigParams</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_fixture2_d___d_a_q0.html">DeviceFixture2D_DAQ0</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_fixture2_d___d_a_q2.html">DeviceFixture2D_DAQ2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -125,6 +143,19 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a853017d5a2c41666d5714fce28aa6bdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_double_buffering_8cpp.html#a853017d5a2c41666d5714fce28aa6bdb">BOOST_AUTO_TEST_CASE</a> (testUnified)</td></tr>
 <tr class="separator:a853017d5a2c41666d5714fce28aa6bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ca57e46794a7d318e115994c9a9434"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_double_buffering_8cpp.html#a60ca57e46794a7d318e115994c9a9434">BOOST_FIXTURE_TEST_CASE</a> (testSlowReader, <a class="el" href="struct_device_fixture.html">DeviceFixture</a>)</td></tr>
+<tr class="separator:a60ca57e46794a7d318e115994c9a9434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1dfc5906ae5cdcfbedf0e90f18a2e01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_double_buffering_8cpp.html#ad1dfc5906ae5cdcfbedf0e90f18a2e01">BOOST_FIXTURE_TEST_CASE</a> (testConcurrentRead, <a class="el" href="struct_device_fixture.html">DeviceFixture</a>)</td></tr>
+<tr class="separator:ad1dfc5906ae5cdcfbedf0e90f18a2e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f6c2f53febe485c77b8715b10670629"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_double_buffering_8cpp.html#a3f6c2f53febe485c77b8715b10670629">BOOST_FIXTURE_TEST_CASE</a> (testExtractedChannelsA, <a class="el" href="struct_device_fixture2_d___d_a_q2.html">DeviceFixture2D_DAQ2</a>)</td></tr>
+<tr class="separator:a3f6c2f53febe485c77b8715b10670629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462f73aa1a75a1d480ec5aa94383d439"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_double_buffering_8cpp.html#a462f73aa1a75a1d480ec5aa94383d439">BOOST_FIXTURE_TEST_CASE</a> (testExtractedChannelsC, <a class="el" href="struct_device_fixture2_d___d_a_q0.html">DeviceFixture2D_DAQ0</a>)</td></tr>
+<tr class="separator:a462f73aa1a75a1d480ec5aa94383d439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab4423a7f580c59b7d5935f0e0f4d01fe"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_double_buffering_8cpp.html#ab4423a7f580c59b7d5935f0e0f4d01fe">lmap</a> = &quot;(logicalNameMap?map=doubleBuffer.xlmap&amp;target=&quot; + rawDeviceCdd + &quot;)&quot;</td></tr>
+<tr class="separator:ab4423a7f580c59b7d5935f0e0f4d01fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a139f00d2466d591f60b8d6a73c8273f1"></a>
@@ -176,7 +207,144 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_double_buffering_8cpp_source.html#l00162">162</a> of file <a class="el" href="test_double_buffering_8cpp_source.html">testDoubleBuffering.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_double_buffering_8cpp_source.html#l00221">221</a> of file <a class="el" href="test_double_buffering_8cpp_source.html">testDoubleBuffering.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a60ca57e46794a7d318e115994c9a9434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ca57e46794a7d318e115994c9a9434">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testSlowReader&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_device_fixture.html">DeviceFixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_double_buffering_8cpp_source.html#l00241">241</a> of file <a class="el" href="test_double_buffering_8cpp_source.html">testDoubleBuffering.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad1dfc5906ae5cdcfbedf0e90f18a2e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1dfc5906ae5cdcfbedf0e90f18a2e01">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testConcurrentRead&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_device_fixture.html">DeviceFixture</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_double_buffering_8cpp_source.html#l00270">270</a> of file <a class="el" href="test_double_buffering_8cpp_source.html">testDoubleBuffering.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3f6c2f53febe485c77b8715b10670629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f6c2f53febe485c77b8715b10670629">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testExtractedChannelsA&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_device_fixture2_d___d_a_q2.html">DeviceFixture2D_DAQ2</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_double_buffering_8cpp_source.html#l00467">467</a> of file <a class="el" href="test_double_buffering_8cpp_source.html">testDoubleBuffering.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a462f73aa1a75a1d480ec5aa94383d439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a462f73aa1a75a1d480ec5aa94383d439">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testExtractedChannelsC&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_device_fixture2_d___d_a_q0.html">DeviceFixture2D_DAQ0</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_double_buffering_8cpp_source.html#l00473">473</a> of file <a class="el" href="test_double_buffering_8cpp_source.html">testDoubleBuffering.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ab4423a7f580c59b7d5935f0e0f4d01fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4423a7f580c59b7d5935f0e0f4d01fe">&#9670;&nbsp;</a></span>lmap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lmap = &quot;(logicalNameMap?map=doubleBuffer.xlmap&amp;target=&quot; + rawDeviceCdd + &quot;)&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_double_buffering_8cpp_source.html#l00075">75</a> of file <a class="el" href="test_double_buffering_8cpp_source.html">testDoubleBuffering.cpp</a>.</p>
 
 </div>
 </div>
@@ -186,7 +354,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_double_buffering_8cpp.html">testDoubleBuffering.cpp</a></li>
-    <li class="footer">Generated on Sat Nov 5 2022 04:53:17 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Fri Nov 18 2022 04:53:22 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

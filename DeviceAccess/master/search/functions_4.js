@@ -3,6 +3,7 @@ var searchData=
   ['empty',['empty',['../class_chimera_t_k_1_1_access_mode_flags.html#a6e4ae3aafddf1adee5e9bcc37dc4a692',1,'ChimeraTK::AccessModeFlags']]],
   ['enable',['enable',['../class_chimera_t_k_1_1_experimental_features.html#aa675f49ce2335a82fc48f90102c0c044',1,'ChimeraTK::ExperimentalFeatures']]],
   ['enableasyncreadinconsistency',['enableAsyncReadInconsistency',['../struct_chimera_t_k_1_1_test_capabilities.html#a571288818abd4f4198489e24a583f0a0',1,'ChimeraTK::TestCapabilities']]],
+  ['enabledoublebuf',['enableDoubleBuf',['../struct_device_fixture___h_w.html#a20203bb6b2afae27dfe69486756e76f8',1,'DeviceFixture_HW']]],
   ['enableforcedatalosswrite',['enableForceDataLossWrite',['../struct_chimera_t_k_1_1_test_capabilities.html#a6af859e99b79a8383f1c58daf775c054',1,'ChimeraTK::TestCapabilities']]],
   ['enableswitchreadonly',['enableSwitchReadOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a692ada35db55ad303d1d44ebe542d85e',1,'ChimeraTK::TestCapabilities']]],
   ['enableswitchwriteonly',['enableSwitchWriteOnly',['../struct_chimera_t_k_1_1_test_capabilities.html#a0604720cd0a6503efe1920933e0bd921',1,'ChimeraTK::TestCapabilities']]],

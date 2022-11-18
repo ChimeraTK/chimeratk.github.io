@@ -14,6 +14,7 @@ var searchData=
   ['creatormap',['creatorMap',['../class_chimera_t_k_1_1_backend_factory.html#ac6f2809b16bc6fac6572e2104e5d99d7',1,'ChimeraTK::BackendFactory']]],
   ['creatormap_5fcompat',['creatorMap_compat',['../class_chimera_t_k_1_1_backend_factory.html#a15b24b38de6528dc74626fc8f1a6501b',1,'ChimeraTK::BackendFactory']]],
   ['currentareavalue',['currentAreaValue',['../struct_static_core.html#a9971fa98405aaad70b27228bf2fba7ba',1,'StaticCore']]],
+  ['currentbuffernumberreg',['currentBufferNumberReg',['../struct_device_fixture2_d_1_1_config_params.html#abf9e59c0949fa64b6c650144a6311601',1,'DeviceFixture2D::ConfigParams']]],
   ['currentmodule',['currentModule',['../class_chimera_t_k_1_1_logical_name_map_parser.html#a4a022ca1c826353be4053b35049fa510',1,'ChimeraTK::LogicalNameMapParser']]],
   ['currentvalue',['currentValue',['../struct_static_core.html#a540b46cdf636da7518414030e498b095',1,'StaticCore']]],
   ['currentversion',['currentVersion',['../class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#ad1faf9e348d58077399543b20ff0b3e7',1,'ChimeraTK::LNMBackendVariableAccessor']]]

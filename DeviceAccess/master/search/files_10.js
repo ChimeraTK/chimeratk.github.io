@@ -13,6 +13,7 @@ var searchData=
   ['testdeviceinfomap_2ecpp',['testDeviceInfoMap.cpp',['../test_device_info_map_8cpp.html',1,'']]],
   ['testdmapfileparser_2ecpp',['testDMapFileParser.cpp',['../test_d_map_file_parser_8cpp.html',1,'']]],
   ['testdoublebuffering_2ecpp',['testDoubleBuffering.cpp',['../test_double_buffering_8cpp.html',1,'']]],
+  ['testdoublebufferinghw_2ecc',['testDoubleBufferingHW.cc',['../test_double_buffering_h_w_8cc.html',1,'']]],
   ['testdummybackend_2ecpp',['testDummyBackend.cpp',['../test_dummy_backend_8cpp.html',1,'']]],
   ['testdummybackendunified_2ecc',['testDummyBackendUnified.cc',['../test_dummy_backend_unified_8cc.html',1,'']]],
   ['testdummyregisteraccessor_2ecpp',['testDummyRegisterAccessor.cpp',['../test_dummy_register_accessor_8cpp.html',1,'']]],

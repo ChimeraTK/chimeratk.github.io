@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['d',['d',['../struct_device_fixture.html#a37976292e6b5345f20399ab9bdfcb0b7',1,'DeviceFixture::d()'],['../struct_device_fixture2_d.html#a43b807039956876be52cb5e04c4247a6',1,'DeviceFixture2D::d()'],['../struct_device_fixture___h_w.html#a606560c80c9543b0ce1f9084f4e1c9ab',1,'DeviceFixture_HW::d()']]],
+  ['daqnumber',['daqNumber',['../struct_device_fixture2_d_1_1_config_params.html#a6a5013866aba303b8247878aa5e8508c',1,'DeviceFixture2D::ConfigParams']]],
   ['data',['data',['../structdevice__ioctrl__data.html#a99d6274576188aeea8225493378b04ec',1,'device_ioctrl_data::data()'],['../struct_static_core.html#adb729216fb515cc16e38f7faf0c46cb1',1,'StaticCore::data()']]],
   ['data_5frw',['data_rw',['../structdevice__rw.html#a4731025369481beeaa5c408775ad2a7e',1,'device_rw']]],
   ['datadescriptor',['dataDescriptor',['../class_chimera_t_k_1_1_numeric_addressed_register_info.html#a9bd1b996e98bdf30b5ad9ad4f484331c',1,'ChimeraTK::NumericAddressedRegisterInfo::dataDescriptor()'],['../class_catalogue_generator.html#aefc923f4483c293310efba405970d47d',1,'CatalogueGenerator::dataDescriptor()']]],
@@ -25,5 +27,7 @@ var searchData=
   ['dmaareasize',['dmaAreaSize',['../struct__pcieuni__ioctl__bar__sizes.html#a5965724071c9397c5319ef10e9ebf5fa',1,'_pcieuni_ioctl_bar_sizes']]],
   ['dmapfile',['dmapFile',['../struct_test_parameters.html#a3f89355a4fa5d9f8b093dc4a3b3a347d',1,'TestParameters']]],
   ['dmapfilelinenumber',['dmapFileLineNumber',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#aab8018e944f04b3dea79982f9ff02f5d',1,'ChimeraTK::DeviceInfoMap::DeviceInfo']]],
-  ['dmapfilename',['dmapFileName',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a563737aed65226e0717444c4a6c75f37',1,'ChimeraTK::DeviceInfoMap::DeviceInfo']]]
+  ['dmapfilename',['dmapFileName',['../class_chimera_t_k_1_1_device_info_map_1_1_device_info.html#a563737aed65226e0717444c4a6c75f37',1,'ChimeraTK::DeviceInfoMap::DeviceInfo']]],
+  ['doublebufdummy',['doubleBufDummy',['../struct_device_fixture.html#ad0e940477f47a52a4cc11225fb59876b',1,'DeviceFixture']]],
+  ['doublebufferingenabled',['doubleBufferingEnabled',['../struct_device_fixture.html#a25c4c004d662de6e1b5d88db2f1bddab',1,'DeviceFixture::doubleBufferingEnabled()'],['../struct_device_fixture2_d.html#ad2bf0e832ee77cdd3e9e3cf10f95fdb4',1,'DeviceFixture2D::doubleBufferingEnabled()'],['../struct_device_fixture___h_w.html#ab7b581041b907e8fb70cb7988e9789eb',1,'DeviceFixture_HW::doubleBufferingEnabled()']]]
 ];

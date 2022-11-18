@@ -18,5 +18,6 @@ var class_chimera_t_k_1_1_data_descriptor =
     [ "operator!=", "class_chimera_t_k_1_1_data_descriptor.html#a961eb30139149f77d91af96f46cf0c98", null ],
     [ "operator==", "class_chimera_t_k_1_1_data_descriptor.html#a979c6ab972d7cd0ae0ee303470674757", null ],
     [ "rawDataType", "class_chimera_t_k_1_1_data_descriptor.html#a9e342855960f02ae663ec802904887c2", null ],
+    [ "setRawDataType", "class_chimera_t_k_1_1_data_descriptor.html#a7c5214c49395c8ec3464f042d157836d", null ],
     [ "transportLayerDataType", "class_chimera_t_k_1_1_data_descriptor.html#a496acfd0bd87754158e6330265629b24", null ]
 ];

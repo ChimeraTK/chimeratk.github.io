@@ -13,7 +13,7 @@ var struct_area_type =
     [ "nRuntimeErrorCases", "struct_area_type.html#a0ab355bcbfb44933ab0a373d843934a9", null ],
     [ "nRuntimeErrorCases", "struct_area_type.html#a0ab355bcbfb44933ab0a373d843934a9", null ],
     [ "setForceRuntimeError", "struct_area_type.html#a8c486ceeaef450b2d7fcbc6b1fe5de00", null ],
-    [ "setForceRuntimeError", "struct_area_type.html#a9bc987fa112f16b55a25ca7d7d38a8f8", null ],
+    [ "setForceRuntimeError", "struct_area_type.html#a806f51b68bec33bcbc4e254a91117f87", null ],
     [ "setRemoteValue", "struct_area_type.html#a148e722677e2dc68f01a5c1899030ff1", null ],
     [ "setRemoteValue", "struct_area_type.html#a148e722677e2dc68f01a5c1899030ff1", null ],
     [ "supportedFlags", "struct_area_type.html#aaaeda411f69cadbd62878c0f5987b7a1", null ],

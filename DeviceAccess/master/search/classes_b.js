@@ -9,6 +9,7 @@ var searchData=
   ['ndregisteraccessorabstractor_3c_20chimeratk_3a_3aboolean_20_3e',['NDRegisterAccessorAbstractor&lt; ChimeraTK::Boolean &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html',1,'ChimeraTK']]],
   ['ndregisteraccessorabstractor_3c_20chimeratk_3a_3avoid_20_3e',['NDRegisterAccessorAbstractor&lt; ChimeraTK::Void &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html',1,'ChimeraTK']]],
   ['ndregisteraccessorabstractor_3c_20std_3a_3astring_20_3e',['NDRegisterAccessorAbstractor&lt; std::string &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html',1,'ChimeraTK']]],
+  ['ndregisteraccessorabstractor_3c_20uint32_5ft_20_3e',['NDRegisterAccessorAbstractor&lt; uint32_t &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html',1,'ChimeraTK']]],
   ['ndregisteraccessordecorator',['NDRegisterAccessorDecorator',['../class_chimera_t_k_1_1_n_d_register_accessor_decorator.html',1,'ChimeraTK']]],
   ['ndregisteraccessordecorator_3c_20t_20_3e',['NDRegisterAccessorDecorator&lt; T &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor_decorator.html',1,'ChimeraTK']]],
   ['ndregisteraccessordecorator_3c_20targetusertype_20_3e',['NDRegisterAccessorDecorator&lt; TargetUserType &gt;',['../class_chimera_t_k_1_1_n_d_register_accessor_decorator.html',1,'ChimeraTK']]],
