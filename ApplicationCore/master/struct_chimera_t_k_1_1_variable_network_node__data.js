@@ -1,6 +1,7 @@
 var struct_chimera_t_k_1_1_variable_network_node__data =
 [
     [ "VariableNetworkNode_data", "struct_chimera_t_k_1_1_variable_network_node__data.html#a491ae491d551c46ff4b2f674831429bf", null ],
+    [ "_constantValue", "struct_chimera_t_k_1_1_variable_network_node__data.html#afc31858f251184a75cf0ccf32d246d92", null ],
     [ "_model", "struct_chimera_t_k_1_1_variable_network_node__data.html#ad4ef01d8fb1faf10bbe8e050085ea535", null ],
     [ "appNode", "struct_chimera_t_k_1_1_variable_network_node__data.html#a813a974414573c296ffe2f34d81cf0d1", null ],
     [ "circularNetworkHash", "struct_chimera_t_k_1_1_variable_network_node__data.html#a8d8d4cab71c80df623beb08566c48639", null ],

@@ -10,6 +10,7 @@ var class_chimera_t_k_1_1_module_group =
     [ "getModuleType", "class_chimera_t_k_1_1_module_group.html#a189ec8c45486857aa0afad98cb58eb0a", null ],
     [ "getVirtualQualifiedName", "class_chimera_t_k_1_1_module_group.html#ae72321f545483349ab658a02a91c94c8", null ],
     [ "operator=", "class_chimera_t_k_1_1_module_group.html#a28de5392d19a594be5d8e7b6df1ef582", null ],
+    [ "unregisterModule", "class_chimera_t_k_1_1_module_group.html#a14961fd10bbd6af8abd122396e759faf", null ],
     [ "Application", "class_chimera_t_k_1_1_module_group.html#a23f25bcc02a0e94c2f5a4188496b04d0", null ],
     [ "DeviceModule", "class_chimera_t_k_1_1_module_group.html#a4e118063020247afcc64aa45d4ec3f12", null ]
 ];

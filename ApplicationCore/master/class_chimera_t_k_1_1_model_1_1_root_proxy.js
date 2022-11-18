@@ -9,6 +9,8 @@ var class_chimera_t_k_1_1_model_1_1_root_proxy =
     [ "addVariable", "class_chimera_t_k_1_1_model_1_1_root_proxy.html#ace72e5930d409b121efa214ef0fc8b80", null ],
     [ "operator Model::DirectoryProxy", "class_chimera_t_k_1_1_model_1_1_root_proxy.html#ab366ca9fe34c189be6594c3bf0d0bfc3", null ],
     [ "operator Model::ModuleGroupProxy", "class_chimera_t_k_1_1_model_1_1_root_proxy.html#ad0b7addd8371766ace3b9cd239ad66b2", null ],
+    [ "remove", "class_chimera_t_k_1_1_model_1_1_root_proxy.html#aaf30d1bc4c4967a3b3f35df1ab084db7", null ],
+    [ "remove", "class_chimera_t_k_1_1_model_1_1_root_proxy.html#aa5176622394472573bfa6aac0ad9a397", null ],
     [ "visitByPath", "class_chimera_t_k_1_1_model_1_1_root_proxy.html#afe4ae1fea7b4649ea90a314984a442ad", null ],
     [ "writeGraphViz", "class_chimera_t_k_1_1_model_1_1_root_proxy.html#a8b8b1bfdf4fc11d797c22c09fcdbf6f7", null ],
     [ "ApplicationModuleProxy", "class_chimera_t_k_1_1_model_1_1_root_proxy.html#a0793b92ff0356b9ff47ab1ce4a0e5f01", null ],
@@ -17,5 +19,6 @@ var class_chimera_t_k_1_1_model_1_1_root_proxy =
     [ "ModuleGroupProxy", "class_chimera_t_k_1_1_model_1_1_root_proxy.html#a9aa5a9884b7ff3d80f9b7894bea98167", null ],
     [ "ProcessVariableProxy", "class_chimera_t_k_1_1_model_1_1_root_proxy.html#aea041c73da1d9771be65a8de77db646c", null ],
     [ "Proxy", "class_chimera_t_k_1_1_model_1_1_root_proxy.html#a4d76bb4136b3dbba2b533d9c87f017c7", null ],
-    [ "VariableGroupProxy", "class_chimera_t_k_1_1_model_1_1_root_proxy.html#a1ac33056aa34c5680e47a72b1de3fc49", null ]
+    [ "VariableGroupProxy", "class_chimera_t_k_1_1_model_1_1_root_proxy.html#a1ac33056aa34c5680e47a72b1de3fc49", null ],
+    [ "VertexProperties", "class_chimera_t_k_1_1_model_1_1_root_proxy.html#a4bd07f16e35057750f3f09bcdf0beb4a", null ]
 ];

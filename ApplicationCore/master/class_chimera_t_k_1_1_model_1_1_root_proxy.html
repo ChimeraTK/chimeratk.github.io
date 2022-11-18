@@ -128,6 +128,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ace72e5930d409b121efa214ef0fc8b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a384faa048459c9107602526bb059f35f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_model_1_1_directory_proxy.html">DirectoryProxy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html#a384faa048459c9107602526bb059f35f">addDirectoryRecursive</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:a384faa048459c9107602526bb059f35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf30d1bc4c4967a3b3f35df1ab084db7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html#aaf30d1bc4c4967a3b3f35df1ab084db7">remove</a> (<a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> &amp;module)</td></tr>
+<tr class="separator:aaf30d1bc4c4967a3b3f35df1ab084db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5176622394472573bfa6aac0ad9a397"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html#aa5176622394472573bfa6aac0ad9a397">remove</a> (<a class="el" href="class_chimera_t_k_1_1_module_group.html">ModuleGroup</a> &amp;module)</td></tr>
+<tr class="separator:aa5176622394472573bfa6aac0ad9a397"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe4ae1fea7b4649ea90a314984a442ad"><td class="memTemplParams" colspan="2">template&lt;typename VISITOR &gt; </td></tr>
 <tr class="memitem:afe4ae1fea7b4649ea90a314984a442ad"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html#afe4ae1fea7b4649ea90a314984a442ad">visitByPath</a> (std::string_view path, VISITOR visitor) const</td></tr>
 <tr class="memdesc:afe4ae1fea7b4649ea90a314984a442ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve the given path and call the visitor for the found object.  <a href="#afe4ae1fea7b4649ea90a314984a442ad">More...</a><br /></td></tr>
@@ -173,6 +177,8 @@ Friends</h2></td></tr>
 <tr class="separator:aea041c73da1d9771be65a8de77db646c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b56992616643ba81b3a672d7cf40a1b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html#a5b56992616643ba81b3a672d7cf40a1b">DirectoryProxy</a></td></tr>
 <tr class="separator:a5b56992616643ba81b3a672d7cf40a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bd07f16e35057750f3f09bcdf0beb4a"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html#a4bd07f16e35057750f3f09bcdf0beb4a">VertexProperties</a></td></tr>
+<tr class="separator:a4bd07f16e35057750f3f09bcdf0beb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -188,7 +194,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p><a class="el" href="class_chimera_t_k_1_1_model_1_1_proxy.html" title="Base class for the proxies representing objects in the model. ">Proxy</a> representing the root of the application model. </p>
 <p>This acts as the main entry point for the model. </p>
 
-<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00185">185</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00187">187</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af69b8f2810e7327dbbe63fb24404d7e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af69b8f2810e7327dbbe63fb24404d7e3">&#9670;&nbsp;</a></span>RootProxy()</h2>
@@ -375,7 +381,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Convert into a proxy for the Directory part/aspect of the <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_model_8cc_source.html#l00092">92</a> of file <a class="el" href="_model_8cc_source.html">Model.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_8cc_source.html#l00104">104</a> of file <a class="el" href="_model_8cc_source.html">Model.cc</a>.</p>
 
 </div>
 </div>
@@ -403,6 +409,46 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Convert into a proxy for the <a class="el" href="class_chimera_t_k_1_1_module_group.html">ModuleGroup</a> part/aspect of the <a class="el" href="class_chimera_t_k_1_1_application.html">Application</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_model_8cc_source.html#l00098">98</a> of file <a class="el" href="_model_8cc_source.html">Model.cc</a>.</p>
+
+</div>
+</div>
+<a id="aaf30d1bc4c4967a3b3f35df1ab084db7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf30d1bc4c4967a3b3f35df1ab084db7">&#9670;&nbsp;</a></span>remove() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::Model::RootProxy::remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_application_module.html">ApplicationModule</a> &amp;&#160;</td>
+          <td class="paramname"><em>module</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_model_8cc_source.html#l00092">92</a> of file <a class="el" href="_model_8cc_source.html">Model.cc</a>.</p>
+
+</div>
+</div>
+<a id="aa5176622394472573bfa6aac0ad9a397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5176622394472573bfa6aac0ad9a397">&#9670;&nbsp;</a></span>remove() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChimeraTK::Model::RootProxy::remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_chimera_t_k_1_1_module_group.html">ModuleGroup</a> &amp;&#160;</td>
+          <td class="paramname"><em>module</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_model_8cc_source.html#l00086">86</a> of file <a class="el" href="_model_8cc_source.html">Model.cc</a>.</p>
 
@@ -447,7 +493,7 @@ template&lt;typename VISITOR &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>indicates whether the path has been found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l01685">1685</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l01715">1715</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -489,7 +535,7 @@ template&lt;typename... Args&gt; </div>
 
 <p>Implementations of <a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html" title="Proxy representing the root of the application model. ">RootProxy</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l01592">1592</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l01622">1622</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -530,7 +576,7 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00189">189</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00235">235</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -554,7 +600,7 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00191">191</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00237">237</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -578,7 +624,7 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00193">193</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00239">239</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -602,7 +648,7 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00188">188</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00234">234</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -626,7 +672,7 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00192">192</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00238">238</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -650,7 +696,7 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00187">187</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00233">233</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -674,7 +720,31 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00190">190</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00236">236</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
+
+</div>
+</div>
+<a id="a4bd07f16e35057750f3f09bcdf0beb4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bd07f16e35057750f3f09bcdf0beb4a">&#9670;&nbsp;</a></span>VertexProperties</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend struct <a class="el" href="struct_chimera_t_k_1_1_model_1_1_vertex_properties.html">VertexProperties</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_model_8h_source.html#l00240">240</a> of file <a class="el" href="_model_8h_source.html">Model.h</a>.</p>
 
 </div>
 </div>
@@ -688,7 +758,7 @@ template&lt;typename... Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_model.html">Model</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_model_1_1_root_proxy.html">RootProxy</a></li>
-    <li class="footer">Generated on Wed Nov 9 2022 04:54:15 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Nov 18 2022 04:55:50 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
