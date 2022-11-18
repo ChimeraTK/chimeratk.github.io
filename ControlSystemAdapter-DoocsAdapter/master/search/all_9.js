@@ -2,6 +2,7 @@ var searchData=
 [
   ['i1source',['i1Source',['../struct_chimera_t_k_1_1_ifff_description.html#a8947445094f753bc4d3499e16ddffe65',1,'ChimeraTK::IfffDescription']]],
   ['ifffdescription',['IfffDescription',['../struct_chimera_t_k_1_1_ifff_description.html',1,'ChimeraTK::IfffDescription'],['../struct_chimera_t_k_1_1_ifff_description.html#a290474f59a2baaf448d19e9c68aec227',1,'ChimeraTK::IfffDescription::IfffDescription()']]],
+  ['imagedescription',['ImageDescription',['../struct_chimera_t_k_1_1_image_description.html',1,'ChimeraTK::ImageDescription'],['../struct_chimera_t_k_1_1_image_description.html#a67367089b5154a18d31f4efc84e55fbb',1,'ChimeraTK::ImageDescription::ImageDescription()']]],
   ['import',['import',['../class_chimera_t_k_1_1_variable_mapper.html#ab9f8eeb70a5daf40e5f5621895165044',1,'ChimeraTK::VariableMapper']]],
   ['increment',['increment',['../struct_chimera_t_k_1_1_spectrum_description.html#a4006c9278a91b342b2214965a3779d81',1,'ChimeraTK::SpectrumDescription']]],
   ['incrementsource',['incrementSource',['../struct_chimera_t_k_1_1_spectrum_description.html#a8a4e1dfb8644ee71bdac83a897d4f1f9',1,'ChimeraTK::SpectrumDescription']]],

@@ -26,6 +26,7 @@ var dir_171063ca2b6d8df6d9147a9ad3041fe6 =
     [ "testBasenameFromAddress.cpp", "test_basename_from_address_8cpp.html", "test_basename_from_address_8cpp" ],
     [ "testCSAdapterEqFct.cpp", "test_c_s_adapter_eq_fct_8cpp.html", "test_c_s_adapter_eq_fct_8cpp" ],
     [ "testDoocsAdapter.cpp", "test_doocs_adapter_8cpp.html", "test_doocs_adapter_8cpp" ],
+    [ "testDoocsImage.cc", "test_doocs_image_8cc.html", "test_doocs_image_8cc" ],
     [ "testDoocsProcessScalar.cpp", "test_doocs_process_scalar_8cpp.html", "test_doocs_process_scalar_8cpp" ],
     [ "testDoocsPVFactory.cpp", "test_doocs_p_v_factory_8cpp.html", "test_doocs_p_v_factory_8cpp" ],
     [ "testDoocsSpectrum.cpp", "test_doocs_spectrum_8cpp.html", "test_doocs_spectrum_8cpp" ],

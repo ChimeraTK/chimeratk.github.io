@@ -15,6 +15,7 @@ var searchData=
   ['correctdoocstimestamp',['correctDoocsTimestamp',['../class_chimera_t_k_1_1_property_base.html#aa910037ad5a10c8047c7aa9a071bec0d',1,'ChimeraTK::PropertyBase']]],
   ['create',['create',['../class_chimera_t_k_1_1_doocs_p_v_factory.html#aa39ca83409ab6a864386a0dbf504e7a8',1,'ChimeraTK::DoocsPVFactory']]],
   ['createdoocsarray',['createDoocsArray',['../class_chimera_t_k_1_1_doocs_p_v_factory.html#a4410f04a76298cca7e9764d0a8f57de7',1,'ChimeraTK::DoocsPVFactory']]],
+  ['createdoocsimage',['createDoocsImage',['../class_chimera_t_k_1_1_doocs_p_v_factory.html#abb4d1e8df1a6fdde1770c59ee8d40f87',1,'ChimeraTK::DoocsPVFactory']]],
   ['createdoocsscalar',['createDoocsScalar',['../class_chimera_t_k_1_1_doocs_p_v_factory.html#a4864aa67d8900988a961c03472945065',1,'ChimeraTK::DoocsPVFactory']]],
   ['createdoocsspectrum',['createDoocsSpectrum',['../class_chimera_t_k_1_1_doocs_p_v_factory.html#a997e90ada658e3610569632c756ef818',1,'ChimeraTK::DoocsPVFactory']]],
   ['createifff',['createIfff',['../class_chimera_t_k_1_1_doocs_p_v_factory.html#a461b5aa1113f9bc7d29e382d7313a2da',1,'ChimeraTK::DoocsPVFactory']]],

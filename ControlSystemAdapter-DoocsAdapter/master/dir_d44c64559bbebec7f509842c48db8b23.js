@@ -12,6 +12,10 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "DoocsIfff.h", "_doocs_ifff_8h.html", [
       [ "DoocsIfff", "class_chimera_t_k_1_1_doocs_ifff.html", "class_chimera_t_k_1_1_doocs_ifff" ]
     ] ],
+    [ "DoocsImage.h", "_doocs_image_8h.html", [
+      [ "MappedDoocsImg", "struct_chimera_t_k_1_1_mapped_doocs_img.html", "struct_chimera_t_k_1_1_mapped_doocs_img" ],
+      [ "DoocsImage", "class_chimera_t_k_1_1_doocs_image.html", "class_chimera_t_k_1_1_doocs_image" ]
+    ] ],
     [ "DoocsProcessArray.h", "_doocs_process_array_8h.html", [
       [ "DoocsProcessArray", "class_chimera_t_k_1_1_doocs_process_array.html", "class_chimera_t_k_1_1_doocs_process_array" ]
     ] ],
@@ -38,6 +42,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "PropertyAttributes", "struct_chimera_t_k_1_1_property_attributes.html", "struct_chimera_t_k_1_1_property_attributes" ],
       [ "PropertyDescription", "struct_chimera_t_k_1_1_property_description.html", "struct_chimera_t_k_1_1_property_description" ],
       [ "AutoPropertyDescription", "struct_chimera_t_k_1_1_auto_property_description.html", "struct_chimera_t_k_1_1_auto_property_description" ],
+      [ "ImageDescription", "struct_chimera_t_k_1_1_image_description.html", "struct_chimera_t_k_1_1_image_description" ],
       [ "SpectrumDescription", "struct_chimera_t_k_1_1_spectrum_description.html", "struct_chimera_t_k_1_1_spectrum_description" ],
       [ "Axis", "struct_chimera_t_k_1_1_spectrum_description_1_1_axis.html", "struct_chimera_t_k_1_1_spectrum_description_1_1_axis" ],
       [ "XyDescription", "struct_chimera_t_k_1_1_xy_description.html", "struct_chimera_t_k_1_1_xy_description" ],

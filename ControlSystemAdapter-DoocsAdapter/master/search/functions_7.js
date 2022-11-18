@@ -1,6 +1,7 @@
 var searchData=
 [
   ['ifffdescription',['IfffDescription',['../struct_chimera_t_k_1_1_ifff_description.html#a290474f59a2baaf448d19e9c68aec227',1,'ChimeraTK::IfffDescription']]],
+  ['imagedescription',['ImageDescription',['../struct_chimera_t_k_1_1_image_description.html#a67367089b5154a18d31f4efc84e55fbb',1,'ChimeraTK::ImageDescription']]],
   ['import',['import',['../class_chimera_t_k_1_1_variable_mapper.html#ab9f8eeb70a5daf40e5f5621895165044',1,'ChimeraTK::VariableMapper']]],
   ['init',['init',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#a80c3ca3307536c6beed43a6783fc354d',1,'ChimeraTK::CSAdapterEqFct']]],
   ['interrupt_5fusr1_5fepilog',['interrupt_usr1_epilog',['../empty__doocs__functions_8cc.html#af20c61d0fcfd8848be67e1ecb1810123',1,'interrupt_usr1_epilog(int):&#160;empty_doocs_functions.cc'],['../empty_server_functions_8h.html#af20c61d0fcfd8848be67e1ecb1810123',1,'interrupt_usr1_epilog(int):&#160;emptyServerFunctions.h']]],

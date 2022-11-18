@@ -12,7 +12,8 @@ var NAVTREE =
         [ "D_spectrum", "index.html#D_spectrum", null ],
         [ "D_array", "index.html#D_array", null ],
         [ "D_xy", "index.html#D_xy", null ],
-        [ "D_ifff", "index.html#D_ifff", null ]
+        [ "D_ifff", "index.html#D_ifff", null ],
+        [ "D_imagec", "index.html#D_imagec", null ]
       ] ],
       [ "Error reporting", "index.html#set_error", null ],
       [ "Specify `eq_fct_code` in the mapping file", "index.html#specifie_code", null ]
@@ -54,9 +55,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_c_s_adapter_eq_fct_8cc.html",
-"class_chimera_t_k_1_1_variable_mapper.html#addb8b19f9c9e8515a53d7486f4f25b7c",
-"server_test_read_write_8cpp.html#a65f95cc1d322f1592aa334c7e8fd5491",
-"test_variable_mapper_8cpp.html#af8c05f1099b6e39241d27c05cac65fe4"
+"class_chimera_t_k_1_1_variable_mapper.html#aa88a6e2972356689a7b2138390196e3a",
+"server_test_import_all_into_location_8cpp_source.html",
+"test_doocs_process_scalar_8cpp.html#a8dfcd18f6fff89ef742cfcfac7a68e2f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

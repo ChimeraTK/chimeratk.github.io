@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['generateimage',['generateImage',['../test_doocs_image_8cc.html#ab981d3a0d44735f7010c46c098c5310b',1,'testDoocsImage.cc']]],
   ['generateinputvariables',['generateInputVariables',['../test_variable_mapper_8cpp.html#a0f602618a3c14a28b0ea85cb42980ab1',1,'testVariableMapper.cpp']]],
   ['get_5fhistpointer',['get_histPointer',['../struct_d__text_unifier.html#a448a1633eb29a9158c5c26d23123e5f1',1,'D_textUnifier']]],
   ['getabsolutesource',['getAbsoluteSource',['../namespace_chimera_t_k.html#afcd443a4562fd9b849a12ea0f09587b1',1,'ChimeraTK']]],
@@ -20,6 +21,7 @@ var searchData=
   ['geteqfct',['getEqFct',['../class_chimera_t_k_1_1_property_base.html#a5b600b005b3170eb235541f7e10c6a63',1,'ChimeraTK::PropertyBase']]],
   ['geterrorreportinginfos',['getErrorReportingInfos',['../class_chimera_t_k_1_1_variable_mapper.html#a0a1bbe74e75d383b0a1d75479f68d843',1,'ChimeraTK::VariableMapper']]],
   ['gethashistorydefault',['getHasHistoryDefault',['../class_chimera_t_k_1_1_variable_mapper.html#adf790079aada402c1db0ad4e42c16752',1,'ChimeraTK::VariableMapper']]],
+  ['getimh',['getIMH',['../class_chimera_t_k_1_1_doocs_image.html#a0c055075ba40aa3643091e84faed1151',1,'ChimeraTK::DoocsImage']]],
   ['getinstance',['getInstance',['../class_chimera_t_k_1_1_variable_mapper.html#ab7359ad69bc42594947748c51ceb8e73',1,'ChimeraTK::VariableMapper']]],
   ['getiswriteabledefault',['getIsWriteableDefault',['../class_chimera_t_k_1_1_variable_mapper.html#aed5f14a453c9d868c26dcedd490b84cf',1,'ChimeraTK::VariableMapper']]],
   ['getlocationandcode',['getLocationAndCode',['../class_chimera_t_k_1_1_variable_mapper.html#abd94469f3c6eab5f750539d31300ea9f',1,'ChimeraTK::VariableMapper']]],
@@ -28,7 +30,7 @@ var searchData=
   ['getpersistdefault',['getPersistDefault',['../class_chimera_t_k_1_1_variable_mapper.html#abe4078f73e1af8ef9e95083e63e52178',1,'ChimeraTK::VariableMapper']]],
   ['getprocessvariablesinthislocation',['getProcessVariablesInThisLocation',['../class_chimera_t_k_1_1_c_s_adapter_eq_fct.html#aa9b14a8983622d4d7757709d8d91e1d3',1,'ChimeraTK::CSAdapterEqFct']]],
   ['getpropertiesinlocation',['getPropertiesInLocation',['../class_chimera_t_k_1_1_variable_mapper.html#aafbeae678eaa4d6c47fb57444337f47e',1,'ChimeraTK::VariableMapper']]],
-  ['getsources',['getSources',['../struct_chimera_t_k_1_1_property_description.html#a3a7d4a55788e2621325be1e32b9406c0',1,'ChimeraTK::PropertyDescription::getSources()'],['../struct_chimera_t_k_1_1_auto_property_description.html#a73cb09c4ac947a66c37795ca48c925a9',1,'ChimeraTK::AutoPropertyDescription::getSources()'],['../struct_chimera_t_k_1_1_spectrum_description.html#a62510f49575b13a9f66b8e14343aa87f',1,'ChimeraTK::SpectrumDescription::getSources()'],['../struct_chimera_t_k_1_1_xy_description.html#ab385d6a133708cf16c3388a805e3d8ac',1,'ChimeraTK::XyDescription::getSources()'],['../struct_chimera_t_k_1_1_ifff_description.html#a95579272c6a78881fbfb952c49496796',1,'ChimeraTK::IfffDescription::getSources()']]],
+  ['getsources',['getSources',['../struct_chimera_t_k_1_1_property_description.html#a3a7d4a55788e2621325be1e32b9406c0',1,'ChimeraTK::PropertyDescription::getSources()'],['../struct_chimera_t_k_1_1_auto_property_description.html#a73cb09c4ac947a66c37795ca48c925a9',1,'ChimeraTK::AutoPropertyDescription::getSources()'],['../struct_chimera_t_k_1_1_image_description.html#a47b4cc4fffc37129f997d64cc630e226',1,'ChimeraTK::ImageDescription::getSources()'],['../struct_chimera_t_k_1_1_spectrum_description.html#a62510f49575b13a9f66b8e14343aa87f',1,'ChimeraTK::SpectrumDescription::getSources()'],['../struct_chimera_t_k_1_1_xy_description.html#ab385d6a133708cf16c3388a805e3d8ac',1,'ChimeraTK::XyDescription::getSources()'],['../struct_chimera_t_k_1_1_ifff_description.html#a95579272c6a78881fbfb952c49496796',1,'ChimeraTK::IfffDescription::getSources()']]],
   ['gettimestamp',['getTimestamp',['../class_chimera_t_k_1_1_property_base.html#a99d914cc5fdbeaf9f2fa31d219686c17',1,'ChimeraTK::PropertyBase']]],
   ['getusedvariables',['getUsedVariables',['../class_chimera_t_k_1_1_variable_mapper.html#a4a095441bcd16d9c5acd0796aa5a9537',1,'ChimeraTK::VariableMapper']]],
   ['globalfixture',['GlobalFixture',['../struct_global_fixture.html',1,'GlobalFixture'],['../struct_global_fixture.html#a82a3660c34f8ecf5e55eb1ee55949ca8',1,'GlobalFixture::GlobalFixture()']]]
