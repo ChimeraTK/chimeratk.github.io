@@ -76,7 +76,12 @@ var hierarchy =
       [ "DecoratorBackend", "class_decorator_backend.html", null ]
     ] ],
     [ "Hardware", "class_hardware.html", null ],
+    [ "ChimeraTK::ImgView< ValType, OPTIONS >", "class_chimera_t_k_1_1_img_view.html", null ],
     [ "IndependentControlCore", "class_independent_control_core.html", null ],
+    [ "ChimeraTK::MappedStruct< StructHeader >", "class_chimera_t_k_1_1_mapped_struct.html", null ],
+    [ "ChimeraTK::MappedStruct< ImgHeader >", "class_chimera_t_k_1_1_mapped_struct.html", [
+      [ "ChimeraTK::MappedImage", "class_chimera_t_k_1_1_mapped_image.html", null ]
+    ] ],
     [ "NDRegisterAccessor", null, [
       [ "ChimeraTK::ProcessArray< T >", "class_chimera_t_k_1_1_process_array.html", [
         [ "ChimeraTK::BidirectionalProcessArray< T >", "class_chimera_t_k_1_1_bidirectional_process_array.html", null ],
@@ -93,6 +98,9 @@ var hierarchy =
       [ "ChimeraTK::TypeChangingDecorator< std::string, IMPL_T >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ],
       [ "ChimeraTK::TypeChangingDecorator< T, ChimeraTK::Void >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ],
       [ "ChimeraTK::TypeChangingDecorator< T, std::string >", "class_chimera_t_k_1_1_type_changing_decorator.html", null ]
+    ] ],
+    [ "ChimeraTK::OpaqueStructHeader", "struct_chimera_t_k_1_1_opaque_struct_header.html", [
+      [ "ChimeraTK::ImgHeader", "struct_chimera_t_k_1_1_img_header.html", null ]
     ] ],
     [ "PerformInputToOutput", "struct_perform_input_to_output.html", null ],
     [ "ChimeraTK::PersistentDataStorage", "class_chimera_t_k_1_1_persistent_data_storage.html", null ],

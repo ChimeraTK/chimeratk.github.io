@@ -3,6 +3,7 @@ var searchData=
   ['testasyncread_2ecpp',['testAsyncRead.cpp',['../test_async_read_8cpp.html',1,'']]],
   ['testbidirectionalprocessarray_2ecpp',['testBidirectionalProcessArray.cpp',['../test_bidirectional_process_array_8cpp.html',1,'']]],
   ['testindependentcontrolcore_2ecpp',['testIndependentControlCore.cpp',['../test_independent_control_core_8cpp.html',1,'']]],
+  ['testmappedimage_2ecc',['testMappedImage.cc',['../test_mapped_image_8cc.html',1,'']]],
   ['testperformance_2ecpp',['testPerformance.cpp',['../test_performance_8cpp.html',1,'']]],
   ['testpersistentdatastorage_2ecpp',['testPersistentDataStorage.cpp',['../test_persistent_data_storage_8cpp.html',1,'']]],
   ['testpvmanager_2ecpp',['testPVManager.cpp',['../test_p_v_manager_8cpp.html',1,'']]],

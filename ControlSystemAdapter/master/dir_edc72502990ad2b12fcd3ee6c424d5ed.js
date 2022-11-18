@@ -13,6 +13,7 @@ var dir_edc72502990ad2b12fcd3ee6c424d5ed =
     [ "ManualTimeStampSource.h", "_manual_time_stamp_source_8h.html", [
       [ "ManualTimeStampSource", "class_chimera_t_k_1_1_manual_time_stamp_source.html", "class_chimera_t_k_1_1_manual_time_stamp_source" ]
     ] ],
+    [ "MappedImage.h", "_mapped_image_8h.html", "_mapped_image_8h" ],
     [ "PersistentDataStorage.h", "_persistent_data_storage_8h.html", [
       [ "PersistentDataStorage", "class_chimera_t_k_1_1_persistent_data_storage.html", "class_chimera_t_k_1_1_persistent_data_storage" ],
       [ "Queue", "class_chimera_t_k_1_1_persistent_data_storage_1_1_queue.html", "class_chimera_t_k_1_1_persistent_data_storage_1_1_queue" ],

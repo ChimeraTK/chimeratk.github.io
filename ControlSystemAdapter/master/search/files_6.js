@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['manualtimestampsource_2eh',['ManualTimeStampSource.h',['../_manual_time_stamp_source_8h.html',1,'']]]
+  ['manualtimestampsource_2eh',['ManualTimeStampSource.h',['../_manual_time_stamp_source_8h.html',1,'']]],
+  ['mappedimage_2eh',['MappedImage.h',['../_mapped_image_8h.html',1,'']]]
 ];

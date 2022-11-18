@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['writequeuelength',['writeQueueLength',['../struct_unidir_sender.html#a7a41499f9fa1dd312bfcd75882cdeebf',1,'UnidirSender::writeQueueLength()'],['../struct_unidir_polled_sender.html#afafe44828139bbcb37b10cc162c59377',1,'UnidirPolledSender::writeQueueLength()'],['../struct_test_register.html#a3feb02dcd6d8e53262d61ffd44fb554a',1,'TestRegister::writeQueueLength()']]],
-  ['writerthreadfunction',['writerThreadFunction',['../class_chimera_t_k_1_1_persistent_data_storage.html#a102ac2b8bc54568ef24da361e3426c22',1,'ChimeraTK::PersistentDataStorage']]],
-  ['writetofile',['writeToFile',['../class_chimera_t_k_1_1_persistent_data_storage.html#a968935ca0a2e351ec9d9623c9931b821',1,'ChimeraTK::PersistentDataStorage']]]
+  ['unidirectionalprocessarray',['UnidirectionalProcessArray',['../class_chimera_t_k_1_1_unidirectional_process_array.html#a3ad69ac68b662e3d11f24f8c006fe80b',1,'ChimeraTK::UnidirectionalProcessArray::UnidirectionalProcessArray(typename ProcessArray&lt; T &gt;::InstanceType instanceType, const ChimeraTK::RegisterPath &amp;name, const std::string &amp;unit, const std::string &amp;description, const std::vector&lt; T &gt; &amp;initialValue, std::size_t numberOfBuffers, const AccessModeFlags &amp;flags)'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a10df6ab054bc7721c6122f5d2c30cf8d',1,'ChimeraTK::UnidirectionalProcessArray::UnidirectionalProcessArray(typename ProcessArray&lt; T &gt;::InstanceType instanceType, UnidirectionalProcessArray::SharedPtr receiver, const AccessModeFlags &amp;flags)']]],
+  ['update',['update',['../class_chimera_t_k_1_1_status_with_message_reader_base.html#a90dd33ca23af7edcdd84ec65b3edf88d',1,'ChimeraTK::StatusWithMessageReaderBase']]],
+  ['updatevalue',['updateValue',['../class_chimera_t_k_1_1_persistent_data_storage.html#a612dbafae9899fbead5ca29b867d4642',1,'ChimeraTK::PersistentDataStorage']]]
 ];

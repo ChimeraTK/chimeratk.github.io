@@ -19,8 +19,11 @@ var searchData=
   ['releasemanualloopcontrol',['releaseManualLoopControl',['../class_reference_test_application.html#a9ac737323b3a69be4b618387d2cbce11',1,'ReferenceTestApplication']]],
   ['replacetransferelement',['replaceTransferElement',['../class_chimera_t_k_1_1_process_array.html#a4a9a87416793c87a3ce907c5da8c8f71',1,'ChimeraTK::ProcessArray']]],
   ['retrievevalue',['retrieveValue',['../class_chimera_t_k_1_1_persistent_data_storage.html#a7a3e048d31966415906a1bd81fb94929',1,'ChimeraTK::PersistentDataStorage']]],
+  ['rgb24',['RGB24',['../namespace_chimera_t_k.html#a377d018f686a15e28e316b2255030d62a08415b81fed4feed7d982c9919ac08ee',1,'ChimeraTK']]],
+  ['rgba32',['RGBA32',['../namespace_chimera_t_k.html#a377d018f686a15e28e316b2255030d62ad9e8e4a9228ed56eceb29f0a1223b02b',1,'ChimeraTK']]],
   ['round',['Round',['../struct_chimera_t_k_1_1csa__helpers_1_1_round.html',1,'ChimeraTK::csa_helpers']]],
   ['round_5fstyle',['round_style',['../struct_chimera_t_k_1_1csa__helpers_1_1_round.html#a8d61f6f429149bddcb17b43dfc0fe657',1,'ChimeraTK::csa_helpers::Round']]],
+  ['rowmajor',['RowMajor',['../namespace_chimera_t_k.html#a1335f948996830a55e08acf57cbab631abba47a7c03289a67ca347baa3f55be2f',1,'ChimeraTK']]],
   ['run',['run',['../class_chimera_t_k_1_1_application_base.html#a3a32c70d9576ac03963dbcf2f9f4f34d',1,'ChimeraTK::ApplicationBase::run()'],['../class_reference_test_application.html#aa13fc1c5fb03375dcbf5da8ba8d8f813',1,'ReferenceTestApplication::run()'],['../class_my_test_application.html#ab481b68bead03f1a0e5b18200cbfd106',1,'MyTestApplication::run()']]],
   ['runmainlooponce',['runMainLoopOnce',['../class_reference_test_application.html#ac4855857d4e3f438efe89d7e9cfa65ce',1,'ReferenceTestApplication']]]
 ];

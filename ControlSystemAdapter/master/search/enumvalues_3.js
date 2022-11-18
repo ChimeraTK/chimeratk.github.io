@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fault',['FAULT',['../struct_chimera_t_k_1_1_status_accessor_base.html#a2cb26eb708491cef93d4bb358db711dda893b3aaf1661e3717b18e8335ff93a72',1,'ChimeraTK::StatusAccessorBase']]]
+  ['devicetocontrolsystem',['deviceToControlSystem',['../namespace_chimera_t_k.html#aa7e41ad56888f34fba9598d89cc6bbcca5cc2e1ae8338cefe481b446fac79ed6d',1,'ChimeraTK']]]
 ];

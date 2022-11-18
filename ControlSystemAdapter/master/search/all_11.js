@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['scale_5fx',['scale_x',['../struct_chimera_t_k_1_1_img_header.html#a0925a45a3fdc966e67e5e48270a650a0',1,'ChimeraTK::ImgHeader']]],
+  ['scale_5fy',['scale_y',['../struct_chimera_t_k_1_1_img_header.html#a03b48cba50e1c6a46a46bf5ffd921d7b',1,'ChimeraTK::ImgHeader']]],
   ['sender',['SENDER',['../class_chimera_t_k_1_1_process_array.html#ab3ed8ce4da736ec65ea938eb401f46dda430f4111359bd1980bdedff020a21171',1,'ChimeraTK::ProcessArray']]],
   ['sender_5freceiver',['SENDER_RECEIVER',['../class_chimera_t_k_1_1_process_array.html#ab3ed8ce4da736ec65ea938eb401f46dda9ef2c3242765d411075ab916d2c19b32',1,'ChimeraTK::ProcessArray']]],
   ['setenableprocessarraythreadsafetycheck',['setEnableProcessArrayThreadSafetyCheck',['../namespace_chimera_t_k.html#a3b513f257155d9245ebed197db95a8fc',1,'ChimeraTK']]],
@@ -10,12 +12,14 @@ var searchData=
   ['setpersistentdatastorage',['setPersistentDataStorage',['../class_chimera_t_k_1_1_bidirectional_process_array.html#ae9d55a715a86e0c0ff4cb4380b90f569',1,'ChimeraTK::BidirectionalProcessArray::setPersistentDataStorage()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a70445d795d2a69b6214d0f5d5738c3e6',1,'ChimeraTK::UnidirectionalProcessArray::setPersistentDataStorage()']]],
   ['setpvmanager',['setPVManager',['../class_chimera_t_k_1_1_application_base.html#a408946c453e9c6928c265dac185a87bd',1,'ChimeraTK::ApplicationBase']]],
   ['setremotevalue',['setRemoteValue',['../struct_unidir_sender.html#a4683a5bc099edfdcdbafe1582afc0147',1,'UnidirSender::setRemoteValue()'],['../struct_unidir_polled_sender.html#a9dc62bf08060cee2c358a2ba6d2d389b',1,'UnidirPolledSender::setRemoteValue()'],['../struct_unidir_receiver.html#a63fb1aa368cd223904f5a3520ecff2ed',1,'UnidirReceiver::setRemoteValue()'],['../struct_bidir.html#a52b62fcaa306464a782aa8eb3cc4a763',1,'Bidir::setRemoteValue()'],['../struct_test_register.html#acbc1b918daab01a092e254ad2ca9e18b',1,'TestRegister::setRemoteValue()'],['../struct_test_register_casted_async.html#a852779be22c0a10dddf3243a7708880d',1,'TestRegisterCastedAsync::setRemoteValue()']]],
+  ['setshape',['setShape',['../class_chimera_t_k_1_1_mapped_image.html#aed633e2d92891a1e1e7d7c49bb3f1d9f',1,'ChimeraTK::MappedImage']]],
   ['settimestamp',['setTimeStamp',['../class_chimera_t_k_1_1_manual_time_stamp_source.html#a2afb28703ae339c70c3b80fe45bc3852',1,'ChimeraTK::ManualTimeStampSource']]],
   ['setvaluerejectcallback',['setValueRejectCallback',['../class_chimera_t_k_1_1_bidirectional_process_array.html#a9ad4005d5d301a2befaa2120e021590d',1,'ChimeraTK::BidirectionalProcessArray']]],
   ['setvoltage',['setVoltage',['../class_hardware.html#a9dfc3e2df4fac10524e3505ae8263129',1,'Hardware']]],
   ['sharedptr',['SharedPtr',['../class_chimera_t_k_1_1_bidirectional_process_array.html#a2d8f0a97ee81132f0871e322a3a33af4',1,'ChimeraTK::BidirectionalProcessArray::SharedPtr()'],['../class_chimera_t_k_1_1_control_system_p_v_manager.html#afb9f5c0aa91fa5a6c422dc46e5278622',1,'ChimeraTK::ControlSystemPVManager::SharedPtr()'],['../class_chimera_t_k_1_1_device_p_v_manager.html#a6777a7b81b7598afa95b943dec20c4e0',1,'ChimeraTK::DevicePVManager::SharedPtr()'],['../class_chimera_t_k_1_1_process_array.html#ac3cd487f5d88261f9efeeff6f1504412',1,'ChimeraTK::ProcessArray::SharedPtr()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#ab0fb62fab7a4974cd6f9f096902f4449',1,'ChimeraTK::UnidirectionalProcessArray::SharedPtr()']]],
   ['shutdown',['shutdown',['../class_chimera_t_k_1_1_application_base.html#a5ec279bbc23164f485c3d63b8c1dd012',1,'ChimeraTK::ApplicationBase']]],
   ['sigaborthandler',['sigAbortHandler',['../stresstest_8cpp.html#aec2a4abe15ba90303716cc9c325ae37d',1,'stresstest.cpp']]],
+  ['size',['size',['../class_chimera_t_k_1_1_mapped_struct.html#aa5a65b179965daacf029b10074cfa511',1,'ChimeraTK::MappedStruct']]],
   ['status',['Status',['../struct_chimera_t_k_1_1_status_accessor_base.html#a2cb26eb708491cef93d4bb358db711dd',1,'ChimeraTK::StatusAccessorBase']]],
   ['statusaccessorbase',['StatusAccessorBase',['../struct_chimera_t_k_1_1_status_accessor_base.html',1,'ChimeraTK']]],
   ['statusaccessorbase_2eh',['StatusAccessorBase.h',['../_status_accessor_base_8h.html',1,'']]],

@@ -4,6 +4,7 @@ var dir_171063ca2b6d8df6d9147a9ad3041fe6 =
     [ "stresstest.cpp", "stresstest_8cpp.html", "stresstest_8cpp" ],
     [ "testAsyncRead.cpp", "test_async_read_8cpp.html", "test_async_read_8cpp" ],
     [ "testBidirectionalProcessArray.cpp", "test_bidirectional_process_array_8cpp.html", "test_bidirectional_process_array_8cpp" ],
+    [ "testMappedImage.cc", "test_mapped_image_8cc.html", "test_mapped_image_8cc" ],
     [ "testPerformance.cpp", "test_performance_8cpp.html", "test_performance_8cpp" ],
     [ "testPersistentDataStorage.cpp", "test_persistent_data_storage_8cpp.html", "test_persistent_data_storage_8cpp" ],
     [ "testPVManager.cpp", "test_p_v_manager_8cpp.html", "test_p_v_manager_8cpp" ],

@@ -120,8 +120,23 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_device_p_v_manager.html">DevicePVManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manager for process variables on the device side.  <a href="class_chimera_t_k_1_1_device_p_v_manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_img_header.html">ImgHeader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Image header.  <a href="struct_chimera_t_k_1_1_img_header.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_img_view.html">ImgView</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">provides convenient matrix-like access for <a class="el" href="class_chimera_t_k_1_1_mapped_image.html" title="interface to an image that is mapped onto a 1D array of ValType ">MappedImage</a>  <a href="class_chimera_t_k_1_1_img_view.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_manual_time_stamp_source.html">ManualTimeStampSource</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The code manually has to set a time stamp, which is then disctributed to the connected PVs.  <a href="class_chimera_t_k_1_1_manual_time_stamp_source.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_mapped_image.html">MappedImage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface to an image that is mapped onto a 1D array of ValType  <a href="class_chimera_t_k_1_1_mapped_image.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_mapped_struct.html">MappedStruct</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides interface to a struct that is mapped onto a 1D array of ValType StructHeader must be derived from <a class="el" href="struct_chimera_t_k_1_1_opaque_struct_header.html" title="generic header for opaque struct handling It has fields needed for communication in the same process...">OpaqueStructHeader</a>.  <a href="class_chimera_t_k_1_1_mapped_struct.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_chimera_t_k_1_1_opaque_struct_header.html">OpaqueStructHeader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic header for opaque struct handling It has fields needed for communication in the same process, e.g.  <a href="struct_chimera_t_k_1_1_opaque_struct_header.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_persistent_data_storage.html">PersistentDataStorage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persistent data storage for process variables.  <a href="class_chimera_t_k_1_1_persistent_data_storage.html#details">More...</a><br /></td></tr>
@@ -222,6 +237,20 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a377d018f686a15e28e316b2255030d62"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a377d018f686a15e28e316b2255030d62">ImgFormat</a> { <br />
+&#160;&#160;<a class="el" href="namespace_chimera_t_k.html#a377d018f686a15e28e316b2255030d62ac9f88e098f6fe4e4e112eeb05ccb9671">ImgFormat::Unset</a> = 0, 
+<a class="el" href="namespace_chimera_t_k.html#a377d018f686a15e28e316b2255030d62ac8cfe3d00282445878661f32adca48ef">ImgFormat::Gray8</a>, 
+<a class="el" href="namespace_chimera_t_k.html#a377d018f686a15e28e316b2255030d62a2a6ec0dac8730c09dba12f860dbbad12">ImgFormat::Gray16</a>, 
+<a class="el" href="namespace_chimera_t_k.html#a377d018f686a15e28e316b2255030d62a08415b81fed4feed7d982c9919ac08ee">ImgFormat::RGB24</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_chimera_t_k.html#a377d018f686a15e28e316b2255030d62ad9e8e4a9228ed56eceb29f0a1223b02b">ImgFormat::RGBA32</a>
+<br />
+ }</td></tr>
+<tr class="separator:a377d018f686a15e28e316b2255030d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1335f948996830a55e08acf57cbab631"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#a1335f948996830a55e08acf57cbab631">ImgOptions</a> { <a class="el" href="namespace_chimera_t_k.html#a1335f948996830a55e08acf57cbab631abba47a7c03289a67ca347baa3f55be2f">ImgOptions::RowMajor</a> = 1, 
+<a class="el" href="namespace_chimera_t_k.html#a1335f948996830a55e08acf57cbab631a9e91437ff30e153a77db79d1a362893a">ImgOptions::ColMajor</a> = 0
+ }</td></tr>
+<tr class="separator:a1335f948996830a55e08acf57cbab631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7e41ad56888f34fba9598d89cc6bbcc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_chimera_t_k.html#aa7e41ad56888f34fba9598d89cc6bbcc">SynchronizationDirection</a> { <a class="el" href="namespace_chimera_t_k.html#aa7e41ad56888f34fba9598d89cc6bbcca0b7ae0252039e5d7b24f3d28cfd274bc">SynchronizationDirection::controlSystemToDevice</a>, 
 <a class="el" href="namespace_chimera_t_k.html#aa7e41ad56888f34fba9598d89cc6bbcca5cc2e1ae8338cefe481b446fac79ed6d">SynchronizationDirection::deviceToControlSystem</a>, 
 <a class="el" href="namespace_chimera_t_k.html#aa7e41ad56888f34fba9598d89cc6bbccae4dc2e9671c1874f0e2e9dd07eabcb0b">SynchronizationDirection::bidirectional</a>
@@ -323,6 +352,65 @@ Variables</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="_type_changing_decorator_8h_source.html#l00030">30</a> of file <a class="el" href="_type_changing_decorator_8h_source.html">TypeChangingDecorator.h</a>.</p>
+
+</div>
+</div>
+<a id="a377d018f686a15e28e316b2255030d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a377d018f686a15e28e316b2255030d62">&#9670;&nbsp;</a></span>ImgFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_chimera_t_k.html#a377d018f686a15e28e316b2255030d62">ChimeraTK::ImgFormat</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a377d018f686a15e28e316b2255030d62ac9f88e098f6fe4e4e112eeb05ccb9671"></a>Unset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a377d018f686a15e28e316b2255030d62ac8cfe3d00282445878661f32adca48ef"></a>Gray8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a377d018f686a15e28e316b2255030d62a2a6ec0dac8730c09dba12f860dbbad12"></a>Gray16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a377d018f686a15e28e316b2255030d62a08415b81fed4feed7d982c9919ac08ee"></a>RGB24&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a377d018f686a15e28e316b2255030d62ad9e8e4a9228ed56eceb29f0a1223b02b"></a>RGBA32&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="_mapped_image_8h_source.html#l00077">77</a> of file <a class="el" href="_mapped_image_8h_source.html">MappedImage.h</a>.</p>
+
+</div>
+</div>
+<a id="a1335f948996830a55e08acf57cbab631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1335f948996830a55e08acf57cbab631">&#9670;&nbsp;</a></span>ImgOptions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_chimera_t_k.html#a1335f948996830a55e08acf57cbab631">ChimeraTK::ImgOptions</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1335f948996830a55e08acf57cbab631abba47a7c03289a67ca347baa3f55be2f"></a>RowMajor&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1335f948996830a55e08acf57cbab631a9e91437ff30e153a77db79d1a362893a"></a>ColMajor&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="_mapped_image_8h_source.html#l00079">79</a> of file <a class="el" href="_mapped_image_8h_source.html">MappedImage.h</a>.</p>
 
 </div>
 </div>
@@ -852,7 +940,7 @@ template&lt;class UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li>
-    <li class="footer">Generated on Sat Nov 5 2022 04:55:10 for ChimeraTK-ControlSystemAdapter by
+    <li class="footer">Generated on Fri Nov 18 2022 04:55:05 for ChimeraTK-ControlSystemAdapter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

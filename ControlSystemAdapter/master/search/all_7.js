@@ -26,5 +26,7 @@ var searchData=
   ['getuniqueid',['getUniqueId',['../class_chimera_t_k_1_1_bidirectional_process_array.html#a84b3d639a532053b86710d3ca2104192',1,'ChimeraTK::BidirectionalProcessArray::getUniqueId()'],['../class_chimera_t_k_1_1_process_array.html#ac1be019e072c4306fa9d3516177215f5',1,'ChimeraTK::ProcessArray::getUniqueId()'],['../class_chimera_t_k_1_1_unidirectional_process_array.html#a3cfa68f1632196e2e1c093c1e7e3c5f8',1,'ChimeraTK::UnidirectionalProcessArray::getUniqueId()']]],
   ['getvaluetype',['getValueType',['../class_chimera_t_k_1_1_process_array.html#a9c1283cdafc6521ba25b5fa1e3dce80a',1,'ChimeraTK::ProcessArray']]],
   ['getvoltage',['getVoltage',['../class_hardware.html#a84d6e097d04ee740dba1c40557db2627',1,'Hardware']]],
-  ['globaldecoratormap',['globalDecoratorMap',['../namespace_chimera_t_k.html#a5453614d4428268571689bca7bbf571b',1,'ChimeraTK']]]
+  ['globaldecoratormap',['globalDecoratorMap',['../namespace_chimera_t_k.html#a5453614d4428268571689bca7bbf571b',1,'ChimeraTK']]],
+  ['gray16',['Gray16',['../namespace_chimera_t_k.html#a377d018f686a15e28e316b2255030d62a2a6ec0dac8730c09dba12f860dbbad12',1,'ChimeraTK']]],
+  ['gray8',['Gray8',['../namespace_chimera_t_k.html#a377d018f686a15e28e316b2255030d62ac8cfe3d00282445878661f32adca48ef',1,'ChimeraTK']]]
 ];
