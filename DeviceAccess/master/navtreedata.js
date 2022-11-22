@@ -128,8 +128,8 @@ var NAVTREEINDEX =
 "struct_new_backend.html",
 "struct_reg_word_firmware_forced_read_only__push.html#ad975e54d95a2c898df50c6c90aaa702e",
 "test_dummy_backend_8cpp.html#ab9840997c43eddfdaf9798a7845120f3",
-"test_pcie_backend_8cpp.html#a666a688be4897906a5a2e1ad2b6aec78",
-"use_custom_backend_8cpp_source.html"
+"test_pcie_backend_8cpp.html#a46c3624450dd339bd4ece5181f8da881",
+"use_custom_backend_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

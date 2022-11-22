@@ -169,6 +169,7 @@ var NAVTREEINDEX16 =
 "test_l_map_type_hint_modifier_plugin_8cc.html":[20,0,6,1,25],
 "test_l_map_type_hint_modifier_plugin_8cc.html#a139f00d2466d591f60b8d6a73c8273f1":[20,0,6,1,25,0],
 "test_l_map_type_hint_modifier_plugin_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[20,0,6,1,25,1],
+"test_l_map_type_hint_modifier_plugin_8cc.html#a89e18d695677b477319854625bcaffec":[20,0,6,1,25,3],
 "test_l_map_type_hint_modifier_plugin_8cc.html#aa44b30d2486baac0b4cac391dd6025e9":[20,0,6,1,25,2],
 "test_l_map_type_hint_modifier_plugin_8cc_source.html":[20,0,6,1,25],
 "test_large_bar_8cpp.html":[20,0,6,1,18],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "test_pcie_backend_8cpp.html#a129f24ffa58f2c3dcb7d527e18cf0770":[20,0,6,1,32,3],
 "test_pcie_backend_8cpp.html#a19823c5af9fff4070c144dacf022bf94":[20,0,6,1,32,18],
 "test_pcie_backend_8cpp.html#a271c147e9d6c7b61bf537cd2223451a9":[20,0,6,1,32,10],
-"test_pcie_backend_8cpp.html#a30f806c6f8ec8307adf87cc48b00b90a":[20,0,6,1,32,4],
-"test_pcie_backend_8cpp.html#a46c3624450dd339bd4ece5181f8da881":[20,0,6,1,32,5]
+"test_pcie_backend_8cpp.html#a30f806c6f8ec8307adf87cc48b00b90a":[20,0,6,1,32,4]
 };
