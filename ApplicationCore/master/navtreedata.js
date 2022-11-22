@@ -25,12 +25,17 @@ var NAVTREE =
       [ "Introduction", "exception_handling.html#exceptionHandling_Introduction", null ],
       [ "DataValidity", "exception_handling.html#exceptionHandling_DataValidity", null ]
     ] ],
+    [ "ApplicationCore 2.x -> 3.0 migration guide", "migration_guide_v2_to_v3.html", null ],
     [ "ConfigReader Module", "configreader.html", [
       [ "Example usage", "configreader.html#usage", null ],
       [ "XML file structure", "configreader.html#xmlstructure", null ]
     ] ],
     [ "Technical specification: Exception handling for device runtime errors V1.0", "spec_execption_handling.html", [
       [ "A. Introduction", "spec_execption_handling.html#spec_execptionHandling_intro", [
+        [ "General", "migration_guide_v2_to_v3.html#autotoc_md0", [
+          [ "Old-style servers (defineConnections still overridden)", "migration_guide_v2_to_v3.html#autotoc_md1", null ],
+          [ "New-style servers (no defineConnections)", "migration_guide_v2_to_v3.html#autotoc_md2", null ]
+        ] ],
         [ "A.9 Special terminology used in this document", "spec_execption_handling.html#spec_exceptionHandling_intro_terminology", null ],
         [ "(*) Comments", "spec_execption_handling.html#spec_exceptionHandling_intro_comments", null ]
       ] ],
@@ -69,70 +74,70 @@ var NAVTREE =
     [ "spec_VersionPropagation", "spec__version_propagation.html", null ],
     [ "What's new in ApplicationCore 2.0", "whats_new__a_c_2_0.html", [
       [ "Initial value propagation", "whats_new__a_c_2_0.html#whats_new_2_0_initial_value", [
-        [ "A. Introduction", "spec_initial_value_propagation.html#autotoc_md16", null ],
-        [ "B. Definitions", "spec_initial_value_propagation.html#autotoc_md17", null ],
-        [ "C. High-level requirements", "spec_initial_value_propagation.html#autotoc_md18", [
-          [ "(*) Comments", "spec_initial_value_propagation.html#autotoc_md19", null ]
+        [ "A. Introduction", "spec_initial_value_propagation.html#autotoc_md19", null ],
+        [ "B. Definitions", "spec_initial_value_propagation.html#autotoc_md20", null ],
+        [ "C. High-level requirements", "spec_initial_value_propagation.html#autotoc_md21", [
+          [ "(*) Comments", "spec_initial_value_propagation.html#autotoc_md22", null ]
         ] ],
-        [ "D. Detailed requirements", "spec_initial_value_propagation.html#autotoc_md20", [
-          [ "Comments", "spec_initial_value_propagation.html#autotoc_md21", null ]
+        [ "D. Detailed requirements", "spec_initial_value_propagation.html#autotoc_md23", [
+          [ "Comments", "spec_initial_value_propagation.html#autotoc_md24", null ]
         ] ],
-        [ "E. Implementation", "spec_initial_value_propagation.html#autotoc_md22", [
-          [ "NDRegisterAccessor implementations", "spec_initial_value_propagation.html#autotoc_md23", null ],
-          [ "ApplicationModule", "spec_initial_value_propagation.html#autotoc_md24", null ],
-          [ "ThreadedFanOut", "spec_initial_value_propagation.html#autotoc_md25", null ],
-          [ "TriggerFanOut", "spec_initial_value_propagation.html#autotoc_md26", null ],
-          [ "DeviceModule", "spec_initial_value_propagation.html#autotoc_md27", null ],
-          [ "ExceptionHandlingDecorator", "spec_initial_value_propagation.html#autotoc_md28", null ],
-          [ "Application", "spec_initial_value_propagation.html#autotoc_md29", null ],
-          [ "ControlSystemAdapter", "spec_initial_value_propagation.html#autotoc_md30", null ],
-          [ "ProcessArrays", "spec_initial_value_propagation.html#autotoc_md31", null ]
+        [ "E. Implementation", "spec_initial_value_propagation.html#autotoc_md25", [
+          [ "NDRegisterAccessor implementations", "spec_initial_value_propagation.html#autotoc_md26", null ],
+          [ "ApplicationModule", "spec_initial_value_propagation.html#autotoc_md27", null ],
+          [ "ThreadedFanOut", "spec_initial_value_propagation.html#autotoc_md28", null ],
+          [ "TriggerFanOut", "spec_initial_value_propagation.html#autotoc_md29", null ],
+          [ "DeviceModule", "spec_initial_value_propagation.html#autotoc_md30", null ],
+          [ "ExceptionHandlingDecorator", "spec_initial_value_propagation.html#autotoc_md31", null ],
+          [ "Application", "spec_initial_value_propagation.html#autotoc_md32", null ],
+          [ "ControlSystemAdapter", "spec_initial_value_propagation.html#autotoc_md33", null ],
+          [ "ProcessArrays", "spec_initial_value_propagation.html#autotoc_md34", null ]
         ] ],
-        [ "F. Known bugs [OUTDATED!!!]", "spec_initial_value_propagation.html#autotoc_md32", [
-          [ "DeviceAccess interface", "spec_initial_value_propagation.html#autotoc_md33", null ],
-          [ "NDRegisterAccessor implementations", "spec_initial_value_propagation.html#autotoc_md34", null ],
-          [ "ApplicationModule / EntityOwner", "spec_initial_value_propagation.html#autotoc_md35", null ],
-          [ "TriggerFanOut", "spec_initial_value_propagation.html#autotoc_md36", null ],
-          [ "DeviceModule", "spec_initial_value_propagation.html#autotoc_md37", null ],
-          [ "ExceptionHandlingDecorator", "spec_initial_value_propagation.html#autotoc_md38", null ],
-          [ "VariableNetworkNode", "spec_initial_value_propagation.html#autotoc_md39", null ],
-          [ "ControlSystemAdapter", "spec_initial_value_propagation.html#autotoc_md40", null ],
-          [ "Non-memeber functions", "spec_initial_value_propagation.html#autotoc_md41", null ],
-          [ "Documentation", "spec_initial_value_propagation.html#autotoc_md42", null ]
+        [ "F. Known bugs [OUTDATED!!!]", "spec_initial_value_propagation.html#autotoc_md35", [
+          [ "DeviceAccess interface", "spec_initial_value_propagation.html#autotoc_md36", null ],
+          [ "NDRegisterAccessor implementations", "spec_initial_value_propagation.html#autotoc_md37", null ],
+          [ "ApplicationModule / EntityOwner", "spec_initial_value_propagation.html#autotoc_md38", null ],
+          [ "TriggerFanOut", "spec_initial_value_propagation.html#autotoc_md39", null ],
+          [ "DeviceModule", "spec_initial_value_propagation.html#autotoc_md40", null ],
+          [ "ExceptionHandlingDecorator", "spec_initial_value_propagation.html#autotoc_md41", null ],
+          [ "VariableNetworkNode", "spec_initial_value_propagation.html#autotoc_md42", null ],
+          [ "ControlSystemAdapter", "spec_initial_value_propagation.html#autotoc_md43", null ],
+          [ "Non-memeber functions", "spec_initial_value_propagation.html#autotoc_md44", null ],
+          [ "Documentation", "spec_initial_value_propagation.html#autotoc_md45", null ]
         ] ],
-        [ "1. General idea", "spec_data_validity_propagation.html#autotoc_md0", [
-          [ "Comments", "spec_data_validity_propagation.html#autotoc_md1", null ]
+        [ "1. General idea", "spec_data_validity_propagation.html#autotoc_md3", [
+          [ "Comments", "spec_data_validity_propagation.html#autotoc_md4", null ]
         ] ],
-        [ "2. Technical implementation", "spec_data_validity_propagation.html#autotoc_md2", [
-          [ "2.1 MetaDataPropagatingRegisterDecorator (*)", "spec_data_validity_propagation.html#autotoc_md3", null ],
-          [ "2.2 removed", "spec_data_validity_propagation.html#autotoc_md4", null ],
-          [ "2.3 ApplicationModule", "spec_data_validity_propagation.html#autotoc_md5", null ],
-          [ "2.4 TriggerFanOut", "spec_data_validity_propagation.html#autotoc_md6", null ],
-          [ "2.5 Interaction with exception handling", "spec_data_validity_propagation.html#autotoc_md7", null ],
-          [ "2.6 Application class", "spec_data_validity_propagation.html#autotoc_md8", null ],
-          [ "Comments:", "spec_data_validity_propagation.html#autotoc_md9", null ]
+        [ "2. Technical implementation", "spec_data_validity_propagation.html#autotoc_md5", [
+          [ "2.1 MetaDataPropagatingRegisterDecorator (*)", "spec_data_validity_propagation.html#autotoc_md6", null ],
+          [ "2.2 removed", "spec_data_validity_propagation.html#autotoc_md7", null ],
+          [ "2.3 ApplicationModule", "spec_data_validity_propagation.html#autotoc_md8", null ],
+          [ "2.4 TriggerFanOut", "spec_data_validity_propagation.html#autotoc_md9", null ],
+          [ "2.5 Interaction with exception handling", "spec_data_validity_propagation.html#autotoc_md10", null ],
+          [ "2.6 Application class", "spec_data_validity_propagation.html#autotoc_md11", null ],
+          [ "Comments:", "spec_data_validity_propagation.html#autotoc_md12", null ]
         ] ],
-        [ "3. Implementation details", "spec_data_validity_propagation.html#autotoc_md10", null ],
-        [ "4. Circular dependencies", "spec_data_validity_propagation.html#autotoc_md11", [
-          [ "4.1 General behaviour", "spec_data_validity_propagation.html#autotoc_md12", [
-            [ "Comments", "spec_data_validity_propagation.html#autotoc_md13", null ]
+        [ "3. Implementation details", "spec_data_validity_propagation.html#autotoc_md13", null ],
+        [ "4. Circular dependencies", "spec_data_validity_propagation.html#autotoc_md14", [
+          [ "4.1 General behaviour", "spec_data_validity_propagation.html#autotoc_md15", [
+            [ "Comments", "spec_data_validity_propagation.html#autotoc_md16", null ]
           ] ],
-          [ "4.3 Technical implementation", "spec_data_validity_propagation.html#autotoc_md14", [
-            [ "Comments", "spec_data_validity_propagation.html#autotoc_md15", null ]
+          [ "4.3 Technical implementation", "spec_data_validity_propagation.html#autotoc_md17", [
+            [ "Comments", "spec_data_validity_propagation.html#autotoc_md18", null ]
           ] ]
         ] ],
-        [ "Introduction", "spec__status_aggregator.html#autotoc_md43", null ],
-        [ "High-level requirements", "spec__status_aggregator.html#autotoc_md44", [
-          [ "R1.1 Automatic detection of instances", "spec__status_aggregator.html#autotoc_md45", null ],
-          [ "R1.2 Priorization of status values", "spec__status_aggregator.html#autotoc_md46", null ],
-          [ "Constraints and issues", "spec__status_aggregator.html#autotoc_md47", null ]
-        ] ],
-        [ "Implementation", "spec__status_aggregator.html#autotoc_md48", [
-          [ "Requirements", "spec__status_aggregator.html#autotoc_md49", null ],
+        [ "Introduction", "spec__status_aggregator.html#autotoc_md46", null ],
+        [ "High-level requirements", "spec__status_aggregator.html#autotoc_md47", [
+          [ "R1.1 Automatic detection of instances", "spec__status_aggregator.html#autotoc_md48", null ],
+          [ "R1.2 Priorization of status values", "spec__status_aggregator.html#autotoc_md49", null ],
           [ "Constraints and issues", "spec__status_aggregator.html#autotoc_md50", null ]
         ] ],
-        [ "ApplicationModule", "spec__version_propagation.html#autotoc_md51", null ],
-        [ "Transfer Groups", "spec__version_propagation.html#autotoc_md52", null ],
+        [ "Implementation", "spec__status_aggregator.html#autotoc_md51", [
+          [ "Requirements", "spec__status_aggregator.html#autotoc_md52", null ],
+          [ "Constraints and issues", "spec__status_aggregator.html#autotoc_md53", null ]
+        ] ],
+        [ "ApplicationModule", "spec__version_propagation.html#autotoc_md54", null ],
+        [ "Transfer Groups", "spec__version_propagation.html#autotoc_md55", null ],
         [ "Required changes to existing applications", "whats_new__a_c_2_0.html#whats_new_2_0_initial_value_app_change", null ]
       ] ]
     ] ],
@@ -183,15 +188,15 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_entity_owner.html#aa856db8bf289b50c32116089e3d95e8fae0ac20adce6ffee48c7151b070aa5737",
 "class_chimera_t_k_1_1_module_tree.html",
 "demo_app2a_8cc.html",
-"spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_deviceModule_comments",
-"struct_chimera_t_k_1_1_model_1_1_and_set.html#ab791fd65f69006e53c2449336191ea00",
-"struct_chimera_t_k_1_1_status_output.html",
-"struct_fixture__no_testable_mode.html",
-"struct_template_module.html#a33ad71f1d2126f74e9dbaafde56c630b",
-"struct_test_application2.html#ac68348bd1698ac9472823c885980c921",
+"spec_execption_handling.html#spec_execptionHandling_high_level_implmentation_decorator_behaviour",
+"struct_chimera_t_k_1_1_model_1_1_and_set.html#a09ca394135b688bcc56446fa7c620990",
+"struct_chimera_t_k_1_1_status_aggregator.html#a909230dde3ffa65085ee1ee62122af4e",
+"struct_f_f.html#afb9e4a06a7a8bc46f7ef089ea721dabb",
+"struct_table_generation_1_1_table_parameters.html",
+"struct_test_application2.html#a960173e5cc41278137ed4e6be01a88ba",
 "struct_test_module.html#a7d6840590346a5b8b9f9d8b045611a56",
-"test_app_module_connections_8cc.html#aae17d3638073297654152058593b98ec",
-"test_periodic_trigger_8cc.html"
+"test_app_module_connections_8cc.html#a5ce7368e009c920d69740c3053f16a88",
+"test_optimise_unmapped_variables_8cc.html#a6b2a3852db8bb19ab6909bac01859985"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

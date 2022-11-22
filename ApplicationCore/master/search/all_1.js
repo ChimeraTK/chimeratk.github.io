@@ -92,5 +92,6 @@ var searchData=
   ['arraypushinput_3c_20uint16_5ft_20_3e',['ArrayPushInput&lt; uint16_t &gt;',['../struct_chimera_t_k_1_1_array_push_input.html',1,'ChimeraTK']]],
   ['arraypushinputwb',['ArrayPushInputWB',['../struct_chimera_t_k_1_1_array_push_input_w_b.html',1,'ChimeraTK::ArrayPushInputWB&lt; UserType &gt;'],['../struct_chimera_t_k_1_1_array_push_input_w_b.html#aa454594c4dbbab169756d3d4e7cf2529',1,'ChimeraTK::ArrayPushInputWB::ArrayPushInputWB(Module *owner, const std::string &amp;name, std::string unit, size_t nElements, const std::string &amp;description, const std::unordered_set&lt; std::string &gt; &amp;tags={})'],['../struct_chimera_t_k_1_1_array_push_input_w_b.html#ad4f72f4da8287afd6b6864ead5756b6c',1,'ChimeraTK::ArrayPushInputWB::ArrayPushInputWB()=default']]],
   ['assignmodulelaterapp',['AssignModuleLaterApp',['../struct_assign_module_later_app.html',1,'AssignModuleLaterApp'],['../struct_assign_module_later_app.html#a9eaeda570986f47bdd2e5bf5541faaf1',1,'AssignModuleLaterApp::AssignModuleLaterApp()']]],
-  ['automation',['Automation',['../struct_automation.html',1,'Automation'],['../struct_example_app.html#ae1ccc11eafbd0880d0c1e49988ab5b47',1,'ExampleApp::automation()']]]
+  ['automation',['Automation',['../struct_automation.html',1,'Automation'],['../struct_example_app.html#ae1ccc11eafbd0880d0c1e49988ab5b47',1,'ExampleApp::automation()']]],
+  ['applicationcore_202_2ex_20_2d_3e_203_2e0_20migration_20guide',['ApplicationCore 2.x -&gt; 3.0 migration guide',['../migration_guide_v2_to_v3.html',1,'index']]]
 ];
