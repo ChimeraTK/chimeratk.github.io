@@ -124,10 +124,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3404af1ffc3a6df39808d28887714a90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html#a3404af1ffc3a6df39808d28887714a90">deactivate</a> () override</td></tr>
 <tr class="memdesc:a3404af1ffc3a6df39808d28887714a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivate synchronisation thread if running.  <a href="#a3404af1ffc3a6df39808d28887714a90">More...</a><br /></td></tr>
 <tr class="separator:a3404af1ffc3a6df39808d28887714a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0e20a6ae41b80b1532629fe459de21b"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
-<tr class="memitem:ad0e20a6ae41b80b1532629fe459de21b"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">FeedingFanOut</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html#ad0e20a6ae41b80b1532629fe459de21b">addNetwork</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; feedingNode, <a class="el" href="namespace_chimera_t_k.html#aab0d646f1a4050a8537ab53ee768e09a">ConsumerImplementationPairs</a>&lt; UserType &gt; const &amp;consumerImplementationPairs)</td></tr>
-<tr class="memdesc:ad0e20a6ae41b80b1532629fe459de21b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new network the <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html" title="InternalModule which waits for a trigger, then reads a number of variables and distributes each of th...">TriggerFanOut</a>.  <a href="#ad0e20a6ae41b80b1532629fe459de21b">More...</a><br /></td></tr>
-<tr class="separator:ad0e20a6ae41b80b1532629fe459de21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8eeaa4d1c7f02cf4ad63b482bb87da"><td class="memTemplParams" colspan="2">template&lt;typename UserType &gt; </td></tr>
+<tr class="memitem:aee8eeaa4d1c7f02cf4ad63b482bb87da"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html#aee8eeaa4d1c7f02cf4ad63b482bb87da">addNetwork</a> (boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt; feedingNode, <a class="el" href="namespace_chimera_t_k.html#aab0d646f1a4050a8537ab53ee768e09a">ConsumerImplementationPairs</a>&lt; UserType &gt; const &amp;consumerImplementationPairs)</td></tr>
+<tr class="memdesc:aee8eeaa4d1c7f02cf4ad63b482bb87da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new network the <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html" title="InternalModule which waits for a trigger, then reads a number of variables and distributes each of th...">TriggerFanOut</a>.  <a href="#aee8eeaa4d1c7f02cf4ad63b482bb87da">More...</a><br /></td></tr>
+<tr class="separator:aee8eeaa4d1c7f02cf4ad63b482bb87da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac46817d485e17425b7200cfe5c3c7bff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html#ac46817d485e17425b7200cfe5c3c7bff">run</a> ()</td></tr>
 <tr class="memdesc:ac46817d485e17425b7200cfe5c3c7bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronise feeder and the consumers.  <a href="#ac46817d485e17425b7200cfe5c3c7bff">More...</a><br /></td></tr>
 <tr class="separator:ac46817d485e17425b7200cfe5c3c7bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,7 +325,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Map of the feeding NDRegisterAccessor to the corresponding <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html" title="NDRegisterAccessor implementation which distributes values written to this accessor out to any number...">FeedingFanOut</a> for each UserType. </p>
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00053">53</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00050">50</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -436,8 +436,8 @@ template&lt;typename UserType &gt; </div>
 
 </div>
 </div>
-<a id="ad0e20a6ae41b80b1532629fe459de21b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0e20a6ae41b80b1532629fe459de21b">&#9670;&nbsp;</a></span>addNetwork()</h2>
+<a id="aee8eeaa4d1c7f02cf4ad63b482bb87da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee8eeaa4d1c7f02cf4ad63b482bb87da">&#9670;&nbsp;</a></span>addNetwork()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -445,7 +445,7 @@ template&lt;typename UserType &gt; </div>
 template&lt;typename UserType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html">FeedingFanOut</a>&lt; UserType &gt; &gt; ChimeraTK::TriggerFanOut::addNetwork </td>
+          <td class="memname">void ChimeraTK::TriggerFanOut::addNetwork </td>
           <td>(</td>
           <td class="paramtype">boost::shared_ptr&lt; ChimeraTK::NDRegisterAccessor&lt; UserType &gt;&gt;&#160;</td>
           <td class="paramname"><em>feedingNode</em>, </td>
@@ -465,9 +465,9 @@ template&lt;typename UserType &gt; </div>
 </div><div class="memdoc">
 
 <p>Add a new network the <a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html" title="InternalModule which waits for a trigger, then reads a number of variables and distributes each of th...">TriggerFanOut</a>. </p>
-<p>The network is defined by its feeding node. This function will return the corresponding <a class="el" href="class_chimera_t_k_1_1_feeding_fan_out.html" title="NDRegisterAccessor implementation which distributes values written to this accessor out to any number...">FeedingFanOut</a>, to which all slaves have to be added. </p>
+<p>The network is defined by its feeding node. </p>
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00070">70</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00067">67</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -581,7 +581,7 @@ template&lt;typename UserType &gt; </div>
 <p>The <a class="el" href="class_chimera_t_k_1_1_device_module.html">DeviceModule</a> of the feeder. </p>
 <p>Required for exception handling </p>
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00063">63</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00060">60</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -607,7 +607,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>Thread handling the synchronisation, if needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00060">60</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00057">57</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -633,7 +633,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>TransferElement acting as our trigger. </p>
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00047">47</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00044">44</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -657,7 +657,7 @@ template&lt;typename UserType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00054">54</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00051">51</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -683,7 +683,7 @@ template&lt;typename UserType &gt; </div>
 
 <p>TransferGroup containing all feeders NDRegisterAccessors. </p>
 
-<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00057">57</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trigger_fan_out_8h_source.html#l00054">54</a> of file <a class="el" href="_trigger_fan_out_8h_source.html">TriggerFanOut.h</a>.</p>
 
 </div>
 </div>
@@ -697,7 +697,7 @@ template&lt;typename UserType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_trigger_fan_out.html">TriggerFanOut</a></li>
-    <li class="footer">Generated on Tue Nov 22 2022 04:55:22 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Tue Nov 29 2022 04:54:14 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

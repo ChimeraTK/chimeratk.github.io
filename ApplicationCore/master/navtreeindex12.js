@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"test_app_module_connections_8cc.html#a4636a21370548b3929d43dcba8f38bd9":[18,0,10,0,1,10],
 "test_app_module_connections_8cc.html#a5ce7368e009c920d69740c3053f16a88":[18,0,10,0,1,5],
 "test_app_module_connections_8cc.html#a6b2a3852db8bb19ab6909bac01859985":[18,0,10,0,1,3],
 "test_app_module_connections_8cc.html#a8112d54f94c91e6008880a63435c5e7f":[18,0,10,0,1,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "test_modules_8cc.html#a8f032dfe7e4405cdbb96e434c34ad78a":[18,0,10,0,16,18],
 "test_modules_8cc.html#a9d24eea5924bbd61af30546a5cdeafc0":[18,0,10,0,16,11],
 "test_modules_8cc.html#ac061868745661f1d128b1393bb804a50":[18,0,10,0,16,17],
-"test_modules_8cc_source.html":[18,0,10,0,16],
-"test_optimise_unmapped_variables_8cc.html":[18,0,10,0,17]
+"test_modules_8cc_source.html":[18,0,10,0,16]
 };

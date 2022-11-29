@@ -26,6 +26,7 @@ var NAVTREEINDEX6 =
 "struct_chimera_t_k_1_1_model_1_1_edge_properties.html#a2a4dbe381a94c1517ca50c0aeabf0b4ea93ba5a40a8092c710ebbae903c291d7a":[17,0,0,0,13,0,1],
 "struct_chimera_t_k_1_1_model_1_1_edge_properties.html#a2a4dbe381a94c1517ca50c0aeabf0b4ea98a2c026db5d3a2d395ac202ebe1afcb":[17,0,0,0,13,0,3],
 "struct_chimera_t_k_1_1_model_1_1_edge_properties.html#a2a4dbe381a94c1517ca50c0aeabf0b4eab46b517b77d347176f23adef739a8f39":[17,0,0,0,13,0,2],
+"struct_chimera_t_k_1_1_model_1_1_edge_properties.html#a2a4dbe381a94c1517ca50c0aeabf0b4eac7d08e09a44d2b453e7eeecebf0a8daf":[17,0,0,0,13,0,5],
 "struct_chimera_t_k_1_1_model_1_1_edge_properties.html#a2a4dbe381a94c1517ca50c0aeabf0b4eafedb2d84cafe20862cb4399751a8a7e3":[17,0,0,0,13,0,0],
 "struct_chimera_t_k_1_1_model_1_1_edge_properties.html#ac0df84a8b92c8fe6f7588ea0b30cf10d":[17,0,0,0,13,1],
 "struct_chimera_t_k_1_1_model_1_1_objecttype_filter.html":[17,0,0,0,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "struct_chimera_t_k_1_1_status_aggregator.html#a5b0c0c8f5b240092b5178c48a2ca7910":[17,0,0,70,7],
 "struct_chimera_t_k_1_1_status_aggregator.html#a6d9c71ab121362d2780bca10948b9282":[17,0,0,70,2],
 "struct_chimera_t_k_1_1_status_aggregator.html#a742c174eafa171afd1688234285d69e6":[17,0,0,70,8],
-"struct_chimera_t_k_1_1_status_aggregator.html#a77531f83df97984df96fa8eef7fde128":[17,0,0,70,4],
-"struct_chimera_t_k_1_1_status_aggregator.html#a7ff5258a11dece9c6cf840d2a8353068":[17,0,0,70,6]
+"struct_chimera_t_k_1_1_status_aggregator.html#a77531f83df97984df96fa8eef7fde128":[17,0,0,70,4]
 };
