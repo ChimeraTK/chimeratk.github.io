@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('classSystemInfoModule.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classSystemInfoModule__coll__graph.svg" width="100%" height="501"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classSystemInfoModule__coll__graph.svg" width="100%" height="460"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -118,21 +118,19 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSystemInfoModule_1_1Status.html">Status</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSystemInfoModule_1_1TriggerGroup.html">TriggerGroup</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a21335cde0ec365897d0abecd1973ec10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemInfoModule.html#a21335cde0ec365897d0abecd1973ec10">SystemInfoModule</a> (EntityOwner *owner, const std::string &amp;name, const std::string &amp;description, ctk::HierarchyModifier hierarchyModifier=ctk::HierarchyModifier::none, const std::unordered_set&lt; std::string &gt; &amp;tags={}, const std::string &amp;pathToTrigger=&quot;/Trigger/tick&quot;)</td></tr>
-<tr class="separator:a21335cde0ec365897d0abecd1973ec10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2018aa8a1509f9760995604f88dad5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemInfoModule.html#afb2018aa8a1509f9760995604f88dad5">SystemInfoModule</a> (ctk::ModuleGroup *owner, const std::string &amp;name, const std::string &amp;description, const std::unordered_set&lt; std::string &gt; &amp;tags={}, const std::string &amp;pathToTrigger=&quot;/Trigger/tick&quot;)</td></tr>
+<tr class="separator:afb2018aa8a1509f9760995604f88dad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a876c95c70f1cdf6ffa3f3301f1d1a898"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemInfoModule.html#a876c95c70f1cdf6ffa3f3301f1d1a898">mainLoop</a> () override</td></tr>
 <tr class="memdesc:a876c95c70f1cdf6ffa3f3301f1d1a898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main loop function.  <a href="#a876c95c70f1cdf6ffa3f3301f1d1a898">More...</a><br /></td></tr>
 <tr class="separator:a876c95c70f1cdf6ffa3f3301f1d1a898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a70e1602b3e215e462b243587b2f21fa1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSystemInfoModule_1_1TriggerGroup.html">SystemInfoModule::TriggerGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemInfoModule.html#a70e1602b3e215e462b243587b2f21fa1">triggerGroup</a></td></tr>
-<tr class="separator:a70e1602b3e215e462b243587b2f21fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae20db3f40537973579c97e235345982b"><td class="memItemLeft" align="right" valign="top">ctk::ScalarPushInput&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemInfoModule.html#ae20db3f40537973579c97e235345982b">trigger</a></td></tr>
+<tr class="separator:ae20db3f40537973579c97e235345982b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Static system information (read only once)</div></td></tr>
 <tr class="memitem:a36b58a1a19e07871eaa678e10d0c186c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSystemInfoModule_1_1Info.html">SystemInfoModule::Info</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemInfoModule.html#a36b58a1a19e07871eaa678e10d0c186c">this</a></td></tr>
 <tr class="separator:a36b58a1a19e07871eaa678e10d0c186c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,8 +155,8 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="SystemInfoModule_8h_source.html#l00029">29</a> of file <a class="el" href="SystemInfoModule_8h_source.html">SystemInfoModule.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a21335cde0ec365897d0abecd1973ec10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21335cde0ec365897d0abecd1973ec10">&#9670;&nbsp;</a></span>SystemInfoModule()</h2>
+<a id="afb2018aa8a1509f9760995604f88dad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb2018aa8a1509f9760995604f88dad5">&#9670;&nbsp;</a></span>SystemInfoModule()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +164,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">SystemInfoModule::SystemInfoModule </td>
           <td>(</td>
-          <td class="paramtype">EntityOwner *&#160;</td>
+          <td class="paramtype">ctk::ModuleGroup *&#160;</td>
           <td class="paramname"><em>owner</em>, </td>
         </tr>
         <tr>
@@ -180,12 +178,6 @@ Public Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>description</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ctk::HierarchyModifier&#160;</td>
-          <td class="paramname"><em>hierarchyModifier</em> = <code>ctk::HierarchyModifier::none</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -213,7 +205,7 @@ Public Attributes</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classSystemInfoModule_a21335cde0ec365897d0abecd1973ec10_cgraph.svg" width="394" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classSystemInfoModule_afb2018aa8a1509f9760995604f88dad5_cgraph.svg" width="394" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -246,7 +238,7 @@ Public Attributes</h2></td></tr>
 <p>Main loop function. </p>
 <p>Reads number of cores and system clock ticks and other static parameter only once before the loop. </p>
 
-<p class="definition">Definition at line <a class="el" href="SystemInfoModule_8cc_source.html#l00044">44</a> of file <a class="el" href="SystemInfoModule_8cc_source.html">SystemInfoModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SystemInfoModule_8cc_source.html#l00043">43</a> of file <a class="el" href="SystemInfoModule_8cc_source.html">SystemInfoModule.cc</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -299,7 +291,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SystemInfoModule_8h_source.html#l00133">133</a> of file <a class="el" href="SystemInfoModule_8h_source.html">SystemInfoModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SystemInfoModule_8h_source.html#l00124">124</a> of file <a class="el" href="SystemInfoModule_8h_source.html">SystemInfoModule.h</a>.</p>
 
 </div>
 </div>
@@ -359,17 +351,19 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a70e1602b3e215e462b243587b2f21fa1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70e1602b3e215e462b243587b2f21fa1">&#9670;&nbsp;</a></span>triggerGroup</h2>
+<a id="ae20db3f40537973579c97e235345982b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae20db3f40537973579c97e235345982b">&#9670;&nbsp;</a></span>trigger</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"> <a class="el" href="structSystemInfoModule_1_1TriggerGroup.html">SystemInfoModule::TriggerGroup</a>  SystemInfoModule::triggerGroup</td>
+          <td class="memname">ctk::ScalarPushInput&lt;uint64_t&gt; SystemInfoModule::trigger</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="SystemInfoModule_8h_source.html#l00073">73</a> of file <a class="el" href="SystemInfoModule_8h_source.html">SystemInfoModule.h</a>.</p>
 
 </div>
 </div>
@@ -383,7 +377,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSystemInfoModule.html">SystemInfoModule</a></li>
-    <li class="footer">Generated on Tue Aug 30 2022 04:02:13 for watchdog-server by
+    <li class="footer">Generated on Tue Dec 6 2022 05:02:29 for watchdog-server by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

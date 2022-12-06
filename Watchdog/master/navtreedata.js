@@ -35,7 +35,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "LogFileReader_8cc.html",
-"structProcessInfoModule.html#adc31acf126eb04f49357d56b96a11e08"
+"structProcessInfoModule_1_1Statistics.html#af4ed52d9a2805fb69338ab8aab9b1f7a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -2,10 +2,8 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
 [
     [ "LogFileReader.h", "LogFileReader_8h.html", [
       [ "LogFileModule", "structLogFileModule.html", "structLogFileModule" ],
-      [ "TriggerGroup", "structLogFileModule_1_1TriggerGroup.html", "structLogFileModule_1_1TriggerGroup" ],
       [ "Config", "structLogFileModule_1_1Config.html", "structLogFileModule_1_1Config" ],
-      [ "Status", "structLogFileModule_1_1Status.html", "structLogFileModule_1_1Status" ],
-      [ "LogFileGroup", "structLogFileModule_1_1LogFileGroup.html", "structLogFileModule_1_1LogFileGroup" ]
+      [ "Status", "structLogFileModule_1_1Status.html", "structLogFileModule_1_1Status" ]
     ] ],
     [ "Logging.h", "Logging_8h.html", "Logging_8h" ],
     [ "ProcessHandler.h", "ProcessHandler_8h.html", [
@@ -13,7 +11,6 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     ] ],
     [ "ProcessModule.h", "ProcessModule_8h.html", [
       [ "ProcessInfoModule", "structProcessInfoModule.html", "structProcessInfoModule" ],
-      [ "TriggerGroup", "structProcessInfoModule_1_1TriggerGroup.html", "structProcessInfoModule_1_1TriggerGroup" ],
       [ "Status", "structProcessInfoModule_1_1Status.html", "structProcessInfoModule_1_1Status" ],
       [ "System", "structProcessInfoModule_1_1System.html", "structProcessInfoModule_1_1System" ],
       [ "Status", "structProcessInfoModule_1_1System_1_1Status.html", "structProcessInfoModule_1_1System_1_1Status" ],

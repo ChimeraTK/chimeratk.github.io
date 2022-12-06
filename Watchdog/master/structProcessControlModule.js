@@ -2,7 +2,7 @@ var structProcessControlModule =
 [
     [ "Config", "structProcessControlModule_1_1Config.html", "structProcessControlModule_1_1Config" ],
     [ "ProcessStatus", "structProcessControlModule_1_1ProcessStatus.html", "structProcessControlModule_1_1ProcessStatus" ],
-    [ "ProcessControlModule", "structProcessControlModule.html#a1a020c50fa6bdd1f6edb95907988f798", null ],
+    [ "ProcessControlModule", "structProcessControlModule.html#a4a02ff91258ae353446cadb24384b526", null ],
     [ "CheckIsOnline", "structProcessControlModule.html#a4df7e3fdb51ab49df9867ac9b8a7d29b", null ],
     [ "evaluateMessage", "structProcessControlModule.html#a91953cc7b1081914549db212a02b7462", null ],
     [ "Failed", "structProcessControlModule.html#a386c9f77a4da6cd95b5ffb0007f3c27d", null ],

@@ -12,5 +12,5 @@ var searchData=
   ['startprocess',['startProcess',['../structProcessHandler.html#a9102d9895d68907414a97d4cd4ed79cc',1,'ProcessHandler']]],
   ['stripmessages',['stripMessages',['../namespacelogging.html#ab71ae2b89c97080d8f6faf951ef3e851',1,'logging']]],
   ['sysinfo',['SysInfo',['../classSysInfo.html#aa7d27a2d73754c6b47d33946e5135a7f',1,'SysInfo']]],
-  ['systeminfomodule',['SystemInfoModule',['../classSystemInfoModule.html#a21335cde0ec365897d0abecd1973ec10',1,'SystemInfoModule']]]
+  ['systeminfomodule',['SystemInfoModule',['../classSystemInfoModule.html#afb2018aa8a1509f9760995604f88dad5',1,'SystemInfoModule']]]
 ];

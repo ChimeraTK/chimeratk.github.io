@@ -109,9 +109,9 @@ $(document).ready(function(){initNavTree('structWatchdogModuleGroup.html','');})
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af4e4e47502578ac29b96b0cf41887830"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWatchdogModuleGroup.html#af4e4e47502578ac29b96b0cf41887830">process</a></td></tr>
+<tr class="memitem:af4e4e47502578ac29b96b0cf41887830"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWatchdogModuleGroup.html#af4e4e47502578ac29b96b0cf41887830">process</a> {this, &quot;.&quot;, &quot;Module monitoring the watchdog process&quot;}</td></tr>
 <tr class="separator:af4e4e47502578ac29b96b0cf41887830"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7066e68ac3b49bc22df8f8ec4aed0025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLogFileModule.html">LogFileModule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWatchdogModuleGroup.html#a7066e68ac3b49bc22df8f8ec4aed0025">logFile</a></td></tr>
+<tr class="memitem:a7066e68ac3b49bc22df8f8ec4aed0025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structLogFileModule.html">LogFileModule</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWatchdogModuleGroup.html#a7066e68ac3b49bc22df8f8ec4aed0025">logFile</a> {this, &quot;.&quot;, &quot;Logging module reading the watchdog logfile&quot;, &quot;/Trigger/tick&quot;, &quot;/logging/logFile&quot;}</td></tr>
 <tr class="memdesc:a7066e68ac3b49bc22df8f8ec4aed0025"><td class="mdescLeft">&#160;</td><td class="mdescRight">This module is used to read the watchdog log file, which includes messages from the watchdog process and all other processes controlled by the watchdog.  <a href="#a7066e68ac3b49bc22df8f8ec4aed0025">More...</a><br /></td></tr>
 <tr class="separator:a7066e68ac3b49bc22df8f8ec4aed0025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -126,16 +126,16 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structLogFileModule.html">LogFileModule</a> WatchdogModuleGroup::logFile</td>
+          <td class="memname"><a class="el" href="structLogFileModule.html">LogFileModule</a> WatchdogModuleGroup::logFile {this, &quot;.&quot;, &quot;Logging module reading the watchdog logfile&quot;, &quot;/Trigger/tick&quot;, &quot;/logging/logFile&quot;}</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{<span class="keyword">this</span>, <span class="stringliteral">&quot;watchdogLogFile&quot;</span>, <span class="stringliteral">&quot;Logging module reading the watchdog logfile&quot;</span>, <span class="stringliteral">&quot;/Trigger/tick&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;/watchdog/config/logFile&quot;</span>, ctk::HierarchyModifier::hideThis}</div></div><!-- fragment -->
-<p>This module is used to read the watchdog log file, which includes messages from the watchdog process and all other processes controlled by the watchdog. </p>
-<p>This allows to show all watchdog related messages via the tail (<code>status/logTailExternal</code>). The <a class="el" href="structLogFileModule.html" title="Module used to read external log file in order to make messages available to the control system...">LogFileModule</a> is used differently for all the processes, since in case of the processes the massages produced by the started processes are read and shown in the corresponding tail (<code>status/logTailExternal</code>). Thus in that case the postfix 'External' makes more sense. Here the postfix 'External' can be a bit misleading, because the tail (<code>status/logTailExternal</code>) includes only messages produced by the watchdog itself.</p>
-<dl class="section remark"><dt>Remarks</dt><dd>It would be nice to connect the message output variable of each process to its LoggingModule AND the watchdog LoggingModule. But this is not possible, since it is not possible to connect multiple outputs to a single push input variable. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="WatchdogServer_8h_source.html#l00043">43</a> of file <a class="el" href="WatchdogServer_8h_source.html">WatchdogServer.h</a>.</p>
+<p>This module is used to read the watchdog log file, which includes messages from the watchdog process and all other processes controlled by the watchdog. </p>
+<p>This allows to show all watchdog related messages via the tail (<code>status/logTailExternal</code>). The <a class="el" href="structLogFileModule.html" title="Module used to read external log file in order to make messages available to the control system...">LogFileModule</a> is used differently for all the processes, since in case of the processes the messages produced by the started processes are read and shown in the corresponding tail (<code>status/logTailExternal</code>). Thus in that case the postfix 'External' makes more sense. Here the postfix 'External' can be a bit misleading, because the tail (<code>status/logTailExternal</code>) includes only messages produced by the watchdog itself.</p>
+<dl class="section remark"><dt>Remarks</dt><dd>Here the log file setting from the logging module is used directly by moving the logFile PV to the logging module location. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="WatchdogServer_8h_source.html#l00041">41</a> of file <a class="el" href="WatchdogServer_8h_source.html">WatchdogServer.h</a>.</p>
 
 </div>
 </div>
@@ -146,11 +146,11 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a> WatchdogModuleGroup::process</td>
+          <td class="memname"><a class="el" href="structProcessInfoModule.html">ProcessInfoModule</a> WatchdogModuleGroup::process {this, &quot;.&quot;, &quot;Module monitoring the watchdog process&quot;}</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">      <span class="keyword">this</span>, <span class="stringliteral">&quot;watchdog&quot;</span>, <span class="stringliteral">&quot;Module monitoring the watchdog process&quot;</span>, ctk::HierarchyModifier::hideThis}</div></div><!-- fragment -->
+
 <p class="definition">Definition at line <a class="el" href="WatchdogServer_8h_source.html#l00027">27</a> of file <a class="el" href="WatchdogServer_8h_source.html">WatchdogServer.h</a>.</p>
 
 </div>
@@ -164,7 +164,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structWatchdogModuleGroup.html">WatchdogModuleGroup</a></li>
-    <li class="footer">Generated on Tue Aug 30 2022 04:02:13 for watchdog-server by
+    <li class="footer">Generated on Tue Dec 6 2022 05:02:29 for watchdog-server by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
