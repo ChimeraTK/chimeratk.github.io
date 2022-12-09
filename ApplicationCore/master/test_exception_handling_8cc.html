@@ -172,8 +172,8 @@ Functions</h2></td></tr>
 <tr class="separator:ab5468273a819691b019d81b56a3f4353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a093fb4ff78352404b40f9304c037db9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a093fb4ff78352404b40f9304c037db9d">BOOST_FIXTURE_TEST_CASE</a> (B_3_1_1, <a class="el" href="test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06">Fixture_initHandlers</a>)</td></tr>
 <tr class="separator:a093fb4ff78352404b40f9304c037db9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae072efe31ae1f589096ca4b6d4dc8d4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#ae072efe31ae1f589096ca4b6d4dc8d4a">BOOST_FIXTURE_TEST_CASE</a> (B_2_3_2, <a class="el" href="test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06">Fixture_initHandlers</a>)</td></tr>
-<tr class="separator:ae072efe31ae1f589096ca4b6d4dc8d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeddfe26469d9ec7829bba0012ea2648e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#aeddfe26469d9ec7829bba0012ea2648e">BOOST_FIXTURE_TEST_CASE</a> (B_3_1_2, <a class="el" href="test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06">Fixture_initHandlers</a>)</td></tr>
+<tr class="separator:aeddfe26469d9ec7829bba0012ea2648e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb9d97ae60ccef791e552096613cf018"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#abb9d97ae60ccef791e552096613cf018">BOOST_FIXTURE_TEST_CASE</a> (B_3_1_3, <a class="el" href="test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06">Fixture_initHandlers</a>)</td></tr>
 <tr class="separator:abb9d97ae60ccef791e552096613cf018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91a166708d24b2d9ced5d85148258fd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_exception_handling_8cc.html#a91a166708d24b2d9ced5d85148258fd9">BOOST_FIXTURE_TEST_CASE</a> (B_3_1_4, <a class="el" href="test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06">Fixture_initHandlers</a>)</td></tr>
@@ -929,8 +929,8 @@ as if reading and writing would be allowed." </p>
 
 </div>
 </div>
-<a id="ae072efe31ae1f589096ca4b6d4dc8d4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae072efe31ae1f589096ca4b6d4dc8d4a">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[21/24]</span></h2>
+<a id="aeddfe26469d9ec7829bba0012ea2648e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeddfe26469d9ec7829bba0012ea2648e">&#9670;&nbsp;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[21/24]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -938,7 +938,7 @@ as if reading and writing would be allowed." </p>
         <tr>
           <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">B_2_3_2&#160;</td>
+          <td class="paramtype">B_3_1_2&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -955,7 +955,7 @@ as if reading and writing would be allowed." </p>
       </table>
 </div><div class="memdoc">
 <p><a class="anchor" id="testExceptionHandling_b_3_1_2"></a><a class="el" href="spec_execption_handling.html#exceptionHandling_b_3_1_2">B.3.1.2</a></p>
-<p>[After calling the initialisation handlers are called, the recovery procedure involves] "restoring all registers that have been written since the start of the application with their latest values. The register values are restored in the same order they were written." </p>
+<p>[After calling the initialisation handlers are called, the recovery procedure involves] "restoring all registers that have been written since the start of the application with their latest values. The register values are restored in the same order they were written. Registers of the type ChimeraTK::Void are not written." </p>
 
 <p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00732">732</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
@@ -990,7 +990,7 @@ as if reading and writing would be allowed." </p>
 <p>[During recovery,] "the asynchronous read transfers of the device are (re-)activated by calling
 Device::activateAsyncReads()" [after the delayed writes are executed.] </p>
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00797">797</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00802">802</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
@@ -1023,7 +1023,7 @@ Device::activateAsyncReads()" [after the delayed writes are executed.] </p>
 <p>[As last part of the recovery,] "Devices/&lt;alias&gt;/deviceBecameFunctional is written to inform any module subscribing
 to this variable about the finished recovery." </p>
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00833">833</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00838">838</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
@@ -1056,7 +1056,7 @@ to this variable about the finished recovery." </p>
 <p>"Even if some devices are initially in a persisting error state, the part of the application which does not interact
 with the faulty devices starts and works normally." </p>
 
-<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00868">868</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_exception_handling_8cc_source.html#l00873">873</a> of file <a class="el" href="test_exception_handling_8cc_source.html">testExceptionHandling.cc</a>.</p>
 
 </div>
 </div>
@@ -1066,7 +1066,7 @@ with the faulty devices starts and works normally." </p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_exception_handling_8cc.html">testExceptionHandling.cc</a></li>
-    <li class="footer">Generated on Sat Dec 3 2022 04:54:18 for ChimeraTK-ApplicationCore by
+    <li class="footer">Generated on Fri Dec 9 2022 04:54:28 for ChimeraTK-ApplicationCore by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

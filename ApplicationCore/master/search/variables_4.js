@@ -38,6 +38,7 @@ var searchData=
   ['deviceopentimeout',['DeviceOpenTimeout',['../_trigger_fan_out_8h.html#a79e25afc8d49734b01e480603207a6a3',1,'TriggerFanOut.h']]],
   ['deviceregister2',['deviceRegister2',['../struct_output_module.html#a542f8c1b3794081e64afc58abe9d41a8',1,'OutputModule']]],
   ['deviceregister3',['deviceRegister3',['../struct_output_module.html#a3958bcc3ff50905bd79b657126cc95fe',1,'OutputModule']]],
+  ['deviceregisterv',['deviceRegisterV',['../struct_output_module.html#a61e1d446093aabb0aca04b9d01943c2a',1,'OutputModule']]],
   ['dir',['dir',['../struct_chimera_t_k_1_1_variable_direction.html#a731e6cd5f58f1f014d443434f9ff6219',1,'ChimeraTK::VariableDirection']]],
   ['direction',['direction',['../struct_chimera_t_k_1_1_variable_network_node__data.html#aeb392b6238bd9ec1603d16868a8aec33',1,'ChimeraTK::VariableNetworkNode_data']]],
   ['disable',['disable',['../struct_chimera_t_k_1_1_monitor_base.html#a7f4e87cbc40fc221b42388db428b455c',1,'ChimeraTK::MonitorBase']]],
