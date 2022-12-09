@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['xml_5fparser',['xml_parser',['../namespacexml__parser.html',1,'']]],
-  ['xmlparser_2ecc',['XMLParser.cc',['../_x_m_l_parser_8cc.html',1,'']]],
-  ['xmlparser_2eh',['XMLParser.h',['../_x_m_l_parser_8h.html',1,'']]]
+  ['_7eservermockup',['~ServerMockup',['../struct_server_mockup.html#a23c8c56d040d82d4bf71f0db0a9caede',1,'ServerMockup']]]
 ];

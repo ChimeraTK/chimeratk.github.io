@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['defineconnections',['defineConnections',['../struct_server_mockup.html#ae5e1db82b59bd0cd5f6a584bd4959aa0',1,'ServerMockup']]]
+  ['getrootdir',['getRootDir',['../namespacexml__parser.html#a06567f4f85279cf918a9ca55d043244e',1,'xml_parser']]]
 ];

@@ -114,21 +114,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a64eeaf5250b6ea4fe1e10ed4ec1f586a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23c8c56d040d82d4bf71f0db0a9caede"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_mockup.html#a23c8c56d040d82d4bf71f0db0a9caede">~ServerMockup</a> ()</td></tr>
 <tr class="separator:a23c8c56d040d82d4bf71f0db0a9caede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5e1db82b59bd0cd5f6a584bd4959aa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_mockup.html#ae5e1db82b59bd0cd5f6a584bd4959aa0">defineConnections</a> ()</td></tr>
-<tr class="separator:ae5e1db82b59bd0cd5f6a584bd4959aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b3e4021f48b8bcc04085f2acaa31b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_mockup.html#a82b3e4021f48b8bcc04085f2acaa31b8">initialise</a> () override</td></tr>
+<tr class="separator:a82b3e4021f48b8bcc04085f2acaa31b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a23af177d363b6ff504cb7222f033628e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_template_module.html">TemplateModule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_mockup.html#a23af177d363b6ff504cb7222f033628e">modules</a></td></tr>
 <tr class="separator:a23af177d363b6ff504cb7222f033628e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace83d1940e9d3af9b04634d5bc6d2b37"><td class="memItemLeft" align="right" valign="top">ctk::PeriodicTrigger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_mockup.html#ace83d1940e9d3af9b04634d5bc6d2b37">trigger</a> {this, &quot;Trigger&quot;, &quot;Trigger used for other <a class="el" href="struct_server_mockup.html#a23af177d363b6ff504cb7222f033628e">modules</a>&quot;}</td></tr>
-<tr class="separator:ace83d1940e9d3af9b04634d5bc6d2b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a515bfb0f23de5c527c34785a01e604b5"><td class="memItemLeft" align="right" valign="top">ctk::ControlSystemModule&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_server_mockup.html#a515bfb0f23de5c527c34785a01e604b5">cs</a></td></tr>
-<tr class="separator:a515bfb0f23de5c527c34785a01e604b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_server_mockup_8h_source.html#l00075">75</a> of file <a class="el" href="_server_mockup_8h_source.html">ServerMockup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_mockup_8h_source.html#l00074">74</a> of file <a class="el" href="_server_mockup_8h_source.html">ServerMockup.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a64eeaf5250b6ea4fe1e10ed4ec1f586a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a64eeaf5250b6ea4fe1e10ed4ec1f586a">&#9670;&nbsp;</a></span>ServerMockup()</h2>
@@ -145,7 +141,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_mockup_8cc_source.html#l00051">51</a> of file <a class="el" href="_server_mockup_8cc_source.html">ServerMockup.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_mockup_8cc_source.html#l00059">59</a> of file <a class="el" href="_server_mockup_8cc_source.html">ServerMockup.cc</a>.</p>
 
 </div>
 </div>
@@ -172,47 +168,40 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_mockup_8h_source.html#l00078">78</a> of file <a class="el" href="_server_mockup_8h_source.html">ServerMockup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_mockup_8h_source.html#l00076">76</a> of file <a class="el" href="_server_mockup_8h_source.html">ServerMockup.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae5e1db82b59bd0cd5f6a584bd4959aa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5e1db82b59bd0cd5f6a584bd4959aa0">&#9670;&nbsp;</a></span>defineConnections()</h2>
+<a id="a82b3e4021f48b8bcc04085f2acaa31b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82b3e4021f48b8bcc04085f2acaa31b8">&#9670;&nbsp;</a></span>initialise()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ServerMockup::defineConnections </td>
+          <td class="memname">void ServerMockup::initialise </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+<p>Server information</p>
 
-<p class="definition">Definition at line <a class="el" href="_server_mockup_8cc_source.html#l00075">75</a> of file <a class="el" href="_server_mockup_8cc_source.html">ServerMockup.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_mockup_8cc_source.html#l00080">80</a> of file <a class="el" href="_server_mockup_8cc_source.html">ServerMockup.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a515bfb0f23de5c527c34785a01e604b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a515bfb0f23de5c527c34785a01e604b5">&#9670;&nbsp;</a></span>cs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::ControlSystemModule ServerMockup::cs</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_server_mockup_8h_source.html#l00086">86</a> of file <a class="el" href="_server_mockup_8h_source.html">ServerMockup.h</a>.</p>
-
-</div>
-</div>
 <a id="a23af177d363b6ff504cb7222f033628e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23af177d363b6ff504cb7222f033628e">&#9670;&nbsp;</a></span>modules</h2>
 
@@ -225,23 +214,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_mockup_8h_source.html#l00082">82</a> of file <a class="el" href="_server_mockup_8h_source.html">ServerMockup.h</a>.</p>
-
-</div>
-</div>
-<a id="ace83d1940e9d3af9b04634d5bc6d2b37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace83d1940e9d3af9b04634d5bc6d2b37">&#9670;&nbsp;</a></span>trigger</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctk::PeriodicTrigger ServerMockup::trigger {this, &quot;Trigger&quot;, &quot;Trigger used for other <a class="el" href="struct_server_mockup.html#a23af177d363b6ff504cb7222f033628e">modules</a>&quot;}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_server_mockup_8h_source.html#l00084">84</a> of file <a class="el" href="_server_mockup_8h_source.html">ServerMockup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_mockup_8h_source.html#l00078">78</a> of file <a class="el" href="_server_mockup_8h_source.html">ServerMockup.h</a>.</p>
 
 </div>
 </div>
@@ -255,7 +228,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_server_mockup.html">ServerMockup</a></li>
-    <li class="footer">Generated on Wed Sep 15 2021 03:58:52 for server-mockup by
+    <li class="footer">Generated on Fri Dec 9 2022 05:04:30 for server-mockup by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
