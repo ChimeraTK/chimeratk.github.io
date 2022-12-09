@@ -24,6 +24,7 @@ var structfixture__with__poll__and__push__input =
     [ "message", "structfixture__with__poll__and__push__input.html#a475eabb866d0e6abf10dbfd44df6e145", null ],
     [ "outputVariable2", "structfixture__with__poll__and__push__input.html#a049939e9897b6ec34ee0ddf0b23fa5f5", null ],
     [ "outputVariable3", "structfixture__with__poll__and__push__input.html#a3314c044e9bb8906c022442d6d1da951", null ],
+    [ "outputVariableV", "structfixture__with__poll__and__push__input.html#a76d5f67f70886afd5d87981a14bca664", null ],
     [ "pollVariable", "structfixture__with__poll__and__push__input.html#a7d188c2a9edfa69b276c521e7fe09f32", null ],
     [ "pollVariable2", "structfixture__with__poll__and__push__input.html#a69350690d55f4b2d319c47e9347f07ed", null ],
     [ "pollVariable3", "structfixture__with__poll__and__push__input.html#a4b8a254241010d62c55004c3c2f75e58", null ],
