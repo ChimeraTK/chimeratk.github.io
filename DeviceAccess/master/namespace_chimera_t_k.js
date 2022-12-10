@@ -121,6 +121,8 @@ var namespace_chimera_t_k =
     [ "TransferElementTestAccessor", "class_chimera_t_k_1_1_transfer_element_test_accessor.html", "class_chimera_t_k_1_1_transfer_element_test_accessor" ],
     [ "TransferGroup", "class_chimera_t_k_1_1_transfer_group.html", "class_chimera_t_k_1_1_transfer_group" ],
     [ "TwoDRegisterAccessor", "class_chimera_t_k_1_1_two_d_register_accessor.html", "class_chimera_t_k_1_1_two_d_register_accessor" ],
+    [ "UioAccess", "class_chimera_t_k_1_1_uio_access.html", "class_chimera_t_k_1_1_uio_access" ],
+    [ "UioBackend", "class_chimera_t_k_1_1_uio_backend.html", "class_chimera_t_k_1_1_uio_backend" ],
     [ "UnifiedBackendTest", "class_chimera_t_k_1_1_unified_backend_test.html", "class_chimera_t_k_1_1_unified_backend_test" ],
     [ "VersionNumber", "class_chimera_t_k_1_1_version_number.html", "class_chimera_t_k_1_1_version_number" ],
     [ "Void", "class_chimera_t_k_1_1_void.html", "class_chimera_t_k_1_1_void" ],

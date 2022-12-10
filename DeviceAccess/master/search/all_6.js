@@ -45,6 +45,7 @@ var searchData=
   ['exceptions_20and_20recovery',['Exceptions and recovery',['../exceptions.html',1,'']]],
   ['exceptions_2edox',['exceptions.dox',['../exceptions_8dox.html',1,'']]],
   ['existing_5fdevice',['EXISTING_DEVICE',['../test_dummy_backend_8cpp.html#af608de2728bb17c300bd9cfdd7cd8115',1,'testDummyBackend.cpp']]],
+  ['expected_5fmotor_5fid',['EXPECTED_MOTOR_ID',['../test_uio_backend_with_hardware_8cpp.html#aff5f9c6d54b9a72851edb3ec4ce8270d',1,'testUioBackendWithHardware.cpp']]],
   ['experimentalfeatures',['ExperimentalFeatures',['../class_chimera_t_k_1_1_experimental_features.html',1,'ChimeraTK']]],
   ['experimentalfeatures_2ecc',['ExperimentalFeatures.cc',['../_experimental_features_8cc.html',1,'']]],
   ['experimentalfeatures_2eh',['ExperimentalFeatures.h',['../_experimental_features_8h.html',1,'']]],

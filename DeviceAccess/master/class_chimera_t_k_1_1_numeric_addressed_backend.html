@@ -380,6 +380,8 @@ Friends</h2></td></tr>
 <p>Function to be implemented by the backends. </p>
 <p>Returns whether the given bar number is valid. </p>
 
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#abf0f89efb6526ddafad953740f8ccf2e">ChimeraTK::UioBackend</a>.</p>
+
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00106">106</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -496,7 +498,7 @@ Friends</h2></td></tr>
 <p>All backends derrived from <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html" title="Base class for address-based device backends (e.g. ">NumericAddressedBackend</a> must implement <a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html#acaf782d146c52f7e8a7de1193412ef98" title="All backends derrived from NumericAddressedBackend must implement closeImpl() instead of close...">closeImpl()</a> instead of close. </p>
 <p>Like this it is assured that the deactivation of the asynchronous accessors is always executed. </p>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#ad73bd103c459d6478b4fcc2c124167c0">ChimeraTK::RebotBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#ac13d557ec3c3a7859117d4454d6d6a22">ChimeraTK::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a59585fbf3e12b8369284f26bdca11859">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#ab0b70af8a8d1d6af720613779d580c76">ChimeraTK::SharedDummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#abfdb819786ab83322bf791432c21cda3">ChimeraTK::ExceptionDummy</a>, and <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#a97255f0fb2bac735b14d2cad046f0e36">ChimeraTK::XdmaBackend</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_rebot_backend.html#ad73bd103c459d6478b4fcc2c124167c0">ChimeraTK::RebotBackend</a>, <a class="el" href="class_chimera_t_k_1_1_pcie_backend.html#ac13d557ec3c3a7859117d4454d6d6a22">ChimeraTK::PcieBackend</a>, <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a59585fbf3e12b8369284f26bdca11859">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#ab0b70af8a8d1d6af720613779d580c76">ChimeraTK::SharedDummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#abfdb819786ab83322bf791432c21cda3">ChimeraTK::ExceptionDummy</a>, <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#a97255f0fb2bac735b14d2cad046f0e36">ChimeraTK::XdmaBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a5bfd99be30276cfbd6f4a31fa2d70e10">ChimeraTK::UioBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8h_source.html#l00116">116</a> of file <a class="el" href="_numeric_addressed_backend_8h_source.html">NumericAddressedBackend.h</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -563,7 +565,7 @@ Friends</h2></td></tr>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a15e819dc9cd674fd351cd0a5ed57d08c_icgraph.svg" width="100%" height="506"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a15e819dc9cd674fd351cd0a5ed57d08c_icgraph.svg" width="100%" height="555"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -914,7 +916,7 @@ template&lt;typename UserType &gt; </div>
 <p>Read function to be implemented by backends. </p>
 <p>TODO: Add documentation! </p>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a151c4ad1981d11377a27ce42b872df81">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a57b6683874e57cd652f001df6bf80227">ChimeraTK::SharedDummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a334e11b3f65149fb8c4049017961dd64">ChimeraTK::ExceptionDummy</a>, <a class="el" href="struct_dummy_for_double_buffering.html#a64dac158567dd0063cbec62ff0e4c14a">DummyForDoubleBuffering</a>, and <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#aa34dc7c4aedc136318af7515e5302b84">ChimeraTK::XdmaBackend</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a151c4ad1981d11377a27ce42b872df81">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#a57b6683874e57cd652f001df6bf80227">ChimeraTK::SharedDummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#a334e11b3f65149fb8c4049017961dd64">ChimeraTK::ExceptionDummy</a>, <a class="el" href="struct_dummy_for_double_buffering.html#a64dac158567dd0063cbec62ff0e4c14a">DummyForDoubleBuffering</a>, <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#aa34dc7c4aedc136318af7515e5302b84">ChimeraTK::XdmaBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a6f81a21f548a14015e260ef960c4703c">ChimeraTK::UioBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00087">87</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1018,7 +1020,7 @@ template&lt;typename UserType &gt; </div>
 <div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-19-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a424dfc7d5ba776349f48f43a5e57ab17_icgraph.svg" width="100%" height="412"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_chimera_t_k_1_1_numeric_addressed_backend_a424dfc7d5ba776349f48f43a5e57ab17_icgraph.svg" width="100%" height="461"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 
@@ -1062,7 +1064,7 @@ template&lt;typename UserType &gt; </div>
 <p>The idea is to have a lazy initialisation of the interrupt handling threads, so only those threads are running for which accessors have been created. The function implementation must check whether the according thread is already running and should do nothing when called a second time.</p>
 <p>The function has an empty default implementation. </p>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#acd32568ca5f08a6286d7a6e5bd703aa6">ChimeraTK::XdmaBackend</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#acd32568ca5f08a6286d7a6e5bd703aa6">ChimeraTK::XdmaBackend</a>, and <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a413a5b915747f635406a7a05745f85ee">ChimeraTK::UioBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00232">232</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
 <div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1125,7 +1127,7 @@ template&lt;typename UserType &gt; </div>
 <p>Write function to be implemented by backends. </p>
 <p>TODO: Add documentation! </p>
 
-<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a057a7212fb61a3e7978362fc2b0e275b">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#ab096f484f36d332098b265d95f40dcc2">ChimeraTK::ExceptionDummy</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#ae3cc166f5c940c4c90a04cadd6f83853">ChimeraTK::SharedDummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#a62f358a0e1d3502f9a1d1d0c728ab40c">ChimeraTK::XdmaBackend</a>, <a class="el" href="class_test_dummy.html#a4286ed170b0c40a9fb52e8e757a37714">TestDummy</a>, and <a class="el" href="struct_dummy_for_area_handshake_backend.html#a419232647d71abc93f5b320d19300af6">DummyForAreaHandshakeBackend</a>.</p>
+<p>Reimplemented in <a class="el" href="class_chimera_t_k_1_1_dummy_backend.html#a057a7212fb61a3e7978362fc2b0e275b">ChimeraTK::DummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_exception_dummy.html#ab096f484f36d332098b265d95f40dcc2">ChimeraTK::ExceptionDummy</a>, <a class="el" href="class_chimera_t_k_1_1_shared_dummy_backend.html#ae3cc166f5c940c4c90a04cadd6f83853">ChimeraTK::SharedDummyBackend</a>, <a class="el" href="class_chimera_t_k_1_1_xdma_backend.html#a62f358a0e1d3502f9a1d1d0c728ab40c">ChimeraTK::XdmaBackend</a>, <a class="el" href="class_chimera_t_k_1_1_uio_backend.html#a2050d4b44475c7605fafdf1cdd65b617">ChimeraTK::UioBackend</a>, <a class="el" href="class_test_dummy.html#a4286ed170b0c40a9fb52e8e757a37714">TestDummy</a>, and <a class="el" href="struct_dummy_for_area_handshake_backend.html#a419232647d71abc93f5b320d19300af6">DummyForAreaHandshakeBackend</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_numeric_addressed_backend_8cc_source.html#l00096">96</a> of file <a class="el" href="_numeric_addressed_backend_8cc_source.html">NumericAddressedBackend.cc</a>.</p>
 <div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1405,7 +1407,7 @@ template&lt;class UserType , class ConverterType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_numeric_addressed_backend.html">NumericAddressedBackend</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 04:53:18 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Sat Dec 10 2022 04:53:23 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

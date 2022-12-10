@@ -43,5 +43,7 @@ var searchData=
   ['_7etestlocker',['~TestLocker',['../struct_test_locker.html#a2350e86f1e896171ba56a812e7f7653d',1,'TestLocker']]],
   ['_7etransferelement',['~TransferElement',['../class_chimera_t_k_1_1_transfer_element.html#adbc9b96f43bbf9ca3dec8311fe3e6039',1,'ChimeraTK::TransferElement']]],
   ['_7etransferelementtestaccessor',['~TransferElementTestAccessor',['../class_chimera_t_k_1_1_transfer_element_test_accessor.html#a26cf101aa6b36d8d2e0d5b7d628017e8',1,'ChimeraTK::TransferElementTestAccessor']]],
+  ['_7euioaccess',['~UioAccess',['../class_chimera_t_k_1_1_uio_access.html#a3bdebe31fe660eeaaa056c7efcef72b7',1,'ChimeraTK::UioAccess']]],
+  ['_7euiobackend',['~UioBackend',['../class_chimera_t_k_1_1_uio_backend.html#adf0d3c4340f613368becb0ec3f638f0b',1,'ChimeraTK::UioBackend']]],
   ['_7exdmabackend',['~XdmaBackend',['../class_chimera_t_k_1_1_xdma_backend.html#aed872f5a3552be637e6318ea3c356b0d',1,'ChimeraTK::XdmaBackend']]]
 ];
