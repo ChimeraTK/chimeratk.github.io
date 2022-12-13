@@ -2,7 +2,6 @@ var class_async_test_dummy =
 [
     [ "Accessor", "class_async_test_dummy_1_1_accessor.html", "class_async_test_dummy_1_1_accessor" ],
     [ "AsyncTestDummy", "class_async_test_dummy.html#a63702eaa288d6f09ca8eb470064f8e15", null ],
-    [ "~AsyncTestDummy", "class_async_test_dummy.html#acf4bb8e5e6f12d7898ac2e643f1c103e", null ],
     [ "close", "class_async_test_dummy.html#a5d3832c36a317468c7d0e5f73e1da4be", null ],
     [ "DEFINE_VIRTUAL_FUNCTION_TEMPLATE_VTABLE_FILLER", "class_async_test_dummy.html#a0dfe9b45d36ef38b2f7954bee736cdb9", null ],
     [ "getRegisterAccessor_impl", "class_async_test_dummy.html#a0478a401f99a1ded2b976fed0adfdd9b", null ],

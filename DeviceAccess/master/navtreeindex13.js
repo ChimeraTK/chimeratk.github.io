@@ -1,6 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"struct_counting_decorator.html#ae81401eba39087a200e2c98954fc9c93":[19,0,18,3],
 "struct_counting_decorator.html#af11856401c70ff6d949c438506ea8479":[19,0,18,20],
 "struct_custom_backend_1_1_backend_registerer.html":[19,0,19,0],
 "struct_custom_backend_1_1_backend_registerer.html#a31bb7bc390448fa5fdfc3e589c078b22":[19,0,19,0,0],
@@ -117,12 +116,12 @@ var NAVTREEINDEX13 =
 "struct_integers__signed32.html#a976bada3e1d06a0e801a27d9efa1fec2":[19,0,46,15],
 "struct_integers__signed32.html#a98141081669e59b9ee52f7a0edd441d9":[19,0,46,1],
 "struct_integers__signed32.html#aca4e105f7f1611da71bcb8ad9d5854f2":[19,0,46,9],
-"struct_integers__signed32.html#ae0b5a2830661b161ba0056d5c3409063":[19,0,46,6],
 "struct_integers__signed32.html#ae0b5a2830661b161ba0056d5c3409063":[19,0,46,7],
+"struct_integers__signed32.html#ae0b5a2830661b161ba0056d5c3409063":[19,0,46,6],
 "struct_integers__signed32.html#af1552dd040ac8b52ea20a6dfe5b99386":[19,0,46,11],
 "struct_integers__signed32.html#af1552dd040ac8b52ea20a6dfe5b99386":[19,0,46,12],
-"struct_integers__signed32.html#af9682a9bf7a41431125cce414a59ecb6":[19,0,46,4],
 "struct_integers__signed32.html#af9682a9bf7a41431125cce414a59ecb6":[19,0,46,5],
+"struct_integers__signed32.html#af9682a9bf7a41431125cce414a59ecb6":[19,0,46,4],
 "struct_integers__signed32___dummy_writable.html":[19,0,49],
 "struct_integers__signed32___dummy_writable.html#a74b1399b6f11b08240216e0f0b7fdfdb":[19,0,49,0],
 "struct_integers__signed32___dummy_writable.html#aa6d08f67cfbac76dc85ca4cfaf1fbb9c":[19,0,49,1],
@@ -142,8 +141,8 @@ var NAVTREEINDEX13 =
 "struct_integers__signed32__async.html#a28afd2afb24ff72b9c5c084ecc9e52b3":[19,0,47,19],
 "struct_integers__signed32__async.html#a4050d2828430c326977f242929c43b6b":[19,0,47,11],
 "struct_integers__signed32__async.html#a52bb35dfe01da818d268d69bdc60248c":[19,0,47,2],
-"struct_integers__signed32__async.html#a5790a97def79bb3dea2993d4c7f4ac14":[19,0,47,13],
 "struct_integers__signed32__async.html#a5790a97def79bb3dea2993d4c7f4ac14":[19,0,47,14],
+"struct_integers__signed32__async.html#a5790a97def79bb3dea2993d4c7f4ac14":[19,0,47,13],
 "struct_integers__signed32__async.html#a681276f1b5ad8dd610a185aa3e0e22b3":[19,0,47,15],
 "struct_integers__signed32__async.html#a6fc744f1112ff0a672b098e3886b4ff8":[19,0,47,16],
 "struct_integers__signed32__async.html#a6fc744f1112ff0a672b098e3886b4ff8":[19,0,47,17],
@@ -249,5 +248,6 @@ var NAVTREEINDEX13 =
 "struct_muxed_nodma_async.html#a3ec5b62757afc2f4f4fc840c63d5d91f":[19,0,58,5],
 "struct_muxed_nodma_async.html#a44b67ab0eef156654330c7597881778f":[19,0,58,0],
 "struct_muxed_nodma_async.html#a589d7cda7d74a11183c80f7cd7f97eaf":[19,0,58,10],
-"struct_muxed_nodma_async.html#a6aca622457f955e40078358e31d029ad":[19,0,58,11]
+"struct_muxed_nodma_async.html#a6aca622457f955e40078358e31d029ad":[19,0,58,11],
+"struct_muxed_nodma_async.html#a765f4224513fe812f466ed533cbe7a0f":[19,0,58,3]
 };

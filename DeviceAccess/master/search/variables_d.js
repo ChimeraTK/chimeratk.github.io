@@ -7,6 +7,7 @@ var searchData=
   ['nfractionalbits',['nFractionalBits',['../struct_chimera_t_k_1_1_numeric_addressed_register_info_1_1_channel_info.html#a5e14030cf58b5d920b1c5e853f811fd6',1,'ChimeraTK::NumericAddressedRegisterInfo::ChannelInfo']]],
   ['notificationqueue',['notificationQueue',['../class_async_test_dummy.html#ab010f89909be7d50303a97530ed53d51',1,'AsyncTestDummy']]],
   ['npostread',['nPostRead',['../struct_counting_decorator.html#ad432d6c2ffee20b52fa35087a8baddc4',1,'CountingDecorator']]],
+  ['npostreadcalled',['nPostReadCalled',['../class_async_test_dummy_1_1_accessor.html#a0fcee6cc50a040872613f9ac6d1a88b1',1,'AsyncTestDummy::Accessor']]],
   ['npostwrite',['nPostWrite',['../struct_counting_decorator.html#ac202b330d2212af28f218458ac46025f',1,'CountingDecorator']]],
   ['npreread',['nPreRead',['../struct_counting_decorator.html#a7b4b92ae74dc3f3466ad4cb54b254d16',1,'CountingDecorator']]],
   ['nprewrite',['nPreWrite',['../struct_counting_decorator.html#a8c836afa2a2ab7d09d8bc0047c8a0bff',1,'CountingDecorator']]],

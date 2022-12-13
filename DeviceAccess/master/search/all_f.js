@@ -44,6 +44,7 @@ var searchData=
   ['notregisteringplugin_2ecc',['NotRegisteringPlugin.cc',['../_not_registering_plugin_8cc.html',1,'']]],
   ['now',['now',['../class_chimera_t_k_1_1_rebot_testable_clock.html#acb80b64f40928883bcab5162239c91f6',1,'ChimeraTK::RebotTestableClock::now()'],['../namespace_chimera_t_k_1_1testable__rebot__sleep.html#a1851c267e4dd419a948306ff85195a86',1,'ChimeraTK::testable_rebot_sleep::now()']]],
   ['npostread',['nPostRead',['../struct_counting_decorator.html#ad432d6c2ffee20b52fa35087a8baddc4',1,'CountingDecorator']]],
+  ['npostreadcalled',['nPostReadCalled',['../class_async_test_dummy_1_1_accessor.html#a0fcee6cc50a040872613f9ac6d1a88b1',1,'AsyncTestDummy::Accessor']]],
   ['npostwrite',['nPostWrite',['../struct_counting_decorator.html#ac202b330d2212af28f218458ac46025f',1,'CountingDecorator']]],
   ['npreread',['nPreRead',['../struct_counting_decorator.html#a7b4b92ae74dc3f3466ad4cb54b254d16',1,'CountingDecorator']]],
   ['nprewrite',['nPreWrite',['../struct_counting_decorator.html#a8c836afa2a2ab7d09d8bc0047c8a0bff',1,'CountingDecorator']]],

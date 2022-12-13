@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"pciedev__io_8h.html#a95cac24787550ae06eb2cd33b0d92194":[20,0,1,4,0,2,30],
 "pciedev__io_8h.html#a9f5c23857ea399bf4a9bb9652b6d817b":[20,0,1,4,0,2,34],
 "pciedev__io_8h.html#a9fa9f95b2d69f5b07cb9cb30b1ba9afe":[20,0,1,4,0,2,11],
 "pciedev__io_8h.html#aa293c11b73c1e8a741c9060d8ef1c021":[20,0,1,4,0,2,10],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#a8cd2f32a2b11fc17c866e8124460ba76":[19,0,1,56,7],
 "struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#aae1c5729f32d641750828ddae7499b0f":[19,0,1,56,5],
 "struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#aaeb5ffb341f2c27a8a2bcae3affd1fef":[19,0,1,56,6],
-"struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#ada57bcf3439b4c6f375bd66d48ebfdc3":[19,0,1,56,4]
+"struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#ada57bcf3439b4c6f375bd66d48ebfdc3":[19,0,1,56,4],
+"struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#aec1772ec3ef599bf91279c68dc1a25e3":[19,0,1,56,2]
 };

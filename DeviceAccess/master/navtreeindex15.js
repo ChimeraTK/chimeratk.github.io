@@ -1,6 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"struct_reg_variable_as_push_parameter_in_math__x__not__written2.html#aca29bf27aa55abf25ea541823506a5ab":[19,0,115,2],
 "struct_reg_variable_as_push_parameter_in_math_base.html":[19,0,116],
 "struct_reg_variable_as_push_parameter_in_math_base.html#a1abafb554afcce146bae8cf1c7daa45b":[19,0,116,5],
 "struct_reg_variable_as_push_parameter_in_math_base.html#a2aa3e45acfc23a987f06ae6bbc583b24":[19,0,116,4],
@@ -162,8 +161,8 @@ var NAVTREEINDEX15 =
 "struct_working_backend_1_1_backend_registerer.html#ae177e6eb4297f167e35303b9af09de99":[19,0,139,0,0],
 "struct_wrong_version_backend.html":[19,0,140],
 "struct_wrong_version_backend_1_1_backend_registerer.html":[19,0,140,0],
-"struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[19,0,140,0,0],
 "struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[19,0,140,0,1],
+"struct_wrong_version_backend_1_1_backend_registerer.html#a3c84ed81db1aa1eb689c9b0cd275ec0e":[19,0,140,0,0],
 "structaccess_private_data_1_1stow__private.html":[19,0,0,0],
 "structaccess_private_data_1_1stow__private.html#a4b16175efabf11ce563773339b5e3fc5":[19,0,0,0,0],
 "structaccess_private_data_1_1stowed.html":[19,0,0,1],
@@ -215,7 +214,9 @@ var NAVTREEINDEX15 =
 "test_async_read_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[20,0,6,1,3,3],
 "test_async_read_8cpp.html#a235814bfef964effb8c56d287f64e75a":[20,0,6,1,3,7],
 "test_async_read_8cpp.html#a4b5b351740d20cbf56d983603405f803":[20,0,6,1,3,8],
+"test_async_read_8cpp.html#a53b782b1ee851363138b611f8c738321":[20,0,6,1,3,9],
 "test_async_read_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[20,0,6,1,3,4],
+"test_async_read_8cpp.html#a9d57eb1d8464d13e1d0d697d9ae420e2":[20,0,6,1,3,10],
 "test_async_read_8cpp.html#ac0bab11760e2aafd6e5e761b618fe67a":[20,0,6,1,3,6],
 "test_async_read_8cpp_source.html":[20,0,6,1,3],
 "test_backend_factory_8cpp.html":[20,0,6,1,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "test_device_info_map_8cpp.html#a19823c5af9fff4070c144dacf022bf94":[20,0,6,1,7,2],
 "test_device_info_map_8cpp_source.html":[20,0,6,1,7],
 "test_double_buffering_8cpp.html":[20,0,6,1,9],
-"test_double_buffering_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[20,0,6,1,9,9],
-"test_double_buffering_8cpp.html#a3f6c2f53febe485c77b8715b10670629":[20,0,6,1,9,14]
+"test_double_buffering_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[20,0,6,1,9,9]
 };

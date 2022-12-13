@@ -11,7 +11,7 @@ var searchData=
   ['targetcontrol',['targetControl',['../class_chimera_t_k_1_1_subdevice_backend.html#afe19e61ca78f6ec577b1f65ed15c692f',1,'ChimeraTK::SubdeviceBackend']]],
   ['targetdata',['targetData',['../class_chimera_t_k_1_1_subdevice_backend.html#a4cb9be498366d571fd497aa3b50f8f04',1,'ChimeraTK::SubdeviceBackend']]],
   ['targetdevice',['targetDevice',['../class_chimera_t_k_1_1_subdevice_backend.html#ab463f31ed49f8490954116ccd58d60ce',1,'ChimeraTK::SubdeviceBackend']]],
-  ['targettype',['TargetType',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787b',1,'ChimeraTK::LNMBackendRegisterInfo::TargetType()'],['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ac207ec46daf9ba7cae5a125fd9093a17',1,'ChimeraTK::LNMBackendRegisterInfo::targetType()']]],
+  ['targettype',['targetType',['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ac207ec46daf9ba7cae5a125fd9093a17',1,'ChimeraTK::LNMBackendRegisterInfo::targetType()'],['../class_chimera_t_k_1_1_l_n_m_backend_register_info.html#ad28901d58a7faa46c9075a9f5f46787b',1,'ChimeraTK::LNMBackendRegisterInfo::TargetType()']]],
   ['templateusertypemap',['TemplateUserTypeMap',['../class_chimera_t_k_1_1_template_user_type_map.html',1,'ChimeraTK']]],
   ['templateusertypemap_3c_20chimeratk_3a_3alnmvariable_3a_3avaluetable_20_3e',['TemplateUserTypeMap&lt; ChimeraTK::LNMVariable::ValueTable &gt;',['../class_chimera_t_k_1_1_template_user_type_map.html',1,'ChimeraTK']]],
   ['templateusertypemap_3c_20sharedaccessormap_20_3e',['TemplateUserTypeMap&lt; SharedAccessorMap &gt;',['../class_chimera_t_k_1_1_template_user_type_map.html',1,'ChimeraTK']]],

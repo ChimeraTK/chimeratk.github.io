@@ -84,7 +84,8 @@ $(document).ready(function(){initNavTree('test_async_read_8cpp.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">testAsyncRead.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -92,9 +93,7 @@ $(document).ready(function(){initNavTree('test_async_read_8cpp.html','');});
 <div class="textblock"><code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="_device_8h_source.html">Device.h</a>&quot;</code><br />
 <code>#include &quot;DeviceAccessVersion.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="_dummy_backend_8h_source.html">DummyBackend.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_dummy_register_accessor_8h_source.html">DummyRegisterAccessor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_n_d_register_accessor_decorator_8h_source.html">NDRegisterAccessorDecorator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_device_backend_impl_8h_source.html">DeviceBackendImpl.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_read_any_group_8h_source.html">ReadAnyGroup.h</a>&quot;</code><br />
 <code>#include &lt;boost/thread.hpp&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
@@ -139,6 +138,13 @@ Functions</h2></td></tr>
 <tr class="separator:a235814bfef964effb8c56d287f64e75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b5b351740d20cbf56d983603405f803"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_async_read_8cpp.html#a4b5b351740d20cbf56d983603405f803">BOOST_AUTO_TEST_CASE</a> (testWaitAny)</td></tr>
 <tr class="separator:a4b5b351740d20cbf56d983603405f803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b782b1ee851363138b611f8c738321"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_async_read_8cpp.html#a53b782b1ee851363138b611f8c738321">BOOST_AUTO_TEST_CASE</a> (testReadAnyException)</td></tr>
+<tr class="separator:a53b782b1ee851363138b611f8c738321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a9d57eb1d8464d13e1d0d697d9ae420e2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_async_read_8cpp.html#a9d57eb1d8464d13e1d0d697d9ae420e2">cdd</a> = &quot;(AsyncTestDummy)&quot;</td></tr>
+<tr class="separator:a9d57eb1d8464d13e1d0d697d9ae420e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a139f00d2466d591f60b8d6a73c8273f1"></a>
@@ -175,7 +181,7 @@ Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a02698ab897f3215b69bdc9455ae46e18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02698ab897f3215b69bdc9455ae46e18">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a02698ab897f3215b69bdc9455ae46e18">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,7 +196,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00142">142</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00137">137</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -203,7 +209,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac0bab11760e2aafd6e5e761b618fe67a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0bab11760e2aafd6e5e761b618fe67a">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0bab11760e2aafd6e5e761b618fe67a">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +224,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00184">184</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00177">177</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -231,7 +237,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a235814bfef964effb8c56d287f64e75a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a235814bfef964effb8c56d287f64e75a">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a235814bfef964effb8c56d287f64e75a">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -246,7 +252,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00463">463</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00454">454</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -259,7 +265,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a4b5b351740d20cbf56d983603405f803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b5b351740d20cbf56d983603405f803">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b5b351740d20cbf56d983603405f803">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -274,7 +280,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00555">555</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00544">544</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -286,13 +292,58 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a53b782b1ee851363138b611f8c738321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b782b1ee851363138b611f8c738321">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">testReadAnyException&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00650">650</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="test_async_read_8cpp_a53b782b1ee851363138b611f8c738321_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a9d57eb1d8464d13e1d0d697d9ae420e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d57eb1d8464d13e1d0d697d9ae420e2">&#9670;&nbsp;</a></span>cdd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string cdd = &quot;(AsyncTestDummy)&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test_async_read_8cpp_source.html#l00025">25</a> of file <a class="el" href="test_async_read_8cpp_source.html">testAsyncRead.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_async_read_8cpp.html">testAsyncRead.cpp</a></li>
-    <li class="footer">Generated on Sat Dec 10 2022 04:53:22 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Tue Dec 13 2022 04:53:34 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
