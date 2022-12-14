@@ -12,6 +12,8 @@ var class_chimera_t_k_1_1_scalar_register_accessor =
     [ "operator--", "class_chimera_t_k_1_1_scalar_register_accessor.html#a817651af884dbde0ff64476c40547ac7", null ],
     [ "operator--", "class_chimera_t_k_1_1_scalar_register_accessor.html#ae33bca6a7efc468edcf35d794c3b35c7", null ],
     [ "operator=", "class_chimera_t_k_1_1_scalar_register_accessor.html#a7513f09f11b1e45ee6cafed573ac87da", null ],
+    [ "readAndGet", "class_chimera_t_k_1_1_scalar_register_accessor.html#a0d1f0eb48fd8529735bda0d5a555fe5d", null ],
+    [ "setAndWrite", "class_chimera_t_k_1_1_scalar_register_accessor.html#ae9412dd01aab22c1546653f2efd53a1c", null ],
     [ "setAsCooked", "class_chimera_t_k_1_1_scalar_register_accessor.html#ac1feec69028b6d3937f475947d0ee98f", null ],
     [ "writeIfDifferent", "class_chimera_t_k_1_1_scalar_register_accessor.html#a82dc0818e9e66242818ba0a4a134a1a6", null ],
     [ "TransferGroup", "class_chimera_t_k_1_1_scalar_register_accessor.html#a5bdf5501b097a054a0be0bd5c8332ef3", null ]

@@ -161,6 +161,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a82dc0818e9e66242818ba0a4a134a1a6 inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#a82dc0818e9e66242818ba0a4a134a1a6">writeIfDifferent</a> (<a class="el" href="class_chimera_t_k_1_1_boolean.html">ChimeraTK::Boolean</a> newValue, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber=<a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a>{nullptr})</td></tr>
 <tr class="memdesc:a82dc0818e9e66242818ba0a4a134a1a6 inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to set and write new value if it differes from the current value.  <a href="class_chimera_t_k_1_1_scalar_register_accessor.html#a82dc0818e9e66242818ba0a4a134a1a6">More...</a><br /></td></tr>
 <tr class="separator:a82dc0818e9e66242818ba0a4a134a1a6 inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9412dd01aab22c1546653f2efd53a1c inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#ae9412dd01aab22c1546653f2efd53a1c">setAndWrite</a> (<a class="el" href="class_chimera_t_k_1_1_boolean.html">ChimeraTK::Boolean</a> newValue, <a class="el" href="class_chimera_t_k_1_1_version_number.html">VersionNumber</a> versionNumber={})</td></tr>
+<tr class="memdesc:ae9412dd01aab22c1546653f2efd53a1c inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to set and write new value.  <a href="class_chimera_t_k_1_1_scalar_register_accessor.html#ae9412dd01aab22c1546653f2efd53a1c">More...</a><br /></td></tr>
+<tr class="separator:ae9412dd01aab22c1546653f2efd53a1c inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d1f0eb48fd8529735bda0d5a555fe5d inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chimera_t_k_1_1_boolean.html">ChimeraTK::Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor.html#a0d1f0eb48fd8529735bda0d5a555fe5d">readAndGet</a> ()</td></tr>
+<tr class="memdesc:a0d1f0eb48fd8529735bda0d5a555fe5d inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to read and return a value of UserType.  <a href="class_chimera_t_k_1_1_scalar_register_accessor.html#a0d1f0eb48fd8529735bda0d5a555fe5d">More...</a><br /></td></tr>
+<tr class="separator:a0d1f0eb48fd8529735bda0d5a555fe5d inherit pub_methods_class_chimera_t_k_1_1_scalar_register_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_abstractor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_abstractor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html">ChimeraTK::NDRegisterAccessorAbstractor&lt; ChimeraTK::Boolean &gt;</a></td></tr>
 <tr class="memitem:ab6194911c234927ca324f9a83f25c5d5 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_abstractor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html#ab6194911c234927ca324f9a83f25c5d5">NDRegisterAccessorAbstractor</a> ()=default</td></tr>
 <tr class="memdesc:ab6194911c234927ca324f9a83f25c5d5 inherit pub_methods_class_chimera_t_k_1_1_n_d_register_accessor_abstractor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an uninitialised abstractor - just for late initialisation.  <a href="class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html#ab6194911c234927ca324f9a83f25c5d5">More...</a><br /></td></tr>
@@ -278,7 +284,7 @@ class ChimeraTK::ScalarRegisterAccessor&lt; ChimeraTK::Boolean, std::nullptr_t &
 <p>Template specialisation for <a class="el" href="class_chimera_t_k_1_1_boolean.html" title="Wrapper Class to avoid vector&lt;bool&gt; problems. ">ChimeraTK::Boolean</a>. </p>
 <p>Simply add implicit type conversions to references of bool, since C++ does not do this conversion on its own as it involves two steps. </p>
 
-<p class="definition">Definition at line <a class="el" href="_scalar_register_accessor_8h_source.html#l00140">140</a> of file <a class="el" href="_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scalar_register_accessor_8h_source.html#l00151">151</a> of file <a class="el" href="_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac3ba078a30e74385a626fbbe8fa6afec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3ba078a30e74385a626fbbe8fa6afec">&#9670;&nbsp;</a></span>operator bool &()</h2>
@@ -305,7 +311,7 @@ class ChimeraTK::ScalarRegisterAccessor&lt; ChimeraTK::Boolean, std::nullptr_t &
 
 <p>Implicit type conversion to bool&amp;. </p>
 
-<p class="definition">Definition at line <a class="el" href="_scalar_register_accessor_8h_source.html#l00156">156</a> of file <a class="el" href="_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scalar_register_accessor_8h_source.html#l00167">167</a> of file <a class="el" href="_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -334,7 +340,7 @@ class ChimeraTK::ScalarRegisterAccessor&lt; ChimeraTK::Boolean, std::nullptr_t &
 
 <p>Implicit type conversion to const bool&amp;. </p>
 
-<p class="definition">Definition at line <a class="el" href="_scalar_register_accessor_8h_source.html#l00150">150</a> of file <a class="el" href="_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scalar_register_accessor_8h_source.html#l00161">161</a> of file <a class="el" href="_scalar_register_accessor_8h_source.html">ScalarRegisterAccessor.h</a>.</p>
 
 </div>
 </div>
@@ -347,7 +353,7 @@ class ChimeraTK::ScalarRegisterAccessor&lt; ChimeraTK::Boolean, std::nullptr_t &
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_scalar_register_accessor_3_01_chimera_t_k_1_1_boolean_00_01std_1_1nullptr__t_01_4.html">ScalarRegisterAccessor&lt; ChimeraTK::Boolean, std::nullptr_t &gt;</a></li>
-    <li class="footer">Generated on Tue Dec 13 2022 04:53:35 for ChimeraTK-DeviceAccess by
+    <li class="footer">Generated on Wed Dec 14 2022 04:53:18 for ChimeraTK-DeviceAccess by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

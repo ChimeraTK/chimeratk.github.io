@@ -1,5 +1,7 @@
 var NAVTREEINDEX14 =
 {
+"struct_muxed_nodma_async.html#a6aca622457f955e40078358e31d029ad":[19,0,58,11],
+"struct_muxed_nodma_async.html#a765f4224513fe812f466ed533cbe7a0f":[19,0,58,3],
 "struct_muxed_nodma_async.html#a9e546d1cf4b338b1200fa2a5ab8ec329":[19,0,58,7],
 "struct_muxed_nodma_async.html#ac60c754b73c42a4ff4cad5561e97b63c":[19,0,58,13],
 "struct_muxed_nodma_async.html#ad4cf137d8a75d4a46e9b7627bb118ff2":[19,0,58,9],
@@ -8,8 +10,8 @@ var NAVTREEINDEX14 =
 "struct_my_area1.html":[19,0,59],
 "struct_my_area1.html#a184b2dd55f6d3dcb16300ce48c017882":[19,0,59,10],
 "struct_my_area1.html#a184b2dd55f6d3dcb16300ce48c017882":[19,0,59,11],
-"struct_my_area1.html#a1f1998eec28e954bad1c2979e968186a":[19,0,59,5],
 "struct_my_area1.html#a1f1998eec28e954bad1c2979e968186a":[19,0,59,4],
+"struct_my_area1.html#a1f1998eec28e954bad1c2979e968186a":[19,0,59,5],
 "struct_my_area1.html#a467c26d5b4063f0920caab13429b769d":[19,0,59,13],
 "struct_my_area1.html#a53c17123f20c464a6a962e34d69603db":[19,0,59,12],
 "struct_my_area1.html#a57c9bfdc66867b17188bdc8b6902d3ab":[19,0,59,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX14 =
 "struct_reg_variable_as_push_parameter_in_math__x__not__written1.html#a96d7c5ad50938c2a2952da34304432cf":[19,0,114,0],
 "struct_reg_variable_as_push_parameter_in_math__x__not__written1.html#aac08bd1da6be39745a95f6d382e6db1a":[19,0,114,2],
 "struct_reg_variable_as_push_parameter_in_math__x__not__written2.html":[19,0,115],
-"struct_reg_variable_as_push_parameter_in_math__x__not__written2.html#a323a6252bbeec600d4a27ce6ea6c61ca":[19,0,115,0],
-"struct_reg_variable_as_push_parameter_in_math__x__not__written2.html#a6c637092e460b69eb134eb550f00caf1":[19,0,115,1],
-"struct_reg_variable_as_push_parameter_in_math__x__not__written2.html#aca29bf27aa55abf25ea541823506a5ab":[19,0,115,2]
+"struct_reg_variable_as_push_parameter_in_math__x__not__written2.html#a323a6252bbeec600d4a27ce6ea6c61ca":[19,0,115,0]
 };

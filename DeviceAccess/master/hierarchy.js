@@ -58,6 +58,7 @@ var hierarchy =
     [ "DummyForDoubleBuffering::BackendRegisterer", "struct_dummy_for_double_buffering_1_1_backend_registerer.html", null ],
     [ "TestableDummyBackend::BackendRegisterer", "class_testable_dummy_backend_1_1_backend_registerer.html", null ],
     [ "TestDummy::BackendRegisterer", "class_test_dummy_1_1_backend_registerer.html", null ],
+    [ "WriteCountingBackend::BackendRegisterer", "struct_write_counting_backend_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::BackendRegisterInfoBase", "class_chimera_t_k_1_1_backend_register_info_base.html", [
       [ "ChimeraTK::LNMBackendRegisterInfo", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html", null ],
       [ "ChimeraTK::NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html", null ],
@@ -172,6 +173,7 @@ var hierarchy =
                 [ "TestableDummyBackend", "class_testable_dummy_backend.html", null ],
                 [ "TestDummy", "class_test_dummy.html", null ],
                 [ "WorkingBackend", "struct_working_backend.html", null ],
+                [ "WriteCountingBackend", "struct_write_counting_backend.html", null ],
                 [ "WrongVersionBackend", "struct_wrong_version_backend.html", null ],
                 [ "WrongVersionBackend", "struct_wrong_version_backend.html", null ]
               ] ],

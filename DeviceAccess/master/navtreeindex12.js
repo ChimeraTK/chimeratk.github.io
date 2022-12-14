@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#ada57bcf3439b4c6f375bd66d48ebfdc3":[19,0,1,56,4],
+"struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#aec1772ec3ef599bf91279c68dc1a25e3":[19,0,1,56,2],
 "struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#af89b6af47cb7ed5f474aa74722799844":[19,0,1,56,8],
 "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html":[19,0,1,56,0],
 "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html":[19,0,1,56,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "struct_counting_decorator.html#ac202b330d2212af28f218458ac46025f":[19,0,18,14],
 "struct_counting_decorator.html#ac7bd30a47aff7294523642f2d47f22fe":[19,0,18,18],
 "struct_counting_decorator.html#ad1477b27e867834befafef368047f651":[19,0,18,10],
-"struct_counting_decorator.html#ad432d6c2ffee20b52fa35087a8baddc4":[19,0,18,13],
-"struct_counting_decorator.html#ae33d96421e851799c9712b6630d2f62d":[19,0,18,4],
-"struct_counting_decorator.html#ae81401eba39087a200e2c98954fc9c93":[19,0,18,3]
+"struct_counting_decorator.html#ad432d6c2ffee20b52fa35087a8baddc4":[19,0,18,13]
 };

@@ -143,5 +143,6 @@ var annotated_dup =
     [ "VersionNumberTest", "class_version_number_test.html", "class_version_number_test" ],
     [ "VersionNumberTestSuite", "class_version_number_test_suite.html", "class_version_number_test_suite" ],
     [ "WorkingBackend", "struct_working_backend.html", "struct_working_backend" ],
+    [ "WriteCountingBackend", "struct_write_counting_backend.html", "struct_write_counting_backend" ],
     [ "WrongVersionBackend", "struct_wrong_version_backend.html", "struct_wrong_version_backend" ]
 ];
