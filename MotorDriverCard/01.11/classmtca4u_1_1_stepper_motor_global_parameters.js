@@ -1,0 +1,28 @@
+var classmtca4u_1_1_stepper_motor_global_parameters =
+[
+    [ "StepperMotorGlobalParameters", "classmtca4u_1_1_stepper_motor_global_parameters.html#af27447ea65182441c87e8bee8a3dc9a1", null ],
+    [ "getClk2_div", "classmtca4u_1_1_stepper_motor_global_parameters.html#ab22f09bd568e4ee4f4cb49a9dabd54e4", null ],
+    [ "getContinuousUpdate", "classmtca4u_1_1_stepper_motor_global_parameters.html#a864ebeb9324eb3c2ee7ade4ab2c744e0", null ],
+    [ "getCsCommonIndividual", "classmtca4u_1_1_stepper_motor_global_parameters.html#a55e7d9fa5d4409ee2dfd0781f0523060", null ],
+    [ "getLastStepperMotorDriver", "classmtca4u_1_1_stepper_motor_global_parameters.html#a570d619b8c9a0727ed35edc5fde40f39", null ],
+    [ "getMot1r", "classmtca4u_1_1_stepper_motor_global_parameters.html#af92ef75329428efa00b41db832340bb2", null ],
+    [ "getPolarities", "classmtca4u_1_1_stepper_motor_global_parameters.html#a52c2e7014ea2e28046612aff13234b70", null ],
+    [ "getPolarity_DAC_AB", "classmtca4u_1_1_stepper_motor_global_parameters.html#a576aca536c5c86942f1bcdf69bf23263", null ],
+    [ "getPolarity_FD_AB", "classmtca4u_1_1_stepper_motor_global_parameters.html#a7b9b613b8343ae28e1f3ddfcc6caca38", null ],
+    [ "getPolarity_nSCS_S", "classmtca4u_1_1_stepper_motor_global_parameters.html#a8a092159aeeacb5e6ecd216a8994937f", null ],
+    [ "getPolarity_PH_AB", "classmtca4u_1_1_stepper_motor_global_parameters.html#a215ea607e0cb6f1862ab219985b42347", null ],
+    [ "getPolarity_SCK_S", "classmtca4u_1_1_stepper_motor_global_parameters.html#a2aa563c28f27004484e9048072a0846f", null ],
+    [ "getRefMux", "classmtca4u_1_1_stepper_motor_global_parameters.html#a2dff7aade9df6f7cb026005412c36460", null ],
+    [ "setClk2_div", "classmtca4u_1_1_stepper_motor_global_parameters.html#a2a459970ace0d507672eb0c54f1ba6e4", null ],
+    [ "setContinuousUpdate", "classmtca4u_1_1_stepper_motor_global_parameters.html#afef7fb5e0e4e846854c0d703b148ea12", null ],
+    [ "setCsCommonIndividual", "classmtca4u_1_1_stepper_motor_global_parameters.html#a454219327d6444d835a1226194ae9ade", null ],
+    [ "setLastStepperMotorDriver", "classmtca4u_1_1_stepper_motor_global_parameters.html#a9776c7a5dc9b060e5aa8a5464e96e8e7", null ],
+    [ "setMot1r", "classmtca4u_1_1_stepper_motor_global_parameters.html#aeec03532afdb1095e7fc2d5342524733", null ],
+    [ "setPolarities", "classmtca4u_1_1_stepper_motor_global_parameters.html#a1897fa60cd31acafd3561c90debff9e8", null ],
+    [ "setPolarity_DAC_AB", "classmtca4u_1_1_stepper_motor_global_parameters.html#a86d582570f54b3e221f744bda7d088bd", null ],
+    [ "setPolarity_FD_AB", "classmtca4u_1_1_stepper_motor_global_parameters.html#a2802643cd7e644a8d3e5a91abafdab2c", null ],
+    [ "setPolarity_nSCS_S", "classmtca4u_1_1_stepper_motor_global_parameters.html#a5db139f01c6660a3920766af1db5febe", null ],
+    [ "setPolarity_PH_AB", "classmtca4u_1_1_stepper_motor_global_parameters.html#a83cf2731d5a6771f0e307be414e20d98", null ],
+    [ "setPolarity_SCK_S", "classmtca4u_1_1_stepper_motor_global_parameters.html#ade80612a8d8bbddeac6b588aa03ecf35", null ],
+    [ "setRefMux", "classmtca4u_1_1_stepper_motor_global_parameters.html#a0b592891ebcb52659fdd3ee20a8a3bcf", null ]
+];

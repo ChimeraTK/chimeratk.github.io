@@ -1,0 +1,26 @@
+var structmtca4u_1_1_motor_controler_config =
+[
+    [ "MotorControlerConfig", "structmtca4u_1_1_motor_controler_config.html#a58cb1a51a3510d5a1f8db94eeebd79af", null ],
+    [ "operator!=", "structmtca4u_1_1_motor_controler_config.html#a3c751f18ad2cb55a913b6399174ae7e4", null ],
+    [ "operator==", "structmtca4u_1_1_motor_controler_config.html#a7b0d9ac325cf4f5dc5838f1299aac030", null ],
+    [ "accelerationThresholdData", "structmtca4u_1_1_motor_controler_config.html#add596e0996dd851b5623f613cb485f88", null ],
+    [ "chopperControlData", "structmtca4u_1_1_motor_controler_config.html#a6f02abb49f4f074533b98c1d568288de", null ],
+    [ "coolStepControlData", "structmtca4u_1_1_motor_controler_config.html#a5645268c9f52508cabd46c9d7f3697da", null ],
+    [ "decoderReadoutMode", "structmtca4u_1_1_motor_controler_config.html#ad7226ad12e88d5d7b4a84b04a498104e", null ],
+    [ "dividersAndMicroStepResolutionData", "structmtca4u_1_1_motor_controler_config.html#a8f587e1763159ad7642496fbedcdf123", null ],
+    [ "driverConfigData", "structmtca4u_1_1_motor_controler_config.html#afe8341ff9fd3b4de33ce139c364d89cc", null ],
+    [ "driverControlData", "structmtca4u_1_1_motor_controler_config.html#a2dde6d50e72ba7cc1b8bdb8ed0241081", null ],
+    [ "driverSpiWaitingTime", "structmtca4u_1_1_motor_controler_config.html#aaaa88f93f33cf51ba777c10e1094ee14", null ],
+    [ "enabled", "structmtca4u_1_1_motor_controler_config.html#a5e0fb5ec45ea28797b81806981e0240f", null ],
+    [ "interruptData", "structmtca4u_1_1_motor_controler_config.html#ac5d12a7246cb774ecf24a1fee211a2f7", null ],
+    [ "maximumAcceleration", "structmtca4u_1_1_motor_controler_config.html#a67b9e891d09c26f83bd3c886869ac20c", null ],
+    [ "maximumVelocity", "structmtca4u_1_1_motor_controler_config.html#a3d543b0b1cdf8890c6fa87afc0d3fad5", null ],
+    [ "microStepCount", "structmtca4u_1_1_motor_controler_config.html#abc11d183239eee355e93d03a4ba3e9d6", null ],
+    [ "minimumVelocity", "structmtca4u_1_1_motor_controler_config.html#ab6a1e1c78d062c9a03bd9750b5130eb1", null ],
+    [ "positionTolerance", "structmtca4u_1_1_motor_controler_config.html#a737a74b967256e82a5b85bb65a7d10d0", null ],
+    [ "proportionalityFactorData", "structmtca4u_1_1_motor_controler_config.html#aca7e42668250b397a4954d67d9da1270", null ],
+    [ "referenceConfigAndRampModeData", "structmtca4u_1_1_motor_controler_config.html#a357a02ee6da2099d4379ebd9c11b6f03", null ],
+    [ "stallGuardControlData", "structmtca4u_1_1_motor_controler_config.html#ae36a3360d9d6a79fb6495da2ed67babc", null ],
+    [ "targetPosition", "structmtca4u_1_1_motor_controler_config.html#afcaecf091f7bd329521ba8d87227d411", null ],
+    [ "targetVelocity", "structmtca4u_1_1_motor_controler_config.html#a14b58a6e458ca7f3bfa0234ac2e82cbb", null ]
+];
