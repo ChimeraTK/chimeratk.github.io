@@ -10,7 +10,7 @@ function update_tag(){
       echo ${repo} ${EPOCH} is blacklisted.
       return 0
   fi
-  
+
   cd $CHECKOUT_DIR
   local FIRST_GIT_STATUS=0
   local SECOND_GIT_STATUS=0
@@ -21,12 +21,12 @@ function update_tag(){
   else
       local SECOND_GIT_STATUS=0
   fi
-      
+
   if ! [ $FIRST_GIT_STATUS == "0" ] ||  ! [ $SECOND_GIT_STATUS == "0" ]; then
       echo ERROR: Error executing git checkout of ${repo} $TAG
       return -1
   fi
-  
+
   # check if the current revision already has documentation
   local GIT_ID=`git rev-parse HEAD`
   local LAST_BUILD=`cat $DOC_DIR/$EPOCH/git.ID 2>/dev/null || echo NONE`
@@ -34,12 +34,12 @@ function update_tag(){
       echo "Documentation already build for version $TAG in revision $GIT_ID."
       return 0
   fi
-  
+
   ###################################
   # Documentation method 1: Doxygen
   ###################################
   if [ -e cmake/Doxyfile.in -a ! -e doc/index.rst ]; then
-    
+
     # create Doxyfile from template (without running cmake, since dependencies are not available)
     # step 1: collect information from CMakeLists.txt etc.
     PROJECT_NAME=`grep -i '^ *project([^()]*) *$' $CHECKOUT_DIR/CMakeLists.txt | sed -e 's/^.*( *//' -e 's/ *).*$//'`
@@ -52,7 +52,7 @@ function update_tag(){
     sed -i $CHECKOUT_DIR/Doxyfile -e "s!@DOXYGEN_PROJECT_NUMBER@!${DOXYGEN_PROJECT_NUMBER}!"
     sed -i $CHECKOUT_DIR/Doxyfile -e "s!@CMAKE_CURRENT_SOURCE_DIR@!${CMAKE_CURRENT_SOURCE_DIR}!"
     sed -i $CHECKOUT_DIR/Doxyfile -e "s!@CMAKE_CURRENT_BINARY_DIR@!${CMAKE_CURRENT_BINARY_DIR}!"
-    
+
     # create/clean output directory
     rm -rf $DOC_DIR/$EPOCH
     mkdir -p $DOC_DIR/$EPOCH
@@ -78,12 +78,12 @@ function update_tag(){
         return -1
     fi
     rm -rf $DOC_DIR/$EPOCH/doc
-    
+
   ###################################
   # Documentation method 2: Sphinx
   ###################################
   elif [ -e doc/index.rst  ]; then
-  
+
     # create conf.py from template
     # step 1: collect information from CMakeLists.txt etc.
     PROJECT_NAME=`grep -i '^ *project([^()]*) *$' $CHECKOUT_DIR/CMakeLists.txt | sed -e 's/^.*( *//' -e 's/ *).*$//'`
@@ -108,7 +108,7 @@ function update_tag(){
     return 0
   fi
 
-  
+
   # save the git ID in the outptut directory
   echo $GIT_ID > $DOC_DIR/$EPOCH/git.ID
 
@@ -135,7 +135,7 @@ for repo in `cat repolist`; do
   if [ "$repo" = "chimeratk.github.io" -o "$repo" = "project-template" ]; then
     continue
   fi
-  echo  
+  echo
   echo "***********************************************************************************"
   echo Processing repository \'$repo\'
   echo "***********************************************************************************"
@@ -148,7 +148,7 @@ for repo in `cat repolist`; do
     git remote update > /dev/null 2>&1
   else
     git clone https://github.com/ChimeraTK/${repo}.git $CHECKOUT_DIR > /dev/null 2>&1
-    cd $CHECKOUT_DIR   
+    cd $CHECKOUT_DIR
   fi
 
   # create build repository if it does not exist
@@ -176,7 +176,7 @@ for repo in `cat repolist`; do
       echo Setting error flag for ${repo} master.
       (( N_ERRORS++ )) #increase the error count
   fi
-  
+
   for EPOCH in $EPOCH_VERSIONS; do
       cd $CHECKOUT_DIR
       TAG=`git tag | sort -r | grep "${EPOCH}\.[0-9]\+" --max-count=1 || :`
@@ -186,7 +186,7 @@ for repo in `cat repolist`; do
 	  echo Setting error flag for ${repo} $TAG.
 	  (( N_ERRORS++ )) #increase the error count
       fi
-  done      
+  done
 
   ${BASE_DIR}/create_index_file.sh $DOC_DIR $repo
 
@@ -209,7 +209,7 @@ done
 
 cat ${BASE_DIR}/footer.inc >> ${BASE_DIR}/index.html
 
-git commit index.html -m "updated the main index.html (automatic commit)" >/dev/null 2>&1
+git commit index.html -m "updated the main index.html (automatic commit)" >/dev/null 2>&1 || true
 
 if [[ $N_ERRORS == "0" ]]; then
     echo No failed documentations
