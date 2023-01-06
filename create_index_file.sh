@@ -34,3 +34,5 @@ echo "</html>" >> index.html
 
 git add index.html
 git commit index.html -m "updated index file for ${repo} (automatic commit)" >/dev/null 2>&1
+
+true
