@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash -e -x
 
 # all used variables must be defined in the calling code, except for EPOCH and TAG
 function update_tag(){
@@ -11,12 +11,12 @@ function update_tag(){
   fi
   
   cd $CHECKOUT_DIR
-  git checkout $TAG > /dev/null 2>&1
-  local FIRST_GIT_STATUS=$?
+  local FIRST_GIT_STATUS=0
+  local SECOND_GIT_STATUS=0
+  git checkout $TAG > /dev/null 2>&1 || local FIRST_GIT_STATUS=$?
   if [[ $TAG == "master" ]]; then
       # tags are not a branch, so they cannot be merged. But they don't change, anyway.
-      git merge > /dev/null 2>&1
-      local SECOND_GIT_STATUS=$?
+      git merge > /dev/null 2>&1 || local SECOND_GIT_STATUS=$?
   else
       local SECOND_GIT_STATUS=0
   fi
@@ -59,15 +59,16 @@ function update_tag(){
     # create the docu
     echo Creating docu for ${repo} $TAG.
     cd $CHECKOUT_DIR
-    doxygen > /dev/null
-    if ! [ $? == "0" ] ; then
+    local EXITCODE=0
+    doxygen > /dev/null || local EXITCODE=$?
+    if ! [ "$EXITCODE" == "0" ] ; then
         echo ERROR: Error creating documentation for ${repo} $TAG.
         return -1
     fi
 
     # correct the directory structure
-    cp -r $DOC_DIR/$EPOCH/doc/html/* $DOC_DIR/$EPOCH
-    if ! [ $? == "0" ] ; then
+    cp -r $DOC_DIR/$EPOCH/doc/html/* $DOC_DIR/$EPOCH || local EXITCODE=$?
+    if ! [ "$EXITCODE" == "0" ] ; then
         echo ERROR: Error copying documentation for ${repo} $TAG.
         cd $DOC_DIR
         rm -rf $EPOCH
@@ -113,8 +114,9 @@ function update_tag(){
   # add all changes to git
   cd $DOC_DIR
   git add $EPOCH >/dev/null 2>&1
-  git commit -m "Created/updated docu for ${repo} $TAG (automatic commit)" >/dev/null 2>&1
-  if ! [ $? == "0" ] ; then
+  local EXITCODE=0
+  git commit -m "Created/updated docu for ${repo} $TAG (automatic commit)" >/dev/null 2>&1 || local EXITCODE=$?
+  if ! [ "$EXITCODE" == "0" ] ; then
       echo ERROR: Error committing to git for ${repo} $TAG. Did you set git user name and email address?
       return -1
   fi
@@ -160,8 +162,8 @@ for repo in `cat repolist`; do
   EPOCH_VERSIONS=`git tag | sed -e "{s/\([0-9]\+\)\.\([0-9]\+\)\.[0-9]\+/\1\.\2/}" | sort -u`
 
   # loop all tags and the master
-  update_tag master master
-  master_result=$?
+  master_result=0
+  update_tag master master || master_result=$?
   # Even if the master failed: If there never was documentation successfully build
   # don't try any tags in this repo.
   if ! [ -e $DOC_DIR ]; then
@@ -177,8 +179,9 @@ for repo in `cat repolist`; do
   for EPOCH in $EPOCH_VERSIONS; do
       cd $CHECKOUT_DIR
       TAG=`git tag | sort -r | grep "${EPOCH}\.[0-9]\+" --max-count=1`
-      update_tag $TAG $EPOCH
-      if ! [ $? == "0" ] ; then
+      exit_code=0
+      update_tag $TAG $EPOCH || exit_code=$?
+      if ! [ "$exit_code" == "0" ] ; then
 	  echo Setting error flag for ${repo} $TAG.
 	  (( N_ERRORS++ )) #increase the error count
       fi
