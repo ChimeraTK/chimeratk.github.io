@@ -1,4 +1,5 @@
-#!/bin/bash -e -x
+#!/bin/bash -e
+set -o xtrace
 
 # all used variables must be defined in the calling code, except for EPOCH and TAG
 function update_tag(){
