@@ -179,7 +179,7 @@ for repo in `cat repolist`; do
   
   for EPOCH in $EPOCH_VERSIONS; do
       cd $CHECKOUT_DIR
-      TAG=`git tag | sort -r | grep "${EPOCH}\.[0-9]\+" --max-count=1`
+      TAG="`git tag | sort -r | grep "${EPOCH}\.[0-9]\+" --max-count=1`"
       exit_code=0
       update_tag $TAG $EPOCH || exit_code=$?
       if ! [ "$exit_code" == "0" ] ; then
