@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # all used variables must be defined in the calling code, except for EPOCH and TAG
 function update_tag(){
