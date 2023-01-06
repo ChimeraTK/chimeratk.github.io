@@ -68,7 +68,7 @@ function update_tag(){
     fi
 
     # correct the directory structure
-    cp -r $DOC_DIR/$EPOCH/doc/html/* $DOC_DIR/$EPOCH || local EXITCODE=$?
+    rsync -a $DOC_DIR/$EPOCH/doc/html $DOC_DIR/$EPOCH || local EXITCODE=$?
     if ! [ "$EXITCODE" == "0" ] ; then
         echo ERROR: Error copying documentation for ${repo} $TAG.
         cd $DOC_DIR
