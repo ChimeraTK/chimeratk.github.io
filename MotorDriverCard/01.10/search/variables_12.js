@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['scratch_5894',['scratch',['../pugixml_8cpp.html#a9f8486c16359c4205178109b12214490',1,'pugixml.cpp']]],
+  ['size_5895',['size',['../structfile__data__t.html#ab729ae4ac407c28935de3c23bfdca0ba',1,'file_data_t::size()'],['../pugixml_8cpp.html#a854352f53b148adc24983a58a1866d66',1,'size():&#160;pugixml.cpp']]],
+  ['size_5fof_5fspi_5faddress_5fspace_5896',['SIZE_OF_SPI_ADDRESS_SPACE',['../namespacemtca4u_1_1tmc429.html#ab8c639e2e020a1484d40bd57afe374e4',1,'mtca4u::tmc429::SIZE_OF_SPI_ADDRESS_SPACE()'],['../namespacemtca4u_1_1tmc260.html#a03e796d17e0a2c4c7809943128d70ec6',1,'mtca4u::tmc260::SIZE_OF_SPI_ADDRESS_SPACE()']]],
+  ['smda_5fcommon_5897',['SMDA_COMMON',['../namespacemtca4u_1_1tmc429.html#ade4fc4acec5fd297b6141fcdc133899d',1,'mtca4u::tmc429']]],
+  ['spi_5fdata_5fmask_5898',['SPI_DATA_MASK',['../namespacemtca4u_1_1tmc429.html#a1c54be883a5e26939dde72a617187bf9',1,'mtca4u::tmc429']]],
+  ['spi_5fdefault_5fwaiting_5ftime_5899',['SPI_DEFAULT_WAITING_TIME',['../classmtca4u_1_1_s_p_ivia_p_c_ie.html#a0b12fea46722b0d69f116e90265b9273',1,'mtca4u::SPIviaPCIe']]],
+  ['spi_5fsync_5ferror_5900',['SPI_SYNC_ERROR',['../namespacemtca4u_1_1dfmc__md22.html#abf4d7b5e9b8ef8cc59f1217ae4cee011',1,'mtca4u::dfmc_md22']]],
+  ['spi_5fsync_5fok_5901',['SPI_SYNC_OK',['../namespacemtca4u_1_1dfmc__md22.html#aff86ce421b77c9ec4919ffea8e9c79b1',1,'mtca4u::dfmc_md22']]],
+  ['spi_5fsync_5frequested_5902',['SPI_SYNC_REQUESTED',['../namespacemtca4u_1_1dfmc__md22.html#a41c3584b3c2981e1fbda848eaebf5351',1,'mtca4u::dfmc_md22']]],
+  ['spi_5fsync_5fsuffix_5903',['SPI_SYNC_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#ae2bbf6e9bdcdfb241810089b815d3820',1,'mtca4u::dfmc_md22']]],
+  ['spi_5fwrite_5fsuffix_5904',['SPI_WRITE_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#aaf80f7218ce55b69f27008aa67710e22',1,'mtca4u::dfmc_md22']]],
+  ['stack_5905',['stack',['../pugixml_8cpp.html#ae18875b11b8c234582a49b596892633f',1,'pugixml.cpp']]],
+  ['stall_5fguard_5fcontrol_5fdefault_5906',['STALL_GUARD_CONTROL_DEFAULT',['../namespacemtca4u.html#a35b84ebad0b6ba69023bc6fe0a34cd32',1,'mtca4u']]],
+  ['stall_5fguard_5fvalue_5fsuffix_5907',['STALL_GUARD_VALUE_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#ae4fc1caecb9f843ce5ca3a02e5349906',1,'mtca4u::dfmc_md22']]],
+  ['stallguardcontroldata_5908',['stallGuardControlData',['../structmtca4u_1_1_motor_controler_config.html#ae36a3360d9d6a79fb6495da2ed67babc',1,'mtca4u::MotorControlerConfig']]],
+  ['status_5909',['status',['../classmtca4u_1_1_stepper_motor_status_and_error.html#a0fc5e626108150c92cbe459371f659f4',1,'mtca4u::StepperMotorStatusAndError::status()'],['../classmtca4u_1_1_linear_stepper_motor_status_and_error.html#a28702952d7bfd6a02270281da85408be',1,'mtca4u::LinearStepperMotorStatusAndError::status()'],['../structpugi_1_1xml__parse__result.html#af8b3e6badea671931017695c8a9dd1af',1,'pugi::xml_parse_result::status()']]],
+  ['status_5fsuffix_5910',['STATUS_SUFFIX',['../namespacemtca4u_1_1dfmc__md22.html#ab5e87f171c099d32cbaab14c12d61c08',1,'mtca4u::dfmc_md22']]],
+  ['statusreaderthreadtab_5911',['statusReaderThreadTab',['../test_hardware_stepper_motor_8cpp.html#a36023c6b271a69513c2adad8887a1459',1,'testHardwareStepperMotor.cpp']]],
+  ['stepper_5fmotor_5fglobal_5fparameters_5fdefault_5912',['STEPPER_MOTOR_GLOBAL_PARAMETERS_DEFAULT',['../namespacemtca4u.html#a79c25f27e80a4a75c32b46ae7357f510',1,'mtca4u']]],
+  ['steppermotorglobalparameters_5913',['stepperMotorGlobalParameters',['../structmtca4u_1_1_motor_driver_card_config.html#a90f5e3c50c3e7ec7394574427ee36cb0',1,'mtca4u::MotorDriverCardConfig']]],
+  ['stop_5fcount_5914',['stop_count',['../structtest__walker.html#a2ea4e8e46cb400080459cfac645af53f',1,'test_walker']]],
+  ['stopevent_5915',['stopEvent',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html#aae91616f3880956567965248fb803ef2',1,'ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine']]],
+  ['string_5916',['string',['../pugixml_8cpp.html#ae348b0af1595faf8d2376f1bb787b5bb',1,'pugixml.cpp']]],
+  ['systemclock_5917',['systemClock',['../class_parameters_calculator_1_1_physical_parameters.html#a852114822c66fc5bb0007781f4bd22e2',1,'ParametersCalculator::PhysicalParameters']]]
+];
