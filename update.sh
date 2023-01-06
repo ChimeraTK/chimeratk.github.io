@@ -160,7 +160,7 @@ for repo in `cat repolist`; do
   # the dot itself (just . means any character): \.
   # take first captures group and place it in the result: \1
   # Finally do a unique sort
-  EPOCH_VERSIONS=`git tag | sed -e "{s/\([0-9]\+\)\.\([0-9]\+\)\.[0-9]\+/\1\.\2/}" | sort -u`
+  EPOCH_VERSIONS=`git tag | grep '[0-9]\+\.[0-9]\+' | sed -e "{s/\([0-9]\+\)\.\([0-9]\+\)\.[0-9]\+/\1\.\2/}" | sort -u`
 
   # loop all tags and the master
   master_result=0
