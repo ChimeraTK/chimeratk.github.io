@@ -1,19 +1,13 @@
 var searchData=
 [
-  ['motorconfigwidget',['MotorConfigWidget',['../class_motor_config_widget.html',1,'']]],
-  ['motorcontroler',['MotorControler',['../classmtca4u_1_1_motor_controler.html',1,'mtca4u']]],
-  ['motorcontrolerconfig',['MotorControlerConfig',['../structmtca4u_1_1_motor_controler_config.html',1,'mtca4u']]],
-  ['motorcontrolerdummy',['MotorControlerDummy',['../classmtca4u_1_1_motor_controler_dummy.html',1,'mtca4u']]],
-  ['motorcontrolerexpert',['MotorControlerExpert',['../classmtca4u_1_1_motor_controler_expert.html',1,'mtca4u']]],
-  ['motorcontrolerimpl',['MotorControlerImpl',['../classmtca4u_1_1_motor_controler_impl.html',1,'mtca4u']]],
-  ['motordrivercard',['MotorDriverCard',['../classmtca4u_1_1_motor_driver_card.html',1,'mtca4u']]],
-  ['motordrivercardconfig',['MotorDriverCardConfig',['../structmtca4u_1_1_motor_driver_card_config.html',1,'mtca4u']]],
-  ['motordrivercardconfigxml',['MotorDriverCardConfigXML',['../classmtca4u_1_1_motor_driver_card_config_x_m_l.html',1,'mtca4u']]],
-  ['motordrivercarddummy',['MotorDriverCardDummy',['../classmtca4u_1_1_motor_driver_card_dummy.html',1,'mtca4u']]],
-  ['motordrivercardexpert',['MotorDriverCardExpert',['../classmtca4u_1_1_motor_driver_card_expert.html',1,'mtca4u']]],
-  ['motordrivercardfactory',['MotorDriverCardFactory',['../classmtca4u_1_1_motor_driver_card_factory.html',1,'mtca4u']]],
-  ['motordrivercardimpl',['MotorDriverCardImpl',['../classmtca4u_1_1_motor_driver_card_impl.html',1,'mtca4u']]],
-  ['motordriverexception',['MotorDriverException',['../classmtca4u_1_1_motor_driver_exception.html',1,'mtca4u']]],
-  ['motorreferenceswitchdata',['MotorReferenceSwitchData',['../classmtca4u_1_1_motor_reference_switch_data.html',1,'mtca4u']]],
-  ['multivariableword',['MultiVariableWord',['../classmtca4u_1_1_multi_variable_word.html',1,'mtca4u']]]
+  ['linearsteppermotor_2883',['LinearStepperMotor',['../class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor.html',1,'ChimeraTK::MotorDriver::LinearStepperMotor'],['../classmtca4u_1_1_linear_stepper_motor.html',1,'mtca4u::LinearStepperMotor']]],
+  ['linearsteppermotorerror_2884',['LinearStepperMotorError',['../classmtca4u_1_1_linear_stepper_motor_error.html',1,'mtca4u']]],
+  ['linearsteppermotorerrortypes_2885',['LinearStepperMotorErrorTypes',['../classmtca4u_1_1_linear_stepper_motor_error_types.html',1,'mtca4u']]],
+  ['linearsteppermotorstatus_2886',['LinearStepperMotorStatus',['../classmtca4u_1_1_linear_stepper_motor_status.html',1,'mtca4u']]],
+  ['linearsteppermotorstatusanderror_2887',['LinearStepperMotorStatusAndError',['../classmtca4u_1_1_linear_stepper_motor_status_and_error.html',1,'mtca4u']]],
+  ['linearsteppermotorstatustypes_2888',['LinearStepperMotorStatusTypes',['../classmtca4u_1_1_linear_stepper_motor_status_types.html',1,'mtca4u']]],
+  ['linearsteppermotortest_2889',['LinearStepperMotorTest',['../class_linear_stepper_motor_test.html',1,'']]],
+  ['linearsteppermotortestsuite_2890',['LinearStepperMotorTestSuite',['../class_linear_stepper_motor_test_suite.html',1,'']]],
+  ['logger_2891',['Logger',['../class_chimera_t_k_1_1_logger.html',1,'ChimeraTK']]],
+  ['loglevel_2892',['LogLevel',['../class_chimera_t_k_1_1_logger_1_1_log_level.html',1,'ChimeraTK::Logger']]]
 ];

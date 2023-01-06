@@ -17,6 +17,7 @@ var class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor =
     [ "getCurrentPositionInSteps", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a8f1badbcde2cee7d88328ca40b82069c", null ],
     [ "getEnabled", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a91317dac35ebe0fe29aa6870ee242f35", null ],
     [ "getEncoderPosition", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#acd683c88d0fd8b86bcd8d509866c8569", null ],
+    [ "getEncoderReadoutMode", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#aa4b04c284345fd91fc8361bb23df4f45", null ],
     [ "getError", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#abf94534fbc2d3740f5e9371de34d8b40", null ],
     [ "getMaxPositionLimit", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#a490baf6bff57fa3fccc99c43d64813df", null ],
     [ "getMaxPositionLimitInSteps", "class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor.html#aa3e5f8125c995b2f1b25f4c8daea3cc3", null ],

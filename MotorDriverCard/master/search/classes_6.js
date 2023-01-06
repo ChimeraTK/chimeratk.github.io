@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['hexdata',['HexData',['../class_hex_data.html',1,'']]],
-  ['hexspinbox',['HexSpinBox',['../class_hex_spin_box.html',1,'']]]
+  ['generalstatus_2878',['GeneralStatus',['../class_chimera_t_k_1_1_general_status.html',1,'ChimeraTK']]]
 ];

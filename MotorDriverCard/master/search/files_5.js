@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['hexspinbox_2ecpp',['HexSpinBox.cpp',['../_hex_spin_box_8cpp.html',1,'']]],
-  ['hexspinbox_2eh',['HexSpinBox.h',['../_hex_spin_box_8h.html',1,'']]]
+  ['generalstatus_2ecc_4011',['GeneralStatus.cc',['../_general_status_8cc.html',1,'']]],
+  ['generalstatus_2eh_4012',['GeneralStatus.h',['../_general_status_8h.html',1,'']]],
+  ['getparameters_2ecc_4013',['getParameters.cc',['../get_parameters_8cc.html',1,'']]],
+  ['getparameters_2eh_4014',['getParameters.h',['../get_parameters_8h.html',1,'']]]
 ];

@@ -1,7 +1,7 @@
 var class_hex_spin_box =
 [
-    [ "HexSpinBox", "class_hex_spin_box.html#a8e45f1219dfd1631677ee4f99b745b12", null ],
-    [ "textFromValue", "class_hex_spin_box.html#a5cd2506620a17445fd3ed7f330141ff1", null ],
-    [ "validate", "class_hex_spin_box.html#aca1d7e9678635ca678c17442f8f6e032", null ],
-    [ "valueFromText", "class_hex_spin_box.html#aceb7640e4c1f0c26dc48f90f9795f6ba", null ]
+    [ "HexSpinBox", "class_hex_spin_box.html#ae69102afb7140df46d470b91f0882776", null ],
+    [ "textFromValue", "class_hex_spin_box.html#a82232f0258cc72e5816fcde2cf73c51a", null ],
+    [ "validate", "class_hex_spin_box.html#aeeb3f5ce1ad5ba3ddde1ec1898768520", null ],
+    [ "valueFromText", "class_hex_spin_box.html#ab8e3ca726302eaaabcb9385e8d391722", null ]
 ];

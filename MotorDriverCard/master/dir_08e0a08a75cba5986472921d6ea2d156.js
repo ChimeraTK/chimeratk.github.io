@@ -25,5 +25,6 @@ var dir_08e0a08a75cba5986472921d6ea2d156 =
     [ "QtMotorConfigCalculator.h", "_qt_motor_config_calculator_8h.html", [
       [ "QtMotorConfigCalculator", "class_qt_motor_config_calculator.html", "class_qt_motor_config_calculator" ]
     ] ],
-    [ "QtMotorConfigCalculator_main.cpp", "_qt_motor_config_calculator__main_8cpp.html", "_qt_motor_config_calculator__main_8cpp" ]
+    [ "QtMotorConfigCalculator_main.cpp", "_qt_motor_config_calculator__main_8cpp.html", "_qt_motor_config_calculator__main_8cpp" ],
+    [ "VariantUserTypes.h", "_variant_user_types_8h.html", "_variant_user_types_8h" ]
 ];

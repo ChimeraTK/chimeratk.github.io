@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['value',['value',['../class_hex_data.html#ae6a80e31e4da8d2e519a8a3a5425afe2',1,'HexData::value()'],['../structpugi_1_1xml__attribute__struct.html#ae652627d56cb9dcc0afdd1fbf6570364',1,'pugi::xml_attribute_struct::value()'],['../structpugi_1_1xml__node__struct.html#a191e708864fccda17bb66157afdadd2d',1,'pugi::xml_node_struct::value()'],['../pugixml_8cpp.html#a4a9ae04dd6e0a6cf9c30b5556a13e51f',1,'value():&#160;pugixml.cpp']]],
-  ['variable',['variable',['../pugixml_8cpp.html#a1062f6eb4a8e0f3b40ad74a9f85252b2',1,'pugixml.cpp']]],
-  ['verticallayout',['verticalLayout',['../class_parameters_panel.html#ae7a67d721fbbbe69fc6be317d2fc5204',1,'ParametersPanel']]],
-  ['vmax',['vMax',['../struct_parameters_calculator_1_1_chip_parameters.html#a78416adda69756c6440d64af0b6f9d37',1,'ParametersCalculator::ChipParameters']]]
+  ['targetposition_5922',['targetPosition',['../structmtca4u_1_1_motor_controler_config.html#afcaecf091f7bd329521ba8d87227d411',1,'mtca4u::MotorControlerConfig']]],
+  ['targetvelocity_5923',['targetVelocity',['../structmtca4u_1_1_motor_controler_config.html#a14b58a6e458ca7f3bfa0234ac2e82cbb',1,'mtca4u::MotorControlerConfig']]],
+  ['temp_5924',['temp',['../pugixml_8cpp.html#a91feb10517e5c7c5bf3a3892b8b1ea5b',1,'pugixml.cpp']]],
+  ['threadactive_5925',['threadActive',['../test_hardware_stepper_motor_8cpp.html#af18856d7f21a68fc57f74c4d98f08a5a',1,'testHardwareStepperMotor.cpp']]],
+  ['timetovmax_5926',['timeToVMax',['../class_parameters_calculator_1_1_physical_parameters.html#ad1242ab64a1c8878991ce935df84c685',1,'ParametersCalculator::PhysicalParameters']]]
 ];

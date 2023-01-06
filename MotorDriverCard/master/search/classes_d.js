@@ -1,25 +1,11 @@
 var searchData=
 [
-  ['scalingunitsconverter',['ScalingUnitsConverter',['../class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_scaling_units_converter.html',1,'ChimeraTK::MotorDriver::utility']]],
-  ['signedintconverter',['SignedIntConverter',['../classmtca4u_1_1_signed_int_converter.html',1,'mtca4u']]],
-  ['simple_5fwalker',['simple_walker',['../structsimple__walker.html',1,'']]],
-  ['spiviapcie',['SPIviaPCIe',['../classmtca4u_1_1_s_p_ivia_p_c_ie.html',1,'mtca4u']]],
-  ['stallguardcontroldata',['StallGuardControlData',['../classmtca4u_1_1_stall_guard_control_data.html',1,'mtca4u']]],
-  ['state',['State',['../class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine_1_1_state.html',1,'ChimeraTK::MotorDriver::utility::StateMachine']]],
-  ['statemachine',['StateMachine',['../class_chimera_t_k_1_1_motor_driver_1_1_basic_stepper_motor_1_1_state_machine.html',1,'ChimeraTK::MotorDriver::BasicStepperMotor::StateMachine'],['../class_chimera_t_k_1_1_motor_driver_1_1utility_1_1_state_machine.html',1,'ChimeraTK::MotorDriver::utility::StateMachine'],['../class_chimera_t_k_1_1_motor_driver_1_1_linear_stepper_motor_1_1_state_machine.html',1,'ChimeraTK::MotorDriver::LinearStepperMotor::StateMachine']]],
-  ['steppermotor',['StepperMotor',['../class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor.html',1,'ChimeraTK::MotorDriver::StepperMotor'],['../classmtca4u_1_1_stepper_motor.html',1,'mtca4u::StepperMotor']]],
-  ['steppermotorcalibrationstatus',['StepperMotorCalibrationStatus',['../classmtca4u_1_1_stepper_motor_calibration_status.html',1,'mtca4u']]],
-  ['steppermotorcalibrationstatustype',['StepperMotorCalibrationStatusType',['../classmtca4u_1_1_stepper_motor_calibration_status_type.html',1,'mtca4u']]],
-  ['steppermotorerror',['StepperMotorError',['../classmtca4u_1_1_stepper_motor_error.html',1,'mtca4u']]],
-  ['steppermotorerrortypes',['StepperMotorErrorTypes',['../classmtca4u_1_1_stepper_motor_error_types.html',1,'mtca4u']]],
-  ['steppermotorexception',['StepperMotorException',['../class_chimera_t_k_1_1_stepper_motor_exception.html',1,'ChimeraTK']]],
-  ['steppermotorfactory',['StepperMotorFactory',['../class_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_factory.html',1,'ChimeraTK::MotorDriver']]],
-  ['steppermotorglobalparameters',['StepperMotorGlobalParameters',['../classmtca4u_1_1_stepper_motor_global_parameters.html',1,'mtca4u']]],
-  ['steppermotorparameters',['StepperMotorParameters',['../struct_chimera_t_k_1_1_motor_driver_1_1_stepper_motor_parameters.html',1,'ChimeraTK::MotorDriver']]],
-  ['steppermotorstatus',['StepperMotorStatus',['../classmtca4u_1_1_stepper_motor_status.html',1,'mtca4u']]],
-  ['steppermotorstatusanderror',['StepperMotorStatusAndError',['../classmtca4u_1_1_stepper_motor_status_and_error.html',1,'mtca4u']]],
-  ['steppermotorstatustypes',['StepperMotorStatusTypes',['../classmtca4u_1_1_stepper_motor_status_types.html',1,'mtca4u']]],
-  ['steppermotorunitsconverter',['StepperMotorUnitsConverter',['../class_stepper_motor_units_converter.html',1,'']]],
-  ['steppermotorunitsconvetertrivia',['StepperMotorUnitsConveterTrivia',['../class_stepper_motor_units_conveter_trivia.html',1,'']]],
-  ['steppermotorunitsscalingconverter',['StepperMotorUnitsScalingConverter',['../class_stepper_motor_units_scaling_converter.html',1,'']]]
+  ['range_5fconst_5fiterator_2929',['range_const_iterator',['../structboost_1_1range__const__iterator.html',1,'boost']]],
+  ['range_5fconst_5fiterator_3c_20pugi_3a_3axml_5fdocument_20_3e_2930',['range_const_iterator&lt; pugi::xml_document &gt;',['../structboost_1_1range__const__iterator_3_01pugi_1_1xml__document_01_4.html',1,'boost']]],
+  ['range_5fconst_5fiterator_3c_20pugi_3a_3axml_5fnode_20_3e_2931',['range_const_iterator&lt; pugi::xml_node &gt;',['../structboost_1_1range__const__iterator_3_01pugi_1_1xml__node_01_4.html',1,'boost']]],
+  ['range_5fmutable_5fiterator_2932',['range_mutable_iterator',['../structboost_1_1range__mutable__iterator.html',1,'boost']]],
+  ['range_5fmutable_5fiterator_3c_20pugi_3a_3axml_5fdocument_20_3e_2933',['range_mutable_iterator&lt; pugi::xml_document &gt;',['../structboost_1_1range__mutable__iterator_3_01pugi_1_1xml__document_01_4.html',1,'boost']]],
+  ['range_5fmutable_5fiterator_3c_20pugi_3a_3axml_5fnode_20_3e_2934',['range_mutable_iterator&lt; pugi::xml_node &gt;',['../structboost_1_1range__mutable__iterator_3_01pugi_1_1xml__node_01_4.html',1,'boost']]],
+  ['referenceconfigandrampmodedata_2935',['ReferenceConfigAndRampModeData',['../classmtca4u_1_1_reference_config_and_ramp_mode_data.html',1,'mtca4u']]],
+  ['referenceswitchdata_2936',['ReferenceSwitchData',['../classmtca4u_1_1_reference_switch_data.html',1,'mtca4u']]]
 ];
