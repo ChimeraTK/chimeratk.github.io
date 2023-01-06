@@ -15,7 +15,6 @@ var test_test_facilities_8cc =
     [ "TestPollingThroughFanOutsApplication", "struct_test_polling_through_fan_outs_application.html", "struct_test_polling_through_fan_outs_application" ],
     [ "TestDeviceApplication", "struct_test_device_application.html", "struct_test_device_application" ],
     [ "TestInitialApplication", "struct_test_initial_application.html", "struct_test_initial_application" ],
-    [ "BOOST_NO_EXCEPTIONS", "test_test_facilities_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
     [ "BOOST_TEST_MODULE", "test_test_facilities_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "CHECK_TIMEOUT", "test_test_facilities_8cc.html#a17030ac7f00713a62e05ab6c35cb710e", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_test_facilities_8cc.html#a124f87aac10611a37a975a72e84b0931", null ],
@@ -28,6 +27,5 @@ var test_test_facilities_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_test_facilities_8cc.html#a94c0c278920331b18e0edf93331aa971", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_test_facilities_8cc.html#a430d22b4721221cb973cb329067495da", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_test_facilities_8cc.html#a739d28de15adc585ad1298db99693753", null ],
-    [ "dummySdm", "test_test_facilities_8cc.html#a866078d15d3d912b44e894d363a9b62b", null ],
-    [ "tester", "test_test_facilities_8cc.html#a376e79e5456157f775c4ff73455f8e83", null ]
+    [ "dummySdm", "test_test_facilities_8cc.html#a866078d15d3d912b44e894d363a9b62b", null ]
 ];
