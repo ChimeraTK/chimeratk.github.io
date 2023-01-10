@@ -14,7 +14,7 @@ var _unified_backend_test_8h =
     [ "switchWriteOnly_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_write_only__proxy__helper_3_01_t_00_01false_01_4.html", "struct_chimera_t_k_1_1_unified_backend_test_1_1switch_write_only__proxy__helper_3_01_t_00_01false_01_4" ],
     [ "writeQueueLength_proxy_helper", "struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper.html", "struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper" ],
     [ "writeQueueLength_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper_3_01_t_00_01false_01_4.html", "struct_chimera_t_k_1_1_unified_backend_test_1_1write_queue_length__proxy__helper_3_01_t_00_01false_01_4" ],
-    [ "has_nValuesToTest", "class_chimera_t_k_1_1_unified_backend_test_1_1has__n_values_to_test.html", "class_chimera_t_k_1_1_unified_backend_test_1_1has__n_values_to_test" ],
+    [ "has_nValuesToTest", "class_chimera_t_k_1_1_unified_backend_test_1_1has__n_values_to_test.html", null ],
     [ "nValuesToTest_proxy_helper", "struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper.html", "struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper" ],
     [ "nValuesToTest_proxy_helper< T, false >", "struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper_3_01_t_00_01false_01_4.html", "struct_chimera_t_k_1_1_unified_backend_test_1_1n_values_to_test__proxy__helper_3_01_t_00_01false_01_4" ],
     [ "ALTER_AND_STORE_APPLICATION_BUFFER", "_unified_backend_test_8h.html#a51d5556693e6504b9c6114acc1823622", null ],
@@ -33,7 +33,7 @@ var _unified_backend_test_8h =
     [ "compareHelper< double >", "_unified_backend_test_8h.html#a2900a37864e8877318baf6b76f76ef48", null ],
     [ "compareHelper< float >", "_unified_backend_test_8h.html#a0696347ee77c11e2986d8d745d5b08fe", null ],
     [ "compareHelper< std::string >", "_unified_backend_test_8h.html#a30d24f6ea4866dacebad82c6c15082d2", null ],
-    [ "to_string", "_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a", null ],
     [ "to_string", "_unified_backend_test_8h.html#a4fbed40f4c6c4285e3e37fcf23aa535b", null ],
+    [ "to_string", "_unified_backend_test_8h.html#a91283b6c9ec83b1b6502cdb1f753104a", null ],
     [ "CHECK_REPEAT_COUNT", "_unified_backend_test_8h.html#a82a79bc2ac6d5f9b12e589bcae767090", null ]
 ];

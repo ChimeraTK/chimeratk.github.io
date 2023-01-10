@@ -11,6 +11,6 @@ var test_shared_dummy_backend_unified_8cpp =
     [ "BOOST_TEST_MODULE", "test_shared_dummy_backend_unified_8cpp.html#a6b2a3852db8bb19ab6909bac01859985", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_shared_dummy_backend_unified_8cpp.html#a9f5533e72ee880d6d818844f51879211", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_shared_dummy_backend_unified_8cpp.html#a32133af06382bfb4a5e6dddef25fa0b5", null ],
-    [ "gHelperProcess", "test_shared_dummy_backend_unified_8cpp.html#a89486e6a8fac387927316da46581002e", null ],
+    [ "gHelperProcess", "test_shared_dummy_backend_unified_8cpp.html#a6de67d84a8638a97f4bb1c99c7fb730a", null ],
     [ "timeOutForWaitOnHelperProcess_ms", "test_shared_dummy_backend_unified_8cpp.html#a496123ca3e88764def62cc6749765896", null ]
 ];

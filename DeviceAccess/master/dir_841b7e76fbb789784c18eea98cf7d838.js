@@ -35,7 +35,6 @@ var dir_841b7e76fbb789784c18eea98cf7d838 =
       [ "NumericAddressedAsyncVariableImpl", "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl.html", "struct_chimera_t_k_1_1_numeric_addressed_async_variable_impl" ]
     ] ],
     [ "NumericAddressedLowLevelTransferElement.h", "_numeric_addressed_low_level_transfer_element_8h.html", [
-      [ "NumericAddressedBackendRegisterAccessor", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor" ],
       [ "NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element" ]
     ] ],
     [ "NumericAddressedRegisterCatalogue.h", "_numeric_addressed_register_catalogue_8h.html", [

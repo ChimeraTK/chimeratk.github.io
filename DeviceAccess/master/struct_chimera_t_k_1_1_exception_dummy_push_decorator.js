@@ -10,6 +10,9 @@ var struct_chimera_t_k_1_1_exception_dummy_push_decorator =
     [ "trigger", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#a5441d5f88a44ce8e6e735faf0e27b827", null ],
     [ "_backend", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#aff9d1b07d050cdd7946cc54c2bf33d6f", null ],
     [ "_current", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#ad319e839119cb0140070b67430c44898", null ],
+    [ "_dataValidity", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#a39c613419eebb2f29590fecded7a96d0", null ],
     [ "_myReadQueue", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#a9dd689ddc104fc9e703370ffee55d618", null ],
-    [ "_path", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#a56abbea855a636b853df3ecb6df17c0a", null ]
+    [ "_path", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#a56abbea855a636b853df3ecb6df17c0a", null ],
+    [ "_readQueue", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#ab824c85c63163e76ccda588ef4768f68", null ],
+    [ "_versionNumber", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html#a9ad34f0c2eaec6be3dc385f1c4acef46", null ]
 ];

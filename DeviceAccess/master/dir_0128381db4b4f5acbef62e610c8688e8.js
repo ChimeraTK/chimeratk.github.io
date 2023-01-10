@@ -11,12 +11,7 @@ var dir_0128381db4b4f5acbef62e610c8688e8 =
     [ "ExperimentalFeatures.h", "_experimental_features_8h.html", [
       [ "ExperimentalFeatures", "class_chimera_t_k_1_1_experimental_features.html", null ]
     ] ],
-    [ "ForwardDeclarations.h", "_forward_declarations_8h.html", [
-      [ "BufferingRegisterAccessor", "class_chimera_t_k_1_1_buffering_register_accessor.html", null ],
-      [ "NDRegisterAccessor", "class_chimera_t_k_1_1_n_d_register_accessor.html", "class_chimera_t_k_1_1_n_d_register_accessor" ],
-      [ "TwoDRegisterAccessor", "class_chimera_t_k_1_1_two_d_register_accessor.html", "class_chimera_t_k_1_1_two_d_register_accessor" ],
-      [ "MultiplexedDataAccessor", "class_chimera_t_k_1_1_multiplexed_data_accessor.html", null ]
-    ] ],
+    [ "ForwardDeclarations.h", "_forward_declarations_8h.html", null ],
     [ "MetadataCatalogue.h", "_metadata_catalogue_8h.html", [
       [ "MetadataCatalogue", "class_chimera_t_k_1_1_metadata_catalogue.html", "class_chimera_t_k_1_1_metadata_catalogue" ]
     ] ],

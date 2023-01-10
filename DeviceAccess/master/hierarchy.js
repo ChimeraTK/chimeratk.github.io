@@ -9,6 +9,15 @@ var hierarchy =
       [ "ChimeraTK::LNMBackend::AccessorPlugin< DoubleBufferPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::DoubleBufferPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_plugin.html", null ]
       ] ],
+      [ "ChimeraTK::LNMBackend::AccessorPlugin< MonostableTriggerPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
+        [ "ChimeraTK::LNMBackend::MonostableTriggerPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html", null ]
+      ] ],
+      [ "ChimeraTK::LNMBackend::AccessorPlugin< TypeHintModifierPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
+        [ "ChimeraTK::LNMBackend::TypeHintModifierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_type_hint_modifier_plugin.html", null ]
+      ] ],
+      [ "ChimeraTK::LNMBackend::AccessorPlugin< MultiplierPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
+        [ "ChimeraTK::LNMBackend::MultiplierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html", null ]
+      ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< ForcePollingReadPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::ForcePollingReadPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_force_polling_read_plugin.html", null ]
       ] ],
@@ -17,15 +26,6 @@ var hierarchy =
       ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< MathPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
         [ "ChimeraTK::LNMBackend::MathPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html", null ]
-      ] ],
-      [ "ChimeraTK::LNMBackend::AccessorPlugin< MonostableTriggerPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
-        [ "ChimeraTK::LNMBackend::MonostableTriggerPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin.html", null ]
-      ] ],
-      [ "ChimeraTK::LNMBackend::AccessorPlugin< MultiplierPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
-        [ "ChimeraTK::LNMBackend::MultiplierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin.html", null ]
-      ] ],
-      [ "ChimeraTK::LNMBackend::AccessorPlugin< TypeHintModifierPlugin >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", [
-        [ "ChimeraTK::LNMBackend::TypeHintModifierPlugin", "class_chimera_t_k_1_1_l_n_m_backend_1_1_type_hint_modifier_plugin.html", null ]
       ] ],
       [ "ChimeraTK::LNMBackend::AccessorPlugin< Derived >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin.html", null ]
     ] ],
@@ -48,17 +48,17 @@ var hierarchy =
       [ "ChimeraTK::BackendRegisterCatalogue< BackendRegisterInfo >", "class_chimera_t_k_1_1_backend_register_catalogue.html", null ]
     ] ],
     [ "ChimeraTK::BackendRegisterCatalogueImplIterator< BackendRegisterInfo >", "class_chimera_t_k_1_1_backend_register_catalogue_impl_iterator.html", null ],
-    [ "CustomBackend::BackendRegisterer", "struct_custom_backend_1_1_backend_registerer.html", null ],
-    [ "ExampleBackend::BackendRegisterer", "class_example_backend_1_1_backend_registerer.html", null ],
     [ "AnotherWorkingBackend::BackendRegisterer", "struct_another_working_backend_1_1_backend_registerer.html", null ],
-    [ "DummyForAreaHandshakeBackend::BackendRegisterer", "struct_dummy_for_area_handshake_backend_1_1_backend_registerer.html", null ],
-    [ "WorkingBackend::BackendRegisterer", "struct_working_backend_1_1_backend_registerer.html", null ],
-    [ "WrongVersionBackend::BackendRegisterer", "struct_wrong_version_backend_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::ExceptionDummy::BackendRegisterer", "class_chimera_t_k_1_1_exception_dummy_1_1_backend_registerer.html", null ],
+    [ "CustomBackend::BackendRegisterer", "struct_custom_backend_1_1_backend_registerer.html", null ],
+    [ "DummyForAreaHandshakeBackend::BackendRegisterer", "struct_dummy_for_area_handshake_backend_1_1_backend_registerer.html", null ],
     [ "DummyForDoubleBuffering::BackendRegisterer", "struct_dummy_for_double_buffering_1_1_backend_registerer.html", null ],
+    [ "ExampleBackend::BackendRegisterer", "class_example_backend_1_1_backend_registerer.html", null ],
     [ "TestableDummyBackend::BackendRegisterer", "class_testable_dummy_backend_1_1_backend_registerer.html", null ],
     [ "TestDummy::BackendRegisterer", "class_test_dummy_1_1_backend_registerer.html", null ],
+    [ "WorkingBackend::BackendRegisterer", "struct_working_backend_1_1_backend_registerer.html", null ],
     [ "WriteCountingBackend::BackendRegisterer", "struct_write_counting_backend_1_1_backend_registerer.html", null ],
+    [ "WrongVersionBackend::BackendRegisterer", "struct_wrong_version_backend_1_1_backend_registerer.html", null ],
     [ "ChimeraTK::BackendRegisterInfoBase", "class_chimera_t_k_1_1_backend_register_info_base.html", [
       [ "ChimeraTK::LNMBackendRegisterInfo", "class_chimera_t_k_1_1_l_n_m_backend_register_info.html", null ],
       [ "ChimeraTK::NumericAddressedRegisterInfo", "class_chimera_t_k_1_1_numeric_addressed_register_info.html", null ],
@@ -122,33 +122,18 @@ var hierarchy =
       ] ]
     ] ],
     [ "ChimeraTK::proxies::DummyRegisterElement< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
+      [ "ChimeraTK::DummyRegisterAccessor< uint32_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
+      [ "ChimeraTK::DummyRegisterAccessor< rawUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
+      [ "ChimeraTK::DummyRegisterAccessor< int >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
+      [ "ChimeraTK::DummyRegisterAccessor< minimumUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
+      [ "ChimeraTK::DummyRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
+      [ "ChimeraTK::DummyRegisterAccessor< ChimeraTK::Boolean >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ],
       [ "ChimeraTK::DummyRegisterAccessor< T >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
-    ] ],
-    [ "ChimeraTK::proxies::DummyRegisterElement< ChimeraTK::Boolean >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
-      [ "ChimeraTK::DummyRegisterAccessor< ChimeraTK::Boolean >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
-    ] ],
-    [ "ChimeraTK::proxies::DummyRegisterElement< int >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
-      [ "ChimeraTK::DummyRegisterAccessor< int >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
-    ] ],
-    [ "ChimeraTK::proxies::DummyRegisterElement< int32_t >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
-      [ "ChimeraTK::DummyRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
-    ] ],
-    [ "ChimeraTK::proxies::DummyRegisterElement< minimumUserType >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
-      [ "ChimeraTK::DummyRegisterAccessor< minimumUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
-    ] ],
-    [ "ChimeraTK::proxies::DummyRegisterElement< rawUserType >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
-      [ "ChimeraTK::DummyRegisterAccessor< rawUserType >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
-    ] ],
-    [ "ChimeraTK::proxies::DummyRegisterElement< uint32_t >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_element.html", [
-      [ "ChimeraTK::DummyRegisterAccessor< uint32_t >", "class_chimera_t_k_1_1_dummy_register_accessor.html", null ]
     ] ],
     [ "ChimeraTK::DummyRegisterRawAccessor", "class_chimera_t_k_1_1_dummy_register_raw_accessor.html", null ],
     [ "ChimeraTK::proxies::DummyRegisterSequence< T >", "class_chimera_t_k_1_1proxies_1_1_dummy_register_sequence.html", null ],
     [ "DummyRegisterTest", "class_dummy_register_test.html", null ],
-    [ "enable_shared_from_this", null, [
-      [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
-    ] ],
-    [ "enable_shared_from_this", null, [
+    [ "boost::enable_shared_from_this", null, [
       [ "ChimeraTK::AsyncAccessorManager", "class_chimera_t_k_1_1_async_accessor_manager.html", [
         [ "ChimeraTK::NumericAddressedInterruptDispatcher", "class_chimera_t_k_1_1_numeric_addressed_interrupt_dispatcher.html", null ]
       ] ],
@@ -169,9 +154,9 @@ var hierarchy =
                 [ "InvalidDummyBackend", "class_invalid_dummy_backend.html", null ],
                 [ "NewBackend", "struct_new_backend.html", null ],
                 [ "NotRegisteringPlugin", "struct_not_registering_plugin.html", null ],
-                [ "TestableDummyBackend", "class_testable_dummy_backend.html", null ],
-                [ "TestableDummyBackend", "class_testable_dummy_backend.html", null ],
                 [ "TestDummy", "class_test_dummy.html", null ],
+                [ "TestableDummyBackend", "class_testable_dummy_backend.html", null ],
+                [ "TestableDummyBackend", "class_testable_dummy_backend.html", null ],
                 [ "WorkingBackend", "struct_working_backend.html", null ],
                 [ "WriteCountingBackend", "struct_write_counting_backend.html", null ],
                 [ "WrongVersionBackend", "struct_wrong_version_backend.html", null ],
@@ -190,23 +175,16 @@ var hierarchy =
         ] ]
       ] ],
       [ "ChimeraTK::TransferElement", "class_chimera_t_k_1_1_transfer_element.html", [
+        [ "ChimeraTK::NDRegisterAccessor< std::string >", "class_chimera_t_k_1_1_n_d_register_accessor.html", [
+          [ "ChimeraTK::NumericAddressedBackendASCIIAccessor", "class_chimera_t_k_1_1_numeric_addressed_backend_a_s_c_i_i_accessor.html", null ]
+        ] ],
+        [ "ChimeraTK::NDRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_n_d_register_accessor.html", [
+          [ "ChimeraTK::SubdeviceRegisterAccessor", "class_chimera_t_k_1_1_subdevice_register_accessor.html", null ]
+        ] ],
         [ "ChimeraTK::NDRegisterAccessor< UserType >", "class_chimera_t_k_1_1_n_d_register_accessor.html", [
           [ "Accessor< UserType >", "class_accessor.html", null ],
           [ "AsyncTestDummy::Accessor< UserType >", "class_async_test_dummy_1_1_accessor.html", null ],
           [ "ChimeraTK::AsyncNDRegisterAccessor< UserType >", "class_chimera_t_k_1_1_async_n_d_register_accessor.html", null ],
-          [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< UserType, TargetUserType >", null, [
-            [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
-              [ "ChimeraTK::FixedPointConvertingDecorator< UserType, TargetUserType >", "class_chimera_t_k_1_1_fixed_point_converting_decorator.html", null ]
-            ] ]
-          ] ],
-          [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< UserType, UserType >", null, [
-            [ "ChimeraTK::NDRegisterAccessorDecorator< UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
-              [ "ChimeraTK::ExceptionDummyPollDecorator< UserType >", "struct_chimera_t_k_1_1_exception_dummy_poll_decorator.html", null ],
-              [ "ChimeraTK::ExceptionDummyPushDecorator< UserType >", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html", null ],
-              [ "ChimeraTK::LNMBackend::DoubleBufferAccessorDecorator< UserType >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_accessor_decorator.html", null ],
-              [ "ChimeraTK::LNMBackend::ForceReadOnlyPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html", null ]
-            ] ]
-          ] ],
           [ "ChimeraTK::DummyInterruptTriggerAccessor< UserType >", "class_chimera_t_k_1_1_dummy_interrupt_trigger_accessor.html", null ],
           [ "ChimeraTK::LNMBackendBitAccessor< UserType >", "class_chimera_t_k_1_1_l_n_m_backend_bit_accessor.html", null ],
           [ "ChimeraTK::LNMBackendChannelAccessor< UserType >", "class_chimera_t_k_1_1_l_n_m_backend_channel_accessor.html", null ],
@@ -214,42 +192,40 @@ var hierarchy =
           [ "ChimeraTK::NumericAddressedBackendMuxedRegisterAccessor< UserType, ConverterType >", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html", null ],
           [ "ChimeraTK::NumericAddressedBackendRegisterAccessor< UserType, DataConverterType, isRaw >", "class_chimera_t_k_1_1_numeric_addressed_backend_register_accessor.html", null ],
           [ "ChimeraTK::TransferElementTestAccessor< UserType >", "class_chimera_t_k_1_1_transfer_element_test_accessor.html", null ],
-          [ "DecoratorTestAccessor< UserType >", "class_decorator_test_accessor.html", null ],
-          [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< UserType, double >", null, [
+          [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< UserType, TargetUserType >", null, [
+            [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
+              [ "ChimeraTK::FixedPointConvertingDecorator< UserType, TargetUserType >", "class_chimera_t_k_1_1_fixed_point_converting_decorator.html", null ]
+            ] ],
+            [ "ChimeraTK::NDRegisterAccessorDecorator< T >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
+              [ "ChimeraTK::CopyRegisterDecorator< T >", "struct_chimera_t_k_1_1_copy_register_decorator.html", null ],
+              [ "CountingDecorator< T >", "struct_counting_decorator.html", null ]
+            ] ],
+            [ "ChimeraTK::NDRegisterAccessorDecorator< TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
+              [ "ChimeraTK::FixedPointConvertingRawDecorator< TargetUserType >", "class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html", null ]
+            ] ],
+            [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, uint32_t >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
+              [ "ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html", null ]
+            ] ],
             [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, double >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
               [ "ChimeraTK::LNMBackend::MathPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin_decorator.html", null ],
               [ "ChimeraTK::LNMBackend::MultiplierPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_multiplier_plugin_decorator.html", null ]
             ] ]
           ] ],
-          [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< UserType, uint32_t >", null, [
-            [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, uint32_t >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
-              [ "ChimeraTK::LNMBackend::MonostableTriggerPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_monostable_trigger_plugin_decorator.html", null ]
+          [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< UserType, UserType >", null, [
+            [ "ChimeraTK::NDRegisterAccessorDecorator< UserType, TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
+              [ "ChimeraTK::ExceptionDummyPollDecorator< UserType >", "struct_chimera_t_k_1_1_exception_dummy_poll_decorator.html", null ],
+              [ "ChimeraTK::ExceptionDummyPushDecorator< UserType >", "struct_chimera_t_k_1_1_exception_dummy_push_decorator.html", null ],
+              [ "ChimeraTK::LNMBackend::DoubleBufferAccessorDecorator< UserType >", "class_chimera_t_k_1_1_l_n_m_backend_1_1_double_buffer_accessor_decorator.html", null ],
+              [ "ChimeraTK::LNMBackend::ForceReadOnlyPluginDecorator< UserType >", "struct_chimera_t_k_1_1_l_n_m_backend_1_1_force_read_only_plugin_decorator.html", null ]
             ] ]
-          ] ]
+          ] ],
+          [ "DecoratorTestAccessor< UserType >", "class_decorator_test_accessor.html", null ]
         ] ],
-        [ "ChimeraTK::NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html", null ],
-        [ "ChimeraTK::NDRegisterAccessor< int32_t >", "class_chimera_t_k_1_1_n_d_register_accessor.html", [
-          [ "ChimeraTK::SubdeviceRegisterAccessor", "class_chimera_t_k_1_1_subdevice_register_accessor.html", null ]
-        ] ],
-        [ "ChimeraTK::NDRegisterAccessor< std::string >", "class_chimera_t_k_1_1_n_d_register_accessor.html", [
-          [ "ChimeraTK::NumericAddressedBackendASCIIAccessor", "class_chimera_t_k_1_1_numeric_addressed_backend_a_s_c_i_i_accessor.html", null ]
-        ] ],
-        [ "ChimeraTK::NDRegisterAccessor< T >", "class_chimera_t_k_1_1_n_d_register_accessor.html", [
-          [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< T, T >", null, [
-            [ "ChimeraTK::NDRegisterAccessorDecorator< T >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
-              [ "ChimeraTK::CopyRegisterDecorator< T >", "struct_chimera_t_k_1_1_copy_register_decorator.html", null ],
-              [ "CountingDecorator< T >", "struct_counting_decorator.html", null ]
-            ] ]
-          ] ]
-        ] ],
-        [ "ChimeraTK::NDRegisterAccessor< TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor.html", [
-          [ "ChimeraTK::detail::NDRegisterAccessorDecoratorImpl< TargetUserType, TargetUserType >", null, [
-            [ "ChimeraTK::NDRegisterAccessorDecorator< TargetUserType >", "class_chimera_t_k_1_1_n_d_register_accessor_decorator.html", [
-              [ "ChimeraTK::FixedPointConvertingRawDecorator< TargetUserType >", "class_chimera_t_k_1_1_fixed_point_converting_raw_decorator.html", null ]
-            ] ]
-          ] ]
-        ] ]
+        [ "ChimeraTK::NumericAddressedLowLevelTransferElement", "class_chimera_t_k_1_1_numeric_addressed_low_level_transfer_element.html", null ]
       ] ]
+    ] ],
+    [ "std::enable_shared_from_this", null, [
+      [ "ChimeraTK::RebotDummySession", "class_chimera_t_k_1_1_rebot_dummy_session.html", null ]
     ] ],
     [ "ChimeraTK::DeviceInfoMap::ErrorList::ErrorElem", "class_chimera_t_k_1_1_device_info_map_1_1_error_list_1_1_error_elem.html", null ],
     [ "ChimeraTK::DeviceInfoMap::ErrorList", "class_chimera_t_k_1_1_device_info_map_1_1_error_list.html", null ],
@@ -326,7 +302,7 @@ var hierarchy =
     [ "MuxedNodmaAsync", "struct_muxed_nodma_async.html", null ],
     [ "MyArea1", "struct_my_area1.html", null ],
     [ "MyRegister1", "struct_my_register1.html", null ],
-    [ "noncopyable", null, [
+    [ "boost::noncopyable", null, [
       [ "ChimeraTK::DeviceFile", "class_chimera_t_k_1_1_device_file.html", null ],
       [ "ChimeraTK::XdmaBackend", "class_chimera_t_k_1_1_xdma_backend.html", null ]
     ] ],
@@ -363,13 +339,124 @@ var hierarchy =
     ] ],
     [ "ChimeraTK::RegisterCatalogue", "class_chimera_t_k_1_1_register_catalogue.html", null ],
     [ "RegisterDescriptorBase< Derived >", "struct_register_descriptor_base.html", [
+      [ "ChannelRegisterDescriptorBase< RegChannelLast >", "struct_channel_register_descriptor_base.html", [
+        [ "RegChannelLast", "struct_reg_channel_last.html", null ]
+      ] ],
+      [ "ChannelRegisterDescriptorBase< RegChannel4_push >", "struct_channel_register_descriptor_base.html", [
+        [ "RegChannel4_push", "struct_reg_channel4__push.html", null ]
+      ] ],
+      [ "ChannelRegisterDescriptorBase< RegChannel3 >", "struct_channel_register_descriptor_base.html", [
+        [ "RegChannel3", "struct_reg_channel3.html", null ]
+      ] ],
+      [ "ConstantRegisterDescriptorBase< RegConstant >", "struct_constant_register_descriptor_base.html", [
+        [ "RegConstant", "struct_reg_constant.html", null ]
+      ] ],
+      [ "ConstantRegisterDescriptorBase< RegConstant2 >", "struct_constant_register_descriptor_base.html", [
+        [ "RegConstant2", "struct_reg_constant2.html", null ]
+      ] ],
+      [ "ConstantRegisterDescriptorBase< RegArrayConstant >", "struct_constant_register_descriptor_base.html", [
+        [ "RegArrayConstant", "struct_reg_array_constant.html", null ]
+      ] ],
+      [ "OneDRegisterDescriptorBase< RegFullAreaScaled >", "struct_one_d_register_descriptor_base.html", [
+        [ "RegFullAreaScaled", "struct_reg_full_area_scaled.html", null ]
+      ] ],
+      [ "OneDRegisterDescriptorBase< RegPartOfArea >", "struct_one_d_register_descriptor_base.html", [
+        [ "RegPartOfArea", "struct_reg_part_of_area.html", null ]
+      ] ],
+      [ "OneDRegisterDescriptorBase< RegFullArea >", "struct_one_d_register_descriptor_base.html", [
+        [ "RegFullArea", "struct_reg_full_area.html", null ]
+      ] ],
       [ "ChannelRegisterDescriptorBase< Derived >", "struct_channel_register_descriptor_base.html", null ],
       [ "ConstantRegisterDescriptorBase< Derived >", "struct_constant_register_descriptor_base.html", null ],
       [ "OneDRegisterDescriptorBase< Derived >", "struct_one_d_register_descriptor_base.html", [
+        [ "BitRegisterDescriptorBase< RegBit2OfWordFirmware >", "struct_bit_register_descriptor_base.html", [
+          [ "RegBit2OfWordFirmware", "struct_reg_bit2_of_word_firmware.html", null ]
+        ] ],
+        [ "BitRegisterDescriptorBase< RegBit2OfWordFirmwareB >", "struct_bit_register_descriptor_base.html", [
+          [ "RegBit2OfWordFirmwareB", "struct_reg_bit2_of_word_firmware_b.html", null ]
+        ] ],
+        [ "BitRegisterDescriptorBase< RegBit3OfVar >", "struct_bit_register_descriptor_base.html", [
+          [ "RegBit3OfVar", "struct_reg_bit3_of_var.html", null ]
+        ] ],
+        [ "BitRegisterDescriptorBase< RegBit2OfWordFirmware_push >", "struct_bit_register_descriptor_base.html", [
+          [ "RegBit2OfWordFirmware_push", "struct_reg_bit2_of_word_firmware__push.html", null ]
+        ] ],
+        [ "BitRegisterDescriptorBase< RegBit0OfVar >", "struct_bit_register_descriptor_base.html", [
+          [ "RegBit0OfVar", "struct_reg_bit0_of_var.html", null ]
+        ] ],
+        [ "ScalarRegisterDescriptorBase< RegWordFirmwareForcedReadOnly >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegWordFirmwareForcedReadOnly", "struct_reg_word_firmware_forced_read_only.html", null ]
+        ] ],
+        [ "ScalarRegisterDescriptorBase< RegSingleWordB >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegSingleWordB", "struct_reg_single_word_b.html", null ]
+        ] ],
+        [ "ScalarRegisterDescriptorBase< RegMonostableTrigger >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegMonostableTrigger", "struct_reg_monostable_trigger.html", null ]
+        ] ],
+        [ "ScalarRegisterDescriptorBase< RegSingleWordScaledTwice_push >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegSingleWordScaledTwice_push", "struct_reg_single_word_scaled_twice__push.html", null ]
+        ] ],
+        [ "ScalarRegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegWordFirmwareAsParameterInMath", "struct_reg_word_firmware_as_parameter_in_math.html", null ]
+        ] ],
+        [ "ScalarRegisterDescriptorBase< RegSingleWord >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegSingleWord", "struct_reg_single_word.html", null ]
+        ] ],
+        [ "ScalarRegisterDescriptorBase< RegWordFirmwareForcedReadOnly_push >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegWordFirmwareForcedReadOnly_push", "struct_reg_word_firmware_forced_read_only__push.html", null ]
+        ] ],
+        [ "ScalarRegisterDescriptorBase< RegSingleWord_push >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegSingleWord_push", "struct_reg_single_word__push.html", null ]
+        ] ],
+        [ "VariableRegisterDescriptorBase< RegVariable >", "struct_variable_register_descriptor_base.html", [
+          [ "RegVariable", "struct_reg_variable.html", null ]
+        ] ],
+        [ "VariableRegisterDescriptorBase< RegArrayVariable >", "struct_variable_register_descriptor_base.html", [
+          [ "RegArrayVariable", "struct_reg_array_variable.html", null ]
+        ] ],
         [ "BitRegisterDescriptorBase< Derived >", "struct_bit_register_descriptor_base.html", null ],
         [ "ScalarRegisterDescriptorBase< Derived >", "struct_scalar_register_descriptor_base.html", [
+          [ "RegSingleWordScaled< RegSingleWordScaled_R >", "struct_reg_single_word_scaled.html", [
+            [ "RegSingleWordScaled_R", "struct_reg_single_word_scaled___r.html", null ]
+          ] ],
+          [ "RegSingleWordScaled< RegSingleWordScaled_W >", "struct_reg_single_word_scaled.html", [
+            [ "RegSingleWordScaled_W", "struct_reg_single_word_scaled___w.html", null ]
+          ] ],
+          [ "RegSingleWordScaled< RegSingleWordScaled_RW >", "struct_reg_single_word_scaled.html", [
+            [ "RegSingleWordScaled_RW", "struct_reg_single_word_scaled___r_w.html", null ]
+          ] ],
+          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_var1, RawToCookedProvider_Var1 >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+            [ "RegVariableAsPushParameterInMath_var1", "struct_reg_variable_as_push_parameter_in_math__var1.html", null ]
+          ] ],
+          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_x, RawToCookedProvider_x >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+            [ "RegVariableAsPushParameterInMath_x", "struct_reg_variable_as_push_parameter_in_math__x.html", null ]
+          ] ],
+          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_var2, RawToCookedProvider_Var2 >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+            [ "RegVariableAsPushParameterInMath_var2", "struct_reg_variable_as_push_parameter_in_math__var2.html", null ]
+          ] ],
+          [ "RegWordFirmwareWithMath< RegWordFirmwareWithMath_R_push >", "struct_reg_word_firmware_with_math.html", [
+            [ "RegWordFirmwareWithMath_R_push", "struct_reg_word_firmware_with_math___r__push.html", null ]
+          ] ],
+          [ "RegWordFirmwareWithMath< RegWordFirmwareWithMath_R >", "struct_reg_word_firmware_with_math.html", [
+            [ "RegWordFirmwareWithMath_R", "struct_reg_word_firmware_with_math___r.html", null ]
+          ] ],
+          [ "RegWordFirmwareWithMath< RegWordFirmwareWithMath_W >", "struct_reg_word_firmware_with_math.html", [
+            [ "RegWordFirmwareWithMath_W", "struct_reg_word_firmware_with_math___w.html", null ]
+          ] ],
           [ "RegSingleWordScaled< Derived >", "struct_reg_single_word_scaled.html", null ],
           [ "RegVariableAsPushParameterInMathBase< Derived, RawToCookedProvider >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
+            [ "RegVariableAsPushParameterInMath_not_written< RegVariableAsPushParameterInMath_var1_not_written2, RawToCookedProvider_Var1 >", "struct_reg_variable_as_push_parameter_in_math__not__written.html", [
+              [ "RegVariableAsPushParameterInMath_var1_not_written2", "struct_reg_variable_as_push_parameter_in_math__var1__not__written2.html", null ]
+            ] ],
+            [ "RegVariableAsPushParameterInMath_not_written< RegVariableAsPushParameterInMath_var1_not_written1, RawToCookedProvider_Var1 >", "struct_reg_variable_as_push_parameter_in_math__not__written.html", [
+              [ "RegVariableAsPushParameterInMath_var1_not_written1", "struct_reg_variable_as_push_parameter_in_math__var1__not__written1.html", null ]
+            ] ],
+            [ "RegVariableAsPushParameterInMath_not_written< RegVariableAsPushParameterInMath_x_not_written1, RawToCookedProvider_x >", "struct_reg_variable_as_push_parameter_in_math__not__written.html", [
+              [ "RegVariableAsPushParameterInMath_x_not_written1", "struct_reg_variable_as_push_parameter_in_math__x__not__written1.html", null ]
+            ] ],
+            [ "RegVariableAsPushParameterInMath_not_written< RegVariableAsPushParameterInMath_x_not_written2, RawToCookedProvider_x >", "struct_reg_variable_as_push_parameter_in_math__not__written.html", [
+              [ "RegVariableAsPushParameterInMath_x_not_written2", "struct_reg_variable_as_push_parameter_in_math__x__not__written2.html", null ]
+            ] ],
             [ "RegVariableAsPushParameterInMath_not_written< Derived, RawToCookedProvider >", "struct_reg_variable_as_push_parameter_in_math__not__written.html", null ]
           ] ],
           [ "RegWordFirmwareWithMath< Derived >", "struct_reg_word_firmware_with_math.html", null ]
@@ -377,283 +464,8 @@ var hierarchy =
         [ "VariableRegisterDescriptorBase< Derived >", "struct_variable_register_descriptor_base.html", null ]
       ] ]
     ] ],
-    [ "RegisterDescriptorBase< RegArrayConstant >", "struct_register_descriptor_base.html", [
-      [ "ConstantRegisterDescriptorBase< RegArrayConstant >", "struct_constant_register_descriptor_base.html", [
-        [ "RegArrayConstant", "struct_reg_array_constant.html", null ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegArrayVariable >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegArrayVariable >", "struct_one_d_register_descriptor_base.html", [
-        [ "VariableRegisterDescriptorBase< RegArrayVariable >", "struct_variable_register_descriptor_base.html", [
-          [ "RegArrayVariable", "struct_reg_array_variable.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegBit0OfVar >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegBit0OfVar >", "struct_one_d_register_descriptor_base.html", [
-        [ "BitRegisterDescriptorBase< RegBit0OfVar >", "struct_bit_register_descriptor_base.html", [
-          [ "RegBit0OfVar", "struct_reg_bit0_of_var.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegBit2OfWordFirmware >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegBit2OfWordFirmware >", "struct_one_d_register_descriptor_base.html", [
-        [ "BitRegisterDescriptorBase< RegBit2OfWordFirmware >", "struct_bit_register_descriptor_base.html", [
-          [ "RegBit2OfWordFirmware", "struct_reg_bit2_of_word_firmware.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegBit2OfWordFirmware_push >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegBit2OfWordFirmware_push >", "struct_one_d_register_descriptor_base.html", [
-        [ "BitRegisterDescriptorBase< RegBit2OfWordFirmware_push >", "struct_bit_register_descriptor_base.html", [
-          [ "RegBit2OfWordFirmware_push", "struct_reg_bit2_of_word_firmware__push.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegBit2OfWordFirmwareB >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegBit2OfWordFirmwareB >", "struct_one_d_register_descriptor_base.html", [
-        [ "BitRegisterDescriptorBase< RegBit2OfWordFirmwareB >", "struct_bit_register_descriptor_base.html", [
-          [ "RegBit2OfWordFirmwareB", "struct_reg_bit2_of_word_firmware_b.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegBit3OfVar >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegBit3OfVar >", "struct_one_d_register_descriptor_base.html", [
-        [ "BitRegisterDescriptorBase< RegBit3OfVar >", "struct_bit_register_descriptor_base.html", [
-          [ "RegBit3OfVar", "struct_reg_bit3_of_var.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegChannel3 >", "struct_register_descriptor_base.html", [
-      [ "ChannelRegisterDescriptorBase< RegChannel3 >", "struct_channel_register_descriptor_base.html", [
-        [ "RegChannel3", "struct_reg_channel3.html", null ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegChannel4_push >", "struct_register_descriptor_base.html", [
-      [ "ChannelRegisterDescriptorBase< RegChannel4_push >", "struct_channel_register_descriptor_base.html", [
-        [ "RegChannel4_push", "struct_reg_channel4__push.html", null ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegChannelLast >", "struct_register_descriptor_base.html", [
-      [ "ChannelRegisterDescriptorBase< RegChannelLast >", "struct_channel_register_descriptor_base.html", [
-        [ "RegChannelLast", "struct_reg_channel_last.html", null ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegConstant >", "struct_register_descriptor_base.html", [
-      [ "ConstantRegisterDescriptorBase< RegConstant >", "struct_constant_register_descriptor_base.html", [
-        [ "RegConstant", "struct_reg_constant.html", null ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegConstant2 >", "struct_register_descriptor_base.html", [
-      [ "ConstantRegisterDescriptorBase< RegConstant2 >", "struct_constant_register_descriptor_base.html", [
-        [ "RegConstant2", "struct_reg_constant2.html", null ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegFullArea >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegFullArea >", "struct_one_d_register_descriptor_base.html", [
-        [ "RegFullArea", "struct_reg_full_area.html", null ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegFullAreaScaled >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegFullAreaScaled >", "struct_one_d_register_descriptor_base.html", [
-        [ "RegFullAreaScaled", "struct_reg_full_area_scaled.html", null ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegMonostableTrigger >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegMonostableTrigger >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegMonostableTrigger >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegMonostableTrigger", "struct_reg_monostable_trigger.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegPartOfArea >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegPartOfArea >", "struct_one_d_register_descriptor_base.html", [
-        [ "RegPartOfArea", "struct_reg_part_of_area.html", null ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegSingleWord >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegSingleWord >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegSingleWord >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegSingleWord", "struct_reg_single_word.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegSingleWord_push >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegSingleWord_push >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegSingleWord_push >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegSingleWord_push", "struct_reg_single_word__push.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegSingleWordB >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegSingleWordB >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegSingleWordB >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegSingleWordB", "struct_reg_single_word_b.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegSingleWordScaled_R >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegSingleWordScaled_R >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegSingleWordScaled_R >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegSingleWordScaled< RegSingleWordScaled_R >", "struct_reg_single_word_scaled.html", [
-            [ "RegSingleWordScaled_R", "struct_reg_single_word_scaled___r.html", null ]
-          ] ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegSingleWordScaled_RW >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegSingleWordScaled_RW >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegSingleWordScaled_RW >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegSingleWordScaled< RegSingleWordScaled_RW >", "struct_reg_single_word_scaled.html", [
-            [ "RegSingleWordScaled_RW", "struct_reg_single_word_scaled___r_w.html", null ]
-          ] ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegSingleWordScaled_W >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegSingleWordScaled_W >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegSingleWordScaled_W >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegSingleWordScaled< RegSingleWordScaled_W >", "struct_reg_single_word_scaled.html", [
-            [ "RegSingleWordScaled_W", "struct_reg_single_word_scaled___w.html", null ]
-          ] ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegSingleWordScaledTwice_push >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegSingleWordScaledTwice_push >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegSingleWordScaledTwice_push >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegSingleWordScaledTwice_push", "struct_reg_single_word_scaled_twice__push.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegVariable >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegVariable >", "struct_one_d_register_descriptor_base.html", [
-        [ "VariableRegisterDescriptorBase< RegVariable >", "struct_variable_register_descriptor_base.html", [
-          [ "RegVariable", "struct_reg_variable.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_var1 >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1 >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1 >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_var1, RawToCookedProvider_Var1 >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
-            [ "RegVariableAsPushParameterInMath_var1", "struct_reg_variable_as_push_parameter_in_math__var1.html", null ]
-          ] ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written1 >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written1 >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written1 >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_var1_not_written1, RawToCookedProvider_Var1 >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
-            [ "RegVariableAsPushParameterInMath_not_written< RegVariableAsPushParameterInMath_var1_not_written1, RawToCookedProvider_Var1 >", "struct_reg_variable_as_push_parameter_in_math__not__written.html", [
-              [ "RegVariableAsPushParameterInMath_var1_not_written1", "struct_reg_variable_as_push_parameter_in_math__var1__not__written1.html", null ]
-            ] ]
-          ] ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written2 >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written2 >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_var1_not_written2 >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_var1_not_written2, RawToCookedProvider_Var1 >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
-            [ "RegVariableAsPushParameterInMath_not_written< RegVariableAsPushParameterInMath_var1_not_written2, RawToCookedProvider_Var1 >", "struct_reg_variable_as_push_parameter_in_math__not__written.html", [
-              [ "RegVariableAsPushParameterInMath_var1_not_written2", "struct_reg_variable_as_push_parameter_in_math__var1__not__written2.html", null ]
-            ] ]
-          ] ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_var2 >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_var2 >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_var2 >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_var2, RawToCookedProvider_Var2 >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
-            [ "RegVariableAsPushParameterInMath_var2", "struct_reg_variable_as_push_parameter_in_math__var2.html", null ]
-          ] ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_x, RawToCookedProvider_x >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
-            [ "RegVariableAsPushParameterInMath_x", "struct_reg_variable_as_push_parameter_in_math__x.html", null ]
-          ] ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written1 >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written1 >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written1 >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_x_not_written1, RawToCookedProvider_x >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
-            [ "RegVariableAsPushParameterInMath_not_written< RegVariableAsPushParameterInMath_x_not_written1, RawToCookedProvider_x >", "struct_reg_variable_as_push_parameter_in_math__not__written.html", [
-              [ "RegVariableAsPushParameterInMath_x_not_written1", "struct_reg_variable_as_push_parameter_in_math__x__not__written1.html", null ]
-            ] ]
-          ] ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written2 >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written2 >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegVariableAsPushParameterInMath_x_not_written2 >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegVariableAsPushParameterInMathBase< RegVariableAsPushParameterInMath_x_not_written2, RawToCookedProvider_x >", "struct_reg_variable_as_push_parameter_in_math_base.html", [
-            [ "RegVariableAsPushParameterInMath_not_written< RegVariableAsPushParameterInMath_x_not_written2, RawToCookedProvider_x >", "struct_reg_variable_as_push_parameter_in_math__not__written.html", [
-              [ "RegVariableAsPushParameterInMath_x_not_written2", "struct_reg_variable_as_push_parameter_in_math__x__not__written2.html", null ]
-            ] ]
-          ] ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegWordFirmwareAsParameterInMath >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegWordFirmwareAsParameterInMath", "struct_reg_word_firmware_as_parameter_in_math.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegWordFirmwareForcedReadOnly >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegWordFirmwareForcedReadOnly >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegWordFirmwareForcedReadOnly >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegWordFirmwareForcedReadOnly", "struct_reg_word_firmware_forced_read_only.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegWordFirmwareForcedReadOnly_push >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegWordFirmwareForcedReadOnly_push >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegWordFirmwareForcedReadOnly_push >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegWordFirmwareForcedReadOnly_push", "struct_reg_word_firmware_forced_read_only__push.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegWordFirmwareWithMath_R >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegWordFirmwareWithMath_R >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegWordFirmwareWithMath_R >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegWordFirmwareWithMath< RegWordFirmwareWithMath_R >", "struct_reg_word_firmware_with_math.html", [
-            [ "RegWordFirmwareWithMath_R", "struct_reg_word_firmware_with_math___r.html", null ]
-          ] ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegWordFirmwareWithMath_R_push >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegWordFirmwareWithMath_R_push >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegWordFirmwareWithMath_R_push >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegWordFirmwareWithMath< RegWordFirmwareWithMath_R_push >", "struct_reg_word_firmware_with_math.html", [
-            [ "RegWordFirmwareWithMath_R_push", "struct_reg_word_firmware_with_math___r__push.html", null ]
-          ] ]
-        ] ]
-      ] ]
-    ] ],
-    [ "RegisterDescriptorBase< RegWordFirmwareWithMath_W >", "struct_register_descriptor_base.html", [
-      [ "OneDRegisterDescriptorBase< RegWordFirmwareWithMath_W >", "struct_one_d_register_descriptor_base.html", [
-        [ "ScalarRegisterDescriptorBase< RegWordFirmwareWithMath_W >", "struct_scalar_register_descriptor_base.html", [
-          [ "RegWordFirmwareWithMath< RegWordFirmwareWithMath_W >", "struct_reg_word_firmware_with_math.html", [
-            [ "RegWordFirmwareWithMath_W", "struct_reg_word_firmware_with_math___w.html", null ]
-          ] ]
-        ] ]
-      ] ]
-    ] ],
-    [ "ChimeraTK::RegisterInfo", "class_chimera_t_k_1_1_register_info.html", null ],
     [ "ChimeraTK::RebotProtocol0::RegisterInfo", "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html", null ],
+    [ "ChimeraTK::RegisterInfo", "class_chimera_t_k_1_1_register_info.html", null ],
     [ "ChimeraTK::RegisterPath", "class_chimera_t_k_1_1_register_path.html", null ],
     [ "RegisterPathTest", "class_register_path_test.html", null ],
     [ "ChimeraTK::RoundingRangeCheckingDataConverter< SourceType, DestType >::Round< S >", "struct_chimera_t_k_1_1_rounding_range_checking_data_converter_1_1_round.html", null ],
@@ -701,8 +513,8 @@ var hierarchy =
     [ "ChimeraTK::TemplateUserTypeMap< SharedAccessorMap >", "class_chimera_t_k_1_1_template_user_type_map.html", null ],
     [ "ChimeraTK::TemplateUserTypeMapNoVoid< TemplateClass >", "class_chimera_t_k_1_1_template_user_type_map_no_void.html", null ],
     [ "test_suite", null, [
-      [ "DeviceInfoMapTestSuite", "class_device_info_map_test_suite.html", null ],
       [ "DMapFileParserTestSuite", "class_d_map_file_parser_test_suite.html", null ],
+      [ "DeviceInfoMapTestSuite", "class_device_info_map_test_suite.html", null ],
       [ "DummyRegisterTestSuite", "class_dummy_register_test_suite.html", null ],
       [ "OneDRegisterTestSuite", "class_one_d_register_test_suite.html", null ],
       [ "ParserUtilitiesTestSuite", "class_parser_utilities_test_suite.html", null ],
@@ -716,24 +528,20 @@ var hierarchy =
     [ "TestParameters", "struct_test_parameters.html", null ],
     [ "ChimeraTK::ThreadInformerMutex", "struct_chimera_t_k_1_1_thread_informer_mutex.html", null ],
     [ "ChimeraTK::TransferElementAbstractor", "class_chimera_t_k_1_1_transfer_element_abstractor.html", [
-      [ "ChimeraTK::NDRegisterAccessorAbstractor< UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
-        [ "ChimeraTK::OneDRegisterAccessor< UserType >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
-        [ "ChimeraTK::ScalarRegisterAccessor< UserType, TAG >", "class_chimera_t_k_1_1_scalar_register_accessor.html", null ],
-        [ "ChimeraTK::TwoDRegisterAccessor< UserType >", "class_chimera_t_k_1_1_two_d_register_accessor.html", null ]
-      ] ],
-      [ "ChimeraTK::NDRegisterAccessorAbstractor< ChimeraTK::Boolean >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
-        [ "ChimeraTK::ScalarRegisterAccessor< ChimeraTK::Boolean, void >", "class_chimera_t_k_1_1_scalar_register_accessor.html", [
-          [ "ChimeraTK::ScalarRegisterAccessor< ChimeraTK::Boolean, std::nullptr_t >", "class_chimera_t_k_1_1_scalar_register_accessor_3_01_chimera_t_k_1_1_boolean_00_01std_1_1nullptr__t_01_4.html", null ]
-        ] ]
+      [ "ChimeraTK::NDRegisterAccessorAbstractor< std::string >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
+        [ "ChimeraTK::ScalarRegisterAccessor< std::string >", "class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html", null ]
       ] ],
       [ "ChimeraTK::NDRegisterAccessorAbstractor< ChimeraTK::Void >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
         [ "ChimeraTK::VoidRegisterAccessor", "class_chimera_t_k_1_1_void_register_accessor.html", null ]
       ] ],
-      [ "ChimeraTK::NDRegisterAccessorAbstractor< std::string >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
-        [ "ChimeraTK::ScalarRegisterAccessor< std::string >", "class_chimera_t_k_1_1_scalar_register_accessor_3_01std_1_1string_01_4.html", null ]
-      ] ],
-      [ "ChimeraTK::NDRegisterAccessorAbstractor< uint32_t >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
-        [ "ChimeraTK::ScalarRegisterAccessor< uint32_t >", "class_chimera_t_k_1_1_scalar_register_accessor.html", null ]
+      [ "ChimeraTK::NDRegisterAccessorAbstractor< UserType >", "class_chimera_t_k_1_1_n_d_register_accessor_abstractor.html", [
+        [ "ChimeraTK::ScalarRegisterAccessor< uint32_t >", "class_chimera_t_k_1_1_scalar_register_accessor.html", null ],
+        [ "ChimeraTK::ScalarRegisterAccessor< ChimeraTK::Boolean, void >", "class_chimera_t_k_1_1_scalar_register_accessor.html", [
+          [ "ChimeraTK::ScalarRegisterAccessor< ChimeraTK::Boolean, std::nullptr_t >", "class_chimera_t_k_1_1_scalar_register_accessor_3_01_chimera_t_k_1_1_boolean_00_01std_1_1nullptr__t_01_4.html", null ]
+        ] ],
+        [ "ChimeraTK::OneDRegisterAccessor< UserType >", "class_chimera_t_k_1_1_one_d_register_accessor.html", null ],
+        [ "ChimeraTK::ScalarRegisterAccessor< UserType, TAG >", "class_chimera_t_k_1_1_scalar_register_accessor.html", null ],
+        [ "ChimeraTK::TwoDRegisterAccessor< UserType >", "class_chimera_t_k_1_1_two_d_register_accessor.html", null ]
       ] ]
     ] ],
     [ "ChimeraTK::TransferElementID", "class_chimera_t_k_1_1_transfer_element_i_d.html", null ],
@@ -743,8 +551,8 @@ var hierarchy =
     [ "ChimeraTK::UnifiedBackendTest< VECTOR_OF_REGISTERS_T >", "class_chimera_t_k_1_1_unified_backend_test.html", null ],
     [ "ChimeraTK::LNMVariable::ValueTable< T >", "struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html", null ],
     [ "ChimeraTK::LNMVariable::ValueTable< UserType >", "struct_chimera_t_k_1_1_l_n_m_variable_1_1_value_table.html", null ],
-    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< UserType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl.html", null ],
+    [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< CookedType, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl.html", null ],
     [ "ChimeraTK::FixedPointConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_fixed_point_converter_1_1vector_to_cooked__impl_3_01std_1_1string_00_01_re30b31a9d35c5f5cb614bf7580b43b0d.html", null ],
     [ "ChimeraTK::IEEE754_SingleConverter::vectorToCooked_impl< std::string, RAW_ITERATOR, COOKED_ITERATOR >", "struct_chimera_t_k_1_1_i_e_e_e754___single_converter_1_1vector_to_cooked__impl_3_01std_1_1stringe140701d1fc3bce216e21ed8ed60bd7e.html", null ],
     [ "ChimeraTK::VersionNumber", "class_chimera_t_k_1_1_version_number.html", null ],

@@ -14,13 +14,13 @@ var class_chimera_t_k_1_1_device =
     [ "getVoidRegisterAccessor", "class_chimera_t_k_1_1_device.html#a80413e58d7b0c2e798d16ce9fe546a1d", null ],
     [ "isFunctional", "class_chimera_t_k_1_1_device.html#ab4e16a54db85cd0d908484dd68f10780", null ],
     [ "isOpened", "class_chimera_t_k_1_1_device.html#a0595273d58b7ae326ca7f8def4f8a6d3", null ],
-    [ "open", "class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf", null ],
     [ "open", "class_chimera_t_k_1_1_device.html#a0a86afbebd076b8bc1d7bc6fe87db89d", null ],
+    [ "open", "class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf", null ],
     [ "read", "class_chimera_t_k_1_1_device.html#abc7f6a974f2dd96cc27634800339e8af", null ],
     [ "read", "class_chimera_t_k_1_1_device.html#ace0348b44dc79cb0bccec4207fb133f2", null ],
     [ "readDeviceInfo", "class_chimera_t_k_1_1_device.html#aa7fe4ce4336cedce3fce015d15f59bda", null ],
     [ "setException", "class_chimera_t_k_1_1_device.html#a71fc982c84030c0abfd08ca3ce28d224", null ],
-    [ "write", "class_chimera_t_k_1_1_device.html#aff70dfe5a22e63aa63a42a06c9cec619", null ],
     [ "write", "class_chimera_t_k_1_1_device.html#a2ad91fd3a782bf1f06dc0f2a92fa6ec2", null ],
+    [ "write", "class_chimera_t_k_1_1_device.html#aff70dfe5a22e63aa63a42a06c9cec619", null ],
     [ "_deviceBackendPointer", "class_chimera_t_k_1_1_device.html#a129c5f11a5e1a0ada19cbcc293d1a429", null ]
 ];

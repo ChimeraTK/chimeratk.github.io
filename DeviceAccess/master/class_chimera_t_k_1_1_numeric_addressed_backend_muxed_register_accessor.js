@@ -15,6 +15,7 @@ var class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor =
     [ "replaceTransferElement", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#aee17ca15b5c37dac7fbdbb53fd7d657e", null ],
     [ "_converters", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#af0c5333d00421ce70867d2818bbf7aa3", null ],
     [ "_endIterators", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a8df63bc7fb31bde2685edf0f271eaab4", null ],
+    [ "_exceptionBackend", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#aee95f5dfccb41075150d0a7d00f5e494", null ],
     [ "_ioBuffer", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a24585513b9ae7d98f3586ce8e5477751", null ],
     [ "_ioDevice", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a821a03384cb79116d713b771e58b9a92", null ],
     [ "_registerInfo", "class_chimera_t_k_1_1_numeric_addressed_backend_muxed_register_accessor.html#a88caba593e82e434df16d3fc18c2de32", null ],

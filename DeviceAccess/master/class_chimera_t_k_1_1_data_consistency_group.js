@@ -8,8 +8,8 @@ var class_chimera_t_k_1_1_data_consistency_group =
     [ "DataConsistencyGroup", "class_chimera_t_k_1_1_data_consistency_group.html#ad4b36162923b81822428222c0355ec19", null ],
     [ "DataConsistencyGroup", "class_chimera_t_k_1_1_data_consistency_group.html#a0407e10db240cd4e9fc31eb5075fc8bd", null ],
     [ "DataConsistencyGroup", "class_chimera_t_k_1_1_data_consistency_group.html#aa74dd86cbf702eb0d14824e98a1e4cc9", null ],
-    [ "add", "class_chimera_t_k_1_1_data_consistency_group.html#a6051622217174732d5d10c3cf4fd7337", null ],
     [ "add", "class_chimera_t_k_1_1_data_consistency_group.html#a6bd9e4bf2892c9857c7a155ab1be746e", null ],
+    [ "add", "class_chimera_t_k_1_1_data_consistency_group.html#a6051622217174732d5d10c3cf4fd7337", null ],
     [ "getMatchingMode", "class_chimera_t_k_1_1_data_consistency_group.html#a64fb14661d9c92776f0b0d1f8d3087e7", null ],
     [ "setMatchingMode", "class_chimera_t_k_1_1_data_consistency_group.html#a4f2fb89a0fb58e9dc252531609a1bf08", null ],
     [ "update", "class_chimera_t_k_1_1_data_consistency_group.html#abf4d6aff053740e6070273666e13edcb", null ]

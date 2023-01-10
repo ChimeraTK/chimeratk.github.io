@@ -13,5 +13,5 @@ var pcieuni__io__compat_8h =
     [ "PCIEUNI_READ_DMA", "pcieuni__io__compat_8h.html#a48af1e78d5a496413d104767eee58d7c", null ],
     [ "PCIEUNI_SET_IRQ", "pcieuni__io__compat_8h.html#a4fa4ce11062d16b3584492431cc762e6", null ],
     [ "PCIEUNI_WRITE_DMA", "pcieuni__io__compat_8h.html#a1500cb79fd250fdd018729ac3d3438a4", null ],
-    [ "pcieuni_ioctl_bar_sizes", "pcieuni__io__compat_8h.html#a6374d619fc21c995ad132713820b101d", null ]
+    [ "pcieuni_ioctl_bar_sizes", "pcieuni__io__compat_8h.html#a3371e245e485d2ccc232ebb367b022c5", null ]
 ];

@@ -10,11 +10,11 @@ var class_chimera_t_k_1_1_fixed_point_converter =
     [ "operator==", "class_chimera_t_k_1_1_fixed_point_converter.html#af46732c7d3bae2a516fdbf26d30d20ae", null ],
     [ "reconfigure", "class_chimera_t_k_1_1_fixed_point_converter.html#aae7ba81ef0eb12d2ed6c1144b4c9eb9f", null ],
     [ "scalarToCooked", "class_chimera_t_k_1_1_fixed_point_converter.html#a5e5cfd62ab0319d60ef1f90abe41fa57", null ],
-    [ "toRaw", "class_chimera_t_k_1_1_fixed_point_converter.html#a5016ab22288746437b63d087926fcec2", null ],
+    [ "toRaw", "class_chimera_t_k_1_1_fixed_point_converter.html#a617008796d4d49974a7c85e84b9800a3", null ],
+    [ "toRaw", "class_chimera_t_k_1_1_fixed_point_converter.html#a617008796d4d49974a7c85e84b9800a3", null ],
+    [ "toRaw", "class_chimera_t_k_1_1_fixed_point_converter.html#a830c56e254ff5b136cbb068562e6bf8b", null ],
+    [ "toRaw", "class_chimera_t_k_1_1_fixed_point_converter.html#a830c56e254ff5b136cbb068562e6bf8b", null ],
     [ "toRaw", "class_chimera_t_k_1_1_fixed_point_converter.html#af1ec10d3abce2598b6d0e57401cabdd2", null ],
-    [ "toRaw", "class_chimera_t_k_1_1_fixed_point_converter.html#a830c56e254ff5b136cbb068562e6bf8b", null ],
-    [ "toRaw", "class_chimera_t_k_1_1_fixed_point_converter.html#a617008796d4d49974a7c85e84b9800a3", null ],
-    [ "toRaw", "class_chimera_t_k_1_1_fixed_point_converter.html#a830c56e254ff5b136cbb068562e6bf8b", null ],
-    [ "toRaw", "class_chimera_t_k_1_1_fixed_point_converter.html#a617008796d4d49974a7c85e84b9800a3", null ],
+    [ "toRaw", "class_chimera_t_k_1_1_fixed_point_converter.html#a5016ab22288746437b63d087926fcec2", null ],
     [ "vectorToCooked", "class_chimera_t_k_1_1_fixed_point_converter.html#a00f99d3d7b09f3fc700c577ba09745f3", null ]
 ];

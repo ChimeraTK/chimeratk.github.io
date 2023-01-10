@@ -8,7 +8,7 @@ var struct_helper_process =
     [ "start", "struct_helper_process.html#a2d4b59c9159ac29fda3af1072e229839", null ],
     [ "stopGracefully", "struct_helper_process.html#a239810643ee9adb5c8c0dbffedbb5fe4", null ],
     [ "busy", "struct_helper_process.html#ac5bab7c551f68577adc64e1d2e81eddc", null ],
-    [ "mirrorRequest", "struct_helper_process.html#ae3ec3e5537f2ee583354a6555a9d1dc9", null ],
+    [ "mirrorRequest", "struct_helper_process.html#a73dfa5afa109d6e521b10086f9c07a26", null ],
     [ "triggerInterrupt", "struct_helper_process.html#a795e8c1e66a2375565dd98165dea8072", null ],
     [ "type", "struct_helper_process.html#a87c07b45edfd8e512e2aed1391e3242b", null ],
     [ "updated", "struct_helper_process.html#a4b10d05e3f3fbade095579636c69a298", null ]

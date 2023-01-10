@@ -1,3 +1,27 @@
+/*
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
+
+ The MIT License (MIT)
+
+ Copyright (C) 1997-2020 by Dimitri van Heesch
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
+*/
 var NAVTREE =
 [
   [ "ChimeraTK-DeviceAccess", "index.html", [
@@ -68,10 +92,35 @@ var NAVTREE =
       [ "Writeing to read-only registers", "testing_with_dummy_backends.html#dummy_backends_write_readonly", null ]
     ] ],
     [ "Using push-type inputs with AccessMode::wait_for_new_data", "wait_for_new_data.html", null ],
-    [ "XDMA backend", "autotoc_md13.html", null ],
+    [ "XDMA backend", "md_doc_xdma_backend.html", [
+      [ "Prerequisites", "md_doc_xdma_backend.html#autotoc_md14", null ],
+      [ "Mapping of XDMA driver interfaces", "md_doc_xdma_backend.html#autotoc_md15", [
+        [ "Introduction", "spec__transfer_element.html#autotoc_md2", null ],
+        [ "A. Definitions", "spec__transfer_element.html#autotoc_md3", [
+          [ "Side note", "basic_example.html#autotoc_md0", null ],
+          [ "Details:", "q_and_a.html#autotoc_md1", null ],
+          [ "(*) Comments", "spec__transfer_element.html#autotoc_md4", null ]
+        ] ],
+        [ "B. Behavioural specification", "spec__transfer_element.html#autotoc_md5", [
+          [ "(*) Comments", "spec__transfer_element.html#autotoc_md6", null ]
+        ] ],
+        [ "C. Requirements for all implementations (full and decorator-like)", "spec__transfer_element.html#autotoc_md7", [
+          [ "(*) Comments", "spec__transfer_element.html#autotoc_md8", null ]
+        ] ],
+        [ "D. Requirements for full implementations (e.g. in backends)", "spec__transfer_element.html#autotoc_md9", [
+          [ "(*) Comments", "spec__transfer_element.html#autotoc_md10", null ]
+        ] ],
+        [ "E. Requirements for decorator-like implementations", "spec__transfer_element.html#autotoc_md11", [
+          [ "(*) Comments", "spec__transfer_element.html#autotoc_md12", null ]
+        ] ],
+        [ "AXI-Lite Master interface", "md_doc_xdma_backend.html#autotoc_md16", null ],
+        [ "AXI MM DMA interface", "md_doc_xdma_backend.html#autotoc_md17", null ],
+        [ "Interrupt lines (events)", "md_doc_xdma_backend.html#autotoc_md18", null ]
+      ] ]
+    ] ],
     [ "Todo List", "todo.html", null ],
-    [ "Namespaces", null, [
-      [ "Namespace List", "namespaces.html", "namespaces" ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
@@ -94,8 +143,8 @@ var NAVTREE =
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
-    [ "Files", null, [
-      [ "File List", "files.html", "files" ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", "globals_func" ],
@@ -111,25 +160,25 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html",
+"",
 "_numeric_addressed_backend_register_accessor_8h.html",
-"accessor2_d__multiplexed_8cpp_source.html",
-"class_chimera_t_k_1_1_data_descriptor.html#aaab62545dad995c54e3ca0994df5a6e6",
-"class_chimera_t_k_1_1_event_thread.html#ae1ec22019ec6a0baeb2ec0b21057d29a",
-"class_chimera_t_k_1_1_l_n_m_backend_variable_accessor.html#af80566ae9da9546885dc021bfb924931",
-"class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#ab8bdc1e4daee7a1fa05bbc73ed5809a2",
-"class_chimera_t_k_1_1_scalar_register_accessor.html#a35749fa91e42d9c62bc068fcac24eef2",
-"class_chimera_t_k_1_1_transfer_element_test_accessor.html#ad58b10e4968323bcc44264c1268ed7c8",
-"class_decorator_test_accessor.html#a50228f4cc5eba6867f5e47a8b422e0c6",
-"dir_ee326fa6789bb6bdc0887158d2381386.html",
-"pciedev__io_8h.html#a8ee8c3c02591a6a47113a0e59b88936a",
-"struct_chimera_t_k_1_1_i_e_e_e754___single_converter.html#ada57bcf3439b4c6f375bd66d48ebfdc3",
-"struct_counting_decorator.html#ae33d96421e851799c9712b6630d2f62d",
-"struct_muxed_nodma_async.html#a6aca622457f955e40078358e31d029ad",
-"struct_reg_variable_as_push_parameter_in_math__x__not__written2.html#a6c637092e460b69eb134eb550f00caf1",
-"test_device_8cpp.html#ab83892089340958763d777921ead7687",
-"test_multiplexed_data_accesor_8cpp.html#adedf8732ba8a8c4d3314e773a58848e3",
-"test_utilities_8cpp.html#aaf82322cb75d013ed53766245f84bf60"
+"accessor2_d__multiplexed_8cpp.html",
+"class_chimera_t_k_1_1_data_descriptor.html#af3be571231a41e3600c1143c7162a951a84e2c64f38f78ba3ea5c905ab5a2da27",
+"class_chimera_t_k_1_1_exception_dummy.html#a07e0ca117010bf50f9b5788d0b677c16",
+"class_chimera_t_k_1_1_logical_name_map_parser.html#a19eaba0f3fcb9456ac1b67c61b7b1c68",
+"class_chimera_t_k_1_1_numeric_addressed_register_catalogue.html#aedfd500f67774c61934fe58864e1a87c",
+"class_chimera_t_k_1_1_scalar_register_accessor.html#a56b15b8fb7295cc1200802a3c93f770b",
+"class_chimera_t_k_1_1_transfer_element_test_accessor.html#ab824c85c63163e76ccda588ef4768f68",
+"class_decorator_test_accessor.html#a453ea91104cb96cef0024d7443a71ccc",
+"dir_dcba6dfd410a966f3c2ecded9b1039f6.html",
+"namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11abdd166af3a63f7be696dd17a218a6ffb",
+"struct_byte_raw__signed8.html#ab3a504a7f42807ba3ced6f5c25aee094",
+"struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#ac3df6436518ace3a5d09ec50f48924af",
+"struct_integers__signed32___r_o.html#a2334dc325e979ca09c0824bf4f302f07",
+"struct_reg_constant2.html#af9b7bcd21523ffcb3e0e4262e382a88c",
+"struct_static_core.html#a540b46cdf636da7518414030e498b095",
+"test_float_raw_data_8cpp.html#a089f879928780819994168915a144144",
+"test_shared_dummy_backend_unified_ext_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -9,8 +9,6 @@ var dir_f6c06f7a01da37196a5f6fe3a6212106 =
     [ "AsyncNDRegisterAccessor.h", "_async_n_d_register_accessor_8h.html", "_async_n_d_register_accessor_8h" ],
     [ "BackendFactory.h", "_backend_factory_8h.html", "_backend_factory_8h" ],
     [ "BackendRegisterCatalogue.h", "_backend_register_catalogue_8h.html", [
-      [ "const_BackendRegisterCatalogueImplIterator", "class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator.html", "class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator" ],
-      [ "BackendRegisterCatalogueImplIterator", "class_chimera_t_k_1_1_backend_register_catalogue_impl_iterator.html", "class_chimera_t_k_1_1_backend_register_catalogue_impl_iterator" ],
       [ "BackendRegisterCatalogueBase", "class_chimera_t_k_1_1_backend_register_catalogue_base.html", "class_chimera_t_k_1_1_backend_register_catalogue_base" ],
       [ "BackendRegisterCatalogue", "class_chimera_t_k_1_1_backend_register_catalogue.html", "class_chimera_t_k_1_1_backend_register_catalogue" ],
       [ "const_BackendRegisterCatalogueImplIterator", "class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator.html", "class_chimera_t_k_1_1const___backend_register_catalogue_impl_iterator" ],
