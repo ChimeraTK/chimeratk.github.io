@@ -1,6 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"struct_static_core.html#a540b46cdf636da7518414030e498b095":[19,0,130,6],
 "struct_static_core.html#a6462bc497b1e3a1143929d9e5747e238":[19,0,130,3],
 "struct_static_core.html#a66d4752e77d7bd743e556f40f28830a5":[19,0,130,8],
 "struct_static_core.html#a6cefba6ff47a0e308499283995da8ab1":[19,0,130,10],
@@ -249,5 +248,6 @@ var NAVTREEINDEX16 =
 "test_fixed_point_converter_8cpp.html#afa79a47a36fbc3954dc61b30a16b7e74":[20,0,7,1,14,6],
 "test_fixed_point_converter_8cpp.html#aff9cd61bfc99e01638b40bd30b4e62c4":[20,0,7,1,14,50],
 "test_fixed_point_converter_8cpp_source.html":[20,0,7,1,14],
-"test_float_raw_data_8cpp.html":[20,0,7,1,15]
+"test_float_raw_data_8cpp.html":[20,0,7,1,15],
+"test_float_raw_data_8cpp.html#a089f879928780819994168915a144144":[20,0,7,1,15,4]
 };
