@@ -1,9 +1,6 @@
 var dir_d44c64559bbebec7f509842c48db8b23 =
 [
     [ "Application.h", "_application_8h.html", [
-      [ "Accessor", "class_chimera_t_k_1_1_accessor.html", null ],
-      [ "FanOut", "class_chimera_t_k_1_1_fan_out.html", "class_chimera_t_k_1_1_fan_out" ],
-      [ "ConsumingFanOut", "class_chimera_t_k_1_1_consuming_fan_out.html", "class_chimera_t_k_1_1_consuming_fan_out" ],
       [ "Application", "class_chimera_t_k_1_1_application.html", "class_chimera_t_k_1_1_application" ]
     ] ],
     [ "ApplicationCore.h", "_application_core_8h.html", null ],
@@ -101,7 +98,6 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "VariableNetworkNodeDumpingVisitor", "class_chimera_t_k_1_1_variable_network_node_dumping_visitor.html", "class_chimera_t_k_1_1_variable_network_node_dumping_visitor" ]
     ] ],
     [ "Visitor.h", "_visitor_8h.html", [
-      [ "Visitor", "class_chimera_t_k_1_1_visitor.html", null ],
       [ "Visitor< T >", "class_chimera_t_k_1_1_visitor_3_01_t_01_4.html", "class_chimera_t_k_1_1_visitor_3_01_t_01_4" ],
       [ "Visitor< T, Types... >", "class_chimera_t_k_1_1_visitor_3_01_t_00_01_types_8_8_8_01_4.html", null ]
     ] ],

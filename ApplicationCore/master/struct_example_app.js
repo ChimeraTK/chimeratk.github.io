@@ -22,7 +22,7 @@ var struct_example_app =
     [ "Simulation", "struct_example_app.html#abd16c59e21124f075eed347568b30464", null ],
     [ "tableGeneration", "struct_example_app.html#a1ee7980cd0cbed783956d1ddac0a4f4d", null ],
     [ "temperatureMonitor", "struct_example_app.html#a75cb48b7c5e4c505c5afe7910f8caee6", null ],
-    [ "this", "struct_example_app.html#a76a1ccbf7814eae00f2c5466764e6ee7", null ],
+    [ "this", "struct_example_app.html#a2c52dbdbbdbe1c73b4ffc38f71765d65", null ],
     [ "timer", "struct_example_app.html#a872f39c39ae79bb08c44b62766910874", null ],
     [ "timer", "struct_example_app.html#a872f39c39ae79bb08c44b62766910874", null ]
 ];

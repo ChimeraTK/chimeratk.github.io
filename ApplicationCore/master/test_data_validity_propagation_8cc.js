@@ -9,7 +9,6 @@ var test_data_validity_propagation_8cc =
     [ "TestApplication16", "struct_test_application16.html", "struct_test_application16" ],
     [ "BOOST_NO_EXCEPTIONS", "test_data_validity_propagation_8cc.html#ad9e644e01e76c0a2b950bac6e3d2cf0e", null ],
     [ "BOOST_TEST_MODULE", "test_data_validity_propagation_8cc.html#a6b2a3852db8bb19ab6909bac01859985", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#a2bf8a4e227939985089791ad9df12526", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#a4909f4976586e0e134a348ab9297b9f3", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#aa1d78da01c2f27dab690c3dd3bde4ecb", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#ad4004ad809a3da6b5b489f68ecd7befb", null ],
@@ -19,5 +18,6 @@ var test_data_validity_propagation_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#ace6f95476afa1b7e11f957717db9d60c", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#ac80b8ff502e8766fa01669c3c75cbb29", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#a63eec4e896faf8463f570348e7507c18", null ],
-    [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#a2271e2bd45416a7ea3d50bce12872250", null ]
+    [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#a2271e2bd45416a7ea3d50bce12872250", null ],
+    [ "BOOST_AUTO_TEST_CASE", "test_data_validity_propagation_8cc.html#a2bf8a4e227939985089791ad9df12526", null ]
 ];

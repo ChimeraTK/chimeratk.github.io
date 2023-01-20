@@ -5,6 +5,6 @@ var struct_b_b =
     [ "EE", "struct_b_b.html#ab2baba7ea36cf09b59fb6cbfea5df37b", null ],
     [ "fromAA", "struct_b_b.html#aa6deedf112bc083d3b143a9c8ab33d6c", null ],
     [ "fromBB", "struct_b_b.html#a09ea83f7c1bb4009498418712df455a4", null ],
-    [ "this", "struct_b_b.html#ac68b759087966c623fdef4f14416c08b", null ],
-    [ "this", "struct_b_b.html#a25ca7f0c7db80fdf37e9614c1f1700cd", null ]
+    [ "this", "struct_b_b.html#a75331a3b8c7e9e1e7e4078896417ac83", null ],
+    [ "this", "struct_b_b.html#ad4bd976cac8a9b7725c909ecc2cf13a4", null ]
 ];

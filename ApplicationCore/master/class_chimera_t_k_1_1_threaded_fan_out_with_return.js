@@ -5,5 +5,6 @@ var class_chimera_t_k_1_1_threaded_fan_out_with_return =
     [ "run", "class_chimera_t_k_1_1_threaded_fan_out_with_return.html#ab52d9c326faab0071553435bc9ae3496", null ],
     [ "setReturnChannelSlave", "class_chimera_t_k_1_1_threaded_fan_out_with_return.html#a8b4847a9e301fdd706ec94c4ac56af70", null ],
     [ "_returnChannelSlave", "class_chimera_t_k_1_1_threaded_fan_out_with_return.html#a6f12921767add9b501616acabbbea4e4", null ],
+    [ "_testableModeReached", "class_chimera_t_k_1_1_threaded_fan_out_with_return.html#a961e296fa6aa1698a0474803ffe3d44f", null ],
     [ "_thread", "class_chimera_t_k_1_1_threaded_fan_out_with_return.html#ae557a2ff653c55e7c1502f256861e8d8", null ]
 ];

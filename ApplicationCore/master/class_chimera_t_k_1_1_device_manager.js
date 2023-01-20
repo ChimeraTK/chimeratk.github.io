@@ -10,7 +10,7 @@ var class_chimera_t_k_1_1_device_manager =
     [ "getDevice", "class_chimera_t_k_1_1_device_manager.html#a8b9bea1706ccc7b713d61d377065e59e", null ],
     [ "getDeviceAliasOrURI", "class_chimera_t_k_1_1_device_manager.html#ac0e492c26998a0f660f7548740b3e9c3", null ],
     [ "getExceptionVersionNumber", "class_chimera_t_k_1_1_device_manager.html#a6179d7b3113a310e9f24998b9a04f96c", null ],
-    [ "getInputModulesRecursively", "class_chimera_t_k_1_1_device_manager.html#a73352f5bcf5cf9eae441a7eec87af9e8", null ],
+    [ "getInputModulesRecursively", "class_chimera_t_k_1_1_device_manager.html#ad3428b17c6170e5b932ce769694677b0", null ],
     [ "getNodesList", "class_chimera_t_k_1_1_device_manager.html#a37b6f37dd97f310089c6d0c6da37e12e", null ],
     [ "getRecoverySharedLock", "class_chimera_t_k_1_1_device_manager.html#a8b474290aa339656f267eb1f0de43f98", null ],
     [ "incrementDataFaultCounter", "class_chimera_t_k_1_1_device_manager.html#ae052ea3be4da9c34ff15d229af2ebeed", null ],

@@ -4,6 +4,8 @@ var class_chimera_t_k_1_1_model_1_1_process_variable_proxy =
     [ "getName", "class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a34458c34d2e1abc5d551b41ea97b3499", null ],
     [ "getNodes", "class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a80f13fd35af505aa93440a4f5d923b5a", null ],
     [ "getTags", "class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#ab552020ba245a6a57b91953d5ea386e1", null ],
+    [ "Proxy", "class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#aceee3a01f207e8d866e7a17f60096fc9", null ],
+    [ "Proxy", "class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a9c012a10d4afacc0462bad6c557f64a5", null ],
     [ "removeNode", "class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a4aa59f87d2a4b422d4bc89d93c59d001", null ],
     [ "visitByPath", "class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#abf7415b1ebf840c4d2688b3c1a74306b", null ],
     [ "ChimeraTK::DeviceModule", "class_chimera_t_k_1_1_model_1_1_process_variable_proxy.html#a94e748225f21f2d3230ab3347f8c5a14", null ],

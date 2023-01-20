@@ -8,5 +8,5 @@ var struct_my_module =
     [ "input", "struct_my_module.html#a2960f9add77a310a056f0df88f7f0d6d", null ],
     [ "output", "struct_my_module.html#a74f37b284d3dc4c4684ed344bb2eae5c", null ],
     [ "pointlessVariableGroup", "struct_my_module.html#af9436181e8106490572d033b10b72d51", null ],
-    [ "this", "struct_my_module.html#a8ce7eb8d102dd953bb68ecd3ac4e8c23", null ]
+    [ "this", "struct_my_module.html#aca0be9e7ca63360d85a7994cf400f4b6", null ]
 ];

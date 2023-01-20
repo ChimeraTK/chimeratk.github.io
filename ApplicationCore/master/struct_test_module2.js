@@ -1,8 +1,8 @@
 var struct_test_module2 =
 [
-    [ "mainLoop", "struct_test_module2.html#a4ca0c646a46dd6e1ccd2ee4f2f0cd4e6", null ],
-    [ "mainLoop", "struct_test_module2.html#a4ca0c646a46dd6e1ccd2ee4f2f0cd4e6", null ],
     [ "mainLoop", "struct_test_module2.html#a9a43bc0f3e22750aeed667a6edb594f3", null ],
+    [ "mainLoop", "struct_test_module2.html#a4ca0c646a46dd6e1ccd2ee4f2f0cd4e6", null ],
+    [ "mainLoop", "struct_test_module2.html#a4ca0c646a46dd6e1ccd2ee4f2f0cd4e6", null ],
     [ "actuator", "struct_test_module2.html#a48a3a0cddef86570dd1d83aebd04797f", null ],
     [ "dataValidity1", "struct_test_module2.html#a98848756565cc188d970f553e6dca7ef", null ],
     [ "dataValidity2", "struct_test_module2.html#aa2325394c3384d46abe5d6f8955d9647", null ],
