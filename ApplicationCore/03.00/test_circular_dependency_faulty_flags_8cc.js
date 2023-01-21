@@ -22,7 +22,7 @@ var test_circular_dependency_faulty_flags_8cc =
     [ "BOOST_AUTO_TEST_CASE", "test_circular_dependency_faulty_flags_8cc.html#afd45e55e6c992e544845f70fc04db0aa", null ],
     [ "BOOST_AUTO_TEST_CASE", "test_circular_dependency_faulty_flags_8cc.html#aaa997f8c35aa10c23f78959a0571cbf1", null ],
     [ "BOOST_FIXTURE_TEST_CASE", "test_circular_dependency_faulty_flags_8cc.html#ada1ce50755ba88fd2921e2dcb3f43ec8", null ],
-    [ "BOOST_FIXTURE_TEST_CASE", "test_circular_dependency_faulty_flags_8cc.html#a245a7a9e0b3b336bcfee1ccc37917d2c", null ],
     [ "BOOST_FIXTURE_TEST_CASE", "test_circular_dependency_faulty_flags_8cc.html#aae8e2d1b3bc96b91eb78c9e9add60eb6", null ],
+    [ "BOOST_FIXTURE_TEST_CASE", "test_circular_dependency_faulty_flags_8cc.html#a245a7a9e0b3b336bcfee1ccc37917d2c", null ],
     [ "BOOST_FIXTURE_TEST_CASE", "test_circular_dependency_faulty_flags_8cc.html#ac658de4a5eecf3447968ccc117590fc9", null ]
 ];

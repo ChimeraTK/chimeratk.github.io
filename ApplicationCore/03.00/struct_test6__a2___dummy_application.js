@@ -6,6 +6,6 @@ var struct_test6__a2___dummy_application =
     [ "device2", "struct_test6__a2___dummy_application.html#ae12ee9f16d2fd8e5bf0a4847ce490279", null ],
     [ "ReaderModule", "struct_test6__a2___dummy_application.html#a1e0d835fea5535c761a7d05b7d46893f", null ],
     [ "reg1", "struct_test6__a2___dummy_application.html#a5c074721d3b36d655be510d453ee1fe3", null ],
-    [ "this", "struct_test6__a2___dummy_application.html#ae9f08e33a6af18eef67e5c0a588a6c86", null ],
+    [ "this", "struct_test6__a2___dummy_application.html#aa7aec943208b2e4e01ad281bbfee1a56", null ],
     [ "triggerModule", "struct_test6__a2___dummy_application.html#a6f7b5a8d6b839e2d3f021333fccc443c", null ]
 ];

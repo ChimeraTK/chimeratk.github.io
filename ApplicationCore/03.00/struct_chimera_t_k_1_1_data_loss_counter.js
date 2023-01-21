@@ -8,7 +8,7 @@ var struct_chimera_t_k_1_1_data_loss_counter =
     [ "mainLoop", "struct_chimera_t_k_1_1_data_loss_counter.html#a42b52a6a2b9349604cf5be6ce65824da", null ],
     [ "lostDataInLastTrigger", "struct_chimera_t_k_1_1_data_loss_counter.html#a5a4b553a489f7f97591b583424f233cb", null ],
     [ "trigger", "struct_chimera_t_k_1_1_data_loss_counter.html#a3015864a5fcaf567a2383894ccc2fc9a", null ],
-    [ "triggerGroup", "struct_chimera_t_k_1_1_data_loss_counter.html#ae06a14ada5e84ce5b0244d870bb9c382", null ],
-    [ "triggerGroup_compat", "struct_chimera_t_k_1_1_data_loss_counter.html#ac3617a8c672d29105a9f7142cc952f7c", null ],
+    [ "triggerGroup", "struct_chimera_t_k_1_1_data_loss_counter.html#a0571fabcafef5376b34ac1a6c181a4d1", null ],
+    [ "triggerGroup_compat", "struct_chimera_t_k_1_1_data_loss_counter.html#abc37fe44011522c74c0ee0046fe6e4c3", null ],
     [ "triggersWithDataLoss", "struct_chimera_t_k_1_1_data_loss_counter.html#a90a7e36a4ffd2c73a6b7c4f7bbd11025", null ]
 ];
