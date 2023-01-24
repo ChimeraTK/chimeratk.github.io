@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['folderinfo',['FolderInfo',['../struct_folder_info.html',1,'']]]
+  ['folderinfo_533',['FolderInfo',['../struct_folder_info.html',1,'']]]
 ];

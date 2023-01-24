@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['serverconfig',['ServerConfig',['../struct_server_config.html',1,'']]]
+  ['serverconfig_577',['ServerConfig',['../struct_server_config.html',1,'']]]
 ];
