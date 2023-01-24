@@ -268,7 +268,21 @@ $(document).ready(function(){initNavTree('test_l_map_math_plugin_8cpp_source.htm
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">/********************************************************************************************************************/</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;BOOST_AUTO_TEST_SUITE_END()</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="test_l_map_math_plugin_8cpp.html#a0b3c5e1652ac22cb637dda7ac46be483">  182</a></span>&#160;<a class="code" href="test_l_map_math_plugin_8cpp.html#a0f1daf79791093feb347007aec002bea">BOOST_AUTO_TEST_CASE</a>(testCDATAFormula) {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="comment">// missing parameter &quot;formula&quot;</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <a class="code" href="class_chimera_t_k_1_1_device.html">ChimeraTK::Device</a> <a class="code" href="test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35">device</a>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="comment">// open device with map file which parses</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <a class="code" href="test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35">device</a>.<a class="code" href="class_chimera_t_k_1_1_device.html#aedbf8aa7daab16909fe3df80c788d0bf">open</a>(<span class="stringliteral">&quot;(logicalNameMap?map=mathPlugin.xlmap)&quot;</span>);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keyword">auto</span> acc = <a class="code" href="test_exception_dummy_device_8cc.html#a7d154c4982c7962abde7b29b910c0f35">device</a>.<a class="code" href="class_chimera_t_k_1_1_device.html#a953db6616908b17380fb1ace248c5a77">getScalarRegisterAccessor</a>&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;FormulaWithCdata&quot;</span>);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  acc.read();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  BOOST_TEST(<span class="keywordtype">int</span>(acc) == 24);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">/********************************************************************************************************************/</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;BOOST_AUTO_TEST_SUITE_END()</div>
 <div class="ttc" id="a_device_8h_html"><div class="ttname"><a href="_device_8h.html">Device.h</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_device_html"><div class="ttname"><a href="class_chimera_t_k_1_1_device.html">ChimeraTK::Device</a></div><div class="ttdoc">Class allows to read/write registers from device.</div><div class="ttdef"><b>Definition:</b> <a href="_device_8h_source.html#l00039">Device.h:39</a></div></div>
 <div class="ttc" id="aclass_chimera_t_k_1_1_device_html_a953db6616908b17380fb1ace248c5a77"><div class="ttname"><a href="class_chimera_t_k_1_1_device.html#a953db6616908b17380fb1ace248c5a77">ChimeraTK::Device::getScalarRegisterAccessor</a></div><div class="ttdeci">ScalarRegisterAccessor&lt; UserType &gt; getScalarRegisterAccessor(const RegisterPath &amp;registerPathName, size_t wordOffsetInRegister=0, const AccessModeFlags &amp;flags=AccessModeFlags({})) const</div><div class="ttdoc">Get a ScalarRegisterObject object for the given register.</div><div class="ttdef"><b>Definition:</b> <a href="_device_8h_source.html#l00263">Device.h:263</a></div></div>
@@ -284,7 +298,7 @@ $(document).ready(function(){initNavTree('test_l_map_math_plugin_8cpp_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_7ab5dec27422f487cf9d62e729e73f9f.html">executables_src</a></li><li class="navelem"><a class="el" href="test_l_map_math_plugin_8cpp.html">testLMapMathPlugin.cpp</a></li>
-    <li class="footer">Generated on Fri Jan 13 2023 04:53:14 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 24 2023 04:55:56 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

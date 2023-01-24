@@ -178,7 +178,7 @@ var NAVTREEINDEX =
 "struct_reg_full_area.html",
 "struct_static_core.html#a6462bc497b1e3a1143929d9e5747e238",
 "test_float_raw_data_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1",
-"test_shared_dummy_backend_unified_ext_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1"
+"test_shared_dummy_backend_unified_ext_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

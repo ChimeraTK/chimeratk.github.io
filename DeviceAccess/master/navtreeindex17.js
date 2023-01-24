@@ -61,13 +61,14 @@ var NAVTREEINDEX17 =
 "test_l_map_force_read_only_plugin_8cc.html#aa44b30d2486baac0b4cac391dd6025e9":[20,0,7,1,22,2],
 "test_l_map_force_read_only_plugin_8cc_source.html":[20,0,7,1,22],
 "test_l_map_math_plugin_8cpp.html":[20,0,7,1,23],
-"test_l_map_math_plugin_8cpp.html#a0f1daf79791093feb347007aec002bea":[20,0,7,1,23,6],
+"test_l_map_math_plugin_8cpp.html#a0b3c5e1652ac22cb637dda7ac46be483":[20,0,7,1,23,2],
+"test_l_map_math_plugin_8cpp.html#a0f1daf79791093feb347007aec002bea":[20,0,7,1,23,7],
 "test_l_map_math_plugin_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[20,0,7,1,23,0],
-"test_l_map_math_plugin_8cpp.html#a4c1987a2d587b2038b41fa14416c4d0f":[20,0,7,1,23,5],
+"test_l_map_math_plugin_8cpp.html#a4c1987a2d587b2038b41fa14416c4d0f":[20,0,7,1,23,6],
 "test_l_map_math_plugin_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[20,0,7,1,23,1],
-"test_l_map_math_plugin_8cpp.html#a7ff992440c0b98be761736b3d41e140b":[20,0,7,1,23,3],
-"test_l_map_math_plugin_8cpp.html#a994f7c79465e4bd4426aa1c419c35f96":[20,0,7,1,23,4],
-"test_l_map_math_plugin_8cpp.html#abac8006c8d9bd2da40a7d7c48238f48b":[20,0,7,1,23,2],
+"test_l_map_math_plugin_8cpp.html#a7ff992440c0b98be761736b3d41e140b":[20,0,7,1,23,4],
+"test_l_map_math_plugin_8cpp.html#a994f7c79465e4bd4426aa1c419c35f96":[20,0,7,1,23,5],
+"test_l_map_math_plugin_8cpp.html#abac8006c8d9bd2da40a7d7c48238f48b":[20,0,7,1,23,3],
 "test_l_map_math_plugin_8cpp_source.html":[20,0,7,1,23],
 "test_l_map_monostable_trigger_plugin_8cpp.html":[20,0,7,1,24],
 "test_l_map_monostable_trigger_plugin_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1":[20,0,7,1,24,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "test_shared_dummy_backend_unified_8cpp.html#a6b2a3852db8bb19ab6909bac01859985":[20,0,7,1,42,8],
 "test_shared_dummy_backend_unified_8cpp.html#a6de67d84a8638a97f4bb1c99c7fb730a":[20,0,7,1,42,11],
 "test_shared_dummy_backend_unified_8cpp.html#a9f5533e72ee880d6d818844f51879211":[20,0,7,1,42,9],
-"test_shared_dummy_backend_unified_8cpp_source.html":[20,0,7,1,42],
-"test_shared_dummy_backend_unified_ext_8cpp.html":[20,0,7,5,7]
+"test_shared_dummy_backend_unified_8cpp_source.html":[20,0,7,1,42]
 };
