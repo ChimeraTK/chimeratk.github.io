@@ -34,8 +34,8 @@ var _type_changing_decorator_8h =
       [ "limiting", "_type_changing_decorator_8h.html#a378b03423a5a360b373d3d14136c1b96a7585f22b9855288d28ebea110ab39224", null ],
       [ "C_style_conversion", "_type_changing_decorator_8h.html#a378b03423a5a360b373d3d14136c1b96a6b6318f96cdc11c6a547dcb8753e0a15", null ]
     ] ],
-    [ "getDecorator", "_type_changing_decorator_8h.html#a0956da557455c1cde83d2295dd1ae961", null ],
     [ "getDecorator", "_type_changing_decorator_8h.html#a5d9cd0ba3253ed6f31af03005a2acb61", null ],
+    [ "getDecorator", "_type_changing_decorator_8h.html#a0956da557455c1cde83d2295dd1ae961", null ],
     [ "getGlobalDecoratorMap", "_type_changing_decorator_8h.html#ade942ee5a562daf9a6bafe21ad4e39cc", null ],
     [ "stringToT", "_type_changing_decorator_8h.html#a1fc9c6572c4fd56f1f9fb265bc89bc46", null ],
     [ "stringToT< int8_t >", "_type_changing_decorator_8h.html#a2f4a838d449ed98e49552e7927a4be68", null ],
