@@ -1,5 +1,8 @@
 var NAVTREEINDEX12 =
 {
+"struct_test_module_1_1_module1_1_1_sub_module.html#a054081ddf73ac2625d5d8166d78fd01d":[17,0,108,2,0,5],
+"struct_test_module_1_1_module1_1_1_sub_module.html#a108eb565ed1194ce6a89fc54aa9046ab":[17,0,108,2,0,4],
+"struct_test_module_1_1_module1_1_1_sub_module.html#a7e6f1dbfd1a87ad7ec31d4e04819e734":[17,0,108,2,0,1],
 "struct_test_module_1_1_module1_1_1_sub_module.html#aabe62e673f145e192db3b4d16c2629a6":[17,0,108,2,0,2],
 "struct_test_module_1_1_module1_1_1_sub_module.html#af07d409f95763fa8a592fa5084c9658e":[17,0,108,2,0,3],
 "struct_test_module_1_1_module1_1_1_sub_module_1_1_sub_sub_module.html":[17,0,108,2,0,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX12 =
 "test_device_initialisation_handler_8cc.html#acb549f568a7d85ab136349f448166488":[18,0,11,0,9,6],
 "test_device_initialisation_handler_8cc.html#aeb5199105d3de147543c913e1cb23ae7":[18,0,11,0,9,2],
 "test_device_initialisation_handler_8cc_source.html":[18,0,11,0,9],
-"test_exception_handling_8cc.html":[18,0,11,0,10],
-"test_exception_handling_8cc.html#a093fb4ff78352404b40f9304c037db9d":[18,0,11,0,10,25],
-"test_exception_handling_8cc.html#a11417d58618157ad0d0dc3f206ed7795":[18,0,11,0,10,2],
-"test_exception_handling_8cc.html#a1daf3fdcb784516342651f3a8fa45e06":[18,0,11,0,10,3]
+"test_exception_handling_8cc.html":[18,0,11,0,10]
 };

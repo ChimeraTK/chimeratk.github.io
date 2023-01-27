@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"conceptual_overview.html#conceptualOverview_ModuleGroup":[0,4],
 "conceptual_overview.html#conceptualOverview_ProcessVariable":[0,2],
 "conceptual_overview.html#conceptualOverview_ProcessVariable_accessMode":[0,2,1],
 "conceptual_overview.html#conceptualOverview_ProcessVariable_hierarchy":[0,2,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "namespace_chimera_t_k_1_1_utilities.html#a4af6a2239a8b0ee9eafa26faf00a2e9a":[16,0,0,1,0],
 "namespace_chimera_t_k_1_1_utilities.html#a7794e94545a8b22daead4e95d1231247":[16,0,0,1,1],
 "namespace_chimera_t_k_1_1_utilities.html#a97ff87abb83d90566bac43c12912ec41":[16,0,0,1,3],
-"namespace_chimera_t_k_1_1_utilities.html#a995362cedaec84fbf8ee820a3de8a511":[16,0,0,1,2],
-"namespacedetail.html":[16,0,1]
+"namespace_chimera_t_k_1_1_utilities.html#a995362cedaec84fbf8ee820a3de8a511":[16,0,0,1,2]
 };
