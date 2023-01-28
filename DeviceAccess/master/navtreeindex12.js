@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"struct_byte_raw__signed8.html#ab3a504a7f42807ba3ced6f5c25aee094":[19,0,13,6],
 "struct_byte_raw__signed8.html#ad7c3b06580280762c77f9c2497c1ad47":[19,0,13,1],
 "struct_byte_raw__signed8.html#af7b28e1d3d9733ecbabdda8ca9a98790":[19,0,13,5],
 "struct_byte_raw__unsigned8.html":[19,0,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "struct_chimera_t_k_1_1_rebot_protocol0.html#adda4963ed2378635d266eaca69c19945":[19,0,1,85,1],
 "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html":[19,0,1,85,0],
 "struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#a5d3a19c9744a93a9167a8f270cc93775":[19,0,1,85,0,0],
-"struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#a72294d840d3d4c0a324f89edf5d437b9":[19,0,1,85,0,2],
-"struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#ac3df6436518ace3a5d09ec50f48924af":[19,0,1,85,0,1]
+"struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#a72294d840d3d4c0a324f89edf5d437b9":[19,0,1,85,0,2]
 };

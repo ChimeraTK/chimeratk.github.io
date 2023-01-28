@@ -72,7 +72,9 @@ var NAVTREE =
         [ "List of plugins", "lmap.html#plugins_reference", [
           [ "multiply", "lmap.html#plugins_reference_multiply", null ],
           [ "math", "lmap.html#plugins_reference_math", null ],
-          [ "forceReadOnly", "lmap.html#plugins_reference_force_read_only", null ],
+          [ "forceReadOnly", "lmap.html#plugins_reference_force_read_only", null ]
+        ] ],
+        [ "forcePollingRead", "lmap.html#plugins_reference_force_polling_read", [
           [ "monostableTrigger", "lmap.html#plugins_reference_monostable_trigger", null ],
           [ "typeHintModifier", "lmap.html#plugins_reference_type_hint_modifier", null ],
           [ "Double Buffering plugin for the Logical Name Mapper", "lmap.html#double_buffering_plugin", null ]
@@ -171,14 +173,14 @@ var NAVTREEINDEX =
 "class_chimera_t_k_1_1_transfer_element_test_accessor.html#ab9dc64aee1a964f33d2a4b967662c9cb",
 "class_decorator_test_accessor.html#a4a25ac27e0cd05423fa6ec2760fd4fe3",
 "dir_dea78313235eb47f342de8e8297f8ee6.html",
-"namespace_chimera_t_k.html#abca4ba8eb69cfaf7f5a77b023ea7a97e",
-"struct_byte_raw__signed8.html#ad7c3b06580280762c77f9c2497c1ad47",
-"struct_chimera_t_k_1_1_rebot_protocol1.html",
-"struct_integers__signed32___r_o.html#a9a1a396a34e130e0f2d020aec5061c1c",
-"struct_reg_full_area.html",
-"struct_static_core.html#a6462bc497b1e3a1143929d9e5747e238",
-"test_float_raw_data_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1",
-"test_shared_dummy_backend_unified_ext_8cpp.html"
+"namespace_chimera_t_k.html#ab626f75a2569cda2f3b0869d754aee11abdd166af3a63f7be696dd17a218a6ffb",
+"struct_byte_raw__signed8.html#ab3a504a7f42807ba3ced6f5c25aee094",
+"struct_chimera_t_k_1_1_rebot_protocol0_1_1_register_info.html#ac3df6436518ace3a5d09ec50f48924af",
+"struct_integers__signed32___r_o.html#a2334dc325e979ca09c0824bf4f302f07",
+"struct_reg_constant2.html#af9b7bcd21523ffcb3e0e4262e382a88c",
+"struct_static_core.html#a540b46cdf636da7518414030e498b095",
+"test_float_raw_data_8cpp.html#a089f879928780819994168915a144144",
+"test_shared_dummy_backend_unified_8cpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

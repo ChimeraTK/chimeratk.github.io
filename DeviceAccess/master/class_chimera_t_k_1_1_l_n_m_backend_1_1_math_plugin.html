@@ -127,7 +127,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a794de82434c18e892c72df4b9d28bb90"><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; UserType &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a794de82434c18e892c72df4b9d28bb90">decorateAccessor</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html">LogicalNameMappingBackend</a> &gt; &amp;backend, boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_n_d_register_accessor.html">NDRegisterAccessor</a>&lt; TargetType &gt;&gt; &amp;target, const <a class="el" href="struct_chimera_t_k_1_1_l_n_m_backend_1_1_undecorated_params.html">UndecoratedParams</a> &amp;accessorParams)</td></tr>
 <tr class="separator:a794de82434c18e892c72df4b9d28bb90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a99fa66c9020f37c2daefe4cb8ce47a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a0a99fa66c9020f37c2daefe4cb8ce47a">openHook</a> (boost::shared_ptr&lt; <a class="el" href="class_chimera_t_k_1_1_logical_name_mapping_backend.html">LogicalNameMappingBackend</a> &gt; backend) override</td></tr>
-<tr class="memdesc:a0a99fa66c9020f37c2daefe4cb8ce47a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hook called when the backend is openend, at the end of the open() function after all backend work has been done already.  <a href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a0a99fa66c9020f37c2daefe4cb8ce47a">More...</a><br /></td></tr>
+<tr class="memdesc:a0a99fa66c9020f37c2daefe4cb8ce47a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hook called when the backend is opened, at the end of the open() function after all backend work has been done already.  <a href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a0a99fa66c9020f37c2daefe4cb8ce47a">More...</a><br /></td></tr>
 <tr class="separator:a0a99fa66c9020f37c2daefe4cb8ce47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab707ce88179ed5aff7b474f5708ff569"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ab707ce88179ed5aff7b474f5708ff569">closeHook</a> () override</td></tr>
 <tr class="memdesc:ab707ce88179ed5aff7b474f5708ff569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hook called when the backend is closed, at the beginning of the close() function when the device is still open.  <a href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#ab707ce88179ed5aff7b474f5708ff569">More...</a><br /></td></tr>
@@ -434,7 +434,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Hook called when the backend is openend, at the end of the open() function after all backend work has been done already. </p>
+<p>Hook called when the backend is opened, at the end of the open() function after all backend work has been done already. </p>
 
 <p>Reimplemented from <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#a473707beebda4bc205b8e89d4e234ebe">ChimeraTK::LNMBackend::AccessorPluginBase</a>.</p>
 
@@ -503,7 +503,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
 
 <p>Update the register info inside the catalogue if needed. </p>
 <p>This function is called by the backend after the <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_register_info.html" title="RegisterInfo structure for the LogicalNameMappingBackend.">LNMBackendRegisterInfo</a> has been filled with all information from the target backend. If plugins intend to change the catalogue information, they need to do it in this function. This function is only called if the <a class="el" href="class_chimera_t_k_1_1_register_catalogue.html" title="Catalogue of register information.">RegisterCatalogue</a> is obtained from the device, so do not rely on this function to be called.</p>
-<p>If the plugin needs data that depends on the target and which is only available after opening (e.g. whether the register is writeable), the plugin has to call updateRegisterInfo in the <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a0a99fa66c9020f37c2daefe4cb8ce47a" title="Hook called when the backend is openend, at the end of the open() function after all backend work has...">openHook()</a> and can then modify internal vadiables in the updateRegisterInfo function.</p>
+<p>If the plugin needs data that depends on the target and which is only available after opening (e.g. whether the register is writeable), the plugin has to call updateRegisterInfo in the <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html#a0a99fa66c9020f37c2daefe4cb8ce47a" title="Hook called when the backend is opened, at the end of the open() function after all backend work has ...">openHook()</a> and can then modify internal variables in the updateRegisterInfo function.</p>
 <p>Note: in principle it is fine to do nothing in this function, if no catalogue change is required. This function intentionally has no empty default implementation, because it might otherwise easy to overlook that the register info must be updated here instead of the constructor. </p>
 
 <p>Implements <a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_accessor_plugin_base.html#ae9e3c76b9192a11c7cfcb45f6a269ec8">ChimeraTK::LNMBackend::AccessorPluginBase</a>.</p>
@@ -771,7 +771,7 @@ template&lt;typename UserType , typename TargetType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_chimera_t_k.html">ChimeraTK</a></li><li class="navelem"><a class="el" href="namespace_chimera_t_k_1_1_l_n_m_backend.html">LNMBackend</a></li><li class="navelem"><a class="el" href="class_chimera_t_k_1_1_l_n_m_backend_1_1_math_plugin.html">MathPlugin</a></li>
-    <li class="footer">Generated on Tue Jan 24 2023 04:55:57 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 28 2023 04:53:15 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

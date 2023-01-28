@@ -218,6 +218,9 @@ math</h3>
 <h3><a class="anchor" id="plugins_reference_force_read_only"></a>
 forceReadOnly</h3>
 <p>The <code>forceReadOnly</code> plugin changes the access mode of a register to read-only. The target register has to be writeable. This plugin accepts no parameters.</p>
+<h2><a class="anchor" id="plugins_reference_force_polling_read"></a>
+forcePollingRead</h2>
+<p>The <code>forcePollingRead</code> plugin changes the access mode of a register from push-type to poll-type. The plugin accepts no parameters. Will do nothing if the register is poll-type allready.</p>
 <h3><a class="anchor" id="plugins_reference_monostable_trigger"></a>
 monostableTrigger</h3>
 <p>The <code>monostableTrigger</code> implements a monostable behaviour triggered by a write transaction. The target register has to be an integral scalar and has to be writeable. The resulting logical register will be write only with the type RegisterInfo::FundamentalType::nodata, i.e. the data written to the register will be discarded. Instead, the "active" value will be written, and after a delay the "inactive" value.</p>
@@ -258,7 +261,7 @@ Double Buffering plugin for the Logical Name Mapper</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jan 24 2023 04:55:56 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 28 2023 04:53:14 for ChimeraTK-DeviceAccess by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
